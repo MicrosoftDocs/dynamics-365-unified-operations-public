@@ -28,9 +28,9 @@ The Supplier Communications Agent helps you perform the following actions:
 - Configure how emails are generated for each task.
 - Review the draft emails that the agent generates. After you review each message, you can modify it, and send it. To generate the emails, the agent uses data from the purchase order lines and related tables.
 
-By default, the system provides two "out of the box" tasks that you can use to find purchase orders that require action:
+By default, the system provides two tasks that help you find purchase orders that require action:
 
-- *Unconfirmed purchase orders* – This task finds purchase orders that are assigned to you, have a delivery date within the next 60 days, and the vendor didn't yet confirm (that is, the confirmed delivery date is blank). The task uses the following specific criteria:
+- *Unconfirmed purchase orders* – This task finds purchase orders assigned to you with a delivery date within the next 60 days that the vendor didn't yet confirm (that is, the confirmed delivery date is blank). The task uses the following criteria:
 
     - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
     - The **Confirmed receipt date (line)** field is blank.
@@ -38,7 +38,7 @@ By default, the system provides two "out of the box" tasks that you can use to f
     - The **Orderer (header)** field is set to your user account (the current user).
     - The **Document status (header)** field isn't *None*.
 
-- *Delayed purchase orders* – This task finds purchase orders that are assigned to you and that are delayed (that is, the confirmed delivery date is one or more days ago). The task uses the following specific criteria:
+- *Delayed purchase orders* – This task finds purchase orders assigned to you that are delayed (that is, the confirmed delivery date is one or more days ago). The task uses the following criteria:
 
     - The **Deliver remainder (line)** field is set to a value other than *0* (zero).
     - The **Confirmed receipt date** field is set to a date that is before the current date.
@@ -62,26 +62,26 @@ The following procedure explains how to set up agent tasks to find purchase orde
 1. Edit the name of the task as required. (The default name is *Send follow-up emails to vendors with Supplier Communications Agent*.)
 1. Select whether you want the task to find unconfirmed purchase orders or delayed purchase orders.
 1. Modify the criteria to define which purchase orders require follow-up. For example, you might want the task to find: unconfirmed orders for the next two months, or orders created more than three days ago, or orders sent but not confirmed.
-1. Select the fields that you want to include in the email, such as the delivery dates or the address.
+1. Select the fields that you want to include in the email, such as delivery dates or the address.
 1. To add a signature, select **Signature**, and enter the desired text. You can also add an email footer that has text such as "This email was written with the help of AI."
 
     > [!IMPORTANT]
     > If your system is set up to send emails automatically, the email footer is mandatory.
 
-1. Select the tone of the emails (*Casual* or *Formal*, *Urgent* or *Non-urgent*).
+1. Select the tone of the emails (*Casual* or *Formal*, *Urgent, or *Non-urgent*).
 
 ### Examples
 
 Here are some examples of other tasks that you might set up:
 
-- To generate emails for orders that were created less than three days ago, and that aren't yet confirmed, specify the following criteria:
+- To generate emails for orders that you created less than three days ago, and that the vendor didn't yet confirm, specify the following criteria:
 
     - The **Deliver remainder (line)** field on the line is set to a value other than *0* (zero).
     - The **Confirmed receipt date (line)** field on the line is blank.
     - The **Created date** field is set to a date that's between three days before the current date and current date.
     - The **Orderer (header)** field on the header is set to your user account (the current user).
 
-- To generate emails for orders for vendor group A that were created less than three days ago, and that aren't yet confirmed, specify the following criteria:
+- To generate emails for orders that you created for vendor group A less than three days ago, and that the vendor didn't yet confirm, specify the following criteria:
 
     - The **Deliver remainder (line)** field on the line is set to a value other than *0* (zero).
     - The **Confirmed receipt date (line)** field on the line is blank.
@@ -93,69 +93,79 @@ Here are some examples of other tasks that you might set up:
 
 To configure automatic sending of follow-up emails without requiring user review, follow these steps:
 
-1. Sign in to Supply Chain Management as an administrator. <!-- KFM: Other requirements here? Should this user also be the one from whom the emails are sent? OR maybe this should be the agent identity user? --> <!-- Bogdana: here it just needs an admin. -->
+1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** \> **Workspaces** \> **Feature management**.
 1. Make sure the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md).
 1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
 1. Open the **Configuration** tab.
 1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.
-1. On the **Enabled interactive email providers** FastTab, ensure that *Graph* is listed in the **Enabled** column.
-1. On the **Microsoft Graph settings** tab, ensure that your organization's Azure tenant admin fills in the **Application ID** and **Application secret** fields. For more information, see [Configure Microsoft Graph in Dynamics 365 finance and operations apps](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md#configure-microsoft-graph-in-dynamics-365-finance-and-operations-apps).
-1. You can test if the email is working in the **Test email** tab. Set **Email provider** to *Graph* and fill in the **Send to** value with the desired recipient.
-<!-- KFM: Do we also need to ensure that *Graph* is listed in the **Enabled** column on the **Enabled interactive email providers** FastTab? > <!-- Bogdana: yes, good catch! I added it. -->
-<!-- KFM: Should we also mention the settings on the **Microsoft Graph settings** tab? This was highlighted (but not otherwise mentioned) in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1036647.> <!-- Bogdana: yes, this is correct. Their tenant admin should do this part, I had added the step and link to the documentation. The field **Application key** mentioned in that documentation, it changed name to **Application secret** in the UI. My team doesn't own that part of the documentation, but I can update it anyways, as long as I don't step on anybody's feet. Shall I do that? -->
+1. On the **Enabled interactive email providers** FastTab, make sure that *Graph* is listed in the **Enabled** column.
+1. On the **Microsoft Graph settings** tab, make sure that the **Application ID** and **Application secret** fields are filled in. If they aren't, you might need to contact your organization's Azure tenant admin for help. Learn more in [Configure Microsoft Graph in Dynamics 365 finance and operations apps](../../fin-ops-core/dev-itpro/organization-administration/configure-email.md#configure-microsoft-graph-in-dynamics-365-finance-and-operations-apps).
+1. To test whether the email is working, open the **Test email** tab. Set **Email provider** to *Graph* and enter the email address for an account that you can read in the **Send to** field. Then select **Send test email** and check your inbox for the test email.
 
 ## Configure the email sender
 
 When a user reviews and sends an email that the agent drafts, the email comes from that user's email address.
 
-When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address. <!-- KFM: In the section "Configure automatic sending of follow-up emails", it seems like we now provide a procedure for defining this. Should we link to that instead of saying it's the agent identity user? --> <!-- Bogdana: I moved it from there, here below, as that part was the admin part in Azure, and here is the admin part in FnO. It makes more sense now. Much cleaner and delimited. Thanks for the comment. -->
+When the system automatically sends an email without user review, the email comes from the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity) email address.
 
 To configure the email address of any user (including the agent identity user):
 
-1. Sign in to Supply Chain Management as an administrator. <!-- KFM: I'm not sure about this step. Should this instead be that admin? Or does it matter? Or maybe it needs to be the agent identity user (as implied in https://msdyneng.visualstudio.com/FinOps/_workitems/edit/1045291)? --> <!-- Bogdana: This is an awesome review comment. The steps as they were when you commented, were valid only for the current user, to edit their own email setup. Not valid for agent identity setup of email and name. There is a variation of these steps, intended for the FnO admin, where they can configure all users, so it will apply to both a human user and to an agent identity user. I'll use that variation, so that it applies to all.-->
+1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** \> **Users**.
-1. Select the user you want to configure, and open **User options**.
+1. Select the user you want to configure (for example, the [agent identity user](supplier-com-agent-setup.md#set-up-agent-identity)).
+1. On the Action Pane, select **User options**.
 1. Open the **Account** tab.
 1. On the **Email provider selection** FastTab, make the following settings:
     - **Email provider ID** – Set to *Graph*.
-    - **Sender email** – Enter the email address that should appear in the **From** field of the follow-up emails.
-    - **Name** - The generated content of the emails concludes with a "Best regards" signature that includes the name configured in this field.
+    - **Sender email** – Enter the email address that should appear in the **From** field of the follow-up emails sent by the selected user.
 
-If you're a user without administrator rights in Supply Chain Management, you can configure your own parameters to use in the email communication. The procedure is almost identical. The only difference is the location of your own **User Options** page. To find it, select the settings gear icon at the upper right side of the screen, and choose **User Options** from the menu.
+1. On the **Account** FastTab, enter the **Name** that you want to show in the signature of the email body. The emails conclude with a "Best regards" signature that includes the name configured in this field.
 
-## Configure the email receivers
+> [!TIP]
+> If you're a user without administrator rights in Supply Chain Management, you can configure your own email parameters, but not other users'. To configure your own email parameters, select the settings gear icon at the upper right side of the screen, and choose **User Options** from the menu. Then continue from step 5 in the previous procedure.
 
-To choose the recipient of the follow-up emails for a specific vendor, follow these steps:
+## Configure the email receiver for each vendor
+
+To choose the recipient of the follow-up emails for a vendor, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-1. Find and open the vendor you want from the list.
-1. On the **Contact information** FastTab, define a list of contacts for the vendor. The agent chooses which contact to use, as follows:
-    - If it exists, the agent gives first priority to a contact information line with the **Purpose** of type *Purchase order communications*. Learn more in [Create vendor contact information of type *Purchase order communications*](#optional-create-vendor-contact-information-of-type-purchase-order-communications). This option has priority, no matter whether the agent task is set up to group emails per vendor or not.
-    - If the agent task is configured to send emails grouped per vendor, the agent uses the contact information of that vendor, which has the field **Primary** set. If there's no line set as **Primary**, then one of the lines of **Type** = *Email address* is chosen.
-    - If the agent task generates emails per purchase order, the agent prioritizes the **Email** field of the purchase order, if set. Otherwise, it falls back on the vendor's contact information.
+1. Find and open the target vendor from the list.
+1. The **Contact information** FastTab lists various ways that you can contact the selected vendor and lets you edit the list. Use the settings here to configure the email address the agent should use when sending follow-up emails to this vendor. The agent chooses which contact line to use as follows:
+    - If a contact line is set up as the priority email address for purchase order communications, the agent always uses that email address for this vendor, regardless of whether the agent task is set up to send emails per purchase order or grouped per vendor. For details about how to set up this address, see [Set up the priority purchase order communications email address for a vendor](#priority-email).
+    - If no contact line is set up as the priority email address for purchase order communications, the agent applies the following logic to find the email address to use:
+        - If the agent task is configured to send emails grouped per vendor, the agent uses the contact line of **Type** *Email address* that has the **Primary** checkbox selected. If no email address is set as **Primary**, then the agent arbitrarily chooses one of the lines of **Type** *Email address*.
+        - If the agent task is configured to send emails per purchase order, the agent prioritizes the **Email** field of the purchase order if there is one. If the purchase order doesn't have an email address, the agent uses the vendor's contact information as described in the previous bullet point.
 
-## (Optional) Create vendor contact information of type *Purchase order communications*
+> [!TIP]
+> To see whether an email address listed on the **Contact information** FastTab is set up as the priority email address for purchase order communications, select the row and then select **Edit contact information** from the FastTab toolbar. In the **Edit contact information** dialog, check the value of the **Purpose** field. If it's set to *Purchase Order Communications* (or to another name that was created for this purpose), the email address is set up as the priority email address for purchase order communications. Learn more in [Set up the priority purchase order communications email address for a vendor](#priority-email).
 
-First, create an **Address and contact information purpose** of type *Purchase order communications*:
+## <a name="priority-email"></a>Set up the priority purchase order communications email address for a vendor
+
+As described in the previous section, the agent always uses the contact line that is set up as the priority email address for purchase order communications if such a line exists for the vendor, regardless of whether the agent task is set up to group emails per vendor or per purchase order. To set up this priority address, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Address and contact information purpose**.
-1. Select the three dots icon to insert a new column **Type**.
-1. Create a new line in the list, set **Type** to *Purchase Order Communications*, and set a checkmark in the field **Contact information**. Give it a name, such as *My Purchase Order Agent Communications*, and save it.
+1. At the top-right corner of the grid, open the **Grid options** menu (ellipsis button) and select **Insert columns**.
+1. In the **Insert columns** dialog, select the check box for the row with a **Field value** of *Type*. Then select **Update**. The grid now shows a **Type** column.
+1. If a row already exists with a **Type** of *Purchase Order Communications*, note its **Purpose** name and skip this step. Otherwise, add it by selecting  **New** on the Action Pane and make the following settings for the new row:
+    - **Purpose** – Enter a short name, such as *My Purchase Order Agent Communications*.
+    - **Description** – Enter a short description, such as *Priority purchase order communications email address for a vendor*.
+    - **Postal address** – Don't select this check box because this purpose is for email addresses, not postal addresses.
+    - **Contact information** – Select this check box. This option makes the row available for use with contact information lines, including email addresses.
+    - **Type** – Select *Purchase Order Communications*.
 
-Second, use the new type on the vendor's contact information:
-
+1. On the Action Pane, select **Save**.
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-1. Find and open the vendor you want from the list.
-1. On the **Contact information** FastTab, select the contact who should receive the follow-up emails and select **Edit contact information** from the FastTab toolbar.
-1. In the **Edit contact information** dialog, set **Purpose** to the previously created type *My Purchase Order Agent Communications*.
+1. Find and open the vendor you want to set up from the list.
+1. On the **Contact information** FastTab, select the row with the email address you want to send follow-up messages to. Then select **Edit contact information** from the FastTab toolbar.
+1. In the **Edit contact information** dialog, set **Purpose** to the purpose name you found or created earlier in this procedure.
 1. Select **OK**.
 
 ## Review and send drafted emails
 
 To review the emails that were previously created for the various configurations, go to **Procurement and Sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Follow-up emails**. The configurations appear on the left, and the emails for each configuration appear on the right.
 
-Edit each message as required, then select **Send** to send it to the vendor.
+Edit each message as required, and then select **Send** to send it to the vendor.
 
 ## Set up the periodic agent run schedule and batch job options
 
