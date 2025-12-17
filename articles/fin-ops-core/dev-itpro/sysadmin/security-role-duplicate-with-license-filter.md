@@ -2,7 +2,7 @@
 title: Security Role Duplicate with license filter
 description: The 'Duplicate Security Role / Duty with License Filter' feature in Dynamics 365 Finance and Operations helps administrators create compliant security roles and duties aligned with the selected license tier. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
 author: ianceicys-msft
-ms.author: anceicys-msft
+ms.author: ianceicys-msft
 ms.topic: article
 ms.date: 12/17/2025
 ms.reviewer: johnmichalak
