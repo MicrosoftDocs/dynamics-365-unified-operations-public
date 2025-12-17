@@ -2,11 +2,11 @@
 title: Enable Tap to Pay on iPhone to run the Store Commerce app
 description: Learn how to set up and enable Tap to Pay on iPhone to run the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: shajain
-ms.date: 12/23/2024
+ms.date: 12/17/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2024-11-30
@@ -81,21 +81,22 @@ Learn how to enable a dedicated Hardware station for a store in [Store Commerce 
 > [!NOTE]
 > The Tap to Pay on iPhone feature requires a dedicated Hardware station. It doesn't support shared hardware stations.
 
-### (Optional) Enable a PIN pad terminal with Tap To Pay on iPhone
+### Enable a PIN pad terminal with Tap To Pay on iPhone (Optional)
 
 This optional step is used to test the Tap to Pay on iPhone capability. In some scenarios, the Near Field Communication (NFC)-based tap capability isn't sufficient. For example, the customer might not have an NFC-enabled card, or the customer might want to use a gift card or a wallet.
 
 To support these additional use cases, it's useful to pair the iPhone that runs the Store Commerce app with a PIN pad device. In headquarters, go to the register that is used with the iPhone. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP address**. Then set the details on the **PIN pad** FastTab. Learn about PIN pad onboarding in [Onboard and configure an Adyen payment terminal](adyen-connector-setup.md#onboard-and-configure-an-adyen-payment-terminal).
 
-### (optional) Send the Adyen Store information with the authorization calls
-If there is a need to share the Adyen store information with the authorization request then it can be provided using any one of the following three ways. 
+### Send the Adyen store information with the authorization calls (Optional)
 
-- You can add a key value pair in the **‘Custom setting’** property of the Adyen connector in the Hardware profile. For example, you can add **"AdyenStore": "AdyenStoreName"** where you can replace the ‘AdyenStoreName’ with your Adyen store name. You can use this if you do not share a hardware profile with more than one Adyen store. If you provide the Adyen store information at the hardware profile level then this will override the Adyen store value if it is provided at the other two places mentioned below.
-- Add the Adyen store name as a part of Register name. You can do so by including the Adyen store name within opening and closing “#”. For e.g., if you name your register as **HOUSTON-Register 14 #AdyenStoreName#**, then the AdyenStoreName represents your Adyen store associated with the register. You can use this if you want the flexibility to provide Adyen store name by register. If you provide the Adyen store information at the Register level then this will override the Adyen store value if it is provided at the Store level.
-- Lastly, you can add the Adyen store name as a part of Store name. You can do so by including the Adyen store name within opening and closing “#”. For e.g., if you name your Store as HOUSTON #AdyenStoreName#, then the AdyenStoreName represents your Adyen store associated with the Store. You can use this if you have one Adyen Store corresponding to one store.
+If you need to share the Adyen store information with the authorization request, it can be provided using any one of the following three methods: 
+
+- Add a key value pair in the **Custom setting** property of the Adyen connector in the hardware profile. For example, you can add "AdyenStore: AdyenStoreName", replacing "AdyenStoreName" with your Adyen store name. You can use this method if you don't share a hardware profile with more than one Adyen store. If you provide the Adyen store information at the hardware profile level, this setting overrides the Adyen store value that may be set using either of the two following methods.
+- Add the Adyen store name as a part of register name by including the Adyen store name within opening and closing hash symbols ("#"). For example, if you name your register "HOUSTON-Register 14 #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store that's associated with the register. You can use this method if you want the flexibility to provide the Adyen store name by register. If you provide the Adyen store information at the register level, this setting overrides the Adyen store value that may be set at the store level.
+- Add the Adyen store name as a part of the store name by including it within opening and closing hash symbols ("#"). For example, if you name your Store "HOUSTON #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store that's associated with the store. You can use this method if you have one Adyen store corresponding to one store.
 
 > [!NOTE]
-> This capability was backported to 10.0.45 and 10.0.46 and hence are behind a flighting flag. Please reach out to Microsoft support if this needs to be enabled in your environment. 
+> This capability was backported to Commerce versions 10.0.45 and 10.0.46, and is hidden behind a flighting flag. If you need to enable this capability in your environment, contact Microsoft support. 
 
 ### Test with test and live environments
 
@@ -147,4 +148,5 @@ Tap to Pay on iPhone can't be used to authorize the remaining balance of a custo
 - Pair the iPhone with a physical PIN pad device, and use that device for balance authorizations.
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
