@@ -30,7 +30,7 @@ You can enable the GST/SST features only if the country or region of the legal e
 
 ### GST/SST registration number
 
-The GST/SST registration number appears on your tax invoices and some reports. You maintain it in the address information for your legal entity. First, define a registration type on the **Tax registration type** page. Make sure that the country/region code is **MYS**, and that the **Primary for country** checkbox is selected. Then, in the legal entity's primary address, add the tax registration number for GST/SST. Select the tax registration type that you defined, and then enter your GST/SST registration number.
+The GST/SST registration number appears on your tax invoices and some reports. You maintain it in the address information for your legal entity. First, define a registration type on the **Tax registration type** page. Make sure that the country/region code is **MYS**, and that the **Primary for country/region** checkbox is selected. Then, in the legal entity's primary address, add the tax registration number for GST/SST. Select the tax registration type that you defined, and then enter your GST/SST registration number.
 
 ### General ledger parameters for GST/SST
 

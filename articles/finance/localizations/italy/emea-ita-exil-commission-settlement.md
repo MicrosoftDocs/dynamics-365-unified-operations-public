@@ -24,7 +24,7 @@ In Italy, companies don't typically settle the commissions for their sales agent
 Before you can use the functionality for commission settlement on payments, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+- The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="default-commission-settlement-period">Set up the default commission settlement method
 

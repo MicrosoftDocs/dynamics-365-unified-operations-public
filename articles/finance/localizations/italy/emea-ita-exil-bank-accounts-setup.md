@@ -24,11 +24,11 @@ Companies often need to enter and maintain a large amount of banking information
 Before you begin, make sure the following prerequisites are met:
 
 - The primary address of the legal entity is in Italy.
-- The **Bank account setup enhancement** feature is turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+- The **Bank account setup enhancement** feature is turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import bank groups
 
-You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job).
+You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md).
 
 Present the source data for importing bank groups as a Microsoft Excel file that has the following column names:
 
