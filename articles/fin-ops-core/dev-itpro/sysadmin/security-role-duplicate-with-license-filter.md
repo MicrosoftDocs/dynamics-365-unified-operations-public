@@ -11,11 +11,10 @@ ms.search.region: Global
 ms.search.validFrom: 2025-12-17
 ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
+ms.assetid: 
 ---
 
 # Duplicate a security role or duty with a license filter
-[!include [banner](../includes/banner.md)]
 
 Administrators often need to create "license-aligned" security roles—roles that only contain duties and privileges consistent with a specific license tier (for example, Team Members). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
 
