@@ -4,7 +4,7 @@ description: The 'Duplicate Security Role / Duty with License Filter' feature in
 author: ianceicys-msft
 ms.author: anceicys-msft
 ms.topic: article
-ms.date: 012/17/2025
+ms.date: 12/17/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -51,15 +51,15 @@ Before you begin, verify that:
 This feature is delivered through Finance and Operations servicing (including PQUs). Proactive Quality Update schedules and train build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
 
 For general PQU scheduling guidance, see:
-- [Release schedule for proactive quality updates](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
+- [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
 
 The following table reflects the servicing trains, exact builds and rollout dates and official PQU schedule page that includes this functionality.
 
 | Release        | Build          | Proactive Quality Update        | Proactive Quality Update Train Duration                     |
 |----------------|----------------|------------|----------------------------------------|
-| [10.0.45 PQU-4 /10.0.2345.130](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7690.96   | PQU-4      | January 5, 2026 to February 8, 2026  |
-| [10.0.44 PQU-7 / 10.0.2263.187](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | PQU-7      | January 5, 2026 to February 8, 2026    |
-| [10.0.43 PU67 / 10.0.2177.214](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283 /   | PQU-9      | January 5, 2026 to February 8, 2026    |
+| [10.0.45 PQU-4 /10.0.2345.130](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7690.96   | PQU-4      | January 5, 2026 to February 8, 2026  |
+| [10.0.44 PQU-7 / 10.0.2263.187](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | PQU-7      | January 5, 2026 to February 8, 2026    |
+| [10.0.43 PU67 / 10.0.2177.214](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283 /   | PQU-9      | January 5, 2026 to February 8, 2026    |
 
 For more information, see [Role-based security](role-based-security.md).
 
@@ -132,7 +132,7 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 
 ## Related information
 
-- [Release schedule for proactive quality updates](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) [1](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
+- [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) [1](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
