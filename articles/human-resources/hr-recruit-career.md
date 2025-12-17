@@ -4,7 +4,7 @@
 title: Set up the careers site in the HR Recruiting app 
 description: This article explains how to set up the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/18/2024
+ms.date: 12/02/2025
 ms.topic: how-to
 # optional metadata
 
@@ -25,8 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up the careers site in the HR Recruiting app 
 
-This article explains how to install and configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
-You can change many aspects of your careers site, such as the background, introduction, images, privacy policy, and site name.
+This article explains how to install and configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. You can change many aspects of your careers site, such as the background, introduction, images, privacy policy, and site name.
 
 ## Install 
 >[!NOTE]
