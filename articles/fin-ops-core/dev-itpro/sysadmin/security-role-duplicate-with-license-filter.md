@@ -54,7 +54,7 @@ For the latest Proactive Quality Update (PQU) schedule, see:
 
 The following table reflects the servicing trains, exact builds and rollout dates and official PQU schedule page that includes the  **Duplicate with license filter** functionality.
 
-| Release        | Platform Update          | Build        | Proactive Quality Update Train Duration                     |
+| Release        | Platform Release          | Build        | Proactive Quality Update Train Duration                     |
 |----------------|----------------|------------|----------------------------------------|
 | [10.0.45 PQU-4](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7690.96   | 10.0.2345.130     | January 5, 2026 to February 8, 2026  |
 | [10.0.44 PQU-7](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | 10.0.2263.187     | January 5, 2026 to February 8, 2026    |
