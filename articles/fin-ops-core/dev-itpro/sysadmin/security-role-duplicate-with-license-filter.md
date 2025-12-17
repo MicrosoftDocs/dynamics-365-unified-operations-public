@@ -1,6 +1,6 @@
 ---
 title: Security Role Duplicate with license filter
-description: The 'Duplicate Security Role / Duty with License Filter' feature in Dynamics 365 Finance and Operations helps administrators create compliant security roles and duties aligned with the selected license tier. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
+description: The 'Duplicate Security Role / Duty with License Filter' feature in Dynamics 365 Finance and Operations helps administrators create compliant security roles and duties aligned with the selected license. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
 author: ianceicys-msft
 ms.author: ianceicys-msft
 ms.topic: article
@@ -16,16 +16,16 @@ ms.assetid:
 
 # Duplicate a security role or duty with a license filter
 
-Administrators often need to create "license-aligned" security roles—roles that only contain duties and privileges consistent with a specific license tier (for example, Team Members). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
+Administrators often need to create **license-aligned** security roles- roles that only contain duties and privileges consistent with a specific license (for example, Team Members, Operations - Activity). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
 
-The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license tier. The result is a new security object you can publish and assign, along with a clear summary of anything that was excluded for follow-up.
+The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with a clear summary of anything that was excluded for follow-up.
 
 ## Why this feature matters
 
-Manually "right-sizing" a role to a license tier is time-consuming and error-prone. This feature provides:
+Manually "right-sizing" a role to a license is time-consuming and error-prone. This feature provides:
 
-- **Faster role creation** by automatically filtering role references (sub-roles, duties, privileges) based on the selected license tier. 
-- **More predictable license alignment** by excluding objects that require entitlements outside the chosen tier. 
+- **Faster role creation** by automatically filtering role references (sub-roles, duties, privileges) based on the selected license. 
+- **More predictable license alignment** by excluding objects that require entitlements outside the chosen license. 
 - **Transparency for cleanup** via an exclusion summary and an exportable list of excluded references.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-duplicate-button.png" alt-text="Security Configuration with Duplicate function" lightbox="media/security-role-copy-with-license-filter-duplicate-button.png":::
@@ -44,7 +44,7 @@ This feature is intended for:
 Before you begin, verify that:
 
 - You have permissions to manage security in Finance and Operations (for example, System administration / security administration permissions).
-- You know the **license tier** you want the duplicated security object to align with (for example, Team Members, Activity, Enterprise).
+- You know the **license** you want the duplicated security object to align with (for example, Team Members, Activity, Enterprise).
 
 ## Availability and setup
 This feature is delivered through Finance and Operations servicing (including PQUs). Proactive Quality Update schedules and train build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
@@ -70,12 +70,12 @@ For background on security concepts, see [Role-based security](role-based-securi
 
 ## How the duplciate license filter works
 
-When you duplicate a role (or duty) with a selected license tier:
+When you duplicate a role (or duty) with a selected license:
 
 - Finance and Operations copies the security object.
 - The system evaluates referenced objects (sub-roles, duties, privileges).
-- **Only references whose entitlements are fully covered by the selected license tier are included.**
-- References that require entitlements outside the selected tier (including mixed-entitlement objects) are **excluded** and reported.
+- **Only references whose entitlements are fully covered by the selected license are included.**
+- References that require entitlements outside the selected license (including mixed-entitlement objects) are **excluded** and reported.
 
 > [!IMPORTANT]
 > The feature does **not** deep-copy or create new duties or privileges. It reuses existing security objects and reports what is excluded, which helps preserve alignment with out-of-box security functionality. 
@@ -94,9 +94,9 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 4. Select **Duplicate**.
 5. In the dialog, enter:
    - A **new name** for the copied security object 
-   - A **license tier** for the new security object (for example, Team Members, Activity, or Enterprise)
+   - A **license SKU** for the new security object (for example, Team Members, Operations - Activity)
 
-:::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate dialog prompting for a new name and license tier." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
+:::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
 
 6. If some references can’t be included, a warning appears indicating that references were removed during the copy process.
    - Select **Message details** to open a side pane showing the count of excluded references.
@@ -117,13 +117,13 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
  After duplication:
 
 - Use the excluded reference export to decide whether to:
-  - Remove high-privilege duties from the intended "lower tier" experience, or
-  - Create separate roles aligned to higher tiers for users who need them.
+  - Remove high-privilege duties from the intended "lower license" experience, or
+  - Create separate roles aligned to higher license for users who need them.
 - Plan a validation pass in a sandbox environment before applying role changes broadly.
 
 ## Important considerations
 - Roles can only be duplicated within the same Finance & Operations environment.
-- Duties and privileges are only included if **all** entitlements are compliant with the selected license tier.
+- Duties and privileges are only included if **all** entitlements are compliant with the selected license.
 - Duties or privileges containing mixed license entitlements will be excluded and listed in the post-copy summary.
 - The feature does not create or modify duties or privileges; it only reuses existing ones.
 - Deep copying is avoided to maintain alignment with standard (out-of-box) functionality and upgrades.
