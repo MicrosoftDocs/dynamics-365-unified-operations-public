@@ -33,7 +33,11 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The primary address of the legal entity must be in Poland.
 - The legal entity must be registered as a taxpayer in Poland and must have a valid tax identification number (*Numer identyfikacji podatkowej* \[NIP\]).
-- Sign in to the Polish National system for electronic invoicing ([Krajowy System e-Faktur \[KSeF\]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature, or qualified seal. Obtain the certificate of the **Authentication in KSeF system** type that the Invoicing Service can use to securely communicate with KSeF. For more information, see the video from the Ministry of Finance: [Applying for and Managing Certificates](https://www.youtube.com/watch?v=SE0IHuPHtRE). During the initial downloading you obtain the pair of files - the *\*.crt* file with the certificate itself and the *\*.key* file for the private key. Store the private key file securely as since it might not be downloadable during the consequent obtaning of the same certificate.
+- Sign in to the Polish National system for electronic invoicing ([Krajowy System e-Faktur \[KSeF\]](https://ksef.mf.gov.pl/web/)) via a trusted profile, qualified signature, or qualified seal. Obtain the certificate of the **Authentication in KSeF system** type that the Invoicing Service can use to securely communicate with KSeF. For more information, see the video from the Ministry of Finance: [Applying for and Managing Certificates](https://www.youtube.com/watch?v=SE0IHuPHtRE).
+  
+  During the initial downloading you obtain the pair of files - the *\*.crt* file with the certificate itself and the *\*.key* file for the private key.
+  > [!NOTE]
+  > Store the private key file securely as since it might not be downloadable during the consequent obtaning of the same certificate.
 
     To process further with the system configuration, you need to convert the obtained pair of files into one *\*.pfx* certificate file which then will be stored in your Key Vault and used as a parameter in the feature setup.
 
@@ -43,9 +47,13 @@ Before you begin the procedures in this article, complete the following prerequi
   > The sample script is not supported under any Microsoft standard support program or service. The sample script is provided *AS IS* without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the script be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample script or documentation, even if Microsoft has been advised of the possibility of such damages.
 
   ```powershell
-  script example
+  openssl pkcs12 -export -in <your-ksef-certificate>.crt -inkey <your-ksef-certificate>.key -out <your-ksef-certificate>.pfx
   ```
-
+  Where:
+   - *\<your-ksef-certificate>.crt* - is the certificate file obtained from KSeF the private key will be combined with
+   - *\<your-ksef-certificate>.key* - is the private key file obtained from KSeF to combine with the certificate
+   - *\<your-ksef-certificate>.pfx* - the output file name that will be used for uploading to your Key Vault
+  
 - Obtain the **public key** by this link [Public key certificates](https://ksef-demo.mf.gov.pl/api/v2/security/public-key-certificates). From the response, copy the value from the second *certificate* element with the *SymmetricKeyEncryption* usage type. You use it during Key Vault parameters configuration described in the next chapter. For more information, see the [details](https://ksef-demo.mf.gov.pl/docs/v2/index.html#tag/Certyfikaty-klucza-publicznego) provided by KSeF. 
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Complete the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
