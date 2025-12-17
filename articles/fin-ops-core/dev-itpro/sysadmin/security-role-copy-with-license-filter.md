@@ -37,9 +37,9 @@ This feature will be available starting with the upcoming Finance & Operations p
 
 | Release        | Build          | Proactive Quality Update        | Proactive Quality Update Train Duration                     |
 |----------------|----------------|------------|----------------------------------------|
-| PU69 / 10.0.45 | 7.0.7690.76    | PQU-2      | November 10, 2025 to December 14, 2025  |
-| PU68 / 10.0.44 | 7.0.7606.174   | PQU-5      | November 3, 2025 to January 11, 2026    |
-| PU67 / 10.0.43 | 7.0.7521.283   | PQU-9      | December 1, 2025 to January 18, 2026    |
+| [10.0.45 PQU-4 /10.0.2345.130](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7690.96   | PQU-4      | January 5, 2026 to February 8, 2026  |
+| [10.0.44 PQU-7 / 10.0.2263.187](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | PQU-7      | January 5, 2026 to February 8, 2026    |
+| [10.0.43 PU67 / 10.0.2177.214](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283 /   | PQU-9      | January 5, 2026 to February 8, 2026    |
 
 For more information, see [Role-based security](role-based-security.md).
 
