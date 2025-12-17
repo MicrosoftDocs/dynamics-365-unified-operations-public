@@ -18,7 +18,7 @@ ms.assetid:
 
 Administrators often need to create **license-aligned** security roles that only contain duties and privileges consistent with a specific license (for example, Team Members, Operations - Activity). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
 
-The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with a clear summary of anything that was excluded for follow-up.
+The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with an Excel **Excluded References** report for anything that was **excluded** for follow-up.
 
 ## Why this feature matters
 
