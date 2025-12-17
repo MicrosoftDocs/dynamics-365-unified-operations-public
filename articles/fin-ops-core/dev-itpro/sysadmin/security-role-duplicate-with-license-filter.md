@@ -58,7 +58,7 @@ The following table reflects the servicing trains, exact builds and rollout date
 |----------------|----------------|------------|----------------------------------------|
 | [10.0.45 PQU-4 /10.0.2345.130](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7690.96   | PQU-4      | January 5, 2026 to February 8, 2026  |
 | [10.0.44 PQU-7 / 10.0.2263.187](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | PQU-7      | January 5, 2026 to February 8, 2026    |
-| [10.0.43 PQU-9 / 10.0.2177.214](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283 /   | PQU-9      | January 5, 2026 to February 8, 2026    |
+| [10.0.43 PQU-9 / 10.0.2177.214](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283   | PQU-9      | January 5, 2026 to February 8, 2026    |
 
 For an Overview of role-based security, see [Role-based security](role-based-security.md).
 
