@@ -68,17 +68,17 @@ To enable and use the **Duplicate with license filter** feature:
 
 For background on security concepts, see [Role-based security](role-based-security.md).
 
-## How the duplciate license filter works
+## How the duplicate license filter works
 
 When you duplicate a role (or duty) with a selected license:
 
 - Finance and Operations copies the security object.
 - The system evaluates referenced objects (sub-roles, duties, privileges).
-- **Only references whose entitlements that are fully covered by the selected license are included.**
-- References that require entitlements **outside** the selected license (including mixed-entitlement objects) are **excluded** and reported.
+- Only references whose entitlements that are **fully** covered by the selected license are **included**.
+- References that require entitlements **outside** the selected license (_including mixed-entitlement objects_) are **excluded** and reported.
 
 > [!IMPORTANT]
-> The feature does **not** deep-copy or create new duties or privileges. It re-uses existing security objects and reports what is excluded, which preserve alignment with out-of-box security functionality. 
+> The feature does **not** deep-copy or create new duties or privileges. It re-uses existing security objects and reports what is **excluded**, which preserve alignment with out-of-box security functionality. 
 
 ## Use the Duplicate with license filter feature
 
@@ -88,27 +88,26 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 
 :::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Duplicate function overview" lightbox="media/security-role-copy-with-license-filter-overview.png":::
 
-1. In Finance and Operations, open **System administration**.
-2. Go to **Security configuration**.
+1. In Finance and Operations, go to **System administration → Security → Security Configuration**
 3. Select the role (or duty) you want to duplicate.
 4. Select **Duplicate**.
 5. In the dialog, enter:
-   - A **new name** for the copied security object 
-   - A **license SKU** for the new security object (for example, Team Members, Operations - Activity)
+   - A **new name** for the copied security object (recommendation is to include the name of the license level in () e.g. _(Team Member)_)
+   - Select a **licensing SKU** for the new security object (for example, Team Members, Operations - Activity)
 
 :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
 
-6. If some references can’t be included, a warning appears indicating that references were removed during the copy process.
+6. If some references can’t be included, a warning appears indicating "**Some references were excluded**" for the duplicated role and license.
    - Select **Message details** to open a side pane showing the count of excluded references.
    - Download the excluded reference list to Excel for auditing and cleanup.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-2.png" alt-text="Some References were excluded." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-2.png":::
 
-7.	Review the list of duties and privileges that were excluded from the selected license. A summary will display excluded objects that did not meet the entitlement criteria.
+7.	Review the list of duties and privileges that were **excluded** from the selected license. The report displays **excluded** objects that did not meet the license specified.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-3.png" alt-text="Excluded References from duplicated security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-3.png":::
 
-8.	Select **Publish selection** to publish the role and assign users to the new security role. 
+8.	Select **Publish selection** to publish the role and then **assign users** to the new security role to validate end-to-end user license requirements. 
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-4.png" alt-text="Publish selection of duplicatd security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-4.png":::
 
@@ -116,15 +115,15 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 
  After duplication:
 
-- Use the excluded reference export to decide whether to:
+- Use the Excel **Excluded References** report to decide whether to:
   - Remove high-privilege duties from the intended "lower license" experience, or
   - Create separate roles aligned to higher license for users who need them.
-- Plan a validation pass in a sandbox environment before applying role changes broadly.
+- Plan a validation pass in a sandbox environment before applying role changes broadly in production.
 
 ## Important considerations
 - Roles can only be duplicated within the same Finance & Operations environment.
 - Duties and privileges are only included if **all** entitlements are compliant with the selected license.
-- Duties or privileges containing mixed license entitlements will be excluded and listed in the post-copy summary.
+- Duties or privileges containing mixed license entitlements will be **excluded** and listed in the Excel **Excluded References** report.
 - The feature does not create or modify duties or privileges; it only reuses existing ones.
 - Deep copying is avoided to maintain alignment with standard (out-of-box) functionality and upgrades.
 - The feature does not support cross-environment or cross-tenant copying.
