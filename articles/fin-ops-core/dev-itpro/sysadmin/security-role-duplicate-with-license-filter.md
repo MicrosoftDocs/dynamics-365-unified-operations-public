@@ -31,7 +31,7 @@ Manually "right-sizing" a role to a license is time-consuming and error-prone. T
  :::image type="content" source="media/security-role-copy-with-license-filter-duplicate-button.png" alt-text="Security Configuration with Duplicate function" lightbox="media/security-role-copy-with-license-filter-duplicate-button.png":::
 
 > [!NOTE]
-> This feature helps you build **license-aligned security configurations**, but it does not assign licenses or change licensing. You remain responsible for ensuring that users are properly licensed according to the **Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233).
+> This feature helps you build **license-aligned security configurations**, but it does not assign licenses or change licensing. You remain responsible for ensuring that users are properly licensed according to the [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233).
 
 ## Who should use this feature
 This feature is intended for:
@@ -43,27 +43,27 @@ This feature is intended for:
 
 Before you begin, verify that:
 
-- You have permissions to manage security in Finance and Operations (for example, System administration / security administration permissions).
-- You know the **license** you want the duplicated security object to align with (for example, Team Members, Activity, Enterprise).
+- You have permissions to manage security in Finance and Operations (for example, **System administrator** / **Security administrator**).
+- You know the **license** you want the duplicated security object to align with (for example, Commerce, Supply Chain Management, Team Members, Operations - Activity, etc).
 
 ## Availability and setup
-This feature is delivered through Finance and Operations servicing (including PQUs). Proactive Quality Update schedules and train build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
+This feature is delivered through Finance and Operations servicing (including the latest Proactive Quality Updates(PQU)). Proactive Quality Update (PQU) schedules and train build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
 
-For general PQU scheduling guidance, see:
+For the latest Proactive Quality Update (PQU) schedule, see:
 - [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
 
-The following table reflects the servicing trains, exact builds and rollout dates and official PQU schedule page that includes this functionality.
+The following table reflects the servicing trains, exact builds and rollout dates and official PQU schedule page that includes the  **Duplicate with license filter** functionality.
 
 | Release        | Build          | Proactive Quality Update        | Proactive Quality Update Train Duration                     |
 |----------------|----------------|------------|----------------------------------------|
 | [10.0.45 PQU-4 /10.0.2345.130](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7690.96   | PQU-4      | January 5, 2026 to February 8, 2026  |
 | [10.0.44 PQU-7 / 10.0.2263.187](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | PQU-7      | January 5, 2026 to February 8, 2026    |
-| [10.0.43 PU67 / 10.0.2177.214](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283 /   | PQU-9      | January 5, 2026 to February 8, 2026    |
+| [10.0.43 PQU-9 / 10.0.2177.214](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283 /   | PQU-9      | January 5, 2026 to February 8, 2026    |
 
-For more information, see [Role-based security](role-based-security.md).
+For an Overview of role-based security, see [Role-based security](role-based-security.md).
 
-To enable and use this feature:
-- Update your environment to the latest Finance & Operations release that includes this feature.
+To enable and use the **Duplicate with license filter** feature:
+- Update your environment to the [latest Finance & Operations proactive quality update](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) that includes this feature.
 - Navigate to the **System administration → Security → Security Configuration**
 
 For background on security concepts, see [Role-based security](role-based-security.md).
@@ -74,11 +74,11 @@ When you duplicate a role (or duty) with a selected license:
 
 - Finance and Operations copies the security object.
 - The system evaluates referenced objects (sub-roles, duties, privileges).
-- **Only references whose entitlements are fully covered by the selected license are included.**
-- References that require entitlements outside the selected license (including mixed-entitlement objects) are **excluded** and reported.
+- **Only references whose entitlements that are fully covered by the selected license are included.**
+- References that require entitlements **outside** the selected license (including mixed-entitlement objects) are **excluded** and reported.
 
 > [!IMPORTANT]
-> The feature does **not** deep-copy or create new duties or privileges. It reuses existing security objects and reports what is excluded, which helps preserve alignment with out-of-box security functionality. 
+> The feature does **not** deep-copy or create new duties or privileges. It re-uses existing security objects and reports what is excluded, which preserve alignment with out-of-box security functionality. 
 
 ## Use the Duplicate with license filter feature
 
