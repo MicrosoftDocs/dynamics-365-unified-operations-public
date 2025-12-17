@@ -25,6 +25,9 @@ The zero prompts are a set of prompts that, when selected, either submit automat
 > [!IMPORTANT]
 > This is a preview feature. Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2216214), and are available before an official release so customers can get early access and provide feedback.
 
+## Prerequisites
+To customize the zero prompt experience in the Copilot for finance and operations apps sidecar chat panel, you must first enable the **Enables zero prompt experience extensibility** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+
 ## Configuring the zero prompt experience
 
 To configure your custom zero prompt experience, follow these steps.
