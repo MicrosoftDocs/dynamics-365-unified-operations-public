@@ -372,7 +372,7 @@ Use this list to help you plan for these removals and deprecations.
 
 ### ELSTER declaration for Germany (design based on reporting codes), "Electronic tax declaration log" menu item and page, "Electronic tax declaration setup" menu item and page, German report layout (TaxReport_DE) SSRS format
 
-[VAT statement](../localizations/emea-deu-vat-declaration.md)</br>
+[VAT statement](../localizations/germany/emea-deu-vat-declaration-germany.md)</br>
 [Set up electronic Tax declaration for Germany](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
 
 | &nbsp; | &nbsp; |
