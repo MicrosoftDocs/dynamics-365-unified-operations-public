@@ -91,7 +91,7 @@ To support these additional use cases, it's useful to pair the iPhone that runs 
 
 If you need to share the Adyen store information with the authorization request, it can be provided using any one of the following three methods: 
 
-- Add a key value pair in the **Custom setting** property of the Adyen connector in the hardware profile. For example, you can add "AdyenStore: AdyenStoreName", replacing "AdyenStoreName" with your Adyen store name. You can use this method if you don't share a hardware profile with more than one Adyen store. If you provide the Adyen store information at the hardware profile level, this setting overrides the Adyen store value that may be set using either of the two following methods.
+- Add a key value pair to the **Custom setting** property of the Adyen connector in the hardware profile. For example, you can add "AdyenStore: AdyenStoreName", replacing "AdyenStoreName" with your Adyen store name. You can use this method if you only share a hardware profile with one Adyen store. If you provide the Adyen store information at the hardware profile level, this setting overrides the Adyen store value that may be set using either of the two following methods.
 - Add the Adyen store name as a part of register name by including the Adyen store name within opening and closing hash symbols ("#"). For example, if you name your register "HOUSTON-Register 14 #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store associated with the register. You can use this method if you want the flexibility to provide the Adyen store name by register. If you provide the Adyen store information at the register level, this setting overrides the Adyen store value that may be set at the store level.
 - Add the Adyen store name as a part of the store name by including it within opening and closing hash symbols ("#"). For example, if you name your Store "HOUSTON #AdyenStoreName#", then "AdyenStoreName" represents the Adyen store associated with the store. You can use this method if you have one Adyen store corresponding to one store.
 
@@ -148,6 +148,7 @@ Tap to Pay on iPhone can't be used to authorize the remaining balance of a custo
 - Pair the iPhone with a physical PIN pad device, and use that device for balance authorizations.
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
 
 
