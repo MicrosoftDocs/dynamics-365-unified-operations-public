@@ -90,7 +90,7 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 3. Select the role (or duty) you want to duplicate.
 4. Select **Duplicate**.
 5. In the dialog, enter:
-   - A **new name** for the copied security object (recommendation is to include the name of the license level in () e.g. _(Team Member)_)
+   - A **new name** for the copied security object (recommendation is to include the name of the license level in () e.g. _(Team Members)_)
    - Select a **licensing SKU** for the new security object (for example, Team Members, Operations - Activity)
 
 :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
