@@ -24,7 +24,8 @@ Key benefits include:
 - Ensures roles are compliant with licensing policy and traceable through the Unified Security Governance (USG) – License Usage Summary report.
 - Provides transparency into excluded entitlements and helps organizations optimize license usage and cost.
 
-[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
+ :::image type="content" source="media/security-role-copy-with-license-filter-duplicate-button.png" alt-text="Security Configuration with Duplicate function" lightbox="media/security-role-copy-with-license-filter-duplicate-button.png":::
+
 
 ## Who will benefit
 This feature is designed primarily for the following personas:
@@ -50,29 +51,32 @@ To enable and use this feature:
 ## How to use
 Follow these steps to use the Copy Security Role with License Filter feature:
 
-[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
+ :::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Duplicate function overview" lightbox="media/security-role-copy-with-license-filter-overview.png":::
 
 1.	Open the **System administration** module in your Finance & Operations environment.
 2.	Go to **Security configuration** and locate the role you want to copy.
-3.	Select **Duplicate (License Filter)** from the menu.
-
-[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
+3.	Select **Duplicate** from the menu.
 
 4.	Enter the new role name for the copied security role and choose a license tier (e.g., Team Members, Activity, or Enterprise) for this new security role.
 
-[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate function first steps" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
 
-5.	A Warning message will pop-up highlighting that references were removed from the security role during the copy process[AD3.1][AD3.2]. When clicking on the “Message details”, a sidebar will appear with the count of references and an option to download the excluded references in Excel format. 
+5.	A Warning message will pop-up highlighting that references were removed from the security role during the copy process. When clicking on the **Message details** a sidebar will appear with the count of references and an option to download the excluded references in Excel format. 
 
-[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-2.png" alt-text="Some References were excluded." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-2.png":::
 
 6.	Review the list of duties and privileges that were excluded from the selected license. A summary will display excluded objects that did not meet the entitlement criteria.
-7.	Confirm creation of the new role and publish it. 
+
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-3.png" alt-text="Excluded References from duplicated security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-3.png":::
+
+7.	Select **Publish selection** to publish the role and assign users to the new security role. 
+
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-4.png" alt-text="Publish selection of duplicatd security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-4.png":::
 
 ## Important considerations
 - Roles can only be copied within the same Finance & Operations environment.
 - Duties and privileges are only included if **all** entitlements are compliant with the selected license tier.
-- Duties [AD4.1]or privileges containing mixed license entitlements will be excluded and listed in the post-copy summary.
+- Duties or privileges containing mixed license entitlements will be excluded and listed in the post-copy summary.
 - The feature does not create or modify duties or privileges; it only reuses existing ones.
 - Deep copying is avoided to maintain alignment with standard (out-of-box) functionality and upgrades.
 - The feature does not support cross-environment or cross-tenant copying.
