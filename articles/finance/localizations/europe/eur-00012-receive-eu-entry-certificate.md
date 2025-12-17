@@ -2,9 +2,9 @@
 title: EUR-00012 Receive an EU entry certificate
 description: Learn about how to register an EU entry certificate issued by a third-party and received from your customer with Microsoft Dynamics 365 Finance. 
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/27/2025
+ms.date: 12/16/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak 
@@ -17,20 +17,18 @@ ms.search.form: CustEntryCertificateJour_W
 
 [!include [banner](../../includes/banner.md)]
 
-The following procedure walks you through how to register an EU entry certificate issued by a third-party and received from your customer.
+This procedure shows how to register an EU entry certificate that a third party issues and your customer sends.
 
-The demo data company used to create this procedure is DEMF.
+The demo data company used in this procedure is DEMF.
 
 To receive an EU entry certificate, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Inquiries and reports \> Entry certificate journal**.
 1. Select **New**.
-1. In the **Entry certificate** field, enter a value.
-1. In the **Customer account** field, select the drop-down button to open the lookup.
-1. In the list, select the link in the selected row.
+1. Enter a value in the **Entry certificate** field.
+1. Select the drop-down button in the **Customer account** field to open the lookup.
+1. Select the link in the selected row in the list.
 1. Select **Save**.
-1. Attach additional information to the journal. For example, attach a scanned image of the EU entry certificate to the journal.  
-
-
+1. Attach extra information to the journal. For example, attach a scanned image of the EU entry certificate to the journal.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
