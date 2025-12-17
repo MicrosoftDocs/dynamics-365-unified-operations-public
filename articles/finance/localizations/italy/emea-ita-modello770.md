@@ -132,7 +132,7 @@ The Model 770 report exports the information to an ASCII file that you submit to
 1. In the **Signatory** field, select the employee who signed the report on behalf of the company.
 1. In the **Role** field, select the employee's role.
 1. In the **First date in role** field, select the date when the employee was assigned to the role that you selected in the **Role** field.
-1. Fill in the following fields to specify the details of the signatory: **Signatory fiscal code**, **Birth county/region**, and **Birth city or foreign country**.
+1. Fill in the following fields to specify the details of the signatory: **Signatory fiscal code**, **Birth county/region**, and **Birth city or foreign country/region**.
 1. If the employee is a foreign national, select the **Foreign resident** check box.
 1. If you selected the **Foreign resident** check box, fill in the following fields to specify the details of the employee who is a foreign national: **Country/region**, **Foreign state, province, and county**, **Place of residence**, **Foreign address**, and **Foreign fiscal code**.
 
