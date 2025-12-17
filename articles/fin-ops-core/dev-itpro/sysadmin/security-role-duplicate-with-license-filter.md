@@ -18,20 +18,20 @@ ms.assetid:
 
 Administrators often need to create **license-aligned** security roles that only contain duties and privileges consistent with a specific license (for example, Team Members, Operations - Activity). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
 
-The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with an Excel **Excluded References** report for anything that was **excluded** for follow-up.
+The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with an Excel **Excluded References** report for anything that was **excluded** for further auditing and analysis.
 
 ## Why this feature matters
 
 Manually "right-sizing" a role to a license is time-consuming and error-prone. This feature provides:
 
-- **Faster role creation** by automatically filtering role references (sub-roles, duties, privileges) based on the selected license. 
-- **More predictable license alignment** by excluding objects that require entitlements outside the chosen license. 
-- **Transparency for cleanup** via an exclusion summary and an exportable list of excluded references.
+- **Faster custom security role creation** by automatically filtering role references (sub-roles, duties, privileges) based on the selected license. 
+- **More predictable custom seucrity role to license alignment** by excluding objects that require entitlements outside the chosen license. 
+- **Transparency for cleanup** via an Excel **Excluded References** report listing the excluded references.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-duplicate-button.png" alt-text="Security Configuration with Duplicate function" lightbox="media/security-role-copy-with-license-filter-duplicate-button.png":::
 
 > [!NOTE]
-> This feature helps you build **license-aligned security configurations**, but it does not assign licenses or change licensing. You remain responsible for ensuring that users are properly licensed according to the [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233).
+> This feature helps you build **license-aligned security configurations**, but it does not assign licenses or change license requirements. You remain responsible for ensuring that users are properly licensed according to [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/all), for additional information see [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233).
 
 ## Who should use this feature
 This feature is intended for:
@@ -47,7 +47,7 @@ Before you begin, verify that:
 - You know the **license** you want the duplicated security object to align with (for example, Commerce, Supply Chain Management, Team Members, Operations - Activity, etc).
 
 ## Availability and setup
-This feature is delivered through Finance and Operations servicing (including the latest Proactive Quality Updates(PQU)). Proactive Quality Update (PQU) schedules and train build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
+This feature is delivered through Finance and Operations servicing (including the latest Proactive Quality Updates). Proactive Quality Updates (PQU) schedule and build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
 
 For the latest Proactive Quality Update (PQU) schedule, see:
 - [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
@@ -90,22 +90,22 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 3. Select the role (or duty) you want to duplicate.
 4. Select **Duplicate**.
 5. In the dialog, enter:
-   - A **new name** for the copied security object (recommendation is to include the name of the license level in () e.g. _(Team Members)_)
-   - Select a **licensing SKU** for the new security object (for example, Team Members, Operations - Activity)
+   - A **new name** for the copied security object (recommendation: include the name of the license in () e.g. _(Team Members)_)
+   - Select a **licensing SKU** for the new security object (e.g. Team Members, Operations - Activity)
 
 :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
 
-6. If some references can’t be included, a warning appears indicating "**Some references were excluded**" for the duplicated role and license.
+6. If some references can’t be included, a warning appears indicating "**Some references were excluded**" for the duplicated role and specified license.
    - Select **Message details** to open a side pane showing the count of excluded references.
-   - Download the excluded reference list to Excel for auditing and cleanup.
+   - Download the Excel Excluded Reference report for further auditing and analysis.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-2.png" alt-text="Some References were excluded." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-2.png":::
 
-7.	Review the list of duties and privileges that were **excluded** from the selected license. The report displays **excluded** objects that did not meet the license specified.
+7.	Review the list of duties and privileges that were **excluded** from the selected license. The excel report displays **excluded** objects that did not meet the specified license.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-3.png" alt-text="Excluded References from duplicated security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-3.png":::
 
-8.	Select **Publish selection** to publish the role and then **assign users** to the new security role to validate end-to-end user license requirements. 
+8.	Select **Publish selection** to publish the role, then [**assign users to the new security role**](/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) to validate end-to-end user license requirements. 
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-4.png" alt-text="Publish selection of duplicatd security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-4.png":::
 
@@ -113,7 +113,7 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 
  After duplication:
 
-- Use the Excel **Excluded References** report to decide whether to:
+- Use the Excel **Excluded References** report for further auditing and analysis:
   - Remove high-privilege duties from the intended "lower license" experience, or
   - Create separate roles aligned to higher license for users who need them.
 - Plan a validation pass in a sandbox environment before applying role changes broadly in production.
