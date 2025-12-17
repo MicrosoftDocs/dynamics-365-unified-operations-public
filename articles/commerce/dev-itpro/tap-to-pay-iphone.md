@@ -87,6 +87,16 @@ This optional step is used to test the Tap to Pay on iPhone capability. In some 
 
 To support these additional use cases, it's useful to pair the iPhone that runs the Store Commerce app with a PIN pad device. In headquarters, go to the register that is used with the iPhone. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP address**. Then set the details on the **PIN pad** FastTab. Learn about PIN pad onboarding in [Onboard and configure an Adyen payment terminal](adyen-connector-setup.md#onboard-and-configure-an-adyen-payment-terminal).
 
+### (optional) Send the Adyen Store information with the authorization calls
+If there is a need to share the Adyen store information with the authorization request then it can be provided using any one of the following three ways. 
+
+- You can add a key value pair in the **‘Custom setting’** property of the Adyen connector in the Hardware profile. For example, you can add **"AdyenStore": "AdyenStoreName"** where you can replace the ‘AdyenStoreName’ with your Adyen store name. You can use this if you do not share a hardware profile with more than one Adyen store. If you provide the Adyen store information at the hardware profile level then this will override the Adyen store value if it is provided at the other two places mentioned below.
+- Add the Adyen store name as a part of Register name. You can do so by including the Adyen store name within opening and closing “#”. For e.g., if you name your register as **HOUSTON-Register 14 #AdyenStoreName#**, then the AdyenStoreName represents your Adyen store associated with the register. You can use this if you want the flexibility to provide Adyen store name by register. If you provide the Adyen store information at the Register level then this will override the Adyen store value if it is provided at the Store level.
+- Lastly, you can add the Adyen store name as a part of Store name. You can do so by including the Adyen store name within opening and closing “#”. For e.g., if you name your Store as HOUSTON #AdyenStoreName#, then the AdyenStoreName represents your Adyen store associated with the Store. You can use this if you have one Adyen Store corresponding to one store.
+
+> [!NOTE]
+> This capability was backported to 10.0.45 and 10.0.46 and hence are behind a flighting flag. Please reach out to Microsoft support if this needs to be enabled in your environment. 
+
 ### Test with test and live environments
 
 For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For live environments, the value of the **Gateway environment** property depends on whether you want to pair the iPhone with an external PIN pad terminal.
@@ -137,3 +147,4 @@ Tap to Pay on iPhone can't be used to authorize the remaining balance of a custo
 - Pair the iPhone with a physical PIN pad device, and use that device for balance authorizations.
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
