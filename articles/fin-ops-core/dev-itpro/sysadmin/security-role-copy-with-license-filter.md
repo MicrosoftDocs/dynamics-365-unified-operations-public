@@ -1,6 +1,6 @@
 ---
-title: Security Role Copy with license filter
-description: The 'Copy Security Role / Duty with License Filter' feature in Dynamics 365 Finance and Operations helps administrators create compliant security roles and duties aligned with the selected license tier. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
+title: Security Role Duplicate with license filter
+description: The 'Duplicate Security Role / Duty with License Filter' feature in Dynamics 365 Finance and Operations helps administrators create compliant security roles and duties aligned with the selected license tier. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
 author: ianceicys-msft
 ms.author: anceicys-msft
 ms.topic: article
@@ -49,7 +49,7 @@ To enable and use this feature:
 - Navigate to the System administration workspace.
 
 ## How to use
-Follow these steps to use the Copy Security Role with License Filter feature:
+Follow these steps to use the Duplicate Security Role with License Filter feature:
 
  :::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Duplicate function overview" lightbox="media/security-role-copy-with-license-filter-overview.png":::
 
