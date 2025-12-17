@@ -46,10 +46,10 @@ For more information, see [Role-based security](role-based-security.md).
 
 To enable and use this feature:
 - Update your environment to the latest Finance & Operations release that includes this feature.
-- Navigate to the **System administration** workspace.
+- Navigate to the System administration workspace.
 
 ## How to use
-Follow these steps to use the **Duplicate Security Role with License Filter** feature:
+Follow these steps to use the Duplicate Security Role with License Filter feature:
 
  :::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Duplicate function overview" lightbox="media/security-role-copy-with-license-filter-overview.png":::
 
@@ -57,7 +57,7 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 2.	Go to **Security configuration** and locate the role you want to copy.
 3.	Select **Duplicate** from the menu.
 
-4.	Enter the new role name for the duplicated security role and choose a license tier (e.g., Team Members, Activity, or Enterprise) for this new security role.
+4.	Enter the new role name for the copied security role and choose a license tier (e.g., Team Members, Activity, or Enterprise) for this new security role.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate function first steps" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
 
@@ -74,7 +74,7 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-4.png" alt-text="Publish selection of duplicatd security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-4.png":::
 
 ## Important considerations
-- Roles can only be duplicated within the same Finance & Operations environment.
+- Roles can only be copied within the same Finance & Operations environment.
 - Duties and privileges are only included if **all** entitlements are compliant with the selected license tier.
 - Duties or privileges containing mixed license entitlements will be excluded and listed in the post-copy summary.
 - The feature does not create or modify duties or privileges; it only reuses existing ones.
