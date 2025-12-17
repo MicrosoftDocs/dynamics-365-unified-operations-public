@@ -23,7 +23,7 @@ In Italy, companies often need to issue *accompanying invoices*. Accompanying in
 
 - The primary address of the legal entity is in Italy.
 - In the **Feature management** workspace, the **Sales invoice lines sorting by packing slips** feature is turned on. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- Customer invoices use the new **SalesInvoice.Report\_IT** layout. Go to **Accounts receivable** > **Setup** > **Forms** > **Form setup**. On the **General** tab, select **Print management**. On the **Print management setup** page, under **Module - accounts receivable > Customer invoice**, select **Original <Default>**. Then, in the **Report format** field, select **SalesInvoice.Report\_IT**.
+- Customer invoices use the new **SalesInvoice.Report\_IT** layout. Go to **Accounts receivable** > **Setup** > **Forms** > **Form setup**. On the **General** tab, select **Print management**. On the **Print management setup** page, under **Module - accounts receivable > Customer invoice**, select **Original \<Default\>**. Then, in the **Report format** field, select **SalesInvoice.Report\_IT**.
 
     :::image type="content" source="../media/emea-ita-exil-invoice-packing-slip-pic2.jpg" alt-text="Screenshot of the new layout selected for customer invoices.":::
 
