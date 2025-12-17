@@ -75,7 +75,7 @@ When you duplicate a role (or duty) with a selected license:
 - Finance and Operations copies the security object.
 - The system evaluates referenced objects (sub-roles, duties, privileges).
 - Only references whose entitlements that are **fully** covered by the selected license are **included**.
-- References that require entitlements **outside** the selected license (_including mixed-entitlement objects_) are **excluded** and reported.
+- References that require entitlements **outside** the selected license (_including mixed-entitlement objects_) are **excluded** and included in an Excel **Excluded References** report.
 
 > [!IMPORTANT]
 > The feature does **not** deep-copy or create new duties or privileges. It re-uses existing security objects and reports what is **excluded**, which preserve alignment with out-of-box security functionality. 
