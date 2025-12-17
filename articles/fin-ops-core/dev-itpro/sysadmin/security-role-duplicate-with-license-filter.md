@@ -82,8 +82,6 @@ When you duplicate a role (or duty) with a selected license:
 
 ## Use the Duplicate with license filter feature
 
-:::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Overview of duplicating a security role with a license filter." lightbox="media/security-role-copy-with-license-filter-overview.png":::
-
 Follow these steps to use the **Duplicate Security Role with License Filter** feature:
 
 :::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Duplicate function overview" lightbox="media/security-role-copy-with-license-filter-overview.png":::
