@@ -130,7 +130,6 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 
 ## Related information
 
-- [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) [1](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
-
+- [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
