@@ -55,8 +55,10 @@ Before you begin the procedures in this article, complete the following prerequi
    - *\<your-ksef-certificate>.pfx* - the output file name that will be used for uploading to your Key Vault
   
 - Obtain the **public key** by this link [Public key certificates](https://ksef-demo.mf.gov.pl/api/v2/security/public-key-certificates). From the response, copy the value from the second *certificate* element with the *SymmetricKeyEncryption* usage type. You use it during Key Vault parameters configuration described in the next chapter. For more information, see the [details](https://ksef-demo.mf.gov.pl/docs/v2/index.html#tag/Certyfikaty-klucza-publicznego) provided by KSeF. 
-- Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-- Complete the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- Install the **Electronic invoicing add-in** as it's described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
+- Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
+- Configure the the common part of the **Electronic document parameters**
+  -  Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty, the system will assign it automatically and make read-only. For more information, refer to [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
 
 ## Create the Azure Key Vault configuration
 
