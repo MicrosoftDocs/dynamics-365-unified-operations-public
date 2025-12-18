@@ -45,4 +45,4 @@ The Tax calculation feature should be completed and published in Globalization s
 
 ## Why can't I turn on the Enable advanced tax calculation parameter?
 
-The **Enable advanced tax calculation** parameter isn't yet supported in some countries and regions. Make sure that the primary address of the legal entity is in one of the [supported countries/regions](global-tax-calcuation-service-overview.md#supported-countries-and-regions).
+The **Enable advanced tax calculation** parameter isn't yet supported in some countries and regions. Make sure that the primary address of the legal entity is in one of the [supported countries/regions](global-tax-calcuation-service-overview.md#supported-countriesregions).

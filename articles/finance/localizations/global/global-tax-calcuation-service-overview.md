@@ -77,7 +77,7 @@ The following table lists the transactions supported in each version.
 | 10.0.23 | Free text invoice |
 | 10.0.21| <p>Sales</p><ul><li>Sales quotation</li><li>Sales order</li><li>Confirmation</li><li>Picking list</li><li>Packing slip</li><li>Sales invoice</li><li>Credit note</li><li>Return order</li><li>Header miscellaneous charge</li><li>Line miscellaneous charge</li></ul><p>Purchase</p><ul><li>Purchase order</li><li>Confirmation</li><li>Receipts list</li><li>Product receipt</li><li>Purchase invoice</li><li>Header miscellaneous charge</li><li>Line miscellaneous charge</li><li>Credit note</li><li>Return order</li><li>Purchase requisition</li><li>Purchase requisition line miscellaneous charge</li><li>Request for quotation</li><li>Request for quotation header miscellaneous charge</li><li>Request for quotation line miscellaneous charge</li></ul><p>Inventory</p><ul><li>Transfer order – ship</li><li>Transfer order – receive</li></ul>|
 
-## Supported countries and regions
+## Supported countries/regions
 
 You can run Tax Calculation with supported localization features. The following table lists the countries and regions for a legal entity's primary address.
 
