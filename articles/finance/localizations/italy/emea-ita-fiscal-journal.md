@@ -1,6 +1,6 @@
 ---
-title: Fiscal journal report
-description: Learn about the Fiscal journal report in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
+title: Fiscal journal report SSRS-based
+description: Learn about the Fiscal journal report SSRS-based in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
 author: liza-golub
 ms.author: egolub
 ms.topic: article
@@ -14,7 +14,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 ---
 
-# Fiscal journal report
+# Fiscal journal report SSRS-based
 
 The Italian **Fiscal journal** report is a monthly report that lists all the vouchers and journal entries in order of posting date. To access it, go to **General ledger** \> **Inquiries and reports** \> **Fiscal journal**.
 
