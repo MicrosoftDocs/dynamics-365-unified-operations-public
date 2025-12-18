@@ -207,7 +207,7 @@ To walk through the example, follow these steps.
 1. In the **Facture** field, select the number of the facture that requires correction or revision. The Facture date field is automatically set.
 1. In the **Distribution** field, select **Automatic**.
 
-   ![Upate facture page.](../media/revision-facture-05.png)
+   ![Update facture page.](../media/revision-facture-05.png)
  
 1. In the lower part of the page, use the To facture checkbox to select the journal.
 1. Select **Posting** \> **Update and print** to update and print the facture.
