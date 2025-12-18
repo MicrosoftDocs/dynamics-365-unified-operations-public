@@ -1466,6 +1466,14 @@
           items:
             - name: Finance insights home page
               href: finance-insights/finance-insights-home-page.md
+            - name: Migrate to Business performance analytics
+              items:
+                - name: Finance insights update
+                  href: finance-insights/finance-insights-update.md
+                - name: Finance insights update FAQ
+                  href: finance-insights/finance-insights-update-faq.md
+                - name: Uninstall Finance insights
+                  href: finance-insights/uninstall-finance-insights.md              
             - name: Setup and administration
               items:
                 - name: Configure Finance insights
@@ -2789,6 +2797,8 @@
                   items:
                     - name: France overview
                       href: localizations/france/france.md
+                    - name: NF203 Computerized Accounting Certification in France
+                      href: localizations/france/emea-france-nf203.md
                     - name: Public sector
                       items:
                         - name: Public sector accounting
@@ -3669,6 +3679,8 @@
                         href: localizations/iberoamerica/ltm-ledger-posting-report.md
                       - name: VAT book printing configuration
                         href: localizations/iberoamerica/ltm-vat-book.md
+                      - name: Generate invoices XMLs using electronic document feature
+                        href: localizations/iberoamerica/ltm-core-generate-xmls.md  
                       - name: Tax application for Latin America
                         href: localizations/iberoamerica/ltm-core-tax-application.md                                    
                 - name: Latvia
@@ -4668,6 +4680,8 @@
                   href: business-performance-analytics/set-up-security.md
                 - name: Custom report import, export, and migration
                   href: business-performance-analytics/custom-reports.md
+                - name: Reassign ownership of Business performance analytics workflow
+                  href: business-performance-analytics/bpa-flow-owner.md
             - name: Key concepts in business performance analytics
               items:
                 - name: Business performance analytics data model

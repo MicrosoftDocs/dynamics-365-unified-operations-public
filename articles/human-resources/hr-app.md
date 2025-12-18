@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources app for leave and absence
 description: This article describes the Microsoft Dynamics 365 Human Resources app for leave and absence.
 author: twheeloc
-ms.date: 07/11/2024
+ms.date: 12/02/2025
 ms.topic: overview
 # optional metadata
 

@@ -2,9 +2,9 @@
 title: Create and post a free text invoice for a public sector customer
 description: This article describes how to create and post free text invoices for customers using OIOUBL electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 author: mrolecki
-ms.author: mrolecki
+ms.author: egolub
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 12/16/2025
 ms.reviewer: johnmichalak   
 ms.search.region: Denmark
 ms.search.validFrom: 2016-06-30
@@ -17,13 +17,14 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create and post free text invoices for customers using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
+This article describes how to create and post free text invoices for customers by using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 
-The following procedures walk you through how to create and post free text invoices for customers using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing. They were created using the demo data company USMF with a legal entity primary address in Denmark.
+The following procedures walk you through how to create and post free text invoices for customers by using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing. The procedures use the demo data company USMF with a legal entity primary address in Denmark.
 
 ## Prerequisites
 
-Before you can execute these procedures, you must complete the following procedures.
+Before you can execute these procedures, complete the following procedures.
+
 - Import OIOUBL electronic invoicing electronic reporting configurations
 - Set up OIOUBL electronic invoicing
 - Set up a customer account for OIOUBL electronic invoicing
@@ -32,7 +33,7 @@ To create and post a free text invoice for a public sector customer, follow thes
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.
-1. In the **Customer account** field, enter or select a value. A customer selected for the free text invoice must be enabled for electronic invoicing.  
+1. In the **Customer account** field, enter or select a value. You must enable the customer you select for the free text invoice for electronic invoicing.  
 1. Select a free text invoice header view.
 1. Expand the **Customer** section.
 1. In the **Customer requisition** field, enter a value.
@@ -52,7 +53,6 @@ To generate an OIOUBL electronic invoice, follow these steps.
 
 1. Select **Send**.
 1. Select **Original**.  
-1. To verify the status of the job and download the file, go to the **Electronic reporting jobs** page.
-
+1. Go to the **Electronic reporting jobs** page to check the status of the job and download the file.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Configure leave and absence parameters
 description: This article describe how to define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 05/08/2024
+ms.date: 12/02/2024
 ms.topic: how-to
 # optional metadata
 

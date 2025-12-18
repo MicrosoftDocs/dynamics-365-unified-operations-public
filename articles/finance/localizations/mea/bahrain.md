@@ -2,9 +2,9 @@
 title: Bahrain overview
 description: Learn about functionality specific to Bahrain, with links to documentation resources for Bahrain, including links to resources about invoices.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/15/2021
+ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Bahrain
@@ -28,6 +28,5 @@ This article includes information and links to documentation resources for Bahra
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Business document management overview](../../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

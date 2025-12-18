@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 11/13/2025
+ms.date: 12/10/2025
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,22 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.27.0
+
+Version 4.0.27.0 adds the following fixes and improvements:
+
+- Resolved an issue where pressing Enter on the scanner hardware keyboard didn't submit the value.
+- Fixed a bug that added an extra pipe character when submitting a value.
+- Corrected an issue where entering a long digit in the calculator caused the backspace to move unexpectedly.
+- Implemented security enhancements.
+- Fixed a problem where the device token expired one hour after signing in with device code authentication.
+- Improved hardware keyboard functionality.
+- Resolved an issue where resizing the screen in Windows changed the order of footer action buttons.
+- Added the connection name to the worker sign-in page for better usability.
+- Fixed an iOS issue where the calculator appeared unexpectedly during the sales picking flow.
+- Addressed a crash that occurred when scrolling through a work list with many cards.
+- Fixed an issue where signing out as a default user required re-entering the device code for authentication.
 
 ## Version 4.0.26.0
 

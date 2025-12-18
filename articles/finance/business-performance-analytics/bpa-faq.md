@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 11/05/2025
+ms.date: 12/15/2025
 
 ---
 
@@ -149,6 +149,14 @@ Business performance analytics’s semantic model includes a flexible date dimen
 - Design visuals and DAX measures to respond to the selected calendar configuration.
 
 This approach ensures Business performance analytics remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
+
+
+### Flow ownership  
+
+#### How do I reassign flow ownership when the original owner has left the organization?
+
+If flows in Business performance analytics become orphaned because the original owner has left the organization, you need to reassign ownership. For more information, see [Reassign Business performance analytics flow ownership](bpa-flow-owner.md).
+
 
 ## Support and news
 ### How do I receive the latest news about Business performance analytics?
