@@ -142,11 +142,11 @@ To import the electronic invoicing feature, follow these steps.
 To configure the import channel, follow these steps.
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-1. Select **Create configuration**, and then select **Derive from Name: Customer invoice context model, Microsoft** in the dropdown dialog. This action creates a derived configuration.
+1. <a id="Context"></a>Select **Create configuration**, and then select **Derive from Name: Customer invoice context model, Microsoft** in the dropdown dialog. This action creates a derived configuration.
 1. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 1. Open the **DataChannel** definition for editing in the designer.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. In the **Value** field, select **Edit**, and then enter the name of the data channel. Make a note of the value, because you use it in later configuration steps.
+1. <a id="ImpChn"></a>In the **Value** field, select **Edit**, and then enter the name of the data channel. Make a note of the value, because you use it in later configuration steps.
 
     :::image type="content" source="e-inv-pol-import-config.jpg" alt-text="Screenshot of the output channel configuration in Electronic reporting.":::
 
