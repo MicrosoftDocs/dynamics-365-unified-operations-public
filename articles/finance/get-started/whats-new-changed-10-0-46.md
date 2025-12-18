@@ -41,7 +41,7 @@ originally published.
 |Subscription billing|	Reduce chattiness in SubBillDeferralRecognitionProcessing and SubBillDeferralRecognitionProcessingBatch| This change successfully reduced a significant amount of chattiness in the batch process. This is controlled by SubBillDeferralRecogProcChattinessReductionFlight	|On by default|
 |Subscription billing	 | Fix generate invoice with sales order performance problems|	This introduced a posting sales order batch job for billing schedule invoicing batch processing for the sales order posting process. This enables multithreaded posting resulting in parallelism and faster execution time. This is controlled by SubBillGenerateInvoiceMultiThreadedPostingFlight|	On by default|
 |Subscription billing	|Performance improvements for deferral recognition batch (Preview) |	This feature enhances the subscription billing deferral recognition batch process by processing deferral data in parallel, allowing each run to complete more efficiently.|	Feature management|
-
+|Subscription billing	| Performance improvement in deferral processing | Key performance improvements are introduced in Subscription Billing deferral processing. These enhancements are designed to address critical business challenges observed in high-volume deferral scenarios and to improve overall reliability and scalability of the batch process.| On by default |
 
 ## Feature enhancements included in this release
 
