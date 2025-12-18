@@ -57,10 +57,10 @@ Before you begin the procedures in this article, complete the following prerequi
 - Obtain the **public key** by this link [Public key certificates](https://ksef-demo.mf.gov.pl/api/v2/security/public-key-certificates). From the response, copy the value from the second *certificate* element with the *SymmetricKeyEncryption* usage type. You use it during Key Vault parameters configuration described in the next chapter. For more information, see the [details](https://ksef-demo.mf.gov.pl/docs/v2/index.html#tag/Certyfikaty-klucza-publicznego) provided by KSeF. 
 - Install the **Electronic invoicing add-in** as it's described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 - Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
-- Configure the the common part of the **Electronic document parameters**
-  -  Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty, the system will assign it automatically and make read-only. For more information, refer to [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
-  -  Configure the **Key Vault parameters** as it's described in [Create a Key Vault reference](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
-
+- Configure the the common part of the **Electronic document parameters**.
+  > [!NOTE]
+  > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty, the system will assign it automatically and make read-only. For more information, refer to [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
+  
 ## Create the Azure Key Vault configuration
 
 Configure the the common part of the Azure resources required for Electronic invoicing functioning. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md)
@@ -89,12 +89,15 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 1. Select **Key Vault parameters**.
 1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each secret that is described in the previous section.
 
+    - The secret for the SAS token of the storage account.
     - <a id="Tok"></a>The **certificate** element of the **Certificate** type.
     - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
     - <a id="PK"></a>The **Public key** element of the **Secret** type.
 
     > [!NOTE]
     > The values in the **Name** column should match the names of the secrets that are described in the previous section.
+
+For more information, see [Create a Key Vault reference](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
 ## Import the electronic invoicing feature
 
