@@ -28,7 +28,7 @@ This article provides links to documentation resources for Italy.
 - [VAT management and reporting by tax point date (Date of VAT register)](emea-ita-vat-management.md)
 - [Quarterly VAT communication report](emea-ita-quarterly-vat-communication.md)
 - [Yearly tax communication](emea-ita-yearly-tax-communication.md)
-- [Fiscal journal report](emea-ita-fiscal-journal.md)
+- [Fiscal journal report](emea-ita-fiscal-journal-er.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
 - [General ledger simulations (Italy)](emea-ita-exil-general-ledger-simulations.md)
 - [Intrastat]()
