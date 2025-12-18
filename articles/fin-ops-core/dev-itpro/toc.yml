@@ -1867,6 +1867,8 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
+        - name: Security role duplicate with license filter
+          href: sysadmin/security-role-duplicate-with-license-filter.md
         - name: Security governance 
           items:
             - name: User security governance overview
