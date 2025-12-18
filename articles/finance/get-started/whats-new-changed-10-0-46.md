@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: whats-new
-ms.date: 10/24/2025
+ms.date: 12/17/2025
 ms.update-cycle: 1095-days
 ms.custom:   
   - bap-template
@@ -42,6 +42,10 @@ originally published.
 |Subscription billing	 | Fix generate invoice with sales order performance problems|	This introduced a posting sales order batch job for billing schedule invoicing batch processing for the sales order posting process. This enables multithreaded posting resulting in parallelism and faster execution time. This is controlled by SubBillGenerateInvoiceMultiThreadedPostingFlight|	On by default|
 |Subscription billing	|Performance improvements for deferral recognition batch (Preview) |	This feature enhances the subscription billing deferral recognition batch process by processing deferral data in parallel, allowing each run to complete more efficiently.|	Feature management|
 |Subscription billing	| Performance improvement in deferral processing | Key performance improvements are introduced in Subscription Billing deferral processing. These enhancements are designed to address critical business challenges observed in high-volume deferral scenarios and to improve overall reliability and scalability of the batch process.| On by default |
+|Regulatory reporting	| [Withholding tax report for Indonesia](../localizations/indonesia/apac-idn-wht-declaration.md) |	Support generating the e-Bupot file for reporting periods starting from 2025 based on the withholding tax transactions.|	Electronic Reporting configurations |
+|Regulatory reporting	| [VAT (Pajak Pertambahan Nilai) declaration for Indonesia](../localizations/indonesia/apac-idn-ppn-declaration.md) |	Support generating the SPT Masa PPN (Pajak Pertambahan Nilai) in Excel format for reporting periods starting from 2025.|	Electronic Reporting configurations |
+|Regulatory reporting	| [VAT declaration for Estonia - KMD5, KMD6](../localizations/estonia/emea-est-vat-declaration.md) |	Support generating the VAT declaration for Estonia - KMD5 for reporting periods from January to June 2025, KMD6 for reporting periods starting from July 2025.|	Electronic Reporting configurations |
+
 
 ## Feature enhancements included in this release
 
@@ -58,9 +62,10 @@ This section contains a table that lists the enhancements that are included in t
  |Subscription billing	 | Billing schedule	 |The discount group setup in the trade agreement for item prices should automatically apply to the billing schedule when it is created for the corresponding customer record.  |	Feature management |
  |Subscription billing	 |(Preview) Subscription billing deferral COGS adjustment-enhancement | A dedicated dashboard monitors and provides visibility into errors that had occurred during the adjustment process. This dashboard offers actionable insights and a user-friendly interface, allowing users to conveniently reprocess failed adjustments through a rerun batch job—reducing manual effort and enhancing the overall reliability of the deferral.  |	Feature management |
  |Subscription billing |	 (Preview) Subscription billing deferral COGS adjustment-enhancement |	A notification message is displayed when the asynchronous process finishes so that the user is notified. |	Feature management |
-
-
-
+ |Regulatory reporting | \[Sweden\] Standard Import and Export (SIE) modernization in Electronic Reporting |	This feature replaces the legacy `SIE export format (SE)` format with the new `Standard Import and Export SIE TXT (SE)` format under the `Ledger accounting reports` model in Electronic Reporting. This new format enables the export of key financial data, including balances and transactions, in accordance with SIE Types 1 through 4. It supports larger datasets and introduces a redesigned export process that ensures faster generation, reduced system load, and a simplified workflow. By adopting this feature, Swedish entities can efficiently meet statutory reporting obligations while benefiting from a more scalable, performant, and maintainable export solution. [Export financial information (SIE) in Sweden](../localizations/sweden/emea-swe-sie-standard-report.md) |	Feature management |
+ |Regulatory reporting | \(Preview\) \[Italy\] Fiscal Journal modernization in Electronic Reporting |	This feature replaces the legacy SSRS-based report with a modern, PDF-based solution built on Electronic Reporting. It offers improved performance, enhances the ability to process large volumes of data across extended reporting periods, including up to a full fiscal year, while ensuring compliance with Italian fiscal requirements. |	Feature management |
+ |Regulatory reporting | Enhancement of Calculate statistics for [Payment terms in commercial transactions report for Poland](../localizations/poland/emea-pol-payment-terms-report.md) |	As of version 10.0.46 of Finance, the **Payment transaction type** parameter is available in the **Calculate statistics** dialog of **Statistics on invoices** process. This parameter allows to select the types of payment transactions to include in the statistics. |	Default |
+ |Regulatory reporting | Define application of exchange rates in Intrastat reporting |	This feature introduces flexibility in how amounts are calculated for Intrastat, enabling alignment with tax calculation logic. [Intrastat overview - Foreign trade parameters](../localizations/europe/emea-intrastat.md#foreign-trade-parameters) |	Default |
 
 ## More information
 
