@@ -1,10 +1,10 @@
 ---
 title: Security Role Duplicate with license filter
-description: The 'Duplicate Security Role / Duty with License Filter' feature in Dynamics 365 Finance and Operations helps administrators create compliant security roles and duties aligned with the selected license. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
+description: The 'Duplicate Security Role / Duty with License Filter' feature in finance and operations apps helps administrators create compliant security roles and duties aligned with the selected license. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
 author: ianceicys-msft
 ms.author: ceian
 ms.topic: article
-ms.date: 12/17/2025
+ms.date: 12/18/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -24,35 +24,38 @@ The **Duplicate with license filter** capability helps reduce that effort by dup
 
 Manually "right-sizing" a role to a license is time-consuming and error-prone. This feature provides:
 
-- **Faster custom security role creation** by automatically filtering role references (sub-roles, duties, privileges) based on the selected license. 
-- **More predictable custom seucrity role to license alignment** by excluding objects that require entitlements outside the chosen license. 
+- **Faster custom security role creation** by automatically filtering role references (subroles, duties, privileges) based on the selected license.
+- **More predictable custom security role to license alignment** by excluding objects that require entitlements outside the chosen license.
 - **Transparency for cleanup** via an Excel **Excluded References** report listing the excluded references.
 
- :::image type="content" source="media/security-role-copy-with-license-filter-duplicate-button.png" alt-text="Security Configuration with Duplicate function" lightbox="media/security-role-copy-with-license-filter-duplicate-button.png":::
+ :::image type="content" source="media/security-role-copy-with-license-filter-duplicate-button.png" alt-text="Screenshot of Security Configuration with Duplicate function." lightbox="media/security-role-copy-with-license-filter-duplicate-button.png":::
 
 > [!NOTE]
-> This feature helps you build **license-aligned security configurations**, but it does not assign licenses or change license requirements. You remain responsible for ensuring that users are properly licensed according to [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/all), for additional information see [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233).
+> This feature helps you build **license-aligned security configurations**, but it doesn't assign licenses or change license requirements. You remain responsible for ensuring that users are properly licensed according to [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDynamics365Services/all). For more information, see [**Dynamics 365 Licensing Guide**](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [**Dynamics 365 Licensing Deck**](https://go.microsoft.com/fwlink/?linkid=2279233).
 
 ## Who should use this feature
+
 This feature is intended for:
 
-- **Finance and Operations administrators** who manage security roles and want to reduce the effort required to create license-aligned roles.
+- **Finance and operations apps administrators** who manage security roles and want to reduce the effort required to create license-aligned roles.
 - **Licensing administrators and auditors** who validate that security configurations align with assigned licenses and internal policy.
 
 ## Prerequisites
 
-Before you begin, verify that:
+Before you begin, verify that you:
 
-- You have permissions to manage security in Finance and Operations (for example, **System administrator** / **Security administrator**).
-- You know the **license** you want the duplicated security object to align with (for example, Commerce, Supply Chain Management, Team Members, Operations - Activity, etc).
+- Have permissions to manage security in finance and operations apps (for example, **System administrator** or **Security administrator**).
+- Know the **license** you want the duplicated security object to align with (for example, Commerce, Supply Chain Management, Team Members, Operations - Activity, and so on).
 
 ## Availability and setup
-This feature is delivered through Finance and Operations servicing (including the latest Proactive Quality Updates). Proactive Quality Updates (PQU) schedule and build details are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts** and notifies customers through standard servicing communications. 
+
+Microsoft delivers this feature through finance and operations apps servicing, including the latest Proactive Quality Updates. The schedule and build details for Proactive Quality Updates (PQU) are published close to each train start and can change. Microsoft typically publishes the detailed schedule for each PQU train and corresponding build information **five days before the train starts**. Standard servicing communications notify customers about these updates.
 
 For the latest Proactive Quality Update (PQU) schedule, see:
+
 - [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule)
 
-The following table reflects the servicing trains, exact builds and rollout dates and official PQU schedule page that includes the  **Duplicate with license filter** functionality.
+The following table reflects the servicing trains, exact builds, rollout dates, and official PQU schedule page that includes the **Duplicate with license filter** functionality.
 
 | Release        | Platform Release          | Build        | Proactive Quality Update Train Duration                     |
 |----------------|----------------|------------|----------------------------------------|
@@ -60,56 +63,57 @@ The following table reflects the servicing trains, exact builds and rollout date
 | [10.0.44 PQU-7](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule)| 7.0.7606.174   | 10.0.2263.187     | January 5, 2026 to February 8, 2026    |
 | [10.0.43 PQU-9](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) | 7.0.7521.283   | 10.0.2177.214    | January 5, 2026 to February 8, 2026    |
 
-For an Overview of role-based security, see [Role-based security](role-based-security.md).
+For an overview of role-based security, see [Role-based security](role-based-security.md).
 
 To enable and use the **Duplicate with license filter** feature:
-- Update your environment to the [latest Finance & Operations proactive quality update](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) that includes this feature.
-- Navigate to the **System administration → Security → Security Configuration**
+
+1. Update your environment to the [latest finance and operations apps proactive quality update](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) that includes this feature.
+1. Go to **System administration → Security → Security Configuration**.
 
 For background on security concepts, see [Role-based security](role-based-security.md).
 
 ## How the duplicate license filter works
 
-When you duplicate a role (or duty) with a selected license:
+When you duplicate a role or duty with a selected license:
 
-- Finance and Operations copies the security object.
-- The system evaluates referenced objects (sub-roles, duties, privileges).
-- Only references whose entitlements that are **fully** covered by the selected license are **included**.
-- References that require entitlements **outside** the selected license (_including mixed-entitlement objects_) are **excluded** and included in an Excel **Excluded References** report.
+- Finance and operations apps copy the security object.
+- The system evaluates referenced objects, such as subroles, duties, and privileges.
+- The system includes only references whose entitlements are **fully** covered by the selected license.
+- The system excludes references that require entitlements **outside** the selected license, including mixed-entitlement objects. It includes these references in an Excel **Excluded References** report.
 
 > [!IMPORTANT]
-> The feature does **not** deep-copy or create new duties or privileges. It re-uses existing security objects and reports what is **excluded**, which preserve alignment with out-of-box security functionality. 
+> This feature doesn't deep-copy or create new duties or privileges. It reuses existing security objects and reports what it **excluded**. This approach preserves alignment with out-of-box security functionality.
 
 ## Use the Duplicate with license filter feature
 
 Follow these steps to use the **Duplicate Security Role with License Filter** feature:
 
-:::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Duplicate function overview" lightbox="media/security-role-copy-with-license-filter-overview.png":::
+:::image type="content" source="media/security-role-copy-with-license-filter-overview.png" alt-text="Screenshot of Duplicate function overview." lightbox="media/security-role-copy-with-license-filter-overview.png":::
 
-1. In Finance and Operations, go to **System administration → Security → Security Configuration**
-3. Select the role (or duty) you want to duplicate.
-4. Select **Duplicate**.
-5. In the dialog, enter:
-   - A **new name** for the copied security object (recommendation: include the name of the license in () e.g. _(Team Members)_)
-   - Select a **licensing SKU** for the new security object (e.g. Team Members, Operations - Activity)
+1. In finance and operations apps, go to **System administration → Security → Security Configuration**.
+1. Select the role (or duty) you want to duplicate.
+1. Select **Duplicate**.
+1. In the dialog, enter:
+   - A **new name** for the copied security object. Include the name of the license in parentheses, for example _(Team Members)_.
+   - Select a **licensing SKU** for the new security object, such as Team Members or Operations - Activity.
 
-:::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
+:::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Screenshot of Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
 
-6. If some references can’t be included, a warning appears indicating "**Some references were excluded**" for the duplicated role and specified license.
+1. If the process can't include some references, a warning appears indicating "**Some references were excluded**" for the duplicated role and specified license.
    - Select **Message details** to open a side pane showing the count of excluded references.
    - Download the Excel Excluded Reference report for further auditing and analysis.
 
- :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-2.png" alt-text="Some References were excluded." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-2.png":::
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-2.png" alt-text="Screenshot of Some References were excluded." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-2.png":::
 
-7.	Review the list of duties and privileges that were **excluded** from the selected license. The excel report displays **excluded** objects that did not meet the specified license.
+1. Review the list of duties and privileges that the selected license **excluded**. The Excel report displays **excluded** objects that don't meet the specified license.
 
- :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-3.png" alt-text="Excluded References from duplicated security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-3.png":::
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-3.png" alt-text="Screenshot of Excluded References from duplicated security role." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-3.png":::
 
-8.	Select **Publish selection** to publish the role, then [**assign users to the new security role**](/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) to validate end-to-end user license requirements. 
+1. Select **Publish selection** to publish the role. Then, [**assign users to the new security role**](/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles) to validate end-to-end user license requirements.
 
- :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-4.png" alt-text="Publish selection of duplicatd security role" lightbox="media/security-role-copy-with-license-filter-detailed-step-series-4.png":::
+ :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-4.png" alt-text="Screenshot of Publish selection of duplicate security role." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-4.png":::
 
- ## Operational guidance and follow-up
+## Operational guidance and follow-up
 
  After duplication:
 
@@ -119,12 +123,13 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 - Plan a validation pass in a sandbox environment before applying role changes broadly in production.
 
 ## Important considerations
-- Roles can only be duplicated within the same Finance & Operations environment.
-- Duties and privileges are only included if **all** entitlements are compliant with the selected license.
-- Duties or privileges containing mixed license entitlements will be **excluded** and listed in the Excel **Excluded References** report.
-- The feature does not create or modify duties or privileges; it only reuses existing ones.
-- Deep copying is avoided to maintain alignment with standard (out-of-box) functionality and upgrades.
-- The feature does not support cross-environment or cross-tenant copying.
+
+- You can only duplicate roles within the same finance and operations apps environment.
+- Duties and privileges are included only if **all** entitlements comply with the selected license.
+- The Excel **Excluded References** report lists duties or privileges containing mixed license entitlements, which are **excluded**.
+- The feature doesn't create or modify duties or privileges; it only reuses existing ones.
+- The feature avoids deep copying to maintain alignment with standard (out-of-box) functionality and upgrades.
+- The feature doesn't support cross-environment or cross-tenant copying.
 
 ## Related information
 
