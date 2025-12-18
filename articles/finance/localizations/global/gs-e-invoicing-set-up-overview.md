@@ -61,27 +61,7 @@ To enable communication between Electronic invoicing and Finance or Supply Chain
 ![Screenshot that shows the Environment field for a service environment unavailable on the Electronic document parameters page.](../media/eInvoicing_service_environment_setup.png)
 
 > [!IMPORTANT]
-> After the **Globalization Studio** and **E-invoicing service workspace designer** features are enabled, the field for the service environment name becomes unavailable. Therefore, you must finalize the name of the relevant service environment before you enable the new Globalization Studio experience.
-
-## Configure Globalization Studio for Electronic invoicing
-
-Make sure that the **Globalization Studio** workspace is available in the system. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
-
-To activate Electronic invoicing in Globalization Studio, enable the following features in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-- Globalization Studio
-- E-invoicing service workspace designer
-- Enable Globalization feature setup for Tax Calculation Service
-- Electronic reporting globalization feature Key Vault parameters
-- Electronic reporting globalization feature JSON import/export
-- Dataverse repository
-
-> [!NOTE]
-> By enabling the **E-invoicing service workspace designer** feature, you also activate a **Feature design-time restoration procedure** batch job that starts the required data transfer from RCS-related data sources (if applicable) to the Finance database. The process runs in the background and requires some time to be completed. The **Electronic invoicing** tile in Globalization Studio can't be accessed until the batch job is completed. The following error message indicates that the batch job isn't yet completed, and you must give the system more time to complete the process:
->
-> > The design-time restoration procedure has already been started. Please, wait until it is finished.
-
-![Screenshot that shows that the Electronic invoicing tile is unavailable.](../media/EinvTileGS.jpg)
+> After the initial configuration of **Electronic document parameters**, the field for the service environment name becomes unavailable. Therefore, you must finalize the name of the relevant service environment in advance.
 
 ## Configure the Azure resources for Electronic invoicing
 
