@@ -99,6 +99,15 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 For more information, see [Create a Key Vault reference](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
+## Synchronization of the Electronic invoicing service with Finance
+
+After the completion of all the configuration steps described in the previous chapters, you can validate the correctness of the configuration.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. Select the **Electronic invoicing** tab and click the **Save** menu button.
+1. In case of correct configuration, the system will show the *Synchronization with the e-invoicing service was successful* information message. You can continue with the next chapters.
+1. In case of synchronization errors, you need to address the errors raised to achieve the successful synchronization.
+
 ## Import the electronic invoicing feature
 
 To import the electronic invoicing feature, follow these steps.
