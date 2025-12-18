@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Fiscal journal report
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE[banner](../../includes/banner.md)]
 
 The Italian **Fiscal journal** report is a monthly report that lists all the vouchers and journal entries in order of posting date.
 
