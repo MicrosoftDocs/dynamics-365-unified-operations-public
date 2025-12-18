@@ -1,9 +1,9 @@
 ---
 title: Security Role Duplicate with license filter
-description: The 'Duplicate Security Role / Duty with License Filter' feature in finance and operations apps helps administrators create compliant security roles and duties aligned with the selected license. This feature reduces the manual effort required to adjust security configurations and ensures that roles comply with Microsoft licensing policies.
+description: Simplify security role creation with the Duplicate with License Filter feature in finance and operations apps. Align roles to licenses faster and reduce manual effort.
 author: ianceicys-msft
 ms.author: ceian
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/18/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -16,9 +16,11 @@ ms.assetid:
 
 # Duplicate a security role or duty with a license filter
 
-Administrators often need to create **license-aligned** security roles that only contain duties and privileges consistent with a specific license (for example, Team Members, Operations - Activity). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
+[!INCLUDE[banner](../includes/banner.md)]
 
-The **Duplicate with license filter** capability helps reduce that effort by duplicating a role (or duty) while **excluding** references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with an Excel **Excluded References** report for anything that was **excluded** for further auditing and analysis.
+Administrators often need to create license-aligned security roles that only contain duties and privileges consistent with a specific license (for example, Team Members, Operations - Activity). Traditionally, that work requires manual review and cleanup across many duties, privileges, and role references, which can mean checking hundreds of objects.
+
+**Duplicate with license filter** helps reduce that effort by duplicating a role (or duty) while excluding references that aren't fully entitled by the selected license. The result is a new security role you can publish and assign, along with an Excel **Excluded References** report for anything that was excluded for further auditing and analysis.
 
 ## Why this feature matters
 
@@ -82,7 +84,7 @@ When you duplicate a role or duty with a selected license:
 - The system excludes references that require entitlements **outside** the selected license, including mixed-entitlement objects. It includes these references in an Excel **Excluded References** report.
 
 > [!IMPORTANT]
-> This feature doesn't deep-copy or create new duties or privileges. It reuses existing security objects and reports what it **excluded**. This approach preserves alignment with out-of-box security functionality.
+> This feature doesn't deep-copy or create new duties or privileges. It reuses existing security objects and reports what it excluded. This approach preserves alignment with out-of-box security functionality.
 
 ## Use the Duplicate with license filter feature
 
@@ -93,19 +95,15 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 1. In finance and operations apps, go to **System administration → Security → Security Configuration**.
 1. Select the role (or duty) you want to duplicate.
 1. Select **Duplicate**.
-1. In the dialog, enter:
-   - A **new name** for the copied security object. Include the name of the license in parentheses, for example _(Team Members)_.
-   - Select a **licensing SKU** for the new security object, such as Team Members or Operations - Activity.
-
-:::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-1.png" alt-text="Screenshot of Duplicate dialog prompting for a new name and license." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-1.png":::
-
+1. In the dialog, enter a **new name** for the copied security object. Include the name of the license in parentheses, for example _(Team Members)_.
+1. Select a **licensing SKU** for the new security object, such as Team Members or Operations - Activity.
 1. If the process can't include some references, a warning appears indicating "**Some references were excluded**" for the duplicated role and specified license.
    - Select **Message details** to open a side pane showing the count of excluded references.
    - Download the Excel Excluded Reference report for further auditing and analysis.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-2.png" alt-text="Screenshot of Some References were excluded." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-2.png":::
 
-1. Review the list of duties and privileges that the selected license **excluded**. The Excel report displays **excluded** objects that don't meet the specified license.
+1. Review the list of duties and privileges that the selected license excluded. The Excel report displays excluded objects that don't meet the specified license.
 
  :::image type="content" source="media/security-role-copy-with-license-filter-detailed-step-series-3.png" alt-text="Screenshot of Excluded References from duplicated security role." lightbox="media/security-role-copy-with-license-filter-detailed-step-series-3.png":::
 
@@ -125,8 +123,8 @@ Follow these steps to use the **Duplicate Security Role with License Filter** fe
 ## Important considerations
 
 - You can only duplicate roles within the same finance and operations apps environment.
-- Duties and privileges are included only if **all** entitlements comply with the selected license.
-- The Excel **Excluded References** report lists duties or privileges containing mixed license entitlements, which are **excluded**.
+- Duties and privileges are included only if all entitlements comply with the selected license.
+- The Excel **Excluded References** report lists duties or privileges containing mixed license entitlements, which are excluded.
 - The feature doesn't create or modify duties or privileges; it only reuses existing ones.
 - The feature avoids deep copying to maintain alignment with standard (out-of-box) functionality and upgrades.
 - The feature doesn't support cross-environment or cross-tenant copying.
