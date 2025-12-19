@@ -3340,7 +3340,7 @@
                     - name: Yearly tax communication
                       href: localizations/italy/emea-ita-yearly-tax-communication.md
                     - name: Fiscal journal report
-                      href: localizations/italy/emea-ita-fiscal-journal.md
+                      href: localizations/italy/emea-ita-fiscal-journal-er.md
                     - name: Competence date for transactions in Italy
                       href: localizations/italy/emea-ita-competence-date.md
                     - name: General ledger simulations (Italy)
