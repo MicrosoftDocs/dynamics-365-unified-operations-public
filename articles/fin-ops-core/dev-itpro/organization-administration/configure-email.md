@@ -22,9 +22,10 @@ The behavior of the email subsystem is influenced by a combination of administra
 
 Both administrators and users set the behavior of the email subsystem.
 
-## [Administrator] Email parameters page 
+## [Administrator] Email parameters page
 
 ### Email configuration for the environment
+
 On the **Email parameters** page, administrators can configure the high-level email behavior for the environment from the **Configuration** tab.
 
 | Field                 | Description |
@@ -35,10 +36,10 @@ On the **Email parameters** page, administrators can configure the high-level em
 
 The **Email history** section serves two purposes. First, it provides an entry point to the **Email history** page, where administrators can review all sent emails and also any errors that prevented an email from being sent. Second, it lets you configure how long email history is maintained. By default, the last 30 days of email history are retained. You can adjust this period by changing the value of the **Number of days to retain email history** field to a non-zero number. If you set the value to **0** (zero), the default number and behavior are used.
 
-The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This feature can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't originally be sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Office 365 SMTP email provider is automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. 
+The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This feature can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't originally be sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Office 365 SMTP email provider is automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers.
 
 > [!NOTE]
-> Use of the **Email throttling** feature isn't recommended for the Microsoft Graph and Exchange email providers, because they have their own throttling mechanisms. Therefore, you should ensure that the **per-minute email sending limit** field is set to **0** for both those providers. 
+> Use of the **Email throttling** feature isn't recommended for the Microsoft Graph and Exchange email providers, because they have their own throttling mechanisms. Therefore, you should ensure that the **per-minute email sending limit** field is set to **0** for both those providers.
 
 ### Send email with Microsoft Graph
 
@@ -99,7 +100,7 @@ Administrators can modify mailbox access. For more information, see [Limiting ap
 
 1. In Dynamics 365 finance and operations apps, open the **Email parameters** page.
 2. On the **Microsoft Graph settings** tab, in the **Application ID** field, enter the **Application ID** value that you captured when you created the new app in the previous procedure.
-3. In the **Application key** field, enter the **Secret value** value that you captured when you created a client secret in the previous procedure.
+3. In the **Application secret** field, enter the **Secret value** value that you captured when you created a client secret in the previous procedure.
 4. Select **Save**.
 
 #### Exchange email provider (Deprecated)
@@ -118,6 +119,7 @@ Note that the Exchange mail provider has the following limitations:
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
 #### Server information
+
 <table>
 <thead>  
 <tr>
@@ -135,7 +137,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
       </ul>
     </td>
   </tr>
-    
+
   <tr>
     <td>SMTP port number</td>
     <td>Typically, the port number should be set to 587 for secure transport.</td>
@@ -151,7 +153,6 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 > [!NOTE]
 > If you are running into issues from too many emails being sent in a short period of time, it is recommended to utilize the **Email throttling** feature mentioned in the **Configuration tab** section above. If that doesn't resolve the issue, you may consider adding the appropriate IP addresses from the outbound IP safe list to your DNS SPF record authorizing Dynamics 365 finance and operations to send emails from your domain. For more information, see [Outbound IP safe list](../deployment/deploymentFAQ.md).
 
- 
 #### Authentication
 
 <table>
@@ -172,7 +173,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
     <td>If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.
     </td>
   </tr>
-      
+
 </tbody>
 
 </table>
@@ -338,7 +339,7 @@ The testing for email notifications is to simply trigger the notification and th
 
 ### Common issues with sending email
 
-There are some standard processes that can help you troubleshoot the configuration of email settings. 
+There are some standard processes that can help you troubleshoot the configuration of email settings.
 
 <table>
   <tr>
@@ -383,7 +384,7 @@ There are some standard processes that can help you troubleshoot the configurati
   <tr>
     <th id="review-errors">Review any errors on the Email history page.</th>
     <td>
-      <ol>        
+      <ol>
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email history</b>.
           <p>The <b>Email history</b> page lets administrators review all sent emails and also any errors that prevented an email from being sent. It shows both interactive and non-interactive/batch emails.</p>
         </li>
@@ -401,9 +402,9 @@ There are some standard processes that can help you troubleshoot the configurati
   </tr>
 </table>
 
- ### Specific Microsoft Graph/Exchange email issues
+### Specific Microsoft Graph/Exchange email issues
 
--  **<span id="unauthorized-forbidden-error">"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange</span>**
+- **<span id="unauthorized-forbidden-error">"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange</span>**
 
     <table>
       <tr>
@@ -417,13 +418,13 @@ There are some standard processes that can help you troubleshoot the configurati
           <ol>
             <li>Open the <b>Email history</b> page.</li>
             <li>Add a filter for <b>Failed</b> emails to the <b>Email status</b> field.</li>
-            <li>Make a note of the value in the <b>Email sender</b> field. This field shows the user that Exchange is indicating isn't a valid or correctly permissioned user in Office 365.</li> 
-          </ol>        
+            <li>Make a note of the value in the <b>Email sender</b> field. This field shows the user that Exchange is indicating isn't a valid or correctly permissioned user in Office 365.</li>
+          </ol>
         </td>
       </tr>
     </table>
 
--  **<span id="404-not-found">"(404) Not found" error when email is sent via Exchange</span>**
+- **<span id="404-not-found">"(404) Not found" error when email is sent via Exchange</span>**
 
     <table>
       <tr>
@@ -433,21 +434,21 @@ There are some standard processes that can help you troubleshoot the configurati
       <tr>
         <th>Fix</th>
         <td><p>To fix this issue, make sure that the specified user exists in Office 365 and has appropriate permissions, or use alternate user accounts that have valid Exchange mailboxes.</p>
-        <p>To find the affected users, follow these steps:</p> 
+        <p>To find the affected users, follow these steps:</p>
           <ol>
             <li>Open the <b>Email history</b> page.</li>
             <li>Add a filter for <b>Failed</b> emails to the <b>Email status</b> field.</li>
-            <li>Make a note of the value in the <b>Email sender</b> field. This field shows the user that doesn't have a mailbox in Exchange.</li> 
-          </ol>        
+            <li>Make a note of the value in the <b>Email sender</b> field. This field shows the user that doesn't have a mailbox in Exchange.</li>
+          </ol>
         </td>
       </tr>
     </table>
 
-### Specific SMTP email issues 
+### Specific SMTP email issues
 
 If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
--  **<span id="single-label-domain-not-accepted-error">SMTP emails fail to be sent with "Recipient addresses in single label domains not accepted"</span>**
+- **<span id="single-label-domain-not-accepted-error">SMTP emails fail to be sent with "Recipient addresses in single label domains not accepted"</span>**
 
     <table>
       <tr>
@@ -460,7 +461,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **<span id="mailbox-full-error">SMTP emails fail to be sent with "Mailbox full"</span>**
+- **<span id="mailbox-full-error">SMTP emails fail to be sent with "Mailbox full"</span>**
 
     <table>
       <tr>
@@ -473,7 +474,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **<span id="authentication-unsuccessful-error">SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"</span>**
+- **<span id="authentication-unsuccessful-error">SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"</span>**
 
     <table>
       <tr>
@@ -486,7 +487,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **<span id="smtpclientauthentication-disabled-error">SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"</span>**
+- **<span id="smtpclientauthentication-disabled-error">SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"</span>**
 
     <table>
       <tr>
@@ -512,7 +513,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **<span id="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required">SMTP emails fail to be sent with an "5.7.57 SMTP" error, or an indication that either you aren't authenticated or authentication is required</span>**
+- **<span id="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required">SMTP emails fail to be sent with an "5.7.57 SMTP" error, or an indication that either you aren't authenticated or authentication is required</span>**
 
     <table>
       <tr>
@@ -538,7 +539,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **<span id="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender">SMTP emails fail to be sent with "Client does not have permissions to send as this sender"</span>**
+- **<span id="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender">SMTP emails fail to be sent with "Client does not have permissions to send as this sender"</span>**
 
     <table>
       <tr>
@@ -561,7 +562,6 @@ The email templates will be sourced from either system email templates or organi
 
 The system communicates with Microsoft Graph, Exchange, or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) apply.
 
-
 ## Additional resources
 
 [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
@@ -570,6 +570,4 @@ The system communicates with Microsoft Graph, Exchange, or an SMTP server like a
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
