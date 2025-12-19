@@ -237,27 +237,6 @@ This example shows how to add a new queue. After the queue is created, you'll be
         {
             return false;
         }
-    
-    }
-    ```
-
-1. Create an extension for the `SysMessageProcessorToggle` class to enable the message processor in the user interface (UI).
-
-    ```xpp
-    [ExtensionOf(classStr(SysMessageProcessorToggle))]
-    final class MySysMessageProcessorToggle_Extension
-    {
-        /// <summary>
-        /// Determines if the toggle is enabled.
-        /// </summary>
-        /// <returns>
-        /// true if the toggle is enabled; otherwise, false.
-        /// </returns>
-        internal boolean isEnabled()
-        {
-            return next isEnabled() || MyFeature::instance().isEnabled();
-        }
-    
     }
     ```
 
