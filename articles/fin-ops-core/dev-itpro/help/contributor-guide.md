@@ -4,7 +4,7 @@ description: Learn about tips and tricks for working with the GitHub repos and M
 author: edupont04
 ms.author: edupont
 ms.topic: article
-ms.date: 07/17/2024
+ms.date: 12/19/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -53,7 +53,7 @@ If your solution is available in more than one country or region, you'll probabl
 
 ### Dynamics 365 Translation Service
 
-You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](../lifecycle-services/use-translation-service-ua.md).
+You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files.
 
 ## See also
 

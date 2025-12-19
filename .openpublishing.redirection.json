@@ -1,6 +1,56 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-ado-tutorial.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-announcements.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-api-info.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-connector-info.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-devops-extension.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-visual-studio.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-vscode-doc.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/lcs-aad-app-reg.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-tm.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md",
       "redirect_url": "/dynamics365/finance/localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration",
       "redirect_document_id": "false"  
