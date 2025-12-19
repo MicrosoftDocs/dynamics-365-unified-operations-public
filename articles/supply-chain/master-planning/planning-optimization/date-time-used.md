@@ -125,3 +125,10 @@ One sales order that has a requested issue time on January 22 is covered by one 
 The following illustration shows this scenario. (Select the illustration to open a larger version.)
 
 [![Delay with calendars scenario.](media/planning-service-dates-7-small.png)](media/planning-service-dates-7.png)
+
+## Related information
+
+- [Calendars and master planning](../supply-chain-calendars-master-planning.md)
+- [Calculate requested ship dates for purchase orders](../supplier-requested-confirmed-dates.md)
+- [Improve scheduling engine performance](../scheduling-engine-performance.md)
+- [Safety margins](safety-margins.md)

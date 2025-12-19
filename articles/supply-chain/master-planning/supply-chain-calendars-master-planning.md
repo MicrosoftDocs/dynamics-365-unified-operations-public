@@ -19,9 +19,9 @@ This article provides an overview of supply chain calendars and how they affect 
 
 ## Definition of a calendar
 
-To define a calendar to use in your organization, go to **Organization administration** \> **Setup** \> **Calendars** \> **Calendars**.
+To define a calendar to use in your organization, go to **Organization administration** \> **Setup** \> **Calendars** \> **Calendars**. Use button on the Action Pane to add, remove, or edit calendars as needed.
 
-Each date entry in a calendar can be open or closed, or it can inherit its open/closed status and working times from the base calendar. The value is specified in the **Control** column on the **Working times** page. For each date, the **Column** field is set to one of the following values:
+To manage the details of a selected calendar, select **Working times** on the Action Pane. Each date entry in a calendar can be open or closed, or it can inherit its open/closed status and working times from the base calendar. The value is specified in the **Control** column on the **Working times** page. For each date, the **Column** field is set to one of the following values:
 
 - **Open** – Work is performed on the selected day. The calendar is updated according to the working time template.
 - **Closed** – Work isn't performed on the selected day.
@@ -171,4 +171,9 @@ Although it's important that all relevant calendars are assigned in their approp
 
 The best practice is to clarify who is responsible for assigning and updating calendars in their appropriate place. In the event of a breakdown or any other unusual change in the working days, it's essential to update the calendars according to that change. All tasks that depend on calendars, such as master planning and production scheduling, must be rerun when calendars are updated.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## Related information
+
+- [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md)
+- [Improve scheduling engine performance](scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
+- [Safety margins](planning-optimization/safety-margins.md)

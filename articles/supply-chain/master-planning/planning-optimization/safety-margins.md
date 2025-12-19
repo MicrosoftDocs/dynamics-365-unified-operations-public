@@ -162,4 +162,7 @@ This situation usually occurs when you sell an item with an issue margin from a 
 
 ## Related information
 
-- [Create a working time calendar](../../../human-resources/hr-leave-and-absence-working-time-calendar.md)
+- [Calendars and master planning](../supply-chain-calendars-master-planning.md)
+- [Calculate requested ship dates for purchase orders](../supplier-requested-confirmed-dates.md)
+- [Improve scheduling engine performance](../scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](date-time-used.md)

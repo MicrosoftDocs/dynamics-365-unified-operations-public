@@ -69,7 +69,7 @@ To view and act on your optimization opportunities, including those related to c
 1. From the toolbar, select **More information** to learn more about the opportunity and recommended actions.
 1. If you want to act on the opportunity, select **Take action** from the toolbar to open the **Message queue setup** page, and configure the cleanup settings as described previously in this article.
 
-## Additional resources
+## Related information
 
 - [Monitor and control message processor messages](message-processor.md)
 - [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)

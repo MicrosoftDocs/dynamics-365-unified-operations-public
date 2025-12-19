@@ -27,7 +27,7 @@ The following procedure describes how to create, configure, and manage product l
 1. On the Action Pane, select **Refresh processes** to make sure all of the latest business processes are available for use with your product lifecycle states.
 1. Follow one of these steps:
     - To create a new lifecycle state, select **New** on the Action Pane.
-    - To edit an existing lifecycle state, select it in the list pane, select **Edit** on the Action Pane.
+    - To edit an existing lifecycle state, select it in the list pane, and select **Edit** on the Action Pane.
     - To delete an existing lifecycle state, select it in the list pane, and then select **Delete** on the Action Pane.
 
 1. Make the following settings in the header of your new or selected lifecycle state:
