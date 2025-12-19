@@ -38,6 +38,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Supplier Communications Agent*
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
     > If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
@@ -51,11 +52,9 @@ Before you can use the Supplier Communications Agent, your system must meet the 
 
     If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
 
-- Optional: If you want the agent to send emails automatically, turn on the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We recommend that you turn off this feature for sandbox environments, where data such as purchase orders might not be up to date, or vendor email addresses might be missing.
-
 ## <a name="set-up-agent-identity"></a>Set up an agent identity
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that is used for these interactions and create the required connections.
+The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that the agent uses for these interactions and create the required connections.
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
@@ -98,7 +97,7 @@ To create the required connections, follow these steps.
 1. Use the **Search** field at the right side of the page to find the connection with a **Name** of *Microsoft Dataverse* (if you see two, use the one with the green icon). Select **Create** for that row and follow the instructions on your screen. Sign in with the intended *agent identity user* when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 1. At the top of the page, select **New connection**.
-1. Find the connection with a **Name** of *Microsoft Copilot Studio (preview)*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
+1. Find the connection with a **Name** of *Microsoft Copilot Studio*. Select **Create** for that row and follow the instructions on your screen. Sign in as the intended agent identity when prompted.
 1. You return to the **Connections** list. Your new connector is now shown at the bottom of the list and is named after the agent identity you signed in with when creating it.
 
     :::image type="content" source="media/sca-connections-setup.png" alt-text="Example connections setup" lightbox="media/sca-connections-setup.png":::
@@ -108,7 +107,7 @@ To create the required connections, follow these steps.
 > [!NOTE]
 > This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both; you can choose the method that you prefer.
 
-To finish setting up the agent identity, you must activate the triggering Power Automate flows. A Canvas app is provided to help you do this. To use the app, follow these steps.
+To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps to use a Canvas app and finish the setup.
 
 1. Sign in to the [Power Apps Maker portal](https://make.powerapps.com) as an environment administrator user.
 1. Select your environment from the **Environment** drop-down list in the page header.
@@ -117,8 +116,7 @@ To finish setting up the agent identity, you must activate the triggering Power 
 1. Find and open the solution with a **Display name** of *Copilot in Supply Chain Management solution*.
 1. On the **Objects** pane, select **Apps**.
 1. Select the app with a **Display name** of *(Production ready preview) Setup Supplier Communications Agent*.
-1. On the command bar, select **Share**.
-1. Add your name and select **Share**.
+1. If **Play** is disabled on the command bar, select **Share**, add your name, and select **Share**.
 1. Select the *(Production ready preview) Setup Supplier Communications Agent* app again and then select **Play** on the command bar.
 1. Under **Connections**, select the connections you created in the previous section for both *Microsoft Dataverse* and *Microsoft Copilot Studio*.
 1. Select **Apply** at the bottom-right of the page and wait for all of the flows listed under **Agent trigger flows status** to switch to a state of *Activated*.
@@ -171,7 +169,7 @@ To set up a private mailbox, follow these steps.
 1. Select the checkbox for each mailbox that you want to use with the Supplier Communications Agent.
 1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
 
-After a private mailbox is set up, the user who owns it must update the personalization settings to specify that all emails should be tracked.
+After you set up a private mailbox, the user who owns it must update the personalization settings to specify that all emails should be tracked.
 
 To enable tracking of all emails for a private mailbox that you own, follow these steps.
 
@@ -182,7 +180,7 @@ To enable tracking of all emails for a private mailbox that you own, follow thes
 
 ### Shared mailbox
 
-If you're using a shared mailbox, create a queue so that all users who work on the shared mailbox can access email contents.
+If you use a shared mailbox, create a queue so that all users who work on the shared mailbox can access email contents.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role.
 1. Select the environment that you want to set up.

@@ -441,3 +441,10 @@ This scenario shows how requested ship and receipt dates are calculated when you
 
     - **Requested receipt date** – The value matches the **Requested receipt date** value from the RFQ.
     - **Requested ship date** – The value is calculated backward from the requested receipt date, based on the purchase transport days setup.
+
+## Related information
+
+- [Calendars and master planning](supply-chain-calendars-master-planning.md)
+- [Improve scheduling engine performance](scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
+- [Safety margins](planning-optimization/safety-margins.md)

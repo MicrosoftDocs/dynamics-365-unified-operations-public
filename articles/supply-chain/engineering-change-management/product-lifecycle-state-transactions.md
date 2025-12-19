@@ -14,9 +14,9 @@ ms.search.form: EngChgEcoResProductLifecycleStateChange
 
 [!include [banner](../includes/banner.md)]
 
-As an engineering product goes through its lifecycle, it's important that you be able to control which transactions are allowed for each lifecycle state. For example, products that aren't yet in a mature state should not be put on a sales order. Alternatively, if a product is reaching its end-of-life state, you might want to control the inflow of that product.
+As an engineering product goes through its lifecycle, you need to control which transactions are allowed for each lifecycle state. For example, don't add products that aren't in a mature state to a sales order. Alternatively, if a product is reaching its end-of-life state, you might want to control the inflow of that product.
 
-For an engineering product, changes to the lifecycle state are connected to the product's engineering versions. Therefore, the product's lifecycle state can also be connected to its engineering versions. When the product lifecycle state is connected to an engineering version, you can use the lifecycle state to control which transactions are allowed for the engineering version.
+For an engineering product, changes to the lifecycle state connect to the product's engineering versions. Therefore, the product's lifecycle state can also connect to its engineering versions. When you connect the product lifecycle state to an engineering version, you can use the lifecycle state to control which transactions are allowed for the engineering version.
 
 ## Create and manage product lifecycle states
 
@@ -24,29 +24,29 @@ To work with product lifecycle states, go to **Engineering change management \> 
 
 ## Lifecycle states for released products and product variants
 
-For a product that has variants (master and variants), the product (master) will have a lifecycle state and each of the variants can also have a different lifecycle state.
+For a product that has variants (master and variants), the product (master) has a lifecycle state and each of the variants can have a different lifecycle state.
 
-For specific processes, if either the variant or the product is blocked, then the process will also be blocked. Specifically, to determine whether a process is blocked, the system will make the following checks:
+For specific processes, if either the variant or the product is blocked, the process is blocked. To determine whether a process is blocked, the system makes the following checks:
 
 - For engineering-controlled products:
-    - If the current engineering version is blocked, then block the process.
-    - If the current variant is blocked, then block the process.
-    - If the released product is blocked, then block the process.
+    - If the current engineering version is blocked, block the process.
+    - If the current variant is blocked, block the process.
+    - If the released product is blocked, block the process.
 - For standard products:
-    - If the current variant is blocked, then block the process.
-    - If the released product is blocked, then block the process.
+    - If the current variant is blocked, block the process.
+    - If the released product is blocked, block the process.
 
 For example, suppose you only want to sell one variant (red) of a given product (t-shirt) and block sales of all other variants for now. You could implement this using the following setup:
 
 - Assign the product a lifecycle state that allows the process. For example, assign the t-shirt product a lifecycle state of *Sellable*, which allows the *Sales order* business process.
-- Assign the sellable variant a lifecycle state that allows the process. For example, also assign the red variant a lifecycle state of *Sellable*.
-- All other variants be assigned another lifecycle state where the process is blocked. For example, assign the white variant (and all other variants) a lifecycle state of *Not sellable*, which blocks the *Sales order* business process.
+- Assign the sellable variant a lifecycle state that allows the process. For example, assign the red variant a lifecycle state of *Sellable*.
+- Assign all other variants a lifecycle state that blocks the process. For example, assign the white variant (and all other variants) a lifecycle state of *Not sellable*, which blocks the *Sales order* business process.
 
 ## Default product lifecycle states
 
-The **Default when released to a legal entity** setting for lifecycle states doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). Instead, the lifecycle state of an engineering product version after it's created in the engineering company is specified in its engineering change category. When the product is released to an operational company, the lifecycle state of the product is copied. In other words, when an engineering product is released to an operational company, it has the same lifecycle state that it had in the engineering company. The lifecycle state can be overwritten in the operational company.
+The **Default when released to a legal entity** setting for lifecycle states doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). Instead, the engineering change category specifies the lifecycle state of an engineering product version after it's created in the engineering company. When you release the product to an operational company, the lifecycle state of the product is copied. In other words, when you release an engineering product to an operational company, it has the same lifecycle state that it had in the engineering company. You can overwrite the lifecycle state in the operational company.
 
-The default lifecycle state for an engineering version is specified by its engineering category. The state will be defaulted when you create a new engineering version, including the first version of a new product.
+The default lifecycle state for an engineering version is specified by its engineering category. The state defaults when you create a new engineering version, including the first version of a new product.
 
 When you create a new product or engineering product, you can also set the default lifecycle state by specifying it on the template released product of the release policy assigned to the product.
 
