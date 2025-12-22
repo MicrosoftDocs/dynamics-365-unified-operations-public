@@ -45,7 +45,7 @@ You can convert content from Microsoft Word to Markdown by using open-source too
 If your solution is available in more than one country or region, you'll probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples:
 
 * Create the content in multiple languages.
-* Create the content in one language, and then translate it. For example, by using the [Dynamics 365 Translation Service (DTS)](#dynamics-365-translation-service).
+* Create the content in one language, and then translate it.
 * Pull Microsoft's English (United States) language content from our MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, customize the Markdown files, translate them, and then use a third-party tool to build the HTML files.
 
     > [!NOTE]

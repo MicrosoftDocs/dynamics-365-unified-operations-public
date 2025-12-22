@@ -1175,12 +1175,6 @@ items:
         href: lifecycle-services/querycookbook.md
       - name: Expired subscriptions and data deletion
         href: lifecycle-services/expired-subscription-data-deletion.md
-      - name: Microsoft Dynamics 365 Translation Service
-        items: 
-        - name: Dynamics 365 Translation Service overview
-          href: lifecycle-services/translation-service-overview.md
-        - name: Translate user interface files
-          href: lifecycle-services/use-translation-service.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview
