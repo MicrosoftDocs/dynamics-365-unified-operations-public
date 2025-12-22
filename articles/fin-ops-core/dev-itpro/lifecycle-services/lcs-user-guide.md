@@ -1,10 +1,10 @@
 ---
-title: Lifecycle Services (LCS) user guide
+title: Lifecycle Services user guide
 description: Learn about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
 author: angelmarshall
-ms.author: tsmarsha
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 07/02/2019
+ms.date: 12/22/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -14,28 +14,28 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 ---
 
-# Lifecycle Services (LCS) user guide
+# Lifecycle Services user guide
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [Lifecycle deprecation](../includes/lcs-deprecation.md)]
 
 
-Microsoft Dynamics Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a customer of the newest version of the Dynamics 365 finance and operations apps, you can sign in by using your Microsoft Microsoft Entra credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
+Microsoft Dynamics Lifecycle Services provides regularly updated services. The goal of Lifecycle is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. Customers and partners can access Lifecycle as part of their support plans. If you're a customer of the newest version of the Dynamics 365 finance and operations apps, you can sign in by using your Microsoft Microsoft Entra credentials. [Go to Lifecycle](https://lcs.dynamics.com/Logon/Index).
 
-## Tools that are provided in LCS
-The following table lists the tools that are provided in LCS and describes the phases that each tool applies to.
+## Tools that Lifecycle provides
+The following table lists the tools that Lifecycle provides and describes the phases that each tool applies to.
 
 | Tool                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Projects](/dynamicsax-2012/appuser-itpro/projects-lifecycle-services-lcs)                                 | Projects are the key organizer for your experience in LCS. Projects let you invite your partners to collaborate with you, and they also let you track progress.                                                                                                                                                                                                                                                                                                                                                   |
+| [Projects](/dynamicsax-2012/appuser-itpro/projects-lifecycle-services-lcs)                                 | Projects are the key organizer for your experience in Lifecycle. Projects let you invite your partners to collaborate with you, and they also let you track progress.                                                                                                                                                                                                                                                                                                                                                   |
 | [Methodologies](/dynamicsax-2012/appuser-itpro/methodologies-lifecycle-services-lcs)                            | Methodologies provide a tool that you can use to ensure more repeatable, predictable implementation projects. You can use one of our methodologies or create your own. By using a methodology, you can easily track and report on your progress.                                                                                                                                                                                                                                                                  |
 | [Business process modeler](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs)                 | Business process modeler lets you create, view, and modify standard process flows. By using Business process modeler, you can achieve the following goals: standardize process flows; align your business processes with industry-standard processes, as described by the American Productivity & Quality Center (APQC); identify fit and gaps between user requirements and the default functionality that Microsoft Dynamics products provides.                                                                 |
 | [Cloud-hosted environments](/dynamicsax-2012/appuser-itpro/cloud-hosted-environments-lifecycle-services-lcs)                | Cloud-hosted environments is a tool that you can use to deploy Microsoft Dynamics environments on Azure. When you use Cloud-hosted environments, you must select the type of environment to deploy, such as a demo, developer/test, or production environment. Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines (VMs) in Azure. These VMs have Microsoft Dynamics components (and all their prerequisites) already installed on them.                                       |
 | [Cloud-powered support](cloud-powered-support-lcs.md)                    | Cloud-powered support helps you manage support incidents. It lets you create a VM in Azure that has the same hotfixes installed as your local environment. You can reproduce and record an incident on the VM, and then submit the incident to our support team. Support follows up by investigating and, if possible, testing a fix on the VM, and then sends the fix back to you for verification.                                                                                                              |
-| [Configuration and data manager (preview)](configuration-manager-lcs.md) | Configuration and data manager (preview) lets you copy a configuration from one instance to another. You can copy from and to environments that meet the following criteria: they are managed as part of an LCS project; they run the Data Import/Export Framework.                                                                                                                                                                                                                                               |
-| [Customization analysis](/dynamicsax-2012/appuser-itpro/customization-analysis-lcs)                   | Customization analysis validates model files against best practices and provides a report of potential areas for improvement.                                                                                                                                                                                                                                             |
+| [Configuration and data manager (preview)](configuration-manager-lcs.md) | Configuration and data manager (preview) lets you copy a configuration from one instance to another. You can copy from and to environments that meet the following criteria: they are managed as part of an Lifecycle project; they run the Data Import/Export Framework.                                                                                                                                                                                                                                               |
+| [Customization analysis](/dynamicsax-2012/appuser-itpro/customization-analysis-lcs)                   | Customization analysis validates model files against best practices and provides a report of potential areas for improvement.                                                                                                                                                                                                                                                             |
 | [Issue search](issue-search-lcs.md)                             | Issue search helps you find existing solutions and workarounds for known issues in Microsoft Dynamics products. You can see which issues have been fixed, which issues remain open, and which issues have been resolved as "won't fix."                                            |
-| [Asset library](asset-library.md)                             | The Asset library is a storage location for the various assets that are associated with a tenant in LCS.                                                                                                                                                                      |
+| [Asset library](asset-library.md)                             | The Asset library is a storage location for the various assets that are associated with a tenant in Lifecycle.                                                                                                                                                                      |
 | [Get updates](../migration-upgrade/download-hotfix-lcs.md)                            | Get updates is a tool that customers use to access the updates that are available for their environments.                            |
 | [Environment monitoring](monitoring-diagnostics.md)                            | Environment monitoring is a set of tools that helps you monitor, diagnose, and analyze the health of the environments that you manage.                                               |
                                                                 |
@@ -49,9 +49,8 @@ The following table lists the tools that are provided in LCS and describes the p
 
 ## Additional resources
 
-The LCS team is also blogging on the [Lifecycle Services Engineering blog](https://cloudblogs.microsoft.com/dynamics365/?s=lcs). Subscribe to our RSS feed to keep up with our posts and announcements.
+The Lifecycle team also blogs on the [Lifecycle Services Engineering blog](https://cloudblogs.microsoft.com/dynamics365/?s=lcs). Subscribe to the RSS feed to keep up with their posts and announcements.
 
 [Access Lifecycle Services](https://lcs.dynamics.com/)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

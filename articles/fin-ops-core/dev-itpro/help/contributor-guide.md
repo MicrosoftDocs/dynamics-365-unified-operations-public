@@ -51,10 +51,6 @@ If your solution is available in more than one country or region, you'll probabl
     > [!NOTE]
     > DTS isn't an option for translating the Microsoft content because it doesn't support Markdown files.
 
-### Dynamics 365 Translation Service
-
-You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files.
-
 ## See also
 
 [Microsoft Learn contributor guide](/contribute/)  
