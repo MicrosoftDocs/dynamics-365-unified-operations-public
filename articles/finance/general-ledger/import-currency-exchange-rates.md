@@ -51,8 +51,8 @@ The configuration enables exchange rates to be imported for four different excha
 - Forex buying
 - Forex selling
 
-Cross rates can be imported with currency exchange rates if the value of the **Cross rate** key of the CBRT provider is **Yes**. 
-The cross rates will have the same exchange rate type selected on the **Import currency exchange rates** dialog page.
+Cross rates and Informative exchange rates can be imported with currency exchange rates if the value of the **Cross rate** key and **Informative exchange rates** key of the CBRT provider is **Yes**. 
+The cross rates and informative exchange rates will have the same exchange rate type selected on the **Import currency exchange rates** dialog page.
 
 >[!NOTE]
 >If cross rates aren't imported, an error message is generated during ledger posting. To ensure that cross rates are correctly imported, the value of the **Cross rate** key is set to **Yes** by default in the configuration of the CBRT provider.
@@ -65,21 +65,25 @@ The cross rates will have the same exchange rate type selected on the **Import c
 | **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
 | **Forex buying** | Specify the exchange rate type for *Forex buying*. |
 | **Forex selling** | Specify the exchange rate type for *Forex selling*. |
-| **ServiceOnDateUrl** | Specify the URL information to be used to download exchange rates from CBRT. |
+| **Informative exchange rates** | If the parameter is set to **Yes**, informative exchange rates are imported in addition to currency exchange rates.|
+| **ServiceInformativeUrl** | Specify the URL information to be used to import informative exchange rates from CBRT. |
+| **ServiceOnDateUrl** | Specify the URL information to be used to import exchange rates from CBRT. |
 
 
 ## Import currency exchange rates
+
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.
 
-| Field | Description                   |
+| Field | Description                           |
 |-----------|-----------------------------------|
-| **Exchange rate type**                 | An exchange rate type.                                                                          |
-| **Exchange rate provider**             | An exchange rate provider.                                                                                                             |
+| **Exchange rate type**                 | An exchange rate type.     |
+| **Exchange rate provider**             | An exchange rate provider.      |
 | **Import as of**                       | This parameter manages whether to import as of the current date or for a specific date range. If you want to use a date range, enter or select the start and end dates.  |
 | **Create necessary currency pairs**    | This checkbox manages the automatic creation of currency pairs, if the currency pairs that are imported do not exist. This option might not be available for some providers.                |
 | **Override existing exchange rates**   | This checkbox manages the update of the existing exchange rate for a currency pair when the exchange rate for a specific date already exists. If you don't select this checkbox, the exchange rate for the specific dates is not imported if another exchange rate already exists.                                                                                       |
 | **Prevent import on national holiday** | This checkbox manages the import of the exchange rate for public holiday's date. For example, if you select this checkbox and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
 | **Rate from the previous day** | This checkbox is only available for the provider, *Central Bank of Europe*. Select this checkbox to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the checkbox is selected. Clear this checkbox to import the currency exchange rate that is published on the same working day. This option might not be available for some providers.  
+
 >[!NOTE]
 > The import process loads the rates from the previous day and records them for the current day. |
 
