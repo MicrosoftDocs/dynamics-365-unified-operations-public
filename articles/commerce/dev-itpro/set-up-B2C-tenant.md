@@ -1,11 +1,10 @@
 ---
 title: Set up a B2C tenant in Commerce
-description: This article describes how to set up your Microsoft Entra business-to-consumer (B2C) tenants for user site authentication in Microsoft Dynamics 365 Commerce.
+description: Learn how to set up your Microsoft Entra business-to-consumer (B2C) tenants for user site authentication in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/25/2024
+ms.date: 12/23/2025
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-02-13
@@ -17,10 +16,10 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up your Microsoft Entra business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+This article explains how to set up your Microsoft Entra business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 
 > [!NOTE]
-> For Commerce tenants that are created on or after the Dynamics 365 Commerce 10.0.46 general availability (GA) release, Microsoft Entra ID (Azure AD) B2C integration for Commerce e-commerce site authentication isn't enabled by default. If you need to use Microsoft Entra ID B2C (for example, to continue using an existing Azure AD B2C tenant), submit a Microsoft Support request for explicit enablement.
+> For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, Microsoft Entra ID (formerly Azure AD) business-to-consumer (B2C) integration for Commerce e-commerce site authentication isn't enabled by default. If you need to use Microsoft Entra ID B2C (for example, to continue using an existing Azure AD B2C tenant), submit a Microsoft Support request for explicit enablement.
 
 Dynamics 365 Commerce uses Microsoft Entra B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. Microsoft Entra B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C social identity provider record. These B2C records will link back to the customer record in the Commerce environment.
 
