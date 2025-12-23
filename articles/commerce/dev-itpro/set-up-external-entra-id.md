@@ -2,10 +2,11 @@
 title: Set up a Microsoft Entra External ID for user site authentication in Commerce e-commerce
 description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce e-commerce.
 author: AditiPattanaik
-ms.date: 11/07/2025
+ms.date: 12/23/2025
 ms.topic: how-to
 ms.search.region: Global
 ms.author: adpattanaik
+ms.reviewer: v-griffinc
 ms.search.validFrom: 2025-11-06
 ms.custom: 
   - bap-template
@@ -25,15 +26,15 @@ Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microso
 ## Prerequisites to enable Microsoft Entra External ID in Commerce
 
 > [!NOTE]
-> For Commerce tenants that are created on or after the Dynamics 365 Commerce 10.0.46 general availability (GA) release, the Microsoft Entra External ID feature flight is enabled by default. For tenants that were created before 10.0.46 GA, upgrading doesn't automatically enable the flight.
+> For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, the Microsoft Entra External ID feature flight is enabled by default. For tenants created with Commerce versions before the 10.0.46 GA release, upgrading doesn't automatically enable the feature flight.
 
-Before you begin, if your Commerce tenant was created before 10.0.46 GA, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
+Before you begin, if your Commerce tenant was created with a Commerce version before the version 10.0.46 GA release, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
 
 ## Create a Microsoft Entra external tenant on Azure
 
 This section describes how to create a Microsoft Entra External tenant in the Microsoft Azure portal. Learn more in [Create a new tenant with external configurations](/entra/external-id/customers/quickstart-tenant-setup#create-a-new-tenant-with-external-configurations).
 
-To create a Microsoft Entra External ID tenant in the Azure portal, follow these steps.
+To create a Microsoft Entra External ID tenant in the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the Azure portal page, under **Azure Services**, select **Create a resource**. Be sure to use the subscription and directory that you connect with your Commerce environment.
@@ -54,7 +55,7 @@ To create a Microsoft Entra External ID tenant in the Azure portal, follow these
 
 After you create your External ID tenant, next you create an application within your new Microsoft Entra tenant to interact with Commerce.
 
-To create the application, follow these steps.
+To create the application, follow these steps:
 
 1. In the Azure portal, navigate to the tenant you created.
 1. Select **App registrations**, and then select **New registration**.
@@ -93,8 +94,7 @@ Currently, Microsoft Entra External ID only supports one type of flow, which is 
 For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 > [!NOTE] 
-> Customizing the login screen further currently involves using [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
-
+> Customizing the sign-in screen further requires that you use [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
 
 To create user flow in External ID, follow these steps:
 
@@ -109,7 +109,7 @@ To create user flow in External ID, follow these steps:
 
 ## Update Commerce headquarters with the new Microsoft Entra External ID information
 
-To update headquarters with the new Microsoft Entra External ID information, follow these steps.
+To update headquarters with the new Microsoft Entra External ID information, follow these steps:
 
 1. In Commerce, go to **Commerce Shared Parameters**.
 1. In the left navigation pane, select **Identity Providers**.
@@ -126,7 +126,7 @@ To update headquarters with the new Microsoft Entra External ID information, fol
 
 ### Obtain issuer string for headquarters setup
 
-To obtain your identity provider issuer string, follow these steps.
+To obtain your identity provider issuer string, follow these steps:
 
 1. Go to the Azure portal.
 1. On the **Microsoft Entra External ID** page, navigate to your user flow.
@@ -138,7 +138,7 @@ To obtain your identity provider issuer string, follow these steps.
 
 ### Set up an authentication profile in Commerce Site Builder
 
-To set up an authentication profile in Commerce Site Builder, follow these steps.
+To set up an authentication profile in Commerce Site Builder, follow these steps:
 
 1. In Commerce Site Builder, go to **Tenant settings** \> **Site authentication setup**.
 1. Select **Manage**.
@@ -162,16 +162,16 @@ The Microsoft Entra External ID authentication setup is now complete and active 
 
 Microsoft Entra External ID doesn't support custom HTML pages. By default, Microsoft Entra External ID only supports the edit profile page when it's associated with the "/editprofile" URL endpoint. You must create a new URL for the edit profile page with the **/editprofile** endpoint.
 
-To create a new URL for the edit profile page with the "/editprofile" endpoint, follow these steps.
+To create a new URL for the edit profile page with the "/editprofile" endpoint, follow these steps:
 
 1. Go to **URLs** \> and select **+ New**.
 1. On the **Create new URL** flyout, create a new URL with the "/editprofile" endpoint.
 1. Select **Next**, and on the **Select a page** flyout pane, select **Profile edit**, and then select **Create**.
 1. Save and publish your changes.
     > [!NOTE]
-    > Modules changes supporting EEID are present in SSK version 9.55.8. Ensure you reference this version or later for full compatibility with Entra External ID features.
-## Updates to the Account-Profile-Edit Module (Online SDK) 
+    > Modules changes supporting Microsoft Entra External ID are present in module library version version 9.55.8. Ensure that you reference this version or later versions for full compatibility with Microsoft Entra External ID features.
 
+## Updates to the Account-Profile-Edit Module (Online SDK) 
 
 With Azure Active Directory B2C, implementing profile editing required only an HTML page that followed a specific contract. Azure Active Directory B2C itself handled the actual rendering of the edit profile page.
 
