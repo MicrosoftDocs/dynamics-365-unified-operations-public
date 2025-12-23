@@ -28,7 +28,7 @@ Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microso
 > [!NOTE]
 > For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, the Microsoft Entra External ID feature flight is enabled by default. For tenants created with Commerce versions before the 10.0.46 GA release, upgrading doesn't automatically enable the feature flight.
 
-Before you begin, if your Commerce tenant was created with a Commerce version before the version 10.0.46 GA release, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
+If your Commerce tenant is created with a Commerce version before the version 10.0.46 GA release, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
 
 ## Create a Microsoft Entra external tenant on Azure
 
@@ -65,7 +65,7 @@ To create the application, follow these steps:
 1. Select **Register**.
 1. Select the application you created, and then navigate to the **Authentication** menu.
 1. If you entered a reply URL, under **Implicit grant and hybrid flows**, select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. You're now able to select both the **Access tokens** and **ID tokens** options. If a reply URL wasn't entered during registration, you can add on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application.
-1. On the **API Permissions** menu, add the following Microsoft graph permissions.
+1. On the **API Permissions** menu, add the following Microsoft Graph permissions.
     - **email**
     - **offline_access**
     - **openid**
@@ -169,7 +169,7 @@ To create a new URL for the edit profile page with the "/editprofile" endpoint, 
 1. Select **Next**, and on the **Select a page** flyout pane, select **Profile edit**, and then select **Create**.
 1. Save and publish your changes.
     > [!NOTE]
-    > Modules changes supporting Microsoft Entra External ID are present in module library version version 9.55.8. Ensure that you reference this version or later versions for full compatibility with Microsoft Entra External ID features.
+    > Modules changes supporting Microsoft Entra External ID are present in module library version 9.55.8. Ensure that you reference this version or later versions for full compatibility with Microsoft Entra External ID features.
 
 ## Updates to the Account-Profile-Edit Module (Online SDK) 
 
