@@ -24,9 +24,12 @@ Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microso
 
 ## Prerequisites to enable Microsoft Entra External ID in Commerce
 
-Before you begin, you must first submit a request to the Commerce team to enable the feature flight, and then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication. 
+> [!NOTE]
+> For Commerce tenants that are created on or after the Dynamics 365 Commerce 10.0.46 general availability (GA) release, the Microsoft Entra External ID feature flight is enabled by default. For tenants that were created before 10.0.46 GA, upgrading doesn't automatically enable the flight.
 
-## Create a Microsoft Entra external tenant on Azure 
+Before you begin, if your Commerce tenant was created before 10.0.46 GA, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
+
+## Create a Microsoft Entra external tenant on Azure
 
 This section describes how to create a Microsoft Entra External tenant in the Microsoft Azure portal. Learn more in [Create a new tenant with external configurations](/entra/external-id/customers/quickstart-tenant-setup#create-a-new-tenant-with-external-configurations).
 
