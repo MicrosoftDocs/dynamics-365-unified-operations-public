@@ -107,7 +107,7 @@ The business event endpoint configuration requires developers to create an appli
 
 To address this problem, the business event endpoint configuration page includes a new field, **SecretExpiryDate**. Developers can enter the secret's expiry date from Microsoft Entra ID when configuring the endpoint.
 
-:::image type="content" source="media/business-events-azur-app-id-secret.png" alt-text="Business Event Endpoint configuration page showing the Secret Expiry Date field for managing application secrets.":::
+:::image type="content" source="media/business-events-azure-app-id-secret.png" alt-text="Business Event Endpoint configuration page showing the Secret Expiry Date field for managing application secrets.":::
 
 Finance and operations apps use this information to proactively notify developers about upcoming secret expirations through a banner alert on the business event endpoint configuration page.
 
