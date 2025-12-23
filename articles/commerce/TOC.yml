@@ -488,7 +488,7 @@
             items:
             - name: Cash management overview
               href: cash-mgmt.md
-            - name: Shift and cash drawer management (preview)
+            - name: Shift and cash drawer management
               href: shift-drawer-management.md
           - name: Offline
             items:
@@ -616,7 +616,7 @@
             items:
             - name: Dynamics 365 Payment Connector for Adyen overview
               href: dev-itpro/adyen-connector.md
-            - name: Set up Dynamics 365 Payment Connector for Adyen (preview)
+            - name: Set up Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-setup.md
             - name: Dynamics 365 Payment Connector for Adyen FAQ
               href: dev-itpro/adyen-connector-faq.md
@@ -626,9 +626,9 @@
               href: dev-itpro/apple-pay-adyen.md
             - name: Enable Tap to Pay on iPhone
               href: dev-itpro/tap-to-pay-iphone.md
-            - name: Enable pay by link in POS using the Dynamics 365 Payment Connector for Adyen (preview)
+            - name: Enable pay by link in POS using the Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/pay-by-link-overview.md
-            - name: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen (preview)
+            - name: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/payment-notifications.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
@@ -818,7 +818,7 @@
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
         - name: Turn on the Unified pricing management module for your system
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
-        - name: Migrate to unified pricing management (preview)
+        - name: Migrate to unified pricing management
           href: ../supply-chain/unified-pricing-management/upm-migrate-to-unified-pricing-management.md?context=/dynamics365/context/commerce
         - name: Price attributes
           items:
@@ -2802,7 +2802,7 @@
             href: dev-itpro/commerce-application-insights.md
           - name: Create asynchronous Commerce (CRT) APIs
             href: dev-itpro/async-commerce-extension.md
-          - name: Channel database extensions (preview)
+          - name: Channel database extensions
             href: dev-itpro/channel-db-extensions.md
           - name: Extend Commerce Data Exchange - Real-time Service
             href: dev-itpro/extend-commerce-data-exchange.md
@@ -2812,7 +2812,7 @@
             href: dev-itpro/commerce-runtime-extensibility-trigger.md
           - name: Pre-extended columns in the channel database
             href: dev-itpro/extended-columns.md
-          - name: Enable custom Commerce Data Exchange synchronization via extension (preview)
+          - name: Enable custom Commerce Data Exchange synchronization via extension
             href: dev-itpro/cdx-extensibility.md
           - name: Extend Commerce Store receipts
             href: dev-itpro/retail-sdk/retail-sdk-samples.md
