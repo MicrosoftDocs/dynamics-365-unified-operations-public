@@ -16,12 +16,12 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how create or link to a Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal. Learn more at [Tutorial: Create a Microsoft Entra B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant).
+This article explains how create or link to a Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal. Learn more in [Tutorial: Create a Microsoft Entra B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant).
 
 > [!NOTE]
 > For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, Microsoft Entra ID (formerly Azure AD) business-to-consumer (B2C) integration for Commerce e-commerce site authentication isn't enabled by default. If you need to use Microsoft Entra ID B2C (for example, to continue using an existing Azure AD B2C tenant), submit a Microsoft Support request for explicit enablement.
 
-To create or link to an existing Microsoft Entra B2C tenant in the Azure portal, follow these steps.
+To create or link to an existing Microsoft Entra B2C tenant in the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you connect with your Commerce environment.
