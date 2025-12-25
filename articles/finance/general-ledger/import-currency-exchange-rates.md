@@ -86,7 +86,7 @@ You can import exchange rates from the exchange rate providers source and add th
 | **Rate from the previous day** | This checkbox is only available for the provider, *Central Bank of Europe*. Select this checkbox to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the checkbox is selected. Clear this checkbox to import the currency exchange rate that is published on the same working day. This option might not be available for some providers.  
 
 >[!NOTE]
-> The import process loads the rates from the previous day and records them for the current day. |
+> The import process loads the rates from the previous day and records them for the current day.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
