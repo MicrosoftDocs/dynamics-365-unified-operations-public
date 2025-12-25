@@ -42,33 +42,34 @@ OANDA provider options require that you fill in the API key values that you rece
 
 ### Central Bank of the Republic of Türkiye
 
-Central Bank of the Republic of Türkiye (CBRT) announces indicative exchange rates at 3:30 PM on working days. Those rates are then applicable on the following working day. Therefore, exchange rates should be imported from CBRT daily. No exchange rate information is provided on weekends or official holidays.
+The Central Bank of the Republic of Türkiye (CBRT) publishes indicative exchange rates at 3:30 PM local time (Türkiye) on business days. These rates become effective on the next business day. Therefore, exchange rates from CBRT should be imported daily.
 
-The configuration enables exchange rates to be imported for four different exchange rate types that CBRT provides:
+CBRT does not publish exchange rate information on weekends or official public holidays in Türkiye.
+
+The CBRT provider configuration supports importing exchange rates for the following exchange rate types:
 
 - Banknote buying
 - Banknote selling
 - Forex buying
 - Forex selling
 
-Cross rates and Informative exchange rates can be imported with currency exchange rates if the value of the **Cross rate** key and **Informative exchange rates** key of the CBRT provider is **Yes**. 
-The cross rates and informative exchange rates will have the same exchange rate type selected on the **Import currency exchange rates** dialog page.
+If the **Cross rate** and **Informative exchange rates** keys are set to **Yes**, cross rates and informative exchange rates are imported together with standard currency exchange rates.
+Cross rates and informative exchange rates use the same exchange rate type that is selected on the **Import currency exchange rates** dialog page.
 
 >[!NOTE]
 >If cross rates aren't imported, an error message is generated during ledger posting. To ensure that cross rates are correctly imported, the value of the **Cross rate** key is set to **Yes** by default in the configuration of the CBRT provider.
 
 | **Key** | **Value** |
-| ------ | -------------------------------------------------------------------------------|                        
-| **Banknote buying** | Specify the exchange rate type for *Banknote buying*. |
-| **Banknote selling** | Specify the exchange rate type for *Banknote selling*. |
-| **Cross rate** | If the parameter is set to **Yes**, cross rates are imported in addition to currency exchange rates.|
-| **Decimal places** | Specify the number of digits in the exchange rate. The default value is *4*. |
-| **Forex buying** | Specify the exchange rate type for *Forex buying*. |
-| **Forex selling** | Specify the exchange rate type for *Forex selling*. |
-| **Informative exchange rates** | If the parameter is set to **Yes**, informative exchange rates are imported in addition to currency exchange rates.|
-| **ServiceInformativeUrl** | Specify the URL information to be used to import informative exchange rates from CBRT. |
-| **ServiceOnDateUrl** | Specify the URL information to be used to import exchange rates from CBRT. |
-
+| ------ | -------------------------------------------------------------------------------|    
+| **Banknote buying** | Specifies the exchange rate type for *Banknote buying*. |
+| **Banknote selling** | Specifies the exchange rate type for *Banknote selling*. |
+| **Cross rate** | When set to **Yes**, imports cross rates in addition to standard exchange rates. |
+| **Decimal places** | Specifies the number of decimal places for the exchange rate. The default value is *4*. |
+| **Forex buying** | Specifies the exchange rate type for *Forex buying*. |
+| **Forex selling** | Specifies the exchange rate type for *Forex selling*. |
+| **Informative exchange rates** | When set to **Yes**, imports informative exchange rates in addition to standard exchange rates. |
+| **ServiceInformativeUrl** | Specifies the service URL that is used to import informative exchange rates from CBRT. |
+| **ServiceOnDateUrl** | Specifies the service URL that is used to import exchange rates from CBRT. |
 
 ## Import currency exchange rates
 
