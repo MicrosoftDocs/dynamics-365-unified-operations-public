@@ -71,9 +71,9 @@ The workspace offers summaries across multiple dimensions:
 
 Each securable object is tagged with:
 - **License type** - Associated license level
-- **Entitled** - Included in the scope of the current license
-- **Not Entitled** - Not included in the mapped license
-- **Not Required** - Doesn’t affect license assessment 
+- **Entitled** - Included in the mapped license scope
+- **Not Entitled** - Not included in the mapped license (requires different license)
+- **Not Required** - Actions or privilege inherited in system user, not included in license computation
 
 These attributes simplify reviews and ensure that security access matches business needs.
 
@@ -97,12 +97,15 @@ The bottom panel breaks down license requirements at the securable object level:
   - 3,362 securable objects are **Entitled** by the Finance license
   - 1,557 securable objects are **Not Entitled** and not included by the Finance license
 
-Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select Open in Microsoft Office to download the detailed view.  
+Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select Open in Microsoft Office to download a detailed view.
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
 >[!Tip]
-> You can use the (Duplicate a security role or duty with a license filter)[/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter] to analyze the excluded references when analyzing the license requirements.
+> You can use the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) to analyze the excluded references when analyzing the license requirements.
+
+>[!Tip]
+>You can also use (Security analysis)[/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports] to find where specific privileged entry points are introduced into roles, and Security configuration to adjust.
 
 ### Use cases
 
