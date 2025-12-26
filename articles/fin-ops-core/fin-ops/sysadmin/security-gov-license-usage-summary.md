@@ -88,16 +88,21 @@ The bottom panel breaks down license requirements at the securable object level:
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
-- The user *Cassie* requires:
-  - Finance (Base)
-  - Project Operations (Attach)
-  - SCM (Attach)
+- The user *Cade.Armanda.Olander* requires 1 Finance License :
+  - Role name: **Accountant** | License: **Finance** | License quantity: **1**
+  - Role name: **Retail Store manager** | License: **Operations - Activity** | License quantity: **0** (*covered by Finance license*)
+  - Role name: **System user** | License: **None** | License quantity: **0** (*covered by Finance license*)
 
-- In the **SKU Name** column:
-  - 3,574 securable objects are entitled by the Finance license
-  - 192 are satisfied in a different license
+  - In the **SKU Name** column:
+  - 3,362 securable objects are **Entitled** by the Finance license
+  - 1,557 securable objects are **Not Entitled** and not included by the Finance license
 
-Use the bottom panel to inspect specific objects and identify contributors to higher-tier licenses.
+Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select Open in Microsoft Office to download the detailed view.  
+
+:::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
+
+>[!Tip]
+> You can use the (Duplicate a security role or duty with a license filter)[/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter] to analyze the excluded references when analyzing the license requirements.
 
 ### Use cases
 
