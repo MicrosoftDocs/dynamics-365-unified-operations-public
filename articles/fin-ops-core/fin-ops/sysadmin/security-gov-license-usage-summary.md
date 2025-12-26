@@ -93,18 +93,18 @@ The user *Cade.Armanda.Olander* requires 1 **Finance** License :
 | Role Name              | License                 | License Quantity | Notes |
 |------------------------|-------------------------|------------------|-------|
 | Accountant              | Finance                 | 1                | This security role has the highest priority license requirement |
-| Retail Store Manager    | Operations – Activity   | 0                | No additional license requirement for this role, for the user, if the user has been assigned a Finance license |
-| System User             | None                    | 0                | No additional license requirement for this role, for the user, if the user has been assigned a Finance license |
+| Retail Store Manager    | Operations - Activity   | 0                | No additional license requirement for this role, for this user, if the user has been assigned a Finance license |
+| System User             | None                    | 0                | No additional license requirement for this role, for this user, if the user has been assigned a Finance license |
 
 
 Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
 
 **Role License** tab:
 
-| SKU Name | Securable Object Count | Entitlement Status |
-|----------|------------------------|--------------------|
-| Finance  | 3,362                  | Entitled |
-| Finance  | 1,557                  | Not Entitled |
+| SKU Name | Securable Object Count | Entitlement | Notes |
+|----------|------------------------|--------------------|-------|
+| Finance  | 3,362                  | **Entitled** | Included in the mapped license scope |
+| Finance  | 1,557                  | **Not Entitled** | Not included in the mapped license (requires different license) |
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
