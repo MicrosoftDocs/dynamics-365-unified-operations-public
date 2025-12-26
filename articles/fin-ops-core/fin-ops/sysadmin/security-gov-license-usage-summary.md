@@ -88,23 +88,21 @@ The bottom panel breaks down license requirements at the securable object level:
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
-- The user *Cade.Armanda.Olander* requires 1 Finance License :
-
+- The user *Cade.Armanda.Olander* requires 1 **Finance** License :
 | Role Name              | License                 | License Quantity | Notes |
 |------------------------|-------------------------|------------------|-------|
-| Accountant              | Finance                 | 1                | Primary licensed role |
-| Retail Store Manager    | Operations – Activity   | 0                | Covered by Finance license |
-| System User             | None                    | 0                | Covered by Finance license |
+| Accountant              | Finance                 | 1                | This security role has the highest priority license requirement |
+| Retail Store Manager    | Operations – Activity   | 0                | No additional license requirement for this role, for the user, if the user has been assigned a Finance license |
+| System User             | None                    | 0                | No additional license requirement for this role, for the user, if the user has been assigned a Finance license |
 
 
-  - In the **SKU Name** column:
+Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
 
+  -**Role License** tab:
 | SKU Name | Securable Object Count | Entitlement Status |
 |----------|------------------------|--------------------|
 | Finance  | 3,362                  | Entitled |
 | Finance  | 1,557                  | Not Entitled |
-
-Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select Open in Microsoft Office to download a detailed view.
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
@@ -112,7 +110,7 @@ Select the **Role License** tab, and select **Accountant** role to inspect speci
 > Duplicate the security role or duty using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature to see which permissions are excluded when evaluating license requirements.
 
 >[!Tip]
->You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust.
+>You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
 
 ### Use cases
 
@@ -125,7 +123,4 @@ Organizations can use this summary to:
 From this page, administrators can:
 - Evaluate roles for review or refinement.  
 - Identify segregation of duties risks.
-- Export data for audit, license planning, or governance.  
-
->[!Tip]
-> You can export the data on each panel to Excel to support compliance or reporting needs.
+- Export data for audit, license planning, or governance. 
