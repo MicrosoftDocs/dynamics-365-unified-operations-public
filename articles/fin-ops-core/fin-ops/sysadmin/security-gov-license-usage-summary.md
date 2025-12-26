@@ -88,7 +88,8 @@ The bottom panel breaks down license requirements at the securable object level:
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
-- The user *Cade.Armanda.Olander* requires 1 **Finance** License :
+The user *Cade.Armanda.Olander* requires 1 **Finance** License :
+
 | Role Name              | License                 | License Quantity | Notes |
 |------------------------|-------------------------|------------------|-------|
 | Accountant              | Finance                 | 1                | This security role has the highest priority license requirement |
@@ -98,7 +99,8 @@ The bottom panel breaks down license requirements at the securable object level:
 
 Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
 
-  -**Role License** tab:
+**Role License** tab:
+
 | SKU Name | Securable Object Count | Entitlement Status |
 |----------|------------------------|--------------------|
 | Finance  | 3,362                  | Entitled |
