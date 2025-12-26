@@ -89,13 +89,20 @@ The bottom panel breaks down license requirements at the securable object level:
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
 - The user *Cade.Armanda.Olander* requires 1 Finance License :
-  - Role name: **Accountant** | License: **Finance** | License quantity: **1**
-  - Role name: **Retail Store manager** | License: **Operations - Activity** | License quantity: **0** (*covered by Finance license*)
-  - Role name: **System user** | License: **None** | License quantity: **0** (*covered by Finance license*)
+
+| Role Name              | License                 | License Quantity | Notes |
+|------------------------|-------------------------|------------------|-------|
+| Accountant              | Finance                 | 1                | Primary licensed role |
+| Retail Store Manager    | Operations – Activity   | 0                | Covered by Finance license |
+| System User             | None                    | 0                | Covered by Finance license |
+
 
   - In the **SKU Name** column:
-  - 3,362 securable objects are **Entitled** by the Finance license
-  - 1,557 securable objects are **Not Entitled** and not included by the Finance license
+  
+| SKU Name | Securable Object Count | Entitlement Status |
+|----------|------------------------|--------------------|
+| Finance  | 3,362                  | Entitled |
+| Finance  | 1,557                  | Not Entitled |
 
 Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select Open in Microsoft Office to download a detailed view.
 
