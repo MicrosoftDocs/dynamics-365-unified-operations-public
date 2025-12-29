@@ -70,6 +70,12 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 1. [Configure e-invoice submission](#configure-e-invoice-submission) for simplified e-invoices that are generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
+
+## Mix and match transactions are not supported in Saudi Arabia
+
+A transaction cannot include both Sales and Return lines together. All lines in a transaction must be of the same type. The functionality profile setting **Prohibit mixing sales and returns** can be used to block the behavior.
+
+
 ### Enable features for Saudi Arabia
 
 Enable the following features in the **Feature management** workspace:
