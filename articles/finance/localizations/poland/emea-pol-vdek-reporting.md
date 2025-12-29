@@ -102,7 +102,7 @@ To create an electronic message for JPK-V7 reporting, follow these steps.
 
     - **1** for JPK-V7(1).
     - **2** for JPK-V7(2). In the **PL JPK-V7 EM setup v.7 ID584502.zip** package, this value is set as the default value.
-    - **3** for JPK-V7(3). In the **PL JPK-V7 EM setup v.9 ID1074347.zip** package, this value is set as the default value. Version 3 of JPK-V7M schema must be used from February 1, 2026.
+    - **3** for JPK-V7(3). In the **PL JPK-V7 EM setup v.9 ID1074347.zip** package, this value is set as the default value. Version 3 of JPK-V7 schema must be used from February 1, 2026.
 
    The **Wersja schematu** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691.zip** package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7 EM setup v.9 ID1074347.zip** package, the **Wersja schematu** additional field gets a value of **3** by default. Therefore, when you create a new electronic message, the **Wersja schematu** additional field is set to **3**. To change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Wersja schematu** additional field, and select a value in the list.
 
