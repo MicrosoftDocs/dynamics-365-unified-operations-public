@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Understand the User license summary in User security governance
 
-[!INCLUDE[banner](.../../includes/banner.md)]
+[!INCLUDE[banner](../includes/banner.md)]
 
 If you're unfamiliar with how Dynamics 365 licenses work or want to review the licensing model, see [Dynamics 365 Licensing Resources](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all) for the most up-to-date details on licensing.
 
