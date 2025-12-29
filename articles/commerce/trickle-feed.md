@@ -26,7 +26,8 @@ In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that y
 ## Use trickle feed-based posting
 
 > [!IMPORTANT]
-> Before you enable trickle feed–based posting, you must ensure that there are no calculated and unposted statements. Post all statements before you enable the feature. You can check for open statements in the **Store financials** workspace.
+> - Before you enable trickle feed–based posting, you must ensure that there are no calculated and unposted statements. Post all statements before you enable the feature. You can check for open statements in the **Store financials** workspace.
+> - Additionally, trickle feed-based posting cannot be combined with the traditional statement posting. So, make sure that all required steps are applied for all legal entities.
 
 To enable trickle feed–based posting of retail transactions, enable the **Retail statements - Trickle feed** feature in the **Feature management** workspace. Statements will be split into two types: transactional statements and financial statements.
 
