@@ -401,11 +401,11 @@ In the dialog box for the executable class, the **Retail-specific sales marking*
 
 The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions on the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes). The **Consider VAT report date codes** parameter is available only in legal entities that have a primary address in Poland.
 
-The dialog box for the executable class includes the **Settlement period** parameter. Use this parameter with the [**Multiple VAT registration numbers**](../global/emea-multiple-vat-registration-numbers.md) feature to collect VAT transactions in specific sales tax settlement periods. The **Settlement period** parameter is available as of Finance version 10.0.29.
+The dialog box for the executable class includes the **Settlement period** parameter. Use this parameter with the [**Multiple VAT registration numbers**](../global/emea-multiple-vat-registration-numbers.md) feature to collect VAT transactions in specific sales tax settlement periods. 
 
-Use the **Schema version** parameter to specify that the additional field contains the version of the schema of JPK-V7 that must be reported. Select **Wersja schematu** as the value for this field.
+Use the **Schema version** parameter to specify which additional field contains the version of the schema of JPK-V7 that must be reported. Select **Wersja schematu** as the value for this field.
 
-The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7 in the accounting currency. The **Report in accounting currency** parameter is available as of Finance version 10.0.29.
+The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7 in the accounting currency.
 
 ## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
@@ -447,9 +447,10 @@ Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electroni
 Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Wersja schematu** additional field. Use this additional field to define the version of the XSD schema to apply to the XML file that you will generate:
 
 - **1** – JPK-V7(1) – Effective from October 1, 2020 (before January 1, 2022).
-- **2** – JPK-V7(2) – Effective from January 1, 2022.
+- **2** – JPK-V7(2) – Effective from January 1, 2022 (before February 1, 2026).
+- **3** – JPK-V7(3) – Effective from February 1, 2026.
 
-The default value that is set for the **Wersja schematu** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **2**.
+The default value that is set for the **Wersja schematu** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **3**.
 
 ## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
 
