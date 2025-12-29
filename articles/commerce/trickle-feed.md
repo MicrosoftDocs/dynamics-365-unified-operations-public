@@ -1,12 +1,12 @@
 ---
 title: Trickle feed-based order creation for retail store transactions
-description: This article describes trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
+description: Learn about trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 05/28/2024
+ms.date: 12/30/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chrgriffin 
+ms.reviewer: v-griffinc 
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2019-09-30
@@ -27,7 +27,7 @@ In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that y
 
 > [!IMPORTANT]
 > - Before you enable trickle feed–based posting, you must ensure that there are no calculated and unposted statements. Post all statements before you enable the feature. You can check for open statements in the **Store financials** workspace.
-> - Additionally, trickle feed-based posting cannot be combined with the traditional statement posting. So, make sure that all required steps are applied for all legal entities.
+> - Trickle feed-based posting can't be combined with the traditional statement posting, so ensure that all required steps are applied for all legal entities.
 
 To enable trickle feed–based posting of retail transactions, enable the **Retail statements - Trickle feed** feature in the **Feature management** workspace. Statements will be split into two types: transactional statements and financial statements.
 
