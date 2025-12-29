@@ -158,9 +158,9 @@ The data structure in the JPK_V7 report collects the first International Organiz
 
 ## Split payment (MPP) marker
 
-The JPK-V7 report supports reporting of the **MPP** marker for both sales registers and purchase registers for reporting periods before July 1, 2021. The **MPP** marker isn't required for periods after July 1, 2021.
+The JPK-V7 report supports reporting of the **MPP** marker for both sales registers and purchase registers for reporting periods before July 1, 2021. The **MPP** marker isn't required for periods after July 1, 2021. In version 3 of JPK-V7 schema, the MPP marker is not applicable. 
 
-If a company performs operations that a split payment procedure must be applied to, the **Split payment** feature must be used.
+If a company performs operations that a split payment procedure must be applied to for reporting periods before July 1, 2021, the **Split payment** feature must be used.
 
 When the **Split payment** feature is used, you don't have to complete any specific setup to report the **MPP** marker in a JPK-V7. The following algorithm is used to identify the **MPP** marker:
 
