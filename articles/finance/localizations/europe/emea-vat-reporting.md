@@ -237,5 +237,6 @@ The tax statement for each country/region must meet the requirements of that cou
 |----------------|------------------------|
 | Australia      | [Business activity statement (BAS)](../australia/apac-aus-business-activity-statement.md) |
 | Japan          | [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
+| Poland         | [VAT declaration with registers \(JPK-V7, VDEK\)](../poland/emea-pol-vdek.md) |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
