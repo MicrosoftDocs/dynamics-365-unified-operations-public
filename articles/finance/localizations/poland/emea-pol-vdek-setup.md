@@ -47,7 +47,7 @@ To prepare Finance for JPK-V7 reporting, you must import the following ER config
 
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
 
-For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information about importing ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration on the **Configurations** page.
@@ -144,8 +144,8 @@ The following table shows the lookup results (designations) for **ProceduralMark
 
 | Name           | Label (En) | Label (Pl) | Description (En) | Description (Pl) |
 |----------------|------------|------------|------------------|------------------|
-| SW (*only for reporting periods before July 1, 2021*) | Mail order sale | Sprzedaży wysyłkowej | Delivery as part of a mail order sale from the territory of the country/region, as referred to in article 23 of the VAT Act | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy |
-| EE  (*only for reporting periods before January 1, 2022*) | Telecommunications | Usług telekomunikacyjnych | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
+| SW <br> (*Only for reporting periods before July 1, 2021. Not applicable in JPK-V7(3).*) | Mail order sale | Sprzedaży wysyłkowej | Delivery as part of a mail order sale from the territory of the country/region, as referred to in article 23 of the VAT Act | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy |
+| EE  (*Only for reporting periods before January 1, 2022. Not applicable in JPK-V7(3).*) | Telecommunications | Usług telekomunikacyjnych | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
 | TP             | Links between the buyer and the supplier | Istniejące powiązania między nabywcą a dokonującym | Existing links between the buyer and the supplier of goods or the provider of services, as referred to in article 32, section 2, point 1 of the VAT Act. There is an exception for the case of supplies of goods and the provision of services where the relationship between the purchaser and the supplying service provider arises solely from a link with the State Treasury or local authorities or their associations. | Istniejące powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy. Z wyjątkiem sytuacji, gdy przypadku dostaw towarów oraz świadczenia usług, gdy powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą wynikają wyłącznie z powiązania ze Skarbem Państwa lub jednostkami samorządu terytorialnego lub ich związkami. |
 | TT_WNT         | Intra-community acquisition as part of a three-party transaction | Wewnątrzwspólnotowe nabycie w ramach transakcji trójstronnej | The intra-community acquisition of goods by the second-most-taxable person as part of a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Wewnątrzwspólnotowe nabycie towarów dokonane przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
 | TT_D           | Delivery of goods outside Poland as part of a three-party transaction | Dostawa towarów poza terytorium kraju w ramach transakcji trójstronnej | The supply of goods outside the territory of the country/region by the second VAT payer in a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
@@ -732,6 +732,38 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>K_22</td>
 <td>-</td>
 </tr>
+<tr>
+<td rowspan="4">BeveragePackagingDeposit <em><br> With these Reporting codes the general tax base Reporting codes are used:<br>
+	- 23%: 10301, 10304(K_19)<br>
+	- 5%: 10501, 10504(K_15)
+<br> These Reporting codes also contribute in:<br>
+	- 23%: 10303, 10306(K_20)<br>
+	- 5%: 10503, 10506(K_16)
+<br> As a result, the tax base reported in K_19/K_15 respectively and the tax amount reported in K_20/K_16 AND in the K_360.</em>
+</td>
+<td>12003</td>
+<td>Sales tax payable (5%)</td>
+<td>K_360</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12006</td>
+<td>Sales tax on sales credit note (5%)</td>
+<td>K_360</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12103</td>
+<td>Sales tax payable (23%)</td>
+<td>K_360</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12106</td>
+<td>Sales tax on sales credit note (23%)</td>
+<td>K_360</td>
+<td>-</td>
+</tr>  
 <tr>
 <td rowspan="4">ImportOfGoodsART33</td>
 <td>20207</td>
