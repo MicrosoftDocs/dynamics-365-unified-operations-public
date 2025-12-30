@@ -166,3 +166,62 @@ When the **Split payment** feature is used, you don't have to complete any speci
 
 - The system provides a check of the **Split payment** and **Voluntary split payment** parameters of the customer transaction that is related to a sales invoice. If the **Split payment** parameter is selected, and the **Voluntary split payment** parameter is cleared, the related invoice will be reported with the **MPP** marker.
 - The system provides a check of the **Split payment** and **Voluntary split payment** parameters of the vendor transaction that is related to a vendor invoice. If the **Split payment** parameter is selected, and the **Voluntary split payment** parameter is cleared, the related invoice will be reported with the **MPP** marker.
+
+## <a id="nrksef"></a>NrKSeF, OFF, BFK, DI - new XML tags in JPK-V7(3) to classify VAT record source
+
+As part of the schema version 3, effective from February 1 2026, the following XML tags are introduced:
+
+- `<NrKSeF>` : Identifier number of the invoice in the National e-Invoice System
+- `<OFF>` - Marker of the invoice referred to in Article 106nf of the Act, which does not have an identifier number in the National e-Invoice System and has not been sent to the National e-Invoice System
+- `<BFK>` - Marker of the Electronic invoice or invoice in paper form
+- `<DI>` - Marker of the other document than an invoice issued via the National e-Invoice System
+
+### Implementation details
+
+The NrKSeF, OFF, BFK, and DI tags are mutually exclusive and are automatically assigned to each JPK‑V7 VAT entry to indicate whether the record originates from the KSeF system, was issued outside KSeF, represents a standard business invoice, or reflects an internal VAT document. The implementation logic ensures compliance with JPK‑V7 Schema version 3 requirements.
+
+Dynamics 365 Finance determines the mutually exclusive `NrKSeF, OFF, BFK, DI` XML tags for JPK‑V7 reporting based on the origin and business context of each VAT record. The evaluation is driven by data in tax transactions table, which is the primary source for JPK‑V7 report, and by the existence and attributes of related invoices and e‑invoicing data.
+
+For each VAT line, the system attempts to identify a related invoice and applies the first matching condition according to the priority rules defined below. Only one of these tags is populated per JPK‑V7 record.
+
+#### Outgoing Transactions (SprzedazWiersz)
+
+For sales VAT records, the system applies the following logic in priority order:
+
+##### NrKSeF
+
+If a KSeF (National e‑Invoice System) number exists for the related invoice, the system populates the tag: `<NrKSeF>XXXXX</NrKSeF>`.
+
+##### OFF
+
+If no KSeF number exists, but an e‑invoicing submission log with a failed status is present (for example, due to KSeF unavailability), the system marks the record as issued outside KSeF by populating: `<OFF>1</OFF>`.
+
+##### BFK
+
+If neither a KSeF number nor a failed e‑invoicing submission exists, but the VAT record is linked to a related sales invoice, the system classifies the transaction as a business invoice and populates: `<BFK>1</BFK>`.
+
+##### DI
+
+If none of the above conditions apply (for example, the VAT record is not linked to any sales invoice), the system treats the entry as an internal VAT document and populates: `<DI>1</DI>`.
+
+Priority order for outgoing transactions: NrKSeF → OFF → BFK → DI.
+
+#### Incoming Transactions (ZakupWiersz)
+
+For purchase VAT records, the system applies following evaluation logic:
+
+##### NrKSeF
+
+If a KSeF number exists for the related vendor invoice, the system populates: `<NrKSeF>XXXXX</NrKSeF>`.
+
+##### BFK
+
+If no KSeF number exists, but the VAT record is linked to a vendor invoice, the system classifies it as a business invoice and populates:
+`<BFK>1</BFK>`.
+
+##### DI
+
+If the VAT record is not linked to any vendor invoice, the system treats it as an internal VAT document and populates:
+`<DI>1</DI>`.
+
+Priority order for incoming transactions: NrKSeF → BFK → DI.
