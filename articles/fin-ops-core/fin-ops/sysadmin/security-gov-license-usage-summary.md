@@ -104,7 +104,7 @@ In the **User Licenses** view, each row corresponds to a user and displays the h
 
 ## Understanding the the Role Licenses View
 
-The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. 
+The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. You can filter by role to see how many security objects are entitled, not entitled, or not required for each license level. This breakdown helps explain why a particular license is indicated for that role.
 
 :::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
 
@@ -112,17 +112,17 @@ Key columns in the **Role Licenses** view:
 
 - **Security Role** - Name of the security role (for example, Accounts payable clerk). 
 
-- **License** - The lowest-level Dynamics 365 license that covers all permissions in the role. If the role’s permissions include any function that requires a higher-tier license, that higher tier will be shown here. 
+- **License** - The lowest-level Dynamics 365 license that covers all permissions in the role. If the role’s permissions include any function that requires a higher license, that higher license will be shown here. 
 
-- **Priority** - When a role's permissions cross multiple license levels, the Priority column shows which license is considered the best fit or primary requirement. The licenses are ranked by how many security objects they cover. The highest priority (most necessary) license is typically listed as the Required License for the role. Any lower-priority license considerations appear in the detailed breakdown (often as attach licenses needed in addition to the base license). 
+- **Priority** - When a role's permissions cross multiple license levels, the **Priority** column indicates which license is considered primary. The licenses are ranked by how many security objects they cover. The highest priority license is listed as the Required License for the role. Any lower-priority licenses are also included as attach licenses in combination with other base licenses can also cover these security objects. 
 
 :::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
 
 **Entitlement counts** - For the required license, the role's permissions are broken down into three categories: 
 
-- **Entitled** - Included secureable objects within the mapped license
+- **Entitled** - Included security objects within the mapped license
 - **Not entitled** - Not included in the mapped license (requires different license)
-- **Not Required** - Actions or privilege inherited in system user, not included in license computation
+- **Not Required** - Security obects or privilege inherited in system user, not included in license computation
 
 This breakdown helps you understand why a role requires the license it does. 
 
@@ -135,7 +135,6 @@ Each security object in a role has one of three classifications regarding requir
 | **Entitled** | The included security object's are **included** in the scope of the role's required license. No different license is required. |
 | **Not Entitled** | These security object's are **not covered** by the role's required license. A different license is required, which can cause the role's overall requirement to a different license. |
 | **Not Required** | The security object is not counted toward license requirement. For example, the included security objects may be inherited in system user and therefore not included in license computation
-
 
 ## Drilling Down into Specific Security Objects 
 
