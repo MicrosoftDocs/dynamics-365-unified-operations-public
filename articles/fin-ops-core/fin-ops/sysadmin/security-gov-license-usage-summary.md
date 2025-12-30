@@ -85,24 +85,24 @@ In the **User Licenses** view, each row corresponds to a user and displays the h
 
 - **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than 1 means the user needs one or more additional attach licenses. For example, 2 would mean the user needs their base license plus one attach license, 3 would mean the user needs their base license plus two attach licenses. 
 
->[!Note] 
-> For more detailed analysis, select Open in Microsoft Office to download a detailed view in Excel.
+>[!Tip] 
+> For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Excel.
 
 > [!IMPORTANT]
 > Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
 
 ### How to use the User License Summary view: 
 
-- **Verify expected licenses** : Check that each user's License matches what you expect for their assigned security role. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center]**(https://admin.microsoft.com). 
+- **Verify expected licenses** : Check that each user's License matches what you expect for their assigned security role. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**. 
 
 - **Investigate higher-than-expected licenses**: Pay special attention to users who require a higher license than seems appropriate. For instance, if a Warehouse clerk is shown needing a Finance license, it could mean they were inadvertently given a role with permissions that only a Finance user should have. Identify which roles that user has, then use the **Role Licenses** view for those roles to see what might be causing the increased requirement. 
 
 >[!Tip]
 > Duplicate the security role or duty using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature to see which permissions are excluded when evaluating license requirements.
 
-- **Address multiple license needs**: When the License quantity for a user is 2 or more, that uses's role and associated security objects span multiple product licenses. The highest-priority license is counted as the base license, and the remaining lower priority licenses would be attach licenses. Make sure the user is assigned all necessary license types in **[Microsoft 365 admin center]**(https://admin.microsoft.com). Also consider if those extra permissions (and the attach licenses they require) are truly needed, or if the user's access could be simplified to reduce the number of different licenses required. 
+- **Address multiple license needs**: When the License quantity for a user is 2 or more, that uses's role and associated security objects span multiple product licenses. The highest-priority license is counted as the base license, and the remaining lower priority licenses would be attach licenses. Make sure the user is assigned all necessary license types in **[Microsoft 365 admin center](https://admin.microsoft.com)**. Also consider if those extra security priveleges (and the attach licenses they require) are truly needed, or if the user's access could be simplified to reduce the number of different licenses required. 
 
-## Understanding the the Role Licenses View (Role-by-Role View) 
+## Understanding the the Role Licenses View
 
 The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. 
 
