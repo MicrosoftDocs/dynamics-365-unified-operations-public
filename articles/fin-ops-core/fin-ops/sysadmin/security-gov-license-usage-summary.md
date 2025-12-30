@@ -34,7 +34,10 @@ Additionally, if your organization has multiple Dynamics 365 Finance & Operation
 > The **License Usage Summary** is informational only. It does not assign licenses or change any user's access. It provides reporting on what licenses are required for the access each user and security role configuration. 
 
 > [!IMPORTANT]
-> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what’s included in a **Finance** vs. an **Operations - Activity** license, or how attach license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Understanding the licensing model will help you make the most of the License Usage Summary tool. 
+> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what’s included in a **Finance** vs. an **Operations - Activity** license, or how attach license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Understanding the licensing model will help you make the most of the **License Usage Summary** tool. 
+
+> [!IMPORTANT]
+> Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
 
 ## Getting Started: Enabling the Feature 
 
@@ -87,9 +90,6 @@ In the **User Licenses** view, each row corresponds to a user and displays the h
 
 >[!Tip] 
 > For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Excel.
-
-> [!IMPORTANT]
-> Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
 
 ### How to use the User License Summary view: 
 
