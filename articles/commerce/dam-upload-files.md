@@ -62,7 +62,7 @@ The following document types are supported:
 
 ## Upload a file
 
-To upload a file to Commerce site builder, follow these steps.
+To upload a file to Commerce site builder, follow these steps:
 
 1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Media Items**.

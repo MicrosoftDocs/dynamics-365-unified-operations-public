@@ -29,7 +29,7 @@ Before you generate a TPAR, you must have a complete setup of legal entity (comp
 
 ### Create a contact person for your company
 
-A TPAR requires that you provide information to the company contact person who is responsible for information on the report. To set up contact information that will be reported on the TPAR, follow these steps.
+A TPAR requires that you provide information to the company contact person who is responsible for information on the report. To set up contact information that will be reported on the TPAR, follow these steps:
 
 1. Go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 2. Select **New** to create a contact for your legal entity. Be sure to select a legal entity in the **Contact for** field.

@@ -70,7 +70,7 @@ If you used extension packages that are independently distributed and serviced, 
 
 ## Code migration steps
 
-To migrate existing POS extensions from the **Pos.Extensions** project in the Retail SDK to the independent packaging model, follow these steps.
+To migrate existing POS extensions from the **Pos.Extensions** project in the Retail SDK to the independent packaging model, follow these steps:
 
 1. Follow the steps in [Create a POS extension package project](create-pos-extension-package.md).
 2. Copy the content of your extension package directory from the **Pos.Extensions** project in the Retail SDK to the root directory of the project that you created in the previous step.

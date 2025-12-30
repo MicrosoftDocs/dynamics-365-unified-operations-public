@@ -73,7 +73,7 @@ The format of the mock file must resemble the following example, where the **typ
  
 You can then add specific **config** values as required. If you want a reference that can help you determine which mock **config** values you should add, you can create a page mock as shown in the next section and then copy the **config** values from the live module to the module mock.
 
-To preview the new module in a local web browser, follow these steps.
+To preview the new module in a local web browser, follow these steps:
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command as shown in the following example.
 
@@ -106,7 +106,7 @@ After you've created the page mock, you must update the module that you cloned t
 }
 ```
 
-To preview the new module by using a page mock in a local web browser, follow these steps.
+To preview the new module by using a page mock in a local web browser, follow these steps:
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command as shown in the following example.
 

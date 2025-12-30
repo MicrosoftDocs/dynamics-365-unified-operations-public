@@ -30,7 +30,7 @@ The benefits of this feature are optimization of license costs and reduced risk 
 
 The first and most important step in the process of setting up an accurate security configuration is to define a process hierarchy that closely represents your company's functional hierarchy. Although the process hierarchy that you define can be modified later, modification requires a significant amount of work.
 
-To set up a process hierarchy, follow these steps.
+To set up a process hierarchy, follow these steps:
 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security process role maintain**.
 1. In the **Security category** field, select a category, and then select the desired tree level within that category.
@@ -60,7 +60,7 @@ Follow these steps to create a new task.
 
 Menu items, web content items, and service operations are referred to collectively as *entry points*. Entry points define the starting points for a task or a duty in the performance of a function. Each task can have multiple entry points assigned to it.
 
-To assign an entry point to a task, follow these steps.
+To assign an entry point to a task, follow these steps:
 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security process role maintain**.
 1. Go to **Security tasks**, and select the task to assign the entry point to.
@@ -75,7 +75,7 @@ To assign an entry point to a task, follow these steps.
 
 A *role* is the collections of duties and privileges that are required to perform a specific job. Roles are created by combining multiple duties and privileges. After the process hierarchy, tasks, and entry points are defined, you can create new roles.
 
-To create a role, follow these steps.
+To create a role, follow these steps:
 
 1. Select a process hierarchy level, and then, on the **Process definition** FastTab, select **Create a new role**.
 1. In the **Role name** field, enter a value.

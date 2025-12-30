@@ -25,7 +25,7 @@ Ratings and reviews on e-Commerce websites help customers learn about products b
 
 Configuration values for ratings and reviews, such as the tenant ID, review text length, and review title length, are configured at the site level. 
 
-To configure a site to show ratings and reviews, follow these steps. 
+To configure a site to show ratings and reviews, follow these steps: 
 
 1. Go to **Home \> Sites**.
 1. Select the name of your site. 
@@ -42,7 +42,7 @@ The following illustration shows what this configuration looks like in Dynamics 
 
 A product rating is shown below the product title at the top of PDP. The product rating can be configured so that it's linked to the **Reviews** section of the same PDP. 
 
-To link a product rating to the **Reviews** section of the PDP, follow these steps.
+To link a product rating to the **Reviews** section of the PDP, follow these steps:
 
 1. Open the PDP template. 
 1. Go to **Buy box container module settings**.
@@ -54,7 +54,7 @@ The following illustration shows what this configuration looks like in Dynamics 
 
 ## Configure the link for the privacy and policy page
 
-To configure the link for the privacy and policy page, follow these steps.
+To configure the link for the privacy and policy page, follow these steps:
 
 1. Go to **Home \> Sites**.
 1. Select the name of your site. 

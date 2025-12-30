@@ -22,7 +22,7 @@ This article answers some frequently asked questions about the setup of collecti
 
 ## Collections process automation setup
 
-To set up collections process automation, follow these steps.
+To set up collections process automation, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**. On the **Collections process automation** tab, set up the parameters for collections process automation.
 2. Go to **Credit and collections** \> **Setup** \> **Collections process setup** to set up the collections process automation hierarchy. 

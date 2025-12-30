@@ -24,7 +24,7 @@ The demo data company used to create the following procedures is DEMF, with the 
 
 ## Post a vendor invoice
 
-To post a vendor invoice, follow these steps.
+To post a vendor invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable > Invoices > Invoice journal**.
 1. Select **New**.
@@ -43,7 +43,7 @@ To post a vendor invoice, follow these steps.
 
 ## Generate an invoice declaration
 
-To generate an invoice declaration, follow these steps.
+To generate an invoice declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Inquiries and reports \> Invoice \> Vendor invoice declaration report**.
 1. In the **Authority** field, select the drop-down button to open the lookup.

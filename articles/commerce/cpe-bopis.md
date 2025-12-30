@@ -47,7 +47,7 @@ For guidance on activating the Store Commerce app, see [Retail device activation
 
 ### Enable BOPIS in Store Commerce
 
-To enable BOPIS in Store Commerce, follow these steps.
+To enable BOPIS in Store Commerce, follow these steps:
 
 1. Sign in to Store Commerce by using **000713** as the operator ID and **123** as the password.
 2. When prompted, select **Perform a non-drawer operation**.

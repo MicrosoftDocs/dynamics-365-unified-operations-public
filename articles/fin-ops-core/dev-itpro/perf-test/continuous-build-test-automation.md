@@ -44,7 +44,7 @@ The first step is to [choose an Azure DevOps plan](https://azure.microsoft.com/p
 
 ### Set up Azure DevOps
 
-To set up Azure DevOps, follow these steps.
+To set up Azure DevOps, follow these steps:
 
 1. [Create a personal access token](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops). The token is used for all LCS background actions. These actions include upgrade and deployment. When users initiate actions from LCS, LCS expects that those users will be added to Azure DevOps. The users must authorize LCS access to Azure DevOps on their behalf.
 1. [Configure LCS](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops).

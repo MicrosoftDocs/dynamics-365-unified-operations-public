@@ -25,7 +25,7 @@ The following procedures use the demo data company USMF and require you to manua
 
 ## Preset vehicle models
 
-To preset vehicle models, follow these steps.
+To preset vehicle models, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Setup** > **Vehicle** > **Vehicle models**.
 2. Select **New** and in the **Model** field, enter a value. This value is printed on the packing slip.
@@ -33,7 +33,7 @@ To preset vehicle models, follow these steps.
 
 ## Set up packing slip autonumbering
 
-To set up packing slip autonumbering, follow these steps.
+To set up packing slip autonumbering, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Number sequences** > **Counters management**.
 2. Select **Edit**.
@@ -52,7 +52,7 @@ To set up packing slip autonumbering, follow these steps.
 
 ### Specify transportation details
 
-To specify transportation details, follow these steps.
+To specify transportation details, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets** > **Inquiries and reports** > **Packing slips**.
 2. On the Action Pane, select **General**.
@@ -77,7 +77,7 @@ To specify transportation details, follow these steps.
 
 ### Verify the packing slip report
 
-To verify the packing slip report, follow these steps.
+To verify the packing slip report, follow these steps:
 
 1. On the Action Pane, select **General**.
 2. Select **Fixed asset packing slip**.

@@ -197,7 +197,7 @@ The following table describes the fields in the **Settled transactions** section
 
 ## Create an exchange difference invoice
 
-To create a new exchange difference invoice, follow these steps.
+To create a new exchange difference invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Periodic tasks** \> **Exchange difference invoicing**.
 1. Select **New**, and then select either **Exchange difference invoices for vendors** or **Exchange difference invoices for customers**.

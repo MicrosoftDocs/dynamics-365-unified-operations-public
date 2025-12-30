@@ -24,7 +24,7 @@ As of March 28, 2025, all new CHE environments are configured with a load balanc
 
 Before you migrate, it's crucial to ensure that you have the necessary permissions and contributor access to the subscription. This access allows you to upgrade the load balancer without encountering any permission-related issues. After you verify your access, you can set the required variables and run the migration commands.
 
-To migrate existing CHE environments, follow these steps.
+To migrate existing CHE environments, follow these steps:
 
 1. Set the variables for the subscription ID, resource group name, and load balancer name.
 

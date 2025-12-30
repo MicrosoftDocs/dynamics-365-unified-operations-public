@@ -29,7 +29,7 @@ To use the Warehouse management only mode capability, your system must meet the 
 
 ## <a name="source-systems"></a>Configure your source systems
 
-Use the **Source systems** page to set up each external system that you want to use Warehouse management only mode to integrate with. To use Warehouse management only mode, you must have at least one record on this page. To set up a source system, follow these steps.
+Use the **Source systems** page to set up each external system that you want to use Warehouse management only mode to integrate with. To use Warehouse management only mode, you must have at least one record on this page. To set up a source system, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
 1. Follow one of these steps:

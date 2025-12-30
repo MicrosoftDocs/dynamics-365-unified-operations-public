@@ -26,7 +26,7 @@ A channel navigation hierarchy is used to group and organize products into categ
 
 ## Create a channel navigation hierarchy
 
-To create a channel navigation hierarchy, follow these steps.
+To create a channel navigation hierarchy, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Channel navigation categories**.
 1. On the action pane, select **New**.
@@ -45,7 +45,7 @@ The following image shows an example root node.
 
 ## Create navigation category nodes
 
-To create any additional navigation category nodes to represent the product categories on the channel, follow these steps.
+To create any additional navigation category nodes to represent the product categories on the channel, follow these steps:
 
 1. In the navigation pane, select the parent node to add a category to.
 1. On the action pane, select **New category node**.
@@ -64,7 +64,7 @@ The following image shows an example of a completed channel navigation hierarchy
 
 ## Add products to category nodes
 
-To add products to category nodes, follow these steps.
+To add products to category nodes, follow these steps:
 
 1. Select a category node.
 1. Under **Products**, select **Add**.
@@ -83,7 +83,7 @@ The following image shows an example node with products added.
 > [!NOTE]
 > Attribute groups must be created before you can add them to a node inside the channel navigation hierarchy.
 
-To add product an attribute group to a category node, follow these steps.
+To add product an attribute group to a category node, follow these steps:
 
 1. Select a category node.
 1. Under **Product attribute group**, select **Add**.

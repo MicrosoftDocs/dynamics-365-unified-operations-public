@@ -31,7 +31,7 @@ After an organization is onboarded as a business partner, the organization user 
 
 Potential business partners can initiate the onboarding process to a B2B e-commerce website by submitting an onboarding request via a link on the B2B website. They can then use the customizable form to provide the details that are required for onboarding and sign-up. After the request is submitted, a submission confirmation page appears. If the submission is approved, the company that the request was submitted for becomes a business partner, and the requester (the user who initiated the onboarding request) becomes the administrator user for the business partner.
 
-To approve a business partner request in Commerce headquarters, follow these steps.
+To approve a business partner request in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce IT \> Distribution schedule**.
 1. Run the **P-0001** job to pull all business partner onboarding requests into Commerce headquarters.
@@ -53,7 +53,7 @@ After the customer hierarchy records are synchronized to the channel database, t
 
 When you approve or reject a B2B prospect onboarding request, an email notification can automatically be sent to the prospect.
 
-To set up email notifications in Commerce headquarters for events of the **B2B prospect approved** or **B2B prospect rejected** notification type, follow these steps.
+To set up email notifications in Commerce headquarters for events of the **B2B prospect approved** or **B2B prospect rejected** notification type, follow these steps:
 
 1. Create email templates for emails that will be sent to prospects when either the **B2B prospect approved** or **B2B prospect rejected** notification type is triggered. For information about the placeholders that these notification types support, see [Notification types](../email-templates-transactions.md#notification-types). For information about how to create email templates, see [Create an email template](../email-templates-transactions.md#create-an-email-template).
 1. Add the **B2B prospect approved** and **B2B prospect rejected** notification types to your email notification profile, and then map them to the email templates that you created. For more information about notification profiles, see [Set up an email notification profile](../email-notification-profiles.md).
@@ -62,7 +62,7 @@ To set up email notifications in Commerce headquarters for events of the **B2B p
 
 The business partner administrator user can onboard additional business partner users to the B2B e-commerce website as required.
 
-To onboard additional business partner users to a B2B e-commerce website, follow these steps.
+To onboard additional business partner users to a B2B e-commerce website, follow these steps:
 
 1. Sign in to the B2B e-commerce website as an administrator.
 1. Go to **My Account \> Organization users \> View details**, and select **Add a user**.
@@ -76,7 +76,7 @@ After the customer record is synchronized, the status of the user on the B2B e-c
 
 ## Edit business partner user details
 
-To edit the details of business partner users, follow these steps.
+To edit the details of business partner users, follow these steps:
 
 1. Sign in to the B2B e-commerce website as an administrator.
 1. Go to **My Account \> Organization users \> View details**, select the **Edit** button (pencil symbol), make the required changes, and then select **Save**. The changes take effect only after the **P-0001**, **Synchronize customers and channel requests**, and **1010 (Customers)** jobs have been run.
@@ -84,7 +84,7 @@ To edit the details of business partner users, follow these steps.
 ## Remove a business partner user
 
 As required, an administrator can remove existing users of a business partner organization from the list of users who can access the B2B e-commerce website.
-To remove a business partner user, follow these steps.
+To remove a business partner user, follow these steps:
 - Sign in to the B2B e-commerce website as an administrator.
 - Go to **My Account > Organization users \> View details**, and select the **Remove** button ("X" symbol). When a confirmation message appears, confirm that you want to remove the user. The change takes effect only after the **P-0001**, **Synchronize customers and channel requests**, and **1010 (Customers)** jobs have been run.
 
@@ -95,7 +95,7 @@ To remove a business partner user, follow these steps.
 
 Administrators can onboard business partners and users directly in Commerce headquarters. This capability is useful for onboarding your existing business partners on the B2B e-commerce website.
 
-To onboard business partners and users in Commerce headquarters, follow these steps.
+To onboard business partners and users in Commerce headquarters, follow these steps:
 
 1. Create or select a customer of the **Organization** type to add as a business partner.
 1. Create or select a customer of the **Person** type to add as an administrator or user for the business partner. Ensure that primary email addresses are associated with the customers. These email addresses are used to sign in to the website. 

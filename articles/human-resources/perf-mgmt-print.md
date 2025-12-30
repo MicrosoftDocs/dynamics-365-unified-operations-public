@@ -29,7 +29,7 @@ This article explains how to set up Electronic reporting (ER) to print performan
 
 The **Print review** option in performance management requires ER. For more information, see [Electronic reporting (ER) overview](../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
-To set up ER, follow these steps.
+To set up ER, follow these steps:
 
 1. Go to **Organization administration** \> **Electronic reporting**.
 1. Select **Microsoft** \> **Repositories**.
@@ -40,7 +40,7 @@ To set up ER, follow these steps.
 
 ## Print a performance review
 
-To print a performance review, follow these steps.
+To print a performance review, follow these steps:
 
 1. Go **Human Resources** \> **Performance** \> **Reviews**.
 1. Select the **Print review** option.

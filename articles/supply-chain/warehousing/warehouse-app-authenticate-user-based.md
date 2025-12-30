@@ -159,7 +159,7 @@ To use SSO, follow one of these steps, depending on how you configure the connec
 
 If a device is lost or compromised, you must remove its ability to access Supply Chain Management. When a device is authenticated by using the device code flow, it's essential that you disable the associated user account in Microsoft Entra ID to revoke access for that device if it's ever lost or compromised. By disabling the user account in Microsoft Entra ID, you effectively revoke access for any device that uses the device code that's associated with that user account. For this reason, we recommend that you have one Microsoft Entra ID user account per device.
 
-To disable a user account in Microsoft Entra ID, follow these steps.
+To disable a user account in Microsoft Entra ID, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the left navigation pane, select **Microsoft Entra ID**, and ensure that you're in the correct directory.

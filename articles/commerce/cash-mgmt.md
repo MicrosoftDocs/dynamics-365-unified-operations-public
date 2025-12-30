@@ -33,7 +33,7 @@ Dynamics 365 Commerce provides cash management capabilities in its POS applicati
 
 ## Set up cash traceability functionality
 
-To set up cash traceability functionality by configuring the functionality profile for stores, follow these steps.
+To set up cash traceability functionality by configuring the functionality profile for stores, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select a functionality profile that's linked to the stores that you want to set up cash traceability functionality for.
@@ -46,7 +46,7 @@ To set up cash traceability functionality by configuring the functionality profi
 
 You can define and maintain multiple safes for a store.
 
-To set up a safe in Commerce headquarters, follow these steps.
+To set up a safe in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 1. In the **Retail Channel ID** field, select the retail channel ID of the store that you want to set up a safe for.
@@ -146,7 +146,7 @@ The manager reconciles the last safe drop transaction, performs a bank drop, and
 
 When cash management transactions are processed in headquarters, the parameters that are defined in the **Statement/closing** section of the **All stores** page are used to perform validations on those transactions. However, if the user enables the financial reconciliation functionality in headquarters, the POS user will see the result of these validations in POS when they try to close the shift.
 
-To set up the financial reconciliation functionality in headquarters, follow these steps.
+To set up the financial reconciliation functionality in headquarters, follow these steps:
 
 1. In the **Feature management** workspace, turn on the **Retail statements - Trickle feed** feature.
 1. In the POS functionality profile for the appropriate store, set the **Enable financial reconciliation in store** option to **Yes**.
@@ -163,7 +163,7 @@ Some retailers opt to enhance their POS to enable cashiers to return change in t
 
 With Commerce version 10.0.38, all cash management operations support foreign currencies in addition to a store's default currency. 
 
-To configure allowing cash management across multiple currencies to track currency movements across various transactions, follow these steps.
+To configure allowing cash management across multiple currencies to track currency movements across various transactions, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 1. Select the store for which you want to allow cash management across multiple currencies.

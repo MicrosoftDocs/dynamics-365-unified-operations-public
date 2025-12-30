@@ -27,7 +27,7 @@ Improvements to Commerce help ensure that when negative inventory is turned on f
 
 The following procedure defines a default a batch ID to order lines created from POS if the inventory reservation is set to **Automatic**.
 
-To define the default batch ID that is used for customer orders, follow these steps.
+To define the default batch ID that is used for customer orders, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 1. On the **Customer orders** tab, on the **Order** FastTab, enable the **Use default batch ID when batch numbers are not found** option, and then enter a value in the **Default batch ID** field.
@@ -38,7 +38,7 @@ To define the default batch ID that is used for customer orders, follow these st
   
 ## Define the default batch ID that is used for sales order invoicing through statement posting
 
-To define the default batch ID that is used for sales order invoicing through statement posting, follow these steps.
+To define the default batch ID that is used for sales order invoicing through statement posting, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 1. On the **Posting** tab, on the **Inventory update** FastTab, enter a value in the **Default batch id** field, and then enable the **Use default batch id when batch numbers are not found** option.

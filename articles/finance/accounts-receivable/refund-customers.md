@@ -26,7 +26,7 @@ The following scenarios are supported:
 - Refund a prepayment by using a payment proposal.
 - Refund manually.
 
-To configure the electronic payment format for customer refunds, follow these steps.
+To configure the electronic payment format for customer refunds, follow these steps:
 
 1. In Commerce headquarters, go to **Organization administration \> Workspaces \> Electronic reporting**.
 1. Import the latest version of the **Payment model mapping for refunds to customers** configuration from the Microsoft global repository. For more information, see [Download ER configurations from the global repository of configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).

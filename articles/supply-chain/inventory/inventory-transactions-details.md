@@ -31,7 +31,7 @@ To allow the **Inventory transactions** list page to load more quickly, it now p
 
 ## Open the Transaction details page
 
-To open the **Transactions details** page, follow these steps.
+To open the **Transactions details** page, follow these steps:
 
 1. Go to **Inventory management \> Inquiries and reports \> Transactions**.
 1. The **Inventory transactions** page opens. Find and select the transaction that you want to inspect.

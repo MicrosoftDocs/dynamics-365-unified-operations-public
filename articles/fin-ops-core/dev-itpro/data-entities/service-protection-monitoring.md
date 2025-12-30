@@ -26,7 +26,7 @@ These queries enable you to get raw logs with data related to administration of 
 
 You can use the predefined **Requests throttled** to see the list of API requests that have been throttled in a given date/time range due to exceeding service protection API limits.
 
-To view throttling activity in the monitoring and diagnostics portal, follow these steps.
+To view throttling activity in the monitoring and diagnostics portal, follow these steps:
 
 1. In LCS, open the appropriate project.
 2. In the **Environments** section, select the environment to view, and then select **Full details**.

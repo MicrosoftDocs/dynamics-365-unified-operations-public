@@ -44,7 +44,7 @@ If you're applying a deduction to a trade allowance rebate, you must complete th
 
 The system records all deduction events in a claim journal. Therefore, your system must include a journal that can be used for this purpose. If you don't already have a claim journal, set it up now. This journal is required to create deductions directly on the deduction workbench, customer settlement, or customer page.
 
-To set up a new claim journal for deductions, follow these steps.
+To set up a new claim journal for deductions, follow these steps:
 
 1. Go to **General ledger** \> **Journal setup** \> **Journal names**.
 1. Select **New**, and set the following fields for the new journal name:
@@ -75,7 +75,7 @@ To set up a new claim journal for deductions, follow these steps.
 
 When the system creates a claim journal for a new deduction, it also creates two new customer transactions: one to offset the amount of the claim against the original invoice and one to register a customer's debt to the amount of the claim (because the claim hasn't yet been approved). Therefore, you must set up your system so that a single voucher can have multiple customer lines.
 
-To enable a single voucher to have multiple customer lines, follow these steps.
+To enable a single voucher to have multiple customer lines, follow these steps:
 
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Ledger** tab, on the **General** FastTab, set the **Allow multiple transactions within one voucher** option to *Yes*.
@@ -112,7 +112,7 @@ To schedule this task, go to **Sales marketing** \> **Periodic tasks** \> **Sett
 
 ### Create a deduction journal entry by using the customer payment journal
 
-To create a deduction journal entry, follow these steps.
+To create a deduction journal entry, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments** \> **Customer payment journal**.
 1. Select **New** to add a row to the grid.
@@ -133,7 +133,7 @@ To create a deduction journal entry, follow these steps.
 
 ### Create a deduction by using the deduction workbench
 
-To create a new deduction on the deduction workbench, follow these steps.
+To create a new deduction on the deduction workbench, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. On the Action Pane, select **Maintain** \> **New deduction**.
@@ -247,7 +247,7 @@ The process of creating a deduction from a customer page resembles the process o
 
 After an approved rebate exists for a customer, you can create a credit note on the customer's account to represent the rebate, as required. The credit then appears on the deduction workbench, where it can be matched to a deduction.
 
-To create a credit note, follow these steps.
+To create a credit note, follow these steps:
 
 1. Go to **Sales and marketing** \> **Customers** \> **All customers**.
 1. Select the customer.
@@ -265,7 +265,7 @@ Depending on how you want to process a deduction, complete one or more of the pr
 
 ### Match a deduction to a credit
 
-To match a deduction to a credit, follow these steps.
+To match a deduction to a credit, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -277,7 +277,7 @@ To match a deduction to a credit, follow these steps.
 
 ### Split a deduction
 
-To split a deduction, follow these steps.
+To split a deduction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -290,7 +290,7 @@ To split a deduction, follow these steps.
 
 You can attach an invoice to a deduction if the deduction was created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, and if no invoice is currently attached to it (that is, the **Invoice** column is blank).
 
-To attach an invoice to a deduction, follow these steps.
+To attach an invoice to a deduction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -305,7 +305,7 @@ To attach an invoice to a deduction, follow these steps.
 
 You can detach an invoice from a deduction if the deduction was created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page, if an invoice is currently attached to it (that is, the **Invoice** column shows an invoice number), and if the **Claim status** field is set to *Open*. You might complete this task because an incorrect invoice was attached. The invoice is removed from the deduction, and its remaining balance is updated if it was reduced when the invoice was attached.
 
-To detach an invoice, follow these steps.
+To detach an invoice, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -315,7 +315,7 @@ To detach an invoice, follow these steps.
 
 You can approve deductions that were created by using the **New deduction** command on the deduction workbench, customer settlement, or customer page. However, you can approve only deductions where the **Claim status** field is set to *Open*.
 
-To approve a deduction, follow these steps.
+To approve a deduction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -367,7 +367,7 @@ You can create a return order for deductions that were created by using the **Ne
 - The **Create return order** option on the **Deductions** tab of the **[Accounts receivable parameters](#accounts-receivable-deductions)** page is set to *Yes*.
 - The **Create return order prior to deduction approval** option on the **Deductions** tab of the **[Accounts receivable parameters](#accounts-receivable-deductions)** page is set to *Yes*.
 
-To create a return order, follow these steps.
+To create a return order, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -389,7 +389,7 @@ To create a return order, follow these steps.
 
 ### Deny a deduction
 
-To deny a deduction, follow these steps.
+To deny a deduction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -406,7 +406,7 @@ To deny a deduction, follow these steps.
     - The deduction's **Status** field is set to *Closed*.
     - The deduction's **Claim status** field is set to *Rejected*.
 
-To reverse a denial, follow these steps.
+To reverse a denial, follow these steps:
 
 1. On the **Deductions** tab, select a denied deduction.
 1. On the Action Pane, select **Reverse denial**.
@@ -419,7 +419,7 @@ To reverse a denial, follow these steps.
 
 ### Write off a deduction
 
-To write off a deduction, follow these steps.
+To write off a deduction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox for the deduction to process.
@@ -436,7 +436,7 @@ To write off a deduction, follow these steps.
     - The deduction's **Status** field is set to *Closed*
     - The deduction's **Claim status** field is set to *Write-off*.
 
-To reverse a write-off, follow these steps.
+To reverse a write-off, follow these steps:
 
 1. On the **Deductions** tab, select a denied deduction.
 1. On the Action Pane, select **Reverse write-off**.
@@ -464,7 +464,7 @@ After a credit is invoiced, and the deduction is approved, the credit appears in
 
 #### Attach a free text invoice to a deduction
 
-To attach a free text invoice to a deduction, follow these steps.
+To attach a free text invoice to a deduction, follow these steps:
 
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select the applicable invoice.
@@ -474,7 +474,7 @@ To attach a free text invoice to a deduction, follow these steps.
 
 #### Attach a return order to a deduction
 
-To attach a return order to a deduction, follow these steps.
+To attach a return order to a deduction, follow these steps:
 
 1. Go to **Accounts receivable** \> **Orders** \> **All return orders**.
 1. Select the applicable received or open return merchandise authorization (RMA) number.
@@ -484,7 +484,7 @@ To attach a return order to a deduction, follow these steps.
 
 #### Attach a sales order to a deduction
 
-To attach a sales order to a deduction, follow these steps.
+To attach a sales order to a deduction, follow these steps:
 
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the applicable open, delivered, or invoiced sales order.
@@ -511,7 +511,7 @@ This section describes how you can attach a deduction to a credit from the deduc
 
 #### Attach a deduction to a free text, return order, or sales order credit
 
-To attach a deduction to a free text, return order, or sales order credit, follow these steps.
+To attach a deduction to a free text, return order, or sales order credit, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the applicable open deduction.
@@ -545,7 +545,7 @@ Sometimes, you might not have an approved rebate that you can match to a deducti
 
 This feature is useful if you use trade allowances. For more information about trade allowances, see [Trade allowance management](../sales-marketing/trade-allowance.md).
 
-First, you must set up a template that can be used to create the new trade allowance agreement. To set up a template, follow these steps.
+First, you must set up a template that can be used to create the new trade allowance agreement. To set up a template, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Templates**.
 1. On the Action Pane, select **New**.
@@ -556,7 +556,7 @@ First, you must set up a template that can be used to create the new trade allow
 1. Go to **Sales and marketing** \> **Setup** \> **Trade allowance** \> **Trade allowance management parameters**.
 1. On the **Overview** tab, in the **One-time promotion template** field, select the name of the template to use to create one-time promotions.
 
-Next, you can create a one-time promotion on the deduction workbench. To create a one-time promotion, follow these steps.
+Next, you can create a one-time promotion on the deduction workbench. To create a one-time promotion, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. Select the **Mark** checkbox next to the deduction to process.
@@ -572,7 +572,7 @@ Next, you can create a one-time promotion on the deduction workbench. To create 
 
 If you must make the same change to multiple deductions, you can select those deductions and do a mass update of their fields.
 
-To do a mass update, follow these steps.
+To do a mass update, follow these steps:
 
 1. Go to **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**.
 1. In the **Show** field below the Action Pane, select the type of deductions to view.

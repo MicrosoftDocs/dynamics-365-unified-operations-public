@@ -28,7 +28,7 @@ There are four local inventory reports available in Russia:
 
 Before you can generate the local inventory reports, you must set up number sequences for on-hand inventory dimension combination.
 
-To set up number sequences for on-hand inventory dimension combination, follow these steps.
+To set up number sequences for on-hand inventory dimension combination, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. On the **Number sequences** tab, select a number sequence code for the **On-hand inventory on date dimension combination** reference, and then assign the number sequence in the **Number sequence code** field.
@@ -41,7 +41,7 @@ Using the **Inventory balance turnover** inquiry, you can view balances and turn
 
 To optimize the performance of the **Inventory balance turnover** inquiry, use the **On-hand inventory on date** periodic procedure. It calculates on-hand inventory on the date when the inventory was previously closed.
 
-To calculate on-hand inventory on inventory closing date, follow these steps.
+To calculate on-hand inventory on inventory closing date, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management \> Periodic tasks \> On-hand inventory on date**.
 1. On the **Calculation on-hand inventory on date** page, on the **Parameters** tab, in the **Date of on-hand calculation** field, specify the inventory closing date for which the inventory calculation must be performed. By default, this is the first date the inventory was closed without an inventory calculation.
@@ -59,7 +59,7 @@ The results of the on-hand inventory calculation on the inventory closing date a
 
 ### Inventory balance turnover inquiry
 
-To configure inventory balance turnover, follow these steps.
+To configure inventory balance turnover, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports (Russia)** \> **Inventory balance turnover**.
 
@@ -163,7 +163,7 @@ To configure inventory balance turnover, follow these steps.
 
 When calculating data for an **Inventory balance turnover** inquiry, the system generates temporary data but stores the data in permanent database tables. After closing the inquiry form, the data is deleted from the system. However, temporary data may not be completely deleted (for example, in case of system failures). To clear the temporary data, the **On-hand inventory calculation on date** and **Record references cleanup** periodic operations are used.
 
-To clean up temporary data, follow these steps.
+To clean up temporary data, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **On-hand inventory calculation on date**.
 
@@ -182,7 +182,7 @@ To clean up temporary data, follow these steps.
 
 The pay-sheet of receipts and expenditure report displays receipts and issues for all items.
 
-To configure the pay-sheet of receipts and expenditure report, follow these steps.
+To configure the pay-sheet of receipts and expenditure report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Pay-sheet of receipts and reports expenditure**.
 
@@ -202,7 +202,7 @@ To configure the pay-sheet of receipts and expenditure report, follow these step
 
 The adjustments report report shows all adjustments that were done during the inventory recalculation or closing. 
 
-To generate the adjustments report, follow these steps.
+To generate the adjustments report, follow these steps:
 
 1. In Dynamics 365 Finance, go to go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustments**.
 1. Specify the parameters, and then select **OK** to generate the report.
@@ -213,7 +213,7 @@ To generate the adjustments report, follow these steps.
 
 The adjustments in currency report shows all adjustments completed during the inventory recalculation or closing in the reporting currency.
 
-To generate the adjustments in currency report, follow these steps.
+To generate the adjustments in currency report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustment (cur.)**. 
 1. Specify the parameters, and then select **OK** to generate the report.

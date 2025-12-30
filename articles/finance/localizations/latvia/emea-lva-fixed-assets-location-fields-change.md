@@ -27,7 +27,7 @@ For legal entities with a primary address in Latvia, when you modify the followi
 
 Your modification is saved when you select **Save** or when you move your focus away from the field where you made the change. 
 
-To view the modification history for fields you updated, follow these steps.
+To view the modification history for fields you updated, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets** \> **Fixed assets** \> **Fixed assets**.
 1. Select a fixed asset.

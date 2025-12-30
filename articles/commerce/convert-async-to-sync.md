@@ -19,7 +19,7 @@ ms.custom:
 
 This article explains how to convert asynchronous customers to synchronous customers in Microsoft Dynamics 365 Commerce.
 
-To convert asynchronous customers to synchronous customers, follow these steps.
+To convert asynchronous customers to synchronous customers, follow these steps:
 
 1. In Commerce headquarters, run the **P-job** to send the asynchronous customers to Commerce headquarters.
 1. Run the **Synchronize customers and business partners from async mode** job to create customer account IDs. (This job was formerly named **Synchronize customers and business partners from async mode**.)

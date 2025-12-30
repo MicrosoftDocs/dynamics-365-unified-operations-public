@@ -19,7 +19,7 @@ This article uses the example of a newly created *Location directive actions* qu
 
 ### Set up a location directive action
 
-To set up a location directive action, follow these steps.
+To set up a location directive action, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Location directives**.
 1. In the **Work order type** field, select *Sales orders*.

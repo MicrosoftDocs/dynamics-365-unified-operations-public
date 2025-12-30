@@ -40,7 +40,7 @@ If a table is created in only one system, set up the number sequence in the sour
 
 ## Disable field validation in the finance and operations data entity for the dual-write initial synchronization
 
-To disable field validation in the finance and operations data entity for the dual-write initial synchronization, follow these steps.
+To disable field validation in the finance and operations data entity for the dual-write initial synchronization, follow these steps:
 
 1. In the finance and operations app, go to **Data Management** \> **Data entities**.
 1. Select to update a data entity, and then, for the autonumber field, clear the **Call validate Field method** checkbox.

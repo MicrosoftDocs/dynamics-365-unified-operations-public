@@ -26,7 +26,7 @@ For additional email configuration information, see [Configure and send email](.
 
 Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters for each notification type you want to support. This template defines the email subject, sender, default language, and email body for each supported language.
 
-To create an email template, follow these steps.
+To create an email template, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Parameters \> Organization email templates**.
 1. On the action pane, select **New**.
@@ -46,7 +46,7 @@ For more information about creating email templates, see [Create email templates
 
 ## Create an email notification profile
 
-To create an email notification profile in headquarters, follow these steps.
+To create an email notification profile in headquarters, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. On the action pane, select **New**.
@@ -56,7 +56,7 @@ To create an email notification profile in headquarters, follow these steps.
 
 ## Add a notification type
 
-To create an email event, follow these steps.
+To create an email event, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. Under **Retail email notification settings**, select **New**.
@@ -80,7 +80,7 @@ You can activate the email notification profile by associating it with a brick a
 
 When the **Optimized order notifications processing** feature is enabled, the email notification process job is executed in parallel and more emails can be processed at a time.
 
-To enable the optimized order notifications processing feature in headquarters, follow these steps.
+To enable the optimized order notifications processing feature in headquarters, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. On the **Not enabled** tab, in the **Feature name** list, find and select the **Optimized order notifications processing** feature.
@@ -90,7 +90,7 @@ To enable the optimized order notifications processing feature in headquarters, 
 
 To send out email notifications, you must have the **Process retail order email notification** job running.
 
-To set up a batch job in headquarters for sending transactional emails, follow these steps.
+To set up a batch job in headquarters for sending transactional emails, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
 1. In the **Process retail order email notification** dialog, select **Recurrence**.
@@ -110,7 +110,7 @@ To enable optimized email notification processing, go to **Workspaces \> Feature
 
 ## Schedule a clean-up batch job for email notification logs
 
-To set up a clean-up batch job in headquarters for cleaning up email notification logs, follow these steps.
+To set up a clean-up batch job in headquarters for cleaning up email notification logs, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Clean up email notification logs**.
 1. In the **Clean up email notification logs** dialog, configure the following parameters:
@@ -133,7 +133,7 @@ Before emails can be sent, you must configure your outgoing mail service. For mo
 
 ### Check the email notification log
 
-To check the email notification log, follow these steps.
+To check the email notification log, follow these steps:
 
 1. Go to `https://<environment-URL>/?mi=RetailEventNotificationLog`.
 1. If email isn't found in the log, then the email notification isn't processed. Verify that the **Email notification profile** is created correctly. 
@@ -147,7 +147,7 @@ To check the email notification log, follow these steps.
 
 ### Check email sending failures
 
-To check email sending failures, follow these steps.
+To check email sending failures, follow these steps:
 
 1. Go to **System administration \> Setup \> Email \> Email history**.
 1. For any emails where the email status value is **Failed**, review the error message on the **Failure details** tab and determine whether corrective actions should be taken. For more information, see [Common issues with sending email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json#common-issues-with-sending-email).

@@ -26,7 +26,7 @@ You must define the location of a fixed asset before you acquire the fixed asset
 
 You can use the **FA location** page to set up a fixed asset location and specify the company division that the asset belongs to.
 
-To set up a fixed asset location , follow these steps.
+To set up a fixed asset location , follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Location** to open the **FA location** page.
 1. Select **New** to create a fixed asset location.
@@ -53,7 +53,7 @@ You have two options for assigning numbers to fixed assets:
 
 ### Set up automatic numbering of all fixed assets from one default number sequence
 
-To set up automatic numbering of all fixed assets from one default number sequence, follow these steps.
+To set up automatic numbering of all fixed assets from one default number sequence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and create a default number sequence that is used to number fixed assets.
 1. Select **Fixed assets (Russia)** \> **Setup** \> **Parameters** to open the **Fixed asset parameters** page.
@@ -64,7 +64,7 @@ If the **Autonumeration FA** option is set to **Yes**, then when you create a fi
 
 ### Set up automatic numbering of fixed assets that is based on the fixed asset group
 
-To set up automatic numbering of fixed assets that is based on the fixed asset group, follow these steps.
+To set up automatic numbering of fixed assets that is based on the fixed asset group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **FA groups**.
 1. Select the **Autonumeration FA** checkbox for the selected fixed asset group, and then select the appropriate number sequence in the **FA autonumbering sequence** field.
@@ -76,7 +76,7 @@ This number sequence is used for all fixed assets that are assigned to the fixed
 
 ## Create bar codes from fixed asset numbers
 
-To create bar codes from fixed asset numbers, follow these steps.
+To create bar codes from fixed asset numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Periodic** \> **Create barcodes from FA inventory number**.
 1. On the **Records to include** FastTab, select **Filter**, and then, in the **Assets** dialog, enter the criteria that are used to select fixed assets. Then select **OK** to return to the **Create barcodes from FA inventory number** dialog.

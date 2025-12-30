@@ -22,7 +22,7 @@ Finance insights combines functionality from Microsoft Dynamics 365 Finance with
 
 ## Deploy Dynamics 365 Finance
 
-To deploy the environments, follow these steps.
+To deploy the environments, follow these steps:
 
 1. In Lifecycle Services, create or update a Dynamics 365 Finance environment.
    
@@ -51,7 +51,7 @@ Verify that the following setup is completed:
   
 ## Configure Dataverse
 
-To configure Dataverse for Finance insights, follow these steps.
+To configure Dataverse for Finance insights, follow these steps:
 
 - In Lifecycle Services, open the environment page, and verify that the **Power Platform Integration** section is already set up.
 
@@ -71,7 +71,7 @@ If you previously installed the Finance insights add-in, uninstall it before you
 > [!NOTE]
 > If you previously installed the Export to Data Lake add-in in Lifecycle Services, uninstall it before you install the Finance Insights add-in, because the Export to Data Lake add-in has been deprecated. Learn more in [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
 
-To install the Finance insights add-in, follow these steps.
+To install the Finance insights add-in, follow these steps:
 
 1. Sign in to Lifecycle Services, and then, under the environment name on the right side of the page, select **Full Details**.
 2. In the **Environment add-ins** section, select **Install a new add-in**.

@@ -51,7 +51,7 @@ Before you install the Human Resources app, the following prerequisites must be 
     1. Search for **Microsoft flow approvals**, and select **Install app**.
     1. Select the app, and then select **Next** to install it.
 
-To install the Human Resources app for the first time, follow these steps.
+To install the Human Resources app for the first time, follow these steps:
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as an admin.
 2. Select **Environments**, search for your environment, and select it.
@@ -166,7 +166,7 @@ There are three new connection references. All the connection references are par
 
 ### Uninstall the Human Resources app
 
-If the Human Resources app must be uninstalled, follow these steps.
+If the Human Resources app must be uninstalled, follow these steps:
 
 1. Open [Power Apps](https://make.powerapps.com/).
 2. Select the Dataverse environment.

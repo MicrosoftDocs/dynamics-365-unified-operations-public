@@ -29,7 +29,7 @@ Before you can generate the **Format 606 DO** report, the following prerequisite
 - You must create a tax application to use on the report. The tax application ID must be set to **F606**. Learn more in [Tax application for Latin America](../ltm-core-tax-application.md).
 - You must configure the master field list. First configure field list 2 for the type of goods and services that are purchased, together with the corresponding code. Then configure field list 3 for the method of payment together with the corresponding code in the tax application code. Learn more in [Field list configuration for Latin America](ltm-core-field-master-lists.md).
 - You must create two sales tax codes to use for Tax on Transfers of Industrialized Goods and Services (ITBIS), including ITBIS 18% (for goods) and ITBIS 0% (for services). Create one sales tax code for purchases and another for services. Remember to use one code for ITBIS that is taken to cost and another for ITBIS that is subject to proportionality.
-- After you create sales tax codes, you must follow these steps.
+- After you create sales tax codes, you must follow these steps:
 
     1. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax codes**.
     1. Select a sales tax.
@@ -43,7 +43,7 @@ Before you can generate the **Format 606 DO** report, the following prerequisite
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspace**, and select **Reporting configurations**.
 1. In the **LTM Tax** report, select **Format 606 DO**. Then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -69,7 +69,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run the Format 606 DO report
 
-To generate the **Format 606 DO** report, follow these steps.
+To generate the **Format 606 DO** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

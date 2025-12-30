@@ -30,7 +30,7 @@ To enable the feature in Commerce headquarters, go to the **Feature management**
 
 ## Set up an archival job
 
-To set up an archival job, follow these steps.
+To set up an archival job, follow these steps:
 
 1. In headquarters, go to **System administration** \> **Archive with Dataverse long term retention workspace**.
 1. Select **Retail transactions**.

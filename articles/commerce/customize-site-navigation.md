@@ -22,7 +22,7 @@ Online storefronts typically let customers discover and browse products by navig
 
 ## Create a channel navigation hierarchy
 
-To create a channel navigation hierarchy, follow these steps.
+To create a channel navigation hierarchy, follow these steps:
 
 1. Go to **Retail and Commerce \> Products and categories \> Category and product management**.
 1. Select **Category hierarchies**, and then select **New**.
@@ -51,7 +51,7 @@ By default, the categories that you define will appear in alphabetical order on 
 
 ## Publish new or updated navigation hierarchies
 
-To make your navigation hierarchy available to your online storefront, follow these steps.
+To make your navigation hierarchy available to your online storefront, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 1. In the tree on the left, select your online store.
@@ -72,7 +72,7 @@ To show your category hierarchy on your online storefront, you must add the navi
 
 On your navigation menu, you can add navigation options that aren't part of your product category hierarchy. For example, at the end of the list of product categories, you can add a **Contact Us** item that points to a contact page that you've built for your site.
 
-To add custom navigation options to your navigation menu, follow these steps.
+To add custom navigation options to your navigation menu, follow these steps:
 
 1. In the template or fragment that you want to customize, select the navigation menu module.
 1. In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.

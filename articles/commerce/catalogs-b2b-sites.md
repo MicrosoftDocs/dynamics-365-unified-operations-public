@@ -133,7 +133,7 @@ To configure attribute metadata, in Commerce headquarters, go to **Retail and Co
 
 Before a new catalog is available to use, it must be validated and published.
 
-To validate a catalog, follow these steps.
+To validate a catalog, follow these steps:
 
 1. On the **Catalogs** tab of the **All catalogs** page, under **Validate** select **Validate catalog** to run a validation. This step is required. It will validate that the required setup is accurate.
 1. Select **View results** to view the details of the validation. If errors are found, you must correct the data and then run the validation again until it passes.
@@ -145,7 +145,7 @@ To validate a catalog, follow these steps.
 
 After a catalog is validated, it must be approved.
 
-To start the catalog approval workflow, follow these steps.
+To start the catalog approval workflow, follow these steps:
 
 1. On the action pane of the **All catalogs** page, select **Workflow \> Submit**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce workflows** to configure the steps and authorized users for the workflow. The workflow will define the steps that are required to get the catalog into an **Approved** status.

@@ -38,7 +38,7 @@ For the channel and catalog selection functionality to work, the following prere
 
 ## Enable the feature
 
-To enable the feature in Commerce headquarters, follow these steps.
+To enable the feature in Commerce headquarters, follow these steps:
 
 1. Go to **Systems administration \> Workspaces \> Feature management**.
 1. Search for the **Enable B2B2B setup and enhancements to B2B Commerce orders** feature, and then select it.
@@ -46,7 +46,7 @@ To enable the feature in Commerce headquarters, follow these steps.
 
 ## Create an order
 
-To create an order in headquarters after you enable the feature, follow these steps.
+To create an order in headquarters after you enable the feature, follow these steps:
 
 1. Go to **Retail and Commerce \> Customers \> Customer service**, and search for a B2B customer.
 1. Select a B2B online channel that's associated with the customer. Alternatively, select the call center channel that's associated with the customer service agent who is creating the order.

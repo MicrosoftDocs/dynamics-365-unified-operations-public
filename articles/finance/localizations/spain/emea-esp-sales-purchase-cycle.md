@@ -38,13 +38,13 @@ Before you can set up default documents for the sales and purchase cycles, you m
 
 You can specify which documents are active for a specific customer or vendor.
 
-To set up a specific sales document cycle for a customer, follow these steps.
+To set up a specific sales document cycle for a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **All customers** page.
 1. Select a customer.
 1. Select **Sell** \> **Set up** \> **Sales cycle** \> **Edit**.
 
-To set up a specific purchase document cycle for a vendor, follow these steps.
+To set up a specific purchase document cycle for a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **All vendors** page.
 1. Select a vendor.

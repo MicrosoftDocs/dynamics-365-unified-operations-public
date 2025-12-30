@@ -150,7 +150,7 @@ In this procedure, you'll configure a data inquiry detour for the **Movement by 
 
 ### Configure an Item data inquire mobile device menu item for scenario 3
 
-To create the **Item data inquire** mobile device menu item, follow these steps.
+To create the **Item data inquire** mobile device menu item, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.

@@ -63,7 +63,7 @@ CAPA cases use the standard electronic signature feature that is provided in fin
 
 ### Turn the electronic signature requirement for CAPA cases on or off
 
-To set up the electronic signature requirements for CAPA cases, follow these steps.
+To set up the electronic signature requirements for CAPA cases, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
 1. In the left pane, select the row where the **Name** field is set to *Close/Cancel CAPA case*.

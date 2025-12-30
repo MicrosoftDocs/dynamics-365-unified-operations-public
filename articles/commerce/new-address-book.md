@@ -22,7 +22,7 @@ Address books are used in Commerce for various reasons including storing custome
 
 ## Create a new address book
 
-To create a new address book, follow these steps.
+To create a new address book, follow these steps:
  
 1. In the navigation pane, go to **Modules \> Channel setup \> Address books**.
 1. On the action bar, select **New**.

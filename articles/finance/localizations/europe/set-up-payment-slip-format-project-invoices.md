@@ -27,7 +27,7 @@ The following procedures use the DEMF demo company, and the functionality is ava
 
 ## Set up a creditor ID number
 
-To set up a creditor ID number, follow these steps.
+To set up a creditor ID number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Expand or collapse the **Bank account information** section.
@@ -38,7 +38,7 @@ To set up a creditor ID number, follow these steps.
 
 ## Set up a payment slip format for invoices, notes, letters, and statements
 
-To set up a payment slip format for invoices, notes, letters, and statements, follow these steps.
+To set up a payment slip format for invoices, notes, letters, and statements, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Forms \> Form setup**.
 1. Select the **Invoice** tab.

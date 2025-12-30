@@ -26,7 +26,7 @@ There is a predefined Excel template that customers can access from different pa
 
 ## Create and configure an Excel workbook
 
-To create and configure an Excel workbook so that you can edit retail transactions, follow these steps.
+To create and configure an Excel workbook so that you can edit retail transactions, follow these steps:
 
 1. Open Excel, and create a blank workbook.
 1. On the **Insert** tab, select **My add-ins**.

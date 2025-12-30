@@ -78,7 +78,7 @@ This functionality allows for a setup where most released product variants use t
 
 ### Assign an item sales tax group to a released product variant
 
-To assign variant-specific item sales tax groups, follow these steps.
+To assign variant-specific item sales tax groups, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Open the product that you want to set up variant-specific item sales tax groups for.

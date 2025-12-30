@@ -33,7 +33,7 @@ As an example, the following procedure shows how to register a payment to a vend
 
 ### Register a payment by using the vendor payment journal
 
-To register a payment by using the vendor payment journal, follow these steps.
+To register a payment by using the vendor payment journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 1. On the Action Pane, select **Lines**.
@@ -58,7 +58,7 @@ You can also register accounts receivable or accounts payable on the **Free text
 
 ### Register accounts receivable by using a free text invoice
 
-To register accounts receivable by using a free text invoice, follow these steps.
+To register accounts receivable by using a free text invoice, follow these steps:
 
 1. On the **Free text invoice** page, create a free text invoice.
 1. On the **Free text invoice header** FastTab, in the **Agreement** section, in the **Agreement ID** field, select the number of the agreement.
@@ -71,7 +71,7 @@ To register accounts receivable by using a free text invoice, follow these steps
 
 ### Register accounts receivable and accounts payable from general journals
 
-To register accounts receivable and accounts payable from general journals, follow these steps.
+To register accounts receivable and accounts payable from general journals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal entries** \> **General journals**.
 1. On the Action Pane, select **Lines**.
@@ -89,7 +89,7 @@ For more information about dimension control for settlements, see [Set up dimens
 
 ### <a name="settle-factures-customer-agreements"></a>Settle factures on a customer in the context of agreements
 
-To settle factures on a customer in the context of agreements, follow these steps.
+To settle factures on a customer in the context of agreements, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. On the **Collect** tab, in the **Settle** section, select **Facture and payment settlement**.
@@ -108,7 +108,7 @@ To settle factures on a customer in the context of agreements, follow these step
 
 ### Settle factures on a vendor in the context of agreements
 
-To settle factures on a vendor in the context of agreements, follow these steps.
+To settle factures on a vendor in the context of agreements, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. On the **Invoice** tab, in the **Settle** section, select **Facture and payment settlement**.
@@ -120,7 +120,7 @@ You can do periodic settlement of counteragent transactions by using the **Perio
 
 The following example procedure shows how to do periodic settlement of sales transactions.
 
-To walk through the example, follow these steps.
+To walk through the example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Customer posting profiles**.
 1. Select a customer posting profile, and then, on the **Table restrictions** FastTab, set the **Allow automatic settlement** option to **Yes** to allow for automatic settlement of sales transactions.

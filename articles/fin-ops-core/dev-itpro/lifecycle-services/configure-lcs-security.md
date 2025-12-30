@@ -49,7 +49,7 @@ Contributors are other users from your Microsoft Entra tenant, but they don't ha
 The delegated admin role is identical to the admin role, except the user is from a Microsoft partner tenant and has an established relationship with the customer organization. The delegated admin can sign in on behalf of the customer, and can perform required operations and provide required support.
 
 ## Manage Lifecycle Services organization users
-Only an administrator can manage users. Follow these steps.
+Only an administrator can manage users. follow these steps:
 
 1.  In PartnerSource Business Center (PSBC) or Microsoft Entra ID, associate all the users in your organization who require access to Lifecycle Services with your organization. Users might have to wait up to two business days before they can sign in to Lifecycle Services.
 2.  Add your users to the appropriate projects in Lifecycle Services.

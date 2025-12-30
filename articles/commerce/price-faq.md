@@ -32,7 +32,7 @@ You can check out the latest Commerce software development kit (SDK) samples in 
 
 ### Why do I see the wrong price?
 
-To diagnose your price and discount configurations, follow these steps.
+To diagnose your price and discount configurations, follow these steps:
 
 1. Go to **Retail and Commerce** \> **Pricing and discounts** \> **Price simulator**.
 1. Set your price calculation context, including the channel, the customer (if there is one), and sales lines.

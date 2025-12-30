@@ -38,7 +38,7 @@ To create a CSS override file, you can use any integrated development environmen
 
 ## Upload a CSS override file
 
-To upload a CSS file to your site in Commerce, follow these steps.
+To upload a CSS file to your site in Commerce, follow these steps:
 
 1. In the authoring tools, go to your site.
 1. In the navigation pane on the left, select **Design**.
@@ -52,7 +52,7 @@ To upload a CSS file to your site in Commerce, follow these steps.
 
 ## Preview a CSS override file
 
-To preview a CSS override file before you make it active on your live site, follow these steps.
+To preview a CSS override file before you make it active on your live site, follow these steps:
 
 1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to preview.
 1. Next to the CSS file name, select **Preview site**.
@@ -68,14 +68,14 @@ After you've previewed and approved the CSS override file, you can activate it o
 > [!NOTE]
 > Only one CSS override file can be active on your site at a time. If you activate a new override file, the previous override file is deactivated. Therefore, make sure that all required overrides are present in a single CSS override file.
 
-To activate a CSS override file, follow these steps.
+To activate a CSS override file, follow these steps:
 
 1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to activate.
 1. Under the CSS file name, select **Activate**. The override file immediately becomes active on your live site.
 
 ## Deactivate a CSS override file on your live site
 
-To deactivate a CSS override file on your site, follow these steps.
+To deactivate a CSS override file on your site, follow these steps:
 
 1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to deactivate.
 1. Under the CSS file name, select **Deactivate**. The override file immediately becomes inactive on your live site.

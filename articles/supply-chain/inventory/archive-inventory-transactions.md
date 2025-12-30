@@ -73,7 +73,7 @@ To allow inventory transactions consolidation without inventory closing, follow 
 
 ## Consolidate your inventory transactions
 
-To consolidate inventory transactions, follow these steps.
+To consolidate inventory transactions, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction consolidation**.
 

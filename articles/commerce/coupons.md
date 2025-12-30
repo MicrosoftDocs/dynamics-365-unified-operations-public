@@ -32,7 +32,7 @@ Each coupon can have multiple coupon codes and coupon bar codes, and each code c
 
 Before you can set up a coupon, you must set up the coupon bar code and two coupon number sequences.
 
-To set up a coupon in Commerce headquarters, follow these steps.
+To set up a coupon in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Inventory management \> Bar codes and labels \> Mask characters**.
 1. Select **Add** to create a mask character of the **Coupon code** type. In the **Character** field, you can select any unused character.

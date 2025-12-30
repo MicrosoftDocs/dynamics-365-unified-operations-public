@@ -27,7 +27,7 @@ Before you can generate and print the **ATS** report, the following prerequisite
 
 ## Configure the master field lists
 
-To configure the master field lists, follow these steps.
+To configure the master field lists, follow these steps:
 
 1. Complete **Master Field List 4** with the required items code and description from **table 10** (export type) of the ATS Fiscal documentation.
 1. Complete **Master Field List 5** with the desired options from **table 7.1** (export tax regime type) of the ATS Fiscal documentation.
@@ -103,7 +103,7 @@ Lookups and conditions are designed so that you can select the combination of do
 
 ## Generate the ATS report
 
-To generate the **ATS** report, follow these steps.
+To generate the **ATS** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **ATS**.

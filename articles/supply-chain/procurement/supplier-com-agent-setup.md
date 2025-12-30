@@ -88,7 +88,7 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
 
 ### Create the required connections
 
-To create the required connections, follow these steps.
+To create the required connections, follow these steps:
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com) and sign in as an environment administrator user.
 1. Use the **Environment** drop-down list in the page header to select the environment associated with your finance and operations apps.
@@ -159,7 +159,7 @@ To enable the email analysis and delivery features of the Supplier Communication
 > [!IMPORTANT]
 > Only the owner of a private mailbox can create an agent configuration and review agent results related to it. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
 
-To set up a private mailbox, follow these steps.
+To set up a private mailbox, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user with the system administrator security role. (Although users without an administrator role can enable synchronization for their own mailboxes, administrator approval might be required.)
 1. Select the environment that you want to set up.
@@ -171,7 +171,7 @@ To set up a private mailbox, follow these steps.
 
 After you set up a private mailbox, the user who owns it must update the personalization settings to specify that all emails should be tracked.
 
-To enable tracking of all emails for a private mailbox that you own, follow these steps.
+To enable tracking of all emails for a private mailbox that you own, follow these steps:
 
 1. Go to the URL of your environment.
 1. Select the **Settings** button (gear symbol) in the upper right, then select **Personalization Settings**.
@@ -231,7 +231,7 @@ After you enable the Supplier Communications Agent in a sandbox environment, we 
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 
-When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This limitation means that when you're testing the system and want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps.
+When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This limitation means that when you're testing the system and want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
@@ -244,7 +244,7 @@ When you use the [review and apply purchase order changes received in vendor ema
 
 This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
 
-To use the sample PowerShell script, follow these steps.
+To use the sample PowerShell script, follow these steps:
 
 1. Copy the script, and save it as a `.ps1` file.
 

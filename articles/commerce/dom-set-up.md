@@ -24,14 +24,14 @@ This article describes how to set up distributed order management (DOM) function
 
 ## Enable the DOM configuration key
 
-To enable the DOM configuration key, follow these steps.
+To enable the DOM configuration key, follow these steps:
 
 1. In Commerce headquarters, go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, expand the **Retail** node, and then select the **Distributed Order Management** checkbox.
 
 ## Enable Azure Maps
 
-To enable Azure Maps, follow these steps.
+To enable Azure Maps, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 2. In the left navigation pane, select **Azure Maps**.
@@ -45,7 +45,7 @@ For information on how to obtain a key and privacy notice, see [Manage Azure Map
 
 ## Configure DOM parameters
 
-To configure DOM parameters, follow these steps.
+To configure DOM parameters, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 1. On the **General** tab, set the following values:

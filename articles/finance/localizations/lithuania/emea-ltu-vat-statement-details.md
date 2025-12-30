@@ -59,7 +59,7 @@ Here is an example that show how you can use sales tax reporting codes to genera
 
 ## Configure the electronic reporting model and format for the report
 
-To configure the electronic reporting model and format for the report, follow these steps.
+To configure the electronic reporting model and format for the report, follow these steps:
 
 1. To review or change the VAT statement configuration, on the **Reporting configurations** page, select **VAT declaration model**. 
 1. Select **Designer** to review or change the model.

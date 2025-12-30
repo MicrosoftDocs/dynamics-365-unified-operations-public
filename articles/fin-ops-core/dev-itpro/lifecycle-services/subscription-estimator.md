@@ -38,7 +38,7 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 ## Edit the estimate for multiple implementation projects
 
-To edit the estimate for multiple implementation projects, follow these steps.
+To edit the estimate for multiple implementation projects, follow these steps:
 
 1. Open the Subscription estimator tool for each implementation project.
 2. Edit the active subscription estimate to apply the license allocation for each project. To edit a subscription estimate in the Subscription estimator tool, select it, and then select **Edit estimate**.

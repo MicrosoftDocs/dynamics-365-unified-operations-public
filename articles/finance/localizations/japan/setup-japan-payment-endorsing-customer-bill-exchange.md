@@ -25,7 +25,7 @@ The following procedures use the demo data company JPMF.
 
 ## Set up a posting profile for endorsing bills of exchange
 
-To set up a posting profile for endorsing bills of exchange, follow these steps.
+To set up a posting profile for endorsing bills of exchange, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Customer posting profiles**.
 1. Select **New**.
@@ -37,7 +37,7 @@ To set up a posting profile for endorsing bills of exchange, follow these steps.
 
 ## Set up bills of exchange information in accounts receivable parameters
 
-To set up bills of exchange information in accounts receivable parameters, follow these steps.
+To set up bills of exchange information in accounts receivable parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Select the **Ledger and sales tax** FastTab.

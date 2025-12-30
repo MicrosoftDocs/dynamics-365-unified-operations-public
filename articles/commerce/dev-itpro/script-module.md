@@ -45,7 +45,7 @@ If content security policy (CSP) is enabled, external scripts might not run. To 
 
 ## Add a script module to a template
 
-To add a script module to a template, follow these steps.
+To add a script module to a template, follow these steps:
 
 1. In Commerce site builder for your site, select **Templates**.
 1. Select a template, and then select **Edit**.

@@ -120,14 +120,14 @@ Out of the box, variables are provided with the specific feature setup to suppor
 
 ### Configure vendor data
 
-During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps.
+During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
 1. On the **LATAM** FastTab, in the **Country identification number** field, enter a valid identification number of the country for the vendor. This number is used to identify the vendor during import, by matching it to the value of the **DTE\\Documento\\Encabezado\\RUTEmisor** element in the import XML file.
 
 ### Configure products
 
-During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps.
+During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select a product, and then, on the **Purchase** menu, in the **Related information** section, select **External item description**.
@@ -143,7 +143,7 @@ During the import process, products are identified by their external description
 
 ## Import vendor electronic invoices and send application responses
 
-To run the import vendor electronic invoices, follow these steps.
+To run the import vendor electronic invoices, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 1. In the **Receive electronic documents** dialog box, specify the parameters as required.
@@ -166,7 +166,7 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 
 After the imported vendor electronic invoice is reviewed on the **Pending vendor invoices** page (**Accounts payable** \> **Invoices** \> **Pending vendor invoices**), an application response can be saved and submitted. The application response indicates either acceptance or rejection of the invoice. If the invoice is either accepted with discrepancies or rejected, the response includes comments. If the invoice is rejected, the response also includes the reason for the rejection.
 
-To fill in the application response, follow these steps.
+To fill in the application response, follow these steps:
 
 1. Open the **Pending vendor invoices** page in edit mode for the desired invoice.
 1. On the Action Pane, select **Review**.

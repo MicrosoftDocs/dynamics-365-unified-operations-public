@@ -273,7 +273,7 @@ To use this feature, your system must meet the following requirements:
 
 ### Configure the large-volume option
 
-To configure this feature, follow these steps.
+To configure this feature, follow these steps:
 
 1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Parameters**.
 1. In the **Inventory value report storage** field group, set the **Number of items per bundle** field to the number of items that you want to process in one bundle when generating large-volume reports. For example, if you often deal with reports that cover 800,000 items, a bundle size of 30,000 might be appropriate.
@@ -288,7 +288,7 @@ When you generate a report, you can choose whether to use standard-volume proces
 > [!IMPORTANT]
 > You should only use the large-volume option when generating reports for a significantly large number of items (for example, 50,000 or more) because it takes longer to run than the standard-volume option.
 
-To generate a large-volume historical inventory value report, follow these steps.
+To generate a large-volume historical inventory value report, follow these steps:
 
 1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory value report storage**.
 1. On the Action Pane, select **New**.

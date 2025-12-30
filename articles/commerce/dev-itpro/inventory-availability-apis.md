@@ -360,7 +360,7 @@ The returned values can be shown on your e-commerce site, or they can be used to
 
 Other APIs that are available in Commerce can also directly access Commerce headquarters to fetch on-hand quantities for products. However, we don't recommend that you use them in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your Commerce headquarters servers. For channel-side calculation, the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs can provide a more accurate estimate of a product's availability by considering the transactions that have been created in the channels but that aren't yet known to Commerce headquarters.
 
-To define how product quantity should be returned in the API output, follow these steps.
+To define how product quantity should be returned in the API output, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 1. On the **Inventory** tab, on the **Inventory availability APIs for e-Commerce** FastTab, in the **Quantity in API output** field, select one of the following options:

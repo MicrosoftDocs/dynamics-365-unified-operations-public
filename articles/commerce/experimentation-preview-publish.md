@@ -24,7 +24,7 @@ This article describes how to preview and publish your experiment in Dynamics 36
 ## Preview your experiment variations
 You can preview your variations and continue editing them until they look the way you want them to.
 
-To preview your experiment variations in Commerce site builder, follow these steps.
+To preview your experiment variations in Commerce site builder, follow these steps:
 
 1. From the variations drop-down menu below the command bar, select the content you want to preview. 
 1. On the command bar, select **Preview**. A preview of what the content will look like when it's published is displayed.

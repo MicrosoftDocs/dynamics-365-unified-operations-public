@@ -53,7 +53,7 @@ You can set the following parameters when you generate a report.
 
 The reports are linked to the posting journals in the general ledger by number sequences. For each posting journal, select the journal type, either purchase, sales, other, or financial, or you can leave the field empty.
 
-To set up journal reports, follow these steps.
+To set up journal reports, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal setup** \> **Posting journals**.
 1. On the Action Pane, select **Create** to generate posting journals automatically. The posting journals are created to correspond with the number sequence codes. To create a posting journal manually, select **New**.
@@ -111,7 +111,7 @@ This report is typically used by accountants, accounting managers, clerks, accou
 
 The following example procedure shows how you can set up posting journals and generate and print the posting journals reports. This example uses the FRRT legal entity.
 
-To run through the example, follow these steps.
+To run through the example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organization**> **Legal entities**, and select the **FRRT** legal entity.
 1. On the **Address** FastTab, select **Edit**.

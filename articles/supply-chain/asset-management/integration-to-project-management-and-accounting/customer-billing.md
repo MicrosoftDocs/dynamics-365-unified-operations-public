@@ -177,7 +177,7 @@ To use the credit limit feature, your system must meet the following requirement
 
 ### Configure the credit limit check
 
-To configure the credit limit check, follow these steps.
+To configure the credit limit check, follow these steps:
 
 1. Go to **Asset Management** \> **Setup** \> **Asset management parameters**.
 1. Open the **Work orders** tab.
@@ -189,7 +189,7 @@ To configure the credit limit check, follow these steps.
 
 ### Set customer credit limits
 
-To set the credit limit for a customer, follow these steps.
+To set the credit limit for a customer, follow these steps:
 
 1. Go to **Credit and collections** \> **Customers** \> **All customers**.
 1. Select and open a customer record (if you're following the examples provided previously, you could choose *US-013* (*Pelican Wholesales*)).

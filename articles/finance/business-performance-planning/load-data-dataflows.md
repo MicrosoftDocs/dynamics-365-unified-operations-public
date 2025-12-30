@@ -33,7 +33,7 @@ Dataflows can populate dimensions and cubes in Business performance planning. Af
 
 ## Populate dimensions and cubes
 
-To use dataflows to populate dimension or cube values, follow these steps.
+To use dataflows to populate dimension or cube values, follow these steps:
 
 1. In Power Apps, create the dimension or cube in Business performance planning before you create the dataflow. Make a note of the table name for the cube or dimension. Here are some examples:
 
@@ -58,7 +58,7 @@ A dataflow can be used to load data only if the dimension or cube has already be
 
 This example shows how to create a dataflow when you're loading fact data into a cube.
 
-To create the cube in Business performance planning dimensions, follow these steps.
+To create the cube in Business performance planning dimensions, follow these steps:
 
 1. In the **Cube** list, select **New cube**.
 2. Enter a name for the cube.

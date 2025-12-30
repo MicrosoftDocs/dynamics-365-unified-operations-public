@@ -30,7 +30,7 @@ Before you can generate and print the report, the following prerequisites must b
 
 Lookups and conditions are designed so that you can select the combination of document classes IDs and sales tax codes that is used in transactions.
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
 1. Select **BO Sales VAT Book**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group select **Setup**.
@@ -49,7 +49,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run the BO Sales VAT Book format
 
-To generate the **BO Sales VAT Book** report, follow these steps.
+To generate the **BO Sales VAT Book** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

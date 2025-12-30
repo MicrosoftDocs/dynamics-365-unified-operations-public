@@ -52,7 +52,7 @@ You must have the following permissions to set up the Microsoft Graph integratio
 
 #### One-time registration process
 
-To create an app, follow these steps.
+To create an app, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) by using an Azure tenant admin account.
 

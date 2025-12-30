@@ -28,7 +28,7 @@ The following procedures must be completed up before you start work with the Dec
 
 ### Set up a legal entity
 
-To set up a legal entity, follow these steps.
+To set up a legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
 1. On the **Addresses** FastTab, create an address.
@@ -38,14 +38,14 @@ To set up a legal entity, follow these steps.
 
 ### Set up contact information
 
-To set up contact information, follow these steps.
+To set up contact information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Contact information** tab, add lines for **Phone** and **Email**, and set them to **Primary**.
 
 ### Set up tax exempt numbers
 
-To set up tax exempt numbers, follow these steps.
+To set up tax exempt numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt numbers**.
 1. For each tax exempt number, create a record on the page, and specify the following information:
@@ -55,7 +55,7 @@ To set up tax exempt numbers, follow these steps.
 
 ## Set up the Declaration 347 report
 
-To set up the Declaration 347 report, follow these steps.
+To set up the Declaration 347 report, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following VAT declaration formats:
     - Declaration 347 export format (ES)
@@ -70,7 +70,7 @@ To set up the Declaration 347 report, follow these steps.
 
 ## Generate the Declaration 347 report
 
-To generate the Declaration 347 report, follow these steps.
+To generate the Declaration 347 report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Declaration 347**.
 1. On the **Declaration 347** form, select **Generate**.
@@ -159,7 +159,7 @@ To generate the Declaration 347 report, follow these steps.
 
 You can create a new Declaration 347 for the same period and use the delta report to view lines that differ from the lines of the original Declaration 347.
 
-To generate the delta report, follow these steps.
+To generate the delta report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Declaration 347**, and select **Generate** to generate the report that has corrections.
 1. In the **Declaration 347** dialog, set the **Replacement declaration** option to **Yes** to identify this declaration as a correction of the original declaration.
@@ -174,7 +174,7 @@ Consider an example in the DEMF legal entity.
 
 ### Set up example
 
-To set up an example in the DEMF legal entity, follow these steps.
+To set up an example in the DEMF legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
 1. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **B80833593**.
@@ -188,7 +188,7 @@ To set up an example in the DEMF legal entity, follow these steps.
 
 ### Customer transactions
 
-To set up customer transactions, follow these steps.
+To set up customer transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select customer **DE-010**.
 1. On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396364B**.
@@ -222,7 +222,7 @@ To set up customer transactions, follow these steps.
 
 ### Vendor transactions
 
-To set up vendor transactions, follow these steps.
+To set up vendor transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**, and select vendor **DE-001**.
 1. On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **03566243B**.
@@ -245,7 +245,7 @@ To set up vendor transactions, follow these steps.
 
 ### Generate the Declaration 347 and delta reports
 
-To generate the Declaration 347 and delta reports, follow these steps.
+To generate the Declaration 347 and delta reports, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Declaration 347**, select **Generate**, and fill the following fields with the following values:
     - **Fiscal year** – 2020

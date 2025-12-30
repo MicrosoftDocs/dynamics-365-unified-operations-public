@@ -23,7 +23,7 @@ Retailers who use Dynamics 365 Commerce along with other Microsoft cloud service
 
 ## Configure POS authentication method
 
-To configure the POS authentication method in Commerce headquarters, follow these steps.
+To configure the POS authentication method in Commerce headquarters, follow these steps:
 	
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and select a functionality profile to change.
 1. In the **POS staff logon** section of the **Functions** FastTab, select a desired authentication method option from the **Logon authentication method** drop-down list.
@@ -44,7 +44,7 @@ To configure the POS authentication method in Commerce headquarters, follow thes
 
 To use Microsoft Entra ID as the POS authentication method, you must associate Microsoft Entra accounts with POS users in Commerce headquarters. 
 
-To associate Microsoft Entra accounts with POS users in Commerce headquarters, follow these steps.
+To associate Microsoft Entra accounts with POS users in Commerce headquarters, follow these steps:
 	
 1. Go to **Retail and Commerce \> Employees \> Workers** and open a worker record.
 1. On the Action Pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**. 

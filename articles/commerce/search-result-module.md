@@ -56,7 +56,7 @@ The search results module supports the [quick view module](quick-view-module.md)
 
 ## Add a search results module to a category page
 
-To add a search results module to a category page in site builder, follow these steps.
+To add a search results module to a category page in site builder, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, enter the name **Search results**, and then select **OK**.

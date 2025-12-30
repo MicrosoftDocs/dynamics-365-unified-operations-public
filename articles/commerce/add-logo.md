@@ -33,7 +33,7 @@ Before you can add a logo to all the pages of your site, you must complete these
 
 ## Add a logo to a header fragment
 
-To add a logo to the header fragment for your site, follow these steps.
+To add a logo to the header fragment for your site, follow these steps:
 
 1. In the navigation pane on the left, select **Fragments**.
 1. Select the header fragment that you created, and then select **Edit**.

@@ -52,7 +52,7 @@ As a prerequisite to using channel-side inventory calculation, a periodic snapsh
 - If inventory was sold for a product in a store through a cash-and-carry or asynchronous customer order sale in the point of sale (POS) application, Commerce headquarters won't immediately have information about the related inventory issue transaction for the sale. It will have information about the inventory that's sold for these types of store sales only after the P-job uploads the related transaction from the store's channel database into Commerce headquarters, and after the related sales orders are created through statement posting or the trickle-feed posting processes. The process of creating the orders in Commerce headquarters creates the related inventory transactions.
 - For e-commerce channel orders, Commerce headquarters has information about the inventory transactions only after the transactions are sent to Commerce headquarters via the P-job and the order synchronization process is completed.
 
-To take a snapshot of inventory in Commerce headquarters, follow these steps.
+To take a snapshot of inventory in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Product availability**.
 1. Select **OK** to run the **Product availability** job. You can also schedule this job to run in batch mode.
@@ -61,7 +61,7 @@ To take a snapshot of inventory in Commerce headquarters, follow these steps.
 
 After the **Product availability** job has finished running, the data that was captured must be pushed to the channel databases. The latest Commerce headquarters inventory snapshot can then be considered in the channel-side calculation of estimated on-hand inventory.
 
-To sync snapshot data from Commerce headquarters to your channel databases, follow these steps.
+To sync snapshot data from Commerce headquarters to your channel databases, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run the **1130** (**Product availability**) job to sync the snapshot data that the **Product availability** job created from Commerce headquarters to your channel databases.

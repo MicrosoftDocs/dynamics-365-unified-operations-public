@@ -375,7 +375,7 @@ After you enter your demand forecast and/or supply forecast, you can include the
 
 ### Set up a master plan to include an inventory forecast
 
-To set up a master plan so that it includes an inventory forecast, follow these steps.
+To set up a master plan so that it includes an inventory forecast, follow these steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select an existing plan, or create a new plan.
@@ -396,7 +396,7 @@ To set up a master plan so that it includes an inventory forecast, follow these 
 
 ### Run a master plan that includes an inventory forecast
 
-To run a master plan that includes an inventory forecast, follow these steps.
+To run a master plan that includes an inventory forecast, follow these steps:
 
 1. Go to **Master planning \> Workspaces \> Master planning**.
 1. In the **Master plan** field, enter or select the master plan that you set up in the previous procedure.

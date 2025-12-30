@@ -255,7 +255,7 @@ The following settings are included in the fiscal connector configuration that i
 
 #### Set up the development environment
 
-To set up a development environment to test and extend the sample, follow these steps.
+To set up a development environment to test and extend the sample, follow these steps:
 
 1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the fiscal printer integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln**, and build it.

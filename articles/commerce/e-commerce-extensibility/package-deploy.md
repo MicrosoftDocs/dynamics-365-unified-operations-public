@@ -36,7 +36,7 @@ c:\repos\D365.Commerce.Fabrikam>yarn msdyn365 pack
 
 ## Upload a package by using LCS
 
-To upload a site configuration package by using LCS, follow these steps.
+To upload a site configuration package by using LCS, follow these steps:
 
 1. Go to <https://lcs.dynamics.com>. (Alternatively, if you're using the test integration LCS server, go to <https://lcs.tie.dynamics.com>). You should see a sign-in page that resembles the following illustration.
 
@@ -82,7 +82,7 @@ If the processing was successfully completed, a check mark appears in the **Vali
 
 ## Deploy a package
 
-To deploy a package, follow these steps.
+To deploy a package, follow these steps:
 
 1. In LCS, go to the project dashboard, and select the environment that you want to deploy a package to. For example, in the following illustration, the **RushE2E-TIE-SB3** preproduction environment is selected.
 

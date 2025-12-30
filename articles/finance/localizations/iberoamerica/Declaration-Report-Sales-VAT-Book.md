@@ -43,7 +43,7 @@ Before you can generate and print the report, the following prerequisites must b
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the **LTM Tax Report** group, select the **Tax report- declaration Sales VAT Venezuela** format.
@@ -74,7 +74,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the Declaration Reports Sales VAT Book
 
-To generate the Declaration Reports Sales VAT Book, follow these steps.
+To generate the Declaration Reports Sales VAT Book, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select **Tax report- declaration Sales VAT Venezuela**.

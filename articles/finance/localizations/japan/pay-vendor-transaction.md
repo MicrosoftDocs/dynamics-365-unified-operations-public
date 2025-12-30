@@ -23,7 +23,7 @@ The following procedure uses the demo data company JPMF.
 
 Before you can complete this procedure, you must have at least one bill of exchange with a status of "Drawn".
 
-To endorse a customer bill of exchange to a vendor, follow these steps.
+To endorse a customer bill of exchange to a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Bill of exchange \> Endorse bills of exchange**.
 1. In the list, find and select a bill of exchange that has a status of "Drawn".  

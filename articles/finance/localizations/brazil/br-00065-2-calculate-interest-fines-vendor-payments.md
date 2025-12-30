@@ -22,7 +22,7 @@ You can apply interest and fines on vendor payments that are delayed. The intere
 
 The following procedure uses the BRMF demo company.
 
-To apply interest and fines on vendor payments that are delayed, follow these steps.
+To apply interest and fines on vendor payments that are delayed, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the list, find and select the desired record.

@@ -21,7 +21,7 @@ This article explains how to generate the Japan consumption tax report in Micros
 
 The following procedure uses the demo data company JPMF.
 
-To generate the Japan consumption tax report, follow these steps.
+To generate the Japan consumption tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Japanese sales tax report**.
 1. In the **From date** field, enter a date.

@@ -26,7 +26,7 @@ During planning, if there's actual demand, the system pegs it against a planned 
 
 ## Set the safety stock level for an item
 
-To define safety stock for an item at a specific location, follow these steps.
+To define safety stock for an item at a specific location, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the relevant product in the grid.

@@ -23,7 +23,7 @@ The following procedures use the JPMF demo company data.
 
 ## Fixed asset depreciation
 
-To calculate and record fixed asset depreciation, follow these steps.
+To calculate and record fixed asset depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets journal**.
 1. Select **New**.
@@ -41,7 +41,7 @@ To calculate and record fixed asset depreciation, follow these steps.
 
 ## Over and under depreciation settlements
 
-To calculate and record over and under depreciation settlements, follow these steps.
+To calculate and record over and under depreciation settlements, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Settlement of over depreciation or under depreciation amount**.
 1. Select **New**.

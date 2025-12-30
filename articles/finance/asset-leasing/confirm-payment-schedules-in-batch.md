@@ -20,7 +20,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 This article explains how to confirm multiple payment schedules in a batch. Payment schedules are confirmed either on a lease-to-lease basis or through the confirmation batch process. A journal entry can be posted only against a lease that has a confirmed payment schedule. Confirmation of the payment schedule serves as a final approval of the financial information for the lease. All future changes to the financial information for the lease, such as payments and the lease term, constitute a lease adjustment and should be processed in that way.
 
-To confirm multiple payment schedules, follow these steps.
+To confirm multiple payment schedules, follow these steps:
 
 1. Go to **Asset leasing \> Periodic \> Confirmation batch**.
 2. On the **Confirmation batch** page, select **Confirmation batch**.

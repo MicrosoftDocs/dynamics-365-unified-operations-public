@@ -52,7 +52,7 @@ The interactive feature module can support various layouts and styles, based on 
 
 ## Add an interactive feature module to a new page
 
-To add an interactive feature module to a new page and set the required properties in Commerce site builder, follow these steps.
+To add an interactive feature module to a new page and set the required properties in Commerce site builder, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

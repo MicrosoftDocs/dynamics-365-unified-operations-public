@@ -24,7 +24,7 @@ By default, when you first create a site, it uses a theme that is named **Fabrik
 
 ## Select the site theme
 
-To select the theme that is applied to your site, follow these steps.
+To select the theme that is applied to your site, follow these steps:
 
 1. In Commerce site builder, go to your site.
 1. Go to **Site settings** \> **Extensions**.

@@ -42,7 +42,7 @@ Before you can generate and print the report, the following prerequisites must b
 
 ## Print the General Ledger report for Venezuela
 
-To print the **General Ledger** report for Venezuela, follow these steps.
+To print the **General Ledger** report for Venezuela, follow these steps:
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **LATAM** \> **General Ledger**.
 1. In the **Report ID** field, select the corresponding report/service ID.

@@ -29,7 +29,7 @@ Before you can generate and print the report, the following prerequisites must b
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in sales transactions.
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. Open the **Electronic Reporting** workspace, and select **Report Configurations**.
 1. Select the **CO Ventas** format, and then, on the Action Pane, on the **Configuration** tab, in the **Application specific parameters** group, select **Setup**.
@@ -51,7 +51,7 @@ To set up application-specific parameters, follow these steps.
 
 ## Run the Columbian sales VAT book
 
-To generate the sales VAT book report, follow these steps.
+To generate the sales VAT book report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **CO Ventas**.

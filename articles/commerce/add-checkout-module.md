@@ -90,7 +90,7 @@ Most of the checkout information, such as the shipping address and shipping meth
 
 ## Add a checkout module to a page and set the required properties
 
-To add a checkout module to a new page and set the required properties, follow these steps.
+To add a checkout module to a new page and set the required properties, follow these steps:
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **Select fragment** dialog box, select the **Checkout** module.

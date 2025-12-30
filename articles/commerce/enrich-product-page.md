@@ -31,7 +31,7 @@ The following video provides an overview of PDP and category page customization 
 
 ## Customize a PDP
 
-To customize a PDP in site builder, follow these steps.
+To customize a PDP in site builder, follow these steps:
 
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Products**.

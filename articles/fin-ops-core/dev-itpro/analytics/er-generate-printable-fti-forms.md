@@ -63,7 +63,7 @@ In your application instance, you must have the ER format configuration that wil
 For information about how to configure ER formats, see [ER Create a format configuration (November 2016)](tasks/er-format-configuration-2016-11.md). For information about how to design ER formats to generate reports in OpenXML format, see [ER Design a configuration for generating reports in OPENXML format (November 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Configure print management
-To generate FTI forms by using the ER framework, you can assign ER formats in the same way that you assign SSRS reports. To associate the ER format with all Accounts receivable FTIs, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup** \> **General** \> **Print management** \> **Free text invoice** \> **Original**. To associate the ER format with a specific customer or invoice, follow these steps.
+To generate FTI forms by using the ER framework, you can assign ER formats in the same way that you assign SSRS reports. To associate the ER format with all Accounts receivable FTIs, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup** \> **General** \> **Print management** \> **Free text invoice** \> **Original**. To associate the ER format with a specific customer or invoice, follow these steps:
 
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Select the FTI to associate the ER format with, and open the **Print management setup** page.

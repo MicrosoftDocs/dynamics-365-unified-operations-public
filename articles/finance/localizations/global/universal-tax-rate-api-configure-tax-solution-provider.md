@@ -19,7 +19,7 @@ ms.dyn365.ops.version:
 
 This article explains how to configure a tax solution provider for Tax calculation. After you complete the steps according to the implementation guidance that your tax rate provider provides, select your tax feature setup in Tax calculation parameters for the corresponding legal entity.
 
-To configure a tax solution provider, follow these steps.
+To configure a tax solution provider, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
 1. On the **General** tab, in the **Tax solution provider** section, select **Enable tax solution provider**.

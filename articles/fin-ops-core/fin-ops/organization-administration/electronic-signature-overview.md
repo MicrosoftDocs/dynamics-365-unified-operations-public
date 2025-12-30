@@ -95,7 +95,7 @@ Occasionally, you might want a user to sign for another user's changes. For exam
 > [!NOTE]
 > When one user signs for another user's change, the signature must be provided at the workstation of the user who made the change. The user can't save the change until the signature is provided.
 
-To designate approvers, follow these steps.
+To designate approvers, follow these steps:
 
 1. On the **Options** page, on the **Accounts** tab, select **Designate approver**.
 1. In the **Approver user ID** field, select the ID of the user who must sign for another user's changes.

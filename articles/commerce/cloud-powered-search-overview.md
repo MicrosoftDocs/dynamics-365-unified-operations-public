@@ -32,7 +32,7 @@ The Commerce search experience has advanced capabilities to help retailers achie
 
 Cloud-powered search capabilities are available starting in Commerce version 10.0.8.
 
-To configure cloud-powered search capabilities, follow these steps.
+To configure cloud-powered search capabilities, follow these steps:
 
 1. In Commerce headquarters, go to **Commerce Parameters \> Configuration Parameters**.
 1. Under **Set up the configuration parameters**, check that an entry exists for **ProductSearch.UseAzureSearch**, and that its value is set to **true**, as shown in the following example image.

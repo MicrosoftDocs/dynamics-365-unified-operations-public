@@ -50,7 +50,7 @@ You can force a refresh of a virtual entity's metadata when you expect that the 
 
 ## Disable virtual entities
 
-Virtual entities for finance and operations apps are in a managed solution and can't be deleted directly from the maker portal. To disable a virtual entity and remove the virtual entity metadata from the Dataverse environment, follow these steps.
+Virtual entities for finance and operations apps are in a managed solution and can't be deleted directly from the maker portal. To disable a virtual entity and remove the virtual entity metadata from the Dataverse environment, follow these steps:
 
 1. Find and open the entity by following steps 1 through 8 in the [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities) section of this article.
 1. Clear the **Visible** checkbox.

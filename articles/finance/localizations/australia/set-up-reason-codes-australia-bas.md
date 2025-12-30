@@ -23,7 +23,7 @@ The following procedures walk you through how to set up an additional BAS reconc
 
 ## Set up an additional BAS reconciliation account
 
-To set up an additional BAS reconciliation account, follow these steps.
+To set up an additional BAS reconciliation account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> Additional BAS reconciliation account**.
 1. Select **New**.
@@ -32,7 +32,7 @@ To set up an additional BAS reconciliation account, follow these steps.
 
 ## Set up BAS PAYG reason codes
 
-To set up BAS PAYG reason codes, follow these steps.
+To set up BAS PAYG reason codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> BAS PAYG reason codes**.
 1. Select **New**.
@@ -42,7 +42,7 @@ To set up BAS PAYG reason codes, follow these steps.
 
 ## BAS fringe benefit reason codes
 
-To set up BAS fringe benefit reason codes, follow these steps.
+To set up BAS fringe benefit reason codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> BAS fringe benefit reason codes**.
 1. Select **New**.

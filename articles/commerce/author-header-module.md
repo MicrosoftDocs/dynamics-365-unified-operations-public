@@ -63,7 +63,7 @@ In the Adventure Works theme, the header module supports the **Mobile Logo** pro
 
 ## Create a header fragment for a page
 
-To create a header fragment, follow these steps.
+To create a header fragment, follow these steps:
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **Select a fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.

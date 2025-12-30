@@ -34,7 +34,7 @@ Sites that have only one channel, or sites that have multiple channels that can'
 
 Cross-channel sharing is enabled at the site level. This operation is one-way. In other words, after cross-channel sharing is enabled, it can't be disabled.
 
-To enable cross-channel sharing in Commerce site builder, follow these steps.
+To enable cross-channel sharing in Commerce site builder, follow these steps:
 
 1. Go to **Site settings \> Features**.
 1. Set the option for the **Cross Channel** feature to **On**.
@@ -55,7 +55,7 @@ You can create and use cross-channel content in multiple ways. For example, you 
 
 ### Create a cross-channel fragment
 
-To create a cross-channel fragment in Commerce site builder, follow these steps.
+To create a cross-channel fragment in Commerce site builder, follow these steps:
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **New fragment** dialog box, select the **Promo banner** module, and then, under **Fragment name**, enter a name (for example, **Cross-channel banner**). Then select **OK**.
@@ -69,7 +69,7 @@ This cross-channel fragment can be used on cross-channel or channel-specific pag
 
 Cross-channel pages can be used on any channel of your site. Therefore, you can create a shared content page one time and make any subsequent updates in a single place. For example, a cross-channel **Terms and conditions** page that has the URL `/toc` can be shared among all the channels of a site. If the base URLs for the site channels are `www.fabrikam.com/brand1` and `www.fabrikam.com/brand2`, the same cross-channel, shared **Terms and conditions** page will be available from both site channel URLs, at `www.fabrikam.com/brand1/toc` and `www.fabrikam.com/brand2/toc`, respectively. If the **Terms and conditions** page must be updated later, you have to update only the single, shared page.
 
-To create a cross-channel page in Commerce site builder that uses cross-channel content, follow these steps.
+To create a cross-channel page in Commerce site builder that uses cross-channel content, follow these steps:
 
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Choose a template** dialog box, select a template, such as **Marketing**.
@@ -84,7 +84,7 @@ To create a cross-channel page in Commerce site builder that uses cross-channel 
 
 By using cross-channel content on channel-specific pages, you can create a shared content fragment one time and then use it on channel-specific pages. This "single sourcing" is useful for shared content such as terms and conditions, payment terms, or contact information.
 
-To create a channel-specific page in Commerce site builder that uses cross-channel content, follow these steps.
+To create a channel-specific page in Commerce site builder that uses cross-channel content, follow these steps:
 
 1. From within a specific channel, such as **Fabrikam extended online store**, go to **Pages**, and then select **New** to create a new page.
 1. In the **Choose a template** dialog box, select a template, such as **Marketing**.
@@ -99,7 +99,7 @@ To create a channel-specific page in Commerce site builder that uses cross-chann
 
 Cross-channel sharing supports overrides of cross-channel content. For example, all but one of your site channels share the same piece of content. That one site channel requires different content. To implement the different content for it, you override the cross-channel content with channel-specific content by creating a channel-specific version of the cross-channel page.
 
-To create a channel-specific version of a cross-channel page in Commerce site builder, follow these steps.
+To create a channel-specific version of a cross-channel page in Commerce site builder, follow these steps:
 
 1. In the **Channel** field in the upper right, select **Cross Channel Online Store**.
 1. Open the cross-channel page that you created earlier.

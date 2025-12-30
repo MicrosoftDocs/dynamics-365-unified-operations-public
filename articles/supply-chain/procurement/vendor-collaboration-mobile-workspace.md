@@ -64,7 +64,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 <tr class="odd">
 <td>KB 3216943 must be implemented if you&#39;re using Platform update 3.</td>
 <td>System administrator</td>
-<td>KB 3216943 is a binary update that is required if you&#39;re using Platform update 3. To implement this KB, the system administrator must follow these steps.
+<td>KB 3216943 is a binary update that is required if you&#39;re using Platform update 3. To implement this KB, the system administrator must follow these steps:
 <ol>
 <li>Download KB 3216943 from Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Install the binary update, which is delivered as a deployable package. For information about how to apply a deployable package, see <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package</a>.</li>
@@ -73,7 +73,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 <tr class="even">
 <td>KB 4013633 must be implemented.</td>
 <td>System administrator</td>
-<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
+<td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps:
 <ol>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from LCS</a>.</li>
 <li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>

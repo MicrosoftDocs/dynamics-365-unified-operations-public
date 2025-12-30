@@ -40,7 +40,7 @@ Emails can be customized by mode of delivery for the following notification type
 
 For this procedure, the assumption is that you've already created your new, custom email templates and added them to the **Organization email templates** page. For information about how to create and upload email templates, see [Create email templates for transactional events](email-templates-transactions.md).
 
-To configure email templates for specific modes of delivery in Commerce headquarters, follow these steps.
+To configure email templates for specific modes of delivery in Commerce headquarters, follow these steps:
 
 1. Go to **Commerce email notification profile**.
 1. Under **Retail event notification settings**, select an existing notification type.

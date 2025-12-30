@@ -22,7 +22,7 @@ This article explains how to manually create deferrals and generate them by usin
 
 You can use the **Deferrals** page to manually create a deferral. You must specify the deferrals model for a deferral. The status of a deferral that is manually created is updated to **Scheduled**. You can't manually modify the status.
 
-To manually create deferrals, follow these steps.
+To manually create deferrals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals** \> **Deferrals**.
 1. On the Action Pane, select **New** to create a deferral.
@@ -62,7 +62,7 @@ To manually create deferrals, follow these steps.
 
 To automatically generate deferrals, you must set up the sequences of calculation and counters for the deferrals groups.
 
-To generate deferrals by using a periodic task, follow these steps.
+To generate deferrals by using a periodic task, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Deferrals** \> **Deferrals creating**.
 

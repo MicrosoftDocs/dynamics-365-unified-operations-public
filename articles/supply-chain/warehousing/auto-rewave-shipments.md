@@ -90,7 +90,7 @@ The rewaving process runs as a batch job that you must schedule to run as often 
 
 ### Schedule the cleanup job
 
-The cleanup job removes failed and old shipment lines from the *Failed shipment lines* table. You must schedule it to run as often as is required for your system. To set it up, follow these steps.
+The cleanup job removes failed and old shipment lines from the *Failed shipment lines* table. You must schedule it to run as often as is required for your system. To set it up, follow these steps:
 
 1. Go to **Warehouse Management** \> **Outbound Waves** \> **Wave processing removed shipment cleanup**.
 1. On the **Parameters** FastTab, set the following fields:
@@ -115,7 +115,7 @@ To monitor shipment lines that must be rewaved, go to **Warehouse Management** \
 
 ### Monitor batch job status
 
-To monitor the status of all batch jobs, adjust their schedules, and fix any issues that arise, follow these steps.
+To monitor the status of all batch jobs, adjust their schedules, and fix any issues that arise, follow these steps:
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 1. Use the **Filter** field to find the relevant jobs, based on the value that you entered in the **Task description** field when you set up the job. (On this page, the field is named **Job description**.) The default description for this type of job is *Auto add shipments to wave*.

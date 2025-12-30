@@ -36,7 +36,7 @@ For corrections and revisions, we recommend that you create factures on the basi
 
 ### Set up Accounts receivable parameters for corrective and revision factures
 
-To set up Accounts receivable parameters for corrective and revision factures, follow these steps.
+To set up Accounts receivable parameters for corrective and revision factures, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Ledger and sales tax** tab, on the **General** FastTab, set the **Control item dimension for correction lines** option to **Yes**.
@@ -61,7 +61,7 @@ To set up Accounts receivable parameters for corrective and revision factures, f
 
 ### Set up Accounts payable parameters for corrective and revision factures
 
-To set up Accounts payable parameters for corrective and revision factures, follow these steps.
+To set up Accounts payable parameters for corrective and revision factures, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Control item dimension for correction lines** option to **Yes**.
@@ -72,7 +72,7 @@ To set up Accounts payable parameters for corrective and revision factures, foll
 
 ### Set up General ledger parameters
 
-To set up General ledger parameters, follow these steps.
+To set up General ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, on the **Tax options** FastTab, in the **Facture operation code delimiter** field, enter the symbol that should be used as a delimiter for facture operation codes.
@@ -91,7 +91,7 @@ To set up General ledger parameters, follow these steps.
 
 Operation codes are regulated by law and should be shown in the facture journal.
 
-To create facture operation codes, follow these steps.
+To create facture operation codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Facture operation codes**.
 1. Select **New** to create an operation code.
@@ -115,7 +115,7 @@ Corrective and revision factures can be created on the basis of documents (invoi
 
 #### Create a corrective or revision facture for a purchase order
 
-To create a corrective or revision facture for a purchase order, follow these steps.
+To create a corrective or revision facture for a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Create a purchase order.
@@ -133,14 +133,14 @@ To create a corrective or revision facture for a purchase order, follow these st
 
 #### Create a corrective or revision facture for a vendor invoice
 
-To create a corrective or revision facture for a vendor invoice, follow these steps.
+To create a corrective or revision facture for a vendor invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Invoices** \> **Open vendor invoices**.
 1. Create a vendor invoice, and specify all the fields that are required in order to update the corrective or revision facture (see the steps in the previous section, Create a corrective or revision facture for a purchase order).
 
 #### Create a corrective or revision facture for a sales order
 
-To create a corrective or revision facture for a sales order, follow these steps.
+To create a corrective or revision facture for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Create a sales order.
@@ -154,7 +154,7 @@ To create a corrective or revision facture for a sales order, follow these steps
 
 #### Create a corrective or revision facture for a free text invoice
 
-To create a corrective or revision facture for a free text invoice, follow these steps.
+To create a corrective or revision facture for a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Create a free text invoice.
@@ -180,7 +180,7 @@ Correction or revision amounts are distributed to the lines of the original fact
 
 The following example shows the process of automatic correction distribution for an original sales facture that contains three lines.
 
-To walk through the example, follow these steps.
+To walk through the example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Create a free text invoice that has three lines. For the first two lines, set the item sales tax group to **VAT18**. For the third, set it to **VAT10**.
@@ -219,7 +219,7 @@ To walk through the example, follow these steps.
 
 Use the **Revise header** button to correct the header fields of the facture.
 
-To revise a facture header on the Facture journal page, follow these steps.
+To revise a facture header on the Facture journal page, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 
@@ -234,7 +234,7 @@ To revise a facture header on the Facture journal page, follow these steps.
 
 ## Review a history of corrective or revision factures in the Facture journal
 
-To review a history of corrective or revision factures in the Facture journal, follow these steps.
+To review a history of corrective or revision factures in the Facture journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 
@@ -256,7 +256,7 @@ To review a history of corrective or revision factures in the Facture journal, f
 
 ## Print a corrective or revision facture
 
-To print a corrective or revision facture, follow these steps.
+To print a corrective or revision facture, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
   

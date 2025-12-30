@@ -130,7 +130,7 @@ Employees who submit a new leave request can select different leave types to con
 
 By default, leave balances are shown for leave types. However, organizations might want the leave balance for specific leave types to be hidden from workers. In this case, they can use the **Hide leave balance** option to hide leave balances. Other details, such as the leave grant and accrual details, are also hidden for a specific leave type.
 
-To hide the leave balance for a leave type, follow these steps.
+To hide the leave balance for a leave type, follow these steps:
 
 1. On the **Leave and absence** page, on the **Links** tab, under **Setup**, select **Leave and absence types**.
 2. Select a leave and absence type in the list.
@@ -148,7 +148,7 @@ After the **Hide leave balance** option is enabled for a leave type, employees o
 
 Leave types have closed days that are excluded. In other words, weekends and holidays aren't included in calculations of leave request amounts. However, organizations might want to include weekends and holidays for specific leave types. The **Include weekends and holidays** option helps organization distinguish whether calendar days or working days must be considered for specific leave types.
 
-To include weekends and holidays for a leave type, follow these steps.
+To include weekends and holidays for a leave type, follow these steps:
 
 1. On the **Leave and absence** page, on the **Links** tab, under **Setup**, select **Leave and absence types**.
 2. Select a leave and absence type in the list.

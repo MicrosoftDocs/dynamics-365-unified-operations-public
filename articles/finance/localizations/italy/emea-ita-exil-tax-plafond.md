@@ -68,7 +68,7 @@ This article describes how to complete these tasks:
 
 Before you start creating a new tax plafond, verify that there's a sales tax settlement period for the period in which you plan to create tax plafond and intent letters. Also, verify that you can post tax documents with reference to the intent letters.
 
-To register a new tax plafond, follow these steps.
+To register a new tax plafond, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Tax plafond**.
 1. On the Action Pane, select **Functions** \> **Create new**, and enter information about the tax plafond.
@@ -94,7 +94,7 @@ To review posted tax transactions for an existing tax plafond, on the **Tax plaf
 
 Before you start creating a new intent letter, verify that there's a sales tax settlement period for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to intent letters.
 
-To create a new intent letter for a vendor, follow these steps.
+To create a new intent letter for a vendor, follow these steps:
 
 1. Go to **Accounts payable** > **Intent letters** > **Intent letters**.
 1. On the Action Pane, select **New**, and enter the following information about the intent letter.
@@ -144,7 +144,7 @@ You can also review the intent letters for a specific vendor from vendor master 
 
 ## Generate the telematic model for intent letters
 
-To generate the telematic model for an intent letter, follow these steps.
+To generate the telematic model for an intent letter, follow these steps:
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Intent letters – Telematic model**.
 1. On the Action Pane, select **New** to create a new record for telematic model reporting. The model ID is automatically filled in according to the number sequence that you specify for the **Intent letter telematic model ID** reference on the **General ledger parameters** page.

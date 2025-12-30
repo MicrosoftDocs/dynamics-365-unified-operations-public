@@ -89,7 +89,7 @@ To undo the changes that you introduced in the draft version, select the highest
 
 When you design a new version of an ER configuration, you can define its [dependency](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) on other software components. This step is considered a prerequisite for controlling the download of this configuration's version from an ER repository or an external XML file, and for any further use of the version. When you try to import a new version of an ER configuration, the system uses the configured prerequisites to control whether the version can be imported.
 
-In some cases, you might require that the system ignore the configured prerequisites when you import new versions of ER configurations. To have the system ignore the prerequisites during import, follow these steps.
+In some cases, you might require that the system ignore the configured prerequisites when you import new versions of ER configurations. To have the system ignore the prerequisites during import, follow these steps:
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.

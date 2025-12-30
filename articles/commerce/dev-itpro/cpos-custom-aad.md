@@ -26,7 +26,7 @@ By default, Store Commerce for web points to a registered first-party Microsoft 
 
 ## Set up a custom Retail Server app in Microsoft Entra ID
 
-To create and configure a custom Retail Server app in Microsoft Entra ID, follow these steps.
+To create and configure a custom Retail Server app in Microsoft Entra ID, follow these steps:
 
 1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) by using any Microsoft Entra user account. The user account doesn't have to have administrator permissions.
 1. Select **Applications**.
@@ -54,7 +54,7 @@ To create and configure a custom Retail Server app in Microsoft Entra ID, follow
 > [!IMPORTANT]
 > If you're upgrading an existing custom Store Commerce for web Microsoft Entra app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21](#upgrade-an-existing-custom-store-commerce-for-web-microsoft-entra-app-created-before-commerce-version-10021).
 
-To create and configure a custom app for Store Commerce for web in Microsoft Entra ID, follow these steps.
+To create and configure a custom app for Store Commerce for web in Microsoft Entra ID, follow these steps:
 
 1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com) by using any Microsoft Entra user account. The user account doesn't have to have administrator permissions.
 1. Select **Applications**.
@@ -78,7 +78,7 @@ To create and configure a custom app for Store Commerce for web in Microsoft Ent
 
 ### Upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21
 
-To upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21, follow these steps. 
+To upgrade an existing custom Store Commerce for web Microsoft Entra app created before Commerce version 10.0.21, follow these steps: 
 
 1. Open your custom Store Commerce for web Microsoft Entra app in the Azure portal.
 1. Select the **Authentication** tab.

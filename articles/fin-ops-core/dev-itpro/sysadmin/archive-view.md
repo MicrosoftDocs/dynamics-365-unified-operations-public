@@ -25,7 +25,7 @@ Confirm that Fabric is enabled. If it isn't enabled, go to [https://app.fabric.m
 
 ### View archived data in the Dataverse-managed data lake
 
-To view the archived data in Dataverse, follow these steps.
+To view the archived data in Dataverse, follow these steps:
 
 1. After the archival job is completed, go to the Power Apps maker portal.
 1. Select **Azure synapse** \> **Microsoft one Lake**.

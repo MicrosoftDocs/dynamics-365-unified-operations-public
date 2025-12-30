@@ -27,7 +27,7 @@ Before you can use this feature, your system must meet the following requirement
 
 ## Set up the vendor bank account workflow
 
-To set up the vendor bank approval workflow feature, follow these steps.
+To set up the vendor bank approval workflow feature, follow these steps:
 
 1. Go to **Accounts payable \> Setup \> Accounts payable parameters**.
 1. On the **General** tab, on the **Vendor bank account approval** FastTab, set the following fields:
@@ -49,7 +49,7 @@ To set up the vendor bank approval workflow feature, follow these steps.
 
 ## Add a new vendor bank account and submit it for approval
 
-To use the web client to add a new vendor bank account and submit it for approval, follow these steps.
+To use the web client to add a new vendor bank account and submit it for approval, follow these steps:
 
 1. Go to **Accounts payable \> Vendors \> All vendors**.
 1. Select the vendor that you want to set up a bank account for.
@@ -61,7 +61,7 @@ To use the web client to add a new vendor bank account and submit it for approva
 
 ## Update an existing vendor bank account record and submit it for approval
 
-To use the web client to edit an existing vendor bank account and submit it for approval, follow these steps.
+To use the web client to edit an existing vendor bank account and submit it for approval, follow these steps:
 
 1. Go to **Accounts payable \> Vendors \> All vendors**.
 1. Select the vendor that you want to update bank information for.

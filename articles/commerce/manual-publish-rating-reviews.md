@@ -25,7 +25,7 @@ However, some businesses might prefer that moderators manually review and approv
 
 ## Enable the Require moderator for ratings and reviews feature in Commerce site builder
 
-To enable the **Require moderator for ratings and reviews** feature in Commerce site builder, follow these steps.
+To enable the **Require moderator for ratings and reviews** feature in Commerce site builder, follow these steps:
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Set the **Require moderator for ratings and reviews** option to **On**.
@@ -39,7 +39,7 @@ To enable the **Require moderator for ratings and reviews** feature in Commerce 
 
 When you enable the **Require moderator for ratings and reviews** feature, a moderator must manually review and publish ratings and reviews to make them appear on your e-commerce site.
 
-To review and publish ratings and reviews in Commerce site builder, follow these steps.
+To review and publish ratings and reviews in Commerce site builder, follow these steps:
 
 1. Go to **Reviews \> Moderation**.
 1. In the grid, if the **Status** field for a row is set to **Unpublished**, the rating and review in that row isn't published yet. To view only unpublished ratings and reviews, select **Status: Needs review** in the status filter above the grid.

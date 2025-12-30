@@ -55,7 +55,7 @@ Use the **User license summary** page in the **User security governance** worksp
 
 :::image type="content" source="../sysadmin/media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="../sysadmin/media/security-governance-license-usage-summary-overview.png":::
 
-To access the **User License Summary** page, follow these steps.
+To access the **User License Summary** page, follow these steps:
 
 1. Sign in to finance and operations apps.
 1. Go to **System administration > Security > Security Governance > License usage summary**.

@@ -22,7 +22,7 @@ This article describes how to create a Microsoft Dynamics 365 Commerce Store Com
 > [!NOTE]
 > You can find the full code samples in the [Store Commerce Extension samples GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.InStore).
 
-To create the extension installer for Store Commerce extension, follow these steps.
+To create the extension installer for Store Commerce extension, follow these steps:
 
 1. In Microsoft Visual Studio 2022, create a new .NET console application project named "StoreCommerce.ExtInstaller". For **Framework**, select **.NET 7.0 (Standard Term Support)**.
 1. In the **.proj** file, change the target framework to the .NET Framework version 4.7.2, as shown in the following XML example.

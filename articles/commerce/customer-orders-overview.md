@@ -96,7 +96,7 @@ Ensure that you configure the POS [screen layout](./pos-screen-layouts.md) to su
 
 ### Create a customer order for products that are shipped to the customer
 
-To create a customer order for products that are shipped to the customer, follow these steps.
+To create a customer order for products that are shipped to the customer, follow these steps:
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
@@ -109,7 +109,7 @@ To create a customer order for products that are shipped to the customer, follow
 
 ### Create a customer order for products that the customer will pick up
 
-To create a customer order for products that the customer will pick up, follow these steps.
+To create a customer order for products that the customer will pick up, follow these steps:
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
@@ -158,7 +158,7 @@ Call center users can also disable the **Price locked** property for order lines
 
 ### Cancel a customer order
 
-To cancel a customer order, follow these steps.
+To cancel a customer order, follow these steps:
 
 1. Select **Recall order**.
 2. Use **Search** to enter filters to find the order, and then select **Apply**.
@@ -182,7 +182,7 @@ Customer orders can be created in POS in either synchronous mode or asynchronous
 
 ### Enable customer orders to be created in asynchronous mode
 
-To enable customer orders to be created in asynchronous mode, follow these steps.
+To enable customer orders to be created in asynchronous mode, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS profiles \> Functionality profiles**. 
 1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
@@ -207,7 +207,7 @@ The experience of canceling an asynchronous order is similar to that of cancelin
 
 To ensure that the system automatically cancels the original order after it's created in headquarters, you must run the following batch jobs at predefined intervals.
 
-To create and schedule the batch jobs that ensure that **Enable asynchronous order cancellation** feature works correctly, follow these steps.
+To create and schedule the batch jobs that ensure that **Enable asynchronous order cancellation** feature works correctly, follow these steps:
 
 1. Go to **System administration \> Inquiries \> Batch jobs**.
 1. On the **Batch job** page, create the following two batch jobs:

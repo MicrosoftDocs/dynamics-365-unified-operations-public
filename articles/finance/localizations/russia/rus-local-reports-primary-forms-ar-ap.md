@@ -49,7 +49,7 @@ The form **TORG-12** invoice is a document that is the basis for the transfer of
 
 You can use the **Accounts receivable parameters** page to set up number sequences for sales invoices and corrective invoices that are posted in the **M-15** and **TORG-12** formats. For all the selected number sequences, the **Continuous** option should be set to **Yes**.
 
-To set up number sequences for invoices, follow these steps.
+To set up number sequences for invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the following references.
@@ -95,7 +95,7 @@ To set up number sequences for invoices, follow these steps.
 
 You can generate the *M-15* and *TORG-12* reports by using the **Posting invoice** page.
 
-To generate an M-15 or TORG-12 report for a sales order, follow these steps.
+To generate an M-15 or TORG-12 report for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Create a sales order.
@@ -120,7 +120,7 @@ For product receipts, the reporting forms are forms **M-4** and **M-7** when you
 
 Before you work with product receipts, you must set up number sequences for them. The number sequence that you select for a product receipt is assigned when the document is posted. When the product receipt is generated, it's shown in the **Document number** field. For all the selected number sequences, the **Continuous** option should be set to **Yes**.
 
-To set up number sequences for product receipts, follow these steps.
+To set up number sequences for product receipts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. On the **Number sequences** tab, in the **Number sequence** field, select a number sequence for the following references.
@@ -135,7 +135,7 @@ To set up number sequences for product receipts, follow these steps.
 
 ### Post a product receipt for a purchase order
 
-To generate and print the reports for a purchase order, follow these steps.
+To generate and print the reports for a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. On the Action Pane, select **New** to create a purchase order.
@@ -195,7 +195,7 @@ When you post a corrected product receipt, the original product receipt is cance
 
 You can retain the receipt statement document type and the number of the original product receipt for the corrected product receipt.
 
-To correct a product receipt that has already been posted for a purchase order, follow these steps.
+To correct a product receipt that has already been posted for a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**. Select a purchase order that a product receipt is posted for, and then, on the Action Pane, on the **Receive** tab, in the **Journals** group, select **Product receipt**. Select a product receipt, and then select **Correct**.
 
@@ -220,7 +220,7 @@ An act of adjustment is a document that is used for financial analysis. It conta
 
 You can generate acts of adjustment for vendors and customers. Use the **Act of adjustment** page to generate an **Act of adjustment** report.
 
-To generate an act of adjustment, follow these steps.
+To generate an act of adjustment, follow these steps:
 
 1. To generate an act of adjustment for a vendor, go to **Accounts payable** \> **Inquiries and reports** \> **Act of adjustment**. Then, in the **Vendor account** field, select the vendor account.
 
@@ -260,7 +260,7 @@ You can generate and print a transportation invoice and a job ticket for a sales
 
 ### Set up Accounts receivable parameters
 
-To set up **Accounts receivable parameters**, follow these steps.
+To set up **Accounts receivable parameters**, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Shipments** tab, on the **Bill of lading** FastTab, in the **Bill of lading** field, select one of the following options to specify the circumstances that a bill of lading is created in when a shipment is dispatched:
@@ -277,7 +277,7 @@ To set up **Accounts receivable parameters**, follow these steps.
 
 The *1-T bill of lading* report calculates weight in tons, so you must set up units for tons.
 
-To set up fixed unit parameters, follow these steps.
+To set up fixed unit parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. In the grid, select the unit for tons.
@@ -290,7 +290,7 @@ To set up fixed unit parameters, follow these steps.
 
 You can generate and print a 1-T bill of lading report for a sales order. You can generate and print a transportation invoice and a job ticket from the sales order, packing slip, and transfer order pages.
 
-To set up information for a bill of lading if you're working with the sales order, follow these steps.
+To set up information for a bill of lading if you're working with the sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Create an invoice.
@@ -315,7 +315,7 @@ To set up information for a bill of lading if you're working with the transfer o
     - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
 1. In the **Carrier** field, select the registration number of the carrier. This field is available only if you selected **Customer** or **Vendor** in the **Carrier type** field.
 
-To generate and print a **1-T bill of lading** report, transportation invoice, or job ticket, follow these steps.
+To generate and print a **1-T bill of lading** report, transportation invoice, or job ticket, follow these steps:
 
 1. On the sales order, packing slip, or transfer order page, in the **License card** section, in the **Registration number**, **Series**, and **Number** fields, enter information for the license card.
 1. In the **Transportation** section, in the **Carrier type** field, select the type of carrier:
@@ -337,13 +337,13 @@ To generate and print a **1-T bill of lading** report, transportation invoice, o
 
 You can review the **1-T bill of lading** report, transportation invoice, or job ticket from the **Bill of lading** page.
 
-To access the **Bill of lading** page if you're working with the sales order, follow these steps.
+To access the **Bill of lading** page if you're working with the sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the posted sales order, and then, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 1. On the Invoice journal page, on the Action Pane, in the **Ship** group, select **Bill of lading**.
 
-To access the **Bill of lading** page if you're working with the packing slip, follow these steps.
+To access the **Bill of lading** page if you're working with the packing slip, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the posted sales order, and then, on the Action Pane, on the **Pick and pack** tab, in the **Journals** group, select **Packing slip**.
@@ -375,7 +375,7 @@ The following illustration shows an example of a **1-T bill of lading** report.
 
 The **Customer acceptance** report confirms the transfer of the result of the work and the absence of claims from the customer. 
 
-To print the **Customer acceptance** report, follow these steps.
+To print the **Customer acceptance** report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **Open customer invoices**.
 1. Select an open customer invoice, and then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Print** \> **Range**.
@@ -398,7 +398,7 @@ To print the **Customer acceptance** report, follow these steps.
 
 The Counting act (INV-17) report shows the results of the inventory settlements with counterparties. The report contains information about accounts receivable and accounts payable debt. Use the **Accounts payable counting** page to generate the Inventory act report.
 
-To generate the Inventory act report, follow these steps.
+To generate the Inventory act report, follow these steps:
 
 1. In Dynamics 365 Finance, set up the **Accounting receivable inventory act** register. Learn more in [Tax registers](rus-bad-debts.md#tax-registers).
 1. Go to **Accounts payable** \> **Periodic** **tasks** \> **Accounts payable counting**.

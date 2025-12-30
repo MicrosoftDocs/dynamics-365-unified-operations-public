@@ -25,7 +25,7 @@ The procedure uses the demo data company JPMF.
 
 ## Impairment recognition test
 
-To run the impairment recognition test and calculate the impairment amount on individual assets, follow these steps.
+To run the impairment recognition test and calculate the impairment amount on individual assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Impairment on individual assets \> Impairment recognition test**.
 1. Select **Query**.

@@ -22,7 +22,7 @@ You can make electronic payments by transferring files between a legal entity an
 
 The following procedure uses the BRMF demo company.
 
-To make electronic payments by transferring files between a legal entity and a bank, follow these steps.
+To make electronic payments by transferring files between a legal entity and a bank, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Purchase ledger \> Payments \> Payment transfers**.
 1. In the list, mark the selected row.

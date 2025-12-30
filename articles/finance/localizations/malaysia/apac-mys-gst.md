@@ -104,7 +104,7 @@ Additionally, a configurable **GST report by configuration** report is provided 
 - Total supply and output tax
 - Consolidated monthly record of total inputs and outputs of all group members for the taxable period
 
-These reports have different formats, but they all display monetary amounts (transaction amount and GST amount) for specific transactions. To meet these requirements, you can configure the report content and then generate various reports according to your report configurations. To run the report, follow these steps.
+These reports have different formats, but they all display monetary amounts (transaction amount and GST amount) for specific transactions. To meet these requirements, you can configure the report content and then generate various reports according to your report configurations. To run the report, follow these steps:
 
 1. Define sales tax reporting codes.
 1. Map sales tax reporting codes to sales tax codes.

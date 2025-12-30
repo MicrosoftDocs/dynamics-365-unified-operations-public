@@ -39,7 +39,7 @@ You can find general information about how to set up a sales tax authority in [S
 
 To generate a SAF Accounting Books Income Tax - JPK_KR_PD in the required format for the appropriate tax authority, you must set up the **Authority identification** for sales tax authorities.
 
-To set up the **Authority identification** for sales tax authorities, follow these steps.
+To set up the **Authority identification** for sales tax authorities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 2. In the **Authority identification** field, specify the code of the tax office competent for the taxpayer's registered office. This code will be reported in the **\<KodUrzedu\>** field of the SAF Accounting Books Income Tax - JPK_KR_PD.
@@ -64,7 +64,7 @@ Import the most recent versions of the configurations. The version description u
 
 The process of setting up the Electronic messaging functionality for JPK_KR_PD reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-To import a package of data entities that includes a predefined electronic message setup, follow these steps.
+To import a package of data entities that includes a predefined electronic message setup, follow these steps:
 
 1. Go to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2).
 2. In the Shared asset library, select the **Data package** asset type.
@@ -83,7 +83,7 @@ For more information about Data management, see [Data management](../../../fin-o
 
 You must now import data from the **PL JPK_KR_PD EM setup.zip** file into the selected company.
 
-To import data into the selected company, follow these steps.
+To import data into the selected company, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Data management** workspace.
 2. Select **Import**.
@@ -162,7 +162,7 @@ To automatically calculate the RPD amounts, you must set up a **Financial dimens
 
 When **Financial dimension set** for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report is set up, you can establish the rules of automatic collection of the RPD amounts. 
 
-To establish the rules of automatic collection of the RPD amounts, follow these steps.
+To establish the rules of automatic collection of the RPD amounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**.
 2. Select **Obliczanie pól dodatkowych RPD** executable class and on the Action Pane, select **Parameters**.
@@ -183,7 +183,7 @@ When your organization uses non-standard chart of accounts (CoA) in Poland and t
 
 Application-specific parameters of the **JPK_KR_PD** format in ER facilitate the mapping of your financial data to the required values that are defined by the **JPK_KR_PD** schema.
 
-To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps.
+To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps:
 
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
@@ -285,7 +285,7 @@ Users of a legal entity with primary address in Poland can review their JPK_KR_P
 > - The RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing).
 > - Microsoft recommends using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
 
-To set up the ER format that's run by the **SAF Accounting Books Income Tax** menu item, follow these steps.
+To set up the ER format that's run by the **SAF Accounting Books Income Tax** menu item, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the **JPK_KR_PD Excel (PL)** ER format.

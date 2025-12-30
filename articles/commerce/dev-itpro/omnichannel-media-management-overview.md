@@ -38,7 +38,7 @@ When the new media assignments are staged, you can use feature switches to updat
 > [!NOTE]
 > Always run and validate the following steps first in your dev and/or user acceptance testing (UAT) environment before upgrading to a production environment.
 
-To configure omnichannel media management features in your Commerce environments, follow these steps.
+To configure omnichannel media management features in your Commerce environments, follow these steps:
 
 1. In site builder, go to **Tenant settings \> Features**, set the **Omnichannel content** feature flag to **On**, and then select **Save and publish**. These actions make all omnichannel content authoring controls visible in site builder.
 1. In Commerce headquarters, go to **Workspaces \> Feature management**.

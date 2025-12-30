@@ -30,7 +30,7 @@ Commerce transactions might fail validation for various reasons. A bug in the in
 
 In Commerce version 10.0.5, the only transactions that can be edited are cash and carry transactions, such as sales and returns. Customer orders and online orders can't be edited. In Commerce version 10.0.6 and later, cash management transactions can also be edited.
 
-To edit transactions in Commerce headquarters, follow these steps.
+To edit transactions in Commerce headquarters, follow these steps:
 
 1. Install the [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
 1. In Commerce headquarters, open the **Store financials** workspace. The **Transaction validation failures** tile provides a prefiltered view of the transaction page that failed one or more validation rules.
@@ -60,7 +60,7 @@ To edit transactions in Commerce headquarters, follow these steps.
 
 Commerce version 10.0.6 and later support the option to bulk-edit transactions at the statement level.
 
-To bulk-edit transactions that are linked to a statement in Commerce headquarters, follow these steps.
+To bulk-edit transactions that are linked to a statement in Commerce headquarters, follow these steps:
 
 1. Open the **Statements** page, and select the statement that contains the transactions that must be edited.
 1. Select the **Open in Microsoft Office** button.
@@ -95,7 +95,7 @@ To bulk-edit transactions that are linked to a statement in Commerce headquarter
 
 Commerce version 10.0.10 and later support the option to bulk-edit transactions that fail validation but aren't linked to a statement.
 
-To bulk-edit transactions that aren't linked to a statement in Commerce headquarters, follow these steps.
+To bulk-edit transactions that aren't linked to a statement in Commerce headquarters, follow these steps:
 
 1. Open the **All stores** page, and select the store that transactions must be edited for.
 1. Select the **Open in Microsoft Office** button, and then select **Edit cash and carry transactions**.

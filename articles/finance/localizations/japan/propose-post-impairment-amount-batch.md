@@ -21,7 +21,7 @@ This article explains how to propose and post the impairment amount by batch for
 
 Before you can complete the following procedure, you must have an impairment test confirmed and saved. The procedure uses the JPMF demo company data.
 
-To propose and post the impairment amount by batch, follow these steps.
+To propose and post the impairment amount by batch, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Impairment proposal**.
 1. In the **Name of journal** field, select the drop-down button to open the lookup.

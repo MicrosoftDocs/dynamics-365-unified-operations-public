@@ -45,7 +45,7 @@ Before you use the **Automatic clear bridged transactions through advanced bank 
 
 ## Create a bridging payment on a payment journal
 
-To create and process a bridging posting, follow these steps.
+To create and process a bridging posting, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments** \> **Customer payment journal**.
 1. Select **New** to create a journal.
@@ -55,7 +55,7 @@ To create and process a bridging posting, follow these steps.
 
 ## Clear a bridging payment on the reconciliation worksheet
 
-To clear a bridging payment on the reconciliation worksheet, follow these steps.
+To clear a bridging payment on the reconciliation worksheet, follow these steps:
 
 1. Complete the bank statement reconciliation. For more information, see [Reconcile bank statements by using advanced bank reconciliation](../cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md).
 1. On the reconciliation worksheet, select **Mark as reconciled**.
@@ -66,7 +66,7 @@ After the reconciliation worksheet is marked as reconciled, clearing journals ar
 
 If clearing journals have posting errors during bank reconciliation, you can fix the posting failures and then rerun clearing bridging payments.
 
-To fix posting failures, follow these steps.
+To fix posting failures, follow these steps:
 
 1. Go to **Cash and bank management** \> **Periodic tasks** \> **Clear bridged transactions**.
 1. Select the **Reconciliation ID** value of the reconciliation that contains the clearing payments that you want to clear.

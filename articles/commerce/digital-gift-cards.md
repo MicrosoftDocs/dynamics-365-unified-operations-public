@@ -65,7 +65,7 @@ You must add product images for digital gift card products to the Commerce site 
 
 If a digital gift card is configured to allow for a custom amount, this behavior must also be enabled in the [buy box module](add-buy-box.md) that is used on your site's PDPs. The buy box module supports module configuration to allow for custom amounts. You can also define the minimum and maximum amounts that are allowed for custom amounts.
 
-To configure a custom amount for a digital gift card in Commerce site builder, follow these steps.
+To configure a custom amount for a digital gift card in Commerce site builder, follow these steps:
 
 1. Go to the buy box module that is used on your site's PDPs. This buy box module might be implemented in a fragment, in a template, or on a page.
 1. Select **Edit**.

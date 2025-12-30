@@ -36,7 +36,7 @@ In the **Feature management** workspace, you must enable the **Billing schedules
 
 ## Create a billing schedule from a project
 
-To create a billing schedule directly from a time-and-material project, follow these steps.
+To create a billing schedule directly from a time-and-material project, follow these steps:
 
 1. On the **All projects** page, select a project.
 2. On the Action Pane, on the **Manage** tab, select **New**, and then select **Subscription billing \> Billing schedule**. The **Create billing schedule** page is opened and includes the standard options for creating a billing schedule.
@@ -63,7 +63,7 @@ When a billing schedule line that has a project is invoiced by using the **Gener
 
 ## Viewing a billing schedule from a project or a project contract
 
-To view a billing schedule, follow these steps.
+To view a billing schedule, follow these steps:
 
 1. On the **All projects** page, select a project.
 2. Select **Manage**, select **Related information**, and then select **Subscription billing \> Billing schedules**. The **All billing schedules** page shows billing schedules that have been created for the selected project.

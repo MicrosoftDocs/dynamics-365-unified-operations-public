@@ -21,7 +21,7 @@ You can attach fiscal document texts to a sales order, purchase order, or free t
 
 The following procedure uses the BRMF demo company.
 
-To set up fiscal document source texts, follow these steps.
+To set up fiscal document source texts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Document management \> Document types**.
 1. Select **New**.

@@ -34,7 +34,7 @@ When you upload a video, the following information can be specified.
 
 ## Upload a video
 
-To upload a video in site builder, follow these steps.
+To upload a video in site builder, follow these steps:
 
 1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Media Items**.

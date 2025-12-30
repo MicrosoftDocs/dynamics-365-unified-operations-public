@@ -23,7 +23,7 @@ You can easily include QR codes and bar codes in transactional emails to help sp
 
 ## Add a QR code or bar code to a transactional email
 
-To insert a QR code or bar code into a transactional email that is sent as part of an e-commerce purchase, follow these steps.
+To insert a QR code or bar code into a transactional email that is sent as part of an e-commerce purchase, follow these steps:
 
 1. Open the source HTML for the transactional email template, and add an HTML **\<img\>** tag that points to your QR code or bar code service. Here is an example.
 
@@ -47,7 +47,7 @@ To insert a QR code or bar code into a transactional email that is sent as part 
 
 ## Add a QR code or bar code to a receipt email 
 
-To insert a QR code or bar code into a receipt email that can be sent after a purchase is made at the point of sale (POS), follow these steps.
+To insert a QR code or bar code into a receipt email that can be sent after a purchase is made at the point of sale (POS), follow these steps:
 
 1. Open the source HTML for the receipt email template, and add an HTML **\<img\>** tag that points to your QR code or bar code service. Here is an example below.
 

@@ -27,7 +27,7 @@ The procedure requires that the following sales tax codes are created for revers
 
 The procedure uses the demo company GBSI.
 
-To set up sales tax groups for reverse charge VAT, follow these steps.
+To set up sales tax groups for reverse charge VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
 1. In the list, find and select **RC-VAT**.  

@@ -56,7 +56,7 @@ Learn more about general information about which types of transactions are inclu
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 1. Transfer transactions in the usual way.
-1. Optional: To create correction files, follow these steps.
+1. Optional: To create correction files, follow these steps:
 
     1. For corrective lines, select the checkbox in the **Corrected** column.
     1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the **Correction** option to **Yes**.

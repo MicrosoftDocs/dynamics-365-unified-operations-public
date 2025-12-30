@@ -72,7 +72,7 @@ To create the OAuth credentials, you must register a new application in the Azur
 
 #### Register a new application in the Azure portal
 
-To register a new application in the Azure portal, follow these steps.
+To register a new application in the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) by using a work or school account.
 1. If your account gives you access to more than one tenant, select your account in the upper-right corner. Then set your portal session to the Microsoft Entra tenant that you want.
@@ -92,7 +92,7 @@ After the new application is registered, on the **Overview** page, copy the valu
 
 Next, you must create a client secret for the application. Go to the **Certificates & secrets** section, and then select **New client secret**. Provide a description and an expiration period for the secret. Ensure that you create a business process for rotating the secret, because payment notifications fail after the secret expires. Copy the secret value, and save it somewhere for later use.
 
-To create a new webhook, follow these steps.
+To create a new webhook, follow these steps:
 
 1. Go to the Adyen portal, and then go to the **Developers** section.
 1. Create a standard webhook.
@@ -123,7 +123,7 @@ To create a new webhook, follow these steps.
 
 ### Update Commerce headquarters with the HMAC and application client ID details to authenticate the payment notifications sent by Adyen
 
-To update the details to authenticate the payment notifications that Adyen sends, follow these steps.
+To update the details to authenticate the payment notifications that Adyen sends, follow these steps:
 
 1. In headquarters, go to **Commerce shared parameters**.
 1. In the **Payment notification** section, enter values for the following properties:
@@ -138,7 +138,7 @@ To update the details to authenticate the payment notifications that Adyen sends
 
 #### Test the connection to the payment notification service
 
-To test the connection, follow these steps.
+To test the connection, follow these steps:
 
 1. Go to the Adyen portal.
 1. Edit the webhook that you created earlier, and then select **Test configuration**. If the connection fails, review all the values that you entered when you created the webhook to validate that they're correct. If you make any changes (for example, if you change the keys), wait 20 minutes before you test the connection again. In this way, you ensure that caching doesn't affect the test. If the issue persists, contact Microsoft Support.
@@ -187,7 +187,7 @@ For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_St
 
 For test environments, you must set the **Gateway environment** property of the Adyen connector in the hardware profile to **Test**. For production environments, set the value of the **Gateway environment** property to **Live** (or a region-specific value), and set the **Optional Domain** property to the prefix value specified in the Adyen customer portal.
 
-To set up the Adyen connector in the hardware profile, follow these steps.
+To set up the Adyen connector in the hardware profile, follow these steps:
 
 1. Sign in to the live environment of the Adyen customer portal.
 1. In the left pane, under **Developers**, select **API URLs**.
@@ -234,7 +234,7 @@ Customers visiting a physical store often like the products on display, but need
 
 In addition to the generic pay by link setup described earlier in this article, the following additional steps are required to enable the pay later via payment link functionality.
 
-To enable the pay later via payment link functionality, follow these steps.
+To enable the pay later via payment link functionality, follow these steps:
 
 1. In Commerce headquarters, enable the **Enable asynchronous payments for sales orders** feature in the **Feature management** workspace. However, since this feature is a private preview feature, you must first contact Microsoft support to include this feature in your environment.
 1. To ensure that all the new tables are initialized, run the **Initialize commerce scheduler** job while keeping the **Delete existing configuration** and **Update subjobs only** configurations set to **No**.
@@ -275,7 +275,7 @@ The following example describes a typical end-to-end user experience for custome
 
 Call center users can manually check the payment status of an order. 
 
-To manually check the payment status of an order, follow these steps.
+To manually check the payment status of an order, follow these steps:
 
 1. In headquarters, go to the **All sales orders** form and open the sales order waiting for payment.
 1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, the payments against this link are either not yet processed or the customer hasn't yet paid.
@@ -297,7 +297,7 @@ To set up for pay by link for orders in call center, complete the setup steps de
 - The **Process asynchronous payments for sales orders** batch job is configured to check for payment status by running at the desired duration interval.
 - Automated emails are configured, if needed.
 
-To finish setting up pay by link for orders in call center, follow these steps.
+To finish setting up pay by link for orders in call center, follow these steps:
 
 1. Go to the call center channel and open the payment methods associated with the channel.
 1. Select the payment method defined to accept cards. The payment method's **Function** property should be set to **Card**, and it should be mapped to the **Pay card** operation.
@@ -324,7 +324,7 @@ The following example describes a typical end-to-end user experience for a call 
 
 Call center users can manually check the payment status of a call center order. 
 
-To manually check the payment status of a call center order, follow these steps.
+To manually check the payment status of a call center order, follow these steps:
 
 1. In headquarters, go to the **All sales orders** form and open the sales order waiting for payment.
 1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a form with the payment links associated with the order. If the payment link status is shown as **Active**, the payments against this link are either not yet processed or the customer hasn't yet paid.

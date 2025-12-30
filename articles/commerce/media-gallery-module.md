@@ -67,7 +67,7 @@ When the image source is derived from the page context, the product ID from the 
 
 ## Add a media gallery module to a page
 
-To add a media gallery module to a marketing page, follow these steps.
+To add a media gallery module to a marketing page, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.

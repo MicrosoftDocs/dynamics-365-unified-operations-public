@@ -64,7 +64,7 @@ The cart module retrieves product information by using Commerce Scale Unit APIs.
 
 ## Add a cart module to a page
 
-To add a cart module to a new page and set the required properties, follow these steps.
+To add a cart module to a new page and set the required properties, follow these steps:
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **Select fragment** dialog box, select the **Cart** module.
