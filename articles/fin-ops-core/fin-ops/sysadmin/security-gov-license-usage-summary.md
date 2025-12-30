@@ -69,13 +69,15 @@ Within this workspace, you'll find multiple tabs (or sections) that provide diff
 - **Duty Licenses**: Shows license requirements for individual duties (groupings of privileges), if you need to examine license impacts at the duty level. 
 - **Privilege Licenses**: Shows license requirements for individual privileges or menu items, for the most detailed analysis. 
 
-Each of these views helps you analyze license usage from a different angle. For most day-to-day checks, focus on the **User Licenses** and **Role Licenses** tabs. 
+Each of these views helps you analyze license usage from a different angle. 
+
+For most day-to-day checks, focus on the **User Licenses** and **Role Licenses** tabs. 
 
 ## Understanding the User License Summary
 
 :::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commcer licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
 
-In the User Licenses view, each row corresponds to a single user and displays the highest level of license that the user requires, given all the security roles assigned to them. Key columns in this view: 
+In the **User Licenses** view, each row corresponds to a user and displays the highest level of license that the user requires, given all the security roles assigned to them. Key columns in this view: 
 
 - **User** - The user's ID whose license requirements you are examining. 
 
@@ -83,7 +85,9 @@ In the User Licenses view, each row corresponds to a single user and displays th
 
 - **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than 1 means the user needs one or more additional attach licenses. For example, 2 would mean the user needs their base license plus one attach license, 3 would mean the user needs their base license plus two attach licenses. 
 
->[!Important] Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
+>[!Note] For more detailed analysis, select Open in Microsoft Office to download a detailed view in Excel.
+
+>[!Note] Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
 
 ### How to use the User License Summary view: 
 
