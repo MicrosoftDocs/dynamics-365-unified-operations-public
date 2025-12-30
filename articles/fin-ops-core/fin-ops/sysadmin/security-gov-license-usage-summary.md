@@ -60,7 +60,9 @@ ign in to your Dynamics 365 F&O environment with System Administrator rights.
 
 Go to **System administration > Security > Security Governance > License usage summary**. 
 
-The **User security governance** workspace will open, open the **License Usage Summary**. Within this workspace, you'll find multiple tabs (or sections) that provide different views on licensing data: 
+The **User security governance** workspace will open, open the **License Usage Summary**. 
+
+Within this workspace, you'll find multiple tabs (or sections) that provide different views on licensing data: 
 
 - **User Role Licenses**: User and the license(s) required based on their roles. 
 - **Role Licenses**: Security role and the minimum license required for the role, plus details on its permissions. 
