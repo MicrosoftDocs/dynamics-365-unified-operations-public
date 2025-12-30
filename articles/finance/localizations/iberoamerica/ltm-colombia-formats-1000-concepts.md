@@ -17,7 +17,11 @@ This article explains how to add more concepts to the lookups of the File format
 
 ## Prerequisites
 
-Before you add any new concepts to the 1000 file formats for Colombia, follow the steps in the article for the format you want:
+Before you add any new concepts to the 1000 file formats for Colombia, meet these prerequisites:
+
+- Set the legal entity address to a location in Colombia.
+- Enable the country-specific Latin American (LATAM) globalization feature for Colombia and the general LATAM feature.
+- Import these configurations from the Dataverse:
 
 | Element |                    Format name                    |
 |:-------:|:-------------------------------------------------:|
