@@ -23,7 +23,7 @@ The **Security Governance License Usage Summary** is a tool in Dynamics 365 Fina
 
 This helps your organization: 
 
-- **Confirm that security roles are configured for correct licenses** for the tasks users perform. 
+- **Confirm that security roles are configured for required licenses** for the tasks users perform. 
 - **Identify when a security role is too broad or high-level**, causing a user to need a more expensive license than expected. 
 - **Align security roles with internal controls and compliance** by revealing which permissions drive certain license requirements. 
 - **Plan and optimize license requirements** by providing a clear view of how security roles drive required licenses. 
