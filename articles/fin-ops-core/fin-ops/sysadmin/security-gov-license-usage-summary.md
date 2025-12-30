@@ -28,7 +28,9 @@ This helps your organization:
 - **Align security roles with internal controls and compliance** by revealing which permissions drive certain license requirements. 
 - **Plan and optimize license requirements** by providing a clear view of how security roles drive required licenses. 
 
-Additionally, if your organization has multiple Dynamics 365 Finance & Operations environments (such as multiple production instances), you can get a consolidated view of licensing across all environments in your tenant by using the **User License Consumption report** in the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)**. The License Usage Summary in the Security Governance workspace focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
+Additionally, if your organization has multiple Dynamics 365 Finance & Operations environments (such as multiple production instances), you can get a consolidated view of licensing across all environments in your tenant by using the **User License Consumption report** in the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)**. 
+
+**License Usage Summary** in the Security Governance workspace focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
 
 >[!Note]
 > The **License Usage Summary** is informational only. It does not assign licenses or change any user's access. It provides reporting on what licenses are required for the access each user and security role configuration. Ensure that users have the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**
