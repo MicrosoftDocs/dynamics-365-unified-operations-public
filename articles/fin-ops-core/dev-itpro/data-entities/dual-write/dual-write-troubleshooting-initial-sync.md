@@ -79,7 +79,7 @@ You might receive the following error message during initial synchronization:
 
 *(\[Forbidden\], The remote server returned an error: (403) Forbidden.), AX export encountered an error*
 
-To fix the issue, follow these steps.
+To fix the issue, follow these steps:
 
 1. Sign in to the finance and operations app.
 2. On the **Microsoft Entra applications** page, delete the **DtAppID** client, and then add it again.

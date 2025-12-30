@@ -66,7 +66,7 @@ For complete licensing details, see the [Dynamics 365 Licensing Guide](https://g
 
 ### <a name="license-state"></a>Update licensing information for a device
 
-The **Warehouse mobile devices** workspace lets you view information about each device that's connected to the system. It also lets you view and manage the device license status for each device. To update licensing information for a device, follow these steps.
+The **Warehouse mobile devices** workspace lets you view information about each device that's connected to the system. It also lets you view and manage the device license status for each device. To update licensing information for a device, follow these steps:
 
 1. Open the **Warehouse mobile devices** workspace.
 1. On the **Summary** FastTab, select a tile to open the relevant device list (such as **Device licenses** or **Devices supported**).
@@ -80,7 +80,7 @@ The **Warehouse mobile devices** workspace lets you view information about each 
 
 ## <a name="rename-devices"></a>Rename a device
 
-Devices are primarily identified using a unique device ID, which is, due to privacy reasons, unrelated to any other device identifier, such as a device serial number or device name. To make it easier to identify which device ID correlates to which physical device, you can give each device a friendly name in addition to the device ID. To rename a device, follow these steps.
+Devices are primarily identified using a unique device ID, which is, due to privacy reasons, unrelated to any other device identifier, such as a device serial number or device name. To make it easier to identify which device ID correlates to which physical device, you can give each device a friendly name in addition to the device ID. To rename a device, follow these steps:
 
 1. Open the **Warehouse mobile devices** workspace.
 1. On the **Summary** FastTab, select a tile to open the relevant device list (such as **Devices supported**). Alternatively, go to **Warehouse management \> Inquiries and reports \> Mobile device logs \> Mobile devices**.

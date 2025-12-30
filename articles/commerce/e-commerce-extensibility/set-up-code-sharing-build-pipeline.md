@@ -31,7 +31,7 @@ This article guides you through the steps that are required to complete the foll
 ## Create an Azure DevOps GitHub repo
 
 You can create an Azure DevOps GitHub repo project from a new or existing Azure DevOps service subscription. For more information, see [Azure DevOps Service](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). To get started with a free trial account, see the [Get started with Azure DevOps](/azure/devops/user-guide/sign-up-invite-teammates) quickstart guide.
-To create an Azure DevOps GitHub repo, follow these steps.
+To create an Azure DevOps GitHub repo, follow these steps:
 
 1. After the Azure DevOps service is set up for your organization, create a new Azure DevOps project.
 
@@ -96,7 +96,7 @@ In Azure DevOps, you should now see the new files.
 
 ## Create and configure a new build pipeline in Azure DevOps
 
-To create and configure a new build pipeline in Azure DevOps, follow these steps.
+To create and configure a new build pipeline in Azure DevOps, follow these steps:
 
 1. In the left navigation pane, under **Pipelines**, select **Pipelines**, and then select **Create Pipeline** in the main part of the page.
 

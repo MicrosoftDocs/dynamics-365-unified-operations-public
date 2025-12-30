@@ -54,7 +54,7 @@ Before you can install the Recruiting app, the following prerequisites must be m
 
 ## Get started
 
-To configure the Recruiting app in Dynamics 365 Human Resources, follow these steps.
+To configure the Recruiting app in Dynamics 365 Human Resources, follow these steps:
 
 1. In Dynamics 365 Human Resources, open the **Feature management** workspace.
 2. Select **Check for updates**.
@@ -74,7 +74,7 @@ To see Recruiting requests and candidates, go to **Human Resources** > **Recruit
 
 ## Install the Recruiting add-on app in Dataverse
 
-To install the Recruiting add-on app for the first time, follow these steps.
+To install the Recruiting add-on app for the first time, follow these steps:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign-in as administator.
 2. Select your environment, and then select the mandatory checkboxes.
 3. Go to Dynamics 365 apps.
@@ -87,7 +87,7 @@ To install the Recruiting add-on app for the first time, follow these steps.
   
 ## Activate connections and flows for the Recruiting app
 
-To activate connections and flows for the Recruiting app, follow these steps.
+To activate connections and flows for the Recruiting app, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 2. Select the environment where you installed the Recruiting add-on app.

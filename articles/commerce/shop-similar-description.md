@@ -48,7 +48,7 @@ Before "shop similar description" recommendations can be shown to customers, you
 
 ### Turn on the "shop similar description" recommendations feature
 
-To turn on the "shop similar description" recommendations feature in Commerce headquarters, follow these steps.
+To turn on the "shop similar description" recommendations feature in Commerce headquarters, follow these steps:
 
 1. In the **Feature management** workspace, in the list of available features, search for and select **Shop similar description**.
 1. In the right pane, select **Enable**.
@@ -62,7 +62,7 @@ To turn on the "shop similar description" recommendations feature in Commerce he
 
 After you turn on the "shop similar description" recommendations feature in Commerce headquarters, you can add a **Shop similar description** button to the buy box on any product details page (PDP). A customer who selects this button is taken to a dedicated **Shop similar description** page that shows visually similar products. The customer can then use selectors to further filter the products.
 
-To add a **Shop similar description** button to a PDP by using Commerce site builder, follow these steps.
+To add a **Shop similar description** button to a PDP by using Commerce site builder, follow these steps:
 
 1. Open an existing site builder page that contains a buy box module.
 1. In the left navigation pane, select the buy box module.

@@ -166,7 +166,7 @@ Notice that the preceding page mock defines only the **primary** slot in the pag
 
 ## Preview the page
 
-To preview the page in a local web browser, follow these steps.
+To preview the page in a local web browser, follow these steps:
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 

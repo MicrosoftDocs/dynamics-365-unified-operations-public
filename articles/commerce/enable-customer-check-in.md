@@ -27,7 +27,7 @@ The customer check-in workflow can also be configured to collect additional info
 
 When the customer check-in feature is turned on, Commerce generates an order confirmation ID (also known as the channel reference ID). It also generates order confirmation IDs for orders that are created through point of sale (POS) or call center channels. 
 
-To turn on the customer check-in feature in Commerce headquarters, follow these steps.
+To turn on the customer check-in feature in Commerce headquarters, follow these steps:
 
 1. Go to **Workspaces \> Feature management**.
 2. Search for the **Generate a consistent channel reference ID format across channels** feature. 
@@ -55,7 +55,7 @@ After a customer notifies the store that they are present for pickup, the check-
 
 Customer check-in requires that specific parameters and values be passed to the check-in page and then to the customer check-in API. Therefore, the easiest approach is to test the feature in an environment where a test order can be created and packed. In that way, an "order ready for pickup" email can be generated that has a URL that contains the required parameter names and values.
 
-To test the customer check-in feature, follow these steps.
+To test the customer check-in feature, follow these steps:
 
 1. Create the customer check-in page, and then add and configure the customer check-in module. For more information, see [Check-in for pickup module](check-in-pickup-module.md). 
 1. Check in the page, but don't publish it.
@@ -74,7 +74,7 @@ To test the customer check-in feature, follow these steps.
 1. Select the **Orders to pick up** tile, and verify that the order appears.
 1. Verify that any additional information that was configured in the check-in module appears in the details pane.
 
-After you've verified that the customer check-in feature works from end to end, follow these steps.
+After you've verified that the customer check-in feature works from end to end, follow these steps:
 
 1. Publish the check-in page.
 1. If you're testing in a production environment, uncomment the URL in the "order ready for pickup" email template, so that the **I am here** link or button is shown. Then reupload the template.

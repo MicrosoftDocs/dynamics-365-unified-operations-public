@@ -105,7 +105,7 @@ This section explains how to create a class library that has a TMS engine implem
 
 ## <a name="deploy-engine-as-package"></a>Deploy the TMS engine as a package
 
-One way to deploy third-party TMS engines is through a deployment package. To deploy the engine as a package, follow these steps.
+One way to deploy third-party TMS engines is through a deployment package. To deploy the engine as a package, follow these steps:
 
 1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model you created as described in [Create a new TMS engine](#create-tms-engine).
 

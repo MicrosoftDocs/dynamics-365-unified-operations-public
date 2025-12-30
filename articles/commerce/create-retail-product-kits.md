@@ -43,7 +43,7 @@ The following table lists the prerequisites that must be in place before you sta
 
 You must first create a new product and designate it as a product kit. After you create the product kit, you can add products and product variants to it as kit components. You can also add product substitutes for any of the kit components.
 
-To create a product kit, follow these steps.
+To create a product kit, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Product kits**.
 1. On the Action Pane, select **New**.
@@ -60,7 +60,7 @@ To create a product kit, follow these steps.
 
 Next, you must add the kit components and component substitutes to the product kit to define every kit combination that you offer. You must also set up the kit configuration options to indicate whether the product kit can be disassembled in the point of sale (POS) store.
 
-To add products and product substitutes to the product kit, follow these steps.
+To add products and product substitutes to the product kit, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Product kits**.
 1. On the **Product masters** list page, select the new product kit that you previously created. Then, on the Action Pane, on the **Product kit** tab, select **Configure**.
@@ -81,7 +81,7 @@ To add products and product substitutes to the product kit, follow these steps.
 
 Next, you must release the product kit to the legal entities that the kits will be sold for. You must release the product kit before you can define the pricing for the kit configurations, set up the product properties for the kit, and generate assembly orders for the kit.
 
-To release the product kit to legal entities, follow these steps.
+To release the product kit to legal entities, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Product kits**.
 1. On the **Product masters** list page, select the product kit that you previously configured. Then, on the Action Pane, select **Release products**.
@@ -97,7 +97,7 @@ To release the product kit to legal entities, follow these steps.
 
 After you release the product kit to legal entities, you can set the standard properties that apply to the products in the kit. These properties can include inventory dimensions, product categories, and product attributes. For general information about how to set up product properties, see [Key tasks: Define products](/dynamicsax-2012/appuser-itpro/key-tasks-define-products). For information about how to set up retail products, see [Set up retail products](set-up-retail-products.md).
 
-To set the standard properties for the product kit, follow these steps.
+To set the standard properties for the product kit, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Released product kits**.
 1. On the **Released product kits** list page, double-tap (or double-click) the product kit that you previously released.
@@ -115,7 +115,7 @@ You can price a product kit either as a whole product or as a sum of the individ
 
 If you define a price for the overall product kit, the new price is distributed across all the products in the kit. The price adjustment that's made to each product is based on the percentage that the product's base price contributes to the total base price for the product kit. You can also specify whether there's an additional charge if the customer selects a product substitute instead of the base component. The additional cost is included when the kit price is calculated.
 
-To define kit pricing and generate trade agreements, follow these steps.
+To define kit pricing and generate trade agreements, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Released product kits**.
 1. On the **Released product kits** list page, double-tap (or double-click) a released product kit in the list.

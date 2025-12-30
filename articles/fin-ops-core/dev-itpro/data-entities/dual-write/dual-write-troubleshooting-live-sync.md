@@ -42,7 +42,7 @@ You might receive the following error message when you try to save table data in
 
 To fix the issue, make sure that prerequisite reference data exists in both the finance and operations app and Dataverse. For example, if a customer record belongs to a specific customer group, make sure that the customer group record exists in Dataverse.
 
-If data exists in both places, and you've confirmed that the issue isn't data related, follow these steps.
+If data exists in both places, and you've confirmed that the issue isn't data related, follow these steps:
 
 1. Open the **DualWriteProjectConfigurationEntity** entity by using the Excel add-in. To use the add-in, enable design mode in the finance and operations Excel add-in, and add **DualWriteProjectConfigurationEntity** to a worksheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
 2. Select and delete the records that have issues in the dual-write map and project. There are two records for every dual-write mapping.
@@ -157,7 +157,7 @@ ORDER BY T1.PROJECTID
 
 The actual result is that the `parentProject` field is evaluated to `null`. However, `null` isn't the same as the empty string. Because of this mismatch, the query filter doesn't return valid results.
 
-To fix the issue, follow these steps.
+To fix the issue, follow these steps:
 
 1. Add a computed column that can be added in an extension model, and that is backed by logic that converts `null` to the empty string.
 
@@ -223,7 +223,7 @@ A similar situation can occur in some nonstandard patterns, such as cases where 
 
 For an example, review the **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()** method. **CustCustomerV3entity** and **VendVendorV2Entity** have been modified to handle this situation.
 
-To fix the issue, follow these steps.
+To fix the issue, follow these steps:
 
 1. Add a **PrimaryPostalAddressRecId** field to the **smmContactPersonV2Entity** entity. Make it internal.
 
@@ -345,7 +345,7 @@ public static container getEntityDataSourceToFieldMapping(container mapping)
 }
 ```
 
-After you update the methods, follow these steps.
+After you update the methods, follow these steps:
 
 1. Sync the database, and build the application.
 2. Stop all the dual-write maps on the **smmContactPersonCDSV2Entity** and **CustCustomerV3Entity** entities.

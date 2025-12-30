@@ -28,7 +28,7 @@ Before you can add a copyright notice to your site, you must have the following 
 
 ## Add a copyright notice
 
-To add a copyright notice to the bottom of every page that uses a specific template, follow these steps.
+To add a copyright notice to the bottom of every page that uses a specific template, follow these steps:
 
 1. Go to **Fragments**, and then select **New**.
 1. In the **New fragment** dialog box, select the **Footer** module, and name the fragment. For example, enter **Footer-Copyright**.

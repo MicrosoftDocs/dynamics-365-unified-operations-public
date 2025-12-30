@@ -26,7 +26,7 @@ To call Commerce Scale Unit APIs, you must use the Retail Server proxy library t
 The Retail Server proxy is available for download via the Dynamics 365 NPM feed and should be added by default. If it isn't there, you can get it by adding a reference in the package.json file.
 
 
-To install the proxy in your software development kit (SDK) development environment, follow these steps.
+To install the proxy in your software development kit (SDK) development environment, follow these steps:
 
 1. Determine your current active version of Retail Server. This version will be the version of the Retail Server NuGet package that you use for back-end extensibility.
 1. In the **package.json** file, add the following entry in the **dependencies** section. (This entry might already be present and have up-to-date version information.)

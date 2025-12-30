@@ -26,7 +26,7 @@ Use the **Deferrals** or **Create credit note** page to enter or edit the deferr
 
 ### Edit deferral options
 
-To edit the deferral options for a line, follow these steps.
+To edit the deferral options for a line, follow these steps:
 
 1. Create a sales order transaction.
 2. Select the line, and then select **Deferrals**.
@@ -39,7 +39,7 @@ After the transaction is posted, open the **All deferral schedules** page to vie
 
 ### Create a credit note
 
-To create a credit note, follow these steps.
+To create a credit note, follow these steps:
 
 1. Create a sales order transaction.
 2. In the **Sales order lines** section, select the item that you want to create a credit note for.

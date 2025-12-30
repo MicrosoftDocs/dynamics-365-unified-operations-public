@@ -61,7 +61,7 @@ A dimension is an intersection of data and values. You can group data and values
 | Dimension Range Start | The first value for this dimension to add to the row definition. |
 | Dimension Range End   | The last value for this dimension to add to the row definition. |
 
-To add dimensions to a row definition, follow these steps.
+To add dimensions to a row definition, follow these steps:
 
 1. In Report designer, click **Row definitions**, and then open the row definition to modify.
 2. On the **Edit** menu, click **Insert rows from dimensions**.
@@ -84,7 +84,7 @@ If you have a balance sheet where the amounts are rounded, the totals might not 
 | 200      | 3,700                    | 4                                       |
 | Total    | 7,300                    | 8                                       |
 
-To adjust rounding in a balance sheet, follow these steps.
+To adjust rounding in a balance sheet, follow these steps:
 
 1. In Report designer, click **Row definitions**, and then open the row definition to modify.
 2. On the **Edit** menu, click **Rounding adjustment**.

@@ -26,7 +26,7 @@ The top row and the leftmost column of the table contain the account numbers fro
 
 For each row and column in the table, the totals are summarized. The summary for each row is recorded in the bottom row of the table, and the summary for each column is recorded in the rightmost column. The total amount of debit and credit turnover is shown in the cell at the intersection of the bottom row and the rightmost column.
 
-To configure and generate the turnover sheet with correspondence, follow these steps.
+To configure and generate the turnover sheet with correspondence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Account activity** \> **Turnover sheet with correspondence**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -73,7 +73,7 @@ To configure and generate the turnover sheet with correspondence, follow these s
 
 The *general ledger* report contains information about the balances and activity for a specified account that is in correspondence with all accounts in the chart of accounts for a specified date interval. The report is broken down by reporting periods (for example, months). A separate page is generated for each account in the chart of accounts.
 
-To configure and generate the general ledger report, follow these steps.
+To configure and generate the general ledger report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Account activity** \> **General ledger**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -125,7 +125,7 @@ To configure and generate the general ledger report, follow these steps.
 
 The rows on the *review of account* report contain information about the balances and activity of a specified account that is in debit and credit correspondence for the period that is under review. The final line of the report summarizes the activity. The first row of the report shows the balance at the beginning of the period, and the last row shows the balance at the end of the period.
 
-To configure and generate the review of account report, follow these steps.
+To configure and generate the review of account report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Account activity** \> **Review of account**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -174,7 +174,7 @@ To configure and generate the review of account report, follow these steps.
 
 You can use the *Journal order/account activity* report to review movement on a specified account in the context of transactions. You can also review the recalculation of the balance for each transaction.
 
-To configure and generate the journal order/account activity report, follow these steps.
+To configure and generate the journal order/account activity report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Inquires and reports \> Account activity \> Journal order/account activity**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.

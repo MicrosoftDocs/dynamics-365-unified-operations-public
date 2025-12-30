@@ -19,7 +19,7 @@ The following privileges are required:
 - In Power Platform: 
   - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-    To confirm that you have these privileges, follow these steps.
+    To confirm that you have these privileges, follow these steps:
     
     1. In the Power Platform Admin Center, go to **Environments**.
     1. Select the relevant environment.
@@ -29,7 +29,7 @@ The following privileges are required:
 - In Microsoft Dynamics 365 Finance and operations apps:
    - The **System administrator** role in Microsoft Dynamics 365 Finance and operations apps.
     
-     To confirm that you have these privileges, follow these steps.
+     To confirm that you have these privileges, follow these steps:
   
      1. In Dynamics 365 Finance and operations apps, go to **System administration**.
      1. Select **Users** > **Users**.
@@ -41,7 +41,7 @@ The following privileges are required:
 
 ## Prepare the environment
 
-To prepare your environment to archive data, follow these steps.
+To prepare your environment to archive data, follow these steps:
 
 1. To align it with your production instance, refresh your PROD data in your sandbox instance.
 2. Ensure that your sandbox instance is on the latest version of Dynamics 365 Finance and operations apps version 10.0.39 or later. Be sure to apply the latest quality updates for the version.

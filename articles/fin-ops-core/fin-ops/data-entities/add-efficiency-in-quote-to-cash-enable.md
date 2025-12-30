@@ -116,7 +116,7 @@ Use the [Feature management](../get-started/feature-management/feature-managemen
 
 After you've completed the initial setup, you can configure the features that you enabled in the previous section. The configuration settings that are available depend both on which features you've enabled in Feature management and which version of Supply Chain Management you're running. In Supply Chain Management versions 10.0.34 through 10.0.36, several features are managed by using Feature management only. However, as of version 10.0.37, these features can also be managed by using the **Accounts receivable parameters** page (after they're enabled in Feature management).
 
-To open the configuration settings, follow these steps.
+To open the configuration settings, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Dynamics 365 Sales integration** tab, set the fields that are described in the following table. A tooltip is also provided for each field on the page.
@@ -137,7 +137,7 @@ To open the configuration settings, follow these steps.
 
 ## Troubleshooting
 
-After you enable the **Integrate quotation lifecycles** functionality, if the sales quotation lifecycle flow doesn't work as expected for newly created sales quotations, follow these steps. For more information about each step, see the [Step 2: Enable mappings in Supply Chain Management](#enable-mappings) section.
+After you enable the **Integrate quotation lifecycles** functionality, if the sales quotation lifecycle flow doesn't work as expected for newly created sales quotations, follow these steps: For more information about each step, see the [Step 2: Enable mappings in Supply Chain Management](#enable-mappings) section.
 
 1. In Supply Chain Management, go to **System administration** \> **Workspaces** \> **Data management**.
 1. In the **Data management** workspace, select **Dual-write**.

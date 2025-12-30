@@ -76,7 +76,7 @@ The following table shows an example of sales tax reporting codes and their mapp
 
 ## Create an electronic message for JPK-V7 reporting
 
-To create an electronic message for JPK-V7 reporting, follow these steps.
+To create an electronic message for JPK-V7 reporting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 1. Select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly), and then, on the **Messages** FastTab, select **New**.
@@ -149,7 +149,7 @@ To create an electronic message for JPK-V7 reporting, follow these steps.
 
 When all the data is ready in the system, you can generate the JPK-V7 report in Excel format.
 
-To generate the JPK-V7 report in Excel format, follow these steps.
+To generate the JPK-V7 report in Excel format, follow these steps:
 
 1. On **Electronic messages**, on the **Messages** FastTab, select **Generate report**.
 1. In **Run processing**, in the **Action** field, select **Podgląd w programie Excel**.
@@ -165,7 +165,7 @@ To generate the JPK-V7 report in Excel format, follow these steps.
 
 When all the data is ready in the system, follow these steps to generate an XML file in JPK-V7 format.
 
-To generate an XML file in JPK-V7 format, follow these steps.
+To generate an XML file in JPK-V7 format, follow these steps:
 
 1. On **Electronic messages**, on the **Messages** FastTab, select **Generate report**.
 1. To run report generation in a batch, in the **Run processing** dialog, specify parameters on the **Run in the background** FastTab.

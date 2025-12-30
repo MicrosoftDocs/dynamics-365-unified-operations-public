@@ -31,7 +31,7 @@ Before you can use the feature that is described in this article, your system mu
 
 ## Enable Inventory Visibility integration with ATP in Supply Chain Management
 
-To configure Supply Chain Management to exchange ATP information with Inventory Visibility, follow these steps.
+To configure Supply Chain Management to exchange ATP information with Inventory Visibility, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management** \> **Inventory Visibility** \> **Inventory Visibility integration with ATP**.

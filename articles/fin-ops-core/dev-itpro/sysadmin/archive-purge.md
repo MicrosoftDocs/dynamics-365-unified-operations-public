@@ -36,7 +36,7 @@ Before you can purge data from the history table, the following conditions must 
 
 > [!NOTE]
 > If an archival job is being restored or is scheduled for restoration, you can't purge the data that is associated with it.
-To create a purge job to delete data from the history table, follow these steps.
+To create a purge job to delete data from the history table, follow these steps:
 
 1. Go to **System administration** \> **Workspaces** \> **Archive with Dataverse long term retention**.
 1. In the **Archive with Dataverse long term retention** workspace, select a completed archival job. You can also select multiple completed archival jobs for the same functional scenario.

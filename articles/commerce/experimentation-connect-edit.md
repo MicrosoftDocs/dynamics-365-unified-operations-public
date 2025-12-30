@@ -28,7 +28,7 @@ After you've [set up your experiment](experimentation-setup.md) in a third-party
 ## Connect your experiment
 To connect your experiment, you'll launch the **Connect experiment** wizard. The wizard walks you through the steps required to connect your experiment. When you complete the wizard, your experiment is connected and variations are created and ready to be edited.
 
-To get started connecting your experiment in Commerce site builder, follow these steps.
+To get started connecting your experiment in Commerce site builder, follow these steps:
 
 1. To launch the **Connect experiment** wizard, select **Experiments** in the left navigation pane, and then select **Connect**. Alternatively, you can access the wizard from a page or fragment editor by editing it and selecting **Connect experiment** on the command bar.
 

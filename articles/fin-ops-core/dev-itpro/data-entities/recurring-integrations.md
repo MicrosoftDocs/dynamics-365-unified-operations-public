@@ -89,7 +89,7 @@ For more information, see [Process and consume data packages in the finance and 
 
 ## Clean up recurring data job messages
 
-To clean up recurring data job messages, follow these steps.
+To clean up recurring data job messages, follow these steps:
 
 1. Go to the **System administration** workspace (not the **System administration** module).
 1. Select the **Data Management IT** workspace.

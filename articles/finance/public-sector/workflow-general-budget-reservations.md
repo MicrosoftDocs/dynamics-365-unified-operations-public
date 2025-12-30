@@ -36,7 +36,7 @@ Workflows for general budget reservations are based on the reservation type. The
 
 If a general budget reservation requires a purchase requisition, note that purchase requisitions require their own workflow. The workflow for the purchase requisition must be completed before the general budget reservation can reference it.
 
-To create a general budget reservation workflow, follow these steps.
+To create a general budget reservation workflow, follow these steps:
 
 1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting workflows**.
 2. Select **New**.
@@ -98,7 +98,7 @@ The **Errors and warnings** pane at the bottom of the workflow editor shows mess
 
 To submit a general budget reservation to the workflow system, you must be the preparer. Before a reservation can be submitted, all required fields must be filled in, and the reservation must contain at least one line item. The reservation must have a workflow status of **Draft**.
 
-To submit a general budget reservation to the workflow system, follow these steps.
+To submit a general budget reservation to the workflow system, follow these steps:
 
 1. Go to **Budgeting \> General budget reservations**.
 2. Select the general budget reservation to submit to the workflow system.

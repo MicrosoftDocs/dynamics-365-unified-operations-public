@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-06-01
 
 This article explains how to create a debit note against a sales invoice in Microsoft Dynamics 365 Finance.
 
-To create a debit note against a sales invoice, follow these steps.
+To create a debit note against a sales invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journals \> General journal**.
 1. Create a journal.
@@ -35,7 +35,7 @@ To create a debit note against a sales invoice, follow these steps.
 
 ## Validate the tax details
 
-To validate the tax details, follow these steps.
+To validate the tax details, follow these steps:
 
 1. Select **Tax document**.
 1. Select **Header**.

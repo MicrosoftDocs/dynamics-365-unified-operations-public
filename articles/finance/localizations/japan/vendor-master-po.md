@@ -27,7 +27,7 @@ The procedures use the demo data company JPMF.
 
 ## Set up a vendor master
 
-To set up a vendor master, follow these steps.
+To set up a vendor master, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the list, select the link in the selected row.
@@ -37,7 +37,7 @@ To set up a vendor master, follow these steps.
 
 ## Set a purchase order as the target of a consolidated invoice
 
-To set a purchase order as the target of a consolidated invoice, follow these steps.
+To set a purchase order as the target of a consolidated invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. In the list, select the link in the selected row.

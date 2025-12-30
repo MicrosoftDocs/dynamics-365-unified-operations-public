@@ -27,7 +27,7 @@ You should set the value of the **ExpenseAndIncomeCode** field in the following 
 
 ## Create an expense or income code
 
-To create an expense or income code, follow these steps.
+To create an expense or income code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Expense codes**.
 

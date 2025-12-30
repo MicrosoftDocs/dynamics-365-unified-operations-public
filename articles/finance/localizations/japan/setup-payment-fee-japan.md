@@ -25,7 +25,7 @@ The following procedures use the demo data company JPMF.
 
 ## Create a bank group
 
-To create a bank group, follow these steps.
+To create a bank group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Bank groups**.
 1. Select **New**.
@@ -38,7 +38,7 @@ To create a bank group, follow these steps.
 
 ## Create a vendor payment fee group
 
-To create a vendor payment fee group, follow these steps.
+To create a vendor payment fee group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Vendor payment fee groups**.
 1. Select **New**.
@@ -48,7 +48,7 @@ To create a vendor payment fee group, follow these steps.
 
 ## Specify a payment fee group for a vendor
 
-To specify a payment fee group for a vendor, follow these steps.
+To specify a payment fee group for a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the list, select the link in the selected row.
@@ -60,7 +60,7 @@ To specify a payment fee group for a vendor, follow these steps.
 
 ## Create bank rules for a payment fee
 
-To create bank rules for a payment fee, follow these steps.
+To create bank rules for a payment fee, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Bank rules for payment fee**.
 1. Select **New**.
@@ -79,7 +79,7 @@ To create bank rules for a payment fee, follow these steps.
 
 ## Create a payment fee
 
-To create a payment fee, follow these steps.
+To create a payment fee, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Payment fee**.
 1. Select **New**.

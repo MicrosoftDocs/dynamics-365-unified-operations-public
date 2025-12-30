@@ -29,7 +29,7 @@ The capability to delay exact price and discount calculation has long been avail
 
 ## Enable delayed price and discount calculation for POS
 
-To enable delayed price and discount calculation for POS, follow these steps.
+To enable delayed price and discount calculation for POS, follow these steps:
 
 1. In Commerce headquarters, go to the functionality profile that is associated with the physical store.
 1. On the **Amount** FastTab, enable the **Manually calculate multiple item discounts** configuration.
@@ -41,7 +41,7 @@ Now, when items are added to a transaction, multiline discounts aren't calculate
 
 ## Enable delayed price and discount calculation for call center
 
-To enable delayed price and discount calculation for call center, follow these steps.
+To enable delayed price and discount calculation for call center, follow these steps:
 
 1. In Commerce headquarters, go to **Commerce parameters \> Prices and discounts**.
 1. In the **Miscellaneous** section, enable the **Manually calculate multi-line prices and discounts** configuration.

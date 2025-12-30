@@ -60,7 +60,7 @@ Microsoft recommends that you use a source code repository to manage your config
 
 ## Download SDK dependencies
 
-To download the SDK dependency packages, follow these steps.
+To download the SDK dependency packages, follow these steps:
 
 1. At a command prompt, go to the root folder of the e-Commerce SDK (**c:\\repos\\Msdyn365.Commerce.Online** in the following example).
 2. To get all the latest dependency packages that are required, run the **yarn** command.
@@ -76,7 +76,7 @@ To download the SDK dependency packages, follow these steps.
 
 ## Run your Node app
 
-To run your Node app, follow these steps.
+To run your Node app, follow these steps:
 
 1. Run the **yarn start** command to open the Node app.
 
@@ -121,7 +121,7 @@ You can find the new module under \\src\\modules\\super-content-block.
 
 ## Preview modules
 
-To preview a specific module (for example, product-feature) in a local web browser, follow these steps.
+To preview a specific module (for example, product-feature) in a local web browser, follow these steps:
 
 1. At a command prompt, open your Node app by running the **yarn start** command from the root of your SDK.
 

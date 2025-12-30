@@ -689,7 +689,7 @@ On the **INTERVAT tax declaration** page, you can perform the following actions 
 | Details        | Open the **INTERVAT details** page, where you can review the amounts in the corresponding reporting codes.                                                                                                                                                        |
 
 ## Generate an INTERVAT summary tax declaration
-To print an INTERVAT tax declaration for several tax periods, follow these steps.
+To print an INTERVAT tax declaration for several tax periods, follow these steps:
 
 1.  Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **INTERVAT summary tax declaration**.
 2.  Use the filters to specify criteria for selecting data, and then review the information on the report.

@@ -26,7 +26,7 @@ The following procedures walk you through how to set up and maintaining Norwegia
 
 ## Set up payment IDs
 
-To set up payment IDs, follow these steps.
+To set up payment IDs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Payment ID**.
 1. Select **New**.
@@ -50,7 +50,7 @@ To set up payment IDs, follow these steps.
 
 ## Attach the payment ID
 
-To attach the payment ID, follow these steps.
+To attach the payment ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. Use the Quick Filter to find records. For example, filter on the Account field with a value of "DE-010".
@@ -72,7 +72,7 @@ To attach the payment ID, follow these steps.
 
 ## Update the payment ID
 
-To update the payment ID, follow these steps.
+To update the payment ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Update invoice payment ID**.
 1. To delete the payment ID information from all documents, select the **Delete payment ID** checkbox. This option should be used only when you want to remove or update payment IDs for documents that have payment IDs assigned. You're offered a dialog to delete payment IDs from specific type of documents.  
@@ -85,7 +85,7 @@ To update the payment ID, follow these steps.
 
 ## View the payment ID
 
-To view the payment ID, follow these steps.
+To view the payment ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Inquiries and reports \> Invoices \> Invoice journal**.
 1. Select **Show filters**.

@@ -22,7 +22,7 @@ This article describes how to create and configure an Microsoft Entra applicatio
 
 ## Create a Microsoft Entra application for account manager sign-in in the Azure B2B tenant
 
-To create a Microsoft Entra application for account manager sign-in in the Azure business-to-business (B2B) tenant, follow these steps.
+To create a Microsoft Entra application for account manager sign-in in the Azure business-to-business (B2B) tenant, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Go to the directory that contains the Microsoft Entra business-to-business (B2B) tenant that's being used for sign-in in headquarters.
@@ -65,7 +65,7 @@ After you complete the registration, locate the application that you created (fo
 
 ## Configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site
 
-To configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site, follow these steps.
+To configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site, follow these steps:
 
 1. Go to the directory that contains your Microsoft Entra B2C tenant. On the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Microsoft Entra B2C tenant.
 1. In the upper-left corner of the Azure portal, select **All services** , and then search for and select **Microsoft Entra ID B2C**.
@@ -96,7 +96,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 ## Add the Azure identity provider to a user flow
 
-To add the Azure identity provider to a user flow, follow these steps.
+To add the Azure identity provider to a user flow, follow these steps:
 
 1. In your Microsoft Entra B2C tenant, select **User flows**.
 1. Select the user flow that you want to add the identity provider to.

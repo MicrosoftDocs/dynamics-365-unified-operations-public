@@ -23,7 +23,7 @@ A payment identification (ID) is a unique identifier for customer payments that 
 
 ## Set up a payment ID
 
-To set up a payment ID, follow these steps.
+To set up a payment ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Payments setup** \> **Payment ID** and select **New**.
 1. Enter values in the following fields:
@@ -47,7 +47,7 @@ To set up a payment ID, follow these steps.
 
 ## Attach a payment ID to a customer
 
-To attach a payment ID to a customer, follow these steps.
+To attach a payment ID to a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Use the **Quick Filter** to filter on the **Account** field with a value of **DE-010**.
@@ -64,7 +64,7 @@ To attach a payment ID to a customer, follow these steps.
 
 ## Update the payment ID
 
-To update the payment ID, follow these steps.
+To update the payment ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Update invoice payment ID**.
 1. Select the **Delete payment ID** check box to delete the payment ID information from all documents.
@@ -81,7 +81,7 @@ To update the payment ID, follow these steps.
 
 ## View the payment ID
 
-To view the payment ID, follow these steps.
+To view the payment ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
 1. Select **Show filters**.

@@ -45,7 +45,7 @@ The following illustration shows an example of a preview pop-up window on a hero
 
 ## Add an active image module to a new page
 
-To add an active image module to a new page and set the required properties, follow these steps.
+To add an active image module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

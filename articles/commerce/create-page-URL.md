@@ -48,7 +48,7 @@ If you provide a name in the **URL** field when you create a new page, a page UR
 
 When you create new pages, you aren't required to specify a page URL. If you leave the URL field blank, the page is created in an unlinked state. In this case, customers won't be able to access the page, even if it's published. To make the page accessible, you must manually create the URL and link it to the page.
 
-To manually create the page URL for a page, follow these steps.
+To manually create the page URL for a page, follow these steps:
 
 1. On the **URLs** page, select **New**.
 1. Select the site page to associate with the URL.
@@ -58,7 +58,7 @@ At this point, the URL is in a draft state. It must be published before site use
 
 ## Update a page URL
 
-To update the target page of a page URL, follow these steps.
+To update the target page of a page URL, follow these steps:
 
 1. On the **URLs** page, select the URL to update.
 1. In the property pane on the right, select the ellipsis button (**...**) next to the target page field.
@@ -69,7 +69,7 @@ To update the target page of a page URL, follow these steps.
 
 Sometimes, you might want your customers to view a different page when they request a specific URL. In these cases, the best and easiest approach is often to change the page that the page URL points to. However, you might have legitimate reasons for using HTTP 301 or 3023 redirects to redirect requests for a URL to a different URL.
 
-To redirect a URL to a different URL, follow these steps.
+To redirect a URL to a different URL, follow these steps:
 
 1. On the **URLs** page, select the URL to update.
 1. In the property pane on the right, select **Redirect**.

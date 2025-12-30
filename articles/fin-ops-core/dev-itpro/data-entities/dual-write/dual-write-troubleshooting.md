@@ -32,7 +32,7 @@ page and require administrator level privileges to change and view.
 **Required role to turn on the trace log and view errors:** System admin
 
 ### Turn on the trace log
-To turn on the trace log, follow these steps.
+To turn on the trace log, follow these steps:
 
 1.	Log on to Dynamics 365, and then select **Settings** in the top navigation bar. On the Systems page, click **Administration**.
 2.	On the Administration page, click **System Settings**.
@@ -44,7 +44,7 @@ To turn on the trace log, follow these steps.
 After the plug-in is enabled, trace logs continue to be collected until they're manually turned off by returning to this location and selecting **Off**.
 
 ### View the trace log
-To view the trace log, follow these steps.
+To view the trace log, follow these steps:
 
 1. On the Dynamics 365 Settings page, select **Settings** in the top navigation bar. 
 2. Select **Plugin Trace Log** in the **Customizations** section of the page.

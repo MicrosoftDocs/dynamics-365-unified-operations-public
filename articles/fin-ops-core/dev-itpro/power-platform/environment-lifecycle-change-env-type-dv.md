@@ -27,7 +27,7 @@ The following sections describe aspects that you should consider when you change
 
 In this scenario, the Dataverse environment becomes a production environment, whereas the linked finance and operations apps environment remains a sandbox environment.
 
-To link your Dataverse environment to a production finance and operations environment, follow these steps.
+To link your Dataverse environment to a production finance and operations environment, follow these steps:
 
 1. Deploy the finance and operations production environment without enabling Power Platform Integration.
 1. Refresh the database from the finance and operations environment that's linked to the production Dataverse environment. For more information, see [Refresh the database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).

@@ -20,7 +20,7 @@ Admins can configure each menu item individually to control how, when, and where
 
 ## Configure menu items to show a list of all work lines
 
-To set up a mobile device menu item to provide a pick line overview, follow these steps.
+To set up a mobile device menu item to provide a pick line overview, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select or create a menu item that is related to picking work, and set the following values:

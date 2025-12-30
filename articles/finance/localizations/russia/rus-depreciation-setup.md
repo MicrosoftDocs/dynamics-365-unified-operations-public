@@ -22,7 +22,7 @@ This article explains how to set up depreciation for Russian fixed assets in Mic
 
 Depreciation methods define the rules for calculating depreciation.
 
-To set up depreciation methods, follow these steps.
+To set up depreciation methods, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Depreciation methods**.
 1. Select **New** to create a depreciation method.
@@ -52,7 +52,7 @@ To set up depreciation methods, follow these steps.
 
 ### Change the depreciation method for tax accounting
 
-To change the depreciation method for tax accounting, follow these steps.
+To change the depreciation method for tax accounting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Periodic** \> **Changing depreciation method**.
 1. In the **Changing depreciation method** dialog, in the **Year** field, specify the year when the new depreciation method goes into effect.
@@ -68,7 +68,7 @@ To change the depreciation method for tax accounting, follow these steps.
 
 Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to fixed assets or to a depreciation group.
 
-To set up analysis codes for fixed asset depreciation, follow these steps.
+To set up analysis codes for fixed asset depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Analysis codes**.
 1. Select **New** to create an analysis code.
@@ -90,7 +90,7 @@ By defining depreciation groups for fixed asset value models, you can specify as
 
 If a fixed asset is registered after it's put into operation, depreciation is calculated from the first day of the month of registration. If a fixed asset is registered before it's put into operation, depreciation is calculated from the first day of the month after the fixed asset is put into operation.
 
-To set up depreciation groups, follow these steps.
+To set up depreciation groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 1. In the **Value model** field, select the value model that you're creating a depreciation group for.

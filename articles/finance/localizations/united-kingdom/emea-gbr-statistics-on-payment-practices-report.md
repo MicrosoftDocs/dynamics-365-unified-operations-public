@@ -88,7 +88,7 @@ Use the created **Financial tag** for payments made late due to disputes.
 
 ## Generate the report
 
-To generate the report, follow these steps.
+To generate the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Statistics** \> **Report on payment deadlines**.
 1. In the **Report on payment deadlines** dialog, in the **Format mapping** field, select **Statistics on payment practices (UK)**.

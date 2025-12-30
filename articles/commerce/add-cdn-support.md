@@ -58,7 +58,7 @@ For information about how to set up Azure Front Door Service, see [Quickstart: C
 
 ### Configure a backend pool in Azure Front Door Service
 
-To configure a backend pool in Azure Front Door Service, follow these steps.
+To configure a backend pool in Azure Front Door Service, follow these steps:
 
 1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has a backend host header that is the same as **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. Under **Load balancing**, leave the default values.
@@ -78,7 +78,7 @@ The following illustration shows the **Add a backend pool** dialog box in Azure 
 
 ### Set up rules in Azure Front Door Service
 
-To set up a routing rule in Azure Front Door Service, follow these steps.
+To set up a routing rule in Azure Front Door Service, follow these steps:
 
 1. Add a routing rule.
 1. In the **Name** field, enter **default**.

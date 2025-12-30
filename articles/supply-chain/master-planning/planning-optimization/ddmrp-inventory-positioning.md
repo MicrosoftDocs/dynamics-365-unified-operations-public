@@ -108,7 +108,7 @@ Items become decoupling points when they belong to a coverage group that you con
 
 ### Set an item as a decoupling point
 
-To set an item as a decoupling point, follow these steps.
+To set an item as a decoupling point, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Find and select a released item that you want to set up for DDMRP.

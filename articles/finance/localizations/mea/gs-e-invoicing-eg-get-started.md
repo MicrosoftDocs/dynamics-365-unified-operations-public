@@ -66,7 +66,7 @@ Add the following required elements in the key vault:
 
 ## Configure electronic invoicing Key Vault parameters
 
-To configure electronic invoicing Key Vault parameters, follow these steps.
+To configure electronic invoicing Key Vault parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you configured in the previous section.
@@ -88,7 +88,7 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
 > [!NOTE]
 > Only the parameters that are mentioned in this section require modification. If you also modify other parameters to meet your needs, you're responsible for ensuring that the feature continues to work correctly.
 
-To configure the electronic invoicing feature, follow these steps.
+To configure the electronic invoicing feature, follow these steps:
 
 1. Ensure that the latest version, **20** or later, of the **Egyptian electronic invoice (EG)** Globalization feature is imported as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -117,7 +117,7 @@ To configure the electronic invoicing feature, follow these steps.
 
 ## Configure electronic document parameters
 
-To configure electronic document parameters, follow these steps.
+To configure electronic document parameters, follow these steps:
 
 1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Egypt are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. In addition to the ER configurations that are mentioned in step 1, import the Egypt-specific **Egypt response data import format (EG)** configuration from the repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).

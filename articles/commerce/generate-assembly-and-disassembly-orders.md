@@ -29,7 +29,7 @@ After you generate an assembly order and enter the quantities that you want to a
 
 ## Generate an assembly order from a product kit
 
-To generate an assembly order from a product kit, follow these steps.
+To generate an assembly order from a product kit, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Released product kits**.
 1. On the **Released product kits** list page, double-tap (or double-click) a product kit.
@@ -42,7 +42,7 @@ To generate an assembly order from a product kit, follow these steps.
 
 On the **Kit orders** page, you can view the assembly order that you created and the BOM journal entries that were created.
 
-To view the assembly order and BOM journal entries, follow these steps.
+To view the assembly order and BOM journal entries, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Kit orders**.
 1. On the **Kit orders** list page, double-tap (or double-click) a kit order to view the details of the assembly order that you just created.
@@ -56,7 +56,7 @@ If you want to prevent any more assembly orders from being created for a product
 
 After the assembly and disassembly orders are created, product kits can be assembled or disassembled by warehouse workers. For more information about how to process assembly and disassembly orders, see [Process kit assembly and disassembly orders](./process-kit-assembly-and-disassembly-orders.md).
 
-To manually generate assembly and disassembly orders for a product kit, follow these steps.
+To manually generate assembly and disassembly orders for a product kit, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Kit orders**.
 1. On the **Kit orders** list page, on the Action Pane, select **Order**.
@@ -76,7 +76,7 @@ To manually generate assembly and disassembly orders for a product kit, follow t
 
 On the **Kit orders** page, you can view the order that you created and the BOM journal entries that were created.
 
-To view the order and BOM journal entries, follow these steps.
+To view the order and BOM journal entries, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Kit orders**.
 1. On the **Kit orders** list page, double-tap (or double-click) a kit order to view the details of the assembly or disassembly order that you just created.
@@ -91,7 +91,7 @@ If a product kit or any of its components are out of stock when you add the kit 
 
 When product kits are sold in a cash-and-carry scenario, if a kit isn't found in the store's inventory, the system automatically generates an assembly order for the sale when the store's transactions are sent to Commerce headquarters. The assembly order is then automatically processed and posted.
 
-To generate an assembly order from a sales order, follow these steps.
+To generate an assembly order from a sales order, follow these steps:
 
 1. In Commerce headquarters, go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. On the **All sales orders** list page, on the Action Pane, on the **Sales order** tab, select **Sales order** to create a new sales order.

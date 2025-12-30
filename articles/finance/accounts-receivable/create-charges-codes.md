@@ -21,7 +21,7 @@ This article explains how to configure charges codes for both Accounts payable a
 
 ## Set up charges codes for Accounts receivable
 
-To create charges codes for Accounts receivable, follow these steps.
+To create charges codes for Accounts receivable, follow these steps:
 
 1. Go to **Accounts receivable** &gt; **Charges setup** &gt; **Charges code**.
 2. Select **New**.
@@ -45,7 +45,7 @@ You can print the text for charges in the language that is assigned to the custo
 
 ## Set up charges codes for Accounts payable
 
-To create charges codes for Accounts payable, follow these steps.
+To create charges codes for Accounts payable, follow these steps:
 
 1. Follow one of these steps:
 

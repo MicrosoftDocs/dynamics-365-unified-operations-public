@@ -37,7 +37,7 @@ Users must configure their environment for cross-company data sharing as describ
 
 ## Configure cross-company data sharing for gift cards
 
-To configure cross-company data sharing for gift cards, follow these steps.
+To configure cross-company data sharing for gift cards, follow these steps:
 
 1. In Commerce headquarters, go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New** to add a data sharing record.

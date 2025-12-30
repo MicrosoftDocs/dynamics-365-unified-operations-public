@@ -83,7 +83,7 @@ This example shows how to configure a purchase requisition expenditure reviewer.
 
 ## Assign owners to financial dimensions
 
-To assign an owner to a financial dimension, follow these steps.
+To assign an owner to a financial dimension, follow these steps:
 
 1. Go to **General ledger \> Chart of accounts \> Dimensions \> Financial dimensions**.
 2. In the list, select the financial dimension to assign owners to.
@@ -94,7 +94,7 @@ To assign an owner to a financial dimension, follow these steps.
 
 ## Configure project distributions
 
-To assign project authorities to a project, follow these steps.
+To assign project authorities to a project, follow these steps:
 
 1. Go to **Project management and accounting \> Projects \> All projects**.
 2. Select the project to assign authorities to.
@@ -106,7 +106,7 @@ To assign project authorities to a project, follow these steps.
 
 This example shows how to configure a purchase requisition workflow so that it uses a purchase requisition expenditure reviewer. To configure other types of workflows, the workflow page that you must open in step 1 might be in the **Expense management** or **Accounts payable** module instead of the **Procurement and sourcing** module.
 
-To assign purchase requisition expenditure reviewers to a workflow task, follow these steps.
+To assign purchase requisition expenditure reviewers to a workflow task, follow these steps:
 
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing workflows**.
 2. Double-tap (or double-click) an existing workflow, or create a new workflow.

@@ -108,7 +108,7 @@ Table 1 "VAT table" of the **"Tables of the Technical Specification of the Stand
 
 Starting from version **52.4** of the **i.SAF format (LT)** ER configuration, the format includes application-specific parameters where a user must define which **Sales tax codes** in the system correspond to which values from the enumerated list of VAT codes prescript as "Standard VAT codes".
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic Reporting** workspace, select the **i.SAF format (LT)** format, and then select **Configurations** > **Application specific parameters** > **Setup**.
 2. On the Action Pane, on the **Lookups** tab, select **ReportTaxCodesLookup** to view the latest version of the format.
@@ -147,7 +147,7 @@ The process of setting up the Electronic messages functionality for i.SAF has ma
 > [!NOTE]
 > Before you import setup data from the package of data entities, complete the  to make sure that the data entities in your application are refreshed and synced.
 
-To import a package of data entities that include a predefined electronic messaging setup, follow these steps.
+To import a package of data entities that include a predefined electronic messaging setup, follow these steps:
 
 1. In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type. 
 2. Find **LT i.SAF setup for Electronic messages.zip** in the list of data package files, and download it to your computer.
@@ -177,7 +177,7 @@ The **LT i.SAF setup for Electronic messages.zip** package provides a setup for 
 
 **i.SAF** processing lets you collect invoices to be reported in the legal entity. You can then generate an i.SAF report. The collection of invoices is implemented by using the **Populate invoices** action of the **Populate record** type. To correctly collect invoices, you must define a period for the **Populate invoices** action.
 
-To set up data sources to collect documents to be reported, follow these steps.
+To set up data sources to collect documents to be reported, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, and select **Populate invoices**. 
 
@@ -199,7 +199,7 @@ By default, all records from these data sources will be populated to the **Messa
 
 After the data entities are imported into the database, complete the following steps and the Electronic Messages functionality will be ready for use.
 
-To Set up electronic messaging parameters for i.SAF, follow these steps.
+To Set up electronic messaging parameters for i.SAF, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**, select the **EvaluateInvoiceType_LT** executable class, and on the Action Pane, select **Parameters**. 
 2. In the **Invoice type** field, select **InvoiceType** and then select **OK.**
@@ -220,7 +220,7 @@ To Set up electronic messaging parameters for i.SAF, follow these steps.
 
 Different groups of users might require access to **i.SAF** processing. You can limit access to the processing, based on security groups that are defined in the system.
 
-To limit access to i.SAF processing, follow these steps.
+To limit access to i.SAF processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
 2. Select the **i.SAF** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
@@ -239,7 +239,7 @@ The setup of **i.SAF** processing that is provided by using a package of data en
 
 The green boxes on the schema show the general process of i.SAF report generation.
 
-To collect data for the i.SAF report, follow these steps.
+To collect data for the i.SAF report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**, and on the Action Pane, select **Run processing**. 
 2. In the **Processing** field, select **i.SAF**. 
@@ -250,7 +250,7 @@ To collect data for the i.SAF report, follow these steps.
 
 When invoices are successfully populated from data sources to the **Message items** table, the invoice type must be defined for each invoice. **Invoice type** is stored in the **Additional field** group for each invoice. 
 
-To define invoice types for i.SAF reporting, follow these steps.
+To define invoice types for i.SAF reporting, follow these steps:
 
 1. To define the invoice type, on the Action Pane, select **Run processing**. 
 2. In the **Processing** field, select **i.SAF**. 
@@ -279,7 +279,7 @@ If you plan to generate the i.SAF report in batch mode, verify that the **Use pa
 
 ![Electronic message processing.](../media/isaf-use-parameters.png)
 
-To set up the parameters for the **Generate message** action of i.SAF electronic message processing, follow these steps.
+To set up the parameters for the **Generate message** action of i.SAF electronic message processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select **i.SAF** electronic message processing, and on the **Action** FastTab, select **Generate message**.
@@ -293,7 +293,7 @@ To set up the parameters for the **Generate message** action of i.SAF electronic
 
 ### Generate the i.SAF report in batch mode
 
-To generate the i.SAF report in batch mode, follow these steps.
+To generate the i.SAF report in batch mode, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message items**. 
 2. On the **Message items** page, on the Action Pane, select **Run processing** 
@@ -309,7 +309,7 @@ As a result of the **Generate message** action, for each electronic message item
 
 ### Generate i.SAF report in non-batch mode
 
-To generate i.SAF report in non-batch mode, follow these steps.
+To generate i.SAF report in non-batch mode, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message items**, and on the Action Pane, select **Generate report** 
 2. Select **i.SAF** in the **Processing** field and then select **Generate message** in the **Action** field to generate the i.SAF report. 

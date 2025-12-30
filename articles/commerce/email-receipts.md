@@ -28,7 +28,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set default options for email receipts
 
-To configure the default emailed receipt behavior for all customers, follow these steps.
+To configure the default emailed receipt behavior for all customers, follow these steps:
 
 1. Select **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 1. On the **Posting** tab, on the **Email receipt** FastTab, in the **Receipt option** field, select a default option:
@@ -39,7 +39,7 @@ To configure the default emailed receipt behavior for all customers, follow thes
 
 1. In the **Subject** field, enter the text that should appear by default on the subject line of a receipt that is sent as an email message.
 
-If you want to override the default option selected in **Commerce parameters** for a single customer, follow these steps.
+If you want to override the default option selected in **Commerce parameters** for a single customer, follow these steps:
 
 1. Go to **Retail and Commerce \> Customers \> All customers**.
 1. On the **All customers** list page, select a customer, and then select **Edit**.

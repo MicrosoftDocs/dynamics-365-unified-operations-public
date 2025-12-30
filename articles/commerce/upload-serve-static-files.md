@@ -22,7 +22,7 @@ Some third-party connectors require that a file be hosted and served from the e-
 
 ## Create a site URL that returns a static file
 
-To create a site URL that returns a static file in Commerce site builder, follow these steps.
+To create a site URL that returns a static file in Commerce site builder, follow these steps:
 
 1. Go to your site's Media library, and upload the file that should be served by requests to the URL that you will define. If you've already uploaded the file, you can skip this step.
 1. Go to **URLs** for your site.
@@ -37,7 +37,7 @@ At this point, the URL that you created is in a draft state. The file that the U
 
 ## Validate and publish a URL
 
-To validate an URL before you publish it, follow these steps.
+To validate an URL before you publish it, follow these steps:
 
 1. Go to **URLs** for your site, and select the URL to preview.
 2. In the properties pane on the right, below the **Edit** button, select the correct URL link. A new browser window is opened, and you should receive a 404 error.
@@ -52,7 +52,7 @@ After you've validated the URL, you can publish it.
 
 After a URL is published, you can update it so that it points to a different file. Alternatively, you can update the URL so that it points to a different the type of resource, as described in the next section. For example, you can point the URL to an internal page or a redirect.
 
-To update the file that a URL points to, follow these steps.
+To update the file that a URL points to, follow these steps:
 
 1. Go to **URLs** for your site, and select the URL to update.
 1. In the properties pane on the right, select **Edit**.
@@ -63,7 +63,7 @@ To update the file that a URL points to, follow these steps.
 
 You can also update a URL so that it points to a different type of asset (resource), such as an internal page or a redirect.
 
-To update the asset type that a URL points to, follow these steps.
+To update the asset type that a URL points to, follow these steps:
 
 1. Go to **URLs** for your site, and select the URL to update.
 1. In the properties pane on the right, select **Edit**.
@@ -75,7 +75,7 @@ To update the asset type that a URL points to, follow these steps.
 
 After a URL is created, its path can't be changed. If you must change the URL path that serves a file or any other type of resource, you have to create a new URL, map it to the existing file or other resource, and then unpublish and delete the old URL.
 
-To change the URL path, follow these steps.
+To change the URL path, follow these steps:
 
 1. To create a new URL and map it to the existing file or another resource, follow the instructions in the [Create a site URL that returns a static file](#create-a-site-url-that-returns-a-static-file) section earlier in this article.
 1. Select the new URL, and select **Publish** on the command bar. The new URL is published.

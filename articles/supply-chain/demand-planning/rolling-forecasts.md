@@ -41,7 +41,7 @@ Rolling forecasts can help you monitor the performance of your demand planning p
 
 You can fully automate a rolling forecast by scheduling each of its processes (importing data, running a transformation, running a calculation, running a forecast, and exporting the forecast).
 
-To schedule a process, follow these steps.
+To schedule a process, follow these steps:
 
 1. Go to one of the following pages, depending on the type of process that you want to schedule:
 

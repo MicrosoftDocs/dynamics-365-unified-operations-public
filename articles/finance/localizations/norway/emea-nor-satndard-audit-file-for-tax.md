@@ -36,7 +36,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 
 ### <a name="features"></a>Enable features in Feature management
 
-To enable features in Feature management, follow these steps.
+To enable features in Feature management, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Feature management** \> **All**.
 1. In the feature list, find and select the following features:
@@ -80,18 +80,18 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="organization-number"></a> Set up the organization registration number
 
-Organization registration number of the legal entity is reported in SAF-T file in the **Header** \> **Company** \> **RegistrationNumber** field. To configure the organization registration number that should be reported in the **RegistrationNumber** field, follow these steps.
+Organization registration number of the legal entity is reported in SAF-T file in the **Header** \> **Company** \> **RegistrationNumber** field. To configure the organization registration number that should be reported in the **RegistrationNumber** field, follow these steps:
 
-To set up the organization registration number, follow these steps.
+To set up the organization registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
 1. On the **Bank account information** FastTab, assign the organization number to the **Routing code** field.
 
 ### <a name="registration-number"></a> Set up the company tax registration numbers
 
-As of version 175.119 of the **SAF-T Format (NO)** ER format, the **TaxRegistration** node under **Header** \> **Company** of the report represents company VAT registration numbers that are in effect during the reporting period of the report, from among the registration IDs that are defined in the properties of the legal entity. The **TaxVerificationDate** field of the **TaxRegistration** node represents the expiration date of the registration ID where the number expiration date is within the reporting period. To configure the registration ID that should be reported in the **TaxRegistration** node, follow these steps.
+As of version 175.119 of the **SAF-T Format (NO)** ER format, the **TaxRegistration** node under **Header** \> **Company** of the report represents company VAT registration numbers that are in effect during the reporting period of the report, from among the registration IDs that are defined in the properties of the legal entity. The **TaxVerificationDate** field of the **TaxRegistration** node represents the expiration date of the registration ID where the number expiration date is within the reporting period. To configure the registration ID that should be reported in the **TaxRegistration** node, follow these steps:
 
-To set up the company tax registration numbers, follow these steps.
+To set up the company tax registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity, and then select **Registration IDs**.
@@ -106,7 +106,7 @@ If the VAT registration number isn't specified among the registration IDs of the
 
 ### <a name="parameters"></a> Set up the ER format 
 
-To set up the ER format, follow these steps.
+To set up the ER format, follow these steps:
 
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (NO)**.
@@ -129,7 +129,7 @@ If you use option 1, the report doesn't consider option 2. If any of the sales t
 
 #### Option 1: Associate sales tax codes used in Finance with Norwegian standard VAT codes by using the application-specific parameters of the ER format
 
-To associate sales tax codes that are used in Finance with Norwegian standard VAT codes by using the application-specific parameters of the ER format, follow these steps.
+To associate sales tax codes that are used in Finance with Norwegian standard VAT codes by using the application-specific parameters of the ER format, follow these steps:
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
 1. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and then select **SAF-T Format (NO)**.
@@ -141,7 +141,7 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 
 #### Option 2: Associate sales tax codes used in Finance with Norwegian standard VAT codes by using the External codes functionality
 
-To associate sales tax codes that are used in Finance with Norwegian standard VAT codes by using the External codes functionality, follow these steps.
+To associate sales tax codes that are used in Finance with Norwegian standard VAT codes by using the External codes functionality, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. On the **Sales tax code** page, select the **Sales tax code** record, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
@@ -159,7 +159,7 @@ In Norwegian SAF-T Financial data, main accounts that are used in Finance must b
 
 As of version 175.119 of the **SAF-T Format (NO)** ER format, you can use of the following two options to associate main accounts that are used in Finance with Norwegian standard accounts or an Income statement. Base your choice on your company's setup and preferences.
 
-To associate main accounts that are used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder), follow these steps.
+To associate main accounts that are used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder), follow these steps:
 
 1. Use additional consolidation accounts. Use this option to associate main accounts that are used in Finance with an Income statement (grouping category and grouping code).
 1. Use the application-specific parameters of the ER format. This option supports only Norwegian standard accounts and is available only before January 1, 2025.
@@ -171,7 +171,7 @@ If option 1 is used, the report doesn't consider option 2. If any of the main ac
 
 #### Option 1: Associate main accounts used in Finance with Norwegian standard accounts or an Income statement by using additional consolidation accounts
 
-To associate main accounts that are used in Finance with Norwegian standard accounts or an Income statement by using additional consolidation accounts, follow these steps.
+To associate main accounts that are used in Finance with Norwegian standard accounts or an Income statement by using additional consolidation accounts, follow these steps:
 
 1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). You can choose any name for consolidation account group, this name isn't used in the XML report. **Consolidation account group** is used as a link to the set of **Additional consolidation accounts** where Norwegian standard accounts or an Income statement (Næringslivskoder) for the purpose of SAF-T reporting are defined.
 1. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. If the **Use grouping category** option of the report is turned off, this value is reported in the **StandardAccountID** element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node (available only before January 1, 2025). If the **Use grouping category** option of the report is turned on, this value is reported in the **GroupingCode** field of the report. In the **Consolidation account name** field, you can optionally specify the standard account name or description. This value isn't used in SAF-T.
@@ -185,7 +185,7 @@ Learn more about additional consolidation accounts in [Consolidation account gro
 > - SAF-T Format (NO) **175.137**
 > - SAF-T Financial data model mapping **175.92**
 
-To associate the main accounts that are used in Finance with Norwegian standard accounts by using the application-specific parameters, follow these steps.
+To associate the main accounts that are used in Finance with Norwegian standard accounts by using the application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
 1. In the configuration tree, select the **SAF-T Format (NO)** ER format.
@@ -204,7 +204,7 @@ You can easily export the setup of application-specific parameters from one vers
 
 Regardless of whether you use the options to associate standard tax codes and standard main accounts with application-specific parameters, you must complete the configuration of the application-specific parameters.
 
-To complete the configuration of application-specific parameters, follow these steps.
+To complete the configuration of application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
 1. In the configuration tree, select the **SAF-T Format (NO)** ER format.
@@ -215,7 +215,7 @@ To complete the configuration of application-specific parameters, follow these s
 
 ## Generate the Norwegian SAF-T Financial data report
 
-To generate the **Norwegian SAF-T Financial data** report, follow these steps.
+To generate the **Norwegian SAF-T Financial data** report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 1. In the dialog for the report, in the **From date** and **To date** fields, specify the start and end dates of the period that you want to generate the report for.
@@ -263,7 +263,7 @@ You can also apply filters for the **Main accounts** and **General journal entry
 
 A SAF-T report for a long time period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. Therefore, we recommend that you use batch jobs. The dialog for the SAF-T report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
-To review batch jobs or find a generated file, follow these steps.
+To review batch jobs or find a generated file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.

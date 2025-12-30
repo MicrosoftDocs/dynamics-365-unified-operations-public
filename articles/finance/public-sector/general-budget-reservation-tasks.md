@@ -25,7 +25,7 @@ This article explains how to complete typical tasks for general budget reservati
 
 After you set up your system to use general budget reservations, you can create reservation documents. General budget reservations are available to the documents that are required for the purchasing method that you select. These purchasing methods include purchase order, purchase requisition, and vendor invoice.
 
-To create a general budget reservation, follow these steps.
+To create a general budget reservation, follow these steps:
 
 1. Go to **Budgeting \> General budget reservations**.
 2. Select **New**.

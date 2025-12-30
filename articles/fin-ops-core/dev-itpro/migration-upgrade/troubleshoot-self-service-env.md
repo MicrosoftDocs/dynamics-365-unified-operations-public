@@ -38,7 +38,7 @@ In the SQL Server Replication Monitor, on the **Agents** tab, select the failed 
 
 ## Scenario 4: One of the steps fails in the migration app, and you must rerun that step.
 
-If one of the steps fails in the migration app, and you must rerun that step, follow these steps.
+If one of the steps fails in the migration app, and you must rerun that step, follow these steps:
 
 1. Close the migration app.
 1. In the migration app folder, find the **Data** folder.
@@ -86,7 +86,7 @@ In the migration app, run the **'ds'** option. This option reads the status of t
 
 ## Scenario 7: You want to skip a manually run step that failed and move on to other steps.
 
-To skip a manually run step that failed and move on to other steps, follow these steps.
+To skip a manually run step that failed and move on to other steps, follow these steps:
 
 1. Close the migration app.
 1. In the migration app folder, find the **Data** folder.
@@ -98,7 +98,7 @@ To skip a manually run step that failed and move on to other steps, follow these
 
 ## Scenario 8: You want to migrate from an old version of the console app to the new version.
 
-To migrate from an old version of the console app to the new version, follow these steps.
+To migrate from an old version of the console app to the new version, follow these steps:
 
 1. Download the latest version of the console app from Lifecycle Services.
 1. Copy the **/paramsdata.txt** and **/Data/ReplicationMenu.json** files from the old version of the console app, and put them under the same paths in the new version of the console app.
@@ -116,7 +116,7 @@ In the Replication Monitor, select and hold (or right-click) the publication, an
 
 The data upgrade status might not have been updated in the console app.
 
-To resume the data upgrade, follow these steps.
+To resume the data upgrade, follow these steps:
 
 1. To learn the status of the console app, use the **Help** option. This option lists all the menu options and shows the current state.
 1. If the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure is **Successful**, run the **'ds'** option in the migration app. This option updates the data upgrade status.

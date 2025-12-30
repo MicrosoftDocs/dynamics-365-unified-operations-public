@@ -72,7 +72,7 @@ By default, internal gift cards aren't optimized for use in e-commerce storefron
 
 ## Enable gift card payments for guest checkout
 
-By default, gift card payments aren't enabled for guest (anonymous) checkout. To enable them, follow these steps.
+By default, gift card payments aren't enabled for guest (anonymous) checkout. To enable them, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> POS Operations**.
 1. Select and hold (or right-click) the header of the grid, and then select **Insert columns**.

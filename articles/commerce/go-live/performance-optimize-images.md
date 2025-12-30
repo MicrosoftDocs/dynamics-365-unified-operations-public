@@ -35,7 +35,7 @@ Install the Dynamics 365 Commerce online software development kit (SDK). For mor
 
 ## Steps to optimize images
 
-One of the biggest performance hits for a webpage can occur when images are downloaded. To reduce the size of your images and help improve the actual and perceived performance of your website, follow these steps.
+One of the biggest performance hits for a webpage can occur when images are downloaded. To reduce the size of your images and help improve the actual and perceived performance of your website, follow these steps:
 
 1. Use Cascading Style Sheets (CSS) to generate images for items such as buttons whenever you can.
 1. Upload high-quality/high-resolution marketing or product images to the Commerce site builder [Media Library](../dam-overview.md). The image resizer will then automatically be used during rendering.

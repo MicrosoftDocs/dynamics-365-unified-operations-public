@@ -33,7 +33,7 @@ Before you import or export reports, the following prerequisites must be in plac
 
 ## Export
 
-To export custom reports from the source organization, follow these steps.
+To export custom reports from the source organization, follow these steps:
 
 1. Navigate to the administration home page in the source environment.
 2. Select **Manage** on the **Import/Export reports** tile.
@@ -53,7 +53,7 @@ To export custom reports from the source organization, follow these steps.
 
 ## Import
 
-To import custom reports into the target organization, follow these steps.
+To import custom reports into the target organization, follow these steps:
 
 1. Navigate to the administration home page in the target environment.
 2. Select **Manage** on the **Import/Export reports** tile.

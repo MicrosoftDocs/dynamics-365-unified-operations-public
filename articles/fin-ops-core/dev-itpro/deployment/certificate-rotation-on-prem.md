@@ -33,7 +33,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Update your infrastructure scripts by following the steps in [Update your Infrastructure Scripts](obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 
-1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-latest.md#configurecert). Specifically, follow these steps.
+1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-latest.md#configurecert). Specifically, follow these steps:
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -295,7 +295,7 @@ If you've generated a new **axdataencipherment** certificate, you must re-encryp
 .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
 ```
 
-Alternatively, if you also want to rotate the existing credentials, follow these steps.
+Alternatively, if you also want to rotate the existing credentials, follow these steps:
 
 1. Decrypt the **Credentials.json** file.
 

@@ -22,7 +22,7 @@ This article describes how to verify, import, and remove demo data. It also expl
 
 Usually, the installation process automatically installs demo data when you first install the Traceability Add-in for Dynamics 365 Supply Chain Management.
 
-To check whether your system has demo data, follow these steps.
+To check whether your system has demo data, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Activity**.
@@ -51,7 +51,7 @@ When you're done exploring the demo data, you can remove it from your system, al
 > [!WARNING]
 > This procedure removes *all* data from the Traceability Add-in for Supply Chain Management, not just the demo data. Be sure you want to delete all data before you proceed.
 
-To delete all data from the Traceability Add-in, follow these steps.
+To delete all data from the Traceability Add-in, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Home** \> **Get started**.

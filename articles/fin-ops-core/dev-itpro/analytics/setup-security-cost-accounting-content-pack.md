@@ -24,7 +24,7 @@ This article explains how you can propagate the access-level security in Cost ac
 The **Cost accounting analysis** Microsoft Power BI content uses Power BI row-level security to limit a user's access. Security is based on the access-level organizational hierarchy that is set up in the Cost accounting parameters. For more information about the **Cost accounting analysis** Power BI content, see [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md).
 
 ## Setup
-To propagate access-level security to Power BI, the owner of the Power BI content must follow these steps.
+To propagate access-level security to Power BI, the owner of the Power BI content must follow these steps:
 
 > [!NOTE]
 > The user who publishes the **Cost accounting analysis** Power BI content automatically becomes the owner. Only an owner can set up security in Power BI. Additionally, until an owner adds other users on PowerBI.com, no one except the owner can see any data in the **Cost accounting analysis** Power BI content.

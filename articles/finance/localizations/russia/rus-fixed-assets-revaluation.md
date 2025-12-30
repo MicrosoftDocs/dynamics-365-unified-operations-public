@@ -28,7 +28,7 @@ As a result of revaluation of fixed asset cost and depreciation, the following e
 - Ledger and fixed asset transactions are created. The fixed asset transactions that are created have transaction types of **Cost revaluation** and **Depreciation revaluation**.
 - On the **Balance by FA** page, the **Cost revaluation** and **Depreciation revaluation** fields are filled in, and the value in the **Net book value** field is increased or decreased by the revaluation transaction amount.
 
-To revaluate fixed asset cost and depreciation, follow these steps.
+To revaluate fixed asset cost and depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Periodic journals** \> **FA revaluation** to open the **FA revaluation** page.
 2. Select **New** to create a revaluation journal.
@@ -67,7 +67,7 @@ To revaluate fixed asset cost and depreciation, follow these steps.
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
 
-To reverse fixed asset revaluation transactions, follow these steps.
+To reverse fixed asset revaluation transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Fixed assets**, and on the Action Pane, select **Value models**.
 2. On the **FA value models** page, on the Action Pane, select **Transactions**.

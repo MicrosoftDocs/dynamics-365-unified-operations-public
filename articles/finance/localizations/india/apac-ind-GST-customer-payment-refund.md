@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-06-01
 
 This article explains how to create and configure a customer advance payment journal for customer refunds and validate tax details and financial entries in Microsoft Dynamics 365 Finance.
 
-To create and configure a customer advance payment journal, follow these steps.
+To create and configure a customer advance payment journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Payment journal**.
 1. Create a record.
@@ -33,7 +33,7 @@ To create and configure a customer advance payment journal, follow these steps.
 
 ## Validate the tax details
 
-To validate the tax details, follow these steps.
+To validate the tax details, follow these steps:
 
 1. Select **Tax document**.
 1. Select **Close**.

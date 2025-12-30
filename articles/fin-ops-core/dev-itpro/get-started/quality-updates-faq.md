@@ -28,7 +28,7 @@ No. The main purpose of PQUs is to ensure that fundamentals such as security, pr
 
 ### How do I know what set of changes is included in a PQU?
 
-To identify the changes that are included in a PQU, follow these steps. This example uses the 10.0.28 PQU train and related app version 10.0.1265.89.
+To identify the changes that are included in a PQU, follow these steps: This example uses the 10.0.28 PQU train and related app version 10.0.1265.89.
 
 1. In Microsoft Dynamics Lifecycle Services, open the **Environment details** page for your sandbox environment.
 2. In the **Available Updates** section, select **View Update** for the latest quality update build.
@@ -109,7 +109,7 @@ The First Release Program (FRP) for PQUs (also known as Station 1) gives all fin
 
 The program is open to all finance and operations apps customers at all times. Only sandbox environments qualify for selection. Anyone who has a **Project owner** security role for the Lifecycle Services project can select a sandbox environment in the project.
 
-To select a sandbox environment for the FRP for PQUs, follow these steps.
+To select a sandbox environment for the FRP for PQUs, follow these steps:
 
 1. In Lifecycle Services, select the project.
 2. Select **Project Settings** for the project.

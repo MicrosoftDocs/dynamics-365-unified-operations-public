@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 This article explains how to start to send telemetry from [!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] environments to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)].
 
-To configure your environments to send telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps.
+To configure your environments to send telemetry to [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps:
 
 1. Set up an Application Insights resource in Azure.
 1. Enable the **Monitoring and Telemetry** feature in [!INCLUDE[finops-product-name-short](includes/finops-product-name-short.md)].
@@ -29,7 +29,7 @@ To get started, you must create a [!INCLUDE[appinsights](./includes/azure-applic
 
 ## Enable the Monitoring and telemetry feature
 
-To enable the Monitoring and telemetry feature, follow these steps.
+To enable the Monitoring and telemetry feature, follow these steps:
 
 1. In Finance and Supply Chain Management, open the **Feature management** workspace.
 1. Filter the feature list to find the **Monitoring and Telemetry** feature. Select the feature, and then select **Enable**.
@@ -38,7 +38,7 @@ To enable the Monitoring and telemetry feature, follow these steps.
 
 ## Configure environments and link to Application Insights
 
-Environments are categorized into one of the following environment modes: development, test, or production. To link environments to specific modes, follow these steps.
+Environments are categorized into one of the following environment modes: development, test, or production. To link environments to specific modes, follow these steps:
 
 1. In Finance and Supply Chain Management, go to **System administration** \> **Monitoring and Telemetry parameters**.
 1. On the **Monitoring settings** page, on the **Environments** tab, create a record for each environment that you want to emit telemetry for. Multiple environments can be entered here. By entering all your environments, you ensure that database refresh operations include this configuration and are synced across environments.

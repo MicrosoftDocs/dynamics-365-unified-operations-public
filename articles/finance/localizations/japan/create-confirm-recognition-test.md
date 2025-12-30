@@ -25,7 +25,7 @@ The following procedure walks you through how to run the two-step process in a r
 
 Before you complete the procedure, you must first select the **Fixed Asset** configuration key.
 
-To create and confirm a recognition test, follow these steps.
+To create and confirm a recognition test, follow these steps:
 
 1. In Dynamics 365 Finance, for Method I, go to **Fixed assets \> Periodic tasks \> Impairment recognition (Method I: on a bigger group than CGU)**. For Method II, go to **Fixed assets \> Periodic tasks \> Impairment recognition (Method II: Allocate carrying amount of shared asset/goodwill to CGUs)**.  
 1. Select **New**.

@@ -53,7 +53,7 @@ If more than one due date limit applies to an invoice, the due date limit that h
 
 Use the **Due date limits** page to create due date limits that specify the maximum number of days that invoice payments must be made within.
 
-To set up due date limits to calculate invoice due dates, follow these steps.
+To set up due date limits to calculate invoice due dates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payments setup \> Due date limits**.
 
@@ -99,7 +99,7 @@ You must specify a payment due date that is before the due date limit for an inv
 
 You can generate the **Information on average period of payments to suppliers** report This statistical report contains information about the invoices that were paid during a period that you specify. The report shows the amounts that were paid based on the payment terms. It also shows the amounts that were paid outside the payment terms. The report includes the amounts that were paid by using payment journals and promissory notes.
 
-To generate the report, follow these steps.
+To generate the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Inquiries and reports \> Ledger reports \> Information on average period of payments to suppliers**.
 1. In the **Current period** field group, select the start and end dates of the period for which you're generating the report.

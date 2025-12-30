@@ -45,7 +45,7 @@ The following image shows an example of a text block module that is used on a ho
 
 ## Add a text block module to a page
 
-To add a text block module to a new page and set the required properties, follow these steps.
+To add a text block module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Content template**.

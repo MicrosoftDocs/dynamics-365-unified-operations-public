@@ -30,7 +30,7 @@ Before you can work with the Excel add-in, the following prerequisites must be i
 
 ## Install the Excel add-in
 
-To install the Excel add-in for business performance planning, follow these steps.
+To install the Excel add-in for business performance planning, follow these steps:
 
 1. Sign in to the business performance planning app.
 2. On the home page, on the **Plan in Excel** tile, select **Install add-in**.
@@ -40,7 +40,7 @@ To install the Excel add-in for business performance planning, follow these step
 
 ## Delete the Excel add-in
 
-If you must delete the Excel add-in, follow these steps.
+If you must delete the Excel add-in, follow these steps:
 
 1. On your computer, go to **Add or Remove Programs**.
 2. Search for **BusinessPerformanceExcelAddin**.

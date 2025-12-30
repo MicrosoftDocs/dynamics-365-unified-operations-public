@@ -168,7 +168,7 @@ Starting with the Retail 8.1.1 release, the capability to set up discounts at a 
 
 The ability to find and calculate applicable discounts in a performant manner is a critical factor that affects a retailer's overall business efficiency. As of the Commerce version **10.0.23** release, the Commerce pricing engine includes an improved discount calculation feature that uses a flattened data schema to achieve faster discount lookup and calculation at runtime. When this feature is enabled, discount data that is configured in Commerce headquarters is denormalized before it's sent to channel databases. The publication of flattened discount data is then automatically triggered when a discount is enabled.
 
-To enable the improved discount calculation feature, follow these steps.
+To enable the improved discount calculation feature, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Pricing and discounts**.
 1. Select **Process commerce discounts**.

@@ -21,7 +21,7 @@ This article describes how to export and import transactions for General ledger 
 
 You can transfer general ledger transactions from the source company to the consolidated account of a consolidated company without consolidating the transactions.
 
-To export and import transactions for general ledger consolidation, follow these steps.
+To export and import transactions for general ledger consolidation, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Export company balances** page.
 1. In the **From:** field, enter a start date.

@@ -30,7 +30,7 @@ Follow the steps required to create your experiment in the third-party service. 
 ## Set up your success metrics
 Every experiment needs metrics to measure the impact of the variations and to validate the hypothesis. Follow the steps below to enable the computation of metrics in the third-party service using live telemetry events from Dynamics 365 Commerce.
 
-To set up your success metrics for out-of-the-box modules, follow these steps.
+To set up your success metrics for out-of-the-box modules, follow these steps:
 
 1. In Commerce site builder, select **Pages** in the left navigation pane, and then select the page that you want to collect metrics for. 
 1. Go to the **Event IDs to track** section in the right property pane of the page or module you want to track.

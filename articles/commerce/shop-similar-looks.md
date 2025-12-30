@@ -44,7 +44,7 @@ Before retailers can begin to show "shop similar looks" recommendations to custo
 - [Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
 - Confirm that the media server supports HTTPS calls.
 
-For the recommendations engine to access the product images, retailers must generate the product URLs. To generate product URLs in Commerce headquarters, follow these steps.
+For the recommendations engine to access the product images, retailers must generate the product URLs. To generate product URLs in Commerce headquarters, follow these steps:
 
 1. Go to **Product images**.
 1. On the Action Pane, select **Define media template**.
@@ -53,7 +53,7 @@ For the recommendations engine to access the product images, retailers must gene
 > [!NOTE]
 > When you enable the "shop similar looks" recommendations feature, the process of generating product recommendation lists begins. Up to a day might be required before those lists are available and visible online and on POS terminals.
 
-To enable the "shop similar looks" recommendations feature in Commerce headquarters, follow these steps.
+To enable the "shop similar looks" recommendations feature in Commerce headquarters, follow these steps:
 
 1. Go to **Feature management**.
 1. In the list of available features, search for and select **Shop similar looks**.
@@ -72,7 +72,7 @@ After the preceding tasks been completed, POS terminals are automatically enhanc
 
 After you enable the "shop similar looks" recommendations feature in Commerce headquarters, an option in Commerce site builder lets retailers to add a **Shop similar looks** button to the buy box on any product details page (PDP). A customer who selects this button is taken to a dedicated "shop similar looks" page that returns visually similar products. There, the customer can use selectors to further filter the products.
 
-To add a **Shop similar looks** button to a PDP by using Commerce site builder, follow these steps.
+To add a **Shop similar looks** button to a PDP by using Commerce site builder, follow these steps:
 
 1. Open an existing site builder page that contains a buy box module.
 1. In the left navigation pane, select the buy box module.

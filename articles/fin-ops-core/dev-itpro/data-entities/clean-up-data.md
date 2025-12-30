@@ -25,7 +25,7 @@ ms.reviewer: twheeloc
 
 ### Execution history cleanup batch error
 
-If a **Job history cleanup** batch job has already been scheduled, it must be deleted before a new recurrence can be rescheduled. If you try to schedule a batch recurrence when one has already been scheduled, an error occurs. To address the error, follow these steps.
+If a **Job history cleanup** batch job has already been scheduled, it must be deleted before a new recurrence can be rescheduled. If you try to schedule a batch recurrence when one has already been scheduled, an error occurs. To address the error, follow these steps:
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 2. Search for the description **Job history cleanup**.

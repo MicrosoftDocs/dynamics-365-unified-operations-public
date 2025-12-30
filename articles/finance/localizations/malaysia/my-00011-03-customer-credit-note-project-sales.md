@@ -25,7 +25,7 @@ The procedures use the demo data company MYMF.
 
 ## Create a project credit note
 
-To create a project credit note, follow these steps.
+To create a project credit note, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> All projects**.
 1. On the Action Pane, select **Project**.
@@ -48,7 +48,7 @@ To create a project credit note, follow these steps.
 
 ## Create and post an invoice proposal
 
-To create and post an invoice proposal, follow these steps.
+To create and post an invoice proposal, follow these steps:
 
 1. On the Action Pane, select **Manage**.
 1. Select **Invoice proposal**.

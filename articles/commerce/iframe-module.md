@@ -41,7 +41,7 @@ The following image shows examples of iframe modules that showcase external vide
 
 ## Add an iframe module to a page
 
-To add an iframe module to a page to show an external video, follow these steps.
+To add an iframe module to a page to show an external video, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.

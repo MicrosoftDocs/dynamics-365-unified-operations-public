@@ -54,7 +54,7 @@ Vendor invoice document attachment is a new data entity that is introduced as pa
 
 For detailed information about data packages, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information about how to create data packages using the data management workspace, see [Process and consume data packages in Dynamics 365 finance and operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
-To quickly generate test data that includes invoices and attachments, follow these steps.
+To quickly generate test data that includes invoices and attachments, follow these steps:
 
 1. Sign in to your instance.
 1. Go to **Accounts payables** > **Invoices** > **Pending vendor invoices**.

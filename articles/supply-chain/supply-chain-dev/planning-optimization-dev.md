@@ -42,7 +42,7 @@ After you complete the steps in the [Step-by-step provisioning guide](/power-pla
 
 ### Confirm that the Planning Optimization Add-in is installed
 
-To confirm that you successfully added the Planning Optimization Add-in to your environment, follow these steps.
+To confirm that you successfully added the Planning Optimization Add-in to your environment, follow these steps:
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the navigation pane, select **Environments**, and then open the environment where you installed the add-in.
@@ -51,7 +51,7 @@ To confirm that you successfully added the Planning Optimization Add-in to your 
 
 ### Turn on Planning Optimization for your Supply Chain Management environment
 
-To turn on Planning Optimization for your Supply Chain Management environment, follow these steps.
+To turn on Planning Optimization for your Supply Chain Management environment, follow these steps:
 
 1. Sign in to your new Supply Chain Management environment. (You can find your Supply Chain Management URL on the environment page in [Power Platform admin center](https://admin.powerplatform.microsoft.com).)
 1. Follow the instructions in [Turn on Planning Optimization for your environment](/dynamics365/supply-chain/master-planning/planning-optimization/get-started#turn-on-planning-optimization-for-your-environment).

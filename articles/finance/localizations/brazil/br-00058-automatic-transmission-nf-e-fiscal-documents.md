@@ -23,7 +23,7 @@ Use the following procedure to set up email parameters to automatically send an 
 
 This task uses the BRMF demo company.
 
-To set up email parameters to automatically send an NF-e to a vendor or customer after the NF-e is approved or canceled, follow these steps.
+To set up email parameters to automatically send an NF-e to a vendor or customer after the NF-e is approved or canceled, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> Batch group**.
 1. Select **New**.

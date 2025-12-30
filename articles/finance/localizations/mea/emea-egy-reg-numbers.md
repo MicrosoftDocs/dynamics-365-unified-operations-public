@@ -27,7 +27,7 @@ The primary address of the legal entity must be in Egypt.
 
 ## Configure a commercial registration number
 
-To configure a commercial registration number, follow these steps.
+To configure a commercial registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 1. Create a new registration type, and in the **Country/region** field, select **EGY - Egypt**.
@@ -38,7 +38,7 @@ To configure a commercial registration number, follow these steps.
 
 ## Configure a national number
 
-To configure a national number, follow these steps.
+To configure a national number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 1. Create a new registration type, and in the **Country/region** field, select **EGY - Egypt**.
@@ -49,7 +49,7 @@ To configure a national number, follow these steps.
 
 ## Configure a file tax number
 
-To configure a file tax number, follow these steps.
+To configure a file tax number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 1. Create a new registration type, and in the **Country/region** field, select **EGY - Egypt**.
@@ -63,7 +63,7 @@ After you configure the registration numbers, use them for legal entities, custo
 
 ### Enter legal entity registration numbers
 
-To enter legal entity registration numbers, follow these steps.
+To enter legal entity registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then select **Registration IDs**.
@@ -76,7 +76,7 @@ To enter legal entity registration numbers, follow these steps.
 
 ### Enter a customer registration number
 
-To enter a customer registration number, follow these steps.
+To enter a customer registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then select **Registration** \> **Registration IDs**.
@@ -86,7 +86,7 @@ To enter a customer registration number, follow these steps.
 
 ### Enter a vendor registration number
 
-To enter a vendor registration number, follow these steps.
+To enter a vendor registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor, and then select **Registration** \> **Registration IDs**.

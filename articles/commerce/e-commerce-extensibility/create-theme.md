@@ -71,7 +71,7 @@ For example, the file name and path of the **spring** theme might be **...\\src\
 
 You can easily test a theme in your development environment by using the **?theme=THEME\_NAME** query string parameter.
 
-To test your theme, follow these steps.
+To test your theme, follow these steps:
 
 1. At a command prompt, under the directory of your local code repository, run **yarn start**. 
 1. In a web browser, load a module test page, and add the **?theme=THEME\_NAME** query string parameter, as shown in the following example.

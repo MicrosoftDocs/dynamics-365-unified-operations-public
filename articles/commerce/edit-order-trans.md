@@ -26,7 +26,7 @@ Between Commerce versions 10.0.5 and 10.0.6, support was added for editing cash 
 
 ## Edit and audit order transactions
 
-To edit and audit order transactions in Commerce headquarters, follow these steps.
+To edit and audit order transactions in Commerce headquarters, follow these steps:
 
 1. Install the [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
 1. On the **Commerce parameters** page, on the **Customer orders** tab, on the **Order** FastTab, specify a hold code for **Hold code for order synchronization errors**.

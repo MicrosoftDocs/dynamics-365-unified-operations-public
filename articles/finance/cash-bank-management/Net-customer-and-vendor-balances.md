@@ -98,7 +98,7 @@ To view the **Netting history** inquiry, which displays netted transactions betw
 
 ## Intercompany netting
 
-To create an intercompany netting agreement for customers and vendors in different legal entities, follow these steps.
+To create an intercompany netting agreement for customers and vendors in different legal entities, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 2. On the **Netting** tab, select **Allow intercompany netting**.

@@ -33,7 +33,7 @@ For more information, see the following articles.
 
 ## Create an organizational hierarchy
 
-To create an organizational hierarchy, follow these steps.
+To create an organizational hierarchy, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel Setup \> Organization hierarchies**.
 1. On the action pane, select **New**.
@@ -50,7 +50,7 @@ The following image shows an example organizational hierarchy created for a fict
 
 ### Add organizations to a hierarchy
 
-To add organizations to a hierarchy, follow these steps.
+To add organizations to a hierarchy, follow these steps:
 
 1. In the list, find and select the desired record. Select your hierarchy.
 1. On the action pane, select **View**.

@@ -58,7 +58,7 @@ The outline tree view on the left shows the module options and structures that a
 
 ## Create a new template
 
-To create a new template in site builder, follow these steps.
+To create a new template in site builder, follow these steps:
 
 1. In the navigation pane of your site, select **Templates** to open the template inspector view.
 1. Select **New Template**.
@@ -102,7 +102,7 @@ By default, all new pages will now use the selected theme. To prevent pages from
 
 You can add HTML **&lt;script&gt;** elements that contain JavaScript to your template. In this way, you can provide default script behaviors to the HTML head, body begin, and body end sections of your pages.
 
-To add a script to a template in site builder, follow these steps.
+To add a script to a template in site builder, follow these steps:
 
 1. In the outline tree on the left, select the slot where you want to add the **&lt;script&gt;** element (for example, the HTML head, body begin, or body end).
 1. Select the ellipsis button for the slot, and then select **Add Module**.
@@ -115,7 +115,7 @@ To add a script to a template in site builder, follow these steps.
 
 ## Save, check in, preview, and publish a template
 
-To save and check in a template in site builder, follow these steps.
+To save and check in a template in site builder, follow these steps:
 
 1. Select **Save** at the top of the template editor. Saved changes don't affect downstream pages until they are checked in.
 1. Select **Finish editing**. Your changes are now discoverable for downstream workflows.
@@ -133,7 +133,7 @@ After you've previewed the changes to your template, follow one of these steps t
 
 ## Rename a template
 
-To rename an existing template in site builder, follow these steps.
+To rename an existing template in site builder, follow these steps:
 
 1. In the left navigation pane, select **Templates**.
 1. Select the template name of the template that you want to rename.

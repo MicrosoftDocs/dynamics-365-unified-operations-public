@@ -26,7 +26,7 @@ After the Commerce solution has been deployed through Microsoft Dynamics Lifecyc
 > [!IMPORTANT]
 > Before you initialize the commerce configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up stores. This step must be completed for each legal entity that you use for commerce.
 
-To initialize the configuration, follow these steps.
+To initialize the configuration, follow these steps:
 
 1. Start the Commerce client.
 2. Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.

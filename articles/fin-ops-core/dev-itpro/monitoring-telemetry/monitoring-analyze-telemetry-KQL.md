@@ -19,7 +19,7 @@ Telemetry from Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Mana
 
 ## Run your first KQL query
 
-To run your first KQL (Kusto) query, follow these steps.
+To run your first KQL (Kusto) query, follow these steps:
 
 1. In the [Azure portal](https://portal.azure.com), open your Application Insights resource.
 1. On the **Monitoring** menu, select **Logs**.

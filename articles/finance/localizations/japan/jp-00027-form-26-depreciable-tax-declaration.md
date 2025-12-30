@@ -25,7 +25,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Create a registration number
 
-To create a registration number, follow these steps.
+To create a registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Select **Registration IDs**.
@@ -48,7 +48,7 @@ To create a registration number, follow these steps.
 
 ## Create a fixed asset location and assign registration number
 
-To create a fixed asset location and assign registration number, follow these steps.
+To create a fixed asset location and assign registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset attributes \> Fixed assets locations**.
 1. Select **New**.
@@ -63,7 +63,7 @@ To create a fixed asset location and assign registration number, follow these st
 
 ## Define location to a fixed asset group
 
-To define location to a fixed asset group, follow these steps.
+To define location to a fixed asset group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset groups**.
 1. In the list, find and select the desired record. For example, select **VEHI-A**.  
@@ -73,7 +73,7 @@ To define location to a fixed asset group, follow these steps.
 
 ## Create a fixed asset
 
-To create a fixed asset, follow these steps.
+To create a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.
@@ -83,7 +83,7 @@ To create a fixed asset, follow these steps.
 
 ## Create an acquisition
 
-To create an acquisition, follow these steps.
+To create an acquisition, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -97,7 +97,7 @@ To create an acquisition, follow these steps.
 
 ## Verify the Form 26 report
 
-To verify the Form 26 report, follow these steps.
+To verify the Form 26 report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Inquiries and reports \> Depreciable asset declaration reports \> Form 26: Depreciable assets taxation ledger report**.
 1. In the **Calendar year** field, enter or select a value.

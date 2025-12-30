@@ -41,7 +41,7 @@ Advanced cell placement, or *forcing*, involves placing specific values into spe
 - Modify signs by copying a value from a previous cell and multiplying that value by -1.
 
 > [!NOTE]
-> In many cases, you must configure your report definition so that column calculations are done before row calculations. To complete this configuration, follow these steps.
+> In many cases, you must configure your report definition so that column calculations are done before row calculations. To complete this configuration, follow these steps:
 >
 > 1. In Report Designer, open the report definition.
 > 1. On the **Settings** tab, under **Calculation priority**, select **Perform column calculation first and then row**.

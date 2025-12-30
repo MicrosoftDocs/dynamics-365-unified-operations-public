@@ -40,7 +40,7 @@ For more information about how to import ER configurations, see [Download Electr
 
 ### Reference the imported ER format configurations
 
-To reference the imported ER format configurations, follow these steps.
+To reference the imported ER format configurations, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
@@ -56,7 +56,7 @@ To reference the imported ER format configurations, follow these steps.
 
 ### Configure legal entity parameters
 
-To configure legal entity parameters, follow these steps.
+To configure legal entity parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's value-added tax (VAT) number.
@@ -69,7 +69,7 @@ To configure legal entity parameters, follow these steps.
 
 ### Configure customer parameters
 
-To configure customer parameters, follow these steps.
+To configure customer parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
@@ -80,7 +80,7 @@ To configure customer parameters, follow these steps.
 
 ### Configure units of measure configuration
 
-To configure units of measure configuration, follow these steps.
+To configure units of measure configuration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
@@ -102,7 +102,7 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 #### Free text invoices
 
-To enter a customer requisition for a free text invoice, follow these steps.
+To enter a customer requisition for a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Create a new invoice, or select an existing invoice.
@@ -110,7 +110,7 @@ To enter a customer requisition for a free text invoice, follow these steps.
 
 #### Sales orders
 
-To enter a customer requisition for a sales order, follow these steps.
+To enter a customer requisition for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. Create a new sales order, or select an existing sales order. 
@@ -118,7 +118,7 @@ To enter a customer requisition for a sales order, follow these steps.
 
 #### Project invoices
 
-To enter a customer requisition for a project invoice, follow these steps.
+To enter a customer requisition for a project invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 2. Create a new project contract, or select an existing project contract.
@@ -144,7 +144,7 @@ You can enter customer accounting codes when you work with free text invoices, i
 
 #### Free text invoices
 
-To enter customer accounting codes for free text invoices, follow these steps.
+To enter customer accounting codes for free text invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Create a new invoice, or select an existing invoice. 
@@ -159,7 +159,7 @@ To enter customer accounting codes for free text invoices, follow these steps.
 
 #### Sales orders
 
-To enter customer accounting codes for sales orders, follow these steps.
+To enter customer accounting codes for sales orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. Create a new sales order, or select an existing sales order.
@@ -172,7 +172,7 @@ To enter customer accounting codes for sales orders, follow these steps.
 
 #### Project invoices
 
-To enter customer accounting codes for project invoices, follow these steps.
+To enter customer accounting codes for project invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 2. Create a new project contract, or select an existing project contract.
@@ -204,7 +204,7 @@ When an invoice is posted, you can generate an electronic invoice by selecting *
 
 ### View e-invoices
 
-To view e-invoices, follow these steps.
+To view e-invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Select a job, and then select **Show files**.

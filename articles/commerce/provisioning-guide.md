@@ -45,7 +45,7 @@ The following procedures explain how to provision a Commerce environment. After 
 
 ### Initialize the Commerce Scale Unit (cloud)
 
-To initialize the CSU, follow these steps.
+To initialize the CSU, follow these steps:
 
 1. In LCS, select your environment from the list.
 1. In the **ENVIRONMENTS** view on the right, select **Full details**. The environment details view appears.
@@ -61,7 +61,7 @@ If you can't find the **Manage** link in the environment details view, reach out
 
 ### Initialize e-Commerce
 
-To initialize Commerce, follow these steps.
+To initialize Commerce, follow these steps:
 
 1. On the **e-Commerce** tab, select **Setup**.
 1. In the **e-Commerce environment name** field, enter a name. Be aware that this name will appear in some of the URLs that point to your e-Commerce instance.

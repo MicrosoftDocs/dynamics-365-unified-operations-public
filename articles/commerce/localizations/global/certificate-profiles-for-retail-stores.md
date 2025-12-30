@@ -59,7 +59,7 @@ For more information about how to work with Key Vault, see [Get started with Azu
 
 Before you configure certificate profiles in the Commerce channels, you must enable Commerce to use both certificates that are stored in Key Vault and certificate profiles.
 
-To set up system parameters in Commerce headquarters, follow these steps.
+To set up system parameters in Commerce headquarters, follow these steps:
 
 1. On the **System parameters** page, set the **Use advanced certificate store** option to **Yes**.
 1. In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
@@ -78,7 +78,7 @@ For more information, see [Set up the Azure Key Vault client](../../../finance/l
 
 ### Configure a certificate profile
 
-To configure a certificate profile in Commerce headquarters, follow these steps.
+To configure a certificate profile in Commerce headquarters, follow these steps:
 
 1. Go to **System administration \> Setup \> Certificate profiles**.
 1. On the Action Pane, select **New** to create a record.

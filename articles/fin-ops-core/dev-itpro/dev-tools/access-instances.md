@@ -265,7 +265,7 @@ Once cleared, use the forms in headquarters to set up your payment gateway merch
 
 ## Redeploy or restart the runtime on the VM
 
-To restart the local runtime and redeploy all the packages, follow these steps.
+To restart the local runtime and redeploy all the packages, follow these steps:
 
 1. Open File Explorer, and go to C:\CustomerServiceUnit.
 2. Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.

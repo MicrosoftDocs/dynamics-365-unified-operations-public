@@ -24,7 +24,7 @@ See [Organizational hierarchies](channels-org-hierarchies.md) for more details o
 
 ## Select a hierarchy
 
-To select a hierarchy, follow these steps.
+To select a hierarchy, follow these steps:
 
 1. In the navigation pane, go to **Go to Navigation pane > Modules > Organization administration > Organizations > Organization hierarchies**.
 1. From the list, select the organization hierarchy to which you're adding the channel.
@@ -36,7 +36,7 @@ The following image shows organizational hierarchy details for the selected hier
 
 ## Add a channel to a hierarchy node
 
-To add a channel to a hierarchy node, follow these steps.
+To add a channel to a hierarchy node, follow these steps:
 
 1. On the action pane, select **Edit**.
 1. Select the hierarchy node you want the channel added to, then from the **Insert** drop-down list, select **Retail Channel**. 

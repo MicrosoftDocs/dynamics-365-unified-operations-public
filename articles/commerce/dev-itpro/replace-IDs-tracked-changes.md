@@ -24,7 +24,7 @@ In Dynamics 365 Commerce, the site builder authoring tool tracks changes that ar
 
 ## Replace a user ID in site builder
 
-To replace a user ID in site builder, follow these steps.
+To replace a user ID in site builder, follow these steps:
 
 1. Go to the **Home** page for your site.
 1. In the left navigation pane, expand **Tenant Settings**, and then select **Tracking Content Changes**.

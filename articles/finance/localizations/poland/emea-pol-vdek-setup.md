@@ -71,7 +71,7 @@ The format includes the following lookup fields for setup.
 | SprzedazVAT_MarzaSelector     | The value of gross sales of supplies of goods and services that are taxed based on a margin, in accordance with articles 119 and 120 of the VAT Act | Use this lookup field to define the **SprzedazVAT_Marza** marker for sales documents. |
 | PurchaseDocumentTypesSelector | A designation of the type of the purchase document | Use this lookup field to define the **MK**, **VAT_RR**, and **WEW** purchase document types. |
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
 1. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7 XML format (PL)**.
@@ -336,7 +336,7 @@ The following table shows the lookup results for **PurchaseDocumentTypesSelector
 
 The process of setting up the electronic messaging functionality for JPK-V7 reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-To import a package of data entities that includes a predefined electronic message setup, follow these steps.
+To import a package of data entities that includes a predefined electronic message setup, follow these steps:
 
 1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_V7 EM setup.zip** in the list of data package files, and download it to your computer.
 1. After you download the **PL JPK_V7 EM setup.zip** file, open Finance, select the company that you'll generate the JPK-V7 report from, and then go to **Workspaces** \> **Data management**.
@@ -353,7 +353,7 @@ For more information about Data management, see [Data management](../../../fin-o
 
 Now, import data from the **PL JPK_V7 EM setup.zip** file into the selected company.
 
-To import the data, follow these steps.
+To import the data, follow these steps:
 
 1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
 1. On the **Select entities** FastTab, select **Add file**.
@@ -392,7 +392,7 @@ To set up general ledger parameters, follow these steps:
 
 Both the JPK-V7 processing and the JPK-V7K processing use the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, save its parameters.
 
-To save the executable class parameters for electronic messaging, follow these steps.
+To save the executable class parameters for electronic messaging, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
 1. Select the **Wygenerowanie JPK-V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
@@ -411,14 +411,14 @@ The dialog box for the executable class includes the **Report in accounting curr
 
 Different groups of users might require access to the JPK-V7M or JPK-V7K processing. You can limit access to the processing, based on security groups that you define in the system.
 
-To limit access to the JPK-V7M or JPK-V7K processing, follow these steps.
+To limit access to the JPK-V7M or JPK-V7K processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 1. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If you don't define a security group for the processing, only a system admin can see it on the **Electronic messages** page.
 
 ## <a id="office-code-vdek"></a>Set up an office code for electronic message processing
 
-To set up an office code for electronic message processing, follow these steps.
+To set up an office code for electronic message processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 1. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing.

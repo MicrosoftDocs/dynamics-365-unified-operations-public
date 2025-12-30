@@ -22,7 +22,7 @@ The following procedures walk you through generating the payment references. The
 
 ## Specify a number sequence for payment references
 
-To specify a number sequence for payment references, follow these steps.
+To specify a number sequence for payment references, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Select the **Number sequences** tab.
@@ -32,7 +32,7 @@ To specify a number sequence for payment references, follow these steps.
 
 ## Create payment reference numbers
 
-To create payment reference numbers, follow these steps.
+To create payment reference numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Create payment reference numbers**.
 2. in the **Create payment reference numbers** field, select **Yes**.

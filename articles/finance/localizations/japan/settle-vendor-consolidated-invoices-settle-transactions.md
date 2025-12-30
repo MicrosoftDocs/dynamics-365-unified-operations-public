@@ -27,7 +27,7 @@ The procedures use the demo data company JPMF.
 
 ## Confirm the consolidation invoice to settle
 
-To confirm the consolidation invoice to settle, follow these steps.
+To confirm the consolidation invoice to settle, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
 1. In the **Consolidation ID** field, copy the value to use later.
@@ -35,7 +35,7 @@ To confirm the consolidation invoice to settle, follow these steps.
 
 ## Settle a consolidation invoice
 
-To settle a consolidation invoice, follow these steps.
+To settle a consolidation invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the list, find and select the vendor for whom you want to settle the consolidated invoice. For example, select **JPMF-000002**.  
@@ -49,7 +49,7 @@ To settle a consolidation invoice, follow these steps.
 
 ## Validate that a consolidation invoice status is settled
 
-To validate that a consolidation invoice status is settled, follow these steps.
+To validate that a consolidation invoice status is settled, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
 1. Confirm that the status of the consolidated invoice is **Settled**.  

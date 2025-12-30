@@ -31,7 +31,7 @@ For more information about the robots.txt file, visit [The Web Robots Pages](htt
 
 After you've created and edited your robots.txt file according to the [robots exclusion standard](https://www.robotstxt.org/orig.html), make sure that the file is accessible on the computer where you will use the Commerce authoring tools. The file must be named **robots.txt**. For best results, it must be in the format that is noted in the standard. Each Commerce customer is responsible for validating and maintaining the contents of its robots.txt file. To upload a robots.txt file, you must be signed in to Commerce as a system admin.
 
-To upload a robots.txt file in Commerce, follow these steps.
+To upload a robots.txt file in Commerce, follow these steps:
 
 1. Sign in to Commerce as a system admin.
 2. In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.
@@ -45,7 +45,7 @@ To upload a robots.txt file in Commerce, follow these steps.
 
 ## Download a robots.txt file
 
-To download a robots.txt file in Commerce, follow these steps.
+To download a robots.txt file in Commerce, follow these steps:
 
 1. Sign in to Commerce as a system admin.
 2. In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.
@@ -59,7 +59,7 @@ To download a robots.txt file in Commerce, follow these steps.
 
 ## Delete a robots.txt file
 
-To delete a robots.txt file in Commerce, follow these steps.
+To delete a robots.txt file in Commerce, follow these steps:
 
 1. Sign in to Commerce as a system admin.
 2. In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.

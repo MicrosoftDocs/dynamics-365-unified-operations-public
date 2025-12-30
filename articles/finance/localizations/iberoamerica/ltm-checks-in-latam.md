@@ -47,7 +47,7 @@ If the check was previously listed as pending with the vendor, it's now settled 
 
 ## Cancel checks
 
-If you must cancel (void) checks that are provided by your company, regardless of whether they're accrued, follow these steps.
+If you must cancel (void) checks that are provided by your company, regardless of whether they're accrued, follow these steps:
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**.
 2. On the Action Pane, select **New**.
@@ -91,7 +91,7 @@ Follow these steps to deposit checks from customers.
 
 ## Re-enter customer checks
 
-If you must re-enter customer checks, follow these steps.
+If you must re-enter customer checks, follow these steps:
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**.
 2. On the Action Pane, select **New**.

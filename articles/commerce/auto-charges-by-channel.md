@@ -32,7 +32,7 @@ To enable and configure auto charges by channel, you must complete the following
 
 ## Turn on the Enable filter auto charges by channel feature
 
-To enable auto charges by channel in Commerce, follow these steps.
+To enable auto charges by channel in Commerce, follow these steps:
 
 1. Go to **System administrator \> Workspaces \> Feature management**.
 1. On the **Not enabled** tab, in the **Feature name** list, find and select **Enable filter auto charges by channel**.
@@ -48,7 +48,7 @@ To enable auto charges by channel in Commerce, follow these steps.
 
 A new organization hierarchy purpose that is named **Retail auto charge** has been created to manage the hierarchy for auto charges by channel.
 
-To assign a default hierarchy to an organization hierarchy purpose in Commerce, follow these steps.
+To assign a default hierarchy to an organization hierarchy purpose in Commerce, follow these steps:
 		
 1. Go to **Organization administration \> Organizations \> Organization hierarchy purposes**.
 1. In the left pane, select **Retail auto charge**.
@@ -66,7 +66,7 @@ To assign a default hierarchy to an organization hierarchy purpose in Commerce, 
 
 After you've turned on the **Enable filter auto charges by channel** feature and configured the **Retail auto charge** organization hierarchy purpose, auto charges by channel can be defined at either the order header level or the order line level.
 
-To define auto charges by channel in Commerce, follow these steps.
+To define auto charges by channel in Commerce, follow these steps:
 
 1. Go to **Accounts receivable \> Charges setup \> Auto charges**.
 1. In the left pane, in the **Level** field, select either **Header** or **Line**, depending on your business requirements.

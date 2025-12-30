@@ -74,7 +74,7 @@ For general information about the types of transactions that are included in the
 
 ### Generate the EU sales list report
 
-To generate the EU sales list report, follow these steps.
+To generate the EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Transfer transactions.
@@ -97,7 +97,7 @@ To generate the EU sales list report, follow these steps.
 
 For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for the UK (Northern Ireland), see Example for generic EU Sales list. For this example, you must also create **0466158640** as the company's tax registration number.
 
-To create an EU sales list report, follow these steps.
+To create an EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. On the Action Pane, select **Reporting**.

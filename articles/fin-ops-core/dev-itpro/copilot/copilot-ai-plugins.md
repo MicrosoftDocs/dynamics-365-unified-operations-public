@@ -137,7 +137,7 @@ To define the code that runs when the operation is invoked, use the `run` method
 
 ## Define tool security
 
-You must assign each tool operation to a security role that grants user access to perform the operation from an agent. For each class, follow these steps.
+You must assign each tool operation to a security role that grants user access to perform the operation from an agent. For each class, follow these steps:
 
 1. In Visual Studio, in your development project, create an action menu item. Give it a name that's similar to the name of your class.
 1. Set the following properties for the new action menu item:
@@ -229,7 +229,7 @@ Response properties are the outputs of the action. To create response properties
 
 For each operation with a Custom API, you can add the action to any agent in Copilot Studio with access to the object. For example, you can add the action to Copilot for finance and operations apps or custom agents. 
 
-To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps.
+To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps:
 
 1. In Copilot Studio, open the agent where you want to add the new capability.
 1. On the **Tools** page, select **Add a tool**.

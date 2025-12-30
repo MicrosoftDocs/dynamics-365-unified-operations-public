@@ -31,7 +31,7 @@ The following sections explain how to specify a coverage group at each level.
 
 When you specify a coverage time fence for a coverage group, the setting applies to all items (products) that belong to that group. However, you can override the setting for specific items or specific master plans.
 
-To specify a coverage time fence for a coverage group, follow these steps.
+To specify a coverage time fence for a coverage group, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
 1. Select an existing coverage group in the list, or create a new coverage group.
@@ -41,7 +41,7 @@ To specify a coverage time fence for a coverage group, follow these steps.
 
 Every item (product) belongs to a coverage group. If no coverage group is explicitly assigned to an item, a default coverage group applies. Every item inherits a coverage time fence from its coverage group. However, you can override this time fence for specific items as you require.
 
-To specify a coverage time fence for a specific item, follow these steps.
+To specify a coverage time fence for a specific item, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select a product in the grid.
@@ -55,7 +55,7 @@ To specify a coverage time fence for a specific item, follow these steps.
 
 You can specify a coverage time fence at the master plan level. In this way, you define the number of days that the master planning calculation covers for a master plan. This setting overrides any coverage time settings that are defined for each relevant item and coverage group.
 
-To specify a coverage time fence for a specific master plan, follow these steps.
+To specify a coverage time fence for a specific master plan, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
 1. Select an existing master plan in the list, or create a new master plan.

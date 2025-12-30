@@ -52,13 +52,13 @@ You can explicitly run this validation. Select one of the following three option
     5. On the **Model to datasource mapping** page, on the Action Pane, select **Designer**.
     6. On the **Model mapping designer** page, on the Action Pane, select **Validate**.
 
-To skip the validation when the configuration is imported, follow these steps.
+To skip the validation when the configuration is imported, follow these steps:
 
 1. Go to **Organization administration \> Electronic reporting \> Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. Set the **Validate the configuration after importing** option to **No**.
 
-To skip the validation when you change or rebase the version's status, follow these steps.
+To skip the validation when you change or rebase the version's status, follow these steps:
 
 1. Go to **Organization administration \> Electronic reporting \> Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.

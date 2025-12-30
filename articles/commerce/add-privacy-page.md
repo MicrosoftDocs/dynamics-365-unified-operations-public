@@ -38,7 +38,7 @@ To start, in the authoring tools, go to the site that you want to build a privac
 > [!NOTE]
 > If a template that can be used for the privacy policy page has already been created, skip ahead to the [Build a privacy policy page](#build-a-privacy-policy-page) section.
 
-To create a template, follow these steps.
+To create a template, follow these steps:
 
 1. Go to **Templates**, and then select **New** to create a page template.
 1. In the **New Template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
@@ -50,7 +50,7 @@ To create a template, follow these steps.
 
 ### Build a privacy policy page
 
-To build a privacy policy page, follow these steps.
+To build a privacy policy page, follow these steps:
 
 1. Go to **Pages**, and then select **New** to create a page.
 1. In the **Choose a template** dialog box, select the template for the privacy policy page.
@@ -63,7 +63,7 @@ To build a privacy policy page, follow these steps.
 1. Complete any remaining additions to the page and module properties.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-To publish the URL for the privacy policy page, follow these steps.
+To publish the URL for the privacy policy page, follow these steps:
 
 1. Go to **URLs**, and select the URL for the privacy policy page.
 1. Select **Publish** to publish the selected URL.
@@ -72,7 +72,7 @@ To publish the URL for the privacy policy page, follow these steps.
 
 You can add a link to the privacy policy page to a fragment. In this way, you can share the link and update it across multiple site pages by referencing the fragment. This example shows how to add a link to the privacy policy page to a footer fragment.
 
-To add a link to a footer fragment, follow these steps.
+To add a link to a footer fragment, follow these steps:
 
 1. Go to **Fragments**, and then select **New** to create a page fragment.
 1. In the **New fragment** dialog box, select the **Footer** module.

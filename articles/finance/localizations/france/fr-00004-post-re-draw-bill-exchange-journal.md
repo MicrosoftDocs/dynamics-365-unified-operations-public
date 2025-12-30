@@ -23,7 +23,7 @@ The following procedure was created using the demo data company FRSI.
 
 The functionality described is available for legal entities whose primary address is in France. To complete this procedure you should have the role of accounts receivable clerk.
 
-To post a redraw bill of exchange journal, follow these steps.
+To post a redraw bill of exchange journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Bill of exchange \> Redraw bill of exchange journal**.
 1. Select **New**.

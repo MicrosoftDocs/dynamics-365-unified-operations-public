@@ -24,7 +24,7 @@ The commerce functionality profile provides various settings used for online cha
 
 ## Create a functionality profile
 
-To create a functionality profile, follow these steps.
+To create a functionality profile, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Channel setup \> POS profiles \> Functionality profiles**.
 1. On the action pane, select **New**.

@@ -28,7 +28,7 @@ The following prerequisites must be met before you archive General ledger transa
 
 ## Set up an archival job
 
-To set up an archival job, follow these steps.
+To set up an archival job, follow these steps:
 
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
 2. Select **General Ledger functional scenario**.

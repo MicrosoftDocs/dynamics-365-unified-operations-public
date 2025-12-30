@@ -32,7 +32,7 @@ Before you create records for customers and vendors who are located in the Domin
 
 ## Create a record for a customer in the Dominican Republic
 
-To create a record for a customer in the Dominican Republic, follow these steps.
+To create a record for a customer in the Dominican Republic, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select **New**.
 1. In the **Type** field, select **Organization** for Persona Jurídica or **Person** for Persona Natural.
@@ -58,7 +58,7 @@ To create a record for a customer in the Dominican Republic, follow these steps.
 
 ## Create a record for a vendor in the Dominican Republic
 
-To create a record for a vendor in the Dominican Republic, follow these steps.
+To create a record for a vendor in the Dominican Republic, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
 1. In the **Type** field, select **Organization** for Persona Jurídica or **Person** for Persona Natural.

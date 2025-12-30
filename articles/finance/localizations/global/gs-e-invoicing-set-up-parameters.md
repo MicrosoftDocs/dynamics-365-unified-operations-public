@@ -25,7 +25,7 @@ Before you can submit documents to Electronic invoicing and process responses, y
 > [!NOTE]
 > Most of the ER configurations that are mentioned in the following procedure are automatically imported as a result of the import of related Globalization features. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). If you must reimport configurations, use the following procedure. 
 
-To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, follow these steps.
+To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 1. In the **Configuration providers** section, select the **Microsoft** configuration provider, and then select **Repositories**.

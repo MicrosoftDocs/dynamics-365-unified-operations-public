@@ -54,7 +54,7 @@ Then, on the **Commerce parameters** page, on the **Customer orders** tab, on th
 
 ### Turn off posting of the Sales tax on prepayment journal voucher
 
-The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is turned on. To verify that this requirement is met, follow these steps.
+The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is turned on. To verify that this requirement is met, follow these steps:
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 2. On the **Ledger and sales tax** tab, on the **Payment** FastTab, make sure that the following fields are blank or set to **No**:

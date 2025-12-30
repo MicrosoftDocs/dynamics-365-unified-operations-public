@@ -25,7 +25,7 @@ The following procedures demonstrate how to set up criteria for tracking bank ac
 
 ## Set up the database log
 
-To set up the database log, follow these steps.
+To set up the database log, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> Database log setup**.
 1. Select **New**.
@@ -41,7 +41,7 @@ To set up the database log, follow these steps.
 
 ## Create a new bank account for demonstration purposes
 
-To create a new bank account for demonstration purposes, follow these steps.
+To create a new bank account for demonstration purposes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Bank statement reconciliation \> Bank accounts**.
 1. Select **New**.
@@ -52,7 +52,7 @@ To create a new bank account for demonstration purposes, follow these steps.
 
 ## Print the user operation log report
 
-To print the user operation log report, follow these steps.
+To print the user operation log report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Inquiries \> User operation log inquiry**.
 1. In the tree, expand **Bank**.

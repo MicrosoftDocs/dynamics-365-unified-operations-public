@@ -22,7 +22,7 @@ This article covers what updates you should expect to see, and how you can get t
 
 ## Get updates
 
-To view the available updates, follow these steps.
+To view the available updates, follow these steps:
 
 1. Sign in to Lifecycle Services by using your credentials.
 2. In the Lifecycle Services project, select an environment.

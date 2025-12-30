@@ -19,12 +19,12 @@ This article describes the unbilled revenue feature that lets you include the am
 
 ## Set up unbilled revenue
 
-To set up unbilled revenue, follow these steps.
+To set up unbilled revenue, follow these steps:
 
 - On the **Recurring contract billing parameters** page, set the fields in the **Unbilled revenue** section.
 - The unbilled revenue feature can be used for items where the **Item type** field is set to **Standard**. It can also be used for deferral items. To use unbilled revenue with the short-term functionality, set up the short-term options on the **Recurring contract billing parameters** page.
 
-To set up items to use unbilled revenue, follow these steps.
+To set up items to use unbilled revenue, follow these steps:
 
 1. On the **Unbilled revenue setup** page, on the **Items** tab, select **Add**.
 2. On the new line, in the **Item code**, select the item code.
@@ -32,7 +32,7 @@ To set up items to use unbilled revenue, follow these steps.
 4. Repeat these steps to add more lines.
 5. Select **Save**.
 
-To set up items and the unbilled revenue accounts, follow these steps.
+To set up items and the unbilled revenue accounts, follow these steps:
 
 1. On the **Unbilled revenue setup** page, on the **Accounts** tab, select **Add**.
 2. On the new line, in the **Item code**, select the item code.
@@ -64,7 +64,7 @@ Each milestone child item can be processed separately. The end dates can be spec
 
 ### Unbilled revenue with straight line deferrals
 
-To use unbilled revenue with straight line deferral schedules, follow these steps.
+To use unbilled revenue with straight line deferral schedules, follow these steps:
 
 1. On the **All billing schedules** page, create a billing schedule.
 2. Add an item to the billing schedule lines.
@@ -86,7 +86,7 @@ To use unbilled revenue with straight line deferral schedules, follow these step
 
 ### Unbilled revenue with event-based deferrals
 
-To use unbilled revenue with event-based deferral schedules, follow these steps.
+To use unbilled revenue with event-based deferral schedules, follow these steps:
 
 1. On the **All billing schedules** page, create a billing schedule.
 2. Add an item to the billing schedule lines.

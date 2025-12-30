@@ -26,7 +26,7 @@ Before you can use the features that are described in this article, your system 
 
 ## Set up a COA customer group
 
-To manage COAs for different customers, you can group customers into COA customer groups. To create a COA customer group and add customers to it, follow these steps.
+To manage COAs for different customers, you can group customers into COA customer groups. To create a COA customer group and add customers to it, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Certificate of analysis** \> **Certificate of analysis customer groups**.
 1. Use the buttons on the Action Pane to add a new COA customer group or edit an existing one. (You can also delete existing groups.)
@@ -37,7 +37,7 @@ To manage COAs for different customers, you can group customers into COA custome
 
 ## Set up and maintain customer-specific COA requirements on test groups
 
-To set up customer-specific COA requirements on test groups, follow these steps.
+To set up customer-specific COA requirements on test groups, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. In the lower section of the page, select a test.
@@ -58,7 +58,7 @@ To set up customer-specific COA requirements on test groups, follow these steps.
 
 ## Set up and maintain customer-specific COA requirements from a quality order
 
-To set up and maintain customer-specific COA requirements from a quality order, follow these steps.
+To set up and maintain customer-specific COA requirements from a quality order, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders**.
 1. Select a quality order.

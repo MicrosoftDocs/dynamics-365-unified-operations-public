@@ -25,7 +25,7 @@ To make the tab for the add-in visible in your Excel workbook, follow this step.
 
 - When you open the downloaded Excel workbook, select **Enable content**.
 
-If that approach doesn't work, follow these steps.
+If that approach doesn't work, follow these steps:
 
 1. Confirm that other add-ins are disabled, and then restart Excel.
 2. Select **File** \> **Options** to open Excel options.
@@ -48,7 +48,7 @@ To work around this issue, follow one of these steps.
 
 ## After I connect to data, I see only my cube data connected. How do I see my dimension data connected?
 
-After you connect to your database server, confirm that all the cube and dimension tables that you want to bring into your data model in Excel are selected. You can also follow these steps.
+After you connect to your database server, confirm that all the cube and dimension tables that you want to bring into your data model in Excel are selected. You can also follow these steps:
 
 1. To select multiple items, select the checkbox.
 2. Select your cube.
