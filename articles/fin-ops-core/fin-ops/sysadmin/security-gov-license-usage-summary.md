@@ -57,7 +57,7 @@ Before you access the **User security governance** workspace, you must activate 
 
 :::image type="content" source="media/security-governance-version-info.png" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
 
-## Accessing the License Usage Summary 
+## Accessing License Usage Summary 
 
 Once the feature is enabled, access the **License Usage Summary** page: 
 
