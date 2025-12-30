@@ -67,7 +67,7 @@ The **User security governance** workspace will open, open the **License Usage S
 Within this workspace, you'll find multiple tabs that provide different views on licensing data: 
 
 - **User Role Licenses**: User and the license(s) required based on their roles. 
-- **Role Licenses**: Security role and the minimum license required for the role, plus details on its permissions. 
+- **Role Licenses**: Security role and the minimum license required for the role, plus details on covered security objects. 
 - **Duty Licenses**: Shows license requirements for individual duties (groupings of privileges), if you need to examine license impacts at the duty level. 
 - **Privilege Licenses**: Shows license requirements for individual privileges or menu items, for the most detailed analysis. 
 
