@@ -64,7 +64,7 @@ For general setup information, see [EU sales list reporting](../europe/emea-eu-s
 
 Create a registration type, and assign it to the **VAT ID** registration category for Spain and every country or region that your company does business with. Learn more in [Registration IDs](../europe/emea-registration-ids.md).
 
-To set up company information, follow these steps.
+To set up company information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. In the grid, select your company.
@@ -91,7 +91,7 @@ Learn more in [Download Electronic reporting configurations from Lifecycle Servi
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 1. On the **EU sales list** tab, set the **Transfer purchases** option to **Yes**.
@@ -105,7 +105,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Create a contact for the person who is responsible for the report
 
-To create a contact for the person who is responsible for the report, follow these steps.
+To create a contact for the person who is responsible for the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 1. On the Action Pane, select **New**.
@@ -128,7 +128,7 @@ Before you generate the EU sales list report, you can add the **Delivery code** 
 
 ### Generate the EU sales list report
 
-To generate the EU sales list report, follow these steps.
+To generate the EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Transfer transactions.
@@ -152,7 +152,7 @@ To generate the EU sales list report, follow these steps.
 
 ### Create a corrective EU sales list report
 
-To create a corrective EU sales list report, follow these steps.
+To create a corrective EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Transfer transactions.
@@ -191,7 +191,7 @@ For information about how to set up purchases and create a vendor invoice, see [
 
 ### Create a contact for the person who is responsible for the report
 
-To create a contact for the person who is responsible for the report, follow these steps.
+To create a contact for the person who is responsible for the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 1. On the Action Pane, select **New**.
@@ -203,7 +203,7 @@ To create a contact for the person who is responsible for the report, follow the
 
 ### Create an EU sales list report
 
-To create an EU sales list report, follow these steps.
+To create an EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Add the **Delivery code** column.
@@ -262,7 +262,7 @@ To create an EU sales list report, follow these steps.
    
 ### Create a corrective EU sales list report
 
-To create a corrective EU sales list report, follow these steps.
+To create a corrective EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Verify that there are one service line and one item line in the EU sales list page.

@@ -26,7 +26,7 @@ When you generate an Excel file so that you can edit retail transactions, the fi
 
 ## Add fields to a worksheet in an Excel workbook
 
-To add fields to an Excel workbook so that you can edit retail transactions, follow these steps.
+To add fields to an Excel workbook so that you can edit retail transactions, follow these steps:
 
 1. Download and open the Excel file from the **Statements** page, the **Retail transactions** page, or the **Transaction validation failures** tile in the **Store financials** workspace.
 1. Select **Design**.

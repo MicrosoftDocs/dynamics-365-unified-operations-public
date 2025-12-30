@@ -33,7 +33,7 @@ This article shows how to:
 
 The first step is to create a new Key Vault to store application secrets. You need an Azure account to access Azure Key Vault.
 
-To create a new Key Vault, follow these steps.
+To create a new Key Vault, follow these steps:
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
 1.	Select **Create a resource**.
@@ -59,7 +59,7 @@ For the following steps, you need to have the tenant ID of the Azure App Service
 > [!NOTE]
 > If you are running Commerce version 10.0.31 or later, this section can be skipped.
 
-To add your Node application details into Retail Server's authentication allow list, follow these steps.
+To add your Node application details into Retail Server's authentication allow list, follow these steps:
 
 1. In Commerce headquarters, go to **Commerce Shared Parameters**.
 1.	Select the **Identity Providers** tab.
@@ -87,7 +87,7 @@ Next, you configure Retail Server to securely communicate with your Key Vault.
 
 You first need to create a new app registration under Microsoft Entra ID to represent your Retail Server so that you can register your Key Vault with Retail Server.
 
-To create a new app registration, follow these steps.
+To create a new app registration, follow these steps:
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
 1. Go to the directory containing the Azure App Service hosting your Node application.
@@ -107,7 +107,7 @@ To create a new app registration, follow these steps.
  
  ### Add an access policy in your Key Vault
 
-Next, to add an access policy in your Key Vault, follow these steps.
+Next, to add an access policy in your Key Vault, follow these steps:
 
 1. Go to your Key Vault.
 1. Select **Access policies**, and then select **Add Access Policy**.
@@ -118,7 +118,7 @@ Next, to add an access policy in your Key Vault, follow these steps.
 
 ### Add the Key Vault details in Retail Server
 
-Next, to add the Key Vault details in Retail Server, follow these steps.
+Next, to add the Key Vault details in Retail Server, follow these steps:
 
 1.	In Commerce headquarters, go to **Key Vault parameters**. 
 1. From the store selector on the top right, select the store for which you want to configure the secret key and values.

@@ -25,7 +25,7 @@ Document types are used to categorize the documents that you attach to records o
 
 A default set of document types is provided. You can use these document types to categorize an attachment as a file, image, note, or URL. The **File** and **Image** default document types are configured to use **Azure storage** as the location.
 
-To create a new document type, follow these steps.
+To create a new document type, follow these steps:
 
 1. Go to the **Document types** page.
 2. Select **New**.
@@ -76,7 +76,7 @@ New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $erpServicePrincipal
 
 ### Setting up SharePoint inside your finance and operations environment
 
-To configure SharePoint storage, follow these steps.
+To configure SharePoint storage, follow these steps:
 
 1. Go to the **Document management parameters** page.
 2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as contosoax7.sharepoint.com. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form `user1@tenantname.onmicrosoft.com`.
@@ -116,7 +116,7 @@ If documents that are stored in SharePoint aren't opened or don't appear in prev
 
 By modifying the list of file extensions that are allowed, you can control the types of files that users can attach to records.
 
-To specify file types, follow these steps.
+To specify file types, follow these steps:
 
 1. Go to the **Document management parameters** page.
 2. On the **File types** tab, review the default file types.
@@ -276,7 +276,7 @@ If the file content type isn't specified correctly, the attached document might 
 
 In version 10.0.40 and later, the **Export attachments** feature is available in Document management. Use this feature to export files and metadata that are attached to records of tables in finance and operations apps.
 
-To export attachments, follow these steps.
+To export attachments, follow these steps:
 
 1. Go to **Organization administration** \> **Document management parameters** \> **Export attachments**.
 2. On the **Export attachments** page, on the Action Pane, select **New** to add a row for the first table that you want to export attachments for. Repeat this step until all the tables that you need attachments for are listed. The following table describes the fields that are available on the **Export attachments** page.

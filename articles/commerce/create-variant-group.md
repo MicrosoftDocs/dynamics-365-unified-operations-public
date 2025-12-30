@@ -28,7 +28,7 @@ In this article, a size group will be created and configured. Similar procedures
 
 ## Create a size group
 
-To create a size group, follow these steps.
+To create a size group, follow these steps:
  
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Variant groups \> Size groups**.
 1. On the action pane, select **New**.
@@ -38,7 +38,7 @@ To create a size group, follow these steps.
 
 ## Add attributes to the size group
 
-To add attributes to a size group, follow these steps.
+To add attributes to a size group, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Variant groups \> Size groups**
 1. In the navigation pane, select a size group.

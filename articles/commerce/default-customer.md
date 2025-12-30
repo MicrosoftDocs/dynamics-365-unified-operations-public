@@ -24,7 +24,7 @@ When creating a channel, you will need to provide a default customer. A default 
 
 If no customer groups exist yet, you can create one. Examples may be groups to represent different customer groups, such as wholesale, retail, Internet, Employees, etc.
 
-To create a customer group, follow these steps.
+To create a customer group, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> Customer groups**.
 1. On the action pane, select **New**.
@@ -44,7 +44,7 @@ The following image shows several configured customer groups.
 
 A customer needs to be associated with an address book. If one has not yet been created, then you will need to create one.
 
-To create a customer address book, follow these steps.
+To create a customer address book, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Address Books**.
 1. On the action pane, select **New**.
@@ -58,7 +58,7 @@ The following image shows an example address book.
 
 ## Create a default customer
 
-To create a default customer, follow these steps.
+To create a default customer, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> All customers**.
 1. On the action pane, select **New**.

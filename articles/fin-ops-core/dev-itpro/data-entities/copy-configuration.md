@@ -29,7 +29,7 @@ There are two options for copying configuration data in finance and operations:
 
 The **Data management** workspace is your hub for managing configuration data projects and exporting data packages. To build a configuration, you must define a data project and export the information that is represented by entities.
 
-To create an export configuration data project, follow these steps.
+To create an export configuration data project, follow these steps:
 
 1. Open the **Data management** workspace. If you're in Standard view, select **Enhanced view**.
 2. Select the **Export** tile.
@@ -192,7 +192,7 @@ To export a single legal entity, you can create a Copy into legal entity data pr
 
 The **Data management** workspace is also your hub for importing configuration data projects. You can build a configuration project from an existing data project that you exported. Alternatively, you can build a configuration project from individual files that contain data that is formatted correctly for import.
 
-To import a configuration, follow these steps.
+To import a configuration, follow these steps:
 
 1. Open the **Data management** workspace. If you're in Standard view, select **Enhanced view**.
 2. Select the **Import** tile.
@@ -224,7 +224,7 @@ The **Data management** workspace is also your hub for copying configuration inf
 > [!NOTE]
 > Make sure that change tracking is enabled for the entity. This is required to ensure that only an incremental push, and not a full push, occurs.
 
-To copy a configuration from one legal entity to another legal entity in the same instance, follow these steps.
+To copy a configuration from one legal entity to another legal entity in the same instance, follow these steps:
 
 1. Open the **Data management** workspace. If you're in Standard view, select **Enhanced view**.
 2. Select the **Copy into legal entity** tile.

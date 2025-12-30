@@ -37,7 +37,7 @@ The *Sequence and compound for customer charges* feature adds new fields to the 
 
 ## <a name="set-up-comp-seq"></a>Set up auto charge compounding and sequencing
 
-To set up auto charge compounding and sequencing, follow these steps.
+To set up auto charge compounding and sequencing, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the **Find auto charges for header** option to *Yes*.
@@ -109,7 +109,7 @@ To apply a charge that's set to compound, you must first set up the auto charge.
 
 ### Create a sample sales order
 
-The charges that you set up can now be automatically applied to a sales quotation or sales order. To apply the charges to a sales order, follow these steps.
+The charges that you set up can now be automatically applied to a sales quotation or sales order. To apply the charges to a sales order, follow these steps:
 
 1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.

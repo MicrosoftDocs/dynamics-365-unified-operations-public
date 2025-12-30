@@ -28,7 +28,7 @@ When channel-side calculation is correctly configured and managed, it can provid
 > [!NOTE]
 > To configure the POS inventory lookup operation in Commerce headquarters to use the channel-side calculation logic, and to turn off real-time service calls, you must first [configure channel-side calculation](channel-side-calculation.md).
 
-To configure POS inventory lookup to use channel-side calculation, follow these steps.
+To configure POS inventory lookup to use channel-side calculation, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select a functionality profile.

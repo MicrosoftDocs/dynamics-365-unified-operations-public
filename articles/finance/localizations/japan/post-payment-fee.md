@@ -21,7 +21,7 @@ This article explains how to generate and post a payment fee for Japan in Micros
 
 The following procedure uses the demo data company JPMF.
 
-To generate and post a payment fee, follow these steps.
+To generate and post a payment fee, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payments \> Payment journal**.
 1. Select **New**.

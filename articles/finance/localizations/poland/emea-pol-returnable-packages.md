@@ -52,7 +52,7 @@ Use the **Packaging material allocation** page (**Inventory management** \> **Se
 
 ### Set up a number sequence for package vouchers
 
-To set up a number sequence for package vouchers, follow these steps.
+To set up a number sequence for package vouchers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Packaging material allocation** FastTab, set up a number sequence for the **Package voucher** reference field.
@@ -67,7 +67,7 @@ Users can register packages for sales orders, post and print packing slips that 
 
 ### Register packages in a sales order
 
-To register packages in a sales order, follow these steps.
+To register packages in a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
 1. Create a new sales order or open an existing sales order.
@@ -76,7 +76,7 @@ To register packages in a sales order, follow these steps.
 
 ### Verify packages
 
-To verify packages, follow these steps.
+To verify packages, follow these steps:
 
 1. On the **Sales order lines** FastTab, select a sales order line.
 1. Go to **Financials** \> **Packages** \> **Package issue**. When the page is opened from a sales order line, you can modify or remove the packages that are automatically calculated for that sales order line.
@@ -84,7 +84,7 @@ To verify packages, follow these steps.
 
 ### Print and post packing slips
 
-To print and post packing slips, follow these steps.
+To print and post packing slips, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales order** page.
 1. On the Action Pane, on the **Pick and pack** tab, select **Post packing slip**. After packing slips are posted, you can inquire about package issue transactions for each packing slip.
@@ -93,7 +93,7 @@ To print and post packing slips, follow these steps.
 
 ### Print and post invoices
 
-To print and post invoices, follow these steps.
+To print and post invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales order** page.
 1. On the action pane, on the **Invoice** tab, select **Generate** > **Invoice**. After you post invoices, you can view package transactions that have posted deposit amounts for each invoice.
@@ -125,7 +125,7 @@ To enter information about the packages that customers return, select **Accounts
 | Amount                        | The amount that you must pay to the customer. This value calculates automatically, based on the deposit amount for the package and the quantity that is returned. |
 | Currency                      | The currency for the amount that you must pay to the customer.                                                                                                       |
 
-After you finish entering information about package returns, follow these steps.
+After you finish entering information about package returns, follow these steps:
 
 1. Select **Post** to post the return transactions.
 1. On the posting page, set the **Print** option to **Yes** to print the **Return packages confirmation** report. To reprint the confirmation report later, you can select **Print** on the **Return packages confirmation** page. You can also inquire about return package transactions.

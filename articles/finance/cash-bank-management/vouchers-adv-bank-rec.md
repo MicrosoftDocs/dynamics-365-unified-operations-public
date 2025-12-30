@@ -32,7 +32,7 @@ There might be bank statement transactions that aren't related to specific custo
 
 ## Generate a voucher on the reconciliation worksheet
 
-To manually post bank statement transactions to the general ledger on the reconciliation worksheet, follow these steps.
+To manually post bank statement transactions to the general ledger on the reconciliation worksheet, follow these steps:
 
 1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 2. . Open or create a bank reconciliation worksheet.
@@ -53,7 +53,7 @@ To manually post bank statement transactions to the general ledger on the reconc
 
 ## Generate a voucher by using matching rules
 
-To use matching rules to automatically post bank statement transactions to the general ledger, follow these steps.
+To use matching rules to automatically post bank statement transactions to the general ledger, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.
@@ -81,7 +81,7 @@ To use matching rules to automatically post bank statement transactions to the g
 
 ## Reverse a posted voucher on the reconciliation worksheet
 
-To reverse posted bank statement transactions on the reconciliation worksheet, follow these steps.
+To reverse posted bank statement transactions on the reconciliation worksheet, follow these steps:
 
 1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 2. . Open the bank reconciliation worksheet.

@@ -86,7 +86,7 @@ Follow these steps to set up an acceptance test.
 
 ## Run acceptance tests
 
-After you set up your tests, you can run them, either one by one or all at once. To run one or more tests, follow these steps.
+After you set up your tests, you can run them, either one by one or all at once. To run one or more tests, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Location directives**.
 1. On the Action Pane, select **Acceptance tests**.
@@ -113,7 +113,7 @@ After you set up your tests, you can run them, either one by one or all at once.
 
 Definition of acceptance tests is typically an iterative process. If a test fails, you should find out why it failed. Perhaps the test isn't set up correctly, or perhaps a location directive must be adjusted so that it better meets your requirements.
 
-To troubleshoot your location directives and acceptance tests, follow these steps.
+To troubleshoot your location directives and acceptance tests, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Location directives**.
 1. In the list pane, select a location directive that you've designed an acceptance test for.

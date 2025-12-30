@@ -32,7 +32,7 @@ To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must f
 
 ## Generate the Audit file
 
-To generate the Audit file, follow these steps.
+To generate the Audit file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Audit file**.
 1. In the **From date** field, enter a date. 

@@ -21,7 +21,7 @@ This article describes the results of distributed order management (DOM) runs in
 
 If the fulfillment profile is set to **Auto apply**, the results of the run are automatically applied to the sales order lines, and the fulfillment plan can be viewed separately. However, if the fulfillment profile isn't set to **Auto apply**, the results of the run can only be viewed from the fulfillment plan view.
 
-To view all the fulfillment plans that are generated, follow these steps.
+To view all the fulfillment plans that are generated, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Distributed order management \> Distributed order management**.
 1. In the **Distributed order management** workspace, select the **Fulfillment Plans** tile.
@@ -56,7 +56,7 @@ To view the DOM run logs for a sales order line, select **Sales order line**, an
 
 Despite running DOM with batch jobs, during the sales order entry, DOM can be run in an interactive mode. For this functionality to work, there must be an existing, active fulfillment profile that matches the sales origin and delivery mode on the sales line.
 
-To run DOM in interactive mode, follow these steps.
+To run DOM in interactive mode, follow these steps:
 
 1. While you're entering an order line in headquarters, after you specify the product and quantity, select **Update line**.
 1. Under **DOM**, select **Suggest fulfillment location**. A list of locations sorted by distance appears that is based on DOM rules that can fulfill the quantity on the order line. 

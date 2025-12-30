@@ -149,7 +149,7 @@ To set up a compliance link, follow these steps:
 
 Users can sign in by using different out-of-box identity providers on the website. The administrator must configure these identity providers so that they appear on the sign-in page.
 
-To configure external identity providers, follow these steps.
+To configure external identity providers, follow these steps:
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/).
 1. Select your active site, and then select **Edit**.
@@ -167,7 +167,7 @@ For more information about how to set up identity providers, see [Set up an OAut
 
 Email notifications can be sent in different situations on the careers site. For example, they can be sent when users forget their password, for confirmation, or when users create email accounts.
 
-To enable email accounts to send notifications, follow these steps.
+To enable email accounts to send notifications, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 1. Select the environment where your Recruiting add-on app is installed.

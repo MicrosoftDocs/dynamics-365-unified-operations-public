@@ -24,7 +24,7 @@ Computed columns are computed values that SQL Server must return as part of the 
 
 When you write a computed column formula, the main thing to avoid is a join to some table or view. Such a join forces SQL Server to compute the values row by row and keep them all in temporary storage. Instead, add the tables that are needed for the formula as data sources in the entity view. SQL Server can then join all the table data to all the rows in one operation instead of repeating the process for each row.
 
-To test whether a computation is causing slowness, follow these steps.
+To test whether a computation is causing slowness, follow these steps:
 
 1. Connect to your sandbox database, and run the `sp_helptext` command to get the view definition.
 1. Copy the output to another SQL Server Management Studio window, and make the following changes:
@@ -108,7 +108,7 @@ When you set up your database export connection, consider which type of index yo
 
 Add a filter to a data export query to reduce the number of records exported and improve performance.
 
-To add a filter to an export query, follow these steps.
+To add a filter to an export query, follow these steps:
 
 1. Go to the **Data management** workspace.
 1. From the list of data export projects, select a project and apply a filter to reduce the number of records that are exported.

@@ -141,7 +141,7 @@ By creating a new theme for your site from scratch, you will get an empty boiler
 
 #### Clone the fabrikam theme
 
-To clone the **fabrikam** theme as a starter for your own theme, follow these steps.
+To clone the **fabrikam** theme as a starter for your own theme, follow these steps:
 
 1. Use the [clone](cli-command-reference.md) command-line interface (CLI) command to create a copy of the **fabrikam** theme. For example, use **yarn msdyn365 clone fabrikam MY\_NEW\_THEME**, where **MY\_NEW\_THEME** is the name of the new theme.
 

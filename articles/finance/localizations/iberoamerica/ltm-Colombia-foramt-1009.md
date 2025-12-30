@@ -38,7 +38,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 
 ## Configure tax application codes
 
-To run the Form 1009 report in Dynamics 365 Finance and Operations by setting up a tax application, follow these steps.
+To run the Form 1009 report in Dynamics 365 Finance and Operations by setting up a tax application, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application** and select **New** to create a tax application record with code **1009** for format 1009.
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
@@ -58,7 +58,7 @@ Use lookups and conditions to select the combination of document classification 
 > [!NOTE]
 > Apply the lookup settings to both formats before you use them.
 
-To set up the report parameters, follow these steps.
+To set up the report parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. In the left pane, select **LTM Tax Report deployment** \> **File format 1009** or **File format 1009 Excel**.
@@ -100,7 +100,7 @@ To set up the report parameters, follow these steps.
 
 ## Issue format 1009 file
 
-To issue format 1009 file, follow these steps.
+To issue format 1009 file, follow these steps:
 
 1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1009**.
@@ -111,7 +111,7 @@ To issue format 1009 file, follow these steps.
 
 ## Issue format 1009 file in Excel
 
-To issue format 1009 file in Excel, follow these steps.
+To issue format 1009 file in Excel, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1009 Excel**.

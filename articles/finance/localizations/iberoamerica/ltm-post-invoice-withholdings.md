@@ -17,7 +17,7 @@ This article explains how to post vendor invoices with tax withholdings. Several
 
 ## Post vendor invoice with tax withholdings
 
-To post vendor invoice with tax withholdings, follow these steps.
+To post vendor invoice with tax withholdings, follow these steps:
 
 1. Go to **Accounts payable** > **Invoices** > **Invoice journal**.
 1. Create a new journal and select a "Vendor invoice" type journal name.

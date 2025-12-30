@@ -19,7 +19,7 @@ This article explains how to set up revenue allocation parameters for a billing 
 
 ## Specify the revenue allocation for a billing schedule
 
-To specify the revenue allocation for a billing schedule, follow these steps.
+To specify the revenue allocation for a billing schedule, follow these steps:
 
 1. On the **All/Active billing schedules** list page, select a billing schedule or a billing schedule line.
 2. On the **Revenue allocation** tab at the top of the page, select **Revenue allocation**.
@@ -58,7 +58,7 @@ The **Multiple element arrangement** page contains the following fields.
 
 ## Use revenue allocation on a sales order
 
-To use the revenue allocation functionality on a sales order, follow these steps.
+To use the revenue allocation functionality on a sales order, follow these steps:
 
 1. On the **All sales orders** page, create a sales order that has items.
 2. On the **Invoice** tab, under **Revenue allocation**, select **Revenue allocation**.

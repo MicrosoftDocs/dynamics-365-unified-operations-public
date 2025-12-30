@@ -79,7 +79,7 @@ Each price attribute group can now include just the *Customer Price Attribute Gr
 
 ## Manage customer and product price attribute groups
 
-To add, edit, or delete a price attribute group, follow these steps.
+To add, edit, or delete a price attribute group, follow these steps:
 
 1. Follow one of these steps, depending on the type of group that you want to create:
 

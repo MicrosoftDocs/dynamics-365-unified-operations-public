@@ -28,7 +28,7 @@ A site builder user must have a Microsoft Entra user account included in the Mic
 > [!NOTE]
 > Microsoft Entra guest users may have different access permissions in your Microsoft Entra tenant. Even if included in the Microsoft Entra security group assigned for the e-commerce system administrators, a guest user may need Microsoft Entra **External users** permission settings to be adjusted in order to create an e-commerce site in Commerce. 
 
-To adjust Microsoft Entra **External users** settings, follow these steps.
+To adjust Microsoft Entra **External users** settings, follow these steps:
 
 1. In the Azure portal, navigate to your Microsoft Entra tenant.
 1. Go to **User settings \> External users** and select the **Manage external collaboration settings** link. This action opens the **External collaboration settings** page where guest user access, guest invite settings, and collaboration restrictions can be set. 
@@ -55,7 +55,7 @@ After your site is created, you can verify that it's associated with your online
 
 ## Rename your site
 
-To rename your site in site builder, follow these steps.
+To rename your site in site builder, follow these steps:
 
 1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites** . 
 1. Select the check box next to the site that you want to rename, and then select **Rename** on the command bar.
@@ -63,7 +63,7 @@ To rename your site in site builder, follow these steps.
 
 ## Delete a site
 
-To delete a site in site builder, follow these steps.
+To delete a site in site builder, follow these steps:
 
 1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites**.
 1. Select the site you want to delete, and then select **Delete** on the command bar.

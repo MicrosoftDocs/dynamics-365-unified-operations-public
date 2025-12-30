@@ -43,7 +43,7 @@ These necessary improvements address the performance issues that customers have 
 
 Several incidents that have been reported are related to performance issues with **Sales invoice header** and **Sales invoice line** entities. Through the changes that are outlined in this article, we fixed these incidents to ensure a smoother experience for our customers.
 
-For more information and updates about the status of the batch job, follow these steps.
+For more information and updates about the status of the batch job, follow these steps:
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 1. Find the job description that contains "CustInvoiceTaxFieldsSysSetup."

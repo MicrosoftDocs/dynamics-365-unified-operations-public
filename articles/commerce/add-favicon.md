@@ -25,7 +25,7 @@ Although you can add multiple favicons of various sizes and file types to your s
 
 ## Upload a favicon to your site's asset collection
 
-To upload a favicon to your site's asset collection, follow these steps.
+To upload a favicon to your site's asset collection, follow these steps:
 
 1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Media Items**.
@@ -47,7 +47,7 @@ To create the HTML for the favicon, use the following HTML string. For the **hre
 
 ## Create a fragment that contains a metatag for your favicon
 
-To create a fragment that contains a metatag for your favicon, follow these steps.
+To create a fragment that contains a metatag for your favicon, follow these steps:
 
 1. Go to **Fragments**, and select **New**.
 1. In the **New fragment** dialog box, select **Metatags** as the module that the fragment is based on.
@@ -58,7 +58,7 @@ To create a fragment that contains a metatag for your favicon, follow these step
 
 ## Add the metatag fragment to the HTML head section of your pages
 
-To add the metatag fragment to the HTML **head** section of your pages, follow these steps.
+To add the metatag fragment to the HTML **head** section of your pages, follow these steps:
 
 1. Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.
 1. In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add fragment**.

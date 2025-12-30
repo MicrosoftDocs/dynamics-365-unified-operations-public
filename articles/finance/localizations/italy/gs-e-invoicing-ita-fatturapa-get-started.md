@@ -43,7 +43,7 @@ This section complements the common part of Electronic Invoicing service configu
 
 ### <a name="ProgressivoInvio"></a>Create a new number sequence for ProgressivoInvio
 
-To create a new number sequence for ProgressivoInvio, follow these steps.
+To create a new number sequence for ProgressivoInvio, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, on the **Number sequences** FastTab, select **New** to add a record.
@@ -51,7 +51,7 @@ To create a new number sequence for ProgressivoInvio, follow these steps.
 
 ### Create a new chain of certificates
 
-To create a new chain of certificates, follow these steps.
+To create a new chain of certificates, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, on the **Key Vault settings** FastTab, select **Key Vault parameters**.
@@ -79,7 +79,7 @@ To create a new chain of certificates, follow these steps.
 
 ### <a name="CreateFeature"></a>Create a new feature
 
-To create a new feature, follow these steps.
+To create a new feature, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 1. In the **Configuration providers** section, mark your company's configuration provider as active.
@@ -93,7 +93,7 @@ The following procedures must be completed for both Electronic reporting (ER) fo
 
 #### Set up payment method substitution
 
-To set up payment method substitution, follow these steps.
+To set up payment method substitution, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
 1. On the **Configurations** page, select the **Sales invoice (IT)** format configuration.
@@ -108,7 +108,7 @@ To set up payment method substitution, follow these steps.
 
 #### Set up application-specific parameters
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
 1. On the **Configurations** page, select the **Sales invoice (IT)** format configuration.
@@ -125,7 +125,7 @@ To set up application-specific parameters, follow these steps.
 
 ### Configure a processing pipeline for export
 
-To configure a processing pipeline for export, follow these steps.
+To configure a processing pipeline for export, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. On the **Electronic invoicing features** page, select the feature that you [created](#CreateFeature) based on the **Italian FatturaPA (IT)** feature.
@@ -144,7 +144,7 @@ To configure a processing pipeline for export, follow these steps.
 
 ### Configure a processing pipeline for import
 
-To configure a processing pipeline for import, follow these steps.
+To configure a processing pipeline for import, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. On the **Electronic invoicing features** page, select the feature that you [created](#CreateFeature) based on the **Italian FatturaPA (IT)** feature.
@@ -163,7 +163,7 @@ Complete and deploy the feature as described in [Complete and deploy a Globaliza
 
 ### Configure Electronic document parameters
 
-To configure Electronic document parameters, follow these steps.
+To configure Electronic document parameters, follow these steps:
 
 1. Import the **Customer invoice context model** (version 54 or later) and **Vendor invoice import (IT)** ER configurations from the repository. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -174,7 +174,7 @@ To configure Electronic document parameters, follow these steps.
 
 ### Set up vendor invoice import 
 
-To set up vendor invoice import, follow these steps.
+To set up vendor invoice import, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
 1. Select **Customer invoice context model**, and then select **Create configuration**.
@@ -216,7 +216,7 @@ This section provides information to help you set up and configure the proxy ser
 
 ### Create an app registration
 
-To create an app registration, follow these steps.
+To create an app registration, follow these steps:
 
 1. Use the following Windows PowerShell script to create a self-signed certificate for service-to-service (S2S) authentication.
 
@@ -266,7 +266,7 @@ To create an app registration, follow these steps.
 
 ### Create an Azure virtual machine
 
-To create an Azure virtual machine (VM), follow these steps.
+To create an Azure virtual machine (VM), follow these steps:
 
 1. In the [Azure portal](https://portal.azure.com), go to **Virtual machines**, and select **Create new**.
 1. On the **Basics** tab, select the subscription and resource group. The values should be the subscription and resource group where your key vault and Blob storage are located.
@@ -366,7 +366,7 @@ To prepare the proxy service environment, follow these steps on the machine wher
     
 ### Set up the SDI Proxy service in IIS
 
-To set up the SDI Proxy service in IIS, follow these steps.
+To set up the SDI Proxy service in IIS, follow these steps:
 
 1. In Lifecycle Services, go to the Shared asset library, and select **Data package** as the asset type.
 1. Find **Electronic Invoicing Service Sdi Proxy v1.1**, and download it to the VM.
@@ -499,7 +499,7 @@ To set up the SDI Proxy service in IIS, follow these steps.
 
 ## Rotate certificates
 
-To rotate certificates, follow these steps.
+To rotate certificates, follow these steps:
 
 1. Rotate the app registration S2S authentication certificate:
 
@@ -531,7 +531,7 @@ To rotate certificates, follow these steps.
 
 ## Privacy notice 
 
-Enabling the **Italian electronic invoice** feature might require that limited data is sent. This data includes the organization's tax registration ID. An administrator can enable and disable the **Italian electronic invoice** feature. To disable the feature, follow these steps.
+Enabling the **Italian electronic invoice** feature might require that limited data is sent. This data includes the organization's tax registration ID. An administrator can enable and disable the **Italian electronic invoice** feature. To disable the feature, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Features** tab, select the rows that contain the **Italian electronic invoice** feature, and then select **Disable now**.

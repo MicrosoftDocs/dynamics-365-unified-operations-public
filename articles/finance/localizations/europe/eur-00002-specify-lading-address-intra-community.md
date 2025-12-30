@@ -27,7 +27,7 @@ Before you can complete the procedure, you must configure Intrastat reporting. T
 
 The following procedure uses the was created using the demo data company DEMF with a primary address in Germany.
 
-To specify a lading address for an intracommunity transaction, follow these steps.
+To specify a lading address for an intracommunity transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Select **New**.

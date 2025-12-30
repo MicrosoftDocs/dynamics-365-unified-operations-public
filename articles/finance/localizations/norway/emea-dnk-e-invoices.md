@@ -38,7 +38,7 @@ For more information about how to import ER configurations, see [Import electron
 
 ### Reference the imported ER format configurations
 
-To reference the imported ER format configurations, follow these steps.
+To reference the imported ER format configurations, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
@@ -52,13 +52,13 @@ To reference the imported ER format configurations, follow these steps.
 
 ### Configure legal entity parameters
 
-To configure legal entity parameters, follow these steps.
+To configure legal entity parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
 1. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 1. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
 1. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's CVR number.
-1. Companies can be identified by their CVR number (with **0184** schema value) or their Global Location Number, GLN (with **0088** schema value). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps.
+1. Companies can be identified by their CVR number (with **0184** schema value) or their Global Location Number, GLN (with **0088** schema value). The GLN is also known as a European article numbering (EAN) location number. To identify a company by its EAN, follow these steps:
  
     - Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
     - Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
@@ -76,7 +76,7 @@ To configure legal entity parameters, follow these steps.
 
 ### Configure customer parameters
 
-To configure customer parameters, follow these steps.
+To configure customer parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
@@ -106,7 +106,7 @@ The system supports the following predefined codes for payment methods and provi
 | DK:GIRO                      | 50                           |
 | All other codes              | 97                           |
 
-To configure methods of payment, follow these steps.
+To configure methods of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
 1. Create a new method of payment, or select an existing method to configure.
@@ -118,7 +118,7 @@ To configure methods of payment, follow these steps.
 
 ### Configure units of measure
 
-To configure units of measure, follow these steps.
+To configure units of measure, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. Select a unit ID, and then select **External codes**.
@@ -135,7 +135,7 @@ Configuration of sales tax codes depends on which OIOUBL format is used, version
 
 ### Configure sales tax codes for the version 3 of OIOUBL format
 
-To additionally configure sales tax codes, follow these steps.
+To additionally configure sales tax codes, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
@@ -161,7 +161,7 @@ Application-specific parameters must be configured for the following configurati
 - OIOUBL Sales credit note (DK)
 - OIOUBL Project credit note (DK)
 
-For each configuration, follow these steps.
+For each configuration, follow these steps:
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, in the list of configurations, select a required configuration. For example, select **OIOUBL Sales invoice (DK)**.
 1. On the **Configurations** menu, in the **Application specific parameters** section, select **Setup**.
@@ -223,7 +223,7 @@ After an invoice is posted, you can generate an electronic invoice by selecting 
 
 ### View electronic invoices
 
-To view electronic invoices, follow these steps.
+To view electronic invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 1. Select a job, and then select **Show files**.

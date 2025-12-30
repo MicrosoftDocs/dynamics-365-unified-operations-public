@@ -22,7 +22,7 @@ You can issue a fiscal document for a customer who bought a fixed asset from a f
 
 The following procedure uses the BRMF demo company.
 
-To issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment, follow these steps.
+To issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.

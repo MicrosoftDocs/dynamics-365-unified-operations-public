@@ -25,7 +25,7 @@ The following procedures were created using the demo data company JPMF.
 
 ## Set up a fixed asset group
 
-To set up a fixed asset group, follow these steps.
+To set up a fixed asset group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset groups**.
 1. Select **New**.
@@ -46,7 +46,7 @@ To set up a fixed asset group, follow these steps.
 
 ## Create a fixed asset
 
-To create a fixed asset, follow these steps.
+To create a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.

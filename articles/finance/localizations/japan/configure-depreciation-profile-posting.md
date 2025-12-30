@@ -29,7 +29,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Configure a depreciation profile
 
-To configure a depreciation profile, follow these steps.
+To configure a depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
 1. Select **New**.
@@ -44,7 +44,7 @@ To configure a depreciation profile, follow these steps.
 
 ## Configure a posting profile
 
-To configure a posting profile, follow these steps.
+To configure a posting profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset posting profiles**.
 1. Select **Edit**.

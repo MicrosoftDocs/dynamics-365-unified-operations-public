@@ -22,7 +22,7 @@ This article explains how to perform daily operations such as handling cash and 
 
 Advance holder balances are posted to the related employee balance account.
 
-To create and post disbursement slips that have advance holder details, follow these steps.
+To create and post disbursement slips that have advance holder details, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Cash transactions** \> **Slip journal**.
 1. Select **New** to create a slip journal. 
@@ -34,7 +34,7 @@ To create and post disbursement slips that have advance holder details, follow t
 
 Advance holder balances are posted to the employee balance account instead of the vendor balance account.
 
-To create and post vendor invoices that have advance holder details, follow these steps.
+To create and post vendor invoices that have advance holder details, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select **New** to create a purchase order. For more information, see [Create a purchase order](../../../supply-chain/procurement/tasks/create-purchase-order.md).
@@ -58,7 +58,7 @@ Use the following procedures to create, modify, post, inquire about, and print a
 
 ### Create an advance report
 
-To create an advance report, follow these steps.
+To create an advance report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Advance holders** \> **Advance report**.
 1. Select **New** to create an advance report. Alternatively, you can create an advance report directly from the **Advance holders** page by selecting **New** \> **Advance report**.
@@ -74,7 +74,7 @@ To create an advance report, follow these steps.
 
 ### Generate advance report lines from expenses
 
-To generate advance report lines from expenses, follow these steps.
+To generate advance report lines from expenses, follow these steps:
 
 1. In Dynamics 365 Finance, switch to the **Lines** view.
 1. Select **Copy from expends** to open the **Create advance report lines** page. This page shows all the expense types that were previously defined in the parameters.
@@ -98,7 +98,7 @@ To generate advance report lines from expenses, follow these steps.
 
 ### Generate advance report lines from sources
 
-To generate advance report lines from sources, follow these steps.
+To generate advance report lines from sources, follow these steps:
 
 1. In Dynamics 365 Finance, switch to the **Lines** view.
 1. Select **Copy from sources** to open the **Create lines** page. This page shows a list of the advance holder's documents (credit transactions) where the date coincides with the advance report date.
@@ -118,7 +118,7 @@ To generate advance report lines from sources, follow these steps.
 
 You can distribute the expense amount among different ledger dimensions. You can then view the ledger entries and verify the distribution of the expense amount.
 
-To manually generate advance report lines, follow these steps.
+To manually generate advance report lines, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Advance report lines** FastTab, select **Add line** to create a line.
 1. In the **Disbursement date** field, enter the date of the document that describes the expense.
@@ -154,7 +154,7 @@ You can print an advance report after an advance invoice issued to an advance ho
 > [!NOTE]
 > The amounts on the **Advance reports** page are recalculated on the date when the payment journal for the advance holder is posted.
 
-To print an advance report that has been posted, follow these steps.
+To print an advance report that has been posted, follow these steps:
 
 1. In Dynamics 365 Finance, on the Action Pane, select **Print** \> **Print** to open the **Advance report** page.
 1. Select **OK** to print the advance report in Microsoft Excel format.
@@ -163,7 +163,7 @@ To print an advance report that has been posted, follow these steps.
 
 You can reject advance reports that have been posted and that have a status of **Posted**. These reports shouldn't have been settled. Factures aren't created for these reports.
 
-To reject an advance report, follow these steps.
+To reject an advance report, follow these steps:
 
 1. Select an advance report, and then, on the Action Pane, select **Post** \> **Rejection**.
 1. Select **Yes** to confirm the action. The status of the advance report is set to **Rejected**.
@@ -184,7 +184,7 @@ You can close balances for an advance holder through cash or a bank.
 
 ### Close balances through cash
 
-To close balances through cash, follow these steps.
+To close balances through cash, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports** \> **Balance**.
 1. In the **To date** field, enter the date to get advance holder balances for.
@@ -217,7 +217,7 @@ You can complete either a manual settlement or a periodic settlement for an adva
 
 ### Manually settle advance holder transactions
 
-To manually settle advance holder transactions, follow these steps.
+To manually settle advance holder transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Advance holders** \> **Advance holders**.
 1. Select an advance holder.
@@ -239,7 +239,7 @@ To manually settle advance holder transactions, follow these steps.
 
 Use this procedure to periodically settle advance holder transactions. When you use the periodic settlement function, all open transactions are settled in chronological order.
 
-To periodically settle advance holder transactions, follow these steps.
+To periodically settle advance holder transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic settlement**.
 1. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were posted before this date will be settled.
@@ -249,7 +249,7 @@ To periodically settle advance holder transactions, follow these steps.
 
 ### Cancel a periodic settlement
 
-To cancel a periodic settlement for advance holder transactions, follow these steps.
+To cancel a periodic settlement for advance holder transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic reverse**.
 1. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were settled before this date will be reversed.

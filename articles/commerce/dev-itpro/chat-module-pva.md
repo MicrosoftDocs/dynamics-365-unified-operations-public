@@ -41,7 +41,7 @@ After you configure the chatbot, follow the procedures below to obtain the bot I
 
 ### Find the bot ID of Microsoft Copilot Studio chatbot
 
-To find the bot ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps.
+To find the bot ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps:
 
 1. In the left navigation menu, select **Settings \> Channels**.
 1. Select **Mobile app**.
@@ -62,7 +62,7 @@ For more information on how to copy the bot ID parameter values, see [Retrieve y
 
 ### Find the tenant ID of a Microsoft Copilot Studio chatbot
 
-To find the tenant ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps.
+To find the tenant ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps:
 
 1. In the left navigation menu, select **Settings \> Details**.
 1. Select **Advanced**.
@@ -74,7 +74,7 @@ To find the tenant ID of a Microsoft Copilot Studio chatbot in the Microsoft Cop
 
 One recommended way to implement the chat experience for your e-commerce site is to add the Commerce Chat with Microsoft Copilot Studio module to the shared header fragment that is used on your site pages.
 
-To add the chat module to your site's header fragment in Commerce site builder, follow these steps.
+To add the chat module to your site's header fragment in Commerce site builder, follow these steps:
 
 1. In Commerce site builder for your site, go to **Fragments**.
 1. Select **New**.

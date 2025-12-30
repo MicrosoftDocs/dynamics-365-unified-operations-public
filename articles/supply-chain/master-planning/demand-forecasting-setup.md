@@ -24,7 +24,7 @@ Item allocation keys establish groups of items. A demand forecast is calculated 
 
 An item and its dimensions must be part of only one item allocation key if the item allocation key is used during forecast creation.
 
-To create item allocation keys and add a stock-keeping unit (SKU) to them, follow these steps.
+To create item allocation keys and add a stock-keeping unit (SKU) to them, follow these steps:
 
 1. Go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**.
 1. Either select an item allocation key in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected key, set the following fields:
@@ -47,7 +47,7 @@ Demand forecasting can generate cross-company forecasts. In Dynamics 365 Supply 
 > [!IMPORTANT]
 > Planning Optimization doesn't currently support intercompany planning groups. To do intercompany planning that uses Planning Optimization, set up master planning batch jobs that include master plans for all the relevant companies.
 
-To set up your intercompany planning groups, follow these steps.
+To set up your intercompany planning groups, follow these steps:
 
 1. Go to **Master planning \> Setup \> Intercompany planning groups**.
 1. Either select a planning group in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected group, set the following fields:
@@ -120,7 +120,7 @@ At any time, you can add forecast dimensions to the list of dimensions that are 
 
 ### Set up overrides for specific item allocation keys
 
-Not all items work in the same way from a demand forecasting perspective. Therefore, you can establish allocation key–specific overrides for most of the settings that are defined on the **General** tab. The exception is the demand forecast unit. To set up overrides for a specific item allocation key, follow these steps.
+Not all items work in the same way from a demand forecasting perspective. Therefore, you can establish allocation key–specific overrides for most of the settings that are defined on the **General** tab. The exception is the demand forecast unit. To set up overrides for a specific item allocation key, follow these steps:
 
 1. On the **Demand forecasting parameters** page, on the **Item allocation keys** tab, use the toolbar buttons to add item allocation keys to the grid on the left, or remove them, as you require. Then select the allocation key that you want to set up overrides for.
 1. On the **Transaction types** FastTab, enable the types of transactions that you want to use to generate the statistical baseline forecast for products that belong to the selected allocation key. The settings work just as they work on the **General** tab, but they apply only to the selected item allocation key. All the settings here (both the *Yes* values and the *No* values) override all the **Transaction types** settings on the **General** tab.

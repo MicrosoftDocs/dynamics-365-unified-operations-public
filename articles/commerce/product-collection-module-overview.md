@@ -61,7 +61,7 @@ The product collection module supports the [quick view module](quick-view-module
 
 ## Add a product collection module to a category page
 
-To add a product collection module to a category page, follow these steps.
+To add a product collection module to a category page, follow these steps:
 
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Create a new page** dialog box, under **Page name**, enter an appropriate page name, and then select **Next**.

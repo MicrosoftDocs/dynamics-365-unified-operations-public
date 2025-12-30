@@ -31,7 +31,7 @@ Pulling the online transaction data can be done either by manually running the P
 
 ### Manually run the P-job
 
-To manually run the P-job, follow these steps.
+To manually run the P-job, follow these steps:
 
 1. In headquarters, go to **All workspaces \> Retail and Commerce IT**.
 2. Select **Distribution schedule**.
@@ -42,7 +42,7 @@ To manually run the P-job, follow these steps.
 
 ### Schedule a recurring P-job
 
-To schedule a recurring P-job, follow these steps.
+To schedule a recurring P-job, follow these steps:
 
 1. In headquarters, go to **All workspaces \> Retail and Commerce IT**.
 2. Select **Distribution schedule**.
@@ -60,7 +60,7 @@ Orders can be synchronized either by manually running the **Synchronize orders**
 
 ### Manually run order synchronization
 
-To manually run the **Synchronize orders** job once, follow these steps.
+To manually run the **Synchronize orders** job once, follow these steps:
 
 1. In headquarters, go to **All workspaces \> Store financials**.
 2. Select **Synchronize orders**.
@@ -79,7 +79,7 @@ To manually run the **Synchronize orders** job once, follow these steps.
 
 The following procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions, using the USRT company in demo data.
 
-To schedule recurring order synchronization, follow these steps.
+To schedule recurring order synchronization, follow these steps:
 
 1. In headquarters, go to **All workspaces \> Store financials**.
 2. Select **Synchronize orders**.

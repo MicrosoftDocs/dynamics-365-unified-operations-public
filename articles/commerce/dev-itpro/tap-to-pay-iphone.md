@@ -48,7 +48,7 @@ The Tap to Pay on iPhone feature works on iPhones that run the Store Commerce ap
 
 ### Enable Tap to Pay in the hardware profile
 
-To enable Tap to Pay in the hardware profile, follow these steps.
+To enable Tap to Pay in the hardware profile, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and commerce** \> **Channel setup** \> **POS setup**.
 1. On the **Registers** page, open the register that is used to run the Store Commerce app on iPhone. 
@@ -60,7 +60,7 @@ To enable Tap to Pay in the hardware profile, follow these steps.
 
 Next, you must configure the PIN pad properties in headquarters.
 
-To configure the PIN pad properties, follow these steps.
+To configure the PIN pad properties, follow these steps:
 
 1. In the hardware profile, on the **PIN pad** FastTab, for the **PIN pad** property, select **Network**.
 1. For the **Device name** property, enter **MicrosoftAdyenDeviceV001**.

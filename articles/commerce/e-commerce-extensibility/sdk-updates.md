@@ -120,7 +120,7 @@ If you have an environment that has no e-commerce extension customizations (in o
 
 ### Deploy a global e-commerce extension
 
-To deploy a global e-commerce extension, follow these steps.
+To deploy a global e-commerce extension, follow these steps:
 
 1. From within your LCS project, select **Asset library**.
 

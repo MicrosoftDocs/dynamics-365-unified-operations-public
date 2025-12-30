@@ -44,7 +44,7 @@ This feature improves the calculation logic for page numbering on the Italian **
 
 This feature also enables an algorithm for grouping lines that have the same column values into one line. Therefore, only the necessary pages are included on the report printout.
 
-If you must calculate the number of documents that are included in the Fiscal journal, follow these steps.
+If you must calculate the number of documents that are included in the Fiscal journal, follow these steps:
 
 1. Print the report in PDF file format.
 2. Convert the PDF to Microsoft Excel format by using conversion software.

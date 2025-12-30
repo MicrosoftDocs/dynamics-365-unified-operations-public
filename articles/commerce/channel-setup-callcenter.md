@@ -25,7 +25,7 @@ Before you create a new call center channel, ensure that you complete the [Chann
 
 ## Create and configure a new call center channel
 
-To create and configure a new call center channel, follow these steps.
+To create and configure a new call center channel, follow these steps:
 
 1. In the navigation pane, go to **Retail and Commerce \> Channels \> Call centers \> All call centers**.
 1. On the action pane, select **New**.
@@ -75,7 +75,7 @@ The following image shows an example of a cash payment method.
 
 You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.  
 
-To change or add a mode of delivery to be associated to the call center channel, follow these steps.
+To change or add a mode of delivery to be associated to the call center channel, follow these steps:
 
 1. From the Call center modes of delivery form, select **Manage modes of delivery**
 1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
@@ -101,7 +101,7 @@ After the channel user setup is done and the user creates a new sales order in C
 
 Price groups are optional, and if used can control which sales prices are offered to customers placing orders in the call center channel. If a price group isn't configured for the customer, or if catalog price groups aren't being applied to the sales order using the **Source code ID** field on the call center order header, then the channel price group is used to locate item prices. If a price group isn't found on the call center channel, the default item master prices are used. 
 
-To set up a price group, follow these steps.
+To set up a price group, follow these steps:
 
 1. On the action pane, select the **Channel** tab, and then select **Price groups**.
 1. On the action pane, select **New**.

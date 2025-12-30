@@ -30,7 +30,7 @@ For more information about cubes, see [Business performance planning overview](b
 
 ## Create and use cubes
 
-To use a cube in Microsoft Power BI for planning purposes, follow these steps.
+To use a cube in Microsoft Power BI for planning purposes, follow these steps:
 
 1. Assemble the cube.
 

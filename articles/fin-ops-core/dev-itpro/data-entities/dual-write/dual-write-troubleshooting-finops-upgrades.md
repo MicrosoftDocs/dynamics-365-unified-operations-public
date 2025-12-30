@@ -36,7 +36,7 @@ Infolog diagnostic message: 'Cannot select a row in Dual write project sync (Dua
 Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw exception(s), please investigate before synchronizing again: 'InfoException:Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN."
 ```
 
-To fix the issue, follow these steps.
+To fix the issue, follow these steps:
 
 1. Sign in to the virtual machine (VM) for the finance and operations app.
 2. Open Visual Studio as an admin, and open the Application Object Tree (AOT).
@@ -66,7 +66,7 @@ To fix the issue, first follow these steps to make sure that the columns are in 
 4. Open the **Table mapping** page from the **Dual-write** page in the finance and operations app.
 5. Select **Refresh tables** to automatically fill the columns in the table mappings.
 
-If the issue still isn't fixed, follow these steps.
+If the issue still isn't fixed, follow these steps:
 
 > [!IMPORTANT]
 > These steps guide you through the process of deleting a table and then adding it again. To avoid issues, be sure to follow the steps exactly.

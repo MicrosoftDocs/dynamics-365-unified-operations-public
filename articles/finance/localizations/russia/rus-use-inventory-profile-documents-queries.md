@@ -22,7 +22,7 @@ This article explains how to work with inventory profiles for Russia in Microsof
 
 ### Define a posting profile in purchase orders
 
-To define a posting profile in purchase orders, follow these steps.
+To define a posting profile in purchase orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select a purchase order, and switch to the **Header** view.
@@ -44,7 +44,7 @@ When you post a purchase order invoice or product receipt, the system splits the
 
 #### Example in the RUMF legal entity
 
-To walk through an example procedure in the RUMF legal entity, follow these steps.
+To walk through an example procedure in the RUMF legal entity, follow these steps:
 
 1. On the **Procurement and sourcing parameters** page, on the **Summary update** tab, on the **Summary update** FastTab, in the **Split based on** section, on the **Product receipt** line, set the **Posting profile** and **Kind of activity** options to **Yes**.
 1. On the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, on the **Posting** FastTab, in the **Posting profile** field, select **Общий**.
@@ -104,7 +104,7 @@ If you process the invoice-factures at the same time that purchase order invoice
 
 If you process invoice-factures later (for example, from a vendor invoice journal), you can combine the lines of different invoices that have the same kind of activity into one invoice-facture. 
 
-To configure an invoice-facture, follow these steps.
+To configure an invoice-facture, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
 1. Select a vendor invoice that doesn't have a processed invoice-facture, and then select **Create facture \> Update facture**.
@@ -121,7 +121,7 @@ The system saves the kind of activity that is used for posting in the product re
 
 ### Define a posting profile in sales orders
 
-To define a posting profile in sales orders, follow these steps.
+To define a posting profile in sales orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select a sales order, and switch to the **Header** view.
@@ -146,7 +146,7 @@ When you create sales order lines by selecting **Add lines**, if you don't selec
 
 ### Example
 
-To walk through an example procedure, follow these steps.
+To walk through an example procedure, follow these steps:
 
 1. Set up the following inventory profiles.
 
@@ -230,7 +230,7 @@ To walk through an example procedure, follow these steps.
 
 ## Transfer orders
 
-To confgure a transfer order, follow these steps.
+To confgure a transfer order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inbound orders** \> **Transfer order** or **Inventory management** \> **Outbound orders** \> **Transfer order**.
 1. Select a transfer order, and switch to the **Header** view.
@@ -262,7 +262,7 @@ If the value of the **Inventory profile** dimension for the production order BOM
 
 On the **On-hand list** page, you can filter by the kind of activity.
 
-To filter the **On-hand list** page by the kind of activity, follow these steps.
+To filter the **On-hand list** page by the kind of activity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquiries and reports** \> **On-hand list**.
 1. In the upper pane, in the **Kind of activity** field, select the kind of activity that you want to see item balances for.
@@ -275,7 +275,7 @@ You can generate cash flow forecasts for purchase orders and sale orders, based 
 
 ### Example
 
-To walk through an example procedure, follow these steps.
+To walk through an example procedure, follow these steps:
 
 1. Create the following inventory profiles.
 

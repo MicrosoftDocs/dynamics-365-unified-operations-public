@@ -23,7 +23,7 @@ This article explains how to set up exchange rates for currency transactions in 
 
 You use the **Currency revaluation accounts** page to set up the loss or gain calculation for currency exchange.
 
-To set up the loss or gain calculation for currency exchange, follow these steps.
+To set up the loss or gain calculation for currency exchange, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **Currency** \> **Currency parameters**.
 1. In the **Legal entities** field, select a company.
@@ -43,7 +43,7 @@ To set up the loss or gain calculation for currency exchange, follow these steps
 
 Use this procedure to set up the parameters for exchange adjustments of advance settlements on the **General ledger parameters** page.
 
-To set up general ledger parameters for exchange adjustment, follow these steps.
+To set up general ledger parameters for exchange adjustment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. In the **Foreign currency revaluation** field group, in the **Calculation method** field, select **Period grand total** as the calculation method for exchange differences.
@@ -53,7 +53,7 @@ To set up general ledger parameters for exchange adjustment, follow these steps.
 
 Use this procedure to settle partial payment transactions for a customer. You can settle a partial payment against a specific invoice line, and you can settle open transactions by using a periodic settlement for customers. Exchange adjustment factures are created for the invoice lines that are settled.
 
-To settle partial payments for customers, follow these steps.
+To settle partial payments for customers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
 1. Create or select a payment journal line, and then select **Lines** to open the **Customer payments** page.
@@ -77,7 +77,7 @@ To settle partial payments for customers, follow these steps.
 
 You can use the **Foreign currency revaluation** page to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period, based on the rate that is specified on the period end date.
 
-To calculate the exchange rate difference for a customer, follow these steps.
+To calculate the exchange rate difference for a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Foreign currency revaluation**.
 1. Select **Foreign currency revaluation** to create a foreign currency revaluation for the accounting period.
@@ -139,7 +139,7 @@ Any amount difference facture that is generated is processed independently of ot
 
 Use this procedure to set up parameters for amount differences for exchange rates. When you post an exchange adjustment transaction, it's posted to the ledger account that is defined on the **Currency revaluation accounts** page. All adjustments are posted to ledger accounts. You must set the posting rules, and you must set the taxable parameter for a positive or negative amount difference.
 
-To set up amount difference parameters for exchange rates, follow these steps.
+To set up amount difference parameters for exchange rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **Currency** \> **Currency parameters**.
 1. On the **General** FastTab, set the **Amount difference in tax accounting before 01.01.2015** option to **Yes** to consider amount differences in the calculation of tax accounting registers.
@@ -182,7 +182,7 @@ You use the **Accounts payable parameters** page to set up accounts payable para
 > [!NOTE]
 > If more than one payment is made during a tax period, the recalculated facture amount is the total of the recalculated payments. If all the payments belong to the same tax period that the invoice belongs to, the total facture is reflected in the purchase book.
 
-To set up accounts payable parameters for amount differences, follow these steps.
+To set up accounts payable parameters for amount differences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Ledger and sales tax** tab, on the **Purchase book** FastTab, set the **Amount difference in additional list** option to **Yes** to include the amount differences in an additional list in the purchase book.
@@ -237,7 +237,7 @@ Use the following procedures to create an amount difference facture and link it 
 
 ### Create an amount difference facture for a sales order
 
-To create an amount difference facture for a sales order, follow these steps.
+To create an amount difference facture for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
 1. To post a facture for a sales order, create the sales order, and then, on the **Setup** FastTab, select **Sales tax group** and **Item sales tax group**. 
@@ -253,7 +253,7 @@ To create an amount difference facture for a sales order, follow these steps.
 
 ### Link an amount difference facture to an original sales invoice
 
-To link an amount difference facture to an original sales invoice, follow these steps.
+To link an amount difference facture to an original sales invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Inquiries** \> **Journals** \> **Invoice journal**.
 1. Select the invoice line to include the amount difference for in the sales book, and then select **Create facture** \> **Update facture** to open the **Update facture** page.

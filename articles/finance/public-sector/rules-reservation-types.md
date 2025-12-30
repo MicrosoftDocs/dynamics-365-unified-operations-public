@@ -54,7 +54,7 @@ The following table shows the prerequisites that must be in place before you sta
 
 ## Set up budgeting parameters for regulatory accounting
 
-To set up budgeting parameters for regulatory accounting, follow these steps.
+To set up budgeting parameters for regulatory accounting, follow these steps:
 
 1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting parameters**.
 2. On the **Budget** tab, on the **Regulatory** FastTab, set the **General budget reservations** option to **Yes**.
@@ -65,7 +65,7 @@ To set up budgeting parameters for regulatory accounting, follow these steps.
 
 To earmark budget funds for this purchasing method, configure the general budget reservation as a source document. 
 
-To select source documents, follow these steps.
+To select source documents, follow these steps:
 
 1. Go to **Budgeting \> Setup \> Budget control \> Budget control configuration**.
 2. Select **Create draft**.
@@ -78,7 +78,7 @@ When you create a general budget reservation, budget source-tracking entries and
 
 To help guarantee that general ledger accounts are correct, you must configure how general budget reservations are used to record accounting commitments.
 
-To set up general ledger information for general budget reservations, follow these steps.
+To set up general ledger information for general budget reservations, follow these steps:
 
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 2. On the **Ledger** tab, on the **Accounting rules** FastTab, set the **Use posting definitions** option to **Yes**. Then, in the confirmation message box that appears, select **Yes**.
@@ -90,7 +90,7 @@ To set up general ledger information for general budget reservations, follow the
 
 You can configure transaction posting definitions to update different general ledger accounts for different types of general budget reservation.
 
-To create posting definitions for general budget reservations, follow these steps.
+To create posting definitions for general budget reservations, follow these steps:
 
 1. Go to **General ledger \> Posting setup \> Posting definitions**.
 2. Select **New**.
@@ -110,7 +110,7 @@ To create posting definitions for general budget reservations, follow these step
 
 ## Set up the reservation number sequence
 
-To set up the number sequence that general budget reservations use, follow these steps.
+To set up the number sequence that general budget reservations use, follow these steps:
 
 1. Go to **Budgeting \> Setup \> Basic budgeting \> Budgeting parameters**.
 2. On the **Number sequences** tab, in the **Reference** column, select the entry for general budget reservations.
@@ -122,7 +122,7 @@ To set up the number sequence that general budget reservations use, follow these
 
 The reservation type determines the nature of a general budget reservation, such as the type of document that relieves the budget reservation, the workflow that is used to approve the reservation, and the number sequence that is used.
 
-To create a general budget reservation type, follow these steps.
+To create a general budget reservation type, follow these steps:
 
 1. Go to **Budgeting \> Setup \> General budget reservations \> Reservation type**.
 2. Select **New**.

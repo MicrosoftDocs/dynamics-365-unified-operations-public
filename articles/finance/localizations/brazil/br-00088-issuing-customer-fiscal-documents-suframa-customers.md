@@ -20,7 +20,7 @@ This article describes how to set up tax exemptions for the Superintendência da
 
 Use the following procedure to set up tax exemptions for the SUFRAMA region. The procedure uses the BRMF demo company.
 
-To set up tax exemptions for the SUFRAMA region, follow these steps.
+To set up tax exemptions for the SUFRAMA region, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, find and select the desired record.

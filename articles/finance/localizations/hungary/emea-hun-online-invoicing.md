@@ -357,7 +357,7 @@ This procedure walks you through the RTIR process.
 
 ### Exclude invoice reporting in RTIR
 
-To exclude an invoice from processing in RTIR, follow these steps.
+To exclude an invoice from processing in RTIR, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**.
 2. On the Action Pane, select **Update status** to update the status of the message items to **Excluded**. Invoices that have a status of **Excluded** won't be included in the report.
@@ -366,7 +366,7 @@ To exclude an invoice from processing in RTIR, follow these steps.
 
 ### Postpone invoice reporting in RTIR
 
-To postpone reporting of an invoice in RTIR, follow these steps.
+To postpone reporting of an invoice in RTIR, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**.
 2. On the Action Pane, select **Update status** to update the status of the message items to **Postponed**. Invoices that have a status of **Postponed** won't be included in the report.
@@ -569,7 +569,7 @@ In Dynamics 365 Finance's solution for Hungarian Online invoicing system support
 
 ### Support for archiving digital invoices and including the hash value on the data report
 
-As of XSD version 3.0, the Online invoicing system supports archiving digital invoices and sending the hash numbers that it generates for those invoices. To enable your system to generate hash numbers for the invoices, follow these steps.
+As of XSD version 3.0, the Online invoicing system supports archiving digital invoices and sending the hash numbers that it generates for those invoices. To enable your system to generate hash numbers for the invoices, follow these steps:
 
 1. Go to **Workspaces** \> **Feature management**.
 2. In the **Feature management** workspace, find and select the **Archive printed customer invoices with hash numbers** feature, and turn it on.

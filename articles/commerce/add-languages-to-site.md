@@ -22,7 +22,7 @@ You can localize your website into any language that Commerce supports. (The lis
 
 ## Add a language to an online store
 
-To add a language to an online store, follow these steps.
+To add a language to an online store, follow these steps:
 
 1. Open the Dynamics 365 Commerce environment for your site.
 1. Go to **Retail and Commerce \> Channels \> Online stores** to access the list of online stores that are configured for your environment. Alternatively, enter **online stores** as a search term.

@@ -137,13 +137,13 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 
 If your company must report from multiple legal entities in the same Finance database, set up the [populate records actions](#populate) for all the legal entities from which data must be included in reporting.
 
-To enable this capability in your Finance environment, follow these steps. 
+To enable this capability in your Finance environment, follow these steps: 
 
 1. Go to **Workspaces** \> **Feature management**.
 2. Find and select the **Cross-company queries for the populate records actions** feature in the list.
 3. Select **Enable now**. 
 
-To set up the [populate records actions](#populate) for multiple companies from which data must be included in reporting, follow these steps.
+To set up the [populate records actions](#populate) for multiple companies from which data must be included in reporting, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
 

@@ -44,7 +44,7 @@ To consume the secret in the extension, add the following request and response.
 | GetUserDefinedSecretStringValueServiceRequest  | string **secretName**        | The request class that is used to get user-defined secrets from Headquarters. |
 | GetUserDefinedSecretStringValueServiceResponse | string **SecretStringValue** | The response class that is used to get user-defined secrets from Headquarters. The response returns a **SecretStringValue** value, and extensions can type-cast this value to **X509Certificate2** or use it as string value. |
 
-To read the secret in the CRT extension, follow these steps.
+To read the secret in the CRT extension, follow these steps:
 
 ### Cache the key vault in memory in CRT/Retail Server
 

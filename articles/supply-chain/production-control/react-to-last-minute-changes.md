@@ -23,7 +23,7 @@ Sometimes, a bill of materials (BOM) item must be changed on multiple production
 
 ### Change a BOM item on a production order
 
-To change a BOM item that's used on any production order, follow these steps.
+To change a BOM item that's used on any production order, follow these steps:
 
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Select one or more production orders that you want to change. You can change BOM items only for production orders that have a status of *Estimated* or *Scheduled*. (You can't change them for production orders that have a status of *Created*, for example.)
@@ -58,7 +58,7 @@ When the change is applied, the system changes the quantity of the BOM line for 
 
 It's often useful to change the setup times for routes when improvements are made or machines are changed for the same process.
 
-To change a production order route, follow these steps.
+To change a production order route, follow these steps:
 
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Select one or more production orders that you want to change.

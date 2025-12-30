@@ -34,7 +34,7 @@ Many retailers provide the option of customer orders (also known as special orde
 
 Before you can set product quantity limits, the default order settings feature must be turned on in Commerce headquarters.
 
-To turn on the default order settings feature, follow these steps.
+To turn on the default order settings feature, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Find and select the **Support the Site and Default order settings in the customer order** feature.
@@ -44,7 +44,7 @@ To turn on the default order settings feature, follow these steps.
 
 You can define the quantity settings on the **Default order settings** page.
 
-To define the quantity settings, follow these steps. 
+To define the quantity settings, follow these steps: 
 
 1. Go to Product **Retail and Commerce \> Products and categories \> Released products by category**.
 1. Select a released product.
@@ -58,7 +58,7 @@ To define the quantity settings, follow these steps.
 
 ## Turn on the B2B order quantity limits feature in Commerce site builder
 
-To turn on the B2B order quantity limits feature in Commerce site builder, follow these steps.
+To turn on the B2B order quantity limits feature in Commerce site builder, follow these steps:
 
 1. Go to **Site settings \> Extensions**
 1. Under **Enable Order Quantity Limits**, select **Enabled for B2B customers** in the drop-down menu. 

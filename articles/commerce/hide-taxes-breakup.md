@@ -30,7 +30,7 @@ The following illustration shows an example of two order summaries. The first sh
 
 ## Hide tax breakup information in order summaries
 
-To hide tax breakup information in order summaries, follow these steps.
+To hide tax breakup information in order summaries, follow these steps:
 
 1. In Commerce site builder, go to the site that you want to update.
 1. Go to **Site settings \> Extensions**.

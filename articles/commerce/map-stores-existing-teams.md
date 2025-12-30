@@ -24,7 +24,7 @@ Your organization may have teams created for some or all of your stores before i
 
 ## Map stores and corresponding teams in Commerce headquarters 
 
-To map stores and corresponding teams in Commerce headquarters, follow these steps.
+To map stores and corresponding teams in Commerce headquarters, follow these steps:
 
 1. Go to **System Administration \> Workspace \> Data management**.
 1. Select **Export**. 

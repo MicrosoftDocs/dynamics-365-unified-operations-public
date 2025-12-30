@@ -29,7 +29,7 @@ Before you can execute these procedures, complete the following procedures.
 - Set up OIOUBL electronic invoicing
 - Set up a customer account for OIOUBL electronic invoicing
 
-To create and post a free text invoice for a public sector customer, follow these steps.
+To create and post a free text invoice for a public sector customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.
@@ -49,7 +49,7 @@ To create and post a free text invoice for a public sector customer, follow thes
 
 ## Generate an OIOUBL electronic invoice
 
-To generate an OIOUBL electronic invoice, follow these steps.
+To generate an OIOUBL electronic invoice, follow these steps:
 
 1. Select **Send**.
 1. Select **Original**.  

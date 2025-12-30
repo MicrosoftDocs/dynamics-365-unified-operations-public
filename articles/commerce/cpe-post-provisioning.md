@@ -83,7 +83,7 @@ There are three available e-commerce demo sites: Fabrikam, Adventure Works, and 
 
 ## Enable jobs
 
-To enable jobs in Commerce, follow these steps.
+To enable jobs in Commerce, follow these steps:
 
 1. Sign in to the headquarters environment.
 1. Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.

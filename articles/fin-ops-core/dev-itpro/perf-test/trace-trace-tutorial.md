@@ -74,7 +74,7 @@ This tutorial requires that you access the environment as an administrator on th
 
 You can capture a trace by using Windows Performance Monitor. This option is available only in cloud-hosted environments, on development virtual hard disks (VHDs), and on on-premises servers (also known as local business data \[LBD\] servers).
 
-To capture a trace by using Performance Monitor, follow these steps.
+To capture a trace by using Performance Monitor, follow these steps:
 
 1. Use Remote Desktop to access the cloud-hosted environment, development VHD, or on-premises Application Object Server (AOS) mode (Batch\\Interactive) that you want to collect event traces from.
 2. Open Windows Performance Monitor (**perfmon.msc**), and add a new user-defined data collector set.
@@ -118,7 +118,7 @@ Follow these steps to set the file size to 1,000 MB (1 gigabyte \[GB\]).
 2. In the **Properties** dialog box, on the **Stop condition** tab, select the **Restart the data collector set at limits** checkbox.
 3. In the **Maximum size** field, enter **1000**.
 
-After the trace reaches its maximum size, it starts to write again on top of the same file. If you want the trace to create additional files, follow these steps.
+After the trace reaches its maximum size, it starts to write again on top of the same file. If you want the trace to create additional files, follow these steps:
 
 1. Select the new user-defined trace, select and hold (or right-click) **DataCollector01**, and then select **Properties**.
 2. In the **Properties** dialog box, on the **File** tab, select the **Circular (requires a non-zero maximum file size)** checkbox.

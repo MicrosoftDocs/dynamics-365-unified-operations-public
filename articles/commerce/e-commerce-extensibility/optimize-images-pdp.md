@@ -34,7 +34,7 @@ Since the change in behavior is different, to use the image optimization feature
 
 ### Enable image optimization for the default media gallery module
 
-To enable image optimization for the default (uncustomized) media gallery module, follow these steps.
+To enable image optimization for the default (uncustomized) media gallery module, follow these steps:
 
 1. Add the **"enableImageOptimizeEvents": true** switch to the **platform.settings.json** file.  
 1. Once the switch has been added and the package has been deployed to an environment, go to Commerce site builder and open the product details page. 

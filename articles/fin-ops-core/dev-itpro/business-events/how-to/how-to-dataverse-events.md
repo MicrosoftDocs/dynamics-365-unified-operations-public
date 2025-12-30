@@ -73,7 +73,7 @@ For more information about how to use the Power Platform Tools extension to crea
 
 ### Sign the assemblies
 
-Dataverse assemblies must be signed. You can either set up a self-signed key in the solution or provide another key if you have one available. To create a self-signed key, follow these steps.
+Dataverse assemblies must be signed. You can either set up a self-signed key in the solution or provide another key if you have one available. To create a self-signed key, follow these steps:
 
 1. In Visual Studio, in Solution Explorer, select and hold (or right-click) the project name, and then select **Properties**.
 2. On the **Signing** tab, select the **Sign the assembly** checkbox.

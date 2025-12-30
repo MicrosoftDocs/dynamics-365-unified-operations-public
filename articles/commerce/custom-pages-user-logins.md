@@ -39,7 +39,7 @@ You can now configure the "Sign up and sign in," "Profile editing," and "Passwor
 
 ### Configure the "Sign up and sign in" policy
 
-To configure the "Sign up and sign in" policy, follow these steps.
+To configure the "Sign up and sign in" policy, follow these steps:
 
 1. Select **New user flow**, select **Sign up and sign in**, select the **Recommended** tab,  and then select **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_SignInSignUp**).
@@ -62,7 +62,7 @@ You will return to this policy to finish the setup after you've built the custom
 
 ### Configure the "Profile editing" policy
 
-To configure the "Profile editing" policy, follow these steps.
+To configure the "Profile editing" policy, follow these steps:
 
 1. Select **New user flow**, select **Profile editing**, select the **Recommended** tab, and then select **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_EditProfile**).
@@ -77,7 +77,7 @@ You will return to this policy to finish the setup after you've built the custom
 
 ### Configure the "Password reset" policy
 
-To configure the "Password reset" policy, follow these steps.
+To configure the "Password reset" policy, follow these steps:
 
 1. Select **New user flow**, and then select the **Password reset** option, and choose the **Recommended** tab, and click **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_ForgetPassword**).
@@ -100,7 +100,7 @@ You can create a single page with the **Microsoft Entra Generic** module and use
 
 To learn more about the Microsoft Entra Modules that ship with the module library, read more at [Identity management pages and modules](dev-itpro/identity-mgmt-modules.md).
 
-To build the custom pages with specific identity modules to handle user sign-ins, follow these steps.
+To build the custom pages with specific identity modules to handle user sign-ins, follow these steps:
 
 1. In Commerce site builder, go to your site.
 1. Build the following five templates and pages (if not already present in your site):
@@ -125,7 +125,7 @@ In the Azure portal, return to the **Microsoft Entra B2C** page, and then, on th
 
 ### Update the "Sign up and sign in" policy with custom page information
 
-To update the "Sign up and sign in" policy with custom page information, follow these steps.
+To update the "Sign up and sign in" policy with custom page information, follow these steps:
 
 1. In the **Sign in and sign up** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **Unified sign up or sign in page** layout.
@@ -145,7 +145,7 @@ To update the "Sign up and sign in" policy with custom page information, follow 
 
 ### Update the "Profile editing" policy with custom page information
 
-To update the "Profile editing" policy with custom page information, follow these steps.
+To update the "Profile editing" policy with custom page information, follow these steps:
 
 1. In the **Profile Editing** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **Profile edit page** layout (may require scrolling down past other layout options, depending on your screen).
@@ -159,7 +159,7 @@ To update the "Profile editing" policy with custom page information, follow thes
 
 ### Update the "Password reset" policy with custom page information
 
-To update the "Password reset" policy with custom page information, follow these steps.
+To update the "Password reset" policy with custom page information, follow these steps:
 
 1. In the **Password Reset** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **Forgot password page** layout.

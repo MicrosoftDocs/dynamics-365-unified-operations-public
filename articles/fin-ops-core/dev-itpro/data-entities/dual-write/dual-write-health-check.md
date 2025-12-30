@@ -20,7 +20,7 @@ The dual-write health check runs validations to ensure that the environment meet
 
 ## Run the dual-write health check
 
-To run the dual-write health check, follow these steps.
+To run the dual-write health check, follow these steps:
 
 1. In the finance and operations apps environment, on the **Dual-write** page, on the Action Pane, select **Health check**.
 1. Follow the steps in the dual-write health check wizard.

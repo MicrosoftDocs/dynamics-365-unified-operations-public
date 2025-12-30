@@ -21,7 +21,7 @@ You can cancel a customer invoice for a project. When you cancel a project invoi
 
 The following procedure uses the BRMF demo company.
 
-To cancel a customer invoice for a project or fiscal document, follow these steps.
+To cancel a customer invoice for a project or fiscal document, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> All projects**.
 1. In the list, find and select the desired record.

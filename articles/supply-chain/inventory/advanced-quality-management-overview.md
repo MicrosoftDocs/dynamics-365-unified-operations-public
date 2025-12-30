@@ -88,7 +88,7 @@ Previously, the system always ran a validation to determine whether the test ins
 
 This validation is now optional, and a parameter lets you control whether it's run or skipped. You can configure this parameter for each tag individually. You can also set a default value that applies to all new tags.
 
-To set the validation option for individual tags, follow these steps.
+To set the validation option for individual tags, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality Control** \> **Test instrument tags**.
 1. For each tag, set the **Skip check for test instrument on open quality order** option to one of the following values:
@@ -96,7 +96,7 @@ To set the validation option for individual tags, follow these steps.
     - *Yes* – Skip the validation that determines whether the tag is already assigned to an open quality order. If the tag is already assigned to an open quality order, no warning message is shown.
     - *No* – The system should run the validation and show a warning message if the tag is already assigned to an open quality order.
 
-To set the default validation setting for all new tags, follow these steps.
+To set the default validation setting for all new tags, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory and Warehouse Management parameters**.
 1. On the **Quality management** tab, in the **Skip check for test instrument on open quality order** field, specify whether the validation should be skipped for all new test instrument tags by default. You can change the setting for individual tags.

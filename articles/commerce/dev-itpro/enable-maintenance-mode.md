@@ -22,7 +22,7 @@ Maintenance mode is generally used to block access to an entire e-commerce site 
 
 ## Enable and activate maintenance mode
 
-To enable and activate maintenance mode in Commerce site builder, follow these steps.
+To enable and activate maintenance mode in Commerce site builder, follow these steps:
 
 1. In site builder, go to your site. 
 1. In the left navigation, under **Site Settings**, select **Extensions**.
@@ -35,7 +35,7 @@ After maintenance mode is enabled and activated, the default maintenance mode pa
 
 ## Create a custom maintenance mode page
 
-To create a custom maintenance mode page in site builder, follow these steps.
+To create a custom maintenance mode page in site builder, follow these steps:
 
 1. In site builder, create a new custom maintenance mode page. For instructions on creating site pages, see [Add a new site page](../add-new-page.md). The following illustration shows an example.
 

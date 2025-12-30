@@ -30,7 +30,7 @@ Two types of retries can be used for batch tasks:
 
 You can configure this functionality through the batch job setup, by adjusting the retry count on the batch task. The **Maximum retries** parameter determines the number of retries that are attempted for a task, regardless of the error type or batch server restart. If a task fails, the batch platform evaluates the number of retries that have been performed. If the count is less than the **Maximum retries** value, the task is reset to a ready state for reprocessing. The highest allowed value for the **Maximum retries** parameter is **5**.
 
-To set the **Maximum retries** value via the Batch user interface, follow these steps.
+To set the **Maximum retries** value via the Batch user interface, follow these steps:
 
 1. On the **Batch jobs** page, select **Batch task details**.
 2. On the **General** tab, adjust the value of the **Maximum retries** field for the batch task.

@@ -22,7 +22,7 @@ Many organizations are required to maintain an audit trail of users who have use
 
 In Microsoft Dynamics AX 2012, the **Audit log** form recorded which users accessed the Microsoft Dynamics AX environment. In Microsoft Dynamics 365 finance and operations apps, this information is captured in telemetry. IT administrators can download this information by using Microsoft Dynamics Lifecycle Services (LCS) and then move it to offline storage to maintain the audit trail of users who have signed in.
 
-To generate an audit log of users who have used the system, follow these steps.
+To generate an audit log of users who have used the system, follow these steps:
 
 1. Sign in to LCS, and open the project that is associated with your implementation.
 2. Navigate to the production environment, and open the **Environment details** page.

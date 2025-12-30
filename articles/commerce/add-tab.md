@@ -42,7 +42,7 @@ The following image shows an example of a tab module on a site page. In this exa
 
 ## Add a tab module to a page
 
-To add a tab module to a page and set the properties, follow these steps.
+To add a tab module to a page and set the properties, follow these steps:
 
 1. Use the Fabrikam marketing template (or any template that has no restrictions) to create a new page that is named **Store policies page**.
 1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add module**.

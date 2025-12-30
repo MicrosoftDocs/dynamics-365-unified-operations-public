@@ -70,7 +70,7 @@ For more information, see [Download ER configurations from the Global repository
 
 You must create two registration types for company codes: one for the VAT ID (NIP code) and one for the enterprise number (Regon code).
 
-To create registration types for company codes, follow these steps.
+To create registration types for company codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 2. On the Action Pane, select **New** to create a registration type for the VAT ID.
@@ -84,7 +84,7 @@ To create registration types for company codes, follow these steps.
 
 ### Match the registration types with registration categories
 
-To match the registration types with registration categories, follow these steps.
+To match the registration types with registration categories, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
 2. On the Action Pane, select **New** to create a link between each registration type that you created and a registration category.
@@ -93,7 +93,7 @@ To match the registration types with registration categories, follow these steps
 
 ### Set up a VAT ID and an enterprise number for your company
 
-To set up a VAT ID and an enterprise number for your company, follow these steps.
+To set up a VAT ID and an enterprise number for your company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. In the grid, select your company.
@@ -105,7 +105,7 @@ To set up a VAT ID and an enterprise number for your company, follow these steps
 
 ## Set up a company address
 
-To set up a company address, follow these steps.
+To set up a company address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. In the grid, select your company.
@@ -116,7 +116,7 @@ To set up a company address, follow these steps.
 
 ## Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (PL)**.
@@ -131,7 +131,7 @@ To set up foreign trade parameters, follow these steps.
 
 ## Set up product parameters for the Intrastat declaration
 
-To set up product parameters for the Intrastat declaration, follow these steps.
+To set up product parameters for the Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**.
 2. In the grid, select a product.
@@ -157,7 +157,7 @@ To set up product parameters for the Intrastat declaration, follow these steps.
 
 ## Set up the transport method and delivery terms
 
-To set up the transport method and delivery terms, follow these steps.
+To set up the transport method and delivery terms, follow these steps:
 
 1.  Set up transport codes.
 
@@ -179,7 +179,7 @@ You can also manually enter transactions by selecting **New** on the Action Pane
 
 ### Generate an Intrastat report
 
-To generate an Intrastat report, follow these steps.
+To generate an Intrastat report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 2. On the Action Pane, select **Output** \> **Report**.
@@ -216,7 +216,7 @@ Import the latest version of the following ER configurations:
 
 ### Set up a company address
 
-To set up a company address, follow these steps.
+To set up a company address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 2. On the **City** tab, select **New**.
@@ -238,7 +238,7 @@ To set up a company address, follow these steps.
 
 ### Create registration types for company codes
 
-To create registration types for company codes, follow these steps.
+To create registration types for company codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 2. On the Action Pane, select **New** to create a registration type for the VAT ID (NIP code).
@@ -252,7 +252,7 @@ To create registration types for company codes, follow these steps.
 
 ### Match the registration types with registration categories
 
-To match the registration types with registration categories, follow these steps.
+To match the registration types with registration categories, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
 2. On the Action Pane, select **New** to create a link between each registration type that you created and a registration category.
@@ -262,7 +262,7 @@ To match the registration types with registration categories, follow these steps
 
 ### Set up a VAT ID and an enterprise number for your company
 
-To set up a VAT ID and an enterprise number for your company, follow these steps.
+To set up a VAT ID and an enterprise number for your company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. In the grid, select **DEMF**.
@@ -276,7 +276,7 @@ To set up a VAT ID and an enterprise number for your company, follow these steps
 
 ### Set up a number sequence code
 
-To set up a number sequence code, follow these steps.
+To set up a number sequence code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Number sequences** \> **Number sequences**.
 2. On the Action Pane, on the **Number sequence** tab, in the **New** group, select **Number sequence**.
@@ -289,7 +289,7 @@ To set up a number sequence code, follow these steps.
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
@@ -308,7 +308,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Set up product information
 
-To set up product information, follow these steps.
+To set up product information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released** **products**.
 2. In the grid, select **D0001**.
@@ -323,7 +323,7 @@ To set up product information, follow these steps.
 
 ### Change the site address
 
-To change the site address, follow these steps.
+To change the site address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Sites**.
 2. In the grid, select **1**.
@@ -333,7 +333,7 @@ To change the site address, follow these steps.
 
 ### Set up a transport method
 
-To set up a transport method, follow these steps.
+To set up a transport method, follow these steps:
 
 1. Create a transport method.
 
@@ -362,7 +362,7 @@ To set up a transport method, follow these steps.
 
 ### Set up codes for terms of delivery
 
-To set up codes for terms of delivery, follow these steps.
+To set up codes for terms of delivery, follow these steps:
 
 1. Set up an Intrastat code for the terms of delivery.
 
@@ -384,7 +384,7 @@ To set up codes for terms of delivery, follow these steps.
 
 ### Verify an EU customer's tax-exempt number code
 
-To verify an EU customer's tax-exempt number code, follow these steps.
+To verify an EU customer's tax-exempt number code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. In the grid, select **DE-016**.
@@ -392,7 +392,7 @@ To verify an EU customer's tax-exempt number code, follow these steps.
 
 ### Create a sales order with an EU customer
 
-To create a sales order with an EU customer, follow these steps.
+To create a sales order with an EU customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. On the Action Pane, select **New**.
@@ -412,7 +412,7 @@ To create a sales order with an EU customer, follow these steps.
 
 ### Transfer the transaction to the Intrastat journal and review the result
 
-To transfer the transaction to the Intrastat journal and review the result, follow these steps.
+To transfer the transaction to the Intrastat journal and review the result, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 2. On the Action Pane, select **Transfer**.
@@ -846,7 +846,7 @@ To transfer the transaction to the Intrastat journal and review the result, foll
 
 ### Create a purchase order
 
-To create a purchase order, follow these steps.
+To create a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 2. On the Action Pane, select **New**.
@@ -867,7 +867,7 @@ To create a purchase order, follow these steps.
 
 ### Create an Intrastat declaration for arrivals
 
-To create an Intrastat declaration for arrivals, follow these steps.
+To create an Intrastat declaration for arrivals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 2. On the Action Pane, select **Transfer**.

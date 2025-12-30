@@ -22,7 +22,7 @@ You can generate debit notes for projects to get reimbursement for expenses incu
 
 The following procedure uses the BRMF demo company.
 
-To generate debit notes for projects to get reimbursement for expenses incurred, follow these steps.
+To generate debit notes for projects to get reimbursement for expenses incurred, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Journals \> Expense**.
 1. Select **New**.

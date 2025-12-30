@@ -25,7 +25,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Assign a fixed assets number sequence
 
-To assign a fixed assets number sequence, follow these steps.
+To assign a fixed assets number sequence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed assets parameters**.
 1. Select the **Number sequences** tab.
@@ -36,7 +36,7 @@ To assign a fixed assets number sequence, follow these steps.
 
 ## Assign an idle period for a fixed asset
 
-To assign an idle period for a fixed asset, follow these steps.
+To assign an idle period for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Assign idle period to a fixed asset**.
 1. Select **New**.
@@ -56,7 +56,7 @@ To assign an idle period for a fixed asset, follow these steps.
 
 ## Validate a fixed asset book
 
-To validate a fixed asset book, follow these steps.
+To validate a fixed asset book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. In the list, find and select the **EQUPM-000024** record.  
@@ -70,7 +70,7 @@ To validate a fixed asset book, follow these steps.
 
 ## Execute a depreciation proposal
 
-To execute a depreciation proposal, follow these steps.
+To execute a depreciation proposal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

@@ -61,7 +61,7 @@ The following reports use the budget exchange rate defined in Ledger setup when 
 
 If you experience data inconsistency with a specific budget-controlled document, the **Budget control data maintenance** tool is a good place to start. You can use this tool to delete and re-create existing budget data from a source document. The tool reviews the budget to find documents that weren't previously budget-checked but that should be checked now, either because the configuration changes occurred or because budget control was turned on or off. The tool uses the accounting distributions to determine the correct budget amounts. If there are issues with the distributions, the budget data is incorrect.
 
-To run the **Budget control data maintenance** tool, follow these steps.
+To run the **Budget control data maintenance** tool, follow these steps:
 
 1. Go to **Budgeting** \> **Periodic** \> **Budget control data maintenance**.
 1. Define a date range.
@@ -82,7 +82,7 @@ The **Budget control data maintenance** tool includes a **Budget control dimensi
 
 A customer might want to preserve historical data (that is, keep the previous account structure). In this case, the date range can be adjusted so that only data in the specified range is updated.
 
-To run the **Budget control dimension values provider** scenario, follow these steps.
+To run the **Budget control dimension values provider** scenario, follow these steps:
 
 1. Go to **Budgeting** \> **Periodic** > **Budget control data maintenance**.
 1. Enter a date range. The date range can be set to years before go-live or several years in the future.

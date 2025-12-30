@@ -64,7 +64,7 @@ To configure the tax application, go to **Organization administration** \> **Set
 
 This configuration applies to invoices, credit notes, and debit notes.
 
-To configure document classes, follow these steps.
+To configure document classes, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
 1. For each **Document class** that you want to use in electronic invoices:
@@ -78,7 +78,7 @@ To configure document classes, follow these steps.
 
 ### Configure the sales point prefix
 
-To configure sales point prefix, follow these steps.
+To configure sales point prefix, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix**.
 1. For each **Sales point prefix** that you want to use in Electronic Invoices:
@@ -91,7 +91,7 @@ To configure sales point prefix, follow these steps.
 
 ### Configure field master lists
 
-To configure field master lists, follow these steps.
+To configure field master lists, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Fields master List**.
 1. In **List 8**, configure the codes for credit notes and debit notes.
@@ -107,7 +107,7 @@ Learn more in [Field list configuration for Latin America](ltm-core-field-master
 
 ### Configure fiscal information
 
-To configure fiscal information, follow these steps.
+To configure fiscal information, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
 1. For each **Tax Id type** that you want to use in Electronic Invoices:
@@ -118,7 +118,7 @@ To configure fiscal information, follow these steps.
 
 ### Configure addresses 
 
-To configure addresses, follow these steps.
+To configure addresses, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**. 
 1. For each record in Country/Region that you want to use in Electronic Invoices:
@@ -135,7 +135,7 @@ Additionally, you need to configure the following tax applications.
 
 #### Configure currencies 
 
-To configure currencies, follow these steps.
+To configure currencies, follow these steps:
 
 1. Go to **General ledger** \> **Currencies** \> **Currencies**.
 1. For each **Currency** that you want to use in Electronic Invoices:
@@ -146,7 +146,7 @@ To configure currencies, follow these steps.
   
 #### Configure units
 
-To configure Units, follow these steps.
+To configure Units, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**. For each record in the list, follow these steps:
    1. Select the record, then go to **Tax application** under the **LATAM** tab in the top menu.
@@ -161,7 +161,7 @@ This section explains how to configure globalor line charges and discounts.
 
 #### Configure global or line charges
 
-To configure global or line charges, follow these steps.
+To configure global or line charges, follow these steps:
 
 1. Go to **Accounts receivable \> Charges setup \> Charges code**.
 1. For each **Charge** that you want to use in Electronic Invoices, follow these steps:
@@ -172,7 +172,7 @@ To configure global or line charges, follow these steps.
 
 #### Configure global or line discounts
 
-To configure global or line discounts, follow these steps.
+To configure global or line discounts, follow these steps:
 
 1. Go to **Accounts receivable > Charges setup > Charges code**.
 1. For each **Discount** that you want to use in Electronic Invoices, follow these steps:
@@ -187,7 +187,7 @@ To configure global or line discounts, follow these steps.
 
 ### Configure taxes
 
-For each tax and percentage you use, follow these steps.
+For each tax and percentage you use, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. For each **Sales tax code** that you want to use in electronic invoices:
@@ -201,7 +201,7 @@ For each tax and percentage you use, follow these steps.
 
 ## Configure electronic document references
 
-To configure electronic document references, follow these steps.
+To configure electronic document references, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references** and follow these steps:
 1. In the **Tax application id** field, enter the ID that you use for Peruvian electronic invoices.
@@ -211,7 +211,7 @@ For debit and credit notes, select **References** on the posting page, and compl
 
 #### Reference a document
 
-To reference a document, follow these steps.
+To reference a document, follow these steps:
 
 1. In the references page, go to the **General** tab, select **Source Vouchers**, and from the list of documents, select the document to associate.
 1. Complete the **Reference reason** with a motive (optional).
@@ -220,7 +220,7 @@ Learn more in [Configure electronic document references](ltm-electronic-doc-refe
 
 ## Configure SSRS Reports and Services references
 
-For electronic invoices, To configure the **SSRS Reports / Services references**, follow these steps.
+For electronic invoices, To configure the **SSRS Reports / Services references**, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **SSRS Reports / Services references**.
 1. Create a new record.

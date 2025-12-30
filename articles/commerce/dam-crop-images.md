@@ -23,7 +23,7 @@ The Commerce site builder Media Library allows you to crop images to optimize th
 
 ## Crop an image
 
-To crop an image in site builder, follow these steps.
+To crop an image in site builder, follow these steps:
 
 1. In the left navigation pane of Commerce site builder, select **Media Library**.
 1. In the main window, select the image you want to modify.

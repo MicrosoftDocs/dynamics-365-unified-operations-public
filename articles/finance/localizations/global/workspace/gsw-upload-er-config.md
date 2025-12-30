@@ -28,7 +28,7 @@ You can also export and import specific versions as a file by using export and i
 
 ## Step 1: Export your artifacts
 
-To export your artifacts, follow these steps.
+To export your artifacts, follow these steps:
 
 1. Create a folder, such as **C:\\DvArtifactsSrc**.
 1. Export the .xml files of any ER configurations and the .json files of any Globalization features to the new folder.
@@ -38,7 +38,7 @@ To export your artifacts, follow these steps.
 
 ## Step 2: Create a Dataverse solution
 
-To create a Dataverse solution, follow these steps.
+To create a Dataverse solution, follow these steps:
 
 1. Create a solution in Dataverse, and export it. For more information, see [Create a solution](/power-apps/maker/data-platform/create-solution) and [Export solutions](/power-apps/maker/data-platform/export-solutions).
 1. Extract the new solution by using the **pac solution unpack** command. Here's an example.

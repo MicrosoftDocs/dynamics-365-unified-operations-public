@@ -32,7 +32,7 @@ The **Dynamics365FinanceExtended** solution package contains the following workf
 + Update Vendors in Accounts Table
 + Update Vendors in Vendors Table
 
-To create new workflow processes by using the workflow process templates, follow these steps.
+To create new workflow processes by using the workflow process templates, follow these steps:
 
 1. Create a workflow process for the **Vendor** table, and select the **Create Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Account** table.
 
@@ -56,7 +56,7 @@ The **Dynamics365FinanceExtended** solution package contains the following workf
 + Update Vendors of type Person in Contacts Table
 + Update Vendors of type Person in Vendors Table
 
-To create new workflow processes by using the workflow process templates, follow these steps.
+To create new workflow processes by using the workflow process templates, follow these steps:
 
 1. Create a workflow process for the **Vendor** table, and select the **Create Vendors of type Person in Contacts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Contact** table.
 2. Create a workflow process for the **Vendor** table, and select the **Update Vendors of type Person in Contacts Table** workflow process template. Then select **OK**. This workflow handles the vendor update scenario for the **Contact** table.

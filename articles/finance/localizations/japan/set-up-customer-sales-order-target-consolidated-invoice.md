@@ -25,7 +25,7 @@ The following procedure uses the JPMF demo company data.
 
 ## Set up a customer to be a the target of a consolidated invoice
 
-To set up a customer to be a target of consolidated invoice, follow these steps.
+To set up a customer to be a target of consolidated invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, select the link in the selected row.
@@ -35,7 +35,7 @@ To set up a customer to be a target of consolidated invoice, follow these steps.
 
 ## Set up a sales order to be the target of a consolidated invoice
 
-To set up a sales order to be the target of a consolidated invoice, follow these steps.
+To set up a sales order to be the target of a consolidated invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. In the list, select the link in the selected row.

@@ -21,7 +21,7 @@ This article describes how to update Microsoft Dynamics 365 Commerce headquarter
 
 Once the Microsoft Entra B2C provisioning steps above are completed, the Microsoft Entra B2C application must be registered in your Dynamics 365 Commerce environment.
 
-To update headquarters with the new Microsoft Entra B2C information, follow these steps.
+To update headquarters with the new Microsoft Entra B2C information, follow these steps:
 
 1. In Commerce, go to **Commerce Shared Parameters** and select **Identity Providers** in the left menu.
 1. Under **Identity Providers**, do the following:
@@ -39,7 +39,7 @@ To update headquarters with the new Microsoft Entra B2C information, follow thes
 
 ### Obtain issuer string for headquarters setup
 
-To obtain your identity provider issuer string, follow these steps.
+To obtain your identity provider issuer string, follow these steps:
 
 1. On the Microsoft Entra B2C page of the Azure portal, navigate to your **Sign up and sign in** user flow.
 1. Select **Page layouts** in the left navigation menu, under **Layout name** select **Unified sign up or sign in page**, and then select **Run user flow**.

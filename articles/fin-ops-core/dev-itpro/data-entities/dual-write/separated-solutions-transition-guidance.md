@@ -51,7 +51,7 @@ Here are some examples:
 
 ### Step 2. Install the required packages
 
-To install the required packages, follow these steps.
+To install the required packages, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using an administrator account.
 1. Select the environment to upgrade.

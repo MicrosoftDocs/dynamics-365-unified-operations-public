@@ -34,7 +34,7 @@ Before you can use the features that are described in this article, your system 
 
 ## Set up flexible sampling plans
 
-To set up flexible sampling plans, follow these steps.
+To set up flexible sampling plans, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Flexible sampling plans**.
 1. On the Action Pane, use the following buttons as required:

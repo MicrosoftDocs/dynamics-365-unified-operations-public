@@ -27,7 +27,7 @@ The migration process from the legacy digital signing solution to the current fi
 
 To help prevent scenarios where an event or transaction is signed twice (by both the legacy extension and the current extension), or where an event or transaction can't be signed because of incorrect or incomplete configuration, we recommend that you turn off all POS devices that use the legacy solution and then update all of them simultaneously. For example, you can do this simultaneous update on a store-by-store basis, by updating each store's functionality profile.
 
-To complete the migration process, follow these steps.
+To complete the migration process, follow these steps:
 
 1. Update the Commerce headquarters components.
 1. In Commerce headquarters, [configure the fiscal integration functionality for France](#configure-fiscal-integration).
@@ -57,7 +57,7 @@ You must adjust your receipt formats so that they use updated custom fields. For
 
 ## Enable fiscal integration
 
-When you're ready to enable the fiscal integration functionality in Commerce headquarters, follow these steps.
+When you're ready to enable the fiscal integration functionality in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
@@ -78,7 +78,7 @@ When you're ready to enable the fiscal integration functionality in Commerce hea
 
 ### Update the Commerce runtime (development)
 
-To update the Commerce runtime (CRT), follow these steps.
+To update the Commerce runtime (CRT), follow these steps:
 
 1. Find the extension configuration file for CRT:
 
@@ -105,7 +105,7 @@ To update the Commerce runtime (CRT), follow these steps.
 
 ### Update Modern POS (development)
 
-To update Modern POS, follow these steps.
+To update Modern POS, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 1. In the **extensions.json** file, add the following lines to enable the current sample POS extension.
@@ -124,7 +124,7 @@ To update Modern POS, follow these steps.
 
 ### Update Cloud POS (development)
 
-To update Cloud POS, follow these steps.
+To update Cloud POS, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 1. In the **extensions.json** file, add the following lines to enable the current sample POS extension.
@@ -147,7 +147,7 @@ After a future update, you can remove the obsolete Retail Server and POS customi
 
 #### Remove the earlier CRT extensions (development)
 
-To remove the earlier CRT extensions, follow these steps.
+To remove the earlier CRT extensions, follow these steps:
 
 1. Find the extension configuration file for CRT:
 
@@ -171,7 +171,7 @@ To remove the earlier CRT extensions, follow these steps.
 
 #### Remove the earlier Retail Server extension (development)
 
-To remove the earlier Retail Server extension, follow these steps.
+To remove the earlier Retail Server extension, follow these steps:
 
 1. Find the configuration file for Retail Server. The file is named **web.config** and can be found in the root folder under the IIS Retail Server site location.
 1. In the configuration file, find the earlier Retail Server extension in the **extensionComposition** section, and remove it, as shown in the following example.
@@ -182,7 +182,7 @@ To remove the earlier Retail Server extension, follow these steps.
 
 #### Disable the earlier Modern POS extension (development)
 
-To disable the earlier Modern POS extension, follow these steps.
+To disable the earlier Modern POS extension, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 1. In the **extensions.json** file, remove the following lines to disable the earlier POS extension.
@@ -207,7 +207,7 @@ To disable the earlier Modern POS extension, follow these steps.
 
 #### Disable the earlier Cloud POS extension (development)
 
-To disable the earlier Cloud POS extension, follow these steps.
+To disable the earlier Cloud POS extension, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 2. In the **extensions.json** file, remove the following lines to disable the earlier POS extension.
@@ -237,7 +237,7 @@ To disable the earlier Cloud POS extension, follow these steps.
 
 ### Update CRT (production)
 
-To update CRT, follow these steps.
+To update CRT, follow these steps:
 
 1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, remove the earlier CRT extension, as shown in the following example.
 
@@ -256,7 +256,7 @@ To update CRT, follow these steps.
 
 ### Update Modern POS (production)
 
-To update Modern POS, follow these steps.
+To update Modern POS, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the current sample POS extension.
@@ -275,7 +275,7 @@ To update Modern POS, follow these steps.
 
 ### Update Cloud POS (production)
 
-To update Cloud POS, follow these steps.
+To update Cloud POS, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the current sample POS extension.
@@ -294,7 +294,7 @@ To update Cloud POS, follow these steps.
 
 ### Create deployable packages (production)
 
-To create deployable packages, follow these steps.
+To create deployable packages, follow these steps:
 
 1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually.

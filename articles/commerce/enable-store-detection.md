@@ -26,7 +26,7 @@ If you turn on the location-based store detection feature, information from the 
 
 ## Turn on location-based store detection
 
-To turn on location-based store detection in Commerce, follow these steps.
+To turn on location-based store detection in Commerce, follow these steps:
 
 1. In Commerce site builder, go to your site.
 1. In the navigation pane on the left, select **Site settings \> General**.

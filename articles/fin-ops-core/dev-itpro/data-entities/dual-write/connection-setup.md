@@ -63,7 +63,7 @@ To set up a dual-write connection between a new instance of a finance and operat
 
 Both environments are then ready for live data synchronization.
 
-To sync the existing Dataverse data to the finance and operations app, follow these steps.
+To sync the existing Dataverse data to the finance and operations app, follow these steps:
 
 1. Create a new company in the finance and operations app.
 2. Add the company to the dual-write connection setup.
@@ -74,7 +74,7 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 ## <a id="new-data-new"></a>A new finance and operations app instance that has data and a new customer engagement app instance
 
-To set up a dual-write connection between a new instance of a finance and operations app that has data and a new instance of a customer engagement app, follow the steps in the [A new finance and operations app instance and a new customer engagement app instance](#new-new) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
+To set up a dual-write connection between a new instance of a finance and operations app that has data and a new instance of a customer engagement app, follow the steps in the [A new finance and operations app instance and a new customer engagement app instance](#new-new) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps:
 
 1. Open the finance and operations app from the Lifecycle Services page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the tables that you want to sync data for.
@@ -83,12 +83,12 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 ## <a id="new-data-existing"></a>A new finance and operations app instance that has data and an existing customer engagement app instance
 
-To set up a dual-write connection between a new instance of a finance and operations app that has data and an existing instance of a customer engagement app, follow the steps in the [A new finance and operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
+To set up a dual-write connection between a new instance of a finance and operations app that has data and an existing instance of a customer engagement app, follow the steps in the [A new finance and operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this article. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps:
 
 1. Open the finance and operations app from the Lifecycle Services page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
-To sync the existing Dataverse data to the finance and operations app, follow these steps.
+To sync the existing Dataverse data to the finance and operations app, follow these steps:
 
 1. Create a new company in the finance and operations app.
 2. Add the company to the dual-write connection setup.

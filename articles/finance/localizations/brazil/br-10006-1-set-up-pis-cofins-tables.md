@@ -22,7 +22,7 @@ Before the PIS and COFINS tax assessment can be created, you must set up the tab
 
 The following procedure uses the BRMF demo company.
 
-To set up PIS and COFINS tables, follow these steps.
+To set up PIS and COFINS tables, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Setup \> PIS and COFINS tables \> CFOP and Credit base source**.
 1. Select **New**.

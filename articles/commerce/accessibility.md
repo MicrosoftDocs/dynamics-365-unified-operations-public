@@ -64,7 +64,7 @@ To upload regular audio or descriptive audio files for the video, use the file s
 
 CC and audio transcript files can be edited directly in the authoring tool. Video playback is available during editing.
 
-To edit CC and audio transcript files, follow these steps.
+To edit CC and audio transcript files, follow these steps:
 
 1. Go to **Media Library**, and select the file name of the video asset. The closed caption and transcript content editor appears.
 1. Select **Edit**.
@@ -76,7 +76,7 @@ To edit CC and audio transcript files, follow these steps.
 
 A **Minimum Age** metadata attribute can be associated with video assets.
 
-To set the **Minimum Age** attribute for a video asset, follow these steps.
+To set the **Minimum Age** attribute for a video asset, follow these steps:
 
 1. Go to **Media Library**, and select the video asset.
 1. Select **Edit**.

@@ -262,7 +262,7 @@ To download the archived execution history, go to the data management workspace 
 
 This functionality lets you export a composite entity and apply xslt file to sort the data in xml file.
 
-To sort composite entity data using xslt, follow these steps.
+To sort composite entity data using xslt, follow these steps:
 
 1. Create an xslt file to sort the data in XML format. For example, if you have an XSLT file for the out of the box entity Purchase orders composite V3, you can sort the XML attribute format data in order by INVOICEVENDORACCOUNTNUMBER for PURCHPURCHASEORDERHEADERV2ENTITY and order by LINENUMBER for PURCHPURCHASEORDERLINEV2ENTITY.
 

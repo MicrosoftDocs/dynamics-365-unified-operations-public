@@ -52,7 +52,7 @@ Follow these steps to configure your master plan so that it includes planned dow
 
 In multilevel pegging, you can view pegging across companies to see the initial source of demand that's covered by a supply.
 
-To view multilevel pegging information, follow these steps.
+To view multilevel pegging information, follow these steps:
 
 1. Go to **Master planning** \> **Master planning** \> **Planned orders**.
 1. Select or open a planned order.

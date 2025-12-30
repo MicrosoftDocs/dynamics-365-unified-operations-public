@@ -29,7 +29,7 @@ Dynamics 365 Commerce supports both the automatic generation and manual curation
 
 ### Option 1: Enable automated site map generation
 
-To enable automated site map generation in Commerce site builder, follow these steps.
+To enable automated site map generation in Commerce site builder, follow these steps:
 
 1. Under **Sites**, select the name of your site (for example, **Adventure Works**).
 1. In the left navigation pane, select **Site settings \> General**.
@@ -46,7 +46,7 @@ The automated site map solution works for most scenarios. However, in some cases
 > [!NOTE]
 > Before you manually manage your site map, ensure that the automated site map generation feature is disabled.
 
-To manually manage your site map and host it in the site builder Media library, follow these steps.
+To manually manage your site map and host it in the site builder Media library, follow these steps:
 
 1. In the left navigation pane, select **Media library**.
 1. Select **Upload \> Upload media items**.
@@ -107,7 +107,7 @@ Dynamics 365 Commerce lets you manage SEO metadata for individual pages. You can
 
 ### Modify page metadata
 
-To modify page metadata, follow these steps.
+To modify page metadata, follow these steps:
 1. Under **Sites**, select the **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Pages**.
 1. Select the home page to open it in the page editor.

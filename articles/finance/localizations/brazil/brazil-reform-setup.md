@@ -18,7 +18,7 @@ ms.custom:
 
 This article describes how to set up Brazilian tax reform for 2026.
 
-The reformed tax solution uses the Advanced Tax Calculation engine. To set up and configure the feature, follow these steps.
+The reformed tax solution uses the Advanced Tax Calculation engine. To set up and configure the feature, follow these steps:
 
 The following diagram shows the feature setup and enablement process.
 
@@ -28,7 +28,7 @@ The following diagram shows the feature setup and enablement process.
 
 The feature is visible but disabled by default during public preview and general availability. Enable the Brazil tax reform feature in the **Feature management** workspace.
 
-To enable Brazil reformed tax in feature management, follow these steps.
+To enable Brazil reformed tax in feature management, follow these steps:
 
 1. Go to **Workspace** \> **Feature management**.
 1. Search for **Meet requirements of tax reform in Brazil in 2026**.
@@ -75,7 +75,7 @@ After you download the files, import the configuration files into the system.
 
 ### Import the configuration files for tax calculation
 
-To import tax calculation configuration files, follow these steps.
+To import tax calculation configuration files, follow these steps:
 
 1. Go to **Workspaces** \> **Electronic reporting**.
 1. Select the **Tax configurations** tile.
@@ -107,7 +107,7 @@ To import tax calculation configuration files, follow these steps.
     
 ### Import the configuration files for e-invoicing
 
-To import e-invoicing configuration files, follow these steps.
+To import e-invoicing configuration files, follow these steps:
 
 1. Go to **Workspaces** \> **Electronic reporting**.
 1. Select the **Reporting configurations** tile.
@@ -134,7 +134,7 @@ To import e-invoicing configuration files, follow these steps.
 
 ## Create tax calculation feature 
 
-To create the tax calculation feature, follow these steps.
+To create the tax calculation feature, follow these steps:
 
 1. Go to **Workspace** \> **Globalization Studio**.
 1. Select **Tax calculation**.
@@ -144,7 +144,7 @@ To create the tax calculation feature, follow these steps.
 
 ### Configure the created feature
 
-To configure the created feature, follow these steps.
+To configure the created feature, follow these steps:
 
 1. After you create the feature, on the right side of the page, select the **Versions** tab.
 1. Select the version with status **Draft**, then select **Edit** to configure the feature.
@@ -160,7 +160,7 @@ To configure the created feature, follow these steps.
 
 ## Enable lookups in applicability rules
 
-To enable lookups in applicability rules, follow these steps.
+To enable lookups in applicability rules, follow these steps:
 
 1. Activate the **Enable lookups in applicability rules** option.
 1. Select the **Source Legal Entity** (for example, BRMF).
@@ -168,7 +168,7 @@ To enable lookups in applicability rules, follow these steps.
 
 ### Set up Tax codes for new tax types (CBS/IBS)
 
-To set up Tax codes for new tax types (CBS/IBS), follow these steps.
+To set up Tax codes for new tax types (CBS/IBS), follow these steps:
 
 1. Go to the **Tax codes and groups** FastTab. On the **Tax codes** tab, select **Add**.
 1. Enter values in **Tax code** (for example, CBS, IBS-City12, etc.).
@@ -186,7 +186,7 @@ To set up Tax codes for new tax types (CBS/IBS), follow these steps.
 
 ### Set up the Tax group and assign tax codes
 
-To set up the Tax group and assign tax codes, follow these steps.
+To set up the Tax group and assign tax codes, follow these steps:
 
 1. Go to the **Tax codes and groups** FastTab. On the **Tax group** tab, select **Manage columns**.
 1. Select the relevant columns to define the elements of the tax groups definition (for example, Transaction date from header and line).
@@ -199,7 +199,7 @@ To set up the Tax group and assign tax codes, follow these steps.
 
 ### Set up the Item Tax group and assign tax codes
 
-To set up the Item Tax group and assign tax codes, follow these steps.
+To set up the Item Tax group and assign tax codes, follow these steps:
 
 1. Go to the **Tax codes and groups** FastTab. On the **Item Tax group** tab, select **Manage columns**.
 1. Select the relevant columns to define the elements of the item tax groups definition (for example, TransactionDate on header and line).
@@ -215,7 +215,7 @@ To set up the Item Tax group and assign tax codes, follow these steps.
 
 ### Define applicability rules for Tax group
 
-To define applicability rules for Tax group, follow these steps.
+To define applicability rules for Tax group, follow these steps:
 
 1. Go to the **Applicability rules** FastTab. On the **Tax group applicability** tab, select **Manage columns**.
 1. Select relevant columns to define the elements of the applicability rules used to determine the **tax group** (for example, Business process, CFOP code, Ship to City, Fiscal establishment, and Fiscal classification code).
@@ -224,7 +224,7 @@ To define applicability rules for Tax group, follow these steps.
 
 ### Define applicability rules for item tax group
 
-To define applicability rules for item tax group, follow these steps.
+To define applicability rules for item tax group, follow these steps:
 
 1. Go to the **Applicability rules** FastTab. On the **Item tax group applicability** tab, select **Manage columns**.
 1. Select relevant columns to define the elements of the applicability rules used to determine the **item tax group** (for example, Business process, CFOP code, Ship to City, Fiscal establishment, and Fiscal classification code).
@@ -240,7 +240,7 @@ To define applicability rules for item tax group, follow these steps.
 
 After you complete all configuration steps, such as setting up tax codes, tax groups, item tax groups, and rules, change the status of the current version from **Draft** to **Completed**.
 
-To complete and change the status, follow these steps.
+To complete and change the status, follow these steps:
 
 1. Go to **Workspace** \> **Globalization Studio** \> **Tax calculation**.
 1. On the Tax calculation feature form, select the current version.
@@ -250,7 +250,7 @@ To complete and change the status, follow these steps.
 
 After you complete all the configuration and setup steps, enable the feature in the Advanced tax calculation engine. 
 
-To enable advanced tax calculation, follow these steps.
+To enable advanced tax calculation, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
 1. Select the **General** page, then select the **Advanced tax calculation** FastTab.

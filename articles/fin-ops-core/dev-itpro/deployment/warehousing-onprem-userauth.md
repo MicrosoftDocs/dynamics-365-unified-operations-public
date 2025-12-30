@@ -98,7 +98,7 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
 
 ## <a name="user-azure-ad"></a>Set up a mobile-device user account in Finance + Operations (on-premises)
 
-To create a user that corresponds to the user credentials for the Warehouse Management mobile app, follow these steps.
+To create a user that corresponds to the user credentials for the Warehouse Management mobile app, follow these steps:
 
 1. In Supply Chain Management, go to **System administration** \> **Users** \> **Users**.
 1. Create a user.
@@ -110,7 +110,7 @@ To create a user that corresponds to the user credentials for the Warehouse Mana
 
 If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device uses the device code flow for authentication, you must disable the associated user in Active Directory. By disabling the user, you revoke access for any device that uses the device code associated with that user. For this reason, we recommend that you have one Active Directory user per device.
 
-To disable a user in Active Directory, follow these steps.
+To disable a user in Active Directory, follow these steps:
 
 1. In the Active Directory Users and Computers tool, find the user who is associated with the device.
 1. Select and hold (or right-click) the user, then select **Disable account** to disable the user's account.

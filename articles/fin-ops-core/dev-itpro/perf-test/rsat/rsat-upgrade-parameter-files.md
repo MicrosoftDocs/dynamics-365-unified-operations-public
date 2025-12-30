@@ -53,7 +53,7 @@ When you finish creating and testing the new files, you can delete the backup an
 
 ## Run the parameter file upgrade process
 
-To upgrade the parameter files, follow these steps.
+To upgrade the parameter files, follow these steps:
 
 1. Open RSAT.
 2. Select that test cases that have the parameter files that you want to upgrade.

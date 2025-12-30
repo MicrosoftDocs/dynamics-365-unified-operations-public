@@ -127,7 +127,7 @@ After the virtual tables are installed, generate the virtual tables for the data
 
 The change tracking feature in Dataverse detects data that has changed since the data was originally extracted or last synced. For more information, see [Use change tracking to synchronize data with external systems](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
 
-To enable change tracking, follow these steps.
+To enable change tracking, follow these steps:
 
 1. Go to **System administration** \> **Data management** \> **Data entities**.
 2. Search for the **target** entity.
@@ -252,7 +252,7 @@ Turn on Tracking Changes, as appropriate, for the following:
 > [!IMPORTANT]
 > This section requires a user who has full administrative security access to the Dataverse and Azure tenant. The user must also have the right to give consent on behalf of the company (tenant) to allow access to the Human Resources APIs.
 
-To connect the Human Resources environment to Dayforce payroll, follow these steps.
+To connect the Human Resources environment to Dayforce payroll, follow these steps:
 
 1. Add the Dayforce payroll connector application to the tenant.
 2. Configure an API role for the Dataverse environment.

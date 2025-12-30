@@ -126,7 +126,7 @@ For cross-docking, as for regular put-away of finished goods, you don't have to 
 
 ### Cross-dock finished goods to the outbound location
 
-To cross-dock the quantity of finished goods to the outbound location of the associated sales order, follow these steps.
+To cross-dock the quantity of finished goods to the outbound location of the associated sales order, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 2. Select **New**.

@@ -25,7 +25,7 @@ In version 10.0.39 (Platform update 63), the **System administration** module in
 
 ## Run batch job cleanup
 
-To quickly clean up the records in the batch job table, follow these steps.
+To quickly clean up the records in the batch job table, follow these steps:
 
 1. Go to **System administration** \> **Periodic tasks** \> **Batch job clean-up**.
 1. In the **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs.

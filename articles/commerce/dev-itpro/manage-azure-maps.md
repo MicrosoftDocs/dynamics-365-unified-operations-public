@@ -27,7 +27,7 @@ When you enable Azure Maps in Commerce headquarters, you can then use Azure Maps
 
 ## Enable Azure Maps
 
-To enable Azure Maps, follow these steps.
+To enable Azure Maps, follow these steps:
 
 1. In headquarters, go to **Commerce shared Parameters \> Azure Maps**.
 1. Select **Enable Azure Maps** to turn on Azure Maps functionality.
@@ -37,7 +37,7 @@ To enable Azure Maps, follow these steps.
 > [!NOTE]
 > You must obtain your own Azure Maps license and key. For information on how to obtain an Azure Maps license and key, see [Azure Maps pricing](https://azure.microsoft.com/pricing/details/azure-maps/) and [Manage authentication in Azure Maps](/azure/azure-maps/how-to-manage-authentication).
 
-To enter an Azure Maps key, follow these steps.
+To enter an Azure Maps key, follow these steps:
 
 1. In headquarters, go to **Commerce shared Parameters \> Azure Maps**.
 1. In the **Azure Maps Key** field, enter the license key.

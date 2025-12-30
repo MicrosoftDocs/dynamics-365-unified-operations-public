@@ -20,7 +20,7 @@ This article describes how to create one or more fiscal establishments for a leg
 
 The following procedure walks through how to create one or more fiscal establishments for a legal entity. A fiscal establishment requires a Cadastro Nacional da Pessoa Jurídica (CNPJ) or Inscrição Estadual (IE) tax registration number. You can group fiscal establishments and set up tax groups for each fiscal establishment group in the Taxes matrix page. The procedure uses the BRMF demo company.
 
-To create one or more fiscal establishments for a legal entity, follow these steps.
+To create one or more fiscal establishments for a legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. In the **Name** field, select the link.

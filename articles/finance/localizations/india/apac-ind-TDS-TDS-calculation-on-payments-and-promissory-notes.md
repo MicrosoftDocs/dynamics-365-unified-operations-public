@@ -70,7 +70,7 @@ Follow these steps to calculate TDS on payments and promissory notes.
 
 ## Generate payments
 
-To generate payments, follow these steps.
+To generate payments, follow these steps:
 
 1. Follow one of these steps:
 

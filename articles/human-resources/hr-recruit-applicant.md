@@ -31,7 +31,7 @@ This article describes applicants and activities in the HR Recruiting app in Mic
 
 An application is created when a candidate applies for a job. The application includes the interview process for the candidate.
 
-To view the applications for a job, follow these steps.
+To view the applications for a job, follow these steps:
 
 1. In the Recruiting app, select **Job ads**.
 1. Select the job ad to view the applications for.
@@ -58,7 +58,7 @@ The following table describes the statuses that are available.
 
 Recruiters can delete one or more applicants at a time.
 
-To delete applicants, follow these steps.
+To delete applicants, follow these steps:
 
 1. Go to **Job ads** \> **Applicants** \> **Applicant**.
 1. Select **Delete applicant**.

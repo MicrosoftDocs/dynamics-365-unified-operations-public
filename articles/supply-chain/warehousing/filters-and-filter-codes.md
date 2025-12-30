@@ -49,7 +49,7 @@ You can use filter groups to group filter codes. This capability is helpful when
 > [!IMPORTANT]
 > Not all product filter groups are available for filter codes that are higher than *Code 4* (that is, *Code 5* through *Code 10*). For example, for released products, although all the product filter codes will be added, the grouping of filter codes won't be updated. This behavior might be updated in later releases.
 
-To set up filter groups, follow these steps.
+To set up filter groups, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filter groups**.
 1. On the Action Pane, select **New**.
@@ -68,7 +68,7 @@ To set up filter groups, follow these steps.
 
 By setting up filter codes on an item group, you can make the codes that are required for products that are attached to that item group.
 
-To set up filter codes on item groups, follow these steps.
+To set up filter codes on item groups, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Inventory \> Item groups**.
 1. On the Action Pane, select **New** to create an item group.
@@ -106,7 +106,7 @@ You can make specific inventory items available only for customers, only for ven
 > [!NOTE]
 > Customer and vendor filters don't apply to any item that is set up as generally available.
 
-To set up generally available items, follow these steps.
+To set up generally available items, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Generally available products**.
 1. On the Action Pane, select **New** to create a record.
@@ -121,7 +121,7 @@ To set up generally available items, follow these steps.
 
 You can use this optional procedure to specify items that should be available for a customer in addition to the items that are made available via the filter setup on the **Generally available items** page. You can set up multiple filters for a single customer.
 
-To set up customer filter codes, follow these steps.
+To set up customer filter codes, follow these steps:
 
 1. Go to **Sales and marketing \> Customers \> All customers**.
 1. Select a customer.
@@ -135,7 +135,7 @@ To set up customer filter codes, follow these steps.
 
 You can use this optional procedure to specify items that should be available for a vendor in addition to the items that are made available via the filter setup on the **Generally available items** page. You can set up multiple filters for a single vendor.
 
-To set up vendor filter codes, follow these steps.
+To set up vendor filter codes, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
 1. Select a vendor.

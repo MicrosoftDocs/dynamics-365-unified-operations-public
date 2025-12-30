@@ -23,7 +23,7 @@ The following procedure was created using the demo data company FRRT.
 
 The functionality described is available for legal entities whose primary address is in France.
 
-To indicate the interest calculation on an invoice, follow these steps.
+To indicate the interest calculation on an invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. In the list, mark the selected row.

@@ -35,7 +35,7 @@ All the secrets and certificates that are used in the Tax Calculation service mu
 
 ### Create a key vault
 
-To create a key vault, follow these steps.
+To create a key vault, follow these steps:
 
 1. From the [Azure portal](https://ms.portal.azure.com/) menu, or from the **Home** page, select **Create a resource**.
 1. In the search field, enter **Key vault**.
@@ -89,7 +89,7 @@ This section explains how to complete the following procedures:
 
 To access Key Vault, you must create an app registration in Azure Active Directory (Azure AD).
 
-To create an app registration, follow these steps.
+To create an app registration, follow these steps:
 
 1. In Azure AD, search for **register**, and then select **App registrations**.
 1. Set the **Name** and **Supported account types** fields, and then select **Register**.

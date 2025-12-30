@@ -37,7 +37,7 @@ When you create an order confirmation page, you can add other relevant modules i
 
 ## Add an order confirmation module to a page
 
-To add an order confirmation module to a new page and set the required properties, follow these steps.
+To add an order confirmation module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter the name **Order confirmation template**, and then select **OK**.

@@ -32,7 +32,7 @@ The elements of a model must be built so that they can be used by the applicatio
 
 ## Build a project
 
-When you build a project, only those elements that are new or that have changed are built. To build a project, follow these steps.
+When you build a project, only those elements that are new or that have changed are built. To build a project, follow these steps:
 
 1. In Solution Explorer, select the project.
 2. On the **Build** menu, click **Build &lt;project name&gt;** to start the build process. Alternatively, right-click the project in Solution Explorer, and then click **Build**.
@@ -44,7 +44,7 @@ During the build process, you might notice that some elements that are built are
 
 ## Rebuild a project
 
-If you want to build all the elements in a project, regardless of whether they have changed, you must perform a rebuild operation. To rebuild a project, follow these steps.
+If you want to build all the elements in a project, regardless of whether they have changed, you must perform a rebuild operation. To rebuild a project, follow these steps:
 
 1. In Solution Explorer, select the project.
 2. On the **Build** menu, click **Rebuild &lt;project name&gt;** to start the rebuild process. Alternatively, right-click the project in Solution Explorer, and then click **Rebuild**.
@@ -60,7 +60,7 @@ Tables and views cannot be synchronized against the database until they are full
 
 ## Build a model's package
 
-You might want to build all the elements in a specific model. To do this, you must perform a full build on the package that the model belongs to. Follow these steps.
+You might want to build all the elements in a specific model. To do this, you must perform a full build on the package that the model belongs to. follow these steps:
 
 1. On the **Dynamics 365** menu, click **Build models**.
 2. In the **Packages** list, select the package(s) to build.

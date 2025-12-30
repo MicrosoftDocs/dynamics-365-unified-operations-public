@@ -73,7 +73,7 @@ This approach isn't currently possible in Dataverse.
 
 ### How do I add subcomponents in the new Power Apps experience?
 
-As in the previous Power Apps user interface (UI), you must redo the **Add Existing** operation. After the solution is selected, and Customer Group has already been added as an entity, follow these steps.
+As in the previous Power Apps user interface (UI), you must redo the **Add Existing** operation. After the solution is selected, and Customer Group has already been added as an entity, follow these steps:
 
 1. Select **Add existing** \> **Entity**.
 2. Select customer group entity, and then select **Next**.

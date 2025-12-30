@@ -44,7 +44,7 @@ To become a business partner, users must first submit a business partner request
 
 The **Partner sign up** module on a business partner request page is used to initiate user requests to become business partners. This module lets you collect the user information that is required for the sign-up process. Additionally, the **Business account address** module is used to capture the user's address.
 
-To set up and configure the business partner request page in site builder, follow these steps.
+To set up and configure the business partner request page in site builder, follow these steps:
 
 1. Create a template that is named **Sign-up**. This template should include the following modules:
 
@@ -72,7 +72,7 @@ To set up and configure the business partner request page in site builder, follo
 
 After a business partner request is submitted, a confirmation page should be shown to the user to acknowledge the submission. 
 
-To set up and configure the request confirmation page in site builder, follow these steps.
+To set up and configure the request confirmation page in site builder, follow these steps:
 
 1. Use the **Sign-up** template that you created earlier to create a page that is named **Partner Request Confirmation**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -85,7 +85,7 @@ To set up and configure the request confirmation page in site builder, follow th
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
 
-To add a link to the request confirmation page in site builder, follow these steps.
+To add a link to the request confirmation page in site builder, follow these steps:
 
 1. Go to the **Business Partner Request** page that you created earlier, and select **Edit**. 
 1. Select the **Partner sign up** module slot. In the properties pane, under **Link to the Sign-Up Confirmation page**, configure the link to the business partner request page that you created earlier. 
@@ -95,7 +95,7 @@ To add a link to the request confirmation page in site builder, follow these ste
 
 After the business partner request sign-up and confirmation pages are created, you must make the sign-up page accessible through a link on the home page. You can complete this task by adding the link to any **Content block** module on the home page.
 
-To add a business partner request link to the home page in site builder, follow these steps.
+To add a business partner request link to the home page in site builder, follow these steps:
 
 1. Go to the home page for your site, and select **Edit**.
 1. Select a **Content block** module slot. In the module properties pane, under **Links**, configure a link to the business partner request page that you created earlier, and enter **Sign up to be a business partner** or similar text as the link text. Add an image as appropriate.
@@ -105,7 +105,7 @@ To add a business partner request link to the home page in site builder, follow 
 
 The account management landing page includes all the account management information that is required for both B2B and B2C e-commerce sites. Only signed-in users can view this page.
 
-To create and configure a B2B account management landing page in site builder, follow these steps.
+To create and configure a B2B account management landing page in site builder, follow these steps:
 
 1. Create a template that is named **Account management**. This template should include the following modules:
 
@@ -160,7 +160,7 @@ Customer accounts can be used to pay for orders. The available balance in a cust
 
 Before signed-in B2B users can view their customer balance, you must create a customer balance page. 
 
-To create a customer balance page in site builder, follow these steps.
+To create a customer balance page in site builder, follow these steps:
 
 1. Use the **Account management** template that you created earlier to create a page that is named **Customer Balance**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -194,7 +194,7 @@ An order template lines page shows the details of the order template that is sel
 
 ### Create an order templates list page
 
-To create an order templates list page in site builder, follow these steps.
+To create an order templates list page in site builder, follow these steps:
 
 1. Use the **Account management** template that you created earlier to create a page that is named **Order templates**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -212,7 +212,7 @@ The order templates list page has now been created, and users can access it from
 
 ### Create an order template lines page
 
-To create an order template lines page in site builder, follow these steps.
+To create an order template lines page in site builder, follow these steps:
 
 1. Use the **Account management** template that you created earlier to create a page that is named **Order template lines**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -227,7 +227,7 @@ To create an order template lines page in site builder, follow these steps.
 
 The organization users page lets the administrator of a business partner organization onboard additional users from that organization to the B2B e-commerce site. It's set up by using the **Business organization list** module. From the organization users page, an administrator can add or remove users, define account balances, and request statements for a user.
 
-To create an organization users page in site builder, follow these steps.
+To create an organization users page in site builder, follow these steps:
 
 1. Use the **Account management** template that you created earlier to create a page that is named **Organization Users**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -250,7 +250,7 @@ An invoice details page shows the details of the invoice that is selected on an 
 
 ### Create an invoices list page
 
-To create an invoices list page in site builder, follow these steps.
+To create an invoices list page in site builder, follow these steps:
 
 1. Use the **Account management** template that you created earlier to create a page that is named **Invoices List**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -266,7 +266,7 @@ To create an invoices list page in site builder, follow these steps.
 
 ### Create an invoice details page
 
-To create an invoice details page in site builder, follow these steps.
+To create an invoice details page in site builder, follow these steps:
 
 1. Use the **Account management** template that you created earlier to create a page that is named **Invoice Details**.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -281,7 +281,7 @@ To create an invoice details page in site builder, follow these steps.
 
 The quick add module provides a way to quickly add multiple items to the cart by using item IDs (also known as stock keeping unit \[SKU\] IDs). The quick add module is added to a site's cart page.
 
-To add a quick add module to a cart page in Commerce site builder, follow these steps.
+To add a quick add module to a cart page in Commerce site builder, follow these steps:
 
 1. Go to **Templates**, and select your site's cart page template.
 1. Select **Edit**.
@@ -305,7 +305,7 @@ To add a quick add module to a cart page in Commerce site builder, follow these 
 
 The bulk purchase module on a product details page (PDP) provides a matrix-based experience that lets a buyer quickly add multiple variants of a product to the cart. When a site user must order multiple variants of the same product, this experience eliminates the need to select the combination of product dimensions, define the quantity, add the variant to the cart, and then repeat the process for other combinations of product dimensions.
 
-To add the bulk purchase module to a PDP in Commerce site builder, follow these steps.
+To add the bulk purchase module to a PDP in Commerce site builder, follow these steps:
 
 1. Go to **Templates**, and select your site's PDP template.
 1. Select **Edit**.

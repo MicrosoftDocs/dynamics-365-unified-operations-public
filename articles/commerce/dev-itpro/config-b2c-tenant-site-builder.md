@@ -24,7 +24,7 @@ Once the setup of your Microsoft Entra B2C tenant is completed, you must configu
 
 ### Collect the required application information
 
-To collect the required application information, follow these steps.
+To collect the required application information, follow these steps:
 
 1. In the Azure portal, go to **Home \> Microsoft Entra ID B2C - App registrations**.
 1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
@@ -40,7 +40,7 @@ The following image shows an example of user flow policies on the **Microsoft En
 
 You must enter details of the Microsoft Entra B2C tenant into Commerce site builder before associating the B2C tenant with your sites.
 
-To add your Microsoft Entra B2C tenant application information to Commerce, follow these steps.
+To add your Microsoft Entra B2C tenant application information to Commerce, follow these steps:
 
 1. Sign in as an administrator to Commerce site builder for your environment.
 1. In the left navigation pane, select **Tenant Settings**  to expand it.
@@ -67,7 +67,7 @@ The optional **Login custom domain** field should only be used if you're setting
 > - If your site is already associated with a B2C application, changing to a different B2C application removes the current references established for users already signed up in this environment. If changed, any credentials associated with the currently assigned B2C application won't be available to users. 
 > - Only update the B2C application if you're setting up the channel's B2C application for the first time or if you intend to have users sign up again with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel isn't associated to a B2C application in the following steps, users signing into that channel for your site are entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
-To associate the B2C application to your site and channel, follow these steps.
+To associate the B2C application to your site and channel, follow these steps:
 
 1. Navigate to your site in Commerce site builder.
 1. In the left navigation pane, select **Site Settings** to expand it.

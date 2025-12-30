@@ -25,7 +25,7 @@ ESR is an electronic debtor service that uses payment slips to collect money. It
 
 Payment references should be printed on the payment slip after posting. You can also verify payment references on the **Invoice journal** page for the selected sales order.
 
-To generate payment references, follow these steps.
+To generate payment references, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Invoice journal** page.
 1. Set the bank account settings to **ESR**, **BESR ID,** and **Routing number**.
@@ -37,7 +37,7 @@ Learn more in [Payment slip report for Europe](../europe/emea-eur-payment-slip-r
 
 ## Import a payment file
 
-To import a payment file, follow these steps.
+To import a payment file, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Payment journal** page.
 1. Select **Lines**.

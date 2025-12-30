@@ -97,7 +97,7 @@ By selecting multiple lines on the **Arrival overview** page, Sammy can start an
 
 ## Update arrival information and process a product receipt
 
-When all goods have been registered, the warehouse manager or purchasing manager can update the received items with a product receipt to add the physical cost. To update arrival information and post a product receipt, follow these steps.
+When all goods have been registered, the warehouse manager or purchasing manager can update the received items with a product receipt to add the physical cost. To update arrival information and post a product receipt, follow these steps:
 
 1. Select **Inventory management** \> **Inbound orders** \> **Arrival overview**.
 1. On the **Arrival overview** page, select **Journals** \> **Product receipt ready journals** to show a list of the journals that are ready for product receipt update.

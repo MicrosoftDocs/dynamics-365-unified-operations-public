@@ -21,7 +21,7 @@ This article explains how to create a POS permission group in Microsoft Dynamics
 
 The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
 
-To create a POS permission group in Commerce headquarters, follow these steps.
+To create a POS permission group in Commerce headquarters, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and Commerce \> Employees \> Permission groups**.
 2. Select **New**.

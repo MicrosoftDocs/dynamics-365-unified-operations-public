@@ -55,7 +55,7 @@ To install visuals from Microsoft appsource, follow these steps:
 
 When you connect to the data in Power BI, you must select SQL Server as the data source. This enables DirectQuery access via the TDS endpoint for real-time write-back.
 
-To select SQL Server as a data source, follow these steps.
+To select SQL Server as a data source, follow these steps:
 
 1. In Power BI, go to **Get data**, or select **SQL Server**, or select **SQL Server** on the ribbon.
 2. Enter your server name in the format orgname.crm.dynamics.com.

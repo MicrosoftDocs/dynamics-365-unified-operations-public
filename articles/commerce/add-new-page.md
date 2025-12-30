@@ -38,7 +38,7 @@ You can have the option to enter a URL for your new page. When you create a page
 
 ## Add a new page
 
-To add a new site page to your site, follow these steps.
+To add a new site page to your site, follow these steps:
 
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. Select **New Page**.

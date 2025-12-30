@@ -27,7 +27,7 @@ The following illustration shows an example of a catalog picker module.
 
 ## Add a catalog picker module to your site
 
-To add a catalog picker module to your site in Commerce site builder, follow these steps.
+To add a catalog picker module to your site in Commerce site builder, follow these steps:
 
 ### Create a catalog picker page
 

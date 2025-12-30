@@ -35,7 +35,7 @@ Before you can use seamless sync, your system must meet the following requiremen
 
 ## Turn on and configure seamless sync
 
-To turn on and configure seamless sync, follow these steps.
+To turn on and configure seamless sync, follow these steps:
 
 1. Go to **Accounts receivable** \> **Accounts receivable setup** \> **Accounts receivable parameters**.
 1. On the **General** FastTab, set the following fields:

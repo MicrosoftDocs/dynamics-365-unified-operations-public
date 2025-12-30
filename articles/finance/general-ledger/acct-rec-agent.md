@@ -31,7 +31,7 @@ Here are some of the benefits:
 
 ## Set up the Account Reconciliation Agent
 
-To set up the Account Reconciliation Agent, follow these steps.
+To set up the Account Reconciliation Agent, follow these steps:
 
 1. In the **Feature management** workspace, enable the **(Preview) Account reconciliation agent** feature.
 1. Go to **Modules** \> **Agents**.

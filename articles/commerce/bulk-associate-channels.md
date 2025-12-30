@@ -45,7 +45,7 @@ We recommend that you follow these best practices when you use the bulk associat
 > [!NOTE]
 > The bulk association feature is available on a preview basis. To access the feature, append the query string parameter `&set=enableBulkChannels` to your site builder URL.
 
-To bulk associate multiple channels in site builder, follow these steps.
+To bulk associate multiple channels in site builder, follow these steps:
 
 1. In the left navigation pane for your site, select **Channels**.
 1. Select **Add channel**.

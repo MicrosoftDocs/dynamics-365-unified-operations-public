@@ -34,7 +34,7 @@ No other blocking reasons are supported.
 
 ## View blocked work and blocking reasons
 
-To find all blocked work and check the reasons why each of them blocked, follow these steps.
+To find all blocked work and check the reasons why each of them blocked, follow these steps:
 
 1. Go to **Warehouse management** \> **Work** \> **All work**.
 1. Blocked work records show a check mark in the **Blocked wave** column. You can use the column filter to find all blocked work records at once.

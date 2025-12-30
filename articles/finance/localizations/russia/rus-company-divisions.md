@@ -22,7 +22,7 @@ Use the **Separate divisions** page to create a company division. If your compan
 
 ## Create company divisions
 
-To create company divisions, follow these steps.
+To create company divisions, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Separate divisions**.
 1.  Create a new company division.

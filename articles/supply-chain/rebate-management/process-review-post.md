@@ -47,7 +47,7 @@ Before you can create source transactions, you must enable the **Enable price de
 
 ### Create a source transaction
 
-To create a source transaction, follow these steps.
+To create a source transaction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Select **New**.
@@ -130,7 +130,7 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 
 ### Process deals using a batch job
 
-Instead of processing specific deals or deal lines, you can run a batch job to process several deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. To process deals by using a batch job, follow these steps.
+Instead of processing specific deals or deal lines, you can run a batch job to process several deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. To process deals by using a batch job, follow these steps:
 
 1. Follow one of these steps:
 
@@ -148,7 +148,7 @@ Instead of processing specific deals or deal lines, you can run a batch job to p
 
 Instead of processing specific deals or deal lines, you can use the *rebate workbench* to process multiple deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. You don't have to select any rows. The system will process all lines that meet the date and filter requirements that you set up.
 
-To process deals by using the rebate workbench, follow these steps.
+To process deals by using the rebate workbench, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. On the Action Pane, on the **Rebate workbench** tab, in the **Processing** group, select one of the following commands:
@@ -169,7 +169,7 @@ When you process one or more deals, the system creates transactions that you can
 
 ### View and edit Rebate management transactions by using the rebate deals list page
 
-To view and edit Rebate management transactions using the rebate deals list page, follow these steps.
+To view and edit Rebate management transactions using the rebate deals list page, follow these steps:
 
 1. Follow one of these steps:
 
@@ -200,7 +200,7 @@ To view and edit Rebate management transactions using the rebate deals list page
 
 ### View and edit Rebate management transactions by using the rebate workbench
 
-To view and edit Rebate management transactions by using the rebate workbench, follow these steps.
+To view and edit Rebate management transactions by using the rebate workbench, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. Set the **Show** field to *Not posted*.
@@ -297,7 +297,7 @@ After you've processed the relevant deals, follow these steps to review and post
 
 ### Post transactions using a batch job
 
-Instead of posting transactions for specific deals or deal lines, you can run a batch job to post transactions for several deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. To post transactions by using a batch job, follow these steps.
+Instead of posting transactions for specific deals or deal lines, you can run a batch job to post transactions for several deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. To post transactions by using a batch job, follow these steps:
 
 1. Follow one of these steps:
 
@@ -333,7 +333,7 @@ After your transactions have been posted, you can review the resulting journals,
 
 ### Review journals by using the rebate deals list page
 
-To review the journal entries that are associated with a Rebate management deal, follow these steps.
+To review the journal entries that are associated with a Rebate management deal, follow these steps:
 
 1. Open the appropriate [rebate deals list page](rebate-management-deals.md) for the type of deal that you want to work with.
 1. Select the deal to inspect journal entries for.
@@ -348,7 +348,7 @@ To review the journal entries that are associated with a Rebate management deal,
 
 ### Review journals by using the rebate workbench
 
-To review journals by using the rebate workbench, follow these steps.
+To review journals by using the rebate workbench, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management deals** \> **Rebate workbench**.
 1. Set the **Show** field to *All* or *Posted*.

@@ -65,7 +65,7 @@ The template lines consist of a type (**Recognized** or **Skipped**) and the per
 
 ### Create a deferral template
 
-To create a deferral template, follow these steps.
+To create a deferral template, follow these steps:
 
 1. On the **Deferral templates** page, select **New**.
 2. In the **Template** field, enter a name.
@@ -97,7 +97,7 @@ Each template line must have either a straight line template or an event based t
 
 ### For sales orders
 
-To specify the deferral default values for sales orders, follow these steps.
+To specify the deferral default values for sales orders, follow these steps:
 
 1. On the **Sales order** tab, select the deferral type.
 2. Select **Add** to add a line.
@@ -134,7 +134,7 @@ To specify the deferral default values for sales orders, follow these steps.
 
 ### For purchase orders
 
-To specify the deferral default values for purchase orders, follow these steps.
+To specify the deferral default values for purchase orders, follow these steps:
 
 1. On the **Purchasing** tab, select the deferral type.
 2. Select **Add** to add a line.
@@ -171,7 +171,7 @@ To specify the deferral default values for purchase orders, follow these steps.
 
 ### For general journals
 
-To specify the deferral default values for general journal entries, follow these steps.
+To specify the deferral default values for general journal entries, follow these steps:
 
 1. Select the **General journal** tab.
 2. For a deferral, select **Add** to add a line.
@@ -184,7 +184,7 @@ To specify the deferral default values for general journal entries, follow these
 
 ### For free text invoices
 
-To specify the deferral default values for free text invoices, follow these steps.
+To specify the deferral default values for free text invoices, follow these steps:
 
 1. Select the **Free text invoice** tab.
 2. For a deferral, select **Add** to add a line.
@@ -202,7 +202,7 @@ To specify the deferral default values for free text invoices, follow these step
 
 ### For invoice journals
 
-To specify the deferral default values for invoice journal entries, follow these steps.
+To specify the deferral default values for invoice journal entries, follow these steps:
 
 1. Select the **Invoice journal** tab.
 2. For a deferral, select **Add** to add a line.
@@ -228,7 +228,7 @@ For items that are deferred based on the sales or purchasing category that they 
 
 ### Set up deferred items
 
-To set up items that are deferred by default, follow these steps.
+To set up items that are deferred by default, follow these steps:
 
 1. On the **Items deferred by default** page, select the tab that you want: **Sales order** or **Purchasing**.
 2. Select **Add** to add a line.
@@ -253,7 +253,7 @@ Use the **Deferral charges** page to define which charges are deferred by defaul
 
 ### Set up deferred charges
 
-To set up deferred charges, follow these steps.
+To set up deferred charges, follow these steps:
 
 1. On the **Deferral charges** page, select **Add** to add a line.
 2. In the **Charge code** field, select the charge code.
@@ -267,7 +267,7 @@ Use the **Event based deferral templates** page to define event-based deferral t
 
 ### Create an event-based template
 
-To create an event based deferral template, follow these steps.
+To create an event based deferral template, follow these steps:
 
 1. On the **Event based deferral templates** page, select **New**.
 2. In the **Template** field, enter a unique name for the template.

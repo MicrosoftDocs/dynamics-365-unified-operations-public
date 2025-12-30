@@ -38,14 +38,14 @@ This article provides information about following additional reports:
 
 ### Set up a number sequence
 
-To set up a number sequence, follow these steps.
+To set up a number sequence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash and bank management parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field for the **Cash due announcement** reference, select a number sequence code.
 
 ### Set up a bank transaction type to allow for a Cash due announcement report
 
-To set up a bank transaction type to allow for a cash due announcement report, follow these steps.
+To set up a bank transaction type to allow for a cash due announcement report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Bank transaction types**.
 1. In the row for the transaction type, select the **Allow cash due announcement** checkbox so that a **Cash due announcement** report can be generated and printed for vouchers that use that transaction type.
@@ -58,7 +58,7 @@ You can print a **Cash due announcement** report from either the **General journ
 
 ### Generate and print a cash due announcement report from the General journals page
 
-To generate and print a cash due announcement report from the General journals page, follow these steps.
+To generate and print a cash due announcement report from the General journals page, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal entries \> General journals**.
 1. Select a journal, and then, on the Action Pane, select **Lines**.
@@ -74,7 +74,7 @@ To generate and print a cash due announcement report from the General journals p
 
 ### Generate and print a cash due announcement report from the Slip journal page
 
-To generate and print a cash due announcement report from the Slip journal page, follow these steps.
+To generate and print a cash due announcement report from the Slip journal page, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash transactions \> Slip journal**.
 1. Create a slip journal line for sending petty cash to the bank, and then approve it.
@@ -82,7 +82,7 @@ To generate and print a cash due announcement report from the Slip journal page,
 
 ### View and reprint a Cash due announcement report
 
-To view and reprint a Cash due announcement report, follow these steps.
+To view and reprint a Cash due announcement report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Inquiries and reports \> Cash due announcement**.
 1. The **Cash due announcement journal** page shows all the **Cash due announcement** reports that have been generated. Select a document, and then, on the Action Pane, select one of the following buttons:
@@ -103,7 +103,7 @@ The **Cash counting statement (INV-15)** report is used for the cash counting ac
 
 Before you generate the cash counting act, calculate the exchange rate adjustment.
 
-To generate the cash counting act, follow these steps.
+To generate the cash counting act, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Inquiries and reports \> Cash reports \> Cash counting statement report**.
 1. In the upper part of the **Cash counting statement (INV – 15)** page, follow these steps:

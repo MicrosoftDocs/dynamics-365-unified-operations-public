@@ -64,7 +64,7 @@ This step is required only for customers who run an infrastructure as a service 
 
 ## Turn on recommendations
 
-To turn on product recommendations, follow these steps.
+To turn on product recommendations, follow these steps:
 
 1. In Commerce headquarters, search for **Feature Management**.
 1. Select **All** to see a list of available features. 

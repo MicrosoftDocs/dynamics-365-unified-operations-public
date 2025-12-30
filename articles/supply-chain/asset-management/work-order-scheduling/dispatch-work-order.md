@@ -26,7 +26,7 @@ To use the **Update forecast** option that is described later in this article, y
 
 ## Dispatch a work order
 
-To dispatch a work order, follow these steps.
+To dispatch a work order, follow these steps:
 
 1. Go to **Asset management** \> **Work orders** \> **All work orders** or **Active work orders**.
 1. In the grid, select the work order that you want to dispatch.

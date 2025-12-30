@@ -37,7 +37,7 @@ To create a page that will serve dynamic content, follow the steps in [Add a new
 
 ### Create the base URL for the dynamic page
 
-To create the base URL for the dynamic page in Commerce site builder, follow these steps.
+To create the base URL for the dynamic page in Commerce site builder, follow these steps:
 
 1. Go to **URLs**, and select **New \> New URL**.
 1. In the **Create new URL** dialog box, select **Internal page**. Under **URL path**, enter the path that will serve as the root for the dynamic page (in this example, **/blog**). Then select **Next**.
@@ -46,7 +46,7 @@ To create the base URL for the dynamic page in Commerce site builder, follow the
 
 ### Configure the route to the dynamic page
 
-To configure the route to the dynamic page in Commerce site builder, follow these steps.
+To configure the route to the dynamic page in Commerce site builder, follow these steps:
 
 1. Go to **Site Settings \> Extensions**.
 1. Under **Parameterized URL paths**, select **Add**, and then enter the URL path that you entered when you created the URL (in this example, **/blog**).
@@ -56,7 +56,7 @@ After the route is configured, all requests to the parameterized URL path will r
 
 ## Override a parameterized URL with a custom page
 
-To override a parameterized URL with a custom page in Commerce site builder, follow these steps.
+To override a parameterized URL with a custom page in Commerce site builder, follow these steps:
 
 1. Go to **URLs**, and select **New \> New URL**.
 1. In the **Create new URL** dialog box, select **Internal page**. Under **URL path**, enter the path that includes the segment to override (in this example, **/blog/about-this-blog**). Then select **Next**.

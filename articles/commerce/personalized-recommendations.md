@@ -35,7 +35,7 @@ For more information about product recommendations, see the [Product recommendat
 
 ## Turn on personalization
 
-To turn on personalization, follow these steps.
+To turn on personalization, follow these steps:
 
 1. In Commerce headquarters, search for **Feature Management**.
 1. Select **All** to see a list of available features. 
@@ -84,7 +84,7 @@ For example, a signed-in user has already bought the black watch and the brown w
 
 ![Applying personalization.](./media/applypersonalization.png)
 
-To apply personalization to an existing recommendation list in the Commerce site builder, follow these steps.
+To apply personalization to an existing recommendation list in the Commerce site builder, follow these steps:
 
 1. Open an existing site builder page that contains a product collection module.
 1. In the left navigation pane, select the product collection module.

@@ -47,7 +47,7 @@ Customer insights by Copilot is the ultimate tool for clienteling in retail. It 
 
 ## Enable Customer insights by Copilot in the Store Commerce app
 
-To enable Customer insights by Copilot in the Store Commerce app, follow these steps.
+To enable Customer insights by Copilot in the Store Commerce app, follow these steps:
 
 1. In Commerce headquarters, go to the **Feature management** workspace (**Systems administration** \> **Workspaces** \> **Feature management**), and enable the temporary **Enable Copilot in Store Commerce** feature flag. In this way, you give your organization's administrators governing control over the rollout of Copilot features in the Store Commerce app. This flag will eventually be retired.
 1. Go to the **Commerce shared parameters** page (**Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**), and enable the **Enable Copilot in Store Commerce** flag. In this way, you give your organization's administrators additional governing control over the management of Copilot feature availability in the Store Commerce app. This flag is automatically enabled when you enable the temporary flag in the previous step. It will continue to be available after the temporary flag is retired.

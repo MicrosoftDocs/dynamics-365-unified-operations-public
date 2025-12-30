@@ -27,7 +27,7 @@ The following procedures use the DEMF demo company.
 
 ## Post a free text invoice with direct debit information
 
-To post a free text invoice with direct debit information, follow these steps.
+To post a free text invoice with direct debit information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.
@@ -43,7 +43,7 @@ To post a free text invoice with direct debit information, follow these steps.
 
 ## Create a payment
 
-To create a payment, follow these steps.
+To create a payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Payment journal**.
 1. Select **New**.

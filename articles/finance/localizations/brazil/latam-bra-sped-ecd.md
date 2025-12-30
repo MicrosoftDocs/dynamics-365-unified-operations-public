@@ -25,7 +25,7 @@ The SPED fiscal text files contain information about general ledger transactions
 
 ### Set up requirements for the SPED ECD tax statement
 
-To set up requirements for SPED ECD fiscal text files, follow these steps.
+To set up requirements for SPED ECD fiscal text files, follow these steps:
 
 1.  Select **Fiscal books** \> **Setup** \> **Tax statements parameters**.
 2.  Select **SPED ECD** on the left, and then, on the **Setup parameters** FastTab, select **Open**.
@@ -70,7 +70,7 @@ For the SPED ECD statement, organizations must calculate and report on their tax
 
 ### Generate and validate a SPED ECD text file
 
-To generate and validate the text file for the SPED ECD statement, follow these steps.
+To generate and validate the text file for the SPED ECD statement, follow these steps:
 
 1.  Select **Fiscal books** \> **Common** \> **SPED ECD** \> **Generate SPED ECD**.
 2.  Select the fiscal organization to generate the SPED ECD file for.

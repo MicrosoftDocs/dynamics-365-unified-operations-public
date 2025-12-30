@@ -32,7 +32,7 @@ To configure an asynchronous document framework, complete the following procedur
 
 ### Create and configure a number sequence
 
-To create and configure a number sequence, follow these steps.
+To create and configure a number sequence, follow these steps:
 
 1. Go to **Organization administration \> Number sequences \> Number sequences**.
 1. On the **Number sequences** page, create a number sequence.
@@ -49,7 +49,7 @@ To create and configure a number sequence, follow these steps.
 
 The batch jobs that you create will be used to process documents that fail or time out. They will also be used when the number of active inventory documents that are being processed from POS exceeds a system-configured value.
 
-To create and schedule two batch jobs for the document processing and monitoring tasks, follow these steps.
+To create and schedule two batch jobs for the document processing and monitoring tasks, follow these steps:
 
 1. Go to **System administration \> Inquiries \> Batch jobs**.
 1. On the **Batch job** page, create two batch jobs:

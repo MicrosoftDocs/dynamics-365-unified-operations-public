@@ -23,7 +23,7 @@ When an image is uploaded to the Commerce site builder Media Library, the system
 
 ### Define a custom focal point for an image
 
-To define a custom focal point for an image, follow these steps.
+To define a custom focal point for an image, follow these steps:
 
 1. In the left navigation pane of Commerce site builder, select **Media Library**.
 1. In the main window, select the image you want to modify.

@@ -34,7 +34,7 @@ Curated lists are collections of individual content, created and curated by peop
 
 ## Create a new list
 
-To create a curated product recommendation list, follow these steps.
+To create a curated product recommendation list, follow these steps:
 
 1. Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation lists**.
 1. Select **New**.

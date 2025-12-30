@@ -26,7 +26,7 @@ ms.custom: sfi-image-nochange
 
 If you must cancel a batch job that is running, you can change its status to **Canceling**. The batch job is then prevented from picking up new tasks. The status of tasks in the batch job that hasn't started is set to **Didn't run**, and the status of tasks that have started is set to **Canceling**. The status of a task isn't changed until that task can be terminated gracefully (that is, either it completes or it errors out).
 
-To cancel a running batch job, follow these steps.
+To cancel a running batch job, follow these steps:
 
 1. On the **Batch job** page, on the Action Pane, select **Change status**.
 1. In the **Select new status** dialog box, under **Select new status**, select **Canceling**.
@@ -46,7 +46,7 @@ Sometimes, the tasks in a batch job can't be terminated gracefully. Therefore, t
 > - The action of aborting a running process is inherently unsafe, and therefore should be used with caution. It can cause data corruption that can, in turn, cause either orphaned or incomplete data. This action should be used only to mitigate other issues that are caused by the running tasks.
 > - This action can't stop the execution of tasks that are stuck in an unmanaged wait. Examples include tasks that are stuck because of SQL deadlocks or DIXF-related tasks. In such cases, tasks will be aborted after they are no longer in an unmanaged wait.
 
-To abort all the tasks that are in **Canceling** status for a batch job, follow these steps.
+To abort all the tasks that are in **Canceling** status for a batch job, follow these steps:
 
 1. On the **Batch job** page, on the **Batch tasks** FastTab, select **Abort**.
 1. A message box prompts you to confirm that you want to abort all running tasks for the batch job. Select **Yes**.
@@ -64,7 +64,7 @@ To use the **Enhanced batch abort** feature, you must enable it in the [Feature 
 
 Because the servers are restarted, the **Enhanced batch abort** feature makes the functionality more resilient to the limitations of the **Abort** command. It also ensures that the tasks of the batch job that you're trying to cancel are truly interrupted.
 
-To abort all the tasks that are in **Canceling** status for a batch job when the **Enhanced batch abort** feature is enabled, follow these steps.
+To abort all the tasks that are in **Canceling** status for a batch job when the **Enhanced batch abort** feature is enabled, follow these steps:
 
 1. On the **Batch job** page, on the **Batch tasks** FastTab, select **Abort**.
 2. The **Abort batch job** dialog box lists other batch jobs that might be disrupted if you continue. To confirm that you want to continue, select **Yes**.

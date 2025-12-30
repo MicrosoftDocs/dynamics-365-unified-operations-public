@@ -28,7 +28,7 @@ To provision Teams with information from Dynamics 365 Commerce and synchronize t
 
 Before you can enable Microsoft Teams integration with Commerce, you must register the Teams application with your tenant in the Azure portal.
 
-To register the Teams application with your tenant in the Azure portal, follow these steps.
+To register the Teams application with your tenant in the Azure portal, follow these steps:
 
 1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
 1. On the **App Registration** tab, select the app that you created in the previous step. Then, on the **Authentication** tab, select **Add a platform**.
@@ -41,7 +41,7 @@ To register the Teams application with your tenant in the Azure portal, follow t
 1. In the **Request API permissions** dialog box, select **Add a permission**. On the **APIs my organization uses** tab, search for **Microsoft Teams Retail Service**, and select it.
 1. Select **Delegated permissions**, expand **TaskPublishing**, select **TaskPublising.ReadWrite.All**, and then select **Add permissions**. For more information, see [Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
-To enable Teams integration in Commerce headquarters, follow these steps.
+To enable Teams integration in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams integration configuration**.
 1. On the Action Pane, select **Edit**.
@@ -52,7 +52,7 @@ To enable Teams integration in Commerce headquarters, follow these steps.
 
 ## Disable Teams integration
 
-To disable Microsoft Teams integration in Commerce headquarters, follow these steps.
+To disable Microsoft Teams integration in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams Integration Configuration**.
 1. On the Action Pane, select **Edit**.

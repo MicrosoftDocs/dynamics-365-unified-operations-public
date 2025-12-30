@@ -87,7 +87,7 @@ Additional properties can be used to optimize the layout for different view port
 
 ## Add a container module to a page
 
-To add a container player module to a new page and set the required properties, follow these steps.
+To add a container player module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Container template**, and then select **OK**.

@@ -24,7 +24,7 @@ After you've [run your experiment](experimentation-run-monitor.md) and collected
 ## Promote a variation
 Use the data and analytics related to the experiment in the third-party service to decide which variation produced the best results. You can then promote it by replacing the current content on the live site with the winning variation so that it's available to all users of your website.
 
-To promote the winning variation, follow these steps. 
+To promote the winning variation, follow these steps: 
 
 1. In Commerce site builder, select **Experiments** in the left navigation pane, and then select the experiment.
 1. On the command bar, select **Complete experiment**.
@@ -39,7 +39,7 @@ To promote the winning variation, follow these steps.
 ## Delete your experiment
 While it's not required that you delete a completed experiment in Commerce, you may choose to delete it to save space or clean up your workspace. 
 
-To delete a completed experiment in Commerce site builder, follow these steps.
+To delete a completed experiment in Commerce site builder, follow these steps:
 
 1. Select **Experiments** in the left navigation pane, and then select the experiment. 
     > [!NOTE]

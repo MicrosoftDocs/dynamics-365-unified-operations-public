@@ -23,7 +23,7 @@ This article explains how to import payment formats for Sweden in Microsoft Dyna
 
 BankGirot MAX and BankGirot OCR file import lets you import customer payments in BankGirot file formats. BG MAX is a file layout that collects all payments in one file. OCR is a specific kind of reference in the BG MAX file format with a payment reference. 
 
-To import files in the BankGirot MAX and BankGirot OCR payment formats, follow these steps.
+To import files in the BankGirot MAX and BankGirot OCR payment formats, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Payment journal** page.
 1. Select **Lines**.

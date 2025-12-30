@@ -28,7 +28,7 @@ For several other reports that can't be configured in the Print management frame
 
 The tables in the [Accounting documents](#accounting-documents) section of this article list the reports that this feature is applicable to. The tables show the name of the file component that must configure for each report in ER destinations. They also indicate whether the **File** destination can be configured for the report in Print management.
 
-To configure ER destinations for accounting documents, follow these steps.
+To configure ER destinations for accounting documents, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Feature management** workspace and enable the **Allow using the ER framework for post-processing of reports in Excel and Word formats** feature.
 1. Import the latest versions of these ER configurations from the Global configuration repository:

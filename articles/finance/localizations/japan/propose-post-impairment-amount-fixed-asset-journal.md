@@ -23,7 +23,7 @@ Before you complete the following procedure, confirm that you already created an
 
 The procedure uses the demo data company JPMF.
 
-To propose and post an impairment amount by using a fixed asset journal, follow these steps.
+To propose and post an impairment amount by using a fixed asset journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

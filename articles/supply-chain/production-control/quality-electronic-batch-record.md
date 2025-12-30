@@ -32,7 +32,7 @@ Before you can use the features that are described in this article, your system 
 
 ## Turn electronic signature requirements for EBRs on or off
 
-To set up the electronic signature requirements for the types of records that are used for EBRs, follow these steps.
+To set up the electronic signature requirements for the types of records that are used for EBRs, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
 1. In the left pane, select the row for a feature that you want to turn electronic signature requirements on or off for. For EBRs, the usual expectation is that signatures are required for the following features (as listed in the **Name** column):
@@ -54,7 +54,7 @@ To set up the electronic signature requirements for the types of records that ar
 
 ## Set up EBRs
 
-To enable EBRs, follow these steps.
+To enable EBRs, follow these steps:
 
 1. Go to **Production control** \> **Setup** \> **Production control parameters**.
 1. On the **Electronic batch record** tab, set the following fields:
@@ -87,7 +87,7 @@ Each of these journal types provides the following electronic signature options:
 
 ### Add work instructions to formula items
 
-To add work instructions to a formula line, follow these steps.
+To add work instructions to a formula line, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Open or select the item that uses the formula that you want to add instructions to.
@@ -108,7 +108,7 @@ To add work instructions to a formula line, follow these steps.
 
 ### Add work instructions to BOM items
 
-To add work instructions to a BOM line, follow these steps.
+To add work instructions to a BOM line, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Open or select the item that uses the BOM that you want to add instructions to.
@@ -129,7 +129,7 @@ To add work instructions to a BOM line, follow these steps.
 
 ### Add work instructions for routes
 
-To add work instructions for an operation line, you must edit the route. When EBRs are used, formula lines for approved routes can't be edited. To add work instructions to a route, follow these steps.
+To add work instructions for an operation line, you must edit the route. When EBRs are used, formula lines for approved routes can't be edited. To add work instructions to a route, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Open or select the item that uses the route that you want to edit.
@@ -148,7 +148,7 @@ To add work instructions for an operation line, you must edit the route. When EB
 
 ### Configure test plan instructions for test groups
 
-When test plan instructions are associated with a line in a test group, quality orders that reference the test group show the instructions as read-only text. To add test plan instruction to a test group, follow these steps.
+When test plan instructions are associated with a line in a test group, quality orders that reference the test group show the instructions as read-only text. To add test plan instruction to a test group, follow these steps:
 
 1. Go to **Inventory Management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. In the top section, on the **Overview** tab, select the test group that you want to add instructions to.
@@ -174,7 +174,7 @@ When you run an MMR query, you first select the target item number. You can also
 
 The query results show all applicable route versions. The BOM/formula versions and the route version number are hyperlinks. You can use them to open the details page for the selected version. The results also show and summarize quality associations that are referenced as production or coproduct production. Select **Details** for a quality association to open the details page for it. Finally, the results show inventory batch attributes that are defined for the produced item, together with the applicable range and target value for each characteristic.
 
-To run an MMR query, follow these steps.
+To run an MMR query, follow these steps:
 
 1. Go to **Production control** \> **Inquiries** \> **Electronic batch records** \> **Master manufacturing record**.
 1. At the top of the page, set up the query by specifying one or more of the following criteria:
@@ -198,7 +198,7 @@ When you run a BPR query, you first select either the target item number or the 
 
 The query contains the BOM/formula version that was used in the production process, together with the proposed ingredient quantities that were estimated for completion of the production. The information also includes the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredients that were substituted during the production process. In the BPR, you can view the inventory batch attributes and any quality orders for the produced items. You can also view the inventory batch attributes, vendor batch details, and quality orders for the raw material items that were used in the production process.
 
-To run a BPR query, follow these steps.
+To run a BPR query, follow these steps:
 
 1. Go to **Production control** \> **Inquiries** \> **Electronic batch records** \> **Batch production record**.
 1. At the top of the page, set up the query by specifying one or more of the following criteria:
@@ -220,7 +220,7 @@ Results and information are shown on the following FastTabs:
 
 You can view and/or print a report for a specific BPR ID. A simplified version of the report contains the same information that is reflected in a BPR query.
 
-To generate a BPR report, follow these steps.
+To generate a BPR report, follow these steps:
 
 1. Run a BPR query to find the relevant BPR, as described in the previous section.
 1. On the Action Pane, select **Batch production report (BPR)**.

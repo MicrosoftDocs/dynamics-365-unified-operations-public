@@ -26,7 +26,7 @@ Quarantine orders let you block inventory. For example, you might want to quaran
 
 When you quarantine items, you can either manually create the quarantine orders or set up the system to automatically create them during inbound processing.
 
-To set up the system to automatically generate quarantine orders, follow these steps.
+To set up the system to automatically generate quarantine orders, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Inventory \> Item model groups**.
 1. Select a relevant model group in the list pane, or create a new model group.

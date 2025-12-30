@@ -67,7 +67,7 @@ The lease is now ready for termination. The value of the **Termination status** 
 
 ## Process leases that are ready for termination
 
-To process leases that are ready for termination and post the termination journal entry, follow these steps.
+To process leases that are ready for termination and post the termination journal entry, follow these steps:
 
 1. On the **Lease terminations** page, select the lease to process, and then select **Terminate**.
 2. In the dialog box that appears, select **OK**.

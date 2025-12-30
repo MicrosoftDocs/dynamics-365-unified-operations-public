@@ -25,7 +25,7 @@ All Microsoft Dataverse users should be added to the **dual-write runtime user**
 
 In Dataverse, each business unit has a default owning team that uses the same name as the business unit. Global tables are associated with the root business unit. The default team of the root business unit should be assigned to a security role that gives read permissions to all Dataverse tables that participate in dual-write. For information about how to set up the security role, see [Manage the security roles of a team](/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team). 
 
-To find the default team for the root business unit, follow these steps.
+To find the default team for the root business unit, follow these steps:
 
 1. In a web browser, sign in to the Dataverse or customer engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[environment\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL.

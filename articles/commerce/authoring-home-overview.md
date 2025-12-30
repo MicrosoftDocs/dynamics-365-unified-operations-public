@@ -70,7 +70,7 @@ To sign in to or out of site builder, follow one of these steps.
 
 You can also use the **My account** button to change the language of the text strings that appear in site builder.
 
-To change the display language, follow these steps.
+To change the display language, follow these steps:
 
 1. Select **My account** \> **Change language**. A dialog box appears.
 1. Select one of the user languages, and then select **Save**.
@@ -79,7 +79,7 @@ To change the display language, follow these steps.
 
 Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content.
 
-To create a new website, follow these steps.
+To create a new website, follow these steps:
 
 1. On the command bar, select **New site**. The **Create site** dialog appears.
 1. On the **Site details** page, enter the following required information.

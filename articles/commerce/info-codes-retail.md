@@ -47,7 +47,7 @@ When you sell certain products, for example mobile devices, you always want to c
 
 ## Import info code
 
-To import an info code, follow these steps.
+To import an info code, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Data management**.
 1. Select ***Data entities menu item**.

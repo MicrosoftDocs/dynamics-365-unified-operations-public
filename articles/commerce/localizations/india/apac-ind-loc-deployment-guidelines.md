@@ -71,7 +71,7 @@ To set up a development environment so that you can test and extend the function
 
 ### The Modern POS extension components
 
-To enable the Tax Registration ID extension, follow these steps.
+To enable the Tax Registration ID extension, follow these steps:
 
 1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the Run command. (Modern POS must not be customized. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
 2. Enable the extension in the **POS.Extensions\extensions.json** file by adding the following lines:
@@ -87,7 +87,7 @@ To enable the Tax Registration ID extension, follow these steps.
 
 ### The Cloud POS extension components
 
-To enable the Tax Registration ID extension, follow these steps.
+To enable the Tax Registration ID extension, follow these steps:
 
 1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it can be compiled without errors.
 2. Enable the extension in **POS.Extensions\extensions.json** by adding the following lines:

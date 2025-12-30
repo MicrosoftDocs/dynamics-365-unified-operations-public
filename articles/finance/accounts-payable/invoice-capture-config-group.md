@@ -81,7 +81,7 @@ Customers might receive different types of invoices, layouts, and contexts from 
 2. Legal entity
 3. System level
 
-To assign a configuration group for a selected vendor, follow these steps.
+To assign a configuration group for a selected vendor, follow these steps:
 
 1. Go to **Setup system** \> **Manage vendors**.
 2. Select the vendor account to open the details page.

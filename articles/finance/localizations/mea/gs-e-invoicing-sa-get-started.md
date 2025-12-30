@@ -37,7 +37,7 @@ Before you begin, make sure that the following Electronic reporting (ER) format 
 - Sales e-invoice (SA)
 - Project e-invoice (SA)
 
-To configure the application-specific parameters, follow these steps.
+To configure the application-specific parameters, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
 1. On the **Configurations** page, select the **Sales e-invoice (SA)** format configuration.
@@ -55,7 +55,7 @@ To configure the application-specific parameters, follow these steps.
 
 ## Configure electronic document parameters
 
-To configure electronic document parameters, follow these steps.
+To configure electronic document parameters, follow these steps:
 
 1. Ensure that the country/region-specific ER configurations required for Saudi Arabia are imported. For more information, see [Configure electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -82,7 +82,7 @@ To configure electronic document parameters, follow these steps.
 
 Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required so that they better reflect your business operations.
 
-To configure electronic invoicing features, follow these steps.
+To configure electronic invoicing features, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. On the **Electronic invoicing features** page, verify that the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature is selected.

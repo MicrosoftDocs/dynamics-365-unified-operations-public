@@ -24,7 +24,7 @@ This article describes cross-company data sharing for developers. Cross-company 
 
 ## Enable a table for cross-company data sharing
 
-Enabling a table for data sharing is a two-step process that requires updating the metadata property for the table. To enable a custom table for cross-company data sharing, follow these steps. 
+Enabling a table for data sharing is a two-step process that requires updating the metadata property for the table. To enable a custom table for cross-company data sharing, follow these steps: 
 
 1. Open the table properties, and set the **Data Sharing Type** property to **Single** or **Duplicate**. **Single** stands for single record sharing (SRS), and **Duplicate** stands for duplicate record sharing (DRS).
 1. For each field on the table, you must review the **Single Data Sharing Type** metadata property. **Always** is the default value and implies that the field is always shared. **Never** implies that the field is never shared. Don't select **Optional**, because there isn't currently any related logic.
