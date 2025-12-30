@@ -205,4 +205,14 @@ Making the License Usage Summary part of your regular governance routine will he
 By leveraging the **Security Governance License Usage Summary** on a regular basis, you can keep your Dynamics 365 Finance & Operations environment **secure**, **compliant**, and **cost-effective**. This tool allows you to adjust security roles and license allocations proactively, ensuring that each user has the access they need while your organization only pays for the licenses that are truly required.
 
 
+## Related information
+
+- [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)  
+- [Finance and Operations Apps Security Role FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)
+- [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)
+- [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)
+- [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)  
+- [Prepare for finance and operations apps user license validation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/prepare-for-user-validation)
+
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
