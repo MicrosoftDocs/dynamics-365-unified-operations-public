@@ -50,7 +50,7 @@ Before you access the **User security governance** workspace, you must activate 
 >[!Tip]
 > The **Security Governance** feature and **User Security Governance License Usage Summary** report are available in only in versions [10.0.44](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and above.
 
-:::image type="content" source="media/security-governance-version-info" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
+:::image type="content" source="media/security-governance-version-info.png" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
 
 ## Accessing the License Usage Summary 
 
@@ -71,6 +71,8 @@ Each of these views helps you analyze license usage from a different angle. For 
 
 ## Understanding the User License Summary
 
+:::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commcer licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
+
 In the User Licenses view, each row corresponds to a single user and displays the highest level of license that the user requires, given all the security roles assigned to them. Key columns in this view: 
 
 - **User** - The user's name or ID (whose license requirements you are examining). 
@@ -78,6 +80,8 @@ In the User Licenses view, each row corresponds to a single user and displays th
 - **License** - The highest license tier needed for that user's current access. The system looks at all the roles the user has and determines which license type covers the most advanced permissions among those roles. That license tier is listed here. 
 
 - **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than 1 means the user needs one or more additional attach licenses. For example, 2 would mean the user needs their base license plus one attach license. 
+
+>[!Important] Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
 
 ### How to use this view: 
 
@@ -94,7 +98,7 @@ In the User Licenses view, each row corresponds to a single user and displays th
 
 The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. 
 
-::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
+:::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
 
 Key columns in the **Role Licenses** view: 
 
@@ -104,7 +108,7 @@ Key columns in the **Role Licenses** view:
 
 - **Priority** - When a role's permissions cross multiple license levels, the Priority column shows which license is considered the best fit or primary requirement. The licenses are ranked by how many security objects they cover. The highest priority (most necessary) license is typically listed as the Required License for the role. Any lower-priority license considerations appear in the detailed breakdown (often as attach licenses needed in addition to the base license). 
 
-:::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter-priority.png":::
+:::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
 
 **Entitlement counts** - For the required license, the role's permissions are broken down into three categories: 
 
@@ -193,107 +197,3 @@ By leveraging the **Security Governance License Usage Summary** on a regular bas
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
-
-
-
-
-
-## Legacy
-
-
-The **Licenses usage summary** page in the User security governance workspace provides administrators with a consolidated view of how user access translates into license requirements across their Dynamics 365 Finance and Operations environment. It displays the assigned security roles and their underlying permissions to explain which license levels are required. This helps organizations move beyond raw license counts and instead understand the relationship between security roles, security objects, and licensing.
-
-Organizations can validate their security roles accurately reflect what users are expected to do in the system using the **Role licenses** tab. Over time roles may evolve to include broader access than originally intended. The User license summary helps identify these situations so administrators can clean up excessive security object assignments and ensure license requirement remains appropriate.
-
-The summary also supports stronger governance practices by helping organizations align system usage with internal controls and compliance expectations. By clearly showing how permissions contribute to license requirements, administrators can more confidently review securtiy role, duty, and privelege customizations, and support internal or external audits. Many organizations also use this information as part of regular security configuration \ access reviews or in preparation for inventory of license purchase requirements.
-
-From the **Role licenses** page, administrators can drill into specific roles to understand license requirements and export the data for further analysis. Exported information is often used for license governance reporting, helping teams make informed decisions based on a clear and consistent view of security role customizations.
-
-The Licenses usage summary report is informational only, it does not change\configure access, or assign licenses.
-
-:::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
-
-## Before You Begin - What Needs to Be Enabled
-
-## Workspace details
-
-The security governance license usage summary page provides a layered view of:
-- How system permissions are exercised
-- How secureable objects map to different role types
-
-These details enable deeper visibility into user access patterns and ensure that roles align with intended responsibilities.
-
-For a consolidated view across all environments within the same tenant, see the **User License Consumption** report in the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)**.
-
-## Start with Users: What Licenses a User Requires and Why
-
-In the **User Role Licenses** tab, each row represents shows the minimum license required based on that user's assigned security roles, and license quantity. For each user, focus on:
-
-- **License** - the license required by the assigned security role.
-- **License quantity** - the license quantity required by the users assigned security roles (multiple license quanities indicate additional attach license requirements for the user).
-
-How to read this:
-
-If the **License** matches expectations, ensure the user is assigned the license in https://admin.microsoft.com 
-
-If the **License** looks higher than expected, it usually means one or more security roles has been customized to include broader access
-
-If something looks unexpected, open select the **Role licenses** view. This shows which security roles contribute to the license result and helps you identify the specific role driving the requirement.
-
-## Role Licenses: What License a Role Requires and Why
-
-The **Role Licenses** tab explains how a specific security role translates into a license requirement. Each row represents a security role and shows the minimum license required.
-
-For each role, the system evaluates all included security objects and classifies them by license coverage. You can filter by role to see how many security objects are entitled, not entitled, or not required for each license level. This breakdown helps explain why a particular license is indicated for that role.
-
-:::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
-
-When a role includes security objects that are not covered by a single license, the system uses the Priority column to determine which license is the best fit. The Priority value reflects how the system resolves multiple license requirements, including scenarios where multiple licenses are required. In general, the license with the highest number of entitled security objects, combined with the highest priority, is the license best suited for the role.
-
-For users who are assigned multiple security roles, the system evaluates all applicable licenses together. The Priority column is used to order license requirements from highest to lowest, which corresponds to priority of each license and thereby the priority order of attach licenses.
-
-:::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter-priority.png":::
-
-### How Securable Objects Are Classified
-
-Each security object within a role is tagged with the following attributes:
-
-- **License** - The required license associated with the role
-- **Entitled** - Included secureable objects within the mapped license
-- **Not entitled** - Not included in the mapped license (requires different license)
-- **Not Required** - Actions or privilege inherited in system user, not included in license computation
-
-Together, these classifications make it easier to review roles, understand license outcomes, and ensure that security role customization aligns with business responsibilities and license rquirements.
-
-### Detailed license contributors
-
-The bottom panel breaks down license requirements at the security object level:
-- **SecurableType** - Menu item display
-- **AOT Name / Child Name** - From the application object tree
-- **Access Level** - Read or write
-
-## Example scenario showing one role and How License Requirements are Determined
-
-:::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
-
-For example, user *Cade.Armanda.Olander* is assigned 3 security roles (*Accountant*, *Retail Store Manager*, and *System User*) and the report shows the user requires 1 **Finance** License :
-
-| Role Name              | License                 | License Quantity | Notes |
-|------------------------|-------------------------|------------------|-------|
-| Accountant              | Finance                 | 1                | This security role has the highest priority license requirement |
-| Retail Store Manager    | Operations - Activity   | 0                | No additional license requirement for this role, for this user, if the user has been assigned a Finance license |
-| System User             | None                    | 0                | No additional license requirement for this role, for this user, if the user has been assigned a Finance license |
-
-
-Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
-
-**Role License** tab:
-
-| SKU Name | Securable Object Count | Entitlement | Notes |
-|----------|------------------------|--------------------|-------|
-| Finance  | 3,362                  | **Entitled** | Included in the mapped license scope |
-| Finance  | 1,557                  | **Not Entitled** | Not included in the mapped license (requires different license) |
-
-:::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
-
