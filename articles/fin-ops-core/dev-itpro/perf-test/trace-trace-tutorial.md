@@ -31,6 +31,10 @@ This tutorial requires that you access the environment as an administrator on th
 2. In the **Trace name** field, enter a name for the trace that you're about to capture.
 3. As required, set the **Include SQL parameter value** option to **Yes**.
 4. Select **Start trace**.
+
+> [!NOTE]
+> Client traces are limited to 1 GB. While the trace may appear to continue running, the file size will be capped at this limit.
+
 5. Perform actions that must be analyzed, such as navigation to **Accounts payable** \> **Vendors** \> **All vendors**.
 6. When you've finished, select **Stop trace**.
 7. After the trace has stopped, select one of the following options. (For this tutorial, select the second option.)
