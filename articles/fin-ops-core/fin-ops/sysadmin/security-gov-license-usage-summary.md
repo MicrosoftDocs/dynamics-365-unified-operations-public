@@ -14,7 +14,7 @@ ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm,
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Overview
+# License Usage Summary Overview
 
 The **Security Governance License Usage Summary** is a tool in Dynamics 365 Finance & Operations that helps system administrators, licensing managers, and compliance officers see exactly which licenses each user needs based on their assigned security roles. Instead of just giving raw license counts, this feature shows how each user's security roles - and the permissions within those roles - translate into licensing requirements.
 
