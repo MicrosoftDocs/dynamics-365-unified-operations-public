@@ -30,9 +30,11 @@ This helps your organization:
 
 Additionally, if your organization has multiple Dynamics 365 Finance & Operations environments (such as multiple production instances), you can get a consolidated view of licensing across all environments in your tenant by using the **User License Consumption report** in the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)**. The License Usage Summary in the Security Governance workspace focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
 
->[!Note] The License Usage Summary is informational only. It does not assign licenses or change any user's access. It provides reporting on what licenses are required for the access each user currently has. 
+>[!Note]
+> The License Usage Summary is informational only. It does not assign licenses or change any user's access. It provides reporting on what licenses are required for the access each user currently has. 
 
->[!Tip]  If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what’s included in a **Finance** vs. an **Operations - Activity** license, or how attach license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Understanding the licensing model will help you make the most of the License Usage Summary tool. 
+>[!Tip]
+> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what’s included in a **Finance** vs. an **Operations - Activity** license, or how attach license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Understanding the licensing model will help you make the most of the License Usage Summary tool. 
 
 ## Getting Started: Enabling the Feature 
 
@@ -85,9 +87,11 @@ In the **User Licenses** view, each row corresponds to a user and displays the h
 
 - **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than 1 means the user needs one or more additional attach licenses. For example, 2 would mean the user needs their base license plus one attach license, 3 would mean the user needs their base license plus two attach licenses. 
 
->[!Note] For more detailed analysis, select Open in Microsoft Office to download a detailed view in Excel.
+>[!Note] 
+> For more detailed analysis, select Open in Microsoft Office to download a detailed view in Excel.
 
->[!Note] Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
+> [!IMPORTANT]
+> Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
 
 ### How to use the User License Summary view: 
 
@@ -153,7 +157,7 @@ Examining this detailed breakdown allows you to pinpoint the exact privileges or
 With this information, you can make informed decisions-such as removing that privilege from the role for users who don't need it, or knowing that anyone with that role should also be assigned the requisite attach license. 
 
 >[!Tip]
->You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
+> You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
 
 ## Example: A User with Multiple Roles 
 
