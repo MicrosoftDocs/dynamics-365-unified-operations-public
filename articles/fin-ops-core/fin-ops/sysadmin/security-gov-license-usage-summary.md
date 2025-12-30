@@ -49,7 +49,7 @@ Before you access the **User security governance** workspace, you must activate 
 
 :::image type="content" source="media/security-governance-license-usage-summary-feature-enabled.png" alt-text="Security governance features enabled in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enabled.png":::
 
->[!Tip]
+> [!IMPORTANT]
 > The **Security Governance** feature and **User Security Governance License Usage Summary** report are available in only in versions [10.0.44](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and above.
 
 :::image type="content" source="media/security-governance-version-info.png" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
