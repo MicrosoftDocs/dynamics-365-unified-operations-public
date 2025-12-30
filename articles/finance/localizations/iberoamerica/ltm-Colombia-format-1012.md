@@ -49,7 +49,7 @@ To configure codes for **Tax ID types**, follow these steps:
 1. On the **Tax application** page, in the **Tax application id** field, enter the code for Colombian format 1012.
 1. In the **Tax application code** field, enter the tax ID code according to Colombian regulation.
 
-To configure codes for countries, follow these steps:
+To configure codes for countries/regions, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**, and for each country/region go to **LATAM** \> **Tax application** to assign the tax application codes according to Colombian regulation.
 
