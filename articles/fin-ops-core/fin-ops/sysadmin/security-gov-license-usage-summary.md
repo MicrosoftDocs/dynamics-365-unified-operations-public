@@ -20,7 +20,6 @@ The **Security Governance License Usage Summary** is a tool in Dynamics 365 Fina
 
 :::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
 
-
 This helps your organization: 
 
 - **Confirm that security roles are configured for required licenses** for the tasks users perform. 
@@ -64,19 +63,17 @@ Before you access the **User security governance** workspace, you must activate 
 Once the feature is enabled, access the **License Usage Summary** page by: 
 
 1. Sign in to your Dynamics 365 F&O environment with **System Administrator** rights.
-
 2. Go to **System administration > Security > Security Governance > License usage summary**. 
 
 Within this workspace, you'll find multiple tabs that provide different views: 
 
-- **User Role Licenses**: User and the license(s) required based on the user's assigned roles. 
+- **User Role Licenses**: User and the license(s) required based on the user's assigned security roles. 
 - **Role Licenses**: Security role and the minimum license required for the role, including details on **Entitled**, **Not Entitled**, and **Not Required** configured security objects. 
 - **Duty Licenses**: Shows license requirements for individual duties (groupings of privileges), if you need to examine license at the duty level. 
 - **Privilege Licenses**: Shows license requirements for individual privileges or menu items, for the most detailed analysis. 
 
 Each of these views helps you analyze license requirements from a different angle. 
-
-For most day-to-day checks, focus on the **User Licenses** and **Role Licenses** tabs. 
+For regular license reviews, focus on the **User Role Licenses** and **Role Licenses** tabs. 
 
 ## Understanding the User License Summary report
 
@@ -102,11 +99,11 @@ In the **User Role Licenses** view, each row corresponds to a user and displays 
 >[!Tip]
 > Duplicate the security role or duty using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature to see which permissions are excluded when evaluating license requirements.
 
-- **Address multiple license(s) requirement**: When the License quantity for a user is 2 or more, that uses's role and associated security objects span multiple product licenses. The highest-priority license is counted as the base license, and the remaining lower priority licenses are counted as attach licenses. Make sure the user is assigned all necessary licenses in **[Microsoft 365 admin center](https://admin.microsoft.com)**. Also consider if those extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configrued security objects could be reduced to optimize the number of different required licenses. 
+- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that uses's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in **[Microsoft 365 admin center](https://admin.microsoft.com)**. Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configrued security objects could be reduced to optimize the number of different required licenses. 
 
 ## Understanding the the Role Licenses View
 
-The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. You can **filter** by a security role to see how many security objects are entitled, not entitled, or not required for each license. This breakdown helps explain what entitled security objects are covered by a particular license for that role.
+The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. **Filter** by a security role, and sort by **Entitled** to see how many security objects are entitled, not entitled, or not required by each license. This breakdown helps explain what entitled security objects are covered by a particular license.
 
 :::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
 
@@ -114,9 +111,9 @@ Key columns in the **Role Licenses** view:
 
 - **Security Role** - Name of the security role (for example, Accounts payable clerk). 
 
-- **SKU Name** - The lowest-level Dynamics 365 license that covers all configured security objects in the role. If the role's permissions include any function that requires a higher license, that higher license with the calculated entitled security obejcts is shown. 
+- **SKU Name** - The lowest-level Dynamics 365 license that covers all configured security objects in the role. If the role's permissions include any function that requires a higher license, that higher license with the calculated **Entitled** security obejcts is shown. 
 
-- **Priority** - When a role's permissions cross multiple license levels, the **Priority** column indicates which license is considered primary. The licenses are ranked by how many **Entitled** security objects are covered. The highest priority license is listed with the highest **Entitled** security objects covered. Any lower-priority licenses are also included as a user assigned the security role with a lower-priority license indicates the covered enitled security objects associated with that license. Attach licenses, in combination with other base licenses, can also be cover these security objects based on the covered **Entitled** security objects. 
+- **Priority** - The **Priority** column indicates which license is considered primary, when a role's permissions cross multiple licenses. The licenses are ranked by how many **Entitled** security objects are covered. The highest priority license is listed with the highest **Entitled** security objects covered. Any lower-priority licenses are also included as a user assigned the security role with a lower-priority license indicates the covered enitled security objects associated with that license. Attach licenses, in combination with other base licenses, can also be cover these security objects based on the covered **Entitled** security objects. 
 
 :::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
 
@@ -163,7 +160,7 @@ Suppose a user has been assigned three roles: **Accountant**, **Retail Store Man
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
-The **License Usage Summary report** in this example shows the following for this user: 
+In this example, the **License Usage Summary report** shows the following for the *Cade.Armand.Olander* user: 
 
 | Role Name              | License                 | License Quantity | Notes |
 |------------------------|-------------------------|------------------|-------|
@@ -171,14 +168,13 @@ The **License Usage Summary report** in this example shows the following for thi
 | **Retail Store Manager**    | Operations - Activity   | 0                | No additional license requirement for this role, for this user, if the user has been assigned a Finance license |
 | **System User**             | None                    | 0                | No additional license requirement for this role, for this user, if the user has been assigned a Finance license |
 
-For this user, the **Finance license** is the necessary base license due to the high-level permissions of the **Accountant** role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so no second license is required. 
+In this example, for this user, the **Finance license** is the necessary base license due to the high-level permissions of the **Accountant** role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so no second license is required. 
 
-
-### Role Licenses tab###
+### Role Licenses ta
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
-Select the **Role License** tab, and select **Accountant** role to inspect specific objects. In this example, the **Accountant** role is configured with **3362** Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
+In this example, the **Role License** tab, with the selected **Accountant** role, shows the **Accountant** role is configured with *3362* **Entitled** security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
 
 | SKU Name | Securable Object Count | Entitlement | Notes |
 |----------|------------------------|--------------------|-------|
@@ -186,10 +182,10 @@ Select the **Role License** tab, and select **Accountant** role to inspect speci
 | **Finance**  | **1,557**                  | **Not Entitled** | Not included in the mapped license (requires different license) |
 
 
-From this example, we can draw a few conclusions: 
+In this example, we can draw a few conclusions: 
 
 - The user must be assigned a **Finance** license in [Microsoft 365 admin portal](https://admin.microsoft.com) to ensure their access to the system. 
-- If the user's performed business functions do not actually require full Finance capabilities, you might consider removing the **Accountant role** (and perhaps assigning a more appropriate role) so that the user could be fully served by a lower license like **Operations - Activity**. This would reduce licensing requirements and would limit the user's access to only what they need. 
+- If the user's performed business functions do not actually require a **Finance** license, you might consider removing the **Accountant** role (and perhaps assigning a more appropriate role) so that the user could be fully served by a lower license like **Operations - Activity**. This would reduce licensing requirements and would limit the user's access to only what they need. 
 - If the user truly needs both roles **Accountant** and **Retail Store Manager**, ensure they are assigned a **Finance** license. In this example, a **Operations - Activity** license is not needed because a **Finance** license supersedes it for this user's roles. 
 
 ## Ongoing Management and Best Practices 
