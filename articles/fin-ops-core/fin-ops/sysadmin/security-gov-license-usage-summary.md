@@ -156,11 +156,11 @@ With this information, you can make informed decisions-such as removing that pri
 
 ## Example: A User with Multiple Assigned Security Roles 
 
-In the following example, a user, *Cade.Armand.Olander* , is assigned three security roles: **Accountant**, **Retail Store Manager**, and **System User**. 
+In the following example, a user, *Cade.Armand.Olander*, is assigned three security roles: **Accountant**, **Retail Store Manager**, and **System User**. 
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
-In this example, the **License Usage Summary report** shows the following for the *Cade.Armand.Olander* user: 
+In this example, the **License Usage Summary report** shows the following for *Cade.Armand.Olander*: 
 
 | Role Name              | License                 | License Quantity | Notes |
 |------------------------|-------------------------|------------------|-------|
@@ -168,13 +168,16 @@ In this example, the **License Usage Summary report** shows the following for th
 | **Retail Store Manager**    | Operations - Activity   | 0                | No other license requirement for this role, for this user, if the user is assigned a **Finance** license |
 | **System User**             | None                    | 0                | No other license requirement for this role, for this user, if the user is assigned a **Finance** license |
 
-In this example, for this user, the **Finance** license is the necessary base license due to the high-level permissions of the **Accountant** role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so no second license is required. 
+In this example, for this user, *Cade.Armand.Olander*, the **Finance** license is the necessary base license due to the high-level permissions of the **Accountant** security role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so a second license is not required. 
 
 ### Role Licenses tab
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
-In this example, the **Role License** tab, with the selected **Accountant** role, shows the **Accountant** role is configured with *3362* **Entitled** security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
+In this example, the **Role License** tab, with the selected **Accountant** role, shows the **Accountant** role is configured with *3362* **Entitled** security objects contributing to the requirement of a **Finance** license. 
+
+>[!Tip]
+> For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
 
 | SKU Name | Securable Object Count | Entitlement | Notes |
 |----------|------------------------|--------------------|-------|
