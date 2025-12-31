@@ -90,7 +90,7 @@ In the **User Role Licenses** view, each row corresponds to a user and displays 
 >[!Tip] 
 > For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Excel.
 
-### How to use the User License Summary view: 
+### How to use the User License Summary view
 
 - **Verify expected licenses** : Check that each user's licenses requirement match what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**. 
 
