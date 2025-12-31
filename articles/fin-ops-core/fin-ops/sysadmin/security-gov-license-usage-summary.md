@@ -139,9 +139,9 @@ Each security object in a role has one of three classifications regarding requir
 
 The **License Usage Summary** also lets you inspect exactly which security objects are contributing to a role or user's license requirements: 
 
-**Detailed panel**: When you select a particular user (on the **User Licenses** tab) or a role (on the **Role Licenses** tab), a detailed panel appears at the bottom of the page -listing individual security objects related to that selection. 
+**Detailed panel**: When you select a particular user (on the **User Licenses** tab) or a role (on the **Role Licenses** tab), a detailed panel appears at the bottom of the page listing individual security objects related to that selection. 
 
-- **Information provided**: For each listed security object, you'll see details such as: 
+**Information provided**: For each listed security object, you'll see details such as: 
 - **SecurableType** - The type of object (e.g. a form, report, menu item, button, api, etc.). 
 - **AOT Name / AOT Child Name** - The name of the object (from the **Application Object Tree**) and any child AOT sub-component. 
 - **Access Level** - The level of access granted (Read, Update, Create, Invoke, Delete, etc.). 
