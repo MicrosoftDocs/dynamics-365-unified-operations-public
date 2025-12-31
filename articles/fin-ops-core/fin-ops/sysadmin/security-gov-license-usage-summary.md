@@ -154,7 +154,7 @@ With this information, you can make informed decisions-such as removing that pri
 >[!Tip]
 > You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
 
-## Example: A User with Multiple Roles 
+## Example: A User with Multiple Assigned Security Roles 
 
 Suppose a user has been assigned three roles: **Accountant**, **Retail Store Manager**, and **System User**. 
 
