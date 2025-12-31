@@ -32,10 +32,10 @@ Additionally, if your organization has multiple Dynamics 365 Finance & Operation
 In the Security Governance workspace, **License Usage Summary** focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
 
 >[!Note]
-> **License Usage Summary** is a reporting tool only. It does not assign licenses or change any user's access. It shows which licenses are required based on each user's  assigned security roles and security role's configured security objects license requirements. Admins must assign the required licenses to users in **[Microsoft 365 admin center](https://admin.microsoft.com)**
+> **License Usage Summary** is a reporting tool only. It does not assign licenses or change any user's access. It shows which licenses are required based on each user's  assigned security roles and security role's configured security objects license requirements.
 
 > [!IMPORTANT]
-> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what is included in a **Finance** compared to an **Operations - Activity** license, or **attach** license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Customers must acquire and assign appropriate subscription licenses for its users per [Microsoft's product terms](https://go.microsoft.com/fwlink/?linkid=2339737). Microsoft provides these reports to help customers monitor required licenses based on their users' configured access to Dynamics 365 finance and operations apps. User license reporting may vary based on user security role assignment and may be periodically enhanced to reflect Microsoft's current licensing requirements. [Learn more](https://go.microsoft.com/fwlink/?linkid=2323873).
+> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what is included in a **Finance** compared to an **Operations - Activity** license, or **attach** license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Customers must acquire and assign appropriate subscription licenses for its users in **[Microsoft 365 admin center](https://admin.microsoft.com)** per [Microsoft's product terms](https://go.microsoft.com/fwlink/?linkid=2339737). Microsoft provides these reports to help customers monitor required licenses based on their users' configured access to Dynamics 365 finance and operations apps. User license reporting may vary based on user security role assignment and may be periodically enhanced to reflect Microsoft's current licensing requirements. [Learn more](https://go.microsoft.com/fwlink/?linkid=2323873).
 
 > [!IMPORTANT]
 > Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
@@ -141,10 +141,10 @@ The **License Usage Summary** also lets you inspect exactly which security objec
 
 **Detailed panel**: When you select a particular user (on the **User Licenses** tab) or a role (on the **Role Licenses** tab), a detailed panel appears at the bottom of the page listing individual security objects related to that selection. 
 
-**Information provided**: For each listed security object, you see details such as: 
+For each listed security object, you see details such as: 
 - **SecurableType** - The type of object (for example, a form, report, menu item, button, api, etc.). 
 - **AOT Name / AOT Child Name** - The name of the object (from the **Application Object Tree**) and any child AOT subcomponent. 
-- **Access Level** - The level of access granted (Read, Update, Create, Invoke, Delete, etc.). 
+- **Access Level** - The level of access granted (**Read**, **Update**, **Create**, **Invoke**, **Delete**, etc.). 
 - **Entitled** / **Not Entitled** / **Not Required** - Whether that object is covered by the current license context, requires a different license, or may be inherited in system user and therefore not included in license computation. 
 
 Examining this detailed breakdown allows you to pinpoint the exact privileges or duties causing a higher license requirement. For example, you might discover that the **Retail Store Manager** role includes a privilege that is marked as **Not Entitled** under the **Operations - Activity** license. This implies that the functionality requires a higher license (perhaps a Supply Chain Management or Commerce license), which may drive the requirement for an attach license or a higher base license for users assigned that role. 
@@ -156,7 +156,7 @@ With this information, you can make informed decisions-such as removing that pri
 
 ## Example: A User with Multiple Assigned Security Roles 
 
-Suppose a user has been assigned three roles: **Accountant**, **Retail Store Manager**, and **System User**. 
+In the following example, a user, *Cade.Armand.Olander* , is assigned three security roles: **Accountant**, **Retail Store Manager**, and **System User**. 
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
