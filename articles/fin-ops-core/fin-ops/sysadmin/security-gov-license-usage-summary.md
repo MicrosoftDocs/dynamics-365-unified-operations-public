@@ -28,15 +28,15 @@ This helps your organization:
 - **Align security roles with internal controls and compliance** by revealing which permissions drive certain license requirements. 
 - **Plan and optimize license requirements** by providing a clear view of how security roles drive required licenses. 
 
-Additionally, if your organization has multiple Dynamics 365 Finance & Operations environments (such as multiple production instances), you can get a consolidated view of licensing across all environments in your tenant by using the **User License Consumption report** in the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)**. 
+Additionally, if your organization has multiple Dynamics 365 Finance & Operations environments (such as multiple production environments), you can get a consolidated view of licensing across all environments (including sandbox environments) by using the **[User License Consumption report](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** in the **[Power Platform admin center](https://aka.ms/PPAC)**. 
 
-**License Usage Summary** in the Security Governance workspace focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
+In the Security Governance workspace, **License Usage Summary** focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
 
 >[!Note]
-> The **License Usage Summary** is informational only. It does not assign licenses or change any user's access. It provides reporting on what licenses are required for the access each user and security role configuration. Ensure that users have the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**
+> **License Usage Summary** is a reporting tool only. It does not assign licenses or change any user's access. It shows which licenses are required based on each user's  assigned security roles and security role's configured security objects license requirements. Admins must assign the required licenses to users in **[Microsoft 365 admin center](https://admin.microsoft.com)**
 
 > [!IMPORTANT]
-> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what's included in a **Finance** vs. an **Operations - Activity** license, or attach license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Customers must acquire and assign appropriate subscription licenses for its users per [Microsoft's product terms](https://go.microsoft.com/fwlink/?linkid=2339737). Microsoft provides these reports to help customers monitor required licenses based on their users' configured access to Dynamics 365 finance and operations apps. User license reporting may vary based on user security role assignment and may be periodically enhanced to reflect Microsoft's current licensing requirements. [Learn more](https://go.microsoft.com/fwlink/?linkid=2323873).
+> If you’re not familiar with the Dynamics 365 licensing model or license types (for example, what's included in a **Finance** vs. an **Operations - Activity** license, or **attach** license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Customers must acquire and assign appropriate subscription licenses for its users per [Microsoft's product terms](https://go.microsoft.com/fwlink/?linkid=2339737). Microsoft provides these reports to help customers monitor required licenses based on their users' configured access to Dynamics 365 finance and operations apps. User license reporting may vary based on user security role assignment and may be periodically enhanced to reflect Microsoft's current licensing requirements. [Learn more](https://go.microsoft.com/fwlink/?linkid=2323873).
 
 > [!IMPORTANT]
 > Updates to assigned security roles, customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
@@ -45,8 +45,8 @@ Additionally, if your organization has multiple Dynamics 365 Finance & Operation
 
 Before you access the **User security governance** workspace, you must activate it in **Feature management**:
 
-1. Sign in to your Dynamics 365 F&O environment with System Administrator rights.
-2. Go to **System administration > Feature management**. Select and enable the following features.
+1. Sign in to your Dynamics 365 F&O environment with **System Administrator** rights.
+2. Go to **System administration > Feature management**. Select and enable the following features:
    - *User security governance*
    - *User security governance license usage summary report*
 
@@ -55,47 +55,47 @@ Before you access the **User security governance** workspace, you must activate 
 :::image type="content" source="media/security-governance-license-usage-summary-feature-enabled.png" alt-text="Security governance features enabled in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enabled.png":::
 
 > [!IMPORTANT]
-> The **Security Governance** feature and **User Security Governance License Usage Summary** report are available only in versions [10.0.44](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and above.
+> The **Security Governance** feature and **User Security Governance license usage summary report** are available only in versions [10.0.44](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and above.
 
 :::image type="content" source="media/security-governance-version-info.png" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
 
 ## Accessing License Usage Summary 
 
-Once the feature is enabled, access the **License Usage Summary** page: 
+Once the feature is enabled, access the **License Usage Summary** page by: 
 
-Sign in to your Dynamics 365 F&O environment with **System Administrator** rights.
+1. Sign in to your Dynamics 365 F&O environment with **System Administrator** rights.
 
-Go to **System administration > Security > Security Governance > License usage summary**. 
+2. Go to **System administration > Security > Security Governance > License usage summary**. 
 
-Within this workspace, you'll find multiple tabs that provide different views on licensing data: 
+Within this workspace, you'll find multiple tabs that provide different views: 
 
-- **User Role Licenses**: User and the license(s) required based on their roles. 
-- **Role Licenses**: Security role and the minimum license required for the role, plus details on covered security objects. 
-- **Duty Licenses**: Shows license requirements for individual duties (groupings of privileges), if you need to examine license impacts at the duty level. 
+- **User Role Licenses**: User and the license(s) required based on the user's assigned roles. 
+- **Role Licenses**: Security role and the minimum license required for the role, including details on **Entitled**, **Not Entitled**, and **Not Required** configured security objects. 
+- **Duty Licenses**: Shows license requirements for individual duties (groupings of privileges), if you need to examine license at the duty level. 
 - **Privilege Licenses**: Shows license requirements for individual privileges or menu items, for the most detailed analysis. 
 
-Each of these views helps you analyze license usage from a different angle. 
+Each of these views helps you analyze license requirements from a different angle. 
 
 For most day-to-day checks, focus on the **User Licenses** and **Role Licenses** tabs. 
 
-## Understanding the User License Summary
+## Understanding the User License Summary report
 
 :::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commcer licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
 
-In the **User Licenses** view, each row corresponds to a user and displays the highest level of license that the user requires, given all the security roles assigned to them. Key columns in this view: 
+In the **User Role Licenses** view, each row corresponds to a user and displays the license(s) that the user requires, given all the security roles assigned to them. Key columns in this view: 
 
 - **User** - The user's ID whose license requirements you are examining. 
 
-- **License** - The license needed for that user's assigned security role. The system looks at all the security objects in the assigned role and determines which license covers the most security objects in the role. 
+- **License** - The license needed for that user's assigned security role(s). The system looks at all the security objects in the assigned role(s) and determines which license(s) covers the most security objects in the role. 
 
-- **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than 1 means the user needs one or more additional attach licenses. For example, 2 would mean the user needs their base license plus one attach license, 3 would mean the user needs their base license plus two attach licenses. 
+- **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than 1 means the user needs one or more additional attach licenses. For example, 2 rows with license quantity 1, would indicate the user needs their base license plus one attach license, 3 rows with license quantity 1, would indicate the user needs their base license plus two attach licenses. 
 
 >[!Tip] 
 > For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Excel.
 
 ### How to use the User License Summary view: 
 
-- **Verify expected licenses** : Check that each user's License matches what you expect for their assigned security role. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**. 
+- **Verify expected licenses** : Check that each user's license(s) requirements match what you expect for their assigned security role(s). If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**. 
 
 - **Investigate higher-than-expected licenses**: Pay special attention to users who require a higher license than seems appropriate. For instance, if a Warehouse clerk is shown needing a Finance license, it could mean they were inadvertently given a role with permissions that only a Finance user should have. Identify which roles that user has, then use the **Role Licenses** view for those roles to see what might be causing the increased requirement. 
 
@@ -123,7 +123,7 @@ Key columns in the **Role Licenses** view:
 **Entitlement counts** - For the required license, the role's permissions are broken down into three categories: 
 
 - **Entitled** - Included security objects within the mapped license
-- **Not entitled** - Not included in the mapped license (requires different license)
+- **Not Entitled** - Not included in the mapped license (requires different license)
 - **Not Required** - Security obects or privilege inherited in system user, not included in license computation
 
 This breakdown helps you understand why a role requires the license it does. 
