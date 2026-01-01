@@ -35,13 +35,11 @@ Follow these steps to configure a return policy for a retail store or online ret
 
 1. Go to **Retail and Commerce** \> **Channel Setup** \> **Returns** \> **Channel return policy**.
 
-1. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that will help you identify the policy when it is being applied to the channel.
-
-   ![Add new return policy.](media/Return-policy-page1.png)
-     
+1. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that will help you identify the policy when it is being applied to the channel. Set the configuration "Can managers override?" to **Yes** if you want to allow store managers to select payment methods beyond the ones defined in the Channel return policy. More details on this property are added later in this article.
+    
    
 1. In the **Allowed refund payment methods** section, define **Allowed** return payment tenders that are specific to each payment method.
-   ![Set allowed payment methods per payment typ.](media/Return-policy-page2.png)
+   ![Set allowed payment methods per payment typ.](media/channel_return_policy_new.png)
    
     > [!IMPORTANT]
     > - The payment methods are derived from the payment methods set for the organization.
@@ -80,11 +78,16 @@ Follow the steps in either of the following examples to view the allowed return 
     - If the payment tender selected is not allowed, an error message is displayed.
     - Select **Amount Due** to display a list of all the allowed return tender types.
 
-![Refund type not allowed.](media/Return-policy-page6.png)
-
-
-
 ![Refund types allowed.](media/Return-policy-page5.png)
 
+## Override allowed payment methods
+To handle scenarios where the standard refund payment method cannot be applied, the system allows retailers to grant special permissions to designated store associates. These associates can override the return policy and refund using a payment method that is not otherwise permitted.
+
+To enable this capability, the configuration named **"Can managers override?"** should be set to **Yes** on the Channel return policy. With this enabled, all store managers can choose any payment method for the refund. To enable this capability for non-store managers, a POS permission named **"Allow using all payment methods for refund"** has been introduced starting 10.0.44. Thus, if channel return policy allows overriding the allowed payment methods, then all store managers and store associates with the above mentioned permission will be able to use any payment method for refund. 
+
+> [!Note]
+> Store associates who do not have the above mentioned permission can use only the payment methods defined at the channel return policy. There is no way to initiate a manager override i.e., summon the manager to use other payment methods for this process. 
+
+![Override Refund Payment Methods.](media/refund_options_override.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
