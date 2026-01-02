@@ -97,10 +97,10 @@ Sign in as a **Global admin** or **License admin**
 
 Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
->[!Note]
-> The license applies after a short propagation delay of up to 1 hour.
-
  :::image type="content" source="media/stay-compliant-assign-license-to-group.png" alt-text="Assign a license to group." lightbox="media/stay-compliant-assign-license-to-group.png":::
+
+ >[!Note]
+> The license applies after a short propagation delay of up to 1 hour.
 
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first.
