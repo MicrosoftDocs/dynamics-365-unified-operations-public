@@ -69,6 +69,7 @@ Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Sup
 
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first.
+>
 > Then assign the attach license (for example **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)**) if the user needs both.
 
 >[!Tip]
@@ -101,6 +102,7 @@ Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Su
 
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first.
+>
 > Then assign the attach license (for example **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)**) if the group needs both.
 
 >[!Note]
