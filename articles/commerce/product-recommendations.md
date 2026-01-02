@@ -25,6 +25,9 @@ In e-Commerce, product recommendations are powered by Microsoft Recommendations 
 
 This service is an add-on to Dynamics 365 Commerce. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
+> [!IMPORTANT]
+> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued in the near future.
+
 
 ## Recommendation service
 
