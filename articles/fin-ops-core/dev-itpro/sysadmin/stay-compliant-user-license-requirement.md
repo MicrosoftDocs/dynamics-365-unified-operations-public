@@ -89,11 +89,11 @@ Sign in as a **Global admin** or **License admin**
 
 2. Go to [Security Groups](https://admin.cloud.microsoft/?#/groups/_/CombinedSecurityGroup)
 
-3. Open the group
+3. Open the security group
 
 4. Go to **Licenses and apps**
 
-5. Assign the license to the group
+5. Assign the license to the security group
 
 Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
