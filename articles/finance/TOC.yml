@@ -2144,6 +2144,8 @@
                          href: localizations/brazil/brazil-reform-calculation-project-quotation.md                       
                        - name: Calculation in General journal in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-general-journal.md
+                       - name: Work with NFS-e Service Invoices
+                         href: localizations/brazil/brazil-nfs-e-service-invoices.md.md                         
 
                     - name: Fiscal books
                       items:

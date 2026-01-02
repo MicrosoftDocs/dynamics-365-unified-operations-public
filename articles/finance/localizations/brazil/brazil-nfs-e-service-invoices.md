@@ -98,6 +98,50 @@ When using the **Federal standard NFS-e format**, you must enter three percentag
 
 By completing the above configurations, your Dynamics 365 Finance environment will meet the prerequisites for NFS-e generation. With the environment correctly set, code tables populated, fields filled on products and documents, and required indicators provided, you can proceed to generate NFS-e XML files that comply with the Brazilian electronic service invoice standards.
 
+## Electronic Reporting configuration files
+
+Find configuration files for NFS-e e-invoicing in two locations (for more information, see [Set up Brazil reformed tax](brazil-reform-setup.md)).
+
+### Download list
+
+Configuration files for NFS-e:
+- Fiscal documents
+- Fiscal documents mapping
+- NFS-e Federal format
+- NFS-e São Paulo format
+
+## Import the configuration files for e-invoicing
+
+After you download the files, import the configuration files into the system.
+    
+### Import the configuration files for e-invoicing
+
+To import e-invoicing configuration files, follow these steps:
+
+1. Go to **Workspaces** \> **Electronic reporting**.
+1. Select the **Reporting configurations** tile.
+1. On **Configurations**, select **Exchange**.
+1. Select **Load from XML file**.
+1. Select a file by selecting **Browse**.
+1. Upload all configuration files, and then go to step 7.
+
+> [!NOTE]
+> Upload the model and model mapping configuration files first and then the formats:
+> 1. Fiscal documents
+> 1. Fiscal documents mapping
+> 1. NFS-e Federal format
+> 1. NFS-e São Paulo format
+
+7. Go to **Organization administration** \> **Setup** \> **Brazilian parameters**.
+8. Select the **Electronic reporting** tab.
+9. Select **NfeServices** in the **Type** field, and select **Fiscal documents mapping** in the **Model Mapping** field.
+10. Go to **Organization administration** \> **Organizations** \> **Fiscal establishments** \> **Fiscal document types**.
+11. Select **NFS-e Federal** or **NFS-e São Paulo** format in the **Export format mapping** field.
+
+## Generate NFS-e service electronic invoices
+After you complete all the required configuration steps, you can generate electronic invoices for posted invoices by going to **Accounts receivable > Periodic tasks > NFS-e export**.
+
+
 ## Related set up information
 
 - **Brazil tax reform setup**: Learn about the steps to set up Brazilian tax reform in [Set up Brazil reformed tax](brazil-reform-setup.md)  

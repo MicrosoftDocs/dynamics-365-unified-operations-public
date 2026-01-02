@@ -69,11 +69,14 @@ Configuration files for e-invoicing:
 - Fiscal documents mapping
 - NF-e submit export format
 - NFS-e Federal format
-- NFS-e Sao Paulo format
+- NFS-e São Paulo format
 
 ## Import the configuration files for tax calculation and e-invoicing
 
 After you download the files, import the configuration files into the system.
+
+> [!NOTE]
+> For the configuration of the NFS-e Service Invoices, see [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md). 
 
 ### Import the configuration files for tax calculation
 
@@ -129,7 +132,7 @@ To import e-invoicing configuration files, follow these steps:
 > 1. Fiscal documents mapping
 > 1. NF-e submit export format
 > 1. NFS-e Federal format
-> 1. NFS-e Sao Paulo format
+> 1. NFS-e São Paulo format
 
 > [!TIP]
 > For importing the configuration files, refer to the Brazil tax reform video: Import configuration.
