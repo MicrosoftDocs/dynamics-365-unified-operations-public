@@ -32,16 +32,16 @@ This feature is turned on by default. You can find it in the **Feature Managemen
 To configure a return policy for a retail store or online retail channel, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Channel Setup** \> **Returns** \> **Channel return policy**.
-1. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that helps you identify the policy when it's applied to the channel. If you want to allow store managers to select payment methods other than those defined in the channel return policy, set the **Can managers override?** property to **Yes**. Learn more at [Override allowed payment methods](#override-allowed-payment-methods).
+1. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that helps you identify the policy applied to the channel. If you want to allow store managers to select payment methods other than payment methods defined in the channel return policy, set the **Can managers override?** property to **Yes**. Learn more at [Override allowed payment methods](#override-allowed-payment-methods).
 1. In the **Allowed refund payment methods** section, in the **Allowed return tender type** drop-down list, select a return tender type for each payment method as shown in the following example image.
    
-    ![Channel return policy form showing Allow return tender type drop-down list options](media/channel_return_policy_new.png)
+    ![Channel return policy form showing Allow return tender type drop-down list options](media/channel-return-policy-new.png)
    
     > [!IMPORTANT]
     > - The payment methods are derived from the payment methods set for the organization.
     > - Adding an allowed return tender type for each listed payment method ensures that returns can be made to the allowed return tender type.
     
-1. To associate the return policy template with the stores where it's used, on the **Retail Channels** tab, select **Add**, and then associate the available channels. 
+1. To associate the return policy template with the stores that use it, on the **Retail Channels** tab, select **Add**, and then associate the available channels. 
 
     1. In the **Choose organization nodes** dialog, select the stores, regions, and organizations that the template should be associated with.
     1. Only one return policy template can be associated with each store.
@@ -85,6 +85,6 @@ To enable this capability, set the channel return policy **Can managers override
 > [!NOTE]
 > Store associates who don't have the **Allow using all payment methods for refund** permission can use only the payment methods defined by the channel return policy. It isn't possible to have the store manager input their credentials for this process. The store manager or associates with the appropriate permissions must initiate such returns on their registers.
 
-![POS Return payment flyout with Show all refund options highlighted](media/refund_options_override.png)
+![POS Return payment flyout with Show all refund options highlighted](media/refund-options-override.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
