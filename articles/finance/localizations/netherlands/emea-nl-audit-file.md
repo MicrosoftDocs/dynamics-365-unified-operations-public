@@ -21,9 +21,9 @@ This article explains how to set up and generate the Audit file for legal entiti
 
 This functionality is available for legal entities whose primary address is in the Netherlands.
 
-## Setup
+## Set up Audit File Financial XAF 4.0 for the Netherlands
 
-To start working with the Audit File Financial XAF 4.0 for the Netherlands, complete the following steps.
+To set up the Audit File Financial XAF 4.0 for the Netherlands, follow these steps:
 
 1. [Turn on features in Feature management.](#features)
 1. [Import Electronic reporting configurations.](#import)
