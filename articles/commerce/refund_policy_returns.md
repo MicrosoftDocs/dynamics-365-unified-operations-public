@@ -35,7 +35,7 @@ To configure a return policy for a retail store or online retail channel, follow
 1. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that helps you identify the policy applied to the channel. If you want to allow store managers to select payment methods other than payment methods defined in the channel return policy, set the **Can managers override?** property to **Yes**. Learn more at [Override allowed payment methods](#override-allowed-payment-methods).
 1. In the **Allowed refund payment methods** section, in the **Allowed return tender type** drop-down list, select a return tender type for each payment method as shown in the following example image.
    
-    ![Channel return policy form showing Allow return tender type drop-down list options](media/channel-return-policy-new.png)
+    :::image type="content" source="media/channel-return-policy-new.png" alt-text="Channel return policy form showing Allow return tender type drop-down list options.":::
    
     > [!IMPORTANT]
     > - The payment methods are derived from the payment methods set for the organization.
@@ -48,7 +48,7 @@ To configure a return policy for a retail store or online retail channel, follow
     1. Use the arrow buttons to select stores, regions, or organizations.
     1. The effective date on the policy is the date on which the policies are applied to the channels and the channel jobs are run. 
 
-    ![Choose organization nodes dialog](media/Return-policy-page3.png)
+    :::image type="content" source="media/Return-policy-page3.png" alt-text="Choose organization nodes dialog.":::
 
 1. On the **Distribution schedule** page, run the **1070** job to make the channel return policy available to the POS.
 
@@ -74,7 +74,7 @@ To view the allowed return tender types in POS, Follow the steps in either of th
     - If the payment tender selected is in the allowed list of return tender types, the cashier can complete the transaction.
     - If the payment tender selected isn't allowed, an error message is displayed.
 
-![Refund types allowed.](media/Return-policy-page5.png)
+:::image type="content" source="media/Return-policy-page5.png" alt-text="Return payment dialog showing refund types allowed.":::
 
 ## Override allowed payment methods
 
@@ -85,6 +85,6 @@ To enable this capability, set the channel return policy **Can managers override
 > [!NOTE]
 > Store associates who don't have the **Allow using all payment methods for refund** permission can use only the payment methods defined by the channel return policy. It isn't possible to have the store manager input their credentials for this process. The store manager or associates with the appropriate permissions must initiate such returns on their registers.
 
-![POS Return payment flyout with Show all refund options highlighted](media/refund-options-override.png)
+:::image type="content" source="media/refund-options-override.png" alt-text="POS Return payment dialog with Show all refund options highlighted":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
