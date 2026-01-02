@@ -2,7 +2,7 @@
 title: Create and update a returns and refunds policy for a channel
 description: Learn how to set up a returns and refunds policy for a channel in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 01/02/2025
+ms.date: 01/02/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
