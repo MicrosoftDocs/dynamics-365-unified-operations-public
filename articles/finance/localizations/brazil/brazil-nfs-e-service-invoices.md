@@ -100,7 +100,7 @@ By completing the above configurations, your Dynamics 365 Finance environment wi
 
 ## Electronic Reporting configuration files
 
-Find configuration files for NFS-e e-invoicing in two locations (for more information, see [Set up Brazil reformed tax](brazil-reform-setup.md)).
+Find the e-invoicing configuration files for NFS-e (for more information, see [Set up Brazil reformed tax](brazil-reform-setup.md)).
 
 ### Download list
 
@@ -140,11 +140,5 @@ To import e-invoicing configuration files, follow these steps:
 
 ## Generate NFS-e service electronic invoices
 After you complete all the required configuration steps, you can generate electronic invoices for posted invoices by going to **Accounts receivable > Periodic tasks > NFS-e export**.
-
-
-## Related set up information
-
-- **Brazil tax reform setup**: Learn about the steps to set up Brazilian tax reform in [Set up Brazil reformed tax](brazil-reform-setup.md)  
-- **Import configuration**: Learn more about importing the configuration files in the video [Brazil tax reform : Import configuration](https://learn-video.azurefd.net/vod/player?id=379f59fe-54cf-40f4-af7e-3fe7c09cc082)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
