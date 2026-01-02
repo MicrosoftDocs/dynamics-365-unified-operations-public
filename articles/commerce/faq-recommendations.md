@@ -18,6 +18,9 @@ ms.custom:
 
 This article provides information about processes and tools that you can use to debug issues related to [product recommendations](product-recommendations.md) or their results in Microsoft Dynamics 365 Commerce.
 
+> [!IMPORTANT]
+> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued in the near future.
+
 ## Best practices
 
 It's very important to utilize the concept of product masters and variants. The sensible grouping of variants to a parent product master helps the list algorithms and service create better models. Additionally, the service can serve just one instance of a product instead of putting all closely related variants in a list. When all closely related variants are put in a list, erroneous or duplicate results can occur.
