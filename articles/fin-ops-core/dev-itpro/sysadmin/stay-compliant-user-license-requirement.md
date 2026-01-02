@@ -39,9 +39,9 @@ For more information about security role to duty and privilege mapping that alig
 
 ## Available and assigned licenses
 
-You can view available and assigned licenses under **Licenses** in the Microsoft 365 admin center.
+You can view available and assigned licenses under **Licenses** in the [Microsoft 365 admin center](https://admin.cloud.microsoft/)
 
-![Microsoft 365 admin center](media/M365-admin-center.png)
+ :::image type="content" source="media/M365-admin-center.png" alt-text="Licenses screen showing avialable licenses and assigned licenses." lightbox="mmedia/M365-admin-center.png":::
 
 ## Assign licenses to users
 
