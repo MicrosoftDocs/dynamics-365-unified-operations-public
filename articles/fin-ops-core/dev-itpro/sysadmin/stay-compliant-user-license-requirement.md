@@ -53,7 +53,7 @@ Go to [Microsoft 365 admin center](https://admin.cloud.microsoft/)
 
 Sign in as a **Global admin** or **License admin**
 
-1. In the left nav, select [**Users → Active users**](https://admin.cloud.microsoft/#/users)
+1. In the left nav, select [Users → Active users](https://admin.cloud.microsoft/#/users)
 
 2. Click the user's name
 
@@ -85,11 +85,11 @@ Go to [Microsoft 365 admin center](https://admin.cloud.microsoft/)
 
 Sign in as a **Global admin** or **License admin**
 
-1. In [Microsoft 365 admin center](https://admin.cloud.microsoft/), go to [**Teams & groups → Active teams & groups**](https://admin.cloud.microsoft/?#/groups)
+1. In [Microsoft 365 admin center](https://admin.cloud.microsoft/), go to [Teams & groups → Active teams & groups](https://admin.cloud.microsoft/?#/groups)
 
-2. Go to [**Security Groups**](https://admin.cloud.microsoft/?#/groups/_/CombinedSecurityGroup)
+2. Go to [Security Groups](https://admin.cloud.microsoft/?#/groups/_/CombinedSecurityGroup)
 
-3. Open the **group**
+3. Open the group
 
 4. Go to **Licenses and apps**
 
