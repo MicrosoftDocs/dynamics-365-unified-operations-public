@@ -43,6 +43,69 @@ You can view available and assigned licenses under **Licenses** in the Microsoft
 
 ![Microsoft 365 admin center.](media/M365-admin-center.png)
 
+## Assign licenses to users
+
+Customers must acquire and assign appropriate subscription licenses for its users in [Microsoft 365 admin center](https://admin.microsoft.com/) per Microsoft's [product terms](https://go.microsoft.com/fwlink/?linkid=2339737). 
+
+### Option 1, Assign a license to an individual user
+
+ :::image type="content" source="media/stay-compliant-m365-admin-assign-user-license.png" alt-text="Assign user license in admin.microsoft.com" lightbox="media/stay-compliant-m365-admin-assign-user-license.png":::
+
+Go to  [https://admin.microsoft.com](https://admin.microsoft.com)
+
+Sign in as a **Global admin** or **License admin**
+
+1. In the left nav, select **Users → Active users**
+
+2. Click the user's name
+
+3. Select **Licenses and apps**
+
+4. Toggle on the license you want
+
+Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
+
+>[!Note]
+> Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first, then assign **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the user needs both.
+
+✅ Done. The license applies after a short propagation delay of up to 1 hour.
+
+>[!Tip]
+> If the user still cannot get in, it's almost always one of three things:
+> 1. The user logged in before the license finished propagating (less than 1 hour)
+> 2. The user does not have the right security role assigned in Dynamics
+> 3. The users is missing a required attach license
+
+### Option 2, Assign licenses using groups
+
+ :::image type="content" source="media/stay-compliant-m365-admin-assign-license-to-group.png" alt-text="Assign license to group in admin.microsoft.com" lightbox="media/stay-compliant-m365-admin-assign-license-to-group.png":::
+
+Go to [https://admin.microsoft.com](https://admin.microsoft.com)
+
+Sign in as a **Global admin** or **License admin**
+
+1. In  [https://admin.microsoft.com](https://admin.microsoft.com), go to **Teams & groups → Active teams & groups**
+
+2. Go to **Security Groups**
+
+3. Open the **group**
+
+4. Go to **Licenses and apps**
+
+5. Assign the license to the group
+
+Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
+
+>[!Note]
+> Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first, then **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the group needs both.
+
+>[!Note]
+>Assigning a license:
+> ✅ Allows the user to legally access the product
+> ❌ Does not grant permissions inside Dynamics
+> You still must:
+> Assign security roles in Dynamics 365
+
 ## License requirement per role
 
 The **Assign roles to user** dialog box, which you open from **System Administration** \> **Security** \> **Users**, helps you understand the impact on user licensing when you assign roles. It also provides an overview of the licensing requirements for each role. You can use the dialog box itself or export data to Excel for further analysis. Custom roles can require licenses for more than one application.
