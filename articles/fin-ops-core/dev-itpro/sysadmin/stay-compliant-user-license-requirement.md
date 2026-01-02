@@ -63,9 +63,10 @@ Sign in as a **Global admin** or **License admin**
 
 Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
-✅ Done. The license applies after a short propagation delay of up to 1 hour.
-
  :::image type="content" source="media/stay-compliant-m365-admin-assign-user-license.png" alt-text="Assign a license to a user." lightbox="media/stay-compliant-m365-admin-assign-user-license.png":::
+
+>[!Note]
+> The license applies after a short propagation delay of up to 1 hour.
 
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first.
@@ -96,7 +97,8 @@ Sign in as a **Global admin** or **License admin**
 
 Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
-✅ Done. The license applies after a short propagation delay of up to 1 hour.
+>[!Note]
+> The license applies after a short propagation delay of up to 1 hour.
 
  :::image type="content" source="media/stay-compliant-m365-admin-assign-license-to-group.png" alt-text="Assign a license to group." lightbox="media/stay-compliant-m365-admin-assign-license-to-group.png":::
 
