@@ -41,15 +41,15 @@ For more information about security role to duty and privilege mapping that alig
 
 You can view available and assigned licenses under **Licenses** in the Microsoft 365 admin center.
 
-![Microsoft 365 admin center.](media/M365-admin-center.png)
+![Microsoft 365 admin center](media/M365-admin-center.png)
 
 ## Assign licenses to users
 
-Customers must acquire and assign appropriate subscription licenses for its users in [Microsoft 365 admin center](https://admin.microsoft.com/) per Microsoft's [product terms](https://go.microsoft.com/fwlink/?linkid=2339737). 
+Customers must acquire and assign appropriate subscription licenses for its users in [Microsoft 365 admin center](https://admin.cloud.microsoft/) per Microsoft's [product terms](https://go.microsoft.com/fwlink/?linkid=2339737). 
 
-### Option 1, Assign a license to an individual user
+### Option 1 - Assign a license to an individual user
 
-Go to  [https://admin.microsoft.com](https://admin.microsoft.com)
+Go to [Microsoft 365 admin center](https://admin.cloud.microsoft/)
 
 Sign in as a **Global admin** or **License admin**
 
@@ -66,25 +66,26 @@ Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Sup
  :::image type="content" source="media/stay-compliant-m365-admin-assign-user-license.png" alt-text="Assign a license to a user." lightbox="media/stay-compliant-m365-admin-assign-user-license.png":::
 
 >[!Note]
-> Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first, then assign **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the user needs both.
+> Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first.
+> Then assign the attach license (for example **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)**) if the user needs both.
 
 ✅ Done. The license applies after a short propagation delay of up to 1 hour.
 
 >[!Tip]
 > If the user still cannot get in, it's almost always one of three things:
-> 1. The user logged in before the license finished propagating (less than 1 hour)
-> 2. The user does not have the right security role assigned in Dynamics
-> 3. The users is missing a required attach license
+> 1. **The user logged in before the license finished propagating (less than 1 hour)**
+> 2. **The user does not have the right security role assigned in Dynamics**
+> 3. **The users is missing a required attach license**
 
-### Option 2, Assign licenses using groups
+### Option 2 - Assign licenses using groups
 
-Go to [https://admin.microsoft.com](https://admin.microsoft.com)
+Go to [Microsoft 365 admin center](https://admin.cloud.microsoft/)
 
 Sign in as a **Global admin** or **License admin**
 
-1. In  [https://admin.microsoft.com](https://admin.microsoft.com), go to **Teams & groups → Active teams & groups**
+1. In [Microsoft 365 admin center](https://admin.cloud.microsoft/), go to [**Teams & groups → Active teams & groups**](https://admin.cloud.microsoft/?#/groups)
 
-2. Go to **Security Groups**
+2. Go to [**Security Groups**](https://admin.cloud.microsoft/?#/groups/_/CombinedSecurityGroup)
 
 3. Open the **group**
 
@@ -97,12 +98,16 @@ Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Su
  :::image type="content" source="media/stay-compliant-m365-admin-assign-license-to-group.png" alt-text="Assign a license to group." lightbox="media/stay-compliant-m365-admin-assign-license-to-group.png":::
 
 >[!Note]
-> Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first, then **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the group needs both.
+> Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first.
+> Then assign the attach license (for example **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)**) if the group needs both.
 
 >[!Note]
 >Assigning a license:
+>
 > ✅ Allows the user to legally access the product
+>
 > ❌ Does not grant permissions inside Dynamics
+>
 > You still must:
 > Assign security roles in Dynamics 365
 
