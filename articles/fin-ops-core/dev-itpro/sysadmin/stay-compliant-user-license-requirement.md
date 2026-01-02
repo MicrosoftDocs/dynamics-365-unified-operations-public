@@ -71,7 +71,7 @@ Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Sup
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first.
 >
-> Then assign the attach license **Attach to Qualifying Dynamics 365 Base Offer** if the user needs both.
+> Then assign the specific attach license with **Attach to Qualifying Dynamics 365 Base Offer** if the user needs both.
 
 >[!Tip]
 > If the user still cannot get in, it's almost always one of three things:
@@ -105,7 +105,7 @@ Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Su
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first.
 >
-> Then assign the attach license **Attach to Qualifying Dynamics 365 Base Offer** if the group needs both.
+> Then assign the specific attach license with **Attach to Qualifying Dynamics 365 Base Offer** if the group needs both.
 
 >[!Note]
 >Assigning a license:
