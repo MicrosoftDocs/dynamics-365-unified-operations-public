@@ -49,8 +49,6 @@ Customers must acquire and assign appropriate subscription licenses for its user
 
 ### Option 1, Assign a license to an individual user
 
- :::image type="content" source="media/stay-compliant-m365-admin-assign-user-license.png" alt-text="Assign user license in admin.microsoft.com" lightbox="media/stay-compliant-m365-admin-assign-user-license.png":::
-
 Go to  [https://admin.microsoft.com](https://admin.microsoft.com)
 
 Sign in as a **Global admin** or **License admin**
@@ -65,6 +63,8 @@ Sign in as a **Global admin** or **License admin**
 
 Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
+ :::image type="content" source="media/stay-compliant-m365-admin-assign-user-license.png" alt-text="Assign a license to a user." lightbox="media/stay-compliant-m365-admin-assign-user-license.png":::
+
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first, then assign **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the user needs both.
 
@@ -77,8 +77,6 @@ Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Sup
 > 3. The users is missing a required attach license
 
 ### Option 2, Assign licenses using groups
-
- :::image type="content" source="media/stay-compliant-m365-admin-assign-license-to-group.png" alt-text="Assign license to group in admin.microsoft.com" lightbox="media/stay-compliant-m365-admin-assign-license-to-group.png":::
 
 Go to [https://admin.microsoft.com](https://admin.microsoft.com)
 
@@ -95,6 +93,8 @@ Sign in as a **Global admin** or **License admin**
 5. Assign the license to the group
 
 Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
+
+ :::image type="content" source="media/stay-compliant-m365-admin-assign-license-to-group.png" alt-text="Assign a license to group." lightbox="media/stay-compliant-m365-admin-assign-license-to-group.png":::
 
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, give **Dynamics 365 Finance** first, then **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)** if the group needs both.
