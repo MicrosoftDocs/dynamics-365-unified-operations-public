@@ -53,7 +53,7 @@ Go to [Microsoft 365 admin center](https://admin.cloud.microsoft/)
 
 Sign in as a **Global admin** or **License admin**
 
-1. In the left nav, select **Users → Active users**
+1. In the left nav, select [**Users → Active users**](https://admin.cloud.microsoft/#/users)
 
 2. Click the user's name
 
