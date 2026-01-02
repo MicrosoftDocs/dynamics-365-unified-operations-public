@@ -2,9 +2,9 @@
 title: Product recommendations FAQ
 description: Learn about processes and tools you can use to debug issues related to product recommendations or their results in Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 09/23/2025
+ms.date: 01/02/2026
 ms.topic: faq
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
@@ -19,11 +19,11 @@ ms.custom:
 This article provides information about processes and tools that you can use to debug issues related to [product recommendations](product-recommendations.md) or their results in Microsoft Dynamics 365 Commerce.
 
 > [!IMPORTANT]
-> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued in the near future.
+> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued soon.
 
 ## Best practices
 
-It's very important to utilize the concept of product masters and variants. The sensible grouping of variants to a parent product master helps the list algorithms and service create better models. Additionally, the service can serve just one instance of a product instead of putting all closely related variants in a list. When all closely related variants are put in a list, erroneous or duplicate results can occur.
+It's important to utilize the concept of product masters and variants. The sensible grouping of variants to a parent product master helps the list algorithms and service create better models. Additionally, the service can serve just one instance of a product instead of putting all closely related variants in a list. When all closely related variants are put in a list, erroneous or duplicate results can occur.
 
 ## Why are products missing from my recommendation lists?
 
@@ -42,7 +42,7 @@ Microsoft recommends that you check these steps:
 
 Recommendation lists require a large volume of transactions to produce results. Therefore, it's important that users provide full historical transaction data.
 
-Additionally, products that have no transactions or few transactions typically don't have **People also like** or **Frequently bought together** results, and don't appear in **Trending** or **Best selling** recommendation lists. This situation can often occur for very new products, or for old products that have a small number of purchases. Popular new items will easily overcome this issue.
+Additionally, products that have no transactions or few transactions typically don't have **People also like** or **Frequently bought together** results, and don't appear in **Trending** or **Best selling** recommendation lists. This situation can often occur for new products, or for old products that have a few purchases. Popular new items will overcome this issue.
 
 Microsoft recommends that you follow these steps:
 1. **Make sure that the product meets the recommendation criteria for that list.** For more information about product recommendation parameters, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
@@ -50,7 +50,7 @@ Microsoft recommends that you follow these steps:
 
 ## Can I remove a product but still see it in the store?
 
-You can adjust lists that are algorithmically generated if a business need arises. However, if a product is removed from a recommendation list, the product will remain discoverable in the store. For more information about how to modify product recommendation results, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+You can adjust lists that are algorithmically generated if a business need arises. However, if a product is removed from a recommendation list, the product remains discoverable in the store. For more information about how to modify product recommendation results, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 If you must block an item from being discovered in the store, you must change the **Item assortments** value to **Exclude**.
 
@@ -60,7 +60,7 @@ For information about how to add product recommendation pages to your e-commerce
 
 ## How do I enable recommendations on POS?
 
-After enabling product recommendations, you will need to add the recommendations panel to the control POS screen. For more information, see [Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md).
+After enabling product recommendations, you must add the recommendations panel to the control POS screen. Learn more in [Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md).
 
 ## Additional resources
 
