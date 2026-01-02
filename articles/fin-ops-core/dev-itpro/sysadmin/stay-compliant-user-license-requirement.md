@@ -63,13 +63,13 @@ Sign in as a **Global admin** or **License admin**
 
 Example: **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
+✅ Done. The license applies after a short propagation delay of up to 1 hour.
+
  :::image type="content" source="media/stay-compliant-m365-admin-assign-user-license.png" alt-text="Assign a license to a user." lightbox="media/stay-compliant-m365-admin-assign-user-license.png":::
 
 >[!Note]
 > Follow Base‑then‑Attach sequencing: for example, assign **Dynamics 365 Finance** first.
 > Then assign the attach license (for example **Dynamics 365 Supply Chain Management Attach to Qualifying Dynamics 365 Base Offer (Attach)**) if the user needs both.
-
-✅ Done. The license applies after a short propagation delay of up to 1 hour.
 
 >[!Tip]
 > If the user still cannot get in, it's almost always one of three things:
@@ -95,6 +95,8 @@ Sign in as a **Global admin** or **License admin**
 
 Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Supply Chain Management**, **Dynamics 365 Team Members**, etc.
 
+✅ Done. The license applies after a short propagation delay of up to 1 hour.
+
  :::image type="content" source="media/stay-compliant-m365-admin-assign-license-to-group.png" alt-text="Assign a license to group." lightbox="media/stay-compliant-m365-admin-assign-license-to-group.png":::
 
 >[!Note]
@@ -104,12 +106,12 @@ Example:  **Dynamics 365 Commerce**, **Dynamics 365 Finance**, **Dynamics 365 Su
 >[!Note]
 >Assigning a license:
 >
-> ✅ Allows the user to legally access the product
+> ✅ **Allows the user to legally access the product**
 >
-> ❌ Does not grant permissions inside Dynamics
+> ❌ **Does not grant permissions inside Dynamics**
 >
-> You still must:
-> Assign security roles in Dynamics 365
+> **You still must:**
+> **[Assign security roles to the user or group in Dynamics 365](/dynamics365/fin-ops-core/fin-ops/sysadmin/assign-users-security-roles)**
 
 ## License requirement per role
 
