@@ -13,7 +13,7 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 This article describes how to configure withholding taxes that apply when you post a vendor invoice that uses negative tax codes.
 Several LATAM Expansion reports use these types of withholdings in many countries and regions, such as Colombia, Chile, and Venezuela.
