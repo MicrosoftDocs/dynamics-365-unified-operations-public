@@ -85,7 +85,13 @@ In the **User Role Licenses** view, each row corresponds to a user and displays 
 
 - **License** - The license needed for that user's assigned security roles. The system looks at all the security objects in the assigned roles and determines which licenses covers the most security objects in the role. 
 
-- **License quantity** - How many licenses the user needs. Typically this is 1 (one base license). A number higher than one means the user needs one or more additional attach licenses. For example, two rows with a license quantity equaling 1 in each row indicate the user needs their base license plus one attach license, three rows with license quantity equaling 1 in each row indicate the user needs their base license plus two attach licenses. 
+- **License quantity** - License quantity shows how many licenses a user needs. Any row marked with 1 means that license is required. In most cases, a user needs **one base license**. If more than one row is marked with 1, that means the user also needs **attach licenses**:
+- **1 row marked 1 → base license only****
+- **2 rows marked 1 → base license + 1 attach license**
+- **3 rows marked 1 → base license + 2 attach licenses**
+
+You may see multiple rows for the same SKU, but only **one row per SKU** will be marked with 1 to indicate it is required. The total number of rows marked 1 determines how many base plus attach licenses are needed.
+
 
 >[!Tip] 
 > For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Excel.
@@ -158,6 +164,19 @@ With this information, you can make informed decisions-such as removing that pri
 
 In the following example, a user, *Cade.Armand.Olander*, is assigned three security roles: **Accountant**, **Retail Store Manager**, and **System User**. 
 
+**What the License Usage Summary shows**
+- The **Accountant** role drives a **Finance** license requirement. Because **Finance** is the highest required license level for this user, it becomes the user's **required base license**.
+
+- The **Retail Store Manager** role (which on its own requirae **Operations – Activity**) does **not** increase the total license count in this case, because the **Finance** base license already covers the required security objects needed for the user's lower-tier roles.
+
+- The **System User** role does not add additional license requirements.
+
+**Result**: The user needs **only one Finance license**.
+
+**Action to take (cost + compliance)**:
+If the user's job responsibilities don't require Finance-level functionality, consider removing (or replacing) the **higher-privilege role** (Accountant) so the user may qualify for a **lower-cost license** aligned to their actual duties.
+
+
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
 In this example, the **License Usage Summary report** shows the following for *Cade.Armand.Olander*: 
@@ -187,7 +206,7 @@ In this example, the **Role License** tab, with the selected **Accountant** role
 
 In this example, we can draw a few conclusions: 
 
-- The user must be assigned a **Finance** license in [Microsoft 365 admin portal](https://admin.microsoft.com) to ensure their access to the system. 
+- The user must be assigned a **Finance** license in [Microsoft 365 admin portal](https://admin.cloud.microsoft/?#/licenses) to ensure their access to the system. 
 - If the user's performed business functions do not actually require a **Finance** license, you might consider removing the **Accountant** role (and perhaps assigning a more appropriate role) so that the user could be fully served by a lower license like **Operations - Activity**. This would reduce licensing requirements and would limit the user's access to only what they need. 
 - If the user truly needs both roles **Accountant** and **Retail Store Manager**, ensure they're assigned a **Finance** license. In this example, an **Operations - Activity** license isn't needed because a **Finance** license supersedes it for this user's roles. 
 
