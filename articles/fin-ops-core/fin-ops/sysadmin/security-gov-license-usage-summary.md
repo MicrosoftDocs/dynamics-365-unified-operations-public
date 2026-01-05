@@ -200,11 +200,11 @@ In this example, the **License Usage Summary report** shows the following for *C
 
 In this example, for this user, *Cade.Armand.Olander*, the **Finance** license is the necessary base license due to the high-level permissions of the **Accountant** security role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so a second license is not required. 
 
-### Role Licenses tab
+### Role Licenses view
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
-In this example, the **Role License** tab, with the selected **Accountant** role, shows the **Accountant** role is configured with *3362* **Entitled** security objects contributing to the requirement of a **Finance** license. 
+In this example, the **Role License** view, with the selected **Accountant** role, shows the **Accountant** role is configured with *3362* **Entitled** security objects contributing to the requirement of a **Finance** license. 
 
 >[!Tip]
 > For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
