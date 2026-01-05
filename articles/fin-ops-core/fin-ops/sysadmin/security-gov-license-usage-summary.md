@@ -81,7 +81,7 @@ For regular license reviews, focus on the **User Role Licenses** and **Role Lice
 
 In the **User Role Licenses** view, each row corresponds to a user and displays the licenses that the user requires, given all the security roles assigned to them. Key columns in this view: 
 
-- **User** - The user's ID whose license requirements you're examining. 
+- **User ID** - The user's EntraID name whose license requirements you're examining. 
 
 - **License** - The license needed for that user's assigned security roles. The system looks at all the security objects in the assigned roles and determines which licenses covers the most security objects in the role. 
 
