@@ -84,9 +84,8 @@ You can import exchange rates from the exchange rate providers source and add th
 | **Override existing exchange rates**   | This checkbox manages the update of the existing exchange rate for a currency pair when the exchange rate for a specific date already exists. If you don't select this checkbox, the exchange rate for the specific dates is not imported if another exchange rate already exists.                                                                                       |
 | **Prevent import on national holiday** | This checkbox manages the import of the exchange rate for public holiday's date. For example, if you select this checkbox and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
 | **Rate from the previous day** | This checkbox is only available for the provider, *Central Bank of Europe*. Select this checkbox to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the checkbox is selected. Clear this checkbox to import the currency exchange rate that is published on the same working day. This option might not be available for some providers.  
-
 >[!NOTE]
-> The import process loads the rates from the previous day and records them for the current day.
+>The import process loads the rates from the previous day and records them for the current day.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
