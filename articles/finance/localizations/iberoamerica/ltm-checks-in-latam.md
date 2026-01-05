@@ -4,7 +4,7 @@ description: Learn how to use LATAM functionality for checks, including prerequi
 author: Cpicon85
 ms.author: v-cpicon 
 ms.topic: how-to
-ms.date: 10/20/2023 
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Use LATAM functionality for checks 
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article explains how to use LATAM functionality for specific check operations, such as the accrual of your company's own checks, deposits of third-party checks, cancellations, and re-entries.
 
@@ -28,13 +30,13 @@ Before you complete the procedures in this article, the following prerequisites 
 Follow these steps to accrue checks that are provided by your company.
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**.
-2. On the Action Pane, select **New**.
-3. In the **Name** field, select an accrual journal.
-4. On the Action Pane, select **Lines**.
-5. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
-6. On the **Payment methods** page, in the **Action** field, select **Accrual action**.
-7. In the **Document class Id** field, select a document class ID for the check type.
-8. Select one or more checks, and then close the page.
+1. On the Action Pane, select **New**.
+1. In the **Name** field, select an accrual journal.
+1. On the Action Pane, select **Lines**.
+1. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+1. On the **Payment methods** page, in the **Action** field, select **Accrual action**.
+1. In the **Document class Id** field, select a document class ID for the check type.
+1. Select one or more checks, and then close the page.
 
 > [!NOTE]
 > After you close the page, confirm the selection in the verification message. After you select checks on the **Payment methods** page, lines are automatically created. The number of lines matches the number of selected checks.
@@ -50,14 +52,14 @@ If the check was previously listed as pending with the vendor, it's now settled 
 If you must cancel (void) checks that are provided by your company, regardless of whether they're accrued, follow these steps:
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**.
-2. On the Action Pane, select **New**.
-3. In the **Name** field, select a general journal.
-4. On the Action Pane, select **Lines**.
-5. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
-6. On the **Payment methods** page, in the **Action** field, select **Cancelation**.
-7. In the **Document class Id** field, select a document class ID for the check type.
-8. Select one or more checks in either the **Open book** section (for the pending accrual of issued checks) or the **History book** section (for accrued checks).
-9. Close the page.
+1. On the Action Pane, select **New**.
+1. In the **Name** field, select a general journal.
+1. On the Action Pane, select **Lines**.
+1. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+1. On the **Payment methods** page, in the **Action** field, select **Cancelation**.
+1. In the **Document class Id** field, select a document class ID for the check type.
+1. Select one or more checks in either the **Open book** section (for the pending accrual of issued checks) or the **History book** section (for accrued checks).
+1. Close the page.
 
 > [!NOTE]
 > After you close the page, confirm the selection in the verification message. After you select checks on the **Payment methods** page, lines are automatically created. The number of lines matches the number of selected checks.
@@ -69,8 +71,8 @@ Follow these steps to deposit checks from customers.
 ### Configure the LATAM extension from a bank account
 
 1. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
-2. Select a bank account.
-3. In the **LATAM** extension, in the **Counterpart Behavior** field, select an option:
+1. Select a bank account.
+1. In the **LATAM** extension, in the **Counterpart Behavior** field, select an option:
 
    - To record the consolidated deposit of multiple checks, select **Consolidated**.
    - To record the individual deposit of a single check, select **Individual**.
@@ -78,13 +80,13 @@ Follow these steps to deposit checks from customers.
 ### Post a check deposit
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**.
-2. On the Action Pane, select **New**.
-3. In the **Name** field, select a bank deposit journal.
-4. On the Action Pane, select **Lines**.
-5. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
-6. On the **Payment methods** page, in the **Action** field, select **Exit action**.
-7. In the **Document class Id** field, select the document class ID of the customer check.
-8. Select one or more checks, and then close the page.
+1. On the Action Pane, select **New**.
+1. In the **Name** field, select a bank deposit journal.
+1. On the Action Pane, select **Lines**.
+1. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+1. On the **Payment methods** page, in the **Action** field, select **Exit action**.
+1. In the **Document class Id** field, select the document class ID of the customer check.
+1. Select one or more checks, and then close the page.
 
 > [!NOTE]
 > After you close the page, confirm the selection in the verification message. After you select checks on the **Payment methods** page, lines are automatically created. The number of lines matches the number of selected checks.
@@ -94,14 +96,14 @@ Follow these steps to deposit checks from customers.
 If you must re-enter customer checks, follow these steps:
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**.
-2. On the Action Pane, select **New**.
-3. In the **Name** field, select a general journal.
-4. On the Action Pane, select **Lines**.
-5. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
-6. On the **Payment methods** page, in the **Action** field, select **Re-entry action**.
-7. In the **Document class Id** field, select the document class ID of the customer check.
-8. Select one or more checks in either the **Open book** section (for customer checks that haven't been deposited) or the **History book** section (for checks that have been deposited or given to vendors).
-9. Close the page.
+1. On the Action Pane, select **New**.
+1. In the **Name** field, select a general journal.
+1. On the Action Pane, select **Lines**.
+1. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+1. On the **Payment methods** page, in the **Action** field, select **Re-entry action**.
+1. In the **Document class Id** field, select the document class ID of the customer check.
+1. Select one or more checks in either the **Open book** section (for customer checks that haven't been deposited) or the **History book** section (for checks that have been deposited or given to vendors).
+1. Close the page.
 
 > [!NOTE]
 > After you close the page, confirm the selection in the verification message. After you select checks on the **Payment methods** page, lines are automatically created. The number of lines matches the number of selected checks.

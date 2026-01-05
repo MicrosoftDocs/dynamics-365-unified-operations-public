@@ -4,7 +4,7 @@ description: Learn about the vendor set configuration for Latin America, includi
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Vendor sets for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 You can define which document classes are allowed in transactions for vendors assigned to this vendor set. Additionally, you can predefine default document classes for each transaction type.
 
@@ -44,3 +46,5 @@ To set up a vendor set, follow these steps:
     | Value document       | Payment line in a journal.                 |
 
 1. On the Action Pane, select **Save**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

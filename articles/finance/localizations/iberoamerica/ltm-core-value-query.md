@@ -4,12 +4,16 @@ description: Learn about the Value query for Latin America, including prerequisi
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Value query for Latin America
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 From the **Value query** page, you can review the state of any value type document class that's posted in a transaction.
 
@@ -20,8 +24,8 @@ Create a value type document class, and use it in a transaction with an action.
 ## Review values
 
 1. Go to **Accounts payable** \> **Inquiries and reports** \> **LATAM** \> **Value query**.
-2. In the **Media type** and **Document class** fields, enter a value.
-3. On the Action Pane, select **Apply filter** to show the documents in the query results.
+1. In the **Media type** and **Document class** fields, enter a value.
+1. On the Action Pane, select **Apply filter** to show the documents in the query results.
 
 ## Optional query filters
 
@@ -40,3 +44,5 @@ You can use more fields to narrow down the documents in the query results.
 | To due date          | Select a date to filter the final due date of the document.                |
 
 After you select the required values in the fields, select **Apply** to filter and show the transactions.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

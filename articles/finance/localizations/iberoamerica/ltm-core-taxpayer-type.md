@@ -4,7 +4,7 @@ description: Learn about the taxpayer type configuration for Latin America, incl
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak 
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Taxpayer types for Latin America 
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 You can set up the types of tax-responsible entities that the company operates with. These entities can include customers, vendors, employees, and even the company itself.
  
@@ -25,13 +27,13 @@ The following prerequisites must be met before you can set up taxpayer types for
 ## Set up a taxpayer type for Latin America
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**.
-2. In the **General** section, in the **Taxpayer type** field, enter the register's code.
-3. In the **Description** field, enter an explanation of the taxpayer type.
+1. In the **General** section, in the **Taxpayer type** field, enter the register's code.
+1. In the **Description** field, enter an explanation of the taxpayer type.
 
     > [!NOTE]
     > The **Taxpayer type** and **Description** fields are required.
 
-4. In the **Settings** section, set the options as required to complete the configuration according to the characteristics of the taxpayer type.
+1. In the **Settings** section, set the options as required to complete the configuration according to the characteristics of the taxpayer type.
 
     | Option                                  | Description |
     |-----------------------------------------|-------------|
@@ -43,21 +45,23 @@ The following prerequisites must be met before you can set up taxpayer types for
     | Mandatory country identification number | Set this option to **Yes** to make the **Country identification number** field required in the entity configuration. |
     | Mandatory state identification number   | Set this option to **Yes** to make the **State identification number** field required in the entity configuration. |
 
-5. In the **Document types** grid, add the tax Id types that are associated with the taxpayer type according to the country/regions's legislation.
+1. In the **Document types** grid, add the tax Id types that are associated with the taxpayer type according to the country/regions's legislation.
 
     > [!NOTE]
     > This configuration and the tax ID type configuration in the country/region address book will let you filter or directly assign the tax ID type in the customer or vendor record.
 
-6. In the **Document class letter** grid, select the IDs that the taxpayer type uses in transactions.
-7. Select **Save**.
+1. In the **Document class letter** grid, select the IDs that the taxpayer type uses in transactions.
+1. Select **Save**.
 
 ## Add the fiscal codification provided by the fiscal authorities
 
 You can use the **Tax application** option to add the fiscal codification that's provided by the fiscal authorities.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**.
-2. On the Action Pane, select **Tax application**.
-3. Select **New** to add a line to the grid.
-4. In the **Tax application Id** field, select a value.
-5. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the taxpayer type.
-6. Select **Save**.
+1. On the Action Pane, select **Tax application**.
+1. Select **New** to add a line to the grid.
+1. In the **Tax application Id** field, select a value.
+1. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the taxpayer type.
+1. Select **Save**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

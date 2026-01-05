@@ -2,7 +2,7 @@
 title: Sales authorization code for Latin America
 description: Learn how to configure and use the Sales CA functionality for Latin America.
 author: Fhernandez0088
-ms.date: 02/12/2025
+ms.date: 01/05/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -10,6 +10,10 @@ ms.author: v-federicohe
 ---
 
 # Sales authorization code for Latin America
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article explains how to configure and use the sales authorization code (Sales CA) functionality for Latin America. This functionality lets you use the field for the Sales CA number in the **LATAM** section of purchase and sales invoices to assign an additional number to a selected invoice.
 
@@ -62,3 +66,5 @@ Learn more in [Document class sales point for Latin America](ltm-core-document-c
 ### Automatically assign a Sales CA number to a sales or purchase invoice
 
 When you post a purchase or sales invoicee, in the **LATAM** section, select the document class and sales point that are configured in the Sales CA number setup. The **CA number** and **CA due date** fields should automatically be set to the Sales CA number and due date that you previously configured.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

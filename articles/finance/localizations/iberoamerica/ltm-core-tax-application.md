@@ -4,7 +4,7 @@ description: Learn about the tax application configuration for Latin America, in
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Tax application for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 You can register fiscal codes to identify finance entities on the file reports that are required by fiscal authorities.
 
@@ -22,10 +24,10 @@ There are no prerequisites for the creation of fiscal codes. After you create fi
 ## Set up a tax application code for Latin America
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application**.
-2. On the Action Pane, select **New**.
-3. In the **Tax application Id.** field, enter a unique code to identify the record.
-4. Enter a description of the tax application.
-5. Select **Save**.
+1. On the Action Pane, select **New**.
+1. In the **Tax application Id.** field, enter a unique code to identify the record.
+1. Enter a description of the tax application.
+1. Select **Save**.
 
 ## Access the tax application configuration
 

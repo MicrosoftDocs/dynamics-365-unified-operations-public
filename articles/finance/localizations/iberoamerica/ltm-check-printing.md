@@ -4,7 +4,7 @@ description: Learn how print payment checks for Latin America, including prerequ
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 10/03/2023
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Print payment checks
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article explains the configuration that's required to set up and print a payment check.
 
@@ -23,9 +25,9 @@ Before you complete the steps in this article to print payment checks, the follo
 - The country/region-specific LATAM feature and the general LATAM feature must be enabled.
 - You must download the following Electronic reporting (ER) configurations from the Global repository:
 
-    - Payment check model
-    - Payment check model LATAM
-    - Check Printing Report
+  - Payment check model
+  - Payment check model LATAM
+  - Check Printing Report
 
     To learn more about ER configurations, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -36,10 +38,10 @@ Before you complete the steps in this article to print payment checks, the follo
 Follow these steps to print checks.
 
 1. Go to **Accounts payable** \> **Inquiries and Reports** \> **LATAM** \> **Checks** \> **Check printing**.
-2. In the **Document class** field, select a value.
-3. In the **Salespoint** field, select a value.
-4. In the **From voucher number** and **To voucher number** fields, select a specific range of vouchers
-5. Select the **Needs reprint** checkbox to show previously printed checks. The checks are shown in the **General** view.
-6. Select a check, and print the report.
+1. In the **Document class** field, select a value.
+1. In the **Salespoint** field, select a value.
+1. In the **From voucher number** and **To voucher number** fields, select a specific range of vouchers
+1. Select the **Needs reprint** checkbox to show previously printed checks. The checks are shown in the **General** view.
+1. Select a check, and print the report.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

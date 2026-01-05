@@ -1,1 +1,1 @@
-_**The contents of this article don't apply to:** Brazil, and Mexico_
+_**The contents of this article doesn't apply to:** Brazil, and Mexico_

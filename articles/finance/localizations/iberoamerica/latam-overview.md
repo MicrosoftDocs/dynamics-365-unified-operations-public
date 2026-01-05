@@ -4,7 +4,7 @@ description: Access an overview of functionality specific to Latin American, inc
 author: EvgenyPopovMBS
 ms.author: evgenypopov 
 ms.topic: overview
-ms.date: 08/27/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak  
 ---
@@ -54,3 +54,5 @@ The following articles include information about working with Finance in Latin A
 - [Vendor set configuration](ltm-core-vendors-set.md)
 - [Address setup for Latin America](ltm-core-address-setup.md)
 - [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

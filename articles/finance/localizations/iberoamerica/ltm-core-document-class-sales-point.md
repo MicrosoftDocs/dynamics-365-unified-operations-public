@@ -4,7 +4,7 @@ description: Learn about the configuration of additional settings for sales poin
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Document class sales point for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 On the **Document class sales point** page, you can add a configuration that has a sales point, account type, and sequence number to any document class.
 
@@ -26,8 +28,8 @@ The following prerequisites must be met before you can set up additional setting
 ## Set up sales point additional settings for Latin America
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point**.
-2. Select **New** to create a record.
-3. In the **General** section, update the following fields.
+1. Select **New** to create a record.
+1. In the **General** section, update the following fields.
 
     | Field                | Description                  |
     |----------------------|------------------------------|
@@ -49,7 +51,7 @@ Select **Sales CA** to access the sales authorization code configuration for the
 Follow these steps to set up a sales authorization code.
 
 1. On the **Document class sales point** page, on the Action Pane, select **Sales CA**.
-2. Select **New**, and set the following fields.
+1. Select **New**, and set the following fields.
 
     | Field                   | Description                                                               |
     |-------------------------|---------------------------------------------------------------------------|
@@ -59,6 +61,6 @@ Follow these steps to set up a sales authorization code.
     | From voucher number     | Enter the minimum document number that uses the sales authorization code. |
     | To voucher number       | Enter the maximum document number that uses the sales authorization code. |
 
-3. Select **Save**.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

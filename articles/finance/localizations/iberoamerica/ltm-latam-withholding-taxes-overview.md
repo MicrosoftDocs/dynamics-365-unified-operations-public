@@ -2,7 +2,7 @@
 title: LATAM withholding taxes overview
 description: Provides information about LATAM Withholding taxes functionality.
 author: Fhernandez0088
-ms.date: 10/07/2025
+ms.date: 01/05/2026
 ms.topic: overview
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -11,7 +11,9 @@ ms.author: v-federicohe
 
 # LATAM withholding taxes overview 
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article provides information about Latin American (LATAM) withholding functionality in Dynamics 365 Finance. Tax withholdings are amounts that you deduct from payments to vendors or collect from customers in compliance with local tax regulations. These amounts can apply to income tax, value-added tax (VAT), or other local taxes.
 

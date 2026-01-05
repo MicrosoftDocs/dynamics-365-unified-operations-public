@@ -4,7 +4,7 @@ description: Learn about the process of posting sales invoices for Latin America
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Sales invoice posting for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 You can add the information that's required for Latin American countries/regions when you post an invoice in an extended **LATAM** section to the following documents:
 
@@ -38,42 +40,42 @@ Before you post an invoice, the following prerequisites must be met:
 Follow these steps to post a sales invoice from a sales order that includes LATAM information.
 
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a sales order.
-3. Select a customer, and enter the appropriate line items.
-4. Save the new sales order, and generate an invoice.
-5. In the **LATAM** section of the invoice, select a document class ID, and complete the remaining required fields according to the document class configuration.
-6. Select or enter a sales point prefix.
-7. Complete the document number.
-8. Select **OK** to post the transaction.
+1. Create a sales order.
+1. Select a customer, and enter the appropriate line items.
+1. Save the new sales order, and generate an invoice.
+1. In the **LATAM** section of the invoice, select a document class ID, and complete the remaining required fields according to the document class configuration.
+1. Select or enter a sales point prefix.
+1. Complete the document number.
+1. Select **OK** to post the transaction.
 
 ## Post a free text invoice
 
 Follow these steps to post a free text invoice that includes LATAM information.
 
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a free text invoice.
-3. Select a customer, and add invoice lines that have the corresponding tax codes and prices.
-4. On the **Header** tab, in the **LATAM** section, in the **Document class Id.** field, select a value.
-5. Select a sales point prefix.
-6. Complete the document number if it's required by the document class configuration.
-7. Select the document date and due date.
-8. Complete the **Additional data** fields as required by the document class configuration.
-9. Post the invoice.
+1. Create a free text invoice.
+1. Select a customer, and add invoice lines that have the corresponding tax codes and prices.
+1. On the **Header** tab, in the **LATAM** section, in the **Document class Id.** field, select a value.
+1. Select a sales point prefix.
+1. Complete the document number if it's required by the document class configuration.
+1. Select the document date and due date.
+1. Complete the **Additional data** fields as required by the document class configuration.
+1. Post the invoice.
 
 ## Post a project invoice
 
 Follow these steps to post a project invoice that includes LATAM information.
 
 1. Go to **Project management and accounting** \> **Projects** \> **All projects**.
-2. Select a project, and then select **Project invoice proposals**.
-3. Create an invoice proposal.
-4. Select a project and a transaction to post, and then select **OK**.
-5. On the Action Pane, select **Post**.
-6. On the **Posting** page, on the **LATAM** tab, in the **Document class Id.** field, select a value.
-7. Select a sales point prefix.
-8. Enter the document number if it's required by the document class configuration.
-9. Select the document date and due date.
-10. Complete the **Additional data** fields as required by the document class configuration.
-11. Select **OK** to post the invoice.
+1. Select a project, and then select **Project invoice proposals**.
+1. Create an invoice proposal.
+1. Select a project and a transaction to post, and then select **OK**.
+1. On the Action Pane, select **Post**.
+1. On the **Posting** page, on the **LATAM** tab, in the **Document class Id.** field, select a value.
+1. Select a sales point prefix.
+1. Enter the document number if it's required by the document class configuration.
+1. Select the document date and due date.
+1. Complete the **Additional data** fields as required by the document class configuration.
+1. Select **OK** to post the invoice.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

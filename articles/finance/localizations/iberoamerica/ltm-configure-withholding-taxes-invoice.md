@@ -2,7 +2,7 @@
 title: Configure withholding taxes at invoice posting
 description: Learn how to configure the withholding taxes to apply to vendor invoices.
 author: Fhernandez0088
-ms.date: 10/07/2025
+ms.date: 01/05/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -11,7 +11,9 @@ ms.author: v-federicohe
 
 # Configure withholding taxes at invoice posting
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article describes how to configure withholding taxes that apply when you post a vendor invoice that uses negative tax codes.
 Several LATAM Expansion reports use these types of withholdings in many countries and regions, such as Colombia, Chile, and Venezuela.

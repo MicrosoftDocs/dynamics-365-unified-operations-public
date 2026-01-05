@@ -4,7 +4,7 @@ description: Learn about the tax ID type configuration for Latin America, includ
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Tax ID types for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 Use this configuration to enter valid tax ID types in each country/region and identify the entities that the company operates with. These entities can include customers, vendors, contacts, banks, and employees.
 
@@ -22,9 +24,9 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
 ## Set up a tax ID type
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
-2. In the **Overview** section, in the **Tax ID type** field, enter the register code.
-3. In the **Description** field, enter a brief description of the tax ID type.
-4. In the **Settings** section, in the **Mask validation method** field, select one of the following validation methods.
+1. In the **Overview** section, in the **Tax ID type** field, enter the register code.
+1. In the **Description** field, enter a brief description of the tax ID type.
+1. In the **Settings** section, in the **Mask validation method** field, select one of the following validation methods.
 
     | Method   | Description |
     |----------|-------------|
@@ -32,8 +34,8 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
     | Advanced | Use a complete mask with SQL sentences to define each character. The mask can include alphabetic characters (A–Z), numeric characters (0–9), and alphanumeric characters (A–Z, 0–9). Symbols such as hyphens (-) and slashes (/) can also be added to the mask. |
     | None     | The mask isn't validated, and the **Mask** and **Length** fields can't be edited. |
 
-5. In the **Mask** field, enter the mask format. The **Length** field is automatically set to the number of characters in the **Mask** value.
-6. In the **Verification algorithm** field, select one of the following options.
+1. In the **Mask** field, enter the mask format. The **Length** field is automatically set to the number of characters in the **Mask** value.
+1. In the **Verification algorithm** field, select one of the following options.
 
     | Verification algorithm                                                    | Description |
     |---------------------------------------------------------------------------|-------------|
@@ -47,7 +49,7 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
     | RUC verification – Ecuador – Natural person                               | The verification algorithm verifies that the tax ID is valid for Ecuador. |
     | RUT verification – Uruguay                                                | The verification algorithm verifies that the tax ID is valid for Uruguay. |
 
-7. Set the following options according to the characteristics of the tax ID type.
+1. Set the following options according to the characteristics of the tax ID type.
 
     | Field                 | Description |
     |-----------------------|-------------|
@@ -55,15 +57,17 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
     | State document type   | Set this option to **Yes** to specify that the tax ID type is at the state level. |
     | Foreign document type | Set this option to **Yes** to specify that the tax ID type can be selected in the countries/regions' address configurations for all foreign countries/regions. |
 
-9. On the Action Pane, select **Save** to finish the configuration and save the record.
+1. On the Action Pane, select **Save** to finish the configuration and save the record.
 
 ## Add the fiscal codification provided by the fiscal authorities
 
 You can use the **Tax application** option to add the fiscal codification that's provided by the fiscal authorities.
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Taxpayer type**.
-2. On the Action Pane, select **Tax application**.
-3. Select **New** to add a line to the grid.
-4. In the **Tax application Id** field, select a value.
-5. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the tax ID type.
-6. Select **Save**.
+1. On the Action Pane, select **Tax application**.
+1. Select **New** to add a line to the grid.
+1. In the **Tax application Id** field, select a value.
+1. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the tax ID type.
+1. Select **Save**.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

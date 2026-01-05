@@ -4,14 +4,16 @@ description: Learn how to set up predefined sales points per user to streamline 
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 12/10/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Set up predefined sales point per user
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article explains how to set up a predefined sales point for each user. This feature ensures that when a user posts a document with LATAM information and has multiple sales points available, the form selects the sales point assigned to the user by default.
 

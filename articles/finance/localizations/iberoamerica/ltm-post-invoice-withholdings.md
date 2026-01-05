@@ -2,7 +2,7 @@
 title: Post vendor invoices with withholding taxes
 description: Learn how to post vendor invoices with withholding taxes.
 author: Fhernandez0088
-ms.date: 10/07/2025
+ms.date: 01/05/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -11,7 +11,9 @@ ms.author: v-federicohe
 
 # Post vendor invoices with withholding taxes
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../includes/does-not-apply-to.md)]
 
 This article explains how to post vendor invoices with tax withholdings. Several LATAM Expansion reports use these types of withholdings in many countries and regions, such as Colombia, Chile, and Venezuela.
 
