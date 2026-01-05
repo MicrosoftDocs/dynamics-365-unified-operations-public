@@ -43,7 +43,7 @@ The Finance insights update delivers four key benefits:
 
 1. Enhanced reliability and scalability:
    - Automatic retry logic for failed transformations
-   - Data validation ensuring consistency between Dynamics 365 finance and operations and Business performance analytics
+   - Data validation ensuring consistency between Dynamics 365 Finance and operations and Business performance analytics
    - Data pipeline health monitoring and alerting
    - Self-healing with automatic recovery from transient failures
    - Scalability improvements:
@@ -52,13 +52,13 @@ The Finance insights update delivers four key benefits:
      - Optimized for enterprises with many legal entities
 
 1. The Business performance analytics backend provides a modern, extensible platform that enables Microsoft to deliver new Finance insights features more rapidly.
-   - Dimensional data model covering full order-to-cash value chain and beyond
+   - Dimensional data model covering full Order-to-Cash value chain and beyond
    - Extensible design with new dimensions and facts added quarterly
    - Mature infrastructure using proven Business performance analytics capabilities
 
 1. Seamless integration with Business performance analytics - If you use or plan to use Business performance analytics, Finance insights now shares the same data foundation, eliminating data inconsistencies and enabling unified analysis.
    - Finance insights predictions based on same Business performance analytics analytical models
-   - Unified order-to-cash facts and dimensions
+   - Unified Order-to-Cash facts and dimensions
    - Synchronized data refresh schedules
 
 ### Migration process
