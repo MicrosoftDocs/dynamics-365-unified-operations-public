@@ -166,6 +166,9 @@ Examining this detailed breakdown allows you to pinpoint the exact privileges or
 
 With this information, you can make informed decisions-such as removing that privilege from the role for users who don't need it, or knowing that anyone with that role should also be assigned the requisite attach license. 
 
+> [!IMPORTANT]
+> Many out-of-the-box securable objects include read-only entry points. Read access to these standard security objects requires at least a **[Dynamics 365 Team Members](https://admin.cloud.microsoft/?#/licensedetailpage/8e7a3d30-d97d-43ab-837c-d7701cef83dc)** license. Review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) for additional information.
+
 >[!Tip]
 > You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
 
@@ -184,7 +187,6 @@ In the following example, a user, *Cade.Armand.Olander*, is assigned three secur
 
 **Action to take (cost + compliance)**:
 If the user's job responsibilities don't require Finance-level functionality, consider removing (or replacing) the **higher-privilege role** (Accountant) so the user may qualify for a **lower-cost license** aligned to their actual duties.
-
 
 :::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
 
