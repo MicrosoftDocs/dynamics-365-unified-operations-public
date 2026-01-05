@@ -85,7 +85,7 @@ Finance insights 1.2.x:
 - Better performance and reliability
 
 ## How does Business performance analytics integration work?
-Business performance analytics syncs data from Dynamics 365 Finance to Dataverse automatically. Finance insights 1.2.x reads from Business performance analytics's Dataverse tables instead Azure Data Lake.
+Business performance analytics syncs data from Dynamics 365 Finance to Dataverse automatically. Finance insights 1.2.x reads from Business performance analytics's Dataverse tables instead of Azure Data Lake.
 
 ## What Business performance analytics components does Finance insights use?
 Finance insights reads from standard Business performance analytics analytical entities for general ledger, customer transactions, and other financial data. Business performance analytics maintains these tables automatically as it syncs from Dynamics 365 Finance.
