@@ -200,7 +200,7 @@ In this example, the **License Usage Summary report** shows the following for *C
 
 In this example, for this user, *Cade.Armand.Olander*, the **Finance** license is the necessary base license due to the high-level permissions of the **Accountant** security role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so a second license is not required. 
 
-### Role Licenses view
+### Role License view for Example
 
 :::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
 
@@ -216,7 +216,7 @@ In this example, the **Role License** view, with the selected **Accountant** rol
 
 In this example, we can draw a few conclusions: 
 
-- The user must be assigned a **Finance** license in [Microsoft 365 admin portal](https://admin.cloud.microsoft/?#/licenses) to ensure their access to the system. 
+- The user must be assigned a **Finance** license in [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses) to ensure their access to the system. 
 - If the user's performed business functions do not actually require a **Finance** license, you might consider removing the **Accountant** role (and perhaps assigning a more appropriate role) so that the user could be fully served by a lower license like **Operations - Activity**. This would reduce licensing requirements and would limit the user's access to only what they need. 
 - If the user truly needs both roles **Accountant** and **Retail Store Manager**, ensure they're assigned a **Finance** license. In this example, an **Operations - Activity** license isn't needed because a **Finance** license supersedes it for this user's roles. 
 
