@@ -75,7 +75,7 @@ Within this workspace, you find multiple tabs that provide different views:
 Each of these views helps you analyze license requirements from a different angle. 
 For regular license reviews, focus on the **User Role Licenses** and **Role Licenses** tabs. 
 
-## Understanding License Summary report
+## Understanding License Usage Summary
 
 :::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commcer licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
 
@@ -96,7 +96,7 @@ You may see multiple rows for the same SKU, but only **one row per SKU** will be
 >[!Tip] 
 > For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Microsoft Excel.
 
-### How to use the User License Summary view
+### How to use the License Usage Summary view
 
 - **Verify expected licenses** : Check that each user's licenses requirement match what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses). 
 
