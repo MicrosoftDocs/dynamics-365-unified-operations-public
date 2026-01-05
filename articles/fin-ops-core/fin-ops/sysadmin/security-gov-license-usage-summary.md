@@ -117,7 +117,7 @@ The **Role Licenses** view highlights the license requirements for each security
 
 Key columns in the **Role Licenses** view: 
 
-- **Security Role** - Name of the security role (for example, Accounts payable clerk). 
+- **Security Role** - Name of the security role (for example, Accountant). 
 
 - **SKU Name** - The lowest-level Dynamics 365 license that covers all configured security objects in the role. If the role's permissions include any function that requires a higher license, that higher license with the calculated **Entitled** security objects is shown. 
 
