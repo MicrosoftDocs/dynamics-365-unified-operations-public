@@ -75,7 +75,7 @@ Within this workspace, you find multiple tabs that provide different views:
 Each of these views helps you analyze license requirements from a different angle. 
 For regular license reviews, focus on the **User Role Licenses** and **Role Licenses** tabs. 
 
-## Understanding User License Summary report
+## Understanding License Summary report
 
 :::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commcer licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
 
@@ -107,7 +107,7 @@ You may see multiple rows for the same SKU, but only **one row per SKU** will be
 
 - **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses). Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
 
-## Understanding the Role Licenses View
+## Understanding the Role Licenses view
 
 The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role.
 
@@ -134,7 +134,9 @@ This breakdown helps you understand why a role requires the license it does.
 :::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
 
 >[!Note]
-> In the screenshot **Supply Chain Management Premium** shows **Priority = 100** and **Finance Premium** shows **Priority = 90**, because Priority reflects the global SKU order, not the best match for the Accountant role. If **Finance** \ **Finance Premium** fully covers the Accountant role's securable objects (**Not Entitled = 0**), then it remains the right license for that role even though **Supply Chain Management Premium** can still be a valid license.
+> In the above screenshot **Supply Chain Management Premium** shows **Priority = 100** and **Finance Premium** shows **Priority = 90**. This is because Priority reflects the global SKU order, not the best match for the Accountant role. 
+>
+> If **Finance** \ **Finance Premium** fully covers the Accountant role's securable objects (**Not Entitled = 0**), then it remains the right license for that role even though **Supply Chain Management Premium** can still be a valid license.
 
 ## Securable Object License Classification 
 
@@ -151,6 +153,8 @@ Each security object in a role has one of three classifications regarding requir
 The **License Usage Summary** also lets you inspect exactly which security objects are contributing to a role or user's license requirements: 
 
 **Detailed panel**: When you select a particular user (on the **User Licenses** tab) or a role (on the **Role Licenses** tab), a detailed panel appears at the bottom of the page listing individual security objects related to that selection. 
+
+:::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-dril-down-into-specific-security-objects.png" alt-text="Detailed Panel drill down into specific security objects." lightbox="media/security-governance-license-usage-summary-user-role-licenses-dril-down-into-specific-security-objects.png":::
 
 For each listed security object, you see details such as: 
 - **SecurableType** - The type of object (for example, a form, report, menu item, button, api, etc.). 
@@ -207,7 +211,6 @@ In this example, the **Role License** tab, with the selected **Accountant** role
 |----------|------------------------|--------------------|-------|
 | **Finance**  | **3,362**                  | **Entitled** | Included in the mapped license scope |
 | **Finance**  | **1,557**                  | **Not Entitled** | Not included in the mapped license (requires different license) |
-
 
 In this example, we can draw a few conclusions: 
 
