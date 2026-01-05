@@ -134,7 +134,7 @@ This breakdown helps you understand why a role requires the license it does.
 :::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
 
 >[!Note]
-> In the above screenshot **Supply Chain Management Premium** shows **Priority = 100** and **Finance Premium** shows **Priority = 90**. This is because Priority reflects the global SKU order, not the best match for the Accountant role. 
+> In the above screenshot, **Supply Chain Management Premium** shows **Priority = 100** and **Finance Premium** shows **Priority = 90**. This is because Priority reflects the global SKU order, not the best match for the Accountant role. 
 >
 > If **Finance** \ **Finance Premium** fully covers the Accountant role's securable objects (**Not Entitled = 0**), then it remains the right license for that role even though **Supply Chain Management Premium** can still be a valid license.
 
