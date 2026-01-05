@@ -90,7 +90,7 @@ In the **User Role Licenses** view, each row corresponds to a user and displays 
    - **2 rows marked 1 → base license + 1 attach license**
    - **3 rows marked 1 → base license + 2 attach licenses**
 
-You may see multiple rows for the same SKU, but only **one row per SKU** will be marked with 1 to indicate it is required. The total number of rows marked 1 determines how many base plus attach licenses are needed.
+You may see multiple rows for the same SKU, but only **one row per SKU** will be marked with 1 to indicate it is required. The total number of rows with a 1 determines how many base plus attach licenses are needed for the user.
 
 
 >[!Tip] 
