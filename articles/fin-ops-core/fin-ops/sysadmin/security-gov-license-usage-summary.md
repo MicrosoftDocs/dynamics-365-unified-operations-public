@@ -154,7 +154,7 @@ The **License Usage Summary** also lets you inspect exactly which security objec
 
 **Detailed panel**: When you select a particular user (on the **User Licenses** tab) or a role (on the **Role Licenses** tab), a detailed panel appears at the bottom of the page listing individual security objects related to that selection. 
 
-:::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-dril-down-into-specific-security-objects.png" alt-text="Detailed Panel drill down into specific security objects." lightbox="media/security-governance-license-usage-summary-user-role-licenses-dril-down-into-specific-security-objects.png":::
+:::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-detailed.png" alt-text="Detailed Panel drill down into specific security objects." lightbox="media/security-governance-license-usage-summary-user-role-licenses-detailed.png":::
 
 For each listed security object, you see details such as: 
 - **SecurableType** - The type of object (for example, a form, report, menu item, button, api, etc.). 
