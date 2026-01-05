@@ -1,0 +1,1 @@
+_**The contents of this article don't apply to:** Brazil, and Mexico_
