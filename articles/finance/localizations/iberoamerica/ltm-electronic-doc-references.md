@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 This article explains how to configure and use the **Electronic document references** feature for Latin America (LATAM). This feature creates a relationship between documents that are used for fiscal purposes.
 
