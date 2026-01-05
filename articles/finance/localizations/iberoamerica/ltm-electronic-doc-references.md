@@ -29,7 +29,7 @@ Before you can post an invoice that has references, you must configure document 
 ## Configure the electronic document references
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references**.
-1. In the **Tax application ID** field, select the tax application ID that was created for the country's/region's electronic invoices.
+1. In the **Tax application ID** field, select the tax application ID that was created for the country/region's electronic invoices.
 1. In the **Max amount of packing slips** field, enter the total number of packing slips that a document can have as unique references.
 
 ## Electronic document references in invoice and packing slip posting

@@ -33,7 +33,7 @@ Before you complete the steps in this article to generate and print the report, 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that's used in the transactions. Depending on the country/region that you want to configure the report for, the applicable conditions are shown.
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
-1. Select the VAT book format for your country, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. Select the VAT book format for your country/region, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, On the **Conditions** FastTab, select **Add**.
 1. In the **Lookup result** field, select an option. For example, select **VAT**.
 1. In the **Tax Code** field, select the appropriate tax code that's used for VAT tax rates for your country/region.

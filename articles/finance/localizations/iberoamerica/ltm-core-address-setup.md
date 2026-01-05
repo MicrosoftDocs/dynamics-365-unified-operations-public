@@ -53,11 +53,11 @@ Follow these steps to add the codification that's provided by the fiscal authori
 The following procedure applies only to organizations with a primary address in Argentina. You might have to add a country/region tax ID that's provided by the fiscal authorities.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
-1. On the **Country/region** tab, select **LATAM** \> **Country per Taxpayer Type identification**.
+1. On the **Country/region** tab, select **LATAM** \> **Country/region per Taxpayer Type identification**.
 1. In the **Tax application ID** field, select an ID.
 1. In the **Taxpayer type** field, select a taxpayer type.
-1. In the **Country document type** field, select document type.
-1. In the **Country identification number** field, enter a value.
+1. In the **Country/region document type** field, select document type.
+1. In the **Country/region identification number** field, enter a value.
 1. Save your changes, and close the page.
 
 ## State/province configuration
