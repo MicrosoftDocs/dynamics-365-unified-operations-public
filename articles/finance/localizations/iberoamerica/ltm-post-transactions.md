@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 This article provides the information that you need and the steps that you must complete to set up the functionality for posting transactions in Latin America (LATAM) by using LATAM-specific features. Supported transactions include customer and vendor invoices, customer and vendor payments, and remission documents.
 
