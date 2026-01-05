@@ -26,7 +26,7 @@ Starting on February 1, 2026, Finance insights will be updated to use Business p
 Microsoft manages the update process and updates your environment automatically during this window. Customers with **Payment prediction** and **Cashflow forecast** that refresh periodically are considered active and are updated.
 
 ## Do I have to update?
-Yes, if you want to continue using Finance insights. Export to Data Lake will be discontinued and Finance insights 1.0.0.x no longer functions after that date. The update to Finance insights 1.2.x with Business performance analytics will occur automatically during the February 1 - March 31, 2026 window.
+Yes, if you want to continue using Finance insights. Export to Data Lake will be discontinued and Finance insights 1.0.0.x no longer functions after that date. The update to Finance insights 1.2.x with Business performance analytics automatically occurs between February 1 - March 31, 2026.
 
 ## Who manages the update?
 Microsoft manages the update process and performs the actual update of your Finance insights configuration and models automatically.
@@ -37,7 +37,7 @@ There's no separate update fee. However, Finance insights 1.2.x requires Busines
 The installation of Business performance analytics results in additional storage consumption and your organization's storage costs may increase depending on your Dynamics 365 Finance data volume. Check your Dataverse license entitlement and usage in the [Power Platform admin center](https://aka.ms/ppac).
 
 ## Can I opt out of the update?
-If you choose not to update, you lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance insights 1.0.0.x after this date. 
+If you choose not to update, you lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance insights 1.0.0.x. 
 
 If you'd like to opt out of the update and discontinue using Finance insights entirely, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md). Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.
 
@@ -85,10 +85,10 @@ Finance insights 1.2.x:
 - Better performance and reliability
 
 ## How does Business performance analytics integration work?
-Business performance analytics syncs data from Dynamics 365 Finance to Dataverse automatically. Finance insights 1.2.x reads from Business performance analytics's Dataverse tables instead of from Azure Data Lake.
+Business performance analytics syncs data from Dynamics 365 Finance to Dataverse automatically. Finance insights 1.2.x reads from Business performance analytics's Dataverse tables instead of Azure Data Lake.
 
 ## What Business performance analytics components does Finance insights use?
-Finance insights reads from standard Business performance analytics analytical entities for general ledger, customer transactions, and other financial data. Business performance analytics maintains these tables automatically as it syncs from Finance.
+Finance insights reads from standard Business performance analytics analytical entities for general ledger, customer transactions, and other financial data. Business performance analytics maintains these tables automatically as it syncs from Dynamics 365 Finance.
 
 ## Do I need separate Business performance analytics licenses?
 Business performance analytics is included with Dynamics 365 Finance licenses. You don't need separate Business performance analytics licenses.
@@ -136,7 +136,7 @@ If Business performance analytics shows errors after update, contact Microsoft s
 - Migration completion date and time
 - Screenshots of errors
 
-## Should I upgrade to Finance 10.0.38 before or during update?
+## Should I upgrade to Finance 10.0.38 before updating?
 Upgrade to Finance 10.0.38 and later before the update window begins on February 1, 2026. The update can't proceed if you're on an earlier version.
 
 ## What happens if I don't update?
@@ -148,7 +148,7 @@ Finance insights features stop working when Export to Data Lake is discontinued.
 If you don't want to update, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 
 ## Will customer payment predictions work the same way?
-Yes, customer payment predictions function identically after update. Your trained models are preserved, and predictions continue with the same accuracy and workflow.
+Yes, customer payment predictions function identically after updating. Your trained models are preserved, and predictions continue with the same accuracy and workflow.
 
 ## Will cash flow forecasting work the same way?
 Yes, cash flow forecasting maintains the same functionality. Your forecast models and historical forecasts are preserved during update.
