@@ -27,7 +27,7 @@ This helps your organization:
 - **Align security roles with internal controls and compliance** by revealing which permissions drive certain license requirements. 
 - **Plan and optimize license requirements** by providing a clear view of how security roles drive required licenses. 
 
-Additionally, if your organization has multiple Dynamics 365 Finance & Operations environments (such as multiple production environments), you can get a consolidated view of licensing across all environments (including sandbox environments) by using the **[User License Consumption report](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** in the **[Power Platform admin center](https://aka.ms/PPAC)**. 
+Additionally, if your organization has multiple Dynamics 365 finance and operations apps environments (such as multiple production environments), you can get a consolidated view of licensing across all environments (including sandbox environments) by using the **[User License Consumption report](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** in the **[Power Platform admin center](https://aka.ms/PPAC)**. 
 
 In the Security Governance workspace, **License Usage Summary** focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective. 
 
@@ -105,7 +105,7 @@ You may see multiple rows for the same SKU, but only **one row per SKU** will be
 >[!Tip]
 > Duplicate the security role or duty using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature to see which permissions are excluded when evaluating license requirements.
 
-- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in **[Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses)*. Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
+- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in **[Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses)**. Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
 
 ## Understanding the Role Licenses View
 
@@ -165,7 +165,7 @@ With this information, you can make informed decisions-such as removing that pri
 In the following example, a user, *Cade.Armand.Olander*, is assigned three security roles: **Accountant**, **Retail Store Manager**, and **System User**. 
 
 **What the License Usage Summary shows**
-- The **Accountant** role drives a **Finance** license requirement. Because **Finance** is the highest required license level for this user, it becomes the user's **required base license**.
+- The **Accountant** role drives a **Finance** license requirement. Because **Finance** is the highest required license for this user, it becomes the user's **required base license**.
 
 - The **Retail Store Manager** role (which on its own requirae **Operations – Activity**) does **not** increase the total license count in this case, because the **Finance** base license already covers the required security objects needed for the user's lower-tier roles.
 
