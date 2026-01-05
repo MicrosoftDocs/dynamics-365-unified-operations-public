@@ -86,9 +86,9 @@ In the **User Role Licenses** view, each row corresponds to a user and displays 
 - **License** - The license needed for that user's assigned security roles. The system looks at all the security objects in the assigned roles and determines which licenses covers the most security objects in the role. 
 
 - **License quantity** - License quantity shows how many licenses a user needs. Any row marked with 1 means that license is required. In most cases, a user needs **one base license**. If more than one row is marked with 1, that means the user also needs **attach licenses**:
-- **1 row marked 1 → base license only****
-- **2 rows marked 1 → base license + 1 attach license**
-- **3 rows marked 1 → base license + 2 attach licenses**
+   - **1 row marked 1 → base license only**
+   - **2 rows marked 1 → base license + 1 attach license**
+   - **3 rows marked 1 → base license + 2 attach licenses**
 
 You may see multiple rows for the same SKU, but only **one row per SKU** will be marked with 1 to indicate it is required. The total number of rows marked 1 determines how many base plus attach licenses are needed.
 
@@ -98,14 +98,14 @@ You may see multiple rows for the same SKU, but only **one row per SKU** will be
 
 ### How to use the User License Summary view
 
-- **Verify expected licenses** : Check that each user's licenses requirement match what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.microsoft.com)**. 
+- **Verify expected licenses** : Check that each user's licenses requirement match what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses)**. 
 
 - **Investigate higher-than-expected licenses**: Pay special attention to users who require a higher license than seems appropriate. For instance, if a **Warehouse clerk** is shown needing a **Finance** license, it could mean they were inadvertently given a role with permissions that only a user requiring a **Finance** license should have. Identify which roles that user has, then use the **Role Licenses** view for those roles to see what might be causing the increased requirement. 
 
 >[!Tip]
 > Duplicate the security role or duty using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature to see which permissions are excluded when evaluating license requirements.
 
-- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in **[Microsoft 365 admin center](https://admin.microsoft.com)**. Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
+- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in **[Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses)*. Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
 
 ## Understanding the Role Licenses View
 
