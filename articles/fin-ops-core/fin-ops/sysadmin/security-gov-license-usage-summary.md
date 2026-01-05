@@ -98,18 +98,20 @@ You may see multiple rows for the same SKU, but only **one row per SKU** will be
 
 ### How to use the User License Summary view
 
-- **Verify expected licenses** : Check that each user's licenses requirement match what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in **[Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses)**. 
+- **Verify expected licenses** : Check that each user's licenses requirement match what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (e.g. a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses). 
 
 - **Investigate higher-than-expected licenses**: Pay special attention to users who require a higher license than seems appropriate. For instance, if a **Warehouse clerk** is shown needing a **Finance** license, it could mean they were inadvertently given a role with permissions that only a user requiring a **Finance** license should have. Identify which roles that user has, then use the **Role Licenses** view for those roles to see what might be causing the increased requirement. 
 
 >[!Tip]
 > Duplicate the security role or duty using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature to see which permissions are excluded when evaluating license requirements.
 
-- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in **[Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses)**. Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
+- **Address multiple license(s) requirement**: When the license quantity for a user is more than 1, that user's role and associated security objects span multiple product licenses. The highest-priority license is counted as the required base license, and the remaining lower priority licenses are counted as required attach licenses. Make sure the user is assigned all required licenses in [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses). Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses. 
 
 ## Understanding the Role Licenses View
 
-The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role. **Filter** by a security role, and sort by **Entitled** to see how many security objects are entitled, not entitled, or not required by each license. This breakdown helps explain what entitled security objects are covered by a particular license.
+The **Role Licenses** view highlights the license requirements for each security role in the system. Each row in this view is a security role, showing the minimum license level a user would need if they were assigned that role.
+
+ **Filter** by a security role, and sort by **Entitled** to see how many security objects are entitled, not entitled, or not required by each license. This breakdown helps explain what entitled security objects are covered by a particular license.
 
 :::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
 
@@ -119,9 +121,7 @@ Key columns in the **Role Licenses** view:
 
 - **SKU Name** - The lowest-level Dynamics 365 license that covers all configured security objects in the role. If the role's permissions include any function that requires a higher license, that higher license with the calculated **Entitled** security objects is shown. 
 
-- **Priority** - The **Priority** column indicates the specific order licenses are evaluated in the system, and which SKU is treated as the base license, when more than one base SKU is involved. **Priority** is a global ordered list, and a **higher-priority SKU is not guaranteed to be a superset of a lower-priority SKU for every role**. This is why a higher-priority SKU can still show **Not entitled** for some objects, and why some roles can require a combination of base plus attach SKUs. In the example below **Supply Chain Management Premium** shows **Priority = 100** and **Finance Premium** shows **Priority = 90**, because Priority reflects the global SKU order, not the best match for the Accountant role. If **Finance** \ **Finance Premium** fully covers the Accountant role's securable objects (**Not Entitled = 0**), then it remains the right license for that role even though **Supply Chain Management Premium** can still be a valid license.
-
-:::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
+- **Priority** - The **Priority** column indicates the specific order licenses are evaluated in the system, and which SKU is treated as the base license, when more than one base SKU is involved. **Priority** is a global ordered list, and a **higher-priority SKU is not guaranteed to be a superset of a lower-priority SKU for every role**. This is why a higher-priority SKU can still show **Not entitled** for some objects, and why some roles can require a combination of base plus attach SKUs.
 
 **Entitlement counts** - For the required license, the role's configured security objects is broken down into three categories: 
 
@@ -130,6 +130,11 @@ Key columns in the **Role Licenses** view:
 - **Not Required** - Security objects or privilege inherited in system user, not included in license computation
 
 This breakdown helps you understand why a role requires the license it does. 
+
+:::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
+
+>[!Note]
+> In the screenshot **Supply Chain Management Premium** shows **Priority = 100** and **Finance Premium** shows **Priority = 90**, because Priority reflects the global SKU order, not the best match for the Accountant role. If **Finance** \ **Finance Premium** fully covers the Accountant role's securable objects (**Not Entitled = 0**), then it remains the right license for that role even though **Supply Chain Management Premium** can still be a valid license.
 
 ## Securable Object License Classification 
 
