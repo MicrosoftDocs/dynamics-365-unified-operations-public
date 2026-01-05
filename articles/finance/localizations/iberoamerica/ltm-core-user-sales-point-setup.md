@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 This article explains how to set up a predefined sales point for each user. This feature ensures that when a user posts a document with LATAM information and has multiple sales points available, the form selects the sales point assigned to the user by default.
 

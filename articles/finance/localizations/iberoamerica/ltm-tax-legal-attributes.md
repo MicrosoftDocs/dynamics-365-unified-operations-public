@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 This article explains how to add the tax and legal information that you can use to comply with company and fiscal legislation. The attributes that you can configure include the tax identification at different levels, the taxpayer classification per country, and different customizable concepts that can be manually filled. The fields for this information are located on the **LATAM** FastTab of the following pages:
 

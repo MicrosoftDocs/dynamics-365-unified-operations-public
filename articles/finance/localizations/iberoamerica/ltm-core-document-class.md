@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 You can create the different documents that a company uses to register transactions with third parties. Documents can include invoices, credit notes, and debit notes. These documents can also represent payment methods such as checks and wire transfers, and treasury documents such as receipts and payment orders.
 

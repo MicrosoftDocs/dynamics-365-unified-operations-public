@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 You can define which document classes are allowed in transactions for customers assigned to this customer set. Additionally, you can predefine default document classes for each transaction type.
 

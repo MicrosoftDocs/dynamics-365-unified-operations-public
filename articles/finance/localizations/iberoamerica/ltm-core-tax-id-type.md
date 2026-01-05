@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 Use this configuration to enter valid tax ID types in each country/region and identify the entities that the company operates with. These entities can include customers, vendors, contacts, banks, and employees.
 

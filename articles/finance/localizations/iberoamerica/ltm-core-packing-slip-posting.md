@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 You can add the information that's required for Latin American countries/regions when you post a packing slip in an extended **LATAM** section. The information can be added to a sales order packing slip, a purchase order packing slip, and a packing slip from a project.
 

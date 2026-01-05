@@ -14,7 +14,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 Each Latin American country/region has a tax identification ID to identify its taxpayers. This article explains how to associate the tax identification ID with each country or region, state or province, and county by using the LATAM extension from the **Address setup** page.
 

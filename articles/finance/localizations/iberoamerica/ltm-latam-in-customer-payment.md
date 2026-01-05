@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/does-not-apply-to.md)]
+[!include [does not apply to](../includes/does-not-apply-to.md)]
 
 This article explains how to use the customer collection process with the Latin American (LATAM) extension and the payment methods functionality in the customer payment journal. The LATAM localization adds fields that let you provide additional data to represent payment methods according to the legislation of each country or region.
 
