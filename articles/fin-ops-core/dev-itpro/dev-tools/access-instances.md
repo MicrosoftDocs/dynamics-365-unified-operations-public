@@ -4,7 +4,7 @@ description: Learn how to access development instances, configure local developm
 author: laneswenka
 ms.author: laswenka
 ms.topic: install-set-up-deploy
-ms.date: 02/16/2024
+ms.date: 01/05/2025
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -26,6 +26,8 @@ This article describes how to access development instances, configure local deve
 > - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
 > - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
 > - Development environments shouldn't contain business critical data and are considered disposable.
+> - These environments aren't intended for performance testing.
+> - Depending on your workload, you may need to choose or adjust the Azure SKU for the selected VM.
 > - Only 120 environments are support per tenant. We recommend that you limit the number of cloud-hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
 > - For cloud-hosted environments older than 6 months, it's advisable to review the supported software list on the [Microsoft Dynamics 365 Finance + Operations supported software](../deployment/onprem-compatibility.md) page.
 
