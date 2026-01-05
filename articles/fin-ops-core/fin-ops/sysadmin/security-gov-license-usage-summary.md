@@ -75,7 +75,7 @@ Within this workspace, you find multiple tabs that provide different views:
 Each of these views helps you analyze license requirements from a different angle. 
 For regular license reviews, focus on the **User Role Licenses** and **Role Licenses** tabs. 
 
-## Understanding the User License Summary report
+## Understanding User License Summary report
 
 :::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commcer licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
 
