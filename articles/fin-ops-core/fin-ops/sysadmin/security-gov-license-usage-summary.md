@@ -94,7 +94,7 @@ You may see multiple rows for the same SKU, but only **one row per SKU** will be
 
 
 >[!Tip] 
-> For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Excel.
+> For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Microsoft Excel.
 
 ### How to use the User License Summary view
 
@@ -123,7 +123,7 @@ Key columns in the **Role Licenses** view:
 
 - **Priority** - The **Priority** column indicates the specific order licenses are evaluated in the system, and which SKU is treated as the base license, when more than one base SKU is involved. **Priority** is a global ordered list, and a **higher-priority SKU is not guaranteed to be a superset of a lower-priority SKU for every role**. This is why a higher-priority SKU can still show **Not entitled** for some objects, and why some roles can require a combination of base plus attach SKUs.
 
-**Entitlement counts** - For the required license, the role's configured security objects is broken down into three categories: 
+**Entitlement counts** - For the required license, the role's configured security objects are broken down into three categories: 
 
 - **Entitled** - Included security objects within the mapped license
 - **Not Entitled** - Not included in the mapped license (requires different license)
