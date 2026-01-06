@@ -96,16 +96,19 @@ The following procedure shows one way to register an application in Microsoft En
         com.microsoft.warehousemanagement
         ```
 
-    - **Signature hash** – For V3, Enter the following value:
+    - **Signature hash** – Enter one of the following values, depending on which version of the Warehouse Management mobile app you're using:
 
-        ``` text
-        hpavxC1xAIAr5u39m1waWrUbsO8=
-        ```
-    - **Signature hash** (Recommended) – If you are using V4 and set "Use Broker" option to "Yes" in WMA, enter the following value. :
-          
-        ``` text
-        Xo8WBi6jzSxKDVR4drqm84yr9iU%3D
-        ```
+        - If you're using *Warehouse Management mobile app version 4.0.28 or higher*, then enter the following value:
+
+            ``` text
+            Xo8WBi6jzSxKDVR4drqm84yr9iU%3D
+            ```
+
+        - If you're using *Warehouse Management mobile app version 4.0.27 or older* (including any release of version 3), then enter the following value. This value can also work with newer versions, but isn't compatible with brokered authentication, so we don't recommend it.
+
+            ``` text
+            hpavxC1xAIAr5u39m1waWrUbsO8=
+            ```
 
 1. Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 1. Select **Add a platform** again.
