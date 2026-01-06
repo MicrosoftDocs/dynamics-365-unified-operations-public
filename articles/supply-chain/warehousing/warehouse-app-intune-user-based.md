@@ -210,7 +210,5 @@ There are several ways to enroll a Windows device. For example, you can install 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
-- [Mass deploy the mobile app with service-based authentications](warehouse-app-intune.md)
-- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

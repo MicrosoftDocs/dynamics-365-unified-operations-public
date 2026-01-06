@@ -16,20 +16,20 @@ ms.search.form:
 
 This article answers many frequently asked questions about user-based authentication (such as device code flow) for the Warehouse Management mobile app.
 
-## When do I have to switch to user-based authentication?
-
-Support for service-based authentication (client secret and certificate) was removed from the Warehouse Management mobile app on July 15, 2024. You must now use user-based authentication (such as device code flow) to connect the Warehouse Management mobile app to Microsoft Dynamics 365 Supply Chain Management. Learn more [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
-
 ## Where can I learn more about user-based authentication?
 
-For more information about user-based authentication and the deprecation of service-based authentication methods, read the following articles:
+For more information about user-based authentication, read the following articles:
 
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md)
 
-## Why is Microsoft deprecating service-based authentication for the Warehouse Management mobile app?
+## Is service-based authentication deprecated everywhere?
+
+No. Service-based authentication is deprecated only for the Warehouse Management mobile app. Other applications continue to support it.
+
+## Why did Microsoft deprecate service-based authentication for the Warehouse Management mobile app?
 
 User-based authentication offers the following advantages over service-based authentication for the Warehouse Management mobile app:
 
@@ -37,26 +37,6 @@ User-based authentication offers the following advantages over service-based aut
 - User-based authentication is more secure in contexts where the Warehouse Management mobile app is used.
 - User-based authentication provides more robust security and more configuration options in Microsoft Entra ID.
 - User-based authentication establishes a foundation for adding support for single sign-on (SSO) authentication across devices and apps in a future release.
-
-## Is service-based authentication deprecated everywhere?
-
-No. Service-based authentication is deprecated only for the Warehouse Management mobile app. Other applications continue to support it.
-
-## In which version of the mobile app is service-based authentication removed?
-
-Starting with version 3.0, the Warehouse Management mobile app no longer supports service-based authentication. Therefore, existing certificates and client secrets no longer work.
-
-Older versions of the mobile app continue to work and support service-based authentication, even after the release of version 3.0. However, we strongly recommend that you switch to user-based authentication as soon as possible. Devices that are set to automatically update apps from app stores (such as Microsoft Store, Google Play, or Apple App Store) automatically get the latest version of the mobile app. Therefore, service-based authentication stops working on these devices soon after version 3.0.
-
-## What if I forget that service-based authentication is removed?
-
-You won't forget. Soon before the scheduled release of Warehouse Management mobile app version 3.0, we plan to add prominent, nonblocking warnings that all app users receive. Microsoft Support might even contact you soon before the release of Warehouse Management mobile app version 3.0.
-
-## How and when does the app show pop-up warnings about the authentication method?
-
-Any time that a user changes or adds a connection that uses a certificate or client secret, the app shows a pop-up message to warn the user that the connection method is soon discontinued. Workers don't receive the message unless they edit the connections.
-
-To prevent the pop-up warning from appearing, you must delete all connections that use a certificate or client secret.
 
 ## What is device code flow?
 
@@ -90,7 +70,7 @@ Learn more in [Scenarios for managing devices, Microsoft Entra ID users, and mob
 
 ## Do I need to map users on the Microsoft Entra ID applications page in Supply Chain Management when I use user-based authentication?
 
-No, you don't need to map users on the **Microsoft Entra ID applications** page in Supply Chain Management when you use user-based authentication. That approach is required only when you use [service-based authentication](warehouse-app-authenticate-service-based.md#user-azure-ad).
+No, you don't need to map users on the **Microsoft Entra ID applications** page in Supply Chain Management when you use user-based authentication.
 
 ## How often does the Warehouse Management mobile app need to be signed in?
 
@@ -126,9 +106,9 @@ Yes, [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) is sup
 
 If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you also sign out of all other apps that use that same account (including the Warehouse Management mobile app).
 
-## Will user-based authentication work with Dynamics 365 Finance + Operations (on-premises)?
+## Does user-based authentication work with Dynamics 365 Finance + Operations (on-premises)?
 
-The Warehouse Management mobile app continues to work with Dynamics 365 Finance + Operations (on-premises), even after service-based authentication is removed. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Microsoft Entra ID. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. Learn more in [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+Yes. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Microsoft Entra ID. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. Learn more in [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
