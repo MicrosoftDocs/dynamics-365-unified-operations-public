@@ -4,7 +4,7 @@ description: Learn about the steps to set up Brazilian tax reform within scope o
 author: yanansong
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 01/06/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2025-10-01
@@ -76,7 +76,7 @@ Configuration files for e-invoicing:
 After you download the files, import the configuration files into the system.
 
 > [!NOTE]
-> For the configuration of the NFS-e Service Invoices, see [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md). 
+> Learn more about how to configure NFS-e Service Invoices in [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md). 
 
 ### Import the configuration files for tax calculation
 
