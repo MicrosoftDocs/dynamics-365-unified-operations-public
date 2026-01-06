@@ -22,7 +22,7 @@ This article describes how distributed order management (DOM) processes sales or
 
 DOM will run only in a batch job.
 
-To configure the DOM processor batch job for DOM runs, follow these steps.
+To configure the DOM processor batch job for DOM runs, follow these steps:
 
 1. Go to **Retail and Commerce \> Distributed order management \> Batch processing \> DOM processor job setup**.
 1. On the **Parameters** FastTab, for **Fulfillment profile**, select a profile for which DOM must be run.

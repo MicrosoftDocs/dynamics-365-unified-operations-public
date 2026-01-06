@@ -22,7 +22,7 @@ Use the following procedure to create a sales complementary fiscal document to a
 
 The following procedure uses the BRMF demo company.
 
-To create a sales complementary fiscal document to adjust a sales fiscal document generated for an incorrect price, follow these steps.
+To create a sales complementary fiscal document to adjust a sales fiscal document generated for an incorrect price, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Fiscal documents \> All fiscal documents**.
 1. In the list, mark the selected row.

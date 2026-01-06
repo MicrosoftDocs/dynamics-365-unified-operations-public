@@ -32,7 +32,7 @@ There are three modes of miscellaneous charges allocation:
 
 ### Set up a charges code
 
-To set up a charges code, follow these steps.
+To set up a charges code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Charges setup** \> **Charges code**.
 1. Select **New** to create a charges code.
@@ -54,7 +54,7 @@ To set up a charges code, follow these steps.
  
 ### Create a released product for a service item
 
-To create a released product for a service item, follow these steps.
+To create a released product for a service item, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products** to open the **Released product details** page.
 1. Create a product.
@@ -69,7 +69,7 @@ To create a released product for a service item, follow these steps.
 
 If you must redraw debt for services that are provided to a third party, you can create a facture for redrawn amounts that'sn't reflected in the purchase book or sales book. Set up the sales tax group so that it has the sales tax codes, and make sure that the **Exempt** checkboxes are selected. After you complete this setup, the system won't generate ledger transactions for tax. However, the appropriate tax rate must be specified for the sales tax codes, to help guarantee that the printed form of the reissued invoice will reflect the tax.
 
-To set up a sales tax group that has exempt tax codes, follow these steps.
+To set up a sales tax group that has exempt tax codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Sales tax** \> **Sales tax** groups.
 1. Create a sales tax group.
@@ -83,7 +83,7 @@ To set up a sales tax group that has exempt tax codes, follow these steps.
 
 The transit tax group is used in the invoice that's created during the redraw debt transaction.
 
-To define a transit tax group for a sales tax group, follow these steps.
+To define a transit tax group for a sales tax group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Sales tax** \> **Sales tax groups**.
 1. Create a sales tax group.
@@ -97,7 +97,7 @@ To define a transit tax group for a sales tax group, follow these steps.
 
 The transit general ledger account is the account that will be credited when transactions are redrawn to the third party. You must set up the ledger account to redraw charges to third parties.
 
-To set up a transit account, follow these steps.
+To set up a transit account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **General** tab, in the **Transit account** field, select the transit general ledger account to use during the redraw debt transaction.
@@ -109,7 +109,7 @@ You can purchase services for allocation either from the invoice journal or thro
 
 ### Purchase services (charges) from the invoice journal
 
-To purchase services (charges) from the invoice journal, follow these steps.
+To purchase services (charges) from the invoice journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 1. Create an invoice journal.
@@ -127,7 +127,7 @@ To purchase services (charges) from the invoice journal, follow these steps.
 
 ### Purchase services (charges) through a purchase order
 
-To purchase services (charges) through a purchase order, follow these steps.
+To purchase services (charges) through a purchase order, follow these steps:
 
 1. Create a purchase order.
 1. On the purchase order lines, select the service that you created earlier.
@@ -157,7 +157,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 ### Allocate miscellaneous charges to the item cost price
 
-To allocate miscellaneous charges to the item cost price, follow these steps.
+To allocate miscellaneous charges to the item cost price, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** \> **Allocation**.
@@ -204,7 +204,7 @@ To allocate miscellaneous charges to the item cost price, follow these steps.
 
 ### Allocate miscellaneous charges to redraw debt to third parties
 
-To allocate miscellaneous charges to redraw debt to third parties, follow these steps.
+To allocate miscellaneous charges to redraw debt to third parties, follow these steps:
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** \> **Allocation**.
 
@@ -249,7 +249,7 @@ To allocate miscellaneous charges to redraw debt to third parties, follow these 
 
 #### Example
 
-To walk through the example procedure, follow these steps.
+To walk through the example procedure, follow these steps:
 
 1. Create a sales tax group that's named **VAT18-1** and that has sales tax code **VAT18**.
 
@@ -322,7 +322,7 @@ To walk through the example procedure, follow these steps.
 
 ### Allocate miscellaneous charges to the ledger account
 
-To allocate miscellaneous charges to the ledger account, follow these steps.
+To allocate miscellaneous charges to the ledger account, follow these steps:
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** \> **Allocation**.
 
@@ -347,7 +347,7 @@ To allocate miscellaneous charges to the ledger account, follow these steps.
 
 The cost price of an item can be adjusted many times by using the functionality for miscellaneous charges allocation. You can view the transactions that adjust the cost of an item on the **Settlements** and **Cost explorer** pages. A warehouse closing operation must be done first.
 
-To view the miscellaneous charges that are allocated to the item's cost price, follow these steps.
+To view the miscellaneous charges that are allocated to the item's cost price, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products** to open the **Released product details** page.
 1. Select an item, and then, on the Action Pane, on the **Manage Costs** tab, in the **Cost transactions** group, select **Transactions** to open the **Inventory transactions** page.
@@ -371,7 +371,7 @@ To view the miscellaneous charges that are allocated to the item's cost price, f
 
 ### View the allocation history from the invoice journal
 
-To view the allocation history from the invoice journal, follow these steps.
+To view the allocation history from the invoice journal, follow these steps:
 
 1. On the **Invoice journa**l page, select purchase invoice that you created earlier that includes the service.
 1. Select **Charges** \> **Misc. charges allocation history** to open the **Charges allocation** page.
@@ -386,7 +386,7 @@ The **Allocation base** section shows the allocation base and allocation result,
 
 The allocation history can be shown either for a specific invoice or for all invoices that the miscellaneous charges allocation operation was performed on.
 
-To view the allocation history, follow these steps.
+To view the allocation history, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Misc. charges allocation history**.
 1. Select **Edit**, and then, in the **Start date** and **End date** fields, specify a period to filter the invoices for the purchase of miscellaneous charges.
@@ -397,7 +397,7 @@ To view the allocation history, follow these steps.
  
 ## Cancel miscellaneous charges allocation
 
-To cancel miscellaneous charges allocation, follow these steps.
+To cancel miscellaneous charges allocation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Misc. charges allocation history**. Alternatively, on the **Invoice journal** page, select **Charges** \> **Misc. charges allocation history**.
 1. In the **Allocation mode** field, select the allocation mode to cancel the allocation for.

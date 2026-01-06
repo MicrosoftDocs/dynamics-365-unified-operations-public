@@ -66,7 +66,7 @@ The following items are required before installing Business performance analytic
 
 #### Configure Microsoft Power Platform
 
-To configure Microsoft Power Platform for Business performance analytics, follow these steps.
+To configure Microsoft Power Platform for Business performance analytics, follow these steps:
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
 2. Go to the details page of the implementation project that's used to manage the Dynamics 365 Finance environment.

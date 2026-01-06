@@ -44,7 +44,7 @@ For each candidate profile, a candidate profile ID is generated. Recruiters can 
 > [!NOTE]
 > An administrator must complete this procedure.
 
-To activate the **Bulk resume upload** AI feature, follow these steps.
+To activate the **Bulk resume upload** AI feature, follow these steps:
 
 1. From the left pane, go to **Environment variables**.
 1. Search for and select **msdyn_hcm_ResumeParser**.
@@ -53,7 +53,7 @@ To activate the **Bulk resume upload** AI feature, follow these steps.
 
 ## Upload resumes in bulk
 
-To upload resumes in bulk, follow these steps.
+To upload resumes in bulk, follow these steps:
 1. In the left pane, select **Bulk resume upload**.
 2. Select **Upload resume**.
 3. Browse to the location, and select the resumes to upload.
@@ -64,7 +64,7 @@ For each parsed resume, AI generates a candidate profile. Each candidate profile
 
 ## Edit the candidate profile that Bulk resume upload generates
 
-To edit the candidate profile that the **Bulk resume upload** AI feature generated, follow these steps.
+To edit the candidate profile that the **Bulk resume upload** AI feature generated, follow these steps:
 
 1. After a candidate profile is generated, a **Candidate ID** value is generated inside a batch. Select the candidate ID to open the candidate profile and view the details that AI extracted. 
 1. Review the candidate profile that AI generated, and edit the information as required.

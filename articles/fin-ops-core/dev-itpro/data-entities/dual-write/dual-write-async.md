@@ -56,7 +56,7 @@ The public preview of the dual-write async feature is currently available on pub
 
 Sometimes, the table groups must be changed, or the sequence of execution must be updated within a table group to maintain the integrity of the relationships. For example, the parent table should be above the child table.
 
-To modify the initial setup, follow these steps.
+To modify the initial setup, follow these steps:
 
 1. Select the group, and stop the Async job.
 1. Select the table group.

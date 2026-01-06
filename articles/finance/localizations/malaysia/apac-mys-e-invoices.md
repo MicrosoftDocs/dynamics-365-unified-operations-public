@@ -49,7 +49,7 @@ Add the following required elements in the key vault:
 
 ## Configure Key Vault parameters for electronic invoicing
 
-To configure Key Vault parameters for electronic invoicing, follow these steps.
+To configure Key Vault parameters for electronic invoicing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section.
@@ -68,7 +68,7 @@ To configure Key Vault parameters for electronic invoicing, follow these steps.
 
 Some of the parameters from the **Malaysian electronic invoicing (MY)** electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
-To configure the electronic invoicing feature, follow these steps.
+To configure the electronic invoicing feature, follow these steps:
 
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -95,7 +95,7 @@ To configure the electronic invoicing feature, follow these steps.
 
 ## Configure electronic document parameters
 
-To configure electronic document parameters, follow these steps.
+To configure electronic document parameters, follow these steps:
 
 1. Make sure that the country/region-specific electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
@@ -149,7 +149,7 @@ To configure electronic document parameters, follow these steps.
 > [!NOTE]
 > When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as Business Registration Numbers (BRNs). If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
 
-To configure registration numbers, follow these steps.
+To configure registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -168,7 +168,7 @@ To configure Sales and Service Tax (SST) numbers, follow the instructions in [GS
 
 ## Configure electronic document property types
 
-To configure the electronic document property type that's required to define the taxpayer activity code, follow these steps.
+To configure the electronic document property type that's required to define the taxpayer activity code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
@@ -189,7 +189,7 @@ To configure the electronic document property type that's required to define the
 
 ## Configure address structure
 
-To configure the structure of the postal address to define all required elements, follow these steps.
+To configure the structure of the postal address to define all required elements, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. Make sure that all the following mandatory elements are configured:
@@ -206,7 +206,7 @@ To configure the structure of the postal address to define all required elements
 
 ### Enter the address
 
-To enter the address, follow these steps.
+To enter the address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity.
@@ -214,7 +214,7 @@ To enter the address, follow these steps.
 
 ### Enter the registration numbers
 
-To enter the registration numbers, follow these steps.
+To enter the registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's TIN.
@@ -228,7 +228,7 @@ To enter the registration numbers, follow these steps.
 
 ### Enter a business activity code and description
 
-To enter a business activity code and description, follow these steps.
+To enter a business activity code and description, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
@@ -244,7 +244,7 @@ To enter a business activity code and description, follow these steps.
 
 ### Enter the address
 
-To enter the address, follow these steps.
+To enter the address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -252,7 +252,7 @@ To enter the address, follow these steps.
 
 ### Enter the contact person
 
-To enter the contact person, follow these steps.
+To enter the contact person, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -263,7 +263,7 @@ To enter the contact person, follow these steps.
 
 ### Enter the registration numbers
 
-To enter the registration numbers, follow these steps.
+To enter the registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the customer.
@@ -285,7 +285,7 @@ To enter the registration numbers, follow these steps.
 
 **Customizable electronic document property types** can be used to extend the properties of legal entities, customers, vendors, and invoice journals. Users can configure them to cover some specific scenarios through configuration only. No coding is required.
 
-To configure additional buyer and journal properties, follow these steps.
+To configure additional buyer and journal properties, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
@@ -314,13 +314,13 @@ To configure additional buyer and journal properties, follow these steps.
 
 ![Screenshot that shows the electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
 
-To enter the values for the previously described electronic document properties at the customer level, follow these steps.
+To enter the values for the previously described electronic document properties at the customer level, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the Action Pane, on the **Customer** tab, select **Electronic document properties**.
 1. For each property that must be overridden in the electronic invoice, enter the required value in the **Value** field.
 
-To enter the values for the electronic document properties at the invoice level, follow these steps.
+To enter the values for the electronic document properties at the invoice level, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
 1. Select a required invoice, and then, on the Action Pane, on the **Invoice** tab, select **Electronic document properties**.
@@ -348,7 +348,7 @@ If business processes assume that self invoices are issued, you must also config
 
 ### Enter the address
 
-To enter the address, follow these steps.
+To enter the address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor.
@@ -356,7 +356,7 @@ To enter the address, follow these steps.
 
 ### Enter the contact person
 
-To enter the contact person, follow these steps.
+To enter the contact person, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor.
@@ -367,7 +367,7 @@ To enter the contact person, follow these steps.
 
 ### Enter the registration numbers
 
-To enter the registration numbers, follow these steps.
+To enter the registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the vendor.
@@ -387,7 +387,7 @@ To enter the registration numbers, follow these steps.
 
 ### Enter a business activity code and description
 
-To enter a business activity code and descriptions, follow these steps.
+To enter a business activity code and descriptions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor, and then, on the Action Pane, on the **Vendor** tab, select **Electronic document properties**.
@@ -409,7 +409,7 @@ Make sure that the following ER format configurations are imported:
 - Project invoice (MY)
 - Self invoice (MY)
 
-To complete the configuration, follow these steps.
+To complete the configuration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Globalization Studio**.
 1. Select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
@@ -430,7 +430,7 @@ To complete the configuration, follow these steps.
 
 To cover scenarios for non-taxable, zero-rated, or exempted operations, you must define tax exempt codes in the system.
 
-To configure sales tax codes, follow these steps.
+To configure sales tax codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
 1. Add the required exempt codes together with descriptions.
@@ -442,7 +442,7 @@ To configure sales tax codes, follow these steps.
 
 ## Configure units of measure
 
-To configure units of measure, follow these steps.
+To configure units of measure, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. Select a unit ID, and then select **External codes**.
@@ -461,21 +461,21 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Configure printable invoice layouts
 
-To enable QR code printing in full and simplified invoices, follow these steps.
+To enable QR code printing in full and simplified invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
-If you use project invoices, follow these steps.
+If you use project invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
 1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, reference the **PSAProjInvoice.ReportFull\_MY** or **PSAProjInvoice.ReportSimplified\_MY** layout.
 1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, reference the **PSAContractLineInvoice.ReportFull\_MY** or **PSAContractLineInvoice.ReportSimplified\_MY** layout.
 
-If you use self invoices, follow these steps.
+If you use self invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
@@ -498,7 +498,7 @@ To activate batch submission of invoices, enable the **Electronic document batch
 
 Before you begin to configure electronic document parameters for batch submission, import the **Consolidated Invoice Model Mapping (MY)** ER configuration from the repository. For more information, see [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-To configure electronic document parameters for batch submission, follow these steps.
+To configure electronic document parameters for batch submission, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, on the **Electronic reporting** FastTab, add a record for the **Customer Invoice journal** table name.
@@ -511,7 +511,7 @@ To configure electronic document parameters for batch submission, follow these s
 
 ### Configure the electronic invoicing feature
 
-To configure the electronic invoicing feature, follow these steps.
+To configure the electronic invoicing feature, follow these steps:
 
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature (version **10** or later) as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
@@ -536,7 +536,7 @@ To configure the electronic invoicing feature, follow these steps.
 
 ### Issue consolidated electronic invoices
 
-To generate and submit electronic invoices in batches for posted Customer invoices, follow these steps.
+To generate and submit electronic invoices in batches for posted Customer invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
 1. To submit invoices in batches, set the **Submit document batch** option to **Yes**. To submit retail invoices individually, set the **Submit retail invoices individually** option to **Yes**.
@@ -551,7 +551,7 @@ To generate and submit electronic invoices in batches for posted Customer invoic
 1. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
 1. Select **OK** to start submission.
 
-To inquire about the submission results, follow these steps.
+To inquire about the submission results, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
 1. In the **Document type** field, select **Batch submission**.

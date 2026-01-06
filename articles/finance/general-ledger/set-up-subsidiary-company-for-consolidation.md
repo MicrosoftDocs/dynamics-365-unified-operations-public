@@ -53,7 +53,7 @@ If the chart of accounts in the subsidiary legal entity doesn't follow the chart
 
 The main accounts in the subsidiary legal entity might have the same account numbers and the same structure for the chart of accounts as the main accounts in the consolidated legal entity. In this case, you don't have to manually map the main accounts in the subsidiary to the main accounts in the consolidated legal entity.
 
-Before you start the consolidation, follow these steps.
+Before you start the consolidation, follow these steps:
 
 1. In the *consolidated legal entity*, go to **General ledger \> Periodic \> Consolidate \> Consolidate \[Export to\]** to open the **Consolidate \[Online\]** page.
 2. Select the **Use consolidation account** check box. During consolidation, transactions and balances will automatically be transferred to the correct account.

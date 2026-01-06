@@ -22,7 +22,7 @@ You can create a tax assessment for the ICMS tax for a selected booking period. 
 
 The following procedure uses the BRMF demo company.
 
-To create a tax assessment for the ICMS tax for a selected booking period, follow these steps.
+To create a tax assessment for the ICMS tax for a selected booking period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Common \> Booking period**.
 1. Select **Create new booking period** to open the drop dialog.

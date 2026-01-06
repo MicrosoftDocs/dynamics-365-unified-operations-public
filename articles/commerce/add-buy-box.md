@@ -76,7 +76,7 @@ The buy box module retrieves product information by using Commerce Scale Unit ap
 
 ## Add a buy box module to a page
 
-To add a buy box module to a new page and set the required properties, follow these steps.
+To add a buy box module to a new page and set the required properties, follow these steps:
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
 1. In the **New fragment** dialog box, select the **Buy box** module.

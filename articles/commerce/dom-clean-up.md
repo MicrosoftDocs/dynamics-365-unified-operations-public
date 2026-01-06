@@ -19,7 +19,7 @@ This article describes how to clean up distributed order management (DOM) fulfil
 
 When DOM processing is run, fulfillment plans and DOM logs are created. Over time, the system keeps numerous fulfillment plans and DOM logs. To manage the number of fulfillment plans that the system keeps, you can configure a batch job that deletes older fulfillment plans, based on the **Fulfillment data retention period (in days)** and **DOM logs retention period (in days)** values of the DOM parameters in Commerce headquarters.
 
-To configure a batch job that deletes older fulfillment plans, follow these steps.
+To configure a batch job that deletes older fulfillment plans, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Distributed order management \> Batch processing \> DOM fulfillment data deletion job setup**.
 1. For **Batch group**, select a configured batch group.

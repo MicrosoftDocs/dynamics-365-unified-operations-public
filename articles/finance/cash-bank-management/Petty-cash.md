@@ -47,14 +47,14 @@ Before you can use the petty cash functionality, the following prerequisites mus
 
 ### Enable petty cash
 
-To enable petty cash, follow these steps.
+To enable petty cash, follow these steps:
 
 1. In Feature management, enable the **Petty cash** feature.
 2. Go to **Cash and bank management parameters** \> **Cash**, and select the **Enable petty cash** option.
 
 ### Set up cash accounts
 
-To set up the cash accounts, follow these steps.
+To set up the cash accounts, follow these steps:
 
 1. Go to **Cash and bank management** &gt; **Petty cash** &gt; **Cash accounts**.
 2. Enter the following information.
@@ -68,7 +68,7 @@ To set up the cash accounts, follow these steps.
     | More currencies       | Select this checkbox to allow currencies that differ from the accounting currency to be posted. |
     | Negative cash         | Select this checkbox to allow negative cash balances in any currency. |
 
-To set up cash balance control rules for a cash account, follow these steps.
+To set up cash balance control rules for a cash account, follow these steps:
 
 1. Select the cash account.
 2. On the **Cash account** tab, in the **Balance limit** section, select **Balance limit**, and then enter the following information.
@@ -120,7 +120,7 @@ To set up cash balance control rules for a cash account, follow these steps.
 
 ### Set up cash posting profiles
 
-Cash posting profiles define postings to the general ledger. To set up a cash posting profile, follow these steps.
+Cash posting profiles define postings to the general ledger. To set up a cash posting profile, follow these steps:
 
 1. Go to **Cash** **and bank management** \> **Setup** \> **Cash posting profiles**.
 2. Select or create a posting profile, and enter the following information.
@@ -154,14 +154,14 @@ Cash posting profiles define postings to the general ledger. To set up a cash po
 
 ### Set up number sequences for cash documents
 
-To set up number sequences for cash documents, follow these steps.
+To set up number sequences for cash documents, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 2. On the **Number sequence** tab, specify number sequence codes for the **Cash reimbursement slips**, **Cash disbursement slips**, **Cash correction voucher**, and **Exchange adjustment** references.
 
 ### Set up default values for Cash and bank management parameters
 
-To set up default values for Cash and bank management parameters for petty cash, follow these steps.
+To set up default values for Cash and bank management parameters for petty cash, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 2. On the **Cash** tab, enter the following information.
@@ -230,14 +230,14 @@ To set up default values for Cash and bank management parameters for petty cash,
 
 ### Set up cash journal names in General ledger
 
-To create a journal for cash transaction posting, follow these steps.
+To create a journal for cash transaction posting, follow these steps:
 
 1. Go to **General ledger** \> **Journal setup** \> **Journal names**, and create a record.
 2. In the **Journal type** field, specify **Cash**. Define other default journal parameters as needed.
 
 ## Daily cash operations via a Slip journal
 
-To create a cash document via a Slip journal, follow these steps.
+To create a cash document via a Slip journal, follow these steps:
 
 1. Go to **Cash and bank management** \> **Petty cash** \> **Slip journal**, and create a journal.
 2. On the Action Pane, select **Lines**.
@@ -357,7 +357,7 @@ To review journal entries, on the Action Pane, select **Validate**.
 
 ## Daily cash operations via a General journal
 
-To create a cash transaction via a General journal, follow these steps.
+To create a cash transaction via a General journal, follow these steps:
 
 1. Go to **General ledger** \> **Journal entries** \> **General journals**, and create a journal.
 2. On the Action Pane, select **Lines**.

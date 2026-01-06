@@ -30,7 +30,7 @@ This article describes how to create LTL classes in Microsoft Dynamics 365 Suppl
 
 ## Create an LTL class
 
-To create an LTL class, follow these steps.
+To create an LTL class, follow these steps:
 
 1. Follow one of these steps:
 

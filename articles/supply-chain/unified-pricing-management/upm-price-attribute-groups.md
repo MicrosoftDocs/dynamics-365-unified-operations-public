@@ -74,7 +74,7 @@ When you build a pricing rule, you can combine one header price attribute group 
 
 ## Manage price attribute groups
 
-To add, edit, or delete a price attribute group, follow these steps.
+To add, edit, or delete a price attribute group, follow these steps:
 
 1. Go to **Pricing management \> Setup \> Price attribute groups \> Price attribute groups**.
 1. Follow one of these steps:

@@ -25,7 +25,7 @@ The following procedures walk you through how to set up Chinese vouchers with sp
 
 ## Set up a Chinese voucher type
 
-To set up a Chinese voucher type, follow these steps.
+To set up a Chinese voucher type, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Chinese voucher type \> Voucher type**.
 1. Select **New**.
@@ -76,14 +76,14 @@ To set up a Chinese voucher type, follow these steps.
 
 ## Set up more parameters
 
-To set up more parameters, follow these steps.
+To set up more parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Ledger setup \> General ledger parameters**. On the **General ledger parameters** page, first enable **Chinese voucher**, then allow duplicate vouchers in the fiscal year. Chinese vouchers must be renumbered starting from "1" for each fiscal period.  
 1. In the **Check for voucher used** field, select an option.
 
 ## Set up the print layout
 
-To set up the print layout, follow these steps.
+To set up the print layout, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Chinese voucher type \> Print layout**.
 1. Select **New**.

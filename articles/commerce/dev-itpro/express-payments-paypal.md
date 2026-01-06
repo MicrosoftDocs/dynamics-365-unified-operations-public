@@ -51,7 +51,7 @@ After the user completes the action in the PayPal window, they are directed back
 
 ### Add the payment express module with PayPal to a fragment
 
-To add the payment express module with PayPal to a fragment in Commerce site builder, follow these steps.
+To add the payment express module with PayPal to a fragment in Commerce site builder, follow these steps:
 
 1. Navigate to your site.
 1. In the left navigation pane, select **Fragments**, and then select **New**.
@@ -68,7 +68,7 @@ To add the payment express module with PayPal to a fragment in Commerce site bui
 
 ### Add the payment express fragment to the checkout page
 
-To add the payment express fragment to the checkout page in site builder, follow these steps.
+To add the payment express fragment to the checkout page in site builder, follow these steps:
 
 1. Navigate to your site.
 1. In the left navigation pane, select **Pages**, and then select your site's checkout page.
@@ -91,7 +91,7 @@ To add the payment express fragment to the checkout page in site builder, follow
 
 ### Add the payment express fragment to the cart page
 
-To add the payment express fragment to the cart page in site builder, follow these steps.
+To add the payment express fragment to the cart page in site builder, follow these steps:
 
 1. Navigate to your site.
 1. In the left navigation pane, select **Pages**, and then select your site's cart page.

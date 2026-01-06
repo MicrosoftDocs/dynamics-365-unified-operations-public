@@ -483,7 +483,7 @@ You can manually manage allocations by using the Inventory Visibility app in Pow
 
 The **Allocation** tab on the **Operational visibility** page serves as the user interface where you can create, consume, reallocate, and query allocations, as described in later subsections.
 
-To open the allocation user interface, follow these steps.
+To open the allocation user interface, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.

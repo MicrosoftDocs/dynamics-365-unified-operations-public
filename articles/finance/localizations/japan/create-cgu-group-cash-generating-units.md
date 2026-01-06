@@ -27,7 +27,7 @@ Before you complete the procedures, you must first select the **Fixed Asset** co
 
 ## Create a CGU group
 
-To create a CGU group, follow these steps.
+To create a CGU group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Impairment \> CGU groups**.
 1. Select **New**. You can create multiple CGU groups for testing if you're not sure about the appropriate combinations of fixed assets and CGUs.  
@@ -38,7 +38,7 @@ To create a CGU group, follow these steps.
 
 ## Create CGUs under the CGU group
 
-To create CGUs under the CGU group, follow these steps.
+To create CGUs under the CGU group, follow these steps:
 
 1. Select **New**.
 1. In the **Name** field, enter a value.
@@ -49,7 +49,7 @@ To create CGUs under the CGU group, follow these steps.
 
 ## Assign shared assets and goodwill to the CGU group
 
-To assign shared assets and goodwill to the CGU group, follow these steps.
+To assign shared assets and goodwill to the CGU group, follow these steps:
 
 1. Expand the **Shared assets and goodwill** section.
 1. Select **Massive import**. Microsoft recommends that you specify a condition that adds all the assets that meet the condition at once. You can also enter assets one at a time in the grid.  
@@ -58,7 +58,7 @@ To assign shared assets and goodwill to the CGU group, follow these steps.
 
 ## Configure CGUs
 
-To configure CGUs, follow these steps.
+To configure CGUs, follow these steps:
 
 1. Select **Assign fixed assets**.
 1. Use the Quick Filter to find the CGU to edit. Enter the first CGU that you noted previously.  
@@ -78,7 +78,7 @@ To configure CGUs, follow these steps.
 
 ## Activate the CGU group
 
-To activate the CGU group, follow these steps.
+To activate the CGU group, follow these steps:
 
 1. Select **Activate**. Only active CGU groups can run recognition tests.  
 1. Select **Yes**.

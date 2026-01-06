@@ -63,7 +63,7 @@ The following image shows an example of a video player module on a home page.
 > [!NOTE] 
 > Before you create a video player module, you must first upload a video to the Media Library.
 
-To add a video player module to a new page and set the required properties, follow these steps.
+To add a video player module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Video player template**, and then select **OK**.

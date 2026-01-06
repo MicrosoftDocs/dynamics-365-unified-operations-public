@@ -25,7 +25,7 @@ You can use the Client-Bank interface to automatically reconcile bank payments a
 
 Before you start to use the Client-Bank functionality, import ER configurations from the global repository of the configuration service.
 
-To import configurations, follow these steps.
+To import configurations, follow these steps:
 
 1. In the Global repository, import the following configurations:
 
@@ -45,7 +45,7 @@ To import configurations, follow these steps.
 
 ### Set up kinds of documents
 
-To set up kinds of documents, follow these steps.
+To set up kinds of documents, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Payment order setup** \> **Kinds of document**.
 1. On the Action Pane, select **New**.
@@ -63,7 +63,7 @@ To set up kinds of documents, follow these steps.
 
 ### Set up methods of payment for export
 
-To set up a matching format to export a payment and the specified payment method, follow these steps.
+To set up a matching format to export a payment and the specified payment method, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payment setup** \> **Methods of payment**.
 1. On the Action Pane, select **New**, and enter information about the new method of payment.
@@ -93,7 +93,7 @@ By default, all downloaded payments are stored in the **Downloads** folder. For 
 
 Outgoing payments can be payments to vendors, or the purchase, sale, or transfer of currency and cash-bank operations.
 
-To create and set up outgoing payments, follow these steps.
+To create and set up outgoing payments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Vendor payment journal** for payments to vendors.
 1. Create and set up **Vendor payment journal**. For more information, see [Set up and process payment orders for Russia](rus-payment-order-settings-processing.md#create-payment-order-lines).
@@ -125,7 +125,7 @@ To create and set up outgoing payments, follow these steps.
 
 ### Export payments to the Client-Bank system
 
-To export payments to the Client-Bank system, follow these steps.
+To export payments to the Client-Bank system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 1. Mark the necessary lines.
@@ -144,7 +144,7 @@ To export payments to the Client-Bank system, follow these steps.
 
 ### Cancel payment export
 
-To cancel payment export, follow these steps.
+To cancel payment export, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Periodic tasks** \> **Third party bank** \> **Exported payments**.
 

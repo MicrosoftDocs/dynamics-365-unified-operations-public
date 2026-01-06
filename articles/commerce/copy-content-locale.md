@@ -25,7 +25,7 @@ The following procedures explain how to add a new locale to an existing channel,
 
 ## Add a new locale
 
-To add a new locale in Commerce site builder, follow these steps.
+To add a new locale in Commerce site builder, follow these steps:
 
 1. In site builder, go to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Channels**.
@@ -44,7 +44,7 @@ To add a new locale in Commerce site builder, follow these steps.
 
 ## Copy all content items to a new locale
 
-To copy all content items to a new locale in Commerce site builder, follow these steps.
+To copy all content items to a new locale in Commerce site builder, follow these steps:
 
 1. In site builder, go to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Channels**.
@@ -61,7 +61,7 @@ To copy all content items to a new locale in Commerce site builder, follow these
 
 ## Monitor the status of the locale copy
 
-To monitor the status of a locale copy operation, follow these steps.
+To monitor the status of a locale copy operation, follow these steps:
 
 1. In site builder, go to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Jobs**.
@@ -69,7 +69,7 @@ To monitor the status of a locale copy operation, follow these steps.
 
 ## Delete a locale
 
-To delete a locale and all the contents in that locale, follow these steps.
+To delete a locale and all the contents in that locale, follow these steps:
 
 1. In site builder, go to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Channels**.

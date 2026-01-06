@@ -44,7 +44,7 @@ The following image shows an example of an accordion module that is used to orga
 
 ## Add an accordion module to a FAQ page
 
-To add an accordion module to a FAQ page and set its properties in site builder, follow these steps.
+To add an accordion module to a FAQ page and set its properties in site builder, follow these steps:
 
 1. Go to **Pages**, and use the Fabrikam marketing template (or any template that has no restrictions) to create a new page that is named **Store FAQ**.
 1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add module**.

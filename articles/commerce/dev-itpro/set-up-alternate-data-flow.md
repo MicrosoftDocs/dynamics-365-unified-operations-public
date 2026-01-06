@@ -58,7 +58,7 @@ To install the Export to Data Lake add-in, follow the instructions in [Install E
 
 Table synchronization from Dynamics 365 to Azure Data Lake Storage is managed on the **Export to Data Lake** page. Because that page doesn't currently have a menu item, only users in the **System Administrator** security role can open it.
 
-To configure tables to export in Dynamics 365, follow these steps.
+To configure tables to export in Dynamics 365, follow these steps:
 
 1. To open the **Export to Data Lake** page, add the string `?mi=DataFeedsDefinitionWorkspace` to the environment's base URL, as shown in the following example:
 
@@ -86,7 +86,7 @@ Use the Common Data Model utility console application (CDMUtil_ConsoleApp) to cr
 > [!NOTE]
 > The following steps assume that no extension data is being added to the RetailSales cube.
 
-To create a database in Synapse, follow these steps.
+To create a database in Synapse, follow these steps:
 
 1. Go to [Dynamics-365-FastTrack-Implementation-Assets GitHub](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution#2-cdmutil-console-app), and follow the steps to download the **CDMUtilConsoleApp.zip** file.
 1. Extract the zip file into a local folder.
@@ -132,7 +132,7 @@ The **/RetailSales** cube folder can be found in the following location:
 
 ### Create a new RetailSales folder and upload the model file
 
-To create a new **RetailSales** directory and upload the **model.json** file to Data Lake Storage, follow these steps.
+To create a new **RetailSales** directory and upload the **model.json** file to Data Lake Storage, follow these steps:
 
 1. Create a new empty directory at the same level as the previous directory, and name it **RetailSales**.
 1. Upload the **model.json** file to the new directory.
@@ -141,7 +141,7 @@ To create a new **RetailSales** directory and upload the **model.json** file to 
 
 The pipeline will read the RetailSales cube views and export the data to .csv files in Data Lake Storage.
 
-To create a pipeline to copy the RetailSales cube data, follow these steps.
+To create a pipeline to copy the RetailSales cube data, follow these steps:
 
 1. In the Synapse workspace, select the **Integrate** tab.
 1. Select the plus sign (**+**), and then select **Import from pipeline template**.
@@ -279,7 +279,7 @@ WHERE  ((((T1.OMOPERATINGUNITID = T2.RECID)
         AND T2.INSTANCERELATIONTYPE IN (8363));
 ```
 
-To update the hard-coded integer, follow these steps.
+To update the hard-coded integer, follow these steps:
 
 1. In Dynamics 365, look up the **ChannelID** value for your online channel.
 1. In an instance of SQL Server Management Studio (SSMS) that is attached to the Synapse database, run the following query.
@@ -306,7 +306,7 @@ The error message might include the following text:
 
 In this example, the **RetailSales_RetailProductCategory** task fails, and you receive a "Max errors count" error.
 
-To debug the error, follow these steps.
+To debug the error, follow these steps:
 
 1. Open the **EntityList.json** file in a text editor (for example, Visual Studio Code).
 1. Find the view definition for **RetailSales_RetailProductCategory**.

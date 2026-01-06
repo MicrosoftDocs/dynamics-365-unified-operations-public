@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 
 Users in any Microsoft Dynamics 365 finance and operations environment must comply with Microsoft guidelines to avoid sign-in failures. As of Dynamics 365 Finance version 10.0.39, administrators can use the **Invalid users** page to view details about invalid users.
 
-To view invalid users, follow these steps.
+To view invalid users, follow these steps:
 
 1. Go **System administration** \> **Invalid users**.
 2. Select **Refresh**. This page shows a list of users who require attention from the system administrator. If there are no invalid users, the page is blank.

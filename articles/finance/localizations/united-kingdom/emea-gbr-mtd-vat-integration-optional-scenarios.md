@@ -26,7 +26,7 @@ Her Majesty's Revenue and Customs (HMRC) lets you retrieve information about val
 
 ## Retrieve information about VAT payments
 
-To retrieve information about VAT payments, follow these steps.
+To retrieve information about VAT payments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select **New**.
@@ -43,7 +43,7 @@ The following illustration shows a simplified representation of the processing f
 
 ## Retrieve information about VAT liabilities
 
-To retrieve information about VAT liabilities, follow these steps.
+To retrieve information about VAT liabilities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select **New**.

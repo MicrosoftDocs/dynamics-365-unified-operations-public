@@ -27,7 +27,7 @@ When you print a copy of an invoice, you can also select the **Adjustment** opti
 
 Before you can print a substitution tax invoice or an adjustment tax invoice for Thailand, you must complete the following setup procedure. 
 
-To fulfill the prerequisites, follow these steps.
+To fulfill the prerequisites, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **General ledger parameters** page.
 1. On the **Sales tax** FastTab, enable the **Manage realized and unrealized VAT** and **Use tax branch** parameters.
@@ -47,7 +47,7 @@ To fulfill the prerequisites, follow these steps.
 
 If the substitution/adjustment tax invoice functionality is enabled, the original tax invoice can be printed only one time. If you try to reprint it, you receive an error. Follow these steps to reprint the tax invoice.
 
-To print a substitution invoice, follow these steps.
+To print a substitution invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Invoice journal** page and select the invoice to reprint.
 1. On the Action Pane, on the **Invoice** tab, select **Adjustment**.
@@ -72,7 +72,7 @@ If the substitution/adjustment tax invoice functionality is enabled, you can adj
 - Branch number
 - Branch name
 
- To adjust the customer information and reprint the tax invoice, follow these steps.
+ To adjust the customer information and reprint the tax invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Invoice journal** page and select the invoice to reprint.
 1. On the Action Pane, on the **Invoice** tab, select **Adjustment**.

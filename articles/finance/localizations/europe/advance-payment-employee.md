@@ -23,7 +23,7 @@ The following procedures demonstrate how to set up and register transactions for
 
 ## Create a new cash account
 
-To create a new cash account, follow these steps.
+To create a new cash account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Bank accounts \> Cash accounts**.
 1. Select **New**.
@@ -37,7 +37,7 @@ To create a new cash account, follow these steps.
 
 ## Create a new journal
 
-To create a new journal, follow these steps.
+To create a new journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Journal names**.
 1. Select **New**.
@@ -52,7 +52,7 @@ To create a new journal, follow these steps.
 
 ## Create an advance holder group
 
-To create an advance holder group, follow these steps.
+To create an advance holder group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Advance holders \> Advance holder groups**.
 1. Select **New**.
@@ -62,7 +62,7 @@ To create an advance holder group, follow these steps.
 
 ## Create an employee posting profile
 
-To create an employee posting profile, follow these steps.
+To create an employee posting profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Advance holders \> Employee posting profiles**.
 1. Select **New**.
@@ -75,7 +75,7 @@ To create an employee posting profile, follow these steps.
 
 ## Set up advance holder parameters
 
-To set up advance holder parameters, follow these steps.
+To set up advance holder parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Accounts payable parameters**.
 1. Select the **Advance holders** tab.
@@ -89,7 +89,7 @@ To set up advance holder parameters, follow these steps.
 
 ## Set up a cash posting profile
 
-To set up a cash posting profile, follow these steps.
+To set up a cash posting profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash posting profiles**.
 1. Select **New**.
@@ -102,7 +102,7 @@ To set up a cash posting profile, follow these steps.
 
 ## Set up cash and bank parameters
 
-To set up cash and bank parameters, follow these steps.
+To set up cash and bank parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash and bank management parameters**.
 1. Select the **Cash** tab.
@@ -118,7 +118,7 @@ To set up cash and bank parameters, follow these steps.
 
 ## Set up terms of payment
 
-To set up terms of payment, follow these steps.
+To set up terms of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Terms of payment**.
 1. Select **Edit**.
@@ -127,7 +127,7 @@ To set up terms of payment, follow these steps.
 
 ## Create a new worker
 
-To create a new worker, follow these steps.
+To create a new worker, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Human resources \> Workers \> Workers**.
 1. Select **New**.
@@ -139,7 +139,7 @@ To create a new worker, follow these steps.
 
 ## Set up a worker as an advance holder
 
-To set up a worker as an advance holder, follow these steps.
+To set up a worker as an advance holder, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Advance holders \> Advance holders**.
 1. Select **Edit**.
@@ -149,7 +149,7 @@ To set up a worker as an advance holder, follow these steps.
 
 ## Create and post a purchase order invoice
 
-To create and post a purchase order invoice, follow these steps.
+To create and post a purchase order invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Select **New**.
@@ -181,7 +181,7 @@ To create and post a purchase order invoice, follow these steps.
 
 ## Balance and close advance holders transactions
 
-To balance and close advance holders transactions, follow these steps.
+To balance and close advance holders transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Advance holders \> Advance holders**.
 1. Select **Transactions**.

@@ -50,7 +50,7 @@ For more information, see [Automatic linking on B2B sites](../dev-itpro/identity
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. You must define a number sequence that is used to generate the ID for the customer hierarchy. For more information about number sequences, see [Number sequences overview](/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-To define a number sequence for the customer hierarchy in Commerce headquarters, follow these steps.
+To define a number sequence for the customer hierarchy in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Number sequences \> Number sequences**.
 1. Create a new number sequence, or select an existing number sequence to reuse it.

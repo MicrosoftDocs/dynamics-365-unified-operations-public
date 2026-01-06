@@ -22,7 +22,7 @@ This article provides information that will help you get started with importing 
 
 ## Set up vendor invoice import in the Electronic Invoicing service
 
-To set up vendor invoice import in the **Globalization studio** workspace, follow these steps.
+To set up vendor invoice import in the **Globalization studio** workspace, follow these steps:
 
 1. Consult the list of generally available Electronic invoicing features.
 2. Select and import the Electronic invoicing feature. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).

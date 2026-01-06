@@ -36,7 +36,7 @@ In business performance planning, dimensions can be created in three ways:
 
 You can create a new dimension in business performance planning from an existing Dataverse table. This type of dimension is referred to as a linked dimension.
 
-To create a linked dimension, follow these steps.
+To create a linked dimension, follow these steps:
 
 1. Go to **Create dimension**.
 1. In the **Dimension** field, enter a name for the dimension. This name can contain spaces and special characters.
@@ -118,7 +118,7 @@ You can make the following changes to dimensions in the business performance pla
 
 ### Edit data in Excel
 
-To add new rows of data to a dimension in the business performance planning app, follow these steps.
+To add new rows of data to a dimension in the business performance planning app, follow these steps:
 
 1. On the **Dimensions** page, select **Edit data in Excel**.
 1. Open the workbook, and select **Enable editing**.
@@ -136,7 +136,7 @@ After you create a new row of data or edit a cell value, you must select **Refre
 
 ### Add a new row of data
 
-To add new rows of data to a dimension, follow these steps.
+To add new rows of data to a dimension, follow these steps:
 
 1. On the **Dimension detail** page, select **New row**.
 1. After you finish entering all the new rows of data, save your changes.
@@ -144,7 +144,7 @@ To add new rows of data to a dimension, follow these steps.
 
 ### Delete a row of data 
 
-To delete a row of data from a dimension, follow these steps.
+To delete a row of data from a dimension, follow these steps:
 
 1. On the **Dimension detail** page, select **Delete row**.
 2. When you're prompted, confirm the deletion of the row.
@@ -154,7 +154,7 @@ To delete a row of data from a dimension, follow these steps.
 
 ### Add a new column of data
 
-To add a new column of data to any dimension, follow these steps.
+To add a new column of data to any dimension, follow these steps:
 
 1. On the **Dimensions** page, select **New column**.
 1. Enter a name for the column.
@@ -171,7 +171,7 @@ A linked column lets you create a restricted list of values that can be used whe
 
 For example, you want to have a **Scenario** dimension that you can use to track your various scenarios, such as the **Budget 2025** scenario. You want the **Scenario** dimension to have the following attributes: **Scenario name**, **Scenario description**, and **Status**. For the **Status** attribute, you don't want users to be able to make up their own status values and assign them to the scenarios. Instead, you want users to select from a list of specific status values, such as **Not started**, **In review**, and **Approved**. Therefore, you create a **Scenario** dimension that contains the **Scenario name** and **Description** fields. You then create a secondary **Status** dimension that contains the **Status name** and **Status description** fields. After the **Status** dimension is created and populated with the statuses, you go back to the **Scenario** dimension and add a linked column that points to the **Status** dimension. Then, when you add new scenarios to the **Scenario** dimension, you select the status from a list of status values.
 
-To add a linked column, follow these steps.
+To add a linked column, follow these steps:
 
 1. On the **Dimension detail** page, select **New linked column**.
 1. In the **Target column** field, enter the name of the new column that's being added to the dimension. For the preceding example, enter **Status**.

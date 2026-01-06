@@ -35,7 +35,7 @@ The submission process can be run manually or in the background.
 > [!NOTE]
 > In some specific scenarios, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of electronic invoices requires that you complete the following additional steps.
 
-To submit the generated electronic invoices in batch mode, follow these steps.
+To submit the generated electronic invoices in batch mode, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 2. In the **Channel** field, select the export channel, and then select **OK**. The export channel must be created in advance.

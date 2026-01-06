@@ -19,7 +19,7 @@ This article describes how to export point of sale (POS) screen layouts for impo
 
 ## Export screen layout data
 
-To export screen layout data from an environment, follow these steps.
+To export screen layout data from an environment, follow these steps:
 
 1. In the Commerce headquarters environment that you want to export data from, go to **Data management** \> **Framework parameters**.
 1. Select **Entity settings**.
@@ -66,7 +66,7 @@ To export screen layout data from an environment, follow these steps.
 
 If you require additional filters, you can add related tables. For example, you can add the **Layout sizes** table to export only a specific size or sizes from the selected list of layouts. You add this table to the entity using a table join.
 
-To add the **Layout sizes** table, follow these steps.
+To add the **Layout sizes** table, follow these steps:
 
 1. Select the rows for **POS screen layout button grid zones**, **POS screen layout image zones**, and **RetailTillLayoutConfigurationEntity**.
 1. For the **POS screen layout button grid zones** entity, in the **Filter** column, select the funnel symbol.
@@ -93,7 +93,7 @@ After the batch job is completed, verify that the **Execution status** value for
 
 ## Import screen layout data to a new environment
 
-To import the screen layout data that you exported to a new environment, follow these steps.
+To import the screen layout data that you exported to a new environment, follow these steps:
 
 1. In headquarters for the new environment, go to **Data management** \> **Import**.
 1. In the **Group name** field, enter a name (for example, **Import POS layouts**).

@@ -20,7 +20,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 Any transaction that is created through Asset leasing can be reversed. Transactions that are reversed through Asset leasing update your lease data. Therefore, they also update the carrying values of the lease liability and right-of-use (ROU) asset.
 
-To create a reversing transaction for a lease, follow these steps.
+To create a reversing transaction for a lease, follow these steps:
 
 1. On either the **Asset transactions** page or the **Liability transactions** page, select the transaction, and then select **Reverse transaction**.
 2. In the dialog box that appears, you can edit the date when the reversing entry will be posted. By default, the **Date** field is set to the transaction posting date of the transaction that you selected. The reversing entry can't be posted earlier than the original posting date of the selected transaction.
@@ -32,7 +32,7 @@ The **Latest journal number** field on the **Schedule** page shows the journal n
 
 ## Revoke a reversed transaction
 
-To revoke a reversed transaction, follow these steps.
+To revoke a reversed transaction, follow these steps:
 
 1. On either the **Schedule** page or the **Transactions** page, select the original transaction.
 2. Follow one of these steps:

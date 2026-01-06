@@ -23,14 +23,14 @@ If a request isn't successful, the server issues HTTP status code error response
 
 ## Build a status code error response page
 
-To start to build a status code error response page, follow these steps.
+To start to build a status code error response page, follow these steps:
 
 1. In your preferred web browser, sign in to Dynamics 365 Commerce. 
 1. Select the site that you want to build a 4xx/5xx status code error response page for.
 
 ### Build the template
 
-To build the template for the status code error response page, follow these steps.
+To build the template for the status code error response page, follow these steps:
 
 1. Go to **Templates**.
 1. Select **New** to create a page template.
@@ -40,7 +40,7 @@ To build the template for the status code error response page, follow these step
 
 ### Build the status code error response page
 
-To build the status code error response page, follow these steps.
+To build the status code error response page, follow these steps:
 
 1. Go to **Pages**.
 1. Select **New** to create a page.
@@ -53,7 +53,7 @@ To build the status code error response page, follow these steps.
 
 ### Set up a redirect for the status code error response page
 
-To set up a redirect for the status code error response page, follow these steps.
+To set up a redirect for the status code error response page, follow these steps:
 
 1. Go to **URLs \> New \> New Alias**, and select the status code error response page that you built earlier.
 1. In the **Alias** field, enter either **default-4xx** or **default-5xx**, depending on the status code error response page that you're setting up a redirect for. These aliases must be published. Otherwise, the redirect won't work.

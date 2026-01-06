@@ -98,7 +98,7 @@ After you complete the example that is provided in this article, you will be abl
 
 ### Set up the license configuration
 
-To set up the license configuration, follow these steps.
+To set up the license configuration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> License configuration**.
 1. Under **Country/Regional specific features \> Russia**, select the **Cash flow management** checkbox.
@@ -108,7 +108,7 @@ To set up the license configuration, follow these steps.
 
 ### Optional: Set up an organization hierarchy for centralized payments
 
-To set up an organization hierarchy for centralized payments, follow these steps.
+To set up an organization hierarchy for centralized payments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Organization hierarchies**.
 1. In the left pane, select **Centralized Payments**.
@@ -124,7 +124,7 @@ To set up an organization hierarchy for centralized payments, follow these steps
 
 ### Set up a workflow for cash flow management 
 
-To set up a workflow for cash flow management, follow these steps.
+To set up a workflow for cash flow management, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash and bank management workflows**.
 1. Select **New** to create a record.
@@ -140,7 +140,7 @@ To set up a workflow for cash flow management, follow these steps.
 
 ### Set up a payment priority
 
-To set up a payment priority, follow these steps.
+To set up a payment priority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash flow management \> Payment priority**.
 
@@ -156,7 +156,7 @@ To set up a payment priority, follow these steps.
 
 ### Set up a payment request type
 
-To set up a payment request type, follow these steps.
+To set up a payment request type, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash flow management \> Payment request type**.
 
@@ -177,7 +177,7 @@ To set up a payment request type, follow these steps.
 
 This setup should be completed for a treasury company.
 
-To specify cash flow management parameters, follow these steps.
+To specify cash flow management parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash and bank management parameters**.
 1. On the **Cash flow management** tab, on the **Financial dimensions** FastTab, specify the dimension set. This step lets an organization determine which dimensions in the account structures that are associated with the chart of accounts (for legal entities in a centralized payment hierarchy) are available for cash flow management processing. For example, combinations of departments that have cost centers can be used for liquidity/cash flow forecast analysis.
@@ -201,7 +201,7 @@ To specify cash flow management parameters, follow these steps.
 
 This setup is available only if the **Payment request** license configuration key is turned on.
 
-To set up terms of payment, follow these steps.
+To set up terms of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Terms of payment**.
 1. Select **Edit**, and specify the payment request types for payments and prepayments, if specific payment request types should be used in these scenarios.
@@ -210,7 +210,7 @@ To set up terms of payment, follow these steps.
 
 ### Set up payment schedules
 
-To set up payment schedules, follow these steps.
+To set up payment schedules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Payment schedules**.
 1. Create a payment schedule.
@@ -223,7 +223,7 @@ To set up payment schedules, follow these steps.
 
 This setup should be completed for a treasury company.
 
-To set up the remittance en route account, follow these steps.
+To set up the remittance en route account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow forecasting \> Cash flow forecast setup**.
 1. On the **General ledger** tab, on the **Liquidity accounts** FastTab, select **Add**.
@@ -236,7 +236,7 @@ To set up the remittance en route account, follow these steps.
 
 This setup should be completed for a treasury company.
 
-To set up the minimum cash balance for bank accounts, follow these steps.
+To set up the minimum cash balance for bank accounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Bank accounts \> Bank accounts**.
 1. Select a bank account, and then select **Edit**.
@@ -248,7 +248,7 @@ To set up the minimum cash balance for bank accounts, follow these steps.
 
 This setup should be completed for a treasury company.
 
-To set up the minimum cash balance for cash accounts, follow these steps.
+To set up the minimum cash balance for cash accounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Bank accounts \> Cash accounts**.
 1. Select the cash account, and then select **Edit**.
@@ -261,7 +261,7 @@ To set up the minimum cash balance for cash accounts, follow these steps.
 > [!NOTE]
 > Setup procedure is similar for both purchase agreements and sales agreements
 
-To set up default payment order requisites for purchase agreements, follow these steps.
+To set up default payment order requisites for purchase agreements, follow these steps:
 
 1. Select **Accounts payable \> Purchase orders \> Purchase agreements**.
 1. Select a purchase agreement that has a method of payment that is associated with a payment order in Russian rubles (RUB).
@@ -286,7 +286,7 @@ Planned payments are generated for a purchase order if a payment schedule is cal
 
 This procedure should be completed in a subsidiary company.
 
-To generate planned payments, follow these steps.
+To generate planned payments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Create a purchase order. On the purchase order header, specify the terms of payments, payment schedule, method of payment, cash discount, and financial dimensions.
@@ -306,7 +306,7 @@ Planned payments are generated for a sales order if a payment schedule is calcul
 
 This step should be completed in a subsidiary company.
 
-To set up planned payments on sales orders, follow these steps.
+To set up planned payments on sales orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Create a sales order. On the sales order header, specify the terms of payments, payment schedule, method of payment, cash discount, and financial dimensions.
@@ -324,7 +324,7 @@ Planned payments are generated for a free text invoice if a payment schedule is 
 
 This step should be completed in a subsidiary company.
 
-To set up planned payments on free text invoices, follow these steps.
+To set up planned payments on free text invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Create a free text invoice. On the free text invoice header, specify the terms of payments, payment schedule, method of payment, cash discount, and financial dimensions.
@@ -336,7 +336,7 @@ To set up planned payments on free text invoices, follow these steps.
 
 This step should be completed for a treasury company.
 
-To set up periodic creation of planned payments, follow these steps.
+To set up periodic creation of planned payments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Periodic tasks \> Cash flow management \> Calculate planned payments**.
 1. Set the following parameters.
@@ -355,7 +355,7 @@ To set up periodic creation of planned payments, follow these steps.
 
 ### Create a manual payment request
 
-To create a manual payment request, follow these steps.
+To create a manual payment request, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Create a payment request.
@@ -414,7 +414,7 @@ The status of a payment request is automatically updated. The following table de
 
 You can cancel a payment request only if its status is **Opened**, **Confirmed**, or **Scheduled**.
 
-To cancel a payment request, follow these steps.
+To cancel a payment request, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Select a payment request.
@@ -432,7 +432,7 @@ You can put a payment request on hold only if its status is **Opened**, **Confir
 
 A payment request that is on hold isn't included in payment schedule journals.
 
-To put a payment request on hold, follow these steps.
+To put a payment request on hold, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Select a payment request.
@@ -455,7 +455,7 @@ You can split a payment request only if the following conditions are met:
 
 The system will create a payment request by copying all the main requisites from the original payment request. The amount and amount to pay of the original payment request will be reduced. If the status of the original payment is **Scheduled**, but the new payment request is out of range for the associated payment schedule journal, the status of the new payment request will be **Confirmed**.
 
-To split a payment request, follow these steps.
+To split a payment request, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Select a payment request.
@@ -468,7 +468,7 @@ To split a payment request, follow these steps.
 
 ### Copy a payment request
 
-To copy a payment request, follow these steps.
+To copy a payment request, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Select a payment request.
@@ -485,7 +485,7 @@ To copy a payment request, follow these steps.
 
 ### Create a payment request for a vendor invoice
 
-To create a payment request for a vendor invoice, follow these steps.
+To create a payment request for a vendor invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Create a purchase order. On the purchase order header, specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions.
@@ -514,7 +514,7 @@ To create a payment request for a vendor invoice, follow these steps.
 
 ### Create a payment request for a prepayment to a vendor
 
-To create a payment request for a prepayment to a vendor, follow these steps.
+To create a payment request for a prepayment to a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Create a purchase order. On the purchase order header, specify the terms of payments, payment schedules, method of payment, cash discount, and financial dimensions.
@@ -533,7 +533,7 @@ To create a payment request for a prepayment to a vendor, follow these steps.
 
 ### Create a payment request for a customer invoice return
 
-To create a payment request for a customer invoice return, follow these steps.
+To create a payment request for a customer invoice return, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Create a return sales order. On the sales order header, specify the terms of payments, method of payment, and financial dimensions.
@@ -572,7 +572,7 @@ To create a payment request for a customer invoice return, follow these steps.
 
 This procedure should be completed for a treasury company.
 
-To set up periodic creation of payment requests, follow these steps.
+To set up periodic creation of payment requests, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Periodic tasks \> Cash flow management \> Create payment requests**.
 1. Set the following parameters
@@ -599,7 +599,7 @@ You can update a payment request only if the following conditions are met:
 - The payment request isn't included in an unposted payment schedule journal.
 - The workflow status isn't **Submitted**.
 
-To update a payment request, follow these steps.
+To update a payment request, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> All payment requests**.
 1. Select a payment request that the **Outdated** checkbox is selected for.
@@ -614,7 +614,7 @@ To update a payment request, follow these steps.
 
 This step should be completed for a treasury company.
 
-To set up a periodic update of payment requests, follow these steps.
+To set up a periodic update of payment requests, follow these steps:
 
 1. Select **Cash and bank management \> Periodic tasks \> Cash flow management \> Update payment requests**.
 1. Set the following parameters
@@ -632,7 +632,7 @@ To set up a periodic update of payment requests, follow these steps.
 
 ### Set up a payment schedule journal
 
-To set up a payment schedule journal, follow these steps.
+To set up a payment schedule journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Cash flow management \> Payment schedule journal names**.
 
@@ -686,7 +686,7 @@ To set up a payment schedule journal, follow these steps.
 
 ### Payment plan processing
 
-To set up payment plan processing, follow these steps.
+To set up payment plan processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> Payment schedule journal**.
 1. Create a payment schedule journal. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
@@ -756,7 +756,7 @@ To set up payment plan processing, follow these steps.
 
 ### Payment register processing
 
-To set up payment register processing, follow these steps.
+To set up payment register processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Cash flow management \> Payment schedule journal**.
 1. Create a payment schedule journal. In the **Name** field, select a payment schedule journal of the **Payment register** type.

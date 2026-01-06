@@ -88,7 +88,7 @@ The serial number format is then formed by sequentially combining the values of 
 
 **1.field name** + **1.separator** + **2.field name** + **2.separator** + **3.field name** + **3.separator** + **4.field name** + **4.separator** + **5.field name**
 
-For example, to generate a 16-digit preprinted serial number (such as *AAA2025000000001*) that complies with legal regulations, follow these steps.
+For example, to generate a 16-digit preprinted serial number (such as *AAA2025000000001*) that complies with legal regulations, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Setup** \> **Preprinted serial numbers** \> **Parameters**.
 1. On the **Serial number formats** tab, select **New**.
@@ -128,7 +128,7 @@ The following table describes the fields that are used to set up a serial prefix
 
 After you define a serial number format, you should set up a serial prefix for the document type. 
 
-For example, to set up a serial prefix for the document type for the serial number format that you created for a 16-digit preprinted serial number (such as *AAA2025000000001*), follow these steps.
+For example, to set up a serial prefix for the document type for the serial number format that you created for a 16-digit preprinted serial number (such as *AAA2025000000001*), follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** \> **Setup** \> **Preprinted serial numbers** \> **Preprinted serial numbers**.
 1. In the **Document type** field, select the document type to create the serial prefix for.
@@ -181,7 +181,7 @@ This section explains how to use a serial prefix in a packing slip for a sales o
 
 When you want to create a packing slip for a *sales order*, you must select the serial prefix on the **Packing slip posting** page.
 
-To assign a serial prefix in a packing slip for a sales order, follow these steps.
+To assign a serial prefix in a packing slip for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create a packing slip for.
@@ -199,7 +199,7 @@ After the posting process, you can find the preprinted serial number that is ass
 
 When you want to create a packing slip for a *sales return order*, you can't select the serial prefix on the **Packing slip posting** page. Instead, you must set the **Serial number** field to the packing slip number from the document that you received from the customer.
 
-To create a packing slip for a sales return order, follow these steps.
+To create a packing slip for a sales return order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create a packing slip for.
@@ -213,7 +213,7 @@ This section explains how to use a serial prefix in a product receipt for a purc
 
 When you want to create a product receipt for a *purchase order*, you can't select the serial prefix on the **Product receipt posting** page. Instead, you must set the **Product receipt** field to the product receipt number from the document that you received from the vendor.
 
-To create a product receipt for a purchase order, follow these steps.
+To create a product receipt for a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create a product receipt for.
@@ -223,7 +223,7 @@ To create a product receipt for a purchase order, follow these steps.
 
 When you want to create a product receipt for a *purchase return order*, you must select the serial prefix on the **Product receipt posting** page.
 
-To assign a serial prefix in a product receipt for a purchase return order, follow these steps.
+To assign a serial prefix in a product receipt for a purchase return order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create a product receipt for.
@@ -245,7 +245,7 @@ This section explains how to use a serial prefix in a free text invoice.
 
 When you want to create a free text invoice that has a *positive* amount, you must select the serial prefix in the **Serial prefix** field.
 
-To assign a serial prefix in a free text invoice that has a positive amount, follow these steps.
+To assign a serial prefix in a free text invoice that has a positive amount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice to post.
@@ -256,7 +256,7 @@ After the posting process, you can find the preprinted serial number that is ass
 
 When you want to create a free text invoice that has a *negative* amount, you can't select the serial prefix (because the **Serial prefix** field is unavailable). Instead, you must set the **Preprinted invoice** field to the invoice number from the document that you received from the customer.
 
-To create a free text invoice that has a negative amount, follow these steps.
+To create a free text invoice that has a negative amount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select the free text invoice to post.
@@ -269,7 +269,7 @@ This section explains how to use a serial prefix in an invoice for a sales order
 
 When you want to create an invoice for a *sales order*, you must select the serial prefix in the **Serial prefix** field.
 
-To assign a serial prefix in an invoice for a sales order, follow these steps.
+To assign a serial prefix in an invoice for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create an invoice for.
@@ -281,7 +281,7 @@ After the posting process, you can find the preprinted serial number that is ass
 
 When you want to create an invoice for a *sales return order*, you can't select the serial prefix. Instead, you must set the **Serial number** field to the invoice number from the document that you received from the customer.
 
-To create an invoice for a sales return order, follow these steps.
+To create an invoice for a sales return order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select the sales order to create an invoice for.
@@ -295,7 +295,7 @@ This section explains how to use a serial prefix in an invoice for a purchase or
 
 When you want to create an invoice for a *purchase order*, you can't select the serial prefix. Instead, you must set the **Product receipt** field to the invoice number from the document that you received from the vendor.
 
-To create an invoice for a purchase order, follow these steps.
+To create an invoice for a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create an invoice for.
@@ -305,7 +305,7 @@ To create an invoice for a purchase order, follow these steps.
 
 When you want to create an invoice for a *purchase return order*, you must select the serial prefix in the **Serial prefix** field.
 
-To assign a serial prefix in an invoice for a purchase return order, follow these steps.
+To assign a serial prefix in an invoice for a purchase return order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select the purchase order to create an invoice for.

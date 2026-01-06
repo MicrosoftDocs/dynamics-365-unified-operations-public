@@ -116,13 +116,13 @@ Companies must record VAT on prepayments from customers, even though the sale ha
 
 Each advance invoice can be linked to only one sales order or free text invoice at a time. You can reassign an existing advance invoice to another sales order or free text invoice, provided that no prepayments are linked to the advance invoice.
 
-To link an advance invoice to a sales order, follow these steps.
+To link an advance invoice to a sales order, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Sales order**.
 1. Select the sales order to link to the advance invoice, and then select **OK**.
 
-To link an advance invoice to a free text invoice, follow these steps.
+To link an advance invoice to a free text invoice, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Free text invoice**.
@@ -184,18 +184,18 @@ When you create a new payment journal, you can automatically generate payment jo
 
 ## Link a prepayment to an advance invoice
 
-To link a prepayment to an advance invoice from the payment journal, follow these steps.
+To link a prepayment to an advance invoice from the payment journal, follow these steps:
 
 - Open the payment journal, select the line that has the prepayment, and then select **Functions** &gt; **Link to advance invoices**.
 
-To link a prepayment to an advance invoice from the **Customer transactions** page, follow these steps.
+To link a prepayment to an advance invoice from the **Customer transactions** page, follow these steps:
 
 1. Select **All customers** &gt; **Customer** &gt; **Transactions**.
 1. Select the payment journal, select the line that has the prepayment, and then select **Functions** &gt; **Link to advance invoices**.
 
 ## Link an advance invoice to a prepayment
 
-To link an advance invoice to a prepayment line, follow these steps.
+To link an advance invoice to a prepayment line, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Prepayment**.
@@ -238,7 +238,7 @@ An advance invoice can have one of the following statuses: **Opened**, **Partial
 
 Each advance invoice can be linked to only one purchase order at a time. You can reassign an existing advance invoice to another purchase order, provided that no prepayments are linked to the advance invoice.
 
-To link an advance invoice to a purchase order, follow these steps.
+To link an advance invoice to a purchase order, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Purchase order**.
@@ -267,7 +267,7 @@ You can use the **Advance invoice** and **Prepayment handling** functionality in
 > [!NOTE]
 > Clear the value in the **Posting profile** field on the **Advance invoice** FastTab on the **Update** tab of the **Account receivable parameters**. When you create the advance invoice, set the **Post tax** option to **Yes**.
 
-To create a prepayment handling and link it to an advance invoice, follow these steps.
+To create a prepayment handling and link it to an advance invoice, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers**, and find and open the customer record.
 2. On the Action Pane, select **Customer** \> **Transactions**, select the prepayment transaction, and then select **Prepayment handling**.

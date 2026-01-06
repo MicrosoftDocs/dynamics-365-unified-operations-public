@@ -115,7 +115,7 @@ If you have a large planning job that frequently times out, you might be able to
 
 For example, you have a master plan that's named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If this job often times out after 60 minutes, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). In this way, each smaller job has the full 60-minute timeout window. You aren't trying to use the same 60 minutes to plan all 1,000 items.
 
-To split a large job into several jobs, follow these steps.
+To split a large job into several jobs, follow these steps:
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 1. In the grid, find the recurring planning job that's timing out. Then select the value in the **Job ID** column to open the job details.
@@ -161,7 +161,7 @@ If your products have different characteristics that affect planning, you should
 
 For example, you have a master plan for purchasing items that have a long lead time (such as a year) but that are used to produce manufactured products that have a short manufacturing lead time (such as a week). In this case, you can make one master plan for purchased products (*PlanPurch*) that has a coverage time fence of 365 days. Then make another plan for manufactured items (*PlanManuf*) that has a coverage time fence of 30 days. Because each set of products is in a different master plan, you can run both master plan jobs in parallel. When you run different plans in different batch tasks, each batch task can run in parallel. They don't have to run sequentially.
 
-To implement this strategy, follow these steps.
+To implement this strategy, follow these steps:
 
 1. Open your existing master plan, and modify it so that it covers only a subset of the original items (for example, purchased items). You can make this modification by adding a filter as described in [Applying a plan filter](plan-filters.md#apply-a-plan-filter).
 1. Create another master plan to cover the remaining items. Again, set up a [plan filter](plan-filters.md#apply-a-plan-filter) to include only the items that you want to include in this plan (for example, manufactured items). This plan can be a copy of the original plan that you modify to filter for a different set of items.

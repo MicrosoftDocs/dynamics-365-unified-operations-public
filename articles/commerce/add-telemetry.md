@@ -30,7 +30,7 @@ A fragment allows you to reuse inline or external script code across all pages o
 
 ### Create a reusable fragment for your inline script code
 
-To create a reusable fragment for your inline script code in site builder, follow these steps.
+To create a reusable fragment for your inline script code in site builder, follow these steps:
 
 1. Go to **Fragments**, and then select **New**.
 1. In the **New fragment** dialog box, select **Inline script**.
@@ -42,7 +42,7 @@ To create a reusable fragment for your inline script code in site builder, follo
 
 ### Create a reusable fragment for your external script code
 
-To create a reusable fragment for your external script code in site builder, follow these steps.
+To create a reusable fragment for your external script code in site builder, follow these steps:
 
 1. Go to **Fragments**, and then select **New**.
 1. In the **New fragment** dialog box, select **External script**.
@@ -57,7 +57,7 @@ To create a reusable fragment for your external script code in site builder, fol
 
 ## Add a fragment that includes script code to a template
 
-To add a fragment that includes script code to a template in site builder, follow these steps.
+To add a fragment that includes script code to a template in site builder, follow these steps:
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
@@ -72,7 +72,7 @@ If you want to insert an inline or external script directly into a set of pages 
 
 ### Add an inline script directly to a template
 
-To add an inline script directly to a template in site builder, follow these steps.
+To add an inline script directly to a template in site builder, follow these steps:
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
@@ -84,7 +84,7 @@ To add an inline script directly to a template in site builder, follow these ste
 
 ### Add an external script directly to a template
 
-To add an external script directly to a template in site builder, follow these steps.
+To add an external script directly to a template in site builder, follow these steps:
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.

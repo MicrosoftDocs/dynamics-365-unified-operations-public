@@ -24,7 +24,7 @@ This article provides an overview of the process for setting up and configuring 
 
 The Electronic Invoicing service is a set of microservices that's hosted in Microsoft datacenters. By default, customers of Dynamics 365 Finance and Dynamics 365 Supply Chain Management don't have access to the Electronic Invoicing service. You must install it as an add-in in Microsoft Dynamics Lifecycle Services. When you install the add-in, you register your Finance or Supply Chain Management environment in the register of applications that are allowed to connect to the Electronic Invoicing service.
 
-To register an environment, follow these steps.
+To register an environment, follow these steps:
 
 1. Sign in to your Lifecycle Services account.
 1. On the project dashboard, select a Lifecycle Services project.

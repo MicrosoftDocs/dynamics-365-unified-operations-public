@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.18
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
-To create the extension installer for a Modern POS extension, follow these steps.
+To create the extension installer for a Modern POS extension, follow these steps:
 
 1. In Microsoft Visual Studio 2017, create a new console application (.NET Core), and name it **ModernPos.Installer**.
 2. Edit the .proj file, and change the target framework to the .NET Framework version 4.6.1, as shown in the following XML.

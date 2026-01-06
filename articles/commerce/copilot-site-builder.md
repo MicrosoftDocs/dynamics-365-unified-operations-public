@@ -49,7 +49,7 @@ Copilot in site builder offers the following capabilities:
 
 To use Copilot in site builder, you must first enable the feature in site builder.
 
-To enable the Copilot in site builder feature, follow these steps.
+To enable the Copilot in site builder feature, follow these steps:
 
 1. In site builder, go to **Tenant settings \> Features**.
 1. Set the **Copilot for Dynamics 365 content generation** option to **On**.
@@ -59,7 +59,7 @@ To enable the Copilot in site builder feature, follow these steps.
 
 When you enable the Copilot in site builder feature at the tenant level, the Copilot capability is automatically enabled for all sites that are associated with the tenant. However, site administrators can control the availability of Copilot at the level of the individual site.
 
-To control the availability of Copilot in site builder feature at the site level, follow these steps.
+To control the availability of Copilot in site builder feature at the site level, follow these steps:
 
 1. Go to your site in site builder.
 1. Go to **Site settings \> Features**.
@@ -70,7 +70,7 @@ To control the availability of Copilot in site builder feature at the site level
 
 Currently, Copilot services are hosted in a [limited number of data centers](/power-platform/admin/geographical-availability-copilot) across the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services.
 
-To enable Copilot in geos that don't have local Copilot services, follow these steps.
+To enable Copilot in geos that don't have local Copilot services, follow these steps:
 
 1. To opt-in to the service, in site builder, go to **Tenant settings \> Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
 1. In the consent dialog, select **Agree**
@@ -80,7 +80,7 @@ To enable Copilot in geos that don't have local Copilot services, follow these s
 
 You can choose up to five tone options that Copilot in site builder uses to craft messaging that fits your brand and organization. These tones are then available for use by team members who are responsible for updating product enrichment content. You can also preselect any of the chosen tones to set them as defaults for quickly generating content via Copilot.
 
-To choose tone options and preselect default tones in site builder, follow these steps.
+To choose tone options and preselect default tones in site builder, follow these steps:
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Tones**, select **Edit**.
@@ -96,7 +96,7 @@ To choose tone options and preselect default tones in site builder, follow these
 
 You can choose up to five target client options to help Copilot craft messaging that targets your intended audience. These target clients are then available for use by team members who are responsible for updating product enrichment content. You can also preselect any of the chosen target clients to set them as defaults for quickly generating content via Copilot.
 
-To choose target client options and preselect default target clients in site builder, follow these steps.
+To choose target client options and preselect default target clients in site builder, follow these steps:
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Target clients**, select **Edit**.
@@ -114,7 +114,7 @@ Microsoft is committed to providing a responsible and ethical solution for your 
 
 However, you might have different preferences and requirements for your business. Site administrators can override the default content filtering settings and customize the product enrichment and marketing content that Copilot in site builder generates.
 
-To override content filtering restrictions in site builder, follow these steps.
+To override content filtering restrictions in site builder, follow these steps:
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Content filtering**, for the content themes that you want to override, set the options to **Off**.
@@ -124,7 +124,7 @@ To override content filtering restrictions in site builder, follow these steps.
 
 ## Use Copilot to create content for a product page
 
-To use Copilot to create content for a product page, follow these steps.
+To use Copilot to create content for a product page, follow these steps:
 
 1. In site builder for your site, in the left navigation pane, select **Products**.
 1. Select a product for which you want to create content, and that doesn't already have a customized product page.

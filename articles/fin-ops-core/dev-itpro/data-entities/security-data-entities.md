@@ -213,7 +213,7 @@ The **DataManagementApplicationAdministrator** security role enables an associat
 When you create data entities that can be used in the **Data management** workspace, you must extend these duties with the new security privileges, based on the **Entity Category** property that is specified on the data entity. (For information about how to extend duties with the new security privileges, see the "Privilege/duty mapping" section earlier in this article.) You can also use the duties to create new roles for specific data management scenarios.
 
 ## Modeling new entry point security in the Application Explorer
-The pattern for modeling security resembles the pattern for modeling security with privileges on an entry point. To model security, follow these steps.
+The pattern for modeling security resembles the pattern for modeling security with privileges on an entry point. To model security, follow these steps:
 
 1. Create a new privilege.
 2. Create new data entity permissions.

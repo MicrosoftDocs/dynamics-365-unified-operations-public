@@ -34,7 +34,7 @@ Microsoft is currently releasing functionality for note integration. (Functional
 
 ## Create a note in a customer engagement app
 
-To create a note in a customer engagement app and then sync it to a finance and operations app, follow these steps.
+To create a note in a customer engagement app and then sync it to a finance and operations app, follow these steps:
 
 1. In the customer engagement app, open the account record for a customer.
 2. In the **Timeline** pane, select the plus sign (**+**), and then select **Note** to create a note.
@@ -63,7 +63,7 @@ Any updates to the note are synced back and forth between the finance and operat
 
 You can also create a note in a finance and operations app, and it will sync to a customer engagement app.
 
-To create a note in a finance and operations app and then sync it to a customer engagement app, follow these steps.
+To create a note in a finance and operations app and then sync it to a customer engagement app, follow these steps:
 
 1. In the finance and operations app, on the **Attachments** page, select **New** \> **Note**.
 

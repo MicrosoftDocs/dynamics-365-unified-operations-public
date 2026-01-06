@@ -27,7 +27,7 @@ You can print reports, such as financial statements, from the consolidated legal
 
 You can consolidate data from legal entities that use different databases than the consolidated legal entity. This consolidation process is referred to as an *import consolidation*. Alternatively, the legal entities can use the same database as the consolidated legal entity. This consolidation process is referred to as an *online consolidation*.
 
-The consolidated legal entity collects the results and balances of the subsidiaries. To prepare a consolidated legal entity for a consolidation, follow these steps.
+The consolidated legal entity collects the results and balances of the subsidiaries. To prepare a consolidated legal entity for a consolidation, follow these steps:
 
 1. Go to **Organization administration \> Organizations \> Legal entities**.
 2. Select **New** to create the legal entity that will be the consolidated legal entity.

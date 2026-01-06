@@ -30,7 +30,7 @@ The business logic for the app contains a call to the **addLink** method, as sho
 
 ![Call to metadataService.addLink.](media/workspace-api/ConfigObjectsBusinessLogicOriginal.png)
 
-To use a config object to provide localized labels, follow these steps.
+To use a config object to provide localized labels, follow these steps:
 
 1. Create a config class that contains the fields for the labels. One field, **rentalLinkLabel**, is added to the class that will contain the label for the **pageLink** control. The config class must be a data contract class.
 

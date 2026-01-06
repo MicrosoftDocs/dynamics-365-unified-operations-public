@@ -31,7 +31,7 @@ Before you can archive customer invoice transactions, the following prerequisite
 
 ## Set up an archival job
 
-To set up an archival job, follow these steps.
+To set up an archival job, follow these steps:
 
 1. Go to **System administration** \> **Workspaces** \> **Archive with Dataverse long term retention**.
 1. In the **Archive with Dataverse long term retention** workspace, select **Customer invoice**.

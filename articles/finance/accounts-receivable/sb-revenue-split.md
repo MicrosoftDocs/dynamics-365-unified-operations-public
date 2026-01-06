@@ -68,7 +68,7 @@ The **Revenue split template** page contains the following fields.
 
 ## Revenue split on a sales order
 
-To create a sales order that has an item that is set up for revenue split, follow these steps.
+To create a sales order that has an item that is set up for revenue split, follow these steps:
 
 1. On the **Sales order** page, create a sales order.
 2. On the line for each item that is set up for revenue split, select the **Revenue split** checkbox. That item becomes the parent item. If the template is already set up, the child items automatically appear in the list.
@@ -77,7 +77,7 @@ To create a sales order that has an item that is set up for revenue split, follo
 
 ## Revenue split with billing schedules
 
-To create a billing schedule that has an item that is set up for revenue split, follow these steps.
+To create a billing schedule that has an item that is set up for revenue split, follow these steps:
 
 1. On the **All/Active billing schedules** page, create a billing schedule.
 2. On the line for each item that is set up for revenue split, select the **Revenue split** checkbox. That item becomes the parent item. If the template is already set up, the child items automatically appear in the list.

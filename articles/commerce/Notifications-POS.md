@@ -25,7 +25,7 @@ The system can show notifications for the *order fulfillment* operation, and sta
 
 ## Enable notifications for order fulfillment or recall order operations
 
-To enable notifications for the order fulfillment or recall order operations, follow these steps.
+To enable notifications for the order fulfillment or recall order operations, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Operations**.
 1. Search for either the **Order fulfillment** operation or the **Recall order** operation, and then select **Enable notifications** for the operation to specify that the notification framework should listen to the handler for this operation. If the handler is implemented, notifications for this operation will then be shown in the POS.

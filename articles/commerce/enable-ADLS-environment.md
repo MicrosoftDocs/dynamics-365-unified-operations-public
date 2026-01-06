@@ -57,7 +57,7 @@ For a more in-depth overview of the steps required to enable Azure Data Lake Sto
 
 Once the connection tests are successful, you must enable automatic refresh for Entity store.
 
-To enable automatic refresh for Entity store, follow these steps.
+To enable automatic refresh for Entity store, follow these steps:
 
 1. Search for **Entity Store**.
 1. In the list on the left, navigate to the **RetailSales** entry, and select **Edit**.

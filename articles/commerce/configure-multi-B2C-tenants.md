@@ -51,7 +51,7 @@ To configure B2C tenants in your environment, complete the relevant procedures i
 
 ### Add a Microsoft Entra B2C tenant
 
-To add a Microsoft Entra B2C tenant to your environment, follow these steps.
+To add a Microsoft Entra B2C tenant to your environment, follow these steps:
 
 1. Sign in to Commerce site builder for your environment as a system admin. To configure Microsoft Entra B2C tenants, you must be a system admin for the Commerce environment.
 1. In the left navigation pane, select **Tenant Settings** to expand it.

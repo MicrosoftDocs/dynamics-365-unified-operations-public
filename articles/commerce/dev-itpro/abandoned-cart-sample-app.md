@@ -77,7 +77,7 @@ If you use Azure Cosmos DB, the following prerequisites must be met before you c
 
 The abandoned cart connector app uses Key Vault to store the names and secrets of the different components that require secure access.
 
-To set up a key vault, follow these steps.
+To set up a key vault, follow these steps:
 
 1. Follow the instructions in [Manage Key Vault in Azure Stack Hub using the portal](/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002&preserve-view=true).
 2. Create secrets for the following information:

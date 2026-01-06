@@ -22,7 +22,7 @@ This article describes how to edit financial dimensions for retail transactions 
 
 ## Edit financial dimensions
 
-To edit financial dimensions for retail transactions in Commerce headquarters, follow these steps.
+To edit financial dimensions for retail transactions in Commerce headquarters, follow these steps:
 
 1. Open the **Financial dimensions configuration for integrating applications** page.
 1. Select the active **Default dimensions integration** record.

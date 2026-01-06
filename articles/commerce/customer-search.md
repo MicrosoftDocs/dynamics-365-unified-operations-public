@@ -81,7 +81,7 @@ Public preview of the customer search capability using the Azure Cognitive Searc
 > [!NOTE]
 > It is required that both Commerce headquarters and Commerce Scale Unit are updated to version 10.0.18. Updating the POS is not required.
 
-To enable the cloud-powered search feature in Commerce headquarters, follow these steps.
+To enable the cloud-powered search feature in Commerce headquarters, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Find and select the **(Preview) Cloud powered customer search** feature, and then select **Enable now**.

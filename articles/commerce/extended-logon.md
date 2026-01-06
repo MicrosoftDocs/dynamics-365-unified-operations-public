@@ -36,7 +36,7 @@ The following example demonstrates the uniqueness requirement of credential IDs.
 
 ## Set up extended sign-in
 
-To set up extended sign-in for POS registers in a retail store, follow these steps.
+To set up extended sign-in for POS registers in a retail store, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. 
 2. In the left navigation pane, select the functionality profile that is associated with the retail store.

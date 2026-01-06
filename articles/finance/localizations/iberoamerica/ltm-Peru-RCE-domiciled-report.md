@@ -56,7 +56,7 @@ Before you can generate and print the reports, the following prerequisites must 
 
 ## Configure application-specific parameters for the RCE annexes formats including the Excel output
 
-To configure application-specific parameters for purchases that are domiciled in Peru reports formats, follow these steps.
+To configure application-specific parameters for purchases that are domiciled in Peru reports formats, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the **LTM Tax report** group, for each format that is listed in the [Prerequisites](#prerequisites) section, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -86,7 +86,7 @@ To configure application-specific parameters for purchases that are domiciled in
 
 ## Generate an RCE annex report
 
-To generate any RCE annex reports including the Excel output, follow these steps.
+To generate any RCE annex reports including the Excel output, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select a format listed in the [Prerequisites](#prerequisites) section.

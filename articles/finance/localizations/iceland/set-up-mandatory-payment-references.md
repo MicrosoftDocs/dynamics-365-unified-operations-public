@@ -25,7 +25,7 @@ The functionality described in the following procedures is available for legal e
 
 ## Set up the main account
 
-To set up the main account, follow these steps.
+To set up the main account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**.
 1. Use the **Quick Filter** to find records. For example, filter on the **Main account** field with a value of "170150".
@@ -35,7 +35,7 @@ To set up the main account, follow these steps.
 
 ## Create a payment with a payment reference
 
-To create a payment with a payment reference, follow these steps.
+To create a payment with a payment reference, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal entries \> General journals**.
 1. Select **New**.

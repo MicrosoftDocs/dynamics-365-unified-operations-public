@@ -21,7 +21,7 @@ This article explains how to enable and use the **Improve Performance of Commerc
 
 ## Enable the Improve Performance of Commerce Order search feature
 
-To enable the **Improve Performance of Commerce Order search** feature in Commerce headquarters, follow these steps.
+To enable the **Improve Performance of Commerce Order search** feature in Commerce headquarters, follow these steps:
 
 1. Open the **Feature management** workspace (**Systems administration \> Workspaces \> Feature management**).
 1. Search for the **Improve Performance of Commerce Order search** feature, and then select it.
@@ -29,7 +29,7 @@ To enable the **Improve Performance of Commerce Order search** feature in Commer
 
 ## Create and schedule the Calculate sales totals job
 
-To create and schedule the **Calculate sales totals** job, follow these steps.
+To create and schedule the **Calculate sales totals** job, follow these steps:
 
 1. In Commerce headquarters, go to **System administration \> Inquiries \> Batch Jobs**.
 1. Select **New**.
@@ -54,7 +54,7 @@ The **Calculate sales totals using multiple threads** feature helps improve perf
 
 ### Enable the Calculate sales totals using multiple threads feature
 
-To enable the **Calculate sales totals using multiple threads** feature in Commerce headquarters, follow these steps.
+To enable the **Calculate sales totals using multiple threads** feature in Commerce headquarters, follow these steps:
 
 1. Open the **Feature management** workspace (**Systems administration \> Workspaces \> Feature management**).
 1. Search for the **Calculate sales totals using multiple threads** feature, and then select it.

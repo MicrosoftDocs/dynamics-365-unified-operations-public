@@ -23,7 +23,7 @@ This article explains how to create a customer with fiscal and other related inf
 
 The following procedure was created using the demo data company MXMF.
 
-To create a customer with fiscal and other related information, follow these steps.
+To create a customer with fiscal and other related information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. Select **New**.

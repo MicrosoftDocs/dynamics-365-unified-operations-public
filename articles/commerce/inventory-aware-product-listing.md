@@ -36,7 +36,7 @@ To enable these experiences, you must first enable the **Enhanced e-Commerce pro
 
 Inventory-aware product listing uses the product attributes framework. As a prerequisite, a dedicated product attribute must be created to capture inventory availability data.
 
-To set up product attribute for inventory availability in Commerce headquarters, follow these steps.
+To set up product attribute for inventory availability in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Populate product attributes with inventory level**.
 1. In the **Populate product attributes with inventory level** dialog box, in the **Product attribute and type name** field, enter a custom name for the dedicated product attribute that will be created to capture inventory data.
@@ -49,7 +49,7 @@ To set up product attribute for inventory availability in Commerce headquarters,
 
 After the dedicated product attribute is created, the next step is to configure the attribute for the online channel.
 
-To configure the attribute for the online channel in Commerce headquarters, follow these steps.
+To configure the attribute for the online channel in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 1. Select the online channel to enable the inventory-aware product listing experience for.

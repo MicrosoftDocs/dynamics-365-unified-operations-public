@@ -34,14 +34,14 @@ This article describes following tasks:
 
 ### Initialize the commerce scheduler
 
-To initialize the commerce scheduler, follow these steps.
+To initialize the commerce scheduler, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. Alternatively, search for "Initialize commerce scheduler."
 1. In the **Initialize commerce scheduler** dialog box, make sure that the **Delete existing configuration** option is set to **No**, and then select **OK**.
 
 ### Verify the RetailProductRating subjob
 
-To verify that the **RetailProductRating** subjob exists, follow these steps.
+To verify that the **RetailProductRating** subjob exists, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Scheduler subjobs**. Alternatively, search for "Scheduler subjobs."
 1. In the subjob list, find or search for the **RetailProductRating** subjob.
@@ -61,7 +61,7 @@ The following illustration shows an example of the subjob details in Commerce.
 
 ### Import product ratings
 
-To import product ratings into Commerce from the ratings and reviews service, follow these steps.
+To import product ratings into Commerce from the ratings and reviews service, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Sync product ratings job**. Alternatively, search for "Sync product ratings job."
 1. In the **Pull product ratings** dialog box, on the **Run in the background** FastTab, select **Recurrence**.
@@ -76,7 +76,7 @@ The following illustration shows an example of batch job configuration in Commer
 
 ## Verify that the batch job for product rating synchronization was successful
 
-To verify that the **Sync product ratings** batch job was successful, follow these steps.
+To verify that the **Sync product ratings** batch job was successful, follow these steps:
 
 1. Go to **Retail and Commerce \> System administrator \> Inquiries \> Batch jobs** or, if you're using a Commerce-only stock keeping unit (SKU), **Retail and Commerce \> Inquiries and reports \> Batch jobs** instead. Alternatively, search for "Batch jobs."
 1. To view the details of the batch job, in the batch job list, in the **Job description** column, search for a description that contains "Pull product ratings."
@@ -90,7 +90,7 @@ The following illustration shows an example of the batch job details in Commerce
 
 The ratings and reviews solution in Dynamics 365 Commerce is an omnichannel solution. However, products ratings aren't shown at the POS by default. To help customers in stores see ratings and reviews when they are being helped by sales associates, you must turn on product ratings at the POS.
 
-To turn on product ratings at the POS, follow these steps.
+To turn on product ratings at the POS, follow these steps:
 
 1. Go to **Retail and Commerce \> Commerce setup \> Parameters \> Commerce parameters**. Alternatively, search for "Commerce parameters."
 1. On the **Configuration parameters** tab, select **New**.

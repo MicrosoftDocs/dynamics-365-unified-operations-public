@@ -25,7 +25,7 @@ You need to install it manually. After installation, everything remains exactly 
 
 ## Steps to migrate Prospect to cash data from Data Integrator to dual-write
 
-To migrate your Prospect to cash data from Data Integrator to dual-write, follow these steps.
+To migrate your Prospect to cash data from Data Integrator to dual-write, follow these steps:
 
 1. Run the Prospect to cash Data Integrator jobs to do one final full synchronization. In this way, you ensure that both systems (finance and operations apps and customer engagement apps) have all the data.
 2. To help prevent potential data loss, export the Prospect to cash data from Microsoft Dynamics 365 Sales to an Excel file or a comma-separated values (CSV) file. Export data from the following entities:

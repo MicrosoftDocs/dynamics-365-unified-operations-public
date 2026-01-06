@@ -29,7 +29,7 @@ The following prerequisites must be in place before you can enable Power BI repo
 
 ## Setup
 
-To set up the Power BI integration, follow these steps.
+To set up the Power BI integration, follow these steps:
 
 1. Go to the [*Global Inventory Accounting Add-in Templates* repo on GitHub](https://github.com/microsoft/Global-Inventory-Accounting-Add-in-Templates/releases) and download the latest *Global inventory accounting- production costing* file (for example, `Global.inventory.accounting-.production.costing.Preview.-.v2.1.pbix`).
 1. Sign in to [PowerBI.com](https://app.powerbi.com/), upload and configure the **Global Inventory Accounting** Power BI report file by following these steps:

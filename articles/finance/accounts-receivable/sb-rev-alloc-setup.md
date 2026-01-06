@@ -46,7 +46,7 @@ Use the **Item standalone selling price** page to specify the origin and standal
 
 ### Specify item standalone selling price
 
-To specify the standalone price for an item, follow these steps.
+To specify the standalone price for an item, follow these steps:
 
 1. On the **Item standalone selling price** page, in the **Standalone selling price origin** field, select the origin of the standalone selling price.
 2. Follow one of these steps, depending on the value that you selected in the **Standalone selling price origin** field:
@@ -87,7 +87,7 @@ Use the **MEA templates** page to create and edit multiple element arrangement (
 
 ### Create a template
 
-To set up an MEA template, follow these steps.
+To set up an MEA template, follow these steps:
 
 1. On the **MEA templates** page, select **New**.
 1. In the **MEA template ID** field, enter a unique ID.

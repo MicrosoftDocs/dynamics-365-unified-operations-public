@@ -59,7 +59,7 @@ Because the names of some predefined entities are used in the ER configurations,
 
 Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
 
-To import ER configurations into Finance, follow these steps.
+To import ER configurations into Finance, follow these steps:
 
 1. In [Dynamics 365 Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type.
 1. In the list of data package files, find the package that is named **NO RF-1321 EM setup v.*N***, where *N* is the version number of the package. Download the package to your computer. We recommend that you download the latest available version of the package.
@@ -87,7 +87,7 @@ Learn more in [Data management overview](../../../fin-ops-core/dev-itpro/data-en
 
 To work with the Electronic messages functionality, you must define the related number sequences.
 
-To set up number sequences, follow these steps.
+To set up number sequences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
 1. On the **Number sequences** tab, set up number sequences for **Message**.
@@ -105,7 +105,7 @@ If any of these file types aren't defined on the **File types** tab, add them.
 
 Different groups of users might require access to different electronic message processing. You can limit access to each type of processing, based on security groups that are defined in the system.
 
-To define which security roles have access to the **RF-1321** processing, follow these steps.
+To define which security roles have access to the **RF-1321** processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 1. Select the **RF-1321** processing, and add the security groups that must work with this processing.
@@ -119,7 +119,7 @@ Two ER formats are supported for the **RF-1321** processing:
 - RF-1321 Payments to self-employed persons (NO)
 - RF-1321 Payments to self-employed persons (NO) - Per Vendor
 
-To specify which ER format is used in the **RF-1321** processing, follow these steps.
+To specify which ER format is used in the **RF-1321** processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** >\ **Message processing actions**.
 1. In the list of message processing actions, select **Generate file**.
@@ -135,7 +135,7 @@ The **RF-1321** processing uses the **EMRF1321PayToSelfEmployedVendorController_
 
 ### <a name="organization-number"></a>Set up the organization number
 
-To set up the organization number that is reported in the `<organisasjonsnummer>` field, follow these steps.
+To set up the organization number that is reported in the `<organisasjonsnummer>` field, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Bank account information** FastTab, in the **Routing number** field, specify the organization number that is reported in the `<organisasjonsnummer>` field.

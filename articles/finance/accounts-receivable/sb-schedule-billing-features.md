@@ -123,7 +123,7 @@ You can apply an escalation or discount to a billing schedule or billing schedul
 
 ### Apply an escalation or discount
 
-To apply an escalation or discount to a billing schedule, follow these steps.
+To apply an escalation or discount to a billing schedule, follow these steps:
 
 1. Select a billing schedule or a billing schedule line.
 2. Select **Escalation and discount** either on the **Escalation and discount** tab or on the billing schedule line.

@@ -92,7 +92,7 @@ Consider the following information before you generate the **Sales tax payment b
 
 ### Generate the Sales tax payment by code report
 
-To generate the **Sales tax payment by code** report, follow these steps.
+To generate the **Sales tax payment by code** report, follow these steps:
 
 1. Go to **Tax** &gt; **Inquiries and reports** &gt; **Sales tax reports** &gt; **Sales tax payment by code**.
 2. Select the report parameters. These parameters include the report layout.

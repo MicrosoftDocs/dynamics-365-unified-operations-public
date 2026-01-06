@@ -28,7 +28,7 @@ Before you can create a new site, at least one online store must be created in C
 
 ## Create and configure a new online channel
 
-To create and configure a new online channel, follow these steps.
+To create and configure a new online channel, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Channels \> Online Stores**.
 1. On the action pane, select **New**.
@@ -76,7 +76,7 @@ The following image shows **Modes of delivery**, **Payment methods**, and **Fulf
 
 ### Set up payment methods
 
-To set up payment methods, for each payment type supported on this channel follow these steps.
+To set up payment methods, for each payment type supported on this channel follow these steps:
 
 1. On the action pane, select the **Set Up** tab, then select **Payment methods**.
 1. On the action pane, select **New**.
@@ -93,7 +93,7 @@ The following image shows an example of a cash payment method.
 
 You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the action pane.
 
-To change or add a mode of delivery, follow these steps.
+To change or add a mode of delivery, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.
 1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
@@ -105,7 +105,7 @@ The following image shows an example of a mode of delivery.
 
 ### Set up a fulfillment group assignment
 
-To set up a fulfillment group assignment, follow these steps.
+To set up a fulfillment group assignment, follow these steps:
 
 1. On the action pane, select the **Set up** tab, then select **Fulfillment group assignment**.
 1. On the action pane, select **New**.

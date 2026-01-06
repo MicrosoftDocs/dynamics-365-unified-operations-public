@@ -31,7 +31,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Create a lump sum fixed asset
 
-To create a lump sum fixed asset, follow these steps.
+To create a lump sum fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.
@@ -47,7 +47,7 @@ To create a lump sum fixed asset, follow these steps.
 
 ## Confirm the depreciation profile
 
-To confirm the depreciation profile, follow these steps.
+To confirm the depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
 1. Use the Quick Filter to filter on the **Depreciation profile** field with a value of "LUMPSUM".

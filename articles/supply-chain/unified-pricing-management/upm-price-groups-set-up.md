@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-To create and manage the [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps.
+To create and manage the [price groups](upm-price-groups-overview.md) that you can associate with attributes, follow these steps:
 
 1. Go to **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups**.
 1. Follow one of these steps:

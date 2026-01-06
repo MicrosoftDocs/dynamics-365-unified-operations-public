@@ -152,7 +152,7 @@ To open the log for an external catalog, select the relevant catalog, and then, 
 
 When you set the **Punchout protocol type** field to *cXML* for an external catalog, you can add custom extrinsic elements that will be inserted at the correct place in the request XML message.
 
-To add extrinsic elements to an external catalog, follow these steps.
+To add extrinsic elements to an external catalog, follow these steps:
 
 1. Go to **Procurement and sourcing \> Catalogs \> External catalogs**.
 1. Select the relevant catalog.

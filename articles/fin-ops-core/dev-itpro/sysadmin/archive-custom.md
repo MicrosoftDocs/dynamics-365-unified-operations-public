@@ -46,7 +46,7 @@ The customized business entity must be refreshed in Dataverse to archive data in
 
 Additional tables can be included in the archive scenario if they have a direct or indirect relationship with the main live table.
 
-To create a history table that corresponds to the live table in the archive scope, follow these steps.
+To create a history table that corresponds to the live table in the archive scope, follow these steps:
 
 1. Create a new history table that mirrors all fields from the corresponding live table, including all metadata properties on the live table. See the [column exclusion rule](#excl-rule) earlier in this article.
 1. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on the `RecId` column is sufficient. Create an additional index to improve query performance as required and to maintain foreign key relationships.

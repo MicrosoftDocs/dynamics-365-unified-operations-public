@@ -27,7 +27,7 @@ All store managers are automatically added as owners to the corresponding team g
 
 Communication managers in Microsoft Teams have the ability to create and publish task lists. Organization employees who need to become communication managers must have the "retail task manager" role assigned to them in Commerce headquarters.
 
-To assign the retail task manager role to an employee in Commerce headquarters, follow these steps.
+To assign the retail task manager role to an employee in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Employees \> Users**.
 1. Select an employee.

@@ -46,7 +46,7 @@ To create a functioning CSU, complete the procedures in all sections of this art
 
 ### Create a new channel database record
 
-To create a new channel database record, follow these steps.
+To create a new channel database record, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 1. On the **Channel database** page, on the Action Pane, select **New**.
@@ -74,7 +74,7 @@ Next, you must create a new channel profile record for the CSU URL, and then upd
 > [!NOTE]
 > Alternatively, you can modify the existing channel profile record to use the CSU URLs. 
 
-To create a new channel profile in headquarters and update the existing store records to use the new channel database and profile, follow these steps.
+To create a new channel profile in headquarters and update the existing store records to use the new channel database and profile, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel profiles**.
 1. On the Action Pane, select **New**.
@@ -123,7 +123,7 @@ If no jobs appear, then initialize the base configuration. Learn more in [Update
 
 > [!IMPORTANT]
 >  - You must remove the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
->  - To update CDX data groups in headquarters, follow these steps.
+>  - To update CDX data groups in headquarters, follow these steps:
 >
 >       1. Go to **Retail and Commerce \> Distribution Schedule**.
 >       1. Select the **Default Data** group.
@@ -156,7 +156,7 @@ According to current security standards, the following options should be set in 
 > [!NOTE]
 > By default, SSL and all versions of TLS except TLS 1.2 are disabled.
 
-To edit or enable SSL and TLS settings, follow these steps.
+To edit or enable SSL and TLS settings, follow these steps:
 
 1. Press the Windows logo key+R to open a **Run** window.
 1. In the **Open** field, enter **Regedit**, and then select **OK**.
@@ -184,7 +184,7 @@ To edit or enable SSL and TLS settings, follow these steps.
 
 ## Debug CSU
 
-To debug CSU, follow these steps.
+To debug CSU, follow these steps:
 
 1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used. Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
 1. In headquarters, on the **Commerce shared parameters** page, verify that the correct client ID is added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry is added to the **Server resource IDs** FastTab. If not, substitute the actual Retail Server URL.
@@ -202,7 +202,7 @@ Microsoft highly recommends that you also review [SQL Server versions and licens
 
 ## Uninstall CSU
 
-To uninstall Commerce Scale Unit components, follow these steps.
+To uninstall Commerce Scale Unit components, follow these steps:
 
 1. Select the Windows logo key, and then enter "Add or remove programs" in the search box. In the search results, select **Add or remove programs**.
 1. In the **Settings** \> **Apps** \> **Installed Apps** window, locate  **Microsoft Dynamics 365 Commerce Scale Unit** in the application list, select the ellipsis (**...**), and then select **Uninstall**.

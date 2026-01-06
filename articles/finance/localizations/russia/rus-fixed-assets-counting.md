@@ -23,7 +23,7 @@ The procedure for counting fixed assets is regulated by legislative acts and is 
 
 As a rule, fixed asset counting is done before the annual reporting. 
 
-To register fixed asset counting, follow these steps.
+To register fixed asset counting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Periodic journals** \> **FA counting**.
 1. Select **New** to create a journal.

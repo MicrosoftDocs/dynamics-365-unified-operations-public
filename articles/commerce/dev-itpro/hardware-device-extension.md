@@ -111,7 +111,7 @@ The follow diagram shows the flow between the POS, Hardware station, and the har
 
 To call your new hardware device, you must implement the Hardware station code. You call your hardware device from that code.
 
-To implement the Hardware station extension for Retail SDK version 10.0.11 or later, follow these steps.
+To implement the Hardware station extension for Retail SDK version 10.0.11 or later, follow these steps:
 
 1. Create a new C# class library project by using the Microsoft .NET Framework version 4.6.1. Alternatively, use one of the samples in the Retail SDK as a template. (You can find the samples at **...\\RetailSDK\\SampleExtensions\\HardwareStation\\**.) We recommend that you use a sample as a template.
 2. In the extension project, use the NuGet package manager to add the **Microsoft.Dynamics.Commerce.Hosting.Contracts** package. You can  find the NuGet packages in the **RetailSDK\\pkgs** folder.
@@ -133,7 +133,7 @@ To implement the Hardware station extension for Retail SDK version 10.0.11 or la
 
 6. Build the project.
 
-To implement the Hardware station extension for Retail SDK versions that are earlier than version 10.0.11, follow these steps.
+To implement the Hardware station extension for Retail SDK versions that are earlier than version 10.0.11, follow these steps:
 
 1. Create a new C# class library project.
 2. Add a new controller class that extends **HardwareStationController** and **IHardwareStationController**.
@@ -141,7 +141,7 @@ To implement the Hardware station extension for Retail SDK versions that are ear
 4. To implement your custom logic to call the hardware device, add your method in the controller class. This method will be passed as the second parameter (action parameter) to the POS **HardwareStationDeviceActionRequest**.
 5. Build the project.
 
-To deploy the Hardware station extension in Modern POS and test it by using the local Hardware station, follow these steps.
+To deploy the Hardware station extension in Modern POS and test it by using the local Hardware station, follow these steps:
 
 1. Copy the output library to the **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder.
 2. Open the **HardwareStation.Extension.config** file.

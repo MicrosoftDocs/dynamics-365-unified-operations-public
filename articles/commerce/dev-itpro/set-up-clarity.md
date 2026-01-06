@@ -35,7 +35,7 @@ After you have signed up for Clarity, follow these steps in Commerce site builde
 
 Content Security Policy (CSP) provides an extensive set of policy directives that help you control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource. For Clarity to function on your site, some CSP directives must be configured to allow Clarity resources to be called. 
 
-To configure CSP for Clarity in Commerce site builder, follow these steps.
+To configure CSP for Clarity in Commerce site builder, follow these steps:
 
 1. Navigate to your Commerce site.
 1. Select **Site Settings \> Extensions**.
@@ -56,7 +56,7 @@ To get started, copy the tracking script code for your project from the Clarity 
 
 The most efficient way to include Clarity tracking script code to a range of site pages is to embed the script code in a shared site page template. The following procedure describes how to insert Clarity script code into a fragment containing an inline script module that is then used by a site page template. 
 
-To embed the Clarity tracking code into site pages in Commerce site builder, follow these steps.
+To embed the Clarity tracking code into site pages in Commerce site builder, follow these steps:
 
 1. Go to your site in Commerce site builder.
 1. Select **Fragments**, and then select **New**
@@ -78,7 +78,7 @@ For information about how to test if the Clarity script is embedded in site page
 > [!NOTE] 
 > An inline script module must be present in the **HTML Head** section of a page's template to be able to add Clarity script code to the page instance.
 
-To embed the Clarity tracking code into a specific site page in Commerce site builder, follow these steps.
+To embed the Clarity tracking code into a specific site page in Commerce site builder, follow these steps:
 
 1. Go to your site in Commerce site builder.
 1. Select **Pages**, select the page to which you want to add Clarity script code, and then select **Edit**.

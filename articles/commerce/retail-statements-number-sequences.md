@@ -32,7 +32,7 @@ Two types of retail statements are used in Dynamics 365 Commerce:
 
 After you've completed the setup of a retail store, in Commerce headquarters, you must configure a unique number sequence that will be used for statements during the statement creation process.
 
-To configure a number sequence for statement posting in Commerce headquarters, follow these steps.
+To configure a number sequence for statement posting in Commerce headquarters, follow these steps:
 
 1. Go to **Organization administration \> Number sequences \> Number sequences**.
 1. Select **New \> Number sequence** to create a new record.

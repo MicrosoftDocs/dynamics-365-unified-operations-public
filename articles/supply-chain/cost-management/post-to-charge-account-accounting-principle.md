@@ -37,7 +37,7 @@ The *post to charge account* principle lets you fully automate the two postings.
 
 ## Enable the post to charge account accounting principle
 
-To enable the *post to charge account* accounting principle, follow these steps.
+To enable the *post to charge account* accounting principle, follow these steps:
 
 1. Go to **Accounts payable \> Setup \> Accounts payable parameters**.
 2. On the **Invoice** tab, on the **Invoice** FastTab, set the **Post to charge account in ledger** option to *Yes*.

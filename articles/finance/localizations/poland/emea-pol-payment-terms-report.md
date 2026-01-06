@@ -80,7 +80,7 @@ Using the One voucher functionality introduces a limitation on further Payment t
 
 Before you generate the Payment terms report, run the **Statistics on invoices** process from the **Accounts payable** and **Account receivable** modules to generate a specific view of the payment history. The Payment terms report uses this process to get all invoices that are fully and partially paid. You can run the process in real time, or you can schedule it to run in the background through batch processing.
 
-To run the statistics on invoices process, follow these steps.
+To run the statistics on invoices process, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** > **Periodic tasks** > **Statistics on invoices** or **Accounts receivable** > **Periodic tasks** > **Statistics on invoices**.
 1. Select **Calculate statistics**.
@@ -92,7 +92,7 @@ To run the statistics on invoices process, follow these steps.
 
 ## Generate a payment terms report
 
-To generate a payment terms report, follow these steps.
+To generate a payment terms report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** > **Periodic tasks** > **Statistics on invoices** or **Accounts receivable** > **Periodic tasks** > **Statistics on invoices**.
 1. Select **Payment terms report**, and then select the related ER format.

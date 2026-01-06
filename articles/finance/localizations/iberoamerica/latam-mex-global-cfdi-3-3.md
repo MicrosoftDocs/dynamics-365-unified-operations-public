@@ -31,7 +31,7 @@ The Global CFDI functionality lets you perform the following tasks:
 - Create an electronic invoice, in Global CFDI format, that is based on the posted commerce statement. For more information about the layout, see [CFDI layout version 4.0](latam-mex-cfdi-4-0.md).
 - For each electronic invoice, generate a file in the .pdf or .xml format, and send it to the customer as an email attachment. After the Global CFDI electronic invoices are generated, they are verified and certified by a digital signature service provider (PAC) in the same way as other CFDI documents. For more information, see [Electronic invoices (CFDI)](latam-mex-CFDI-electronic-invoices.md) and [Inquire and print an electronic invoice](mx-00010-inquire-print-electronic-invoice.md).
 
-To generate and submit a Global CFDI electronic invoice, follow these steps.
+To generate and submit a Global CFDI electronic invoice, follow these steps:
 
 1. Go to **Accounts receivable** \> **Invoices** \> **E-Invoices** \> **Electronic invoice parameters**. 
 2. On the **Retail** tab, specify the default parameters of the Global CFDI format.

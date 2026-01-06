@@ -4,7 +4,7 @@ description: Learn about tips and tricks for working with the GitHub repos and M
 author: edupont04
 ms.author: edupont
 ms.topic: article
-ms.date: 07/17/2024
+ms.date: 12/19/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -45,15 +45,11 @@ You can convert content from Microsoft Word to Markdown by using open-source too
 If your solution is available in more than one country or region, you'll probably want to make the content available in multiple languages. There are lots of options for doing that. The following are a few examples:
 
 * Create the content in multiple languages.
-* Create the content in one language, and then translate it. For example, by using the [Dynamics 365 Translation Service (DTS)](#dynamics-365-translation-service).
+* Create the content in one language, and then translate it.
 * Pull Microsoft's English (United States) language content from our MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, customize the Markdown files, translate them, and then use a third-party tool to build the HTML files.
 
     > [!NOTE]
     > DTS isn't an option for translating the Microsoft content because it doesn't support Markdown files.
-
-### Dynamics 365 Translation Service
-
-You can use the [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) (DTS) to translate your content into other languages. The service is hosted in Microsoft Dynamics Lifecycle Services (LCS), and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](../lifecycle-services/use-translation-service-ua.md).
 
 ## See also
 

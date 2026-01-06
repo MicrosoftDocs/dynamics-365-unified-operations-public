@@ -1177,32 +1177,6 @@ items:
         href: lifecycle-services/querycookbook.md
       - name: Expired subscriptions and data deletion
         href: lifecycle-services/expired-subscription-data-deletion.md
-      - name: Microsoft Dynamics 365 Translation Service
-        items: 
-        - name: What's new in Dynamics Translation Service
-          href: lifecycle-services/dts-announcements.md
-        - name: Dynamics 365 Translation Service overview
-          href: lifecycle-services/translation-service-overview.md
-        - name: Dynamics 365 Translation Service API
-          href: lifecycle-services/dts-api-info.md
-        - name: Dynamics Lifecycle Services API - Authentication
-          href: lifecycle-services/lcs-aad-app-reg.md
-        - name: Translate user interface files
-          href: lifecycle-services/use-translation-service.md
-        - name: Translate documentation files
-          href: lifecycle-services/use-translation-service-ua.md
-        - name: Translation memory files
-          href: lifecycle-services/use-translation-service-tm.md
-        - name: Azure DevOps extension
-          href: lifecycle-services/dts-devops-extension.md
-        - name: Azure DevOps extension tutorial
-          href: lifecycle-services/dts-ado-tutorial.md
-        - name: Visual Studio extension
-          href: lifecycle-services/dts-visual-studio.md
-        - name: Visual Studio Code extension 
-          href: lifecycle-services/dts-vscode-doc.md
-        - name: Dynamics 365 Translation Service Connector
-          href: lifecycle-services/dts-connector-info.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview

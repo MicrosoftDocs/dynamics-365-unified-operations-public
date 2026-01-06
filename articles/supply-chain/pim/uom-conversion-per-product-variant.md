@@ -28,7 +28,7 @@ If you don't already see this feature in your system, go to [Feature management]
 
 Product variants can be created only for products that are product masters. Learn more in [Create a product master](tasks/create-product-master.md). The *Unit of measure conversions for product variants* feature isn't available for products that are set up for catch-weight processes.
 
-To configure a product master to support unit conversion per variant, follow these steps.
+To configure a product master to support unit conversion per variant, follow these steps:
 
 1. Go to **Product information management \> Products \> Product masters**.
 1. Create or open a product master to go to its **Product details** page.

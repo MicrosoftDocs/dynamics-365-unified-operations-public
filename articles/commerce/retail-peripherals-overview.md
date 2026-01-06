@@ -176,7 +176,7 @@ Network-addressable cash drawers, receipt printers, and payment terminals can be
 
 Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
 
-To use the dedicated hardware station, follow these steps.
+To use the dedicated hardware station, follow these steps:
 
 1. Assign a hardware profile to a register that uses the Modern POS for Windows or Android application.
 1. Create a hardware station of the "Dedicated" type for the store where the register is used. 
@@ -236,7 +236,7 @@ Within the ServiceOPOS registry location, configured devices are organized accor
 
 To reduce the likelihood of connection errors on POS by minimizing unnecessary OPEN and CLOSE OPOS operations, when running Commerce version 10.0.41 or later you can enable the **Keep connection open** setting for hardware profile devices in Commerce headquarters.
 
-To enable the **Keep connection open** setting in Commerce headquarters version 10.0.41 or later, follow these steps.
+To enable the **Keep connection open** setting in Commerce headquarters version 10.0.41 or later, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**.
 1. In the left pane, select a hardware profile.
@@ -514,7 +514,7 @@ For more information about how to create hardware profiles, see [Connect periphe
 
 ### Modern POS for Windows with an IPC (built-in) hardware station
 
-This configuration is the most typical configuration for traditional, fixed POS registers. For this scenario, the hardware profile information is mapped directly to the register itself. The EFT terminal number should also be set on the register itself. To set up this configuration, follow these steps.
+This configuration is the most typical configuration for traditional, fixed POS registers. For this scenario, the hardware profile information is mapped directly to the register itself. The EFT terminal number should also be set on the register itself. To set up this configuration, follow these steps:
 
 1.  Create a hardware profile where all the required peripherals are configured.
 2.  Map the hardware profile to the POS register.
@@ -535,7 +535,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 ### All Modern POS clients that have a committed, shared IIS hardware station
 
-This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register. To set up this configuration, follow these steps.
+This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register. To set up this configuration, follow these steps:
 
 1.  Create a hardware profile where all the required peripherals are configured.
 2.  Create a hardware station of the **Dedicated** type for the store where the POS register is used.
@@ -565,7 +565,7 @@ This configuration can be used for all Modern POS clients that have a hardware s
 
 ### All Modern POS clients that have a shared IIS hardware station
 
-This configuration can be used for all Modern POS clients that share hardware stations with other devices. To set up this configuration, follow these steps.
+This configuration can be used for all Modern POS clients that share hardware stations with other devices. To set up this configuration, follow these steps:
 
 1.  Create a hardware profile where the required peripherals are configured.
 2.  Create a hardware station of the **Shared** type for the store where the POS register is used.
@@ -756,7 +756,7 @@ Scriptel signature capture devices connected via the OPOS interface work with th
 
 **Solution**: Add "RetailHwsUser" as an administrator, and then add the ESPON printer again.
 
-To add "RetailHwsUser" as an administrator on your local Windows machine, follow these steps.
+To add "RetailHwsUser" as an administrator on your local Windows machine, follow these steps:
 
 1. On your local Windows machine, go to **Computer Management**.
 1. Open **Local Users and Groups**, and then select **Administrators**.

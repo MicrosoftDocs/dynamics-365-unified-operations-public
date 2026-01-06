@@ -27,7 +27,7 @@ The user who completes the procedure must be set up as a call center user. Optio
 
 ### Add yourself as a call center user
 
-To add yourself as a call center user, follow these steps.
+To add yourself as a call center user, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Call centers \> All call centers**.
 1. In the **Users** field, select **Channel users**.
@@ -41,7 +41,7 @@ To add yourself as a call center user, follow these steps.
 
 ## Complete the example call center procedure
 
-To complete the example call center procedure, follow these steps.
+To complete the example call center procedure, follow these steps:
 
 1. Go to **Retail and Commerce \> Customers \> Customer service**.
 1. On the **Customer search** tab, enter search criteria to look up the customer. For this example procedure, enter **Karen**.

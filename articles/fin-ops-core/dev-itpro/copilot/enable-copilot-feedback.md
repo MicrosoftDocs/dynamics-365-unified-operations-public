@@ -40,7 +40,7 @@ To use enhanced user feedback, you must be running finance and operations apps v
 
 Admins control whether and how users can submit feedback to Microsoft by managing various aspects of the feature at each of several levels: the tenant, the Dataverse organization, and the finance and operations environment. If feedback is disabled at a higher level, it can't be enabled at any lower levels. To make the feature available to users of finance and operations apps, you must enable it at each level, as described in the following procedures. By default, the feature is turned on at the tenant and Dataverse organization levels, but turned off at the finance and operations environment level.
 
-To turn enhanced user feedback on or off at the tenant level, follow these steps.
+To turn enhanced user feedback on or off at the tenant level, follow these steps:
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the left pane, select **Settings**.
@@ -49,7 +49,7 @@ To turn enhanced user feedback on or off at the tenant level, follow these steps
     - **Copilot feedback** – This setting is on by default. It controls the ability of users to submit detailed feedback. Select it to open the **Copilot feedback** dialog box, set the option to *On* or *Off*, and then select **Save**.
     - **Copilot data collection** – This setting is on by default. It controls the ability of users to attach more information (such as a conversation history) to their feedback. Select it to open the **Copilot data collection** dialog box, set the option to *On* or *Off*, and then select **Save**.
 
-To turn enhanced user feedback on or off at the Dataverse organization level, follow these steps.
+To turn enhanced user feedback on or off at the Dataverse organization level, follow these steps:
 
 1. Open the [maker experience for Power Apps](https://aka.ms/makepowerapps) for your Dataverse environment.
 1. In the left pane, select **Tables**.
@@ -57,7 +57,7 @@ To turn enhanced user feedback on or off at the Dataverse organization level, fo
 1. In the **Organization columns and data** grid, select the **&plus;\<*number*\> more** column heading to open the **Show existing column** dropdown dialog box. In the dialog box, search for *Allow users to provide feedback to improve Copilot experiences*, select the checkbox for that column, and then select **Save**.
 1. The **Allow users to provide feedback to improve Copilot experiences** column now appears in the grid. Set the option in this column to *Yes* to allow user feedback, or set it to *No* to prevent user feedback. By default, the option is set to *Yes*. If you change the setting, don't proceed until a "Data saved" message appears on the header of the grid.
 
-To turn enhanced user feedback on or off at the finance and operations environment level, follow these steps.
+To turn enhanced user feedback on or off at the finance and operations environment level, follow these steps:
 
 1. Sign in to your finance and operations apps environment.
 1. Go to **System administration** \> **Workspaces** \> **Feature management**. (Learn more about Feature management in [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).)

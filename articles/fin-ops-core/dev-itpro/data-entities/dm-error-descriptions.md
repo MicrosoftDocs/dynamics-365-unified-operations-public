@@ -83,7 +83,7 @@ When obtaining a writable URL by calling the GetAzureWriteUrl() API, ensure that
 
 The TaxWithholdingTaxRegistrationNumberEntity is set for IN countryRegionCodes, indicating it's only valid for India-based legal entities. If you attempt to import/export this entity to a non-India-based legal entity, you encounter a mapping error. You can either create a new India-based legal entity or temporarily add an India address to the legal entity you're trying to export/import.
 
-To create a new India-based legal entity or temporarily add an India address to the legal entity you're trying to export/import, follow these steps.
+To create a new India-based legal entity or temporarily add an India address to the legal entity you're trying to export/import, follow these steps:
 
 1. Go to **Organization administration \> Legal entities** and select your legal entity.
 1. In the Addresses section, add or modify the primary address.

@@ -57,7 +57,7 @@ The following image shows an example of a promo banner.
 
 ## Add a promo banner module to a page 
 
-To add a promo banner module to a page and set the required properties, follow these steps.
+To add a promo banner module to a page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.

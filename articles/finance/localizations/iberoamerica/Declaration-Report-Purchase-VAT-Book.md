@@ -44,7 +44,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in the transactions.
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. Select **Purchases Vat Book Details**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -68,7 +68,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the Venezuelan Purchase VAT book
 
-To generate the Venezuelan Purchase VAT book, follow these steps.
+To generate the Venezuelan Purchase VAT book, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **VE compras**.

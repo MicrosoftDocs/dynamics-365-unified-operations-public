@@ -51,7 +51,7 @@ The following image shows a product's additional details.
 
 If the product subtype is **Product master**, specific variants will need to be created. 
 
-To create product variants, follow these steps.
+To create product variants, follow these steps:
 
 1. On the action pane, select **Product variants**.
 1. If variant groups have been selected on the action pane, select **Variant suggestions*.

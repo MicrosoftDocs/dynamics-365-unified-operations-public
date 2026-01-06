@@ -35,7 +35,7 @@ Supply Chain Management provides functionality that organizations can use to str
 - **Risk Assessment Copilot** – Risk Assessment Copilot significantly accelerates the contract review process. At the same time, it helps reduce risk by using AI to compare contract terms to a company's predefined risk parameters, based on the contract type.
 - **Pre-seeded information** – Icertis for Microsoft Dynamics 365 Supply Chain Management includes extensive pre-seeded attributes and entities. Therefore, you can benefit from the integration without having to spend lots of time on implementation.
 
-To learn more about Icertis for Microsoft Dynamics 365 Supply Chain Management, follow these steps.
+To learn more about Icertis for Microsoft Dynamics 365 Supply Chain Management, follow these steps:
 
 1. Sign in to your Icertis Contract Intelligence (ICI) instance.
 1. Select the **Help** button.
@@ -128,7 +128,7 @@ Icertis for Microsoft Dynamics 365 Supply Chain Management provides the followin
 
 ## Set up Icertis for Microsoft Dynamics 365 Supply Chain Management
 
-To set up Icertis for Microsoft Dynamics 365 Supply Chain Management, follow these steps.
+To set up Icertis for Microsoft Dynamics 365 Supply Chain Management, follow these steps:
 
 1. Purchase a subscription for Icertis for Microsoft Dynamics 365 Supply Chain Management.
 
@@ -138,7 +138,7 @@ To set up Icertis for Microsoft Dynamics 365 Supply Chain Management, follow the
 1. Optional: Configure single sign-on (SSO).
 1. Configure ICI with attributes, templates, clauses, master data, rules, and other useful metadata to seamlessly integrate the two products.
 
-To get detailed instructions for deploying the package and setting up an instance, follow these steps.
+To get detailed instructions for deploying the package and setting up an instance, follow these steps:
 
 1. Sign in to your Icertis Contract Intelligence (ICI) instance.
 1. Select the **Help** button.

@@ -27,7 +27,7 @@ In addition, you can inquire about the inventory and warehouse transactions to g
 
 The **On-hand list** page is automatically updated when transactions are made in inventory. Those transactions might be forecasted, physical, or financial transactions.
 
-To check the availability of inventory, follow these steps.
+To check the availability of inventory, follow these steps:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **On-hand list**.
 1. In the [**Filters** pane](#filters-pane), specify the product and locations that you want to view on-hand information for. You can add filters as you require by using the **Add** button. In addition, you can remove filters by using the **Remove** (**X**) button. Select **Apply** to view the results. The more filters you specify, the more specific the on-hand results are. Therefore, fewer rows and/or lower on-hand values are shown.
@@ -54,7 +54,7 @@ The **On-hand** grid provides the following columns of inventory information.
 
 ## <a name="filters-pane"></a>Apply filters to scope on-hand calculations to items and dimensions you're looking for
 
-Use the **Filters** pane to filter the on-hand inventory list so that it includes only records where the field values match the filtering criteria. To define a filter, follow these steps.
+Use the **Filters** pane to filter the on-hand inventory list so that it includes only records where the field values match the filtering criteria. To define a filter, follow these steps:
 
 1. In the **Filters** pane, find the field that you want to filter on.
 1. In the field below the name of the target field, select a logical operator (for example, *starts with*, *equal to*, or *greater than*).
@@ -76,7 +76,7 @@ You can modify the set of filters that is available in the **Filters** pane by f
 
 Dimensions tell you more about each item in the on-hand inventory list. They also give you more ways to sort and filter the list. The dimensions that you select to show affect how rows are aggregated on the **On-hand list** page. This aggregation, in turn, can affect how rows from the source tables are combined in the results that are shown. Use the [examples](#examples) later in this article to understand how this behavior can affect your results.
 
-To customize the selection of inventory dimensions that is shown, follow these steps.
+To customize the selection of inventory dimensions that is shown, follow these steps:
 
 1. On the Action Pane, select **Dimensions**.
 
@@ -90,7 +90,7 @@ To customize the selection of inventory dimensions that is shown, follow these s
 
 The on-hand information on the **On-hand list** page is aggregated based on the filters and dimensions that you specified. In SQL terms, filters control the `WHERE` clause of the on-hand calculation, and dimensions control the `GROUP BY` clause. These clauses, in turn, control how many records and columns are shown in the on-hand list. Nevertheless, you might still have to further inspect a specific value in the on-hand information.
 
-To learn more about the transactions that participated in the on-hand calculation, follow these steps.
+To learn more about the transactions that participated in the on-hand calculation, follow these steps:
 
 1. On the Action Pane, select **Transactions**. The [**Inventory transactions**](inventory-transactions-details.md) page appears. The same filters and dimensions that you used in the on-hand list are applied to this page.
 1. On the Action Pane, select **Warehouse transactions**. The [**Warehouse transactions**](../warehousing/warehouse-transactions.md) page appears. The same filters and dimensions that you used in the on-hand list are applied to this page.

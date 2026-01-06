@@ -26,7 +26,7 @@ To create a Customer Voice account, go the [Customer Voice](https://dynamics.mic
 
 After you create a Customer Voice account and sign in, the next step is to select a project template for the type of feedback that you want to collect.
 
-To select a Customer Voice project template, follow these steps.
+To select a Customer Voice project template, follow these steps:
 
 1. Go to the [Customer Voice project template page](https://customervoice.microsoft.com/Pages/ProjectPage.aspx).
 1. Select **Get started**.
@@ -52,7 +52,7 @@ For information about fragments, see [Work with fragments](work-with-fragments.m
 > [!NOTE]
 > You only have to add the URL to the fragment. The external script module will add the other script code.
 
-To embed the external script URL into a fragment, follow these steps.
+To embed the external script URL into a fragment, follow these steps:
 
 1. In site builder, create a fragment that is based on the [External script module](dev-itpro/script-module.md).
 1. In the new fragment, select the **Default external script** slot.
@@ -73,7 +73,7 @@ Next, on all site pages that should have a Customer Voice survey, you must embed
 <link rel="stylesheet" type="text/css" href=https://mfpembedcdnmsit.azureedge.net/mfpembedcontmsit/Embed.css />
 ```
 
-To embed the external style sheet code into a fragment, follow these steps.
+To embed the external style sheet code into a fragment, follow these steps:
 
 1. In site builder, create a fragment that is based on the [Metatags module](dev-itpro/metatags-module.md).
 1. In the fragment, select the **Default metatags** slot.
@@ -108,7 +108,7 @@ function renderSurveyButton() {
 setTimeout(renderSurveyButton, 4000);
 ```
 
-To embed the inline script code into a fragment, follow these steps.
+To embed the inline script code into a fragment, follow these steps:
 
 1. In site builder, create a fragment that is based on the [Inline script module](dev-itpro/script-module.md).
 1. In the fragment, select the **Default inline script** slot.
@@ -135,7 +135,7 @@ For information about templates, see [Work with templates](work-with-templates.m
 
 By default, content security policy (CSP) doesn't allow calls to other services unless additional configuration is done. Therefore, after you publish the updated templates, it's likely that the survey will fail to be loaded on the relevant site pages. To view the CSP-related errors, open your web browser's developer tools (F12), and then go to a page that has the survey. The CSP-related errors will appear in the console output.
 
-To configure CSP in site builder to fix the errors, follow these steps.
+To configure CSP in site builder to fix the errors, follow these steps:
 
 1. Go to **Site settings \> Extensions**.
 1. On the **Content security policy** tab, add `https://customervoice.microsoft.com/` to the **child-src** directive.

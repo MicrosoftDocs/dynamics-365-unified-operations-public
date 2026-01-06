@@ -129,7 +129,7 @@ Before you can set up return locations, you must set up the following elements:
 	
 ### Set up return locations
 
-To set up return locations, follow these steps.
+To set up return locations, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Warehouses**, and select a warehouse.
 1. On the **Retail** FastTab, in the **Default return location** field, select the inventory location to use for returns where the info codes or reason codes aren't mapped to return locations.
@@ -183,7 +183,7 @@ CAUSE: This issue arises when multiple CSUs are in use. In this example, store A
 
 #### Mitigation steps
 
-To mitigate this issue, follow these steps.
+To mitigate this issue, follow these steps:
 
 1. In Commerce headquarters, enable the **Improved user experience for POS returns** feature in the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
 2. Run the **Update return quantities** job at high frequency.

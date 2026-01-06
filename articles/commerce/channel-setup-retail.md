@@ -26,7 +26,7 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 
 ## Create and configure a new retail channel
 
-To create and configure a new retail channel, follow these steps.
+To create and configure a new retail channel, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and Commerce \> Channels \> Stores \> All stores**.
 1. On the Action Pane, select **New**.
@@ -73,7 +73,7 @@ The following image shows various additional retail channel setup options on the
 
 ### Set up payment methods
 
-To set up payment methods, for each payment type supported on this channel, follow these steps.
+To set up payment methods, for each payment type supported on this channel, follow these steps:
 
 1. On the Action Pane, select the **Set Up** tab, then select **Payment methods**.
 1. On the Action Pane, select **New**.
@@ -106,7 +106,7 @@ The following image shows an example of a cash declaration.
 
 You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the Action Pane.  
 
-To change or add a mode of delivery, follow these steps.
+To change or add a mode of delivery, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.
 1. On the Action Pane, select **New** to create a new mode of delivery, or select an existing mode.
@@ -118,7 +118,7 @@ The following image shows an example of a mode of delivery.
 
 ### Set up income/expense account
 
-To set up income/expense account, follow these steps.
+To set up income/expense account, follow these steps:
 
 1. On the Action Pane, select the **Set Up** tab, and then select **Income/Expense account**.
 1. On the Action Pane, select **New**.
@@ -135,7 +135,7 @@ The following image shows an example of an income/expense account.
 
 ### Set up sections
 
-To set up sections, follow these steps.
+To set up sections, follow these steps:
 
 1. On the Action Pane, select the **Set Up** tab, and then select **Sections**.
 1. On the Action Pane, select **New**.
@@ -147,7 +147,7 @@ To set up sections, follow these steps.
 
 ### Set up a fulfillment group assignment
 
-To set up a fulfillment group assignment, follow these steps.
+To set up a fulfillment group assignment, follow these steps:
 
 1. On the Action Pane, select the **Set up** tab, and then select **Fulfillment group assignment**.
 1. On the Action Pane, select **New**.
@@ -161,7 +161,7 @@ The following image shows an example of a fulfillment group assignment setup.
 
 ### Set up safes
 
-To set up safes, follow these steps.
+To set up safes, follow these steps:
 
 1. On the Action Pane, select the **Set Up** tab, and then select **Safes**.
 1. On the Action Pane, select **New**.
@@ -200,7 +200,7 @@ To enable the use of the new transaction ID format, follow these steps:
 
 Store location data, including latitude and longitude, is used in store selector scenarios in both POS and e-commerce sites.
 
-To set up the store location in Commerce headquarters, follow these steps.
+To set up the store location in Commerce headquarters, follow these steps:
 
 1. Go to **Organization administrator \> Organizations \> Operating units**.
 1. In the left navigation pane, filter the operating unit by name or the operating unit number of the channel, and then select it.

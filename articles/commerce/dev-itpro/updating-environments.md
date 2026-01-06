@@ -51,7 +51,7 @@ Every time that a database moved from a different environment is restored, speci
 
 In many cases, you should reset the Commerce scheduler after you update the database.
 
-After you restore the database, follow these steps.
+After you restore the database, follow these steps:
 
 1. Either do a build and a database synchronization, or deploy the deployable package.
 

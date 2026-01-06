@@ -63,7 +63,7 @@ Per the legal definition, the value of box 1a, "Supplies of goods / services tax
 
 In Finance, and depending on the tax configuration, you can implement a specific sales tax group code that represents and calculates the operations at a standard sales rate. 
 
-To configure box 1a for this example, follow these steps.
+To configure box 1a for this example, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace
 1. Select **Configurations** \> **Setup** to set up the rules used to identify the tax transaction in the related box of the VAT return form.
@@ -156,7 +156,7 @@ To generate the VAT return form report in Excel format, define an ER format on t
 
 The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the **Settle and post sales tax** job. For more information about sales tax settlement and reporting, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
-To generate the tax declaration report, follow these steps.
+To generate the tax declaration report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
 1. Select the settlement period.

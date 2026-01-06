@@ -23,7 +23,7 @@ The following procedure walks you how to post a free text invoice with a payment
 
 Before you can complete this procedure, you must first set up a payment slip formats and payment slips for customer invoices. 
 
-To post a sales invoice with a payment slip, follow these steps.
+To post a sales invoice with a payment slip, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.

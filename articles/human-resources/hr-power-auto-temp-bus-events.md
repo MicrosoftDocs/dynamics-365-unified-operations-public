@@ -24,7 +24,7 @@ The following templates are available for Microsoft Dynamics 365 Human Resources
 
 ## Power Automate templates
 
-To use Power Automate templates to create business events in Dynamics 365 Human Resources, follow these steps.
+To use Power Automate templates to create business events in Dynamics 365 Human Resources, follow these steps:
 
 1. Open Power Automate.
 2. On the left navigation pane, select **Templates**.

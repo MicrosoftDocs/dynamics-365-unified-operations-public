@@ -31,7 +31,7 @@ Before you can execute the following procedures, complete the following tasks:
 
 ## Create a sales order
 
-To create a sales order, follow these steps.
+To create a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
@@ -48,7 +48,7 @@ To create a sales order, follow these steps.
 
 ## Post an invoice for a sales order
 
-To post an invoice for a sales order, follow these steps.
+To post an invoice for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, on the Action Pane, select **Invoice**.
 1. Select **Invoice**.
@@ -59,7 +59,7 @@ To post an invoice for a sales order, follow these steps.
 
 ## Generate OIOUBL electronic invoice
 
-To generate an OIOUBL electronic invoice, follow these steps.
+To generate an OIOUBL electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, select **Invoice**.
 1. On the Action Pane, select **Invoice**.
@@ -68,7 +68,7 @@ To generate an OIOUBL electronic invoice, follow these steps.
 
 ## View an OIOUBL electronic invoice
 
-To view an OIOUBL electronic invoice, follow these steps.
+To view an OIOUBL electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
 1. Select **Show files**.

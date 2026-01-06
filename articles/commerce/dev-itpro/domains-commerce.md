@@ -40,7 +40,7 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 
 You can add additional supported host names to an environment in LCS after the initial environment provisioning. 
 
-To add a new domain to the supported host names list in LCS, follow these steps.
+To add a new domain to the supported host names list in LCS, follow these steps:
 
 1. Navigate to your environment in LCS.
 1. Go to **Environment Features \> Commerce**, and then select **Manage**.

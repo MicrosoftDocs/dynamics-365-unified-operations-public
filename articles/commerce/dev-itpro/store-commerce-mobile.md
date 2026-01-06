@@ -83,7 +83,7 @@ Before a register can be activated on the Store Commerce mobile apps, you must s
 
 ### Device setup
 
-To create and set up a new device, follow these steps.
+To create and set up a new device, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**. 
 1. Create a new device, and select either **Modern POS - Android** or **Modern POS - iOS** as the application type, depending on the mobile app that you're deploying. 
@@ -103,7 +103,7 @@ After devices and registers are configured, in Commerce headquarters go to **Ret
 
 ## Activate a device
 
-To activate a device on a Store Commerce mobile app, follow these steps.
+To activate a device on a Store Commerce mobile app, follow these steps:
 
 1. Open the app on the mobile device.
 1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).

@@ -66,7 +66,7 @@ If the flight is set to *false* by default, an issue occurs when changes are dep
 
 > EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled.
 
-If you receive the error, follow these steps.
+If you receive the error, follow these steps:
 
 1. In Microsoft SQL Server Management Studio (SSMS), run the following query.
 

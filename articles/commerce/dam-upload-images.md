@@ -60,7 +60,7 @@ The examples above use the default configuration. The separator character and di
 
 ## Upload an image
 
-To upload an image in site builder, follow these steps.
+To upload an image in site builder, follow these steps:
 
 1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Media Items**.
@@ -72,7 +72,7 @@ To upload an image in site builder, follow these steps.
 
 ## Upload a folder of images
 
-To bulk upload a folder of images in site builder, follow these steps.
+To bulk upload a folder of images in site builder, follow these steps:
 
 1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Folder**.

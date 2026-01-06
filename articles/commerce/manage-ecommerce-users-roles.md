@@ -43,7 +43,7 @@ When you create a new site in Commerce, you're asked to provide a security group
 
 ## Add or update security groups
 
-After your site is created, only users who are in the security groups that are associated with the **System Administrator** and **Administrator** roles can access site builder for that site. To assign users to the **Web Producer**, **RnR Moderator**, and **Reader** roles, you must assign security groups to those roles. To add a security group to a role, or to update a security group that is currently assigned to a role, follow these steps.
+After your site is created, only users who are in the security groups that are associated with the **System Administrator** and **Administrator** roles can access site builder for that site. To assign users to the **Web Producer**, **RnR Moderator**, and **Reader** roles, you must assign security groups to those roles. To add a security group to a role, or to update a security group that is currently assigned to a role, follow these steps:
 
 1. Go to the site that you want to update.
 1. In **Site management**, open the **Security** page.

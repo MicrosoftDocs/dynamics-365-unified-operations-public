@@ -51,7 +51,7 @@ You can use the same basic procedures to remove main accounts from ledger settle
 
 ## <a name="settle-transactions"></a>Settle transactions
 
-To settle ledger transactions, follow these steps.
+To settle ledger transactions, follow these steps:
 
 1. Go to **General ledger** \> **Periodic tasks** \> **Ledger settlements**.
 2. Set the filters at the top of the page:

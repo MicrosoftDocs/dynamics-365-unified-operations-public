@@ -39,7 +39,7 @@ Invoice capture support three data types for custom fields:
 
 ## Implementation
 
-To create a new solution and add custom fields, follow these steps.
+To create a new solution and add custom fields, follow these steps:
 
 1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/), and select the target environment.
 2. Select **Solutions**, and then select **New solution**.
@@ -57,7 +57,7 @@ To create a new solution and add custom fields, follow these steps.
 9. Select **User defined field setting**, and then select **Edit**.
 10. Select **New row using form**, enter the value for field properties, and then select **Save**.
 
-To review the details for each field, follow these steps.
+To review the details for each field, follow these steps:
 
 1. In Invoice capture, go to **Setup system** \> **Manage configuration group**.
 2. Select the configuration group, and then select **Manage visible fields** to add the fields.

@@ -42,7 +42,7 @@ The following illustration shows an example where an image list module displays 
 
 ## Add an image list module to a new page
 
-To add an image list module to a new page and set the required properties in Commerce site builder, follow these steps.
+To add an image list module to a new page and set the required properties in Commerce site builder, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

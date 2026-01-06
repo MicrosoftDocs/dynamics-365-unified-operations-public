@@ -71,7 +71,7 @@ A receipt profile defines the receipt types and the associated receipt formats t
 
 The functionality profile that is associated with a store includes a **Receipt profile ID** field. This field specifies the receipt profile that defines the receipts that can be emailed for that store.
 
-To add receipt types to a receipt profile that will be used to email receipts, follow these steps.
+To add receipt types to a receipt profile that will be used to email receipts, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles**.
 1. Select **Add** to create a new, empty row.

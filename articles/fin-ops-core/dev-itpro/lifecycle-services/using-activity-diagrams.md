@@ -69,7 +69,7 @@ You can associate a business process with a Visio diagram. Typically, this funct
 > [!Note]
 > BPM supports .vsd and .vsdx files. However, it doesn't support .vsdm files (macro-enabled Visio drawing files). If a .vsd file contain macros, BPM disables the execution of the macros.
 
-To view or upload a Visio file, follow these steps.
+To view or upload a Visio file, follow these steps:
 
 1. Select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**.
 2. On the **Flowchart** page, select the **Visio** tab. For more information, see the "Unconnected flowcharts" section in [Flowcharts in Business process modeler (BPM)](flowcharts-business-process-modeler.md).

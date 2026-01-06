@@ -25,7 +25,7 @@ Learn how you can manage Bing Maps for your application. When Bing Maps is turne
 
 ## Enable Bing Maps
 
-To enable Bing Maps, follow these steps.
+To enable Bing Maps, follow these steps:
 
 1. Go to **Commerce shared Parameters \> Bing Maps**.
 1. Select **Enable Bing Maps** to turn on Bing Maps functionality.
@@ -34,7 +34,7 @@ To enable Bing Maps, follow these steps.
 
 Go to the [Bing Maps licensing page](https://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to obtain a key.
 
-To enter a Bing Maps key, follow these steps.
+To enter a Bing Maps key, follow these steps:
 
 1. Go to **Commerce shared Parameters \> Bing Maps**.
 1. Enter the license key in the **Bing Maps Key** field.

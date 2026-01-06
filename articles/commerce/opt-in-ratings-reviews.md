@@ -25,7 +25,7 @@ If you want to use the ratings and reviews solution on your Commerce website, yo
 
 ## Opt in to use ratings and reviews
 
-To opt in to use ratings and reviews on your site, follow these steps.
+To opt in to use ratings and reviews on your site, follow these steps:
 
 1. Follow the steps in [Deploy a new e-Commerce site](deploy-ecommerce-site.md).
 1. While you're still in LCS, go to **Retail deployment setup \> Other settings**.

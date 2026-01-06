@@ -58,7 +58,7 @@ You must have two types of hardware profile. The first is assigned to the regist
 
 #### Set up a hardware profile for the register
 
-To set up the hardware profile that is assigned to the register, follow these steps.
+To set up the hardware profile that is assigned to the register, follow these steps:
 
 1. In Dynamics 365 Commerce, search for **Hardware profile**.
 2. Select **New**.
@@ -82,7 +82,7 @@ To set up the hardware profile that is assigned to the register, follow these st
 
 #### Set up a hardware profile for the receipt printer and cash drawer
 
-To set up the hardware profile that is used to group the network receipt printer and cash drawer, follow these steps.
+To set up the hardware profile that is used to group the network receipt printer and cash drawer, follow these steps:
 
 1. In Dynamics 365 Commerce, search for **Hardware profile**.
 2. Select **New**.

@@ -31,7 +31,7 @@ Collect the following IDs from the Azure portal. You will need these IDs in the 
 - Client application ID
 - Client directory (tenant) ID
 
-To add a new app registration in Commerce site builder, follow these steps.
+To add a new app registration in Commerce site builder, follow these steps:
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
@@ -53,7 +53,7 @@ To add a new app registration in Commerce site builder, follow these steps.
 
 ## Edit an existing app registration
 
-To edit an existing app registration in Commerce site builder, follow these steps.
+To edit an existing app registration in Commerce site builder, follow these steps:
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
@@ -65,7 +65,7 @@ To edit an existing app registration in Commerce site builder, follow these step
 
 ## Remove an existing app registration
 
-To remove an existing app registration in Commerce site builder, follow these steps.
+To remove an existing app registration in Commerce site builder, follow these steps:
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.

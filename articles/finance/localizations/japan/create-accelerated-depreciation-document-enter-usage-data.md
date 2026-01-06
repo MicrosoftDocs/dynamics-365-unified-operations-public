@@ -27,7 +27,7 @@ Before you complete the procedures, you must first select the **Fixed Asset** co
 
 ## Create a fixed asset with accelerated depreciation
 
-To create a fixed asset with accelerated depreciation, follow these steps.
+To create a fixed asset with accelerated depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.
@@ -41,7 +41,7 @@ To create a fixed asset with accelerated depreciation, follow these steps.
 
 ## Acquire the fixed asset
 
-To acquire the fixed asset, follow these steps.
+To acquire the fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -56,7 +56,7 @@ To acquire the fixed asset, follow these steps.
 
 ## Enter overuse information in the accelerated depreciation document
 
-To enter overuse information in the accelerated depreciation document, follow these steps.
+To enter overuse information in the accelerated depreciation document, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Accelerated depreciation \> Accelerated depreciation document**.
 1. Select **New**.

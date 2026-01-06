@@ -65,7 +65,7 @@ To learn more about migration tooling, prerequisites, migration steps, and consi
 
 The first step is to create a new finance and operations Implementation project in Lifecycle Services. The customer will have an existing Human Resources Lifecycle Services project. The existing Human Resources environments will be migrated to the new finance and operations implementation project.
 
-To create a new project, follow these steps.
+To create a new project, follow these steps:
 
 1. Sign in to Lifecycle Services as the designated service account user.
 2. On the Lifecycle Services home page, select **Create/new (+)**.
@@ -207,7 +207,7 @@ Follow these steps to add dual-write permissions.
 > [!NOTE]
 > The integration keys for different maps are available in [Integration considerations](hr-dataverse-integration.md#integration-considerations).
 
-After the relevant maps are configured, follow these steps.
+After the relevant maps are configured, follow these steps:
 
 1. Go to **Data management** \> **Dual write UI**.
 2. In **Integration key**, confirm that the correct keys are set. If any of the keys differ, update them.

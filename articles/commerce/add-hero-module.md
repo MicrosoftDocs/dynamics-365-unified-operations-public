@@ -62,7 +62,7 @@ The following image shows an example of a content block module with a feature la
 
 ## Add a content block module to a new page
 
-To add a hero module to a new page and set the required properties, follow these steps.
+To add a hero module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and create a page template that is named **Content block template**.
 1. In the **Main** slot of the default page, add a hero module.

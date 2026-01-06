@@ -67,7 +67,7 @@ Each business event provides an event message that helps you identify the table 
 | Error                   | The service has paused because of an error.      | TableName: string, StatusCode: int    |
 | Lake switch (not yet implemented) | <p>The data lake location has been changed.</p><p><strong>Note:</strong> This event isn't yet implemented.</p> |                                       |
 
-To create a business action by using Microsoft Power Automate, follow these steps.
+To create a business action by using Microsoft Power Automate, follow these steps:
 
 1. In the Power Apps maker portal, select **Flows** to open the Power Automate portal.
 2. Select **My flows**, and then select **New Flow**.

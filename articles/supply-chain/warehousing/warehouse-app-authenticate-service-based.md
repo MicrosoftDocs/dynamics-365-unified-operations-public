@@ -58,7 +58,7 @@ For more information about how to register applications in Microsoft Entra ID, s
 
 ## <a name="user-azure-ad"></a>Set up mobile-device user accounts in Supply Chain Management
 
-To enable Supply Chain Management to use your Microsoft Entra ID application, follow these steps.
+To enable Supply Chain Management to use your Microsoft Entra ID application, follow these steps:
 
 1. Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
 

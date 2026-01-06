@@ -18,7 +18,7 @@ Business performance analytics lets you create or customize reports that include
 
 ## Create a new report
 
-To create a new report, follow these steps.
+To create a new report, follow these steps:
 
 1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select **New**. Select either a Power BI or an Excel report.
@@ -36,7 +36,7 @@ After you open a report, you can edit the visuals or data fields by selecting **
 
 ## Duplicate a report
 
-To duplicate a report that isn't currently open, follow these steps.
+To duplicate a report that isn't currently open, follow these steps:
 
 1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select the report to duplicate. (You can duplicate only one report at a time.)
@@ -48,7 +48,7 @@ After the report is duplicated, you receive a "Report duplicated" message that c
 
 ## Rename a report
 
-To rename a report that isn't currently open, follow these steps.
+To rename a report that isn't currently open, follow these steps:
 
 1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select the report to rename. (You can rename only one report at a time.)
@@ -62,7 +62,7 @@ To rename a report that's currently open, select **Rename** on the report.
 
 ## Delete a report
 
-To delete one or more reports, follow these steps.
+To delete one or more reports, follow these steps:
 
 1. In Business performance analytics, in the **Data explorer** section, go to **Reports**.
 2. Select the report or reports to delete.

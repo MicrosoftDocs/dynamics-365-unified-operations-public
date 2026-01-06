@@ -19,7 +19,7 @@ You must set up the production floor execution interface for each device on the 
 
 ## Set the configuration and filters for a specific device
 
-To set the configuration and job filters for a device, sign in to the **Production floor execution** page by using an account that has a security role that includes the *Maintain time supervision* duty. (Among the out-of-box security roles, only *Shop floor supervisor* has this duty.) Then follow these steps.
+To set the configuration and job filters for a device, sign in to the **Production floor execution** page by using an account that has a security role that includes the *Maintain time supervision* duty. (Among the out-of-box security roles, only *Shop floor supervisor* has this duty.) Then follow these steps:
 
 1. Go to the device that you want to set up, and sign in to Microsoft Dynamics 365 Supply Chain Management as a shop floor supervisor. (Use an account that includes the *Maintain time supervision* duty.)
 1. Make sure that a configuration is available for the device that you're setting up. If no configuration exists, a default configuration is provided. For more information about how to set up a configuration, see [Configure the production floor execution interface](production-floor-execution-configure.md).
@@ -48,7 +48,7 @@ You can give specific workers permission to change the filter settings on any de
 > [!NOTE]
 > If a worker changes a filter, the new filter applies from that point forward, for all users who sign in to the device.
 
-To allow a worker to override the default job filters that you set up for a device, follow these steps.
+To allow a worker to override the default job filters that you set up for a device, follow these steps:
 
 1. Go to **Time and attendance \> Setup \> Time registration workers**.
 1. Select a worker in the list to open that worker's **Time registration workers** page.

@@ -45,7 +45,7 @@ The code lists can be found in [e-invoice Legislation and Technical Architecture
 
 ### Reference the imported ER format configurations
 
-To reference the imported ER format configurations, follow these steps.
+To reference the imported ER format configurations, follow these steps:
 
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 1. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents in the **Sales and Free text invoice: E-Invoice (TR)** parameter.
@@ -54,7 +54,7 @@ To reference the imported ER format configurations, follow these steps.
 
 This section provides information about how to configure legal entity for customer e-invoices.
 
-To configure legal entity, follow these steps.
+To configure legal entity, follow these steps:
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**, and select a legal entity.
 1. On the **Addresses** FastTab, add a valid primary address for the legal entity.
@@ -67,7 +67,7 @@ To configure legal entity, follow these steps.
 
 This section provides information about how to configure customer accounts for customer e-invoices.
 
-To configure customer account data, follow these steps.  
+To configure customer account data, follow these steps:  
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**, and select a customer.
 1. On the **Addresses** FastTab, add a valid address for the customer.
@@ -85,7 +85,7 @@ To configure customer account data, follow these steps.
 
 This section explains how to set up unit of measure mappings in Finance so that internal unit codes (such as *EA*, *KG*, or *M*), are correctly converted to UN/ECE unit codes (such as *C62*, *KGM*, or *MTR*).  
 
-To configure the mappings, follow these steps.
+To configure the mappings, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit, and then select **External codes**.
@@ -117,7 +117,7 @@ This section explains how to define and assign **Sales tax exempt codes** in Fin
 
 The **Sales tax exempt codes** page provides a centralized location to create standardized exemption identifiers that represent legal reasons for tax exemption in Türkiye.
 
-To define sales tax exempt codes, follow these steps.
+To define sales tax exempt codes, follow these steps:
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax exempt codes**.  
 1. Select **New** to create a new record.  
@@ -135,7 +135,7 @@ For the official UBL-TR exemption code list, see [e-Invoice Legislation and Tech
 After defining the exemption codes, you must assign them to the relevant **sales tax codes** within **sales tax groups**.  
 This assignment ensures that the correct **TaxExemptionReasonCode** values are included in the generated UBL-TR e-invoice XML.
 
-To assign exemption codes to sales tax codes, follow these steps.
+To assign exemption codes to sales tax codes, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax groups**.  
 1. Select an existing **Sales tax group** that includes one or more sales tax codes for exemption scenarios.  
@@ -150,7 +150,7 @@ To assign exemption codes to sales tax codes, follow these steps.
 
 This section describes how to set up the **TaxTypeCode** lookup in the **Application specific parameters** page for the **E-Invoice (TR)** ER format to ensure compliance with the requirements in UBL-TR **XML** file.
 
-To set up a **TaxTypeCode**, follow these steps.
+To set up a **TaxTypeCode**, follow these steps:
 
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 1. In the list of ER formats, select **E-Invoice (TR)** format.
@@ -173,7 +173,7 @@ To set up a **TaxTypeCode**, follow these steps.
 
 You can review the list of **TaxTypeCode** values currently available in the system.
 
-To review the list, follow these steps.
+To review the list, follow these steps:
 
 1. Go to **Organization administration ** > **Electronic reporting** > **Configurations**.
 1. In the list of ER formats, select **E-Invoice (TR)** format.
@@ -193,7 +193,7 @@ This section describes how to generate, view, and access electronic invoices for
 
 When an invoice is posted, you can generate an electronic invoice from any invoice journal. 
 
-To generate an electronic invoice from any invoice journal, follow these steps.
+To generate an electronic invoice from any invoice journal, follow these steps:
 
 1. Select the invoice
 1. On the Action Pane, select the **Invoice** tab.
@@ -208,7 +208,7 @@ Learn about how to configure destinations for generated electronic documents in 
 
 If no Electronic reporting (ER) destinations are defined for electronic invoice formats, output files for electronic invoices are generated on the Electronic reporting jobs page.
 
-To view these e-invoice files, follow these steps.
+To view these e-invoice files, follow these steps:
 
 1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**.
 1. Select a job, and then select **Show files**.

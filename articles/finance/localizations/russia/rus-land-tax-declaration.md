@@ -52,7 +52,7 @@ Here is an overview of the steps for setting up land tax:
 
 ### Set up land tax codes and rates
 
-To set up land tax codes and rates, follow these steps.
+To set up land tax codes and rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Create a sales tax code.
@@ -63,14 +63,14 @@ To set up land tax codes and rates, follow these steps.
 
 ### Set up budget revenue codes for land tax
 
-To set up budget revenue codes for land tax, follow these steps.
+To set up budget revenue codes for land tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Payment order setup** \> **Budget revenue classification**.
 1. Create a budget revenue code for land tax.
 
 ### Assign a budget revenue code to a sales tax code
 
-To assign a budget revenue code to a sales tax code, follow these steps.
+To assign a budget revenue code to a sales tax code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Tax reporting** \> **Sales tax relations**.
 1. Create a record.
@@ -81,7 +81,7 @@ To assign a budget revenue code to a sales tax code, follow these steps.
 
 ### Set up tax allowances
 
-To set up tax allowances, follow these steps.
+To set up tax allowances, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Tax reporting** \> **Tax allowances**.
 1. Create a record.
@@ -109,7 +109,7 @@ To set up tax allowances, follow these steps.
 
 ### Assign tax allowances to a sales tax code as a reduction of the tax rate, a reduction of the tax amount, and a tax base reduction
 
-To assign tax allowances to a sales tax code as a reduction of the tax rate, a reduction of the tax amount, and a tax base reduction, follow these steps.
+To assign tax allowances to a sales tax code as a reduction of the tax rate, a reduction of the tax amount, and a tax base reduction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Tax reporting** \> **Sales tax relations**.
 1. Select the record for the sales tax code.
@@ -117,7 +117,7 @@ To assign tax allowances to a sales tax code as a reduction of the tax rate, a r
 
 ### Set up the territory code (OKTMO code) for the legal entity
 
-To set up the territory code (OKTMO code) for the legal entity, follow these steps.
+To set up the territory code (OKTMO code) for the legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Addresses** FastTab, select **More options** \> **Advanced**.
@@ -135,7 +135,7 @@ To set up the territory code (OKTMO code) for the legal entity, follow these ste
 
 You must create the tax authorities to which you're required to report assessed tax declarations.
 
-To set up tax authorities and related OKTMO codes, follow these steps.
+To set up tax authorities and related OKTMO codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 1. Create a tax authority.
@@ -157,7 +157,7 @@ To set up tax authorities and related OKTMO codes, follow these steps.
 
 If the organization has land assets that are located in territories that differ from the organization's main location, or if the organization has separate subdivisions, you should set up company divisions.
 
-To set up company divisions, their registration reason codes (KPP), and their OKTMO codes, follow these steps.
+To set up company divisions, their registration reason codes (KPP), and their OKTMO codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Separate divisions**.
 1. Create a company division.
@@ -191,7 +191,7 @@ If the organization has land assets that are located in territories that differ 
 
 If a land asset is distributed among several territories, it should be reported under the appropriate OKTMO code. You should set up distribution territories, assign an OKTMO code to each territory, and associate the OKTMO codes with tax authorities.
 
-To set up territories for distributed land assets, follow these steps.
+To set up territories for distributed land assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Tax reporting** \> **Distribution**.
 1. Create a territory.
@@ -210,7 +210,7 @@ To set up territories for distributed land assets, follow these steps.
 
 ### Set up fixed assets parameters for posting land tax
 
-To set up fixed assets parameters for posting land tax, follow these steps.
+To set up fixed assets parameters for posting land tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
 1. On the **Number sequences** tab, for the **Assessed tax registers journal number** reference, select a number sequence for the tax register.
@@ -228,7 +228,7 @@ To set up fixed assets parameters for posting land tax, follow these steps.
 
 If land tax transactions will be automatically created based on calculated tax registers, you should set up a journal.
 
-To set up the journal for posting land tax, follow these steps.
+To set up the journal for posting land tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal setup** \> **Journal names**.
 1. Create a line.
@@ -239,7 +239,7 @@ To set up the journal for posting land tax, follow these steps.
 
 If land tax transactions will be automatically created based on calculated tax registers, you should set up posting groups.
 
-To set up a posting group for land tax postings, follow these steps.
+To set up a posting group for land tax postings, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Tax reporting** \> **Group of posting of taxes**.
 1. Create a line.
@@ -260,7 +260,7 @@ parameters for land tax calculation:
 
 ### Create a land fixed asset and define parameters for land tax calculation
 
-To create a land fixed asset and define parameters for land tax calculation, follow these steps.
+To create a land fixed asset and define parameters for land tax calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select an existing fixed asset, or create a new fixed asset.
@@ -278,7 +278,7 @@ By default, the assumption is that land assets are located at the organization's
 
 If the organization has land assets that are located in different territories and registered in different tax authorities, you must specify the location of the land asset.
 
-To specify the location of the land, follow these steps.
+To specify the location of the land, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the line for the land asset.
@@ -288,7 +288,7 @@ To specify the location of the land, follow these steps.
 
 ### Specify the distribution for a land asset that is located in several territories
 
-To specify the distribution for a land asset that is located in several territories, follow these steps.
+To specify the distribution for a land asset that is located in several territories, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the line for the land asset.
@@ -306,7 +306,7 @@ To specify the distribution for a land asset that is located in several territor
 
 The cadastral cost of a land asset might change because of a change in qualitative and quantitative characteristics. Follow these steps to record a change in cadastral value.
 
-To change the cadastral cost of land and specify the tax allowance history, follow these steps.
+To change the cadastral cost of land and specify the tax allowance history, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the line for the land asset.
@@ -361,7 +361,7 @@ After you've finished the setup, registered the acquisition of land assets, and 
 - **Advance payment amount/Tax amount** – If the tax register is calculated for the first quarter, second quarter, or third quarter, the final tax advance amount. If the tax register is calculated for the year, the final land tax amount.
 - **Land tax** – This tax register calculates total land tax amounts for each sales tax code and OKTMO code.
 
-To calculate and approve land tax registers, follow these steps.
+To calculate and approve land tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Tax register journal**.
 1. Select **New**.
@@ -387,7 +387,7 @@ To calculate and approve land tax registers, follow these steps.
 
 If you've corrected any land asset data for the previous periods, you should create corrective tax registers to reflect the corrected land tax amounts.
 
-To create corrective registers, follow these steps.
+To create corrective registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Tax register journal**.
 1. Select the approved journal for the period that must be corrected.
@@ -402,7 +402,7 @@ To create corrective registers, follow these steps.
 
 ### Set up the system to generate a land tax declaration
 
-To set up the system to generate a land tax declaration, follow these steps.
+To set up the system to generate a land tax declaration, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the land tax declaration.
 
@@ -414,7 +414,7 @@ To set up the system to generate a land tax declaration, follow these steps.
 
     Learn more in [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1. To upload data management package settings to work with the assessed tax declaration, follow these steps.
+1. To upload data management package settings to work with the assessed tax declaration, follow these steps:
 
     1. In the LCS Shared asset library, select **Data package** as the asset
         type.
@@ -481,7 +481,7 @@ You must also manually upload the generated file to the special third-party soft
 
 After you've calculated and approved tax registers, and generated a land tax declaration, you can create transactions for land tax accruals.
 
-To create and post land tax ledger transactions, follow these steps.
+To create and post land tax ledger transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Tax register journal**.
 1. Select the journal, and then select **Ledger journal** \> **Land tax**.

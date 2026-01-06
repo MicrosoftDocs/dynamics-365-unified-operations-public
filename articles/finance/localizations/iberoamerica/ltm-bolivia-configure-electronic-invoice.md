@@ -62,7 +62,7 @@ To configure the tax application, go to **Organization administration** \> **Set
 
 ### Configure the legal entity
 
-To configure the legal entity, follow these steps.
+To configure the legal entity, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
@@ -76,7 +76,7 @@ To configure the legal entity, follow these steps.
 
 ### Configure customers
 
-To configure customers, follow these steps.
+To configure customers, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. For each customer used in transactions:
@@ -91,7 +91,7 @@ To configure customers, follow these steps.
 
 This configuration applies to invoices, credit notes, and debit notes.
 
-To configure document classes, follow these steps.
+To configure document classes, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
 1. For each **Document class** that you want to use in electronic invoicing:
@@ -102,7 +102,7 @@ To configure document classes, follow these steps.
 
 ### Configure the sales point prefix
 
-To configure the sales point prefix, follow these steps.
+To configure the sales point prefix, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix** and for the sales point used for electronic invoicing follow these steps:
 1. Complete the **Prefix** field with the sales point code.
@@ -112,7 +112,7 @@ To configure the sales point prefix, follow these steps.
 
 ### Configure the document class sales point
 
-To configure the document class sales point, follow these steps.
+To configure the document class sales point, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point** and for the document class ID and sales point used for electronic invoicing follow these steps:
 1. Enter **Customer** in the **Account type** field.
@@ -121,7 +121,7 @@ To configure the document class sales point, follow these steps.
 
 ### Configure the fiscal information
 
-To configure fiscal information, follow these steps.
+To configure fiscal information, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
 1. Select the record, then select **Tax application**.
@@ -130,7 +130,7 @@ To configure fiscal information, follow these steps.
 
 ### Configure the addresses
 
-To configure addresses, follow these steps.
+To configure addresses, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. For each **Country/Region** record used in electronic invoicing, go to **LATAM** \> **Tax application** to assign the tax application codes according to the Bolivian normative.
@@ -142,7 +142,7 @@ Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 #### Method of payments
 
-To configure the method of payments, follow these steps.
+To configure the method of payments, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments setup** \> **Methods of payment**.
 1. For each record in the list:
@@ -156,7 +156,7 @@ To configure the method of payments, follow these steps.
 
 #### Terms of delivery
 
-To configure terms of delivery, follow these steps.
+To configure terms of delivery, follow these steps:
 
 1. Go to **Sales and marketing** \> **Setup** \> **Distribution** \> **Terms of delivery**.
 1. Create a new record.
@@ -165,7 +165,7 @@ To configure terms of delivery, follow these steps.
 
 #### Configure released products
 
-To configure released products, follow these steps.
+To configure released products, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. For each record in the list:
@@ -177,7 +177,7 @@ To configure released products, follow these steps.
 
 #### Configure Units
 
-To configure Units, follow these steps.
+To configure Units, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. For each record in the list:
@@ -191,7 +191,7 @@ To configure Units, follow these steps.
 
 #### Currencies configuration
 
-To configure currencies, follow these steps.
+To configure currencies, follow these steps:
 
 1. Go to **General ledger** \> **Currencies** \> **Currencies**.
 1. For each record in the list:
@@ -229,7 +229,7 @@ This section explains how to configure domestic and international costs and expe
 
 ## Configure electronic document references
 
-To configure electronic document references, follow these steps.
+To configure electronic document references, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Electronic documents references**.
 1. In the **Tax application Id** field, enter the ID that you use for Bolivian electronic invoices.
@@ -238,7 +238,7 @@ To configure electronic document references, follow these steps.
 
 When you issue an electronic document that has an associated document, you must select **References** on the posting page and add the associated document.
 
-To reference a document, follow these steps.
+To reference a document, follow these steps:
 
 1. Go to the General tab, select **Source Vouchers**, and from the list of documents, select the document to associate.
 1. Complete the **Reference reason** with a motive (not mandatory).
@@ -263,7 +263,7 @@ Follow these steps to configure lookups.
 
 For electronic invoicing, you must configure the **SSRS Reports / Services references**.
 
-To configure SSRS reports and services references, follow these steps.
+To configure SSRS reports and services references, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **SSRS Reports / Services references**.
 1. Create a new record.
