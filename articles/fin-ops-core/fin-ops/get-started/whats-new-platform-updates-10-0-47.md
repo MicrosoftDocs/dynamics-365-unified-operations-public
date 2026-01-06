@@ -38,7 +38,7 @@ This section has a table that lists enhancements included in this release when a
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Visual Studio | Find all references | **Find References** in Microsoft Visual Studio finds references to identifiers in source code. This feature sometimes shows a long unwieldy list of references that are hard to navigate. To mitigate this, we have introduced options to: <ul><li>Toggle showing references in test models</li><li>Toggle showing the Module name</li><li>Grouping references by type</li.<li>Grouping references by model</li></ul> Try **Find all references** to see the new grouping options.| On by default |
-
+| Visual Studio | Visual Studio 2026 | Visual Studio 2026 is not yet supported for the Dynamics 365 for Finance and Development developer workloads. It may well work for some scenarios, but it is currently known to not work with the Unified Developer Experience workloads. Please stay with the VS 2022 release until further notice.|  |
 
 
 ### Bug fixes
