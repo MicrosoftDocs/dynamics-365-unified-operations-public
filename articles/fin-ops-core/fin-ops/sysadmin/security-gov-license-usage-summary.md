@@ -23,7 +23,6 @@ The **Security Governance License Usage Summary** is a tool in Dynamics 365 Fina
 This information helps your organization:
 
 - **Confirm that security roles are configured for required licenses** for the tasks users perform.
-- **Identify when a security role is too broad or high-level**, causing a user to need a more expensive license than expected.
 - **Align security roles with internal controls and compliance** by revealing which permissions drive certain license requirements.
 - **Plan and optimize license requirements** by providing a clear view of how security roles drive required licenses.
 
@@ -54,7 +53,7 @@ Before you access the **User security governance** workspace, activate it in **F
 :::image type="content" source="media/security-governance-license-usage-summary-feature-enabled.png" alt-text="Security governance features enabled in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enabled.png":::
 
 > [!IMPORTANT]
-> The **Security Governance** feature and **User Security Governance license usage summary report** are available only in versions [10.0.44](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and later.
+> The **Security Governance** feature and **User Security Governance license usage summary report** are available only in versions [10.0.43](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and later.
 
 :::image type="content" source="media/security-governance-version-info.png" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
 
@@ -120,7 +119,6 @@ Key columns in the **Role Licenses** view:
 
 - **SKU Name** - The lowest-level Dynamics 365 license that covers all configured security objects in the role. If the role's permissions include any function that requires a higher license, that higher license with the calculated **Entitled** security objects appears.
 
-- **Priority** - The **Priority** column shows the specific order the system uses to evaluate licenses, and which SKU acts as the base license when more than one base SKU is involved. **Priority** is a global ordered list, and a **higher-priority SKU isn't guaranteed to be a superset of a lower-priority SKU for every role**. This condition explains why a higher-priority SKU can still show **Not entitled** for some objects, and why some roles can require a combination of base plus attach SKUs.
 
 **Entitlement counts** - For the required license, the role's configured security objects are broken down into three categories:
 
@@ -131,11 +129,6 @@ Key columns in the **Role Licenses** view:
 This breakdown helps you understand why a role requires the license it does.
 
 :::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
-
->[!Note]
-> In the preceding screenshot, **Supply Chain Management Premium** shows **Priority is 100** and **Finance Premium** shows **Priority is 90**. Priority reflects the global SKU order, not the best match for the Accountant role.
->
-> If **Finance** \ **Finance Premium** fully covers the Accountant role's securable objects (**Not Entitled = 0**), then it remains the right license for that role even though **Supply Chain Management Premium** can still be a valid license.
 
 ## Securable object license classification
 
