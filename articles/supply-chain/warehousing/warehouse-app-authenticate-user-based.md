@@ -65,6 +65,7 @@ The following procedure shows one way to register an application in Microsoft En
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID is referred to later in this article as the *client ID*.
 1. In the **Manage** list, select **Authentication**.
 1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+    - Azure Portal has changed the **Authentication** page, if you have the newer (Preview) UI, you find the same option under **Settings** tab and set the **Allow public client flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
 1. Select **Add a platform**.
 1. In the **Configure platform** dialog, select **Mobile and desktop applications**.
 1. In the **Configure Desktop \+ devices** dialog, set the **Custom redirect URIs** field to one of the following values:
@@ -92,10 +93,15 @@ The following procedure shows one way to register an application in Microsoft En
         com.microsoft.warehousemanagement
         ```
 
-    - **Signature hash** – Enter the following value:
+    - **Signature hash** – For V3, Enter the following value:
 
         ``` text
         hpavxC1xAIAr5u39m1waWrUbsO8=
+        ```
+    - **Signature hash** (Recommended) – If you are using V4 and set "Use Broker" option to "Yes" in WMA, enter the following value. :
+          
+        ``` text
+        Xo8WBi6jzSxKDVR4drqm84yr9iU%3D
         ```
 
 1. Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
