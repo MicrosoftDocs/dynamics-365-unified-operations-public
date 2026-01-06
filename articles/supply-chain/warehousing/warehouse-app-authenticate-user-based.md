@@ -65,7 +65,10 @@ The following procedure shows one way to register an application in Microsoft En
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID is referred to later in this article as the *client ID*.
 1. In the **Manage** list, select **Authentication**.
 1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
-    - Azure Portal has changed the **Authentication** page, if you have the newer (Preview) UI, you find the same option under **Settings** tab and set the **Allow public client flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+
+    > [!TIP]
+    > If you're using the newer (preview) Azure Portal UI, then the **Authentication** page works differently. To enable the device code flow for your application in the new UI, open the **Settings** tab and set the **Allow public client flows** option to *Yes*. Then select **Save**.
+
 1. Select **Add a platform**.
 1. In the **Configure platform** dialog, select **Mobile and desktop applications**.
 1. In the **Configure Desktop \+ devices** dialog, set the **Custom redirect URIs** field to one of the following values:
