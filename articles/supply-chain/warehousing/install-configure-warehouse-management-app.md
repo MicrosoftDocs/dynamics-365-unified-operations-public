@@ -61,7 +61,7 @@ For the Warehouse Management mobile app to function correctly, your internal net
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
 
-For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md) or [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md) (depending on which type of authentication method you're using).
+For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 ### Install the app from an app store
 
@@ -98,7 +98,6 @@ After a device is authenticated with Supply Chain Management, each worker who us
 For details about each authentication method and how to set it up, see the following articles:
 
 - User-based authentication: [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
-- Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 > [!IMPORTANT]
 > Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
@@ -106,7 +105,6 @@ For details about each authentication method and how to set it up, see the follo
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
 - User-based authentication: [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke)
-- Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
 
 > [!NOTE]
 > [Shared Device Mode](/entra/identity-platform/msal-shared-devices) authentication isn't currently supported for the Warehouse Management mobile app.
@@ -122,7 +120,7 @@ You can import connection settings from either a file or a QR code. (Learn more 
 | Parameter | Description |
 |---|---|
 | `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
-| `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)</p> |
+| `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see the following article: [User-based authentication](warehouse-app-authenticate-user-based.md).)</p> |
 | `"ActiveDirectoryResource"` | Specify the root URL of Supply Chain Management. |
 | `"ActiveDirectoryTenant"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).</p> |
 | `"Company"` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
@@ -260,22 +258,18 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
         - *Device code* – Authenticate by using the device code flow. This method is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
         - *Username and password* – Authenticate by using SSO or by asking the user to enter a user name and password. This method is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
-        - *Client secret (Deprecated)* – Authenticate by using a client secret. This method is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
-        - *Certificate (Deprecated)* – Authenticate by using a certificate. This method is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
 
     - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
 
         - *Azure Global* – Authenticate by using the global Microsoft Entra ID application that's registered and maintained by Microsoft (recommended).
         - *Manual* – Authenticate through your own [custom Microsoft Entra ID app registration](warehouse-app-authenticate-user-based.md#create-service).
 
-    - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see the following article: [User-based authentication](warehouse-app-authenticate-user-based.md).)
     - **Microsoft Entra ID tenant** – This field is available only when the **Cloud** field is set to *Manual*. Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Microsoft Entra ID client secret** – This field is available only when the **Authentication method** field is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Certificate thumbprint** – This field is available only for Windows devices, and only when the **Authentication method** field is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
     - **Domain name** – This field applies only when the **Authentication method** field is set to *Username and password*. You can use it to make sign-in easier for workers. If you don't set this field, workers must enter their full Microsoft Entra ID user principal name to sign in. A user principal name has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Nevertheless, workers can still enter their full user principal name.)
 
@@ -292,13 +286,11 @@ If you don't have a file or QR code, you can manually configure the app on the d
 If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management. For instructions, see one of the following articles:
 
 - If you use user-based authentication, see [User-based authentication](warehouse-app-authenticate-user-based.md#revoke)
-- If you use service-based authentication (deprecated), see [Service-based authentication](warehouse-app-authenticate-service-based.md#revoke)
 
 ## Related information
 
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
-- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
 
