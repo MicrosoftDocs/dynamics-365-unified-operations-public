@@ -56,9 +56,9 @@ By populating these lookup tables, you can select the correct NBS and operation 
 Once you set up the code tables, use those codes in the following areas of Dynamics 365 Finance:
 
 - **Released Products**: Go to **Product information management > Products > Released products**. Open each service product and on its details (under the **Fiscal information** FastTab), set the **NBS Code** field to the appropriate service code. (The field is visible for products of type "Service.") If available, also set the default **Operation Indicator** for the product.
-- **Sales Orders**: For service sales, navigate to **Accounts receivable > Orders > All sales orders** and open the order. On each service line, under **Line details > Fiscal information** tab, verify that **NBS Code** is filled (it should default from the product). Also select the **Operation Indicator Code** if it didn't default or if it needs to be changed for this order (for example, choose the code for "service out of municipality" if applicable).
+- **Sales Orders**: For service sales, go to **Accounts receivable > Orders > All sales orders** and open the order. On each service line, on the **Line details > Fiscal information** tab, verify that **NBS Code** is completed (it should default from the product). Also select the **Operation Indicator Code** if it didn't default or if it needs to be changed for this order (for example, choose the code for "service out of municipality" if applicable).
 - **Free Text Invoices (FTI)**: Go to **Accounts receivable > Invoices > All free text invoices**. When creating a service invoice here, enter the **NBS Code** and **Operation Indicator Code** on the invoice line (these fields appear under the **Fiscal information invoice line** tab). Since FTIs aren't linked to a product's defaults, you must input these codes manually on each service line.
-- **Fiscal Documents**: After posting a service invoice (from a sales order or FTI), open **Accounts receivable > Fiscal documents > All fiscal documents**, and find the generated fiscal document record. On the fiscal document form, confirm that **NBS Code** and **Operation Indicator Code** fields are populated (in the grid of **Fiscal document lines**). These values flow from the transaction; ensure they're correct because the NFS-e XML uses them.
+- **Fiscal Documents**: After posting a service invoice (from a sales order or FTI), go to **Accounts receivable > Fiscal documents > All fiscal documents**, and find the generated fiscal document record. On the fiscal document form, confirm that **NBS Code** and **Operation Indicator Code** fields are populated (in the grid of **Fiscal document lines**). These values flow from the transaction; ensure they're correct because the NFS-e XML uses them.
 
 Setting the NBS and operation indicator codes in all these places guarantees the NFS-e XML includes the correct service classification and operation context. Missing or incorrect codes could lead to NFS-e generation errors.
 
@@ -105,7 +105,7 @@ By completing the above configurations, your Dynamics 365 Finance environment me
 
 ## Electronic Reporting configuration files
 
-Find the e-invoicing configuration files for NFS-e (for more information, see [Set up Brazil reformed tax](brazil-reform-setup.md)).
+Find the e-invoicing configuration files for NFS-e (learn more in [Set up Brazil reformed tax](brazil-reform-setup.md)).
 
 ### Download list
 
@@ -119,8 +119,6 @@ Configuration files for NFS-e:
 ## Import the configuration files for e-invoicing
 
 After you download the files, import the configuration files into the system.
-
-### Import the configuration files for e-invoicing
 
 To import e-invoicing configuration files, follow these steps:
 
