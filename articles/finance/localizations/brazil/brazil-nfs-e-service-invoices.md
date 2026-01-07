@@ -29,17 +29,17 @@ This article outlines the key setup steps required before you can generate an **
 
 First, enable the Brazil reformed tax feature by following the steps in [Set up Brazil reformed tax](brazil-reform-setup.md).
 
-### Environment identification (testing vs. production)
+### Idnetify the environment (testing vs. production)
 
-**Purpose**: Ensure the system knows whether to issue NFS-e in test mode or live mode.
+To ensure the system knows whether to issue NFS-e in test mode or live mode, follow these steps:
 
-- **Navigation**: Go to **Organization administration > Organizations > Fiscal establishments > Fiscal establishments**.
-- **Field**: On the **Fiscal establishment** form, find the field **Environment** under the **NFS-e** FastTab.
-- **Action**: Set **NFS-e Environment** to **Testing** (homologation) for test scenarios, or **Production** for real invoices.
+1. Go to **Organization administration > Organizations > Fiscal establishments > Fiscal establishments**.
+1. On the **Fiscal establishment** form, find the field **Environment** under the **NFS-e** FastTab.
+1. Set **NFS-e Environment** to **Testing** (homologation) for test scenarios, or **Production** for real invoices.
 
-### NBS and operation indicator codes
+### Provide NBS and operation indicator codes
 
-**Purpose**: Provide the classification codes needed for NFS-e.
+Provide the classification codes needed for NFS-e.
 
 - **NBS Codes**: Nomenclatura Brasileira de Serviços codes classify the type of service provided (similar to a service item code). Ensure all required NBS codes are available in the system.
 - **Operation Indicator Codes**: These codes indicate the nature of the service operation (for example, within city, outside city, or abroad). Make sure the valid operation indicator values are present.
@@ -49,11 +49,7 @@ First, enable the Brazil reformed tax feature by following the steps in [Set up 
 - **NBS Codes**: Inventory management > Setup > Fiscal information > NBS codes. Here you can **Add** or verify entries (each with a code and description).
 - **Operation Indicator Codes**: Inventory management > Setup > Fiscal information > Operation indicator codes. Ensure the list of operation indicators and descriptions is up to date.
 
-By populating these lookup tables, you can select the correct NBS and operation indicator values on transactions.
-
-### NBS and operation indicator codes
-
-Once you set up the code tables, use those codes in the following areas of Dynamics 365 Finance:
+By populating these lookup tables, you can select the correct NBS and operation indicator values on transactions. Once you set up the code tables, use those codes in the following areas of Dynamics 365 Finance:
 
 - **Released Products**: Go to **Product information management > Products > Released products**. Open each service product and on its details (under the **Fiscal information** FastTab), set the **NBS Code** field to the appropriate service code. (The field is visible for products of type "Service.") If available, also set the default **Operation Indicator** for the product.
 - **Sales Orders**: For service sales, go to **Accounts receivable > Orders > All sales orders** and open the order. On each service line, on the **Line details > Fiscal information** tab, verify that **NBS Code** is completed (it should default from the product). Also select the **Operation Indicator Code** if it didn't default or if it needs to be changed for this order (for example, choose the code for "service out of municipality" if applicable).
@@ -62,11 +58,9 @@ Once you set up the code tables, use those codes in the following areas of Dynam
 
 Setting the NBS and operation indicator codes in all these places guarantees the NFS-e XML includes the correct service classification and operation context. Missing or incorrect codes could lead to NFS-e generation errors.
 
-### Reason for Not Providing NIF
+### Select a reason for Not Providing NIF
 
-**Purpose**: Explain why a **Foreigner ID isn't present**, if applicable.
-
-If the customer or service recipient doesn't have a Brazilian tax identification number (a scenario with foreign customers), specify a reason:
+Explain why a **Foreigner ID isn't present**, if applicable. If the customer or service recipient doesn't have a Brazilian tax identification number (a scenario with foreign customers), specify a reason:
 
 - **Field**: **Reason for not providing NIF** (NIF = Taxpayer Identification Number).
 - **Where to find it**: On the Customers or Sales invoice header form, locate the **R**eason for not providing Foreign ID** field (on a **Fiscal information** FastTab). This field is enabled when the customer's Foreign ID is blank.
@@ -74,9 +68,9 @@ If the customer or service recipient doesn't have a Brazilian tax identification
 
 By providing this information, the NFS-e XML includes a code explaining the absence of the tax ID. If you leave this field empty while the customer has no Foreigner ID, the NFS-e likely is rejected for missing required information.
 
-### Domestic vs. Non-Domestic Service Location
+### Set Domestic or Non-Domestic service location
 
-**Purpose**: Indicate if the service was provided outside Brazil, which affects tax applicability.
+Indicate if the service was provided outside Brazil, which affects tax applicability.
 
 - **Group of Fields**: LOCATION OF SERVICE PROVISION.
 - **Location**: You can find this option on the service invoice screen or the fiscal document. For example, on a sales order header, check the **Fiscal information** FastTab for a checkbox **Foreign** (by default = No), a field indicates if the service is provided abroad.
@@ -84,13 +78,13 @@ By providing this information, the NFS-e XML includes a code explaining the abse
   - If the service was performed **outside Brazil**, mark this field (Yes/Checked). If the service was performed within Brazil (domestic), don't mark it (No). The default is typically domestic, so only change
 it for export of services.
   - **Domestic**: specify the state where the service was performed.
-  - **Foreign**: select the country where the service was provisioned.
+  - **Foreign**: select the country/region where the service was provisioned.
 
 This setting tells the system and the NFS-e XML whether ISS (municipal service tax) is applicable. A nondomestic (export) service might be exempt from ISS, so correctly flagging it ensures compliance.
 
 ### Approximate tax percentage values (Federal NFS-e format)
 
-**Purpose**: Provide the required tax burden distribution percentages for the national (federal) NFS-e layout.
+Provide the required tax burden distribution percentages for the national (federal) NFS-e layout.
 
 When you use the **Federal standard NFS-e format**, enter three percentage values that roughly break down the taxes for the service:
 
@@ -103,13 +97,11 @@ When you use the **Federal standard NFS-e format**, enter three percentage value
 
 By completing the above configurations, your Dynamics 365 Finance environment meets the prerequisites for NFS-e generation. When the environment is correctly set, code tables are populated, fields are filled on products and documents, and required indicators are provided, you can proceed to generate NFS-e XML files that comply with the Brazilian electronic service invoice standards.
 
-## Electronic Reporting configuration files
+## Find the Electronic Reporting configuration files
 
 Find the e-invoicing configuration files for NFS-e (learn more in [Set up Brazil reformed tax](brazil-reform-setup.md)).
 
-### Download list
-
-Configuration files for NFS-e:
+Download the following configuration files for NFS-e:
 
 - Fiscal documents
 - Fiscal documents mapping
