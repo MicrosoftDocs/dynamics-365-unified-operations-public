@@ -59,19 +59,23 @@ The following procedure shows one way to register an application in Microsoft En
 1. Enter the name and password of the user who has access to the Azure subscription.
 1. In the Azure portal, on the left navigation pane, select **Microsoft Entra ID**.
 1. Make sure that you're working with the instance of Microsoft Entra ID that's used by Supply Chain Management.
-1. In the **Manage** list, select **App registrations**.
+1. On the left navigation pane, expand **Manage** and select **App registrations**.
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID is referred to later in this article as the *client ID*.
 1. In the **Manage** list, select **Authentication**.
-1. On the **Authentication** page for the new app, set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+1. On the **Authentication** page for the new app, do one of the following steps to enable the device code flow for your application:
 
-    > [!TIP]
-    > If you're using the newer (preview) Azure Portal UI, then the **Authentication** page works differently. To enable the device code flow for your application in the new UI, open the **Settings** tab and set the **Allow public client flows** option to *Yes*. Then select **Save**.
+    - If you're using the old Azure Portal authentication experience, set **Allow public client flows** to *Yes*, and select **Save**.
+    - If you're using the new Azure Portal authentication experience, open the **Settings** tab, set **Allow public client flows** to *Enabled*, and select **Save**.
 
-1. Select **Add a platform**.
-1. In the **Configure platform** dialog, select **Mobile and desktop applications**.
-1. In the **Configure Desktop \+ devices** dialog, set the **Custom redirect URIs** field to one of the following values:
+1. Do one of the following steps to add a new platform configuration for the Warehouse Management mobile app:
+
+    - If you're using the old Azure Portal authentication experience, select **Add a platform**.
+    - If you're using the new Azure Portal authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
+
+1. In the dialog, select **Mobile and desktop applications**.
+1. Set the input field provided to one of the following values:
 
     - If you're using version 3.0 or earlier of the Warehouse Management mobile app, set the field to the following value:
 
@@ -79,16 +83,19 @@ The following procedure shows one way to register an application in Microsoft En
         ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
         ```
 
-    - If you're using version 4.0 or later of the Warehouse Management mobile app, set the field to the following value, where *{clientId}* is your Microsoft Entra client ID:
+    - If you're using version 4.0 or later of the Warehouse Management mobile app, set the field to the following value, where *{clientId}* is the client ID that you copied earlier in this procedure:
 
         ``` text
         ms-appx-web://microsoft.aad.brokerplugin/{clientId}
         ```
 
 1. Select **Configure** to save your settings and close the dialogs.
-1. You return to the **Authentication** page, which now shows your new platform configuration. Select **Add a platform** again.
-1. In the **Configure platform** dialog, select **Android**.
-1. In the **Configure your Android app** dialog, set the following fields:
+1. You return to the **Authentication** page, which now shows your new platform configuration. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
+
+    - If you're using the old Azure Portal authentication experience, select **Add a platform**.
+    - If you're using the new Azure Portal authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
+
+1. In the dialog, select **Android**. In the **Configure your Android app** dialog, set the following fields:
 
     - **Package name** – Enter the following value:
 
@@ -96,39 +103,45 @@ The following procedure shows one way to register an application in Microsoft En
         com.microsoft.warehousemanagement
         ```
 
-    - **Signature hash** – Enter one of the following values, depending on which versions of the Warehouse Management mobile app you're using:
+    - **Signature hash** – Enter each of the following value:
 
-        - If you're using *Warehouse Management mobile app version 4.0.28 or higher*, then enter the following value:
+        ``` text
+        Xo8WBi6jzSxKDVR4drqm84yr9iU=
+        ```
 
-            ``` text
-            Xo8WBi6jzSxKDVR4drqm84yr9iU=
-            ```
+    Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 
-        - If you're using *Warehouse Management mobile app version 4.0.27 or older* (including any release of version 3), then enter the following value. This value can also work with newer versions, but isn't compatible with brokered authentication, so we don't recommend it.
+1. Repeat the previous two steps to add another Android platform configuration, but this time use the following value for the **Signature hash** field:
 
-            ``` text
-            hpavxC1xAIAr5u39m1waWrUbsO8=
-            ```
+    ``` text
+    hpavxC1xAIAr5u39m1waWrUbsO8=
+    ```
 
-1. Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
-1. Select **Add a platform** again.
-1. In the **Configure platform** dialog, select **iOS / macOS**.
-1. In the **Configure your iOS or macOS app** dialog, set the **Bundle ID** field to the following value:
+    > [!TIP]
+    > The first signature hash for Android (Xo8WBi6jzSxKDVR4drqm84yr9iU=) adds support for brokered authentication in Warehouse Management mobile app version 4.0.28 or higher. The second hash (hpavxC1xAIAr5u39m1waWrUbsO8=) is required to support older versions of the app.
+
+1. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
+
+    - If you're using the old Azure Portal authentication experience, select **Add a platform**.
+    - If you're using the new Azure Portal authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
+
+1. In the dialog, select **iOS / macOS**.
+1. Set the **Bundle ID** field to the following value:
 
     ``` text
     com.microsoft.WarehouseManagement
     ```
 
-1. Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
-1. In the **Manage** list, select **API permissions**.
+1. Select **Configure** to save your settings. Close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
+1. On the left navigation pane, expand **Manage** and select **API permissions**.
 1. Select **Add a permission**.
 1. In the **Request API permissions** dialog, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
-1. On the left navigation pane, select **Microsoft Entra ID**.
-1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select **All applications**.
+1. Use the search field at the top of the page to find and open the **Microsoft Entra ID** service.
+1. On the left navigation pane, expand **Manage** and select **Enterprise applications**. Then, in the new **Manage** list, select **All applications**.
 1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
-1. In the **Manage** list, select **Properties**.
+1. On the left navigation pane, expand **Manage** and select **Properties**.
 1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
-1. In the **Manage** list, select **Users and groups**.
+1. On the left navigation pane, expand **Manage** and select **Users and groups**.
 1. On the toolbar, select **Add user/group**.
 1. On the **Add Assignment** page, select the link under the **Users** heading.
 1. In the **Users** dialog, select each user that you'll use to authenticate devices with Supply Chain Management.
