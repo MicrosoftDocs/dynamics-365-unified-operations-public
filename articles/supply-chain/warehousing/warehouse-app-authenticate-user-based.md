@@ -96,12 +96,12 @@ The following procedure shows one way to register an application in Microsoft En
         com.microsoft.warehousemanagement
         ```
 
-    - **Signature hash** – Enter one of the following values, depending on which version of the Warehouse Management mobile app you're using:
+    - **Signature hash** – Enter one of the following values, depending on which versions of the Warehouse Management mobile app you're using:
 
         - If you're using *Warehouse Management mobile app version 4.0.28 or higher*, then enter the following value:
 
             ``` text
-            Xo8WBi6jzSxKDVR4drqm84yr9iU%3D
+            Xo8WBi6jzSxKDVR4drqm84yr9iU=
             ```
 
         - If you're using *Warehouse Management mobile app version 4.0.27 or older* (including any release of version 3), then enter the following value. This value can also work with newer versions, but isn't compatible with brokered authentication, so we don't recommend it.
