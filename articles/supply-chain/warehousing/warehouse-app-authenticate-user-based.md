@@ -95,7 +95,7 @@ The following procedure shows one way to register an application in Microsoft En
     - If you're using the old authentication experience, select **Add a platform**.
     - If you're using the new authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
 
-1. In the dialog, select **Android**. In the **Configure your Android app** dialog, set the following fields:
+1. In the dialog, select **Android**. Then set the following fields:
 
     - **Package name** – Enter the following value:
 
@@ -103,7 +103,7 @@ The following procedure shows one way to register an application in Microsoft En
         com.microsoft.warehousemanagement
         ```
 
-    - **Signature hash** – Enter each of the following value:
+    - **Signature hash** – Enter the following value:
 
         ``` text
         Xo8WBi6jzSxKDVR4drqm84yr9iU=
