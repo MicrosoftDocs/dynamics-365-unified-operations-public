@@ -48,7 +48,7 @@ Global Inventory Accounting is currently available in the following Azure geogra
 
 If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services (LCS) will show a message that your geographic region isn't supported. Global Inventory Accounting doesn't support on-premises deployments of Supply Chain Management.
 
-If you have any issues enabling Global Inventory Accounting in one of the supported geographic regions listed here, please log this issue/case through Microsoft Customer Service and Support (CSS) channels including your Environment ID, Tenant ID, and any relevant error details in the request.
+If you have any issues enabling Global Inventory Accounting in one of the supported geographic regions listed here, log the issuee through Microsoft Customer Service and Support channels including your environment ID, tenant ID, and error details in the request.
 
 ## Licensing
 
