@@ -67,12 +67,12 @@ The following procedure shows one way to register an application in Microsoft En
 1. On the **Authentication** page for the new app, do one of the following steps to enable the device code flow for your application:
 
     - If you're using the old Azure portal authentication experience, set **Allow public client flows** to *Yes*, and select **Save**.
-    - If you're using the new Azure portal authentication experience, open the **Settings** tab, set **Allow public client flows** to *Enabled*, and select **Save**.
+    - If you're using the new authentication experience, open the **Settings** tab, set **Allow public client flows** to *Enabled*, and select **Save**.
 
 1. Do one of the following steps to add a new platform configuration for the Warehouse Management mobile app:
 
-    - If you're using the old Azure portal authentication experience, select **Add a platform**.
-    - If you're using the new Azure portal authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
+    - If you're using the old authentication experience, select **Add a platform**.
+    - If you're using the new authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
 
 1. In the dialog, select **Mobile and desktop applications**.
 1. Set the input field provided to one of the following values:
@@ -92,8 +92,8 @@ The following procedure shows one way to register an application in Microsoft En
 1. Select **Configure** to save your settings and close the dialogs.
 1. You return to the **Authentication** page, which now shows your new platform configuration. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
 
-    - If you're using the old Azure portal authentication experience, select **Add a platform**.
-    - If you're using the new Azure portal authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
+    - If you're using the old authentication experience, select **Add a platform**.
+    - If you're using the new authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
 
 1. In the dialog, select **Android**. In the **Configure your Android app** dialog, set the following fields:
 
@@ -122,8 +122,8 @@ The following procedure shows one way to register an application in Microsoft En
 
 1. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
 
-    - If you're using the old Azure portal authentication experience, select **Add a platform**.
-    - If you're using the new Azure portal authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
+    - If you're using the old authentication experience, select **Add a platform**.
+    - If you're using the new authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
 
 1. In the dialog, select **iOS / macOS**.
 1. Set the **Bundle ID** field to the following value:
