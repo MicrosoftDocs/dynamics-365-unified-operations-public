@@ -4,7 +4,7 @@ description: Learn about the steps to set up and generate Brazilian NFS-e Servic
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 01/06/2026
+ms.date: 01/07/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 01/02/2026
@@ -25,11 +25,11 @@ This functionality uses Electronic Reporting.
 > [!IMPORTANT]
 > Submission and digital signature of NFS-e (both for São Paulo and Federal) are out of scope. A customization or third-party solution is required to submit and sign the NFS-e XML.
 
-This article outlines the key setup steps required before you can generate an **NFS-e** (Nota Fiscal de Serviço Eletrônica - **both for São Paulo and Federal**) XML in Microsoft Dynamics 365 Finance. Each of the following sections covers a specific prerequisite, with navigation paths and field names to help you configure the system correctly. These steps apply to both end users and IT admins responsible for the Brazilian service invoice process.
+Before you can generate an **NFS-e** (Nota Fiscal de Serviço Eletrônica - both for São Paulo and Federal) XML in Microsoft Dynamics 365 Finance, complete the key setup steps outlined in this article. Each of the following sections covers a specific prerequisite, with navigation paths and field names to help you configure the system correctly. These steps apply to both end users and IT admins responsible for the Brazilian service invoice process.
 
 First, enable the Brazil reformed tax feature by following the steps in [Set up Brazil reformed tax](brazil-reform-setup.md).
 
-### Idnetify the environment (testing vs. production)
+### Identify the environment (testing vs. production)
 
 To ensure the system knows whether to issue NFS-e in test mode or live mode, follow these steps:
 
@@ -58,24 +58,24 @@ By populating these lookup tables, you can select the correct NBS and operation 
 
 Setting the NBS and operation indicator codes in all these places guarantees the NFS-e XML includes the correct service classification and operation context. Missing or incorrect codes could lead to NFS-e generation errors.
 
-### Select a reason for Not Providing NIF
+### Select a reason for not providing NIF
 
 Explain why a **Foreigner ID isn't present**, if applicable. If the customer or service recipient doesn't have a Brazilian tax identification number (a scenario with foreign customers), specify a reason:
 
 - **Field**: **Reason for not providing NIF** (NIF = Taxpayer Identification Number).
-- **Where to find it**: On the Customers or Sales invoice header form, locate the **R**eason for not providing Foreign ID** field (on a **Fiscal information** FastTab). This field is enabled when the customer's Foreign ID is blank.
+- **Where to find it**: On the Customers or Sales invoice header form, locate the **Reason for not providing Foreign ID** field (on a **Fiscal information** FastTab). This field is enabled when the customer's Foreign ID is blank.
 - **Action**: Select the appropriate reason code from the dropdown (for example, "Foreign customer - No Foreigner ID").
 
 By providing this information, the NFS-e XML includes a code explaining the absence of the tax ID. If you leave this field empty while the customer has no Foreigner ID, the NFS-e likely is rejected for missing required information.
 
-### Set Domestic or Non-Domestic service location
+### Set domestic or non-domestic service location
 
 Indicate if the service was provided outside Brazil, which affects tax applicability.
 
 - **Group of Fields**: LOCATION OF SERVICE PROVISION.
 - **Location**: You can find this option on the service invoice screen or the fiscal document. For example, on a sales order header, check the **Fiscal information** FastTab for a checkbox **Foreign** (by default = No), a field indicates if the service is provided abroad.
 - **Action**:
-  - If the service was performed **outside Brazil**, mark this field (Yes/Checked). If the service was performed within Brazil (domestic), don't mark it (No). The default is typically domestic, so only change
+  - If the service was performed **outside Brazil**, select this field (Yes/Checked). If the service was performed within Brazil (domestic), don't select it (No). The default is typically domestic, so only change
 it for export of services.
   - **Domestic**: specify the state where the service was performed.
   - **Foreign**: select the country/region where the service was provisioned.
@@ -95,7 +95,7 @@ When you use the **Federal standard NFS-e format**, enter three percentage value
 **Where to enter**: These fields appear on the **Released product details form** under the **Fiscal information** FastTab in the **NFS-E TAX BURDEN** group - for cities using the national layout.
 **Action**: Enter values in each field so that they total 100%. For example, if only municipal ISS applies, you might input 0%, 0%, and 100%. If federal PIS/COFINS taxes apply, you might split it (for example, 10% federal, 0% state, 90% municipal). Make sure all three fields are filled (use 0% where a level doesn't apply). This information is included in the Federal NFS-e XML to meet the reporting requirements of the federal layout.
 
-By completing the above configurations, your Dynamics 365 Finance environment meets the prerequisites for NFS-e generation. When the environment is correctly set, code tables are populated, fields are filled on products and documents, and required indicators are provided, you can proceed to generate NFS-e XML files that comply with the Brazilian electronic service invoice standards.
+By completing the preceding configurations, your Dynamics 365 Finance environment meets the prerequisites for NFS-e generation. When the environment is correctly set, code tables are populated, fields are filled on products and documents, and required indicators are provided, you can proceed to generate NFS-e XML files that comply with the Brazilian electronic service invoice standards.
 
 ## Find the Electronic Reporting configuration files
 
