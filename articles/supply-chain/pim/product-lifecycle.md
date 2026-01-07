@@ -120,13 +120,9 @@ To manually update the product lifecycle state of an existing released product v
 
 1. Go to **Product information management** \> **Products** \> **Released product variants**.
 
-1. Find the product variant that you want to update.  
+1. Find the product variant that you want to update. Select or open the record.
 
-1. Do one of the following steps:
-    - If you're working with a standard (non-engineering) product or variant, do one of the following steps:
-        - From the list view, select **Edit** on the Action Pane and then change the **Product lifecycle state** field to the desired lifecycle state. On the Action Pane, select **Save**.
-        - Open the record. On the Action Pane, open the **Product variant** tab and select **Change lifecycle state** to open a drop-down dialog. From the dialog, select the desired lifecycle state and then select **OK**.
-    - If you're working with an [engineering product](../engineering-change-management/product-engineering-overview.md), select or open the record. On the Action Pane, open the **Engineer** tab, and from the **Engineering change management** group, select **Change lifecycle state** to open a drop-down dialog. From the dialog, select the desired lifecycle state and then select **OK**.
+1. On the Action Pane, open the **Product variant** tab and select **Change lifecycle state** to open a drop-down dialog. From the dialog, select the desired lifecycle state and then select **OK**.
 
 ## Impact on master planning
 
