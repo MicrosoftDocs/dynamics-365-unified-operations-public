@@ -174,7 +174,7 @@ To become familiar with the details of this scenario, review the article, [Desig
 
 The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. 
 
-To become familiar with the details of this scenario, see [Create required configurations to import data from an external file](Create required configurations to import data from an external file.md). Use the following files to complete the steps in this article:
+To become familiar with the details of this scenario, see [Create required configurations to import data from an external file](tasks/er-required-configurations-import-data.md). Use the following files to complete the steps in this article:
 
 - [ER data model configuration (1099model.xml)](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)
 - [ER format configuration (1099format.xml)](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)
