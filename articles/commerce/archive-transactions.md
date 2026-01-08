@@ -67,6 +67,9 @@ The following illustration shows an example of the **Archive with Dataverse long
 
 The retail long-term retention job archives the following tables:
 
+> [Note]
+> Only 'Posted' transactions are included in the archive job. 
+
 - RetailTransactionTable
 - RetailTransactionCashManagementTrans
 - RetailTransactionFiscalCustomer
@@ -102,22 +105,9 @@ The retail long-term retention job archives the following tables:
 - RetailTransactionTaxTrans_IN
 - RetailTransactionTaxTrans
 - RetailTransactionTaxTransGTE
-- RetailEodStatementControllerLog
-- RetailEodStatementEventLog
-- RetailEodTransactionAggregationHeader
-- RetailEodTransactionAggregationTrans
-- RetailEodTransactionError
-- RetailEodTransactionBankedTenderTrans
-- RetailEodTransactionIncomeExpenseTrans
-- RetailEodTransactionInfocodeTrans
-- RetailEodTransactionOrderInvoiceTrans
-- RetailEodTransactionPaymentTrans
-- RetailEodTransactionSafeTenderTrans
-- RetailEodTransactionSalesTrans
-- RetailEodTransactionTable
-- RetailEodTransactionTenderDeclarationTrans
-- RetailStatementJour
-- RetailStatementTrans
-- RetailStatementVoucher
+
+> [Note]
+> This feature becomes Generally Available starting 10.0.47
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
