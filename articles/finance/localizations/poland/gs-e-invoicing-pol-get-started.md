@@ -78,9 +78,9 @@ Add the following required elements in the key vault:
     > [!NOTE]
     > The value of the public key must be wrapped in the following commands.
     >
-    > `----BEGIN CERTIFICATE----`  
+    > `-----BEGIN CERTIFICATE-----`  
     > &hellip;  
-    > `----END CERTIFICATE----`
+    > `-----END CERTIFICATE-----`
 
 ## Configure electronic invoicing Key Vault parameters
 
