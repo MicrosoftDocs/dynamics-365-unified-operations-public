@@ -71,6 +71,88 @@ To access the deployment wizard:
 1. Select Add.
 This action launches the Agent deployment wizard for the selected agent.
 
-## Common deployment steps
+## Common deployment steps for Dynamics 365 agents
 
+Deploying a Dynamics 365 agent using the Agent deployment wizard in Copilot Hub follows a consistent set of administrative tasks. While each agent requires additional, agent‑specific configuration, the steps below describe the common deployment flow that administrators complete for every agent.
+These steps are typically completed once per agent, per environment.
 
+### Check prerequisites
+
+The deployment wizard first helps to validates that the target environment meets all required prerequisites for the selected agent.
+This includes checking that the required applications and Dataverse packages for Copilot and agent assets are installed in the environment. In most cases, these packages are installed automatically as part of the deployment process.
+
+Additional prerequisite validations include:
+
+- Copilot enablement and generative AI feature settings
+- Message consumption settings for Copilot
+- Data Loss Prevention (DLP) policies
+- Advanced connector policies, if applicable
+- Virtual entity refresh, when required by the agent
+
+Any missing, misconfigured, or blocked prerequisites are clearly surfaced in the wizard, along with guidance on how to resolve them before proceeding.
+
+### Set up the agent identity
+
+Each agent runs under a dedicated agent user identity. In this step, the administrator selects or creates this identity.
+
+Typical tasks include:
+
+- Identifying the agent user account
+- Creating the agent identity in the Microsoft 365 admin center, if it does not already exist
+- Assigning the required product licenses to the agent user
+- Adding the agent user to the Dataverse environment
+- Assigning the required Dataverse security roles
+
+For Finance and Operations (FnO) agents, additional steps are required:
+
+- Adding the agent user to the FnO environment
+- Assigning the relevant FnO security roles
+
+This ensures the agent has the correct permissions to access data and perform its intended actions.
+
+### Connect the agent
+
+The Connect agent step guides the administrator through configuring the required connections that allow the agent to interact with Dataverse and other services.
+
+In this step, the administrator:
+
+- Creates the required Dataverse connections using the agent identity
+- Adds these connections to the agent’s connection references
+- Verifies that all required connectors are approved under existing governance policies
+- Activates all Power Automate flows used by the agent
+
+Once completed, the agent is fully connected to the services it depends on.
+
+### Configure mailboxes (if applicable)
+
+Some agents rely on mailboxes to send or receive messages.
+
+For such agents, the deployment wizard includes an optional Configure mailbox step, which helps administrators:
+
+- Set up server-side synchronization for the required mailboxes
+- Configure mailbox-related environment variables, if needed
+
+This step only appears for agents that require mailbox integration.
+
+### Enable the agent
+
+The final step makes the agent available for use.
+
+This typically includes:
+
+- Publishing the agent bot in Copilot Studio
+- Verifying that the agent is enabled and available in the target environment
+
+For Finance and Operations agents, this step also includes:
+
+- Enabling the required feature in FnO Feature Management
+
+Once enabled, the agent is active and ready for use.
+
+### Next steps
+
+After completing these common deployment steps, follow the agent‑specific deployment guidance to configure business logic and bring the agent into service. These actions are performed in the business application using [agent management](agent-mgmt.md).
+
+## Support and feedback
+
+This feature is currently in preview. We welcome your feedback and will use it to improve the Agent deployment wizard. Report any issues or suggestions using the standard Dynamics 365 support channels.
