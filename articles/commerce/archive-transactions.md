@@ -1,22 +1,23 @@
 ---
-title: Archive Commerce transactions
-description: This article describes how to archive Microsoft Dynamics 365 Commerce transactions.
+title: Archive Commerce transactions (preview)
+description: Learn how how to archive transactions in Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.author: shajain
 ms.topic: how-to    
-ms.date: 7/31/2024
-ms.reviewer: v-chrgriffin
+ms.date: 01/08/2026
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.search.validFrom: 2024-07-01
 ms.custom: 
   - bap-template
 ---
 
-# Archive Commerce transactions
+# Archive Commerce transactions (preview)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This article describes how to archive Microsoft Dynamics 365 Commerce transactions.
+This article explains how to archive transactions in Microsoft Dynamics 365 Commerce.
 
 ## Prerequisites
 
@@ -38,7 +39,7 @@ To set up an archival job, follow these steps:
 1. Enter a name for the job, and then select **Next**.
 1. Specify the date of the oldest retail transactions to archive (the **From** date).
 1. Specify the date of the newest retail transactions to archive (the **To** date).
-1. Select the legal entity (company) to archive the sales orders for.
+1. Select the legal entity (company) for which to archive the sales orders.
 1. Select **Next**.
 1. Select one of the following supported scheduling types:
 
@@ -65,10 +66,10 @@ The following illustration shows an example of the **Archive with Dataverse long
 
 ## Tables archived by the retail long-term retention job
 
-The retail long-term retention job archives the following tables:
+> [NOTE]
+> Only posted transactions are included in the archive job. 
 
-> [Note]
-> Only 'Posted' transactions are included in the archive job. 
+The retail long-term retention job archives the following tables:
 
 - RetailTransactionTable
 - RetailTransactionCashManagementTrans
@@ -106,8 +107,12 @@ The retail long-term retention job archives the following tables:
 - RetailTransactionTaxTrans
 - RetailTransactionTaxTransGTE
 
-> [Note]
-> This feature becomes Generally Available starting 10.0.47
+> [NOTE]
+> This feature is generally available starting with the Commerce version 10.0.47 release.
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
