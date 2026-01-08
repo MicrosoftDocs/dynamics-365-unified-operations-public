@@ -22,7 +22,11 @@ ms.collection:
 The Agent deployment wizard in Copilot Hub is the centralized deployment experience for Dynamics 365 agents. It guides administrators through a secure, validated process to deploy Microsoft‑provided agents into Power Platform and Dynamics 365 environments.
 The wizard provides a consistent deployment experience across all Dynamics 365 agents, while agent‑specific configuration and setup guidance is documented separately for each agent.
 
-Access the deployment wizard in the [Power Platform Admin Center](https://aka.ms/InstallD365Agents)
+> [!NOTE]
+> Access the deployment wizard in the [Power Platform Admin Center](https://aka.ms/InstallD365Agents)
+>
+> A separate [public preview experience in Power Platform Admin Center](https://aka.ms/InstallD365AgentsPreview) provides early access to upcoming enhancements for the Agent deployment wizard.
+
 
 :::image type="content" source="media/agent-deployment-wizard-ppac.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/copilot-help-welcome.png":::
 
