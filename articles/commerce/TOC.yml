@@ -14,16 +14,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.47 (January 2026)
+          href: get-started/whats-new-commerce-10-0-47.md
         - name: Commerce 10.0.46 (October 2025)
           href: get-started/whats-new-commerce-10-0-46.md
         - name: Commerce 10.0.45 (September 2025)
           href: get-started/whats-new-commerce-10-0-45.md
         - name: Commerce 10.0.44 (April 2025)
           href: get-started/whats-new-commerce-10-0-44.md
-        - name: Commerce 10.0.43 (January 2025)
-          href: get-started/whats-new-commerce-10-0-43.md
-        - name: Commerce 10.0.42 (December 2024)
-          href: get-started/whats-new-commerce-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
