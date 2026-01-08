@@ -25,10 +25,6 @@ For more information about user-based authentication, read the following article
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md)
 
-## Is service-based authentication deprecated everywhere?
-
-No. Service-based authentication is deprecated only for the Warehouse Management mobile app. Other applications continue to support it.
-
 ## Why did Microsoft deprecate service-based authentication for the Warehouse Management mobile app?
 
 User-based authentication offers the following advantages over service-based authentication for the Warehouse Management mobile app:
@@ -37,6 +33,10 @@ User-based authentication offers the following advantages over service-based aut
 - User-based authentication is more secure in contexts where the Warehouse Management mobile app is used.
 - User-based authentication provides more robust security and more configuration options in Microsoft Entra ID.
 - User-based authentication establishes a foundation for adding support for single sign-on (SSO) authentication across devices and apps in a future release.
+
+## Is service-based authentication deprecated everywhere?
+
+No. Service-based authentication is deprecated only for the Warehouse Management mobile app. Other applications continue to support it.
 
 ## What is device code flow?
 
