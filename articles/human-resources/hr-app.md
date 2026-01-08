@@ -61,7 +61,7 @@ To install the Human Resources app for the first time, follow these steps:
     1. Search for **Power Apps component framework for canvas apps**, and enable it if it isn't already enabled.
     1. Select **Save**.
 
-4. Select **Human Resources** to access the Human Resources app for leave and absence on AppSource, and then select **Get it now**.
+4. Select **Human Resources** to access the Human Resources app for leave and absence on Marketplace, and then select **Get it now**.
 5. You're redirected to Power Platform admin center.
 6. Sign in to Power Platform admin center, select your environment, and then select **Install**.
 7. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the **Status** column for Dynamics 365 Human Resources is changed to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.

@@ -20,7 +20,7 @@ ms.custom:
 This article describes how to install the Adventure Works theme in Microsoft Dynamics 365 Commerce. 
 
 > [!IMPORTANT]
-> The Adventure Works theme and modules are available as of the Dynamics 365 Commerce version 10.0.20 release. They are available from Microsoft AppSource.
+> The Adventure Works theme and modules are available as of the Dynamics 365 Commerce version 10.0.20 release. They are available from Microsoft Marketplace.
 
 ## Prerequisites
 

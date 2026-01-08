@@ -14,9 +14,9 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-Before March 2022, when customers set up dual-write, they had to install the Dual-write Application Orchestration package from Microsoft AppSource. This package contained solutions for all application logic, including all table maps. Therefore, customers were in an "all or nothing" situation, where they had to install all solutions, even if they had to use only a subset.
+Before March 2022, when customers set up dual-write, they had to install the Dual-write Application Orchestration package from Microsoft Marketplace. This package contained solutions for all application logic, including all table maps. Therefore, customers were in an "all or nothing" situation, where they had to install all solutions, even if they had to use only a subset.
 
-To fix this issue, Microsoft split the monolithic application orchestration package into smaller individual packages. These individual packages contain solutions that have the same name, publisher, and map versions as the application orchestration package. Therefore, this change is nonbreaking, and customers can easily upgrade environments by installing the required split packages from AppSource.
+To fix this issue, Microsoft split the monolithic application orchestration package into smaller individual packages. These individual packages contain solutions that have the same name, publisher, and map versions as the application orchestration package. Therefore, this change is nonbreaking, and customers can easily upgrade environments by installing the required split packages from Marketplace.
 
 > [!IMPORTANT]
 > The orchestration solution is no longer being maintained and will be deprecated. We recommend that you install the split packages, so that you can continue to benefit from enhancements and updates.
@@ -59,7 +59,7 @@ To install the required packages, follow these steps:
 1. Select **Open App Source**.
 1. Search for "dual-write," and review the available packages in the search results. 
 
-    :::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Screenshot of the dual-write packages in AppSource." lightbox="media/dual-write-packages-app-source.png":::
+    :::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Screenshot of the dual-write packages in Marketplace." lightbox="media/dual-write-packages-app-source.png":::
 
 1. Install the available packages that are required. You must first install any dependencies.
 

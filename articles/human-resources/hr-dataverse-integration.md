@@ -34,7 +34,7 @@ Follow these steps to access the Human Resources–to–Finance template.
 
 1. Open [Power Apps admin center](https://admin.powerapps.com/). 
 2. Under your environment, select **Dynamics 365 Apps**, and then select **App source** on the toolbar.
-3. To install the template, search for "Dual-write Human Resources," or go directly to the following address: <https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite>.
+3. To install the template, search for "Dual-write Human Resources," or go directly to the following address: <https://marketplace.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite>.
 3. After installation is completed, open Dynamics 365 Human Resources.
 4. Open the **Data Management** workspace. 
 5. Select **Dual Write**. 
