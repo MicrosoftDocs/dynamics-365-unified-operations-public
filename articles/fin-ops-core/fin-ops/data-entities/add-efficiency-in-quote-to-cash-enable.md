@@ -27,7 +27,7 @@ For a conceptual overview that describes how the improved quote-to-cash system w
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.34 or later.
-- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.203.
+- You must be running [Dual-write Supply Chain solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.203.
 
 > [!IMPORTANT]
 > Before you enable the functionality that's described in this article, we strongly recommend that you complete (that is, win or cancel) any existing sales quotations that are in progress. Then, after you enable the functionality, re-create the quotations as required. This approach allows for a clean switch to the new integrated functionality.

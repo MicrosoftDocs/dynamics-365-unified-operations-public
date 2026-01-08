@@ -65,7 +65,7 @@ This error can occur because the *Asset Management app* role doesn't have the pr
 
 ## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
+The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *Marketplace*.
 
 Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
 

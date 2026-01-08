@@ -46,12 +46,12 @@ The Shared assets library of LCS provides the following PowerBI.com solutions. C
 - [Warehouse performance](warehouse-power-bi-content.md)
 - [Workforce metrics](workforce-analysis-power-bi-content-pack.md)
 
-## PowerBI.com solutions available from AppSource
+## PowerBI.com solutions available from Marketplace
 
-The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).
+The following PowerBI.com solutions are available from [Microsoft Marketplace](https://marketplace.microsoft.com).
 
 > [!NOTE]
-> These solutions are deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> These solutions are deprecated as documented in [Power BI content packs available on Marketplace](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 - Cost management
 - [Financial performance](financial-performance-power-bi-content-pack.md)
