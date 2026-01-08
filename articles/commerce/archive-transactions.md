@@ -66,7 +66,7 @@ The following illustration shows an example of the **Archive with Dataverse long
 
 ## Tables archived by the retail long-term retention job
 
-> [NOTE]
+> [!NOTE]
 > Only posted transactions are included in the archive job. 
 
 The retail long-term retention job archives the following tables:
@@ -107,13 +107,14 @@ The retail long-term retention job archives the following tables:
 - RetailTransactionTaxTrans
 - RetailTransactionTaxTransGTE
 
-> [NOTE]
+> [!NOTE]
 > This feature is generally available starting with the Commerce version 10.0.47 release.
 
 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
