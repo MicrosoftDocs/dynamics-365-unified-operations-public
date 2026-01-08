@@ -18,11 +18,11 @@ Store Commerce POS supports language selection at Self-Checkout and adds localiz
 **Multi-language Self-Checkout**
 
 - **Language selection on the welcome screen** Shoppers can choose their preferred language directly from the Self-Checkout welcome screen, without staff assistance.
-- **Configurable per store** Administrators can select which languages are available for each store, ensuring the right options for every location.
+- **Configurable per store** Administrators can select which languages are available for each store, ensuring the right options for every location. To enable additional languages for a store , go to **Retail and Commerce ** -> Stores -> **General** -> **Regional settings** and list the additional languages in **Secondary languages**.
 - **Consistent UI localization** All labels, buttons, and tabs automatically resolve to the selected language for the duration of the transaction.
 - **Session-based language reset** After checkout, the language resets to the store or associate default, ensuring a fresh experience for each customer.
 - **Scan from welcome screen** Customers can begin scanning items immediately from the welcome screen, streamlining the checkout process.
-- **Feature flag control** Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience.
+- **Feature flag control** Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience. To enable the flag go to **Functionality profile**-> **Self-Checkout** and turn ON the flag **Enable language selection on Self-checkout Welcome page**.
 - **New change language operation** can be added into the transaction grid for switching the language during checkout.
 
 **Localization of Button labels and Screen layout tabs**
