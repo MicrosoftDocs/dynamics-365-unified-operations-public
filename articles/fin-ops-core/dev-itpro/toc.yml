@@ -325,7 +325,7 @@ items:
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
-          - name: Archive Commerce transactions
+          - name: Archive Commerce transactions (preview)
             href: ../../commerce/archive-transactions.md
           - name: Purge from history archive (preview)
             href: sysadmin/archive-purge.md
