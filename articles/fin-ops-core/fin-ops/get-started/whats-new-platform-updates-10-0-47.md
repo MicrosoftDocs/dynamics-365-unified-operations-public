@@ -20,8 +20,8 @@ ms.search.region: Global
 This article lists the features in the platform updates for version 10.0.47 of finance and operations apps. This version uses build number 7.0.XXXXX and is available on the following schedule:
 
 - **Preview of release:** January 2026
-- **General availability of release (self-update):** XXXXX 2026
-- **General availability of release (auto-update):** XXXXX 2026
+- **General availability of release (self-update):** March 2026
+- **General availability of release (auto-update):** April 2026
 
 ## Features included in this release
 
