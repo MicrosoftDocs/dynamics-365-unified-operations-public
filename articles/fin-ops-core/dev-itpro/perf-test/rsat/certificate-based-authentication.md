@@ -55,7 +55,7 @@ $rootCert = New-SelfSignedCertificate `
   -KeyLength 2048 `
   -HashAlgorithm SHA256 `
   -NotAfter (Get-Date).AddYears(10) `
-  -CertStoreLocation "Cert:LocalMachineMy" `
+  -CertStoreLocation "Cert:LocalMachine\My" `
   -TextExtension @("2.5.29.19={critical}{text}ca=true&pathlength=1")
 
 Export-Certificate -Cert $rootCert -FilePath "C:\Temp\ContosoRootCA.cer"
@@ -369,8 +369,11 @@ Next, install the certificates on the computer where you run RSAT.
 
 1. Import the root CA (.cer file) and intermediate CA (.cer file) into **Local machine** \> **Trusted Root Certification Authorities**.
 1. Import the .pfx file for the user certificate into **Local user** \> **Personal**.
+1. Import the .cer file for the user certificate into **Local machine** \> **Trusted Root Certification Authorities**.
 1. To enable automatic certificate sign-in for the tenant, follow these steps:
-   - In the following PowerShell script, edit the parts for the tenant ID (guid) and the user certificate subject:
+   - In the following PowerShell scripts, edit the parts for the tenant ID (guid) and the user certificate subject (use the script for your choice of browser):
+  
+     **Microsoft Edge**
 
        ```powershell
        New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\AutoSelectCertificateForUrls" -Force
@@ -380,7 +383,19 @@ Next, install the certificates on the computer where you run RSAT.
        -Value '{"pattern":"[*.]microsoftonline.com/f30eb649-xxxx-41bc-91af-139e4fd1d9f6","filter":{"SUBJECT":{"CN":"testuser.Contoso.User Certificate"}}}' `
        -PropertyType String -Force
        ```
-   - In the script above, the value `f30eb649-xxxx-41bc-91af-139e4fd1d9f6` is the tenant ID, and `testuser.Contoso.User Certificate` is the user certificate subject
+
+     **Google Chrome**
+
+       ```powershell
+       New-Item -Path "HKLM:\SOFTWARE\Policies\Google\Chrome\AutoSelectCertificateForUrls" -Force
+       
+       New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Google\Chrome\AutoSelectCertificateForUrls" `
+       -Name "1" `
+       -Value '{"pattern":"[*.]microsoftonline.com/f30eb649-xxxx-41bc-91af-139e4fd1d9f6","filter":{"SUBJECT":{"CN":"testuser.Contoso.User Certificate"}}}' `
+       -PropertyType String -Force
+       ```
+       
+   - In the scripts above, the value `f30eb649-xxxx-41bc-91af-139e4fd1d9f6` is the tenant ID, and `testuser.Contoso.User Certificate` is the user certificate subject
    - Once you have made the edits, run the script. This will insert the relevant registry key entries as required. 
 
 ### Configure RSAT
@@ -395,6 +410,21 @@ When you select **Test Connection**, you should receive a message that states th
 
 ### RSAT certification modes
 
-- **Automated** – RSAT configures registry entries for the policy selection with each test case before it runs steps, so that the CBA authorization flow callback from certauth automatically selects a matching user policy. Because of the permissions that are required for local machine entries, the policies are stored only as current user entries. If you use this mode, we recommend that no local machine entries exist, for example, if someone was using a predefined, single local computer policy and manually deleted it before they ran RSAT in **Automated** mode.
-- **Predefined** – Users can't use **Automated** mode but want to control their policies themselves. If filtering by subject from the rule in RSAT doesn't work, it's feasible to configure this filtering. It might be challenging to make a general policy work with all accounts. In **Predefined** mode, RSAT doesn't touch policy entries in the registry at all. Instead of configuring the policy under current users, you can configure it under the local machine. In this way, the policy can be shared between users.
-- **Manual** – When RSAT plays back a test, it removes any policy entries that already exist, but only from the current user. Therefore, if the current user has a policy from the local machine, execution falls back on this policy. Therefore, that policy shouldn't be mixed. **Manual** mode gives a window of 10 seconds for manual selection of the policy when certauth calls back for the selection of this policy.
+RSAT supports three modes for certificate-based authentication (CBA) during test execution. Each mode determines how certificates are selected and how registry policies are managed:
+
+- **Automated Selection (Recommended)** 
+   - RSAT automatically selects the appropriate certificate using the **AutoSelect Certificate** policy.
+   - This policy is added to the **current user’s registry** before each test case runs.
+   - Recommended for both **interactive** and **non-interactive** RSAT executions.
+   - **Important:** If an AutoSelect policy exists under the **local machine registry**, it must be removed before using Automated mode to avoid conflicts.
+
+- **Predefined Selection**
+   - RSAT does **not** modify any registry settings.
+   - Relies on a preconfigured **AutoSelect Certificate** policy in the **local machine registry**, which can be shared across all users on the device.
+   - Users must ensure these policies are correctly configured before running RSAT.
+   - Useful when centralized policy management is preferred.
+
+- **Manual Selection**
+   - RSAT removes any AutoSelect Certificate policy from the **current user’s registry** before playback.
+   - Introduces a **10-second window** for manual certificate selection when certauth requests authorization.
+   - Not recommended for **non-interactive** RSAT pipeline executions due to the manual step required.
