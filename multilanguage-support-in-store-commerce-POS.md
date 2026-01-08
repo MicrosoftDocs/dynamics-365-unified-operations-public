@@ -4,10 +4,10 @@ description: Learn how to configure and use multi-language features in Store Com
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to
-ms.date: 06/05/2024
+ms.date: 01/08/2026
 ms.custom: 
   - bap-template
-ms.reviewer: v-chrgriffin
+ms.reviewer: 
 ---
 ### Multi-language Support in Store Commerce POS Self-Checkout & Button/Tab Localization ###
 
