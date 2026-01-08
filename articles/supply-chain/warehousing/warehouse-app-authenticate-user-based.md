@@ -57,7 +57,7 @@ The following procedure shows one way to register an application in Microsoft En
 
 1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
 1. Enter the name and password of the user who has access to the Azure subscription.
-1. In the Azure portal, on the left navigation pane, select **Microsoft Entra ID**.
+1. Use the search field at the top of the page to find and open the **Microsoft Entra ID** service.
 1. Make sure that you're working with the instance of Microsoft Entra ID that's used by Supply Chain Management.
 1. On the left navigation pane, expand **Manage** and select **App registrations**.
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
@@ -77,7 +77,7 @@ The following procedure shows one way to register an application in Microsoft En
 1. In the dialog, select **Mobile and desktop applications**.
 1. Set the input field provided to one of the following values:
 
-    - If you're using version 3.0 or earlier of the Warehouse Management mobile app, set the field to the following value:
+    - If you're using version 3.x or earlier of the Warehouse Management mobile app, set the field to the following value:
 
         ``` text
         ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333
@@ -89,8 +89,9 @@ The following procedure shows one way to register an application in Microsoft En
         ms-appx-web://microsoft.aad.brokerplugin/{clientId}
         ```
 
-1. Select **Configure** to save your settings and close the dialogs.
-1. You return to the **Authentication** page, which now shows your new platform configuration. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
+    Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
+
+1. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
 
     - If you're using the old authentication experience, select **Add a platform**.
     - If you're using the new authentication experience, open the **Redirect URI configuration** tab and select **Add redirect URI**.
@@ -109,7 +110,7 @@ The following procedure shows one way to register an application in Microsoft En
         Xo8WBi6jzSxKDVR4drqm84yr9iU=
         ```
 
-    Select **Configure** to save your settings and close the dialog. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
+    Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
 
 1. Repeat the previous two steps to add another Android platform configuration, but this time use the following value for the **Signature hash** field:
 
