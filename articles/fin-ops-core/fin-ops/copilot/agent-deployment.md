@@ -1,6 +1,6 @@
 ---
-title: How to deploy and setup Agents in Data Verse
-description: This article describes how to use the agent deployment wizard for IT admins in the Power Platform Admin center  
+title: Deploy and set up Dynamics 365 agents using the Agent deployment wizard
+description: This article explains how IT administrators use the Agent deployment wizard in the Power Platform Admin Center to deploy and set up Microsoft Dynamics 365 agents in Dataverse environments.
 author: cabeln
 ms.author: cabeln
 ms.topic: concept-article
@@ -8,7 +8,7 @@ ms.date: 01/07/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer:  
-audience: Application User
+audience: Administarors
 ms.collection: 
  - bap-ai-copilot
 ---
