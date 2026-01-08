@@ -1,6 +1,6 @@
 ---
 title: Archive Commerce transactions (preview)
-description: Learn how how to archive transactions in Microsoft Dynamics 365 Commerce.
+description: Learn how to archive transactions in Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.author: shajain
 ms.topic: how-to    
@@ -44,7 +44,7 @@ To set up an archival job, follow these steps:
 1. Select one of the following supported scheduling types:
 
     - **Single run** – Long-term retention and the save to history tables run continuously until both processes are completed. Data is always archived first in Dataverse long-term retention. Then the save to history occurs.
-    - **Daily during allotted time** – Long-term retention runs continuously until it's completed. The save to history tables runs only during the specified start and stop archiving time.
+    - **Daily during allotted time** – Long-term retention runs continuously until the process is completed. The save to history tables only runs during the specified start and stop archiving time.
 
 1. On the last page of the wizard, confirm the details, and then select **Finish** to schedule the **Retail transactions archive** job for the selected interval and company.
 
@@ -114,5 +114,6 @@ The retail long-term retention job archives the following tables:
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
