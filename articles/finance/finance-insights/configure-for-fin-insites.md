@@ -73,29 +73,29 @@ If you previously installed the Finance insights add-in, uninstall it before you
 
 To install the Finance insights add-in, follow these steps:
 
-1. Go to the Power Platform Admin Center (PPAC).
+1. **Go to the Power Platform Admin Center (PPAC).**
    
    Open the Power Platform Admin Center and sign in with an account that has admin permissions.
 
-2. Select the environment linked to your Finance & Operations environment.
+2. **Select the environment linked to your Finance & Operations environment.**
    
    Under **Environments**, choose the Dataverse environment that is paired with your F&O instance.
 
-3. Open the Resources menu.
+3. **Open the Resources menu.**
    
    In the left navigation, select **Resources > Dynamics 365 apps**.
 
-4. Install the Finance Insights app.
+4. **Install the Finance Insights app.**
    
    - Select **Install app** (or **Add app** depending on UI).
    - Find **Finance Insights** in the list.
    - Choose **Install**.
 
-5. Confirm the terms and conditions.
+5. **Confirm the terms and conditions.**
    
    Accept the terms and begin installation.
 
-6. Wait for the installation to complete.
+6. **Wait for the installation to complete.**
    
    It may take several minutes before the add-in becomes active and available in Finance & Operations.
 
