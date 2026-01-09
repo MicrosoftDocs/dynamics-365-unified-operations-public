@@ -4,7 +4,7 @@ description: Learn how to set up and use the certificate that is required for th
 author: pvillads
 ms.author: pvillads
 ms.topic: article
-ms.date: 08/29/2025
+ms.date: 01/09/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -412,19 +412,20 @@ When you select **Test Connection**, you should receive a message that states th
 
 RSAT supports three modes for certificate-based authentication (CBA) during test execution. Each mode determines how certificates are selected and how registry policies are managed:
 
-- **Automated Selection (Recommended)** 
-   - RSAT automatically selects the appropriate certificate using the **AutoSelect Certificate** policy.
-   - This policy is added to the **current user’s registry** before each test case runs.
-   - Recommended for both **interactive** and **non-interactive** RSAT executions.
-   - **Important:** If an AutoSelect policy exists under the **local machine registry**, it must be removed before using Automated mode to avoid conflicts.
+- **Automated selection (Recommended)** 
+   - RSAT automatically selects the appropriate certificate using the AutoSelect certificate policy.
+   - This policy is added to the current user’s registry before each test case runs.
+   - Recommended for both interactive and non-interactive RSAT executions.
+   >[!Important]
+   >If an AutoSelect policy exists under the local machine registry, it must be removed before using automated mode to avoid conflicts.
 
-- **Predefined Selection**
-   - RSAT does **not** modify any registry settings.
-   - Relies on a preconfigured **AutoSelect Certificate** policy in the **local machine registry**, which can be shared across all users on the device.
+- **Predefined selection**
+   - RSAT doesn't modify any registry settings.
+   - Relies on a preconfigured AutoSelect certificate policy in the local machine registry, which can be shared across all users on the device.
    - Users must ensure these policies are correctly configured before running RSAT.
    - Useful when centralized policy management is preferred.
 
-- **Manual Selection**
-   - RSAT removes any AutoSelect Certificate policy from the **current user’s registry** before playback.
-   - Introduces a **10-second window** for manual certificate selection when certauth requests authorization.
-   - Not recommended for **non-interactive** RSAT pipeline executions due to the manual step required.
+- **Manual selection**
+   - RSAT removes any AutoSelect certificate policy from the current user’s registry before playback.
+   - Introduces a 10-second window for manual certificate selection when certauth requests authorization.
+   - Not recommended for non-interactive RSAT pipeline executions due to the manual step required.
