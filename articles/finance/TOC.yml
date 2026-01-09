@@ -5771,8 +5771,6 @@
       items:
         - name: Overview
           href: ../finance/transparency-note.md
-        - name: Set up Agent management (production ready preview)
-          href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
         - name: Customer page summary FAQ
