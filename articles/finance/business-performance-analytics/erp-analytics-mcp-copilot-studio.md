@@ -13,7 +13,7 @@ ms.search.form: business-performance-analytics
 
 # Build an agent with ERP Analytics MCP in Copilot Studio (preview)
 
-The Dynamics 365 ERP Analytics MCP server enables AI agents to access and analyze [Business performance analytics](business-performance-analytics-home-page.md) data through natural language. This article provides guidance and best practices for building an agent with the ERP Analytics MCP server in [Microsoft Copilot Studio](/microsoft-copilot/microsoft-copilot-studio).
+The Dynamics 365 ERP Analytics MCP server enables AI agents to access and analyze [Business performance analytics](business-performance-analytics-home-page.md) data through natural language. This article provides guidance and best practices for building an agent with the ERP Analytics MCP server in [Microsoft Copilot Studio](/microsoft-copilot-studio/what-is-copilot-studio).
 
 > [!IMPORTANT]
 > This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback.
@@ -44,7 +44,7 @@ When you add the MCP server to your agent, you give the agent access to the anal
 
 After you add the Dynamics 365 ERP Analytics MCP server, the agent can access the analytical tools on the server and use them to answer data questions and generate insights from your Business performance analytics data. 
 
-Learn more about configuration options for MCP tools in [Add tools and resources from a Model Context Protocol (MCP) server to your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent).
+Learn more about configuration options for MCP tools in [Add tools and resources from a Model Context Protocol (MCP) server to your agent](/microsoft-copilot-studio/mcp-add-components-to-agent).
 
 ## Selecting a model
 
@@ -53,13 +53,13 @@ On the **Overview** tab, you can view and change the agent's model. This model i
 The recommended model for agents using the Dynamics 365 ERP Analytics MCP server is Claude Sonnet 4.5. If Claude Sonnet 4.5 isn't available in your environment, use GPT-5 (Chat) as an alternative.
 
 > [!NOTE]
-> Claude models are external models not hosted in Azure. Tenant administrators must approve them for use on the tenant. For more information, see [Choose an external model as the primary AI model](../microsoft-copilot-studio/authoring-select-external-response-model).
+> Claude models are external models not hosted in Azure. Tenant administrators must approve them for use on the tenant. For more information, see [Choose an external model as the primary AI model](/microsoft-copilot-studio/authoring-select-external-response-model).
 
 ## Providing agent instructions
 
 On the **Overview** tab of the agent are instructions that are the core directives or guidance on how the agent should function. They tell the agent what to do and how to do it, in natural language statements. Instructions provide important context for improving the agent's orchestration in selecting the right tool, interpreting analytical requests, and generating responses.
 
-For more information about writing instructions for agents in Copilot Studio, see [Write agent instructions](../microsoft-copilot-studio/authoring-instructions).
+For more information about writing instructions for agents in Copilot Studio, see [Write agent instructions](/microsoft-copilot-studio/authoring-instructions).
 
 ### Principles for effective instructions
 
@@ -209,8 +209,8 @@ Use these example queries to test your agent:
 
 ### See also
 
-- [Write agent instructions](../microsoft-copilot-studio/authoring-instructions)
-- [Add tools from an MCP server](../microsoft-copilot-studio/mcp-add-components-to-agent)
-- [Choose an external model](../microsoft-copilot-studio/authoring-select-external-response-model)
+- [Write agent instructions](/microsoft-copilot-studio/authoring-instructions)
+- [Add tools from an MCP server](/microsoft-copilot-studio/mcp-add-components-to-agent)
+- [Choose an external model](/microsoft-copilot-studio/authoring-select-external-response-model)
 - [Business performance analytics overview](business-performance-analytics-home-page.md)
 - [Model Context Protocol specification](https://spec.modelcontextprotocol.io/)
