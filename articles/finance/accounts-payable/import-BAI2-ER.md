@@ -30,9 +30,6 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 6. Select the **ABR BAI2 format**.
 7. On the **Versions** FastTab, select the latest version, and then select **Import**.
 
->[!NOTE]
->The **Bank statement model of BAI2** will be deprecated at a later date. 
-
 ## Set up the bank statement format
 
 1. Go to **Cash and bank management \> Setup \> Advanced bank reconciliation setup \> Bank statement format**.

@@ -60,7 +60,7 @@ Follow these steps to edit a methodology in a specific project only.
 
 ## Additional resources
 
-[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on Marketplace](lcs-solutions-app-source.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

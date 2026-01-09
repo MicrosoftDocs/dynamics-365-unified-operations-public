@@ -39,7 +39,7 @@ This functionality uses the [Microsoft Dataverse Web API](/power-apps/developer/
 
 You can import the Globalization solution by following these steps.
 
-1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on AppSource.
+1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on Marketplace.
 1. Select **Get it now**.
 1. Fill in the required data.
 1. Select an environment, and then select **Install**.

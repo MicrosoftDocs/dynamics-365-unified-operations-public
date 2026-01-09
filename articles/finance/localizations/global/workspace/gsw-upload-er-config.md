@@ -16,7 +16,7 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
-You can use Microsoft Dataverse solutions for Application Lifecycle Management (ALM) scenarios. For example, you can move Electronic reporting (ER) configurations to other environments or share them with other tenants via AppSource.
+You can use Microsoft Dataverse solutions for Application Lifecycle Management (ALM) scenarios. For example, you can move Electronic reporting (ER) configurations to other environments or share them with other tenants via Marketplace.
 
 You can also export and import specific versions as a file by using export and import buttons on the page (existing functionality).
 
@@ -95,6 +95,6 @@ To create a Dataverse solution, follow these steps:
     > [!NOTE]
     > After you import the solution into Dataverse, there's no way to remove it together with the content. Although you can remove the solution, all inserted table records remain and must be manually cleaned up.
 
-1. Publish your app on AppSource. For more information, see [Publish your app on AppSource](/power-platform/developer/appsource/publish-app).
+1. Publish your app on Marketplace. For more information, see [Publish your app on Marketplace](/power-platform/developer/appsource/publish-app).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

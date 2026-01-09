@@ -18,6 +18,22 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.28.0
+
+Version 4.0.28.0 adds the following fixes and improvements:
+
+- Fixed an issue where pulling down to refresh didn't update the work list cards.
+- Enabled brokered authentication for Android, iOS, and Windows, which allows support for features such as Microsoft Entra Conditional Access.
+- Added an option on Android to use a new redirect URI, which is required for Microsoft Entra Conditional Access.
+- Improved camera-based barcode scanning by adding camera zoom and augmented-reality assisted barcode focusing.
+- Fixed issues with hardware keyboard detection.
+- Added support for keycode mapping.
+- Fixed an issue that prevented nonnumerical placeholders from appearing in the step banner.
+- Fixed an issue affecting image setup for product and master variants.
+- Corrected case-sensitive redirect URI matching on Android.
+- Fixed an issue where entering a large digit in the calculator caused the delete button to move offscreen.
+- Improved localization across the app.
+
 ## Version 4.0.27.0
 
 Version 4.0.27.0 adds the following fixes and improvements:

@@ -1,22 +1,23 @@
 ---
-title: Archive Commerce transactions
-description: This article describes how to archive Microsoft Dynamics 365 Commerce transactions.
+title: Archive Commerce transactions (preview)
+description: Learn how to archive transactions in Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.author: shajain
 ms.topic: how-to    
-ms.date: 7/31/2024
-ms.reviewer: v-chrgriffin
+ms.date: 01/08/2026
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.search.validFrom: 2024-07-01
 ms.custom: 
   - bap-template
 ---
 
-# Archive Commerce transactions
+# Archive Commerce transactions (preview)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This article describes how to archive Microsoft Dynamics 365 Commerce transactions.
+This article explains how to archive transactions in Microsoft Dynamics 365 Commerce.
 
 ## Prerequisites
 
@@ -38,12 +39,12 @@ To set up an archival job, follow these steps:
 1. Enter a name for the job, and then select **Next**.
 1. Specify the date of the oldest retail transactions to archive (the **From** date).
 1. Specify the date of the newest retail transactions to archive (the **To** date).
-1. Select the legal entity (company) to archive the sales orders for.
+1. Select the legal entity (company) for which to archive the sales orders.
 1. Select **Next**.
 1. Select one of the following supported scheduling types:
 
     - **Single run** – Long-term retention and the save to history tables run continuously until both processes are completed. Data is always archived first in Dataverse long-term retention. Then the save to history occurs.
-    - **Daily during allotted time** – Long-term retention runs continuously until it's completed. The save to history tables runs only during the specified start and stop archiving time.
+    - **Daily during allotted time** – Long-term retention runs continuously until the process is completed. The save to history tables only runs during the specified start and stop archiving time.
 
 1. On the last page of the wizard, confirm the details, and then select **Finish** to schedule the **Retail transactions archive** job for the selected interval and company.
 
@@ -64,6 +65,9 @@ The following illustration shows an example of the **Archive with Dataverse long
 ![Screenshot that shows a completed archive job for retail in the Archive with Dataverse long term retention workspace.](media/Retail_LTR.png)
 
 ## Tables archived by the retail long-term retention job
+
+> [!NOTE]
+> Only posted transactions are included in the archive job. 
 
 The retail long-term retention job archives the following tables:
 
@@ -102,22 +106,15 @@ The retail long-term retention job archives the following tables:
 - RetailTransactionTaxTrans_IN
 - RetailTransactionTaxTrans
 - RetailTransactionTaxTransGTE
-- RetailEodStatementControllerLog
-- RetailEodStatementEventLog
-- RetailEodTransactionAggregationHeader
-- RetailEodTransactionAggregationTrans
-- RetailEodTransactionError
-- RetailEodTransactionBankedTenderTrans
-- RetailEodTransactionIncomeExpenseTrans
-- RetailEodTransactionInfocodeTrans
-- RetailEodTransactionOrderInvoiceTrans
-- RetailEodTransactionPaymentTrans
-- RetailEodTransactionSafeTenderTrans
-- RetailEodTransactionSalesTrans
-- RetailEodTransactionTable
-- RetailEodTransactionTenderDeclarationTrans
-- RetailStatementJour
-- RetailStatementTrans
-- RetailStatementVoucher
+
+> [!NOTE]
+> This feature is generally available starting with the Commerce version 10.0.47 release.
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+
+

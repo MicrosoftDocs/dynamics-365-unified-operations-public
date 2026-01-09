@@ -54,7 +54,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.43 PQU-6 | August 27, 2025 | September 1, 2025 to October 5, 2025| Completed |
 | 10.0.43 PQU-7 | September 24, 2025 | September 29, 2025 to November 2, 2025| Completed |
 | 10.0.43 PQU-8 | October 22, 2025 | October 27, 2025 to December 7, 2025| Partially Canceled* |
-| 10.0.43 PQU-9 | November 26, 2025 | January 5, 2026 to February 8, 2026| Not Started |
+| 10.0.43 PQU-9 | November 26, 2025 | January 5, 2026 to February 8, 2026| In-Progress |
 | 10.0.44 PQU-1 | July 9, 2025 | July 14, 2025 to August 17, 2025| Completed |
 | 10.0.44 PQU-2 | August 6, 2025 | August 11, 2025 to September 14, 2025| Completed |
 | 10.0.44 PQU-3 | September 3, 2025 | September 8, 2025 to October 12, 2025| Completed |
@@ -89,22 +89,22 @@ The following table shows the high-level train schedule. It includes a descripti
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 > Canceled* - PQU will occur only on Station-1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.43 Release-8 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.43 Release-9 train schedule
 
-**App version: 10.0.2177.203**
+**App version: 10.0.2177.218**
 
-**Platform version: 7.0.7521.282**
+**Platform version: 7.0.7521.289**
 
-**Unified Environment Provisioning Application Version: 10.0.43.12** 
+**Unified Environment Provisioning Application Version: 10.0.43.14** 
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | October 27 to October 30, 2025 | NA |
-| Station 2 | November 3 to November 6, 2025 | Cancelled |
-| Station 3 | November 4 to November 7, 2025 | Cancelled |
-| Station 4 | November 10 to November 13, 2025 | Cancelled |
-| Station 5 | November 17 to November 20, 2025 | Cancelled |
-| Station 6 | November 18 to November 21, 2025 | Cancelled |
+| Station 1 | January 5 to January 8, 2026 | NA |
+| Station 2 | January 12 to January 15, 2026 | January 24 to January 25, 2026 |
+| Station 3 | January 13 to January 16, 2026 | January 24 to January 25, 2026 |
+| Station 4 | January 19 to January 22, 2026 | January 31 to February 1, 2026 |
+| Station 5 | January 26 to January 29, 2026 | February 7 to February 8, 2026 |
+| Station 6 | January 27 to January 30, 2026 | February 7 to February 8, 2026 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-7 train schedule
 
