@@ -64,7 +64,7 @@ To manually set up a connection that supports Conditional Access:
     - **Use broker** – If you're using Windows or Android, set this option to *Yes*. If you're using iOS, the system handles this setting automatically, so the setting isn't shown.
     - **AndroidNewRedirectURI** – If you're using an Android device, set this option to *Yes*.
 
-        Configure all the other settings as described in [Manually configure the application](install-configure-warehouse-management-app.md#config-manually). If you previously had **Cloud** set to *Azure Global*, remember also to set **Microsoft Entra ID client** and **Microsoft Entra ID tenant** as described in that article.
+        Configure all the other settings as described in [Manually configure the application](install-configure-warehouse-management-app.md#config-manually). If you previously had **Cloud** set to *Azure Global*, remember also to set values for **Microsoft Entra ID client** and **Microsoft Entra ID tenant** as described in that article.
 
 1. Select **Save**.
 1. Sign in with the worker's Microsoft Entra credentials.
@@ -80,7 +80,7 @@ To configure devices to support Conditional Access, your JSON configuration file
 - `"UseBroker": true`
 - `"AndroidNewRedirectURI": true`
 
-Remember that when you use `"AuthCloud": "Manual"`, you must also set `ActiveDirectoryClientAppId` and `ActiveDirectoryTenant`.
+Remember that when you use `"AuthCloud": "Manual"`, you must also set values for `ActiveDirectoryClientAppId` and `ActiveDirectoryTenant`.
 
 The following example shows a complete JSON-based connection configuration that includes all the required settings, including the settings needed to support Conditional Access:
 
