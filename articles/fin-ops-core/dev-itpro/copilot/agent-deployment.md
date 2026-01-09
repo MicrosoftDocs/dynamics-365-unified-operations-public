@@ -1,6 +1,6 @@
 ---
-title: Deploy Dynamics 365 agents using the agent deployment wizard (preview)
-description: Learn how IT administrators use the agent deployment wizard in the Power Platform admin center to deploy and set up Microsoft Dynamics 365 agents in Dataverse environments.
+title: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
+description: Learn how IT administrators use the agent deployment wizard in the Power Platform admin center to deploy and set up Microsoft Dynamics 365 agents.
 author: cabeln
 ms.author: cabeln
 ms.topic: concept-article
@@ -14,27 +14,29 @@ ms.collection:
 ---
 
 
-# Deploy Dynamics 365 agents using the agent deployment wizard (preview)
+# Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The agent deployment wizard in Copilot Hub is the centralized deployment experience for Dynamics 365 agents. It guides administrators through a secure, validated process to deploy Microsoft‑provided agents into Power Platform and Dynamics 365 environments.
+The agent deployment wizard in Copilot Hub provides a centralized experience for deploying Dynamics 365 agents to your business applications. It guides administrators through a secure, validated process that deploys Microsoft‑provided agents into environments such as Dataverse, Power Platform, and Microsoft finance and operations apps.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The wizard provides a consistent deployment experience across all Dynamics 365 agents, while agent‑specific configuration and setup guidance is documented separately for each agent.
+The agent deployment wizard provides a consistent deployment experience across all Dynamics 365 agents. Each agent offers its own specific configuration and setup guidance.
 
 > [!NOTE]
-> Access the agent deployment wizard in the [Power Platform admin center](https://aka.ms/InstallD365Agents)
+> To run the agent deployment wizard, go to the [Power Platform admin center](https://aka.ms/InstallD365Agents).
 >
 > A separate [public preview experience in Power Platform admin center](https://aka.ms/InstallD365AgentsPreview) provides early access to upcoming enhancements for the agent deployment wizard.
+
+The following image shows the Dynamics 365 agent deployment wizard landing page in Power Platform admin center.
 
 :::image type="content" source="media/agent-deployment-wizard.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/agent-deployment-wizard.png":::
 
 ## Purpose of the agent deployment wizard
 
-Dynamics 365 agents are shipped as managed solutions that depend on platform features, security roles, and environment configuration.
+Microsoft ships Dynamics 365 agents as managed solutions that depend on platform features, security roles, and environment configuration.
 
 The agent deployment wizard helps you:
 
@@ -44,11 +46,11 @@ The agent deployment wizard helps you:
 - Deploy agents safely and consistently
 - Monitor deployment status and troubleshoot failures
 
-By using the wizard, you find a one stop guidance and deployment tool and ensure deployments comply with Power Platform governance, security, and lifecycle best practices.
+The wizard provides a one-stop guidance and deployment tool and ensures deployments comply with Power Platform governance, security, and lifecycle best practices.
 
 ## What the agent deployment wizard deploys
 
-The agent deployment wizard is designed specifically for Microsoft‑provided Dynamics 365 agents, such as:
+The agent deployment wizard is designed specifically for Microsoft‑provided Dynamics 365 agents, including:
 
 - [Supplier Communications agent](../../../supply-chain/procurement/supplier-com-agent-setup.md)
 - [Account Reconciliation agent](../../../finance/general-ledger/configure-acct-recon-agent.md)
@@ -58,107 +60,96 @@ The agent deployment wizard is designed specifically for Microsoft‑provided Dy
 
 Each agent has its own deployment and post‑deployment guidance that explains functional setup, permissions, and usage. This article focuses only on the common deployment experience.
 
-## Who should use this tool
+## Who should use the agent deployment wizard
 
-This tool is intended for:
+Use the agent deployment wizard if you are:
 
-- IT teams responsible for environment readiness and rollout
-- Power Platform administrators
-- Agent administrators
-- Dynamics 365 administrators
+- An IT team member responsible for environment readiness and rollout
+- A Power Platform administrator
+- An agent administrator
+- A Microsoft finance and operations apps administrator
 
 ## Access the agent deployment wizard
 
-To access the agent deployment wizard:
+To access the agent deployment wizard, follow these steps:
 
 1. Open [Copilot Hub in Power Platform admin center and select Dynamics 365](https://aka.ms/InstallD365Agents).
 1. Select the target environment.
 1. Choose a Dynamics 365 agent.
-1. Select Add.
-This action launches the agent deployment wizard for the selected agent.
+1. Select **Add** to launch the agent deployment wizard for the selected agent.
 
 ## Common deployment steps for Dynamics 365 agents
 
-Deploying a Dynamics 365 agent using the agent deployment wizard in Copilot Hub follows a consistent set of administrative tasks. While each agent requires additional, agent‑specific configuration, the steps below describe the common deployment flow that administrators complete for every agent.
-These steps are typically completed once per agent, per environment.
+The agent deployment wizard guides you through a consistent set of administrative tasks each time you run it. Each specific agent requires additional, agent‑specific configuration, but the steps outlined in the following subsections describe the common deployment flow that you follow for every agent. You typically complete these steps once per agent per environment.
 
-### Check prerequisites
+### Step 1: Check prerequisites
 
-The agent deployment wizard first helps to validates that the target environment meets all required prerequisites for the selected agent.
-This includes checking that the required applications and Dataverse packages for Copilot and agent assets are installed in the environment. In most cases, these packages are installed automatically as part of the deployment process.
+The wizard checks that the target environment meets all required prerequisites for the selected agent. It makes sure that the required applications and Dataverse packages for Copilot and agent assets are installed. Often, the deployment process automatically installs the required packages when needed.
 
-Additional prerequisite validations include:
+Other prerequisite validations include:
 
-- Copilot enablement and generative AI feature settings
-- Message consumption settings for Copilot
-- Data Loss Prevention (DLP) policies
-- Advanced connector policies, if applicable
-- Virtual entity refresh, when required by the agent
+- Confirm that [Copilot is enabled](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features) and all [generative AI features are set up correctly](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
+- Confirm message consumption settings for Copilot. You can manage these settings [on the **Licenses** page in Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/billing/licenses/copilotStudio/overview).
+- Check [data loss prevention (DLP) policies](/microsoft-copilot-studio/admin-data-loss-prevention).
+- Check [advanced connector policies](/power-platform/admin/advanced-connector-policies), if applicable.
+- Refresh virtual entities when required by the agent.
 
-Any missing, misconfigured, or blocked prerequisites are clearly surfaced in the wizard, along with guidance on how to resolve them before proceeding.
+The wizard clearly surfaces any missing, misconfigured, or blocked prerequisites. It provides guidance on how to resolve these issues before proceeding.
 
-### Set up the agent identity
+### Step 2: Set up the agent identity
 
-Each agent runs under a dedicated agent user identity. In this step, the administrator selects or creates this identity.
+Each agent runs under a dedicated agent user identity. In this step, you select or create this identity. Typical tasks include:
 
-Typical tasks include:
+- Identify the agent user account.
+- Create the agent identity in the Microsoft 365 admin center if it doesn't exist already.
+- Assign the required product licenses to the agent user.
+- Add the agent user to the Dataverse environment.
+- Assign the required Dataverse security roles.
 
-- Identifying the agent user account
-- Creating the agent identity in the Microsoft 365 admin center, if it does not already exist
-- Assigning the required product licenses to the agent user
-- Adding the agent user to the Dataverse environment
-- Assigning the required Dataverse security roles
+Agents used in Microsoft finance and operations apps require a few extra steps, including:
 
-For Finance and Operations (FnO) agents, additional steps are required:
+- Add the agent user to the finance and operations apps environment.
+- Assign the relevant security roles.
 
-- Adding the agent user to the FnO environment
-- Assigning the relevant FnO security roles
+These steps ensure that the agent has the correct permissions to access data and perform its intended actions.
 
-This ensures the agent has the correct permissions to access data and perform its intended actions.
+### Step 3: Connect the agent
 
-### Connect the agent
+The wizard guides the administrator through the settings needed to let the agent connect with Dataverse and other services. In this step, the wizard typically performs the following actions:
 
-The Connect agent step guides the administrator through configuring the required connections that allow the agent to interact with Dataverse and other services.
+- Create the required Dataverse connections using the agent identity.
+- Add these connections to the agent's connection references.
+- Verify that all required connectors are approved under existing governance policies.
+- Activate all Power Automate flows used by the agent.
 
-In this step, the administrator:
+When you finish these steps, the agent is fully connected to the services it needs.
 
-- Creates the required Dataverse connections using the agent identity
-- Adds these connections to the agent’s connection references
-- Verifies that all required connectors are approved under existing governance policies
-- Activates all Power Automate flows used by the agent
+### Step 4: Configure mailboxes (if applicable)
 
-Once completed, the agent is fully connected to the services it depends on.
+Some agents rely on mailboxes to send or receive messages. For such agents, the wizard includes a step to configure the mailboxes, which helps you perform the following actions:
 
-### Configure mailboxes (if applicable)
-
-Some agents rely on mailboxes to send or receive messages.
-
-For such agents, the agent deployment wizard includes an optional Configure mailbox step, which helps administrators:
-
-- Set up server-side synchronization for the required mailboxes
-- Configure mailbox-related environment variables, if needed
+- Set up server-side synchronization for the required mailboxes.
+- Configure mailbox-related environment variables, if needed.
 
 This step only appears for agents that require mailbox integration.
 
-### Enable the agent
+### Step 5: Enable the agent
 
-The final step makes the agent available for use.
+The final step makes the agent available for use. This step typically includes the following actions:
 
-This typically includes:
+- Publish the agent bot in Copilot Studio.
+- Verify that the agent is enabled and available in the target environment.
 
-- Publishing the agent bot in Copilot Studio
-- Verifying that the agent is enabled and available in the target environment
+For agents used in Microsoft finance and operations apps, this step also does the following action:
 
-For Finance and Operations agents, this step also includes:
-
-- Enabling the required feature in FnO Feature Management
+- Enable the required features in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Once enabled, the agent is active and ready for use.
 
 ### Next steps
 
-After completing these common deployment steps, follow the agent‑specific deployment guidance to configure business logic and bring the agent into service. These actions are performed in the business application using [agent management](agent-mgmt.md).
+After completing the common deployment steps, the wizard provides agent‑specific deployment guidance for how to configure business logic and bring the agent into service. You complete these steps by using [agent management](agent-mgmt.md) in your business application.
 
 ## Support and feedback
 
-This feature is currently in preview. We welcome your feedback and will use it to improve the agent deployment wizard. Report any issues or suggestions using the standard Dynamics 365 support channels.
+This feature is currently in preview. Microsoft welcomes your feedback and uses it to improve the agent deployment wizard. Report any issues or suggestions by using the standard Dynamics 365 support channels.

@@ -2317,7 +2317,7 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
-      - name: Deploy Dynamics 365 agents using the agent deployment wizard (preview)
+      - name: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
         href: ../dev-itpro/copilot/agent-deployment.md
       - name: Agent management (production ready preview)
         href: ../fin-ops/copilot/agent-mgmt.md
