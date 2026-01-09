@@ -100,7 +100,7 @@ The following example shows a complete JSON-based connection configuration that 
 }
 ```
 
-For more information about distributing the JSON file to your devices, see [Use a QR code to connect the mobile app to Supply Chain Management](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-qr-code) and [Mass deploy the mobile app with user-based authentication](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-intune-user-based).
+For more information about distributing the JSON file to your devices, see [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md) and [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 ## Related information
 
