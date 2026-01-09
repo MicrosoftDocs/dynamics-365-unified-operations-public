@@ -2,7 +2,7 @@
 title: Electronic invoicing for Poland
 description: Learn how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 12/18/2025
+ms.date: 01/08/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection:
@@ -78,9 +78,9 @@ Add the following required elements in the key vault:
     > [!NOTE]
     > The value of the public key must be wrapped in the following commands.
     >
-    > `----BEGIN CERTIFICATE----`  
+    > `-----BEGIN CERTIFICATE-----`  
     > &hellip;  
-    > `----END CERTIFICATE----`
+    > `-----END CERTIFICATE-----`
 
 ## Configure electronic invoicing Key Vault parameters
 

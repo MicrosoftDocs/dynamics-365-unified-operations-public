@@ -75,9 +75,9 @@ Field Service integration supports the following versions:
 To use the Field Service integration solution, you must install the following components:
 
 - Field Service (version 8.2.0.286) or a later version on Dynamics 365 9.1.x - Released November 2018
-- Prospect to Cash (P2C) solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Prospect to Cash (P2C) solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [Marketplace](https://marketplace.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
   > [!NOTE]
   > The P2C solution is incompatible with Dual-write and this integration is layered on top of the P2C solution, meaning it can't be used in conjuction with Dual-write.
-- 'Field Service Integration, Project and Inventory' solution for Dynamics 365, version 2.0.0.0 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
+- 'Field Service Integration, Project and Inventory' solution for Dynamics 365, version 2.0.0.0 or a later version. The solution is available for download from [Marketplace](https://marketplace.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
