@@ -25,6 +25,8 @@ Store Commerce POS supports language selection at Self-Checkout and adds localiz
 - **Feature flag control** Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience. To enable the flag go to **Functionality profile**-> **Self-Checkout** and turn ON the flag **Enable language selection on Self-checkout Welcome page**.
 - **New change language operation** can be added into the transaction grid for switching the language during checkout.
 
+  ![Multi language for Self-checkout.](media/ML SCOlearn.jpg)
+
 **Localization of Button labels and Screen layout tabs**
 
 - **Localize button grids and tabs:** Configure multiple languages for button labels and tab names directly in the layout designer. To localize a button grid, open the button **propoerties** in the button grid designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit. To localize a tab, go to **Customize** option for a tab in the layout designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit.
