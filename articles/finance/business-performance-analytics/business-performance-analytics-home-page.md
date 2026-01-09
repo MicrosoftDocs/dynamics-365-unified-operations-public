@@ -32,13 +32,13 @@ Here are some of the key benefits of Business performance analytics:
 
 ## AI-powered analytics with ERP Analytics MCP (preview)
 
-The [Dynamics 365 ERP Analytics MCP server](erp-analytics-mcp-overview.md) enables AI agents to access and analyze Business Performance Analytics data through natural language. By connecting AI agents to BPA's dimensional models through the Model Context Protocol, users can ask analytical questions in plain language and receive data-driven insights without writing queries or navigating complex reporting interfaces.
+The [Dynamics 365 ERP Analytics MCP server](erp-analytics-mcp-overview.md) enables AI agents to access and analyze Business performance analytics data through natural language. By connecting AI agents to Business performance analytics's dimensional models through the Model Context Protocol, users can ask analytical questions in plain language and receive data-driven insights without writing queries or navigating complex reporting interfaces.
 
 Key capabilities include:
-- Natural language queries against BPA data
-- Dynamic generation of DAX queries by AI agents
-- Row-level security enforcement based on user roles
-- Seamless integration with agent platforms like Visual Studio Code and Microsoft Copilot Studio
+- Natural language queries against Business performance analytics data.
+- Dynamic generation of DAX queries by AI agents.
+- Row-level security enforcement based on user roles.
+- Seamless integration with agent platforms like Visual Studio Code and Microsoft Copilot Studio.
 
 Learn more at [Dynamics 365 ERP Analytics MCP for finance and operations apps (preview)](erp-analytics-mcp-overview.md).
 
