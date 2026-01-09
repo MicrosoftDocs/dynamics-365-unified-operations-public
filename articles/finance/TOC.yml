@@ -4715,9 +4715,9 @@
                   href: business-performance-analytics/erp-analytics-mcp-technical-details.md
                 - name: Use ERP Analytics MCP in Visual Studio Code
                   href: business-performance-analytics/erp-analytics-mcp-vscode.md
-                - name: Build an agent with ERP Analytics MCP in Copilot Studio
+                - name: Build an agent in Copilot Studio
                   href: business-performance-analytics/erp-analytics-mcp-copilot-studio.md
-                - name: ERP Analytics MCP frequently asked questions
+                - name: ERP Analytics MCP FAQ
                   href: business-performance-analytics/erp-analytics-mcp-faq.md
             - name: Business performance analytics FAQ
               href: business-performance-analytics/bpa-faq.md
