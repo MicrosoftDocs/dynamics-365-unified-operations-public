@@ -124,6 +124,13 @@ During the preview, the focus is on stability, performance, and understanding an
 - **Expanded data coverage**: Additional BPA subject areas and custom data integrations
 - **Integration with Dynamics 365 Analyst Agent**: Fine-tuned agent for multi-turn analytical conversations
 
+## Next steps
+
+- [Technical details and prerequisites](erp-analytics-mcp-technical-details.md)
+- [Using ERP Analytics MCP in Visual Studio Code](erp-analytics-mcp-vscode.md)
+- [Build an agent with ERP Analytics MCP in Copilot Studio](erp-analytics-mcp-copilot-studio.md)
+- [See frequently asked questions](erp-analytics-mcp-faq.md)
+
 ## See also
 
 - [Business Performance Analytics overview](business-performance-analytics-home-page.md)
