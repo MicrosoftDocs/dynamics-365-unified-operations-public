@@ -1,5 +1,5 @@
 ---
-title: How to enable and use Agent management (production ready preview)
+title: Enable agent management (production ready preview)
 description: This article describes the Agent management feature in Microsoft Dynamics 365 finance and operations apps.
 author: twheeloc
 ms.author: jkhaira
@@ -86,7 +86,7 @@ You can discover and activate new agents by using the following tabs on the **Ag
 > [!NOTE]
 > Administrators can turn off relevant agent features through Feature management. This action affects all users. Therefore, it effectively turns off autonomous agents across the entire organization.
 
-## Activating an agent for the first time
+## Activate an agent for the first time
 
 When you activate an agent for the first time, you're automatically guided through a configuration wizard. This wizard helps you set agent parameters and define task-specific preferences.
 
@@ -96,7 +96,7 @@ The **Agent activity** page provides a comprehensive log of actions that autonom
 
 - The page shows agent interactions and task completions.
 - The data is stored in the **Copilot for Finance and Operations Agent Activity** Dataverse entity (logical name: msdyn\_erpagentactivity).
-- By default, activity history is retained for up to 90 days. However, administrators can modify the retention period, as described in the next section. After the retention period expires, a Dataverse system job deletes the records. 
+- By default, activity history is retained for up to 90 days. However, administrators can modify the retention period, as described in the next section. After the retention period expires, a Dataverse system job deletes the records.
 
 ## Customize activity retention
 

@@ -1,40 +1,42 @@
 ---
-title: Deploy and set up Dynamics 365 agents using the Agent deployment wizard
-description: This article explains how IT administrators use the Agent deployment wizard in the Power Platform Admin Center to deploy and set up Microsoft Dynamics 365 agents in Dataverse environments.
+title: Deploy Dynamics 365 agents using the agent deployment wizard (preview)
+description: Learn how IT administrators use the agent deployment wizard in the Power Platform admin center to deploy and set up Microsoft Dynamics 365 agents in Dataverse environments.
 author: cabeln
 ms.author: cabeln
 ms.topic: concept-article
-ms.date: 01/07/2026
+ms.date: 07/21/2025
 ms.update-cycle: 180-days
 ms.custom:
-ms.reviewer:  
-audience: Administarors
+ms.reviewer: kamaybac
+audience: IT Pro
 ms.collection: 
  - bap-ai-copilot
 ---
 
 
-# (Preview) Deploy Dynamics 365 agents using the Agent deployment wizard
+# Deploy Dynamics 365 agents using the agent deployment wizard (preview)
 
-[!include [preview-banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Agent deployment wizard in Copilot Hub is the centralized deployment experience for Dynamics 365 agents. It guides administrators through a secure, validated process to deploy Microsoft‑provided agents into Power Platform and Dynamics 365 environments.
+The agent deployment wizard in Copilot Hub is the centralized deployment experience for Dynamics 365 agents. It guides administrators through a secure, validated process to deploy Microsoft‑provided agents into Power Platform and Dynamics 365 environments.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 The wizard provides a consistent deployment experience across all Dynamics 365 agents, while agent‑specific configuration and setup guidance is documented separately for each agent.
 
 > [!NOTE]
-> Access the deployment wizard in the [Power Platform Admin Center](https://aka.ms/InstallD365Agents)
+> Access the agent deployment wizard in the [Power Platform admin center](https://aka.ms/InstallD365Agents)
 >
-> A separate [public preview experience in Power Platform Admin Center](https://aka.ms/InstallD365AgentsPreview) provides early access to upcoming enhancements for the Agent deployment wizard.
-
+> A separate [public preview experience in Power Platform admin center](https://aka.ms/InstallD365AgentsPreview) provides early access to upcoming enhancements for the agent deployment wizard.
 
 :::image type="content" source="media/agent-deployment-wizard-ppac.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/copilot-help-welcome.png":::
 
-## Purpose of the Agent deployment wizard
+## Purpose of the agent deployment wizard
 
 Dynamics 365 agents are shipped as managed solutions that depend on platform features, security roles, and environment configuration.
 
-The Agent deployment wizard helps you:
+The agent deployment wizard helps you:
 
 - Discover all Dynamics 365 agents available for deployment
 - Validate that a target environment is ready
@@ -44,9 +46,9 @@ The Agent deployment wizard helps you:
 
 By using the wizard, you find a one stop guidance and deployment tool and ensure deployments comply with Power Platform governance, security, and lifecycle best practices.
 
-## What the deployment wizard deploys
+## What the agent deployment wizard deploys
 
-The deployment wizard is designed specifically for Microsoft‑provided Dynamics 365 agents, such as:
+The agent deployment wizard is designed specifically for Microsoft‑provided Dynamics 365 agents, such as:
 
 - [Supplier Communications agent](https://learn.microsoft.com/dynamics365/supply-chain/procurement/supplier-com-agent-setup)
 - [Account Reconciliation agent](https://learn.microsoft.com/dynamics365/finance/general-ledger/configure-acct-recon-agent)
@@ -65,24 +67,24 @@ This tool is intended for:
 - Agent administrators
 - Dynamics 365 administrators
 
-## Access the Agent deployment wizard
+## Access the agent deployment wizard
 
-To access the deployment wizard:
+To access the agent deployment wizard:
 
-1. Open [Copilot Hub in Power Platform Admin Center and select Dynamics 365](https://aka.ms/InstallD365Agents).
+1. Open [Copilot Hub in Power Platform admin center and select Dynamics 365](https://aka.ms/InstallD365Agents).
 1. Select the target environment.
 1. Choose a Dynamics 365 agent.
 1. Select Add.
-This action launches the Agent deployment wizard for the selected agent.
+This action launches the agent deployment wizard for the selected agent.
 
 ## Common deployment steps for Dynamics 365 agents
 
-Deploying a Dynamics 365 agent using the Agent deployment wizard in Copilot Hub follows a consistent set of administrative tasks. While each agent requires additional, agent‑specific configuration, the steps below describe the common deployment flow that administrators complete for every agent.
+Deploying a Dynamics 365 agent using the agent deployment wizard in Copilot Hub follows a consistent set of administrative tasks. While each agent requires additional, agent‑specific configuration, the steps below describe the common deployment flow that administrators complete for every agent.
 These steps are typically completed once per agent, per environment.
 
 ### Check prerequisites
 
-The deployment wizard first helps to validates that the target environment meets all required prerequisites for the selected agent.
+The agent deployment wizard first helps to validates that the target environment meets all required prerequisites for the selected agent.
 This includes checking that the required applications and Dataverse packages for Copilot and agent assets are installed in the environment. In most cases, these packages are installed automatically as part of the deployment process.
 
 Additional prerequisite validations include:
@@ -131,7 +133,7 @@ Once completed, the agent is fully connected to the services it depends on.
 
 Some agents rely on mailboxes to send or receive messages.
 
-For such agents, the deployment wizard includes an optional Configure mailbox step, which helps administrators:
+For such agents, the agent deployment wizard includes an optional Configure mailbox step, which helps administrators:
 
 - Set up server-side synchronization for the required mailboxes
 - Configure mailbox-related environment variables, if needed
@@ -159,4 +161,4 @@ After completing these common deployment steps, follow the agent‑specific depl
 
 ## Support and feedback
 
-This feature is currently in preview. We welcome your feedback and will use it to improve the Agent deployment wizard. Report any issues or suggestions using the standard Dynamics 365 support channels.
+This feature is currently in preview. We welcome your feedback and will use it to improve the agent deployment wizard. Report any issues or suggestions using the standard Dynamics 365 support channels.
