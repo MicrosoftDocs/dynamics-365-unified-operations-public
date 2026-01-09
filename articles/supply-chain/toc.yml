@@ -3951,6 +3951,8 @@
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
             href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Use Microsoft Entra Conditional Access with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-conditional-access-enable.md
           - name: Mass deploy the mobile app with user-based authentication
             href: warehousing/warehouse-app-intune-user-based.md
           - name: Mobile device user accounts
