@@ -2,7 +2,7 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen
 description: This article provides troubleshooting guidance for common issues related to the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 01/06/2026
+ms.date: 01/09/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -35,11 +35,11 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 ### The EFT terminal ID isn't set
 
-For troubleshooting guidance for this issue, see [EFT Terminal ID isn't set](/troubleshoot/dynamics-365/commerce/payments/adyen-connector#eft-terminal-id-isnt-set)
+For troubleshooting guidance on this issue, see [EFT Terminal ID isn't set](/troubleshoot/dynamics-365/commerce/payments/adyen-connector#eft-terminal-id-isnt-set).
 
 ### Invoicing sales orders failed due to stale authorization
 
-For troubleshooting guidance for this issue, see [Invoicing sales orders fails because of stale authorization](/troubleshoot/dynamics-365/commerce/payments/adyen-connector#invoicing-sales-orders-fails-because-of-stale-authorization)
+For troubleshooting guidance on this issue, see [Invoicing sales orders fails because of stale authorization](/troubleshoot/dynamics-365/commerce/payments/adyen-connector#invoicing-sales-orders-fails-because-of-stale-authorization).
 
 ## Additional resources
 
@@ -52,4 +52,5 @@ For troubleshooting guidance for this issue, see [Invoicing sales orders fails b
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
 
