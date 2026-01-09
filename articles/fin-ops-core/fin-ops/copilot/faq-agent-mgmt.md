@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for Agent management in finance and operations apps (preview)
+title: Responsible AI FAQ for Agent management in finance and operations apps (production ready preview)
 description: Get answers to frequently asked questions about the AI technology used in connection with Agent management. This article includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 04/25/2025
 ms.update-cycle: 180-days
@@ -14,12 +14,14 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Agent management in finance and operations apps (preview)
+# Responsible AI FAQ for Agent management in finance and operations apps (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 An AI system includes not only the technology but also the people who use it, the people who are affected by it, and the environment where it's deployed. This responsible AI FAQ is intended to help you understand how the Agent management feature's AI technology works, and how system owners and users can influence system performance and behavior. In addition, it helps you understand the importance of thinking about the whole system, including the technology, the people, and the environment.
+
+[!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## What is Agent management?
 
