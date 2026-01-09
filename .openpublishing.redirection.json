@@ -28609,6 +28609,16 @@
       "source_path": "articles/supply-chain/pim/tasks/product-lifecycle-state-released-product-master.md",
       "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-authenticate-service-based.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-intune.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "redirect_document_id": false
     }
   ]
 
