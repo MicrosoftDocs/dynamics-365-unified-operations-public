@@ -200,6 +200,5 @@ To disable a user account in Microsoft Entra ID, follow these steps:
 
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
