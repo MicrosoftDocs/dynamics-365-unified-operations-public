@@ -396,7 +396,7 @@ Next, install the certificates on the computer where you run RSAT.
        ```
        
    - In the scripts above, the value `f30eb649-xxxx-41bc-91af-139e4fd1d9f6` is the tenant ID, and `testuser.Contoso.User Certificate` is the user certificate subject
-   - Once you have made the edits, run the script. This will insert the relevant registry key entries as required. 
+   - Once you have made the edits, run the script. This inserts the relevant registry key entries as required. 
 
 ### Configure RSAT
 
@@ -404,7 +404,7 @@ In the following example, manual selection is used as the authentication method.
 
 ![Screenshot that shows the thumbprint for the user certificate on the General tab in RSAT.](media/certificate-based-authentication/configure-regression.jpeg)
 
-When you select **Test Connection**, you should receive a message that states that the connection was successful.
+When you select **Test connection**, you should receive a message that states that the connection was successful.
 
 ![Screenshot of the message box that confirms successful connection to the environment.](media/certificate-based-authentication/regression-connected.png)
 
