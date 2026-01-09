@@ -30,7 +30,7 @@ The wizard provides a consistent deployment experience across all Dynamics 365 a
 >
 > A separate [public preview experience in Power Platform admin center](https://aka.ms/InstallD365AgentsPreview) provides early access to upcoming enhancements for the agent deployment wizard.
 
-:::image type="content" source="media/agent-deployment-wizard-ppac.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/copilot-help-welcome.png":::
+:::image type="content" source="media/agent-deployment-wizard.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/agent-deployment-wizard.png":::
 
 ## Purpose of the agent deployment wizard
 
@@ -50,11 +50,11 @@ By using the wizard, you find a one stop guidance and deployment tool and ensure
 
 The agent deployment wizard is designed specifically for Microsoft‑provided Dynamics 365 agents, such as:
 
-- [Supplier Communications agent](https://learn.microsoft.com/dynamics365/supply-chain/procurement/supplier-com-agent-setup)
-- [Account Reconciliation agent](https://learn.microsoft.com/dynamics365/finance/general-ledger/configure-acct-recon-agent)
-- [Expense agent](https://learn.microsoft.com/dynamics365/project-operations/expense/expense-agent-setup)
-- [Time agent](https://learn.microsoft.com/dynamics365/project-operations/time/enable-time-entry-agent)
-- [Approvals agent](https://learn.microsoft.com/dynamics365/project-operations/approvals/approvals-agent-admin-setup)
+- [Supplier Communications agent](../../../supply-chain/procurement/supplier-com-agent-setup.md)
+- [Account Reconciliation agent](../../../finance/general-ledger/configure-acct-recon-agent.md)
+- [Expense agent](/dynamics365/project-operations/expense/expense-agent-setup)
+- [Time agent](/dynamics365/project-operations/time/enable-time-entry-agent)
+- [Approvals agent](/dynamics365/project-operations/approvals/approvals-agent-admin-setup)
 
 Each agent has its own deployment and post‑deployment guidance that explains functional setup, permissions, and usage. This article focuses only on the common deployment experience.
 
