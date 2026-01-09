@@ -66,7 +66,7 @@ The following tools are available in the Dynamics 365 ERP Analytics MCP server. 
 | Tool | Description |
 |------|-------------|
 | get-bpa-dataset-schema | Retrieves the schema of dimensional models, including tables, columns, measures, and relationships from your Business performance analytics environment |
-| execute-dax-query | Executes [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview) queries against your Business performance analytics data with automatic row-level security enforcement |
+| execute-dax-query | Executes [DAX (Data Analysis Expressions)](/dax/dax-overview) queries against your Business performance analytics data with automatic row-level security enforcement |
 
 The agent uses these tools to understand your data model and generate appropriate [DAX queries](/dax/dax-queries) to answer analytical questions. Data is returned as JSON that agents can analyze and present.
 
@@ -76,7 +76,7 @@ The ERP Analytics MCP server leverages a two-tier calculation system:
 
 1. Business performance analytics pre-transforms - Business performance analytics aggregates Dynamics 365 finance and operations transactional data into optimized [dimensional models](/power-bi/guidance/star-schema). These transforms currently run twice daily (12-hour intervals).
 
-2. On-demand DAX queries - Agents generate custom calculations based on user questions by analyzing the facts, measures, and dimensional models to construct appropriate [DAX queries](dax/dax-queries).
+2. On-demand DAX queries - Agents generate custom calculations based on user questions by analyzing the facts, measures, and dimensional models to construct appropriate [DAX queries](/dax/dax-queries).
 
 This architecture enables agents to answer complex analytical questions without requiring custom API development for each scenario. The agent can dynamically construct queries for aggregations, trend analysis, comparative analysis, top/bottom performers, anomaly detection, and complex calculations.
 
