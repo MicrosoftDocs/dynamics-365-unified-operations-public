@@ -21,7 +21,7 @@ Before you begin, ensure you have:
 
 - Visual Studio Code installed with the latest updates
 - [GitHub Copilot subscription](https://github.com/features/copilot)
-- Your [Power Platform environment ID](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name)
+- Your [Power Platform environment ID](/power-platform/admin/determine-org-id-name)
 
 For complete environment and system prerequisites, see [ERP Analytics MCP Technical Details](erp-analytics-mcp-technical-details.md).
 
@@ -36,7 +36,7 @@ For complete environment and system prerequisites, see [ERP Analytics MCP Techni
    https://agent365.svc.cloud.microsoft/mcp/environments/<ENVIRONMENT_ID>/servers/msdyn_ERPAnalyticsMCPServer
    ```
 
-   Replace `<ENVIRONMENT_ID>` with your [Power Platform environment ID](https://learn.microsoft.com/en-us/power-platform/admin/determine-org-id-name).
+   Replace `<ENVIRONMENT_ID>` with your [Power Platform environment ID](/power-platform/admin/determine-org-id-name).
 
 5. Provide a **Server ID** value. For example, D365 Analytics MCP, or accept the default.
 
