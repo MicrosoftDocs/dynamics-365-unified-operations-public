@@ -18,7 +18,7 @@ ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on Marketplace](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 This article provides information about the Retail channel performance PowerBI.com solution for Dynamics AX. This PowerBI.com solution lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 

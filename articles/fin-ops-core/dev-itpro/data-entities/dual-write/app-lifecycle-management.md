@@ -18,11 +18,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-By making dual-write solution-aware, you enable basic application lifecycle management (ALM) capabilities, such as transportation and backup/restore of dual-write table maps across environments. You also enable scenarios where you can get solutions that are published by Microsoft or an independent software vendor (ISV) from AppSource.
+By making dual-write solution-aware, you enable basic application lifecycle management (ALM) capabilities, such as transportation and backup/restore of dual-write table maps across environments. You also enable scenarios where you can get solutions that are published by Microsoft or an independent software vendor (ISV) from Marketplace.
 
 ## What is a dual-write solution?
 
-A dual-write solution can contain one or more dual-write table maps. These maps can be imported into your environment (by selecting **Solutions** in Microsoft Power Apps). They can also be exported to other environments as a package. You can import Microsoft-published or ISV-published table maps from AppSource, modify them in your test environment, test them, and then, when they are ready, export them to your production environment. Additionally, you can publish your solution through AppSource, so that other people can use it.
+A dual-write solution can contain one or more dual-write table maps. These maps can be imported into your environment (by selecting **Solutions** in Microsoft Power Apps). They can also be exported to other environments as a package. You can import Microsoft-published or ISV-published table maps from Marketplace, modify them in your test environment, test them, and then, when they are ready, export them to your production environment. Additionally, you can publish your solution through Marketplace, so that other people can use it.
 
 There two types of solutions: managed and unmanaged.
 
@@ -35,7 +35,7 @@ For more information about solutions, see the [solutions overview](/powerapps/ma
 The dual-write core solution contains metadata for your table maps and must be installed in your environments.
 
 1. In Power Apps, in the left pane, select **Solutions**.
-2. Select **Open AppSource**, and search for the solution that is named **Dual Write Core**.
+2. Select **Open Marketplace**, and search for the solution that is named **Dual Write Core**.
 3. Follow the prompts to import the solution.
 
     ![Importing the dual-write core solution.](media/import-solution.png)
@@ -43,7 +43,7 @@ The dual-write core solution contains metadata for your table maps and must be i
 ## <a id="install-table-maps"></a>Install the dual-write table maps solution
 
 1. In Power Apps, in the left pane, select **Solutions**.
-2. Select **Open AppSource**, and search for the solution that is named **Dataverse Add-in for finance and operations package**.
+2. Select **Open Marketplace**, and search for the solution that is named **Dataverse Add-in for finance and operations package**.
 3. Follow the prompts to import the solution.
 4. In the finance and operations app, on the **Dual-write** page, select **Apply Solution** to apply the table maps that you downloaded and installed. After you apply the solution, you will see that the default table maps are published.
 
@@ -53,19 +53,19 @@ You've now successfully imported and applied a Microsoft-published dual-write ta
 
 ## Import table maps through a dual-write solution and apply them to your environment (New environments)
 
-This section explains how to import table maps from AppSource and apply them to your environment.
+This section explains how to import table maps from Marketplace and apply them to your environment.
 
 ![Importing and applying table maps.](media/import-apply-entity-maps.png)
 
 1. Import the dual-write core solution.
 
     1. Create a new dual-write environment (a finance and operations app environment and a Dataverse environment).
-    2. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to install the dual-write core solution from AppSource in Power Apps.
+    2. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to install the dual-write core solution from Marketplace in Power Apps.
     3. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
 2. Import the Microsoft-published or ISV-published table maps solution.
 
-    1. Follow the instructions in the [Install the dual-write table maps solution](#install-table-maps) section to download and install the Microsoft-published or ISV-published table maps from AppSource in Power Apps.
+    1. Follow the instructions in the [Install the dual-write table maps solution](#install-table-maps) section to download and install the Microsoft-published or ISV-published table maps from Marketplace in Power Apps.
     2. Verify that the table maps solution is listed under **Solutions** in Power Apps.
 
 3. Apply the dual-write table maps solution to your finance and operations app environment.
@@ -74,7 +74,7 @@ This section explains how to import table maps from AppSource and apply them to 
 
 ## <a id="update-table-maps"></a>Update table maps and export them to other environments as a solution
 
-This section explains how to export your customized table maps as a solution, use it as a backup, and move the artifacts across environments and/or publish them to AppSource.
+This section explains how to export your customized table maps as a solution, use it as a backup, and move the artifacts across environments and/or publish them to Marketplace.
 
 ![Exporting customized maps as a solution.](media/export-maps-solution.png)
 
@@ -140,7 +140,7 @@ After you run the solution checker and make sure that there are no issues, you e
 
 You've now customized your tables, added them to a new solution, and created a solution file that can be imported and applied to other environments. (This capability can be useful if you want to move table maps between test and production environments.) In a similar way, you can create a backup of all your table maps by adding them to a solution and exporting the solution as a package. That package can then be imported into to any environment to restore the table maps.
 
-For information about how to publish the package to AppSource, see [Publish your app on AppSource](/powerapps/developer/common-data-service/publish-app-appsource).
+For information about how to publish the package to Marketplace, see [Publish your app on Marketplace](/powerapps/developer/common-data-service/publish-app-appsource).
 
 ### Test your exported solution package
 
@@ -172,7 +172,7 @@ Sometimes, a solution might contain different implementations of a table map. Fo
 
 1. Import the dual-write core solution.
 
-    1. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to import the dual-write core solution from AppSource into Power Apps.
+    1. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to import the dual-write core solution from Marketplace into Power Apps.
     2. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
 2. Upgrade the table maps.

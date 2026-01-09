@@ -32,7 +32,7 @@ In Commerce version 10.0.5, the only transactions that can be edited are cash an
 
 To edit transactions in Commerce headquarters, follow these steps:
 
-1. Install the [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
+1. Install the [Microsoft Dynamics Office Add-in](https://marketplace.microsoft.com/product/office/WA104379629?tab=Overview).
 1. In Commerce headquarters, open the **Store financials** workspace. The **Transaction validation failures** tile provides a prefiltered view of the transaction page that failed one or more validation rules.
 1. Open the transaction page, select the record that failed validation, select **Office Add in**, and then select **Edit selected transaction**. An Excel file that shows the details of the selected transaction is opened. This file contains the following worksheets:
 
