@@ -116,7 +116,7 @@ Partially. You can use Microsoft Entra Conditional Access to connect the app, bu
 
 ## Can I authenticate using Microsoft Entra Guest User Access?
 
-Yes. You can add an external user as a guest in the Microsoft Entra admin center. Learn how in [Quickstart: Add a guest user and send an invitation](https://learn.microsoft.com/en-us/entra/external-id/b2b-quickstart-add-guest-users-portal).
+Yes. You can add an external user as a guest in the Microsoft Entra admin center. Learn how in [Quickstart: Add a guest user and send an invitation](/entra/external-id/b2b-quickstart-add-guest-users-portal).
 
 After sending the invitation, create a [warehouse worker account](warehouse-app-authenticate-user-based.md) in Supply Chain Management and link it to the Microsoft Entra ID guest user account. If the guest user will use the Warehouse Management mobile app, you must assign appropriate roles and permissions to the warehouse worker account.
 
