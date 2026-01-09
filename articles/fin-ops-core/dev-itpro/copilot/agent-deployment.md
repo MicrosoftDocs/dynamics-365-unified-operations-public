@@ -148,7 +148,7 @@ Once enabled, the agent is active and ready for use.
 
 ### Next steps
 
-After completing the common deployment steps, the wizard provides agent‑specific deployment guidance for how to configure business logic and bring the agent into service. You complete these steps by using [agent management](agent-mgmt.md) in your business application.
+After completing the common deployment steps, the wizard provides agent‑specific deployment guidance for how to configure business logic and bring the agent into service. You complete these steps by using [agent management](../../fin-ops/copilot/agent-mgmt.md) in your business application.
 
 ## Support and feedback
 
