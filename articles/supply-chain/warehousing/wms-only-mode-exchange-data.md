@@ -96,10 +96,10 @@ To [create a new legal entity](../../fin-ops-core/fin-ops/organization-administr
 
 You can use inbound and outbound shipment order messages to inform Supply Chain Management about which physical inventory to receive and ship. These messages include both header data and lines data.
 
-- `WHSInboundShipmentOrderMessageEntity`
-- `WHSInboundShipmentOrderLineMessageEntity`
-- `WHSOutboundShipmentOrderMessageEntity`
-- `WHSOutboundShipmentOrderLineMessageEntity`
+- `WHSInboundShipmentOrderMessageEntity` - Used to create inbound shipment order header.
+- `WHSInboundShipmentOrderLineMessageEntity`- Used to create inbound shipment order lines.
+- `WHSOutboundShipmentOrderMessageEntity` - Used to create outbound shipment order header.
+- `WHSOutboundShipmentOrderLineMessageEntity` - Used to create outbound shipment order lines.
 
 > [!NOTE]
 > - You can update an inbound or outbound shipment order by submitting a message that includes a matching order number and source system in the header data.
@@ -127,23 +127,23 @@ Some business events do not include all journal details directly. In these cases
 
 | Business event ID | Description | Data entities |
 |---|---| --- |
-| `WHSSourceSystemProductMessageChangedStatusBusinessEvent` | Source system product message changed status | / |
+| `WHSSourceSystemProductMessageChangedStatusBusinessEvent` | Source system product message changed status | |
 | `InventCountingJournalPostedBusinessEvent` | Counting journal posted | `InventInventoryCountingJournalHeaderEntity`<br>`InventInventoryCountingJournalHeaderLineEntity`<br>`InventInventoryCountingJournalNameEntity` |
 | `WHSSourceSystemInventoryOnhandReportBusinessEvent` | Source system on-hand inventory report created | `WHSInventoryOnhandReportEntity`<br>`WHSSourceSystemInventoryOnhandReportLineEntity` |
 | `WHSInventoryUpdateLogBusinessEvent` | Warehouse inventory update log updated | `WHSSourceSystemItemInventoryUpdateLogEntity` |
 | `WHSOutboundNotificationCreatedBusinessEvent` | Outbound warehouse notification created | `WHSOutboundNotificationEntity`<br>`WHSOutboundShipmentNotificationEntity`<br>`WHSOutboundShipmentLineNotificationEntity` |
-| `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Shipment order message status updated | / |
+| `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Shipment order message status updated | |
 | `WHSShipmentPackingSlipJournalModifiedBusinessEvent` | Shipment packing slip updated | `WHSShipmentPackingSlipJournalHeaderEntity`<br>`WHSShipmentPackingSlipJournalLineEntity`<br>`WHSShipmentPackingSlipTransactionInventoryDimensionEntity` |
-| `WHSShipmentPackingSlipJournalFailedBusinessEvent` | Shipment packing slips update failed | / |
+| `WHSShipmentPackingSlipJournalFailedBusinessEvent` | Shipment packing slips update failed | |
 | `WHSShipmentReceivingJournalModifiedBusinessEvent` | Shipment receipts updated | `WHSShipmentReceiptJournalHeaderEntity`<br>`WHSShipmentReceiptJournalLineEntity`<br>`WHSShipmentReceiptTransactionInventoryDimensionEntity` (Supply Chain Management version 10.0.45 and earlier)<br>`WHSShipmentReceiptTransactionInventoryDimensionV2Entity` (Supply Chain Management version 10.0.46 and later) |
-| `WHSShipmentReceivingJournalFailedBusinessEvent` | Shipment receipts update failed | / |
-| `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failed | / |
-| `WhsWaveExecutedBusinessEvent` | Wave executed | / |
-| `WHSQualityOrderValidatedBusinessEvent` | Quality order validated | / |
+| `WHSShipmentReceivingJournalFailedBusinessEvent` | Shipment receipts update failed | |
+| `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failed | |
+| `WhsWaveExecutedBusinessEvent` | Wave executed | |
+| `WHSQualityOrderValidatedBusinessEvent` | Quality order validated | |
 | `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) | `WHSEWInboundShipmentOrderRequestEntity`, `WHSEWInboundShipmentOrderLineRequestEntity`<br>`WHSEWInboundShipmentOrderRequestStatusEntity` |
 | `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) | `WHSEWOutboundShipmentOrderRequestEntity`<br>`WHSEWOutboundShipmentOrderLineRequestEntity`<br>`WHSEWOutboundShipmentOrderRequestStatusEntity` |
-| `WHSEWInboundShipmentOrderUpdateChangedStatusBusinessEvent` | Inbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another warehouse management system (WMS)) | / |
-| `WHSEWOutboundShipmentOrderUpdateChangedStatusBusinessEvent` | Outbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another WMS) | / |
+| `WHSEWInboundShipmentOrderUpdateChangedStatusBusinessEvent` | Inbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another warehouse management system (WMS)) | |
+| `WHSEWOutboundShipmentOrderUpdateChangedStatusBusinessEvent` | Outbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another WMS) | |
 
 At a minimum, we recommend that you use the following business events for integration with an external ERP system:
 
@@ -158,8 +158,7 @@ When you integrate an ERP system and a warehouse management system, it's essenti
 
 ## Warehouse management only mode with external shared warehouses
 
-An integration between Microsoft Dynamics 365 Supply Chain Management system and the another warehouse management system (WMS) can be set up. In order to do that, you must use external warehouse shipment order requests and updates to communicate.
-Learn more in [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse).
+You can set up an integration between Microsoft Dynamics 365 Supply Chain Management and an external warehouse management system (WMS). To enable this integration, use external warehouse shipment order requests and updates for communication between the systems. For more information, see [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse).
 
 ### Inbound and outbound shipment order requests
 
@@ -168,8 +167,8 @@ When an order is released to the warehouse, a business event is created with a r
 
 | Business event ID | Description | Data entities |
 |---|---| --- |
-| `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created | `WHSEWInboundShipmentOrderRequestEntity`, `WHSEWInboundShipmentOrderLineRequestEntity`<br>`WHSEWInboundShipmentOrderRequestStatusEntity` |
-| `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created | `WHSEWOutboundShipmentOrderRequestEntity`, `WHSEWOutboundShipmentOrderLineRequestEntity`<br>`WHSEWOutboundShipmentOrderRequestStatusEntity` |
+| `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created | `WHSEWInboundShipmentOrderRequestEntity`<br>`WHSEWInboundShipmentOrderLineRequestEntity`<br>`WHSEWInboundShipmentOrderRequestStatusEntity` |
+| `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created | `WHSEWOutboundShipmentOrderRequestEntity`<br>`WHSEWOutboundShipmentOrderLineRequestEntity`<br>`WHSEWOutboundShipmentOrderRequestStatusEntity` |
 
 ### Inbound and outbound shipment order updates
 
