@@ -48,7 +48,7 @@ When you use username/password authentication, each human worker must enter the 
 
 ## <a name="create-service"></a>Manually create an application registration in Microsoft Entra ID
 
-The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
+The Warehouse Management mobile app uses a Microsoft Entra ID application registration to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
 
 > [!IMPORTANT]
 > You can always use a manually created application registration to authenticate and connect, but the global application is easier to use if it supports your scenarios. If you're running one of the following scenarios, you must use a manually created application registration instead of the global one.
