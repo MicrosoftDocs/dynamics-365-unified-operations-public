@@ -18,7 +18,6 @@ This article provides step-by-step instructions for configuring and using the Dy
 ## Prerequisites
 
 Before you begin, ensure you have:
-
 - Visual Studio Code installed with the latest updates
 - [GitHub Copilot subscription](https://github.com/features/copilot)
 - Your [Power Platform environment ID](/power-platform/admin/determine-org-id-name)
@@ -50,10 +49,10 @@ For complete environment and system prerequisites, see [ERP Analytics MCP Techni
 
 For more information on MCP support in Visual Studio Code, see [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
 
-## Configure the agent chat
+### Configure the agent chat
 
 1. In Visual Studio Code, run command (Ctrl + Shift + P) and select **Chat: Open Chat**.
-2. In the chat pane select **Agent** from the mode selection list.
+2. In the chat pane, select **Agent** from the mode selection list.
 3. In the **Model selection** list, select your preferred model (Claude Sonnet 4+ recommended).
 4. (Optional) Disable all VSCode built-in tools so you're only using the tools from the ERP Analytics MCP server:
    - Select the **Tools** menu.
@@ -62,7 +61,7 @@ For more information on MCP support in Visual Studio Code, see [Use MCP servers 
 
 5. Begin prompting in the chat.
 
-## Using natural language queries
+### Using natural language queries
 
 The MCP server supports natural language queries for analytical operations on your Business performance analytics data. This includes:
 - Aggregations and summaries - What were total sales by region last quarter?
@@ -77,7 +76,6 @@ The agent uses the schema tool to understand your data model, then generate appr
 ### Structured prompts for complex analysis
 
 For more complex analytical scenarios, you can provide structured prompts that give the agent more context and guidance. This is particularly useful when:
-
 - You need specific calculations or business logic applied.
 - You want to ensure specific data granularity (daily vs monthly).
 - You need to combine multiple analytical perspectives.
@@ -105,7 +103,7 @@ Format results as a table
 ### Tips for effective prompts
  - Be specific about time periods - last quarter vs Q4 2024 vs October through December 2024.
  - Specify granularity when needed - Show daily trends vs monthly aggregates.
- - Request specific visualizations - Create a bar chart showing... or Generate a trend line for...
+ - Request specific visualizations - Create a bar chart showing... or Generate a trend line for.
  - Iterate based on results - Start with broad questions, then refine based on initial insights.
 
 ## Troubleshooting
@@ -131,18 +129,12 @@ If the server connects but shows 0 tools:
 - Contact your administrator to verify environment configuration.
 
 ### Query timeouts
-
 If queries consistently timeout:
 - Reduce the time range in your query.
 - Request aggregated data rather than detailed transactions.
 - Break complex analyses into multiple simpler queries.
 - Consider whether your data volume requires optimization.
 
-## Next steps
-
-- [Back to overview](erp-analytics-mcp-overview.md)
-- [Review technical details and limitations](erp-analytics-mcp-technical-details.md)
-- [See frequently asked questions](erp-analytics-mcp-faq.md)
 
 ## See also
 
