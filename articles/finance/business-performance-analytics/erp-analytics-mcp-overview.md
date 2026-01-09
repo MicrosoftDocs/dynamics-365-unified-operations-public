@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 ERP Analytics MCP for finance and operations apps (preview)
 description: Learn about the Dynamics 365 ERP Analytics Model Context Protocol server that enables AI agents to access and analyze Business Performance Analytics data through natural language.
-author: jinniew
-ms.author: jiwo
+author: wei-msft
+ms.author: zhuw
 ms.topic: overview
 ms.date: 01/09/2026
 ms.custom:
