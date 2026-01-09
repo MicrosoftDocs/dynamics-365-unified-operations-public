@@ -52,7 +52,7 @@ The Warehouse Management mobile app uses a Microsoft Entra ID application to aut
 
 We recommend that you use the global application, because it's easier to set up, use, and maintain. In this case, you don't need to register any Microsoft Entra ID applications in Azure. All your devices can connect through the global application.
 
-If you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application in Microsoft Entra ID as described in [Register an application in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). You still need to create just one Microsoft Entra ID app registration. All your devices can then connect through it.
+If you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application in Microsoft Entra ID as described in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). You still need to create just one Microsoft Entra ID app registration. All your devices can then connect through it.
 
 For information about how to configure your devices to connect through either of these methods, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
@@ -112,7 +112,7 @@ Yes. On-premises installations use Active Directory Federation Service (AD&nbsp;
 
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
-Partially. You can use Microsoft Entra Conditional Access to connect the app, but Conditional Access provides less detailed access control and oversight than Microsoft Entra ID does. Learn more in the [Microsoft Entra Conditional Access documentation]( /entra/identity/conditional-access/).
+Partially. You can use Microsoft Entra Conditional Access to connect the app, but Conditional Access provides less detailed access control and oversight than Microsoft Entra ID does. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md) and the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access/).
 
 ## Can I authenticate using Microsoft Entra Guest User Access?
 
