@@ -46,12 +46,17 @@ Device code authentication simplifies the authentication process, because users 
 
 When you use username/password authentication, each human worker must enter the Microsoft Entra ID username and password associated either with the device or with themselves (depending on the [authentication scenario](#scenarios) you're using). They might also need to enter a mobile device user account ID and password, depending on their [warehouse worker record setup](mobile-device-work-users.md). This authentication method supports [single sign-on](#sso) (SSO), which also enhances the convenience of mobile mass deployment (MDM).
 
-## <a name="create-service"></a>Register an application in Microsoft Entra ID (optional)
+## <a name="create-service"></a>Manually create an application registration in Microsoft Entra ID
 
-The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
+The Warehouse Management mobile app uses a Microsoft Entra ID application registration to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
 
 > [!IMPORTANT]
-> In most situations, we recommend that you use the global Microsoft Entra ID application, because it's easier to set up, use, and maintain. (Learn more in [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).) In that case, you can skip this section. However, if you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application as described here.
+> You can always use a manually created application registration to authenticate and connect, but the global application is easier to use if it supports your scenarios. If you're running one of the following scenarios, you must use a manually created application registration instead of the global one.
+>
+>- If you use [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md) to enforce access controls based on conditions such as user risk, device status, app sensitivity, location, and so on, then you must use a manually created application registration. Be sure to include the new signature hash for Android devices (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`), as described later in this section.
+>- If you have specific requirements that the global application doesn't meet (for example, because you're using certain on-premises environment configurations), then you must use a manually created application registration.
+>
+> If you're able to use the global application, then you can skip this section. For more information about how to use the global application, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md). If you prefer or require a manual application registration, continue with this section.
 
 The following procedure shows one way to register an application in Microsoft Entra ID. For detailed information and alternatives, use the links after the procedure.
 
