@@ -99,5 +99,5 @@ Prompt design
 - [Business performance analytics overview](business-performance-analytics-home-page.md)
 - [Business performance analytics installation guide](install-bpa.md)
 - [Business performance analytics reports and data model](reports-in-bpa.md)
-- [Row-level security in Power BI](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls)
-- [DAX queries reference](https://learn.microsoft.com/en-us/dax/dax-queries)
+- [Row-level security in Power BI](/power-bi/enterprise/service-admin-rls)
+- [DAX queries reference](/dax/dax-queries)
