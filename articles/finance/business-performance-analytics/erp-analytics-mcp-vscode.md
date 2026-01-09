@@ -48,7 +48,7 @@ For complete environment and system prerequisites, see [ERP Analytics MCP Techni
 
 8. When the server is started, you will need to authenticate to the server using the credentials for your Power Platform environment.
 
-For more information on MCP support in Visual Studio Code, see [Use MCP servers in VS Code](/docs/copilot/customization/mcp-servers).
+For more information on MCP support in Visual Studio Code, see [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
 
 ## Configure the agent chat
 
