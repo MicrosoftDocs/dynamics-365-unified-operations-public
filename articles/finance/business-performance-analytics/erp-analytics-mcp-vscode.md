@@ -25,7 +25,7 @@ Before you begin, ensure you have:
 
 For complete environment and system prerequisites, see [ERP Analytics MCP Technical Details](erp-analytics-mcp-technical-details.md).
 
-## Configure the MCP server
+## Configure the MCP server 
 
 1. Apply the latest updates for Visual Studio Code.
 2. In Visual Studio Code, run command (Ctrl + Shift + P), and select **MCP: Add Server…**
