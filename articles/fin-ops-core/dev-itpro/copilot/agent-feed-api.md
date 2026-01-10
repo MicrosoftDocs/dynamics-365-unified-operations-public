@@ -56,22 +56,22 @@ These APIs write and update feed data into FnO tables through an orchestrated X+
 
 #### Endpoint
 
-POST {organizationUrl}/api/data/v9.2/msdyn_CreateAgentFeedItemCustomApi
+POST {organizationUrl}/api/data/v9.2/**msdyn_CreateAgentFeedItemCustomApi**
 
 Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see below)
 
 #### Required parameters
 
-| Parameter        | Type     | Description                                              | Example                  |
-| ---------------- | -------- | -------------------------------------------------------- | -------------------------|
-| **title**        | String   | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.| “Supplier Invoice Overdue” |
-| **subtitle**     | String   | Secondary contextual line, providing immediate context to the title (phase, action, or focus)	| “Invoice PD 1042 is past due by 5 days.” |
-| **correlationid**| String   | GUID for idempotency and tracing across systems          |“7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7”|
-| **summary**      | String   | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences.|                               |
-| **status**       | String   | Status is the current lifecycle state of the feed item.  |Allowed values: not started, in progress, completed, canceled|
-| **permissionscheck**| String   | a comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.|“PURCHTABLE,VENDTABLE,IMMERSIVEHOME”|
-| **cardprovider** | Text     | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.|“DefaultAgentFeedCardProvider”|
-| **aicontext**    | JSON     | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context.|{"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"}|
+| Parameter            | Type   | Description                                                                                                                                                      | Example                                                                                                                                                                                                                                                                                             |
+|----------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **title**            | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.                                             | "Supplier Invoice Overdue"                                                                                                                                                                                                                                                                          |
+| **subtitle**         | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)                                                                   | "Invoice PD 1042 is past due by 5 days."                                                                                                                                                                                                                                                            |
+| **correlationid**    | String | GUID for idempotency and tracing across systems                                                                                                                 | "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7"                                                                                                                                                                                                                                                              |
+| **summary**          | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences.                        |                                                                                                                                                                                                                                                                                                     |
+| **status**           | String | Status is the current lifecycle state of the feed item.                                                                                                         | Allowed values: not started, in progress, completed, canceled                                                                                                                                                                                                                                       |
+| **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.                              | "PURCHTABLE,VENDTABLE,IMMERSIVEHOME"                                                                                                                                                                                                                                                                |
+| **cardprovider**     | Text   | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.                          | "DefaultAgentFeedCardProvider"                                                                                                                                                                                                                                                                      |
+| **aicontext**        | JSON   | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context. | {"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"} |
 
 #### Optional parameters
 
@@ -112,3 +112,13 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 "msdyn_AgentFeedCreateFeedItemCustomApi_correlationid": "42d72a99-9786-4c28-8ab5-66a1451d27a5"
 }
 ```
+
+## Upate feed item
+
+#### Endpoint
+
+POST {organizationUrl}/api/data/v9.2/**msdyn_UpdateAgentFeedItemCustomApi**
+
+Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see below)
+
+#### Required parameters
