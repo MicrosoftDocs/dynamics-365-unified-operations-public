@@ -19,7 +19,7 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This PowerBI.com solution has been deprecated as documented in [Removed or deprecated features for finance and operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> This PowerBI.com solution has been deprecated as documented in [Removed or deprecated features for finance and operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-marketplace).
 
 This article describes the **Financial performance** PowerBI.com solution. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the solution.
 
