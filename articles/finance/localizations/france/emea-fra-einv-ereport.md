@@ -173,7 +173,7 @@ To configure the *Système d’identification du répertoire des établissements
 
 ### <a id="VAT"></a>Set up VAT number
 
-Optinally, you can configure the Tax exempt number, follow these steps.
+Optinally, to configure the Tax exempt number, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -182,9 +182,6 @@ Optinally, you can configure the Tax exempt number, follow these steps.
 1. Create a registration category.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **VAT**.
-
-> [!NOTE]
-> If the registration number with the **VAT** registration category is not defined then the value from the **Organization administration** \> **Organizations** \> **Legal entities** \> **Foreign trade and statistics** \> **INTRASTAT** \> **VAT exempt number export** will be used.
 
 ## Set up address structure
 
@@ -210,8 +207,10 @@ Add the registration numbers.
 1. On the Action Pane, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add**, set **Registration type** to the [SIREN](#SIREN) type you created earlier, and enter the SIREN numner in the **Registration number** column.
 1. Select **Add**, set **Registration type** to the [SIRET](#SIRET) type you created earlier, and enter the SIRET numner in the **Registration number** column.
+1. Define the Tax exempt ([VAT](#VAT)) number whatever way is used in your company.
 
-    The system puts the **SIRET** number in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyIdentification\\cbc:ID** element and the **SIREN** number in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the generated electronic invoice XML file. These values act as the seller's identification during submission.
+> [!NOTE]
+> If the registration number with the **VAT** registration category is not defined then the value from the **Organization administration** \> **Organizations** \> **Legal entities** \> **Foreign trade and statistics** \> **INTRASTAT** \> **VAT exempt number export** will be used.
 
 ## Configure customer data
 
@@ -230,13 +229,13 @@ To enter the registration numbers, follow these steps.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
-1. In the **Registration type** field, select the [Unique Entity Number (UEN)](#UEN) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid BRN registration number for the selected customer.
+1. In the **Registration type** field, select the [SIREN](#SIREN) registration type that you created earlier.
+1. Select **Add**, and in the **Registration type** field, select the [SIRET](#SIRET) registration type that you created earlier.
 1. Select **Add** to create another registration ID, if necessary.
-1. In the **Registration type** field, select the [Goods and Services Tax (GST)](#GST) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid SST registration number for the selected customer.
+1. In the **Registration number** field, enter a valid [VAT](#VAT) number for the selected customer.
 
-   The **UEN** number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element and the **GST** number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
+> [!NOTE]
+> If the registration number with the **VAT** registration category is not defined then the value from the **Accounts receivable** \> **Customers** \> **All customers** \> **Invoice and delivery** \> **SALES TAX** \> **Tax exempt number** will be used.
 
 > [!NOTE]
 > For both, Seller and Buyer identification, the schema **0195** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there's a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
