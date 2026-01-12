@@ -343,8 +343,8 @@ To import a package of data entities that includes a predefined electronic messa
 
     Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synced.
 
-1. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh is complete. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-itpro/data-entities/data-entities.md#entity-list-refresh).
-1. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+1. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh is complete. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-itpro/data-entities/data-entities.md#entity-list-refresh).
+1. Validate that the source data and target data are correctly mapped.
 1. Before you use the data entities for the first time to import the data, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch.
 1. Save the mapping.
 1. Repeat steps 3 through 6 for each data entity in the package.
