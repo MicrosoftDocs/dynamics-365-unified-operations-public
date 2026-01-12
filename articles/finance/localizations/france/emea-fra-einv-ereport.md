@@ -171,17 +171,28 @@ To configure the *Système d’identification du répertoire des établissements
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **SIRET**.
 
+### <a id="VAT"></a>Set up VAT number
+
+Optinally, you can configure the Tax exempt number, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+1. Create a registration type.
+1. In the **Country/region** field, select **FRA - France**.
+1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+1. Create a registration category.
+1. In the **Registration types** field, select the registration type that you created in step 2.
+1. In the **Registration categories** field, select **VAT**.
+
+> [!NOTE]
+> If the registration number with the **VAT** registration category is not defined then the value from the **Organization administration** \> **Organizations** \> **Legal entities** \> **Foreign trade and statistics** \> **INTRASTAT** \> **VAT exempt number export** will be used.
+
 ## Set up address structure
 
 Set up the postal address structure.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
-1. Ensure the following required elements are configured.
-
-    - Country code
-    - Postal code
-    - Street
-
+1. Ensure that at least the **Country code** element is configured.
+   
 ## Configure legal entity data
 
 ### Enter the address
@@ -197,10 +208,10 @@ Add the registration numbers.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the Action Pane, select **Registration IDs**.
-1. On the **Registration ID** FastTab, select **Add**, set **Registration type** to the [Unique Entity Number (UEN)](#UEN) type you created earlier, and enter the UEN value in **Registration number**.
-1. Select **Add**, set **Registration type** to the [Goods and Services Tax (GST)](#GST) type you created earlier, and enter the GST value in **Registration number**.
+1. On the **Registration ID** FastTab, select **Add**, set **Registration type** to the [SIREN](#SIREN) type you created earlier, and enter the SIREN numner in the **Registration number** column.
+1. Select **Add**, set **Registration type** to the [SIRET](#SIRET) type you created earlier, and enter the SIRET numner in the **Registration number** column.
 
-    The system puts the **UEN** number in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element and the **GST** number in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the generated electronic invoice XML file. These values act as the seller's identification during submission.
+    The system puts the **SIRET** number in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyIdentification\\cbc:ID** element and the **SIREN** number in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the generated electronic invoice XML file. These values act as the seller's identification during submission.
 
 ## Configure customer data
 
