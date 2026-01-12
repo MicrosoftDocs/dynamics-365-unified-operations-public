@@ -278,6 +278,11 @@ To enter the Buyer schema codes, follow these steps.
 > [!NOTE]
 > For both, Seller and Buyer identification, the schema **9957** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). 
 
+
+## Configure mandatory notes
+
+[Advanced notes management](../italy/emea-ita-exil-structured-notes.md)
+
 ## Set up units of measure
 
 Set up units of measure.
