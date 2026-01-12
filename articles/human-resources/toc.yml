@@ -527,39 +527,39 @@ items:
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
-  - name: Recruiting
-    items:
-    - name: Overview
-      href: ../human-resources/hr-recruit-overview.md
-    - name: What's new or changed in the Human Resources recruiting app
-      href: ../human-resources/hr-recruit-whats-new.md
-    - name: Recruiting projects
+    - name: Recruiting
       items:
-      - name: Manage recruiting project process
-        href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-      - name: Set up recruitment projects
-        href: hr-personnel-develop-open-job-requisition.md
-      - name: Manually enter applicant and application data
-        href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-      - name: Develop and open job requisitions
-        href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-      - name: Set up positions
-        href: ../human-resources/hr-personnel-set-up-positions.md
-      - name: Hire candidates through recruitment
-        href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-      - name: Hire an existing employee through recruitment
-        href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-      - name: Identify and deploy candidate selection tools
-        href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
-      - name: Mass hire projects
-        href: ../human-resources/hr-personnel-mass-hire-projects.md
-      - name: Create mass hire projects
-        href: ../human-resources/hr-personnel-create-mass-hire-project.md
-    - name: Recruiting requests 
-      items:
-      - name: Recruit job candidates
-        href: hr-personnel-recruit.md  
-    - name: Human Resources recruiting app 
+      - name: Overview
+        href: ../human-resources/hr-recruit-overview.md 
+      - name: What's new or changed in the Human Resources recruiting app
+        href: ../human-resources/hr-recruit-whats-new.md
+      - name: Recruiting projects
+        items:
+        - name: Manage recruiting project process
+          href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+        - name: Set up recruitment projects
+          href: hr-personnel-develop-open-job-requisition.md
+        - name: Manually enter applicant and application data
+          href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+        - name: Develop and open job requisitions
+          href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+        - name: Set up positions
+          href: ../human-resources/hr-personnel-set-up-positions.md
+        - name: Hire candidates through recruitment
+          href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+        - name: Hire an existing employee through recruitment
+          href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+        - name: Identify and deploy candidate selection tools
+          href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
+        - name: Mass hire projects
+          href: ../human-resources/hr-personnel-mass-hire-projects.md
+        - name: Create mass hire projects
+          href: ../human-resources/hr-personnel-create-mass-hire-project.md
+      - name: Recruiting requests 
+        items:
+        - name: Recruit job candidates
+          href: hr-personnel-recruit.md  
+   - name: Human Resources recruiting app 
       items:
       - name: Configure the Human Resources recruiting app
         items:
