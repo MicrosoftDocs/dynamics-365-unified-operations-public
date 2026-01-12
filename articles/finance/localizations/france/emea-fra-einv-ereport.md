@@ -240,27 +240,27 @@ To enter the registration numbers, follow these steps.
 > [!NOTE]
 > For both, Seller and Buyer identification, the schema **0195** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there's a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
 
-## Configure identification schemas
+## Configure electronic address
 
-Follow these steps only if you need to redefine the default identification schemas for sellers or buyers.
+Follow these steps electronic addresses for sellers or buyers that will be *primarily* used as **EndpointIDs** for documents routing.
 
 ### Configure electronic document properties
 
 Set up electronic document properties.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
-1. In the **Type** field, enter **CompanyEndpointType**. Enter the value exactly as shown. It's used for the **Seller** identification schema definition.
+1. In the **Type** field, enter **SellerElectronicAddress**. Enter the value exactly as shown. It's used for the **Seller** identification schema definition.
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Legal entities**.
 1. Save your changes and return to the **Electronic document property types** page.
 1. Select **New** to create another electronic document property type.
-1. In the **Type** field, enter **CustomerEndpointType**. Enter the value exactly as shown. It's used for the **Buyer** identification schema definition.
+1. In the **Type** field, enter **BuyerElectronicAddress**. Enter the value exactly as shown. It's used for the **Buyer** identification schema definition.
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Customers**.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-    :::image type="content" source="../belgium/emea-bel-einoices-schemas.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
+    :::image type="content" source="emea-fra-einoices-e-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
 
 ### Enter the seller schema code
 
