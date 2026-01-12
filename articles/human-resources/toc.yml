@@ -528,75 +528,75 @@ items:
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
   - name: Recruiting
+    items:
+    - name: Overview
+      href: ../human-resources/hr-recruit-overview.md
+    - name: What's new or changed in the Human Resources recruiting app
+      href: ../human-resources/hr-recruit-whats-new.md
+    - name: Recruiting projects
       items:
-      - name: Overview
-        href: ../human-resources/hr-recruit-overview.md
-      - name: What's new or changed in the Human Resources recruiting app
-        href: ../human-resources/hr-recruit-whats-new.md
-      - name: Recruiting projects
+      - name: Manage recruiting project process
+        href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+      - name: Set up recruitment projects
+        href: hr-personnel-develop-open-job-requisition.md
+      - name: Manually enter applicant and application data
+        href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+      - name: Develop and open job requisitions
+        href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+      - name: Set up positions
+        href: ../human-resources/hr-personnel-set-up-positions.md
+      - name: Hire candidates through recruitment
+        href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+      - name: Hire an existing employee through recruitment
+        href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+      - name: Identify and deploy candidate selection tools
+        href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
+      - name: Mass hire projects
+        href: ../human-resources/hr-personnel-mass-hire-projects.md
+      - name: Create mass hire projects
+        href: ../human-resources/hr-personnel-create-mass-hire-project.md
+    - name: Recruiting requests 
+      items:
+      - name: Recruit job candidates
+        href: hr-personnel-recruit.md  
+    - name: Human Resources recruiting app 
+      items:
+      - name: Configure the Human Resources recruiting app
         items:
-        - name: Manage recruiting project process
-          href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-        - name: Set up recruitment projects
-          href: hr-personnel-develop-open-job-requisition.md
-        - name: Manually enter applicant and application data
-          href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-        - name: Develop and open job requisitions
-          href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-        - name: Set up positions
-          href: ../human-resources/hr-personnel-set-up-positions.md
-        - name: Hire candidates through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-        - name: Hire an existing employee through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-        - name: Identify and deploy candidate selection tools
-          href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md   
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md
-        - name: Create mass hire projects
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md
-      - name: Recruiting requests 
+        - name: Set up the HR recruiting app 
+          href: hr-recruit-setup.md 
+        - name: Onboard users to use the HR recruiting app 
+          href: hr-recruit-onboard.md 
+        - name: Configuration in the HR recruiting app   
+          href: hr-recruit-configuration.md
+        - name: License requirements in the HR recruiting app
+          href: recruit-license.md
+        - name: Set up the careers site in the HR recruiting app
+          href: hr-recruit-career.md 
+        - name: Known issues and limitations of the HR recruiting app
+          href: hr-recruit-known.md
+      - name: Use the Human Resources recruiting app
+        items: 
+        - name: Use the dashboard in the HR recruiting app 
+          href: hr-recruit-dashboard.md 
+        - name: Set up job ads in the HR recruiting app
+          href: hr-recruit-job-ad.md
+        - name: Use the careers site in the HR recruiting app
+          href: hr-recruit-career-site.md 
+        - name: Set up prospects in the HR recruiting app
+          href: hr-recruit-prospect.md 
+        - name: Applicants in HR recruiting app 
+          href: hr-recruit-applicant.md 
+        - name: Set up panel members in the HR recruiting app            
+          href: hr-recruit-panel.md
+      - name: Schedule interviews
         items:
-        - name: Recruit job candidates
-          href: hr-personnel-recruit.md  
-      - name: Human Resources recruiting app 
+        - name: Set up interview schedules
+          href: hr-interview-schedule.md
+      - name: Upload resumes (preview)
         items:
-        - name: Configure the Human Resources recruiting app
-          items:
-          - name: Set up the HR recruiting app 
-            href: hr-recruit-setup.md 
-          - name: Onboard users to use the HR recruiting app 
-            href: hr-recruit-onboard.md 
-          - name: Configuration in the HR recruiting app   
-            href: hr-recruit-configuration.md
-          - name: License requirements in the HR recruiting app
-            href: recruit-license.md
-          - name: Set up the careers site in the HR recruiting app
-            href: hr-recruit-career.md 
-          - name: Known issues and limitations of the HR recruiting app
-            href: hr-recruit-known.md
-        - name: Use the Human Resources recruiting app
-          items: 
-          - name: Use the dashboard in the HR recruiting app 
-            href: hr-recruit-dashboard.md 
-          - name: Set up job ads in the HR recruiting app
-            href: hr-recruit-job-ad.md
-          - name: Use the careers site in the HR recruiting app
-            href: hr-recruit-career-site.md 
-          - name: Set up prospects in the HR recruiting app
-            href: hr-recruit-prospect.md 
-          - name: Applicants in HR recruiting app 
-            href: hr-recruit-applicant.md 
-          - name: Set up panel members in the HR recruiting app            
-            href: hr-recruit-panel.md
-        - name: Schedule interviews
-          items:
-          - name: Set up interview schedules
-            href: hr-interview-schedule.md
-        - name: Upload resumes (preview)
-          items:
-          - name: Upload resumes
-            href: bulk-resume-upload.md
+        - name: Upload resumes
+          href: bulk-resume-upload.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
