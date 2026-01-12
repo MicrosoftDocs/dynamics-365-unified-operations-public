@@ -253,18 +253,17 @@ In this release, BaseRank uses a temporary deterministic mapping:
 - Dataverse security roles control access to Virtual Entities 
 - No plugin steps are registered directly on Virtual Entities by design
 
-
 ## Custom API documentation
 
 ### Create feed item
 
-#### Endpoint
+#### Endpoint - create feed item
 
 POST {organizationUrl}/api/data/v9.2/**msdyn_CreateAgentFeedItemCustomApi**
 
 Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see below)
 
-#### Required parameters
+#### Required parameters - create feed item
 
 | Parameter            | Type   | Description                                                    |  Example                                                                                        |
 |----------------------|--------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -273,18 +272,18 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 | **correlationid**    | String | GUID for idempotency and tracing across systems                | "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7"                                                          |
 | **summary**          | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences.|                        |
 | **status**           | String | Status is the current lifecycle state of the feed item.        | Allowed values: not started, in progress, completed, canceled                                   |
-| **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.| "PURCHTABLE,VENDTABLE,IMMERSIVEHOME"|
+| **permissions**      | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.| "PURCHTABLE,VENDTABLE,IMMERSIVEHOME"|
 | **cardprovider**     | Text   | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.| "DefaultAgentFeedCardProvider"|
 | **aicontext**        | JSON   | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context. | {"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"} |
 
-#### Optional parameters
+#### Optional parameters - create feed item
 
 | Parameter        | Type     | Description                                                      | Example                                                                                         |
 | ---------------- | -------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | **duedate**      | DateTime | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Leave blank if not time-bound. | “2026-01-12”                     |
 | **fnorecord**    | String   | Allowing navigation, a JSON array referencing Finance and Operations entities. | [ ```json{"RefRecId":5637144576,"RefTableId":"VendInvoiceTable"},{"RefRecId":5637144588,"RefTableId":"PurchTable"}```] |
 
-#### Example parameter payload
+#### Example parameter payload - create feed item
 
 ```json
 {
@@ -301,7 +300,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 }
 ```
 
-#### Output
+#### Output - create feed item
 
 | Parameter        | Type            | Description                                               |
 | ---------------- | --------------- | --------------------------------------------------------- |
@@ -312,17 +311,93 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 
 ```json
 {
-"msdyn_AgentFeedCreateFeedItemCustomApi_feeditemrecid": 1342198406,
-"msdyn_AgentFeedCreateFeedItemCustomApi_correlationid": "42d72a99-9786-4c28-8ab5-66a1451d27a5"
+  "@odata.context": "[environment URL]/api/data/v9.2/$metadata#Microsoft.Dynamics.CRM.msdyn_AgentFeedCreateFeedItemCustomApiResponse",
+  "msdyn_AgentFeedCreateFeedItemCustomApi_feeditemrecid": 1342198406,
+  "msdyn_AgentFeedCreateFeedItemCustomApi_correlationid": "42d72a99-9786-4c28-8ab5-66a1451d27a5"
 }
 ```
 
 ### Update feed item
 
-#### Endpoint
+#### Endpoint - update feed item
 
 POST {organizationUrl}/api/data/v9.2/**msdyn_UpdateAgentFeedItemCustomApi**
 
 Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see below)
 
-#### Required parameters
+#### Required parameters - update feed item
+
+| Parameter        | Type            | Description                                               |
+| ---------------- | --------------- | --------------------------------------------------------- |
+| **feeditemrecid**| RecId / Decimal | Identifier for feed item                                  |
+
+#### Optional parameters - update feed item
+
+| Parameter            | Type     |
+|----------------------|----------|
+| **title**            | String   |
+| **subtitle**         | String   |
+| **summary**          | String   |
+| **status**           | String   |
+| **permissions**      | String   |
+| **duedate**          | DateTime |
+| **aicontext**        | String   |
+
+#### Example parameter payload - update feed item
+
+```json
+{
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_feeditemrecid": "5637170826",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_title": "HkH Quarterly Budget Review",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_subtitle": "HkH Review and finalize budget allocations",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_status": "Completed",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_baserank": 0.72,
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_permissionscheck": "DIMENSIONFOCUSTABLE",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_duedate": "2026-01-31",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_aicontext": "{'AgentSchema': 'msdyn_AgentFeedUpdateFeedItemCustomApi_expenseagent', 'RecordType': 'Purchase Order', 'Priority': 'High', 'Category': 'Procurement', 'BusinessImpact': 'Payment Blocked', 'SourceApp': 'Excel', 'WorkspaceLink': 'aka.ms/workspace1'}",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_cardprovider": "AgentFeedDefaultCard"
+}
+```
+
+#### Output - update feed item
+
+| Parameter        | Type            | Description                                               |
+| ---------------- | --------------- | --------------------------------------------------------- |
+| **feeditemrecid**| RecId / Decimal | Identifier for feed item                                  |
+| **correlationid**| String          | GUID for idempotency and tracing across systems           |
+
+#### Example Output Payload
+
+```json
+{
+  "@odata.context": "[environment URL]/api/data/v9.2/$metadata#Microsoft.Dynamics.CRM.msdyn_AgentFeedUpdateFeedItemCustomApiResponse",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_correlationid": "42d72a99-9786-4c28-8ab5-66a1451d27a5",
+  "msdyn_AgentFeedUpdateFeedItemCustomApi_feeditemrecid": "5637170826"
+}
+```
+
+## Virtual entity documentation - AgentFeedEntity
+
+- To retrieve list of AgentFeed data, use the standard (out-of-the-box) Virtual Entity API endpoints provided by Dataverse.
+{organizationUrl}/api/data/v9.2/mserp_agentfeedentities
+
+- To retrieve AgentFeed data for a single record, use the standard (out-of-the-box) Virtual Entity API endpoints provided by Dataverse.
+{organizationUrl}/api/data/v9.2/mserp_agentfeedentities(mserp_agentfeedentityid)
+
+### Table Schema of AgentFeedEntity
+
+| Column Name  | Purpose                                                            | Type | Example |
+| ------------ | ------------------------------------------------------------------ | ---- | ------- |
+| TimeToLive   | Controls feed item expiration; helps with cleanup and relevance. Exact datetime. | UTC | |
+| Title        | Human-readable label for the feed item                             | 250 - string | |
+| Summary      | Brief description of the feed item’s content or intent             | Memo | |
+| Subtitle     | Subtitle is the secondary line providing immediate context to the title (phase, action, or focus) | 250 - string |
+| AIContext    | Natural language context for personalization and agent ranking.    | Memo | ```json{"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"}``` |
+| PermissionsCheck | Permissions Check is a comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered. | Memo | “PURCHTABLE,VENDTABLE,IMMERSIVEHOME” |
+| CardProvider | Builder class or handler responsible for rendering the card. (Accepts friendly name and backend handles the correct name)  Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name. | 250 - string | “DefaultAgentFeedCardProvider” |
+| FeedItemRecId | recID of the record in FnO System Unique identifier for the feed item. | recId | |
+| FeedItemID    | Guid for virtual entity creation. Auto generated via CustomAPI | Sysguidstring - string | |
+| Status        | Status is the current lifecycle state of the feed item. Allowed values: not started, in progress, completed, canceled. | ENUM |  |
+| DueDate       | Date/time | UTC | | 
+| CorrelationId | Correlation Id is a GUID used for idempotency and traceability across systems (logging, deduplication, retries). Populated by app teams on feed item creation | Sysguidstring - string |  |
+| BaseRank      | Base Rank is determined by the Priority tag in the AI Context field: If Priority is "High," Base Rank = 0.99. If Priority is "Low," Base Rank = 0.33. For "Medium," blank, or any other value, the default Base Rank is 0.66.	| Decimal |  |
