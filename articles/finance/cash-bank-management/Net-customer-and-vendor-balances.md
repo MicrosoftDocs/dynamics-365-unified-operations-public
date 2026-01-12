@@ -78,6 +78,17 @@ There are three ways to run automatic netting.
 - Trigger a one-time automatic netting by selecting **Automatic netting** on the **Netting** menu in the **Cash and bank management** module.
 - Schedule periodic automatic netting by selecting **Process automation** on the **Netting** menu in the **Cash and bank management** module.
 
+> [!NOTE]
+> The manual or automatic netting functionality is designed to run before a payment journal is created. This ensures that customer and vendor balances are finalized prior to initiating payment posting. The expected flow is as follows:
+1. Perform netting to calculate final balances between customers and vendors, leaving only the remaining open amounts for settlement
+2. Create the payment journal with transactions for the remaining amounts
+3. Submit and post the payment, updating vendor and customer balances accordingly
+4. Review balances after posting to confirm accuracy
+5. Repeat the process before each payment run
+
+> [!IMPORTANT]
+> Transactions already included in a payment journal are not part of the current netting functionality. To help users verify which transactions are marked for settlement, users can use **Accounts payable** > **Periodic tasks** > **All marked transaction details** report.
+
 ## Reverse netting
 
 You can reverse posted netting transactions by selecting **Reverse netting** on the **Netting history** page. This function automatically unsettles the selected customer invoices, unsettles the selected vendor invoices, and reverses the posted netting journal.
@@ -132,4 +143,5 @@ Here is an example of the vouchers that are generated. For this example, USMF is
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
