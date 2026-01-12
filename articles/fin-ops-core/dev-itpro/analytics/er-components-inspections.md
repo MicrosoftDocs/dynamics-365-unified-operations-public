@@ -22,7 +22,7 @@ Every configured [Electronic reporting (ER)](general-electronic-reporting.md) [f
 
 By default, the validation is automatically applied in the following cases for an ER configuration that contains the previously mentioned ER components:
 
-- You [import](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) a new version of an ER configuration into your instance of Microsoft Dynamics 365 Finance.
+- You [import](general-electronic-reporting.md) a new version of an ER configuration into your instance of Microsoft Dynamics 365 Finance.
 - You change the status of the editable ER configuration from **Draft** to **Completed**.
 - You [rebase](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) an editable ER configuration by applying a new base version.
 
