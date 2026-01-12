@@ -30,7 +30,7 @@ This article provides information about the Recruiting solution that helps to fi
 see [Recruiting overview](hr-recruit-overview.md).
 
 ## January 2026
-The January release of the Recruiting solution version <version> contains the following feature enhancements and bug fixes. 
+The January release of the Recruiting solution version contains the following feature enhancements and bug fixes. 
 
 | Feature  | Description |
 | --- |--- |
