@@ -103,5 +103,4 @@ Learn how to configure the required parameters, prepare ledger items and e-ledge
 
 - [Generate e-Ledger](../../localizations/turkiye/emea-tur-e-ledger.md)
 
-
-\[!INCLUDE[footer-include](../../../includes/footer-banner.md)\]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
