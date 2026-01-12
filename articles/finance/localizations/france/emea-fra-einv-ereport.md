@@ -237,10 +237,7 @@ To enter the registration numbers, follow these steps.
 > [!NOTE]
 > If the registration number with the **VAT** registration category is not defined then the value from the **Accounts receivable** \> **Customers** \> **All customers** \> **Invoice and delivery** \> **SALES TAX** \> **Tax exempt number** will be used.
 
-> [!NOTE]
-> For both, Seller and Buyer identification, the schema **0195** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there's a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
-
-## Configure electronic address
+## Configure electronic addresses
 
 Follow these steps electronic addresses for sellers or buyers that will be *primarily* used as **EndpointIDs** for documents routing.
 
@@ -260,26 +257,26 @@ Set up electronic document properties.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-    :::image type="content" source="emea-fra-einoices-e-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
+   :::image type="content" source="emea-fra-einoices-e-addresses.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
 
-### Enter the seller schema code
+### Enter the seller electronic address
 
 To enter the Seller schema code, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities** and select a legal entity.
 1. Select **Electronic document properties** from the Action Pane.
-1. In the **Value** column, enter the required seller schema code.
+1. In the **Value** column, enter the required seller electronic address.
 
-### Enter the buyer schema codes
+### Enter the buyer electronic address
 
 To enter the Buyer schema codes, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
-1. In the **Value** column, enter the required buyer schema code.
+1. In the **Value** column, enter the required buyer electronic address.
 
 > [!NOTE]
-> Schema codes defined by electronic document property types take priority over the default **0195** schema code.
+> For both, Seller and Buyer identification, the schema **9957** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). 
 
 ## Set up units of measure
 
