@@ -272,7 +272,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 | **correlationid**    | String | GUID for idempotency and tracing across systems                | "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7"                                                          |
 | **summary**          | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences.|                        |
 | **status**           | String | Status is the current lifecycle state of the feed item.        | Allowed values: not started, in progress, completed, canceled                                   |
-| **permissions**      | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.| "PURCHTABLE,VENDTABLE,IMMERSIVEHOME"|
+| **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.| "PURCHTABLE,VENDTABLE,IMMERSIVEHOME"|
 | **cardprovider**     | Text   | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.| "DefaultAgentFeedCardProvider"|
 | **aicontext**        | JSON   | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context. | {"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"} |
 
@@ -339,7 +339,7 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see 
 | **subtitle**         | String   |
 | **summary**          | String   |
 | **status**           | String   |
-| **permissions**      | String   |
+| **permissionscheck** | String   |
 | **duedate**          | DateTime |
 | **aicontext**        | String   |
 
