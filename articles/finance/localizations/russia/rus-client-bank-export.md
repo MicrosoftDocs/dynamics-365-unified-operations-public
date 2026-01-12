@@ -172,10 +172,10 @@ To cancel payment export, follow these steps:
 
 To view the registry of payment orders, in Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Payment** \> **Payment order register**. The page shows the payment documents that were sent in electronic format or on paper. For general information about the **Registry of payment orders** page, see [Set up and process payment orders for Russia](rus-payment-order-settings-processing.md#review-registry-of-payment-orders).
 
-    > [!NOTE]
-    > Currency transactions aren't shown on the **Registry of payment orders** page.
+> [!NOTE]
+> Currency transactions aren't shown on the **Registry of payment orders** page.
 
-    ![Payment documents on the Overview tab of the Registry of payment orders page.](../media/6b61456744fff219f17d49ae14f5b633.png)
+![Payment documents on the Overview tab of the Registry of payment orders page.](../media/6b61456744fff219f17d49ae14f5b633.png)
 
 For payments that were exported to the Client-Bank system, on the **General** tab, in the **Client-Bank** section, the following fields are set:
 
@@ -183,8 +183,5 @@ For payments that were exported to the Client-Bank system, on the **General** ta
 - The **Date and time** field is set to the date and time when the payment was exported.
 
 ![Fields on the General tab of the Registry of payment orders page.](../media/d00a29d8ca1163cc8bbf98471d5a3162.png)
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
