@@ -4,7 +4,7 @@ description: Learn about PowerBI.com solutions that are available and points you
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/27/2025
+ms.date: 01/12/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro

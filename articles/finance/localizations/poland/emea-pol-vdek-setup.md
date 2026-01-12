@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/30/2025
+ms.date: 01/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
@@ -555,7 +555,5 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 | CorrATR89b4 | 30202 | Sales tax receivable | K_47 | + |
 
 For invoices that aren't paid within 150 days, you can apply an [**Overdue debt VAT**](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task. In this case, use the same reporting codes that are used for K_41 and K_43. The system automatically interprets transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
