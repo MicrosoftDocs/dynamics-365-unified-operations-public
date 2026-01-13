@@ -248,9 +248,9 @@ In this release, BaseRank uses a temporary deterministic mapping:
 
 ### Feed item Security model
 
-- Security is delegated to application teams via PermissionsCheck 
-- Menu items are validated during card rendering (onSecure) 
-- Dataverse security roles control access to Virtual Entities 
+- Security is delegated to application teams via PermissionsCheck
+- Menu items are validated during card rendering (onSecure)
+- Dataverse security roles control access to Virtual Entities
 - No plugin steps are registered directly on Virtual Entities by design
 
 ## Custom API documentation
@@ -265,23 +265,23 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 
 #### Required parameters - create feed item
 
-| Parameter            | Type   | Description                                                    |  Example                                                                                        |
-|----------------------|--------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| **title**            | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.| "Supplier Invoice Overdue"                  |
-| **subtitle**         | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)| "Invoice PD 1042 is past due by 5 days."                          |
-| **correlationid**    | String | GUID for idempotency and tracing across systems                | "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7"                                                          |
-| **summary**          | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences.|                        |
-| **status**           | String | Status is the current lifecycle state of the feed item.        | Allowed values: not started, in progress, completed, canceled                                   |
-| **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.| "PURCHTABLE,VENDTABLE,IMMERSIVEHOME"|
-| **cardprovider**     | Text   | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.| "DefaultAgentFeedCardProvider"|
-| **aicontext**        | JSON   | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context. | {"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"} |
+| Parameter | Type | Description |
+| ---------------------- | -------- | ---------------------------------------------------------------- |
+| **title** | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.<br>Example: "Supplier Invoice Overdue" |
+| **subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by 5 days." |
+| **correlationid** | String | GUID for idempotency and tracing across systems.<br>Example: "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7" |
+| **summary** | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences. | |
+| **status** | String | Status is the current lifecycle state of the feed item.<br>Allowed values: not started, in progress, completed, canceled |
+| **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.<br>Example: "PURCHTABLE,VENDTABLE,IMMERSIVEHOME" |
+| **cardprovider** | Text | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.<br>Example: "DefaultAgentFeedCardProvider" |
+| **aicontext** | String | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context.<br>Example: ```json{"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"}``` |
 
 #### Optional parameters - create feed item
 
-| Parameter        | Type     | Description                                                      | Example                                                                                         |
-| ---------------- | -------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| **duedate**      | DateTime | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Leave blank if not time-bound. | “2026-01-12”                     |
-| **fnorecord**    | String   | Allowing navigation, a JSON array referencing Finance and Operations entities. | [ ```json{"RefRecId":5637144576,"RefTableId":"VendInvoiceTable"},{"RefRecId":5637144588,"RefTableId":"PurchTable"}```] |
+| Parameter | Type | Description |
+| ---------------- | -------- | ---------------------------------------------------------------- |
+| **duedate** | DateTime | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Leave blank if not time-bound.<br>Example: “2026-01-12” |
+| **fnorecord** | String | Allowing navigation, a JSON array referencing Finance and Operations entities.<br>Example: ```json[{"RefRecId":5637144576,"RefTableId":"VendInvoiceTable"},{"RefRecId":5637144588,"RefTableId":"PurchTable"}]```|
 
 #### Example parameter payload - create feed item
 
@@ -302,10 +302,10 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 
 #### Output - create feed item
 
-| Parameter        | Type            | Description                                               |
+| Parameter | Type | Description |
 | ---------------- | --------------- | --------------------------------------------------------- |
-| **feeditemrecid**| RecId / Decimal | Identifier for feed item                                  |
-| **correlationid**| String          | GUID for idempotency and tracing across systems           |
+| **feeditemrecid** | RecId / Decimal | Identifier for feed item |
+| **correlationid** | String | GUID for idempotency and tracing across systems |
 
 #### Example Output Payload
 
@@ -327,21 +327,21 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see 
 
 #### Required parameters - update feed item
 
-| Parameter        | Type            | Description                                               |
+| Parameter | Type | Description |
 | ---------------- | --------------- | --------------------------------------------------------- |
-| **feeditemrecid**| RecId / Decimal | Identifier for feed item                                  |
+| **feeditemrecid** | RecId / Decimal | Identifier for feed item |
 
 #### Optional parameters - update feed item
 
-| Parameter            | Type     |
+| Parameter | Type |
 |----------------------|----------|
-| **title**            | String   |
-| **subtitle**         | String   |
-| **summary**          | String   |
-| **status**           | String   |
-| **permissionscheck** | String   |
-| **duedate**          | DateTime |
-| **aicontext**        | String   |
+| **title** | String |
+| **subtitle** | String |
+| **summary** | String |
+| **status** | String |
+| **permissionscheck** | String |
+| **duedate** | DateTime |
+| **aicontext** | String |
 
 #### Example parameter payload - update feed item
 
@@ -361,10 +361,10 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see 
 
 #### Output - update feed item
 
-| Parameter        | Type            | Description                                               |
+| Parameter | Type | Description |
 | ---------------- | --------------- | --------------------------------------------------------- |
-| **feeditemrecid**| RecId / Decimal | Identifier for feed item                                  |
-| **correlationid**| String          | GUID for idempotency and tracing across systems           |
+| **feeditemrecid**| RecId / Decimal | Identifier for feed item |
+| **correlationid**| String | GUID for idempotency and tracing across systems |
 
 #### Example Output Payload
 
@@ -386,18 +386,18 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see 
 
 ### Table Schema of AgentFeedEntity
 
-| Column Name  | Purpose                                                            | Type | Example |
-| ------------ | ------------------------------------------------------------------ | ---- | ------- |
-| TimeToLive   | Controls feed item expiration; helps with cleanup and relevance. Exact datetime. | UTC | |
-| Title        | Human-readable label for the feed item                             | 250 - string | |
-| Summary      | Brief description of the feed item’s content or intent             | Memo | |
-| Subtitle     | Subtitle is the secondary line providing immediate context to the title (phase, action, or focus) | 250 - string |
-| AIContext    | Natural language context for personalization and agent ranking.    | Memo | ```json{"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"}``` |
-| PermissionsCheck | Permissions Check is a comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered. | Memo | “PURCHTABLE,VENDTABLE,IMMERSIVEHOME” |
-| CardProvider | Builder class or handler responsible for rendering the card. (Accepts friendly name and backend handles the correct name)  Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name. | 250 - string | “DefaultAgentFeedCardProvider” |
-| FeedItemRecId | recID of the record in FnO System Unique identifier for the feed item. | recId | |
-| FeedItemID    | Guid for virtual entity creation. Auto generated via CustomAPI | Sysguidstring - string | |
-| Status        | Status is the current lifecycle state of the feed item. Allowed values: not started, in progress, completed, canceled. | ENUM |  |
-| DueDate       | Date/time | UTC | | 
-| CorrelationId | Correlation Id is a GUID used for idempotency and traceability across systems (logging, deduplication, retries). Populated by app teams on feed item creation | Sysguidstring - string |  |
-| BaseRank      | Base Rank is determined by the Priority tag in the AI Context field: If Priority is "High," Base Rank = 0.99. If Priority is "Low," Base Rank = 0.33. For "Medium," blank, or any other value, the default Base Rank is 0.66.	| Decimal |  |
+| Column Name | Type | Description |
+| ------------ | ------- | ----------------------------------------------------------- |
+| **TimeToLive** | UTC | Controls feed item expiration; helps with cleanup and relevance. Exact datetime. |
+| **Title** | 250 - string | Human-readable label for the feed item |
+| **Summary** | Memo | Brief description of the feed item’s content or intent |
+| **Subtitle** | 250 - string | Subtitle is the secondary line providing immediate context to the title (phase, action, or focus) |
+| **AIContext** | Memo | Natural language context for personalization and agent ranking.<br>Example: ```json{"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"}``` |
+| **PermissionsCheck** | Memo | PermissionsCheck is a comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.<br>Example: “PURCHTABLE,VENDTABLE,IMMERSIVEHOME” |
+| **CardProvider** | 250 - string | Builder class or handler responsible for rendering the card. (Accepts friendly name and backend handles the correct name)  Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.<br>Example: “DefaultAgentFeedCardProvider” |
+| **FeedItemRecId** | recId | recID of the record in FnO System Unique identifier for the feed item. |
+| **FeedItemID** | Sysguidstring - string | Guid for virtual entity creation. Auto generated via CustomAPI |
+| **Status** | ENUM | Status is the current lifecycle state of the feed item. Allowed values: not started, in progress, completed, canceled. |
+| **DueDate** | UTC Date/time | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Blank if not time-bound. |
+| **CorrelationId** | Sysguidstring - string | Correlation Id is a GUID used for idempotency and traceability across systems (logging, deduplication, retries). Populated by app teams on feed item creation |
+| **BaseRank** | Decimal | Base Rank is determined by the Priority tag in the AI Context field.<br>Value definition: If Priority is "High," Base Rank = 0.99. If Priority is "Low," Base Rank = 0.33. For "Medium," blank, or any other value, the default Base Rank is 0.66. |
