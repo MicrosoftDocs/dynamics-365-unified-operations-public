@@ -62,9 +62,9 @@ If your agent needs to read feed items, enable the AgentFeedEntity Virtual Entit
 
 Once enabled, feed items can be queried using standard Dataverse OData endpoints.
 
-:::image type="content" source="media/agent-feed-enable-VE-Select.png" alt-text="Screenshot of identifying Virtual Entity." lightbox="media/agent-feed-enable-VE-Select.png":::
+:::image type="content" source="media/agent-feed-enable-virtual-entity-select.png" alt-text="Screenshot of identifying Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity--select.png":::
 
-:::image type="content" source="media/agent-feed-enable-VE-Enable.png" alt-text="Screenshot of enabling the Virtual Entity." lightbox="media/agent-feed-enable-VE-Enable.png":::
+:::image type="content" source="media/agent-feed-enable-virtual-entity-enable.png" alt-text="Screenshot of enabling the Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity-enable.png":::
 
 ### Control the agent feed card rendering
 
@@ -81,7 +81,7 @@ By default, feed items use the **DefaultAgentFeedCardProvider**, which renders:
 - Summary
 - Status and due date
 
-:::image type="content" source="media/agent-feed-default-card-annotated.png" alt-text="Screenshot of an agent feed item rendered in the default card." lightbox="media/agent-feed-default-card-annotated.png":::
+:::image type="content" source="media/agent-feed-default-card-annotated.png" alt-text="Screenshot of an agent feed item rendered in the default card with annotations." lightbox="media/agent-feed-default-card-annotated.png":::
 
 The default card provider does not support any actions. 
 
@@ -270,7 +270,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 | **title** | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.<br>Example: "Supplier Invoice Overdue" |
 | **subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by 5 days." |
 | **correlationid** | String | GUID for idempotency and tracing across systems.<br>Example: "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7" |
-| **summary** | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences. | |
+| **summary** | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences. |
 | **status** | String | Status is the current lifecycle state of the feed item.<br>Allowed values: not started, in progress, completed, canceled |
 | **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.<br>Example: "PURCHTABLE,VENDTABLE,IMMERSIVEHOME" |
 | **cardprovider** | Text | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.<br>Example: "DefaultAgentFeedCardProvider" |
