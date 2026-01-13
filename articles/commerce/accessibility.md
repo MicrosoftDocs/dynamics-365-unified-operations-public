@@ -1,11 +1,10 @@
 ---
 title: Accessibility features and capabilities
-description: This article provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
+description: Learn about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 01/13/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -21,13 +20,13 @@ This article provides information about the accessibility features and capabilit
 
 Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals. This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.
 
-Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality. When you design your site, you should consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility). 
+Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality. When you design your site, consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility). 
 
 This article describes some additional areas of accessibility functionality that you should consider when you use Dynamics 365 Commerce.
 
 ## Image alt text
 
-Dynamics 365 Commerce has a built-in digital asset management system to track image and video assets that are used on your site. Image captions, descriptions, and alt text can be added in the properties pane for an image when it's selected or uploaded.
+Dynamics 365 Commerce has a built-in digital asset management system to track image and video assets that you use on your site. You can add image captions, descriptions, and alt text in the properties pane for an image when you select or upload it.
 
 ## Video accessibility
 
