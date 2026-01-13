@@ -545,7 +545,7 @@ Change the expression of the **FilteredVendor** data source from `FILTER(Vendor,
 
 ## <a id="i11"></a>Missing binding
 
-When you configure an ER format component, the base ER data model is the default data source for the ER format. When you run the configured ER format, the [default model mapping](er-country-or-region-dependent-model-mapping.md) for the base model fills the data model with application data. The ER format designer shows a warning if you bind a format element to a data model item that isn't bound to any data source in the model mapping currently selected as the default model mapping for the editable format. You can't run this type of binding at runtime, because the format that runs can't fill a bound element with application data. Therefore, an error occurs at runtime.
+When you configure an ER format component, the base ER data model is the default data source for the ER format. When you run the configured ER format, the [default model mapping](er-region-dependent-model-mapping.md) for the base model fills the data model with application data. The ER format designer shows a warning if you bind a format element to a data model item that isn't bound to any data source in the model mapping currently selected as the default model mapping for the editable format. You can't run this type of binding at runtime, because the format that runs can't fill a bound element with application data. Therefore, an error occurs at runtime.
 
 The following steps show how this issue might occur.
 
