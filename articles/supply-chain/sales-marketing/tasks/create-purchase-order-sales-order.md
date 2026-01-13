@@ -24,7 +24,7 @@ You can configure how the system copies and synchronizes the delivery mode and t
 To use the options for delivery mode and terms of delivery described in this section, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The feature that is named *Enable purch parameters to control delivery information sync on sales and purchase orders* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Enable purch parameters to control delivery information sync on sales and purchase orders* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > When you turn on the *Enable purch parameters to control delivery information sync on sales and purchase orders* feature, its default settings match the behavior that was in place before the feature was introduced.
