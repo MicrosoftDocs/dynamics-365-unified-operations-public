@@ -159,7 +159,7 @@ When you integrate an ERP system and a warehouse management system, it's essenti
 
 ## Warehouse management only mode with external shared warehouses
 
-You can set up an integration between Supply Chain Management and an external warehouse management system. To enable this integration, use external warehouse shipment order requests and updates for communication between the systems. Learn more in [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse).
+You can set up an integration between Supply Chain Management and an external warehouse management system. To enable this integration, use external warehouse shipment order requests and updates for communication between the systems. Learn more in [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
 
 ### Inbound and outbound shipment order requests
 
@@ -172,7 +172,7 @@ Use external warehouse inbound and outbound shipment order requests to import or
 
 ### Inbound and outbound shipment order updates
 
-Use external warehouse inbound and outbound shipment order updates to send shipment updates from your warehouse management system to Supply Chain Management. The message processor processes these updates in the same way as [inbound and outbound shipment order messages](wms-only-mode-exchange-data#inbound-and-outbound-shipment-order-messages).
+Use external warehouse inbound and outbound shipment order updates to send shipment updates from your warehouse management system to Supply Chain Management. The message processor processes these updates in the same way as [inbound and outbound shipment order messages](wms-only-mode-exchange-data.md#inbound-and-outbound-shipment-order-messages).
 
 - `WHSEWInboundShipmentOrderUpdateEntity`
 - `WHSEWInboundShipmentOrderLineUpdateEntity`
