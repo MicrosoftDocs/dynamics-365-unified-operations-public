@@ -24,7 +24,7 @@ Exchange difference invoices must reflect the difference between the exchange ra
 
 Companies must issue invoices for exchange rate differences. Those invoices must reflect the equivalent amount in Turkish lira, based on the foreign exchange buying rate of the Central Bank of the Republic of Türkiye.
 
-According to the legislation, the tax rate that is applied to the exchange rate difference is crucial. The tax rate that is applied to the invoiced product or service must also be applied to the exchange difference invoice. If the invoice is exempt from tax or subject to withholding tax, the exchange difference invoice should be issued accordingly.
+The tax rate that is applied to the exchange rate difference is crucial. The tax rate that is applied to the invoiced product or service must also be applied to the exchange difference invoice. If the invoice is exempt from tax or subject to withholding tax, the exchange difference invoice should be issued accordingly.
 
 ## Configure exchange difference invoicing
 
