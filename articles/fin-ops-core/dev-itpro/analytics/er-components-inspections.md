@@ -97,7 +97,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 | [Executability of an expression with ORDERBY function](#i18) | Executability | Error | The list expression of ORDERBY function isn't queryable.<br><br>**Runtime error:** Sorting isn't supported. Validate the configuration to get more details about this. |
 | [Obsolete application artifact](#i19) | Data integrity | Warning | The element &lt;path&gt; is marked as obsolete.<br>or<br>The element &lt;path&gt; is marked as obsolete with message &lt;message text&gt;.<br><br>**Runtime error sample:** Class '&lt;path&gt;' not found. |
 
-## Type conversion
+## <a id="i1"></a>Type conversion
 
 ER checks whether the data type of a data model field is compatible with the data type of an expression that you configure as the binding for that field. If the data types are incompatible, the ER model mapping designer shows a validation error. The error message states that ER can't convert an expression of type A to a field of type B.
 
@@ -338,13 +338,13 @@ No option to automatically fix this issue is available.
 
 Change the expression of the **Vendor.FilteredTrans** data source from `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` back to `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)`, as the warning advises.
 
-    :::image type="content" source="./media/er-components-inspections-06d.png" alt-text="Screenshot of updated expression of data source on the Model mapping designer page.":::
+:::image type="content" source="./media/er-components-inspections-06d.png" alt-text="Screenshot of updated expression of data source on the Model mapping designer page.":::
 
 #### Option 2
 
 Change the value of the **Execute** field for the **JoinedList** data source from **Query** to **In memory**. Don't change the value for a table that has a large volume of data (transactional table), because this change fetches all records, and the join happens in memory. Therefore, this approach can cause poor performance. A validation warning informs you about this risk.
 
-## Preferability of FILTER vs WHERE function
+## <a id="i7"></a>Preferability of FILTER vs WHERE function
 
 Use the built-in [FILTER](er-functions-list-filter.md) ER function to access application tables, views, or data entities. It places a single SQL call to get the required data as a list of records. The [WHERE](er-functions-list-where.md) function fetches all records from the given source and does record selection in memory. Both functions use a data source of the **Record list** type as an argument and specify a source for getting records. ER checks whether a direct SQL call can be established to a data source that you refer to in the **WHERE** function. If a direct call can be established, a validation warning occurs in the ER model mapping designer. The message that you receive recommends that you use the **FILTER** function instead of the **WHERE** function to help improve efficiency.
 
@@ -479,7 +479,7 @@ For the selected row in the grid on the **Warnings** tab, select **Unbind**. Thi
 
 Bind the **Statement\\Party\\Name** format element to the `model.Vendor` data source item. At runtime, this binding calls the `model.Vendor` data source first. When `model.Vendor` returns an empty record list, the nested format elements don't run. Therefore, no validation warnings occur for this format configuration.
 
-    :::image type="content" source="./media/er-components-inspections-09e.gif" alt-text="Screenshot of binding the format element to the data source item on the Format designer page.":::
+:::image type="content" source="./media/er-components-inspections-09e.gif" alt-text="Screenshot of binding the format element to the data source item on the Format designer page.":::
 
 #### Option 2
 
@@ -490,7 +490,7 @@ Change the binding of the **Statement\\Party\\Name** format element from `model.
 
 Therefore, no validation warnings occur for the **Statement\\Party\\Name** format element when it's bound to the `FIRSTORNULL(model.Vendor).Name` expression.
 
-    :::image type="content" source="./media/er-components-inspections-09f.gif" alt-text="Screenshot of changed binding resolves validation warnings on the Format designer page.":::
+:::image type="content" source="./media/er-components-inspections-09f.gif" alt-text="Screenshot of changed binding resolves validation warnings on the Format designer page.":::
 
 #### Option 3
 
