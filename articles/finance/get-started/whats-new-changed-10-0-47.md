@@ -38,6 +38,9 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Asset leasing | Asset lease classification |This feature assigns distinct voucher numbers for short-term lease liability reclassification entries based on transaction dates. It ensures that each journal entry posted on different dates has a unique voucher number. | Flight |
+| General ledger | Ledger period close enhancement (Preview) |This feature introduces multi-stage task statuses, and comprehensive audit trial capability. The task statues risk and issue flags, approval assignment, and enhanced reporting capabilities in the **Period end close** workspace. The audit trial capability in the **Financial period close** workspace, enabling users to track task history, status changes, and related actions through a dedicated side panel.| Feature management |
+
 
 
 ## More information
