@@ -172,7 +172,7 @@ Use external warehouse inbound and outbound shipment order requests to import or
 
 ### Inbound and outbound shipment order updates
 
-Use external warehouse inbound and outbound shipment order updates to send shipment updates from your warehouse management system to Supply Chain Management. The message processor processes these updates in the same way as [inbound and outbound shipment order messages](wms-only-mode-exchange-data.md#inbound-and-outbound-shipment-order-messages).
+Use external warehouse inbound and outbound shipment order updates to send shipment updates from your warehouse management system to Supply Chain Management. The message processor processes these updates in the same way as [inbound and outbound shipment order messages](#inbound-outbound-shipment-order-messages).
 
 - `WHSEWInboundShipmentOrderUpdateEntity`
 - `WHSEWInboundShipmentOrderLineUpdateEntity`
