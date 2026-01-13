@@ -37,7 +37,7 @@ The Dynamics 365 Commerce digital asset management system supports several acces
 | Closed captioning (CC)      | Text that can be shown for the audio and audio descriptive elements of a video, to help users who are deaf or hard of hearing |
 | Subtitles                   | Caption files that show the text of context clues or dialog on-screen |
 | Audio transcripts           | A textual transcript of spoken words that is generated from the audio of a video asset |
-| Descriptive audio           | A non-primary audio channel that describes the content or context that is occurring on-screen |
+| Descriptive audio           | A nonprimary audio channel that describes the content or context that's occurring on-screen |
 | Minimum age gate            | An attribute that can store the minimum age that a viewer must be to view a video (metadata only) |
 
 ### Configure video accessibility elements
@@ -48,7 +48,7 @@ In the Commerce **Media Library** section for your site, you can upload video as
 
 To have a closed caption file automatically generated when you upload a video, follow this step.
 
-- In the **Asset Upload** dialog box, select **Automatically generate closed captions**. If you're generating a closed caption file, the file selector for closed caption files will be unavailable in the dialog box.
+- In the **Asset Upload** dialog box, select **Automatically generate closed captions**. If you're generating a closed caption file, the file selector for closed caption files are unavailable in the dialog box.
 
 To manually upload a closed caption file when you upload a video, follow this step.
 
@@ -68,7 +68,7 @@ To edit CC and audio transcript files, follow these steps:
 1. Go to **Media Library**, and select the file name of the video asset. The closed caption and transcript content editor appears.
 1. Select **Edit**.
 1. Edit the closed caption or transcript text.
-1. When you've finished, select **Save**, and then select **Finish editing**.
+1. When you finish, select **Save**, and then select **Finish editing**.
 1. When you're ready to publish, select **Publish**.
 
 #### Set the Minimum Age attribute
