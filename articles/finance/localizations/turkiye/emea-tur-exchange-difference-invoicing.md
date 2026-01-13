@@ -6,7 +6,7 @@ ms.author: v-omerorhan
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/30/2025
+ms.date: 01/13/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2020-02-03
@@ -67,7 +67,7 @@ The following table describes the fields on the **Number sequence** tab.
 | Exchange difference revaluate and close voucher | Define the unique key for vouchers of exchange difference revaluate and close. |
 
 > [!NOTE]
-> Separate number sequences are used for each exchange difference type to ensure correct document type mapping in e-Ledger.
+> To ensure correct document type mapping in e-Ledger, separate number sequences are used for each exchange difference type.
 
 ### Realized gain and realized loss accounts
 
