@@ -63,6 +63,11 @@ The following table describes the fields on the **Number sequence** tab.
 |-------|-------------|
 | Exchange difference invoice | Define the unique key for exchange difference invoices. |
 | Exchange difference invoice voucher | Define the unique key for vouchers of exchange difference invoices. |
+| Exchange difference pending invoice voucher | Define the unique key for vouchers of exchange difference pending invoices. | 
+| Exchange difference revaluate and close voucher | Define the unique key for vouchers of exchange difference revaluate and close. |
+
+> [!NOTE]
+> Separate number sequences are used for each exchange difference type to ensure correct document type mapping in e-Ledger.
 
 ### Realized gain and realized loss accounts
 
