@@ -543,7 +543,7 @@ Remove the **Cache** flag from the **Vendor** data source. The **FilteredVendor*
 
 Change the expression of the **FilteredVendor** data source from `FILTER(Vendor, Vendor.AccountNum="US-101")` to `WHERE(Vendor, Vendor.AccountNum="US-101")`. In this case, the **Vendor** data source that the VendTable table refers to is accessed only during the first call of the **Vendor** data source. However, the selection of records is done in memory. Therefore, this approach can cause poor performance.
 
-## Missing binding
+## <a id="i11"></a>Missing binding
 
 When you configure an ER format component, the base ER data model is the default data source for the ER format. When you run the configured ER format, the [default model mapping](er-country-dependent-model-mapping.md) for the base model fills the data model with application data. The ER format designer shows a warning if you bind a format element to a data model item that isn't bound to any data source in the model mapping currently selected as the default model mapping for the editable format. You can't run this type of binding at runtime, because the format that runs can't fill a bound element with application data. Therefore, an error occurs at runtime.
 
@@ -642,7 +642,7 @@ No option to automatically fix this issue is available.
 
 Modify the configured format by removing all templates that aren't linked to any **Excel\\File** element.
 
-## Not synced format
+## <a id="i13"></a>Not synced format
 
 When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can manually add the **Excel\\File** element, add the required template as an attachment of the editable component, and select that attachment in the added **Excel\\File** element. In this way, you indicate that the added element fills the selected template at runtime. Because you designed the added Excel template externally, the editable ER format might contain Excel names that are missing from the added template. The ER format designer warns you about any inconsistencies between the properties of the ER format elements and the names that aren't included in the added Excel template.
 
@@ -792,7 +792,7 @@ Instead of adding a nested field of the **Calculated field** type to the **Vendo
 
 Change the expression of the **FilteredVendors** data source from `ORDERBY("Query", Vendor, Vendor.AccountNum)` to `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Don't change the expression for a table that has a large volume of data (transactional table), because this change fetches all records and orders the required records in memory. Therefore, this approach can cause poor performance.
 
-## Obsolete application artifact
+## <a id="i19"></a>Obsolete application artifact
 
 When you design an ER model mapping component or an ER format component, you can configure an ER expression to call an application artifact in ER, such as a database table, a method of a class, and more. In Finance version 10.0.30 and later, you can configure ER to warn you when the referred application artifact is marked in source code as obsolete. This warning is useful because usually, obsolete artifacts are eventually removed from source code. Being informed about an artifact’s status can stop you from using the obsolete artifact in the editable ER component before its removal from the source code. This action helps prevent errors of calling non-existing application artifacts from an ER component at runtime.
 
