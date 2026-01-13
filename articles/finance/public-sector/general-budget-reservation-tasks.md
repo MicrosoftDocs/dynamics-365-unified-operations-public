@@ -93,7 +93,24 @@ If the reservation is in a workflow, recall the workflow status to **Draft**, fo
 
     - The general ledger and budget control updates occur, and the transaction is recorded in the transaction log.
     - This procedure doesn't delete the reservation. It just cancels the reservation and generates the accounting and budget entries to reverse the impact of the document that was originally posted.
-    - You can cancel a whole general budget reservation, but you can't cancel individual lines.
+    - You can cancel a whole general budget reservation, but you can't cancel individual lines unless the feature **Allow cancelation of individual lines on General Budget Reservations** is enabled.
+      
+## Cancel a general budget reservation lines
+
+1. In Feature management, enable the feature **Allow cancelation of individual lines on General Budget Reservations**.
+
+    The feature enables users to cancel individual lines within a General Budget Reservation (GBR). By introducing line-level cancelation users can manage budget reservations more flexibly and compliantly. If the line has been Canceled, it is also considered Finalized.
+
+2. Select the GBR for which the line needs to be cancelled.
+
+   >[!NOTE]
+   >Only the lines that have no downstream relieving activity can be cancelled.
+   
+3. On the Lines, select the line and press Cancel.
+   - The general ledger and budget control updates occur, and the transaction is recorded in the transaction log.
+   - This procedure doesn't delete the line. It just cancels the reservation and generates the accounting and budget entries to reverse the impact of the document that was originally posted.
+   - The cancelled line is also automatically Finalized and can't be reopened.
+
 
 ## Finalize a general budget reservation
 
