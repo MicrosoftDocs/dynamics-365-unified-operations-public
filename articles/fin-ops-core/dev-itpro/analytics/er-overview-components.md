@@ -145,7 +145,7 @@ Access to ER format and model mapping components at runtime depends on the setti
 
 Different versions of a format or a model mapping component can have different settings for ISO country/region codes.
 
-For more information, see [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md).
+For more information, see [Configure country context dependent ER model mappings](er-region-dependent-model-mapping.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
