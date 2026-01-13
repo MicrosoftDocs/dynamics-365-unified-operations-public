@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/RSSK-terms-conditions.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/SDK-terms-conditions.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service.md",
       "redirect_url": "/dynamics365/finance/index",
       "redirect_document_id": "false"  
