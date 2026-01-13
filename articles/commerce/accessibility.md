@@ -2,7 +2,7 @@
 title: Accessibility features and capabilities
 description: This article provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/14/2020
+ms.date: 01/13/2026
 ms.topic: how-to
 audience: Application user
 ms.reviewer: v-chrgriffin
