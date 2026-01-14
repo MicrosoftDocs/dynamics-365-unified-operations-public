@@ -1,11 +1,10 @@
 ---
 title: Add a new site page
-description: This article describes how to add a new site page in Microsoft Dynamics 365 Commerce.
+description: Learn how to add a new site page in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,11 +18,11 @@ ms.custom:
 
 This article describes how to add a new site page in Microsoft Dynamics 365 Commerce.
 
-After you've created templates and fragments for your site, the next step is to start to create pages that use them. To get started, you must select a template or layout, a page name, and a page URL.
+After you create templates and fragments for your site, the next step is to create pages that use them. To get started, select a template or layout, a page name, and a page URL.
 
 ## Template or layout
 
-You can use either a template or a layout for your new page. For more information, see [Templates and layouts overview](templates-layouts-overview.md).
+Use either a template or a layout for your new page. Learn more in [Templates and layouts overview](templates-layouts-overview.md).
 
 ## Specify the page name
 
@@ -31,10 +30,10 @@ The page name must be unique to your site and should be descriptive so you can f
 
 ## Specify the page URL
 
-You can have the option to enter a URL for your new page. When you create a page, you can enter a string that will be used to form a complete URL. This string is known as a relative URL or a URL slug. A complete URL is then generated based on the URL slug, and the new page is assigned to it. You can change the URL slug later, before you publish the page. For more information, see [Create a page URL](create-page-URL.md).
+Enter a URL for your new page. When you create a page, enter a string that forms a complete URL. This string is known as a relative URL or a URL slug. A complete URL is generated based on the URL slug, and the new page is assigned to it. You can change the URL slug later, before you publish the page. Learn more in [Create a page URL](create-page-URL.md).
 
 > [!NOTE]
-> Dynamics 365 Commerce decouples URLs and content. In other words, a page can be created that isn't associated with an URL, and a URL can be created that isn't associated with a page. Therefore, content swapping can be done for a URL and doesn't require downtime, and redirects are easier to manage.
+> Dynamics 365 Commerce decouples URLs and content. In other words, you can create a page that isn't associated with an URL, and you can create a URL that isn't associated with a page. Therefore, you can swap content for a URL without downtime, and redirects are easier to manage.
 
 ## Add a new page
 
@@ -45,9 +44,9 @@ To add a new site page to your site, follow these steps:
 1. In the **New Page** dialog box, select a template, and then select **OK**.
 1. In the **Page Name** field, enter a page name (for example, **My New Page**).
 1. In the **URL** field, enter a string (URL slug) to complete the URL (for example, **mynewpage**).
-1. Select **OK**. The page editor appears. Notice that a header and a footer are automatically added to the page, based on the template that you selected.
+1. Select **OK**. The page editor appears. A header and a footer are automatically added to the page, based on the template that you selected.
 1. In the page outline, select the **Main** slot, select the ellipsis button (**...**), and then select **Add Module**.
-1. Select **Container**, and then select **OK**
+1. Select **Container**, and then select **OK**.
 1. Select **Fluid Container**, select the ellipsis button, and then select **Add Module**.
 1. Select **Content Rich block**, and then select **OK**.
 1. Select **Content Rich Block**, select the ellipsis button, and then select **Add Module**.
@@ -55,7 +54,7 @@ To add a new site page to your site, follow these steps:
 1. In the properties pane on the right, select **Paragraph**, and then, in the field, enter **My test text**.
 1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter **Added new page**, and then select **OK**.
-1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
+1. Select **Preview** to preview your page. When you finish, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
 1. In the navigation path (breadcrumbs), select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **URLs**.
