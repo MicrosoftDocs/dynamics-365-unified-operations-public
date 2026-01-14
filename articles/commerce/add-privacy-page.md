@@ -1,11 +1,10 @@
 ---
 title: Add a privacy policy page
-description: This article describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
+description: Learn how to add a privacy policy page to your Microsoft Dynamics 365 Commerce site.
 author: brianshook
-ms.date: 08/01/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,13 +16,13 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
+This article describes how to add a privacy policy page to your Microsoft Dynamics 365 Commerce site.
 
 Privacy compliance includes organizational measures that inform site users about how their data is collected and handled. Users can then decide how they want their personal data to be handled and can take appropriate action.
 
 ## Review the Microsoft privacy statement in Dynamics 365 Commerce
 
-To review the Microsoft privacy statement while you're signed in to the Dynamics 365 Commerce authoring tools, select the **Help** button (**?**) in the upper-right corner, and then select **Privacy and cookies**. A new tab is opened that has a link to the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement).
+To review the Microsoft privacy statement while you're signed in to Dynamics 365 Commerce authoring tools, select the **Help** button (**?**) in the upper-right corner, and then select **Privacy and cookies**. A new tab opens that has a link to the [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement).
 
 ## Build a privacy policy page for your site
 
@@ -36,7 +35,7 @@ To start, in the authoring tools, go to the site that you want to build a privac
 ### Create a template
 
 > [!NOTE]
-> If a template that can be used for the privacy policy page has already been created, skip ahead to the [Build a privacy policy page](#build-a-privacy-policy-page) section.
+> If you already created a template for the privacy policy page, proceed to [Build a privacy policy page](#build-a-privacy-policy-page).
 
 To create a template, follow these steps:
 
