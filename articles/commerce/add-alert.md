@@ -18,7 +18,7 @@ ms.custom:
 
 This article covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Use promo banner modules to show inline informational messages on a page. Use them to show site-wide promotions that appear on all pages of an e-commerce site. 
+Use promo banner modules to show inline informational messages on a page. Use them to show site-wide promotions that appear on all pages of an e-commerce site.
 
 Promo banner modules support a text message and a link. If you add multiple messages to a promo banner module, it becomes a rotating carousel banner that lets customers cycle through all the messages. 
 
