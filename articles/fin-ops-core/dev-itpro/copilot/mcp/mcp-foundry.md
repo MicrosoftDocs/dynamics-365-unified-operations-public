@@ -13,9 +13,6 @@ ms.date: 1/13/2026
 
 # Connect to the Dynamics 365 ERP MCP server with Microsoft Foundry
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 This guide provides information on how to configure an agent in [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-foundry?view=foundry) to work with the data and business logic of Dynamics 365 ERP applications by connecting to the Dynamics 365 ERP MCP server.
 
 ## Prequisites
