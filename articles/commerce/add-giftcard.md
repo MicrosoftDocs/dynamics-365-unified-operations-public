@@ -18,7 +18,7 @@ ms.custom:
 
 This article covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Use gift card modules in checkout modules to accept gift cards, a common form of payment for e-commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. The Adyen payment provider redeems SVS and Givex gift cards. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
+Use gift card modules in checkout modules to accept gift cards, a common form of payment for e-commerce transactions. The gift card module supports Dynamics 365, Stored Value Solutions (SVS), and Givex gift cards. The Adyen payment provider redeems SVS and Givex gift cards. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
 
 > [!NOTE]
 > Support for redeeming SVS and Givex gift cards during checkout flow is available in the Dynamics 365 Commerce 10.0.11 release. 
@@ -46,10 +46,10 @@ The following image shows an example of a gift card module on a checkout page.
     - PIN and expiration date 
     - None
 
-- **Enable for guest users** – When you enable this property, guest users can redeem or check balances on external gift cards. This property requires that anonymous (guest) access for external gift cards be enabled in Commerce headquarters. The **Enable for guest users** setting applies to external gift cards only. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout). 
+- **Enable for guest users** – When you enable this property, guest users can redeem or check balances on external gift cards. This property requires anonymous (guest) access for external gift cards to be enabled in Commerce headquarters. The **Enable for guest users** setting applies to external gift cards only. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout). 
 
 > [!IMPORTANT]
-> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
+> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release. It requires Commerce module library package version 9.31 to be installed.
 
 ## Site settings for gift card modules
 
