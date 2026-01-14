@@ -49,7 +49,7 @@ Complete the following steps to process the bank statement transactions.
 After processing bank statement transactions is complete, a new general ledger journal is created and ready for posting.
 
 >[!NOTE]
->Starting in Dynamics 365 Finance version 10.0.47, the users can enable the **Enable batch mode for Bank CODA transfer to ledger** feature to transfer Bank CODA account statements to ledger journals in batch mode.
+>Starting in Dynamics 365 Finance version 10.0.46, the users can enable the **Enable batch mode for Bank CODA transfer to ledger** feature to transfer Bank CODA account statements to ledger journals in batch mode.
 
 
 
