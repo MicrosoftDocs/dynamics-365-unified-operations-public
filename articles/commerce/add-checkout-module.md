@@ -29,7 +29,7 @@ The following image shows an example of a Fabrikam checkout module on a checkout
 
 ## Checkout module properties
 
-A checkout module shows an order summary and provides the functionality for placing an order. To gather all the customer information that's required before an order can be placed, add extra modules to the checkout module. Retailers have the flexibility to add custom modules to the checkout flow, or to exclude modules, based on their requirements.
+A checkout module shows an order summary and provides the functionality for placing an order. To gather all the required customer information before an order can be placed, add extra modules to the checkout module. Retailers have the flexibility to add custom modules to the checkout flow, or to exclude modules, based on their requirements.
 
 | Property name | Values | Description |
 |----------------|--------|-------------|
@@ -101,7 +101,7 @@ To add a checkout module to a new page and set the required properties, follow t
 1. In the **Select modules** dialog box, select the **Shipping address**, **Delivery options**, **Checkout section container**, and **Contact information** modules, and then select **OK**.
 1. In the **Checkout section container** module, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Gift card**, **Loyalty**, and **Payment** modules, and then select **OK**. By using this approach, you make sure that all the payment methods appear together in a section.
-1. In the **Terms and conditions** slot, add a **Checkout terms and conditions** module if it's required. In the module's properties pane, configure the terms and condition text as appropriate.
+1. In the **Terms and conditions** slot, add a **Checkout terms and conditions** module if required. In the module's properties pane, configure the terms and condition text as appropriate.
 1. Select **Save**, and then select **Preview** to preview the fragment. Some modules that don't have a cart context might not be rendered in the preview.
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Create a template that uses the new checkout fragment.
