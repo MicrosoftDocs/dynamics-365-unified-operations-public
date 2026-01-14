@@ -1,11 +1,10 @@
 ---
 title: Promo banner module
-description: This article covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about promo banner modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/30/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,32 +18,32 @@ ms.custom:
 
 This article covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Promo banner modules are used to show inline informational messages on a page. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
+Use promo banner modules to show inline informational messages on a page. Use them to show site-wide promotions that appear on all pages of an e-commerce site. 
 
-Promo banner modules support a text message and a link. If multiple messages are added to a promo banner module, it becomes a rotating carousel banner that lets customers cycle through all the messages. 
+Promo banner modules support a text message and a link. If you add multiple messages to a promo banner module, it becomes a rotating carousel banner that lets customers cycle through all the messages. 
 
-Promo banner modules are driven by data from the content management system (CMS) and can be put on any page.
+Promo banner modules use data from the content management system (CMS) and can be put on any page.
 
 ## Usage examples of promo banners in e-commerce
 
-Promo banners can be used in the site header to show site-wide promotions or messages, as in the following examples.
+Use promo banners in the site header to show site-wide promotions or messages, as in the following examples.
 
-"Annual sale ends in 10 days"
+* "Annual sale ends in 10 days"
 
-"Save big with back to school sale. Shop Now."
+* "Save big with back to school sale. Shop Now."
 
-"Shop for Thanksgiving SALE!" 
+* "Shop for Thanksgiving SALE!" 
 
 The following image shows an example of a promo banner.
 
-![Example of a promo banner module.](./media/ecommerce-Promobanner.PNG)
+:::image type="content" source="./media/ecommerce-Promobanner.PNG" alt-text="Screenshot of a promo banner module.":::
 
 ## Promo banner module properties
 
 | Property name             | Value                              | Description |
 |---------------------------|------------------------------------|-------------|
 | Banner messages           | Text and links                     | An array of text and links. |
-| Autoplay                  | **True** or **False**              | A value that indicates whether messages are automatically cycled through, if multiple messages are configured. |
+| Autoplay                  | **True** or **False**              | A value that indicates whether messages are automatically cycled through if multiple messages are configured. |
 | Slide transition interval | A number of milliseconds (ms)      | The interval that is used to cycle through messages. |
 | Allow dismiss             | **True** or **False**              | If the value is set to **True**, customers can dismiss the alert. |
 | Show carousel flipper     | **True** or **False**              | A value that indicates whether the carousel flippers should be shown, so that customers can manually cycle through multiple banner items. |
@@ -63,16 +62,16 @@ To add a promo banner module to a page and set the required properties, follow t
 1. In the **New template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
 1. Under **Page Outline**, add a **Default page** module to the **Body** slot. 
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-1. Use the template that you just created to create a page that is named **Promo banner page**. 
+1. Use the template that you just created to create a page that you name **Promo banner page**. 
 1. In the **Main** slot of the new page, add a container module. 
 1. In the pane on the right, set the **Width** value to **Fill Container**.
 1. Under **Page Outline**, add a promo banner module to the container module.
 1. In the settings for the banner module, add one or more banner messages. Each message can have text together with a link. You can edit the other properties to customize the module further.
-1. Select **Save**, and then select **Preview** to preview the page. At the top of the page, you should see an alert that shows the text that you added.
+1. Select **Save**, and then select **Preview** to preview the page. At the top of the page, you see an alert that shows the text that you added.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE]
-> A promo banner is typically used in the page header slot or a subheader slot.
+> Use a promo banner in the page header slot or a subheader slot.
 
 ## Additional resources
 
