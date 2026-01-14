@@ -33,7 +33,7 @@ To insert a QR code or barcode into a transactional email that you send as part 
     Here's an explanation of the preceding example:
 
     - **YOUR\_QR\_CODE\_BAR\_CODE\_SERVICE** represents the domain of your QR code or barcode service.
-    - **data** represents the parameter that the QR code or barcode service uses to receive the content that it should render as a QR code or bar code.
+    - **data** represents the parameter that the QR code or barcode service uses to receive the content that it should render as a QR code or barcode.
 
         Assign the value **%salesid%** to this parameter. In this example, the value is also used as alt text for the image.
 
@@ -44,11 +44,11 @@ To insert a QR code or barcode into a transactional email that you send as part 
 > [!NOTE]
 > Parameters might differ among QR code and barcode service providers. Therefore, be sure to contact your service provider to confirm the parameters that you must assign values to.
 
-## Add a QR code or bar code to a receipt email 
+## Add a QR code or barcode to a receipt email 
 
 To insert a QR code or barcode into a receipt email that can be sent after a purchase is made at the point of sale (POS), follow these steps:
 
-1. Open the source HTML for the receipt email template. Add an HTML **\<img\>** tag that points to your QR code or bar code service. Here's an example:
+1. Open the source HTML for the receipt email template. Add an HTML **\<img\>** tag that points to your QR code or barcode service. Here's an example:
 
     ```HTML
     <img src="https://YOUR_QR_CODE_BAR_CODE_SERVICE?data=%receiptid%&param1=value1&param2=value2" alt="%receiptid%" />
@@ -57,7 +57,7 @@ To insert a QR code or barcode into a receipt email that can be sent after a pur
     Here's an explanation of the preceding example:
 
     - **YOUR\_QR\_CODE\_BAR\_CODE\_SERVICE** represents the domain of your QR code or barcode service.
-    - **data** represents the parameter that the QR code or barcode service uses to receive the content that it should render as a QR code or bar code.
+    - **data** represents the parameter that the QR code or barcode service uses to receive the content that it should render as a QR code or barcode.
 
         The value **%receiptid%** must be assigned to this parameter. In this example, notice that the value is also used as alt text for the image.
 
