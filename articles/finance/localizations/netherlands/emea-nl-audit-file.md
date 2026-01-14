@@ -25,17 +25,8 @@ This functionality is available for legal entities whose primary address is in t
 
 To set up the Audit File Financial XAF 4.0 for the Netherlands, follow these steps:
 
-1. [Turn on features in Feature management.](#features)
 1. [Import Electronic reporting configurations.](#import)
-1. [Configure RGS (ReferentieGrootboekSchema, standard chart of accounts)](#coa)
-
-### <a name="features"></a>Turn on features in Feature management
-
-1. In the **Feature management** workspace, on the **All** tab, find and select the following features in the feature list:
-
-    - **Performance enhancement for general ledger dimension set balance calculation**. Learn more about the **Performance enhancement for general ledger dimension set balance calculation** feature in [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md).
-
-1. Select **Enable now**.
+2. [Configure RGS (ReferentieGrootboekSchema, standard chart of accounts)](#coa)
 
 ### <a name="import"></a>Import Electronic reporting configurations
 
@@ -55,17 +46,17 @@ Import the most recent versions of the configurations. The version description u
 In the Audit File Financial XAF 4.0 for Netherlands, you must associate main accounts that you use in Finance with Dutch RGS (ReferentieGrootboekSchema, standard chart of accounts). Use the [consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md) functionality to create this association.
 
 1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). For example, create a group named **RGS**.
-1. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the `<RGScode>` element of XAF 4.0 under the **company** \> **generalLedger** \> **ledgerAccount** node. In the **Consolidation account name** field, optionally specify the standard account name or description. This value isn't used in XAF 4.0.
+2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the `<RGScode>` element of XAF 4.0 under the **company** \> **generalLedger** \> **ledgerAccount** node. In the **Consolidation account name** field, optionally specify the standard account name or description. This value isn't used in XAF 4.0.
 
 ## Generate the Audit file
 
 To generate the Audit file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Audit file**.
-1. In the **From date** field, enter a date. 
-1. In the **To date** field, enter a date.
-1. In the **Consolidation account group** field (support in "Audit File Financial XAF 4.0 in XML (NL)" ER format), select the name of the consolidation account group that you created and set up for Dutch RGS (ReferentieGrootboekSchema). This parameter is optionally required in Audit File Financial XAF 4.0 as of January 1, 2026.
-1. In the **Format mapping** field, enter "Audit File Financial XAF 4.0 in XML (NL)" to report XAF 4.0 starting January 1, 2026, or "Audit file (NL)" to report XAF 3.2 before December 31, 2025.
-1. Select **OK**.
+2. In the **From date** field, enter a date. 
+3. In the **To date** field, enter a date.
+4. In the **Consolidation account group** field (support in "Audit File Financial XAF 4.0 in XML (NL)" ER format), select the name of the consolidation account group that you created and set up for Dutch RGS (ReferentieGrootboekSchema). This parameter is optionally required in Audit File Financial XAF 4.0 as of January 1, 2026.
+5. In the **Format mapping** field, enter "Audit File Financial XAF 4.0 in XML (NL)" to report XAF 4.0 starting January 1, 2026, or "Audit file (NL)" to report XAF 3.2 before December 31, 2025.
+6. Select **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
