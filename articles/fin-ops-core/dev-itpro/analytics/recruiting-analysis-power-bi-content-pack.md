@@ -2,9 +2,9 @@
 title: Recruiting Power BI content
 description: Learn about recruiting Power BI content, including a table outlining reports and visuals in the recruitment management workspace.
 author: jcart1106
-ms.author: johnmichalak
+ms.author: twheeloc
 ms.topic: concept-article
-ms.date: 12/19/2017
+ms.date: 01/14/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -18,12 +18,14 @@ ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This article describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that build the content.
 
 ## Accessing the Power BI content
-The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.
+
+The **Recruiting** Power BI content appears in the **Recruitment management** workspace.
 
 ## Reports and visuals in the Recruitment management workspace
+
 The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting. The content consists of an overview tab and additional tabs that contain details. The following table describes the reports on each tab.
 
 | Report               | Contents |
@@ -34,10 +36,11 @@ The **Recruitment management** workspace contains an **Analytics** tab. This tab
 | Recruiting Analysis  | Net hire ratio, average days to hire, percentage of bad hires, recruiting costs, number of recruitment projects, hire to applied, and applicants versus openings by recruitment project |
 
 ## Understanding the data model and entities
+
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in
 Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-The following table shows the entities that the **Recruiting** Power BI content was based on.
+The following table shows the entities that the **Recruiting** Power BI content is based on.
 
 | Entity               | Contents                                                         | Relationships with other entities |
 |----------------------|------------------------------------------------------------------|-----------------------------------|
@@ -55,6 +58,5 @@ The following table shows the entities that the **Recruiting** Power BI content 
 | Performance          | Rating, description, and rating model                            | Applicant, Employed Applicant, Terminated Applicant |
 | Recruitment Project  | Project description, project status, and openings                | Applicant, Employed Applicant, Terminated Applicant |
 | Terminated Applicant | Terminated applicants, reason, performance, and termination date | Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
