@@ -1,1 +1,2 @@
-_**The contents of this article doesn't apply to:** Brazil, and Mexico_
+> [!IMPORTANT]
+> The contents of this article do not apply to: Brazil or Mexico.
