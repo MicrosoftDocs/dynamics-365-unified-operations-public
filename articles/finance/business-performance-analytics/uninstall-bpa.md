@@ -145,7 +145,7 @@ processDatalakeFolderDeletion = (shouldReset) => {
                     console.log("Data Lake folder cleanup is in progress");
 
                     return Promise.resolve({
-                        message: "Clean up the transformation folder is in progress. The solution cannot be deleted until it has completed. This may take a while.",
+                        message: "Cleanup of the transformation folder is in progress. The solution cannot be deleted until it has completed. This may take a while.",
                         errorCode: "DATA_LAKE_CLEANUP_RUNNING"
                     });
 
