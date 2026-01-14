@@ -58,7 +58,7 @@ To build a privacy policy page, follow these steps:
 1. In the **Content Rich Block** module, add a **Content rich block item** module.
 1. In the properties pane for the **Content Rich Block** module, select **Add Data Source**, and then select **Rich Text Content**.
 1. In the rich text editor, enter the content for the privacy policy page. Expand the rich text editor to full-screen mode as you require.
-1. When you've finished entering content, select **Preview** to preview the page in the web browser.
+1. When you finished entering content, select **Preview** to preview the page in the web browser.
 1. Complete any remaining additions to the page and module properties.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
@@ -78,12 +78,12 @@ To add a link to a footer fragment, follow these steps:
 1. Under **Fragment name**, enter a name for the fragment, and then select **OK**.
 1. In the **Footer category** slot, add a **Footer item** module.
 1. In the properties pane on the right, select **Link text**.
-1. In the **Link text** dialog box, enter the link text and link target of the privacy policy page, and then click **OK**.
+1. In the **Link text** dialog box, enter the link text and link target of the privacy policy page, and then select **OK**.
 1. To get the URL of the privacy policy page, go to **Pages**, go to the privacy policy page, and copy the URL from the properties pane.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Preview the fragment, and test the link to the privacy policy page.
 
-The fragment can now be referenced in the template for other site pages. When this fragment is referenced in the **Footer** module of a template, the link reference will appear on any pages that are built by using that template.
+The fragment can now be referenced in the template for other site pages. When this fragment is referenced in the **Footer** module of a template, the link reference appears on any pages that are built by using that template.
 
 ## Additional resources
 
