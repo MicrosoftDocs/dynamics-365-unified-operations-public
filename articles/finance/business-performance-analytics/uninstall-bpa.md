@@ -21,7 +21,7 @@ If you uninstall and then reinstall Business performance analytics, custom repor
 2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
 3. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
  
-### Data cleanup before uninstall
+### Data clean up before uninstall
 
 When Business performance analytics is uninstalled, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, may remain in the customer's storage. These residual elements aren't automatically deleted and can persist unless explicitly removed. To help maintain a clean and efficient environment, customers should run the data cleanup script provided below before performing the uninstall. This ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup may include removing folders like msdyn_BpaConfigs, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 
@@ -41,7 +41,7 @@ To perform data cleanup before uninstallation:
 4. The cleanup process starts. This process might take a while to complete.
 5. To check the status of the cleanup, you can:
     - Rerun steps 3 and 4 to get the current status
-    - Check the execution history of the flow "Business performance analytics uninstall datalake cleanup"
+    - Check the execution history of the flow "Business performance analytics uninstall data lake cleanup"
 
 > [!IMPORTANT]
 > Wait for the cleanup process to complete before proceeding with the solution uninstallation.
@@ -154,7 +154,7 @@ processDatalakeFolderDeletion = (shouldReset) => {
 
                     await triggerCleanupWorkflow();
                     return Promise.resolve({
-                        message: "'Business performance analytics uninstall datalake cleanup' execution failed. Retrying. Contact support for repeated failures.",
+                        message: "'Business performance analytics uninstall data lake cleanup' execution failed. Retrying. Contact support for repeated failures.",
                         errorCode: "DATA_LAKE_CLEANUP_RETRY"
                     });
 
