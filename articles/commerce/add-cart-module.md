@@ -1,11 +1,10 @@
 ---
 title: Cart module
-description: This article covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about cart modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -27,11 +26,11 @@ The cart module renders data based on the cart ID, which is a browser cookie ava
 
 The following image shows an example of a cart page on the Fabrikam site.
 
-![Example of a cart module on the Fabrikam site.](./media/cart2.PNG)
+:::image type="content" source="./media/cart2.PNG" alt-text="Screenshot of a cart module on the Fabrikam site.":::
 
 The following image shows an example of a cart page on the Fabrikam site. In this example, there is a handling fee for a line item.
 
-![Example of a cart module with a handling fee for a line item.](./media/ecommerce-handling-fee.png)
+:::image type="content" source="./media/ecommerce-handling-fee.png" alt-text="Screenshot of a cart module with a handling fee for a line item.":::
 
 ## Cart module properties and slots
 
