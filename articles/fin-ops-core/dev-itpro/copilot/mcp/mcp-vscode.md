@@ -13,9 +13,6 @@ ms.date: 12/17/2025
 
 # Connect to the Dynamics 365 ERP MCP server with Visual Studio Code
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 The Model Context Protocol (MCP) is an open standard for connecting agent clients to various data systems like Dynamics 365 finance and operations apps. One of the benefits of the standard protocol is the ability to use the MCP server with any agent client that supports the standard. This guide provides information on how to configure GitHub Copilot in Visual Studio Code to connect to the Dynamics 365 ERP MCP server.
 
 For more information on MCP support in Visual Studio Code, see [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
