@@ -20,15 +20,15 @@ This article explains container modules and how to add them to site pages in Mic
 
 A container module hosts other modules inside it. The primary purpose of a container module is to define the layout of the modules that it contains through its properties. For example, those modules can appear side by side in a two-column, three-column, four-column, or six-column layout. You can limit them to the width of the container, or they can fill the screen. You can also add a heading to every container module.
 
-The three supported container modules are: container, container with 2-slots, and container with 3-slots. You can put modules of any type inside these containers. 
+The three supported container modules are: container, container with 2-slots, and container with 3-slots. You can put modules of any type inside these containers.
 
-> [!NOTE] 
+> [!NOTE]
 > Always put modules inside a container module so you can limit them to the width of the container.
 
 ## Examples of container modules in e-Commerce
 
 - A site author wants a three-column layout, where three modules appear side by side. Therefore, the site author uses a container module of the container with 3-slots type.
-- A site author wants a six-column layout, where six modules appear side by side. Therefore, the site author uses a container of the contain type that has six columns inside it.
+- A site author wants a six-column layout, where six modules appear side by side. Therefore, the site author uses a container module that has six columns inside it.
 - A site author wants to put a module on a page but doesn't want it to fill the screen. Therefore, the site author adds the module to a container module and sets the container's **Width** property to **Fit container**.
 
 The following image shows an example of a container module that contains a carousel module in Commerce site builder. In this example, the **Width** property of the container module is set to **Fill Screen**.
@@ -92,12 +92,12 @@ To add a container player module to a new page and set the required properties, 
 1. In the **New template** dialog box, under **Template name**, enter **Container template**, and then select **OK**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
-1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Create a new page** dialog box, under **Page name**, enter **Container page**, and then select **Next**.
 1. Under **Choose a template**, select the **Container template** that you created, and then select **Next**.
 1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
-1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
@@ -131,6 +131,5 @@ To add a container player module to a new page and set the required properties, 
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
