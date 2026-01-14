@@ -22,7 +22,7 @@ For more information on MCP support in Visual Studio Code, see [Use MCP servers 
 
 ## Prequisites
 Before building an agent in Visual Studio Code with the **Dynamics 365 ERP MCP server**, you must complete the following:
-1. Ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](./copilot-mcp.md).
+1. Ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
 2. Ensure the `VSCode` client ID is allowed in the **Allowed MCP clients** list. Learn more in [Allowed MCP clients](./copilot-mcp.md#Allowed-MCP-clients).
 3. Install the latest version of [Visual Studio Code](https://code.visualstudio.com/download).
 4. Enable access to [Copilot](https://code.visualstudio.com/docs/copilot/setup).
@@ -32,7 +32,7 @@ Follow the steps below to connect Visual Studio Code to the MCP server.
 
 1. In Visual Studio Code, run command (Ctrl + Shift + P), and select **MCP: Add Server...**.
 2. Select **HTTP (HTTP or Server-Sent Events)** to connect to the remote MCP server.
-3. In the **URL of the MCP server** input, enter <Finance and Operations URL value>/mcp. For example: `https://contososandbox.operations.dynamics.com/mcp`.
+3. In the **URL of the MCP server** input, enter `<Finance-and-Operations-base-URL-value>/mcp`. For example: `https://contososandbox.operations.dynamics.com/mcp`.
 4. Provide a **Server ID** value, or accept the default.
 5. Once the Server ID is entered, the mcp.json file is created with the server configuration. This configuration shows the server status and the number of tools retrieved from the server. You can also start or restart the connection to the server as needed.
 6. When the server is started, you then need to authenticate to teh server using the credentials for your finance and operations apps environment. When the dialog displays stating that the MCP server definition wants to authenticate to the environment, select **Allow**. You will then need to enter your credentials for the environment that will be used to connect to the MCP server from Visual Studio Code.
