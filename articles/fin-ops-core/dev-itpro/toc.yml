@@ -2381,6 +2381,10 @@ items:
             href: copilot/copilot-mcp.md
           - name: Build an agent with Dynamics 365 ERP MCP (preview)
             href: copilot/build-agent-mcp.md
+          - name: Use ERP MCP with Visual Studio Code
+            href: copilot/mcp/mcp-vscode.md
+          - name: Use ERP MCP with Microsoft Foundry
+            href: copilot/mcp/mcp-foundry.md
         - name: Tutorials
           items:
           - name: Extend Copilot capabilities with low-code plugins
