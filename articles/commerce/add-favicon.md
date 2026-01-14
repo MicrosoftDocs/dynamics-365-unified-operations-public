@@ -18,7 +18,7 @@ ms.custom:
 
 This article explains how to add a favicon to your Microsoft Dynamics 365 Commerce site.
 
-A favicon is a small graphics file that appears on a web browser tab, in the address bar, in the browsing history, and in bookmarks or favorites, among other places. Add a favicon to your site to represent and reinforce your brand, and help distinguish your site from other sites that your customers visit.
+A favicon is a small graphics file that appears on a web browser tab, in the address bar, in the browsing history, and in bookmarks or favorites. Add a favicon to your site to represent and reinforce your brand, and help distinguish your site from other sites that your customers visit.
 
 Although you can add multiple favicons of various sizes and file types to your site, this article shows how to add a single favicon. However, the same process and location are used to add more favicons.
 
@@ -67,7 +67,7 @@ To add the metatag fragment to the HTML **head** section of your pages, follow t
 > [!NOTE]
 > If your site uses more than one template, you must add the metatags fragment to all of them.
 
-When you preview pages that are based on the template that you added the metatags fragment to, you should now see the favicon on the browser tab.
+When you preview pages that are based on the template to which you added the metatags fragment, you should now see the favicon on the browser tab.
 
 ## Additional resources
 
