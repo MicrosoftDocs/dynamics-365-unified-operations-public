@@ -49,6 +49,8 @@ Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP se
    - Select **Add**.
    - Copy the **Value** immediately. The value won't be available after the form is closed.
 
+Leave the app registration open. You will need to return to the page to get ID values and add a redirect URL generated later in the process.
+
 ## Configure Dynamics 365 finance and operations apps
 1. In the Dynamics 365 finance and operations apps client, ensure the **Dynamics 365 ERP Model Context Protocol server** feature is enabled in Feature Management.
 2. Grant permissions to the application.
@@ -63,3 +65,49 @@ Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP se
    - In the **Name** field of the new record, enter a name for your MCP connection.
    - In the **ClientId** field, enter the **Application (client) ID** value of your new registered app from the Entra ID app registration.
    - Set the **Allowed** value to **true**.
+
+## Configure Microsoft Foundry
+
+### Add the MCP server as a custom tool
+1. Navigate to [Microsoft Foundry](ai.azure.com).
+2. Open your project, or create a new one.
+3. Select **Build** to open the Agent Builder.
+4. On the navigation pane, select **Tools**.
+5. Select **Connect a tool**.
+6. On the **Custom** tab of the **Select a tool** dialog, select **Model Context Protocol (MCP)**, then select **Create**.
+7. In the **Add Model Context Protocol tool** dialog, enter the following detail, then click **Connect**.
+
+   | Property | Value |
+   | -------- | ----- |
+   | **Name** | Provide a unique name, like "Dynamics365ERP" |
+   | **Remote MCP Server endpoint** | The URL of the remote MCP server for your Dynamics 365 finance and operations apps environment. This is formatted as `https://<your-environment-base-url>/mcp`. For example, `https://contoso.operations.dynamics.com/mcp`. |
+   | **Authentication** | OAuth Identity Passthrough |
+   | **Client ID** | Your Application (client) ID from your app registration configured in the previous steps |
+   | **Client secret** | The client secret configured for your app registration |
+   | **Token URL** | `https://login.microsoftonline.com/<your-tenant-ID>/oauth2/v2.0/token` -- Note: You can find your tenant ID on the **Overview** page of the Entra ID app registration. |
+   | **Auth URL** | `https://login.microsoftonline.com/<your-tenant-ID>/oauth2/v2.0/authorize` |
+   | **Refresh URL** | `https://login.microsoftonline.com/<your-tenant-ID>/oauth2/v2.0/token` |
+   | **Scopes** | `https://<your-environment-base-url>/.default` |
+
+### Configure the Redirect URL
+After configuring the MCP server in Microsoft Foundry, a redirect URL is generated that must be configured for your Entra ID app registration.
+
+1. On the **You've created a credential provider** dialog, copy the **Redirect URL** value.
+2. Navigate back to the Entra ID app registration you created earlier.
+3. Select **Authentication (Preview)** on the left navigation.
+4. On the **Authentication (Preview)** page, select **Add Redirect URI**.
+5. Select **Web**.
+6. Enter the generated redirect URL in the **Redirect URI** field.
+7. Under **Implicit grant and hybrid flows**, select both the following options:
+   - Access tokens (used for implicit flows)
+   - ID tokens (used for implicit and hybrid flows)
+8. Select **Configure**.
+
+## Test the MCP connection
+With the MCP tool configured in Microsoft Foundry, you can now create an agent to test the connection.
+
+1. In the Agent Builder in Microsoft Foundry, select **Create agent**.
+2. On the **Playground** tab, select a model from the available deployed models to manage the agent orchestration. Recommended models include `claude-sonnet-4-5` and `gpt-5-chat`.
+3. Provide instructions in the **Instructions** field to guide the agent orchestration in using the MCP tools. See [Providing agent instructions](../copilot/build-agent-mcp.md) for more information.
+4. **Save** the agent.
+5. In the **Mesage the agent...** box, send a message. For example, send "Find the Purchase Requsition form."
