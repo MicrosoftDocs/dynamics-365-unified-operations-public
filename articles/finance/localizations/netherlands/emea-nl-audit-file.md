@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 01/02/2026
+ms.date: 01/14/2026
 ms.reviewer: johnmichalak
 ms.search.region: Netherlands
 ms.search.validFrom: 2016-06-30
@@ -25,17 +25,8 @@ This functionality is available for legal entities whose primary address is in t
 
 To set up the Audit File Financial XAF 4.0 for the Netherlands, follow these steps:
 
-1. [Turn on features in Feature management.](#features)
 1. [Import Electronic reporting configurations.](#import)
 1. [Configure RGS (ReferentieGrootboekSchema, standard chart of accounts)](#coa)
-
-### <a name="features"></a>Turn on features in Feature management
-
-1. In the **Feature management** workspace, on the **All** tab, find and select the following features in the feature list:
-
-    - **Performance enhancement for general ledger dimension set balance calculation**. Learn more about the **Performance enhancement for general ledger dimension set balance calculation** feature in [New financial dimension sets](../../general-ledger/financial-dimension-set-new.md).
-
-1. Select **Enable now**.
 
 ### <a name="import"></a>Import Electronic reporting configurations
 
@@ -43,7 +34,7 @@ To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must f
 
 | Number | ER configuration name         | Type                                 | Description |
 |--------|-------------------------------|--------------------------------------|-------------|
-| 1      | Audit file model              | Model                                | A model for the Audit file for Netherlands. |
+| 1      | Audit file model              | Model                                | A model for the Audit file for the Netherlands. |
 | 2      | Audit File Financial XAF 4.0 in XML (NL) - starting January 1, 2026<br> Audit file (NL) - before December 31, 2025 | Format (exporting) | ER format for XML Auditfile Financieel, XAF. |
 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
