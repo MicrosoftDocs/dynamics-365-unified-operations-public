@@ -28,7 +28,7 @@ The following image shows an example of a buy box module on a product details pa
 
 :::image type="content" source="./media/ecommerce-pdp-buybox.PNG" alt-text="Screenshot of a buy box module.":::
 
-## Buy box module properties and slots 
+## Buy box module properties and slots
 
 On a product details page, a buy box divides into two regions: a media region on the left and a content region on the right. By default, the ratio of the width of the media region column to the width of the content region column is 2:1. On mobile devices, the two regions stack so that one region appears below the other region. You can use themes to customize the column widths and stacking rank.
 
@@ -38,7 +38,7 @@ A quantity selector is provided, so that customers can specify the quantity of i
 
 From the buy box, customers can also perform actions such as adding a product to the cart, adding a product to their wishlist, and selecting a pickup location. These actions can be performed on a product or a product variant. To add a product to a wishlist, the customer must be signed in.
 
-You can use themes to remove or change the order of buy box product properties and action controls. 
+You can use themes to remove or change the order of buy box product properties and action controls.
 
 ## Module properties
 
@@ -64,10 +64,8 @@ You can configure the following buy box module settings at **Site Settings \> Ex
 
 The buy box module that the Adventure Works theme provides has a module definition extension that supports implementation of a product specifications module within an accordion module in a PDP buy box. To showcase product specification attributes in a PDP buy box, add a product specification module to the accordion module slot in the buy box slot.
 
-
 > [!IMPORTANT]
 > The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
-
 
 ## Commerce Scale Unit interaction
 
