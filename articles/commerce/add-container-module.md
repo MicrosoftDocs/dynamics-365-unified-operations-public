@@ -1,11 +1,10 @@
 ---
 title: Container module
-description: This article covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about container modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/31/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,14 +16,14 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article explains container modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-A container module is a module that hosts other modules inside it. The primary purpose of a container module is to define, through the properties that are set for it, the layout of the modules that it contains. For example, those modules can appear side by side in a two-column, three-column, four-column, or six-column layout. They can also be limited to the width of the container, or they can fill the screen. A heading can also be added to every container module.
+A container module hosts other modules inside it. The primary purpose of a container module is to define the layout of the modules that it contains through its properties. For example, those modules can appear side by side in a two-column, three-column, four-column, or six-column layout. You can limit them to the width of the container, or they can fill the screen. You can also add a heading to every container module.
 
-Three container modules are supported: container, container with 2-slots, and container with 3-slots. Modules of any type can be put inside these containers. 
+The three supported container modules are: container, container with 2-slots, and container with 3-slots. You can put modules of any type inside these containers. 
 
 > [!NOTE] 
-> We recommend that you always put modules inside a container module, so that they can be limited to the width of the container.
+> Always put modules inside a container module so you can limit them to the width of the container.
 
 ## Examples of container modules in e-Commerce
 
@@ -34,21 +33,21 @@ Three container modules are supported: container, container with 2-slots, and co
 
 The following image shows an example of a container module that contains a carousel module in Commerce site builder. In this example, the **Width** property of the container module is set to **Fill Screen**.
 
-![Example of a container module.](./media/ecommerce-container.PNG)
+:::image type="content" source="./media/ecommerce-container.PNG" alt-text="Screenshot of a container module.":::
 
 ## Container module properties
 
 | Property name     | Values | Description |
 |-------------------|--------|-------------|
-| Heading           | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading can be provided for the container. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-| Width             | **Fit container** or **Fill screen** | If the value is set to **Fit container** (the default value), the modules inside the container are limited to the width of the container. If the value is set to **Fill screen**, the modules aren't limited to the container width but can fill the screen. |
-| Number of columns | **1**, **2**, **3**, **4**, **6**, or **12** | This property defines the number of columns in the container. A container can have up to 12 columns. |
+| Heading           | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading for the container. By default, the **H2** heading tag is used for the heading. However, you can change the tag to meet accessibility requirements. |
+| Width             | **Fit container** or **Fill screen** | If you set the value to **Fit container** (the default value), the modules inside the container are limited to the width of the container. If you set the value to **Fill screen**, the modules aren't limited to the container width but can fill the screen. |
+| Number of columns | **1**, **2**, **3**, **4**, **6**, or **12** | The number of columns in the container. A container can have up to 12 columns. |
 
 ## Container with 2-slots
 
 The container with 2-slots type is optimized for a two-column layout. This type of container has two slots to allow for a side-by-side view of the modules that are inside.
 
-Additional properties can be used to optimize the layout for different view ports (mobile devices, tablets, computers, and so on). For every view port, the width of each column can be defined. The following column width settings are available:
+Use additional properties to optimize the layout for different view ports (mobile devices, tablets, computers, and so on). For every view port, define the width of each column. The following column width settings are available:
 
 - **75%/25%** – The first module has a column width of 75 percent, and the second module has a column width of 25 percent. A **25%/75%** option is also available.
 - **50%/50%** – Both modules have equal column width.
@@ -59,31 +58,31 @@ Additional properties can be used to optimize the layout for different view port
 
 | Property name                   | Values | Description |
 |---------------------------------|--------|-------------|
-| Heading                         | Heading text and heading tag | An optional can be provided for the container. |
-| X-Small view port configuration | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | This property defines the layout for extra-small view ports. |
-| Small view port configuration   | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | This property defines the layout for small view ports, such as mobile devices. |
-| Medium view port configuration  | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | This property defines the layout for medium view ports, such as tablets. |
-| Large view port configuration   | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | This property defines the layout for large view ports, such as computers. |
+| Heading                         | Heading text and heading tag | An optional heading for the container. |
+| X-Small view port configuration | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | The layout for extra-small view ports. |
+| Small view port configuration   | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | The layout for small view ports, such as mobile devices. |
+| Medium view port configuration  | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | The layout for medium view ports, such as tablets. |
+| Large view port configuration   | **25%/75%**, **75%/25%**, **50%/50%**, **67%/33%**, **33%/67%**, or **100%** | The layout for large view ports, such as computers. |
 
-## Container with 3-slots
+## Container with three slots
 
-The container with 3-slots modules type is optimized for a three-column layout.
+The container with three slots modules type is optimized for a three-column layout.
 
-Additional properties can be used to optimize the layout for different view ports. For every view port, the width of each column can be defined. The following column width settings are available:
+Use additional properties to optimize the layout for different view ports. For every view port, define the width of each column. The following column width settings are available:
 
 - **33%/33%/33%** – All three modules have equal column width.
 - **50%/25%/25%** – The first module has a column width of 50 percent, and each of the remaining two modules has a column width of 25 percent. **25%/50%/25%** and **25%/25%/50%** options are also available.
 - **16%/16%/67%** – Each of the first two modules has a column width of 16 percent, and the third module has a column width of 67 percent. **16%/67%/16%** and **67%/16%/16%** options are also available.
 
-### Container with 3-slots properties
+### Container with three slots properties
 
 | Property name                   | Values | Description |
 |---------------------------------|--------|-------------|
-| Heading                         | Heading text and heading tag | An optional heading can be added to the container. |
-| X-Small view port configuration | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | This property defines the layout for extra-small view ports. |
-| Small view port configuration   | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | This property defines the layout for small view ports, such as mobile devices. |
-| Medium view port configuration  | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | This property defines the layout for medium view ports, such as tablets. |
-| Large view port configuration   | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | This property defines the layout for large view ports, such as computers. |
+| Heading                         | Heading text and heading tag | An optional heading for the container. |
+| X-Small view port configuration | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | The layout for extra-small view ports. |
+| Small view port configuration   | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | The layout for small view ports, such as mobile devices. |
+| Medium view port configuration  | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | The layout for medium view ports, such as tablets. |
+| Large view port configuration   | **33%/33%/33%**, **50%/25%/25%**, **25%/50%/25%**, **25%/25%/50%**, **16%/16%/67%**, **16%/67%/16%**, or **67%/16%/16%** | The layout for large view ports, such as computers. |
 
 ## Add a container module to a page
 
@@ -109,7 +108,7 @@ To add a container player module to a new page and set the required properties, 
 1. In the property pane for the container module, change the value of the **Number of columns** property to **3**.
 1. Add two more content block modules to the container module, and configure them.
 1. Select **Save**, and then select **Preview** to preview the page. You should now see three content block modules that appear side by side.
-1. After you've achieved the layout that you want, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+1. After you create the layout that you want, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
