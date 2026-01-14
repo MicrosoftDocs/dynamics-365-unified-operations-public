@@ -110,4 +110,4 @@ With the MCP tool configured in Microsoft Foundry, you can now create an agent t
 2. On the **Playground** tab, select a model from the available deployed models to manage the agent orchestration. Recommended models include `claude-sonnet-4-5` and `gpt-5-chat`.
 3. Provide instructions in the **Instructions** field to guide the agent orchestration in using the MCP tools. See [Providing agent instructions](../copilot/build-agent-mcp.md) for more information.
 4. **Save** the agent.
-5. In the **Mesage the agent...** box, send a message. For example, send "Find the Purchase Requsition form."
+5. In the **Message the agent...** box, send a message. For example, send "Find the Purchase Requsition form."
