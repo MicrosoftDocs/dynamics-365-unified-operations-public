@@ -2,7 +2,7 @@
 title: Switch between vendor designs
 description: Learn about how to switch vendor data integration between finance and operations apps and Dataverse, including an outline on using an extended vendor design.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 09/20/2019
 ms.reviewer: johnmichalak

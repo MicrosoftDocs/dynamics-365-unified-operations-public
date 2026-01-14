@@ -2,7 +2,7 @@
 title: Data import and export jobs overview
 description: Learn about how to use the Data management workspace to create and manage data import and export jobs with the outline on the import and export process.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template

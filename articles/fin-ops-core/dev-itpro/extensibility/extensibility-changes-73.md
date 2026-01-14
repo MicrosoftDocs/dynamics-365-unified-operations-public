@@ -2,7 +2,7 @@
 title: Extensibility changes in Finance and Operations, Enterprise edition 7.3
 description: Learn about the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 04/10/2018
 ms.reviewer: johnmichalak

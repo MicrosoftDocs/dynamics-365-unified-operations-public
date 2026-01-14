@@ -2,7 +2,7 @@
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3
 description: Learn about the extensibility features that were released in Microsoft Dynamics 365 for Finance and Operations version 10.0.3.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/14/2019
 ms.custom:

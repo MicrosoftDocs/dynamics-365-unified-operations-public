@@ -2,7 +2,7 @@
 title: Set up and install Regression suite automation tool tutorial
 description: Access a tutorial that shows how to set up and install Regression suite automation tool (RSAT), including an overview of key concepts.
 author: frankdahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: tutorial
 ms.date: 09/20/2019
 ms.reviewer: johnmichalak

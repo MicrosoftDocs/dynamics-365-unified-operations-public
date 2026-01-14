@@ -2,7 +2,7 @@
 title: Troubleshoot issues during initial synchronization
 description: Learn about how you can fix issues that might occur during initial synchronization, including issues relating to checking for errors.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 05/20/2024
 ms.reviewer: johnmichalak

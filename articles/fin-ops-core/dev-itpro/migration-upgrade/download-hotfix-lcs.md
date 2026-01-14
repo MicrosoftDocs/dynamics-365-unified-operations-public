@@ -2,7 +2,7 @@
 title: Download updates from Lifecycle Services (LCS)
 description: Learn about what updates you should expect to see, and how you can get the updates from Lifecycle Services, including an overview on types of updates.
 author: AngelMarshall
-ms.author: tsmarsha
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

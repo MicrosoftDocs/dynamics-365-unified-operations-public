@@ -2,7 +2,7 @@
 title: Tables supported for duplicate and master record data sharing
 description: Learn about the tables supported for duplicate and master record data sharing. These are mechanisms for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 01/23/2023
 ms.reviewer: johnmichalak

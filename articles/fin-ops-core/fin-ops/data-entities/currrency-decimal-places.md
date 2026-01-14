@@ -2,7 +2,7 @@
 title: Currency data-type migration for dual-write
 description: Learn about how to change the number of decimal places that dual-write supports for currency, including an outline on requesting migration from Microsoft.
 author: RamaKrishnamoorthy
-ms.author: yiabdi
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

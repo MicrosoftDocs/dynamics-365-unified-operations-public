@@ -2,7 +2,7 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: Learn about how to specify how and when you receive service updates for your environments, including an outline on canceled updates.
 author: angelmarshall
-ms.author: tsmarsha
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/02/2023
 ms.custom: bap-template

@@ -2,7 +2,7 @@
 title: Maintain test cases in Regression suite automation tool (RSAT)
 description: Learn about how to maintain test cases and attachments in Regression suite automation tool (RSAT), including an overview on viewing test case information.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 11/27/2023
 ms.custom:

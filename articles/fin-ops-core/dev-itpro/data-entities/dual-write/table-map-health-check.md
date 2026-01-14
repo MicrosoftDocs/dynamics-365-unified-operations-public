@@ -2,7 +2,7 @@
 title: Errors codes for the table map health check
 description: Learn about error codes for the table map health check, including a table that provides messages and details associated with various error codes.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/31/2022
 ms.reviewer: johnmichalak

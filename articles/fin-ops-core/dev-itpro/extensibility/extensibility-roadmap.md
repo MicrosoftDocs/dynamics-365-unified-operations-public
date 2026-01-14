@@ -2,7 +2,7 @@
 title: Application extensibility roadmap
 description: Learn about the requirements and schedule for converting code from overlayering-based to extension-based, including additional information about customizations.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/10/2017
 ms.reviewer: johnmichalak

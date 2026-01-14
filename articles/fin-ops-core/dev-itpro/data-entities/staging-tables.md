@@ -2,7 +2,7 @@
 title: Clean up staging tables
 description: Learn how to clean up staging history, a feature available to users who have the Data Management Administrator role.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.reviewer: twheeloc
 ms.topic: article
 ms.date: 1/10/2024

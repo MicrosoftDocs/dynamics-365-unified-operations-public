@@ -2,7 +2,7 @@
 title: Recurring integrations
 description: Learn about recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 03/13/2025
 ms.reviewer: johnmichalak

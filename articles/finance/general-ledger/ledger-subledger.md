@@ -2,7 +2,7 @@
 title: Ledger, subledger, and subledger journal accounting entries overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
 author: prasungoel
-ms.author: prasungoel
+ms.author: johnmichalak
 ms.topic: concept-article
 ms.date: 03/10/2025
 ms.custom:

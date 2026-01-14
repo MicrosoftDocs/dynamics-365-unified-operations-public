@@ -2,7 +2,7 @@
 title: Model aggregate data
 description: This tutorial walks you through the process of modeling aggregate data, including an outline of prerequisites and key concepts.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 12/18/2017
 ms.reviewer: johnmichalak

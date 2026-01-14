@@ -2,7 +2,7 @@
 title: What's new or changed for India GST in 10.0.03 (June 2019)
 description: Learn about new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03, including outlines on new features and updates.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

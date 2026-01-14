@@ -2,7 +2,7 @@
 title: Data management package REST API
 description: Learn about the data management framework's package REST API, including a table that outlines recurring integration APIs for various decision points.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 08/22/2024
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: User-based authentication
 description: Learn about how to configure user-based authentication so that it can be used with the Regression suite automation tool (RSAT).
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 11/23/2023
 ms.custom: 

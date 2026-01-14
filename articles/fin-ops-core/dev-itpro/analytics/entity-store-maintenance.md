@@ -2,7 +2,7 @@
 title: Resolve issues after entity store maintenance
 description: Learn about procedures that must be completed after entity store maintenance, including if you're using application analytical workspaces.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/09/2025
 ms.reviewer: johnmichalak

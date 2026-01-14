@@ -2,7 +2,7 @@
 title: Application Connector
 description: Learn about the Application Connector for Microsoft Power Automate and Logic Apps, including prerequisites, triggers, and actions.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 03/08/2021
 ms.reviewer: johnmichalak

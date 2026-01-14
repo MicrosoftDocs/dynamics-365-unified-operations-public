@@ -2,7 +2,7 @@
 title: Business events and Azure Service Bus
 description: Learn how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 author: Sunil-Garg
-ms.author: kamanick
+ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
 ms.date: 11/04/2019
 # ms.custom: [used by loc for topics migrated from the wiki]

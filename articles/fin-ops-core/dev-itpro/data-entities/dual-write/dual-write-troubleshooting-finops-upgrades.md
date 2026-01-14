@@ -2,7 +2,7 @@
 title: Troubleshoot issues from upgrades of finance and operations apps
 description: Learn about troubleshooting information that can help you fix issues that are related to upgrades of finance and operations apps.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: troubleshooting-general
 ms.date: 03/16/2020
 ms.reviewer: johnmichalak

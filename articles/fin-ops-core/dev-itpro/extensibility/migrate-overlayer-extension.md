@@ -2,7 +2,7 @@
 title: Migrate from overlayering to extensions
 description: Learn about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
 ms.date: 04/10/2018
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: What's new or changed for India GST in 10.0.08 (February 2020)
 description: Learn about new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.08, including outlines on new features.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

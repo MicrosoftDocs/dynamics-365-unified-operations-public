@@ -2,7 +2,7 @@
 title: Cancel a running batch job
 description: Learn about how to cancel a batch job that is running, including overviews on aborting tasks in a batch job and enhanced batch abort features.
 author: karimelazzouni
-ms.author: sopat
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 11/17/2023
 ms.reviewer: johnmichalak

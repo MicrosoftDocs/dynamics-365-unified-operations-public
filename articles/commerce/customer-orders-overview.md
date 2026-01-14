@@ -12,7 +12,7 @@ ms.reviewer: josaw
 ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
-ms.author: anpurush
+ms.author: johnmichalak
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template

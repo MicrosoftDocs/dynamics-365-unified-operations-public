@@ -2,7 +2,7 @@
 title: Considerations for initial synchronization
 description: Learn about cosniderations, constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 10/10/2023
 ms.reviewer: johnmichalak

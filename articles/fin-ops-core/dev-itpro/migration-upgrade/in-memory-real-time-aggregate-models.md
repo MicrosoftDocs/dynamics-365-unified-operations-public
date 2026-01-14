@@ -2,7 +2,7 @@
 title: Transition from Analysis Services cubes to aggregate models
 description: Learn about how in-memory, real-time aggregate models are used for analytics, and why we transitioned from using Server Analysis Services (SSAS) cubes.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak

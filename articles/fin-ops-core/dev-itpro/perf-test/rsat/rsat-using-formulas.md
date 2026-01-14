@@ -2,7 +2,7 @@
 title: Use formulas as parameters
 description: Learn about how to use formulas with the Regression suite automation tool (RSAT) to modify test parameters, including code examples.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 11/24/2023
 ms.custom: 

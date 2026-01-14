@@ -2,7 +2,7 @@
 title: Troubleshoot service authentication issues
 description: Access some tips for troubleshooting issues that involve service authentication, including reviewing event logs.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: troubleshooting-general
 ms.date: 12/20/2024
 ms.reviewer: johnmichalak

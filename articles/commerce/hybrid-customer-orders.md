@@ -17,7 +17,7 @@ ms.reviewer: josaw
 ms.assetid: 9d99a5b9-4662-499a-bece-3ea1d6092934
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: anpurush
+ms.author: johnmichalak
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

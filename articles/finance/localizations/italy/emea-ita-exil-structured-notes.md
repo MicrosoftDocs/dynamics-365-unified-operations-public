@@ -2,7 +2,7 @@
 title: Advanced notes management
 description: Learn how to set up and print predefined notes for customers, vendors, and products, including prerequisites and an outline on setting up advanced notes.
 author: prabhatb 
-ms.author: prabhatb 
+ms.author: johnmichalak 
 ms.topic: article
 ms.custom: 
   - bap-template

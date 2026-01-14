@@ -2,7 +2,7 @@
 title: Extensibility home page
 description: Access links to topics about the extensibility home page, including links for getting started, fundamentals on extensions, and breaking changes.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/14/2019
 ms.reviewer: johnmichalak

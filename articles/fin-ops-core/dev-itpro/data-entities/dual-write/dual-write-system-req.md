@@ -2,7 +2,7 @@
 title: System requirements for dual-write
 description: Learn about the system requirements for the setup of a dual-write connection as is currently supported for various regions.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/12/2023
 ms.custom: 

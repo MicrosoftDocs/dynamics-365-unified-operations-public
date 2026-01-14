@@ -2,7 +2,7 @@
 title: Data and metadata stored in Azure Data Lake
 description: Learn about how data and metadata are stored in Microsoft Azure Data Lake, including an overview of enhanced metadata.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 10/27/2023
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Virtual entities overview
 description: Learn about virtual entities for finance and operations apps, including an overview on architectures for finance and operations apps.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 05/29/2024
 ms.reviewer: johnmichalak

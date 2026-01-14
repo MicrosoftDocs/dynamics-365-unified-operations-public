@@ -2,7 +2,7 @@
 title: Initialize company data
 description: Learn how to initialize data with company information before you enable a dual-write connection, including prerequisites and a high-level scenario.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 12/01/2020
 ms.reviewer: johnmichalak

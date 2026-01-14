@@ -2,7 +2,7 @@
 title: What's new or changed in the Virtual Entity solution provider?
 description: Learn about new features and bug fixes that have been released in the Virtual Entity solution provider for finance and operations apps.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.date: 06/22/2023
 ms.reviewer: johnmichalak

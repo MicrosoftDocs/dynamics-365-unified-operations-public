@@ -2,7 +2,7 @@
 title: Tax settlement rounding based on customized currency decimal places
 description: Learn how to do tax settlement rounding that is based on customized currency decimal places, including outlines on requirements and the background.
 author: shtao
-ms.author: shtao
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 09/15/2021
 ms.custom:

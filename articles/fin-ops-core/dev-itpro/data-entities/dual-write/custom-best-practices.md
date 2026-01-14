@@ -2,7 +2,7 @@
 title: Customization guidance for dual-write
 description: Learn about customizing dual-write, including various guidances, examples, and best practices for cusotmizations.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 09/15/2021
 ms.reviewer: johnmichalak

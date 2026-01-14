@@ -2,7 +2,7 @@
 title: Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 description: Access a list of extensibility features that were implemented in July 2017, including a table of soft-sealed application models.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 11/08/2017
 ms.reviewer: johnmichalak

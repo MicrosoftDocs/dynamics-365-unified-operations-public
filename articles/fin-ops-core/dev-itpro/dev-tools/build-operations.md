@@ -2,7 +2,7 @@
 title: Build operations
 description: Learn about the process and operations to build projects and full build of model packages, including overviews on building and rebuilding projects.
 author: gianugo
-ms.author: gianura
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak

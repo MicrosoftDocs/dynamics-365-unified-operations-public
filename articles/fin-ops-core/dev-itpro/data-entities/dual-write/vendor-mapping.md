@@ -2,7 +2,7 @@
 title: Integrated vendor master
 description: Learn about vendor data fow and vendor integration between finance and operations apps and Dataverse, including a table that outlines various templates.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/15/2019
 ms.reviewer: johnmichalak

@@ -2,7 +2,7 @@
 title: Lifecycle Services for finance and operations apps customers
 description: Learn about Microsoft Dynamics 365 Lifecycle Services for finance and operations apps customers, including methodologies and milestones.
 author: angelmarshall
-ms.author: tsmarsha
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 02/08/2023
 ms.reviewer: twheeloc

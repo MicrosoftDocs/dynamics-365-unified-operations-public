@@ -2,7 +2,7 @@
 title: Upgrade to the party and global address book model
 description: Learn how to upgrade dual-write data to the party and global address book model, including a table outlining the purpose of various file names.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
 ms.date: 02/22/2025
 ms.reviewer: twheeloc

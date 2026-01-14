@@ -2,7 +2,7 @@
 title: Trigger dual-write for mapped fields
 description: Learn about the dual-write triggering behavior for mapped fields, outlining how dual-write platform core plugins will be triggered.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/22/2022
 ms.reviewer: johnmichalak

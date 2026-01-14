@@ -2,7 +2,7 @@
 title: Business events and Azure Event Grid
 description: Learn how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
 author: jaredha
-ms.author: kamanick
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

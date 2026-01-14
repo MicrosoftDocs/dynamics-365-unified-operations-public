@@ -2,7 +2,7 @@
 title: Planned maintenance window FAQ
 description: Access answers to frequently asked questions about the Microsoft planned maintenance windows, including infrastructure updates.
 author: angelmarshall
-ms.author: tsmarsha
+ms.author: johnmichalak
 ms.topic: faq
 ms.date: 02/25/2022
 ms.reviewer: johnmichalak

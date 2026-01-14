@@ -2,7 +2,7 @@
 title: Inventory availability in dual-write
 description: Learn about how to check inventory availability in dual-write, including available templates for exposing on-hand inventory data.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/26/2020
 ms.reviewer: johnmichalak

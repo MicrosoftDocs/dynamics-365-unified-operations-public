@@ -2,7 +2,7 @@
 title: Data import/export framework parameters
 description: Learn about the parameters and options for data import and export, including how to access the parameters and navigate various parameters.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 8/09/2023
 ms.custom:

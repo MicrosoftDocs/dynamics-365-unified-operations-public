@@ -2,7 +2,7 @@
 title: Row version change tracking for tables and data entities
 description: Learn how to enable row version change tracking for data entities and tables for finance and operations apps, includinga a table with comments for various rules.
 author: pngub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 02/07/2024
 ms.reviewer: johnmichalak

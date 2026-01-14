@@ -2,7 +2,7 @@
 title: Unlink and relink dual-write environments
 description: Learn how to unlink, clear the key tables, and then relink dual-write environments, including various scenarios and known issues.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template

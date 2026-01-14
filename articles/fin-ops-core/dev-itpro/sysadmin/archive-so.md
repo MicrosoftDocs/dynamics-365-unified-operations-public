@@ -2,7 +2,7 @@
 title: Archive Dynamics 365 Supply Chain Management Sales orders data
 description: Learn about how to archive Dynamics 365 Supply Chain Management Sales orders data, including prerequisites and an overview of installing solutions in Power Platform.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 4/09/2024
 ms.custom:

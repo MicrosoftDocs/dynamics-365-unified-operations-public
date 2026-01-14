@@ -2,7 +2,7 @@
 title: Integrated worker, job, and position
 description: Learn about integrated worker data in Microsoft Dynamics 365 apps, including a table that maps HR data for employees, contractors, positions, and jobs.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 05/08/2023
 ms.reviewer: twheeloc

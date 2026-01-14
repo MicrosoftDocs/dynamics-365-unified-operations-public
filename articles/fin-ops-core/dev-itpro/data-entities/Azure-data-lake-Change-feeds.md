@@ -2,7 +2,7 @@
 title: Change data in Azure Data Lake
 description: Learn about change data in a data lake and explains what you can do with it, including a table that outlines the contents of various field names.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 10/27/2023
 ms.reviewer: johnmichalak

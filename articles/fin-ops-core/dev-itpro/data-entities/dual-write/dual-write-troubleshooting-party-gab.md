@@ -2,7 +2,7 @@
 title: Party and global address book troubleshooting
 description: Learn about how you can fix issues that are related to dual-write party and global address book functions, including a table of prerequisites to verify.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: troubleshooting-general
 ms.date: 07/30/2021
 ms.reviewer: johnmichalak

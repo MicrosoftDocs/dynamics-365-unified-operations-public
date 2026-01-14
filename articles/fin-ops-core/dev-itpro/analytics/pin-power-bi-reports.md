@@ -2,7 +2,7 @@
 title: Pin Power BI content
 description: Learn about how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.date: 07/10/2020
 ms.topic: article
 ms.reviewer: johnmichalak

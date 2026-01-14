@@ -2,7 +2,7 @@
 title: Extensibility FAQ
 description: Access answers to some frequently asked questions about extensibility, including questions related to source code, documentation, and more.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: faq
 ms.date: 02/25/2019
 ms.reviewer: johnmichalak

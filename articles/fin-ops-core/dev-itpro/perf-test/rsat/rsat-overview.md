@@ -2,7 +2,7 @@
 title: Regression suite automation tool (RSAT)
 description: The Regression suite automation tool (RSAT) lets you record business tasks using the task recorder and convert them into automated tests without writing code.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: overview
 ms.date: 11/27/2023
 ms.reviewer: johnmichalak
