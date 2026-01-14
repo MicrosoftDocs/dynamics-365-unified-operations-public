@@ -19,7 +19,7 @@ ms.custom:
 
 This article provides an overview of how to manage content by using Microsoft Dynamics 365 Commerce site builder.
 
-You can change the look, feel, and content of your site in many ways. Depending on the required level of customization, non-developers can implement many of these changes within site builder, the web authoring toolset included with Dynamics 365 Commerce. Site builder enables you to build templates, select themes, and select and configure modules without writing any code. By contrast, development skills are required to create a new theme or module, because you must use the Commerce software development kit (SDK) and the Microsoft Dynamics Lifecycle Services (LCS) deployment workflow.
+You can change the look, feel, and content of your site in many ways. Depending on the required level of customization, nondevelopers can implement many of these changes within site builder, the web authoring toolset included with Dynamics 365 Commerce. Site builder enables you to build templates, select themes, and select and configure modules without writing any code. By contrast, development skills are required to create a new theme or module, because you must use the Commerce software development kit (SDK) and the Microsoft Dynamics Lifecycle Services (LCS) deployment workflow.
 
 The following video provides an overview of site builder content management. 
 
@@ -35,7 +35,7 @@ Select one of the following articles to get started.
 - To see how fragments can make content management more efficient and flexible, see [Work with fragments](work-with-fragments.md).
 - To help ensure a successful on-brand authoring experience for web content authors, see [Templates and layouts overview](templates-layouts-overview.md) and [Work with templates](work-with-templates.md).
 - To rearrange sections on a site page, see [Work with layouts](work-with-layouts.md).
-- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md) or [Work with CSS over-ride files](css-override-files.md).
+- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md) or [Work with CSS override files](css-override-files.md).
 - To rearrange or add new navigation options, see [Customize site navigation](customize-site-navigation.md).
 - To learn how to stage, preview, and publish a broad set of concurrent web content changes, see [Work with publish groups](publish-groups.md).
 
