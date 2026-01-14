@@ -17,7 +17,7 @@ ms.custom:
 
 This article explains active image modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Use an active image module to embed product tags in an image. E-commerce site users can then hover over the tags to preview products that are shown in the image. The previews appear in pop-up windows. By selecting a preview pop-up window, users can go directly to the product details page (PDP) for the corresponding product.
+Use an active image module to embed product tags in an image. E-commerce site users can then hover over the tags to preview products that are shown in the image. The previews appear in pop-up windows. When a user selects a preview pop-up window, they can go directly to the product details page (PDP) for the corresponding product.
 
 Define the tags by using X and Y coordinates on the image. Configure each tagged point with the product ID of the product that the tag represents in the image.
 
@@ -38,7 +38,7 @@ The following illustration shows an example of a preview pop-up window on a hero
 | Active coordinates | X and Y coordinates, and a product ID number | Each active image array consists of X and Y coordinates, and a product ID number.|
 | Heading            | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | By default, the **H2** heading tag is used for the heading, but the tag can be changed to meet accessibility requirements. |
 | Paragraph          | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities are supported, such as hyperlinks, and bold, underlined, and italic text. Some of these capabilities can be overridden by the page theme that is applied to the module. |
-| Link               | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector | The module supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive, to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
+| Link               | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector | The module supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive, to meet accessibility requirements. Links can be configured so that they're opened on a new tab. |
 | Sub text           | Heading, text, and links | Additional context for the image can be added, such as an author or designer name, or links to personal blogs.|
 | Text theme         | **Light** or **Dark** | This property lets a user set the text to light or dark, based on the background image. It's available as a theme extension in the Adventure Works theme. |
 
