@@ -67,11 +67,11 @@ Once enabled, feed items can be queried using standard Dataverse OData endpoints
 
 :::image type="content" source="media/agent-feed-enable-virtual-entity-enable.png" alt-text="Screenshot of enabling the Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity-enable.png":::
 
-### Control rendering of the the agent feed card
+### Control rendering of the agent feed card
 
 #### Render feed items using the default card
 
-Agent feed items are rendered in the Immersive Home through card providers. The default card default provider is sufficient for many scenarios and requires no additional configuration.
+Agent feed items are rendered in the Immersive Home through card providers. The default card default provider is sufficient for many scenarios.
 
 :::image type="content" source="media/agent-feed-default-card.png" alt-text="Screenshot of an agent feed item rendered in the default card." lightbox="media/agent-feed-default-card.png":::
 
@@ -84,7 +84,7 @@ By default, feed items use the **DefaultAgentFeedCardProvider**, which renders:
 
 :::image type="content" source="media/agent-feed-default-card-annotated.png" alt-text="Screenshot of an agent feed item rendered in the default card with annotations." lightbox="media/agent-feed-default-card-annotated.png":::
 
-The default card provider does not support any actions. 
+The default card provider doesn't support any actions.
 
 #### How to create custom card designs for feed items in Immersive Home
 
@@ -97,7 +97,7 @@ For example: ExpenseCardProvider
 **Step 2: Implement Card Provider class**
 Create an X++ class implementing the CardProvider interface, for example create a new XPP class called "ImmersiveHomeExpenseCardProvider".
 
-Card providers use the Web component library to render content. See below example for a card provider that may render expense related agent feed items.  
+Card providers use the Web component library to render content. This example for a card provider renders expense related agent feed items.  
 
 ```C#
 using System.ComponentModel.Composition;
@@ -324,7 +324,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**
 
 POST {organizationUrl}/api/data/v9.2/**msdyn_UpdateAgentFeedItemCustomApi**
 
-Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see below)
+Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...**
 
 #### Required parameters - update feed item
 
