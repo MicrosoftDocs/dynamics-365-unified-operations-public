@@ -33,7 +33,7 @@ The page name must be unique to your site and should be descriptive so you can f
 Enter a URL for your new page. When you create a page, enter a string that forms a complete URL. This string is known as a relative URL or a URL slug. A complete URL is generated based on the URL slug, and the new page is assigned to it. You can change the URL slug later, before you publish the page. Learn more in [Create a page URL](create-page-URL.md).
 
 > [!NOTE]
-> Dynamics 365 Commerce decouples URLs and content. In other words, you can create a page that isn't associated with an URL, and you can create a URL that isn't associated with a page. Therefore, you can swap content for a URL without downtime, and redirects are easier to manage.
+> Dynamics 365 Commerce decouples URLs and content. In other words, you can create a page that isn't associated with a URL, and you can create a URL that isn't associated with a page. Therefore, you can swap content for a URL without downtime, and redirects are easier to manage.
 
 ## Add a new page
 
