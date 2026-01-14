@@ -1,11 +1,10 @@
 ---
 title: Breadcrumb module
-description: This article covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about breadcrumb modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/30/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,35 +16,35 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article describes breadcrumb modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Breadcrumb modules are used to provide secondary navigation on site pages. They are typically shown at the top of a page, below the header. Although breadcrumb modules can be added to any page, they are most often used on product details pages (PDPs), to show the product category hierarchy and provide a quick way to move around a site. A breadcrumb module can also be used to show a "Back to results" link when users open a PDP from a search or list page. In this way, users can quickly return to their filtered list page to continue shopping.
+Use breadcrumb modules to provide secondary navigation on site pages. Typically, show them at the top of a page, below the header. Although you can add breadcrumb modules to any page, they're most often used on product details pages (PDPs) to show the product category hierarchy and provide a quick way to move around a site. You can also use a breadcrumb module to show a "Back to results" link when users open a PDP from a search or list page. In this way, users can quickly return to their filtered list page to continue shopping.
 
-On pages that have product category context, such as PDPs and category pages, breadcrumb modules show the category hierarchy. On pages that don't have category context, breadcrumb modules show **&lt;Site root&gt; / &lt;Current page&gt;** by default. Breadcrumb modules can also be manually configured on other types of site pages to show links to specific pages on the site.
+On pages that have product category context, such as PDPs and category pages, breadcrumb modules show the category hierarchy. On pages that don't have category context, breadcrumb modules show **&lt;Site root&gt; / &lt;Current page&gt;** by default. You can also manually configure breadcrumb modules on other types of site pages to show links to specific pages on the site.
 
 > [!NOTE]
 > The breadcrumb module is available in the Dynamics 365 Commerce 10.0.12 release.
 
 The following image shows an example of a breadcrumb module that shows the category hierarchy on a PDP.
 
-![Example of a breadcrumb module.](./media/ecommerce-breadcrumb.PNG)
+:::image type="content" source="./media/ecommerce-breadcrumb.PNG" alt-text="Screenshot of a breadcrumb module.":::
 
 ## Breadcrumb module settings
 
-The breadcrumb module relies on the **Breadcrumb display type on PDP** setting, which is defined at **Site Settings \> Extensions** in site builder. This setting has three possible values:
+The breadcrumb module relies on the **Breadcrumb display type on PDP** setting, which you define at **Site Settings \> Extensions** in site builder. This setting has three possible values:
 
-- **Show category hierarchy** – When this value is selected, the breadcrumb module will show the full category hierarchy of the product that is viewed on the PDP.
-- **Show back to results** – When this value is selected, the breadcrumb module will show a "Back to results" link on a PDP if the user opened the PDP from a module that allows for a "Back to results" link. This functionality is available when users navigate from category, search, list, and recommendation lists pages. To support this functionality, product collection and search results modules have a property that is named **Allow back to results on PDP**. This property gives you the flexibility to define which modules should support the "Back to results" link functionality on the PDP. For example, when **Show back to results** is selected for the **Breadcrumb display type on PDP** setting of the breadcrumb module, and **Allow back to results on PDP** is selected for the search page search results module, a "Back to results" link will be shown when users navigate from the search page to a PDP.
-- **Show category hierarchy and back to results** – This value is a combination of the previous two. When this value is selected, the breadcrumb module will show both the full category hierarchy and a "Back to results" link (if it's configured) on a PDP.
+- **Show category hierarchy** – When you select this value, the breadcrumb module shows the full category hierarchy of the product that the user views on the PDP.
+- **Show back to results** – When you select this value, the breadcrumb module shows a "Back to results" link on a PDP if the user opened the PDP from a module that allows for a "Back to results" link. This functionality is available when users navigate from category, search, list, and recommendation lists pages. To support this functionality, product collection and search results modules have a property that's named **Allow back to results on PDP**. This property gives you the flexibility to define which modules should support the "Back to results" link functionality on the PDP. For example, when **Show back to results** is selected for the **Breadcrumb display type on PDP** setting of the breadcrumb module, and **Allow back to results on PDP** is selected for the search page search results module, a "Back to results" link appears when users navigate from the search page to a PDP.
+- **Show category hierarchy and back to results** – This value is a combination of the previous two. When you select this value, the breadcrumb module shows both the full category hierarchy and a "Back to results" link (if it's configured) on a PDP.
 
 > [!IMPORTANT]
-> These settings are available in the Dynamics 365 Commerce 10.0.12 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+> These settings are available in the Dynamics 365 Commerce 10.0.12 release. If you're updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Breadcrumb module properties
 
 | Property name | Values | Description |
 |---------------|--------|-------------|
-| Root | Text or link| This optional property specifies link text and a link target for the breadcrumb site root. If this property isn't configured, no root will be defined. |
+| Root | Text or link| This optional property specifies link text and a link target for the breadcrumb site root. If you don't configure this property, the breadcrumb has no root. |
 | Breadcrumb link | Link | This optional property specifies links for a manually configured breadcrumb, if these links are required. Links appear in the order that they are listed in. |
 
 ## Add a breadcrumb module to a new page
