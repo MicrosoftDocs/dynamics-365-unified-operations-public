@@ -37,7 +37,7 @@ The following image shows an example of a gift card module on a checkout page.
 
 ## Module properties
 
-- **Show additional fields** – This property defines what fields display for gift cards in addition to the gift card number, which always displays by default. For example, some gift cards support displaying a personal identification number (PIN), and others support displaying a PIN and expiration date. Alternatively, set this property to "None", which displays only the gift card number and no extra fields.
+- **Show additional fields** – This property defines what fields display for gift cards in addition to the gift card number, which always displays by default. For example, some gift cards support displaying a personal identification number (PIN), and others support displaying a PIN and expiration date. Alternatively, set this property to "None," which displays only the gift card number and no extra fields.
 
     The following values are supported:
 
