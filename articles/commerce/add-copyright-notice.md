@@ -59,7 +59,7 @@ The footer that contains the copyright notice automatically appears at the botto
 
 [Add languages to your site](add-languages-to-site.md)
 
-[Add script code to site pages to support telemetry](add-telemetry.md)
+[Add script code to site pages to support telemetry    ](add-telemetry.md)
 
 
 
