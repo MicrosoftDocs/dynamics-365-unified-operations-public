@@ -18,7 +18,7 @@ ms.custom:
 
 This article covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Use a carousel module to put multiple promotional items, including rich images, in a rotating carousel banner that customers can browse. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
+Use a carousel module to put multiple promotional items, including rich images, in a rotating carousel banner that customers can browse. For example, a retailer can showcase multiple new products or promotions by using a carousel module on a home page.
 
 You can add content block modules inside a carousel module. The properties of the carousel module then define how those modules are rendered.
 
