@@ -30,7 +30,7 @@ originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+| Budgeting | Allow cancelation of individual lines on General budget reservations | The feature enables users to cancel individual lines within a General budget reservation. By introducing line-level cancelation, users have the flexibility to manage budget reservations compliantly. If the line has been **Cancelled**, it's also considered **Finalized**. | Feature management |
 
 ## Feature enhancements included in this release
 
@@ -40,6 +40,33 @@ This section contains a table that lists the enhancements that are included in t
 |---|---|---|---|
 | Asset leasing | Asset lease classification |This feature assigns distinct voucher numbers for short-term lease liability reclassification entries based on transaction dates. It ensures that each journal entry posted on different dates has a unique voucher number. | Flight |
 | General ledger | Ledger period close enhancement (Preview) |This feature introduces multi-stage task statuses, and comprehensive audit trial capability. The task statues risk and issue flags, approval assignment, and enhanced reporting capabilities in the **Period end close** workspace. The audit trial capability in the **Financial period close** workspace, enabling users to track task history, status changes, and related actions through a dedicated side panel.| Feature management |
+
+
+## Features turned on by default in this release
+
+The following table lists the features that became turned on by default in version 10.0.47. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
+
+| Module | Feature name | More information |
+|--|--|--|
+| Budgeting |Enable non-retrievable purchase orders form for purchase year-end order process |
+| Budgeting |Budget register entries form performance enhancement |
+| Cash and bank management |Align time zone conversion in modern bank reconciliation | 
+| Cash and bank management | Automatic vendor account matching | 
+| Cash and bank management | Bank transactions page performance improvement | 
+| Cash and bank management | Search for customer/vendor account ID when manual payment journal is created during bank reconciliation process| 
+
+
+## Features removed from feature management
+
+The following table lists features that were removed from Feature management in version 10.0.47. These features are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of Finance.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Budgeting |Default the account structure in the budget register entry | The related functionality is enabled out of the box | 
+| Budgeting |Reverse preliminary budget with today's date |The related functionality is enabled out of the box | 
+| Cash and bank management |Enable batch mode for "Mark as reconciled" in advance bank reconciliation| The related functionality is enabled out of the box | 
+| Cash and bank management |Foreign Currency Revaluation performance Improvements |The related functionality is enabled out of the box | 
+
 
 
 
