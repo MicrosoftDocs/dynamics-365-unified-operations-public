@@ -24,13 +24,13 @@ You can enable your custom domain during the provisioning process for your e-com
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
-The host name or endpoint that the provisioning process generates supports a Secure Sockets Layer (SSL) certificate only for \*.commerce.dynamics.com. It doesn't support SSL for custom domains. Therefore, you must terminate SSL for custom domains in your CDN and forward traffic from the CDN to the host name or endpoint that Commerce generated. 
+The host name or endpoint that the provisioning process generates supports a Transport Layer Security/Secure Sockets Layer (TSL/SSL) certificate only for \*.commerce.dynamics.com. It doesn't support TSL/SSL for custom domains. Therefore, you must terminate TSL/SSL for custom domains in your CDN and forward traffic from the CDN to the host name or endpoint that Commerce generated. 
 
 Additionally, Commerce serves the *statics* (JavaScript or Cascading Style Sheets \[CSS\] files) from the endpoint that Commerce generated (\*.commerce.dynamics.com). You can cache the statics only if you put the host name or endpoint that Commerce generated behind the CDN.
 
-## Set up SSL
+## Set up TSL/SSL
 
-After you provision your Commerce environment with the custom domain that you provide, or after you provide the custom domain for your environment by using a service request, you need to work with the Commerce onboarding team to plan the DNS changes.
+After you provision your Commerce environment with the custom domain that you provide, or after you provide the custom domain for your environment by using a service request, you need to work with the Commerce onboarding team to plan the Domain Name System (DNS) changes.
 
 As was previously mentioned, the generated host name or endpoint supports an SSL certificate only for \*.commerce.dynamics.com. It doesn't support SSL for custom domains.
 
@@ -94,7 +94,7 @@ To set up a routing rule in Azure Front Door Service, follow these steps:
 > [!WARNING]
 > If the domain that you want to use is already active and live, create a support ticket from the **Support** tile in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to get assistance for your next steps. For more information, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
-If your domain is new and isn't a pre-existing live domain, you can add your custom domain to the configuration for Azure Front Door Service. This change enables web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
+If your domain is new and isn't a preexisting live domain, you can add your custom domain to the configuration for Azure Front Door Service. This change enables web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
 The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
