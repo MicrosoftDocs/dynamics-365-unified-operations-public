@@ -13,10 +13,10 @@ ms.date: 1/13/2026
 
 # Connect to the Dynamics 365 ERP MCP server with Microsoft Foundry
 
-This guide provides information on how to configure an agent in [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-foundry?view=foundry) to work with the data and business logic of Dynamics 365 ERP applications by connecting to the Dynamics 365 ERP MCP server.
+This guide provides information on how to configure an agent in [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-foundry?view=foundry) to work with the data and business logic of Dynamics 365 ERP applications by connecting to the Dynamics 365 ERP MCP server.
 
 ## Prequisites
-Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP server**, you must ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](./copilot-mcp.md).
+Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP server**, you must ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
 
 ## Register an app in Microsoft Entry ID
 1. Create a new app registration.
@@ -66,7 +66,7 @@ Leave the app registration open. You will need to return to the page to get ID v
 ## Configure Microsoft Foundry
 
 ### Add the MCP server as a custom tool
-1. Navigate to [Microsoft Foundry](ai.azure.com).
+1. Navigate to [Microsoft Foundry](https://ai.azure.com).
 2. Open your project, or create a new one.
 3. Select **Build** to open the Agent Builder.
 4. On the navigation pane, select **Tools**.
@@ -105,6 +105,6 @@ With the MCP tool configured in Microsoft Foundry, you can now create an agent t
 
 1. In the Agent Builder in Microsoft Foundry, select **Create agent**.
 2. On the **Playground** tab, select a model from the available deployed models to manage the agent orchestration. Recommended models include `claude-sonnet-4-5` and `gpt-5-chat`.
-3. Provide instructions in the **Instructions** field to guide the agent orchestration in using the MCP tools. See [Providing agent instructions](../copilot/build-agent-mcp.md) for more information.
+3. Provide instructions in the **Instructions** field to guide the agent orchestration in using the MCP tools. See [Providing agent instructions](../build-agent-mcp.md#providing-agent-instructions) for more information.
 4. **Save** the agent.
 5. In the **Message the agent...** box, send a message. For example, send "Find the Purchase Requsition form."
