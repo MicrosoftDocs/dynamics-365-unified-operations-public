@@ -25,13 +25,13 @@ Agent Feed enables ERP agents to post actionable feed items through Dataverse Cu
 
 ## Overview
 
-Agent Feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Feed items are created by agents, ranked using AI-assisted logic, secured using FnO menu items, and rendered through configurable card providers.
+Agent Feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using FnO menu items, and rendered through configurable card providers.
 
 ## How to send data to the Agent Feed in Immersive Home
 
 ### Enable FnO features
 
-In Finance and Operations Feature management, enable the following:
+In Finance and Operations [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md), enable the features:
 
 - Immersive Home
 - (Preview) Agent Feed for Immersive Home
@@ -52,21 +52,22 @@ These APIs write and update feed data into FnO tables through an orchestrated X+
 
 ### Read feed items using Virtual Entity (optional)
 
-If your agent needs to read feed items, enable the AgentFeedEntity Virtual Entity.
+If your agent needs to read feed items, enable the virtual entity **AgentFeedEntity**.
 
 #### Enable Virtual Entity
 
-1. Go to Available Finance and Operations Entity
-1. Locate AgentFeedEntity
-1. Set Visible = Yes
+1. Open the Dataverse table **Available Finance and Operations Entity**
+1. Locate thr row **AgentFeedEntity**
+1. Set the column **Visible** to **Yes**
+1. Assure that the change is saved
 
 Once enabled, feed items can be queried using standard Dataverse OData endpoints.
 
-:::image type="content" source="media/agent-feed-enable-virtual-entity-select.png" alt-text="Screenshot of identifying Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity--select.png":::
+:::image type="content" source="media/agent-feed-enable-virtual-entity-select.png" alt-text="Screenshot of identifying Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity-select.png":::
 
 :::image type="content" source="media/agent-feed-enable-virtual-entity-enable.png" alt-text="Screenshot of enabling the Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity-enable.png":::
 
-### Control the agent feed card rendering
+### Control rendering of the the agent feed card
 
 #### Render feed items using the default card
 
@@ -90,7 +91,7 @@ The default card provider does not support any actions.
 **Step 1: Register a Card Provider enum**
 Create a new value in: AgentFeedCardProviderType (Application Common)
 
-An example: ExpenseCardProvider
+For example: ExpenseCardProvider
 :::image type="content" source="media/agent-feed-custom-card-provider-register.png" alt-text="Screenshot of the AgentFeedCardProviderType with an ExpenseCadProvider added." lightbox="media/agent-feed-custom-card-provider-register.png":::
 
 **Step 2: Implement Card Provider class**
@@ -213,13 +214,13 @@ internal final class ImmersiveHomeExpenseCardProvider extends ImmersiveHomeBaseA
 }
 ```
 
-The example custom ExpenseCardProvider will render cards with the agent feed title, the due date and subtitle, the agent feed summary, and it render a number of agent feed menu items, where each item appears as a button that navigates as instructed by the menu item in the agent feed item.  
+The example custom ExpenseCardProvider renders cards with the agent feed title, the due date and subtitle, the agent feed summary, and multiple agent feed menu items, each appearing as a button that navigates accordingly.  
 
 :::image type="content" source="media/agent-feed-custom-card-annotated.png" alt-text="Screenshot of an expense card rendered by the ExpenseCardProvider with annotations of its content." lightbox="media/agent-feed-custom-card-annotated.png":::
 
 #### Using hooks of the card in the provider
 
-The card providers supports the following hooks:
+Card providers support three hooks:
 
 - onLoad
 - onExpand
@@ -231,9 +232,9 @@ Each hook executes within the logged‑in user context and must enforce security
 
 ### The life cycle of feed items
 
-A feed items moved through the following lifecycle stages, form creation until ready to display.
+A feed item moves through the following lifecycle stages, form creation until ready to display.
 
-1. Feed item is created or updated via Custom API
+1. A feed item is created or updated via Custom API
 1. BaseRank is calculated from AIContext (Release 10.0.47)
 1. Records are stored in AgentFeed tables
 1. Security is enforced using menu items
@@ -246,7 +247,7 @@ In this release, BaseRank uses a temporary deterministic mapping:
 - Medium / default → 0.66
 - Low → 0.33. [ERP Agent Feed | Word]
 
-### Feed item Security model
+### Feed item security model
 
 - Security is delegated to application teams via PermissionsCheck
 - Menu items are validated during card rendering (onSecure)
@@ -261,7 +262,7 @@ In this release, BaseRank uses a temporary deterministic mapping:
 
 POST {organizationUrl}/api/data/v9.2/**msdyn_CreateAgentFeedItemCustomApi**
 
-Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see below)
+Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**
 
 #### Required parameters - create feed item
 
@@ -270,7 +271,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...** (see 
 | **title** | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.<br>Example: "Supplier Invoice Overdue" |
 | **subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by 5 days." |
 | **correlationid** | String | GUID for idempotency and tracing across systems.<br>Example: "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7" |
-| **summary** | String | Summary is a concise description of the business situation or task the agent will assist with. Plain text; aim for one or two sentences. |
+| **summary** | String | Summary is a concise description of the business situation or task the agent assists with. Plain text; aim for one or two sentences. |
 | **status** | String | Status is the current lifecycle state of the feed item.<br>Allowed values: not started, in progress, completed, canceled |
 | **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.<br>Example: "PURCHTABLE,VENDTABLE,IMMERSIVEHOME" |
 | **cardprovider** | Text | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.<br>Example: "DefaultAgentFeedCardProvider" |
@@ -400,4 +401,4 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...** (see 
 | **Status** | ENUM | Status is the current lifecycle state of the feed item. Allowed values: not started, in progress, completed, canceled. |
 | **DueDate** | UTC Date/time | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Blank if not time-bound. |
 | **CorrelationId** | Sysguidstring - string | Correlation Id is a GUID used for idempotency and traceability across systems (logging, deduplication, retries). Populated by app teams on feed item creation |
-| **BaseRank** | Decimal | Base Rank is determined by the Priority tag in the AI Context field.<br>Value definition: If Priority is "High," Base Rank = 0.99. If Priority is "Low," Base Rank = 0.33. For "Medium," blank, or any other value, the default Base Rank is 0.66. |
+| **BaseRank** | Decimal | The Priority tag in the AI Context field influences the value of BaseRank.<br>Value definition: If Priority is "High," Base Rank = 0.99. If Priority is "Low," Base Rank = 0.33. For "Medium," blank, or any other value, the default Base Rank is 0.66. |
