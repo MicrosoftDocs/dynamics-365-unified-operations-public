@@ -22,7 +22,7 @@ Accordion modules are container-like modules that organize the information or mo
 
 Add one or more accordion item modules inside every accordion module. Each accordion item module represents a collapsible drawer. Add one or more modules inside every accordion item module. There are no restrictions on the types of modules that you can add to an accordion item module.
 
-The following image shows an example of an accordion module that organizes information on a store's frequently asked questions (FAQ) page.
+The following image shows an example of an accordion module that organizes information on a frequently asked questions (FAQ) page.
 
 :::image type="content" source="./media/ecommerce-accordion.PNG" alt-text="Screenshot of an accordion module.":::
 
@@ -38,7 +38,7 @@ The following image shows an example of an accordion module that organizes infor
 
 | Property name | Values | Description |
 |----------------|--------|-------------|
-| Title | Text | Enter the title text for the accordion item module. By selecting the title region, users can expand or collapse the section. |
+| Title | Text | Enter the title text for the accordion item module. When a user selects the title region, they can expand or collapse the section. |
 | Expand by default | **True** or **False** | If you set the value to **True**, the accordion item is expanded by default when the page is loaded. |
 
 ## Add an accordion module to a FAQ page
