@@ -1,13 +1,13 @@
 ---
 title: Uninstall Business performance analytics
 description: Learn how to uninstall Business performance analytics.
-author: lizmota
-ms.author: jiwo
+author: yashkv1 
+ms.author: yvishwa
 ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 8/20/2025
+ms.date: 1/26/2026
 ---
 
 # Uninstall Business performance analytics
@@ -31,7 +31,7 @@ To perform data cleanup before uninstallation:
 > This process is required for Business performance analytics 2.5 and must be completed while the `msdyn_BpaTablesManagedDataLake` and `msdyn_bpapipelineplugins` solutions are still installed.
 
 1. Before you uninstall the solutions, open Business performance analytics.
-2. Open your browser's developer console by pressing **F12**.
+2. Press **F12** to open your browser's developer console.
 3. Copy the following script into the console and press **Enter**:
 
     ```javascript
@@ -41,7 +41,7 @@ To perform data cleanup before uninstallation:
 4. The cleanup process starts. This process might take a while to complete.
 5. To check the status of the cleanup, you can:
     - Rerun steps 3 and 4 to get the current status
-    - Check the execution history of the flow "Business performance analytics uninstall datalake cleanup"
+    - Check the execution history of the **Business performance analytics uninstall datalake cleanup** flow.
 
 > [!IMPORTANT]
 > Wait for the cleanup process to complete before proceeding with the solution uninstallation.
