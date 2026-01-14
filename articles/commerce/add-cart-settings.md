@@ -22,7 +22,7 @@ Different workflows are supported when a product is added to the cart on a Dynam
 
 To support the different workflows, an **Add product to cart** field is available at **Settings \> Extensions** in Commerce site builder. Select one of the following setting options to implement the corresponding workflow:
 
-- **Navigate to cart page** – When users add an item to the cart, they are taken to the cart page.
+- **Navigate to cart page** – When users add an item to the cart, they're taken to the cart page.
 - **Show notification** – When users add an item to the cart, they receive a confirmation notification and can continue to browse on the product details page (PDP).
 - **Show mini cart** – When users add an item to the cart, the mini cart contents are shown. Users can review all the items in the cart, and they can proceed to checkout if they are ready.
 - **Show notification using Notifications module** – When users add an item to the cart, the notifications module is used to show a confirmation notification. For this setting option to work, the notifications module must be added to the page header.
