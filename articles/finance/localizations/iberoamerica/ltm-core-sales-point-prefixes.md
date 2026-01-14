@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can configure the sales point prefixes that some fiscal authorities require for legal documents, treasury documents, and checkbooks.
 

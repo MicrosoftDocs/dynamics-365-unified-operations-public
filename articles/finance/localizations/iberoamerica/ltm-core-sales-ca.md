@@ -13,7 +13,7 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article explains how to configure and use the sales authorization code (Sales CA) functionality for Latin America. This functionality lets you use the field for the Sales CA number in the **LATAM** section of purchase and sales invoices to assign an additional number to a selected invoice.
 

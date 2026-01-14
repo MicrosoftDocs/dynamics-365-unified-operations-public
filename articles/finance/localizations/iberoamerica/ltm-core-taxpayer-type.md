@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can set up the types of tax-responsible entities that the company operates with. These entities can include customers, vendors, employees, and even the company itself.
  

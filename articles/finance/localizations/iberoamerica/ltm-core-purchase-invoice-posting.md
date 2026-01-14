@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can add the necessary information for Latin American countries/regions when you post invoices of the following types in an extended LATAM section:
 

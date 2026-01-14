@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 In the journal name configuration in the extended **LATAM** section, you can add the information that's required for Latin American countries/regions. This extended configuration affects journal name posting.
 

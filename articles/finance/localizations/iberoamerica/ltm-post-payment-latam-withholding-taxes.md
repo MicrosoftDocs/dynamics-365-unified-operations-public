@@ -13,7 +13,7 @@ ms.author: v-federicohe
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This process consists of two parts: first the vendor invoice posting, and then the vendor payment journal posting.
 

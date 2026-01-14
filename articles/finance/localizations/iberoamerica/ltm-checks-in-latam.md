@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article explains how to use LATAM functionality for specific check operations, such as the accrual of your company's own checks, deposits of third-party checks, cancellations, and re-entries.
 

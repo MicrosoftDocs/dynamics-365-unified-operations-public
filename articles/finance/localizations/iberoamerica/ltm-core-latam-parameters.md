@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article provides a description of the Latin America (LATAM) parameter configuration. Use these parameters to incorporate the general parameter setup into the local parameters before you start the corresponding configurations.
 

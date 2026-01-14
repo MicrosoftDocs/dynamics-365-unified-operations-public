@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [does not apply to](../includes/does-not-apply-to.md)]
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can create lists that are used to provide required information that's related to Latin America (LATAM) on transactions. These lists are used in the **LATAM** section of multiple transaction posting pages, including the pages for invoices, packing slips, and journals. For every transaction, you can select an option in each list, based on the configuration of the document class that's used in the transaction.
 
