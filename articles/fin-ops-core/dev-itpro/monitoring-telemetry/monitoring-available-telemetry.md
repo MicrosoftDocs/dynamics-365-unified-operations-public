@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that is available in the Monitorin
 author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/15/2025
+ms.date: 01/15/2026
 ms.author: rijoshi 
 ms.reviewer: twheeloc
 ms.custom: bap-template
@@ -75,10 +75,12 @@ The Data Management Framework (DMF) logs errors to the Custom Events table in Ap
 > [!IMPORTANT]
 > - This feature is available in **PU69/10.0.45 (build >= 7.0.7690.21)** and **PU68/10.0.44 (build >= 7.0.7606.126)**.
 
-Batch telemetry is controlled by the following 3 flights. If it is not enabled in your environments, please reach out to Microsoft support.
+Batch telemetry is controlled by the following 3 flights: If it's not enabled in your environments, reach out to Microsoft support.
 1. **BatchTelemetryConfigurationFlight**
 1. **BatchThreadInfoTelemetryFlight**
 1. **BatchTelemetryCallstackFlight**
+
+If it's not enabled in your environments, reach out to Microsoft support.
 
 After the flights are enabled, new telemetry signals appear under the **Configure** tab:
 
