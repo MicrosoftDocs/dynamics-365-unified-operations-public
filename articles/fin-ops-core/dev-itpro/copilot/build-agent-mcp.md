@@ -1,5 +1,5 @@
 ---
-title: Build an agent with Dynamics 365 ERP MCP (preview)
+title: Build an agent with Dynamics 365 ERP MCP
 description: Learn how to build an agent in Microsoft Copilot Studio with the Model Context Protocol (MCP) server.
 author: jaredha
 ms.author: jaredha
@@ -13,14 +13,11 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Build an agent with Dynamics 365 ERP MCP (preview)
+# Build an agent with Dynamics 365 ERP MCP
 
 [!include [banner](../includes/banner.md)]
 
 The **Dynamics 365 ERP MCP** server provides a dynamic framework for agents to perform data operations and access the business logic of finance and operations apps. Developers can build agents that work with data and perform nearly any function that's available to a user through the application interface, without the need for custom code, connectors, or APIs. This article provides guidance and best practices for building an agent with the MCP server in Microsoft Copilot Studio.
-
-> [!IMPORTANT]
-> This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback. Learn more about preview releases in [One version service updates FAQ](../../dev-itpro/get-started/one-version.md).
 
 ## Prerequisites
 
