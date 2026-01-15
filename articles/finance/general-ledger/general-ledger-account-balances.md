@@ -87,6 +87,8 @@ To view the results, go to **General ledger** \> **Inquiries and reports** \> **
 
 For more information, see [View financial reports](view-financial-reports.md).
 
+### Update balances
 
+In version 10.0.47 the Update balances action was added to the Trial balance page. This button is only visible if the feature **Performance enhancement for general ledger dimension set balance calculation** is enabled in Feature management, and when the balance initialization is fully completed after the feature is enabled. Select **Update balances** to create a new batch task to update the dimension set balances without waiting the standard 5 minutes for the batch process to update the balances. If a batch job is already in progress to update the dimension set balances then the Update button is not available and displays the message "A balance update batch is currently running. Please wait for it to complete." The start date and time of the batch is also displayed. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
