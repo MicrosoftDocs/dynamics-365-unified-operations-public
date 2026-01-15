@@ -58,7 +58,7 @@ If your agent needs to read feed items, enable the virtual entity **AgentFeedEnt
 
 1. Open the **Available Finance and Operations Entity** Dataverse table.
 1. Locate the row **AgentFeedEntity**.
-1. Set the column **Visible** to **Yes**.
+1. Set the column **Visible** to **Yes**. 
 1. Save the change.
 
 Once enabled, feed items can be queried using standard Dataverse OData endpoints.
