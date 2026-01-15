@@ -117,7 +117,7 @@ When you enable the Dynamics 365 ERP MCP server in your environment, you decide 
 | Platform | Client ID |
 | -------- | --------- |
 | Microsoft Copilot Studio | 7ab7862c-4c57-491e-8a45-d52a7e023983 |
-| GitHub Copilot | aebc6443-996d-45c2-90f0-388ff96faa56 |
+| Visual Studio Code | aebc6443-996d-45c2-90f0-388ff96faa56 |
 
 You must grant access to any other agent platforms that need to access the MCP server. To add new agent platforms, you need to:
 
