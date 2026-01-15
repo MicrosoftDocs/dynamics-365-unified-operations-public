@@ -32,7 +32,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| No changes reported at this time. | | |
+|E-commerce | Show QR code and payment link as a payment method using Adyen connector | Merchants using the Adyen connector can leverage a new module to display the Payment link and a corresponding QR code on e-commerce from Dynamics 365 Commerce. The shoppers can scan the QR code or click on the payment link to see a list of available payment methods. Once the payment has been completed, Adyen sends a payment notification which is sent to the Commerce Scale Unit (CSU). CSU triggers the automatic checkout of the cart and creates the order. In case the payment notification is received but the order can't be created due to any reason, then the CSU logs such information in Commerce headquarters for monitoring. | Admins |
+|Omni-channel | Purge commerce transactions | The Purge commerce transactions feature is now Generally Available. Businesses who don't have the need to save the Commerce transactions for a long time can use this capability to purge older transactions and save storage associated costs. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/purge-transactions) | Admins |
+|Omni-channel | Archive commerce transactions | The Archive commerce transactions feature is now Generally Available. Businesses who don't want to delete the transactions and rather archive them for any compliance or analytical needs, can leverage the Archive commerce transactions feature to archive commerce transactions. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/archive-transactions) | Admins |
 
 ## Features turned on by default in this release
 
@@ -40,7 +42,7 @@ The following table lists the features that became turned on by default in versi
 
 | Module | Feature name | More information |
 |--|--|--|
-| No changes reported at this time. | | |
+| Retail and commerce |Improved user experience for POS returns | This feature simplifies the return experience on Point of Sale. It introduces a multiselect grid where users can select and clear the selection of returnable products.[Learn more about the feature](https://learn.microsoft.com/en-us/dynamics365/commerce/pos-returns#user-experience-enhancements)|
 
 ## Resources
 
