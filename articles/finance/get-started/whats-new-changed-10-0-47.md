@@ -56,6 +56,14 @@ The following table lists the features that became turned on by default in versi
 | Cash and bank management | Automatic vendor account matching | On by default   |
 | Cash and bank management | Bank transactions page performance improvement | On by default    | 
 | Cash and bank management | Search for customer/vendor account ID when manual payment journal is created during bank reconciliation process|  On by default  |
+| Tax | Canadian harmonized sales tax rules|  Mandatory  |
+| Tax | Consistency check for Tax trans general journal account entry association for Bank exchange rate|  Mandatory  |
+| Tax | Enable "Include corrections" option on Sales tax settlement periods|  On by default  |
+| Tax | Enable reverse charge mechanism for VAT/GST scheme|  Mandatory  |
+| Tax | Reverse charge availability for additional countries|  Mandatory  |
+| Tax | (India) GST/TDS-TCS tax support for Project Integration Journal|  Mandatory  |
+| Tax | Sales tax settlement and reporting by date of VAT register|  Mandatory  |
+| Tax | Sales tax specification by posting type "Purchase expenditure for product"|  On by default  |
 
 
 ## Features removed from feature management
@@ -67,9 +75,12 @@ The following table lists features that were removed from Feature management in 
 | Budgeting |Default the account structure in the budget register entry | The related functionality is enabled out of the box | 
 | Budgeting |Reverse preliminary budget with today's date |The related functionality is enabled out of the box | 
 | Cash and bank management |Enable batch mode for "Mark as reconciled" in advance bank reconciliation| The related functionality is enabled out of the box | 
-| Cash and bank management |Foreign Currency Revaluation performance Improvements |The related functionality is enabled out of the box | 
-
-
+| Cash and bank management |Foreign Currency Revaluation performance Improvements |The related functionality is enabled out of the box |
+| Tax |Keep GST tax document for confirmation journal |The related functionality is enabled out of the box |
+| Tax |(Brazil) Dual base calculation for ICMS-DIFAL in sales transactions |The related functionality is enabled out of the box |
+| Tax |(India) Enable the default assessable value of BOE calculated proportionally |The related functionality is enabled out of the box |
+| Tax |Tax in transfer order |The related functionality is enabled out of the box |
+| Tax |Support multiple VAT registration numbers |The related functionality is enabled out of the box |
 
 
 ## More information
