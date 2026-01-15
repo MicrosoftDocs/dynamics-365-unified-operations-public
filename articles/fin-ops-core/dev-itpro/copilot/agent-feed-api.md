@@ -56,7 +56,7 @@ If your agent needs to read feed items, enable the virtual entity **AgentFeedEnt
 
 #### Enable virtual entity
 
-1. Open the **Available Finance and Operations Entity** dataverse table.
+1. Open the **Available Finance and Operations Entity** Dataverse table.
 1. Locate the row **AgentFeedEntity**.
 1. Set the column **Visible** to **Yes**.
 1. Save the change.
@@ -266,7 +266,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**.
 | Parameter | Type | Description |
 | ---------------------- | -------- | ---------------------------------------------------------------- |
 | **Title** | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.<br>Example: "Supplier invoice overdue". |
-| **Subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by 5 days." |
+| **Subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by five days." |
 | **Correlationid** | String | GUID for idempotency and tracing across systems.<br>Example: "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7" |
 | **Summary** | String | Summary is a concise description of the business situation or task the agent assists with. Plain text; aim for one or two sentences. |
 | **Status** | String | Status is the current lifecycle state of the feed item.<br>Allowed values: not started, in progress, completed, canceled |
