@@ -150,3 +150,4 @@ The current implementation of the Dynamics 365 ERP MCP server has the following 
    | Features | Feature Management | FeatureManagementWorkspace |
 
 1. **Advanced filters:** The MCP server doesn't support advanced filters on grids. For example, it doesn't support the "before," "after," and "between" operators for date columns. It supports only the "matches" operator for filtering.
+2. **Environment downtime:** The MCP server will be unavailable during environment downtime, such as servicing windows. Any MCP requests made by agents during these servicing windows will fail.
