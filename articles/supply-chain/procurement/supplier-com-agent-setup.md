@@ -173,8 +173,7 @@ After you set up a private mailbox, the user who owns it must update the persona
 
 To enable tracking of all emails for a private mailbox that you own, follow these steps:
 
-1. Go to the URL of your environment.
-1. Select the **Settings** button (gear symbol) in the upper right, then select **Personalization Settings**.
+1. On the **Active Mailboxes** page, select the **Settings** button (gear symbol) in the upper right, then select **Personalization Settings**.
 1. In the **Set Personal Options** dialog, on the **Email** tab, in the **Track** field, select *All email messages*.
 1. Select **OK**.
 
@@ -187,7 +186,7 @@ If you use a shared mailbox, create a queue so that all users who work on the sh
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Users + permissions**, select **Teams**.
 1. Select **Create team**.
-1. In the **New team** dialog, specify a name, business unit, and administrator as required. Set the **Team type** field to *Owner*.
+1. In the **New team** dialog, specify a name (for example *My Mail Team*), business unit, and administrator as required. Set the **Team type** field to *Owner*.
 1. Select **Next**.
 1. In the **Add team members** dialog, add all the users who should have access to the shared mailbox.
 
@@ -195,12 +194,12 @@ If you use a shared mailbox, create a queue so that all users who work on the sh
     > All users who create an agent configuration and review agent results that are related to this mailbox must be added as team members.
 
 1. Select **Next**.
-1. In the **Manage security roles** dialog, select **Finance and Operations Basic User** and **Basic User**, then select **Save**.
-1. Return to the **Settings** page for your environment, and then, under the **Business** section, select **Queues**.
-1. Select **New** to create a **Queue** entity record.
-1. Enter a name, set the **Incoming email** field to the email address of the shared mailbox, and set the **Owner** field to the team that you created earlier.
-1. Select **Save**.
-1. A mailbox should now be created in the **Email settings** section. Select the mailbox name.
+1. In the **Manage security roles** dialog, select **Basic User** and **Finance and Operations Basic User**, then select **Save**.
+1. Back from the list of teams, find the newly created team and open it.
+1. On the upper right corner, find the **Default Queue** associated with the team and navigate to it. The queue has the same name as the team, within angle brackets (for example: *<My Mail Team>*).
+1. A mailbox should exist in the **Email settings** section. Select the mailbox name.
+1. On the mailbox details page, select **Activate**.
+1. In the section **Mailbox Information**, enter the shared email address and save.
 1. On the command bar, select **Test & Enable Mailboxes**.
 
     > [!TIP]
