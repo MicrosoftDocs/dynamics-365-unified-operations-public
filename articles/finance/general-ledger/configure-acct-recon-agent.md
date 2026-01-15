@@ -78,7 +78,7 @@ The user accounts must have the following security roles:
 
 ### Create the required connections
 
-The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent. Additionally, an optional connection Fin & Ops Apps (Dynamics 365) should be created for the use of Dynamics 365 ERP Model Context Protocol.
+The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent. Additionally, an optional Fin & Ops Apps (Dynamics 365) connection should be created for the use of Dynamics 365 ERP Model Context Protocol.
 
 To set up the connectors, follow these steps:
 
