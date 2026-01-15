@@ -408,13 +408,13 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Deployment option**        | All|
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports remains in the product. The plan is to remove the code in a future release. |
 
-### Power BI content packs available on AppSource
-The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft AppSource](https://appsource.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
+### Power BI content packs available on Marketplace
+The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft Marketplace](https://marketplace.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspaces](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Marketplace](https://marketplace.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspaces](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |

@@ -111,3 +111,4 @@ The retail long-term retention job archives the following tables:
 > This feature is generally available starting with the Commerce version 10.0.47 release.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

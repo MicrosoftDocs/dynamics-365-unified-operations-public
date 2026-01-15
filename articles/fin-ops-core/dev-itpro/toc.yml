@@ -2317,6 +2317,8 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
+      - name: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
+        href: ../dev-itpro/copilot/agent-deployment.md
       - name: Agent management (production ready preview)
         href: ../fin-ops/copilot/agent-mgmt.md
       - name: Immersive Home (production ready preview)
@@ -2383,7 +2385,7 @@ items:
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
       - name: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)      
         href: ../fin-ops/copilot/faq-immersive-home.md
-      - name: Responsible AI FAQ for Agent management in finance and operations apps (preview)
+      - name: Responsible AI FAQ for Agent management in finance and operations apps (production ready preview)
         href: ../fin-ops/copilot/faq-agent-mgmt.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md

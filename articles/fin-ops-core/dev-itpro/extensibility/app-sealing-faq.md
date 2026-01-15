@@ -34,7 +34,7 @@ Documentation about extensibility patterns is available on the [Extensibility ho
 
 ## Where can I get information about extensibility training?
 
-We will announce training sessions in multiple ways. AppSource partners might receive direct invitations for some sessions. We will also announce workshops in the Operations Extensibility group on Microsoft Viva Engage and other forums.  
+We will announce training sessions in multiple ways. Marketplace partners might receive direct invitations for some sessions. We will also announce workshops in the Operations Extensibility group on Microsoft Viva Engage and other forums.  
 
 ## What is the goal of sealing the application?
 

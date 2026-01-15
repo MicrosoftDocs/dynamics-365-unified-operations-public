@@ -87,7 +87,7 @@ For more information on the mappings that are available in the solutions, see [I
 
 **Dependency information**
 
-The Dual-write Human Resources package depends on the [Dual-write Application Core](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwappcore?tab=Overview&exp=ubp8) and [Dynamics 365 HR Common Tables](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.hcmcommon?exp=ubp8) packages. Therefore, you should install these two solution packages before you install the Dual-write Human Resources package.
+The Dual-write Human Resources package depends on the [Dual-write Application Core](https://marketplace.microsoft.com/en-us/product/dynamics-365/mscrm.dwappcore?tab=Overview&exp=ubp8) and [Dynamics 365 HR Common Tables](https://marketplace.microsoft.com/en-US/product/dynamics-365/mscrm.hcmcommon?exp=ubp8) packages. Therefore, you should install these two solution packages before you install the Dual-write Human Resources package.
 
 ## Dual-write Supply Chain
 

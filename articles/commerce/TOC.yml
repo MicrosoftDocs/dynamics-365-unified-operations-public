@@ -1012,7 +1012,7 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
-        - name: Purge Commerce transactions
+        - name: Purge Commerce transactions (preview)
           href: purge-transactions.md
       - name: Sales orders
         items:
@@ -2401,7 +2401,7 @@
         - name: Configure model mappings
           items:
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/commerce
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/commerce
           - name: Manage several derived mappings for a single model root

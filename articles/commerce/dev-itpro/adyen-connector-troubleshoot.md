@@ -2,10 +2,9 @@
 title: Troubleshoot Dynamics 365 Payment Connector for Adyen
 description: This article provides troubleshooting guidance for common issues related to the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 12/11/2024
+ms.date: 01/09/2026
 ms.topic: how-to
-audience: IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-01-01
@@ -36,55 +35,11 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 ### The EFT terminal ID isn't set
 
-<table>
-<tbody>
-<tr>
-<td><strong>Title</strong></td>
-<td>EFT Terminal ID isn't set</td>
-</tr>
-<tr>
-<td><strong>Symptom</strong></td>
-<td>Payment authorization calls fail, and a hardware error occurs. An error message in the event log indicates that the <strong>EFT Terminal ID</strong> value isn't set.</td>
-</tr>
-<tr>
-<td><strong>Root cause</strong></td>
-<td>This issue can occur when the <strong>EFT POS Register Number</strong> field isn't set on the register or the IIS Hardware Station. It can also occur if the value is set but isn't correctly synced to the POS terminal. Finally, it can also occur when the value is cached.</td>
-</tr>
-<td><strong>Fix</strong></td>
-<td>Follow the instructions in <a href="adyen-connector-setup.md#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a>. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedule jobs. If the issue isn't resolved, consider reactivating the Store Commerce app, because the value of the <strong>EFT POS Register Number</strong> field may be cached and might need to be reset.</td>
-</tr>
-</tbody>
-</table>
-
-### The Store Commerce app or IIS Hardware Station configuration isn't updated
-
-<table>
-<tbody>
-<tr>
-<td><strong>Title</strong></td>
-<td>Config isn't updated</td>
-</tr>
-<tr>
-<td><strong>Symptom</strong></td>
-<td>Store Commerce app error: "Sign in Error. The initialization data couldn't be loaded."</td>
-</tr>
-<tr>
-<td><strong>Root cause</strong></td>
-<td>This issue can occur when the POS is redeployed but the dllhost.config file hasn't been updated.</td>
-</tr>
-<td><strong>Fix</strong></td>
-<td>Follow the instructions in <a href="adyen-connector-setup.md#update-the-store-commerce-app-or-iis-hardware-station-configuration">Update the Store Commerce app or IIS Hardware Station configuration</a>. Then end the dllhost.exe task on the <strong>Details</strong> tab in Task Manager, and reopen Store Commerce app. If you're using an IIS Hardware Station, reset IIS.</td>
-</tr>
-</tbody>
-</table>
+For troubleshooting guidance on this issue, see [EFT Terminal ID isn't set](/troubleshoot/dynamics-365/commerce/payments/adyen-connector#eft-terminal-id-isnt-set).
 
 ### Invoicing sales orders failed due to stale authorization
 
-| Title | Capture failed due to stale authorization |
-|---|---|
-| Symptom | Invoicing sales orders fails with "Exception has been thrown by the target of an invocation. System.ArgumentNullException: Value cannot be null." The underlying error in the logs is "The following error occurred during the capture call - Dynamics 365 Payment Connector for Adyen: Error code Decline message Capture failed due to stale authorization." |
-| Root cause | This error happens when an authorization older than the **Authorization stale period (days)** is sent to the payment connector for capture. |
-| Fix | Ensure the value of **Number of days before expired** in **Accounts receivable parameters, Credit Card** is set to **1 less day** than the value set in merchant properties for all channels and then retry invoicing. The recommended value for **Authorization stale period (days)** is 14 in Adyen merchant properties and 13 in Accounts receivables parameters. |
+For troubleshooting guidance on this issue, see [Invoicing sales orders fails because of stale authorization](/troubleshoot/dynamics-365/commerce/payments/adyen-connector#invoicing-sales-orders-fails-because-of-stale-authorization).
 
 ## Additional resources
 
@@ -97,3 +52,5 @@ When payment transactions aren't successfully processed through the Adyen paymen
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+
+
