@@ -74,11 +74,11 @@ Dual-write provides data integration across Microsoft Dynamics 365 applications.
 
 ## <a id="developer-architect"></a>What does dual-write mean for developers and architects of customer engagement apps?
 
-Dual-write automates the data flow between finance and operations apps and customer engagement apps. Dual-write consists of two AppSource solutions that are installed on Dataverse. The solutions expand the table schema, plugins, and workflows on Dataverse so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on finance and operations apps.
+Dual-write automates the data flow between finance and operations apps and customer engagement apps. Dual-write consists of two Marketplace solutions that are installed on Dataverse. The solutions expand the table schema, plugins, and workflows on Dataverse so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on finance and operations apps.
 
 To create parity with finance and operations applications, dual-write makes some crucial changes in the Dataverse schema. If you understand the plan, you can avoid some design and development rework in the future.
 
-+ When the dual-write AppSource package is installed, Dataverse will have new concepts such as company and party. These concepts help applications built on Dataverse, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with finance and operations apps.
++ When the dual-write Marketplace package is installed, Dataverse will have new concepts such as company and party. These concepts help applications built on Dataverse, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with finance and operations apps.
 
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system).
 

@@ -161,7 +161,7 @@ This section describes the setup that is required before you run the Party posta
     + Party Contacts V3 (msdyn_partyelectronicaddresses)
 
 2. Make sure that the maps are removed from the **msdy_dualwriteruntimeconfig** table in Dataverse.
-3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab) from AppSource.
+3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab) from Marketplace.
 4. In the finance and operations app, run **Initial Sync** for the following tables if they contain data:
 
     + Salutations

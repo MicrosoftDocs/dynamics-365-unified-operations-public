@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/RSSK-terms-conditions.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/SDK-terms-conditions.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service.md",
       "redirect_url": "/dynamics365/finance/index",
       "redirect_document_id": "false"  
@@ -28608,6 +28623,16 @@
     {
       "source_path": "articles/supply-chain/pim/tasks/product-lifecycle-state-released-product-master.md",
       "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-authenticate-service-based.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-intune.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
       "redirect_document_id": false
     }
   ]

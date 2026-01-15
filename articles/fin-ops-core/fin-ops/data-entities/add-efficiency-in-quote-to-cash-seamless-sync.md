@@ -26,7 +26,7 @@ Seamless sync significantly improves scenarios where front-end staff mainly work
 Before you can use seamless sync, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.42 or later.
-- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) version  2.3.4.367 or later.
+- You must be running [Dual-write Supply Chain solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwscm) version  2.3.4.367 or later.
 - You must enable and configure the basic Sales integration as described in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md) and [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md).
 - The following features must be turned on in [Feature management](../get-started/feature-management/feature-management-overview.md):
 

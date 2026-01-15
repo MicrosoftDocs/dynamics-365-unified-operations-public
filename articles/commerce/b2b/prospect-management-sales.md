@@ -40,7 +40,7 @@ All remaining business processes occur in Commerce. These processes include send
 
 Integration between Sales and Commerce relies on the dual-write infrastructure. Therefore, dual-write should be enabled and working, so that customers that are created in one system are written to the other system. For more information about the dual-write infrastructure, see [Dual-write overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview).
 
-After the dual-write setup has been completed, the implementation partner can go to [Microsoft AppSource](https://appsource.microsoft.com/) and search for the solution that is named [Dual-write Commerce solutions](https://partner.microsoft.com/dashboard/commercial-marketplace/offers/7ca1d8c9-dc79-4cb7-a82e-8dc96a25acca/overview). Install the package by using the standard installation wizard, and then test it by creating a prospect on a B2B site. After the prospect is created, verify that the request is shown on the **All prospects** appears in Commerce, and then verify that the prospect is shown as a lead in Sales.
+After the dual-write setup has been completed, the implementation partner can go to [Microsoft Marketplace](https://marketplace.microsoft.com/) and search for the solution that is named [Dual-write Commerce solutions](https://partner.microsoft.com/dashboard/commercial-marketplace/offers/7ca1d8c9-dc79-4cb7-a82e-8dc96a25acca/overview). Install the package by using the standard installation wizard, and then test it by creating a prospect on a B2B site. After the prospect is created, verify that the request is shown on the **All prospects** appears in Commerce, and then verify that the prospect is shown as a lead in Sales.
 
 ## Additional resources
 
