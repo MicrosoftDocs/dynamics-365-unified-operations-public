@@ -344,5 +344,4 @@ To add the bulk purchase module to a PDP in Commerce site builder, follow these 
 
 [Product collection module](../product-collection-module-overview.md)
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

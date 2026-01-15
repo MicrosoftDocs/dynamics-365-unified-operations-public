@@ -2,12 +2,11 @@
 # required metadata
 
 title: Channel and catalog selection enhancements in call center for creating B2B orders
-description: This article describes channel and catalog selection enhancements in Microsoft Dynamics 365 Commerce that enable call center workers to initiate orders on behalf of B2B partners in their B2B channels.
+description: Learn about channel and catalog selection enhancements in Microsoft Dynamics 365 Commerce that enable call center workers to initiate orders on behalf of B2B partners in their B2B channels.
 author: ashishmsft
-ms.date: 01/24/2024
+ms.date: 01/15/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-30
@@ -49,10 +48,10 @@ To enable the feature in Commerce headquarters, follow these steps:
 To create an order in headquarters after you enable the feature, follow these steps:
 
 1. Go to **Retail and Commerce \> Customers \> Customer service**, and search for a B2B customer.
-1. Select a B2B online channel that's associated with the customer. Alternatively, select the call center channel that's associated with the customer service agent who is creating the order.
+1. Select a B2B online channel associated with the customer. Alternatively, select the call center channel associated with the customer service agent who is creating the order.
 
     > [!NOTE]
-    > The channel selection controls the downstream choices that are available. For example, if you select a B2B online channel that's associated with a customer's B2B customer hierarchy, the available catalog selections are based on the catalogs that are associated with the selected B2B online channel. If you select the call center channel, different catalog selections are available.
+    > The channel selection controls the downstream choices that are available. For example, if you select a B2B online channel associated with a customer's B2B customer hierarchy, the available catalog selections are based on the catalogs that are associated with the selected B2B online channel. If you select the call center channel, different catalog selections are available.
 
 1. Add order lines as needed. Order details such as the delivery mode, delivery date, and payment method are controlled by the selection or update to the channel.
 
@@ -65,8 +64,10 @@ To create an order in headquarters after you enable the feature, follow these st
 
 ### Order modifications
 
-- Modifications can be made to a channel only if no line is fulfilled. If an order is partially fulfilled, no modification is allowed to update the channel.
-- If no line is fulfilled, the channel can be updated on the header. The system must validate whether the catalog on previously added lines is still valid.
+- You can modify a channel only if no line is fulfilled. If an order is partially fulfilled, you can't modify the order to update the channel.
+- If no line is fulfilled, you can update the channel on the header. The system checks whether the catalog on previously added lines is still valid.
 - If the catalog isn't valid for the newly updated channel, the system flags those lines with a warning to indicate that the valid catalog selection must be updated.
 - If the catalog on existing order lines is valid for the newly updated channel, no action is required. The system also updates the pricing, based on the updated channel information.
-- On nonfulfilled lines, the site, the warehouse, product information, quantities, or catalogs can be updated or removed as needed. The system validates the product information and the catalog selection accordingly, and applies the appropriate prices.
+- On nonfulfilled lines, you can update or remove the site, the warehouse, product information, quantities, or catalogs as needed. The system validates the product information and the catalog selection accordingly, and applies the appropriate prices.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
