@@ -13,9 +13,11 @@ ms.reviewer:
 
 **Overview**
 
-Store Commerce POS supports language selection at Self-Checkout and adds localization support for button grids and screen layout tabs.
+The 10.0.47 release of Store Commerce POS introduces enhanced multilanguage capabilities that will allow retailers to offer a more accessible, and globally consistent experience for shoppers by enabling language selection on the Self-Checkout welcome screen and introducing new options to localize POS screen layout button grids and tabs.. This article describes how to configure and use these multi-language enhancements, helping you streamline checkout for both customers and store associates.
 
 **Multi-language Self-Checkout**
+
+Below, we describe language selection at self-checkout in Store Commerce POS and how stores can configure supported languages.
 
 - **Language selection on the welcome screen** Shoppers can choose their preferred language directly from the Self-Checkout welcome screen, without staff assistance.
 - **Configurable per store** Administrators can select which languages are available for each store, ensuring the right options for every location. To enable additional languages for a store , go to **Retail and Commerce ** -> Stores -> **General** -> **Regional settings** and list the additional languages in **Secondary languages**.
@@ -25,14 +27,16 @@ Store Commerce POS supports language selection at Self-Checkout and adds localiz
 - **Feature flag control** Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience. To enable the flag go to **Functionality profile**-> **Self-Checkout** and turn ON the flag **Enable language selection on Self-checkout Welcome page**.
 - **New change language operation** can be added into the transaction grid for switching the language during checkout.
 
-  ![Multi language for Self-checkout.](media/ML SCOlearn.jpg)
+  ![Multi language for Self-checkout.](articles/commerce/media/ML SCOlearn.jpg)
 
 **Localization of Button labels and Screen layout tabs**
 
-- **Localize button grids and tabs:** Configure multiple languages for button labels and tab names directly in the layout designer. To localize a button grid, open the button **propoerties** in the button grid designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit. To localize a tab, go to **Customize** option for a tab in the layout designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit.
-  ![Localize buttongrid.](media/buttongrid learn1.jpg)
-  ![Localize buttongrid.](media/buttongrid learn2.jpg)
-  ![Localize tab.](media/tab learn1.jpg)
+Below, you’ll learn how to localize POS button labels and tabs within layout designer to support multiple languages.
+
+- **Localize button grids and tabs:** Configure multiple languages for button labels and tab names directly in the layout designer. To localize a button grid, open the button **properties** in the button grid designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit. To localize a tab, go to **Customize** option for a tab in the layout designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit.
+  ![Localize buttongrid.](articles/commerce/media/buttongrid learn1.jpg)
+  ![Localize buttongrid.](articles/commerce/media/buttongrid learn2.jpg)
+  ![Localize tab.](articles/commerce/media/tab learn1.jpg)
   
 - **Single configuration, multi-language support:** Design layouts once and reuse across all supported languages—no need to duplicate layouts for each language.
 - **Runtime resolution:** When a store associate logs into POS, the layout automatically resolves to the language configured for their worker profile.
