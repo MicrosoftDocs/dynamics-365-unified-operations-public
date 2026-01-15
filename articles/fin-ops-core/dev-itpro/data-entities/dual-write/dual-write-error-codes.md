@@ -4,7 +4,7 @@ description: Learn about error codes that can occur during table map and project
 author: jaredha
 ms.author: jaredha
 ms.topic: troubleshooting-error-codes
-ms.date: 03/11/2024
+ms.date: 01/15/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

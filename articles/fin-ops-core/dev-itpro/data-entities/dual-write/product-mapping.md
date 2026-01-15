@@ -2,9 +2,9 @@
 title: Unified product experience
 description: Learn about the integration of product data between finance and operations apps and Dataverse, including a table outlining various templates.
 author: t-benebo
-ms.author: johnmichalak
+ms.author: twheeloc
 ms.topic: article
-ms.date: 05/24/2024
+ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
@@ -19,15 +19,15 @@ When a business ecosystem is made up of Dynamics 365 applications, such as Finan
 
 The following image shows the product data model from Dynamics 365 Sales.
 
-![Data model for products in CE.](media/dual-write-product-4.jpg)
+:::image type="content" source="media/dual-write-product-4.jpg" alt-text="Screenshot of data model for products in CE.":::
 
 The following image shows the product data model from finance and operations apps.
 
-![Data model for products in finance and operations apps.](media/dual-write-products-5.jpg)
+:::image type="content" source="media/dual-write-products-5.jpg" alt-text="Screenshot of data model for products in finance and operations apps.":::
 
 These two product data models are integrated into Dataverse as shown in the following image.
 
-![Data model for products in Dynamics 365 apps.](media/dual-write-products-6.jpg)
+:::image type="content" source="media/dual-write-products-6.jpg" alt-text="Screenshot of data model for products in Dynamics 365 apps.":::
 
 The dual-write table maps for products are designed to flow data only one way, from finance and operations apps to Dataverse in near-real time. However, the product infrastructure is open to make it bidirectional if necessary. Although you can customize it, you do so at your own risk, because Microsoft doesn't recommend this approach.
 
@@ -114,7 +114,7 @@ Finance and operations apps | Customer engagement apps |
 
 Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Dataverse to define the product variants. The following illustration shows the data model for the Color product dimension. The same model is applied to Size, Style, and Configuration.
 
-![Data model for product dimensions.](media/dual-write-product-two.png)
+:::image type="content" source="media/dual-write-product-two.png" alt-text="Screenshot of data model for product dimensions.":::
 
 Finance and operations apps | Customer engagement apps |
 ---|---
@@ -148,7 +148,7 @@ Finance and operations apps | Customer engagement apps |
 
 The units of measure and the respective conversion are available in the Dataverse following the data model shown in the diagram.
 
-![Data model for unit of measure.](media/dual-write-product-three.png)
+:::image type="content" source="media/dual-write-product-three.png" alt-text="Screenshot of data model for unit of measure.":::
 
 The unit of measure concept is integrated between finance and operations apps and other Dynamics 365 apps. For each unit class in a finance and operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group.
 

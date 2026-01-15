@@ -4,7 +4,7 @@ description: Learn how to set up error handling and manage errors in dual-write 
 author: pnghub
 ms.author: twheeloc
 ms.topic: article
-ms.date: 01/14/2026
+ms.date: 01/15/2026
 ms.reviewer: twheeloc
 ms.custom:
   - sfi-image-nochange
@@ -29,10 +29,10 @@ For all data synchronization processes, you must be able to manage and troublesh
 - You can filter by date and time, entity, and data source.
 - You can retry or dismiss the error conditions, based on the filter criteria. The retry and dismiss functionality works only when the integration job for dual-write synchronization is active.
 
-    - **Retry** – You can retry selected records, based on the specified filter criteria.
-    - **Dismiss** – You can permanently remove records from the error queue. After records are dismissed, they're no longer available for reporting or retries.
- 
-  :::image type="content" source="./media/image-error.png" alt-text="Screenshot of sync errors." lightbox="./media/image-error.png":::
+  - **Retry** – You can retry selected records, based on the specified filter criteria.
+  - **Dismiss** – You can permanently remove records from the error queue. After records are dismissed, they're no longer available for reporting or retries.
+
+  :::image type="content" source="./media/image-error.png" alt-text="Screenshot of the sync errors dashboard showing error details with filtering options." lightbox="./media/image-error.png":::
 
 ## Limits
 
@@ -42,13 +42,12 @@ The retry and dismiss functionality has limits on the requests that you can crea
 - **Number of records per request** – Each request can process up to 10,000 records. This limit helps prevent long reconciliations that lead to longer lead times for processing other requests.
 
 ### Sync errors details
- - Users can look up their data by using the unique key and company reference in finance and operations or Dataverse. The unique key refers to the source side record.
- - Error codes come from internal exceptions or messages that help with troubleshooting.
- - **Created On** shows when the error record was created, not the actual record creation.  
 
-### Known issues 
+ 1. Users can look up their data by using the unique key and company reference in finance and operations or Dataverse. The unique key refers to the source side record.
+ 1. Error codes come from internal exceptions or messages that help with troubleshooting.
+ 1. **Created On** shows when the error record was created, not the actual record creation.  
 
- - Updates to unmapped fields in finance and operations and Dataverse trigger the Async process. This process leads to phantom updates or unknown failures that the error table logs. The product team is working on a fix for this problem. It is available as part of quality updates. If an influx of error records is logged where data updates aren't expected, it could be due to updates from unmapped fields. Dismiss or retry the records from the **Sync errors** table.
- - The error retry and dismiss screen might take time to display if a large subset of data is retried. This behavior is expected as the process queues records for a background process. The blocking UX call provides feedback at the end of the process.
+### Known issues
 
-
+ 1. Updates to unmapped fields in finance and operations and Dataverse trigger the Async process. This process leads to phantom updates or unknown failures that the error table logs. The product team is working on a fix for this problem. It's available as part of quality updates. If an influx of error records is logged where data updates aren't expected, it could be due to updates from unmapped fields. Dismiss or retry the records from the **Sync errors** table.
+ 1. The error retry and dismiss screen might take time to display if a large subset of data is retried. This behavior is expected as the process queues records for a background process. The blocking UX call provides feedback at the end of the process.

@@ -4,7 +4,7 @@ description: Learn how to set up and manage dual-write async in Microsoft Dynami
 author: pnghub
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 09/26/2024
+ms.date: 01/15/2026
 ms.custom:
 ms.reviewer: twheeloc
 ---
@@ -50,7 +50,7 @@ The public preview of the dual-write async feature is currently available on pub
 1. Select **Start** to initiate Async mode. This process might take a few minutes. When the job is ready, its status changes to **Active**.
 1. Select **Stop** to stop the async process.
 
-:::image type="content" source="./media/image.png" alt-text="Screenshot of integration jobs.":::
+:::image type="content" source="./media/image.png" alt-text="Screenshot of the integration jobs page showing table maps and job status.":::
 
 ## Modify the initial setup
 

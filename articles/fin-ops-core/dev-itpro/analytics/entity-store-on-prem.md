@@ -4,7 +4,7 @@ description: Learn about how to enable Entity Store for on-premises deployments,
 author: MilindaV
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 05/27/2021
+ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -21,15 +21,15 @@ search.app:
 
 [!include [banner](../includes/banner.md)]
 
-The cloud version provides several features that allow for deeper integration with Microsoft Power BI. Some of these features haven't yet been implemented for on-premises deployments. However, the availability of Entity Store in on-premises deployments lets customers use PowerBI.com to report on and analyze data. 
+The cloud version provides several features that allow for deeper integration with Microsoft Power BI. Some of these features aren't yet available for on-premises deployments. However, the availability of Entity Store in on-premises deployments lets you use PowerBI.com to report on and analyze data. 
 
 This article outlines the analytical capabilities that are available in on-premises deployments that run Microsoft Dynamics 365 Finance platform update 26 (May 2019) and later.
 
-| Feature/capability                                                           | Cloud     | On-premises (Platform update 26 or later) |
+| Feature or capability                                                           | Cloud     | On-premises (Platform update 26 or later) |
 |------------------------------------------------------------------------------|-----------|-------------------------------------------|
-| Analytical workspaces                                                        | Available | **Not yet implemented**<p>Customers can use the reports that are built on Entity Store together with PowerBI.com.</p> |
+| Analytical workspaces                                                        | Available | **Not yet implemented**<p>Use the reports that are built on Entity Store together with PowerBI.com.</p> |
 | Pin reports, tiles, and dashboards from PowerBI.com into the client.         | Available | **Not yet implemented** |
-| Author and distribute Power BI reports that use application data. | Available | **Available**<p>Customers can modify ready-made reports and create new reports by using Entity Store on-premises.</p> |
+| Author and distribute Power BI reports that use application data. | Available | **Available**<p>Modify ready-made reports and create new reports by using Entity Store on-premises.</p> |
 | Extract application data into data warehouses.                    | Available | **Available** |
 
 ## Enable Entity Store on-premises
@@ -47,10 +47,10 @@ This article supplements the [Set up and deploy on-premises environments (Platfo
 
 The steps in this section are optional.
 
-If you want to create a database that can be used for Entity Store, you must first modify the ConfigTemplate.xml file.
+To create a database for Entity Store, first modify the ConfigTemplate.xml file.
 
-1. Under **DbServer – Security**, set the **generateUser** flags for **axdwadmin** and **axdwruntimeuser** to **True**. The scripts that you run in the next step will then create those two users. You will be prompted to set passwords for the users.
-2. Run the following scripts.
+1. Under **DbServer – Security**, set the **generateUser** flags for **axdwadmin** and **axdwruntimeuser** to **True**. The scripts that you run in the next step create these two users. You're prompted to set passwords for the users.
+1. Run the following scripts.
 
     ```powershell
     .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
@@ -59,20 +59,20 @@ If you want to create a database that can be used for Entity Store, you must fir
 
     The Initialize-Database.ps1 script performs the following actions:
 
-    - Create an empty database that is named **AXDW**. This database is used for Entity Store.
-    - Create a new user that is named **axdwadmin** and that has SQL authentication enabled, and prompt you for the user's password.
-    - Create a new user that is named **axdwruntimeuser** and that has SQL authentication enabled, and prompt you for the user's password.
-    - Grant the axdwadmin and axdwruntimeuser users **db\_owner** permissions on the database.
+    - Creates an empty database named **AXDW**. This database is used for Entity Store.
+    - Creates a new user named **axdwadmin** with SQL authentication enabled, and prompts you for the user's password.
+    - Creates a new user named **axdwruntimeuser** with SQL authentication enabled, and prompts you for the user's password.
+    - Grants the **db_owner** permissions on the database to the **axdwadmin** and **axdwruntimeuser** users.
 
     The Configure-Database.ps1 script performs the following actions:
 
-    - Set the specified database file and log settings.
-    - GRANT VIEW SERVER STATE TO axdwadmin.
-    - GRANT VIEW SERVER STATE TO axdwruntimeuser.
+    - Sets the specified database file and log settings.
+    - Runs `GRANT VIEW SERVER STATE TO axdwadmin`.
+    - Runs `GRANT VIEW SERVER STATE TO axdwruntimeuser`.
 
 ### [15. Encrypt credentials](../deployment/setup-deploy-on-premises-latest.md#encryptcred)
 
-Create a Credentials.json file as shown here. The **AosDWAuth** category is optional and is used only if Entity Store is enabled.
+Create a Credentials.json file as shown in the following example. The **AosDWAuth** category is optional and is used only if Entity Store is enabled.
 
 ```json
 {
@@ -92,12 +92,12 @@ Create a Credentials.json file as shown here. The **AosDWAuth** category is opti
 }
 ```
 
-Here is an explanation of the preceding code lines:
+Here's an explanation of the preceding code lines:
 
 - **AccountPassword** is the encrypted domain user password for the Application Object Server (AOS) domain user (contoso\\axserviceuser).
 - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the application database (AXDB). **SqlPwd** is the encrypted SQL password.
-- **DWUser** is the encrypted SQL user (axdwadmin) that has access to the Entity Store database (AXDW). **DWPwd** is the encrypted SQL password that is entered when the Initialize-Database.ps1 script is run.
-- **DWRuntimeUser** is the encrypted SQL user (axdwruntimeuser) that has access to the Entity Store database (AXDW). **DWRuntimePwd** is the encrypted SQL password that is entered when the Initialize-Database.ps1 script is run.
+- **DWUser** is the encrypted SQL user (axdwadmin) that has access to the Entity Store database (AXDW). **DWPwd** is the encrypted SQL password that you enter when you run the Initialize-Database.ps1 script.
+- **DWRuntimeUser** is the encrypted SQL user (axdwruntimeuser) that has access to the Entity Store database (AXDW). **DWRuntimePwd** is the encrypted SQL password that you enter when you run the Initialize-Database.ps1 script.
 
 ## More information
 
@@ -105,21 +105,21 @@ Entity Store was enabled in Platform update 26.
 
 Creation of the Entity Store database and users is optional. When you configure a deployment in Microsoft Dynamics Lifecycle Services (LCS), you can leave the Entity Store customizations blank.
 
-If Entity Store should be enabled in an environment, the following tasks must be completed:
+If you want to enable Entity Store in an environment, complete the following tasks:
 
-- Create an **AXDW** database by using the scripts that are described in step 14.
-- Create **axdwadmin** and **axdwruntimeuser** users that have appropriate privileges, by using the scripts in that are described step 14. Users are defined in the following files: ConfigTemplate.xml and DatabaseTopologyDefinition.xml.
-- Create a **Credentials.json** file as described in step 15. User names and passwords should be defined for axdwadmin and axdwruntimeuser as described in step 14, and they should be encrypted.
-- The Entity Store SQL Server name and Entity Store database name must be filled in during deployment in LCS.
+- Create an **AXDW** database by using the scripts described in step 14.
+- Create **axdwadmin** and **axdwruntimeuser** users that have appropriate privileges by using the scripts described in step 14. Users are defined in the following files: ConfigTemplate.xml and DatabaseTopologyDefinition.xml.
+- Create a **Credentials.json** file as described in step 15. Define user names and passwords for axdwadmin and axdwruntimeuser as described in step 14, and encrypt them.
+- Fill in the Entity Store SQL Server name and Entity Store database name during deployment in LCS.
 
     - The database name is created in step 14 and is defined in the DatabaseTopologyDefinition.xml file. The default name is **AXDW**.
     - The SQL Server name is the fully qualified domain name (FQDN) of the Microsoft SQL Server or Always on listener. An example of this FQDN is **sqlinstance.onprem.contoso.com**. It's the server that the AXDW database is created on.
 
-To enable Entity Store in an environment that has already been deployed, you can use the **Update Settings** action under the **Maintain** button in LCS. This will open a dialog that will allow you to specify the Entity Store configuration. 
+To enable Entity Store in an environment that you already deployed, use the **Update Settings** action under the **Maintain** button in LCS. This action opens a dialog that allows you to specify the Entity Store configuration. 
 
-## Authoring and distributing reports by using Entity Store on-premises
+## Author and distribute reports by using Entity Store on-premises
 
-Entity Store is an operational data warehouse that is included. It lets power users and business analysts author reports that use simplified and enriched data. Entity Store contains aggregate measurements, which are simplified star schemas. For more information about how to author reports by using Entity Store, see [Create analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md).
+Entity Store is an operational data warehouse that's included. It lets power users and business analysts author reports that use simplified and enriched data. Entity Store contains aggregate measurements, which are simplified star schemas. For more information about how to author reports by using Entity Store, see [Create analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md).
 
 Note the following additional steps that are specific to on-premises deployments:
 

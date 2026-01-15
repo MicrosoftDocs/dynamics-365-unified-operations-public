@@ -4,7 +4,7 @@ description: Learn about how you can use Microsoft Dynamics 365 Field Service to
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/27/2020
+ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-27
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Field Service is designed to service customer assets. Asset management for Dynamics 365 Supply Chain Management is designed to maintain in-house assets. Integration of these two apps lets you use Field Service to service both customer assets and in-house assets. You can also classify the assets, based on functional location or hierarchy, and track the servicing at a detailed level.
+Microsoft Dynamics 365 Field Service is designed to service customer assets. Asset management for Dynamics 365 Supply Chain Management is designed to maintain in-house assets. By integrating these two apps, you can use Field Service to service both customer assets and in-house assets. You can also classify the assets, based on functional location or hierarchy, and track the servicing at a detailed level.
 
 For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](/dynamics365/field-service/supply-chain-field-service-integration).
 

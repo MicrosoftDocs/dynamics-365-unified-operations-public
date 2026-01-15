@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 ms.search.region: global
 ms.search.validFrom: 2023-06-06
@@ -16,7 +16,7 @@ ms.search.validFrom: 2023-06-06
 
 [!include [banner](../../includes/banner.md)]
 
-The dual-write health check runs validations to ensure that the environment meets system requirements, and that the required configurations for dual-write have been completed. The health check is typically done as part of the setup and configuration process for dual-write, to ensure the prerequisite configuration is completed before entity maps are set up. However, it can also be done as a troubleshooting step if issues occur after configuration is completed.
+The dual-write health check runs validations to ensure that the environment meets system requirements and that you completed the required configurations for dual-write. Run the health check as part of the setup and configuration process for dual-write to ensure the prerequisite configuration is completed before you set up entity maps. You can also run the health check as a troubleshooting step if problems occur after configuration.
 
 ## Run the dual-write health check
 
@@ -27,13 +27,13 @@ To run the dual-write health check, follow these steps:
 
 ## Steps in the dual-write health check
 
-There are two steps in the validation: the prerequisite health check and dependency validation.
+The validation process includes two steps: the prerequisite health check and dependency validation.
 
 ### Prerequisite health check
 
-The prerequisite health check verifies that the system requirements and prerequisites have been met, so that the dual-write configuration can link the finance and operations apps environment to the Microsoft Dataverse environment. This check ensures that the required solutions have been installed in the environment, and that permissions have been configured to grant access to the environments.
+The prerequisite health check verifies that the system requirements and prerequisites are met. It checks that the dual-write configuration can link the finance and operations apps environment to the Microsoft Dataverse environment. This check ensures that the required solutions are installed in the environment and that permissions are configured to grant access to the environments.
 
-For more information about the validations for prerequisite configuration, see [System requirements and prerequisites](./requirements-and-prerequisites.md). This article includes information about the health check results and the requirements for fixing any issues that the health check identifies.
+For more information about the validations for prerequisite configuration, see [System requirements and prerequisites](./requirements-and-prerequisites.md). This article includes information about the health check results and the requirements for fixing any problems that the health check identifies.
 
 ### Dependency validation
 
@@ -44,7 +44,7 @@ After the prerequisites have been met, and the finance and operations apps envir
 
 Three dependency validations are done:
 
-- **APIHubConnection** – There must be a connection to APIHub for the finance and operations apps environment and the Dataverse environment.
+- **APIHubConnection** – There must be a connection to API Hub for the finance and operations apps environment and the Dataverse environment.
 - **StaleConfiguration** – Dual-write entity map configurations must match the entity in both the finance and operations apps environment and the Dataverse environment.
 - **BusinessUnit** – Configuration must be completed for the default team of the root business unit of the Dataverse environment.
 
@@ -52,8 +52,8 @@ The following table lists the error codes that can occur during the dual-write h
 
 | Error code | Description | How to fix the error |
 |------------|-------------|----------------------|
-| DWDVEV1001 | Missing Dataverse APIHub connection, without ConnectionFix support. | <p>This error indicates that the APIHub connection for Dataverse that's used in dual-write doesn't exist. It might have been deleted from the Power Apps maker portal.</p><p>To fix this error, reset dual-write by following the instructions in [Reset dual-write connections](./reset.md).</p> |
-| DWFOEV1001 | Missing finance and operations apps APIHub connection without ConnectionFix support. | <p>This error indicates that the APIHub connection for finance and operations apps that's used in dual-write doesn't exist. It might have been deleted from the Power Apps maker portal.</p><p>To fix this error, reset dual-write by following the instructions in [Reset dual-write connections](./reset.md).</p> |
+| DWDVEV1001 | Missing Dataverse API Hub connection, without ConnectionFix support. | <p>This error indicates that the API Hub connection for Dataverse that's used in dual-write doesn't exist. It might have been deleted from the Power Apps maker portal.</p><p>To fix this error, reset dual-write by following the instructions in [Reset dual-write connections](./reset.md).</p> |
+| DWFOEV1001 | Missing finance and operations apps API Hub connection without ConnectionFix support. | <p>This error indicates that the API Hub connection for finance and operations apps that's used in dual-write doesn't exist. It might have been deleted from the Power Apps maker portal.</p><p>To fix this error, reset dual-write by following the instructions in [Reset dual-write connections](./reset.md).</p> |
 | DWDVEV1003 | Company mismatched between dual-write and Dataverse. | <p>This error indicates that the company (legal entity) that's linked to dual-write doesn't match the company in Dataverse. In other words, the legal entities that are configured on the **Dual-write** page in finance and operations apps don't match the legal entities that are set up in Dataverse.</p><p>To view the list of legal entities in finance and operations apps, select **Environment details** on the **Dual-write** page, and then review the list on the **Legal entities** tab. To view the list of legal entities in Dataverse, review the records in the **Company** (**cdm\_company**) table in Dataverse. The legal entities that are listed for dual-write in finance and operations apps must exist in the **Company** table in Dataverse.</p><p>There are two options for fixing this error:</p><ul><li>Get the list of mismatched companies from the error message in the health check, and remove the mismatched companies from the dual-write configuration.</li><li>Reset the dual-write connection by following the instructions in [Reset dual-write connections](./reset.md).</li></ul> |
 | DWFOEV1003 | Company mismatched between dual-write and finance and operations apps. | <p>This error indicates that the company (legal entity) that's linked to dual-write doesn't match the legal entity in finance and operations apps. In other words, the legal entities that are configured on the **Dual-write** page in finance and operations apps don't match the legal entities that are set up in Dataverse.</p><p>To view the list of legal entities in finance and operations apps, select **Environment details** on the **Dual-write** page, and then review the list on the **Legal entities** tab. To view the list of legal entities in Dataverse, review the records in the **Company** (**cdm\_company**) table in Dataverse. The legal entities that are listed for dual-write in finance and operations apps must exist in the **Company** table in Dataverse.</p><p> There are two options for fixing this error:</p><ul><li>Get the list of mismatched companies from the error message in the health check, and remove the mismatched companies from the dual-write configuration.</li><li>Reset the dual-write connection by following the instructions in [Reset dual-write connections](./reset.md).</li></ul> |
 | DWDVEV1004 | <p>Stale dual-write configurations are present in Dataverse. | After the dual-write link between the finance and operations apps environment and the Dataverse environment is removed, dual-write runtime configurations might remain in Dataverse. This error indicates that stale configurations exist in the Dataverse environment.</p><p>To fix this error, follow the steps for cleaning up Dataverse configurations in the [Fix synchronization issues in an environment that has recently changed Dataverse environment](./dual-write-troubleshooting-live-sync.md#fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-dataverse-environment) section of the dual-write troubleshooting guide.</p> |

@@ -4,7 +4,7 @@
 title: Customer orders in point of sale (POS)
 description: This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 06/25/2023
+ms.date: 01/15/2026
 ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User
@@ -87,7 +87,7 @@ Ensure that you configure the POS [screen layout](./pos-screen-layouts.md) to su
 - **Change mode of delivery** – This operation can be used to quickly change the mode of delivery for lines that are already configured for shipment, without requiring that users go through the "ship all products" or "ship selected products" flow again.
 - **Deposit override** – This operation can be used to change the deposit amount that the customer pays for the selected customer order.
 
-![Operations on the POS transaction screen.](media/customer-order-screen-layout.png)
+:::image type="content" source="media/customer-order-screen-layout.png" alt-text="Screenshot of operations on the POS transaction screen.":::
 
 ## Work with customer orders in POS
 
@@ -99,25 +99,25 @@ Ensure that you configure the POS [screen layout](./pos-screen-layouts.md) to su
 To create a customer order for products that are shipped to the customer, follow these steps:
 
 1. On the POS transaction screen, add a customer to the transaction.
-2. Add products to the cart.
-3. Select **Ship selected** or **Ship all** to ship the products to an address on the customer account.
-4. Select the option to create a customer order.
-5. Confirm or change the "ship from" location, confirm or change the shipping address, and select a shipping method.
-6. Enter the customer's desired order shipment date.
-7. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-8. If the full order total wasn't paid, enter a credit card that will be charged for the balance that is due on the order when it's invoiced.
+1. Add products to the cart.
+1. Select **Ship selected** or **Ship all** to ship the products to an address on the customer account.
+1. Select the option to create a customer order.
+1. Confirm or change the "ship from" location, confirm or change the shipping address, and select a shipping method.
+1. Enter the customer's desired order shipment date.
+1. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
+1. If the full order total wasn't paid, enter a credit card that will be charged for the balance that is due on the order when it's invoiced.
 
 ### Create a customer order for products that the customer will pick up
 
 To create a customer order for products that the customer will pick up, follow these steps:
 
 1. On the POS transaction screen, add a customer to the transaction.
-2. Add products to the cart.
-3. Select **Pick up selected** or **Pick up all** to initiate the order pickup configuration.
-4. Select the store location where the customer will pick up the selected products.
-5. Select a date when the item will be picked up.
-6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-7. If the full order total wasn't paid, select whether the customer provides payment later (at pickup), or whether a credit card is tokenized now and used and captured at the time of pickup.
+1. Add products to the cart.
+1. Select **Pick up selected** or **Pick up all** to initiate the order pickup configuration.
+1. Select the store location where the customer will pick up the selected products.
+1. Select a date when the item will be picked up.
+1. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
+1. If the full order total wasn't paid, select whether the customer provides payment later (at pickup), or whether a credit card is tokenized now and used and captured at the time of pickup.
 
 ### Edit an existing customer order
 
@@ -132,11 +132,11 @@ Retail orders that are created in either the online or store channel can be reca
 In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users are only able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
 
 1. Select **Recall order**.
-2. Use **Search** to enter filters to find the order, and then select **Apply**.
-3. Select the order in the list of results, and then select **Edit**. If the **Edit** button is unavailable, the order is in a state where it can't be edited.
-4. From the transaction cart, make any necessary changes to the customer order. Some changes might be prohibited during editing.
-5. Complete the editing process by selecting a payment operation.
-6. To exit the editing process without saving any changes, you can use the **Void transaction** operation.
+1. Use **Search** to enter filters to find the order, and then select **Apply**.
+1. Select the order in the list of results, and then select **Edit**. If the **Edit** button is unavailable, the order is in a state where it can't be edited.
+1. From the transaction cart, make any necessary changes to the customer order. Some changes might be prohibited during editing.
+1. Complete the editing process by selecting a payment operation.
+1. To exit the editing process without saving any changes, you can use the **Void transaction** operation.
 
 #### Pricing impact when orders are edited
 
@@ -161,11 +161,11 @@ Call center users can also disable the **Price locked** property for order lines
 To cancel a customer order, follow these steps:
 
 1. Select **Recall order**.
-2. Use **Search** to enter filters to find the order, and then select **Apply**.
-3. Select the order in the list of results, and then select **Cancel**. If the **Cancel** button is unavailable, the order is in a state where it can no longer be canceled.
-4. If cancellation charges are configured, confirm them. You can adjust the cancellation charges before you confirm them, as required. 
-5. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that were paid exceed the cancellation charge, refund payments might be due.
-6. To exit the cancellation process without saving any changes, you can use the **Void transaction** operation.
+1. Use **Search** to enter filters to find the order, and then select **Apply**.
+1. Select the order in the list of results, and then select **Cancel**. If the **Cancel** button is unavailable, the order is in a state where it can no longer be canceled.
+1. If cancellation charges are configured, confirm them. You can adjust the cancellation charges before you confirm them, as required. 
+1. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that were paid exceed the cancellation charge, refund payments might be due.
+1. To exit the cancellation process without saving any changes, you can use the **Void transaction** operation.
 
 In Commerce versions prior to 10.0.36, if an order is partially canceled and it's recalled in POS for editing, then the canceled order lines are also displayed on the transaction and printed on the receipt of the edited order. With Commerce version 10.0.36 and later, the canceled lines are hidden from POS and aren't printed on the receipt. This functionality is controlled by the **Hide canceled order lines from POS** feature, which is enabled by default in the feature management workspace starting in version 10.0.36. The feature can be disabled if necessary.
 

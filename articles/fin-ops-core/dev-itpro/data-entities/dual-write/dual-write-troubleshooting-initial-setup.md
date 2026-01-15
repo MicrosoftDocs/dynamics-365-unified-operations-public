@@ -4,7 +4,7 @@ description: Learn about how you fix issues that occur during the initial setup 
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: troubleshooting-general
-ms.date: 08/10/2021
+ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -16,22 +16,22 @@ ms.custom: sfi-image-nochange
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
+This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix problems that might occur during the initial setup of dual-write integration.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the problems that this article addresses might require either the system admin role or Microsoft Entra tenant admin credentials. The section for each problem explains whether a specific role or credentials are required.
 
 ## You can't link a finance and operations app to Dataverse
 
 **Required role to set up dual-write:** System administrator in finance and operations apps and Dataverse.
 
-Errors on the **Setup link to Dataverse** page are usually caused by incomplete setup or permissions issues. Make sure that the whole health check passes on the **Setup link to Dataverse** page, as shown in the following illustration. You can't link dual-write unless the whole health check passes.
+Errors on the **Setup link to Dataverse** page usually happen because of incomplete setup or permissions problems. Make sure that the whole health check passes on the **Setup link to Dataverse** page, as shown in the following illustration. You can't link dual-write unless the whole health check passes.
 
-![Successful health check.](media/health_check.png)
+:::image type="content" source="media/health_check.png" alt-text="Screenshot of successful health check.":::
 
 You must have Microsoft Entra tenant admin credentials to link the finance and operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
-## Find the limit on the number of legal entities or companies that can be linked for dual-write
+## Limit on the number of legal entities or companies that you can link for dual-write
 
 You might receive the following error message when you try to enable maps:
 
@@ -49,46 +49,46 @@ While linking the dual-write environment, the action fails with an error message
 
 *Saving connection set failed! An item with the same key has already been added.*
 
-Dual-write does not support multiple legal entities/companies with the same name. For example, if you have two companies with "DAT" name in the Dataverse then it will get this error message.
+Dual-write doesn't support multiple legal entities or companies with the same name. For example, if you have two companies with "DAT" name in the Dataverse, you see this error message.
 
-To unblock the customer, remove duplicate records from **cdm_company** table in Dataverse. Also, if the **cdm_company** table has records with blank name, remove or correct those records.
+To resolve the error, remove duplicate records from the **cdm_company** table in Dataverse. Also, if the **cdm_company** table has records with blank name, remove or correct those records.
 
 ## Error when opening the Dual-write page in finance and operations apps
 
 You might receive the following error message when you try to link a Dataverse environment for dual-write:
 
-*Response status code does not indicate success: 404 (Not Found).*
+*Response status code doesn't indicate success: 404 (Not Found).*
 
-This error occurs when the app consent step is not complete. You can validate if consent has been provided by logging on to `portal.azure.com` using the tenant admin account, and check if the 3rd party app with ID `33976c19-1db5-4c02-810e-c243db79efde` shows up in Microsoft Entra’s Enterprise applications list. If not, then rerun the consent step as described in the next section.
+This error occurs when the app consent step isn't complete. You can validate if consent is provided by signing in to `portal.azure.com` by using the tenant admin account. Check if the third-party app with ID `33976c19-1db5-4c02-810e-c243db79efde` shows up in Microsoft Entra’s Enterprise applications list. If not, rerun the consent step as described in the next section.
 
-### Providing App consent
+### Providing app consent
 
-+ Launch the following URL with your admin credentials.
+1. Sign in by using your admin credentials.
 
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
-+ Select **Accept** to consent. You are providing the consent to install the app (with `id=33976c19-1db5-4c02-810e-c243db79efde`) in your tenant.
-+ This app is required for Dataverse to communicate to finance and operations apps.
+1. Select **Accept** to consent. You're providing the consent to install the app (with `id=33976c19-1db5-4c02-810e-c243db79efde`) in your tenant.
+1. Dataverse needs this app to communicate with finance and operations apps.
 
-    ![Initial sync setup troubleshooting.](media/Initial-sync-setup-troubleshooting-1.png)
+    :::image type="content" source="media/Initial-sync-setup-troubleshooting-1.png" alt-text="Screenshot of initial sync setup troubleshooting.":::
 
 > [!NOTE]
-> If this doesn't work, launch the URL in private mode of Microsoft Edge or incognito mode of Chrome.
+> If this method doesn't work, use the private mode of Microsoft Edge or incognito mode of Chrome to launch the URL.
 
-## Finance and operations environment is not discoverable
+## Finance and operations environment isn't discoverable
 
 You might receive the following error message:
 
-*Finance and operations apps environment \*\*\*.cloudax.dynamics.com is not discoverable.*
+*Finance and operations apps environment \*\*\*.cloudax.dynamics.com isn't discoverable.*
 
-There are two things that can cause an issue with environment not being discoverable:
+Two things can cause an issue with environment not being discoverable:
 
-+ The user used for login is not in the same tenant as the finance and operations instance.
-+ There are some legacy finance and operations instances that were Microsoft-hosted that had an issue with discovery. To fix this, update the finance and operations instance. The environment becomes discoverable with any update.
++ The user for sign in isn't in the same tenant as the finance and operations instance.
++ Some legacy finance and operations instances were Microsoft-hosted. These instances have an issue with discovery. To fix this problem, update the finance and operations instance. The environment becomes discoverable with any update.
 
 ## 403 (Forbidden) error while connections are being created
 
-As part of the dual-write linking process, two Power Apps connections (also known as *Apihub* connections) are created on behalf of the user in the linked Dataverse environment. If the customer doesn't have a license for the Power Apps environment, creation of the ApiHub connections fails, and a 403 (Forbidden) error is shown. Here is an example of the error message:
+As part of the dual-write linking process, you create two Power Apps connections (also known as *Apihub* connections) in the linked Dataverse environment on behalf of the user. If the user doesn't have a license for the Power Apps environment, creation of the ApiHub connections fails, and a 403 (Forbidden) error appears. Here's an example of the error message:
 
 > MSG=\[Failed to setup dual write environment. Error Details:Response status code does not indicate success: 403 (Forbidden). - Response status code does not indicate success: 403 (Forbidden).\] STACKTRACE=\[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297
 --- End of stack trace from previous location where exception was thrown ---
@@ -96,7 +96,7 @@ As part of the dual-write linking process, two Power Apps connections (also know
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
 
-This error occurs because of the lack of a Power Apps license. Assign an appropriate license (for example, Power Apps Trial 2 Plan) to the user, so that the user has permission to create the connections. To verify the license, the customer can go to the [My account](https://portal.office.com/account/?ref=MeControl#subscriptions) site to view the licenses that are currently assigned to the user.
+This error occurs because of the lack of a Power Apps license. Assign an appropriate license (for example, Power Apps Trial 2 Plan) to the user, so that the user has permission to create the connections. To verify the license, go to the [My account](https://portal.office.com/account/?ref=MeControl#subscriptions) site to view the licenses that are currently assigned to the user.
 
 For more information about Power Apps license, see the following articles:
 

@@ -4,7 +4,7 @@ description: Learn about how you can troubleshoot business events in cloud-hoste
 author: ramasri
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
-ms.date: 06/26/2023
+ms.date: 01/15/2026
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -17,11 +17,11 @@ When you set up business events or virtual entities in a cloud-hosted environmen
 
 > Response Status code does not indicate success : 400 (\{"error":"invalid\_client","error\_description";"Expected aud `https://securityservice.operations365.dynamics.com` but found."\})
 
-The error occurs because cloud-hosted environments and on-premises environments (also known as local business data \[LBD\] environments) don't use Security Service. Follow these steps to manually complete the setup.
+The error occurs because cloud-hosted environments and on-premises environments (also known as local business data [LBD] environments) don't use Security Service. Follow these steps to manually complete the setup.
 
 1. Create a new app registration in Microsoft Entra ID. Save the **Application client ID** value.
 1. In the new app registration, create a new secret. Save the **Secret** value.
-1. In Power Platform admin center, go to **Environments** \> **Settings** \> **Users \+ Permissions** \> **Application users** \> **New App User**, create an app user for the application client ID that you saved in step 1, and assign the appropriate role.
+1. In Power Platform admin center, go to **Environments** \> **Settings** \> **Users + Permissions** \> **Application users** \> **New App User**, create an app user for the application client ID that you saved in step 1, and assign the appropriate role.
 1. Go to **Dynamics 365 Finance and Operations System Administration** \> **Microsoft Entra Application**, and add the application client ID that you saved in step 1.
 1. In the Admin PowerShell console, run the following PowerShell script to refresh the integration of Dataverse via PowerShell in remote desktop in the cloud-hosted or LBD environment.
 
