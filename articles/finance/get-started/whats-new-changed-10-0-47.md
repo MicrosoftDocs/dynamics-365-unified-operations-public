@@ -48,14 +48,14 @@ This section contains a table that lists the enhancements that are included in t
 
 The following table lists the features that became turned on by default in version 10.0.47. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
 
-| Module | Feature name | More information |
+| Module | Feature name | Feature state |
 |--|--|--|
-| Budgeting |Enable non-retrievable purchase orders form for purchase year-end order process |
-| Budgeting |Budget register entries form performance enhancement |
-| Cash and bank management |Align time zone conversion in modern bank reconciliation | 
-| Cash and bank management | Automatic vendor account matching | 
-| Cash and bank management | Bank transactions page performance improvement | 
-| Cash and bank management | Search for customer/vendor account ID when manual payment journal is created during bank reconciliation process| 
+| Budgeting |Enable non-retrievable purchase orders form for purchase year-end order process |On by default  |
+| Budgeting |Budget register entries form performance enhancement | On by default   |
+| Cash and bank management |Align time zone conversion in modern bank reconciliation | On by default   |
+| Cash and bank management | Automatic vendor account matching | On by default   |
+| Cash and bank management | Bank transactions page performance improvement | On by default    | 
+| Cash and bank management | Search for customer/vendor account ID when manual payment journal is created during bank reconciliation process|  On by default  |
 
 
 ## Features removed from feature management
