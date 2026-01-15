@@ -1,6 +1,6 @@
 ---
 title: Agent Feed developer documentation (preview)
-description: This article describes how to use Agent Feed in Dynamics 365 Finance and Operations (FnO) to create, update, read, and customize feed items surfaced in Immersive Home.
+description: This article describes how to use Agent Feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive Home.
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
@@ -18,20 +18,20 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The guidance applies to FnO version 10.0.47, available in public preview by January 26, 2026. 
+The guidance applies to Dynamics 365 finance and operations version 10.0.47. 
 
-This article describes how to use Agent Feed in Dynamics 365 Finance and Operations (FnO) to create, update, read, and customize feed items surfaced in Immersive Home.
-Agent Feed enables ERP agents to post actionable feed items through Dataverse Custom APIs, store them natively in FnO, and render them as cards that respect security, ranking, and personalization.
+This article describes how to use Agent Feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive Home.
+Agent Feed enables ERP agents to post actionable feed items through Dataverse Custom APIs, store them natively in Dynamics 365 finance and operations, and render them as cards that respect security, ranking, and personalization.
 
 ## Overview
 
-Agent Feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using FnO menu items, and rendered through configurable card providers.
+Agent Feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using Dynamics 365 finance and operations menu items, and rendered through configurable card providers.
 
 ## How to send data to the Agent Feed in Immersive Home
 
-### Enable FnO features
+### Enable Dynamics 365 finance and operations features
 
-In Finance and Operations [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md), enable the features:
+In Dynamics 365 finance and operations, go to [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) and enable the features:
 
 - Immersive Home
 - (Preview) Agent Feed for Immersive Home
@@ -48,18 +48,18 @@ Supported APIs:
 - msdyn_AgentFeedCreateFeedItemCustomApi
 - msdyn_AgentFeedUpdateFeedItemCustomApi
 
-These APIs write and update feed data into FnO tables through an orchestrated X++ implementation that maintains transactional integrity across related Agent Feed tables.
+These APIs write and update feed data into Dynamics 365 finance and operations tables through an orchestrated X++ implementation that maintains transactional integrity across related Agent feed tables.
 
 ### Read feed items using Virtual Entity (optional)
 
 If your agent needs to read feed items, enable the virtual entity **AgentFeedEntity**.
 
-#### Enable Virtual Entity
+#### Enable virtual entity
 
-1. Open the Dataverse table **Available Finance and Operations Entity**
-1. Locate thr row **AgentFeedEntity**
-1. Set the column **Visible** to **Yes**
-1. Assure that the change is saved
+1. Open the **Available Finance and Operations Entity** dataverse table.
+1. Locate the row **AgentFeedEntity**.
+1. Set the column **Visible** to **Yes**.
+1. Save the change.
 
 Once enabled, feed items can be queried using standard Dataverse OData endpoints.
 
@@ -89,7 +89,7 @@ The default card provider doesn't support any actions.
 #### How to create custom card designs for feed items in Immersive Home
 
 **Step 1: Register a Card Provider enum**
-Create a new value in: AgentFeedCardProviderType (Application Common)
+Create a new value in: AgentFeedCardProviderType (Application Common).
 
 For example: ExpenseCardProvider
 :::image type="content" source="media/agent-feed-custom-card-provider-register.png" alt-text="Screenshot of the AgentFeedCardProviderType with an ExpenseCadProvider added." lightbox="media/agent-feed-custom-card-provider-register.png":::
@@ -214,7 +214,7 @@ internal final class ImmersiveHomeExpenseCardProvider extends ImmersiveHomeBaseA
 }
 ```
 
-The example custom ExpenseCardProvider renders cards with the agent feed title, the due date and subtitle, the agent feed summary, and multiple agent feed menu items, each appearing as a button that navigates accordingly.  
+The example custom ExpenseCardProvider renders cards with the agent feed title, the due date, subtitle, the agent feed summary, and multiple agent feed menu items, each appearing as a button that navigates accordingly.  
 
 :::image type="content" source="media/agent-feed-custom-card-annotated.png" alt-text="Screenshot of an expense card rendered by the ExpenseCardProvider with annotations of its content." lightbox="media/agent-feed-custom-card-annotated.png":::
 
@@ -232,14 +232,14 @@ Each hook executes within the logged‑in user context and must enforce security
 
 ### The life cycle of feed items
 
-A feed item moves through the following lifecycle stages, form creation until ready to display.
+A feed item moves through the following lifecycle stages, from creation until ready to display.
 
-1. A feed item is created or updated via Custom API
-1. BaseRank is calculated from AIContext (Release 10.0.47)
-1. Records are stored in AgentFeed tables
-1. Security is enforced using menu items
-1. Cards are rendered in Immersive Home
-1. Ranking is computed dynamically at runtime
+1. A feed item is created or updated via Custom API.
+1. BaseRank is calculated from AIContext (Release 10.0.47).
+1. Records are stored in AgentFeed tables.
+1. Security is enforced using menu items.
+1. Cards are rendered in Immersive Home.
+1. Ranking is computed dynamically at runtime.
 
 In this release, BaseRank uses a temporary deterministic mapping:
 
@@ -249,31 +249,28 @@ In this release, BaseRank uses a temporary deterministic mapping:
 
 ### Feed item security model
 
-- Security is delegated to application teams via PermissionsCheck
-- Menu items are validated during card rendering (onSecure)
-- Dataverse security roles control access to Virtual Entities
-- No plugin steps are registered directly on Virtual Entities by design
+- Security is delegated to application teams via PermissionsCheck.
+- Menu items are validated during card rendering (onSecure).
+- Dataverse security roles control access to virtual entities.
+- No plugin steps are registered directly on virtual entities by design.
 
-## Custom API documentation
-
-### Create feed item
 
 #### Endpoint - create feed item
 
 POST {organizationUrl}/api/data/v9.2/**msdyn_CreateAgentFeedItemCustomApi**
 
-Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**
+Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**.
 
 #### Required parameters - create feed item
 
 | Parameter | Type | Description |
 | ---------------------- | -------- | ---------------------------------------------------------------- |
-| **title** | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.<br>Example: "Supplier Invoice Overdue" |
-| **subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by 5 days." |
-| **correlationid** | String | GUID for idempotency and tracing across systems.<br>Example: "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7" |
-| **summary** | String | Summary is a concise description of the business situation or task the agent assists with. Plain text; aim for one or two sentences. |
-| **status** | String | Status is the current lifecycle state of the feed item.<br>Allowed values: not started, in progress, completed, canceled |
-| **permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.<br>Example: "PURCHTABLE,VENDTABLE,IMMERSIVEHOME" |
+| **Title** | String | Primary card title shown to users. It should be short, human-readable headline displayed as the primary card title.<br>Example: "Supplier invoice overdue". |
+| **Subtitle** | String | Secondary contextual line, providing immediate context to the title (phase, action, or focus)<br>Example: "Invoice PD 1042 is past due by 5 days." |
+| **Correlationid** | String | GUID for idempotency and tracing across systems.<br>Example: "7c2a4f64 8d3b 4b8d 9c11 1af33bb234d7" |
+| **Summary** | String | Summary is a concise description of the business situation or task the agent assists with. Plain text; aim for one or two sentences. |
+| **Status** | String | Status is the current lifecycle state of the feed item.<br>Allowed values: not started, in progress, completed, canceled |
+| **Permissionscheck** | String | A comma-separated list of MenuItems used to drive security checks for the feed item and determine if action controls are rendered.<br>Example: "PURCHTABLE,VENDTABLE,IMMERSIVEHOME" |
 | **cardprovider** | Text | Card Provider is the identifier of the UI/component provider that renders the interactive card. Must match a registered provider name.<br>Example: "DefaultAgentFeedCardProvider" |
 | **aicontext** | String | JSON string with required keys TaskType, AgentSchema, RecordType, Priority, Category. Optional: BusinessImpact, SourceApp, WorkspaceLink. Must be valid JSON and provide user/app context.<br>Example: ```json{"TaskType":"Approval","AgentSchema":"msdyn_expenseagent","RecordType":"VendInvoice","Priority":"High","Category":"Procurement","BusinessImpact":"Avoid late fees","SourceApp":"FinanceAndOperations","WorkspaceLink":"https://contoso.com/workspace/123"}``` |
 
@@ -318,13 +315,10 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**
 }
 ```
 
-### Update feed item
-
 #### Endpoint - update feed item
-
 POST {organizationUrl}/api/data/v9.2/**msdyn_UpdateAgentFeedItemCustomApi**
 
-Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...**
+Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...**.
 
 #### Required parameters - update feed item
 
@@ -336,11 +330,11 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...**
 
 | Parameter | Type |
 |----------------------|----------|
-| **title** | String |
-| **subtitle** | String |
-| **summary** | String |
-| **status** | String |
-| **permissionscheck** | String |
+| **Title** | String |
+| **Subtitle** | String |
+| **Summary** | String |
+| **Status** | String |
+| **Permissionscheck** | String |
 | **duedate** | DateTime |
 | **aicontext** | String |
 
