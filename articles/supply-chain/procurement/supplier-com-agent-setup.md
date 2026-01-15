@@ -186,7 +186,7 @@ If you use a shared mailbox, create a queue so that all users who work on the sh
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Users + permissions**, select **Teams**.
 1. Select **Create team**.
-1. In the **New team** dialog, specify a name (for example *My Mail Team*), business unit, and administrator as required. Set the **Team type** field to *Owner*.
+1. In the **New team** dialog, specify a name, business unit, and administrator as required. Set the **Team type** field to *Owner*.
 1. Select **Next**.
 1. In the **Add team members** dialog, add all the users who should have access to the shared mailbox.
 
@@ -196,7 +196,7 @@ If you use a shared mailbox, create a queue so that all users who work on the sh
 1. Select **Next**.
 1. In the **Manage security roles** dialog, select **Basic User** and **Finance and Operations Basic User**, then select **Save**.
 1. Back from the list of teams, find the newly created team and open it.
-1. On the upper right corner, find the **Default Queue** associated with the team and navigate to it. The queue has the same name as the team, within angle brackets (for example: *<My Mail Team>*).
+1. On the upper right corner, find the **Default Queue** associated with the team and navigate to it. The queue has the same name as the team, surrounded with angle brackets.
 1. A mailbox should exist in the **Email settings** section. Select the mailbox name.
 1. On the mailbox details page, select **Activate**.
 1. In the section **Mailbox Information**, enter the shared email address and save.
