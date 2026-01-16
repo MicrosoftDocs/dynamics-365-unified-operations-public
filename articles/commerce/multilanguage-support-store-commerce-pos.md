@@ -1,21 +1,21 @@
 ---
-title: Enable Multi-language support for Self-checkout
-description: Learn how to configure and use multi-language features in Store Commerce Self-Checkout including localization of button grids and screen layout tabs.
+title: Enable multilanguage support for self-checkout
+description: Learn how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout, including localization of button grids and screen layout tabs.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to
-ms.date: 01/08/2026
+ms.date: 01/26/2026
 ms.custom: 
   - bap-template
 ms.reviewer: 
 ---
-### Multi-language Support in Store Commerce POS Self-Checkout & Button/Tab Localization ###
+# Enable multilanguage support for self-checkout
 
-**Overview**
+This explains how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout, including localization of button grids and screen layout tabs.
 
 The 10.0.47 release of Store Commerce POS introduces enhanced multilanguage capabilities that will allow retailers to offer a more accessible, and globally consistent experience for shoppers by enabling language selection on the Self-Checkout welcome screen and introducing new options to localize POS screen layout button grids and tabs.. This article describes how to configure and use these multi-language enhancements, helping you streamline checkout for both customers and store associates.
 
-**Multi-language Self-Checkout**
+## Multilanguage self-checkout
 
 Below, we describe language selection at self-checkout in Store Commerce POS and how stores can configure supported languages.
 
@@ -29,7 +29,7 @@ Below, we describe language selection at self-checkout in Store Commerce POS and
 
   ![Multi-language-self-checkout.](media/multi-language-selfcheckout.jpg)
 
-**Localization of Button labels and Screen layout tabs**
+## Localization of button labels and screen layout tabs
 
 Below, you’ll learn how to localize POS button labels and tabs within layout designer to support multiple languages.
 
