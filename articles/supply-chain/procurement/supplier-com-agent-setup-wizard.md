@@ -1,5 +1,5 @@
 ---
-title: Set up and configure the Supplier Communications Agent by using the agent deployment wizard (production ready preview)
+title: Set up and configure the Supplier Communications Agent (production ready preview) by using the Microsoft Copilot agent deployment wizard 
 description: Learn how to use the Microsoft Copilot agent deployment wizard, to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
 author: BogdanaBotez
 ms.author: andbot
@@ -16,7 +16,7 @@ ms.custom:
 
 <!-- Bogdana's note: I haven't linked this anywhere yet - let's review it first, then I will link it to the main setup documentation.-->
 
-# Set up and configure the Supplier Communications Agent (production ready preview)
+# Set up and configure the Supplier Communications Agent (production ready preview) by using the Microsoft Copilot agent deployment wizard
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
