@@ -1,6 +1,6 @@
 ---
-title: Agent Feed developer documentation (preview)
-description: This article describes how to use Agent Feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive Home.
+title: Agent feed developer documentation (preview)
+description: This article describes how to use Agent Feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive home.
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
@@ -13,29 +13,29 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Agent Feed developer documentation
+# Agent feed developer documentation
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The guidance applies to Dynamics 365 finance and operations version 10.0.47. 
 
-This article describes how to use Agent Feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive Home.
-Agent Feed enables ERP agents to post actionable feed items through Dataverse Custom APIs, store them natively in Dynamics 365 finance and operations, and render them as cards that respect security, ranking, and personalization.
+This article describes how to use Agent feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive Home.
+Agent feed enables ERP agents to post actionable feed items through Dataverse Custom APIs, store them natively in Dynamics 365 finance and operations, and render them as cards that respect security, ranking, and personalization.
 
 ## Overview
 
-Agent Feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using Dynamics 365 finance and operations menu items, and rendered through configurable card providers.
+Agent feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using Dynamics 365 finance and operations menu items, and rendered through configurable card providers.
 
-## How to send data to the Agent Feed in Immersive Home
+## How to send data to the Agent feed in Immersive Home
 
 ### Enable Dynamics 365 finance and operations features
 
 In Dynamics 365 finance and operations, go to [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) and enable the features:
 
 - Immersive Home
-- (Preview) Agent Feed for Immersive Home
-- (Preview) Custom API Generation
+- (Preview) Agent feed for Immersive Home
+- (Preview) Custom API generation
 
 These features are required for both feed rendering and agent‑driven integration.
 
@@ -67,7 +67,7 @@ Once enabled, feed items can be queried using standard Dataverse OData endpoints
 
 :::image type="content" source="media/agent-feed-enable-virtual-entity-enable.png" alt-text="Screenshot of enabling the Virtual Entity." lightbox="media/agent-feed-enable-virtual-entity-enable.png":::
 
-### Control rendering of the agent feed card
+### Control rendering of the Agent feed card
 
 #### Render feed items using the default card
 
@@ -214,7 +214,7 @@ internal final class ImmersiveHomeExpenseCardProvider extends ImmersiveHomeBaseA
 }
 ```
 
-The example custom ExpenseCardProvider renders cards with the agent feed title, the due date, subtitle, the agent feed summary, and multiple agent feed menu items, each appearing as a button that navigates accordingly.  
+The example custom ExpenseCardProvider renders cards with the Agent feed title, the due date, subtitle, the agent feed summary, and multiple agent feed menu items, each appearing as a button that navigates accordingly.  
 
 :::image type="content" source="media/agent-feed-custom-card-annotated.png" alt-text="Screenshot of an expense card rendered by the ExpenseCardProvider with annotations of its content." lightbox="media/agent-feed-custom-card-annotated.png":::
 
@@ -361,7 +361,7 @@ Parameters in the namespace **msdyn_AgentFeedUpdateFeedItemCustomApi_...**.
 | **feeditemrecid**| RecId / Decimal | Identifier for feed item |
 | **correlationid**| String | GUID for idempotency and tracing across systems |
 
-#### Example Output Payload
+#### Example output payload
 
 ```json
 {
