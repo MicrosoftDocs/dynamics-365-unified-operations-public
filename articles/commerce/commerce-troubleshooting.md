@@ -2,10 +2,9 @@
 title: Dynamics 365 Commerce troubleshooting and FAQs
 description: This article provides links to troubleshooting resources and frequently asked question articles for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/11/2024
+ms.date: 01/16/2026
 ms.topic: overview
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-07-12
@@ -24,7 +23,7 @@ For a large collection of troubleshooting articles, see the following site provi
 
 - [Microsoft Dynamics 365 Commerce troubleshooting](/troubleshoot/dynamics-365/commerce/welcome-commerce)
 
-These articles explain how to determine, diagnose, and fix issues that you might encounter when you use Dynamics 365 Commerce. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
+These articles explain how to determine, diagnose, and fix problems that you might encounter when you use Dynamics 365 Commerce. The articles are organized by feature area. Each article focuses on a specific problem and how to solve it.
 
 ## Frequently asked questions
 
@@ -57,7 +56,7 @@ The following FAQ articles discuss issues related to the platform shared by all 
 
 ## Other support resources
 
-The following Microsoft support and community resources are also available, where you can discuss and solve issues, browse Blogs, request features, and more:
+You can also use the following Microsoft support and community resources to discuss and solve problems, browse blogs, request features, and more:
 
 [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
 
