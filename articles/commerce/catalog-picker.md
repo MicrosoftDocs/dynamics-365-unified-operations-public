@@ -98,3 +98,5 @@ The following illustration shows an example of an ecommerce website header with 
 [Account management pages and modules](account-management.md)
 
 [Header module](author-header-module.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
