@@ -20,45 +20,46 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how system administrators can set up and configure the Supplier Communications Agent.
+This article explains how system administrators can set up and configure the Supplier Communications Agent, by using the [Agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment) from Copilot Hub.
 
+## Access the agent deployment wizard
 
-## Prerequisites
+To access the agent deployment wizard, follow these steps:
+
+1. Open [Copilot Hub in Power Platform admin center and select Dynamics 365](https://aka.ms/InstallD365Agents).
+1. Select the target environment.
+1. Choose **Supplier Communications Agent**.
+1. Select **Add** to launch the agent deployment wizard.
+
+## Check Prerequisites
 
 Before you can use the Supplier Communications Agent, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later, with all available quality updates.  
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
-
-    - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
-    - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
-    - *(Production ready preview) Supplier Communications Agent*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
-
-    > [!TIP]
-    > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
-
-- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
-    - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
-    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
+- Validate that the apps listed in the wizard are installed with a version equal or greater than the ones listed.
+- Confirm that [Copilot is enabled](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features).
+- Confirm message consumption settings and billing for Copilot. You can manage these settings [on the **Licenses** page in Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/billing/licenses/copilotStudio/overview).
 - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier Communications Agent - inbound*
     - *Supplier Communications Agent - outbound*.
 
-    If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting). 
 
-## <a name="set-up-agent-identity"></a>Set up an agent identity
+When done, choose Next to advance to the following wizard step.
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. Select the identity that the agent uses for these interactions and create the required connections.
+## Set up agent identity
+
+The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. 
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
 
-### Set up agent identity users and assign security roles
+Use the user management features for your tenant to create an *agent identity user*.
 
-Use the user management features for your tenant to create an *agent identity user*. Then assign the licenses and security roles described in the following subsections to that user.
+### Create your agent's Entra user ID
 
-#### License requirements
+Activate the selection field to choose an eligible user. If no such user exists, follow the instructions on the screen to create one.
+
+### Assign product licenses
 
 The Supplier Communications Agent uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
@@ -66,9 +67,9 @@ Examples of sufficient licenses include *Power Apps Premium*, *Power Automate Pr
 
 Use the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses) to assign the required licenses.
 
-#### Required security roles
+### Add agent user to environment, assign required security roles
 
-Add the agent identity user both to the Dataverse environment and to Supply Chain Management. Assign the agent identity user the security roles shown in the following lists.
+Add the agent identity user to the Dataverse environment. Assign the agent identity user the following security roles:
 
 - Required Dataverse user roles:
 
@@ -76,10 +77,17 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
     - *Supplier Communications Agent*
     - *Environment Maker*
 
+### Add agent user to Finance and Operations, assign required security roles
+
 - Required Supply Chain Management user roles:
 
     - *(Preview) Supplier Communications Agent*
     - *System user*
+
+<!-- Bogdana - this is how far I've got to writing the new wizard setup doc -->
+
+
+
 
 ### Create the required connections
 
@@ -231,248 +239,23 @@ When you use the [review and apply purchase order changes received in vendor ema
 1. Create or select a vendor.
 1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send or forward test messages from).
 
-## <a name="sample-script"></a>Activate the triggering Power Automate flows by using a PowerShell script
+<!-- Bogdana's note: Use this in the last step of the Wizard -->
 
-> [!NOTE]
-> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a Canvas app, which is described in the [Activate the triggering Power Automate flows](#trigger-flows) section earlier in this article. You don't need to use both methods; choose the method that you prefer.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
 
-This sample PowerShell script finishes [setting up the agent identity](#set-up-agent-identity) by updating the connection references for the agent and activating the triggering Power Automate flows.
+    - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
+    - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
+    - *(Production ready preview) Supplier Communications Agent*
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
-To use the sample PowerShell script, follow these steps:
+    > [!TIP]
+    > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
-1. Copy the script, and save it as a `.ps1` file.
+- In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+    - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
+    - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
+- Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+    - *Supplier Communications Agent - inbound*
+    - *Supplier Communications Agent - outbound*.
 
-1. Before you run the script, enter values for the following four parameters at the top:
-    - `environmentId` – Specify the ID of your Dataverse environment. You can find the ID in the Power Platform admin center.
-    - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find the URL in the Power Platform admin center. Include *https://* in the URL.
-    - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
-    - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created](#set-up-agent-identity) it. You can find the name on the **Connections** page in Power Apps.
-
-1. Customize the script as required.
-1. Run the script from any PowerShell console or Visual Studio Code. If needed, follow the instructions to update your installed PowerShell to [version 7](https://github.com/PowerShell/PowerShell/releases). When you're prompted to sign in, sign in as an environment administrator.
-
-Here's the script:
-
-```powershell
-Param(
-   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment id")]
-   [string]$environmentId = "", 
-
-   [Parameter(Mandatory=$true, HelpMessage="Dataverse environment URL")]
-   [string]$dataverseUrl = "",
-
-   [Parameter(Mandatory=$true, HelpMessage="Microsoft Dataverse connection name")]
-   [string]$DVConnectionName = "",
-
-   [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
-   [string]$MCSConnectionName = ""
-)
-
-# Check PS version
-if ($PSVersionTable.PSVersion.Major -lt 7) {
-    Write-Error 'This script requires at least PowerShell version 7' -ErrorAction Stop
-}
-
-# Install the required modules if not already installed
-if (-not (Get-Module -ListAvailable -Name Microsoft.PowerApps.PowerShell)) {
-    Write-Warning -Message 'Installing module Microsoft.PowerApps.PowerShell'
-    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
-}
-
-# Install the required modules if not already installed
-if (-not (Get-Module -ListAvailable -Name Az.Accounts | Where-Object Version -ge 2.17)) {
-    Write-Warning -Message 'Installing required version of module Az.Accounts'
-    Install-Module -Name Az.Accounts -AllowClobber -Scope CurrentUser -Force -MinimumVersion 2.17
-}
-
-# Import required modules
-Import-Module Az.Accounts -MinimumVersion 2.17
-Import-Module Microsoft.PowerApps.PowerShell
-
-function Get-AccessToken {
-    # Retrieve the access token for the Dataverse environment
-    $accessToken = Get-AzAccessToken -ResourceUrl "$dataverseUrl" -AsSecureString
-    $token = $accessToken.Token
-    $userId = $accessToken.UserId
-    Write-Host "Access token for $userId retrieved successfully." -ForegroundColor Green
-
-    return $token
-}
-
-function Get-ConnectionId {
-    param (
-        [string]$userProvidedName,
-        [string]$providerName
-    )
-
-    $matchedConnectionId = $null
-
-    $connections = Get-PowerAppConnection -EnvironmentName $environmentId -ConnectorNameFilter $providerName
-    foreach ($con in $connections) {
-        if (($con.ConnectionName -eq $userProvidedName) -or ($con.DisplayName -eq $userProvidedName))
-        {
-            $matchedConnectionId = $con.ConnectionName
-            break
-        }
-    }
-
-    if ($null -eq $matchedConnectionId)
-    {
-        Write-Error -Message "Unable to find connection $userProvidedName ($providerName)" -ErrorAction Stop
-    }
-
-    Write-Host "Found connection id $matchedConnectionId for connection $userProvidedName"
-
-    return $matchedConnectionId
-}
-
-function Get-ConnectionReferenceId {
-    param(
-        [string]$connectionReferenceLogicalName,
-        [securestring]$accessToken
-    )
-
-    $uri = "$dataverseUrl/api/data/v9.2/connectionreferences?`$filter=connectionreferencelogicalname eq '$connectionReferenceLogicalName'"
-    $response = Invoke-RestMethod -Method Get `
-        -Uri $uri `
-        -Authentication Bearer -Token $accessToken `
-        -ContentType 'application/json'
-        
-    
-    if ($null -eq $response) {
-        Write-Error -Message "Connection reference not found for logical name $connectionReferenceLogicalName" -ErrorAction Stop
-    }
-
-    $connectionReferenceDisplayName = $response.value[0].connectionreferencedisplayname
-    $connectionReferenceId = $response.value[0].connectionreferenceid
-
-    Write-Host "Found connection reference id $connectionReferenceId for $connectionReferenceDisplayName ($connectionReferenceLogicalName)"
-
-    return $connectionReferenceId
-}
-
-function Set-ConnectionReferenceConnection {
-    param (
-        [string]$connectionReferenceLogicalName,
-        [string]$userProvidedConnectionName,
-        [string]$providerName,
-        [securestring]$accessToken
-    )
-
-    Write-Host "Updating connection reference ${connectionReferenceLogicalName}..."
-
-    $connectionReferenceId = Get-ConnectionReferenceId -connectionReferenceLogicalName $connectionReferenceLogicalName -accessToken $accessToken
-    $connectionId = Get-ConnectionId -userProvidedName $userProvidedConnectionName -providerName $providerName
-
-    $body = @{
-        "connectionid" = "$connectionId"
-    } | ConvertTo-Json -Depth 1
-
-    $uri = "$dataverseUrl/api/data/v9.2/connectionreferences($connectionReferenceId)"
-    Write-Host "Updating connection reference URI: $uri with connection id $connectionId"
-
-    Invoke-RestMethod -Method Patch `
-        -Uri $uri `
-        -Authentication Bearer -Token $accessToken `
-        -ContentType 'application/json' `
-        -Body $body
-   
-    Write-Host "Connection reference updated successfully." -ForegroundColor Green
-    Write-Host
-}
-
-function ValidateUserEnvironment {
-    param (
-        [string]$environmentId
-    )
-
-    $env = Get-PowerAppEnvironment -EnvironmentName $environmentId
-    if ($null -eq $env) {
-        Write-Error -Message "Environment $environmentId was not found" -ErrorAction Stop
-    }
-
-    $displayName = $env.DisplayName
-    Write-Host "Connected to environment: $displayName ($environmentId)"
-}
-
-function Enable-TriggerFlow {
-    param (
-        [string]$flowId,
-        [securestring]$accessToken
-    )
-
-    $flowUri = "$dataverseUrl/api/data/v9.2/workflows($flowId)"
-    $flow = $null
-
-    Write-Host "Enabling flow $flowId with uri $flowUri"
-
-    try {
-        $flow = Invoke-RestMethod -Method Get `
-            -Uri $flowUri `
-            -Authentication Bearer -Token $accessToken `
-            -ContentType 'application/json'
-    }
-    catch {
-        Write-Error -Message $_.Exception -ErrorAction Stop
-    }
-
-    $displayName = $flow.name
-    Write-Host "Activating flow $displayName for id $flowId"
-
-    $body = @{
-        "statecode" = 1  # Activated
-        "statuscode" = 2 # Activated
-    } | ConvertTo-Json -Depth 1 -Compress
-    
-    try {
-        Invoke-RestMethod -Method Patch `
-            -Uri $flowUri `
-            -Authentication Bearer -Token $accessToken `
-            -ContentType 'application/json' `
-            -Body $body
-    }
-    catch {
-        Write-Error -Message $_.Exception -ErrorAction Stop
-    }
-
-    Write-Host "Activated flow $displayName" -ForegroundColor Green
-    Write-Host
-}
-
-# Actual script body
-
-Write-Host
-Write-Host "Authenticating interactively..."
-Write-Host
-
-Connect-AzAccount -UseDeviceAuthentication
-$accessToken = Get-AccessToken
-ValidateUserEnvironment -environmentId $environmentId
-
-Write-Host
-Write-Host 'Setting up connection references...'
-Write-Host
-
-Set-ConnectionReferenceConnection `
-    -userProvidedConnectionName $DVConnectionName `
-    -providerName "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps" `
-    -connectionReferenceLogicalName "new_sharedcommondataserviceforapps_6ae5d" `
-    -accessToken $accessToken
-
-Set-ConnectionReferenceConnection `
-    -userProvidedConnectionName $MCSConnectionName `
-    -providerName "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio" `
-    -connectionReferenceLogicalName "msdyn_sharedmicrosoftcopilotstudio_0be09" `
-    -accessToken $accessToken
-
-Write-Host
-Write-Host 'Activating flows...'
-Write-Host
-
-Enable-TriggerFlow -flowId 'c1061034-ff20-f011-9989-002248095ade' -accessToken $accessToken # (Self Heal) Speed up updates in purchase orders with Supplier Communications Agent
-Enable-TriggerFlow -flowId '1db577aa-83fe-ef11-bae1-000d3a34a571' -accessToken $accessToken # Speed up updates in purchase orders with Supplier Communications Agent
-Enable-TriggerFlow -flowId 'acd7bb36-07a1-ef11-a72d-6045bd0390ae' -accessToken $accessToken # Send follow-up emails to vendors with Supplier Communications Agent
-
-Write-Host
-Write-Host 'Supplier communications agent is ready for use' -ForegroundColor Green
-```
+    If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
