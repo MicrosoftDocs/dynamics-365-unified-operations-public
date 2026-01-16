@@ -41,7 +41,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
-    > If you can't enable the *Agent management* features, then make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
+    > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
@@ -54,7 +54,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
 
 ## <a name="set-up-agent-identity"></a>Set up an agent identity
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. You must select the identity that the agent uses for these interactions and create the required connections.
+The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. Select the identity that the agent uses for these interactions and create the required connections.
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
@@ -105,7 +105,7 @@ To create the required connections, follow these steps:
 ### <a name="trigger-flows"></a>Activate the triggering Power Automate flows
 
 > [!NOTE]
-> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both; you can choose the method that you prefer.
+> This section describes one of two ways to activate the triggering Power Automate flows. The other way is to use a PowerShell script, which is described in the [Activate the triggering Power Automate flows by using a PowerShell script](#sample-script) section later in this article. You don't need to do both methods. Choose the method that you prefer.
 
 To finish setting up the agent identity, you must activate the triggering Power Automate flows. Follow these steps to use a Canvas app and finish the setup.
 
@@ -166,14 +166,14 @@ To set up a private mailbox, follow these steps:
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Email**, select **Mailboxes**.
 1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
-1. Select the checkbox for each mailbox that you want to use with the Supplier Communications Agent.
+1. Select the check box for each mailbox that you want to use with the Supplier Communications Agent.
 1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
 
 After you set up a private mailbox, the user who owns it must update the personalization settings to specify that all emails should be tracked.
 
 To enable tracking of all emails for a private mailbox that you own, follow these steps:
 
-1. On the **Active Mailboxes** page, select the **Settings** button (gear symbol) in the upper right, then select **Personalization Settings**.
+1. On the **Active Mailboxes** page, select the **Settings** button (gear symbol) in the upper right, and then select **Personalization Settings**.
 1. In the **Set Personal Options** dialog, on the **Email** tab, in the **Track** field, select *All email messages*.
 1. Select **OK**.
 
@@ -185,21 +185,21 @@ If you use a shared mailbox, follow these steps:
 1. Select the environment that you want to set up.
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Users + permissions**, select **Teams**.
-1. Select **Create team**.
+1. On the command bar, select **Create team**.
 1. In the **New team** dialog, specify a name (for example *My Mail Team*), business unit, and administrator as required. Set the **Team type** field to *Owner*.
 1. Select **Next**.
 1. In the **Add team members** dialog, add all the users who should have access to the shared mailbox.
 
     > [!IMPORTANT]
-    > All users who create an agent configuration and review agent results that are related to this mailbox must be added as team members.
+    > Add all users who create an agent configuration and review agent results that are related to this mailbox as team members.
 
 1. Select **Next**.
-1. In the **Manage security roles** dialog, select **Basic User** and **Finance and Operations Basic User**, then select **Save**.
-1. Return to the list of teams, find the newly created team, and open it.
+1. In the **Manage security roles** dialog, select *Basic User* and *Finance and Operations Basic User*, and then select **Save**.
+1. You return to the list of teams. Find the newly created team, and open it.
 1. In the upper-right corner, find the **Default Queue** associated with the team and open it. The queue has the same name as the team, set within angle brackets (for example: *\<My Mail Team\>*).
-1. A mailbox should exist in the **Email settings** section. Select the mailbox name.
-1. On the mailbox details page, select **Activate**.
-1. In the section **Mailbox Information**, enter the shared email address and save.
+1. A mailbox should be shown in the **Email settings** section. Select the mailbox name.
+1. On the mailbox details page, select **Activate** on the command bar and then select **Activate** in the dialog.
+1. In the section **Mailbox Information**, enter the shared **Email address** and save.
 1. On the command bar, select **Test & Enable Mailboxes**.
 
     > [!TIP]
@@ -218,7 +218,7 @@ Get detailed instructions in [Set up server-side synchronization of email](/powe
 
 #### Issues with setting up Supplier Communications Agent
 
-To solve issues that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
+For help with problems that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
 
 #### Issues with server-side synchronization
 
@@ -245,7 +245,7 @@ This sample PowerShell script finishes [setting up the agent identity](#set-up-a
 
 To use the sample PowerShell script, follow these steps:
 
-1. Copy the script, and save it as a `.ps1` file.
+1. Copy the script, and save it as a `.ps1` file.
 
 1. Before you run the script, enter values for the following four parameters at the top:
     - `environmentId` – Specify the ID of your Dataverse environment. You can find the ID in the Power Platform admin center.
