@@ -20,7 +20,7 @@ See [What is Microsoft Foundry?](https://learn.microsoft.com/azure/ai-foundry/wh
 ## Prerequisites
 Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP server**, you must ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
 
-## Register an app in Microsoft Entry ID
+## Register an app in Microsoft Entra ID
 
 ### Step 1: Create a new app registration.
 1. Sign in to the [Azure portal](https://portal.azure.com) for your tenant.
