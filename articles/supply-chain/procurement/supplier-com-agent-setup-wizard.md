@@ -125,6 +125,8 @@ To enable tracking of all emails for a private mailbox that you own, follow thes
 
 ### Configure Shared mailbox
 
+#### Configure the team's settings
+
 If you use a shared mailbox, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role.
@@ -139,7 +141,7 @@ If you use a shared mailbox, follow these steps:
     > [!IMPORTANT]
     > Add all users who create an agent configuration and review agent results that are related to this mailbox as team members.
 
-#### Configure the team's settings and manage security roles
+#### Manage security roles
 
 1. Select **Next**.
 1. In the **Manage security roles** dialog, select *Basic User* and *Finance and Operations Basic User*, and then select **Save**.
@@ -156,7 +158,9 @@ If you use a shared mailbox, follow these steps:
     > [!TIP]
     > If this operation fails, review the **Alerts** section for the mailbox. If it includes an error message that states that approval is required, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).
 
-#### Ensure that no other mailboxes that have the same email address are set up and active
+#### Ensure the email address is used by a single mailbox
+
+Ensure that no other mailboxes that have the same email address are set up and active:
 
  1. Return to the **Settings** page for your environment.
  1. Under **Email**, select **Mailboxes**.
