@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/10/2025
+ms.date: 01/16/2026
 ms.reviewer: johnmichalak
  
 ---
@@ -39,15 +39,15 @@ Learn more about how to import ER configurations in [Import Electronic reporting
 ### Set up foreign trade parameters
 
 1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
-3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list CSV (DE)** to generate the EU Sales list in CSV format or **EU Sales list XML (DE)** to generate the EU Sales list in XML format.
-4. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
-5. On the **Country/region properties** tab, select **New**, and set the following fields:
+1. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
+1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list CSV (DE)** to generate the EU Sales list in CSV format or **EU Sales list XML (DE)** to generate the EU Sales list in XML format.
+1. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
+1. On the **Country/region properties** tab, select **New**, and set the following fields:
 
     - In the **Country/region** field, select **DEU**.
     - In the **Country/region type** field, select **Domestic**.
 
-6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
+1. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
 
 ## Work with the EU sales list
 
@@ -56,9 +56,9 @@ Learn more about general information about which types of transactions are inclu
 ### Generate the EU sales list report
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Transfer transactions in the usual way.
-3. On the Action Pane, select **Reporting**.
-4. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
+1. Transfer transactions in the usual way.
+1. Select **Reporting** on the Action Pane.
+1. In the **EU sales list reporting** dialog box, set the following fields on the **Parameters** FastTab.
 
     | Field                         | Description                                                                                                               |
     |-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +70,6 @@ Learn more about general information about which types of transactions are inclu
     | Report file name              | Enter the name of the .xlsx file.                                                                                         |
     | Correction                    | Set this option to **Yes** to create correction files.                                                                    |
 
-5. Select **OK** to generate the files.  
+1. Select **OK** to generate the files.  
     
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
