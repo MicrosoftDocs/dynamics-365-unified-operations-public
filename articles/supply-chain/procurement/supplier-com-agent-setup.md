@@ -179,7 +179,7 @@ To enable tracking of all emails for a private mailbox that you own, follow thes
 
 ### Shared mailbox
 
-If you use a shared mailbox, create a queue so that all users who work on the shared mailbox can access email contents.
+If you use a shared mailbox, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role.
 1. Select the environment that you want to set up.
