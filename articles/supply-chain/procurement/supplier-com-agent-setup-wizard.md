@@ -1,12 +1,12 @@
 ---
-title: Set up and configure the Supplier Communications Agent (production ready preview)
-description: Learn how to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
+title: Set up and configure the Supplier Communications Agent by using the agent deployment wizard (production ready preview)
+description: Learn how to use the Microsoft Copilot agent deployment wizard, to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
 author: BogdanaBotez
 ms.author: andbot
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 16/01/2026
+ms.date: 01/16/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -22,7 +22,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how system administrators can set up and configure the Supplier Communications Agent, by using the [Agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment) from Copilot Hub.
+This article explains how system administrators can set up and configure the Supplier Communications Agent, by using the [Agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub.
 
 ## Setup the agent by using the agent deployment wizard
 
@@ -158,10 +158,10 @@ If you use a shared mailbox, follow these steps:
 
 #### Ensure that no other mailboxes that have the same email address are set up and active
 
-    1. Return to the **Settings** page for your environment.
-    1. Under **Email**, select **Mailboxes**.
-    1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
-    1. If any other mailboxes have the same email address as the shared mailbox email address, deactivate them.
+ 1. Return to the **Settings** page for your environment.
+ 1. Under **Email**, select **Mailboxes**.
+ 1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
+ 1. If any other mailboxes have the same email address as the shared mailbox email address, deactivate them.
 
 Get detailed instructions in [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
@@ -189,7 +189,7 @@ If the two agents aren't published, you can find help in [Troubleshoot data poli
 
 <!-- Bogdana: The following is a step not included in the wizard - TODO: contact Christian/Karl to figure it out -->
 
-### Assign permissions to users working with the agent
+### Assign user permissions
 
 All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
