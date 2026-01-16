@@ -1,11 +1,10 @@
 ---
 title: Channel setup prerequisites
-description: This article presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 01/16/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
@@ -16,12 +15,9 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
+This article provides an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
 
-Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following lists of prerequisite tasks are organized by channel type.
-
-> [!NOTE]
-> Some documentation is still being written, and links will be updated as new content is published.
+Before you create a Dynamics 365 Commerce channel, you must complete several prerequisite tasks. The following lists of prerequisite tasks are organized by channel type.
 
 ## Initialization
 
@@ -36,9 +32,6 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 - [Set up an email notification profile](email-notification-profiles.md)
 - [Set up number sequences](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Set up a default customer and address book](default-customer.md)
-<!--
-- [Configure commerce parameters](commerce-parameters.md)
--->
 
 ## Retail channel prerequisites
 
@@ -48,7 +41,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 - [Set up a screen layout](pos-screen-layouts.md)
 - [Set up a hardware station](dev-itpro/retail-hardware-station-configuration-installation.md)
 
-## Call Center channel prerequisites
+## Call center channel prerequisites
 
 - Call center parameters
 - [Call center order and refund payment methods](work-with-payments.md)
