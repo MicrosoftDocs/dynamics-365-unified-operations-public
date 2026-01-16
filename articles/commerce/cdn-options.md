@@ -23,10 +23,10 @@ Commerce customers have several options when they consider which CDN service to 
 You can use the following three CDN implementation options with Commerce environments:
 
 - The Commerce-provided instance of Azure Front Door
-- A customer-owned instance of Azure Front Door (for increased control and additional security features)
+- A customer-owned instance of Azure Front Door (for increased control and extra security features)
 - An external CDN service
 
-All three CDN implementation options deliver only dynamic HTML content from custom domains. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The option that you choose determines the operational capabilities, control capabilities, and additional security capabilities that are available.
+All three CDN implementation options deliver only dynamic HTML content from custom domains. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The option that you choose determines the operational capabilities, control capabilities, and security capabilities that are available.
 
 The following illustration shows an overview of the Commerce architecture.
 
@@ -40,7 +40,7 @@ The following table lists the pros and cons of using the Commerce-provided insta
 
 | Pros | Cons |
 |------|------|
-| <ul><li>The instance is included in the Commerce cost.</li><li>Because the Commerce team manages the instance, you can perform less maintenance, and there are shared setup steps.</li><li>The Azure-hosted infrastructure is scalable, secure, and reliable.</li><li>The Transport Layer Security/Secure Sockets Layer (TLS/SSL) certificate requires a one-time setup and is automatically renewed.</li><li>The Commerce team monitors the instance for errors and anomalies.</li></ul> | <ul><li>A WAF isn't supported.</li><li>There are no specific customizations or setting adjustments.</li><li>The instance depends on the Commerce team for updates or changes.</li><li>A separate Azure Front Door instance is required for apex domains, and extra work is required to integrate apex domains with Azure Domain Name System (DNS).</li><li>No telemetry about responses per second (RPS) or the error rate is provided to the customer.</li></ul> |
+| <ul><li>The instance is included in the Commerce cost.</li><li>The Commerce team manages the instance so you can perform less maintenance, and there are shared setup steps.</li><li>The Azure-hosted infrastructure is scalable, secure, and reliable.</li><li>The Transport Layer Security/Secure Sockets Layer (TLS/SSL) certificate requires a one-time setup and is automatically renewed.</li><li>The Commerce team monitors the instance for errors and anomalies.</li></ul> | <ul><li>A WAF isn't supported.</li><li>There are no specific customizations or setting adjustments.</li><li>The instance depends on the Commerce team for updates or changes.</li><li>A separate Azure Front Door instance is required for apex domains, and extra work is required to integrate apex domains with Azure Domain Name System (DNS).</li><li>No data about responses per second (RPS) or the error rate is provided to the customer.</li></ul> |
 
 The following illustration shows the architecture of the Commerce-provided Azure Front Door instance.
 
@@ -64,7 +64,7 @@ The following table lists the pros and cons of using an external CDN service to 
 
 | Pros | Cons |
 |------|------|
-| <ul><li>This option is useful when the existing domain is already hosted on an external CDN.</li><li>WAF: Depends on external provider.</li></ul> | <ul><li>A separate contract and additional costs are required.</li><li>TLS/SSL might incur extra costs.</li><li>Because the service is separate from the Azure cloud structure, you must manage additional infrastructure.</li><li>The service might require longer time investments in endpoint and security setup.</li><li>You self-manage the service.</li><li>You self-monitor the service.</li></ul> |
+| <ul><li>This option is useful when the existing domain is already hosted on an external CDN.</li><li>WAF: Depends on external provider.</li></ul> | <ul><li>A separate contract and extra costs are required.</li><li>TLS/SSL might incur extra costs.</li><li>Because the service is separate from the Azure cloud structure, you must manage other infrastructure.</li><li>The service might require longer time investments in endpoint and security setup.</li><li>You self-manage the service.</li><li>You self-monitor the service.</li></ul> |
 
 The following illustration shows a Commerce infrastructure that includes an external CDN service.
 
@@ -73,3 +73,4 @@ The following illustration shows a Commerce infrastructure that includes an exte
 ## Additional resources
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
+
