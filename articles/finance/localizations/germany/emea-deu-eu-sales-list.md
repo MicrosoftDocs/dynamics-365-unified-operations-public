@@ -1,12 +1,12 @@
 ---
 title: EU Sales list for Germany
-description: Learn about the European Union (EU) sales list report for Germany, including a list of various fields that are included on the German EU sales list report.
+description: Learn about the European Union (EU) sales list report for Germany.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/10/2025
+ms.date: 01/16/2026
 ms.reviewer: johnmichalak
  
 ---
@@ -15,10 +15,10 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in CSV format.
+This article provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in CSV or XML format.
 
 > [!NOTE]
-> The **EU Sales list (DE)** ER format (TXT) is deprecated and replaced by **EU Sales list CSV (DE)** ER format. Learn more in [Features removed or deprecated in the Finance](../../get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10046-release).
+> The **EU Sales list (DE)** ER format (TXT) is deprecated and replaced by **EU Sales list CSV (DE)** and **EU Sales list XML (DE)** ER formats. Learn more in [Features removed or deprecated in the Finance](../../get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10046-release).
 
 ## Setup
 
@@ -31,7 +31,8 @@ Import the latest version of the following Electronic reporting (ER) configurati
 - EU Sales list model
 - EU Sales list by columns report
 - EU Sales list by rows report
-- EU Sales list CSV (DE)
+- EU Sales list CSV (DE) - to generate the EU Sales list in CSV format
+- EU Sales list XML (DE) - to generate the EU Sales list in XML format
 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -39,7 +40,7 @@ Learn more about how to import ER configurations in [Import Electronic reporting
 
 1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
 1. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
-1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list CSV (DE)**.
+1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list CSV (DE)** to generate the EU Sales list in CSV format or **EU Sales list XML (DE)** to generate the EU Sales list in XML format.
 1. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
 1. On the **Country/region properties** tab, select **New**, and set the following fields:
 
@@ -56,21 +57,15 @@ Learn more about general information about which types of transactions are inclu
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 1. Transfer transactions in the usual way.
-1. Optional: To create correction files, follow these steps:
-
-    1. For corrective lines, select the checkbox in the **Corrected** column.
-    1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the **Correction** option to **Yes**.
-    1. On the **Records to include** FastTab, apply a filter to show only corrective lines.
-
-1. On the Action Pane, select **Reporting**.
-1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
+1. Select **Reporting** on the Action Pane.
+1. In the **EU sales list reporting** dialog box, set the following fields on the **Parameters** FastTab.
 
     | Field                         | Description                                                                                                               |
     |-------------------------------|---------------------------------------------------------------------------------------------------------------------------|
     | Reporting period              | Select **Monthly** or **Quarterly**.                                                                                      |
     | From date                     | Select the start date for the report.                                                                                     |
     | Generate file                 | Set this option to **Yes** to generate a .txt file for your EU sales list report.                                         |
-    | File name                     | Enter the name of the .csv file.                                                                                          |
+    | File name                     | Enter the name of the file (.csv or .xml).                                                                                |
     | Generate report               | Set this option to **Yes** to generate an .xlsx file for your EU sales list report.                                       |
     | Report file name              | Enter the name of the .xlsx file.                                                                                         |
     | Correction                    | Set this option to **Yes** to create correction files.                                                                    |
