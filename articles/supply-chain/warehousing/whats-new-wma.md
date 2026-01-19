@@ -22,7 +22,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 Version 4.0.29.0 adds the following fixes and improvements:
 
-- Fixed an issue that occurred when multiple connections used the same client ID, which caused authentication to fail and showed an incorrect redirect URL.
+- Fixed an authentication failure that occurred when multiple connections used the same client ID. The failure showed an incorrect redirect URL.
 - Fixed an issue that affected deployment of the app to iOS devices when using a mobile mass deployment (MDM) solution.
 - Improved support for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
 
