@@ -4,7 +4,7 @@ description: Access a list of extensibility features that were implemented in Ju
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/08/2017
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -72,13 +72,13 @@ The following application middle-tier models were hard-sealed in this release. O
 ## Enumerations that are now extensible
 
 The following changes were made to support extending enumerations:
-- Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
+
+- Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**.
 - Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
 - Some application code that uses enumerations was changed to support extensibility. Common changes include:
-    + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
-    + Adding **SysExtension** support for extension.
-    + Adding explicit delegates.
-
+  - Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
+  - Adding **SysExtension** support for extension.
+  - Adding explicit delegates.
 
 | Enumeration|
 | --------------- |
@@ -849,7 +849,6 @@ Inline delegates are now available. The most common way to use inline delegates 
 
 The following table lists additional changes that have been made for extensibility.
 
-
 |                                                           Change                                                           |
 |----------------------------------------------------------------------------------------------------------------------------|
 |                                      Add indirection for existing product dimensions                                       |
@@ -892,7 +891,5 @@ The following table lists additional changes that have been made for extensibili
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
 |            WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block             |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

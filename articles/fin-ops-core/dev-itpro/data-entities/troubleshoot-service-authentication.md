@@ -4,7 +4,7 @@ description: Access some tips for troubleshooting issues that involve service au
 author: pnghub
 ms.author: johnmichalak
 ms.topic: troubleshooting-general
-ms.date: 12/20/2024
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
@@ -15,28 +15,29 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: sfi-image-nochange
 ---
 
-# Troubleshoot service authentication issues
+# Troubleshoot service authentication problems
 
 [!include [banner](../includes/banner.md)]
 
-This article provides some tips for troubleshooting issues that involve service authentication.
+This article provides tips for troubleshooting problems that involve service authentication.
 
-When you troubleshoot service authentication issues, there are a few basic and common procedures that can help resolve the issues that are most often encountered. These procedures also provide a hands-on demonstration of how the authentication mechanism works. This article includes instructions and also lists a few common issues that users have encountered so far.
+When you troubleshoot service authentication problems, use a few basic and common procedures. These procedures can help resolve the problems that you most often encounter. They also provide a hands-on demonstration of how the authentication mechanism works. This article includes instructions and lists a few common problems that users encountered.
 
 ## Inspect the JWT
+
 ### Capture the JWT from an HTTP request
 
 1. Download Fiddler from <https://www.telerik.com/fiddler>.
-2. Set up HTTPS capture to watch the HTTPS traffic from the client.
-3. Find the Open Authorization (OAuth) JSON Web Token (JWT). It's the value of the HTTP "Authorization" header without the "bearer" segment.
+1. Set up HTTPS capture to watch the HTTPS traffic from the client.
+1. Find the Open Authorization (OAuth) JSON Web Token (JWT). It's the value of the HTTP "Authorization" header without the "bearer" segment.
 
 ### Use a deserializer tool to look at the token contents
 
 1. Go to <https://jwt.io>, and paste the JWT into the input panel.
-2. View the contents in the form of name-value pairs. See the example that follows.
-3. Verify that the following information is correct:
+1. View the contents in the form of name-value pairs. See the example that follows.
+1. Verify that the following information is correct:
 
-    - **"aud"** – The value corresponds to the Microsoft Microsoft Entra resource concept. Here are some typical issues that involve "aud":
+    - **"aud"** – The value corresponds to the Microsoft Entra resource concept. Here are some typical problems that involve "aud":
 
         - The **"aud"** segment of the JWT contains a URI that has a trailing slash.
         - The **"aud"** segment of the JWT contains a URI that uses an incorrect capitalization style. The URI must be all lowercase.
@@ -44,40 +45,41 @@ When you troubleshoot service authentication issues, there are a few basic and c
     - **"appid"** – The value corresponds to the Microsoft Entra Native Client App ID (or Service App ID).
     - **"upn"** – The value corresponds to the user who is being authenticated through a Native Client App.
 
-
 ### Check token compliance
 
-You might encounter a 401 Unauthorized error because client application tokens lack security compliance. To troubleshoot the issue, check the following items: 
+You might encounter a 401 Unauthorized error because client application tokens lack security compliance. To troubleshoot the issue, check the following items:
 
 - The `tid` segment of the JSON web token (JWT) might contain a Microsoft Entra ID value other than current environment. The `tid` segment must contain the current Microsoft Entra ID value. Make sure that the token is acquired from the current environment, Microsoft Entra.
-- The `oid` segment of the JWT might be absent. The `oid` claim must be set in the token. Confirm that the client application is provisioned in your Microsoft Entra by having a service principal in Microsoft Entra. For more information, see [Multitenant apps without a service principal in the Microsoft Entra ID tenant](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#multitenant-apps-without-a-service-principal-in-the-microsoft-entra-id-tenant). Make sure the access token being acquired should be from your tenant endpoint and not your organization endpont.
- 
+- The `oid` segment of the JWT might be absent. The `oid` claim must be set in the token. Confirm that the client application is provisioned in your Microsoft Entra by having a service principal in Microsoft Entra. For more information, see [Multitenant apps without a service principal in the Microsoft Entra ID tenant](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#multitenant-apps-without-a-service-principal-in-the-microsoft-entra-id-tenant). Make sure the access token being acquired should be from your tenant endpoint and not your organization endpoint.
+
   ``` txt
   Example tenant endpoint: https://login.microsoftonline.com/{yourtenant}
   Example organization endpoint: https://login.microsoftonline.com/organizations
-  ``` 
+  ```
+
 - The `aud` segment of the JWT might contain an appId value or a URL other than the environment URL. The `aud` value must be the environment URL. For more information, see [Tokens without an environment URL in finance and operations apps](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#token-resource-or-audience-without-an-environment-url-in-finance-and-operations-apps).
 
-
 ## Review the event logs
+
 You can also look at the event logs of the instance machine, if you have access to the virtual machine (VM).
 
 1. Start Event Viewer by running the **eventvwr** command from the **Run** window.
-2. Go to the following channels:
+1. Go to the following channels:
 
     - Application and Services Logs &gt; Microsoft &gt; Dynamics &gt; AX-IntegrationServices &gt; Channel:Operational (Microsoft-Dynamics-AX-IntegrationServices/Operational)
     - Application and Services Logs &gt; Microsoft &gt; Dynamics &gt; AX-SystemRuntime &gt; Channel:Operational (Microsoft-Dynamics-AX-SystemRuntime/Operational)
 
 ## Other approaches
+
 - For more information about how OAuth is configured, see [Service endpoints overview](services-home-page.md).
 - You can also try to call the service in parallel by using your own client code. The sample code that we published is available at <https://github.com/Microsoft/Dynamics-AX-Integration>.
 - If the second method works, you can compare the JWTs from each method.
 
 ## Known issues
-### Microsoft EntraSTS65001: The user or administrator hasn't consented to use the application
 
-- The **"aud"** segment of the JWT might contain a URI that has a trailing slash. The slash must be removed.
-- The **"aud"** segment of the JWT might contain a URI that uses an incorrect capitalization style. The URI must be all lowercase.
+### Microsoft EntraSTS65001: The user or administrator didn't consent to use the application
 
+- The **"aud"** segment of the JWT might contain a URI that has a trailing slash. Remove the slash.
+- The **"aud"** segment of the JWT might contain a URI that uses an incorrect capitalization style. Change the URI to all lowercase.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

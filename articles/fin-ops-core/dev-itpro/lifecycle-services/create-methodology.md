@@ -4,7 +4,7 @@ description: Lifecycle Services provides methodologies that you can use to ensur
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 06/20/2017
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,41 +18,42 @@ ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 
 [!include [banner](../includes/banner.md)]
 
-Lifecycle Services (LCS) for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. With a methodology, you can easily track and report on your progress.
+Lifecycle Services for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. By using a methodology, you can easily track and report on your progress.
 
-A methodology consists of phases, tasks, and milestones. Each phase can have any number of tasks, some of which are mandatory. When all of the tasks in a phase are completed, the phase can be marked as complete. You can also create a milestone for when you anticipate a phase to be completed. The following methodologies are included in an LCS project:
+A methodology consists of phases, tasks, and milestones. Each phase can have any number of tasks, some of which are mandatory. When you complete all of the tasks in a phase, you can mark the phase as complete. You can also create a milestone for when you anticipate a phase to be completed. A Lifecycle Services project includes the following methodologies:
 
--   Implementation
--   Sure Step
--   Learn development
--   Migrate and create solutions
--   Consume solutions
+- Implementation
+- Sure Step
+- Learn development
+- Migrate and create solutions
+- Consume solutions
 
-**Note:** There is a known limitation where new changes that are published to the Microsoft Methodology are not pushed to existing projects. Only new projects get these changes.
+> [!NOTE]
+> A known limitation prevents new changes that are published to the Microsoft Methodology from being pushed to existing projects. Only new projects get these changes.
 
 ## Add or update methodologies
 
-A partner or a project administrator can create new methodologies or make changes to an existing methodology for their organization or within the scope of a specific project. These additions and changes can be made at the project level or at the organization level. Use the following procedures to create and save a new methodology, update existing methodologies, and when appropriate, promote a new methodology or methodology changes to the organization level.
+A partner or a project administrator can create new methodologies or make changes to an existing methodology for their organization or within the scope of a specific project. Make these additions and changes at the project level or at the organization level. Use the following procedures to create and save a new methodology, update existing methodologies, and when appropriate, promote a new methodology or methodology changes to the organization level.
 
 ### Create a new methodology
-1.  On the Lifecycle Services dashboard, on the right side of the screen, click **Manage methodologies**.
-2.  On the **Manage methodologies **page, click the plus sign (+).
-3.  In the **New methodology** pane, enter a name and description for the new methodology. Click **Confirm**.
-4.  **Optional:** After you have confirmed the methodology, you can promote it to the organization level by selecting the methodology in the grid, and then selecting **Promote**. [![promotemethodology.](./media/promotemethodology-1024x506.jpg)](./media/promotemethodology.jpg) **Note:** You must be an admin in your organization to promote a methodology to the organization level.
+
+1. On the Lifecycle Services dashboard, on the right side of the screen, select **Manage methodologies**.
+1. On **Manage methodologies**, select the plus sign (+).
+1. In **New methodology**, enter a name and description for the new methodology. Select **Confirm**.
+1. **Optional:** After you confirm the methodology, promote it to the organization level by selecting the methodology in the grid, and then selecting **Promote**. :::image type="content" source="./media/promotemethodology.jpg" alt-text="Screenshot of the promote methodology option."::: 
+
+    > [!NOTE]
+    > You must be an admin in your organization to promote a methodology to the organization level.
 
 ### Change or update a methodology
-There are two ways to make changes to a methodology. You can append an existing methodology or you can make changes to a methodology in the scope of a project. From the LCS project dashboard, select the methodology that you want to update, and then select **Edit methodology** or **Append methodology**. [![projectlevelmethodology.](./media/projectlevelmethodology-1024x494.jpg)](./media/projectlevelmethodology.jpg) If you select to edit the methodology, you can make the following changes:
 
--   Add a new phase.
--   Add a new task.
--   Edit a phase or task. (Some phases and tasks can be edited, but others are enforced by Microsoft and are therefore locked and can’t be edited.)
--   Copy a phase or task.
--   Reorder phases and tasks.
--   Delete a phase or task.
+You can make changes to a methodology in two ways. You can append an existing methodology, or you can make changes to a methodology in the scope of a project. From the Lifecycle Services project dashboard, select the methodology that you want to update, and then select **Edit methodology** or **Append methodology**. :::image type="content" source="./media/projectlevelmethodology.jpg" alt-text="Screenshot of the project level methodology options."::: If you select to edit the methodology, you can make the following changes:
 
-
-
-
-
+- Add a new phase.
+- Add a new task.
+- Edit a phase or task. (You can edit some phases and tasks. However, Microsoft enforces other phases and tasks, so you can't edit them.)
+- Copy a phase or task.
+- Reorder phases and tasks.
+- Delete a phase or task.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

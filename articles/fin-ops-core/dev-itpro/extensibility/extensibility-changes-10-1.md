@@ -4,7 +4,7 @@ description: Learn about the extensibility features that were released in Micros
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 05/10/2019
+ms.date: 01/20/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer

@@ -4,7 +4,7 @@ description: Learn about using change tracking to enable incremental export of d
 author: Milindav2
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 01/14/2026
+ms.date: 01/20/2026
 ms.reviewer: twheeloc
 audience: IT Pro, Developer
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa

@@ -4,8 +4,8 @@ description: Access a list of the entities eligible for copilot, organized by al
 author: RamaKrishnamoorthy 
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 08/29/2024
-ms.update-cycle: 180-days
+ms.date: 01/20/2026
+ms.update-cycle: 1095-days
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot 

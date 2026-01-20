@@ -4,7 +4,7 @@ description: Learn about the extensibility features that were released in Dynami
 author: FrankDahl
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/18/2018
+ms.date: 01/20/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer
