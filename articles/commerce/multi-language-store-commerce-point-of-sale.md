@@ -27,7 +27,7 @@ Below, we describe language selection at self-checkout in Store Commerce POS and
 - **Feature flag control** : Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience. To enable the flag go to **Functionality profile**-> **Self-Checkout** and turn ON the flag **Enable language selection on Self-checkout Welcome page**.
 - **New change language operation**:  This operationcan be added into the transaction grid for switching the language during checkout.
 
-  ![Welcome screen showing Select language dialog.](media/multilanguage-self-check-out.jpg)
+  ![Welcome screen showing Select language dialog.](media/multi-language-self-check-out.jpg)
 
 ## Localization of button labels and screen layout tabs
 
