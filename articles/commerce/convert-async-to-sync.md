@@ -35,3 +35,5 @@ If an order references an asynchronous customer or address that you didn't yet s
 [Customer attributes](dev-itpro/customer-attributes.md)
 
 [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
