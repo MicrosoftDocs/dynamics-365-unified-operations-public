@@ -2,7 +2,7 @@
 title: Check-in for pickup module
 description: Learn about the check-in for pickup module and how to configure it in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global

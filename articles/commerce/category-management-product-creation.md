@@ -4,7 +4,7 @@
 title: Manage product categories and products
 description: Learn how merchandising managers can use product categories to manage relationships between the product hierarchies and released product details in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 ms.reviewer: v-cgriffinc

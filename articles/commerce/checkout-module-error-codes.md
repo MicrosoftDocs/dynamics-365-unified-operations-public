@@ -2,7 +2,7 @@
 title: Checkout module error reference codes
 description: This article describes the checkout module error reference codes that are shown in user-facing error messages in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global

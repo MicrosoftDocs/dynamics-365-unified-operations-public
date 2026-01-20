@@ -2,7 +2,7 @@
 title: Ship orders from another store using the charge send feature
 description: Learn about the charge send feature in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global

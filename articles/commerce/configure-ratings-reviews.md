@@ -2,7 +2,7 @@
 title: Configure ratings and reviews
 description: Learn how to configure your e-commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global

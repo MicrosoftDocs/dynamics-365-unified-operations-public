@@ -2,7 +2,7 @@
 title: Configure cash denominations for the point of sale (POS)
 description: Learn how to configure cash denominations for Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: global

@@ -2,7 +2,7 @@
 title: Configure multiple B2C tenants in a Commerce environment
 description: Learn how and when to set up multiple per-channel Microsoft Entra business-to-consumer (B2C) tenants for user authentication in a dedicated Microsoft Dynamics 365 Commerce environment.
 author: BrianShook
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global

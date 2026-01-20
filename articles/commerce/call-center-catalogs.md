@@ -4,7 +4,7 @@
 title: Call center catalogs
 description: Learn about call center–specific functionality for catalogs in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/15/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 ms.reviewer: v-griffinc

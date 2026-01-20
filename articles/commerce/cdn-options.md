@@ -2,7 +2,7 @@
 title: Content delivery network implementation options
 description: Learn about the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments.
 author: BrianShook
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
