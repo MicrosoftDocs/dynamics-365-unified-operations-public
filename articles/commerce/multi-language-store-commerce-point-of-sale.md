@@ -1,5 +1,5 @@
 ---
-title: Enable multilanguage support for self-checkout (preview)
+title: Enable multilanguage support for Store Commerce self-checkout (preview)
 description: Learn how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout, including localization of button grids and screen layout tabs.
 author: anush6121
 ms.author: anvenkat 
@@ -9,12 +9,12 @@ ms.custom:
   - bap-template
 ms.reviewer: 
 ---
-# Enable multilanguage support for self-checkout (preview)
+# Enable multilanguage support for Store Commerce self-checkout (preview)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article explains how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout that help you streamline checkout for both customers and store associates. including localization of button grids and screen layout tabs.
+This article explains how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout that help you streamline checkout for both customers and store associates.
 
 The 10.0.47 release of Store Commerce point of sale (POS) introduces enhanced multilanguage capabilities that allow retailers to offer a more accessible, and globally consistent experience for customers. The new multilanguage capabilities include language selection on the self-checkout welcome screen and new options to localize POS screen layout button grids and tabs.
 
@@ -25,7 +25,7 @@ The Commerce 10.0.47 release includes the following multilanguage self-checkout 
 - **Feature flag control**: Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience. 
 - **Language selection on the welcome screen**: Customers can choose their preferred language directly from the self-checkout welcome screen, without staff assistance.
 - **Configurable per store**: Administrators can select which languages are available for each store, ensuring the right options for every location. 
-- **Consistent UI localization**: All labels, buttons, and tabs automatically resolve to the selected language for the duration of the transaction.
+- **Consistent UI localization**: All labels, buttons, and tabs automatically resolve to the selected language during the transaction.
 - **Session-based language reset**: After checkout, the language resets to the store or associate default, ensuring a fresh experience for each customer.
 - **Scan from welcome screen**: Customers can begin scanning items immediately from the welcome screen, streamlining the checkout process.
 - **New change language operation**:  You can add a change language option to the transaction grid to allow customers to switch languages during checkout.
