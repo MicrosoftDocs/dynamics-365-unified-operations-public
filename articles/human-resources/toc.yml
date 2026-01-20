@@ -29,12 +29,12 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
-        - name: Human Resrouces 10.0.46
+        - name: Human Resources 10.0.47
+          href: ./get-started/hr-whats-new-10-0-47.md
+        - name: Human Resources 10.0.46
           href: ./get-started/hr-whats-new-10-0-46.md
         - name: Human Resources 10.0.45  
           href: ./get-started/hr-whats-new-10-0-45.md   
-        - name: Human Resources 10.0.44  
-          href: ./get-started/hr-whats-new-10-0-44.md  
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
