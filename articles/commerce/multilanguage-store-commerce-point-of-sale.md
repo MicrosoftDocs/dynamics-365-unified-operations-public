@@ -27,7 +27,7 @@ Below, we describe language selection at self-checkout in Store Commerce POS and
 - **Feature flag control** : Language selection on the welcome screen is enabled via a configuration flag in the functionality profile, allowing retailers to control rollout and experience. To enable the flag go to **Functionality profile**-> **Self-Checkout** and turn ON the flag **Enable language selection on Self-checkout Welcome page**.
 - **New change language operation**:  This operationcan be added into the transaction grid for switching the language during checkout.
 
-  ![Multi-language-self-checkout.](media/multi-language-selfcheckout.jpg)
+  ![Welcome screen showing Select language dialog.](media/multilanguage-self-check-out.jpg)
 
 ## Localization of button labels and screen layout tabs
 
@@ -35,11 +35,11 @@ Below, you’ll learn how to localize POS button labels and tabs within layout d
 
 - **Localize button grids and tabs:** Configure multiple languages for button labels and tab names directly in the layout designer. To localize a button grid, open the button **properties** in the button grid designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit. To localize a tab, go to **Customize** option for a tab in the layout designer and select **localization** and use the dialog to add languages with their corresponding text. Select **OK** to save and exit.
   
-  ![Localize-buttongrid.](media/button-grid-localization.jpg)
+  ![Button grid showing Configure button dialog.](media/button-grid-localization.jpg)
   
-  ![Localize-buttongrid.](media/button-grid-language-dialog.jpg)
+  ![Button grid showing Localization dialog.](media/button-grid-language-dialog.jpg)
   
-  ![Localize-tab.](media/tab-localization.jpg)
+  ![Screen layout showing Customization - Tab control dialog.](media/tab-localization.jpg)
   
 - **Single configuration, multi-language support:** Design layouts once and reuse across all supported languages—no need to duplicate layouts for each language.
 - **Runtime resolution:** When a store associate logs into POS, the layout automatically resolves to the language configured for their worker profile.
