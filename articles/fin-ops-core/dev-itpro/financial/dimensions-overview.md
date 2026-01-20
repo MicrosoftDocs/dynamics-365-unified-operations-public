@@ -4,7 +4,7 @@ description: Learn about dimensions, dimensions that have entities, and the dime
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 04/29/2025
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -32,6 +32,9 @@ This article shows how to modify DimensionCombinationEntity to enable the dimens
 
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
+
+## Configuration overview
+Before implementing any customizations, you can view and manage dimension formats on the **Financial dimension configuration for integrating applications** page. To view dimension formats, go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimension configuration for integrating applications**.
 
 ## Add dimensions to Dynamics 365 Finance
 
