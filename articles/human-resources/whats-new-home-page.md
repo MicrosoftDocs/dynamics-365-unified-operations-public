@@ -36,6 +36,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|---------------|-------------|
+| 10.0.47 | 10.0.XXXX | March 2026 |[What's new or changed in Dynamics 365 Human Resources 10.0.47 (March 2026)](get-started/hr-whats-new-10-0-47.md)|
 | 10.0.46 | 10.0.2428 | December 2025 |[What's new or changed in Dynamics 365 Human Resources 10.0.46 (December 2025)](get-started/hr-whats-new-10-0-46.md)|
 | 10.0.45 | 10.0.2345 | September 2025 |[What's new or changed in Dynamics 365 Human Resources 10.0.45 (September 2025)](get-started/hr-whats-new-10-0-45.md)|
 | 10.0.44 | 10.0.2263 | June 2025 |[What's new or changed in Dynamics 365 Human Resources 10.0.44 (June 2025)](get-started/hr-whats-new-10-0-44.md)|
