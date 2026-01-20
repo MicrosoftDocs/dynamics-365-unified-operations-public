@@ -49,5 +49,4 @@ To associate new domains with your e-commerce environment after e-commerce initi
 
 [Enable location-based store detection](enable-store-detection.md)
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
