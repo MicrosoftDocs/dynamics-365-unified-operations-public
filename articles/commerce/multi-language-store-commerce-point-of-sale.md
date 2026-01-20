@@ -54,7 +54,7 @@ To enable additional languages for a store, follow these steps:
 
 To localize a button grid, follow these steps:
 
-1. In the button grid designer, select **Properties**.
+1. In the POS button grid designer, select **Properties**.
 1. In the **Configure button** dialog, select **Localization**.
 
     ![Button grid showing Configure button dialog.](media/button-grid-localization.jpg)
@@ -69,11 +69,16 @@ To localize a button grid, follow these steps:
 
 To localize a tab, follow these steps:
 
-1. In the layout designer, select **Custom control**.
+1. In the POS layout designer, select **Custom control**.
 1. In the **Customization - tab control** dialog, select **Localization**.
-1. In the **Localization** dialog, for each language, select **Add row** to add the language and its corresponding text string.
+
+    ![Screen layout showing Customization - Tab control dialog.](media/tab-localization.jpg)
+
+1. In the **Localization** dialog, for each language, add the language and its corresponding text string.
 1. Select **OK** to save and exit.
 
-![Screen layout showing Customization - Tab control dialog.](media/tab-localization.jpg)
+## Additional resources
+
+[Install the POS layout designer](install-pos-layout-designer.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
