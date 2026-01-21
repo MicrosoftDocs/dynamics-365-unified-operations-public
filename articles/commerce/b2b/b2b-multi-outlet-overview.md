@@ -21,6 +21,8 @@ Business-to-Business (B2B) commerce often involves complex relationships between
 
 Microsoft Dynamics 365 Commerce supports these scenarios by separating **purchasing context** (such as pricing, delivery addresses, and payment terms) from **user identity**, allowing organizations to scale their operations without duplicating configuration or losing visibility into ordering activity.
 
+This feature enables B2B buyer partners (like outlet managers managing multiple outlets) to place orders across multiple organizations using a single contact identity. This feature transitions B2B buyer identity from the traditional customer account of type person to a more flexible Contact-based model, allowing the same contact to be associated with multiple organizations account. It supports user management scenarios where a B2B buyer partner, a multi outlet manager, can seamlessly switch between outlets they manage. This capability is designed to support both B2B Standard and B2B Indirect models (i.e., selling through a network of distributors), ensuring consistent and efficient ordering experiences across diverse business structures.
+
 The following scenarios describe how this model is applied in real-world B2B commerce environments.
 
 
