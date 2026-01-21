@@ -69,9 +69,9 @@ To review and accept changes that the agent suggests based on the emails that it
 > Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
 
 1. Open the **Purchase order receipt and follow-up** workspace.
-1. A **(Preview) Purchase order updates** tile indicates the number of emails that require review. Select the tile.
+1. A **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.
 
-    The left side of the **(Preview) Purchase order updates** page lists all the emails that the agent read. The right side shows summaries that Copilot generated.
+    The left side of the **(Preview) Emails from vendors** page lists all the emails that the agent read. The right side shows summaries that Copilot generated.
 
 1. Follow one of these steps:
 
@@ -83,19 +83,40 @@ To review and accept changes that the agent suggests based on the emails that it
 
 If a vendor uses acronyms or other language that isn't saved in the system, the Supplier Communications Agent can't interpret it. However, you can teach the agent to better interpret incoming email content. In this way, you help improve its accuracy.
 
+There are two types of teaching available:
+
+    - Column mapping teaching
+    - Value teaching.
+
 ### Teach the agent about column mappings
 
-A **Review column mappings** button might appear at the top of the Copilot summary for several reasons:
+This type of learning is triggered any of the following cases:
 
-- The vendor attached a PDF document to the message, and several columns in that PDF can be mapped to a single field in the system.
-- The message or attachment uses an acronym that the agent can't interpret.
+1. The incoming email from the vendor contains a term or acronym that the agent can't interpret.
+1. The email contains multiple possible matches for a given field in Finance & Operations. For example, the field **Confirmed delivery date** has been seen in incoming vendor emails with a lot of variety when it comes to naming. Examples include:
 
-To fix the issue, select **Review column mappings**, and clarify the mapping. You can then save the mapping for all vendors, for the current vendor, or not at all.
+    - *Estimated delivery date*
+    - *Confirmed delivery date*
+    - *Transportation load date*
+    - *Ship date*
+    - *Ship by*
+    - *Approx delivery date*, etc.
 
-If you save a mapping for all vendors or the current vendor, you can always go to **Taught items** to view everything that the agent has been taught. You can also learn where to go to delete entries as required.
+If the agent detects ambiguity in the possible match for a field, it will show that "Some columns are mapped with low confidence.". In this case, you can use the button **Review**, to manually choose which of the fields from the vendor's email you want the agent to use. This opens a side panel, where the potential mappings of the field are listed. Once you choose the correct option, you can then decide when to apply this teaching:
 
-### Teach the agent about value equivalences
+    - Always do this for the current vendor
+    - Always do this for all vendors
+    - One-time change.
 
-A vendor might use synonyms or industry equivalences that aren't saved in your system. You can train the agent to recognize these equivalences.
+To map more fields, choose **Show more**. This will expand the list of fields that are available for mapping. Agent teaching on field mapping is currently available for the fields: **Confirmed receipt date**, **Unit**, **Quantity** and **Unit price**.
 
-For example, you use a unit of measure that is named *cartons*, but one of your vendors always uses the name *cassettes* for the same unit. When the agent detects the different name as a change, you can clarify the equivalence for the appropriate line. In this case, the teaching pane appears. You can then save the equivalence for all vendors, for the current vendor, or not at all.
+### Teach the agent about value mappings
+
+For values of fields like for example **Unit**, a vendor might use synonyms or industry equivalences that aren't saved in your system. You can train the agent to recognize these equivalences. For example, as a value for **Unit**, you use *cartons*, but one of your vendors always uses the name *cassettes* for the same unit. When the agent detects the different value as a change, you can clarify the equivalence. When you edit the field, the teaching pane appears. You can then save the equivalence for all vendors, for the current vendor, or not at all.
+
+### Locate existing teaching items
+
+If any teaching has been previously saved for all vendors or a specific vendor, you can always find it later, review it or delete it:
+
+1. Navigate to **Procurement and sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Emails from vendors**.
+1. On the top menu, choose **Taught items** to view everything that the agent has been taught.
