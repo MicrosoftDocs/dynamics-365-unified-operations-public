@@ -223,5 +223,4 @@ For scenarios where organizations can't enable asynchronous customer orders and 
 
 [Hybrid customer orders](hybrid-customer-orders.md)
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
