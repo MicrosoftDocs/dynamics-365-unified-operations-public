@@ -9,7 +9,7 @@ ms.reviewer: v-griffinc
 ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
-ms.author: anpurush
+ms.author: johnmichalak
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template
@@ -177,7 +177,7 @@ You can create customer orders in POS in either synchronous mode or asynchronous
 > [!IMPORTANT]
 > Use the asynchronous order creation mode. It's much more performant than synchronous order creation mode and provides a better user experience.
 
-### Enable creating customer orders in asynchronous mode
+### Enable customer orders to be created in asynchronous mode
 
 To enable creating customer orders in asynchronous mode, follow these steps:
 
