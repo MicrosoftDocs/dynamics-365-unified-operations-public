@@ -57,37 +57,44 @@ To create a history table that corresponds to the live table in the archive scop
 The following example shows how to customize the General ledger archive job request creator class to add a new table.
 
 ```
-using Microsoft.Dynamics.Archive.Contracts; 
-[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator] 
-final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension 
+using Microsoft.Dynamics.Archive.Contracts;
+[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))]
+final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 {
-    public ArchiveJobPostRequest createPostJobRequestForArchiveTrans(LedgerArchiveTrans _archiveTrans 
-    { 
-        ArchiveJobPostRequest postRequest = next createPostJobRequestForArchiveTrans(_archiveTrans; 
-        ArchiveServiceArchiveJobPostRequestBuilder builder = 
-            ArchiveServiceArchiveJobPostRequestBuilder::createFromArchiveJobPostRequest(postRequest; 
+    public ArchiveJobPostRequest createPostJobRequestForArchiveTrans(LedgerArchiveTrans _archiveTrans)
+    {
+        ArchiveJobPostRequest postRequest = next createPostJobRequestForArchiveTrans(_archiveTrans);
+        ArchiveServiceArchiveJobPostRequestBuilder builder =
+            ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
 
-        // Use builder to add more live tables, history tables, join conditions and where conditions (if needed 
-        // Example: Adding my new general ledger table to archive table graph 
-        var generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry; 
-        var generalJournalAccountEntryTableName = generalJournalAccountEntryTable.name(DbBackend::Sql; 
-        var newMyNewGeneralLedgerTable = new DictTable(tableNum(MyNewGeneralLedgerTable; 
-        var newMyNewGeneralLedgerTableName = newMyNewGeneralLedgerTable.name(DbBackend::Sql; 
-        var newMyNewGeneralLedgerTableHistory = new DictTable(tableNum(MyNewGeneralLedgerTableHistory; 
-        var newMyNewGeneralLedgerTableHistoryName = newMyNewGeneralLedgerTableHistory.name(DbBackend::Sql; 
-        var myNewGeneralLedgerTableSourceTable = ArchiveServiceSourceTableConfiguration::newForSourceTable( 
-            newMyNewGeneralLedgerTableName, 
-            newMyNewGeneralLedgerTableHistoryName, 
-            tableStr(MyNewGeneralLedgerTableBiEntity; 
+        // Use builder to add more live tables, history tables, join conditions and where conditions (if needed)
+        // Example: Adding my new general ledger table to archive table graph
+        DictTable generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry));
+        str generalJournalAccountEntryTableName = generalJournalAccountEntryTable.name(DbBackend::Sql);
 
-        // Add parent table 
-        myNewGeneralLedgerTableSourceTable.parmParentSourceTableName(generalJournalAccountEntryTableName; 
-        builder.addSourceTableForLongTermRetention(myNewGeneralLedgerTableSourceTable 
-            .addJoinCondition(newMyNewGeneralLedgerTableName, 
-            newMyNewGeneralLedgerTable.fieldName(fieldNum(MyNewGeneralLedgerTable, GeneralJournalAccountEntry, DbBackend::Sql, 
-            generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId, DbBackend::Sql; 
+        DictTable newMyNewGeneralLedgerTable = new DictTable(tableNum(MyNewGeneralLedgerTable));
+        str newMyNewGeneralLedgerTableName = newMyNewGeneralLedgerTable.name(DbBackend::Sql);
+        DictTable newMyNewGeneralLedgerTableHistory = new DictTable(tableNum(MyNewGeneralLedgerTableHistory));
+        str newMyNewGeneralLedgerTableHistoryName = newMyNewGeneralLedgerTableHistory.name(DbBackend::Sql);
 
-        return builder.completeArchiveJobPostRequest(; 
+        ArchiveServiceSourceTableConfiguration myNewGeneralLedgerTableSourceTable = 
+            ArchiveServiceSourceTableConfiguration::newForSourceTable(
+                newMyNewGeneralLedgerTableName,
+                newMyNewGeneralLedgerTableHistoryName,
+                tableStr(MyNewGeneralLedgerTableBiEntity));
+
+        // Add parent table
+        myNewGeneralLedgerTableSourceTable.parmParentSourceTableName(generalJournalAccountEntryTableName);
+
+        builder.addSourceTableForLongTermRetention(myNewGeneralLedgerTableSourceTable)
+            .addJoinCondition(newMyNewGeneralLedgerTableName,
+                newMyNewGeneralLedgerTable.fieldName(fieldNum(MyNewGeneralLedgerTable, GeneralJournalAccountEntryRecId), DbBackend::Sql),
+                generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId), DbBackend::Sql));
+
+        return builder.finalizeArchiveJobPostRequest();
+    }
+
+}
 ```
 
 ### Finance and operations table names in live, history, and Dataverse-managed data lake tables
