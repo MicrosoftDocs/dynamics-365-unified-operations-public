@@ -4,7 +4,7 @@ description: Learn about the tables supported for duplicate and master record da
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/23/2023
+ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -15,6 +15,7 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 ---
 
 # Tables supported for duplicate record data sharing
+
 This list describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**
@@ -250,10 +251,10 @@ This list describes the tables supported for duplicate record data sharing. Dupl
 
 **Additional tables when the customer and vendor master sharing feature is enabled**
 
-| **Table object name**              | **Table description (Label)**             | 
+| **Table object name**              | **Table description (Label)**             |
 |------------------------------------|-------------------------------------------|
 | BankConstantSymbol                 | Bank constant symbols                     |
-| BankCustPaymIdTable                | Payment ID                                | 
+| BankCustPaymIdTable                | Payment ID                                |
 | BankTransactionTypeGroupHeader     | Bank transaction groups                   |
 | ContactPerson                      | Contacts                                  |
 | CreditCardCust                     | Customer credit card                      |
@@ -284,7 +285,7 @@ This list describes the tables supported for duplicate record data sharing. Dupl
 | VendDefaultAccounts                | Default ledger accounts for vendors       |
 | VendDefaultLocation                | Vendor Default Location                   |
 | VendFineSetup_BR                   | Fine codes                                |
-| VendInfoZakat_SA                   | Vendors                                   | 
+| VendInfoZakat_SA                   | Vendors                                   |
 | VendInterestSetup_BR               | Interest codes                            |
 | VendStateTaxID                     | Vendor state tax IDs                      |
 | VendTable                          | Vendors                                   |
@@ -333,16 +334,18 @@ This list describes the tables supported for duplicate record data sharing. Dupl
 </tbody>
 </table>
 
-
 ## Download a cross-company data sharing template from LCS
-To download a cross-company data sharing template from Lifecycle Services (LCS), follow these steps: 
-1.	Sign in to LCS.
-2.	On the home page, select Shared asset library.
-3.	In the Asset type list, select Data package.
-4.	Select any of the available data package files that you want to download.
+
+To download a cross-company data sharing template from Lifecycle Services (LCS), follow these steps:
+
+1. Sign in to LCS.
+2. On the home page, select Shared asset library.
+3. In the Asset type list, select Data package.
+4. Select any of the available data package files that you want to download.
 For details about how to use a template, see [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
 ## Tables supported for master company data sharing
+
 It might be possible to add additional tables for master company data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**

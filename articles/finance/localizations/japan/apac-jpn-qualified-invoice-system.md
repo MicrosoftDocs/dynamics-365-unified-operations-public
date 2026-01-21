@@ -4,7 +4,7 @@ description: Learn about the Qualified Invoice System, which will be required in
 author: prabhatb
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 08/28/2023
+ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 audience: Application User 
 ms.search.region: Japan
@@ -18,11 +18,11 @@ ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 
 [!include [banner](../../includes/banner.md)]
 
-The Qualified Invoice System (QIS) represents updated requirements for issuing and reporting invoices that include Japan Consumption Tax (JCT) information. The requirements begin on October 1, 2023, and their purpose is to improve the accuracy and transparency of the tax regime. 
+The Qualified Invoice System (QIS) represents updated requirements for issuing and reporting invoices that include Japan Consumption Tax (JCT) information. These requirements start on October 1, 2023. Their purpose is to improve the accuracy and transparency of the tax regime. 
 
 To claim input tax credits, taxpayers must receive and report qualified invoices from their suppliers. Issued and received qualified invoices must contain specific information, including the Qualified Invoice Issuer (QII) registration numbers, the tax rates, and the tax amounts by rate. 
 
-The localization of Microsoft Dynamics 365 Finance for Japan has extended the invoicing functionality in Accounts receivable and Accounts payable to cover the new requirements. This article explains how to configure and use the functionality so that you comply with the new requirements in Japan. Here are some of the configuration and use guidelines:
+The localization of Microsoft Dynamics 365 Finance for Japan extends the invoicing functionality in Accounts receivable and Accounts payable to cover the new requirements. This article explains how to configure and use the functionality so that you comply with the new requirements in Japan. Here are some of the configuration and use guidelines:
 
 - Maintain the QII registration numbers of your company, your vendors, and your customers.
 - Print your company's registration number on customer invoices, including sales invoices and free text invoices.
@@ -36,21 +36,21 @@ The localization of Microsoft Dynamics 365 Finance for Japan has extended the in
 
 Here are the main considerations for this functionality:
 
-- To accurately calculate, round, and print taxes on invoices and consolidated invoices, we recommend that you use only one sales tax code for each tax rate. For example, instead of using two sales tax codes that have a 10 percent rate on one invoice, you should use just one. In this way, you ensure consistency and accuracy in your tax calculations and output.
+- To accurately calculate, round, and print taxes on invoices and consolidated invoices, use only one sales tax code for each tax rate. For example, instead of using two sales tax codes that have a 10 percent rate on one invoice, use just one. In this way, you ensure consistency and accuracy in your tax calculations and output.
 - To support transitional measures for input tax credits for non-qualified vendors, you can split the tax amount into deductible and non-deductible parts when you perform these actions:
 
     - Register a purchase invoice.
-    - Post the non-deductible part to an expense/capitalizing account. You can use the non-deductible percentage in sales tax code values for this purpose.
+    - Post the non-deductible part to an expense or capitalizing account. You can use the non-deductible percentage in sales tax code values for this purpose.
 
 - Printing the vendor's QII registration number on a vendor invoice isn't supported.
 
 ## Set up a QII registration number
 
-To use QII registration numbers, you must complete these tasks.
+To use QII registration numbers, complete these tasks.
 
 1. Configure a registration type for QIIs for Japan.
-2. Link the registration type to the **Qualified invoice issuer** registration category.
-3. Add your company's registration number to its primary address in Japan.
+1. Link the registration type to the **Qualified invoice issuer** registration category.
+1. Add your company's registration number to its primary address in Japan.
 
 > [!NOTE]
 > For more information, see [Registration IDs](../europe/emea-registration-ids.md). The framework is extended so that you can maintain the QII registration numbers of your company and its counterparties (that is, vendors and customers). The QII number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
@@ -84,15 +84,15 @@ Consider the following guidelines when you set up JCT:
 - Specify sales tax groups on vendor and customer records by using different groups for qualified vendors and non-qualified vendors.
 - Specify item sales tax groups on items for the standard rate and the reduced rate.
 
-## Set up invoice layouts in Account receivable
+## Set up invoice layouts in Accounts receivable
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. On the **General** tab, in the **Sales tax specification** field, select **Registration currency**.
 1. Select **Print management**.
 1. Follow these steps:
 
-    - For **Customer invoice**, set the **Report format** field to **SalesInvoice.Report\_JP**.
-    - For **Free text invoice**, set the **Report format** field to **FreeTextInvoice.Report\_JP**.
+    - For **Customer invoice**, set the **Report format** field to **SalesInvoice.Report_JP**.
+    - For **Free text invoice**, set the **Report format** field to **FreeTextInvoice.Report_JP**.
 
 1. On the **Invoice** tab, set the **Print qualified invoice issuer number on invoice** option to **Yes**.
 1. On the **Free text invoice** tab, set the **Print qualified invoice issuer number on invoice** option to **Yes**.

@@ -4,7 +4,7 @@ description: Learn about ledgers and subledgers in Dynamics 365 finance and oper
 author: prasungoel
 ms.author: twheeloc
 ms.topic: concept-article
-ms.date: 01/14/2026
+ms.date: 01/21/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User

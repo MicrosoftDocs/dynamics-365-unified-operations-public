@@ -4,7 +4,7 @@ description: Learn about execution restrictions for specific data export project
 author: pnghub
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 07/12/2024
+ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2022-05-12
@@ -14,13 +14,14 @@ ms.search.validFrom: 2022-05-12
 
 [!include [banner](../includes/banner.md)]
 
-Some data export projects have been restricted from execution in finance and operations environments that run version 10.0.22 or earlier.
+You can't run some data export projects in finance and operations environments that run version 10.0.22 or earlier.
 
-If you receive the following error message, you must update the environment to a supported version:
+If you receive the following error message, update the environment to a supported version:
 
-> This data export project is no longer supported for execution. To run this project, it is first required to update the environment to a supported version.
+> [!NOTE]
+> This data export project is no longer supported for execution. To run this project, it's first required to update the environment to a supported version.
 
-If you don't update the environment to a supported version, you won't be able to run some data projects.
+If you don't update the environment to a supported version, you can't run some data projects.
 
 For more information about supported versions, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 

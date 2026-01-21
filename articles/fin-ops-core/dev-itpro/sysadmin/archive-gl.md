@@ -13,6 +13,7 @@ ms.reviewer: twheeloc
 This article explains how to archive Microsoft Dynamics 365 Finance General ledger data.
 
 > [!IMPORTANT]
+>
 > - You can archive general ledger data only for fiscal years that have the year-end close process completed.
 > - You must run the archive jobs for different years in chronological order. For example, you must archive 2020 general ledger data before you archive 2021 general ledger data.
 
@@ -40,7 +41,7 @@ To set up an archival job, follow these steps:
 1. Select **New long term retention** to open a wizard that you can use to schedule a new General ledger long term retention job.
 
 :::image type="content" source="./media/new-long-term-retenttion-job2.jpg" alt-text="Screenshot of new long term retention job for General ledger.":::
-   
+
 1. Enter a name for the job, and then select **Next**.
 
     You can schedule new long term retention jobs for one or more companies at a time. Execution of these jobs is sequential.
@@ -57,7 +58,6 @@ To set up an archival job, follow these steps:
 1. Select **Finish** to schedule the archive job for the selected fiscal years and the companies.
 1. Select **View progress** to view the detailed logs.
 
-
 ## View historical data from the history table
 
 To view the historical transactional details, follow these steps.
@@ -70,4 +70,3 @@ To view the historical transactional details, follow these steps.
 ## Capacity reports
 
 The Finance application tables that you move to Dataverse long term retention appear in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under the database storage capacity reports. The live and history tables are available in the **Finance** section of the Power Platform admin center capacity reports.
-

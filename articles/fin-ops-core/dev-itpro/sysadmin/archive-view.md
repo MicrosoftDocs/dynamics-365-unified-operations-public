@@ -4,7 +4,7 @@ description: Learn about how to view or delete archived data in Microsoft Datave
 author: pnghub
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 01/14/2026
+ms.date: 01/21/2026
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
