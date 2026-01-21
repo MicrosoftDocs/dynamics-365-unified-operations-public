@@ -34,7 +34,7 @@ Global Inventory Accounting doesn't currently support all the cost management fe
 > [!IMPORTANT]
 > To use Global Inventory Accounting, you must have a Lifecycle Services–enabled high-availability environment (not a OneBox environment). Additionally, you must be running Supply Chain Management version 10.0.19 or later.
 
-To install Global Inventory Accounting, [install the add-in](#install). The Global Inventory Accounting service endpoints will be set up automatically, so you don't need to find them manually. If you experience any issues while setting up the add-in, please contact the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com).
+To install Global Inventory Accounting, [install the add-in](#install). The Global Inventory Accounting service endpoints will be set up automatically, so you don't need to find them manually. If you have any issues enabling Global Inventory Accounting, log the issuee through Microsoft Customer Service and Support channels including your environment ID, tenant ID, and error details in the request.
 
 ## Licensing
 
