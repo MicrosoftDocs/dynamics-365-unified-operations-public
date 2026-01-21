@@ -41,7 +41,7 @@ The following table lists the features that are included in this release. We mig
 | Production control | [Register time spent working on projects for production](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/register-time-spent-working-projects-production) | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
 | Transportation management | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | [Quality orders](../inventory/quality-orders.md) | Feature management:<br>*Enable Quality Control for Goods In-Transit Order.* |
 | Warehouse management | Outbound shipment processing policies | [Outbound shipment processing policies](../warehousing/outbound-load-handling.md#outbound-shipment-policies) | Enabled by default |
-| Warehouse management | Unannounced returns in Warehouse management only mode <!--KFM: Won't be on release plan --> | [Configure unannounced returns in Warehouse management only mode](../warehousing/wms-only-mode-unannounced-returns-setup.md) | Feature management:<br>*Warehouse management only mode* |
+| Warehouse management | Unannounced returns in Warehouse management only mode | [Configure unannounced returns in Warehouse management only mode](../warehousing/wms-only-mode-unannounced-returns-setup.md) | Feature management:<br>*Warehouse management only mode* |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 

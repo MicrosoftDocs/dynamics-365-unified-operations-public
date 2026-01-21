@@ -71,7 +71,7 @@ The following table lists the features that were introduced as public preview fe
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.46 includes platform updates. Learn more in [Platform updates for version 10.0.46 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-46.md). <!-- KFM: Check link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.46 includes platform updates. Learn more in [Platform updates for version 10.0.46 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-46.md).
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.46, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1070810).
 
