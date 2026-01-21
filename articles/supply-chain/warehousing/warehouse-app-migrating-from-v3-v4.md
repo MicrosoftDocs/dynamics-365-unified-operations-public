@@ -22,6 +22,12 @@ For V4, we rewrote the code of the Warehouse Management mobile app by using more
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
 - **Future-ready architecture** – Streamlined development of new features and integrations.
 
+> [!IMPORTANT]
+> WMA V4 is currently available globally on the **Google Play Store**.
+
+> [!IMPORTANT]
+> WMA V4 will be available globally on the **Microsoft Store** and the **Apple App Store** in **February 2026**. To avoid unexpected disruptions, please review **Migration information** section.
+ 
 ## New features in V4
 
 The following subsections summarize the key new features and improvements that are introduced in V4 of the Warehouse Management mobile app.
@@ -76,7 +82,7 @@ V4 supports comprehensive diagnostic capabilities for improved troubleshooting a
 
 ### System requirements
 
-The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except on Android devices. V4 requires Android 7 or later, whereas V3 supports Android 5 and later. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date.
+The system requirements for V4 are the same as the [system requirements for V3](install-configure-warehouse-management-app.md), except on Android devices. V4 requires Android 7 or later, whereas V3 supports Android 5 and later. Devices that run older Android versions can continue to use V3 until the May 2026 end-of-support date. However, no new releases or feature updates will be provided for V3, and all newly reported issues will be resolved only in V4.
 
 If you're running a newer version of Android, then we recommend using V4 because it provides better compatibility than V3 on newer systems.
 
@@ -119,13 +125,15 @@ During the transition period, V3 and V4 can operate simultaneously in the same w
 
 - **Distribution channels**
     - **Windows** – [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
-    - **Android** – Google Play (or based on your location, Google Beta Testers) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
-    - **iOS** – Currently available through [Apple Test Flight](https://testflight.apple.com/). The app is expected to be available on the Apple App Store in January 2026.
+    - **Android** – Google Play (globally) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
+    - **iOS** – Currently available through [Apple Test Flight](https://testflight.apple.com/).
+ 
+    > [!IMPORTANT]
+    >  From January 2026, WMA V4 will be **globally available** in all regions and countries. Starting from **February 2026**, WMA V4 will be available for all regions/countries on the **Microsoft Store** and the **Apple App Store**. 
 
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts, but we recommend moving to V4 when it becomes generally available.
 
 ### V3 support timeline
 
-- **End of support** – May 2026 (estimated).
+- **End of support** – May 2026 (estimated). (**Version 3.0.9** is the final V3 release. Any reported issues will be addressed in V4.)
 - **Feature development** – No new features will be developed for V3.
-- **Maintenance** – Critical bug fixes and security updates continue until the end of support.
