@@ -47,7 +47,7 @@ To create and configure an Excel workbook so that you can edit retail transactio
     | Declare starting amount, Tender removal, Float entry, Change tender, Invoice payment, Customer deposit | Transaction (auditable), Payment transactions (auditable) |
 
     > [!NOTE]
-        > Add only one data entity to each Excel workbook. Also, you must add all fields marked with a key symbol to the relevant workbook.
+    > Add only one data entity to each Excel workbook. Also, you must add all fields marked with a key symbol to the relevant workbook.
 
 1. After you configure the workbook, apply the required filters. Be sure to apply the same filters to all the worksheets in the file. Avoid loading large amounts of data into the Excel file. Otherwise, performance might be affected, and Excel and your system might slow down. Always use **Company** and either **Statement Number** or **Transaction Number** as filters for your file.
 1. After you configure the filters, select **Refresh** to load the data.
