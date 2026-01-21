@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 | --- | --- | --- | --- |
 | Sales and marketing | [Manage pricing rules using a generic base currency](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/manage-pricing-rules-using-generic-base-currency) | *Coming soon* | Enabled by default |
 | Sales and marketing | [Optimize pricing data import and export workflows](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/optimize-pricing-data-import-export-workflows) | *Coming soon* | Enabled by default |
-| Sales and marketing | [Simulate prices based on sales order line attributes](dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/simulate-prices-based-sales-order-line-attributes) | *Coming soon* | Enabled by default |
+| Sales and marketing | [Simulate prices based on sales order line attributes](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/simulate-prices-based-sales-order-line-attributes) | *Coming soon* | Enabled by default |
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
 
