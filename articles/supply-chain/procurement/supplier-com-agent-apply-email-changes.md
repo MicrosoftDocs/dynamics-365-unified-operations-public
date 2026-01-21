@@ -85,8 +85,8 @@ If a vendor uses acronyms or other language that isn't saved in the system, the 
 
 There are two types of teaching available:
 
-    - Column mapping teaching
-    - Value teaching.
+1. Column mapping teaching
+1. Value teaching.
 
 ### Teach the agent about column mappings
 
@@ -102,11 +102,7 @@ This type of learning is triggered any of the following cases:
     - *Ship by*
     - *Approx delivery date*, etc.
 
-If the agent detects ambiguity in the possible match for a field, it will show that "Some columns are mapped with low confidence.". In this case, you can use the button **Review**, to manually choose which of the fields from the vendor's email you want the agent to use. This opens a side panel, where the potential mappings of the field are listed. Once you choose the correct option, you can then decide when to apply this teaching:
-
-    - Always do this for the current vendor
-    - Always do this for all vendors
-    - One-time change.
+If the agent detects ambiguity in the possible match for a field, it will show that "Some columns are mapped with low confidence.". In this case, you can use the button **Review**, to manually choose which of the fields from the vendor's email you want the agent to use. This opens a side panel, where the potential mappings of the field are listed. Once you choose the correct option, you can then decide when to apply this teaching for all vendors, for the current vendor, or only one time.
 
 To map more fields, choose **Show more**. This will expand the list of fields that are available for mapping. Agent teaching on field mapping is currently available for the fields: **Confirmed receipt date**, **Unit**, **Quantity** and **Unit price**.
 
