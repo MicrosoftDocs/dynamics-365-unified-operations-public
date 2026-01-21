@@ -22,6 +22,8 @@ For V4, we rewrote the code of the Warehouse Management mobile app by using more
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
 - **Future-ready architecture** – Streamlined development of new features and integrations.
 
+WMA v4 has been rolling out globally for several months by progressively increasing coverage of countries and regions. Each expansion wave was carefully tested to ensure stability and readiness. We are now approaching the end of this rollout phase, and WMA v4 will soon be fully available on all supported platforms worldwide.
+
 > [!IMPORTANT]
 > WMA V4 is currently available globally on the **Google Play Store**.
 
