@@ -89,7 +89,7 @@ In the Dynamics 365 finance and operations apps client, ensure the **Dynamics 36
    | **Remote MCP Server endpoint** | The URL of the remote MCP server for your Dynamics 365 finance and operations apps environment. This is formatted as `https://<your-environment-base-url>/mcp`. For example, `https://contoso.operations.dynamics.com/mcp`. |
    | **Authentication** | OAuth Identity Passthrough |
    | **Client ID** | Your Application (client) ID from your app registration configured in the previous steps |
-   | **Client secret** | The client secret configured for your app registration |
+   | **Client secret** | The **Value** of the client secret configured for your app registration |
    | **Token URL** | `https://login.microsoftonline.com/<your-tenant-ID>/oauth2/v2.0/token` |
    | **Auth URL** | `https://login.microsoftonline.com/<your-tenant-ID>/oauth2/v2.0/authorize` |
    | **Refresh URL** | `https://login.microsoftonline.com/<your-tenant-ID>/oauth2/v2.0/token` |
