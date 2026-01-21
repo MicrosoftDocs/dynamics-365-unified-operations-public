@@ -25,17 +25,22 @@ The following scenarios describe how this model is applied in real-world B2B com
 
 
 ## Scenario 1: Manufacturer-to-distributor-to-outlet commerce model
+
 **Business context**
+
 In this scenario, a manufacturer sells products through one or more distributors. Distributors, in turn, sell to multiple business partners or outlets. Each participant plays a distinct role in the commerce process:
 -	The **manufacturer** manages product availability and commercial agreements.
 -	**Distributors** act as intermediaries and manage downstream pricing and relationships.
 -	**Outlets** represent individual store locations or business units that place orders.
 -	**Users** such as buyers, channel managers, and customer service representatives interact with the system to place or manage orders.
+  
 **How Dynamics 365 Commerce supports the scenario**
+
 -	Each distributor and outlet is represented as a **separate purchasing entity** with its own pricing, delivery addresses, and financial terms.
 -	Multiple users can place orders **on behalf of the same outlet**, without requiring individual purchasing configurations.
 -	Orders are processed using the **outlet's purchasing context**, while retaining a reference to the user who submitted the order.
 -	Customer service users can place orders **on behalf of outlets** using an order-on-behalf-of model, while preserving auditability.
+
 **Business outcomes**
 -	Centralized control of purchasing terms at the organization or outlet level
 -	Flexible assignment of ordering responsibilities across users
@@ -51,18 +56,25 @@ Organizations often operate multiple locations or business units that share a co
 -	Different delivery addresses
 -	Separate invoicing or financial reporting requirements
 At the same time, buyers may be responsible for ordering for one or more locations.
+
 **How Dynamics 365 Commerce supports the scenario**
+
 -	Each location is represented as a **distinct organization or outlet** with its own purchasing configuration.
 -	Buyers are represented as **contacts** and can be associated with one or more outlets.
 -	A single user can switch between outlets and place orders in the correct purchasing context for each location.
 -	Adding or removing buyers does not require changes to outlet-level configuration.
+
 **Business outcomes**
+
 -	Support for regional or location-based pricing models
 -	Simplified buyer onboarding and maintenance
 -	Accurate invoicing and fulfillment by location
 -	Scalable model for growing organizations
+
 **Key concepts illustrated by these scenarios**
+
 These scenarios demonstrate the following core capabilities in Dynamics 365 Commerce:
+
 -	**Organization-based purchasing**
 Purchasing rules are defined at the organization or outlet level and reused across users.
 -	**Contact-based user access**
@@ -75,7 +87,6 @@ Orders retain visibility into both the organization and the individual user who 
 > [!NOTE]
 >Some additional considerations before enabling this feature are below: 
 >-	**Existing Contact Data** - If your accounts already use contacts, each contact must have a valid, unique email address to be used as an online user in the Commerce storefront. In addition, contact associations are maintained consistently between the organization and its linked customer hierarchy. As a result, removing a contact from the customer hierarchy also removes that contact from the organization.
-
 >-	**Specific user level account settings (addresses, pricing)** - This model assumes that individual users use the same customer account settings as the linked organization.
 
 
