@@ -2,7 +2,7 @@
 title: Customer orders in point of sale (POS)
 description: Learn how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 01/21/2026
+ms.date: 01/22/2026
 ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
 ms.reviewer: v-griffinc
@@ -102,7 +102,7 @@ To create a customer order for products that are shipped to the customer, follow
 1. Confirm or change the "ship from" location, confirm or change the shipping address, and select a shipping method.
 1. Enter the customer's desired order shipment date.
 1. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-1. If the full order total wasn't paid, enter a credit card that is charged for the balance that's due on the order when invoiced.
+1. If the full order total wasn't paid, enter a credit card that's charged for the balance that's due on the order when invoiced.
 
 ### Create a customer order for products that the customer picks up
 

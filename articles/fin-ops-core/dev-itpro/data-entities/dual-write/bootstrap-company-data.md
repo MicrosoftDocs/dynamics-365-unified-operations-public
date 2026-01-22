@@ -2,9 +2,9 @@
 title: Initialize company data
 description: Learn how to initialize data with company information before you enable a dual-write connection, including prerequisites and a high-level scenario.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/01/2020
+ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -26,24 +26,24 @@ This article includes sample scenarios that explain how to use [Azure Data Facto
 
 Consider the **Customers** table in a finance and operations app, and the **Account** table in Dataverse.
 
-- Use initial write to copy reference and dependent tables, such as **Company**, **Customer groups**, and **Terms of payment**, from the finance and operations app to Dataverse.
-- Use the Data management framework to export data from the finance and operations app in comma-separated values (CSV) format. For example, set up an export project in Data management to export customers from each company by using the **DataAreaId** field in the finance and operations app. This process is a one-time manual process.
-- Use Azure Blob Storage to store the CSV files for lookup and transformation. Upload the CSV file for your finance and operations customers into Azure Blob Storage.
-- Use Azure Data Factory to initialize data in Dataverse.
+1. Use initial write to copy reference and dependent tables, such as **Company**, **Customer groups**, and **Terms of payment**, from the finance and operations app to Dataverse.
+1. Use the Data management framework to export data from the finance and operations app in comma-separated values (CSV) format. For example, set up an export project in Data management to export customers from each company by using the **DataAreaId** field in the finance and operations app. This process is a one-time manual process.
+1. Use Azure Blob Storage to store the CSV files for lookup and transformation. Upload the CSV file for your finance and operations customers into Azure Blob Storage.
+1. Use Azure Data Factory to initialize data in Dataverse.
 
 The following illustration shows the workflow.
 
-:::image type="content" source="media/boot-process-flow.png" alt-text="High-level flow.":::
+:::image type="content" source="media/boot-process-flow.png" alt-text="Screenshot of the high-level workflow diagram showing data flow from finance and operations app through Azure Blob Storage to Dataverse.":::
 
 This scenario is based on the following assumptions:
 
 - The source data is in the finance and operations app.
-- If an account exists in Dataverse, but it doesn't exist in the finance and operations app, it won't be initialized as part of this flow. Use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data stored in Dataverse.
+- If an account exists in Dataverse, but it doesn't exist in the finance and operations app, the flow doesn't initialize it. Use DIXF or [initial sync](initial-sync-guidance.md) functionality based on the amount of data stored in Dataverse.
 - All account records in the customer engagement apps have a natural key (account number) that matches the finance and operations natural key (**CustomerAccount**). 
 - Rows have a one-to-one (1:1) mapping across the apps.
 
 > [!NOTE]
-> In both finance and operations apps and Dataverse, When a customer record is created, Party record gets created implicitly. 
+> In both finance and operations apps and Dataverse, when you create a customer record, you implicitly create a party record.
 
 ## Prerequisites
 
@@ -58,15 +58,15 @@ This scenario is based on the following assumptions:
 
 ### Set up an Azure storage account
 
-If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one. In your storage account, create one container that is named **ce-data**. This container will store all data files. You can change the container in your datasets and pipelines as you require. Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration. This value is required when you import the Azure Data Factory template.
+If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one. In your storage account, create one container that is named **ce-data**. This container stores all data files. You can change the container in your datasets and pipelines as you require. Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration. You need this value when you import the Azure Data Factory template.
 
-:::image type="content" source="media/boot-storage-account.png" alt-text="Setting up access keys.":::
+:::image type="content" source="media/boot-storage-account.png" alt-text="Screenshot of the Azure storage account Access keys page showing the connection string field.":::
 
 ### Deploy an Azure Data Factory template
 
-1. Make a note of the name of the Azure data factory that you created.
-2. Make a note of the connection string for the Azure storage account.
-3. Make a note of the service URI of the Dataverse instance, and the admin user name and password.
+1. Note the name of the Azure data factory that you create.
+1. Note the connection string for the Azure storage account.
+1. Note the service URI of the Dataverse instance, and the admin user name and password.
 
     The following table shows the parameters that are required.
 
@@ -78,27 +78,27 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
     | Bootstrap Dynamics 365 Linked Service\_properties\_type Properties\_username | The Dynamics 365 admin user's user ID | `<adminservice@contoso.onmicrosoft.com>` |
     | Bootstrap Dynamics 365 Linked Service\_password | The Dynamics 365 admin user's password | _\*\*\*\*\*\*\*\*_ | 
 
-4. Download the [Azure Resource Manager (ARM) template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) to your local directory.
-5. In the Azure portal, go to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template).
-6. Select **Build your own template in the editor**.
-7. Select **Load file**, and find and select the ARM template file that you downloaded earlier. Then select **Save**.
-8. Provide the required parameters, select **Review**, and then select **Create**.
+1. Download the [Azure Resource Manager (ARM) template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) to your local directory.
+1. In the Azure portal, go to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template).
+1. Select **Build your own template in the editor**.
+1. Select **Load file**, and find and select the ARM template file that you downloaded earlier. Then select **Save**.
+1. Enter the required parameters, select **Review**, and then select **Create**.
 
-    :::image type="content" source="media/boot-custom-deployment.png" alt-text="Customizing a template.":::
+    :::image type="content" source="media/boot-custom-deployment.png" alt-text="Screenshot of the Azure portal custom deployment template editor with parameter fields.":::
 
-9. After deployment, you will see **Pipelines**, **Datasets**, and **Data flows** sections in the list pane.
+1. After deployment, you see **Pipelines**, **Datasets**, and **Data flows** sections in the list pane.
 
-    :::image type="content" source="media/boot-pipeline.png" alt-text="Pipelines, Datasets, and Data flows":::
+    :::image type="content" source="media/boot-pipeline.png" alt-text="Screenshot of Azure Data Factory showing Pipelines, Datasets, and Data flows sections in the navigation pane.":::
 
 ## Run the process
 
-1. In the finance and operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
+1. In the finance and operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data is exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
 
-    :::image type="content" source="media/boot-customer-file.png" alt-text="finance and operations customer file.":::
+    :::image type="content" source="media/boot-customer-file.png" alt-text="Screenshot of the finance and operations customer export CSV file showing data columns and sample records.":::
 
-2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
+1. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 
-3. Run **BootstrapAccountsPipeline** from Azure Data Factory.
+1. Run **BootstrapAccountsPipeline** from Azure Data Factory.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
