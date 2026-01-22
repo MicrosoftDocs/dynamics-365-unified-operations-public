@@ -69,7 +69,7 @@ To review and accept changes that the agent suggests based on the emails that it
 > Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
 
 1. Open the **Purchase order receipt and follow-up** workspace.
-1. A **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.
+1. The **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.
 
     The left side of the **(Preview) Emails from vendors** page lists all the emails that the agent reads. The right side shows summaries that Copilot generates.
 
@@ -81,37 +81,39 @@ To review and accept changes that the agent suggests based on the emails that it
 
 ## Teach the agent how to better interpret incoming email content
 
-If a vendor uses acronyms or other language that the system doesn't recognize, the Supplier Communications Agent might not have enough data to interpret it. However, you can teach the agent to better process incoming email content. By adding teaching to the agent, you help improve its accuracy.
+If a vendor uses acronyms or other language that the system doesn't recognize, the Supplier Communications Agent might not have enough data to interpret it. However, you can teach the agent to better process incoming email content. By teaching the agent, you help improve its accuracy.
 
 Two types of teaching are available:
 
-1. Column mapping teaching (it refers to the names of the fields)
-1. Value teaching (it refers to the values of the fields)
+1. Column mapping teaching (improves recognition of field names)
+1. Value teaching (improves recognition of field values)
 
 ### Teach the agent about column mappings
 
-Agent teaching occurs when any of the following situations occur:
+Agent teaching applies when any of the following situations occur:
 
 - The incoming email from the vendor contains a term or acronym that the agent can't interpret.
-- The email contains multiple possible matches for a given field in Finance & Operations. For example, the field **Confirmed delivery date** appears in incoming vendor emails with high variety when it comes to naming. Examples include:
-    - *Estimated delivery date*
-    - *Confirmed delivery date*
-    - *Transportation load date*
-    - *Ship date*
-    - *Ship by*
-    - *Approx. delivery date*, and more.
+- The email contains multiple possible matches for a single field in Supply Chain Management. For example, various vendors might use many different names to refer to the field named **Confirmed delivery date** in Supply Chain Management. Examples include:
+    - **Estimated delivery date**
+    - **Confirmed delivery date**
+    - **Transportation load date**
+    - **Ship date**
+    - **Ship by**
+    - **Approx. delivery date**
+    - And more.
 
-If the agent detects ambiguity in the possible match for a field, it shows that "Some columns are mapped with low confidence." In this case, you can use the **Review** button to manually choose which of the fields from the vendor's email you want the agent to use. This action opens a side panel, where the potential mappings of the field are listed. After you choose the correct option, you can decide when to apply this teaching for all vendors, for the current vendor, or only one time.
+If the agent detects ambiguity when trying to identify a field, it shows that "Some columns are mapped with low confidence." In this case, select **Review** to manually choose which of the fields from the vendor's email you want the agent to use. This action opens a dialog that lists possible mappings for the field. After you choose the correct mapping, choose how broadly to apply it: to all vendors from now on, to the current vendor from now on, or just for this one time.
 
-To map more fields, select **Show more**. This action expands the list of fields that are available for mapping. Agent teaching on field mapping is currently available for the fields: **Confirmed receipt date**, **Unit**, **Quantity**, and **Unit price**.
+To map more fields, select **Show more**. This action expands the list of fields that are available for mapping. Agent teaching for field mappings is currently supported for the  **Confirmed receipt date**, **Unit**, **Quantity**, and **Unit price** fields.
 
 ### Teach the agent about value mappings
 
-For values of fields like **Unit**, a vendor might use synonyms or industry equivalences that aren't saved in your system. You can train the agent to recognize these equivalences. For example, as a value for **Unit**, you use *cartons*, but one of your vendors always uses the name *cassettes* for the same unit. When the agent detects the different value as a change, you can clarify the equivalence. When you edit the field, the teaching pane appears. You can then save the equivalence for all vendors, for the current vendor, or not at all.
+For some fields, a vendor might use values that are synonyms or industry equivalences that aren't saved in your system. You can train the agent to recognize these equivalences. For example, as a value for the **Unit** field, you might use *cartons* while one of your vendors always uses the name *cassettes* for the same unit. When the agent detects the different value as a change, you can clarify the equivalence. When you edit the field, the teaching pane appears. You can then save the equivalence for all vendors, for the current vendor, or not at all.
 
 ### Locate existing teaching items
 
-If any teaching is previously saved for all vendors or a specific vendor, you can always find it later, review it, or delete it:
+If any teaching is previously saved for all vendors or a specific vendor, you can always find it later, review it, or delete it by following these steps:
 
 1. Go to **Procurement and sourcing** \> **(Preview) Supplier Communications Agent** \> **(Preview) Emails from vendors**.
-1. On the top menu, select **Taught items** to view everything that the agent was taught.
+1. On the Action Pane, select **Taught items** to view everything that the agent was taught.
+1. If you see any lessons that you want to delete, select them, and then select **Delete** on the Action Pane.
