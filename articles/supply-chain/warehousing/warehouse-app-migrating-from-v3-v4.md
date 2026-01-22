@@ -16,7 +16,7 @@ ms.search.form:
 
 Version 4 (V4) of the Warehouse Management mobile app brings significant improvements and new features that enhance the user experience and the app's performance.
 
-For V4, Microsoft rewrote the code for the Warehouse Management mobile app by using modern technology. This new version offers the following benefits:
+For V4, Microsoft rewrote the code for the Warehouse Management mobile app to take advantage of the newest software technology. V4 offers the following benefits:
 
 - **Enhanced performance** – Improved application responsiveness and stability.
 - **Better customer support capabilities** – Faster issue resolution and customer assistance.
@@ -61,19 +61,16 @@ V4 offers expanded audio customization for improved user interaction.
 V4 supports comprehensive diagnostic capabilities for improved troubleshooting and maintenance. Here are some examples:
 
 - **Wi-Fi diagnostics**
-
     - **Self-diagnostic capabilities** – Each device can independently assess its network connectivity.
     - **Service ping tests** – Verification of connectivity to critical services is automated.
     - **Proactive monitoring** – Detect network-related issues early.
 
 - **Local logging system**
-
     - **Human-readable logs** – The log format is improved for easier troubleshooting.
     - **Filtering capabilities** – Advanced log filtering allows for targeted analysis.
     - **Export functionality** – Easily export the log for support and analysis purposes.
 
 - **Accessible scan testing**
-
     - **Simplified access** – Scan test functionality doesn't require developer menu navigation.
     - **User-friendly interface** – The testing process is streamlined for users.
 
@@ -87,7 +84,7 @@ If you're running a newer version of Android, you should use V4 because it provi
 
 ### Compatibility between V3 and V4
 
-When you migrate from V3 to V4, the following compatibility features are available:
+V4 is designed to support a smooth transition from V3. The following considerations summarize what stays compatible during the migration and what you should plan for when upgrading.
 
 - **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
 - **Connection settings can be preserved** – When you upgrade the Warehouse Management mobile app from version 3.0.8 or higher to V4, your existing connection settings are automatically migrated to V4. The settings aren't migrated from older versions of V3, so if you're running version 3.0.7 or older, upgrade to version 3.0.8 or later before upgrading to V4. To preserve connection settings, don't uninstall V3. Instead, just download the V4 installer to the device and select the **Upgrade** option when running it. If you uninstall V3 and then install V4, your connection settings are lost. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
@@ -95,9 +92,10 @@ When you migrate from V3 to V4, the following compatibility features are availab
 
 ### Authentication
 
+When you update to V4, the following authentication changes apply:
+
 - **One-time reauthentication** – App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it remains authenticated. You won't need to reauthenticate the device again when updating to future versions of V4.
 - **Windows platform configuration** – For Windows applications, follow these steps to add a new redirect URI to your Azure application registration:
-
     1. Open the [Azure portal](https://portal.azure.com).
     1. Go to **App Registrations**.
     1. Select your Microsoft Entra ID registration.
@@ -128,6 +126,8 @@ The general availability release of V4 is available for the following platforms 
 - **Apple iOS** – Available globally starting in February 2026 from the Apple App Store. As of January 2026, it's available through [Apple Test Flight](https://testflight.apple.com/).
 
 ### V3 support timeline
+
+Use the following timeline to plan your transition off V3 and ensure devices are migrated to V4 before support ends.
 
 - **End of support** – May 2026 (estimated).
 - **Final version** – Version 3.0.9 is the final V3 release. Any reported issues will be addressed in V4.
