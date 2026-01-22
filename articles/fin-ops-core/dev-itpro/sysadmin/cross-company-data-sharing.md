@@ -33,24 +33,22 @@ Here are some examples of cross-company data sharing and the basic logic:
 
 Cross-company data sharing has the following limitations:
 
-- You can't use it to share transactional data between companies.
-- You can only share reference and group data, or tables that you specifically enable. For example, set **Data Sharing Type** to **Duplicate**.
-- It supports replication of fewer than 1 million total records per job. This total is calculated as the number of shared records multiplied by the number of shared companies. The limit is increased to 2 million records starting with Platform update for version 10.0.10.
-- It supports replication for up to 100 companies per policy. The limit is increased to 300 companies starting with Platform update for version 10.0.10.
-- Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
-- You can't share fields that reference financial dimensions across companies. For example, **Ledger** or **Default** dimension.
-
-      Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
-
-- You can't use it with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
+* You can't use it to share transactional data between companies.
+* You can only share reference and group data, or tables that you specifically enable. For example, set **Data Sharing Type** to **Duplicate**.
+* It supports replication of fewer than 1 million total records per job. This total is calculated as the number of shared records multiplied by the number of shared companies. The limit is increased to 2 million records starting with Platform update for version 10.0.10.
+* It supports replication for up to 100 companies per policy. The limit is increased to 300 companies starting with Platform update for version 10.0.10.
+* Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
+* You can't share fields that reference financial dimensions across companies. For example, **Ledger** or **Default** dimension.
+  Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
+* You can't use it with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
 ### Policies
 
 Defined policies that you save in data packages manage data sharing. You can find templates that Microsoft has tested and supports as downloadable data packages on Microsoft Dynamics 365 Lifecycle Services. By using policies, you can control the following aspects of data sharing:
 
-- The fields that are replicated
-- The entities that participate in the replication
-- The companies that participate in the sharing
+* The fields that are replicated
+* The entities that participate in the replication
+* The companies that participate in the sharing
 
 The same company and table can only be in one policy. You can share the same table in more than one policy. This sharing occurs when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different countries or regions.
 
@@ -70,25 +68,25 @@ Validation rules run when you enable a sharing policy. If the validation rules d
 
 Several entities in the Microsoft data packages have references that you must consider when you enable the entities. You can't enable some data sharing policies if references don't match. You can enable other policies, but you should use the Find inconsistency checker tool to verify that your data is consistent. Here are some examples:
 
-- The Production group sharing policy has a reference to a company's chart of accounts. Therefore, all companies that you add to this sharing policy must use the same chart of accounts.
-- If you want to enable entities that use number sequences, the number sequence types must be the same across all companies in a sharing policy for those entities.
-- Setup options must be the same across the companies that are involved in the sharing policy. Examples of setup options include the setting that specifies whether tax is included by default.
+* The Production group sharing policy has a reference to a company's chart of accounts. Therefore, all companies that you add to this sharing policy must use the same chart of accounts.
+* If you want to enable entities that use number sequences, the number sequence types must be the same across all companies in a sharing policy for those entities.
+* Setup options must be the same across the companies that are involved in the sharing policy. Examples of setup options include the setting that specifies whether tax is included by default.
 
 ## When should I use cross-company data sharing?
 
 Use cross-company data sharing for the following business scenarios:
 
-- Sharing simple reference and group data in a single deployment.
-- Sharing among companies that have similar configurations.
-- Sharing scenarios that Microsoft explicitly tested.
+* Sharing simple reference and group data in a single deployment.
+* Sharing among companies that have similar configurations.
+* Sharing scenarios that Microsoft explicitly tested.
 
 Cross-company data sharing isn't supported for the following scenarios:
 
-- Franchising solutions, where thousands of records are shared across thousands of companies.
-- Sharing transactional records for reporting or management purposes, such as consolidations.
-- Sharing across deployments.
-- Complex scenarios, such as replication of subtype or supertype tables or tables that have date effectivity rules.
-- Tables that don't have a unique index.
+* Franchising solutions, where thousands of records are shared across thousands of companies.
+* Sharing transactional records for reporting or management purposes, such as consolidations.
+* Sharing across deployments.
+* Complex scenarios, such as replication of subtype or supertype tables or tables that have date effectivity rules.
+* Tables that don't have a unique index.
 
 ## Customer and vendor master data sharing
 

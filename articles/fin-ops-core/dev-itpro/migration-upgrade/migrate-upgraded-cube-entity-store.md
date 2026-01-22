@@ -166,7 +166,7 @@ The asset library enables adding **PowerBI report models** (PBIX files) as imple
 
 ### Migrate the aggregate measurement to a production environment
 
-1. Migrate the aggregate measurement that you modified in the developer environment to the production environment. Follow the instructions in [Generate a deployable package](create-apply-deployable-package.md).
+1. Migrate the aggregate measurement that you modified in the developer environment to the production environment. Follow the instructions in [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 1. After you successfully publish the model, perform the steps outlined in the **Refresh the entity store** section of this tutorial, so that the entity store is updated with data.
 
 ### Configure a Lifecycle Services project
