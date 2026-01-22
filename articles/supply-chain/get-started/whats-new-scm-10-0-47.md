@@ -87,7 +87,7 @@ The following table lists the features that became mandatory in version 10.0.47.
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.47 includes platform updates. Learn more in [Platform updates for version 10.0.47 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-47.md). <!-- KFM: Check link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.47 includes platform updates. Learn more in [Platform updates for version 10.0.47 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-47.md). <!-- KFM: Check this link -->
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.47, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xx). <!-- KFM: Get new link -->
 
