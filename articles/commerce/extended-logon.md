@@ -10,6 +10,8 @@ ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.form: RetailFunctionalityProfile
+ms.custom: 
+  - bap-template
 ---
 
 # Set up extended sign-in functionality for Store Commerce
