@@ -20,14 +20,14 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps speed-up communications with vendors about purchase orders, by enabling Copilot to read emails from some or all vendors.
+The Supplier Communications Agent helps speed up communications with vendors about purchase orders by enabling Copilot to read emails from some or all vendors.
 
 When Copilot analyzes a vendor email, it determines what the message is about. For example, the agent recognizes whether it's a purchase order confirmation or a purchase order change request. It also identifies which purchase order it applies to. Copilot then matches the information that it extracts from the email to fields in the system and indicates whether there are any changes. Therefore, you just need to review the information that Copilot provides, review the proposed changes, and decide whether to accept those changes. Copilot saves you time, because you don't have to manually find, open, and edit the purchase order in the system.
 
 Copilot classifies each vendor email that it reads into one of the following categories, based on the intent that it detects in the message:
 
 - *Purchase order confirmation* – Copilot detected that the intent of the message is to confirm one or more purchase orders (all the purchase orders that the email mentions).
-- *Purchase order change request* – Copilot detected that the message contains at least one requested change to a purchase order. For example, the vendor wrote to tell you that they can't deliver the full quantity that was requested for one or more lines. Or they wrote to tell you that they can't deliver on time, or to reject the entire order.
+- *Purchase order change request* – Copilot detected that the message contains at least one requested change to a purchase order. For example, the vendor wrote to tell you that they can't deliver the full quantity that was requested for one or more lines, to tell you that they can't deliver on time, or to reject the entire order.
 - *Rejected* – Copilot detected that the vendor can't supply the requested purchase order.
 - *Other* – Copilot couldn't identify any of the previous intents.
 
@@ -66,7 +66,7 @@ The agent detects changes in the following fields:
 To review and accept changes that the agent suggests based on the emails that it reads, follow these steps:
 
 > [!IMPORTANT]
-> Before you begin, confirm that the signed-in user has access to the mailboxes. For more information, see [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
+> Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).
 
 1. Open the **Purchase order receipt and follow-up** workspace.
 1. A **(Preview) Emails from vendors** tile indicates the number of emails that require review. Select the tile.
@@ -90,11 +90,10 @@ Two types of teaching are available:
 
 ### Teach the agent about column mappings
 
-This type of learning happens when any of the following cases occur:
+Agent teaching occurs when any of the following situations occur:
 
-1. The incoming email from the vendor contains a term or acronym that the agent can't interpret.
-1. The email contains multiple possible matches for a given field in Finance & Operations. For example, the field **Confirmed delivery date** appears in incoming vendor emails with high variety when it comes to naming. Examples include:
-
+- The incoming email from the vendor contains a term or acronym that the agent can't interpret.
+- The email contains multiple possible matches for a given field in Finance & Operations. For example, the field **Confirmed delivery date** appears in incoming vendor emails with high variety when it comes to naming. Examples include:
     - *Estimated delivery date*
     - *Confirmed delivery date*
     - *Transportation load date*
