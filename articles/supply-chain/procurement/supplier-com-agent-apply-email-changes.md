@@ -20,7 +20,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps speed-up communications with vendors about purchase orders by enabling Copilot to read emails from some or all vendors.
+The Supplier Communications Agent helps speed-up communications with vendors about purchase orders, by enabling Copilot to read emails from some or all vendors.
 
 When Copilot analyzes a vendor email, it determines what the message is about. For example, the agent recognizes whether it's a purchase order confirmation or a purchase order change request. It also identifies which purchase order it applies to. Copilot then matches the information that it extracts from the email to fields in the system and indicates whether there are any changes. Therefore, you just need to review the information that Copilot provides, review the proposed changes, and decide whether to accept those changes. Copilot saves you time, because you don't have to manually find, open, and edit the purchase order in the system.
 
@@ -79,14 +79,14 @@ To review and accept changes that the agent suggests based on the emails that it
     - To apply all suggestions to a single selected purchase header and all its lines, select **Apply suggestions** in the **Purchase order header** section.
     - To apply suggestions to specific purchase order lines, select the relevant lines, and then select **Apply suggestions** in the **Purchaser order lines** section.
 
-## Teach the agent to better interpret incoming email content
+## Teach the agent how to better interpret incoming email content
 
-If a vendor uses acronyms or other language that isn't saved in the system, the Supplier Communications Agent can't interpret it. However, you can teach the agent to better interpret incoming email content. By adding teaching to the agent, you help improve its accuracy.
+If a vendor uses acronyms or other language that the system doesn't recognize, the Supplier Communications Agent might not have enough data to interpret it. However, you can teach the agent to better process incoming email content. By adding teaching to the agent, you help improve its accuracy.
 
 Two types of teaching are available:
 
-1. Column mapping teaching
-1. Value teaching
+1. Column mapping teaching (it refers to the names of the fields)
+1. Value teaching (it refers to the values of the fields)
 
 ### Teach the agent about column mappings
 
@@ -100,7 +100,7 @@ This type of learning happens when any of the following cases occur:
     - *Transportation load date*
     - *Ship date*
     - *Ship by*
-    - *Approx. delivery date*, etc.
+    - *Approx. delivery date*, and more.
 
 If the agent detects ambiguity in the possible match for a field, it shows that "Some columns are mapped with low confidence." In this case, you can use the **Review** button to manually choose which of the fields from the vendor's email you want the agent to use. This action opens a side panel, where the potential mappings of the field are listed. After you choose the correct option, you can decide when to apply this teaching for all vendors, for the current vendor, or only one time.
 
