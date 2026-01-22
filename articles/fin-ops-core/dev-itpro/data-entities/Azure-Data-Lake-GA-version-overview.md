@@ -2,9 +2,9 @@
 title: Export to Azure Data Lake overview
 description: Learn how you can connect your finance and operations environment to a data lake to unlock insights that are hidden in your data.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 10/16/2023
+ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
