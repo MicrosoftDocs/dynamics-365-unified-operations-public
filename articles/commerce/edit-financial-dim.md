@@ -1,16 +1,13 @@
 ---
 title: Edit financial dimensions for retail transactions
-description: This article describes how to edit financial dimensions for retail transactions in Microsoft Dynamics 365 Commerce.
+description: Learn how to edit financial dimensions for retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.industry: Retail
 ---
