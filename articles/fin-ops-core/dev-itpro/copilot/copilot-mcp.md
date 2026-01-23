@@ -32,7 +32,7 @@ The **Dynamics 365 ERP MCP** server provides a dynamic framework for agents to p
 Before you can use the Dynamics 365 ERP MCP server, you must meet the following prerequisites:
 
 - The product version of finance and operations apps must be at least:
-  - 10.0.45 PQU-5
+  - 10.0.45 PQU-6
   - 10.0.46 PQU-1
   - 10.0.47
 - The **Dynamics 365 ERP Model Context Protocol server** feature must be enabled in [Feature Management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
