@@ -2,33 +2,26 @@
 # required metadata
 
 title: Return items across multiple customer orders and invoices
-description: This article describes the functionality enabling returns across multiple customer orders and invoices in Dynamics 365  Commerce.
+description: Learn about functionality that enables returns across multiple customer orders and invoices in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/27/2020
-ms.topic: how-to
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.date: 01/23/2026
+ms.topic: how-to 
+ms.reviewer: v-griffinc
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
-ms.dyn365.ops.version: 10.0
-
+ms.custom: 
+  - bap-template
 ---
 # Return items across multiple customer orders and invoices
 
 [!include [banner](includes/banner.md)]
 
+This article explains functionality that enables returns across multiple customer orders and invoices in Microsoft Dynamics 365 Commerce.
 
-Returns can be made across multiple orders and invoices. 
+You can make returns across multiple orders and invoices. 
 
 ## Configure Commerce to support returns across multiple customer order and invoices
 
@@ -37,6 +30,8 @@ Returns can be made across multiple orders and invoices.
 
 ## Process returns
 
-After the parameter is turned on and the changes are synchronized to the stores, the cashier in the store can select multiple sales orders for a customer for their return.
+After you turn on the parameter and synchronize the changes to the stores, the cashier in the store can select multiple sales orders for a customer for their return.
 
-When the orders are selected, a list of all the returnable products across all the invoices for the orders will display. The cashier can then select the products to return. A single return order will be created for all the selected products.
+When the cashier selects the orders, a list of all the returnable products across all the invoices for the orders displays. The cashier can then select the products to return. The system creates a single return order for all the selected products.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

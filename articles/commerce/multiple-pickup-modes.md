@@ -8,6 +8,8 @@ ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-06-30
+ms.custom: 
+  - bap-template
 ---
 
 # Enable multiple pickup delivery modes for customer orders
