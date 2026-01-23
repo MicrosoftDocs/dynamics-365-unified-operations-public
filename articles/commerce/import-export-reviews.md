@@ -70,3 +70,5 @@ To export ratings and reviews from Commerce by using the Dynamics 365 Ratings an
 [Configure Service-to-Service authentication](service-to-service-auth.md)
 
 [Ratings and reviews FAQ](ratings-reviews-faq.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
