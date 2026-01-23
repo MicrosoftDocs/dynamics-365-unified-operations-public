@@ -2,30 +2,21 @@
 # required metadata
 
 title: Adjust AI-ML-based product recommendation results
-description: This article explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
+description: Learn how to adjust product recommendation results based on artificial intelligence-machine learning (AI-ML) in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: how-to
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
-
+ms.custom: 
+  - bap-template
 ---
 
 # Adjust AI-ML-based product recommendation results
-
 
 [!include [banner](includes/banner.md)]
 
