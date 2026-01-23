@@ -30,8 +30,7 @@ This article provides information about the Recruiting solution that helps to fi
 see [Recruiting overview](hr-recruit-overview.md).
 
 ## January 2026
-The January release of the Recruiting solution version contains the following feature enhancements and bug fixes. 
-
+The January release of the Recruiting solution version 2.2.3306.1 (Career portal: 3.2.0.0) contains the following feature enhancements and bug fixes. 
 | Feature | Description |
 |---| ---|
 |Job ad enhancement |Job ad description can be edited after posting the job. |
