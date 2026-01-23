@@ -4,7 +4,7 @@
 title: HR Recruiting app known issues 
 description: This article describes the known issues in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/26/2025
+ms.date: 01/26/2026
 ms.topic: how-to
 # optional metadata
 
@@ -98,4 +98,31 @@ Some functionality isn't available in Dynamics 365 Human Resources version 10.0.
  - Attachments aren't synced to the Dynamics 365 Finance and Operations environment from the Recruiting add-on.
  - The Careers site doesn't support zip codes. 
 
+### No country found in Careers
+The country lookup feature on the careers candidate **Personal information** page doesn't display the list of countries.
+This issue is resolved in Dynamics 365 Finance version 10.0.46.
 
+If you're using Dynamics 365 Finance version 10.0.45, follow these steps: 
+Update the **Recruiting application** role:
+1. Go to **System administration** > **Security parameters**.
+2. Select Recruiting application.
+3. Click **Duties**.
+4. Choose the duty **Inquire into recruiting integration data**.
+5. Click **Privileges** to view the list of privileges.
+6. Click **Add reference**.
+7. Select the **LogisticsAddressCountryRegionTranslationEntityView** privilege.
+8. Click **OK**.
+9. Select **Unpublished object**.
+10. Publish all changes.
+
+Update the **Portal authenticated user for recruitment** role:
+1. Go to **System administration** > **Security parameters**.
+2. Select **Portal authenticated user for recruitment**.
+3. Click **Duties**.
+4. Choose the **Inquire into recruiting data from portal on allowed entities** duty.
+5. Click **Privileges** to view the list of privileges.
+6. Click **Add reference**.
+7. Select **LogisticsAddressCountryRegionTranslationEntityView** privilege.
+8. Click **OK**.
+9. Select **Unpublished object**.
+10. Publish all changes.
