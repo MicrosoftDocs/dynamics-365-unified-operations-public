@@ -129,8 +129,33 @@ You must grant access to any other agent platforms that need to access the MCP s
 1. Register the application in Microsoft Entra ID. For more information, see [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
 1. Add the registered client ID value in the **Allowed MCP clients** form, setting the **Allowed** property to `true`.
 
-## Known limitations
+## Licensing
+### Billing rates for standard user licenses
+There are two types of costs associated with use of the Dynamics 365 ERP MCP server in an agent:
+1. The agent orchestration cost (LLM cost), and
+2. The MCP server execution cost (tool calls to the server).
 
+These costs are different when using the MCP server in Microsoft Copilot Studio versus other agent clients, like Microsoft Foundry or non-Microsoft clients. When using the MCP server in Copilot Studio, the tool calls align with the *Agent Action* feature, which bills at a fixed rate per tool call. In Copilot Studio, billing for the *Agent Action* feature includes both the LLM cost for orchestration and the execution of the MCP server. Because Copilot Studio is a low-code platform, the variable LLM cost of token consumption has been abstracted away, providing a fixed rate for both orchestration and tool invocation. There is no incremental charge for the cost of the execution of the MCP server.
+
+For agents built on other agent clients, usage of the Dynamics 365 ERP MCP server incurs a cost of 1 copilot credit per 10 tool calls to the server (or .1 credits per tool call). This is an incremental cost charged by Microsoft for the execution of the MCP server. The cost for the LLM orchestration is a separate charge by the agent client for token consumption, based on that rates of that client.
+
+|  | Microsoft Copilot Studio | Other agent client |
+| - | ----------------------- | ------------------ |
+| **Orchestration cost** | Billed as an *Agent Action* on the [Copilot Studio rate card](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) | Billing from the agent client at the client's token consumption rates |
+| **Tool execution cost** | Included in the fixed orchestration rate | Billed at **0.1 Copilot Credits** per tool call |
+
+For more information on Copilot Studio licensing and credits, see:
+- [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)
+- [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995)
+
+### Premium licenses
+The following premium licenses are exempt from the tool execution billing *for agents built on clients other than Copilot Studio*. Agents built on Copilot Studio will continue to bill at the fixed rate per tool car for users with these premium licenses.
+- Dynamics 365 Finance Premium
+- Dynamics 365 Supply Chain Management Premium
+
+For Copilot Studio agents, agent usage is included in the Microsoft 365 Copilot license. Business to Employee usage of Copilot Studio agents is included in the Microsoft 365 Copilot USL when the user of that agent is licensed with Microsoft 365 Copilot and the agent is operating using the authenticated Microsoft 365 Copilot USL user's identity. In these cases the tool calls to the Dynamics 365 ERP MCP server will not incur additional credit consumption.
+
+## Known limitations
 The current implementation of the Dynamics 365 ERP MCP server has the following limitations:
 
 1. **Language:** The MCP server supports only US English (en-us). If the authenticated user of the agent specifies a different locale, the form labels and values returned in the tool context appear in that locale. However, the MCP responses always provide metadata and guidance in English.
