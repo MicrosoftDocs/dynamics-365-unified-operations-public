@@ -886,6 +886,8 @@
             href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
         - name: Calculate prices and discounts without creating sales orders
           href: ../supply-chain/unified-pricing-management/upm-calculate-prices-without-sales-orders.md?context=/dynamics365/context/commerce
+        - name: Pricing data import and export entities
+          href: ../supply-chain/unified-pricing-management/upm-pricing-data-entities.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview

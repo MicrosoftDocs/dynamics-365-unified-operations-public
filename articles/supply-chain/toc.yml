@@ -2369,6 +2369,8 @@
           href: unified-pricing-management/upm-concurrence-cross-codes.md
       - name: Calculate prices and discounts without creating sales orders
         href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
+      - name: Pricing data import and export entities
+        href: unified-pricing-management/upm-pricing-data-entities.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
