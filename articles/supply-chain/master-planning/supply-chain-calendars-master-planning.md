@@ -81,7 +81,7 @@ To indicate that a warehouse is open for receiving, but pickup isn't possible, y
 
 ### Transport calendar
 
-You can set up a transport calendar for each mode of delivery, or for each mode of delivery and "from" warehouse to indicate the dates when a mode of delivery can transport goods from a warehouse.
+To indicate the dates when transfer orders can be shipped, set up transport calendars for each mode of delivery or for each combination of mode of delivery and "from" warehouse.
 
 To set up a transport calendar, go to **Sales and marketing** \> **Setup** \> **Distribution** \> **Modes of delivery**, select a mode of delivery, and then select **Transport calendar**.
 
