@@ -1444,7 +1444,7 @@
         - name: Configure model mappings
           items: 
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
           - name: Manage several derived mappings for a single model root
@@ -3147,7 +3147,7 @@
           href: sales-marketing/line-charges-specific-unit.md
         - name: Period charges
           href: sales-marketing/period-charges.md
-        - name: Create a purchase order from a sales order
+        - name: Create purchase orders from sales orders
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md

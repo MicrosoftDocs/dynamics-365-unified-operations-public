@@ -4675,38 +4675,50 @@
               href:  business-performance-analytics/bpa-release-notes.md
             - name: Setup and administration
               items: 
-                - name: Configure business performance analytics
+                - name: Configure Business performance analytics
                   href: business-performance-analytics/configure-BPA.md
-                - name: Install business performance analytics
+                - name: Install Business performance analytics
                   href: business-performance-analytics/install-bpa.md
-                - name: Configure security in business performance analytics
+                - name: Configure security in Business performance analytics
                   href: business-performance-analytics/set-up-security.md
                 - name: Custom report import, export, and migration
                   href: business-performance-analytics/custom-reports.md
                 - name: Reassign ownership of Business performance analytics workflow
                   href: business-performance-analytics/bpa-flow-owner.md
-            - name: Key concepts in business performance analytics
+            - name: Key concepts in Business performance analytics
               items:
                 - name: Business performance analytics data model
                   href: business-performance-analytics/business-performance-analytics-data-model.md
-            - name: Use business performance analytics
+            - name: Use Business performance analytics
               items:
-                - name: Access business performance analytics
+                - name: Access Business performance analytics
                   href: business-performance-analytics/access-bpa.md
                 - name: Business performance analytics Microsoft reports
                   href: business-performance-analytics/Reports-in-BPA.md 
-                - name: Create business performance analytics reports
+                - name: Create Business performance analytics reports
                   href: business-performance-analytics/how-to-create-and-edit-reports.md  
                 - name: Business performance analytics Excel add-in
                   href: business-performance-analytics/bpa-excel.md 
                 - name: Generative help and guidance in Business performance analytics
                   href: business-performance-analytics/copilot-in-business-performance-analytics.md
-            - name: Extend business performance analytics
+            - name: Extend Business performance analytics
               items:             
-                - name: Extend business performance analytics in Microsoft Fabric 
-                  href: business-performance-analytics/bpa-fabric.md  
+                - name: Extend Business performance analytics in Microsoft Fabric
+                  href: business-performance-analytics/bpa-fabric.md
                 - name: External facts and dimensions into Business performance analytics
                   href: business-performance-analytics/extending-bpa.md
+            - name: ERP Analytics MCP (preview)
+              items:
+                - name: Dynamics 365 ERP Analytics MCP for finance and operations apps
+                  href: business-performance-analytics/erp-analytics-mcp-overview.md
+                - name: ERP Analytics MCP technical details
+                  href: business-performance-analytics/erp-analytics-mcp-technical-details.md
+                - name: Use ERP Analytics MCP in Visual Studio Code
+                  href: business-performance-analytics/erp-analytics-mcp-vscode.md
+                - name: Build an agent in Copilot Studio
+                  href: business-performance-analytics/erp-analytics-mcp-copilot-studio.md
+                - name: ERP Analytics MCP FAQ
+                  href: business-performance-analytics/erp-analytics-mcp-faq.md
             - name: Business performance analytics FAQ
               href: business-performance-analytics/bpa-faq.md
             - name: Business performance analytics troubleshooting
@@ -4717,7 +4729,7 @@
           items:
             - name: Business performance planning overview
               href: business-performance-planning/business-performance-planning-overview.md
-            - name: Install business performance planning
+            - name: Install Business performance planning
               href: business-performance-planning/Install-BPP2.md
             - name: Install Planning app
               href: business-performance-planning/bpp-app-install.md
@@ -5302,7 +5314,7 @@
                 - name: Configure model mappings
                   items:
                     - name: Configure country/region context dependent ER model mappings
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/finance
+                      href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/finance
                     - name: Manage ER model mapping in separate ER configurations
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/finance
                     - name: Manage several derived mappings for a single model root

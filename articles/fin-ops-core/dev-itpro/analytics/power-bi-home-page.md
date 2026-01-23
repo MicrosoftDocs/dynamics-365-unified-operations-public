@@ -4,7 +4,7 @@ description: Learn about PowerBI.com solutions that are available and points you
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/27/2025
+ms.date: 01/12/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -21,7 +21,7 @@ ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 
 The following PowerBI.com solutions are available for application environments.
 
-## PowerBI.com solutions available from Lifecycle Services (LCS)
+## PowerBI.com solutions available from Lifecycle Services
 
 The Shared assets library of LCS provides the following PowerBI.com solutions. Check the version information in the Shared assets library to download the correct version for your environment.
 
@@ -51,7 +51,7 @@ The Shared assets library of LCS provides the following PowerBI.com solutions. C
 The following PowerBI.com solutions are available from [Microsoft Marketplace](https://marketplace.microsoft.com).
 
 > [!NOTE]
-> These solutions are deprecated as documented in [Power BI content packs available on Marketplace](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> These solutions are deprecated as documented in [Power BI content packs available on Marketplace](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-marketplace).
 
 - Cost management
 - [Financial performance](financial-performance-power-bi-content-pack.md)

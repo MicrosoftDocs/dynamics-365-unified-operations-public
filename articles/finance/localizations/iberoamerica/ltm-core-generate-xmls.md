@@ -4,14 +4,16 @@ description: Learn the configurations and steps needed to generate invoices XMLs
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 12/15/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Generate invoice XMLs by using the electronic document feature
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article explains how to configure and generate invoice XMLs by using the native electronic document feature. Use this method to generate XMLs if you don't need the LATAM feature.
 
