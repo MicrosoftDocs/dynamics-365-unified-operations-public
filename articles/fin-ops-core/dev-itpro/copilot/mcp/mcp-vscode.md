@@ -30,10 +30,9 @@ Follow the steps below to connect Visual Studio Code to the MCP server.
 1. In Visual Studio Code, run command (Ctrl + Shift + P), and select **MCP: Add Server...**.
 2. Select **HTTP (HTTP or Server-Sent Events)** to connect to the remote MCP server.
 3. In the **URL of the MCP server** input, enter `<Finance-and-Operations-base-URL-value>/mcp`. For example: `https://contoso.operations.dynamics.com/mcp`.
-   ![Add MCP server URL](../media/mcp-vscode-enter-url.jpg)
-5. Provide a **Server ID** value, or accept the default.
-6. Once the Server ID is entered, the mcp.json file is created with the server configuration. This configuration shows the server status and the number of tools retrieved from the server. You can also start or restart the connection to the server as needed.
-7. When the server is started, you then need to authenticate to the server using the credentials for your finance and operations apps environment. When the dialog displays stating that the MCP server definition wants to authenticate to the environment, select **Allow**. You will then need to enter your credentials for the environment that will be used to connect to the MCP server from Visual Studio Code.
+4. Provide a **Server ID** value, or accept the default.
+5. Once the Server ID is entered, the mcp.json file is created with the server configuration. This configuration shows the server status and the number of tools retrieved from the server. You can also start or restart the connection to the server as needed.
+6. When the server is started, you then need to authenticate to the server using the credentials for your finance and operations apps environment. When the dialog displays stating that the MCP server definition wants to authenticate to the environment, select **Allow**. You will then need to enter your credentials for the environment that will be used to connect to the MCP server from Visual Studio Code.
 
 ## Configure the agent chat
 After configuring Visual Studio Code to connect to the MCP server, you can use the agent chat with GitHub Copilot to prompt the agent and receive responses from the Dynamics 365 ERP MCP server.
