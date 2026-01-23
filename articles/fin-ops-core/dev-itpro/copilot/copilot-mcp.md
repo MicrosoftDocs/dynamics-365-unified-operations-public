@@ -141,11 +141,11 @@ For agents built on other agent clients, usage of the Dynamics 365 ERP MCP serve
 
 |  | Microsoft Copilot Studio | Other agent client |
 | - | ----------------------- | ------------------ |
-| **Orchestration cost** | Billed as an *Agent Action* on the [Copilot Studio rate card](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) | Billing from the agent client at the client's token consumption rates |
+| **Orchestration cost** | Billed as an *Agent Action* on the [Copilot Studio rate card](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios) | Billing from the agent client at the client's token consumption rates |
 | **Tool execution cost** | Included in the fixed orchestration rate | Billed at **0.1 Copilot Credits** per tool call |
 
 For more information on Copilot Studio licensing and credits, see:
-- [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management)
+- [Billing rates and management](microsoft-copilot-studio/requirements-messages-management)
 - [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995)
 
 ### Premium licenses
