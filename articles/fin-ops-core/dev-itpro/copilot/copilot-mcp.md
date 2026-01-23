@@ -46,7 +46,7 @@ Before you can use the Dynamics 365 ERP MCP server, you must meet the following 
 The Dynamics 365 ERP MCP server has three categories of tools for working with the data and business logic of finance and operations apps: 
 - **Data tools:** These tools enable the agent to perform standard data operations to create, read, update, and delete data in your finance and operations apps environment.
 - **Form tools:** Enable the agent to work perform operations that are available on forms in the application. 
-- **Action tools:**
+- **Action tools:** Enable the agent to find and directly invoke classes in finance and operations apps code.
 
 ### Data tools
 Data tools in the MCP server enable the agent to work with application data through data entities. The agent can use these tools to perform Create, Read, Update, Delete (CRUD) operations with the application data in your environment.
@@ -58,7 +58,7 @@ The following data tools are available in the Dynamics 365 ERP MCP server.
 | Tool name | Description |
 | --------- | ----------- |
 | `data_find_entity_type` | Find OData entity types. This is needed for calling the data_get_entity_metadata tool. The tool returns multiple top hits that may be related to your query. You decide which one matches your search. |
-| `data_get_entity_metadata` | Get metadata for an entity. This metadata is needed for calling the data_find_entities, data_create_entities, data_update_entities, data_delete_entities tools. |
+| `data_get_entity_metadata` | Get metadata for an entity. This metadata is needed for calling the `data_find_entities`, `data_create_entities`, `data_update_entities`, `data_delete_entities` tools. |
 | `data_create_entities` | Create data records using OData. Deep inserts are not supported for create. |
 | `data_delete_entities` | Delete data records using OData. | 
 | `data_update_entities` | Update data records using OData. | 
@@ -80,7 +80,7 @@ The following form tools are available in the Dynamics 365 ERP MCP server.
 | `form_close_form` | Close form |
 | `form_filter_form` | Applies a filter on the form |
 | `form_filter_grid` | Filter on a grid |
-| `form_find_controls | Find controls on the form. Use this tool if you do not see the required controls in the form state after opening it, suspect that the control must be on one of the closed tabs, but not sure which one. This tool accepts only one search term per call - to find multiple different controls, call this multiple times with different search terms. |
+| `form_find_controls` | Find controls on the form. Use this tool if you do not see the required controls in the form state after opening it, suspect that the control must be on one of the closed tabs, but not sure which one. This tool accepts only one search term per call - to find multiple different controls, call this multiple times with different search terms. |
 | `form_find_menu_item` | Find a menu item |
 | `form_open_lookup` | Open a lookup control on the form |
 | `form_open_menu_item` | Opens menu item |
@@ -112,7 +112,9 @@ When the tools respond to the agent, they return the application view model to t
 
 For example, when the agent calls the `form_find_menu_item` tool, it returns only menu items to which that security role has access. When the view model for a form is returned to the agent, it includes only data, fields, and actions to which the user role has access. The system rejects any explicit calls to actions or objects to which the user role doesn't have access.
 
-Limiting the menu items with roles is important for limiting the scope of the agent. It's also a way to improve agent orchestration by limiting the context the agent needs to orchestrate over to find the right form, data, or actions.
+Similarly, the entities returned in the response to the `data_find_entity_type` tool and APIs returned in the response to the `api_find_actions` tool will only include objects to which the security role for the user context has access.
+
+Limiting the menu items, entities, and APIs with roles is important for limiting the scope of the agent. It's also a way to improve agent orchestration by limiting the context the agent needs to orchestrate over to find the right form, data, or actions.
 
 ## Allowed MCP clients
 When you enable the Dynamics 365 ERP MCP server in your environment, you decide which agent platforms can access the server. By default, only the following two platforms can access the MCP server:
