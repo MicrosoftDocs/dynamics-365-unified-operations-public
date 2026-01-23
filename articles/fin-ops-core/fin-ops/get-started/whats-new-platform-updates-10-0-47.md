@@ -29,7 +29,7 @@ This section lists the features included in this release when available. The art
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changes reported at this time |---|---|---|
+| System administration | Data tools for Dynamics 365 ERP MCP | New data tools are added to the Dynamics 365 ERP MCP server, enabling agents to perform standard data operations to create, read, update, and delete data in the finance and operations apps environment through data entities. For more information see [Use Model Context Protocol for finance and operations apps](../../dev-itpro/copilot/copilot-mcp.md) | On by default |
 
 ## Feature enhancements included in this release
 
