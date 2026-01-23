@@ -1,11 +1,10 @@
 ---
 title: Clean up DOM fulfillment plans and logs
-description: This article describes how to clean up distributed order management (DOM) fulfillment plans and logs in Microsoft Dynamics 365 Commerce.
+description: Learn how to clean up distributed order management (DOM) fulfillment plans and logs in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/17/2023
+ms.date: 01/22/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-11-07
@@ -17,7 +16,7 @@ ms.search.validFrom: 2023-11-07
 
 This article describes how to clean up distributed order management (DOM) fulfillment plans and logs in Microsoft Dynamics 365 Commerce.
 
-When DOM processing is run, fulfillment plans and DOM logs are created. Over time, the system keeps numerous fulfillment plans and DOM logs. To manage the number of fulfillment plans that the system keeps, you can configure a batch job that deletes older fulfillment plans, based on the **Fulfillment data retention period (in days)** and **DOM logs retention period (in days)** values of the DOM parameters in Commerce headquarters.
+When you run DOM processing, the system creates fulfillment plans and DOM logs. Over time, the system keeps numerous fulfillment plans and DOM logs. To manage the number of fulfillment plans that the system keeps, you can configure a batch job that deletes older fulfillment plans, based on the **Fulfillment data retention period (in days)** and **DOM logs retention period (in days)** values of the DOM parameters in Commerce headquarters.
 
 To configure a batch job that deletes older fulfillment plans, follow these steps:
 
