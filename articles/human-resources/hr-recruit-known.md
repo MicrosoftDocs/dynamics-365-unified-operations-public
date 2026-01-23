@@ -98,8 +98,8 @@ Some functionality isn't available in Dynamics 365 Human Resources version 10.0.
  - Attachments aren't synced to the Dynamics 365 Finance and Operations environment from the Recruiting add-on.
  - The Careers site doesn't support zip codes. 
 
-### No country found in Careers
-The country lookup feature on the careers candidate **Personal information** page doesn't display the list of countries.
+### No country/region found in Careers
+The country/region lookup feature on the careers candidate **Personal information** page doesn't display the list of countries/regions.
 This issue is resolved in Dynamics 365 Finance version 10.0.46.
 
 If you're using Dynamics 365 Finance version 10.0.45, follow these steps: 
