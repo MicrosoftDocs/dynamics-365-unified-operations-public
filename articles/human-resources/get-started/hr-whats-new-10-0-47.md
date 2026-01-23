@@ -29,13 +29,16 @@ originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+|Careers |Expire jobs and job titles|	This feature allows HR Teams to set expiration dates for jobs and job titles in Dynamics 365 Human Resources. Expired items are hidden from selection lists and can’t be assigned to new positions, but all historical data is retained for reporting and compliance.|	Generally available|
+|Personnel management |Accrual adjustments for terminated employees	|This ensures all accrued entitlements are calculated accurately to the termination date.|	Preview |
 
 ## Feature enhancements included in this release
 This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
-| Module or feature area | Feature name | More information | Enabled by |
+| Module or feature area | Feature name | More information | 
 |---|---|---|---|
+|Personnel management | LeaveBalanceActiveEntity is introduced | LeaveBalanceActiveEntity has been introduced to provide access exclusively to active records. The Leave balance entity retains historical records. However, updates to employee names can result in duplicate personnel numbers and records within data entities. The LeaveBalanceActiveEntity helps prevent duplication of personnel numbers.|
+|Leave and absence | Copy base structure only	|This option improves the performance while copying the calendar.	By default, this toggle is enabled. If the base structure copy option is on, only the calendar setup and generation settings are copied, but dates and working times aren't. If you turn this option off, all calendar details such as dates and working times are copied as well.|
 
 
 ## Additional resources
