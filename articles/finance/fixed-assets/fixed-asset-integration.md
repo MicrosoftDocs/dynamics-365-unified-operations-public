@@ -80,6 +80,8 @@ The integration for each order line is activated on the **Fixed assets** tab on 
 
 Charges added to the purchase order line represent the capitalization of costs incurred during the acquisition of a fixed asset through a purchase order. Any applicable charges are automatically allocated to the fixed asset’s main account and included in the total capitalization cost, ensuring accurate financial reporting and asset valuation. To properly capitalize these charges on the fixed asset, the charge setup should be configured to debit the item.
 
+Starting from Dynamics 365 Finance 10.0.46 the integration between purchase order and inventory preserves the text entered on a purchase order line for a fixed asset by storing it in the Information 3 field when the asset is created. If the asset is later acquired through additional purchase orders that include new text, the system appends the new values to the existing content in Information 3 rather than overwriting it.
+
 ## Project management and accounting
 You can associate a project with an asset that is affected by the project. You can also associate each phase, task, or subproject to a different asset. One asset can be associated with each project record. You create the association when you enter a fixed asset number in the **Fixed asset** number field on the **Projects** page. The project type must be either **Internal** or **Cost project**. 
 
