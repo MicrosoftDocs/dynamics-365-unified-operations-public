@@ -1,11 +1,10 @@
 ---
 title: Customize product detail pages
-description: This article describes how to customize product detail pages in Microsoft Dynamics 365 Commerce.
+description: Learn how to customize product detail pages in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 01/22/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,13 +18,13 @@ ms.custom:
 
 This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
-By default, your Dynamics 365 Commerce e-commerce site uses a generic PDP to display product data. This PDP includes basic information about the product and page controls that allow site visitors to select and purchase the product. 
+By default, your Dynamics 365 Commerce e-commerce site uses a generic PDP to display product data. This PDP includes basic information about the product and page controls that allow site visitors to select and purchase the product.
 
-You can customize PDPs by adding information from the Commerce Scale Unit (CSU), such as additional images or product-specific text.
+You can customize PDPs by adding information from the Commerce Scale Unit (CSU), such as extra images or product-specific text.
 
-In many cases, you'll want to use specific additional content for your products. When you go to the **Products** tab in Commerce site builder, you'll see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
+In many cases, you want to use specific extra content for your products. When you go to the **Products** tab in Commerce site builder, you see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
-The following video provides an overview of PDP and category page customization using site builder.
+The following video provides an overview of PDP and category page customization by using site builder.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f03020b9-894b-49bc-887a-a689dc99252b]
 
@@ -44,7 +43,7 @@ To customize a PDP in site builder, follow these steps:
 
 1. Edit your new custom product page by adding and configuring marketing modules and content to the page.
 1. When finished, select **Save**, and then select **Finish editing**.
-1. Select **Preview** to preview the preview the new product page in a browser or to send to test on a mobile device. When you've finished, close the preview tab to return to site builder.
+1. Select **Preview** to preview the new product page in a browser or to send to test on a mobile device. When you finish, close the preview tab to return to site builder.
 1. Select **Publish** to publish your page.
 
 ## Additional resources
