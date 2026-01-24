@@ -83,8 +83,8 @@ The following omnichannel payment scenarios are supported:
 - Buy in store A, pick up in store B
 - Buy in store A, ship to customer
 
-    > [!NOTE]
-        > Payments that the call center makes that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the POS. The POS doesn't recognize non-prepay payments of type "Normal" when the order is recalled.
+> [!NOTE]
+> Payments that the call center makes that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the POS. The POS doesn't recognize non-prepay payments of type "Normal" when the order is recalled.
 
 Variations of these scenarios are also supported. For example, an online order might include both lines that you ship to the customer and lines that the customer picks up in a store. All order fulfillment options are supported via omnichannel payments.
 
@@ -104,7 +104,7 @@ Before you start, make sure that the following prerequisites are in place:
 Follow these steps to run the scenario.
 
 1. In the reference storefront, create an order for in-store pickup. Be sure to select the **Houston** store.
-1. Go through the checkout steps, and pay by using a test credit card number. You can find test credit card numbers on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/testing/test-card-numbers).
+1. Go through the checkout steps, and pay by using a test credit card number. You can find test credit card numbers on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/test-cards-and-credentials/test-card-numbers).
 1. In Commerce, use the **Synchronize orders** batch job and the **P-001** distribution schedule to create the orders in headquarters.
 1. In the POS, on the welcome page, select the **Orders to pickup** operation to see the orders for in-store pickup.
 1. Select one or more lines from the order that you created in the reference storefront, and then select **Pick up**.
@@ -131,7 +131,7 @@ Follow these steps to run the scenario.
 1. Select **Complete** to enter the order completion flow.
 1. Scroll down to the payments section, select **Add**, and then select a line where the payment method type is set to **Cards**.
 1. Select the plus sign (**+**) to add a card payment.
-1. Enter the details for a test credit card number that you found on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/testing/test-card-numbers), and then select **OK**.
+1. Enter the details for a test credit card number that you found on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/test-cards-and-credentials/test-card-numbers), and then select **OK**.
 
     > [!NOTE]
     > If the card brand for the card number that you entered differs from the brand that you selected when you initiated the payment, the payment goes through. However, it posts to the accounts that are mapped to the card brand that you selected in step 10.
