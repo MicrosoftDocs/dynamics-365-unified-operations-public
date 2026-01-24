@@ -1,11 +1,10 @@
 ---
 title: Enable manual publishing of ratings and reviews by a moderator
-description: This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
+description: Learn how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 author: gvrmohanreddy
-ms.date: 08/09/2024
+ms.date: 01/23/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2021-09-03
@@ -19,7 +18,7 @@ ms.custom:
 
 This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 
-Dynamics 365 Commerce's ratings and reviews solution uses Azure Cognitive Services to automatically redact profanity in review titles and content, and to publish ratings and reviews. Therefore, manual intervention isn't required to review and publish ratings and reviews to your e-commerce site.
+Dynamics 365 Commerce's ratings and reviews solution uses Azure Cognitive Services to automatically redact profanity in review titles and content, and to publish ratings and reviews. Therefore, you don't need to manually review and publish ratings and reviews to your e-commerce site.
 
 However, some businesses might prefer that moderators manually review and approve reviews before they're published. To enable manual publishing of ratings and reviews by a moderator, you must enable the **Require moderator for ratings and reviews** feature in Commerce site builder.
 
@@ -31,7 +30,7 @@ To enable the **Require moderator for ratings and reviews** feature in Commerce 
 1. Set the **Require moderator for ratings and reviews** option to **On**.
 
 > [!NOTE]
-> By enabling the **Require moderator for ratings and reviews** feature, you stop the automatic publishing of ratings and reviews, so that manual publishing is now required. However, Azure Cognitive Services will continue to redact profanity in review titles and content.
+> When you enable the **Require moderator for ratings and reviews** feature, you stop the automatic publishing of ratings and reviews, so that manual publishing is now required. However, Azure Cognitive Services continues to redact profanity in review titles and content.
 
 <!--![Require moderator for ratings and reviews setting in Commerce site builder.](media/Ratings-reviews-settings-human-moderation.png)-->
 
@@ -43,18 +42,15 @@ To review and publish ratings and reviews in Commerce site builder, follow these
 
 1. Go to **Reviews \> Moderation**.
 1. In the grid, if the **Status** field for a row is set to **Unpublished**, the rating and review in that row isn't published yet. To view only unpublished ratings and reviews, select **Status: Needs review** in the status filter above the grid.
-1. Select one or more ratings and reviews that have a status of **Unpublished**, and then select **Publish** on the command bar. The selected ratings and reviews are added to the publishing queue and will appear on the e-commerce site after they're published.
+1. Select one or more ratings and reviews that have a status of **Unpublished**, and then select **Publish** on the command bar. The selected ratings and reviews are added to the publishing queue and appear on the e-commerce site after they're published.
 
 > [!NOTE]
 > - After a rating and review are published, the status value changes from **Unpublished** to a null value (blank field).
-> - If you select multiple ratings and reviews that have mixed statuses, and then select **Publish**, ratings and reviews that haven't been published yet will be published. However, ratings and reviews that have already been published won't be published again.
+> - If you select multiple ratings and reviews that have mixed statuses, and then select **Publish**, ratings and reviews that aren't published yet are published. However, ratings and reviews that are already published aren't published again.
 
 The following illustration shows an example where three unpublished ratings and reviews are selected on the **Moderation** page in Commerce site builder.
 
-![Three unpublished ratings and reviews selected on the Moderation page in Commerce site builder.](media/Ratings-reviews-publishing-reviews.png)
-
-<!--![Dynamics 365 Commerce - Ratings and Review configuration 2](media/Ratings-reviews-published-reviews.png)-->
-<!--![Status filter](media/Ratings-reviews-published-reviews-status-filter.png)-->
+:::image type="content" source="media/Ratings-reviews-publishing-reviews.png" alt-text="Screenshot of three unpublished ratings and reviews selected on the Moderation page in Commerce site builder.":::
 
 ## Additional resources
 
@@ -73,3 +69,5 @@ The following illustration shows an example where three unpublished ratings and 
 [Configure Service-to-Service authentication](service-to-service-auth.md)
 
 [Ratings and reviews FAQ](ratings-reviews-faq.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
