@@ -14,11 +14,11 @@ ms.search.form: TMSNumberSequence
 
 [!include [banner](../includes/banner.md)]
 
-Use the **Number sequences** page in the transportation management module to set up various pro numbers. Pro numbers are used by carriers to organize and track the progress of each shipment.
+Use the **Number sequences** page in the transportation management module to set up various pro numbers. Carriers use pro numbers to organize and track the progress of each shipment.
 
 ## Create a number sequence for a pro number
 
-To create a number sequence for a pro number, do the following:
+To create a number sequence for a pro number, follow these steps:
 
 1. Go to **Transportation management \> Setup \> Carriers \> Number sequences**.
 1. Select **New** to create a new number sequence.
@@ -32,7 +32,7 @@ Learn more about how to work with number sequences in [Number sequences overview
 
 ## Link a number sequence to a shipping carrier
 
-To link a number sequence to a carrier, do the following:
+To link a number sequence to a carrier, follow these steps:
 
 1. Go to **Transportation management \> Setup \> Carriers \> Shipping carriers**.
 1. Select a shipping carrier.
@@ -40,16 +40,27 @@ To link a number sequence to a carrier, do the following:
 1. On the **Overview** FastTab, select an option in the **Pro number sequence** field.
 1. Close the page.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
 ## Pro number generation mode
 
-Go to **Transportation management \> Setup \> Performance setttings \> Pro number generation mode**.
+The pro number generation mode controls how the system allocates pro numbers.
 
-It controls how the system allocates the next Pro number in Transportation Management
+> [!TIP]
+> If your high-volume processes (such as release to warehouse) run slowly when you're using pro numbers, use the *Performance optimized* pro number generation mode to help improve throughput.
 
-- **Default** (transaction scoped): The number is generated inside the current business transaction. A number is only kept if the process finishes successfully. If the user cancels or an error stops the process, the number is put back and reused. This enforces continuous sequencing but can increase locking under high parallel load.
+### Prerequisites
 
-- **Performance optimized** (isolated): The number is generated on a separate connection and taken immediately. This reduces locking and improves throughput under high load, but numbers are not recycled if the business process later fails.
+You must be running Supply Chain Management version 10.0.47 or higher to use this feature.
 
-If high‑volume processes (e.g. release to warehouse) run slowly and TMS pro number is used, selecting performance optimized can improve throughput.
+### Choose the pro number generation mode
+
+To choose the pro number generation mode, follow these steps:
+
+1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
+1. Open the **General** tab.
+1. On the **Performance settings** FastTab, set **Pro number generation mode** to one of the following values:
+
+    - *Default* – Generate pro numbers inside the current business transaction (*transaction scoped*). The system keeps the number only if the process finishes successfully. If you cancel, or if an error stops the process, the system puts back the number and reuses it. This option enforces continuous sequencing but can increase locking under high parallel load.
+
+    - *Performance optimized* – Generate the number on a separate connection (*isolated*). This option reduces locking and improves throughput under high load, but numbers aren't recycled if the business process later fails.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
