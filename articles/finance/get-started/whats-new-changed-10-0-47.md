@@ -80,7 +80,7 @@ The following table lists the features that became turned on by default in versi
 | Tax | Consistency check for Tax trans general journal account entry association for Bank exchange rate.|  Mandatory  |
 | Tax | Enable "Include corrections" option on Sales tax settlement periods.|  On by default  |
 | Tax | Enable reverse charge mechanism for VAT/GST scheme.|  Mandatory  |
-| Tax | Reverse charge availability for additional countries.|  Mandatory  |
+| Tax | Reverse charge availability for additional countries/regions.|  Mandatory  |
 | Tax | (India) GST/TDS-TCS tax support for Project Integration Journal.|  Mandatory  |
 | Tax | Sales tax settlement and reporting by date of VAT register.|  Mandatory  |
 | Tax | Sales tax specification by **Purchase expenditure for product** posting type.|  On by default  |
@@ -91,7 +91,7 @@ The following table lists the features that became turned on by default in versi
 The following table lists features that were removed from Feature management in version 10.0.47. These features are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of Finance.
 
 | Module | Feature name | More information |
-|---|---|---|
+|--|--|--|
 |Accounts receivable| Use percentage in parameter to calculate batch tasks for the customer aging snapshot |Remove or obsolete feature|
 |Accounts receivable |Custom search on customer page |Remove or obsolete feature|
 | Budgeting |Default the account structure in the budget register entry | The related functionality is enabled out of the box | 
