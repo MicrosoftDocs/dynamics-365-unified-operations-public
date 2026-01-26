@@ -15,14 +15,14 @@ ms.date: 01/26/2026
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+ 
 Finance and operations apps let you create AI tools to extend the capabilities of agents and copilots that invoke business logic in finance and operations apps. You can add these tools to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.
 
 The tools you create can use the finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. You enable them by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that an AI agent can invoke. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic executes.
 
 Agents can invoke these classes with business logic in two ways:
 
-1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations](../copilot-mcp.md#using-actions-that-invoke-application-code).
+1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations](copilot-mcp.md#dynamic-context).
 1. You can also build a separate API and related tool in Dataverse to call the class. If you don't use the MCP server, you need to create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent.
 
 Users in copilot chat or autonomous agents can then invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base.
