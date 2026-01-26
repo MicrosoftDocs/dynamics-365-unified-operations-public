@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.47 (January 2026)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.47. 
 author: johnmichalak
-ms.date: 01/24/2026
+ms.date: 01/26/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -58,7 +58,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2026 release wave 1 plan](/dynamics365/release-plan/2026wave1/). It captures all the details, end-to-end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365 and industry clouds: 2026 release wave 1 plan](/dynamics365/release-plan/2025wave2/). It captures all the details, end-to-end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Commerce features
 
