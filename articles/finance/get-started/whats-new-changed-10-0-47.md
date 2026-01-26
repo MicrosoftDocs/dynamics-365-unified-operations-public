@@ -18,7 +18,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.47. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.47. This version has a build number of 10.0.2527 and is available on the following schedule:
 
 - **Preview of release:** January 2026
 - **General availability of release (self-update):** March 2026
