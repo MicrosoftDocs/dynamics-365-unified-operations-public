@@ -42,16 +42,16 @@ If you need to change the delimiter that separates segments in your chart of acc
 
 ### What prevents a delimiter change
 
-You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "~" but you already have a dimension value in use such as "Cust~1", the system will block the change. In this case, consider selecting a different delimiter.
+You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "~" but you already have a dimension value in use such as "Cust~1", the system blocks the change. In this case, consider selecting a different delimiter.
 
 ### Best practices for delimiters and dimension values
 
-While it's technically possible to include delimiter characters within dimension values, doing so can cause problems when the system parses account combinations. For instance, if you have a dimension value "Cust-049" and your delimiter is "-", the system may interpret "049" as the value for the next segment. If "049" isn't a valid value for that segment, you'll receive an error message.
+While it's technically possible to include delimiter characters within dimension values, doing so can cause problems when the system parses account combinations. For instance, if you have a dimension value "Cust-049" and your delimiter is "-", the system might interpret "049" as the value for the next segment. If "049" isn't a valid value for that segment, you receive an error message.
 
 To avoid these issues, you have two options:
 
 - **Option 1 (Recommended)**: Avoid using the delimiter character in your dimension values. If conflicting dimension values already exist, change them to prevent misinterpretation.
-- **Option 2**: Change the segment delimiter to a different character. Note that this option isn't available for financial tags.
+- **Option 2**: Change the segment delimiter to a different character. This option isn't available for financial tags.
 
 It's a good idea to link the main accounts to main account categories, so that you can take advantage of the default financial reports without having to make any modifications. Therefore, you can more quickly and easily design and maintain reports.
 
