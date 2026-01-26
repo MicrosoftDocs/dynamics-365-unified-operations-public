@@ -3,11 +3,12 @@ title: Transportation management number sequence
 description: Learn how to set up number sequences for transportation management, including a step-by-step process for creating number sequences for pro numbers.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: article
-ms.date: 10/16/2020
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: TMSNumberSequence
+ms.topic: how-to
+ms.date: 01/26/2026
+ms.custom:
+  - bap-template
 ---
 
 # Transportation management number sequence
