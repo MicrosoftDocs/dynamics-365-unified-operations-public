@@ -42,7 +42,7 @@ If you need to change the delimiter that separates segments in your chart of acc
 
 ### What prevents a delimiter change
 
-You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "~" but you already have a dimension value in use such as "Cust~1", the system blocks the change. In this case, consider selecting a different delimiter.
+You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "\~" but you already have a dimension value in use such as "Cust\~1", the system blocks the change. In this case, consider selecting a different delimiter.
 
 ### Best practices for delimiters and dimension values
 
