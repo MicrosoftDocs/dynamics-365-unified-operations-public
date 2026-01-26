@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-10-31
 This article explains ratings and reviews in Microsoft Dynamics 365 Commerce.
 
 > [!IMPORTANT]
-> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued soon.
+> The Dynamics 365 Commerce Ratings and reviews license is no longer available for new purchases. Renewals for existing customers will be discontinued soon.
 
 Ratings and reviews are crucial for e-commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-commerce website.
 
@@ -61,5 +61,6 @@ The following video provides an overview of ratings and reviews capabilities in 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
