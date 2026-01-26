@@ -42,7 +42,7 @@ The following table provides information about GAR levels, and the corresponding
 
 ## Enable the Import from GAR feature
 
-To enable the Import from GAR feature, follow these steps.
+To enable the Import from GAR feature, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
 1. In the feature list, find and select the **(Russia) Import addresses from the State Address Register (GAR)** feature.
@@ -54,7 +54,7 @@ After you enable the feature, the **Import from FIAS** functionality is no longe
 
 The **GAR import** feature uses the [Electronic Reporting (ER) functionality](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). You must import the following ER configurations.
 
-To import the ER configurations, follow these steps.
+To import the ER configurations, follow these steps:
 
 1. Import configurations for GAR address metadata files:
     - GAR metadata import ADDHOUSE(RU)
@@ -82,7 +82,7 @@ Learn more in [Download ER configurations](../../../fin-ops-core/dev-itpro/analy
 
 ## GAR import
 
-To import from GAR, follow these steps.
+To import from GAR, follow these steps:
 
 1. Download the database from [https://fias.nalog.ru/Frontend](https://fias.nalog.ru/Frontend).
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Import from GAR**.

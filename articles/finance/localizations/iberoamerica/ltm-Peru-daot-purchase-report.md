@@ -43,7 +43,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 ## Configure application-specific parameters for the DAOT purchases report and the Excel-based format
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the last twelve months (LTM) tax report and for each format that is listed in the [Prerequisites](#prerequisites) section, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -60,7 +60,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the DAOT purchases report
 
-To generate the DAOT purchases report in any of the previously mentioned formats, follow these steps.
+To generate the DAOT purchases report in any of the previously mentioned formats, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select one of the previously mentioned formats, and then select **OK**.

@@ -58,7 +58,7 @@ Calculations occur when a value has been provided for all input attributes.
 You can overwrite the value that is calculated for the target attribute, unless the target attribute is set as hidden or read-only.
 
 ## How do I set a target attribute as hidden or read-only?
-To set an attribute as hidden or read-only, follow these steps.
+To set an attribute as hidden or read-only, follow these steps:
 
 1.  Click **Product information management** &gt; **Products** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, click **Edit**.
@@ -81,7 +81,7 @@ This message is shown when a calculation includes an error, or when a contradict
 -   The values that are returned by the calculation are outside the domain of the attribute. An example is an integer from \[1..10\] that is calculated to 0.
 
 ## Why do I receive an error message even though I successfully validated my product model?
-Calculations aren't included in the validation. You must test the product configuration model to find errors in calculations. To test a product configuration model, follow these steps.
+Calculations aren't included in the validation. You must test the product configuration model to find errors in calculations. To test a product configuration model, follow these steps:
 
 1.  Click **Product information management** &gt; **Products** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, in the **Run** group, click **Test**.

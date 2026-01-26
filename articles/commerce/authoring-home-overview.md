@@ -2,15 +2,12 @@
 title: Site builder authoring page overview
 description: This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 author: bicyclingfool
-ms.date: 02/13/2024
+ms.date: 01/15/2026
 ms.topic: overview
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: 
 
 ---
 
@@ -20,23 +17,23 @@ ms.assetid:
 
 This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 
-Websites can be created to support various business needs. They can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
+You can create websites to support various business needs. A website can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
 
-Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content. The site builder authoring page serves as a common access point for these websites. You can use it to sign in to and out of the system, and to create new websites.
+Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content. The site builder authoring page serves as a common access point for these websites. You can use it to sign in and out of the system, and to create new websites.
 
 Currently, the site builder authoring page consists of the following sections.
 
 - **Top bar** – The top bar appears at the top of the authoring page. It provides easy access to Commerce tools, notifications, support links, and user sign-in.
-- **Command bar** – The command bar appears below the top bar. It can be used to create new websites.
-- **Site list** – The site list fills all the space below the command bar. It provides a comprehensive list of websites and the domains that are associated with them.
+- **Command bar** – The command bar appears below the top bar. You can use it to create new websites.
+- **Site list** – The site list fills the space below the command bar. It provides a comprehensive list of websites and the domains that are associated with them.
 
 The following illustration shows the authoring page.
 
-![Dynamics 365 Commerce authoring page.](../commerce/media/authoring_tools_01.png)
+:::image type="content" source="../commerce/media/authoring_tools_01.png" alt-text="Screenshot of the Dynamics 365 Commerce site builder authoring page.":::
 
 ## Use the Home button to select a tool
 
-The **Home** button is in the upper-left corner of the authoring page. It provides easy access to other Commerce tools. When you select this button, a menu of the tools that you can use is opened. When you select a tool, the menu is closed, and the selected tool is loaded in the browser.
+The **Home** button is in the upper-left corner of the authoring page. It provides easy access to other Commerce tools. When you select this button, a menu of the tools that you can use opens. When you select a tool, the menu closes, and the selected tool loads in the browser.
 
 ## View and clear notifications
 
@@ -70,7 +67,7 @@ To sign in to or out of site builder, follow one of these steps.
 
 You can also use the **My account** button to change the language of the text strings that appear in site builder.
 
-To change the display language, follow these steps.
+To change the display language, follow these steps:
 
 1. Select **My account** \> **Change language**. A dialog box appears.
 1. Select one of the user languages, and then select **Save**.
@@ -79,12 +76,12 @@ To change the display language, follow these steps.
 
 Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content.
 
-To create a new website, follow these steps.
+To create a new website, follow these steps:
 
 1. On the command bar, select **New site**. The **Create site** dialog appears.
 1. On the **Site details** page, enter the following required information.
     - **Site name** – Enter the name of the website. This name is used in the site list and other places in site builder, and isn't shown to website users.
-    - **Site administers security group** – Enter the full name of the Microsoft Azure Active Directory (Azure AD) security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
+    - **Site administers security group** – Enter the full name of the Microsoft Entra ID security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
     - **Theme pack** - Select a them pack for your site, for example **Adventure works**.
     - **Site type** - Select **Business to consumer** or **Business to business** .
 1. Select **Next**.
@@ -93,7 +90,7 @@ To create a new website, follow these steps.
 1. For your default channel, under **Channel defaults**, select **Set as default channel**. 
 1. Optionally, to enable geo redirection by default, set the **Automatic geo redirection** option to **On**. You can override this setting at the channel level later, as needed.
 1. Select **Next**.
-1. On the **Locales** page, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries or regions is assigned to each locale. Optionally select **Edit** to add or remove locales, countries, or regions from each channel as needed. Then select **Add locales**.
+1. On the **Locales** page, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries/regions is assigned to each locale. Optionally select **Edit** to add or remove locales, or countries/regions from each channel as needed. Then select **Add locales**.
 1. Select **Next**.
 1. On the **URL paths** page, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed. To select which channel is the default application channel when site pages are authored in site builder, select the channel in the **Set default application channel** field.
 1. Select **Next**.

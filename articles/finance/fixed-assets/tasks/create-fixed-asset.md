@@ -22,7 +22,7 @@ This article explains how to create a new fixed asset record from the **Fixed as
 
 The system assigns the asset number, based on the number sequence that is assigned to the fixed asset group. If you use the fixed asset template to import assets via the Microsoft Excel add-in, or if you use another import job, fixed asset records are automatically created and increments the asset number.
 
-To manually create an asset record, follow these steps.
+To manually create an asset record, follow these steps:
 
 1. Go to **Fixed assets \> Fixed assets \> Fixed assets**.
 2. On the **Action pane**, select **New**.

@@ -59,7 +59,7 @@ Sales associates can also use notes to capture generic customer information that
 
 ## Set up clienteling
 
-To turn on the clienteling functionality in your environment, follow these steps.
+To turn on the clienteling functionality in your environment, follow these steps:
 
 1. In the **Feature management** workspace, filter the features by the **Retail and commerce** module.
 
@@ -102,7 +102,7 @@ To turn on the integration of Customer Insights with Commerce, you must make sur
 > [!IMPORTANT]
 > Prior to integrating Customer Insights with Commerce, retailers should first fully configure [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configure [measures](/dynamics365/ai/customer-insights/pm-measures) in the Customer Insights application.
 
-To set up the integration of Customer insights with Commerce, follow these steps.
+To set up the integration of Customer insights with Commerce, follow these steps:
 
 1. In the Azure portal, register a new application (for example, "CI_Access_name") and make a note of the application name, application ID, and secret. This information is used for service-to-service authentication between Commerce and Customer Insights. Note the secret safely, as you're required to save it in the key vault. For the following example, use "CI_Access_name", "CI_Access_AppID", and "CI_Access_Secret" for the application name, application ID, and secret, respectively. For more information, see [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 

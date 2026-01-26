@@ -1,8 +1,8 @@
 ---
 title: Cash register functionality for France
-description: This article provides an overview of the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
+description: Learn about the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 07/29/2025
+ms.date: 11/19/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: France
@@ -26,14 +26,14 @@ This version of the cash register functionality for France has passed an audit a
 - **Microsoft Dynamics 365 Commerce, version 10.0**:
 
     - Certificate category: B
-    - Certificate number: 0498
+    - Certificate number: 525/0498-5
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
 You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog. You can open this dialog by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog shows the certified software name and version, the certification category, and the NF 525 certificate number.
 
  > [!NOTE]
-  > - To comply with NF 525 certification requirements for updating software versions, Microsoft uses a separate NF 525 specific version. The current NF 525 certified major version is Dynamics 365 Commerce version 10.0, which maps to the global major Dynamics 365 Commerce version 10.0. The specific service update version is Dynamics 365 Commerce version 10.0.40, which corresponds to Store Commerce POS build 9.50.x. Learn more in [NF 525 compliance documentation](#nf-525-compliance-documentation).
+  > - To comply with NF 525 certification requirements for updating software versions, Microsoft uses a separate NF 525 specific version. The current NF 525 certified major version is Dynamics 365 Commerce version 10.0, which maps to the global major Dynamics 365 Commerce version 10.0. The specific service update version is Dynamics 365 Commerce version 10.0.45, which corresponds to Store Commerce POS build 9.55.x. Learn more in [NF 525 compliance documentation](#nf-525-compliance-documentation).
   > - Microsoft ensures the authenticity and security of the Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and hasn't been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
   > - Microsoft maintains source code for all supported versions of Dynamics 365 Commerce in a secure version control system that is in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
 
@@ -382,6 +382,9 @@ To enforce daily shift closing, you must make the following changes:
 - Set the **Enforce daily shift closing** option to **Yes**.
 - Set the **Shift closing time** and **Shift closing interval (minutes)** fields.
 
+ > [!NOTE]
+ > In France, it's required that the daily closing period doesn't exceed 24 hours, unless the daily closing is executed before the start of the next daily period. Also, a new shift shouldn't be opened until the previous shift is closed.
+
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
@@ -488,7 +491,7 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 #### Configure the fiscal registration process
 
-To enable the fiscal registration process for France in Commerce headquarters, follow these steps.
+To enable the fiscal registration process for France in Commerce headquarters, follow these steps:
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
@@ -607,7 +610,7 @@ This section describes basic scenarios that you can complete to validate that yo
 
 #### Validate a sales transaction
 
-To validate a digitally signed sales transaction after it's completed, follow these steps.
+To validate a digitally signed sales transaction after it's completed, follow these steps:
 
 1. In POS, verify that all [France-specific fields](#configure-receipt-formats) of the receipt, except the fields that are related to a receipt copy, are printed and have correct values. To check some of the fields, you must complete the next step.
 1. In Commerce headquarters, follow these steps:
@@ -632,7 +635,7 @@ To validate a digitally signed sales transaction after it's completed, follow th
 
 #### Validate a shift
 
-To validate a digitally signed shift after it's closed, follow these steps.
+To validate a digitally signed shift after it's closed, follow these steps:
 
 1. In POS, verify that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you must complete the next step.
 1. In Commerce headquarters, follow these steps:
@@ -658,7 +661,7 @@ To validate a digitally signed shift after it's closed, follow these steps.
 
 #### Validate an audit event
 
-To validate a digitally signed audit event, follow these steps.
+To validate a digitally signed audit event, follow these steps:
 
 1. In Commerce headquarters, run the P-job to download audit event data to Commerce headquarters.
 1. Open the **Audit events** page, and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date**, and **Time** fields to find the event. The **Log string** field contains the description of the event.

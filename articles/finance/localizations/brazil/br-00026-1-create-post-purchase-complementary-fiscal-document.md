@@ -20,7 +20,7 @@ This article describes how to create a purchase complementary fiscal document to
 
 Use the following procedure to create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, Imposto Sobre Produtos Industrializados (IPI) amount, or Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) amount. The procedure uses the BRMF demo company.
 
-To create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, follow these steps.
+To create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Fiscal documents \> All fiscal documents**.
 1. In the list, find and select the desired record.

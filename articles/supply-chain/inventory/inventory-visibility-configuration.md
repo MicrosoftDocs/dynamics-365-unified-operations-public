@@ -59,7 +59,7 @@ Each data source represents a system that your data comes from. Example data sou
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
-To add a data source in UI version 2, follow these steps.
+To add a data source in UI version 2, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
@@ -71,7 +71,7 @@ To add a data source in UI version 2, follow these steps.
 
 This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
-To add a data source in UI version 1, follow these steps.
+To add a data source in UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
@@ -131,7 +131,7 @@ By configuring a dimension mapping, you can send the external dimensions directl
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
-To add a dimension mapping in UI version 2, follow these steps.
+To add a dimension mapping in UI version 2, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
@@ -149,7 +149,7 @@ To add a dimension mapping in UI version 2, follow these steps.
 
 ### Add dimension mappings in UI version 1
 
-To add a dimension mapping in UI version 1, follow these steps.
+To add a dimension mapping in UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
@@ -194,7 +194,7 @@ If your data source is Supply Chain Management, you don't have to recreate the d
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
-To add a physical measure in UI version 2, follow these steps.
+To add a physical measure in UI version 2, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
@@ -211,7 +211,7 @@ To add a physical measure in UI version 2, follow these steps.
 
 This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
-To add a physical measure in UI version 1, follow these steps.
+To add a physical measure in UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.
@@ -242,7 +242,7 @@ The configuration lets you define a set of calculated measure formulas that incl
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
-To add a calculated measure in UI version 2, follow these steps.
+To add a calculated measure in UI version 2, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
@@ -269,7 +269,7 @@ To add a calculated measure in UI version 2, follow these steps.
 
 This section applies when you're using [Inventory Visibility UI version 1](inventory-visibility-ui-version-2.md).
 
-To add a calculated measure in UI version 1, follow these steps.
+To add a calculated measure in UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.

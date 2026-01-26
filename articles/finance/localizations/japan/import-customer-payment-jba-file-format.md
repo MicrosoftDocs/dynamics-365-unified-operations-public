@@ -2,8 +2,8 @@
 title: Import customer payment with JBA file format
 description: Learn how to import EFT files with a JBA file format for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
-ms.date: 04/25/2025
+ms.author: johnmichalak
+ms.date: 12/08/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Japan
@@ -19,11 +19,11 @@ ms.custom:
 
 This article explains how to import electronic funds transfer (EFT) files with a Japanese Bankers Association (JBA) file format for Japan in Microsoft Dynamics 365 Finance.
 
-In Japan, the JBA file format is commonly used for EFT among banks. 
+In Japan, banks commonly use the JBA file format for EFT.
 
-The following procedure was created using the demo company data JPMF.
+The following procedure uses the demo company data JPMF.
 
-To import EFT files with a JBA file format, follow these steps.
+To import EFT files with a JBA file format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Payment journal**.
 1. Select **New**.
@@ -38,7 +38,5 @@ To import EFT files with a JBA file format, follow these steps.
 1. Close the report. The payment amount and description are imported and a control report is generated.  
 1. In the **Account** field, enter "JPMF-000001".
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

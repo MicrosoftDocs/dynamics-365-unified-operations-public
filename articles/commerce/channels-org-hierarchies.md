@@ -1,11 +1,10 @@
 ---
 title: Set up organization hierarchies
-description: This article describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
+description: Learn how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 01/20/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
@@ -19,9 +18,9 @@ ms.custom:
 
 This article describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 
-Before creating channels, you must set up your organization hierarchies.
+Before creating channels, set up your organization hierarchies.
 
-You can use organization hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that isn't legally required, but that is used for internal reporting.
+Use organization hierarchies to view and report on your business from various perspectives. For example, set up one hierarchy for tax, legal, or statutory reporting. Then, set up another hierarchy to report financial information that isn't legally required but is used for internal reporting.
 
 Before you create an organization hierarchy, you must create organizations. For more information, see [Create legal entities](channels-legal-entities.md) or [Create operating units](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json).
 
@@ -33,7 +32,7 @@ For more information, see the following articles.
 
 ## Create an organizational hierarchy
 
-To create an organizational hierarchy, follow these steps.
+To create an organizational hierarchy, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel Setup \> Organization hierarchies**.
 1. On the action pane, select **New**.
@@ -46,11 +45,11 @@ To create an organizational hierarchy, follow these steps.
 
 The following image shows an example organizational hierarchy created for a fictitious "Adventure Works" set of stores.
 
-![Example organizational hierarchy.](media/organizational-hierarchies.png)
+:::image type="content" source="media/organizational-hierarchies.png" alt-text="Screenshot of an example organizational hierarchy.":::
 
 ### Add organizations to a hierarchy
 
-To add organizations to a hierarchy, follow these steps.
+To add organizations to a hierarchy, follow these steps:
 
 1. In the list, find and select the desired record. Select your hierarchy.
 1. On the action pane, select **View**.
@@ -59,7 +58,7 @@ To add organizations to a hierarchy, follow these steps.
 
 The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall," "Outlet," "Online," and "Call Center" channels. Various retail, call center, and online channels can then be added to each.
 
-![Example hierarchy designer.](media/hierarchy-designer.png)
+:::image type="content" source="media/hierarchy-designer.png" alt-text="Screenshot of the example hierarchy designer.":::
 
 ## Additional resources
 

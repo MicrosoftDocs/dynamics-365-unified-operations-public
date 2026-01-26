@@ -34,7 +34,7 @@ The following screenshot shows an example of a time series where two time fences
 
 ## Manage time fences
 
-To view, create, edit, or delete a time fence, follow these steps.
+To view, create, edit, or delete a time fence, follow these steps:
 
 1. On the navigation pane, select **Configuration** \> **Time fences**.
 

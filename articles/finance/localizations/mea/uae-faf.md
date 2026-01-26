@@ -49,7 +49,7 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="features"></a>Enable features in the Feature management workspace
 
-To enable features in the Feature management workspace, follow these steps.
+To enable features in the Feature management workspace, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Feature management** workspace.
 1. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
@@ -64,7 +64,7 @@ To enable features in the Feature management workspace, follow these steps.
 
 ### <a name="gl-param"></a>Select the ER configuration in general ledger parameters
 
-To select the ER configuration in general ledger parameters, follow these steps.
+To select the ER configuration in general ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **FTA Tax Audit File - FAF in TXT (AE)**.
@@ -81,7 +81,7 @@ The first section of the FAF for the UAE represents the following information ab
 
 ## Generate a FAF for the UAE
 
-To generate a FAF for the UAE, follow these steps.
+To generate a FAF for the UAE, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 1. In the **Electronic report parameters** dialog box, set the following fields.

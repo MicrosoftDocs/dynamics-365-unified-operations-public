@@ -16,7 +16,7 @@ This article provides step-by-step instructions on how to export posted trade ag
 
 ## Convert posted trade agreement lines
 
-To convert posted trade agreement lines into unposted lines, follow these steps.
+To convert posted trade agreement lines into unposted lines, follow these steps:
 
 1. Open the list of active trade agreement lines for your vendor or customer.
 

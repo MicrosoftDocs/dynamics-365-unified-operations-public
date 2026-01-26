@@ -4,7 +4,7 @@ description: Learn about guidelines for taking traces, including prerequisites a
 author: ttreen
 ms.author: ttreen
 ms.topic: how-to
-ms.date: 11/28/2023
+ms.date: 01/05/2025
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -31,6 +31,10 @@ This tutorial requires that you access the environment as an administrator on th
 2. In the **Trace name** field, enter a name for the trace that you're about to capture.
 3. As required, set the **Include SQL parameter value** option to **Yes**.
 4. Select **Start trace**.
+
+> [!NOTE]
+> Client traces are limited to 1 GB. While the trace may appear to continue running, the file size is capped at this limit.
+
 5. Perform actions that must be analyzed, such as navigation to **Accounts payable** \> **Vendors** \> **All vendors**.
 6. When you've finished, select **Stop trace**.
 7. After the trace has stopped, select one of the following options. (For this tutorial, select the second option.)
@@ -74,7 +78,7 @@ This tutorial requires that you access the environment as an administrator on th
 
 You can capture a trace by using Windows Performance Monitor. This option is available only in cloud-hosted environments, on development virtual hard disks (VHDs), and on on-premises servers (also known as local business data \[LBD\] servers).
 
-To capture a trace by using Performance Monitor, follow these steps.
+To capture a trace by using Performance Monitor, follow these steps:
 
 1. Use Remote Desktop to access the cloud-hosted environment, development VHD, or on-premises Application Object Server (AOS) mode (Batch\\Interactive) that you want to collect event traces from.
 2. Open Windows Performance Monitor (**perfmon.msc**), and add a new user-defined data collector set.
@@ -118,7 +122,7 @@ Follow these steps to set the file size to 1,000 MB (1 gigabyte \[GB\]).
 2. In the **Properties** dialog box, on the **Stop condition** tab, select the **Restart the data collector set at limits** checkbox.
 3. In the **Maximum size** field, enter **1000**.
 
-After the trace reaches its maximum size, it starts to write again on top of the same file. If you want the trace to create additional files, follow these steps.
+After the trace reaches its maximum size, it starts to write again on top of the same file. If you want the trace to create additional files, follow these steps:
 
 1. Select the new user-defined trace, select and hold (or right-click) **DataCollector01**, and then select **Properties**.
 2. In the **Properties** dialog box, on the **File** tab, select the **Circular (requires a non-zero maximum file size)** checkbox.

@@ -22,7 +22,7 @@ After you've defined a hazardous material regulation and set up the related refe
 
 As part of the process of associating a released item with a hazardous material, you must specify the regulation code and the material. Different regulation codes might be associated with an item, depending on the modes of transport, and you can associate multiple regulations and material codes with each item.
 
-To set up a released product as a hazardous material, follow these steps.
+To set up a released product as a hazardous material, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select or create a product to open its **Released product details** page.
@@ -140,7 +140,7 @@ The following table describes the fields that are available on the **Environment
 
 ## <a name="stock-limits"></a>Set stock limits for hazardous products
 
-For safety reasons, you might have to limit the total amount of a given product that can be stocked at a single location. To set stock limits for a released product, follow these steps.
+For safety reasons, you might have to limit the total amount of a given product that can be stocked at a single location. To set stock limits for a released product, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select a product to open its **Released product details** page.
@@ -161,7 +161,7 @@ After a sales order is finalized and ready to be shipped, it can be released to 
 
 ### View hazardous material scores for each shipment line
 
-The **Shipment details** page for a shipment shows the total hazardous material weight and point values that have been calculated for each load line that is included in that shipment. To view the scores and weights, follow these steps.
+The **Shipment details** page for a shipment shows the total hazardous material weight and point values that have been calculated for each load line that is included in that shipment. To view the scores and weights, follow these steps:
 
 1. Go to **Warehouse management \> Shipments \> All shipments**.
 1. Select a shipment to open its **Shipment details** page.
@@ -174,7 +174,7 @@ The **Shipment details** page for a shipment shows the total hazardous material 
 
 The system can evaluate whether all the hazardous materials that are included in a shipment are suitable to be shipped together. To evaluate compatibility, the system checks the compatibility group that is assigned to each product that is included in the shipment. Learn more in [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
 
-To run the compatibility check, follow these steps.
+To run the compatibility check, follow these steps:
 
 1. Go to **Warehouse management \> Shipments \> All shipments**.
 1. Select a shipment to open its **Shipment details** page.
@@ -186,7 +186,7 @@ You receive a message that informs you of the results of the check.
 
 ### View hazardous material scores for each load line
 
-The **Load details** page for a load shows the total hazardous material weight and point values that have been calculated for that load and for each load line. To view the scores and weights, follow these steps.
+The **Load details** page for a load shows the total hazardous material weight and point values that have been calculated for that load and for each load line. To view the scores and weights, follow these steps:
 
 1. Go to **Warehouse management \> Shipments \> All loads**.
 1. Select a load to open its **Load details** page. (You can also open load details by selecting a link from a related shipment.)
@@ -201,7 +201,7 @@ The **Load details** page for a load shows the total hazardous material weight a
 
 The system can evaluate whether all the hazardous materials that are included in a load are suitable to be shipped together. To evaluate compatibility, the system checks the compatibility group that is assigned to each product that is included in the load. Learn more in [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
 
-To run the compatibility check, follow these steps.
+To run the compatibility check, follow these steps:
 
 1. Go to **Warehouse management \> Shipments \> All loads**.
 1. Select a shipment to open its **Load details** page. (You can also open load details by selecting a link from a related shipment.)

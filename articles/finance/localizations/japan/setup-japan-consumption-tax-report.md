@@ -2,9 +2,9 @@
 title: Set up Japan consumption tax report
 description: Learn how to set up the system to support the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/09/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -25,7 +25,7 @@ The procedures use the demo data company JPMF.
 
 ## Enable the consumption tax report
 
-To enable the consumption tax report, follow these steps.
+To enable the consumption tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
 1. Select the **Sales tax** FastTab.
@@ -34,7 +34,7 @@ To enable the consumption tax report, follow these steps.
 
 ## Configure tax reporting accounts
 
-To configure tax reporting accounts, follow these steps.
+To configure tax reporting accounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> Tax reporting accounts**.
 1. Select **Edit**.
@@ -43,7 +43,7 @@ To configure tax reporting accounts, follow these steps.
 
 ## Enter Japan reporting information for a legal entity
 
-To enter Japan reporting information for a legal entity, follow these steps.
+To enter Japan reporting information for a legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Expand the **Registration numbers** section.
@@ -53,14 +53,14 @@ To enter Japan reporting information for a legal entity, follow these steps.
 
 ## Enter report setup information for a sales tax code
 
-To enter report setup information for a sales tax code, follow these steps.
+To enter report setup information for a sales tax code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Use the Quick Filter to find records. For example, filter on the **Sales tax code** field with a value of "JP Cons".
 1. Expand the **Report setup** section.
 1. Select **Edit**.
 1. Confirm that the reporting codes are configured properly using the information in the following table.
-      
+
 ### Reporting codes in Japanese sales tax report base items
 
 | **Reporting code** | **Reporting code name**                                                               | **Calculation sheet column**                                  | **3 - (1) report column**  | **3 - (2) report**  **column**         |
@@ -93,7 +93,5 @@ To enter report setup information for a sales tax code, follow these steps.
 | 9210               | Taxable import - Credit note                                                          | \-                                                            |                            |                                        |
 | 9214               | Taxable purchase related to non-taxable sales - Credit note                           | Item 8                                                        | Item 4                     | Item 22-Item 23 (at tax rates)         |
 | 9215               | Common taxable purchase in common - Credit note                                       | Item 8, Item 15 (if Ratio \<0.95 & Individual method)         | Item 4                     | Item 22-Item 23 (at tax rates)         |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

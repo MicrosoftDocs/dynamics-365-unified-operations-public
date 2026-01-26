@@ -30,7 +30,7 @@ To add the custom data part of the package, override the **addAdditionalCustomer
 - Maintain data integrity between the **Customer** table and the additional data that is fetched. This additional data includes the extension tables.
 - All the extension and synchronization tables must have write permissions for the CDX framework to write the data to the table.
 
-To create the custom method to add the data part of the Customer CDX data package, follow these steps.
+To create the custom method to add the data part of the Customer CDX data package, follow these steps:
 
 1. Open Microsoft Visual Studio.
 1. On the **Dynamics 365** menu, select **Model management \> Create model**.

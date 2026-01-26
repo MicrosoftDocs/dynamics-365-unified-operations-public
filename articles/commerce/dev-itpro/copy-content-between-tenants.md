@@ -25,7 +25,7 @@ The copy operation is performed by the content management system (CMS) job servi
 
 If you want to do a partial copy or audit the specific omnichannel media and product assignments that you copy, we recommend that you use the media library's bulk import and export functionality instead of the copy operation.
 
-To copy all the omnichannel content from one tenant to another, follow these steps.
+To copy all the omnichannel content from one tenant to another, follow these steps:
 
 1. In site builder's tenant view, on the **Sites** page, on the command bar, select **Copy to** \> **Omnichannel content**.
 1. In the **Tenant information** step, enter the ID of the source tenant that you want to copy from, and then select **Next**. If you don't know the source tenant ID, it's usually immediately after the `commerce.dynamics.com` domain in the source tenant's site builder URL (for example, `...commerce.dynamics.com/<tenant ID>/...`).

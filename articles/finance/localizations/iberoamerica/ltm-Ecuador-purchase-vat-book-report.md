@@ -41,7 +41,7 @@ Before you complete the steps in this article to generate and print the report, 
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes that is used in the transactions. Depending on the country/region that you want to configure the report for, the applicable conditions are shown.
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Open the **Electronic Reporting** workspace, and select **Reporting configurations**.
 1. Select **Purchases Vat Book Details**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -66,7 +66,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Run the purchase VAT book details report
 
-To generate the purchase VAT book details report, follow these steps.
+To generate the purchase VAT book details report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **EC Purchases VAT Book details**.

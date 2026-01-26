@@ -2,9 +2,9 @@
 title: Customize German audit file configuration
 description: Learn how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition in Microsoft Dynamics 365 Finance.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 12/16/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak    
@@ -21,18 +21,18 @@ This article explains how to customize the German audit file configuration by ad
 
 The following procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
 
-To add a new table group and select a table with fields for data export definition, follow these steps.
+To add a new table group and select a table with fields for data export definition, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration > Workspaces > Electronic reporting**.
 1. Select **Configurations**.
-3. Select **Show filters**.
+1. Select **Show filters**.
 1. Add filter.
 1. Select **Apply**.
 1. Select **Model designer**.
 1. In the tree, select **enumTableGroup**.
 1. Select **New**.
 1. In the **Name** field, enter a value.
-1. In the **Description** field, enter a value.
+1. Enter a value in the **Description** field.
 1. Select **Map model to datasource**.
 1. Select **Designer**.
 1. In the tree, select **Dynamics Ax\Table records**.
@@ -75,9 +75,7 @@ To add a new table group and select a table with fields for data export definiti
 1. Close the page.
 1. Select **Change status**.
 1. Select **Complete**.
-1. In the **Description** field, enter a value.
+1. Enter a value in the **Description** field.
 1. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

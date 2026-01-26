@@ -86,7 +86,7 @@ Learn more in [Quality management test instruments](quality-test-instruments.md)
 
 Use the **Test locations** page to establish a list of locations where test instruments can be kept. In this way, workers who perform tests on quality orders can find the test instruments that they need. Later, you can assign locations to each test instrument tag as required.
 
-To set up test locations, follow these steps.
+To set up test locations, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test locations**.
 1. Use the buttons on the Action Pane to create new test locations or edit existing ones as required. (You can also delete existing test locations.)
@@ -99,7 +99,7 @@ To set up test locations, follow these steps.
 
 Use the **Test departments** page to establish a list of departments that use test instruments. In this way, users can find a test instrument and/or the people who work with it. Later, you can assign departments to each test instrument tag as required.
 
-To set up test departments, follow these steps.
+To set up test departments, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test departments**.
 1. Use the buttons on the Action Pane to create new test departments or edit existing ones as required. (You can also delete existing test departments.)
@@ -112,7 +112,7 @@ To set up test departments, follow these steps.
 
 For each type of instrument calibration that you perform, you can define a *calibration procedure* in Supply Chain Management. Calibration procedures help you track the steps that are required to calibrate a specific type of instrument. You can also use them to track the external vendors that you use to calibrate instruments. Later, when you set up a test instrument tag, you can assign a calibration procedure to it.
 
-To set up a calibration procedure, follow these steps.
+To set up a calibration procedure, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Calibration procedures**.
 1. Create a new calibration procedure, or select an existing one that you want to edit.
@@ -129,7 +129,7 @@ To set up a calibration procedure, follow these steps.
 
 Use calibration groups to group test instrument tags and assign calibration schedules to them. All test instrument tags that are assigned to a given calibration group share the same calibration method, calibration schedule, and other settings.
 
-To set up a calibration group, follow these steps.
+To set up a calibration group, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Calibration groups**.
 1. Create a new calibration group, or select an existing one that you want to edit.
@@ -263,7 +263,7 @@ The *Create calibration records* batch job automatically creates calibration rec
 - If the **Calibration method** value is *Usage*, the job checks the **Usage count since last calibration** and **Maximum usage before calibration** fields to determine whether a calibration record should be created.
 - If the **Calibration method** value is *Periodic*, the job checks the **Next calibration date** field to determine whether a calibration record should be created.
 
-To run or schedule the batch job, follow these steps.
+To run or schedule the batch job, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Create calibration records**.
 1. On the **Records to include** FastTab, set up filters and constraints to define which test instrument tags are checked. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
@@ -280,7 +280,7 @@ The three possible calibration results are *Pass*, *Limited pass*, and *Fail*. F
 
 A completed or approved calibration can be reopened at any time. You can view a history of all reopened calibrations.
 
-To perform a calibration, follow these steps.
+To perform a calibration, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Calibrate test instruments**.
 1. All the open records that are listed on the page represent calibrations that are due. Either select one of these records or select **New** on the Action Pane to create a new one.
@@ -333,13 +333,13 @@ To perform a calibration, follow these steps.
 
 ## Reopen an approved calibration record
 
-If you must edit an approved calibration record, follow these steps.
+If you must edit an approved calibration record, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Calibrate test instruments**.
 1. Find and select the relevant calibration record. The record must be in the *Fail* or *Approved* state.
 1. On the Action Pane, on the **Calibrate instruments** tab, select **Reopen calibration**. The completed and approved fields are cleared, a *reopen calibration history* record is created, and the calibration record returns to the *Open* state. You can now edit and complete the calibration record in the usual way.
 
-To view a history of reopened calibration records, follow these steps.
+To view a history of reopened calibration records, follow these steps:
 
 - Go to **Inventory management** \> **Inquiries and reports** \> **Quality management** \> **Calibration reopen history log**.
 - Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Calibrate test instruments**. On the Action Pane, on the **Calibrate instruments** tab, select **Calibration reopen history log**.
@@ -350,14 +350,14 @@ You set up and manage quality tests by using [quality orders](quality-orders.md)
 
 When you assign a test group to a quality order, each line from the selected test group becomes a line on the new quality order. The quality order also inherits the test instrument type from the test group. When you create a quality order, you can (and in some cases must) assign a specific test instrument tag to each line. In this way, you specify the physical instrument that must be used for the test.
 
-To view and assign [test instrument types](quality-test-instruments.md) for a test group, follow these steps.
+To view and assign [test instrument types](quality-test-instruments.md) for a test group, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. Create a new test group, or select an existing one.
 1. At the bottom of the page, on the **Overview** tab, create or select a test group line.
 1. On the **Test** tab, in the **Test instrument** field, select the test instrument type.
 
-To view and assign [test instrument tags](#tags) to a quality order, follow these steps.
+To view and assign [test instrument tags](#tags) to a quality order, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Quality orders**.
 1. Create a new quality order, or select an existing one.
@@ -384,7 +384,7 @@ Calibration label layouts are designed and printed in Zebra Programming Language
 
 To get started quickly, you can generate a predesigned ZPL layout for a calibration label. This layout is designed to be used with Zebra printers and can be modified as required. To add the predesigned ZPL layout to your system, go to **Inventory management** \> **Setup** \> **Quality control** \> **Create sample calibration labels**. The system then generates a label layout that is named *SampleLabel_2X1*.
 
-To customize the standard layout or create new ones, follow these steps.
+To customize the standard layout or create new ones, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Calibration label layout**.
 1. Use the buttons on the Action Pane to create a new calibration label layout or edit an existing one as required. (You can also delete existing layouts.)
@@ -403,7 +403,7 @@ When you print a calibration label, the system uses the layout that is assigned 
 
 ### Print calibration labels
 
-To print calibration labels for a physical test instrument, follow these steps.
+To print calibration labels for a physical test instrument, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instrument tags**.
 1. Select the test instrument tag that you want to print a calibration label for.
@@ -417,14 +417,14 @@ To print calibration labels for a physical test instrument, follow these steps.
 
 Calibration certificates can be printed for each calibration record. They document the calibration process and results for a test instrument, and are used to verify that the test instrument was calibrated according to the specified procedures and standards. Calibration certificates include information such as the test instrument tag number, the calibration procedure name, the calibration result, the name of the person who performed the calibration, and the next calibration date.
 
-To print a certificate for the last closed calibration for a test instrument tag, follow these steps.
+To print a certificate for the last closed calibration for a test instrument tag, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test instrument tags**.
 1. Select the test instrument tag that you want to print a calibration label for.
 1. On the Action Pane, on the **Print** tab, select **Calibration certificate**.
 1. The certificate is generated and shown on your screen. You can review, print, and/or export it.
 
-To print a certificate for any selected calibration record, follow these steps.
+To print a certificate for any selected calibration record, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Calibrate test instruments**.
 1. Select the test calibration record that you want to print a calibration label for.
@@ -435,7 +435,7 @@ To print a certificate for any selected calibration record, follow these steps.
 
 The calibration schedule report provides a list of test instruments that must be calibrated. However, you can customize the selection criteria to support many other uses. For example, you can filter by owner or calibration method. You can use the **Show all due today** option to create a list of test instrument tags where the due date of the next calibration is before the current date.
 
-To print a calibration schedule report, follow these steps.
+To print a calibration schedule report, follow these steps:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **Quality management** \> **Test instrument calibration schedule**.
 1. In the **Test instrument calibration schedule** dialog, on the **Parameters** FastTab, set the **Show all due today** option to one of the following values:

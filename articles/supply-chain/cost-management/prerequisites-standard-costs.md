@@ -1,8 +1,8 @@
 ---
 title: Prerequisites for standard costs
 description: Learn about the basic steps for using standard costs, including a step-by-step process for setting up standard costs and additional resources. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventStdCostConv, CostingVersion
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.custom:
 
 This article describes the basic steps for using standard costs. Subsequent steps depend on the company's operations. For example, the steps differ for a non-manufacturing environment, a manufacturing environment that doesn't use routings, and a manufacturing environment that uses routings.
 
-To set up standard costs, follow these steps.
+To set up standard costs, follow these steps:
 
 1. Create an item model group for standard costs.
 

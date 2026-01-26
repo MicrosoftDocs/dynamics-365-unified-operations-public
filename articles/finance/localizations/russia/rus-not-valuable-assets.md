@@ -29,7 +29,7 @@ After you purchase and register NVFAs, you can perform the following tasks:
 
 ## Set up fixed assets parameters for NVFAs
 
-To set up fixed assets parameters for NVFAs, follow these steps.
+To set up fixed assets parameters for NVFAs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Fixed assets parameters**.
 1. In the **Base value model** field, select the default base value model.
@@ -40,14 +40,14 @@ To set up fixed assets parameters for NVFAs, follow these steps.
 
 ## Set up fixed asset groups for NVFA
 
-To set up fixed asset groups for NVFA, follow these steps.
+To set up fixed asset groups for NVFA, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **FA groups**.
 1. On the **FA groups** page, create a record, and fill in the fields. In the **Type of group** field, select **NVFA**.
 
 ## Set up the identification of fixed asset groups for NVFAs
 
-To set up the identification of fixed asset groups for NVFAs, follow these steps.
+To set up the identification of fixed asset groups for NVFAs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Identification of FA groups**.
 1. On the **Condition for FA group identification** page, create a record, and fill in the fields.
@@ -60,7 +60,7 @@ To set up the identification of fixed asset groups for NVFAs, follow these steps
 
 Use this procedure to set up inventory dimensions for NVFAs, working clothes, and special rigging items.
 
-To set up inventory dimensions for NVFAs, follow these steps.
+To set up inventory dimensions for NVFAs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Setup** \> **Dimensions and variant groups** \> **Tracking dimension groups**.
 1. Create a dimension group.
@@ -72,7 +72,7 @@ To set up inventory dimensions for NVFAs, follow these steps.
 
 ## Set up items as NVFAs
 
-To set up items as NVFAs, follow these steps.
+To set up items as NVFAs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**.
 1. Create a new item, or double-click an existing item to open the item record.
@@ -84,7 +84,7 @@ To set up items as NVFAs, follow these steps.
 
 Use this procedure to set up the members and chairperson of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
 
-To set up officials for the NVFA Statement of writing-off, follow these steps.
+To set up officials for the NVFA Statement of writing-off, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 1. On the **Fixed assets** tab, select **NVFA Statement of writing-off (No. MB-8)**.
@@ -94,7 +94,7 @@ To set up officials for the NVFA Statement of writing-off, follow these steps.
 
 ## Register an NVFA by using a purchase order
 
-To register an NVFA by using a purchase order, follow these steps.
+To register an NVFA by using a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
 1. On the **Action Pane**, select **New** \> **Purchase order**.
@@ -112,7 +112,7 @@ To register an NVFA by using a purchase order, follow these steps.
 
 Use this procedure to automatically create NVFA records on the **Not valuable FAs** page (**Fixed assets (Russia)** \> **Common** \> **Not valuable FAs**), and to automatically create fixed asset journals for NVFA, putting into operation transactions and depreciation.
 
-To generate NVFA records, putting into operation transactions and depreciation transactions for NVFAs, follow these steps.
+To generate NVFA records, putting into operation transactions and depreciation transactions for NVFAs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Journals** \> **Working clothes/Special riggings/NVFAs issue**.
 1. Select **New** to create a journal, and fill in the fields.
@@ -128,7 +128,7 @@ To generate NVFA records, putting into operation transactions and depreciation t
 
 ## Register an NVFA using the Not valuable FAs page
 
-To register an NVFA using the Not valuable FAs page, follow these steps.
+To register an NVFA using the Not valuable FAs page, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Not valuable FAs**.
 1. Select **Fixed asset** to create an NVFA.
@@ -150,7 +150,7 @@ Use this procedure to generate and print the **NVFA Statement of disposal (No. M
 > [!NOTE]
 > You can generate the report from the **Working clothes**, **Special rigging**, and **Not valuable FAs** pages only after you generate the report from the fixed asset journal.
 
-To generate a disposal transaction and print the NVFA Statement of disposal from the fixed asset journal, follow these steps.
+To generate a disposal transaction and print the NVFA Statement of disposal from the fixed asset journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Create a journal.
@@ -188,7 +188,7 @@ To generate a disposal transaction and print the NVFA Statement of disposal from
 
 Use this procedure to generate and print the **NVFA Statement of writing off (No. MB-8)** report from the fixed asset journal after you enter writing-off or disposal transactions. For transactions that have a status of **Written off** or **Written off (dismantlement)**, the report can also be printed from the **Working clothes**, **Special rigging**, or **Not valuable FAs** page.
 
-To generate a writing-off transaction and print the NVFA statement of writing off from the fixed asset journal, follow these steps.
+To generate a writing-off transaction and print the NVFA statement of writing off from the fixed asset journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Create a journal.

@@ -28,7 +28,7 @@ The migration process from the legacy digital signing solution to the current fi
 
 To help prevent scenarios where an event or transaction is signed twice (by both the legacy extension and the current extension), or where an event or transaction can't be signed because of an incorrect or incomplete configuration, we recommend that you turn off all POS devices that use the legacy solution and then update all of them simultaneously. For example, you can do this simultaneous update on a store-by-store basis, by updating each store's functionality profile.
 
-To complete the migration process, follow these steps.
+To complete the migration process, follow these steps:
 
 1. Update the Commerce headquarters components.
 1. In Commerce headquarters, [configure the fiscal integration functionality for Norway](#configure-fiscal-integration).
@@ -55,7 +55,7 @@ You must adjust your receipt formats so that they use updated custom fields. For
 
 ### Enable fiscal integration
 
-When you're ready to enable the fiscal integration functionality in Commerce headquarters, follow these steps.
+When you're ready to enable the fiscal integration functionality in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.

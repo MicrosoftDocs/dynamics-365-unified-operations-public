@@ -4,7 +4,7 @@
 title: Task management
 description: This article explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 12/02/2025
 ms.topic: how-to
 # optional metadata
 
@@ -162,7 +162,7 @@ After a calendar is set up, it's associated with a checklist template. In that w
 
 Sometimes, a group of individuals is responsible for a task. For example, a group of IT workers might be responsible for preparing laptops for new hires.
 
-To set up an assignment group, follow these steps.
+To set up an assignment group, follow these steps:
 
 1. On the **Group assignment** page, select **New**.
 1. Enter a name (for example, **IT Laptop**) and a description for the group.

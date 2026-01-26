@@ -20,7 +20,7 @@ This article explains how to create and post receipt transactions for deferrals 
 
 You use the **Journal voucher** page to create a receipt transaction for deferrals that were manually created. When you post the receipt transaction, the status of the deferrals is updated to **In process**.
 
-To create a receipt transaction for deferrals that were manually created, follow these steps.
+To create a receipt transaction for deferrals that were manually created, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal entries** \> **Deferrals journal**.
 1. On the Action Pane, select **New**.
@@ -44,7 +44,7 @@ You use the **Reverse transaction** page to reverse a receipt transaction that w
 
 Deferrals that are created after the fixed asset is disposed of are reversed when the fixed asset transaction is reversed.
 
-To reverse a receipt transaction, follow these steps.
+To reverse a receipt transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals** \> **Deferrals**.
 1. Select a deferral ID, and then, on the Action Pane, on the **Deferrals** tab, in the **Books** group, select **Deferrals models** to open the **Deferrals models** page.

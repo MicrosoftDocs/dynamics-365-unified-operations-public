@@ -1,54 +1,43 @@
 ---
-# required metadata
-
 title: Manually create curated recommendations
-description: This article explains how merchandizers can manually create and manage product lists for Microsoft Dynamics 365 Commerce customers.
+description: Learn how merchandisers can manually create and manage product lists for Microsoft Dynamics 365 Commerce customers.
 author: bebeale
-ms.date: 04/21/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.date: 01/21/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - bap-template
 ---
 
 # Manually create curated recommendations
 
 [!include [banner](includes/banner.md)]
 
-This article explains how merchandizers can manually create and manage product recommendations lists for Microsoft Dynamics 365 Commerce customers.
+This article explains how merchandisers can manually create and manage product recommendations lists for Microsoft Dynamics 365 Commerce customers.
 
 Curated lists are collections of individual content, created and curated by people.  
 
 ## Create a new list
 
-To create a curated product recommendation list, follow these steps.
+To create a curated product recommendation list, follow these steps:
 
-1. Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation lists**.
+1. Go to **Retail and Commerce > Product recommendations > Recommendation lists**.
 1. Select **New**.
-1. In the **List Id** field, enter a value.
-1. In the **List name** field, enter a value.
-    - The **List name** is the title of the list that will appear in the curated lists section of the **Product collection** module.
-1. To add products to the list, select **Add products**.
-1. To change the order of the products in the list, enter a value in the **Display order** column.
-    - If two products have the same display order value, then the final order of those two results may differ from the back office.
+1. Enter a value in the **List Id** field.
+1. Enter a value in the **List name** field.
+    - The **List name** is the title of the list that appears in the curated lists section of the **Product collection** module.
+1. Select **Add products** to add products to the list.
+1. Enter a value in the **Display order** column to change the order of the products in the list.
+    - If two products have the same display order value, the final order of those two results might differ from the back office.
 1. Select **Save** to save the list.
 
-## Example List
+## Example list
 
-![Example Curated List in back office.](./media/examplecuratedrecolist.png)
+:::image type="content" source="./media/examplecuratedrecolist.png" alt-text="Screenshot of an example curated recommendation list in headquarters.":::
 
 ## Additional resources
 

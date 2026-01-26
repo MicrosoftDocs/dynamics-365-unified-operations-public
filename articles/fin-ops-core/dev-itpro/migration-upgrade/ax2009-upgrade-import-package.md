@@ -1,8 +1,8 @@
 ---
 title: AX 2009 migration - Import packages
 description: Learn about how to import a migrated data package from Microsoft Dynamics AX 2009 into finance and operations.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 09/13/2018
 ms.reviewer: johnmichalak
@@ -22,7 +22,7 @@ Data can be imported for a group of logically related entities that are sequence
 - Finance and operations
 
 ## AX 2009
-You can import data for migration directly from the source system. Follow these steps.
+You can import data for migration directly from the source system. follow these steps:
 
 1. In AX 2009, in the navigation pane, click **Data migration**.
 2. Go to **Common** \> **Create migration group**.
@@ -30,7 +30,7 @@ You can import data for migration directly from the source system. Follow these 
 4. In the **Export data** form, select the **Import package in target** check box, and then click **OK**.
 
 ## Finance and operations
-You can import data for migration by using your finance and operations environment. Follow these steps.
+You can import data for migration by using your finance and operations environment. follow these steps:
 
 1. Sign in to your environment by using an Administrator role.
 2. On the dashboard, select the **Data Management** workspace.

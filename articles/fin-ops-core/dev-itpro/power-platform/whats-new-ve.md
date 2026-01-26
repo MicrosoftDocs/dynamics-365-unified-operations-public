@@ -2,9 +2,9 @@
 title: What's new or changed in the Virtual Entity solution provider?
 description: Learn about new features and bug fixes that have been released in the Virtual Entity solution provider for finance and operations apps.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 06/22/2023
+ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -15,7 +15,7 @@ ms.search.validFrom: 2023-06-1
 
 [!include[banner](../includes/banner.md)]
 
-The [Virtual Entity solution provider for finance and operations apps](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance_and_operations_virtual_entity) is a Microsoft AppSource package that provides near-real-time interaction with finance and operations apps data on Microsoft Power Platform.
+The [Virtual Entity solution provider for finance and operations apps](https://marketplace.microsoft.com/product/dynamics-365/mscrm.finance_and_operations_virtual_entity) is a Microsoft Marketplace package that provides near-real-time interaction with finance and operations apps data on Microsoft Power Platform.
 
 ## July 2023 release
 
@@ -25,7 +25,7 @@ The July release of Finance and Operations Virtual Entity Solution Changes in Re
 
 | Type | Description | Status |
 |---|---|---|
-| Bug fix | Create finance and operations apps virtual entity OData actions using a unique name, to avoid naming conflicts. Action names now include the entity name, for example, **mserp_\<entity name\>_\<action name\>**, to ensure uniqueness. | General availability |
+| Bug fix | Create finance and operations apps virtual entity OData actions by using a unique name to avoid naming conflicts. Action names now include the entity name, for example, **mserp_\<entity name\>_\<action name\>**, to ensure uniqueness. | General availability |
 | Bug fix | Fixed error **An item with the same key has already been added**. | General availability |
 | Bug fix | Solution supports .cab files instead of .zip files. | General availability |
 | Bug fix | Removed **preview** from change tracking labels. | General availability |
@@ -48,7 +48,7 @@ The June release of Finance and Operations Virtual Entity Solution Changes in Re
 | Feature | You can access fields that expose aggregation results. For example, if the on-hand inventory of Surface Pro 128 GB is 10 at the Chicago site and 15 at the Montana site, the results are aggregated and exposed as 25. | General availability |
 | Feature | You can call Dataverse tables and APIs from finance and operations apps by using `IOrganizationService`. | General availability |
 | Performance improvement | The performance of the virtual entity metadata generation process for finance and operations apps is improved. | General availability |
-| Bug fix | An issue is corrected, where the translation of data that's returned from finance and operations apps causes the following error message: "An item with the same key has already been added." | General availability |
+| Bug fix | An issue is corrected where the translation of data that's returned from finance and operations apps causes the following error message: "An item with the same key has already been added." | General availability |
 | Bug fix | The query expression for joins to `CompanyInfoEntity` is fixed to prevent an SQL error. | General availability |
 
 ### Business event changes
@@ -64,6 +64,6 @@ The June release of Finance and Operations Virtual Entity Solution Changes in Re
 
 | Type | Description | Status |
 |---|---|---|
-| Bug fix | Improvements have been added to the authorization experience during development. | General availability |
-| Bug fix | The retention flow has been disabled. | General availability |
-| Bug fix | A null-reference exception occurs during virtual entity metadata creation. | General availability |
+| Bug fix | Improvements are added to the authorization experience during development. | General availability |
+| Bug fix | The retention flow is disabled. | General availability |
+| Bug fix | A null-reference exception is fixed during virtual entity metadata creation. | General availability |

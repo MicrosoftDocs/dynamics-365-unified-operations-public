@@ -47,7 +47,7 @@ Yes, the Approvals Management mobile app is available in all the same languages 
 
 ## Where can I go to discuss the mobile app with the community and submit suggestions to Microsoft?
 
-The [Dynamics 365 Procurement and Sourcing group on Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=69010219008&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage group participants include Microsoft partners, customers, experts, and employees.
+The [D365 Procurement and Sourcing](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDcyOTAxMTIifQ) community on Microsoft Viva Engage is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage community participants include Microsoft partners, customers, experts, and employees.
 
 ## I receive the following error: "Error when trying to retrieve data from the network." How can I diagnose the issue?
 
@@ -69,7 +69,7 @@ This error can occur because the *Approvals Management app* role doesn't have th
 
 ## When I update the mobile app, I receive the following error: "Could not delete solution...because it has been modified." How can I fix the error?
 
-The Approvals Management mobile app is a canvas app. The update process fails with an error if it detects that the canvas app has been customized. This behavior helps prevent the updater from overwriting your customizations. To fix the error, remove any customization layers by restoring the oldest version of the app. If the oldest version is more than six months old, you must manually delete the `msdyn_ApprovalsManagementAnchor` and `msdyn_ApprovalsManagement` solutions, and then reinstall the app from Dynamics 365 apps or AppSource.
+The Approvals Management mobile app is a canvas app. The update process fails with an error if it detects that the canvas app has been customized. This behavior helps prevent the updater from overwriting your customizations. To fix the error, remove any customization layers by restoring the oldest version of the app. If the oldest version is more than six months old, you must manually delete the `msdyn_ApprovalsManagementAnchor` and `msdyn_ApprovalsManagement` solutions, and then reinstall the app from Dynamics 365 apps or Marketplace.
 
 Consider cloning the canvas app before you remove your customizations, just in case you want to copy the customizations to the updated app.
 

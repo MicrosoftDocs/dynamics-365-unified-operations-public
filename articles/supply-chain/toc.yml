@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.46 (December 2025)
+          href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
           href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
@@ -303,7 +305,7 @@
                   - name: Vendor electronic invoice import in Chile
                     href: ../finance/localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
               - name: Costa Rica
-                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
+                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration.md?context=/dynamics365/context/supply-chain                        
               - name: Denmark
                 href: ../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
               - name: Egypt
@@ -535,6 +537,8 @@
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
         - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Manage test instrument calibration with Asset Management (preview)
+          href: asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md
       - name: Capacity planning
         items:
         - name: Calculate capacity load
@@ -1440,7 +1444,7 @@
         - name: Configure model mappings
           items: 
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
           - name: Manage several derived mappings for a single model root
@@ -1623,11 +1627,25 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
+        - name: Sample management (preview)
+          items: 
+          - name: Sample management overview
+            href: inventory/quality-sample-management-overview.md
+          - name: Enable and configure sample management
+            href: inventory/quality-sample-management-admin.md
+          - name: Set up continuous sampling
+            href: inventory/quality-sample-management-continuous.md
+          - name: Initiate an inline sample
+            href: inventory/quality-sample-management-inline.md
+          - name: Manage and process samples
+            href: inventory/quality-sample-management-use.md
+          - name: Sample management reports and auditing
+            href: inventory/quality-sample-management-audit-reports.md
         - name: Test instrument calibration
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans
           href: inventory/quality-flexible-sampling-plans.md
-        - name: Acceptance sampling (preview)
+        - name: Acceptance sampling
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
@@ -1835,7 +1853,7 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Lean manufacturing for Planning Optimization (preview)
+        - name: Lean manufacturing for Planning Optimization
           href: master-planning/lean-for-planning-optimization.md
         - name: Unified developer experience for planning optimization (preview)
           href: supply-chain-dev/planning-optimization-dev.md
@@ -2089,6 +2107,8 @@
           href: demand-planning/forecast-algorithm-types.md
         - name: Naive forecasting (preview)
           href: demand-planning/naive-forecast-algorithm.md
+        - name: Croston's method forecasting (preview)
+          href: demand-planning/croston-method.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
         - name: Rolling forecasts
@@ -2281,6 +2301,8 @@
         href: unified-pricing-management/upm-pricing-management-overview.md
       - name: Turn on the Unified pricing management module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
+      - name: Migrate to unified pricing management (preview)
+        href: unified-pricing-management/upm-migrate-to-unified-pricing-management.md
       - name: Price attributes
         items:
         - name: Price attributes overview
@@ -2291,6 +2313,10 @@
           href: unified-pricing-management/upm-price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
+        - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
+          href: unified-pricing-management/upm-support-custom-attributes.md
+        - name: Example custom request handler code
+          href: unified-pricing-management/upm-custom-request-handler-example.md
       - name: Price groups
         items:
         - name: Price groups overview
@@ -2341,6 +2367,8 @@
           href: unified-pricing-management/upm-concurrence-within-codes.md
         - name: Resolving concurrency across price component codes
           href: unified-pricing-management/upm-concurrence-cross-codes.md
+      - name: Calculate prices and discounts without creating sales orders
+        href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
@@ -2427,6 +2455,8 @@
           href: procurement/supplier-com-agent-setup.md
         - name: Solve common problems when setting up the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup-faq.md
+        - name: Test the Supplier Communications Agent
+          href: procurement/supplier-com-agent-testing.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
@@ -2563,26 +2593,14 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Cross-company product sharing (preview)
+        - name: Cross-company product sharing
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
-        - name: Product lifecycle state
-          items:
-          - name: Product lifecycle state overview
-            href: pim/product-lifecycle.md
-          - name: Create a new product lifecycle state
-            href: pim/tasks/new-product-lifecycle-state.md
-          - name: Create a default product lifecycle state
-            href: pim/tasks/default-product-lifecycle-state.md
-          - name: Assign a product lifecycle state to a released product master
-            href: pim/tasks/product-lifecycle-state-released-product-master.md
-          - name: Assign a product lifecycle state to a released product
-            href: pim/tasks/product-lifecycle-state-released-product.md
-          - name: Find obsolete product variants
-            href: pim/tasks/obsolete-product-variants.md
-          - name: Exclude products from Master planning
-            href: pim/tasks/exclude-products-master-planning.md
+        - name: Product lifecycle states
+          href: pim/product-lifecycle.md
+        - name: Find obsolete released products or variants
+          href: pim/tasks/obsolete-product-variants.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -2707,8 +2725,6 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
-      - name: Product information management FAQ
-        href: pim/product-information-faq.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
@@ -3131,7 +3147,7 @@
           href: sales-marketing/line-charges-specific-unit.md
         - name: Period charges
           href: sales-marketing/period-charges.md
-        - name: Create a purchase order from a sales order
+        - name: Create purchase orders from sales orders
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
@@ -3927,22 +3943,18 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+          - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Install Warehouse Management mobile app V4 on Windows (preview)
-            href: warehousing/warehouse-app-install-certificate.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
             href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Use Microsoft Entra Conditional Access with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-conditional-access-enable.md
           - name: Mass deploy the mobile app with user-based authentication
             href: warehousing/warehouse-app-intune-user-based.md
-          - name: Service-based authentication
-            href: warehousing/warehouse-app-authenticate-service-based.md
-          - name: Mass deploy the mobile app with service-based authentication
-            href: warehousing/warehouse-app-intune.md
           - name: Mobile device user accounts
             href: warehousing/mobile-device-work-users.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
@@ -4227,8 +4239,6 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: Set up Agent management (production ready preview)
-        href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md  
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot

@@ -2,9 +2,9 @@
 title: Ledger, subledger, and subledger journal accounting entries overview
 description: Learn about ledgers and subledgers in Dynamics 365 finance and operations apps.
 author: prasungoel
-ms.author: prasungoel
+ms.author: twheeloc
 ms.topic: concept-article
-ms.date: 03/10/2025
+ms.date: 01/21/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -47,7 +47,7 @@ Each source document maintains the subledger journal account entries, which repr
 
 The subledger journal account entries are created through accounting rules that are defined through the posting profile for each module. Posting profiles use the main accounts from the chart of accounts that is defined in the ledger setup.
 
-To set up posting profiles in finance and operations apps, follow these steps.
+To set up posting profiles in finance and operations apps, follow these steps:
 
 - **Accounts payable:** Go to **Accounts payable** > **Setup** > **Vendor posting profile**.
 - **Accounts receivable:** Go to **Accounts receivable** \> **Setup** \> **Customer posting profile**.

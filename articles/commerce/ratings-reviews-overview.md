@@ -1,11 +1,10 @@
 ---
 title: Ratings and reviews overview
-description: This article covers ratings and reviews in Microsoft Dynamics 365 Commerce.
+description: Learn about ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 11/16/2022
+ms.date: 01/02/2026
 ms.topic: overview
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
@@ -16,7 +15,10 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](includes/banner.md)]
 
-This article covers ratings and reviews in Microsoft Dynamics 365 Commerce.
+This article explains ratings and reviews in Microsoft Dynamics 365 Commerce.
+
+> [!IMPORTANT]
+> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued soon.
 
 Ratings and reviews are crucial for e-commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-commerce website.
 
@@ -28,7 +30,7 @@ The following illustration shows how the ratings and reviews solution works in D
 
 ![Ratings and reviews in Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
-The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Because human approval isn't required, moderation costs are reduced. The system also offers moderator tools that can be used to respond to customer concerns, feedback, and take-down requests, and to address data requests from users.
+The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Because human approval isn't required, moderation costs are reduced. The system also offers moderator tools you can use to respond to customer concerns, feedback, and take-down requests, and to address data requests from users.
 
 The ratings and reviews solution provides widgets that show rating summaries in product lists, in search results, on product details page, and in other places. The widgets show complete review lists, and they also provide sorting and filtering options.
 
@@ -59,3 +61,5 @@ The following video provides an overview of ratings and reviews capabilities in 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+

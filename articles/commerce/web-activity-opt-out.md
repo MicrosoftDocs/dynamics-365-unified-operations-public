@@ -5,7 +5,7 @@ author: bebeale
 ms.date: 05/15/2020
 ms.topic: how-to
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
@@ -15,12 +15,12 @@ ms.search.form:
 ---
 
 # Opt out of web activity event collection
+
 [!include [banner](includes/banner.md)]
 
 This article explains how you can let customers opt out of web activity event collection in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce lets site administrators analyze the web activity of users of their e-commerce sites. In that way, they can better understand how their sites are used, and they can optimize the sites to provide an improved user experience and meet business objectives.
-
 
 ## Ways for administrators to implement an opt-out experience
 
@@ -44,6 +44,5 @@ Administrators can let authenticated users opt out of web activity event collect
 ### Custom extensions
 
 Administrators can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](e-commerce-extensibility/overview.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

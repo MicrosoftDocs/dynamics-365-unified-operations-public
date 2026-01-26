@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Belgium in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 03/17/2025
+ms.date: 11/18/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -18,10 +18,10 @@ ms.search.validFrom: 2025-03-01
 
 This article provides information to help you get started with Electronic invoicing for Belgium. It explains how to configure the system so that you can use the last-mile connector to generate, submit, and receive electronic invoices in the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format in Microsoft Dynamics 365 Finance.
 
-![Diagram that shows the e-invoice flow for Belgium.](../media/emea-bel-einoices-flow.jpg)
+:::image type="content" source="../media/emea-bel-einoices-flow.jpg" alt-text="Screenshot of Diagram that shows the e-invoice flow for Belgium.":::
 
 > [!NOTE]
-> The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Dynamics 365 Finance.
+> The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Dynamics 365 Finance.
 
 Watch the following overview of the Belgian electronic invoicing implementation in Finance.
 
@@ -29,7 +29,7 @@ Watch the following overview of the Belgian electronic invoicing implementation 
 
 ## Prerequisites
 
-Before you begin the procedures in this article, the following prerequisites must be met:
+Before you begin the procedures in this article, meet the following prerequisites:
 
 - The company must be a registered taxpayer in Belgium.
 - The company must have a signed agreement with the provider of electronic document delivery service that secures electronic document interchange in the **PEPPOL** format.
@@ -40,7 +40,7 @@ Before you begin the procedures in this article, the following prerequisites mus
     > The current implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) as the Electronic Invoicing ISV last-mile connection service provider. Learn more in [e-Invoicing Integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
 
 - Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
-- Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing components](../global/gs-e-invoicing-set-up-overview.md).
+- Complete the common part of Electronic Invoicing service configuration as described in [Electronic invoicing components](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Create the Azure Key Vault configuration
 
@@ -50,11 +50,11 @@ In the key vault, add the secret for the token that grants authorization to acce
 
 ## Configure electronic invoicing Key Vault parameters
 
-To configure electronic invoicing Key Vault parameters, follow these steps.
+To configure electronic invoicing Key Vault parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section of this article.
-1. In the **SAS token secret** field, select the name of the storage account secret URL that must be used to authenticate access to the storage account.
+1. In the **SAS token secret** field, select the name of the storage account secret URL that you use to authenticate access to the storage account.
 1. Select **Key Vault parameters**.
 1. <a id="Tok"></a>On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create a **token** element of the **Secret** type for the secret that is described in the previous section.
 
@@ -64,7 +64,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 ## Import the electronic invoicing feature
 
 1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version (**5** or later) of the **Belgian electronic invoice (BE)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting (ER) configurations were successfully imported when you imported the **Belgian electronic invoice (BE)** Globalization feature:
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, make sure that the following Electronic reporting (ER) configurations are successfully imported when you import the **Belgian electronic invoice (BE)** Globalization feature:
 
     - Invoice model
     - Invoice model mapping
@@ -78,7 +78,7 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
     - Error log import Json
 
     > [!NOTE]
-    > If the preceding ER configurations weren't imported for some reason, manually import them as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+    > If the preceding ER configurations aren't imported for some reason, manually import them as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 1. On the **Reporting configurations** tile, import the latest versions of the following ER configurations. These configurations are required for the receipt of incoming vendor invoices.
 
@@ -88,9 +88,9 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 ## Configure the electronic invoicing feature
 
-Some of the parameters from the **Belgian electronic invoice (BE)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+The **Belgian electronic invoice (BE)** electronic invoicing feature includes some parameters with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as needed to better reflect your business operations.
 
-To review and update the configuration of the **Belgian electronic invoice (BE)** electronic invoicing feature, follow these steps.
+To review and update the configuration of the **Belgian electronic invoice (BE)** electronic invoicing feature, follow these steps:
 
 1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the **Belgian electronic invoice (BE)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -102,7 +102,7 @@ To review and update the configuration of the **Belgian electronic invoice (BE)*
     - **Destination** – Enter the destination, which you construct by concatenating the service ID number and the string **_EDIWIN**. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) that you previously created.
 
-    ![Screenshot that shows the parameters on the Feature parameters tab being configured for the Globalization feature for Belgium.](emea-bel-einoices-feature-parameters.jpg)
+    :::image type="content" source="emea-bel-einoices-feature-parameters.jpg" alt-text="Screenshot of that shows the parameters on the Feature parameters tab being configured for the Globalization feature for Belgium.":::
 
 1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
@@ -112,40 +112,40 @@ To review and update the configuration of the **Belgian electronic invoice (BE)*
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](emea-bel-einoices-docs.jpg)
+    :::image type="content" source="emea-bel-einoices-docs.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
     > [!NOTE]
-    > If you created derived analogues of the previously mentioned ER configurations, use them instead of the standard ones.
+    > If you create derived analogs of the previously mentioned ER configurations, use them instead of the standard ones.
 
 1. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a channel.
-1. In the **Channel** field, enter **EdiStatus**. You must enter the value exactly as it appears here. The system will use this channel to submit outgoing electronic invoices.
+1. In the **Channel** field, enter **EdiStatus**. Enter the value exactly as it appears here. The system uses this channel to submit outgoing electronic invoices.
 1. In the **Company** field, select a required legal entity.
 1. In the **Document context** field, select the **Data channel context** mapping from the **Customer invoice context model** configuration.
 1. In the **Channel type** field, select **Export**.
 1. In the **Channels** section, select **Add** to create another channel.
-1. In the **Channel** field, enter **EdiImport**. You must enter the value exactly as it appears here. The system will use this channel to import incoming electronic invoices.
+1. In the **Channel** field, enter **EdiImport**. Enter the value exactly as it appears here. The system uses this channel to import incoming electronic invoices.
 1. In the **Company** field, select a required legal entity.
 1. In the **Document context** field, select the **Data channel context** mapping from the **Import invoice context model** configuration.
 1. In the **Channel type** field, select **Import**.
 1. In the **Import sources** section, select **Add** to create an import source.
-1. In the **Name** field, enter **ResponseXml**. You must enter the value exactly as it appears here.
+1. In the **Name** field, enter **ResponseXml**. Enter the value exactly as it appears here.
 1. In the **Data entity name** field, select the **Vendor invoice header** entity.
 1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import** configuration.
 1. Select **Save**, and close the page.
 
-![Screenshot of the configuration of integration channels in Electronic document parameters.](emea-bel-einoices-channels.jpg)
+:::image type="content" source="emea-bel-einoices-channels.jpg" alt-text="Screenshot of the configuration of integration channels in Electronic document parameters.":::
 
 > [!NOTE]
-> If you must user other integration channels besides **EdiStatus** and **EdiImport**, you must do extra configuration of the feature and context.
+> If you must use other integration channels besides **EdiStatus** and **EdiImport**, you must do extra configuration of the feature and context.
 
 ## Configure the address structure
 
-To configure the structure of the postal address to define all required elements, follow these steps.
+To configure the structure of the postal address and define all required elements, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. Make sure that at least the following mandatory elements are configured:
 
-    - Country code
+    - Country/region code
     - Postal code
     - City name
     - Street
@@ -154,7 +154,7 @@ To configure the structure of the postal address to define all required elements
 
 ### Enter the address
 
-To enter the address, follow these steps.
+To enter the address, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity.
@@ -162,12 +162,12 @@ To enter the address, follow these steps.
 
 ### Verify the seller's identification
 
-To identify a company by its value-added tax (VAT) number, follow these steps.
+To identify a company by its value-added tax (VAT) number, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
+1. <a id="SellVAT"></a>On the **Foreign trade and statistics** FastTab, in the **INTRASTAT** section, in the **VAT exempt number export** field, make sure that a valid VAT number is entered for the legal entity.
 
-    The VAT number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
+    The VAT number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. You use it as the seller's identification during the submission process.
 
 > [!NOTE]
 > The contact information for the legal entity is automatically retrieved from the related **Person** record that is associated with the current user in Finance.
@@ -176,7 +176,7 @@ To identify a company by its value-added tax (VAT) number, follow these steps.
 
 ### Enter the address
 
-To enter the address, follow these steps.
+To enter the address, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -184,73 +184,85 @@ To enter the address, follow these steps.
 
 ### Enter the contact person
 
-To enter the contact person, follow these steps.
+To enter the contact person, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
-1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
+1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered as the buyer's contact.
 
     > [!NOTE]
-    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
+    > You must already define all available contact persons for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Verify the buyer's identification
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-1. On the **Invoice and delivery** FastTab, in the **SALES TAX** section, in the **Tax exempt number** field, make sure that a valid VAT number is entered for the customer.
+The buyer's EndpointID determination uses the following hierarchy of built-in [Registration numbers](../europe/emea-registration-ids.md).
 
-    The VAT number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
+- If you define the Global Location Number (GLN), also known as a European article numbering (EAN), for the customer as an active Registration Number with the **EAN** Registration category, the system uses it as the customer's EndpointID and uses the **0088** constant (EAN Location Code) as the EndpointID **schemeID** attribute's value.
+
+- If you don't define the EAN registration number, the system uses the customer's active Registration Number of the **Enterprise ID** Registration category as the customer's EndpointID and uses the **0208** constant (Numero d'entreprise / ondernemingsnummer / Unternehmensnummer) as the EndpointID **schemeID** attribute's value.
+
+- If you don't define the EAN and Enterprise ID registration numbers, the system uses the customer's active Registration Number of the **VAT ID** Registration category as the customer's EndpointID and uses the **9925** constant (Belgium VAT number) as the EndpointID **schemeID** attribute's value.
+
+- If you don't define the VAT ID registration number, the system uses the **Tax exempt number** defined in customer's master data as the customer's EndpointID and uses the **9925** constant as the EndpointID **schemeID** attribute's value.
+  
+    The resulting Endpoint ID value populates the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and is used as the buyer's identification during the submission process.
 
 > [!NOTE]
-> For both the seller's identification and the buyer's identification, schema **9925** (Belgium VAT number) is used by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If you must redefine the default schema, follow the configuration steps in the next section. Otherwise, skip ahead to the [Configure units of measure](#configure-units-of-measure) section.
+> If the built-in registration numbers aren't sufficient, you can redefine the default schema by following the configuration steps for the **Buyer** identification in the next section. You can define any schema from the list of allowed values [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). Otherwise, skip ahead to the [Configure units of measure](#configure-units-of-measure) section.
 
 ## Configure identification schemas
 
-Follow the configuration steps in this section only if you must redefine the default identification schemas for sellers and/or buyers.
+Follow the configuration steps in this section only if you need to redefine the default identification schemas for sellers and buyers.
 
 ### Configure electronic document properties
 
-To configure electronic document properties, follow these steps.
+To configure electronic document properties, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
-1. In the **Type** field, enter **CompanyEndpointType**. You must enter the value exactly as it appears here. It will be used for the Seller identification schema definition.
+1. In the **Type** field, enter **CompanyEndpointType**. Enter the value exactly as it appears here. This value is used for the Seller identification schema definition.
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Legal entities** table name.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Select **New** to create another electronic document property type.
-1. In the **Type** field, enter **CustomerEndpointType**. You must enter the value exactly as it appears here. It will be used for the Buyer identification schema definition.
+1. In the **Type** field, enter **CustomerEndpointType**. Enter the value exactly as it appears here. This value is used for the Buyer identification schema definition.
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Customers** table name.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-![Screenshot that shows the electronic document property types added on the Electronic document property types page.](emea-bel-einoices-schemas.jpg)
+:::image type="content" source="emea-bel-einoices-schemas.jpg" alt-text="Screenshot of that shows the electronic document property types added on the Electronic document property types page.":::
 
 ### Enter the Seller schema code
 
-To enter the Seller schema code, follow these steps.
+To enter the Seller schema code, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
+1. Select a legal entity then on the Action Pane, select **Electronic document properties**.
 1. In the **Value** column, enter the required Seller schema code.
+
+> [!NOTE]
+> For the seller's identification, schema **9925** (Belgium VAT number) is used by default if you don't define another schema. Schema codes that you define through electronic document property types take priority over the default **9925** schema code. The value of the **EndpointID** is always retrieved from the seller's [**VAT exempt number export**](#SellVAT) field regardless of the schema value redefined in the seller's **CompanyEndpointType** parameter.
 
 ### Enter the Buyer schema codes
 
-To enter the Buyer schema codes, follow these steps.
+To enter the Buyer schema codes, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
+1. Select a specific customer in the list then on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
 1. In the **Value** column, enter the required Buyer schema code.
 
 > [!NOTE]
-> Schema codes that are defined via electronic document property types have a higher priority than the default **9925** schema code.
+> For the buyer's identification, schema **9925** (Belgium VAT number) is used by default if you don't define another schema. Schema codes that you define through electronic document property types take priority over the other built-in **0088**, **0208**, or **9925** schema codes. The value of the **EndpointID** is retrieved from the buyer's active registration number, which you must create with the type that exactly matches the value of the buyer's **CustomerEndpointType** parameter.
+
+:::image type="content" source="emea-bel-electronic-invoices-endpoint.jpg" alt-text="Screenshot of that shows the customer Endpoint.":::
 
 ## Configure units of measure
 
-To configure units of measure, follow these steps.
+To configure units of measure, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-1. Select a unit ID, and then select **External codes**.
-1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that is equal to the selected unit ID.
+1. Select a unit ID, then select **External codes**.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that matches the selected unit ID.
 1. In the **Standard code** column, select the checkbox.
 1. In the **Value** section, in the **Value** field, enter the external code according to [the required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
@@ -260,7 +272,7 @@ To configure units of measure, follow these steps.
 ## Configure sales tax codes
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-1. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+1. Select a sales tax code then on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 1. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
 1. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
 
@@ -285,7 +297,7 @@ According to PEPPOL requirements, when you register free text invoices, invoices
 1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 1. Create a new project contract, or select an existing project contract.
 1. On the **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
-1. On the **Funding source details** page, on the **Other** FastTab, in the **References** section, in the **Customer requisition** and/or **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
+1. On the **Funding source details** page, on the **Other** FastTab, in the **References** section, enter default values for the contract in the **Customer requisition** and/or **Customer reference** fields. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
 1. To enter customer requisition and/or reference values directly on the project invoice proposal, follow these steps:
 
     1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
@@ -297,17 +309,17 @@ According to PEPPOL requirements, when you register free text invoices, invoices
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more about how to generate electronic invoices in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 > [!IMPORTANT]
-> In current implementations, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of electronic invoices requires that you complete the following additional steps.
+> In current implementations, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The procedure doesn't submit the invoices. To submit electronic invoices, you need to complete the following additional steps.
 
-To submit the generated electronic invoices, follow these steps.
+To submit the generated electronic invoices, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 1. In the **Channel** field, select the export channel that you [previously created](#ExChannel). Then select **OK**.
 
-You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+You can check the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 > [!NOTE]
-> Submitted electronic invoices will be also available in the Outbound folder and its subfolders in your [Ediwin](https://ediwin.edicomgroup.com/) portal. There, you can monitor further processing of the documents.
+> Submitted electronic invoices are also available in the Outbound folder and its subfolders in your [Ediwin](https://ediwin.edicomgroup.com/) portal. There, you can monitor further processing of the documents.
 
 ## Receive incoming electronic invoices
 
@@ -328,7 +340,7 @@ After you complete all the required configuration steps, you can receive incomin
 > [!NOTE]
 > You can review incoming electronic invoices in the Inbound folder and its subfolders in your [Ediwin](https://ediwin.edicomgroup.com/) portal.
 
-To receive electronic invoices, follow these steps.
+To receive electronic invoices, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 1. Select **OK**, and then close the page.

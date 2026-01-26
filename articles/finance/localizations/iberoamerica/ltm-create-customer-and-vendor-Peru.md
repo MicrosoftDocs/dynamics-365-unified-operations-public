@@ -32,7 +32,7 @@ Before you create records for customers and vendors who are located in Peru, the
 
 ## Create a record for a customer in Peru
 
-To create a record for a customer in Peru, follow these steps.
+To create a record for a customer in Peru, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select **New**.
 1. In the **Type** field, select **Organization** for **Persona juridica** or **Person** for **Persona natural**.
@@ -60,7 +60,7 @@ To create a record for a customer in Peru, follow these steps.
 
 ## Create a record for a vendor in Peru
 
-To create a record for a vendor in Peru, follow these steps.
+To create a record for a vendor in Peru, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
 1. In the **Type** field, select **Organization** for **Persona juridica** or **Person** for **Persona natural**.

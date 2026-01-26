@@ -22,7 +22,7 @@ This article explains how to work with the various reports that are available fo
 
 The **Deferrals listing** report shows a list of deferrals together with their current status, such as **Scheduled**, **In process**, or **Closed**. For each deferral, the report also shows the initial amount and the remaining amount. Accountants generate and print this report to analyze the value of current deferral charges.
 
-To configure the Deferrals listing report, follow these steps.
+To configure the Deferrals listing report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Deferrals** \> **Deferrals listing**.
 2. Use the following default parameters in the **Deferrals listing** dialog to filter the data that appears on the report.
@@ -39,7 +39,7 @@ To configure the Deferrals listing report, follow these steps.
 
 The **Deferrals transaction listing** report shows the deferrals transactions for a deferral model. The deferrals transactions are categorized by deferrals group. For each deferrals transaction, the report includes details such as the date, type, description, and amount of the transaction. It also includes the name of the deferral, the status, the initial amount, and the depreciated amount. Accountants periodically generate this report to view a list of the deferrals transactions.
 
-To configure the Deferrals transaction listing report, follow these steps.
+To configure the Deferrals transaction listing report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Deferrals** \> **Deferrals transaction listing**.
 2. Use the following default parameters in the **Deferrals transaction listing** dialog to filter the data that appears on the report.
@@ -58,7 +58,7 @@ To configure the Deferrals transaction listing report, follow these steps.
 
 The *Deferrals balances* report shows deferral values such as initial amounts, written-off sums, and retirement deferral amounts. Accountants periodically generate this report to analyze the remaining balance of deferrals for the current period and for future costs.
 
-To configure the Deferrals balances report, follow these steps.
+To configure the Deferrals balances report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Deferrals** \> **Deferrals balances**.
 2. Use the following default parameters in the **Deferrals balances** dialog to filter the data that appears on the report.
@@ -74,7 +74,7 @@ To configure the Deferrals balances report, follow these steps.
 
 The *Factors for deferrals writing off* report shows a list of deferral factors. The deferral factors are grouped by the start date of the period that the report is generated for. The data on this report might include the expense code, the coefficient of the factor, normalized amounts, and base amounts. Accountants generate this report to view a list of deferral factors to calculate depreciation.
 
-To configure the Factor for deferrals writing off report, follow these steps.
+To configure the Factor for deferrals writing off report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquires and reports** \> **Deferrals** \> **Factors for deferrals writing off**.
 2. Use the following default parameters in the **Factors for deferrals writing off** dialog to filter the data that appears on the report.

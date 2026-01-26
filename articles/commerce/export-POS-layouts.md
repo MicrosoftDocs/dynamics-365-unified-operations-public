@@ -1,13 +1,13 @@
 ---
 title: Export POS screen layouts for import to a new environment
-description: This article describes how to export point of sale (POS) screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
+description: Learn how to export point of sale (POS) screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to
-ms.date: 06/04/2024
+ms.date: 01/22/2026
 ms.custom: 
   - bap-template
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.validFrom: 2024-01-20
 ---
 
@@ -19,13 +19,13 @@ This article describes how to export point of sale (POS) screen layouts for impo
 
 ## Export screen layout data
 
-To export screen layout data from an environment, follow these steps.
+To export screen layout data from an environment, follow these steps:
 
-1. In the Commerce headquarters environment that you want to export data from, go to **Data management** \> **Framework parameters**.
+1. In Commerce headquarters for the environment you want to export data from, go to **Data management** > **Framework parameters**.
 1. Select **Entity settings**.
 1. Under **Advanced entity configuration settings**, select **Refresh entity list**. The following message appears at the top of the page: "The refresh entity list job is added to the queue."
-1. Go to **Batch jobs** \> **System Administration** \> **Inquiries**, and verify that the refresh entity list job was successfully completed.
-1. Go to **Data management** \> **Export**.
+1. Go to **Batch jobs** > **System Administration** > **Inquiries**, and verify that the refresh entity list job was successfully completed.
+1. Go to **Data management** > **Export**.
 1. Under **Group name**, enter a name for the export (for example, **Export POS layouts**).
 1. Under **Selected entities**, select **Add multiple**.
 1. In the **Add multiple** dialog box, in the **Target data format** dropdown list, select **XML-Element**.
@@ -64,9 +64,9 @@ To export screen layout data from an environment, follow these steps.
 
 ### Add related tables
 
-If you require additional filters, you can add related tables. For example, you can add the **Layout sizes** table to export only a specific size or sizes from the selected list of layouts. You add this table to the entity using a table join.
+If you need more filters, add related tables. For example, add the **Layout sizes** table to export only a specific size or sizes from the selected list of layouts. Use a table join to add this table to the entity.
 
-To add the **Layout sizes** table, follow these steps.
+To add the **Layout sizes** table, follow these steps:
 
 1. Select the rows for **POS screen layout button grid zones**, **POS screen layout image zones**, and **RetailTillLayoutConfigurationEntity**.
 1. For the **POS screen layout button grid zones** entity, in the **Filter** column, select the funnel symbol.
@@ -87,23 +87,23 @@ To add the **Layout sizes** table, follow these steps.
 
 ### Export and download package
 
-After all the entities are updated with correct filters, on the Action Pane, select **Export**. This action initiates a batch job.
+After you update all the entities with the correct filters, on the action pane, select **Export**. This action starts a batch job.
 
-After the batch job is completed, verify that the **Execution status** value for all the entities is **Successful**. Then select **Download package** to download the XML package to your local machine. Verify that the package contents from the download location are correct.
+After the batch job finishes, check that the **Execution status** value for all the entities is **Successful**. Then select **Download package** to download the XML package to your local machine. Check that the package contents from the download location are correct.
 
 ## Import screen layout data to a new environment
 
-To import the screen layout data that you exported to a new environment, follow these steps.
+To import the screen layout data to a new environment, follow these steps:
 
-1. In headquarters for the new environment, go to **Data management** \> **Import**.
+1. In headquarters for the new environment, go to **Data management** > **Import**.
 1. In the **Group name** field, enter a name (for example, **Import POS layouts**).
 1. Under **Selected entities**, select **Add file**.
 1. In the **Add file** dialog box, in the **Source data format** dropdown list, select **Package**.
 1. Under **Upload import files**, select **Upload and add**, find and select the package that you exported, and then select **Open**.
 1. In the **Add file** dialog box, select **Close**.
-1. After the entities are loaded, on the Action Pane, select **Entity sequence**.
+1. After the entities load, on the action pane, select **Entity sequence**.
 1. Select **Auto sequence** to sequence the entities in a way that considers the dependencies, and then select **OK**.
-1. On the Action Pane, select **Import**.
+1. On the action pane, select **Import**.
 1. Verify the **Execution summary** value, and confirm that the status for all the entities is **Succeeded**.
 1. Verify that the screen layouts, button grids, and visual profiles are updated.
 1. After you assign the layouts to the store, register, or user level, run scheduler jobs.

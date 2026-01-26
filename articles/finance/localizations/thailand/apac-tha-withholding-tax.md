@@ -25,7 +25,7 @@ The withholding tax functionality is enhanced for vendor and customer transactio
 
 Before you can calculate withholding tax for transactions for a legal entity in Thailand, you must complete the following procedure.
 
-To set up Thailand withholding tax, follow these steps.
+To set up Thailand withholding tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Legal entities** page and set up tax registration numbers.
 1. On the **Withholding tax settlement periods** page, set up the withholding settlement periods.
@@ -87,7 +87,7 @@ The electronic format is generated as a pipe delimited format file. In the **Ele
 - Tax declaration model mapping.version.82.133.xml or a later version
 - PND formats Online (TH).version.82.06  or a later version
 
-After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, follow these steps.
+After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace and select the **Reporting configurations** tile.
 1. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -101,7 +101,7 @@ The following image provides an example of the suggested setup.
 
 ![Configuration of parameters.](../media/apac-th-wht-pndformats-setup1.png)
 
-To set up the different lookups used to generate PND files, follow these steps. 
+To set up the different lookups used to generate PND files, follow these steps: 
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up the rules to identify the tax transaction in the **Related** field on the **VAT return** page.
 1. Select the current version and on the **Lookups** FastTab, select the lookup name (or example, **$PNDFormatTypeLookup**). This lookup identifies the list of report types that are supported in Thailand localization.
@@ -117,7 +117,7 @@ To set up the different lookups used to generate PND files, follow these steps.
 
 #### Generate a withholding PND electronic file
 
-To generate the tax declaration report, follow these steps.
+To generate the tax declaration report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Withholding tax** \> **Generate PND electronic formats**.
 1. Enter a specific **Tax branch**, or leave the field blank if you want to include all available tax branches.

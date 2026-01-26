@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.46 (October 2025)
+          href: get-started/whats-new-commerce-10-0-46.md
         - name: Commerce 10.0.45 (September 2025)
           href: get-started/whats-new-commerce-10-0-45.md
         - name: Commerce 10.0.44 (April 2025)
@@ -402,6 +404,8 @@
             href: dev-itpro/MPOS-or-CPOS.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
+          - name: Enable camera-based product identification in Store Commerce
+            href: enable-camera-based-product-identification.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
@@ -622,8 +626,10 @@
               href: dev-itpro/apple-pay-adyen.md
             - name: Enable Tap to Pay on iPhone
               href: dev-itpro/tap-to-pay-iphone.md
-            - name: Enable Pay by Link in point of sale using Adyen connector
+            - name: Enable pay by link in POS using the Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/pay-by-link-overview.md
+            - name: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen
+              href: dev-itpro/payment-notifications.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -812,6 +818,8 @@
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
         - name: Turn on the Unified pricing management module for your system
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
+        - name: Migrate to unified pricing management
+          href: ../supply-chain/unified-pricing-management/upm-migrate-to-unified-pricing-management.md?context=/dynamics365/context/commerce
         - name: Price attributes
           items:
           - name: Price attributes overview
@@ -822,6 +830,10 @@
             href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
           - name: Customer and product price attribute groups
             href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
+          - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
+            href: ../supply-chain/unified-pricing-management/upm-support-custom-attributes.md?context=/dynamics365/context/commerce
+          - name: Example custom request handler code
+            href: ../supply-chain/unified-pricing-management/upm-custom-request-handler-example.md?context=/dynamics365/context/commerce
         - name: Price groups
           items:
           - name: Price groups overview
@@ -872,6 +884,8 @@
             href: ../supply-chain/unified-pricing-management/upm-concurrence-within-codes.md?context=/dynamics365/context/commerce
           - name: Resolving concurrency across price component codes
             href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
+        - name: Calculate prices and discounts without creating sales orders
+          href: ../supply-chain/unified-pricing-management/upm-calculate-prices-without-sales-orders.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview
@@ -998,7 +1012,7 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
-        - name: Purge Commerce transactions
+        - name: Purge Commerce transactions (preview)
           href: purge-transactions.md
       - name: Sales orders
         items:
@@ -1192,6 +1206,8 @@
           href: dev-itpro/upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
           items:
+          - name: Set up a Microsoft External Entra ID for user site authentication in Commerce e-commerce
+            href: dev-itpro/set-up-external-entra-id.md
           - name: Set up a B2C tenant
             href: dev-itpro/set-up-B2C-tenant.md
           - name: Create or link to an existing Microsoft Entra B2C tenant
@@ -2385,7 +2401,7 @@
         - name: Configure model mappings
           items:
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/commerce
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/commerce
           - name: Manage several derived mappings for a single model root

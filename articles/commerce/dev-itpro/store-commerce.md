@@ -3,7 +3,7 @@ title: Store Commerce app
 description: Learn how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 09/23/2025
+ms.date: 10/24/2025
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -232,14 +232,14 @@ You can also use the **help** command in PowerShell to find information about al
 
 ### Uninstall Store Commerce
 
-To uninstall the Store Commerce application from a device, follow these steps.
+To uninstall the Store Commerce application from a device, follow these steps:
 
 1. Open PowerShell in administrator mode and navigate to the folder where you downloaded the Store Commerce installer executable.
 1. In PowerShell, find the Store Commerce installer executable and pass the `StoreCommerce.Installer.exe uninstall` parameter to uninstall the app. When executed, this command runs immediately and doesn't provide a confirmation dialog before uninstalling Store Commerce.
 
 ### Activate Store Commerce
 
-To activate Store Commerce after installation, follow these steps.
+To activate Store Commerce after installation, follow these steps:
 
 1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application. 
     > [!NOTE]
@@ -248,9 +248,11 @@ To activate Store Commerce after installation, follow these steps.
 1. Activate Store Commerce by following the steps in [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 
+<!--
 ### Debug setup issues
 
 For debug information, see [Debug Store Commerce setup and installation issues](/previous-versions/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-setup-installation).
+-->
 
 ## Customize the app
 
@@ -268,7 +270,7 @@ Microsoft recommends that you explicitly manage the WebView2 version that is use
 
 ### Manage WebView2 versions
 
-To manage WebView2 versions, follow these steps.
+To manage WebView2 versions, follow these steps:
 
 1. Disable automatic WebView2 updates via Group Policy or registry keys. 
 1. Use the standalone installer to install a specific version of the WebView2 control.

@@ -1,11 +1,10 @@
 ---
 title: Add a copyright notice
-description: This article describes how to add a copyright notice to your e-Commerce website.
+description: Learn how to add a copyright notice to your e-commerce website.
 author: josaw1
-ms.date: 07/26/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,20 +16,20 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to add a copyright notice to your e-Commerce website.
+This article describes how to add a copyright notice to your e-commerce website.
 
 ## Prerequisites
 
-Before you can add a copyright notice to your site, you must have the following items:
+Before you can add a copyright notice to your site, make sure you have the following items:
 
 - A template that includes a shared footer fragment.
 - A page that uses that template.
 
-## Add a copyright notice
+## Add a copyright notice in Commerce site builder
 
-To add a copyright notice to the bottom of every page that uses a specific template, follow these steps.
+To add a copyright notice to the bottom of every page that uses a specific template, follow these steps:
 
-1. Go to **Fragments**, and then select **New**.
+1. In site builder for your site, go to **Fragments**, and then select **New**.
 1. In the **New fragment** dialog box, select the **Footer** module, and name the fragment. For example, enter **Footer-Copyright**.
 1. Select **OK**.
 1. In the navigation pane, select the ellipsis button (**...**) next to **Footer**, and then select **Add Module**.
@@ -60,7 +59,7 @@ The footer that contains the copyright notice automatically appears at the botto
 
 [Add languages to your site](add-languages-to-site.md)
 
-[Add script code to site pages to support telemetry](add-telemetry.md)
+[Add script code to site pages to support telemetry    ](add-telemetry.md)
 
 
 

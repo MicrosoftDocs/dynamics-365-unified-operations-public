@@ -1,8 +1,8 @@
 ---
 title: Delivery information setup
 description: Learn how to set up delivery information for the Landed cost module, including outlines on shipping ports and tracking control centers.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMPortTable, ITMLeadTimeTable, ITMLegTable
 ms.topic: how-to
@@ -57,7 +57,7 @@ Lead time is the estimated time that a voyage needs to complete a defined leg of
 
 Use lead time rules to manage date updates. When you use a journey template for a voyage, activities are automatically generated.
 
-To add a lead time rule to the Tracking control center, follow these steps.
+To add a lead time rule to the Tracking control center, follow these steps:
 
 1. Follow one of these steps:
 
@@ -86,7 +86,7 @@ When you set the **Create type** field to *Status update*, the Tracking control 
 
 Status updates provide the status of a voyage throughout the voyage lines and purchase order lines that are associated with that voyage. As a voyage moves through its journey from the port, sailing, and customs, to the destination warehouse, the **Voyage status** field of the voyage record provides a quick view of the stage that the items are at.
 
-To add a status update rule to the Tracking control center, follow these steps.
+To add a status update rule to the Tracking control center, follow these steps:
 
 1. Follow one of these steps:
 

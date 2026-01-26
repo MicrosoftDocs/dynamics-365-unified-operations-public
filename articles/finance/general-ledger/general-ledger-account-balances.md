@@ -42,7 +42,7 @@ In Microsoft Dynamics 365 Finance version 10.0.39, *trial balance snapshots* are
 
 ### Process a trial balance snapshot
 
-To process a trial balance snapshot, follow these steps.
+To process a trial balance snapshot, follow these steps:
 
 1. On the **Trial balance** list page, on the Action Pane, select **Trial balance snapshots**.
 2. On the Action Pane, select **Add trial balance snapshot**.
@@ -67,7 +67,7 @@ To download the contents of the snapshot to Excel, select **Open in Excel** on t
 
 ### Use process automation with trial balance snapshots
 
-To create a trial balance snapshot on a regular schedule, follow these steps.
+To create a trial balance snapshot on a regular schedule, follow these steps:
 
 1. Go to **System administration** \> **Setup** \> **Process automations**.
 2. On the Action Pane, select **Create new process automation**.

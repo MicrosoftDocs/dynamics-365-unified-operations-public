@@ -43,7 +43,7 @@ For general setup information, see [EU Sales list reporting](../europe/emea-eu-s
 
 Create a registration type, and assign it to the **VAT ID** registration category for Sweden and all the countries or regions that your company does business with. For more information, see [Registration IDs](../europe/emea-registration-ids.md).
 
-To set up company information, follow these steps.
+To set up company information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. In the grid, select your company.
@@ -70,7 +70,7 @@ For more information, see [Download electronic reporting configurations from Lif
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 1. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
@@ -89,7 +89,7 @@ For general information about which types of transactions are included in the EU
 
 ### Generate the EU sales list report
 
-To generate the EU sales list report, follow these steps.
+To generate the EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Transfer transactions in the usual way.
@@ -114,7 +114,7 @@ For information about how to create a general setup, create postings, and transf
 
 ### Create a contact for the person who is responsible for the report
 
-To create a contact for the person who is responsible for the report, follow these steps.
+To create a contact for the person who is responsible for the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts**.
 1. On the Action Pane, select **New**.
@@ -124,7 +124,7 @@ To create a contact for the person who is responsible for the report, follow the
 
 ### Create an EU sales list report
 
-To create an EU sales list report, follow these steps.
+To create an EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. On the Action Pane, select **Reporting**.

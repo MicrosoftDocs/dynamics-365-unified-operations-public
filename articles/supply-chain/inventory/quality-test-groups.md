@@ -31,7 +31,7 @@ A manufacturing company defines a test group for each variation of its quality g
 
 ## Create a test group
 
-To create a test group, follow these steps.
+To create a test group, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. On the Action Pane, select **New** to add a row to the grid in the upper part of the page. Then set the following fields for the new row:
@@ -54,7 +54,7 @@ To create a test group, follow these steps.
 
 ## Add a qualitative test to a test group
 
-To add a qualitative test to a test group, follow these steps.
+To add a qualitative test to a test group, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. On the **Overview** tab in the upper part of the page, select the test group that you want to add a test to.
@@ -88,7 +88,7 @@ To add a qualitative test to a test group, follow these steps.
 
 ## Add a quantitative test to a test group
 
-To add a quantitative test to a test group, follow these steps.
+To add a quantitative test to a test group, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. On the **Overview** tab in the upper part of the page, select the test group that you want to add a test to.

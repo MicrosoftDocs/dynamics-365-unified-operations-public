@@ -13,14 +13,14 @@ ms.custom:
   - evergreen
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.45 (September  2025)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.45 (September 2025)
 
 [!include [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.45. This version has a build number of 10.0.2345 and is available on the following schedule:
 
 - **Preview of release:** July 2025
-- **General availability of release (self-update):** September  2025
+- **General availability of release (self-update):** September 2025
 - **General availability of release (auto-update):** October 2025
 
 ## Features included in this release
@@ -29,12 +29,12 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and warehouse management | [Enable quality control with acceptance sampling](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-acceptance-sampling) | [Acceptance sampling (preview)](../inventory/quality-acceptance-sampling.md) | Feature management:<br>*(Preview) Acceptance sampling* |
-| Master planning | [Lean manufacturing for Planning Optimization](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/implement-lean-manufacturing-catch-weight-step-consumption-planning-optimization) | [Lean manufacturing for Planning Optimization](../master-planning/lean-for-planning-optimization.md) | Feature management:<br>*(Preview) Lean manufacturing for Planning Optimization* |
+| Inventory and warehouse management | [Enable quality control with acceptance sampling](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-acceptance-sampling) | [Acceptance sampling](../inventory/quality-acceptance-sampling.md) | Feature management:<br>*Acceptance sampling* |
+| Master planning | [Lean manufacturing for Planning Optimization](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/implement-lean-manufacturing-catch-weight-step-consumption-planning-optimization) | [Lean manufacturing for Planning Optimization](../master-planning/lean-for-planning-optimization.md) | Feature management:<br>*Lean manufacturing for Planning Optimization* |
 | Message processor | Clean up processed and canceled message processor messages | [Clean up processed and canceled message processor messages](../message-processor/message-processor-cleanup.md) | Enabled by default. |
 | Production control | Generate license plates and print labels for MES integration | [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) | Enabled by default you have [set up MES integration](../production-control/mes-integration.md). |
 | Sales and marketing | Use external item identifiers to add products to orders | [Use external item identifiers to add products to orders](../sales-marketing/external-item-product-search-lookup.md) | Feature management:<br>*Enable lookup based search for Sales External Item Identifier field* |
-| Warehouse management | [Improve operations with Warehouse Management mobile app V4](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/improve-operations-warehouse-management-mobile-app-v4) | [Migrate the Warehouse Management mobile app from V3 to V4 (preview)](../warehousing/warehouse-app-migrating-from-v3-v4.md) | Enabled by default in Supply Chain Management.<p>Must be [installed or upgraded locally](../warehousing/warehouse-app-migrating-from-v3-v4.md) on each device. |
+| Warehouse management | [Improve operations with Warehouse Management mobile app V4](/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/improve-operations-warehouse-management-mobile-app-v4) | [Migrate the Warehouse Management mobile app from V3 to V4](../warehousing/warehouse-app-migrating-from-v3-v4.md) | Enabled by default in Supply Chain Management.<p>Must be [installed or upgraded locally](../warehousing/warehouse-app-migrating-from-v3-v4.md) on each device. |
 | Warehouse management | Record and view container line packing details | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | Enabled by default. |
 
 ## <a name="enhancements"></a>Feature enhancements added in this release
@@ -103,7 +103,7 @@ The following table lists the features that became mandatory in version 10.0.45.
 | Asset management | *Material availability check on maintenance work orders* | [Material availability check for work orders](../asset-management/work-orders/material-availability-check-work-orders.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
 | Inventory and warehouse management | *(India) Improvements in unit price and cost price handling in Stock transfer orders* | [Stock transfer orders for India](../../finance/localizations/india/apac-ind-stock-transfer.md) |
 | Inventory and warehouse management | *Correct item that is not visible in released products form manually* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
-| Inventory and warehouse management | *Inventory transaction details page's performance improvement.* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
+| Inventory and warehouse management | *Inventory transaction details page's performance improvement.* | [Inventory transaction details](../inventory/inventory-transactions-details.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)](whats-new-scm-10-0-39.md) |
 | Inventory and warehouse management | *Inventory Visibility integration* | [Inventory Visibility Add-in overview](../inventory/inventory-visibility.md)<br><br>[Install and set up Inventory Visibility](../inventory/inventory-visibility-setup.md) |
 | Inventory and warehouse management | *Inventory Visibility integration with inventory adjustment offset* | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md)<br><br>[Enable Inventory Visibility for Commerce](../inventory/inventory-visibility-commerce-enable.md)<br><br>[Sync external inventory adjustments through Inventory Visibility](../inventory/inventory-visibility-sync-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
 | Inventory and warehouse management | *Inventory Visibility integration with inventory adjustment posting* | [Enable Inventory Visibility for Commerce](../inventory/inventory-visibility-commerce-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
@@ -148,7 +148,7 @@ The following table lists features that were removed from Feature management in 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.45 includes platform updates. Learn more in [Platform updates for version 10.0.45 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-45.md). <!-- KFM: Check link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.45 includes platform updates. Learn more in [Platform updates for version 10.0.45 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-45.md).
 
 ### Bug fixes
 

@@ -21,7 +21,7 @@ This article explains how to remove extensions from the Cloud Scale Unit (CSU). 
 
 All extensions (Commerce runtime, Headless Commerce APIs, channel database scripts, and Store Commerce for web) that are applied to the CSU can be removed by applying the Remove CSU Extension package (Microsoft.Dynamics.Commerce.Deployment.CSUExtensionCleanUpPackage) to the CSU. When this package is applied, it removes all extensions, and keeps only the base CSU components and the Microsoft hotfixes. It doesn't remove extensions that were applied to channel components such as the Store Commerce app, Hardware station, Cloud Scale Unit - Self hosted, or Commerce back office.
 
-To remove extensions, follow these steps.
+To remove extensions, follow these steps:
 
 1. Sign in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2).
 2. Select the **Shared asset library** tile.

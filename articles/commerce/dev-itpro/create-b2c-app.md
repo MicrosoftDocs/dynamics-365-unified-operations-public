@@ -21,7 +21,7 @@ This article describes how to create a Microsoft Dynamics 365 Commerce business-
 
 Once you create your B2C tenant, you'll create a B2C application within your new Microsoft Entra tenant to interact with Commerce.
 
-To create the B2C application, follow these steps.
+To create the B2C application, follow these steps:
 
 1. In the Azure portal, select **App registrations**, and then select **New registration**.
 1. Under **Name**, enter the name to give this Microsoft Entra B2C application.

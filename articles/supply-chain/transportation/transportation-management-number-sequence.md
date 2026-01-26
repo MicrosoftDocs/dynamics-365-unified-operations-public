@@ -24,8 +24,8 @@ To create a number sequence for a pro number, follow these steps:
 1. Go to **Transportation management \> Setup \> Carriers \> Number sequences**.
 1. Select **New** to create a new number sequence.
 1. Enter a unique ID and descriptive name for the number sequence.
-1. In the **Number sequence type** field, *Pro number* is the only option.
-1. In the **Check digit** field, *Check digit* is the only option and is set up as a generic engine.
+1. In the **Number sequence type** field, select *Pro number*.
+1. In the **Check digit** field, select *Check digit*, which is up as a generic engine.
 1. On the **Sequence** FastTab, provide information about the sequence.
 1. Close the page.
 
@@ -59,9 +59,7 @@ To choose the pro number generation mode, follow these steps:
 1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
 1. Open the **General** tab.
 1. On the **Performance settings** FastTab, set **Pro number generation mode** to one of the following values:
-
     - *Default* – Generate pro numbers inside the current business transaction (*transaction scoped*). The system keeps the number only if the process finishes successfully. If you cancel, or if an error stops the process, the system puts back the number and reuses it. This option enforces continuous sequencing but can increase locking under high parallel load.
-
     - *Performance optimized* – Generate the number on a separate connection (*isolated*). This option reduces locking and improves throughput under high load, but numbers aren't recycled if the business process later fails.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

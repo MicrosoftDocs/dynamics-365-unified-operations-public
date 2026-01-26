@@ -47,7 +47,7 @@ Before you can get workload insights with Copilot in the Warehouse Management mo
 
 ### Choose whether the workload page is shown after sign-in
 
-Workers can specify whether they want the workload page to be shown each time they sign in to the app. To set this preference, follow these steps.
+Workers can specify whether they want the workload page to be shown each time they sign in to the app. To set this preference, follow these steps:
 
 1. From the **Main menu**, open the **Settings** menu.
 1. Select the **Show copilot on startup** entry.
@@ -63,7 +63,7 @@ Workers can specify whether they want the workload page to be shown each time th
 
 Workers can specify whether they want summaries to be based on work headers or work lines. The choice depends on how the workers prefer to think about their daily workload. For example, if all your orders typically contain just a few items, workers might prefer to think about their work in terms of whole orders (headers). However, if quantities vary greatly from order to order, workers might prefer to think about their work in terms of individual items (lines).
 
-To set this preference, follow these steps.
+To set this preference, follow these steps:
 
 1. From the **Main menu**, open the **Settings** menu.
 1. Select the **Show copilot data as** entry.

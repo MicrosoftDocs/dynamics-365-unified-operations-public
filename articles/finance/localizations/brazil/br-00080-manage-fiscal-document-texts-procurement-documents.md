@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-06-30
 
 This article describes how to set up fiscal document source text in Brazil with Microsoft Dynamics 365 Finance.
 
-To set up fiscal document source text, follow these steps.
+To set up fiscal document source text, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Document management \> Document types**.
 1. Select **New**.

@@ -29,7 +29,7 @@ This functionality makes it more efficient to support labeling of cartons and to
 
 ## Set up the feature
 
-To set up number sequence extensions in your system, follow these steps.
+To set up number sequence extensions in your system, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, in the **GS1 company prefix** field, and enter your company's GS1 prefix. This value will affect all number sequences where the GS1 prefix is included as a segment.
@@ -55,7 +55,7 @@ The next time that a new number is generated for one of these number sequences, 
 
 In the previous section, you generated a default set of number sequences. This section explains how each number sequence is defined. It also explains how to create custom sequences, and how to edit the default or custom sequences.
 
-To create and edit number sequences, follow these steps.
+To create and edit number sequences, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Number sequence extensions**.
 1. On the Action Pane, select **New**.

@@ -1,8 +1,8 @@
 ---
 title: Landed cost reports
 description: Learn how to find and use the various types of reports that are available for the Landed cost module, including a step-by-step process.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: SysOperationTemplateForm
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.custom:
 
 The outstanding invoices report contains a list of all outstanding invoices of the various cost levels that are associated with every voyage. It's used to reconcile the voyage and voyage costs together with the ledger transactions list on a regular basis. After an overhead cost has been invoiced, it's removed from the report.
 
-To generate an outstanding invoices report, follow these steps.
+To generate an outstanding invoices report, follow these steps:
 
 1. Go to **Landed cost \> Reports \> Tracking \> Outstanding invoices**.
 1. In the **Outstanding invoices** dialog box, in the **As at date** field, specify a date. Any invoice that was outstanding on or before that date will be included in the output.
@@ -39,7 +39,7 @@ To generate an outstanding invoices report, follow these steps.
 
 The activity/provider analysis reports let you review the accuracy of your time estimates for each provider.
 
-To generate an activity/provider analysis report, follow these steps.
+To generate an activity/provider analysis report, follow these steps:
 
 1. Depending on the type of report that you want to create, follow one of these steps:
 
@@ -56,7 +56,7 @@ To generate an activity/provider analysis report, follow these steps.
 
 The voyage costing reports show the cost of the items and the import costs per folio, shipping container, or voyage, depending on the options that you select when you generate the report. Each voyage costing report lets you view the estimated cost of a voyage versus the actual cost, and it can be broken down by the several identifying factors.
 
-To generate a voyage costing report, follow these steps.
+To generate a voyage costing report, follow these steps:
 
 1. Depending on the type of report that you want to create, follow one of these steps:
 
@@ -83,7 +83,7 @@ To generate a voyage costing report, follow these steps.
 
 The shipping container receipts list contains all unreceived quantities that are due on or before an expected date. Warehouse staff can use this report to identify the expected goods on a shipping container. It can also be used to manually validate goods as they are received on a shipping container.
 
-To generate a shipping container receipts list, follow these steps.
+To generate a shipping container receipts list, follow these steps:
 
 1. Go to **Landed cost \> Reports \> Tracking \> Shipping container receipts list**.
 1. In the **Shipping container receipts list** dialog box, in the **Expected date** field, specify a date. Any quantities that were unreceived on or before that date will be included in the output.
@@ -96,7 +96,7 @@ To generate a shipping container receipts list, follow these steps.
 
 The expected delivery report contains basic information about the voyage, shipping container, folio, items, and expected date of delivery.
 
-To generate an expected delivery report, follow these steps.
+To generate an expected delivery report, follow these steps:
 
 1. Go to **Landed cost \> Reports \> Tracking \> Expected Delivery**.
 1. In the **Expected delivery** dialog box, in the **Expected date** field, select the date when delivery of the goods to the final destination warehouse is expected. Any voyage line that has an expected date on or before that date, and that hasn't yet been received, will be included in the output.

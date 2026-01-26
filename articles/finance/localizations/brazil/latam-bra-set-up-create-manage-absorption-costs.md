@@ -22,7 +22,7 @@ You can calculate and post the direct and indirect costs that are incurred in th
 
 ## Set up a number sequence for absorption costs
 
-To set up the number sequence code for cost absorption journals, follow these steps.
+To set up the number sequence code for cost absorption journals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Production control** \> **Setup** \> **Absorption costs** \> **Parameters**.
 1. In the **Number sequence code** field, select the number sequence code to use for the cost absorption journal.
@@ -31,7 +31,7 @@ To set up the number sequence code for cost absorption journals, follow these st
 
 You can use the **Cost center** page to set up cost centers for absorption costs. 
 
-To set up a cost type for a cost center, follow these steps.
+To set up a cost type for a cost center, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Production control** \> **Setup** \> **Absorption costs** \> **Cost centers**.
 1. Select the cost center to use to post absorption costs.
@@ -39,7 +39,7 @@ To set up a cost type for a cost center, follow these steps.
 
 ## Set up journal names for absorption costs
 
-To set up journal names for absorption costs, follow these steps.
+To set up journal names for absorption costs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Production control** \> **Setup** \> **Absorption costs** \> **Journal names**.
 1. Select Ctrl+N to create a record.
@@ -55,7 +55,7 @@ To set up journal names for absorption costs, follow these steps.
 
 ## Create the cost absorption journal
 
-To create and post a cost absorption journal, follow these steps.
+To create and post a cost absorption journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Production control** \> **Periodic** \> **Absorption costs** \> **Cost absorption journal**.
 1. Select Ctrl+N to create a journal.
@@ -75,7 +75,7 @@ To create and post a cost absorption journal, follow these steps.
 
 You can post the absorption costs for a specific month and year to the ledger. You can specify the transfer account and transfer offset account in the **Accounts - WIP** and **Accounts - costing** fields on the **Resources** page. 
 
-To close absorption costs, follow these steps.
+To close absorption costs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Production control** \> **Periodic** \> **Absorption costs** \> **Absorption costs - monthly closing**.
 1. In the **Month/Year to close** field, select the month and year for which to post the absorbed costs.
@@ -85,7 +85,7 @@ To close absorption costs, follow these steps.
 
 You can't cancel the absorbed costs after the monthly closing is completed.
 
-To cancel the absorbed costs that are not posted to the ledger for a specific month and year, follow these steps.
+To cancel the absorbed costs that are not posted to the ledger for a specific month and year, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Production control** \> **Periodic** \> **Absorption costs** \> **Absorbed costs cancellation**.
 1. In the **Month/Year to cancel** field, select the month and year for which to cancel the absorbed costs.

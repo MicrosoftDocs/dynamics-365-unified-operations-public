@@ -1,11 +1,10 @@
 ---
 title: Customize image focal points
-description: This article describes how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
+description: Learn how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
-ms.date: 08/01/2024
+ms.date: 01/21/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,11 +18,11 @@ ms.custom:
 
 This article describes how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
 
-When an image is uploaded to the Commerce site builder Media Library, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point works well for all viewports, but sometimes you may want to adjust the focal point to ensure that a specific part of the image is always visible.
+When you upload an image to the Commerce site builder Media Library, the system tries to determine the focal point of the image. For example, if the image has a person on it, the system sets the focal point to the face of the person by default. In most cases, the automatically set focal point works well for all viewports, but sometimes you might want to adjust the focal point to ensure that a specific part of the image is always visible.
 
 ### Define a custom focal point for an image
 
-To define a custom focal point for an image, follow these steps.
+To define a custom focal point for an image, follow these steps:
 
 1. In the left navigation pane of Commerce site builder, select **Media Library**.
 1. In the main window, select the image you want to modify.

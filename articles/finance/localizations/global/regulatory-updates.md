@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 09/16/2024
+ms.date: 12/17/2025
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -19,20 +19,27 @@ ms.dyn365.ops.version: 10.0
 
 This article lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Regulatory updates are features that are implemented to support new or changed country/region-specific legislation. For more information about planned and released country/region-specific features, see [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
+Regulatory updates are features that support new or changed country/region-specific legislation. For more information about planned and released country/region-specific features, see [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
-We plan to deliver regulatory updates in One Version service updates that are released in time for customers to update and be ready for the enforcement date (for transactional regulatory updates), or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the preview package provided for each service update.
+Regulatory updates are planned for delivery in One Version service updates that are released in time for customers to update and be ready for the enforcement date (for transactional regulatory updates), or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the preview package provided for each service update.
 
-In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for relevant available monthly updates.
+If there are late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update is shipped as hot fixes for relevant available monthly updates.
 
-Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and Preview, respectively. 
+Regulatory updates that are released as part of the monthly updates are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and Preview, respectively. 
 
 For the latest regulatory update plans, refer to the following table.   
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Netherlands | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version 4.0 of [Audit file (XML Auditfile Financieel, XAF)](../netherlands/emea-nl-audit-file.md). |
+| Poland | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version (3) of [VAT declaration for Poland, JPK-V7](../poland/emea-pol-vdek.md), effective from February 1, 2026. |
+| United Kingdom | November 2025 | 10.0.47, also available in prior versions | Regulatory update to support [Statistics on payment practices report](../united-kingdom/emea-gbr-statistics-on-payment-practices-report.md) the Reporting on Payment Practices and Performance (Amendment) Regulations 2025. |
+| Germany | November 2025 | 10.0.47, also available in prior versions | EU Sales list for Germany in CSV format. [EU Sales list for Germany](../germany/emea-deu-eu-sales-list.md) |
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file 
+ \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. |	
 | Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
 | Czech Republic | May 2025 | 10.0.45, also available in prior versions | Regulatory update to support changes in VAT declaration format for Czech Republic 2025. [VAT declaration - Czech Republic](../czech-republic/emea-cze-vat-declaration-tax-declaration-model.md) |

@@ -47,7 +47,7 @@ You can access this page from the **Receipt** action group on the **Purchase ord
 
 ## Auto posting product receipts
 
-To automatically post product receipts for multiple purchase orders, follow these steps.
+To automatically post product receipts for multiple purchase orders, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving products** \> **Post Product receipt**.
 1. In the **Posting product receipt** dialog, on the **Settings** FastTab toolbar, select **Select**.
@@ -64,7 +64,7 @@ To automatically post product receipts for multiple purchase orders, follow thes
 
 After the system finishes processing product receipts for all lines in the purchase order, it sets the purchase order status to *Received* to indicate that the invoice can now be processed for the order.
 
-To correct or cancel a product receipt, follow these steps.
+To correct or cancel a product receipt, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Purchase orders** \> **Receiving Products** \> **Product receipt**. The **Product receipt journal** page opens.
 1. On the **Overview** tab, select the product receipt that you want to correct or cancel.

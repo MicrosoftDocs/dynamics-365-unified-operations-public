@@ -2,9 +2,9 @@
 title: Define asset idle period and validate depreciation process
 description: Learn how to define the fixed asset idle period and validate depreciation process for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/18/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -21,11 +21,11 @@ Learn how to define the fixed asset idle period and validate depreciation proces
 
 The following procedures use the JPMF demo company data.
 
-Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
+Before you complete the procedures, select the **Fixed Asset** configuration key.
 
 ## Assign a fixed assets number sequence
 
-To assign a fixed assets number sequence, follow these steps.
+To assign a fixed assets number sequence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed assets parameters**.
 1. Select the **Number sequences** tab.
@@ -36,7 +36,7 @@ To assign a fixed assets number sequence, follow these steps.
 
 ## Assign an idle period for a fixed asset
 
-To assign an idle period for a fixed asset, follow these steps.
+To assign an idle period for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Assign idle period to a fixed asset**.
 1. Select **New**.
@@ -56,21 +56,21 @@ To assign an idle period for a fixed asset, follow these steps.
 
 ## Validate a fixed asset book
 
-To validate a fixed asset book, follow these steps.
+To validate a fixed asset book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
-1. In the list, find and select the "EQUPM-000024" record.  
+1. In the list, find and select the **EQUPM-000024** record.  
 1. Select **Books**.
-1. In the list, find and select the "200NDB_CUR" record.
+1. In the list, find and select the **200NDB_CUR** record.
 1. Select **Functions**.
-1. Select **Update idle periods**. Validate that the idle period created for the fixed asset book is listed. 
+1. Select **Update idle periods**. Check that the idle period created for the fixed asset book is listed.
 1. Close the page.
-1. Select **Profile**. Validate that the profile displays zero depreciation for the idle period.  
+1. Select **Profile**. Check that the profile displays zero depreciation for the idle period.  
 1. Close the page.
 
 ## Execute a depreciation proposal
 
-To execute a depreciation proposal, follow these steps.
+To execute a depreciation proposal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -89,7 +89,5 @@ To execute a depreciation proposal, follow these steps.
 1. In the **Criteria** field, enter "200NDB_CUR".  
 1. Select **OK**.
 1. Select **OK**. Validate that no depreciation journal is created for the idle period. 
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

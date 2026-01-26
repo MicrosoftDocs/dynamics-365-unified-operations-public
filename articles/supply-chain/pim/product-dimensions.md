@@ -101,7 +101,7 @@ When you're testing your solutions for compatibility with the version dimension,
 
 #### Turn on the version dimension configuration key
 
-Before you can use the version dimension, its configuration key must be turned on for your system. As of Supply Chain Management version 10.0.36, the key is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn the version dimension on or off, follow these steps. This task requires admin permissions.
+Before you can use the version dimension, its configuration key must be turned on for your system. As of Supply Chain Management version 10.0.36, the key is turned on by default for new systems, but not for older systems that are upgraded to version 10.0.36 or later. If you need to turn the version dimension on or off, follow these steps: This task requires admin permissions.
 
 1. Put your system into [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.

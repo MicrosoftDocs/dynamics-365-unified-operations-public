@@ -21,7 +21,7 @@ On the **Billing schedule** page, you can create, delete, or edit billing schedu
 
 ## Create a billing schedule
 
-To create a billing schedule, follow these steps.
+To create a billing schedule, follow these steps:
 
 1. On the **Billing schedule** page, select **New**.
 2. In the **Create billing schedule** dialog box, in the **Billing schedule group** field, select a billing schedule group.
@@ -69,7 +69,7 @@ The **Unit price** field is automatically set from inventory. However, you can u
 
 ## Remove a line item
 
-To remove an item from a billing schedule, follow these steps.
+To remove an item from a billing schedule, follow these steps:
 
 1. On the **Billing schedule** page, in the **Schedule number** field, select the number of the billing schedule to edit.
 2. On the **Billing schedule lines** FastTab, select the line to delete, and then select **Remove**.
@@ -77,7 +77,7 @@ To remove an item from a billing schedule, follow these steps.
 
 ## Generate a quotation from a billing schedule
 
-To generate a quotation document from a billing schedule, follow these steps.
+To generate a quotation document from a billing schedule, follow these steps:
 
 1. On the **Billing schedule** page, select the number of the billing schedule to edit.
 2. On the **Billing schedule header** Action pane, select **Generate quotation**.

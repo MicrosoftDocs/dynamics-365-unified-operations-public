@@ -23,7 +23,7 @@ Before working in the **Bank management** workspace, you should complete the fol
 
 ## Manually create a bank or update information for a bank
 
-To manually create a bank or update information for a bank, follow these steps.
+To manually create a bank or update information for a bank, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Bank groups**.
 1. Select a bank or create a new one. 
@@ -40,7 +40,7 @@ To manually create a bank or update information for a bank, follow these steps.
 
 ### Prerequisites
 
-To fulfill the prerequisites, follow these steps.
+To fulfill the prerequisites, follow these steps:
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), import the **Bank BIC catalog (RU)** electronic reporting (ER) configuration file. Learn more in [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
@@ -48,7 +48,7 @@ To fulfill the prerequisites, follow these steps.
 
 ### Import a list of banks
 
-To import a list of banks, follow these steps.
+To import a list of banks, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Bank groups**.
 1. Select **Load bank list** to open the **Import of data** dialog.
@@ -64,7 +64,7 @@ To import a list of banks, follow these steps.
 
 ## Create and configure a bank account
 
-To create and configure a bank account, follow these steps.
+To create and configure a bank account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 1. Create a new bank account.

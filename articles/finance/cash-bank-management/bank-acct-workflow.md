@@ -3,8 +3,9 @@ title: Bank account lifecycle management
 description: Learn how to enable an approval workflow for bank accounts in the Cash and bank management module, including prerequisites and a step-by-step process.
 author: music727
 ms.author: mibeinar
+
 ms.topic: how-to
-ms.date: 12/11/2024
+ms.date: 10/23/2025
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -23,15 +24,15 @@ This article explains how to enable an approval workflow for bank accounts in th
 
 ## Prerequisites
 
-- In the **Feature management** workspace, turn on the **(Preview) Bank account lifecycle management** feature.
+- In the **Feature management** workspace, turn on the **Bank account lifecycle management** feature.
 - In **Cash and bank management workflows**, make sure that there's an active **Workflow for proposed bank account change** workflow.
   
 >[!NOTE]
-> Beginning in Dynamics 365 Finance version 10.0.43, the **(Preview) Bank account lifecycle management** feature is available to be enabled in PROD environments. 
+> Beginning in Dynamics 365 Finance version 10.0.43, the **Bank account lifecycle management** feature is available to be enabled in PROD environments. 
 
 ## Activate an approval workflow
 
-To enable a bank account approval workflow, follow these steps.
+To enable a bank account approval workflow, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank master data change setup**.
 1. Set the following parameters:
@@ -46,7 +47,7 @@ To enable a bank account approval workflow, follow these steps.
 
 ## View the change history
 
-To view the bank account change history, follow these steps.
+To view the bank account change history, follow these steps:
 
 1. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 1. Select **Changes**.

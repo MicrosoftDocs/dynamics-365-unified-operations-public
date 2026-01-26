@@ -71,7 +71,7 @@ To configure document classes, follow these steps:
 
 ### Configure the Sales point prefix
 
-To configure sales point prefix, follow these steps.
+To configure sales point prefix, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix**.
 1. For each **Sales point prefix** that you want to use in Electronic Invoices:
@@ -82,7 +82,7 @@ To configure sales point prefix, follow these steps.
 
 ### Configure document class sales point
 
-To configure the document class sales point, follow these steps.
+To configure the document class sales point, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point**.
    1. Select the **Sales point prefix** that you created in the previous step and add a number sequence code.
@@ -105,7 +105,7 @@ For more information, see [Field list configuration for Latin America](ltm-core-
 
 #### Configure Method of payments
 
-To configure Method of payments, follow these steps.
+To configure Method of payments, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments setup** \> **Methods of payment**.
 1. For each **Method of payment** that you want to use in Electronic Invoices:
@@ -116,7 +116,7 @@ To configure Method of payments, follow these steps.
 
 #### Configure Currencies
 
-To configure currencies, follow these steps.
+To configure currencies, follow these steps:
 
 1. Go to **General ledger** \> **Currencies** \> **Currencies**.
 1. For each **Currency** that you want to use in Electronic Invoices:

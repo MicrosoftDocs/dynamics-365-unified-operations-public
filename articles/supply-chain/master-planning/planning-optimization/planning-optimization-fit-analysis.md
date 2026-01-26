@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
@@ -22,16 +22,16 @@ You should analyze the result from the Planning Optimization fit analysis as par
 > [!NOTE]
 >
 > - The Planning Optimization fit analysis can't identify some inconsistencies. For more information, see [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md).
-> - If the analysis finds inconsistencies, you can still use Planning Optimization. The results of the fit analysis just show places where the planning service won't honor your current setup. In other words, they show places where some processes might be ignored or might not be supported.
+> - If the analysis finds inconsistencies, you can still use Planning Optimization. The results of the fit analysis just show places where the planning service doesn't honor your current setup. In other words, they show places where some processes might be ignored or aren't supported.
 
 ## Run Planning Optimization fit analysis
 
-To run the Planning Optimization fit analysis and view the results, follow these steps.
+To run the Planning Optimization fit analysis and view the results, follow these steps:
 
 1. Select a company (legal entity) from the company picker in the navigation bar.
 1. Go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**.
 1. On the Action Pane, select **Run analysis**.
-1. The system runs the analysis and then shows the results. For each result that's shown, consult the table later in this article to see whether that feature is currently supported for Planning Optimization and, if it isn't yet supported, when support is expected to become available. If no issues exist for your selected company, the result list is blank, and you receive a "No issues found" message.
+1. The system runs the analysis and then shows the results. For each result that shown, consult the table later in this article to see whether that feature is currently supported for Planning Optimization and, if it isn't yet supported, when support is expected to become available. If no issues exist for your selected company, the result list is blank, and you receive a "No issues found" message.
 1. Repeat this procedure for each company in your organization.
 
 ## Possible results from the fit analysis
@@ -39,7 +39,7 @@ To run the Planning Optimization fit analysis and view the results, follow these
 The following table shows the various results that can appear after a fit analysis. Number signs (*\#*) are replaced with a number that indicates the number of records that have the listed issue.
 
 > [!IMPORTANT]
-> For features that aren't yet supported, the following table provides expected availability information that's estimated based on our current roadmap. These estimates are subject to change without notice.
+> For features that aren't yet supported, the following table provides an availability estimate based on our current roadmap. These estimates are subject to change without notice.
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
@@ -59,8 +59,8 @@ The following table shows the various results that can appear after a fit analys
 | Freeze time fence | Item coverage records with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | Supported |
 | Freeze time fence | Master plans with freeze time fence set: *\#* | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.| Supported |
 | Intercompany | Master plans including planned downstream demand: *\#* | This feature is now supported. Learn more in [Intercompany planning](Intercompany-planning.md) | Supported |
-| Kanban | Item coverage records with planned order type kanban: *\#* | This feature is now supported. To use it, enable the *(Preview) Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
-| Kanban | Items with default order type kanban: *\#* | This feature is now supported. To use it, enable the *(Preview) Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
+| Kanban | Item coverage records with planned order type kanban: *\#* | This feature is now supported. To use it, enable the *Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
+| Kanban | Items with default order type kanban: *\#* | This feature is now supported. To use it, enable the *Lean manufacturing for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). This is a preview feature in Supply Chain Management version 10.0.45 and is generally available as of version 10.0.46. | Supported |
 | Product lifecycle state | Product lifecycle states not active for planning: *\#* | This feature is now supported. Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
 | Production | BOM lines with rounding or multiple setup: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
 | Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. | Supported |
@@ -79,14 +79,14 @@ The following table shows the various results that can appear after a fit analys
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
 | Production | Sales line reservation using explosion: *\#* | This scenario isn't yet supported. Sales line reservations aren't automatically made during explosion.  | Future wave |
-| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32, with a private preview available for version 10.0.31 (contact Microsoft Support to request access to the private preview feature on version 10.0.31). A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported |
+| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32. A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. Learn more in [Purchase requisitions](purchase-requisitions.md) | Supported |
 | Safety margins | Coverage groups with safety margin: *\#* | This feature is now supported. Learn more in [Safety margins](safety-margins.md) | Supported |
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. Learn more in [Safety margins](safety-margins.md) |  Supported |
 | Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is now supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
-| Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | This is now supported for all versions of Supply Chain Management. No set up is required. | Supported |
+| Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | This feature is now supported for all versions of Supply Chain Management. No set up is required. | Supported |
 
 ## Related information
 

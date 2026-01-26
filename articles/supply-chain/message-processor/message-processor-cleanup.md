@@ -62,14 +62,14 @@ To turn the rule on or off, or to change the frequency of the rule, follow these
     - **Status** – Set to *Active* or *Inactive*.
     - **Run frequency** – Choose how often to run the check (*Daily*, *Weekly*, *Monthly*, or *Unscheduled*).
 
-To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps.
+To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps:
 
 1. Go to **System administration** \> **Workspaces** \> **Optimization advisor**. Here, you can see a list of optimization opportunities that the system has identified, including those related to message processor cleanup.
 1. Select the row where **Area** is *SCM* and **Optimization opportunity** is *Cleanup job for message processor*.
 1. From the toolbar, select **More information** to learn more about the opportunity and recommended actions.
 1. If you want to act on the opportunity, select **Take action** from the toolbar to open the **Message queue setup** page, and configure the cleanup settings as described previously in this article.
 
-## Additional resources
+## Related information
 
 - [Monitor and control message processor messages](message-processor.md)
 - [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)

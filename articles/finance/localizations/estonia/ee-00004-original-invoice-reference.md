@@ -22,7 +22,7 @@ The following procedures use the demo data company DEMF with a primary address i
 
 ## Create a sales order
 
-To create a sales order, follow these steps.
+To create a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
@@ -44,7 +44,7 @@ To create a sales order, follow these steps.
 
 ## Create a credit note for a sales order
 
-To create a sales order for a sales order, follow these steps.
+To create a sales order for a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.

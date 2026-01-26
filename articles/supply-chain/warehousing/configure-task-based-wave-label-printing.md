@@ -51,7 +51,7 @@ The default data initially uses a threshold value of *1* for the minimum number 
 
 If the wave label processing exceeds the wave task processing threshold, task-based processing is initiated. In the next wave processing that fits the wave template, wave label printing will run in a standalone *ttsbegin*/*ttscommit* transaction immediately after work creation. If work release (unblocking) is configured on the wave template to run automatically, it occurs only after the wave label printing process is successfully completed.
 
-If wave label generation fails (for example, if conversion of the work quantity to the wave label quantity fails and throws an error), only the appropriate transaction fails. The work that was previously created remains frozen. To correct errors and print the wave labels, follow these steps.
+If wave label generation fails (for example, if conversion of the work quantity to the wave label quantity fails and throws an error), only the appropriate transaction fails. The work that was previously created remains frozen. To correct errors and print the wave labels, follow these steps:
 
 1. Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**.
 1. Select the relevant wave in the grid.

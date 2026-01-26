@@ -39,7 +39,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
 
-To review and update the parameters for the **Danish electronic invoice (DK)** electronic invoicing feature, follow these steps.
+To review and update the parameters for the **Danish electronic invoice (DK)** electronic invoicing feature, follow these steps:
 
 1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 > [!NOTE]
@@ -76,7 +76,7 @@ To review and update the parameters for the **Danish electronic invoice (DK)** e
 
 Some additional parameters must be configured directly in Finance.
 
-To configure the additional parameters directly in Finance, follow these steps.
+To configure the additional parameters directly in Finance, follow these steps:
 
 1. In the **Feature management** workspace, make sure that the **Export channels for electronic invoicing integration** feature is enabled. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** Electronic reporting (ER) configurations that are required for Denmark are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
@@ -98,14 +98,14 @@ Follow the configuration steps in [Customer electronic invoices in Denmark](../n
 
 Companies that submit electronic invoices can be identified by their CVR number or their [Global Location Number (GLN)](https://en.gs1.dk/services/gln). The GLN is also known as a European article numbering (EAN) location number.
 
-To identify a company by its CVR number, follow these steps.
+To identify a company by its CVR number, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Bank account information** FastTab, in the **Codes** section, in the **Routing number** field, make sure that a valid CVR number is entered for the legal entity.
 
     The CVR number is entered in the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the electronic invoice XML file that is generated. It's used as the seller's identification during the submission process.
 
-To identify a company by its GLN, follow these steps.
+To identify a company by its GLN, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Define a new registration type for Denmark that has the name **EAN**. You must enter the name exactly as it appears here.
@@ -137,7 +137,7 @@ By default, all outgoing electronic invoices are generated in OIOUBL format for 
 
 #### Configure electronic document properties
 
-To configure electronic document properties, follow these steps.
+To configure electronic document properties, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
 1. In the **Type** field, enter **FormatType**. You must enter the value exactly as it appears here.
@@ -149,7 +149,7 @@ To configure electronic document properties, follow these steps.
 
 #### Enter the type of format
 
-To enter the type of format for specific customers, follow these steps.
+To enter the type of format for specific customers, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
@@ -167,7 +167,7 @@ After you complete all the required configuration steps, you can generate and su
 > [!IMPORTANT]
 > In current implementations, the standard submission procedure that was described earlier only generates electronic invoices and stores them on the service side. The invoices aren't submitted. Submission of Danish electronic invoices requires that you complete the following additional steps.
 
-To submit the generated electronic invoices in batch mode, follow these steps.
+To submit the generated electronic invoices in batch mode, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 1. In the **Channel** field, select the export channel that you [previously created](#ExChannel), and then select **OK**.
@@ -195,7 +195,7 @@ To import incoming invoices in OIOUBL and PEPPOL formats, follow these additiona
 
 Some additional parameters must be configured directly in Finance.
 
-To configure the additional parameters directly in Finance, follow these steps.
+To configure the additional parameters directly in Finance, follow these steps:
 
 1. Make sure that the latest version of the **Vendor invoice import (DK)** ER configuration is imported.
 
@@ -241,7 +241,7 @@ Follow the configuration steps in [Vendor electronic invoice import in Denmark](
 
 ### Receive electronic invoices
 
-To receive electronic invoices, follow these steps.
+To receive electronic invoices, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 1. Select **OK**, and then close the page.
@@ -262,7 +262,7 @@ Responses can be configured by using electronic document property types in the s
 
 #### Configure electronic document properties
 
-To configure electronic document properties, follow these steps.
+To configure electronic document properties, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
 1. In the **Type** field, enter **RejectResponse**. You must enter the value exactly as it appears here.
@@ -287,7 +287,7 @@ To configure electronic document properties, follow these steps.
 
 #### Define responses formats
 
-To identify which response format type is used for a specific vendor, follow these steps.
+To identify which response format type is used for a specific vendor, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a specific vendor in the list, and then, on the Action Pane, on the **Vendor** tab, in the **Properties** group, select **Electronic document properties**.
@@ -298,7 +298,7 @@ To identify which response format type is used for a specific vendor, follow the
 
 #### Enter responses
 
-To enter responses for specific pending vendor invoices, follow these steps.
+To enter responses for specific pending vendor invoices, follow these steps:
 
 1. Go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 1. Select a specific pending vendor invoice in the list, and then, on the Action Pane, on the **Vendor invoice** tab, in the **Properties** group, select **Electronic document properties**.
@@ -311,7 +311,7 @@ To enter responses for specific pending vendor invoices, follow these steps.
 
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update the authorization credentials that are required for response submission via the ISV last-mile connector.
 
-To review and update the authorization credentials, follow these steps.
+To review and update the authorization credentials, follow these steps:
 
 1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 5** or later. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create a feature based on an existing feature](../global/gs-e-invoicing-create-new-globalization-feature.md#create-a-feature-based-on-an-existing-feature).
@@ -331,7 +331,7 @@ To review and update the authorization credentials, follow these steps.
 
 ### Configure electronic document parameters
 
-To configure electronic document parameters, follow these steps.
+To configure electronic document parameters, follow these steps:
 
 1. Make sure that the latest country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -342,7 +342,7 @@ To configure electronic document parameters, follow these steps.
 
 ### Send responses
 
-To generate and submit responses, follow these steps.
+To generate and submit responses, follow these steps:
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.

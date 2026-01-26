@@ -63,7 +63,7 @@ The agent detects changes in the following fields:
 - Delivery date
 - Cancellation
 
-To review and accept changes that the agent suggests based on the emails that it has read, follow these steps.
+To review and accept changes that the agent suggests based on the emails that it has read, follow these steps:
 
 > [!IMPORTANT]
 > Before you begin, confirm that the signed-in user has access to the mailboxes. Learn more in [Synchronize mailboxes with Dataverse](./supplier-com-agent-setup.md#synchronize-mailboxes-with-dataverse).

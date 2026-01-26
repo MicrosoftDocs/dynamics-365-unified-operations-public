@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 09/30/2025
+ms.date: 12/15/2025
 
 ---
 
@@ -70,11 +70,16 @@ Business performance analytics has data for the most recent eight quarters. This
 
 Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
+## Demo database swap after installing Business performance analytics
+
+If you swap a demo database in sandbox or production after installing Business performance analytics, profile rehydration is required to reset the metadata that the transform jobs rely on. Contact support to reset the metadata after the swap.    
+
 ## Reports
 
 ### What should I do if reports in Business performance analytics suddenly stop working and keep showing errors?
 
 If you encounter a full-page error with the message "An unknown error has occurred. Try again or contact your app administrator" while opening reports, the following steps may help resolve it. These steps don't address issues like no data displayed, refresh errors, or blank pages.
+
 
 >[!Note]
 > These steps are safe to execute and prevents data loss
@@ -145,8 +150,15 @@ Business performance analytics’s semantic model includes a flexible date dimen
 
 This approach ensures Business performance analytics remains adaptable to your business’s timekeeping practices while maintaining modeling best practices and analytic clarity.
 
+
+### Flow ownership  
+
+#### How do I reassign flow ownership when the original owner has left the organization?
+
+If flows in Business performance analytics become orphaned because the original owner has left the organization, you need to reassign ownership. For more information, see [Reassign Business performance analytics flow ownership](bpa-flow-owner.md).
+
+
 ## Support and news
 ### How do I receive the latest news about Business performance analytics?
 
-To receive the latest updates about Business performance analytics, join the Business performance analytics Viva Engage group.
-Join the [Business performance analytics Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed).
+To receive the latest updates about Business performance analytics, join the [Business performance analytics](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDU0NTUxMDQifQ) community on Microsoft Viva Engage.

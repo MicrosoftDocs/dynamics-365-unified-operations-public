@@ -1,11 +1,10 @@
 ---
 title: Video player module
-description: This article covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about video player modules and how to add them to Microsoft Dynamics 365 Commerce site pages.
 author: anupamar-ms
-ms.date: 07/30/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,17 +16,17 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers video player modules and describes how to add them to Microsoft Dynamics 365 Commerce site pages.
 
-The video player module is used to support video playback. It can be added to any page, provided that video content is uploaded to and available in the content management system (CMS). The video player module supports the .mp4 media type.
+Use the video player module to support video playback. Add it to any page, provided that you upload video content to and make it available in the content management system (CMS). The video player module supports the .mp4 media type.
 
 ## Video player module
 
-The video player module can be used to showcase videos on an e-Commerce site. It supports all playback capabilities, such as play, pause, full-size mode, audio descriptions, and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
+Use the video player module to showcase videos on an e-commerce site. It supports all playback capabilities, such as play, pause, full-size mode, audio descriptions, and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
 
-The video player module also supports secondary audio tracks. When a video is uploaded to the CMS, a secondary audio track can also be uploaded. The video player module can then play the secondary audio track if a user selects it.
+The video player module also supports secondary audio tracks. When you upload a video to the CMS, you can also upload a secondary audio track. The video player module can then play the secondary audio track if a user selects it.
 
-### Examples of video player modules in e-Commerce
+### Examples of video player modules in e-commerce
 
 - Instructional videos on product details pages or marketing pages
 - Promotional videos or videos about policies on any marketing page
@@ -35,7 +34,7 @@ The video player module also supports secondary audio tracks. When a video is up
 
 The following image shows an example of a video player module on a home page.
 
-![Example of a video player module.](./media/ecommerce-videoplayer.PNG)
+:::image type="content" source="./media/ecommerce-videoplayer.PNG" alt-text="Screenshot of a video player module.":::
 
 ### Video player module properties
 
@@ -43,7 +42,7 @@ The following image shows an example of a video player module on a home page.
 |-----------------------|-------------------------------------|-------------|
 | Heading               | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | By default, the **H2** heading tag is used for the heading, but the tag can be changed to meet accessibility requirements. |
 | Rich text             | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities are supported, such as hyperlinks, and bold, underlined, and italic text. Some of these capabilities can be overridden by the page theme that is applied to the module. |
-| Link                  | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector | The module supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive, to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
+| Link                  | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector | The module supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive, to meet accessibility requirements. Links can be configured so that they're opened on a new tab. |
 | Sub text              | Heading, text, or links | Additional context for the video player module can be added, such as an author or designer name, or links to personal blogs. |
 | Auto play             | **True** or **False**               | When the value is set to **True**, the video is automatically played. |
 | Mute                  | **True** or **False**               | When the value is set to **True**, the audio is muted. For this player, the default value is **False**. In the Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
@@ -63,7 +62,7 @@ The following image shows an example of a video player module on a home page.
 > [!NOTE] 
 > Before you create a video player module, you must first upload a video to the Media Library.
 
-To add a video player module to a new page and set the required properties, follow these steps.
+To add a video player module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Video player template**, and then select **OK**.

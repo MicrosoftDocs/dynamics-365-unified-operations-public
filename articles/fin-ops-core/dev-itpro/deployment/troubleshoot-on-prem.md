@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot on-premises deployments
 description: Access troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises), including an overview of monitoring deployment.
-author: faix
+author: ttreen
 ms.author: osfaixat
 ms.topic: troubleshooting-general
-ms.date: 02/03/2025
+ms.date: 10/31/2025
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
@@ -69,7 +69,7 @@ The following folders contain more information:
 - AX-SetupInfrastructureEvents
 - AX-BridgeService
 
-To review Microsoft Dynamics entries in Event Viewer, follow these steps.
+To review Microsoft Dynamics entries in Event Viewer, follow these steps:
 
 1. In Event Viewer, right-click **Custom Views**, and then select **Create Custom View**.
 
@@ -134,9 +134,9 @@ Be sure to complete these steps:
 - Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.
 - Review the antivirus exclusions that are noted in [Environment setup](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
-## A time-out error occurs while you're waiting for Installer Service to be completed for machine x.x.x.x
+## A time-out error occurs while you're waiting for Installer service to be completed for machine x.x.x.x
 
-Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine). Check whether the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine, and ConfigTemplate.xml must be correctly defined.
+Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine). Check whether the nodes are being reused on the same machine. For example, AOS and ORCH mustn't be on the same machine, and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
 
@@ -167,7 +167,7 @@ Get-ServiceFabricApplicationType | `
 
 ## Remove Service Fabric
 
-To completely remove the Service Fabric cluster, follow these steps.
+To completely remove the Service Fabric cluster, follow these steps:
 
 1. Run the following command.
 
@@ -182,7 +182,7 @@ To completely remove the Service Fabric cluster, follow these steps.
 
 ## Clean up an existing environment and redeploy
 
-To clean up an existing environment and redeploy, follow these steps.
+To clean up an existing environment and redeploy, follow these steps:
 
 1. In Lifecycle Services, open the project, and then, in the **Environments** section, delete the deployment.
 
@@ -296,7 +296,7 @@ Follow these steps to troubleshoot general issues with local agent validation.
 2. Verify that the Test-D365FOConfiguration.ps1 script passes on all the orchestrator machines.
 3. Verify that the installation of LocalAgentCLI.exe is successfully completed.
 4. In Service Fabric Explorer, verify that all the applications are healthy.
-5. If the applications aren't healthy, find the primary node for the service that is failing. In Event Viewer, look for events in the following locations:
+5. If the applications aren't healthy, find the primary node for the service that's failing. In Event Viewer, look for events in the following locations:
 
     - Custom Views \> Administrative Events
     - Applications and Services Log \> Microsoft \> Dynamics \> AX-LocalAgent
@@ -371,7 +371,7 @@ You can also manually add the following values in the **components** section of 
 
 ### Error
 
-**Error:** During servicing, you receive an "Unable to download asset" error, and the details state, "The credentials supplied to the package were not recognized."
+**Error:** During servicing, you receive an "Unable to download asset" error, and the details state, "The credentials supplied to the package weren't recognized."
 
 **Reason:** The ACL wasn't correctly defined on certificates.
 
@@ -486,7 +486,7 @@ The local agent user can't connect to the SQL Server instance or the database.
 
 > RunAsync failed due to an unhandled exception causing the host process to crash: System.Net.Http.HttpRequestException: An error occurred while sending the request. ---\> System.Net.WebException: The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'
 
-**Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name could not be resolved: 'lcsapi.lcs.dynamics.com'."
+**Reason:** The local agent machines can't connect to lcsapi.lcs.dynamics.com. Review the AX-BridgeService event log for "The remote name couldn't be resolved: 'lcsapi.lcs.dynamics.com'."
 
 **Steps:** Follow these steps to resolve the error.
 
@@ -635,7 +635,7 @@ You can also validate the encrypted text by using the following command.
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
 
-If none of the preceding solutions work, follow these steps.
+If none of the preceding solutions work, follow these steps:
 
 1. Verify that the domain name and Active Directory account names that are specified in the ConfigTemplate.xml file are correct.
 2. Verify that the thumbprints that are specified in the ConfigTemplate.xml file are correct if the certificate wasn't generated by using the scripts that are provided.
@@ -703,7 +703,7 @@ Category does not exist.
 
 **Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
 
-**Resolution:** Run **lodctr /R** in a Command Prompt window that you open as administrator in all AOS nodes where the gateway is unhealthy. If you receive an error message that states that the performance counters can't be rebuilt, try to run the command again. 
+**Resolution:** Run **lodctr /R** in a command prompt window that you open as administrator in all AOS nodes where the gateway is unhealthy. If you receive an error message that states that the performance counters can't be rebuilt, try to run the command again. 
 
 ## Management Reporter
 
@@ -734,7 +734,7 @@ After providers are registered, more details about the new deployment are logged
 
 To see the new folders, you must close and reopen Event Viewer. To see more details, you must deploy an environment again.
 
-###  <a name="FREntityFramework"></a> Could not load file or assembly EntityFramework
+###  <a name="FREntityFramework"></a> Couldn't load file or assembly EntityFramework
 
 **Issue**: You're running Local Agent version 2.3.1 or later and you received the following stacktrace in the event logs while deploying a package that contains Platform update 29 or earlier:
 
@@ -763,9 +763,9 @@ Microsoft.Dynamics.Performance.Logger.IfxLoggerProvider.CreateLogger(System.Stri
 Microsoft.Extensions.Logging.Logger..ctor(Microsoft.Extensions.Logging.LoggerFactory,  System.String) at  
 ```
 
-**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 wasn't correctly installed or is corrupt in some or all of the MR nodes.
+**Reason:** The Microsoft Visual C++ redistributable package for Visual Studio 2013 wasn't correctly installed or is corrupt in some or all of the MR nodes.
 
-**Steps:** Rerun the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
+**Steps:** Rerun the installation of the Microsoft Visual C++ redistributable package for Visual Studio 2013.
 
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
@@ -866,13 +866,13 @@ Verify the AD&nbsp;FS Manager by going to **ADFS** \> **Application groups**. Do
 
 Note the **Redirect URI** value. It should match the DNS forward lookup zone for Finance + Operations.
 
-### Error: "Could not establish trust relationship for the SSL/TLS secure channel"
+### Error: "Couldn't establish trust relationship for the SSL/TLS secure channel"
 
-If you receive an error that states, "Could not establish trust relationship for the SSL/TLS secure channel," follow these steps.
+If you receive an error that states, "Couldn't establish trust relationship for the SSL/TLS secure channel," follow these steps:
 
 1. In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, scroll down and note the URLs for **Aad\_Microsoft Entra IDMetadataLocationFormat** and **Aad\_FederationMetadataLocation**.
 2. Browse to those URLs from AOS.
-3. On the AOS machine, in Event Viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.
+3. On the AOS machine, in Event viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.
 4. Verify that the AD&nbsp;FS certificate is trusted:
 
     1. Verify the AD&nbsp;FS certificate. On the AD&nbsp;FS machine, in Server Manager, go to **Tools** \> **AD&nbsp;FS Management**.
@@ -935,16 +935,16 @@ The following sections provide focused debugging steps for claims that are retur
 1. Open Microsoft Edge, and then open an **InPrivate** window (the shortcut key is Ctrl + Shift + N).
 1. Open the **Microsoft Edge developer tools** (the shortcut key is Ctrl + Shift + I)
 1. Navigate to the **Network** tab. You can verify that traffic is being captured by looking at the lower part of the tool.
-1. In the **Network** tab make sure you have **Preserve Log** and **Disable Cache** checked.
+1. On the **Network** tab, select the **Preserve Log** and **Disable Cache** options.
 1. Open finance and operations apps (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 1. Sign in by using the USERINFO.NETWORKALIAS account and password.
 1. After you're signed in, stop recording the network log (the shortcut key is Ctrl + E).
 
 #### Analyze
 
-After you have the network log, you can analyze the claims that are returned to Microsoft Dynamics. For each request that is sent, you can view the full request and also the full response.
+After you have the network log, you can analyze the claims that are returned to Microsoft Dynamics 365. For each request that is sent, you can view the full request and also the full response.
 
-1. In the network log look for the POST request that gets sent to Finance + Operations after having successfully authenticated through AD&nbsp;FS.
+1. In the network log, look for the POST request that gets sent to Finance + Operations after having successfully authenticated through AD&nbsp;FS.
 
     ![Network log.](media/NetworkLogOnpremADFS.png)
 
@@ -988,7 +988,7 @@ In some cases, you still might not be able to sign in, and you might receive the
 
 > You're not authorized to login with your current credentials. You're redirected to the login page in a few seconds.
 
-If this error occurs, follow these steps.
+If this error occurs, follow these steps:
 
 1. On the AD&nbsp;FS machine, go to **Server Manager** \> **Tools** \> **AD&nbsp;FS Management**.
 2. Right-click **AD&nbsp;FS**, and then select **Edit Federation Service Properties**.
@@ -1035,7 +1035,9 @@ In this case, in the ClusterConfig.json file, change **diagnosticsStore** from a
 > The timeout period elapsed prior to completion of the operation or the server is not responding.  
 > The statement has been terminated.
 
-Only one AOS machine can run DB Sync at a time. You can safely ignore this error, because it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it. To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to **Applications and Services Log** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational**.
+Only one AOS machine can run DB Sync at a time. You can safely ignore this error, it means that one of the AOS VMs is running DB Sync. Therefore, the other VMs produce a warning that they can't run it. To verify that DB Sync is running, on the AOS VM that isn't producing warnings, in Event Viewer, go to **Applications and Services Log** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize/Operational**.
+
+It could also timeout due to long running SysSetup scripts that run at the end of the synchronize to update specific data tables. For more information, see [Synchronize Takes Too Long Due to SysSetup Scripts](#dbsync-takes-too-long-due-to-syssetup-scripts)
 
 ## Error: "RequireNonce is 'true' (default) but validationContext.Nonce is null"
 
@@ -1051,7 +1053,7 @@ To sign in to the client, disable Enhanced Security Configuration for Internet E
 
 If you receive an "Invalid algorithm specified / Cryptography" error, you must use the Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, see the certificate requirements. Also verify that the structure of the credentials.json file is correct.
 
-If you must re-create the certificate by using the correct provider, follow these steps.
+If you must re-create the certificate by using the correct provider, follow these steps:
 
 1. Create the certificate again by using the correct provider.
 2. Change the **ConfigTemplate.xml** file.
@@ -1083,7 +1085,7 @@ Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRe
 
 > AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.
 
-**Steps:** To resolve this issue, follow these steps.
+**Steps:** To resolve this issue, follow these steps:
 
 1. Run the following command in Windows PowerShell.
 
@@ -1109,7 +1111,7 @@ Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRe
 
 ## The requested operation requires elevation
 
-This issue occurs because AOS users aren't in the local administrator group, and User Account Control (UAC) hasn't been disabled correctly. To resolve the issue, follow these steps.
+This issue occurs because AOS users aren't in the local administrator group, and User Account Control (UAC) hasn't been disabled correctly. To resolve the issue, follow these steps:
 
 1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment article for your environment:
 
@@ -1285,7 +1287,7 @@ Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-0000
 
 ### If you have both an online project and an on-premises project
 
-If you have both an online project and an on-premises project, follow these steps.
+If you have both an online project and an on-premises project, follow these steps:
 
 1. Verify that the Microsoft .NET Framework version 4.7.2 is installed.
 2. Run the following Windows PowerShell script to install the Azure PowerShell module.
@@ -1422,7 +1424,7 @@ You might receive the following error during a new installation:
 
 This error causes the AXSF service to fail with the same error.
 
-To resolve this issue, follow these steps.
+To resolve this issue, follow these steps:
 
 1. In the [agent share path](setup-deploy-on-premises-latest.md#setupfile), find the **netstandard.dll** file. For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.
 2. On each AOS server, open a Command Prompt window as an administrator, and run the following command.
@@ -1502,6 +1504,51 @@ DB sync failed.
 select * into databaselog_bak from databaselog
 truncate table databaselog
 ```
+
+## DBSync takes too long due to syssetup scripts
+
+**Issue** - During the DBSync process in LBD environments, SysSetup scripts prepares data so it aligns with the requirements of a specific Dynamics 365 version. In some cases—particularly in large customer environments—certain scripts, such as CustInvoiceTaxFieldsSysSetup, may fail or time out due to the volume of data involved.
+
+Unlike in the cloud, LBD doesn't automatically execute these SysSetup scripts asynchronously in batch jobs. Instead, the standard approach is the scripts run synchronously as part of the sync process. This difference in the standard execution model can lead to delays or hangs if a script takes longer than expected to complete.
+
+**Troubleshooting** 
+
+You'll need to determine if the DBSYnc is delayed due to these SysSetup jobs running synchronously. The following steps can determine this:
+
+To locate the database sync log "dbsync_20yymmddhhmmdd.log", follow these steps:
+ - Open Task Manager and the AOS node running the sync (you can check the SF.SYNC log table in the AXDB database to determine the AOS node running the sync).
+ - On the **Details** tab, right click AXService.exe and select **Open file location**.
+ - In File explorer, go up one folder, and then into the log folder. This is where the sync log is.
+
+Open the log and look for the following: `Starting Execution of SysSetupInstaller`
+
+See example below:
+```
+07/29/2025 16:46:34: Beginning sync step: New SyssetupInstaller execution.
+07/29/2025 16:46:34: 07/29/2025 16:46:34: SysSetupInstaller: Starting Execution of SysSetupInstaller
+07/29/2025 16:46:34: 07/29/2025 16:46:34: SysSetupInstaller: Generating Table Graph
+07/29/2025 16:46:41: 07/29/2025 16:46:41: SysSetupInstaller: Table Graph Generated Successfully. Time elapsed: 0:00:00:07.2086068
+07/29/2025 16:46:41: 07/29/2025 16:46:41: SysSetupInstaller: Determining Order to Execute Scripts
+07/29/2025 16:46:42: 07/29/2025 16:46:42: SysSetupInstaller: Determine Scripts Order Completed Successfully. Time elapsed: 0:00:00:00.8183871
+07/29/2025 16:46:42: 07/29/2025 16:46:42: SysSetupInstaller: Starting Scripts Execution
+07/29/2025 16:46:42: 07/29/2025 16:46:42: SysSetupInstaller: ContinueOnError and Timeout KillSwitch values are: False and False
+07/29/2025 16:46:42: 07/29/2025 16:46:42: SysSetupInstaller: RunAsAsync and Version flight values are: False and False
+07/29/2025 16:46:42: 07/29/2025 16:46:42: SysSetupInstaller: Running Script: CatSetup with Timeout 300 seconds.
+```
+
+Check above and review the line `RunAsAsync and Version flight values are:` and check what the `RunAsAsync` value is set to (true\false).
+
+If the RunAsAsync is False, then continue with the resolution steps below.
+
+**Resolution** 
+
+Enable the `DbSyncEnableSysSetupInstallerAsRunAsAsync` flight. This schedules jobs to be run asynchronously in batch. To do this, run the following SQL:
+
+```SQL
+INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) 
+VALUES ('DbSyncEnableSysSetupInstallerAsRunAsAsync', 1, 0)
+```
+Resume the sync again. 
 
 ## DBSync fails to start
 

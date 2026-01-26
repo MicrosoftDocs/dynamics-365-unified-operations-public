@@ -26,7 +26,7 @@ For these reasons, we recommend that you disable the *Inventory Visibility integ
 
 ## Prepare for and run an on-hand consistency check on all items
 
-Before you run an on-hand consistency check on all items, we recommend that you follow these steps.
+Before you run an on-hand consistency check on all items, we recommend that you follow these steps:
 
 1. Go to **Inventory Management \> Periodic Tasks \> Inventory Visibility integration**.
 1. Check the **Status** value to determine whether the job is enabled.

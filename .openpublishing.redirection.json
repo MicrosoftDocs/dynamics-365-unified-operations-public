@@ -1,6 +1,91 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/RSSK-terms-conditions.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/SDK-terms-conditions.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-ado-tutorial.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-announcements.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-api-info.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-connector-info.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-devops-extension.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-visual-studio.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/dts-vscode-doc.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/lcs-aad-app-reg.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-tm.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md",
+      "redirect_url": "/dynamics365/finance/localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration",
+      "redirect_document_id": "false"  
+    },
+    {
+      "source_path": "articles/finance/accounts-payable/project-invoicing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-invoicing",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-invent-doc.md",
       "redirect_url": "/dynamics365/fin-ops-core/fin-ops/",
       "redirect_document_id": "false"  
@@ -28499,8 +28584,59 @@
       "source_path": "articles/supply-chain/warehousing/configure-wave-schedule-work-creation.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/wave-processing",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-install-certificate.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-migrating-from-v3-v4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/product-information-faq.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/unified-pricing-management.md",
+      "redirect_url": "/dynamics365/supply-chain/unified-pricing-management/upm-migrate-to-unified-pricing-management?context=/dynamics365/context/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/default-product-lifecycle-state.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/exclude-products-master-planning.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/new-product-lifecycle-state.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/product-lifecycle-state-released-product.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/product-lifecycle-state-released-product-master.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-authenticate-service-based.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-intune.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "redirect_document_id": false
     }
   ]
 
 }
+
 

@@ -23,7 +23,7 @@ You can use the **CFDI – Electronic invoices** form to view, email, and export
 
 The following procedure was completed using the MXMF demo data company.
 
-To view, email, and export an already-generated CFDI electronic invoice, follow these steps.
+To view, email, and export an already-generated CFDI electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Inquiries and reports \> CFDI (electronic invoices)**.
 1. In the list, select the link in the selected row. You're able to see some details of the CFDI electronic invoice such as the Universally Unique Identifier (UUID) and status.  

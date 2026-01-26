@@ -1,8 +1,8 @@
 ---
 title: Enable Power BI for Global Inventory Accounting
 description: Learn how to enable Microsoft Power BI for Global Inventory Accounting, including prerequisites and an outline and step-by-step process on setup.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: PowerBIConfiguration
 ms.topic: how-to
@@ -29,7 +29,7 @@ The following prerequisites must be in place before you can enable Power BI repo
 
 ## Setup
 
-To set up the Power BI integration, follow these steps.
+To set up the Power BI integration, follow these steps:
 
 1. Go to the [*Global Inventory Accounting Add-in Templates* repo on GitHub](https://github.com/microsoft/Global-Inventory-Accounting-Add-in-Templates/releases) and download the latest *Global inventory accounting- production costing* file (for example, `Global.inventory.accounting-.production.costing.Preview.-.v2.1.pbix`).
 1. Sign in to [PowerBI.com](https://app.powerbi.com/), upload and configure the **Global Inventory Accounting** Power BI report file by following these steps:
@@ -43,7 +43,7 @@ To set up the Power BI integration, follow these steps.
             - Overwrite the default **Dataverse URL** values using the values found under **Power platform environment information** in LCS (in the **Power platform integration** section).
             - Overwrite the default **Environment ID** values using the values found under **Environment details** in LCS (in the **Manage environment** section).
             - Select the **Edit credentials** link next to the **CDS** label in the **Data source credentials** section. Then sign in to your Dataverse account using the **OAuth2** authentication method.
-        1. Verify that the Power BI reports found at **My workspace \> Reports \> Global Inventory Accounting** are now working correctly and display content from your system. If after completing this procedure, you're still having trouble enabling Power BI for Global Inventory Accounting, please send an email message with your environment ID and a short explanation to the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com).
+        1. Verify that the Power BI reports found at **My workspace \> Reports \> Global Inventory Accounting** are now working correctly and display content from your system. If after completing this procedure, you're still having trouble enabling Power BI for Global Inventory Accounting, please submit a support request to Microsoft Customer Service and Support. Include your environment ID, tenant ID, and error details in the request.
 1. Register the application as described in [Configure PowerBI.com integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process). By completing this step, you'll get the **application ID** and **application key** that is required for the next step.
 1. Integrate the **Global Inventory Accounting** Power BI report file into Dynamics 365 Supply Chain Management by following these steps:
     1. Go to **System administration \> Setup \> PowerBI.com configuration**.

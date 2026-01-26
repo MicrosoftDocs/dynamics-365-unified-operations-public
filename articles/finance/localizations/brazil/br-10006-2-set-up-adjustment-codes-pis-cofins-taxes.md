@@ -22,7 +22,7 @@ You can make manual adjustment transactions to adjust the credit or debit of PIS
 
 The following procedure uses the BRMF demo company.
 
-To make manual adjustment transactions to adjust the credit of reported PIS and COFINS amounts, follow these steps.
+To make manual adjustment transactions to adjust the credit of reported PIS and COFINS amounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Setup \> Tax adjustment codes \> PIS and COFINS adjustment code table**.
 1. Expand the **Posting** section.

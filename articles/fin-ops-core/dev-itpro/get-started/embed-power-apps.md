@@ -76,7 +76,7 @@ When you embed a canvas app, you must set the following parameters:
 
 After you embed a canvas app on a page and confirmed that it's working correctly, you might want to share the app with other users in the system. 
 
-To share an embedded canvas app, follow these steps.
+To share an embedded canvas app, follow these steps:
 
 1. [Share the canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app) with the appropriate users, so that they can access the app directly in Power Apps.
 2. Share the personalizations that are associated with the embedded app with the desired users. You can use either of the following approaches:

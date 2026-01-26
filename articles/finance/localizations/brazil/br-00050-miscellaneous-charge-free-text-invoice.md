@@ -23,7 +23,7 @@ Brazilian legislation taxes miscellaneous charges such as freight. Miscellaneous
 
 The following procedure uses the BRMF demo company.
 
-To configure miscellaneous charges on free text invoices, follow these steps.
+To configure miscellaneous charges on free text invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.

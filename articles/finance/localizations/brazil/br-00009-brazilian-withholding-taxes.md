@@ -20,7 +20,7 @@ This article describes how to set up a withholding tax code, a withholding tax t
 
 The following procedure walks you through how to set up a withholding tax code, a withholding tax type, and a calculation parameter to calculate withholding taxes for consultancy services or professional service payments. The procedure uses the BRMF demo company.
 
-To set up withholding taxes, follow these steps. 
+To set up withholding taxes, follow these steps: 
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Withholding tax \> Withholding tax settlement periods**.
 1. Select **New**.

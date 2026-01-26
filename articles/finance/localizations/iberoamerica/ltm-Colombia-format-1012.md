@@ -38,18 +38,18 @@ For more information, see [Import Electronic reporting (ER) configurations from 
 
 Run the Form 1012 report in Dynamics 365 Finance and Operations by setting up a **Tax Application ID**.
 
-To set up a Tax Application ID, follow these steps.
+To set up a Tax Application ID, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax application**, and select **New** to create a tax application record with code **1012** for format 1012.
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
 1. Select a record, and then select **Tax application**.
 
-To configure codes for **Tax ID types**, follow these steps.
+To configure codes for **Tax ID types**, follow these steps:
 
 1. On the **Tax application** page, in the **Tax application id** field, enter the code for Colombian format 1012.
 1. In the **Tax application code** field, enter the tax ID code according to Colombian regulation.
 
-To configure codes for countries, follow these steps.
+To configure codes for countries/regions, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**, and for each country/region go to **LATAM** \> **Tax application** to assign the tax application codes according to Colombian regulation.
 
@@ -61,7 +61,7 @@ Learn more in [Tax application for Latin America](../ltm-core-tax-application.md
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs and ledger account numbers that's used in transactions that are shown on the report.
 
-To set up the parameters for the report, follow these steps.
+To set up the parameters for the report, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. Select **LTM Tax Report deployment** \> **Format 1012**.
@@ -85,7 +85,7 @@ To set up the parameters for the report, follow these steps.
 
 ## Generate file format 1012 file
 
-To generate file format 1012 file, follow these steps.
+To generate file format 1012 file, follow these steps:
 
 1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1012**, and then select **OK**.
@@ -94,7 +94,7 @@ To generate file format 1012 file, follow these steps.
 
 ## Generate a Format 1012 Excel file
 
-To generate a Format 1012 Excel file, follow these steps.
+To generate a Format 1012 Excel file, follow these steps:
 
 1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1012 Excel**, and then select **OK**.

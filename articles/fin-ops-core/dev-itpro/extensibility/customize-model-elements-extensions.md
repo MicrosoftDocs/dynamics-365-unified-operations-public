@@ -65,7 +65,7 @@ The Rental, which is contained by the form named **FMRental**, has been extended
 
 ## Setup
 
-If you haven't opened the Fleet Management Solution in a previous tutorial, follow these steps. The fleet management solution file is available on the Dynamics AX downloadable VM.
+If you haven't opened the Fleet Management Solution in a previous tutorial, follow these steps: The fleet management solution file is available on the Dynamics AX downloadable VM.
 
 1. On the **Desktop**, double-click the **Visual Studio** shortcut to open the development environment.
 2. Open the **FleetManagement** solution. On the **File** menu, point to **Open**, and then select **Project/Solution**.

@@ -1,11 +1,10 @@
 ---
 title: Active image module
-description: This article covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about active image modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/30/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,19 +15,19 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers active image modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article explains active image modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-An active image module can be used to embed product tags in an image. E-commerce site users can then hover over the tags to preview products that are shown in the image. The previews are shown in pop-up windows. By selecting a preview pop-up window, users can go directly to the product details page (PDP) for the corresponding product.
+Use an active image module to embed product tags in an image. E-commerce site users can then hover over the tags to preview products that are shown in the image. The previews appear in pop-up windows. When a user selects a preview pop-up window, they can go directly to the product details page (PDP) for the corresponding product.
 
-The tags are defined by using X and Y coordinates on the image. Each tagged point should be configured with the product ID of the product that is shown in the image.
+Define the tags by using X and Y coordinates on the image. Configure each tagged point with the product ID of the product that the tag represents in the image.
 
 The following illustration shows an example of a preview pop-up window on a hero image on the Adventure Works home page.
 
-![Example of a preview pop-up window in an active image module](./media/Active_image.PNG)
+:::image type="content" source="./media/Active_image.PNG" alt-text="Screenshot of a preview pop-up window in an active image module.":::
 
 > [!IMPORTANT]
-> - The active image module is available as of the Dynamics 365 Commerce version 10.0.20 release.
-> - The active image module is showcased in the Adventure Works theme.
+> - The active image module is available starting with the Dynamics 365 Commerce version 10.0.20 release.
+> - The active image module is featured in the Adventure Works theme.
 
 ## Active image module properties
 
@@ -39,13 +38,13 @@ The following illustration shows an example of a preview pop-up window on a hero
 | Active coordinates | X and Y coordinates, and a product ID number | Each active image array consists of X and Y coordinates, and a product ID number.|
 | Heading            | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | By default, the **H2** heading tag is used for the heading, but the tag can be changed to meet accessibility requirements. |
 | Paragraph          | Paragraph text | The module supports paragraph text in rich text format. Some basic rich text capabilities are supported, such as hyperlinks, and bold, underlined, and italic text. Some of these capabilities can be overridden by the page theme that is applied to the module. |
-| Link               | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector | The module supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive, to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
+| Link               | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** selector | The module supports one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive, to meet accessibility requirements. Links can be configured so that they're opened on a new tab. |
 | Sub text           | Heading, text, and links | Additional context for the image can be added, such as an author or designer name, or links to personal blogs.|
 | Text theme         | **Light** or **Dark** | This property lets a user set the text to light or dark, based on the background image. It's available as a theme extension in the Adventure Works theme. |
 
 ## Add an active image module to a new page
 
-To add an active image module to a new page and set the required properties, follow these steps.
+To add an active image module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

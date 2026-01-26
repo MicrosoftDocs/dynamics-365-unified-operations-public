@@ -29,7 +29,7 @@ There might be payment journals that are reversed in the system, but that don't 
 
 ## Clear reversal company transactions on the reconciliation worksheet
 
-To manually clear reversal company transactions on the reconciliation worksheet, follow these steps.
+To manually clear reversal company transactions on the reconciliation worksheet, follow these steps:
 
 1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 1. Open or create a bank reconciliation worksheet.
@@ -38,7 +38,7 @@ To manually clear reversal company transactions on the reconciliation worksheet,
 
 ## Clear reversal company transactions by using matching rules
 
-To use matching rules to automatically clear reversal company transactions, follow these steps.
+To use matching rules to automatically clear reversal company transactions, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 1. Select **New** to create a matching rule.

@@ -2,9 +2,9 @@
 title: Settle customer consolidated invoices by using settle transactions
 description: Learn how to settle customer consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/09/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -17,15 +17,15 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to settle customer consolidated invoices for Japan by using settle transactions functionality in Microsoft Dynamics 365 Finance.
+This article explains how to settle customer consolidated invoices for Japan by using the settle transactions functionality in Microsoft Dynamics 365 Finance.
 
 In Japan, payments are made and settled against consolidated invoices.
 
-Before you begin the procedure, ensure that a consolidated invoice is created and confirmed, and that a payment has been posted. 
+Before you begin the procedure, ensure that a consolidated invoice is created and confirmed, and that a payment is posted.
 
-The procedure usese the demo data company JPMF.
+The procedure uses the demo data company JPMF.
 
-To settle customer consolidated invoices by using settle transactions functionality, follow these steps.
+To settle customer consolidated invoices by using the settle transactions functionality, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
 1. Confirm that the consolidated invoice you want to settle has a status of **Confirmed**.  
@@ -41,7 +41,5 @@ To settle customer consolidated invoices by using settle transactions functional
 1. Select **Post**.
 1. Go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
 1. Confirm that the consolidated invoice you want to settle has a status of **Settled**.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

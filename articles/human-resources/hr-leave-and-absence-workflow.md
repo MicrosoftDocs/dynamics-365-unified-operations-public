@@ -4,7 +4,7 @@
 title: Create a leave request workflow
 description: Create a Leave and absence request workflow to manage leave requests consistently in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 05/08/2024
+ms.date: 12/02/2025
 ms.topic: how-to
 # optional metadata
 
@@ -35,6 +35,7 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 ## Create a Leave and absence request workflow
 
+To create a leave and absence request workflow, follow these steps:
 1. On the **Leave and absence** page, select the **Links** tab.
 2. Under **Setup**, select **Human resource workflows**.
 3. Select **New**, and then select **Leave and absence request**. 

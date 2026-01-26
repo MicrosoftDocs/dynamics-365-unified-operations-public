@@ -2,9 +2,9 @@
 title: Account reconciliation
 description: Learn how to use the Account reconciliation workspace and the Copilot agent that integrates with it.
 author: twheeloc
-ms.author: twheeloc
+ms.author: brking
 ms.topic: article
-ms.date: 05/10/2025
+ms.date: 11/14/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -41,22 +41,22 @@ On the **Open exceptions** page, you can view the details of each exception and 
 
 If the exception is **In Subledger not in ledger**, the following actions are available:
 
-- **Create journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception.
-- **Link transactions** – Open the **Link transactions** page, where you can link transactions that are in the subledger but not in ledger and transactions that are in the ledger but not in the subledger.
+- **Create journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. The journal is created and needs to be posted through a batch process or manually.
+- **Link transactions** – Open the **Link transactions** page, where you can link transactions that are in the subledger but not in ledger and transactions that are in the ledger but not in the subledger. In Dynamics 365 Finance version 10.0.46, an improved linking experience is available.
 - **Accept without change** – Accept the exception as is, and clear it. This action is often used when the difference is a small amount or a rounding difference.
 - **View exception history** – View the history of the exception.
 
 If the exception is **In Ledger not in subledger**, the following actions are available:
 
-- **Reverse general ledger voucher** – Create a reversing entry for the ledger voucher.
-- **Link transactions** – Open the **Link transactions** page, where you can link transactions.
+- **Reverse general ledger voucher** – Create a reversing entry for the ledger voucher. In Dynamics 365 Finance version 10.0.46 allows the user to reverse transactions directly from the workspace without being navigated back to the original transaction page.
+- **Link transactions** – Open the **Link transactions** page, where you can link transactions. In Dynamics 365 Finance version 10.0.46, an improved linking experience is available.
 - **Accept without change** – Accept the exception as is, and clear it. This action is often used when the difference is a small amount or a rounding difference.
-- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception.
+- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. In Dynamics 365 Finance version 10.0.46, the journal is created and needs to be posted through a batch process or manually.
 
 If the exception is **Amount mismatch**, the following actions are available:
 
 - **Accept without change** – Accept the exception as is, and clear it. This action is often used when the difference is a small amount or a rounding difference.
-- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception.
+- **Create adjusting journal entry** – Go to the general journal, where you can create an adjusting entry to address the exception. In Dynamics 365 Finance version 10.0.46, the journal is created and needs to be posted through a batch process or manually.
 
 ### Undo an action
 
@@ -70,7 +70,7 @@ The last column of the grid in the lower part of the workspace shows a snapshot 
 
 ## Configuration
 
-To view the settings and configuration for the account reconciliation feature, use the **Settings** button (gear symbol) in the upper right of the workspace. On the **Account reconciliation configuration** page, you can enable or disable the reconciliation processing for each module. In addition, you can view the accounts that are used for each module for each legal entity, and add and remove accounts. The list of accounts is taken from the existing posting profile setup and the bank and tax account setup in each legal entity.
+To view the settings and configuration for the account reconciliation feature, use the **Settings** button (gear symbol) in the upper right of the workspace. On the **Account reconciliation configuration** page, you can enable or disable the reconciliation processing for each module. The **Start date** can be used to set the date for transactions to be evaluated by the process automation. For example, if you have reconciled through the month of August using your prior process, consider setting the **Start date** to September 1 to evaluate only transactions in periods you have yet to reconcile. In addition, you can view the accounts that are used for each module for each legal entity, and add and remove accounts. The list of accounts is taken from the existing posting profile setup and the bank and tax account setup in each legal entity.
 
 ## Frequently asked questions
 

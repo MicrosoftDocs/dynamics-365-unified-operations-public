@@ -66,7 +66,7 @@ The user accounts must have the following security roles:
 
 The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent.
 
-To set up the connectors, follow these steps.
+To set up the connectors, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
 1. In the left pane, select **Connections**.
@@ -86,7 +86,7 @@ To set up the connectors, follow these steps.
 
 To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. This section provides a sample PowerShell script that you can use to complete both tasks.
 
-To use the sample PowerShell script, follow these steps.
+To use the sample PowerShell script, follow these steps:
 
 1. Copy the script, and save it as a .ps1 file.
 1. Before you run the script, set the following four parameters at the top:

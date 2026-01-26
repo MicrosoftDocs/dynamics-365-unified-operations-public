@@ -39,7 +39,7 @@ To enable the OBO functionality, you must complete the following prerequisites:
 
 After the prerequisites have been met, you're ready to sign in to a B2B site by using OBO functionality.
 
-To sign in to a B2B site by using OBO functionality, follow these steps.
+To sign in to a B2B site by using OBO functionality, follow these steps:
 
 1. On the B2B site, select **Sign-in**.
 1. Select **Employee sign-in**.

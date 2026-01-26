@@ -2,9 +2,9 @@
 title: Export to Azure Data Lake overview
 description: Learn how you can connect your finance and operations environment to a data lake to unlock insights that are hidden in your data.
 author: MilindaV2
-ms.author: milindav
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 10/16/2023
+ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -129,4 +129,4 @@ In your Tier-1 (developer) environment, you can use a prototype or plan the feat
 
 ### How can I stay in touch about upcoming features?
 
-In the coming months, Microsoft will enable the Export to Data Lake feature in more regions. We're also actively working on other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [Synapse Link for Dynamics preview group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Viva Engage online forums to stay in touch and ask questions.
+In the coming months, Microsoft will enable the Export to Data Lake feature in more regions. We're also actively working on other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [Fabric/Synapse Link for Dynamics](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4Mjk5MjI4MTYifQ) community on Microsoft Viva Engage. You can then attend weekly online "office hours" meetings and use the Viva Engage online forums to stay in touch and ask questions.

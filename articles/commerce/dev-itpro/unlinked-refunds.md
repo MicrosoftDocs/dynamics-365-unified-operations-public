@@ -38,7 +38,7 @@ Dynamics 365 Commerce supports refunds of transactions that were previously appr
 
 ## Enable unlinked refunds functionality
 
-To enable unlinked refunds functionality in Commerce headquarters, follow these steps.
+To enable unlinked refunds functionality in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
@@ -93,7 +93,7 @@ When an unlinked refund is processed against an order in call center, a call cen
 
 #### Set up an administrator override PIN for call center
 
-To set up an administrator override PIN for call center in Commerce headquarters, follow these steps.
+To set up an administrator override PIN for call center in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Call center setup**, or search for "Override Permissions."
 1. Select the role to allow the unlinked refund processing permissions for.

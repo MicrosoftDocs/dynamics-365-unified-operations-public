@@ -20,7 +20,7 @@ This article explains how to generate a tax reconciliation report for Icelandic 
 
 The following procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities. The procedure was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
 
-To generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities, follow these steps.
+To generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Sales tax reports \> Tax reconciliation report**.
 1. In the **From account** field, enter or select **200140**.  

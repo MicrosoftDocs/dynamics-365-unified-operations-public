@@ -504,7 +504,7 @@ A multiple-currency report can display amounts in the ledger's accounting curren
 - **Currency filter** – Specify a currency filter. Only transactions that are entered in the selected currency are displayed on the report.
 
 
-To determine a company's accounting currency, follow these steps.
+To determine a company's accounting currency, follow these steps:
 
 1. In Report designer, on the **Company** menu, click **Companies**.
 2. In the **Companies** dialog box, select a company, and then click **View**.

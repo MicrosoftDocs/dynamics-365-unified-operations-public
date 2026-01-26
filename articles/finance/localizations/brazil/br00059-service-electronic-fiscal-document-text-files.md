@@ -22,7 +22,7 @@ After a sales invoice for a service is issued in São Paulo city, you can genera
 
 This recording uses the BRMF demo company.The following procedure uses the BRMF demo company.
 
-To generate the RPS for a service fiscal document after a sales invoice for a service is issued in São Paulo city, follow these steps.
+To generate the RPS for a service fiscal document after a sales invoice for a service is issued in São Paulo city, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> RPS export and import \> Export RPS file**.
 1. In the **From date** field, enter a date.

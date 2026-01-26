@@ -33,7 +33,7 @@ Before you provision Microsoft Teams, complete these tasks:
 - Confirm that all regional managers have been made communications managers.
 - Confirm that the Azure account of every store manager and worker has been associated with that manager's or worker's worker record in Commerce headquarters.
 
-To provision Teams in Commerce headquarters, follow these steps.
+To provision Teams in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams Integration Configuration**.
 1. On the Action Pane, select **Provision teams**. A batch job that is named **Teams provision** is created.
@@ -46,7 +46,7 @@ To provision Teams in Commerce headquarters, follow these steps.
 
 ## Validate Teams provisioning in the Teams admin center
 
-To validate Microsoft Teams provisioning in the Microsoft Teams admin center, follow these steps.
+To validate Microsoft Teams provisioning in the Microsoft Teams admin center, follow these steps:
 	
 1. Go to the [Teams admin center](https://admin.teams.microsoft.com/), and sign in as the administrator of your e-commerce tenant.
 1. In the left navigation pane, select **Teams** to expand it, and then select **Manage teams**.
@@ -62,7 +62,7 @@ The following illustration shows an example of the **Manage teams** page in the 
 	
 The Commerce organizational hierarchy can be used in Microsoft Teams to publish tasks to all or selected stores that use the same hierarchy structure.
 
-To upload a Commerce organizational hierarchy to Teams, follow these steps.
+To upload a Commerce organizational hierarchy to Teams, follow these steps:
 	
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Microsoft Teams Integration Configuration**.
 1. Select **Download targeting hierarchy**, and then select **Retail Stores by Region** to download a comma-separated values (CSV) file of the organizational hierarchy.
@@ -72,7 +72,7 @@ To upload a Commerce organizational hierarchy to Teams, follow these steps.
 
 ## Verify that the organizational hierarchy was uploaded to Teams
 
-To verify that the organizational hierarchy was uploaded to Microsoft Teams, follow these steps.
+To verify that the organizational hierarchy was uploaded to Microsoft Teams, follow these steps:
 
 1. Sign in to Teams as a communications manager.
 1. In the left navigation pane, select **Tasks by Planner**.

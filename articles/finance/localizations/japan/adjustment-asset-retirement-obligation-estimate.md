@@ -2,9 +2,9 @@
 title: Adjustment of the asset retirement obligation estimate
 description: Learn how to adjust the asset retirement obligation (ARO) estimate in Japan with Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/10/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -25,7 +25,7 @@ Before you complete the procedures, you must first select the **Fixed Asset** co
 
 ## Adjust the ARO estimate
 
-To adjust the ARO estimate, follow these steps.
+To adjust the ARO estimate, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Fixed assets**.
 1. In the list, find and select the desired record.
@@ -38,7 +38,7 @@ To adjust the ARO estimate, follow these steps.
 
 ## Post the adjustment
 
-To post the adjustment, follow these steps.
+To post the adjustment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Fixed assets journal**.
 1. Select **New**.

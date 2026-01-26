@@ -1,11 +1,10 @@
 ---
 title: Accessibility features and capabilities
-description: This article provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
+description: Learn about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/14/2020
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -21,13 +20,13 @@ This article provides information about the accessibility features and capabilit
 
 Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals. This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.
 
-Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality. When you design your site, you should consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility). 
+Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality. When you design your site, consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility). 
 
 This article describes some additional areas of accessibility functionality that you should consider when you use Dynamics 365 Commerce.
 
 ## Image alt text
 
-Dynamics 365 Commerce has a built-in digital asset management system to track image and video assets that are used on your site. Image captions, descriptions, and alt text can be added in the properties pane for an image when it's selected or uploaded.
+Dynamics 365 Commerce has a built-in digital asset management system to track image and video assets that you use on your site. You can add image captions, descriptions, and alt text in the properties pane for an image when you select or upload it.
 
 ## Video accessibility
 
@@ -38,7 +37,7 @@ The Dynamics 365 Commerce digital asset management system supports several acces
 | Closed captioning (CC)      | Text that can be shown for the audio and audio descriptive elements of a video, to help users who are deaf or hard of hearing |
 | Subtitles                   | Caption files that show the text of context clues or dialog on-screen |
 | Audio transcripts           | A textual transcript of spoken words that is generated from the audio of a video asset |
-| Descriptive audio           | A non-primary audio channel that describes the content or context that is occurring on-screen |
+| Descriptive audio           | A nonprimary audio channel that describes the content or context that's occurring on-screen |
 | Minimum age gate            | An attribute that can store the minimum age that a viewer must be to view a video (metadata only) |
 
 ### Configure video accessibility elements
@@ -49,7 +48,7 @@ In the Commerce **Media Library** section for your site, you can upload video as
 
 To have a closed caption file automatically generated when you upload a video, follow this step.
 
-- In the **Asset Upload** dialog box, select **Automatically generate closed captions**. If you're generating a closed caption file, the file selector for closed caption files will be unavailable in the dialog box.
+- In the **Asset Upload** dialog box, select **Automatically generate closed captions**. If you're generating a closed caption file, the file selector for closed caption files are unavailable in the dialog box.
 
 To manually upload a closed caption file when you upload a video, follow this step.
 
@@ -64,19 +63,19 @@ To upload regular audio or descriptive audio files for the video, use the file s
 
 CC and audio transcript files can be edited directly in the authoring tool. Video playback is available during editing.
 
-To edit CC and audio transcript files, follow these steps.
+To edit CC and audio transcript files, follow these steps:
 
 1. Go to **Media Library**, and select the file name of the video asset. The closed caption and transcript content editor appears.
 1. Select **Edit**.
 1. Edit the closed caption or transcript text.
-1. When you've finished, select **Save**, and then select **Finish editing**.
+1. When you finish, select **Save**, and then select **Finish editing**.
 1. When you're ready to publish, select **Publish**.
 
 #### Set the Minimum Age attribute
 
 A **Minimum Age** metadata attribute can be associated with video assets.
 
-To set the **Minimum Age** attribute for a video asset, follow these steps.
+To set the **Minimum Age** attribute for a video asset, follow these steps:
 
 1. Go to **Media Library**, and select the video asset.
 1. Select **Edit**.

@@ -79,7 +79,7 @@ Each of these interactions requires common parameters, such as Edicom connection
 > [!IMPORTANT]
 > The **Paraguay Electronic Invoice (PY)** feature is provided by Microsoft. Before it can be used, it requires more configuration, as described in this article. Learn how to configure invoicing features and apply changes in [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Paraguay.
 
-To integrate Edicom for Paraguay electronic invoices, follow these steps.
+To integrate Edicom for Paraguay electronic invoices, follow these steps:
 
 1. Import the latest version of the **Paraguay Electronic Invoice (PY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
@@ -347,7 +347,7 @@ The following grid defines the link between the source table in Dynamics 365 Fin
 
 ## Configure electronic document parameters
 
-To configure electronic document parameters, follow these steps.
+To configure electronic document parameters, follow these steps:
 
 1. Import the Paraguay-specific ER configurations for the document context and electronic document model mapping. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.

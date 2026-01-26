@@ -28,7 +28,7 @@ Commerce works with identity provider services such as Microsoft Entra B2C to st
 
 ## Enable the automatic linking feature in Commerce headquarters 
 
-To enable the automatic linking feature for your environment in Commerce headquarters, follow these steps. 
+To enable the automatic linking feature for your environment in Commerce headquarters, follow these steps: 
 
 1. Go to **System administration \> Workspaces \> Feature management** and select the **All** tab. 
 1. Search for the feature named **Local Identity Record and Commerce Customer automatic linking**.

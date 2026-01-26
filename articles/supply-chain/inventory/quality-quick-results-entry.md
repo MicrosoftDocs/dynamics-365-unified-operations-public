@@ -26,7 +26,7 @@ Before you can use the features that are described in this article, your system 
 
 ## Enter quality test results
 
-To enter quality test results by using the **Quick results entry** page, follow these steps.
+To enter quality test results by using the **Quick results entry** page, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Quality orders**.
 1. Select a quality order, and then, on the Action Pane, select **Quick results entry**.

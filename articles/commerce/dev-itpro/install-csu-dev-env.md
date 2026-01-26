@@ -31,7 +31,7 @@ Next, follow the instructions in [Configure and install Commerce Scale Unit](ret
 
 Next, you need to create a Secure Sockets Layer (SSL) certificate based on the hostname for the CSU website and the Entra ID app authentication. 
 
-To create the SSL certificate, follow these steps.
+To create the SSL certificate, follow these steps:
 
 1. Connect to the development machine.
 1. Open PowerShell with administrator privileges from Command Prompt.
@@ -54,7 +54,7 @@ Next, you must convert the SSL certificate you created to the .CER file format.
 > [!NOTE]
 > To add a SSL certificate to the CSU Entra ID app, it must be in the `.CER` file format.
 
-To convert the SSL certificate you created to the `.CER` file format, follow these steps.
+To convert the SSL certificate you created to the `.CER` file format, follow these steps:
 
 1. On the development machine, select the Windows logo key + R to open the **Run** dialog.  
 1. Enter "MMC" to open the Microsoft Management Console.  
@@ -75,7 +75,7 @@ To convert the SSL certificate you created to the `.CER` file format, follow the
 
 Next, you must add the SSL certificate you created and converted to the `.CER` file format to the existing CSU Entra ID app. This step is required for the CSU to generate an authentication token for communication with Commerce headquarters.
 
-To add the SSL certificate you created to the CSU Entra ID app, follow these steps.
+To add the SSL certificate you created to the CSU Entra ID app, follow these steps:
 
 1. In a web browser on the machine where the .CER file was previously saved, go to the [Microsoft Entra admin center](https://aad.portal.azure.com) and edit the CSU Azure App registration you created earlier.
 1. For **Client Credentials**, select **Add a certificate or secret**. 
@@ -95,7 +95,7 @@ The following sections list all the changes you must make in Commerce headquarte
 
 ### Enter the application ID (client ID) of the CSU Entra ID app
 
-To enter the application ID (client ID) of the CSU Entra ID app in headquarters, follow these steps.
+To enter the application ID (client ID) of the CSU Entra ID app in headquarters, follow these steps:
 
 1. Go to **System administration \> Setup \> Microsoft Entra ID Applications**.
 1. Select **New**
@@ -110,14 +110,14 @@ Before you can run the Sealed CSU installer, you must complete the following ste
 
 ### Verify IIS components installed
 
-To verify that the **IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is installed on the development machine, follow these steps.
+To verify that the **IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is installed on the development machine, follow these steps:
 
 1. Go to **Server Manager \> Local Server \> Manage \> Add roles and features**.
 1. Under **IIS**, confirm that the **Management Tools \> IIS 6 Management Compatibility (IIS 6 Metabase Compatibility)** component is checked.
 
 ### Install .NET Core hosting bundle
 
-To install the .NET Core hosting bundle on the development machine, follow these steps.
+To install the .NET Core hosting bundle on the development machine, follow these steps:
 
 1. Connect to the development machine.
 1. Open a web browser and go to [Download .NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).

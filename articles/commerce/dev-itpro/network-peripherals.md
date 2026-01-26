@@ -116,7 +116,7 @@ For detailed information about how to set up shared hardware stations, see [Conf
 
 #### Set up a Dynamics 365 Commerce register
 
-For a setup that uses *dedicated* (in-built) hardware station, follow these steps.
+For a setup that uses *dedicated* (in-built) hardware station, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select the register you want to configure by selecting the register number, and then select **Edit**.
@@ -130,7 +130,7 @@ For a setup that uses *dedicated* (in-built) hardware station, follow these step
 10. Select distribution schedule **1090**, and then select **Run now**.
 11. Select distribution schedule **1070**, and then select **Run now**.
 
-For a setup that uses *shared* hardware station, follow these steps. 
+For a setup that uses *shared* hardware station, follow these steps: 
 
 > [!NOTE]
 > - Peripheral IP address configuration can be done at the store level.

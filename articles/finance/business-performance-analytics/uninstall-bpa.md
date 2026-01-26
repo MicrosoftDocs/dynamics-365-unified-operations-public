@@ -127,7 +127,7 @@ You can manually uninstall Business performance analytics through the Power Plat
 21. Business performance analytics tables security 
 22. Business performance analytics config 
 
-To delete each of the preceding solutions, follow these steps.
+To delete each of the preceding solutions, follow these steps:
 
 1. In [Power Apps](https://make.preview.powerapps.com/), on the left navigation pane, select **Solutions**.
 2. Select the solution to delete, and then select **Delete**.

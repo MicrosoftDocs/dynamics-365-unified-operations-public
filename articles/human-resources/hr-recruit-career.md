@@ -4,7 +4,7 @@
 title: Set up the careers site in the HR Recruiting app 
 description: This article explains how to set up the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/18/2024
+ms.date: 12/02/2025
 ms.topic: how-to
 # optional metadata
 
@@ -25,8 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up the careers site in the HR Recruiting app 
 
-This article explains how to install and configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
-You can change many aspects of your careers site, such as the background, introduction, images, privacy policy, and site name.
+This article explains how to install and configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. You can change many aspects of your careers site, such as the background, introduction, images, privacy policy, and site name.
 
 ## Install 
 >[!NOTE]
@@ -150,7 +149,7 @@ To set up a compliance link, follow these steps:
 
 Users can sign in by using different out-of-box identity providers on the website. The administrator must configure these identity providers so that they appear on the sign-in page.
 
-To configure external identity providers, follow these steps.
+To configure external identity providers, follow these steps:
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/).
 1. Select your active site, and then select **Edit**.
@@ -168,7 +167,7 @@ For more information about how to set up identity providers, see [Set up an OAut
 
 Email notifications can be sent in different situations on the careers site. For example, they can be sent when users forget their password, for confirmation, or when users create email accounts.
 
-To enable email accounts to send notifications, follow these steps.
+To enable email accounts to send notifications, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 1. Select the environment where your Recruiting add-on app is installed.

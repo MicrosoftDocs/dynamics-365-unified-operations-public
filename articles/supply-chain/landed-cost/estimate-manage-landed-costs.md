@@ -1,8 +1,8 @@
 ---
 title: Estimate and manage landed costs
 description: The system uses your auto cost setup to determine an estimate for your landed cost. Learn how you can define various scenarios to deliver a more accurate estimate.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 ms.topic: how-to
@@ -137,7 +137,7 @@ Use the buttons on the Action Pane of the **Cost estimates** page to work with t
 
 The **Item cost price update** periodic task updates all cost estimates that match the filters that you set when you run the task. The effect is similar to the effect of selecting **Update standard cost** on the Action Pane for a single estimate. However, in this case, the update applies to all matching estimates.
 
-To run the periodic task, follow these steps.
+To run the periodic task, follow these steps:
 
 1. Go to **Landed cost** \> **Periodic tasks** \> **Item cost price update**.
 1. In the **Update cost price from estimate** dialog box, set the following fields as required to limit the scope of the update:

@@ -1,11 +1,10 @@
 ---
 title: Image list module
-description: This article covers image list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about image list modules and how to add them to Microsoft Dynamics 365 Commerce site pages.
 author: anupamar-ms
-ms.date: 07/26/2024
+ms.date: 01/23/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,32 +16,32 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers image list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article describes image list modules and how to add them to Microsoft Dynamics 365 Commerce site pages.
 
-The image list module can be used to easily add a collection (array) of images to site pages. Each image in the array can be configured with paragraph text and link URLs. The image list module is best suited to displaying brand logos or a list that includes logos.
+Use the image list module to add a collection (array) of images to site pages. You can configure each image in the array with paragraph text and link URLs. The image list module works best for displaying brand logos or a list that includes logos.
 
 > [!IMPORTANT]
-> - The image list module is available in the Commerce module library as of the Dynamics 365 Commerce version 10.0.20 release.
-> - The image list module is showcased in the Adventure Works theme.
+> - The Commerce module library includes the image list module starting with Dynamics 365 Commerce version 10.0.20.
+> - The Adventure Works theme showcases the image list module.
 
 The following illustration shows an example where an image list module displays a list of text that includes logos on an Adventure Works business-to-consumer (B2C) site page.
 
-![Example of an image list module that displays a list of text that includes logos](./media/Image_list.PNG)
+:::image type="content" source="./media/Image_list.PNG" alt-text="Screenshot of an image list module that displays a list of text that includes logos.":::
 
 The following illustration shows an example where an image list module displays brand logos on an Adventure Works business-to-business (B2B) site page.
 
-![Example of an image list module that displays brand logos](./media/Image_list_B2B.PNG)
+:::image type="content" source="./media/Image_list_B2B.PNG" alt-text="Screenshot of an image list module that displays brand logos.":::
 
 ## Image list module properties
 
 | Property name | Values | Description |
 |---------------|--------|-------------|
 | Heading       | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A text heading for the image list module. |
-| Image list    | Images, text, and URLs | Each item in the array is an image that is accompanied by paragraph text and a URL. |
+| Image list    | Images, text, and URLs | Each item in the array is an image with paragraph text and a URL. |
 
 ## Add an image list module to a new page
 
-To add an image list module to a new page and set the required properties in Commerce site builder, follow these steps.
+To add an image list module to a new page and set the required properties in Commerce site builder, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

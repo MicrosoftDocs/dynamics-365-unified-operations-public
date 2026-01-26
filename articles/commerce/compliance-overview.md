@@ -1,11 +1,10 @@
 ---
 title: Compliance overview
-description: This article is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant.
+description: This article provides an overview of the compliance guidance that Microsoft Dynamics 365 Commerce offers to help you make your company's sites compliant.
 author: BrianShook
-ms.date: 01/08/2020
+ms.date: 01/20/2026
 ms.topic: overview
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-10-31
@@ -15,14 +14,13 @@ ms.custom:
 
 # Compliance overview
 
-
 [!include [banner](includes/banner.md)]
 
-This article is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant. Compliance is an important factor for all businesses, because it helps their user base connect with their site content. By staying compliant, you can also help protect your company from expensive legal action or hefty fines.
+This article provides an overview of the compliance guidance that Microsoft Dynamics 365 Commerce offers to help you make your company's sites compliant. Compliance is an important factor for all businesses because it helps their user base connect with their site content. By staying compliant, you can also help protect your company from expensive legal action or hefty fines.
 
-The compliance documentation includes a review of areas that you should consider when you use Dynamics 365 Commerce, to help you meet your company's compliance requirements.
+The compliance documentation includes a review of areas that you should consider when you use Dynamics 365 Commerce to help you meet your company's compliance requirements.
 
-You're responsible for reviewing your company's compliance requirements, and for authoring and building sites that meet the standards of those requirements. The following articles provide examples that show how you can take compliance into account as you use the Commerce authoring tools.
+You're responsible for reviewing your company's compliance requirements and for authoring and building sites that meet the standards of those requirements. The following articles provide examples that show how you can take compliance into account as you use the Commerce authoring tools.
 
 To learn more about the basic principles that Microsoft uses, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance.
 

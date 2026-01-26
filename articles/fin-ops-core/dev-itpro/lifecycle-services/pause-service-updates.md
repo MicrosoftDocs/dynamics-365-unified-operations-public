@@ -72,7 +72,7 @@ If the update to the default sandbox environment is paused, the updates to the p
 
 ## How do I pause updates?
 
-To pause updates, follow these steps.
+To pause updates, follow these steps:
 
 1. In Lifecycle Services, in your implementation project, open the **Project settings** page.
 

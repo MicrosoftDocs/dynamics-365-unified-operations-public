@@ -1,11 +1,10 @@
 ---
 title: Gift card module
-description: This article covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about gift card modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/25/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,26 +18,26 @@ ms.custom:
 
 This article covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Gift card modules can be used in checkout modules to accept gift cards, a common form of payment used for e-Commerce transactions. The gift card module supports Dynamics 365, SVS, and Givex gift cards. SVS and Givex gift cards are redeemed via the Adyen payment provider. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
+Use gift card modules in checkout modules to accept gift cards, a common form of payment for e-commerce transactions. The gift card module supports Dynamics 365, Stored Value Solutions (SVS), and Givex gift cards. The Adyen payment provider redeems SVS and Givex gift cards. For more information about support for external gift cards such as SVS and Givex, see [Support for external gift cards](./dev-itpro/gift-card.md).
 
 > [!NOTE]
 > Support for redeeming SVS and Givex gift cards during checkout flow is available in the Dynamics 365 Commerce 10.0.11 release. 
 
-There are two gift card modules available:
+Two gift card modules are available:
 
-- **Gift card** – This module can be used on a checkout page to redeem a gift card as tender. 
-- **Gift card balance check** – This module can be used on any page to check the balance on a gift card. This module is available in Commerce release 10.0.14 and later.
+- **Gift card** – Use this module on a checkout page to redeem a gift card as tender. 
+- **Gift card balance check** – Use this module on any page to check the balance on a gift card. This module is available in Commerce release 10.0.14 and later.
 
 > [!NOTE]
 > Support for the gift card balance check module is available in the Dynamics 365 Commerce 10.0.14 release.
 
 The following image shows an example of a gift card module on a checkout page.
 
-![Example of a gift card module.](./media/ecommerce-giftcard.PNG)
+:::image type="content" source="./media/ecommerce-giftcard.PNG" alt-text="Screenshot of a gift card module.":::
 
 ## Module properties
 
-- **Show additional fields** – This property defines what fields should be displayed for gift cards in addition to the gift card number, which is always displayed by default. For example, some gift cards support displaying a personal identification number (PIN), and others support displaying a PIN and expiration date. Alternatively, this property could be set to "None", which would only display the gift card number and no additional fields.
+- **Show additional fields** – This property defines what fields display for gift cards in addition to the gift card number, which always displays by default. For example, some gift cards support displaying a personal identification number (PIN), and others support displaying a PIN and expiration date. Alternatively, set this property to "None," which displays only the gift card number and no extra fields.
 
     The following values are supported:
 
@@ -47,32 +46,33 @@ The following image shows an example of a gift card module on a checkout page.
     - PIN and expiration date 
     - None
 
-- **Enable for guest users** – When this property is enabled, guest users can redeem or check balances on external gift cards. This property requires that anonymous (guest) access for external gift cards be enabled in Commerce headquarters. The **Enable for guest users** setting applies to external gift cards only. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout). 
+- **Enable for guest users** – When you enable this property, guest users can redeem or check balances on external gift cards. This property requires anonymous (guest) access for external gift cards to be enabled in Commerce headquarters. The **Enable for guest users** setting applies to external gift cards only. For more information, see [Enable gift card payments for guest checkout](#enable-gift-card-payments-for-guest-checkout). 
 
 > [!IMPORTANT]
-> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
+> The **Enable for guest users** property is available as of the Commerce version 10.0.21 release. It requires Commerce module library package version 9.31 to be installed.
 
 ## Site settings for gift card modules
 
-In Commerce site builder under **Site Settings \> Extensions**, there is a gift card module setting called **Supported gift card type**. This setting supports three values:
-- **Dynamics 365 gift card** – When this setting is applied, the gift card module only allows the redemption of Dynamics 365 gift cards. This setting is only supported for signed-in users on the e-commerce site. The gift card check balance functionality is only supported for signed-in users. 
-- **SVS and Givex gift cards** – When this setting is applied, the gift card module only allows the redemption of Givex and SVS gift cards. This setting is supported for signed-in and anonymous users on the e-Commerce site.
-- **Dynamics 365, SVS, and Givex gift cards** – When this setting is applied, the gift card module allows the redemption of Dynamics 365, Givex, and SVS gift cards. This setting is only supported for signed-in users on the e-commerce site. Due to inclusion of internal gift cards, the gift card check balance functionality is only supported for signed-in users.
+In Commerce site builder under **Site Settings \> Extensions**, there's a gift card module setting called **Supported gift card type**. This setting supports three values:
+
+- **Dynamics 365 gift card** – When you apply this setting, the gift card module only allows the redemption of Dynamics 365 gift cards. This setting is only supported for signed-in users on the e-commerce site. The gift card check balance functionality is only supported for signed-in users. 
+- **SVS and Givex gift cards** – When you apply this setting, the gift card module only allows the redemption of Givex and SVS gift cards. This setting supports signed-in and anonymous users on the e-commerce site.
+- **Dynamics 365, SVS, and Givex gift cards** – When you apply this setting, the gift card module allows the redemption of Dynamics 365, Givex, and SVS gift cards. This setting is only supported for signed-in users on the e-commerce site. Due to inclusion of internal gift cards, the gift card check balance functionality is only supported for signed-in users.
 
 > [!IMPORTANT]
-> These settings are available in the Dynamics 365 Commerce 10.0.11 release and are required only if you need support for SVS or Givex gift cards. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> These settings are available in the Dynamics 365 Commerce 10.0.11 release and are required only if you need support for SVS or Givex gift cards. If you're updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 ## Extend internal gift cards for use in e-commerce storefronts
 
-By default, internal gift cards aren't optimized for use in e-commerce storefronts. Therefore, before you allow internal gift cards to be used for payment, you should configure them with extensions that help make them more secure. Here are the gift card areas that you should extend before you allow internal gift cards to be used in production:
+By default, internal gift cards aren't optimized for use in e-commerce storefronts. Before you allow internal gift cards to be used for payment, configure them with extensions that help make them more secure. Extend the following gift card areas before you allow internal gift cards to be used in production:
 
-- **Gift card number** – Number sequences are used to generate gift card numbers for internal gift cards. Because number sequences can easily be predicted, you should extend the generation of gift card numbers so that random, cryptographically secure strings are used for the gift card numbers that are issued.
-- **GetBalance** – The **GetBalance** API is used to look up gift card balances. By default, this API public. If a PIN isn't required to look up gift card balances, there is a risk that brute force attacks could use the **GetBalance** API to try to look up gift card numbers that have balances. By implementing both PIN requirements for internal gift cards and API throttling, you can help mitigate the risk.
-- **PIN** – By default, internal gift cards don't support PINs. You should extend internal gift cards so that a PIN is required to look up balances. This functionality can also be used to lock gift cards after consecutive incorrect attempts to enter the PIN.
+- **Gift card number** – Number sequences generate gift card numbers for internal gift cards. Because number sequences are easy to predict, extend the generation of gift card numbers so that random, cryptographically secure strings are used for the gift card numbers that are issued.
+- **GetBalance** – The **GetBalance** API looks up gift card balances. By default, this API is public. If a PIN isn't required to look up gift card balances, there's a risk that brute force attacks could use the **GetBalance** API to try to look up gift card numbers that have balances. By implementing both PIN requirements for internal gift cards and API throttling, you can help mitigate the risk.
+- **PIN** – By default, internal gift cards don't support PINs. Extend internal gift cards so that a PIN is required to look up balances. This functionality can also lock gift cards after consecutive incorrect attempts to enter the PIN.
 
 ## Enable gift card payments for guest checkout
 
-By default, gift card payments aren't enabled for guest (anonymous) checkout. To enable them, follow these steps.
+By default, gift card payments aren't enabled for guest (anonymous) checkout. To enable them, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> POS Operations**.
 1. Select and hold (or right-click) the header of the grid, and then select **Insert columns**.

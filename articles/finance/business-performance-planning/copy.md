@@ -40,7 +40,7 @@ Therefore, instead of creating forecasts from scratch, users can use document as
 
 ### Example
 
-To define the copy criteria, follow these steps.
+To define the copy criteria, follow these steps:
 
 1. In the dropdown list at the top of the **Copy** visual, select a cube.
 2. Select **Select**.

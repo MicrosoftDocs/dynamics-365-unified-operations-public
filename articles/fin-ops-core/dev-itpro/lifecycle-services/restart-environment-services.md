@@ -28,7 +28,7 @@ Any user who has been added as a project owner, organization admin, or environme
 
 ## Restart a specific service
 
-To restart a specific service in a deployed environment, follow these steps.
+To restart a specific service in a deployed environment, follow these steps:
 
 1. In LCS, open the appropriate project, and select the environment to restart the service for.
 2. On the **Environment details** page, select **Maintain** &gt; **Restart services**.

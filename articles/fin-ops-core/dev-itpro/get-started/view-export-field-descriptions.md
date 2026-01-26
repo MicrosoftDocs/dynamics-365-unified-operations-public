@@ -58,7 +58,7 @@ If you set the **Include fields without a description** option to **Yes**, all t
 
 ### Export the descriptions for a page
 
-To export the descriptions for a page, follow these steps.
+To export the descriptions for a page, follow these steps:
 
 1. In the **Select a page** field, select a page.
 2. Click the **Open in Microsoft Office** button in the upper-right corner, and then click **FieldDescriptionTmp**.

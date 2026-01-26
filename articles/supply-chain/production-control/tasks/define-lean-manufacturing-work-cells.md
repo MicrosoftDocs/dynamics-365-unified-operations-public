@@ -56,7 +56,7 @@ A work cell is a specific form of resource groups that can be used in lean manuf
 25. Click Add.
 26. In the Calendar field, click the drop-down button to open the lookup.
 27. In the list, find and select the desired record.
-    * Typically work cells of a given site use the same working time calendar. If work cells can have individual working times, you might need to create a specific working time calendar for the work cell. Note that the calendar should have a standard working time defined when used for a lean work cell, because the capacity definition is usually related to the standard working time of a work day.  
+    * Typically work cells of a given site use the same [working time calendar](../../master-planning/supply-chain-calendars-master-planning.md). If work cells can have individual working times, you might need to create a specific working time calendar for the work cell. Note that the calendar should have a standard working time defined when used for a lean work cell, because the capacity definition is usually related to the standard working time of a work day.  
 28. In the list, click the link in the selected row.
 29. Expand or collapse the Work cell capacity section.
 30. Click Add.

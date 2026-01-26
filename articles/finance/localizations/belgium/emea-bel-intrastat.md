@@ -67,7 +67,7 @@ For more information, see [Download ER configurations from the Global repository
 
 ### Set up an address format
 
-To set up an address format that includes state or province information, follow these steps.
+To set up an address format that includes state or province information, follow these steps:
 
 1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
 2. On the **Address format** tab, select **New** to create new address format. To update an existing format, select it in the grid.
@@ -190,7 +190,7 @@ The following example shows how to set up Belgium Intrastat and create the Intra
 
 ### Set up an address format
 
-To set up an address format that includes county information, follow these steps.
+To set up an address format that includes county information, follow these steps:
 
 1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
 2. On the **Address format** tab, in the grid, select **0001**.

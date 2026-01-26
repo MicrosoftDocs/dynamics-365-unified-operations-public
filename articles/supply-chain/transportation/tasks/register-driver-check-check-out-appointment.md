@@ -23,7 +23,7 @@ Before you start, an appointment must be set up for a load.
 
 ## Select or open an appointment
 
-To select or open an appointment in the web client, follow these steps.
+To select or open an appointment in the web client, follow these steps:
 
 1. Go to **Transportation management** \> **Planning** \> **Dock appointment scheduling** \> **Driver check-in and check-out**.
 1. Set the **Display completed and canceled appointments** check box as needed, depending on whether you'd like to see previous closed appointments in the grid.
@@ -33,7 +33,7 @@ To select or open an appointment in the web client, follow these steps.
 
 You can register driver check-in using either the web client or the Warehouse Management mobile app.
 
-To check in a driver using the web client, follow these steps.
+To check in a driver using the web client, follow these steps:
 
 1. Select an appointment, as described previously.
 1. On the Action Pane, select **Driver check-in**.
@@ -41,7 +41,7 @@ To check in a driver using the web client, follow these steps.
 1. Fill out the fields on the **The driver's information** dialog as needed.
 1. Select **OK**.
 
-To check in a driver using the Warehouse Management mobile app, follow these steps.
+To check in a driver using the Warehouse Management mobile app, follow these steps:
 
 1. Select **Driver check-in**.
 2. Scan or enter the load or appointment ID.
@@ -53,14 +53,14 @@ If the driver check-in was registered within the scheduled appointment window, t
 
 After loading or unloading has finished and the driver has left the facility, you can check out the driver using either the web client or the Warehouse Management mobile app.
 
-To check out a driver using the web client, follow these steps.
+To check out a driver using the web client, follow these steps:
 
 1. Select an appointment, as described previously.
 1. On the Action Pane, select **Driver check-out**.
 1. Fill out the fields on the **The driver's information** dialog as needed.
 1. Select **OK**.
 
-To check out a driver using the Warehouse Management mobile app, follow these steps.
+To check out a driver using the Warehouse Management mobile app, follow these steps:
 
 1. Select **Driver check-out**
 2. Scan or enter the load or appointment ID

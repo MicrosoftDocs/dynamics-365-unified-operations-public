@@ -1,5 +1,5 @@
 ---
-title:  Acceptance sampling (preview)
+title:  Acceptance sampling
 description: Learn how to set up acceptance sampling to control product quality by inspecting representative samples from lots.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Acceptance sampling (preview)
+# Acceptance sampling
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.46 GA -->
 
 *Acceptance sampling* is a quality control method that uses statistical analysis to evaluate a batch or lot of products. Instead of checking every item, you examine a subset of items to determine whether the entire lot meets predefined quality standards. This approach is widely used in manufacturing and supply chain operations to balance inspection effort with quality assurance.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Acceptance sampling overview
 
@@ -88,7 +84,7 @@ On the quality order for acceptance sampling, the various categories of tests (c
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.45 or later.
-- The feature named *(Preview) Acceptance sampling* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Acceptance sampling* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up acceptance sampling charts
 

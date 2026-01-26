@@ -1,11 +1,11 @@
 ---
 title: Export to Data Lake in finance and operations apps
 description: Learn how to choose data in a finance and operations apps environment so that the data is available in a data lake.
-author: MilindaV2
-ms.author: milindav
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 10/27/2023
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.assetid: 
 ms.search.region: Global
@@ -82,7 +82,7 @@ The Export to Data Lake page in a finance and operations environment shows the t
 
 This feature isn't available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature might not be available in all Azure regions where finance and operations apps are available, or for your environment. You can join the [Synapse Link for Dynamics preview feedback group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch with upcoming improvements and availability in your region.
+This feature might not be available in all Azure regions where finance and operations apps are available, or for your environment. You can join the [Fabric/Synapse Link for Dynamics](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4Mjk5MjI4MTYifQ) community on Microsoft Viva Engage to stay in touch with upcoming improvements and availability in your region.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later
 
@@ -102,7 +102,7 @@ If you see this error for a prolonged period of time, contact Support.
 
 ### Some fields (for example, long strings or Memo fields) are missing in the data lake
 
-The system doesn't export fields of the **Memo**, **nVarchar(max)**, **VarBinary**, or **Blob** type into the data lake. If you choose a table that has fields of these types, the system ignores those fields and export others. Microsoft is working to enable these special fields in the future. If you want to stay in touch with the product team and learn about upcoming features, you can join the [Synapse Link for Dynamics preview feedback group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all).
+The system doesn't export fields of the **Memo**, **nVarchar(max)**, **VarBinary**, or **Blob** type into the data lake. If you choose a table that has fields of these types, the system ignores those fields and export others. Microsoft is working to enable these special fields in the future. If you want to stay in touch with the product team and learn about upcoming features, you can join the [Fabric/Synapse Link for Dynamics](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4Mjk5MjI4MTYifQ) community on Microsoft Viva Engage.
 
 ### How do I find data in the data lake?
 

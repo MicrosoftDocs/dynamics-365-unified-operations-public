@@ -38,7 +38,7 @@ Latvian companies must periodically submit a **Tax on natural resources** (**NR 
 
 Before you can generate the **Natural resources tax** report, you must set up the lines for each report layout. Repeat the following steps for every line in each report layout.
 
-To set up the report, follow these steps.
+To set up the report, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Natural resources tax report setup**.
 2.  Select **New**.
@@ -107,7 +107,7 @@ This example layout has the following elements:
 
 Natural resources taxes are calculated during inventory journal transactions, and when sales or project invoices are created for Latvian customers, if the transactions involve items that are subject to the Natural resources tax. This section describes to get a list of the Natural resources tax transactions that are related to packing materials and print the Natural resources tax statement.
 
-To generate the natural resources tax report, follow these steps.
+To generate the natural resources tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Tax on natural resources**.
 2. Select **Create** \> **Create natural resources tax lines on package**.

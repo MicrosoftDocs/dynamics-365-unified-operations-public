@@ -179,17 +179,17 @@ If the page supports saved views, the best way to share personalizations with ot
 
 If the page doesn't support views, the recommended way to share personalizations is to copy them between users. This method is available only to privileged users (for example, system administrators) who can look up a specific user's personalization in the system (including the users' personal views) and copy the configuration to other users.
 
-To copy personalizations between users, follow these steps.
+To copy personalizations between users, follow these steps:
 
 1. Go **System administration \> Setup \> Personalization**.
-2. To copy personal views, follow these steps.
+2. To copy personal views, follow these steps:
 
     1. Select **Personal views**.
     2. Select the desired views in the list.
     3. Select **Copy to users**.
     4. Select the users to distribute the views to.
 
-3.  To copy personalizations on pages that don't support views, follow these steps.
+3.  To copy personalizations on pages that don't support views, follow these steps:
 
     1. Select **User settings**.
     2. Select the user who has the personalization that you want to distribute.
@@ -220,7 +220,7 @@ Additionally, admins can export other users' personalizations by following these
 
 To import a view or personalization, you can just open the **Personalization** toolbar and select **Import**. Additionally, admins can import a file and immediately give it to one or more users.
 
-If saved views are enabled, follow these steps.
+If saved views are enabled, follow these steps:
 
 1. Go to **System administration \> Setup \> Personalization**.
 2. On the Action Pane, select **Import views \> User views**.

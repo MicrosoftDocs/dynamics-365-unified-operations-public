@@ -97,7 +97,7 @@ Currently, four types of VAT can be calculated. They are defined by two categori
 
 ## Set up unrealized VAT and realized VAT
 
-To set up unrealized VAT and realized VAT, follow these steps.
+To set up unrealized VAT and realized VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Parameters** \> **Setup** \> **General ledger parameters**.
 1. Confirm that the **Manage realized and unrealized VAT** option is set to **Yes**, and that the **Calculation method** field is set to **Total**.
@@ -183,19 +183,19 @@ You can generate the **Purchase Unrealized VAT Remaining** report, which include
 
 The process for reversing the unrealized purchase VAT varies, depending on when you receive the tax invoice from the vendor.
 
-If you receive the tax invoice when you post the purchase order, follow these steps.
+If you receive the tax invoice when you post the purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, create a purchase order.
 1. On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, in the **Item sales tax** **group** and **Sales tax group** fields, select the corresponding sales tax group for realized VAT.
 1. Generate an invoice for the order.
 1. On the **Vendor invoice header** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
 
-If you receive the tax invoice when you post the vendor payment journal, follow these steps.
+If you receive the tax invoice when you post the vendor payment journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Vendor payments** page.
 1. On the **Payment** FastTab, set the **Tax invoice number**, **Tax invoice date**, and **Tax invoice receipt date** fields.
 
-If you receive the tax invoice after you've made the payment and settled the invoice, follow these steps.
+If you receive the tax invoice after you've made the payment and settled the invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Reverse unrealized VAT**.
 1. On the Action Pane, on the **Reversal journal** tab, in the **New** group, select **Reversal journal**.

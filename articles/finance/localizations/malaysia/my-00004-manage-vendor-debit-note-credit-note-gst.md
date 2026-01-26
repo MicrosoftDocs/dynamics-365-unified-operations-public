@@ -25,7 +25,7 @@ The procedures use the demo data company MYMF.
 
 ## Create and print a vendor debit note
 
-To create and print a vendor debit note, follow these steps.
+To create and print a vendor debit note, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Select **New**.
@@ -86,7 +86,7 @@ To create and print a vendor debit note, follow these steps.
 
 ## Create and print a vendor credit note
 
-To create and print a vendor credit note, follow these steps.
+To create and print a vendor credit note, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Select **New**.

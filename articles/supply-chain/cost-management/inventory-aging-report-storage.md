@@ -1,8 +1,8 @@
 ---
 title: Inventory aging report storage
 description: Learn about the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 ms.topic: how-to
@@ -21,7 +21,7 @@ This method of running an inventory aging report is helpful when the output cont
 
 ## Set up and generate reports
 
-To set up and generate *inventory aging report storage* reports, follow these steps.
+To set up and generate *inventory aging report storage* reports, follow these steps:
 
 1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory aging report storage**.
 1. Select **New**. The **Inventory aging** dialog opens.
@@ -45,7 +45,7 @@ To set up and generate *inventory aging report storage* reports, follow these st
 
 ## View a report
 
-To view an inventory aging report storage, follow these steps.
+To view an inventory aging report storage, follow these steps:
 
 1. Go to **Cost management** \> **Inquiries and reports** \> **Inventory aging report storage**.
 1. On the list pane, select the report that you want to view.
