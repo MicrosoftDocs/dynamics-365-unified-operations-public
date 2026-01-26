@@ -15,10 +15,10 @@ ms.date: 1/13/2026
 
 This guide provides information on how to configure an agent in [Microsoft Foundry](/azure/ai-foundry/what-is-foundry?view=foundry) to work with the data and business logic of Dynamics 365 ERP applications by connecting to the Dynamics 365 ERP MCP server.
 
-For more informaton on Microsoft Foundry, see [What is Microsoft Foundry?](/azure/ai-foundry/what-is-foundry?view=foundry), including links to getting started with agent development on the platform.
+For more information on Microsoft Foundry, see [What is Microsoft Foundry?](/azure/ai-foundry/what-is-foundry?view=foundry), including links to getting started with agent development on the platform.
 
 ## Prerequisites
-Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP server**, you must ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
+Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP server**, you must ensure the **Dynamics 365 ERP MCP server** is enabled in your environment. For more information about enabling the server, see [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md).
 
 ## Register an app in Microsoft Entra ID
 
@@ -43,26 +43,26 @@ Before building an agent in Microsoft Foundry with the **Dynamics 365 ERP MCP se
 ### Step 3: Create a client secret
 1. On the app registration, navigate to **Manage** >> **Certificates & secrets**.
 2. On the **Client secrets** tab, select **New client secret**.
-3. Provide a description like **Microsoft Foundry agents** and your preferred expiration.
+3. Enter a description and your preferred expiration.
 4. Select **Add**.
-5. Copy the **Value** immediately. The value won't be available after the form is closed.
+5. Copy the **Value** immediately. The value won't be available after the page is closed.
 
 > [!NOTE]
-> Leave the app registration open. You will need to return to the page to get ID values and add a redirect URL generated later in the process.
+> Leave the app registration open. You need to return to the page to get ID values and add a redirect URL generated later in the process.
 
 ## Configure Dynamics 365 finance and operations apps
 ### Step 1: Enable the MCP server
-In the Dynamics 365 finance and operations apps client, ensure the **Dynamics 365 ERP Model Context Protocol server** feature is enabled in Feature Management.
+In the Dynamics 365 finance and operations apps client, ensure the **Dynamics 365 ERP Model Context Protocol server** feature is enabled in Feature management.
 
 ### Step 2: Grant permissions to the application.
-1. Open the **Microsoft Entra ID applications** form (System administration >> Setup >> Microsoft Entra ID applications).
+1. Go to **System administration** > **Setup** > **Microsoft Entra ID application** to open the **Microsoft Entra ID applications** page. 
 2. Select **New** on the action ribbon.
 3. In the **Client ID** field of the new record, enter the **Application (client) ID** value of your new app, found on the **Overview** page of the Entra ID app registration.
-4. In the **Name** field, provide a name for the registration.
+4. In the **Name** field, enter a name for the registration.
 5. In the **User ID** field, select a user that has the appropriate security role for permissions required for your agent to access in Dynamics 365 finance and operations apps.
 
 ### Step 3: Allow your new application to access the Dynamics 365 ERP MCP server.
-1. Open the **Allowed MCP clients** form (System administration >> Setup >> Allowed MCP clients).
+1. Go to **System administration** > **Setup** > **Allowed MCP clients** to open the **Allowed MCP clients** page.
 2. Select **New** on the action ribbon.
 3. Set the following values for the new record.
 
@@ -75,9 +75,9 @@ In the Dynamics 365 finance and operations apps client, ensure the **Dynamics 36
 ## Configure Microsoft Foundry
 
 ### Step 1: Add the MCP server as a custom tool
-1. Navigate to [Microsoft Foundry](https://ai.azure.com).
+1. Go to [Microsoft Foundry](https://ai.azure.com).
 2. Open your project, or create a new one.
-3. Select **Build** to open the Agent Builder.
+3. Select **Build** to open the Agent builder.
 4. On the navigation pane, select **Tools**.
 5. Select **Connect a tool**.
 6. On the **Custom** tab of the **Select a tool** dialog, select **Model Context Protocol (MCP)**, then select **Create**.
@@ -102,12 +102,12 @@ In the Dynamics 365 finance and operations apps client, ensure the **Dynamics 36
 After configuring the MCP server in Microsoft Foundry, a redirect URL is generated that must be configured for your Entra ID app registration.
 
 1. On the **You've created a credential provider** dialog, copy the **Redirect URL** value.
-2. Navigate back to the Entra ID app registration you created earlier.
+2. Go back to the Entra ID app registration you created earlier.
 3. Select **Authentication (Preview)** on the left navigation.
 4. On the **Authentication (Preview)** page, select **Add Redirect URI**.
 5. Select **Web**.
 6. Enter the generated redirect URL in the **Redirect URI** field.
-7. Under **Implicit grant and hybrid flows**, select both the following options:
+7. Under **Implicit grant and hybrid flows**, select both the options:
    - Access tokens (used for implicit flows)
    - ID tokens (used for implicit and hybrid flows)
 8. Select **Configure**.
@@ -119,4 +119,4 @@ With the MCP tool configured in Microsoft Foundry, you can now create an agent t
 2. On the **Playground** tab, select a model from the available deployed models to manage the agent orchestration. Recommended models include `claude-sonnet-4-5` and `gpt-5-chat`.
 3. Provide instructions in the **Instructions** field to guide the agent orchestration in using the MCP tools. See [Providing agent instructions](../build-agent-mcp.md#providing-agent-instructions) for more information.
 4. **Save** the agent.
-5. In the **Message the agent...** box, send a message. For example, send "Find the Purchase Requsition form."
+5. In the **Message the agent...** box, send a message. For example, send "Find the purchase requisition page."
