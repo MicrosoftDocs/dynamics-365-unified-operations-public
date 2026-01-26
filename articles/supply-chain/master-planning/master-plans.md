@@ -132,7 +132,7 @@ The positive days also affect the action messages. For example, the system might
 
 As a rule, the positive days are set to a number that is between the longest lead time of the items and the coverage time fence. We recommend that you assign items that are regularly procured or produced to a coverage group where the positive days equal the item's lead time.
 
-Setting zero positive days means that new supply is always generated for demand because the demand isn't allowed to be pegged against any existing supply.
+Setting zero positive days in Planning optimization means that new supply is always generated for demand because the demand isn't allowed to be pegged against any existing supply.
 
 ### Dynamic positive days
 
