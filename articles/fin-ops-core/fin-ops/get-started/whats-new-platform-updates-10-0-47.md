@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.47 of finance and operations apps (Janu
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.47 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 01/24/2026
+ms.date: 01/26/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -29,7 +29,7 @@ This section lists the features included in this release when available. The art
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| System administration | Data tools for Dynamics 365 ERP MCP | New data tools are added to the Dynamics 365 ERP MCP server, enabling agents to perform standard data operations to create, read, update, and delete data in the finance and operations apps environment through data entities. For more information see [Use Model Context Protocol for finance and operations apps](../../dev-itpro/copilot/copilot-mcp.md) | On by default |
+| System administration | Data tools for Dynamics 365 ERP MCP | New data tools are added to the Dynamics 365 ERP MCP server, enabling agents to perform standard data operations to create, read, update, and delete data in the finance and operations apps environment through data entities. Learn more in [Use Model Context Protocol for finance and operations apps](../../dev-itpro/copilot/copilot-mcp.md) | On by default |
 
 ## Feature enhancements included in this release
 
@@ -49,7 +49,7 @@ To see bug fixes in this update, sign in to Microsoft Dynamics Lifecycle Service
 
 Want to know about upcoming and recently released capabilities in our business apps or platform?
 
-See the [Dynamics 365: 2025 release wave 2 plan](/dynamics365/release-plan/2026wave1/). This document has all the details you need for planning.
+See the [Dynamics 365: 2025 release wave 2 plan](/dynamics365/release-plan/2025wave2/). This document has all the details you need for planning.
 
 ### Removed and deprecated platform features
 
@@ -60,5 +60,5 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 
 Deprecation notices appear in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before any feature is removed.
 
-For breaking changes that affect only compilation time, but are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. These changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time but are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. These changes are functional updates that you must make to the compiler.
 ](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ee25d2dc-5946-f011-877a-7c1e52585ca6)
