@@ -64,6 +64,10 @@ Starting in Dynamics 365 Finance version 10.0.44, the inventory‑closing recal
 - If the inventory to fixed‑assets journal entry reflects a different acquisition cost for a fixed asset, the adjustment is automatically posted to the fixed assets subledger using the inventory closing recalculation adjustment.
 
 
+Beginning with **Dynamics 365 Finance version 10.0.46**, a feature creates **Sold** in inventory transactions when a fixed asset is acquired through the **Fixed assets acquisition proposal journal** in scenarios where the *same fixed asset ID* is linked to more than one inventory item.
+
+When the **Allow asset acquisition from purchasing** parameter is set to **No** on the **Fixed assets parameters** page, fixed asset acquisition does not occur during vendor invoice posting. Instead, the acquisition is processed through the acquisition proposal journal. In this scenario, multiple inventory items referencing the same fixed asset ID result in the system creating the Inventory sold transaction at the time the acquisition proposal journal is posted, generating a separate sold transaction for each associated inventory item, and no inventory sold transaction is created during purchasing or vendor invoice posting when the acquisition‑from‑purchasing parameter is disabled.
+
 ## Accounts receivable
 The integration of Fixed assets with Accounts receivable uses posting profiles that are set up in Fixed assets. These posting profiles are activated when a fixed asset, book, and fixed asset transaction type are selected for a customer invoice before the customer invoice is posted. Because fixed assets aren’t part of Inventory management, you must use the **Free text invoice** page when you sell a fixed asset. 
 
