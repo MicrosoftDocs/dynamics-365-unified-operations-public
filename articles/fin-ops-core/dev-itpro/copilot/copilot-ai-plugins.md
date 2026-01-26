@@ -22,7 +22,7 @@ The tools you create can use the finance and operations business logic that you 
 
 Agents can invoke these classes with business logic in two ways:
 
-1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations apps](copilot-mcp.md#using-actions-that-invoke-application-code).
+1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations apps](copilot-mcp.md#actions-tools).
 1. You can also build a separate API and related tool in Dataverse to call the class. If you don't use the MCP server, you need to create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent.
 
 Users in copilot chat or autonomous agents can then invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base.
