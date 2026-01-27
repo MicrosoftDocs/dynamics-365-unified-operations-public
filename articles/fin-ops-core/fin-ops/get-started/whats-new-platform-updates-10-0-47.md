@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.47 of finance and operations apps (Janu
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.47 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 01/26/2026
+ms.date: 01/27/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
