@@ -48,18 +48,13 @@ This phase lets you test the smallest possible scope. Start with a test email ad
 Now that you have a few emails available on your system, start working with messages from those vendors that you communicate with the most or that have the most confirmations that you want the agent to handle.
 
 - Use the same setup as before, but this time auto-forward a set of emails from real vendor email addresses to the test address.
-- Refresh data or import purchase orders and products before you do the test, especially if your testing should last for a few weeks. The agent can't match an email to a purchase order if the purchase order isn't in the system.
+- Refresh data or import purchase orders and products before you do the test, especially if your testing should last for a few weeks. The agent can't match an email to a purchase order if the purchase order isn't in the system. Involve one or more of your purchasers if you haven't already.
 
 For this phase, you might want to involve one or more of your purchasers.
 
-### Phase 3: Forward all vendor emails to sandbox
+### Phase 3: Use real email addresses in production
 
-Create an auto-forwarding rule for all vendor emails to the testing address. Involve one or more of your purchasers if you haven't already.
-
-### Phase 4: Use real email addresses in production
-
-Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. Stop the agent from working in your sandbox.
-
+Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. Stop the agent from working in your sandbox. 
 Testing in production is safe. The feature doesn't interfere with standard business processes. At best, the agent does the work automatically. At worst, if the agent doesn't understand something correctly, the purchaser still needs to do it manually.
 
 This is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. We keep it designated as a production-ready preview so we can continue improving it.
@@ -69,3 +64,9 @@ For this test, we recommend that you:
 - Have purchasers work with the agent to do their daily tasks.
 - Start with just one or a few purchasers.
 - Optionally filter messages from a few vendors to start small.
+
+### Phase 4: Expand the number of vendors in production
+
+Keep adding more vendors to the configuration, so you gradually keep getting value from the agent. 
+
+
