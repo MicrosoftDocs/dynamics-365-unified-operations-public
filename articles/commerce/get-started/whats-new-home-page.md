@@ -24,7 +24,7 @@ To see what's new or changed in each release of Commerce, see the following arti
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
-| 10.0. 47| 10.0.XXXXX | January 2026 | [Preview features in Dynamics 365 Commerce 10.0.47](whats-new-commerce-10-0-47.md) |
+| 10.0. 47| 10.0.2527.17 | January 2026 | [Preview features in Dynamics 365 Commerce 10.0.47](whats-new-commerce-10-0-47.md) |
 | 10.0. 46| 10.0.2428 | October 2025 | [Preview features in Dynamics 365 Commerce 10.0.46](whats-new-commerce-10-0-46.md) |
 | 10.0. 45| 10.0.2345 | September 2025 | [Preview features in Dynamics 365 Commerce 10.0.45](whats-new-commerce-10-0-45.md) |
 | 10.0. 44| 10.0.2263.11 | April 2025 | [Preview features in Dynamics 365 Commerce 10.0.44](whats-new-commerce-10-0-44.md) |
