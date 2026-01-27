@@ -1,6 +1,6 @@
 ---
-title: Set up and configure the Account Reconciliation Agent (production ready preview)
-description: Learn how to set up and configure the Account Reconciliation Agent in Microsoft Dynamics 365 Finance.
+title: Set up and configure the Account reconciliation agent (production ready preview)
+description: Learn how to set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 author: twheeloc
 ms.author: bking
 ms.topic: overview
@@ -15,16 +15,19 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ---
 
-# Set up and configure the Account Reconciliation Agent (production ready preview)
+# Set up and configure the Account reconciliation agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how system administrators can set up and configure the Account Reconciliation Agent in Microsoft Dynamics 365 Finance.
+This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
+
+>[NOTE!]
+> Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
 
 ## Prerequisites
 
-Before you can use the Account Reconciliation Agent, your system must meet the following requirements:
+Before you can use the Account reconciliation agent, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Finance version 10.0.44 or later. To use Dynamics 365 ERP Model Context Protocol capabilities, you must be running Dynamics 365 Finance version 10.0.47 or later.
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features aren't shown in your system, select **Check for updates**.
@@ -78,7 +81,7 @@ The user accounts must have the following security roles:
 
 ### Create the required connections
 
-The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent. Additionally, an optional Fin & Ops Apps (Dynamics 365) connection should be created for the use of Dynamics 365 ERP Model Context Protocol.
+The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent.
 
 To set up the connectors, follow these steps:
 
