@@ -4,7 +4,7 @@ description: This article describes how to use Agent feed in Dynamics 365 financ
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 01/09/2026
+ms.date: 01/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -278,7 +278,7 @@ Parameters in the namespace **msdyn_AgentFeedCreateFeedItemCustomApi_...**.
 
 | Parameter | Type | Description |
 | ---------------- | -------- | ---------------------------------------------------------------- |
-| **duedate** | DateTime | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Leave blank if not time-bound.<br>Example: “2026-01-12” |
+| **duedate** | DateTime | Expected completion date/time for the task. ISO 8601 format: YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ. Leave blank if not time-bound.<br>Example: "026-01-12" |
 | **fnorecord** | String | Allowing navigation, a JSON array referencing Finance and Operations entities.<br>Example: ```json[{"RefRecId":5637144576,"RefTableId":"VendInvoiceTable"},{"RefRecId":5637144588,"RefTableId":"PurchTable"}]```|
 
 #### Example parameter payload - create feed item
