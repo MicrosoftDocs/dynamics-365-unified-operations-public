@@ -27,7 +27,7 @@ You're performing various tests on electrical components. Some tests are for the
 Most of the features that are described in this article are available as a standard part of all current versions of Supply Chain Management. However, the calibration-related settings (the **Tag number required**, **Used for calibration**, and **Calibration label layout** fields) add the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
 
 Learn more in [Test instrument calibration](quality-instrument-calibration.md).
 

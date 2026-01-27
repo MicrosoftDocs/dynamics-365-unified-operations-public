@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.47 (March 2026)
+          href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
           href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
           href: get-started/whats-new-scm-10-0-44.md
-        - name: Supply Chain Management 10.0.43 (March 2025)
-          href: get-started/whats-new-scm-10-0-43.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -2369,6 +2369,8 @@
           href: unified-pricing-management/upm-concurrence-cross-codes.md
       - name: Calculate prices and discounts without creating sales orders
         href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
+      - name: Pricing data import and export entities
+        href: unified-pricing-management/upm-pricing-data-entities.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
