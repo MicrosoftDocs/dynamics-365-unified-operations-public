@@ -30,6 +30,11 @@ The only value that's present on Microsoft Excel templates after installation is
 
 This article shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 
 
+If you experience issues when adding a financial dimension to a data entity or to an Excel template, verify that the required configuration keys for that dimension are enabled in your environment. For more information, see [Configuration keys and data entities](../../fin-ops/data-entities/config-key-entities.md).
+
+>[!IMPORTANT]
+> Data import via Excel templates is optimized for performance and therefore supports only core field values. As a result, fields such as default fixed dimensions and derived dimensions are not automatically populated when importing lines through Excel.
+
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
 
