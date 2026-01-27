@@ -408,6 +408,8 @@
             href: enable-camera-based-product-identification.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
+          - name: Enable multilanguage support for Store Commerce self-checkout (preview)
+            href: multi-language-store-commerce-point-of-sale.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
