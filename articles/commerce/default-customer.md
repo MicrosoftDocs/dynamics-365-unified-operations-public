@@ -1,11 +1,10 @@
 ---
 title: Create a default customer
-description: This article describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
+description: Learn how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 01/21/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
@@ -18,15 +17,15 @@ ms.custom:
 
 This article describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 
-When creating a channel, you will need to provide a default customer. A default customer can easily be created after first creating the customer group and customer address book.
+When you create a channel, you need to provide a default customer. You can easily create a default customer after you create the customer group and customer address book.
 
 ## Create a customer group
 
-If no customer groups exist yet, you can create one. Examples may be groups to represent different customer groups, such as wholesale, retail, Internet, Employees, etc.
+If no customer groups exist yet, create one. Examples of customer groups include wholesale, retail, Internet, employees, and more.
 
 To create a customer group, follow these steps:
 
-1. In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> Customer groups**.
+1. In the navigation pane, go to **Modules > Retail and commerce > Customers > Customer groups**.
 1. On the action pane, select **New**.
 1. In the **Customer group** box, enter a customer group ID.
 1. In the **Description** box, enter an appropriate description.
@@ -38,11 +37,11 @@ To create a customer group, follow these steps:
 
 The following image shows several configured customer groups.
 
-![Customer groups.](media/customer-groups.png)
+:::image type="content" source="media/customer-groups.png" alt-text="Screenshot of configured customer groups.":::
 
 ## Create a customer address book
 
-A customer needs to be associated with an address book. If one has not yet been created, then you will need to create one.
+You need to associate each customer with an address book. If an address book doesn't exist, create one.
 
 To create a customer address book, follow these steps:
 
@@ -54,7 +53,7 @@ To create a customer address book, follow these steps:
 
 The following image shows an example address book.
 
-![Address book.](media/address-book.png)
+:::image type="content" source="media/address-book.png" alt-text="Screenshot of an example address book.":::
 
 ## Create a default customer
 
@@ -62,42 +61,41 @@ To create a default customer, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> All customers**.
 1. On the action pane, select **New**.
-1. In the **Type** drop-down list, select "Person".
-1. In the **Customer account** drop-down list, select or enter an account number (for example, "100001").
-1. In the **First name** drop-down list, select or enter a name (for example, "Default").
-1. In the **Middle name** drop-down list, select or enter a name (for example, "Retail").
-1. In the **Last name** drop-down list, select or enter a name (for example, "Customer").
-1. In the **Currency** drop-down list, select or enter a currency (for example, "USD").
-1. In the **Customer group** drop-down list, select the customer group created previously.
+1. In the **Type** drop-down list, select **Person**.
+1. In the **Customer account** drop-down list, select or enter an account number (for example, **100001**).
+1. In the **First name** drop-down list, select or enter a name (for example, **Default**).
+1. In the **Middle name** drop-down list, select or enter a name (for example, **Retail**).
+1. In the **Last name** drop-down list, select or enter a name (for example, **Customer**).
+1. In the **Currency** drop-down list, select or enter a currency (for example, **USD**).
+1. In the **Customer group** drop-down list, select the customer group you created previously.
 1. In the **Address books**  drop-down list, select an existing customer address book.
 1. Select **Save** to save and return to customer details screen for the new customer.
 
 > [!NOTE]
-> It is not necessary to add an address for a default customer.
+> You don't need to add an address for a default customer.
 
 The following image shows an example of customer creation.
 
-![Default customer creation.](media/default-customer-creation.png)
+:::image type="content" source="media/default-customer-creation.png" alt-text="Screenshot of default customer creation.":::
 
 The following image shows a default customer configuration.
 
-![Sample customer configuration.](media/default-customer-configuration1.png)
+:::image type="content" source="media/default-customer-configuration1.png" alt-text="Screenshot of sample customer configuration.":::
 
-Most of the default values on the customer details screen can remain, but two values should be changed.
+Most of the default values on the customer details screen can remain, but change two values.
 
 1. On the customer details screen, expand **Sales order defaults**.
-1. In the **Site** drop-down list, select or enter a pre-configured site.
-1. In the **Warehouse** drop-down list, and select or enter a pre-configured warehouse.
+1. In the **Site** drop-down list, select or enter a preconfigured site.
+1. In the **Warehouse** drop-down list, select or enter a preconfigured warehouse.
 
 The following image shows an example customer configuration.
 
-![Example customer configuration.](media/default-customer-configuration2.png)
+:::image type="content" source="media/default-customer-configuration2.png" alt-text="Screenshot of example customer configuration.":::
 
 ## Additional resources
 
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

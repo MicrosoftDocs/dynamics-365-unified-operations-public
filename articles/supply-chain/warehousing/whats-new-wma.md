@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 12/10/2025
+ms.date: 01/19/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -18,13 +18,35 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.30.0
+
+Version 4.0.30.0 adds the following fixes and improvements:
+
+- Fixed an authentication issue on on-premises Windows installations.
+- Improved transitions when navigating between pages.
+- Fixed an issue where the work list search field wasn't cleared after refreshing the page.
+- Fixed an issue where step instructions didn't remember the *Do not show again* selection when two menu items had the same name.
+- Improved Wi-Fi diagnostics through better request handling and clearer error reporting.
+- Fixed a concurrency-related issue that could cause sign-out failures.
+- Fixed an issue on custom legacy pages where fields could appear in the wrong order or show incorrect values after edits.
+- Added a loading spinner for long-running sign-out operations.
+
+## Version 4.0.29.0
+
+Version 4.0.29.0 adds the following fixes and improvements:
+
+- Fixed an authentication failure that occurred when multiple connections used the same client ID. The failure showed an incorrect redirect URL.
+- Fixed an issue that affected deployment of the app to iOS devices when using a mobile mass deployment (MDM) solution.
+- Improved support for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Added support for ProGlove devices.
+
 ## Version 4.0.28.0
 
 Version 4.0.28.0 adds the following fixes and improvements:
 
 - Fixed an issue where pulling down to refresh didn't update the work list cards.
-- Enabled brokered authentication for Android, iOS, and Windows, which allows support for features such as Microsoft Entra Conditional Access.
-- Added an option on Android to use a new redirect URI, which is required for Microsoft Entra Conditional Access.
+- Enabled brokered authentication for Android, iOS, and Windows, which allows support for features such as [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Added an option on Android to use a new redirect URI, which is required for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
 - Improved camera-based barcode scanning by adding camera zoom and augmented-reality assisted barcode focusing.
 - Fixed issues with hardware keyboard detection.
 - Added support for keycode mapping.

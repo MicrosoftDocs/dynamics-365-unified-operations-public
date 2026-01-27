@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.47 GA -->
 
 This article provides step-by-step instructions for enabling and configuring sample management. It covers key aspects such as designing sample label layouts, setting up parameters and number sequences, defining lifecycle states, and configuring quality associations. By following these instructions, manufacturing managers and system administrators can ensure that they manage samples efficiently, accurately, and in compliance with industry standards.
 
@@ -23,10 +23,11 @@ This article provides step-by-step instructions for enabling and configuring sam
 
 To use sample management, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- To run the preview version of this feature, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- To run the general availability version of this feature, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.47 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-    - *Advanced quality management*
-    - *(Preview) Sample management*
+    - *Advanced quality management* (As of Supply Chain Management version 10.0.47, this feature is turned on by default.)
+    - *Sample management*
 
 ## Set up the sample ID number sequence
 

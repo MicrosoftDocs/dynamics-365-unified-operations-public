@@ -2,9 +2,9 @@
 title: Separated Dual-write Application Orchestration package
 description: The Dual-write Application Orchestration package has been separated into smaller packages. Learn how the solutions and maps that each package contains other packages.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 05/04/2023
+ms.date: 01/15/2026
 ms.custom: "separate-solution"
 audience: IT Pro
 ms.search.region: global
@@ -14,8 +14,6 @@ ms.search.validFrom: 2021-11-29
 # Separated Dual-write Application Orchestration package
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Previously, the Dual-write Application Orchestration package was a single package that contained the following solutions:
 
@@ -34,7 +32,7 @@ Previously, the Dual-write Application Orchestration package was a single packag
 
 Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customers can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations can be upgraded.
 
-![Separated package.](media/separated-package-1.png)
+:::image type="content" source="media/separated-package-1.png" alt-text="Screenshot of separated package.":::
 
 This article explains the solutions and maps that each package contains, and its dependency on other packages.
 
@@ -42,7 +40,7 @@ For step-by-step instructions that show how to transition to split packages, see
 
 ## Dual-write Application Core
 
-The Dual-write Application Core package lets users install and configure dual-write without any customer engagement app. It contains the following five solutions.
+The Dual-write Application Core package lets you install and configure dual-write without any customer engagement app. It contains the following five solutions.
 
 | Unique name                           | Display name                               |
 |---------------------------------------|--------------------------------------------|
@@ -87,7 +85,7 @@ For more information on the mappings that are available in the solutions, see [I
 
 **Dependency information**
 
-The Dual-write Human Resources package depends on the [Dual-write Application Core](https://marketplace.microsoft.com/en-us/product/dynamics-365/mscrm.dwappcore?tab=Overview&exp=ubp8) and [Dynamics 365 HR Common Tables](https://marketplace.microsoft.com/en-US/product/dynamics-365/mscrm.hcmcommon?exp=ubp8) packages. Therefore, you should install these two solution packages before you install the Dual-write Human Resources package.
+The Dual-write Human Resources package depends on the [Dual-write Application Core](https://marketplace.microsoft.com/en-us/product/dynamics-365/mscrm.dwappcore?tab=Overview&exp=ubp8) and [Dynamics 365 HR Common Tables](https://marketplace.microsoft.com/en-US/product/dynamics-365/mscrm.hcmcommon?exp=ubp8) packages. Therefore, install these two solution packages before you install the Dual-write Human Resources package.
 
 ## Dual-write Supply Chain
 
@@ -160,7 +158,7 @@ The following maps are available in this package.
 
 **Dependency information**
 
-The Dual-write Supply Chain package depends on the following three packages. Therefore, you should install these packages before you install the Dual-write Supply Chain package.
+The Dual-write Supply Chain package depends on the following three packages. Therefore, install these packages before you install the Dual-write Supply Chain package.
 
 - Dual-write Application Core package
 - Dual-write Finance package
@@ -215,7 +213,7 @@ The following maps are available in this package.
 
 **Dependency information**
 
-The Dual-write Finance package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Finance package.
+The Dual-write Finance package depends on the Dual-write Application Core package. Therefore, install the Dual-write Application Core package before you install the Dual-write Finance package.
 
 ## Dual-write Notes
 
@@ -239,7 +237,7 @@ The following maps are available in this package.
 
 **Dependency information**
 
-The Dual-write Notes package depends on the following two packages. Therefore, you should install these packages before you install the Dual-write Notes package.
+The Dual-write Notes package depends on the following two packages. Therefore, install these packages before you install the Dual-write Notes package.
 
 - Dual-write Application Core package
 - Dual-write Finance package
@@ -273,10 +271,11 @@ The following maps are available in this package.
 
 **Dependency information**
 
-The Dual-write Asset Management package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Asset Management package.
+The Dual-write Asset Management package depends on the Dual-write Application Core package. Therefore, install the Dual-write Application Core package before you install the Dual-write Asset Management package.
 
 ## Packages required for Project Operations
-Project Operations depends on the following packages. Therefore, you should install these packages before you install Project Operations.
+
+Project Operations depends on the following packages. Therefore, install these packages before you install Project Operations.
 
 - Dual-write Application Core package
 - Dual-write Finance package
@@ -286,7 +285,7 @@ Project Operations depends on the following packages. Therefore, you should inst
 
 ## Dual-write party and global address book solutions
 
-The dual-write party and global address book package contains the following solutions and maps that are required to sync party and global address book data. 
+The dual-write party and global address book package contains the following solutions and maps that are required to sync party and global address book data.
 
 | Unique name                       | Display name                            |
 |-----------------------------------|-----------------------------------------|
@@ -297,34 +296,33 @@ The dual-write party and global address book package contains the following solu
 
 The following maps are available in this package.
 
-| Finance and operations apps | Customer engagement apps | 
+| Finance and operations apps | Customer engagement apps |
 |-----------------------------|--------------------------|
-| CDS Parties | msdyn_parties | 
-| CDS postal address locations | msdyn_postaladdresscollections | 
-| CDS postal address history V2 | msdyn_postaladdresses | 
-| CDS Party postal address locations | msdyn_partypostaladdresses | 
-| Party contacts V3 | msdyn_partyelectronicaddresses | 
-| Customers V3 | accounts | 
-| Customers V3 | contacts | 
-| Vendors V2 | msdyn_vendors | 
-| Contact person titles | msdyn_salescontactpersontitles | 
-| Complimentary closings | msdyn_complimentaryclosings | 
-| Salutations | msdyn_salutations | 
-| Decision making roles | msdyn_decisionmakingroles | 
-| Employment job functions | msdyn_employmentjobfunctions | 
-| Loyalty levels | msdyn_loyaltylevels | 
-| Personal character types | msdyn_personalcharactertypes | 
-| Contacts V2 | msdyn_contactforparties | 
-| CDS sales quotation header | quotes | 
-| CDS sales order headers | salesorders | 
-| Sales invoice headers V2 | invoices | 
+| CDS Parties | msdyn_parties |
+| CDS postal address locations | msdyn_postaladdresscollections |
+| CDS postal address history V2 | msdyn_postaladdresses |
+| CDS Party postal address locations | msdyn_partypostaladdresses |
+| Party contacts V3 | msdyn_partyelectronicaddresses |
+| Customers V3 | accounts |
+| Customers V3 | contacts |
+| Vendors V2 | msdyn_vendors |
+| Contact person titles | msdyn_salescontactpersontitles |
+| Complimentary closings | msdyn_complimentaryclosings |
+| Salutations | msdyn_salutations |
+| Decision making roles | msdyn_decisionmakingroles |
+| Employment job functions | msdyn_employmentjobfunctions |
+| Loyalty levels | msdyn_loyaltylevels |
+| Personal character types | msdyn_personalcharactertypes |
+| Contacts V2 | msdyn_contactforparties |
+| CDS sales quotation header | quotes |
+| CDS sales order headers | salesorders |
+| Sales invoice headers V2 | invoices |
 | CDS Address roles | msdyn_addressroles |
 
 **Dependency information**
 
-The dual-write party and global address book solutions depend on the following three packages. Therefore, you should install these packages before you install the dual-write party and global address book solutions package.
+The dual-write party and global address book solutions depend on the following three packages. Therefore, install these packages before you install the dual-write party and global address book solutions package.
 
 - Dual-write Application Core package
 - Dual-write Finance package
 - Dual-write Supply Chain package
-

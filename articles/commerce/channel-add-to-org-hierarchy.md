@@ -1,11 +1,10 @@
 ---
 title: Add a channel to an organizational hierarchy
-description: This article describes how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
+description: Learn how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/31/2024
+ms.date: 01/20/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
@@ -18,39 +17,39 @@ ms.custom:
 
 This article describes how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 
-Channels need to be associated with one or more organizational hierarchies. Before creating channels, you need to confirm that your organizational hierarchies are set up.  
+You need to associate channels with one or more organizational hierarchies. Before creating channels, confirm that your organizational hierarchies are set up.  
 
-See [Organizational hierarchies](channels-org-hierarchies.md) for more details on how to create organizational hierarchies.
+For more information about creating organizational hierarchies, see [Organizational hierarchies](channels-org-hierarchies.md).
 
 ## Select a hierarchy
 
 To select a hierarchy, follow these steps:
 
 1. In the navigation pane, go to **Go to Navigation pane > Modules > Organization administration > Organizations > Organization hierarchies**.
-1. From the list, select the organization hierarchy to which you're adding the channel.
+1. From the list, select the organization hierarchy to which you want to add the channel.
 1. On the action pane, select **View** to view hierarchy details.
 
 The following image shows organizational hierarchy details for the selected hierarchy.
 
-![Organizational hierarchy details for the selected hierarchy.](media/channel-add-to-org-hierarchy-1.png)
+:::image type="content" source="media/channel-add-to-org-hierarchy-1.png" alt-text="Screenshot of organizational hierarchy details for the selected hierarchy.":::
 
 ## Add a channel to a hierarchy node
 
 To add a channel to a hierarchy node, follow these steps:
 
 1. On the action pane, select **Edit**.
-1. Select the hierarchy node you want the channel added to, then from the **Insert** drop-down list, select **Retail Channel**. 
-1. Select the channel to add, then select the **OK** button.
+1. Select the hierarchy node you want the channel added to. Then, from the **Insert** drop-down list, select **Retail Channel**. 
+1. Select the channel to add, and then select **OK**.
 1. On the action pane, select **Save**.
-1. On the action pane, select **Publish** and provide an **Effective date** in the past to have this action go into effect immediately.
+1. On the action pane, select **Publish** and provide an **Effective date** in the past to make this change take effect immediately.
 
 The following image shows how to select a channel to add to a hierarchy node.
 
-![Select a channel to add to a hierarchy node.](media/channel-add-to-org-hierarchy-2.png)
+:::image type="content" source="media/channel-add-to-org-hierarchy-2.png" alt-text="Screenshot of selecting a channel to add to a hierarchy node.":::
 
 The following image shows a hierarchy with various channels added.
 
-![A hierarchy with various channels added.](media/channel-add-to-org-hierarchy-3.png)
+:::image type="content" source="media/channel-add-to-org-hierarchy-3.png" alt-text="Screenshot of a hierarchy with various channels added.":::
 
 ## Additional resources
 
@@ -65,8 +64,7 @@ The following image shows a hierarchy with various channels added.
 [Organization hierarchies](channels-org-hierarchies.md)
 
 [Set up a retail channel](channel-setup-retail.md)
-	
-[Set up an online channel](channel-setup-online.md)
 
+[Set up an online channel](channel-setup-online.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

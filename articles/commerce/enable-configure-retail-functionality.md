@@ -1,12 +1,11 @@
 ---
 title: Initialize seed data in new Commerce environments
-description: This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 Commerce.
+description: Learn about the data created as part of the initialization process for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 01/22/2026
 ms.topic: how-to
 ms.search.form: RetailParameters
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: Global
 ms.author: anvenkat
@@ -19,18 +18,18 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 Commerce.
+This article describes the data created as part of the initialization process for Microsoft Dynamics 365 Commerce.
 
-After the Commerce solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the Commerce configuration to create the basic configuration data.
+After you deploy the Commerce solution through Microsoft Dynamics Lifecycle Services (LCS), initialize the Commerce configuration to create the basic configuration data.
 
 > [!IMPORTANT]
-> Before you initialize the commerce configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up stores. This step must be completed for each legal entity that you use for commerce.
+> Before you initialize the Commerce configuration, make sure that you specify a language and a postal address for each legal entity where you set up stores. You must complete this step for each legal entity that you use for commerce.
 
 To initialize the configuration, follow these steps:
 
 1. Start the Commerce client.
-2. Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.
-3. Click **Initialize**.
+1. Select **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters**.
+1. Select **Initialize**.
 
 Initialization creates the following default configuration data:
 
@@ -46,18 +45,17 @@ Initialization creates the following default configuration data:
 - Entity validation templates
 - Batch job to purge Commerce Data Exchange session history
 
-Additionally, logging that is related to the payment card industry (PCI) is enabled for the Commerce database.
+Additionally, the process enables logging that relates to the payment card industry (PCI) for the Commerce database.
 
 > [!NOTE]
-> There is an option to separately configure the Commerce scheduler. This option lets you reset the Commerce scheduler configuration to its default settings.
+> You can separately configure the Commerce scheduler. This option lets you reset the Commerce scheduler configuration to its default settings.
 
-After initialization is completed, you must configure additional commerce data. Here are some examples:
+After initialization is complete, you must configure additional commerce data. Here are some examples:
 
 - Commerce parameters
 - Commerce scheduler parameters
 - Commerce channels
 - Registers and devices
 - Assortments
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

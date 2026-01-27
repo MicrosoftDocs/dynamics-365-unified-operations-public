@@ -4,12 +4,16 @@ description: Learn about the parameter configuration for Latin America, includin
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 12/10/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak	
 ---
 
 # Latin America parameters
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article provides a description of the Latin America (LATAM) parameter configuration. Use these parameters to incorporate the general parameter setup into the local parameters before you start the corresponding configurations.
 
@@ -21,8 +25,8 @@ This article provides a description of the Latin America (LATAM) parameter confi
 ## Set up previous LATAM configurations
 
 1. Go to **Organization administration > Setup > LATAM > LATAM parameters**.
-2. On the **General** tab, enter the character length for the prefix field for **Document class types** and **Document class letters**.
-3. On the **Functionalities** tab, activate the following options as required.
+1. On the **General** tab, enter the character length for the prefix field for **Document class types** and **Document class letters**.
+1. On the **Functionalities** tab, activate the following options as required.
 
     | Option                        | Description |
     |-------------------------------|-------------|
@@ -30,8 +34,8 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Enable sales return account   | Activate the alternative ledger account for return sales orders. |
     | Enable project return account | Activate the alternative ledger account for return project sales. |
 
-4. On the **Mandatory document class in journal** tab, activate the options for each group as required. When you activate an option, the **Document class** field in the LATAM extended information from journal entries becomes mandatory.
-5. On the **Value** tab, update the following fields to configure how payment methods behave with transactions.
+1. On the **Mandatory document class in journal** tab, activate the options for each group as required. When you activate an option, the **Document class** field in the LATAM extended information from journal entries becomes mandatory.
+1. On the **Value** tab, update the following fields to configure how payment methods behave with transactions.
 
     | Field                                               | Description |
     |-----------------------------------------------------|-------------|
@@ -46,7 +50,7 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Remove IBAN field validation                        | Don't use the native validation of the **IBAN** field in the bank account master. |
     | Show payment transactions                           | Set this slider to yes to show payment transactions and transactions without LATAM information. |
 
-6. On the **Dimension allocations** tab, enable the addition of third-party information as a dimension in transactions.
+1. On the **Dimension allocations** tab, enable the addition of third-party information as a dimension in transactions.
 
     | Field                                                         | Description |
     |---------------------------------------------------------------|-------------|
@@ -55,4 +59,6 @@ This article provides a description of the Latin America (LATAM) parameter confi
     | Enable allocation of third-party dimension in customer/vendor | When the vendor or customer LATAM information is completed, the country/region tax ID number is assigned in the selected third-party dimension. |
     | Inherit dimension to journal lines                            | Replicate the third-party dimension information of the client or vendor on the voucher header on the other lines of the journal. Include values, if they're blank. |
 
-7. On the **Concepts and Notes** tab, enter information together with the labels that are required in the following master records: vendors, legal entities, bank groups, contacts, and employees.
+1. On the **Concepts and Notes** tab, enter information together with the labels that are required in the following master records: vendors, legal entities, bank groups, contacts, and employees.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

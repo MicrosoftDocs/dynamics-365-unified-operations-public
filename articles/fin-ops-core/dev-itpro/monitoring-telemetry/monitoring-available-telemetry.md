@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that is available in the Monitorin
 author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/15/2025
+ms.date: 01/15/2026
 ms.author: rijoshi 
 ms.reviewer: twheeloc
 ms.custom: bap-template
@@ -70,18 +70,19 @@ The Data Management Framework (DMF) logs errors to the Custom Events table in Ap
 - Identify and fix integration issues
 - Monitor data pipeline health
 
-## Batch telemetry (preview)
+## Batch telemetry
 
 > [!IMPORTANT]
-> - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
-> - The following three flights are enabled for all sandbox environments. To activate them in production, contact Microsoft support.
+> - This feature is available in **PU69/10.0.45 (build >= 7.0.7690.21)** and **PU68/10.0.44 (build >= 7.0.7606.126)**.
 
-To enable batch telemetry, activate the following flights:
+Batch telemetry is controlled by the following 3 flights: If it's not enabled in your environments, reach out to Microsoft support.
 1. **BatchTelemetryConfigurationFlight**
 1. **BatchThreadInfoTelemetryFlight**
 1. **BatchTelemetryCallstackFlight**
 
-After you enable the flights, new telemetry signals appear under the **Configure** tab:
+If it's not enabled in your environments, reach out to Microsoft support.
+
+After the flights are enabled, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
 - **Batch Stop Time** - Logs when a batch job completes. Supports duration tracking.
@@ -95,6 +96,10 @@ With batch telemetry, you can:
 - Enable proactive monitoring through alerts and dashboards
 - Accelerate resolution of operational issues
 
+### Resources
+
+- Plug and play dashboard: [Batch Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Batch)
+  
 ## DMF telemetry (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -102,8 +107,6 @@ With batch telemetry, you can:
 
 We're enhancing the **Monitoring** and **Telemetry** features by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you might notice additional events in the UI, the underlying telemetry is planned for preview in January 2026. We share additional details as soon as the feature becomes available.
 
-### Resources
 
-- Plug and play dashboard: [Batch Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Batch)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
