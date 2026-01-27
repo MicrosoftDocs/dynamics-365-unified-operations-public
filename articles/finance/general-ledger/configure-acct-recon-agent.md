@@ -4,7 +4,7 @@ description: Learn how to set up and configure the Account Reconciliation Agent 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 05/12/2025
+ms.date: 01/26/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -26,17 +26,31 @@ This article explains how system administrators can set up and configure the Acc
 
 Before you can use the Account Reconciliation Agent, your system must meet the following requirements:
 
-- You must be running Dynamics 365 Finance version 10.0.44 or later.
+- You must be running Dynamics 365 Finance version 10.0.44 or later. To use Dynamics 365 ERP Model Context Protocol capabilities, you must be running Dynamics 365 Finance version 10.0.47 or later.
 - The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features aren't shown in your system, select **Check for updates**.
 
     - (Preview) Immersive Home
     - (Production ready preview) Agent management
     - (Production ready preview) Account reconciliation agent
+    - (Preview) Dynamics 365 ERP Model Context Protocol server (Optional)
+
+
 
 - You must be running the following packages in the Power Platform admin center:
 
     - **Copilot for finance and operations apps**, version 1.0.3048.2 or later
     - **Copilot in Microsoft Dynamics 365 Finance**, version 1.0.3049.1 or later
+  
+ - Normally, the Microsoft Copilot Studio agents needed for the Account reconciliation agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents.
+ - To check if the agents were successfully published, follow these steps:
+1. go to Copilot Studio and find your environment.
+2. Confirm that the following Microsoft Copilot Studio agents are published in that environment:
+ - Account reconciliation agent
+ - Account reconciliation amounts
+ - Account reconciliation API
+If the agents aren't published, see [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting). 
+Confirm that the agents are shared with the organization. 
+
 
 Learn more in [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).  
 
@@ -64,11 +78,11 @@ The user accounts must have the following security roles:
 
 ### Create the required connections
 
-The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent.
+The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent. Additionally, an optional Fin & Ops Apps (Dynamics 365) connection should be created for the use of Dynamics 365 ERP Model Context Protocol.
 
 To set up the connectors, follow these steps:
 
-1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
+1. Sign in to [Power Apps](https://make.powerapps.com) using the newly created agent identity user.
 1. In the left pane, select **Connections**.
 1. At the top of the page, select **New connection**.
 1. In the **Search** field, enter **Microsoft Dataverse**.
@@ -81,6 +95,13 @@ To set up the connectors, follow these steps:
 1. Search for the **Microsoft Copilot Studio (preview)** connection, select **Create** for it, and follow the on-screen instructions to create the connector. When you're prompted to sign in, sign in as the intended agent identity.
 
     You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
+
+
+1. At the top of the page, select **New connection**.
+1. Search for the Fin & Ops Apps (Dynamics 365) connection.
+1. Select **Create**, and follow the on-screen instructions to create the connector. When you're prompted to sign in, sign in as the intended agent identity.
+You're returned to the Connections page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
+
 
 ### Update connection references and activate the triggering flows
 
@@ -95,6 +116,7 @@ To use the sample PowerShell script, follow these steps:
     - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find this URL in the Power Platform admin center.
     - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created it](#create-the-required-connections). You can find the name on the **Connections** page in Power Apps.
     - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created it](#create-the-required-connections). You can find the name on the **Connections** page in Power Apps.
+    - DynamicsAXConnectionName  – Specify the name of the Fin & Ops Apps connector to use. The connector is named after the agent identity that you signed in as when you created it. You can find the name on the **Connections** page in Power Apps.
 
  1. Customize the script as you require. 
  1. Run the script from any PowerShell console. When you're prompted to sign in, sign in as an environment administrator.
@@ -111,6 +133,8 @@ Param(
     [string]$DVConnectionName = "",
     [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
     [string]$MCSConnectionName = ""
+    [Parameter(Mandatory=$false, HelpMessage="Dynamics 365 Finance and Operations connection name")]
+    [string]$DynamicsAXConnectionName = ""
 )
 # Check PS version
 if ($PSVersionTable.PSVersion.Major -lt 7) {
@@ -287,6 +311,10 @@ Set-ConnectionReferenceConnection `
     -providerName "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio" `
     -connectionReferenceLogicalName "msdyn_sharedmicrosoftcopilotstudio_462f2" `
     -accessToken $accessToken
+if ($DynamicsAXConnectionName)
+{
+    Set-ConnectionReferenceConnection -userProvidedConnectionName $DynamicsAXConnectionName -providerName "/providers/Microsoft.PowerApps/apis/shared_dynamicsax" -connectionReferenceLogicalName "msdyn_accountReconciliationApi.shared_dynamicsax.d2dc587e63f84ef68793f11e1a7b9ba3" -accessToken $accessToken
+}
 
 Write-Host
 Write-Host 'Activating flows...'
