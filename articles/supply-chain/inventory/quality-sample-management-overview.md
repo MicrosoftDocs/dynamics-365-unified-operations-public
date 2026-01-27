@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.47 GA -->
 
 Sample management enables manufacturers to systematically handle, track, and test product samples throughout their lifecycle. This functionality supports industries such as pharmaceuticals, food and beverage, chemicals, and life sciences, where quality assurance and regulatory compliance are critical.
 

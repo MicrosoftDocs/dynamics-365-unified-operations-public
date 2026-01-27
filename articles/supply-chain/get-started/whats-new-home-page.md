@@ -4,7 +4,7 @@ description: Access resources that describe the new and changed features in each
 author: kamaybac
 ms.author: kamaybac
 ms.topic: whats-new
-ms.date: 01/07/2025
+ms.date: 01/27/2026
 ms.reviewer: kamaybac
 ms.collection: get-started 
 ms.search.form:
@@ -20,12 +20,13 @@ To see what's new or changed in each release of Dynamics 365 Supply Chain Manage
 
 | Version | Build number | Auto-update availability | Learn more |
 |---|---|---|---|
-| 10.0.46 | 10.0.2428 | December 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.46](whats-new-scm-10-0-46.md) |
-| 10.0.45 | 10.0.2345 | September 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.45](whats-new-scm-10-0-45.md) |
-| 10.0.44 | 10.0.2263 | June 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.44](whats-new-scm-10-0-44.md) |
-| 10.0.43 | 10.0.2177 | March 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.43](whats-new-scm-10-0-43.md) |
-| 10.0.42 | 10.0.2095 | December 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.42](whats-new-scm-10-0-42.md) |
-| 10.0.41 | 10.0.2015 | September 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.41](whats-new-scm-10-0-41.md) |
+| 10.0.47 | 10.0.2527 | April 2026 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.47](whats-new-scm-10-0-47.md) |
+| 10.0.46 | 10.0.2428 | February 2026 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.46](whats-new-scm-10-0-46.md) |
+| 10.0.45 | 10.0.2345 | October 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.45](whats-new-scm-10-0-45.md) |
+| 10.0.44 | 10.0.2263 | July 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.44](whats-new-scm-10-0-44.md) |
+| 10.0.43 | 10.0.2177 | April 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.43](whats-new-scm-10-0-43.md) |
+| 10.0.42 | 10.0.2095 | February 2025 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.42](whats-new-scm-10-0-42.md) |
+| 10.0.41 | 10.0.2015 | October 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.41](whats-new-scm-10-0-41.md) |
 | 10.0.40 | 10.0.1935 | June 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.40](whats-new-scm-10-0-40.md) |
 | 10.0.39 | 10.0.1860 | April 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.39](whats-new-scm-10-0-39.md) |
 | 10.0.38 | 10.0.1777 | February 2024 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38](whats-new-scm-10-0-38.md) |
@@ -39,9 +40,9 @@ To see what's new or changed in each release of Dynamics 365 Supply Chain Manage
 | 10.0.30 | 10.0.1362 | November 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.30](whats-new-scm-10-0-30.md) |
 | 10.0.29 | 10.0.1326 | September 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.29](whats-new-scm-10-0-29.md) |
 | 10.0.28 | 10.0.1264 | July 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.28](whats-new-scm-10-0-28.md) |
-| 10.0.27 | 10.0.1227 | July 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.27](whats-new-scm-10-0-27.md) |
+| 10.0.27 | 10.0.1227 | June 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.27](whats-new-scm-10-0-27.md) |
 | 10.0.26 | 10.0.1192 | April 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.26](whats-new-scm-10-0-26.md) |
-| 10.0.25 | 10.0.1149 | April 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.25](whats-new-scm-10-0-25.md) |
+| 10.0.25 | 10.0.1149 | March 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.25](whats-new-scm-10-0-25.md) |
 | 10.0.24 | 10.0.1084 | February 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.24](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | January 2022 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.23](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | November 2021 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.22](../supply-chain-dev/whats-new-scm-10-0-22.md) |
