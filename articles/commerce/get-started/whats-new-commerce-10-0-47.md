@@ -2,7 +2,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.47 (January 2026)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.47. 
 author: johnmichalak
-ms.date: 01/26/2026
+ms.date: 01/27/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -51,11 +51,11 @@ The following table lists the features that are turned on by default in version 
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.47 includes platform updates. For more information, see [Platform updates for version 10.0.46 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-47.md). 
+Microsoft Dynamics 365 Commerce version 10.0.47 includes platform updates. For more information, see [Platform updates for version 10.0.47 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-47.md). 
   
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.46, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1093817).
+For information about the bug fixes included in each of the updates that are part of version 10.0.47, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1093817).
 
 ### Dynamics 365 and industry clouds: 2025 release wave 2 plan
 
