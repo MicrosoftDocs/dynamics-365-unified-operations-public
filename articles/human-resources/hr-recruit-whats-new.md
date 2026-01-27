@@ -24,7 +24,8 @@ ms.dyn365.ops.version: Version 10.0.27
 
 # What's new or changed in the Human Resources recruiting app
 
-[!include [banner](../includes/banner.md)]
+>[!Note]
+> Community interest groups have now moved from Yammer to Microsoft Viva Engage. To join a Viva Engage community and take part in the latest discussions, fill out the [Request access to Dynamics 365 Human Resources Viva Engage Community](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyPMYnfFUN1MsQn3mD_HO19UQ0RJQTRFTjhPTFJWM01QVU5FQkxWRUhUVC4u) form and choose the community you want to join
 
 This article provides information about the Recruiting solution that helps to find and hire the best and most qualified candidate for a job opening. For more information, 
 see [Recruiting overview](hr-recruit-overview.md).

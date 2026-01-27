@@ -4,7 +4,7 @@ description: Learn about two ways to view general ledger account balances - the 
 author: JodiChristiansen
 ms.author: aolson
 ms.topic: how-to
-ms.date: 4/22/2024
+ms.date: 01/26/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -87,6 +87,8 @@ To view the results, go to **General ledger** \> **Inquiries and reports** \> **
 
 For more information, see [View financial reports](view-financial-reports.md).
 
+### Update balances
 
+Staring in Dynamics 365 Finance version 10.0.47, the **Update balances** action was added to the **Trial balance** page. This button is only visible if the **Performance enhancement for general ledger dimension set balance calculation** feature is enabled in Feature management, and when the balance initialization is fully completed after the feature is enabled. Select **Update balances** to create a new batch task to update the dimension set balances without waiting the standard 5 minutes for the batch process to update the balances. If a batch job is already in progress to update the dimension set balances then the **Update** button isn't available and displays a **A balance update batch is currently running. Please wait for it to complete.** message. The start date and time of the batch is also displayed. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
