@@ -18,6 +18,19 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.30.0
+
+Version 4.0.30.0 adds the following fixes and improvements:
+
+- Fixed an authentication issue on on-premises Windows installations.
+- Improved transitions when navigating between pages.
+- Fixed an issue where the work list search field wasn't cleared after refreshing the page.
+- Fixed an issue where step instructions didn't remember the *Do not show again* selection when two menu items had the same name.
+- Improved Wi-Fi diagnostics through better request handling and clearer error reporting.
+- Fixed a concurrency-related issue that could cause sign-out failures.
+- Fixed an issue on custom legacy pages where fields could appear in the wrong order or show incorrect values after edits.
+- Added a loading spinner for long-running sign-out operations.
+
 ## Version 4.0.29.0
 
 Version 4.0.29.0 adds the following fixes and improvements:
