@@ -2321,6 +2321,8 @@ items:
         href: ../fin-ops/copilot/agent-mgmt.md
       - name: Immersive Home (production ready preview)
         href: ../fin-ops/copilot/immersive-home.md
+      - name: Agent feed (preview)
+        href: ../fin-ops/copilot/agent-feed-api.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
