@@ -1,6 +1,6 @@
 ---
-title: Agent feed developer documentation (preview)
-description: This article describes how to use Agent Feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive home.
+title: Agent feed (preview)
+description: This article describes how to use Agent feed in Dynamics 365 finance and operations to create, update, read, and customize feed items surfaced in Immersive home.
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
