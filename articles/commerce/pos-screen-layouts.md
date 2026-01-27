@@ -7,7 +7,7 @@ author: boycezhu
 ms.date: 10/29/2024
 ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: Global
 ms.author: chuzheng
