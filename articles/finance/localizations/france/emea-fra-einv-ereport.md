@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 # Electronic invoicing and Electronic reporting for France
 
-This article helps you get started with electronic invoicing for Singapore. Set up the system to generate, submit, and receive electronic invoices in the Singaporean extension of the [PEPPOL International (PINT)](https://www.peppolguide.sg/billing/) format in Microsoft Dynamics 365 Finance by using the last mile connector.
+This article helps you get started with electronic invoicing and electronic reporting for France. Set up the system to generate, submit, and receive electronic invoices in the required format in Microsoft Dynamics 365 Finance via a certified Partner Agent acting as the last mile connector.
 
 :::image type="content" source="../media/apac-sgp-einoices-flow.jpg" alt-text="Screenshot of the e-invoice flow for Singapore.":::
 
@@ -26,19 +26,14 @@ This article helps you get started with electronic invoicing for Singapore. Set 
 
 Before you start, make sure these prerequisites are in place:
 
-- The company is a registered taxpayer in Singapore.
-- The company has a signed agreement with the electronic document delivery service provider that supports document interchange in the PEPPOL (PINT) format.
-- Register the following profile ID for Microsoft Dynamics 365 Finance electronic document interchange:
+- The company is a registered taxpayer in France.
+- The company has a signed agreement with the certified Partner Agent.
+  > [!NOTE]
+  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
 
-    - **urn:peppol:bis:billing** – Use this profile to interchange documents in PEPPOL (PINT) format.
-
-- Get the credentials from the service provider to integrate the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
-
-   > [!NOTE]
-   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the Electronic Invoicing ISV last-mile connection service provider. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
-
-- Learn about Electronic Invoicing in the [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
-- Complete the common Electronic Invoicing service configuration in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
+- Install the **Electronic invoicing add-in** as described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
+- Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
+- Configure the common part of the **Electronic document parameters**.
 
 ## Create the Azure Key Vault configuration
 
