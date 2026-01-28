@@ -52,7 +52,7 @@ This error may be caused by a truncation issue. Follow these steps to determine 
 
 If the error matches the pattern described above:
 
-1. Find the **Available Finance and Operation Virtual entities** table.
+1. Find the **Available Finance and Operations Virtual entities** table.
 2. Mark the entity referenced in the error message as visible.
 3. Save your changes.
 4. Repeat this process if the error occurs for additional entities.
