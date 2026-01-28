@@ -13,7 +13,7 @@ ms.collection:
 ms.search.region: Global
 ---
 
-# Agent feed developer documentation (preview0
+# Agent feed developer documentation (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
