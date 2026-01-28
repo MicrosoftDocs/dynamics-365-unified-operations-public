@@ -22,7 +22,7 @@ A dispatch board is the central location from which you can view the status of a
 - Modify the service times and assigned technicians for a service activity.
 - Review the list of service activities that have not been dispatched.
 
-To work with the dispatch board, follow these steps.
+To work with the dispatch board, follow these steps:
 
 1. Go to **Service management** \> **Perform periodic tasks** \> **Dispatch board**.
 1. On the Action Pane, select **Adjust view settings** and then use the **Adjust view settings** dialog to select the date range and other options for the service activities you want to see.

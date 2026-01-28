@@ -26,7 +26,7 @@ Before you can complete the procedures, you first must complete the procedures i
 
 ## Create a transfer order
 
-To create a transfer order, follow these steps.
+To create a transfer order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management \> Inbound orders \> Transfer order**.
 1. Select **New**.
@@ -38,7 +38,7 @@ To create a transfer order, follow these steps.
 
 ## Enter transportation details for the transfer order
 
-To enter transportation details for the transfer order, follow these steps.
+To enter transportation details for the transfer order, follow these steps:
 
 1. Select **Save**.
 1. On the Action Pane, select **Ship**.
@@ -58,7 +58,7 @@ To enter transportation details for the transfer order, follow these steps.
 
 ## View the packing slip for the unposted transfer order
 
-To view the packing slip for the unposted transfer order, follow these steps.
+To view the packing slip for the unposted transfer order, follow these steps:
 
 1. Select **Packing slip**.
 1. Select **OK**.
@@ -66,7 +66,7 @@ To view the packing slip for the unposted transfer order, follow these steps.
 
 ## View the packing slip for the posted transfer order
 
-To , follow these steps.
+To , follow these steps:
 
 1. On the Action Pane, select **Transfer order**.
 1. On the Action Pane, select **Ship**.

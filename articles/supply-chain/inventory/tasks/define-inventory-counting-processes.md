@@ -72,7 +72,7 @@ To prevent double-counting mistakes, the system normally only allows items to be
 
 ### Count items independently per warehouse
 
-To set the counting policy to allow items to be counted independently in each warehouse, and ensure that items with identical dimension values can only be included within the same counting journal, follow these steps.
+To set the counting policy to allow items to be counted independently in each warehouse, and ensure that items with identical dimension values can only be included within the same counting journal, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Open the item that you want to be counted. You must select an item that is inventory tracked. Non-stocked products can't be counted.
@@ -91,7 +91,7 @@ To set the counting policy to allow items to be counted independently in each wa
 
 ### Disable counting status registration
 
-To disable counting status registration, effectively allowing duplicate item and dimension combinations to be placed in multiple active counting journals, follow these steps.
+To disable counting status registration, effectively allowing duplicate item and dimension combinations to be placed in multiple active counting journals, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Journal names** \> **Inventory**.
 1. Select or create a journal name with a **Journal type** of *Counting*.

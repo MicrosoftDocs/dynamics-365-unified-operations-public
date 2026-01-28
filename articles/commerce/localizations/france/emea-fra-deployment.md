@@ -80,7 +80,7 @@ The **DigitalSignatureKeyVaultSample** project contains sample code that uses a 
     SecretCertificate secretCertificate = settingsHelper.SecretProvider.GetSecret("vault:///{Specify the secret reference}") as SecretCertificate;
     ```
 
-To override the signing flow, follow these steps.
+To override the signing flow, follow these steps:
 
 1. Build the **DigitalSignatureKeyVaultSample** project, and copy the **Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** assembly to the **bin\\ext** Retail Server folder.
 2. Update the **commerceRuntime.ext.config** file by adding the following line to the **composition** section.
@@ -96,7 +96,7 @@ To override the signing flow, follow these steps.
 
 In Commerce version 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](../global/certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../../dev-itpro/manage-secrets.md) feature.
 
-To apply the new feature in the CRT extension, follow these steps.
+To apply the new feature in the CRT extension, follow these steps:
 
 1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail software development kit (SDK) (RetailSDK\SampleExtensions\CommerceRuntime).
 2. Add custom handler for CertificateSignatureServiceRequest in the SequentialSignatureRegister project.

@@ -19,7 +19,7 @@ This article describes how to use an inventory blocking to prevent physical on-h
 
 ## Block inventory
 
-To create an inventory blocking record so that inventory is blocked, follow these steps.
+To create an inventory blocking record so that inventory is blocked, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Inventory blocking**.
 1. On the Action Pane, select **New**.
@@ -30,7 +30,7 @@ To create an inventory blocking record so that inventory is blocked, follow thes
 
 ## Update the conditions of the inventory blocking
 
-To update an inventory blocking record, follow these steps.
+To update an inventory blocking record, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Inventory blocking**.
 1. In the list pane, select the relevant blocking record.
@@ -39,7 +39,7 @@ To update an inventory blocking record, follow these steps.
 
 ## Unblock inventory
 
-To remove an inventory blocking record so that inventory is unblocked, follow these steps.
+To remove an inventory blocking record so that inventory is unblocked, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Inventory blocking**.
 1. In the list pane, select the relevant blocking record.

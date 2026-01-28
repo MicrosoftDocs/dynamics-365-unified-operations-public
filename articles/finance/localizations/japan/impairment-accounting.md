@@ -25,7 +25,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Set up impairment parameters
 
-To set up impairment parameters, follow these steps.
+To set up impairment parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed assets parameters**.
 1. Expand the **Impairment management** section.
@@ -37,7 +37,7 @@ To set up impairment parameters, follow these steps.
 
 ## Set up a posting profile
 
-To set up a posting profile, follow these steps.
+To set up a posting profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset posting profiles**.
 1. Select **Edit**.

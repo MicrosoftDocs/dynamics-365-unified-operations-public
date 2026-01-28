@@ -100,7 +100,7 @@ Query-based firming lets you plan firming based on criteria that are defined in 
 
 You can combine auto-firming with query-based firming. For example, a query-based firming job has a forward time fence that is longer than the time fence for a matching auto-firming coverage configuration. Therefore, the query-based firming job will process its planned orders before the auto-firming is triggered. You can take advantage of this behavior to schedule orders for specific vendors differently than orders for similar products from other vendors.
 
-To firm a planned order by using the query-based firming process, follow these steps.
+To firm a planned order by using the query-based firming process, follow these steps:
 
 1. Go to **Master-planning \> Master planning \> Run \> Planned order firming**.
 1. In the **Planned order firming** dialog box, on the **Parameters** FastTab, set the basic processing, marking, and grouping options. These options work just as they do in the **Firming** dialog box. (See the previous section for descriptions.) Then, in the **Plan** section, set the following fields that are unique to the **Planned order firming** dialog box:
@@ -127,7 +127,7 @@ To firm a planned order by using the query-based firming process, follow these s
 
 ## Track firmed orders
 
-To track a planned order that was firmed, follow these steps.
+To track a planned order that was firmed, follow these steps:
 
 1. [Open any planned orders list page](approved-planned-order.md#view-planned-orders).
 1. Open or select the planned order that you want to track.

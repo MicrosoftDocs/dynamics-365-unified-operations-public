@@ -23,7 +23,7 @@ The following procedure was created using the demo data company FRSI.
 
 The functionality described is available for legal entities whose primary address is in France. To perform this procedure you should have a role of Accounts receivables manager.
 
-To set up methods of payment, follow these steps.
+To set up methods of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Methods of payment**.
 1. Select **New**.

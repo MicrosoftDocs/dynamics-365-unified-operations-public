@@ -54,7 +54,7 @@ A reporting tree definition contains the columns that are described in the follo
 | Unit Security         | Restrictions on the users and groups that can access the information for the reporting unit. |
 | Additional Text       | Text that is included on the report. |
 
-To create a reporting tree definition, follow these steps.
+To create a reporting tree definition, follow these steps:
 
 1. Open Report Designer.
 2. Click **File** &gt; **New** &gt; **Reporting Tree Definition**.

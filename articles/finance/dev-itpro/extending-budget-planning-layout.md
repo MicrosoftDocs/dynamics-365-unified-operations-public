@@ -54,7 +54,7 @@ To add columns to the BudgetPlanWorksheetEntity entity, follow these follow step
 
 ### Step 3: Create an extension for the BudgetPlan form
 
-To update the **BudgetPlan** form so that it includes the new columns, follow these steps.
+To update the **BudgetPlan** form so that it includes the new columns, follow these steps:
 
 1. Create an extension on the **BudgetPlan** form.
 2. Replicate any events or customizations in a new event handler that exists on the **TransactionCurrencyAmount**, or **Quantity** fields, onto the new fields. The following example shows the standard events that currently exist for both **CurrencyAmount** and **Quantity**. These events must be created for anything beyond the original 36 **CurrencyAmount** and **Quantity** values.

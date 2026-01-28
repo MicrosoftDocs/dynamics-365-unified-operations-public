@@ -49,7 +49,7 @@ To use Apple Pay, you must also enable the **Enable single payment authorization
 
 Apple Pay is a digital wallet payment method. For information about how to set up payment mapping for Apple Pay, see [Wallet payment support](../wallets.md).
 
-To map the Apple Pay payment method in Commerce headquarters, follow these steps.
+To map the Apple Pay payment method in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Select **New** to add a line for Apple Pay, and set the following values:
@@ -68,7 +68,7 @@ To map the Apple Pay payment method in Commerce headquarters, follow these steps
 
 For each site, you must upload the domain association file (also known as the Apple Pay certificate) as described in the [Adyen Apple Pay documentation](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live). You can use Commerce site builder to upload the domain association file to the Media Library for your site.
 
-To set up the Apple Pay certificate in site builder, follow these steps.
+To set up the Apple Pay certificate in site builder, follow these steps:
 
 1. Download the certificate (domain association file) from [Adyen](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live).
 1. Add the .txt extension to the domain association file.
@@ -85,7 +85,7 @@ At this point, the URL that you created is in a draft state. To complete the pro
 
 ## Configure a Commerce online store for Apple Pay
 
-To configure a Commerce online store for Apple Pay, follow these steps.
+To configure a Commerce online store for Apple Pay, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select the **Retail Channel ID** value of your site's online store channel.
@@ -108,7 +108,7 @@ To configure a Commerce online store for Apple Pay, follow these steps.
 
 #### Add Apple Pay to the store payment method
 
-To add Apple Pay as a new payment method in Commerce headquarters, follow these steps.
+To add Apple Pay as a new payment method in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods**.
 1. Select **New**.
@@ -134,7 +134,7 @@ To add Apple Pay as a new payment method in Commerce headquarters, follow these 
 
 Before you configure your fragments or pages to use Apple Pay, you must configure the content security policies (CSPs) in site builder for your site.
 
-To configure content security policies in site builder, follow these steps.
+To configure content security policies in site builder, follow these steps:
 
 1. Go to **Site Settings \> Extensions**.
 1. On the **Content security policy** tab, select **Add** to add a line that has `https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js` to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
@@ -146,7 +146,7 @@ To use Apple Pay, you must select the **Enable single payment authorization chec
 
 ### Set up Apple Pay as a checkout payment option
 
-To set up Apple Pay as a checkout payment option on your site's (nonexpress) checkout page, follow these steps.
+To set up Apple Pay as a checkout payment option on your site's (nonexpress) checkout page, follow these steps:
 
 1. In site builder, go to **Fragments**, and select your site's checkout fragment.
 1. Select **Edit**.
@@ -167,7 +167,7 @@ The Commerce payment express module works with supporting payment methods to giv
 
 #### Set up Apple Pay in the checkout page payment express module
 
-To set up Apple Pay in the checkout page payment express module in site builder, follow these steps.
+To set up Apple Pay in the checkout page payment express module in site builder, follow these steps:
 
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
@@ -178,7 +178,7 @@ To set up Apple Pay in the checkout page payment express module in site builder,
 
 #### Set up Apple Pay in the cart page payment express module
 
-To add Apple Pay to the cart page payment express module in site builder, follow these steps.
+To add Apple Pay to the cart page payment express module in site builder, follow these steps:
 
 1. Go to **Pages**, and then select your site's cart page.
 1. Select **Edit**.

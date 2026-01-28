@@ -64,7 +64,7 @@ Time slots must be defined for each pickup mode of delivery in Commerce headquar
 - Each time slot that is created should be unique to each delivery mode in each template.
 - After the time slot feature is configured, the time slot calendar will be available to the selected stores or store groups. It will also be visible at the POS, for reference.
 
-To configure the time slot feature in Commerce headquarters, follow these steps.
+To configure the time slot feature in Commerce headquarters, follow these steps:
 
 1. Go to **Commerce** \> **Channel setup** \> **Store pickup time slot**.
 1. Select **New** to create a new time slot template. To use an existing template, select the template in the left pane.

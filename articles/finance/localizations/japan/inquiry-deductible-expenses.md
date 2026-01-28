@@ -21,7 +21,7 @@ This article explains how to run an inquiry on deductible expenses for Japan in 
 
 The following procedure uses the demo data company JPMF.
 
-To run an inquiry on deductible expenses, follow these steps.
+To run an inquiry on deductible expenses, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Use the Quick Filter to find records. For example, filter on the **Fixed asset number** field with a value of "BUILM-000005".

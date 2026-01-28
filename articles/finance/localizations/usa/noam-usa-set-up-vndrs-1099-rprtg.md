@@ -24,7 +24,7 @@ It's best to complete the following setup steps before you post vendor transacti
 > [!NOTE]
 > Microsoft recommends that you review Internal Revenue Service (IRS) rule changes for the applicable tax year before you set up and process 1099 statements.
 
-To set up vendors for 1099 reporting, follow these steps.
+To set up vendors for 1099 reporting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors** or **Procurement and sourcing \> Common \> Vendors \> All vendors**.
 1. Select a vendor account.
@@ -70,7 +70,7 @@ Because vendors can receive payments that correlate with multiple 1099 boxes, it
 > [!NOTE]
 > The 1099 box and amount can be filled in on the invoice only if the **Report 1099** checkbox on the **Tax 1099** FastTab of the vendor details page is selected.
 
-To associate a 1099 default value with a main account, follow these steps.
+To associate a 1099 default value with a main account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Tax 1099 \> 1099 main account association**.
 1. In the **Main account number** field, select the main account to relate to a 1099 box. You can select only a main account of the **Expense** type.
@@ -84,7 +84,7 @@ You can update the 1099 reporting boxes and amounts for all paid invoices for a 
 > [!Note]
 > This functionality is available only if you're using Public sector.
 
-To update 1099 boxes and amounts, follow these steps.
+To update 1099 boxes and amounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Tax 1099 \> Update 1099 information by main account**.
 1. Select a date range and a vendor, and then select **OK**.

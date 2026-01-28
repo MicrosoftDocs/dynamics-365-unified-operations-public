@@ -25,7 +25,7 @@ The following procedure uses the JPMF demo data company.
 
 Before you complete the procedure, select the **Fixed Asset** configuration key.
 
-To dispose of a fixed asset with reduction entry, follow these steps.
+To dispose of a fixed asset with reduction entry, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

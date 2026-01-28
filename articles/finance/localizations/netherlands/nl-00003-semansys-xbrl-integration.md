@@ -31,7 +31,7 @@ For more information about how to download ER configurations from Microsoft Dyna
 
 The following procedure shows the steps needed for a user to export the data for reporting a 2019 annual report. 
 
-To export the data for reporting a 2019 annual report, follow these steps.
+To export the data for reporting a 2019 annual report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** > **Periodic tasks** > **Export financial data to XBRL**.
 1. In the **From date** field, enter a date. For example, *2019-01-01*.  

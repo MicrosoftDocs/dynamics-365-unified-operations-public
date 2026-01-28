@@ -41,7 +41,7 @@ The following sections describe the setup that you must complete to account for 
 
 Use the **Types of issue and usage rates** page to define the types of issue and usage rates that determine which working clothes and special rigging are issued to employees.
 
-To set up types of issue and usage rates, follow these steps.
+To set up types of issue and usage rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Type of rate**.
 1. In the **Type of rate** field, enter the identification code for the rate type.
@@ -55,7 +55,7 @@ To set up types of issue and usage rates, follow these steps.
 
 Use the **Issue and usage rates** page to define the usage rates for types of rates that determine which working clothes and special rigging items that are issued to employees.
 
-To set up issue and usage rates for items, follow these steps.
+To set up issue and usage rates for items, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Issue and usage rates**.
 1. In the **Type of rate** field, select the identification code for the issue rate.
@@ -90,7 +90,7 @@ Use this procedure to relate an item or an item group to a fixed asset group. Yo
 - **Item relation with FA group** – Map the item to a fixed asset group.
 - **Copy item relations with FA group** – Copy the conditions for the item relation from an existing item relation.
 
-To set up an item relation for working clothes and special rigging items, follow these steps.
+To set up an item relation for working clothes and special rigging items, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Working clothes/Special riggings/NVFA** \> **Identification of FA group**.
 1. Select **New** to create a condition.
@@ -118,7 +118,7 @@ To set up an item relation for working clothes and special rigging items, follow
 
 Use the **Types of works** page to define the types of work that employees do. This information helps you determine the wear or usage period for each working clothes item, or the useful product output or mileage for each special rigging item.
 
-To set up types of work, follow these steps.
+To set up types of work, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Types of works**.
 1. In the **Type of works** field, enter an identification code for the type of work.
@@ -128,7 +128,7 @@ To set up types of work, follow these steps.
 
 Use this procedure to specify the type of work that is done by an employee or worker that a working clothes or special rigging item is issued to.
 
-To set up worker details for working clothes and special rigging items, follow these steps.
+To set up worker details for working clothes and special rigging items, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Human resources** \> **Common** \> **Workers** \> **Workers**.
 1. Select a worker, and then, on the **Action Pane**, select **Edit**.
@@ -138,7 +138,7 @@ To set up worker details for working clothes and special rigging items, follow t
 
 Use this procedure to manually register and manage special rigging items.
 
-To manually register special rigging items, follow these steps.
+To manually register special rigging items, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Special rigging**.
 1. Select **New** to create a new special rigging item, or double-click an existing special rigging item.
@@ -159,7 +159,7 @@ To manually register special rigging items, follow these steps.
 
 Use this procedure to manually register and manage working clothes items.
 
-To manually register working clothes items, follow these steps.
+To manually register working clothes items, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Working clothes**.
 1. Select **New** to create a new working clothes item, or double-click an existing working clothes item.
@@ -198,7 +198,7 @@ When used working clothes or special rigging items are issued, if the serial num
 > [!NOTE]
 > For an issue or reissue transaction, when the journal is posted, fixed asset journals are automatically created and posted. These fixed asset journals contain transactions for putting the asset into operation, depreciation transactions, and writing-off transactions.
 
-To create a working clothes or special rigging issue journal, follow these steps.
+To create a working clothes or special rigging issue journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **Working clothes/Special rigging/NVFA issue**.
 1. Create a journal.
@@ -238,7 +238,7 @@ To reverse the issue of the working clothes or special rigging item, on the **Wo
 
 ## Return working clothes or special rigging items to a warehouse
 
-To return working clothes or special rigging items to a warehouse, follow these steps.
+To return working clothes or special rigging items to a warehouse, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Working clothes**.
 

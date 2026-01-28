@@ -167,7 +167,7 @@ When a document is submitted for processing, a workflow instance is created. You
 
 ## Enter comments about the changes that you made to the workflow
 
-To enter comments about the changes that you made to the workflow, follow these steps.
+To enter comments about the changes that you made to the workflow, follow these steps:
 
 1. In the left pane, click **Notes**.
 2. In the **Enter comments about the workflow** field, enter your comments.

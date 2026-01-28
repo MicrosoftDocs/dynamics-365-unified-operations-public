@@ -41,7 +41,7 @@ You can specify whether each fund should reduce the carry-forward budget when an
 
 ## Configure the carry-forward budget options for each fund
 
-For each general ledger fund that reduces the carry-forward budget when a purchase order or invoice is reduced, follow these steps.
+For each general ledger fund that reduces the carry-forward budget when a purchase order or invoice is reduced, follow these steps:
 
 1. Go to **General ledger \> Chart of accounts \> Funds \> Funds**.
 2. Select the fund that you want to set up.

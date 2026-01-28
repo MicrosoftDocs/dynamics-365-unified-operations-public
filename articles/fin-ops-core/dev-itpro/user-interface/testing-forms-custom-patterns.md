@@ -51,7 +51,7 @@ You can find the forms that use custom patterns by using the **Form Patterns** r
 
 ### Steps
 
-Follow these steps. At each step, examine your form for layout issues. As part of your examination, look at all tab pages, and any groups that can expand/collapse content.
+follow these steps: At each step, examine your form for layout issues. As part of your examination, look at all tab pages, and any groups that can expand/collapse content.
 
 1.  Open a browser window at full-screen size, and navigate to your form/control (in low density). It's a good idea to starting your testing at a resolution of 1366 × 768.
 2.  Press the Windows logo key+Left Arrow to switch the browser window to Snap view (half the screen).

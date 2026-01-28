@@ -56,7 +56,7 @@ The sales order and billing schedule for 2022 aren't affected, and the unit pric
 
 When you update prices for items that use the flat pricing method, you can specify a percentage or amount to increase the price.
 
-To run the Price update utility for items that use the flat pricing method, follow these steps.
+To run the Price update utility for items that use the flat pricing method, follow these steps:
 
 1. On the **Price update** utility page, select the **Flat** pricing method.
 2. In the **Increase method** field, select the increase method that is used to update the price of the items.
@@ -84,7 +84,7 @@ To put just one billing schedule or one billing schedule line on hold, open the 
 
 ### Put billing schedules on hold
 
-To put a hold on several billing schedules, follow these steps.
+To put a hold on several billing schedules, follow these steps:
 
 1. On the **Mass hold** page, set the **Process option** field to **Apply hold**.
 2. In the **Reason code** field, select a reason code.
@@ -150,7 +150,7 @@ After a billing schedule has been archived, the following events occur:
 > [!NOTE]
 > Archiving of a billing schedule is a permanent action and can't be reversed.
 
-To archive billing schedules, follow these steps.
+To archive billing schedules, follow these steps:
 
 1. On the **Mass archive** page, in the **Billing end date** field, specify a billing end date. To view all terminated billing schedules, leave this field blank.
 2. On the **Records to include** FastTab, use the **Filter** button to limit the records that are shown.
@@ -207,7 +207,7 @@ The **Journal name** field is used to post **Create journal entry** to the gener
 
 A billing schedule is set up for one year, from October 2021 through September 2022. The unbilled revenue was already processed in an external system. Nine months of the billing schedule have already been billed. The amount for each billing period is $250. At the beginning of the year, the total amount that has been posted to unbilled revenue is $3,000. After nine months, $2,250 has already been billed, and $750 in unbilled revenue remains.
 
-To set up the billing schedule where only three months' worth of unbilled revenue remains, follow these steps.
+To set up the billing schedule where only three months' worth of unbilled revenue remains, follow these steps:
 
 1. On the **View billing detail** page, create a billing schedule for the period from October 2021 through September 2022, item number S0001, and an amount of $250 per month.
 2. Select **Create journal entry** for the billing schedule. The amount of $3,000 is posted to unbilled revenue.

@@ -29,7 +29,7 @@ Electronic invoicing feature versions follow a lifecycle that has up to three st
 
 You can specify an **Effective from** date for any new version of an Electronic invoicing feature. In this way, you can define a default version that can be used, or a version that can be overwritten, when the feature is deployed to the service environment.
 
-To change the status of an Electronic invoicing feature version, follow these steps.
+To change the status of an Electronic invoicing feature version, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. On the left side of the **Electronic invoicing features** page, select the Electronic invoicing feature.
@@ -55,7 +55,7 @@ You can select **Cancel deployment** to remove a specific version of an Electron
 
 When one Electronic invoicing feature is derived from another, you can select **Rebase** to update the derived feature with the changes that have been made in the original (parent) feature.
 
-To rebase a derived version of a feature that you created, follow these steps.
+To rebase a derived version of a feature that you created, follow these steps:
 
 1. Get the latest version of the feature by importing it from the Global repository. For more information, see [Import features from the repository](gs-e-invoicing-import-feature-global-repository.md).
 1. In the list of features, select the feature to rebase.

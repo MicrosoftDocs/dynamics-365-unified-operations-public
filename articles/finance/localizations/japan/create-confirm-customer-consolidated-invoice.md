@@ -23,7 +23,7 @@ In Japan, sales and purchase invoices during the month are consolidated at the e
 
 To complete the following procedure, you must post the sales or purchase invoices before running this task. The procedure uses the JPMF demo company data.
 
-To create and confirm a customer consolidated invoice, follow these steps.
+To create and confirm a customer consolidated invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
 1. Select **New**.

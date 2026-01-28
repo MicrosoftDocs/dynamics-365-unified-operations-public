@@ -27,7 +27,7 @@ There are two methods for creating a preset layout. You can save an existing cus
 
 ### Create a preset layout from an existing custom layout
 
-To create a preset layout from an existing custom layout, follow these steps.
+To create a preset layout from an existing custom layout, follow these steps:
 
 1. Open an existing page that doesn't currently use a preset layout, and that has a module structure that you want to reuse for other pages on your site.
 1. Select **Edit** to check out the page.
@@ -42,7 +42,7 @@ The preset layout will now be available when you create new pages or select a di
 
 ### Create a new preset layout
 
-To create a preset layout from scratch, follow these steps.
+To create a preset layout from scratch, follow these steps:
 
 1. In the navigation pane on the left, select **Layouts**.
 1. Select **New Layout**. The **New layout** dialog box appears.
@@ -53,7 +53,7 @@ To create a preset layout from scratch, follow these steps.
 
 ## Modify a preset layout
 
-To modify a preset layout, follow these steps.
+To modify a preset layout, follow these steps:
 
 1. In the navigation pane on the left, select **Layouts**.
 1. In the layout editor, in the outline tree on the left, select the module to modify. Then follow any of these steps:
@@ -67,14 +67,14 @@ To modify a preset layout, follow these steps.
 
 A typical practice is to set a default theme for all pages that use a preset layout.
 
-To set or change the theme for all child pages that use your preset layout, follow these steps.
+To set or change the theme for all child pages that use your preset layout, follow these steps:
 
 1. In the layout editor, in the outline tree on the left, select the page container module. (Typically, this module is the second node and is named **Default page**.)
 1. In the **Theme** field of the properties pane on the right, select a theme.
 
 ## Save, check in, preview, and publish a preset layout
 
-To save and check in your preset layout, follow these steps.
+To save and check in your preset layout, follow these steps:
 
 1. Select **Save** at the top of the layout editor. Saved changes don't affect downstream pages until they are checked in.
 1. Select **Finish editing**. Your changes are now discoverable for downstream workflows.
@@ -92,7 +92,7 @@ After you've previewed the changes to your preset layout, follow one of these st
 
 ## Rename a preset layout
 
-To rename a preset layout in site builder, follow these steps.
+To rename a preset layout in site builder, follow these steps:
 
 1. In the left navigation pane, select **Layouts**.
 1. Select the layout name of the layout you want to rename.

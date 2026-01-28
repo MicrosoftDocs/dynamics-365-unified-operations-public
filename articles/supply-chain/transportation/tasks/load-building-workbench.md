@@ -28,7 +28,7 @@ A load building strategy class named `TMSLoadBuildingVolumeStrategy` provides a 
 
 To use the out-of-box *Volume-based load building strategy* strategy, select it in the **Load building strategy** field on the **Load building workbench** page (**Transportation management &gt; Planning &gt; Load building workbench**).
 
-To create a load building strategy, follow these steps.
+To create a load building strategy, follow these steps:
 
 1. Go to **Transportation management &gt; Setup &gt; Load building &gt; Load building strategies**.
 1. On the Action Pane, select **Generate class list** to make sure that you have the latest versions of all available classes.

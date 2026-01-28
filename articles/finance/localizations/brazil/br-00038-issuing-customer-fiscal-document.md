@@ -22,7 +22,7 @@ You can issue a fiscal document for a customer who bought goods from the fiscal 
 
 The following procedure uses the BRMF demo company.
 
-To issue customer fiscal documents, follow these steps.
+To issue customer fiscal documents, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New**.

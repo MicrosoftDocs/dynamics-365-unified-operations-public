@@ -27,7 +27,7 @@ Before you complete the procedures, you must first select the **Fixed Asset** co
 
 ## Configure ledger accounts for asset retirement obligation posting
 
-To configure ledger accounts for asset retirement obligation posting, follow these steps.
+To configure ledger accounts for asset retirement obligation posting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset posting profiles**.
 1. Expand the **Asset retirement obligation** section.
@@ -49,7 +49,7 @@ To configure ledger accounts for asset retirement obligation posting, follow the
 
 ## Configure market discount rates
 
-To configure market discount rates, follow these steps.
+To configure market discount rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Cashflow discount rates**.
 1. Select **New**.

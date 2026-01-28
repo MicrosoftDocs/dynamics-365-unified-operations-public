@@ -20,14 +20,14 @@ This article explains how to create credit note corrections in accounts receivab
 
 ## Set up negative amount transactions as corrections
 
-To set up negative amount transactions as corrections, follow these steps.
+To set up negative amount transactions as corrections, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Ledger** tab, on the **Accounting rules** FastTab, set the **Correction** option to **Yes**. Transactions that have negative amounts can now be posted as corrections in the general ledger.
 
 ## Set up credit notes as corrections
 
-To set up credit notes as corrections, follow these steps.
+To set up credit notes as corrections, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Updates** tab, on the **Invoice** FastTab, set the **Credit note as correction** option to **Yes**.
@@ -36,7 +36,7 @@ To set up credit notes as corrections, follow these steps.
 
 ## Set up the amount sign for a printed invoice
 
-To set up the amount sign for a printed invoice, follow these steps.
+To set up the amount sign for a printed invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**, or go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
 1. On the **Invoice** tab, in the **Credit notes print** field, select a value. This field controls the amount sign in the printable form of the invoice.
@@ -50,7 +50,7 @@ To set up the amount sign for a printed invoice, follow these steps.
 
 You can create and post free text invoices as credit corrections for return item transactions. Use the following procedure to correct a free text invoice that has both positive and negative invoice amounts.
 
-To post free text invoices as credit corrections, follow these steps.
+To post free text invoices as credit corrections, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select an existing free text invoice for an item that was returned.

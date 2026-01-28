@@ -25,7 +25,7 @@ When you settle advance payments and advance reports that include transactions t
 
 ## Set up advance adjustment parameters for advance holders
 
-To set up advance adjustment parameters for advance holders, follow these steps.
+To set up advance adjustment parameters for advance holders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **Advance adjustment parameters**.
 1. On the **Purchases/Advance holders** FastTab, in the **Ledger posting** field, select the type of ledger posting:
@@ -48,7 +48,7 @@ To set up advance adjustment parameters for advance holders, follow these steps.
 
 ## Calculate the exchange rate adjustment for advance holders
 
-To calculate the exchange rate adjustment for advance holders, follow these steps.
+To calculate the exchange rate adjustment for advance holders, follow these steps:
 
 1. In Dynamics 365 Finance, go to ***Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Foreign currency revaluation**.
 1. Select **Foreign currency revaluation** to open the **Foreign currency revaluation** dialog.

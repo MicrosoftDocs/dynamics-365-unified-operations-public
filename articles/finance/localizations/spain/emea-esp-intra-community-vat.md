@@ -26,7 +26,7 @@ Information about the intracommunity value-added tax (VAT) can be calculated and
 
 Before you can use the intracommunity VAT functionality, you must enable it.
 
-To enable the intracommunity VAT functionality, follow these steps.
+To enable the intracommunity VAT functionality, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Accounts payable parameters** page (**Accounts payable** \> **Setup** \> **Accounts payable parameters**).
 1. Select the **Ledger and sales tax** tab.
@@ -40,14 +40,14 @@ To calculate intracommunity VAT for purchase transactions, select the **Intra-co
 
 ## Print intracommunity VAT on a purchase invoice
 
-To print the intracommunity VAT on a purchase invoice, follow these steps. 
+To print the intracommunity VAT on a purchase invoice, follow these steps: 
 
 1. In Dynamics 365 Finance, go to the **Form setup** page (**Accounts payable** \> **Setup** \> **Forms** \> **Form setup**).
 1. On the **Invoice** tab, enable the **Print EU sales tax on Spanish invoices** option.
 
 ## Print invoices that have intracommunity VAT amounts
 
-To print purchase invoices and intracommunity invoices that have intracommunity VAT amounts, follow these steps. 
+To print purchase invoices and intracommunity invoices that have intracommunity VAT amounts, follow these steps: 
 
 1. In Dynamics 365 Finance, go to the vendor invoice page.
 1. On the **Process** tab, select **Print setup** \> **Print options**.
@@ -58,7 +58,7 @@ To print purchase invoices and intracommunity invoices that have intracommunity 
 
 ## Review posted intracommunity VAT amounts
 
-To review posted intracommunity VAT amounts, follow these steps.
+To review posted intracommunity VAT amounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Posted sales tax**.
 1. Run the **Posted sales tax** query.

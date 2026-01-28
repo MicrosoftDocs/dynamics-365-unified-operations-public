@@ -57,7 +57,7 @@ For finance and operations apps, you must register discounts through X++ extensi
 
 By default, the Commerce pricing engine applies prices and discounts based on the date when sales transaction occurs. Usually, this date is "today."
 
-To override the default behavior, follow these steps.
+To override the default behavior, follow these steps:
 
 1. Add a pretrigger to CalculatePricesServiceRequest, and update its `DateWhenActive` value to the date when the calculation should occur.
 1. Add a pretrigger to CalculateDiscountsServiceRequest, and update its `DateWhenActive` value to the date when the calculation should occur.

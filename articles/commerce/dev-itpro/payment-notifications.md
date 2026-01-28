@@ -1,5 +1,5 @@
 ---
-title: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen (preview)
+title: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen
 description: Learn how to receive critical payment notifications in Microsoft Dynamics 365 Commerce headquarters using the Dynamics 365 Payment Connector for Adyen.
 author: shajain
 ms.date: 11/24/2025
@@ -12,10 +12,9 @@ ms.author: shajain
 ms.search.validFrom: 2025-11-15
 ---
 
-# Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen (preview)
+# Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to receive critical payment notifications in Microsoft Dynamics 365 Commerce headquarters using the Dynamics 365 Payment Connector for Adyen.
 

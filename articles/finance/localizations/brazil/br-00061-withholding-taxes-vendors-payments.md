@@ -23,7 +23,7 @@ You can use the Journal voucher page to enter and post payments that you make to
 
 The following procedure uses the BRMF demo company.
 
-To use the Journal voucher page to enter and post payments you make to a vendor, follow these steps.
+To use the Journal voucher page to enter and post payments you make to a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the list, find and select the desired record.

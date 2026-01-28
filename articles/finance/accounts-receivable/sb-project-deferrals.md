@@ -39,7 +39,7 @@ A project group option for **Deferred** has been added to the **Post costs** opt
 
 ## Create project transactions with deferrals
 
-To create a deferral schedule from a time and material project, follow these steps.
+To create a deferral schedule from a time and material project, follow these steps:
 
 If you're using billing rules:
 1. On the **All projects** page, select a project.
@@ -67,7 +67,7 @@ The **All deferral schedules** page displays the newly created deferral schedule
 
 ## View a deferral schedule from a project or a project contract
 
-To view a deferral for a project transaction, follow these steps.
+To view a deferral for a project transaction, follow these steps:
 
 1. In the project or project contract, select **Posted transactions**.
 2. Select the project transaction.

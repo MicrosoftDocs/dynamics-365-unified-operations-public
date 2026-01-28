@@ -47,7 +47,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs, tax codes, and ledger accounts used in the transactions shown on the report.
 
-After you meet the previously listed prerequisites, follow these steps.
+After you meet the previously listed prerequisites, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. In the tree on the left, select **LTM Tax Report** \> **File format 1003** or **LTM Tax Report** \> **File format 1003 Excel**.

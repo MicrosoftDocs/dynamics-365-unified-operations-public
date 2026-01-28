@@ -23,7 +23,7 @@ In Japan, the Japanese Bankers Association (JBA) file format is commonly used fo
 
 The following procedure uses the JPMF demo company data.
 
-To generate an EFT file with the JBA file format, follow these steps.
+To generate an EFT file with the JBA file format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payments \> Payment journal**.
 1. Select **New**.

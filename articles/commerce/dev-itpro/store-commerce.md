@@ -232,14 +232,14 @@ You can also use the **help** command in PowerShell to find information about al
 
 ### Uninstall Store Commerce
 
-To uninstall the Store Commerce application from a device, follow these steps.
+To uninstall the Store Commerce application from a device, follow these steps:
 
 1. Open PowerShell in administrator mode and navigate to the folder where you downloaded the Store Commerce installer executable.
 1. In PowerShell, find the Store Commerce installer executable and pass the `StoreCommerce.Installer.exe uninstall` parameter to uninstall the app. When executed, this command runs immediately and doesn't provide a confirmation dialog before uninstalling Store Commerce.
 
 ### Activate Store Commerce
 
-To activate Store Commerce after installation, follow these steps.
+To activate Store Commerce after installation, follow these steps:
 
 1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application. 
     > [!NOTE]
@@ -270,7 +270,7 @@ Microsoft recommends that you explicitly manage the WebView2 version that is use
 
 ### Manage WebView2 versions
 
-To manage WebView2 versions, follow these steps.
+To manage WebView2 versions, follow these steps:
 
 1. Disable automatic WebView2 updates via Group Policy or registry keys. 
 1. Use the standalone installer to install a specific version of the WebView2 control.

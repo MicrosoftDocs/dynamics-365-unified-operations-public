@@ -27,7 +27,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Create a depreciation profile
 
-To create a depreciation profile, follow these steps.
+To create a depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
 1. Select **New**.
@@ -39,7 +39,7 @@ To create a depreciation profile, follow these steps.
 
 ## Assign the depreciation profile to a book
 
-To assign the depreciation profile to a book, follow these steps.
+To assign the depreciation profile to a book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Books**.
 1. Select the book for which you want to assign the accelerated depreciation profile.

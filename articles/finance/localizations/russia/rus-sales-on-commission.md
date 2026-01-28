@@ -37,7 +37,7 @@ The following illustration shows the business process for registering intermedia
 
 ## Create a purchase agreement for a sale by a commissioner
 
-To create a purchase agreement for a sale by a commissioner, follow these steps.
+To create a purchase agreement for a sale by a commissioner, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **Purchase agreements** or **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**.
 1. Select **New** to open the **Create purchase agreement** dialog.
@@ -60,7 +60,7 @@ To create a purchase agreement for a sale by a commissioner, follow these steps.
 
 ## Create inventory owners (principals)
 
-To create inventory owners (principals), follow these steps.
+To create inventory owners (principals), follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory owners**.
 1. Select **New** to create an inventory owner.
@@ -72,7 +72,7 @@ To create inventory owners (principals), follow these steps.
 
 ## Create a purchase order and generate a purchase invoice
 
-To create a purchase order and generate a purchase invoice, follow these steps.
+To create a purchase order and generate a purchase invoice, follow these steps:
 
 1. Create a purchase order.
 1. In the **Purchase agreement** field, select the agreement for a sale by the commissioner that you created earlier.
@@ -90,7 +90,7 @@ To create a purchase order and generate a purchase invoice, follow these steps.
 
 ## Create a sales order and update the facture
 
-To create a sales order and update the facture, follow these steps.
+To create a sales order and update the facture, follow these steps:
 
 1. Create a sales order.
 1. On sales order line, select the item number.
@@ -108,7 +108,7 @@ To create a sales order and update the facture, follow these steps.
 
 ## Create and print a report for a principal, and reissue the buyer's factures to the principal
 
-To create and print a report for a principal, and reissue the buyer's factures to the principal, follow these steps.
+To create and print a report for a principal, and reissue the buyer's factures to the principal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Commission trade** \> **Report for principal**.
 1. Select **New** to open the **Create report for principal** dialog.
@@ -152,7 +152,7 @@ When you print a report for a principal, the report for the principal has two se
 
 The approved lines of the report for the principal are registered on the **Received** worksheet of the facture accounting journal. The information reflects the information about the principal in the original factures on the **Issued** worksheet of the facture accounting journal.
 
-To print a facture accounting journal, follow these steps.
+To print a facture accounting journal, follow these steps:
 
 1. To print the facture accounting journal, go to **General ledger** \> **Inquiries and reports** \> **Journal reports** \> **Facture accounting journal** to open the **Facture accounting journal** dialog.
 1. Specify the period for the report, and then select **OK** to print the facture accounting journal.
@@ -172,7 +172,7 @@ factures that are confirmed by the principal.
 
 The amount of prepayment that is received from the customer can be allocated among different principals. The payment sum can also be edited. The system makes sure that the amount that is allocated among principals doesn't exceed the original prepayment. The remaining prepayment amount can be allocated to another principal or to the same principal on another principal report. No VAT transactions will be posted in the general ledger, in spite of the vendor prepayment facture that is created.
 
-To create prepayments, a sales order, a purchase order, and a report for a principal, follow these steps.
+To create prepayments, a sales order, a purchase order, and a report for a principal, follow these steps:
 
 1. On the **Customer payment journal** page, create a customer prepayment, and then select **Lines**.
 1. On the **Customer payments** page, in the **Kind of activity** column, select **Commission agent** to indicate that the prepayment is subject to transfer to the principal.
@@ -203,7 +203,7 @@ To create prepayments, a sales order, a purchase order, and a report for a princ
 
 ### Create a prepayment facture
 
-To create a prepayment facture, follow these steps.
+To create a prepayment facture, follow these steps:
 
 1. On the **Report for principal** page, on the **Prepayments** tab, select the **Approve** checkbox, and then select **Create facture** to register a principal's facture on the prepayment.
 1. On the **Create prepayment facture** page, select **Select** to open the **Select prepayments** dialog.
@@ -236,7 +236,7 @@ You can register approved lines on the **Facture accounting journal** page and p
 
 ## Review the owner assigned to an agreement
 
-To review the owner assigned to an agreement, follow these steps.
+To review the owner assigned to an agreement, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> Purchase agreements** or **Procurement and sourcing \> Purchase agreements \> Purchase agreements**.
 1. Select the agreement, and then, on the Action Pane, on the **Purchase agreement** tab, in the **Setup** group, select **Inventory owners** to review the owner that is assigned to the agreement.

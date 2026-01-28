@@ -517,7 +517,7 @@ The mandatory **Item type** property of the **Data collection** data source spec
 
 By default, a **Data collection** data source collects only unique values. To access the list of collected values, use the **Result** property of a **Data collection** data source. This property returns a [record list](er-formula-supported-data-types-composite.md#record-list). The records of the record list contain the **Value** field that you can use to access collected values.
 
-To force a data source of the *Data collection* type to collect **all** values, follow these steps.
+To force a data source of the *Data collection* type to collect **all** values, follow these steps:
 
 1. Select one of the following data types for the **Item type** property: *Int64*, *Integer*, or *Real*.
 1. Set the **Collect all values** option of the configured **Data collection** data source to **Yes**.

@@ -25,7 +25,7 @@ This article describes how to configure a worker as a sales representative who i
 > - Workers can be assigned to one or more sales groups. In POS, you can choose any sales group that contains workers from the store's address book.
 > - A sales group can contain more than one worker. Commissions can be split between workers based on how you define the commission share.
 
-To create a commission sales group for a worker, follow these steps.
+To create a commission sales group for a worker, follow these steps:
 
 1. In Commerce headquarters, go to **Sales and marketing \> Commissions \> Sales groups**. 
 2. Select **New**.
@@ -44,7 +44,7 @@ To create a commission sales group for a worker, follow these steps.
 > [!NOTE]
 > A worker can be assigned to a default sales group. The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.
 
-To assign workers to a default sales group, follow these steps.
+To assign workers to a default sales group, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Employees \> Workers**.
 2. In the list, find and select the desired record.

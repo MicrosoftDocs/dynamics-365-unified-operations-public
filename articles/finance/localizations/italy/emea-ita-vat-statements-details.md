@@ -38,7 +38,7 @@ In parameters of the **Accounts receivable**, **Accounts payable**, and **Projec
 
 ### Accounts receivable parameters
 
-To set up number sequence groups in Accounts receivable parameters, follow these steps.
+To set up number sequence groups in Accounts receivable parameters, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Number sequence** tab, in the **Reference** column, select **Free text invoice**.
@@ -48,7 +48,7 @@ To set up number sequence groups in Accounts receivable parameters, follow these
 
 ### Accounts payable parameters
 
-To set up number sequence groups in Accounts payable parameters, follow these steps.
+To set up number sequence groups in Accounts payable parameters, follow these steps:
 
 1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 2. On the **Number sequence** tab, in the **Reference** column, select **Internal invoice**.
@@ -58,7 +58,7 @@ To set up number sequence groups in Accounts payable parameters, follow these st
 
 ### Project management and accounting parameters
 
-To set up number sequence groups in Project management and accounting parameters, follow these steps.
+To set up number sequence groups in Project management and accounting parameters, follow these steps:
 
 1. Go to **Project management and accounting** \> **Setup** \> **Project management and accounting parameters**.
 2. On the **Number sequence** tab, in the **Reference** column, select **Invoice voucher**.
@@ -114,7 +114,7 @@ The Italian localization doesn't support corrections to the Italian sales tax pa
 
 ## Sales tax authority
 
-To set up a sales tax authority, follow these steps.
+To set up a sales tax authority, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 2. Select **New** to create a record, and specify the parameters of the tax authority. For more information, see [Set up sales tax authorities](../../general-ledger/tasks/set-up-sales-tax-authorities.md).
@@ -128,7 +128,7 @@ To set up a sales tax authority, follow these steps.
 
 According to Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You're required to report whether the settlement refers to the last period of the fiscal year. To determine whether the settlement period refers to a year closing, view the settlement period status.
 
-To set up sales tax settlement periods, follow these steps.
+To set up sales tax settlement periods, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 2. Select **New** to create a record, and specify the parameters of the sales tax settlement period. For more information, see [Set up sales tax settlement periods](../../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).

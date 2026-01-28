@@ -34,7 +34,7 @@ You must define a quality association for each variation in a business process t
 Most of the features that are described in this article are available as a standard part of all current versions of Supply Chain Management. However, if you want to set up quality associations for sales returns and transfer orders, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -118,8 +118,8 @@ Follow these steps to create a quality association:
         - *Create item sampling work only* – Uses a minimal quality process that creates quality item sampling work but doesn't create quality orders or inventory blocking. This option only applies when the **Applicable warehouse type** is set to *Quality order for warehouse processes only*.
 
 1. On the **Specifications** FastTab, make the following settings:
-    - **Test group** – Select a test group with tests defined for acceptance sampling or sample management. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
-    - **Item sampling** – Select an item sampling defined for acceptance sampling or sample management. Learn more in [Acceptance sampling (preview)](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+    - **Test group** – Select a test group with tests defined for acceptance sampling or sample management. Learn more in [Acceptance sampling](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
+    - **Item sampling** – Select an item sampling defined for acceptance sampling or sample management. Learn more in [Acceptance sampling](quality-acceptance-sampling.md) and [Enable and configure sample management (preview)](quality-sample-management-admin.md).
     - **Acceptable quality level** – Choose the acceptable quality level (AQL) to be used for the quality association. The AQL determines whether the quality order passes or fails validation.
     - **Flexible sampling** – Choose whether to use the flexible sampling plans as part of this quality association.
     - **Flexible sampling plan code** – If **Flexible sampling** is set to *Yes*, then select a flexible sampling plan code.

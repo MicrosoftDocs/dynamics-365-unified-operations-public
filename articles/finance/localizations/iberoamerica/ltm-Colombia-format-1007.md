@@ -58,11 +58,11 @@ After you meet the prerequisites and configure the tax application codes, follow
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting** and select **Reporting configuration**.
 1. On the left, select **LTM Tax Report** \> **File format 1007**.
 1. On the Action Pane, select **Configurations** \> **Application specific parameters** \> **Setup**.
-1. In the **Lookups** section, select **InvoiceAndCreditNoteIsApplicable** and follow these steps.
+1. In the **Lookups** section, select **InvoiceAndCreditNoteIsApplicable** and follow these steps:
    1. In the **Conditions** section, select **Add**.
    1. In the **Lookup result** field, select **Yes**.
    1. In the **Document classification id.** field, select a document class used for purchase invoices that contain VAT.
-1. In the **Lookups** section, select **MainAccountGroups** and follow these steps. 
+1. In the **Lookups** section, select **MainAccountGroups** and follow these steps: 
    1. In the **Conditions** section, select **Add**.
    1. In the **Lookup result** field, select **Yes**.
    1. In the **Document classification id.** field, select a document class used in company transactions.

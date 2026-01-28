@@ -27,7 +27,7 @@ The following procedure shows you how to import the JBA payment model and enable
 
 ## Import the JBA payment model
 
-To import the JBA payment model, follow these steps.
+To import the JBA payment model, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Workspaces \> Electronic reporting**.
 1. Select **Repositories**.
@@ -38,7 +38,7 @@ To import the JBA payment model, follow these steps.
 
 ## Use the JBA payment file in the vendor method of payment
 
-To use the JBA payment file in the vendor method of payment, follow these steps.
+To use the JBA payment file in the vendor method of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Methods of payment**.
 1. Select **Edit**.

@@ -45,7 +45,7 @@ Dimension security lets admins control which data is visible on a report. The pr
 
 ### Set up dimensions
 
-To set up dimensions to secure access to data, follow these steps.
+To set up dimensions to secure access to data, follow these steps:
 
 1. In Business performance analytics, on the **Administration** or **Dimensions** page, select **Set up dimensions**.
 2. Select up to five dimensions to secure access to data. If you don't secure a dimension, all users can access the values in that dimension.
@@ -53,7 +53,7 @@ To set up dimensions to secure access to data, follow these steps.
 
 ### Set up dimension groups
 
-To set up dimension groups, follow these steps.
+To set up dimension groups, follow these steps:
 
 1. In Business performance analytics, on the **Administration** page, select **Set up dimension groups**. Alternatively, on the **Dimension groups** page, select **New**.
 2. Enter a name for the dimension group, and then select **Next**.
@@ -128,7 +128,7 @@ Because no filter is defined for **Legal entity**, and the **All** filter is use
 
 After you've set up the roles and dimension groups, you can set up users so that they have access to Business performance analytics.
 
-To set up users, follow these steps.
+To set up users, follow these steps:
 
 1. In Business performance analytics, on the **Administration** or **Users** page, select **Set up user**.
 2. Search for the user name or email address to set up in Business performance analytics. The search field searches Microsoft Dataverse for users. You can set up only one user at a time.

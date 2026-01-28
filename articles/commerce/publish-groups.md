@@ -44,7 +44,7 @@ For some legacy environments, you must manually turn on the publish groups featu
 > [!NOTE]
 > The publish groups feature is turned on by default for new site builder deployments. 
 
-To turn on the publish groups feature for legacy sites in site builder, follow these steps.
+To turn on the publish groups feature for legacy sites in site builder, follow these steps:
 
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Under **Site Settings**, select **Features**.
@@ -52,7 +52,7 @@ To turn on the publish groups feature for legacy sites in site builder, follow t
 
 ## Create a publish group
 
-To create a publish group for your site in the Commerce authoring tools, follow these steps.
+To create a publish group for your site in the Commerce authoring tools, follow these steps:
 
 1. In the left navigation pane, select **Publish Groups**.
 1. In the top command bar, select **New**.
@@ -75,7 +75,7 @@ To return to the default live site authoring context, select the context control
 
 After you've selected a publish group authoring context, and the context control in the left navigation pane shows its name, you can create content just as you do in the default live site context. You can also add existing pages or other items from other publish groups, or from the live site context.
 
-To copy existing pages to a publish group, follow these steps.
+To copy existing pages to a publish group, follow these steps:
 
 1. Select the authoring context to copy from, and then, in the left navigation pane, select **Pages**.
 1. Select the page to add to a publish group.
@@ -88,7 +88,7 @@ You can use the same basic steps to create customized product pages, URLs, templ
 
 To make sure that all dependencies in publish group content are satisfied, and that all validations are passed, you can run validation to identify any issues that must be addressed before you schedule a publish action.
 
-To validate your publish group before you schedule it, follow these steps.
+To validate your publish group before you schedule it, follow these steps:
 
 1. In the left navigation pane, select **Publish Groups**.
 1. Select the publish group to validate.
@@ -101,7 +101,7 @@ Validation is run on all content in the publish group. Any issues that will prev
 
 ## Schedule a publish group to go live
 
-To schedule a publish group to go live on your site, follow these steps.
+To schedule a publish group to go live on your site, follow these steps:
 
 1. In the left navigation pane, select **Publish Groups**.
 1. Under **Publish Groups**, select the publish group to schedule.

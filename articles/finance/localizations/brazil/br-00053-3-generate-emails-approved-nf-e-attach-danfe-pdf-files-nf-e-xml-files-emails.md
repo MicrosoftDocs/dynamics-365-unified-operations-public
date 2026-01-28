@@ -22,7 +22,7 @@ You can generate the DANFE for an NF-e as a PDF file and then email the DANFE PD
 
 The following procedure uses the BRMF demo company.
 
-to generate a PDF file from the DANFE for an NF-e, follow these steps.
+to generate a PDF file from the DANFE for an NF-e, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Fiscal documents \> Electronic fiscal documents \> Generate emails for NF-e**.
 1. Expand the **Run in the background** section.

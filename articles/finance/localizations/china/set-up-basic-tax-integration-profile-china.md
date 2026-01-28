@@ -26,7 +26,7 @@ Before you can execute the procedure, you must complete the following procedures
 - Golden tax integration import setup
 - Maintain golden tax export format procedure
 
-To set up basic tax integration profile for China, follow these steps.
+To set up basic tax integration profile for China, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Tax integration \> Tax integration profiles**.
 1. Select **New**.

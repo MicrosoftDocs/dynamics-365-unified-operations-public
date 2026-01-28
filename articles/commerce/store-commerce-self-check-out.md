@@ -23,7 +23,7 @@ Point of sale (POS) customers can reuse existing workflows to turn on kiosk-base
 
 ## Enable the SCO feature
 
-To enable the SCO feature, follow these steps.
+To enable the SCO feature, follow these steps:
 
 1. In Commerce headquarters, go to **Feature management** (**System administration \> Workspaces \> Feature management)**.
 1. Check for new updates.
@@ -56,7 +56,7 @@ To restrict specific products from being offered at SCO, in headquarters go to *
 
 ## Configure and activate a SCO kiosk
 
-To enable only operations that are applicable to consumers on an SCO kiosk, follow these steps.
+To enable only operations that are applicable to consumers on an SCO kiosk, follow these steps:
 
 1. As an administrator, create a new, generic user with limited permissions to be used to sign in to the kiosk.
 1. Assign the **SCO kiosk** permission group to the new user. The **SCO kiosk** permission group has limited permissions, so the new user can only perform consumer operations such as scan and pay.

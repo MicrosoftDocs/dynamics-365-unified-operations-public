@@ -39,7 +39,7 @@ To enable the system to generate this code as output in the exported file, compl
 
 Before you can configure tax integration, you must turn it on. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**, and then, on the **Ledger and sales tax** tab, on the **General** FastTab, set the **Integration with tax system** option to **Yes**.
 
-To configure tax integration for China, follow these steps.
+To configure tax integration for China, follow these steps:
 
 1. On the **VAT invoice description** page, create a new value-added tax (VAT) invoice description. For example, set the following values:
 

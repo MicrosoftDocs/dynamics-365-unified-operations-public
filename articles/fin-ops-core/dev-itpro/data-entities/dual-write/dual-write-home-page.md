@@ -2,9 +2,9 @@
 title: Dual-write home page
 description: Access various links to information about dual-write, including resources for dual-write setup and managing dual-write after setup.
 author: sericks007
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 08/19/2023
+ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -17,18 +17,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md)
 
-    - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
-    - [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
+  + [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
+  + [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
 
-+ [Migrate the dual-write app to strengthen communication from finance and operations to Dataverse ](/power-platform/admin/app-migration-dual-write)
++ [Migrate the dual-write app to strengthen communication from finance and operations to Dataverse](/power-platform/admin/app-migration-dual-write)
 
 ## Dual-write setup
 
@@ -36,8 +34,8 @@ These topics describe dual-write integration.
 + [Guidance for how to set up dual-write](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing finance and operations apps
-    + [System requirements and prerequisites troubleshooting](requirements-and-prerequisites.md)
-    + [Enable table map for dual-write](enable-entity-map.md)  
+  + [System requirements and prerequisites troubleshooting](requirements-and-prerequisites.md)
+  + [Enable table map for dual-write](enable-entity-map.md)  
 + [Separated Dual-write Application Orchestration package](separated-solutions.md)
 + [Setup security roles and permissions](security-roles.md)
 + [User-specified team owner](user-specified-team-owner.md)
@@ -61,39 +59,39 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Integrated customer master](customer-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
 
-    + [Switch between vendor designs](../../../fin-ops/data-entities/vendor-switch.md)
+  + [Switch between vendor designs](../../../fin-ops/data-entities/vendor-switch.md)
 
 + [Customer loyalty cards and reward points](loyalty-mapping.md)
 + [Unified product experience](product-mapping.md)
 
-    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
+  + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 
 + [Company concept in Dataverse](../../../fin-ops/data-entities/company-data.md)
 
-    + [Initialize company data](../../../fin-ops/data-entities/company-data.md)
+  + [Initialize company data](../../../fin-ops/data-entities/company-data.md)
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
 
-    + [Integrated ledger](ledger-mapping.md)
-    + [Integrated tax master](tax-mapping.md)
+  + [Integrated ledger](ledger-mapping.md)
+  + [Integrated tax master](tax-mapping.md)
 
 + [Sync on-demand with the Supply Chain Management price engine](../../../fin-ops/data-entities/pricing-engine.md)
 + [Sync on-demand with the Commerce price engine](../../../fin-ops/data-entities/commerce-pricing.md)
 + [Prospect to cash in dual-write](../../../fin-ops/data-entities/dual-write-prospect-to-cash.md)
 
-    + [Set up the mapping for the sales order status columns](sales-status-map.md)
-    + [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
-    
+  + [Set up the mapping for the sales order status columns](sales-status-map.md)
+  + [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
+
 + [Integrate procurement in Supply Chain Management with Field Service](../../../fin-ops/data-entities/scm-field-service-procurement.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [On-hand inventory availability](inventory-availability.md)
 + [Integrated worker, job, and position](integrated-hr.md)
 + [Party and global address book](party-gab.md)
 
-    + [Using Microsoft Power Apps portals with the Party data model](party-gab-portal.md)
-    + [Upgrade to the party and global address book model](upgrade-party-gab.md)
-    + [View party data](view-party.md)
+  + [Using Microsoft Power Apps portals with the Party data model](party-gab-portal.md)
+  + [Upgrade to the party and global address book model](upgrade-party-gab.md)
+  + [View party data](view-party.md)
 
 + [Note integration](../../../fin-ops/data-entities/notes-integration.md)
 + [Mapping reference](mapping-reference.md)
@@ -121,4 +119,3 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Errors codes for table map health check](table-map-health-check.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

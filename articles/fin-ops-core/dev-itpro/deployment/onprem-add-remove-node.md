@@ -24,7 +24,7 @@ This article explains how to add or remove a node in your existing Microsoft Dyn
 
 ## Add a node
 
-To add one or more nodes to your existing environment, follow these steps.
+To add one or more nodes to your existing environment, follow these steps:
 
 1. Ensure that you download the latest infrastructure scripts. Learn more in [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts). To complete this procedure, you must have version 2.23.1 or later of the scripts.
 1. Update the ConfigTemplate.xml file with the new node information.
@@ -104,7 +104,7 @@ To add one or more nodes to your existing environment, follow these steps.
 
 ## Remove a node
 
-To remove one or more nodes from your existing environment, follow these steps.
+To remove one or more nodes from your existing environment, follow these steps:
 
 1. Run the following command to generate an updated configuration file that instructs Service Fabric to remove the nodes. This command should be run from an existing node in the cluster.
 

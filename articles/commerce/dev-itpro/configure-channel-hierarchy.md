@@ -23,7 +23,7 @@ Channel navigation hierarchies organize products into categories so that the pro
 
 ## Configure the channel
 
-To configure a channel to use a channel navigation hierarchy, follow these steps.
+To configure a channel to use a channel navigation hierarchy, follow these steps:
 
 1. In Commerce headquarters, go to **Modules \> Retail and commerce \> Channel setup \> Channel categories and product attributes**.
 1. Select the channel to configure.
@@ -40,7 +40,7 @@ The following image shows how to configure a channel to use a channel navigation
 
 Setting the attribute metadata will allow configuration of attributes on each node.
 
-To set attribute metadata, follow these steps.
+To set attribute metadata, follow these steps:
 
 1. In Commerce headquarters, on the action pane, select **Set attribute metadata**.
 1. For each node select **Channel product attributes**.
@@ -56,7 +56,7 @@ The following image shows an example set of channel product attributes configure
 
 For changes to take effect, you will need to publish the changes.
 
-To publish changes, follow these steps.
+To publish changes, follow these steps:
 
 1. In Commerce headquarters, on the action pane, select **Publish channel updates**.
 1. In the **Publish channel updates** pane, select **OK**.
@@ -67,7 +67,7 @@ The following image shows how to publish channel updates.
 
 ## Configure the distribution schedule job
 
-To configure the distribution schedule job to push changes to channel databases, follow these steps.
+To configure the distribution schedule job to push changes to channel databases, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedules**.
 1. Run the **1040 (Products)** and **1150 (Catalog)** jobs.

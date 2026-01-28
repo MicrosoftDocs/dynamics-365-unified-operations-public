@@ -39,7 +39,7 @@ This article applies to the following configurations:
 
 ## Steps to complete
 
-To edit and upload a robots.txt file, follow these steps.
+To edit and upload a robots.txt file, follow these steps:
 
 1. Open your local copy of the robots.txt file.
 1. Edit the file so that it includes all the **Disallow** entries in the [sample robots.txt file](#sample-robotstxt-file-contents) that follows.

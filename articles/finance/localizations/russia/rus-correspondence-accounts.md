@@ -92,7 +92,7 @@ If any non-corresponding accounts exist before the account correspondence mechan
 
 The account correspondence mechanism lets you create correspondence relations between transactions. 
 
-To turn on the account correspondence mechanism for accounting transactions, follow these steps.
+To turn on the account correspondence mechanism for accounting transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Ledger** tab, set the **Use corresponding mechanism** option to **Yes**.
@@ -104,7 +104,7 @@ To turn on the account correspondence mechanism for accounting transactions, fol
 
 Use the manual transaction correspondence function to define a relationship between non-corresponding transactions. When the account correspondence mechanism is turned off in the ledger, all transactions are generated in the usual way. No correspondence link is established between accounts. The manual transaction correspondence function isn't retroactive. When the account correspondence mechanism is turned on, correspondence isn't established for transactions that were performed earlier.
 
-To manually define correspondence relations for transactions, follow these steps.
+To manually define correspondence relations for transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Manual correspondence**.
 1. In the left pane, view the list of vouchers that have been posted.

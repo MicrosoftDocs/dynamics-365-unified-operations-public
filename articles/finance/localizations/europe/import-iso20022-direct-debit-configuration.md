@@ -23,7 +23,7 @@ The following procedure demonstrates how to import a customer payment electronic
 
 The procedure was created by using the demo data company DEMF, but you can use any demo data company.
 
-To import a customer payment electronic reporting configuration, follow these steps.
+To import a customer payment electronic reporting configuration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Workspaces \> Electronic reporting**.
 1. In the list of available configuration providers, select **Microsoft**.

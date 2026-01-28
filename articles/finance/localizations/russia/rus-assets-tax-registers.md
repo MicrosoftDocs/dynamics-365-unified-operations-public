@@ -105,7 +105,7 @@ The following fields are also available: **Transaction description**, **Qty**, *
 
 ## Example: Scenario that involves miscellaneous purchase charges
 
-To walk through a scenario that involves miscellaneous purchase charges, follow these steps.
+To walk through a scenario that involves miscellaneous purchase charges, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> FA groups**. On the **FA groups** page, create the following fixed asset group.
 
@@ -305,7 +305,7 @@ Data from the **Depreciation bonus recovery** register is included in the **Inco
 
 ### Example: Scenario that involves a depreciation bonus
 
-To walk through a scenario that involves a depreciation bonus, follow these steps.
+To walk through a scenario that involves a depreciation bonus, follow these steps:
 
 1. On the **Depreciation groups** page, create the following two depreciation groups.
 

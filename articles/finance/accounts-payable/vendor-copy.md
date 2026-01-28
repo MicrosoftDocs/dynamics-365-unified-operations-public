@@ -40,7 +40,7 @@ To copy a vendor, in the **Name** field, enter one or more characters that repre
 - The **Roles** tab displays the roles that the selected party can have and the legal entity where it has each role.
 - **Tax registration ID** tab displays the tax registration IDs that are assigned to the party.
 
-You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps.
+You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps:
 
 1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**. 
 2. A **Legal entity** field appears. Select the legal entity to copy the vendor from. If the vendor exists in only one legal entity, the field is set to that legal entity by default.
@@ -52,7 +52,7 @@ When you copy a vendor, the new vendor information will tried to be saved. Valid
 
 ## Copy a vendor by using the Tax exempt number search feature
 
-You can also copy vendors by using the **Tax exempt number** search feature in the **Registration** group on the **Vendor** tab on the Action Pane of the **All vendors** page. The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used. You can copy a vendor only if it's in a legal entity that isn't the current legal entity. After you select a vendor that meets this criterion, follow these steps.
+You can also copy vendors by using the **Tax exempt number** search feature in the **Registration** group on the **Vendor** tab on the Action Pane of the **All vendors** page. The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used. You can copy a vendor only if it's in a legal entity that isn't the current legal entity. After you select a vendor that meets this criterion, follow these steps:
 
 1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**.
 2. Select **Select**. The new vendor is created.

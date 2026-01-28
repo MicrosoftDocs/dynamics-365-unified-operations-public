@@ -27,7 +27,7 @@ The procedure uses the demo data company JPMF.
 
 Before you complete the procedure, ensure that you first create and confirm a consolidated invoice.
 
-To settle customer consolidated invoices by using a payment journal, follow these steps.
+To settle customer consolidated invoices by using a payment journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
 1. In the **Consolidation ID** field, copy the value to reference later. You can use "JPMF-000002" from the demo data company JPMF.  

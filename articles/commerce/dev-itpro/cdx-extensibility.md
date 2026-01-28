@@ -1,18 +1,17 @@
 ---
-title: Enable custom Commerce Data Exchange synchronization via extension (preview)
+title: Enable custom Commerce Data Exchange synchronization via extension
 description: Learn how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: aneesa
 ms.date: 10/24/2025
 ms.topic: how-to
-ms.reviewer: johnmichalak
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2017-09-15
 ---
-# Enable custom Commerce Data Exchange synchronization via extension (preview)
+# Enable custom Commerce Data Exchange synchronization via extension
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 Finance platform update 8 or Microsoft Dynamics 365 Retail platform update 8.
 
@@ -24,7 +23,7 @@ CDX is a system that transfers data between Dynamics 365 Commerce headquarters a
 The advantage of using the Commerce initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the CDX initialization by using the **Initialize commerce scheduler** dialog box from **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Initialize commerce scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
 
 > [!IMPORTANT]
-> The [Generated extension SQL scripts](channel-db-extensions.md#generated-extension-sql-scripts) feature available starting in Commerce version 10.0.46 simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.
+> The [Generated extension SQL scripts](channel-db-extensions.md#generated-extension-sql-script) feature available starting in Commerce version 10.0.46 simplifies and accelerates the process of adding extensions to the channel database. It also helps optimize performance and avoid common customization errors that impact data synchronization.
 
 There are various scenarios for data transfer between headquarters and the channel database:
 
@@ -252,7 +251,7 @@ Microsoft recommends that you implement setup changes on an untouched Retail sof
 
 ### Extend the data in the sample
 
-The table extension on the Commerce side is already created in the sample. To create it manually, follow these steps.
+The table extension on the Commerce side is already created in the sample. To create it manually, follow these steps:
 
 1. Start Visual Studio.
 2. On the menu, select **View** \> **Application Explorer**.

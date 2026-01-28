@@ -25,7 +25,7 @@ Before you complete this procedure, you must first complete the setup of the gol
 
 After you complete this procedure, your next steps are to update the **Format mapping** field on the **Tax integration profile** page.
 
-To configure the export format for golden tax integration, follow these steps.
+To configure the export format for golden tax integration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **All workspaces \> Electronic reporting**.
 1. In the list, select **Microsoft**.

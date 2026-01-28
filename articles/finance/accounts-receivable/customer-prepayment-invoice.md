@@ -62,7 +62,7 @@ In this example, the final invoice includes the total order amount ($10,000) and
 
 ## Set up Accounts receivable for customer prepayment invoices
 
-To set up customer prepayment invoices, follow these steps.
+To set up customer prepayment invoices, follow these steps:
 
 1. Go to **Feature management**, and enable the **Prepayment customer invoice** feature.
 2. Go to **Inventory management** \> **Setup** \> **Posting** \> **Posting** \> **Sales order** \> **Prepayment**.

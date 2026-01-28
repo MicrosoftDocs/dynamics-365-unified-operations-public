@@ -21,7 +21,7 @@ This article describes how to create a chart of accounts in a hierarchy tree str
 
 The following procedure shows how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts. The procedure uses the demo data company CNMF.
 
-To create a chart of accounts in a hierarchy tree structure, follow these steps.
+To create a chart of accounts in a hierarchy tree structure, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Chart of accounts \> Accounts \> Chart of accounts**.
 1. Select **New**.

@@ -68,7 +68,7 @@ Complete setting up the registration type and registration category for VAT ID b
 In Türkiye, every legal entity, customer, and vendor must be linked to a **tax office** for identification and regulatory reporting.  
 In Finance, this information is managed through the **Issuing agencies** set up. When you define tax office names and codes, you ensure that **Registration IDs** are correctly associated with the appropriate tax authority. This setup is essential for generating compliant e-invoice (UBL-TR) documents and other statutory reports.
 
-To define tax offices, follow these steps.  
+To define tax offices, follow these steps:  
 
 1. Go to **Organization administration > Global address book > Issuing agencies**.  
 1. On the **Issuing agencies** page, select **New**.  
@@ -84,7 +84,7 @@ To define tax offices, follow these steps.
 
 This section provides information about how to set up a VAT ID of a legal entity in Türkiye.
 
-To create a VAT ID for the legal entity, follow these steps. 
+To create a VAT ID for the legal entity, follow these steps: 
 
 1. Go to **Organization administration > Organizations > Legal entities**.
 1. In the list find and select the legal entity you want to work with.
@@ -104,7 +104,7 @@ To create a VAT ID for the legal entity, follow these steps.
 
 This section explains how to add VAT registration IDs to a customer or vendor account. 
 
-To create a VAT ID for a customer or a vendor, follow these steps.
+To create a VAT ID for a customer or a vendor, follow these steps:
 
 1. Go to **Accounts payable** > **Vendors** > **All vendors** or **Accounts receivable** > **Customers** > **All customers**.
 1. In the list find and select the vendor or the customer record you want to work with.

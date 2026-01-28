@@ -23,7 +23,7 @@ You can create and post vendor invoices on behalf of nontaxpayer vendors. You mu
 
 The following procedure uses the BRMF demo company.
 
-To create and post vendor invoices on behalf of nontaxpayer vendors, follow these steps.
+To create and post vendor invoices on behalf of nontaxpayer vendors, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the list, find and select the desired record.

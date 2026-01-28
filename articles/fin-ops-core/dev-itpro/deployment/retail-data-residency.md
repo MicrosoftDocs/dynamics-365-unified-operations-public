@@ -35,7 +35,7 @@ You can configure Commerce Data Exchange (CDX) so that only specific segments of
 
 Before you configure the record segments that will be synchronized, you need to configure channel database groups. These database groups must be configured for each CSU where you want to synchronize segmented data. All CSUs in the same channel database group receive the data that is needed to serve all the channels in that CSU. You need to create a separate database group for each CSU channel database where you plan to synchronize segmented data. 
 
-To configure channel database groups, follow these steps.
+To configure channel database groups, follow these steps:
 
 1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Channel database group**.
 2. Create a new database group for each CSU where you want to synchronize segmented data.

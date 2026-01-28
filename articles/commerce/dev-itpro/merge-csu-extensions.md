@@ -31,7 +31,7 @@ Both your tax ISV and your payment ISV gave you a CSU extension package, you hav
 
 ### Merge the packages by generating a NuGet package for the ISV extensions
 
-To merge the packages by generating a NuGet package for the ISV extensions, follow these steps.
+To merge the packages by generating a NuGet package for the ISV extensions, follow these steps:
 
 1. Ask the ISVs to generate NuGet packages for their CSU extensions.
 1. Consume the ISV NuGet packages in your CSU packaging project by adding them as references to the project.
@@ -52,7 +52,7 @@ If you have the ISV extension projects, follow these steps to generate the NuGet
 
 ### Consume the NuGet package in your CSU extension package
 
-To consume the NuGet package in your CSU extension package, follow these steps.
+To consume the NuGet package in your CSU extension package, follow these steps:
 
 1. Before you consume the NuGet package from your ISV, set up the [package feed location](/nuget/hosting-packages/local-feeds) for your ISV CSU extension NuGet package in your **nuget.config** file by using the following XML.
 

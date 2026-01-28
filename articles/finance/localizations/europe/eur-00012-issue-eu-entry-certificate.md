@@ -24,7 +24,7 @@ The following procedures walk you through how to enable an EU entry certificate,
 
 ## Enable entry certificate management
 
-To enable entry certificate management, follow these steps.
+To enable entry certificate management, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Select the **Shipments** tab.
@@ -37,7 +37,7 @@ To enable entry certificate management, follow these steps.
 
 ## Set up a customer
 
-To set up a customer, follow these steps.
+To set up a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Use the Quick Filter to find records. For example, filter on the **Account** field with a value of "DE-015".
@@ -50,7 +50,7 @@ To set up a customer, follow these steps.
 
 ## Create an EU entry certificate automatically
 
-To create an EU entry certificate automatically, follow these steps.
+To create an EU entry certificate automatically, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select **New**.
@@ -81,7 +81,7 @@ To create an EU entry certificate automatically, follow these steps.
 
 ## Create an EU entry certificate manually
 
-To create an EU entry certificate manually, follow these steps.
+To create an EU entry certificate manually, follow these steps:
 
 1. On the Action Pane, select **Invoice**.
 1. Select **Create entry certificate**.

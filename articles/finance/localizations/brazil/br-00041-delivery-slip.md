@@ -23,7 +23,7 @@ You can post a delivery slip for a sales order that has multiple sales order lin
 
 The following procedure uses the BRMF demo company.
 
-To post delivery slips for sales orders with multiple sales order lines that have CFOP delivery codes, follow these steps.
+To post delivery slips for sales orders with multiple sales order lines that have CFOP delivery codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New**.

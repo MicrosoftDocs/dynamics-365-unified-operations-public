@@ -40,7 +40,7 @@ To import invoice declaration GER configurations, follow these steps:
 
 ## Enable vendor invoice declaration
 
-To enable vendor invoice declaration, follow these steps.
+To enable vendor invoice declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Vendor invoice declaration**.
 1. Select **New**.

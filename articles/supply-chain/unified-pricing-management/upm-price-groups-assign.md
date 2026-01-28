@@ -18,7 +18,7 @@ ms.custom:
 
 ## Assign price groups to trade agreements
 
-To assign a price group to a trade agreement, follow these steps.
+To assign a price group to a trade agreement, follow these steps:
 
 1. Go to **Pricing management** \> **During-sales pricing** \> **Sales trade agreement price** \> **Trade agreements journals**.
 1. You can assign price groups only to journals that haven't yet been posted. Therefore, set the **Show** filter to *Not posted*.
@@ -35,7 +35,7 @@ To assign a price group to a trade agreement, follow these steps.
 
 ## Assign price groups to price adjustments or discounts
 
-To assign price groups to a price adjustment or discount, follow these steps.
+To assign price groups to a price adjustment or discount, follow these steps:
 
 1. Follow one of these steps:
 

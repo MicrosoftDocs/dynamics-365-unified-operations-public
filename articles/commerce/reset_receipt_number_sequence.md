@@ -43,7 +43,7 @@ You can reset the sequential numbering of the receipt on a specific date. Then, 
 > [!NOTE]
 > Microsoft requires that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the POS device must match the corresponding store time zone. Due to these limitations, Microsoft recommends that you don't use this feature in production until fixes for these issues are included in a future release. 
 
-To enable resetting of receipt numbers in Commerce headquarters, follow these steps.
+To enable resetting of receipt numbers in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. On the **Receipt numbering** FastTab, select **Reset number reset date**.
@@ -70,7 +70,7 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 
 Organizations that have strict requirements for receipt ID uniqueness can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit whenever POS is initialized. This guarantees that the POS will always have the most current number sequence before any transactions are executed. 
 
-To enable synchronization of number sequence data at app launch, follow these steps.
+To enable synchronization of number sequence data at app launch, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and then select the functionality profile used by the store(s) for which you want to enable the feature.
 2. In the **Receipt number synchronization** section, enable the **Retrieve the latest number sequence data** setting. 
@@ -81,7 +81,7 @@ To enable synchronization of number sequence data at app launch, follow these st
 
 ## Make receipt masks change when the reset date arrives
 
-To make receipt masks change when the reset date arrives in headquarters, follow these steps.
+To make receipt masks change when the reset date arrives in headquarters, follow these steps:
 
 1. In **Functionality profiles**, set the reset date to a date before the actual reset date (for example, one week before).
 1. Run the **1070 (Channel configuration)** job.

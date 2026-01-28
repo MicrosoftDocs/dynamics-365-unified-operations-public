@@ -25,7 +25,7 @@ The procedures use the demo data company JPMF.
 
 ## Enable the consumption tax report
 
-To enable the consumption tax report, follow these steps.
+To enable the consumption tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
 1. Select the **Sales tax** FastTab.
@@ -34,7 +34,7 @@ To enable the consumption tax report, follow these steps.
 
 ## Configure tax reporting accounts
 
-To configure tax reporting accounts, follow these steps.
+To configure tax reporting accounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> Tax reporting accounts**.
 1. Select **Edit**.
@@ -43,7 +43,7 @@ To configure tax reporting accounts, follow these steps.
 
 ## Enter Japan reporting information for a legal entity
 
-To enter Japan reporting information for a legal entity, follow these steps.
+To enter Japan reporting information for a legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Expand the **Registration numbers** section.
@@ -53,7 +53,7 @@ To enter Japan reporting information for a legal entity, follow these steps.
 
 ## Enter report setup information for a sales tax code
 
-To enter report setup information for a sales tax code, follow these steps.
+To enter report setup information for a sales tax code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Use the Quick Filter to find records. For example, filter on the **Sales tax code** field with a value of "JP Cons".

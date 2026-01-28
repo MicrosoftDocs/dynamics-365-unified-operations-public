@@ -54,7 +54,7 @@ The tile list module can support various layouts and styles, based on a theme. F
 
 ## Add a tile list module to a new page
 
-To add a tile list module to a new page and set the required properties, follow these steps.
+To add a tile list module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

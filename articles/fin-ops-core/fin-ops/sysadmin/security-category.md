@@ -28,7 +28,7 @@ There are two ways to create a category:
 
 ### Create a new category
 
-To create a new category from scratch, follow these steps.
+To create a new category from scratch, follow these steps:
 
 1. Go to **System administration** \> **Security governance** \> **Security category**.
 1. Select **New**.
@@ -39,7 +39,7 @@ To create a new category from scratch, follow these steps.
 
 ### Import an existing category
 
-To import an existing category, follow these steps.
+To import an existing category, follow these steps:
 
 1. Go to **System administration** \> **Security governance** \> **Security category**.
 1. Select **Import**.

@@ -63,7 +63,7 @@ To configure the tax application, go to **Organization administration** \> **Set
 
 ### Configure the legal entity
 
-To configure the legal entity, follow these steps.
+To configure the legal entity, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
@@ -78,7 +78,7 @@ To configure the legal entity, follow these steps.
 
 This configuration applies to Invoices, Credit notes, and Debit notes.
 
-To configure document classes, follow these steps.
+To configure document classes, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
 1. For each **Document class** that you want to use in Electronic Invoicing:
@@ -93,7 +93,7 @@ To configure document classes, follow these steps.
 
 ### Configure the sales point prefix
 
-To configure the sales point prefix, follow these steps.
+To configure the sales point prefix, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix** and for the sales point used for electronic invoicing follow these steps:
 1. Complete the **Prefix** field with the authorized prefix code for electronic invoicing.
@@ -101,7 +101,7 @@ To configure the sales point prefix, follow these steps.
 
 ### Configure the field master lists
 
-To configure field master lists, follow these steps.
+To configure field master lists, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Fields master List**.
 1. In the **LIST 1**, configure the codes for operation types and for credit and debit note types.
@@ -112,7 +112,7 @@ Learn more in [Field list configuration for Latin America](ltm-core-field-master
 
 ### Configure the fiscal information
 
-To configure fiscal information, follow these steps.
+To configure fiscal information, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
 1. Select the record, and then select **Tax application**.
@@ -126,7 +126,7 @@ Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md) and 
 
 ### Configure the addresses
 
-To configure addresses, follow these steps.
+To configure addresses, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. For each record (Country/region, State and County) used in electronic invoicing go to **LATAM** \> **Tax application** to assign the tax application codes according to the Colombian normative.
@@ -137,7 +137,7 @@ Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 #### Method of payments
 
-To configure the method of payments, follow these steps.
+To configure the method of payments, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments setup** \> **Methods of payment**.
 1. For each record in the list:
@@ -148,7 +148,7 @@ To configure the method of payments, follow these steps.
 
 #### Terms of payments
 
-To configure the terms of payment, follow these steps.
+To configure the terms of payment, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments setup** \> **Terms of payment**.
 1. For each record in the list:
@@ -159,7 +159,7 @@ To configure the terms of payment, follow these steps.
 
 #### Configure released products
 
-To configure released products, follow these steps.
+To configure released products, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. For each record in the list:
@@ -173,7 +173,7 @@ To configure released products, follow these steps.
 
 #### Configure Units
 
-To configure Units, follow these steps.
+To configure Units, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. For each record in the list:
@@ -183,7 +183,7 @@ To configure Units, follow these steps.
 
 #### Currencies configuration
 
-To configure currencies, follow these steps.
+To configure currencies, follow these steps:
 
 1. Go to **General ledger** \> **Currencies** \> **Currencies**.
 1. For each record in the list:
@@ -198,7 +198,7 @@ This section explains how to congifure global line charges and discounts.
 
 #### Configure global and line charges
 
-To configure global and line charges, follow these steps.
+To configure global and line charges, follow these steps:
 
 1. Go to **Accounts receivable \> Charges setup \> Charges code**.
 1. For each record that is used as a global or line charge, follow these steps:
@@ -209,7 +209,7 @@ To configure global and line charges, follow these steps.
 
 #### Configure global discounts
 
-To configure global discounts, follow these steps.
+To configure global discounts, follow these steps:
 
 1. Go to **Accounts receivable > Charges setup > Charges code**.
 1. For each record that is used as a global discount, follow these steps:
@@ -230,7 +230,7 @@ To use line discounts in the Colombian Electronic invoice use the finance and op
 
 ### Configure Taxes
 
-To configure the taxes for each tax and percentage used, follow these steps.
+To configure the taxes for each tax and percentage used, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. For each record in the list:
@@ -247,7 +247,7 @@ When you issue an electronic document that has an associated document or period,
 
 ### Reference a document
 
-To reference a document, follow these steps.
+To reference a document, follow these steps:
 
 1. In the **Reference code** field, enter the number code for reference reason according to the Colombian normative.
 1. Complete the **Reference date** field.
@@ -269,7 +269,7 @@ Learn more in [Configure electronic document references](ltm-electronic-doc-refe
 
 You must configure the required lookups to be able to issue an electronic document.
 
-To configure lookups, follow these steps.
+To configure lookups, follow these steps:
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 1. Select the report to configure on the left menu.
@@ -286,7 +286,7 @@ To configure lookups, follow these steps.
 
 For electronic invoicing, you must configure the **SSRS Reports / Services references**.
 
-To configure SSRS Reports / Services references, follow these steps.
+To configure SSRS Reports / Services references, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **SSRS Reports / Services references**.
 1. Create a new record.

@@ -28,7 +28,7 @@ To use the features described in this article, your system must meet the followi
 
 ## Set up CLM connection parameters
 
-To set up the connection to your external CLM system, follow these steps.
+To set up the connection to your external CLM system, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **CLM integration** \> **Contract management parameters**.
 1. On the **Connection** tab, on the **General** FastTab, set the following fields:
@@ -43,7 +43,7 @@ To set up the connection to your external CLM system, follow these steps.
 
 External navigation links provide the capability to redirect users to an external CLM system where they can perform various actions. For example, they can create new contracts, edit existing contracts, and view contracts. These actions are optional, and the corresponding buttons appear on the contract page only after you configure the relevant external navigation links.
 
-To configure external navigation links, follow these steps.
+To configure external navigation links, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **CLM integration** \> **Contract management parameters**.
 1. On the **External navigation links** tab, on the toolbar, select **New**.
@@ -76,7 +76,7 @@ To configure external navigation links, follow these steps.
 
 ## Review the connection status
 
-To review the current status of the connection between Supply Chain Management and the CLM system, follow these steps.
+To review the current status of the connection between Supply Chain Management and the CLM system, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **CLM integration** \> **Contract management parameters**.
 1. On the **Connection** tab, select the **Connection status** FastTab. Here, the connection status is indicated through one of the following values:

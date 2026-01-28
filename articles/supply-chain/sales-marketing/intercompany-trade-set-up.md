@@ -28,7 +28,7 @@ In particular, we recommend that you and your organization become familiar with 
 
 ## Set up trading relations
 
-To set up intercompany trade for customers and vendors, follow these steps.
+To set up intercompany trade for customers and vendors, follow these steps:
 
 1. Go to **Accounts receivable \> Customers \> All customers**.
 1. Select a customer account.
@@ -43,7 +43,7 @@ To set up intercompany trade for customers and vendors, follow these steps.
 
 ## Set up products
 
-To enable products for intercompany trade, follow these steps.
+To enable products for intercompany trade, follow these steps:
 
 1. Go to **Product information management \> Products \> All products and product masters**.
 1. Define the products that are released to the legal entities where you want to do intercompany trade.

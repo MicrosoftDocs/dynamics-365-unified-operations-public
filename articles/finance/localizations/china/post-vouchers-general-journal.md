@@ -27,7 +27,7 @@ Before you can complete this procedure, ensure that you create all of the necess
 
 ## Post vouchers from general ledger journals
 
-To post vouchers from general ledger journals, follow these steps.
+To post vouchers from general ledger journals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal entries \> General journals**.
 1. Select **New**.

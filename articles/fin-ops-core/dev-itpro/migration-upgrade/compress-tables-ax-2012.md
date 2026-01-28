@@ -40,7 +40,7 @@ The following prerequisites must be in place before you compress the tables.
 
 ### Identify tables for compression
 
-To identify tables for compression, follow these steps.
+To identify tables for compression, follow these steps:
 
 1. Open SQL Management Studio, and connect to the server that hosts the Dynamics AX 2012 database.
 1. In Object Explorer, select and hold (or right-click) the Dynamics AX 2012 database that you're using, and then select **Reports \> Standard Reports \> Disk Usage by Top Tables** to run the **Disk Usage by Top Tables** report.
@@ -48,7 +48,7 @@ To identify tables for compression, follow these steps.
 
 ### Configure Dynamics AX 2012 for the upgrade
 
-To configure Dynamics AX 2012 for the upgrade, follow these steps.
+To configure Dynamics AX 2012 for the upgrade, follow these steps:
 
 1. From the Dynamics AX 2012 Development Workspace, find and open the **SysSqlSetup** form. This form can take several minutes to be opened.
 1. In the **Table** drop-down list, find and select one of the tables that you want to compress (for example, **RetailTtransactionSalesTrans**).
@@ -74,7 +74,7 @@ You have two options for compressing the tables:
 
 ### Option 1: Compress the tables from the SysSqlAdmin form
 
-To compress the tables from the **SysSqlAdmin** form, follow these steps.
+To compress the tables from the **SysSqlAdmin** form, follow these steps:
 
 1. In the Dynamics AX Application Object Tree (AOT), find the **SysSqlAdmin** form, and open it.
 1. On the drop-down menu, select **Table actions \> Apply compression**.

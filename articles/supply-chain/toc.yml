@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.47 (March 2026)
+          href: get-started/whats-new-scm-10-0-47.md
         - name: Supply Chain Management 10.0.46 (December 2025)
           href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
           href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
           href: get-started/whats-new-scm-10-0-44.md
-        - name: Supply Chain Management 10.0.43 (March 2025)
-          href: get-started/whats-new-scm-10-0-43.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1444,7 +1444,7 @@
         - name: Configure model mappings
           items: 
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
           - name: Manage several derived mappings for a single model root
@@ -1645,7 +1645,7 @@
           href: inventory/quality-instrument-calibration.md
         - name: Flexible sampling plans
           href: inventory/quality-flexible-sampling-plans.md
-        - name: Acceptance sampling (preview)
+        - name: Acceptance sampling
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
@@ -1853,7 +1853,7 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Lean manufacturing for Planning Optimization (preview)
+        - name: Lean manufacturing for Planning Optimization
           href: master-planning/lean-for-planning-optimization.md
         - name: Unified developer experience for planning optimization (preview)
           href: supply-chain-dev/planning-optimization-dev.md
@@ -2369,6 +2369,8 @@
           href: unified-pricing-management/upm-concurrence-cross-codes.md
       - name: Calculate prices and discounts without creating sales orders
         href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
+      - name: Pricing data import and export entities
+        href: unified-pricing-management/upm-pricing-data-entities.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
@@ -2593,7 +2595,7 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Cross-company product sharing (preview)
+        - name: Cross-company product sharing
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
@@ -3147,7 +3149,7 @@
           href: sales-marketing/line-charges-specific-unit.md
         - name: Period charges
           href: sales-marketing/period-charges.md
-        - name: Create a purchase order from a sales order
+        - name: Create purchase orders from sales orders
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
@@ -3951,12 +3953,10 @@
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
             href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Use Microsoft Entra Conditional Access with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-conditional-access-enable.md
           - name: Mass deploy the mobile app with user-based authentication
             href: warehousing/warehouse-app-intune-user-based.md
-          - name: Service-based authentication
-            href: warehousing/warehouse-app-authenticate-service-based.md
-          - name: Mass deploy the mobile app with service-based authentication
-            href: warehousing/warehouse-app-intune.md
           - name: Mobile device user accounts
             href: warehousing/mobile-device-work-users.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
@@ -4241,8 +4241,6 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: Set up Agent management (production ready preview)
-        href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md  
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot

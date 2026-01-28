@@ -27,7 +27,7 @@ The procedures use the demo data company JPMF.
 
 ## Reopen a consolidated invoice
 
-To reopen a consolidated invoice, follow these steps.
+To reopen a consolidated invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
 1. In the list, find and select an invoice that is already confirmed.  
@@ -35,7 +35,7 @@ To reopen a consolidated invoice, follow these steps.
 
 ## Remove a sales order from a consolidated invoice
 
-To remove a sales order from a consolidated invoice, follow these steps.
+To remove a sales order from a consolidated invoice, follow these steps:
 
 1. In the list, select the link in the selected row.
 1. Select **Edit**.
@@ -44,7 +44,7 @@ To remove a sales order from a consolidated invoice, follow these steps.
 
 ## Add sales orders and confirm the consolidated invoice
 
-To add sales orders and confirm the consolidated invoice, follow these steps.
+To add sales orders and confirm the consolidated invoice, follow these steps:
 
 1. Select **Query invoice**.
 1. Select **OK**.

@@ -21,14 +21,14 @@ This article explains how to create and print a vendor self-billed invoice for M
 
 ## Prerequisites
 
-Before you print a self-billed invoice, follow these steps.
+Before you print a self-billed invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger parameters** and select the **Use self-billed invoice** option.
 1. Sign in with the **Accounts payable clerk** role.
 
 ## Print a self-billed invoice
 
-To print a self-billed invoice, follow these steps.
+To print a self-billed invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders** and select **New**.
 1. In the **Vendor account** field, select a value.

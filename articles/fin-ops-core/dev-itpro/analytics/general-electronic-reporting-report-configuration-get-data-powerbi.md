@@ -67,7 +67,7 @@ You must create a new ER format configuration that uses the **Intrastat** data m
 
 [![Import / export activities configuration.](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
-To modify the **Import / export activities** format configuration, follow these steps.
+To modify the **Import / export activities** format configuration, follow these steps:
 
 1. Click **Designer**.
 2. On the **Format** tab, name the file element for this format **Excel output file**.
@@ -109,7 +109,7 @@ On the **Electronic reporting** page (**Organization administration** &gt; **Ele
 1. In the **Name** field, enter the title of the file destination.
 2. In the **File name** field, select the name **Excel output file** for the Excel file format component.
 
-Click the **Settings** button for the new destination record. Then, in the **Destination settings** dialog box, follow these steps.
+Click the **Settings** button for the new destination record. Then, in the **Destination settings** dialog box, follow these steps:
 
 1. On the **Power BI** tab, set the **Enabled** option to **Yes**.
 2. In the **SharePoint** field, select the **Shared** document type that you created earlier.

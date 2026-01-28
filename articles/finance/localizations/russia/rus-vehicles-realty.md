@@ -24,7 +24,7 @@ Use the **Depreciation groups** page to set up the start date for depreciation o
 
 You can specify that the calculation of depreciation should be based on the registration date of the asset. If an asset is registered after it's put into operation, depreciation is calculated from the first day of the month of registration. If an asset is registered before it's put into operation, depreciation is calculated from the first day of the month after the asset is put into operation.
 
-To set up the depreciation start date for vehicle and realty assets, follow these steps.
+To set up the depreciation start date for vehicle and realty assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 1. Create a depreciation group, and enter the required details.
@@ -32,7 +32,7 @@ To set up the depreciation start date for vehicle and realty assets, follow thes
 
 ## Specify the registration date for vehicle and realty assets
 
-To specify the registration date for vehicle and realty assets, follow these steps.
+To specify the registration date for vehicle and realty assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select **New** to create a fixed asset, and enter the required details.

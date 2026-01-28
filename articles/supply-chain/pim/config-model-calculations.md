@@ -23,7 +23,7 @@ Calculations are used in a product configuration model to calculate the configur
 
 A calculation consists of an expression and a target attribute. Learn more in [Calculations for product configuration models FAQ](calculate-product-configuration-models.md).
 
-To create a calculation for an existing product model, follow these steps.
+To create a calculation for an existing product model, follow these steps:
 
 1. Go to **Product information management \> Common \> Product configuration models**.
 1. Open a product configuration model, and then select **Edit**.

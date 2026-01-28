@@ -54,7 +54,7 @@ For help with diagnosing activation issues, see [Diagnose and debug device activ
 
 Features have been added to Store Commerce to allow you to create a device (that is, automatically generate a device ID) from Store Commerce so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can only be used in Store Commerce if you configure settings in headquarters.
 
-To configure headquarters settings that allow you to create a device ID in Store Commerce, follow these steps.
+To configure headquarters settings that allow you to create a device ID in Store Commerce, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> General**.
 1. Under **Devices,** set **Allow register association from device** to **Yes**.

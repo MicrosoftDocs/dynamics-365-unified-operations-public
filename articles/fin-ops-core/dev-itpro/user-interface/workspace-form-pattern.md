@@ -134,7 +134,7 @@ For forms that follow the **Operational workspace** form pattern and its related
 ### Manually update a form 
 If you have workspaces that don't use a pattern or that use other workspace patterns, you must manually migrate them so that they are vertical in orientation. You can also use this manual approach if you have a small number of workspaces that follow the **Operational workspace** pattern.
 
-To manually migrate a workspace, follow these steps.
+To manually migrate a workspace, follow these steps:
 
 1. If a form is using the deprecated **Workspace** pattern, remove this pattern, and apply the **Operational workspace** pattern instead. Because the **Operational workspace** pattern uses a different set of subpatterns, you must remove the current subpatterns and replace them with their counterparts. (For example, replace the **HubTiles** subpattern with **SectionTiles** and the **HubPartLinks** subpattern with **SectionRelatedLinks**.) If a move to the **Operational workspace** pattern isn't possible, you might have to use a custom pattern.
 2. Ensure that all workspace-related patterns are up to date. This step applies both to the form pattern and subpatterns on the workspace form itself and also to any forms that are referenced by Form Part controls on the workspace form. You should also consider migrating any subforms that use the **HubPartGrid** pattern, so that they use the **FormPartSectionList** pattern instead. To ensure that a pattern or subpattern is using the latest version, remove the pattern from the container, and then reapply it.

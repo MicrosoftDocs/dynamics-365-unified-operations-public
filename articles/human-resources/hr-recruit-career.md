@@ -61,6 +61,18 @@ Installing the new version of Careers requires deleting the previous version:
   4. Retry installing Dynamics 365 Human Resources careers from Power platform admin center.
 
 
+### Upgrade careers with custom settings
+Upgrading to a new career version overwrites your customizations. To avoid data loss, back up and restore your settings using the following steps.
+1. Back up the careers customization. For more information, see [Power platform pages](/power-platform/developer/cli/reference/pages#pac-pages-download).
+2. Reinstall the current version:
+3. Go to **Power Apps** > **Solutions** > **Managed solutions**.
+4. Search for HCM Recruiting careers (msdyn_HCMRecruitingCareers) and delete it.
+5. Remove any dependencies if present. Deletion of msdyn_HCMRecruitingCareers enables you to reinstall the careers.
+6. Install or update the Dynamics 365 Human Resources careers app from Power platform admin center.
+7. To restore your customization, upload the previously downloaded code from step one. For more information, see  by executing [Power platform pages](/power-platform/developer/cli/reference/pages#pac-pages-upload). This overrides the present code on the environment.
+
+For more information, see [Microsoft Power Platform CLI pages command group](/power-platform/developer/cli/reference/pages). 
+
 ### Enable careers to access Dynamics 365 Human resources virtual entities 
 
 To assign roles to the **Portal anonymous** user in Dynamics 365 Human Resources, follow these steps:
@@ -149,7 +161,7 @@ To set up a compliance link, follow these steps:
 
 Users can sign in by using different out-of-box identity providers on the website. The administrator must configure these identity providers so that they appear on the sign-in page.
 
-To configure external identity providers, follow these steps.
+To configure external identity providers, follow these steps:
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/).
 1. Select your active site, and then select **Edit**.
@@ -167,7 +179,7 @@ For more information about how to set up identity providers, see [Set up an OAut
 
 Email notifications can be sent in different situations on the careers site. For example, they can be sent when users forget their password, for confirmation, or when users create email accounts.
 
-To enable email accounts to send notifications, follow these steps.
+To enable email accounts to send notifications, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 1. Select the environment where your Recruiting add-on app is installed.

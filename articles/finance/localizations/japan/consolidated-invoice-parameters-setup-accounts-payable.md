@@ -25,7 +25,7 @@ The following procedures walk you through how to set up and configure consolidat
 
 ## Configure accounts payable parameters for consolidated invoices
 
-To configure accounts payable parameters for consolidated invoices, follow these steps.
+To configure accounts payable parameters for consolidated invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Accounts payable parameters**.
 1. Expand the **Vendor** section.
@@ -35,14 +35,14 @@ To configure accounts payable parameters for consolidated invoices, follow these
 
 ## Configure payment days
 
-To configure payment days, follow these steps.
+To configure payment days, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Payment days**.
 1. Configure a payment day.  
 
 ## Configure terms of payment
 
-To configure terms of payment, follow these steps.
+To configure terms of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Terms of payment**.
 1. Use the Quick Filter to find records. For example, filter on the **Terms of payment** field with a value of "COD".

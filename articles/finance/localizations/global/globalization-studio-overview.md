@@ -34,6 +34,6 @@ The Globalization Studio consists of the following tools and services:
 - [Tax Calculation](global-tax-calcuation-service-overview.md) is a hyper-scalable multitenant service that significantly enhances the core tax determination and calculation capabilities of Dynamics 365 finance and operations apps with a more flexible and fully configurable engine.
 - [Electronic Invoicing](e-invoicing-service-overview.md) is a hyper-scalable multitenant service that extends the existing electronic invoicing capabilities to more countries and regions, and enables configurable processing of electronic invoices and configurable electronic document exchange.
 - [Out-of-the-box multi-country/region localizations](../../../fin-ops-core/fin-ops/lcs/country-region.md) and [regulatory updates](regulatory-updates.md) are provided by Microsoft and updated per legislation changes in the supported countries and regions.
-- Partner localization solutions that are published on [Microsoft AppSource](https://appsource.microsoft.com/) or provided directly by partners.
+- Partner localization solutions that are published on [Microsoft Marketplace](https://marketplace.microsoft.com/) or provided directly by partners.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,7 +61,7 @@ The following table shows the prerequisites that must be in place before you sta
 After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period.
 
 > [!TIP]
-> The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see "Modify pay statements" in [Generate and work with pay statements](noam-usa-pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps.
+> The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see "Modify pay statements" in [Generate and work with pay statements](noam-usa-pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps:
 
 **Post the pay statements**
 
@@ -86,7 +86,7 @@ After you review pay statement for a specific pay period, you post the pay state
 
 ## Post a pay statement for an individual worker and submit it for payment
 
-To post a pay statement for a specific worker to the general ledger, and then submit the pay statement for payment, follow these steps.
+To post a pay statement for a specific worker to the general ledger, and then submit the pay statement for payment, follow these steps:
 
 1. On the **All pay statements** page, select the pay statement for the specific worker and pay period.
 2. On the **Financials** tab, in the **Accounting** group, click **Post**.
@@ -109,7 +109,7 @@ After pay statements for a specific cycle and pay period have been posted to the
 
 After pay statements for a specific pay cycle and pay period have been posted to the general ledger, you generate all the vendor invoices for a specific vendor. These invoices include multiple invoices for several benefit plans.
 
-To generate multiple invoices for one vendor, follow these steps.
+To generate multiple invoices for one vendor, follow these steps:
 
 1. On the **Generate vendor invoices** page, in the **Pay cycle** field, select the pay cycle to generate vendor invoices for.
 2. In the **Pay period** field, select the pay period to post pay statements for. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period. However, you can select any open pay period in the list.

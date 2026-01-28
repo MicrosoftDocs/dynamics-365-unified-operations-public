@@ -29,7 +29,7 @@ The procedures use the demo data company JPMF.
 
 ## Enter the disassembly list
 
-To enter the disassembly list, follow these steps.
+To enter the disassembly list, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. In the list, select the row.
@@ -49,7 +49,7 @@ To enter the disassembly list, follow these steps.
 
 ## Post the disassembly list
 
-To post the disassembly list, follow these steps.
+To post the disassembly list, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed asset \> Fixed assets journal**.
 1. Select **New**.

@@ -25,7 +25,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Acquire the fixed asset
 
-To acquire the fixed asset, follow these steps.
+To acquire the fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -40,7 +40,7 @@ To acquire the fixed asset, follow these steps.
 
 ## Claim the fixed asset for a government grant
 
-To claim the fixed asset for a government grant, follow these steps.
+To claim the fixed asset for a government grant, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

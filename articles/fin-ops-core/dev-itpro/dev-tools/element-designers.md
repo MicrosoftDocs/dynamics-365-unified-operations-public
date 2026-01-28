@@ -21,7 +21,7 @@ This article reviews the element designers and explains how to use them. The too
 
 ## Open an element designer
 
-To open an element designer, follow these steps.
+To open an element designer, follow these steps:
 
 1. Find the element in the project or in Application Explorer.
 2. Right-click the element. In Application Explorer, click **Open designer**. In the project, click **Open**.

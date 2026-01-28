@@ -74,7 +74,7 @@ To view targeted pages that reference external segments, a user must consent to 
 
 ### Create an audience in site builder
 
-To create an audience in Commerce site builder, follow these steps.
+To create an audience in Commerce site builder, follow these steps:
 
 1. In the left navigation pane, select **Audiences**.
 1. Select **New**.
@@ -94,7 +94,7 @@ To edit an audience, select the hyperlink for it on the **Audiences** tab, and t
 
 ### Rename an audience in site builder
 
-To rename an existing audience in Commerce site builder, follow these steps.
+To rename an existing audience in Commerce site builder, follow these steps:
 
 1. In the left navigation pane, select **Audiences**.
 1. Select the name of the audience segment that you want to rename.
@@ -112,7 +112,7 @@ You can define a schedule for your targets to specify how long they should remai
 
 ### Create a target
 
-To create a target shell for page modules in Commerce site builder, follow these steps.
+To create a target shell for page modules in Commerce site builder, follow these steps:
 
 1. In the left navigation pane, select **Pages**. Then select the hyperlink for the page that has the modules that you want to target.
 1. Select **Edit** to check out the page for editing.
@@ -145,7 +145,7 @@ You can also target fragments. The procedure is similar. However, in step 1, you
 
 ### Manage targets
 
-To edit, duplicate, or delete targets, go to the default page or fragment, and follow these steps.
+To edit, duplicate, or delete targets, go to the default page or fragment, and follow these steps:
 
 1. On the drop-down menu, select **Target**, and then select **Manage targets**.
 1. Select a target to edit, duplicate, or delete.

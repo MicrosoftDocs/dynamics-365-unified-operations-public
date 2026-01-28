@@ -69,7 +69,7 @@ The following table provides the sources and path for unified printing forms tha
 
 The system saves the information of all printing forms on a special list page. This page can be opened from a fixed asset transaction, transfer history, or from a fixed asset record (\#FA-6 only).
 
-For example, to create a Fixed asset inventory card (\#FA-6), follow these steps.
+For example, to create a Fixed asset inventory card (\#FA-6), follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the **Fixed assets** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
@@ -92,7 +92,7 @@ All pro forms can be printed from a fixed asset record, when the transaction tha
 > [!NOTE]
 > It isn't possible to print a pro form of the Fixed asset inventory card (#FA-6).
 
-To print pro forms of unified forms, follow these steps.
+To print pro forms of unified forms, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets** and select a fixed asset record.
 1. On the **Fixed assets** tab, select **Documents** \> **Documents** and then select the document to print.
@@ -107,7 +107,7 @@ You can print existing unified printing forms from different places, including:
 
 ### Print unified forms from a fixed asset record
 
-To print existing unified printing forms from a fixed asset record, follow these steps.
+To print existing unified printing forms from a fixed asset record, follow these steps:
 
 1. Select the fixed asset record, and then on the Action Pane, select **Documents** \> **Documents**. 
 1. Select the unified printing form. If you're printing more than one document, the page list for corresponded document type is displayed. 
@@ -117,7 +117,7 @@ If there's only one unified printing form document for the selected fixed asset,
 
 ### Print unified forms from inquiries
 
-To print documents that are created from inquiries, follow these steps.
+To print documents that are created from inquiries, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**.
 1. Highlight the document to print, and then select **Print**.

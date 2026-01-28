@@ -1,10 +1,10 @@
 ---
 title: Archive customization
 description: Learn about how the archive feature in Microsoft Dynamics 365 finance and operations apps supports table customizations, including code examples.
-author: Weijiesa 
+author: kehoej99 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 01/22/2026
 ms.custom:
 ms.reviewer: twheeloc
 
@@ -46,7 +46,7 @@ The customized business entity must be refreshed in Dataverse to archive data in
 
 Additional tables can be included in the archive scenario if they have a direct or indirect relationship with the main live table.
 
-To create a history table that corresponds to the live table in the archive scope, follow these steps.
+To create a history table that corresponds to the live table in the archive scope, follow these steps:
 
 1. Create a new history table that mirrors all fields from the corresponding live table, including all metadata properties on the live table. See the [column exclusion rule](#excl-rule) earlier in this article.
 1. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on the `RecId` column is sufficient. Create an additional index to improve query performance as required and to maintain foreign key relationships.
@@ -57,37 +57,44 @@ To create a history table that corresponds to the live table in the archive scop
 The following example shows how to customize the General ledger archive job request creator class to add a new table.
 
 ```
-using Microsoft.Dynamics.Archive.Contracts; 
-[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator] 
-final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension 
+using Microsoft.Dynamics.Archive.Contracts;
+[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))]
+final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 {
-    public ArchiveJobPostRequest createPostJobRequestForArchiveTrans(LedgerArchiveTrans _archiveTrans 
-    { 
-        ArchiveJobPostRequest postRequest = next createPostJobRequestForArchiveTrans(_archiveTrans; 
-        ArchiveServiceArchiveJobPostRequestBuilder builder = 
-            ArchiveServiceArchiveJobPostRequestBuilder::createFromArchiveJobPostRequest(postRequest; 
+    public ArchiveJobPostRequest createPostJobRequestForArchiveTrans(LedgerArchiveTrans _archiveTrans)
+    {
+        ArchiveJobPostRequest postRequest = next createPostJobRequestForArchiveTrans(_archiveTrans);
+        ArchiveServiceArchiveJobPostRequestBuilder builder =
+            ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
 
-        // Use builder to add more live tables, history tables, join conditions and where conditions (if needed 
-        // Example: Adding my new general ledger table to archive table graph 
-        var generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry; 
-        var generalJournalAccountEntryTableName = generalJournalAccountEntryTable.name(DbBackend::Sql; 
-        var newMyNewGeneralLedgerTable = new DictTable(tableNum(MyNewGeneralLedgerTable; 
-        var newMyNewGeneralLedgerTableName = newMyNewGeneralLedgerTable.name(DbBackend::Sql; 
-        var newMyNewGeneralLedgerTableHistory = new DictTable(tableNum(MyNewGeneralLedgerTableHistory; 
-        var newMyNewGeneralLedgerTableHistoryName = newMyNewGeneralLedgerTableHistory.name(DbBackend::Sql; 
-        var myNewGeneralLedgerTableSourceTable = ArchiveServiceSourceTableConfiguration::newForSourceTable( 
-            newMyNewGeneralLedgerTableName, 
-            newMyNewGeneralLedgerTableHistoryName, 
-            tableStr(MyNewGeneralLedgerTableBiEntity; 
+        // Use builder to add more live tables, history tables, join conditions and where conditions (if needed)
+        // Example: Adding my new general ledger table to archive table graph
+        DictTable generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry));
+        str generalJournalAccountEntryTableName = generalJournalAccountEntryTable.name(DbBackend::Sql);
 
-        // Add parent table 
-        myNewGeneralLedgerTableSourceTable.parmParentSourceTableName(generalJournalAccountEntryTableName; 
-        builder.addSourceTableForLongTermRetention(myNewGeneralLedgerTableSourceTable 
-            .addJoinCondition(newMyNewGeneralLedgerTableName, 
-            newMyNewGeneralLedgerTable.fieldName(fieldNum(MyNewGeneralLedgerTable, GeneralJournalAccountEntry, DbBackend::Sql, 
-            generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId, DbBackend::Sql; 
+        DictTable newMyNewGeneralLedgerTable = new DictTable(tableNum(MyNewGeneralLedgerTable));
+        str newMyNewGeneralLedgerTableName = newMyNewGeneralLedgerTable.name(DbBackend::Sql);
+        DictTable newMyNewGeneralLedgerTableHistory = new DictTable(tableNum(MyNewGeneralLedgerTableHistory));
+        str newMyNewGeneralLedgerTableHistoryName = newMyNewGeneralLedgerTableHistory.name(DbBackend::Sql);
 
-        return builder.completeArchiveJobPostRequest(; 
+        ArchiveServiceSourceTableConfiguration myNewGeneralLedgerTableSourceTable = 
+            ArchiveServiceSourceTableConfiguration::newForSourceTable(
+                newMyNewGeneralLedgerTableName,
+                newMyNewGeneralLedgerTableHistoryName,
+                tableStr(MyNewGeneralLedgerTableBiEntity));
+
+        // Add parent table
+        myNewGeneralLedgerTableSourceTable.parmParentSourceTableName(generalJournalAccountEntryTableName);
+
+        builder.addSourceTableForLongTermRetention(myNewGeneralLedgerTableSourceTable)
+            .addJoinCondition(newMyNewGeneralLedgerTableName,
+                newMyNewGeneralLedgerTable.fieldName(fieldNum(MyNewGeneralLedgerTable, GeneralJournalAccountEntryRecId), DbBackend::Sql),
+                generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId), DbBackend::Sql));
+
+        return builder.finalizeArchiveJobPostRequest();
+    }
+
+}
 ```
 
 ### Finance and operations table names in live, history, and Dataverse-managed data lake tables

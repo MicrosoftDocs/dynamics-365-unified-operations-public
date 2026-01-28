@@ -28,7 +28,7 @@ Before you complete the following procedures, select the **Fixed Asset** configu
 
 ## Change the depreciation profile for a fixed asset
 
-To change the depreciation profile for a fixed asset, follow these steps.
+To change the depreciation profile for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Use the Quick Filter to find records. For example, filter on the **Fixed asset number** field with a value of "STRUM-000001".

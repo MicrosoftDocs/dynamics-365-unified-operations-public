@@ -31,7 +31,7 @@ To view ARO transactions, in Dynamics 365 Finance, go to **Fixed assets \> Asset
 
 ## Explore ARO
 
-To explore ARO, follow these steps.
+To explore ARO, follow these steps:
 
 1. In the **Fixed asset number** field, select to follow the link. You can also find the fixed asset number and open it from the **Fixed assets** page.  
 1. On the Action Pane, select **Fixed asset**.

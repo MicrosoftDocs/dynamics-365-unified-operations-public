@@ -32,7 +32,7 @@ Various constants or rates, such as tax rates, can be used as parameters to calc
 
 When used in counters, rates must be preconfigured. 
 
-To set up rates, follow these steps.
+To set up rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit Tax** \> **Rates**.
 1. On the Action Pane, select **New**.
@@ -58,7 +58,7 @@ To set up rates, follow these steps.
 
 The sequence of calculation contains counters that implement several arithmetic and logical operations on strings of certain types for a specified period. Learn more in [Create a sequence of calculation](rus-set-up-deferrals.md#create-a-sequence-of-calculation).
 
-To create a sequence of calculation for rated expenses, follow these steps.
+To create a sequence of calculation for rated expenses, follow these steps:
 
 1. In Dynamics 365 Finance, create and set up the **Standard expenses in current period** tax register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 1. Create expense codes for normalization. For more information, see [Expense and income codes](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
@@ -82,7 +82,7 @@ To create a sequence of calculation for rated expenses, follow these steps.
 
 ### Assign calculation sequences to the register
 
-To assign calculation sequences to the register, follow these steps.
+To assign calculation sequences to the register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit Tax** \> **Registers**.
 1. Select the **Standard expenses in current period** tax register from the list.

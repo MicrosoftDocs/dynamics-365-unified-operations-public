@@ -30,7 +30,7 @@ If you plan to use budgeting workflows, create the workflows, and then assign th
 > [!NOTE]
 > The **Budget register entries performance enhancement** feature provides additional performance gain on the **Budget register entries** page by splitting the entries into two separate pages: one for **Completed** status and one for **Draft** status. There are major performance gains on the **Draft entries** list. This feature can be enabled in Feature management.
  
-To create a budget register entry, follow these steps.
+To create a budget register entry, follow these steps:
 
 1. Go to **Budgeting** \> **Budget register entry** to create a budget register entry.
 1. On the **Budget register entry** FastTab, select a budget model and a budget code. The reason code is optional. 

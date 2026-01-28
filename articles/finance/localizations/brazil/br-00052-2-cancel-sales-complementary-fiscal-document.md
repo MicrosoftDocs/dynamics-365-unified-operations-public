@@ -22,7 +22,7 @@ You can cancel an incorrect sales complementary fiscal document and provide a re
 
 The following procedure uses the BRMF demo company.
 
-To cancel an incorrect sales complementary fiscal document and provide a reason for the cancellation, follow these steps.
+To cancel an incorrect sales complementary fiscal document and provide a reason for the cancellation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Fiscal documents \> All sales complementary fiscal documents**.
 1. In the list, mark the selected row.

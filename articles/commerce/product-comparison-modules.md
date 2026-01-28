@@ -48,7 +48,7 @@ The following illustration shows an example of a product comparison page.
 
 You can create a dedicated product comparison page by adding a product comparison module to the body of a page. In addition to enabling customers to compare product details of different products, you can configure the product comparison module to give customers the option to quickly complete their purchase after they compare products. The product comparison module also contains an **Empty comparison** slot, where you can add a content block module that describes the empty state (for example "Your product comparison is empty").
 
-To add a product comparison module to a new product comparison page, follow these steps.
+To add a product comparison module to a new product comparison page, follow these steps:
 
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Create a new page** dialog box, under **Page name**, enter an appropriate page name (for example, **Product comparison**), and then select **Next**.
@@ -78,7 +78,7 @@ The product comparison button lets users quickly add a product to the comparison
 
 The product comparison button is supported by the product collection, search results, and PDP buy box modules.
 
-To add a product comparison button to product tiles on search and category results pages, follow these steps.
+To add a product comparison button to product tiles on search and category results pages, follow these steps:
 
 1. In site builder, go to **Pages**, and open the category page that you want to add a product comparison button to.
 1. In the **Main slot**, select the ellipsis (**...**), and then select **Add module**.
@@ -109,7 +109,7 @@ You can specify the maximum number of products to show in the comparison tray by
 > [!NOTE]
 > For an optimal browsing experience, we recommend that you set the maximum number of products in the comparison tray to **2** for the mobile viewport and **4** for the desktop viewport to reduce the amount of horizontal scrolling that is required.
 
-To specify the maximum number of products in the comparison tray, follow these steps.
+To specify the maximum number of products in the comparison tray, follow these steps:
 
 1. In site builder, go to **Site settings \> Extensions**.
 1. For the **Products in the comparison limit - desktop devices** property, enter the maximum number of products that should be shown in the comparison tray for desktop viewports.

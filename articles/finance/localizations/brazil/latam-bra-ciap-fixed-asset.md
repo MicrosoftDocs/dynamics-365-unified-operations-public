@@ -24,7 +24,7 @@ Fiscal books can acquire and dispose of fixed assets that are ICMS tax long-term
 
 Use this functionality to register in Fiscal books module the acquisition of a fixed asset controlled by the ICMS tax long term return.
 
-To acquire a CIAP fixed asset, follow these steps.
+To acquire a CIAP fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **All purchase orders**.
 1. In the **Vendor account** field, select a vendor.
@@ -74,7 +74,7 @@ To acquire a CIAP fixed asset, follow these steps.
 
 Use this functionality to register the disposal of a fixed asset controlled by the ICMS tax long term return in the Fiscal books module.
 
-To acquire a CIAP fixed asset, follow these steps.
+To acquire a CIAP fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **All free text invoices**.
 1. Select **New**.

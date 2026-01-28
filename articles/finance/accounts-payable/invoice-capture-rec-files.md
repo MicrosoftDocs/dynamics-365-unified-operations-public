@@ -62,7 +62,7 @@ The duplicate file check uses the checksum method to determine whether the same 
 
 ## Upload invoice files
 
-To upload invoice images, follow these steps.
+To upload invoice images, follow these steps:
 
 1. Go to **Manage Invoices \> Received file**.
 2. Select **Upload file**.

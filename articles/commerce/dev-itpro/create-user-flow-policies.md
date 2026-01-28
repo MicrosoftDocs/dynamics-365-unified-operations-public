@@ -33,7 +33,7 @@ To customize the user policy pages with pages built in Dynamics 365 Commerce, se
 
 ### Create a sign-up and sign-in user flow policy
 
-To create a sign-up and sign-in user flow policy, follow these steps.
+To create a sign-up and sign-in user flow policy, follow these steps:
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Microsoft Entra B2C – User flows (policies)** page, select **New User Flow**.
@@ -63,7 +63,7 @@ The following image is an example of the Microsoft Entra B2C sign-up and sign-in
    
 ### Create a profile editing user flow policy
 
-To create a profile editing user flow policy, follow these steps.
+To create a profile editing user flow policy, follow these steps:
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Microsoft Entra B2C – User flows (policies)** page, select **New User Flow**.
@@ -88,7 +88,7 @@ The following image shows an example of the Microsoft Entra B2C profile editing 
 
 ### Create a password reset user flow policy
 
-To create a password reset user flow policy, follow these steps.
+To create a password reset user flow policy, follow these steps:
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Microsoft Entra B2C – User flows (policies)** page, select **New User Flow**.

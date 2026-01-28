@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article shows how to find obsolete released products or product variants and how to associate a [product lifecycle state](../product-lifecycle.md) to the obsolete products. It also shows how to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
+This article explains how to find obsolete released products or product variants and how to associate a [product lifecycle state](../product-lifecycle.md) to the obsolete products. It also explains how to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
 
 When you run the analysis in simulation mode, it displays the products and product variants identified as obsolete. You can easily review these products. The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand. You can exclude new released products within a variable period from the analysis. When the analysis simulation returns the expected result, you can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.  
 

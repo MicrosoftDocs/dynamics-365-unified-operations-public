@@ -43,7 +43,7 @@ You must be running Commerce version 10.0.46 to use Unified pricing management.
 
 ## Migrate to Unified pricing management
 
-To migrate to Unified pricing management, follow these steps.
+To migrate to Unified pricing management, follow these steps:
 
 1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration** \> **Workspaces** \> **Feature management**.
 1. Search for the **Unified pricing management pricing rule performance and enhancement** feature.

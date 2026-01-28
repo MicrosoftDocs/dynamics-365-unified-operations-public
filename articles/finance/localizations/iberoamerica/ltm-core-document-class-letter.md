@@ -4,7 +4,7 @@ description: Learn about the document class letter configuration for Latin Ameri
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 12/12/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak 
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Document class letter for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 Create the letter codes that are part of the fiscal documents configuration. Use these codes in transactions with third parties.
 

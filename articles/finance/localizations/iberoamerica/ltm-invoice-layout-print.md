@@ -4,12 +4,16 @@ description: Learn how to configure the LATAM invoice layout format when printin
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: how-to
-ms.date: 11/04/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
 # Configure the layout of a printed invoice for Latin America
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article explains how to set up the basic configuration for the Latin American (LATAM) invoice layout when printing invoices.
 
@@ -96,3 +100,5 @@ To configure a printing layout, follow these steps:
 
     > [!NOTE]
     > To run a free text invoice format, enable the **Use RDP-based model mapping for the Free text invoice report** feature in the **Feature management** workspace.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

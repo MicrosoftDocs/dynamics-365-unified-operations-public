@@ -20,7 +20,7 @@ This article explains how to calculate depreciation for Russian fixed assets in 
 
 ## Calculate fixed asset depreciation
 
-To calculate fixed asset depreciation, follow these steps.
+To calculate fixed asset depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Select the **List** tab, and then select **New** to create a journal.
@@ -51,7 +51,7 @@ Use the following procedures to set up a depreciation method, and to calculate o
 
 ### Calculate fixed asset depreciation by using the tax non-linear group method
 
-To calculate fixed asset depreciation by using the tax non-linear group method, follow these steps.
+To calculate fixed asset depreciation by using the tax non-linear group method, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Select **New** to create a journal.
@@ -77,7 +77,7 @@ Use the **Depreciation bonus** page to calculate the depreciation bonus for fixe
 
 ### Reverse fixed asset depreciation
 
-To reverse fixed asset depreciation, follow these steps.
+To reverse fixed asset depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Select the **List** tab, and then select **New** to create a journal.

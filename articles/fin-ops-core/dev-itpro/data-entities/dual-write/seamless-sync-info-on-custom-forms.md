@@ -21,7 +21,7 @@ When you install the supply chain solution for Dynamics 365 Sales, it makes seve
 
 ## Add seamless sync information to custom Order or Quote forms
 
-To add seamless sync information to custom Order or Quote forms in Sales, follow these steps.
+To add seamless sync information to custom Order or Quote forms in Sales, follow these steps:
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. Open your custom *Order* or *Quote* form.
@@ -39,7 +39,7 @@ You can learn more about how to work with libraries and events for custom forms 
 
 ## Add seamless sync information to custom Order Product or Quote Product forms
 
-To add seamless sync information to custom Order Product or Quote Product forms in Sales, follow these steps.
+To add seamless sync information to custom Order Product or Quote Product forms in Sales, follow these steps:
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. Open your custom *Order Product* or *Quote Product* form.

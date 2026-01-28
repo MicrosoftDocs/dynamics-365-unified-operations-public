@@ -29,7 +29,7 @@ The loyalty upsell prompt feature enables store associates to provide customers 
 > [!NOTE]
 > The loyalty upsell prompt feature is available as of Commerce version 10.0.44. The feature isn't backported to previous releases.
 
-To enable the loyalty upsell prompt feature, follow these steps.
+To enable the loyalty upsell prompt feature, follow these steps:
 
 1. In Commerce headquarters, go to **Systems administration** \> **Workspaces** \> **Feature management**.
 1. Search for the **Retail Loyalty Upsell Prompt** feature, and then select it.
@@ -37,7 +37,7 @@ To enable the loyalty upsell prompt feature, follow these steps.
 
 ## Configure the loyalty upsell prompt feature
 
-To configure the loyalty upsell prompt feature, follow these steps.
+To configure the loyalty upsell prompt feature, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Customers** \> **Loyalty** \> **Loyalty programs**.
 1. In the left pane, select your loyalty program. For example, select **Fabrikam Rewards**.

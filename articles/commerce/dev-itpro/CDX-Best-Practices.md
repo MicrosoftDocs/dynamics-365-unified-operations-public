@@ -47,7 +47,7 @@ You must initialize the base configuration data for Commerce scheduler after you
 1. Apply a service update.
 2. Enable a Commerce feature that impacts a configuration key.
 
-To initialize the base configuration data, follow these steps.
+To initialize the base configuration data, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**, where you're prompted as to whether you want like to proceed with initializing the base configuration data for Commerce scheduler. Performing this action after every update is key to maintaining functionality as it correctly sets the configuration data for new tables or columns. 
 2. There's a parameter to **Delete existing configuration**. Unless you're explicitly instructed to do delete an existing configuration, or you're working on a nonproduction environment where losing the configuration doesn't create an impact, leave this parameter set to **No**.

@@ -25,7 +25,7 @@ In Japan, multiple departments can share the depreciation expenses of a particul
 
 ## Create a fixed asset depreciation allocation rule
 
-To create a fixed asset depreciation allocation rule, follow these steps.
+To create a fixed asset depreciation allocation rule, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation allocation rules**.
 1. Select **New**.
@@ -44,7 +44,7 @@ To create a fixed asset depreciation allocation rule, follow these steps.
 
 ## Assign a fixed asset allocation rule to a posting profile
 
-To assign a fixed asset allocation rule to a posting profile, follow these steps.
+To assign a fixed asset allocation rule to a posting profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset posting profiles**.
 1. Select **Edit**.

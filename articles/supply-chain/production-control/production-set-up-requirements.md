@@ -35,7 +35,7 @@ Information in other modules must be set up before you can work with Production 
 Before you use Production control, open Organization administration, and create and define the calendar and operations resources in the following order:
 
 1. **Working time templates** – Set up working time templates to define the times that are available for production scheduling.
-1. **Calendars** – Set up working time calendars to define the days of the year that are available for production scheduling.
+1. **Calendars** – Set up [working time calendars](../master-planning/supply-chain-calendars-master-planning.md) to define the days of the year that are available for production scheduling.
 1. **Resource groups** – Set up resource groups to group the operations resources, so that you can get an overview of any free capacity when you run scheduling. You don't have to set up resource groups before you set up operations resources. However, we recommend that you understand how to group resources when you set up Production control.
 1. **Resources** – Set up operations resources to define the resources that are used to complete the production process and plan for capacity.
 

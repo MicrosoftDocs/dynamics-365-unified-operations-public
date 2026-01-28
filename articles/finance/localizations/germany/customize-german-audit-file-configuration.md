@@ -21,7 +21,7 @@ This article explains how to customize the German audit file configuration by ad
 
 The following procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
 
-To add a new table group and select a table with fields for data export definition, follow these steps.
+To add a new table group and select a table with fields for data export definition, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration > Workspaces > Electronic reporting**.
 1. Select **Configurations**.

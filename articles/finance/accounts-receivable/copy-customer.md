@@ -40,7 +40,7 @@ To copy a customer, in the **Name** field, enter one or more characters that rep
 - The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.
 - **Tax registration ID** tab shows the tax registration IDs that are assigned to the party.
 
-You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps.
+You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps:
 
 1. A **Copy customer** option appears. By default, this option is set to **No**. To copy the customer to the current legal entity, set the option to **Yes**. 
 2. A **Legal entity** field appears. Select the legal entity to copy the customer from. If the customer exists in only one legal entity, the field is set to that legal entity by default.
@@ -52,7 +52,7 @@ When you copy a customer, the system tries to save the new customer information.
 
 ## Copy a customer by using tax exempt number search feature
 
-You can also copy customers by using the Tax exempt number search feature that is in the **Registration** group on the **Customer** tab on the Action Pane of the **All customers** page. The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used. You can copy a customer only if it's in a legal entity that isn't the current legal entity. After you select a customer that meets this criterion, follow these steps.
+You can also copy customers by using the Tax exempt number search feature that is in the **Registration** group on the **Customer** tab on the Action Pane of the **All customers** page. The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used. You can copy a customer only if it's in a legal entity that isn't the current legal entity. After you select a customer that meets this criterion, follow these steps:
 
 1. A **Copy customer** option appears. By default, this option is set to **No**. To copy the customer to the current legal entity, set the option to **Yes**. 
 2. Select **Select**. The new customer is created.

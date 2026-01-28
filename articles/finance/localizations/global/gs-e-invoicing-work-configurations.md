@@ -27,7 +27,7 @@ In addition to generating outbound electronic files in the predefined format, ER
 
 To start to use ER configurations in your Electronic invoicing feature, you must link them to the feature and make them available on the **Configurations** tab for the current feature version. You can work with a linked ER configuration by selecting **Add**, **Delete**, **Edit**, or **View**.
 
-Before you can add a link to an ER configuration, the configuration must exist in your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. To review the available ER configurations, follow these steps.
+Before you can add a link to an ER configuration, the configuration must exist in your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. To review the available ER configurations, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 1. In the **Configurations** section, select the **Reporting configurations** tile.

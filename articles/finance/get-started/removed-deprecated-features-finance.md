@@ -91,7 +91,7 @@ Use this list to help you plan for these removals and deprecations.
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation or removal** | Replaced with Fiscal Journal in Electronic Reporting ER format. For more information, see [Fiscal Journal for Italy](../localizations/italy/emea-ita-fiscal-journal.md) | 
+| **Reason for deprecation/removal** | Replaced with Fiscal Journal in Electronic Reporting ER format. For more information, see [Fiscal Journal for Italy](../localizations/italy/emea-ita-fiscal-journal-er.md) | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |

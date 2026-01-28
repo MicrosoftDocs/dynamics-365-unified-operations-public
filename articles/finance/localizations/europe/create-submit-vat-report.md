@@ -20,7 +20,7 @@ This article describes how to create and submit a value added tax (VAT) report t
 
 The following procedure walks you through creating and submitting the VAT report to the German authority. This functionality is available for legal entities whose primary address is in Germany. The procedure was created using the demo data company DEMF.
 
-To create and submit a VAT report to the German authority, follow these steps.
+To create and submit a VAT report to the German authority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement period**.
 1. In the **Settlement period** field, enter or select a value.

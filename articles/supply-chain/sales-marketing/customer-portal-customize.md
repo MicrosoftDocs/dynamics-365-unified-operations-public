@@ -141,7 +141,7 @@ The only custom control that is included in the Customer portal template is used
 
 ![Tiles on the home page.](media/customer-portal-home-page-tiles.png "Tiles on the home page")
 
-To modify the tiles, follow these steps.
+To modify the tiles, follow these steps:
 
 1. Open the [Portal Management app](/powerapps/maker/portals/configure/configure-portal).
 1. In the navigation pane on the left, select **Page Templates**.

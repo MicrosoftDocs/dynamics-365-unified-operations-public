@@ -22,8 +22,8 @@ This topic explains how to enable and set up corrective and preventive action (C
 Before you can use CAPA management features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- If you want to require electronic signatures when CAPA cases are closed, the feature that is named *Electronic signature improvements* must also be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
+- If you want to require electronic signatures when CAPA cases are closed, the feature that is named *Electronic signature improvements* must also be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
 
 ## Set up CAPA parameters
 
@@ -63,7 +63,7 @@ CAPA cases use the standard electronic signature feature that is provided in fin
 
 ### Turn the electronic signature requirement for CAPA cases on or off
 
-To set up the electronic signature requirements for CAPA cases, follow these steps.
+To set up the electronic signature requirements for CAPA cases, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
 1. In the left pane, select the row where the **Name** field is set to *Close/Cancel CAPA case*.

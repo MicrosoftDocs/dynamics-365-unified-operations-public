@@ -25,7 +25,7 @@ Both managers and workers can create task lists in Commerce back office, and the
 
 ## Create a task list
 
-Before you start the process of creating a task list, make sure you complete the configurations in the [Configure task management](task-mgmt-configure.md) article. To create a task list, follow these steps.
+Before you start the process of creating a task list, make sure you complete the configurations in the [Configure task management](task-mgmt-configure.md) article. To create a task list, follow these steps:
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select **New**, and then enter values in the **Name**, **Description**, and **Owner** fields.
@@ -33,7 +33,7 @@ Before you start the process of creating a task list, make sure you complete the
 
 ## Add tasks to a task list
 
-To add tasks to a task list, follow these steps.
+To add tasks to a task list, follow these steps:
  
 1. On the **Tasks** FastTab of an existing task list, select **New** to add a task.
 1. In the **Create a new task** dialog box, in the **Name** field, enter a name for the task.
@@ -49,7 +49,7 @@ To add tasks to a task list, follow these steps.
 
 Commerce lets you link tasks to specific POS operations, such as running a sales report, viewing an online training video for new employee orientation, or performing a back-office operation. This feature helps task owners get the information that they need to complete a task efficiently.
 
-To add task links while you create a task, follow these steps.
+To add task links while you create a task, follow these steps:
 
 1. On the **Tasks** FastTab of an existing task list, select **Edit**.
 1. In the **Edit task** dialog box, in the **Task link** field, select one or more of the following options:
@@ -64,7 +64,7 @@ The following illustration shows the selection of task links in the **Edit task*
 
 ### Configure a POS operation so that it can be linked to a task
 
-To configure a POS operation so that it can be linked to a task, follow these steps.
+To configure a POS operation so that it can be linked to a task, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> POS operations**.
 1. Select **Edit**, find the POS operation, and then select the **Enable Task Management** check box for it.

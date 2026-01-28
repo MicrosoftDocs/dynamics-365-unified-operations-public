@@ -26,7 +26,7 @@ Before you begin the procedures in this article, provision an Azure storage acco
 
 ## Create an Azure file share
 
-To create an Azure file share, follow these steps.
+To create an Azure file share, follow these steps:
 
 1. Select the storage account from your dashboard.
 1. On the service menu, under **Data storage**, select **File shares**.
@@ -41,7 +41,7 @@ To create an Azure file share, follow these steps.
 
 1. To create the Azure file share, select **Review + create**, and then select **Create**.
 
-To get the connection string, follow these steps.
+To get the connection string, follow these steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/) with your subscription, and find the corresponding Storage account resource.
 1. Go to **Security + Networking** \> **Access keys**.

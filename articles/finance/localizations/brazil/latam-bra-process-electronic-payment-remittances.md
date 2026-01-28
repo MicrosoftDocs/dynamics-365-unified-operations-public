@@ -20,7 +20,7 @@ This article describes how to create the instructions for electronic payment of 
 
 Use this functionality to create the file that you send to the bank with the instructions for electronic payment of vendor invoices.
 
-To create the instructions for electronic payment of vendor invoices that you send to the bank, follow these steps.
+To create the instructions for electronic payment of vendor invoices that you send to the bank, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Payment journal**.
 1. Select **New**.

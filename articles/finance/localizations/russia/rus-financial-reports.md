@@ -36,7 +36,7 @@ To set up the financial reports, you must complete the following tasks:
 
 ### Set up report names
 
-To set up report names, follow these steps.
+To set up report names, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Financial reports setup \> Financial reports** to open the **Reports** page. The **Overview** tab shows a list of all the reports that are set up in the system.
 2. Create a report, and enter a name and description for it.
@@ -74,7 +74,7 @@ You can set up the cells of a report either manually or by copying them from ano
 
 #### Copy financial reports settings
 
-To copy financial reports settings, follow these steps.
+To copy financial reports settings, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Reports** page, select **Copy** to open the **Copy report settings into a new report** dialog.
 2. In the **Source report** section, in the **Company** field, select the company to copy. In the **Report code** field, select the report code to copy.
@@ -82,7 +82,7 @@ To copy financial reports settings, follow these steps.
 
 #### Manually create report cells
 
-To manually create report cells, follow these steps.
+To manually create report cells, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Reports** page, select **Setup** to open the **Requisites setup** page. The upper pane shows a list of report cells and their main parameters.
 
@@ -103,7 +103,7 @@ The tabs in the upper pane, and the fields on each tab, are the same as the tabs
 
 Use the following procedure to create operations for report cells.
 
-To set up calculation rules for report cells, follow these steps.
+To set up calculation rules for report cells, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Reports** page, select **Setup** to open the **Requisites setup** page.
 2. In the upper pane, select the line for a report cell, or create a line. Then, in the lower pane, select **Add** to create a line.
@@ -218,7 +218,7 @@ To set up calculation rules for report cells, follow these steps.
 
 Before you run a report, create an electronic reporting format that will export the data that's calculated for the financial report. For more information about how to create an  electronic reporting format in Excel, see [Configure financial reports in Excel](rus-excel-financial-report.md).
 
-To run the report, follow these steps.
+To run the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger > Inquiries and reports > Financial reports (Russia)**. 
 2. In the **Format mapping** field, select the electronic report format that you have created and then select **OK**. 
@@ -236,7 +236,7 @@ To run the report, follow these steps.
 
 The following example procedure shows how to configure electronic messages to run the ER configuration for financial reports. Learn more in [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
-To run the report from electronic messages, follow these steps.
+To run the report from electronic messages, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Message statuses** page, create message statuses that are applicable to the report (for example, **Created** and **Generated**).
 2. On the **Message processing action** page, create the following actions:

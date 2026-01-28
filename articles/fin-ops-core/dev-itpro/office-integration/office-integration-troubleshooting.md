@@ -57,7 +57,7 @@ Most of the work that the Excel add-in does should occur on the server. To learn
 
 The Excel add-in sends the published records as a request. When those records are processed, the response is sent back from the server. The Excel add-in then creates another message that contains the next set of records to publish, and sends that request. Five to 10 seconds of processing time in the Excel add-in should be required between the previous response from the server and the next request to the server.
 
-To check processing time in the Excel add-in versus the server/service, follow these steps.
+To check processing time in the Excel add-in versus the server/service, follow these steps:
 
 1. Start [Fiddler](https://www.telerik.com/fiddler). 
 2. Publish a few records to test the process.

@@ -25,7 +25,7 @@ The procedures use the demo data company MYMF.
 
 ## Create a project sales debit note
 
-To create a project sales debit note, follow these steps.
+To create a project sales debit note, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> All projects**.
 1. On the Action Pane, select **Manage**.
@@ -56,7 +56,7 @@ To create a project sales debit note, follow these steps.
 
 ## Create and post an hour journal
 
-To create and post an hour journal, follow these steps.
+To create and post an hour journal, follow these steps:
 
 1. On the Action Pane, select **Project**.
 1. Select **Hour**.
@@ -77,7 +77,7 @@ To create and post an hour journal, follow these steps.
 
 ## Create and post invoice proposal
 
-To create and post invoice proposal, follow these steps.
+To create and post invoice proposal, follow these steps:
 
 1. On the Action Pane, select **Manage**.
 1. Select **Invoice proposa**.

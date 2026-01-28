@@ -23,7 +23,7 @@ The following procedures show you how to create a vendor with configuration for 
 
 ## Create a vendor
 
-To create a vendor, follow these steps.
+To create a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. Select **New**.
@@ -36,7 +36,7 @@ To create a vendor, follow these steps.
 
 ## Set the invoice declaration category for the vendor
 
-To set the invoice declaration category for the vendor, follow these steps.
+To set the invoice declaration category for the vendor, follow these steps:
 
 1. Expand or collapse the **Invoice and delivery** section.
 1. Select the drop-down button in the **Invoice declaration** field to open the lookup.

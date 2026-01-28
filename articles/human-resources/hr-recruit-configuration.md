@@ -37,7 +37,7 @@ This article explains how to configure the HR Recruiting app in Microsoft Dynami
 - In the Power Platform admin center, confirm that the added user and email account belongs to the Microsoft Power Platform environment and has the basic user role.
 - Ensure that the email account has a valid Office license.
 
-To enable users and email accounts to receive and send messages, follow these steps.
+To enable users and email accounts to receive and send messages, follow these steps:
 
 1. Sign in to the Recruiting add-on app.
 1. Go to **Settings** \> **Advanced settings**.
@@ -58,7 +58,7 @@ To enable users and email accounts to receive and send messages, follow these st
 
 ## Update settings in the Recruiting add-on
 
-To update the settings in the Recruiting add-on, follow these steps.
+To update the settings in the Recruiting add-on, follow these steps:
 
 1. Sign in to Recruiting add-on app as the recruiting administrator.
 1. Go to **Configurations** \> **Email account configurations**.
@@ -114,7 +114,7 @@ For more information about how to create an email template in model-driven apps,
 
 Each company can have a logo that appears when the job is posted. The logo is visible to candidates on the careers site.
 
-To set up a company logo, follow these steps.
+To set up a company logo, follow these steps:
 
 1. In the left pane, select **Company logos**.
 1. Select **New**.
@@ -127,7 +127,7 @@ To set up a company logo, follow these steps.
 
 A hiring template is a template that a recruiter can use for multiple job postings. You can adjust the stages and steps to suit your needs. A *stage* is a round that a recruiter wants to conduct for each candidate. A *step* is an additional action that might be needed under a stage.
 
-To create a hiring template, follow these steps.
+To create a hiring template, follow these steps:
 
 1. In the left pane, select the hiring template. All available templates are shown.
 1. To create a new template, select **New**.

@@ -1,11 +1,10 @@
 ---
 title: Configure a Dynamics 365 Commerce sandbox environment
-description: This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
+description: Learn how to configure a Microsoft Dynamics 365 Commerce sandbox environment after the environment is provisioned.
 author: josaw1
-ms.date: 07/25/2024
+ms.date: 01/21/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-12-10
@@ -17,25 +16,27 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after it's provisioned.
+This article explains how to configure a Microsoft Dynamics 365 Commerce sandbox environment after the environment is provisioned.
 
-Complete the procedures in this article only after your Commerce sandbox environment has been provisioned. For information about how to provision your Commerce sandbox environment, see [Provision a Commerce sandbox environment](provisioning-guide.md).
+Complete the procedures in this article only after your Commerce sandbox environment is provisioned. For information about how to provision your Commerce sandbox environment, see [Provision a Commerce sandbox environment](provisioning-guide.md).
 
-After your Commerce sandbox environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to use the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
+After your Commerce sandbox environment is provisioned, you must complete additional post-provisioning configuration steps before you can start to use the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
 
 ## Before you start
+
+Before you start, follow these steps:
 
 1. Sign in to the [LCS portal](https://lcs.dynamics.com).
 1. Go to your project.
 1. Select your environment in the list.
-1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
-1. Make sure that the **USRT** legal entity is selected in the upper-right corner. This legal entity has been preconfigured in the demo data.
+1. In the environment information on the right, select **Log on to environment**. You're sent to Commerce headquarters.
+1. Make sure that the **USRT** legal entity is selected in the upper-right corner. This legal entity is preconfigured in the demo data.
 1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, add it and set the value to **true**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, set the **Delete existing configuration** option to **Yes**, and then select **OK**.
-1. For the store and e-commerce channels to work properly, they must be added to the Commerce Scale Unit. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you will be using point of sale (POS) (for example, **Seattle**, **San Francisco**, and/or **San Jose**).
+1. For the store and e-commerce channels to work properly, you must add them to the Commerce Scale Unit. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you use point of sale (POS) (for example, **Seattle**, **San Francisco**, and **San Jose**).
 1. To ensure that all changes are synchronized with the channel database, select **Channel Database \> Full data sync** for the Commerce Scale Unit.
 
-During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
+During post-provisioning activities in Commerce headquarters, make sure that you always select the **USRT** legal entity.
 
 ## Configure the point of sale
 
@@ -43,7 +44,7 @@ During post-provisioning activities in Commerce headquarters, make sure that the
 
 To associate a worker with your identity, follow these steps in Commerce headquarters.
 
-1. Use the menu on the left to go to **Modules \> Retail and commerce \> Employees \> Workers**.
+1. Go to **Modules \> Retail and commerce \> Employees \> Workers**.
 1. In the list, find and select the following record: **000713 - Andrew Collette**. This example user is associated with the San Francisco store that will be used in the next section.
 1. On the Action Pane, select **Commerce**.
 1. Select **Associate existing identity**.
@@ -62,7 +63,7 @@ To activate Store Commerce for web, follow these steps in LCS.
 1. In the environment information on the right, select **Log on to Cloud Point of Sale**.
 1. Select **Next** to open the **Before you start** dialog box.
 1. Leave the **Server URL** field as it is. Select **Next**.
-1. Sign in by using your Microsoft Microsoft Entra account.
+1. Sign in by using your Microsoft Entra account.
 1. Under **Store name**, select **San Francisco**, and then select **Next**.
 1. Under **Register and device**, select **SANFRAN-1**.
 1. Select **Activate**. You're signed out and taken to the POS sign-in page.
@@ -70,23 +71,25 @@ To activate Store Commerce for web, follow these steps in LCS.
 
 ## Set up your e-commerce sites
 
-There are three available e-commerce demo sites: Fabrikam, Adventure Works, and Adventure Works Business. Follow the steps below to configure each demo site.
+There are three available e-commerce demo sites: Fabrikam, Adventure Works, and Adventure Works Business.
+
+To configure each demo site, complete the following steps.
 
 1. Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
 1. Select the site (**Fabrikam**, **Adventure Works**, or **Adventure Works Business**), to open the site setup dialog box.
 1. Select the domain that you entered when you initialized Commerce.
 1. In headquarters, select the preconfigured online store channel (**Fabrikam extended online store**, **AW online store**, or **AW Business online store**) that corresponds to the default channel.
 1. Select **en-us** as the default language.
-1. Configure the path fields. This can be left blank for a single site but will need to be configured if using the same domain name for multiple sites. For example, if the domain name is `https://www.constoso.com`, you can use a blank path for Fabrikam (`https://contoso.com`), and then use "aw" for Adventure Works (`https://contoso.com/aw`) and "awbusiness" for the Adventure Works business site (`https://contoso.com/awbusiness`).
+1. Configure the path fields. These fields can be left blank for a single site but must be configured if you're using the same domain name for multiple sites. For example, if the domain name is `https://www.constoso.com`, you can use a blank path for Fabrikam (`https://contoso.com`), and then use "aw" for Adventure Works (`https://contoso.com/aw`) and "awbusiness" for the Adventure Works business site (`https://contoso.com/awbusiness`).
 1. Select **OK**. The list of pages on the site appears.
 1. Optionally, repeat steps 2-7 to configure the other demo sites as needed.
 
 ## Enable jobs
 
-To enable jobs in Commerce, follow these steps.
+To enable jobs in Commerce, follow these steps:
 
 1. Sign in to the headquarters environment.
-1. Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
+1. Go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
 
     The remaining steps of this procedure must be completed for each of the following jobs:
 
@@ -118,7 +121,7 @@ Optionally, you can also set the recurrence interval to one (1) minute for the f
 
 To run full data synchronization in Commerce, follow these steps in Commerce headquarters.
 
-1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
+1. Go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 1. Select the channel that is named **scXXXXXXXXX**.
 1. On the Action Pane, select **Full data sync**.
 1. Enter **9999** as the distribution schedule.
@@ -148,11 +151,11 @@ To enable e-commerce users to sign into the e-commerce site, additional configur
 
 ### Site builder channel list is empty when configuring site
 
-If site builder does not show any online store channels, in headquarters ensure that the channels have been added to the Commerce Scale Unit as described in the [Before you start](#before-you-start) section above. Also, run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**.  Once these are steps are completed, on the **Channel database** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**), run the **9999** job on the Commerce Scale Unit.
+If site builder doesn't show any online store channels, in headquarters ensure that the channels are added to the Commerce Scale Unit as described in [Before you start](#before-you-start). Also, run **Initialize commerce scheduler** with the **Delete existing configuration** value set to **Yes**. Once these are steps are completed, on the **Channel database** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**), run the **9999** job on the Commerce Scale Unit.
 
-### Color swatches are not rendering on the category page, but are rendering on the product details page (PDP) page
+### Color swatches aren't rendering on the category page, but are rendering on the product details page (PDP) page
 
-Follow these steps to ensure that the color and size swatches are set to be refinable.
+To ensure that the color and size swatches are set to be refinable, follow these steps.
 
 1. In headquarters, go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 1. In the left pane, select the online store channel, and then select **Set attribute metadata**.

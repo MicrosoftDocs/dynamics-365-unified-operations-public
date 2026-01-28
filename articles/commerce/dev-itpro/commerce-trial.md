@@ -43,7 +43,7 @@ The following prerequisites are required to deploy a Dynamics 365 Commerce trial
 
 ## Sign up for the Dynamics 365 Commerce trial (Preview)
 
-To sign up for the Dynamics 365 Commerce trial (Preview), follow these steps.
+To sign up for the Dynamics 365 Commerce trial (Preview), follow these steps:
 
 1. Sign in to a browser by using the user work account of the tenant where you want to host the Commerce trial (Preview) environment.
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/home/).
@@ -60,7 +60,7 @@ To sign up for the Dynamics 365 Commerce trial (Preview), follow these steps.
 > [!NOTE]
 > To assign licenses to users, you need administrative access to your organization's Microsoft 365 portal.
 
-To assign licenses to users, follow these steps.
+To assign licenses to users, follow these steps:
 
 1. Go to the [Microsoft 365 admin center](https://portal.office.com/).
 1. On the **Active users** page, select the users that you want to assign a license to.
@@ -68,7 +68,7 @@ To assign licenses to users, follow these steps.
 
 ## Provision your Commerce trial (Preview) environment
 
-To provision your Commerce trial (Preview) environment, follow these steps.
+To provision your Commerce trial (Preview) environment, follow these steps:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.com/).
 1. In the upper left, select the **Environments** tab.
@@ -84,7 +84,7 @@ To provision your Commerce trial (Preview) environment, follow these steps.
  
 ## View environment details for your Commerce trial (Preview) 
 
-To view environment details for your Commerce trial (Preview), follow these steps.
+To view environment details for your Commerce trial (Preview), follow these steps:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.com/).
 1. In the upper left, select the **Environments** tab.
@@ -94,7 +94,7 @@ To view environment details for your Commerce trial (Preview), follow these step
  
 ## View Cloud Scale Units for your Commerce trial (Preview) environment
 
-To view the Cloud Scale Units (CSUs) that are used for your Commerce trial (Preview) environment, follow these steps.
+To view the Cloud Scale Units (CSUs) that are used for your Commerce trial (Preview) environment, follow these steps:
 
 1. Go to the [Dataverse Maker Apps portal](https://make.powerapps.com/).
 1. In the upper right, select your environment.
@@ -108,7 +108,7 @@ To view the Cloud Scale Units (CSUs) that are used for your Commerce trial (Prev
 
 ### Can I extend my trial beyond 30 days?
 
-Yes. To extend your trial, follow these steps.
+Yes. To extend your trial, follow these steps:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.cloud.microsoft/).
 1. Go to **Billing** \> **Your products**.

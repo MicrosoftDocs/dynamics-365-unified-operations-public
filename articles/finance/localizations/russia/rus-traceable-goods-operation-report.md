@@ -52,7 +52,7 @@ Learn more in [Download ER configurations from the Global repository of Configur
 
 You must define which operations are related to vendor accounts/vendor posting profiles/vendor groups, customer accounts/customer posting profiles/customers, inventory journal names, and fixed asset reason codes so that you can generate the **Traceable goods operation** report.
 
-To set up application-specific parameters for the Traceable goods operation report, follow these steps.
+To set up application-specific parameters for the Traceable goods operation report, follow these steps:
 
 1. In the **Electronic reporting** workspace, select **Reporting configurations**.
 1. Select the **Traceable goods operations 5.02 XML (RU)** configuration, and then, on the Action Pane, select **Configuration** \> **Application specific parameters setup**.
@@ -75,7 +75,7 @@ Electronic messaging (EM) functionality is provided to maintain the different pr
 > [!NOTE]
 > Some of the data entity records in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
 
-To download and import the data package for electronic messages, follow these steps.
+To download and import the data package for electronic messages, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **Traceable goods operations 5.02**. The downloaded file is named **Traceable goods operations 5.02.zip**.
 1. In Finance, in the **Data management** workspace, select **Import**.
@@ -101,7 +101,7 @@ Most operation codes on the **Traceable goods operation** report are entered bas
 > [!NOTE]
 > You should sell a fixed asset only by using a free text invoice. Use different inventory journal names for the receipt and write-off of items.
 
-To generate a Traceable goods operation report in electronic format, follow these steps.
+To generate a Traceable goods operation report in electronic format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 1. In the left pane, select the **ОтчетОперПрТов 5.02 report** format.

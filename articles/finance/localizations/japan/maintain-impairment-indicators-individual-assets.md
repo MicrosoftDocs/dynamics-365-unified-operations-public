@@ -25,7 +25,7 @@ Before you complete the procedures, set up the impairment accounting common para
 
 ## Update impairment indicator on a single fixed asset
 
-To update the impairment indicator on a single fixed asset, follow these steps.
+To update the impairment indicator on a single fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. In the list, find and select the desired record. For example, select **TOOLM-000006**.  
@@ -41,7 +41,7 @@ To update the impairment indicator on a single fixed asset, follow these steps.
 
 ## Update impairment indicator on the impairment management form
 
-To update the impairment indicator on the impairment management form, follow these steps.
+To update the impairment indicator on the impairment management form, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets \> Impairment management**.
 1. Select **Query**.

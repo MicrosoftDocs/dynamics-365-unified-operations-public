@@ -27,7 +27,7 @@ This article describes how to set up your bills of materials (BOMs), formulas, a
 
 ### Set up scrap for route operations
 
-To view or set the amount of scrap that's produced by an existing route operation, follow these steps.
+To view or set the amount of scrap that's produced by an existing route operation, follow these steps:
 
 1. Go to **Production control \> All routes**.
 1. In the list pane, select the route that you want to work with.
@@ -77,7 +77,7 @@ When you solve for *X*, you get the following result:
 
 ### Set up scrap for BOMs and formulas
 
-To view or set the amount of scrap that's produced by the BOM or formula for a released product, follow these steps.
+To view or set the amount of scrap that's produced by the BOM or formula for a released product, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. In the grid, find and select the product that you want to work with.

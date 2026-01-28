@@ -21,7 +21,7 @@ This procedure shows how to register an EU entry certificate that a third party 
 
 The demo data company used in this procedure is DEMF.
 
-To receive an EU entry certificate, follow these steps.
+To receive an EU entry certificate, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Inquiries and reports \> Entry certificate journal**.
 1. Select **New**.

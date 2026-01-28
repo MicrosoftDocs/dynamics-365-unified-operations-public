@@ -491,7 +491,7 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 #### Configure the fiscal registration process
 
-To enable the fiscal registration process for France in Commerce headquarters, follow these steps.
+To enable the fiscal registration process for France in Commerce headquarters, follow these steps:
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
@@ -610,7 +610,7 @@ This section describes basic scenarios that you can complete to validate that yo
 
 #### Validate a sales transaction
 
-To validate a digitally signed sales transaction after it's completed, follow these steps.
+To validate a digitally signed sales transaction after it's completed, follow these steps:
 
 1. In POS, verify that all [France-specific fields](#configure-receipt-formats) of the receipt, except the fields that are related to a receipt copy, are printed and have correct values. To check some of the fields, you must complete the next step.
 1. In Commerce headquarters, follow these steps:
@@ -635,7 +635,7 @@ To validate a digitally signed sales transaction after it's completed, follow th
 
 #### Validate a shift
 
-To validate a digitally signed shift after it's closed, follow these steps.
+To validate a digitally signed shift after it's closed, follow these steps:
 
 1. In POS, verify that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you must complete the next step.
 1. In Commerce headquarters, follow these steps:
@@ -661,7 +661,7 @@ To validate a digitally signed shift after it's closed, follow these steps.
 
 #### Validate an audit event
 
-To validate a digitally signed audit event, follow these steps.
+To validate a digitally signed audit event, follow these steps:
 
 1. In Commerce headquarters, run the P-job to download audit event data to Commerce headquarters.
 1. Open the **Audit events** page, and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date**, and **Time** fields to find the event. The **Log string** field contains the description of the event.

@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-06-30
 
 This article explains how to generate a German audit file in Microsoft Dynamics 365 Finance.
 
-To generate a GDPdU audit file, follow these steps.
+To generate a GDPdU audit file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Periodic tasks \> Data export**.
 1. In the **Format mapping** field, select **German audit file output** and select **OK**.
@@ -36,7 +36,7 @@ A GDPdU audit file for a long time period, such as a quarter or a year, can incl
 Therefore, we recommend that you use batch jobs. The dialog for the **Electronic report parameters** includes a **Run in the background** tab where you can set up report generation in batch mode. 
 Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
-To review batch jobs or find a generated file, follow these steps.
+To review batch jobs or find a generated file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.

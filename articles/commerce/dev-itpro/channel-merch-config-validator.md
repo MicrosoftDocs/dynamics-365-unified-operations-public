@@ -34,7 +34,7 @@ The channel merchandising configuration validator provides a wide range of capab
 
 ## Run validation for a new channel
 
-To run validation for a new channel in headquarters, follow these steps.
+To run validation for a new channel in headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
 1. Select **New**.
@@ -50,7 +50,7 @@ To run validation for a new channel in headquarters, follow these steps.
 
 ## Run validation for all channels
 
-To run validation for all channels in headquarters, follow these steps.
+To run validation for all channels in headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
 1. Select **Create all**. The channel grid shows the list of channels.

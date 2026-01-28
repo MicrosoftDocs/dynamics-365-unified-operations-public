@@ -23,7 +23,7 @@ After you generate assembly or disassembly orders for the different product kit 
 
 To process an assembly order, a warehouse worker must update the quantities for each kit configuration that's being assembled. After the order is processed, post it to run the inventory process that updates the status of the products from reserved to committed. Inventory for the kit configurations is then increased, and inventory for the individual products that are included in the kit configurations is decreased.
 
-To process assembly orders, follow these steps.
+To process assembly orders, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Kit orders**.
 1. On the **Kit orders** list page, select a product kit that has an order type of **Assembly order**.
@@ -38,7 +38,7 @@ To process assembly orders, follow these steps.
 
 To process a disassembly order, a warehouse worker must update the quantities for each kit configuration that's being disassembled. After the order is processed, post it to run the inventory process that updates the status of the products from reserved to committed. Inventory for the kit configurations is then decreased, and inventory for the individual products that are included in the kit configurations is increased.
 
-To process disassembly orders, follow these steps.
+To process disassembly orders, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Kit orders**.
 1. On the **Kit orders** list page, select a product kit that has an order type of **Disassembly order**.

@@ -33,7 +33,7 @@ Before you can create NMFC codes, you must set up all the LTL freight classes th
 
 ## Create an NMFC code
 
-To create an NMFC code, follow these steps.
+To create an NMFC code, follow these steps:
 
 1. Follow one of these steps:
 

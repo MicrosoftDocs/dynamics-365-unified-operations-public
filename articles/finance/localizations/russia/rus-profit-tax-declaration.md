@@ -35,7 +35,7 @@ A data package is available that contains predefined cells names for the profit 
 
 ## Set up the profit tax declaration
 
-To set up the profit tax declaration, follow these steps.
+To set up the profit tax declaration, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the ER configurations for the profit tax declaration. For example, to generate a profit tax declaration in XML format for the year 2019, download the latest versions of the following configurations:
 
@@ -108,7 +108,7 @@ For more information about how to set up electronic messaging functionality, see
 
 ### Generate a profit tax declaration in electronic format
 
-To generate a profit tax declaration in electronic format, follow these steps.
+To generate a profit tax declaration in electronic format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 1. In the left pane, select the report format to generate. For example, select **НалПриб 5.08 (2019)**.

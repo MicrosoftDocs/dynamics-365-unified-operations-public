@@ -27,7 +27,7 @@ The procedures use the demo data company JPMF.
 
 ## Assign component in an assembly list
 
-To assign component in an assembly list, follow these steps.
+To assign component in an assembly list, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. In the list, select the row.
@@ -40,7 +40,7 @@ To assign component in an assembly list, follow these steps.
 
 ## Use the assembly list to post a fixed asset write-up transaction
 
-To use the assembly list to post a fixed asset write-up transaction, follow these steps.
+To use the assembly list to post a fixed asset write-up transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets journal**.
 1. Select **New**.

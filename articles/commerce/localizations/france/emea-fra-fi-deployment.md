@@ -32,7 +32,7 @@ Follow these steps to set up a development environment so that you can test and 
 
 #### RegisterAuditEventFrance component
 
-To enable the RegisterAuditEventFrance component, follow these steps.
+To enable the RegisterAuditEventFrance component, follow these steps:
 
 1. Find the extension configuration file for the Commerce runtime (CRT):
 
@@ -47,7 +47,7 @@ To enable the RegisterAuditEventFrance component, follow these steps.
 
 #### ReceiptsFrance component
 
-To enable the ReceiptsFrance component, follow these steps.
+To enable the ReceiptsFrance component, follow these steps:
 
 1. Find the extension configuration file for CRT:
 
@@ -62,7 +62,7 @@ To enable the ReceiptsFrance component, follow these steps.
 
 #### XZReportsFrance component
 
-To enable the XZReportsFrance component, follow these steps.
+To enable the XZReportsFrance component, follow these steps:
 
 1. Find the extension configuration file for CRT:
 
@@ -77,7 +77,7 @@ To enable the XZReportsFrance component, follow these steps.
 
 #### RestrictingShiftDuration component
 
-To enable the RestrictingShiftDuration component, follow these steps.
+To enable the RestrictingShiftDuration component, follow these steps:
 
 1. Find the extension configuration file for CRT:
 
@@ -92,7 +92,7 @@ To enable the RestrictingShiftDuration component, follow these steps.
 
 ### Enable Modern POS extension components
 
-To enable Modern POS extension components, follow these steps.
+To enable Modern POS extension components, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and ensure that it can be compiled without errors. Additionally, confirm that you can run Modern POS from Visual Studio by using the **Run** command.
 
@@ -125,7 +125,7 @@ To enable Modern POS extension components, follow these steps.
 
 ### Enable Cloud POS extension components
 
-To enable Cloud POS extension components, follow these steps.
+To enable Cloud POS extension components, follow these steps:
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and ensure that it can be compiled without errors.
 1. In the **extensions.json** file, add the following lines to enable the extensions that must be loaded.
@@ -154,7 +154,7 @@ To enable Cloud POS extension components, follow these steps.
 
 ## Production environment
 
-To create deployable packages that contain Commerce components, and to apply those packages in a production environment, follow these steps.
+To create deployable packages that contain Commerce components, and to apply those packages in a production environment, follow these steps:
 
 1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** package configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 

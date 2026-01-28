@@ -65,7 +65,7 @@ When you switch from UI version 1 to UI version 2, Inventory Visibility is updat
 
 After you switch to UI version 2, you can migrate your previous UI version 1 settings to the new Dataverse entities that are used by UI version 2. Although you can switch back to UI version 1 at any time, you can't migrate settings from UI version 2 to UI version 1. If you switch back to UI version 2 after you've been working in UI version 1 for a while, you can remigrate your UI version 1 settings. However, only newly created records are migrated. Updated and deleted records aren't replicated. Therefore, all your previous UI version 2 settings are kept.
 
-To migrate your settings from UI version 1 to UI version 2, follow these steps.
+To migrate your settings from UI version 1 to UI version 2, follow these steps:
 
 1. In Power Apps, open the **Inventory Visibility** app.
 1. On the navigation pane, select **Admin settings**.

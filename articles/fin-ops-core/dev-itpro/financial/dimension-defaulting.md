@@ -108,7 +108,7 @@ Default dimensions are typically copied or merged with other dimension combinati
 
 ### Configure default dimensions
 
-To define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension used across all account structures for the ledger, follow these steps.
+To define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension used across all account structures for the ledger, follow these steps:
 
 1. Go **General Ledger** \> **Chart of Accounts** \> **Accounts** \> **Main Account**.
 2. In the **Legal entities** override FastTab, select the appropriate legal entity and click on **Default dimension**.

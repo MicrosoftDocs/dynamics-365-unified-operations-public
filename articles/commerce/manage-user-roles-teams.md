@@ -1,10 +1,10 @@
 ---
 title: Manage user roles in Microsoft Teams
-description: This article describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
+description: Learn how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 author: ritakimani
-ms.date: 07/29/2024
+ms.date: 01/23/2026
 ms.topic: how-to
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2021-01-15
@@ -20,7 +20,7 @@ ms.custom:
 
 This article describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 
-As you create a team for each store or channel in Teams, a group membership that corresponds to the team is created (for example, `HOUSTON_D365@<YourTenantAzureADDomain>.com`). All the store workers under a team group membership are assigned one of two user roles: **Owner** or **Member**. Store employees who have the **Owner** user role can perform operations such as adding a private channel, and adding or deleting members. Typically, store managers have the **Owner** user role.
+As you create a team for each store or channel in Teams, you also create a corresponding group membership (for example, `HOUSTON_D365@<YourTenantAzureADDomain>.com`). All the store workers under a team group membership are assigned one of two user roles: **Owner** or **Member**. Store employees who have the **Owner** user role can perform operations such as adding a private channel, and adding or deleting members. Typically, store managers have the **Owner** user role.
 
 The following illustration shows an example of a list of team members and their user roles in the Microsoft Teams admin center.
 
@@ -38,6 +38,8 @@ For more information, see [Assign team owners and members in Microsoft Teams](/m
 
 [Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
 
-[Map stores and teams if there are pre-existing teams in Microsoft Teams](map-stores-existing-teams.md)
+[Map stores and teams if there are preexisting teams in Microsoft Teams](map-stores-existing-teams.md)
 
 [Dynamics 365 Commerce and Microsoft Teams integration FAQ](teams-integration-faq.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

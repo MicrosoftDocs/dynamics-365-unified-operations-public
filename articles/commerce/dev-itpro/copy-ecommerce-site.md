@@ -32,7 +32,7 @@ The duration of the site copy operation depends primarily on the number of asset
 
 ## Copy a site within an e-commerce environment
 
-To copy a site within an e-commerce environment, follow these steps.
+To copy a site within an e-commerce environment, follow these steps:
 
 1. Sign in to site builder for the environment where you want to perform the copy operation.
 1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
@@ -49,7 +49,7 @@ The following illustration shows an example of the **Copy site** flyout menu in 
 
 ## Copy a site between two e-commerce environments
 
-To copy a site between two e-commerce environments, follow these steps.
+To copy a site between two e-commerce environments, follow these steps:
 
 1. Sign in to site builder for the destination e-commerce environment.
 1. On the command bar, select **Copy site**.
@@ -67,7 +67,7 @@ After the information has been validated, a notification indicates that a new si
 
 Source channels and locales can be mapped to destination channels and locales as part of the site copy operation. If the channel mapping is done as part of the site copy operation, initializing the site using the FRE process and configuring the channels in site settings are not required. 
 
-To map all the channels and locales "as is" (1-to-1) in site builder, follow these steps.
+To map all the channels and locales "as is" (1-to-1) in site builder, follow these steps:
 
 1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.
 1. Find the site that you want to copy or clone, and select it by selecting the checkbox next to the site name.
@@ -91,7 +91,7 @@ To map all the channels and locales "as is" (1-to-1) in site builder, follow the
 
 ## Monitor the site copy operation
 
-To monitor the progress of the site copy operation, follow these steps.
+To monitor the progress of the site copy operation, follow these steps:
 
 1. Sign in to site builder for the destination e-commerce environment.
 1. In the left pane, select **Tenant jobs**.
@@ -112,7 +112,7 @@ The following illustration shows an example of the right pane of the **Tenant jo
 
 Before the new site can be used, it must be initialized through the FRE process.
 
-To initialize a new site by using the FRE process, follow these steps.
+To initialize a new site by using the FRE process, follow these steps:
 
 1. Sign in to site builder for the new site.
 1. Open the site list view by selecting **Site switcher** in the upper-right corner and then selecting **Manage sites**.

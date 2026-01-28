@@ -22,7 +22,7 @@ This article goes through an example that shows the process of creating, printin
 
 To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and enter the required information to create customer US-045.
 
-When you've finished, follow these steps.
+When you've finished, follow these steps:
 
 1. Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the collection letter sequence as shown in the following table that is assigned to the customer posting profile.
 

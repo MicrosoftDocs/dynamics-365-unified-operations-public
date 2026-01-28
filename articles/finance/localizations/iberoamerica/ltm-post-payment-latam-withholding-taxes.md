@@ -2,7 +2,7 @@
 title: Post vendor payment transactions with LATAM Withholding taxes
 description: Learn how to post vendor payment journals with LATAM Withholding taxes.
 author: Fhernandez0088
-ms.date: 10/07/2025
+ms.date: 01/05/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -11,13 +11,15 @@ ms.author: v-federicohe
 
 # Post vendor payment transactions with LATAM withholding taxes
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This process consists of two parts: first the vendor invoice posting, and then the vendor payment journal posting.
 
 ## Post a vendor invoice with a withholding tax group
 
-To post a vendor invoice with a withholding tax group, follow these steps.
+To post a vendor invoice with a withholding tax group, follow these steps:
 
 1. Go to **Accounts payable** > **Invoices** > **Invoice journal**.
 1. Select **New**.
@@ -40,7 +42,7 @@ To post a vendor invoice with a withholding tax group, follow these steps.
 
 ## Register a vendor payment journal with withholding tax
 
-To register a vendor payment journal with withholding tax, follow these steps.
+To register a vendor payment journal with withholding tax, follow these steps:
 
 1. Go to **Accounts payable** > **Payments** > **Vendor payment journal**.
 1. Select **New**.

@@ -63,7 +63,7 @@ https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 
 Redirect CSV files can be uploaded by using Commerce site builder. The person who uploads a redirect CSV file to a site must be an admin for that site.
 
-To upload a redirect CSV file, follow these steps.
+To upload a redirect CSV file, follow these steps:
 
 1. In Commerce site builder, go to the site that will receive the bulk URL redirects.
 1. Go to **Site settings \> General**.
@@ -79,7 +79,7 @@ To upload a redirect CSV file, follow these steps.
 
 A previously uploaded redirect CSV file can be downloaded for reference. Alternatively, after the file is downloaded, it can be edited and then uploaded again.
 
-To update an uploaded redirect CSV file, follow these steps.
+To update an uploaded redirect CSV file, follow these steps:
 
 1. In Commerce site builder, go to the site that will receive the bulk URL redirects.
 1. Go to **Site settings \> General**.
@@ -93,7 +93,7 @@ To update an uploaded redirect CSV file, follow these steps.
 
 ## Turn off bulk redirects
 
-To turn off the bulk redirects in an uploaded redirect CSV file, follow these steps.
+To turn off the bulk redirects in an uploaded redirect CSV file, follow these steps:
 
 1. Create and save a new CSV file that has valid but nonexistent source and target URLs (for example, `https://www.com,https://www.com/abc,301`).
 1. In Commerce site builder, go to the site that will receive the bulk URL redirects.

@@ -27,7 +27,7 @@ The procedures use the JPMF demo company data.
 
 ## Create a new reduction entry document
 
-To create a new reduction entry document, follow these steps.
+To create a new reduction entry document, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Periodic tasks \> Reduction entries \> Reduction entry documents**.
 1. Select **New**.
@@ -42,7 +42,7 @@ To create a new reduction entry document, follow these steps.
 
 ## Assign the reduction entry document to a fixed asset book
 
-To assign the reduction entry document to a fixed asset book, follow these steps.
+To assign the reduction entry document to a fixed asset book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**. Alternatively, you can choose to edit an existing fixed asset if the sponsored asset is already entered in the system.  

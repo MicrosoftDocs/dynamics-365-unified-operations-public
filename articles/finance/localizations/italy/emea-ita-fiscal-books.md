@@ -116,7 +116,7 @@ You must assign voucher numbers during posting in sequential order by posting da
 
 ## Sales Tax (Italy) report
 
-To report sales tax for Italy, follow these steps.
+To report sales tax for Italy, follow these steps:
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Sales Tax (Italy)**.
 1. In the **Settlement period** field, select the sales tax settlement period to generate the report for.

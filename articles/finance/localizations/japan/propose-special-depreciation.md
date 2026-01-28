@@ -27,7 +27,7 @@ The following procedures use the JPMF demo company data.
 
 ## **Post** reserve
 
-To post the reserve, follow these steps.
+To post the reserve, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -45,7 +45,7 @@ To post the reserve, follow these steps.
 
 ## **Post** reserve allocation
 
-To post the reserve allocation, follow these steps.
+To post the reserve allocation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

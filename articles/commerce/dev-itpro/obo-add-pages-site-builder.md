@@ -32,7 +32,7 @@ You might also want to complete the following optional procedure:
 
 ## Create a business partner organization and a business partner user selection page
 
-To create a business partner organization selection page in Commerce site builder, follow these steps.
+To create a business partner organization selection page in Commerce site builder, follow these steps:
 
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Create a new page** dialog box, under **Page name**, enter a name for the page, and then select **Next**.
@@ -47,7 +47,7 @@ To create a business partner organization selection page in Commerce site builde
 
 ### Configure a route for the page
 
-To configure a route for the business partner page, follow these steps.
+To configure a route for the business partner page, follow these steps:
 
 1. In site builder, go to **Site settings \> Extensions \> Routes**.
 1. Under **Business partner selection**, select **Add a link**.
@@ -59,7 +59,7 @@ To configure a route for the business partner page, follow these steps.
 > [!NOTE]
 > This section is only applicable for built-in policies with an injected contents-based custom user interface (UI). If you're using built-in policies with a generic module custom UI, or with the Azure business-to-consumer (B2C) UI, you can ignore this section.
  
-To modify a B2B sign-in page so that it includes an employee sign-in button, follow these steps.
+To modify a B2B sign-in page so that it includes an employee sign-in button, follow these steps:
 
 1. Go to **Pages**, and select the site's B2B sign-in page.
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.

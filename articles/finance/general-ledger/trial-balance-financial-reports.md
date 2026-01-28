@@ -44,7 +44,7 @@ The trial balance financial reports use the following building blocks.
 
 ### Row definition
 
-The row definition, Trial balance – default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial balance – default row definition so that it includes rows for all accounts, follow these steps.
+The row definition, Trial balance – default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial balance – default row definition so that it includes rows for all accounts, follow these steps:
 
 1.  Click **Edit**, and then click **Insert rows from dimensions**. The **Insert rows from dimensions** command lets you choose the dimensions that you want to have in your row definition. For this row definition, you're going to use **Main account**.
 2.  Make sure that **Main account** contains all ampersands (&), and then click **OK**.
