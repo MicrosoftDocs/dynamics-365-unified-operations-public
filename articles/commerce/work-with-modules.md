@@ -53,7 +53,7 @@ The following procedures describe how to add and remove modules.
 
 ### Add a module
 
-To add a module to a slot or container on a page, follow these steps.
+To add a module to a slot or container on a page, follow these steps:
 
 1. In the outline pane on the left or directly in the main canvas, select a container or slot to which a child module can be added.
 
@@ -74,7 +74,7 @@ To add a module to a slot or container on a page, follow these steps.
 
 ### Remove a module
 
-To remove a module from a slot or container on a page, follow these steps.
+To remove a module from a slot or container on a page, follow these steps:
 
 1. In the outline pane on the left, select the ellipsis (**...**) next to the name of the module to be removed, and then select the trash can symbol. Alternately, in the main canvas you can select the trash can symbol on a selected module's toolbar.
 1. When prompted to confirm that you want to remove the module, select **OK**.
@@ -85,14 +85,14 @@ To move a module to a new position within your page, use any of the following me
 
 ### Move a module using the outline pane
 
-To move a module using the outline pane, follow these steps.
+To move a module using the outline pane, follow these steps:
 
 1. Select and hold the module you want to move in the outline pane, then drag the module to a new position in the outline. The blue line in the outline and on the canvas indicates where the module can be placed.
 1. Release the module to drop it into the new position.
 
 ### Move a module directly within the canvas
 
-To move a module directly within the canvas, follow these steps.
+To move a module directly within the canvas, follow these steps:
 
 1. Select the module you want to move in the canvas. 
 1. Select either an upward or downward pointing arrow symbol in the module's toolbar, and then drag the arrow to a new position on the page. The blue line in the canvas and outline indicates where the module can be placed. If a module cannot be moved up or down, that arrow symbol will be grayed out. 
@@ -100,7 +100,7 @@ To move a module directly within the canvas, follow these steps.
 
 ### Move a module using the ellipsis menu
 
-To move a module using the ellipsis menu, follow these steps.
+To move a module using the ellipsis menu, follow these steps:
 
 1. Select a module in either the outline or the canvas.
 1. Select the ellipsis (**...**) next to the module's name in the outline pane, or in the module's toolbar in the canvas.
@@ -112,7 +112,7 @@ The following procedures describe how to configure content and container modules
 
 ### Configure a content module
 
-To configure a content module on a page, follow these steps.
+To configure a content module on a page, follow these steps:
 
 1. In the outline pane on the left, expand the tree and select any content module (for example, **Content block**). Alternately, you can select the module in the main canvas.
 1. In the module properties pane on the right, enter properties for any desired module controls.
@@ -122,7 +122,7 @@ To configure a content module on a page, follow these steps.
 
 Module text properties that are not read-only can be edited directly in the canvas.
 
-To edit module text properties, follow these steps.
+To edit module text properties, follow these steps:
 
 1. Select the text control in the canvas, then place your cursor where you wish to edit text.
 1. Enter your text content.
@@ -132,14 +132,14 @@ To edit module text properties, follow these steps.
 
 Module images that are not read-only can be changed directly from the canvas.
 
-To choose a new image for a content module, follow these steps.
+To choose a new image for a content module, follow these steps:
 
 1. In the canvas, double-click the image. This will bring up the media picker window.
 1. Find and select a new image you want to use, and then select **OK**. The new image is now rendered in the canvas.
 
 ### Configure a container module
 
-To configure a container module on a page, follow these steps.
+To configure a container module on a page, follow these steps:
 
 1. Select a container module on your page (for example, a carousel or fluid container module).
 1. In the properties pane on the right, expand the nested controls by selecting the headers, and set any required control values.

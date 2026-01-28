@@ -2,9 +2,9 @@
 title: Sweden overview
 description: Access links to documentation resources for Sweden, including links to resources about declarations, functionality, statistics, and sales lists. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/30/2025
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Sweden
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides links to documentation resources for Sweden. 
+This article provides links to documentation resources for Sweden.
 
 - [Export financial information \(SIE\) in Sweden](emea-swe-sie-standard-report.md)
 - [Import payment formats](emea-swe-payment-formats-import.md)

@@ -136,7 +136,7 @@ The workflow for CAPA processes consists of the following steps.
     - On a CAPA case list or details page, on the Action Pane, on the **CAPA Case** tab, select **Change status** \> **Closed**.
 
 > [!TIP]
-> To get a graphical overview of the process hierarchy for the current CAPA case, follow these steps.
+> To get a graphical overview of the process hierarchy for the current CAPA case, follow these steps:
 >
 > 1. Open the details page for the relevant CAPA case.
 > 1. In the rightmost pane, select the **Related information** button :::image type="icon" source="media/related-information-button.png" border="false"::: to open the **Related information** FactBox pane.
@@ -150,7 +150,7 @@ Statistical charts are provided in the **CAPA management** workspace and on the 
 
 ### Analyze statistics using the CAPA management workspace
 
-To view statistics in the **CAPA management** workspace, follow these steps.
+To view statistics in the **CAPA management** workspace, follow these steps:
 
 1. Go to **Inventory management** \> **Workspaces** \> **CAPA management**.
 1. Select the **Statistics** FastTab. Two charts are shown.
@@ -160,7 +160,7 @@ To view statistics in the **CAPA management** workspace, follow these steps.
 
 ### Analyze statistics using the Trending analysis page
 
-To view statistics on the **Trending analysis** page, follow these steps.
+To view statistics on the **Trending analysis** page, follow these steps:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **CAPA management** \> **Trending analysis**.
 1. On the **Data** tab, select the date range, and turn on each type of chart that you want to view.
@@ -169,7 +169,7 @@ To view statistics on the **Trending analysis** page, follow these steps.
 
 ## Review signatures for a CAPA case
 
-The CAPA features can optionally be set up to require an electronic signature from any user who closes, cancels, and/or reopens a CAPA case. To review the signatures that are applied to a CAPA case, follow these steps.
+The CAPA features can optionally be set up to require an electronic signature from any user who closes, cancels, and/or reopens a CAPA case. To review the signatures that are applied to a CAPA case, follow these steps:
 
 1. Open or select the CAPA case that you want to review (for example, on the **All CAPA cases** page).
 1. On the Action Pane, on the **CAPA case** tab, select **Signature review**.

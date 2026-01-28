@@ -28,7 +28,7 @@ This article includes country/region-specific information about the setup of the
 
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. 
 
-To set up the report layout for sales tax authorities, follow these steps.
+To set up the report layout for sales tax authorities, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales tax authorities** page.
 1. Set the **Report layout** field value to **Default**.
@@ -64,7 +64,7 @@ Here is an example that shows how you might set up sales tax reporting codes on 
 
 ## Configure the electronic reporting model and format for the report
 
-To configure the electronic reporting model and format for the report, follow these steps.
+To configure the electronic reporting model and format for the report, follow these steps:
 
 1. To review or change the VAT statement configuration, In Dynamics 365 Finance, go to the **Reporting configurations** page.
 1. In the list of models, select **VAT declaration model**.
@@ -73,7 +73,7 @@ To configure the electronic reporting model and format for the report, follow th
 
 ## Generate a VAT statement
 
-To generate a VAT statement, follow these steps.
+To generate a VAT statement, follow these steps:
 
 1. To generate a VAT XML file, in Dynamics 365 Finance, go to the **Sales tax payments** page.
 2. Select one or more vouchers, and then select **Export VAT XML file**.

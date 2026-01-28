@@ -22,7 +22,7 @@ You can apply interest and fines on customer payments that are delayed. The inte
 
 The following procedure uses the BRMF demo company.
 
-To apply interest and fines on customer payments that are delayed, follow these steps.
+To apply interest and fines on customer payments that are delayed, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, find and select the desired record.

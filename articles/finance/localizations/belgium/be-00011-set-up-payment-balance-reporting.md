@@ -24,7 +24,7 @@ This functionality is available for legal entities that have their primary addre
 
 ## Set up a BLWI country/region group
 
-To set up a BLWI country/region group, follow these steps.
+To set up a BLWI country/region group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> BLWI country/region groups**.
 1. Select **New**.
@@ -39,7 +39,7 @@ To set up a BLWI country/region group, follow these steps.
 
 ## Set up BLWI currencies
 
-To set up BLWI currencies, follow these steps.
+To set up BLWI currencies, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> BLWI currencies**.
 1. Select **New**.
@@ -49,7 +49,7 @@ To set up BLWI currencies, follow these steps.
 
 ## Set up BLWI parameters
 
-To set up BLWI parameters, follow these steps.
+To set up BLWI parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> BLWI parameters**.
 1. In the **BLWI** field, select **Yes**. This parameter should be activated before you post customer/vendor transactions, so that the transactions are transferred to the payment balance.  
@@ -62,7 +62,7 @@ To set up BLWI parameters, follow these steps.
 
 ## Set up payment survey codes
 
-To set up payment survey codes, follow these steps.
+To set up payment survey codes, follow these steps:
 
 1. In Dynamics 365 Finance headquarters, go to **Tax \> Setup \> Foreign trade \> Payment survey codes**.
 2. Select **New**.

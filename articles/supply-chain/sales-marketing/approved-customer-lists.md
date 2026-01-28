@@ -24,8 +24,7 @@ For example, you're a manufacturer of apple juice. One of your long-time custome
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
+- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both of these features are turned on by default.
     - *Advanced quality management*
     - *Approved customer list*
 
@@ -46,7 +45,7 @@ In addition, you set up the approved customer list (ACL) check method to define 
 
 When you approve a product for a customer by setting up a customer/item relationship, you also set up the ACL check method at both the customer level and the item level. The ACL check method is used to validate the combination of the customer and the item. In other words, it confirms that the customer is authorized to buy the item.
 
-To set up the ACL check method for products and customers, follow these steps.
+To set up the ACL check method for products and customers, follow these steps:
 
 - Go to **Product information management** \> **Products** \> **Released products**. On the **Sell** FastTab, in the **Approved customer list check method** field, select the method.
 - Go to **Sales and marketing** \> **Customers** \> **All customers**. On the **Sales order defaults** FastTab, in the **Approved customer list check method** field, select the method.

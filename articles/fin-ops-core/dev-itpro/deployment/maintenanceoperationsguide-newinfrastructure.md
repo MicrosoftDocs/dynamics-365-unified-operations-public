@@ -24,7 +24,7 @@ This article explains how to perform maintenance operations for an environment t
 
 You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **finance and operations apps service**, **Data management workspace**, and **Financial reporting service**.
 
-To restart a service, follow these steps.
+To restart a service, follow these steps:
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), on the environment details page, select **Maintain \> Restart service**.
 2. Select the service to restart, and then select **Confirm**.
@@ -35,7 +35,7 @@ To restart a service, follow these steps.
 
 finance and operations apps includes a system-wide setting that is named [maintenance mode](../sysadmin/maintenance-mode.md). Maintenance mode gives system admins a safe way to make system changes that might affect system functionality. For example, configuration keys can be turned on or off. While maintenance mode is on, only the system admin and users who are assigned to the **Maintenance mode** user role can sign in to the system. By default, maintenance mode is turned off.
 
-To turn maintenance mode on or off, follow these steps.
+To turn maintenance mode on or off, follow these steps:
 
 1. In LCS, on the environment details page, select **Maintain \> Enable Maintenance mode**.
 

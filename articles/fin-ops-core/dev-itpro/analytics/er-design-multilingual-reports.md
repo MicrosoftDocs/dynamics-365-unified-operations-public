@@ -202,7 +202,7 @@ You can export either all labels or the labels for a single language that you sp
 
 ![Sample of the exported file containing ER lables for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
 
-This format is used for automatic translation of labels by  external translation services such as [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
+This format is used for automatic translation of labels by  external translation services. When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
 
 ![ER Configurations page allowing to import ER labels to the selected conviguration version.](./media/er-multilingual-labels-load.png)
 

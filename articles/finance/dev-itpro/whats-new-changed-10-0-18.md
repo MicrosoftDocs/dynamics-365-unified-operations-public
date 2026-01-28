@@ -2,12 +2,12 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.18 (May 2021)
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.18 preview release distributed in May 2021.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 07/15/2024
+ms.date: 12/02/2025
 ms.update-cycle: 1095-days
 ms.reviewer: kfend 
 ms.search.region: Global
@@ -27,9 +27,9 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature.
+The following features are included in this release. Some of the listed features are still in preview, while others are generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature.
 
-- [Vendor collaboration bank changes](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes) - This feature will be included in the 10.0.19 release, instead of 10.0.18.
+- [Vendor collaboration bank changes](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes) - This feature is included in the 10.0.19 release, instead of 10.0.18.
 - [Public sector - Restrict ability to edit accounting distribution on vendor invoices](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
 
 ## Globalization changes
@@ -54,7 +54,7 @@ Dynamics 365 Finance 10.0.18 includes platform updates. To learn more, see [Plat
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=561679&dbType=3&qc=13bb1641c1be430ead8b21ae3d4e0f800d5b81c39b3a56e890db1de7ede59e46).
 
 ### Regulatory updates
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release. 
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/global/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates by using the issue search tool. Issue search lets you search by country/region, type of feature, and release. 
 
 ### Dynamics 365: 2021 release wave 1 plan
 
@@ -64,14 +64,14 @@ Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
+The [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article describes features that are removed or deprecated for Dynamics 365 Finance.
 
-- A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *removed* feature isn't available in the product.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
+Before removing any feature from the product, the deprecation notice is announced in the [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that you need to make to the compiler.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

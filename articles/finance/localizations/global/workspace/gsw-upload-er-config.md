@@ -16,7 +16,7 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 
-You can use Microsoft Dataverse solutions for Application Lifecycle Management (ALM) scenarios. For example, you can move Electronic reporting (ER) configurations to other environments or share them with other tenants via AppSource.
+You can use Microsoft Dataverse solutions for Application Lifecycle Management (ALM) scenarios. For example, you can move Electronic reporting (ER) configurations to other environments or share them with other tenants via Marketplace.
 
 You can also export and import specific versions as a file by using export and import buttons on the page (existing functionality).
 
@@ -28,7 +28,7 @@ You can also export and import specific versions as a file by using export and i
 
 ## Step 1: Export your artifacts
 
-To export your artifacts, follow these steps.
+To export your artifacts, follow these steps:
 
 1. Create a folder, such as **C:\\DvArtifactsSrc**.
 1. Export the .xml files of any ER configurations and the .json files of any Globalization features to the new folder.
@@ -38,7 +38,7 @@ To export your artifacts, follow these steps.
 
 ## Step 2: Create a Dataverse solution
 
-To create a Dataverse solution, follow these steps.
+To create a Dataverse solution, follow these steps:
 
 1. Create a solution in Dataverse, and export it. For more information, see [Create a solution](/power-apps/maker/data-platform/create-solution) and [Export solutions](/power-apps/maker/data-platform/export-solutions).
 1. Extract the new solution by using the **pac solution unpack** command. Here's an example.
@@ -95,6 +95,6 @@ To create a Dataverse solution, follow these steps.
     > [!NOTE]
     > After you import the solution into Dataverse, there's no way to remove it together with the content. Although you can remove the solution, all inserted table records remain and must be manually cleaned up.
 
-1. Publish your app on AppSource. For more information, see [Publish your app on AppSource](/power-platform/developer/appsource/publish-app).
+1. Publish your app on Marketplace. For more information, see [Publish your app on Marketplace](/power-platform/developer/appsource/publish-app).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

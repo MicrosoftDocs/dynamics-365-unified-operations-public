@@ -25,7 +25,7 @@ Sometimes, vendor invoices contain only header information without line details,
 - Invoices always contain the same lines as the purchase order.
 - Invoices always contain the same lines based on the goods shipped, with prices based on the purchase order.
   
-To streamline the process, invoice lines can be automatically derived from the purchase order or product receipt. To enable automatic creation of invoice lines, follow these steps.
+To streamline the process, invoice lines can be automatically derived from the purchase order or product receipt. To enable automatic creation of invoice lines, follow these steps:
 
 ## Enable the settings
 

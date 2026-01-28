@@ -46,7 +46,7 @@ The current implementation of this functionality has the following limitations:
 
 ### Set up an inventory profile for an agent's transactions
 
-To set up an inventory profile for an agent's transactions, follow these steps.
+To set up an inventory profile for an agent's transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory profiles**.
 1. Select **New** to create an inventory profile.
@@ -61,7 +61,7 @@ To set up an inventory profile for an agent's transactions, follow these steps.
 
 ### Set up the Inventory profile and Owner tracking dimensions
 
-To set up the Inventory profile and Owner tracking dimensions, follow these steps.
+To set up the Inventory profile and Owner tracking dimensions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Setup** \> **Dimension and variant groups** \> **Tracking dimension groups**.
 1. Select **New** to create a dimension group.
@@ -78,7 +78,7 @@ To set up the Inventory profile and Owner tracking dimensions, follow these step
 
 ### Set up a number sequence for the report for the principal
 
-To set up a number sequence for the report for the principal, follow these steps.
+To set up a number sequence for the report for the principal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Report code** reference.

@@ -24,7 +24,7 @@ This approach involves adding new attributes to existing dimension tables. It's 
 
 ### External data provides a new description about an existing entity
 
-If the external data provides new descriptive information about an existing entity (for example, new customer demographics or additional product attributes), follow these steps.
+If the external data provides new descriptive information about an existing entity (for example, new customer demographics or additional product attributes), follow these steps:
 
 1. **Identify the dimension.** Find the relevant dimension where the external data fits (for example, `CustomerDim` or `ProductDim`).
 2. **Add new attributes.** Add new columns to the dimension table to hold the external data attributes. For example, add the `CustomerIncomeLevel` column to the `CustomerDim` table or the `ProductCategory` column to the `ProductDim` table.
@@ -46,7 +46,7 @@ When the external data represents a new entity that doesn't fit into any existin
 
 ### External data creates a new entity
 
-If the external data introduces a new entity that isn't currently represented in the Business performance analytics model (for example, a marketing channel, geographic region, or organizational hierarchy), follow these steps.
+If the external data introduces a new entity that isn't currently represented in the Business performance analytics model (for example, a marketing channel, geographic region, or organizational hierarchy), follow these steps:
 
 1. **Create a new dimension table.** Build a new dimension table (for example, `ChannelDim`, `GeoDim`, or `DepartmentDim`) to hold the attributes that are related to the new entity.
 2. **Generate a surrogate key.** Create a surrogate key (for example, `ChannelKey`, `GeoKey`, or `DepartmentKey`) as the primary key of the new dimension table.
@@ -67,7 +67,7 @@ This approach also has some disadvantages:
 
 This approach is used when the external data includes additional metrics that are aligned with the grain of existing fact tables. The external facts are added as new columns (measures) to the existing fact table.
 
-If the external data provides new facts or measures that are related to the same business process (for example, additional financial metrics such as discounts, taxes, or extended transaction details), follow these steps.
+If the external data provides new facts or measures that are related to the same business process (for example, additional financial metrics such as discounts, taxes, or extended transaction details), follow these steps:
 
 1. **Identify the fact table.** Identify the relevant fact tables (for example, `SalesFact` or `GeneralLedgerFact`) that are aligned with the external facts.
 2. **Add new measure columns.** For each external fact, add new columns to the fact tables. For example, add the `DiscountAmount`, `TaxAmount`, or `PromotionAmount` column to the `SalesFact` table.
@@ -88,7 +88,7 @@ This approach also has some disadvantages:
 
 When the external data represents a new business process or transactions that aren't captured in the existing fact tables, you should create new fact tables to store the data. This approach ensures that the model remains clean, and that there are distinct fact tables for each business process.
 
-If the external data introduces new facts that are related to a different business process (for example, marketing campaigns, inventory transactions, or supplier-related data), follow these steps.
+If the external data introduces new facts that are related to a different business process (for example, marketing campaigns, inventory transactions, or supplier-related data), follow these steps:
 
 1. **Design a new fact table.** Create a new fact table (for example, `MarketingFact` or `InventoryFact`) that stores the new facts. This fact table should follow the same principles as the existing Business performance analytics fact tables, including a clear grain and surrogate keys for dimensional relationships.
 2. **Identify relevant foreign keys.** In the new fact table, add foreign keys that link to the existing dimensions (for example, `CustomerKey`, `ProductKey`, or `TimeKey`).

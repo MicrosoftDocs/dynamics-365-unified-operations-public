@@ -29,7 +29,7 @@ In site builder, authors can select among a theme's built-in presets, or they ca
 
 ## Preview a style preset
 
-To preview a style preset on your site in site builder, follow these steps.
+To preview a style preset on your site in site builder, follow these steps:
 
 1. In the left navigation pane for your site, go to **Site Settings \> Design**.
 1. On the **Style presets** tab at the top of the design editor, in the **Available presets** list, select a preset, and then select **View** to go to the preset editor.
@@ -51,7 +51,7 @@ To preview a style preset on your site in site builder, follow these steps.
 
 ## Create a custom style preset
 
-To create a custom style preset in site builder, follow these steps.
+To create a custom style preset in site builder, follow these steps:
 
 1. In the left navigation pane for your site, go to **Site Settings \> Design**.
 1. On the **Style presets** tab at the top of the design editor, on the command bar, select **New preset**.
@@ -71,7 +71,7 @@ Some style values can be unique to a module type, or they might have to optional
 >
 > Theme default values \< Global style values \< Module type style values \< CSS override
 
-To change a style preset's global or module type values in site builder, follow these steps.
+To change a style preset's global or module type values in site builder, follow these steps:
 
 1. In the left navigation pane for your site, go to **Site Settings \> Design**.
 1. On the **Style presets** tab at the top of the design editor, select **View** for any style preset to go to the preset editor.
@@ -89,7 +89,7 @@ To change a style preset's global or module type values in site builder, follow 
 
 ## Make a new style preset active on your live site
 
-To set a style preset as the new active preset on your site, follow these steps.
+To set a style preset as the new active preset on your site, follow these steps:
 
 - Select the **Set as active button** in one of these places:
 

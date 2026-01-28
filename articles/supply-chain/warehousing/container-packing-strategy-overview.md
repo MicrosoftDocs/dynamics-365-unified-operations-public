@@ -70,7 +70,7 @@ This scenario references values and records that are included in the standard de
 
 ### Inspect or create container types
 
-To inspect your container types, or to create new container types if they're required, follow these steps.
+To inspect your container types, or to create new container types if they're required, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.
 1. Make sure that each of the following container types is available in your demo data. Edit or create container types as required.
@@ -107,7 +107,7 @@ To inspect your container types, or to create new container types if they're req
 
 ### Inspect or create container groups
 
-To inspect your container groups, or to create new container groups if they're required, follow these steps.
+To inspect your container groups, or to create new container groups if they're required, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**.
 1. Make sure that the following container group is available in your demo data. If it isn't available, select **New** to create it.
@@ -137,7 +137,7 @@ To inspect your container groups, or to create new container groups if they're r
 
 ### Create a new container build template
 
-To create a new container build template, follow these steps.
+To create a new container build template, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container build template**.
 1. Select **New** to create a container build template that has the following settings:
@@ -177,7 +177,7 @@ To create a new container build template, follow these steps.
 
 ### Set up a wave template for containerization
 
-To set up a wave template, follow these steps.
+To set up a wave template, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 1. In the list pane, set the **Wave template type** field to *Shipping*.
@@ -192,7 +192,7 @@ To set up a wave template, follow these steps.
 
 ### Set up a work template
 
-To set up a work template, follow these steps.
+To set up a work template, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. Set the **Work order type** field to *Sales orders*.
@@ -232,7 +232,7 @@ To set up a work template, follow these steps.
 
 ### Set up shipment consolidation policies
 
-To set up a shipment consolidation policy, follow these steps.
+To set up a shipment consolidation policy, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. In the list pane, set the **Policy type** field to *Sales orders*.
@@ -244,7 +244,7 @@ To set up a shipment consolidation policy, follow these steps.
 
 ### Set up physical dimensions for the product
 
-To set up physical dimensions for the products in this scenario, follow these steps.
+To set up physical dimensions for the products in this scenario, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the product where the **Item number** field is set to *A0001*.
@@ -272,7 +272,7 @@ To set up physical dimensions for the products in this scenario, follow these st
 
 ### Create sales order 1
 
-To create a sales order, follow these steps.
+To create a sales order, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New**.
@@ -301,7 +301,7 @@ To create a sales order, follow these steps.
 
 ### Create sales order 2
 
-To create a second sales order, follow these steps.
+To create a second sales order, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New**.
@@ -330,7 +330,7 @@ To create a second sales order, follow these steps.
 
 ### Create the load
 
-To create a load for each order that you created for this scenario and then release it to the warehouse, follow these steps.
+To create a load for each order that you created for this scenario and then release it to the warehouse, follow these steps:
 
 1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines from the sales orders that you created for this scenario.

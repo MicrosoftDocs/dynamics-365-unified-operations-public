@@ -4,7 +4,7 @@ description: Learn about the sales point prefix configuration for Latin America,
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Sales point prefixes for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can configure the sales point prefixes that some fiscal authorities require for legal documents, treasury documents, and checkbooks.
 
@@ -53,3 +55,5 @@ To add the fiscal codification provided by the fiscal authorities, follow these 
 1. Select **Save**.
 
 Learn more in [Tax application for Latin America](ltm-core-tax-application.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

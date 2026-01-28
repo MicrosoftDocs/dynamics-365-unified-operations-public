@@ -26,7 +26,7 @@ Before you complete the procedures in this article, the following prerequisites 
 
 ## Complete the configuration for refund invoices
 
-To complete the configuration for refund invoices, follow these steps.
+To complete the configuration for refund invoices, follow these steps:
 
 1. Create document class types and document classes for invoices, credit notes, and debit notes. The new document classes are used exclusively for refund invoices. For each document class, ensure that the **Details Taxpayer** option on the **General** tab is set to **Yes**. This setting enables further configuration on the **Additional data** tab. For example, you can specify the company name, country, or country document type.
 1. Create a ledger account to use as a suspense account. Set the main account type to **Profit and loss**.
@@ -42,7 +42,7 @@ To run a refund invoice in finance and operations apps, three unique transaction
 
 ### Create the first transaction
 
-To create the first transaction, follow these steps.
+To create the first transaction, follow these steps:
 
 1. Go to **Account payable** \> **Invoices** \> **Invoice Journal**. All further transactions will be created from this journal.
 1. Select **New**, and define the journal name.
@@ -57,7 +57,7 @@ To create the first transaction, follow these steps.
 
 You must define the same vendor that you used in the first transaction.
 
-To create the second transaction, follow these steps.
+To create the second transaction, follow these steps:
 
 1. Complete the LATAM fields by using the **Details Taxpayer** document class that you previously created. In this way, you can complete the fiscal information for the actual vendor of the transaction.
 1. Add a debit account of your choice, and configure tax groups and tax codes.
@@ -67,7 +67,7 @@ To create the second transaction, follow these steps.
 
 The third transaction reconciles the accounts that were used in the previous two transactions.
 
-To create the third transaction, follow these steps.
+To create the third transaction, follow these steps:
 
 1. The vendor account is credited, and the ledger account is debited with the refund account that was used in the first transaction. Complete the tax groups and codes for the ledger account.
 1. Fill in the LATAM fields for the vendor line by using the document class for settlement that you previously created.
@@ -75,7 +75,7 @@ To create the third transaction, follow these steps.
 
 ### Initiate vendor transaction settlement
 
-To initiate vendor transaction settlement, follow these steps.
+To initiate vendor transaction settlement, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select the vendor account that was used in the transactions. Then, on the vendor header, go to **Transactions**.
@@ -83,7 +83,7 @@ To initiate vendor transaction settlement, follow these steps.
 
 ### Set up the transaction relation
 
-To set up the transaction relation, follow these steps.
+To set up the transaction relation, follow these steps:
 
 1. Go to **Account payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Search for transaction 1, go to **LATAM option**, select the source document, and then select **New**.

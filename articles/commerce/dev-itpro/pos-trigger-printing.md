@@ -231,7 +231,7 @@ To implement this scenario, you must complete these steps.
 
 ## Implement a trigger
 
-To implement a trigger, follow these steps.
+To implement a trigger, follow these steps:
 
 1. Open Visual Studio 2015 in administrator mode.
 2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
@@ -428,7 +428,7 @@ To implement a trigger, follow these steps.
 
 The following procedure describes how to override an existing CRT request to print a receipt for suspended transactions. 
 
-To override the CRT receipt request to generate the receipt data, follow these steps.
+To override the CRT receipt request to generate the receipt data, follow these steps:
 
 1. Start Visual Studio 2015.
 2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).
@@ -680,7 +680,7 @@ To override the CRT receipt request to generate the receipt data, follow these s
 
 ## Add the custom receipt layout
 
-To add the custom receipt layout, follow these steps.
+To add the custom receipt layout, follow these steps:
 
 1. Open Dynamics 365 Commerce.
 2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> **Receipts formats**.
@@ -698,7 +698,7 @@ To add the custom receipt layout, follow these steps.
 
 ## Configure the XPS printer for quick testing
 
-To configure the XPS printer for quick testing, follow these steps.
+To configure the XPS printer for quick testing, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 2. Select the hardware profile that your device is using. For example, in the demo data all the Houston devices uses **HW002**.
@@ -710,7 +710,7 @@ To configure the XPS printer for quick testing, follow these steps.
 
 ## Validate the extension
 
-To validate the extension, follow these steps.
+To validate the extension, follow these steps:
 
 1. Press **F5** and deploy the POS to test your customization.
 2. After the POS starts, sign in to POS and add an item to a transaction.

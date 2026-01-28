@@ -4,7 +4,7 @@ description: Learn about the various types of time and attendance registrations 
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.date: 01/24/2024
+ms.date: 12/02/2025
 ms.topic: article
 audience: Application User
 ms.search.region: Global
@@ -12,7 +12,7 @@ ms.search.region: Global
 
 # Time and attendance information
 
-**Time and attendance** features enable you to enter and to process time and attendance registrations.
+Time and attendance features enable you to enter and to process time and attendance registrations.
 
 ## About time and attendance
 

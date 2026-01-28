@@ -49,7 +49,7 @@ Before you generate the report for the first time, download the following models
 > [!NOTE]
 > For more information about how to download ER format instructions, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-After you've finished downloading the ER configurations from LCS, follow these steps.
+After you've finished downloading the ER configurations from LCS, follow these steps:
 
 1. In Dynamics 365 Finance, select the related Singaporean company.
 2. Go to **Workspaces** \> **Electronic reporting**, and then set the Microsoft provider to **Active**.
@@ -76,7 +76,7 @@ If the sales code that you created supports the standard rate of the **GST\_7%**
 
 ### Generate a GST report
 
-To generate the tax declaration report, follow these steps.
+To generate the tax declaration report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **GST tax report**.
 2. Select the **GST report** format mapping.

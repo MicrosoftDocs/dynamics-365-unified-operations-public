@@ -2,7 +2,7 @@
 title: What's new or changed for the India localization in 10.0.20-10.0.22
 description: Learn about new or changed functionality for India localization features in Microsoft Dynamics 365 Finance versions 10.0.20 through 10.0.22.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

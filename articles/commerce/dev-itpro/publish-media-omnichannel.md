@@ -28,7 +28,7 @@ The time that product and category media assignments take to appear for site use
 - The frequency of the headquarters-to-CSU data sync jobs in headquarters
 - The default two-hour cache for CSU merchandising data
 
-To publish product (or category) media assignments, follow these steps.
+To publish product (or category) media assignments, follow these steps:
 
 1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view (**Modules \> Retail and Commerce \> Products and categories \> Released products by category**).
 1. In the search field on the left, search for a product (or category) by its name or product ID. Then select it.
@@ -43,7 +43,7 @@ The published media assignments will appear for channel-specific site users afte
 
 Omnichannel content (for example, product media assignments) can use site builder's publish group feature to trigger a **Publish** action for a set of changes at a scheduled date and time. For more information about the publish group feature, see [Work with publish groups](../publish-groups.md).
 
-To use a publish group for product media assignments, follow these steps.
+To use a publish group for product media assignments, follow these steps:
 
 1. In the **Omnichannel content** workspace, on the left navigation pane, select **Publish groups**.
 1. In the publish groups list view, on the command bar, select **New**. Enter a friendly name for the publish group, and then select **OK**.

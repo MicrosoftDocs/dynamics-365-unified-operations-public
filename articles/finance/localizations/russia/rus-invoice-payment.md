@@ -22,7 +22,7 @@ Invoice for payment is an optional document containing payment details of the re
 
 Before posting **Invoice for payment** in the Account payable and Account receivable modules, you must set up the number sequences.
 
-To set up the number sequences, follow these steps.
+To set up the number sequences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters** or **Accounts payable** \> **Setup** \> **Accounts payable parameters**
 1. Select the **Number sequences** tab.
@@ -32,7 +32,7 @@ To set up the number sequences, follow these steps.
 
 Use the **Posting invoice for payment** page to post an invoice for payment.
 
-To post and print an invoice for payment from a sales order, follow these steps.
+To post and print an invoice for payment from a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Orders** \> **All sales orders**.
 1. Create a new sales order, and enter the required details.
@@ -62,7 +62,7 @@ To post and print an invoice for payment from a sales order, follow these steps.
 
 Use the **Posting invoice for payment** page to post an invoice for payment.
 
-To post and print an invoice for payment from a free text invoice , follow these steps.
+To post and print an invoice for payment from a free text invoice , follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Invoices** \> **All free text invoices**.
 1. Create a new free text invoice, and enter the required details. For more information, see [Create free text invoices](../../accounts-receivable/create-free-text-invoice-new.md).
@@ -89,7 +89,7 @@ To post and print an invoice for payment from a free text invoice , follow these
 
 ## Post and print an invoice for payment from a purchase order 
 
-To post and print an invoice for payment from a purchase order, follow these steps.
+To post and print an invoice for payment from a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
 1. Create a new purchase order, and enter the required details.

@@ -33,7 +33,7 @@ The following table shows the prerequisites must be in place before you start.
 
 ## Determine work eligibility
 
-You can easily determine how many available hours a worker has for leave requests. To determine worker eligibility, follow these steps.
+You can easily determine how many available hours a worker has for leave requests. To determine worker eligibility, follow these steps:
 
 1. On the **Workers** page, select the worker to determine eligibility for, and then click **Employment** \> **FMLA** \> **FMLA eligibility**.
 2. In the **Effective date** field, enter the date when you expect eligibility to begin.
@@ -48,7 +48,7 @@ FMLA uses cases to track eligibility and hours that have been taken.
 
 You must perform this step for all leaves of absence, regardless of whether the leave qualifies for FMLA.
 
-To create an FMLA case, follow these steps.
+To create an FMLA case, follow these steps:
 
 1. On the **FMLA cases** page, on the **Action Pane**, in the **New** group, click **Case**.
 2. Optional: If the case has already been approved, on the **General** tab, select the **Approved** check box. You can also select the approver.
@@ -69,7 +69,7 @@ To create an FMLA case, follow these steps.
 
 ## Recalculate FMLA eligibility (if required)
 
-After you create an FMLA case for a worker, you can recalculate the worker's eligibility at any time. To recalculate a worker's eligibility, follow these steps.
+After you create an FMLA case for a worker, you can recalculate the worker's eligibility at any time. To recalculate a worker's eligibility, follow these steps:
 
 1. On the **FMLA cases** page, open the case to log hours for.
 2. On the **Action Pane**, in the **Maintain** group, click **Recalculate FMLA eligibility**.
@@ -78,7 +78,7 @@ After you create an FMLA case for a worker, you can recalculate the worker's eli
 
 ## Enter FMLA hours that have been taken (if required)
 
-After an FMLA case is approved, you can change and track the number of hours that the worker applies to their FMLA leave. To enter FMLA hours that have been taken, follow these steps.
+After an FMLA case is approved, you can change and track the number of hours that the worker applies to their FMLA leave. To enter FMLA hours that have been taken, follow these steps:
 
 1. On the **FMLA cases** page, open the case to log hours for.
 2. On the **Action Pane**, in the **Maintain** group, click **FMLA hours**.
@@ -94,7 +94,7 @@ If you use finance and operations and Payroll, you can use earning codes to auto
 > [!TIP]
 > If you use this method to track FMLA hours, you can still change the hours manually after they are created.
 
-To integrate Payroll with FMLA, follow these steps.
+To integrate Payroll with FMLA, follow these steps:
 
 1. On the **Earning codes** page, open an earning code that reduces the number of FMLA hours that are available for a worker when hours are logged for that worker.
 2. Select the **Reduce remaining FMLA time** check box.
@@ -104,7 +104,7 @@ To integrate Payroll with FMLA, follow these steps.
 
 ## Optional: Generate the FMLA hours taken report
 
-You can create a report of all workers who have FMLA cases and the hours that have been applied toward each case. This report is available only in finance and operations. To generate the **FMLA leave taken** report, follow these steps.
+You can create a report of all workers who have FMLA cases and the hours that have been applied toward each case. This report is available only in finance and operations. To generate the **FMLA leave taken** report, follow these steps:
 
 1. On the **FMLA leave taken** page, enter the first and last day of the leave period to view.
 2. Click **OK**.

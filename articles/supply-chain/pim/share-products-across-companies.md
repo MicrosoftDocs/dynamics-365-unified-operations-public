@@ -1,5 +1,5 @@
 ---
-title: Cross-company product sharing (preview)
+title: Cross-company product sharing
 description: Learn how to share released-product data across companies to reduce the volume of data that must be maintained and simplify maintaining product master data.
 author: sgmsft
 ms.author: shwgarg
@@ -10,16 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Cross-company product sharing (preview)
+# Cross-company product sharing
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.46 GA.-->
 
 Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -65,7 +60,7 @@ To share products and product-related information, you must create and set up yo
 
 We recommend that you set up duplicate record sharing for tables that handle policies and related information.
 
-To create a duplicate record sharing policy, follow these steps. You can create as many duplicate record sharing policies as you want.
+To create a duplicate record sharing policy, follow these steps: You can create as many duplicate record sharing policies as you want.
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
@@ -88,7 +83,7 @@ To create a duplicate record sharing policy, follow these steps. You can create 
 
 The *Released product* table (`Inventtable`) must be set up for single record sharing.
 
-To create single record sharing policies for the **Released product** table and other tables, follow these steps.
+To create single record sharing policies for the **Released product** table and other tables, follow these steps:
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
@@ -177,7 +172,7 @@ By default, most country/region-specific fields are disabled in product tables, 
 
 When you create a product, you must specify several different units of measure, each for a specific purpose. For example, you might specify an inventory unit, a purchase unit, and a sales unit. The **New released product** dialog box shows the same default unit for all of them, based on the default setting for the current company. However, you can edit the unit for each unit of measure separately in the dialog box.
 
-To assign the default unit for a company, follow these steps.
+To assign the default unit for a company, follow these steps:
 
 1. On the navigation bar, select the company (legal entity) that you want to set defaults for.
 1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.

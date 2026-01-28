@@ -48,7 +48,7 @@ The following illustration shows an example of a commercial invoice.
 
 ## Print a commercial invoice
 
-To print a commercial invoice for a shipment, follow these steps.
+To print a commercial invoice for a shipment, follow these steps:
 
 1. Follow one of these steps to identify the shipment that you want to print a commercial invoice for:
 

@@ -92,7 +92,7 @@ We recommend that you enable the **Use application specific parameters from prev
 
 We recommend that you also enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
-To set up application-specific parameters for the SAF-T Format (LT) configuration, follow these steps.
+To set up application-specific parameters for the SAF-T Format (LT) configuration, follow these steps:
 
 1. In Electronic reporting, open the **Configurations** page. 
 2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
@@ -110,16 +110,16 @@ To set up application-specific parameters for the SAF-T Format (LT) configuratio
 
 ### <a name="satt"></a>Select the SAT-T format in General ledger parameters
 
-To select the SAT-T format in General ledger parameters, follow these steps.
+To select the SAT-T format in General ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (LT)**.
 
 ### <a name="contact"></a>Create a contact person for your company
 
-The **Company** node of the SAF-T report must include information for a contact. This node is located under the **Header** node. To set up contact information that will be reported to SAF-T, follow these steps.
+The **Company** node of the SAF-T report must include information for a contact. This node is located under the **Header** node. To set up contact information that will be reported to SAF-T, follow these steps:
 
-To create a contact person for your company, follow these steps.
+To create a contact person for your company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 2. Select **New** to create a new contact for your legal entity. Be sure to select **Legal entity** in the **Contact for** field. 
@@ -131,7 +131,7 @@ To create a contact person for your company, follow these steps.
 
 To generate a SAF-T, you must configure the registration number.
 
-To configure the registration number of the legal entity, follow these steps.
+To configure the registration number of the legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.

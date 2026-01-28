@@ -49,7 +49,7 @@ Like the buy box module, the quick view module respects the settings at **Site S
 
 A quick view module can be added to the product collection and search results modules.
 
-To add a quick view module to a product collection module in Commerce site builder, follow these steps.
+To add a quick view module to a product collection module in Commerce site builder, follow these steps:
 
 1. Go to **Pages**, and then select the home page for the Fabrikam site.
 1. Go to any **Product Collection** module on the homepage, select the ellipsis (**...**), and then select **Add module**.

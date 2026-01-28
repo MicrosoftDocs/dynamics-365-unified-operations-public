@@ -22,7 +22,7 @@ You can register the lease of a fixed asset and the subsequent return of the lea
 
 ## Lease a fixed asset
 
-To lease a fixed asset, follow these steps.
+To lease a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the fixed asset to lease, and then, on the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Lease** to open the **FA leased** page.
@@ -58,7 +58,7 @@ To lease a fixed asset, follow these steps.
 
 You can register the return of a leased fixed asset in the same way that you registered the lease. Create a return-from-lease transaction on the **FA journal** page, and then verify the return date on the **FA on loan** and **Journal transactions** pages.
 
-To register the return of a leased fixed asset, follow these steps.
+To register the return of a leased fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the leased fixed asset to return, and then, on the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Lease** to open the **FA leased** page.
@@ -81,7 +81,7 @@ To register the return of a leased fixed asset, follow these steps.
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
 
-To reverse a fixed asset lease and return lease from transactions, follow these steps.
+To reverse a fixed asset lease and return lease from transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
 1. On the **FA value models** page, on the Action Pane, select **Transactions**.

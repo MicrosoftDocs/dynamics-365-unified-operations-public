@@ -32,7 +32,7 @@ While an on-premises environment is being deployed, you can select to deploy a c
 > [!NOTE]
 > Merged packages, which include platform/application code and custom code, are restricted to use during quality updates only. They can't be utilized when updating to a newer service update. For instance, if you are updating from Dynamics 365 Finance + Operation (on-premises) version 10.0.41 to 10.0.42, the service update must be applied before using a merged package.
 
-To apply updates to an on-premises environment after it's deployed, follow these steps.
+To apply updates to an on-premises environment after it's deployed, follow these steps:
 
 1. In Lifecycle Services, open the **Environment details** page for the environment.
 2. Under **Maintain**, select **Apply updates**.

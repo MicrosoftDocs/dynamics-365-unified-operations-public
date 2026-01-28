@@ -75,7 +75,7 @@ Setting the margin on the master plan is useful when you want to simulate longer
 
 #### Coverage group safety margins
 
-To apply a safety margin to a coverage group, follow these steps.
+To apply a safety margin to a coverage group, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Coverage groups**.
 1. In the list pane, select the coverage group.
@@ -87,7 +87,7 @@ To apply a safety margin to a coverage group, follow these steps.
 
 #### Master plan safety margins
 
-To apply a safety margin to a master plan, follow these steps.
+To apply a safety margin to a master plan, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
 1. In the list pane, select the master plan.
@@ -162,4 +162,7 @@ This situation usually occurs when you sell an item with an issue margin from a 
 
 ## Related information
 
-- [Create a working time calendar](../../../human-resources/hr-leave-and-absence-working-time-calendar.md)
+- [Calendars and master planning](../supply-chain-calendars-master-planning.md)
+- [Calculate requested ship dates for purchase orders](../supplier-requested-confirmed-dates.md)
+- [Improve scheduling engine performance](../scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](date-time-used.md)

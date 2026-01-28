@@ -39,7 +39,7 @@ Before you start the bulk of the work, notify users of the target environment th
 
 ### Manually send a broadcast message
 
-To notify users manually via LCS, follow these steps.
+To notify users manually via LCS, follow these steps:
 
 1. In LCS, open the **Environment details** page for the target environment.
 2. Select **Maintain** \> **Message online users**.

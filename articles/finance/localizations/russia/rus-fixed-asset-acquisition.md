@@ -50,7 +50,7 @@ There are two ways to acquire fixed assets (that is, put them into operation):
 
 ## Acquire a fixed asset 
 
-To create transactions for one fixed asset by using the fixed asset journal, follow these steps.
+To create transactions for one fixed asset by using the fixed asset journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Select **New** to create a fixed asset journal.
@@ -76,7 +76,7 @@ To create transactions for one fixed asset by using the fixed asset journal, fol
 
     The values of the **Offset account type** and **Offset account** fields are based on the posting profile setting. You can change these values as you require.
 
-To create transactions for several fixed assets at the same time, follow these steps.
+To create transactions for several fixed assets at the same time, follow these steps:
 
 1. On the **Journal voucher** page (that is, on the Fixed asset journal lines), on the Action Pane, select **Group operations** \> **Putting into operation**.
 1. In the **Putting into operation** dialog, on the **Records to include** FastTab, select **Filter** to open the **Assets** dialog, where you can specify the values for one fixed asset, a fixed asset list, or a group of fixed assets. When you've finished, select **OK**.
@@ -89,7 +89,7 @@ You can review posted transactions on the journal lines by selecting **Inquiries
 
 ## Create standard printing forms
 
-To create standard printing forms, follow these steps.
+To create standard printing forms, follow these steps:
 
 1. In the fixed asset record, on the Action Pane, select **Documents**, and then select one of the following printing forms:
 
@@ -110,7 +110,7 @@ You can review all document records that are created at **Fixed assets (Russia)*
 
 You can assemble a fixed asset from the inventory items and then put the fixed asset into operation. When an assembled asset is put into operation, components are issued from inventory, based on their current cost.
 
-To assemble a fixed asset, follow these steps.
+To assemble a fixed asset, follow these steps:
 
 1. Select **Fixed assets (Russia)** \> **Fixed assets**, and then, on the Action Pane, select **Componentry** to open the **Componentry** page (you could not enter componentry if the fixed asset has not the **Bought** or **Scheduled** status).
 1. In the upper pane, on the **Componentry** tab, select **Add**.
@@ -131,7 +131,7 @@ To assemble a fixed asset, follow these steps.
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
 
-To reverse acquisition transactions, follow these steps.
+To reverse acquisition transactions, follow these steps:
 
 1. Select **Fixed assets (Russia)** \> **Fixed assets**. On the Action Pane, select **Value models**. Then, on the **FA value models** page, on the Action Pane, select **Transactions** to open the **FA transactions** page'. 
 1. Select a transaction, and then, on the Action Pane, select **Reverse transaction**. In the **Reverse transaction** dialog, you can change the transaction reversal date as you require.

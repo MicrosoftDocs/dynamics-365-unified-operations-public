@@ -2,9 +2,9 @@
 title: Advance invoices for Eastern Europe
 description: Learn about advance invoices for Eastern Europe, which are documents that you create for customers or vendors. It states the amount that must be prepaid.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 07/05/2022
+ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 ms.search.form: CustParameters
 audience: Application User
@@ -31,7 +31,7 @@ Advance invoice functionality lets you perform the following tasks:
 - Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).
 - *For the Czech Republic only:* Create a tax document for the VAT liable delivery.
 
-The article contains the following sections:
+This article contains the following sections:
 
 - [Advance invoices for Poland](#advance-invoices-for-poland)
 - [Set up Accounts receivable for advance invoices](#set-up-accounts-receivable-for-advance-invoices)
@@ -53,15 +53,15 @@ The article contains the following sections:
 
 ## Advance invoices for Poland
 
-Polish companies that receive prepayments must create an invoice for prepayments for the customer. This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes. The tax that is calculated on the advance invoice must be reported to the tax authority.
+Polish companies that receive prepayments must create an invoice for prepayments for the customer. Post this advance invoice to the general ledger. It's a mandatory document for VAT tax purposes. Report the tax calculated on the advance invoice to the tax authority.
 
-When the final sale of goods is performed, the advance invoice should be specified on the sales invoice. The total amount of sales must include prepayments.
+When you perform the final sale of goods, specify the advance invoice on the sales invoice. Include prepayments in the total amount of sales.
 
-When the sales invoice is posted, the settled advance invoice is reversed. The original advance invoice is settled with an advance invoice reversal.
+When you post the sales invoice, reverse the settled advance invoice. Settle the original advance invoice with an advance invoice reversal.
 
 ## Set up Accounts receivable for advance invoices
 
-1. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Advance invoice** FastTab, set the following fields.
+1. On **Accounts receivable parameters**, on the **Updates** tab, on the **Advance invoice** FastTab, set the following fields.
 
     | Field | Description |
     |-------|-------------|
@@ -98,31 +98,31 @@ When the sales invoice is posted, the settled advance invoice is reversed. The o
 1. On the Action Pane, on the **Advance invoice** tab, select **Advance invoice** to create an advance invoice.
 1. Enter the required information, and then select **Post** to post the advance invoice.
 
-An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**. You can manually change the status of an advance invoice that has been posted. Select **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.
+An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**. You can manually change the status of an advance invoice that you already posted. Select **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.
 
 > [!NOTE]
 > You can change the status of an advance invoice at any time. You can't process closed advance invoices in transactions.
 > 
-> *For Poland only:* Advance invoice transactions are generated if you set up a posting profile for advance invoices in Accounts receivable parameters. To view transactions that have been posted, select **Voucher** on the **Advance invoice** page.
+> *For Poland only:* Advance invoice transactions are generated if you set up a posting profile for advance invoices in **Accounts receivable parameters**. To view transactions that you posted, select **Voucher** on the **Advance invoice** page.
 
 ## VAT on advance invoices
 
-Companies must record VAT on prepayments from customers, even though the sale hasn't been completed. To post VAT from a prepayment, you can add a line that contains specifications of VAT to an advance invoice. An advance invoice can have several lines, and those lines can contain VAT specifications that are taken from sales order lines. Therefore, you can post VAT from a prepayment in strict accordance with sales order lines.
+Companies must record VAT on prepayments from customers, even though the sale isn't complete. To post VAT from a prepayment, add a line that contains specifications of VAT to an advance invoice. An advance invoice can have several lines, and those lines can contain VAT specifications that are taken from sales order lines. Therefore, you can post VAT from a prepayment in strict accordance with sales order lines.
 
 > [!NOTE]
-> The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**. Otherwise, they are copied to the advance invoice lines as if the VAT amount is 0 (zero).
+> The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**. Otherwise, they're copied to the advance invoice lines as if the VAT amount is 0 (zero).
 
 ## Link an advance invoice to a sales order or a free text invoice
 
-Each advance invoice can be linked to only one sales order or free text invoice at a time. You can reassign an existing advance invoice to another sales order or free text invoice, provided that no prepayments are linked to the advance invoice.
+You can link each advance invoice to only one sales order or free text invoice at a time. You can reassign an existing advance invoice to another sales order or free text invoice, as long as no prepayments are linked to the advance invoice.
 
-To link an advance invoice to a sales order, follow these steps.
+To link an advance invoice to a sales order, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Sales order**.
 1. Select the sales order to link to the advance invoice, and then select **OK**.
 
-To link an advance invoice to a free text invoice, follow these steps.
+To link an advance invoice to a free text invoice, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Free text invoice**.
@@ -131,35 +131,35 @@ To link an advance invoice to a free text invoice, follow these steps.
 ## Create a customer advance invoice from a sales order
 
 1. Create a sales order, or select an existing sales order.
-1. Select **Invoice**, and then select **Generate** &gt; **Advance invoice**.
-1. On the **Create advance invoice** page, set the following fields.
+1. Select **Invoice**, and then select **Generate** > **Advance invoice**.
+1. On **Create advance invoice**, set the following fields.
 
     | Field | Description |
     |-------|-------------|
     | Percent | Specify the percentage of the prepayment for the sales order. |
     | Offset account | Select the default offset account to use with advance invoicing. |
-    | Update order | Select **All**, **Deliver now**, **Picked**, **Packing slip**, or **Picked quantity and non-stocked products**. The advance invoice amount will be calculated based on the sales order amounts for the items. |
+    | Update order | Select **All**, **Deliver now**, **Picked**, **Packing slip**, or **Picked quantity and non-stocked products**. The advance invoice amount is calculated based on the sales order amounts for the items. |
     | Post VAT | Specify whether VAT should be posted during advance invoice posting. |
     | Post VAT date | Specify the date when VAT should be posted. |
-    | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment. |
+    | Posting profile with prepayment journal voucher | Enter the posting profile for the prepayment. |
     | Create tax document | Specify whether a tax document should be created. |
 
 > [!NOTE]
-> *For Poland only:* Advance invoice transactions are generated if you set up a posting profile for advance invoices in Accounts receivable parameters.
+> *For Poland only:* Advance invoice transactions are generated if you set up a posting profile for advance invoices in **Accounts receivable parameters**.
 
 ## Create a customer advance invoice from a free text invoice
 
 1. Create a free text invoice, or select an existing free text invoice.
 1. On the **Invoice** tab, in the **New** section, select **Advance invoice**.
 
-    You can now create a new advance invoice that will be linked to the free text invoice.
+    You can now create a new advance invoice that links to the free text invoice.
 
 > [!NOTE]
-> *For Poland only:* Advance invoice transactions are generated if you set up a posting profile for advance invoices in Accounts receivable parameters.
+> *For Poland only:* Advance invoice transactions are generated if you set up a posting profile for advance invoices in **Accounts receivable parameters**.
 
 ## Print an advance invoice
 
-- On the **Advance invoice** page, select **Print**. 
+- On **Advance invoice**, select **Print**. 
 
 *For Poland only:* You can print an advance invoice document of the fiscal document. Select an option during advance invoice posting.
 
@@ -170,32 +170,32 @@ To link an advance invoice to a free text invoice, follow these steps.
 - Amount without VAT, VAT amount, amount with VAT, and currency
 - Tax percentage
 
-The summary of VAT amounts should include the **Tax from Advance Invoice** field. The amount that is due should be reduced by the amount of the advance invoice.
+The summary of VAT amounts should include the **Tax from Advance Invoice** field. The amount that's due should be reduced by the amount of the advance invoice.
 
 ## Create a payment proposal from an advance invoice
 
 When you create a new payment journal, you can automatically generate payment journal lines, based on an advance invoice.
 
-1. On the **Payment journal** page, select the **Prepayment journal voucher** option, and then select **Lines**.
-1. On the **Journal voucher** page, select **Payment proposal** &gt; **Payment proposal from advance invoice** to create a payment proposal from advance invoices. Information such as the posting profile and sales tax groups is taken from the advance invoice.
+1. On **Payment journal**, select the **Prepayment journal voucher** option, and then select **Lines**.
+1. On **Journal voucher**, select **Payment proposal** > **Payment proposal from advance invoice** to create a payment proposal from advance invoices. Information such as the posting profile and sales tax groups is taken from the advance invoice.
 
 > [!NOTE]
-> New prepayments will automatically be linked to advance invoices if the **Link prepayments** and **Change status** options are selected on the **Create payment proposal from advance invoices** page.
+> New prepayments automatically link to advance invoices if you select the **Link prepayments** and **Change status** options on **Create payment proposal from advance invoices**.
 
 ## Link a prepayment to an advance invoice
 
-To link a prepayment to an advance invoice from the payment journal, follow these steps.
+To link a prepayment to an advance invoice from the payment journal, follow these steps:
 
-- Open the payment journal, select the line that has the prepayment, and then select **Functions** &gt; **Link to advance invoices**.
+1. Open the payment journal, select the line that has the prepayment, and then select **Functions** &gt; **Link to advance invoices**.
 
-To link a prepayment to an advance invoice from the **Customer transactions** page, follow these steps.
+To link a prepayment to an advance invoice from the **Customer transactions** page, follow these steps:
 
 1. Select **All customers** &gt; **Customer** &gt; **Transactions**.
 1. Select the payment journal, select the line that has the prepayment, and then select **Functions** &gt; **Link to advance invoices**.
 
 ## Link an advance invoice to a prepayment
 
-To link an advance invoice to a prepayment line, follow these steps.
+To link an advance invoice to a prepayment line, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Prepayment**.
@@ -203,8 +203,8 @@ To link an advance invoice to a prepayment line, follow these steps.
 
 ## Advance invoice credit notes
 
-- *For Poland only:* To cancel an advance invoice, you can create an advance invoice credit note and post it to the general ledger.
-- To create a credit note, you can create a new advance invoice and then select **Credit note**. You can then select the advance invoice to cancel.
+- *For Poland only:* To cancel an advance invoice, create an advance invoice credit note and post it to the general ledger.
+- To create a credit note, create a new advance invoice and then select **Credit note**. You can then select the advance invoice to cancel.
 - You can also create a credit note for a sales invoice that has advance invoice settlement.
 - The layout of advance invoice credit note invoices contains information about the lines both before and after correction.
 - *For Poland only:* General ledger transactions are created after the advance invoice credit note is posted.
@@ -227,18 +227,18 @@ You can manually create an advance invoice. Alternatively, the new advance invoi
 1. On the Action Pane, on the **Advance invoice** tab, select **Advance invoice** to create an advance invoice.
 1. Enter the required information, and then select **Post** to post the advance invoice.
 
-An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**. You can manually change the status of an advance invoice that has been posted. Select **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.
+An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**. You can manually change the status of an advance invoice that you already posted. Select **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.
 
 > [!NOTE]
 > You can change the status of an advance invoice at any time. You can't process closed advance invoices in transactions.
 >
-> The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**. Otherwise, they are copied to the advance invoice lines as if the VAT amount is 0 (zero).
+> The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**. Otherwise, they're copied to the advance invoice lines as if the VAT amount is 0 (zero).
 
 ### Link an advance invoice to a purchase order
 
-Each advance invoice can be linked to only one purchase order at a time. You can reassign an existing advance invoice to another purchase order, provided that no prepayments are linked to the advance invoice.
+You can link each advance invoice to only one purchase order at a time. You can reassign an existing advance invoice to another purchase order, as long as no prepayments are linked to the advance invoice.
 
-To link an advance invoice to a purchase order, follow these steps.
+To link an advance invoice to a purchase order, follow these steps:
 
 1. On the **All advance invoices** page, select the advance invoice.
 1. On the Action Pane, select **Advance invoice**, and then select **Purchase order**.
@@ -247,33 +247,33 @@ To link an advance invoice to a purchase order, follow these steps.
 ### Create a vendor advance invoice from a purchase order
 
 1. Create a purchase order, or select an existing purchase order.
-1. Select **Invoice**, and then select **Generate** &gt; **Advance invoice**.
-1. On the **Create advance invoice** page, set the following fields.
+1. Select **Invoice**, and then select **Generate** > **Advance invoice**.
+1. On **Create advance invoice**, set the following fields.
 
     | Field | Description |
     |-------|-------------|
-    | Percent | Specify the percentage of the prepayment for the purchase order. |
-    | Update purchase | Select an option. The advance invoice amount will be calculated based on the purchase order amount for the items. |
-    | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment. |
+    | Percent | Enter the percentage of the prepayment for the purchase order. |
+    | Update purchase | Select an option. The system calculates the advance invoice amount based on the purchase order amount for the items. |
+    | Posting profile with prepayment journal voucher | Enter the posting profile for the prepayment. |
 
 ## Use the Advance invoice and Prepayment handling functionality
 
-You can use the **Advance invoice** and **Prepayment handling** functionality in the business process. Here is an example:
+You can use the **Advance invoice** and **Prepayment handling** functionality in the business process. Here's an example:
 
 1. A user submits an advance invoice that has VAT to a customer for a prepayment. The advance invoice isn't posted in the ledger.
-2. The user creates and posts the prepayment without VAT.
-3. The user creates a prepayment handling and relates it to the advance invoice. The user then posts the prepayment handling and creates the tax document. The system posts the VAT to the ledger and relates the VAT to the prepayment.
+1. The user creates and posts the prepayment without VAT.
+1. The user creates a prepayment handling and relates it to the advance invoice. The user then posts the prepayment handling and creates the tax document. The system posts the VAT to the ledger and relates the VAT to the prepayment.
 
 > [!NOTE]
 > Clear the value in the **Posting profile** field on the **Advance invoice** FastTab on the **Update** tab of the **Account receivable parameters**. When you create the advance invoice, set the **Post tax** option to **Yes**.
 
-To create a prepayment handling and link it to an advance invoice, follow these steps.
+To create a prepayment handling and link it to an advance invoice, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers**, and find and open the customer record.
-2. On the Action Pane, select **Customer** \> **Transactions**, select the prepayment transaction, and then select **Prepayment handling**.
-3. Set the **Transform to payment** option to **No**.
-4. Select **Advance invoice** to link the prepayment handling to the advance invoice. The system automatically creates VAT lines from the advance invoice.
-5. Post the prepayment handling. The system automatically creates sales tax transactions for the prepayment.
+1. On the Action Pane, select **Customer** \> **Transactions**, select the prepayment transaction, and then select **Prepayment handling**.
+1. Set the **Transform to payment** option to **No**.
+1. Select **Advance invoice** to link the prepayment handling to the advance invoice. The system automatically creates VAT lines from the advance invoice.
+1. Post the prepayment handling. The system automatically creates sales tax transactions for the prepayment.
 
 ## Reversing sales tax amounts for Czech Republic
 

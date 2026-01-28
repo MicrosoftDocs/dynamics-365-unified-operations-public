@@ -23,7 +23,7 @@ You can post a project invoice with a payment slip attachment in a specified for
 
 Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. This procedure was created using the demo data company DEMF.
 
-To post a project invoice with a payment slip, follow these steps. 
+To post a project invoice with a payment slip, follow these steps: 
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, find and select the desired record.

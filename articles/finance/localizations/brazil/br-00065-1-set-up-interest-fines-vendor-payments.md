@@ -22,7 +22,7 @@ You must set up accounts for financial interest and fines, default codes for int
 
 The following procedure uses the BRMF demo company.
 
-To set up accounts for financial interest and fines, default codes for interest and fines, and interest codes and fine codes for vendors and purchase orders, follow these steps.
+To set up accounts for financial interest and fines, default codes for interest and fines, and interest codes and fine codes for vendors and purchase orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Setup \> Vendor posting profiles**.
 1. Use the Quick Filter to find records. For example, filter on the **Posting profile** field with a value of "010".

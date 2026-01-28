@@ -39,7 +39,7 @@ This functionality uses the [Microsoft Dataverse Web API](/power-apps/developer/
 
 You can import the Globalization solution by following these steps.
 
-1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on AppSource.
+1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on Marketplace.
 1. Select **Get it now**.
 1. Fill in the required data.
 1. Select an environment, and then select **Install**.
@@ -53,7 +53,7 @@ A new type of repository for getting ER configurations in Dynamics 365 Finance i
 
 ### Open the Dataverse configuration repository
 
-To open the Dataverse configuration repository, follow these steps.
+To open the Dataverse configuration repository, follow these steps:
 
 1. Sign in to the Dynamics 365 Finance app by using one of the following roles:
 
@@ -82,7 +82,7 @@ To open the Dataverse configuration repository, follow these steps.
 > [!NOTE]
 > It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER configuration released by Microsoft to appear in the Dataverse configuration repository. If the configuration update is expected but does not appear in the Dataverse configuration repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in Power Platform admin center.
 
-To import a single configuration, follow these steps.
+To import a single configuration, follow these steps:
 
 1. On the **Configuration repository** page, in the configurations tree, select the ER configuration that you want.
 1. On the **Versions** FastTab, select the required version of the selected ER configuration.
@@ -95,7 +95,7 @@ To import a single configuration, follow these steps.
 
 ## Import filtered configurations
 
-To import filtered configurations, follow these steps.
+To import filtered configurations, follow these steps:
 
 1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any tags that are needed.
 1. In the **Country/region applicability** field, select the appropriate country/region codes.

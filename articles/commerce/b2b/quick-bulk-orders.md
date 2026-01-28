@@ -1,15 +1,13 @@
 ---
 title: Place B2B bulk and repeat orders quickly
-description: This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
+description: Learn about the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 author: ShalabhjainMSFT
-ms.date: 01/31/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.date: 01/15/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
-ms.dyn365.ops.version: 10.0.23
 ms.search.industry: retail
 ms.search.form: RetailOperations
 
@@ -31,7 +29,7 @@ Commerce B2B e-commerce websites let site users add items to the cart by enterin
 
 The following illustration shows an example of quick order entry by product item number.
 
-![Quick order entry by product item number.](../media/QuickAddByItem.png)
+:::image type="content" source="../media/QuickAddByItem.png" alt-text="Screenshot of quick order entry by product item number.":::
 
 ## Bulk order by variant
 
@@ -39,26 +37,26 @@ Commerce B2B e-commerce websites let site users quickly add different variants o
 
 The following illustration shows an example of quick order entry where the "enter all quantities" functionality is used.
 
-![Quick order entry that uses the "enter all quantities" functionality.](../media/MatrixView.png)
+:::image type="content" source="../media/MatrixView.png" alt-text="Screenshot of quick order entry that uses the enter all quantities functionality.":::
 
 ## Use order templates for quick order entry
 
-Buyers on B2B websites often order specific items together. For example, if you're placing orders for a construction site, you might want to order shirts, jackets, pants, shoes, and hats together. If you're placing orders for a hospital where doctors, nurses, and cleaning staff have different uniforms, you might want to group each uniform type together for easier ordering. For these types of scenarios, Commerce B2B sites enable order templates to be created. Site users can create any number of custom templates and then order all or some of the items from those templates as they require. 
+Buyers on B2B websites often order specific items together. For example, if you're placing orders for a construction site, you might want to order shirts, jackets, pants, shoes, and hats together. If you're placing orders for a hospital where doctors, nurses, and cleaning staff have different uniforms, you might want to group each uniform type together for easier ordering. For these types of scenarios, Commerce B2B sites enable order templates. Site users can create any number of custom templates and then order all or some of the items from those templates as they require. 
 
 You can create new order templates by going to **My account \> Manage order templates** and selecting **Create an order template**. Another way to create a new order template is to navigate to a product details page (PDP) for an item, select a variant (if applicable), and then select **Add to order template**. This action opens the **Add to order template** view, where you can select **Create new** to create a new order template. 
 
-As of Commerce version 10.0.37, order templates support catalogs. When the catalog feature is enabled, each order template line saves the corresponding catalog information. When users add one or more lines from the order template to their shopping cart, the cart lines get the correct catalog information from the order template lines. Also, a batch job named **Synchronize order templates** is available that syncs order template information from the channel database to headquarters. The **Enable restricting order templates by channel** feature is also available to use so you can restrict the order template to only appear in the channel where the template was created. This is helpful when there are multiple B2B ecommerce websites using the same Commerce Scale Unit (CSU) and you don't want buyers to see all the order templates across all the B2B websites.
+As of Commerce version 10.0.37, order templates support catalogs. When you enable the catalog feature, each order template line saves the corresponding catalog information. When users add one or more lines from the order template to their shopping cart, the cart lines get the correct catalog information from the order template lines. Also, a batch job named **Synchronize order templates** is available that syncs order template information from the channel database to headquarters. The **Enable restricting order templates by channel** feature is also available to use so you can restrict the order template to only appear in the channel where the template was created. This restriction is helpful when multiple B2B e-commerce websites use the same Commerce Scale Unit (CSU) and you don't want buyers to see all the order templates across all the B2B websites.
 
 > [!NOTE]
 > Microsoft recommends that you run the **Synchronize order templates** job at regular intervals (for example, once per day) so that order template information is synced to headquarters. 
 
 The following illustration shows an example of an order template.
 
-![Example of an order template.](../media/OrderTemplateHeader.png)
+:::image type="content" source="../media/OrderTemplateHeader.png" alt-text="Screenshot of an order template example.":::
 
 The following illustration shows an example of the details view for an order template.
 
-![Example of an order template's details view.](../media/OrderTemplateLines.png)
+:::image type="content" source="../media/OrderTemplateLines.png" alt-text="Screenshot of an order template details view example.":::
 
 ## Reorder from order history
 
@@ -66,4 +64,6 @@ Commerce B2B e-commerce websites let site users quickly reorder items from their
 
 The following illustration shows an example of a user's order history and the options for reordering items from it.
 
-![Reordering from order history.](../media/Reorder.png)
+:::image type="content" source="../media/Reorder.png" alt-text="Screenshot of reordering from order history showing available options.":::
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

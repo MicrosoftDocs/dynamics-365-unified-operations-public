@@ -2,9 +2,9 @@
 title: Iceland overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Iceland, including links directing to resources about reports and invoices.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Iceland
@@ -23,6 +23,5 @@ This article provides links to documentation resources for Iceland.
 - [Set up mandatory payment references](set-up-mandatory-payment-references.md)
 - [Update vendor invoice declarations and generate the report](update-vendor-invoice-declarations-report.md)
 - [Tax reconciliation report](../europe/emea-tax-reconciliation-report.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

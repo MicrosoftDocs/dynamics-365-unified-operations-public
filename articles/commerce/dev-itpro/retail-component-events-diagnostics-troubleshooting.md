@@ -103,7 +103,7 @@ You can find the AppSessionID and UserSessionID values on the **Details** tab in
 
 ### Finding incoming Commerce Scale Unit request events in Event Viewer
 
-To correlate data for incoming Commerce Scale Unit requests in Event Viewer, you must first enable the **Analytic** channel. To enable the Analytic channel, follow these steps.
+To correlate data for incoming Commerce Scale Unit requests in Event Viewer, you must first enable the **Analytic** channel. To enable the Analytic channel, follow these steps:
 
 1. In Event Viewer, in the left pane, select **Commerce-RetailServer**.
 2. Click **View** &gt; **Enable Analytic and Debug log**. A new node for the Analytic channel appears under the **Commerce-RetailServer** logging provider.
@@ -132,7 +132,7 @@ LCS Log Search does **not** include logs from the following Commerce components:
 
 ### Access LCS Log Search
 
-To access LCS Log Search, follow these steps.
+To access LCS Log Search, follow these steps:
 
 1. Go to [Lifecycle Services](https://lcs.dynamics.com/).
 2. Sign in by using the credentials that are associated with your project.

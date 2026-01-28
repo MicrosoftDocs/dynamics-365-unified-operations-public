@@ -53,7 +53,7 @@ When you publish a page, just the page content is published. You and other users
 
 ## Save, preview, and publish a home page
 
-To save, preview, and publish a home page, follow these steps.
+To save, preview, and publish a home page, follow these steps:
 
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Pages**.
@@ -67,7 +67,7 @@ To save, preview, and publish a home page, follow these steps.
 
 ## Publish a URL
 
-To publish a URL, follow these steps.
+To publish a URL, follow these steps:
 
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **URLs**.

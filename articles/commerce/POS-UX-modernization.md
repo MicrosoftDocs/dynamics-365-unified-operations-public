@@ -26,7 +26,7 @@ To transition to the modern workflows on POS, the following prerequisites must b
 - You must be running Commerce version 10.0.40 or later. For React-based controls on the transaction grid, version 10.0.44 or later is required.
 - You must enable the **Enable Modern Transaction Grid in POS Transaction View** feature in Commerce headquarters.
 
-To enable the **Enable Modern Transaction Grid in POS Transaction View** feature in Commerce headquarters, follow these steps.
+To enable the **Enable Modern Transaction Grid in POS Transaction View** feature in Commerce headquarters, follow these steps:
 
 1. Go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
 1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.
@@ -106,7 +106,7 @@ Make sure to correctly set up and manage images for Store Commerce for this feat
 
 This feature is available starting with the Commerce 10.0.42 release. To enable this feature in releases earlier than 10.0.45, contact Microsoft support.
 
-To enable this feature in your environment in Commerce version 10.0.46 and later releases, follow these steps.
+To enable this feature in your environment in Commerce version 10.0.46 and later releases, follow these steps:
 
 1. In headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
 1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.

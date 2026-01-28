@@ -60,7 +60,7 @@ Here is an overview of the steps for setting up transport tax:
 
 ### Set up transport tax codes and rates
 
-To set up transport tax codes and rates, follow these steps.
+To set up transport tax codes and rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Create a sales tax code.
@@ -72,14 +72,14 @@ To set up transport tax codes and rates, follow these steps.
 
 ### Set up budget revenue codes for transport tax
 
-To set up budget revenue codes for transport tax, follow these steps.
+To set up budget revenue codes for transport tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Payment order setup \> Budget revenue classification**.
 1. Create a budget revenue code for transport tax.
 
 ### Assign a budget revenue code to a sales tax code
 
-To assign a budget revenue code to a sales tax code, follow these steps.
+To assign a budget revenue code to a sales tax code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Sales tax relations**.
 1. Create a record.
@@ -89,7 +89,7 @@ To assign a budget revenue code to a sales tax code, follow these steps.
 
 ### Set up tax allowances
 
-To set up tax allowances, follow these steps.
+To set up tax allowances, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Tax allowances**.
 1. Create a record.
@@ -111,7 +111,7 @@ To set up tax allowances, follow these steps.
 
 ### Assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax amount
 
-To assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax amount, follow these steps.
+To assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax amount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Sales tax relations**.
 1. Select the record for the sales tax code.
@@ -121,7 +121,7 @@ To assign tax allowances to a sales tax code as a reduction of the tax rate and 
 
 The amount of transport tax should be increased for expensive vehicle models that are defined by the Ministry of Production and Trade in an informational letter and annually reviewed. The coefficient that must be considered depends on both the number of years that have passed since the vehicle's year of manufacture and the cost of vehicle. For example, for a vehicle that costs between 3 million and 5 million rubles, if less than one year has passed since its year of manufacture, the increasing coefficient is 1.5.
 
-To set up transport tax increasing factor groups and values, follow these steps.
+To set up transport tax increasing factor groups and values, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia) \> Setup \> Tax reporting \> Transport tax increasing factor groups**.
 1. Create a group.
@@ -135,7 +135,7 @@ To set up transport tax increasing factor groups and values, follow these steps.
 
 ### Set up the territory code (OKTMO code) for the legal entity
 
-To set up the territory code (OKTMO code) for the legal entity, follow these steps.
+To set up the territory code (OKTMO code) for the legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. On the **Addresses** FastTab, select **More options \> Advanced**.
@@ -152,7 +152,7 @@ To set up the territory code (OKTMO code) for the legal entity, follow these ste
 
 You must create the tax authorities that you're required to report assessed tax declarations to.
 
-To set up tax authorities and related OKTMO codes, follow these steps.
+To set up tax authorities and related OKTMO codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax authorities**.
 1. Create a tax authority.
@@ -172,7 +172,7 @@ To set up tax authorities and related OKTMO codes, follow these steps.
 
 If the organization has realty objects that are located in territories that differ from the organization's main location, or if the organization has separate subdivisions, you should set up company divisions.
 
-To set up company divisions, their registration reason codes (KPP), and their OKTMO codes, follow these steps.
+To set up company divisions, their registration reason codes (KPP), and their OKTMO codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Setup \> Separate divisions**.
 1. Create a company division.
@@ -190,7 +190,7 @@ To set up company divisions, their registration reason codes (KPP), and their OK
 
 If the organization has realty objects that are located in territories that differ from the organization's main location, or if the organization has separate subdivisions, you should set up organization locations and assign them to company divisions.
 
-To set up the organization's locations and assign them to company divisions, follow these steps.
+To set up the organization's locations and assign them to company divisions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Location**.
 1. Select an existing location, or create a new location.
@@ -203,7 +203,7 @@ To set up the organization's locations and assign them to company divisions, fol
 
 ### Set up fixed assets parameters for posting transport tax
 
-To set up fixed assets parameters for posting transport tax, follow these steps.
+To set up fixed assets parameters for posting transport tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Parameters**.
 1. On the **Number sequences** tab, for the **Assessed tax registers journal number** reference, select a number sequence for the tax register.
@@ -217,7 +217,7 @@ To set up fixed assets parameters for posting transport tax, follow these steps.
 
 If transport tax transactions will be automatically created based on calculated tax registers, you should set up a journal.
 
-To set up the journal for posting transport tax, follow these steps.
+To set up the journal for posting transport tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Journal names**.
 1. Create a line.
@@ -228,7 +228,7 @@ To set up the journal for posting transport tax, follow these steps.
 
 If transport tax transactions will be automatically created based on calculated tax registers, you should set up posting groups.
 
-To set up a posting group for transport tax postings, follow these steps.
+To set up a posting group for transport tax postings, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Group of posting of taxes**.
 1. Create a line.
@@ -246,7 +246,7 @@ Here is an overview of the steps for creating a vehicle and setting up parameter
 
 ### Create a vehicle fixed asset and define parameters for transport tax calculation
 
-To create a vehicle fixed asset and define parameters for transport tax calculation, follow these steps.
+To create a vehicle fixed asset and define parameters for transport tax calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select an existing fixed asset, or create a new fixed asset.
@@ -272,7 +272,7 @@ By default, the assumption is that vehicles are located at the organization's lo
 
 If the organization has vehicles that are located in different territories and registered in different tax authorities, you must specify the location of the vehicle.
 
-To specify the location of the vehicle, follow these steps.
+To specify the location of the vehicle, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select the line for the vehicle.
@@ -282,7 +282,7 @@ To specify the location of the vehicle, follow these steps.
 
 ### Specify a tax allowance as an exemption from tax
 
-To specify a tax allowance as an exemption from tax, follow these steps.
+To specify a tax allowance as an exemption from tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select the line for the vehicle.
@@ -315,7 +315,7 @@ After you've finished the setup, registered the acquisition of the vehicle, and 
     - The transport tax rate, budget revenue code, separate division ID, and location of the vehicle, and the tax authority that the tax for the vehicle will be reported to.
 - **Transport tax** – This tax register calculates total transport tax amounts for each sales tax code and OKTMO code.
 
-To calculate and approve transport tax registers, follow these steps.
+To calculate and approve transport tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 1. Select **New**.
@@ -341,7 +341,7 @@ To calculate and approve transport tax registers, follow these steps.
 
 If you've corrected any vehicle data for the previous periods, you should create corrective tax registers to reflect the corrected transport tax amounts.
 
-To create and calculate corrective registers, follow these steps.
+To create and calculate corrective registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 1. Select the approved journal for the period that must be corrected.
@@ -367,7 +367,7 @@ Learn more in [Download Electronic reporting configurations from Lifecycle Servi
 
 You can upload Data management package settings to work with the transport tax declaration. 
 
-To set up the system to generate a transport tax declaration, follow these steps.
+To set up the system to generate a transport tax declaration, follow these steps:
 
 1. In the LCS Shared asset library, select **Data package** as the asset type.
 1. Download the package that is named **RU Transport tax declaration v5.05 (2019)**. The file that is downloaded is named **RU Transport tax declaration v5.05 (2019).zip**.
@@ -396,7 +396,7 @@ To set up the system to generate a transport tax declaration, follow these steps
 
 Before you can generate the transport tax declaration for a tax year, you must calculate the transport tax registers for the same year, and for the first quarter, second quarter, and third quarter of the same year. The advance payment amount for transport tax that is exported in the transport tax declaration is taken from the tax registers that were calculated for the first quarter, second quarter, and third quarter.
 
-To generate a transport tax declaration, follow these steps.
+To generate a transport tax declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 1. Select the report format to generate. For example, to generate a transport tax declaration in XML format for the year 2019, select **ТрансНал 5.05 (2019)**.
@@ -432,7 +432,7 @@ You must also manually upload the generated file to the special third-party soft
 
 After you've calculated and approved tax registers, and generated a transport tax declaration, you can create transactions for transport tax accruals.
 
-To create and post transport tax ledger transactions, follow these steps.
+To create and post transport tax ledger transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 1. Select the journal, and then select **Ledger journal \> Transport tax**.

@@ -66,7 +66,7 @@ Price changes are recorded in the **RetailPriceChangeTracking** table, as descri
 
 Price change tracking can be enabled at the legal entity level.
 
-To configure the price change tracking feature in Commerce headquarters, follow these steps.
+To configure the price change tracking feature in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **Prices and discounts** tab, add the legal entities that you want to enable price change tracking for, and then select **Save**.
@@ -80,7 +80,7 @@ To disable price change tracking in headquarters for a specific legal entity, re
 
 The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, Microsoft recommends that you specify a batch group for price change tracking batch jobs.
 
-To specify a batch group for price change tracking batch jobs in headquarters, follow these steps.
+To specify a batch group for price change tracking batch jobs in headquarters, follow these steps:
 
 1. Reuse an existing batch group or [create a batch group](/dynamicsax-2012/appuser-itpro/create-a-batch-group).
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**.

@@ -67,7 +67,7 @@ In the event of a successive tract contract, you might add a **Letter code** fie
 
 ## Set up application-specific parameters
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
 1. Select **Sales Bank Book BO**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -79,7 +79,7 @@ To set up application-specific parameters, follow these steps.
 
 ## Run the Sales Bank Book BO report
 
-To run the **Sales bank Book BO** report, follow these steps.
+To run the **Sales bank Book BO** report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

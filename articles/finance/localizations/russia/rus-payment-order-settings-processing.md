@@ -43,7 +43,7 @@ Before you can generate payment orders, you must complete the following setup st
 
 Before you can generate a payment order, you must create payment order lines.
 
-To create payment order lines, follow these steps.
+To create payment order lines, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payments \> Payment journal**.
 1. Create a journal, and then, on the Action Pane, select **Lines** to open the **Vendor payments** page.
@@ -74,7 +74,7 @@ To create payment order lines, follow these steps.
 
 After you've created payment order lines, you can generate the payment order.
 
-To generate a payment order, follow these steps.
+To generate a payment order, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Vendor payments** page, on the Action Pane, select **Generate payments** to open the **Generate payments** dialog.
 1. In the **Method of payment** field, select the method of payment. Alternatively, in the **Export format** field, select **Payment order in RUB**.
@@ -97,7 +97,7 @@ You can review generated payment orders on the **Registry of payment orders** pa
 
 ## Generate a payment order for a payment return to a customer
 
-To generate a payment order for a payment return to a customer, follow these steps.
+To generate a payment order for a payment return to a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Payment journal**.
 1. Create a journal, and then, on the Action Pane, select **Lines** to open the **Customer payments** page.
@@ -119,7 +119,7 @@ The registry of payment orders report contains the list of payment orders for a 
 - Status of payment
 - Note indicating if the payment is electronic
 
-To run the report, follow these steps.
+To run the report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Payment** \> **Payment order register** or **Accounts receivable** \> **Inquiries** \> **Payment** \> **Payment order register**.
 1. Select **Print** \> **Registry of payment orders**.

@@ -35,7 +35,7 @@ Retailers can accept various types of payment in exchange for the products and s
 
 ## Enable the customer account payment method in Commerce site builder 
 
-To enable the customer account payment method in Commerce site builder, follow these steps.
+To enable the customer account payment method in Commerce site builder, follow these steps:
 
 1. Go to **Site Settings \> Extensions**.
 1. Set the **Enable customer account payments** property to **Enabled for B2B customers**. 
@@ -46,7 +46,7 @@ To enable the customer account payment method in Commerce site builder, follow t
 
 ## Enable the customer account payment method on the checkout page for the B2B e-commerce site
 
-To enable the customer account payment method on the checkout page for the B2B e-commerce site, follow these steps.
+To enable the customer account payment method on the checkout page for the B2B e-commerce site, follow these steps:
 
 1. In Commerce site builder, find and edit the checkout page or fragment that contains the checkout module for the B2B e-commerce site.
 1. In the **Checkout section container** slot, select **Add Module**, and then add a **Customer account payment** module.
@@ -55,7 +55,7 @@ To enable the customer account payment method on the checkout page for the B2B e
 
 ## Confirm that the customer account payment method has been enabled and published
 
-To confirm that the customer account payment method has been enabled, follow these steps.
+To confirm that the customer account payment method has been enabled, follow these steps:
 
 1. Sign in to the e-commerce site.
 1. Add a product to the cart.

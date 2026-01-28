@@ -28,7 +28,7 @@ The action search feature replaces Key Tips, which are no longer available. This
 
 ## Using action search
 
-To use the action search feature, follow these steps.
+To use the action search feature, follow these steps:
 
 1. On the Action Pane, click in the **Action search** field. (The **action search** field contains a magnifying glass icon.)
 2. Type all or part of the name of the button that you want to run. You can also search by using words from the button's "path." (For more information, see the next section of this article.) Typically, a button appears near the top of the results list after you've typed two to four characters.

@@ -23,7 +23,7 @@ The following procedure shows how to perform a party search using a registration
 
 The procedure applies to all European countries/regions, and was created using the demo data company DEMF with a primary address in Germany. The procedure is intended for an accounts payable manager or accounts receivable manager.
 
-To perform a party search using a registration ID, follow these steps.
+To perform a party search using a registration ID, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration > Global address book > Global address book**.
 1. Select **Registration ID search**.

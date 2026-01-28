@@ -84,7 +84,7 @@ When you calculate tax registers for the current period, consider the following 
 
 Debts can be calculated for profit tax accounting purposes and business accounting reports. Create two models, one for business accounting and one for tax accounting.
 
-To create and set up two debts calculation models, follow these steps.
+To create and set up two debts calculation models, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Debts calculation models**.
 1. On the Action Pane, select **New** to create the first of the two models.
@@ -132,7 +132,7 @@ To create and set up two debts calculation models, follow these steps.
 
 ### Set up the models for tax and business accounting
 
-To set up the models for tax and business accounting, follow these steps.
+To set up the models for tax and business accounting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Ledger and sales tax** tab, in the **Debtor debts** section, in the **Model number for business accounting** field, select **RAP**.
@@ -165,7 +165,7 @@ Depending on the settings of your debts calculation models, create and calculate
 
 ### Set up a limit for the bad debts reserve in tax accounting
 
-To set up a limit for the bad debts reserve in tax accounting, follow these steps.
+To set up a limit for the bad debts reserve in tax accounting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Rates**.
 1. On the Action Pane, select **New** to create a rate.
@@ -193,7 +193,7 @@ To set up a limit for the bad debts reserve in tax accounting, follow these step
 
 ### Set up a number sequence for the write-off of hopeless debts
 
-To set up a number sequence for the write-off of hopeless debts, follow these steps.
+To set up a number sequence for the write-off of hopeless debts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Ledger voucher for debts amortization** reference.
@@ -204,7 +204,7 @@ For more information about how to create and set up agreements, see [Set up and 
 
 By default, sales agreements are included in the calculation of the bad debts reserve.
 
-To exclude an agreement from the calculation, follow these steps.
+To exclude an agreement from the calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **Sales agreements**, and select the sales agreement to exclude from the calculation.
 1. Switch to the **Header** view, and then select **Edit**.
@@ -277,7 +277,7 @@ On each register line, you can review the information in the following columns:
 
 #### Create a ledger journal for accounts receivable bad debts reserves
 
-To create a ledger journal for accounts receivable bad debts reserves, follow these steps.
+To create a ledger journal for accounts receivable bad debts reserves, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. Select the line where the **Accounts receivable - bad debts reserve** register for total accounting or the **Accounts receivable - reserve details** register for object accounting is calculated and approved.
@@ -294,7 +294,7 @@ To create a ledger journal for accounts receivable bad debts reserves, follow th
 
 #### Create a reversing entry ledger journal for accounts receivable bad debts reserves
 
-To create a reversing entry ledger journal for accounts receivable bad debts reserves, follow these steps.
+To create a reversing entry ledger journal for accounts receivable bad debts reserves, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. Select the period where the **Accounts receivable - bad debts reserve** register for total accounting or the **Accounts receivable - reserve details** register for object accounting is calculated and approved.
@@ -383,7 +383,7 @@ On each register line, you can review the information in the following columns:
 
 ### Recognize and write off hopeless debt
 
-To recognize and write off hopeless debt, follow these steps.
+To recognize and write off hopeless debt, follow these steps:
 
 1. Calculate and approve the tax register journal for the previous period.
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Amortization** \> **Accounts receivable amortization**.
@@ -412,7 +412,7 @@ To recognize and write off hopeless debt, follow these steps.
 
 ### Cancel the write-off of hopeless debt
 
-To cancel the write-off of hopeless debts, follow these steps.
+To cancel the write-off of hopeless debts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Amortization** \> **Accounts receivable amortization cancellation**.
 1. In the **Calculation date** field, select the date. That date will be used to select the calculation period.

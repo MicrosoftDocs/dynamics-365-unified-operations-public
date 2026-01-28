@@ -53,7 +53,7 @@ The application-specific parameters let you establish the criteria that define h
 
 You need enough transactional data to define values in **SPT Masa PPN** report. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for the structure of in **SPT Masa PPN**.
 
-To prepare Finance to generate a **SPT Masa PPN** report in compliance with the required schema, follow these steps.
+To prepare Finance to generate a **SPT Masa PPN** report in compliance with the required schema, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
 1. In the configuration tree, select **Tax declaration model** \> **VAT Declaration Excel (ID)**.

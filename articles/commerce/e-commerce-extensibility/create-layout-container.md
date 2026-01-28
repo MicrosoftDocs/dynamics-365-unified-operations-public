@@ -185,7 +185,7 @@ The following example shows a sample page mock, campaign-containerMock.json, tha
 
 ## Preview the page
 
-To preview the page in a local web browser, follow these steps.
+To preview the page in a local web browser, follow these steps:
 
 1. At a command prompt, go to your root SDK folder and run the **yarn start** command, as shown in the following example.
 

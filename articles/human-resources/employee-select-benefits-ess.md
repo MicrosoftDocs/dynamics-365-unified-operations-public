@@ -69,7 +69,7 @@ This experience gives employees a consolidated view of their active benefit sele
 > [!IMPORTANT]
 > Before you can use the **My benefit plans** tile, the **Benefits management** feature must be enabled in Feature management.
 
-To view your benefits, follow these steps.
+To view your benefits, follow these steps:
 
 1. Go to **Employee self service**.
 1. Select the **My benefit plans** tile.

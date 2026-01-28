@@ -36,7 +36,7 @@ The site picker module must be configured with the list of sites (markets, regio
 
 The site picker module can be added to the **Site picker** slot of the [header module](author-header-module.md). After a site picker module is added, you can define the module heading and site options. Generally, a header module is contained in a header fragment that can be shared across e-commerce pages for a site. 
 
-To add the site picker module to a header module, follow these steps.
+To add the site picker module to a header module, follow these steps:
 
 1. In the **Site picker** slot of the header fragment's header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Select modules** dialog box, add a **Site picker** module, and then select **OK**.

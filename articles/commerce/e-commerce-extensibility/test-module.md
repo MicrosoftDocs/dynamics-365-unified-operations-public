@@ -22,7 +22,7 @@ During development of a module, you can preview and debug the module in your loc
 
 ## Preview a module
 
-To preview a module in a local web browser, follow these steps.
+To preview a module in a local web browser, follow these steps:
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 

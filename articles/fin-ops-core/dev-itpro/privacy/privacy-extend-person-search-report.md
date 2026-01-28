@@ -52,7 +52,7 @@ The **PersonSearchCriteria** tables let end users specify the parameters by whic
 
 ## Create new search criteria
 
-If you need new search criteria, follow these steps.
+If you need new search criteria, follow these steps:
 
 1. Extend the **PersonSearchCriteriaName**, **PersonSearchCriteriaAddress**, and **PersonSearchCriteriaKnownId** tables, or create your own tables.
 2. Extend the **PersonSearchDialog** form to show these new data fields.

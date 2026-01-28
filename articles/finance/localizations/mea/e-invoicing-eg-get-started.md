@@ -37,7 +37,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
 
-To configure the Egyptian electronic invoice (EG) feature, follow these steps.
+To configure the Egyptian electronic invoice (EG) feature, follow these steps:
 
 1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -63,7 +63,7 @@ For both options, the parameters are the same. If you're setting up your first f
 > [!NOTE]
 > Some electronic invoicing feature versions might contain a predefined set of application-specific parameters for Finance or Supply Chain Management. In this case, you should verify that the data is correct. Otherwise, manually set the parameters.
 
-To configure the Egyptian electronic invoice (EG) application setup, follow these steps.
+To configure the Egyptian electronic invoice (EG) application setup, follow these steps:
 
 1. Find the copy of the **Egyptian electronic invoice (EG)** Globalization feature that you created.
 1. On the **Versions** tab, verify that the **Draft** version is selected.

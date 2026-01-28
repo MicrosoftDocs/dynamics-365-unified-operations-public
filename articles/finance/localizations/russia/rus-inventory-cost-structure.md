@@ -33,7 +33,7 @@ When you allocate miscellaneous charges on a purchase order, inventory settlemen
 
 ### Set up the miscellaneous charges structure
 
-To set up the miscellaneous charges structure, follow these steps.
+To set up the miscellaneous charges structure, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. On the **General** tab, in the **Correction** section, set the **Misc. charges structure** option:
@@ -42,7 +42,7 @@ To set up the miscellaneous charges structure, follow these steps.
 
 ### Set up a charges code in Inventory management
 
-To set up a charges code in Inventory management, follow these steps.
+To set up a charges code in Inventory management, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Charges** \> **Charges codes**.
 1. Create a charges code. Charges codes that you create in the **Inventory management** module have the following configuration limitations:
@@ -64,7 +64,7 @@ You can specify existing miscellaneous charges codes when you adjust item cost o
 
 Before you adjust on-hand inventory, you must close the inventory. Learn more in [Inventory close](../../../supply-chain/cost-management/inventory-close.md).
 
-To close inventory, follow these steps.
+To close inventory, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
 1. On the Action Pane, select **Close procedure** \> **Close inventory**.
@@ -79,7 +79,7 @@ To close inventory, follow these steps.
 
 Before you can adjust transactions, you must verify that the inventory wasn't closed.
 
-To cancel inventory closing, follow these steps.
+To cancel inventory closing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
 1. Select the inventory closing operation, and then, on the Action Pane, select **Cancellation**.
@@ -87,7 +87,7 @@ To cancel inventory closing, follow these steps.
 
 ### <a name="adjust-on-hand-inventory"></a>Adjust on-hand inventory
 
-To adjust on-hand inventory, follow these steps.
+To adjust on-hand inventory, follow these steps:
 
 1. In Dynamics 365 Finance, close the inventory as described in the [Close inventory](#close-inventory) section earlier in this article.
 1. Go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
@@ -132,7 +132,7 @@ When you post an adjustment, the general ledger offset account is defined in the
 
 ### Adjust transactions
 
-To adjust transactions, follow these steps.
+To adjust transactions, follow these steps:
 
 1. In Dynamics 365 Finance, verify that the inventory wasn't closed. If it was closed, cancel the inventory closing as described in the [Cancel inventory closing](#cancel-inventory-closing) section earlier in this article.
 1. Go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
@@ -146,7 +146,7 @@ To adjust transactions, follow these steps.
 
 ### Use a wizard to adjust item cost 
 
-To use a wizard to adjust item cost , follow these steps.
+To use a wizard to adjust item cost , follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
 1. On the Action Pane, select **Adjustment** \> **Wizard**.
@@ -197,7 +197,7 @@ Learn more in [Inventory adjustment wizard](rus-inventory-adjustment-wizard.md).
 
 On the **Settlements** page, you can view inventory cost adjustment transactions. As a result of inventory closing, receipt transactions are settled against issue transactions. After inventory closing is completed, you can open the **Cost explorer** page to view and explore the item cost structure in terms of miscellaneous charges.
 
-To view item cost structure in the inventory settlements and cost explorer, follow these steps.
+To view item cost structure in the inventory settlements and cost explorer, follow these steps:
 
 1. In Dynamics 365 Finance, close the inventory as described in the [Close inventory](#close-inventory) section earlier in this article.
 1. Go to **Product information management** \> **Products** \> **Released products**.

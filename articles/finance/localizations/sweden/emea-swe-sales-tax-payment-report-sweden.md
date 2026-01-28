@@ -28,7 +28,7 @@ For general information about how to set up the value-added tax (VAT) statement,
 
 To generate a sales tax report in the correct format for the appropriate tax authority, you must first set up the report layout for sales tax authorities.
 
-To set up the report layout for sales tax authorities, follow these steps.
+To set up the report layout for sales tax authorities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities.**
 1. On the **Sales tax authorities** page, select the sales tax authority that will be used in the sales tax codes for the sales tax settlement period.
@@ -78,7 +78,7 @@ Set up sales tax codes by following the instructions in the topics, [Sales tax c
 
 At the end of the VAT reporting period, calculate the sales tax amounts for the settlement period.
 
-To generate a sales tax payment and print the Swedish sales tax report, follow these steps.
+To generate a sales tax payment and print the Swedish sales tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 1. In the **Report sales tax for settlement period** dialog, set the following fields.
@@ -102,7 +102,7 @@ To generate a sales tax payment and print the Swedish sales tax report, follow t
 
 ## Print a sales tax payment report from a sales tax payment
 
-To print a sales tax payment report from a sales tax payment, follow these steps.
+To print a sales tax payment report from a sales tax payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax payments**.
 1. On the **Sales tax payment** page, select the record, and then select **Print report**.
@@ -112,7 +112,7 @@ To print a sales tax payment report from a sales tax payment, follow these steps
 
 You can also generate a Swedish sales tax report by using the **Report sales tax for settlement period** inquiry.
 
-To report sales tax for a settlement period, follow these steps.
+To report sales tax for a settlement period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
 1. Set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Swedish sales tax report](#generate) section earlier in this article.
@@ -129,7 +129,7 @@ To report sales tax for a settlement period, follow these steps.
 
 The following example procedure shows you how to set up sales tax codes and sales tax reporting codes, post transactions, and generate the Swedish sales tax report.
 
-To run through the example, follow these steps.
+To run through the example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
 

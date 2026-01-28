@@ -23,7 +23,7 @@ The demo data company used to create the following procedures procedures is DEMF
 
 ## Set up bank details
 
-To set up bank details, follow these steps.
+To set up bank details, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. Use the Quick Filter to find records. For example, filter on the **Vendor account** field with a value of "DE-001".
@@ -37,7 +37,7 @@ To set up bank details, follow these steps.
 
 ## Set up a method of payment for the vendor
 
-To set up a method of payment for the vendor, follow these steps.
+To set up a method of payment for the vendor, follow these steps:
 
 1. Select **Edit**.
 1. Expand or collapse the Payment section.

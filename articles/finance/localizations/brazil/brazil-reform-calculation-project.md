@@ -22,7 +22,7 @@ This article describes how to calculate taxes in projects using the Brazil tax r
 
 You can create a project by specifying fiscal information, such as the operation type and the Código Fiscal de Operações e Prestações (CFOP) code. When you create a sales order line, you can select a CFOP code in the **CFOP** field. The CFOP codes that are available in this field depend on the fiscal establishment of the site that you selected in the **Site** field. The tax groups in the **Sales tax group** and **Item sales tax group** fields are also updated based on the tax matrix and applicability rules in Globalization studio. 
 
-To create a project that uses Brazilian taxes, follow these steps.
+To create a project that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **All projects**.
 1. Select **New**.
@@ -43,7 +43,7 @@ To create a project that uses Brazilian taxes, follow these steps.
 
 ## Check the tax calculation results
 
-To check the tax calculation results, follow these steps.
+To check the tax calculation results, follow these steps:
 
 1. Select **Project invoice proposals** in the **Manage** tab, and then select **Sales tax**.
    - The targeted tax codes display. 

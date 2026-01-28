@@ -507,7 +507,7 @@ For more information about how to set up and use reverse charge functionality, s
 
 The following steps are applicable to the example electronic message processing that is available from LCS.
 
-To generate the XML file for the VAT declaration, follow these steps.
+To generate the XML file for the VAT declaration, follow these steps:
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 2. In the left pane, select the report format to generate. For example, select **DPHDP3**.
@@ -554,7 +554,7 @@ To generate the XML file for the VAT declaration, follow these steps.
 
 ### Generate a VAT control statement from Electronic messages
 
-To generate the XML file for the VAT control statement, follow these steps.
+To generate the XML file for the VAT control statement, follow these steps:
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 2. In the left pane, select the report format to generate. For example, select **DPHKH1**.
@@ -631,7 +631,7 @@ The following prerequisites must be in place before you can complete this proced
 - The **Date of VAT register** field on the **Sales tax** tab of the **General ledger parameters** page must have the same value for all the legal entities that you collect data for.
 - A sales tax payment must be posted for the reporting period in all legal entities.
 
-To generate a VAT declaration for multiple legal entities, follow these steps.
+To generate a VAT declaration for multiple legal entities, follow these steps:
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 2. In the left pane, select the report format to generate. For example, select **DPHDP3**.

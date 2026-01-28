@@ -23,7 +23,7 @@ You can create an RFQ and enter the applicable fiscal information when you enter
 
 The following procedure uses the BRMF demo company.
 
-To to create a purchase request for quotation (RFQ), follow these steps.
+To to create a purchase request for quotation (RFQ), follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
 1. Select **New**.

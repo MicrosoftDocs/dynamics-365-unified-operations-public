@@ -22,7 +22,7 @@ You can view all purchase agreements on the **Purchase agreements** list page an
 
 ## Create sales agreement classifications
 
-To create sales agreement classifications, follow these steps.
+To create sales agreement classifications, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing** \> **Setup** \> **Sales agreements** \> **Sales agreement classifications** or **Accounts receivable** \> **Setup** \> **Sales agreement classifications**.
 1. Create a sales agreement classification.
@@ -37,7 +37,7 @@ To create sales agreement classifications, follow these steps.
 
 ## Create purchase agreement classifications
 
-To create purchase agreement classifications, follow these steps.
+To create purchase agreement classifications, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing** \> **Setup** \> **Purchase agreement classification**.
 1. Specify the details as described in the previous section of this article, [Create sales agreement classifications](#create-sales-agreement-classifications).
@@ -48,7 +48,7 @@ To create purchase agreement classifications, follow these steps.
 
 For more information about how to create sales agreements, see [Enter sales agreements](../../../supply-chain/sales-marketing/tasks/enter-sales-agreements.md).
 
-To create a sales agreement, follow these steps.
+To create a sales agreement, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **Sales agreements** or **Sales and marketing** \> **Sales agreements** \> **Sales agreements**.
 1. On the Action Pane, select **New** to create a sales agreement.
@@ -105,7 +105,7 @@ To create a sales agreement, follow these steps.
 
 ### Set up a commission
 
-To set up a commission, follow these steps.
+To set up a commission, follow these steps:
 
 1. On the **Sales agreements** page, select the agreement that you want to set up a commission for.
 1. On the **Sales agreement** tab, in the **Setup** section, select **Commission calculation**.
@@ -117,7 +117,7 @@ To set up a commission, follow these steps.
 
 For more information about how to create purchase agreements, see [Create a purchase agreement](../../../supply-chain/procurement/tasks/create-purchase-agreement.md).
 
-To create a purchase agreement, follow these steps.
+To create a purchase agreement, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **Purchase agreements** or **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**.
 1. On the Action Pane, select **New** to create an agreement.
@@ -137,7 +137,7 @@ To create a purchase agreement, follow these steps.
 
 You can set up dimension control for settlements. Learn more in [Set up dimension control forsettlements](rus-transactions-settlement-date.md) 
 
-To set up agreement dimension control for settlements, follow these steps.
+To set up agreement dimension control for settlements, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**. 
 1. On the **Agreements** tab, set the **Disable agreement dimension control** option to **No**.

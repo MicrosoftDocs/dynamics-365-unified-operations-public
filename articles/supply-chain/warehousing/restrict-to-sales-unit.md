@@ -16,7 +16,7 @@ This article describes the *Restrict to sales unit* functionality and provides a
 
 The *Restrict to sales unit* functionality is designed to ensure that products are sold in a specific, predefined unit. This functionality applies exclusively to sales orders. It specifies the exact unit that a product should be sold in. If the reservation of a product on a sales order leads to incomplete sales units, the release of the sales order to the warehouse is blocked. An error message indicates that the sales order can't be processed because of the incomplete sales units.
 
-To configure the *Restrict to sales unit* functionality for a product, follow these steps.
+To configure the *Restrict to sales unit* functionality for a product, follow these steps:
 
 1. Go to **Product information management** \> **Products**.
 1. In the list, select a product to view the product details.

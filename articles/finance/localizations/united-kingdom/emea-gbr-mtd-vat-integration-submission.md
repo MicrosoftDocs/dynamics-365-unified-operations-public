@@ -59,7 +59,7 @@ The process of submitting a VAT return has two parts:
 
 After you enable the **Security enhancements in UK MTD VAT integration (cloud-based deployments only)** feature in your Finance environment, your environment is ready to work with MTD endpoints of HMRC.
 
-Before you submit a VAT return, you must retrieve VAT obligations from HMRC. To retrieve VAT obligations from HMRC, follow these steps.
+Before you submit a VAT return, you must retrieve VAT obligations from HMRC. To retrieve VAT obligations from HMRC, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select **New**.
@@ -101,7 +101,7 @@ When you use the **UK MTD VAT returns** processing for the first time, you see t
 
 :::image type="content" source="../media/uk-mtd-sys-admin.png" alt-text="Screenshot of system administrator consent.":::
 
-You're automatically redirected to HMRC's web portal for authorization if your current authorization has expired or if you're using the integration for the first time within the specified legal entity in Finance. To continue working with HMRC's APIs follow these steps.
+You're automatically redirected to HMRC's web portal for authorization if your current authorization has expired or if you're using the integration for the first time within the specified legal entity in Finance. To continue working with HMRC's APIs follow these steps:
 
 1. Select **Continue**.
 
@@ -138,7 +138,7 @@ You can run the **Settle and post sales tax** job several times for the same per
 
 When the **Settle and post sales tax** job completes, you can prepare a report for electronic submission. The first step of data preparation is to collect sales tax payment transactions that relate to the period.
 
-To collect sales tax payment transactions, follow these steps.
+To collect sales tax payment transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Message** FastTab, select the electronic message that relates to the period that you want to submit a VAT return for. Don't update the **Start date** and **End date** fields of the record. The system receives those values from HMRC and uses them as criteria for collecting sales tax payment transactions. You can enter a description of the electronic message. You can collect VAT data only for electronic messages that have a status of **New VAT return**.
@@ -160,7 +160,7 @@ After an electronic message has a status of **Ready to generate VAT return**, yo
 
 ## Generate a VAT return in Excel format for preview
 
-To generate a VAT return in **VAT 100** report format in Excel, follow these steps.
+To generate a VAT return in **VAT 100** report format in Excel, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select the electronic message record that relates to the period that you want to generate a file for, and then select **Generate report**. The **Generate report** button is available only for electronic messages that have the following statuses:
@@ -179,7 +179,7 @@ You can regenerate the **VAT 100** report several times before you generate the 
 
 HMRC's MTD VAT API accepts VAT returns in JSON format only. 
 
-To generate a VAT return in JSON format, follow these steps.
+To generate a VAT return in JSON format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select the electronic message record that relates to the period for which you want to generate a file, then select **Generate report**.
@@ -193,7 +193,7 @@ If you need to regenerate a VAT return in JSON format before submitting it to HM
 
 When you generate a VAT return in JSON format and it's ready to submit to HMRC, initialize its submission to the MTD VAT web application. The last JSON file that you attached to the electronic message is used for the submission. To help prevent discrepancies, delete any unnecessary JSON files that you attached to the electronic message that you submit to HMRC. To find and clean up unnecessary attachments, select the electronic message, then select **Attachments** (the paper clip symbol) in the upper-right corner of the page. The **Attachments** page for the selected message opens.
 
-To submit a VAT return, follow these steps.
+To submit a VAT return, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing.
 1. On the **Messages** FastTab, select the electronic message record that is related to the period that you want to submit the VAT return for, then select **Send report**. The **Send report** button is available only for electronic messages that have the following statuses:
@@ -216,7 +216,7 @@ To submit a VAT return, follow these steps.
 
 The **Action log** FastTab saves information about all the actions that you perform for the electronic message.
 
-You're automatically redirected to HMRC's web portal for authorization if your current authorization has expired or if you're using the integration for the first time within the specified legal entity in Finance. To continue working with HMRC's APIs follow these steps.
+You're automatically redirected to HMRC's web portal for authorization if your current authorization has expired or if you're using the integration for the first time within the specified legal entity in Finance. To continue working with HMRC's APIs follow these steps:
 
 1. Select **Continue**.
 
@@ -247,7 +247,7 @@ Additionally, you can use a cloud-based environment as intermediary software for
 
 With adjustments to the UK MTD VAT Electronic Messaging, you can efficiently submit your VAT returns to HMRC using Dynamics 365 Finance's cloud-based solution. This approach allows your organization to benefit from cloud capabilities such as more security options, improved data management, and staying updated with regulatory changes. We recommend this option to ensure compliance with HMRC's VAT submission requirements. 
 
-To adopt the UK MTD VAT Electronic Messaging to submit a VAT return in JSON format generated in your on-premises deployments of Dynamics 365 Finance, follow these steps.
+To adopt the UK MTD VAT Electronic Messaging to submit a VAT return in JSON format generated in your on-premises deployments of Dynamics 365 Finance, follow these steps:
 
 1. Set up your cloud environment to integrate with HMRC as explained in the following sections of [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md) article.
     - [Import and set up ER configurations](emea-gbr-mtd-vat-integration-setup.md#configurations).

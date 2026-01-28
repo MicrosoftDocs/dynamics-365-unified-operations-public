@@ -18,7 +18,7 @@ For more information about how to use the inbound load process with transportati
 
 ## Automatically create inbound loads for new purchase orders
 
-To set up your system so that it automatically creates an inbound load for each new purchase order, follow these steps.
+To set up your system so that it automatically creates an inbound load for each new purchase order, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
 1. On the **Loads** tab, set the **Automatically create at purchase order entry** option to *Yes*.
@@ -27,7 +27,7 @@ An inbound load is now automatically created each time that you [create a purcha
 
 ## Automatically create inbound loads when purchase orders are received by using the Warehouse Management mobile app
 
-To set up your system so that it automatically creates an inbound load for purchase order lines that aren't already related to open loads, follow these steps.
+To set up your system so that it automatically creates an inbound load for purchase order lines that aren't already related to open loads, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
 1. On the **Loads** tab, set the **Automatically create at purchase order receiving** option to *Yes*.
@@ -36,7 +36,7 @@ This option is valuable when, for example, you use the **Load receiving complete
 
 ## Automatically create inbound loads for new inbound shipment orders
 
-To set up your system so that it automatically creates inbound loads for new inbound shipment orders, based on the source system, order type, and/or account, follow these steps.
+To set up your system so that it automatically creates inbound loads for new inbound shipment orders, based on the source system, order type, and/or account, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Source systems**.
 1. On the **Source systems** page, you should have one record for each external system that submits inbound shipment orders to Microsoft Dynamics 365 Supply Chain Management. Follow one of these steps:

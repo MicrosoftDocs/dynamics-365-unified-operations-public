@@ -27,7 +27,7 @@ The following procedures show how to set up task management synchronization betw
 
 ## Link POS and Teams for task management
 
-To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps.
+To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps:
 
 > [!NOTE]
 > Before you try to integrate task management with Teams, make sure that you've enabled [Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md). 
@@ -44,7 +44,7 @@ To link the POS and Microsoft Teams applications for task management in Commerce
 
 The following procedure assumes that your store teams are using Microsoft Teams task management integration with Commerce for the first time.
 
-To publish a test task list in Teams, follow these steps.
+To publish a test task list in Teams, follow these steps:
 
 1. Sign in to Teams as a communications manager. Typically, communications managers are users who have the **Regional manager** role in Commerce.
 1. In the left navigation pane, select **Tasks by Planner**.

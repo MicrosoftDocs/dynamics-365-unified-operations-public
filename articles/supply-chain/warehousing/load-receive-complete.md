@@ -45,7 +45,7 @@ Follow these steps to specify how loads that are related to purchase orders are 
 
 ## <a name="receiving-completed-periodic-task"></a>Automatically run the Receiving completed process
 
-The *Receiving completed* periodic task automatically runs the *Receiving completed* process for loads for purchase orders. To set up the task so that it runs automatically, follow these steps.
+The *Receiving completed* periodic task automatically runs the *Receiving completed* process for loads for purchase orders. To set up the task so that it runs automatically, follow these steps:
 
 1. On the **Warehouse management parameters** page, on the **Loads** tab, set the **Load receiving completed confirmation policy for purchase orders** field to *Enabled* or *Enabled with auto post*. The *Receiving completed* periodic task is available only if the field is set to one of these values. Learn more in the [Mark a load as completely received](#receive-complete-confirm) section.
 1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**.
@@ -56,7 +56,7 @@ The *Receiving completed* periodic task automatically runs the *Receiving comple
 
 ## Example: Include only loads with fully completed work
 
-To set up the *Receiving completed* periodic task so that it includes only loads where work was fully completed, follow these steps.
+To set up the *Receiving completed* periodic task so that it includes only loads where work was fully completed, follow these steps:
 
 1. Go to **Warehouse management** \> **Periodic tasks** \> **Receiving completed**.
 1. On the **Records to include** FastTab, select **Filter**.

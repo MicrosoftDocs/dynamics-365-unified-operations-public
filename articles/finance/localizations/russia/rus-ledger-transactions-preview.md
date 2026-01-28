@@ -19,7 +19,7 @@ ms.search.form: LedgerJournalTable
 
 This article explains how to preview ledger transactions for Russia in Microsoft Dynamics 365 Finance.
 
-To preview ledger transactions before you post the ledger journal, follow these steps.
+To preview ledger transactions before you post the ledger journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
 

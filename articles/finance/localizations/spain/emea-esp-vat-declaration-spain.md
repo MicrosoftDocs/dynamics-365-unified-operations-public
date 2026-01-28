@@ -127,7 +127,7 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 To generate a VAT declaration, you must configure the tax number (Numero de Identificacion Fiscal [NIF]) of your organization.
 
-To configure system parameters, follow these steps.
+To configure system parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity, and then select **Registration IDs**.
@@ -155,7 +155,7 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
 > [!NOTE]
 > Microsoft recommends that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.21. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-To define which sales tax codes generate which boxes on the VAT declaration, follow these steps.
+To define which sales tax codes generate which boxes on the VAT declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. Select the **VAT declaration TXT (ES)** configuration, and then select **Configurations \> Application specific parameters setup**.
@@ -180,14 +180,14 @@ To define which sales tax codes generate which boxes on the VAT declaration, fol
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
-To set up the VAT reporting format for preview amounts in Excel, follow these steps.
+To set up the VAT reporting format for preview amounts in Excel, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (ES)** ER format. This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 1. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
-If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **ESP**, select the **VAT Declaration Excel (ES)** ER format.
@@ -198,7 +198,7 @@ If you're configuring the VAT declaration in a legal entity that has [multiple V
 
 The data package contains electronic message settings that are used to generate the VAT declaration in XML format and preview it in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
-To download and import the data package that has example settings for electronic messages, follow these steps.
+To download and import the data package that has example settings for electronic messages, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **ES VAT declaration EM package**. The downloaded file is named **ES VAT declaration EM package.zip**.
 1. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
@@ -211,7 +211,7 @@ To download and import the data package that has example settings for electronic
 
 ### Configure electronic messages
 
-To configure electronic messages, follow these steps.
+To configure electronic messages, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
 1. Select the line for **ES Populate VAT return records**, and then select **Edit query**.
@@ -222,7 +222,7 @@ To configure electronic messages, follow these steps.
 
 ### Preview the VAT declaration in Excel from the report sales tax for settlement period periodic task
 
-To preview the VAT declaration in Excel from the report sales tax for settlement period periodic task, follow these steps.
+To preview the VAT declaration in Excel from the report sales tax for settlement period periodic task, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
 1. Set values for the following fields.
@@ -244,7 +244,7 @@ To preview the VAT declaration in Excel from the report sales tax for settlement
 
 ### Settle and post sales tax
 
-To settle and post sales tax, follow these steps.
+To settle and post sales tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 1. Set values for the following fields.
@@ -259,7 +259,7 @@ To settle and post sales tax, follow these steps.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
-To preview the VAT declaration in Excel from a sales tax payment, follow these steps.
+To preview the VAT declaration in Excel from a sales tax payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
 1. Select **Print report**, and then select **OK**.
@@ -274,7 +274,7 @@ When you use electronic messages to generate the report, you can collect tax dat
 
 The following procedure applies to the electronic message processing example that you imported earlier from the LCS Shared asset library.
 
-To generate a VAT declaration from electronic messages, follow these steps.
+To generate a VAT declaration from electronic messages, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 1. In the left pane, select **ES VAT declaration**.
@@ -325,7 +325,7 @@ To use the formats to report the VAT declaration for a group of legal entities, 
 
 ### Set up electronic messages to collect tax data from several legal entities
 
-To set up electronic messages to collect tax data from several legal entities, follow these steps.
+To set up electronic messages to collect tax data from several legal entities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
 1. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.

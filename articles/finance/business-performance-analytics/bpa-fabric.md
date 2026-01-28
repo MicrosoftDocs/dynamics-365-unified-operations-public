@@ -56,7 +56,7 @@ Before you install Fabric and use it with business performance analytics, the fo
 
 ## Link Business performance analytics data to the organization's Fabric workspace
 
-To link Business performance analytics data to your organization's Fabric workspace, follow these steps.
+To link Business performance analytics data to your organization's Fabric workspace, follow these steps:
 
 1. In Business performance analytics, select the **Administration** tab.
 2. Go to **Link with Microsoft Fabric**, and select **Manage**.

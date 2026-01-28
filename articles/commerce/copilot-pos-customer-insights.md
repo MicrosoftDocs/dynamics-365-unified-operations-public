@@ -1,11 +1,11 @@
 ---
 title: Customer insights by Copilot
-description: This article describes how store associates can use Microsoft Copilot to enhance customer interactions and create personalized shopping experiences in Dynamics 365 Commerce.
+description: Learn how store associates can use Microsoft Copilot to enhance customer interactions and create personalized shopping experiences in Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 01/22/2025
+ms.date: 01/20/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -24,22 +24,22 @@ Customer insights by Copilot is a feature in the Dynamics 365 Commerce Store Com
 
 - Access comprehensive and in-depth profiles of each customer, including:
 
-    - Preferred product categories.
-    - Price ranges.
-    - Recency, frequency, monetary (RFM) analysis.
-    - Lifetime value.
+  - Preferred product categories.
+  - Price ranges.
+  - Recency, frequency, monetary (RFM) analysis.
+  - Lifetime value.
 
-- View a summarized timeline of each customer's activity, such as store visits, notes, events, and previous interactions. In this way, associates can easily pick up conversations where they were left off or provide custom follow-up.
+- View a summarized timeline of each customer's activity, such as store visits, notes, events, and previous interactions. In this way, associates can easily pick up conversations where they left off or provide custom follow-up.
 - Spark a conversation through personalized icebreaker questions that are based on a customer's purchases within the last year.
 - Offer relevant and customized recommendations that are based on a customer's purchase history, interests, and budget.
 
-![Screenshot that shows Customer insights by Copilot features.](./media/CustomerInsightsUsingCopilot.png)
+:::image type="content" source="./media/CustomerInsightsUsingCopilot.png" alt-text="Screenshot of Customer insights by Copilot features in the Store Commerce app.":::
 
 ## Benefits of Customer insights by Copilot
 
-Customer expectations are growing. Customers increasingly want individualized experiences when they enter a store. To respond, store staff must be able to analyze customer behavior. Typically, this task is done manually. However, such an approach is not only inefficient and daunting, but is ultimately an obstruction to providing effective personalized encounters.
+Customer expectations are growing. Customers increasingly want individualized experiences when they enter a store. To respond, store staff must be able to analyze customer behavior. Typically, staff members perform this task manually. However, such an approach is inefficient and daunting. It ultimately obstructs providing effective personalized encounters.
 
-Harnessing the power of Copilot simplifies the process of understanding your clientele. It can be challenging to monitor each customer's timeline of activities, such as store visits, notes, and events. Copilot efficiently summarizes each customer's engagement timeline and updates you about their previous interactions. Therefore, you can more easily pick up conversations where they were left off or provide custom follow-up suggestions.
+By harnessing the power of Copilot, you can simplify the process of understanding your clientele. It can be challenging to monitor each customer's timeline of activities, such as store visits, notes, and events. Copilot efficiently summarizes each customer's engagement timeline and updates you about their previous interactions. Therefore, you can more easily pick up conversations where they left off or provide custom follow-up suggestions.
 
 Customer insights by Copilot empowers store associates to excel at service delivery, so that they can turn transactions into lasting customer relationships. Customers, in turn, benefit from a personalized and memorable shopping experience that meets their needs and expectations.
 
@@ -47,10 +47,10 @@ Customer insights by Copilot is the ultimate tool for clienteling in retail. It 
 
 ## Enable Customer insights by Copilot in the Store Commerce app
 
-To enable Customer insights by Copilot in the Store Commerce app, follow these steps.
+To enable Customer insights by Copilot in the Store Commerce app, follow these steps:
 
-1. In Commerce headquarters, go to the **Feature management** workspace (**Systems administration** \> **Workspaces** \> **Feature management**), and enable the temporary **Enable Copilot in Store Commerce** feature flag. In this way, you give your organization's administrators governing control over the rollout of Copilot features in the Store Commerce app. This flag will eventually be retired.
-1. Go to the **Commerce shared parameters** page (**Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**), and enable the **Enable Copilot in Store Commerce** flag. In this way, you give your organization's administrators additional governing control over the management of Copilot feature availability in the Store Commerce app. This flag is automatically enabled when you enable the temporary flag in the previous step. It will continue to be available after the temporary flag is retired.
+1. In Commerce headquarters, go to the **Feature management** workspace (**Systems administration** \> **Workspaces** \> **Feature management**), and enable the temporary **Enable Copilot in Store Commerce** feature flag. When you use this flag, your organization's administrators can govern the rollout of Copilot features in the Store Commerce app. This flag is eventually retired.
+1. Go to the **Commerce shared parameters** page (**Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**), and enable the **Enable Copilot in Store Commerce** flag. When you use this flag, your organization's administrators can have additional governing control over the management of Copilot feature availability in the Store Commerce app. This flag is automatically enabled when you enable the temporary flag in the previous step. It continues to be available after the temporary flag is retired.
 1. Go to your point of sale (POS) functionality profile (**Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Functionality profiles**). On the **Copilot** FastTab, enable **Customer insights** to get Customer insights by Copilot reports in the Store Commerce app.
 1. Run the **1070 (Channel configuration)** job to sync the updated settings to the channel database.
 

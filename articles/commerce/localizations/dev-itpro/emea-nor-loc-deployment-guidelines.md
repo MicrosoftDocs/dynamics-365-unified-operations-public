@@ -35,7 +35,7 @@ This sample consists of extensions for the Commerce runtime (CRT), Retail Server
 
 In Commerce versions 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](../global/certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Commerce headquarters aren't available. The feature extends the [Manage secrets for retail channels](../../dev-itpro/manage-secrets.md) feature.
 
-To apply this functionality in the CRT extension, follow these steps.
+To apply this functionality in the CRT extension, follow these steps:
 
 1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail software development kit (SDK) (RetailSDK\SampleExtensions\CommerceRuntime).
 

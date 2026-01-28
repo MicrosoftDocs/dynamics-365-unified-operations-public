@@ -64,7 +64,7 @@ There are five statuses of job ads:
 
 A *hiring team* is a group of team members who are responsible for the hiring activities of a specific job ad. Each hiring team can include multiple recruiters, hiring managers, and interviewers. However, one hiring manager and at least one recruiter must be selected as primary. Only members of the hiring team can participate in interview processes.
 
-To add a member to the hiring team, follow these steps.
+To add a member to the hiring team, follow these steps:
 
 1. In the Recruiting app, on the **Hiring team** tab, select **New**.
 1. In the dialog box, search for **Name**, and either select the name in the dropdown list or enter it. 
@@ -87,7 +87,7 @@ The hiring team for a job ad can include several interviewers.
 
 A recruiter can add a hiring template to a job ad to define the steps that are required for the hiring activities.
 
-To add a hiring template to a job ad, follow these steps.
+To add a hiring template to a job ad, follow these steps:
 
 1. Open a job ad that's in **Draft** status.
 1. On the **Hiring process** tab, select the search field for the hiring template.
@@ -97,7 +97,7 @@ To add a hiring template to a job ad, follow these steps.
 ### Screening questions
 Recruiters can add a set of questions related to specific job ads. Candidates answer these questions during the application process. The responses provided by applicants can be used by recruiters to filter through applicants for job vacancies. Recruiters can tailor these questions to suit the needs of the job opening, such as years of experience or willingness to relocate. For instance, if a recruiter is looking for candidates with a minimum of 5 years’ experience, they could swiftly eliminate applicants who have less experience.
 
-To add screening questions, follow these steps. (optional)
+To add screening questions, follow these steps: (optional)
 1. Go to **Screening questions** tab in a draft job ad.
 2. Click **Search** for the **Screening** template. This displays the **Screening** templates.
 3. Select the **Screening** template from the list. Multiple templates can be selected.
@@ -114,7 +114,7 @@ If job ads require approval from higher management, recruiters can assign approv
 
 ### Define the approval list
 
-To add approvers to the approval list, follow these steps.
+To add approvers to the approval list, follow these steps:
 
 1. Select **Approval required**. 
 1. Select **New**.

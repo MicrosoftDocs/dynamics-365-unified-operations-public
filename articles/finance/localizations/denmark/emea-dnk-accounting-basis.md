@@ -20,7 +20,7 @@ This article describes how to prepare Microsoft Dynamics 365 Finance to work wit
 
 ## Setup
 
-To start to work with the **Accounting basis** electronic report for Denmark, follow these steps.
+To start to work with the **Accounting basis** electronic report for Denmark, follow these steps:
 
 1. [Turn on features in Feature management](#features).
 2. [Import Electronic reporting (ER) configurations](#import).

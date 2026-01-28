@@ -63,7 +63,7 @@ Set up sales tax codes by following the instructions in [Sales tax codes for VAT
 
 ## <a name="generate-print-finnish"></a>Generate a sales tax payment and print the Finnish sales tax report
 
-To generate a sales tax payment and print the Finnish sales tax report, follow these steps.
+To generate a sales tax payment and print the Finnish sales tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 2. In the **Report sales tax for settlement period** dialog, set the following fields.
@@ -88,7 +88,7 @@ To generate a sales tax payment and print the Finnish sales tax report, follow t
 
 ## Print the Finnish sales tax report from the sales tax payment
 
-To print the Finnish sales tax report from the sales tax payment, follow these steps.
+To print the Finnish sales tax report from the sales tax payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Sales tax payments** to open the **Sales tax payment** page.
 2. Select the record to print, and then select **Print report**.
@@ -98,7 +98,7 @@ To print the Finnish sales tax report from the sales tax payment, follow these s
 
 You can generate the Finnish sales tax report by using the **Report sales tax for settlement period** inquiry.
 
-To report sales tax for a settlement period, follow these steps.
+To report sales tax for a settlement period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement period**.
 2. In the dialog, set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the section, [Generate a sales tax payment and print the Finnish sales tax report](#generate-print-finnish) section earlier in this article.
@@ -115,7 +115,7 @@ To report sales tax for a settlement period, follow these steps.
 
 The following example procedure shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate the Finnish sales tax report.
 
-To set up sales tax codes and sales tax reporting codes, post transactions, and generate the Finnish sales tax report, follow these steps.
+To set up sales tax codes and sales tax reporting codes, post transactions, and generate the Finnish sales tax report, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
 
@@ -195,7 +195,7 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 
 If you set up reverse charges according to [Reverse charge VAT](../global/emea-reverse-charge.md), you can get data about the reporting codes on the **Sales tax payment by code** report.
 
-To get data about the reporting codes on the **Sales tax payment by code** report, follow these steps.
+To get data about the reporting codes on the **Sales tax payment by code** report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.
 2. In the dialog, set the **Settlement period** and **From date** fields.

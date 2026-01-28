@@ -71,7 +71,7 @@ To create your own roles, sign in to the [Power Platform admin center](https://a
 
 ## Add multiple roles to users
 
-To add multiple roles to multiple users in Microsoft Power Platform, follow these steps.
+To add multiple roles to multiple users in Microsoft Power Platform, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. Select your environment.

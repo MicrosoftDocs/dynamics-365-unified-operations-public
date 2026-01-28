@@ -23,7 +23,7 @@ This article describes how to set up a loyalty program with two loyalty tiers in
 
 The following procedure uses the USRT demo data company.
 
-To set up a loyalty program with two loyalty tiers, follow these steps.
+To set up a loyalty program with two loyalty tiers, follow these steps:
 
 1. In Dynamics 365 Commerce headquarters, go to **Retail and Commerce \> Customers \> Loyalty \> Loyalty programs**.
 1. Select **New**.

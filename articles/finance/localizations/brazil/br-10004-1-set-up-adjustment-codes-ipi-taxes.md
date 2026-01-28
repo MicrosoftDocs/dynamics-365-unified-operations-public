@@ -20,7 +20,7 @@ This article describes how to set up adjustment codes for Imposto sobre Produtos
 
 The following procedure uses the BRMF demo company.
 
-To set up adjustment codes for IPI taxes, follow these steps.
+To set up adjustment codes for IPI taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Setup \> Tax adjustment codes \> IPI adjustment codes table**.
 1. Select **New**.

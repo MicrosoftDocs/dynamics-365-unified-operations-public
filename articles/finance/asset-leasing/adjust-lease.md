@@ -31,13 +31,13 @@ For specific guidance about lease adjustment transactions, we recommend that you
 
 To adjust a lease, complete the following steps. The modified data will update lease schedules after you post from the **Lease adjustment** wizard. You can save your work and close the wizard at any time, and then come back later to resume your work.
 
-To open the **Lease adjustment** wizard from the lease summary, follow these steps.
+To open the **Lease adjustment** wizard from the lease summary, follow these steps:
 
 1. Go to **Asset leasing \> Leases \> Lease summary**. 
 2. Select the lease to adjust, and then select **Adjustment wizard**.
 3. Follow the prompts in the wizard to enter the required changes.
 
-To open the **Lease adjustment** wizard from the **Lease adjustments** page, for an adjustment that is already in progress, follow these steps.
+To open the **Lease adjustment** wizard from the **Lease adjustments** page, for an adjustment that is already in progress, follow these steps:
 
 1.	Go to **Lease \> Leases \> Lease adjustments**.
 2.	Select a lease that has an adjustment status of **In progress**, and then select **Adjustment wizard**.
@@ -80,7 +80,7 @@ To open the **Lease adjustment** wizard from the **Lease adjustments** page, for
 
 ## Cancel a lease adjustment
 
-To delete a lease adjustment that is in progress, follow these steps.
+To delete a lease adjustment that is in progress, follow these steps:
 
 1.	Go to **Lease \> Leases \> Lease adjustments**.
 2.	Select that in-progress lease adjustment to cancel.

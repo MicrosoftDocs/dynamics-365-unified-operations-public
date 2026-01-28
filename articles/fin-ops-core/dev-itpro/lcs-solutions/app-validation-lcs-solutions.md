@@ -68,7 +68,7 @@ The following table provides more information about each curation requirement.
 
 
 ## Update and maintenance requirements
-If you have a curated solution that you publish on AppSource, you must keep the solution up to date. After each major spring and fall release, you have eight weeks to upgrade your code. You must update and test the following artifacts:
+If you have a curated solution that you publish on Marketplace, you must keep the solution up to date. After each major spring and fall release, you have eight weeks to upgrade your code. You must update and test the following artifacts:
 
 - CAR
 - Models (code and tests)
@@ -86,7 +86,7 @@ If you have a curated solution that you publish on AppSource, you must keep the 
 
 ## Additional resources
 
-[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on Marketplace](lcs-solutions-app-source.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

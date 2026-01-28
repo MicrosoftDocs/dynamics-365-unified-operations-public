@@ -33,7 +33,7 @@ This article provides a product discovery checklist to follow to ensure that pro
 - If the channel is associated with a new site or new warehouse, ensure that you run the following distribution schedule jobs: **1040 (Products)** for site data, and either **1120 (Mode of delivery)** or **1070 (Channel configuration)** for warehouse data.
 - Ensure that the currency exchange rate functions for the channel currency and the accounting currency.
 
-    If the channel and accounting currencies are different, follow these steps.
+    If the channel and accounting currencies are different, follow these steps:
 
     1. Configure the channel currency at **Retail and Commerce \> Channels \> Stores \> All stores** for a brick-and-mortar store, or at **Retail and Commerce \> Channels \> Online stores** for an online store.
     1. Configure the accounting currency at **General ledger \> Ledger Setup \> Ledger**.

@@ -48,7 +48,7 @@ Before you can print an electronic general ledger report for Peru, the following
 
 ## Print the ledger posting report for Peru
 
-To print the ledger posting report for Peru, follow these steps.
+To print the ledger posting report for Peru, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **LATAM** \> **General Ledger**.
 1. In the **Report ID** field, select the corresponding report/service ID.

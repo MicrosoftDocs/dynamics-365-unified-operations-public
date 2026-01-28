@@ -30,7 +30,7 @@ This article explains how to create computed columns inside a cube by using expr
 
 ### Create a calculated column
 
-To create a calculated column, follow these steps.
+To create a calculated column, follow these steps:
 1. In business performance planning, select **Cubes**.
 1. Open the cube that you want to add a computed column to.
 1. In **Computed columns**, select **Add**.

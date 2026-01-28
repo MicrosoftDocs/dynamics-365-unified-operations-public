@@ -23,7 +23,7 @@ To debug X++ code, you use the debugger in Microsoft Visual Studio. The process 
 
 ## Debug your code
 
-To debug X++ code, follow these steps.
+To debug X++ code, follow these steps:
 
 1. In Visual Studio, open the X++ code to debug.
 2. Find the line or lines where you want execution to stop, and set breakpoints in those lines. To set a breakpoint in a line, click in the left column of the code editor or press F9 while the cursor is on that line. A red dot indicates that a breakpoint has been set.

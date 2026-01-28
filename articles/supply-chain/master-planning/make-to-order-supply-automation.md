@@ -30,14 +30,14 @@ This article describes how to set up and use each enhancement.
 
 The **Capacity load** page lets you review a resource's available capacity. The *Make-to-order supply automation* feature enhances the **Capacity load** page by adding a **Number of days** field. You can use this field to limit the number of days that the **Overview** grid shows. The value that you set is saved in memory. Therefore, if you leave the page and then return later, the **Overview** grid will still show the number of days that you last specified.
 
-To open the **Capacity load** page so that you can review the available capacity for an individual resource, follow these steps.
+To open the **Capacity load** page so that you can review the available capacity for an individual resource, follow these steps:
 
 1. Go to **Organization administration \> Resources \> Resources**.
 1. Select a resource to inspect.
 1. On the Action Pane, on the **Resource** tab, in the **View** group, select **Capacity load**.
 1. Use the **Number of days** filter to limit the number of days that the **Overview** grid shows.
 
-To open the **Capacity load** page so that you can review the available capacity for a resource group, follow these steps.
+To open the **Capacity load** page so that you can review the available capacity for a resource group, follow these steps:
 
 1. Go to **Organization administration \> Resources \> Resource groups**.
 1. Select a resource group to inspect.
@@ -63,7 +63,7 @@ The *Make-to-order supply automation* feature adds the ability to configure dela
 - If negative days are configured on the **Item coverage** page, that setting overrides the coverage group setting.
 - Negative days that are configured on the **Coverage groups** page apply only if negative days haven't been configured for a relevant item or master plan.
 
-To set negative days for a master plan, follow these steps.
+To set negative days for a master plan, follow these steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select a master plan in the list pane, or create a new one.
@@ -82,13 +82,13 @@ You can set the pegging sequence at the master plan, item coverage, or coverage 
 - If a pegging sequence is set up on the **Item coverage** page, that setting overrides the coverage group setting.
 - The pegging sequence that is set up on the **Coverage groups** page applies only if pegging sequence settings haven't been configured for a relevant item or master plan.
 
-To set up pegging at the coverage group level, follow these steps.
+To set up pegging at the coverage group level, follow these steps:
 
 1. Go to **Master planning \> Setup \> Coverage \> Coverage groups**.
 1. Select a group in the list pane, or create a new one.
 1. On the **General** FastTab, in the **Pegging sequence** section, use the **Consume on-hand inventory** and **Use latest supply** fields to configure your pegging sequence. The table later in this section shows how these settings are combined to define your pegging sequence.
 
-To set up pegging at the item coverage level, follow these steps.
+To set up pegging at the item coverage level, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select a product in the grid, or create a new one.
@@ -97,7 +97,7 @@ To set up pegging at the item coverage level, follow these steps.
 1. On the **General** tab, select the **Override pegging sequence** checkbox.
 1. Use the **Consume on-hand inventory** and **Use latest supply** fields to configure your pegging sequence. The table later in this section shows how these settings are combined to define your pegging sequence.
 
-To set up pegging at the master plan level, follow these steps.
+To set up pegging at the master plan level, follow these steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select a master plan in the list pane, or create a new one.
@@ -118,7 +118,7 @@ Fulfillment policies control the percentage of the total order price or quantity
 - To set the global fulfillment policy default for sales orders, go to **Accounts receivable \> Setup \> Accounts receivable parameters**. Then, on the **Warehouse management** tab, set the **Sales order fulfillment policy** field to the name of the policy that you want to use.
 - To set a customer-specific fulfillment policy for sales orders, go to **Accounts receivable \> Customers \> All customers**. Then, on the **Warehouse** tab, set the **Fulfillment policy** field to the name of the policy that you want to use.
 
-To view the default policy that applies to any order and apply an order-specific override, follow these steps.
+To view the default policy that applies to any order and apply an order-specific override, follow these steps:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Open the sales order that you want to inspect or edit.
@@ -134,7 +134,7 @@ To view the default policy that applies to any order and apply an order-specific
 
 All purchase orders include **Delivery terms** and **Mode of delivery** settings on the order header. The *Make-to-order supply automation* feature adds these settings to each order line. Therefore, you can define overrides of the **Delivery terms** and/or **Mode of delivery** value for any or all order lines as required. For lines where no override is defined, the value from the header is used. You can specify whether a change to the value of one or both of these fields on the order header should also update all lines.
 
-To specify what should happen to line settings if a user changes the **Delivery terms** and/or **Mode of delivery** value on an order header, follow these steps.
+To specify what should happen to line settings if a user changes the **Delivery terms** and/or **Mode of delivery** value on an order header, follow these steps:
 
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. On the **General** tab, on the **Default values and parameters** FastTab, select the **Update order lines** link.
@@ -144,7 +144,7 @@ To specify what should happen to line settings if a user changes the **Delivery 
     - *Always* – Always update all order lines after the settings are changed on the order header.
     - *Prompt* – If a user changes one or both settings on the order header, open a dialog bot that asks whether the user wants to update all lines so that they match the change to one or both settings.
 
-To set delivery information on a purchase order header, follow these steps.
+To set delivery information on a purchase order header, follow these steps:
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Open the purchase order that you want to edit.
@@ -152,7 +152,7 @@ To set delivery information on a purchase order header, follow these steps.
 1. On the **Delivery** FastTab, set the **Mode of delivery** and **Delivery terms** fields as required.
 1. Depending on the settings on the **Procurement and sourcing parameters** page, you might be asked whether you want to apply your changes to all order lines.
 
-To set delivery information overrides for a purchase order line, follow these steps.
+To set delivery information overrides for a purchase order line, follow these steps:
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Open the purchase order that you want to edit.
@@ -166,21 +166,21 @@ For intercompany orders, values for the **Mode of delivery** and **Delivery term
 
 For intercompany orders, the *Make-to-order supply automation* feature enables external item IDs and text descriptions on purchase order lines to be synced with the related intercompany sales order lines, regardless of whether the purchase order is for direct delivery. The feature also adds the ability to specify the final external customer account on an intercompany purchase order. The system will then automatically take external item IDs and text descriptions from the external customer record instead of the (internal) intercompany vendor record.
 
-To set up an intercompany vendor to sync external item IDs and item names between intercompany purchase orders and their related intercompany sales orders, follow these steps.
+To set up an intercompany vendor to sync external item IDs and item names between intercompany purchase orders and their related intercompany sales orders, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
 1. Select the intercompany vendor that you want to set up.
 1. On the Action Pane, on the **General** tab, in the **Set up** group, select **Intercompany**.
 1. On the **Intercompany** page, on the **Purchase order polices** tab, in the **Intercompany purchase order -\> Intercompany sales order** section, select the **External item ID and item name** checkbox.
 
-To specify the final external customer account for an intercompany purchase order, follow these steps. The **Customer account** field applies only to intercompany purchase orders. Use it to specify the account number of the customer who will eventually receive the goods. When this field is set, purchase order lines will take external item descriptions and numbers from the specified customer account instead of the intercompany vendor that is specified on the purchase order. If you change the customer account later, external item descriptions and IDs will be updated so that they match the values for the new account. External item descriptions and IDs for each line will also be synced to the matching intercompany sales order.
+To specify the final external customer account for an intercompany purchase order, follow these steps: The **Customer account** field applies only to intercompany purchase orders. Use it to specify the account number of the customer who will eventually receive the goods. When this field is set, purchase order lines will take external item descriptions and numbers from the specified customer account instead of the intercompany vendor that is specified on the purchase order. If you change the customer account later, external item descriptions and IDs will be updated so that they match the values for the new account. External item descriptions and IDs for each line will also be synced to the matching intercompany sales order.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Open the purchase order that you want to set up, or create a new one.
 1. Select the **Header** view.
 1. In the **Reference** section, set the **Customer account** field to the relevant external customer account.
 
-To specify external item IDs and text descriptions for a purchase order line for an intercompany order, follow these steps. The values that you set will be synced with the related intercompany sales order lines, regardless of whether the purchase order is for direct delivery.
+To specify external item IDs and text descriptions for a purchase order line for an intercompany order, follow these steps: The values that you set will be synced with the related intercompany sales order lines, regardless of whether the purchase order is for direct delivery.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Open the purchase order that you want to set up, or create a new one.

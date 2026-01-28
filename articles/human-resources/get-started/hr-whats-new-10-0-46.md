@@ -43,7 +43,7 @@ This section contains a table that lists the enhancements that are included in t
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Human Resources version 10.0.45 includes platform updates. For more information, see 
+Dynamics 365 Human Resources version 10.0.46 includes platform updates. For more information, see 
 [Platform updates for version 10.0.46 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-46.md).
 
 ### Bug fixes

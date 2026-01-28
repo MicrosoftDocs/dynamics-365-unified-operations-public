@@ -20,7 +20,7 @@ Product owners are global settings. Therefore, they are available to all legal e
 
 ## Create a product owner group
 
-To create a product owner group and add members to it, follow these steps.
+To create a product owner group and add members to it, follow these steps:
 
 1. Go to **Engineering change management \> Setup \> Product owners**.
 2. On the Action Pane, select **New**.
@@ -30,7 +30,7 @@ To create a product owner group and add members to it, follow these steps.
 
 ## Assign a product owner to a product
 
-To assign a product owner to a product, follow these steps.
+To assign a product owner to a product, follow these steps:
 
 1. Open the **Product details** page for the relevant product or product master.
 1. On the **General** FastTab, set the **Product owner** field to the name of the relevant product owner group.

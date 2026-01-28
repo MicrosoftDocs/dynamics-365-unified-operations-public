@@ -1,11 +1,10 @@
 ---
 title: Create or link to an existing Microsoft Entra B2C tenant in the Azure portal
-description: This article describes how create or link to an existing Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal.
+description: Learn how create or link to an existing Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 07/25/2024
+ms.date: 12/23/2025
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-02-13
@@ -17,17 +16,20 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how create or link to a Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal. For more information, see [Tutorial: Create a Microsoft Entra B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant).
+This article explains how create or link to a Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal. Learn more in [Tutorial: Create a Microsoft Entra B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant).
 
-To create or link to an existing Microsoft Entra B2C tenant in the Azure portal, follow these steps.
+> [!NOTE]
+> For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, Microsoft Entra ID (formerly Azure AD) business-to-consumer (B2C) integration for Commerce e-commerce site authentication isn't enabled by default. If you need to use Microsoft Entra ID B2C (for example, to continue using an existing Azure AD B2C tenant), submit a Microsoft Support request for explicit enablement.
+
+To create or link to an existing Microsoft Entra B2C tenant in the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you'll connect with your Commerce environment.
+1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that you connect with your Commerce environment.
 
     ![Create a Resource in Azure Portal.](../media/B2CImage_1.png)
 
 1. Go to **Identity \> Microsoft Entra ID B2C**.
-1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the options below that best suits your company's needs:
+1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the following options that best suits your company's needs:
 
     - **Create a new Microsoft Entra B2C Tenant**: Use this option to create a new Microsoft Entra B2C tenant.
         1. Select **Create a new Microsoft Entra B2C Tenant**.
@@ -45,12 +47,12 @@ To create or link to an existing Microsoft Entra B2C tenant in the Azure portal,
 
     ![Link an existing Microsoft Entra B2C Tenant to Azure Subscription.](../media/B2CImage_3.png)
 
-1. Once the new Microsoft Entra B2C directory is created (this may take a few moments), a link to the new directory appears on the dashboard. This link directs you to the "Welcome to Microsoft Entra B2C" page.
+1. Once the new Microsoft Entra B2C directory is created, a link to the new directory appears on the dashboard. This link directs you to the "Welcome to Microsoft Entra B2C" page.
 
     ![Link to new Microsoft Entra Directory](../media/B2CImage_4.png)
 
 > [!NOTE]
-> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription. Select the troubleshooting message and follow the instructions to resolve the subscription issue.
+> If you have multiple subscriptions within your Azure account or set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner directs you to link the tenant to a subscription. To resolve the subscription issue, select the troubleshooting message and follow the instructions.
 
 The following image shows an example of a Microsoft Entra B2C **Troubleshoot** banner.
 

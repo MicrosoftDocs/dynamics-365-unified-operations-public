@@ -41,7 +41,7 @@ You can use the **Country of origin vendor certificates** page to keep track of 
 
 You must decide which certificate documents you're issuing and how you'll report them to customers. This feature helps you keep track of your certificates. It also lets you choose whether the relevant certificate numbers appear on invoices, packing slips, and/or order confirmations.
 
-To set up your certificate information, follow these steps.
+To set up your certificate information, follow these steps:
 
 1. Go to **Product information management \> Setup \> Product compliance \> Country of origin \> Country of origin vendor certificates**.
 2. Select an existing certificate setup to edit, or select **New** on the Action Pane to create a new certificate setup.

@@ -94,7 +94,7 @@ To decrease the footprint of underlying storage tables, you can compress tokens 
 > [!IMPORTANT]
 > To use the **Compress payment tokens** feature, your system must be running Commerce version 10.0.25 or later and point-of-sale (POS) version 9.35 or later.
 
-To enable the **Compress payment tokens** feature in headquarters, follow these steps.
+To enable the **Compress payment tokens** feature in headquarters, follow these steps:
 
 1. Go to **Workspaces \> Feature management**. 
 1. Under **All**, search for the **Compress payment tokens** feature.

@@ -55,7 +55,7 @@ When you create a vendor invoice, you can select the delivery address in the **D
 
 ### Set up an address format
 
-To set up an address format that includes county information, follow these steps.
+To set up an address format that includes county information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. On the **Address format** tab, select **New** to create a new address format. To update an existing address format, select it in the grid.
@@ -70,7 +70,7 @@ To set up an address format that includes county information, follow these steps
 
 The Intrastat declaration requires that a county code be reported. 
 
-To set up the county code, follow these steps.
+To set up the county code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. On the **State/province** tab, select **New**.
@@ -84,7 +84,7 @@ To set up the county code, follow these steps.
 
 ### Set up an address for a legal entity
 
-To set up an address for a legal entity, follow these steps.
+To set up an address for a legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your organization in the grid.
 1. On the **Addresses** FastTab, select **Edit**.
@@ -93,7 +93,7 @@ To set up an address for a legal entity, follow these steps.
 
 ### Set up an address for a site
 
-To set up an address for a site, follow these steps.
+To set up an address for a site, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Site**, and select the site in the grid.
 1. On the **Addresses** FastTab, select **Edit**.
@@ -102,7 +102,7 @@ To set up an address for a site, follow these steps.
 
 ## Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade parameters**.
 1. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (ES)**.
@@ -122,7 +122,7 @@ To set up foreign trade parameters, follow these steps.
 
 ## Set up product parameters for the Intrastat declaration
 
-To set up product parameters for the Intrastat declaration, follow these steps.
+To set up product parameters for the Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**, and select a product in the grid.
 1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code.
@@ -131,7 +131,7 @@ To set up product parameters for the Intrastat declaration, follow these steps.
 
 ## Compress the Intrastat declaration
 
-To compress the Intrastat declaration, follow these steps.
+To compress the Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Compression of Intrastat**.
 1. Select the fields to compare when the Intrastat information is summarized. For Spanish Intrastat, select the following fields:
@@ -150,7 +150,7 @@ To compress the Intrastat declaration, follow these steps.
 
 ## Set up a transport method for the Intrastat declaration
 
-To set up a transport method for the Intrastat declaration, follow these steps.
+To set up a transport method for the Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Transport method**.
 1. On the Action Pane, select **New**.
@@ -167,7 +167,7 @@ You can also manually enter transactions by selecting **New** on the Action Pane
 
 ### Generate an Intrastat report
 
-To generate an Intrastat report, follow these steps.
+To generate an Intrastat report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 1. On the Action Pane, select **Output** \> **Report**.
@@ -183,7 +183,7 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 ### Preliminary setup
 
-To do the preliminary setup, follow these steps.
+To do the preliminary setup, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organization** \> **Legal entities**, and select the **DEMF** legal entity.
 1. On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **ESP (Spain)**.
@@ -195,7 +195,7 @@ To do the preliminary setup, follow these steps.
 
 ### Set up region codes
 
-To set up region codes, follow these steps.
+To set up region codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. On the **State/province** tab, select **New**.
@@ -211,7 +211,7 @@ To set up region codes, follow these steps.
 
 ### Set up an address format
 
-To set up an address format that includes county information, follow these steps.
+To set up an address format that includes county information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. On the **Address format** tab, select **0005** in the grid.
@@ -221,7 +221,7 @@ To set up an address format that includes county information, follow these steps
 
 ### Set up an address for a legal entity
 
-To set up an address for a legal entity, follow these steps.
+To set up an address for a legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **DEMF** in the grid.
 1. On the **Addresses** FastTab, select **Edit**.
@@ -230,7 +230,7 @@ To set up an address for a legal entity, follow these steps.
 
 ### Change the site address
 
-To change the site address, follow these steps.
+To change the site address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Sites**, and select **1** in the grid.
 1. On the **Addresses** FastTab, select **Edit**.
@@ -241,7 +241,7 @@ To change the site address, follow these steps.
 
 ### Set up transport parameters
 
-To set up transport parameters, follow these steps.
+To set up transport parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Transport method**.
 1. On the Action Pane, select **New**.
@@ -252,7 +252,7 @@ To set up transport parameters, follow these steps.
 
 ### Set up a statistics procedure
 
-To set up a statistics procedure, follow these steps.
+To set up a statistics procedure, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Statistics procedure**.
 1. On the Action Pane, select **New**.
@@ -261,7 +261,7 @@ To set up a statistics procedure, follow these steps.
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 1. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction code** field, select **11**.
@@ -282,7 +282,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Set up product information
 
-To set up product information, follow these steps.
+To set up product information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**, and select **D0001** in the grid.
 1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
@@ -298,7 +298,7 @@ To set up product information, follow these steps.
 
 ### Create a sales order with an EU customer
 
-To create a sales order with an EU customer, follow these steps.
+To create a sales order with an EU customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. On the Action Pane, select **New**.
@@ -317,7 +317,7 @@ To create a sales order with an EU customer, follow these steps.
 
 ### Transfer a transaction to the Intrastat journal and review the result
 
-To transfer a transaction to the Intrastat journal and review the result, follow these steps.
+To transfer a transaction to the Intrastat journal and review the result, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 1. On the Action Pane, select **Transfer**.
@@ -363,7 +363,7 @@ To transfer a transaction to the Intrastat journal and review the result, follow
 
 ### Create a purchase order
 
-To create a purchase order, follow these steps.
+To create a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. On the Action Pane, select **New**.
@@ -384,7 +384,7 @@ To create a purchase order, follow these steps.
 
 ### Create an Intrastat declaration for arrivals
 
-To create an Intrastat declaration for arrivals, follow these steps.
+To create an Intrastat declaration for arrivals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 1. On the Action Pane, select **Transfer**.

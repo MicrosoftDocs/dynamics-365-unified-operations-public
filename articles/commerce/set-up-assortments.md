@@ -51,7 +51,7 @@ You can publish an assortment on the **Assortments** page (**Retail and Commerce
 
 If many assortments are configured, the assortment scheduler creates a large number of tasks to publish them in parallel. These tasks consume lots of the AX database's resources. When resource consumption reaches a high level, the tasks might be terminated and fail. To help avoid this situation, we recommend that you enable [priority-based batch scheduling](../fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling.md) and the **(Preview) Batch concurrency control** feature. In this way, you limit the number of concurrent tasks so that they don't fail.
 
-To enable priority-based scheduling, follow these steps.
+To enable priority-based scheduling, follow these steps:
 
 1. Enable the **Batch priority-based scheduling** feature.
 1. Enable the **(Preview) Batch concurrency control** feature.
@@ -64,7 +64,7 @@ After assortments are published, you can validate a channel's assortment directl
 
 ### Validate a channel's assortment for brick-and-mortar stores
 
-To validate a channel's assortment for brick-and-mortar stores, follow these steps.
+To validate a channel's assortment for brick-and-mortar stores, follow these steps:
 
 1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**, and select the store that you want to validate.
 1. On the Action Pane, on the **Store** tab, in the **Inventory** group, select **View channel products**.
@@ -76,7 +76,7 @@ If you find that any product isn't assorted as you expect, double-check [Assortm
 
 ### Validate a channel's assortment for online stores
 
-To validate a channel's assortment for online stores, follow these steps.
+To validate a channel's assortment for online stores, follow these steps:
 
 1. Go to **Retail and Commerce** \> **Channels** \> **Online stores**, and select the store that you want to validate.
 1. On the Action Pane, on the **Channel** tab, in the **Inventory** group, select **View assortment products**.

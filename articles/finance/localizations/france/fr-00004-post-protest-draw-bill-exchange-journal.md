@@ -23,7 +23,7 @@ The following procedure walks you through the steps of protesting bill of exchan
 
 The functionality described is available for legal entities whose primary address is in France. You should have a role of accounts receivables clerk to complete this procedure.
 
-To protest and post a bill of exchange journal, follow these steps.
+To protest and post a bill of exchange journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Bill of exchange \> Protest bill of exchange journal**.
 1. Select **New**.

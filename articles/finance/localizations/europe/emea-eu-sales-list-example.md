@@ -21,7 +21,7 @@ This article explains how to set up and transfer a European Union (EU) sales lis
 
 #### Set up country/region parameters
 
-To set up country/region parameters, follow these steps.
+To set up country/region parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> Country/region parameters**.
 1. On the Action Pane, select **New**.
@@ -37,7 +37,7 @@ To set up country/region parameters, follow these steps.
 
 #### Set up company information
 
-To set up company information, follow these steps.
+To set up company information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Select the **DEMF** legal entity.
@@ -65,7 +65,7 @@ To set up company information, follow these steps.
 
 #### Create a registration type for a company code
 
-To create a registration type for a company code, follow these steps.
+To create a registration type for a company code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Global address book \> Registration types \> Registration types**.
 1. On the Action Pane, select **New**.
@@ -79,7 +79,7 @@ To create a registration type for a company code, follow these steps.
 
 #### Match the registration type with a registration category
 
-To match the registration type with a registration category, follow these steps.
+To match the registration type with a registration category, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Global address book \> Registration types \> Registration categories**.
 1. On the Action Pane, select **New** to create a link between a registration type and a registration category.
@@ -87,7 +87,7 @@ To match the registration type with a registration category, follow these steps.
 
 #### Set up the VAT ID of a data provider for your company
 
-To set up the VAT ID of a data provider for your company, follow these steps.
+To set up the VAT ID of a data provider for your company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Select the **DEMF** legal entity.
@@ -103,7 +103,7 @@ To set up the VAT ID of a data provider for your company, follow these steps.
 
 #### Create a customer's VAT registration number
 
-To create a customer's VAT registration number, follow these steps.
+To create a customer's VAT registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the grid, select **DE-010**.
@@ -127,7 +127,7 @@ To create a customer's VAT registration number, follow these steps.
 
 ### Import electronic reporting configurations
 
-To import electronic reporting configurations, follow these steps.
+To import electronic reporting configurations, follow these steps:
 
 1. Sign in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
 1. Import the latest versions of the following electronic reporting (ER) configurations for the EU sales list:
@@ -138,7 +138,7 @@ To import electronic reporting configurations, follow these steps.
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> Foreign trade parameters**.
 1. On the **EU sales list** tab, on the **Rounding rules** FastTab, in the **Rounding rule** field, enter "0.01".
@@ -164,7 +164,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Set up sales tax codes and sales tax groups
 
-To set up sales tax codes and sales tax groups, follow these steps.
+To set up sales tax codes and sales tax groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Select the **EUS** sales tax code.
@@ -180,7 +180,7 @@ To set up sales tax codes and sales tax groups, follow these steps.
 
 ### Set up customer information
 
-To set up customer information, follow these steps.
+To set up customer information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the grid, select **DE-010**.
@@ -199,7 +199,7 @@ To set up customer information, follow these steps.
 
 ### Create a free text invoice
 
-To create a free text invoice, follow these steps.
+To create a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. On the Action Pane, select **New**.
@@ -225,7 +225,7 @@ Complete the following setup for countries or regions that include purchases in 
 
 #### Set up vendor information
 
-To set up vendor information, follow these steps.
+To set up vendor information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the grid, select **DE-001**.
@@ -239,7 +239,7 @@ To set up vendor information, follow these steps.
 
 #### Create a registration type for a company code
 
-To create a registration type for a company code, follow these steps.
+To create a registration type for a company code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Global address book \> Registration types \> Registration types**.
 1. On the Action Pane, select **New** to create a registration type for the VAT ID.
@@ -248,7 +248,7 @@ To create a registration type for a company code, follow these steps.
 
 #### Match the registration type with a registration category
 
-To match the registration type with a registration category, follow these steps.
+To match the registration type with a registration category, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Global address book \> Registration types \> Registration categories**.
 1. On the Action Pane, select **New** to create a link between a registration type and a registration category.
@@ -256,7 +256,7 @@ To match the registration type with a registration category, follow these steps.
 
 ### Create a vendor's VAT registration number
 
-To create a vendor's VAT registration number, follow these steps.
+To create a vendor's VAT registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. In the grid, select **DE-001**.
@@ -273,7 +273,7 @@ To create a vendor's VAT registration number, follow these steps.
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> Foreign trade parameters**.
 1. On the **EU sales list** tab, set the **Transfer purchases** option to **Yes**.
@@ -283,7 +283,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Set up sales tax codes and sales tax groups
 
-To set up sales tax codes and sales tax groups, follow these steps.
+To set up sales tax codes and sales tax groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Select the **EUS** sales tax code.
@@ -297,7 +297,7 @@ To set up sales tax codes and sales tax groups, follow these steps.
 
 ### Create a vendor invoice
 
-To create a vendor invoice, follow these steps.
+To create a vendor invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Invoices \> Invoice journal**.
 1. On the Action Pane, select **New**.
@@ -318,7 +318,7 @@ To create a vendor invoice, follow these steps.
 
 ### Transfer transactions
 
-To transfer transactions, follow these steps.
+To transfer transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Foreign trade \> EU sales list**.
 1. On the Action Pane, select **Transfer**.
@@ -333,14 +333,14 @@ To transfer transactions, follow these steps.
 
 ### Generate the EU sales list report
 
-To generate the EU sales list report, follow these steps.
+To generate the EU sales list report, follow these steps:
 
 1. On the **EU sales list** page, on the Action Pane, select **Reporting**.
 1. In the **EU sales list reporting** dialog, on the **Parameters** FastTab, set the fields to generate a report for a specific country or region.
 
 ### Mark EU sales list lines as reported
 
-To mark EU sales list lines as reported, follow these steps.
+To mark EU sales list lines as reported, follow these steps:
 
 1. On the **EU sales list** page, on the Action Pane, select **Mark \> Mark as reported**.
 1. Find the line where the **Field** field is set to **Reporting status**.
@@ -350,7 +350,7 @@ To mark EU sales list lines as reported, follow these steps.
 
 ### Mark EU sales list lines as closed
 
-To mark EU sales list lines as closed, follow these steps.
+To mark EU sales list lines as closed, follow these steps:
 
 1. On the **EU sales list** page, on the Action Pane, select **Mark \> Mark as closed**.
 1. Find the line where the **Field** field is set to **Reporting status**. In the **Criteria** field, select **Reported**.

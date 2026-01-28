@@ -1,19 +1,15 @@
 ---
 title: Enable personalized product recommendations
-description: This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
+description: Learn how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 04/21/2023
+ms.date: 01/27/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail, eCommerce
-ms.search.form: 
+ms.custom:
+  - bap-template
 ---
 
 # Enable personalized recommendations
@@ -22,20 +18,21 @@ ms.search.form:
 
 This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
 
-In Dynamics 365 Commerce, retailers can make personalized product recommendations (also known as personalization) available. In this way, personalized recommendations can be incorporated into the customer experience online and at the point of sale (POS). When the personalization functionality is turned on, the system can associate a user's purchase and product information to generate individualized product recommendations.
+In Dynamics 365 Commerce, retailers can make personalized product recommendations (also known as personalization) available. Retailers using this feature can incorporate personalized recommendations into the customer experience both online and at the point of sale (POS). When you turn on the personalization functionality, the system associates a user's purchase and product information to generate individualized product recommendations.
 
 ## Personalization prerequisites
 
-Before you make personalized product recommendations available for customers, note that product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Store. Before customers can receive personalized product recommendations, retailers must [turn on product recommendations](enable-product-recommendations.md).
+Before customers can receive personalized product recommendations, retailers must [turn on product recommendations](enable-product-recommendations.md).
 
 > [!NOTE]
-> By turning on product recommendations, you also turn on personalization. However, if you turn off personalization, you don't turn off the other types of product recommendations.
+> - Product recommendations are supported only for Commerce users who migrated their storage to Azure Data Lake Store.
+> - When you turn on product recommendations, you also turn on personalization. However, if you turn off personalization, you don't turn off the other types of product recommendations.
 
-For more information about product recommendations, see the [Product recommendations overview](product-recommendations.md).
+For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).
 
 ## Turn on personalization
 
-To turn on personalization, follow these steps.
+To turn on personalization, follow these steps:
 
 1. In Commerce headquarters, search for **Feature Management**.
 1. Select **All** to see a list of available features. 
@@ -43,30 +40,30 @@ To turn on personalization, follow these steps.
 1. Select the **Personalized product recommendations** feature.
 1. In the **Personalized product recommendations** properties pane, select **Enable now**.
 
-![Turning on personalization.](./media/FeatureManagement_Personalized.PNG)
+:::image type="content" source="./media/FeatureManagement_Personalized.PNG" alt-text="Screenshot of turning on personalization in Feature Management.":::
 
 > [!NOTE]
-> When you turn on personalization, the process of generating personalized product recommendation lists is started. Up to one day might be required before these lists are available and visible online and at the POS.
+> When you turn on personalization, you also start the process of generating personalized product recommendation lists. Up to one day might be required before these lists are available and visible online and at the POS.
 
 ## Personalized lists
 
 In addition to allowing for personalization of existing machine-generated lists, the recommendations service allows for personalization of the product discovery experience both online and at the POS.
 
-After personalization is turned on, retailers can show shoppers personalized "Picks for you" lists online or "Recommended for customer" lists on POS terminals. Additionally, retailers can apply personalization to existing product recommendation lists and provide privacy controls (opt-out experiences) for authenticated users. If you turn off personalization, you also turn off these features.
+After you turn on personalization, retailers can show shoppers personalized "Picks for you" lists online or "Recommended for customer" lists on POS terminals. Additionally, retailers can apply personalization to existing product recommendation lists and provide privacy controls (opt-out experiences) for authenticated users. If you turn off personalization, you also turn off these features.
 
 ### Online "Picks for you" lists
 
-A "Picks for you" list is an artificial intelligence-machine learning (AI-ML) list that shows an authenticated user a personalized list of suggested products. This list is based on the user's omnichannel purchase history. Personalized recommendations are dynamically updated as the user makes more purchases. This type of list also supports category filtering, so that retailers can show top picks, based on navigational hierarchies.
+A "Picks for you" list is an artificial intelligence-machine learning (AI-ML) list that shows an authenticated user a personalized list of suggested products. This list is based on the user's omnichannel purchase history. Personalized recommendations dynamically update as the user makes more purchases. This type of list also supports category filtering, so that retailers can show top picks, based on navigational hierarchies.
 
-Before the "Picks for you" list can appear on any e-Commerce page, the following user requirements must be met:
+Before the "Picks for you" list can appear on any e-commerce page, the following user requirements must be met:
 
-- Users must be signed in. Anonymous users won't see personalized recommendations.
+- Users must sign in. Anonymous users don't see personalized recommendations.
 - Users must have at least one purchase on their account.
 - Users must opt in to receive personalized recommendations.
 
 The following illustration shows an example of a "Picks for you" list on an online store page.
 
-![Online Picks for you list.](./media/picksforyou.png)
+:::image type="content" source="./media/picksforyou.png" alt-text="Screenshot of online Picks for you list.":::
 
 ### "Recommended for customer" lists at the POS
 
@@ -74,17 +71,17 @@ To enhance their clienteling experience, retailers can personalize existing cust
 
 The following illustration shows an example of a "Recommended for customer" list on a POS terminal.
 
-![Recommended for customer list at the POS.](./media/picksonpos.png)
+:::image type="content" source="./media/picksonpos.png" alt-text="Screenshot of Recommended for customer list at the POS.":::
 
 ## Apply personalization to existing recommendation lists
 
-Retailers can apply personalization to existing recommendation lists, such as "New," "Trending," "Best selling," "People also like," and "Frequently bought together." When personalization is applied to existing lists, items that a signed-in user previously bought are removed from those lists. For both anonymous users and users who opted out of receiving personalized recommendations, default versions of the existing lists are shown. Therefore, retailers don't have to manually maintain separate page experiences.
+Retailers can apply personalization to existing recommendation lists, such as "New," "Trending," "Best selling," "People also like," and "Frequently bought together." When personalization is applied to existing lists, the system removes items that a signed-in user previously bought from those lists. For both anonymous users and users who opt out of receiving personalized recommendations, the system shows default versions of the existing lists. Therefore, retailers don't have to manually maintain separate page experiences.
 
-For example, a signed-in user has already bought the black watch and the brown work boots that appear in the "Trending - default" list in the following illustration. Therefore, the user will see new products instead of those products, as shown in the "Trending - personalized" list.
+For example, a signed-in user already bought the black watch and the brown work boots that appear in the "Trending - default" list in the following illustration. Therefore, the user sees new products instead of those products, as shown in the "Trending - personalized" list.
 
-![Applying personalization.](./media/applypersonalization.png)
+:::image type="content" source="./media/applypersonalization.png" alt-text="Screenshot of applying personalization.":::
 
-To apply personalization to an existing recommendation list in the Commerce site builder, follow these steps.
+To apply personalization to an existing recommendation list in the Commerce site builder, follow these steps:
 
 1. Open an existing site builder page that contains a product collection module.
 1. In the left navigation pane, select the product collection module.
@@ -92,9 +89,9 @@ To apply personalization to an existing recommendation list in the Commerce site
 1. In the **Select product list configuration** dialog box, under **Type**, select the list type.
 1. Select the **Apply Personalization** check box, and then select **OK**.
 
-    ![Applying personalization to a trending list.](./media/ApplyPersonalizationToTrending.PNG)
+    :::image type="content" source="./media/ApplyPersonalizationToTrending.PNG" alt-text="Screenshot of applying personalization to a trending list.":::
 
-1. Save the page, finish editing it, and then publish it. After the page is published, signed-in users will see personalized trending lists.
+1. Save the page, finish editing it, and then publish it. After the page is published, signed-in users see personalized trending lists.
 
 ## Additional resources
 
@@ -119,6 +116,5 @@ To apply personalization to an existing recommendation list in the Commerce site
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

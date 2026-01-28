@@ -1,13 +1,13 @@
 ---
 title: Uninstall Business performance analytics
 description: Learn how to uninstall Business performance analytics.
-author: lizmota
-ms.author: jiwo
+author: yashkv1 
+ms.author: yvishwa
 ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 8/20/2025
+ms.date: 1/26/2026
 ---
 
 # Uninstall Business performance analytics
@@ -31,7 +31,7 @@ To perform data cleanup before uninstallation:
 > This process is required for Business performance analytics 2.5 and must be completed while the `msdyn_BpaTablesManagedDataLake` and `msdyn_bpapipelineplugins` solutions are still installed.
 
 1. Before you uninstall the solutions, open Business performance analytics.
-2. Open your browser's developer console by pressing **F12**.
+2. Press **F12** to open your browser's developer console.
 3. Copy the following script into the console and press **Enter**:
 
     ```javascript
@@ -41,10 +41,10 @@ To perform data cleanup before uninstallation:
 4. The cleanup process starts. This process might take a while to complete.
 5. To check the status of the cleanup, you can:
     - Rerun steps 3 and 4 to get the current status
-    - Check the execution history of the flow "Business performance analytics uninstall data lake cleanup"
+    - Check the execution history of the **Business performance analytics uninstall datalake cleanup** flow.
 
 > [!IMPORTANT]
-> Wait for the cleanup process to complete before proceeding with the solution uninstallation.
+> Wait for the cleanup process to complete before uninstalling the solution.
 
 
 ```
@@ -137,7 +137,7 @@ processDatalakeFolderDeletion = (shouldReset) => {
 
                     await triggerCleanupWorkflow();
                     return Promise.resolve({
-                        message: "The option to clean up Business performance analytics transformation output folder has been selected. Clean up has started and the solution cannot be deleted until it has completed.",
+                        message: "The option to clean up Business performance analytics transformation output folder has been selected. Clean up has started and the solution can't be deleted until it has completed.",
                         errorCode: "DATA_LAKE_CLEANUP_STARTED"
                     });
 
@@ -145,7 +145,7 @@ processDatalakeFolderDeletion = (shouldReset) => {
                     console.log("Data Lake folder cleanup is in progress");
 
                     return Promise.resolve({
-                        message: "Clean up the transformation folder is in progress. The solution cannot be deleted until it has completed. This may take a while.",
+                        message: "Cleanup of the transformation folder is in progress. The solution can't be deleted until it has completed. This may take a while.",
                         errorCode: "DATA_LAKE_CLEANUP_RUNNING"
                     });
 
@@ -166,7 +166,7 @@ processDatalakeFolderDeletion = (shouldReset) => {
             console.error("Error converting environment variable value: " + ex.message);
 
             return Promise.reject({
-                message: "Cannot proceed with solution removal. Please update the environment variable '" +
+                message: "Can't proceed with solution removal. Please update the environment variable'" +
                     ENV_VAR_CLEANUP_ENABLED + "' value to 'true' or 'false'",
                 errorCode: "INVALID_ENV_VAR_VALUE",
                 originalError: ex
@@ -190,12 +190,12 @@ processDatalakeFolderDeletion = (shouldReset) => {
 
 ```
 
-Once the cleanup script executes successfully, you can proceed to uninstall Business performance analytics using Option 1 or 2.  
+After the cleanup script executes successfully, you can proceed to uninstall Business performance analytics using Option 1 or 2.  
 
 ## Option 1: Code-based uninstallation
 
 1. Sign in to the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using Dataverse admin credentials.
-2. Select the environment where you want to uninstall Business performance analytics.
+2. Select the environment to uninstall Business performance analytics.
 3. Select the environment URL that is provided in the details. You're redirected to the sign-in page for the Dataverse environment.
 4. Open your browser's developer tools by selecting **Ctrl**+**Shift**+**I** or going to **More tools** \> **Developer tools**. Then select the **Console** tab to open the developer console.
 5. Copy the following JavaScript code, and paste it into the developer console to start the uninstallation process.
@@ -297,7 +297,7 @@ You can manually uninstall Business performance analytics through the Power Plat
 21. Business performance analytics tables security 
 22. Business performance analytics config 
 
-To delete each of the preceding solutions, follow these steps.
+To delete each of the preceding solutions, follow these steps:
 
 1. In [Power Apps](https://make.preview.powerapps.com/), on the left navigation pane, select **Solutions**.
 2. Select the solution to delete, and then select **Delete**.
@@ -306,4 +306,4 @@ To delete each of the preceding solutions, follow these steps.
 
 Deletion of all the solution requires approximately 20 minutes. If the operation is successful, you receive the following message: "Successfully deleted solution."
 
-If you encounter any issues during the cleanup or uninstall process, create a support ticket for assistance.
+If you encounter any issues during the cleanup or uninstall process, contact support.

@@ -114,7 +114,7 @@ For this example, the reorder point quantity is based on a lead time of seven da
 
 ### Manage planning priority models
 
-To work with your planning priority models. follow these steps.
+To work with your planning priority models. follow these steps:
 
 1. Go to **Master planning \> Setup \> Planning priority models**.
 1. Either select an existing model in the list pane, or select **New** on the Action Pane to create a new model.

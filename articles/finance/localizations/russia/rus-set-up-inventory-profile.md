@@ -20,7 +20,7 @@ This article explains how to set up inventory profiles for Russia in Microsoft D
 
 ## Create an inventory profile
 
-To create an inventory profile, follow these steps.
+To create an inventory profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory profiles**.
 1. Select **New** to create a new inventory profile.
@@ -39,7 +39,7 @@ To create an inventory profile, follow these steps.
 
 ## Set up compatible inventory profiles
 
-To set up compatible inventory profiles, follow these steps.
+To set up compatible inventory profiles, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory profiles**.
 1. Select the inventory profile that you want to set up compatible inventory profiles for.
@@ -60,7 +60,7 @@ To set up compatible inventory profiles, follow these steps.
 
 ## Set up an inventory profile in tracking dimension groups
 
-To set up an inventory profile in tracking dimension groups, follow these steps.
+To set up an inventory profile in tracking dimension groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management \> Setup \> Dimension and variant groups \> Tracking dimension groups**.
 1. In the left pane, select a dimension group, or select **New** to create a new dimension group.
@@ -76,7 +76,7 @@ To set up an inventory profile in tracking dimension groups, follow these steps.
 
 ## Activate transaction combinations for inventory profiles
 
-To activate transaction combinations for inventory profiles, follow these steps.
+To activate transaction combinations for inventory profiles, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management \> Setup \> Posting \> Transaction combinations**.
 1. Select **Edit**.
@@ -92,7 +92,7 @@ To activate transaction combinations for inventory profiles, follow these steps.
 
 ## Set up inventory posting in the context of an inventory profile
 
-To set up inventory posting in the context of an inventory profile, follow these steps.
+To set up inventory posting in the context of an inventory profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Posting** \> **Posting**.
 1. In the left pane, select the posting type, and create a new line.
@@ -114,7 +114,7 @@ To set up inventory posting in the context of an inventory profile, follow these
 
 ## Set up a relation between inventory profiles and customer and vendor posting profiles
 
-To set up a relation between inventory profiles and customer and vendor posting profiles, follow these steps.
+To set up a relation between inventory profiles and customer and vendor posting profiles, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Posting** \> **Inventory profile – posting profile**.
 1. Select **New** to create a new line.
@@ -239,7 +239,7 @@ You can specify the default kind of activity and inventory profile in a vendor, 
 
 ## Set up a default inventory profile for BOMs
 
-To set up a default inventory profile for BOMs, follow these steps.
+To set up a default inventory profile for BOMs, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management \> Journal entries \> Items \> Bills of materials**.
 1. Select a BOM journal and its line.
@@ -256,7 +256,7 @@ To set up a default inventory profile for BOMs, follow these steps.
 
 On the **Procurement and sourcing parameters** page, you can select a default inventory profile. That inventory profile will then automatically be entered in purchase orders if default inventory profiles and kinds of activity aren't selected for the vendor record and purchase agreement record.
 
-To set up a default inventory profile for purchase orders, follow these steps.
+To set up a default inventory profile for purchase orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. On the **General** tab, on the **Default values and parameters** FastTab, in the **Inventory profile** field, select the inventory profile that should automatically be used in purchase orders.
@@ -288,7 +288,7 @@ To set up a default inventory profile for purchase orders, follow these steps.
 
 On the **Accounts receivable parameters** page, you can select a default inventory profile. That inventory profile will then automatically be selected in sales orders if default inventory profiles and kinds of activity for the customer record and sales agreement record aren't selected.
 
-To set up a default inventory profile for sales orders, follow these steps.
+To set up a default inventory profile for sales orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **General** tab, on the **Sales setup** FastTab, in the **Inventory profile** field, select the inventory profile that should automatically be used in sales orders.
@@ -318,7 +318,7 @@ To set up a default inventory profile for sales orders, follow these steps.
 
 On the **Inventory and warehouse management parameters** page, you can select a default inventory profile. That inventory profile will then automatically be selected in transfer orders if a default inventory profile and kind of activity for the warehouse record aren't selected.
 
-To set up a default inventory profile for transfer orders, follow these steps.
+To set up a default inventory profile for transfer orders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. On the **General** tab, in the **Inventory profile** section, in the **Inventory profile** field, select the inventory profile that should automatically be used in transfer orders.

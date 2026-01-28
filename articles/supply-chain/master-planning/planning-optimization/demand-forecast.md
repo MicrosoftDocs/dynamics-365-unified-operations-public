@@ -22,7 +22,7 @@ You can use a demand forecast to account for expected demand in your master plan
 
 ## Set up a master plan to include a demand forecast
 
-To configure a master plan so that it includes a demand forecast, follow these steps.
+To configure a master plan so that it includes a demand forecast, follow these steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
 1. Select an existing plan, or create a new plan.
@@ -42,7 +42,7 @@ To configure a master plan so that it includes a demand forecast, follow these s
 
 ## Set up a coverage group to include a demand forecast
 
-To configure a coverage group so that it includes a demand forecast, follow these steps.
+To configure a coverage group so that it includes a demand forecast, follow these steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Coverage groups**.
 1. Select an existing coverage group, or create a new group.
@@ -352,7 +352,7 @@ The resulting demand forecast will be a single demand for 9 pcs (2 + 3 + 4) on J
 
 ### Create a forecast model
 
-To create a forecast model, follow these steps.
+To create a forecast model, follow these steps:
 
 1. Go to **Master planning \> Setup \> Demand forecasting \> Forecast models**.
 1. On the Action Pane, select **New**.
@@ -367,7 +367,7 @@ To create a forecast model, follow these steps.
 
 ### Assign submodels to a forecast model
 
-To assign submodels to a forecast model, follow these steps.
+To assign submodels to a forecast model, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Forecast \> Forecast models**.
 1. In the list pane, select the forecast model to set up a submodel for.

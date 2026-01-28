@@ -34,7 +34,7 @@ The onboarding process consists of two steps:
 
 ### Obtain a CCSID
 
-To obtain a CCSID, follow these steps.
+To obtain a CCSID, follow these steps:
 
 1. In the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/), go to the Onboarding and Management Portal by selecting the relevant tile.
 1. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**.
@@ -142,7 +142,7 @@ After the compliance checks are successfully completed, use the PowerShell scrip
 
 To obtain a PCSID, you must correctly configure the solution for electronic invoice generation and submission, and the solution must be fully functioning. To achieve this result, you must complete all the required preliminary configuration steps. For more information, see [Electronic invoicing in Saudi Arabia - Phase two](GS-e-invoicing-sa-get-started.md).
 
-To obtain a PCSID, follow these steps.
+To obtain a PCSID, follow these steps:
 
 1. Ensure that all electronic invoices are successfully submitted to ZATCA.
 1. Run the [onboarding script](#script) that's provided later in this article. Specify the CCSID as an input parameter. Here's an example.

@@ -27,7 +27,7 @@ The zero prompts are a set of prompts that, when selected, either submit automat
 
 ## Configuring the zero prompt experience
 
-To configure your custom zero prompt experience, follow these steps.
+To configure your custom zero prompt experience, follow these steps:
 
 1. Create a new topic in the **Copilot for finance and operations apps** agent.
 1. Update the trigger node to trigger the topic when the Copilot chat panel opens in the finance and operations apps client.
@@ -35,7 +35,7 @@ To configure your custom zero prompt experience, follow these steps.
 
 ### Add a new topic
 
-To add a new topic, follow these steps.
+To add a new topic, follow these steps:
 
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
 1. Select the **Topics** tab.
@@ -86,7 +86,7 @@ For example, the following action, when selected, populates the chat input in th
 
 ## Zero prompt experience topic example
 
-The following example shows the full topic code for a zero prompt experience. To try this example in your environment, follow these steps.
+The following example shows the full topic code for a zero prompt experience. To try this example in your environment, follow these steps:
 
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
 1. Select the **Topics** tab, and select **Add a topic**.

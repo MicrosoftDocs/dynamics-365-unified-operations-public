@@ -27,7 +27,7 @@ Commerce site builder lets you view the version history of a page or fragment an
 > [!NOTE]
 > A new version of a document is created each time that a site author makes changes and then selects **Finished editing** for the document. 
 
-To view the version history for a page or fragment and revert to a previous version, follow these steps.
+To view the version history for a page or fragment and revert to a previous version, follow these steps:
 
 1. In site builder, open the page or fragment that you want to view the version history for.
 1. On the command bar, select **Show history**.

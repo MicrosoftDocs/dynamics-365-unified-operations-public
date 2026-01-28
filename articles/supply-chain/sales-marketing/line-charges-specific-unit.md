@@ -79,7 +79,7 @@ Follow these steps to set up a line charge in auto charges.
 
 ### Use the auto charges on a sales order
 
-The charges can now be automatically applied to a sales quotation line or a sales order line. To apply the charges to a sales order line, follow these steps.
+The charges can now be automatically applied to a sales quotation line or a sales order line. To apply the charges to a sales order line, follow these steps:
 
 1. Go to **Sales and Marketing** \> **Sales orders** \> **All sales orders**.
 1. On the Action Pane, select **New** to create a sales order.

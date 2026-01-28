@@ -27,7 +27,7 @@ You can calculate a depreciation bonus by reducing the value of an asset through
 
 ## Set up a depreciation bonus
 
-To set up a depreciation bonus, follow these steps.
+To set up a depreciation bonus, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Depreciation bonus**.
 1. Select **New** to create a depreciation bonus allowance.
@@ -41,7 +41,7 @@ To set up a depreciation bonus, follow these steps.
 
 The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets. Use the following procedure to fill in the depreciation bonus fields for all fixed asset transactions of the **Putting into operation** transaction type at the same time by using a filter that you set. 
 
-To calculate a depreciation bonus, follow these steps.
+To calculate a depreciation bonus, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Periodic** \> **Depreciation bonus initialization**.
 1. In the **Value model** field, select a model for the depreciation bonus.
@@ -56,7 +56,7 @@ To calculate a depreciation bonus, follow these steps.
 
 Use the **All customers** page to affiliate a customer with an intercompany. If you sell a fixed asset to an affiliated customer within five years after you put the fixed asset into operation, you can restore the depreciation bonus for the fixed asset.
 
-To set up an affiliated customer, follow these steps.
+To set up an affiliated customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 

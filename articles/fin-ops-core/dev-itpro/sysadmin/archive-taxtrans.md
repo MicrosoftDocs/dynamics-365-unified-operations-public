@@ -37,7 +37,7 @@ In addition, the following prerequisites must be met before you archive Tax tran
 
 ## Set up an archival job
 
-To set up an archival job, follow these steps.
+To set up an archival job, follow these steps:
 
 1. Go to **System administration** \> **Archive with Dataverse long term retention** to open the **Archive with Dataverse long term retention** workspace.
 1. Select the **Tax transactions** functional scenario.

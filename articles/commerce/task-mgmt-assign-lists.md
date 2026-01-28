@@ -23,7 +23,7 @@ Task management in Dynamics 365 Commerce lets you assign a task list to multiple
 
 ## Start the task list assignment process
 
-Before you start the process of assigning tasks, make sure that you created a task list by following the steps in the [Create task lists and add tasks](task-mgmt-create-lists.md) article. To start the process of assigning a task list, follow these steps.
+Before you start the process of assigning tasks, make sure that you created a task list by following the steps in the [Create task lists and add tasks](task-mgmt-create-lists.md) article. To start the process of assigning a task list, follow these steps:
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select the task list to assign.
@@ -61,12 +61,12 @@ The following illustration shows an example of how to enter frequency criteria i
 
 If you're a regional manager or store manager, you might want to track the status of task lists that have been assigned to multiple stores or employees. You can then follow up with stores or workers that didn't complete their assigned tasks on time. Commerce back office lets you view the status of task lists, reassign tasks, or change the status of a task.
 
-To track the task list status for all tasks, follow these steps.
+To track the task list status for all tasks, follow these steps:
 
 1. Go to **Retail and Commerce \> Task management \> Task management processes**.
 1. Select the **All task lists** tab to view the status of all task lists that are assigned to various stores.
 
-To track the task list status for all tasks that are assigned to you, follow these steps.
+To track the task list status for all tasks that are assigned to you, follow these steps:
 
 1. Go to **Retail and Commerce \> Task management \> Task management processes**.
 1. Select the **My tasks** or **All tasks** tab to view or update the status of tasks that are assigned to you.

@@ -145,7 +145,7 @@ As of Dynamics 365 Finance version 10.0.23, when you're working in a generated d
 > [!NOTE]
 > Be aware that this functionality might not work as expected when a custom font is used to format a merged cell. Because Excel doesn't embed custom fonts, it doesn't provide information about custom font size. Therefore, the size of the merged cell can be incorrectly estimated.
 
-To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
+To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.

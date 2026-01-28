@@ -4,7 +4,7 @@ description: Learn about the sales point link configuration for Latin America, i
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Sales point relation for sales documents and remission
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 You can select the packing slip documents that are used with a sales document by linking sales points when you invoice a product sale. The sales points will then be assigned to the invoice in the transaction.
 
@@ -22,9 +24,9 @@ Before you can link sales points, you must create at least one sale point. Addit
 ## Set up a sales point pair
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales Point Relation - Sales document and Remission**.
-2. On the Action Pane, select **New** to add a line to the main grid.
-3. In the **Sales document sales point** field, select a sales point.
-4. In the **Remission sales point** field, select a sales point.
-5. Select **Save**.
+1. On the Action Pane, select **New** to add a line to the main grid.
+1. In the **Sales document sales point** field, select a sales point.
+1. In the **Remission sales point** field, select a sales point.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

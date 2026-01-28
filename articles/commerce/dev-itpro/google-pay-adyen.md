@@ -49,7 +49,7 @@ When Google Pay is used with the express checkout module in Commerce, the user's
 
 Google Pay is a digital wallet payment method. For information about how to set up payment mapping for Google Pay, see [Wallet payment support](../wallets.md).
 
-To map the Google Pay payment method to card tender types for both POS and online channels, follow these steps.
+To map the Google Pay payment method to card tender types for both POS and online channels, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Select **New** to add a line for Google Pay.
@@ -73,7 +73,7 @@ As of version 10.0.36, Commerce offers a direct Google Pay module for presenting
 
 ### Add Google Pay as a new store payment method
 
-To add Google Pay as a new payment method for your channel in Commerce headquarters, follow these steps.
+To add Google Pay as a new payment method for your channel in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods**.
 1. Select **New**.
@@ -97,7 +97,7 @@ To add Google Pay as a new payment method for your channel in Commerce headquart
 
 ### Configure a Commerce online store to use Google Pay with the Google Pay module
 
-To configure a Commerce online store to use Google Pay with the Google Pay module, follow these steps.
+To configure a Commerce online store to use Google Pay with the Google Pay module, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select your site's online store channel by selecting the channel's **Retail Channel Id** value.
@@ -131,7 +131,7 @@ You can set up Google Pay as an option in the checkout payment section for payme
 > [!NOTE]
 > The following procedure assumes that your site uses a checkout fragment that is configured with pickup information, a shipping address, delivery options, contact information, optional terms and conditions, and a section for checkout elements. The default module library checkout module is released with a checkout section container that has text block, loyalty points, gift card, and payment modules. For more information, see [Payment module](../payment-module.md).
 
-To set up Google Pay as a regular payment option in the **Payment Method** section of the checkout page using the Google Pay module, follow these steps.
+To set up Google Pay as a regular payment option in the **Payment Method** section of the checkout page using the Google Pay module, follow these steps:
 
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
@@ -153,7 +153,7 @@ To set up payment express functionality using the payment module, see [Configure
 
 ### Configure Commerce online store to use Google Pay with the payment module (Legacy)
 
-To configure a Commerce online store to use Google Pay with the payment module, follow these steps.
+To configure a Commerce online store to use Google Pay with the payment module, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select your site's online store channel by selecting the channel's **Retail Channel ID** value.
@@ -199,7 +199,7 @@ Customers can review orders and change checkout order details before they select
 
 #### Configure the checkout fragment for express using Google Pay with the payment module
 
-To set up the checkout fragment for express payment using Google Pay in site builder, follow these steps.
+To set up the checkout fragment for express payment using Google Pay in site builder, follow these steps:
 
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
@@ -220,7 +220,7 @@ To set up the checkout fragment for express payment using Google Pay in site bui
 
 #### Configure the cart page for express payment using Google Pay
 
-To set up the cart page for express payment using Google Pay in site builder, follow these steps.
+To set up the cart page for express payment using Google Pay in site builder, follow these steps:
 
 1. Go to **Pages**.
 1. Select your site's cart page, and then select **Edit**.
@@ -258,7 +258,7 @@ You can set up Google Pay as an option in the checkout payment section for payme
 > [!NOTE]
 > The following procedure assumes that your site uses a checkout fragment that is configured with pickup information, a shipping address, delivery options, contact information, optional terms and conditions, and a section for checkout elements. The default module library checkout module is released with a checkout section container that has text block, loyalty points, gift card, and payment modules. For more information, see [Payment module](../payment-module.md).
 
-To set up Google Pay as a regular payment option in the **Payment Method** section of the checkout page, follow these steps.
+To set up Google Pay as a regular payment option in the **Payment Method** section of the checkout page, follow these steps:
 
 1. In site builder, go to **Fragments**, and then select your site's checkout fragment.
 1. Select **Edit**.
@@ -282,7 +282,7 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
 
 Before you configure your fragments or pages with Google Pay, you must ensure that the content security policies (CSP) for your site are configured in Commerce site builder.
 
-To ensure that your content security policies are set in site builder, follow these steps.
+To ensure that your content security policies are set in site builder, follow these steps:
 
 1. For your site, go to **Site settings \> Extensions**.
 1. On the **Content security policy** tab, add a line for `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.

@@ -40,7 +40,7 @@ Here is an overview of the tasks that you must complete to set up the system to 
 
 Use the **Currency revaluation accounts** page to set up the calculation of profit/loss amounts for foreign currency conversion.
 
-To set up an exchange rate, follow these steps.
+To set up an exchange rate, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Currencies** \> **Currency parameters**.
 1. In the **Legal entities** field, select a company.
@@ -51,7 +51,7 @@ To set up an exchange rate, follow these steps.
 
 Use the **Banks** page to associate a vendor account with the bank that should be used for foreign currency sale or purchase transactions.
 
-To set up a bank to use for foreign currency conversion transactions, follow these steps.
+To set up a bank to use for foreign currency conversion transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Bank groups**.
 1. Create a bank, or select an existing bank.
@@ -63,7 +63,7 @@ When you associate a vendor account with a bank, the **Transactions** button on 
 
 Use the **Bank transaction types** page to set up a bank transaction type for foreign currency sale, purchase, and transfer transactions.
 
-To set up a bank transaction type, follow these steps.
+To set up a bank transaction type, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Bank transaction types**.
 1. Create a bank transaction type.
@@ -74,7 +74,7 @@ To set up a bank transaction type, follow these steps.
 
 Use the **Methods of payment** page to set up a method of payment for the sale, purchase, or transfer of foreign currency.
 
-To set up a method of payment, follow these steps.
+To set up a method of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payment setup** \> **Methods of payment**.
 1. Create a method of payment.
@@ -90,7 +90,7 @@ To set up a method of payment, follow these steps.
 
 Use the **Bank accounts** page to set up specific information for the sale or purchase of foreign currency.
 
-To set up a bank account follow these steps.
+To set up a bank account follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 1. Create a bank account, or select an existing bank account.
@@ -102,7 +102,7 @@ For more information, see [Set up Bank accounts (Russia)](rus-local-settings-req
 
 Use the **Cash and bank management parameters** page to assign a number sequence for foreign currency transactions.
 
-To set up a number sequence, follow these steps.
+To set up a number sequence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field for the **Currency transfer order** reference, select a number sequence.
@@ -111,7 +111,7 @@ To set up a number sequence, follow these steps.
 
 ### Create a foreign currency sale transaction
 
-To create a foreign currency sale transaction, follow these steps.
+To create a foreign currency sale transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a payment journal.
@@ -155,7 +155,7 @@ To create a foreign currency sale transaction, follow these steps.
 
 After you post the payment order for a foreign currency sale, you can register the bank commission and the local currency that is received as a result of the foreign currency conversion. (In this case, Russian rubles are received.)
 
-To create transactions for a bank commission and local currency (rubles) amount received as a result of the foreign currency sale, follow these steps.
+To create transactions for a bank commission and local currency (rubles) amount received as a result of the foreign currency sale, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a payment journal.
@@ -226,7 +226,7 @@ You post the settlement of foreign currency sale transactions to generate profit
 
 ### Create a transaction of rubles movement for a foreign currency purchase
 
-To create a transaction of rubles movement for a foreign currency purchase, follow these steps.
+To create a transaction of rubles movement for a foreign currency purchase, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a payment journal.
@@ -278,7 +278,7 @@ To create a transaction of rubles movement for a foreign currency purchase, foll
 
 After you post the payment order for a foreign currency purchase, you can register the bank commission and the foreign currency amount that is received as a result of the foreign currency conversion.
 
-To create transactions for a bank commission and foreign currency amount received as a result of a foreign currency purchase, follow these steps.
+To create transactions for a bank commission and foreign currency amount received as a result of a foreign currency purchase, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a payment journal.
@@ -320,7 +320,7 @@ To create transactions for a bank commission and foreign currency amount receive
 
 You post the settlement of foreign currency purchase transactions to generate profit/loss transactions from them.
 
-To post the settlement of foreign currency purchase transactions, follow these steps.
+To post the settlement of foreign currency purchase transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Bank groups**.
 1. Select a bank, and then select **Functions** \> **Settle open transactions** to settle foreign currency purchase transactions.
@@ -340,7 +340,7 @@ To post the settlement of foreign currency purchase transactions, follow these s
 
 ### Create a foreign currency movement for a foreign currency transfer
 
-To create a foreign currency movement for a foreign currency transfer, follow these steps.
+To create a foreign currency movement for a foreign currency transfer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a payment journal.
@@ -361,7 +361,7 @@ To create a foreign currency movement for a foreign currency transfer, follow th
 
 ### Create transactions for the bank commission and the result of the foreign currency transfer
 
-To create transactions for the bank commission and the result of the foreign currency transfer, follow these steps.
+To create transactions for the bank commission and the result of the foreign currency transfer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a payment journal.
@@ -395,7 +395,7 @@ To create transactions for the bank commission and the result of the foreign cur
 
 You post the settlement of foreign currency purchase transactions to generate foreign currency exchange difference transactions.
 
-To post the settlement of foreign currency transfer transactions, follow these steps.
+To post the settlement of foreign currency transfer transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management**** \> ****Setup**** \> ****Bank groups**.
 1. Select a bank, and then select **Functions**** \> ****Settle open transactions** to settle foreign currency purchase transactions.

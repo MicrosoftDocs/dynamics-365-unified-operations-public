@@ -33,7 +33,7 @@ To use this feature, it must be enabled for your system. As of version 10.0.41, 
 
 ## Set up and schedule the Sales history cleanup periodic task
 
-To set up and schedule the *Sales history cleanup* periodic task, follow these steps.
+To set up and schedule the *Sales history cleanup* periodic task, follow these steps:
 
 1. Analyze your business needs to determine how many days of historic sales order posting data you must keep. We usually recommend that you run the cleanup task every three months and a maximum of every six months.
 1. Go to **Sales and marketing \> Period tasks \> Cleanup \> Sales update history cleanup**.

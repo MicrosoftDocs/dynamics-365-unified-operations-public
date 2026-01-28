@@ -26,7 +26,7 @@ You should analyze the result from the Planning Optimization fit analysis as par
 
 ## Run Planning Optimization fit analysis
 
-To run the Planning Optimization fit analysis and view the results, follow these steps.
+To run the Planning Optimization fit analysis and view the results, follow these steps:
 
 1. Select a company (legal entity) from the company picker in the navigation bar.
 1. Go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**.
