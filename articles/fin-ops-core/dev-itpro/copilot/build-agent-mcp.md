@@ -21,7 +21,7 @@ The **Dynamics 365 ERP MCP** server provides a dynamic framework for agents to p
 
 ## Prerequisites
 
-Before building an agent, you must enable the **Dynamics 365 ERP MCP** server in your environment. Learn more about enabling the server in [Use Model Context Protocol for finance and operations apps](copilot-mcp.md).
+Before building an agent, enable the **Dynamics 365 ERP MCP** server in your environment. For more information, see [Use Model Context Protocol for finance and operations apps](copilot-mcp.md).
 
 ## Adding the MCP server to your agent
 
@@ -39,13 +39,13 @@ After you add the **Dynamics 365 ERP MCP** server, the agent can access the tool
 Learn more about configuration options for the MCP tools in [Add tools and resources from a Model Context Protocol (MCP) server to your agent](/microsoft-copilot-studio/mcp-add-components-to-agent).
 
 > [!NOTE]
-> You can also select the **Dynamics 365 ERP MCP** server in Microsoft Copilot Studio. This server contains 13 static tools for specific actions in Dynamics 365 Finance and Supply Chain Management. However, this version of the server will be retired due to limitations in the server's scale and extensibility. We continue to enhance the **Dynamics 365 ERP MCP** server.
+> You can also select the **Dynamics 365 ERP MCP** server in Microsoft Copilot Studio. This server contains 13 static tools for specific actions in Dynamics 365 Finance and Supply Chain Management. However, this version of the server is retired due to limitations in the server's scale and extensibility. We continue to enhance the **Dynamics 365 ERP MCP** server.
 
 ## Selecting a model
 
-On the **Overview** tab, you can view and change the agent's model. This model is the primary model the agent uses for reasoning, orchestration, and responding to prompts and instructions. The model you select for your agent has a significant impact on the quality of responses in your agent.
+On the **Overview** tab, you can view and change the agent's model. This model is the primary model the agent uses for reasoning, orchestration, and responding to prompts and instructions. The model you select for your agent significantly affects the quality of responses in your agent.
 
-While GPT-4.1 can be used in other clients like Microsoft Visual Studio Code with GitHub Copilot and achieve good results, don't use it as the orchestration model for agents in Copilot Studio. The recommended model for agents using the Dynamics 365 ERP MCP server is **Claude Sonnet 4.5**. This model provides a better success rate in Copilot Studio over other default models like GPT-4.1. If Claude Sonnet 4.5 isn't available in your environment, use **GPT-5 (Chat)**.
+While you can use GPT-4.1 in other clients like Microsoft Visual Studio Code with GitHub Copilot and achieve good results, don't use it as the orchestration model for agents in Copilot Studio. The recommended model for agents using the Dynamics 365 ERP MCP server is **Claude Sonnet 4.5**. This model provides a better success rate in Copilot Studio over other default models like GPT-4.1. If Claude Sonnet 4.5 isn't available in your environment, use **GPT-5 (Chat)**.
 
 > [!NOTE]
 > Claude models are external models not hosted in Azure. Tenant administrators must approve them for use on the tenant. Learn more in [Choose an external model as the primary AI model](/microsoft-copilot-studio/authoring-select-external-response-model).
@@ -62,7 +62,7 @@ Providing instructions to an agent with the Dynamics 365 ERP MCP server helps th
 1. **Include skills and actions:** List what the agent can do (for example, "Use Dynamics 365 MCP tools for finance and supply chain tasks").
 1. **Add workflow details:** Provide step-by-step guidance for common tasks.
 
-For example, the following instructions can provide context on using the tools in the Dynamics 365 ERP MCP server. You can copy and paste these instructions into your agent's instructions as a starting point for guiding the agent in how to use the available tools to perform the agentic tasks. Then update the instructions as you test your agent to provide guidance on how you expect the agent to orchestrate in performing assigned tasks.
+For example, the following instructions provide context on using the tools in the Dynamics 365 ERP MCP server. You can copy and paste these instructions into your agent's instructions as a starting point for guiding the agent in how to use the available tools to perform the agentic tasks. Then update the instructions as you test your agent to provide guidance on how you expect the agent to orchestrate in performing assigned tasks.
 
 ``` txt
 # Role
