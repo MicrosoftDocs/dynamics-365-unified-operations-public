@@ -32,6 +32,32 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
+### I received an "unexpected error occurred" message in Power Platform admin center. How do I resolve it?
+
+This error may be caused by a truncation issue. Follow these steps to determine if this is the case and apply the fix.
+
+#### Determine if it's a truncation error
+
+1. Go to [Power Apps](https://make.powerapps.com).
+2. Select the affected environment in the environment picker (upper right corner).
+3. Go to **Solutions**.
+4. In the ribbon at the top, select **See history**.
+5. In the search bar in the upper right corner of the screen, search for **msdyn_bpa**.
+6. Look for a solution that shows **Failure** in the results column.
+7. If the failed solution is **msdyn_BpaTablesVirtualEntities**, continue to the next step.
+8. Select the solution name to open a slider panel.
+9. Check if the error matches this pattern: `Failed to sync entity metadata for entity '<entity name>'. Exception details: CreateRequest failed with error: String or binary data would be truncated in table '{0}', column '{1}'. Truncated value: {2}.`
+
+#### Apply the fix
+
+If the error matches the pattern described above:
+
+1. Find the **Available Finance and Operation Virtual entities** table.
+2. Mark the entity referenced in the error message as visible.
+3. Save your changes.
+4. Repeat this process if the error occurs for additional entities.
+
+
 ### What's the estimated time required to set up Business performance analytics?
 
 The setup of the Business performance analytics app takes up to 60 minutes. However, it may take up to 24 hours before your data is available in Business performance analytics after installation is completed. 
