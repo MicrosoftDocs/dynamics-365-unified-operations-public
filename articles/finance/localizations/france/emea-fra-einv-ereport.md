@@ -27,7 +27,7 @@ This article helps you get started with electronic invoicing and electronic repo
 Before you start, make sure these prerequisites are in place:
 
 - The company is a registered taxpayer in France.
-- The company has a signed agreement with the certified Partner Agent.
+- The company has a signed agreement with the certified Partner Agent and obtained the credentials required for esablishing a secure connection to Partner Agent's infrastructure.
   > [!NOTE]
   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
 
