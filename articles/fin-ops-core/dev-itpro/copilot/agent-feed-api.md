@@ -27,21 +27,21 @@ Agent feed enables ERP agents to post actionable feed items through Dataverse Cu
 
 Agent feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using Dynamics 365 finance and operations menu items, and rendered through configurable card providers.
 
-## How to send data to the Agent feed in Immersive Home
+## How to send data to the Agent feed in Immersive Home 
 
 ### Enable Dynamics 365 finance and operations features
 
 In Dynamics 365 finance and operations, go to [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) and enable the features:
 
-- Immersive Home
-- (Preview) Agent feed for Immersive Home
-- (Preview) Custom API generation
+- Immersive Home (production ready preview)
+- Agent feed for Immersive Home (preview) 
+- Custom API generation (preview) 
 
 These features are required for both feed rendering and agent‑driven integration.
 
 ### Use Custom APIs to create and update feed items
 
-Feed items are created and maintained via Dataverse Custom APIs, delivered as part of the Copilot for finance and operations solution (version 1.0.03291.1 or later).
+Feed items are created and maintained via Dataverse custom APIs, delivered as part of the Copilot for finance and operations solution (version 1.0.03291.1 or later).
 
 Supported APIs:
 
@@ -97,7 +97,7 @@ For example: ExpenseCardProvider
 **Step 2: Implement Card Provider class**
 Create an X++ class implementing the CardProvider interface, for example create a new XPP class called "ImmersiveHomeExpenseCardProvider".
 
-Card providers use the Web component library to render content. This example for a card provider renders expense related agent feed items.  
+Card providers use the Web component library to render content. This example for a card provider renders expense related Agent feed items.  
 
 ```C#
 using System.ComponentModel.Composition;
