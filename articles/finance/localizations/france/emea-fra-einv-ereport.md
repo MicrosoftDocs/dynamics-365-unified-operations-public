@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 This article helps you get started with electronic invoicing and electronic reporting for France. Set up the system to generate, submit, and receive electronic invoices in the required format in Microsoft Dynamics 365 Finance via a certified Partner Agent acting as the last mile connector.
 
-:::image type="content" source="../media/apac-sgp-einoices-flow.jpg" alt-text="Screenshot of the e-invoice flow for Singapore.":::
+:::image type="content" source="emea-fra-einoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-rporting flow for France.":::
 
 > [!NOTE]
 > This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
