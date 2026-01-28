@@ -25,6 +25,10 @@ The zero prompts are a set of prompts that, when selected, either submit automat
 > [!IMPORTANT]
 > This is a preview feature. Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2216214), and are available before an official release so customers can get early access and provide feedback.
 
+## Prerequisites
+
+To customize the zero prompt experience in the Copilot for finance and operations apps sidecar chat panel, first enable the **Enables zero prompt experience extensibility** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+
 ## Configuring the zero prompt experience
 
 To configure your custom zero prompt experience, follow these steps:
@@ -55,18 +59,18 @@ When you open the **Copilot for finance and operations apps** chat experience in
 1. Set the **Priority** value. If you have multiple topics that the zero prompt event triggers, the priority you set for the trigger node determines the order in which they execute.
 
 > [!NOTE]
-> You can create multiple topics for zero prompt experiences for the various conditions you want to support. Learn more about available application context variables in [Use application context with Copilot](./copilot-application-context.md).
+> You can create multiple topics for zero prompt experiences for the various conditions you want to support. For more information about available application context variables, see [Use application context with Copilot](./copilot-application-context.md).
 
 ### Configure the zero prompt experience adaptive card
 
-Below the trigger node, add a **Message** node with an adaptive card that contains your zero prompt experience. This adaptive card contains actions that, on `Action.Submit`, send the zero prompt for that action. Learn more about building adaptive cards in [https://adaptivecards.microsoft.com](https://adaptivecards.microsoft.com).
+Add a **Message** node under the trigger node. Use an adaptive card that contains your zero prompt experience. This adaptive card contains actions that, on `Action.Submit`, send the zero prompt for that action. For more information about building adaptive cards, see [https://adaptivecards.microsoft.com](https://adaptivecards.microsoft.com).
 
 On the adaptive card, add an object that contains an `Action.Submit` action with the following properties:
 
 | Property | Description |
 | -------- | ----------- |
 | `scenario` | Defines the action as a Zero Prompt Card. Set this property to "ZeroPromptCard." |
-| `skillType` | Defines the behavior of the zero prompt when selected. There are two options:<br> <ul> <li>`MCSMessageSkill`: this skill type takes the prompt in the `value` property and directly sends it to the Copilot Studio agent as a user message.<br><li>`PromptTextSkill`: This skill type takes the prompt in the `value` property and populates the chat input box of the chat panel with the prompt. This skill type is useful when you want more input from the user, such as specifying a record or table name.</ul> |
+| `skillType` | Defines the behavior of the zero prompt when selected. Choose from two options:<br> <ul> <li>`MCSMessageSkill`: this skill type takes the prompt in the `value` property and directly sends it to the Copilot Studio agent as a user message.<br><li>`PromptTextSkill`: This skill type takes the prompt in the `value` property and populates the chat input box of the chat panel with the prompt. This skill type is useful when you want more input from the user, such as specifying a record or table name.</ul> |
 | `value` | The text of the prompt that you submit as the zero prompt. |
 | `source` | The source for the zero prompt. Set this property to "ZeroPrompt." |
 
@@ -93,7 +97,7 @@ The following example shows the full topic code for a zero prompt experience. To
 1. On the **More** menu, select **Open code editor**.
 1. Copy the YML code from the following example, and paste it into the code editor, replacing all code previously in the code editor.
 1. Select **Close code editor** and verify you see a **Trigger** and **Message** node showing up in the topic.
-1. Provide a name for the topic, then **Save** the topic.
+1. Provide a name for the topic, and then **Save** the topic.
 1. **Publish** the agent.
 1. Open the finance and operations apps client, and open the Copilot sidecar chat experience. Select the zero prompt options and verify they work as expected.
 
