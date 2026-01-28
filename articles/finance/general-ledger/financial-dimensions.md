@@ -29,6 +29,14 @@ When creating a financial dimension, this article explains the various types of 
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. 
 
+### Financial dimension naming requirements
+
+When you create a financial dimension, the dimension name must start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. The dimension name can't use reserved system field names such as RecId. If these requirements aren't met, you'll receive an error message that states, "The financial dimension name ... contains invalid characters."
+
+**Example**
+
+Valid dimension names include Department, CostCenter, _CustomDim, and Project_1. Invalid dimension names include 123Dept (starts with a number), Cost-Center (contains a hyphen), and RecId (reserved system field name).
+
 ## Custom dimensions
 
 To create a user-defined financial dimension, in the **Use values from** field, select **Custom dimension**. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. 
