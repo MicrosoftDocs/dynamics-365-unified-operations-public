@@ -2,7 +2,7 @@
 title: Product recommendations overview
 description: Learn about product recommendations in Microsoft Dynamics 365 Commerce that let customers easily and quickly find products that they want, and also discover products that they didn't originally intend to buy.
 author: moonma
-ms.date: 01/02/2026
+ms.date: 01/28/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -18,11 +18,11 @@ ms.custom:
 
 This article explains product recommendations in Microsoft Dynamics 365 Commerce that let customers easily and quickly find products that they want, and also discover products that they didn't originally intend to buy.
 
-Dynamics 365 Commerce can be used to show product recommendations on the Commerce e-commerce website and point of sale (POS) device. Product recommendations are items that a customer might be interested in. The recommendations are based on the purchase trends of other customers in online and brick-and-mortar stores.
+You can use Dynamics 365 Commerce to show product recommendations on the Commerce e-commerce website and point of sale (POS) device. Product recommendations are items that a customer might be interested in. The recommendations are based on the purchase trends of other customers in online and brick-and-mortar stores.
 
-Product recommendations allow customers to easily and quickly find products that they want while they have an experience that serves them well. Cross-selling and upselling can even be used to assist customers find more products that they didn't originally intend to buy. When recommendations are used to enhance product discovery, they create more conversion opportunities, help increase sales revenue, and even amplify customer satisfaction and retention.
+Product recommendations allow customers to easily and quickly find products that they want while they have an experience that serves them well. By using cross-selling and upselling, you can assist customers find more products that they didn't originally intend to buy. When you use recommendations to enhance product discovery, you create more conversion opportunities, help increase sales revenue, and even amplify customer satisfaction and retention.
 
-In Commerce, product recommendations are powered by Microsoft Recommendations machine learning technologies on a large scale.
+In Commerce, Microsoft Recommendations machine learning technologies power product recommendations at scale.
 
 This service is an add-on to Dynamics 365 Commerce. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
@@ -43,7 +43,7 @@ Product recommendations are available for the following scenarios:
 - **On any store page for browsing or landing page in Commerce e-commerce:** If customers or store associates visit a store page, the recommendation engine can suggest products in the **New**, **Best Selling**, and **Trending** lists.
 - **On the Product details page:** If customers or store associates visit a **Product details** page, the recommendation engine suggests more items that are also likely to be purchased. These items appear in the **People also like** list.
 - **On the Transaction page or the checkout page:** The recommendation engine suggests items, based on the whole list of items in the basket. These items appear in the **Frequently bought together** list.
-- **Personalized recommendations:** Merchandisers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, see [Enable personalized recommendations.](personalized-recommendations.md).
+- **Personalized recommendations:** Merchandisers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, see [Enable personalized recommendations.](personalized-recommendations.md)
 
 ### Types of product recommendations
 
@@ -81,6 +81,5 @@ The following table describes various types of automated product recommendations
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
