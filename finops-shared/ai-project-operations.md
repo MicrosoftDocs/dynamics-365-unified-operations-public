@@ -7,7 +7,7 @@ ms.service: dynamics-365-cross-app
 ms.reviewer: edupont
 ---
 
-The following AI agent experiences are available in Dynamics 365 Project Operations apps.
+The following AI agent experiences are available in Dynamics 365 Project Operations.
 
 | Feature | Description | Learn more |
 |---------|-------------|----------------|
