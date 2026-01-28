@@ -27,7 +27,7 @@ Agent feed enables ERP agents to post actionable feed items through Dataverse Cu
 
 Agent feed provides a platform capability that allows agents and applications to surface contextual work items to users in Immersive Home. Agents create feed items, they get ranked using AI-assisted logic, secured using Dynamics 365 finance and operations menu items, and rendered through configurable card providers.
 
-## How to send data to the Agent feed in Immersive Home
+## How to send data to the Agent feed in Immersive Home 
 
 ### Enable Dynamics 365 finance and operations features
 
