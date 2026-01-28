@@ -6,9 +6,8 @@ ms.author: leeclontz
 ms.service: dynamics-365-cross-app
 ms.reviewer: edupont
 ---
-You can add Copilot to solutions with Dynamics 365 Project Operations apps. The finance and operations apps in Dynamics 365 share Copilot capabilities, and there are also app-specific agentive features. This section provides an overview of Copilot and AI agent capabilities in the Dynamics 365 Project Operations apps.
 
-The following Copilot experiences are available in all finance and operations apps.
+The following AI agent experiences are available in Dynamics 365 Project Operations apps.
 
 | Feature | Description | Learn more |
 |---------|-------------|----------------|
