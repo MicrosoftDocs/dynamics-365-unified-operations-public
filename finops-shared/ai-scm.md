@@ -7,7 +7,7 @@ ms.service: dynamics-365-cross-app
 ms.reviewer: edupont
 ---
 
-The following AI agent experiences are available in Dynamics 365 Supply Chain Management
+The following AI agent experience is available in Dynamics 365 Supply Chain Management
 
 | Feature | Description | Learn more |
 |---------|-------------|----------------|
