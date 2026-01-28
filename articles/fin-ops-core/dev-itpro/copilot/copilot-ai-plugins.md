@@ -67,19 +67,19 @@ Learn more about the tool architecture and execution in [Architecture of Copilot
 
 ## Define the operation in X++
 
-In X++, you must create a class that Copilot Studio calls and runs code when it invokes the tool.
+In X++, create a class that Copilot Studio calls to run code when it invokes the tool.
 
 ### AI tool
 
-You must add the `AIPluginOperationAttribute` attribute to the new class to define it as an AI operation. This attribute enables the class to be associated with the related Custom API and AI tool that you must create in Dataverse for the class.
+Add the `AIPluginOperationAttribute` attribute to the new class to define it as an AI operation. This attribute associates the class with the related Custom API and AI tool that you must create in Dataverse for the class.
 
 ### Data contract
 
-You must add the `DataContract` attribute to the method to define it as a data contract. You can then pass complex data types as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. Learn more about how to implement data contracts in X++ in [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
+Add the `DataContract` attribute to the method to define it as a data contract. You can then pass complex data types as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. For more information about how to implement data contracts in X++, see [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
 
 ### Custom API
 
-The new class creates the definition for a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). You must create this custom API in Dataverse and associate it with your class. When you invoke the tool in Copilot Studio, it calls the custom API and runs the logic in your class.
+The new class you create defines a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). You must create this custom API in Dataverse and associate it with your class. When you invoke the tool in Copilot Studio, it calls the custom API and runs the logic in your class.
 
 The new class must implement the `ICustomAPI` class, and you must decorate it with the `CustomAPIAttribute` class. These attributes indicate that the class is a Custom API that Dataverse can call.
 
@@ -137,7 +137,7 @@ To define the code that runs when the operation is invoked, use the `run` method
 
 ## Define tool security
 
-You must assign each tool operation to a security role that grants user access to perform the operation from an agent. For each class, follow these steps.
+Assign each tool operation to a security role that grants user access to perform the operation from an agent. For each class, follow these steps.
 
 1. In Visual Studio, in your development project, create an action menu item. Give it a name that's similar to the name of your class.
 1. Set the following properties for the new action menu item:
@@ -147,20 +147,20 @@ You must assign each tool operation to a security role that grants user access t
 
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
-After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, this is an indicator that it's configured correctly to be invoked by an AI tool. The grid includes every class that meets the following criteria:
+After you create and deploy the classes and security objects, verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, it's configured correctly to be invoked by an AI tool. The grid includes every class that meets the following criteria:
 
 - It implements the `ICustomApi` interface.
 - It contains the `[CustomApi]` attribute.
 - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
 
 > [!NOTE]
-> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. Flushing the cache is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. Run `SysFlushAOD` by adding the class runner to your environment URL:
+> After deploying the new classes to your environment, ensure the extension cache is flushed before the new classes can be invoked. Flushing the cache is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. Run `SysFlushAOD` by adding the class runner to your environment URL:
 >
 > `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=SysClassRunner&cls=SysFlushAOD`
 
 ## Create the AI tool
 
-After you define the operation in X++ and deploy it in your finance and operations environment, you must create the custom API in Dataverse. You can then use the Dataverse connector to add the Custom API as a tool in your agent. Create a Dataverse Custom API and add the API as an unbound action to your agent using the Dataverse connector. Create the object in your Power Apps solution that you deploy with your agent or extension.
+After you define the operation in X++ and deploy it in your finance and operations environment, create the custom API in Dataverse. You can then use the Dataverse connector to add the Custom API as a tool in your agent. Create a Dataverse Custom API and add the API as an unbound action to your agent using the Dataverse connector. Create the object in your Power Apps solution that you deploy with your agent or extension.
 
 ### Create the Dataverse custom API
 
@@ -186,7 +186,7 @@ The [Dataverse custom API](/power-apps/developer/data-platform/custom-api) is th
 
 #### Add request parameters to the API
 
-After you create the API, you must add parameters to it. To create request parameters, follow these steps for each `CustomAPIRequestParameter` property in your X++ class.
+After you create the API, add parameters to it. To create request parameters, follow these steps for each `CustomAPIRequestParameter` property in your X++ class.
 
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
 1. On **New Custom API Request Parameter**, enter the following details for the parameter:
@@ -227,7 +227,7 @@ Response properties are the outputs of the action. To create response properties
 
 ## Add the action as a tool in your agent
 
-For each operation with a Custom API, you can add the action to any agent in Copilot Studio with access to the object. For example, you can add the action to Copilot for finance and operations apps or custom agents. 
+For each operation that uses a Custom API, you can add the action to any agent in Copilot Studio that has access to the object. For example, you can add the action to Copilot for finance and operations apps or to custom agents. 
 
 To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps.
 
@@ -238,8 +238,8 @@ To add your AI operation to the in-app sidecar chat experiences in finance and o
 1. Select a **Connection**, and select **Add and configure**.
 1. In the **Details** section:
    
-   1. Provide a **Name** value that's specific to the operation. This value could be the same name as the Custom API.
-   1. Provide a **Description** that describes the operation to be performed. This description is the field the agent orchestrator uses to understand when generative orchestration needs to call the operation.
+   1. Enter a **Name** value that's specific to the operation. This value can be the same name as the Custom API.
+   1. Enter a **Description** that describes the operation to be performed. The agent orchestrator uses this description to understand when generative orchestration needs to call the operation.
    1. Select the appropriate **Authentication** option for your agent.
 
 1. In the **Inputs** section:
@@ -255,7 +255,7 @@ Learn more about how to add actions to your agent in [Add tools to custom agents
 
 ### Configure the copilot to invoke the action
 
-The agent where you add the new tool must be able to determine when it should invoke the action as part of the agent orchestration. The copilot needs a way to match a user's prompt in the chat pane or autonomous trigger to your action or sequence of actions. There are two ways to enable the copilot to include the action in the copilot orchestration:
+The agent where you add the new tool must be able to determine when it should invoke the action as part of the agent orchestration. The copilot needs a way to match a user's prompt in the chat pane or autonomous trigger to your action or sequence of actions. Two methods enable the copilot to include the action in the copilot orchestration:
 
 - If your agent uses classic orchestration, create a topic that calls the action.
 - Enable the copilot to let generative AI orchestrate copilot topics and actions.
