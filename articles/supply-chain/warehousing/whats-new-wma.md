@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 01/19/2026
+ms.date: 01/29/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,33 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.31.0
+
+Version 4.0.31.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused some apps to crash in the previous version.
+- Added options to check Wi-Fi status, export HAR files, and view logs.
+- The app now sends meaningful Wi-Fi telemetry data to Application Insights.
+- Fixed several critical crash scenarios, including a gesture-related crash on older devices.
+- Fixed an issue where the *Confirm location* placeholder wasn't visible when scanning with the device camera.
+- Fixed a visual issue where the focus indicator on work list cards was invisible in light mode.
+- Added a **Diagnostics** button to the main menu to improve accessibility.
+- Fixed an issue where losing the internet connection redirected users to the sign-in page instead of the page where the connection was lost.
+- Resolved an authentication issue that required users to sign in a second time.
+
+## Version 4.0.30.0
+
+Version 4.0.30.0 adds the following fixes and improvements:
+
+- Fixed an authentication issue on on-premises Windows installations.
+- Improved transitions when navigating between pages.
+- Fixed an issue where the work list search field wasn't cleared after refreshing the page.
+- Fixed an issue where step instructions didn't remember the *Do not show again* selection when two menu items had the same name.
+- Improved Wi-Fi diagnostics through better request handling and clearer error reporting.
+- Fixed a concurrency-related issue that could cause sign-out failures.
+- Fixed an issue on custom legacy pages where fields could appear in the wrong order or show incorrect values after edits.
+- Added a loading spinner for long-running sign-out operations.
 
 ## Version 4.0.29.0
 

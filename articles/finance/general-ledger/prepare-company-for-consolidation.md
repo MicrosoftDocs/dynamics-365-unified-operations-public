@@ -54,8 +54,8 @@ The consolidated legal entity collects the results and balances of the subsidiar
 
 The consolidated legal entity is now set up for the **Consolidate** periodic job. You can do either an import consolidation or an online consolidation.
 
-- To do an import consolidation, go to **General ledger \> Periodic \> Consolidate \> Consolidate \[Import from\]**.
-- To do an online consolidation, go to **General ledger \> Periodic \> Consolidate \> Consolidate \[Online\]**.
+- To do an import consolidation, go to **Consolidations \> Consolidate with import**.
+- To do an online consolidation, go to **Consolidations \> Consolidate online**.
 
 > [!NOTE]
 > Before you can process the consolidation, you must prepare the subsidiary legal entities for consolidation. For more information, see [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).
