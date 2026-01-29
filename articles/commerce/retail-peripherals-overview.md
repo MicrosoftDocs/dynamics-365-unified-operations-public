@@ -686,7 +686,7 @@ For information on how to configure network peripherals with Store Commerce, see
 
 ### Payment terminals and PIN pads
 
-Dynamics 365 Commerce provides a solution for integration with Adyen payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
+Dynamics 365 Commerce provides a solution for integration with Adyen payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/knowledge-hub/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
 You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. You can use any payment terminal that the payment provider supports with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that the payment provider supports, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
