@@ -164,6 +164,7 @@ If budget control is turned on for purchase orders, the budget manager can use t
 > [!NOTE]
 > **Allocation terms** aren't supported when budget control is enabled. Budget control requires understanding of all accounting distributions that affect the ledger before the document is posted. Allocations, which affect this scenario, aren't supported with budget control.
 > If the **Use sales tax taxation rules** feature is enabled for your organization and **Budget reservations for encumbrances** is selected, sales taxes between purchase order and its invoices must match to correctly perform budget checks. You should either update the sales tax group in the purchase order before creating the invoice, or use sales tax adjustment functionality to update the sales tax amount directly on the invoice.
+> **Purchase requisitions (PRs)** can be canceled within the same fiscal year even if their accounting period is closed. In this case, the system automatically moves the cancellation (finalized date) to the next open period in the same fiscal year. During year‑end close of the final fiscal period, the system validates that no open, budget‑controlled purchase requisitions remain and alerts users to cancel or move them to the next fiscal year before closing.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
