@@ -1,11 +1,10 @@
 ---
 title: Prorate header charges to matching sales lines
-description: This article describes additional capabilities for calculating and applying autocharges to Commerce channel orders by using the advanced autocharges feature.
+description: Learn about the functionality for grouping header-level autocharges and prorating them to sales lines in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 03/30/2020
+ms.date: 01/28/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 
@@ -15,26 +14,25 @@ ms.custom:
 
 # Prorate header charges to matching sales lines
 
-
 [!include [banner](includes/banner.md)]
 
-This article describes the functionality for grouping header-level autocharges and prorating them to commerce sales lines. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
+This article describes the functionality for grouping header-level autocharges and prorating them to sales lines in Microsoft Dynamics 365 Commerce. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
 
 This functionality is available only if the [advanced autocharges](/dynamics365/unified-operations/retail/omni-auto-charges) feature is turned on by using the option on the **Commerce parameters** page. Additionally, the enhanced calculation method for autocharges can be applied only to sales orders that are created through commerce channels (the POS, a call center, and the Dynamics e-Commerce platform).
 
 This new functionality gives organizations more flexibility in the way that header-level autocharges are calculated and applied to sales transactions.
 
-In versions of the app earlier than version 10.0.1, header-level autocharges that have a specific mode of delivery relation are calculated only when there's a match with the mode of delivery that is defined on the sales order header.
+In versions of the app earlier than version 10.0.1, header-level autocharges that have a specific mode of delivery relation are calculated only when there's a match with the mode of delivery that you define on the sales order header.
 
-For example, header-level autocharges are defined for mode of delivery **99** and mode of delivery **11**. A sales order is created, and mode of delivery **99** is defined on the order header. However, some of the sale lines are set up so that they're shipped by using mode of delivery **11**. In this case, only the header-level charges that are linked to mode of delivery **99** are considered and applied to the sales order.
+For example, you define header-level autocharges for mode of delivery **99** and mode of delivery **11**. You create a sales order, and you define mode of delivery **99** on the order header. However, you set up some of the sale lines so that they're shipped by using mode of delivery **11**. In this case, the system considers and applies only the header-level charges that are linked to mode of delivery **99** to the sales order.
 
 In Commerce, the header-level charges have an additional feature that lets you define a [tiered charge configuration](/dynamics365/unified-operations/retail/configure-call-center-delivery) that is based on the order value. For example, if the order value is between $50.00 and $200.00, an organization might want to charge a freight charge of $5.00. However, if the order value is between $200.01 and $500.00, the freight charge might be $4.00.
 
 Some organizations want the benefits of the tiered charge calculation that is provided with header-level charges. However, in scenarios that involve mixed modes of delivery, they also want to make sure that the charges that are calculated are based on a match with the mode of delivery that is defined on each sales line.
 
-You can now configure header-level autocharges so that all modes of delivery on the order are considered when charges are calculated. This functionality requires a more complex calculation logic to calculate the header-level charges. The logic groups together all the items that ship using the same mode of delivery, and it treats that group as the calculation group for the items when it calculates the header-level autocharges. For items that have the same mode of delivery, autocharges are calculated based on the combined sales value of the items. In this way, the appropriate auto-charge tier is determined.
+You can now configure header-level autocharges so that the system considers all modes of delivery on the order when it calculates charges. This functionality requires a more complex calculation logic to calculate the header-level charges. The logic groups together all the items that ship by using the same mode of delivery, and it treats that group as the calculation group for the items when it calculates the header-level autocharges. For items that have the same mode of delivery, the system calculates autocharges based on the combined sales value of the items. In this way, the system determines the appropriate autocharge tier.
 
-After the appropriate header-level charges are obtained for the sales lines that ship using the same mode of delivery, the calculated charges are prorated down to the sales line level. Because these charges are at the line level and not kept at the header level, a more specific link is made between the item and the charge value that calculated for it. This behavior can be useful in partial return scenarios, where an organization wants to refund only part of the charge instead of the whole charge when only some items are returned.
+After the system obtains the appropriate header-level charges for the sales lines that ship by using the same mode of delivery, it prorates the calculated charges down to the sales line level. Because these charges are at the line level and not kept at the header level, a more specific link is made between the item and the charge value that the system calculated for it. This behavior can be useful in partial return scenarios, where an organization wants to refund only part of the charge instead of the whole charge when only some items are returned.
 
 ## Scenarios
 
@@ -42,15 +40,15 @@ The following two sample scenarios outline how these charges are calculated both
 
 ### Scenario 1
 
-This scenario outlines the behavior when the **Pro-rate to matching sales lines** option is set to **No** in the auto-charge setup. (The behavior is equivalent to the behavior of header-level charges in app versions that are earlier than version 10.0.1.)
+This scenario outlines the behavior when you set the **Pro-rate to matching sales lines** option to **No** in the autocharge setup. (The behavior is equivalent to the behavior of header-level charges in app versions that are earlier than version 10.0.1.)
 
-In this scenario, the organization defined header-level charges for mode of delivery relation **99** and mode of delivery relation **11**. No autocharges are configured for mode of delivery **21**.
+In this scenario, the organization defines header-level charges for mode of delivery relation **99** and mode of delivery relation **11**. The organization doesn't configure autocharges for mode of delivery **21**.
 
-![Auto-charges for mode of delivery 99 when matching line proration is turned off.](media/99_disabled.png)
+:::image type="content" source="media/99_disabled.png" alt-text="Screenshot of autocharges for mode of delivery 99 when matching line proration is turned off.":::
 
-![Auto-charges for mode of delivery 11 when matching line proration is turned off.](media/11_disabled.png)
+:::image type="content" source="media/11_disabled.png" alt-text="Screenshot of autocharges for mode of delivery 11 when matching line proration is turned off.":::
 
-A sales order is created in the call center, and the mode of delivery is set to **99**. This order contains five items. Two order lines are configured to use mode of delivery **99**, two lines are configured to use mode of delivery **11**, and one line is configured to use mode of delivery **21**, as shown in the following table.
+A sales order is created in the call center, and the mode of delivery is set to **99**. This order contains five items. Two order lines use mode of delivery **99**, two lines use mode of delivery **11**, and one line uses mode of delivery **21**, as shown in the following table.
 
 | Item  | Line quantity | Delivery mode | Price per unit |
 |-------|---------------|---------------|----------------|
@@ -60,19 +58,19 @@ A sales order is created in the call center, and the mode of delivery is set to 
 | 81334 | 3             | 99            | $10            |
 | 81334 | 3             | 21            | $5             |
 
-In this scenario, the whole order is evaluated against the auto-charge table for mode of delivery **99**. The full total of all sales lines is used to determine a matching tier in the auto-charge configuration, and this charge is applied at the order header level. In this example, the order total is $165.00, and the $15.00 freight charge is applied to the order header. Auto-charges that are configured for mode of delivery **11** are never referenced or applied.
+In this scenario, the system evaluates the whole order against the autocharge table for mode of delivery **99**. The system uses the full total of all sales lines to determine a matching tier in the autocharge configuration, and it applies this charge at the order header level. In this example, the order total is $165.00, and the $15.00 freight charge is applied to the order header. The system never references or applies autocharges that are configured for mode of delivery **11**.
 
-In this scenario, if a customer returns some of the items on the order, and if the [charge code is configured so that it is refunded](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), the total header-level charge is systematically applied to the refund, even if only some of the items are returned.
+In this scenario, if a customer returns some of the items on the order, and if the [charge code is configured so that it's refunded](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), the total header-level charge is systematically applied to the refund, even if only some of the items are returned.
 
 ### Scenario 2
 
-In this scenario, header-level charges are defined for mode of delivery relation **99** and mode of delivery relation **11**. However, the **Pro-rate to matching sales lines** option is set to **Yes** for these auto-charge tables.
+In this scenario, you define header-level charges for mode of delivery relation **99** and mode of delivery relation **11**. However, you set the **Pro-rate to matching sales lines** option to **Yes** for these autocharge tables.
 
-![Auto-charges for mode of delivery 99 when matching line proration is turned on.](media/99_enabled.png)
+:::image type="content" source="media/99_enabled.png" alt-text="Screenshot of autocharges for mode of delivery 99 when matching line proration is turned on.":::
 
-![Auto-charges for mode of delivery 11 when matching line proration is turned on.](media/11_enabled.png)
+:::image type="content" source="media/11_enabled.png" alt-text="Screenshot of autocharges for mode of delivery 11 when matching line proration is turned on.":::
 
-This scenario uses the same sales order that contains five lines. The mode of delivery on the order header is set to **99**, but the mode of delivery for each item on the sales order is configured as shown in the following table.
+This scenario uses the same sales order that contains five lines. You set the mode of delivery on the order header to **99**, but you configure the mode of delivery for each item on the sales order as shown in the following table.
 
 | Item  | Line quantity | Delivery mode | Price per unit |
 |-------|---------------|---------------|----------------|
@@ -82,9 +80,9 @@ This scenario uses the same sales order that contains five lines. The mode of de
 | 81334 | 3             | 99            | $10            |
 | 81334 | 3             | 21            | $5             |
 
-Because the auto-charge configuration is set to prorate to matching sales lines, the system performs the following calculation steps.
+Because you set the autocharge configuration to prorate to matching sales lines, the system performs the following calculation steps.
 
-1. All items that have the same mode of delivery are grouped together, and the system calculates the total product value of the items in the group.
+1. The system groups together all items that have the same mode of delivery and calculates the total product value of the items in the group.
 
     **Delivery mode 11**
 
@@ -120,11 +118,11 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
     - Total product value = $15
     - **Charge value = $0** (No autocharges are configured for this combination of a customer and a mode of delivery.)
 
-    ![Delivery mode 11 charges fall into the highlighted tier.](media/step2mode11.png)
+    :::image type="content" source="media/step2mode11.png" alt-text="Screenshot of delivery mode 11 charges falling into the highlighted tier.":::
 
-    ![Delivery mode 99 charges fall into the highlighted tier.](media/step2mode99.png)
+    :::image type="content" source="media/step2mode99.png" alt-text="Screenshot of delivery mode 99 charges falling into the highlighted tier.":::
 
-3. The system calculates the charge value to be applied to each line, based on proration logic that considers the proportional value of the line in relation to the group's total product value.
+3. The system calculates the charge value to apply to each line, based on proration logic that considers the proportional value of the line in relation to the group's total product value.
 
     **Delivery mode 11**
 
@@ -151,17 +149,16 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
     - Line 5 value = $15 (= 100 percent of the group value)
     - **Line charge for line 5 = $0**
 
-Therefore, for this example, item 81334 is assigned a freight charge of $5.62. You can view these charges on the **Maintain charges** page for the sales line. The following illustration shows what this page looks like for item 81334.
+Therefore, in this example, item 81334 is assigned a freight charge of $5.62. You can view these charges on the **Maintain charges** page for the sales line. The following illustration shows what this page looks like for item 81334.
 
-![Prorated charges on sales line for item 81334.](media/proratedlinecharge.png)
+:::image type="content" source="media/proratedlinecharge.png" alt-text="Screenshot of prorated charges on sales line for item 81334.":::
 
-When this method of calculation is used in a partial return scenario, if the charge code is refundable, only the part of the charge that is allocated to that line is refunded when the item is returned.
+When you use this method of calculation in a partial return scenario, if the charge code is refundable, the system refunds only the part of the charge that it allocated to that line when the item is returned.
 
 ## Additional resources
 
 [Omni-channel advanced auto charges](omni-auto-charges.md)
 
 [Enable and configure auto charges by channel](auto-charges-by-channel.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
