@@ -4,7 +4,7 @@ description: The Advanced bank reconciliation feature lets you import electronic
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 01/29/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -183,6 +183,6 @@ To use this functionality, follow these steps:
 3. Select **Generate payment journal** to generate and post the payment journal.
 
 > [!NOTE]
-> When customer or vendor payment journals are generated from bank statement lines or reconciliation worksheets, the journal lines are created and posted first. If invoice is selected to be settled with the journal, settlement with open invoices is completed afterward based on the transactions that were marked in the bank reconciliation worksheet. Because a single payment journal line can be settled against multiple invoices, the Invoice field on the journal line might not show a specific invoice number (or might show an asterisk). This behavior differs from manually created customer or vendor payment journals. All settlements are correctly recorded, even though individual invoice references aren’t displayed directly on the journal line.
+> When customer or vendor payment journals are generated from bank statement lines or reconciliation worksheets, the journal lines are created and posted first. If invoice is selected to be settled with the journal, settlement with open invoices is completed afterward based on the transactions that were marked in the bank reconciliation worksheet. Because a single payment journal line can be settled against multiple invoices, the **Invoice** field on the journal line might not show a specific invoice number (or might show an asterisk). This behavior differs from manually created customer or vendor payment journals. All settlements are correctly recorded, even though individual invoice references aren’t displayed directly on the journal line.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
