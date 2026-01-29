@@ -42,11 +42,12 @@ Before implementing any customizations, you can view and manage dimension format
 Modifying the **DimensionCombinationEntity** is easier by using the **Add financial dimensions for OData** add-in in Visual Studio.
 
 1. In Microsoft Visual Studio, select **Dynamics 365 > Addins > Add financial dimensions for Odata.**
+1. After clicking **Add financial dimensions for Odata**, use the wizard to add the financial dimensions. 
 1. Enter the name of the Financial dimension in the **Dimension name** column. Use the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Select **Apply**.
 
 :::image type="content" source="media/financial-dimensions-odata.png" alt-text="Screenshot of financial dimensions for OData add-in.":::
 
-1. Compile the project, and then synchronize it with the database.
+1. To include those dimensions as columns in the Excel, synchronize your database with your Visual Studio solution.
 
 > [!NOTE]
 > You must keep the extension name "DimensionIntegration" for the project to work properly.
