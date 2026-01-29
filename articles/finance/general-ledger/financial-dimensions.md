@@ -1,10 +1,10 @@
 ---
 title: Financial dimensions
 description: Learn about the various types of financial dimensions and tags and how they're set up.
-author: aprilolson
+author: ethanrimes
 ms.author: aolson
 ms.topic: article
-ms.date: 07/28/2025
+ms.date: 01/28/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -31,11 +31,13 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 
 ### Financial dimension naming requirements
 
-When you create a financial dimension, the dimension name must start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. The dimension name can't use reserved system field names such as RecId. If these requirements aren't met, you'll receive an error message that states, "The financial dimension name ... contains invalid characters."
+When you create a financial dimension, the dimension name must start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. The dimension name can't use reserved system field names such as RecId. If these requirements aren't met, you'll receive **The financial dimension name ... contains invalid characters** error message.
 
-**Example**
-
-Valid dimension names include Department, CostCenter, _CustomDim, and Project_1. Invalid dimension names include 123Dept (starts with a number), Cost-Center (contains a hyphen), and RecId (reserved system field name).
+For example, some valid dimension names include Department, CostCenter, _CustomDim, and Project_1. 
+Invalid dimension names include:
+ - 123Dept - starts with a number
+ - Cost-Center - contains a hyphen
+ - RecId - reserved system field name
 
 ## Custom dimensions
 
