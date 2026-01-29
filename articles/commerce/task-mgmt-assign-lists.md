@@ -26,7 +26,7 @@ Before you start the process of assigning tasks, make sure that you created a ta
 
 To start the task list assignment process, follow these steps:
 
-1. In Commerce headquarters, go to **Retail and Commerce \> Task management \> Task management administration**.
+1. In Commerce headquarters, go to **Retail and Commerce > Task management > Task management administration**.
 1. Select the task list to assign.
 1. Select **Start process**.
 1. In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name (for example, **East region stores**).
@@ -47,7 +47,7 @@ Retailers sometimes have recurrent tasks, such as "Thursday closure checklist" o
 
 To assign task lists on a recurring basis, follow these steps:
 
-1. In headquarters, go to **Retail and Commerce \> Task management \> Task management administration**.
+1. In headquarters, go to **Retail and Commerce > Task management > Task management administration**.
 1. Select the task list to assign.
 1. Select **Start process**.
 1. In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name.
@@ -66,12 +66,12 @@ If you're a regional manager or store manager, you might want to track the statu
 
 To track the task list status for all tasks, follow these steps:
 
-1. In headquarters, go to **Retail and Commerce \> Task management \> Task management processes**.
+1. In headquarters, go to **Retail and Commerce > Task management > Task management processes**.
 1. Select the **All task lists** tab to view the status of all task lists that are assigned to various stores.
 
 To track the task list status for all tasks that are assigned to you, follow these steps:
 
-1. Go to **Retail and Commerce \> Task management \> Task management processes**.
+1. Go to **Retail and Commerce > Task management > Task management processes**.
 1. Select the **My tasks** or **All tasks** tab to view or update the status of tasks that are assigned to you.
 
 ## Additional resources
