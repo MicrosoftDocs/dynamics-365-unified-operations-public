@@ -4,8 +4,6 @@ description: Learn how to provision Microsoft Teams by using organizational data
 author: ritakimani
 ms.date: 01/28/2026
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: ritakimani
