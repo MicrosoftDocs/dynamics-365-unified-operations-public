@@ -116,14 +116,15 @@ Review and update the **French electronic invoice (FR)** feature configuration:
     - **Destination** – Construct the destination by appending **_EDIWIN** to the service ID number. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) you created earlier.
 
-    :::image type="content" source="apac-sgp-einv-feature-parameters.jpg" alt-text="Screenshot of the Feature parameters tab configured for the Globalization feature for Singapore.":::
-
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
+1. On the **Electronic document** tab, add records for the following tables.
+   - **Customer Invoice journal**
+   - **Project invoice**
+   - 
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
  :::image type="content" source="../belgium/emea-bel-einoices-docs.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
