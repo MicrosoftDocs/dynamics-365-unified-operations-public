@@ -76,7 +76,7 @@ Modern POS for Android is an Android-based version of the Modern POS program tha
 
 ### POS peripherals
 
-POS peripherals are devices that the POS functions explicitly support. These peripherals are typically divided into specific classes. For more information about these classes, see the "Device classes" section of this article.
+POS peripherals are devices that the POS functions explicitly support. These peripherals are typically divided into specific classes. For more information about these classes, see [Device classes](#device-classes).
 
 ### Hardware station
 
