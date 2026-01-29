@@ -1,26 +1,24 @@
 ---
-# required metadata
-
 title: Commerce pricing APIs
-description: This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
+description: Learn about various pricing APIs that the Microsoft Dynamics 365 Commerce pricing engine provides.
 author: boycez
-ms.date: 01/17/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.date: 01/28/2026
+ms.topic: overview
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: 2022-07-15
-
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce pricing APIs
 
 [!include [banner](../includes/banner.md)]
 
-This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
+This article describes various pricing APIs that the Microsoft Dynamics 365 Commerce pricing engine provides.
 
-The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that external applications can consume to support various pricing scenarios:
+The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that external applications can use to support various pricing scenarios:
 
 - **GetActivePrices** – This API gets a product's calculated price, including simple discounts.
 - **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they're bought together.
@@ -118,9 +116,9 @@ The following table shows the input parameters for the *GetActivePrices* API.
 
 ### Use PriceLookupContext
 
-The PriceLookupContext class was introduced in the Commerce version 10.0.37 release. The class contains all the lookup criteria for the GetActivePrices API, and replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. The class also has additional properties that developers can use to filter discounts during discount lookup.
+The Commerce version 10.0.37 release introduces the PriceLookupContext class. This class contains all the lookup criteria for the GetActivePrices API. It replaces the previous parameters of productIds, activeDate, customerId, and affiliationLoyaltyTiers. The class also has extra properties that developers can use to filter discounts during discount lookup.
 
-According to your organization's needs, the GetActivePrices API can either accept the previous parameters or new parameters associated with the PriceLookupContext class.
+Depending on your organization's needs, the GetActivePrices API can accept either the previous parameters or new parameters associated with the PriceLookupContext class.
 
 **Input parameters**
 
@@ -130,8 +128,8 @@ According to your organization's needs, the GetActivePrices API can either accep
 |                                         | ChannelId | long | Required | |
 |                                         | CatalogId | long | Required | |
 | priceLookupContext                      | | PriceLookupContext | Required | |
-|                                         | HeaderContext | PriceLookupHeaderContext | Required | Contains CustomerAccountNumber, AffiliationLoyaltyTierLines and SalesOrderProperties |
-|                                         | LineContexts | IEnumerable\<PriceLookupLineContext\> | Required | Contains ProductRecordId, UnitOfMeasureSymbol, InventorySiteId, InventoryLocationId, DeliveryMode, CatalogId and SalesLineProperties. |
+|                                         | HeaderContext | PriceLookupHeaderContext | Required | Contains CustomerAccountNumber, AffiliationLoyaltyTierLines, and SalesOrderProperties |
+|                                         | LineContexts | IEnumerable\<PriceLookupLineContext\> | Required | Contains ProductRecordId, UnitOfMeasureSymbol, InventorySiteId, InventoryLocationId, DeliveryMode, CatalogId, and SalesLineProperties. |
 | includeSimpleDiscountsInContextualPrice | | bool | Optional | Set this parameter to **true** to include simple discounts in the pricing calculation. The default value is **false**. |
 | includeVariantPriceRange                | | bool | Optional | Set this parameter to **true** to get the minimum and maximum prices among all variants for a master product. The default value is **false**. |
 | includeAttainablePricesAndDiscounts     | | bool | Optional | Set this parameter to **true** to get attainable prices and discounts. The default value is **false**. |
@@ -140,11 +138,11 @@ For more information, see [PriceLookupContext](#pricelookupcontext).
 
 ## CalculateSalesDocument
 
-The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they're bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multi-lines discounts.
+The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they're bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multiline discounts.
 
-The main use case for the *CalculateSalesDocument* API is the pricing calculation in scenarios where full cart context doesn't persist (such as sales quotations). Scenarios in point of sale (POS) and Commerce e-commerce can also benefit from this use case. A lower total price when cart items are calculated as a set (for example, for discrete bundles, linked or recommended products, or products that have already been added to the cart) might persuade customers to add products to the cart.
+The main use case for the *CalculateSalesDocument* API is the pricing calculation in scenarios where full cart context doesn't persist (such as sales quotations). Scenarios in point of sale (POS) and Commerce e-commerce can also benefit from this use case. A lower total price when cart items are calculated as a set (for example, for discrete bundles, linked or recommended products, or products that products that are already in the cart) might persuade customers to add products to the cart.
 
-The data model for both the request and the response of the *CalculateSalesDocument* API is **Cart**. However, in the context of this API, the data model is named **SalesDocument**. Because most of the properties are optional, and only a few of them affect the pricing calculation, only pricing-related fields are shown in the following table. We don't recommend that any other fields be involved in the API request.
+The data model for both the request and the response of the *CalculateSalesDocument* API is **Cart**. However, in the context of this API, the data model is named **SalesDocument**. Because most of the properties are optional, and only a few of them affect the pricing calculation, only pricing-related fields are shown in the following table. Don't include any other fields in the API request.
 
 The scope of the *CalculateSalesDocument* API is just the calculation of prices and discounts. Taxes and charges aren't involved.
 
@@ -221,7 +219,7 @@ The following table shows the input parameters inside the object that is named *
 
 </details>
 
-The whole cart object is returned as the response body. To check prices and discounts, you should focus on the fields in the following table.
+The whole cart object is returned as the response body. To check prices and discounts, focus on the fields in the following table.
 
 | Name           | Subname | Type | Description |
 |----------------|----------|------|--------------|
@@ -238,9 +236,9 @@ The whole cart object is returned as the response body. To check prices and disc
 
 ## GetAvailablePromotions 
 
-There are two similar *GetAvailablePromotions* APIs: 
-- **Carts/GetAvailablePromotions** accepts a list of cart line identifiers as parameter.
-- **GetAvailablePromotions** accepts a **DiscountsSearchCriteria** object as parameter.
+Two similar *GetAvailablePromotions* APIs are available: 
+- **Carts/GetAvailablePromotions** accepts a list of cart line identifiers as a parameter.
+- **GetAvailablePromotions** accepts a **DiscountsSearchCriteria** object as a parameter.
 
 ### Carts/GetAvailablePromotions
 
@@ -288,7 +286,7 @@ The following table lists the input parameters for the *Carts/GetAvailablePromot
 
 The *GetAvailablePromotions* API returns all applicable discounts for the given channel.
 
-The main use case for the *GetAvailablePromotions* API is the "All discounts" page, where retailers show all discounts for the current channel.
+The main use case for the *GetAvailablePromotions* API is the **All discounts** page, where retailers show all discounts for the current channel.
 
 The following table lists the input parameters for the *GetAvailablePromotions* API.
 
@@ -297,7 +295,7 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 | searchCriteria | | DiscountsSearchCriteria | Required | |
 | | ChannelId | long | Required | |
 | | Keyword | string | Optional | |
-| | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, all discounts are retrieved, regardless of coupon code requirements. |
+| | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, the API retrieves all discounts, regardless of coupon code requirements. |
 | | StartDate | DateTimeOffset | Required | The starting date (inclusive). |
 | | EndDate | DateTimeOffset | Required | The ending date (inclusive). |
 
@@ -562,13 +560,13 @@ The following table shows the input parameters for the *RemoveCoupons* API.
 
 ## GetProductPromotions
 
-The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts, and can also take a list of product discount IDs and pricing context as input and query the associated promotional products. The main use case for the *GetProductPromotions* API is on product listing pages, where retailers showcase products with discounts. This API supports both the property-base pricing model and the legacy pricing model.
+The *GetProductPromotions* API was introduced in the Commerce version 10.0.38 release. This API gets a list of promotional products with given product discounts. It can also take a list of product discount IDs and pricing context as input and query the associated promotional products. The main use case for the *GetProductPromotions* API is on product listing pages, where retailers showcase products with discounts. This API supports both the property-base pricing model and the legacy pricing model.
 
 The following table shows the input parameters for the *GetProductPromotions* API.
 
 | Name                                    | Subname | Type | Required/Optional | Description |
 |-----------------------------------------|----------|------|-------------------|-------------|
-| productDiscountIds                      | | IEnumerable\<string\> | Required | The list of product discount ids to look for promotional products. |
+| productDiscountIds                      | | IEnumerable\<string\> | Required | The list of product discount IDs to look for promotional products. |
 | priceLookupContext                      | | PriceLookupContext | Required | The context for pricing. |
 | activeDate                              | | DateTimeOffset | Optional | The date when promotion is considered. |
 
@@ -680,9 +678,9 @@ For more information, see [PriceLookupContext](#pricelookupcontext).
 
 ### PriceLookupContext
 
-The PriceLookupContext class is used for the property-base pricing model in the *GetProductPromotions* and *GetActivePrices* APIs.
+Use the PriceLookupContext class for the property-based pricing model in the *GetProductPromotions* and *GetActivePrices* APIs.
 
-The structure of the PriceLookupContext class is shown in the following example.
+The following example shows the structure of the PriceLookupContext class.
 
 ```
 {
@@ -743,7 +741,7 @@ The structure of the PriceLookupContext class is shown in the following example.
 </details>
 
 > [!NOTE]
-> - There isn't a customer group specified in the PriceLookupHeaderContext parameter becuase it had be inferred by the customer account number.
-> - The ChannelId can be specified in the PriceLookupHeaderContext parameter. If it isn't specified, the ChannelId from the request context (the current channel when using Store Commerce) is used.
+> - The API infers the customer group from the customer account number, so the request doesn't specify a customer group in the PriceLookupHeaderContext parameter.
+> - You can specify the ChannelId in the PriceLookupHeaderContext parameter. If you don't specify it, the API uses the ChannelId from the request context (the current channel when using Store Commerce).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
