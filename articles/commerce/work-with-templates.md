@@ -148,5 +148,4 @@ To rename an existing template in site builder, follow these steps:
 
 [Work with preset layouts](work-with-layouts.md)
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

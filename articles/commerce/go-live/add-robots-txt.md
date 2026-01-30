@@ -73,3 +73,5 @@ Use the following method to validate that the file is added:
 [Manage robots.txt files](../manage-robots-txt-files.md)
 
 [System Administrator role](../manage-ecommerce-users-roles.md#system-administrator-role)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
