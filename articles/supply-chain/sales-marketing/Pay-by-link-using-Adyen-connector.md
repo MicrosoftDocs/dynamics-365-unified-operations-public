@@ -24,10 +24,10 @@ This article explains how to set up and enable the pay by link payment method to
 The payment notification service uses Dataverse. Therefore, to receive payment notifications, you must link your SCM environment to a corresponding Dataverse environment. Learn more in [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv).
 
 ### Minimum required versions
-SCM version 10.0.46
+SCM version 10.0.47
 
 > [!NOTE]
-> Pay by link functionality is in private preview. Contact Microsoft support for enabling the capability in your environment.
+> Pay by link functionality is in Public preview. 
 
 ### License requirements
 To **setup** Pay by link using Adyen connector, Dynamics 365 Commerce license is required.
