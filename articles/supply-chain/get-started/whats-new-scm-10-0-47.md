@@ -99,13 +99,13 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.47 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.47, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1093817).
 
-### Updates for the Warehouse Management mobile app
+### What's new or changed in the Warehouse Management mobile app
 
-The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md)
+The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md).
 
-### Updates for Demand planning in Dynamics 365 Supply Chain Management
+### What's new or changed in Demand planning
 
-Demand planning is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in Demand planning](../demand-planning/whats-new-demand-planning.md).
+Demand planning in Dynamics 365 Supply Chain Management is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in Demand planning](../demand-planning/whats-new-demand-planning.md).
 
 ### Dynamics 365: 2025 release wave 2 plan
 
