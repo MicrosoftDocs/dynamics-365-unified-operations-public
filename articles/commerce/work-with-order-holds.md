@@ -2,7 +2,7 @@
 title: Configure and work with call center order holds
 description: Learn about call center order hold features in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/14/2018
+ms.date: 01/30/2026
 ms.topic: how-to
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable 
 ms.reviewer: v-griffinc
@@ -22,11 +22,11 @@ This article describes call center order hold features in Microsoft Dynamics 365
 
 ## Configuring call center order holds
 
-To use the call center order hold features, first define hold codes. To create a set of user-defined hold codes based on your business requirements, go to **Sales and marketing** > **Setup** > **Sales orders** > **Order hold codes**. You can optionally flag one of the hold codes as the default hold code by setting the **Default for sales order** option to **Yes** for it. This hold code is used whenever a sales order is on hold. If a sales order has reserved inventory, and the reservations must be automatically removed if the order is on hold for a particular reason, set the **Remove inventory reservations** option to **Yes** for the reason codes.
+To use the call center order hold features, first define hold codes. To create a set of user-defined hold codes based on your business requirements, go to **Sales and marketing > Setup > Sales orders > Order hold codes**. You can optionally flag one of the hold codes as the default hold code by setting the **Default for sales order** option to **Yes** for it. Use this hold code whenever a sales order is on hold. If a sales order has reserved inventory, and you want to automatically remove the reservations if the order is on hold for a particular reason, set the **Remove inventory reservations** option to **Yes** for the reason codes.
 
-To specify the type of note that the system captures when users who put a sales order on hold enter optional notes, go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**. On the **Sales setup** FastTab, on the **General** tab, set the **Note type** field. Use the **On Hold sales order status** field to define the color that highlights sales orders that are on hold when users view them on the **Customer service** page.
+To specify the type of note that the system captures when users who put a sales order on hold enter optional notes, go to **Accounts receivable > Setup > Accounts receivable parameters**. On the **Sales setup** FastTab, on the **General** tab, set the **Note type** field. Use the **On Hold sales order status** field to define the color that highlights sales orders that are on hold when users view them on the **Customer service** page.
 
-To create an optional set of hold reason codes, go to **Retail and Commerce** > **Channel setup** > **Info codes**. Use these info codes as a secondary reason code to further define the main hold code. Select **New** to create a reason code set, and then select **Subcodes** to define the list of other reasons. To link any info codes that you define to the call center channel, go to **Retail and Commerce** > **Channels** > **Call centers** > **All call centers**. On the **General** FastTab, set the **Hold code** field.
+To create an optional set of hold reason codes, go to **Retail and Commerce > Channel setup > Info codes**. Use these info codes as a secondary reason code to further define the main hold code. Select **New** to create a reason code set, and then select **Subcodes** to define the list of other reasons. To link any info codes that you define to the call center channel, go to **Retail and Commerce > Channels > Call centers > All call centers**. On the **General** FastTab, set the **Hold code** field.
 
 ## Putting orders on hold
 
@@ -44,7 +44,7 @@ After the user enters and saves the hold information, they can close the **Order
 
 If the **Enable order completion** flag is turned on in the call center channel, payment doesn't have to be applied to an order that's on hold. By contrast, for a sales order that isn't on hold, users can't leave the sales order entry page until payment is applied. Payment is required before the order hold is released.
 
-Additionally, call center users can put a manual fraud hold on orders that are suspicious for some reason. Orders can also be put on hold automatically when they match active fraud criteria and rules. For more information on this type of order hold, see [Set up fraud alerts](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Additionally, call center users can put a manual fraud hold on orders that are suspicious for some reason. Users can also put orders on hold automatically when they match active fraud criteria and rules. For more information on this type of order hold, see [Set up fraud alerts](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## Viewing and managing orders that are on hold
 
@@ -61,9 +61,9 @@ To view the details of an individual order hold, users can open a detailed view 
 
 ### Viewing all orders that are on hold
 
-To view all orders that are on manual or automatic hold, go to **Retail and Commerce** \> **Customers** \> **Order holds**.
+To view all orders that are on manual or automatic hold, go to **Retail and Commerce > Customers > Order holds**.
 
-The **Order holds** workbench provides a list view of all orders that are on hold because of manual or fraud-related hold actions. By taking advantage of the standard filtering and sorting options on the page, users can create views that let them work with or manage specific hold codes that they're responsible for reviewing. The **Order holds** workbench also indicates the number of days that an order Is been on hold. This information can help users prioritize the queue.
+The **Order holds** workbench provides a list view of all orders that are on hold because of manual or fraud-related hold actions. By taking advantage of the standard filtering and sorting options on the page, users can create views that let them work with or manage specific hold codes that they're responsible for reviewing. The **Order holds** workbench also indicates the number of days that an order is on hold. This information can help users prioritize the queue.
 
 To get a more detailed view of the orders that are on hold, users can select the **Order hold** option on the menu. This view provides information about the customer, any notes that users apply to the order, customer, or hold action. The view also provides details about the reason for an automatic hold if the order was put on hold because it matched a fraud rule.
 
@@ -90,7 +90,6 @@ If users want to clear a hold but make more changes to the order before it's rel
 
 ## Reporting options
 
-Go to **Retail and Commerce** \> **Inquiries and reports** \> **Call center reports** \> **Order holds report** to run a report about order holds by date range, hold code, or other related criteria.
-
+Go to **Retail and Commerce > Inquiries and reports > Call center reports > Order holds report** to run a report about order holds by date range, hold code, or other related criteria.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
