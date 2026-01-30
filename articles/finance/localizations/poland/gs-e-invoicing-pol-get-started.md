@@ -2,7 +2,7 @@
 title: Electronic invoicing for Poland
 description: Learn how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 01/08/2026
+ms.date: 01/30/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection:
@@ -136,6 +136,8 @@ To import the electronic invoicing feature, follow these steps:
 
     - **Vendor invoice import (PL)**
     - **Vendor invoice Mapping to destination (PL)**
+    - **KSeF number message import (PL)**
+    - **KSeF number model mapping to destination (PL)**
 
 ## Configure the import channel
 
@@ -171,6 +173,7 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 
 1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
 1. On the **Import channel** tab, in the **Parameters** section, in the **Value** field for the **Start Date** parameter, enter the date starting from which the import is to be performed.
+1. On the **Applicability rules** tab, in the **Set up applicability rule** section, for the line witih the **Channel** field, make sure that the previously defined [import channel name](#ImpChn) is defined in the **Value** field.
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you use it in later configuration steps.
 1. Select **Save**, and close the page.
 1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
@@ -211,6 +214,8 @@ To configure electronic document parameters, follow these steps:
 1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
 1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+1. Add the **second** import source line, in the **Name** field, enter the **ReferenceNumber** value.
+1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **KSeF number message import (PL)** configuration. 
 
     :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
 
@@ -268,6 +273,9 @@ To enter a customer's tax registration number, follow these steps:
 ### Configure extra data
 
 You can add extra data to invoices. This data goes in a special section of electronic invoices named *DodatkowyOpis*.
+
+> [!NOTE]
+> In the current implementation, the extra data usage is disabled. 
 
 #### Configure electronic document properties
 
