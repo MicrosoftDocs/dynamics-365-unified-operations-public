@@ -93,7 +93,7 @@ Two types of teaching are available:
 Agent teaching applies when any of the following situations occur:
 
 - The incoming email from the vendor contains a term or acronym that the agent can't interpret.
-- The email contains multiple possible matches for a single field in Supply Chain Management. For example, various vendors might use many different names to refer to the field named **Confirmed delivery date** in Supply Chain Management. Examples include:
+- The email contains multiple possible matches for a single field in Supply Chain Management. For example, various vendors might use many different names to refer to the field named **Confirmed receipt date** in Supply Chain Management. Examples include:
     - **Estimated delivery date**
     - **Confirmed delivery date**
     - **Transportation load date**
