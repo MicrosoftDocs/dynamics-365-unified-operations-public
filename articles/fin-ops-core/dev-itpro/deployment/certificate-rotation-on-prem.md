@@ -354,7 +354,11 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 2. Check to be sure that the Active Directory Federation Service (ADFS) certificate hasn't expired.
 
-## <a name="cleanupoldsfcerts"></a>Clean up old Service Fabric certificates
+## <a name="cleanupoldsfcerts"></a>Clean up old Service Fabric certificates humbprints
+
+> [!NOTE]
+>
+> The following steps only need to be run if you are using a Service Fabric cluster defined with certificate thumbprints. If you are using common names, you can skip this. 
 
 This procedure should be completed after a successful certificate rotation or before the next certificate rotation.
 
