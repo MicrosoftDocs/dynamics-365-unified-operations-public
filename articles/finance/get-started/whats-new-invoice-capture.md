@@ -34,6 +34,27 @@ Licensed customers must stay current with updates to the Invoice Capture online 
 
 
 
+## January 2026
+The November release of the Invoice capture solution version 2.1.x contains the following feature enhancements and bug fixes.
+Our next scheduled release is in March 2026.
+
+| Feature  | Description |
+| --- |--- |
+|OCR Async (Preview) | Preview feature to prevent large document processing through asynchronous OCR calls.  Previously large documents would time out within 2 minutes. The timeout window is extended to 1 hour for large documents. | 
+|Bug fix – Known Issue: 6041312
+Support V2 derivation process with improved performance as default.
+ |
+|Bug fix – Known issue:  6041308  
+Improvements to PO link form performance in side by side viewer.  
+   |
+|Bug Fix – Known issue: 6041312
+Support to reprocess invoice derivation failures through captured invoices list page, includes automated reprocessing of failed invoices using power automate flow.
+|
+
+
+If you're interested in participating in the private preview of the charges enhancements, reach out to shielas@microsoft.com and achansoriya@microsoft.com with your Org ID.
+
+
 ## November 2025 
 The November release of the Invoice capture solution version 1.9.11.x contains the following feature enhancements and bug fixes.
 Our next scheduled release is in January 2026.  
