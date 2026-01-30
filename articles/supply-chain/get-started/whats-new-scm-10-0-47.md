@@ -93,11 +93,19 @@ The following table lists the features that became mandatory in version 10.0.47.
 
 ## Related information
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.47 includes platform updates. Learn more in [Platform updates for version 10.0.47 of Finance and Operations apps (September  2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-47.md). <!-- KFM: Check this link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.47 includes platform updates. Learn more in [Platform updates for version 10.0.47 of Finance and Operations apps (March 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-47.md).
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.47, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1093817).
+
+### Updates for the Warehouse Management mobile app
+
+The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md)
+
+### Updates for Demand planning in Dynamics 365 Supply Chain Management
+
+Demand planning is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in Demand planning](../demand-planning/whats-new-demand-planning.md).
 
 ### Dynamics 365: 2025 release wave 2 plan
 
