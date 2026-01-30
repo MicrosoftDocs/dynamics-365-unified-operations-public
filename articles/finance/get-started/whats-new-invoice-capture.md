@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 11/20/2025
+ms.date: 01/30/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -40,7 +40,7 @@ Our next scheduled release is in March 2026.
 
 | Feature  | Description |
 | --- |--- |
-|OCR Async (Preview) | Preview feature to prevent large document processing through asynchronous OCR calls.  Previously large documents timed out within 2 minutes. The timeout window is extended to 1 hour for large documents. |
+|OCR Async (Preview) | Preview feature to prevent large document processing through asynchronous OCR calls. Previously large documents timed out within 2 minutes. The timeout window is extended to 1 hour for large documents. |
 |Charges (Private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This feature doesn't apply to custom models. |
 |Bug fix | Support V2 derivation process with improved performance as default. (Known Issue: 6041312) |
 |Bug fix | Improvements to PO link form performance in side by side viewer. (Known Issue: 6041308)|
