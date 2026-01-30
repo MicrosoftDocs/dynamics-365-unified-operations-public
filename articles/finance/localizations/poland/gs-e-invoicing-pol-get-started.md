@@ -136,6 +136,8 @@ To import the electronic invoicing feature, follow these steps:
 
     - **Vendor invoice import (PL)**
     - **Vendor invoice Mapping to destination (PL)**
+    - **KSeF number message import (PL)**
+    - **KSeF number model mapping to destination (PL)**
 
 ## Configure the import channel
 
@@ -211,6 +213,8 @@ To configure electronic document parameters, follow these steps:
 1. In the **Company** field, select a required legal entity. In the **Document context** field, select the [context configuration](#Context) that you previously created.
 1. In the **Import sources** section, in the **Name** field, enter the **OutputFile** name that is [actually used](#OutputFile).
 1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+1. Add the **second** import source line, in the **Name** field, enter the **ReferenceNumber** value.
+1. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **KSeF number message import (PL)** configuration. 
 
     :::image type="content" source="e-inv-pol-import-output.jpg" alt-text="Screenshot of the import channel configuration in Electronic document parameters.":::
 
@@ -268,6 +272,9 @@ To enter a customer's tax registration number, follow these steps:
 ### Configure extra data
 
 You can add extra data to invoices. This data goes in a special section of electronic invoices named *DodatkowyOpis*.
+
+> [!NOTE]
+> In the current implementation, the extra data usage is disabled. 
 
 #### Configure electronic document properties
 
