@@ -1,19 +1,17 @@
 ---
-# required metadata
-
 title: Welcome to Dynamics 365 Commerce
 description: This article provides an overview of Microsoft Dynamics 365 Commerce.
 author: josaw
 ms.date: 01/30/2026
 ms.topic: overview 
 ms.reviewer: v-griffinc
-ms.custom: ["260624"]
 ms.collection: get-started
 ms.search.region: global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.custom:
   - bap-template
+  - ["260624"]
 ---
 
 # Welcome to Dynamics 365 Commerce
