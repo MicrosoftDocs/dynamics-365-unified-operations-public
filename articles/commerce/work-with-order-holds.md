@@ -2,33 +2,25 @@
 # required metadata
 
 title: Configure and work with call center order holds
-description: This article describes how to work with holds on orders by using Dynamics 365 Commerce.
+description: Learn about call center order hold features in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/14/2018
-ms.topic: article
-# optional metadata
-
-ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.topic: how-to
+ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable 
+ms.reviewer: v-griffinc
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure and work with call center order holds
 
 [!include [banner](includes/banner.md)]
 
-This article describes the order hold features that Dynamics 365 Commerce has for call center orders.
+This article describes call center order hold features in Microsoft Dynamics 365 Commerce.
 
 ## Configuring call center order holds
 
