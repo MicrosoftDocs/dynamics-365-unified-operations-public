@@ -38,7 +38,7 @@ This article shows how to modify DimensionCombinationEntity to enable the dimens
 Before implementing any customizations, you can view and manage dimension formats on the **Financial dimension configuration for integrating applications** page. 
 To view dimension formats, go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimension configuration for integrating applications**.
 
-:::image type="content" source="media/financial-dimensions-integration.png" alt-text="Screenshot of financial dimensions integration.":::
+:::image type="content" source="media/financial-dimension-integration.png" alt-text="Screenshot of financial dimensions integration.":::
 
 
 ## Add dimensions to Dynamics 365 Finance
