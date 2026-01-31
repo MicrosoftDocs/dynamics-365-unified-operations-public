@@ -270,6 +270,19 @@ To enter a customer's tax registration number, follow these steps:
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number is the buyer's tax identification number (NIP).
 
+### Configure sales taxes
+
+Configure the following sales tax codes related data that affect the system behaviour in the event of non-taxable, zero-rated or exempted operations:
+
+1. Tax \> Indirect taxes \> Sales tax \> Sales tax codes \> Report setup \> **Country/region type**.
+1. Tax \> Indirect taxes \> Sales tax \> Sales tax groups \> Setup \> **Exempt**.
+1. Tax \> Indirect taxes \> Sales tax \> Sales tax groups \> Setup \> **Exempt code**.
+1. Tax \> Indirect taxes \> Sales tax \> Sales tax groups \> Setup \> **Reverse charge**. 
+1. Tax \> Setup \> Sales tax \> **Sales tax exempt codes**.
+
+> [!NOTE]
+> Different combinations of the above parameters will result in dynamic enabling and disabling of the related XML elements in the output files of electronic invoices.  
+
 ### Configure extra data
 
 You can add extra data to invoices. This data goes in a special section of electronic invoices named *DodatkowyOpis*.
