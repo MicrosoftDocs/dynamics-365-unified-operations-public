@@ -61,4 +61,4 @@ Use the following method to validate that image use is optimized.
 
 [Best practices for Dynamics 365 Commerce development](../e-commerce-extensibility/best-practices-dev.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
