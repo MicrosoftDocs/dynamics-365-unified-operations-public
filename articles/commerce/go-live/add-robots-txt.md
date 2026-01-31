@@ -74,4 +74,4 @@ Use the following method to validate that the file is added:
 
 [System Administrator role](../manage-ecommerce-users-roles.md#system-administrator-role)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
