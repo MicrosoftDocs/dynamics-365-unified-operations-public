@@ -73,4 +73,4 @@ Use one or both of the following methods to validate that a module was successfu
 
 [Set up a development environment](../e-commerce-extensibility/setup-dev-environment.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
