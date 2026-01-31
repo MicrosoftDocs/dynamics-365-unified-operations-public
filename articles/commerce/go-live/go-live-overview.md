@@ -37,4 +37,4 @@ You can help improve website performance by excluding unused JavaScript modules 
 
 Unexpected or undirected crawling of your site by search engines can result in a high volume of "404 Page Not Found" errors. These errors can lead to performance problems when the site responds to the many requests for pages that don't exist. To help fix this problem, always upload a valid robots.txt file to guide conforming crawlers to only look for relevant pages on your site. For more information, see [Add or update a robots.txt file](add-robots-txt.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
