@@ -190,7 +190,7 @@ To generate an electronic packing slip XML file, follow these steps.
 If ER destinations are configured, the XML will automatically be delivered to the defined destination.  
 If no destination is configured, the XML output will be stored in the **Electronic reporting jobs** page.
 
-   ![Generate e-packing slip.](../media/emea-turkiye-generate-epacking-slip.png)
+   ![Generate e-packing slip.](../media/emea-turkiye-generate-packing-slip.png)
 
 ## View electronic packing slips
 
@@ -205,7 +205,7 @@ To view these e-packing slip files, follow these steps.
 1. Select a job, and then select **Show files**.
 1. Select **Open** to download the file that contains the electronic packing slip.
 
-   ![View e-packing slip.](../media/emea-turkiye-view-epacking-slip.png)
+   ![View e-packing slip.](../media/emea-turkiye-view-packing-slip.png)
 
 If generation of the electronic packing slip fails because of errors, to view more details about the error message select **Show log** \> **Message details**.
 
