@@ -89,19 +89,17 @@ To configure the mappings, follow these steps:
    This value is used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
    > [!NOTE]
-   > The configured unit mapping determines the `unitCode` value that appears in the `<cbc:InvoicedQuantity>` element of the generated UBL-TR e-invoice XML.  
+   > The configured unit mapping determines the `unitCode` value that appears in the `<cbc:DeliveredQuantity>` element of the generated UBL-TR e-packing slip XML.  
    > For example:
    >
    > ```xml
-   > <cbc:InvoicedQuantity unitCode="C62">1.00</cbc:InvoicedQuantity>
+   > <cbc:DeliveredQuantity unitCode="C62">1.00</cbc:DeliveredQuantity>
    > ```
    >
    > In this example, the internal unit **EA** (each) defined in Finance is mapped to the international unit code **C62**, which is then written into the XML as the `unitCode` attribute.
    
    > [!TIP]
-   > If no specific units of measure are defined, the default unit **EA** (each) is used in the UBL-TR e-invoice XML.
-
- :::image type="content" source="../media/emea-turkiye-unit-code-mapping.png" alt-text="Screenshot of the unit code mapping configuration page that shows internal unit codes mapped to UN/ECE unit codes.":::
+   > If no specific units of measure are defined, the default unit **EA** (each) is used in the UBL-TR e-packing slip XML.
 
    ![Units of measure configuration.](../media/emea-turkiye-unit-code-mapping.png)
 
@@ -183,15 +181,16 @@ To generate an electronic packing slip XML file, follow these steps.
 
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. Select a sales order that has a posted packing slip.
-3. On the Action Pane, select **Packing slip**.
-4. Select **Send** > **Original**.
+3. Select **Pick and pack** Tab.
+4. On the Action Pane, select **Packing slip journal**.
+5. Select a packing slip journal.
+6. Select **Preview/Print**.
+7. Select **Original preview**.
 
 If ER destinations are configured, the XML will automatically be delivered to the defined destination.  
 If no destination is configured, the XML output will be stored in the **Electronic reporting jobs** page.
 
-
-
-
+   ![Generate e-packing slip.](../media/emea-turkiye-generate-epacking-slip.png)
 
 ## View electronic packing slips
 
@@ -206,13 +205,17 @@ To view these e-packing slip files, follow these steps.
 1. Select a job, and then select **Show files**.
 1. Select **Open** to download the file that contains the electronic packing slip.
 
+   ![View e-packing slip.](../media/emea-turkiye-view-epacking-slip.png)
+
 If generation of the electronic packing slip fails because of errors, to view more details about the error message select **Show log** \> **Message details**.
+
+   ![Message details.](../media/emea-turkiye-message-details.png)
 
 ## Send electronic packing slips to ER destinations
 
-You can set up ER destinations for electronic packing slip formats. In this case, output XML files that contain electronic packing slips are automatically sent to the defined destinations immediately after the invoices are posted.
+You can set up ER destinations for electronic packing slip formats. In this case, output XML files that contain electronic packing slips are automatically sent to the defined destinations immediately after the packing slips are posted.
 
-When you post the invoices, you must turn on the **Print invoice** parameter.
+When you post the packing slips, you must turn on the **Print packing slip** parameter.
 
 Learn more about ER destinations in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
