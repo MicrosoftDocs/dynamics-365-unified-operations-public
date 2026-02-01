@@ -174,7 +174,6 @@ When you post a fixed asset journal for revaluation, you can review the results 
 
    - Verify that the **Revaluation – Acquisition** has been updated.
    - Check that the **Revaluation – Depreciation** has been adjusted.
-   - Confirm that the **Revaluation – Depreciation past** reflects the new balance.
 
 ### Review in Fixed asset transactions
 
