@@ -4,7 +4,7 @@ description: Learn how to configure and export customer electronic packing slips
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 01/19/2026
+ms.date: 02/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2026-01-19
