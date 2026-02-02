@@ -100,6 +100,9 @@ The supported host names values are available to be associated as a domain when 
 
 When working with sites in site builder, if you have two sites set up with two different domains, you can append the `?domain=` attribute to your working URL to access the published site content in a browser.
 
+> [!NOTE]
+> The `?domain=` query parameter is also required when testing robots.txt files from internal Commerce-generated domains. For more information, see [How robots.txt works with different domain types](../manage-robots-txt-files.md#how-robotstxt-works-with-different-domain-types).
+
 For example, environment "xyz" is provisioned, and two sites are created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`. Each site was set up using a blank path. These two sites could then be accessed in a web browser as follows using the `?domain=` attribute:
 - `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
 - `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`

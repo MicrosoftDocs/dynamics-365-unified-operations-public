@@ -36,6 +36,9 @@ When a site is in production, make sure that all site pages are correctly tagged
 
 To optimize search engine indexing, the rendering framework uses both information from the SEO properties that you configure in Dynamics 365 Commerce and module-specific information. For a site in production, make sure that the robots.txt file allows for indexing of your whole site, and that it contains links to your published site map document. Turn on the site map generation functionality at **Site Settings \> Site maps enabled**.
 
+> [!NOTE]
+> Internal Commerce-generated domains (`.dynamics365commerce.ms`) return a deny-all robots.txt response to prevent test environments from being indexed. Your uploaded robots.txt file is only served on custom production domains. For more information, see [How robots.txt works with different domain types](manage-robots-txt-files.md#how-robotstxt-works-with-different-domain-types).
+
 ### Page SEO settings for internal preview, limited audiences, and all audiences
 
 Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in visual page builder, authors can prepare their page content without worrying that the information becomes visible to site visitors. If a page must be published, but its exposure must be limited, add the **noindex** meta tag, so that search engines don't index it. When the page is ready for all audiences, add all the basic SEO metadata to maximize the efficiency of search engine indexing. Also, remove the **nolimit** meta tag.
