@@ -154,7 +154,7 @@ processDatalakeFolderDeletion = (shouldReset) => {
 
                     await triggerCleanupWorkflow();
                     return Promise.resolve({
-                        message: "'Business performance analytics uninstall datalake cleanup' execution failed. Retrying. Contact support for repeated failures.",
+                        message: "'Business performance analytics uninstall data lake cleanup' execution failed. Retrying. Contact support for repeated failures.",
                         errorCode: "DATA_LAKE_CLEANUP_RETRY"
                     });
 

@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 01/19/2026
+ms.date: 01/29/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,20 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.31.0
+
+Version 4.0.31.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused some apps to crash in the previous version.
+- Added options to check Wi-Fi status, export HAR files, and view logs.
+- The app now sends meaningful Wi-Fi telemetry data to Application Insights.
+- Fixed several critical crash scenarios, including a gesture-related crash on older devices.
+- Fixed an issue where the *Confirm location* placeholder wasn't visible when scanning with the device camera.
+- Fixed a visual issue where the focus indicator on work list cards was invisible in light mode.
+- Added a **Diagnostics** button to the main menu to improve accessibility.
+- Fixed an issue where losing the internet connection redirected users to the sign-in page instead of the page where the connection was lost.
+- Resolved an authentication issue that required users to sign in a second time.
 
 ## Version 4.0.30.0
 
