@@ -117,8 +117,8 @@ To help maintain referential integrity of the data, financial dimensions can rar
 
 - Has the financial dimension been used on any posted or unposted transactions, or in any type of dimension value combination?
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
-- Is the financial dimension part of a  financial dimension integration format?
-- Has the financial dimension been set up as a  dimension?
+- Is the financial dimension part of a default financial dimension integration format?
+- Has the financial dimension been set up as a default dimension?
 - Has the financial dimension been unselected from the Financial Reporting setup? 
 
 If any of the criteria are met, you can't delete the financial dimension.
