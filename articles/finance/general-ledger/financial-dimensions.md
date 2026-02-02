@@ -33,7 +33,7 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 
 When you create a financial dimension, the dimension name must start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. The dimension name can't use reserved system field names such as RecId. If these requirements aren't met, you'll receive **The financial dimension name ... contains invalid characters** error message.
 
-For example, some valid dimension names include Department, CostCenter, _CustomDim, and Project_1. 
+For example, some valid dimension names include Department, CostCenter, _CustomDim, and Project_1.  
 Invalid dimension names include:
  - 123Dept - starts with a number
  - Cost-Center - contains a hyphen
