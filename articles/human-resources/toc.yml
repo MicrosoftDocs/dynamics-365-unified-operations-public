@@ -1203,8 +1203,6 @@ items:
       href: hr-recruit-bulk-resume-faq.md
     - name: Employee self service workspace summary
       href: ess-workspace-summary.md
-    - name: Human Resources recruiting with bulk resume upload FAQ
-      href: hr-recruit-bulk-resume-faq.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
