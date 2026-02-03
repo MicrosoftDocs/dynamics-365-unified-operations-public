@@ -46,7 +46,7 @@ Our next scheduled release is in March 2026.
 |Bug fix | Improvements to PO link form performance in side by side viewer. (Known Issue: 6041308)|
 |Bug Fix | Support to reprocess invoice derivation failures through captured invoices list page, includes automated reprocessing of failed invoices using power automate flow. (Known issue: 6041312) |
 
-If you're interested in participating in the private preview of the charges enhancements, contact <shielas@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
+If you're interested in participating in the private preview of the charges enhancements, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
 
 ## November 2025
 
