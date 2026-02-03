@@ -2,7 +2,7 @@
 title: Manage robots.txt files
 description: Learn how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/23/2026
+ms.date: 02/03/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -31,11 +31,11 @@ For more information about the robots.txt file, visit [The Web Robots Pages](htt
 
 ## How robots.txt works with different domain types
 
-Robots.txt behavior differs depending on which type of domain is used to access your Commerce site.
+Robots.txt behavior differs according to which type of domain is used to access your Commerce site.
 
 ### Custom production domains
 
-When you upload a robots.txt file for a custom domain (such as `www.fabrikam.com`), that file is served when search engines or users access `/robots.txt` on your production site. This allows search engines to index your site according to your configured rules.
+When you upload a robots.txt file for a custom domain such as `www.fabrikam.com`, that file is served when search engines or users access `/robots.txt` on your production site. This allows search engines to index your site according to your configured rules.
 
 ### Internal Commerce-generated domains
 
@@ -49,7 +49,7 @@ For example, if your internal domain is `https://<e-commerce-tenant-name>.dynami
 
 `https://<e-commerce-tenant-name>.dynamics365commerce.ms/robots.txt?domain=<your-custom-domain>`
 
-This allows you to verify the robots.txt configuration for any of your supported host names before going live with your production domain. For more information about Commerce-generated URLs, see [Commerce-generated URLs](dev-itpro/domains-commerce.md#commerce-generated-urls). For more information about configuring custom domains, see [Configure your domain name](configure-your-domain-name.md).
+This allows you to verify the robots.txt configuration for any of your supported host names before you go live with your production domain. For more information about Commerce-generated URLs, see [Commerce-generated URLs](dev-itpro/domains-commerce.md#commerce-generated-urls). For more information about configuring custom domains, see [Configure your domain name](configure-your-domain-name.md).
 
 ## Upload a robots.txt file
 
