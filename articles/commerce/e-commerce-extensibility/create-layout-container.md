@@ -1,24 +1,22 @@
 ---
 title: Create a layout container module
-description: This article describes how to create, test, and preview a layout container module.
+description: Learn how to create, test, and preview a layout container module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 12/08/2023
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Create a layout container module
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create, test, and preview a layout container module.
+This article describes how to create, test, and preview a layout container module in Microsoft Dynamics 365 Commerce.
 
 The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command that you can use to create a new layout container module. To create the module, first run the command with the new module name, and then change the **$type** value in the new module's definition file to **containerModule**.
 
@@ -30,7 +28,7 @@ The following example shows how to create a container module that is named **cam
 yarn msdyn365 add-module campaign-container
 ```
 
-After the command finishes running, open the new module's definition file, campaignContainer.definition.json, and change the **$type** value to **containerModule**.
+After the command finishes running, open the new module's definition file, `campaignContainer.definition.json`, and change the **$type** value to **containerModule**.
 
 The following example shows the addition of a **slots** section that contains two slots for this container. Notice that each slot lets you define **allowedTypes** to limit the types of modules that are allowed inside that slot. You can also specify the maximum and minimum number of modules that can be inserted into the slot.
 
@@ -63,7 +61,7 @@ The following example shows the addition of a **slots** section that contains tw
 }
 ```
 
-The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container. This example uses a single React/View file, and that the campaignContainer.tsx can be deleted.
+The following example shows the module's React view file, `campaignContainer.view.tsx`, which uses the slots for the container. This example uses a single React/View file, and shows that the `campaignContainer.tsx` can be deleted.
 
 ```typescript
 import * as React from 'react';
@@ -88,7 +86,7 @@ export default CampaignContainerView;
 
 To test a container module in a local development environment, you must use a [page mock](test-page-mock.md).
 
-The following example shows a sample page mock, campaign-containerMock.json, that you can use for testing. The file is saved in the \\src\\pageMocks directory.
+The following example shows a sample page mock, `campaign-containerMock.json`, that you can use for testing. The file is saved in the `\src\pageMocks` directory.
 
 ```json
 {
@@ -193,7 +191,7 @@ To preview the page in a local web browser, follow these steps:
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-2. In a web browser, open the following URL to view the module: `https://localhost:4000/page?mock=campaign-containerMock`. Notice the name of the page mock in the **mock=** query string parameter.
+1. In a web browser, open the following URL to view the module: `https://localhost:4000/page?mock=campaign-containerMock`. Notice the name of the page mock in the **mock=** query string parameter.
 
 ## Additional resources
 
@@ -214,6 +212,5 @@ To preview the page in a local web browser, follow these steps:
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
