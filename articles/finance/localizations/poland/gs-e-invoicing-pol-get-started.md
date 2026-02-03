@@ -2,7 +2,7 @@
 title: Electronic invoicing for Poland
 description: Learn how to get started with electronic invoicing for Poland in Microsoft Dynamics 365 Finance.
 author: ikondratenko
-ms.date: 01/30/2026
+ms.date: 02/03/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection:
@@ -38,7 +38,7 @@ Before you begin the procedures in this article, complete the following prerequi
   During the initial downloading you obtain the pair of files - the *\*.crt* file with the certificate itself and the *\*.key* file for the private key.
 
   > [!NOTE]
-  > Store the private key file securely as since it might not be downloadable during the consequent obtaning of the same certificate.
+  > Store the private key file securely as since it might not be downloadable during the consequent obtaining of the same certificate.
 
     To process further with the system configuration, you need to convert the obtained pair of files into one *\*.pfx* certificate file, which is then stored in your Key Vault and used as a parameter in the feature setup.
 
@@ -56,13 +56,13 @@ Before you begin the procedures in this article, complete the following prerequi
   - *\<your-ksef-certificate>.key* - is the private key file obtained from KSeF to combine with the certificate
   - *\<your-ksef-certificate>.pfx* - the output file name that is used for uploading to your Key Vault
   
-- Obtain the **public key** by this link [Public key certificates](https://api-demo.ksef.mf.gov.pl//api/v2/security/public-key-certificates). From the response, copy the value from the second *certificate* element with the *SymmetricKeyEncryption* usage type. You use it during Key Vault parameters configuration described in the next chapter. For more information, see the [details](https://api-demo.ksef.mf.gov.pl/docs/v2/index.html#tag/Certyfikaty-klucza-publicznego) provided by KSeF.
+- Obtain the **public key** these links depending on the type of environment you're configuring: [test](https://api-test.ksef.mf.gov.pl//api/v2/security/public-key-certificates), [demo](https://api-demo.ksef.mf.gov.pl//api/v2/security/public-key-certificates), or [prod](https://api.ksef.mf.gov.pl//api/v2/security/public-key-certificates). From the response, copy the value from the second *certificate* element with the *SymmetricKeyEncryption* usage type. You use it during Key Vault parameters configuration described in the next chapter. For more information, see the [details](https://api-demo.ksef.mf.gov.pl/docs/v2/index.html#tag/Certyfikaty-klucza-publicznego) provided by KSeF.
 - Install the **Electronic invoicing add-in** as described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 - Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
 - Configure the common part of the **Electronic document parameters**.
 
   > [!NOTE]
-  > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and make read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
+  > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and makes read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
   
 ## Create the Azure Key Vault configuration
 
@@ -163,7 +163,7 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 1. In Dynamics 365 Finance, go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Polish KSEF services.
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. You need these parameters for interoperation with Polish KSEF services.
 
     - **EnvironmentName** – select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
     - **PolishClientID** – select the name of the [client ID](#ClID) that you previously created.
@@ -173,10 +173,10 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 
 1. On the **Setups** tab, in the grid, select the **Import vendor invoices derived** feature setup and select **Edit**.
 1. On the **Import channel** tab, in the **Parameters** section, in the **Value** field for the **Start Date** parameter, enter the date starting from which the import is to be performed.
-1. On the **Applicability rules** tab, in the **Set up applicability rule** section, for the line witih the **Channel** field, make sure that the previously defined [import channel name](#ImpChn) is defined in the **Value** field.
+1. On the **Applicability rules** tab, in the **Set up applicability rule** section, for the line with the **Channel** field, make sure that the previously defined [import channel name](#ImpChn) is defined in the **Value** field.
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you use it in later configuration steps.
 1. Select **Save**, and close the page.
-1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. The copy of the feature is always a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
 
@@ -192,7 +192,7 @@ To configure electronic document parameters, follow these steps:
    :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
    > [!NOTE]
-   > To minimize the risk of accidental massive submissions, forcible default filtering by documents dates is implemented. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for documents processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
+   > To minimize the risk of accidental massive submissions, the system implements forcible default filtering by documents dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for documents processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
 
 1. For the **Customer Invoice journal** table name, select **Response types**.
 1. Select **New** to create a response type, and enter the following values:
@@ -235,7 +235,7 @@ To configure the legal entity data, complete the steps in each of the following 
 
 To enter a legal entity's address, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 1. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
 
     > [!NOTE]
@@ -245,7 +245,7 @@ To enter a legal entity's address, follow these steps:
 
 To enter a legal entity's tax registration number, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number is the seller's tax identification number (NIP).
 
 ### Configure customer data
@@ -269,6 +269,19 @@ To enter a customer's tax registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number is the buyer's tax identification number (NIP).
+
+### Configure sales taxes
+
+Configure the following sales tax codes related data that affect the system behavior in the event of non-taxable, zero-rated, or exempted operations:
+
+1. Tax > Indirect taxes > Sales tax > Sales tax codes > Report setup > **Country/region type**.
+1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Exempt**.
+1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Exempt code**.
+1. Tax > Indirect taxes > Sales tax > Sales tax groups > Setup > **Reverse charge**. 
+1. Tax > Setup > Sales tax > **Sales tax exempt codes**.
+
+> [!NOTE]
+> Different combinations of the preceding parameters dynamically enable and disable related XML elements in the output files of electronic invoices.  
 
 ### Configure extra data
 

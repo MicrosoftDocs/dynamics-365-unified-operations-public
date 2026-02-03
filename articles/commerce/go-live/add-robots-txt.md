@@ -2,7 +2,7 @@
 title: Add or update a robots.txt file
 description: Learn how to create, edit, upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce.
 author: mssle
-ms.date: 01/30/2026
+ms.date: 02/03/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -31,10 +31,10 @@ This article applies to the following configurations:
 ## Prerequisites
 
 - You're a [system administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
-- You either created a robots.txt file on your computer or downloaded a copy, depending on your situation:
+- You created a robots.txt file on your computer or downloaded a copy, depending on your situation:
 
-    - If you didn't previously upload a robots.txt file for your domain, create a new file on your computer by following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [sample robots.txt file](#sample-robotstxt-file-contents) later in this article as a starting point.
-    - If you previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) the existing file.
+    - If you haven't yet uploaded a robots.txt file for your domain, create a new file on your computer by following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [sample robots.txt file](#sample-robotstxt-file-contents) later in this article as a starting point.
+    - If you've previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) the existing file.
 
 ## Steps to complete
 
@@ -62,11 +62,14 @@ Disallow: /*skip=
 
 ## Validate
 
-Use the following method to validate that the file is added:
+Use the following method to validate that the robots.txt file is added:
 
 - **Description or purpose:** Validate that your robots.txt file is available for your domain.
 - **Steps to run:** In a web browser, open the page at **\<your\_domain\>/robots.txt**.
 - **Passing result:** You can view your robots.txt file.
+
+> [!NOTE]
+> If you're testing from an internal Commerce-generated domain (`.dynamics365commerce.ms`), you must append the `?domain=` query parameter to see your uploaded robots.txt content. For example: `https://<e-commerce-tenant-name>.dynamics365commerce.ms/robots.txt?domain=<your-custom-domain>`. Without this parameter, internal domains return a deny-all response. For more information about Commerce-generated URLs, see [Commerce-generated URLs](../dev-itpro/domains-commerce.md#commerce-generated-urls). For information on how robots.txt files work with domains, see [How robots.txt works with different domain types](../manage-robots-txt-files.md#how-robotstxt-works-with-different-domain-types).
 
 ## Additional resources
 
