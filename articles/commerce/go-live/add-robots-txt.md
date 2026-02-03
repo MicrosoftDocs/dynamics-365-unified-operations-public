@@ -1,11 +1,10 @@
 ---
 title: Add or update a robots.txt file
-description: This article describes how to create, edit, upload, and validate the robots.txt file for each domain that is hosted in Microsoft Dynamics 365 Commerce.
+description: Learn how to create, edit, upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce.
 author: mssle
 ms.date: 07/30/2024
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-09-20
@@ -70,7 +69,7 @@ Use the following method to validate that the file has been added:
 - **Passing result:** You can successfully view your robots.txt file.
 
 > [!NOTE]
-> If you're testing from an internal Commerce-generated domain (`.dynamics365commerce.ms`), you must append the `?domain=` query parameter to see your uploaded robots.txt content. For example: `https://<e-commerce-tenant-name>.dynamics365commerce.ms/robots.txt?domain=<your-custom-domain>`. Without this parameter, internal domains return a deny-all response. For more information about Commerce-generated URLs, see [Commerce-generated URLs](../dev-itpro/domains-commerce.md#commerce-generated-urls). For more information, see [How robots.txt works with different domain types](../manage-robots-txt-files.md#how-robotstxt-works-with-different-domain-types).
+> If you're testing from an internal Commerce-generated domain (`.dynamics365commerce.ms`), you must append the `?domain=` query parameter to see your uploaded robots.txt content. For example: `https://<e-commerce-tenant-name>.dynamics365commerce.ms/robots.txt?domain=<your-custom-domain>`. Without this parameter, internal domains return a deny-all response. For more information about Commerce-generated URLs, see [Commerce-generated URLs](../dev-itpro/domains-commerce.md#commerce-generated-urls). For information on how robots.txt files work with domains, see [How robots.txt works with different domain types](../manage-robots-txt-files.md#how-robotstxt-works-with-different-domain-types).
 
 ## Additional resources
 
