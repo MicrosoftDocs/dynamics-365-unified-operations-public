@@ -19,7 +19,7 @@ ms.custom:
 This article describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
-> Starting February 2, 2026, a change is gradually scaling up to all customer environments where internal Commerce-generated domains (`.dynamics365commerce.ms`) return a deny-all response for robots.txt requests instead of the configured robots.txt file. This behavior prevents test and staging environments from being indexed by search engines. Custom production domains continue to serve the uploaded robots.txt file. To test your robots.txt configuration from an internal domain, use the `?domain=` query parameter as described in [Test robots.txt for a specific domain](#test-robotstxt-for-a-specific-domain).
+> Starting February 2, 2026, a change is gradually scaling up to all customer environments where internal Commerce-generated domains (`.dynamics365commerce.ms`) return a deny-all response for robots.txt requests instead of the configured robots.txt file. This behavior prevents search engines from indexing test and staging environments. Custom production domains continue to serve the uploaded robots.txt file. To test your robots.txt configuration from an internal domain, use the `?domain=` query parameter as described in [Test robots.txt for a specific domain](#test-robotstxt-for-a-specific-domain).
 
 The robots exclusion standard, or robots.txt, is a standard that websites use to communicate with web robots. It instructs web robots about any areas of a website that shouldn't be visited. Robots are often used by search engines to index websites.
 
@@ -35,7 +35,7 @@ Robots.txt behavior differs according to which type of domain is used to access 
 
 ### Custom production domains
 
-When you upload a robots.txt file for a custom domain such as `www.fabrikam.com`, that file is served when search engines or users access `/robots.txt` on your production site. This allows search engines to index your site according to your configured rules.
+When you upload a robots.txt file for a custom domain such as `www.fabrikam.com`, that file is served when search engines or users access `/robots.txt` on your production site. This method allows search engines to index your site according to your configured rules.
 
 ### Internal Commerce-generated domains
 
@@ -49,7 +49,7 @@ For example, if your internal domain is `https://<e-commerce-tenant-name>.dynami
 
 `https://<e-commerce-tenant-name>.dynamics365commerce.ms/robots.txt?domain=<your-custom-domain>`
 
-This allows you to verify the robots.txt configuration for any of your supported host names before you go live with your production domain. For more information about Commerce-generated URLs, see [Commerce-generated URLs](dev-itpro/domains-commerce.md#commerce-generated-urls). For more information about configuring custom domains, see [Configure your domain name](configure-your-domain-name.md).
+This method allows you to verify the robots.txt configuration for any of your supported host names before you go live with your production domain. For more information about Commerce-generated URLs, see [Commerce-generated URLs](dev-itpro/domains-commerce.md#commerce-generated-urls). For more information about configuring custom domains, see [Configure your domain name](configure-your-domain-name.md).
 
 ## Upload a robots.txt file
 
