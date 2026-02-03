@@ -41,7 +41,7 @@ To optimize search engine indexing, the rendering framework uses both informatio
 
 ### Page SEO settings for internal preview, limited audiences, and all audiences
 
-Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in visual page builder, authors can prepare their page content without worrying that the information becomes visible to site visitors. If a page must be published, but its exposure must be limited, add the **noindex** meta tag, so that search engines don't index it. When the page is ready for all audiences, add all the basic SEO metadata to maximize the efficiency of search engine indexing. Also, remove the **nolimit** meta tag.
+Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in Commerce site builder, authors can prepare their page content without worrying that the information becomes visible to site visitors. If a page must be published, but its exposure must be limited, add the **noindex** meta tag, so that search engines don't index it. When the page is ready for all audiences, add basic SEO metadata to maximize the efficiency of search engine indexing. Also, remove the **nolimit** meta tag.
 
 ## Additional resources
 
@@ -53,6 +53,7 @@ Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
