@@ -31,9 +31,9 @@ This article applies to the following configurations:
 ## Prerequisites
 
 - You're a [system administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
-- You've either created a robots.txt file on your computer or downloaded a copy, depending on your situation:
+- You created a robots.txt file on your computer or downloaded a copy, depending on your situation:
 
-    - If you haven't previously uploaded a robots.txt file for your domain, create a new file on your computer by following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [sample robots.txt file](#sample-robotstxt-file-contents) later in this article as a starting point.
+    - If you haven't yet uploaded a robots.txt file for your domain, create a new file on your computer by following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [sample robots.txt file](#sample-robotstxt-file-contents) later in this article as a starting point.
     - If you've previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) the existing file.
 
 ## Steps to complete
@@ -62,7 +62,7 @@ Disallow: /*skip=
 
 ## Validate
 
-Use the following method to validate that the file has been added:
+Use the following method to validate that the robots.txt file is added:
 
 - **Description or purpose:** Validate that your robots.txt file is available for your domain.
 - **Steps to run:** In a web browser, open the page at **\<your\_domain\>/robots.txt**.
