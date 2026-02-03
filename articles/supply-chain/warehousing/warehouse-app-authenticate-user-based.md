@@ -103,10 +103,10 @@ The following procedure shows one way to register an application in Microsoft En
 
 1. In the dialog, select **Android**. Then set the following fields:
 
-    - **Package name** – Enter the following value:
+    - **Package name** – Enter the following value (case sensitive):
 
         ``` text
-        com.microsoft.warehousemanagement
+        com.Microsoft.Warehousemanagement
         ```
 
     - **Signature hash** – Enter the following value:
@@ -117,14 +117,23 @@ The following procedure shows one way to register an application in Microsoft En
 
     Select **Configure** to save your settings and close the dialog to return to the **Authentication** page, which now shows your new platform configurations.
 
-1. Repeat the previous two steps to add another Android platform configuration, but this time use the following value for the **Signature hash** field:
+1. Repeat the previous two steps to add another Android platform configuration, but this time set the following values:
 
-    ``` text
-    hpavxC1xAIAr5u39m1waWrUbsO8=
-    ```
+    - **Package name** – Enter the following value (case sensitive and different from the previous configuration):
+
+        ``` text
+        com.microsoft.warehousemanagement
+        ```
+
+    - **Signature hash** – Enter the following value:
+
+        ``` text
+        hpavxC1xAIAr5u39m1waWrUbsO8=
+        ```
 
     > [!TIP]
-    > The first signature hash for Android (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`) adds support for brokered authentication in Warehouse Management mobile app version 4.0.28 or higher. The second hash (`hpavxC1xAIAr5u39m1waWrUbsO8=`) is required to support older versions of the app.
+    > - The first signature hash for Android (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`) adds support for brokered authentication in Warehouse Management mobile app version 4.0.28 or higher. The second hash (`hpavxC1xAIAr5u39m1waWrUbsO8=`) is required to support older versions of the app.
+    > - The values for **Package name** are case sensitive and the required casing is different for each Android platform configuration. The values are otherwise similar.
 
 1. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
 
