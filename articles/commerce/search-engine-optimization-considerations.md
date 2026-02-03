@@ -2,7 +2,7 @@
 title: Search engine optimization (SEO) considerations for your site
 description: Learn about search engine optimization (SEO) considerations for your Microsoft Dynamics 365 Commerce site from development to production.
 author: josaw1
-ms.date: 01/29/2026
+ms.date: 02/03/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -53,4 +53,5 @@ Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
