@@ -65,10 +65,8 @@ To upload a robots.txt file in Commerce, follow these steps:
 1. In the dialog box, browse to and select the robots.txt file that you want to upload for the associated domain, and then select **Open** to complete the upload.
 
 > [!NOTE]
-> During upload, Commerce verifies that the file is a text file, but it doesn't validate the file's contents.
-
-> [!NOTE]
-> Uploaded robots.txt files are served only on custom production domains. Internal Commerce-generated domains (`.dynamics365commerce.ms`) return a deny-all response regardless of uploaded content. For more information, see [How robots.txt works with different domain types](#how-robotstxt-works-with-different-domain-types).
+> - During upload, Commerce verifies that the file is a text file, but it doesn't validate the file's contents.
+> - Uploaded robots.txt files are served only on custom production domains. Internal Commerce-generated domains (such as `.dynamics365commerce.ms`) return a deny-all robots.txt response to prevent test environments from being indexed. For more information, see [How robots.txt works with different domain types](#how-robotstxt-works-with-different-domain-types).
 
 ## Download a robots.txt file
 
