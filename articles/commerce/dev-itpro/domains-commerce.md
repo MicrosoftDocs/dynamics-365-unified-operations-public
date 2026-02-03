@@ -1,12 +1,10 @@
 ---
-
 title: Domains in Dynamics 365 Commerce
-description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
+description: Learn how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/31/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-20
@@ -23,7 +21,7 @@ This article describes how domains are handled in Microsoft Dynamics 365 Commerc
 Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Dynamics 365 Commerce site builder to coordinate how a site is accessed when published. This article reviews how domains are handled and referenced throughout the lifecycle of the Commerce site development and launch.
 
 > [!NOTE]
-> As of May 6th, 2022, all environments created in Dynamics 365 Commerce will be provisioned with the `.dynamics365commerce.ms` domain, replacing the earlier pattern of `.commerce.dynamics.com`. Existing environments provisioned with the `.commerce.dynamics.com` domain will continue to work.
+> As of May 6, 2022, all environments created in Dynamics 365 Commerce will be provisioned with the `.dynamics365commerce.ms` domain, replacing the earlier pattern of `.commerce.dynamics.com`. Existing environments provisioned with the `.commerce.dynamics.com` domain continue to work.
 
 ## Provisioning and supported host names
 
@@ -38,7 +36,7 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 
 ### Add supported host names
 
-You can add additional supported host names to an environment in LCS after the initial environment provisioning. 
+You can add more supported host names to an environment in LCS after the initial environment provisioning. 
 
 To add a new domain to the supported host names list in LCS, follow these steps:
 
@@ -69,7 +67,7 @@ The following illustration shows the **Setup your Site** dialog box for a site n
 
 The **Select a domain** box allows you to associate one of the supported host names provided for your site in LCS to your site in site builder.
 
-The **Path** box can be left blank, or an additional path string can be added that is reflected in your working URL. Leaving the **Path** box blank associates the base Commerce-generated URL with the site being set up in site builder. Paths must be unique for each site/domain pair. Within the site and domain selected, only one site in the environment can use the blank path or be associated with a unique path string. Any string added to the **Path** field during site setup becomes a subpath of the base Commerce-generated URL used to access the site in a web browser.
+The **Path** box can be left blank, or an another path string can be added that is reflected in your working URL. Leaving the **Path** box blank associates the base Commerce-generated URL with the site being set up in site builder. Paths must be unique for each site/domain pair. Within the site and domain selected, only one site in the environment can use the blank path or be associated with a unique path string. Any string added to the **Path** field during site setup becomes a subpath of the base Commerce-generated URL used to access the site in a web browser.
 
 > [!NOTE]
 > The path is also known as the **Match path** when adding a channel in the **Site Settings \> Channels** configuration section of site builder.
@@ -100,6 +98,9 @@ The supported host names values are available to be associated as a domain when 
 
 When working with sites in site builder, if you have two sites set up with two different domains, you can append the `?domain=` attribute to your working URL to access the published site content in a browser.
 
+> [!NOTE]
+> The `?domain=` query parameter is also required when testing robots.txt files from internal Commerce-generated domains. For more information, see [How robots.txt works with different domain types](../manage-robots-txt-files.md#how-robotstxt-works-with-different-domain-types).
+
 For example, environment "xyz" is provisioned, and two sites are created and associated in site builder: one with the domain `www.fabrikam.com` and the other with the domain `www.constoso.com`. Each site was set up using a blank path. These two sites could then be accessed in a web browser as follows using the `?domain=` attribute:
 - `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
 - `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
@@ -119,16 +120,16 @@ You can simulate multiple domains using domain query string parameters on the `c
 > [!IMPORTANT]
 > Setting up the traffic forwarding process requires a minimum of seven days lead time. Microsoft recommends that you start the process at least 14 days before the go-live date. 
 
-The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint doesn't support custom domain Secure Sockets Layers (SSLs), so you must set up custom domains using a front door service or content delivery network (CDN). 
+The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint doesn't support custom domain Transport Layer Security/Secure Sockets Layer (TLS/SSL), so you must set up custom domains using a front door service or content delivery network (CDN). 
 
 To set up custom domains using a front door service or CDN, you have two options:
 
 - Set up a front door service like Azure Front Door to handle front-end traffic and connect to your Commerce environment, which provides greater control over domain and certificate management and more granular security policies.
 
-- Use the Commerce-supplied Azure Front Door instance, which requires coordinating action with the Dynamics 365 Commerce team for domain verification and obtaining SSL certificates for your production domain.
+- Use the Commerce-supplied Azure Front Door instance, which requires coordinating action with the Dynamics 365 Commerce team for verifying domains and obtaining TLS/SSL certificates for your production domain.
 
 > [!NOTE]
-> If you are using an external CDN or front door service, ensure that the request is landing at the Commerce platform with the Commerce-provided hostname, but with the X-Forwarded-Host (XFH) header \<custom-domain\>. For example, if your Commerce endpoint is `xyz.dynamics365commerce.ms` and the custom domain is `www.fabrikam.com`, the host header of the forwarded request should be `xyz.dynamics365commerce.ms` and the XFH header should be `www.fabrikam.com`.
+> If you're using an external CDN or front door service, ensure that the request is landing at the Commerce platform with the Commerce-provided hostname, but with the X-Forwarded-Host (XFH) header \<custom-domain\>. For example, if your Commerce endpoint is `xyz.dynamics365commerce.ms` and the custom domain is `www.fabrikam.com`, the host header of the forwarded request should be `xyz.dynamics365commerce.ms` and the XFH header should be `www.fabrikam.com`.
 
 For information about how to set up a CDN service directly, see [Add support for a content delivery network (CDN)](../add-cdn-support.md).
 
@@ -136,7 +137,7 @@ To use the Commerce-supplied Azure Front Door instance, you must create a servic
 
 - You must provide your company name, the production domain, environment ID, and production e-commerce tenant name. 
 - You must confirm if this service request is for an existing domain (used for a currently active site) or a new domain. 
-- The domain verification and SSL certificate are obtained via DNS TXT record verification. This process involves multiple sequential steps and it has a seven working day service level agreement (SLA) for a domain to go live. The process consists of the following steps:
+- The domain verification and TLS/SSL certificate are obtained via DNS TXT record verification. This process involves multiple sequential steps and it has a seven working day service level agreement (SLA) for a domain to go live. The process consists of the following steps:
   1. You create a support ticket requesting the domain setup.
   1. Microsoft support contacts you with the DNS record to verify the domain.
   1. You create the DNS record in your DNS provider's service.
@@ -144,15 +145,15 @@ To use the Commerce-supplied Azure Front Door instance, you must create a servic
   1. Microsoft support provides you with the DNS CNAME record to be created for the live traffic switchover.
   1. You create the DNS CNAME for the custom domain pointing to the Commerce-provided front door endpoint. 
 - For a new domain, you can update the CNAME to a Commerce-provided front door endpoint immediately. Traffic will be routed through the Commerce front door endpoint after the CNAME record is updated.
-- For a domain that serves an existing website, you must verify that the new domain is set up correctly and execute the CNAME change to point the custom domain to the Commerce front door endpoint at the scheduled cutover time.
+- For a domain that serves an existing website, you must verify that the new domain is set up correctly. Execute the CNAME change to point the custom domain to the Commerce front door endpoint at the scheduled cutover time.
 - Existing traffic to the custom domain shouldn't be impacted until the CNAME change is completed.
 
 To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
 
 > [!NOTE]
-> Custom domains with SSL are only supported on production environments. For non-production environments such as sandbox and user acceptance testing (UAT), use the Commerce-generated URL to access published content in a web browser.
+> Custom domains with TLS/SSL are only supported on production environments. For nonproduction environments such as sandbox and user acceptance testing (UAT), use the Commerce-generated URL to access published content in a web browser.
 
-## SSL certificate process
+## TLS/SSL certificate process
 
 When a service request is filed, the Commerce team coordinates the following steps with you.
 
@@ -163,7 +164,7 @@ For new domains:
 
 For existing/active domains:
 - The Commerce team instructs you to add an `afdverify.<custom-domain>` CNAME record to provide to your domain DNS provider.
-- When complete, the Commerce team adds the domain to the Azure Front Door instance and provides additional DNS TXT records to be added to the DNS for the domain.
+- When complete, the Commerce team adds the domain to the Azure Front Door instance and provides more DNS TXT records to be added to the DNS for the domain.
 - After the TXT records are completed, the Commerce team completes the Azure Front Door updates for the domain to set up the SSL certificate.
 
 ## Apex domains
@@ -177,7 +178,7 @@ The Commerce-supplied Azure Front Door instance doesn't support apex domains (ro
 - **Option 3** - If your DNS provider doesn't support ALIAS records, then you must change your DNS provider to Azure DNS and host both Azure DNS and the Azure Front Door instance yourself.
 
 > [!NOTE]
-> If you are using Azure Front Door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record. This is the only work around, as apex domains must always point to an IP address.
+> If you're using Azure Front Door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record. This method is the only workaround, because apex domains must always point to an IP address.
   
 If you have any questions regarding Apex domains, contact [Microsoft Support](https://support.microsoft.com/).
 
@@ -207,3 +208,7 @@ If you have any questions regarding Apex domains, contact [Microsoft Support](ht
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+

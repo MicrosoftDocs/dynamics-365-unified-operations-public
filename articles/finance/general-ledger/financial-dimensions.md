@@ -1,10 +1,10 @@
 ---
 title: Financial dimensions
 description: Learn about the various types of financial dimensions and tags and how they're set up.
-author: aprilolson
+author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 07/28/2025
+ms.date: 01/30/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -28,6 +28,16 @@ When creating a financial dimension, this article explains the various types of 
 ## Create financial dimensions
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. 
+
+### Financial dimension naming requirements
+
+When you create a financial dimension, the dimension name must start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. The dimension name can't use reserved system field names such as RecId. If these requirements aren't met, you'll receive **The financial dimension name ... contains invalid characters** error message.
+
+For example, some valid dimension names include Department, CostCenter, _CustomDim, and Project_1.  
+Invalid dimension names include:
+ - 123Dept - starts with a number
+ - Cost-Center - contains a hyphen
+ - RecId - reserved system field name
 
 ## Custom dimensions
 
@@ -64,6 +74,9 @@ After you've created a financial dimension, use the **Financial dimension valu
 For a custom financial dimension, this page creates and edits dimension values. The **Dimension value** and **Description** fields can only be entered or edited for custom dimensions.  
 
 For an entity-backed financial dimension, no dimension values can be created from this page. Also, the dimension value and descriptions can’t be edited from within the page. For example, let’s say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can’t edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, it must be created from the **Project** page.  
+
+>[!IMPORTANT]
+> When working with the **Financial dimension values entity** for data import or export, this entity only contains values that are being used as dimensions. You'll only see values that have been used in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or have had properties modified (such as Active from/Active to dates, Suspended status, and other overrides). Unused values won't appear in the entity.
  
 ## Activating dimensions
 
