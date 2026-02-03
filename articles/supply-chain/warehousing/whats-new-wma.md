@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 01/29/2026
+ms.date: 02/03/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,13 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.32.0
+
+Version 4.0.32.0 adds the following fixes and improvements:
+
+- Aligned authentication with Warehouse Management mobile app version 4.0.29.
+- Fixed an issue that caused some apps to crash in the previous version.
 
 ## Version 4.0.31.0
 
