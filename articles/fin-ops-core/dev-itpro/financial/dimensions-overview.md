@@ -4,7 +4,7 @@ description: Learn about dimensions, dimensions that have entities, and the dime
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 04/29/2025
+ms.date: 02/03/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -31,7 +31,7 @@ The only value that's present on Microsoft Excel templates after installation is
 This article shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 
 
 >[!IMPORTANT]
-> Data import via Excel templates is optimized for performance and therefore supports only core field values. As a result, fields such as default dimensions and derived dimensions are not automatically populated when importing lines through Excel.
+> Data import using Excel templates is optimized for performance and therefore supports only core field values. As a result, fields such as default dimensions and derived dimensions aren't automatically populated when importing lines through Excel.
 
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
