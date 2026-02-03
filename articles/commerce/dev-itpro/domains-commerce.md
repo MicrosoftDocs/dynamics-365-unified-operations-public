@@ -4,7 +4,7 @@ description: Learn how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 01/31/2024
 ms.topic: how-to
-ms.reviewer: v-cgriffinc
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-06-20
@@ -208,4 +208,5 @@ If you have any questions regarding Apex domains, contact [Microsoft Support](ht
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
