@@ -151,22 +151,10 @@ If records already exist for the dimension, the master records are updated when 
 
 If you're using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value defaults from the new customer number when you create the new customer.  
 
-### Dimension values appear blank after posting (workaround)
-
-If dimension values appear blank on posted transactions, the issue might be caused by **fixed dimensions** that are configured for the main account. Fixed dimensions can override defaulting behavior and may force a blank value when the assigned value doesn't comply with the account structure.
-
-To review and correct this configuration:
-
-1. Go to **General ledger > Chart of accounts > Accounts > Main accounts**.
-2. Select the affected main account.
-3. Open **Legal entity overrides**.
-4. Review the **Fixed value** settings for each dimension.
-
-Use one of the following options to resolve the issue:
-
-- **Set the dimension’s Fixed value to _Not fixed_** so that defaulting rules can apply normally.
-- **Configure the dimension as a non-default dimension** if it should not be defaulted for this scenario.
-- **Specify a valid default value** that complies with the account structure, ensuring that the system can use a non-blank dimension value during posting.
+> [!NOTE]
+> You can intentionally default a dimension value to **blank** by assigning a **fixed dimension value of blank** on a main account (via *Legal entity overrides*).  
+>  
+> If you do **not** intend for a blank dimension value to be defaulted, ensure that the dimension’s fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
 
 ## Derived dimensions
 
