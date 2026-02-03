@@ -133,7 +133,7 @@ The following procedure shows one way to register an application in Microsoft En
 
     > [!TIP]
     > - The first signature hash for Android (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`) adds support for brokered authentication in Warehouse Management mobile app version 4.0.28 or higher. The second hash (`hpavxC1xAIAr5u39m1waWrUbsO8=`) is required to support older versions of the app.
-    > - The values for **Package name** are case sensitive and the required casing is different for each Android platform configuration.
+    > - The values for **Package name** are case sensitive and the required casing is different for each Android platform configuration. The values are otherwise similar.
 
 1. Do one of the following steps to add another new platform configuration for the Warehouse Management mobile app:
 
