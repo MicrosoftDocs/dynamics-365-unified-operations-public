@@ -31,7 +31,7 @@ Before you can post a preacquisition, you must complete the following steps:
 
 ## Post a preacquisition of a fixed asset
 
-To post a preacquisition of a fixed asset, follow these steps.
+To post a preacquisition of a fixed asset, follow these steps:
 
 1.  On the **Fixed assets** page, create a new journal, and enter all required applicable information.
 1.  For the journal that you just created, select **Lines** to open the **Journal voucher** page.

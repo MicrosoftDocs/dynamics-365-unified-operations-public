@@ -35,7 +35,7 @@ The Commerce module library provides only one type of default page module. Howev
 
 ## Add a default page module to a template
 
-To add a default page module to a template, follow these steps.
+To add a default page module to a template, follow these steps:
 
 1. In Commerce site builder for your site, select **Templates**.
 1. Select a template, and then select **Edit**.

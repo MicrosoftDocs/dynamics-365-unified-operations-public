@@ -49,7 +49,7 @@ To generate the SST-02 return form and the related reports in a Malaysian legal 
 2. Tax declaration model mapping.version.67.93.xml 
 3. SST-02 Declaration Excel (MY).version.67.3.xml or a later version
  
-After you've finished downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the Global repository, follow these steps.
+After you've finished downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the Global repository, follow these steps:
 
 1. In Finance, in the **Electronic reporting** workspace, select the **Reporting configurations** tile. 
 2. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**, and upload all the files in the order in which they are listed earlier in this section.

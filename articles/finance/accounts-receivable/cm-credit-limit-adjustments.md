@@ -35,7 +35,7 @@ If the **Posted** check box is selected, the credit limits have been applied. Th
 
 ### Add credit limit adjustments
 
-To manually add credit limit adjustments, select **Lines**, and then follow these steps.
+To manually add credit limit adjustments, select **Lines**, and then follow these steps:
 
 1. To add a credit limit adjustment for a customer, use the **Customer adjustments** menu. To add a credit limit for a customer credit group, select **Customer credit group adjustments**.
 2. Enter a customer account for the invoice customer account that should be updated with the new credit limit. If you selected **Customer credit group adjustments** in step 1, enter the customer credit group. You can't enter both a customer account and a customer credit group ID on the same journal line.

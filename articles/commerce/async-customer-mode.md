@@ -2,16 +2,16 @@
 # required metadata
 
 title: Asynchronous customer creation mode
-description: This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
+description: Learn about the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/19/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.date: 01/15/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: xiaomgao
 ms.search.validFrom: 2021-12-17
-
+ms.custom: 
+  - bap-template
 ---
 
 # Asynchronous customer creation mode
@@ -20,23 +20,23 @@ ms.search.validFrom: 2021-12-17
 
 This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 
-In Commerce, there are two modes of customer creation: synchronous (or sync) and asynchronous (or async). By default, customers are created synchronously. In other words, they're created in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
+In Commerce, you can create customers in two modes: synchronous (or sync) and asynchronous (or async). By default, you create customers synchronously. In other words, you create customers in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. If many concurrent customer creation calls are made, performance can be affected because the process generates Commerce Data Exchange Real-time Service calls to Commerce headquarters. Learn more in [Commerce Data Exchange and commerce channel communications](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service).
 
-If the **Create customer in async mode** option is set to **Yes** in the store's functionality profile (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), Real-time Service calls aren't used to create customer records in the channel database. The async customer creation mode doesn't affect the performance of Commerce headquarters. A temporary globally unique identifier (GUID) is assigned to every new async customer record and used as the customer account ID. This GUID isn't shown to point of sale (POS) users. Instead, those users see **Pending sync** as the customer account ID.
+If you set the **Create customer in async mode** option to **Yes** in the store's functionality profile (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), Real-time Service calls aren't used to create customer records in the channel database. The async customer creation mode doesn't affect the performance of Commerce headquarters. You assign a temporary globally unique identifier (GUID) to every new async customer record and use it as the customer account ID. POS users don't see this GUID. Instead, those users see **Pending sync** as the customer account ID.
 
 > [!IMPORTANT]
-> Whenever the POS goes offline, the system automatically creates customers asynchronously, even if the async customer creation mode is disabled. Similarly, the system automatically creates customers asynchronously when an RTS call fails with a communication exception. Therefore, regardless of your selection between sync and async customer creation, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
+> Whenever the POS goes offline, the system automatically creates customers asynchronously, even if the async customer creation mode is disabled. Similarly, the system automatically creates customers asynchronously when a Real-time Service call fails with a communication exception. Therefore, regardless of your selection between sync and async customer creation, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
 
 ## Async customer limitations
 
-The async customer functionality currently has the following limitation:
+The async customer functionality currently has the following limitations:
 
-- Loyalty cards can't be issued to async customers unless the new customer account ID has been synced back to the channel.
-- Async customers that haven't been synced to HQ can't be selected when creating sync customer orders. To create customer orders for async customers, see [Enable customer orders to be created in asynchronous mode](customer-orders-overview.md#enable-customer-orders-to-be-created-in-asynchronous-mode).
+- You can't issue loyalty cards to async customers unless the new customer account ID syncs back to the channel.
+- You can't select async customers that aren't synced to HQ when creating sync customer orders. To create customer orders for async customers, see [Enable customer orders to be created in asynchronous mode](customer-orders-overview.md#enable-customer-orders-to-be-created-in-asynchronous-mode).
 
 ## Async customer enhancements
 
-To help organizations use async customer creation mode to manage customers, and to help reduce real-time communications with Commerce headquarters, the following enhancements have been rolled out to bring parity between sync and async modes in channels. 
+To help organizations use async customer creation mode to manage customers, and to help reduce real-time communications with Commerce headquarters, the following enhancements bring parity between sync and async modes in channels.
 
 | Feature enhancement | Commerce version | Feature details |
 |---|---|---|
@@ -51,22 +51,22 @@ To help organizations use async customer creation mode to manage customers, and 
 
 Because of the hierarchy of feature switches, before you enable the **Enable editing customers in asynchronous mode** feature, you must enable the following features: 
 
-- **Performance improvements for customer orders and customer transactions** – This feature has been mandatory since the Commerce version 10.0.28 release. 
+- **Performance improvements for customer orders and customer transactions** – This feature is mandatory since the Commerce version 10.0.28 release. 
 - **Enable enhanced async customer creation**
 - **Enable asynchronous creation for customer addresses**
 
-After the feature's enabled, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job).
+After you enable the feature, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job).
 
 For answers to common troubleshooting questions, see [Asynchronous customer creation mode FAQ](async-customer-mode-faq.md). 
 
-After you enable the previously mentioned features, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and channel requests** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
+After you enable the previously mentioned features, schedule a recurring batch job for the **P-job**, the **Synchronize customers and channel requests** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
 
 ### Customer creation in POS offline mode
 
-As mentioned earlier, whenever the POS goes offline, the system automatically creates customers asynchronously, even if the async customer creation mode is disabled. Therefore, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and channel requests** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
+As mentioned earlier, whenever the POS goes offline, the system automatically creates customers asynchronously, even if you disable the async customer creation mode. Therefore, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and channel requests** job, and the **1010** job, so that the system converts any async customers to sync customers in Commerce headquarters.
 
 > [!NOTE]
-> If the **Filter shared customer data tables** option is set to **Yes** on the **Commerce channel schema** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**), customer records aren't created in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
+> If you set the **Filter shared customer data tables** option to **Yes** on the **Commerce channel schema** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**), the system doesn't create customer records in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## Additional resources
 

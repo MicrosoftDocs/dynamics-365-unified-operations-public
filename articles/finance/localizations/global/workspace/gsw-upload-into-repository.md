@@ -34,7 +34,7 @@ The following sections describe each phase.
 
 You should create a Dataverse configuration repository for your active configuration provider.
 
-To create a Dataverse configuration repository, follow these steps.
+To create a Dataverse configuration repository, follow these steps:
 
 1. Sign in to the Dynamics 365 Finance app by using one of the following roles:
 
@@ -56,7 +56,7 @@ To create a Dataverse configuration repository, follow these steps.
 
 After you create the repository, you can export configurations to Dataverse.
 
-To export configurations to Dataverse, follow these steps.
+To export configurations to Dataverse, follow these steps:
 
 1. To upload a single configuration version that has a status of **Completed**, use the **Upload into repository** button on the **Versions** FastTab of the **Electronic reporting Configurations** page. The system uploads all parent configuration versions to make the solution independently deployable.
 1. To upload all the latest **Completed** configuration versions with the active provider, select **Upload all configurations into repository** on the **Configurations** tab on the Action Pane of the **Electronic reporting Configurations** page. Then use the **Upload into repository** dropdown dialog box.

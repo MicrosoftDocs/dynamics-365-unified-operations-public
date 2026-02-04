@@ -39,7 +39,7 @@ You can create an Electronic invoicing feature from scratch, or you can base it 
 
 This section explains how to create an Electronic invoicing feature when the Global repository includes no Globalization feature for your business scenarios out of the box.
 
-To create an Electronic invoicing feature, follow these steps.
+To create an Electronic invoicing feature, follow these steps:
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. Select **Add**, and then, in the dropdown dialog box, select the **New feature** option.

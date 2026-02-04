@@ -51,7 +51,7 @@ The **Extensibility support request** form includes two actions:
 - **Manage extensibility options**
 - **Create extensibility support request**
 
-When you click **Manage extensibility options**, you can view all of the information that is shared between requests. This information includes, requests for either an **ISV** or **VAR** solution and if the requests are specific for a **Customer** implementation project. If the role selected **ISV** or **VAR**, a solution name must be specified. The name should be recognizable and correlate with AppSource solutions. The **Required by date** indicates the last date that requests can be made to be available for your development. 
+When you click **Manage extensibility options**, you can view all of the information that is shared between requests. This information includes, requests for either an **ISV** or **VAR** solution and if the requests are specific for a **Customer** implementation project. If the role selected **ISV** or **VAR**, a solution name must be specified. The name should be recognizable and correlate with Marketplace solutions. The **Required by date** indicates the last date that requests can be made to be available for your development. 
 
   > [!IMPORTANT]
   > Microsoft doesn't guarantee that all requests will be provided by the date given. The required date provides an indication that will be considered when planning for requests at Microsoft.

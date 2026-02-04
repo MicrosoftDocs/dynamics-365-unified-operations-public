@@ -21,6 +21,10 @@ This article explains how administrators can prepare your Microsoft Dynamics 365
 
 Before you can start to onboard the Approvals Management mobile app, you must meet the requirements that are outlined in this section.
 
+### License requirements
+
+Use of the Approvals Management mobile app requires a license. You can find complete and up-to-date licensing information in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544). Licensing terms are subject to change without notice.
+
 ### System requirements
 
 To run the Approvals Management mobile app, you must be using Supply Chain Management version 10.0.41 or later.

@@ -128,7 +128,7 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 #### Configure the fiscal registration process
 
-To enable the fiscal registration process for Saudi Arabia in Commerce headquarters, follow these steps.
+To enable the fiscal registration process for Saudi Arabia in Commerce headquarters, follow these steps:
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce software development kit (SDK):
 
@@ -156,7 +156,7 @@ The digital certificates that will be used to digitally sign simplified e-invoic
 
 To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](../global/certificate-profiles-for-retail-stores.md#set-up-certificate-profiles). You must configure a separate certificate profile for each CSID that you obtain from ZATCA.
 
-After you configure certificate profiles, follow these steps.
+After you configure certificate profiles, follow these steps:
 
 1. Go to **Retail and Commerce** \> **Channel setup** \> **Fiscal integration** \> **Connector technical profiles**, and select the connector technical profile that you created earlier. 
 1. To configure certificate profiles per POS register, select **Override**, and create records for all registers that you must specify CSIDs for. 

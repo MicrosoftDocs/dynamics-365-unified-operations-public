@@ -60,7 +60,7 @@ Before you can deactivate and resubmit workflows for vendor rebate deals, your s
 
 ### Deactivate and resubmit a workflow
 
-To deactivate and resubmit a workflow for a vendor rebate deal, follow these steps.
+To deactivate and resubmit a workflow for a vendor rebate deal, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals**.
 1. Find and select the deal that you want to deactivate, edit, and resubmit. The deal must already be active.

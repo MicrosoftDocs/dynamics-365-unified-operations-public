@@ -30,7 +30,7 @@ Fixed assets can be sold using disposal functionality through a free text invoic
 
 You can use a template for fixed asset disposal as an option to simplify setting up accounts for asset disposal for posting profiles. 
 
-To create or edit a template for fixed asset disposal, follow these steps.
+To create or edit a template for fixed asset disposal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets** \> **Setup** \> **Fixed asset posting profiles**.
 2. In the **Disposal** section, select **Create template**, and then select a fixed asset posting profile.

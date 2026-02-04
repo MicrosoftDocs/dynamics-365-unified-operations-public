@@ -56,7 +56,7 @@ You can set up reason code policies both for individual warehouses and for produ
 
 ### Assign counting reason code policies to warehouses
 
-To assign a counting reason code policy to a warehouse, follow these steps.
+To assign a counting reason code policy to a warehouse, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
 1. Select a warehouse in the list pane.
@@ -68,7 +68,7 @@ To assign a counting reason code policy to a warehouse, follow these steps.
 
 ### Assign counting reason code policies to products
 
-To assign a counting reason code policy to a product, follow these steps.
+To assign a counting reason code policy to a product, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select a product in the grid.
@@ -80,7 +80,7 @@ To assign a counting reason code policy to a product, follow these steps.
 
 ### Set up counting reason codes
 
-To set up your counting reason codes, follow these steps.
+To set up your counting reason codes, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory** \> **Counting reason codes**.
 1. On the Action Pane, select **New** to add a row to the grid.
@@ -119,7 +119,7 @@ In most cases, you can define the following information for each relevant mobile
 
 #### Set up mobile device menu items for a counting process
 
-To set up a mobile device menu item for a counting process, follow these steps.
+To set up a mobile device menu item for a counting process, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. Select the relevant menu item in the list pane, or create a new menu item.
@@ -137,7 +137,7 @@ To set up a mobile device menu item for a counting process, follow these steps.
 
 #### <a name="setup-adjustment-in-out"></a>Set up mobile device menu items for adjustment in and adjustment out
 
-To set up a mobile device menu item for adjustment in or adjustment out, follow these steps.
+To set up a mobile device menu item for adjustment in or adjustment out, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, select **New** to create a menu item.
@@ -172,7 +172,7 @@ Before a count is approved, the worker can change the reason code that is associ
 
 #### Modify reason codes for cycle count approvals
 
-To modify a cycle count approval, follow these steps.
+To modify a cycle count approval, follow these steps:
 
 1. Go to **Warehouse management** \> **Cycle counting** \> **Cycle count work pending review**.
 1. Select a cycle count in the grid.
@@ -185,7 +185,7 @@ Reason codes are added to the journal lines in counting journals of the *Countin
 
 ### View the reason codes recorded in the counting history
 
-To view the reason codes that have been recorded in the counting history, follow these steps.
+To view the reason codes that have been recorded in the counting history, follow these steps:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **Counting history**.
 1. Select an item count record in the list pane.
@@ -193,7 +193,7 @@ To view the reason codes that have been recorded in the counting history, follow
 
 ### Use reason codes for quantity adjustment or online counting
 
-To use a reason code for a quantity adjustment or online counting, follow these steps.
+To use a reason code for a quantity adjustment or online counting, follow these steps:
 
 1. Go to **Inventory management \> Inquiries and reports \> On-hand list**.
 1. On the Action Pane, select **Quantity adjustment**.

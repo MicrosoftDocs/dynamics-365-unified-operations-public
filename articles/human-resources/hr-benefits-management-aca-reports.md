@@ -107,7 +107,7 @@ For employees who are assigned to an Affordable Care coverage group, you can cha
 > - **1L, 1M, or 1N:** The primary residence ZIP Code
 > - **1O, 1P, 1Q:** The primary work ZIP Code
 
-To enter exceptions for any values of an Affordable Care coverage group, follow these steps.
+To enter exceptions for any values of an Affordable Care coverage group, follow these steps:
 
 1. In the **Personnel management** workspace, select **Links**, and then select **Workers**.
 2. Select the employee in the list.
@@ -126,7 +126,7 @@ To enter exceptions for any values of an Affordable Care coverage group, follow 
 
 You must track any employer-sponsored, self-insured health care coverage for full-time and part-time employees. Include each employee, together with their dependents, on the 1095-C report for the months when they were covered.
 
-To indicate whether a benefit plan must be reported, follow these steps.
+To indicate whether a benefit plan must be reported, follow these steps:
 
 1. In the **Benefits management** workspace, select **Benefit plans**.
 2. Select the benefit plan to report.
@@ -175,7 +175,7 @@ The **Worker Affordable Care coverage** page shows the following information:
 - Employees who don't have to be included on a report
 - Unassigned employees
 
-To view this information, follow these steps.
+To view this information, follow these steps:
 
 1. In the **Benefits management** workspace, select **Worker Affordable Care coverage**.
 2. In the **Group name** field, select a group.
@@ -190,7 +190,7 @@ You can view employees who aren't assigned to a group, or who are assigned to an
 
 ### Export to Excel
 
-To export any of the lists to Microsoft Excel, follow these steps.
+To export any of the lists to Microsoft Excel, follow these steps:
 
 1. Select the **Open in Microsoft Office** button.
 2. Select **HCM Human Resources temporary table for internal use**.

@@ -21,7 +21,7 @@ Before a user can process the approval of a nonconformance, a worker must be ass
 
 ## Create a nonconformance
 
-To create a nonconformance, follow these steps.
+To create a nonconformance, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. On the Action Pane, select **New**.
@@ -30,7 +30,7 @@ To create a nonconformance, follow these steps.
 
 ## Approve or reject a nonconformance
 
-To approve or reject a nonconformance, follow these steps.
+To approve or reject a nonconformance, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -55,7 +55,7 @@ The remaining settings are optional. The cost for each item, quality charges, an
 
 ### Create an operation for a nonconformance
 
-To create an operation for a nonconformance, follow these steps.
+To create an operation for a nonconformance, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -80,7 +80,7 @@ To create an operation for a nonconformance, follow these steps.
 
 ### Add items to an operation
 
-To add items to an operation, follow these steps.
+To add items to an operation, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -104,7 +104,7 @@ To add items to an operation, follow these steps.
 
 ### Add quality charges to an operation
 
-To add quality charges to an operation, follow these steps.
+To add quality charges to an operation, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -129,7 +129,7 @@ To add quality charges to an operation, follow these steps.
 
 ### Create a timesheet on an operation
 
-To add a timesheet to an operation, follow these steps.
+To add a timesheet to an operation, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -158,7 +158,7 @@ To add a timesheet to an operation, follow these steps.
 
 ## Add a correction to a nonconformance
 
-To add a correction to a nonconformance, follow these steps.
+To add a correction to a nonconformance, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -186,7 +186,7 @@ To add a correction to a nonconformance, follow these steps.
 
 ## Mark a correction as completed
 
-To mark a nonconformance correction as completed, follow these steps.
+To mark a nonconformance correction as completed, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -202,7 +202,7 @@ To mark a nonconformance correction as completed, follow these steps.
 
 ## Reopen a completed correction
 
-To reopen a completed correction, follow these steps.
+To reopen a completed correction, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Non conformances**.
 1. In the list, select the nonconformance that you want to update.
@@ -216,7 +216,7 @@ You can now make additional edits or updates to the correction. When you've fini
 
 ## Close a nonconformance
 
-To close a nonconformance, follow these steps.
+To close a nonconformance, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
 1. Select a quality order in the grid.

@@ -24,7 +24,7 @@ This article explains how to set up Intrastat parameters and transfer transactio
 
 ## Create new and update existing commodity code
 
-To create new and update existing commodity code, follow these steps.
+To create new and update existing commodity code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management \> Setup \> Categories and attributes \> Category hierarchies**.
 1. In the list, find or select the record **Intrastat commodity codes**, and then select the link.
@@ -41,7 +41,7 @@ To create new and update existing commodity code, follow these steps.
 
 ## Assign commodity code to product hierarchy and released product
 
-To assign commodity code to product hierarchy and released product, follow these steps.
+To assign commodity code to product hierarchy and released product, follow these steps:
 
 1. Use the quick filter to find records. For example, filter on the **Name** field with a value of "sales".
 1. In the list, select the link on the row you want to work with.
@@ -61,7 +61,7 @@ To assign commodity code to product hierarchy and released product, follow these
 
 ## Set up Intrastat transaction codes and foreign trade parameters
 
-To set up Intrastat transaction codes and foreign trade parameters, follow these steps.
+To set up Intrastat transaction codes and foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> Transaction codes**.
 1. Select **New**.
@@ -80,7 +80,7 @@ To set up Intrastat transaction codes and foreign trade parameters, follow these
 
 ## Set up modes of delivery and rules for including charges in Intrastat
 
-To set up modes of delivery and rules for including charges in Intrastat, follow these steps.
+To set up modes of delivery and rules for including charges in Intrastat, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery**.
 1. In the list, find and select the record you want to update.  
@@ -93,7 +93,7 @@ To set up modes of delivery and rules for including charges in Intrastat, follow
 
 ## Sell products for EU customers
 
-To sell products for EU customers, follow these steps.
+To sell products for EU customers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders** and select **New**.
 1. In the **Customer account** field, select an EU customer.  
@@ -122,7 +122,7 @@ To sell products for EU customers, follow these steps.
 
 ## Transfer transactions to the Intrastat
 
-To transfer transactions to the Intrastat, follow these steps.
+To transfer transactions to the Intrastat, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Foreign trade \> Intrastat** and select **Transfer**.
 1. In the **Customer invoice** field, select **Yes**.

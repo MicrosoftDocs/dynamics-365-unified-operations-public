@@ -19,7 +19,7 @@ The *Release to warehouse rule* feature provides flexibility during release to t
 
 ## <a name="set-option-warehouse"></a>Set the release to warehouse rule for each warehouse
 
-To set the release to warehouse rule for each warehouse, follow these steps.
+To set the release to warehouse rule for each warehouse, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Select the warehouse to configure.

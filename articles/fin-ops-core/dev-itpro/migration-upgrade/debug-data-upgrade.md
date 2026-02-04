@@ -36,7 +36,7 @@ Depending on the error message, you might have to debug the class method during 
 
 ## Debugging steps
 
-To debug a PreSync or PostSync upgrade class/method, follow these steps.
+To debug a PreSync or PostSync upgrade class/method, follow these steps:
 
 1. On the development virtual machine (VM) where you're running the data upgrade, open Visual Studio. (The VM can be in a cloud hosted environment or on a virtual hard disk \[VHD\].) Learn more in [Upgrade from AX 2012 - Data upgrade in development environments]( data-upgrade-2012.md).
 2. Create a new, empty Dynamics 365 finance and operations solution. This step is useful when you debug and drill into sub-methods. You don't have to add any objects to the solution and project.

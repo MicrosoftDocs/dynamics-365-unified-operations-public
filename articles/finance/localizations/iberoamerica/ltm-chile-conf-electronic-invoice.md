@@ -106,7 +106,7 @@ The inventory transfer format (**Invent transfer (CL)**) should be printed from 
 
 ### Print the Inventory transfer format for Chile
 
-To print the Inventory transfer format for Chile, follow these steps.
+To print the Inventory transfer format for Chile, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 1. Select the format report **Invent transfer (CL)**.

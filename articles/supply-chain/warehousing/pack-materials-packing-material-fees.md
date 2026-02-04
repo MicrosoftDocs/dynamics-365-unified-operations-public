@@ -38,7 +38,7 @@ Before you can calculate packing material weights, packing material fees, or bot
 1. Go to **Inventory management \> Setup \> Packing material \> Packing material fees**, and set a fee for each type of packing material that you just defined. Fees are calculated based on the price per unit that is consumed.
 1. To allocate packing materials to items, go to **Inventory management \> Setup \> Packing material \> Packaging material allocation**, and create allocations. You can create as many allocations as you require. You can allocate packing materials for individual items, groups of items (packing groups), or all items, depending on how detailed your allocations should be.
 
-    For each allocation that you create, follow these steps.
+    For each allocation that you create, follow these steps:
 
     1. On the **General** FastTab, set the following fields:
 
@@ -75,7 +75,7 @@ The system doesn't create packing material transactions for purchase order lines
 
 ## Set up license numbers for customers that are charged packing material fees
 
-If the sales orders for a specific customer should include charges for the packing materials that are used for each order, follow these steps.
+If the sales orders for a specific customer should include charges for the packing materials that are used for each order, follow these steps:
 
 1. Go to **Accounts receivable \> Customers \> All customers**.
 1. Select the customer that should be charged for packing materials.

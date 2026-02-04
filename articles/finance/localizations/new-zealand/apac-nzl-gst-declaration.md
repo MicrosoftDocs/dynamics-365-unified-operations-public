@@ -58,7 +58,7 @@ The GST declaration form includes a set of boxes (lines) that correspond to spec
 
 The application-specific parameters option lets you to establish the criteria of how the tax transactions will be collected and calculated in each box of the declaration form when the report is generated depending on the configuration of sales tax code.
 
-To set up application-specific parameters, follow these steps.
+To set up application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
 1. Select the format, and then select **Configurations** \> **Setup** to set up the rules to identify the tax transaction in the related box of the GST return form.
@@ -122,7 +122,7 @@ The following table provides the available values in the **Name** column. This i
 
 To generate the GST return form report in PDF format, define an ER format on the **General ledger parameters** page.
 
-To set up general ledger parameters, follow these steps.
+To set up general ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **GST101A Declaration PDF(NZ)**. If you leave the **VAT statement format mapping** field blank, the standard sales tax report is generated in SSRS format.
@@ -132,7 +132,7 @@ To set up general ledger parameters, follow these steps.
 
 The process of preparing and submitting a GST return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview[(../general-ledger/indirect-taxes-overview.md)
 
-To generate a GST return report, follow these steps.
+To generate a GST return report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
 1. Select the **Settlement period**.

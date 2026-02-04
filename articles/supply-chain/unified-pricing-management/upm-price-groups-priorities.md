@@ -89,7 +89,7 @@ When the system calculates prices, it checks for priorities for trade agreements
 
 ## Review calculated priorities
 
-After a calculation, the calculated priorities are shown on sales order lines for the applied pricing rules. To review the calculated priority values, follow these steps.
+After a calculation, the calculated priorities are shown on sales order lines for the applied pricing rules. To review the calculated priority values, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Find and open the sales order that you want to check.

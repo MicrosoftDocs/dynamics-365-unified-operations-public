@@ -172,7 +172,7 @@ You can import asset manifests into the site builder media library of your e-com
 
 Manifest-based asset import operations for e-commerce sites are initiated from the site builder media library.
 
-To bulk import an asset manifest into site builder, follow these steps.
+To bulk import an asset manifest into site builder, follow these steps:
 
 1. In site builder, go to the site that you want to import the manifest into.
 1. Go to **Media library**.
@@ -194,7 +194,7 @@ To bulk import an asset manifest into site builder, follow these steps.
 
 Manifest-based product media assignment asset import operations are initiated from the media library of your omnichannel. Manifests that include product media assignments are imported from the **Product media** view in your omnichannel.
 
-To bulk import a product media assignment asset manifest, follow these steps.
+To bulk import a product media assignment asset manifest, follow these steps:
 
 1. In site builder, go to the omnichannel for your environment.
 1. Select **Product media**.
@@ -214,7 +214,7 @@ You can export asset manifests from the site builder media library of your e-com
 
 ### Bulk export an asset manifest
 
-To bulk export an asset manifest, follow these steps.
+To bulk export an asset manifest, follow these steps:
 
 1. In site builder, go to the site or omnichannel that you want to export the manifest from.
 1. Go to **Media library**.
@@ -226,7 +226,7 @@ To bulk export an asset manifest, follow these steps.
 
 ### Bulk export a product media assignment manifest
 
-To bulk export a product media assignment manifest, follow these steps.
+To bulk export a product media assignment manifest, follow these steps:
 
 1. In site builder, go to the omnichannel of your environment.
 1. Select **Product media**.

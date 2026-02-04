@@ -28,7 +28,7 @@ Before you start the LATAM Withholding tax engine configuration, meet the follow
 
 ## Configure the LATAM withholding tax engine
 
-To configure the LATAM withholding taxes for vendor payments follow these steps.
+To configure the LATAM withholding taxes for vendor payments follow these steps:
 
 1. Enable withholding tax LATAM features and configurations.
 1. Configure withholding documents.
@@ -49,14 +49,14 @@ This section explains all the configurations needed to set up document classes u
 
 #### Configure the document class type
 
-To configure the document class type, follow these steps.
+To configure the document class type, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class type** and create a document class type **Withholding**.
 1. In the **Payment media** section, select **Yes** in the payment media field.
 
 #### Configure the document class
 
-To configure the document class, follow these steps.
+To configure the document class, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** and create a document class as a payment method **Withholding**, for example **Retencion IVA**.
 1. In the **Payment media type** section of the **Document class**, select **Calculated withholdings**.
@@ -71,14 +71,14 @@ This section explains how to set up document classes as payment orders used in v
 
 #### Configure the document class type
 
-To configure the document class type, follow these steps.
+To configure the document class type, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class type** and create a document class type **payment order**.
 1. In the **journal** section, select the appropriate option for this document.
 
 #### Configure the document class
 
-To configure the document class, follow these steps.
+To configure the document class, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** and create a document class to be used as a payment order in the vendor type line of the payment journal.
 1. In the payment order **Document class**, enable the **Apply withholding calculation** slider. This configuration is important for withholding tax calculation at the moment of the vendor payment.
@@ -91,14 +91,14 @@ To configure a vendor payment journal, go to **General ledger** > **Journal setu
 
 ### Configure a set of taxes
 
-To configure a set of taxes, follow these steps.
+To configure a set of taxes, follow these steps:
 
 1. Go to **Tax** > **Indirect taxes** > **LATAM** > **Set of taxes**, create a new record, and enter an ID and a name.
 1. In the **Tax detail** section, add the tax codes that you use for defining and calculating the withholding tax base amount.
 
 ### Configure withholding tax codes
 
-To configure withholding tax codes, follow these steps.
+To configure withholding tax codes, follow these steps:
 
 1.  Go to **Tax** > **Indirect taxes** > **Withholding tax** > **Withholding tax codes** and create a new record. Enter a new code and a new name for the record.
 1. Add a **Document class ID** configured as a **Calculated withholding**.
@@ -154,7 +154,7 @@ To configure withholding tax codes, follow these steps.
 
 The **Withholding tax group** defines the withholding tax codes that the system calculates in a vendor transaction.
 
-To configure a withholding tax group, follow these steps.
+To configure a withholding tax group, follow these steps:
 
 1. Go to **Tax** > **Indirect taxes** > **Withholding tax** > **Withholding tax groups** and create a new record. Enter a group ID and a description. 
 1. In the **Configuring** section, add the withholding tax codes for the group.

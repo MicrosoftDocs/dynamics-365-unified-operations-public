@@ -1,10 +1,10 @@
 ---
 title: Set up Dynamics 365 Finance user roles for budget register entry write-back
-description: Learn which roles and duties are required in Dynamics 365 Finance for Business Performance Planning to successfully export data to budget register entry.
+description: Learn which roles and duties are required in Dynamics 365 Finance for Business performance planning to successfully export data to budget register entry.
 author: twheeloc
 ms.author: romainpham
 ms.topic: install-set-up-deploy
-ms.date: 11/14/2025
+ms.date: 11/25/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -65,6 +65,7 @@ To assign roles and duties, follow these steps:
 
 After verifying the roles and user configuration, ensure the Finance connection variable and virtual entities are correctly configured in Dataverse.  
 For more information, see [Configure the Finance connection and virtual entities for write-back](bpp-bud-reg-write.md).
+
 
 
 

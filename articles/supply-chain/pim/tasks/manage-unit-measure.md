@@ -29,7 +29,7 @@ If your system doesn't already include the most commonly used units of measure f
 
 ## Create or edit a unit of measure
 
-To create or edit a unit of measure, follow these steps.
+To create or edit a unit of measure, follow these steps:
 
 1. Follow one of these steps:
 
@@ -58,7 +58,7 @@ To create or edit a unit of measure, follow these steps.
 
 ## Define unit translations
 
-To define translations for the ID or symbol and the description for a unit of measure, follow these steps.
+To define translations for the ID or symbol and the description for a unit of measure, follow these steps:
 
 1. Create or select the unit to create translations for.
 1. On the Action Pane, select **Unit texts**.
@@ -82,7 +82,7 @@ To define translations for the ID or symbol and the description for a unit of me
 
 ## Define unit conversion rules
 
-To define rules for conversions between units of measure, follow these steps.
+To define rules for conversions between units of measure, follow these steps:
 
 1. Create or select the unit to define conversion rules for.
 1. On the Action Pane, select **Unit conversions**.

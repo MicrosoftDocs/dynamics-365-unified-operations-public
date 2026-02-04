@@ -13,7 +13,7 @@ ms.search.region: France
 
 # Generate an FEC in Dynamics 365 Finance
 
-To generate a Fichier des écritures comptables (FEC) audit file, follow these steps.
+To generate a Fichier des écritures comptables (FEC) audit file, follow these steps:
 
 1. Go to **General Ledger** \> **Periodic tasks** \> **Data export**. 
 2. If the Electronic reporting (ER) format isn't set up in the **Format mapping** field on the **General ledger parameters** page, select **FEC audit file (FR)** in the **Format mapping** field on the **Data export** page. Then select **OK**. 

@@ -49,7 +49,7 @@ This article describes the steps that you must follow to enable the integration 
 
 In Human Resources, you must turn on the integration and enter the configuration information to connect to Dayforce. If you want the general ledger transaction that is produced to be imported into Microsoft Dynamics 365 Finance, you must also set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance.
 
-To turn on the integration in Human Resources, follow these steps.
+To turn on the integration in Human Resources, follow these steps:
 
 1. On the **System administration** page, select **Integration configuration**.
 2. Enter the secure File Transfer Protocol (FTP) endpoint and the secure FTP folder path.

@@ -34,7 +34,7 @@ The examples use the following setup for accounts payable invoice matching for F
 -   The price tolerance percentage for the legal entity is 2 percent.
 
 ## Example: Price matching and intercompany trade
-The net amounts for the intercompany vendor invoice and the intercompany customer invoice must be equal. This requirement overrides any invoice matching approvals or price tolerance percentages that apply. For example, you follow these steps.
+The net amounts for the intercompany vendor invoice and the intercompany customer invoice must be equal. This requirement overrides any invoice matching approvals or price tolerance percentages that apply. For example, you follow these steps:
 1.  In Fabrikam Purchase, create sales order SO888 for customer 4020. Intercompany purchase order ICPO222 is automatically created for vendor 3024 in Fabrikam Purchase, and sales order ICSO888 is automatically created in Fabrikam Sales.
 2.  In Fabrikam Sales, register that the items have been received, and post a packing slip. The status of ICSO888 changes to Delivered. The status of ICPO222 changes to Received.
 3.  In Fabrikam Sales, update an invoice for ICSO888. The unit price is 0.45, and 100 items are updated.
@@ -49,7 +49,7 @@ This example uses the following additional setup for accounts payable invoice ma
 -   On the **Item model groups** page for the model group that is used by item B-R14, the **Receiving requirements** option is selected.
 -   The on-hand quantity for item B-R14 is 0 (zero).
 
-For example, you follow these steps.
+For example, you follow these steps:
 1.  In Fabrikam Purchase, create sales order SO999 for customer 4020. The order contains one line item: 100 batteries (item B-R14) at a unit price of 1.00 each. Intercompany purchase order ICPO333 is automatically created for vendor 3024 in Fabrikam Purchase, and sales order ICSO999 is automatically created in Fabrikam Sales.
 2.  In Fabrikam Sales, perform an invoice update for ICSO999. Posting is unsuccessful, because the item is out of stock and has not yet been received. Therefore, the financial information cannot be updated.
 3.  In Fabrikam Sales, register that the items have been received, and post a packing slip for ICSO999. A product receipt for ICPO333 is automatically posted in Fabrikam Purchase. In Fabrikam Purchase, the received quantity for item B-R14 changes to 100.

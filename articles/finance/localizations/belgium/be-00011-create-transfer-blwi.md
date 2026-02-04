@@ -24,7 +24,7 @@ To create and transfer transaction to the BLWI, you must first set up BLWI infor
 
 Customer/vendor transactions marked with one of the chosen payment purpose codes with customer/vendor primary address are in a country/region different from the country/region of the legal entity are included in BLWI report.
 
-To create and transfer transaction to the BLWI, follow these steps.
+To create and transfer transaction to the BLWI, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Foreign trade \> BLWI**.
 2. Select **Transfer**.

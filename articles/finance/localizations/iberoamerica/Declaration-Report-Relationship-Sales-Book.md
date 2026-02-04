@@ -46,7 +46,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the **LTM Tax Report** group, select the **Declaration Reports Relationship Sales Book VEN** format.
@@ -69,7 +69,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the Declaration Reports Relationship Sales Book for Venezuela
 
-To generate the Declaration Reports Relationship Sales Book for Venezuela, follow these steps.
+To generate the Declaration Reports Relationship Sales Book for Venezuela, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select **Declaration Reports Relationship Sales Book VEN**.

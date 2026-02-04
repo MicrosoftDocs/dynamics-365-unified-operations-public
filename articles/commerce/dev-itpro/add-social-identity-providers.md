@@ -46,7 +46,7 @@ Before you can add a social identity provider for authentication, you must go to
 > [!NOTE]
 > Adding social identity providers is an optional step when setting up a business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 
-To add and set up a social identity provider, follow these steps.  
+To add and set up a social identity provider, follow these steps:  
 
 1. In the Azure portal, navigate to **Identity Providers**.
 1. Select **Add**. The **Add identity provider** screen appears.

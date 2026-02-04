@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 11/13/2025
+ms.date: 02/03/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,81 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.32.0
+
+Version 4.0.32.0 adds the following fixes and improvements:
+
+- Aligned authentication with Warehouse Management mobile app version 4.0.29.
+- Fixed an issue that caused some apps to crash in the previous version.
+
+## Version 4.0.31.0
+
+Version 4.0.31.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused some apps to crash in the previous version.
+- Added options to check Wi-Fi status, export HAR files, and view logs.
+- The app now sends meaningful Wi-Fi telemetry data to Application Insights.
+- Fixed several critical crash scenarios, including a gesture-related crash on older devices.
+- Fixed an issue where the *Confirm location* placeholder wasn't visible when scanning with the device camera.
+- Fixed a visual issue where the focus indicator on work list cards was invisible in light mode.
+- Added a **Diagnostics** button to the main menu to improve accessibility.
+- Fixed an issue where losing the internet connection redirected users to the sign-in page instead of the page where the connection was lost.
+- Resolved an authentication issue that required users to sign in a second time.
+
+## Version 4.0.30.0
+
+Version 4.0.30.0 adds the following fixes and improvements:
+
+- Fixed an authentication issue on on-premises Windows installations.
+- Improved transitions when navigating between pages.
+- Fixed an issue where the work list search field wasn't cleared after refreshing the page.
+- Fixed an issue where step instructions didn't remember the *Do not show again* selection when two menu items had the same name.
+- Improved Wi-Fi diagnostics through better request handling and clearer error reporting.
+- Fixed a concurrency-related issue that could cause sign-out failures.
+- Fixed an issue on custom legacy pages where fields could appear in the wrong order or show incorrect values after edits.
+- Added a loading spinner for long-running sign-out operations.
+
+## Version 4.0.29.0
+
+Version 4.0.29.0 adds the following fixes and improvements:
+
+- Fixed an authentication failure that occurred when multiple connections used the same client ID. The failure showed an incorrect redirect URL.
+- Fixed an issue that affected deployment of the app to iOS devices when using a mobile mass deployment (MDM) solution.
+- Improved support for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Added support for ProGlove devices.
+
+## Version 4.0.28.0
+
+Version 4.0.28.0 adds the following fixes and improvements:
+
+- Fixed an issue where pulling down to refresh didn't update the work list cards.
+- Enabled brokered authentication for Android, iOS, and Windows, which allows support for features such as [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Added an option on Android to use a new redirect URI, which is required for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Improved camera-based barcode scanning by adding camera zoom and augmented-reality assisted barcode focusing.
+- Fixed issues with hardware keyboard detection.
+- Added support for keycode mapping.
+- Fixed an issue that prevented nonnumerical placeholders from appearing in the step banner.
+- Fixed an issue affecting image setup for product and master variants.
+- Corrected case-sensitive redirect URI matching on Android.
+- Fixed an issue where entering a large digit in the calculator caused the delete button to move offscreen.
+- Improved localization across the app.
+
+## Version 4.0.27.0
+
+Version 4.0.27.0 adds the following fixes and improvements:
+
+- Resolved an issue where pressing Enter on the scanner hardware keyboard didn't submit the value.
+- Fixed a bug that added an extra pipe character when submitting a value.
+- Corrected an issue where entering a long digit in the calculator caused the backspace to move unexpectedly.
+- Implemented security enhancements.
+- Fixed a problem where the device token expired one hour after signing in with device code authentication.
+- Improved hardware keyboard functionality.
+- Resolved an issue where resizing the screen in Windows changed the order of footer action buttons.
+- Added the connection name to the worker sign-in page for better usability.
+- Fixed an iOS issue where the calculator appeared unexpectedly during the sales picking flow.
+- Addressed a crash that occurred when scrolling through a work list with many cards.
+- Fixed an issue where signing out as a default user required re-entering the device code for authentication.
 
 ## Version 4.0.26.0
 

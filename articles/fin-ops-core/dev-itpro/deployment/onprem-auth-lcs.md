@@ -26,7 +26,7 @@ The user who runs the script must have privileges to create Microsoft Entra appl
 
 To help reduce the impact of a security incident that is caused by a compromised certificate, we recommend that every environment has its own Microsoft Entra application, service principal, and certificate.
 
-To create the Microsoft Entra application and service principal, and to register the certificate, follow these steps.
+To create the Microsoft Entra application and service principal, and to register the certificate, follow these steps:
 
 1. Run the following command to create the Microsoft Entra application and service principal, and to register the certificate.
 
@@ -49,7 +49,7 @@ To create the Microsoft Entra application and service principal, and to register
 
 Eventually, your certificate will expire. You must then renew the certificate and update the service principal with the new certificate.
 
-To renew the certificate and update the service principal with the new certificate, follow these steps.
+To renew the certificate and update the service principal with the new certificate, follow these steps:
 
 1. Renew the certificate by using the same process that you used to create the original certificate.
 1. Run the following command to update the service principal with the new certificate.

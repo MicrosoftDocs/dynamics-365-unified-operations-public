@@ -2,9 +2,9 @@
 title: United Kingdom overview
 description: Access links to documentation resources for the United Kingdom, including links to resources about creating credits on settlement discounts, and VAT information. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/07/2021
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: United Kingdom
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides links to documentation resources for United Kingdom. 
+This article provides links to documentation resources for the United Kingdom.
 
 - [Construction Industry Scheme](emea-gbr-cis-construction-industry-scheme.md)
 - [Create a credit on the settlement discount](gb-00009-credit-note-settlement-discount.md)
@@ -44,6 +44,5 @@ This article provides links to documentation resources for United Kingdom.
 ## Regulatory updates for the United Kingdom
 
 For a complete list of regulatory updates for all countries/regions, see [Regulatory updates](../global/regulatory-updates.md).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

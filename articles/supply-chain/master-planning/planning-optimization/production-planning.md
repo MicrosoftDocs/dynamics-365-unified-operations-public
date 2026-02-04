@@ -55,7 +55,7 @@ If the lead time for required material is longer than the period between today's
 
 When you change information on a planned order, you receive the following message: "Note that the impact of manual changes on planned orders won't be reflected in the rest of the plan until the next master planning run."
 
-If you want to change information on a planned order and see the impact on the related material requirements, follow these steps.
+If you want to change information on a planned order and see the impact on the related material requirements, follow these steps:
 
 1. Update the planned order.
 2. Approve the planned order.

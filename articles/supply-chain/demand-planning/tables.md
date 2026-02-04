@@ -80,7 +80,7 @@ The **Historical Demand** table includes an **Order Type** column that classifie
 
 You can create your own non-system tables, or you can extend system tables by adding extra non-system columns. Custom tables and columns can be used in Demand planning just as system tables and columns can. For example, you can add important signals, such as weather data, inflation statistics, or other macroeconomic data.
 
-To create or edit a table, follow these steps.
+To create or edit a table, follow these steps:
 
 1. On the navigation pane, select **Data management** \> **Tables and data**.
 1. Follow one of these steps:
@@ -132,7 +132,7 @@ To create or edit a table, follow these steps.
 
 As required, you can delete all the records from a selected table but keep the table schema and its relationships. This approach can be useful if you must correct data that was incorrectly imported.
 
-To delete all the records in a table, follow these steps.
+To delete all the records in a table, follow these steps:
 
 1. On the navigation pane, select **Data management** \> **Tables and data**.
 1. In the **Name** column, select the name of the target table.

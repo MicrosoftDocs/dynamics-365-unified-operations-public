@@ -52,7 +52,7 @@ The following table describes the e-Ledger ER configurations.
 | 5 | XBRL GL (TR) (XML) | Format (exporting) | This electronic format implements the XBRL taxonomy that standardizes financial and business information in Türkiye. |
 | 6 | General ledger data model mapping | Model mapping | This model mapping is used to extract and structure financial data from Dynamics 365 for the generation of regulatory and statutory reports such as e-Ledger and SAF-T. |
 
-To configure application-specific parameters for the **XBRL GL (TR) (XML)** format, follow these steps.
+To configure application-specific parameters for the **XBRL GL (TR) (XML)** format, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace and select **Reporting configurations**.
 1. Select the **XBRL GL (TR) (XML)** configuration, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -190,7 +190,7 @@ To configure this mapping, select the appropriate financial dimension in the **D
 
 ## Generate the e-Ledger file and reports
 
-To generate the e-Ledger file and statutory reports, follow these steps.
+To generate the e-Ledger file and statutory reports, follow these steps:
 
 1. **Update the period status.** The status of the relevant ledger calendar period must be changed to **On hold**.
 1. **Assign journal item numbers.** This step involves enumerating journal entries from the beginning of the year. Journal item numbering must be done after the period is on hold or closed.
@@ -221,7 +221,7 @@ The **Statutory ledgers** FastTab on the **e-Ledger and statutory** page provide
 
 Before an e-Ledger file can be generated, the status of the related ledger calendar period must be changed to **On hold**.
 
-To change the status of the ledger calendar period, follow these steps.
+To change the status of the ledger calendar period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Calendars** \> **Ledger calendars**.
 1. Select **Calendar**.
@@ -241,7 +241,7 @@ This section explains how to assign journal item numbers to the voucher transact
 
 Each journal item must have a unique number that is assigned according to dates. The journal item numbering process is managed on the **e-Ledger and statutory ledger** page. Application of the process requires that journal item numbering is completed for all periods, starting from the beginning of the year. Journal item numbering should also be done for period 0 (the **Opening** period), and the first item number should be assigned to the opening voucher. If the e-Ledger is generated based on branches, journal item numbering must be applied separately for each branch.
 
-To sssign journal item numbers, follow these steps.
+To sssign journal item numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Period close** \> **e-Ledger and statutory ledger**.
 1. On the Action Pane, on the **Statutory ledger** tab, in the **Ledger item number** group, select **Assign journal item numbers** to create the ledger items and assign a unique number to each voucher transaction in the e-Ledger.
@@ -414,7 +414,7 @@ After all vouchers are submitted, and the data for the relevant period is confir
 > [!NOTE]
 > You can generate the e-Ledger file only after the relevant period is permanently closed. Before you close the period, you should use the **Statutory ledger book** and **Statutory general journal** reports to review the records that will be included in the e-Ledger file. If you find no issues in the e-Ledger records, you can permanently close the period and generate the e-Ledger file.
 
-To generate the e-Ledger file, follow these steps.
+To generate the e-Ledger file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Calendars** \> **Ledger calendars**.
 1. Update the status of the specific period from **On hold** to **Permanently closed** for the relevant legal entity.

@@ -65,7 +65,7 @@ The following configurations are required for Uruguay electronic invoices:
 
 ### Configure the legal entity
 
-To configure the legal entity, follow these steps.
+To configure the legal entity, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
@@ -79,7 +79,7 @@ To configure the legal entity, follow these steps.
 
 This configuration applies to Invoices, Credit notes, Debit notes, and Packing slips where the transfer type is defined as sale.
 
-To configure document classes, follow these steps.
+To configure document classes, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**.
 1. For each **Document class** that you want to use in Electronic Invoices:
@@ -91,7 +91,7 @@ To configure document classes, follow these steps.
 
 ### Configure the sales point prefix
 
-To configure sales point prefix, follow these steps.
+To configure sales point prefix, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix**.
 1. For each **Sales point prefix** that you want to use in Electronic Invoices:
@@ -100,14 +100,14 @@ To configure sales point prefix, follow these steps.
 
 ### Configure document class sales point
 
-To configure sales point address, follow these steps.
+To configure sales point address, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class sales point**.
 1. For each sales point prefix, in the **Printing Collapsible** tab, configure the address in **Printing Concept 1**, city in **Printing Concept 2**, and department in **Printing Concept 3**.
 
 ### Configure field master lists
 
-To configure field master lists, follow these steps.
+To configure field master lists, follow these steps:
 
 1. Go to **Organization administration > Setup > LATAM > Fields master List**.
 1. In the LIST 10,** configure the codes for reference reasons for credit and debit notes.
@@ -116,7 +116,7 @@ Learn more in [Field list configuration for Latin America](ltm-core-field-master
 
 ### Configure fiscal information
 
-To configure fiscal information, follow these steps.
+To configure fiscal information, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**.
 1. For each **Tax Id type** that you want to use in Electronic Invoices:
@@ -125,7 +125,7 @@ To configure fiscal information, follow these steps.
 
 ### Configure addresses
 
-To configure addresses, follow these steps.
+To configure addresses, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. For each record in Country/Region used in electronic invoices, go to **LATAM** \> **Tax application** to assign the tax application codes according to the Uruguayan regulations.
@@ -136,7 +136,7 @@ Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 ### Configure terms of payment
 
-To configure terms of payment, follow these steps.
+To configure terms of payment, follow these steps:
 
 1. Go to **Accounts receivable** \> **Payments setup** \> **Terms of payment**.
 1. For each **Term of payment** that you want to use in Electronic Invoices:
@@ -147,7 +147,7 @@ To configure terms of payment, follow these steps.
 
 ### Configure currencies 
 
-To configure currencies, follow these steps.
+To configure currencies, follow these steps:
 
 1. Go to **General ledger** \> **Currencies** \> **Currencies**.
 1. For each **Currency** that you want to use in Electronic Invoices:
@@ -157,7 +157,7 @@ To configure currencies, follow these steps.
 
 ### Configure reasons for delivery
 
-To configure the mode of sales in reasons for delivery, follow these steps.
+To configure the mode of sales in reasons for delivery, follow these steps:
 
 1. Go to **Sales and marketing** \> **Setup** \> **Distribution** \> **Reasons for delivery**.
 1. Create **Mode of sale** to use according to the Uruguayan regulations.
@@ -169,7 +169,7 @@ To configure the mode of sales in reasons for delivery, follow these steps.
 
 ### Configure mode of delivery
 
-To configure the mode of delivery, follow these steps.
+To configure the mode of delivery, follow these steps:
 
 1. Go to **Sales and marketing** \> **Setup** \> **Distribution** \> **Modes of delivery**.
 1. Create **Transportation method** to use according to the Uruguayan regulations.
@@ -181,7 +181,7 @@ To configure the mode of delivery, follow these steps.
 
 ### Configure taxes
 
-For each tax and percentage you use, follow these steps.
+For each tax and percentage you use, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. For each **Sales tax code** that you want to use in Electronic invoices:
@@ -192,7 +192,7 @@ For each tax and percentage you use, follow these steps.
 
 ## Configure electronic document references
 
-To configure electronic document references, follow these steps.
+To configure electronic document references, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **LATAM** > **Electronic documents references**, and follow these steps:
 1. In the **Tax application id** field, enter the ID that is used for Uruguayan electronic invoices.
@@ -202,7 +202,7 @@ For debit and credit notes, select **References** on the posting page, and add t
 
 ### Reference a document
 
-To reference a document, follow these steps.
+To reference a document, follow these steps:
 
 1. On the references page, go to the General tab, select **Source Vouchers**, and from the list of documents, select the document to associate.
 1. In the **Reference code** field, enter a numeric code for the reference reason.
@@ -212,7 +212,7 @@ Learn more in [Configure electronic document references](ltm-electronic-doc-refe
 
 ## Lookups configuration
 
-To configure the required lookups to issue an electronic document, follow these steps.
+To configure the required lookups to issue an electronic document, follow these steps:
 
 1. Go to **Organization administration > Electronic reporting > Configurations**.
 1. Select the report to configure from the left menu.
@@ -226,7 +226,7 @@ To configure the required lookups to issue an electronic document, follow these 
 
 ## Configure SSRS reports and services references
 
-To configure the **SSRS Reports / Services references** for electronic invoices, follow these steps.
+To configure the **SSRS Reports / Services references** for electronic invoices, follow these steps:
 
 1. Go to Organization administration, and select **Setup > LATAM > SSRS Reports / Services references**.
 1. Create a new record.

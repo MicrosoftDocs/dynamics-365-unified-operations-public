@@ -29,7 +29,7 @@ To reflect the goods and materials that are in transit, you can set the kind of 
 - Common
 - Purchased items in route
 
-To set up an inventory profile for a transferable item, follow these steps.
+To set up an inventory profile for a transferable item, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory profiles**.
 1. Select **New** to create an inventory profile for an item.
@@ -49,7 +49,7 @@ To set up an inventory profile for a transferable item, follow these steps.
  
 ## Set up a number sequence for the Counting act (INV-6) report
 
-To set up a number sequence for the Counting act (INV-6) report, follow these steps.
+To set up a number sequence for the Counting act (INV-6) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence for the **Counting act (INV-6)** reference.
@@ -57,7 +57,7 @@ To set up a number sequence for the Counting act (INV-6) report, follow these st
 
 ## Set up an inventory journal name for the Counting act (INV-6) report
 
-To set up an inventory journal name for the Counting act (INV-6) report, follow these steps.
+To set up an inventory journal name for the Counting act (INV-6) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Journal names** \> **Inventory**.
 1. Create a journal name.
@@ -77,7 +77,7 @@ To set up an inventory journal name for the Counting act (INV-6) report, follow 
 
 You can specify the company officials who are involved in the item counting process for the **Counting act (INV-6)** report.
 
-To add officials to the Counting act (INV-6) report, follow these steps.
+To add officials to the Counting act (INV-6) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 1. On the **Inventory** tab, select the **Counting act (INV-6)** option.
@@ -95,7 +95,7 @@ To add officials to the Counting act (INV-6) report, follow these steps.
 
 ### Create an inventory tracking dimension group for the Counting act (INV-6) report
 
-To create an inventory tracking dimension group for the Counting act (INV-6) report, follow these steps.
+To create an inventory tracking dimension group for the Counting act (INV-6) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Setup** \> **Dimension and variant groups** \> **Tracking dimension groups**.
 1. Select **New** to create a dimension group.
@@ -113,7 +113,7 @@ To create an inventory tracking dimension group for the Counting act (INV-6) rep
 
 ## Create a purchase agreement
 
-To create a purchase agreement, follow these steps.
+To create a purchase agreement, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **Purchase agreements**.
 1. Select **New** to open the **Create purchase agreement** dialog.
@@ -131,7 +131,7 @@ To create a purchase agreement, follow these steps.
 
 ## Add an inventory owner to the Counting act (INV-6) report
 
-To add an inventory owner to the Counting act (INV-6) report, follow these steps.
+To add an inventory owner to the Counting act (INV-6) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory owners**.
 1. Select **New** to add an inventory owner.
@@ -146,7 +146,7 @@ To add an inventory owner to the Counting act (INV-6) report, follow these steps
 
 ## Register goods and materials that are in transit
 
-To register goods and materials that are in transit, follow these steps.
+To register goods and materials that are in transit, follow these steps:
 
 1. Create a new purchase order. In the **Purchase agreement** field, select the purchase agreement that you created earlier, and then, on the purchase order line, in the **Item number** field, select the item number.
 
@@ -164,7 +164,7 @@ To register goods and materials that are in transit, follow these steps.
 
 You can use the **Print of counting act (INV-6)** dialog to generate a **Counting act (INV-6)** report as a Microsoft Excel file. You must generate this report to track items that are transferred between warehouses and to create a counting list of the items in the transfer that have been purchased. The counting list can contain on-hand inventory holdings.
 
-To generate a Counting act (INV-6) report, follow these steps.
+To generate a Counting act (INV-6) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Journal entries** \> **Item counting** \> **Counting**.
 1. Select **New** to open the **Dimensions display** dialog.

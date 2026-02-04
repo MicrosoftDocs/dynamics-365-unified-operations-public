@@ -31,7 +31,7 @@ To take advantage of this feature, you must perform a one-time setup in your Mic
  
 The first step is to create a new resource owner password credentials (ROPC) flow in your Microsoft Entra B2C tenant. 
 
-To create a new ROPC flow, follow these steps.
+To create a new ROPC flow, follow these steps:
 
 1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the tenant administrator of your Microsoft Entra B2C tenant, and then select the **Microsoft Entra B2C** service.
 1.	Select **User flows** and **New user flow**.

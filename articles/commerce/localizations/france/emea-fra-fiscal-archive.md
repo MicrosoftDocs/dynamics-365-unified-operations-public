@@ -204,7 +204,7 @@ The Fiscal archive integrity verification tool can be used to verify the integri
 
 The Fiscal archive integrity verification tool takes the form of a Windows PowerShell script and is published via the Commerce software development kit (SDK).
 
-To obtain the Fiscal archive integrity verification tool and run it against a fiscal archive, follow these steps.
+To obtain the Fiscal archive integrity verification tool and run it against a fiscal archive, follow these steps:
 
 1. Download the tool from the Commerce SDK:
 

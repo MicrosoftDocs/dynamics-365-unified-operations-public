@@ -34,7 +34,7 @@ Additionally, before you can adjust item cost in a secondary currency, verify th
 
 ## <a name="adjust-item-cost-using-inventory-adjustment-wizard"></a>Adjust item cost by using the Inventory adjustment wizard
 
-To adjust item cost by using the Inventory adjustment wizard, follow these steps.
+To adjust item cost by using the Inventory adjustment wizard, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management \> Periodic tasks \> Closing and adjustment** or **Inventory management \> Periodic tasks \> Closing and adjustment in currency**.
 1. On the Action Pane, select **Adjustment \> Wizard**.
@@ -100,7 +100,7 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
 
 ### Method for calculating an adjustment to a fixed cost price
 
-To calculate an adjustment to a fixed cost price, follow these steps.
+To calculate an adjustment to a fixed cost price, follow these steps:
 
 1. In Dynamics 365 Finance, open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 1. On the **Functions for calculating adjustment amounts** page, select **Fixed cost price**, and then select **Next**.
@@ -112,7 +112,7 @@ To calculate an adjustment to a fixed cost price, follow these steps.
 
 ### Method for calculating an adjustment by using an amount
 
-To calculate an adjustment by using an amount, follow these steps.
+To calculate an adjustment by using an amount, follow these steps:
 
 1. In Dynamics 365 Finance, open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 1. On the **Functions for calculating adjustment amounts** page, select **Amount**, and then select **Next**.
@@ -127,7 +127,7 @@ To calculate an adjustment by using an amount, follow these steps.
 
 ### Method for calculating an adjustment to a value
 
-To calculate an adjustment to a value, follow these steps.
+To calculate an adjustment to a value, follow these steps:
 
 1. In Dynamics 365 Finance, open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 1. On the **Functions for calculating adjustment amounts** page, select **Value**, and then select **Next**.
@@ -142,7 +142,7 @@ To calculate an adjustment to a value, follow these steps.
 
 ### Method for calculating a percentage adjustment
 
-To calculate a percentage adjustment, follow these steps.
+To calculate a percentage adjustment, follow these steps:
 
 1. In Dynamics 365 Finance, open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 1. On the **Functions for calculating adjustment amounts** page, select **Percent**, and then select **Next**.
@@ -159,7 +159,7 @@ To calculate a percentage adjustment, follow these steps.
 
 This method lets you determine the adjustment amount based on the balance of the main account on a specific date. The adjustment amount can be all balances and the values of the selected combinations of financial dimensions. This method can be used, for example, to close specific accounts, such as procurement costs or warehouse maintenance costs, on the item cost price of inventory.
 
-To calculate adjustment amounts from a ledger account, follow these steps.
+To calculate adjustment amounts from a ledger account, follow these steps:
 
 1. In Dynamics 365 Finance, open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 1. On the **Functions for calculating adjustment amounts** page, select **From ledger account**, and then select **Next**.
@@ -184,9 +184,9 @@ This method determines the balance of the account in the context of financial di
 
 #### Example
 
-On account 26.100, the **Department** dimension accumulates the amounts that you want to allocate to the cost of inventory that is accounted for in specific warehouses. To complete this process in the system, follow these steps.
+On account 26.100, the **Department** dimension accumulates the amounts that you want to allocate to the cost of inventory that is accounted for in specific warehouses. To complete this process in the system, follow these steps:
 
-To run through the example procedure, follow these steps.
+To run through the example procedure, follow these steps:
 
 1. Close the inventory before the end of the closing period.
 1. Open the **Inventory adjustment** wizard, select the **On-hand** method of adjustment, and then select **Next**.

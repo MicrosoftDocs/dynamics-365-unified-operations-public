@@ -1,11 +1,10 @@
 ---
 title: Order history with search and filters module
-description: This article covers the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+description: Learn about the order history with search and filters module and how to configure it in Microsoft Dynamics 365 Commerce.
 author: ashish-msft
-ms.date: 01/10/2024
+ms.date: 01/27/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,7 +15,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This article covers the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+This article describes the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
 The order history with search and filters module enhances the user experience of your e-commerce site by providing various search and filter options that shoppers can use to quickly find their orders. This module lists order search results together with information such as the order number, order confirmation number, order date, channel origin, order status, and order total. It also provides links to additional order details.
 
@@ -31,7 +30,7 @@ The order history with search and filters module works in the following ways:
 
 ## Add the order history with search and filters module to an order history page
 
-To add an order history with search and filters module to a new page and set the required properties, follow these steps.
+To add an order history with search and filters module to a new page and set the required properties, follow these steps:
 
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter the name **Order history template**, and then select **OK**.
@@ -62,11 +61,9 @@ To add an order history with search and filters module to a new page and set the
 
 You can configure the following module properties at either the template level or the page level:
 
-- **Show channel information** – When this property is enabled, the module shows the channel information that's associated with each order.
+- **Show channel information** – When you enable this property, the module shows the channel information associated with each order.
 - **Number of orders per page** – Specify the number of orders that are shown on a single order history page.
-- **Render sales order count** – When this property is enabled, the module shows the total order count.
-- **Enable grid view** – When this property is enabled, users can switch between the list and the grid views when they view their order history.
-
-
+- **Render sales order count** – When you enable this property, the module shows the total order count.
+- **Enable grid view** – When you enable this property, users can switch between the list and the grid views when they view their order history.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

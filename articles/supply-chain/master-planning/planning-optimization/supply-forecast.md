@@ -46,7 +46,7 @@ You can specify whether each master plan should consider forecasts when it runs.
 
 ## Set reduction options for coverage groups
 
-To set options that control how a coverage group reduces its forecast requirements for master plans that use transaction-based reduction, follow these steps.
+To set options that control how a coverage group reduces its forecast requirements for master plans that use transaction-based reduction, follow these steps:
 
 1. Go to **Master planning \> Setup \> Plans \> Coverage groups**.
 1. Select an existing coverage group in the list pane, or select **New** on the Action Pane to create a new one.
@@ -61,7 +61,7 @@ To set options that control how a coverage group reduces its forecast requiremen
 
 ## Enter a supply forecast for a product
 
-To enter a supply forecast for a product, follow these steps.
+To enter a supply forecast for a product, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the product that you want to enter a forecast for.

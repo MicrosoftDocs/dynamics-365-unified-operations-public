@@ -2,9 +2,9 @@
 title: Practice manager Power BI content
 description: Learn about what is included in the Practice manager Power BI content, including a table outlining reports that are included in the Power BI content.
 author: sericks007
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/18/2017
+ms.date: 12/02/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,11 +18,11 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes what is included in the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This article describes the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 ## Overview
 
-The **Practice manager** Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The dashboard gives an overview of the projects and related customers. A report-level filter can be used to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements.
+The **Practice manager** Power BI content is designed for practice managers and project managers. It provides key metrics related to the projects that the organization is working on. The dashboard gives an overview of the projects and related customers. You can use a report-level filter to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements.
 
 The **Practice manager** Power BI content contains five report pages: one overview page, and four pages that provide details about project costs, revenues, earned value management, and hour metrics that are broken down across various dimensions.
 
@@ -32,9 +32,9 @@ All the amounts in the content are shown in the system currency. You can set the
 
 The **Practice manager** Power BI content is shown in the **Project management** workspace.
 
-## Reports that are included in the Power BI content
+## Reports included in the Power BI content
 
-The following table provides details about the metrics that are found on each report page in the **Practice manager** Power BI content.
+The following table provides details about the metrics that appear on each report page in the **Practice manager** Power BI content.
 
 | Report page       | Metrics |
 |-------------------|---------|
@@ -44,14 +44,14 @@ The following table provides details about the metrics that are found on each re
 | EVM               | Cost and schedule performance index by project |
 | Hours             | <ul><li>Actual billable utilized hours vs. actual billable burden hours vs. budget hours</li><li>Actual billable utilized hours vs. actual billable burden hours by project</li><li>Actual billable utilized hours vs. actual billable burden hours by resource</li><li>Actual billable hours ratio by project</li><li>Actual billable hours ratio by resource</li></ul> |
 
-The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
-in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
+You can filter and pin the charts and tiles on all these reports to the dashboard. For more information about how to filter and pin 
+in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that a visualization summarizes.
 
 ## Understanding the data model and entities
 
-The following data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
+The following data fills the report pages in the **Practice manager** Power BI content. The Entity store stages this data as aggregate measurements. The Entity store is a Microsoft SQL Server database that's optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The following sections describe the aggregate measurements that are used in each entity.
+The following sections describe the aggregate measurements that each entity uses.
 
 ### Entity: ProjectAccountingCube\_ActualHourUtilization
 **Data source:** ProjEmplTrans

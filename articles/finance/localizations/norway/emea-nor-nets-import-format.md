@@ -23,7 +23,7 @@ You can import enrollment messages, AvtaleGiro and eInvoice, together with payme
 
 ## Import a Nets bank file
 
-To import a Nets bank file, follow these steps.
+To import a Nets bank file, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Payment journal** page.
 2. Select **Lines.**

@@ -35,7 +35,7 @@ The following connection types are used to import invoices:
 
 The channel for invoice importing will use the connections in further configuration steps. Before users can create a channel of a specific connection, the **Administrator** security role must be granted to them, and they must create connections.
 
-To create a connection to Microsoft Dataverse, follow these steps.
+To create a connection to Microsoft Dataverse, follow these steps:
 
 1. Go to **Admin system \> Default solution**.
 2. Select **New**, and then select **Connection Reference**.
@@ -46,7 +46,7 @@ To create a connection to Microsoft Dataverse, follow these steps.
 7. Enter the Dataverse account and password.
 8. After validation is passed, go to the connection page, select **Refresh**, select the account, and then select **Create**.
 
-To create an email or file storage connection, follow these steps.
+To create an email or file storage connection, follow these steps:
 
 1. On the **Connection creation** page, in the **Connection type** field, select **Office 365 Outlook**.
 2. For an email connection, you can select **Outlook.com** or **Office 365 Outlook** as the connector. For a file storage connection, you can select either **OneDrive** or **SharePoint**.

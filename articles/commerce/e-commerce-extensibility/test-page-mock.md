@@ -183,7 +183,7 @@ Use the following procedure if you must simulate real data or the token that is 
 
 The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the web browser's developer (F12) tools are open and a user is signed in, you can view the object by opening a console window and entering **\_\_\_initialData\_\_\_.requestContext.user**. 
 
-To simulate real data or the token that is returned from Commerce Server, follow these steps.
+To simulate real data or the token that is returned from Commerce Server, follow these steps:
 
 1. Load the e-commerce site page that you're working on, and sign in or create a new account.
 1. Open your web browser's debugging tools. For example, if you're using Google Chrome or Microsoft Edge, you can open the developer tools by selecting the **F12** key. 

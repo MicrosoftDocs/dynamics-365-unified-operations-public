@@ -25,7 +25,7 @@ Before you can complete this procedure, you must first import the following elec
 - payments.initial.version.xml
 - BillsOfExchangeRemittance_FR.xml
 
-To add a bank account to a customer record and update the customer method of payment, follow these steps.
+To add a bank account to a customer record and update the customer method of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, find and select the desired record.

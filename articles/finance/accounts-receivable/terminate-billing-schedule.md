@@ -30,7 +30,7 @@ To terminate a billing schedule or billing schedule line, go to one of the follo
 
 ## Terminate a billing schedule or line
 
-To terminate a billing schedule or billing schedule line, follow these steps.
+To terminate a billing schedule or billing schedule line, follow these steps:
 
 1. Select a billing schedule or a billing schedule line, and then select **Terminate**. 
 2. Set the **Termination date**, **Termination type**, and **Reason code** fields.
@@ -41,7 +41,7 @@ The status of the billing schedule changes, based on the termination type that y
 
 ## Terminate a billing schedule or line and apply a refund
 
-To terminate a billing schedule or billing schedule line and apply a refund, follow these steps.
+To terminate a billing schedule or billing schedule line and apply a refund, follow these steps:
 
 1. Select a billing schedule or a billing schedule line, and then select **Terminate**.
 2. Set the **Termination date**, **Termination type**, **Reason code**, and **Credit option** fields.
@@ -68,7 +68,7 @@ If the unbilled revenue feature is used, the **Unbilled revenue journal entry au
 
 ## Terminate a billing schedule or line without applying a credit
 
-To terminate a billing schedule or billing schedule line without applying a credit, follow these steps.
+To terminate a billing schedule or billing schedule line without applying a credit, follow these steps:
 
 1. Select a billing schedule or a billing schedule line, and then select **Terminate**.
 2. Set the **Termination date** field.

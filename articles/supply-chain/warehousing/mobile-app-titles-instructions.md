@@ -42,14 +42,14 @@ The step instruction is automatically shown when a step is opened. Workers can d
 
 ## Load the default setup
 
-If your system doesn't already contain default customizable step titles or instructions, then you can load a default setup. The default setup provides texts for all the available step IDs in every supported language. To load the default setup, follow these steps.
+If your system doesn't already contain default customizable step titles or instructions, then you can load a default setup. The default setup provides texts for all the available step IDs in every supported language. To load the default setup, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. On the Action Pane, select **Create default setup**. The page is filled in with the standard steps.
 
 ## Customize step titles and instructions
 
-To customize the title and/or instruction for a step in any number of languages, follow these steps.
+To customize the title and/or instruction for a step in any number of languages, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 
@@ -76,7 +76,7 @@ As was mentioned in the previous section, you can create any number of menu-spec
 
 Each override applies to a specific mobile device menu item and can contain any number of translations. If no override exists for a menu item, the menu item uses the standard texts. If no override translation is defined for a language, the standard texts are used, even for menu items where an override is defined for other languages.
 
-To create and configure an override, follow these steps.
+To create and configure an override, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. In the grid, find and select the row to create an override for.

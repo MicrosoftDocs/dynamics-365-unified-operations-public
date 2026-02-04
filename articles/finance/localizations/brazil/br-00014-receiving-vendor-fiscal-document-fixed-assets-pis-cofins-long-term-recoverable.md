@@ -23,7 +23,7 @@ You can post a fiscal document that you receive from the acquisition of fixed as
 
 The following procedure uses the BRMF demo company.
 
-To post a fiscal document received from the acquisition of fixed assets, follow these steps.
+To post a fiscal document received from the acquisition of fixed assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.

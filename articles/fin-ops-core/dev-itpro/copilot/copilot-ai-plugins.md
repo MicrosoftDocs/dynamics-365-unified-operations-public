@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 11/05/2025
+ms.date: 01/26/2026
 
 ---
 
@@ -15,14 +15,14 @@ ms.date: 11/05/2025
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+ 
 Finance and operations apps let you create AI tools to extend the capabilities of agents and copilots that invoke business logic in finance and operations apps. You can add these tools to the in-app Copilot for finance and operations apps, other Microsoft copilots or agents, or custom agents.
 
 The tools you create can use the finance and operations business logic that you want to use in your agents across Microsoft products. These tools are headless operations. They don't require specific context in the finance and operations client. You enable them by creating an X++ class deployed in the environment, decorated with attributes identifying the class as one that an AI agent can invoke. The class has request and response parameters defining the inputs received from the agent, and the outputs returned after the business logic executes.
 
 Agents can invoke these classes with business logic in two ways:
 
-1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations apps](copilot-mcp.md#using-actions-that-invoke-application-code).
+1. The **Dynamics 365 ERP MCP** server makes the classes available to find and invoke by using the `find_actions` and `invoke_action` tools. When you create and deploy the classes in the environment, and define appropriate security for the associated menu action item, the actions become automatically accessible through the MCP server. Learn more in [Use Model Context Protocol for finance and operations](copilot-mcp.md#dynamic-context).
 1. You can also build a separate API and related tool in Dataverse to call the class. If you don't use the MCP server, you need to create Dataverse and Copilot Studio objects that make the operation available as a tool in your agent.
 
 Users in copilot chat or autonomous agents can then invoke the business logic in natural language and receive copilot responses that are based on the business logic of the finance and operations code base.
@@ -67,19 +67,19 @@ Learn more about the tool architecture and execution in [Architecture of Copilot
 
 ## Define the operation in X++
 
-In X++, you must create a class that Copilot Studio calls and runs code when it invokes the tool.
+In X++, create a class that Copilot Studio calls to run code when it invokes the tool.
 
 ### AI tool
 
-You must add the `AIPluginOperationAttribute` attribute to the new class to define it as an AI operation. This attribute enables the class to be associated with the related Custom API and AI tool that you must create in Dataverse for the class.
+Add the `AIPluginOperationAttribute` attribute to the new class to define it as an AI operation. This attribute associates the class with the related Custom API and AI tool that you must create in Dataverse for the class.
 
 ### Data contract
 
-You must add the `DataContract` attribute to the method to define it as a data contract. You can then pass complex data types as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. Learn more about how to implement data contracts in X++ in [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
+Add the `DataContract` attribute to the method to define it as a data contract. You can then pass complex data types as input and output parameters of the method, so that serialization and deserialization of the parameters aren't required for communication with Copilot Studio. For more information about how to implement data contracts in X++, see [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
 
 ### Custom API
 
-The new class creates the definition for a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). You must create this custom API in Dataverse and associate it with your class. When you invoke the tool in Copilot Studio, it calls the custom API and runs the logic in your class.
+The new class you create defines a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). You must create this custom API in Dataverse and associate it with your class. When you invoke the tool in Copilot Studio, it calls the custom API and runs the logic in your class.
 
 The new class must implement the `ICustomAPI` class, and you must decorate it with the `CustomAPIAttribute` class. These attributes indicate that the class is a Custom API that Dataverse can call.
 
@@ -137,7 +137,7 @@ To define the code that runs when the operation is invoked, use the `run` method
 
 ## Define tool security
 
-You must assign each tool operation to a security role that grants user access to perform the operation from an agent. For each class, follow these steps.
+You must assign each tool operation to a security role that grants user access to perform the operation from an agent. For each class, follow these steps:
 
 1. In Visual Studio, in your development project, create an action menu item. Give it a name that's similar to the name of your class.
 1. Set the following properties for the new action menu item:
@@ -147,20 +147,20 @@ You must assign each tool operation to a security role that grants user access t
 
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
-After you create and deploy the classes and security objects, you can verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, this is an indicator that it's configured correctly to be invoked by an AI tool. The grid includes every class that meets the following criteria:
+After you create and deploy the classes and security objects, verify the configuration by viewing the custom API on the **Dataverse Custom APIs** page in finance and operations apps (**System administration** \> **Setup** \> **Synchronize Dataverse Custom APIs**). On this page, ensure that your class is included in the grid. If your class is listed on the page with the appropriate security role, it's configured correctly to be invoked by an AI tool. The grid includes every class that meets the following criteria:
 
 - It implements the `ICustomApi` interface.
 - It contains the `[CustomApi]` attribute.
 - It has an associated action menu item that is included in a security privilege that is assigned to a duty/role.
 
 > [!NOTE]
-> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. Flushing the cache is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. Run `SysFlushAOD` by adding the class runner to your environment URL:
+> After deploying the new classes to your environment, ensure the extension cache is flushed before the new classes can be invoked. Flushing the cache is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. Run `SysFlushAOD` by adding the class runner to your environment URL:
 >
 > `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=SysClassRunner&cls=SysFlushAOD`
 
 ## Create the AI tool
 
-After you define the operation in X++ and deploy it in your finance and operations environment, you must create the custom API in Dataverse. You can then use the Dataverse connector to add the Custom API as a tool in your agent. Create a Dataverse Custom API and add the API as an unbound action to your agent using the Dataverse connector. Create the object in your Power Apps solution that you deploy with your agent or extension.
+After you define the operation in X++ and deploy it in your finance and operations environment, create the custom API in Dataverse. You can then use the Dataverse connector to add the Custom API as a tool in your agent. Create a Dataverse Custom API and add the API as an unbound action to your agent using the Dataverse connector. Create the object in your Power Apps solution that you deploy with your agent or extension.
 
 ### Create the Dataverse custom API
 
@@ -186,7 +186,7 @@ The [Dataverse custom API](/power-apps/developer/data-platform/custom-api) is th
 
 #### Add request parameters to the API
 
-After you create the API, you must add parameters to it. To create request parameters, follow these steps for each `CustomAPIRequestParameter` property in your X++ class.
+After you create the API, add parameters to it. To create request parameters, follow these steps for each `CustomAPIRequestParameter` property in your X++ class.
 
 1. In your solution, select **New** \> **More** \> **Other** \> **Custom API Request Parameter**.
 1. On **New Custom API Request Parameter**, enter the following details for the parameter:
@@ -227,9 +227,9 @@ Response properties are the outputs of the action. To create response properties
 
 ## Add the action as a tool in your agent
 
-For each operation with a Custom API, you can add the action to any agent in Copilot Studio with access to the object. For example, you can add the action to Copilot for finance and operations apps or custom agents. 
+For each operation that uses a Custom API, you can add the action to any agent in Copilot Studio that has access to the object. For example, you can add the action to Copilot for finance and operations apps or to custom agents. 
 
-To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps.
+To add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or to a custom copilot, follow these steps:
 
 1. In Copilot Studio, open the agent where you want to add the new capability.
 1. On the **Tools** page, select **Add a tool**.
@@ -238,8 +238,8 @@ To add your AI operation to the in-app sidecar chat experiences in finance and o
 1. Select a **Connection**, and select **Add and configure**.
 1. In the **Details** section:
    
-   1. Provide a **Name** value that's specific to the operation. This value could be the same name as the Custom API.
-   1. Provide a **Description** that describes the operation to be performed. This description is the field the agent orchestrator uses to understand when generative orchestration needs to call the operation.
+   1. Enter a **Name** value that's specific to the operation. This value can be the same name as the Custom API.
+   1. Enter a **Description** that describes the operation to be performed. The agent orchestrator uses this description to understand when generative orchestration needs to call the operation.
    1. Select the appropriate **Authentication** option for your agent.
 
 1. In the **Inputs** section:
@@ -255,7 +255,7 @@ Learn more about how to add actions to your agent in [Add tools to custom agents
 
 ### Configure the copilot to invoke the action
 
-The agent where you add the new tool must be able to determine when it should invoke the action as part of the agent orchestration. The copilot needs a way to match a user's prompt in the chat pane or autonomous trigger to your action or sequence of actions. There are two ways to enable the copilot to include the action in the copilot orchestration:
+The agent where you add the new tool must be able to determine when it should invoke the action as part of the agent orchestration. The copilot needs a way to match a user's prompt in the chat pane or autonomous trigger to your action or sequence of actions. Two methods enable the copilot to include the action in the copilot orchestration:
 
 - If your agent uses classic orchestration, create a topic that calls the action.
 - Enable the copilot to let generative AI orchestrate copilot topics and actions.

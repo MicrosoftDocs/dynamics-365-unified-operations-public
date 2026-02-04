@@ -112,14 +112,14 @@ IRP might limit the number of Internet Protocol (IP) addresses that it can be ac
 
 Additional fields are associated with EM items and required for their processing. They are included in the electronic message processing of the **OnlineInvoicing** (Indian online invoicing) type that is used to interoperate with the IRP system and are imported into the system by using a package of data entities. The system automatically sets values for additional fields when actions are run. IRP integration uses only one additional field.
 
-If no additional fields were imported from the data package, follow these steps.
+If no additional fields were imported from the data package, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**.
 2. Select **New**, and enter the **AppKey** and a **Unique ID** that identifies the unique user session.
 
 #### Set up executable class parameters
 
-To finalize the electronic message setup after you've imported the data package, follow these steps.
+To finalize the electronic message setup after you've imported the data package, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class setting**.
 2. Select **Generate EM**.
@@ -150,7 +150,7 @@ To work with the electronic message functionality, you must define related numbe
 
 Different groups of users might require access to the **OnlineInvoicing** and **CancelInvoice** processing. You can limit access, based on security groups that are defined in the system.
 
-To limit access to the **OnlineInvoicing** and **CancelInvoice** processing, follow these steps.
+To limit access to the **OnlineInvoicing** and **CancelInvoice** processing, follow these steps:
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select the **OnlineInvoicing** or **CancelInvoice** processing, and then add the security groups that must work with the processing. If no security group is defined for the processing, only a system administrator can see the processing on the **Electronic messages** page.
@@ -167,7 +167,7 @@ We recommend that you use Key Vault storage. For more information about how to s
 > [!NOTE]
 > If you follow the recommended setup and use Key Vault, all the secrets that are used (including **User name**, **User password**, **Client ID**, **Client secret**, and **Certificate**) must be uploaded to and defined in the customer's Key Vault storage before the Key Vault parameters are defined.
 
-To enable the use of Key Vault and advanced certificate storage, follow these steps.
+To enable the use of Key Vault and advanced certificate storage, follow these steps:
 
 1. Go to **System administration** > **Setup** > **System parameters**.
 2. Set the **Use advanced certificate store** option to **No** to store sensitive data locally. Set it to **Yes** to use Key Vault storage.

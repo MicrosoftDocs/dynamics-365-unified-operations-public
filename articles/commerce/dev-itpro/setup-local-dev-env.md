@@ -174,7 +174,7 @@ To find URLs that correspond to the CPOS and CSU that you deployed, review the c
 
 ## Switching from IIS mode to self-hosted mode
 
-If you switch between IIS and self-hosted modes, be sure to follow these steps. (If this run is your first run, you can skip these steps, because the values that are described here are the default values.)
+If you switch between IIS and self-hosted modes, be sure to follow these steps: (If this run is your first run, you can skip these steps, because the values that are described here are the default values.)
 
 - In Visual Studio Code, select **Run and Debug** (or select **Ctrl+Shift+D**). A drop-down menu that has a green arrow appears under the top navigation bar. Select **Debug with Self-Host**.
 - Open the **.vscode/tasks.json** file, and make sure that **baseProduct\_UseSelfHost** is set to **false**.

@@ -16,7 +16,7 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 
 A Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product. GTIN codes are assigned by the GS1 organization.
 
-To assign GTIN codes to a product, follow these steps.
+To assign GTIN codes to a product, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select a product in the grid.

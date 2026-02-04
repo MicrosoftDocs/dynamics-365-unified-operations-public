@@ -87,7 +87,7 @@ To create a new asynchronous Commerce API, you must create three classes:
 + Create the asynchronous response class by implementing the **Response** class.
 + Create the asynchronous handler class.
 
-To create the classes, follow these steps.
+To create the classes, follow these steps:
 
 1. Create the request class.
 

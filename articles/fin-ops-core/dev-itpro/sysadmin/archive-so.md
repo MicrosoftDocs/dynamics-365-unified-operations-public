@@ -2,9 +2,9 @@
 title: Archive Dynamics 365 Supply Chain Management Sales orders data
 description: Learn about how to archive Dynamics 365 Supply Chain Management Sales orders data, including prerequisites and an overview of installing solutions in Power Platform.
 author: pnghub
-ms.author: priysharma
+ms.author: twheeloc
 ms.topic: how-to
-ms.date: 4/09/2024
+ms.date: 01/14/2026
 ms.custom:
 ms.reviewer: twheeloc
 ---
@@ -30,7 +30,7 @@ The **Archive with Dataverse long term retention** feature should be enabled.
 
 ## Set up an archival job
 
-To schedule the long-term retention job, follow these steps.
+To schedule the long-term retention job, follow these steps:
 
 1. In Dynamics 365 Supply Chain Management, go to **System administration** \> **Archive with Dataverse long term retention workspace**.
 1. Select **Sales orders scenario**.
@@ -56,7 +56,7 @@ Select **View progress** on the archival job dashboard to view job status detail
 
 The **Archive with Dataverse long term retention** workspace shows the full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.
 
-To view details about a selected archive, follow these steps.
+To view details about a selected archive, follow these steps:
 
 1. Select the job, and then select **View history data** on the toolbar.
 1. The **Archived sales orders** page shows every sales order that's included in the archive job. To view an order, including its header and all its order lines, select it in the grid.

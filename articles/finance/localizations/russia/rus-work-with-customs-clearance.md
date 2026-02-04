@@ -37,7 +37,7 @@ The page for the customs journal consists of two parts, the header and journal l
 
 ### Create the customs journal header
 
-To create the customs journal header, follow these steps.
+To create the customs journal header, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Journal entries** \> **All customs journals**.
 1. To manage an existing customs journal, select a line, and then, on the Action Pane, select **Customs journal** \> **Edit**.
@@ -118,7 +118,7 @@ To create the customs journal header, follow these steps.
 
 ### Create customs journal lines
 
-To create customs journal lines, follow these steps.
+To create customs journal lines, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Journal entries** \> **All customs journals**.
 1. Select the line for a customs journal, and then, on the Action Pane, select **Customs journal** \> **Edit**.
@@ -164,7 +164,7 @@ To create customs journal lines, follow these steps.
 
     1. On the **Financial dimensions** tab, you can view financial information about the line that is defined from the line of the linked purchase order, invoice, sales order, or packing slip line.
 
-To create a new line, follow these steps.
+To create a new line, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Customs journal lines** FastTab, select **Create lines**.
 
@@ -222,7 +222,7 @@ The customs fee for issuance is automatically calculated based on the type of cu
 
 #### Calculate customs fees for storage and escort
 
-To calculate the customs fee for storage or escort, follow these steps.
+To calculate the customs fee for storage or escort, follow these steps:
 
 1. In Dynamics 365 Finance, open the customs journal.
 1. On the Action Pane, select **Manage** \> **Fees calculation**.
@@ -261,7 +261,7 @@ To calculate the customs fee for storage or escort, follow these steps.
 
 The amount of duty for the section can be adjusted only for a customs journal that has a status of **In progress** or **Issued**.
 
-To adjust the amount of duty for the section, follow these steps.
+To adjust the amount of duty for the section, follow these steps:
 
 1. In Dynamics 365 Finance, open the customs journal.
 1. On the **Customs journal lines** FastTab, select **Update line** \> **Adjust section amounts**.
@@ -272,7 +272,7 @@ To adjust the amount of duty for the section, follow these steps.
 
 ### Analyze the totals of the customs journal
 
-To analyze the totals of the customs journal, follow these steps.
+To analyze the totals of the customs journal, follow these steps:
 
 1. In Dynamics 365 Finance, open the customs journal or the **All customs journals** page.
 1. On the Action Pane, select **Customs journal** \> **Totals**.
@@ -295,7 +295,7 @@ To analyze the totals of the customs journal, follow these steps.
 
 ### Analyze the results of the customs journal section
 
-To analyze the results of the customs journal section, follow these steps.
+To analyze the results of the customs journal section, follow these steps:
 
 1. In Dynamics 365 Finance, open the customs journal.
 1. On the **Customs journal lines** FastTab, select **Customs journal line** \> **Overview of section data** to open the **Section overview** dialog for the section that owns the current journal line.
@@ -352,7 +352,7 @@ To analyze the results of the customs journal section, follow these steps.
 
 If you must generate a GTD number without issuing a GTD, open the customs journal or **All customs journals** page, and then, on the Action Pane, select **Manage** \> **GTD number registration**. Then, when you issue a GTD, you can change the **GTD number** and **Issuance date** values.
 
-Otherwise, to issue a GTD, follow these steps.
+Otherwise, to issue a GTD, follow these steps:
 
 1. In Dynamics 365 Finance, open a customs journal that has a status of **In progress**.
 1. On the Action Pane, select **Manage** \> **GTD issue**.
@@ -381,7 +381,7 @@ Otherwise, to issue a GTD, follow these steps.
 
 A GTD issuance can't be canceled if a KTS has been created for the receipt transactions that are related to the customs journal.
 
-To cancel a GTD issuance , follow these steps.
+To cancel a GTD issuance , follow these steps:
 
 1. In Dynamics 365 Finance, open a customs journal that has a status of **Issued**.
 1. On the Action Pane, select **Manage** \> **GTD issue cancelling**.
@@ -390,7 +390,7 @@ To cancel a GTD issuance , follow these steps.
 
 ### Post a customs journal
 
-To post a customs journal, follow these steps.
+To post a customs journal, follow these steps:
 
 1. In Dynamics 365 Finance, open a customs journal that has a status of **Issued**.
 1. On the Action Pane, select **Manage** \> **GTD posting**.
@@ -468,7 +468,7 @@ In accordance with a KTS that is created to update the customs payments, a compa
 > [!NOTE]
 > The status of the customs journal must be **Posted**.
 
-To create a customs value correction (KTS) for import or export transactions that are completed, follow these steps.
+To create a customs value correction (KTS) for import or export transactions that are completed, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Common** \> **All customs journals**.
 1. Select a customs journal, and then, on the Action Pane, select **Manage** \> **KTS creation**.
@@ -520,7 +520,7 @@ To create a customs value correction (KTS) for import or export transactions tha
 
 After you post a customs value correction (KTS), a facture is created. You can view the details of the facture on the **Facture journal** page.
 
-To post a customs value correction (KTS) for a customs journal, follow these steps.
+To post a customs value correction (KTS) for a customs journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Common** \> **All customs journals**.
 1. Select a customs journal that has a status of **Open**, and then, on the Action Pane, select **Customs value correction** \> **KTS posting**.
@@ -532,7 +532,7 @@ To post a customs value correction (KTS) for a customs journal, follow these ste
 
 When you post a customs journal or a KTS journal of the **Import** type, a facture is automatically generated for a GTD or a KTS.
 
-To create a facture of the GTD or KTS type, follow these steps.
+To create a facture of the GTD or KTS type, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Common** \> **All customs journals**.
 1. Select the customs journal.

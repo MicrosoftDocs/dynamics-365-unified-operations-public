@@ -47,7 +47,7 @@ Before you can print an electronic accounting plan for Peru, the following prere
 
 ## Print the accounting plan report for Peru
 
-To print the accounting plan report for Peru, follow these steps.
+To print the accounting plan report for Peru, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **LATAM** \> **General ledger**.
 1. In the **Report ID** field, select the corresponding report/service ID.

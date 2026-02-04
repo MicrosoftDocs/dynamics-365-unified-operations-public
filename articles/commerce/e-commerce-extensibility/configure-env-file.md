@@ -116,7 +116,7 @@ MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynami
 
 The **MSDyn365Commerce\_OUN** variable defines the operating unit number for the channel.
 
-To find the channel operating unit number, follow these steps.
+To find the channel operating unit number, follow these steps:
 
 1. Go to the Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use. You should see an **Operating unit number** column, as shown in the following illustration.
@@ -137,7 +137,7 @@ The **MSDyn365Commerce\_CATALOGID** variable defines the catalog ID for the onli
 
 The **MSDyn365Commerce\_CHANNELID** variable defines the online channel that you're connecting to.
 
-To find the channel ID, follow these steps.
+To find the channel ID, follow these steps:
 
 1. Go to the Dynamics 365 Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use.
@@ -166,7 +166,7 @@ The **MSDyn365Commerce\_BASEIMAGEURL** variable defines the URL for a website's 
 
 In both URLs, you must replace **{CMS\_TENANT\_ID}** with the content management system (CMS) tenant ID that is assigned to your site.
 
-To get the CMS tenant ID in Dynamics 365 Commerce, follow these steps.
+To get the CMS tenant ID in Dynamics 365 Commerce, follow these steps:
 
 1. Under **Sites**, select your site.
 1. In the navigation pane on the left, select **Assets**.

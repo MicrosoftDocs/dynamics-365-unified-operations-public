@@ -26,7 +26,7 @@ This article doesn't discuss retroactive earnings. For information about retroac
 
 You can put one or more earnings statement lines on hold so that you can change information or correct errors. However, you can't put a line on hold if it's already included on a pay statement. You can use this procedure even if some or all of the earnings statement lines have been released. 
 
-To put earnings statement lines on hold, follow these steps.
+To put earnings statement lines on hold, follow these steps:
 
 1. Click **Payroll** &gt; **Earnings statements** &gt; **All Earnings statements**.
 2. Follow one of these steps:
@@ -38,7 +38,7 @@ To put earnings statement lines on hold, follow these steps.
 
 Use this procedure to change the status of all earnings statement lines from **None** to **Released**. You must release earnings statement lines before you generate pay statements. If an earnings statement line is on hold, this procedure releases it only if you select the **Release lines on hold** check box. 
 
-To release earnings statement lines, follow these steps.
+To release earnings statement lines, follow these steps:
 
 1. Click **Payroll** &gt; **Earnings statements** &gt; **All Earnings statements**, and select **Release earnings statement**.
 2. In the **Pay cycle** field, select the pay cycle of the worker positions to process.

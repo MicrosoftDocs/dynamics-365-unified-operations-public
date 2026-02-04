@@ -1,25 +1,24 @@
 ---
 title: Dynamics 365 Commerce and Microsoft Teams integration overview
-description: This article presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
+description: This article provides an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: ritakimani
-ms.date: 07/29/2024
+ms.date: 01/20/2026
 ms.topic: overview
-ms.custom: 
-  - bap-template
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2021-01-15
-ms.dyn365.ops.version: 10.0.18
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce and Microsoft Teams integration overview
 
 [!include [banner](includes/banner.md)]
 
-This article presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
+This article provides an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 
-Dynamics 365 Commerce is integrating with Teams to help customers and their employees improve productivity by synchronizing task management between the two applications. The seamless task management that Commerce and Teams integration provides lets store managers and employees create task lists, assign tasks to multiple stores, and track the status of tasks across stores, from either application.
+Dynamics 365 Commerce integrates with Teams to help customers and their employees improve productivity by synchronizing task management between the two applications. The seamless task management that Commerce and Teams integration provides lets store managers and employees create task lists, assign tasks to multiple stores, and track the status of tasks across stores, from either application.
 
 Commerce and Teams integration is available as of the Commerce version 10.0.18 release.
 
@@ -33,17 +32,17 @@ Here are some of the key features that the Commerce and Microsoft Teams integrat
 
 ## Prerequisites for using integration features
 
-The following prerequisites must be in place before you can start to use Microsoft Teams integration features:
+Before you can use Microsoft Teams integration features, make sure you have the following prerequisites:
 
-- Microsoft 365 Business Standard License (includes Teams.).
+- Microsoft 365 Business Standard License (includes Teams).
 - Microsoft Entra accounts for all store managers and workers.
 - Point of sale (POS) systems that are configured with Microsoft Entra authentication.
 
 ## Conceptual architecture
 
-The following illustration shows the conceptual architecture of Dynamics 365 Commerce and Microsoft Teams integration, using a San Francisco store as an example. Both Teams and the Commerce POS application use Microsoft Planner as a repository so that tasks that are published from Teams appear in the POS application and improvised tasks that are created by store managers in the POS application appear in Teams, resulting in a seamless task management experience between the applications.    
+The following illustration shows the conceptual architecture of Dynamics 365 Commerce and Microsoft Teams integration, using a San Francisco store as an example. Both Teams and the Commerce POS application use Microsoft Planner as a repository. As a result, tasks that are published from Teams appear in the POS application, and improvised tasks that store managers create in the POS application appear in Teams. This integration provides a seamless task management experience between the applications.    
 
-![Architecture of Commerce and Teams integration.](media/d365-commerce-teams-integration-conceptual-architecture.png)
+:::image type="content" source="media/d365-commerce-teams-integration-conceptual-architecture.png" alt-text="Screenshot of the architecture of Commerce and Teams integration.":::
 
 ## Additional resources
 
@@ -55,6 +54,6 @@ The following illustration shows the conceptual architecture of Dynamics 365 Com
 
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
 
-[Map stores and teams if there are pre-existing teams in Microsoft Teams](map-stores-existing-teams.md)
+[Map stores and teams if there are preexisting teams in Microsoft Teams](map-stores-existing-teams.md)
 
 [Dynamics 365 Commerce and Microsoft Teams integration FAQ](teams-integration-faq.md)

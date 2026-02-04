@@ -60,7 +60,7 @@ The following table lists the APIs that are currently available:
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
-To get a security service token, follow these steps.
+To get a security service token, follow these steps:
 
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
 1. Fetch a Microsoft Entra token (`aadToken`) by submitting an HTTP request that has the following properties:

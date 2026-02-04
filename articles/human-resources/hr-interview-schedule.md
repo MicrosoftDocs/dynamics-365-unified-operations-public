@@ -4,7 +4,7 @@
 title: Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on 
 description: Learn about the Interview schedule feature in the Microsoft Dynamics 365 Human Resources Recruiting add-on.
 author: twheeloc
-ms.date: 08/18/2025
+ms.date: 01/23/2026
 ms.topic: how-to
 # optional metadata
 
@@ -37,6 +37,8 @@ To meet these challenges, Microsoft developed an efficient and well-organized in
 ## Find interview time slots for panel members
 
 Recruiters can use this functionality to book time slots for panel members, based on their availability in their Outlook calendar. Recruiters can confirm time slots with panel members before they book them. Alternatively, they can select available time slots for booking without waiting for confirmation from panel members.
+
+New **Calendar** view is available with the Recruiting add-on: 2.2.3306.1 release. This visual interface provides a clear overview of each panel member’s availability, making scheduling more efficient and reducing back-and-forth communication. The inclusion of a legend (Available slot, busy slot, selected slot, confirmed slot, Sent for confirmation) ensures that users can quickly interpret the status of each slot, promoting transparency, and ease of use throughout the interview scheduling process.
 
 ### Book a slot with confirmation
 
@@ -96,7 +98,7 @@ After confirmation is received, the slot status is updated to **Confirmed**.
 
 Recruiters can share confirmed interview slots with one or more applicants. Those applicants receive an email notification that contains the confirmed slots. Each applicant can select only one slot at a time. If two applicants select the same slot simultaneously, the system determines which applicant applied first. An updated list of available slots is then sent to the other applicant.
 
-To share slots with candidates, follow these steps.
+To share slots with candidates, follow these steps:
 
 1. In the left pane, select **Interview scheduling**.
 1. Select the job ad that the interview must be scheduled for.
@@ -119,7 +121,7 @@ The confirmed time slot appears in the meeting invite section of the Dynamics 36
 
 After a candidate books a time slot, the recruiter can confirm the slot with them. They can then send a meeting invite by selecting an appropriate template for the content that must be sent to both the candidate and the interviewer.
 
-To send a meeting invite, follow these steps.
+To send a meeting invite, follow these steps:
 
 1. In the left pane, select **Interview scheduling**.
 1. Select the job ad that the interview must be scheduled for.
@@ -134,7 +136,7 @@ An email notification is sent to the candidate, and a Teams notification is sent
 
 Interviewers can now send feedback directly from Teams. Either during or after an interview, the interviewer can fill out and submit a feedback form that is sent to them in Teams. The feedback is updated in the Recruiting add-on, where the recruiter can review it. Based on the feedback, the recruiter can decide whether the applicant should be moved to the next stage of the hiring process or rejected.
 
-To provide feedback, follow these steps.
+To provide feedback, follow these steps:
 
 1. The interviewer receives a feedback notification when the meeting begins.
 1. The interviewer provides feedback in Teams during or after the interview.

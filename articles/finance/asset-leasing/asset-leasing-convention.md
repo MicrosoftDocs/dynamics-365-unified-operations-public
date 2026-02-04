@@ -26,7 +26,7 @@ The commencement date determines the start date of the period for the liability 
 
 Leasing conventions are assigned to the setup for a lease asset book.
 
-To view or assign the leasing convention, follow these steps.
+To view or assign the leasing convention, follow these steps:
 
 1. Go to **Asset leasing \> Setup \> Lease books**.
 2. In the **Leasing convention** field, select one of the following values.

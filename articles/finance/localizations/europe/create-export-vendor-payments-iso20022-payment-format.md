@@ -33,6 +33,8 @@ Complete the following steps to create payment lines in the vendor payment journ
 11. In the **File name** field, enter a value. ISO20022 credit transfer as well as other vendor payment formats can be used to generate payments in other currencies.
 12. In the **Bank account** field, enter or select a value.
 
-
+>[!NOTE]
+>If the feature **Display payee name for customer/vendor payment information** is enabled, the users have an option to define a payee name defined on the customer and vendor bank account details. Once defined, the payee name is visible in customer and vendor payment journals, payment proposals, and generated payment files. The payee name can be different from the name of the customer/vendor defined on the master data, and should align with banking requirements, ensuring accurate identification of payment recipients.
+>This enhancement improves compliance and flexibility for SEPA credit transfers by introducing support for an alternative payee name linked to IBAN. It ensures accurate mapping of payee details in payment transactions and exported XML files.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

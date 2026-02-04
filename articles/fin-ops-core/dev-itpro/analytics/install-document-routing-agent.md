@@ -60,7 +60,7 @@ After you install the application, you can register local printers as network pr
 >
 > Observable performance degradation in applications, Document loss that is associated with orphaned print jobs, Inconsistent handling of printed documents that have custom margins
 >
-> For more information, see [Update the Document Routing Agent](upgrade-document-routing-agen.md).
+> For more information, see [Update the Document Routing Agent](upgrade-document-routing-agent.md).
 
 
 If you don't update existing installations of the DRA the most current version, you might experience issues such as:

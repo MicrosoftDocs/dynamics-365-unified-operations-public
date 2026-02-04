@@ -57,7 +57,7 @@ When you create an invoice, the **Date of VAT register** field is automatically 
 
 If for some reason an invoice is posted and the **Date of VAT register** field is empty, it is still possible to enter a value in the field. 
 
-To enter a value in the **Date of VAT register** field after posting, follow these steps. 
+To enter a value in the **Date of VAT register** field after posting, follow these steps: 
 
 1. In Dynamics 365 Finance, go to the **Tax** \> **Periodic tasks** \> **VAT register transactions** page, which represents sales tax transactions where the **Date of VAT register** field is empty. 
 1. Select one record to update, or select multiple records by using the filter function. 
@@ -69,7 +69,7 @@ The **Date of VAT register** field is stored in a TaxTrans_W table. This table i
 
 To help avoid this issue, you can run the **Sales tax transactions extension** consistency check. 
 
-To run the **Sales tax transactions extension** consistency check, follow these steps.
+To run the **Sales tax transactions extension** consistency check, follow these steps:
 
 1. Go to **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**. 
 1. In the **Consistency check** dialog, expand **Program** \> **General ledger** \> **Sales tax**, and then select the **Sales tax transactions extension** checkbox. You don't have to select the parent checkboxes if you only want to run the **Sales tax transactions extension** consistency check.

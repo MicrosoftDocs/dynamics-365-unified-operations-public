@@ -24,7 +24,7 @@ A loyalty card entitles the card holder to participate in the loyalty programs t
 
 ## Set up loyalty cards
 
-To set up loyalty cards in Commerce headquarters, follow these steps.
+To set up loyalty cards in Commerce headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Customers \> Loyalty \> Loyalty cards**.
 1. Select **New**.
@@ -43,7 +43,7 @@ To set up loyalty cards in Commerce headquarters, follow these steps.
 
 ## Update loyalty card tiers
 
-To update loyalty card tiers manually, follow these steps. 
+To update loyalty card tiers manually, follow these steps: 
 
 1. In the **Loyalty program** grid, select **Add line** to add a loyalty program that's associated with the card. You can specify loyalty program, loyalty tier, start date and end date. 
 1. Select **Remove line** to remove a loyalty program and tier. If you want to update an existing loyalty program and tier, you must first remove it and then readd it.

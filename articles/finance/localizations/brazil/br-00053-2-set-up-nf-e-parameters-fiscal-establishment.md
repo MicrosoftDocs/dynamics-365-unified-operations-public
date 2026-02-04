@@ -22,7 +22,7 @@ Use the following procedure to set up the parameters for an NF-e for a fiscal es
 
 The procedure uses the BRMF demo company.
 
-To set up the parameters for an NF-e for a fiscal establishment, follow these steps.
+To set up the parameters for an NF-e for a fiscal establishment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Fiscal establishments \> Fiscal establishments**.
 1. Select a fiscal establishment for which to set up NF-e.

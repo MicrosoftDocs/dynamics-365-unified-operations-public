@@ -81,7 +81,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 ## Production environment
 
-To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps.
+To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps:
 
 1. Complete the steps that are described in the [Development environment](#development-environment) section earlier in this article.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:

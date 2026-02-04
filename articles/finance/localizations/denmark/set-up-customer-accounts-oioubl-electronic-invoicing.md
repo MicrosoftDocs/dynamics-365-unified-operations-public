@@ -2,9 +2,9 @@
 title: Set up customer accounts for OIOUBL electronic invoicing
 description: Learn how to set up a customer account for OIOUBL electronic invoicing, with the link that directs to a resource about customer electronic invoices in Denmark. 
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 02/02/2022
+ms.date: 12/16/2025
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Application User  

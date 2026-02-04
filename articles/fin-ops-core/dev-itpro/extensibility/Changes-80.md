@@ -1,10 +1,10 @@
 ---
-title: Extensibility changes in the Finance and Operations version 8.0
+title: Extensibility changes in the finance and operations version 8.0
 description: Access a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.0.
 author: FrankDahl
-ms.author: fdahl
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 04/13/2018
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -12,15 +12,15 @@ ms.search.validFrom: 2018-04-04
 ms.dyn365.ops.version: Platform update 15
 ---
 
-# Extensibility changes in the Finance and Operations version 8.0
+# Extensibility changes in finance and operations version 8.0
 
 [!include[banner](../includes/banner.md)]
 
 ## Hard-sealed application models
 
-In Dynamics 365 for Finance and Operations version 8.0, all of Microsoft's application models have been hard-sealed. Overlayered code in these models will now produce compilation errors. The only supported customization model is through extensions. If you cannot customize these models through extension, then you will have to make a request to Microsoft to enable extensibility by changing the standard application.
+In Dynamics 365 for finance and operations version 8.0, Microsoft hard-sealed all of its application models. Overlayered code in these models now produces compilation errors. The only supported customization model is through extensions. If you can't customize these models through extension, you need to request Microsoft to enable extensibility by changing the standard application.
 
-The following table includes a list of models that are now hard-sealed with this release.
+The following table lists the models that are hard-sealed in this release.
 
 | Module | Model         |
 | --------------- |-------------|
@@ -47,15 +47,15 @@ The following table includes a list of models that are now hard-sealed with this
 |Subledger | Subledger |
 |Tax | Tax |
 
-## Enumerations that have been made extensible
+## Extensible enumerations
 
-The following changes were made to support extending enumerations:
-- Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
-- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
-- Some application code that uses enumerations was changed to support extensibility. Common changes include:
-    + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
-    + Adding **SysExtension** support for extension.
-    + Adding explicit delegates.
+The following changes support extending enumerations:
+- Many enumerations in the standard application are now extensible. Make an enumeration extensible by setting two properties on the enumeration. Set the **IsExtensible** property to **Yes**, and set the **UseEnumValue** property to **No**. 
+- Some enumerations represent state. Add new façade methods to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
+- Change some application code that uses enumerations to support extensibility. Common changes include:
+    + Remove **throw** exception statements in the default case of a switch to allow post-event subscription.
+    + Add **SysExtension** support for extension.
+    + Add explicit delegates.
 
 | Enumeration|
 | --------------- |
@@ -100,11 +100,11 @@ The following changes were made to support extending enumerations:
 |WMSJointShippingType|
 |WMSReferenceType|
 
-## Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events
+## Data manipulation methods that don't raise DataEvents or missing insert, update, and delete pre- and post-data events
 
-As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not always followed this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
+As a general practice, use data methods on tables to raise events that you can use to extend the application. However, the code base doesn't always follow this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations don't call **super()** in the data method.
 
-The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
+The **insert**, **update**, and **delete** methods on the type classes are refactored. These changes make sure that **super()** is called more consistently in data methods. By using these changes, you can add extensions to these methods. The pre- and post-events are now available for extension. The following table lists the tables where the **insert**, **update**, and **delete** events are enabled for extension.
 
 | Type, name, data source, and method |
 | ----------------------|
@@ -116,7 +116,7 @@ The **insert**, **update**, and **delete** methods on the type classes have been
 
 ## Refactored methods to support extensibility
 
-These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
+The developers refactored these methods to support extensibility through chain of command, delegates, or by providing access to members.
 
 | Type, name, and method |
 | ----------------------|
@@ -471,9 +471,9 @@ These methods have been refactored to support extensibility through chain of com
 
 ## Maps enabled for extensibility
 
-New patterns have been introduced for maps implementation that will allow you to add fields and methods by extensions. Details on how this is done is available in the documentation both with maps that are used as interfaces and for versioning implementations.
+The new patterns for implementing maps enable you to add fields and methods through extensions. For more information, see the documentation on using maps as interfaces and on versioning implementations.
 
-The following table lists the maps and related tables where changes have been applied for enabling extensibility.
+The following table lists the maps and related tables where you can apply changes to enable extensibility.
 
 | Maps |
 | -------------------|
@@ -484,7 +484,7 @@ The following table lists the maps and related tables where changes have been ap
 
 ## Inventory dimensions
 
-This release made minor improvements to the new model for adding inventory dimensions, all targeted at supporting more scenarios through extensions. 
+This release includes minor improvements to the new model for adding inventory dimensions. These improvements support more scenarios through extensions. 
 
 | Change |
 | -------------|
@@ -539,27 +539,27 @@ This release made minor improvements to the new model for adding inventory dimen
 |Form WHSWorkTable should use field group for showing dimensions |
 |Form WMSOrderTransUnPick should use field group for showing dimensions|
 |Form WMSPickingRegistration should use field group for showing dimensions |
-|Report InventAging does not support extra dimensions|
+|Report InventAging doesn't support extra dimensions|
 |Table EcoResProductVariantStaging.StagingIdx need extra dimension fields|
 
 ## Other changes
 
-The following table lists additional changes that have been made for extensibility.
+The following table lists additional changes that Microsoft made for extensibility.
 
 | Change |
 | -------------|
 |Add filter interface: form InventQualityOrderTable|
-|Address management: Adding new address fields|
+|Address management: Add new address fields|
 |AxMaps - TradePostalAddress - partyTable|
 |Bank Trans Comments - BankReconciliationDataInitializer|
 |Cancellation Log Requirements - Update Sales Deliver Remainder|
-|Extend the grouping mechanisme from purch req line to purch line|
-|Extend the splitting mechanisme from purch req line to purch line|
+|Extend the grouping mechanism from purch req line to purch line|
+|Extend the splitting mechanism from purch req line to purch line|
 |Allow multiple funding sources in conjunction with item requirements|
 |Implementing exchange rate provider framework|
 |Make the PriceDiscPartyCodeType extensible in all usages|
 |Make the PriceDiscProductCodeType extensible in all usages|
-|Table RetailChannelTable does not have ReplacementKey|
+|Table RetailChannelTable doesn't have ReplacementKey|
 |Table RetailSeasonTable CreateRecIdIndex True|
 |Modify index: table InventTestAssociationTable|
 |Entity UnitOfMeasureEntity switched to public|

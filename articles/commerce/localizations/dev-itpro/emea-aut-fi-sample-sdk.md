@@ -121,7 +121,7 @@ The Hardware station extension components are included in the Hardware station s
 
 The POS extension sample is located in the **src\\FiscalIntegration\\PosFiscalConnectorSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
 
-To use the POS extension sample in the legacy SDK, follow these steps.
+To use the POS extension sample in the legacy SDK, follow these steps:
 
 1. Copy the **Pos.Extension** folder to the POS **Extensions** folder of the legacy SDK (for example, `C:\RetailSDK\src\POS\Extensions`).
 1. Rename the copy of the **Pos.Extension** folder **PosFiscalConnector**.

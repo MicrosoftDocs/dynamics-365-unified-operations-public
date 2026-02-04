@@ -2,7 +2,7 @@
 title: Notification and registration for the NemHandelsRegistret in Denmark
 description: Learn how to handle notification and registration with the NemHandelsRegistret (NHR) in Denmark, including outlines on notification types.
 author: mrolecki
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 12/07/2023
 ms.reviewer: johnmichalak

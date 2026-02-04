@@ -189,7 +189,7 @@ Add the registration numbers.
 
 ### Enter the address
 
-To enter the address, follow these steps.
+To enter the address, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -197,7 +197,7 @@ To enter the address, follow these steps.
 
 ### Buyer identification
 
-To enter the registration numbers, follow these steps.
+To enter the registration numbers, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
@@ -237,7 +237,7 @@ Set up electronic document properties.
 
 ### Enter the seller schema code
 
-To enter the Seller schema code, follow these steps.
+To enter the Seller schema code, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities** and select a legal entity.
 1. Select **Electronic document properties** from the Action Pane.
@@ -245,7 +245,7 @@ To enter the Seller schema code, follow these steps.
 
 ### Enter the buyer schema codes
 
-To enter the Buyer schema codes, follow these steps.
+To enter the Buyer schema codes, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.

@@ -2,9 +2,9 @@
 title: Additional acquisition depreciation
 description: Learn how depreciation is calculated for additional acquisitions in Germany, with an example of an organization acquiring a fixed asset.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Germany
@@ -17,12 +17,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how depreciation is calculated for additional acquisitions in Germany and provides an example. Acquisition adjustments for fixed assets must always be calculated as if the adjustments were made on the first day of the business year.
+This article explains how to calculate depreciation for additional acquisitions in Germany and provides an example. Always calculate acquisition adjustments for fixed assets as if you made the adjustments on the first day of the business year.
 
-Acquisition adjustments for fixed assets must be calculated as if the adjustments were made on the first day of the business year, regardless of when the adjustment transactions were actually created. The following formula is used to calculate the base amount of the fixed asset for depreciation: Net book value of the fixed asset on the last day of the previous business year + All acquisition adjustments for the fixed asset in the current year.
+Calculate acquisition adjustments for fixed assets as if you made the adjustments on the first day of the business year, regardless of when you actually created the adjustment transactions. Use the following formula to calculate the base amount of the fixed asset for depreciation: net book value of the fixed asset on the last day of the previous business year plus all acquisition adjustments for the fixed asset in the current year.
 
 ## Example
-In 2015, your organization acquired a fixed asset for 60,000. Your organization uses the straight-line life remaining depreciation method over five years. In 2015, when you process the depreciation proposal each month, 1,000 is calculated as the monthly depreciation amount (60,000 ÷ \[5 × 12\]). In March 2016, you post an additional acquisition for the fixed asset. The amount of the additional acquisition is 12,000. You must treat the additional acquisition as if it was posted on January 1, 2016. Therefore, here is how the monthly depreciation of 12,000 must be calculated for the remaining four years: 12,000 ÷ (4 × 12) = 250 The actual depreciation of the additional acquisition can start only in the month when the additional acquisition occurred (March). Therefore, the depreciation amounts for January and February must be added to the depreciation amount for March. The following table shows the monthly depreciation amounts for both the original acquisition and the acquisition adjustment for the first five months of the year.
+
+In 2015, your organization acquired a fixed asset for 60,000. Your organization uses the straight-line life remaining depreciation method over five years. In 2015, when you process the depreciation proposal each month, you calculate 1,000 as the monthly depreciation amount (60,000 ÷ \[5 × 12\]). In March 2016, you post an additional acquisition for the fixed asset. The amount of the additional acquisition is 12,000. You must treat the additional acquisition as if you posted it on January 1, 2016. Therefore, here's how you calculate the monthly depreciation of 12,000 for the remaining four years: 12,000 ÷ (4 × 12) = 250. The actual depreciation of the additional acquisition can start only in the month when the additional acquisition occurred (March). Therefore, add the depreciation amounts for January and February to the depreciation amount for March. The following table shows the monthly depreciation amounts for both the original acquisition and the acquisition adjustment for the first five months of the year.
 
 | Month         | Monthly depreciation amount for the original 60,000 acquisition | Monthly depreciation amount for the 12,000 acquisition adjustment | Total depreciation amount |
 |---------------|-----------------------------------------------------------------|-------------------------------------------------------------------|---------------------------|
@@ -31,11 +32,5 @@ In 2015, your organization acquired a fixed asset for 60,000. Your organization 
 | March 2016    | 1,000                                                           | 250 for January, 250 for February, and 250 for March              | 1,750                     |
 | April 2016    | 1,000                                                           | 250                                                               | 1,250                     |
 | May 2016      | 1,000                                                           | 250                                                               | 1,250                     |
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

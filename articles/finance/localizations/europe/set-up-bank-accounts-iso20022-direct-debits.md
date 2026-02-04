@@ -22,7 +22,7 @@ This article explains how to set up a customer bank account and a customer direc
 
 ## Set up a customer bank account
 
-To set up a customer bank account, follow these steps.
+To set up a customer bank account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. Use the Quick Filter to find records. For example, enter "Account field".
@@ -40,7 +40,7 @@ To set up a customer bank account, follow these steps.
 
 ## Add a direct debit mandate
 
-To add a direct debit mandate, follow these steps.
+To add a direct debit mandate, follow these steps:
 
 1. In the **Direct debit mandates** section, select **Add**.
 1. In the **Creditor bank account** field, enter or select a value.

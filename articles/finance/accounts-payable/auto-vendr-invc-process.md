@@ -1,10 +1,10 @@
 ---
 title: Automated vendor invoicing processes overview
 description: Learn about the capability for automating your vendor invoice processing and the benefits of using an automated process. 
-author: twheeloc
+author: ShielaSogge
 ms.author: shpandey
 ms.topic: overview
-ms.date: 12/16/2024
+ms.date: 12/10/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -88,7 +88,9 @@ The **Invoice received date** value indicates the date when the company received
 
 ## Tracking the Imported invoice amount and Imported sales tax amount values
 
-The **Imported invoice amount** and **Imported sales tax amount** values for vendor invoices can be provided in the vendor invoices import file. Typically, these values are from an invoice that was scanned by an outside provider and included in the import file. As the invoice is processed in Accounts payable, the values will be calculated based on the invoice data. The invoice can be posted only if the imported values match the calculated values. When the workflow is enabled, it applies the validation before workflow submission. Matching values ensure that the invoice accurately reflects the amount that is due to the vendor. If your organization allows imported invoices to be submitted to the workflow system automatically, you can optionally require that the imported totals match the calculated totals before the invoice can be submitted to the workflow system. The feature is controlled by the **Require the calculated totals to equal the imported totals for workflow submission** parameter.
+The **Imported invoice amount** and **Imported sales tax amount** values for vendor invoices can be provided in the vendor invoices import file. Typically, these values are from an invoice that was scanned by an outside provider and included in the import file. As the invoice is processed in Accounts payable, the values will be calculated based on the invoice data. The invoice can be posted only if the imported values match the calculated values unless the user has opted to override the actual tax amount with the imported tax amount on the **Vendor invoice automation parameters**. When the option to override the actual tax amount with the imported tax amount is selected, the imported (total) tax amount replaces the actual(total) sales tax amount on the **Sales tax** page and the actual amount is automatically allocated to the linked sales tax code(s). To configure this option, go to **Accounts Payable Parameters** > **Vendor invoice automation** tab. Expand **Tax import settings** and select **Override actual tax amount with imported tax amount for pending vendor invoice** and/or **Override actual tax amount with import tax amount for invoice journal**. 
+
+When these are options are turned off and the workflow is enabled, the validation is applied before workflow submission. Matching values ensure that the invoice accurately reflects the amount that's due to the vendor. If your organization allows imported invoices to be submitted to the workflow system automatically, you can optionally require that the imported totals match the calculated totals before the invoice can be submitted to the workflow system. The feature is controlled by the **Require the calculated totals to equal the imported totals for workflow submission** parameter.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

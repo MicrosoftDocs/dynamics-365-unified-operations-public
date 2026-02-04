@@ -72,7 +72,7 @@ The *Quality management for warehouse processes* feature controls several key se
 
 ### Quality associations
 
-Each [quality association record](enable-quality-management.md) defines the set of tests, the acceptable quality level (AQL), and the sampling plan that apply to the quality orders that are generated. To set up a quality association record, follow these steps.
+Each [quality association record](enable-quality-management.md) defines the set of tests, the acceptable quality level (AQL), and the sampling plan that apply to the quality orders that are generated. To set up a quality association record, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Quality control \> Quality associations**.
 1. Create or select the quality association entry for the item or group that you're working with, or for all items.
@@ -256,7 +256,7 @@ When the quality orders are validated, the system tries to create quality order 
 
 ## Canceling quality item sampling work
 
-You can cancel the work that is created for quality item sampling. To control what occurs when this work is canceled, follow these steps.
+You can cancel the work that is created for quality item sampling. To control what occurs when this work is canceled, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, on the **Work** FastTab, set the **Unregister receipt when cancelling work** option to one of the following values:

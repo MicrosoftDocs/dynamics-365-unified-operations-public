@@ -35,7 +35,7 @@ An invoice-facture can be processed in the following ways:
 
 ### Set up a number sequence for factures
 
-To set up a number sequence for factures, follow these steps.
+To set up a number sequence for factures, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, select a number sequence code for the facture reference, and then assign the number sequence in the **Number sequence code** field.
@@ -49,7 +49,7 @@ On the **All customers** page, you can override number sequence groups in the **
 
 ### Set up a tax settlement period
 
-To set up a tax settlement period, follow these steps.
+To set up a tax settlement period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 1. On the **Period intervals** FastTab, verify that the required period is included.
@@ -62,7 +62,7 @@ A purchase is completed when the invoice and facture are registered. Typically, 
 
 You can process a facture before an invoice is posted. In this case, the invoice is automatically posted when the facture is processed.
 
-To process a facture without posting a purchase order invoice, follow these steps.
+To process a facture without posting a purchase order invoice, follow these steps:
 
 1. On the **All purchase orders** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Facture**.
 1. In the upper part of the **Update facture** page, set the following fields:
@@ -89,7 +89,7 @@ The steps in this procedure are basically the same as the steps in the previous 
 
 You can post factures that are based on product receipts that include different types of order lines.
 
-To process a facture based on the product receipt of a purchase order, follow these steps.
+To process a facture based on the product receipt of a purchase order, follow these steps:
 
 1. Post the product receipt from the purchase order in the standard way.
 1. On the **Purchase order** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Facture**.
@@ -99,7 +99,7 @@ To process a facture based on the product receipt of a purchase order, follow th
 
 You can process purchase factures from the list of all posted invoices.
 
-To process factures from the purchase invoice journal, follow these steps.
+To process factures from the purchase invoice journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
 1. Select the posted invoice to update the facture for, and then, on the **Overview** tab, select **Create facture** > **Update facture**.
@@ -120,7 +120,7 @@ To process factures from the purchase invoice journal, follow these steps.
 
 ## View factures in the purchase facture journal
 
-To view factures in the purchase facture journal, follow these steps.
+To view factures in the purchase facture journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Facture journal** page (**Accounts payable** \> **Inquiries and reports** \> **Facture**).
 1. Select the facture.
@@ -140,7 +140,7 @@ When an invoice is registered, transactions are created, and then the facture is
 
 You can process a facture without posting an invoice. In this case, the invoice is automatically posted when the facture is processed.
 
-To process a facture without posting the invoice for a sales order, follow these steps.
+To process a facture without posting the invoice for a sales order, follow these steps:
 
 1. On the **All sales orders** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Facture**.
 1. In the upper part of the **Update facture** page, set the following fields:
@@ -176,7 +176,7 @@ The steps in this procedure are basically the same as the steps in the previous 
 
 You can post factures that are based on packing slips that include different types of order lines.
 
-To process a facture based on packing slips for sales orders, follow these steps.
+To process a facture based on packing slips for sales orders, follow these steps:
 
 1. Post the packing slip from the sales order in the standard way.
 1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Facture**.
@@ -192,7 +192,7 @@ To run periodic facture creation, go to **Accounts receivable** \> **Invoices** 
 
 ### Process invoice factures for a free text invoice
 
-To process invoice factures for a free text invoice, follow these steps.
+To process invoice factures for a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select **New** to create a free text invoice, and enter the required details.
@@ -206,7 +206,7 @@ To process invoice factures for a free text invoice, follow these steps.
 
 You can process sales factures from the list of all posted invoices.
 
-To process invoice factures from the sales invoice journal, follow these steps.
+To process invoice factures from the sales invoice journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> .
 1. Select the invoice that is associated with the facture that must be updated, and then, on the Action Pane, on the **Invoice** tab, select **Create facture** \> **Update facture**.
@@ -233,7 +233,7 @@ To process invoice factures from the sales invoice journal, follow these steps.
 
 You can view and print all factures on the **Facture journal** page (**Accounts receivable** \> **Inquiries and reports** \> **Facture**). 
 
-To view factures in the sales facture journal, follow these steps.
+To view factures in the sales facture journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Inquiries and reports** \> **Facture**.
 1. Select the facture.

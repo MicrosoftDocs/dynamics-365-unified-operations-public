@@ -45,7 +45,7 @@ CSU has the following minimum version requirements:
 
 To enable Commerce component diagnostic events, you must have an Application Insights account. You can use an existing account or [create a new account](/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). For data privacy reasons, we recommend that you use separate Application Insights accounts for production, sandbox, and development environments. After you create an account, you must enable the **Operational Insights** feature in headquarters.
 
-To enable diagnostic events in Application Insights, follow these steps.
+To enable diagnostic events in Application Insights, follow these steps:
 
 1. In headquarters, open the **Feature management** workspace, and enable the **Operational Insights** feature.
 1. Go to **System administration \> Setup \> Operational Insights**.
@@ -62,7 +62,7 @@ To enable diagnostic events in Application Insights, follow these steps.
 
 #### Use the DLLHost.exe.config file to control POS Operational Insights events
 
-To use the DLLHost.exe.config file to control POS Operational Insights events, follow these steps.
+To use the DLLHost.exe.config file to control POS Operational Insights events, follow these steps:
 
 1. In a text editor, open the **DLLHost.exe.config** file at **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker**.
 1. In the **diagnosticsSection** section, remove the sink XML element that has the class name **Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger**.
@@ -73,7 +73,7 @@ To use the DLLHost.exe.config file to control POS Operational Insights events, f
 > [!IMPORTANT]
 > If you want to disable diagnostic events and no longer send them to Application Insights, you must complete the following procedure. You can't just disable the feature in Feature management.
 
-To disable diagnostic events in Application Insights, follow these steps.
+To disable diagnostic events in Application Insights, follow these steps:
 
 1. In headquarters, go to **System administration \> Operational Insights**.
 1. On the **Configure** tab, set the **Commerce channel events** option to **No**.

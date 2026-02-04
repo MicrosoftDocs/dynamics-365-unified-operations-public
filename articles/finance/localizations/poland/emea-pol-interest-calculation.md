@@ -37,7 +37,7 @@ Before you can calculate tax interest and free-hand interest, you must complete 
 
 ### Set up the Accounts receivable parameters to calculate interest
 
-To define the parameters for interest calculation, follow these steps.
+To define the parameters for interest calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Collections** tab, on the **Interest and fees** FastTab, in the **Interest calculation** field, select the transactions that interest should be calculated for.
@@ -46,7 +46,7 @@ To define the parameters for interest calculation, follow these steps.
 
 Interest codes contain settings that determine when interest is charged, and how it's calculated on overdue accounts.
 
-To set up and maintain interest codes, follow these steps.
+To set up and maintain interest codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Credit and collections** \> **Interest** \> **Set up interest codes**.
 1. On the **Interest** page, in the **Interest code** field, enter a unique code that should be used to calculate interest.
@@ -65,7 +65,7 @@ To set up and maintain interest codes, follow these steps.
 
 When you create an interest note, the document number is automatically assigned in a sequence.
 
-To set up the number sequence used for interest notes, follow these steps.
+To set up the number sequence used for interest notes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, select a number sequence code for the **Interest note** reference.
@@ -79,7 +79,7 @@ For more information, see [Customer posting profiles](../../accounts-receivable/
 
 In Poland, the tax interest rates are determined by the Ministry of Finance. The vendor calculates the interest if the payment settlement is made after the due date. If the payment period is shorter than 30 days, the vendor can calculate the tax interest from the due date through the payment date. Free-hand interest rates apply when payments are settled between the thirty-first day after the posting and the due date.
 
-To calculate tax interest and free-hand interest, follow these steps.
+To calculate tax interest and free-hand interest, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Credit and collections** \> **Interest** \> **Create interest notes**.
 1. In the **Interest calculation** dialog, set the **Invoice** option to **Yes** to calculate interest on invoices.

@@ -115,7 +115,7 @@ When an invoice is posted, you can generate an electronic invoice from any invoi
 
 ### View e-invoices
 
-To inquire about the XML files of electronic invoices that have been generated, follow these steps.
+To inquire about the XML files of electronic invoices that have been generated, follow these steps:
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Select a job, and then select **Show files**.

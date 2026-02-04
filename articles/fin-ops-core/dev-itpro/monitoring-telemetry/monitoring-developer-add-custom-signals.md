@@ -27,10 +27,10 @@ The logger uses the [static constructor pattern](/dynamics365/fin-ops-core/dev-i
 
 | Type      | X++ class                                | Application Insights data type |
 | --------- | ---------------------------------------- | ------------------------------ |
-| Event     | SysApplicationInsightsEventTelemetry     | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry?view=azure-dotnet) |
-| PageView  | SysApplicationInsightsPageViewTelemetry  | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry?view=azure-dotnet) |
-| Exception | SysApplicationInsightsExceptionTelemetry | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry?view=azure-dotnet) |
-| Trace     | SysApplicationInsightsTraceTelemetry     | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry?view=azure-dotnet) |
+| Event     | SysApplicationInsightsEventTelemetry     | [Microsoft.ApplicationInsights.DataContracts.EventTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.eventtelemetry) |
+| PageView  | SysApplicationInsightsPageViewTelemetry  | [Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.pageviewtelemetry) |
+| Exception | SysApplicationInsightsExceptionTelemetry | [Microsoft.ApplicationInsights.DataContracts.ExceptionTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.exceptiontelemetry) |
+| Trace     | SysApplicationInsightsTraceTelemetry     | [Microsoft.ApplicationInsights.DataContracts.TraceTelemetry](/dotnet/api/microsoft.applicationinsights.datacontracts.tracetelemetry) |
 
 ### Events
 

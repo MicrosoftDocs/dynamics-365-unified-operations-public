@@ -157,7 +157,7 @@ Select **Credit limit used** if the blocking rule applies to the customer credit
 
 You can force the credit control rules to be executed when payment terms are changed. You must rank the payment terms and assign them a ranking value. If you change the payment terms on the order to payment terms that are ranked higher than the old payment terms, the order is sent to credit management and requires approval.
 
-To set up the payment terms rankings, follow these steps.
+To set up the payment terms rankings, follow these steps:
 1. Go to **Credit management \> Setup \> Credit management setup \> Rank payment terms**.
 2. In the **Terms of payment** field, select payment terms to rank. 
 3. In the **Rank** field, select the rank of the payment terms. The values are all relative to each other. Therefore, you can use 1,2,3 or 10,20,30. You can also use the same value for most of the payment terms, so that only one or two payment terms trigger a credit check.

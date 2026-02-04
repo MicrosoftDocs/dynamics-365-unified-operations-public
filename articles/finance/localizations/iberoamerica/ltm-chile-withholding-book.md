@@ -28,7 +28,7 @@ Before you complete the procedures in this article to generate and print the rep
 
 After you download the model, mapping, and corresponding format, configure the specific parameters of the withholding tax book format. When you configure the parameters, you can select the document class ID and tax codes that are used in the corresponding transactions. Lookups and conditions are designed so that you can select the combination of document classification IDs and sales tax codes.
 
-To configure parameters, follow these steps.
+To configure parameters, follow these steps:
 
 1. Open the **Electronic reporting** workspace, and select **Reporting configurations**.
 1. Select **Withholding Book CL**, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.

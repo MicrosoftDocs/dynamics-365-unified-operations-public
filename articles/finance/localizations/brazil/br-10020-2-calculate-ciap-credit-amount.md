@@ -22,7 +22,7 @@ Every month for each fiscal establishment, the tax credit amount is calculated f
 
 The following procedure uses the BRMF demo company.
 
-To calculate the CIAP credit amount, follow these steps.
+To calculate the CIAP credit amount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Common \> Booking period**.
 1. Select **Create new booking period** to open the drop dialog.

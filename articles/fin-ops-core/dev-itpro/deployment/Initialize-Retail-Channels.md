@@ -79,7 +79,7 @@ CSU is available for deployment in the following regions.
 
 When you initialize CSU as part of a new environment deployment, headquarters must be available to register the CSU. Microsoft doesn't recommend that you initialize a CSU when headquarters is under servicing, because it may become unavailable during its servicing process.
 
-To initialize CSU as part of a new environment deployment, follow these steps.
+To initialize CSU as part of a new environment deployment, follow these steps:
 
 1. Ensure that the headquarters environment is available and not in [Maintenance mode](../sysadmin/maintenance-mode.md).
 1. In LCS, on the environment details page, select **Environment features \> Commerce**.
@@ -91,7 +91,7 @@ To initialize CSU as part of a new environment deployment, follow these steps.
 
 After you deploy a CSU, you must ensure that your channels are configured to use the database for it. 
 
-To configure your channels to use the CSU database, follow these steps.
+To configure your channels to use the CSU database, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and commerce \> Headquarters setup \> Commerce Scheduler \> Channel database**.
 1. In the left pane, select a channel database.
@@ -111,7 +111,7 @@ After database refresh, you can regenerate the CSU's channel database record by 
 
 You can issue a redeployment of the CSU, without changing any components, by selecting to deploy the same version of your CSU. 
 
-To select the same version of your CSU to deploy, follow these steps.
+To select the same version of your CSU to deploy, follow these steps:
 
 1. In LCS, on the environment details page, select **Environment features \> Retail**.
 2. On the setup deployment page, select the CSU you want to redeploy.
@@ -161,7 +161,7 @@ You must perform the following additional steps before initializing CSU.
 - **Sign out of all POS device** - POS operations aren't supported during migration.
 - **Recall and void all suspended transactions at POS** - Suspended transactions aren't preserved as part of the initialization.
 
-To initialize CSU in your sandbox UAT environment, follow these steps.
+To initialize CSU in your sandbox UAT environment, follow these steps:
 
 1. Perform a database refresh from your production environment to a sandbox user acceptance testing (UAT) environment. 
 1. Initialize the CSU in the sandbox UAT environment. The initialization time to complete for CSU is comparable to the time the operation takes in your production environment, during which store operations and e-commerce operations are unavailable.

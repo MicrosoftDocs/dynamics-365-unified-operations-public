@@ -67,14 +67,14 @@ These sample calculated measures are included in the following formulas on the P
 
 You can customize the sample dashboard by directly editing the visuals. You can also edit the query to show different measures from different data sources.
 
-To add a new data source, follow these steps.
+To add a new data source, follow these steps:
 
 1. Open the dashboard in Power BI desktop, and expand the **Data** pane. Select and hold (or right-click) the **Query Preload Results** table, and then select **Edit query** to open the Power Query editor.
 1. On the ribbon of the Power Query editor, on the **Home** tab, select **Refresh Preview**.
 1. In the **Query Settings** pane, in the **Applied Steps** section, select and hold (or right-click) the **Expanded is\_quantities** step, and then select **Edit settings**.
 1. Search for or select the data source that you want to add to the report.
 
-To add, modify, or delete a column for an existing data source, follow these steps.
+To add, modify, or delete a column for an existing data source, follow these steps:
 
 1. Open the dashboard in Power BI desktop, and expand the **Data** pane. Select and hold (or right-click) the **Query Preload Results** table. and then select **Edit query** to open the Power Query editor.
 1. On the ribbon of the Power Query editor, on the **Home** tab, select **Refresh Preview**.

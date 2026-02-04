@@ -22,7 +22,7 @@ This article explains how to generate value-added tax (VAT) reports to submit to
 
 The *Unrealized VAT remaining* report includes transactions for which taxes haven't been realized.
 
-To generate the Purchase unrealized VAT remaining report, follow these steps.
+To generate the Purchase unrealized VAT remaining report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Purchase Unrealized VAT Remaining**.
 1. In the **Tax branch code** field, select a tax branch to generate the report only for the selected tax branch. Learn more in [Tax branch page](apac-tha-tax-branch-dimensions.md).
@@ -50,7 +50,7 @@ The *Purchase VAT* report for internal use includes transactions for which purch
 
 Two versions of the Purchase VAT report are available. One version is for internal use only, and the other is submitted to the government.
 
-To generate the Purchase VAT report for internal use, follow these steps.
+To generate the Purchase VAT report for internal use, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Purchase VAT report (for internal use)**.
 1. In the **Start date** and **End date** fields, define the period for which to generate the report.
@@ -83,7 +83,7 @@ To generate the Purchase VAT report for internal use, follow these steps.
 
 The *Purchase VAT* report includes transactions for which purchase VAT is realized. It includes details of the VAT that the legal entity paid for the purchase of goods and services. This report is generated every month and submitted to the government.
 
-To generate the Purchase VAT report, follow these steps.
+To generate the Purchase VAT report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Purchase VAT report**.
 1. In the **Tax month** field, select the month for which to generate the report.
@@ -117,7 +117,7 @@ The *Sales VAT* report for internal use includes transactions for which sales VA
 
 Two versions of the Sales VAT report are available. One version is for internal use only, and the other is submitted to the government.
 
-To generate the Sales VAT report for internal use, follow these steps.
+To generate the Sales VAT report for internal use, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales VAT report (for internal use)**.
 1. In the **Start date** and **End date** fields, define the period for which to generate the report.
@@ -149,7 +149,7 @@ To generate the Sales VAT report for internal use, follow these steps.
 
 The **Sales VAT** report includes transactions for which sales VAT is realized. It also includes details of the VAT that the legal entity received for the sale of goods and services. This report is generated every month and submitted to the government.
 
-To generate the Sales VAT report, follow these steps.
+To generate the Sales VAT report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales VAT report**.
 1. In the **Tax month** field, select the month for which to generate the report.

@@ -24,7 +24,7 @@ This article describes how to set up and configure on behalf of (OBO) functional
 
 First, you must add the identity provider that you created in [Create and configure a Microsoft Entra application for account manager sign-in](obo-create-aad-application.md) to **Commerce shared parameters** in Commerce headquarters.
 
-To add identity providers to Commerce shared parameters in headquarters, follow these steps.
+To add identity providers to Commerce shared parameters in headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters \> Identity Providers**.
 1. Under **Identity providers**, select **Add**, and then set the following fields:
@@ -58,7 +58,7 @@ This section describes how to associate account managers who use OBO functionali
 > [!NOTE]
 > The following procedure can be skipped for account managers who already use Microsoft Entra sign-in on POS devices.
 
-To configure account managers in headquarters, follow these steps.
+To configure account managers in headquarters, follow these steps:
 
 1. Go to **Human Resources \> Workers \> Employees**. 
 1. Select an account to be configured (for example, `user@adventure-works.com`). 
@@ -75,7 +75,7 @@ Create a sales group of one or more account managers. For OBO functionality to w
 
 ### Associate a sales group with a B2B buyer organization
 
-To associate a sales group with a B2B buyer organization in headquarters, follow these steps.
+To associate a sales group with a B2B buyer organization in headquarters, follow these steps:
 
 1. Go to **Sales and Marketing \> Customers \> All customers**.
 1. Find the customer of type **Organization** that must be managed by the sales group that you created (for example, "Contoso B2B"), and then select its name or account number.
@@ -92,7 +92,7 @@ In the customer hierarchy that corresponds to this customer organization (**Reta
 
 ### Complete the synchronization of sales representatives in headquarters
 
-To complete the synchronization of sales representatives in headquarters, follow these steps.
+To complete the synchronization of sales representatives in headquarters, follow these steps:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**.
 1. Set **Delete existing configuration** to **No**.

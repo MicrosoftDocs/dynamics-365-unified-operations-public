@@ -25,7 +25,7 @@ The procedure using the demo company DEMF with country context switched to the U
 
 Before you complete the procedure, you must complete the Setup parameters for credit note on prompt payment discount procedure.
 
-To create a credit note on the settlement discount, follow these steps.
+To create a credit note on the settlement discount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Select **New**.

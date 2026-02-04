@@ -32,7 +32,7 @@ You can add specific knowledge by using [AI general knowledge](/microsoft-copilo
 > [!IMPORTANT]
 > Dataverse virtual entities that are published from finance and operations apps aren't currently supported as knowledge sources.
 
-To add specific knowledge to Copilot, follow these steps.
+To add specific knowledge to Copilot, follow these steps:
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and select the Dataverse environment that is associated with your finance and operations apps environment.
 1. On the navigation pane on the left, select **Agents**.
@@ -59,7 +59,7 @@ This capability is disabled by default, but you can enable it if you want to use
 >
 > Before you publish AI general knowledge to your production system, be sure to carefully consider and test it.
 
-To add AI general knowledge to Copilot, follow these steps.
+To add AI general knowledge to Copilot, follow these steps:
 
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and select the Dataverse environment that is associated with your finance and operations apps environment.
 1. On the navigation pane on the left, select **Copilots**.

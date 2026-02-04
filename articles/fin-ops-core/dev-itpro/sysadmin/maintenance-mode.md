@@ -26,7 +26,7 @@ This article provides information about maintenance mode in finance and operatio
 ## Turn maintenance mode on and off on sandbox and production environments through Lifecycle Services 
 You can now turn maintenance mode on and off directly through Microsoft Dynamics 365 Lifecycle Services on your sandbox and production environments. 
 
-To turn maintenance mode on and off directly through Lifecycle Services, follow these steps.
+To turn maintenance mode on and off directly through Lifecycle Services, follow these steps:
 
 1. Go to the environment details page and on the **Maintain** menu, click **Enable Maintenance Mode**. 
 2. In the slider, set **Turn maintenance mode on** for the environment and select **Confirm**.

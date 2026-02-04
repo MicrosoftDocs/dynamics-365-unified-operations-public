@@ -46,7 +46,7 @@ When you enable the *Warehouse-specific inventory transactions* feature, your sy
 - The system stops generating inventory transactions for warehouse operations. Instead, it uses warehouse transactions. Therefore, you must update any customizations and extensions that rely on the relevant inventory transactions for warehouse operations. This change affects only those warehouse scenarios that you configure to use warehouse transactions. Learn more in the [Choose which scenarios should use warehouse transactions](#choose-scenarios) section of this article.
 - The system stops calling several existing methods when it processes warehouse operations.
 
-When you try to enable the feature, the system checks for extensions that might break because of these changes. If it finds any issues, it sends you an error message that identifies the extension and explains how you must update it. If you receive such a message when you try to enable the feature, follow these steps.
+When you try to enable the feature, the system checks for extensions that might break because of these changes. If it finds any issues, it sends you an error message that identifies the extension and explains how you must update it. If you receive such a message when you try to enable the feature, follow these steps:
 
 1. Contact your developer or Microsoft partner, and ask them to review the relevant extensions and make the required fixes.
 1. Declare the module that contains the problematic extension as *validated*. You can make this change by extending the `buildValidatedModuleSet()` method in the `WHSWarehouseInventoryTransactionFeatureExtensionValidator` class and adding the name of the module that contains a flagged extension into the set.
@@ -59,7 +59,7 @@ When you try to enable the feature, the system checks for extensions that might 
 
 The system lets you choose which scenarios use warehouse transactions. For example, you can use the new warehouse transactions for warehouse movements, but continue to use inventory transactions for all other operations. Therefore, organizations that use a system that was customized before enabling the *Warehouse-specific inventory transactions* feature can gradually move toward using warehouse transactions. They can start with the least customized scenarios or the scenarios where performance improvements are most required.
 
-To choose which scenarios use warehouse transactions, follow these steps.
+To choose which scenarios use warehouse transactions, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, on the **Warehouse inventory transaction mechanism** FastTab, select the **Use warehouse inventory transactions** checkbox for each scenario where you want to use warehouse transactions. Scenarios that you leave this checkbox cleared for will continue to use inventory transactions.
@@ -75,7 +75,7 @@ The **Warehouse transactions** page shows both warehouse transactions and invent
 
 The purpose of the **Warehouse transactions** page is to show all the transactions that are relevant to managing the warehouse. It doesn't show inventory transactions that are in *Ordered* or *On order* status. You can open it from several places in the system, including the **On-hand** pages and the **Warehouse inventory transactions** page.
 
-For example, to open the **Warehouse transactions** page from the **On-hand** page for a selected product, follow these steps.
+For example, to open the **Warehouse transactions** page from the **On-hand** page for a selected product, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select a released product.
@@ -100,14 +100,14 @@ Because warehouse transactions and inventory transactions differ slightly in nat
 
 The archival procedure is implemented by the *Archive warehouse inventory transactions* process automation background process. This process is automatically registered when you enable the *Warehouse-specific inventory transactions* feature. By default, it runs every 10 minutes. However, system administrators can change the recurrence properties, based on the actual system use.
 
-To change the recurrence properties of the *Archive warehouse inventory transactions* process, follow these steps.
+To change the recurrence properties of the *Archive warehouse inventory transactions* process, follow these steps:
 
 1. Go to **System Administration \> Setup \> Process Automations**.
 1. On the **Background Processes** tab, in the grid, select the row where the **Name** field is set to *Archive warehouse inventory transactions*.
 1. Select **Edit** on the toolbar.
 1. The **Edit background process** dialog opens. Review and edit the configuration as needed and select **OK**.
 
-To review the execution history of the *Archive warehouse inventory transactions* process, follow these steps.
+To review the execution history of the *Archive warehouse inventory transactions* process, follow these steps:
 
 1. Go to **System Administration \> Setup \> Process Automations**.
 1. On the **Background Processes** tab, in the grid, select the row where the **Name** field is set to *Archive warehouse inventory transactions*.

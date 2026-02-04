@@ -23,7 +23,7 @@ Dimension control for settlements helps you accurately manage and analyze accoun
 
 ## Set up Accounts payable parameters for dimensions control for settlements
 
-To set up Accounts payable parameters for dimensions control for settlements, follow these steps.
+To set up Accounts payable parameters for dimensions control for settlements, follow these steps:
 
 1. Select **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Settlement** tab, in the **Settlement by dimension** field, select one of the following options to control settlement transactions:
@@ -44,7 +44,7 @@ To set up Accounts payable parameters for dimensions control for settlements, fo
 
 Use this procedure to set up vendor posting profiles for settlement dimension control. For required groups or for a specific vendor, you must specify a dimension set for dimension control. You must also fill in the **Allow empty dimensions value** field for the posting profile.
 
-To set up vendor posting profiles for dimensions control for settlements, follow these steps.
+To set up vendor posting profiles for dimensions control for settlements, follow these steps:
 
 1. Select **Accounts payable** \> **Setup** \> **Vendor posting profiles**.
 1. Select <kbd>Ctrl+N</kbd> to create a vendor posting profile, and enter the required details.
@@ -62,7 +62,7 @@ To set up vendor posting profiles for dimensions control for settlements, follow
 
 ## Set up Accounts receivable parameters for dimensions control for settlements
 
-To set up Accounts receivable parameters for dimensions control for settlements, follow these steps.
+To set up Accounts receivable parameters for dimensions control for settlements, follow these steps:
 
 1. Select **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Settlement** tab, in the **Settlement by dimension** field, select one of the following options to control settlement transactions for customers:
@@ -76,7 +76,7 @@ To set up Accounts receivable parameters for dimensions control for settlements,
 
 Use this procedure to set up customer posting profiles for settlement dimension control on the **Customer posting profiles** page. For required groups or for a specific customer, you must specify a dimension set for dimension control. You must also fill in the **Allow empty dimensions value** field for the posting profile.
 
-To set up customer posting profiles for dimensions control for settlements, follow these steps.
+To set up customer posting profiles for dimensions control for settlements, follow these steps:
 
 1. Select **Accounts receivable** \> **Setup** \> **Customer posting profiles**.
 1. Select <kbd>Ctrl+N</kbd> to create a customer posting profile, and enter the required details.
@@ -94,7 +94,7 @@ To set up customer posting profiles for dimensions control for settlements, foll
 
 ## Set up a dimension set for dimensions control for settlements
 
-To set up a dimension set for dimensions control for settlements, follow these steps.
+To set up a dimension set for dimensions control for settlements, follow these steps:
 
 1. Select **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
 1. Select <kbd>Ctrl+N</kbd> to create a dimension set, and enter the required details.

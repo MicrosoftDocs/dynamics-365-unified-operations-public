@@ -20,7 +20,7 @@ This article explains how to write off a deferral and how to reverse the writing
 
 ## Write off deferrals
 
-To write off deferrals, follow these steps.
+To write off deferrals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal entries** \> **Deferrals journal**.
 1. On the Action Pane, select **New**.
@@ -38,7 +38,7 @@ To write off deferrals, follow these steps.
 
 You can create a journal line for a single write-off.
 
-To create a journal line for a single write-off, follow these steps.
+To create a journal line for a single write-off, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal entries** \> **Deferrals journal**.
 1. On the Action Pane, select **New**.
@@ -58,7 +58,7 @@ To create a journal line for a single write-off, follow these steps.
 
 ## Reverse the writing off of deferrals
 
-To reverse the writing off of deferrals, follow these steps.
+To reverse the writing off of deferrals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal entries** \> **Deferrals journal**.
 1. On the Action Pane, select **New**.

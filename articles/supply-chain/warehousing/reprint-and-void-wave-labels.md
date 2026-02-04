@@ -39,7 +39,7 @@ You can view and reprint wave labels from the following pages. On the Action Pan
 - Wave labels
 - Wave label history
 
-To reprint a wave label from the web client, follow these steps.
+To reprint a wave label from the web client, follow these steps:
 
 1. Go to **Warehouse management \> Outbound waves \> Shipment waves \> All waves**.
 1. Select the wave to reprint labels from.

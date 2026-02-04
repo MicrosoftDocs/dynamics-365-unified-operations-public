@@ -30,7 +30,7 @@ To enable page caching, you must first enable the page caching feature at the si
 
 ### Enable the page caching feature in Commerce site builder
 
-To enable the page caching feature for your site in Commerce site builder, follow these steps.
+To enable the page caching feature for your site in Commerce site builder, follow these steps:
 
 1. Go to **Site settings \> Extensions**.
 1. Select the **Enable render caching** checkbox.

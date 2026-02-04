@@ -24,7 +24,7 @@ The following illustration shows the sequence of activities that occur when the 
 
 ## <a name="set-up"></a>Set up hazardous materials reporting
 
-Usually, if you ship items that contain hazardous materials, you must generate specific reports to help preserve safety and comply with hazardous materials regulations. To set up your reports, follow these steps.
+Usually, if you ship items that contain hazardous materials, you must generate specific reports to help preserve safety and comply with hazardous materials regulations. To set up your reports, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 2. Open the **Reports** tab. On the **Hazardous materials report parameter** FastTab, set the following fields.

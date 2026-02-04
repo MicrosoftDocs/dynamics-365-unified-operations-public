@@ -2,9 +2,9 @@
 title: Throttling prioritization
 description: Learn about priority-based throttling for OData and custom service-based integrations, including how to determine prioritization.
 author: jaredha
-ms.author: sumadhey
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 08/25/2022
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer 
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -20,44 +20,47 @@ ms.dyn365.ops.version: Platform update 37
 
 This article provides information about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
 
-Resource-based limits for service protection application programming interfaces (APIs) work together with the user-based limits for service protection APIs as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run finance and operations apps. The resource-based limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
+Resource-based limits for service protection APIs work together with the user-based limits for service protection APIs as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run finance and operations apps. The resource-based limits throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability.
 
 > [!NOTE]
-> Throttling priority mapping does not apply to user-based service protection API limits. The priority mapping is specific to resource-based service protection API limits. See [Service protection API limits](service-protection-api-limits.md) for more information on the API limit types.
+> Throttling priority mapping doesn't apply to user-based service protection API limits. The priority mapping is specific to resource-based service protection API limits. For more information about the API limit types, see [Service protection API limits](service-protection-api-limits.md).
 
-For resource-based service protection API limits, you can set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager will then honor the priorities that are set for the requests. For OData and custom service-based requests, a "Too many requests" error will be sent if system health and performance are affected.
+For resource-based service protection API limits, set the relative priority for OData and custom service-based integrations, depending on your business-critical need for these integrations. The throttling manager honors the priorities that you set for the requests. For OData and custom service-based requests, the system sends a "Too many requests" error if system health and performance are affected.
 
 ## Determine prioritization
 
-The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/training/modules/integrate-azure-finance-operations/7-connect-external). 
+Use the **Throttling Priority Mapping** page to assign priorities for integrations. The system honors these priorities when it throttles requests. Setting appropriate priorities ensures that low-priority integrations throttle before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/training/modules/integrate-azure-finance-operations/7-connect-external).
 
-The following are the authentication types supported in Microsoft Entra ID (Microsoft Entra ID). For more information, see [Authentication](services-home-page.md).
-- **User based**: This flow uses a username and password for authentication and authorization. 
-- **Microsoft Entra application based**: This flow uses an application registered in Microsoft Entra and an associated secret for authentication. 
+Microsoft Entra ID supports the following authentication types. For more information, see [Authentication](services-home-page.md).
 
-When setting the priority mapping, you will select the authentication type that is used for the integration, either for a specific application (client ID) or a specific user.
-- If the priority mapping is set for an application, then the priority mapping is applied to any API request from the selected Microsoft Entra application ID.
-- If the priority mapping is set for a user, then the priority mapping is applied to any API request from the selected Microsoft Entra user ID.
+- **User based**: This authentication type uses a username and password for authentication and authorization.
+- **Microsoft Entra application based**: This authentication type uses an application registered in Microsoft Entra and an associated secret for authentication.
 
-There are three priority levels available: Low, Medium, and High. Each priority level assigns different throttling thresholds for the selected application or user.
-- **Low**: Applications or users with a Low priority mapping have a lower threshold of service resource consumption for which they will be throttled than integrations set with a Medium or High priority.
+When you set the priority mapping, select the authentication type that the integration uses. You can choose either a specific application (client ID) or a specific user.
+
+- If you set the priority mapping for an application, you apply the priority mapping to any API request from the selected Microsoft Entra application ID.
+- If you set the priority mapping for a user, you apply the priority mapping to any API request from the selected Microsoft Entra user ID.
+
+Three priority levels are available: Low, Medium, and High. Each priority level assigns different throttling thresholds for the selected application or user.
+
+- **Low**: Applications or users with a Low priority mapping have a lower threshold of service resource consumption for which the system throttles them than integrations set with a Medium or High priority.
 - **Medium**: Applications or users with a Medium priority mapping have a higher throttling threshold of service resource consumption than integrations with a Low priority mapping, and lower throttling threshold of resource consumption than integrations with a High priority mapping.
 - **High**: Applications or users with a High priority mapping have a higher throttling threshold of service resource consumption than integrations with either a Low or Medium priority mapping.
 
-These priority mappings ensure that requests from high-priority applications and users not throttled due to service resource consumption by lower-priority integrations.
- 
-## Configure priorities for integrations 
+These priority mappings ensure that requests from high-priority applications and users aren't throttled due to service resource consumption by lower-priority integrations.
 
-After you have registered your service in Microsoft Entra and in your finance and operations apps, you can set up priorities for integrations.
+## Configure priorities for integrations
+
+After you register your service in Microsoft Entra and in your finance and operations apps, set up priorities for integrations.
 
 > [!NOTE]
-> You must be assigned the **System administrator** or **Integration priority manager** role to complete the set up. 
+> You must be assigned the **System administrator** or **Integration priority manager** role to complete the setup.
 
-1. In finance and operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**. 
-2. Select **New**. 
-3. In the **Authentication type** field, select **User** or **Microsoft Entra application** based on your integration scenario.
-4. If **Microsoft Entra application type** is selected, in the **Client ID** field select the application that you registered in the Microsoft Entra application.
-5. If **User** type is selected, in the **User ID** field select an appropriate service account user ID.
-6. Assign the appropriate priority and then select **Save**.
+1. In finance and operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**.
+1. Select **New**.
+1. In the **Authentication type** field, select **User** or **Microsoft Entra application** based on your integration scenario.
+1. If you select **Microsoft Entra application type**, in the **Client ID** field, select the application that you registered in the Microsoft Entra application.
+1. If you select **User** type, in the **User ID** field, select an appropriate service account user ID.
+1. Assign the appropriate priority and then select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

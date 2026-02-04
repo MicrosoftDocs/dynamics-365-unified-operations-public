@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-06-28
 
 This article explains how to dispose of deferrals in Russia in Microsoft Dynamics 365 Finance.
 
-To dispose of deferrals, follow these steps.
+To dispose of deferrals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journals** \> **Deferrals journal**.
 1. On the Action Pane, select **New**.

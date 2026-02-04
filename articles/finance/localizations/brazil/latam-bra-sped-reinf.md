@@ -506,7 +506,7 @@ After you complete these steps, the sales order–related fiscal document is ava
 
 ### Repro step
 
-To generate the closure event, follow these steps.
+To generate the closure event, follow these steps:
 
 1. Go to **Fiscal books** \> **Common** \> **Booking period**, and select the period.
 2. Select **R-4098** (**Reopen**) and **R-4099** (**Closure**).

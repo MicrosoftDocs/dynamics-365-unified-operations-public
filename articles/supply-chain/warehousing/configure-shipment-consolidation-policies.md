@@ -249,7 +249,7 @@ Typically, this business case can be addressed by using the default policies. Ho
 
 ### Set the order
 
-Now that you've created all your policies, you must establish the order that they will be applied in. To use a pyramid-like approach, where the policies that have the most conditions are evaluated as having the highest priority, follow these steps.
+Now that you've created all your policies, you must establish the order that they will be applied in. To use a pyramid-like approach, where the policies that have the most conditions are evaluated as having the highest priority, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.

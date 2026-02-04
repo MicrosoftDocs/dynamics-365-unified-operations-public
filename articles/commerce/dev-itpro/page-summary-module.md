@@ -41,7 +41,7 @@ The Dynamics 365 Commerce module library contains several page summary modules, 
 
 ## Add a page summary module to a template
 
-To add a page summary module to a template, follow these steps.
+To add a page summary module to a template, follow these steps:
 
 1. In Commerce site builder for your site, select **Templates**.
 1. Select a template, and then select **Edit**.

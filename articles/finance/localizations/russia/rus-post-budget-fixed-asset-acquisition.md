@@ -21,7 +21,7 @@ This article explains how to create and post a budget journal for a fixed asset 
 
 You can create financial plans and current budgets in the **Fixed assets** module by using budget models. A budget model represents a collection of planned turnovers for specific accounts and periods.
 
-To create financial plans and current budgets in the **Fixed assets** module using budget models, follow these steps.
+To create financial plans and current budgets in the **Fixed assets** module using budget models, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Budgeting** \> **Setup** \> **Basic budgeting** \> **Budget models**.
 1. Select **New** to create a budget model.

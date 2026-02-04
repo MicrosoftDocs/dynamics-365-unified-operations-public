@@ -35,7 +35,7 @@ Before you can search for products in the Inventory Visibility app, your system 
 
 When you search by using attribute filters, you select one or more specific product attributes (such as product number, color, and brand). You also specify the value that you're looking for in each attribute. The search results include all products that match all the specified values.
 
-To search for products by using attribute filters in the Inventory Visibility app, follow these steps.
+To search for products by using attribute filters in the Inventory Visibility app, follow these steps:
 
 1. Sign in to your Power Apps environment.
 1. Open the **Inventory Visibility** app.
@@ -55,7 +55,7 @@ To search for products by using attribute filters in the Inventory Visibility ap
 
 Quick search provides a single search field that matches products based only on their product number or product name. It doesn't support searching by other attributes. The search results include all products that include the specified value in their product number, their product name, or both.
 
-To search for products by using only a product number or product name, follow these steps.
+To search for products by using only a product number or product name, follow these steps:
 
 1. Sign in to your Power Apps environment.
 1. Open the **Inventory Visibility** app.

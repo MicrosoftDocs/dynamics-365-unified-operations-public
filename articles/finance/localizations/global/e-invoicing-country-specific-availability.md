@@ -32,7 +32,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
 | Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Colombia | [Colombia Electronic Invoice (CO)](../iberoamerica/ltm-colombia-electronic-invoice-configuration.md) | Sales invoices and project invoices |
-| Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connec-configuration.md) | Sales invoices and project invoices |
+| Costa Rica | [Costa Rica electronic invoice (CRI)](../iberoamerica/ltm-costa-rica-ei-connect-configuration.md) | Sales invoices and project invoices |
 | Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia | Estonian electronic invoice (EE) | Sales invoices and project invoices |
