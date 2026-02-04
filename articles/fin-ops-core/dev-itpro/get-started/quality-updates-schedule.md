@@ -73,7 +73,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.45 PQU-7 | March 25, 2026 | March 30, 2026 to May 3, 2026| Not Started |
 | 10.0.45 PQU-8 | April 22, 2026 | April 27, 2026 to May 30, 2026| Not Started |
 | 10.0.45 PQU-9 | May 27, 2026 | June 1, 2026 to July 5, 2026| Not Started |
-| 10.0.46 PQU-1 | February 4, 2026 | February 9, 2025 to March 14, 2026 | Not Started |
+| 10.0.46 PQU-1 | February 4, 2026 | February 9, 2025 to March 14, 2026 | In-Progress |
 | 10.0.46 PQU-2 | March 4, 2026 | March 9, 2026 to April 11, 2026| Not Started |
 | 10.0.46 PQU-3 | April 1, 2026 | April 6, 2026 to May 9, 2026| Not Started |
 | 10.0.46 PQU-4 | April 29, 2026 | May 4, 2026 to June 6, 2026| Not Started |
@@ -173,6 +173,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | February 16 to February 19, 2026 | February 28 to March 1, 2026 |
 | Station 5 | February 23 to February 26, 2026 | March 7 to March 8, 2026 |
 | Station 6 | February 24 to February 27, 2026 | March 7 to March 8, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.46 Release-1 train schedule
+
+**App version: 10.0.2428.95**
+
+**Platform version: 7.0.7778.45**
+
+**Unified Environment Provisioning Application Version: 10.0.46.2**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | February 9 to February 12, 2026 | NA |
+| Station 2 | February 16 to February 19, 2026 | February 28 to March 1, 2026 |
+| Station 3 | February 17 to February 20, 2026 | February 28 to March 1, 2026 |
+| Station 4 | February 23 to February 26, 2026 | March 7 to March 8, 2026 |
+| Station 5 | March 2 to March 5, 2026 | March 14 to March 15, 2026 |
+| Station 6 | March 3 to March 6, 2026 | March 14 to March 15, 2026 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

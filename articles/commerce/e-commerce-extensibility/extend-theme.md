@@ -1,11 +1,10 @@
 ---
 title: Extend a theme from a base theme
-description: This article describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site.
+description: Learn how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce e-commerce site.
 author: samjarawan
-ms.date: 07/31/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site.
+This article describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce e-commerce site.
 
-By using the Dynamics 365 Commerce online store extensibility software development kit (SDK), you can create either themes that are standalone themes or themes that are extended from a base theme. For example, you can have a base theme that defines Cascading Style Sheets (CSS) styles for modules, module view extensions, and module definition extensions. You can then have a different theme, or even a set of themes, that adds changes on top of the base theme. This capability is helpful when a single Dynamics 365 environment has multiple online sites that use different theme branding.
+By using the Dynamics 365 Commerce online store extensibility software development kit (SDK), you can create either standalone themes or themes that extend a base theme. For example, you can have a base theme that defines Cascading Style Sheets (CSS) styles for modules, module view extensions, and module definition extensions. You can then have a different theme, or even a set of themes, that adds changes on top of the base theme. This capability is helpful when a single Dynamics 365 environment has multiple online sites that use different theme branding.
 
 ## Specify a base theme
 
 To specify the base theme for a theme, edit the theme definition file, and add a **$ref** section that points to the base theme.
 
-In the following example, the **$ref** section references the **fabrikam** sample theme that is included as part of the module library.
+In the following example, the **$ref** section references the **fabrikam** sample theme included as part of the module library.
 
 ```json
 {
@@ -38,13 +37,13 @@ In the following example, the **$ref** section references the **fabrikam** sampl
 
 ## Examples
 
-In the following example, the **add-theme** command-line interface (CLI) command is used to create a base theme.
+In the following example, use the **add-theme** command-line interface (CLI) command to create a base theme.
 
 ```console
 yarn msdyn365 add-theme base
 ```
 
-Here is the definition file for the base theme that is created.
+Here's the definition file for the base theme that you create.
 
 **basetheme.definition.json**
 
@@ -57,7 +56,7 @@ Here is the definition file for the base theme that is created.
 }
 ```
 
-Next, the CLI command is used to create a theme that is named **extended**.
+Next, use the CLI command to create a theme named **extended**.
 
 ```console
 yarn msdyn365 add-theme extended
@@ -79,7 +78,7 @@ The definition file for the extended theme can now reference the base theme by u
 
 ### Include base theme styles
 
-By default, base theme styles aren't included in the extended theme. To include the base theme styles, you can add a reference in the **extended.theme.scss** file, as shown here. This example also shows how to add other styles.
+By default, the extended theme doesn't include base theme styles. To include the base theme styles, add a reference in the **extended.theme.scss** file, as shown here. This example also shows how to add other styles.
 
 **extended.theme.scss**
 
