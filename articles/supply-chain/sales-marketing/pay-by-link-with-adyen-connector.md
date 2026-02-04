@@ -1,5 +1,5 @@
 ---
-title: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen
+title: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)
 description: Learn how to accept payments for sales orders with payment links using the Adyen connector.
 author: AditiPattanaik
 ms.author: adpattanaik
@@ -11,10 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen
+# Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article explains how to set up and enable the pay-by-link payment method to capture payments for sales orders by using the Microsoft Dynamics 365 Payment Connector for Adyen. By using pay-by-link functionality, businesses can offer modern payment methods that give their customers the flexibility to choose their preferred way to pay.
 
@@ -105,7 +106,7 @@ To create a new webhook to receive payment notifications from Adyen, follow thes
 
     - **Client ID** – Enter the **Application (client) ID** value that you copied earlier from the Microsoft Entra ID application registration.
     - **Client secret** – Enter the **Secret value** value that you copied earlier from the Microsoft Entra ID application registration.
-    - **URL** – Enter `https://login.microsoftonline.com/{tenantid}/oauth2/v2.0/token`. Replace *\{tenantID\}* with the **Directory (tenant) ID** value that you copied earlier from the Microsoft Entra ID application registration.
+    - **URL** – Enter `https://login.microsoftonline.com/{tenantid}/oauth2/v2.0/token`. Replace *\{tenantid\}* with the **Directory (tenant) ID** value that you copied earlier from the Microsoft Entra ID application registration.
     - **Scope** – Enter *a013b12b-2624-40b4-b15b-b7751d733a22/.default*.
 
 1. Generate a new hash-based message authentication code (HMAC) key and copy it. You aren't able to view this key again, so keep it somewhere safe.
