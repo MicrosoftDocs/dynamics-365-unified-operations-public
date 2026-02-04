@@ -205,4 +205,4 @@ To save storage and keep the notifications page manageable, delete old notificat
 
 ## Enable critical payment notifications for Dynamics 365 Payment Connector for Adyen
 
-You can use the asynchronous payment notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in Commerce headquarters. This functionality provides the operations team with the necessary visibility to take timely actions based on the notifications received. Learn more in [Enable Critical payment notifications](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/payment-notifications).
+You can use the asynchronous payment notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in Commerce headquarters. This functionality provides the operations team with the necessary visibility to take timely actions based on the notifications received. Learn more in [Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen](../../commerce/dev-itpro/payment-notifications.md).
