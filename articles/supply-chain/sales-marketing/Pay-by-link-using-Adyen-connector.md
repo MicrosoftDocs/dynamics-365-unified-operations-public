@@ -1,5 +1,5 @@
 ---
-title: Accept payments for sales orders with payment links using Adyen connector
+title: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen
 description: Learn how to accept payments for sales orders with payment links using the Adyen connector.
 author: AditiPattanaik
 ms.author: adpattanaik
@@ -11,12 +11,14 @@ ms.custom:
   - bap-template
 ---
 
-# Accept payments with payment links using Adyen connector
+# Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article explains how to set up and enable the *pay by link* payment method to capture payments for Supply Chain Management orders using the Microsoft Dynamics 365 Payment Connector for Adyen. Pay by link functionality enables businesses to offer modern payment methods that give customers the flexibility to choose their preferred payment method.
+This article explains how to set up and enable the pay-by-link payment method to capture payments for sales orders using the Microsoft Dynamics 365 Payment Connector for Adyen. Pay-by-link functionality enables businesses to offer modern payment methods that give their customers the flexibility to choose their preferred way to pay.
+
+The pay-by-link payment method enables salespeople to generate payment links for customers, which eliminates the need for customers to share sensitive card details verbally over the phone, which enhances security and trust. These payment links also enable customers to use modern payment methods like digital wallets that aren't feasible in traditional phone transactions. Moreover, if customers are undecided about their order, salespeople can create the orders on a payment hold. If customers make the payment within a preconfigured duration, then the system releases the order for fulfillment. Otherwise the order gets canceled.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -38,20 +40,21 @@ After the connector is set up, Supply Chain Management users can still work with
 
 ### Security role required to set up the connector
 
-Some of the steps require a Supply Chain Management user who is either an *Administrator* or has the *Commerce Payment Administrator* role assigned to them in Microsoft Power platform.
+Some of the steps require a Supply Chain Management user who is either an *Administrator* or has the *Commerce Payment Administrator* role assigned to them in Microsoft Power Platform.
 
-<!-- KFM: This isn't clear. We need to know exactly which security roles are required in each system. It seems like either will do, but maybe you mean the user needs both. Which role is required in SCM? Which role is required in Power Platform? We say *an Administrator*? Does that mean they should be assigned a role literally called *Administrator*? If not, then what?  -->
+<!-- KFM: This isn't clear. We need to know exactly which security roles are required in each system. It seems like either will do, but maybe you mean the user needs both. Are we talking about an SCM user or a Power Platform user? Which role is required in SCM? Which role is required in Power Platform? We say *an Administrator*? Does that mean they should be assigned a role literally called *Administrator*? If not, then what?  -->
 
-## Setup
+## Set up Dynamics 365 Payment Connector for Adyen
 
 ### Enable the features required for pay by link
 
-To enable payment notifications for pay by link, you must enable the following features in the **Feature management** workspace:
+To enable payment notifications for pay by link, you must enable the following features:
 
-- The unified payments experience in POS. Learn more in [Check out faster with optimized payment flows](../../commerce/dev-itpro/faster-checkout-pos.md). This feature is applicable for Point of Sale only and will have no impact on the Supply Chain Management orders, however, it must be enabled.
-- The *Enable Payments Notification feature*. This feature enables the infrastructure to receive notifications.
-- The *Enable Pay By Link Payment feature*. This feature is applicable for Point of Sale only and will have no impact on the Supply Chain Management orders, however, it must be enabled.
-- The  *Enable asynchronous payments for sales orders*. This feature enables the pay by link capability for Supply Chain Management orders.
+- Enable the unified payments experience as described in [Check out faster with optimized payment flows](../../commerce/dev-itpro/faster-checkout-pos.md). Although this feature only applies to Point of Sale (POS) and doesn't affect orders in Supply Chain Management, you must enable it to use the pay-by-link payment method.
+- Enable the following features [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+    - *Enable Payments Notification feature* – Enables the infrastructure to receive notifications.
+    - *Enable Pay By Link Payment feature* – Must be enabled to use the pay-by-link payment method, but only applies to POS and doesn't affect orders in Supply Chain Management.
+    - *Enable asynchronous payments for sales orders* – Enables the pay-by-link capability for sales orders in Supply Chain Management.
 
 ### Create a webhook to receive payment notifications from Adyen
 
@@ -129,9 +132,9 @@ To test the connection, follow these steps.
 1. Go to the Adyen portal.
 1. Edit the webhook that you created earlier, and then select **Test configuration**. If the connection fails, review all the values that you entered when you created the webhook to validate that they're correct. If you make any changes (for example, if you change the keys), wait 20 minutes before you test the connection again. In this way, you ensure that caching doesn't affect the test. If the issue persists, contact Microsoft Support.
 
-### Enable pay by link functionality for Supply Chain Management orders
+### Enable pay by link functionality for sales orders
 
-In addition to the generic pay by link setup described earlier in this article, the following additional steps are required to enable the pay by link functionality for Supply Chain Management orders.
+In addition to the generic pay by link setup described earlier in this article, the following additional steps are required to enable the pay by link functionality for sales orders.
 
 1. Navigate to the **Methods of payment** page under **Accounts receivable  \> Payments setup**. The methods of payment with **Payment type** value as *Credit card* or *Electronic payment* show a new section named **Pay by link**. This section shows two configurations, namely **Allow pay by link** and **Allow pay later**. The **Allow pay by link** configuration is required for creating a payment link, however the configuration **Allow pay later** is optional. This configuration enables the capability to allow the customers to pay later for the order thus enabling scenarios where the customer needs some time to confirm the order but wants to reserve the inventory. Such pay later orders are created with a special hold code and remain on hold for a preconfigured duration. If the customer makes a payment within this duration, then the order is released for fulfillment, else the order is systematically cancelled.
 1. To enable the Pay later capability, it is required to define the hold code to be applied to orders to be paid later via a payment link. To do so, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab, and for the **Hold code for payment confirmation** configuration, select a hold code. Additionally, define the duration in minutes that is allowed for the customer to make a payment for the order. If the customer doesn't make a payment during this duration, then the system cancels the order. To define the payment duration, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab and select a value for the **Order hold timeout for pending payments (minutes)** configuration.
@@ -152,28 +155,29 @@ For example, you add the value `{"PaymentLinkDuration":"02:00", "Store":"Test_St
 > [!NOTE]
 > To define the payment link duration to be more than one day, see [System.TimeSpan.Parse method](/dotnet/fundamentals/runtime-libraries/system-timespan-parse) for instructions on how to specify the value for the **PaymentLinkDuration** property.
 
-## End-to-end user experience for Supply Chain Management orders
+## End-to-end user experience for using pay by link with sales orders in Supply Chain Management
 
-The following example describes a typical end-to-end user experience for a Supply Chain Management order.
+The following example describes a typical end-to-end user experience for using pay by link with sales orders in Supply Chain Management.
 
-- A Supply Chain Management user creates a sales order for a customer over the phone.
-- When the order is ready for payment, navigate to the order header and under the **Price and discount** fast tab, select the Payment and Method of payment for which the configuration **Allow pay by link** was enabled. Additionally, like credit cards, the property **Settlement type** under the **Setup** fast tab might need to set to *None*.
+1. A salesperson takes an order by phone and creates a sales order in Supply Chain Management.
+1. When the order is ready for payment, the salesperson goes to the order header and under the **Price and discount** fast tab, select the Payment and Method of payment for which the configuration **Allow pay by link** was enabled. Additionally, like credit cards, the property **Settlement type** under the **Setup** fast tab might need to set to *None*.
 Open the **Manage** tab for the sales order and expand the **Credit card** dropdown. A button named **Create payment link** is displayed. Refer the below image showcasing this button.
 
-    ![Create payment link](./media/PBL_SCM.png "Create payment link button for Supply Chain Management orders")
+    ![Create payment link](./media/PBL_SCM.png "Create payment link button for sales orders in Supply Chain Management")
 
-- The Supply Chain Management user selects the **Create payment link** button and a page is displayed. This page is used for creating the payment link and has the customer information prepopulated.
-- After the Supply Chain Management user updates the customer information as needed, the Supply Chain Management user selects **Create link** to create the payment link.
+1. The salesperson selects the **Create payment link** button and a page is displayed. This page is used for creating the payment link and has the customer information prepopulated.
+1. After the Supply Chain Management user updates the customer information as needed, the Supply Chain Management user selects **Create link** to create the payment link.
+
   > [!NOTE]
   > To send this payment link to the customer, the Supply Chain Management user can use any communication mechanism available on the device where they are using Supply Chain Management application.
 
-- If the customer changes their mind or requests more time for making a payment, the Supply Chain Management user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** button on the payment link dialog, if the functionality is enabled. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration to process the order. Otherwise, the system cancels the order.
-- The customer opens the payment link from their phone or computer to complete the payment.
-- The Supply Chain Management user's screen is automatically refreshed every five seconds to check if the payment is tendered. Once the payment is received, then similar to the authorization via a credit card, the authorization is associated to the order.
+1. If the customer changes their mind or requests more time for making a payment, the Supply Chain Management user can either cancel the payment link from the payment link dialog, or they can use the **Pay later** button on the payment link dialog, if the functionality is enabled. If the **Pay later** option is used, the order is placed on a hold and the customer can make a payment within the predefined duration to process the order. Otherwise, the system cancels the order.
+1. The customer opens the payment link from their phone or computer to complete the payment.
+1. The Supply Chain Management user's screen is automatically refreshed every five seconds to check if the payment is tendered. Once the payment is received, then similar to the authorization via a credit card, the authorization is associated to the order.
 
-### Manually check the payment status for the Supply Chain Management order
+### Manually check the payment status for a sales order
 
-To manually check the payment status of a Supply Chain Management order, follow these steps.
+To manually check the payment status of a sales order, follow these steps.
 
 1. In Supply Chain Management, go to the **All sales orders** page and open the sales order waiting for payment.
 1. On the **Sales order** tab, under the **Payments** submenu, select **Asynchronous payments**. This action opens a page with the payment links associated with the order. If the payment link status is shown as **Active**, the payments against this link are either not yet processed or the customer hasn't yet paid.
@@ -183,6 +187,6 @@ To manually check the payment status of a Supply Chain Management order, follow 
 
 To ensure that old authorization notifications are deleted to save the storage and keep the notifications page manageable, old notifications can either be deleted manually from the **Payment authorization notifications** page, or deleted automatically by running the **Purge payment authorization notifications data** batch job. The batch job allows you to specify the number of days that pass before notifications are deleted.
 
-## Enable critical payment notifications for Adyen connector
+## Enable critical payment notifications for Dynamics 365 Payment Connector for Adyen
 
-Businesses can use the asynchronous payment notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in Commerce headquarters. This functionality provides the operations team with the necessary visibility to take timely actions based on the notifications received. Learn more in [Enable Critical payment notifications](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/payment-notifications)
+You can use the asynchronous payment notification framework to receive crucial and actionable notifications from Adyen, which are then displayed in Commerce headquarters. This functionality provides the operations team with the necessary visibility to take timely actions based on the notifications received. Learn more in [Enable Critical payment notifications](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/payment-notifications).
