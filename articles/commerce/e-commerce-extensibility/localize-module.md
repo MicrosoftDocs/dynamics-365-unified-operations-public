@@ -1,11 +1,10 @@
 ---
 title: Localize a module
-description: This article describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
+description: Learn how to localize modules and general module information in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/04/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,17 +15,17 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to localize a module for rendering. It also describes how to localize general module information, such as the module name, description, and configuration fields.
+This article explains how to localize modules and general module information in Microsoft Dynamics 365 Commerce.
 
 ## Localize module-rendered strings
 
-For modules that render strings, the data might already be localized when it's received from the content management system (CMS). For example, a product title might come back from Dynamics 365 Commerce in a localized format. Therefore, it doesn't require localization. However, some strings that are defined in the module might require localization. For example, a module that renders a list page might have **Next** and **Previous** buttons that are used for page navigation. The labels for those buttons can be localized if the module will be rendered in multiple languages.
+For modules that render strings, the data might already be localized when it's received from the content management system (CMS). For example, a product title might come back from Dynamics 365 Commerce in a localized format. Therefore, it doesn't require localization. However, some strings that you define in the module might require localization. For example, a module that renders a list page might have **Next** and **Previous** buttons that are used for page navigation. You can localize the labels for those buttons if the module renders in multiple languages.
 
 ### Create a new resource string
 
-Resources are stored in locale-specific JavaScript Object Notation (JSON) files under the /src/resources/ directory. A global.json file is the used as the base for all locales, and [n-part locales](https://wiki.mozilla.org/L10n:Locale_Codes) are supported. 
+You store resources in locale-specific JavaScript Object Notation (JSON) files under the `/src/resources/` directory. Use a `global.json` file as the base for all locales, and support [n-part locales](https://wiki.mozilla.org/L10n:Locale_Codes). 
 
-Here is an example of the file structure:
+Here's an example of the file structure:
 
 * /src
     * /resources
@@ -37,7 +36,7 @@ Here is an example of the file structure:
             * fr-fr.json
             * fr.json
 
-Each resource file contains key/value pairs, and an optional **comment** property can provide additional context about the resource key. All modules share a single set of resource files. Therefore, modules can share the same resource keys. 
+Each resource file contains key/value pairs. An optional **comment** property can provide extra context about the resource key. All modules share a single set of resource files, so modules can share the same resource keys. 
 
 The following example shows a resource schema.
 
@@ -68,7 +67,7 @@ The following example shows a resource file.
 
 ### Reference a resource key in a module
 
-To use a resource string in a module, you must reference the resource string keys under the **resources** node in the module definition. Default values can also be provided. Here is an example.
+To use a resource string in a module, reference the resource string keys under the **resources** node in the module definition. You can also provide default values. Here's an example.
 
 ```json
 {
@@ -139,7 +138,7 @@ To use a resource string in a module, you must reference the resource string key
 
 ### Access resources in the module view file
 
-Resources can be accessed in the module React file and module view file by using the **this.props.resources** property, as shown in the following example.
+You can access resources in the module React file and module view file by using the **this.props.resources** property, as shown in the following example.
 
 ```html
 <button className="nextButton">
@@ -149,9 +148,9 @@ Resources can be accessed in the module React file and module view file by using
 
 ## Localize module fields for authoring tools
 
-Modules should be built so that they support localization. This guideline applies to any authoring metadata in the module definition file, including the module name, description, and configuration fields.
- 
-Each resource file must contain modules and properties groups. All the module-related authoring strings should be grouped under the **modules** section. There should be a child section for each module, and each module section should, in turn, include the related authoring property pairs as children. Each property is an object that has a **"value"** property and an optional **"\_value.comment"** property inside the module section. 
+You should build modules so that they support localization. This guideline applies to any authoring metadata in the module definition file, including the module name, description, and configuration fields.
+
+Each resource file must contain **modules** and **properties** groups. Group all module-related authoring strings under the **modules** section. Include a child section for each module. Each module section should include the related authoring property pairs as children. Each property is an object that has a **"value"** property and an optional **"\_value.comment"** property inside the module section. 
 
 The following example shows a resource schema.
 
@@ -272,7 +271,7 @@ The following example shows a resource file.
 
 ### Generate a resource global.json file
 
-You can generate global.json files for module resources and authoring resources by running the **yarn msdyn365 generate-resources src** command in the SDK root folder. This command picks up both the module and authoring strings that are defined in the \*.definition.json files, and it generates the resources/modules/global.json and resources/authoring/global.json files.
+To generate global.json files for module resources and authoring resources, run the **yarn msdyn365 generate-resources src** command in the SDK root folder. This command picks up both the module and authoring strings that are defined in the \*.definition.json files. It generates the resources/modules/global.json and resources/authoring/global.json files.
 
 ### Example global.json file
 
@@ -306,7 +305,7 @@ You can generate global.json files for module resources and authoring resources 
 
 ## Test localized content
 
-To test localized content, you must use a page mock and change the locale to the locale you're testing. For more information about page mocks, see [Test modules by using page mocks](test-page-mock.md).
+To test localized content, use a page mock and change the locale to the locale you're testing. For more information about page mocks, see [Test modules by using page mocks](test-page-mock.md).
 
 ## Additional resources
 
