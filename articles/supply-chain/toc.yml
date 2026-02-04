@@ -3163,6 +3163,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
+        - name: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen
+          href: sales-marketing/pay-by-link-with-adyen-connector.md
         - name: Sales order FAQs
           href: sales-marketing/sales-orders-faq.md
       - name: Sales agreements
