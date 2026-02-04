@@ -1,11 +1,10 @@
 ---
 title: Data actions
-description: This article covers data actions in Microsoft Dynamics 365 Commerce.
+description: Learn about data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 08/01/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,21 +15,21 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers data actions in Microsoft Dynamics 365 Commerce.
+This article describes data actions in Microsoft Dynamics 365 Commerce.
 
-Data actions are JavaScript functions that are used in the Dynamics 365 Commerce architecture to help fetch and map data that is required by modules across applications.
+Data actions are JavaScript functions in the Dynamics 365 Commerce architecture that you use to help fetch and map data required by modules across applications.
 
-Data actions offer improved performance through the following features:
+Data actions improve performance through the following features:
 
 - Integrated application-level and request-level caches enable state sharing scenarios.
 - Built-in utilities support batching to minimize the number of external requests that your application requires.
 - Automatic deduplication helps guarantee that multiple data action calls aren't duplicated.
 
-The Dynamics 365 Commerce platform includes a set of core data actions that can be called from modules to do typical data retrieval. For example, core data actions can return product details. You can also create custom data actions to fetch and process data that is required by modules.
+The Dynamics 365 Commerce platform includes a set of core data actions that modules can call to perform typical data retrieval. For example, core data actions can return product details. You can also create custom data actions to fetch and process data that modules require.
 
 ## Anatomy of a data action
 
-Here is an example of a template TypeScript file that is created for a new data action.
+The following example shows a template TypeScript file created for a new data action.
 
 ```typescript
 import * as Msdyn365 from '@msdyn365-commerce/core';
@@ -83,7 +82,7 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
 
 ### Key parts of a data action
 
-* **Action function** – The main function that contains the logic that is run when the action is called. This function might involve making application programming interface (API) calls, reading cookies, or transforming data that was passed in.
+* **Action function** – The main function that contains the logic that runs when the action is called. This function might involve making application programming interface (API) calls, reading cookies, or transforming data that the function receives.
 
     ```typescript
     async function action(input:GetProductReviewsInput, ctx: Msdyn365.IActionContext):Promise<IGetProductReviewsData> {
@@ -100,7 +99,7 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
     }
     ```
 
-* **Action input class** – The class that is used to pass data into the action function. The **"cacheObjectType"** and **"cacheKey"** values indicate where in the cache the class should put the result of the action.
+* **Action input class** – The class that you use to pass data into the action function. The **"cacheObjectType"** and **"cacheKey"** values indicate where in the cache the class should put the result of the action.
 
     ```typescript
     export class GetProductReviewsInput extends Msdyn365.CommerceEntityInput implements Msdyn365.IActionInput {
@@ -117,7 +116,7 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
     }
     ```
 
-* **createInput method** – This optional method can be used to build an instance of an action input class that is used to load data when a page is first populated. 
+* **createInput method** – This optional method builds an instance of an action input class that loads data when a page is first populated. 
 
     ```typescript
     const createInput = (args: Msdyn365.ICreateActionContext): Msdyn365.IActionInput => {
@@ -127,7 +126,7 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
 
 ### Create a new custom data action
 
-To create a new custom data action, follow this step.
+To create a new custom data action, follow these steps.
 
 - At a command prompt, go to your root software development kit (SDK) folder, and run the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command to create a data action, as shown in the following example.
 
@@ -150,6 +149,5 @@ TypeScript files for new custom data actions are created under the \\src\\action
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
