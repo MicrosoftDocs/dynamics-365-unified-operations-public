@@ -1,6 +1,7 @@
 ---
-title: Product quality scenario (preview)
-description: Learn about the product quality scenario, which uses a sensor to measure the quality of a product batch, including an outline on scenario dependencies.
+title: Production auto report scenario (preview)
+Learn about the Production auto report scenario, which uses sensor signals to measure finished goods output and automatically post the corresponding finished quantities in Supply Chain Management.
+
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
@@ -9,134 +10,68 @@ ms.reviewer: kamaybac
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
 ---
 
-# Product quality scenario (preview)
+# Production auto report scenario (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-In the *product quality* scenario, a sensor is set up to measure the quality of a product batch on the shop floor. If a measurement falls outside a defined threshold for the product, a notification is shown on the supervisor's dashboard. For example, a sensor is measuring the moisture of a food product that comes out of the production line. If the measurement is outside the allowed minimum or maximum value for moisture for the product, a notification is generated.
+The **Production auto report** scenario automatically reports finished quantities when a machine generates enough sensor signals to reach a defined output threshold. The scenario requires fitting the machine with a sensor that emits a signal for each production cycle, and mapping that sensor to the corresponding resource and operation. By defining how many signals correspond to one finished unit, the system can determine when progress should be reported and update the production order and inventory accordingly.
 
-## Scenario dependencies
+## Setup the Production auto report scenario
 
-The *product quality* scenario has the following dependencies:
-
-- An alert can be triggered only if a production order is running on a mapped machine, and if that machine is producing a product that has a mapped batch attribute.
-- A signal that represents the batch attribute must be sent to the IoT hub, and a unique property name must be included.
-
-## Prepare demo data for the product quality scenario
-
-If you want to use a demo system to test the *product quality* scenario, use a system where the [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed, select the *USMF* legal entity (company), and prepare the additional demo data as described in this section. If you're using your own sensors and data, you can skip this section.
-
-In this section, you will set up the demo data so that you can use released product *P0111* (*Composite Case*) with the *product quality* scenario. In this scenario, the system tracks whether a batch attribute value that is measured by a sensor is outside the defined threshold for a batch attribute that is associated with the product.
-
-### Set up a sensor simulator
-
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
-
-### Associate a batch attribute and resource with product P0111
-
-Follow these steps to associate a batch attribute with product *P0111* (*Composite Case*) and verify that resource *3118* (*Foam cutting machine*) is used for it.
-
-1. Go to **Product information management \> Products \> Released products**.
-1. Find and select the product where the **Item number** field is set to *P0111*.
-1. On the Action Pane, on the **Manage inventory** tab, in the **Batch attributes** group, select **Product specific**.
-1. On the **Product specific** page, select **New** to create a product-specific batch attribute.
-1. On the header, set the following fields:
-
-    - **Attribute code** – Select the scope of attributes that you will monitor (*Table*, *Group*, or *All*). For this scenario, select *Table*, because you will always monitor a single attribute.
-    - **Attribute relation** – Select the attribute that you will use the *product quality* scenario to monitor the value of. For this example, select *Concentration*, which is an attribute that is included in the standard demo data.
-
-1. On the **Values** FastTab, in the **Minimum** and **Maximum** fields, define the range of acceptable values that the attribute must report to pass the quality check. If the sensor reports a value outside this range, the system will identify it as a quality violation. The other fields on this FastTab aren't relevant to the *product quality* scenario. The default values that you currently see come from the demo data. Therefore, leave them as they are, and close the **Product specific** page to return to the **Released product details** page for item *P0111*.
-1. On the Action Pane, on the **Engineer** tab, in the **View** group, select **Route**.
-1. On the **Route** page, on the **Overview** tab at the bottom of the page, select the line where the **Oper. No.** field is set to *30*.
-1. On the **Resource requirements** tab at the bottom of the page, make sure that resource *3118* (*Foam cutting machine*) is associated with the operation.
-
-### Create and release a production order for product P0111
-
-Follow these steps to create and release a production order for product *P0111*.
-
-1. Go to **Production control \> Production orders \> All production orders**.
-1. On the **All production orders** page, on the Action Pane, select **New batch order**.
-1. In the **Create batch** dialog box, set the following values:
-
-    - **Item number:** *P0111*
-    - **Quantity:** *10*
-
-1. Select **Create** to create the order and return to the **All production orders** page.
-1. Use the **Filter** field to search for production orders where the **Item number** field is set to *P0111*. Then find and select the production order that you just created.
-1. On the Action Pane, on the **Production order** tab, in the **Process** group, select **Estimate**.
-1. In the **Estimate** dialog box, select **OK** to run the estimate.
-1. On the Action Pane, on the **Production order** tab, in the **Process** group, select **Release**.
-1. In the **Release** dialog box, make a note of the number of the batch order that you just created.
-1. Select **OK** to release the order.
-
-### Configure the production floor execution interface
-
-If you haven't already done so, configure the production floor execution interface to show jobs that are assigned to resource *3118* (*Foam cutting machine*). For instructions, see the following sections:
-
-- [Configure the production floor execution interface](sdi-scenario-equipment-downtime.md#config-pfe)
-- [Enable search option on the production floor execution interface](sdi-scenario-equipment-downtime.md#enable-pfe-search)
-
-### Start the first job in the batch order
-
-Follow these steps to start the first job in the batch order.
-
-1. Go to **Production control \> Manufacturing execution \> Production floor execution**.
-1. In the **Badge ID** field, enter *123*. Then select **Sign in**.
-1. If you're prompted for an absence reason, select one of the cards for absence, and then select **OK**.
-1. In the **Search** field, enter the batch order number that you previously made a note of. Then select the **Return** key.
-1. Select the order, and then select **Start job**.
-1. In the **Start job** dialog box, select **Start**.
-
-## Set up the product quality scenario
-
-Follow these steps to set up the *product quality* scenario in Supply Chain Management.
-
-1. Go to **Production control \> Setup \> Sensor Data Intelligence \> Scenarios**.
-1. In the **Product quality** scenario box, select **Configure** to open the setup wizard for this scenario.
+1. Go to **Production control > Setup > Sensor Data Intelligence > Scenarios** to open the **Scenarios** page.
+1. In the **Production auto report scenario** box, select **Configure** to open the setup wizard for this scenario.
 1. On the **Sensors** page, select **New** to add a sensor to the grid. Then set the following fields for it:
-
-    - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), enter *Quality*.)
+    - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and have set it up as described in Set up a simulated sensor for testing, enter AssetDownTime.)
     - **Sensor description** – Enter a description of the sensor.
-
 1. Repeat the previous step for each additional sensor that you want to add now. You can come back and add more sensors at any time.
 1. Select **Next**.
 1. On the **Business record mapping** page, in the **Sensors** section, select the record for one of the sensors that you just added.
 1. In the **Business record mapping** section, select **New** to add a row to the grid.
-1. On the new row, the **Business record type** field should automatically be set to *Resources(WrkCtrTable)*. Set the **Business record** field to the resource that you're using the selected sensor to monitor. (If you're using the demo data that you created earlier in this article, set it to *3118, Foam cutting machine*.)
-1. Immediately after you select a business record type for the row that you added in the previous step, a second row is automatically added to the grid. On this row, the **Business record type** field should be set to *Batch attributes(PdsBatchAttrib)*. Set the **Business record** field to the batch attribute that you're using the selected sensor to monitor. (If you're using the demo data that you created earlier in this article, set it to *Concentration, Concentration Percentage*.)
+1. On the new row, set the **Business record** field to the resource that you're using the selected sensor to monitor.
+1. On the **Set auto-reporting threshold** page, select the operation relation you want you configuration to be applicable for. You can find a specific operation relation by following these steps:
+    - Select the **Item relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the product that the operation relation is created for.
+    - Select the **Route relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the route number that the operation relation is created for.
+
+> [!NOTE]
+An operation relation in Dynamics 365 SCM defines the detailed properties of an operation—such as setup time, run time, cost categories, and resource requirements—for a specific route or product. It lets the same operation have different properties depending on where it's used.
+
+1. When you have found the applicable operation relation, you need to define measures for:
+    - **Pulses per cycle** – Number of pulses the sensor emits in a production cycle.  
+    - **Units per cycle** – Number of parts produced by the operation in a production cycle.
+
+> [!NOTE]
+A production cycle is the smallest repeatable unit of work performed by a machine that produces a measurable output.
+
 1. Select **Next**.
-1. On the **Activate sensors** page, in the grid, select the sensor that you added, and then select **Activate**. For each activated sensor in the grid, a check mark appears in the **Active** column.
+1. On the **Activate sensors** page, in the grid, select the sensor that you set up, and then select **Activate**. For each activated sensor in the grid, a check mark appears in the **Active** column.
 1. Select **Finish**.
 
-## Work with the product quality scenario
+## Setup the production floor execution interface
 
-### View product quality data on the Resource status page
+Add a button to the toolbar on the **Production Floor Execution interface** that lets workers access the counter view. Use the procedure provided in [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md) , and insert the control labeled **View counter**.
 
-On the **Resource status** page, supervisors can monitor a timeline of the product quality signal that is received from the sensors that are mapped to each machine resource. Follow these steps to configure the timeline.
+## View sensor counters in the production floor execution interface
 
-1. Go to **Production control \> Manufacturing execution \> Resource status**.
-1. In the **Configure** dialog box, set the following fields:
+Jobs that are configured for auto reporting through a sensor signal appear in the job list on the **Production Floor Execution interface** with a dedicated icon, as indicated in the below image.
 
-    - **Resource** – Select the resources that you want to monitor. (If you're working with the demo data, select *3118*.)
-    - **Time series 1** – Select the record (metric key) that has the following format for its name: *ProductQuality:&lt;JobId&gt;:&lt;AttributeName&gt;*
-    - **Display name** – Enter *Batch attribute values*.
+:::image type="content" source="media/sdi-sensor-icon.png" alt-text="Job list with sensor jobs":::
 
-The following illustration shows an example of product quality data on the **Resource status** page when the value is in the range of acceptable values.
+When a sensor controlled job is started, workers can open the **View counter** dialog by selecting **View counter** from the toolbar in the job list. As shown in the image below, the counter dialog displays the current progress counters for the job.
 
-![Product quality data on the Resource status page when the value is in range.](media/sdi-product-quality-in-range.png "Product quality data on the Resource status page when the value is in range")
+:::image type="content" source="media/sdi-view-counter.png" alt-text="View counter dialog":::
 
-The following illustration shows an example of product quality data when an out-of-range value is detected.
+Counters are shown in one or two levels. The number of levels depends on the **Unit Sequence group ID** defined on the finished product. Learn more about configuring **Unit Sequence group ID** in: [Unit of measure and stocking policies](../warehousing/unit-measure-stocking-policies.md).
 
-![Product quality data on the Resource status page when an out-of-range value is detected.](media/sdi-product-quality-out-of-range.png "Product quality data on the Resource status page when an out-of-range value is detected")
+### Example of counters in a two level setup
 
-### View product quality data on the Notifications page
+In the example shown in the previous image, the first‑level counter indicates how many pieces have been added to the box currently being filled. Each time a sensor signal is received, the Level 1 counter increases. When the threshold of 12 pieces per box is reached, the Level 1 counter resets to zero and the Level 2 counter (which counts how many boxes are placed on a pallet) increases by one. When the Level 2 threshold of 100 boxes per pallet is reached, the Level 2 counter also resets to zero, indicating that a new pallet is ready to be filled. At this point, the system automatically reports a pallet as finished. The report as finished posting is processed through the message queue as an asynchronous (deferred) operation. Learn more about deferred posting here: [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
 
-On the **Notifications** page, supervisors can view the notification that are generated when the sensor measures a batch attribute value that falls outside the defined threshold for the batch attribute. Each notification provides an overview of the production job that is affected by the outage and gives the option to reassign the affected job to another resource.
+### Pausing signals and adjusting counters
 
-To open the **Notification** page, go to **Production control \> Inquiries and reports \> Sensor Data Intelligence \> Notifications**.
+Workers can adjust counter values at each level using the + / – buttons. To adjust a counter, the worker must first pause the sensor signal. Sensor input can be started or stopped by selecting button (1) in the previous image. Counter adjustments are useful when part of the produced quantity must be scrapped. In this case, the worker pauses the signal, adjusts the counter to reflect the scrapped quantity, and then resumes the signal by selecting button (1) again. While the signal is paused, workers can manually report progress and scrap using buttons (2) and (3).
 
-The following illustration shows an example of a product quality notification.
+### Navigating between multiple sensor enabled jobs
 
-![Example of a product quality notification.](media/sdi-product-quality-notification.png "Example of a product quality notification")
+If multiple jobs in the job list are enabled for sensor controlled reporting, the worker can use the **Previous** and **Next** buttons to switch between jobs without closing the dialog.
