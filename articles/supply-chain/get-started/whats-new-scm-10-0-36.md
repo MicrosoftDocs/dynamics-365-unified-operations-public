@@ -177,7 +177,7 @@ We have recently added or significantly updated the following help articles. The
 | Responsible AI | [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md) |
 | Warehouse management | [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) now describes how to authenticate using device code flow |
 | Warehouse management | [Optimize location directive queries](../warehousing/location-directives-optimize.md) |
-| Warehouse management | [Warehouse Mobile app accessibility features](../warehousing/warehouse-app-accessibility.md) |
+| Warehouse management | [Warehouse Management mobile app accessibility features](../warehousing/warehouse-app-accessibility.md) |
 
 ## Related information
 
