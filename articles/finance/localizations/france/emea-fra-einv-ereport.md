@@ -296,11 +296,18 @@ If the electronic addresses are not defined then the system will use the followi
 - **SIRET** number is used with the **0009** value as the *schemeID* attribute.
 - If **SIRET** number is not defined then **SIREN** number is used with the **0002** value as the *schemeID* attribute.
 - If **SIREN** number is not defined then Global Location Number (GLN), also known as European article numbering (EAN) number is used with the **0088** value as the *schemeID* attribute.
+
   > [!NOTE]
   > It assumes that the dedicated Registration number of the **EAN** registration category has been defined in advance.
 - If **EAN** number is not defined then VAT number is used with the **9957** value as the *schemeID* attribute.
 
 ## Configure mandatory notes
+
+According to French requirements, each individual electronic invoice must contain 3 mandatory **Note** elements in the header with the **following** predefined prefixes:
+
+- **#PMD#** *the text of the first note*
+- **#PMT#** *the text of the second note*
+- **#AAB#** *the text of the third note*
 
 [Advanced notes management](../italy/emea-ita-exil-structured-notes.md)
 
