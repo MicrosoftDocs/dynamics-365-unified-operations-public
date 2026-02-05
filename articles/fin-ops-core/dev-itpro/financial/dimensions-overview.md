@@ -4,7 +4,7 @@ description: Learn about dimensions, dimensions that have entities, and the dime
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 01/29/2026
+ms.date: 02/03/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
