@@ -29,7 +29,7 @@ Before you start, make sure these prerequisites are in place:
 - The company is a registered taxpayer in France.
 - The company has a signed agreement with the certified Partner Agent and obtained the credentials required for esablishing a secure connection to Partner Agent's infrastructure.
   > [!NOTE]
-  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
+  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
 
 - Install the **Electronic invoicing add-in** as described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 - Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
