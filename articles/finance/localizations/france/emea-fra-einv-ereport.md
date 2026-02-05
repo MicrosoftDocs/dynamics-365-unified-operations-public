@@ -309,7 +309,8 @@ According to French requirements, each individual electronic invoice must contai
 - **#PMT#** *the text of the second note*
 - **#AAB#** *the text of the third note*
 
-To automate the notes creation, the recommendation is to use the functionality of [Advanced notes management](../italy/emea-ita-exil-structured-notes.md)
+To automate the notes creation, the recommendation is to use the functionality of [Advanced notes management](../italy/emea-ita-exil-structured-notes.md).
+You need to configure at least 3 external header-level notes with the mandatory prefixes for the required documents, for all or specifically selected customers. Once configured, the notes will be automatically added to the applicable documents upon creation.
 
 :::image type="content" source="emea-fra-advanced-notes.jpg" alt-text="Screenshot of the advance notes configuration.":::
 
