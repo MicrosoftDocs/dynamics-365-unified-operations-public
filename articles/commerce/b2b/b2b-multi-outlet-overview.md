@@ -1,5 +1,5 @@
 ---
-title: B2B multioutlet feature overview
+title: B2B multioutlet capabilities (preview)
 description: Learn about the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
 ms.date: 01/21/2026
@@ -13,9 +13,10 @@ ms.custom:
   - bap-template
 ---
 
-# B2B multioutlet feature overview
+# B2B multioutlet capabilities (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/preview-banner.md)]
 
 This article describes the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 
@@ -137,7 +138,7 @@ Single sign-in across outlets provides several benefits:
 - **Simplified user experience**: Users manage one set of credentials instead of multiple sign-ins for different outlets.
 - **Reduced identity duplication**: Organizations avoid creating multiple user accounts for the same individual.
 - **Improved security and governance**: Administrators manage access centrally through customer hierarchies instead of distributing access across multiple accounts.
-- **Operational efficiency**: Onboarding and offboarding is faster because administrators apply access changes once at the contact level.
+- **Operational efficiency**: Onboarding and offboarding users is faster because administrators apply access changes once at the contact level.
  
 #### Impact on storefront behavior
  
@@ -252,7 +253,7 @@ Contacts who placed orders can't be fully removed from the hierarchy. Disabling 
  
 ### Provide a reason when disabling a contact
  
-When an administrator disables a contact, they are prompted to enter a reason.
+When an administrator disables a contact, they're prompted to enter a reason.
  
 Examples include:
  
@@ -280,7 +281,7 @@ This alignment helps ensure that user status remains consistent across organizat
 Managing users from the customer hierarchy provides several benefits:
  
 - **Centralized control**: Administrators manage access from a single, authoritative structure.
-- **Immediate effect**: Enable and disable actions take effect without additional configuration.
+- **Immediate effect**: Enable and disable actions take effect without more configuration.
 - **Audit-friendly**: Reasons for access changes are captured and preserved.
 - **Scalable administration**: Organizations can manage many users and outlets without duplicating effort.
  
