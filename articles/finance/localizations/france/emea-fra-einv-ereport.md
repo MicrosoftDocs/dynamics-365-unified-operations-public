@@ -289,8 +289,16 @@ To enter the Buyer schema codes, follow these steps.
 1. In the **Value** column, enter the required buyer electronic address.
 
 > [!NOTE]
-> For both, Seller and Buyer identification, the schema **9957** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). 
+> For both, Seller and Buyer identification, the defined above electronic address will be used as the **EndpointID** value with the **schemeID** attribute equal to **0225** (FRCTC ELECTRONIC ADDRESS) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
 
+If the electronic addresses are not defined then the system will use the following Endpoint determination algorithm: 
+
+- **SIRET** number is used with the **0009** value as the *schemeID* attribute.
+- If **SIRET** number is not defined then **SIREN** number is used with the **0002** value as the *schemeID* attribute.
+- If **SIREN** number is not defined then Global Location Number (GLN), also known as European article numbering (EAN) number is used with the **0088** value as the *schemeID* attribute.
+  > [!NOTE]
+  > It assumes that the dedicated Registration number of the **EAN** registration category has been defined in advance.
+- If **EAN** number is not defined then VAT number is used with the **9957** value as the *schemeID* attribute.
 
 ## Configure mandatory notes
 
