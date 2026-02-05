@@ -16,6 +16,22 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
+## December 2026
+
+The December release of Business performance analytics version 2.6 and contains the following features.
+
+### Feature enhancements
+
+| Category | Feature | Description |
+|----------|---------|-------------|
+| Data model additions and changes | Add ReturnAuthorizationLineNumberKey in Sales Order Fact | Add a new column to the sales order fact, which customers will be able to see in data lake and reports |
+| Bug Fix | Fix miss mapping Delivery Date Field Mapping in Purchase Order and Receipt Fact Transforms | PurchaseOrderFact and ProductReceiptFact using the incorrect delivery data field off the Finance Table |
+| Bug Fix | SalesPaymentMatchedNumberKey and SalesPaymentMatchingNumberKey use identical value in the transform | The correct customer transaction will be related to its corresponding SalesPaymentMatchingFact record |
+| Bug Fix | 403 error when transform v2 flow runs before initial flow | Fix this issue will prevent the transform flow from being delayed |
+| Bug Fix | When state machine is created for the first time put in protection for duplicate error | Fix protecting against a record creation race condition during the initial installation or update |
+| Bug Fix | Excel report creation failed from UI | Addressed issue where Excel report creation fails when attempting from the UI |
+| Other changes | Handle MaxParallelism errors during refresh | Address issues where PowerBI refresh may fail due to concurrency being too high |
+
 ## October 2025
 
 The October release of Business performance analytics version 2.5 and contains the following features.
