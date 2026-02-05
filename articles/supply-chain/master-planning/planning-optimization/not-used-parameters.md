@@ -70,7 +70,6 @@ Planning Optimization doesn't use the following parameters or options on the **I
     - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, turn on the feature named *Freezing time fence for Planning optimization* in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
     - **Minimum periods** – Planning Optimization doesn't support this parameter.
-    - **Planning formula** – Pending.
 
 ## Master plans page
 
