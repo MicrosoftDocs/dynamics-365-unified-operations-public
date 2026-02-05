@@ -17,15 +17,15 @@ ms.custom:
 
 This article describes how to configure page caching in Microsoft Dynamics 365 Commerce.
 
-Page caching enables e-commerce pages to be cached on the server. The server then serves these pages to site users, resulting in significantly improved performance times. You can enable and configure page caching and caching duration in Commerce site builder for [site pages](../modify-existing-page.md). Alternatively, you can configure a [template](../templates-layouts-overview.md) that enables page caching and then apply that template across multiple pages. Page caching is available as of the Commerce version 10.0.21 release (online software development kit \[SDK\] version 1.31.3 or later).
+Page caching enables the server to cache e-commerce pages. The server then serves these pages to site users, resulting in significantly improved performance times. You can enable and configure page caching and caching duration in Commerce site builder for [site pages](../modify-existing-page.md). Alternatively, you can configure a [template](../templates-layouts-overviews.md) that enables page caching and then apply that template across multiple pages. Page caching is available as of the Commerce version 10.0.21 release (online software development kit \[SDK\] version 1.31.3 or later).
 
-Page caching works by generating the content of a page and saving that content for a specific route for a set period. When another user accesses the same page, instead of calling for the page and returning the response, the cached page is immediately returned to the user. Because cached pages can become stale, it's important that you understand when and where you should use page caching.
+Page caching works by generating the content of a page and saving that content for a specific route for a set period. When another user accesses the same page, instead of calling the page and returning the response, the cached page is immediately returned to the user. Because cached pages can become stale, it's important that you understand when and where you should use page caching.
 
 Some pages that include dynamic data, such as product prices, must stay as fresh as possible. Multiple [data actions](data-actions.md) might be called when these pages are constructed. You can still use page caching for these pages. However, you should set a lower timeout for the cache. In that way, you ensure that the pages are frequently refreshed, and that they therefore serve the most accurate content to your e-commerce customers.
 
 ## Enable page caching
 
-To enable page caching, first enable the page caching feature at the site level. Then configure the feature either on each page that should be cached or on a template that is applied to multiple pages.
+To enable page caching, first enable the page caching feature at the site level. Then configure the feature either on each page that should be cached or on a template that you apply to multiple pages.
 
 ### Enable the page caching feature in Commerce site builder
 
@@ -47,7 +47,7 @@ The following illustration shows the **Cache page server-side** checkbox selecte
 
 After you enable page caching for a page, it's turned on for that page. The following two additional properties that appear below the **Cache page server-side** checkbox in the properties pane let you configure the cache times:
 
-- **Page Cache TTL** – This required property describes the absolute time, in seconds, that a page should live in the cache before it's removed. (TTL stands for "time to live.") For example, the **Page Cache TTL** property is set to **300**. In this case, after a page is computed and saved in the cache, any request to the same page that occurs after 300 seconds doesn't use the cached result. Instead, the page is recomputed. If you don't set a value, caching isn't enabled. A value of **3600** is a good value to start with.
+- **Page Cache TTL** – This required property describes the absolute time, in seconds, that a page should live in the cache before it's removed. (TTL stands for "time to live.") For example, the **Page Cache TTL** property is set to **300**. In this case, after a page is computed and saved in the cache, any request to the same page that occurs after 300 seconds doesn't use the cached result. Instead, the page is recomputed. If you don't set a value, caching isn't enabled. A value of **3,600** is a good value to start with.
 - **Page Cache TTR** – This required property describes the amount of time, in seconds, that an entry should live in the cache before it's refreshed. (TTR stands for "time to refresh.") When a page's TTR expires, the page still serves to the next request. However, in the background, a new page for the same route is computed with updated content and saved back into the cache. If you don't set a value, caching isn't enabled. A value of **300** is a good default value to start with.
 
 ## Make content changes to pages
@@ -64,7 +64,7 @@ You can use page caching on pages that shouldn't render stale data, such as pric
 
 ## Best practices
 
-Some modules, such as the [product collection](../product-collection-module-overview.md) module, support a configuration setting that ensures the module loads on the client side. The product collection module uses user context to support queries such as "best picks for you." However, because this data differs for every user, you don't want to cache it. In this case, if you cache the page, enable the **Enable module lazy load** property to ensure the module loads on the client side.
+Some modules, such as the [product collection](../product-collection-module-overview.md) module, support a configuration setting that ensures the module loads on the client side. The product collection module uses user context to support queries such as "best picks for you." However, because this data differs for every user, don't cache it. In this case, if you cache the page, enable the **Enable module lazy load** property to ensure the module loads on the client side.
 
 The following illustration shows the checkbox for the **Enable module lazy load** property in Commerce site builder.
 
