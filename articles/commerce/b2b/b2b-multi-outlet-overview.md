@@ -280,7 +280,7 @@ This alignment helps ensure that user status remains consistent across organizat
 Managing users from the customer hierarchy provides several benefits:
  
 - Centralized control—Administrators manage access from a single, authoritative structure.
-- Immediate effect—Enable and disable actions take effect without more configuration.
+- Immediate effect—Enable and disable actions take effect without additional configuration.
 - Audit-friendly—Reasons for access changes are captured and preserved.
 - Scalable administration—Organizations can manage many users and outlets without duplicating effort.
  
