@@ -309,7 +309,9 @@ According to French requirements, each individual electronic invoice must contai
 - **#PMT#** *the text of the second note*
 - **#AAB#** *the text of the third note*
 
-[Advanced notes management](../italy/emea-ita-exil-structured-notes.md)
+To automate the notes creation, the recommendation is to use the functionality of [Advanced notes management](../italy/emea-ita-exil-structured-notes.md)
+
+:::image type="content" source="emea-fra-advanced-notes.jpg" alt-text="Screenshot of the advance notes configuration.":::
 
 ## Set up units of measure
 
