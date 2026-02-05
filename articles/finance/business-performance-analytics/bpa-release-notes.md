@@ -16,7 +16,7 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
-## December 2026
+## December 2025
 
 The December release of Business performance analytics version 2.6 and contains the following features.
 
