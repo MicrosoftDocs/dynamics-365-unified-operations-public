@@ -1,8 +1,8 @@
 ---
 title: Proactive quality updates FAQ
 description: Access answers to frequently asked questions about proactive quality updates (PQUs), including questions about how to know what's included in a PQU.
-author: rashmansur
-ms.author: rashmim
+author: Narla Santosh Jaideep
+ms.author: najaidee
 ms.topic: faq
 ms.date: 11/25/2024
 ms.custom: bap-template
@@ -14,9 +14,77 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Proactive quality updates FAQ
+# Proactive quality updates (PQU) - FAQ
+This article provides answers to frequently asked questions about the proactive quality updates (PQUs), new biweekly proactive quality updates (PQUs) and the optional weekday update schedule.
 
-This article provides answers to frequently asked questions about proactive quality updates (PQUs).
+### What is the biweekly cadence for PQU?
+The biweekly cadence introduces a more frequent release cycle for Proactive Quality Updates. Instead of receiving updates every 26 days, PQUs will now be released every two weeks.
+
+Each biweekly cycle includes:
+- A release cut of the latest platform and application updates
+- Deployment to all stations—Trail, OnlineDev, Sandbox, and Live environments
+
+You can view the upcoming rollout calendar here: <Paste the Link Here>
+
+### Why is the rollout schedule changing from 26 days to a biweekly cadence?
+The purpose of this change is to ensure that customers receive fixes and improvements much faster. A biweekly cadence helps:
+- Reduce waiting time for important fixes
+- Provide more frequent validation cycles in Sandbox
+- Improve service stability through faster delivery
+- Keep customer environments closer to the most reliable build
+
+### What does “weekday schedule” mean for PQU?
+Previously, Live environments received PQUs only during weekend maintenance windows. With the new enhancement, customers can now opt to receive updates on weekdays as well.
+
+Benefits of combining the biweekly cadence with weekday scheduling include:
+- Greater flexibility in selecting maintenance windows
+- More buffer time to validate PQU updates in Sandbox
+- Better alignment with internal release and testing cycles
+- Improved control over update timing
+
+### How do I configure my Live environment to receive PQU updates on weekdays?
+Follow these steps in the Power Platform Admin Center (PPAC):
+
+1. Sign in to PPAC.
+2. Select your Live environment.
+3. Go to the Maintenance Settings page.
+    <img width="1055" height="678" alt="image" src="https://github.com/user-attachments/assets/372620cb-4c27-40ff-84a3-e79331f5a904" />
+
+5. Choose your preferred day(s) to receive PQUs.
+    <img width="1069" height="678" alt="image" src="https://github.com/user-attachments/assets/bc7ac1c8-8e76-4c45-a4ec-51964344f494" />
+
+6. Select Save.
+
+> [!NOTE]
+> Live environments always receive updates at least 5 days after Sandbox. This process remains unchanged under the biweekly cadence.
+
+### Which day should I choose for receiving PQU updates?
+You may choose any day that aligns with your organization’s internal operations and testing cycles.
+
+> [!Tip]: Selecting multiple weekdays ensures greater flexibility and reduces the risk of delays if one maintenance window is missed.
+
+### What is the minimum timeline between Sandbox and PROD under the biweekly cadence?
+There will always be a minimum 5‑day gap between when the PQU is applied to Sandbox (UAT) and when it becomes eligible for Live (PROD).
+
+This version difference is expected and does not affect your ability to deploy custom packages, as long as compatibility best practices are followed.
+
+### Can customers request exclusions from the new biweekly cadence?
+No. Exclusions are not supported.
+The standardized biweekly cadence ensures consistent servicing, predictable timelines, and compliance with platform servicing requirements.
+
+### How does the biweekly cadence work? Can you provide an example?
+Yes. Consider this example:
+If PQU‑1 is rolled out to Station‑2 on April 13–14, 2026:
+For customers using the default weekend‑only schedule:
+
+PQU applied on April 13 → Live receives the update on April 18, 2026 (Sandbox + 5 days)
+PQU applied on April 14 → Live receives the update on April 19, 2026 (Sandbox + 5 days)
+
+For customers who enabled weekday updates:
+Live will receive the update on the next available selected weekday, starting after the required 5‑day minimum window.
+Example:
+For a PQU applied on April 13, the earliest eligible date is April 18, 2026, and the system will select the next chosen weekday from your maintenance settings.
+
 
 ### How are the maintenance windows handled for customers who have one finance and operations apps instance but are active in multiple time zones?
 
