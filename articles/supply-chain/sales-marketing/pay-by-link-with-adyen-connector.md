@@ -27,6 +27,7 @@ By using the pay-by-link payment method, salespeople can generate payment links 
 
 <!-- KFM: It seems like we also need to already have an Adyen portal and/or Adyen Connector set up as a prerequisite here. If so, we should have a section for this here and give a link for how to do it. These links seem relevant: 
 
+https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=10-0-41
 https://docs.adyen.com/plugins/microsoft-dynamics
 https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup
 
@@ -43,8 +44,6 @@ Dynamics 365 Payment Connector for Adyen requires Supply Chain Management versio
 ### License required to set up the connector
 
 To set up the Dynamics 365 Payment Connector for Adyen, you must have a Dynamics 365 Commerce license.
-
-After you set up the connector, Supply Chain Management users can still work with sales orders without needing a Commerce license.
 
 ### Security roles required to set up the connector
 
@@ -64,8 +63,6 @@ To enable pay-by-link payment, enable the following features in [feature managem
 ### Find your payment notification service URL
 
 The payment notification service URL is where Adyen sends the payment notifications. You'll need this value later when you create a webhook to receive payment notifications from Adyen.
-
-<!-- KFM: is a Dynamics 365 Commerce license required to do this? If so, maybe mention that here. -->
 
 To find your payment notification service URL, follow these steps:
 
@@ -103,8 +100,8 @@ Create a new Microsoft Entra ID application registration in your Azure portal by
 
 To create a new webhook to receive payment notifications from Adyen, follow these steps.
 
-1. Go to the Adyen portal, and then go to the **Developers** section. <!-- KFM: How do I open the Adyen portal? Where is it? -->
-1. Create a standard webhook. <!-- KFM: How do we do this? Can we give a link? -->
+1. Go to the [Adyen portal](https://ca-test.adyen.com/), and then go to the **Developers** section.
+1. Create a standard webhook.
 1. In the **Server configuration** section, in the **URL** field, paste the **Payment notifications endpoint URL** value that you copied earlier.
 1. Keep the default values for the **Method** field (*JSON*) and the **Encryption protocol** field (*TLS v1.3*).
 1. In the **Security** section, select **OAuth**, and enter values for the following properties:
@@ -127,7 +124,7 @@ To create a new webhook to receive payment notifications from Adyen, follow thes
 Supply Chain Management uses the HMAC and application client ID details to authenticate the payment notifications sent by Adyen. To enter these details, follow these steps:
 
 > [!IMPORTANT]
-> To complete this procedure and save the configuration, sign in to Supply Chain Management by using a user account that has either the *Administrator* or *Commerce Payment Administrator* security role in Microsoft Power Platform. <!-- KFM: is a Dynamics 365 Commerce license also required? If so, maybe mention that here too. -->
+> To complete this procedure and save the configuration, sign in to Supply Chain Management by using a user account that has either the *Administrator* or *Commerce Payment Administrator* security role in Microsoft Power Platform.
 
 1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**.
 1. Open the **Payment notifications** tab.
@@ -164,15 +161,16 @@ In addition to the generic pay-by-link setup described earlier in this article, 
 
 This step is optional. Complete it only if you want to change the default behavior of the payment links.
 
-1. Go to the Adyen connector. <!-- KFM: How do we go here? Where to we go next to find the **Custom settings** property?  -->
-1. In the **Custom settings** property, add key-value pairs for any or all of the following keys (an example is shown later in this step):
-    - `PaymentLinkDuration` – Set the duration for which the payment link is valid. The default is 24 hours. <!-- KFM: In the original draft, this was sometimes shown as `PaymentLinkDuration_Orders`. Which is correct? -->
+1. Go to **Account receivables** \> **Payments setup** \> **Payment services**.
+1. Open payment service for your Adyen connector.
+1. On the **Payment service account** FastTab, in the **Custom settings** property, add key-value pairs for any or all of the following keys (an example is shown later in this step):
+    - `PaymentLinkDuration_Orders` – Set the duration for which the payment link is valid. The default is 24 hours.
     - `Store` – Specify which Adyen store information to include in the payment link. By default, only payment methods that don't depend on the Adyen store are shown.
     - `RequiredShopperFields` – Specify which fields the customers must enter values for before making a payment. By default, the related fields aren't shown to customers before they use the payment link.
 
     The system uses the default value for any keys that you don't include in the key-value pairs.
 
-    For example, you enter the value `{"PaymentLinkDuration":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom settings** property. In this case, the Adyen payment connector sets the payment link expiration to *two hours*, the payment link is associated with the *Test_Store* store, and customers must enter their *name*, *email address*, *phone number*, *delivery address*, and *billing address* before they make the payment.
+    For example, you enter the value `{"PaymentLinkDuration_Orders":"02:00", "Store":"Test_Store", "RequiredShopperFields":"email,name,phone,billingAddress,deliveryAddress"}` for the **Custom settings** property. In this case, the Adyen payment connector sets the payment link expiration to *two hours*, the payment link is associated with the *Test_Store* store, and customers must enter their *name*, *email address*, *phone number*, *delivery address*, and *billing address* before they make the payment.
 
     > [!TIP]
     > To define the payment link duration to be more than one day, specify the value for the `PaymentLinkDuration` property as described in [System.TimeSpan.Parse method](/dotnet/fundamentals/runtime-libraries/system-timespan-parse).
