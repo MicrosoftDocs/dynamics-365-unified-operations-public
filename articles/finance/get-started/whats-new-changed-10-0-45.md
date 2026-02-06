@@ -69,7 +69,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-|Accounts payable |Accounts payable | In invoice automation, there's an option to override the **Actual tax amount** with the **Imported tax amount**. When this is on, the calculated tax is overridden with the imported amount.  The default setting is Off. |Default| 
+|Accounts payable |Accounts payable | In feature management, there are two new features **Apply the imported sales tax for invoice register and invoice journal** and **Apply the imported sales tax for pending vendor invoice**. When these features are enabled, the calculated tax is overridden with the imported amount. Learn more [here](../accounts-payable/auto-vendr-invc-process.md#tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values).   |Default| 
 |Accounts payable |Accounts payable | On **Accounts payable parameters**, there's an option to always used the default description. When this setting is enabled, the purchase order and invoice descriptions always use the default description, even if a description was manually entered. The default setting is Off. |Default |
 |Accounts receivable|	Accounts receivable|	When a free text invoice is created and posted, the total on the posted invoice journal is incorrect where the calculation doesn't consider all of the total lines amount. Although the Ledger entries are correct, the Custtrans and CustInvoiceJour amounts are incorrect.	|Feature management|
 |Accounts receivable|	Accounts receivable|	Invoice and invoice line details information in the **Associations** FastTab in **My cases** page. |	Feature management|
