@@ -40,7 +40,7 @@ A dimension set can have balances that are based on its financial dimensions. Th
 Use the **Create balances** button to initialize the balances for a dimension set that doesn't currently have balances.
 
 > [!NOTE]
-> We recommend that you limit the number of dimension sets that have balances, because balance updates affect all General ledger posting activities.
+> We recommend that you limit the number of dimension sets that have balances because balance updates affect all General ledger posting activities.
 
 ## Update balances
 
