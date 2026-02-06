@@ -2,10 +2,10 @@
 title: FAQ for Copilot-based insights
 description: This article provides answers to frequently asked questions about the Microsoft Copilot AI technology used to generate summaries in the Dynamics 365 Commerce Store Commerce app.
 author: ashishmsft
-ms.date: 01/22/2025
+ms.date: 02/06/2025
 ms.update-cycle: 180-days
-ms.topic: how-to
-ms.reviewer: v-chrgriffin
+ms.topic: faq
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
