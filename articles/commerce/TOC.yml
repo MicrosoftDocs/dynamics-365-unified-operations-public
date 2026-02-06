@@ -1588,7 +1588,7 @@
       items:
       - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
         href: dev-itpro/DFP.md
-    - name: B2B Commerce
+    - name: B2B commerce
       items:
       - name: Set up a B2B e-commerce site
         href: b2b/set-up-b2b-site.md
