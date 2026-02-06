@@ -53,8 +53,13 @@ Use the **Update balances** button to include the latest General ledger posting 
 
 Use the **Rebuild balances** button to re-create the balances from scratch. In this way, you help ensure that they match the data in General ledger. A rebuild of balances requires lots of processing and should not usually be required.
 
-> [!NOTE]
-> If you have a scenario that regularly requires a rebuild of balances, we recommend that you contact customer support. Customer support can help you determine why balances don't match the data in General ledger.
+> [!Note]
+> Rebuilding balances should only be performed when you observe incorrect or missing balance values on the trial balance. This operation can significantly increase database load and processing time, depending on the volume of transactional data. During the rebuild, the affected dimension set is locked for recalculation and the trial balance cannot be accessed until processing is complete. In environments with large sets of transactions this may take several hours or, in rare cases, multiple days.</p>
+> To avoid performance impacts:
+> - **Do not rebuild balances for multiple dimension sets at the same time**. Running parallel rebuilds can introduce additional blocking and negatively affect system performance.
+> - **Always attempt a date range-specific rebuild first**. Use targeted rebuilds to recalculate only the periods where the discrepancies may exist. This approach should be tried before performing a full clear and rebuild of all balances.
+
+If you have a scenario that regularly requires a rebuild of balances, we recommend that you contact customer support. Customer support can help you determine why balances don't match the data in General ledger.
 
 ## Clear balances
 
