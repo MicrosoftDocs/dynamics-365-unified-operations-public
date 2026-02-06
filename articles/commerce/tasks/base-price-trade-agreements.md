@@ -22,7 +22,7 @@ Price groups are how trade agreements are assigned to specific channels. Using p
 
 The following procedure walks through creating channel-specific sales price trade agreements. This procedure uses the USRT demo data company.
 
-To create channel-specific sales price trade agreements, follow these steps.
+To create channel-specific sales price trade agreements, follow these steps:
 
 1. In Commerce headquarters, go to **Modules > Retail and Commerce > Pricing and discounts management > Price groups > All price groups**. 
 1. Select **New**.
