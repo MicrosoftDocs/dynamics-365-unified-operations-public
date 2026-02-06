@@ -22,10 +22,11 @@ The **Performance enhancement for general ledger dimension set balance calculati
 This feature enables the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets store data more efficiently and use less space. Therefore, the trial balance can show current balance data more quickly. The feature uses process automation to keep the balance amounts up to date. You can find the background process automation named **General ledger balance process** that runs every 5 minutes by default. The process automation background task creates a new, single occurrence batch every 5 minutes. When you view the individual batch task, the occurrence displays 10 minutes because that's the default for any batch. The background task creates a new balance process batch every 5 minutes. This time can be changed on the **Background process** tab in **Process automation**.
 
 >[!IMPORTANT]
-> We recommend that you review all customizations that might require the previous balance data and test the feature in an UAT environment before enabling the feature in your PROD environment.
->
-> After the feature is enabled in PROD, the prior balance data is immediately queued for deletion to reduce storage costs. This change can't be undone once started, and must be allowed to fully complete before reverting back from the enhancement feature if needed.
-
+> In 10.0.45 and earlier versions </p>
+> Before enabling this feature in the a production environment, it is critital to review any customizations that rely on the previous balance data. You should also complete full functional and performance testing in a sandbox or UAT environment to validate expected behavior. **Prior balance data is immediately queued for deletion to help reduce storage usage**.</p>
+> In 10.0.46 and later versions </p>
+> Before enabling this feature in a production environment, it is critital to review any customizations that rely on the previous balance data. You should also complete full functional and performance testing in a sandbox or UAT environment to validate expected behavior. **Prior balance data is retained for 30 days before being queued for deletion, allowing additional time for validation or transition.** </p>
+> This deletion process cannot be reversed once it begins, and it must be allowed to fully complete before switching back from the enhancement feature, if reverting is required.
 ## View balance status
 
 Use the **Balance status** button to view the current calculation state of the financial dimension set. The page that appears shows the status of the dimension set balance for each legal entity. It also shows the date and time when the dimension set was last updated by the automatic background process. 
@@ -70,6 +71,7 @@ The below table describes the old data model and the new data model used for thi
 For more information, see [Financial dimensions](financial-dimensions.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
 
 
