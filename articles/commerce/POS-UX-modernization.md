@@ -4,8 +4,8 @@ description: Learn how modern workflows in POS improve the usability, extensibil
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
-ms.date: 11/13/2025
-ms.reviewer: v-chrgriffin
+ms.date: 02/11/2026
+ms.reviewer: v-griffinc
 ms.custom: 
   - bap-template
 ---
@@ -164,6 +164,7 @@ This feature is available starting with the Commerce 10.0.39 release.
 The modernization and move to React-based controls on the transaction page keeps full parity with existing extensibility capabilities. Custom columns, fields, and controls continue to work as expected, making it easier to adopt the new experience without extra development effort.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
