@@ -44,7 +44,7 @@ Before you can use the Supplier Communications Agent, your system must meet the 
     > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
-    - First, install *Copilot for finance and operations apps* version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
+    - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
     - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
 - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier Communications Agent - inbound*

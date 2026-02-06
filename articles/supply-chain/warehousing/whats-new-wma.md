@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 01/29/2026
+ms.date: 02/03/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -17,6 +17,20 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 4.0.33.0
+
+Version 4.0.33.0 adds the following fixes and improvements:
+
+- Corrected the requirements listed on the Google Play store, which previously stated that near-field communication (NFC) and camera hardware were required. You can install and use the app on devices that don't include these features.
+- Resolved a calculator issue that caused a process-guide error when users selected the submit button.
+
+## Version 4.0.32.0
+
+Version 4.0.32.0 adds the following fixes and improvements:
+
+- Aligned authentication with Warehouse Management mobile app version 4.0.29.
+- Fixed an issue that caused some apps to crash in the previous version.
 
 ## Version 4.0.31.0
 
@@ -53,6 +67,7 @@ Version 4.0.29.0 adds the following fixes and improvements:
 - Fixed an issue that affected deployment of the app to iOS devices when using a mobile mass deployment (MDM) solution.
 - Improved support for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
 - Added support for ProGlove devices.
+- Added support for [haptic feedback through external wearable devices](warehouse-app-haptic-feedback.md).
 
 ## Version 4.0.28.0
 

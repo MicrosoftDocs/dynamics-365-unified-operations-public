@@ -1692,6 +1692,8 @@
                           href: localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
                         - name: Create a new Globalization feature
                           href: localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
+                        - name: Delete Globalization features
+                          href: localizations/global/gs-e-invoicing-delete-new-globalization-feature.md?context=/dynamics365/context/finance
                         - name: Work with configurations
                           href: localizations/global/gs-e-invoicing-work-configurations.md
                         - name: Work with feature setups
