@@ -1,11 +1,10 @@
 ---
 title: E-commerce components
-description: This article contains a high-level summary of some frequently used e-commerce configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
+description: This article provides a high-level summary of some frequently used e-commerce configuration components in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 08/02/2024
-ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.date: 02/03/2026
+ms.topic: overview
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,27 +15,27 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article contains a high-level summary of some frequently used e-commerce configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
+This article provides a high-level summary of some frequently used e-commerce configuration components in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
 ## Modules
 
 Modules represent the core building blocks that make up an online page. Here are some examples of modules:
 
-- A feature module that is featured on a page, and that shows a product image and description, together with a "call-to-action" button that can be used to purchase the product or get more information about it
-- A hero module that highlights a campaign or provides marketing information
-- A header module that is made up of smaller module components, such as a search module, a sign-in module, and a navigation module
+- A feature module that a page features. It shows a product image and description, together with a "call-to-action" button that you can use to purchase the product or get more information about it.
+- A hero module that highlights a campaign or provides marketing information.
+- A header module made up of smaller module components, such as a search module, a sign-in module, and a navigation module.
 
 ## Data actions
 
-Data actions are used to get data, apply business logic to a module, and share data across modules.
+Use data actions to get data, apply business logic to a module, and share data across modules.
 
 ### Core data actions
 
-The e-Commerce platform module library includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database, or getting ratings and reviews information for a product. Core data actions can't be modified.
+The Commerce e-commerce platform module library includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database, or getting ratings and reviews information for a product. You can't modify core data actions.
 
 ### Custom data actions
 
-You can create custom data actions and use them in your modules. Custom data actions can be globally scoped so that they can be used across multiple modules. Alternatively, they can be used in a single module. Custom data actions can call Dynamics 365 Commerce proxy application programming interfaces (APIs), or any other service provider, to get data. Custom business logic can be applied as required.
+Create custom data actions and use them in your modules. You can make custom data actions globally scoped so that you can use them across multiple modules, or use them in a single module. Custom data actions can call Dynamics 365 Commerce proxy application programming interfaces (APIs), or any other service provider, to get data. Apply custom business logic as required.
 
 ## Themes
 
@@ -46,13 +45,12 @@ Themes can also override module views (including module library modules), and ca
 
 ## Script injectors
 
-The online platform provides a built-in script injector module that makes it easy to inject scripts into the head, bodybegin, and so on, from the admin tool. Script injectors make it easy to add scripts such as third-party analytics. You might have advanced requirements to use custom script injector modules to inject custom HTML into your online site.
+The online platform provides a built-in script injector module that makes it easy to inject scripts into the head, `bodybegin`, and so on, from the admin tool. Script injectors make it easy to add scripts such as partner analytics. You might have advanced requirements to use custom script injector modules to inject custom HTML into your online site.
 
 ## Additional resources
 
 [E-commerce architectural overview](architectural-overview.md)
 
 [CLI command reference](cli-command-reference.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
