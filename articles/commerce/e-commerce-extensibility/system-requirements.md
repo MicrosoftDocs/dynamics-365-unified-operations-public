@@ -1,11 +1,10 @@
 ---
 title: System requirements for a Dynamics 365 Commerce online extensibility development environment
-description: This article lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
+description: Learn about the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
 author: samjarawan
-ms.date: 08/02/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,7 +15,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment. Before you install the online software development kit (SDK) and tools, you should verify that the system that you're working with meets or exceeds the minimum hardware and software requirements.
+This article lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
+
+Before you install the online software development kit (SDK) and tools, verify that your system meets or exceeds the minimum hardware and software requirements.
 
 ## Operating systems
 
@@ -24,7 +25,7 @@ The online extensibility development environment requires Windows 10 (the latest
 
 ## Memory and hard drive requirements
 
-We recommend that you have 8 gigabytes (GB) or more of RAM and at least 20 GB of free hard drive space to run the online extensibility environment.
+Use 8 gigabytes (GB) or more of RAM and at least 20 GB of free hard drive space to run the online extensibility environment.
 
 ## Supported web browsers
 
