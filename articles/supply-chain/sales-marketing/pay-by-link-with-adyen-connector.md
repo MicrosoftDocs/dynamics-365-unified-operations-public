@@ -25,7 +25,12 @@ By using the pay-by-link payment method, salespeople can generate payment links 
 
 ## Prerequisites
 
-<!-- KFM: It seems like we also need to already have an Adyen portal and/or Adyen Connector set up as a prerequisite here. If so, we should have a section for this here and give a link for how to do it. -->
+<!-- KFM: It seems like we also need to already have an Adyen portal and/or Adyen Connector set up as a prerequisite here. If so, we should have a section for this here and give a link for how to do it. These links seem relevant: 
+
+https://docs.adyen.com/plugins/microsoft-dynamics
+https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup
+
+-->
 
 ### Link your Supply Chain Management environment to a Dataverse environment
 
@@ -69,7 +74,7 @@ To find your payment notification service URL, follow these steps:
 1. Copy the value shown in the **Payment notifications end point URL** field.
 
     > [!NOTE]
-        > If the **Payment notifications end point URL** field is blank, then you need to connect your Supply Chain Management environment to a Dataverse environment. Learn more [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv)
+    > If the **Payment notifications end point URL** field is blank, then you need to connect your Supply Chain Management environment to a Dataverse environment. Learn more [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) and [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv)
 
 ### Create a Microsoft Entra ID application registration
 
