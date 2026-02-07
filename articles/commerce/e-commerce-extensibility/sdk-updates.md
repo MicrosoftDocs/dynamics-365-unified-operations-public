@@ -1,11 +1,10 @@
 ---
 title: SDK and module library kit updates
-description: This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: Learn about regular updates are released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 08/02/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,13 +15,13 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+This article covers regular updates that are released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-Regular updates will be released as part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes will be provided for all changes.
+Regular updates are part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes document all changes.
 
 ## Dependency versions in the package.json file
 
-The SDK package.json file that is included in the SDK root directory controls which versions of the SDK, module library, Fabrikam design kit, and Retail Server proxy are downloaded. The specific entries can be found in the **"dependencies"** section, as shown in the following example. Note that the version numbers might differ, depending on when the SDK was acquired.
+The SDK package.json file that is included in the SDK root directory controls which versions of the SDK, module library, Fabrikam design kit, and Retail Server proxy are downloaded. You can find the specific entries in the **"dependencies"** section, as shown in the following example. The version numbers might differ, depending on when you acquired the SDK.
 
 ```json
 "dependencies": {
@@ -40,13 +39,13 @@ The SDK package.json file that is included in the SDK root directory controls wh
 
 The version numbers that are used in the preceding example are in the format *X.Y.Z*, where *X* is the major version, *Y* is the minor version, and *Z* is the patch version.
 
-SDK dependencies are backward-compatible and can be pulled down at any time. The module library minor versions are dependent on the Commerce Scale Unit. Therefore, they can't be higher than the versions that are shown in the table that follows.
+SDK dependencies are backward-compatible and you can pull them down at any time. The module library minor versions depend on the Commerce Scale Unit. Therefore, they can't be higher than the versions that the following table shows.
 
-Patch versions don't change dependencies on the Commerce Scale Unit and can be updated at any time. Since the patch version number is not included for some of the packages in the package.json file such as **starter-pack**, **fabrikam-design-kit**, and **retail-proxy**, running the **yarn** command will pick up any patch releases newer than the current downloaded package.
+Patch versions don't change dependencies on the Commerce Scale Unit and you can update them at any time. Since the patch version number isn't included for some of the packages in the package.json file such as **starter-pack**, **fabrikam-design-kit**, and **retail-proxy**, running the **yarn** command picks up any patch releases newer than the current downloaded package.
 
 ### Module library versions mapped to Commerce Scale Unit versions 
 
-The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **September 15, 2023**.
+The following table maps module library versions to Commerce Scale Unit versions. Use the same module library versions for the Retail Server proxy and Fabrikam design kit as the ones mapped to the Commerce Scale Unit. The table lists current supported versions as of **September 15, 2023**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -77,15 +76,15 @@ The following table maps module library versions to Commerce Scale Unit versions
 
 ## Pull updates
 
-The SDK, module library, and other dependency updates are optional and can be pulled down to a local development environment by using the **yarn** command in the SDK source code. When this command is run, the latest dependencies are pulled down, based on the versions that are specified in the package.json file. Before you run the **yarn** command, you should delete the yarn.lock file from the root directory. Optionally, you can also delete the /node\_modules folder to get a clean set of dependency files.
+You can optionally update the SDK, module library, and other dependencies. To update, run the **yarn** command in the SDK source code. This command pulls the latest dependencies based on the versions specified in the package.json file. Before running the **yarn** command, delete the yarn.lock file from the root directory. You can also delete the /node\_modules folder to get a clean set of dependency files.
 
-After the latest dependencies are pulled down, you can run **yarn start** to run the Node server on your development environment and test the new SDK and module library components.
+After you pull the latest dependencies, run **yarn start** to run the Node server in your development environment and test the new SDK and module library components.
 
-When a configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, all dependencies are updated to their local versions during the packaging process. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
+When you create a configuration package by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the packaging process updates all dependencies to their local versions. You can then upload the created package to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Update SDK with CLI command
 
-We recommend that you keep the online SDK updated to the latest version, regardless of the versions of Commerce Scale Unit and the module library, because the online SDK is backward compatible with all versions. To update to the latest SDK, run the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command to ensure that the yarn.lock file is deleted before you run yarn to pull down the latest version of the online SDK.
+Keep the online SDK updated to the latest version, regardless of the versions of Commerce Scale Unit and the module library, because the online SDK is backward compatible with all versions. To update to the latest SDK, run the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. Make sure you delete the yarn.lock file before running yarn to pull the latest version of the online SDK.
 
 ## Determine the latest released versions of the dependency packages
 
@@ -95,9 +94,9 @@ To determine the latest released versions of the dependency packages, follow the
 - [SDK feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce%2Fbootloader/1.36.8/overview)
 - [Retail Server proxy feed](https://dev.azure.com/commerce-partner/Registry/_artifacts/feed/dynamics365-commerce/Npm/@msdyn365-commerce%2Fretail-proxy/9.36.2/overview)
 
-## Determine the versions deployed on an e-Commerce site
+## Determine the versions deployed on an e-commerce site
 
-To determine the deployed versions of the SDK, module library, and Retail Server proxy that are used on an e-Commerce site, right-click a site page, select **View page source**, and then search for the following strings to find the version number:
+To determine the deployed versions of the SDK, module library, and Retail Server proxy that are used on an e-commerce site, right-click a site page, select **View page source**, and then search for the following strings to find the version number:
 
 - **commerceSDKVersion** – The SDK version.
 - **commerceSSKVersion** – The module library version.
@@ -105,47 +104,46 @@ To determine the deployed versions of the SDK, module library, and Retail Server
 
 ## Update the app.settings.json file
 
-In the SDK **/src/settings** directory, there's a file called **app.settings.json**. This file surfaces global settings to Commerce site builder that are used by the module library set of modules and can contain additional settings for custom modules. The settings are located in site builder at **Site Settings \> Extensions**. 
+In the SDK **/src/settings** directory, there's a file called **app.settings.json**. This file surfaces global settings to Commerce site builder that are used by the module library set of modules and can contain more settings for custom modules. The settings are located in site builder at **Site Settings \> Extensions**. 
 
-When upgrading the module library, there may be new settings that are applicable and need to be added manually. The latest app.settings.json file can be found in the [online SDK GitHub settings directory](https://github.com/microsoft/Msdyn365.Commerce.Online/tree/master/src/settings). This file contains settings for the latest available module library. If you haven't made any additions to the app.settings.json file, you can copy the contents of this file to your version or do a diff and merge the new settings manually. If you're updating to an older module library, you can find the specific app.settings.json file under the specific build branch located on the [GitHub branches page](https://github.com/microsoft/Msdyn365.Commerce.Online/branches). You'll need to manually merge the contents to your app.settings.json file.
+When upgrading the module library, you might need to add new settings manually. You can find the latest app.settings.json file in the [online SDK GitHub settings directory](https://github.com/microsoft/Msdyn365.Commerce.Online/tree/master/src/settings). This file contains settings for the latest available module library. If you didn't make any additions to the app.settings.json file, you can copy the contents of this file to your version or do a diff and merge the new settings manually. If you're updating to an older module library, you can find the specific app.settings.json file under the specific build branch located on the [GitHub branches page](https://github.com/microsoft/Msdyn365.Commerce.Online/branches). You need to manually merge the contents to your app.settings.json file.
 
-When a local configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the local app.settings.json file updates will be included. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You will then see the new settings in the site builder tool.
+When you create a local configuration package by using the **yarn msdyn365 pack** command-line interface (CLI) tool, it includes the local app.settings.json file updates. You can then upload the created package to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You see the new settings in the site builder tool.
 
 ## Update module library using a global module library extension
 
 > [!NOTE] 
 > Only update the module library using a global module library extension if you have no e-commerce extension customizations.
 
-If you have an environment that has no e-commerce extension customizations (in other words, no modules, data actions, or themes) such as a newly deployed environment, you can update the module library using a preconfigured e-commerce global extension within LCS. Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package, so it is important to ensure that you do not have any customizations already uploaded. You must also ensure that you are not upgrading to a module library version later than that associated with the deployed Commerce Scale Unit version, as shown in the [Module library versions mapped to Commerce Scale Unit versions](#module-library-versions-mapped-to-commerce-scale-unit-versions) section above.
+If you have an environment with no e-commerce extension customizations (in other words, no modules, data actions, or themes) such as a newly deployed environment, you can update the module library by using a preconfigured e-commerce global extension within LCS. Deploying with one of the globally available customizations overwrites the deployed e-commerce extension package, so make sure you don't have any customizations already uploaded. You must also ensure you're not upgrading to a module library version later than that associated with the deployed Commerce Scale Unit version, as shown in the [Module library versions mapped to Commerce Scale Unit versions](#module-library-versions-mapped-to-commerce-scale-unit-versions) section.
 
 ### Deploy a global e-commerce extension
 
 To deploy a global e-commerce extension, follow these steps:
 
-1. From within your LCS project, select **Asset library**.
+1. From your LCS project, select **Asset library**.
 
-    ![LCS project screen with the Asset library tile highlighted.](media/module-library-update-1.png)
+    :::image type="content" source="media/module-library-update-1.png" alt-text="Screenshot of LCS project screen with the Asset library tile highlighted.":::
 
-1. On the **Asset library** page, select the **e-Commerce package** tab, and then select **Import**.
+1. On the **Asset library** page, select the **E-commerce package** tab, and then select **Import**.
 
-    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted.](media/module-library-update-2.png)
+    :::image type="content" source="media/module-library-update-2.png" alt-text="Screenshot of LCS Asset library page with the E-commerce package tab and Import button highlighted.":::
 
-1. In the **Pick a e-Commerce package** dialog box, select the package to import, and then select **Pick**. It may take 15-30 minutes for the package to be available. 
+1. In the **Pick a e-commerce package** dialog box, select the package to import, and then select **Pick**. It can take 15-30 minutes for the package to be available. 
 
-    The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the file name is for Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
+    The naming convention for the global e-commerce extension file includes the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the file name is for Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions are available.
     
-    ![Pick an e-Commerce package dialog box with the package name and Pick button highlighted.](media/module-library-update-3.png)
+    :::image type="content" source="media/module-library-update-3.png" alt-text="Screenshot of Pick an e-commerce package dialog box with the package name and Pick button highlighted.":::
 
-1. After the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **Manage**.  
-1. Select the **e-Commerce** tab, and then select **Apply extension** to display the **Update e-Commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment may take from 15-30 minutes to complete.
+1. After you import the package, deploy it into an e-commerce environment. Select the environment to update, and then select **Manage**.  
+1. Select the **E-commerce** tab, and then select **Apply extension** to display the **Update e-commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment can take 15-30 minutes to complete.
 
-    ![Update e-Commerce dialog box with an extension highlighted.](media/module-library-update-4.png)
+    :::image type="content" source="media/module-library-update-4.png" alt-text="Screenshot of Update e-commerce dialog box with an extension highlighted.":::
 
 For more information about how to upload an extension package, see [Package configurations and deploy them to an online environment](package-deploy.md).
 
 ## Additional resources
 
 [Package configurations and deploy them to an online environment](package-deploy.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
