@@ -4,7 +4,7 @@ description: Learn about how to clean up the batch job history, including an ove
 author: snagamalla
 ms.author: snagamalla
 ms.topic: how-to
-ms.date: 05/02/2024
+ms.date: 02/08/2026
 ms.reviewer: johnmichalak 
 audience: IT Pro
 ms.search.region: Global
@@ -17,6 +17,11 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 # Clean up the batch job history
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> To resolve storage concerns, Sandbox environments where the Batch History table is approaching or exceeding 500 GB will be subject to a one-time cleanup starting **February 23, 2026**. This cleanup removes only historical diagnostic data. Your batch job configurations, schedules, and recurrence settings are **not** affected. This action can't be reversed, so please ensure that any necessary data is backed up in advance. For queries, reach out to your Solution Architects.
+>
+> Production environments are **not** subject to truncation. For production environments, batch history data is cleaned up based on a retention period of 30 to 60 days.
 
 When you run a batch job, a history is recorded. This history can be used to monitor the correct execution of jobs. However, when several batch jobs are created, especially batch jobs with high recurrence, many batch job history entries are generated. Too many entries in the history table can negatively affect the performance of future jobs.
 
