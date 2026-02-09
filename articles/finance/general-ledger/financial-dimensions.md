@@ -121,6 +121,49 @@ But, not all dimensions are valid for all legal entities. Additionally, some dim
 ### Example
 Department has dimension values of 100, 200 and 300. USMF, USSI, and DEMF all use the Department dimension. DEMF is only permitted to use department 100 and 200. In order to restrict DEMF using Department 300, a legal entity override can be created, where the dimension value is marked as Suspended. USMF and USSI still have full access to departments 100, 200 and 300.  
 
+## Renaming financial dimensions
+
+When working with financial dimensions, you may need to rename dimension values or the dimensions themselves. However, there are several requirements and considerations that affect your ability to rename financial dimensions and their values.
+
+### Requirements for renaming dimension values
+
+Before attempting to rename a financial dimension value, verify the following requirements:
+
+**Entity-backed dimensions**: You can't rename a dimension value through the **Financial dimension values** page (**General ledger > Chart of accounts > Dimensions > Financial dimension values**) if it's an entity-backed dimension. For these dimensions, you must rename the value within the corresponding entity page. For example, if you need to rename a Department dimension value, you must make the change in the Operating Units page where the department is defined. Be aware that when you rename an entity-backed dimension value, other financial dimensions that are based on the same entity may also be renamed automatically. For more information about the difference between custom and entity-backed dimensions, see the Custom dimensions and Entity-backed dimensions sections earlier in this article.
+
+**Unique dimension names**: Financial dimension value names must be unique across the system. If a duplicate dimension value with the same name already exists, you won't be able to reuse that name for another dimension value. To check for duplicates, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, and then select **Dimension values** to search for any existing values with the same name. If you find a duplicate, you must either rename the existing value or choose a different name for the new value.
+
+**User privileges**: Your user account must have sufficient roles and privileges to add, edit, or delete dimension values. If you're unable to make changes to dimension values, verify with your system administrator whether you have the necessary permissions. Administrators should have sufficient privileges to manage dimensions.
+
+### Activating pending dimension changes
+
+If you're unable to rename a financial dimension and there are pending dimension changes that haven't been activated (such as a deleted dimension, renamed dimension, or newly inserted dimension), you must activate those changes before you can proceed with renaming.
+
+> [!NOTE]
+> If the environment is on or after Finance version 10.0.46, you can rename a dimension back to its original name without activation. However, if you rename to a new name, the dimension must be activated for use.
+
+To activate pending dimension changes:
+
+1. Put the system into maintenance mode.
+2. Go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**.
+3. Select **Activate all** to process all pending dimension changes.
+4. Wait for the activation process to complete.
+5. After activation is successful, retry renaming the dimension.
+
+If activation isn't possible or doesn't resolve the issue, consider using a different name for the dimension that doesn't conflict with existing dimension names.
+
+### Global Address Book party records and dimension renaming
+
+When you rename an entity that is used as the basis for an entity-backed financial dimension, the dimension values are automatically updated to reflect the new entity name. However, if multiple entities (such as a customer and a vendor) share the same party record in the Global Address Book, renaming one entity will automatically rename all other entities that reference the same party. This occurs because the entity name is derived from the shared party record, and changes to the party name propagate to all associated entities.
+
+To rename financial dimensions based on different entities that currently share the same party record, you must first separate them into distinct party records:
+
+1. Go to the Global Address Book and create a new party record with the desired name, address, and contact details.
+2. Navigate to the entity that you want to rename separately.
+3. On the entity page, select **Change party association** and choose the new party record you created.
+
+After the party association is updated, each entity will reference its own unique party record, allowing you to rename their corresponding financial dimension values independently.
+
 ## Deleting financial dimensions
 
 To help maintain referential integrity of the data, financial dimensions can rarely be deleted. If you try to delete a financial dimension, the following criteria are evaluated:
@@ -129,7 +172,7 @@ To help maintain referential integrity of the data, financial dimensions can rar
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
 - Is the financial dimension part of a default financial dimension integration format?
 - Has the financial dimension been set up as a default dimension?
-- Has the financial dimension been unselected from the Financial Reporting setup? 
+- Has the financial dimension been unselected from the Financial Reporting setup?
 
 If any of the criteria are met, you can't delete the financial dimension.
 
@@ -174,6 +217,9 @@ You can set up derived values on the dimensions page.
 2. Add the segments that should be derived. Each segment appears as a column.
 
 Enter the dimension combinations that should be derived from the dimension in the first column. For example, to use the cost center as the dimension that the department and location are derived from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
+
+> [!IMPORTANT]
+> When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
 
 ### Overriding existing values with derived dimensions
  
