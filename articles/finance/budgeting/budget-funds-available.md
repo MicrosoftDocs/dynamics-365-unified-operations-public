@@ -4,7 +4,7 @@ description: Learn about the budget funds available parameter and how to configu
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 09/15/2025
+ms.date: 02/09/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -40,7 +40,7 @@ We recommend that you leave the **Unposted actual expenditures** option cleared.
 To prevent incorrect setup on the **Document and journals** tab in the **Budget control configuration** that could lead to the inaccurate budget tracking, the following specific configuration options must be applied:
 
 > [!NOTE]
-> The following setup is required regardless of whether the **Only track amounts in the budget funds available calculation** parameter is set to *Yes* or *No*. 
+> The following setup is required regardless of whether the **Only track amounts in the budget funds available calculation** parameter is set to **Yes** or **No**. 
 
 | If this option is selected to include on Documents and journals tab | Select this option on the Budget funds available tab | This option is optional on the Budget funds available tab |
 | ------------------------- | -------------------------------- |-------------------------------- |
