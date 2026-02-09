@@ -1,5 +1,5 @@
 ---
-title: Archive Commerce transactions (preview)
+title: Archive Commerce transactions
 description: Learn how to archive transactions in Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.author: shajain
@@ -12,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Archive Commerce transactions (preview)
+# Archive Commerce transactions 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article explains how to archive transactions in Microsoft Dynamics 365 Commerce.
 
@@ -111,4 +110,5 @@ The retail long-term retention job archives the following tables:
 > This feature is generally available starting with the Commerce version 10.0.47 release.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 

@@ -1588,7 +1588,7 @@
       items:
       - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
         href: dev-itpro/DFP.md
-    - name: B2B e-commerce
+    - name: B2B commerce
       items:
       - name: Set up a B2B e-commerce site
         href: b2b/set-up-b2b-site.md
@@ -1608,6 +1608,8 @@
         href: b2b/quantity-limits.md
       - name: B2B indirect workflows 
         href: b2b/b2b-indirect.md
+      - name: B2B multioutlet capabilities (preview)
+        href: b2b/b2b-multi-outlet.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
