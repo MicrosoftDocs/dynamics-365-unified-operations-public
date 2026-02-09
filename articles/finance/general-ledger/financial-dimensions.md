@@ -135,34 +135,19 @@ Before attempting to rename a financial dimension value, verify the following re
 
 **User privileges**: Your user account must have sufficient roles and privileges to add, edit, or delete dimension values. If you're unable to make changes to dimension values, verify with your system administrator whether you have the necessary permissions. Administrators should have sufficient privileges to manage dimensions.
 
-### Activating pending dimension changes
+### Activating pending dimension attribute changes
 
-If you're unable to rename a financial dimension and there are pending dimension changes that haven't been activated (such as a deleted dimension, renamed dimension, or newly inserted dimension), you must activate those changes before you can proceed with renaming.
+If you're unable to rename a financial dimension attribute and there are pending dimension attribute changes that haven't been activated (such as a deleted, renamed dimension attribute, or newly inserted dimension attribute), you must activate those changes before you can proceed with renaming.
 
-> [!NOTE]
-> If the environment is on or after Finance version 10.0.46, you can rename a dimension back to its original name without activation. However, if you rename to a new name, the dimension must be activated for use.
-
-To activate pending dimension changes:
+To activate these changes:
 
 1. Put the system into maintenance mode.
 2. Go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**.
-3. Select **Activate all** to process all pending dimension changes.
+3. Select **Activate all** to process all pending dimension attribute changes.
 4. Wait for the activation process to complete.
-5. After activation is successful, retry renaming the dimension.
+5. After activation is successful, retry renaming the dimension attribute.
 
-If activation isn't possible or doesn't resolve the issue, consider using a different name for the dimension that doesn't conflict with existing dimension names.
-
-### Global Address Book party records and dimension renaming
-
-When you rename an entity that is used as the basis for an entity-backed financial dimension, the dimension values are automatically updated to reflect the new entity name. However, if multiple entities (such as a customer and a vendor) share the same party record in the Global Address Book, renaming one entity will automatically rename all other entities that reference the same party. This occurs because the entity name is derived from the shared party record, and changes to the party name propagate to all associated entities.
-
-To rename financial dimensions based on different entities that currently share the same party record, you must first separate them into distinct party records:
-
-1. Go to the Global Address Book and create a new party record with the desired name, address, and contact details.
-2. Navigate to the entity that you want to rename separately.
-3. On the entity page, select **Change party association** and choose the new party record you created.
-
-After the party association is updated, each entity will reference its own unique party record, allowing you to rename their corresponding financial dimension values independently.
+If activation isn't possible or doesn't resolve the issue, consider using a different name for the dimension attribute that doesn't conflict with existing dimension attribute names.
 
 ## Deleting financial dimensions
 
