@@ -29,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
-| Production Control | Sensor Data Intelligence - Auto report progress scenario | *Coming soon* |  Feature management:<br>*(Preview) Sensor Data Intelligence - Auto report progress* |
+| Production Control | Sensor Data Intelligence - Auto report progress scenario | [Production auto report scenario (preview)](../sensor-data-intelligence/sdi-scenario-production-auto-report.md) |  Feature management:<br>*(Preview) Sensor Data Intelligence - Auto report progress* |
 | Sales and marketing | [Manage pricing rules using a generic base currency](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/manage-pricing-rules-using-generic-base-currency) | *Coming soon* | Enabled by default |
 | Sales and marketing | [Optimize pricing data import and export workflows](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/optimize-pricing-data-import-export-workflows) | [Pricing data import and export entities](../unified-pricing-management/upm-pricing-data-entities.md) |  Feature management:<br>*Unified pricing management pricing rule performance enhancement* |
 | Sales and marketing | [Simulate prices based on sales order line attributes](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/simulate-prices-based-sales-order-line-attributes) | *Coming soon* | Enabled by default |

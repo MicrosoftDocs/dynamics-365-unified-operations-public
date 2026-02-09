@@ -42,20 +42,23 @@ To set up the production auto report scenario, you need to define the sensors th
 1. On the **Business record mapping** page, in the **Sensors** section, select the record for one of the sensors that you just added.
 1. In the **Business record mapping** section, select **New** to add a row to the grid.
 1. On the new row, set the **Business record** field to the resource that you're using the selected sensor to monitor.
-1. On the **Set auto-reporting threshold** page, select the operation relation you want you configuration to be applicable for. You can find a specific operation relation by following these steps:
+1. Repeat the previous step for each additional sensor that you want to set up now. You can come back and set up more sensors at any time.
+1. Select **Next**.
+1. On the **Set auto-reporting threshold** page, select the operation relation you want your configuration to be applicable for. You can find a specific operation relation by following these steps:
     - Select the **Item relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the product that the operation relation is created for.
     - Select the **Route relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the route number that the operation relation is created for.
 
     > [!NOTE]
-    An operation relation in Dynamics 365 SCM defines the detailed properties of an operation—such as setup time, run time, cost categories, and resource requirements—for a specific route or product. It lets the same operation have different properties depending on where it's used.
+    Each operation relation defines the detailed properties of an operation—such as setup time, run time, cost categories, and resource requirements—for a specific route or product. It lets each operation have several different properties based on where it's used.
 
-1. When you have found the applicable operation relation, you need to define measures for:
+1. When you have found the applicable operation relation, enter values in the following columns for it:
     - **Pulses per cycle** – Number of pulses the sensor emits in a production cycle.  
     - **Units per cycle** – Number of parts produced by the operation in a production cycle.
 
-> [!NOTE]
-A production cycle is the smallest repeatable unit of work performed by a machine that produces a measurable output.
+    > [!NOTE]
+    A production cycle is the smallest repeatable unit of work performed by a machine that produces a measurable output.
 
+1. Set up additional operation relations with their corresponding thresholds as needed. You can come back and set up more operation relations at any time.
 1. Select **Next**.
 1. On the **Activate sensors** page, in the grid, select the sensor that you set up, and then select **Activate**. For each activated sensor in the grid, a check mark appears in the **Active** column.
 1. Select **Finish**.
@@ -82,8 +85,16 @@ In the example shown in the previous image, the first‑level counter indicates 
 
 ### Pausing signals and adjusting counters
 
-Workers can adjust counter values at each level using the **+** and **–** buttons. To adjust a counter, the worker must first pause the sensor signal. Sensor input can be started or stopped by selecting button (1) in the previous image. Counter adjustments are useful when part of the produced quantity must be scrapped. In this case, the worker pauses the signal, adjusts the counter to reflect the scrapped quantity, and then resumes the signal by selecting button (1) again. While the signal is paused, workers can manually report progress and scrap using buttons (2) and (3).
+If something unexpected happens, such as a counter reading that doesn't match the cycle or if a counted item needs to be scrapped, workers can pause the sensor signal and adjust the counters and report quantities as needed. Follow these steps to pause signals and adjust counters:
+
+1. Open the counter dialog by selecting **View counter** from the toolbar in the job list.
+1. In the counter dialog, select the **Pause signal** button to pause the sensor signal. This allows you to report scrap, report progress, and adjust the counters without new signals coming in.
+    - If you need to adjust the counter values, use the **+** and **–** buttons below each counter as needed.
+    - If you need to report some counted quantity as scrap, select the **Report scrap** button. This opens the standard reporting as scrap dialog, where you can enter the quantity to be scrapped and the reason for scrapping.
+    - If you need to manually report progress (for example, because a sensor signal was missed), pause the signal and select the **Report progress** button. This opens the standard reporting progress dialog, where you can enter the quantity to report as finished.
+
+1. Select the **Start signal** button to restart the sensor signal.
 
 ### Navigating between multiple sensor enabled jobs
 
-If multiple jobs in the job list are enabled for sensor controlled reporting, the worker can use the **Previous** and **Next** buttons to switch between jobs without closing the dialog.
+If multiple jobs in the job list are enabled for sensor controlled reporting, use the **Previous** and **Next** buttons to switch between jobs without closing the dialog.
