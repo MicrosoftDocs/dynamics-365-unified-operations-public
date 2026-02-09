@@ -97,7 +97,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to October 31, 2026| Not Started |
 | 10.0.47 PQU-15 | October 21, 2026 | October 21, 2026 to November 14, 2026| Not Started |
 | 10.0.47 PQU-16 | November 4, 2026 | November 4, 2026 to November 28, 2026| Not Started |
-| 10.0.47 PQU-17 (Ring-6) | November 25, 2026 | November 25, 2026 to December 19, 2026| Not Started |
+| 10.0.47 PQU-17 | November 25, 2026 | November 25, 2026 to December 19, 2026| Not Started |
 | 10.0.48 PQU-1 | July 8, 2026 | July 8, 2026 to August 1, 2026| Not Started |
 | 10.0.48 PQU-2 | July 22, 2026 | July 22, 2026 to August 15, 2026| Not Started |
 | 10.0.48 PQU-3 | August 5, 2026 | August 5, 2026 to August 29, 2026| Not Started |
@@ -114,7 +114,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.48 PQU-14 | January 6, 2027 | January 6, 2027 to January 30, 2027| Not Started |
 | 10.0.48 PQU-15 | January 20, 2027 | January 20, 2027 to February 13, 2027| Not Started |
 | 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to February 27, 2027| Not Started |
-| 10.0.48 PQU-17 (Ring-6) | February 24, 2027 | February 24, 2027 to March 20, 2027| Not Started |
+| 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 20, 2027| Not Started |
 
 > [!IMPORTANT]
 > The PQU schedule for updates 10.0.47, 10.0.48, and 10.0.49 will be published on January 15, 2026.
