@@ -24,7 +24,7 @@ Each biweekly cycle includes:
 - A release cut of the latest platform and application updates
 - Deployment to all stations—Trail, OnlineDev, Sandbox, and Live environments
 
-You can view the upcoming rollout calendar here: <Paste the Link Here>
+You can view the upcoming rollout calendar here: [PQU Release Calendar](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule#high-level-pqu-train-schedule).
 
 ### Why is the rollout schedule changing from 26 days to a biweekly cadence?
 The purpose of this change is to ensure that customers receive fixes and improvements much faster. A biweekly cadence helps:
@@ -47,7 +47,8 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 
 1. Sign in to PPAC.
 2. Select your Live environment.
-3. Go to the Maintenance Settings page.
+3. Click on Settings.
+4. In the next page, under updates section click on "Maintenance Settings". 
     <img width="1055" height="678" alt="image" src="https://github.com/user-attachments/assets/372620cb-4c27-40ff-84a3-e79331f5a904" />
 
 5. Choose your preferred day(s) to receive PQUs.
