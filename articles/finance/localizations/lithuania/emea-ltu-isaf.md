@@ -128,12 +128,12 @@ To set up application-specific parameters, follow these steps:
 
 1. Add all of the conditions for those "Standard VAT codes" that must be reported for your Legal entity. According to documentation, the list of "Standard VAT codes" is the following:
 
-| **Lookup result** | **Line**              | **Tax Code**      |
-|-------------------|-----------------------|-------------------|
-| **PVM100**        | The last in your list | **\*Not blank\*** |
+   | **Lookup result** | **Line**              | **Tax Code**      |
+   |-------------------|-----------------------|-------------------|
+   | **PVM100**        | The last in your list | **\*Not blank\*** |
 
-> [!NOTE]
-> Add "PVM100" as the last entry in the list. It collects data for "other cases". The **Line** value must be the last in your table.
+   > [!NOTE]
+   > Add "PVM100" as the last entry in the list. It collects data for "other cases". The **Line** value must be the last in your table.
 
 This setup means that all the tax transactions for **Sales tax code**, which don't have a specific setup as no "Standard VAT code" is defined for them, are considered for **PVM100.** You must define this lookup result field at the end of the list of your conditions.
 
@@ -163,7 +163,7 @@ To import a package of data entities that includes a predefined electronic messa
 1. Now, import data from the **LT i.SAF setup for Electronic messages.zip** file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**.
 1. Select **Upload and add**, select the **LT i.SAF setup for Electronic messages.zip** file on your computer, and upload it.
 
-:::image type="content" source="../media/isaf-data-management.jpg" alt-text="Screenshot of the Data management workspace showing the import of a package of data entities.":::
+   :::image type="content" source="../media/isaf-data-management.jpg" alt-text="Screenshot of the Data management workspace showing the import of a package of data entities.":::
 
 You get a notification in **Messages**, or you can manually refresh the page to see data import progress. When the importing process is complete, you see the results on **Execution summary** page.
 
@@ -185,10 +185,9 @@ To set up data sources to collect documents for reporting, follow these steps:
 
    - **VendInvoiceJour:** Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**
    - **CustInvoiceJour:** Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**
+   - **ProjInvoiceJour:** Go to **Project management and accounting** \> **Project invoices** \> **Project invoices**
 
-- **ProjInvoiceJour:** Go to **Project management and accounting** \> **Project invoices** \> **Project invoices**
-
-  By default, all records from these data sources populate to the **Message items** table when you select **Populate records**.
+   By default, all records from these data sources populate to the **Message items** table when you select **Populate records**.
 
 1. On the **Datasource setup** FastTab, select the **Vendor invoice journal** record, and then select **Edit query**.
 1. For the **Date** field of the **Vendor invoice journal** table, define the period for vendor invoices from the selected legal entity that must be reported in i.SAF format. You can specify other selection criteria to reflect specific requirements of your company for the i.SAF report.
@@ -212,10 +211,10 @@ To set up electronic messaging parameters for i.SAF, follow these steps:
 
 1. Go to **General ledger** > **Setup** > **Parameters** to set up **Number sequences**:
 
-| **Number sequences reference** | **Number sequences description**                                                                                                                                                                                                                         |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message                        | The unique key for a message. Set up a non-continuous number sequence for this reference. Use this number sequence for numbering messages when you generate them. |
-| Message item                   | The unique key for a message item. Set up a non-continuous number sequence for this reference. Use this number sequence for numbering message items when you generate them from the source tables. |
+   | **Number sequences reference** | **Number sequences description**                                                                                                                                                                                                                         |
+   |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Message                        | The unique key for a message. Set up a non-continuous number sequence for this reference. Use this number sequence for numbering messages when you generate them. |
+   | Message item                   | The unique key for a message item. Set up a non-continuous number sequence for this reference. Use this number sequence for numbering message items when you generate them from the source tables. |
 
 ## Set up security roles for electronic message processing
 
@@ -257,7 +256,7 @@ To define invoice types for i.SAF reporting, follow these steps:
 1. In the **Processing** field, select **i.SAF**.
 1. Select the **Choose action** check box and select **"Attrib. evaluation"** to start defining the invoice type. Or, clear the **Choose action** check box to run **"Attrib. evaluation"** action automatically as the next action from the selected processing. As a result of **"Attrib. evaluation"** action, for all the invoices that have a status of **Populated**, the invoice type is defined and shown in **Invoice type** field in the **Additional field** group for each invoice.
 
-:::image type="content" source="../media/isaf-invoice-type.jpg" alt-text="Screenshot of the i.SAF Invoice type evaluation results.":::
+   :::image type="content" source="../media/isaf-invoice-type.jpg" alt-text="Screenshot of the i.SAF Invoice type evaluation results.":::
 
 ## Generate the i.SAF report in XML
 
