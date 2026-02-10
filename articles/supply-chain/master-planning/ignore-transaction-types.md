@@ -49,11 +49,13 @@ When the *Exclude specific sales orders or sales order lines in Planning Optimiz
 1. Set the **Exclude specific transactions** option to *Yes*. If you set this option to *No*, the settings in the next steps have no effect.
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Select an existing sales order, or create a new one.
-1. To exclude the whole order from master planning, on the **Header** tab, on the **Master planning** FastTab, set the **Exclude from master planning** option to *Yes*. This setting defines the default value for new lines, but it doesn't override the value on existing lines unless the **Updating Exclude from master planning** option is set to *Always* or *Prompt* on the **Accounts receivable parameters** page (as described in the next procedure).
+1. To exclude the whole order from master planning, on the **Header** tab, on the **Master planning** FastTab, set the **Exclude from master planning** option to *Yes*. This setting defines the default value for new lines, but it doesn't override the value on existing lines unless the **Updating Exclude from master planning** option is set to *Always* or *Prompt* on the **Accounts receivable parameters** page (as described in the next section).
 1. To exclude one or more order lines from master planning, follow these steps:
 
     1. On the **Lines** tab, on the **Sales order lines** FastTab, select the order line that you want to exclude.
     1. On the **Line details** FastTab, on the **Sourcing** tab, set the **Exclude from master planning** option to *Yes*.
+
+## Configure whether sales lines are updated after changing exclude settings on the sales order header
 
 To configure whether and how sales lines are updated after changing the **Exclude from master planning** option on the sales order header, follow these steps:
 
