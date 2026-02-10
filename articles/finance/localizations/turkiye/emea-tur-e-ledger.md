@@ -18,7 +18,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 This article explains how to work with e-Ledger for the Republic of Türkiye in Microsoft Dynamics 365 Finance, including configuring various parameters and generating files and reports.
 
-E-Ledger is a legal and technical framework that collects general ledger records in a journal book and helps prepare mandatory books in electronic format in the Republic of Türkiye. These books must adhere to the specified formats and standards to ensure their immutability, integrity, and source accuracy, and to ensure that they can be used as evidence before authorities. The framework uses the internationally adopted eXtensible Business Reporting Language (XBRL) standard for electronic preparation.
+e-Ledger is a legal and technical framework that collects general ledger records in a journal book and helps prepare mandatory books in electronic format in the Republic of Türkiye. These books must adhere to the specified formats and standards to ensure their immutability, integrity, and source accuracy, and to ensure that they can be used as evidence before authorities. The framework uses the internationally adopted eXtensible Business Reporting Language (XBRL) standard for electronic preparation.
 
 ## Configure e-Ledger
 
@@ -54,15 +54,32 @@ The following table describes the e-Ledger ER configurations.
 
 To configure application-specific parameters for the **XBRL GL (TR) (XML)** format, follow these steps:
 
-1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace and select **Reporting configurations**.
+1. In Finance, go to the **Electronic reporting** workspace and select **Reporting configurations**.
 1. Select the **XBRL GL (TR) (XML)** configuration, and then, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, in the **Name** field, select **ELedgerSetup_Lookup**.
 1. On the **Conditions** FastTab, set the following fields.
 
-    | Field | Description |
-    |---|---|
-    | Lookup result | Select the lines. |
-    | Lines | Set the number of XML nodes in a branch file. This field is used to define the maximum file size that the integrator allows. The value that you specify determines the number of vouchers that are included in each generated XML file. You can update this field as required, according to the applicable limits. |
+| Field | Description |
+|---|---|
+| Lookup result | Select the lines. |
+| Lines | Set the number of XML nodes in a branch file. This field is used to define the maximum file size that the integrator allows. The value that you specify determines the number of vouchers that are included in each generated XML file. You can update this field as required, according to the applicable limits. |
+
+In Türkiye, the NACE code is a mandatory classification that identifies the main economic activity of a legal entity. For e-Ledger generation, the NACE code must be included in the XBRL GL file.
+To support this requirement, an application-specific parameter is provided in the **XBRL GL (TR) (XML)** Electronic reporting (ER) format.
+
+To configure the NACE code parameter, follow these steps:
+
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **NACE_Lookup** in the **Name** field.
+1. On the **Conditions** FastTab, type the NACE code.
+2. Select **Completed** in the **State**.
+3. Select **Save**.
+
+The following table describes the NACE code parameter:
+
+| Field | Description |
+|-------|-------------|
+| Lookup result | Select the NACE. |
+| NACECode | Specifies the NACE activity code of the legal entity. This value is used during XBRL GL file generation and is written to the relevant nodes in the e-Ledger XML file. |
 
 ### Configure e-Ledger parameters
 
