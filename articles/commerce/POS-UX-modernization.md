@@ -4,7 +4,7 @@ description: This article provides an overview of modernized workflows that impr
 author: anush6121
 ms.author: anvenkat 
 ms.topic: overview
-ms.date: 02/11/2026
+ms.date: 02/10/2026
 ms.reviewer: v-griffinc
 ms.custom: 
   - bap-template
@@ -236,6 +236,7 @@ To enable intuitive interactions, the date picker in the Store Commerce app is u
 Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
