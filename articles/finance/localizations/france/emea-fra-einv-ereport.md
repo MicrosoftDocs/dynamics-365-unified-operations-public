@@ -37,6 +37,8 @@ Before you start, make sure these prerequisites are in place:
 
   > [!NOTE]
   > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and make read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
+
+- In the **Feature management** workspace, on the **All** tab, search for the **QQQQQQQQQQQQQQQQQQQ_Electronic invoicing enhanced status handling_QQQQQQQQQQQ** feature. If this feature doesn't appear on the page, select **Check for updates**. Select the feature, and then select **Enable now**.
   
 ## Create the Azure Key Vault configuration
 
