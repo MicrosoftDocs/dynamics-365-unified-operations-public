@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 02/10/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -81,9 +81,40 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| Not Started |
 | 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Not Started |
 | 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Not Started |
-
-> [!IMPORTANT]
-> The PQU schedule for updates 10.0.47, 10.0.48, and 10.0.49 will be published on January 15, 2026.
+| 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 8, 2026| Not Started |
+| 10.0.47 PQU-2 | April 22, 2026 | April 22, 2026 to May 22, 2026| Not Started |
+| 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to June 5, 2026| Not Started |
+| 10.0.47 PQU-4 | May 20, 2026 | May 20, 2026 to June 19, 2026| Not Started |
+| 10.0.47 PQU-5 | June 3, 2026 | June 3, 2026 to July 3, 2026| Not Started |
+| 10.0.47 PQU-6 | June 17, 2026 | June 17, 2026 to July 17, 2026| Not Started |
+| 10.0.47 PQU-7 | July 1, 2026 | July 1, 2026 to July 31, 2026| Not Started |
+| 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 14, 2026| Not Started |
+| 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 28, 2026| Not Started |
+| 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 11, 2026| Not Started |
+| 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 25, 2026| Not Started |
+| 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 9, 2026| Not Started |
+| 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 23, 2026| Not Started |
+| 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to November 6, 2026| Not Started |
+| 10.0.47 PQU-15 | October 21, 2026 | October 21, 2026 to November 20, 2026| Not Started |
+| 10.0.47 PQU-16 | November 4, 2026 | November 4, 2026 to December 4, 2026| Not Started |
+| 10.0.47 PQU-17 | November 25, 2026 | November 25, 2026 to December 25, 2026| Not Started |
+| 10.0.48 PQU-1 | July 8, 2026 | July 8, 2026 to August 7, 2026| Not Started |
+| 10.0.48 PQU-2 | July 22, 2026 | July 22, 2026 to August 21, 2026| Not Started |
+| 10.0.48 PQU-3 | August 5, 2026 | August 5, 2026 to September 4, 2026| Not Started |
+| 10.0.48 PQU-4 | August 19, 2026 | August 19, 2026 to September 18, 2026| Not Started |
+| 10.0.48 PQU-5 | September 2, 2026 | September 2, 2026 to October 2, 2026| Not Started |
+| 10.0.48 PQU-6 | September 16, 2026 | September 16, 2026 to October 16, 2026| Not Started |
+| 10.0.48 PQU-7 | September 30, 2026 | September 30, 2026 to October 30, 2026| Not Started |
+| 10.0.48 PQU-8 | October 14, 2026 | October 14, 2026 to November 13, 2026| Not Started |
+| 10.0.48 PQU-9 | October 28, 2026 | October 28, 2026 to November 27, 2026| Not Started |
+| 10.0.48 PQU-10 | November 11, 2026 | November 11, 2026 to December 11, 2026| Not Started |
+| 10.0.48 PQU-11 | November 25, 2026 | November 25, 2026 to December 25, 2026| Not Started |
+| 10.0.48 PQU-12 | December 9, 2026 | December 9, 2026 to January 8, 2027| Not Started |
+| 10.0.48 PQU-13 | December 23, 2026 | December 23, 2026 to January 22, 2027| Not Started |
+| 10.0.48 PQU-14 | January 6, 2027 | January 6, 2027 to February 5, 2027| Not Started |
+| 10.0.48 PQU-15 | January 20, 2027 | January 20, 2027 to February 19, 2027| Not Started |
+| 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to March 5, 2027| Not Started |
+| 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 26, 2027| Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
