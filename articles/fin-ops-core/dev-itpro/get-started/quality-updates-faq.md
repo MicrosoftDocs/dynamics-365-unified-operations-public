@@ -57,8 +57,8 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 6. Select Save.
 
 > [!NOTE]
-> This feature for selecting weekday deployments will be available starting March 1st, 2026. 
-> Live environments always receive updates at least 5 days after Sandbox. This process remains unchanged under the biweekly cadence.
+> 1. This feature for selecting weekday deployments will be available starting March 1st, 2026. 
+> 2. Live environments always receive updates at least 5 days after Sandbox. This process remains unchanged under the biweekly cadence.
 
 ### Which day should I choose for receiving PQU updates?
 You may choose any day that aligns with your organization’s internal operations and testing cycles.
