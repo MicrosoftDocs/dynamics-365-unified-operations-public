@@ -21,12 +21,6 @@ The Dynamics 365 Commerce team is modernizing the POS by transitioning to the Re
 
 The transaction page is the most used page on the POS, and is the first page to be moved to the React framework and Fluent Design to implement modern workflows for faster checkout.
 
-## Prerequisites
-
-To transition to the modern workflows on POS, the following prerequisites must be met:
-- You must be running Commerce version 10.0.40 or later. For React-based controls on the transaction grid, version 10.0.44 or later is required.
-- You must enable the **Enable Modern Transaction Grid in POS Transaction View** feature in Commerce headquarters.
-
 ## Feature availability
 
 The Commerce 10.0.47 release includes:
@@ -92,8 +86,6 @@ This feature introduces a streamlined React‑based search results experience de
 - **Quantity discount captions** – This enhancement helps associates explain pricing benefits clearly.
 - **Inventory visibility** – This enhancement provides store and nearby availability directly on the card.
 
-### Enable the feature and enhancements
-
 To enable this feature and related enhancements, follow these steps:
 
 1. In headquarters, go to the **Feature management** workspace (**System administration > Workspaces > Feature management**) and enable **Enable modernized search view results**.
@@ -116,8 +108,6 @@ This feature introduces a modern, vertical, mobile‑first PDP rebuilt on React 
 - **Inventory preview** – This enhancement provides instant availability through a side drawer and supports choosing pickup or ship‑from‑store options.
 - **Quantity discount** – This enhancement helps associates explain pricing benefits clearly.
 
-### Enable the feature and enhancements
-
 To enable this feature and related enhancements, follow these steps:
 
 1. In headquarters, go to the **Feature management** workspace (**System administration > Workspaces > Feature management**) and enable **Enable modernized product details page**.
@@ -134,8 +124,6 @@ This feature introduces a cleaner, more intuitive cart that surfaces discount op
 - **Quantity discount captions** – This enhancement display an inline alert when quantity‑based discounts are available, allowing associates to proactively inform shoppers about potential savings.
 - **Threshold discount bar** – This enhancement displays a threshold discount message bar helping associates understand how close the cart is to the next discount tier.
 - **Refreshed and extensible cart suggestions** – This enhancement presents modernized recommendation cards with clearer visuals, improved layouts, and an Add to sale button on each card. The default suggestions use curated recommendations maintained by headquarters users.
-
-### Enable the feature and enhancements
 
 To enable this feature and related enhancements, follow these steps:
 
@@ -168,7 +156,7 @@ To change the item quantity, select or tap the quantity directly within the tran
 
 The loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they are to reaching their next loyalty tier. This prompt can drive continued customer engagement to unlock new benefits, leading to increased average order value through strategic upselling.
 
-Learn how to enable this feature in [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md).
+Learn more in [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md).
 
 ### Commerce version 10.0.43 feature enhancements
 
@@ -248,6 +236,7 @@ To enable intuitive interactions, the date picker in the Store Commerce app is u
 Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
