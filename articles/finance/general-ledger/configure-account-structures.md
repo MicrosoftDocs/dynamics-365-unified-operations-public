@@ -71,6 +71,9 @@ Here's an example of the **Profit and loss account structure**.
 
 When entering a journal and selecting an account in the profit and loss range, selecting business unit '002' will cause values 022 and 014 to be the default on the account control. This behavior will also occur with the accounting distribution page. 
 
+> [!NOTE] 
+> If you’re unable to enter blank segments in a ledger account, check whether the account structure or any advanced rules restrict blank segments. If either one disallows blank segments, the ledger account will fail validation.
+
 ## More than seven criteria needed
 
 If you have more than seven criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to factors such as: 
