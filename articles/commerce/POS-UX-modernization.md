@@ -17,14 +17,14 @@ ms.custom:
 
 This article provides an overview of modernized workflows that improve the usability, extensibility, and accessibility in Microsoft Dynamics 365 Commerce Store Commerce point of sale (POS).
 
-As of the Dynamics 365 Commerce 10.0.47 release, Store Commerce POS features continues to be enhanced with modern, mobile‑optimized POS experiences. These enhancements are built on the React‑based POS foundation and Fluent UI to bring a more consistent, faster, and accessible interface across devices. These updates help associates find products faster, understand product details more clearly, and surface contextual insights.
+As of the Dynamics 365 Commerce 10.0.47 release, Store Commerce POS features continue to be enhanced with modern, mobile‑optimized POS experiences. These enhancements are built on the React‑based POS foundation and Fluent UI to bring a more consistent, faster, and accessible interface across devices. These updates help associates find products faster, understand product details more clearly, and surface contextual insights.
 
 The React framework enables mobile-optimized modern workflows, simplifies extensibility, and complies with accessibility requirements across browsers and all Store Commerce applications. Fluent Design complements the React framework by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
 
 ## Feature availability
 
 The Commerce 10.0.47 release includes:
-- **Modern search view results**:
+- **Modern search view results**
   - Refreshed product tiles.
   - Larger imagery.
   - Add to sale button on each card.
@@ -32,7 +32,7 @@ The Commerce 10.0.47 release includes:
   - Compact/tile view toggle.
   - Quantity discount captions.
   - Inventory visibility.
-- **Modern product details page**:
+- **Modern product details page**
   - Sticky layout.
   - Always-visible key actions.
   - Improved image gallery.
@@ -41,7 +41,7 @@ The Commerce 10.0.47 release includes:
   - Related products carousel.
   - Inventory preview.
   - Quantity discount.
-- **Modern transaction grid cart**:
+- **Modern transaction grid cart**
   - Quantity discount captions.
   - Threshold discount bar.
   - Refreshed and extensible cart suggestions.
@@ -67,8 +67,8 @@ The Commerce 10.0.40 release includes:
 - Payment workflow improvements.
 
 The Commerce 10.0.39 release includes:
-- Enhanced date picker
-- Persist the zoom level
+- Enhanced date picker.
+- Persist the zoom level.
 
 The following sections describe the capabilities in more detail and the additional configuration that may be needed.
 
@@ -236,6 +236,7 @@ To enable intuitive interactions, the date picker in the Store Commerce app is u
 Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
