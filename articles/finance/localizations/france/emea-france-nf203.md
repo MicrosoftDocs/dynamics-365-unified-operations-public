@@ -4,7 +4,7 @@ description: This article provides an overview of the official NF203 certificati
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 12/10/2025
+ms.date: 02/10/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: France
@@ -21,7 +21,7 @@ This article provides an overview of the official NF203 certification for comput
 
 Microsoft Dynamics 365 Finance version 10.0 passed an audit according to the NF203 certification requirements in France and was granted a certificate of compliance.
 
-| Certification No **203/346-4** issued by INFOCERT in France <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | <img src="../media/france-nf203.png" alt="INFOCERT" width="150"/> |
+| Certification No **203/346-5** issued by INFOCERT in France <br> Version number 10.0 certified on 03/12/25 in accordance with NF203 V6.0 rules <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | :::image type="content" source="../media/france-nf203.png" alt-text="Screenshot of the INFOCERT NF203 certification logo."::: |
 |:------------|-----------|
 
 You can find an up-to-date certificate on the [portal of the certification body](https://certificates.infocert.org/).
@@ -44,23 +44,23 @@ The following table shows the Finance documentation that relates to the NF203 ce
 
 ### Number of opening exercises
 
-According to the Software Requirements in France, limit the number of opening exercises to two.
+According to the software requirements in France, limit the number of opening exercises to two.
 
 To satisfy this requirement, set up Finance as follows. Set the value of the **Limited number of open fiscal years** field in **General ledger parameters** to no more than **2**. 
 This field limits the total number of fiscal years that can be open at the same time. Article 921-4 of the General Accounting Plan (Principes généraux) states that a closing procedure must be executed no later than the end of the next period.
 
 ### Number sequences
 
-Set up number sequences for vouchers. Each voucher series must contain a piece of text that is considered as a value for the **JournalCode** field in the [FEC file](emea-fra-fec-audit-file.md). For example, define the voucher series for vendor invoice journals as **FRSIFACF-\#\#\#\#\#\#\#\#** to get the value **FRSIFACF** in the **JournalCode** field in the FEC.
+Set up number sequences for vouchers. Each voucher series must contain a piece of text that the [FEC file](emea-fra-fec-audit-file.md) considers as a value for the **JournalCode** field. For example, define the voucher series for vendor invoice journals as **FRSIFACF-\#\#\#\#\#\#\#\#** to get the value **FRSIFACF** in the **JournalCode** field in the FEC.
 
-Set the **Continuous** field to **Yes** for number sequences that are used for invoice numbers and for general ledger transactions for vouchers. This setting accommodates article 100 of BOI-CF-IOR-60-40-20. The numbering  must increase over time, and it shouldn't include any break. The numbering must be either unique throughout the fiscal period or specific to each journal. (The original French text states, "La numérotation dans le champ «EcritureNum» doit être croissante dans le temps et ne pas comporter de rupture. Cette numérotation peut être unique sur l'ensemble du fichier ou être propre à chaque journal."). For more information about set up and use chronological numbers for invoices and vouchers, see [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md).
+Set the **Continuous** field to **Yes** for number sequences that you use for invoice numbers and for general ledger transactions for vouchers. This setting accommodates article 100 of BOI-CF-IOR-60-40-20. The numbering  must increase over time, and it shouldn't include any break. The numbering must be either unique throughout the fiscal period or specific to each journal. (The original French text states, "La numérotation dans le champ «EcritureNum» doit être croissante dans le temps et ne pas comporter de rupture. Cette numérotation peut être unique sur l'ensemble du fichier ou être propre à chaque journal."). For more information about set up and use chronological numbers for invoices and vouchers, see [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md).
 
 ### Chart of accounts
 
-The chart of accounts that the legal entity uses with primary address in France must comply with the standard chart of accounts of France (Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français").
+The chart of accounts that the legal entity uses with primary address in France must comply with the standard chart of accounts of France (Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont the three first characters must correspond to numbers that respect the standards of the French accounting plan").
 Use only main accounts that start with **1**, **2**, **3**, **4**, **5**, **6**, or **7**.
 
-For more information about chart of accounts in Finance, see [Plan your chart of accounts](../../general-ledger/plan-chart-of-accounts.md), [Plan your local chart of accounts](../../general-ledger/plan-local-chart-of-accounts.md).
+For more information about chart of accounts in Finance, see [Plan your chart of accounts](../../general-ledger/plan-chart-of-accounts.md) and [Plan your local chart of accounts](../../general-ledger/plan-local-chart-of-accounts.md).
 
 ### Posting profiles
 
@@ -91,7 +91,7 @@ For specific settings in Finance recommended for [FEC file](emea-fra-fec-audit-f
 
 ## Registration of audit events
 
-This section describes how audit mechanisms in Finance ensure traceability, integrity, and compliance for all NF203-certified computerized accounting events, including logging, monitoring, and verification of key actions.
+This section describes how audit mechanisms in Finance ensure traceability, integrity, and compliance for all NF203-certified computerized accounting events. These mechanisms include logging, monitoring, and verification of key actions.
 
 For information about database logging in Finance, see [Configure database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
@@ -124,14 +124,14 @@ In Finance, fiscal year archiving is satisfied through the combination of: [Elec
 
 #### Immutability and audit trail
 
-Archived files can't be modified through the ERP interface. Posting logic ensures that once a fiscal period is closed, accounting entries can't be altered; corrections are made only through reversing and adjusting entries. Audit trail logs capture metadata such as user, timestamp, and job execution details for the archiving process.
+Users can't modify archived files through the ERP interface. Posting logic ensures that once a fiscal period is closed, accounting entries can't be altered. You can make corrections only through reversing and adjusting entries. Audit trail logs capture metadata such as user, timestamp, and job execution details for the archiving process.
 
 ### Code 50 - Period closing
 
 #### Period closing functionality
 
 Finance provides functionality to close fiscal periods (daily, monthly, or yearly) through the [Fiscal calendars, fiscal years, and periods](../../budgeting/fiscal-calendars-fiscal-years-periods.md) and [Financial period close workspace](../../general-ledger/financial-period-close-workspace.md). 
-Once a period is closed, no new postings or modifications can occur in that period, ensuring data integrity and compliance.
+Once you close a period, no new postings or modifications can occur in that period, ensuring data integrity and compliance.
 
 *Documentation links*
 
@@ -139,7 +139,7 @@ Once a period is closed, no new postings or modifications can occur in that peri
 
 #### Audit trail
 
-All postings and period status changes are logged. Users can't modify transactions in closed periods; corrections require reversing entries in an open period.
+The system logs all postings and period status changes. Users can't modify transactions in closed periods. Corrections require reversing entries in an open period.
 
 ### Code 60 - Fiscal year closing
 
@@ -167,7 +167,7 @@ The system logs all postings and period status changes. The audit trail includes
 
 ### Code 90 - Detection of an integrity flaw in secure data or in a tax archive
 
-In Finance, the data security and immutability requirements are satisfied with the [FEC file](emea-fra-fec-audit-file.md) generated by using [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) and [Audit Trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail) features.
+In Finance, the [FEC file](emea-fra-fec-audit-file.md) generated by using [Electronic Reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) (ER) and [Audit Trail](../../general-ledger/view-journal-entries-transactions.md#audit-trail) features satisfies the data security and immutability requirements.
 
 When you generate and archive the FEC, you store the file in a secure location, such as Azure Blob or SharePoint, with access controlled by a system administrator.
 Finance doesn't allow modification of archived files through the standard UI - immutability is enforced by storage and permissions defined by a system administrator.

@@ -4,7 +4,7 @@ description: Learn about the budget funds available parameter and how to configu
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 09/15/2025
+ms.date: 02/09/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,7 +19,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that helps configure budget control to optimize management of your organization's financial resources.
+This article helps you configure budget control to optimize management of your organization's financial resources.
 
 ## Enhanced calculation parameter for budget funds available
 
@@ -33,11 +33,14 @@ Some budget control configuration options must have specific settings for this p
 | Budget reservations for encumbrances | Actual expenditures |
 | Budget reservations for encumbrances with Purchase requisition type documents | Budget reservations for preencumbrances |
 
-This parameter affects only new documents and new budget control configurations during activation. Amounts for existing documents continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data is removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that doesn't align with the requirements defined in the table above, an error message appears. 
+This parameter affects only new documents and new budget control configurations during activation. Amounts for existing documents continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data is removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that doesn't align with the requirements defined in the table above, an error message appears.
 
 We recommend that you leave the **Unposted actual expenditures** option cleared. If it's selected, a time-consuming budget control calculation is done on unposted documents, such as pending vendor invoices.
 
 To prevent incorrect setup on the **Document and journals** tab in the **Budget control configuration** that could lead to the inaccurate budget tracking, the following specific configuration options must be applied:
+
+> [!NOTE]
+> The following setup is required regardless of whether the **Only track amounts in the budget funds available calculation** parameter is set to **Yes** or **No**.
 
 | If this option is selected to include on Documents and journals tab | Select this option on the Budget funds available tab | This option is optional on the Budget funds available tab |
 | ------------------------- | -------------------------------- |-------------------------------- |
