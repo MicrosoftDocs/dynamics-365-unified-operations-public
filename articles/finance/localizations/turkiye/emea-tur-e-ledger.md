@@ -64,8 +64,8 @@ To configure application-specific parameters for the **XBRL GL (TR) (XML)** form
 | Lookup result | Select the lines. |
 | Lines | Set the number of XML nodes in a branch file. This field is used to define the maximum file size that the integrator allows. The value that you specify determines the number of vouchers that are included in each generated XML file. You can update this field as required, according to the applicable limits. |
 
-In Türkiye, the NACE code is a mandatory classification that identifies the main economic activity of a legal entity. For e-Ledger generation, the NACE code must be included in the XBRL GL file.
-To support this requirement, an application-specific parameter is provided in the **XBRL GL (TR) (XML)** Electronic reporting (ER) format.
+In Türkiye, the NACE code is a mandatory classification that identifies the main economic activity of a legal entity and must be included in the XBRL GL file for e-Ledger generation. 
+After the ELedgerSetup_Lookup parameters are configured, you must define the NACE code by using a dedicated application-specific parameter in the **XBRL GL (TR) (XML)** Electronic reporting (ER) format.
 
 To configure the NACE code parameter, follow these steps:
 
