@@ -524,7 +524,7 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-        - name: Modern workflows in POS
+        - name: Modern workflows in POS (preview)
           href: POS-UX-modernization.md
         - name: Receipts
           items:
