@@ -1,9 +1,9 @@
 ---
 title: Modern workflows in POS (preview)
-description: Learn how modern workflows in POS improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
+description: This article provides an overview of modernized workflows that improve the usability, extensibility, and accessibility in Microsoft Dynamics 365 Commerce Store Commerce point of sale (POS).
 author: anush6121
 ms.author: anvenkat 
-ms.topic: how-to 
+ms.topic: overview
 ms.date: 02/11/2026
 ms.reviewer: v-griffinc
 ms.custom: 
@@ -15,11 +15,11 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes modern workflows in POS that improve the usability, extensibility, and accessibility of Microsoft Dynamics 365 Commerce Store Commerce.
+This article provides an overview of modernized workflows that improve the usability, extensibility, and accessibility in Microsoft Dynamics 365 Commerce Store Commerce point of sale (POS).
 
-The Dynamics 365 Commerce team is modernizing the POS by transitioning to the React framework and Fluent Design. The React framework enables mobile-optimized modern workflows, simplifies extensibility, and complies with accessibility requirements across browsers and all Store Commerce applications. Fluent Design complements the React framework by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
+As of the Dynamics 365 Commerce 10.0.47 release, Store Commerce POS features continues to be enhanced with modern, mobile‑optimized POS experiences. These enhancements are built on the React‑based POS foundation and Fluent UI to bring a more consistent, faster, and accessible interface across devices. These updates help associates find products faster, understand product details more clearly, and surface contextual insights.
 
-The transaction page is the most used page on the POS, and is the first page to be moved to the React framework and Fluent Design to implement modern workflows for faster checkout.
+The React framework enables mobile-optimized modern workflows, simplifies extensibility, and complies with accessibility requirements across browsers and all Store Commerce applications. Fluent Design complements the React framework by bringing visual clarity and consistency, creating a more intuitive experience for users of all abilities and improving accessibility out of the box.
 
 ## Feature availability
 
@@ -95,7 +95,7 @@ To enable this feature and related enhancements, follow these steps:
 
 ## Modern product details page
 
-This feature introduces a modern, vertical, mobile‑first PDP rebuilt on React that brings every detail and action into one focused view so associates move faster without switching screens. The feature provides associates with a faster, more focused product experience by consolidating details and actions into a modern, mobile‑optimized vertical layout.
+This feature introduces a modern, vertical, mobile‑first  product details page (PDP) rebuilt on React that brings every detail and action into one focused view so associates move faster without switching screens. The feature provides associates with a faster, more focused product experience by consolidating details and actions into a modern, mobile‑optimized vertical layout.
 
 ### Commerce version 10.0.47 feature enhancements
 
@@ -154,7 +154,7 @@ To change the item quantity, select or tap the quantity directly within the tran
 
 #### Loyalty upsell prompt
 
-The loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they are to reaching their next loyalty tier. This prompt can drive continued customer engagement to unlock new benefits, leading to increased average order value through strategic upselling.
+The loyalty upsell prompt empowers store associates with the right information at the right time to inform customers about how close they're to reaching their next loyalty tier. This prompt can drive continued customer engagement to unlock new benefits, leading to increased average order value through strategic upselling.
 
 Learn more in [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md).
 
@@ -236,6 +236,7 @@ To enable intuitive interactions, the date picker in the Store Commerce app is u
 Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
