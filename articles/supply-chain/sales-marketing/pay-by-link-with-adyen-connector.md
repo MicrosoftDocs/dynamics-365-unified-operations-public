@@ -25,13 +25,15 @@ By using the pay-by-link payment method, salespeople can generate payment links 
 
 ## Prerequisites
 
-<!-- KFM: It seems like we also need to already have an Adyen portal and/or Adyen Connector set up as a prerequisite here. If so, we should have a section for this here and give a link for how to do it. These links seem relevant: 
+### Set up and configure the Adyen portal and connector
 
-https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=10-0-41
-https://docs.adyen.com/plugins/microsoft-dynamics
-https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup
+<!-- KFM: @Shalabh Jain,please review this section and add/update any detail or links you think it might need. -->
 
--->
+Before you can set up and use the pay-by-link payment method for Supply Chain Management, the Dynamics 365 Payment Connector for Adyen must already be set up and configured for your system. Learn more in the following articles:
+
+- [Dynamics 365 Payment Connector for Adyen overview](../../commerce/dev-itpro/adyen-connector.md)
+- [Set up Dynamics 365 Payment Connector for Adyen](../../commerce/dev-itpro/adyen-connector-setup.md)
+- [Set up the Adyen payment connector for Dynamics 365 (on the Adyen website)](https://docs.adyen.com/plugins/microsoft-dynamics)
 
 ### Link your Supply Chain Management environment to a Dataverse environment
 
@@ -39,21 +41,21 @@ The payment notification service uses Dataverse. Therefore, to receive payment n
 
 ### Version requirements
 
-Dynamics 365 Payment Connector for Adyen requires Supply Chain Management version 10.0.47 or later.
+Pay-by-link payment requires Supply Chain Management version 10.0.47 or later.
 
 ### License required to set up the connector
 
-To set up the Dynamics 365 Payment Connector for Adyen, you must have a Dynamics 365 Commerce license.
+To set up pay-by-link payment for Supply Chain Management, you must have a Dynamics 365 Commerce license.
 
 ### Security roles required to set up the connector
 
-Some of the steps require you to sign in to Supply Chain Management by using a user account that has either the *Administrator* or *Commerce Payment Administrator* security role in Microsoft Power Platform.
+Some of the steps for setting up pay-by-link payment require you to sign in to Supply Chain Management by using a user account that has either the *Administrator* or *Commerce Payment Administrator* security role in Microsoft Power Platform.
 
 ## Set up pay-by-link payment
 
 ### Enable the features required for pay by link
 
-To enable pay-by-link payment, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+To enable pay-by-link payment, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Enable unified payments experience in POS* – Must be enabled to use pay-by-link payment, but only applies to POS and doesn't affect sales orders in Supply Chain Management. Learn more in [Check out faster with optimized payment flows](../../commerce/dev-itpro/faster-checkout-pos.md).
 - *Enable Payments Notification feature* – Enables the infrastructure to receive notifications.
