@@ -21,7 +21,7 @@ This article provides an overview of the official NF203 certification for comput
 
 Microsoft Dynamics 365 Finance version 10.0 passed an audit according to the NF203 certification requirements in France and was granted a certificate of compliance.
 
-| Certification No **203/346-4** issued by INFOCERT in France <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | <img src="../media/france-nf203.png" alt="INFOCERT" width="150"/> |
+| Certification No **203/346-5** issued by INFOCERT in France <br> Version number 10.0 certified on 03/12/25 in accordance with NF203 V6.0 rules <br> Computerized Accounting <br> Category F: <br>- Accounting; <br>- Sales Management;<br>- Purchasing Management;<br>- Fixed Assets;<br>- Inventories and Stocks | <img src="../media/france-nf203.png" alt="INFOCERT" width="150"/> |
 |:------------|-----------|
 
 You can find an up-to-date certificate on the [portal of the certification body](https://certificates.infocert.org/).
