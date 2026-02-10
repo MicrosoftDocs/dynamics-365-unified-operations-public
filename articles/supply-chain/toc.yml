@@ -1827,6 +1827,8 @@
         href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
       - name: Product quality scenario
         href: sensor-data-intelligence/sdi-scenario-product-quality.md
+      - name: Production auto report scenario
+        href: sensor-data-intelligence/sdi-scenario-production-auto-report.md
       - name: Production delays scenario
         href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
