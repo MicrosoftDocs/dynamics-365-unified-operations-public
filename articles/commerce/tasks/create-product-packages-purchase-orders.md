@@ -1,6 +1,4 @@
 --- 
-# required metadata 
- 
 title: Create product packages for purchase orders
 description: Learn how to create a product package and use it on a purchase order in Microsoft Dynamics 365 Commerce. 
 author: josaw1
@@ -9,14 +7,13 @@ ms.topic: how-to
 ms.author: josaw
 ms.reviewer: v-griffinc
 ms.search.region: Global
-
 ms.search.validFrom: 2016-06-30 
 ms.custom: 
   - bap-template
 ---
 # Create product packages for purchase orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a product package and use it on a purchase order in Microsoft Dynamics 365 Commerce.
 
@@ -46,8 +43,6 @@ To create a product package, follow these steps:
 1. Select **Save**.
 1. Close the page.
 
-## Add package to purchase order
-
 To add a package to a purchase order, follow these steps:
 
 1. In headquarters, go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
@@ -69,4 +64,4 @@ To add a package to a purchase order, follow these steps:
 1. Select **Create**.
 1. Select **Save**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
