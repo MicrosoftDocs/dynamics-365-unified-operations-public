@@ -333,6 +333,11 @@ Set up units of measure.
 1. Select a sales tax code. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 1. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code from step 2.
 1. In the **Value** section, in the **Value** field, enter an external code that matches one of the Singapore-specific [Duty or tax or fee category codes](https://www.peppolguide.sg/billing/codelist/SGTaxCat/).
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
+1. Define exempt codes that will be used in the event of non-taxable, zero-rated or exempted operations.
+
+> [!NOTE]
+> The exempt codes can have any value internally used in your company, but the **Description** field must contain the standardized tax exemption code according to the official categorization introduced in France, for example: *VATEX-FR-298SEXDECIESA*. Exactly the value from the Description field will be used as **Tax Exemption Reason** while generating the output XML files for electronic invoices. 
 
 ## Issue electronic invoices
 
