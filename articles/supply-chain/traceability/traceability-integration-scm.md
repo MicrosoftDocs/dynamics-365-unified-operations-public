@@ -120,7 +120,7 @@ Managers can register and review batch and serial numbers for finished products 
 
 ## Integrate Traceability with sales goods issues
 
-The Traceability Add-in for Dynamics 365 Supply Chain Management provides out-of-the-box integration with the sales goods issue in Supply Chain Management.
+The Traceability Add-in for Dynamics 365 Supply Chain Management provides out-of-the-box integration with sales goods issues in Supply Chain Management.
 
 ### Prerequisites for integrating with sales goods issues
 
