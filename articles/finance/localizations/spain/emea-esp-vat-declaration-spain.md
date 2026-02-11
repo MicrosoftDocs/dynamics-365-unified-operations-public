@@ -90,16 +90,18 @@ The advance VAT declaration in Spain contains the following information.
 | 76               | Regularization of taxes according to art. 80.5 LIVA.                                                                                    | Regularizations80.5                    |
 | 64          | Sum of results.                                                                                                                     | [46] + [58] + [76]            |
 | 65               | Not applicable                                                                                                                          | **Common territory** user input parameter in the report dialog. The default value is 100 percent. |
-| 66               | Attributable to the State Administration.                                                                                               | [64] × [65]              |
-| 77               | Import VAT settled by Customs pending entry.                                                                                            | ImportVATSettledByCustoms             |
-| 68               | Annual regularization.                                                                                                                  | AnnualRegularization     |
-| 110              | Amounts to be compensated pending from previous periods.                                                                                | **Previous period amounts to compensate** user input parameter in the report dialog.               |
-| 78               | Amounts to be offset from previous periods applied in this period.                                                                      | **Previous period amounts to offset** user input parameter in the report dialog.                   |
-| 87          | Quotas to be offset from previous periods pending for subsequent periods.                                                          | [110] – [78]            |
-| 68               | Exclusively for taxpayers who pay jointly to the State Administration and the Provincial Councils. Result of the annual regularization. | AnnualRegularization        |
-| 69           | Result.                                                                                                                           | [66] + [77] – [78] + [68]        |
-| 70               | To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.) | **To deduct supplementary declaration** user input parameter in the report dialog  |
-| 71           | Settlement result.                                                                                                                  | [69] – [70]        |
+| 66       | Attributable to the State Administration.                                                                                               | [64] × [65]              |
+| 77       | Import VAT settled by Customs pending entry.                                                                                            | ImportVATSettledByCustoms             |
+| 110      | Amounts to be compensated pending from previous periods.| **Previous period amounts to compensate** user input parameter in the report dialog.               |               |
+| 78  | Amounts to be offset from previous periods applied in this period. | **Previous period amounts to offset** user input parameter in the report dialog. |
+| 87  | Quotas to be offset from previous periods pending for subsequent periods.| [110] – [78]    |
+| 68  | Exclusively for taxpayers who pay jointly to the State Administration and the Provincial Councils. Result of the annual regularization. | AnnualRegularization     |
+| 108 | Corrective - Exclusively for certain cases of corrective self-assessment due to discrepancies in administrative criteria that should not be included in other boxes. Other adjustments. | OtherRectifyingAdjustments |
+| 69  | Result.  | [66] + [77] – [78] + [68] + [108] |
+| 70  | To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.) | **To deduct supplementary declaration** user input parameter in the report dialog  |
+| 109 | Result - Refunds agreed by the Tax Agency as a result of the processing of previous self-assessments corresponding to the year and period covered by the self-assessment. | **Result - Refunds agreed by the Tax Agency as a consequence of the processing of previous self-assessments corresponding to the year and period subject to the self-assessment** user input parameter in the report dialog  |
+| 112 | Result - Payment on account of deliveries of gasoline, diesel and biofuels after the completion of the non-customs deposit regime attributable to the State Administration (Sum of box 36 of all models 319 corresponding to deliveries included in this self-assessment) | AdvanceFuelVAT |
+| 71  | Settlement result. | [69] - [70] + [109] - [112]  |
 
 #### Purchase reverse charge VAT
 
