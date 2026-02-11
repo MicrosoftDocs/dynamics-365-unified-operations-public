@@ -49,14 +49,14 @@ To set up the production auto report scenario, you need to define the sensors th
     - Select the **Route relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the route number that the operation relation is created for.
 
     > [!TIP]
-    Each operation relation defines the detailed properties of an operation—such as setup time, run time, cost categories, and resource requirements—for a specific route or product. It lets each operation have several different properties depending on where it's used.
+    > Each operation relation defines the detailed properties of an operation—such as setup time, run time, cost categories, and resource requirements—for a specific route or product. It lets each operation have several different properties depending on where it's used.
 
 1. When you have found the applicable operation relation, enter values in the following columns for it:
     - **Pulses per cycle** – Number of pulses the sensor emits in a production cycle.  
     - **Units per cycle** – Number of parts produced by the operation in a production cycle.
 
     > [!TIP]
-    A production cycle is the smallest repeatable unit of work performed by a machine that produces a measurable output.
+    > A production cycle is the smallest repeatable unit of work performed by a machine that produces a measurable output.
 
 1. Set up more operation relations with their corresponding thresholds as needed. You can come back and set up more operation relations at any time.
 1. Select **Next**.
