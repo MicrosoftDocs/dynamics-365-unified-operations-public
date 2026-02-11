@@ -91,6 +91,18 @@ Set up your Supply Chain Management system to record batch and serial numbers fo
     1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters** and open the **Bills of materials** tab.
     1. Set **Enable tracked components** to *Yes*.
 
+1. Create tracked component policy.
+
+    1. Go to **Production control** > **Setup** > **Production** > **Tracked components policy**.
+    1. Create a **Tracked components policy**.
+    2. Set **Use tracked components** to *Yes*.
+  
+1. Ass tracked component policy to finished product and components.
+
+    1. Go to **Product information management** > **Products** > **Released products** .
+    1. Retrieve the product of finished product and component.
+    2. Assign created "Tracked componets policy** to **Manage inventory** > **TRACKING** > **Tracked components policy**.
+
 1. Add the *Tracked components* action to relevant areas of the production floor execution interface.
 
     1. Go to **Production control** > **Setup** > **Manufacturing execution** > **Configure production floor execution**.
@@ -105,3 +117,33 @@ Set up your Supply Chain Management system to record batch and serial numbers fo
 Workers can register batch and serial numbers for finished products and their components from the production floor execution interface. For details, see [Register batch/serial numbers for finished products and their components](../production-control/production-floor-execution-use.md#tracked-components).
 
 Managers can register and review batch and serial numbers for finished products and their components by using the Supply Chain Management web client. For details, see [Register and track batch/serial numbers for finished products and their components](../production-control/tracked-components.md).
+
+# Integrate Traceability with Sales
+
+The Traceability Add-in for Dynamics 365 Supply Chain Management provides out-of-the-box integration with the sales goods issue in Dynamics 365 Supply Chain Management.
+
+## Prerequisites
+
+To integrate Traceability with the purchase goods receipt, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+    - *(Preview) Traceability*
+
+## Configure activities in Traceability
+
+You must configure Traceability to recognize the activity codes that Supply Chain Management submits. Follow these steps:
+
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. On the left navigation pane, select **Settings** \> **Activity**.
+1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure Traceability](developer/traceability-configure.md).
+
+    | Source activity code | Source activity type | Integration Scenario |
+    |--|--|--|
+    | SalesGoodsIssue | Sales | Post packing slip of sales order |
+
+1. On the toolbar, select **Save**.
+
+## Post packing slip of sales order
+
+After a sales order packing slip is posted for batch‑managed or serialized products in D365 Supply Chain Management, the corresponding goods issue event is automatically sent to Traceability.
