@@ -40,7 +40,7 @@ The following image shows an example of an Insomnia configuration. You can confi
 The following image shows an example of an Insomnia environment. <!-- KFM: I think maybe this isn't an example of an "Insomnia environment". What is it really? Maybe this is the JSON sent to Traceability? Do we expect the reader to see or use this? Why are we showing it? -->
 
 You can create below json file as global envrionment for insomnia project.
-*Note:* fields *version* and *webapiurl* are used for buidling the path of specific API
+**Note:** fields *version* and *webapiurl* are used for buidling the path of specific API
 
 :::image type="content" source="../media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
 
