@@ -20,22 +20,26 @@ This article describes how to integrate the Traceability Add-in for Dynamics 365
 
 ## Authentication
 
-The platform security token is required to call the Traceability public API. The following example uses an Insomnia configuration. For detailed information, see [Use Insomnia with Dataverse Web API](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/insomnia).
+The platform security token is required to call the Traceability public API. The following example uses an Insomnia configuration. Learn more in [Use Insomnia with Dataverse Web API](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/insomnia).
 
-To obtain an access token, follow these steps:
-
-1. Fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
+Use Insomnia to fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
 
 | Key | Value |
 |--|--|
 | grant\_type | Implicit |
-| Authorization URL | https://login.microsoftonline.com/common/oauth2/authorize?resource= {Traceability URL. Example: https://operationsxxx.crm.dynamics.com} |
+| Authorization URL | `https://login.microsoftonline.com/common/oauth2/authorize?resource={Traceability URL}`. Where *{Traceability URL}* is the URL for your Traceability installation, which resembles `https://operationsxxx.crm.dynamics.com` |
 | client\_id | The Application ID (client ID) registered in Azure portal. |
 | response type | Access Token |
 
-:::image type="content" source="media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
+<!-- KFM: The above table doesn't exactly match either of the screenshots. Both the number of keys shown and the text of those keys don't match. For example, "redirect URL" and "webapiurl" aren't mentioned in the table. Is something wrong? -->
 
-:::image type="content" source="media/insomnia-auth-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="media/insomnia-auth-configuration-example.png":::
+The following image shows an example of an Insomnia environment. <!-- KFM: I think maybe this isn't an example of an "Insomnia environment". What is it really? Maybe this is the JSON sent to Traceability? Do we expect the reader to see or use this? Why are we showing it? -->
+
+:::image type="content" source="../media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
+
+The following image shows an example of an Insomnia configuration. <!-- KFM: Can we explain a bit more about what this is and where to find it? Is it really a "configuration"? What kind of a configuration is it? Are the values shown just placeholders rather than example values? Something closer to real (but sanitized) examples might be more useful. -->
+
+:::image type="content" source="../media/insomnia-auth-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="media/insomnia-auth-configuration-example.png":::
 
 ## Available APIs
 
@@ -51,23 +55,23 @@ The remaining sections provide detailed information about each API.
 
 This API accepts queries for traceability information and returns genealogy, activity, and data collection information.
 
-- **Path** – `{Traceability URL. Ie.https://operationsxxx.crm.dynamics.com}/api/data/v9.0/msdyn_sctquerytrace_v1`
+- **Path** – Specify the traceability URL. For example: `https://operationsxxx.crm.dynamics.com/api/data/v9.0/msdyn_sctquerytrace_v1`
 - **Method** – `POST`
 
 ### Single query request payload
 
 ```txt
 {
-  "tracingDirection": "Forward/Backward",
-	"eventDetailOption": "EventIdOnly",
-	"traceNodeOption": "BuildNodeDictionary",
-	"shouldGenerateSummary": true/false,
-	"itemNumber": "BIKE-DEMO",
-	"serialNumber": "BIKE-S0001",
-	"batchNumber": "",
-	"company": "USMF",
-	"trackingId": "",
-	"shouldIncludeEvents": true/false
+    "tracingDirection": "Forward/Backward",
+    "eventDetailOption": "EventIdOnly",
+    "traceNodeOption": "BuildNodeDictionary",
+    "shouldGenerateSummary": true/false,
+    "itemNumber": "BIKE-DEMO",
+    "serialNumber": "BIKE-S0001",
+    "batchNumber": "",
+    "company": "USMF",
+    "trackingId": "",
+    "shouldIncludeEvents": true/false
 }
 ```
 
@@ -82,9 +86,9 @@ This API accepts queries for traceability information and returns genealogy, act
 | `serialNumber` | The serial number of the top finished good. |
 | `batchNumber` | The batch number of the top finished good. |
 | `ShouldIncludeEvents` | Controls whether event details should be included. Default is *false*. |
-| `ShouldGenerateSummary` | *True* – include the copilot summary for where-used search. |
-| `ShouldIncludeEvents` | *EventIdOnly* – put event id as property of trace node. *EventInTrace* - put events details as property of trace node. *EventInDictionary* - put event ids as property of trace node, return a map whose key is event id value is event details. |
-| `TraceNodeOption` | *BuildNodeGraph* - result rendered as a tree. *BuildNodeDictionary* - result rendered as a tracking node dictionary, whose key is tracking id, value is node details. |
+| `ShouldGenerateSummary` | Set to *True* to include the copilot summary for where-used search. |
+| `ShouldIncludeEvents` | Specify one of the following values:<ul><li>*EventIdOnly* – Put event ID as a property of the trace node.</li><li>*EventInTrace* – Put event details as a property of the trace node.</li><li>*EventInDictionary* – Put event IDs as a property of the trace node, return a map whose key is an event ID and the value is the event details.</li></ul> |
+| `TraceNodeOption` | Specify one of the following values:<ul><li>*BuildNodeGraph* – Render the result as a tree.</li><li>*BuildNodeDictionary* – Render the result as a tracking node dictionary, where the key is a tracking ID and the value is the node details.</li></ul> |
 
 ### Single query response header field descriptions
 
@@ -137,22 +141,22 @@ This API accepts queries for traceability information and returns genealogy, act
 
 ### Single query request example
 
-Query the result of finished goods **BIKE-S001**.
+Query the result of finished goods *BIKE-S001*.
 
 #### Single query request example request payload
 
 ```json
 {
     "tracingDirection": "Forward",
-	"eventDetailOption": "EventIdOnly",
-	"traceNodeOption": "BuildNodeDictionary",
-	"shouldGenerateSummary": false,
-	"itemNumber": "BIKE-DEMO",
-	"serialNumber": "BIKE-S0001",
-	"batchNumber": "",
-	"company": "USMF",
-	"trackingId": "",
-	"shouldIncludeEvents": false
+    "eventDetailOption": "EventIdOnly",
+    "traceNodeOption": "BuildNodeDictionary",
+    "shouldGenerateSummary": false,
+    "itemNumber": "BIKE-DEMO",
+    "serialNumber": "BIKE-S0001",
+    "batchNumber": "",
+    "company": "USMF",
+    "trackingId": "",
+    "shouldIncludeEvents": false
 }
 ```
 
@@ -161,6 +165,6 @@ Query the result of finished goods **BIKE-S001**.
 ```json
 {
     "@odata.context": "https://aurorabapenv2bbcd.crm10.dynamics.com/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdyn_sctquerytrace_v1Response",
-	"output": "{\"tracingDirection\":\"Forward\",\"root\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]},\"traceNodesDictionary\":{\"BIKE-DEMO~USMF~~BIKE-S0001~~\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]}}}"
+    "output": "{\"tracingDirection\":\"Forward\",\"root\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]},\"traceNodesDictionary\":{\"BIKE-DEMO~USMF~~BIKE-S0001~~\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]}}}"
 }
 ```
