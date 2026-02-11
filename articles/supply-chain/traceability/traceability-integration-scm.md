@@ -101,7 +101,7 @@ Set up your Supply Chain Management system to record batch and serial numbers fo
 
     1. Go to **Product information management** \> **Products** \> **Released products** .
     1. Open the product you want to set up.
-    1. On the **Manage inventory** FastTab, set **Tracked components policy** to the name of the tracked components policy you created earlier. <!-- KFM: I don't see that setting here. Maybe I'm just missing some prerequisites? -->
+    1. On the **Manage inventory** FastTab, set **Tracked components policy** to the name of the tracked components policy you created earlier. <!-- KFM: I don't see that setting here. Maybe I'm just missing some prerequisites? --><!-- Ban: This field appears only when Tracked Component feature is turned on in feature management. -->
 
 1. Add the *Tracked components* action to relevant areas of the production floor execution interface.
 
