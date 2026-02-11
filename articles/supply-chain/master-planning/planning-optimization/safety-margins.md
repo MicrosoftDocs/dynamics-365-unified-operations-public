@@ -160,6 +160,52 @@ This situation usually occurs when you sell an item with an issue margin from a 
 
 - **If on-hand supply doesn't exist in WH13** – If there's no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the system applies the issue margin between the transfer order receipt date and the purchase order receipt date.
 
+### Soft issue margin
+
+By default, the system applies the full issue margin, even when doing so causes a planned order to be delayed (that is, the planned requirement date is pushed past the demand requirement date). In some scenarios, this behavior is undesirable because it introduces artificial delays to orders that could otherwise be fulfilled on time or closer to the original requirement date if the issue margin would be dynamically reduced.
+
+*Soft issue margin* provides an alternative behavior. When enabled, the system treats the issue margin as a preferred buffer rather than a hard requirement. Instead of always applying the full issue margin, the system reduces it as needed to avoid pushing the requirement date into the future. The soft issue margin works as follows:
+
+- **If the full issue margin can be applied without causing a delay** – The system applies the full issue margin, just as it does with the standard behavior. No change occurs.
+- **If the full issue margin would cause a delay** – The system reduces the issue margin to the largest value that doesn't push the planned requirement date past the demand requirement date. The margin can be reduced to any value between its full configured value minus one day and zero days.
+- **If the order is already delayed** (the demand requirement date is in the past) – The system ignores the issue margin entirely. The issue margin isn't included in the delay calculation. Instead, the difference between the demand requirement date and the planned order date is surfaced to indicate that the order can't be fulfilled on time.
+
+This behavior applies at each level in the supply chain independently. If a bill of materials (BOM) structure includes both a finished good and a raw material, the system evaluates and adjusts the issue margin separately for each level.
+
+#### Enable soft issue margin
+
+1. Enable the feature "Soft issue margins with Planning Optimization".
+
+2. To enable the soft issue margin for a coverage group, go to **Master planning** \> **Setup** \> **Coverage groups**, select the coverage group, and then on the **Other** FastTab, set the **Soft issue margin** option to *Yes*. Soft issue margin can only be enabled on coverage group level.
+
+#### Examples
+
+The following examples illustrate how the soft issue margin works. Both examples use the following setup:
+
+- The issue margin is 10 days.
+- Today's date is October 1.
+- The **Add the calculated delay to the requirement date for production orders** option is disabled.
+
+##### Example 1: Issue margin reduced to avoid delay
+
+The demand requirement date is October 7. Without soft issue margin, the system applies the full 10-day issue margin at both the finished good level and the raw material level. Because only six days are available between today's date and the requirement date, the full margin causes a delay at both levels.
+
+With the soft issue margin enabled, the system reduces the issue margin at both levels to the largest values that don't push the planned dates past the requirement date. The orders are planned without delay.
+
+##### Example 2: Order already delayed, issue margin ignored
+
+The demand requirement date is September 24. Without the soft issue margin, the system applies the full 10-day issue margin at both the finished good level and the raw material level, which further increases the delay.
+
+With soft issue margin enabled, the system ignores the issue margin entirely at both levels because the demand requirement date is already in the past. The delay is surfaced as the difference between the demand requirement date (September 24) and the earliest possible planned order date (October 1). The issue margin doesn't add to the delay.
+
+#### Greedy application across multi-level supply chains
+
+The soft issue margin is applied *greedily* along the supply chain, starting from the demand side. This means that the first level in the chain (closest to the original demand) consumes as much of the available issue margin as possible. Subsequent levels (further from the demand, closer to the supply source) receive whatever margin remains.
+
+For example, consider a supply chain where a sales order at warehouse WH11 is fulfilled by a transfer from warehouse WH12, which in turn is replenished by a purchase order. If the soft issue margin is configured for the item at both warehouses, the system first allocates as much issue margin as possible to the issue from WH11 (the warehouse closest to the customer demand). The issue from WH12 (which is further upstream in the supply chain) then receive whatever margin is still available without causing a delay.
+
+This greedy allocation means that downstream operations (closer to the customer) are prioritized for margin, while upstream operations absorb the reduction.
+
 ## Related information
 
 - [Calendars and master planning](../supply-chain-calendars-master-planning.md)
