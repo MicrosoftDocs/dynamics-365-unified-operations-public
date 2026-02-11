@@ -33,9 +33,9 @@ To obtain an access token, follow these steps:
 | client\_id | The Application ID (client ID) registered in Azure portal. |
 | response type | Access Token |
 
- :::image type="content" source="media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
+:::image type="content" source="media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
 
- :::image type="content" source="media/insomnia-auth-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="media/insomnia-auth-configuration-example.png":::
+:::image type="content" source="media/insomnia-auth-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="media/insomnia-auth-configuration-example.png":::
 
 ## Available APIs
 
@@ -143,7 +143,7 @@ Query the result of finished goods **BIKE-S001**.
 
 ```json
 {
-  "tracingDirection": "Forward",
+    "tracingDirection": "Forward",
 	"eventDetailOption": "EventIdOnly",
 	"traceNodeOption": "BuildNodeDictionary",
 	"shouldGenerateSummary": false,
@@ -160,7 +160,7 @@ Query the result of finished goods **BIKE-S001**.
 
 ```json
 {
-    	"@odata.context": "https://aurorabapenv2bbcd.crm10.dynamics.com/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdyn_sctquerytrace_v1Response",
+    "@odata.context": "https://aurorabapenv2bbcd.crm10.dynamics.com/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdyn_sctquerytrace_v1Response",
 	"output": "{\"tracingDirection\":\"Forward\",\"root\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]},\"traceNodesDictionary\":{\"BIKE-DEMO~USMF~~BIKE-S0001~~\":{\"trackingId\":\"BIKE-DEMO~USMF~~BIKE-S0001~~\",\"next\":[],\"nextIds\":[],\"events\":[{\"eventId\":\"2026-01-07-09~1~15~3\"},{\"eventId\":\"2026-01-07-09~1~16~3\"},{\"eventId\":\"2026-01-07-09~1~17~3\"},{\"eventId\":\"2026-01-07-09~1~18~3\"},{\"eventId\":\"2026-01-07-09~1~19~3\"},{\"eventId\":\"2026-01-07-09~1~20~3\"},{\"eventId\":\"2026-01-07-09~1~27~4\"},{\"eventId\":\"2026-01-07-09~1~29~2\"}]}}}"
 }
 ```
