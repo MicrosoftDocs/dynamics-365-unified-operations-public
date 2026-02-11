@@ -23,6 +23,7 @@ You can access the Traceability app in two ways.
 After the **Traceability** is enabled in **Feature management** in D365 Supply Chain Management, a new **Traceability icon** is available on the **Home** page under **Apps** sections. 
 
 Once the installation is complete, click the **Traceability icon** to open the app.
+:::image type="content" source="media/Traceability-icon.png" alt-text="Demo data bill of materials" lightbox="media/Traceability-icon.png":::
 
 # Access Traceability from Power Platform
 
