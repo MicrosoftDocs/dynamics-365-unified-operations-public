@@ -20,7 +20,7 @@ This article describes how to integrate the Traceability Add-in for Dynamics 365
 
 ## Authentication
 
-The platform security token is required to call the Traceability public API. The following example uses an Insomnia configuration. Learn more in [Use Insomnia with Dataverse Web API](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/insomnia).
+The platform security token is required to call the Traceability public API. The following example uses an Insomnia configuration. Learn more in [Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia).
 
 Use Insomnia to fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
 
@@ -33,11 +33,11 @@ Use Insomnia to fetch a Microsoft Entra token by submitting an HTTP request that
 
 The following image shows an example of an Insomnia configuration. You can configure the keys mentioned in the previous table into the **Auth** tag of a specific HTTP request in Insomnia.
 
-:::image type="content" source="../media/insomnia-auth-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="media/insomnia-auth-configuration-example.png":::
+:::image type="content" source="../media/insomnia-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="../media/insomnia-configuration-example.png":::
 
 You can create the following JSON file as global environment for an Insomnia project. The `version` and `webapiurl` fields are used to build the path of the specific API.
 
-:::image type="content" source="../media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
+:::image type="content" source="../media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="../media/insomnia-environment-example.png":::
 
 ## Available APIs
 

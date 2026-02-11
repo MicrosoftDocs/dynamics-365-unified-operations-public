@@ -22,7 +22,7 @@ You can access the Traceability app in two ways: from Supply Chain Management or
 
 When you enable the *(Preview) Traceability* feature in [feature management](developer/traceability-install.md), the system adds a **Traceability** tile to the **Apps** section of the **Home** page of Supply Chain Management, as shown in the following image. To open the Traceability app, select the tile.
 
-:::image type="content" source="media/Traceability-icon.png" alt-text="Demo data bill of materials" lightbox="media/Traceability-icon.png":::
+:::image type="content" source="media/traceability-tile.png" alt-text="The Traceability tile on the home page of Supply Chain Management" lightbox="media/traceability-tile.png":::
 
 ## Access Traceability from Power Platform
 
@@ -32,3 +32,4 @@ Follow these steps to open the Traceability app from Power Platform after you [i
 1. On the left navigation pane, select **Apps**. The **Apps** page opens.
 1. Open the **My apps** tab. Look for the app with a **Name** of *Traceability*. If you don't see it on the **My apps** tab, switch to the **All** tab and look for it there.
 1. Hover your mouse over the *Traceability* app to reveal the **Play** button next to it. Select the **Play** button to run the app.
+    
