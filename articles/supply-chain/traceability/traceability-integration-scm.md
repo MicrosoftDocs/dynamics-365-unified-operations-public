@@ -11,10 +11,43 @@ ms.custom:
   - bap-template
 ---
 
-# Integrate Traceability with tracked components in Supply Chain Management (preview)
-
+# Integrate Traceability with Supply Chain Management (preview)
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+
+Traceability can integrate seamlessly with Dynamics 365 Supply Chain Management through configuration only.
+
+# Integrate Traceability with Purchase
+
+The Traceability Add-in for Dynamics 365 Supply Chain Management provides out-of-the-box integration with the purchase goods receipt in Dynamics 365 Supply Chain Management.
+
+## Prerequisites
+
+To integrate Traceability with the purchase goods receipt, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+    - *(Preview) Traceability*
+
+## Configure activities in Traceability
+
+You must configure Traceability to recognize the activity codes that Supply Chain Management submits. Follow these steps:
+
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. On the left navigation pane, select **Settings** \> **Activity**.
+1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure Traceability](developer/traceability-configure.md).
+
+    | Source activity code | Source activity type | Integration Scenario |
+    |--|--|--|
+    | PurchaseGoodsReceipt | Purchase | Product receipt of purchase order |
+
+1. On the toolbar, select **Save**.
+
+## Post product receipt of purchase order
+
+After a purchase order product receipt is posted for batch‑managed or serialized products in D365 Supply Chain Management, the corresponding goods receipt event is automatically sent to Traceability.
+ 
+# Integrate Traceability with tracked components in Supply Chain Management (preview)
 
 The Traceability Add-in for Dynamics 365 Supply Chain Management provides out-of-the-box integration with the tracked components feature in Dynamics 365 Supply Chain Management.
 
