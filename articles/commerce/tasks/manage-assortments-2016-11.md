@@ -22,7 +22,7 @@ The following procedure demonstrates how to create and publish a new product ass
 
 To create and publish an assortment, follow these steps.
 
-1. Select **Category and product management**.
+1. In Commerce headquarters, go to **Category and product management**.
 1. Select the **Assortments** tab.
 1. Select **New**.
 1. Select **Assortment**. You need to provide an **Assortment ID** and it must be a unique value.  
