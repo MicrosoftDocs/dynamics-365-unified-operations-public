@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.topic: how-to
-ms.date: 02/03/2026
+ms.date: 02/11/2026
 ms.custom:
   - bap-template
 ---
@@ -27,13 +27,10 @@ By using the pay-by-link payment method, salespeople can generate payment links 
 
 ### Set up and configure the Adyen portal and connector
 
-<!-- KFM: @Shalabh Jain,please review this section and add/update any detail or links you think it might need. -->
-
 Before you can set up and use the pay-by-link payment method for Supply Chain Management, the Dynamics 365 Payment Connector for Adyen must already be set up and configured for your system. Learn more in the following articles:
 
 - [Dynamics 365 Payment Connector for Adyen overview](../../commerce/dev-itpro/adyen-connector.md)
 - [Set up Dynamics 365 Payment Connector for Adyen](../../commerce/dev-itpro/adyen-connector-setup.md)
-- [Set up the Adyen payment connector for Dynamics 365 (on the Adyen website)](https://docs.adyen.com/plugins/microsoft-dynamics)
 
 ### Link your Supply Chain Management environment to a Dataverse environment
 
@@ -166,7 +163,7 @@ This step is optional. Complete it only if you want to change the default behavi
 1. Go to **Account receivables** \> **Payments setup** \> **Payment services**.
 1. Open payment service for your Adyen connector.
 1. On the **Payment service account** FastTab, in the **Custom settings** property, add key-value pairs for any or all of the following keys (an example is shown later in this step):
-    - `PaymentLinkDuration_Orders` – Set the duration for which the payment link is valid. The default is 24 hours.
+    - `PaymentLinkDuration_Orders` – Set the duration for which the payment link is valid. The default value is 24 hours.
     - `Store` – Specify which Adyen store information to include in the payment link. By default, only payment methods that don't depend on the Adyen store are shown.
     - `RequiredShopperFields` – Specify which fields the customers must enter values for before making a payment. By default, the related fields aren't shown to customers before they use the payment link.
 
@@ -182,7 +179,7 @@ This step is optional. Complete it only if you want to change the default behavi
 The following example describes a typical end-to-end user experience for using pay by link with sales orders in Supply Chain Management.
 
 1. A salesperson takes an order by phone and creates a sales order in Supply Chain Management.
-1. When the order is ready for payment, the salesperson goes to the **Header** tab of the sales order and, on the **Price and discount** FastTab, selects a **Method of payment** for which **Allow pay by link** is set to *Yes* (as described earlier in this topic). Additionally, as with credit cards, the **Settlement type** field on the **Setup** FastTab might need to be set to *None*.
+1. When the order is ready for payment, the salesperson goes to the **Header** tab of the sales order and, on the **Price and discount** FastTab, selects a **Method of payment** for which **Allow pay by link** is set to *Yes* (as described earlier in this article). Additionally, as with credit cards, the **Settlement type** field on the **Setup** FastTab might need to be set to *None*.
 1. On the Action Pane, the salesperson opens the **Manage** tab, opens the  **Credit card** drop-down list, and selects **Create payment link**.
 
     :::image type="content" source="media/create-payment-link.png" alt-text="The create payment link button for sales orders in Supply Chain Management." lightbox="media/create-payment-link.png":::
