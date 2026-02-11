@@ -11,10 +11,20 @@ ms.custom:
   - bap-template
 ---
 
-# Open the Traceability app in Power Apps (preview)
+# Open the Traceability app (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+
+You can access the Traceability app in two ways.
+
+# Access Traceability from D365 Supply Chain Management
+
+After the **Traceability** is enabled in **Feature management** in D365 Supply Chain Management, a new **Traceability icon** is available on the **Home** page under **Apps** sections. 
+
+Once the installation is complete, click the **Traceability icon** to open the app.
+
+# Access Traceability from Power Platform
 
 Follow these steps to open the Traceability app in Power Apps after you [install](developer/traceability-install.md) it in your environment.
 
