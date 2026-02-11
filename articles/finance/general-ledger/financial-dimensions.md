@@ -125,29 +125,11 @@ Department has dimension values of 100, 200 and 300. USMF, USSI, and DEMF all us
 
 When working with financial dimensions, you may need to rename dimension values or the dimensions themselves. However, there are several requirements and considerations that affect your ability to rename financial dimensions and their values.
 
-### Requirements for renaming dimension values
+**Entity-backed dimensions must be changed through their source entity**. Entity-backed dimension values can't be renamed through the **Financial dimension values** page (**General ledger > Chart of accounts > Dimensions > Financial dimension values**). Instead, rename them within the corresponding entity page. For example, rename Department dimension values in the Operating Units page where the department is defined.
 
-Before renaming a financial dimension value, review the following requirements.
-
-**Entity-backed dimensions must be changed through their source entity**. Entity-backed dimension values can't be renamed through the **Financial dimension values** page (**General ledger > Chart of accounts > Dimensions > Financial dimension values**). Instead, rename them within the corresponding entity page. For example, rename Department dimension values in the Operating Units page where the department is defined. Renaming an entity-backed dimension value may automatically rename other financial dimensions based on the same entity. For more information, see the Custom dimensions and Entity-backed dimensions sections earlier in this article.
-
-**Ensure dimension value names are unique**. Dimension value names must be unique across the system. To check for duplicates, navigate to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, rename the existing value or choose a different name.
+**Ensure dimension value names are unique**. Dimension value names must be unique across the system. To check for duplicates, navigate to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, choose a different name.
 
 **Verify you have sufficient privileges**. Your user account must have the necessary roles and privileges to modify dimension values. If you're unable to make changes, contact your system administrator to verify permissions.
-
-### Activating pending dimension attribute changes
-
-If you're unable to rename a financial dimension attribute and there are pending dimension attribute changes that haven't been activated (such as a deleted, renamed dimension attribute, or newly inserted dimension attribute), you must activate those changes before you can proceed with renaming.
-
-To activate these changes:
-
-1. Put the system into maintenance mode.
-2. Go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**.
-3. Select **Activate all** to process all pending dimension attribute changes.
-4. Wait for the activation process to complete.
-5. After activation is successful, retry renaming the dimension attribute.
-
-If activation isn't possible or doesn't resolve the issue, consider using a different name for the dimension attribute that doesn't conflict with existing dimension attribute names.
 
 ## Deleting financial dimensions
 
