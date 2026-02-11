@@ -26,21 +26,16 @@ Use Insomnia to fetch a Microsoft Entra token by submitting an HTTP request that
 
 | Key | Value |
 |--|--|
-| grant\_type | Implicit |
+| Grant type | Implicit |
 | Authorization URL | `https://login.microsoftonline.com/common/oauth2/authorize?resource={Traceability URL}`. Where *{Traceability URL}* is the URL for your Traceability installation, which resembles `https://operationsxxx.crm.dynamics.com` |
-| client\_id | The Application ID (client ID) registered in Azure portal. |
-| response type | Access Token |
+| Client ID | The Application ID (client ID) registered in Azure portal. |
+| Response type | Access Token |
 
-<!-- KFM: The above table doesn't exactly match either of the screenshots. Both the number of keys shown and the text of those keys don't match. For example, "redirect URL" and "webapiurl" aren't mentioned in the table. Is something wrong? -->
-
-The following image shows an example of an Insomnia configuration. You can configure the keys mentioned above into the **Auth** tag of specifc HTTP request of insomnia.  <!-- KFM: Can we explain a bit more about what this is and where to find it? Is it really a "configuration"? What kind of a configuration is it? Are the values shown just placeholders rather than example values? Something closer to real (but sanitized) examples might be more useful. -->
+The following image shows an example of an Insomnia configuration. You can configure the keys mentioned in the previous table into the **Auth** tag of a specific HTTP request in Insomnia.
 
 :::image type="content" source="../media/insomnia-auth-configuration-example.png" alt-text="Example of Insomnia configuration" lightbox="media/insomnia-auth-configuration-example.png":::
 
-The following image shows an example of an Insomnia environment. <!-- KFM: I think maybe this isn't an example of an "Insomnia environment". What is it really? Maybe this is the JSON sent to Traceability? Do we expect the reader to see or use this? Why are we showing it? -->
-
-You can create below json file as global envrionment for insomnia project.
-**Note:** fields *version* and *webapiurl* are used for buidling the path of specific API
+You can create the following JSON file as global environment for an Insomnia project. The `version` and `webapiurl` fields are used to build the path of the specific API.
 
 :::image type="content" source="../media/insomnia-environment-example.png" alt-text="Example of Insomnia environment" lightbox="media/insomnia-environment-example.png":::
 
