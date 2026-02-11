@@ -29,7 +29,7 @@ To obtain an access token, follow these steps:
 | Key | Value |
 |--|--|
 | grant\_type | Implicit |
-| Authorization URL | https://login.microsoftonline.com/common/oauth2/authorize?resource= {Traceability URL. Ie.https://operationsxxx.crm.dynamics.com} |
+| Authorization URL | https://login.microsoftonline.com/common/oauth2/authorize?resource= {Traceability URL. Example: https://operationsxxx.crm.dynamics.com} |
 | client\_id | The Application ID (client ID) registered in Azure portal. |
 | response type | Access Token |
 
