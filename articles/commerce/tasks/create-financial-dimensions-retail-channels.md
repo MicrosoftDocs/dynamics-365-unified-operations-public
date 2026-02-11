@@ -1,11 +1,10 @@
 --- 
 title: Create financial dimensions for retail channels and configure dimension values on stores
-description: This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. 
+description: Learn how to create and configure financial dimensions for retail channels  in Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 11/14/2016
+ms.date: 02/10/2026
 ms.topic: how-to   
-audience: Application User 
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
@@ -16,34 +15,36 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. The article does not include other related steps, such as creating dimension sets and account structures. This procedure uses the USRT company in demo data.
+This article explains how to create and configure financial dimensions for retail channels  in Microsoft Dynamics 365 Commerce.
 
-1. Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.
-2. Click New.
-3. In the Use values from field, select 'Commerce channels'.
-4. In the Dimension name field, type a value.
-5. Click Activate.
-6. Click Close.
-7. Click Activate.
-8. Click Dimension values.
-9. Close the page.
-10. Click Save.
-11. Close the page.
-12. Go to Retail and Commerce > Channels > Stores > All stores.
-13. In the list, click the link in the selected row.
-14. Toggle the expansion of the Financial dimensions section.
-15. Click Edit.
-16. In the Commerce channel field, click the drop-down button to open the lookup.
-17. In the list, find and select the dimension value for the store being updated.
-18. In the list, click the link in the selected row.
-19. In the CostCenter field, click the drop-down button to open the lookup.
-20. In the list, find and select the desired record.
-21. In the list, click the link in the selected row.
-22. In the Department field, click the drop-down button to open the lookup.
-23. In the list, find and select the desired record.
-24. In the list, click the link in the selected row.
-25. Click Save.
+The following procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. This article doesn't include other related steps, such as creating dimension sets and account structures. This procedure uses the USRT company in demo data.
 
+To create and configure financial dimensions for retail channels, follow these steps.
 
+1. In Commerce headquarters, go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
+1. Select **New**.
+1. In the **Use values from** field, select **Commerce channels**.
+1. In the **Dimension name** field, enter a value.
+1. Select **Activate**.
+1. Select **Close**.
+1. Select **Activate**.
+1. Select **Dimension values**.
+1. Close the page.
+1. Select **Save**.
+1. Close the page.
+1. Go to **Retail and Commerce** > **Channels** > **Stores** > **All stores**.
+1. In the list, select the link in the selected row.
+1. Toggle the expansion of the **Financial dimensions** section.
+1. Select **Edit**.
+1. In the **Commerce channel** field, select the drop-down button to open the lookup.
+1. In the list, find and select the dimension value for the store being updated.
+1. In the list, select the link in the selected row.
+1. In the **CostCenter** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. In the **Department** field, select the drop-down button to open the lookup.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
