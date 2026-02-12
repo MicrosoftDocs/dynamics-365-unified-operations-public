@@ -32,9 +32,51 @@ Use the user interface to [set up the feature](supplier-com-agent-follow-up.md) 
 
 ## Test the "Updates from vendors" (reading emails) feature
 
+The agent works by matching incoming vendor emails to existing purchase orders. Therefore, to test this feature, your test environment must have both:
+
+- **Purchase orders** – Synchronize recent purchase orders from production to your test environment. For instructions, see [Synchronize purchase orders between production and test environments](#synchronize-purchase-orders-between-production-and-test-environments).
+- **Vendor emails** – Forward or send test emails that reference those purchase orders. For instructions, see [Forward emails](#forward-emails).
+
+### Synchronize purchase orders between production and test environments
+
+When testing in a sandbox environment (Phase 1 or Phase 2 below), the agent needs purchase order data to match against vendor emails. You can export purchase orders from your production environment and import them into your test environment by using the Data management framework.
+
+#### Export purchase orders from the production environment
+
+Follow these steps in the production environment.
+
+1. Go to **Data management**.
+1. Create a new export project.
+1. Select the **Purchase orders composite V3** entity.
+1. Select the **XML-Element** format.
+1. Create a filter by selecting the filter icon in the **Filter** column.
+1. Add a range for the **Created date and time** field.
+1. Set the filter value to `(DayRange(-14, 0))`. Modify the first argument (`-14`) to control how many days back to export. A higher value exports more data, which could exceed the import capacity of the test environment.
+1. Run the export in batch mode.
+
+#### Prepare the test environment (one-time setup)
+
+To avoid number sequence conflicts when importing purchase orders, enable manual numbering for purchase orders in the test environment.
+
+1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1. Select the **Number sequences** tab.
+1. Find the number sequence that is used for purchase orders and navigate to it.
+1. On the **General** FastTab, set **Manual** to *Yes*.
+
+#### Import purchase orders into the test environment
+
+Repeat these steps on a regular basis (for example, weekly) to keep the test environment up to date.
+
+1. Go to **Data management**.
+1. Create a new import project.
+1. Select the **Purchase orders composite V3** entity.
+1. Start the import in batch mode.
+
+### Forward Emails
+
 This feature requires more setup permissions, test email addresses, and multiple scenarios. Start small and then expand, as described in the following subsections.
 
-### Phase 1: Forward some emails to a testing email address in a sandbox environment
+#### Phase 1: Forward some emails to a testing email address in a sandbox environment
 
 This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn't matter if you plan to use the purchaser's email in production or a common mailbox for the purchasing department.
 
@@ -43,7 +85,7 @@ This phase lets you test the smallest possible scope. Start with a test email ad
 - Refresh your data (copy production data to the sandbox) or forward older emails so the system can match them.
 - Forward emails in batches—for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
 
-### Phase 2: Forward emails from selected vendors
+#### Phase 2: Forward emails from selected vendors
 
 Now that you have a few emails available on your system, start working with messages from those vendors that you communicate with the most or that have the most confirmations that you want the agent to handle.
 
