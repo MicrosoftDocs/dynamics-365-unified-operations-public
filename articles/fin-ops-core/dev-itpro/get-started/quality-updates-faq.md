@@ -64,12 +64,11 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 
     :::image type="content" source="https://github.com/user-attachments/assets/bc7ac1c8-8e76-4c45-a4ec-51964344f494" alt-text="Screenshot of the preferred day selection for receiving PQUs.":::
 
-1. Select **Save**.
+1. Select Maintenance Cadence as "Every Update". 
+2. Select **Save**.
 
 > [!NOTE]
->
-> 1. This feature for selecting weekday deployments is available starting March 1, 2026.
-> 1. Live environments always receive updates at least five days after Sandbox. This process remains unchanged under the biweekly cadence.
+> Live environments always receive updates at least five days after Sandbox. This process remains unchanged under the biweekly cadence.
 
 ### Which day should I choose for receiving PQU updates?
 
