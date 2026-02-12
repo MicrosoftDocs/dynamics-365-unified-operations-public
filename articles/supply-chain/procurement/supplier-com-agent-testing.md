@@ -32,20 +32,25 @@ Use the user interface to [set up the feature](supplier-com-agent-follow-up.md) 
 
 ## Test the "Updates from vendors" (reading emails) feature
 
-The agent works by matching incoming vendor emails to existing purchase orders. Therefore, to test this feature, your test environment must have both:
+The agent works by matching incoming vendor emails to existing purchase orders. To test this feature, your test environment must have both of the following items:
 
 - **Purchase orders** – Synchronize recent purchase orders from production to your test environment. For instructions, see [Synchronize purchase orders between production and test environments](#synchronize-purchase-orders-between-production-and-test-environments).
 - **Vendor emails** – Forward or send test emails that reference those purchase orders. For instructions, see [Forward emails](#forward-emails).
 
+To ensure that you can continuously test on sandbox by using your latest purchase orders and emails, update the sandbox by using the following process.
+
 ### Synchronize purchase orders between production and test environments
 
-When testing in a sandbox environment (Phase 1 or Phase 2 below), the agent needs purchase order data to match against vendor emails. You can export purchase orders from your production environment and import them into your test environment by using the Data management framework.
+When you test in a sandbox environment (Phase 1 or Phase 2 in the following section), the agent needs purchase order data to match against vendor emails. You can export purchase orders from your production environment and import them into your test environment by using the Data management framework.
+
+> [!NOTE]
+> This process exports and imports only the purchase order data itself. Related data isn't included. This approach provides sufficient data for the agent to match vendor emails to purchase orders, but it doesn't fully replicate the production data environment.
 
 #### Export purchase orders from the production environment
 
 Follow these steps in the production environment.
 
-1. Go to **Data management**.
+1. Open **Data management**.
 1. Create a new export project.
 1. Select the **Purchase orders composite V3** entity.
 1. Select the **XML-Element** format.
@@ -65,14 +70,14 @@ To avoid number sequence conflicts when importing purchase orders, enable manual
 
 #### Import purchase orders into the test environment
 
-Repeat these steps on a regular basis (for example, weekly) to keep the test environment up to date.
+Repeat these steps regularly (for example, weekly) to keep the test environment up to date.
 
 1. Go to **Data management**.
 1. Create a new import project.
 1. Select the **Purchase orders composite V3** entity.
 1. Start the import in batch mode.
 
-### Forward Emails
+### Forward emails
 
 This feature requires more setup permissions, test email addresses, and multiple scenarios. Start small and then expand, as described in the following subsections.
 
@@ -81,15 +86,15 @@ This feature requires more setup permissions, test email addresses, and multiple
 This phase lets you test the smallest possible scope. Start with a test email address so you can test without risk. It doesn't matter if you plan to use the purchaser's email in production or a common mailbox for the purchasing department.
 
 - Ask your Microsoft Exchange admin to create the test email address.
-- Connect that email address to the sandbox environment where you'll do the testing.
+- Connect that email address to the sandbox environment where you do the testing.
 - Refresh your data (copy production data to the sandbox) or forward older emails so the system can match them.
-- Forward emails in batches—for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
+- Forward emails in batches - for example, five emails at a time. Check results and note if there's anything unexpected, and continue until you have a good idea of how it performs.
 
 #### Phase 2: Forward emails from selected vendors
 
 Now that you have a few emails available on your system, start working with messages from those vendors that you communicate with the most or that have the most confirmations that you want the agent to handle.
 
-- Use the same setup as before, but this time auto-forward a set of emails from real vendor email addresses to the test address.
+- Use the same setup as before, but this time autoforward a set of emails from real vendor email addresses to the test address.
 - Refresh data or import purchase orders and products before you do the test, especially if your testing should last for a few weeks. The agent can't match an email to a purchase order if the purchase order isn't in the system. Collaborate with one or more of your purchasers if you haven't already.
 
 For this phase, you might want to involve one or more of your purchasers.
@@ -99,9 +104,9 @@ For this phase, you might want to involve one or more of your purchasers.
 Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. Stop the agent from working in your sandbox.
 Testing in production is safe. The feature doesn't interfere with standard business processes. At best, the agent does the work automatically. At worst, if the agent doesn't understand something correctly, the purchaser still needs to do it manually.
 
-This is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. We keep it designated as a production-ready preview so we can continue improving it.
+The Supplier Communications Agent is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. Microsoft keeps it designated as a production-ready preview so it can continue improving it.
 
-For this test, we recommend that you:
+For this test, use the following recommendations:
 
 - Have purchasers work with the agent to do their daily tasks.
 - Start with just one or a few purchasers.
