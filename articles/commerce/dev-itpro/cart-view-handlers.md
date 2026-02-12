@@ -1,28 +1,28 @@
 ---
 title: POS Cart view events and handlers
-description: This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios.
+description: Learn how extensions can consume the point of sale (POS) view events and handlers for custom scenarios in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/13/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
+ms.date: 02/12/2026
+ms.topic: how-to
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2020-02-02
-ms.dyn365.ops.version: 10.0.10
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # POS Cart view events and handlers
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios. For example, the Cart view in POS exposes multiple events and handlers so that your extensions can perform custom business flows, based on events. The extensions can subscribe to an event and receive a notification when that event occurs.
+This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios in Microsoft Dynamics 365 Commerce.
+
+For example, the Cart view in POS exposes multiple events and handlers so that your extensions can perform custom business flows, based on events. The extensions can subscribe to an event and receive a notification when that event occurs.
 
 ## Cart view event handlers
 
-The base class that is used to consume the Cart view handlers is **CartExtensionViewControllerBase**.
+Use the base class **CartExtensionViewControllerBase** to consume the Cart view handlers.
 
 ```typescript
 export default class CartViewController extends CartView.CartExtensionViewControllerBase {
@@ -93,7 +93,7 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 
 ## Base classes for consuming Cart view events in Cart view UI extensions
 
-There are several base classes for consuming events in the user interface (UI):
+Several base classes handle events in the user interface (UI):
 
 + Custom controls
 + Custom fields in the **Totals** pane
@@ -142,6 +142,5 @@ There are several base classes for consuming events in the user interface (UI):
 | CustomDeliveryGridColumnBase | public title(): string { } | Set the title for the custom column. |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column. |
 |                              | public alignment(): CustomGridColumnAlignment { }<p>**Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }</p> | Set left or right alignment for the custom column. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
