@@ -175,6 +175,19 @@ You can set up derived values on the dimensions page.
 
 Enter the dimension combinations that should be derived from the dimension in the first column. For example, to use the cost center as the dimension that the department and location are derived from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
 
+>[!NOTE]
+>You can only configure derived dimensions for shared dimensions, not company-specific dimensions.
+>
+>**Examples of shared dimensions (allowed):** Departments, Cost Center
+> 
+>**Examples of company-specific dimensions (not allowed):** Project, Bank Accounts, Customers, VendorsExpand commentComment on line R183Resolved
+>
+>To check if a dimension is shared or company-specific, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions** and select **Dimension values** from the action pane. Company-specific dimensions show the company name at the bottom of the tile.
+>
+>If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
+
+
+
 ### Overriding existing values with derived dimensions
  
 By default, the derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that have already been established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions won't be changed by derived dimensions.
