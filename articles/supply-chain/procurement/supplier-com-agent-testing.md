@@ -32,16 +32,16 @@ Use the user interface to [set up the feature](supplier-com-agent-follow-up.md) 
 
 ## Test the "Updates from vendors" (reading emails) feature
 
-The agent works by matching incoming vendor emails to existing purchase orders. To test this feature, your test environment must have both of the following items:
+The agent works by matching incoming vendor emails to existing purchase orders. To try this feature, your sandbox environment must have both of the following items:
 
-- **Purchase orders** – Synchronize recent purchase orders from production to your test environment. For instructions, see [Synchronize purchase orders between production and test environments](#synchronize-purchase-orders-between-production-and-test-environments).
-- **Vendor emails** – Forward or send test emails that reference those purchase orders. For instructions, see [Forward emails](#forward-emails).
+- **Purchase orders** – Synchronize recent purchase orders from production to your sandbox environment.
+- **Vendor emails** – Forward or send test emails that reference those purchase orders.
 
 To ensure that you can continuously test on sandbox by using your latest purchase orders and emails, update the sandbox by using the following process.
 
-### Synchronize purchase orders between production and test environments
+### Synchronize purchase orders between production and sandbox environments
 
-When you test in a sandbox environment (Phase 1 or Phase 2 in the following section), the agent needs purchase order data to match against vendor emails. You can export purchase orders from your production environment and import them into your test environment by using the Data management framework.
+When you test in a sandbox environment (Phase 1 or Phase 2 in the following section), the agent needs purchase order data to match against vendor emails. You can export purchase orders from your production environment and import them into your sandbox environment by using the Data management framework.
 
 > [!NOTE]
 > This process exports and imports only the purchase order data itself. Related data isn't included. This approach provides sufficient data for the agent to match vendor emails to purchase orders, but it doesn't fully replicate the production data environment.
@@ -56,21 +56,21 @@ Follow these steps in the production environment.
 1. Select the **XML-Element** format.
 1. Create a filter by selecting the filter icon in the **Filter** column.
 1. Add a range for the **Created date and time** field.
-1. Set the filter value to `(DayRange(-14, 0))`. Modify the first argument (`-14`) to control how many days back to export. A higher value exports more data, which could exceed the import capacity of the test environment.
+1. Set the filter value to `(DayRange(-14, 0))`. Modify the first argument (`-14`) to control how many days back to export. A higher value exports more data, which could exceed the import capacity of the sandbox environment.
 1. Run the export in batch mode.
 
-#### Prepare the test environment (one-time setup)
+#### Prepare the sandbox environment (one-time setup)
 
-To avoid number sequence conflicts when importing purchase orders, enable manual numbering for purchase orders in the test environment.
+To avoid number sequence conflicts when importing purchase orders, enable manual numbering for purchase orders in the sandbox environment.
 
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. Select the **Number sequences** tab.
 1. Find the number sequence that is used for purchase orders and navigate to it.
 1. On the **General** FastTab, set **Manual** to *Yes*.
 
-#### Import purchase orders into the test environment
+#### Import purchase orders into the sandbox environment
 
-Repeat these steps regularly (for example, weekly) to keep the test environment up to date.
+Repeat these steps regularly (for example, weekly) to keep the sandbox environment up to date.
 
 1. Go to **Data management**.
 1. Create a new import project.
