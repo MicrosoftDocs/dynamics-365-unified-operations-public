@@ -1,11 +1,10 @@
 ---
 title: Design the relationships between organizational units
-description: This procedure describes how to design the relationship between organizational units in Microsoft Dynamics 365 Commerce.
+description: Learn how to design the relationship between organizational units in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/28/2024
+ms.date: 02/11/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
@@ -17,43 +16,43 @@ ms.custom:
 ---
 # Design the relationships between organizational units
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This procedure walks through how to design the relationship between organizational units. You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose. The demo data company used to complete this procedure is USRT. This task is intended for the administrator role.
+This article explains how to design the relationship between organizational units in Microsoft Dynamics 365 Commerce.
 
-1. Go to Organization administration > Organizations > Organization hierarchies.
-2. Click New.
-3. In the Name field, type a value.
-4. Click Assign purpose.
-5. In the list, find and select the desired record.
-6. Click Add.
-7. In the list, find and select the desired record.
-8. Click OK.
-    * You can select as many organization purposes as required for your organization.  
-9. In the list, find and select the desired record.
-10. Click Set as default.
-11. Close the page.
-12. Click Save.
-13. Click View.
-14. Click Edit.
-15. Click Insert.
-16. Click Business unit.
-17. In the list, find and select the desired record.
-18. In the list, click the link in the selected row.
-19. Click Insert.
-20. Click Commerce channel.
-21. In the list, find and select the desired record.
-22. In the list, click the link in the selected row.
-    * You can add as many organization units as is required.  
-23. Click Save.
-24. Click Close.
-25. Click Publish to open the drop dialog.
-26. In the Effective date field, enter a date and time.
-27. In the Effective date field, enter a date and time.
-28. In the Describe changes field, type a value.
-29. Click Publish.
-30. Click Close.
+The following procedure walks through how to design the relationship between organizational units. You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose. The demo data company used to complete this procedure is USRT. The procedure is intended for the administrator role.
 
+To design the relationships between organizational units, follow these steps.
 
+1. In Commerce headquarters, go to **Organization administration** > **Organizations** > **Organization hierarchies**.
+1. Select **New**.
+1. In the **Name** field, enter a value.
+1. Select **Assign purpose**.
+1. In the list, find and select the desired record.
+1. Select **Add**.
+1. In the list, find and select the desired record.
+1. Select **OK**. You can select as many organization purposes as required for your organization.  
+1. In the list, find and select the desired record.
+1. Select **Set as default**.
+1. Close the page.
+1. Select **Save**.
+1. Select **View**.
+1. Select **Edit**.
+1. Select **Insert**.
+1. Select **Business unit**.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **Insert**.
+1. Select **Commerce channel**.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row. You can add as many organization units as is required.  
+1. Select **Save**.
+1. Select **Close**.
+1. Select **Publish** to open the drop dialog.
+1. In the **Effective date** field, enter a date and time.
+1. In the **Effective date** field, enter a date and time.
+1. In the **Describe changes** field, enter a value.
+1. Select **Publish**.
+1. Select **Close**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
