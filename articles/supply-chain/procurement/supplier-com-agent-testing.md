@@ -37,7 +37,7 @@ The agent works by matching incoming vendor emails to existing purchase orders. 
 - **Purchase orders** – Synchronize recent purchase orders from production to your sandbox environment.
 - **Vendor emails** – Forward or send test emails that reference those purchase orders.
 
-To ensure that you can continuously test on sandbox by using your latest purchase orders and emails, update the sandbox by using the following process.
+To ensure that you can continuously test in sandbox by using your latest purchase orders and emails, update the sandbox by using the following process.
 
 ### Synchronize purchase orders between production and sandbox environments
 
@@ -104,7 +104,7 @@ For this phase, you might want to involve one or more of your purchasers.
 Now you're ready for the final test: testing in production. Set up the agent in production using real email addresses. Stop the agent from working in your sandbox.
 Testing in production is safe. The feature doesn't interfere with standard business processes. At best, the agent does the work automatically. At worst, if the agent doesn't understand something correctly, the purchaser still needs to do it manually.
 
-The Supplier Communications Agent is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. We have designated it as a production-ready preview so we can continue improving it.
+The Supplier Communications Agent is a production-ready preview feature. It has the quality of a generally available (GA) feature and you can go live with it. The reason it's not fully GA is that the agent is under continuous development. By designating it as a production-ready preview, Microsoft can continue improving it.
 
 For this test, use the following recommendations:
 
