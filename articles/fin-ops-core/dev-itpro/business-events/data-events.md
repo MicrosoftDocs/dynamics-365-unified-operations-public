@@ -17,12 +17,12 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include[banner](../includes/banner.md)]
 
-Data events are events that are based on changes to data in finance and operations apps. You can enable create, update, and delete (CUD) events for each entity. For example, if you enable the **Create** event for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
+Data events are events that are based on changes to data in finance and operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, the **Create** event for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
 
-All standard and custom entities in finance and operations apps that are enabled for Open Data Protocol (OData) can emit data events. In the data event catalog, each event for an entity is listed as a data event that you can establish subscriptions for. The concept of activating the data event and associating it with an endpoint resembles the concept of business events. When a data event occurs, the payload of the event contains the corresponding entity record.
+All standard and custom entities in finance and operations apps that are enabled for Open Data Protocol (OData) can emit data events. In the data event catalog, each event for an entity is listed as a data event that subscriptions can be established for. The concept of activating the data event and associating it with an endpoint resembles the concept of business events. When a data event occurs, the payload of the event contains the corresponding entity record.
 
 > [!IMPORTANT]
-> Data events are available only in environments where the Microsoft Power Platform integration is enabled. For more information, see [Enable the Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
+> Data events are available only in environments that the Microsoft Power Platform integration is enabled for. For more information, see [Enable the Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 ## Data event catalog
 
@@ -34,11 +34,11 @@ To access the data event catalog, select the **Data event catalog** tab on the *
 
 By default, data events are inactive. To activate a data event from the data event catalog, select it in the list, and then select **Activate**.
 
-You can activate data events in all legal entities or in specific legal entities. In the **Configure new data event** dialog box, in the **Legal entity** field, select the legal entity where you want to activate the data events. If you leave the **Legal entity** field blank, the selected data events are activated in all legal entities. If a data event is required in multiple specific legal entities, you must configure it separately for each legal entity.
+Data events can be activated in all legal entities or in specific legal entities. In the **Configure new data event** dialog box, in the **Legal entity** field, select the legal entity that you want to activate the data events in. If you leave the **Legal entity** field blank, the selected data events are activated in all legal entities. If a data event is required in multiple specific legal entities, it must be configured separately for each legal entity.
 
-You can configure only company-specific data events for specific legal entities. When you configure data events that aren't company-specific, the **Legal entity** field isn't editable, and the data events are enabled for all legal entities.
+Only company-specific data events can be configured for specific legal entities. When you configure data events that aren't company-specific, the **Legal entity** field isn't editable, and the data events are enabled for all legal entities.
 
-To activate a data event, select a configured endpoint. For information about how to configure endpoints for business events and data events, see [Manage business event endpoints](managing-business-event-endpoints.md).
+To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Manage business event endpoints](managing-business-event-endpoints.md).
 
 When you activate a data event, it adds to the list on the **Active data events** tab of the **Business events** page and becomes available for subscription through the selected endpoint.
 
@@ -48,24 +48,28 @@ When you activate a data event, it adds to the list on the **Active data events*
 
 You can deactivate data events from the **Active data events** tab of the **Business events** page. To deactivate a data event, select it in the list, and then select **Deactivate**. The data event is removed from the list on the **Active data events** tab and added to the list on the **Inactive data events** tab.
 
-Like business events, you can deactivate data events when business event processing is temporarily paused. A temporary pause might be required because of system maintenance, bulk data imports, or bulk data processing. Bulk data processing where data events are enabled on related data entities can send a high volume of data events that might not be required. This situation can affect system performance.
+Like business events, data events can be deactivated when business event processing is temporarily paused. A temporary pause might be required because of system maintenance, bulk data imports, or bulk data processing. Bulk data processing where data events are enabled on related data entities can send a high volume of data events that might not be required. This situation can affect system performance.
 
-When data events are no longer required to meet business requirements, you can delete them from the list on the **Active data events** or **Inactive data events** tab. Deleting data events removes all error history for them. If you need to preserve the history of errors for a data event, deactivate the data event instead of deleting it. For more information about error logs for business events and data events, see [Errors](home-page.md#errors).
+When data events are no longer required to meet business requirements, you can delete them from the list on the **Active data events** or **Inactive data events** tab. In this case, the data events are removed from the list, and all error history for them is deleted. If the history of errors for a data event must be preserved, you can deactivate the data event instead of deleting it. For more information about error logs for business events and data events, see [Errors](home-page.md#errors).
 
 ## Data event schema
 
-On the **Data event catalog** tab of the **Business events** page, you can see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
+On the **Data event catalog** tab of the **Business events** page, you're able to see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
 
 > [!NOTE]
-> Any datetime properties in the payload of a data event that have a null value are removed from the schema of the event sent to subscribed service endpoints.
+> Any datetime properties in the payload of a data event that have a NULL value will be removed from the schema of the event sent to subscribed service endpoints.
 
 The **Data event catalog** doesn't provide the same capability for downloading the event schema that's available for business events on the **Business event catalog** tab of the page. If you need the JavaScript Object Notation (JSON) schema for an event, for example when external integration systems require the schema of the payload for a business event during development, you can construct the schema using the field information provided. The [RemoteExecutionContext Class](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext) defines the contextual information sent to the configured service endpoint at run-time. The entity fields are included in the schema in the **Target** and **PreImage** properties of the [InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters).
 
 ## Performance benchmarks
 
-The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. The system doesn't explicitly throttle events. You still send any events above the supported thresholds, but the performance of the environment might slow.
+The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events and any events above the supported thresholds will stil be sent, but it might slow the performance of the environment.
 
 Data events for update operations are inherently more expensive to process than data events for create and delete operations in finance and operations. If your active data events are for update operations, you might see environment performance degrade more quickly when exceeding the supported thresholds.
+
+>[!Tip]
+> Change tracking is essential for enabling incremental data export and for triggering data events in finance and operations apps. Without change tracking enabled on a data entity, only full data exports are possible, and data events might not fire as expected.
+
 
 ## Limitations
 
@@ -74,8 +78,9 @@ For more information on virtual fields, see [Computed columns and virtual fields
 1. The processing of data events that occur in finance and operations apps is asynchronous across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in finance and operations apps isn't guaranteed to preserve the order in which they're delivered to the endpoints.
 1. Data events in Microsoft finance and operations apps are designed to trigger on create, update, and delete (CUD) operations for entities that are backed by tables. When a data entity uses a view as its primary data source, data events don't trigger. This limitation is due to the following reasons:
     - Views aren't directly tied to a single table's data change.
-    - The system can't determine which underlying table change should trigger the event.
-    - As a result, the event framework can't reliably emit notifications for entities based on views.
-1. Any Business Eventid saved in environment variables for ALM process  of the Power Automate should store the Business Event ID and not the Business Event Label. This can cause creation or orphan records and won't trigger the Power Automate.
+        - The system can't determine which underlying table change should trigger the event.
+        - As a result, the event framework can't reliably emit notifications for entities based on views.
+        - Any Business Eventid saved in enviorment variables for ALM process of the power automate should store the Business Event ID and not the Business Event Label. This can cause creation or orphan records and will not trigger the power automate.   
+
 
 [!include[banner](../includes/banner.md)]
