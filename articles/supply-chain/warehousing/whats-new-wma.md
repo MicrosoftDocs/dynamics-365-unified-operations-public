@@ -18,6 +18,12 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.35.0
+
+Version 4.0.35.0 adds the following fixes and improvements:
+
+- Fixed an issue in the Sales Picking flow where the corresponding quantity value was selected incorrectly.
+  
 ## Version 4.0.34.0
 
 Version 4.0.34.0 adds the following fixes and improvements:
