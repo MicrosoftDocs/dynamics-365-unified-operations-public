@@ -82,9 +82,9 @@ For an entity-backed financial dimension, you can't create dimension values from
 
 ## Activating dimensions
 
-When you activate a financial dimension, the table is updated so that it includes the name of the financial dimension. Deleted dimensions are removed. You can create and edit dimension values before you activate a financial dimension. However, you can't consume a financial dimension anywhere until you activate it. For example, you can't add a financial dimension to an account structure until the financial dimension is activated.
+When you activate a financial dimension, the table updates to include the name of the financial dimension. Deleted dimensions are removed. You can create and edit dimension values before you activate a financial dimension. However, you can't consume a financial dimension anywhere until you activate it. For example, you can't add a financial dimension to an account structure until you activate the financial dimension.
 
-When you select **Activate all**, all inactive or renamed dimensions are updated to active, which is shown in the **Status changes** field. The system must be in maintenance mode when activating financial dimensions.  
+When you select **Activate all**, the system updates all inactive or renamed dimensions to active, which the **Status changes** field shows. The system must be in maintenance mode when activating financial dimensions.  
 
 ### Translations
 
@@ -106,8 +106,8 @@ If you don't enter the values in the system language, you might not get the expe
 The system language is set to "es" (Spanish).  
 A new financial dimension is created. You enter the dimension name in English, not Spanish: "Ownership."
 
-- Defining the name in a non-system language isn't recommended, but is permitted.
-Two translations are created for the "Ownership" dimension name:
+- You can define the name in a non-system language, but it's not recommended.
+You create two translations for the "Ownership" dimension name:
 - "es" (Spanish) = Propiedad
 - "de" (German) = Besitz
 
@@ -186,7 +186,18 @@ Set up derived values on the dimensions page.
 
 1. Add the segments that you want to derive. Each segment appears as a column.
 
-Enter the dimension combinations that should be derived from the dimension in the first column. For example, to use the cost center as the dimension that the department and location are derived from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
+Enter the dimension combinations that you want to derive from the dimension in the first column. For example, to use the cost center as the dimension that the department and location derive from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
+
+> [!NOTE]
+>You can only configure derived dimensions for shared dimensions, not company-specific dimensions.
+>
+>**Examples of shared dimensions (allowed):** Departments, Cost Center
+>
+>**Examples of company-specific dimensions (not allowed):** Project, Bank Accounts, Customers, Vendors
+>
+>To check if a dimension is shared or company-specific, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions** and select **Dimension values** from the action pane. Company-specific dimensions show the company name at the bottom of the tile.
+>
+>If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
 
 > [!IMPORTANT]
 > When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
