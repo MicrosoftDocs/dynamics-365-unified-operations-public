@@ -125,11 +125,9 @@ Department has dimension values of 100, 200 and 300. USMF, USSI, and DEMF all us
 
 When working with financial dimensions, you may need to rename dimension values or the dimensions themselves. However, there are several requirements and considerations that affect your ability to rename financial dimensions and their values.
 
-**Entity-backed dimensions must be changed through their source entity**. Entity-backed dimension values can't be renamed through the **Financial dimension values** page (**General ledger > Chart of accounts > Dimensions > Financial dimension values**). Instead, rename them within the corresponding entity page. For example, rename Department dimension values in the Operating Units page where the department is defined.
-
-**Ensure dimension value names are unique**. Dimension value names must be unique across the system. To check for duplicates, navigate to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, choose a different name.
-
-**Verify you have sufficient privileges**. Your user account must have the necessary roles and privileges to modify dimension values. If you're unable to make changes, contact your system administrator to verify permissions.
+ - Entity-backed dimensions must be changed through their source entity - Entity-backed dimension values can't be renamed through the **Financial dimension values** page. You can rename them on the corresponding entity page. For example, rename Department dimension values in the **Operating units** page where the department is defined.
+ - Ensure dimension value names are unique - Dimension value names must be unique across the system. To check for duplicates, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, choose a different name.
+ - Verify you have sufficient privileges - Your user account must have the necessary roles and privileges to modify dimension values. If you're unable to make changes, contact your system administrator to verify permissions.
 
 ## Deleting financial dimensions
 
