@@ -29,7 +29,7 @@ This article provides links to documentation resources for Thailand.
 - [Withholding tax](apac-tha-withholding-tax.md)
 
 > [!NOTE]
-> To comply with the requirements of Thailand's Revenue Department for using certified tax software, you must obtain a sequence number for your software from the software manufacturer. Contact Microsoft Support to request this sequence number.
+> To comply with the requirements of Thailand's Revenue Department for using certified tax software, you must obtain a sequence number for your software from the software manufacturer.
 >
 > Once obtained, enter the sequence number in the **Sequence number** field on the **General** tab of the **System parameters** page. The sequence number then appears in the **About** dialog box.
  
