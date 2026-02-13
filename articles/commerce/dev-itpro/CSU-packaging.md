@@ -1,6 +1,6 @@
 ---
 title: Create a Cloud Scale Unit extension package
-description: This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
+description: Learn how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
 author: josaw1
 ms.date: 02/17/2023
 ms.topic: how-to
@@ -88,3 +88,4 @@ To deploy the package to CSU, follow these steps:
 
 1. After the validation is completed, mark the package as **Release candidate**.
 1. After the package is uploaded, you must deploy it to the environment. For more information, follow the steps in [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
+
