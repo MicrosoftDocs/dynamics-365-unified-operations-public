@@ -956,6 +956,8 @@
             href: dev-itpro/inventory-availability-apis.md
           - name: POS inventory lookup with channel-side calculation
             href: inventory-lookup-channel-side-calc.md
+          - name: Enable cross legal entity inventory lookup for POS
+            href: enable-cross-legal-entity-inventory-lookup-pos.md
           - name: Optimize inventory data
             href: optimize-inventory-data.md
           - name: Channel-side calculation FAQ
