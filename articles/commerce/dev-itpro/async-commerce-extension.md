@@ -1,15 +1,15 @@
 ---
-title: Create asynchronous Commerce (CRT) APIs in your business logic
-description: This article explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
+title: Create asynchronous Commerce runtime (CRT) APIs in your business logic
+description: Learn how to create Commerce runtime (CRT) application programming interfaces (APIs) that run asynchronously in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/02/2022
+ms.date: 02/12/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2020-02-02
-ms.dyn365.ops.version: 10.0.10
+ms.custom: 
+  - bap-template
 ---
 
 # Create asynchronous Commerce (CRT) APIs in your business logic
@@ -19,35 +19,37 @@ ms.dyn365.ops.version: 10.0.10
 > [!NOTE]
 > This article applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
-This article explains how to create new business logic (application programming interfaces, or APIs) for the Commerce Runtime (CRT) by using the new asynchronous framework. The Commerce API framework now supports an asynchronous programming model for extensions and out-of-box Commerce handlers.
+This article explains how to create Commerce runtime (CRT) application programming interfaces (APIs) that run asynchronously in Microsoft Dynamics 365 Commerce.
 
-Before this framework enhancement was added, requests could be run only synchronously. Long operations, like input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of these operations. Asynchronous requests unblock the execution thread.
+The Commerce API framework supports an asynchronous programming model for extensions and out-of-box Commerce handlers.
 
-The Commerce API framework now supports the **Task** and **Task\<T\>** classes that are supported by the **async** and **await** keywords for the extension CRT request handlers. You should use the asynchronous Commerce API framework for all new extension APIs and the out-of-box asynchronous Commerce API in extensions.
+Before this framework enhancement, you could run requests only synchronously. Long operations, like input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that the Commerce runtime (CRT) supports the asynchronous model, you can use asynchronous versions of these operations. Asynchronous requests unblock the execution thread.
 
-## Async classes/interface added in the Commerce API framework
+The Commerce API framework now supports the **Task** and **Task\<T\>** classes that the **async** and **await** keywords support for the extension CRT request handlers. Use the asynchronous Commerce API framework for all new extension APIs and the out-of-box asynchronous Commerce API in extensions.
 
-The following asynchronous classes and interfaces were added in the Commerce API framework.
+## Async classes and interfaces added in the Commerce API framework
+
+The Commerce API framework includes the following asynchronous classes and interfaces.
 
 | Class/Interface                     | Description |
 |---------------------------|-------------|
 | SingleAsyncRequestHandler | The base class for asynchronous handlers that support only one request. |
 | IRequestHandlerAsync      | The interface for the asynchronous request handler. |
 | IRequestTriggerAsync      | The interface for the request trigger. |
-| IController               | The base class for asynchronous extension Retail server controller class. Replaces CommerceControllerAsync class which was deprecated. |
+| IController               | The base class for asynchronous extension Retail server controller class. Replaces the deprecated CommerceControllerAsync class. |
 | DatabaseContext           | The base class for asynchronous database execution methods. |
 
-The following asynchronous methods were added in the Commerce API framework.
+The Commerce API framework includes the following asynchronous methods.
 
 | Class/Interface           | Method                                              | Description |
 |---------------------------|-----------------------------------------------------|-------------|
-| `SingleAsyncRequestHandler` | `Task\<TResponse\> Process`                           | The execute method that will be overridden by each derived class. |
+| `SingleAsyncRequestHandler` | `Task\<TResponse\> Process`                           | The execute method that each derived class overrides. |
 |                           | `Task\<Response\> Execute`                            | The method that represents the entry point of the request handler. |
 | `IRequestHandlerAsync`      | `Task\<Response\> Execute (Request request)`          | The interface for the asynchronous request handler. |
-| `IRequestTriggerAsync`      | `Task OnExecuting(Request request)`                   | The method that is invoked before the request has been processed by **IRequestHandler**. |
-| `IRequestTriggerAsync`      | `Task OnExecuted(Request request, Response response)` | The method that is invoked after the request has been processed by **IRequestHandler**. |
-| `DatabaseContext`           | `async Task<Tuple<int, PagedResult<T>>> ExecuteStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | The method that executes the stored procedure using the specified parameters. |
-| `DatabaseContext`           | `async Task<ReadOnlyCollection<T>> ExecuteNonPagedStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T : CommerceEntity, new()` | The method that executes the stored procedure using the specified parameters. The execution is non-paginated. |
+| `IRequestTriggerAsync`      | `Task OnExecuting(Request request)`                   | The method invoked before **IRequestHandler** processes the request. |
+| `IRequestTriggerAsync`      | `Task OnExecuted(Request request, Response response)` | The method invoked after **IRequestHandler** processes the request. |
+| `DatabaseContext`           | `async Task<Tuple<int, PagedResult<T>>> ExecuteStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | The method that executes the stored procedure by using the specified parameters. |
+| `DatabaseContext`           | `async Task<ReadOnlyCollection<T>> ExecuteNonPagedStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T : CommerceEntity, new()` | The method that executes the stored procedure by using the specified parameters. The execution is nonpaginated. |
 |`DatabaseContext`            | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>>> ExecuteStoredProcedureAsync<T1, T2>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new()` | The method that executes the specified stored procedure. |
 | `DatabaseContext`                          | `async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>>>> ExecuteStoredProcedureAsync<T1, T2>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new()` | The method that executes the specified stored procedure. |
 |`DatabaseContext`                        | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>>> ExecuteStoredProcedureAsync<T1, T2, T3>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new()` | The method that executes the specified stored procedure. |
@@ -57,31 +59,29 @@ The following asynchronous methods were added in the Commerce API framework.
 |`DatabaseContext`   | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>, ReadOnlyCollection<T5>, ReadOnlyCollection<T6>, ReadOnlyCollection<T7>, Tuple<ReadOnlyCollection<T8>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new()` | The method that executes the specified stored procedure. |
 | `DatabaseContext`    | `Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>, ReadOnlyCollection<T5>, ReadOnlyCollection<T6>, ReadOnlyCollection<T7>, Tuple<ReadOnlyCollection<T8>>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new()` | The method that executes the specified stored procedure. |
 | `DatabaseContext`       | `Task<ReadOnlyCollection<T>> ExecuteStoredProcedureScalarCollectionAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)`                   | Executes a query that returns a collection of single results. |
-| `DatabaseContext`       | `Task<int> ExecuteStoredProcedureNonQueryAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | The method that executes the specified stored procedure with the specified parameters. |
-| DatabaseContext       | `Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | The method that executes the stored procedure using the specified parameters and returns the return value. |
-| `DatabaseContext`      | `Task OnExecuting(Request request)`                   | Executes the stored procedure using the specified parameters and returns the return value. |
-| `DatabaseContext`      | `Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings)` | The method that executes the stored procedure using the specified parameters and returns the return value. |
+| `DatabaseContext`       | `Task<int> ExecuteStoredProcedureNonQueryAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | The method that executes the specified stored procedure by using the specified parameters. |
+| DatabaseContext       | `Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | The method that executes the stored procedure by using the specified parameters and returns the return value. |
+| `DatabaseContext`      | `Task OnExecuting(Request request)`                   | Executes the stored procedure by using the specified parameters and returns the return value. |
+| `DatabaseContext`      | `Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings)` | The method that executes the stored procedure by using the specified parameters and returns the return value. |
 | `DatabaseContext`       | `Task<PagedResult<T>> ReadEntityAsync<T>(IDatabaseQuery query) where T : CommerceEntity, new()`  | The method that reads an entity from the database. |
 | `DatabaseContext`       | `Task ExecuteNonQueryAsync(IDatabaseQuery query)`                   | The method that executes a query that has no output. |
 | `DatabaseContext`       | `Task<T> ExecuteScalarAsync<T>(IDatabaseQuery query)`                   | The method that executes a query that has no output. |
 | `DatabaseContext`       | `Task<ReadOnlyCollection<T>> ExecuteScalarCollectionAsync<T>(IDatabaseQuery query)`                   | The method that executes a query that returns a collection of single results. |
 
-Asynchronous execution is supported for these scenarios:
+The Commerce API framework supports asynchronous execution for these scenarios:
 
-+ New Commerce APIs
-
-    - Asynchronous Commerce Runtime API
+- New Commerce APIs
+    - Asynchronous Commerce runtime API
     - Asynchronous Retail server controller
-
-+ Overrides of the Commerce API handler that is running
-+ Pre-triggers and post-triggers
+- Overrides of the Commerce API handler that's running
+- Pre-triggers and post-triggers
 
 > [!NOTE]
-> We recommend that for the extension code, you use ConfigureAwait(false) when executing the request.
+> For the extension code, use `ConfigureAwait(false)` when executing the request.
 
-## Create a new asynchronous Commerce Runtime API
+## Create a new asynchronous Commerce runtime API
 
-To create a new asynchronous Commerce API, you must create three classes:
+To create a new asynchronous Commerce API, create three classes:
 
 + Create the request class by implementing the **Request** class.
 + Create the asynchronous response class by implementing the **Response** class.
@@ -118,7 +118,7 @@ To create the classes, follow these steps:
     }
     ```
 
-2. Create the response class.
+1. Create the response class.
 
     ```C#
     namespace Contoso
@@ -155,7 +155,7 @@ To create the classes, follow these steps:
     }
     ```
 
-3. Create the asynchronous handler.
+1. Create the asynchronous handler.
 
     ```C#
     using Contoso.Commerce.Runtime.AsyncSample.Messages;
@@ -252,7 +252,7 @@ namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
 
 ## Override an out-of-box request handler asynchronously
 
-To override the supported out-of-box request handler, follow this pattern.
+To override a supported out-of-box request handler, follow this pattern.
 
 For example, to override the out-of-box **GetScanResultRequestHandler** handler, override the handler, and return the response by using **Task** and **await**.
 
