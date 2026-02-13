@@ -1,6 +1,6 @@
 ---
 title: Commerce runtime (CRT) architecture and configuration
-description: This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce Runtime (CRT).
+description: This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce runtime (CRT).
 author: ShalabhjainMSFT
 ms.date: 02/13/2026
 ms.topic: overview
@@ -18,13 +18,13 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
+This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
 
-## Commerce Runtime architecture
+## Commerce runtime architecture
 
-The following diagram shows the components of the Microsoft Dynamics 365 Commerce Runtime (CRT). 
+The following diagram shows the components of the Microsoft Dynamics 365 Commerce runtime (CRT). 
 
-:::image type="content" source="./media/crt-architecture.jpg" alt-text="Diagram of Commerce Runtime components architecture." lightbox="./media/crt-architecture.jpg":::
+:::image type="content" source="./media/crt-architecture.jpg" alt-text="Diagram of Commerce runtime components architecture." lightbox="./media/crt-architecture.jpg":::
 
 ### Data access
 
@@ -42,7 +42,7 @@ A workflow layer sits on top of the services layer. A workflow is a collection o
 
 An application programming interface (API) layer sits on top of the workflow layer. You can use the API for tasks such as getting information about items, calculating prices, calculating shipping charges, and placing orders. You can extend the API to fit your business processes.
 
-## Commerce Runtime configuration
+## Commerce runtime configuration
 
 The CRT configuration file lists services as types. Add types to the CRT configuration file to control which services the CRT loads. The CRT loads services in the order they appear in the configuration file. The CRT automatically loads all the default services. However, if you add a new service above one of the default services, the new service replaces the default service.
 

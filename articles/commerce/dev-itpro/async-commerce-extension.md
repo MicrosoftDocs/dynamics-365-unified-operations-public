@@ -1,6 +1,6 @@
 ---
-title: Create asynchronous Commerce (CRT) APIs in your business logic
-description: Learn how to create Commerce Runtime (CRT) application programming interfaces (APIs) that run asynchronously in Microsoft Dynamics 365 Commerce.
+title: Create asynchronous Commerce runtime (CRT) APIs in your business logic
+description: Learn how to create Commerce runtime (CRT) application programming interfaces (APIs) that run asynchronously in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/12/2026
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.custom:
 > [!NOTE]
 > This article applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
-This article explains how to create Commerce Runtime (CRT) application programming interfaces (APIs) that run asynchronously in Microsoft Dynamics 365 Commerce.
+This article explains how to create Commerce runtime (CRT) application programming interfaces (APIs) that run asynchronously in Microsoft Dynamics 365 Commerce.
 
 The Commerce API framework supports an asynchronous programming model for extensions and out-of-box Commerce handlers.
 
@@ -71,7 +71,7 @@ The Commerce API framework includes the following asynchronous methods.
 The Commerce API framework supports asynchronous execution for these scenarios:
 
 - New Commerce APIs
-    - Asynchronous Commerce Runtime API
+    - Asynchronous Commerce runtime API
     - Asynchronous Retail server controller
 - Overrides of the Commerce API handler that's running
 - Pre-triggers and post-triggers
@@ -79,7 +79,7 @@ The Commerce API framework supports asynchronous execution for these scenarios:
 > [!NOTE]
 > For the extension code, use `ConfigureAwait(false)` when executing the request.
 
-## Create a new asynchronous Commerce Runtime API
+## Create a new asynchronous Commerce runtime API
 
 To create a new asynchronous Commerce API, create three classes:
 
