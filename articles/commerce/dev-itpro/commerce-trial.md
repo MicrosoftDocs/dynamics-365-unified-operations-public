@@ -1,11 +1,10 @@
 ---
 title: Deploy a Commerce trial (Preview) environment
-description: This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
+description: Learn how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
 author: ashishmsft
-ms.date: 09/03/2024
+ms.date: 02/13/2026
 ms.topic: how-to
-audience: IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.custom: 
@@ -18,13 +17,13 @@ ms.custom:
 
 This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
 
-By subscribing to a Dynamics 365 Commerce trial (Preview), you can automatically deploy a trial Commerce environment by completing a questionnaire that provisions Commerce headquarters and Commerce Scale Unit (CSU) and its related components, as applicable. 
+When you subscribe to a Dynamics 365 Commerce trial (Preview), you can automatically deploy a trial Commerce environment by completing a questionnaire that provisions Commerce headquarters and Commerce Scale Unit (CSU) and its related components, as applicable. 
 
 The following table outlines the details of the new trial offer.
 
 | Offer item                   | Details |
 |------------------------------|---------|
-| Offer type                   | This offer type is for administrator leads. Therefore, a tenant administrator is required in order to redeem it. |
+| Offer type                   | This offer type is for administrator leads. Therefore, a tenant administrator is required to redeem it. |
 | Offer use                    | One time per tenant |
 | Offer duration               | 30 calendar days |
 | Redemptions per tenant       | One |
@@ -33,13 +32,13 @@ The following table outlines the details of the new trial offer.
 
 ## Prerequisites
 
-The following prerequisites are required to deploy a Dynamics 365 Commerce trial (Preview) environment:
+To deploy a Dynamics 365 Commerce trial (Preview) environment, you need the following prerequisites:
 
 - You must first sign up for the Dynamics 365 Commerce trial (Preview) offer.
 - The user who deploys the Commerce trial (Preview) environment must have Azure tenant administrator rights.
 
 > [!IMPORTANT]
-> Only the tenant administrator of an organization can deploy the Commerce trial. If you aren't the tenant administrator, don't proceed until your organization is signed up and you receive your user credentials.
+> Only the tenant administrator of an organization can deploy the Commerce trial. If you're not the tenant administrator, don't proceed until your organization is signed up and you receive your user credentials.
 
 ## Sign up for the Dynamics 365 Commerce trial (Preview)
 
@@ -76,10 +75,10 @@ To provision your Commerce trial (Preview) environment, follow these steps:
 1. For **Type**, select **Trial (Subscription-based)**.
 1. Select **Next**, and then confirm and update the supporting details.
 1. Select **Enable Dynamics 365 Apps**.
-1. For **Automatically deploy these apps**, select **Commerce (Preview)**
+1. For **Automatically deploy these apps**, select **Commerce (Preview)**.
 
 > [!NOTE]
-> - Ensure that you assigned the Commerce trial license to the user account that you're using to provision the Commerce preview trial environment.
+> - Make sure you assign the Commerce trial license to the user account that you're using to provision the Commerce preview trial environment.
 > - If **Commerce (Preview)** doesn't appear right away, try again later. The system might take a while to sync and update the fact that your account has the correct licenses available.
  
 ## View environment details for your Commerce trial (Preview) 
@@ -88,9 +87,9 @@ To view environment details for your Commerce trial (Preview), follow these step
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.com/).
 1. In the upper left, select the **Environments** tab.
-1. Find your environment (for example, "Contoso Trial 101"), and confirm that the state is shown as **Ready**.
+1. Find your environment (for example, "Contoso Trial 101"), and confirm that the state shows as **Ready**.
 1. To view environment details, select your environment.
-1. Under **Resources**, select **Dynamics 365 Apps**. The status of **Dynamics 365 Commerce – Cloud Scale Unit** should be shown as **Published**.
+1. Under **Resources**, select **Dynamics 365 Apps**. The status of **Dynamics 365 Commerce – Cloud Scale Unit** should show as **Published**.
  
 ## View Cloud Scale Units for your Commerce trial (Preview) environment
 
@@ -99,7 +98,7 @@ To view the Cloud Scale Units (CSUs) that are used for your Commerce trial (Prev
 1. Go to the [Dataverse Maker Apps portal](https://make.powerapps.com/).
 1. In the upper right, select your environment.
 1. Select **Tables** \> **All**.
-1. Search for "Commerce Scale Unit", and then select the search result to view details.
+1. Search for "Commerce Scale Unit," and then select the search result to view details.
 
 > [!NOTE]
 > If the **Cloud Point of Sale Public Endpoint** and **Commerce Engine Public Endpoint** columns aren't shown, in the table details, select the missing columns to add them.
@@ -119,12 +118,12 @@ Yes. To extend your trial, follow these steps:
 
 Currently, there's no support for upgrading a trial environment.
 
-### Can I access the Commerce trial (Preview) environment via Microsoft Dynamics Lifecycle Services?
+### Can I access the Commerce trial (Preview) environment through Microsoft Dynamics Lifecycle Services?
 
-No. For this trial, deployment is handled through the Power Platform admin center.
+No. You deploy this trial through the Power Platform admin center.
 
 ### Can I deploy custom extensions to the Commerce trial (Preview) environment?
 
-No. Commerce trial (Preview) environments are intended to be used as is. Therefore, you aren't allowed to deploy any custom extensions.
+No. Use Commerce trial (Preview) environments as is. You can't deploy custom extensions.
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
