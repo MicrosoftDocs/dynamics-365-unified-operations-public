@@ -1,8 +1,8 @@
 ---
 title: Support for different dimension patterns
 description: To support different dimension patterns, a set of framework data entities can be used as data sources in other entities that involve dimensions.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

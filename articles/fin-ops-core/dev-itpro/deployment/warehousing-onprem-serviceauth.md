@@ -54,7 +54,7 @@ For a successful authentication exchange between AD&nbsp;FS and Finance + Operat
 
 ## <a name="user-azure-ad"></a>Set up mobile-device user accounts in Finance + Operations (on-premises)
 
-To enable Finance + Operations (on-premises) to use your AD&nbsp;FS application, follow these steps.
+To enable Finance + Operations (on-premises) to use your AD&nbsp;FS application, follow these steps:
 
 1. Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
 

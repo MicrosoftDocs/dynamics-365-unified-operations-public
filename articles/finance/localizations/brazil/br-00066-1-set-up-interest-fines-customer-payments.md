@@ -20,7 +20,7 @@ This article describes how to set up interest and fines on customer payments in 
 
 The following procedure uses the BRMF demo company.
 
-To set up interest and fines on customer payments, follow these steps. 
+To set up interest and fines on customer payments, follow these steps: 
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Customer posting profiles**.
 1. In the **Posting profile** field, select the link.

@@ -1,8 +1,8 @@
 ---
 title: Organizational training Power BI content
 description: Learn about the finance and operations - Organizational training Power BI content, including an overview of how to understand data models and entities.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.date: 12/19/2017
 ms.topic: article
 ms.reviewer: twheeloc

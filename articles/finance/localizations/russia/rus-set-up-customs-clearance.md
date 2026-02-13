@@ -28,7 +28,7 @@ The customs clearance process includes the following tasks:
 
 ## Set up the statistical value currency and number sequences
 
-To set up the statistical value currency and number sequences, follow these steps.
+To set up the statistical value currency and number sequences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 1. On the **General** tab, in the **Customs declaration** section, in the **Currency of statistical value** field, select a currency code for the statistical value that reflects the totals for customs payments. For example, select **USD**.
@@ -43,7 +43,7 @@ To set up the statistical value currency and number sequences, follow these step
 
 ## Set up an inventory profile and GTD number
 
-To set up an inventory profile and GTD number, follow these steps.
+To set up an inventory profile and GTD number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Setup** \> **Dimension and variant groups** \> **Tracking dimension groups**.
 1. Create and set up a customs declaration number. For more information, see [Customs declaration numbers](rus-custom-declaration-number.md#set-up-customs-declaration-numbers-in-tracking-dimensions). 
@@ -58,7 +58,7 @@ To set up an inventory profile and GTD number, follow these steps.
 
 ## Set up ledger posting groups
 
-To set up ledger posting groups, follow these steps.
+To set up ledger posting groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
 1. Create a ledger posting group for each of the following types of customs duties and fees:
@@ -92,7 +92,7 @@ To set up ledger posting groups, follow these steps.
 
 To calculate customs payments for the **Weight** or **Volume** calculation method, you must set up fixed units.
 
-To set up a fixed unit, follow these steps.
+To set up a fixed unit, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. Create a unit. For more information, see [Manage units of measure](../../../supply-chain/pim/tasks/manage-unit-measure.md).
@@ -106,7 +106,7 @@ To set up a fixed unit, follow these steps.
 
 You must set up a sales tax code that can be used to automatically calculate customs payments.
 
-To set up sales tax codes, follow these steps.
+To set up sales tax codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Create and set up a sales tax code. For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
@@ -149,7 +149,7 @@ To set up sales tax codes, follow these steps.
 
 ## Set up an inventory profile
 
-To set up an inventory profile, follow these steps.
+To set up an inventory profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory profiles**.
 1. Create and set up an inventory profile.
@@ -162,7 +162,7 @@ To set up an inventory profile, follow these steps.
 
 You must set up the terms of delivery for the customs clearance of imported products. These terms of delivery determine the time of the transfer of ownership and the overhead expenses.
 
-To set up the terms of delivery for customs clearance of imported products, follow these steps.
+To set up the terms of delivery for customs clearance of imported products, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Terms of delivery**.
 
@@ -197,7 +197,7 @@ If the transfer of ownership occurred before the products crossed the customs bo
 
 The cost adjustment is made if the **Include to the cost** option is set to **Yes** on the customs journal header or in the KTS journal. Otherwise, the amount of fees and duties will be charged as expenses to the account that is set up in the posting group of the corresponding tax code.
 
-To set up a charges code for customs payments, follow these steps.
+To set up a charges code for customs payments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Charges** **setup** \> **Charges code**.
 1. Create and set up a charges code. For more information, see [Create charges codes](/dynamicsax-2012/appuser-itpro/create-charges-codes).
@@ -220,7 +220,7 @@ To set up a charges code for customs payments, follow these steps.
 
 You must relate the terms of delivery to overhead expenses that increase the transaction amount (the cost of imported products).
 
-To assign a charges code to terms of delivery, follow these steps.
+To assign a charges code to terms of delivery, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** > **Setup** > **Custom payments** > **Misc. charges relation with terms of delivery**.
 1. On the Action Pane, select **New**.
@@ -232,7 +232,7 @@ To assign a charges code to terms of delivery, follow these steps.
 
 ## Set up a product
 
-To set up a product, follow these steps.
+To set up a product, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**.
 1. Create and set up a product if necessary.
@@ -249,7 +249,7 @@ To set up a product, follow these steps.
 
 You can set up a vendor account as a customs authority or a customs broker. You can also set up a customs office code and a posting profile that is used to calculate customs payments. This information is included in customs declarations that are submitted to the customs authority. The codes for the customs offices are defined in the Customs Code of the Russian Federation.
 
-To set up a customs counteragent , follow these steps.
+To set up a customs counteragent , follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Custom payments** \> **Customs counteragents**.
 1. On the Action Pane, select **New**. 
@@ -281,7 +281,7 @@ The following buttons are available on the Action Pane:
 
 ## Set up TN VED codes
 
-To set up TN VED codes, follow these steps.
+To set up TN VED codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Custom payments** \> **TN VED codes**.
 1. On the Action Pane, select **New**.
@@ -302,7 +302,7 @@ The following buttons are available on the Action Pane:
 
 To make customs declarations reflect the product details when a TN VED code is used, assign a product to a TN VED code.
 
-To set up an item relation with a TN VED code, follow these steps.
+To set up an item relation with a TN VED code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Custom payments** \> **Item relation with TN VED**.
 1. On the Action Pane, select **New**.
@@ -322,7 +322,7 @@ To set up an item relation with a TN VED code, follow these steps.
 
 You must set up indicative prices that are determined by customs authorities for customs clearance of products in addition to the transaction (invoice) value.
 
-To set up indicative prices, follow these steps.
+To set up indicative prices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Custom payments** \> **Indicative prices of TN VED**.
 1. On the Action Pane, select **New**.
@@ -349,7 +349,7 @@ To set up indicative prices, follow these steps.
 
 ## Set up a customs payment relation with a TN VED code
 
-To set up a customs payment relation with a TN VED code, follow these steps.
+To set up a customs payment relation with a TN VED code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Custom payments** \> **TN VED code relation with customs payment**.
 1. On the Action Pane, select **New**.
@@ -372,7 +372,7 @@ To set up a customs payment relation with a TN VED code, follow these steps.
 
 Before you create a customs journal for the import operation, you must set up a vendor as a foreign counteragent so that they can transfer products that must be imported.
 
-To set up a vendor as a foreign counteragent, follow these steps.
+To set up a vendor as a foreign counteragent, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Create and set up a vendor account if necessary.
@@ -386,7 +386,7 @@ To set up a vendor as a foreign counteragent, follow these steps.
 
 Before you create a customs journal for the export operation, you must set up a customer as a foreign counteragent so that they can receive products that must be exported.
 
-To set up a customer as a foreign counteragent, follow these steps.
+To set up a customer as a foreign counteragent, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Create and set up a customer account if necessary.
@@ -400,7 +400,7 @@ To set up a customer as a foreign counteragent, follow these steps.
 
 For import deliveries of products, the transfer of ownership might occur before the customs clearance process is completed.
 
-To automatically move a product from the warehouse for products in transit to a customs warehouse, follow these steps.
+To automatically move a product from the warehouse for products in transit to a customs warehouse, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
 1. Create and set up a warehouse if necessary.

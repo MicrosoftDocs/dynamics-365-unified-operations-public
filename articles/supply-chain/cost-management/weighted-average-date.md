@@ -1,8 +1,8 @@
 ---
 title: Weighted average date with Include physical value and marking
 description: Weighted average date is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of received items.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ms.topic: article

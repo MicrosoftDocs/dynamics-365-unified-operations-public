@@ -16,8 +16,6 @@ ms.search.form:
 
 Wave processing can be time consuming, and most of the processing time is spent in the allocation step and in the work creation step.
 
-It is now possible to run each of these steps in parallel, which can improve the performance of the wave processing, and allow for a larger throughput of waves in the same warehouse. This article explains how to set up the wave allocation method to run in parallel. For more information about how to set up work creation to run in parallel, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
-
 Previously it was only possible to allocate one wave at a warehouse at a time. This constraint has been removed and replaced by a new constraint that only locks the item and dimensions that are above location in the reservation hierarchy. Dimensions above the location always include product dimensions. For example, if an item is configured using *Color*, then variants for *Red*, *Blue*, and *Yellow* could each be processed in parallel.
 
 This means that if the same item with the same dimensions above the location is being allocated by one wave, other waves will have to wait to acquire a lock on the same item and dimensions. If the lock can't be acquired in a timely manner, an error will occur and the wave processing will fail.

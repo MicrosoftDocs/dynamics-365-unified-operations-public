@@ -1,5 +1,5 @@
 ---
-title: Redirect category and product pages to canonical URLs (preview)
+title: Redirect category and product pages to canonical URLs
 description: Learn how to redirect category and product pages to canonical URLs by extending modules using the Microsoft Dynamics 365 Commerce online SDK.
 author: krishnabh
 ms.date: 07/30/2025
@@ -12,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Redirect category and product pages to canonical URLs (preview)
+# Redirect category and product pages to canonical URLs
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to redirect category and product pages to canonical URLs by extending modules using the Microsoft Dynamics 365 Commerce online SDK.
 

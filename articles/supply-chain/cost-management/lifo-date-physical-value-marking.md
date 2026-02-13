@@ -1,8 +1,8 @@
 ---
 title: LIFO date with physical value and marking
 description: Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 ms.topic: how-to

@@ -1,12 +1,12 @@
 ---
-title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
-description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
+title: Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
+description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises),  Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management non-managed environments.
 author: faix
 ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 01/28/2025
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-06-30
@@ -14,13 +14,15 @@ ms.dyn365.ops.version: Platform update 44
 ms.service: dynamics-365-op
 ---
 
-# Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
+# Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software
 
 [!include [banner](../includes/banner.md)]
 
-This article explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 Finance + Operations (on-premises).
+This article explains which versions of dependent software are compatible with different versions of Microsoft Dynamics 365 Finance + Operations (on-premises). These software requirements (where applicable) are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 
-## Microsoft Windows Server
+## All non-Microsoft managed environments
+
+### Microsoft Windows Server
 
 Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter are supported.
 
@@ -32,11 +34,10 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 > [!NOTE]
 > Only en-US operating system installations are supported.
-> These software requirements are relevant to all non-Microsoft managed environments, including development boxes, cloud-hosted environments, and similar setups.
 
-## Microsoft SQL Server
+### Microsoft SQL Server
 
-### Software
+#### Software
 Both Microsoft SQL Server Standard Edition and Enterprise Edition are supported.
 
 This section covers the following SQL Server components:
@@ -45,16 +46,16 @@ This section covers the following SQL Server components:
 - SQL Server Reporting Services (SSRS)
 - SQL Server Integration Services (SSIS)
 
-| Version                       | Supported since  | End of life   |
-|-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2022 (CU12)     | 10.0.39          | Not available |
-| Microsoft SQL Server 2019     | 10.0.21          | 10.0.44       |
-| Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
+| Version                          | Supported since  | End of life   |
+|----------------------------------|------------------|---------------|
+| Microsoft SQL Server 2022 (CU12) | 10.0.39          | Not available |
+| Microsoft SQL Server 2019        | 10.0.21          | 10.0.44       |
+| Microsoft SQL Server 2016 SP2    | 10.0.9           | 10.0.28       |
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
 
-### Database Collation
+#### Database Collation
 
 Finance + Operations (on-premises) supports a limited set of collations. The following table lists the supported collations.
 
@@ -66,14 +67,42 @@ Finance + Operations (on-premises) supports a limited set of collations. The fol
 | Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and later |
 | SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
 
-### High Availability 
+#### High Availability 
 
 You should always utilize SQL Server in either a cluster or mirroring setup for production environments. 
 
 > [!IMPORTANT]
-> Database failover is only supported in an active or passive configuration. Read-only replicas aren't supported. 
+> Database failover is only supported in an active or passive configuration. Read-only replicas aren't supported.
 
-## Active Directory Federation Services (AD FS)
+### Minimum Microsoft .NET Framework runtime
+
+The requirements for the .NET Framework are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
+
+| Minimum version                        | Required since |
+|----------------------------------------|----------------|
+| Microsoft .NET Framework version 4.8.0 | 10.0.42        |
+| Microsoft .NET Framework version 4.7.2 | 10.0.11        |
+
+### Minimum Visual C++ Redistributable runtime
+
+The requirements for the Visual C++ Redistributable are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
+
+>[!NOTE]
+>The Visual C++ Redistributable 2015-2022 is a unified package that replaces the older Visual C++ Redistributable 2015-2019 and Visual C++ Redistributable 2017 packages.
+
+| Minimum version                                                 | Required since   | Not required after |
+|-----------------------------------------------------------------|------------------|--------------------|
+| Microsoft Visual C++ Redistributable 2015-2022 (v14.44.35208.0) | 10.0.45          |                    |
+| Microsoft Visual C++ Redistributable 2015-2022 (v14.34.31945.0) | 10.0.36          | 10.0.44            |
+| Microsoft Visual C++ Redistributable 2015-2022 (v14.32.31326.0) | 10.0.31          | 10.0.35            |
+| Microsoft Visual C++ Redistributable 2015-2019 (v14.25.28508.3) | 10.0.17          | 10.0.30            |
+| Microsoft Visual C++ Redistributable 2017                       | 10.0.0           | 10.0.16            |
+| Microsoft Visual C++ Redistributable 2013                       | Original release |                    |
+
+
+## On-premises environments only
+
+### Active Directory Federation Services (AD FS)
 
 Active Directory Federation Services (AD FS) is a server role that can be installed on a machine running Windows Server. 
 
@@ -98,15 +127,6 @@ Your Service Fabric cluster should always be on a supported version according to
 | Service Fabric runtime 10.0 | 10.0.41        |
 | Service Fabric runtime 8.2  | 10.0.30        |
 | Service Fabric runtime 8.0  | 10.0.24        |
-
-## Minimum Microsoft .NET Framework runtime
-
-The requirements for the .NET Framework are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
-
-| Minimum version                        | Required since |
-|----------------------------------------|----------------|
-| Microsoft .NET Framework version 4.8.0 | 10.0.42        |
-| Microsoft .NET Framework version 4.7.2 | 10.0.11        |
 
 ## Microsoft Office Server
 

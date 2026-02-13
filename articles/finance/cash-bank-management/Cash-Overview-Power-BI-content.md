@@ -1,8 +1,8 @@
 ---
 title: Cash overview Power BI content
 description: Learn about the Cash overview Power BI content, including outlines on how to access the reports that are included in the content and entities used to build the content.
-author: ericwangchen
-ms.author: wangchen
+author: music727
+ms.author: mibeinar
 ms.topic: overview
 ms.date: 08/24/2023
 ms.reviewer: twheeloc

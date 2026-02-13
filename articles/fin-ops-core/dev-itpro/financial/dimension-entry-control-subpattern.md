@@ -1,8 +1,8 @@
 ---
 title: Dimension Entry Control subpattern
 description: Learn about the Dimension Entry Control subpattern, including outlines on usage, the model's high-level structure, UX guidelines, and examples.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template

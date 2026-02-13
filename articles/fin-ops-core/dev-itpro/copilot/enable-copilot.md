@@ -16,9 +16,9 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Enable Copilot capabilities in finance and operations apps
+
+[!include [banner](../includes/banner.md)]
 
 This article describes how Microsoft Copilot capabilities in finance and operations apps are constructed, how to enable or disable these capabilities, and how to troubleshoot them.
 
@@ -73,7 +73,7 @@ Usually, all the required apps are already installed in your environment. Howeve
 >
 > Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
 
-To check for and install the required apps, follow these steps.
+To check for and install the required apps, follow these steps:
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your environment to open its detailed view.
@@ -98,7 +98,7 @@ If Bing Search is disabled, or if cross-region data movement is required but is 
 
 By default, the tenant-level setting that enables the deployment of Copilot bots in Dataverse environments is enabled. However, a tenant admin can disable this setting. If the setting is disabled, you can't use Copilot features in finance and operations apps.
 
-To check and enable the setting that enables Power Platform to publish copilots that have AI features, follow these steps.
+To check and enable the setting that enables Power Platform to publish copilots that have AI features, follow these steps:
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Settings**.
@@ -130,3 +130,4 @@ As was previously mentioned, most Copilot features in finance and operations app
 ## Responsible AI FAQs
 
 For information about the capabilities and limitations of AI-powered Copilot features in finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
+

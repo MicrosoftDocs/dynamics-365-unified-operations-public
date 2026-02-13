@@ -1,8 +1,8 @@
 ---
 title: Compare active, estimated, and realized costs on a production order
 description: Learn how to view reasons for high production variance for a production order, including an example step-by-step process. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, CostSelectPeriodDialogForm, CostCalculationPeriodTopVariancesListFormPart, ProdTable, CostCalculationCompareDialog
 ms.topic: how-to

@@ -1,5 +1,5 @@
 ﻿---
-title: Enter quality test results quickly (preview)
+title: Enter quality test results quickly
 description: Learn how to use the Quick results entry page, which consolidates data from all tests into a single view to streamline the entry process.
 author: johanhoffmann
 ms.author: johanho
@@ -11,25 +11,22 @@ ms.custom:
   - bap-template
 ---
 
-# Enter quality test results quickly (preview)
+# Enter quality test results quickly
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+[!include [banner](../../includes/banner.md)]
 
 The **Quick results entry** page makes the process of entering quality order test results faster and more flexible than the **Quality order line results** page. The **Quick results entry** page consolidates data from all tests into a single view to streamline the result entry process. Quantities are automatically populated based on the quality order quantities. Other details are also populated, such as minimum, maximum, and target values.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
 
 ## Enter quality test results
 
-To enter quality test results by using the **Quick results entry** page, follow these steps.
+To enter quality test results by using the **Quick results entry** page, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Quality management** \> **Quality orders**.
 1. Select a quality order, and then, on the Action Pane, select **Quick results entry**.

@@ -37,7 +37,7 @@ This article provides information about the two methods that tax registers use t
 
 ## Turn on the feature
 
-To turn on the feature, follow these steps.
+To turn on the feature, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration** \> **Workspaces** \> **Feature management**.
 1. Find and select the **Tax differences registers by balance method** feature.
@@ -57,7 +57,7 @@ Before you create a journal voucher for tax differences in the system, you must 
 
 ### <a name="parameters">Set up general ledger parameters</a>
 
-To set up general ledger parameters, follow these steps.
+To set up general ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**.
 1. On the **Profit tax** tab, in the **Compression** field, specify the level of detail that transactions for tax differences should have:
@@ -69,7 +69,7 @@ To set up general ledger parameters, follow these steps.
 
 ### <a name="method">Set up a journal for ledger posting of tax differences that are calculated by using the balance method</a>
 
-To set up a journal for ledger posting of tax differences that are calculated by using the balance method, follow these steps.
+To set up a journal for ledger posting of tax differences that are calculated by using the balance method, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Journal setup** \> **Journal names**.
 1. On the Action Pane, select **New**.
@@ -82,7 +82,7 @@ To set up a journal for ledger posting of tax differences that are calculated by
 
 ### <a name="taxes">Set up ledger accounts for deferred taxes</a>
 
-To set up ledger accounts for deferred taxes, follow these steps.
+To set up ledger accounts for deferred taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups**.
 1. On the Action Pane, select **New**.
@@ -118,7 +118,7 @@ To set up ledger accounts for deferred taxes, follow these steps.
 
 ### <a name="profit">Set up a sales tax code for profit tax</a>
 
-To set up a sales tax code for profit tax, follow these steps.
+To set up a sales tax code for profit tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Create and set up a sales tax code for profit tax. For more information, see [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-tax-codes.md).
@@ -128,7 +128,7 @@ To set up a sales tax code for profit tax, follow these steps.
 
 ### <a name="deferrals">Set up an expense code for temporary tax differences that are based on deferrals</a>
 
-To set up an expense code for temporary tax differences that are based on deferrals, follow these steps.
+To set up an expense code for temporary tax differences that are based on deferrals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Expense codes**.
 1. Create and set up expense codes that are used for deferrals postings or that form constant tax differences. For more information, see [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
@@ -143,7 +143,7 @@ To set up an expense code for temporary tax differences that are based on deferr
 
 Before you complete this procedure, you must create expense codes. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 
-To set up tax registers, follow these steps.
+To set up tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 1. Select the tax register, and then, on the Action Pane, select **Expense codes**.
@@ -155,7 +155,7 @@ To set up tax registers, follow these steps.
 
 Create the registers of temporary and constant tax differences for one of the calculation methods, as described in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
-To set up the **Calculation of temporary tax differences by balance method** and **Calculation of temporary tax differences** tax registers, follow these steps.
+To set up the **Calculation of temporary tax differences by balance method** and **Calculation of temporary tax differences** tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 1. On the **Parameters** FastTab, set up the parameters that should be used to generate the register. If no value is specified for a parameter, the register will be generated for all values of that parameter. To specify multiple values for a parameter, separate them with commas:
@@ -170,7 +170,7 @@ To set up the **Calculation of temporary tax differences by balance method** and
 
     ![Setting parameters for generation of the Calculation of temporary tax differences by balance method and Calculation of temporary tax differences tax registers on the Tax registers page.](../media/ru_tax_differ4.png)
 
-To generate the **Calculation of constant tax differences** tax register, follow these steps.
+To generate the **Calculation of constant tax differences** tax register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 1. On the **Parameters** FastTab, on the line for the **Tax code for debt reserves** parameter, in the **Value** column, select the sales tax code for profit tax. The rate value of the selected sales tax code will be used to calculate the amount of the constant tax asset or constant tax liability.
@@ -289,7 +289,7 @@ For each line of the **Calculation of constant tax differences** tax register, t
 
 ## Create a journal voucher for tax differences
 
-To create a journal voucher for tax differences, follow these steps.
+To create a journal voucher for tax differences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. Select the line for the period where the **Calculation of temporary tax differences by balance method** and **Calculation of constant tax differences by balance method** tax registers are calculated and approved.
@@ -307,7 +307,7 @@ To create a journal voucher for tax differences, follow these steps.
 
 ### Create a reversing journal voucher for tax differences
 
-To create a reversing journal voucher for tax differences, follow these steps.
+To create a reversing journal voucher for tax differences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. Select the line for the period where the **Calculation of temporary tax differences by balance method** and **Calculation of constant tax differences by balance method** tax registers are calculated and approved.

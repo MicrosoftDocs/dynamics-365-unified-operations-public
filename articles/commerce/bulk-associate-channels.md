@@ -1,11 +1,10 @@
 ---
 title: Bulk associate channels with e-commerce sites
-description: This article describes feature functionality that lets site authors bulk associate multiple channels with Microsoft Dynamics 365 Commerce e-commerce sites.
+description: Learn about Microsoft Dynamics 365 Commerce feature functionality that lets site authors bulk associate multiple channels with their e-commerce sites.
 author: ashishmsft
-ms.date: 01/23/2024
+ms.date: 01/15/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -15,7 +14,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This article describes feature functionality that lets site authors use a wizard experience to bulk associate multiple channels with Microsoft Dynamics 365 Commerce e-commerce sites.
+This article describes a Microsoft Dynamics 365 Commerce feature that lets site authors use a wizard experience to bulk associate multiple channels with their e-commerce sites.
 
 The bulk association feature simplifies the process of creating and managing multiple channels for a site. It provides options for customizing the domain, path, authentication profile, and geo redirection settings for each channel.
 
@@ -27,14 +26,14 @@ The main benefit of this feature is that it helps save time and effort when site
 
 Here are some common uses of the bulk association feature:
 
-- A site author wants to bulk associate multiple channels with a site. In this way, they can more efficiently create and manage multiple site channels for that site.
-- A site author wants to use an option to automatically enter default values for the domain, path, and authentication profile configurations for each channel. In this way, they don't have to manually provide those values for each combination of a channel and a locale.
-- A site author wants to enable geo redirection for each channel. In this way, users are directed to the appropriate channel, based on their location.
-- A site author wants to override the default settings for each channel. In this way, they can customize the channel properties according to requirements.
+- A site author wants to bulk associate multiple channels with a site. The site author uses this feature to efficiently create and manage multiple site channels for that site.
+- A site author wants to use an option to automatically enter default values for the domain, path, and authentication profile configurations for each channel. The site author uses this feature to avoid manually providing those values for each combination of a channel and a locale.
+- A site author wants to enable geo redirection for each channel. The site author uses this feature to redirect users to appropriate channels based on their location.
+- A site author wants to override the default settings for each channel. The site author uses this feature to customize the channel properties according to requirements.
 
 ## Best practices for the bulk association feature
 
-We recommend that you follow these best practices when you use the bulk association feature:
+Follow these best practices when you use the bulk association feature:
 
 - Enable cross-channel sharing. This capability lets you reuse and share content among multiple channels of a site. It's useful when the site channels have a compatible base language, or when they have numerous content items in common. [Learn more.](./cross-channel-sharing.md)
 - Carefully review the default and optional settings for each channel, to ensure that they match your expectations and requirements. You can override the settings for individual channels as needed.
@@ -45,7 +44,7 @@ We recommend that you follow these best practices when you use the bulk associat
 > [!NOTE]
 > The bulk association feature is available on a preview basis. To access the feature, append the query string parameter `&set=enableBulkChannels` to your site builder URL.
 
-To bulk associate multiple channels in site builder, follow these steps.
+To bulk associate multiple channels in site builder, follow these steps:
 
 1. In the left navigation pane for your site, select **Channels**.
 1. Select **Add channel**.
@@ -55,7 +54,7 @@ To bulk associate multiple channels in site builder, follow these steps.
 1. Select **Next**.
 1. In the **Add channels** step, search for and select the channels to associate with the site. The list of channels shows **Channel name** and **Operating Unit Number (OUN)** values for each channel. Select channels one by one, or select all channels from the header.
 1. Select **Next**.
-1. In the **Locales** step, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries or regions is assigned to each locale. Optionally select **Edit** to add or remove locales, countries, or regions from each channel as needed. Then select **Add locales**.
+1. In the **Locales** step, a list shows all the locales that are associated with each channel by default. If you previously enabled geo redirection, a list of countries/regions is assigned to each locale. Optionally select **Edit** to add or remove locales, or countries/regions from each channel as needed. Then select **Add locales**.
 1. Select **Next**.
 1. In the **URL paths** step, you can view the default URLs for each channel. You can override the URL paths, domain, or authentication profile for each channel as needed. In addition, in the **Set default application channel** field, you can select which channel is the default application channel when site pages are authored in site builder.
 1. Select **Next**.

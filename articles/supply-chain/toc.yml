@@ -7,21 +7,21 @@
     - name: Welcome to Dynamics 365 Supply Chain Management
       href: supply-chain-management-welcome.md
     - name: What's new or changed
-      items: 
+      items:
       - name: What's new or changed in finance and operations apps
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/supply-chain
       - name: What's new or changed in Supply Chain Management
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.47 (March 2026)
+          href: get-started/whats-new-scm-10-0-47.md
+        - name: Supply Chain Management 10.0.46 (December 2025)
+          href: get-started/whats-new-scm-10-0-46.md
         - name: Supply Chain Management 10.0.45 (September 2025)
-          href: get-started/whats-new-scm-10-0-45.md         
+          href: get-started/whats-new-scm-10-0-45.md
         - name: Supply Chain Management 10.0.44 (June 2025)
-          href: get-started/whats-new-scm-10-0-44.md         
-        - name: Supply Chain Management 10.0.43 (March 2025)
-          href: get-started/whats-new-scm-10-0-43.md         
-        - name: Supply Chain Management 10.0.42 (December 2024)
-          href: get-started/whats-new-scm-10-0-42.md
+          href: get-started/whats-new-scm-10-0-44.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -42,7 +42,7 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/supply-chain
       - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?context=/dynamics365/context/supply-chain
-      - name: One Version service updates 
+      - name: One Version service updates
         items:
         - name: One Version service updates overview
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/supply-chain
@@ -81,7 +81,7 @@
         - name: Delivering ISV solutions using One Version
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/supply-chain
         - name: Create and automate user acceptance tests
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/supply-chain   
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/supply-chain
       - name: Deploy a demo environment
         href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?context=/dynamics365/context/supply-chain
       - name: Deployment considerations
@@ -107,7 +107,7 @@
         - name: Connect the Help system
           href: ../fin-ops-core/dev-itpro/get-started/help-connect.md?context=/dynamics365/context/supply-chain
         - name: Custom help overview
-          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/supply-chain    
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/supply-chain
         - name: View and export field descriptions
           href: ../fin-ops-core/dev-itpro/get-started/view-export-field-descriptions.md?context=/dynamics365/context/supply-chain
         - name: Task Recorder
@@ -156,7 +156,7 @@
           href: ../fin-ops-core/dev-itpro/get-started/grid-capabilities.md?context=/dynamics365/context/supply-chain
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?context=/dynamics365/context/supply-chain
-        - name: Embed canvas apps from Power Apps 
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/dev-itpro/get-started/embed-power-apps.md?context=/dynamics365/context/supply-chain
         - name: Embed third-party apps
           href: ../fin-ops-core/dev-itpro/get-started/embed-website.md?context=/dynamics365/context/supply-chain
@@ -179,7 +179,7 @@
         - name: Onboard an implementation project
           href: ../fin-ops-core/dev-itpro/organization-administration/onboard.md?context=/dynamics365/context/supply-chain
         - name: Environment planning
-          href: ../fin-ops-core/dev-itpro/organization-administration/environment-planning.md?context=/dynamics365/context/supply-chain   
+          href: ../fin-ops-core/dev-itpro/organization-administration/environment-planning.md?context=/dynamics365/context/supply-chain
         - name: Prepare for go-live
           href: ../fin-ops-core/dev-itpro/organization-administration/prepare-go-live.md?context=/dynamics365/context/supply-chain
         - name: Go-live FAQ
@@ -187,15 +187,15 @@
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/supply-chain
         - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
-          href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/supply-chain    
+          href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/supply-chain
         - name: Move environments between data centers
-          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/supply-chain      
+          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/supply-chain
         - name: Move licenses between agreement types
-          href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/supply-chain 
+          href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/supply-chain
         - name: Move LCS implementation projects to different Microsoft Entra tenants
-          href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/supply-chain 
+          href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/supply-chain
         - name: Move LCS implementation projects from on-premises to cloud
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/supply-chain 
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/supply-chain
         - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
@@ -225,13 +225,13 @@
           - name: Create a Dataverse solution using upload into repository
             href: ../finance/localizations/global/workspace/gsw-upload-into-repository.md?context=/dynamics365/context/supply-chain
         - name: Electronic Invoicing
-          items: 
+          items:
           - name: Electronic Invoicing overview
             href: ../finance/localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
           - name: Electronic Invoicing administration and integration components
             href: ../finance/localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
           - name: Set up Electronic Invoicing
-            items: 
+            items:
             - name: Setting up Electronic Invoicing
               href: ../finance/localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing parameters
@@ -282,54 +282,54 @@
               href: ../finance/localizations/global/e-invoicing-isv-connector.md?context=/dynamics365/context/supply-chain
             - name: Work with Electronic invoicing
               items:
-                - name: Submit electronic documents
-                  href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
-                - name: Work with the Electronic documents submission log
-                  href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
-                - name: Receive electronic documents
-                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain                
+              - name: Submit electronic documents
+                href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
+              - name: Work with the Electronic documents submission log
+                href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
+              - name: Receive electronic documents
+                href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
           - name: Country/region-specific scenarios
             items:
-              - name: Electronic invoicing coverage
-                href: ../finance/localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/supply-chain
-              - name: Availability of Electronic Invoicing features
-                href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
-              - name: Australia and New Zealand
-                href: ../finance/localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/supply-chain
-              - name: Belgium
-                href: ../finance/localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/supply-chain
-              - name: Chile
-                items:
-                  - name: Get started with Electronic invoicing for Chile
-                    href: ../finance/localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/supply-chain
-                  - name: Vendor electronic invoice import in Chile
-                    href: ../finance/localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
-              - name: Costa Rica
-                href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                        
-              - name: Denmark
-                href: ../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
-              - name: Egypt
-                href: ../finance/localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
-              - name: France
-                href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain                        
-              - name: Indonesia
-                href: ../finance/localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/supply-chain
-              - name: Italy
-                href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
-              - name: Malaysia
-                href: ../finance/localizations/malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/supply-chain
-              - name: Panama
-                href: ../finance/localizations/iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/supply-chain                           
-              - name: Poland (preview)
-                href: ../finance/localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/supply-chain
-              - name: Saudi Arabia
-                items:
-                  - name: Get started with Electronic invoicing for Saudi Arabia
-                    href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
-                  - name: Onboarding for Electronic invoicing in Saudi Arabia
-                    href: ../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/supply-chain
-                  - name: Simplified electronic invoices in Commerce for Saudi Arabia
-                    href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
+            - name: Electronic invoicing coverage
+              href: ../finance/localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/supply-chain
+            - name: Availability of Electronic Invoicing features
+              href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
+            - name: Australia and New Zealand
+              href: ../finance/localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/supply-chain
+            - name: Belgium
+              href: ../finance/localizations/belgium/emea-bel-e-invoices.md?context=/dynamics365/context/supply-chain
+            - name: Chile
+              items:
+              - name: Get started with Electronic invoicing for Chile
+                href: ../finance/localizations/iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/supply-chain
+              - name: Vendor electronic invoice import in Chile
+                href: ../finance/localizations/iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/supply-chain
+            - name: Costa Rica
+              href: ../finance/localizations/iberoamerica/ltm-costa-rica-ei-connect-configuration.md?context=/dynamics365/context/supply-chain
+            - name: Denmark
+              href: ../finance/localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/supply-chain
+            - name: Egypt
+              href: ../finance/localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+            - name: France
+              href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
+            - name: Indonesia
+              href: ../finance/localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/supply-chain
+            - name: Italy
+              href: ../finance/localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+            - name: Malaysia
+              href: ../finance/localizations/malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/supply-chain
+            - name: Panama
+              href: ../finance/localizations/iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/supply-chain
+            - name: Poland (preview)
+              href: ../finance/localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/supply-chain
+            - name: Saudi Arabia
+              items:
+              - name: Get started with Electronic invoicing for Saudi Arabia
+                href: ../finance/localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+              - name: Onboarding for Electronic invoicing in Saudi Arabia
+                href: ../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/supply-chain
+              - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
           - name: Electronic Invoicing FAQ
             href: ../finance/localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
@@ -351,15 +351,15 @@
       - name: Regulatory updates
         href: ../finance/localizations/global/regulatory-updates.md?context=/dynamics365/context/supply-chain
       - name: India
-        items: 
+        items:
         - name: Stock transfer orders
           href: ../finance/localizations/india/apac-ind-stock-transfer.md?context=/dynamics365/context/supply-chain
       - name: Russia
-        items: 
+        items:
         - name: Russia overview
           href: ../finance/localizations/russia/russia.md?context=/dynamics365/context/supply-chain
         - name: Inventory
-          items: 
+          items:
           - name: Goods in transit from vendor
             href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Approval management mobile app
@@ -380,7 +380,7 @@
         - name: Functional locations and assets
           href: asset-management/overview/functional-locations-and-objects.md
         - name: Assets and work orders
-          href: asset-management/overview/objects-and-work-orders.md     
+          href: asset-management/overview/objects-and-work-orders.md
       - name: Setup for functional locations
         items:
         - name: Functional location lifecycle states
@@ -388,7 +388,7 @@
         - name: Maintenance attribute types
           href: asset-management/setup-for-functional-locations/specification-types.md
         - name: Functional location types
-          href: asset-management/setup-for-functional-locations/functional-location-types.md  
+          href: asset-management/setup-for-functional-locations/functional-location-types.md
       - name: Functional locations
         items:
         - name: Introduction to functional locations
@@ -422,7 +422,7 @@
         - name: Maintenance workers and worker groups
           href: asset-management/setup-for-objects/workers-and-worker-groups.md
       - name: Assets
-        items: 
+        items:
         - name: Introduction to assets
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
@@ -520,7 +520,7 @@
       - name: Integrate asset management with fixed assets
         href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
-        items: 
+        items:
         - name: Preventive maintenance overview
           href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
         - name: Maintenance plans
@@ -537,6 +537,8 @@
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
         - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Manage test instrument calibration with Asset Management (preview)
+          href: asset-management/preventive-and-reactive-maintenance/asset-management-test-instrument-calibration.md
       - name: Capacity planning
         items:
         - name: Calculate capacity load
@@ -544,7 +546,7 @@
         - name: Calculate item forecast
           href: asset-management/capacity-planning/calculate-item-forecast.md
       - name: Work order scheduling
-        items: 
+        items:
         - name: Maintenance worker calendar and scheduling
           href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
         - name: Preferred maintenance workers
@@ -560,13 +562,13 @@
         - name: Calculate capacity load on scheduled work orders
           href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
       - name: Consumption
-        items: 
+        items:
         - name: Register consumption
           href: asset-management/consumption/register-consumption.md
         - name: Create consumption reports
           href: asset-management/consumption/create-consumption-reports.md
       - name: Warranty
-        items: 
+        items:
         - name: Warranty agreement
           href: asset-management/warranty/warranty-agreement.md
         - name: Warranty on assets and asset types
@@ -578,7 +580,7 @@
         - name: Update maintenance budgets
           href: asset-management/maintenance-budgets/update-maintenance-budget.md
       - name: Controlling and reporting
-        items: 
+        items:
         - name: Cost and date control
           href: asset-management/controlling-and-reporting/cost-and-date-control.md
         - name: Work hour control
@@ -594,7 +596,7 @@
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
       - name: The Asset management mobile app
-        items: 
+        items:
         - name: Asset Management mobile app overview
           href: asset-management/asset-management-mobile-app/asset-management-mobile-app-overview.md
         - name: Onboard the Asset Management mobile app
@@ -641,7 +643,7 @@
         href: ../finance/cost-accounting/tasks/create-cost-objects.md?context=/dynamics365/context/supply-chain
       - name: Map cost element dimension members to a common set of dimension members
         href: ../finance/cost-accounting/map-cost-elements-dimension-members.md?context=/dynamics365/context/supply-chain
-      - name: Map a cost element dimension  
+      - name: Map a cost element dimension
         href: ../finance/cost-accounting/tasks/map-cost-element-dimension.md?context=/dynamics365/context/supply-chain
       - name: Dimension hierarchy
         href: ../finance/cost-accounting/dimension-hierarchy.md?context=/dynamics365/context/supply-chain
@@ -776,7 +778,7 @@
         - name: View cost entries for a cost object
           href: cost-management/tasks/view-cost-entries-cost-object.md
         - name: Cost groups
-          href: cost-management/cost-groups.md   
+          href: cost-management/cost-groups.md
         - name: Inventory object values
           href: cost-management/physical-quantity.md
         - name: Inventory close
@@ -865,7 +867,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?context=/dynamics365/context/supply-chain
         - name: Power BI Embedded integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?context=/dynamics365/context/supply-chain
-        - name: Customize embedded reports in Analytical workspaces 
+        - name: Customize embedded reports in Analytical workspaces
           href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?context=/dynamics365/context/supply-chain
       - name: Document reporting and printing
         items:
@@ -888,11 +890,11 @@
           - name: Document generation, publishing, and printing in on-premises deployments
             href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?context=/dynamics365/context/supply-chain
           - name: Run the Document Routing Agent as a Windows service
-            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?context=/dynamics365/context/supply-chain
         - name: Available SQL Server Reporting Services reports
           href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?context=/dynamics365/context/supply-chain
         - name: Install report design templates
-          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?context=/dynamics365/context/supply-chain  
+          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?context=/dynamics365/context/supply-chain
       - name: Power user management tools
         items:
         - name: Power BI integration with Entity store
@@ -914,7 +916,7 @@
         - name: Add financial dimensions to aggregate measurements
           href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?context=/dynamics365/context/supply-chain
         - name: Create analytical reports using PowerBI Desktop
-          href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?context=/dynamics365/context/supply-chain 
+          href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?context=/dynamics365/context/supply-chain
         - name: Add analytics to workspaces by using Power BI Embedded
           href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?context=/dynamics365/context/supply-chain
         - name: Help secure analytical workspaces and reports using Power BI Embedded
@@ -944,18 +946,18 @@
         - name: Define the dependency of ER configurations on other components
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?context=/dynamics365/context/supply-chain
         - name: Prepare components of the Electronic reporting solution
-          items: 
+          items:
           - name: Design domain specific data model
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?context=/dynamics365/context/supply-chain
           - name: Prepare application specific metadata
-            items: 
+            items:
             - name: Prepare application metadata in ER to be used in RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?context=/dynamics365/context/supply-chain
             - name: Access application metadata in RCS by using ER configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?context=/dynamics365/context/supply-chain
             - name: Access application metadata in RCS by using connected applications
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?context=/dynamics365/context/supply-chain
-            - name: Define model mappings and select data sources 
+            - name: Define model mappings and select data sources
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?context=/dynamics365/context/supply-chain
             - name: Map data model to selected data sources
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?context=/dynamics365/context/supply-chain
@@ -970,33 +972,33 @@
             - name: Generate electronic documents for payments using a format configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/supply-chain
           - name: Upgrade your format by adopting a new base version of that format
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/supply-chain  
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/supply-chain
       - name: Formula designers in ER
         items:
         - name: Formula designer
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/supply-chain  
+          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/supply-chain
         - name: Advanced formula designer
-          href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/supply-chain  
+          href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/supply-chain
       - name: Formula language and functions
         items:
         - name: Formula language
-          href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/supply-chain  
+          href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/supply-chain
         - name: Supported data types for ER formulas
           items:
-          - name: Primitive data types 
+          - name: Primitive data types
             href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?context=/dynamics365/context/supply-chain
           - name: Composite data types
             href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?context=/dynamics365/context/supply-chain
         - name: Functions
           items:
-          - name: Container 
-            items: 
+          - name: Container
+            items:
             - name: Container functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?context=/dynamics365/context/supply-chain
             - name: Base64StringToContainer
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/supply-chain
-          - name: Date and time 
-            items: 
+          - name: Date and time
+            items:
             - name: Date and time functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?context=/dynamics365/context/supply-chain
             - name: AddDays
@@ -1029,8 +1031,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?context=/dynamics365/context/supply-chain
             - name: WeekNum
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?context=/dynamics365/context/supply-chain
-          - name: List 
-            items: 
+          - name: List
+            items:
             - name: List functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?context=/dynamics365/context/supply-chain
             - name: AllItems
@@ -1080,7 +1082,7 @@
             - name: Where
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?context=/dynamics365/context/supply-chain
           - name: Logical
-            items: 
+            items:
             - name: Logical functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?context=/dynamics365/context/supply-chain
             - name: And
@@ -1104,7 +1106,7 @@
             - name: ValueInLarge
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?context=/dynamics365/context/supply-chain
           - name: Mathematical
-            items: 
+            items:
             - name: Mathematical functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?context=/dynamics365/context/supply-chain
             - name: Abs
@@ -1118,7 +1120,7 @@
             - name: RoundUp
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?context=/dynamics365/context/supply-chain
           - name: Records
-            items: 
+            items:
             - name: Record functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?context=/dynamics365/context/supply-chain
             - name: EmptyRecord
@@ -1126,7 +1128,7 @@
             - name: NullContainer
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?context=/dynamics365/context/supply-chain
           - name: Text
-            items: 
+            items:
             - name: Text functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?context=/dynamics365/context/supply-chain
             - name: Char
@@ -1170,7 +1172,7 @@
             - name: Upper
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?context=/dynamics365/context/supply-chain
           - name: Data collection
-            items: 
+            items:
             - name: Data collection functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?context=/dynamics365/context/supply-chain
             - name: CollectedList
@@ -1186,7 +1188,7 @@
             - name: SumIFs
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?context=/dynamics365/context/supply-chain
           - name: Other
-            items: 
+            items:
             - name: Other (business domain–specific) functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?context=/dynamics365/context/supply-chain
             - name: CH_Bank_Mod_10
@@ -1216,7 +1218,7 @@
             - name: TableName2ID
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/supply-chain
           - name: Type conversion
-            items: 
+            items:
             - name: Type conversion functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?context=/dynamics365/context/supply-chain
             - name: "Type: Int64Value"
@@ -1254,15 +1256,15 @@
             - name: "Text: Text"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/supply-chain
       - name: Design ER formats to generate outbound documents in various formats
-        items: 
+        items:
         - name: Design configurations to generate outgoing documents in Excel format
           items:
           - name: Design a configuration for generating documents in Excel format
-            href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/supply-chain
           - name: Example of generating reports in OPENXML format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?context=/dynamics365/context/supply-chain
           - name: Modify ER formats by reapplying Excel templates
-            href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/supply-chain            
+            href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/supply-chain
           - name: Dynamically add columns to Excel reports as horizontally expandable ranges
             items:
             - name: Design formats to dynamically add columns to Excel reports
@@ -1270,9 +1272,9 @@
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?context=/dynamics365/context/supply-chain
             - name: Design an ER format to paginate generated documents in Excel
-              href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/supply-chain 
+              href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/supply-chain
             - name: Design an ER format to keep rows together on the same Excel page
-              href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/supply-chain 
+              href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/supply-chain
         - name: Design configurations to generate reports in Word format
           items:
           - name: Design a new ER configuration to generate reports in Word format
@@ -1288,7 +1290,7 @@
           - name: Embed images and shapes in documents that you generate
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?context=/dynamics365/context/supply-chain
           - name: Example of embedding images and shapes
-            items: 
+            items:
             - name: Design configurations to generate reports in Office formats that have embedded images
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?context=/dynamics365/context/supply-chain
             - name: Review configurations to generate reports in Office formats that have embedded images
@@ -1314,7 +1316,7 @@
         - name: Generate documents that have application data
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?context=/dynamics365/context/supply-chain
       - name: Import data from incoming files by using ER solutions
-        items: 
+        items:
         - name: Parse incoming documents in different formats
           href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?context=/dynamics365/context/supply-chain
         - name: Configure data import from manually selected files
@@ -1350,13 +1352,13 @@
           - name: Regulatory configuration service (RCS) overview
             href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/supply-chain
           - name: Download ER configurations to Supply Chain Management
-            items: 
+            items:
             - name: Download configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/supply-chain
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/supply-chain
           - name: Global repository (GR)
-            items: 
+            items:
             - name: Import configurations from GR
               href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/supply-chain
             - name: Import updated versions of ER configurations
@@ -1365,12 +1367,12 @@
               href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
             - name: Upload configurations to GR
               href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
-            - name: Share configurations in GR  
+            - name: Share configurations in GR
               href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
             - name: Discontinue configurations in the RCS Global repository
               href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
       - name: Quick start guides
-        items: 
+        items:
         - name: Adjust an ER format to generate a custom electronic document
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?context=/dynamics365/context/supply-chain
         - name: Design a new ER solution to print a custom report
@@ -1378,11 +1380,11 @@
         - name: Adjust an ER solution to generate a custom electronic document
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?context=/dynamics365/context/supply-chain
       - name: Tutorials
-        items: 
+        items:
         - name: Learn how to use data sources
-          items: 
+          items:
           - name: Use JOIN to get data from multiple tables
-            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/supply-chain
           - name: Use RAW XML to add content
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?context=/dynamics365/context/supply-chain
           - name: Support parameterized calls of CALCULATED FIELD data sources
@@ -1426,29 +1428,29 @@
             - name: Modify and run formats to use Document management files
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?context=/dynamics365/context/supply-chain
           - name: Use BARCODE to generate barcode images
-            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/supply-chain
           - name: Configure LOOKUP data sources to use ER application-specific parameters
-            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/supply-chain
           - name: Use DATA COLLECTION data sources in ER formats
-            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/supply-chain
           - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
-            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/supply-chain 
+            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/supply-chain
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?context=/dynamics365/context/supply-chain
         - name: Configure data models
-          items: 
+          items:
           - name: Support parameterized calls of ER data models
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/supply-chain
         - name: Configure model mappings
-          items: 
+          items:
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
           - name: Manage several derived mappings for a single model root
             href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?context=/dynamics365/context/supply-chain
         - name: Configure formats
-          items: 
+          items:
           - name: Select model definitions when you create formats
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?context=/dynamics365/context/supply-chain
           - name: Configure ER formats to use parameters that are specified per legal entity
@@ -1456,7 +1458,7 @@
           - name: Set up the parameters of an ER format per legal entity
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?context=/dynamics365/context/supply-chain
           - name: Defer execution of ER format elements
-            items: 
+            items:
             - name: Defer execution of a sequence element
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?context=/dynamics365/context/supply-chain
             - name: Defer execution of an XML element
@@ -1470,13 +1472,13 @@
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?context=/dynamics365/context/supply-chain
       - name: Use ER solutions in Supply Chain Management
-        items: 
+        items:
         - name: Configure the framework
-          items: 
+          items:
           - name: Configure the Electronic reporting framework
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?context=/dynamics365/context/supply-chain
           - name: Back up and recover ER templates
-            items: 
+            items:
             - name: Backup storage of ER templates
               href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?context=/dynamics365/context/supply-chain
             - name: ER migration cleanup
@@ -1484,23 +1486,23 @@
           - name: Create configuration provides and mark them as active
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?context=/dynamics365/context/supply-chain
         - name: Destinations
-          items: 
+          items:
           - name: Destinations overview
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?context=/dynamics365/context/supply-chain
           - name: Destination types
             items:
-              - name: Archive destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?context=/dynamics365/context/supply-chain
-              - name: Email destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?context=/dynamics365/context/supply-chain
-              - name: File destination
-                href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?context=/dynamics365/context/supply-chain
-              - name: Power BI destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?context=/dynamics365/context/supply-chain
-              - name: Printer destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?context=/dynamics365/context/supply-chain
-              - name: Screen destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?context=/dynamics365/context/supply-chain
+            - name: Archive destination
+              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?context=/dynamics365/context/supply-chain
+            - name: Email destination
+              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?context=/dynamics365/context/supply-chain
+            - name: File destination
+              href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?context=/dynamics365/context/supply-chain
+            - name: Power BI destination
+              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?context=/dynamics365/context/supply-chain
+            - name: Printer destination
+              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?context=/dynamics365/context/supply-chain
+            - name: Screen destination
+              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?context=/dynamics365/context/supply-chain
           - name: Configure destinations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?context=/dynamics365/context/supply-chain
           - name: Configure action-dependent destinations
@@ -1510,7 +1512,7 @@
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?context=/dynamics365/context/supply-chain
         - name: Automatically validate generated reports
-          items: 
+          items:
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?context=/dynamics365/context/supply-chain
           - name: Improve tracing the results of generated ER reports to compare with baseline values
@@ -1518,13 +1520,13 @@
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?context=/dynamics365/context/supply-chain
         - name: Automate business processes by using Electronic reporting configurations
-          items: 
+          items:
           - name: Configure ER to pull data into Power BI
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?context=/dynamics365/context/supply-chain
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?context=/dynamics365/context/supply-chain
         - name: Design efficient ER solutions
-          items: 
+          items:
           - name: Trace execution of ER formats to troubleshoot performance issues
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?context=/dynamics365/context/supply-chain
           - name: Troubleshoot performance issues in ER configurations
@@ -1537,14 +1539,14 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/supply-chain
           - name: New document user interface in BDM
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?context=/dynamics365/context/supply-chain
-          - name: Edit business document templates in BDM 
+          - name: Edit business document templates in BDM
             items:
             - name: Add new fields to a business document template in Microsoft Excel
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?context=/dynamics365/context/supply-chain
             - name: Update the structure of a business document template
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?context=/dynamics365/context/supply-chain
       - name: ER framework API
-        items: 
+        items:
         - name: Extend the list of built-in functions
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?context=/dynamics365/context/supply-chain
         - name: API changes
@@ -1563,7 +1565,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?context=/dynamics365/context/supply-chain
           - name: Application update 10.0.25
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?context=/dynamics365/context/supply-chain
-        - name: Specify a custom storage location for generated documents 
+        - name: Specify a custom storage location for generated documents
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?context=/dynamics365/context/supply-chain
@@ -1579,7 +1581,7 @@
       items:
       - name: Inventory management overview
         href: inventory/inventory-home-page.md
-      - name: Advanced quality management overview (preview)
+      - name: Advanced quality management overview
         href: inventory/advanced-quality-management-overview.md
       - name: Arrival
         items:
@@ -1592,7 +1594,7 @@
         - name: Quality and nonconformance management overview
           href: inventory/quality-management-processes.md
         - name: Enable and configure quality and nonconformance management
-          items: 
+          items:
           - name: Enable quality and nonconformance management
             href: inventory/enable-quality-management.md
           - name: Quality management test instruments
@@ -1617,27 +1619,41 @@
             href: inventory/quality-quarantine-zones.md
           - name: Nonconformance diagnostic types
             href: inventory/quality-diagnostic-types.md
-          - name: Nonconformance root cause codes (preview)
+          - name: Nonconformance root cause codes
             href: inventory/quality-root-cause-codes.md
-          - name: Nonconformance work groups (preview)
+          - name: Nonconformance work groups
             href: inventory/quality-nonconformance-workgroup.md
           - name: Nonconformance operations
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
-        - name: Test instrument calibration (preview)
+        - name: Sample management (preview)
+          items:
+          - name: Sample management overview
+            href: inventory/quality-sample-management-overview.md
+          - name: Enable and configure sample management
+            href: inventory/quality-sample-management-admin.md
+          - name: Set up continuous sampling
+            href: inventory/quality-sample-management-continuous.md
+          - name: Initiate an inline sample
+            href: inventory/quality-sample-management-inline.md
+          - name: Manage and process samples
+            href: inventory/quality-sample-management-use.md
+          - name: Sample management reports and auditing
+            href: inventory/quality-sample-management-audit-reports.md
+        - name: Test instrument calibration
           href: inventory/quality-instrument-calibration.md
-        - name: Flexible sampling plans (preview)
+        - name: Flexible sampling plans
           href: inventory/quality-flexible-sampling-plans.md
-        - name: Acceptance sampling (preview)
+        - name: Acceptance sampling
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
-        - name: Customer specific certificate of analysis (COA) (preview)
+        - name: Customer specific certificate of analysis (COA)
           href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
           href: inventory/tasks/inspect-quality-goods.md
-        - name: Enter quality test results quickly (preview)
+        - name: Enter quality test results quickly
           href: inventory/quality-quick-results-entry.md
         - name: Create and process a nonconformance
           href: inventory/tasks/create-process-non-conformance.md
@@ -1647,7 +1663,7 @@
           href: inventory/inventory-blocking.md
         - name: Create and maintain inventory blocking
           href: inventory/tasks/create-maintain-inventory-blocking.md
-      - name: Corrective and preventive action (CAPA) management (preview)
+      - name: Corrective and preventive action (CAPA) management
         items:
         - name: CAPA management overview
           href: inventory/capa-overview.md
@@ -1681,7 +1697,7 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
-        - name: Link transfer order lines with sales order lines (preview)
+        - name: Link transfer order lines with sales order lines
           href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
@@ -1793,30 +1809,32 @@
           href: inventory/inventory-visibility-tips.md
     - name: Sensor Data Intelligence (preview)
       items:
-        - name: Sensor Data Intelligence home page
-          href: sensor-data-intelligence/sdi-home-page.md
-        - name: Turn on Sensor Data Intelligence for your system
-          href: sensor-data-intelligence/sdi-enable-feature.md
-        - name: Deploy an IoT solution on Azure
-          href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
-        - name: Sensor Data Intelligence parameters
-          href: sensor-data-intelligence/sdi-parameters.md
-        - name: Set up a simulated sensor for testing
-          href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: Asset downtime scenario
-          href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
-        - name: Asset maintenance scenario
-          href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
-        - name: Machine status scenario
-          href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
-        - name: Product quality scenario
-          href: sensor-data-intelligence/sdi-scenario-product-quality.md
-        - name: Production delays scenario
-          href: sensor-data-intelligence/sdi-scenario-production-delays.md
+      - name: Sensor Data Intelligence home page
+        href: sensor-data-intelligence/sdi-home-page.md
+      - name: Turn on Sensor Data Intelligence for your system
+        href: sensor-data-intelligence/sdi-enable-feature.md
+      - name: Deploy an IoT solution on Azure
+        href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+      - name: Sensor Data Intelligence parameters
+        href: sensor-data-intelligence/sdi-parameters.md
+      - name: Set up a simulated sensor for testing
+        href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+      - name: Asset downtime scenario
+        href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+      - name: Asset maintenance scenario
+        href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+      - name: Machine status scenario
+        href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+      - name: Product quality scenario
+        href: sensor-data-intelligence/sdi-scenario-product-quality.md
+      - name: Production auto report scenario
+        href: sensor-data-intelligence/sdi-scenario-production-auto-report.md
+      - name: Production delays scenario
+        href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
-        - name: IoT Intelligence now replaced by Sensor Data Intelligence
-          href: supply-chain-dev/iot-intelligence-home-page.md
+      - name: IoT Intelligence now replaced by Sensor Data Intelligence
+        href: supply-chain-dev/iot-intelligence-home-page.md
     - name: Master planning
       items:
       - name: Master planning home page
@@ -1837,7 +1855,7 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Lean manufacturing for Planning Optimization (preview)
+        - name: Lean manufacturing for Planning Optimization
           href: master-planning/lean-for-planning-optimization.md
         - name: Unified developer experience for planning optimization (preview)
           href: supply-chain-dev/planning-optimization-dev.md
@@ -1908,7 +1926,7 @@
         - name: Net requirements and pegging information
           href: master-planning/planning-optimization/net-requirements.md
         - name: Planning with negative on-hand quantities
-          href: master-planning/planning-optimization/negative-on-hand.md 
+          href: master-planning/planning-optimization/negative-on-hand.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
       - name: Set up master plans
@@ -2017,36 +2035,36 @@
           href: master-planning/planning-optimization/ddmrp-faqs.md
       - name: Deprecated planning engine
         items:
-          - name: Deprecated planning engine overview
-            href: master-planning/deprecated-master-planning-overview.md
-          - name: Migration to Planning Optimization for master planning
-            href: master-planning/new-master-planning-engine.md
-          - name: Continue to use deprecated master planning with existing companies
-            href: master-planning/continue-using-deprecated-planning.md
-          - name: Parameters not used by Planning Optimization
-            href: master-planning/planning-optimization/not-used-parameters.md
-          - name: Differences between Planning Optimization and the deprecated master planning engine
-            href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-          - name: Planning Optimization fit analysis
-            href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
-          - name: Improve master planning performance
-            href: master-planning/master-planning-performance.md
-          - name: Set up master plans for the deprecated planning engine
-            href: master-planning/deprecated-master-plans.md
-          - name: Create an intercompany plan
-            href: master-planning/tasks/create-intercompany-plan.md
-          - name: View outbound planned intercompany demand
-            href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-          - name: Monitor a master planning run
-            href: master-planning/tasks/monitor-master-planning-run.md
-          - name: Net requirements and pegging information with the deprecated planning engine
-            href: master-planning/net-requirements-built-in-master-planning.md
-          - name: Safety stock fulfillment with the deprecated master planning engine
-            href: master-planning/safety-stock-replenishment-in-deprecated-engine.md
-          - name: Create a material plan for co-products
-            href: master-planning/tasks/create-material-plan-co-products.md
-          - name: Cancel a job that was created using the deprecated master planning engine
-            href: master-planning/cancel-master-planning-job.md
+        - name: Deprecated planning engine overview
+          href: master-planning/deprecated-master-planning-overview.md
+        - name: Migration to Planning Optimization for master planning
+          href: master-planning/new-master-planning-engine.md
+        - name: Continue to use deprecated master planning with existing companies
+          href: master-planning/continue-using-deprecated-planning.md
+        - name: Parameters not used by Planning Optimization
+          href: master-planning/planning-optimization/not-used-parameters.md
+        - name: Differences between Planning Optimization and the deprecated master planning engine
+          href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+        - name: Planning Optimization fit analysis
+          href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+        - name: Improve master planning performance
+          href: master-planning/master-planning-performance.md
+        - name: Set up master plans for the deprecated planning engine
+          href: master-planning/deprecated-master-plans.md
+        - name: Create an intercompany plan
+          href: master-planning/tasks/create-intercompany-plan.md
+        - name: View outbound planned intercompany demand
+          href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+        - name: Monitor a master planning run
+          href: master-planning/tasks/monitor-master-planning-run.md
+        - name: Net requirements and pegging information with the deprecated planning engine
+          href: master-planning/net-requirements-built-in-master-planning.md
+        - name: Safety stock fulfillment with the deprecated master planning engine
+          href: master-planning/safety-stock-replenishment-in-deprecated-engine.md
+        - name: Create a material plan for co-products
+          href: master-planning/tasks/create-material-plan-co-products.md
+        - name: Cancel a job that was created using the deprecated master planning engine
+          href: master-planning/cancel-master-planning-job.md
     - name: Demand planning
       items:
       - name: Demand planning home page
@@ -2091,6 +2109,8 @@
           href: demand-planning/forecast-algorithm-types.md
         - name: Naive forecasting (preview)
           href: demand-planning/naive-forecast-algorithm.md
+        - name: Croston's method forecasting (preview)
+          href: demand-planning/croston-method.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
         - name: Rolling forecasts
@@ -2216,7 +2236,7 @@
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/supply-chain
         - name: Workflow history summary
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/supply-chain  
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/supply-chain
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/supply-chain
         - name: Workflow types
@@ -2283,6 +2303,8 @@
         href: unified-pricing-management/upm-pricing-management-overview.md
       - name: Turn on the Unified pricing management module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
+      - name: Migrate to unified pricing management (preview)
+        href: unified-pricing-management/upm-migrate-to-unified-pricing-management.md
       - name: Price attributes
         items:
         - name: Price attributes overview
@@ -2293,6 +2315,10 @@
           href: unified-pricing-management/upm-price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
+        - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
+          href: unified-pricing-management/upm-support-custom-attributes.md
+        - name: Example custom request handler code
+          href: unified-pricing-management/upm-custom-request-handler-example.md
       - name: Price groups
         items:
         - name: Price groups overview
@@ -2343,6 +2369,10 @@
           href: unified-pricing-management/upm-concurrence-within-codes.md
         - name: Resolving concurrency across price component codes
           href: unified-pricing-management/upm-concurrence-cross-codes.md
+      - name: Calculate prices and discounts without creating sales orders
+        href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
+      - name: Pricing data import and export entities
+        href: unified-pricing-management/upm-pricing-data-entities.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview
@@ -2429,6 +2459,8 @@
           href: procurement/supplier-com-agent-setup.md
         - name: Solve common problems when setting up the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup-faq.md
+        - name: Test the Supplier Communications Agent
+          href: procurement/supplier-com-agent-testing.md
         - name: Follow up on purchase orders using the Supplier Communications Agent
           href: procurement/supplier-com-agent-follow-up.md
         - name: Review and apply purchase order changes received in vendor emails
@@ -2565,26 +2597,14 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Cross-company product sharing (preview)
+        - name: Cross-company product sharing
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
-        - name: Product lifecycle state
-          items:
-          - name: Product lifecycle state overview
-            href: pim/product-lifecycle.md
-          - name: Create a new product lifecycle state
-            href: pim/tasks/new-product-lifecycle-state.md
-          - name: Create a default product lifecycle state
-            href: pim/tasks/default-product-lifecycle-state.md
-          - name: Assign a product lifecycle state to a released product master
-            href: pim/tasks/product-lifecycle-state-released-product-master.md
-          - name: Assign a product lifecycle state to a released product
-            href: pim/tasks/product-lifecycle-state-released-product.md
-          - name: Find obsolete product variants
-            href: pim/tasks/obsolete-product-variants.md
-          - name: Exclude products from Master planning
-            href: pim/tasks/exclude-products-master-planning.md
+        - name: Product lifecycle states
+          href: pim/product-lifecycle.md
+        - name: Find obsolete released products or variants
+          href: pim/tasks/obsolete-product-variants.md
         - name: Create a bar code for a product
           href: pim/tasks/create-bar-code-product.md
         - name: Enter the GTIN code for a product
@@ -2709,8 +2729,6 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
-      - name: Product information management FAQ
-        href: pim/product-information-faq.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
@@ -2752,7 +2770,7 @@
       - name: 'Mixed mode planning: Combine discrete, process, and lean sourcing'
         href: production-control/mixed-mode-plan.md
       - name: Manage subcontracting work in production
-        href: production-control/manage-subcontract-work-production.md  
+        href: production-control/manage-subcontract-work-production.md
       - name: Make finished goods physically available before posting to journals
         href: production-control/deferred-posting.md
       - name: Unified number sequence for job IDs
@@ -2845,7 +2863,7 @@
             href: production-control/report-production-orders-as-finished.md
           - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
-          - name: Report as finished from the job card device 
+          - name: Report as finished from the job card device
             href: production-control/report-finished-job-device.md
           - name: Provide mixed-reality Guides for workers in production
             href: production-control/instruction-guides-in-production-overview.md
@@ -3025,9 +3043,9 @@
             href: production-control/production-feedback.md
           - name: Time and attendance registration
             href: production-control/time-attendance-registrations.md
-          - name: Electronic batch records (EBR) (preview)
+          - name: Electronic batch records (EBR)
             href: production-control/quality-electronic-batch-record.md
-          - name: Production dispensing (preview)
+          - name: Production dispensing
             href: production-control/quality-production-dispensing.md
         - name: Manage financials in production
           items:
@@ -3133,11 +3151,11 @@
           href: sales-marketing/line-charges-specific-unit.md
         - name: Period charges
           href: sales-marketing/period-charges.md
-        - name: Create a purchase order from a sales order
+        - name: Create purchase orders from sales orders
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
-        - name: Use external item identifiers to add products to orders (preview)
+        - name: Use external item identifiers to add products to orders
           href: sales-marketing/external-item-product-search-lookup.md
         - name: Copy lines between sales orders
           href: sales-marketing/copy-lines-between-sales-orders.md
@@ -3147,6 +3165,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
+        - name: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)
+          href: sales-marketing/pay-by-link-with-adyen-connector.md
         - name: Sales order FAQs
           href: sales-marketing/sales-orders-faq.md
       - name: Sales agreements
@@ -3293,14 +3313,14 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
-      - name: Approved customer lists (preview)
+      - name: Approved customer lists
         href: sales-marketing/approved-customer-lists.md
       - name: Credit limits for customers
         href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
         href: sales-marketing/trade-allowance.md
       - name: Trade agreements
-        items: 
+        items:
         - name: Create a new trade agreement
           href: sales-marketing/tasks/create-new-trade-agreement.md
         - name: Export posted trade agreement lines
@@ -3362,7 +3382,7 @@
           - name: Attach templates to service objects
             href: service-management/attach-templates-service-objects.md
         - name: Define reason codes for service orders
-          items: 
+          items:
           - name: Reason codes for service orders
             href: service-management/reason-codes-service-orders.md
           - name: Service order stages
@@ -3875,7 +3895,7 @@
           items:
           - name: Cross-docking from production orders to outbound docks
             href: production-control/cross-docking-opportunities.md
-          - name: Auto-release shipment for cross-docking 
+          - name: Auto-release shipment for cross-docking
             href: warehousing/auto-release-shipment-for-cross-docking.md
           - name: Planned cross-docking
             href: warehousing/planned-cross-docking.md
@@ -3925,30 +3945,22 @@
         items:
         - name: What's new or changed in the Warehouse Management mobile app
           href: warehousing/whats-new-wma.md
-        - name: Warehouse Mobile app accessibility features
-          href: warehousing/warehouse-app-accessibility.md
-        - name: Workload insights with Copilot
-          href: warehousing/warehouse-management-mobile-app-insights.md
-        - name: Install, set up, and use mobile devices
+        - name: Install, set up, and connect mobile devices
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Migrate the Warehouse Management mobile app from V3 to V4 (preview)
+          - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
-          - name: Install Warehouse Management mobile app V4 on Windows (preview)
-            href: warehousing/warehouse-app-install-certificate.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
             href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Use Microsoft Entra Conditional Access with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-conditional-access-enable.md
           - name: Mass deploy the mobile app with user-based authentication
             href: warehousing/warehouse-app-intune-user-based.md
-          - name: Service-based authentication
-            href: warehousing/warehouse-app-authenticate-service-based.md
-          - name: Mass deploy the mobile app with service-based authentication
-            href: warehousing/warehouse-app-intune.md
           - name: Mobile device user accounts
             href: warehousing/mobile-device-work-users.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
@@ -3957,8 +3969,24 @@
             href: warehousing/mobile-barcode-support.md
           - name: Advanced barcode scanner configuration
             href: warehousing/warehouse-app-adv-scanner-config.md
-          - name: Scan bar codes using a camera in the Warehouse Management mobile app
-            href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Work with the Warehouse Management mobile app
+          items:
+          - name: Warehouse Management mobile app accessibility features
+            href: warehousing/warehouse-app-accessibility.md
+          - name: Haptic feedback through external wearable devices
+            href: warehousing/warehouse-app-haptic-feedback.md
+          - name: User settings, color themes, and sound themes
+            href: warehousing/warehouse-app-user-settings-themes.md
+          - name: Data submission behavior in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-autosubmit-behavior.md
+          - name: Workload insights with Copilot
+            href: warehousing/warehouse-management-mobile-app-insights.md
+          - name: Warehouse Management mobile app calculator
+            href: warehousing/warehouse-app-calculator.md
+          - name: View the app log on a mobile device
+            href: warehousing/warehouse-app-log-view.md
+          - name: Check Wi-Fi connectivity and performance
+            href: warehousing/warehouse-app-network-diagnostics.md
         - name: Set up fields and menus for mobile devices
           items:
           - name: Configure fields for the Warehouse Management mobile app
@@ -3975,7 +4003,7 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-          - name: Set up a mobile device menu item for license plate build in the warehouse 
+          - name: Set up a mobile device menu item for license plate build in the warehouse
             href: warehousing/license-plate-build.md
           - name: Set up a mobile device menu item for moving items in the warehouse
             href: warehousing/mobile-device-movement-menu.md
@@ -3999,18 +4027,20 @@
             href: warehousing/pick-oldest-batch.md
           - name: Query item data on a mobile device
             href: warehousing/warehouse-app-item-inquiry.md
-        - name: Global mobile device parameters
-          href: warehousing/mobile-device-parameters.md
-        - name: Warehouse mobile devices workspace
-          href: warehousing/mobile-device-workspace.md
-        - name: Mobile device user settings
-          href: warehousing/mobile-device-user-settings.md
-        - name: Warehouse Management mobile app calculator
-          href: warehousing/warehouse-app-calculator.md
-        - name: Warehouse app event processing
-          href: warehousing/warehouse-app-events.md
-        - name: Inspect details of active Warehouse Management mobile app sessions
-          href: warehousing/work-user-sessions.md
+          - name: Scan bar codes using a camera in the Warehouse Management mobile app
+            href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Manage mobile devices and sessions from Supply Chain Management
+          items:
+          - name: Global mobile device parameters
+            href: warehousing/mobile-device-parameters.md
+          - name: Warehouse mobile devices workspace
+            href: warehousing/mobile-device-workspace.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
+          - name: Inspect details of active Warehouse Management mobile app sessions
+            href: warehousing/work-user-sessions.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
@@ -4051,8 +4081,6 @@
             href: warehousing/wave-template-grouping.md
           - name: Wave allocation
             href: warehousing/wave-allocation-method.md
-          - name: Schedule work creation during wave
-            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Automatic rewaving of nonallocated shipment lines
             href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications
@@ -4157,11 +4185,11 @@
       items:
       - name: Monitor and control message processor messages
         href: message-processor/message-processor.md
-      - name: Clean up processed and canceled message processor messages (preview)
+      - name: Clean up processed and canceled message processor messages
         href: message-processor/message-processor-cleanup.md
       - name: Business events, custom message queues, and custom message types
         href: message-processor/developer/message-processor-develop.md
-    - name: Supply Chain Management development 
+    - name: Supply Chain Management development
       items:
       - name: Gantt control development guide
         href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?context=/dynamics365/context/supply-chain
@@ -4215,12 +4243,10 @@
           href: procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/supply-chain
       - name: Publish mobile workspaces
         href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/supply-chain
-    - name: Responsible AI 
+    - name: Responsible AI
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: Set up Agent management (production ready preview)
-        href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md  
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot
@@ -4233,9 +4259,9 @@
         href: faq-supplier-communications-agent.md
       - name: Responsible AI FAQ for Generative insights for Demand planning (production ready preview)
         href: faq-demand-planning-generative-insights.md
-  - name: Development and administration for finance and operations apps 
+  - name: Development and administration for finance and operations apps
     href: ../fin-ops-core/dev-itpro/index.md
-  - name: Dynamics 365 Finance 
+  - name: Dynamics 365 Finance
     href: ../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
     href: ../commerce/welcome.md

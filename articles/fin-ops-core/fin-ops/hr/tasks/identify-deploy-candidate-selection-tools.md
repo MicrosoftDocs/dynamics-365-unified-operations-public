@@ -2,7 +2,7 @@
 title: Identify and deploy candidate selection tools
 description: Learn about identifying and deploying candidate selection tools, including a step-by-step process to access candidate profiles.
 author: twheeloc
-ms.author: anbichse
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 01/10/2022
 ms.custom:

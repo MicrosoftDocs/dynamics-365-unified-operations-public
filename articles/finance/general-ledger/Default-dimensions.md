@@ -1,8 +1,8 @@
 ---
 title: Financial dimensions and posting 
 description: Learn about the components that make up the chart of accounts and how the components work together, including an outline on the order for default dimensions.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 04/29/2024
 ms.update-cycle: 1095-days

@@ -37,7 +37,7 @@ The following illustration shows an example where a metatags module has been add
 
 ## Add a metatags module to a template
 
-To add a metatags module to a template, follow these steps.
+To add a metatags module to a template, follow these steps:
 
 1. In Commerce site builder for your site, select **Templates**.
 1. Select a template, and then select **Edit**.

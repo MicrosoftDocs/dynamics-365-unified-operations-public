@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2025
+ms.date: 09/19/2025
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
@@ -39,7 +39,7 @@ You can find general information about how to set up a sales tax authority in [S
 
 To generate a SAF Accounting Books Income Tax - JPK_KR_PD in the required format for the appropriate tax authority, you must set up the **Authority identification** for sales tax authorities.
 
-To set up the **Authority identification** for sales tax authorities, follow these steps.
+To set up the **Authority identification** for sales tax authorities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 2. In the **Authority identification** field, specify the code of the tax office competent for the taxpayer's registered office. This code will be reported in the **\<KodUrzedu\>** field of the SAF Accounting Books Income Tax - JPK_KR_PD.
@@ -64,7 +64,7 @@ Import the most recent versions of the configurations. The version description u
 
 The process of setting up the Electronic messaging functionality for JPK_KR_PD reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-To import a package of data entities that includes a predefined electronic message setup, follow these steps.
+To import a package of data entities that includes a predefined electronic message setup, follow these steps:
 
 1. Go to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2).
 2. In the Shared asset library, select the **Data package** asset type.
@@ -83,7 +83,7 @@ For more information about Data management, see [Data management](../../../fin-o
 
 You must now import data from the **PL JPK_KR_PD EM setup.zip** file into the selected company.
 
-To import data into the selected company, follow these steps.
+To import data into the selected company, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Data management** workspace.
 2. Select **Import**.
@@ -162,7 +162,7 @@ To automatically calculate the RPD amounts, you must set up a **Financial dimens
 
 When **Financial dimension set** for the Income Tax Register (RPD) section of  SAF Accounting Books Income Tax - JPK_KR_PD report is set up, you can establish the rules of automatic collection of the RPD amounts. 
 
-To establish the rules of automatic collection of the RPD amounts, follow these steps.
+To establish the rules of automatic collection of the RPD amounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**.
 2. Select **Obliczanie pól dodatkowych RPD** executable class and on the Action Pane, select **Parameters**.
@@ -183,23 +183,27 @@ When your organization uses non-standard chart of accounts (CoA) in Poland and t
 
 Application-specific parameters of the **JPK_KR_PD** format in ER facilitate the mapping of your financial data to the required values that are defined by the **JPK_KR_PD** schema.
 
-To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps.
+To prepare Finance to generate a SAF Accounting Books Income Tax - JPK_KR_PD in compliance with the required schema, follow these steps:
+
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
-2. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD XML (PL)**.
-3. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
-4. On the left side of **Application specific parameters** page, select the latest version of the format.
-5. On the **Lookups** FastTab, select a lookup field in the list. Detailed descriptions of all the lookup fields of the **JPK_KR_PD XML (PL)** format are provided after this procedure.
-6. On the **Conditions** FastTab, define the required conditions, and specify the values in the **Lookup result** column.
-7. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
-8. Repeat steps 5 through 7 for each additional lookup field.
-9. When all the lookup fields are set up, select **Completed** in the **State** field, and save the configuration.
-10. On the Action Pane, select **Export** to export the application-specific parameters as an XML file and close the **Application specific parameters** page.
-11. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD Excel (PL)**.
-12. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
-13. On the left side of **Application specific parameters** page, select the latest version of the format.
-14. On the Action Pane, select **Import** and select the XML files saved on the step 10.
-15. Select **Completed** in the **State** field, and save the configuration.
+2. In the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **Yes**. Ensure that no other model mapping configuration under the **Standard Audit File (SAF-T)** model is not set as **Default for model mapping**.
+3. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD XML (PL)**.
+4. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
+5. On the left side of **Application specific parameters** page, select the latest version of the format.
+6. On the **Lookups** FastTab, select a lookup field in the list. Detailed descriptions of all the lookup fields of the **JPK_KR_PD XML (PL)** format are provided after this procedure.
+7. On the **Conditions** FastTab, define the required conditions, and specify the values in the **Lookup result** column.
+8. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
+9. Repeat steps 5 through 7 for each additional lookup field.
+10. When all the lookup fields are set up, select **Completed** in the **State** field, and save the configuration.
+11. On the Action pane, select **Export**, export the application-specific parameters as an XML file, and close the **Application specific parameters** page.
+12. In the configuration tree, select **Standard Audit File (SAF-T)** \> **JPK_KR_PD Excel (PL)**.
+13. On the Action Pane, on the **Configurations** tab, in the **Applications specific parameters** group, select **Setup**.
+14. On the left side of **Application specific parameters** page, select the latest version of the format.
+15. On the Action pane, select **Import**, and select the XML files saved in step 10.
+16. Select **Completed** in the **State** field, and save the configuration.
+17. Optional: If necessary, in the configuration tree, select **General ledger data model mapping** configuration and set **Default for model mapping** option to **No**. Set the **Default for model mapping** option to **Yes** for the model mapping configuration that was previously selected. For example, if your organization uses the other JPK reports in Poland, set the **Standard Audit File model mapping** configuration as default.
+
 
 ### OpisDziennika - Journal description
 
@@ -281,7 +285,7 @@ Users of a legal entity with primary address in Poland can review their JPK_KR_P
 > - The RPD section of JPK_KR_PD report is supported only when the report is generated from the **Electronic messages** page (using the **JPK_KR_PD** Electronic message processing).
 > - Microsoft recommends using the **SAF Accounting Books Income Tax** menu item to generate the JPK_KR_PD for preview only.
 
-To set up the ER format that's run by the **SAF Accounting Books Income Tax** menu item, follow these steps.
+To set up the ER format that's run by the **SAF Accounting Books Income Tax** menu item, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF Accounting Books Income Tax** field, select the **JPK_KR_PD Excel (PL)** ER format.

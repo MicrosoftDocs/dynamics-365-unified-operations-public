@@ -61,7 +61,7 @@ By default, the out-of-box payment connectors for Adyen and PayPal support the e
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
 
-To enable the enhanced payments feature in Commerce site builder, follow these steps.
+To enable the enhanced payments feature in Commerce site builder, follow these steps:
 
 1. In the site that you want to edit, expand **Site settings**.
 2. Select **Extensions**.

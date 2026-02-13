@@ -1,12 +1,12 @@
 ---
 title: Configure and install Commerce Scale Unit (self-hosted)
-description: This article explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
+description: Learn how to use self-service to configure and install Microsoft Dynamics 365 Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 07/25/2025
+ms.date: 09/25/2025
 ms.topic: install-set-up-deploy
-ms.reviewer: v-chrgriffin
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: brstor
+ms.author: ritakimani
 ms.search.validFrom: 2016-11-30
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
@@ -19,7 +19,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how you can use self-service to configure a Commerce Scale Unit in Microsoft Dynamics 365 Commerce headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce async client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This article also explains how to uninstall and troubleshoot Commerce Scale Unit.
+This article explains how you can use self-service to configure a Commerce Scale Unit in Microsoft Dynamics 365 Commerce headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce async client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This article also explains how to uninstall and debug Commerce Scale Unit.
 
 > [!IMPORTANT]
 > - A basic design principle to follow is that if you're unable to customize in a requested manner on a CSU (Cloud), you shouldn't customize this way with a CSU (self-hosted). It's critical to understand that direct database access isn't supported and can easily cause breaks in customizations that use this concept. A CSU (self-hosted) is primarily used for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
@@ -46,7 +46,7 @@ To create a functioning CSU, complete the procedures in all sections of this art
 
 ### Create a new channel database record
 
-To create a new channel database record, follow these steps.
+To create a new channel database record, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 1. On the **Channel database** page, on the Action Pane, select **New**.
@@ -74,7 +74,7 @@ Next, you must create a new channel profile record for the CSU URL, and then upd
 > [!NOTE]
 > Alternatively, you can modify the existing channel profile record to use the CSU URLs. 
 
-To create a new channel profile in headquarters and update the existing store records to use the new channel database and profile, follow these steps.
+To create a new channel profile in headquarters and update the existing store records to use the new channel database and profile, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel profiles**.
 1. On the Action Pane, select **New**.
@@ -123,7 +123,7 @@ If no jobs appear, then initialize the base configuration. Learn more in [Update
 
 > [!IMPORTANT]
 >  - You must remove the default database from the Commerce Data Exchange (CDX) data groups in headquarters, because this database is no longer used. Failure to make this update can result in data sync errors later on. 
->  - To update CDX data groups in headquarters, follow these steps.
+>  - To update CDX data groups in headquarters, follow these steps:
 >
 >       1. Go to **Retail and Commerce \> Distribution Schedule**.
 >       1. Select the **Default Data** group.
@@ -144,7 +144,7 @@ and [Update identity providers settings in Commerce headquarters](cpos-custom-aa
 
 To download and execute the CSU installer, follow the instructions in [Download and install Commerce Scale Unit](retail-store-scale-unit-download-install.md). This article describes the steps necessary to download the required configuration from headquarters, download the installation program, and run the installer.
 
-Once installation is complete, proceed to the next section for security recommendations and troubleshooting tips.
+Once installation is complete, proceed to the next section for security recommendations and debugging tips.
 
 ## Help secure CSU
 
@@ -156,7 +156,7 @@ According to current security standards, the following options should be set in 
 > [!NOTE]
 > By default, SSL and all versions of TLS except TLS 1.2 are disabled.
 
-To edit or enable SSL and TLS settings, follow these steps.
+To edit or enable SSL and TLS settings, follow these steps:
 
 1. Press the Windows logo key+R to open a **Run** window.
 1. In the **Open** field, enter **Regedit**, and then select **OK**.
@@ -182,9 +182,9 @@ To edit or enable SSL and TLS settings, follow these steps.
 > [!IMPORTANT]
 > It's critical that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
-## Troubleshoot CSU
+## Debug CSU
 
-To troubleshoot CSU, follow these steps.
+To debug CSU, follow these steps:
 
 1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used. Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
 1. In headquarters, on the **Commerce shared parameters** page, verify that the correct client ID is added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry is added to the **Server resource IDs** FastTab. If not, substitute the actual Retail Server URL.
@@ -202,7 +202,7 @@ Microsoft highly recommends that you also review [SQL Server versions and licens
 
 ## Uninstall CSU
 
-To uninstall Commerce Scale Unit components, follow these steps.
+To uninstall Commerce Scale Unit components, follow these steps:
 
 1. Select the Windows logo key, and then enter "Add or remove programs" in the search box. In the search results, select **Add or remove programs**.
 1. In the **Settings** \> **Apps** \> **Installed Apps** window, locate  **Microsoft Dynamics 365 Commerce Scale Unit** in the application list, select the ellipsis (**...**), and then select **Uninstall**.

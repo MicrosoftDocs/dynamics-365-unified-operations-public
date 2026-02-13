@@ -25,7 +25,7 @@ The **License plate build** menu item in the Warehouse Management mobile app hel
 
 ## Configure the License plate build menu item
 
-To configure the **License plate build** menu item, follow these steps.
+To configure the **License plate build** menu item, follow these steps:
 
 1. In Supply Chain Management, go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, select **New**.
@@ -40,7 +40,7 @@ To configure the **License plate build** menu item, follow these steps.
 
 1. On the Action Pane, select **Save**.
 
-To create a standalone menu item that can be used to assign license plates to a parent, follow these steps.
+To create a standalone menu item that can be used to assign license plates to a parent, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add the new menu item to an appropriate place in your mobile device menu structure.
@@ -58,7 +58,7 @@ For this example, the following setup is in place:
 
 You want to move the on-hand inventory of items *item-1* and *item-2* to a new location, *new-location*. Therefore, you create an inventory movement on the parent license plate, *LP-PARENT*. By moving the parent license plate, you transfer all the nested on-hand inventory in the sequence of license plates to the new location in a single action.
 
-To verify the on-hand movement, follow these steps.
+To verify the on-hand movement, follow these steps:
 
 1. In Supply Chain Management, go to **Inventory and management** \> **Inquiries and reports** \> **On-hand list**.
 1. Filter the results by the two items, *item-1* and *item-2*.

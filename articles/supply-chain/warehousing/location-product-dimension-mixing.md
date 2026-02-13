@@ -16,10 +16,6 @@ ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReser
 
 Location product dimension mixing is location profile functionality that helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 
-## Turn the Location product dimension mixing feature on or off
-
-To use the functionality described in this article, the *Location product dimension mixing* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location product dimension mixing* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Setup
 
 Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location. Therefore, all locations that use the same location profile will be able to allow product dimension mixing after it has been set up.
@@ -155,7 +151,7 @@ Every location in the warehouse needs to have a location profile associated with
 
 ## Scenario
 
-This demo scenario shows how two different product variants can be put to the same location when the location profile doesn't allow for mixed items, but the *Location product dimension mixing* feature is enabled. In this case, you will use the **Size** variant as the criterion.
+This demo scenario shows how two different product variants can be put to the same location when the location profile doesn't allow for mixed items. In this case, you will use the **Size** variant as the criterion.
 
 Before you begin, make sure that there are empty locations in warehouse *24* that use the *BULK* location profile.
 

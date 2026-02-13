@@ -29,7 +29,7 @@ If negative physical inventory is allowed, the cleanup job might not be able to 
 The on-hand entries cleanup job is available at **Inventory management \> Periodic tasks \> Clean up \> Warehouse management on-hand entries cleanup**. Use the standard job settings to control the scope and schedule for running the job. In addition, the following settings are provided:
 
 - **Delete if not updated for this many days** – Enter the minimum number of days that the job should wait before it deletes an on-hand entry that has dropped to zero quantity. Use this setting to help reduce the risk of deleting on-hand entries that are still being used. If you want cleanup to occur as soon as possible, either enter *0* (zero) or leave the field blank.
-- **Maximum execution time (hours)** – Enter the maximum execution time of the cleanup job, in hours. If the job isn't completed before this time passes, it will save the work that it has completed so far and then close itself. This capability is especially relevant for implementations that have high inventory use. In these cases, you should schedule the job to run at times when the system load is as light as possible. If you want the batch job to continue to run until it's completed, either enter *0* (zero) or leave the field blank. This setting is available only if the related feature has been [turned on for your system](#max-execution-time).
+- **Maximum execution time (hours)** – Enter the maximum execution time of the cleanup job, in hours. If the job isn't completed before this time passes, it will save the work that it has completed so far and then close itself. This capability is especially relevant for implementations that have high inventory use. In these cases, you should schedule the job to run at times when the system load is as light as possible. If you want the batch job to continue to run until it's completed, either enter *0* (zero) or leave the field blank.
 
 Although you can run the job during regular business hours, we recommend that you run it outside working hours. In this way, you help prevent conflicts that can occur if a user is working with a record that is also being cleaned up.
 
@@ -45,9 +45,5 @@ Users might be affected if the on-hand entries cleanup job deletes all the recor
 - In a **Physical inventory by inventory dimension** report for past periods, when the user sets the **As of date** parameter.
 
 However, the performance improvement that the cleanup job provides should make up for these small losses in functionality.
-
-## <a name="max-execution-time"></a>Make the Maximum execution time setting available
-
-The **Maximum execution time** setting is only available when the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature is turned on. As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

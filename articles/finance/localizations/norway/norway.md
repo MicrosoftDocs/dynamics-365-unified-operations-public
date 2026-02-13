@@ -1,10 +1,10 @@
 ---
 title: Norway overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Norway, including links to resources about payment information.
-author: kfend
-ms.author: kfend
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 10/01/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
@@ -22,7 +22,6 @@ This article provides links to documentation resources for Norway.
 - [Customer payment based on payment ID](no-00002-customer-payment-based-payment-id.md)
 - [Nets import format](emea-nor-nets-import-format.md)
 - [Tax reconciliation report](../europe/emea-tax-reconciliation-report.md)
-- [VAT statement](emea-nor-sales-tax-payment-report.md)
 - [VAT return with direct submission to Altinn](emea-nor-vat-return.md)
 - [Standard Audit File for Tax (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
 - [Cash register functionality](../../../commerce/localizations/norway/emea-nor-cash-registers.md)

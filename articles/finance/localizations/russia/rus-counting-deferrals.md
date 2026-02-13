@@ -22,7 +22,7 @@ The deferrals functionality supports the process of deferrals counting and lets 
 
 Before you generate the Inventory act (INV-11) report, you must create deferrals and post writing-off transactions in the deferrals journal.
 
-To prepare and generate the Inventory act (INV-11) report, follow these steps.
+To prepare and generate the Inventory act (INV-11) report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Deferrals** \> **Deferrals counting journal**.
 

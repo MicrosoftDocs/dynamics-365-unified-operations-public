@@ -41,7 +41,7 @@ For more information about how to set up deferrals, see [Set up deferrals (Russi
 
 When you sell fixed assets at a loss in bookkeeping accounting and tax accounting, a deferral must be created for the amount that is lost from the sale. To create a deferral automatically, follow these steps before you sell a fixed asset.
 
-To set up deferral creation when you sell fixed assets, follow these steps.
+To set up deferral creation when you sell fixed assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets.** In the master record for the fixed asset, on the Action Pane, select **Value models**.
 2. Select a **TAX** value model.
@@ -54,7 +54,7 @@ To set up deferral creation when you sell fixed assets, follow these steps.
 
 You can also set up automatic creation of deferrals for the depreciation group of fixed assets.
 
-To set up automatic creation of deferrals for the depreciation group of fixed assets, follow these steps.
+To set up automatic creation of deferrals for the depreciation group of fixed assets, follow these steps:
 
 1. On the **Depreciation groups** page, select a **TAX** value model and a depreciation group.
 2. On the **Deferrals** FastTab, add a line, and set the fields that are described in the previous procedure. When you create value models in the fixed asset master record, the **Deferrals** FastTab is automatically filled in.
@@ -98,7 +98,7 @@ The following two examples use the **RUMF** company:
    
 #### Example: Deferrals are automatically created when fixed assets are sold at a loss
 
-To walk through the example of how deferrals are automatically created when fixed assets are sold at a loss, follow these steps.
+To walk through the example of how deferrals are automatically created when fixed assets are sold at a loss, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Deferrals groups** page (**General ledger** \> **Deferrals**), create the following deferrals group.
 
@@ -211,7 +211,7 @@ To walk through the example of how deferrals are automatically created when fixe
 
 #### Example: Deferrals are automatically created by using a periodic task
 
-To walk through the example of how deferrals are automatically created by using a periodic task, follow these steps.
+To walk through the example of how deferrals are automatically created by using a periodic task, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Deferrals setup** \> **Value models**, and verify that the following value models and deferral groups are created.
 

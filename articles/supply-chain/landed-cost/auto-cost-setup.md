@@ -1,8 +1,8 @@
 ---
 title: Auto costs setup
 description: Learn how to set up cost rules for various inbound voyage levels. Based on these rules, the system calculates the costs and automatically adds them.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

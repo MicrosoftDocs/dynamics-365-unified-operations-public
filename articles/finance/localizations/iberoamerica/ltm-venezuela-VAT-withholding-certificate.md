@@ -45,7 +45,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 ## Configure application-specific parameters for the VAT withholding certificate
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. Select the **VAT Withholding certificate** format.
@@ -64,7 +64,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the VAT withholding certificate
 
-To generate the VAT withholding certificate follow these steps.
+To generate the VAT withholding certificate follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select **VAT Withholding certificate**.

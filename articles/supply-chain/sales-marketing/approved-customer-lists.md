@@ -1,5 +1,5 @@
 ﻿---
-title: Approved customer lists (preview)
+title: Approved customer lists
 description: Learn how to use approved customer lists (ACLs) to control which products specific customers can buy and when they can buy them.
 author: johanhoffmann
 ms.author: johanho
@@ -11,25 +11,20 @@ ms.custom:
   - bap-template
 ---
 
-# Approved customer lists (preview)
+# Approved customer lists
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 You might sell products and services on a recurring basis to specific customers or groups of customers who are preapproved for these purchases based on their previous and ongoing business relationship. By preapproving customers, you expedite the sales order process and shipment of the product. In addition, you ensure that the product is sold only to customers who are authorized to buy it and prevent it from being sold to other customers.
 
 For example, you're a manufacturer of apple juice. One of your long-time customers, Super Club, can buy only its own privately labeled products. Super Club sells these products at both its Super Club warehouse location and its retail location, Super Mart. Therefore, you sell Super Club's privately labeled apple juice cases only to Super Club Warehouse and Super Mart. This product can't be sold to any other customer.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
+- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both of these features are turned on by default.
     - *Advanced quality management*
     - *Approved customer list*
 
@@ -50,7 +45,7 @@ In addition, you set up the approved customer list (ACL) check method to define 
 
 When you approve a product for a customer by setting up a customer/item relationship, you also set up the ACL check method at both the customer level and the item level. The ACL check method is used to validate the combination of the customer and the item. In other words, it confirms that the customer is authorized to buy the item.
 
-To set up the ACL check method for products and customers, follow these steps.
+To set up the ACL check method for products and customers, follow these steps:
 
 - Go to **Product information management** \> **Products** \> **Released products**. On the **Sell** FastTab, in the **Approved customer list check method** field, select the method.
 - Go to **Sales and marketing** \> **Customers** \> **All customers**. On the **Sales order defaults** FastTab, in the **Approved customer list check method** field, select the method.

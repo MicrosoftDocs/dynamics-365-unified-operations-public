@@ -30,7 +30,7 @@ For more information about CSP, see [Content Security Policy Reference](https://
 
 To prevent CSP from applying policies to your site, you can turn it off for that site in site builder.
 
-To turn off CSP for a site, follow these steps.
+To turn off CSP for a site, follow these steps:
 
 1. In site builder, select the site you are working on.
 1. Select **Site settings**, and then select the **Extensions** tab.
@@ -44,7 +44,7 @@ To turn off CSP for a site, follow these steps.
 
 If CSP is enabled, content security policy will not be enforced, but any violations will be reported to URIs specified by the report-uri directive.
 
-To enable report only mode, follow these steps.
+To enable report only mode, follow these steps:
 
 1. In site builder, select the site you are working on.
 1. Select **Site settings**, and then select the **Extensions** tab.
@@ -54,7 +54,7 @@ To enable report only mode, follow these steps.
 
 Enabling nonce (number used once) will block the execution of all inline scripts except those specified within the [inline script](../e-commerce-extensibility/script-injector.md) module. A unique cryptographic nonce is generated and added to each script specified in the CSP header.
 
-To enable nonce, follow these steps.
+To enable nonce, follow these steps:
 
 1. In site builder, select the site you are working on.
 1. Select **Site settings**, and then select the **Extensions** tab.

@@ -15,12 +15,6 @@ ms.search.form: RouteInventProd
 
 The *Infinite capacity scheduling for Planning Optimization* feature introduces scheduling that is based on route information. It lets you schedule jobs based on a wide range of route setups. Scheduling covers frequently used route settings, including the route operation sequence or requirements for route operation resources.
 
-## Turn the infinite capacity scheduling feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-For more information about this feature, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).
-
 ## Added functionality
 
 The *Infinite capacity scheduling for Planning Optimization* feature enables job scheduling that is based on route information. Therefore, a route setup can be used to schedule production processes. Although this feature has some limitations that the deprecated master planning engine doesn't have, it supports the most common functionality that is required for manufacturing scenarios.
@@ -53,3 +47,7 @@ The following limitations apply when you use the *Infinite capacity scheduling f
 - The feature doesn't support resource load functionality.
 - The feature doesn't consider route scrap.
 - The feature supports *Duration* only as the primary resource selection.
+
+## Related information
+
+- [Scheduling with resource selection based on capability](capability-based-scheduling.md)

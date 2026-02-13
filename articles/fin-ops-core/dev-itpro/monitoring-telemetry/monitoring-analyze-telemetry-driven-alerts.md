@@ -33,7 +33,7 @@ You can use the following tools to define and set up alerts on telemetry events:
 
 ### Create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)]
 
-To create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps.
+To create alerts in [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)], follow these steps:
 
 1. In the [Azure portal](https://portal.azure.com), find your Application Insights resource.
 1. In the left pane, select **Alerts**.

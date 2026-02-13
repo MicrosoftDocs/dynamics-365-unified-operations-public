@@ -4,7 +4,7 @@
 title: Human resources to bookable resource integration
 description: This article provides details about the integration of Microsoft Dynamics 365 Human Resources workers to bookable resources.
 author: twheeloc
-ms.date: 5/15/2024
+ms.date: 12/02/2025
 ms.topic: article
 ms.reviewer: twheeloc
 # optional metadata
@@ -28,7 +28,7 @@ ms.custom: sfi-image-nochange
 
 # Human resources to bookable resource integration
 
-Human resources to bookable resource integration enables organizations to integrate their worker information. By bringing together worker information, including information about skills and proficiencies, the integration enhances the resource manager's experience and helps them find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics. This data no longer has to be entered and maintained in both Microsoft Dynamics 365 Project operations and other areas that use the Universal Resource Scheduling (URS) solution for resource scheduling.
+Human resources to bookable resource integration enable organizations to integrate their worker information. By bringing together worker information, including information about skills and proficiencies, the integration enhances the resource manager's experience and helps them find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics. This data no longer has to be entered and maintained in both Microsoft Dynamics 365 Project operations and other areas that use the Universal Resource Scheduling (URS) solution for resource scheduling.
 
 This feature enables resource managers to:
 
@@ -86,7 +86,7 @@ Follow these steps to install the integration from Power Platform admin center:
 
 ![Install Dynamics 365 Human Resources integration to URS](./media/Installing.jpg)
 
-5. Agree to the terms of service to install the app.
+5. To install the app, agree to the terms of service.
 
     While solution installation is in progress, the status is **Installing**. After the solution is installed, the status is changed to **Installed**.
 
@@ -133,7 +133,7 @@ In addition to providing dual-write maps, the solution includes virtual entities
 Relevant business events are registered in Human resources. Then, when there are changes to the entities, Dataverse can consume those changes.
 
 > [!NOTE]
-> The Dynamics 365 Human Resources integration to URS app allows the **Worker** field to be editable when a new bookable resource is created. The **Worker** field isn't editable for an existing resource or after the record is saved. However, linking an existing resource to a worker can be manually made in dataverse through the Power Platform.
+> The Dynamics 365 Human Resources integration to URS app allows the **Worker** field to be editable when a new bookable resource is created. The **Worker** field isn't editable for an existing resource or after the record is saved. However, linking an existing resource to a worker can be manually made in Dataverse through the Power Platform.
 
 ## Create skills
 
@@ -141,7 +141,7 @@ You can track your workers' skills in Human resources. You can also specify the 
 
 ## Create certificates
 
-You can track workers' certificates in Human resources by creating a library of certificate types and certificates. Certificates can then be added to a worker record to indicate the certificates that the worker has earned. You can also specify the certificates that are required for a specific job.
+You can track workers' certificates in Human resources by creating a library of certificate types and certificates. Certificates can then be added to a worker record to indicate the certificates that the worker earned. You can also specify the certificates that are required for a specific job.
 
 ## Define skills and proficiencies in Project Operations
 
@@ -149,4 +149,4 @@ Skills are resource characteristics that are shared between Project Operations a
 
 ## Turn off the integration
 
-If the integration is turned off, the field on bookable resources is removed. The data that's associated with the field is also removed. Any characteristics that were added on the worker through the integration remain on the bookable resource after the integration is turned off.
+If the integration is turned off, the field on bookable resources is removed. Data associated with the field is also removed. Any characteristics that were added on the worker through the integration remain on the bookable resource after the integration is turned off.

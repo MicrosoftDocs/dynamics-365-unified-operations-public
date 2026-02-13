@@ -67,14 +67,14 @@ Configure a SharePoint folder as a source location for incoming vendor invoice f
 
 ### Configure vendor data
 
-During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps.
+During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
 2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number is used to identify the vendor during import, by matching it to the value of the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the import XML file.
 
 ### Configure products
 
-During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps.
+During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 2. Select a product, and then, on the **Purchase** menu, in the **Related information** section, select **External item description**.
@@ -94,7 +94,7 @@ You can configure external codes for units of measure, if specific units are exp
 
 ## Import vendor electronic invoices
 
-To run the import of vendor electronic invoices, follow these steps.
+To run the import of vendor electronic invoices, follow these steps:
 
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Import vendor invoices**.
 2. On the **Electronic report parameters** page, on the **File source** FastTab, in the **Source settings** field, select the source location for batch mode import. If no source is defined for batch import, the system prompts you to select a single file for import.

@@ -23,10 +23,6 @@ This article provides a collection of scenarios that explore the cycle counting 
 
 Each scenario in this article references values and records that are included in the standard demo data that is provided for Supply Chain Management. If you want to use the values that are provided here as you work through the scenarios, be sure to work in an environment where the demo data is installed, and set the legal entity (company) to **USMF** before you begin.
 
-### Turn on support for the Warehouse Management mobile app
-
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ### <a name= "prepare-demo-data"></a>Prepare demo data for the scenarios
 
 Follow these steps to confirm that all the demo data that is required for the scenarios is available in the USMF company in your system. Create any records or values that are missing.

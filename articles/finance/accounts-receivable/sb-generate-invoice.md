@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 10.0.24
 
 Billing schedules use the standard sales order process to bill customers. Sales orders are created and can be automatically invoiced by selecting **Generate invoice**.
 
-To bill a customer for the recurring charges, follow these steps.
+To bill a customer for the recurring charges, follow these steps:
 
 1. On the **Billing schedules** page, select **Billing schedule \> Generate invoice**.
 2. Set up the billing schedule lines. 

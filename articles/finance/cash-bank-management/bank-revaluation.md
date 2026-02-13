@@ -35,7 +35,7 @@ Before you run the revaluation process, the following setup is required.
 - On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company. If no accounts are defined, the accounts from the **Ledger** page are used.
 - On the **Cash and bank management parameters** page, on the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 
-In version 10.0.39, the **Exchange rate type enhancement for bank foreign currency revaluation** feature is available. This feature lets you use additional exchange rate types for foreign currency revaluation. You can define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or bank account. When you run foreign currency revaluation, these defined exchange rate types override the default type that's defined in the ledger setup.
+The **Exchange rate type enhancement for bank foreign currency revaluation** feature lets you use additional exchange rate types for foreign currency revaluation. You can define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or bank account. When you run foreign currency revaluation, these defined exchange rate types override the default type that's defined in the ledger setup.
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 2. On the **General** tab, in the **Exchange rate type source** field, select one of the following values:
@@ -68,7 +68,7 @@ Select **OK** to process the foreign currency revaluation. A record is created t
 
 ## Calculate unrealized gain/loss
 
-In Cash and bank management, the bank currency is considered to be the base currency and it is not revalued. The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the **Exchange rate date**. The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the **Exchange rate date**.
+In Cash and bank management, the bank currency is considered to be the base currency and it isn't revalued. The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the **Exchange rate date**. The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the **Exchange rate date**.
 
 A transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the accounting currency. Another transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the reporting currency. The entries for these transactions are marked as reconciled. 
 
@@ -78,7 +78,7 @@ The foreign currency revaluation transaction is also split across the dimensions
 
 #### Bank foreign currency revaluation enhancement
 
-As of Dynamics 365 Finance version 10.0.36, a new **Enhancements to bank foreign currency revaluation** feature is available. This feature provides an alternative way to calculate bank foreign currency revaluation. Before this feature, the process of bank foreign currency revaluation considered every financial dimension value when it calculated the gain or loss. This feature enables organizations to select all or none of the financial dimensions when the gain or loss is calculated. In addition, this feature changes the calculation logic. It calculates the balance of the bank account by considering either all financial dimensions or no financial dimensions. It then calculates the unrealized gain or loss per ledger account. 
+The **Enhancements to bank foreign currency revaluation** feature provides an alternative way to calculate bank foreign currency revaluation. This feature enables organizations to select all or none of the financial dimensions when the gain or loss is calculated. In addition, this feature changes the calculation logic. It calculates the balance of the bank account by considering either all financial dimensions or no financial dimensions. It then calculates the unrealized gain or loss per ledger account. 
 
 > [!IMPORTANT]
 > After this feature is enabled, it can't be disabled.

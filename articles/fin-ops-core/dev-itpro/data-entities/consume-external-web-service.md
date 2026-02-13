@@ -1,9 +1,9 @@
 ---
 title: Consume external web services
 description: Learn how to consume external web services in finance and operations apps, including various X++ examples for creating classes and web services.
-author: sericks007
-ms.author: sericks
-ms.date: 11/10/2017
+author: johnmichalak
+ms.author: johnmichalak
+ms.date: 10/29/2025
 ms.topic: how-to
 ms.reviewer: johnmichalak
 audience: Developer
@@ -18,15 +18,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can consume web services by adding new class libraries. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported.
+Consume web services by adding new class libraries. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps changed. Application Integration Framework (AIF) is no longer supported.
 
-The following steps show how to consume an external StockQuote service from X++.
+The following steps show how to consume an external StockQuote service from X++.
 
-Note that the web service URL in this sample is fictional.  There is no known web service at http://www.contoso.net/stockquote.asmx.  To make this code work you will need to adapt it to your specific web service.
+The web service URL in this sample is fictional. No known web service exists at `http://www.contoso.net/stockquote.asmx`. To make this code work you need to adapt it to your specific web service.
 
 1. Create a new Class Library project in Visual Studio, and name it **ExternalServiceLibrary.csproj**.
-2. In the Visual Studio project, add a service reference to the external web service: `http://www.contoso.net/stockquote.asmx`.
-3. Create a new static class, and wrap the StockQuote service operation as shown in the following example.
+1. In the Visual Studio project, add a service reference to the external web service: `http://www.contoso.net/stockquote.asmx`.
+1. Create a new static class, and wrap the StockQuote service operation as shown in the following example.
 
     ```xpp
     public static string GetQuote(string s)
@@ -40,10 +40,10 @@ Note that the web service URL in this sample is fictional.  There is no known we
     }
     ```
 
-4. Build the project. The binary ExternalServiceLibrary.dll is created.
-5. Create a new Dynamics project in Visual Studio.
-6. Add **ExternalServiceLibrary.dll** as a reference.
-7. In the X++ class, you can use the external web services that were referenced in ExternalServiceLibrary.dll.
+1. Build the project. The binary ExternalServiceLibrary.dll is created.
+1. Create a new Dynamics project in Visual Studio.
+1. Add **ExternalServiceLibrary.dll** as a reference.
+1. In the X++ class, use the external web services that are referenced in ExternalServiceLibrary.dll.
 
     ```xpp
     public static void main(Args _args)
@@ -52,6 +52,4 @@ Note that the web service URL in this sample is fictional.  There is no known we
     }
     ```
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

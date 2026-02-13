@@ -31,7 +31,7 @@ Set up the settlement periods for all taxes except value-added tax (VAT). The se
 
 ### Set up taxes that are automatically processed
 
-To set up taxes that are automatically processed, follow these steps.
+To set up taxes that are automatically processed, follow these steps:
 
 1. Create expense codes for taxes. Learn more in [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 2. Create ledger posting groups for taxes. Learn more in [Set up a posting group](rus-local-specific-posting-sales-vat.md#set-up-a-posting-group).
@@ -39,7 +39,7 @@ To set up taxes that are automatically processed, follow these steps.
 
 Set up sales tax relations between the sales tax code and the expense code, as shown in the following example procedure to set up the relations for VAT.
 
-To walk through the example, follow these steps.
+To walk through the example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Sales tax relations**.
 2. Select **New**.

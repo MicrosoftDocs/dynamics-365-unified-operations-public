@@ -24,13 +24,14 @@ Accounting distributions are used to define how an amount will be accounted for,
 
 You can use the following buttons on the **Free text invoice** page to view, and possibly change, the accounting distributions for each amount on the free text invoice.
 
--   **Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges. You can also view and change the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
-    -   Change free text invoice header amounts, such as charges or currency rounding amounts.
-    -   Change free text invoice line amounts.
--   **View distributions**—View the accounting distributions for all lines on the document. You can't change the accounting distributions from this view.
-    -   View header and line amounts.
+- **Distribute amounts** – View and change the accounting distributions for an individual line and any child lines, such as taxes or charges. You can also view and change the accounting distributions for the child line directly from the **Sales tax transactions** page or the **Charges transactions** page.
+    - Change free text invoice header amounts, such as charges or currency rounding amounts.
+    - Change free text invoice line amounts.
+- **View distributions** – View the accounting distributions for all lines on the document. You can't change the accounting distributions from this view.
+    - View header and line amounts.
 
 ## Distributing amounts
+
 When you enter a free text invoice, each amount will be distributed as follows.
 
 <table>
@@ -112,18 +113,17 @@ When you enter a free text invoice, each amount will be distributed as follows.
 </table>
 
 ## Distributing taxes
+
 Accounting distributions for taxes cannot be created until taxes are calculated. To calculate sales taxes, you must complete one of the following tasks on the **Free text invoice** page:
--   View the sales tax.
--   View the invoice total.
--   View the cash flow.
--   View accounting distributions for the whole free text invoice.
--   View the subledger journal.
+
+- View the sales tax.
+- View the invoice total.
+- View the cash flow.
+- View accounting distributions for the whole free text invoice.
+- View the subledger journal.
 
 ## Subledger journals for free text invoices
+
 Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry. Instead, you must change the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit or the credit. The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

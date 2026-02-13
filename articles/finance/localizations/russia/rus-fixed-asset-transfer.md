@@ -22,7 +22,7 @@ You can transfer fixed assets from one location or person who is in charge to an
 
 ## Transfer multiple assets by using the Fixed asset transfer journal
 
-To transfer a fixed asset or a group of fixed assets from one location or person in charge to another location or person in charge, follow these steps.
+To transfer a fixed asset or a group of fixed assets from one location or person in charge to another location or person in charge, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Transfer journals \> FA transfer**.
 1. Select **New**, and enter the required details.
@@ -45,7 +45,7 @@ You can create individual transfer transactions to transfer assets to another co
 
 Before you create fixed asset transfers between companies, you must adjust the settings of the value models.
 
-To adjust the value model settings to transfer an asset, follow these steps.
+To adjust the value model settings to transfer an asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Value models**, and create a value model.
 1. On the **Map** FastTab, in the **Company accounts ID** field, select the code for the company to transfer the asset to.
@@ -53,7 +53,7 @@ To adjust the value model settings to transfer an asset, follow these steps.
 
 ### Transfer an asset to another company
 
-To transfer an asset to another company, follow these steps.
+To transfer an asset to another company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**, and select the asset to transfer.
 1. On the Action Pane, on the **Fixed asset** tab, in the **History** group, select **Transference**.
@@ -74,7 +74,7 @@ A record can also be automatically created on the **Transference to another comp
 
 ### Transfer a group of fixed assets
 
-To transfer a group of fixed assets, follow these steps.
+To transfer a group of fixed assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Transfer journals \> Transference to another company**.
 1. Select **New** to create a line, and then, in the **Date** field, enter the date of the asset transfer.
@@ -111,7 +111,7 @@ To transfer a group of fixed assets, follow these steps.
 
 You can register the receipt of several fixed assets or inventory assets at the same time.
 
-To receive a group of fixed assets from another company, follow these steps.
+To receive a group of fixed assets from another company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Transfer journals \> Receipt from another company**, and create a journal.
 1. In the **Date** field, enter the date of the transfer of assets from the other company.
@@ -139,7 +139,7 @@ To receive a group of fixed assets from another company, follow these steps.
 
 #### Automatically create lines
 
-To automatically create lines, follow these steps.
+To automatically create lines, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Receipt from another company** page, select **Create from FA transference journal**.
 1. On the **Adding fixed assets from issue journals for another company** page, in the upper pane, select the journal. Then select **Copy journal** to copy all the information from the specified transfer journal to the receipt journal.
@@ -162,7 +162,7 @@ To automatically create lines, follow these steps.
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
 
-To reverse fixed asset transfer transactions, follow these steps.
+To reverse fixed asset transfer transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
 1. On the **FA value models** page, on the Action Pane, select **Transactions**.

@@ -1,8 +1,8 @@
 --- 
 title: Create an operating unit
 description: Learn how to create an operating unit, an organization that is used to divide the control of economic resources and operational processes in a business. 
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 08/14/2019
 ms.custom:

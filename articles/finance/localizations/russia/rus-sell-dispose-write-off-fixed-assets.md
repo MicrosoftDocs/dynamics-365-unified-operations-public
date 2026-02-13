@@ -52,7 +52,7 @@ However, if the invoice expenses are included in the order line that corresponds
 
 ## Set up the automatic creation of a deferrals account
 
-To set up the automatic creation of a deferrals account, follow these steps.
+To set up the automatic creation of a deferrals account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets** \> **Setup** \> **Depreciation group**.
 1. Select the **Deferrals** FastTab, and then set up the parameters for creating deferrals when a loss is realized.
@@ -61,7 +61,7 @@ To set up the automatic creation of a deferrals account, follow these steps.
 
 ## Create a sales order for a fixed asset
 
-To create a sales order for a fixed asset, follow these steps.
+To create a sales order for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders** and create a new sales order.
 1. Enter information about the sales order.
@@ -77,7 +77,7 @@ To create a sales order for a fixed asset, follow these steps.
 
 ## Create a free text invoice for a fixed asset
 
-To create a free text invoice for a fixed asset, follow these steps.
+To create a free text invoice for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Common** \> **Free text invoices** \> **All free text invoices**.
 1. Press CTRL+N to create a new invoice. For more information, see [Create a free text invoice template](../../accounts-receivable/create-free-text-invoice-template-new.md).
@@ -109,7 +109,7 @@ To reverse a disposal transaction, create a credit note for the sales order or f
 
 By default, when you reverse a trnasaction, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
 
-To reverse write-off and disposal transactions, follow these steps.
+To reverse write-off and disposal transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
 1. On the **FA value models** page, on the Action Pane, select **Transactions**.

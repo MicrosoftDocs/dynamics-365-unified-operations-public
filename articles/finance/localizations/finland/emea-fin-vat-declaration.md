@@ -122,7 +122,7 @@ When the journal line is posted with the **Sales tax receivable** tax direction,
 6. If you must report the corrections, on the **Special report** section, set **Include corrections** to **Yes**.
 
 If you're configuring the VAT declaration for Finland in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md),
-follow these steps.
+follow these steps:
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **FIN**, select the **VAT Declaration Excel (FI)** ER format.

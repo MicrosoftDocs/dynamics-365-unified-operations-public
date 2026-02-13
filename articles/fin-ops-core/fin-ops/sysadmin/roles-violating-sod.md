@@ -22,7 +22,7 @@ The **Roles violating segregation of duties** view shows all roles that violate 
 
 ## View violations for a selected role
 
-To view violations of segregation of duties rules, follow these steps.
+To view violations of segregation of duties rules, follow these steps:
 1. Activate the **Summary** tab on the **Roles violating segregation of duties** view.
 2. Under the **Security roles** grid, select the specific role to see segregation of duties violation.
 3. On this grid, you see the role name and total count of segregation of rules set up.

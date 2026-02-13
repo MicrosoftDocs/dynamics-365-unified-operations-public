@@ -37,7 +37,7 @@ For information about the most current changes for 1099 reporting for calendar y
 
 ## Example of a typical year-end 1099 process
 
-To generate an export file or a printed 1099 statement that you can send to a vendor, the IRS, or a tax preparer, follow these steps.
+To generate an export file or a printed 1099 statement that you can send to a vendor, the IRS, or a tax preparer, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **1099 fields** page (**Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **1099 fields**) and verify the information in the fields.
 2. Verify the minimum amounts that are required for 1099 reporting for the current tax year.
@@ -89,7 +89,7 @@ The IRS has released a new form, 1099-NEC, that is used to report non-employee c
 
 You can specify how the total ordinary dividend amounts will be reported for 1099-DIV processing. By specifying whether ordinary dividend amounts should be totaled for 1099-DIV processing, you can help make it easier to ensure regulatory compliance. 
 
-To run the 1099-DIV reporting process, follow these steps.
+To run the 1099-DIV reporting process, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**. 
 To report the summed result in Box 1a of the 1099-DIV, go to the **Vendor settlement for 1099s** page and select the **Box 1a represents sum of box 1a and 1b** option. This feature is available only if the **1099-DIV reporting options** feature is enabled in the **Feature management** workspace.
@@ -100,7 +100,7 @@ You can update the value in the **1099 box** on vendor records and update transa
 
 Before you can update 1099 information for multiple vendors, the feature must be enabled in the **Feature management** workspace. 
 
-To enable the feature, follow these steps.
+To enable the feature, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Systems administration** \> **Workspaces** \> **Feature management**.
 1. Find and select the **Update tax 1099 information for multiple vendors** feature.

@@ -94,10 +94,10 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
     Here is an explanation of the parameters that are used in this command:
 
-  - **\[runbookID\]**– A parameter that is specified by the developer who applies the deployable package.
-  - **\[topologyFile\]**– The path of the DefaultTopologyData.xml file.
-  - **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file.
-  - **\[runbookFile\]**– The name of the runbook file to generate (for example, **AOSRunbook.xml**).
+  - **\[runbookID\]** – A parameter that is specified by the developer who applies the deployable package.
+  - **\[topologyFile\]** – The path of the DefaultTopologyData.xml file.
+  - **\[serviceModelFile\]** – The path of the DefaultServiceModelData.xml file.
+  - **\[runbookFile\]** – The name of the runbook file to generate (for example, **AOSRunbook.xml**).
 
     **Example**
 

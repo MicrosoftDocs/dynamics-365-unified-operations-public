@@ -175,9 +175,9 @@ When you use the STL method to handle outliers, you must also set the **Select s
 - **Description** – A short description of the step.
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. Learn about each of the available algorithms in [Demand forecasting algorithms](forecast-algorithm-types.md). The following algorithms are available:
-
     - *Best fit model - version 1*
     - *Best fit model - version 2 (preview)*
+    - *Best fit model - version 3 (preview)*
     - *ARIMA* (auto regressive integrated moving average)
     - *ETS* (error, trend, seasonality)
     - *Prophet*
@@ -192,11 +192,11 @@ When you use the STL method to handle outliers, you must also set the **Select s
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-*Forecast with signals* steps generate a forecast based on two input time series. They always use the XGBoost demand forecasting algorithm. Learn about this algorithm in [Demand forecasting algorithms](forecast-algorithm-types.md).
+*Forecast with signals* steps generate a forecast based on multiple input time series. They always use the XGBoost demand forecasting algorithm. Learn about this algorithm in [Demand forecasting algorithms](forecast-algorithm-types.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-You can use this type of step only if your forecast model has at least two parallel branches: one that starts with an *Input* step and one that starts with a *Signal* step. The first branch is the one where you create the step. To specify the second branch, open the **Action** menu for the *Forecast with signals* step, select **Connect with**, and then select the step to connect to. The flowchart is then updated so that it shows the two branches combining at the *Forecast with signals* step.
+You can use this type of step only if your forecast model has at least two parallel branches: one that starts with an *Input* step and up to five others that start with a *Signal* step. The first branch is the one where you create the step. To specify a second branch, open the **Action** menu for the *Forecast with signals* step, select **Connect with**, and then select the step to connect to. The flowchart is then updated so that it shows the branches combining at the *Forecast with signals* step. You can add up to five signal branches.
 
 *Forecast with signals* steps have the following settings:
 

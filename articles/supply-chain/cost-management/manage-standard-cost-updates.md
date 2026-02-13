@@ -1,8 +1,8 @@
 ---
 title: Manage standard cost updates
 description: Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion, InventItemPrice, InventParameters
 ms.topic: how-to

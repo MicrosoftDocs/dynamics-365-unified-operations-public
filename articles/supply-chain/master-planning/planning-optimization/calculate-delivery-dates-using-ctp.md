@@ -86,7 +86,7 @@ The system can use any of several methods to calculate delivery date estimates f
 
 ### <a name="global-default"></a>Set the global default delivery date control
 
-The default delivery date control method will be applied to all new order lines where an override doesn't apply. To select one, follow these steps.
+The default delivery date control method will be applied to all new order lines where an override doesn't apply. To select one, follow these steps:
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Shipments** tab, on the **Delivery control** FastTab, in the **Delivery date control** field, select the method that you want to use as the default method for your company:
@@ -114,7 +114,7 @@ When you use Batch CTP, you must run a dynamic plan to trigger the system to do 
 
 To ensure that the dates are available in good time for all users, we recommend that you set up batch jobs to run the relevant plans on a recurring basis. For example, a batch job that is set up to run a dynamic plan every 30 minutes will set the confirmed ship and receive dates every 30 minutes. Therefore, users who enter and import orders will have to wait a maximum of 30 minutes to get the confirmed ship and receive dates.
 
-To set up a batch job to run a dynamic plan on a regular schedule, follow these steps.
+To set up a batch job to run a dynamic plan on a regular schedule, follow these steps:
 
 1. Go to **Master planning \> Master planning \> Run \> Master planning**.
 1. In the **Master planning** dialog box, on the **Parameters** FastTab, set the **Master plan** field to the dynamic plan that you want to run.
@@ -169,7 +169,7 @@ You can change the **Delivery date control** value for any open order at any tim
 
 ### Change to CTP at the order header level
 
-To change an order so that it uses CTP at the order header level, follow these steps.
+To change an order so that it uses CTP at the order header level, follow these steps:
 
 1. Go to **Accounts receivable \> Orders \> All sales orders**.
 1. Open the sales order that you want to set up, or create a new one.
@@ -185,7 +185,7 @@ To change an order so that it uses CTP at the order header level, follow these s
 
 If you created an order line by using a different delivery date control method, you can change to CTP at any time. Changes that you make at the line level don't affect any other lines. However, they might cause the overall order delivery dates to move forward or backward, depending on how each updated line calculation changes.
 
-To change an order so that it uses CTP at the line level, follow these steps.
+To change an order so that it uses CTP at the line level, follow these steps:
 
 1. Go to **Accounts receivable \> Orders \> All sales orders**.
 1. Open the sales order that you want to set up, or create a new one.

@@ -20,7 +20,7 @@ This article describes how to create and post tax adjustment transactions in Bra
 
 Use the following procedure to create and post tax adjustment transactions. The procedure uses the BRMF demo company.
 
-To create and post tax adjustment transactions, follow these steps.
+To create and post tax adjustment transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Financial books \> Journals \> General tax adjustment/benefit/incentive**.
 1. Select **New**.

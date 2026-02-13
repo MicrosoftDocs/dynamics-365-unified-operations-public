@@ -168,7 +168,7 @@ The B2B prospect rejected notification type supports the following additional pl
 
 Before you can map a specific transactional event to an email template, you must create the template.
 
-To create an email template, follow these steps.
+To create an email template, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
 1. Select **New**.
@@ -321,7 +321,7 @@ Receipts can be emailed to customers who make purchases at a retail point of sal
 
 After you've created and tested the HTML for your message body, it must be uploaded to Commerce headquarters. Currently, email HTML can't be exported. Therefore, you must maintain the master copy of your HTML outside Commerce headquarters.
 
-To upload a new or edited email template HTML, follow these steps.
+To upload a new or edited email template HTML, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates**.
 1. Select the row for the language that you want to add or replace HTML for. Alternatively, select **New** to create a row for a new language.

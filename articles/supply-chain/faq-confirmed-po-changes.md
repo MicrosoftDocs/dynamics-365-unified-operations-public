@@ -1,10 +1,10 @@
 ---
 title: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
 description: Access answers to frequently asked questions about the AI technology that's used in the Confirmed purchase orders with changes workspace.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: faq
-ms.date: 02/13/2025
+ms.date: 09/11/2025
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs

@@ -19,7 +19,7 @@ After transactions are posted, it's common for organizations to require visibili
 
 The **Financial tags** (tags) feature eliminates the need to use document numbers, descriptions, or financial dimensions by letting an organization create and enter up to 20 user-defined fields on transactions. Those fields are then stored on the accounting entries that are created for the transactions. Tag values aren't stored in any subledger tables, the Customer transactions or Vendor transactions table.
 
-Tags were introduced in the 10.0.32 release of Dynamics 365 Finance. In each new release, tags are implemented in additional journals, documents, and processes. In the 10.0.37 release, the following journals and transactions added support for tags:
+In each new release, tags are implemented in additional journals, documents, and processes. The following journals and transactions support tags:
 
 - General journal
 - Global general journal

@@ -15,12 +15,6 @@ ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 
 By specifying resource requirements for an operation of a production route, you define what is required to perform that operation. For example, an operation might require a specific resource or a resource group, or a combination of skills or capabilities. This article describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 
-## Turn the capability-based scheduling feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
-For more information about this feature, see [Scheduling with infinite capacity](infinite-capacity-planning.md).
-
 ## Capability-based scheduling
 
 A capability is the ability of an operation resource to perform a specific activity. More than one capability can be assigned to a single operation resource, and a single capability can be assigned to more than one resource. Capabilities can be assigned to all types of resources, such as tools, vendors, machines, locations, facilities, and human resources.
@@ -53,5 +47,9 @@ Next, consider how this example is affected when proficiency levels are used:
 - Resource *00102* has a proficiency level of *10* for the *0059 Assembly* capability.
 
 In this case, during infinite capacity scheduling, the scheduling engine selects resource *00102* to perform operation *10*, because this resource, unlike the resource *00101*, has the required proficiency level for the capability.
+
+## Related information
+
+- [Scheduling with infinite capacity](infinite-capacity-planning.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

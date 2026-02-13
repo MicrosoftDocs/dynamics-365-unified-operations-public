@@ -38,7 +38,7 @@ You can use the **All deferral schedules** or **Active deferral schedules** page
 
 ## Modify a schedule
 
-To modify a deferral schedule, follow these steps.
+To modify a deferral schedule, follow these steps:
 
 1. On the **All deferral schedules** page, select the deferral schedule, and then select **Accounting \> Modify schedule**.
 2. On the **Modify schedule** page, edit the options that you want to change. Depending on the deferral schedule, you won't be able to edit all the options.
@@ -67,7 +67,7 @@ If a line is recognized or externally posted, the **Recognized** checkbox is sel
 
 ## Modify a deferral or recognition account
 
-To modify the deferral or recognition account for a deferral schedule, follow these steps.
+To modify the deferral or recognition account for a deferral schedule, follow these steps:
 
 1. On the **All deferral schedules** page, select the deferral schedule, and then select **Accounting \> Modify account**.
 2. On the **Modify Account** page, select the account that you want to change (deferral, short-term, or recognition).
@@ -78,7 +78,7 @@ To modify the deferral or recognition account for a deferral schedule, follow th
 
 ## Put a deferral schedule on hold
 
-To put a deferral schedule on hold, follow these steps.
+To put a deferral schedule on hold, follow these steps:
 
 1. On the **All deferral schedules** page, select the deferral schedule, and then select **Hold \> Place hold**.
 2. On the **Place hold** page, select whether you want to transfer the balance from the deferral account or the hold account.
@@ -90,7 +90,7 @@ To put a deferral schedule on hold, follow these steps.
 
 ## Remove a hold from a deferral schedule
 
-To remove a deferral schedule from a hold, follow these steps.
+To remove a deferral schedule from a hold, follow these steps:
 
 1. On the **All deferral schedules** list, select the deferral schedule, and then select **Hold \> Remove hold**.
 2. In the **Journal name** field, select the journal name.
@@ -102,7 +102,7 @@ To remove a deferral schedule from a hold, follow these steps.
 > [!NOTE]
 > Any lines that have already been recognized or externally posted are excluded from this process.
 
-To cancel unrecognized amounts on a deferral schedule, follow these steps.
+To cancel unrecognized amounts on a deferral schedule, follow these steps:
 
 1. On the **All deferral schedules** page, select the deferral schedule, and then select **Cancel \> Unrecognized amounts**.
 2. On the **Cancel unrecognized amount** page, select whether you want to create cancellation entries.
@@ -113,7 +113,7 @@ To cancel unrecognized amounts on a deferral schedule, follow these steps.
 
 Use the **All deferral schedules** page to reverse any recognized or externally posted amounts and cancel the deferral schedule to prevent further recognition.
 
-To cancel a whole deferral schedule, follow these steps.
+To cancel a whole deferral schedule, follow these steps:
 
 1. On the **All deferral schedules** page, select the deferral schedule, and then select **Cancel \> Complete schedule**.
 2. On the **Cancel complete schedule** page, select whether you want to create cancellation entries.
@@ -139,7 +139,7 @@ To cancel a whole deferral schedule, follow these steps.
 
 ## Apply or unapply a credit note
 
-To apply a credit note, follow these steps.
+To apply a credit note, follow these steps:
 
 > [!NOTE]
 > When you create a credit note from the **Sales order transaction deferral** page and set the **Adjust existing schedule** option to **Yes**, the credit note is automatically applied to the schedule when the credit note is posted.
@@ -155,7 +155,7 @@ To apply a credit note, follow these steps.
 > [!NOTE]
 > To apply a credit note to several individual items from different invoices, you must repeat these steps.
 
-To unapply a credit note, follow these steps.
+To unapply a credit note, follow these steps:
 
 1. On the **All deferral schedules** page, select the deferral schedule.
 2. In the **Credit adjustments** list, select the invoice, and then select **Unapply**.

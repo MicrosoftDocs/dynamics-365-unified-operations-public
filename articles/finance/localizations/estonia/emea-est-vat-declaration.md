@@ -153,7 +153,7 @@ Follow these steps to define which of the available sales tax transaction attrib
 
 This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-If you're configuring the VAT declaration for Estonia in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+If you're configuring the VAT declaration for Estonia in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps:
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **EST**, select the **VAT Declaration Excel (EE)** ER format.

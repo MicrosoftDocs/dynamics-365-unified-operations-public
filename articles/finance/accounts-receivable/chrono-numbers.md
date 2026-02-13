@@ -1,11 +1,11 @@
 ---
 title: Numbering documents and vouchers chronologically
 description: Learn about how to set up and use chronological numbers for applicable documents and related vouchers, including prerequisites and an outline on configuring numbering.
-author: mrolecki
-ms.author: mrolecki
+author: twheeloc
+ms.author: twheeloc
 ms.topic: concept-article
 ms.date: 02/01/2021
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-03-15

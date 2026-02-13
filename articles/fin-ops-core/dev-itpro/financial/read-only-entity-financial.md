@@ -1,8 +1,8 @@
 ---
 title: Create read-only entities that expose financial dimensions
 description: Learn about how to build an entity for registered transactions, including outlines on creating a basic entity and customizing the basic entity. 
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

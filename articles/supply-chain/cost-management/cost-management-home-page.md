@@ -1,8 +1,8 @@
 ---
 title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
 ms.topic: overview

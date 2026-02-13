@@ -1,8 +1,8 @@
 ---
 title: Fixed receipt price
 description: Learn how you can configure and use fixed receipt prices in Microsoft Dynamics 365 Supply Chain Management with an outline on fixed receipt prices. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventPosting, InventItemGroup, InventModelGroup
 ms.topic: how-to
@@ -31,7 +31,7 @@ When you run the *Inventory close and adjustment* process, the system creates a 
 
 ## Enable fixed receipt prices
 
-To enable fixed receipt prices for an item, follow these steps.
+To enable fixed receipt prices for an item, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Inventory \> Item model groups**.
 2. Create a new item model group, or select an existing model group.

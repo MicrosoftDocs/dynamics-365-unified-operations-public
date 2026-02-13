@@ -1,11 +1,10 @@
 ---
 title: Test modules with module mocks
-description: This article describes how to test modules by using module mocks.
+description: Learn how to test Microsoft Dynamics 365 Commerce modules by using module mocks.
 author: samjarawan
-ms.date: 07/31/2024
+ms.date: 02/05/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to test modules by using module mocks.
+This article describes how to test Microsoft Dynamics 365 Commerce modules by using module mocks.
 
-Modules typically get their data from data actions and configuration fields, and the HTML that they present is then based on that data. Because modules might not have direct access to the data (such as the Commerce Scale Unit data) when they run in a local development environment, module mock data files can be used for testing. These files are used to set data that can be used to render a module when it runs locally through a web browser. 
+Modules typically get their data from data actions and configuration fields, and the HTML that they present is based on that data. Because modules might not have direct access to the data (such as the Commerce Scale Unit data) when they run in a local development environment, you can use module mock data files for testing. Use these files to set data that you can use to render a module when it runs locally through a web browser. 
 
 ## Module mock files
 
-Module mock data files are stored under the **/src/&lt;MODULE\_NAME&gt;/mocks** directory. The default mock file uses the **&lt;MODULE\_NAME&gt;.json** file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma-separated list of mock file names (but without the **.json** file name extension) to the module name.
+Store module mock data files under the **/src/&lt;MODULE\_NAME&gt;/mocks** directory. The default mock file uses the **&lt;MODULE\_NAME&gt;.json** file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma-separated list of mock file names (but without the **.json** file name extension) to the module name.
 
-For example, for a module mock data file that is named **mockTest1.json** and added to the module **mocks** directory, use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **mockTest1**, which is used in the URL.
+For example, for a module mock data file named **mockTest1.json** that you add to the module **mocks** directory, use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **mockTest1**, which is used in the URL.
 
 ## Mock configuration and data fields
 

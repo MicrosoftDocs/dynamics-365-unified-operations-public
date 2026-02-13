@@ -25,7 +25,7 @@ There are several reasons why the scheduling engine might fail and issue this er
 
 The error can occur if no applicable resources satisfy the operation requirements at the production order site.
 
-To review the applicable resources, follow these steps.
+To review the applicable resources, follow these steps:
 
 1. Go to **Production control \> Production orders \> All production orders**, and open or select the production order that can't be scheduled.
 1. On the Action Pane, on the **Production order** tab, in the **Production details** group, select **Route**.
@@ -37,7 +37,7 @@ To review the applicable resources, follow these steps.
 
 The error can occur if no calendar is associated with the resource or resource group, or if the associated calendar isn't correctly set up (for example, it has no working times, or its efficiency as a percentage is 0 \[zero\]).
 
-To verify that a calendar is associated with the resource or resource group, follow these steps.
+To verify that a calendar is associated with the resource or resource group, follow these steps:
 
 1. Go to **Production control \> Production orders \> All production orders**, and open or select the production order that can't be scheduled.
 1. On the Action Pane, on the **Production order** tab, in the **Production details** group, select **Route**.
@@ -48,7 +48,7 @@ To verify that a calendar is associated with the resource or resource group, fol
 > [!NOTE]
 > If the error occurs during operation scheduling, you must make sure that a calendar is associated with all applicable resource groups.
 
-To review the setup of the calendar, follow these steps.
+To review the setup of the calendar, follow these steps:
 
 1. Go to **Organization administration \> Setup \> Calendars \> Calendars**, and select the calendar that is associated with the resource or resource group.
 1. On the Action Pane, select **Working times**.
@@ -63,7 +63,7 @@ If the calendar is associated with the base calendar, you must also review the s
 
 To ensure good performance, the scheduling engine will search for a resource only for a specific amount of time and a specific number of scheduling conflicts.
 
-To review the scheduling parameters, follow these steps.
+To review the scheduling parameters, follow these steps:
 
 1. Go to **Organization administration \> Setup \> Scheduling parameters**.
 1. Follow one of these steps:
@@ -82,19 +82,19 @@ To review the scheduling parameters, follow these steps.
 
 The error can occur when you perform finite scheduling, but there's no free capacity.
 
-To perform infinite capacity scheduling, follow these steps.
+To perform infinite capacity scheduling, follow these steps:
 
 1. Go to **Production control \> Production orders \> All production orders**, and select or open the production order that can't be scheduled.
 1. On the Action Pane, on the **Schedule** tab, in the **Production order** group, select **Schedule operations** or **Schedule jobs**.
 1. In the **Operations scheduling** or **Jobs scheduling** dialog box, set the **Finite capacity** option to *No*.
 1. Select **OK** to schedule the order.
 
-To review the available capacity on the resource, follow these steps.
+To review the available capacity on the resource, follow these steps:
 
 1. Go to **Organization administration \> Resources \> Resources**, and select a resource that is applicable to the order that can't be scheduled.
 1. On the Action Pane, on the **Resource** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure that there's available capacity.
 
-To review the available capacity on the resource group, follow these steps.
+To review the available capacity on the resource group, follow these steps:
 
 1. Go to **Organization administration \> Resources \> Resource groups**, and select a resource group that is applicable to the order that can't be scheduled.
 1. On the Action Pane, on the **Resource group** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure there's available capacity.

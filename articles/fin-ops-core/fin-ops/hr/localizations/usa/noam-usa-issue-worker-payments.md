@@ -58,7 +58,7 @@ For more information, see [Set up and generate positive pay files](../../../../.
 
 Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings for workers](noam-usa-generate-earnings.md).
 
-To submit pay statements for multiple workers at the same time, follow these steps.
+To submit pay statements for multiple workers at the same time, follow these steps:
 
 1. Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Generate and work with pay statements](noam-usa-pay-statements.md).
 
@@ -73,7 +73,7 @@ To submit pay statements for multiple workers at the same time, follow these ste
 
 ## Submit individual pay statements
 
-To create a payment journal for an individual pay statement, follow these steps.
+To create a payment journal for an individual pay statement, follow these steps:
 
 1. Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Generate and work with pay statements](noam-usa-pay-statements.md).
 2. On the **Calculated pay statements** page, select the worker pay statement to create the payment journal for, and then click **Submit for payment**. The **Submit for payment** button is also available on the **Pay statement** page.
@@ -113,7 +113,7 @@ To generate checks and electronic payments for workers, follow these steps after
 
 You can generate an electronic list of payroll checks that is provided to the bank. When a payroll check is presented to the bank, the bank compares it to the list. If the check matches a check in the list, the bank clears the check. Otherwise, the bank holds the check for review.
 
-To generate a positive pay file for payroll, follow these steps.
+To generate a positive pay file for payroll, follow these steps:
 
 1. On the **Payroll positive pay** page, in the **Cut-off date** field, enter the last check date to include in the positive pay file. All checks that haven't been included in a positive pay file through this check date are included in the file.
 2. Click **OK**.
@@ -122,7 +122,7 @@ To generate a positive pay file for payroll, follow these steps.
 
 After the checks that are listed in a payroll positive pay file are paid, you receive a confirmation number from the bank. You can then confirm the positive pay file in your organization's data. When you confirm a positive pay file, you record the confirmation number that you received from the bank.
 
-To confirm a positive pay file, follow these steps.
+To confirm a positive pay file, follow these steps:
 
 1. On the **Payroll positive pay file summary** page, select a payroll positive pay file that has a status of **Created**.
 2. Click **Confirmation**.
@@ -132,7 +132,7 @@ To confirm a positive pay file, follow these steps.
 
 If you must change a payroll positive pay file, you can recall it. When you recall a positive pay file, the field that indicates whether each check has been included in a positive pay file is reset. You can then create a new positive pay file.
 
-To recall a positive pay file, follow these steps.
+To recall a positive pay file, follow these steps:
 
 1. On the **Payroll positive pay file summary** page, select a payroll positive pay file that has a status of **Created**.
 2. Click **Recall**. You receive a message that states that the recall process was successful.
@@ -141,7 +141,7 @@ To recall a positive pay file, follow these steps.
 
 You can post a payment journal after you generate checks and electronic payments as described earlier in this article.
 
-To post a payment journal, follow these steps.
+To post a payment journal, follow these steps:
 
 1. On the **Payment journal** page, select the payment journal, and then, on the Action Pane, click **Lines** to open the **Journal voucher** page.
 2. On the **Post** menu, click **Post**. The payment journal lines are settled to the vendor invoice that was created and posted. You receive a message that indicates the number of vouchers that were posted.

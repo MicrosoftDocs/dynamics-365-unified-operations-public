@@ -1,5 +1,5 @@
 ---
-title: Manage CAPA cases (preview)
+title: Manage CAPA cases
 description: Learn how to use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 author: johanhoffmann
 ms.author: johanho
@@ -11,11 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Manage CAPA cases (preview)
+# Manage CAPA cases
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 Use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 
@@ -105,7 +103,7 @@ A CAPA process guides workers who are assigned to a case through the steps that 
 
 Based on the configuration of the CAPA process, a worker or worker group is automatically assigned to each stage and activity. The system uses email to notify each responsible worker or worker group when a case, stage, or activity is assigned to them. The email includes links so that the case, stage, or activity can be opened directly from the message. Workers can always track which cases and activities are assigned to them by opening the **CAPA management** dashboard.
 
-CAPA processes are defined by an administrator or manager. The **CAPA process** field of the CAPA record is used to assign CAPA processes to cases as they are created. Your company can define as many CAPA processes as it needs. Learn more in [Set up CAPA case components (preview)](capa-set-up-case-components.md).
+CAPA processes are defined by an administrator or manager. The **CAPA process** field of the CAPA record is used to assign CAPA processes to cases as they are created. Your company can define as many CAPA processes as it needs. Learn more in [Set up CAPA case components](capa-set-up-case-components.md).
 
 The workflow for CAPA processes consists of the following steps.
 
@@ -138,7 +136,7 @@ The workflow for CAPA processes consists of the following steps.
     - On a CAPA case list or details page, on the Action Pane, on the **CAPA Case** tab, select **Change status** \> **Closed**.
 
 > [!TIP]
-> To get a graphical overview of the process hierarchy for the current CAPA case, follow these steps.
+> To get a graphical overview of the process hierarchy for the current CAPA case, follow these steps:
 >
 > 1. Open the details page for the relevant CAPA case.
 > 1. In the rightmost pane, select the **Related information** button :::image type="icon" source="media/related-information-button.png" border="false"::: to open the **Related information** FactBox pane.
@@ -152,7 +150,7 @@ Statistical charts are provided in the **CAPA management** workspace and on the 
 
 ### Analyze statistics using the CAPA management workspace
 
-To view statistics in the **CAPA management** workspace, follow these steps.
+To view statistics in the **CAPA management** workspace, follow these steps:
 
 1. Go to **Inventory management** \> **Workspaces** \> **CAPA management**.
 1. Select the **Statistics** FastTab. Two charts are shown.
@@ -162,7 +160,7 @@ To view statistics in the **CAPA management** workspace, follow these steps.
 
 ### Analyze statistics using the Trending analysis page
 
-To view statistics on the **Trending analysis** page, follow these steps.
+To view statistics on the **Trending analysis** page, follow these steps:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **CAPA management** \> **Trending analysis**.
 1. On the **Data** tab, select the date range, and turn on each type of chart that you want to view.
@@ -171,7 +169,7 @@ To view statistics on the **Trending analysis** page, follow these steps.
 
 ## Review signatures for a CAPA case
 
-The CAPA features can optionally be set up to require an electronic signature from any user who closes, cancels, and/or reopens a CAPA case. To review the signatures that are applied to a CAPA case, follow these steps.
+The CAPA features can optionally be set up to require an electronic signature from any user who closes, cancels, and/or reopens a CAPA case. To review the signatures that are applied to a CAPA case, follow these steps:
 
 1. Open or select the CAPA case that you want to review (for example, on the **All CAPA cases** page).
 1. On the Action Pane, on the **CAPA case** tab, select **Signature review**.

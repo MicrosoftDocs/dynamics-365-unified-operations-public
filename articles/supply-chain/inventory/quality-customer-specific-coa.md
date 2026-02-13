@@ -1,5 +1,5 @@
 ﻿---
-title: Customer-specific certificate of analysis (COA) (preview)
+title: Customer-specific certificate of analysis (COA)
 description: Learn how to customize the content of a certificate of analysis (COA) to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
 author: johanhoffmann
 ms.author: johanho
@@ -11,26 +11,22 @@ ms.custom:
   - bap-template
 ---
 
-# Customer-specific certificate of analysis (COA) (preview)
+# Customer-specific certificate of analysis (COA)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 Microsoft Dynamics 365 Supply Chain Management lets you create a basic certificate of analysis (COA) either from the quality order or from the menu directly after you select a quality order. Learn more about how to use the basic COA in [Quality orders](quality-orders.md). This article explains how to customize the content of a COA to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
 
 ## Set up a COA customer group
 
-To manage COAs for different customers, you can group customers into COA customer groups. To create a COA customer group and add customers to it, follow these steps.
+To manage COAs for different customers, you can group customers into COA customer groups. To create a COA customer group and add customers to it, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Certificate of analysis** \> **Certificate of analysis customer groups**.
 1. Use the buttons on the Action Pane to add a new COA customer group or edit an existing one. (You can also delete existing groups.)
@@ -41,7 +37,7 @@ To manage COAs for different customers, you can group customers into COA custome
 
 ## Set up and maintain customer-specific COA requirements on test groups
 
-To set up customer-specific COA requirements on test groups, follow these steps.
+To set up customer-specific COA requirements on test groups, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test groups**.
 1. In the lower section of the page, select a test.
@@ -62,7 +58,7 @@ To set up customer-specific COA requirements on test groups, follow these steps.
 
 ## Set up and maintain customer-specific COA requirements from a quality order
 
-To set up and maintain customer-specific COA requirements from a quality order, follow these steps.
+To set up and maintain customer-specific COA requirements from a quality order, follow these steps:
 
 1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quality orders**.
 1. Select a quality order.

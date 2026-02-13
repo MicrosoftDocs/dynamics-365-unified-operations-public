@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-08-03
@@ -17,7 +17,7 @@ ms.service: dynamics-365-op
 
 This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 
-There is a section in the localagent-config.json file that is labeled deploymentOptions. This can be modified before installing the local agent.
+There's a section in the localagent-config.json file that is labeled deploymentOptions. This can be modified before installing the local agent.
 
 ```json
 ...
@@ -48,7 +48,7 @@ There is a section in the localagent-config.json file that is labeled deployment
 
 If your environment has Microsoft SQL Server 2019 installed throughout the different components, change **sqlServerVersion** from the default of 2016, to 2019.
 
-For a list of compatible SQL Server versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+For a list of compatible SQL Server versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ## Specify that AD FS is deployed with Microsoft 365 compatibility
 
@@ -66,16 +66,16 @@ Support for this feature was introduced in release 10.0.19.
 
 ## Specify that checking the certificate revocation list of a certificate should be skipped
 
-As part of establishing a trusted connection between a client and a server, one of the checks that is carried out is checking that the certificate provided by the server has not been revoked by the issuing authority.
+As part of establishing a trusted connection between a client and a server, one of the checks that is carried out is checking that the certificate provided by the server hasn't been revoked by the issuing authority.
 
-This requires that a client, such as the FinancialReporting service, retrieve the certificate revocation list. If the certificate has been issued by a public certificate authority, then the client would need access to the internet in order to verify that the certificate has not been revoked.
+This requires that a client, such as the FinancialReporting service, retrieve the certificate revocation list. If the certificate has been issued by a public certificate authority, then the client would need access to the internet in order to verify that the certificate hasn't been revoked.
 
-Some on-premises environments are not allowed to connect to the internet. As such, they may not be able to perform this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
+Some on-premises environments aren't allowed to connect to the internet. As such, they may not be able to perform this check. It's possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
 
 Support for this option was introduced in version 10.0.21. Additionally, at least local agent 2.7.1 is required to use this option.
 
 > [!IMPORTANT]
-> By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
+> When you disable the certificate revocation list of a certificate, the security check isn't performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
 
 ## Specify that an environment should be configured to work with the Regression suite automation tool
 

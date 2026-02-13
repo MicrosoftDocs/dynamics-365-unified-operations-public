@@ -4,7 +4,7 @@ description: This article provides information about the Budget control account 
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 07/24/2024
+ms.date: 09/15/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -38,7 +38,6 @@ When users generate the report, the following parameters are available.
 | **From account** | Select the first account in the range of accounts to include. |
 | **To account** | Select the last account in the range of accounts to include. |
 
-![Screenshot that shows the configuration parameters for generation of the Budget control account detail history report.](https://github.com/user-attachments/assets/99a7f195-d139-4a03-b282-308b7b6a5649)
 
 > [!NOTE]
 > You can specify additional report filters on the **Records to include** tab.

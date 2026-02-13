@@ -1,5 +1,5 @@
 ---
-title: Clean up processed and canceled message processor messages (preview)
+title: Clean up processed and canceled message processor messages
 description: Learn how to set up a cleanup job for the message processor.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Clean up processed and canceled message processor messages (preview)
+# Clean up processed and canceled message processor messages
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 The [message processor](../message-processor/message-processor.md) is a framework that processes messages in the system, such as those related to inventory transactions, sales orders, and more. Over time, processed and canceled messages, that are no longer needed, can accumulate in the system, potentially affecting performance and data management. Therefore, you should periodically clean up these messages to maintain system efficiency.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -66,14 +62,14 @@ To turn the rule on or off, or to change the frequency of the rule, follow these
     - **Status** – Set to *Active* or *Inactive*.
     - **Run frequency** – Choose how often to run the check (*Daily*, *Weekly*, *Monthly*, or *Unscheduled*).
 
-To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps.
+To view and act on your optimization opportunities, including those related to cleaning up aged messages, follow these steps:
 
 1. Go to **System administration** \> **Workspaces** \> **Optimization advisor**. Here, you can see a list of optimization opportunities that the system has identified, including those related to message processor cleanup.
 1. Select the row where **Area** is *SCM* and **Optimization opportunity** is *Cleanup job for message processor*.
 1. From the toolbar, select **More information** to learn more about the opportunity and recommended actions.
 1. If you want to act on the opportunity, select **Take action** from the toolbar to open the **Message queue setup** page, and configure the cleanup settings as described previously in this article.
 
-## Additional resources
+## Related information
 
 - [Monitor and control message processor messages](message-processor.md)
 - [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)

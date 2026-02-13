@@ -27,7 +27,7 @@ Each Commerce channel requires a configured warehouse to be associated with it. 
 
 Before setting up a warehouse, you need to configure a warehouse site.
 
-To configure a warehouse site, follow these steps.
+To configure a warehouse site, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Sites**.
 1. On the action pane, select **New**.
@@ -43,7 +43,7 @@ The following image shows an example warehouse site.
 
 ## Set up a warehouse
 
-To set up a warehouse, follow these steps.
+To set up a warehouse, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.
 1. On the action pane, select **New**.
@@ -57,7 +57,7 @@ To set up a warehouse, follow these steps.
 
 ## Set up inventory aisles
 
-To set up inventory aisles, follow these steps.
+To set up inventory aisles, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Location setup \> Inventory aisles**.
 1. On the action pane, select **New**.
@@ -68,7 +68,7 @@ To set up inventory aisles, follow these steps.
 
 ## Set up warehouse inventory locations
 
-To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps.
+To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.
 1. Select the warehouse you created previously.
@@ -96,7 +96,7 @@ The following image shows a San Francisco warehouse inventory location setup.
     
 ## Complete warehouse setup
 
-To complete warehouse setup, follow these steps.
+To complete warehouse setup, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.
 1. Select the warehouse you previously created.

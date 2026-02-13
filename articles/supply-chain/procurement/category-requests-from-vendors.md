@@ -17,11 +17,7 @@ The category request process lets vendors request that new procurement categorie
 
 Category requests are initiated by vendors in the **Vendor information** workspace. They are then submitted to your agency for review and approval. Approved categories are added to the list of procurement categories for the vendor's account.
 
-## Turn the category requests from vendors feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Allow vendors to apply for procurement categories through vendor collaboration* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-If this feature is turned on, you can still manually add procurement categories to vendor accounts. For information, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
+You can also manually add procurement categories to vendor accounts. Learn more in [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## Vendor collaboration requirements
 
@@ -73,7 +69,7 @@ This section describes how vendors can use the **Vendor information** workspace 
 
 ### Start a new request
 
-To start a new category request, follow these steps.
+To start a new category request, follow these steps:
 
 1. In the **Vendor information** workspace, select the **Category requests** tile.
 1. On the **Category requests** page, on the Action Pane, select **New category request**.
@@ -103,7 +99,7 @@ To start a new category request, follow these steps.
 
 ### Edit a draft or recalled request
 
-To edit a draft or recalled category request, follow these steps.
+To edit a draft or recalled category request, follow these steps:
 
 1. In the **Vendor information** workspace, select the **Category requests** tile.
 1. Select the draft or recalled request to open it.
@@ -111,7 +107,7 @@ To edit a draft or recalled category request, follow these steps.
 
 ### Submit a draft or recalled request
 
-To submit a draft or recalled category request, follow these steps.
+To submit a draft or recalled category request, follow these steps:
 
 1. In the **Vendor information** workspace, select the **Category requests** tile.
 1. Select the draft or recalled request that you want to submit.
@@ -126,7 +122,7 @@ To submit a draft or recalled category request, follow these steps.
 
 ### Recall a submitted request that hasn't yet been approved
 
-To recall a category request that has been submitted but hasn't yet been approved, follow these steps.
+To recall a category request that has been submitted but hasn't yet been approved, follow these steps:
 
 1. In the **Vendor information** workspace, select the **Category requests** tile.
 1. Select the pending request that you want to recall.
@@ -137,7 +133,7 @@ To recall a category request that has been submitted but hasn't yet been approve
 
 ### Delete a draft or recalled request
 
-To delete a draft or recalled category request, follow these steps.
+To delete a draft or recalled category request, follow these steps:
 
 1. In the **Vendor information** workspace, select the **Category requests** tile.
 1. Select the draft or recalled request that you want to delete.
@@ -157,7 +153,7 @@ This section explains how to approve, reject, and delegate category requests tha
 
 ### View category requests
 
-To view category requests, follow these steps.
+To view category requests, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> Vendor collaboration requests \> Category requests**.
 
@@ -175,7 +171,7 @@ To view category requests, follow these steps.
 
 ### Approve a pending category request
 
-To approve a pending category request, follow these steps.
+To approve a pending category request, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> Vendor collaboration requests \> Category requests**.
 1. Select the pending request to approve.
@@ -189,7 +185,7 @@ To approve a pending category request, follow these steps.
 
 ### Reject a pending category request
 
-To reject a pending category request, follow these steps.
+To reject a pending category request, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> Vendor collaboration requests \> Category requests**.
 1. Select the pending request to reject.
@@ -205,7 +201,7 @@ To reject a pending category request, follow these steps.
 
 ### Delegate a pending category request
 
-To delegate a pending category request to another user, follow these steps.
+To delegate a pending category request to another user, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> Vendor collaboration requests \> Category requests**.
 1. Select the pending request that you want to approve.
@@ -217,7 +213,7 @@ To delegate a pending category request to another user, follow these steps.
 
 ### View procurement categories for a vendor
 
-To view procurement categories for a vendor after a category request is approved, follow these steps.
+To view procurement categories for a vendor after a category request is approved, follow these steps:
 
 1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
 1. On the **All vendors** page, select the vendor that you want to view procurement categories for.

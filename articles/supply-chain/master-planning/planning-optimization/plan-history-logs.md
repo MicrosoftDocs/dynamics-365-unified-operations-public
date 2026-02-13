@@ -24,7 +24,7 @@ In addition to seeing the start time and status of jobs, you can view the log fo
 
 If the **Batch processing** option on the **Run in the background** FastTab was enabled when master planning processing was set up, the batch job log shows more information about any warnings and errors that were generated during the master planning run. For example, auto-firming errors are captured only in the batch job log. They aren't shown in logs on the **History** page.
 
-To view auto-firming errors and other warnings or errors that occurred during a master planning run, follow these steps.
+To view auto-firming errors and other warnings or errors that occurred during a master planning run, follow these steps:
 
 1. Go to **System administration \> Inquiries \> Batch jobs**.
 1. Find and select the record that represents the master planning run that you're interested in. (For example, the value of the **Job description** field might start with *Master planning*.)

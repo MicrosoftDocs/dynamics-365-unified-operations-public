@@ -23,7 +23,7 @@ Legal financial documents such as tax declarations or electronic invoices that a
 
 The following procedure provides all of the necessary steps to complete the information about registration IDs for Mexican legal entities.
 
-To enter tax registration IDs for Mexican legal entities, follow these steps.
+To enter tax registration IDs for Mexican legal entities, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Select **New**. If you have already created your Mexican legal entity, you can edit an existing legal entity instead of creating a new one.  

@@ -26,7 +26,7 @@ CSU combines the Commerce channel database, Commerce Async Client, Retail Server
 > [!NOTE]
 > Sealed CSU installers are only available from the Microsoft Dynamics Lifecycle Services (LCS) Asset library.  
 
-To download the sealed self-hosted CSU installer, follow these steps.
+To download the sealed self-hosted CSU installer, follow these steps:
 
 1. Open a web browser and sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
 1. From the home page, select **Shared asset library**.
@@ -37,7 +37,7 @@ To download the sealed self-hosted CSU installer, follow these steps.
 
 ### Download the Commerce Scale Unit channel configuration file
 
-To download the Commerce Scale Unit channel configuration file, follow these steps.
+To download the Commerce Scale Unit channel configuration file, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Channel database**.
 1. In the list of channel databases on the left, select the channel database that you created earlier.
@@ -59,7 +59,7 @@ To download the Commerce Scale Unit channel configuration file, follow these ste
 
 The process of installing a sealed CSU usually employs a configuration file downloaded from headquarters that contains all of the information needed for Retail Transaction Service (RTS) authentication. If you don't use a configuration file, you must specify parameters such as `--AadTokenIssuerPrefix`, `--StoreSystemAosURL`, `--StoreSystemChannelDatabaseId`, and `--TenantId`. For a full list of installer commands, see [Mass deployment of sealed Commerce self-service components](enhanced-mass-deployment.md). 
 
-To install the sealed CSU, follow these steps.
+To install the sealed CSU, follow these steps:
 
 1. Open a Windows Command Prompt with administrator privileges.
 1. Change the directory to C:\temp (for example, `CD C:\temp`).

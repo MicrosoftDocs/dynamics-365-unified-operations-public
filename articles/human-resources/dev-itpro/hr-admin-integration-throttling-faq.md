@@ -34,7 +34,7 @@ This article provides answers to some frequently asked questions (FAQ) about thr
 
 For OData and custom service requests, a 429 error "Too many requests", will occur.  
 
-When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation. 
+When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation.
 
 ```C#
     if (!response.IsSuccessStatusCode) 
@@ -63,10 +63,6 @@ The throttling limits for the Human Resources service are based on three categor
 - **API burst:** 500 requests in 5 minutes
 - **Time usage:** 5 minutes of total execution time in 5 minutes
 - **Concurrency:** 25 requests at any given time
-
-## How do I access the Data management Yammer group?
-
-Follow this link: [Data management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
 
 ## Will a retry request receive preferential treatment over a new request?
 
@@ -107,6 +103,5 @@ No.
 ## Can the throttling engine be configured (thresholds)?
 
 No.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,10 @@
 ---
 title: Comparison of cloud and on-premises features
 description: Learn about which features are supported in Cloud and on-premises, including a table that outlines features and cloud availability for various areas.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 03/05/2025
+ms.date: 10/30/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,16 +17,16 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article shows a comparison of features available in cloud vs. on-premises for the following applications:
+This article shows a comparison of features available in cloud versus on-premises versions for the following applications:
 
 - [Dynamics 365 Finance](#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](#dynamics-365-supply-chain-management)
 - [Dynamics 365 Commerce](#dynamics-365-commerce)
 - [Dynamics 365 Human Resources](#dynamics-365-human-resources)
 
-Information about the [development and administration features](#development-and-administration-features) is included, as well.
+The article also includes information about the [development and administration features](#development-and-administration-features).
 
-The following tables list the application areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
+The following tables list the application areas. The tables show cloud and on-premises support for each feature. When specific features differ from the overall area, the tables list those features on a separate line in the Feature column.
 
 ## All Dynamics 365 finance and operations apps
 
@@ -53,7 +53,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Human resources                      |                                                                                           | Yes       | Yes             |
 | Intelligence                         |                                                                                           | Yes       | Yes             |
 |                                      | Electronic reporting (ER)                                                                 | Yes       | Yes             |
-|                                      | ER: Integration with LCS                                                                  | Yes       | No              |
+|                                      | ER: Integration with Lifecycle Services                                                                  | Yes       | No              |
 |                                      | ER: Integration with SharePoint                                                           | Yes       | No              |
 |                                      | ER: Integration with Regulatory Configuration Services (RCS)                              | Yes       | No              |
 |                                      | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No        | Yes             |
@@ -107,7 +107,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | ER: Integration with Regulatory Configuration Services (RCS)                              | Yes       | No              |
 |                                      | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No        | Yes             |
 |                                      | Integration with PowerBI.com                                                              | Yes       | No              |
-|                                      | Integration with PowerBI Desktop                                                          | No        | Yes             |
+|                                      | Integration with Power BI Desktop                                                          | No        | Yes             |
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
@@ -160,7 +160,7 @@ This table applies to the Human Resources stand-alone version.
 | All Human Resources areas | All Human Resources features | Yes       | No              |
 
 >[!NOTE]
->For the comparison of cloud vs. on-premise of a migrated Human resources environment on the merged infrastructure, see [Dynamics 365 Finance](#dynamics-365-finance). 
+>For the comparison of cloud vs. on-premises of a migrated Human resources environment on the merged infrastructure, see [Dynamics 365 Finance](#dynamics-365-finance). 
 
 ## Development and administration features
 

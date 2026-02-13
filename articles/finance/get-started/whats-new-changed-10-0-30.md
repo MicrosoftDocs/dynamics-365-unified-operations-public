@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in Dynamics 365 Finance 10.0.30 (November 2022)
 description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.30 preview release distributed in November 2022.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
 ms.date: 07/22/2024
 ms.update-cycle: 1095-days
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30

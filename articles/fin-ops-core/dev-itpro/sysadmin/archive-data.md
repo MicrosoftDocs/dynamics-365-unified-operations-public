@@ -1,12 +1,12 @@
 ---
 title: Archive data in Dynamics 365 finance and operations apps with Dataverse
 description: Learn about how to archive data in Microsoft Dynamics 365 finance and operations apps, including an overview on business application data lifecycles.
-author: amiyaaloke
-ms.author: amiyaaloke
+author: Weijiesa 
+ms.author: Weijiesa 
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/23/2025
+ms.date: 09/12/2025
 ms.reviewer: twheeloc
 ---
 
@@ -94,7 +94,7 @@ For example, when the administrator views the **Dataverse database storage** rep
 
 ![Screenshot that shows an example of the Dataverse database storage report.](./media/storage.png)
 
-To view the storage that's consumed by finance and operations data, follow these steps.
+To view the storage that's consumed by finance and operations data, follow these steps:
 
 1. Go to the [Power Platform admin center reports for finance and operations apps](/power-platform/admin/finance-operations-storage-capacity).
 1. Select **Capacity** \> **Finance and operations**.
@@ -107,6 +107,5 @@ To get maximum capacity savings in production, consider purging data from the hi
 To understand the capacity reduced savings, compare the table data for the live, history, and \<*tablename*\>-Retained tables from the reports after an archival policy run.
 
 > [!NOTE]
-> 1. After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
->   
-> 2. Purge from history table is not yet supported.
+> After archiving, the automatic tuning process can take up to seven days before the reduced capacity is reflected in the history table. It can take up to a day before the archived data capacity for \<*tablename*\>-Retained tables is reflected in the Dataverse database capacity.
+

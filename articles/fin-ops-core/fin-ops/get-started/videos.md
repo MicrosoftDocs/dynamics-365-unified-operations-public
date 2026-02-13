@@ -1,10 +1,10 @@
 ---
 title: Videos
 description: Access a list of Microsoft-created "how-to" and Tech talk videos relating to finance and operations apps that are available on YouTube and other sites.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 06/13/2022
+ms.date: 11/20/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application User
@@ -20,8 +20,8 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. This section lists the "how-to" videos for finance and operations apps that are hosted on the channel.
 
-> [!Note]
-> Some of the videos listed were published under a previous product name, but are still applicable.
+> [!NOTE]
+> Some of the videos listed were published under a previous product name, but they're still applicable.
 
 ## Videos for finance and operations development and administration
 
@@ -47,7 +47,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Bring your own database (BYOD) to finance and operations apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [How to use cost management Power BI content in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
-### Lifecycle Services (LCS)
+### Lifecycle Services
 
 - [Asset library in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Cloud-hosted environments](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)
@@ -156,7 +156,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ## FastTrack Tech Talks
 
-[FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
+[FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that give customers and partners detailed knowledge that's specific to the subject areas.
 
 
 

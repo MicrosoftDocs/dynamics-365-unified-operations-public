@@ -35,7 +35,7 @@ The purge operation can only move consolidated transaction records. Follow the i
 
 ## Set up an archival job
 
-To move `InventTransArchive` records to the Dataverse long term retention, follow these steps.
+To move `InventTransArchive` records to the Dataverse long term retention, follow these steps:
 
 1. Go to **Workspaces** \> **Archive with Dataverse long term retention** \> **Inventory transactions**.
 1. Select **New long term retention job** to open the **Long term retention job creation** wizard.
@@ -48,7 +48,7 @@ You receive a message that the long term retention job has been created. The arc
 
 ## View the status of the long term retention job
 
-To view the results of the long term retention job, follow these steps.
+To view the results of the long term retention job, follow these steps:
 
 1. Go to **Workspaces** \> **Archive** \> **Inventory transactions**.
 1. A list of long  term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.
@@ -58,7 +58,7 @@ To view the results of the long term retention job, follow these steps.
 
 ## View historical data
 
-When the long term retention job moves archived inventory transactions from the `InventTransArchive` table to the Dataverse long term retention, the same data is replicated to the `InventTransArchiveHistory` table. To view the historical data in the `InventTransArchiveHistory` table, follow these steps.
+When the long term retention job moves archived inventory transactions from the `InventTransArchive` table to the Dataverse long term retention, the same data is replicated to the `InventTransArchiveHistory` table. To view the historical data in the `InventTransArchiveHistory` table, follow these steps:
 
 1. Go to **Workspaces** \> **Archive** \> **Inventory transactions**.
 1. A list of long term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.

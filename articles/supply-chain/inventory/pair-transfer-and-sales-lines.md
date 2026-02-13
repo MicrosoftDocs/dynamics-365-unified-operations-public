@@ -1,5 +1,5 @@
 ---
-title: Link transfer order lines with sales order lines (preview)
+title: Link transfer order lines with sales order lines
 description: Learn how to link transfer order lines to the sales order lines that they were created from. You can also add new transfer order lines to open transfer orders if they are for the same warehouses.
 author: banluo-ms
 ms.author: banluo
@@ -11,12 +11,9 @@ ms.custom:
   - bap-template
 ---
 
-# Link transfer order lines with sales order lines (preview)
+# Link transfer order lines with sales order lines
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!--KFM: Preview until 10.0.45 GA. -->
 
 Microsoft Dynamics 365 Supply Chain Management lets you create transfer order lines directly from sales order lines. This functionality is useful when the goods that you must supply are located in a different warehouse than the warehouse that you're shipping from.
 
@@ -29,8 +26,6 @@ The feature described in this article expands on that functionality by linking a
 - Automatically mark new transfer order lines with their related sales order line. Marking matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing.
 - Automatically reserve transfer order quantities for the sales order that they were created from. In this way, you prevent them from being used to fulfill another sales order by mistake.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Prerequisites
 
 Before you can use the feature described in this article, your system must meet the following requirements:
@@ -40,7 +35,7 @@ Before you can use the feature described in this article, your system must meet 
 
 ## Add and link lines to a new or existing transfer order from a sales order
 
-To create transfer order lines directly from sales order lines, link the lines together, and (optionally) reserve the transferred inventory, follow these steps.
+To create transfer order lines directly from sales order lines, link the lines together, and (optionally) reserve the transferred inventory, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order for which you want to add lines to a transfer order.
@@ -106,7 +101,7 @@ Marking matches specific inventory receipts (transfer order line inventory trans
 > [!IMPORTANT]
 > Nonsettled items are items from transactions that haven't been matched or processed according to the inventory model that you're using. Examples of inventory models include standard cost, moving average, and non-valuated. Automatic marking isn't supported for settled items. It also isn't supported for catch-weight items. For settled and catch-weight items, you must do the marking manually.
 
-To view and edit markings from a sale order line, follow these steps.
+To view and edit markings from a sale order line, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order that you want to review.
@@ -114,7 +109,7 @@ To view and edit markings from a sale order line, follow these steps.
 1. On the toolbar of the **Sales order lines** FastTab, select **Inventory** \> **Maintain** \> **Marking**.
 1. The **Marking** dialog box shows the marked quantities. You can edit the markings as required.
 
-To view and edit markings for a specific inventory transaction, follow these steps.
+To view and edit markings for a specific inventory transaction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order that you want to review.
@@ -124,7 +119,7 @@ To view and edit markings for a specific inventory transaction, follow these ste
 1. On the Action Pane, on the **Inventory** tab, in the **View** group, select **Marking**.
 1. The **Marking** dialog box shows the marked quantities. You can edit the markings as required.
 
-To view and edit markings from a transfer order line, follow these steps.
+To view and edit markings from a transfer order line, follow these steps:
 
 1. Follow one of these steps:
 

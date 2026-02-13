@@ -16,10 +16,6 @@ ms.search.form: ReqCreatePlanWorkspace
 
 This article describes how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found among all purchase trade agreements that have been specified for a given product.
 
-## Turn the Purchase trade agreements for Planning Optimization feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Purchase trade agreements for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Prepare your system to evaluate purchase trade agreements during master planning
 
 Follow these steps to configure your system to apply master planning that evaluates purchase trade agreements.

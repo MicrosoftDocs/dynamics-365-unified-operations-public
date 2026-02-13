@@ -1,11 +1,10 @@
 ---
 title: Associate a Dynamics 365 Commerce site with an online channel
-description: This article explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
+description: Learn how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 author: bicyclingfool
-ms.date: 08/02/2024
+ms.date: 01/15/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.author: asharchw
 ms.search.validFrom: 2019-09-30
 ms.custom: 
@@ -15,13 +14,13 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores. 
+This article explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 
-After you've provisioned your Dynamics 365 Commerce e-commerce environment by using the Microsoft Dynamics Lifecycle Services (LCS) portal, you're ready to establish your first e-commerce website. As part of the initial site creation, you associate the site with an online store that was previously created. This step binds the site to an online channel and lets the site show the navigation hierarchy, products, categories, prices, shipping options, and everything else that you defined in the online store.
+After you provision your Dynamics 365 Commerce e-commerce environment by using the Microsoft Dynamics Lifecycle Services (LCS) portal, you're ready to establish your first e-commerce website. As part of the initial site creation, you associate the site with an online store that you previously created. This step binds the site to an online channel and lets the site show the navigation hierarchy, products, categories, prices, shipping options, and everything else that you defined in the online store.
 
-To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment. Then, on the page for the site authoring environment, select **New site**. In the **New site** dialog box, you must provide some basic information about your site. For a complete explanation of the information that you must provide, see [Create a new e-commerce site](create-ecommerce-site.md).
+To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment. Then, on the page for the site authoring environment, select **New site**. In the **New site** dialog box, provide some basic information about your site. For a complete explanation of the information that you must provide, see [Create a new e-commerce site](create-ecommerce-site.md).
 
-After your site is created, you can verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down field in the upper left of the page to access the products by category.
+After you create your site, verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that you allocated to the online store. You can also use the drop-down field in the upper left of the page to access the products by category.
 
 ## Additional resources
 

@@ -1,11 +1,10 @@
 ---
 title: Interactive components overview
-description: This article covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
+description: This article provides an overview of interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/04/2026
 ms.topic: overview
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly in visual page builder, the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
+This article provides an overview of interactive components that let site authors edit fields for text, rich text, links, images, and videos directly in visual page builder, the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
 
-In Commerce site builder, page or fragment authors can use interactive components to edit fields for text, rich text, links, images, and videos directly in visual page builder. Interactive components are released with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. After the interactive components are implemented, site builder will allow for inline editing of text, and it will open a picker window for links, images, and videos.
+In Commerce site builder, page or fragment authors can use interactive components to edit fields for text, rich text, links, images, and videos directly in visual page builder. Interactive components are released with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. After you implement the interactive components, site builder allows for inline editing of text, and it opens a picker window for links, images, and videos.
 
-For the best authoring experience, module developers should use interactive components when they render configuration fields, to allow for inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines in this article to support interactive components inside a custom module.
+For the best authoring experience, module developers should use interactive components when they render configuration fields, to allow for inline editing. Make any custom implementations of these components interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines in this article to support interactive components inside a custom module.
 
 ## How interactive components work
 
-An interactive component hooks an event handler to the component that will do the work of setting the specific configuration field that is required.
+An interactive component hooks an event handler to the component that sets the specific configuration field.
 
 The following example shows how a text configuration field uses an interactive component to allow for inline editing of the text. A **productTitle** configuration value is specified in the **config** section of the module definition file.
 
@@ -40,7 +39,7 @@ The following example shows how a text configuration field uses an interactive c
 ...
 ```
 
-To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component. This interactive component specifies a **handleTextChange** event handler that will set the configuration value.
+To support an interactive canvas experience, the module uses the **Msdyn365.Text** interactive component. This interactive component specifies a **handleTextChange** event handler that sets the configuration value.
 
 ```typescript
 public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.config.productTitle!.text = event.target.value;
@@ -57,7 +56,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Text component
 
-After it's implemented, the text component lets site authors edit text inline, directly in visual page builder.
+After you implement the text component, site authors can use it to edit text inline, directly in the visual page builder.
 
 #### Text component syntax
 
@@ -96,7 +95,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Rich text component
 
-After it's implemented, the rich text component lets site authors edit rich text inline, directly in visual page builder.
+After you implement it, the rich text component enables site authors to edit rich text inline, directly in the visual page builder.
 
 #### Rich text component syntax
 
@@ -117,8 +116,8 @@ After it's implemented, the rich text component lets site authors edit rich text
 
 | Property  | Description                                                             | Type           |
 |-----------|-------------------------------------------------------------------------|----------------|
-| text      | The HTML text to show.                                                  | String         |
-| editProps | The properties that are required to enable interaction in site builder. | ITextEditProps |
+| text      | The HTML text to display.                                               | String         |
+| editProps | The properties required to enable interaction in site builder.         | ITextEditProps |
 
 #### ITextEditProps properties
 
@@ -130,7 +129,7 @@ After it's implemented, the rich text component lets site authors edit rich text
 
 ### Links component
 
-After it's implemented, the links component lets site authors edit an array of links in visual page builder.
+After you implement the links component, site authors can use it to edit an array of links in the visual page builder.
 
 #### Links component syntax
 
@@ -160,7 +159,7 @@ After it's implemented, the links component lets site authors edit an array of l
 |----------------------|---------------------------------------------------------------------------|-----------------------|
 | linkText             | The text to show as a link.                                               | String                |
 | linkUrl              | The URL to open.                                                          | String                |
-| openInNewTab         | A flag that indicates whether the link should be opened on a new tab.     | Boolean               |
+| openInNewTab         | A flag that indicates whether the link should open in a new tab.          | Boolean               |
 | ariaLabel            | The Accessible Rich Internet Applications (ARIA) label for accessibility. | String                |
 | className            | The CSS class name.                                                       | String                |
 | key                  | The React key.                                                            | String                |
@@ -180,7 +179,7 @@ After it's implemented, the links component lets site authors edit an array of l
 
 ### Link component
 
-After it's implemented, the link component lets site authors edit single links in visual page builder.
+After you implement it, the link component enables site authors to edit single links in visual page builder.
 
 #### Link component syntax
 
@@ -229,7 +228,7 @@ After it's implemented, the link component lets site authors edit single links i
 
 ### Image component
 
-After it's implemented, the image component lets site authors edit images directly in visual page builder.
+After you implement the image component, site authors can use it to edit images directly in the visual page builder.
 
 #### Image component syntax
 
@@ -271,7 +270,7 @@ After it's implemented, the image component lets site authors edit images direct
 
 ### Video component
 
-After it's implemented, the video component lets site authors edit videos directly in visual page builder.
+After you implement it, the video component enables site authors to edit videos directly in the visual page builder.
 
 #### Video component syntax
 
@@ -303,7 +302,7 @@ After it's implemented, the video component lets site authors edit videos direct
 
 ## Generic editable HOC
 
-Generic editable field components wrap any custom components and enable interactions in the context of site builder.
+Generic editable field components wrap custom components and enable interactions in the context of site builder.
 
 ### Generic editable HOC syntax
 

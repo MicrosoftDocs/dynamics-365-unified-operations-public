@@ -2,9 +2,9 @@
 title: Use the assembly list of a fixed asset
 description: Learn how to use the assembly list of a fixed asset for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/09/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -27,20 +27,20 @@ The procedures use the demo data company JPMF.
 
 ## Assign component in an assembly list
 
-To assign component in an assembly list, follow these steps.
+To assign component in an assembly list, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
-1. In the list, mark the selected row.
+1. In the list, select the row.
 1. Select the fixed asset to which you want to assign the assembly list.  
 1. On the Action Pane, select **Fixed asset**.
 1. Select **Components**.
 1. Select **Add**.
-1. In the **Item number** field, enter a value. 
+1. In the **Item number** field, enter a value.
 1. Select **Save**.
 
 ## Use the assembly list to post a fixed asset write-up transaction
 
-To use the assembly list to post a fixed asset write-up transaction, follow these steps.
+To use the assembly list to post a fixed asset write-up transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets journal**.
 1. Select **New**.
@@ -51,7 +51,5 @@ To use the assembly list to post a fixed asset write-up transaction, follow thes
 1. In the **Account** field, select the fixed asset number that you assigned to the assembly list.  
 1. In the **Debit** field, enter the cost of the inventory item.  
 1. Select **Post**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

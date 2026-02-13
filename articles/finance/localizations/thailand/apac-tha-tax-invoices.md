@@ -21,7 +21,7 @@ This article explains how to set up and work with tax invoices for Thailand in M
 
 There are general options that must be set up before you can start to work with tax invoices.
 
-To do preliminary setup for tax invoices, follow these steps.
+To do preliminary setup for tax invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, set up number sequences for the following references:
@@ -38,7 +38,7 @@ Learn more in [Number sequences overview](../../../fin-ops-core/fin-ops/organiza
 
 Next, you must set up Thailand-specific options before you can start to work with tax invoices.
 
-To set up Thailand-specific options, follow these steps.
+To set up Thailand-specific options, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, set up number sequences for the following references.
@@ -83,13 +83,13 @@ If you receive payment from the customer when you post a free text invoice, foll
 
 At any time, you can go back to the sales order or free text invoice to print the tax invoice.
 
-To print the tax invoice from a sales order, follow these steps.
+To print the tax invoice from a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, open the sales order.
 1. On the **Invoice** FastTab, in the **Journals** section, select **Invoice** to open the invoice.
 1. On the **Invoice** FastTab, in the **Document** section, select **View** to view the tax invoice, or **Send** to send it.
 
-To print the tax invoice from a free text invoice, follow these steps.
+To print the tax invoice from a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, open the free text invoice.
 1. On the **Invoice** FastTab, in the **Document** section, select **View** to view the tax invoice, or **Send** to send it.

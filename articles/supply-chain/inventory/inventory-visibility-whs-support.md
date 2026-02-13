@@ -48,7 +48,7 @@ In other scenarios, on-hand query results will be the same, regardless of whethe
 
 ## <a name="enable-the-WMS-feature"></a>Enable the WMS feature for Inventory Visibility
 
-To enable the WMS feature for Inventory Visibility, follow these steps.
+To enable the WMS feature for Inventory Visibility, follow these steps:
 
 1. Sign in to Supply Chain Management as an admin.
 1. Open the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, and enable the following features in this order:

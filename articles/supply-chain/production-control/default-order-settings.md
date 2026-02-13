@@ -19,7 +19,7 @@ ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, E
 
 Default order settings in Dynamics 365 Supply Chain Management define the site and warehouse where items will be sourced from or stored; the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management; the lead times; the stop flag; and the order promising method. Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders. Default order settings can be item specific, site specific, product variant specific, or product dimension specific.
 
-To define the default order settings for a product, follow these steps.
+To define the default order settings for a product, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the relevant product in the grid.
@@ -175,12 +175,6 @@ The rank in this case doesn't really matter, so you can choose to hide it. This 
 You can choose how strict the system should be when validating quantities entered in the **Default order settings** for a product. When you use the new strict option, the **Standard order quantity** must always be a multiple of the specified **Multiple** value for purchase orders, inventory, and sales orders. If you're using strict validation, you won't be able to save default order settings that don't meet this requirement (and an error is shown in the message bar).
 
 Strict validation applies to **Standard order quantity** values specified on the **Purchase order**, **Inventory**, and **Sales order** FastTabs of the **Default order settings** page. Each FastTab has its own **Multiple** setting, which is used to validate the **Standard order quantity** value specified for that FastTab.
-
-### Turn the strict validation option on or off
-
-To use strict validation, the *Strict validation on default order quantities* feature must be turned on for your system. As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then you can turn this functionality on or off by going to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and searching for the *Strict validation on default order quantities* feature.
-
-### Set the validation option
 
 To set the validation option:
 

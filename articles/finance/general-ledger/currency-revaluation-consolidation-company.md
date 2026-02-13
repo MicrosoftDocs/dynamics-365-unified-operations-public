@@ -21,14 +21,16 @@ ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 When you consolidate data from one accounting currency to another, you must still run currency revaluation if there is a change in exchange rates, so that your account balances  are correctly revalued. When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates to for translation during the consolidation process. After a new exchange rate is entered (for example, in the next month), you must revalue the account balances. The unrealized gains or losses are then updated accordingly, based on the new exchange rate and date. The following example illustrates the accounting entries that are created during the process.
 
 ## Company setup
--   **Source/operating company (USMF)** – US dollars (USD) are used as the accounting and reporting currency.
--   **Consolidated company (CON)** – Euros (EUR) are used as the accounting and reporting currency.
-    -   **Realized gain**– Ledger account 801500
-    -   **Realized loss** – Ledger account 801600
-    -   **Unrealized gain** – Ledger account 801600
-    -   **Unrealized loss** – Ledger account 801400
+
+- **Source/operating company (USMF)** – US dollars (USD) are used as the accounting and reporting currency.
+- **Consolidated company (CON)** – Euros (EUR) are used as the accounting and reporting currency.
+    - **Realized gain** – Ledger account 801500
+    - **Realized loss** – Ledger account 801600
+    - **Unrealized gain** – Ledger account 801600
+    - **Unrealized loss** – Ledger account 801400
 
 ## Original transactions
+
 ### Cash receipt transactions in USMF
 
 | Date       | Ledger account               | Currency | Amount |
@@ -45,6 +47,7 @@ When you consolidate data from one accounting currency to another, you must stil
 | EUR           | USD         | 12/1/2017  | 100           |
 
 ## Perform the consolidation for October 2020
+
 ### Balances in the consolidation company
 
 | Ledger account | Currency | Amount | Calculation    |
@@ -53,6 +56,7 @@ When you consolidate data from one accounting currency to another, you must stil
 | 130100         | EUR      | -250   | -500 USD × 50% |
 
 ## Perform currency revaluation for the accounts from October 1, 2020, through November 30, 2020
+
 ### Balances in the consolidation company
 
 | Ledger account | Currency | Amount  | Calculation                        |
@@ -65,6 +69,7 @@ When you consolidate data from one accounting currency to another, you must stil
 You will see additional transactions for the reporting currency amounts.
 
 ## Perform currency revaluation for the accounts from October 1, 2020, through December 31, 2020
+
 ### Balances in the consolidation company
 
 | Ledger account | Currency | Amount  | Calculation                                          |
@@ -73,11 +78,5 @@ You will see additional transactions for the reporting currency amounts.
 | 130100         | EUR      | -500.00 | Original amount of -500 × 1                          |
 | 801400         | EUR      | 250     | 500 – 333.33 = 166.67 166.67 + 83.33 = 250           |
 | 801600         | EUR      | -250    | -500 – (-333.33) = -166.67 -166.67 + (-83.33) = -250 |
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

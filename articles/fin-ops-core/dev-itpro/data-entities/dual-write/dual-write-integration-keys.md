@@ -34,7 +34,7 @@ The integration key is based on an alternate key of the Dataverse table. The alt
 
 Dual-write integration keys are automatically generated based on the alternate keys that are defined for the Dataverse table. You can refresh the integration keys if you find that any are missing or incorrect. (For example, you might learn that keys are missing or incorrect because you receive an [error code](dual-write-error-codes.md) that's related to integration keys.)
 
-To refresh integration keys, follow these steps.
+To refresh integration keys, follow these steps:
 
 1. Verify that an alternate key was created for the Dataverse table.
 
@@ -52,7 +52,7 @@ When the table is refreshed, the integration keys are automatically generated fo
 
 You can manually modify an integration key. The **Integration key** page lists the integration keys that were automatically generated. In the list, there's a key for each Dataverse table that's included in a dual-write map in the environment. You might have to modify an integration key if, for example, it was automatically generated from an alternate key other than the one that you want.
 
-To modify an integration key, follow these steps.
+To modify an integration key, follow these steps:
 
 1. In finance and operations apps, open the **Dual-write administration** workspace.
 1. On the Action Pane, select **Environment details**.

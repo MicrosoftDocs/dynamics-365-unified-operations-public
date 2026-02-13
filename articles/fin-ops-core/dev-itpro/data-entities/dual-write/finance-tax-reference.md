@@ -1,11 +1,11 @@
 ---
 title: Access to finance and tax reference data
 description: Learn about how to access to finance and tax reference data, including links to the integrated ledger and tax master resources.
-author: RamaKrishnamoorthy
-ms.author: ramasri
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 01/27/2020
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-01-27

@@ -23,7 +23,7 @@ Before you complete the following procedure, you must first set up export format
 
 The procedure was created using the demo data company DEMF.
 
-To set up the customer method of payment for ISO20022 direct debit, follow these steps.
+To set up the customer method of payment for ISO20022 direct debit, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Methods of payment**.
 1. Use the Quick Filter to find records. For example, filter on the **Method of payment field** with a value of "ELECTRONIC".

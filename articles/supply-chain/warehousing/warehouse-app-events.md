@@ -16,10 +16,6 @@ ms.search.form: WHSMobileDeviceQueueEvent
 
 Batch jobs running in Supply Chain Management can use data from a queue for processing events issued by the Warehouse Management mobile app to react as needed to the signaled events. This feature adds relevant events to the queue in response to certain types of actions taken by workers using the app. An example is when using the *Create and process transfer orders from the warehouse app* feature, the transfer order header and lines get created and updated in the back end when the system is running the **Process warehouse app events** batch job.
 
-## Turn the Process warehouse app events feature on or off
-
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory. Therefore, it's turned on by default and can't be turned off again. If you're running a version that is older than 10.0.29, admins can turn this functionality on or off by searching for the *Process warehouse app events* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Set up a batch job to process warehouse app events
 
 ### Process warehouse app events

@@ -26,7 +26,7 @@ The same company also produces items that have the same production testing requi
 
 ## Create a quality group
 
-To create a quality group, follow these steps.
+To create a quality group, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Quality control \> Quality groups**.
 1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
@@ -38,7 +38,7 @@ To create a quality group, follow these steps.
 
 ## Manually add items to a quality group
 
-To manually add items to a quality group, follow these steps.
+To manually add items to a quality group, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Quality control \> Quality groups**.
 1. Select the quality group that you want to add items to.
@@ -49,7 +49,7 @@ To manually add items to a quality group, follow these steps.
 
 ## Add multiple items to a quality group
 
-To add multiple items to a quality group, follow these steps.
+To add multiple items to a quality group, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Quality control \> Quality groups**.
 1. Create or select the quality group that you want to add items to.
@@ -65,7 +65,7 @@ To add multiple items to a quality group, follow these steps.
 
 ## Manually associate an item with a quality group
 
-To manually associate an item with a quality group, follow these steps.
+To manually associate an item with a quality group, follow these steps:
 
 1. Go to **Inventory management \> Setup \> Quality control \> Item quality groups**.
 1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
@@ -78,7 +78,7 @@ To manually associate an item with a quality group, follow these steps.
 
 ## Manually add a quality group from the Released products page
 
-To manually add a quality group from the **Released products** page, follow these steps.
+To manually add a quality group from the **Released products** page, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the product that you want to assign a quality group to.

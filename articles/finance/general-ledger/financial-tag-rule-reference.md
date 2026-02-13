@@ -1,8 +1,8 @@
 ---
 title: Financial tag rule reference (preview)
 description: Learn about financial tags rules with Microsoft Power Fx formulas.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 02/12/2025
 ms.reviewer: twheeloc
@@ -13,9 +13,9 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage, FinTagRule, Financia
 ms.dyn365.ops.version: 10.0.42
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Financial tag rule reference 
+
+[!include [banner](../includes/banner.md)]
 
 ## Fields supported for all journals
 

@@ -26,7 +26,7 @@ For payments at the POS, there is now a greater prevalence of credit usage, as m
 
 The property you need to configure to skip the **Change due** dialog box is found in the **Functionality profile** level, which is a store-level setting. 
 
-To configure the property, follow these steps.
+To configure the property, follow these steps:
 
 1. Search for the **Functionality profile** for the store where the dialog box should be skipped.
 1. Open the functionality profile for the target store and select **Edit**. 

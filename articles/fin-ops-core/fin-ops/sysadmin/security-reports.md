@@ -30,7 +30,7 @@ The following reports are available to help with security, licenses, roles, and 
 
 The **User activity aging** report tracks information about sign-in to Dynamics 365 finance and operations apps. Therefore, it helps administrators effectively monitor user activity. Some of the most common monitoring ranges are 10, 30, 60, 90, and 120 days. The day ranges are configurable and can be customized to suit the organization's needs. The data on this report can be used to optimize licensing costs.
 
-To define and customize day ranges for the **User activity aging** report, follow these steps.
+To define and customize day ranges for the **User activity aging** report, follow these steps:
 
 1. Go to **System administration** \> **Security governance setup** \> **Parameters**.
 1. On the **User aging periods** tab, configure all five day ranges as you require.
@@ -43,7 +43,7 @@ The **Role audit trail** report provides a history of the roles that have been a
 To view the **Role audit trail** report, follow one of these steps.
 
 - Go to **System administration** \> **Users** \> **User's role**.
-- Go to **System administration** \> **Security** \> **Security governance** \> **Temporary role management**.
+- Go to **System administration** \> **Security** \> **Security governance** \> **Role audit trail**.
 
 ## Security analysis report
 

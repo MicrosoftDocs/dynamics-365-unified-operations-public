@@ -37,7 +37,7 @@ Multiple groups of components can be configured for a single ER format configura
 
 ## Enable an email destination
 
-To send one or more output files by email, follow these steps.
+To send one or more output files by email, follow these steps:
 
 1. On the **Electronic reporting destination** page, on the **File destination** FastTab, select a component or group of components in the grid.
 2. Select **Settings**, and then, in the **Destination settings** dialog box, on the **Email** tab, set the **Enabled** option to **Yes**.

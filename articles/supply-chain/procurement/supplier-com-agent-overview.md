@@ -41,7 +41,10 @@ Learn more in [Review and apply purchase order changes received in vendor emails
 
 ## Cost
 
-Use of the Supplier Communications Agent incurs charges that are related to using Microsoft Copilot Studio messages.
+The Supplier Communications Agent incurs charges based on the number of Microsoft Copilot Studio credits you use when running it. The agent has a fixed cost per run and a variable cost that depends on the resources it consumes.
+
+- For the *follow up on purchase orders* feature, the fixed cost applies each time the agent runs. The variable cost depends on the number of emails the agent writes.
+- For the *review and apply purchase order changes* feature, the fixed cost applies each time the agent runs. The variable cost depends on the number of emails the agent reads and the number of attachments those emails have.
 
 Learn about the billing rates and management for Copilot Studio in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management).
 

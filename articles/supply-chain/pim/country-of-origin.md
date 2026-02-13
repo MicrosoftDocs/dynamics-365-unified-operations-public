@@ -19,10 +19,6 @@ Many organizations issue certificates to their vendors to ensure that products m
 > [!IMPORTANT]
 > The *Country of origin management* feature described in this article helps you keep track of vendor certificates but doesn't modify the standard functionality of invoices, packing slips, or order confirmations to include them. If you want to print out certificate numbers on one or more of these reports, then you must extend them in your project.
 
-## Turn the country of origin feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.21, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Country of origin management feature* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
 ## Configure source and destination countries/regions
 
 Before you issue a certificate for a product, you must link the product to its destination country/region and its country/region of origin.
@@ -45,7 +41,7 @@ You can use the **Country of origin vendor certificates** page to keep track of 
 
 You must decide which certificate documents you're issuing and how you'll report them to customers. This feature helps you keep track of your certificates. It also lets you choose whether the relevant certificate numbers appear on invoices, packing slips, and/or order confirmations.
 
-To set up your certificate information, follow these steps.
+To set up your certificate information, follow these steps:
 
 1. Go to **Product information management \> Setup \> Product compliance \> Country of origin \> Country of origin vendor certificates**.
 2. Select an existing certificate setup to edit, or select **New** on the Action Pane to create a new certificate setup.

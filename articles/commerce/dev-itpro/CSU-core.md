@@ -49,7 +49,7 @@ The following instructions describe how to switch an existing CSU deployment fro
 > [!IMPORTANT]
 > You can only migrate to CSU Core if your extensions are compatible with the Commerce SDK, or .NET Standard 2.0/.NET 6.
 
-To migrate your existing Microsoft-hosted CSU to CSU Core, follow these steps. 
+To migrate your existing Microsoft-hosted CSU to CSU Core, follow these steps: 
 
 1. Sign in to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). 
 1. On the LCS page where you manage CSUs, select **Update**.

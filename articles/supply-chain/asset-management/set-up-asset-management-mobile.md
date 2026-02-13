@@ -19,7 +19,7 @@ This article describes how to set up Microsoft Dynamics 365 Supply Chain Managem
 
 ## Set up maintenance worker users in Supply Chain Management
 
-For each user that requires access to the **Asset management** mobile workspace, follow these steps.
+For each user that requires access to the **Asset management** mobile workspace, follow these steps:
 
 1. In Supply Chain Management, go to **Human resources \> Workers**, and make sure that a worker record exists for the user that you want to set up. Create a new worker record as required.
 1. Go to **Asset management \> Setup \> Workers \> Workers**, and make sure that the worker record that you identified (or created) in the previous step is mapped to a maintenance worker record. Create a new maintenance worker record as required, and set the **Worker** field to the worker record from the previous step.

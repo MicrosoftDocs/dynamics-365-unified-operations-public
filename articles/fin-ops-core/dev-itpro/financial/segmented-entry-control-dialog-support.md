@@ -1,8 +1,8 @@
 ---
 title: Support for Segmented Entry controls on dialogs
 description: Learn about the code pattern to add Segmented Entry controls to dialogs, including various code examples for legacy and current releases.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

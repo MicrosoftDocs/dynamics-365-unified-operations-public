@@ -1,10 +1,10 @@
 ---
-title: Troubleshoot the Office integration
-description: Access answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+title: Office integration FAQ
+description: Get answers to frequently asked questions about the capabilities of the Microsoft Office integration.
 author: jasongre
 ms.author: jasongre
-ms.topic: how-to
-ms.date: 03/03/2025
+ms.topic: faq
+ms.date: 09/23/2025
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -14,13 +14,12 @@ ms.custom:
   - bap-template
 ---
 
-# Troubleshoot the Office integration
+# Office integration FAQ
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
-
 [!include [banner](../includes/banner.md)]
 
-This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
+This article provides answers to frequently asked questions about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions
 
@@ -58,7 +57,7 @@ Most of the work that the Excel add-in does should occur on the server. To learn
 
 The Excel add-in sends the published records as a request. When those records are processed, the response is sent back from the server. The Excel add-in then creates another message that contains the next set of records to publish, and sends that request. Five to 10 seconds of processing time in the Excel add-in should be required between the previous response from the server and the next request to the server.
 
-To check processing time in the Excel add-in versus the server/service, follow these steps.
+To check processing time in the Excel add-in versus the server/service, follow these steps:
 
 1. Start [Fiddler](https://www.telerik.com/fiddler). 
 2. Publish a few records to test the process.

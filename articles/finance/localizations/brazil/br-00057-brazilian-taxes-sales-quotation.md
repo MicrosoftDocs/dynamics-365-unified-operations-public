@@ -23,7 +23,7 @@ Use following procedure to create a sales quotation that uses Brazilian taxes. Y
 
 The procedure uses the BRMF demo company.
 
-To create a sales quotation that uses Brazilian taxes, follow these steps.
+To create a sales quotation that uses Brazilian taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Sales and marketing \> Sales quotations \> All quotations**.
 1. Select **New**.

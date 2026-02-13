@@ -1,8 +1,8 @@
 ---
 title: Global Inventory Accounting ledger
 description: Learn about Global Inventory Accounting ledgers, which are defined by a combination of a currency, a calendar, a convention, and an association with a legal entity.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

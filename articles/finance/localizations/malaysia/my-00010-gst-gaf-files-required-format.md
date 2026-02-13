@@ -25,7 +25,7 @@ The procedures use the demo data company MYMF.
 
 ## Specify the GAF file format to use in the General ledger parameters
 
-To specify the GAF file format to use in the General ledger parameters, follow these steps.
+To specify the GAF file format to use in the General ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Ledger setup \> General ledger parameters**.
 1. Select the **Sales tax** FastTab.
@@ -36,7 +36,7 @@ To specify the GAF file format to use in the General ledger parameters, follow t
 
 ## Generate a GAF XML report for posted transactions
 
-To generate a GAF XML report for posted transactions, follow these steps.
+To generate a GAF XML report for posted transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Generate GAF file**.
 1. In the **Settlement period** field, select the drop-down button to open the lookup.

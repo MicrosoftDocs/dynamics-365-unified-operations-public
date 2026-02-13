@@ -24,6 +24,6 @@ This procedure shows how to add an image to a product.
 1. Select **OK** to apply the image and close the dialog.
 
 > [!TIP]
-> Admins can choose whether and how product images should be shown in the Warehouse Management mobile app by default, and workers can override this setting on their local devices if they wish. Learn more in [Mobile device user settings](../../warehousing/mobile-device-user-settings.md).
+> Admins can choose whether and how product images should be shown in the Warehouse Management mobile app by default, and workers can override this setting on their local devices if they wish. Learn more in [User settings, color themes, and sound themes](../../warehousing/warehouse-app-user-settings-themes.md) and [Mobile device user settings](../../warehousing/mobile-device-user-settings.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

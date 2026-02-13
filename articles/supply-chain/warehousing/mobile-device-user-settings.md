@@ -43,37 +43,13 @@ Follow these steps to create and manage user settings for your mobile devices.
     - **Device model ID** – Select the device model that the profile should apply to. If the profile should apply to all models of the selected brand, leave this field blank. The list of values includes all the models that have been defined for the brand that is selected in the **Device brand name** field. For information about how to define the list of models for each brand, see the next section.
     - **User ID** – Select the user ID of the warehouse worker that the setting profile should apply to. If the profile should apply to all workers, leave this field blank.
 
-1. On the **General** FastTab, set the following fields:
-
-    - **Button position** – Select how buttons should be positioned on the device. Elements in the app will be moved to better fit the preference or handedness of the worker. The available options are *Bottom right (default)*, *Bottom left*, *Top right*, and *Top left*.
-    - **Scan with camera** – Set this option to *Yes* to use the device camera to scan input fields where the preferred input mode is set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
-    - **Product photo placement** – Select how product photos should be shown in the app (learn more about product images in [Add an image to a product](../pim/tasks/add-image-product.md)). Choose one of the following options:
-        - *Default (show photo card)* – Display the product image as a large photo card.
-        - *Only in step header* – Show the product image within the header section.
-        - *Do not show* – Hide the product image in the mobile app.
-    - **Display color theme** – Select a color theme for the device.
-    - **Sound level** – Select the sound level for the device. Select a value between 0 (zero) and 10. A value of *0* represents no sound, and a value of *10* represents maximum volume. The default value is *4*.
-    - **Vibration level** – Select the vibration level for the device. Select a value between 0 (zero) and 5. A value of *0* represents no vibration, and a value of *5* represents maximum vibration. The default value is *1*.
-    - **Text scale percentage** – Specify the text size as a percentage of the standard size. Enter a value between 70 and 400. A value of *70* represents the smallest text scale, and a value of *400* represents the largest text scale. The default value is *100*.
-    - **Button scale percentage** – Specify the button size as a percentage of the standard size. Enter a value between 50 and 200. A value of *50* represents the smallest button scale, and a value of *200* represents the largest button scale. The default value is *100*.
-    - **Field filtering and sorting** – Select which fields are shown on the device and how they're ordered. You can choose to show all fields or just the promoted fields, and you can choose to sort them or not. Learn more in [Configure promoted fields for steps in the Warehouse Management mobile app](warehouse-app-promoted-fields.md).
-    - **Button style** – Choose how certain buttons should be displayed in the app. The available options are *Buttons* and *Slider*.
-    - **Spinner mode** – *Spinners* provide a way for workers to enter quantity values by spinning through digits using a sliding gesture, similar to using a combination lock. Use this setting to control how spinners are displayed. Choose one of the following values:
-        - *Auto* – Allow the system to choose the appearance based on how much room there is on the screen.
-        - *Small* – Always show the small spinner, which presents a compact control.
-        - *None* – Don't use spinners. Instead, allow workers to enter numerical values using an on-screen keypad.
-    - **Play sound when rescan is required** – Choose whether to play a sound when a rescan is required. A rescan might be required, for example, when a scanned value results in an error, such as an invalid item ID.
-    - **Show copilot on startup** – Specify whether the Copilot workload page should be shown each time the user signs in to the app. The workload page shows work summaries and AI-generated insights to help warehouse workers better plan their shift. Learn more in [Workload insights with Copilot in the Warehouse Management mobile app](warehouse-management-mobile-app-insights.md).
-    - **Show copilot data as** – Specify whether Copilot summaries should be based on work headers or work lines. The choice depends on how workers prefer to think about their daily workload. For example, if all your orders typically contain just a few items, workers might prefer to think about their work in terms of whole orders (*Work headers*). However, if quantities vary greatly from order to order, workers might prefer to think about their work in terms of individual items (*Work lines*).
+1. On the **General** FastTab, set the user settings values that you want to apply. These settings are the same as those offered in the app itself, but the app also provides some extra settings that aren't available here in the web client (including **Server request timeout** and **Configuration mode**). Learn more about the available settings in [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
 
 ## Set local user settings in the Warehouse Management mobile app
 
 Workers can set their own local user settings in the Warehouse Management mobile app. These settings override the default settings set by the admin. For example, a worker might prefer to use a different theme, sound level, or text scale. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. When a worker changes their local settings, the app updates the settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. If no matching profile exists, a new one is created.
 
-To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. In addition to the settings also managed in Supply Chain Management (described in the previous section), the app provides the following extra options:
-
-- **Server request timeout** – Set how long the app should wait for a response from the server before timing out. You can select a duration from 1 to 30 minutes.
-- **Configuration mode** – Enable this option to explore and understand the relationship between UI controls and their underlying XML. This option can be helpful when you're customizing mobile flow behavior. When this is set to *Yes*, you can press and hold on almost any button or label to drill down into the session XML. This feature isn't available for controls that aren't connected to the session XML.
+To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. Learn more in [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
 
 ## Create and manage mobile device brands
 

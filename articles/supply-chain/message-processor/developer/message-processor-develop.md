@@ -198,7 +198,7 @@ This example shows how to add a new queue. After the queue is created, you'll be
 1. Create a class that extends `SysMessageQueueMetadata`, as shown in the following example.
 
     ```xpp
-    [SysMessageQueueFactory(SysMessageQueue::MyQueue)]
+    [SysMessageQueueFactoryAttribute(SysMessageQueue::MyQueue)]
     public final class MyQueue extends SysMessageQueueMetadata
     {
     
@@ -279,7 +279,7 @@ Follow these steps to create a new message type.
 1. Create a class that extends `SysMessageTypeMetadata`, as shown in the following example.
 
     ```xpp
-    [SysMessageTypeFactory(SysMessageType::MyMessage)]
+    [SysMessageTypeFactoryAttribute(SysMessageType::MyMessage)]
     public final class MyMessage extends SysMessageTypeMetadata
     {
         /// <summary>
@@ -383,7 +383,7 @@ Follow these steps to create a new message type.
     }
     ```
 
-## Additional resources
+## Related information
 
 - [Monitor and control message processor messages](../message-processor.md)
 - [Clean up processed and canceled message processor messages](../message-processor-cleanup.md)

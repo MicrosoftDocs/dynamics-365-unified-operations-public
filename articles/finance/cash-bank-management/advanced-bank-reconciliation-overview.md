@@ -40,8 +40,7 @@ The advanced bank reconciliation feature lets you import bank statements. The im
     - Automatically post Finance bank transactions if they appear on a bank statement but don't appear in the Finance app.
     - Generate a reconciliation statement.
 
-> [!NOTE]
-> As of the 10.0.39 release, a new feature that's named **Modern bank reconciliation** enhances the capabilities in advanced bank reconciliation. Because modern bank reconciliation is in preview in Finance version 10.0.39, the objects and code that this feature introduces are subject to change before the feature goes to general availability (GA). Therefore, to help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables won't be customized.
+The **Modern bank reconciliation** feature enhances the capabilities in advanced bank reconciliation. **Modern bank reconciliation**, the objects and code that this feature introduces are subject to change. To help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables won't be customized.
 > 
 > **Classes:**
 >

@@ -2,7 +2,7 @@
 title: Configure cost control workspace parameters
 description: Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects.
 author: twheeloc
-ms.author: kfend
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/27/2023
 ms.custom:

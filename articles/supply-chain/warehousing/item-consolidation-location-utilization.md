@@ -16,26 +16,19 @@ ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFM
 
 This article provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the **Item Consolidation** page to consolidate items and therefore make better use of warehouse space.
 
-## Turn on the features
-
-Before you can use the features that are described in this article, you must turn them on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the features and turn them on if they are required. Turn on both the following features, in the order that they are listed in. (Both features are for the **Warehouse management** module.)
-
-1. *Warehouse location status*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. Learn more in [Warehouse location status](warehouse-location-status.md).)
-2. *Item consolidation location utilization*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
-
 ## Warehouse location status
 
-The *Warehouse location status* feature adds four new fields to the **Locations** page to track additional information about the current state of the location:
+The following four fields on the **Locations** page track information about the current state of the location:
 
 - **Item number** – The item that is currently in the location. If the location contains multiple items, this field will be blank.
 - **Last activity date and time** – The timestamp of the last warehouse transaction that was performed against the location.
 - **Aging date** – The date when the inventory in the location was brought into the warehouse. This date is calculated based on the license plate aging date. Although this date is accurate for license plate–tracked locations, it might not be accurate for locations that aren't license plate–tracked.
 - **Location status** – The status of the location. Four values are available:
 
-    - **Undetermined** – The location profile doesn't track status. Therefore, the current status is unknown.
-    - **Empty** – No inventory is currently in the location.
-    - **Picking** – Outbound transactions have been performed against the location after it was last empty.
-    - **Storage** – Only inbound transactions have been performed since the location was last empty.
+    - *Undetermined* – The location profile doesn't track status. Therefore, the current status is unknown.
+    - *Empty* – No inventory is currently in the location.
+    - *Picking* – Outbound transactions have been performed against the location after it was last empty.
+    - *Storage* – Only inbound transactions have been performed since the location was last empty.
 
 These fields let warehouse managers get a better overview of the status of the locations in the warehouse. They also allow for more advanced reporting and filtering.
 
@@ -195,6 +188,5 @@ The following scenario uses the Warehouse Management mobile app to make an inven
 
     > [!NOTE]
    > The system creates one work ID for each move that must be completed. If you specify a location that already contains inventory, only one work ID is created. If you specify a new location, two work IDs are created.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

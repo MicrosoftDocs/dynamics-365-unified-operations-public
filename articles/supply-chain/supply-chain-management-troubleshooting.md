@@ -14,7 +14,6 @@ ms.search.form:
 # Supply Chain Management troubleshooting and FAQs
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
 
 ## Troubleshooting articles
 
@@ -37,7 +36,6 @@ The following FAQ articles discuss issues specific to Supply Chain Management:
 - [Procurement FAQ](procurement/procurement-faq.md)
 - [Product-related translations FAQ](pim/translations-product-related-information.md)
 - [Calculations for product configuration models FAQ](pim/calculate-product-configuration-models.md)
-- [Product information management FAQ](pim/product-information-faq.md)
 - [Sales order FAQs](sales-marketing/sales-orders-faq.md)
 - [Schedule sales history data cleanup](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
 - [DDMRP FAQ](master-planning/planning-optimization/ddmrp-faqs.md)

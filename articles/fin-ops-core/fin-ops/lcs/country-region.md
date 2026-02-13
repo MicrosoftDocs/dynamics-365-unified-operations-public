@@ -1,8 +1,8 @@
 ---
 title: Globalization resources
 description: Access various lists of resources that can help you learn more about country/region-specific functionality and offerings.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 08/27/2025
 ms.reviewer: johnmichalak

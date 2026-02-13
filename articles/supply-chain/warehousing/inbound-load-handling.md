@@ -220,14 +220,6 @@ Companies that use loads to plan and manage transportation and warehouse handlin
 
 To work through the sample scenarios that are described in this section, you must first make sure that all the required features are turned on for your system. The required demo data must also be available in the system.
 
-#### Turn on the required features
-
-These scenarios require the *Multiple product receipt postings per load* feature and its prerequisite feature. Admins can turn on those features by following these steps.
-
-1. Open the **Feature management** workspace. (For complete details about how to find and use this workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Make sure that the *Associate purchase order inventory transactions with load* feature is turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.21, this feature is mandatory. Therefore, it's turned on by default and can't be turned off.
-1. Make sure that the *Multiple product receipt postings per load* feature is turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is mandatory. Therefore, it's turned on by default and can't be turned off.
-
 #### Enable sample data
 
 To work through these scenarios by using the specified sample records and values, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
@@ -322,10 +314,6 @@ In this procedure, you'll product receipt–post the inventory that you register
 1. In the list, find the load that you received. (You might have to select the **Show closed** check box to include the inbound loads that have a load status of *Shipped*.) Then select the link in the **Load ID** column to open the load.
 1. On the Action Pane, on the **Ship and receive** tab, select **Receive \> Product receipt**. If you're prompted to confirm the action, select **Yes**.
 1. In the **Posting product receipt** dialog box, on the **Lines** FastTab, inspect the grid. You should see the purchase order line for which the quantity has been registered against the selected load.
-
-    > [!NOTE]
-    > In versions where the *Multiple product receipt postings per load* feature isn't available or isn't enabled, the default quantity that is shown in the **Load lines** grid will be the total quantity that has been registered across all loads that are associated with the purchase order line.
-
 1. On the **Overview** FastTab, inspect the **Product receipt** field in the grid. Notice that it's to set to a number that includes the ID of the selected load.
 1. Select **OK** to post the product receipt and close the **Posting product receipt** dialog box.
 1. You're returned to the load details. Notice the following points:

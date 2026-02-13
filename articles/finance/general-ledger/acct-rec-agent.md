@@ -31,7 +31,7 @@ Here are some of the benefits:
 
 ## Set up the Account Reconciliation Agent
 
-To set up the Account Reconciliation Agent, follow these steps.
+To set up the Account Reconciliation Agent, follow these steps:
 
 1. In the **Feature management** workspace, enable the **(Preview) Account reconciliation agent** feature.
 1. Go to **Modules** \> **Agents**.
@@ -40,6 +40,9 @@ To set up the Account Reconciliation Agent, follow these steps.
 ## View agent recommendations for mitigating exceptions
 
 The Account Reconciliation Agent evaluates exceptions and provides a recommended action for each one. The agent is best viewed from the **Account reconciliation** workspace.
+
+>[!Note]
+> The Account reconciliation agent recommends actions for Voucher amount mismatch exceptions. 
 
 For example, an exception of the **Voucher amount mismatch** type is raised for a transaction. When the Account Reconciliation Agent evaluates the exception, it recommends the following action: **Create journal entry**. You can either accept that recommendation or select among other available actions:
 

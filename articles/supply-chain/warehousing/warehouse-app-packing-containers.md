@@ -43,17 +43,12 @@ The process requires the following information (at a minimum):
 - **Packing location** – This value identifies the location where the container is created. You can assign a default value for each worker by going to **Warehouse management \> Setup \> Worker** and/or by setting up a [detour](warehouse-app-detours.md) to look up the value.
 - **Shipment ID** or **License plate ID** – These values are used to validate which inventory items should be packed. The process depends on the mobile device menu item's **[Packing policy ID](warehouse-app-pack-containers-policies.md)** setting.
 
-### Record and view container line packing details (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
+### Record and view container line packing details
 
 When workers use the Warehouse Management mobile app to pack items into containers, the system can record container line packing details (such as worker IDs and packed quantities). This functionality can be useful, for example, if you have multiple workers processing a container line and you want to keep track of who did what.
 
 > [!NOTE]
 > The functionality described in this section requires Supply Chain Management version 10.0.45 or later.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 To enable this functionality, follow these steps:
 

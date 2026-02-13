@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/10/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31
@@ -20,7 +20,7 @@ ms.service: dynamics-365-op
 
 This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 through. Platform update 41 is available with version 10.0.17. Platform update 55 is available with version 10.0.31.
 
-The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. There, you can post any questions or feedback that you have about the on-premises deployment.
+The [Local Business Data](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc5NDAxNDYxNzYifQ) community on Microsoft Viva Engage is available. There, you can post any questions or feedback that you have about the on-premises deployment.
 
 ## Finance + Operations components
 
@@ -62,7 +62,7 @@ These components depend on the following system software:
 - Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server
 
 > [!IMPORTANT]
-> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ## Lifecycle Services
 
@@ -106,7 +106,7 @@ The hardware configuration includes the following components:
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For supported versions, see Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md).
 
 ### Hardware layout
 
@@ -115,7 +115,7 @@ Plan your infrastructure and Service Fabric cluster, based on the recommended si
 The following table shows an example of a hardware layout. This example is used throughout this article to demonstrate the setup. When you complete the setup, you must replace the machine names and IP addresses that are provided in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
-> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than three VMs, consider making that node type your Primary (Seed) node type to help increase the reliability of the cluster. 
+> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than three VMs, consider making that node type your Primary (Seed) node type to help increase the reliability of the cluster.
 
 | Machine purpose          | Service Fabric node type | Machine name    | IP address    |
 |--------------------------|--------------------------|-----------------|---------------|
@@ -134,7 +134,6 @@ The following table shows an example of a hardware layout. This example is used 
 | Management Reporter node | MRType                   | LBDEN01SFMR1    | 10.179.108.31 |
 | SSRS node 1              | ReportServerType         | LBDEN01SFBI1    | 10.179.108.41 |
 | Client                   |                          | LBDEN01CLIENT1  | 10.179.108.51 |
-
 
 The following table shows an example of a hardware layout where batch execution and interactive sessions are run in dedicated nodes. For more information, see [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md).
 
@@ -158,7 +157,6 @@ The following table shows an example of a hardware layout where batch execution 
 | Management Reporter node | MRType                     | LBDEN01SFMR1    | 10.179.108.31 |
 | SSRS node 1              | ReportServerType           | LBDEN01SFBI1    | 10.179.108.41 |
 | Client                   |                            | LBDEN01CLIENT1  | 10.179.108.51 |
-
 
 ## Overview of the setup process
 
@@ -254,7 +252,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Data Signing certificate                     | AOS uses this certificate to sign sensitive information. | <p>This certificate is separate from the Data Encryption certificate.</p><ul><li>**CN:** DataSigning</li><li>**DNS name:** DataSigning</li></ul> |
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS.| <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
-| SSRS Web Server certificate                  | This certificate is used as the server certificate that is presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
+| SSRS Web Server certificate                  | This certificate is used as the server certificate that is presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul> |
 | On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 You can use the wildcard SSL certificate for your domain to combine the Service Fabric Server certificate and the AOS SSL certificate.
@@ -293,7 +291,7 @@ You must create several user or service accounts for Finance + Operations to wor
 | AOS SQL DB Admin user                                   | SQL user | Finance + Operations uses this user to authenticate with SQL\*\*. This user will also be replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA | The local agent uses this account to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
-\* These accounts shouldn't have their regional settings changed. They should have the default EN-US region settings. 
+\* These accounts shouldn't have their regional settings changed. They should have the default EN-US region settings.
 
 \*\* If the password of the SQL user contains special characters, you might encounter issues during deployment.
 
@@ -365,7 +363,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 7. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
+> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine.
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -386,7 +384,7 @@ The infrastructure\\ConfigTemplate.xml configuration file describes the followin
 - The database configuration
 - The Service Fabric cluster configuration
 - The file shares that are required for the application to work
-- The SQL cluster information 
+- The SQL cluster information
 
     > [!IMPORTANT]
     > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
@@ -439,6 +437,7 @@ You must set up the following SMB 3.0 file shares:
 For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
 
 > [!IMPORTANT]
+>
 > - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption. For information about how to disable SMB 1.0, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1).
 > - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -507,7 +506,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     1. If you must reuse any certificate and therefore don't have to generate the certificate, set the **generateADCSCert** tag to **false** in the **ConfigTemplate.xml** file.
 
-3. If you're using SSL certificates that were previously generated, skip certificate generation, and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
+1. If you're using SSL certificates that were previously generated, skip certificate generation, and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
 
     > [!WARNING]
     > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) shouldn't be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
@@ -518,8 +517,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > dir cert:\LocalMachine\Root
     > ```
 
-4. In the **ProtectTo** tag for each certificate, specify a semicolon-separated list of Active Directory users or groups. Only users and groups that are specified in the **ProtectTo** tag will have the permissions to import the certificates that are exported by using the scripts. The scripts don't support passwords to help protect the exported certificates.
-5. Export the certificates into .pfx files. As part of the export process, the following command will check that the correct cryptographic provider is set for your certificates. 
+1. In the **ProtectTo** tag for each certificate, specify a semicolon-separated list of Active Directory users or groups. Only users and groups that are specified in the **ProtectTo** tag will have the permissions to import the certificates that are exported by using the scripts. The scripts don't support passwords to help protect the exported certificates.
+1. Export the certificates into .pfx files. As part of the export process, the following command will check that the correct cryptographic provider is set for your certificates.
 
     ```powershell
     # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
@@ -571,7 +570,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
     > [!NOTE]
     > These scripts will **not** configure SSRS. SSRS will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
-    > 
+    >
     > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
 ### <a name="setupvms"></a>Step 13. Set up VMs
@@ -603,12 +602,14 @@ You can configure more than one SSRS node. For more information, see [Configurin
     | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
 
 > [!IMPORTANT]
+>
 > - Make sure that the Management Studio setup is in US English.
 > - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table. Rename any files that don't have the expected name. Otherwise, you will encounter errors when you run the Configure-PreReqs.ps1 script.
 
 Next, follow these steps for each VM, or use remoting from a single machine.
 
 > [!NOTE]
+>
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections. If you use the remoting scripts, you might not have to run the remaining scripts in a section. In these cases, see the section text.
 > - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
 
@@ -651,23 +652,23 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 ### <a name="setupsfcluster"></a>Step 14. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
-2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
-3. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it. Make sure that the **infrastructure** folder has access to this folder.
-3. Go to the **infrastructure** folder, and run the following command to generate the Service Fabric **ClusterConfig.json** file.
+1. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
+1. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it. Make sure that the **infrastructure** folder has access to this folder.
+1. Go to the **infrastructure** folder, and run the following command to generate the Service Fabric **ClusterConfig.json** file.
 
     ```powershell
     .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
     ```
 
-4. You might have to make additional modifications to your cluster configuration, based on your environment. For more information, see [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
-5. Copy the **ClusterConfig.json** file that is generated to **\<ServiceFabricStandaloneInstallerPath\>**.
-6. Open Windows PowerShell in elevated mode, go to **\<ServiceFabricStandaloneInstallerPath\>**, and run the following command to test the **ClusterConfig.json** file.
+1. You might have to make additional modifications to your cluster configuration, based on your environment. For more information, see [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
+1. Copy the **ClusterConfig.json** file that is generated to **\<ServiceFabricStandaloneInstallerPath\>**.
+1. Open Windows PowerShell in elevated mode, go to **\<ServiceFabricStandaloneInstallerPath\>**, and run the following command to test the **ClusterConfig.json** file.
 
     ```powershell
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
     ```
 
-7. If the test is successful, run the following command to deploy the cluster.
+1. If the test is successful, run the following command to deploy the cluster.
 
     ```powershell
     # If using offline (internet-disconnected) install
@@ -676,7 +677,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
-8. After the cluster is created, open Service Fabric Explorer on any client machine, and validate the installation:
+1. After the cluster is created, open Service Fabric Explorer on any client machine, and validate the installation:
 
     1. Install the Service Fabric client certificate in the **CurrentUser\\My** certificate store if it isn't already installed.
     2. In Internet Explorer, select **Tools** (the gear symbol), and then select **Compatibility View settings**. Clear the **Display intranet sites in Compatibility View** checkbox.
@@ -746,9 +747,6 @@ You can verify that everything has been configured correctly by running the foll
     1. Restart the SQL service.
 
 1. If you used self-signed certificates, export the certificate (.cer file), and install it in the trusted root of each Service Fabric node. You will have only one certificate for all the nodes in your SQL cluster.
-
-> [!NOTE] 
-> For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section.
@@ -933,7 +931,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     ```
 
     > [!NOTE]
-    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. For more information see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
+    > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. For more information see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
 
 5. Restart the AD FS service so that the settings are applied correctly.
 
@@ -969,7 +967,7 @@ You've now completed the setup of the infrastructure. The following sections des
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/), and open your on-premises implementation project.
 2. Select the Menu button (sometimes referred to as the hamburger or the hamburger button), and then select **Project settings**.
 3. Select **On-premises connectors**.
-4. Select **Add** to create a new on-premises connector. 
+4. Select **Add** to create a new on-premises connector.
 5. On the **1: Setup host infrastructure** tab, select **Download agent installer**.
 6. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
@@ -985,7 +983,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. For information about the additional options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
+12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. For information about the additional options, see [Deployment configurations for the local agent](./onprem-localagent-options.md).
 13. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell
@@ -1051,7 +1049,7 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ## Known issues
 
-### When you run the .\Create-GMSAAccounts.ps1 script, you receive the following error message: "Key does not exist" 
+### When you run the .\Create-GMSAAccounts.ps1 script, you receive the following error message: "Key does not exist"
 
 If you're creating and generating gMSA passwords in your domain for the first time, you must first create the Key Distribution Services KDS Root Key. For more information, see [Create the Key Distribution Services KDS Root Key](/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key).
 
@@ -1059,7 +1057,7 @@ If you're creating and generating gMSA passwords in your domain for the first ti
 
 Follow the instructions in the error message to enable the **Allow delegation fresh credentials** computer policy on all machines of the Service Fabric cluster.
 
-### When you Configure-Prereqs on servers of the MRType and ReportServerType types, you receive the following error message: "Install-WindowsFeature: The request to add or remove features on the specified server failed" 
+### When you Configure-Prereqs on servers of the MRType and ReportServerType types, you receive the following error message: "Install-WindowsFeature: The request to add or remove features on the specified server failed"
 
 The .NET Framework version 3.5 is required on servers of the **MRType** and **ReportServerType** types. However, by default, source files for the .NET Framework version 3.5 aren't included in Windows Server 2016 installations. To work around the error, install the .NET Framework version 3.5. When you use Server Manager to manually add new features, specify the source files by using the **source** option.
 

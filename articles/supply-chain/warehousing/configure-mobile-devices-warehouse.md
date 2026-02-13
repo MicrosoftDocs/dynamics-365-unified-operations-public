@@ -3,12 +3,12 @@ title: Set up mobile devices for warehouse work
 description: Learn how to configure the menu items that warehouse workers use to perform work on a mobile device with a table that defines various options.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 05/16/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings, WHSRFMenu
+ms.topic: how-to
+ms.date: 11/20/2025
+ms.custom:
+  - bap-template
 ---
 
 # Set up mobile devices for warehouse work
@@ -20,17 +20,17 @@ This article describes how to configure the menu items that warehouse workers us
 For example, you can use the **Mobile device menu items** page to configure menu items for the following tasks:
 
 - Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
-- Create work that will be performed through another process. For example, receiving an item for a purchase order can create putaway work for another worker.
-- Perform work that was created by another process (existing work), such as putaway work that was created when an item was received for a purchase order, or picking work related to a sales order.
+- Create work that another process performs. For example, receiving an item for a purchase order can create putaway work for another worker.
+- Perform work that another process creates (existing work), such as putaway work that was created when an item was received for a purchase order, or picking work related to a sales order.
 
 ## Configure menu items for activities and inquiries
 
 To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**.
 
 > [!NOTE]
-> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the "Additional menu item options" section later in this article.
+> More fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. Learn more about the additional field selections iin the [Additional menu item options](#menu-options) section later in this article.
 
-If the **Mode** field for a menu item is set to **Indirect**, you can create a menu item to perform a general activity or inquiry that doesn't create work. Examples include reprinting license plate labels and an inquiry about the items in a location. The following table lists the options that are available.
+If you set the **Mode** field for a menu item to **Indirect**, you can create a menu item to perform a general activity or inquiry that doesn't create work. Examples include reprinting license plate labels and an inquiry about the items in a location. The following table lists the options that are available.
 
 | Option | Description |
 |---|---|
@@ -41,17 +41,17 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | License plate inquiry | View the quantity of items on a license plate and the location of the license plate. |
 | Start production order | Start a production order. |
 | Production scrap | Enter the quantity of scrap that was created during production for each bill of materials (BOM) line. |
-| Production last pallet | Indicate that the last pallet of items has been produced for a production order, and that the status of the production order must be updated to **Reported as finished**. The status of the raw materials that were not consumed during production is changed back from **Picked** to **On order**, and the items can be returned to inventory. |
+| Production last pallet | Indicate that the last pallet of items has been produced for a production order, and that the status of the production order must be updated to **Reported as finished**. The status of the raw materials that weren't consumed during production changes back from *Picked* to *On order*, and the items can be returned to inventory. |
 | Item inquiry | Scan an item to determine where it is in the warehouse. The inquiry returns all locations and quantities for the scanned item. |
 | Reprint label | Reprint a license plate label. |
 | License plate build | <p>Create a parent license plate by combining multiple license plates in the same location. This option is useful if you move multiple license plates at the same time. After the parent license plate is moved, you must perform a license plate break before you can pick items from each license plate.</p><p>**Tip:** To move a parent license plate, you must use a mobile device that is configured to create work for movements.</p> |
 | License plate break | Break up a license plate build so that you can pick items from the license plates that were in the build. |
 | Driver check in | If you're using Transportation management, register the arrival of a driver by scanning the outbound load ID, appointment ID, or shipment ID. For this option, a load must be assigned to the appointment, and the status of the load must be **Loaded**. |
 | Driver check out | Register that a driver has completed their appointment. |
-| Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
+| Flush number sequence cache | Delete number sequence numbers from the number sequence cache. A system administrator typically performs this activity to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
-| Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
-| Create transfer order from license plates | Allow warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. A worker starts by selecting the destination warehouse. The worker can then scan one or more license plates by using the app. After the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines, based on the on-hand inventory that is registered for those license plates. Learn more in [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md). |
+| Display open work list | Show a list of available work to a particular user. The user can then select work to perform and is directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If you select the **Allow users to filter work by transaction type** option, the work list includes a **Filter work** control that the user can use to filter by transaction type. In the work list, users see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
+| Create transfer order from license plates | Allow warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. A worker starts by selecting the destination warehouse. The worker can then scan one or more license plates by using the app. After the warehouse worker selects **Complete order**, a batch job creates the required transfer order and order lines, based on the on-hand inventory that is registered for those license plates. Learn more in [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md). |
 | Data inquiry | Enable the creation of warehouse app menu items that can be used to look up data from the mobile device as an inquiry list. Learn more in [Warehouse app data inquiry](warehouse-app-data-inquiry.md). |
 | Pack inventory into containers | Enable support for warehouse workers as they pack inventory items into containers. A worker starts by scanning a shipment to identify the inventory items that must be packed. The worker then identifies the destination shipping container by entering its ID or scanning its bar code. Finally, when the container is fully packed, the worker registers it as closed. This step makes the container ready for further processing by Microsoft Dynamics 365 Supply Chain Management. Learn more in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Container creation | Enable the container creation process. This process is typically part of the process of [packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
@@ -62,7 +62,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 
 ## Configure menu items to create work for another worker or process
 
-You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, putaway work is created for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
+You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, the system creates putaway work for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
 
 <table>
 <thead>
@@ -81,7 +81,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Inbound shipment order line receiving and put away</td>
-<td><p>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and put the items away. The same worker performs both actions.</p>
+<td><p>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and put away the items. The same worker performs both actions.</p>
 </td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Inbound shipment order item receiving and put away</td>
-<td><p>Register the receipt of a quantity of an item for an inbound shipment order by registering the order number, and put the item away. The same worker performs both actions.</p>
+<td><p>Register the receipt of a quantity of an item for an inbound shipment order by registering the order number, and put away the item. The same worker performs both actions.</p>
 </td>
 </tr>
 <td>License plate receiving</td>
@@ -107,7 +107,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Load item receiving and put away</td>
-<td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the order lines. The same worker performs both actions.</td>
+<td>Register the receipt of a load by using the load ID, and put away the items. The item number and product dimensions match the receipt to the order lines. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td><a href="sales-returns-unannounced.md">Return item receiving</a></td>
@@ -120,7 +120,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Purchase order line receiving and put away</td>
-<td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and put the items away. The same worker performs both actions.</td>
+<td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and put away the items. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td>Purchase order item receiving</td>
@@ -128,7 +128,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Purchase order item receiving and put away</td>
-<td>Register the receipt of a quantity of an item for a purchase order by registering the purchase order number, and put the item away. The same worker performs both actions.</td>
+<td>Register the receipt of a quantity of an item for a purchase order by registering the purchase order number, and put away the item. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td>License plate receiving</td>
@@ -144,7 +144,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Load item receiving and put away</td>
-<td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the purchase order lines. The same worker performs both actions.</td>
+<td>Register the receipt of a load by using the load ID, and put away the items. The item number and product dimensions match the receipt to the purchase order lines. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td rowspan="3">Return order</td>
@@ -153,7 +153,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Return order receiving and put away</td>
-<td>Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.</td>
+<td>Register the receipt of a quantity of an item by registering the RMA number, and put away the items. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td><a href="sales-returns-unannounced.md">Return item receiving</a></td>
@@ -167,7 +167,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Transfer order item receiving and put away</td>
-<td><p>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.</p>
+<td><p>Register the receipt of a quantity of an item, and put away the items. The same worker performs both actions.</p>
 <p><strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for WMS.</p></td>
 </tr>
 <tr>
@@ -176,7 +176,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Transfer order line receiving and put away</td>
-<td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.</td>
+<td>Register the receipt of a quantity of an item, and put away the items. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td>License plate receiving</td>
@@ -189,11 +189,11 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="4">Production</td>
 <td>Report as finished</td>
-<td>Register a quantity of a finished item that has been finished for a production, and create putaway work for another worker. The quantity can be some or all of the quantity that was planned for production.</td>
+<td>Register a quantity of a finished item that is finished for a production, and create putaway work for another worker. The quantity can be some or all of the quantity that was planned for production.</td>
 </tr>
 <tr>
 <td>Report as finished and put away</td>
-<td>Register a quantity of a finished item that has been finished for a production, and put the items away. The quantity can be some or all of the quantity that was planned for production. The same worker performs both actions.</td>
+<td>Register a quantity of a finished item that is finished for a production, and put away the items. The quantity can be some or all of the quantity that was planned for production. The same worker performs both actions.</td>
 </tr>
 <tr>
 <td>Kanban</td>
@@ -206,7 +206,7 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="5">Inventory</td>
 <td>Movement</td>
-<td>Register that items have been moved from one location to another. The worker specifies the location that the items are moved from and where they are moved to.</td>
+<td>Register that items are moved from one location to another. The worker specifies the location that the items are moved from and where they're moved to.</td>
 </tr>
 <tr>
 <td>Quarantine</td>
@@ -214,11 +214,11 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Movement by template</td>
-<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, the system uses the location directive to determine where to move the items to.</td>
+<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from. The system uses the location directive to determine where to move the items to.</td>
 </tr>
 <tr>
 <td>Warehouse transfer</td>
-<td><p>Register that items have been transferred from one warehouse to another. This option requires that the worker be allowed to perform work in both warehouses.</p>
+<td><p>Register that items are transferred from one warehouse to another. This option requires that the worker be allowed to perform work in both warehouses.</p>
 <p><strong>Note:</strong> This menu item requires a default inventory transfer journal where the <strong>Voucher draw</strong> field is set to <strong>Posting</strong>.</p></td>
 </tr>
 <tr>
@@ -243,12 +243,12 @@ You can set up a menu item that creates work for another worker after an initial
 
 > [!NOTE]
 >
-> - You can set up mobile device menu items (such as [*Mixed license plate receiving (and putaway)*](mixed-license-plate-receiving.md)) to embed some of the flows from the previous table in the process.
-> - To prevent accidental selection, the **Cancel** button isn't shown during *cycle counting* mobile workflows.
+> - You can set up mobile device menu items, such as [*Mixed license plate receiving (and putaway)*](mixed-license-plate-receiving.md), to embed some of the flows from the previous table in the process.
+> - To prevent accidental selection, the **Cancel** button doesn't appear during *cycle counting* mobile workflows.
 
 ## Configure menu items to process existing work
 
-In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to *Work*, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available. The option can be chosen under the **Directed by** field in the **Mobile device menu items** page.
+In addition to setting up menu items to create warehouse work, you can set up menu items to process existing work. Set the **Mode** field to *Work*, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. Use the work class to grant access to specific user roles or to separate processing for different types of operations. The following table describes the available options. Choose the option under the **Directed by** field in the **Mobile device menu items** page.
 
 <table>
 <thead>
@@ -264,7 +264,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>System directed</td>
-<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can select <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
+<td>Supply Chain Management controls the type of work that it assigns to a worker and the order that the worker performs the work in. When you select this option, you can select <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
 </tr>
 <tr class="odd">
 <td>User directed</td>
@@ -272,7 +272,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>User grouping</td>
-<td>The worker manually groups work. This option is useful when, for example, a worker can pick multiple items at the same time in a location. After the worker has finished picking all the required items, they can put the items away.</td>
+<td>The worker manually groups work. This option is useful when, for example, a worker can pick multiple items at the same time in a location. After the worker finishes picking all the required items, they can put away the items.</td>
 </tr>
 <tr class="odd">
 <td>System grouping</td>
@@ -287,7 +287,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 <td><p>The worker selects the work to perform when work is associated with a larger entity, such as a load or shipment. The worker determines the order that the items are picked in. If you select this option, the following fields are required:</p>
 <ul>
 <li><strong>Validated user directed field</strong> – Select the field that the worker scans to group the work.</li>
-<li><strong>Validated user directed label</strong> – Enter text that instructs the worker what to scan when picking work is grouped by the system.</li>
+<li><strong>Validated user directed label</strong> – Enter text that instructs the worker what to scan when the system groups picking work.</li>
 </ul>
 <p>This option is useful when, for example, multiple pallets are staged for a load. If you select <strong>LoadId</strong> in the <strong>Validated User Directed</strong> field, the worker can pick any pallet that is associated with the load. The worker receives an error message if they scan an item that isn't associated with the load.</p></td>
 </tr>
@@ -297,7 +297,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>Cycle count grouping</td>
-<td>The worker selects a zone, work pool, or location, and Supply Chain Management assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action Pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
+<td>The worker selects a zone, work pool, or location, and Supply Chain Management assigns work, based on the selection. If you select this option, you can select <strong>Cycle counting</strong> on the Action Pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
 </tr>
  <tr class="odd">
 <td>Transport loading</td>
@@ -306,9 +306,11 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tbody>
 </table>
 
+<a name="menu-options"></a>
+
 ## Additional menu item options
 
-Additional menu items options are available on the **Mobile device menu items** page. The options vary, depending on the process that you're configuring the menu item for.
+You can find more options for menu items on the **Mobile device menu items** page. The options vary depending on the process that you're configuring the menu item for.
 
 The following table describes these options.
 
@@ -322,7 +324,7 @@ The following table describes these options.
 <tbody>
 <tr class="odd">
 <td>Allow splitting of work</td>
-<td>Select this option to let users put items for a work order into more than one target license plate. This option is useful when, for example, a target license plate is full, and the worker must add the remaining items to another license plate. The worker can select <strong>Full</strong> to indicate that the license plate is full and stop receiving picking work for it. The put location for the picked items is then displayed, and the picking work that has already been completed is moved to a new work order. The remaining picking work for the target license plate stays on the original work order.</td>
+<td>Select this option to let workers put items for a work order into more than one target license plate. This option is useful when, for example, a target license plate is full, and the worker must add the remaining items to another license plate. The worker can select <strong>Full</strong> to indicate that the license plate is full and stop receiving picking work for it. The put location for the picked items is then displayed, and the picking work that you already completed is moved to a new work order. The remaining picking work for the target license plate stays on the original work order.</td>
 </tr>
 <tr class="even">
 <td>Anchoring</td>
@@ -334,7 +336,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Audit template ID</td>
-<td>Select the work audit template that will interrupt the work process for this menu item so that another operation can be performed. For example, if this menu item is for inbound work, the audit template might require that the worker check the temperature in the delivery container. The point at which the process is interrupted is specified on the audit template. This point can be, for example, when work is started or completed, or when its status changes.</td>
+<td>Select the work audit template that interrupts the work process for this menu item so that another operation can be performed. For example, if this menu item is for inbound work, the audit template might require that the worker check the temperature in the delivery container. The point at which the process is interrupted is specified on the audit template. This point can be, for example, when work is started or completed, or when its status changes.</td>
 </tr>
 <tr class="odd">
 <td>Cluster profile ID</td>
@@ -342,11 +344,11 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Count total item quantity first</td>
-<td>Select this option to require that a worker count the total quantity first during a count. If a difference is found, the worker must provide additional information, such as the license plate number, batch number, and serial numbers.</td>
+<td>Select this option to require workers to count the total quantity first during a count. If a difference is found, the worker must provide additional information, such as the license plate number, batch number, and serial numbers.</td>
 </tr>
 <tr class="odd">
 <td>Create movement</td>
-<td>Select this option to let a worker create work for a movement, but without requiring that the worker perform the work immediately. This option is useful if, for example, a quality inspection has been completed, and the inspector wants the item to be moved from the quality inspection area.</td>
+<td>Select this option to let a worker create work for a movement, but without requiring the worker to perform the work immediately. This option is useful if, for example, a quality inspection is completed, and the inspector wants the item to be moved from the quality inspection area.</td>
 </tr>
 <tr class="even">
 <td>Directive code</td>
@@ -358,7 +360,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Display batch disposition code</td>
-<td><p>Select this option to display batch disposition codes. For example, you can display batch disposition codes when you receive a returned batch. Workers can then evaluate the status or quality of a batch, and select the appropriate code. The rules on the batch disposition code determine whether the batch will be available to other warehouse processes. If you don't select this option, one of the following batch disposition codes is used:</p>
+<td><p>Select this option to display batch disposition codes. For example, you can display batch disposition codes when you receive a returned batch. Workers can then evaluate the status or quality of a batch, and select the appropriate code. The rules on the batch disposition code determine whether the batch is available to other warehouse processes. If you don't select this option, one of the following batch disposition codes is used:</p>
 <ul>
 <li>If you receive a new batch number, the default batch disposition code that is specified on the item model group.</li>
 <li>The batch disposition code that is already assigned to the batch.</li>
@@ -366,7 +368,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Display disposition code</td>
-<td>Select this option to display disposition codes. For example, you can display disposition codes when you receive return items. Workers can then evaluate the status or quality of the items, and select the appropriate code. The rules on the disposition code determine whether the items will be available to other warehouse processes.</td>
+<td>Select this option to display disposition codes. For example, you can display disposition codes when you receive return items. Workers can then evaluate the status or quality of the items, and select the appropriate code. The rules on the disposition code determine whether the items are available to other warehouse processes.</td>
 </tr>
 <tr class="even">
 <td>Display inventory status</td>
@@ -378,11 +380,11 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Generate license plate</td>
-<td>Select this option to generate a unique license plate number, based on the number sequence selection. For example, you can generate a license plate number for items that are received for purchase orders.</td>
+<td>Select this option to generate a unique license plate number, based on the number sequence selection. For example, you can generate a license plate number for items that you receive for purchase orders.</td>
 </tr>
 <tr class="odd">
 <td>Group put away</td>
-<td>Select this option to group the putaway work. This option is available when the work was grouped either by the worker or by Supply Chain Management. When the worker has finished all the picking work in the group, putaway work is created for the same group.</td>
+<td>Select this option to group the putaway work. This option is available when the work is grouped either by the worker or by Supply Chain Management. When the worker finishes all the picking work in the group, putaway work is created for the same group.</td>
 </tr>
 <tr class="even">
 <td>Inventory adjustment types</td>
@@ -390,7 +392,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Override batch number</td>
-<td>Select this option to let workers who are reporting a quantity as finished for a production order enter a batch number that differs from the batch number that is assigned to the production order.</td>
+<td>Select this option to let workers who report a quantity as finished for a production order enter a batch number that differs from the batch number that is assigned to the production order.</td>
 </tr>
 <tr class="even">
 <td>Override target license plate</td>
@@ -398,7 +400,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Pick and pack</td>
-<td><p>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for a sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</p><p>Note that only work headers that contain a single initial pick work line can be combined by using this group picking concept.</p></td>
+<td><p>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work are created for a sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</p><p>Only work headers that contain a single initial pick work line can be combined by using this group picking concept.</p></td>
 </tr>
 <tr class="even">
 <td>Pick oldest batch</td>
@@ -415,11 +417,11 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>System grouping field</td>
-<td>Select the field that determines how Supply Chain Management will group picking work for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker will scan the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. You must also enter text in the <strong>System grouping label</strong> field to instruct the worker what to scan.</td>
+<td>Select the field that determines how Supply Chain Management groups picking work for workers. For example, if you select the <strong>ShipmentId</strong> field, the worker scans the shipment ID to group the picking work. All work for the shipment is then assigned to the worker. This field requires that you create a menu item to use existing work that is grouped by the system. You must also enter text in the <strong>System grouping label</strong> field to instruct the worker what to scan.</td>
 </tr>
 <tr class="odd">
 <td>System grouping label</td>
-<td>Enter the text that will instruct the worker what to scan when picking work is grouped by Supply Chain Management. For example, if you're using the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter <strong>Shipment ID</strong> in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping</strong> field.</td>
+<td>Enter the text that instructs the worker what to scan when Supply Chain Management groups picking work. For example, if you're using the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter <strong>Shipment ID</strong> in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping</strong> field.</td>
 </tr>
 <tr class="even">
 <td>Use default data</td>
@@ -427,18 +429,18 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Validated User Directed Field</td>
-<td>Select the field that the worker will scan to group the work. For example, if you select <strong>LoadId</strong>, a worker can pick any work that is associated with a selected load. You must also enter text in the <strong>Validated User Directed Label</strong> field to instruct the worker what to scan.</td>
+<td>Select the field that the worker scans to group the work. For example, if you select <strong>LoadId</strong>, a worker can pick any work that's associated with a selected load. You must also enter text in the <strong>Validated User Directed Label</strong> field to instruct the worker what to scan.</td>
 </tr>
 <tr class="even">
 <td>Validated User Directed Label</td>
-<td>Enter the text that will instruct the worker what to scan when picking work is grouped by a validated user-directed field. For example, if you're using the <strong>LoadId</strong> field to group picking work for a load, you might enter <strong>Load ID</strong> in the field.</td>
+<td>Enter the text that instructs the worker what to scan when picking work is grouped by a validated user-directed field. For example, if you're using the <strong>LoadId</strong> field to group picking work for a load, you might enter <strong>Load ID</strong> in the field.</td>
 </tr>
 <tr class="odd">
 <td>Work template code</td>
-<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the putaway work will be generated based on the work template. If you don't select a work template, Supply Chain Management assigns a template, based on query criteria. For more information about work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
+<td>Select the work template that creates the work for a process. For example, if you receive an item for a purchase order, the putaway work is generated based on the work template. If you don't select a work template, Supply Chain Management assigns a template, based on query criteria. For more information about work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
 <tr class="even">
 <td>Show work line list</td>
-<td>Select an option for how workers will be able to view and interact with the lines for the currently selected picking work. For more information about this option, see <a href="pick-line-overview.md">Set up a mobile device menu item to provide a pick line overview</a>.</td>
+<td>Select an option for how workers can view and interact with the lines for the currently selected picking work. For more information about this option, see <a href="pick-line-overview.md">Set up a mobile device menu item to provide a pick line overview</a>.</td>
 </tr>
 <tr class="odd">
 <td>Display tracking dimension control for last on-hand</td>
@@ -456,7 +458,7 @@ The following table describes these options.
 
 ## Require workers to confirm the product, location, or quantity when they pick items
 
-You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when they perform work in the warehouse. Work confirmations help ensure that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker's registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device.
+You can set up work confirmations that require a worker to use a mobile device to register the location or quantity when they perform work in the warehouse. Work confirmations help ensure that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker's registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device.
 
 The following table describes the various work types that you can use work confirmations with.
 
@@ -477,9 +479,9 @@ The following table describes the various work types that you can use work confi
 
 ## <a name="mobile-device-menu"></a>Set up mobile device menus
 
-The menu items that you create using the **Mobile device menu items** page will only become available to mobile device users after you add them to one or more menus using the **Mobile device menu** page.
+The menu items that you create by using the **Mobile device menu items** page become available to mobile device users after you add them to one or more menus by using the **Mobile device menu** page.
 
-On the **Work users** page (**Warehouse management** \> **Setup** \> **Worker**), you can select the top-level menu that each worker has access to on the mobile app. (Learn more in [Mobile device user accounts](mobile-device-work-users.md).) In this way, you can set up a system that supports several different menu structures, where each worker sees only the menu items that are relevant to them.
+On the **Work users** page (**Warehouse management** \> **Setup** \> **Worker**), you can select the top-level menu that each worker can access on the mobile app. (Learn more in [Mobile device user accounts](mobile-device-work-users.md).) In this way, you can set up a system that supports several different menu structures, where each worker sees only the menu items that are relevant to them.
 
 To set up menus for mobile devices, follow these steps:
 
@@ -489,14 +491,14 @@ To set up menus for mobile devices, follow these steps:
     - To edit an existing menu or submenu, on the list pane, select the menu you want to edit. Then, on the Action Pane, select **Edit**.
 
 1. In the header of the menu, make the following settings:
-    - **Name**: Enter a name for the menu or submenu. This is an internal name and must be unique. You can't edit this field after you save the record.
+    - **Name**: Enter a name for the menu or submenu. This name is internal and must be unique. You can't edit this field after you save the record.
     - **Description**: Enter a short description for the menu or submenu.
 
 1. In the **Mobile device menus** section, find and select a menu item or submenu you'd like to add in the **Available menus and menu items** column. Then select the right arrow button to move selected item to the **Menu structure** column.
 1. Use the up arrow and down arrow buttons next to the **Menu structure** column to arrange the items in the menu.
 
     > [!TIP]
-    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**. (Select **Edit** from the Action Pane if you don't see the **Hide** or **Show** options.)
+    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This restriction also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**. (Select **Edit** from the Action Pane if you don't see the **Hide** or **Show** options.)
 
 1. On the Action Pane, select **Save**.
 

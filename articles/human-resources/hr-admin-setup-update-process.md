@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 # Update process
 
 > [!IMPORTANT]
-> For more information about the update process, see [Process for moving to the latest update of finance and operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). For more information about hotfixes, see [Download updates from Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
+> For more information about the update process, see [Process for moving to the latest update of finance and operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). For more information about hotfixes, see [Download updates from Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md).
 
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
@@ -34,7 +34,7 @@ Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) th
 
 Updates are released on a regular cadence to all environments. Human Resources is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
 
-## Release cadence 
+## Release cadence
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
@@ -67,7 +67,7 @@ You can find out what's in the works for Human Resources and what we've released
 
 - [Human Resources blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
-- [Human Resources Yammer community](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
+- [Dynamics 365 Human Resources](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMjIxMjIxNiJ9) community on Microsoft Viva Engage
 
 ## Preview features in a sandbox environment
 
@@ -81,7 +81,7 @@ Once a feature is generally available, it may be turned on or off in production 
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
-For more information about provisioning a sandbox environment, see [Provision a Human Resources project](hr-admin-setup-provision.md). To remove a test environment, see [Remove an instance](hr-admin-setup-remove-instance.md#remove-a-test-drive-environment). 
+For more information about provisioning a sandbox environment, see [Provision a Human Resources project](hr-admin-setup-provision.md). To remove a test environment, see [Remove an instance](hr-admin-setup-remove-instance.md#remove-a-test-drive-environment).
 
 ## Report bugs
 
@@ -92,7 +92,5 @@ While testing preview features or trying new capabilities, you might find items 
 [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans)</br>
 [What's new or changed in Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
 [Software lifecycle policy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

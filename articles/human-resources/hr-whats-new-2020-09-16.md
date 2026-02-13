@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 16, 2020.
-author: jcart1106
+author: twheeloc
 ms.date: 09/16/2020
 ms.update-cycle: 1095-days
 ms.topic: whats-new
@@ -19,7 +19,7 @@ ms.custom: evergreen
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: twheeloc
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
 

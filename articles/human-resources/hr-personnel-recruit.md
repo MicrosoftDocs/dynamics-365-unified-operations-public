@@ -38,7 +38,7 @@ If you aren't using a separate recruiting application, you can also manually man
 > [!NOTE]
 > If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, go to [Configure Dataverse integration](hr-admin-integration-common-data-service.md) and [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
 >
-> You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
+> You can also find recruiting integration apps on [Marketplace](https://marketplace.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
 ## Enable recruiting requests 
 To submit recruiting requests in HR recruitment, follow these steps:

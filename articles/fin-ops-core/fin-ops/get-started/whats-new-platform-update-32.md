@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in Platform update 32 for finance and operations apps (February 2020)
 description: Learn about the features that are in preview in Platform update 32 for finance and operations apps added in the February 2020 update. 
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 04/12/2024
+ms.date: 11/21/2025
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global

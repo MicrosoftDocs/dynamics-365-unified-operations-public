@@ -14,6 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Forecasting models are useful for creating accurate forecasts when they have access to large amounts of data. However, in many cases, such data isn't available, leading to inaccurate results like overstocking or understocking. Naive forecasting is a method for handling small datasets that ensures forecasts are predictable and tied to historical data.
 

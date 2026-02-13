@@ -1,10 +1,10 @@
 ---
 title: Review and accept changes to confirmed purchase orders
 description: Learn how to use the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders.
-author: cabeln
-ms.author: cabeln
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
-ms.date: 02/13/2025
+ms.date: 09/11/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -43,7 +43,7 @@ Each tile provides a **Show** link. When you select this link, the view beneath 
 
 ## Review changes to confirmed purchase orders
 
-Purchasers use the workspace to review and accept changes to confirmed purchase orders. They typically follow these steps.
+Purchasers use the workspace to review and accept changes to confirmed purchase orders. They typically follow these steps:
 
 1. Study all changes to confirmed purchase orders and their downstream impact.
 1. Focus on changes that have a low risk of downstream impact.

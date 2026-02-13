@@ -20,7 +20,7 @@ ms.reviewer: twheeloc
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2022-01-31 
 ms.dyn365.ops.version: 10.0.25
 

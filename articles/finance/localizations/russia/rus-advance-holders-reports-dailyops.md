@@ -29,7 +29,7 @@ By using budget control, you can make sure that sufficient funds are available f
 
 An advance report is primarily used to report travel expenses that an employee incurs during a business trip. If the expenses that are incurred on an advance report exceed the budget that is set, budget control indicates that the funds aren't available.
 
-To enable budget control for advance reports, follow these steps.
+To enable budget control for advance reports, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Budget control configuration** page.
 1. On the **Select source documents** tab, select **Advance reports** as a source document for budget control, and enable budget checks for advance report lines.

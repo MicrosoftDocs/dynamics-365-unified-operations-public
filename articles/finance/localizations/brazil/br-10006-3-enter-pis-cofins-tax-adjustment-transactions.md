@@ -22,7 +22,7 @@ You can create and post a journal for manual PIS and COFINS tax adjustments by u
 
 The following procedure uses the BRMF demo company.
 
-To create and post a journal for manual PIS and COFINS tax adjustments by using the adjustment codes defined by the tax authority, follow these steps.
+To create and post a journal for manual PIS and COFINS tax adjustments by using the adjustment codes defined by the tax authority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Journals \> General tax adjustment/benefit/incentive**.
 1. Select **New**.

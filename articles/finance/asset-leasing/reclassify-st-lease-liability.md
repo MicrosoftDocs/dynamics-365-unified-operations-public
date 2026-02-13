@@ -22,7 +22,7 @@ This article explains how to create a monthly journal entry to reclassify a port
 
 The short-term portion of the lease liability is shown on the liability amortization schedule. When the journal entry is posted, the **Liability reclass journal created** column becomes available, and the journal ID is also filled in on the schedule.
 
-To create and post the short-term liability reclassification journal entry, follow these steps.
+To create and post the short-term liability reclassification journal entry, follow these steps:
 
 1. Go to **Asset leasing \> Periodic \> Batch journal creation**.
 2. In the **Batch journal creation** dialog box, in the **Select schedule** field, select **Short-term lease liability reclass**.

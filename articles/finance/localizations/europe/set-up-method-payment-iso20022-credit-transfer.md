@@ -23,7 +23,7 @@ Before you complete the procedure, you must first export format configurations a
 
 The procedure was created using the DEMF demo data company.
 
-To set up a vendor method of payment for a ISO20022 credit transfer, follow these steps.
+To set up a vendor method of payment for a ISO20022 credit transfer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payment setup \> Methods of payment**.
 1. Use the Quick Filter to find records. For example, filter on the **Method of payment** field with a value of "SEPA CT".

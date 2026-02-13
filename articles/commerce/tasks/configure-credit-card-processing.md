@@ -1,11 +1,10 @@
 --- 
 title: Configure credit card processing
-description: This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. 
+description: Learn how to view the list of payment providers and how to configure a payment account for accounts receivable in Microsoft Dynamics 365 Commerce. 
 author: jashanno
-ms.date: 11/14/2016
-ms.topic: how-to  
-audience: Application User 
-ms.reviewer: v-chrgriffin
+ms.date: 02/06/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-06-30 
@@ -16,40 +15,38 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.
+This article describes how to view the list of payment providers and how to configure a payment account for accounts receivable in Microsoft Dynamics 365 Commerce.
 
-## View a list of payment providers
-1. Go to Accounts receivable > Payments setup > Payment services.
-2. Click View available providers.
+The following procedures explain how to view the list of payment providers and how to configure a payment account for accounts receivable. The procedure uses the USRT company in demo data and is intended for administrators and IT professionals.
 
-## Configure payment account
-1. Click New.
-2. In the Payment service field, type a value.
-3. In the Payment connector field, select an option.
-4. Toggle the expansion of the Payment service account section.
-5. In the Environment: field, type 'PROD'.
-6. Click Credit card types.
-7. In the Payment journal field, click the drop-down button to open the lookup.
-8. In the list, click the link in the selected row.
-9. Click Add.
-10. In the Currency field, type a value.
-11. In the list, find and select the desired record.
-12. In the Payment journal field, click the drop-down button to open the lookup.
-13. In the list, click the link in the selected row.
-14. Click Add.
-15. In the Currency field, type a value.
-16. In the list, find and select the desired record.
-    * You can repeat these steps for as many card types as you need.  
-17. In the Payment journal field, click the drop-down button to open the lookup.
-18. In the list, click the link in the selected row.
-19. Click Add.
-20. In the Currency field, type a value.
-21. Click Save.
-22. Close the page.
-23. Click Validate.
-24. Click the Default processor for new credit cards checkbox.
-25. Click Save.
+To configure a payment account, follow these steps:
 
-
+1. In Commerce headquarters, go to **Accounts receivable** > **Payments setup** > **Payment services**.
+1. Select **View available providers**.
+1. Select **New**.
+1. In the **Payment service** field, enter a value.
+1. In the **Payment connector** field, select an option.
+1. Expand the **Payment service account** section.
+1. In the **Environment:** field, enter `PROD`.
+1. Select **Credit card types**.
+1. In the **Payment journal** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the chosen row.
+1. Select **Add**.
+1. In the **Currency** field, enter a value.
+1. In the list, find and select the desired record.
+1. In the **Payment journal** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the chosen row.
+1. Select **Add**.
+1. In the **Currency** field, enter a value.
+1. In the list, find and select the desired record. Repeat the following steps for as many card types as you need.  
+1. In the **Payment journal** field, select the drop-down button to open the lookup.
+1. In the list, select the link in the chosen row.
+1. Select **Add**.
+1. In the **Currency** field, enter a value.
+1. Select **Save**.
+1. Close the page.
+1. Select **Validate**.
+1. Select the **Default processor for new credit cards** checkbox.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -27,7 +27,7 @@ The procedure uses the demo company GBSI.
 
 ## Create a sales order that includes items subject to reverse charge VAT
 
-To create a sales order that includes items subject to reverse charge VAT, follow these steps.
+To create a sales order that includes items subject to reverse charge VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Select **New**.

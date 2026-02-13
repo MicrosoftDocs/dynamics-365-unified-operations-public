@@ -25,10 +25,10 @@ Before printing the report, ensure the following prerequisites are met:
 - Activate the country/region-specific LATAM feature and the general feature.
 - Import the following configuration from the Dataverse Configuration Repository:
 
-    - :::no-loc text="LTM Tax Report”:::
-    - :::no-loc text="LTM Tax Report Mapping”:::
-    - :::no-loc text="File format 1003”:::
-    - :::no-loc text="File format 1003 Excel”::: 
+    - :::no-loc text="LTM Tax Report":::
+    - :::no-loc text="LTM Tax Report Mapping":::
+    - :::no-loc text="File format 1003":::
+    - :::no-loc text="File format 1003 Excel"::: 
 
 Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
@@ -47,7 +47,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 
 Lookups and conditions are designed so that you can select the combination of document classification IDs, tax codes, and ledger accounts used in the transactions shown on the report.
 
-After you meet the previously listed prerequisites, follow these steps.
+After you meet the previously listed prerequisites, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. In the tree on the left, select **LTM Tax Report** \> **File format 1003** or **LTM Tax Report** \> **File format 1003 Excel**.

@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: article
-ms.date: 08/28/2025
+ms.date: 12/02/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -23,6 +23,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Supply Chain Management 10.0.46 release
+
+### Data Integrator templates for Dynamics 365 Field Service
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | This functionality is scheduled to be replaced by a simpler, more integrated Field Service experience. |
+| **Replaced by another feature?** | Yes |
+| **Product areas affected** | Microsoft finance and operations applications |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.45 release
 
@@ -56,7 +68,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?** | Yes. SHA1 hashing is being replaced by SpookyHash. |
 | **Product areas affected** | Supply Chain Management – Inventory |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | As of Supply Chain Management version 10.0.44, the system uses SpookyHash instead of SHA1 to hash data in the `InventDim` table. When you upgrade to version 10.0.44, the system automatically schedules a batch job that converts all `InventDim` data hashed using SHA1 to instead use SpookyHash. Version 10.0.44 can work with both SHA1 and SpookyHash data, but the ability to use SHA1 will be removed in Supply Chain Management version 10.0.45. Extensibility was never supported for this part of the application, but if you have external code that uses SHA1 when creating, updating, or searching data in the `InventDim` table, you must stop using that code before upgrading to Supply Chain Management 10.0.44 because it will corrupt your data. |
+| **Status** | As of Supply Chain Management version 10.0.44, the system uses SpookyHash instead of SHA1 to hash data in the `InventDim` table. When you upgrade to version 10.0.44, the system automatically schedules a batch job that converts all `InventDim` data hashed using SHA1 to instead use SpookyHash. Version 10.0.44 can work with both SHA1 and SpookyHash data, but support for SHA1 will be removed in a future release. Extensibility was never supported for this part of the application, but if you have external code that uses SHA1 when creating, updating, or searching data in the `InventDim` table, you must stop using that code before upgrading to Supply Chain Management 10.0.44 because it will corrupt your data. |
 
 ### Rename item number (preview)
 
@@ -188,7 +200,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes. Service-based authentication is being replaced by user-based authentication (device code flow), which is more secure. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p>Deprecated. As of July 15, 2024, Microsoft will discontinue support for using service-based authentication methods (certificate and shared secret) to connect the Warehouse Management mobile app to Supply Chain Management. Service-based authentication is being replaced by user-based authentication (device code flow). Administrators must update all devices to use user-based authentication before July 15, 2024. For more information about device code flow, see [User-based authentication FAQ](../warehousing/warehouse-app-user-based-auth-faq.md) and [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md).</p><p>Mass deployment with Microsoft Intune isn't yet supported for user-based authentication, but we expect to add support for it soon. For more information and the latest news about mass deploying to mobile devices for user-based authentication, see [Mass deploy the mobile app with user-based authentication](../warehousing/warehouse-app-intune-user-based.md).</p> |
+| **Status** | <p>Removed. As of July 15, 2024, Microsoft discontinued support for using service-based authentication methods (certificate and shared secret) to connect the Warehouse Management mobile app to Supply Chain Management. Service-based authentication has been replaced by user-based authentication (device code flow). Administrators must update all devices to use user-based authentication before July 15, 2024. For more information about device code flow, see [User-based authentication FAQ](../warehousing/warehouse-app-user-based-auth-faq.md) and [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md).</p><p>Mass deployment with Microsoft Intune isn't yet supported for user-based authentication, but we expect to add support for it soon. For more information and the latest news about mass deploying to mobile devices for user-based authentication, see [Mass deploy the mobile app with user-based authentication](../warehousing/warehouse-app-intune-user-based.md).</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.35 release
 

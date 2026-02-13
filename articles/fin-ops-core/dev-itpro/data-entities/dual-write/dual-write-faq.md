@@ -2,7 +2,7 @@
 title: Dual-write FAQ
 description: Read answers to frequently asked questions about dual-write including questions about dual-write setup, administration, management, and mapping concepts between apps.
 author: twheeloc
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: faq
 ms.date: 06/2/2025
 ms.reviewer: johnmichalak
@@ -79,14 +79,14 @@ The integration follows the complete sequence of changes. In the example, the cu
 
 Each pair of linked environments (finance and operations environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you're refreshing a sandbox from production, both the finance and operations sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments must be unlinked. After the data refresh in target environments, the following tables should be cleaned up:
 
-+ Finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
-+ Dataverse tables: **DualwriteRuntimeConfiguration**. 
++ Finance and operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**.
++ Dataverse tables: **DualwriteRuntimeConfiguration**.
 
 The environments must be relinked and the maps reactivated manually.
 
-### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern?
+### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. What might change during migration?
 
-For information about how to migrate Prospect to cash to dual-write, see [Migrating data from Data Integrator to Dual Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024). In general, three things might change during migration:
+In general, three things might change during migration:
 
 + Manual migration of the maps from Data integrator to dual-write
 + Table changes, because of the absence of advanced query capabilities

@@ -1,8 +1,8 @@
 ---
 title: Delete master records in financial journals
 description: Learn how to delete master records that are used in a financial journal, including examples for deleting a MainAccount master record.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 03/01/2024
 ms.custom: 
@@ -33,7 +33,7 @@ Master records that are used in a posted document can't be deleted. Only the fin
 
 ## Example
 
-For example, if you want to delete a MainAccount master record, follow these steps.
+For example, if you want to delete a MainAccount master record, follow these steps:
 
 1. Go to **General ledger** \> **Chart of accounts** \> **Accounts** \> **Main accounts**.
 2. Select the main account to delete.

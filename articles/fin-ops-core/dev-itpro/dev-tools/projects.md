@@ -21,7 +21,7 @@ The finance and operations project type is part of the development tools. This p
 
 ## Create a new project
 
-To create a new, empty project, follow these steps.
+To create a new, empty project, follow these steps:
 
 1. On the **File** menu, point to **New**, and then click **Project**.
 2. In the list of template types, expand the **Installed** node.
@@ -57,7 +57,7 @@ There are several ways to add existing elements to a project. Here are the most 
 - You can use drag-and-drop operations to add an element from Application Explorer to a project.
 - If you're limiting your search results to a single model, you can add the results of a filter in Application Explorer to a project.
 
-After you've added the elements, you might want to use Solution Explorer to group them into folders, so that they are easier to find. The location of the project file and the folders that you create in the project don’t affect the location of the XML files that represent the model elements. The model elements are always stored in the appropriate folder in the model store. To organize elements into folders, select the **Organize projects by element type** option. On the **Dynamics 365** menu, click **Options**. Select the **Projects** category to see this option. When this option is selected, elements that are added to a new or existing project (such as when search results in Application Explorer are added to a project) are grouped into folders, based on the element type name. To create a new element for a project, follow these steps.
+After you've added the elements, you might want to use Solution Explorer to group them into folders, so that they are easier to find. The location of the project file and the folders that you create in the project don’t affect the location of the XML files that represent the model elements. The model elements are always stored in the appropriate folder in the model store. To organize elements into folders, select the **Organize projects by element type** option. On the **Dynamics 365** menu, click **Options**. Select the **Projects** category to see this option. When this option is selected, elements that are added to a new or existing project (such as when search results in Application Explorer are added to a project) are grouped into folders, based on the element type name. To create a new element for a project, follow these steps:
 
 1. In Solution Explorer, right-click the project, point to **Add**, and then click **New Item**.
 2. In the **Operations Artifacts** list, select the category of element to create.
@@ -69,7 +69,7 @@ After you've added the new element, you might want to use Solution Explorer to m
 
 ## Export a projects as an .axpp file
 
-To transfer elements to a different installation, you can use a project package file. Project package files have the .axpp file name extension. A project package contains all the elements from the project. To export a project, follow these steps.
+To transfer elements to a different installation, you can use a project package file. Project package files have the .axpp file name extension. A project package contains all the elements from the project. To export a project, follow these steps:
 
 1. In Solution Explorer, select the project to export.
 2. On the **Project** menu, click **Export Project**. (The command on the menu will contain the name of the selected project.)
@@ -78,7 +78,7 @@ To transfer elements to a different installation, you can use a project package 
 
 ## Import an .axpp file
 
-To use the contents of a project package file, you must import the .axpp file into an installation. The elements from the project package file will be imported into the same model that they were exported from. If that model doesn’t exist in the installation, it will be created during the import process. To import a project package file, follow these steps.
+To use the contents of a project package file, you must import the .axpp file into an installation. The elements from the project package file will be imported into the same model that they were exported from. If that model doesn’t exist in the installation, it will be created during the import process. To import a project package file, follow these steps:
 
 1. On the **Dynamics 365** menu, click **Import Project**.
 2. In the **Import Project** dialog box, specify the location of the project package (.axpp) file to import.

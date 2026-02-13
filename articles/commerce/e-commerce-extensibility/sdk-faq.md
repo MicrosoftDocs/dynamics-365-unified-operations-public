@@ -1,11 +1,10 @@
 ---
 title: Dynamics 365 Commerce online SDK FAQ
-description: This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+description: This article provides answers to frequently asked questions about the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 08/02/2024
-ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.date: 02/05/2026
+ms.topic: faq
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,24 +15,24 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+This article provides answers to frequently asked questions about the Dynamics 365 Commerce online software development kit (SDK).
 
 ### Why does my e-commerce extension package fail to build due to an incompatible version of Node.js?
 
-If you updated to version 1.37 or higher of the online SDK package, you may experience a build break if you're using Node version 12.x because version 1.37 was updated to support Node.js version 16.x. You'll see the following error message:
+If you updated to version 1.37 or higher of the online SDK package, you might experience a build failure if you're using Node version 12.x. Version 1.37 supports Node.js version 16.x. You see the following error message:
 
 `The engine "node" is incompatible with this module. Expected version ">=16.x.x". Got "12.22.6".` 
 
-To resolve this issue, you must update Node.js to version 16.x on local build environments and any automated build environments such as Azure DevOps pipelines. 
+To resolve this problem, update Node.js to version 16.x on local build environments and any automated build environments such as Azure Pipelines.
 
 ### How do I upgrade to Node 18?
 
 To upgrade to Node 18, ensure that you're using version 1.49 or later of the [Dynamics 365 Commerce Online SDK](setup-dev-environment.md#install-the-online-sdk-and-module-library).
 
 > [!NOTE] 
-> If after the upgrade you experience an error when running the **yarn** command such as `node-sass: Command failed`, you must remove `node-sass` and `sass-loader` from your package.json file, and then rerun the **yarn** command.
+> If after the upgrade you experience an error when running the **yarn** command such as `node-sass: Command failed`, remove `node-sass` and `sass-loader` from your package.json file, and then rerun the **yarn** command.
 
-For your deployed app to run on Node 18, you must set the **NODE_RUNTIME_VERSION** environment variable in your build script.
+To run your deployed app on Node 18, set the **NODE_RUNTIME_VERSION** environment variable in your build script.
 
 Your package.json should look like the following example.
 
@@ -45,11 +44,11 @@ Your package.json should look like the following example.
 
 ### How do I resolve heap out of memory errors?
 
-If you're experiencing heap out of memory errors when building the online SDK, it's possible that the code has incorrect imports. To ensure that paths are set up correctly we recommend that you use the [CLI tools](cli-command-reference.md) included with the online SDK for creating customizations such as view extensions, component overrides, and module clones.
+If you get heap out of memory errors when building the online SDK, the code might have incorrect imports. To make sure that paths are correct, use the [CLI tools](cli-command-reference.md) included with the online SDK for creating customizations such as view extensions, component overrides, and module clones.
 
-Imports from modules residing in the **node_modules** directory should always be against the namespace and module name. Any import of a module with an absolute path from the module's **src** folder causes the build process to run into a loop, which could lead to heap out of memory errors.
+Always import modules from the **node_modules** directory by using the namespace and module name. If you import a module by using an absolute path from the module's **src** folder, the build process runs into a loop. This loop can cause heap out of memory errors.
 
-The following example shows an invalid import due to all of the importable components having already been exported by the module.
+The following example shows an invalid import because all of the importable components are already exported by the module.
 
 ```ts
 import { IHeaderViewProps } from '@msdyn365-commerce-modules/header/src/header';
@@ -63,7 +62,7 @@ import { IHeaderViewProps } from '@msdyn365-commerce-modules/header';
 
 ### How do I increase node memory size?
 
-The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space you can specify the environment variable in the scripts section of the package.json file by adding **--max_old_space_size=4096**, as shown in the following example:
+The default memory setting works for most customization scenarios. However, if your application needs more heap space, specify the environment variable in the scripts section of the package.json file by adding **--max_old_space_size=4096**, as shown in the following example:
 
 ```JSON
 "build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
@@ -73,17 +72,17 @@ The default memory setting should be sufficient for most customization scenarios
 
 Yes. To clear a node app's cache in Commerce site builder, select **Site settings \> Extensions**, select the **Configuration** tab, and update the value of the **Cache key suffix** setting value to any random characters (for example, "xyz"). Updating the value clears the node app's cache.
 
-### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
+### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package can't be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
-To help decrease deployment time during package deployment, uploaded packages are prebuilt while the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) is run by using the latest online SDK. If package upload fails, and you receive one of the error messages, update to the latest SDK by using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. In this way, you ensure that the yarn.lock file is deleted before you run yarn to pull down the latest online SDK. You can then rebuild the package by using the **yarn msdyn365 pack** command, and then redeploy the new package.
+To help decrease deployment time during package deployment, the latest online SDK prebuilds uploaded packages while running the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack). If package upload fails, and you receive one of the error messages, update to the latest SDK by using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. This step ensures that the yarn.lock file is deleted before you run yarn to pull down the latest online SDK. You can then rebuild the package by using the **yarn msdyn365 pack** command, and then redeploy the new package.
 
 ### Can I opt in to using Webpack 5 to bundle the Commerce application?
 
 The Dynamics 365 Commerce online SDK supports using the latest Webpack 5 release to bundle the Commerce application. Webpack 5 offers improved bundling together with better tree shaking and code generation to help reduce the amount of JavaScript that is downloaded and processed on a page.
 
-In the version 1.32 (Commerce version 10.0.22) release of the online SDK, you can opt in to Webpack 5. In the version 1.34 (Commerce version 10.0.24) release, Webpack 5 is the default option, and no opt in is required.
+In version 1.32 (Commerce version 10.0.22) of the online SDK, opt in to Webpack 5. In version 1.34 (Commerce version 10.0.24) of the online SDK, Webpack 5 is the default option.
 
-You can enable Webpack 5 by running the **yarn msdyn365 upgrade-webpack** command. This command updates the package.json file with the list of dependencies that are required for Webpack 5. After the package.json file is updated, you can install the new dependencies by running the **yarn** command. The following example shows the two commands.
+Enable Webpack 5 by running the **yarn msdyn365 upgrade-webpack** command. This command updates the package.json file with the list of dependencies that are required for Webpack 5. After the package.json file is updated, install the new dependencies by running the **yarn** command. The following example shows the two commands.
 
 ```Console
 yarn msdyn365 upgrade-webpack
@@ -93,7 +92,7 @@ yarn
 
 ### How can I make server-side module failures more apparent?
 
-Version 1.3 of the Dynamics 365 Commerce online SDK introduced a change in the number of modules that are rendered in the development environment. During module development, modules can be rendered on both the server side and the client side. If modules fail on the server side, those failures can be masked and difficult to detect because the modules are also running on the client side.
+Version 1.3 of the Dynamics 365 Commerce online SDK introduced a change in the number of modules that are rendered in the development environment. During module development, modules render on both the server side and the client side. If modules fail on the server side, those failures can be masked and difficult to detect because the modules are also running on the client side.
 
 To make server-side failures more apparent, version 1.31 of the online SDK generates an error message. This message states that an issue occurred during module rendering on the server, and that the issue must be addressed before the module can be successfully rendered in the development environment. This validation occurs only in the development environment (the production environment isn't affected).
 
@@ -109,9 +108,9 @@ The Commerce online SDK version 9.30 release includes an update from the depreca
 
 The Applications Insights update contains breaking API changes that might affect your customization code if you use these APIs to log telemetry into your Application Insights instance. For more information, see [Upgrading from the old version of Application Insights](https://github.com/microsoft/ApplicationInsights-JS#upgrading-from-the-old-version-of-application-insights).
 
-### What is replacing TSLint, which is deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
+### What replaces TSLint, which is deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
 
-Because the open-source TSLint static analysis tool is deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint continues to work until SDK version 1.30 (the Commerce version 10.0.20 release). Before SDK version 1.30, you can manually update to ESLint if you want. However, in SDK version 1.30, update to ESLint is enforced.
+Because the open-source TSLint static analysis tool is deprecated, the Dynamics 365 Commerce online SDK replaces it with the [ESLint](https://eslint.org/) static analysis tool. TSLint continues to work until SDK version 1.30 (the Commerce version 10.0.20 release). Before SDK version 1.30, you can manually update to ESLint if you want. However, in SDK version 1.30, update to ESLint is enforced.
 
 After the update to SDK version 1.28, you receive a deprecation warning when you run the **yarn** command. You can switch to ESLint at any time afterward. However, you might receive new errors and warnings against your custom code.
 
@@ -125,7 +124,7 @@ After you [update to SDK version 1.28](sdk-updates.md) or later, you must create
 
 ##### Create an .eslintrc.js file
 
-You must add a new file that is named **.eslintrc.js** to your root SDK folder. (In that folder, you should also see an existing **tslint.json** file.) The **.eslintrc.js** file contains a base rule set that can be extended.
+You must add a new file named **.eslintrc.js** to your root SDK folder. (In that folder, you should also see an existing **tslint.json** file.) The **.eslintrc.js** file contains a base rule set that can be extended.
 
 The base configuration contains a set of core rules that are relaxed in terms of linting restrictions. You can also define your own rule set or extend another rule set.
 
@@ -146,7 +145,7 @@ module.exports = {
 };
 ```
 
-If there are additional files and directories that you don't want lint rules to be applied to, you can add them to the **ignorePatterns** section.
+If there are other files and directories that you don't want lint rules to be applied to, you can add them to the **ignorePatterns** section.
 
 You can also extend or replace rules by defining rules in the **.eslintrc.js** file. For example, the **header/header** rule requires a header on all files, and you want to extend the base configuration to turn off that rule. In this case, use the following code in the configuration file.
 
@@ -192,7 +191,7 @@ For more information, see the [ESLint documentation](https://eslint.org/docs/lat
 
 ##### Create a .prettierrc file
 
-Prettier is an opinionated code formatter that can be configured to format your code after you save a file. A .prettierrc file allows you to add new rules for Prettier to use. You must create a **.prettierrc** file in the root SDK folder with the following default settings.
+Prettier is an opinionated code formatter that you can configure to format your code after you save a file. A .prettierrc file allows you to add new rules for Prettier to use. You must create a **.prettierrc** file in the root SDK folder with the following default settings.
 
 ```json
 {
@@ -206,7 +205,7 @@ Prettier is an opinionated code formatter that can be configured to format your 
 
 ##### Update the package.json file
 
-If you want to use both TSLint and ESLint, you can leave the TSLint dependency in your **package.json** file and add the following dependencies in the **devDependencies** section.
+If you want to use both TSLint and ESLint, keep the TSLint dependency in your **package.json** file and add the following dependencies in the **devDependencies** section.
 
 ```json
 "@msdyn365-commerce/eslint-config": "^1.27.7",
@@ -239,9 +238,9 @@ Finally, change the **build** and **start** commands as shown here.
 
 #### Fix ESLint errors
 
-Although this step is optional, we recommend that you install the ESLint extension for Visual Studio Code. This extension helps identify errors and warnings directly in your editor. Additionally, quick actions let you use comments to ignore linting errors.
+Although this step is optional, install the ESLint extension for Visual Studio Code. This extension helps identify errors and warnings directly in your editor. Additionally, quick actions let you use comments to ignore linting errors.
 
-You might receive new ESLint errors, because all the TSLint errors that were suppressed through TSLint comments are being shown again. The ESLint errors can be fixed or disabled, and you can choose to ignore the warnings.
+You might receive new ESLint errors because all the TSLint errors that were suppressed through TSLint comments are now shown again. You can fix or disable the ESLint errors, and you can choose to ignore the warnings.
 
 If you use `–use-eslint` flags in your code, builds fail when errors occur. However, warnings are ignored.
 
@@ -249,12 +248,12 @@ If you use `–use-eslint` flags in your code, builds fail when errors occur. Ho
 
 You can fix TSLint errors by replacing TSLint disable comments with ESLint disable comments. You can use file find and replace functionality if that approach is easier. However, be sure to verify the results.
 
-Here are some helpful tips:
+Use the following tips:
 
-- Like TSLint warnings, ESLint warnings can be disabled by using comments.
-- To disable the next line, use `// eslint-disable-next-line <rule1>, <rule2>...`.
-- To add a comment that explains why you're disabling a rule, you must add two hyphens (--) (for example, `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
-- To disable a rule for a whole file, you must use multiline comments (for example, `/* eslint-disable <rule1>, <rule2> */`).
+- Like TSLint warnings, you can disable ESLint warnings by using comments.
+- Use `// eslint-disable-next-line <rule1>, <rule2>...` to disable the next line.
+- To add a comment that explains why you're disabling a rule, add two hyphens (--) (for example, `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
+- Use multiline comments to disable a rule for a whole file (for example, `/* eslint-disable <rule1>, <rule2> */`).
 
 The following table lists common equivalents in TSLint and ESLint.
 
@@ -265,9 +264,9 @@ The following table lists common equivalents in TSLint and ESLint.
 | // tslint:disable-next-line:cyclomatic-complexity | // eslint-disable-next-line complexity |
 | // tslint:disable-next-line:no-empty | // eslint-disable-next-line no-empty |
 
-#### Continue to lint with TSLint
+#### Continue to lint by using TSLint
 
-If you want to continue to lint using TSLint, you can use the **–use-tslint** argument in the package.json **build** and **start** commands, as shown here.
+If you want to continue linting by using TSLint, add the **–use-tslint** argument in the package.json **build** and **start** commands, as shown in the following example.
 
 ```json
 "start": "yarn msdyn365b start local --use-tslint",
@@ -275,25 +274,25 @@ If you want to continue to lint using TSLint, you can use the **–use-tslint** 
 "build-prod": "yarn clean && yarn msdyn365b build --use-tslint",
 ```
 
-> [NOTE] 
-> Support for TSLint is limited and it's encouraged to use ESLint whenever possible.
+> [!NOTE]
+> Support for TSLint is limited. Use ESLint whenever possible.
 
 #### Completely disable linting during build time
 
-If you want to completely disable linting during build time, you can use the **--disable-linter** argument in the **package.json** build command, as shown here.
+If you want to completely disable linting during build time, add the **--disable-linter** argument in the **package.json** build command, as shown in the following example.
 
 ```json 
 "build": "yarn msdyn365b build --disable-linter",
 "build:prod": "yarn clean && yarn msdyn365b build --disable-linter",
 ```
 
-### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
+### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error
 
 The compilation error is caused by code sharing that is related to the product quick view module that was introduced in the Commerce version 10.0.17 release. Because the quick view module shares many functionalities with the buy box module, some common components were moved to a common folder, so that the buy box and quick view modules can share the code.
 
-To fix the compilation error, update any import references in the buybox.tsx view file, as shown in the examples that follow.
+To fix the compilation error, update any import references in the `buybox.tsx` view file, as shown in the following examples.
 
-This example shows the old code for imports in buybox.view.tsx.
+This example shows the old code for imports in `buybox.view.tsx`.
 
 ```typescript
 import { IBuyboxViewProps } from '../..';
@@ -310,7 +309,7 @@ import {
 } from './components';
 ```
 
-This example shows the new code for imports in buybox.view.tsx.
+This example shows the new code for imports in `buybox.view.tsx`.
 
 ```typescript
 import { IBuyboxAddToCartViewProps, IBuyboxAddToOrderTemplateViewProps, IBuyboxAddToWishlistViewProps, IBuyboxKeyInPriceViewProps, IBuyboxProductConfigureDropdownViewProps, IBuyboxProductConfigureViewProps, IBuyboxProductQuantityViewProps, IBuyboxShopSimilarLookViewProps } from '../../common';
@@ -318,7 +317,7 @@ import { IBuyboxViewProps } from './buybox';
 import { IBuyboxFindInStoreViewProps } from './components/buybox-find-in-store';
 ```
 
-### After upgrading to module library version 9.24 (10.0.14 release), cloned modules that use data actions may display the error, "UserAuthorizationException. Customer account number on the request was wrong".
+### After upgrading to module library version 9.24 (10.0.14 release), cloned modules that use data actions might display the error, "UserAuthorizationException. Customer account number on the request was wrong".
 
 The following [core data actions](core-data-actions.md) have a signature change that moves the user account number parameter to the second parameter instead of the first parameter, and is set as an optional parameter. In most scenarios where the user account number is no longer needed, the data action executes in the context of the current signed-in user. In some custom scenarios where the user account number is different than the user account number of the signed-in user, you can fetch the user account number by using the **get-customer** data action and passing it to the data action.
 
@@ -331,11 +330,11 @@ Core data actions with signature changes include:
 - **get-loyalty-transaction-estimation**
 - **issue-loyalty**
 
-The module library modules are updated with the correct calling pattern to the above data actions, so you don't receive any errors in these modules. However, if one of the modules was previously [cloned](clone-starter-module.md), it still has the older data action signature and displays the following error at runtime: "UserAuthorizationException. Customer account number on the request was wrong." The signatures need to be updated accordingly. One way to resolve this issue is to temporarily clone the module library module again with a new name, then differentiate the new module code with the previously cloned custom module and merge the changes. The temporary module can then be deleted.
+The module library modules are updated with the correct calling pattern to the preceding data actions, so you don't receive any errors in these modules. However, if one of the modules was previously [cloned](clone-starter-module.md), it still has the older data action signature and displays the following error at runtime: "UserAuthorizationException. Customer account number on the request was wrong." The signatures need to be updated accordingly. One way to resolve this issue is to temporarily clone the module library module again with a new name, then differentiate the new module code with the previously cloned custom module and merge the changes. You can then delete the temporary module.
 
-### After upgrading to module library version 9.23 (10.0.13 release), cloned modules or view extensions that import "CartlineComponent" or "WishListIconComponent" components may display the errors "export 'CartlineComponent' was not found in '@msdyn365-commerce/components'" or "export 'WishListIconComponent' was not found in '@msdyn365-commerce/components'".
+### After upgrading to module library version 9.23 (10.0.13 release), cloned modules or view extensions that import **CartlineComponent** or **WishListIconComponent** components might display the errors "export 'CartlineComponent' wasn't found in '@msdyn365-commerce/components'" or "export 'WishListIconComponent' wasn't found in '@msdyn365-commerce/components'".
 
-The "CartlineComponent" and "WishListIconComponent" components are renamed to "CartLineItemComponent" and "WishlistIconComponent" respectively. If the previous component names are used in either a cloned module or a view extension, the build errors mentioned are displayed. To fix these issues, update the previous component names to the new component names in the cloned module or view extension code.
+The **CartlineComponent** and **WishListIconComponent** components are renamed to **CartLineItemComponent** and **WishlistIconComponent** respectively. If you use the previous component names in either a cloned module or a view extension, you see the build errors. To fix these errors, update the previous component names to the new component names in the cloned module or view extension code.
 
 ## Additional resources
 

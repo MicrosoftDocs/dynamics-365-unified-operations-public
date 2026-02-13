@@ -1,11 +1,10 @@
 ---
 title: Create a new product hierarchy
-description: This article describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
+description: Learn how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 01/21/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
@@ -19,17 +18,15 @@ ms.custom:
 
 This article describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 
-## Overview
+Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all these elements before you can create a retail store channel. 
 
-Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
-
-A Commerce product hierarchy is used to define the overall product hierarchy for your organization. You can use a Commerce product hierarchy for merchandising, pricing and promotions, reporting, and assortment planning. Only one Commerce product hierarchy can be assigned per organization.
+Use a Commerce product hierarchy to define the overall product hierarchy for your organization. You can use a Commerce product hierarchy for merchandising, pricing and promotions, reporting, and assortment planning. You can assign only one Commerce product hierarchy per organization.
 
 ## Create and configure a product hierarchy
 
-To create and configure a Commerce product hierarchy, follow these steps.
+To create and configure a Commerce product hierarchy, follow these steps:
 
-1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Commerce product hierarchy**.
+1. In the navigation pane, go to **Modules > Retail and commerce > Products and categories > Commerce product hierarchy**.
 1. If no hierarchy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
 1. Under **General**:
     1. In the **Name** box, enter a name.
@@ -39,7 +36,7 @@ To create and configure a Commerce product hierarchy, follow these steps.
 
 ## Add hierarchy nodes
 
-To add hierarchy nodes, follow these steps.
+To add hierarchy nodes, follow these steps:
 
 1. On the action pane, select **Edit category hierarchy**.
 1. Select the parent node you want to add a new node to, and then select **New category node**.
@@ -51,21 +48,21 @@ To add hierarchy nodes, follow these steps.
     1. In the **Keywords** box, enter relevant keywords.
     1. In the **Display order** box, enter a number for the display order (optional).
 1. On the action pane, select **Save**.
-1. Repeat the previous steps to add more nodes.
+1. To add more nodes, repeat the previous steps.
 
 The following image shows the creation of a new product hierarchy node.
 
-![Create product hierarchy.](media/create-product-hierarchy.png)
+:::image type="content" source="media/create-product-hierarchy.png" alt-text="Screenshot of creating a new product hierarchy node.":::
 
 ## Other settings
 
-Category attribute groups can also be assigned to each group as required.  
+You can assign category attribute groups to each group as required.  
 
 ## Additional resources
 
-[commerce hierarchies](retail-hierarchies.md)
+[Commerce hierarchies](retail-hierarchies.md)
 
-[Manage product categories and products ](category-management-product-creation.md)
+[Manage product categories and products](category-management-product-creation.md)
 
 [Change the sort order for merchandising entities](custom-order-categories-nav-retail-prod-hierarchy.md)
 

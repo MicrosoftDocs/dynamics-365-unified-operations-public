@@ -31,7 +31,7 @@ This article explains how to set up panel members in the HR Recruiting app in Mi
 
 Recruiters can assign one or more panel members to each stage and set of steps. 
 
-To assign panel members, follow these steps.
+To assign panel members, follow these steps:
 
 1. In the Recruiting app, select **Activity**.
 1. Select the stage or steps where you want to add a panel member.
@@ -47,7 +47,7 @@ To assign panel members, follow these steps.
 
 Panel members or interviewers provide feedback when a candidate is or isn't recommended. They can save their feedback and then return later to edit it. However, after interviewers select **Submit**, they can't change their feedback.
 
-To provide feedback, follow these steps.
+To provide feedback, follow these steps:
 
 1. Select **Feedback**.
 1. To provide details, select the feedback.
@@ -64,7 +64,7 @@ To view feedback, go to the activity, and select the stage or steps.
 
 Recruiters can reject one or more applicants at a time. Applicants who are rejected receive a notification by email if the email template is set. 
 
-To reject an applicant, follow these steps.
+To reject an applicant, follow these steps:
 
 1. Go to **Job ads** \> **Applicants** \> **Applicant**.
 1. Select **Reject**.
@@ -75,7 +75,7 @@ The status of the application is changed to **Rejected**.
 
 If a candidate's application is reconsidered after it was rejected, the application can be reopened.
 
-To reopen an application, follow these steps.
+To reopen an application, follow these steps:
 
 1. Go to **Job ads** \> **Applicants** \> **Applicant**.
 1. Select **Reopen**.
@@ -86,7 +86,7 @@ The status of the application is changed to **In progress**.
 
 When a recruiter wants to hire a candidate, they can set the applicant to **Ready to hire**. The applicant's information is then transferred to Dynamics 365 Human Resources, and the system administrator can create the worker (employee) record.
 
-To set an applicant to **Ready to hire**, follow these steps.
+To set an applicant to **Ready to hire**, follow these steps:
 
 1. Go to **Job ad** \> **Applicants**.
 1. Select the applicant.
@@ -99,7 +99,7 @@ The status of the application is changed to **Ready to hire**.
 
 After a candidate is transferred from the Recruiting add-on to Dynamics 365 Human Resources, the system administrator can view the candidate details in the **Candidates** workspace.
 
-To view the candidate details and create an employee record for the candidate, follow these steps.
+To view the candidate details and create an employee record for the candidate, follow these steps:
 
 1. On the **Candidate** page, select **Hire**.
 1. On the **Hire new worker** page, select **Details**.

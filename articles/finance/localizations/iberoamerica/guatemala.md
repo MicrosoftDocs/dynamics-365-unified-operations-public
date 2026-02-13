@@ -2,9 +2,9 @@
 title: Guatemala overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Guatemala to help you set up legal entities with a primary address in Guatemala. 
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 10/31/2023
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Guatemala
@@ -18,10 +18,10 @@ ms.dyn365.ops.version: App 10.0.38
 [!include [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Guatemala.
+
 - [Configure sales and purchase invoices for Guatemala](ltm-configure-invoices-guatemala.md)
 - [Create customer and vendor records with an address in Guatemala](ltm-create-customer-vendor-guatemala.md)
 - [Set up a legal entity and tax information for Guatemala](ltm-set-up-legal-entity-tax-guatemala.md)
-  
 
 ## Additional resources
 

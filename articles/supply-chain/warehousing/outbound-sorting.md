@@ -18,10 +18,6 @@ This functionality makes it easier to handle small containers and helps warehous
 
 This functionality lets you build pallets from containers that are packed through the packing functionality. The container isn't sent to the final shipping location as it is in the original packing flow. Instead, workers can close the container and move it to a sort type location. They can then sort containers to positions, each of which has a license plate (LP). After the containers have been sorted, work can be created to send the whole LP to the final shipping dock or stage locations, based on location directives or your own requirements. Additionally, the action of closing of the sort position can immediately move the inventory to the final shipping location and pick it to the order.
 
-## Turn on the Outbound sorting feature
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Outbound sorting* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
 ## Setup
 
 For this scenario, you must use standard **USMF** demo data and warehouse *62*. You must also complete the setup that is described in the following subsections.

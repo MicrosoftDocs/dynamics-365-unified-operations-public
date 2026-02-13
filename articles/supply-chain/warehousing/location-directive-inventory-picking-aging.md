@@ -20,13 +20,6 @@ You can use FIFO and LIFO strategies to ship both batch-tracked items and non-ba
 
 When inventory is first received or created in the warehouse, the system updates the relevant license plate so that the current date is shown as the aging date. This date is then used by the location directive strategies to identify the oldest or newest inventory in the warehouse. If inventory is moved to a location that isn't tracked by license plate, the location itself is updated with aging information, and this information will then be used by the strategies.
 
-## Turn on the required features
-
-To make this functionality available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
-
-1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. Learn more in [Warehouse location status](warehouse-location-status.md).)
-1. *Location directive inventory picking aging* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
-
 ## Feature requirements
 
 To use this feature, you must set the **Enable location status** option set to *Yes* for every [location profile](tasks/create-location-profile.md) that is used to store inventory. To set this option for a location profile, go to **Warehouse management \> Setup \> Warehouse \> Location profiles**, and select the location profile. You can find the option on the **General** FastTab.
@@ -40,7 +33,7 @@ This section provides examples that show how to set up and use FIFO and LIFO str
 
 ### Make sample data available
 
-To work through these scenarios by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through these scenarios by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
 
 You can also use these scenarios as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
 
@@ -48,7 +41,7 @@ You can also use these scenarios as guidance for using the feature on a producti
 
 The demo data requires setup and inventory adjustments to support the scenarios. Follow these steps to create the inventory data that is required to work through the FIFO and LIFO scenarios.
 
-1. Sign in to a system where demo data is installed, and select the **USMF** legal entity.
+1. Sign in to a system where demo data is installed, and select the *USMF* legal entity.
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. On the Action Pane, select **Edit**.
 1. In the list of location profiles, select **FLOOR-05**.

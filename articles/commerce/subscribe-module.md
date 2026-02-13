@@ -1,11 +1,10 @@
 ---
 title: Subscribe module
-description: This article covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about subscribe modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/26/2024
+ms.date: 01/29/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -17,29 +16,29 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article describes subscribe modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-Subscribe modules can be used on site pages to capture customer information for newsletters or promotions.
+Use subscribe modules on site pages to capture customer information for newsletters or promotions.
 
 The following illustration shows an example of a subscribe module in the footer of an Adventure Works site page.
 
-![Example of a subscribe module in the footer of an Adventure Works site page](./media/Subscribe.PNG)
+:::image type="content" source="./media/Subscribe.PNG" alt-text="Screenshot of a subscribe module in the footer of an Adventure Works site page.":::
 
 > [!IMPORTANT]
-> - The subscribe module is available in the Commerce module library as of the Dynamics 365 Commerce version 10.0.20 release.
-> - The subscribe module is showcased in the Adventure Works theme.
-> - The subscribe module requires a data action extension to work with some marketing email providers, so that newsletter or promotional emails can be sent after customer information is captured.
+> - The Commerce module library includes the subscribe module starting with the Dynamics 365 Commerce version 10.0.20 release.
+> - The Adventure Works theme showcases the subscribe module.
+> - The subscribe module needs a data action extension to work with some marketing email providers. This requirement enables the module to send newsletter or promotional emails after it captures customer information.
 
 ## Subscribe module properties
 
 | Property name | Values | Description |
 |---------------|--------|-------------|
 | Heading       | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A text heading for the subscribe module, such as **Subscribe to the newsletter** or **Sign up for 10% off**. |
-| Paragraph     | Paragraph text | The subscribe module supports paragraph text in rich text format, to provide additional details for the call to action in the heading. |
+| Paragraph     | Paragraph text | The subscribe module supports paragraph text in rich text format, to provide more details for the call to action in the heading. |
 
 ## Add a subscribe module to a new page
 
-To add a subscribe list module to a new page and set the required properties in Commerce site builder, follow these steps.
+To add a subscribe list module to a new page and set the required properties in Commerce site builder, follow these steps:
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
 1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.

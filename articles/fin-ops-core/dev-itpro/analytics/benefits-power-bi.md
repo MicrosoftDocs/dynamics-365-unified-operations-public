@@ -1,8 +1,8 @@
 ---
 title: Benefits Power BI content
 description: Learn about the Benefits Power BI content including learning how to access Power BI content and how to understand data models and entities.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 12/19/2017
 ms.reviewer: johnmichalak

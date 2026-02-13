@@ -159,6 +159,14 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 Workers reporting job scrap can choose to work from a list view that shows several jobs at once, or from a detail view that shows more information about one job at a time.
 
+## Automatically report a job as finished by using sensor signals (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+It's possible to fit production machines with sensors that report completed operations. By integrating these sensors with Supply Chain Management, you can set up scenarios where the system can automatically report finished quantities when a machine generates enough sensor signals to reach a defined output threshold. The scenario requires fitting the machine with a sensor that emits a signal for each production cycle, and mapping that sensor to the corresponding resource and operation in Supply Chain Management. By defining how many signals correspond to one finished unit, the system can automatically determine when progress should be reported and update the production order and inventory accordingly. If your plant is set up to support this scenario, then you can also set up the production floor execution interface to provide real-time visibility into the sensor signals and counters, allowing workers to monitor the production process more effectively and adjust the counters as needed. For more information about how to set up this scenario and view the counters in the production floor execution interface, see [Production auto report scenario (preview)](../sensor-data-intelligence/sdi-scenario-production-auto-report.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components
 
 Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).

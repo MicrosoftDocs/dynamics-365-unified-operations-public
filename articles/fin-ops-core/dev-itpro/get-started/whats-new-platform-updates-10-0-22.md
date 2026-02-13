@@ -1,10 +1,10 @@
 ---
 title: Platform updates for version 10.0.22 of finance and operations apps (November 2021)
 description: Learn about the features that are included in the platform updates for version 10.0.22 of finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 10/31/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -35,29 +35,29 @@ The following features are included in this release. Some of the listed features
 | Client features | <p>**Visual updates to the Hierarchy viewer control**</p><p>Modifications were made to the HierarchyViewer control to improve its accessibility, especially for 400-percent zoom scenarios. These modifications included restyling the control so that it's aligned with the Fluent design language, to help readability of the control at all zoom levels. | [HierarchyViewer control](../user-interface/hierarchy-viewer-control.md) | Default |
 | Batch processing | <p>**Batch OData API**</p><p>The batch functionality now exposes an Open Data Protocol (OData) application programming interface (API) that can be used to requeue batch jobs. Customers can use the OData endpoint to requeue batch jobs that are in a terminal state. This feature can be integrated with any automation by using Microsoft Power Automate, custom APIs, and so on. | [Batch OData API](../sysadmin/batch-odata-api.md) | Default |
 | Microsoft Power Platform integration | <p>New scenarios are enabled in the Microsoft Power Platform integration. Here are some examples:</p><ul><li>Integration setup</li><li>Automated setup for dual-write and virtual entities</li><li>Streamlined user setup</li><li>Finance and operations apps business events and data events in Microsoft Dataverse</li><li>Improved development tools</li><li>Enhanced add-in experience</li></ul> | [New scenarios enabled with Power Platform convergence](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence) | Default |
-| Power BI |  The Power BI embedded and Power BI.com integration has been upgraded as part of the 10.0.22 release to be compatible with the latest Power BI Desktop releases. With this change, users are now able to use the latest version of Power BI desktop when editing workspace reports. This is an infrastructure change and will happen automatically when an environment is upgraded to release 10.0.22.    | [Configure PowerBI.com integration](../analytics/configure-power-bi-integration.md)<br><br>[Create analytical reports by using Power BI Desktop](../analytics/author-distribute-power-bi-reports.md) | Default |
+| Power BI |  The Power embedded and Power BI.com integration was upgraded as part of the 10.0.22 release to be compatible with the latest Power BI Desktop releases. With this change, users can now use the latest version of Power BI desktop when editing workspace reports. This is an infrastructure change and happens automatically when an environment is upgraded to release 10.0.22.    | [Configure PowerBI.com integration](../analytics/configure-power-bi-integration.md)<br><br>[Create analytical reports by using Power BI Desktop](../analytics/author-distribute-power-bi-reports.md) | Default |
 
 
 ## Additional resources
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=615299).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=615299).
 
 ### Dynamics 365: 2021 release wave 2 plan
 
-Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+Want to know about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 2 plan](/dynamics365-release-plan/2021wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 2 plan](/dynamics365-release-plan/2021wave2/). We captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
+The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that we removed or plan to remove in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+We add a deprecation notice in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before we remove any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that you must make to the compiler.
 

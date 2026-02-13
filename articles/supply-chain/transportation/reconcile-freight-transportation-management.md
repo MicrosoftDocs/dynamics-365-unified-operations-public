@@ -31,7 +31,7 @@ Freight bills and invoices must then be matched. In other words, the freight bil
 
 ## Enable freight reconciliation
 
-To use Transportation management (TMS) to reconcile freight, follow these steps.
+To use Transportation management (TMS) to reconcile freight, follow these steps:
 
 1. Go to **Transportation management** \> **Setup** \> **Transportation management parameters**.
 1. On the **General** tab, on the **Freight reconciliation** FastTab, set the **Enable freight reconciliation** option to *Yes*.

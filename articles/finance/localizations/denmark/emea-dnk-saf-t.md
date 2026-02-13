@@ -108,7 +108,7 @@ We also recommend that you enable the **Accelerate the ER labels storage** featu
 
 ### <a name="contact"></a>Create a contact person for your company
 
-The **Company** node of the SAF-T report must include information for a contact. This node is located under the **Header** node. To set up contact information that will be reported to SAF-T, follow these steps.
+The **Company** node of the SAF-T report must include information for a contact. This node is located under the **Header** node. To set up contact information that will be reported to SAF-T, follow these steps:
 
 1. Go to **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**.
 2. Select **New** to create a new contact for your legal entity. Be sure to select **Legal entity** in the **Contact for** field.

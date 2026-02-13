@@ -1,8 +1,8 @@
 --- 
 title: Set up electronic signatures
 description: Learn how to set up electronic signatures, including how to enable the Electronic signature configuration key.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 04/15/2025
 ms.custom:

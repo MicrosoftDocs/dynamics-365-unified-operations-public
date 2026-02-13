@@ -6,7 +6,7 @@ ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: TMSMode,TMSMethod
 ms.topic: how-to
-ms.date: 07/30/2024
+ms.date: 11/19/2025
 ms.custom: 
   - bap-template
 ---
@@ -23,7 +23,7 @@ Modes and transportation methods are used in several contexts. Only modes are us
 
 To create a mode, follow these steps:
 
-1. Go to **Transportation management \> Setup \> Carriers \> Mode**.
+1. Go to **Transportation management** \> **Setup** \> **Carriers** \> **Mode**.
 1. Select **New** to create a new mode.
 1. Enter a unique ID and a descriptive name for the mode.
 1. Close the page.
@@ -32,7 +32,7 @@ To create a mode, follow these steps:
 
 To create a transportation method, follow these steps:
 
-1. Go to **Transportation management \> Setup \> Carriers \> Transportation methods**.
+1. Go to **Transportation management** \> **Setup** \> **Carriers** \> **Transportation methods**.
 1. Select **New** to create a new transportation method.
 1. Enter a unique ID and descriptive name for the transportation method.
 1. Close the page.

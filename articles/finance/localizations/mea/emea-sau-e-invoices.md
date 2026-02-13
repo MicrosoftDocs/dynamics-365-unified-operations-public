@@ -33,7 +33,7 @@ According to Saudi Arabian legal requirements, invoices that are issued to custo
 
 If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, you can skip this procedure.
 
-To configure registration numbers, follow these steps.
+To configure registration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -47,21 +47,21 @@ To configure registration numbers, follow these steps.
 
 ### Enter a legal entity's address
 
-To enter a legal entity's address, follow these steps.
+To enter a legal entity's address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
 
 ### Enter a legal entity's tax registration number
 
-To enter a legal entity's tax registration number, follow these steps.
+To enter a legal entity's tax registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's value-added tax (VAT) identifier.
 
 ### Enter a legal entity's commercial registration number
 
-To enter a legal entity's commercial registration number, follow these steps.
+To enter a legal entity's commercial registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the Action Pane, select **Registration IDs**.
@@ -73,21 +73,21 @@ To enter a legal entity's commercial registration number, follow these steps.
 
 ### Enter a customer's address
 
-To enter a customer's address, follow these steps.
+To enter a customer's address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
 
 ### Enter a customer's tax registration number
 
-To enter a customer's tax registration number, follow these steps.
+To enter a customer's tax registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's VAT identifier.
 
 ### Enter a customer's registration number
 
-To enter a customer's registration number, follow these steps.
+To enter a customer's registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
@@ -97,7 +97,7 @@ To enter a customer's registration number, follow these steps.
 
 ## Configure sales tax codes
 
-To configure sales tax codes, follow these steps.
+To configure sales tax codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
@@ -111,7 +111,7 @@ To configure sales tax codes, follow these steps.
 
 ## Configure unit codes
 
-To configure unit codes, follow these steps.
+To configure unit codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. Select a unit, and then, on the Action Pane, select **External codes**.
@@ -120,7 +120,7 @@ To configure unit codes, follow these steps.
 
 ## Enter product codes
 
-To enter product codes, follow these steps.
+To enter product codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**.
 1. Select a product, and then, on the Action Pane, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**.
@@ -135,7 +135,7 @@ To enter product codes, follow these steps.
 
 You can define an invoice's type as **Tax invoice** or **Simplified invoice**.
 
-To define the invoice type, follow these steps.
+To define the invoice type, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Create a new sales order, or select an open order.
@@ -143,7 +143,7 @@ To define the invoice type, follow these steps.
 
 Similarly, you can define the invoice type for free text invoices.
 
-To define the invoice type for free text invoices, follow these steps.
+To define the invoice type for free text invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. Create a new free text invoice, or select an open free text invoice.
@@ -153,7 +153,7 @@ To define the invoice type for free text invoices, follow these steps.
 
 You can define an invoice type at the customer record level. That invoice type is then used by default for new sales orders and free text invoices.
 
-To define default invoice types for customers, follow these steps.
+To define default invoice types for customers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -166,7 +166,7 @@ To define default invoice types for customers, follow these steps.
 
 ### Enable specific invoice layouts for Saudi Arabia
 
-To enable specific invoice layouts for Saudi Arabia, follow these steps.
+To enable specific invoice layouts for Saudi Arabia, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
@@ -175,7 +175,7 @@ To enable specific invoice layouts for Saudi Arabia, follow these steps.
 
 ### Enable VAT numbers to be printed on invoices
 
-To enable VAT numbers to be printed on invoices, follow these steps.
+To enable VAT numbers to be printed on invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. In the **Invoice** section, turn on the **Print tax exempt number on invoice** option.

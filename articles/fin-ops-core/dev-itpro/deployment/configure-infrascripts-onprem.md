@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/10/2024
+ms.date: 09/15/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.service: dynamics-365-op
@@ -243,7 +243,7 @@ Currently, only a single database needs to be restored from a backup when the en
 </Database>
 ```
 
-Some databases have the collation element defined. If you want to change the collation of a database, you can update the **Collation** field. However, only a limited collation set is supported. For more information on supported collations, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md#microsoft-sql-server). If a database doesn't have a collation defined, this means only the default collation is supported or the database uses the collation of the backup file provided.
+Some databases have the collation element defined. If you want to change the collation of a database, you can update the **Collation** field. However, only a limited collation set is supported. For more information on supported collations, see [Microsoft Dynamics 365 Finance + Operations (on-premises), Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management supported software](./onprem-compatibility.md#microsoft-sql-server). If a database doesn't have a collation defined, this means only the default collation is supported or the database uses the collation of the backup file provided.
 
 ```xml
 <Database refName="axdw" dbName="AXDW">

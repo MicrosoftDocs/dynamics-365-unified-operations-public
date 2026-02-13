@@ -26,7 +26,7 @@ Before you complete the steps in this article, you must transfer transactions to
 
 ## Import configurations with settings
 
-To import configurations with settings, follow these steps.
+To import configurations with settings, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces \> Electronic reporting** and select **Set active**.
 1. Select **Repositories \> Open**.
@@ -39,7 +39,7 @@ To import configurations with settings, follow these steps.
 
 ## Set up Foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> Foreign trade parameters**.
 1. In the **Electronic reporting** section, in the **File format mapping** field, enter or select a value.
@@ -54,7 +54,7 @@ To set up foreign trade parameters, follow these steps.
 
 ## Set up compression of Intrastat
 
-To set up compression of Intrastat, follow these steps.
+To set up compression of Intrastat, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Foreign trade \> Compression of Intrastat**.
 1. In the list, find and select the desired record. 
@@ -62,7 +62,7 @@ To set up compression of Intrastat, follow these steps.
 
 ## Generate Intrastat declaration
 
-To generate an Intrastat declaration, follow these steps.
+To generate an Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Foreign trade \> Intrastat**.
 1. Select **Validate**. The validation is completed according to the **Check setup** field on the **Foreign trade parameters** page.  

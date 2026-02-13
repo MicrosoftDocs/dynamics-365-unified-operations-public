@@ -1,8 +1,8 @@
 ---
 title: Documents pending accounting
 description: Learn about how to use the functionality on the Documents pending accounting page, which posts subledger documents when enabled.
-author: ryanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 07/19/2023
 ms.custom:
@@ -33,3 +33,4 @@ The following buttons are available on the **Documents pending accounting** page
 Accounting generation is done by a process automation background process that is named **Accounting framework processor**. For more information about the setup and configuration of all process automations, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

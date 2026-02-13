@@ -1,11 +1,11 @@
 ---
 title: Budget planning integration with other modules
 description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 01/12/2018
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

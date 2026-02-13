@@ -19,7 +19,7 @@ ms.custom:
 
 This procedure demonstrates how to create a delivery schedule for a sales order. A delivery schedule is used when a quantity on an order or a quotation is requested to be delivered in multiple shipments.
 
-To create delivery schedule, follow these steps.
+To create delivery schedule, follow these steps:
 
 1. Go to **All sales orders**.
 2. Select **New**.

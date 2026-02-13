@@ -1,8 +1,8 @@
 ---
 title: Workforce metrics Power BI content
 description: Learn about the Workforce metrics Power BI content, how to access Bower BI content, and understand the metrics that are included in Power BI content.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 12/19/2017
 ms.reviewer: twheeloc

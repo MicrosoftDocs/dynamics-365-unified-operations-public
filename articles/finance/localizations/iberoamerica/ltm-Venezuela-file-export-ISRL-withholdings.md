@@ -41,7 +41,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 
 ## Configure application-specific parameters for the ISRL Withholding report
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. In the **LTM Tax Report** group, select the **File Export ISLR Withholdings** format.
@@ -59,7 +59,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the ISRL Withholding report
 
-To generate the ISRL Withholding report, follow these steps.
+To generate the ISRL Withholding report, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select **ISRL Withholding report**.

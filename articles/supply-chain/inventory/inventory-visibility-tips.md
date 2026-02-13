@@ -13,7 +13,6 @@ ms.custom:
 # Inventory Visibility tips
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 Here are a few tips that you should consider when you set up and use the Inventory Visibility Add-in:
 

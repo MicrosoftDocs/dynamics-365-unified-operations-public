@@ -1,11 +1,10 @@
 ---
 title: Deploy a new e-commerce tenant
-description: This article describes how to deploy a new Microsoft Dynamics 365 Commerce e-commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn how to deploy a new Microsoft Dynamics 365 Commerce e-commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 author: josaw1
-ms.date: 07/25/2024
+ms.date: 01/22/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -22,7 +21,7 @@ This article describes how to deploy a new Microsoft Dynamics 365 Commerce e-com
 Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that partners and customers use to manage their projects and environments, view the latest information about Microsoft Dynamics products and features, and create, track, and browse support incidents. E-commerce management features are integrated into LCS.
 
 To learn more about LCS, see the [Lifecycle Services User Guide](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
-	
+
 ## Get started
 
 Before you can initialize e-commerce, you must initialize a project, an environment, and a Retail Cloud Scale Unit (RCSU). To do the initialization in LCS, you must have permissions for either the Project Owner or Environment manager role. The production and sandbox environment topologies are supported.
@@ -44,16 +43,16 @@ In addition, you can collect the following optional information:
 
 - Microsoft Entra business-to-consumer (B2C) information:
 
-	- Tenant Name.
-	- Client ID.
-	- Login Custom Domain.
-	- Reply URL.
-	- SignUp SignIn Policy ID.
-	- Reset password Policy ID.
-	- Edit Profile Policy ID.
+	- Tenant Name
+	- Client ID
+	- Login Custom Domain
+	- Reply URL
+	- SignUp SignIn Policy ID
+	- Reset password Policy ID
+	- Edit Profile Policy ID
 
 > [!NOTE]
-> This information can be added later, through a service request.
+> You can add this information later through a service request.
 
 After you collect the required information, follow these steps to initialize e-commerce.
 
@@ -63,17 +62,17 @@ After you collect the required information, follow these steps to initialize e-c
 1. Under **Environment features**, select the **Retail manage** link.
 1. On the **e-Commerce** tab, select **Setup**. A dialog box appears, where you must enter the information that is required for provisioning.
 1. Fill in the required information, and then go to the next page.
-1. On the next page, fill in the required information, and then submit the form. You're returned to the **e-Commerce** tab, where you should see that initialization has started.
+1. On the next page, fill in the required information, and then submit the form. You're returned to the **e-Commerce** tab, where you should see that initialization is started.
 1. To view the initialization status, either **Refresh** or return to the **e-Commerce** tab later.
 	
-When e-commerce is initialized from LCS, the system provisions several components that are required for e-commerce and associates them with the environment. After provisioning is complete, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-commerce site and the Commerce site builder where sites are authored.
+When you initialize e-commerce from LCS, the system provisions several components that are required for e-commerce and associates them with the environment. After provisioning is complete, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-commerce site and the Commerce site builder where sites are authored.
 
 ## Access Commerce site builder
 
 To access Commerce site builder, go to the **e-Commerce** tab on the **Retail management** page in LCS and select the **e-Commerce site management tool** link. The site builder landing page displays a tenant-level view. From this page, you can:
 
 - Modify tenant-level settings.
-- Navigate to any site you created, and have permission to view. 
+- Navigate to any site you created and have permission to view. 
 - Access Reviews features such as moderation and reporting.
 - Create a new site. For more information about how to create a new site, see [Create an e-commerce site](create-ecommerce-site.md) . 
 
@@ -98,6 +97,5 @@ To access Commerce site builder, go to the **e-Commerce** tab on the **Retail ma
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

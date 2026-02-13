@@ -20,13 +20,6 @@ The workflow for this functionality directs picked product to a sorting location
 
 This warehousing functionality is also referred to by other names, such as put-to-light and break opens.
 
-## Turn on the Outbound sorting feature
-
-To use the *Put to wall - put to store* functionality, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if necessary. Both of the following features are required:
-
-- *Outbound sorting* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
-- *Organization wide wave step code* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
-
 ## Setup
 
 For this demo, standard Contoso data and warehouse *62* are used. Some additions that are noted later are also used.
@@ -95,7 +88,7 @@ For this demo, standard Contoso data and warehouse *62* are used. Some additions
 
 ### Wave step codes
 
-If the *Organization wide wave step code* feature is turned on for your system, set up the following code.
+Set up the following step code.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave step codes**.
 1. On the Action Pane, select **New**, and then set the following values:
@@ -156,7 +149,7 @@ The sorting template controls whether sort positions are created, what criteria 
 
     - **Wave step code:** *Sort*
 
-        If the *Organization wide wave step code* feature is turned on, the *Sort* wave step code must also be set up in wave step codes.
+        The *Sort* wave step code must also be set up in wave step codes.
 
     - **Auto close sort position:** *Yes*
 

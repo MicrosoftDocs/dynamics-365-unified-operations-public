@@ -16,13 +16,6 @@ ms.search.form:
 
 To use hazardous materials functionality, you must first set up the data that is required to classify items as hazardous materials. Then, when you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
 
-## Turn on the hazardous materials feature for your system
-
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
-
-- **Module:** *Product information management*
-- **Feature name:** *Hazardous materials product information and shipping documentation*
-
 ## Hazardous material regulations
 
 To use the hazardous materials processes, you must first create a regulation. Regulations define how the printed shipping text is created for an item. They also define the associated modes of delivery.
@@ -95,7 +88,7 @@ The following table describes the field that is available on the **Country** Fas
 
 Material codes establish settings that are related to a specific hazardous component that might be included in a released product. Each material code belongs to a specific hazardous material regulation, and its definition must conform to that regulation. When you apply a material code to a released product by using the **Material code** field, all the material code's hazardous materials settings are automatically applied to that product. Therefore, the process of setting up released products is faster and less prone to error.
 
-To manage your hazardous material definitions, follow these steps.
+To manage your hazardous material definitions, follow these steps:
 
 1. Go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation**.
 2. Select the regulation to set up a hazardous material definition for.

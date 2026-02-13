@@ -22,7 +22,7 @@ You can create a new tax fiscal document and generate an NF-e. When you post the
 
 The following procedure uses the BRMF demo company.
 
-to create a new tax fiscal document and generate an NF-e, follow these steps.
+to create a new tax fiscal document and generate an NF-e, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal entries \> All tax fiscal documents**.
 1. Select **New**.

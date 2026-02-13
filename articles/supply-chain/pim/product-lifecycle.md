@@ -1,103 +1,147 @@
 ---
-title: Product lifecycle state overview
-description: Learn about product lifecycle states, which document the lifecycle state of a released product or product variant with an outline on creating new lifecycle states.
+title: Product lifecycle states
+description: Learn how to create and use lifecycle states, which document the lifecycle state of a released product or product variant with an outline on creating new lifecycle states.
 author: sgmsft
 ms.author: shwgarg
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 ms.topic: overview
-ms.date: 01/31/2025
+ms.date: 12/10/2025
 ms.custom: 
   - bap-template
 ---
 
-# Product lifecycle state overview
+# Product lifecycle states
 
 [!include [banner](../includes/banner.md)]
 
-A product lifecycle state documents the lifecycle state of a released product or product variant. Product lifecycle states are defined by the user (typically a product manager or a product master data manager). Specific business processes, such as master planning, can be affected by a specific lifecycle state.
+*Product lifecycle states* document the lifecycle state of a released product or variant. They control which business processes (such as purchase orders, production, planning, or forecasts) can use released products or variants assigned to a given lifecycle state.
 
-A released product or product variant can be associated with a product lifecycle state that documents in which lifecycle state a specific product or variant is currently in. You can define any number of product lifecycle states by assigning a state name and description. You can select one lifecycle state as the default state for new released products. Released product variants inherit their product lifecycle state from their released product master on creation. When changing the lifecycle state on a released product master, you can choose to update all existing variants that have the same original state.  
+You can define any number of product lifecycle states to represent the different stages in a product's lifecycle, such as *Prototype*, *Active*, *Obsolete*, or *End-of-life*. Associate these lifecycle states to released products and released product variants to manage their availability and usage within your organization. Select one lifecycle state as the default for new released products. Released product variants inherit their product lifecycle state from their released product master when you create them. When you change the lifecycle state on a released product master, you can choose to update all existing variants that have the same original state.  
 
-## Create a new product lifecycle state
+## Create, configure, and manage product lifecycle states
 
-- To create a new product lifecycle state, see [Create a new product lifecycle state](tasks/new-product-lifecycle-state.md).
-- To create a default product lifecycle state, see [Create a default product lifecycle state](tasks/default-product-lifecycle-state.md).
+The following procedure describes how to create, configure, and manage product lifecycle states. It explains how to mark a lifecycle state as the default for new released products and how to control which business processes are allowed or blocked for products in a specific lifecycle state.
+
+1. Go to **Product information management** \> **Setup** \> **Product lifecycle state**.
+1. On the Action Pane, select **Refresh processes** to make sure all of the latest business processes are available for use with your product lifecycle states.
+1. Follow one of these steps:
+    - To create a new lifecycle state, select **New** on the Action Pane.
+    - To edit an existing lifecycle state, select it in the list pane, and select **Edit** on the Action Pane.
+    - To delete an existing lifecycle state, select it in the list pane, and then select **Delete** on the Action Pane.
+
+1. Make the following settings in the header of your new or selected lifecycle state:
+    - **State** – Enter a name for the product lifecycle state (such as *Prototype*, *Active*, *Obsolete*, or *End-of-life*).
+    - **Description** – Enter a description of the product lifecycle state.
+
+1. Make the following settings on the **General** FastTab:
+    - **Default when released to a legal entity** – Set to *Yes* if this lifecycle state should be applied to all products by default when they're first released. Set it to *No* if this lifecycle state is manually applied later.
+    - **Is active for planning** – Set to *Yes* to include products that are in this lifecycle state in calculations at the master planning and bill of materials (BOM) levels. Set it to *No* to exclude products that are in this lifecycle state from the calculations.
+
+    > [!IMPORTANT]
+    > The **Default when released to a legal entity** setting doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). Learn more in [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
+
+1. Use the **Enabled business processes** FastTab to control which of the available business processes can be used with products in the current lifecycle state. For each process that is listed on the FastTab, view and set the following values:
+
+    - **Process** – This read-only field shows the name of an existing business process. The table at the end of this procedure lists and describes the business processes that might appear here.
+    - **Process area** – This field shows the name of the process area that the specified business process belongs to. Although this field is editable, you shouldn't change it.
+    - **Policy** – Select one of the following values to control whether and how the business process is permitted to use products that are in this lifecycle state:
+        - *Enabled* – The business process is allowed to use products in this lifecycle state.
+        - *Blocked* – The business process isn't allowed to use products in this lifecycle state. If a user tries to use the process on a product that is in this lifecycle state, the system blocks the attempt and shows an error instead. For example, you might block end-of-life products from being purchased.
+        - *Enabled with warning* – The process is allowed, but a warning is shown. For example, you might want a prototype product to be put on a production order that is created by the Research and Development department. However, other departments should be aware that they shouldn't produce the product yet.
+
+    > [!WARNING]
+    > Although the **Process area** values are editable, you shouldn't change them. For each row, the value shown in the **Process area** column relates directly to the value shown in the **Process** column. These combinations are generated by the underlying framework. Altering them might break system‑driven validations or cause incorrect business rule behavior.
+
+    > [!TIP]
+    > If you don't see all of the business processes that you expect on the **Enabled business processes** FastTab, select **Refresh processes** on the Action Pane to update the list.
+
+1. On the Action Pane, select **Save** to save your new or updated product lifecycle state.
+
+The following table lists and describes the business processes available on the **Enabled business processes** FastTab.
+
+| Process | Process area | Description |
+| --- | --- | --- |
+| BOM report as finished | Production | Enables or blocks reporting the item as finished in a production order. |
+| Inbound order | Warehouse | Enables or blocks inserting or updating the item on an inbound warehouse shipment line. |
+| Inbound order creation | Warehouse | Enables or blocks inserting the item on an inbound warehouse shipment line during creation. |
+| Inventory adjustment | Inventory | Enables or blocks adding the item to an inventory adjustment journal line. |
+| Inventory journal | Inventory | Enables or blocks adding the item to inventory transfer, adjustment, or movement journal lines. |
+| Inventory movement | Inventory | Enables or blocks adding the item to an inventory movement journal line. |
+| Inventory transfer | Inventory | Enables or blocks adding the item to an inventory transfer journal line. |
+| Item forecast | Planning | Enables or blocks creating manual demand forecasts for the item in Master Planning. |
+| Outbound order | Warehouse | Enables or blocks inserting or updating the item on an outbound warehouse shipment line. |
+| Outbound order creation | Warehouse | Enables or blocks inserting the item on an outbound warehouse shipment line during creation. |
+| Production BOM | Production | Enables or blocks creating a production order if the item appears in the BOM. |
+| Production order | Production | Enables or blocks creating a production order for the item. |
+| Production picking list | Production | Enables or blocks adding the item to a production picking list journal line. |
+| Purchase order | Purchasing | Enables or blocks adding the item to a purchase order line,  and posting product receipt or invoice. |
+| Purchase order creation | Purchasing | Enables or blocks adding the item to a purchase order line during creation. |
+| Request for quote | Purchasing | Enables or blocks creating a request for quote for the item. |
+| Return order | Sales | Enables or blocks adding the item to a return order line. |
+| Sales order | Sales | Enables or blocks adding the item to a sales order line, and posting packing slip or invoice. |
+| Sales order creation | Sales | Enables or blocks adding the item to a sales order line during creation. |
+| Sales picking list | Sales | Enables or blocks generating a sales picking list for the item in a sales order. |
+| Sales quotation | Sales | Enables or blocks adding the item to a sales quotation line. |
+| WBS estimate for items | Planning | Enables or blocks creating a transaction of type *Item* in a work breakdown structure for a project. |
 
 ## Associate product lifecycle states to released products  
 
-There are multiple ways to associate a product lifecycle state to released products or product variants.
+You can associate a product lifecycle state to newly released products or product variants in several ways.
 
-- On creation of a new released product, the default **Product lifecycle state** is automatically assigned.
-- On release of a product to a legal entity, the default **Product lifecycle state** is automatically assigned.
-- On release of a product variant to a legal entity, the **Product lifecycle state** associated to the released product master in this legal entity is automatically assigned to the new variant.
+- *When you create a new released product* – The system assigns the lifecycle state that has **Default when released to a legal entity** selected to the **Product lifecycle state** field of the new released product.
+- *When you release a product to a legal entity* – The system assigns the lifecycle state that has **Default when released to a legal entity** selected to the **Product lifecycle state** field of the new released product.
+- *When you release a product variant to a legal entity* – The system assigns the lifecycle state assigned to the released product master in this legal entity to the **Product lifecycle state** field of the new variant.
 
-You can manually update the product lifecycle state by using:
+> [!IMPORTANT]
+> The **Default when released to a legal entity** setting doesn't apply to [engineering products](../engineering-change-management/product-engineering-overview.md). The engineering change category specifies the lifecycle state of an engineering product version after you create it in the engineering company. When you release the product to an operational company, the lifecycle state of the product is copied. In other words, when an engineering product is released to an operational company, it has the same lifecycle state that it had in the engineering company. You can overwrite the lifecycle state in the operational company. Learn more in [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
 
-- The **Released products** list page or **Details view**.
-- The **Released product variants** list page or **Details view**.
-- Find the obsolete products or product variants based on demand and associate a lifecycle state.  
+To manually update the product lifecycle state of an existing released product or product master, follow these steps:
 
-For more information:
+1. Go to **Product information management** \> **Products** \> **Released products**.
 
-- To associate a product lifecycle state to a released product master, see [Assign a product lifecycle state to a released product master](tasks/product-lifecycle-state-released-product-master.md).
+1. Find the product or product master that you want to update. Product masters show a **Product subtype** of *Product master* on the **Released products** page.  
 
-- To associate a product lifecycle state to a release product, see [Assign a product lifecycle state to a released product](tasks/product-lifecycle-state-released-product.md).
+1. Do one of the following steps:
+    - If you're working with a standard (non-engineering) product or variant, do one of the following steps:
+        - From the list view, select **Edit** on the Action Pane and then change the **Product lifecycle state** field to the desired lifecycle state.
+        - Open the record, select **Edit** on the Action Pane, and then, on the **General** FastTab, change the **Product lifecycle state** field to the desired lifecycle state.
+    - If you're working with an [engineering product](../engineering-change-management/product-engineering-overview.md), select or open the record. On the Action Pane, open the **Engineer** tab, and from the **Engineering change management** group, select **Change lifecycle state** to open a drop-down dialog. From the dialog, select the desired lifecycle state and then select **OK**.
+
+1. On the Action Pane, select **Save**.
+
+1. If you edited a product master for a standard (non-engineering) product, you're asked to confirm whether you want to update the variants. Select one of the following options:
+    - Select **Yes** to update all related released product variants that have the same original status as the released product master.
+    - Select **No** to keep the actual state of all variants. Variants that have a different product lifecycle state from the released product master aren't updated.
+
+1. If you chose to update product variants related to a product master, you can view and edit the new lifecycle states of the variants by going to the Action Pane, opening the **Product** tab, and from the **Product master** group, selecting **Released product variants**.
+
+To manually update the product lifecycle state of an existing released product variant, follow these steps:
+
+1. Go to **Product information management** \> **Products** \> **Released product variants**.
+
+1. Find the product variant that you want to update. Select or open the record.
+
+1. On the Action Pane, open the **Product variant** tab and select **Change lifecycle state** to open a drop-down dialog. From the dialog, select the desired lifecycle state and then select **OK**.
 
 ## Impact on master planning
 
-The product lifecycle state has only one control flag: **Is active for planning**. By default, this option is set to *Yes* for all created product lifecycle states, but it can be changed to *No*. When set to *No*, the associated released products or released product variants are:
+Master planning and bill of materials (BOM) level calculations exclude items assigned a product lifecycle state when the **Is active for planning** option is set to *No*.
 
-- Excluded from master planning.
-- Excluded from bill of materials (BOM) level calculation.
-
-For detailed information about how to use product lifecycle state to exclude products from master planning and BOM-level calculation, see [Create a product lifecycle state to exclude products from Master planning](tasks/exclude-products-master-planning.md)
-
-> [!NOTE]
-> For performance reasons, it's highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.  
-
-## Enable and apply detailed control of business processes
-
-It's possible to set up your system to provide control over which business processes should be allowed or blocked by the system for a specific lifecycle state. This capability can be useful when introducing new products (where, for example, it may be possible to purchase the item but receive a warning that it's still a prototype) or to discontinue or end-of-life of a product (where it may be possible to sell the existing on-hand but not to purchase it or to produce it).
-
-To enable this level of control over your business processes, you must enable the *Engineering Change Management* configuration key so that the processes appear. (Learn more in [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).) You can set up the control of business processes in products, variants, and engineering products. You can safely enable the configuration key and use the lifecycle state for standard products even if you don't use any other aspects of the engineering change management processes. For more information about how to work with lifecycle states using the features provided by engineering change management, see [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
+> [!TIP]
+> For performance reasons, associate all obsolete released products and variants with a product lifecycle state that deactivates master planning. This association is especially important when you work with non-reusable product configuration variants.  
 
 ## Default migration, import, and export
 
-The product lifecycle states are supported by data entities, and the lifecycle state can be set to a variable state through either the released product data entity or the released variant data entity.
+Data entities support product lifecycle states. You can set the lifecycle state to a variable state through either the *released product* data entity or the *released variant* data entity.
 
 ## Find obsolete products and products variants
 
-You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, see [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md). This article shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows how to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
-
-By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed. The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand. New released products within a variable period can be excluded from the analysis. When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.  
-
-> [!NOTE]
-> All analysis and updates must be done within the same legal entity.  
-
-## Criteria to select and update released products or product variants
-
-Use the following criteria to select and update the released products and product variants:
-
-- The product lifecycle state of the product or product variant must be different from the new desired state.
-- The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box.
-- There are no open production orders (= status < ended) for the product or product variant.
-- There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registered to QuotationReceipt) for the product or product variant.
-- There are no inventory transactions within the last number of days for the product or product variant.
-- There's no future demand or supply forecast for the product or product variant.  
-- No minimum stock level has been set in item coverage for the product or product variant.
-- No active fixed quantity kanban rule for the product or product variant.  
-- No service order line for the product or product variant.
-- No active or future sales or purchase agreement lines for the product or product variant.
-- The product or product variant isn't used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
+The *Change lifecycle state for obsolete products* periodic task makes it easy to find obsolete products or variants and update their product lifecycle status. Learn more in [Find obsolete released products or variants](tasks/obsolete-product-variants.md).
 
 ## Related information
 
-- [Create a new product lifecycle state](tasks/new-product-lifecycle-state.md)
-- [Create a default product lifecycle state](tasks/default-product-lifecycle-state.md)
-- [Assign a product lifecycle state to a released product master](tasks/product-lifecycle-state-released-product-master.md)
-- [Assign a product lifecycle state to a released product](tasks/product-lifecycle-state-released-product.md)
-- [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md)
-- [Create a product lifecycle state to exclude products from Master planning](tasks/exclude-products-master-planning.md)
+- [Find obsolete released products or variants](tasks/obsolete-product-variants.md)
+- [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

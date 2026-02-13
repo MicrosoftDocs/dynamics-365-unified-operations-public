@@ -172,7 +172,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
         If it turns out to be impractical to pick from the location that is specified on the work line, the warehouse operators can use one of the following actions to redirect picking of the specific batch from a more convenient location:
 
         - The standard **Override location** action on a mobile device (provided that the warehouse worker's **Allow pick location override** setting is enabled)
-        - The **Change location** action on the **Work list details** page. 
+        - The **Change location** action on the **Work list details** page.
 
 2. On the mobile device, finish picking and putting the work.
 
@@ -186,13 +186,6 @@ In this scenario, a company uses warehouse management and work processing, and h
 
 - A license plate can be recorded and reserved when the order is taken by the sales processor, and it can't be taken by other demands. This behavior helps guarantee that the license plate that was planned is shipped to the customer.
 - If the license plate isn't already assigned to a sales order line, warehouse personnel can select a license plate during picking work, after sales order registration and reservation are completed.
-
-### Turn flexible license plate reservation on or off
-
-Before you can use flexible license plate reservation, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
-
-1. *Flexible warehouse-level dimension reservation*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
-1. *Flexible order-committed license plate reservation*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
 
 ### Reserve a specific license plate on the sales order
 
@@ -324,7 +317,7 @@ This scenario refers to values and records that are included in the standard dem
     > [!NOTE]
     > The reservation line will appear in the system only if publishing is completed without errors.
 
-1. Go back to Supply Chain Management. 
+1. Go back to Supply Chain Management.
 1. To review the item's reservation, on the **Sales order lines** FastTab, on the **Inventory** menu, select **Maintain \> Reservation**. Notice that, for the sales order line for *Item1*, inventory of *10* is reserved, and for the sales order line for *Item2*, inventory of *5* is reserved.
 1. To review inventory transactions that are related to the sales order line reservation, on the **Sales order lines** FastTab, on the **Inventory** menu, select **View \> Transactions**. Notice that there are two transactions that are related to the reservation: one where the **Reference** field is set to *Sales order* and one where the **Reference** field is set to *Order-committed reservation*.
 
@@ -481,7 +474,7 @@ The following tables provide an overview that shows how the system handles order
 </ol>
 </td>
 <td>
-<ul> 
+<ul>
 <li>Work that is associated with the load line is canceled.</li>
 <li>New work for the inventory movement is created and closed.</li>
 </ul>

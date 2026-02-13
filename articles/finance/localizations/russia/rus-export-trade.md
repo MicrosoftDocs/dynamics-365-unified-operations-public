@@ -56,7 +56,7 @@ A facture is an *export facture* if it's created based on invoices that contain 
 > [!NOTE]
 > All the invoices that are included in a facture must have the same type of VAT.
 
-To configure an export facture, follow these steps.
+To configure an export facture, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable**** \> ****Inquiries and reports**** \> ****Facture**.
 1. On the **Facture journal** page, on the **Foreign trade** tab, in the **Export date** field, select the date when items were exported under customs export conditions. In other words, select the date when the customs authority allowed items to be exported. The deadline for collecting the documents to confirm your right to apply VAT at a rate of 0 percent is calculated from this date.
@@ -289,7 +289,7 @@ Learn more in [Calculate the fine amount](#calculatefineamount).
 
 ### <a name="numbersequencesexport"></a>Set up number sequences for export factures and VAT processing
 
-To set up number sequences for export factures and VAT processing, follow these steps.
+To set up number sequences for export factures and VAT processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Number sequences** tab, select a number sequence code for the **Export facture** reference. In the **Number sequence code** field, assign the number sequence that will generate numbers for export factures.
@@ -297,7 +297,7 @@ To set up number sequences for export factures and VAT processing, follow these 
 
 ### <a name="foreigncounteragent"></a>Set up a customer as a foreign counteragent
 
-To set up a customer as a foreign counteragent, follow these steps.
+To set up a customer as a foreign counteragent, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Create a new customer.
@@ -306,7 +306,7 @@ To set up a customer as a foreign counteragent, follow these steps.
 
 ### <a name="salestaxcodeexporttrade"></a>Set up a sales tax code for export trade
 
-To set up a sales tax code for export trade, follow these steps.
+To set up a sales tax code for export trade, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. In the left pane, select a sales tax code where the **Type of tax** field is set to **VAT 0%**.
@@ -322,7 +322,7 @@ The deadline for collecting the confirmation documents is calculated by using th
 
 *Expiration date* = *Export date* + *Export confirmation period*
 
-To set up a document collection period and confirm the application of VAT at 0 percent, follow these steps.
+To set up a document collection period and confirm the application of VAT at 0 percent, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Period of documents collection**.
 1. On the **Export confirmation period** page, on the Action Pane, select **New** to create a new period for confirming VAT at a rate of 0 percent.
@@ -333,7 +333,7 @@ To set up a document collection period and confirm the application of VAT at 0 p
 
 ### <a name="setupdefaultoperationtype"></a>Set up a default operation type
 
-To set up a default operation type, follow these steps.
+To set up a default operation type, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Ledger and sales tax** tab, on the **General** FastTab, in the **Debtor debts** section, in the **Operation type** field, select the default operation type for factures that haven't yet reached the time when an operation type is assigned to them.
@@ -342,7 +342,7 @@ To set up a default operation type, follow these steps.
 
 ### <a name="setupparametersvatprocess"></a>Set up parameters for the VAT process
 
-To set up parameters for the VAT process, follow these steps.
+To set up parameters for the VAT process, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Parameters of VAT process**.
 
@@ -362,7 +362,7 @@ To set up parameters for the VAT process, follow these steps.
 
 ### <a name="refinancingrate"></a>Set up a refinancing rate and factor for fine calculation
 
-To set up a refinancing rate and factor for fine calculation, follow these steps.
+To set up a refinancing rate and factor for fine calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **Refinancing rate**.
 1. On the Action Pane, select **New** to create a new line.
@@ -374,7 +374,7 @@ To set up a refinancing rate and factor for fine calculation, follow these steps
 
 ### <a name="mainaccountfineaccounting"></a>Set up a main account for fine accounting
 
-To set up a main account for fine accounting, follow these steps.
+To set up a main account for fine accounting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Sales tax relations**.
 1. On the Action Pane, select **New** to create a new line.
@@ -389,7 +389,7 @@ To set up a main account for fine accounting, follow these steps.
 
 ### <a name="finecalculation"></a>Set up a reporting date for fine calculation
 
-To set up a reporting date for fine calculation, follow these steps.
+To set up a reporting date for fine calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 1. On the **Period intervals** FastTab, in the **Reporting date** field, specify the tax reporting date for the period. This date is used when fines are created for late payment of VAT.
@@ -398,7 +398,7 @@ To set up a reporting date for fine calculation, follow these steps.
 
 ## <a name="createfactureexport"></a>Create a facture for export sales
 
-To create a facture for export sales, follow these steps.
+To create a facture for export sales, follow these steps:
 
 1. Create a new sales order.
 1. In the **Customer account** field, select the customer who is a foreign counteragent. Learn more in [Set up a customer as a foreign counteragent](#foreigncounteragent).
@@ -418,7 +418,7 @@ To create a facture for export sales, follow these steps.
 
 ### Process export factures
 
-To process export factures, follow these steps.
+To process export factures, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Preliminary processing export factures**.
 1. On the Action Pane, select **Select** to select factures for processing.
@@ -446,7 +446,7 @@ To process export factures, follow these steps.
 
 ### Cancel processing of export factures
 
-To cancel processing of export factures, follow these steps.
+To cancel processing of export factures, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Cancel preliminary processing of export factures**.
 1. On the **Cancellation of preliminary processing** page, on the Action Pane, select **Select**.
@@ -459,7 +459,7 @@ The system will reset the current operation type to the previous operation type.
 
 ### Process outgoing VAT
 
-To process outgoing VAT, follow these steps.
+To process outgoing VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Outgoing VAT processing**.
 1. On the Action Pane, select **Select** to select data for processing outgoing VAT transactions.
@@ -488,7 +488,7 @@ As a result of posting the marked factures, the following actions occur:
 
 ### View processed factures
 
-To view processed factures, follow these steps.
+To view processed factures, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **VAT processing log**.
 1. On the **VAT processing log** page, you can view the transactions that were created and the factures that were processed.
@@ -497,7 +497,7 @@ To view processed factures, follow these steps.
 
 ### Cancel processed VAT
 
-To cancel processed VAT, follow these steps.
+To cancel processed VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Cancel processed VAT**.
 1. On the Action Pane, select **Select** to select data for the cancellation of processing.
@@ -509,7 +509,7 @@ To cancel processed VAT, follow these steps.
 
 ## <a name="calculatefineamount"></a>Calculate the fine amount
 
-To calculate the fine amount, follow these steps.
+To calculate the fine amount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Sales books journal**.
 1. On the Action Pane, select **Functions** \> **Export fine calculation**.

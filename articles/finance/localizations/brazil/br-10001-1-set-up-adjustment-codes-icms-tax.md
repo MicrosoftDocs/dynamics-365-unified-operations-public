@@ -22,7 +22,7 @@ In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record
 
 Use the following procedure to set up adjustment codes. The procedure uses the BRMF demo company.
 
-To set up adjustment codes for the ICMS tax, follow these steps.
+To set up adjustment codes for the ICMS tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Setup \> Tax adjustment codes \> ICMS, ICMS-ST, and ICMS-DIF adjustment codes**.
 1. Select **New**.

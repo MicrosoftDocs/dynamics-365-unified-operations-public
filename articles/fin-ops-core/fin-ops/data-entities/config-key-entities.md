@@ -1,10 +1,10 @@
 ---
 title: Configuration keys and data entities
 description: Learn about the relationship between configuration keys and data entities, including overviews on key configurations and assignments.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 05/10/2019
+ms.date: 11/20/2025
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: Global
@@ -18,12 +18,12 @@ ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
+Before you use data entities to import or export data, determine the impact of configuration keys on the data entities that you plan to use.
 
 To learn more about configuration keys, see the [License codes and configuration keys report](../../dev-itpro/sysadmin/license-codes-configuration-keys-report.md).
 
 ### Configuration key assignments
-Configuration keys can be assigned to one or all of the following artifacts.
+You can assign configuration keys to one or all of the following artifacts.
 
 - Data entities
 - Tables used as data sources
@@ -34,55 +34,55 @@ The following table summarizes how configuration key values on the different art
 
 | Configuration key setting on data entity | Configuration key setting on table | Configuration key setting on table field | Configuration key on data entity field | Expected behavior |
 |-----------------------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------|
-| Disabled                                | Not evaluated                      | Not evaluated                            | Not evaluated                          | If the configuration key for the data entity is disabled, the data entity will not be functional. It does not matter whether the configuration keys in the underlying tables and fields are enabled or disabled. |
-| Enabled                                 | Disabled                           | Not evaluated                            | Not evaluated                          | If the configuration key for a data entity is enabled, the data management framework checks the configuration key on each of the underlying tables. If the configuration key for a table is disabled, that table will not be available in the data entity for functional use. If a table's configuration key is disabled, the table and data entity configuration key settings are not evaluated. If the primary table in the entity has its configuration key disabled, then the system will act as though the entity's configuration key were disabled. |
-| Enabled                                 | Enabled                            | Disabled                                 | Not evaluated                          | If the configuration key for a data entity is enabled, and the underlying tables configuration keys are enabled, the data management framework will check the configuration key on of the fields in the tables. If the configuration key for a field is disabled, that field will not be available in the data entity for functional use even if the corresponding data entity field has the configuration key enabled. |
-| Enabled                                 | Enabled                            | Enabled                                  | Disabled                               | If the configuration key is enabled at all other levels, but the entity field configuration key is not enabled, then the field will not be available for use in the data entity. |
+| Disabled                                | Not evaluated                      | Not evaluated                            | Not evaluated                          | If the configuration key for the data entity is disabled, the data entity isn't functional. It doesn't matter whether the configuration keys in the underlying tables and fields are enabled or disabled. |
+| Enabled                                 | Disabled                           | Not evaluated                            | Not evaluated                          | If the configuration key for a data entity is enabled, the data management framework checks the configuration key on each of the underlying tables. If the configuration key for a table is disabled, that table isn't available in the data entity for functional use. If a table's configuration key is disabled, the system doesn't evaluate the table and data entity configuration key settings. If the primary table in the entity has its configuration key disabled, then the system acts as though the entity's configuration key were disabled. |
+| Enabled                                 | Enabled                            | Disabled                                 | Not evaluated                          | If the configuration key for a data entity is enabled, and the underlying tables configuration keys are enabled, the data management framework checks the configuration key on the fields in the tables. If the configuration key for a field is disabled, that field isn't available in the data entity for functional use even if the corresponding data entity field has the configuration key enabled. |
+| Enabled                                 | Enabled                            | Enabled                                  | Disabled                               | If the configuration key is enabled at all other levels, but the entity field configuration key isn't enabled, then the field isn't available for use in the data entity. |
 
 > [!NOTE]
-> If an entity has another entity as a data source then, the above semantics are applied in a recursive manner.
+> If an entity has another entity as a data source, the system applies the preceding semantics in a recursive manner.
 
 ### Entity list refresh
-When the entity list is refreshed, the data management framework builds the configuration key metadata for runtime use. This metadata is built using the logic described above. We strongly recommend that you wait for the entity list refresh to complete before using jobs and entities in the data management framework. If you don't wait, the configuration key metadata may not be up to date and could result in unexpected outcomes. When the entity list is being refreshed, the following message is shown in the entity list page.
+When you refresh the entity list, the data management framework builds the configuration key metadata for runtime use. This metadata is built by using the logic described earlier. Wait for the entity list refresh to complete before using jobs and entities in the data management framework. If you don't wait, the configuration key metadata might not be up to date and could result in unexpected outcomes. When the entity list is being refreshed, the following message appears in the entity list page.
 
-![Entity list refresh.](../../dev-itpro/data-entities/media/Entity_refresh_list.png)
+:::image type="content" source="../../dev-itpro/data-entities/media/Entity_refresh_list.png" alt-text="Screenshot of entity list refresh message displayed during the refresh process.":::
 
 ### Data entity list page
-The data entity list page in the Data management workspace shows the configuration key settings for the entities. Start from this page to understand the impact from configuration keys on the data entity.
+The data entity list page in the Data management workspace shows the configuration key settings for the entities. Start from this page to understand the impact of configuration keys on the data entity.
 
-This information is shown using the metadata that is built during entity refresh. The configuration key column shows the name of the configuration key that is associated with the data entity. If this column is blank it means that there is no configuration key associated with the data entity. The configuration key status column shows the state of the configuration key. If it has a checkmark, it means the key is enabled. If it is blank, it means either the key is disabled or there is no key associated.
+This information is shown by using the metadata that's built during entity refresh. The configuration key column shows the name of the configuration key that's associated with the data entity. If this column is blank, it means that there's no configuration key associated with the data entity. The configuration key status column shows the state of the configuration key. If it has a checkmark, it means the key is enabled. If it's blank, it means either the key is disabled or there's no key associated.
 
-![Entity list page.](../../dev-itpro/data-entities/media/Data_entity_list_page.png)
+:::image type="content" source="../../dev-itpro/data-entities/media/Data_entity_list_page.png" alt-text="Screenshot of data entity list page showing configuration key settings and status columns.":::
 
 ### Target fields
-The next step is to drill into the data entity to view the impact of configuration keys on tables and fields. The target fields form for a data entity shows configuration key and the key status information for the related tables and fields in the data entity. If the data entity itself has its configuration key disabled, a warning message is shown informing that the tables and fields in the target fields form for this entity will not be available at all regardless of their configuration key status.
+The next step is to drill into the data entity to view the impact of configuration keys on tables and fields. The target fields form for a data entity shows configuration key and the key status information for the related tables and fields in the data entity. If the data entity itself has its configuration key disabled, a warning message is shown informing that the tables and fields in the target fields form for this entity aren't available regardless of their configuration key status.
 
 <!--![Target fields.](../../dev-itpro/data-entities/media/Target_fields_1.png) -->
 
 ### Child entities 
-Certain entities have other entities as data sources, or are composite data entities: configuration key information for these entities is shown in the Child entities form. Use this form in the similar way to the entities list page described above. The target fields form for the child entity also behaves like what is described above.
+Certain entities have other entities as data sources, or are composite data entities. The Child entities form shows configuration key information for these entities. Use this form in the similar way to the entities list page described earlier. The target fields form for the child entity also behaves as described earlier.
 
 <!--![Target fields.](../../dev-itpro/data-entities/media/Target_fields_2.png)-->
 
 ### Using data entities
-After understanding the full impact, if any, of configuration keys on the data entities that you would like to use, you can now proceed to using the data entities by adding them to data projects. 
+After understanding the full impact of configuration keys on the data entities that you want to use, you can add the data entities to data projects. 
 
 ### Run time validations for configuration keys
 Using the configuration key metadata built during entity refresh list, run time validations are performed in the following use cases.
 
 - When a data entity is added to a job
-- When user clicks 'validate' on the entity list
+- When user select 'validate' on the entity list
 - When the user loads a data package into a data project
 - When the user loads a template into a data project
 - When an existing data project is loaded
 - When a template is loaded into a data project
-- Before the export/import job is executed (batch, non-batch, recurring, OData)
+- Before the export/import job is executed (batch, nonbatch, recurring, OData)
 - When the user generates mapping
 - When the user maps fields in the mapping UI
 - When the user adds only 'importable fields'
 
 ### Managing configuration key changes
-Anytime that you update configuration keys at the entity, table or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
+Anytime that you update configuration keys at the entity, table or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning is shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
 
 <!-- ![Target fields.](../../dev-itpro/data-entities/media/Target_fields_3.png) -->
 

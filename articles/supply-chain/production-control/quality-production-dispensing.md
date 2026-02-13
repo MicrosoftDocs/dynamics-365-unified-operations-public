@@ -1,5 +1,5 @@
 ﻿---
-title: Production dispensing (preview)
+title: Production dispensing
 description: Learn how to use production dispensing to ensure compliance with regulated and controlled standards for dispensing ingredients and materials in production processes.
 author: johanhoffmann
 ms.author: johanho
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Production dispensing (preview)
+# Production dispensing
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.45 GA -->
 
 When you deal with hazardous materials or sensitive components in production processes, accurate dispensing of materials is crucial. It helps minimize the risk of contamination, preserve the integrity of the materials, and ensure the safety of both the product and personnel.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The processing of dispensing materials to a production order involves allocating and providing the raw materials or components that are required for the production process. It's essential in some environments, for several reasons:
 
@@ -41,14 +37,13 @@ Workers use the **Dispensing ticket** page to manage the dispensing of materials
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
+- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both of these features are turned on by default.
     - *Advanced quality management*
     - *Dispense management*
 
 ## Set up a dispensing pick journal
 
-To set up a journal for dispensing materials to production and batch orders, follow these steps.
+To set up a journal for dispensing materials to production and batch orders, follow these steps:
 
 1. Go to **Production control** \> **Setup** \> **Production journal names**.
 1. Select **New** to create a journal name for the dispensing pick journal.
@@ -59,7 +54,7 @@ To set up a journal for dispensing materials to production and batch orders, fol
 
 ## Grant users access to production dispensing features
 
-All users who should be able to dispense products in the production process must have the *Production dispenser* security role assigned to them. To assign this role to a user, follow these steps.
+All users who should be able to dispense products in the production process must have the *Production dispenser* security role assigned to them. To assign this role to a user, follow these steps:
 
 1. Go to **System administration** \> **Users** \> **Users**.
 1. Open the user that you want to enable for production dispensing.
@@ -69,7 +64,7 @@ All users who should be able to dispense products in the production process must
 
 ## Require electronic signatures for production dispensing
 
-To require an electronic signature when users post the dispensing pick journal, follow these steps.
+To require an electronic signature when users post the dispensing pick journal, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic signature** \> **Electronic signature requirements**.
 1. In the list pane, select the row where the **Name** field is set to *Post dispensing ticket production journal*.
@@ -80,7 +75,7 @@ To require an electronic signature when users post the dispensing pick journal, 
 
 ## Set up measuring devices
 
-You can create a catalog of measuring devices that are used in the dispensing process. These devices are typically scales. Every dispensing ticket can have a measuring device assigned to it. In the production control parameters, you can set up a default device. To set up a measuring device, follow these steps.
+You can create a catalog of measuring devices that are used in the dispensing process. These devices are typically scales. Every dispensing ticket can have a measuring device assigned to it. In the production control parameters, you can set up a default device. To set up a measuring device, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Measuring devices**.
 1. Use the buttons on the Action Pane to add a new measuring device or edit an existing one. (You can also delete an existing device.)
@@ -88,11 +83,11 @@ You can create a catalog of measuring devices that are used in the dispensing pr
 
     - **Name**
     - **Description**
-    - **Test instrument tag** – Specify a unique identifier for the measuring device. You can use this ID to track the device's calibration history. Learn more about instrument calibration in [Test instrument calibration (preview)](../inventory/quality-instrument-calibration.md).
+    - **Test instrument tag** – Specify a unique identifier for the measuring device. You can use this ID to track the device's calibration history. Learn more about instrument calibration in [Test instrument calibration](../inventory/quality-instrument-calibration.md).
 
 ## Set up production control parameters
 
-To enable production dispensing and configure how it works in your system, you must configure several settings on the **Production control parameters** page. To configure the required production control parameters, follow these steps.
+To enable production dispensing and configure how it works in your system, you must configure several settings on the **Production control parameters** page. To configure the required production control parameters, follow these steps:
 
 1. Go to **Production control** \> **Setup** \> **Production control parameters**.
 1. On the **Standard update** tab, set the following fields:
@@ -110,7 +105,7 @@ To use a dispensing process, you must configure dispensing options for each rele
 > [!NOTE]
 > Products that are enabled for warehouse management processes (WMS) can't be enabled for the dispensing process.
 
-To set up a product for the dispensing process, follow these steps.
+To set up a product for the dispensing process, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Create a new product, or open an existing product that you want to set up for dispensing.
@@ -126,7 +121,7 @@ To set up a product for the dispensing process, follow these steps.
 
 ## Generate the dispensing ticket and dispensing pick journal
 
-To create the dispensing ticket and dispensing pick journal for a production or batch order where BOM or formula lines are enabled for dispensing, follow these steps.
+To create the dispensing ticket and dispensing pick journal for a production or batch order where BOM or formula lines are enabled for dispensing, follow these steps:
 
 1. Go to **Production control** \> **Production orders** \> **All production orders**.
 1. Select **New production order** or **New batch order**.
@@ -164,7 +159,7 @@ After the batch or production order is released as described in previous section
 
 If you set the **Allow over-dispensing with reverse pick** option to *Yes* as described in the [Set up production control parameters](#set-up-production-control-parameters) section, the system can automatically generate a dispensing pick list to reverse material that was over-picked for the dispensing process. This capability can be relevant when you stage materials in full handling units, such as a container or bag, to the location where the dispensing process is performed.
 
-To have any remainder from over-dispensed or over-picked material returned to inventory through an automatically generated pick list, follow these steps.
+To have any remainder from over-dispensed or over-picked material returned to inventory through an automatically generated pick list, follow these steps:
 
 > [!NOTE]
 > Before you begin, ensure that the **Allow over-dispensing with reverse pick** option is set to *Yes* on the **Production control parameters** page.

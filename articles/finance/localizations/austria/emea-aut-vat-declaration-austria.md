@@ -270,7 +270,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
 4. If you must report the corrections, on the **Special report** section, set **Include corrections** to **Yes**.
 5. On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
 
-If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps:
 
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **AUT**, select the **VAT Declaration Excel (AT)** ER format.

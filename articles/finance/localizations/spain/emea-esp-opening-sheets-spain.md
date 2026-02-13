@@ -29,7 +29,7 @@ When you close the entries for the previous fiscal year, you can create several 
 
 ## Create a new opening sheet
 
-To create a new opening sheet, follow these steps. 
+To create a new opening sheet, follow these steps: 
 
 1. In Dynamics 365 Finance, go to  on the **Opening sheets** page.
 1. Select **New**.
@@ -46,7 +46,7 @@ To create a new opening sheet, follow these steps.
 
 After you enter the general information about the opening sheet, you must specify the main accounts to include in the opening sheet.
 
-To specify the main accounts to include in the opening sheet, follow these steps.
+To specify the main accounts to include in the opening sheet, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Opening sheets** page.
 1. Select **Opening accounts** \> **Load balances**.

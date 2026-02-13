@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.47 (January 2026)
+          href: get-started/whats-new-commerce-10-0-47.md
+        - name: Commerce 10.0.46 (October 2025)
+          href: get-started/whats-new-commerce-10-0-46.md
         - name: Commerce 10.0.45 (September 2025)
           href: get-started/whats-new-commerce-10-0-45.md
         - name: Commerce 10.0.44 (April 2025)
           href: get-started/whats-new-commerce-10-0-44.md
-        - name: Commerce 10.0.43 (January 2025)
-          href: get-started/whats-new-commerce-10-0-43.md
-        - name: Commerce 10.0.42 (December 2024)
-          href: get-started/whats-new-commerce-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -402,8 +402,12 @@
             href: dev-itpro/MPOS-or-CPOS.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
+          - name: Enable camera-based product identification in Store Commerce
+            href: enable-camera-based-product-identification.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
+          - name: Enable multilanguage support for Store Commerce self-checkout (preview)
+            href: multi-language-store-commerce-point-of-sale.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
@@ -462,7 +466,7 @@
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
-              - name: Support for external gift cards (preview)
+              - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
               - name: Cross-company data sharing for gift cards
                 href: dev-itpro/data-sharing-gift-cards.md
@@ -520,7 +524,7 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-        - name: Modern workflows in POS
+        - name: Modern workflows in POS (preview)
           href: POS-UX-modernization.md
         - name: Receipts
           items:
@@ -622,8 +626,10 @@
               href: dev-itpro/apple-pay-adyen.md
             - name: Enable Tap to Pay on iPhone
               href: dev-itpro/tap-to-pay-iphone.md
-            - name: Enable Pay by Link in point of sale using Adyen connector
+            - name: Enable pay by link in POS using the Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/pay-by-link-overview.md
+            - name: Enable critical payment notifications using the Dynamics 365 Payment Connector for Adyen
+              href: dev-itpro/payment-notifications.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
@@ -812,6 +818,8 @@
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
         - name: Turn on the Unified pricing management module for your system
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
+        - name: Migrate to unified pricing management
+          href: ../supply-chain/unified-pricing-management/upm-migrate-to-unified-pricing-management.md?context=/dynamics365/context/commerce
         - name: Price attributes
           items:
           - name: Price attributes overview
@@ -822,6 +830,10 @@
             href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
           - name: Customer and product price attribute groups
             href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
+          - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
+            href: ../supply-chain/unified-pricing-management/upm-support-custom-attributes.md?context=/dynamics365/context/commerce
+          - name: Example custom request handler code
+            href: ../supply-chain/unified-pricing-management/upm-custom-request-handler-example.md?context=/dynamics365/context/commerce
         - name: Price groups
           items:
           - name: Price groups overview
@@ -872,6 +884,10 @@
             href: ../supply-chain/unified-pricing-management/upm-concurrence-within-codes.md?context=/dynamics365/context/commerce
           - name: Resolving concurrency across price component codes
             href: ../supply-chain/unified-pricing-management/upm-concurrence-cross-codes.md?context=/dynamics365/context/commerce
+        - name: Calculate prices and discounts without creating sales orders
+          href: ../supply-chain/unified-pricing-management/upm-calculate-prices-without-sales-orders.md?context=/dynamics365/context/commerce
+        - name: Pricing data import and export entities
+          href: ../supply-chain/unified-pricing-management/upm-pricing-data-entities.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
         - name: Product recommendations overview
@@ -998,7 +1014,7 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
-        - name: Purge Commerce transactions
+        - name: Purge Commerce transactions (preview)
           href: purge-transactions.md
       - name: Sales orders
         items:
@@ -1192,6 +1208,8 @@
           href: dev-itpro/upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
           items:
+          - name: Set up a Microsoft External Entra ID for user site authentication in Commerce e-commerce
+            href: dev-itpro/set-up-external-entra-id.md
           - name: Set up a B2C tenant
             href: dev-itpro/set-up-B2C-tenant.md
           - name: Create or link to an existing Microsoft Entra B2C tenant
@@ -1338,7 +1356,7 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
-          - name: Redirect category and product pages to canonical URLs (preview)
+          - name: Redirect category and product pages to canonical URLs
             href: e-commerce-extensibility/add-custom-redirect.md
         - name: Adventure Works theme
           items:
@@ -1470,7 +1488,7 @@
           items:
           - name: Map module
             href: map-module.md
-          - name: Azure Maps module (preview)
+          - name: Azure Maps module
             href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
@@ -1570,7 +1588,7 @@
       items:
       - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
         href: dev-itpro/DFP.md
-    - name: B2B e-commerce
+    - name: B2B commerce
       items:
       - name: Set up a B2B e-commerce site
         href: b2b/set-up-b2b-site.md
@@ -1590,6 +1608,8 @@
         href: b2b/quantity-limits.md
       - name: B2B indirect workflows 
         href: b2b/b2b-indirect.md
+      - name: B2B multioutlet capabilities (preview)
+        href: b2b/b2b-multi-outlet.md
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
@@ -2385,7 +2405,7 @@
         - name: Configure model mappings
           items:
           - name: Configure country/region context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/commerce
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/commerce
           - name: Manage several derived mappings for a single model root
@@ -2576,7 +2596,7 @@
         href: email-templates-transactions.md
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?context=/dynamics365/context/commerce
-      - name: Troubleshoot the Office integration
+      - name: Office integration FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/commerce
     - name: Organization administration
       items:

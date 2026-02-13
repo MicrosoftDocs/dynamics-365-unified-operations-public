@@ -114,7 +114,7 @@ The following illustration shows how the custom error message appears in the POS
 ## Create localized error messages
 
 ### Create resource files for each locale
-To return localized error messages from the payment connector to the POS, you must create localized resource files for each locale that you plan to support. To create a resource file, follow these steps.
+To return localized error messages from the payment connector to the POS, you must create localized resource files for each locale that you plan to support. To create a resource file, follow these steps:
 
 1. In Microsoft Visual Studio, right-click the connector project (or a subfolder, as required), and then select **Add \> New Item**.
 2. In the new **Add New Item** dialog box, select **Visual C# Items** in the left pane and **Resource File** in the center pane.

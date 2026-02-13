@@ -1,8 +1,8 @@
 ---
 title: Financial tag rules
 description: Learn how to set up, create, and enter default financial tags on transactions.
-author: rcarlson
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 10/31/2024
 ms.reviewer: twheeloc
@@ -52,7 +52,7 @@ Before you create financial tags rules, note the following points:
 
 ### Create a financial tag rule
 
-To create a financial tag rule, follow these steps.
+To create a financial tag rule, follow these steps:
 
 1. Go to **General ledger** \> **Chart of accounts** \> **Financial tags** \> **Financial tag rules**.
 1. Select **New** to create a financial tag rule.

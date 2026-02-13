@@ -34,7 +34,7 @@ The **Table edit** visual provides an interface for direct edits to dimensions i
 
 This example show how the **Table edit** visual facilitates the addition of new scenarios in the scenario dimension.
 
-To add scenarios in the scenario dimension, follow these steps.
+To add scenarios in the scenario dimension, follow these steps:
 
 1. In the dropdown list at the top of the **Table edit** visual, select a dimension. For this example, select the **Scenario** dimension.
 2. At the top of the page, select **(+)** to add a row.

@@ -54,7 +54,7 @@ To enable synchronization of the country/region data that you enter in Commerce 
 
 Countries and regions are associated with online stores (also known as online channels) in Commerce headquarters. When you associate a country or region with an online store, you indicate that customers who reside in that country or region should view the site that is mapped to that online store. You can associate multiple countries and regions with an online store as you require.
 
-To associate countries or regions with an online store, follow these steps.
+To associate countries or regions with an online store, follow these steps:
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**, or search for "online stores" in the search box.
 1. Open the online channel that you want to associate countries or regions with.
@@ -73,7 +73,7 @@ Countries/regions can be mapped to URLs that are associated with either differen
 
 ### Associate countries and regions with URLs
 
-To associate countries and regions with site URLs, follow these steps.
+To associate countries and regions with site URLs, follow these steps:
 
 1. In Commerce site builder, go to **Site settings \> Channels**.
 1. Select the channel name, and then select a locale.

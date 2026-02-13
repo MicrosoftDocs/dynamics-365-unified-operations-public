@@ -20,10 +20,6 @@ The **Show messages** button (bell symbol) on the right side of the navigation b
 
 Business events occur when business processes are run. Business processes are made up of tasks. During a business process, the users who participate in it perform business actions to complete those tasks. Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events. Learn more in [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
-## Turn the Wave execution notifications feature on or off
-
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave execution notifications* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
-
 ## Scenario: Send wave batch execution notifications to the Action center
 
 This scenario shows the end-to-end flow for sending notifications about wave batch execution errors to a specific role via the Action center.
@@ -115,4 +111,3 @@ Depending on the setup of your business events, you will eventually receive a no
 > Open wave details
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

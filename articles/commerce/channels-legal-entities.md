@@ -28,7 +28,7 @@ When creating a channel, you must specify which legal entity that channel belong
 
 ## Create a new legal entity
 
-To create a new legal entity in Dynamics 365 Commerce, follow these steps.
+To create a new legal entity in Dynamics 365 Commerce, follow these steps:
 
 1. In the navigation pane, go to  **Modules \> Headquarters setup \> Legal entities**.
 1. On the action pane, select **New**. The **New legal entity** pane appears on the right.

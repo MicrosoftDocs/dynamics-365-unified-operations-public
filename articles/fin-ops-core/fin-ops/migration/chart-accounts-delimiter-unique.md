@@ -1,13 +1,13 @@
 ---
 title: Make the chart of accounts delimiter unique
 description: Learn about how you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade.
-author: RyanCCarlson2
-ms.author: RCarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/19/2024
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8

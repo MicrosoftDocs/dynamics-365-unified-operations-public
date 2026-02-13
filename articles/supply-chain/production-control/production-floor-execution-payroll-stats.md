@@ -17,10 +17,6 @@ This article provides an example scenario that shows how to set up Microsoft Dyn
 
 This scenario uses the Danish holiday law, where the vacation year goes from September 1 through August 31. In this scenario, your company has hired a new worker and will grant that worker a balance of 10 vacation days for the rest of the current vacation year.
 
-## Turn on the required features
-
-To run this scenario, the *"My day" view for the production floor execution interface* feature must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). For information about how to enable this and other features for the production floor execution interface, see [Configure the production floor execution interface](production-floor-execution-configure.md).
-
 ## Make sample data available
 
 To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.

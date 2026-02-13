@@ -32,7 +32,7 @@ To work with integrated contracts in Supply Chain Management, go to **Procuremen
 
 ## View contracts associated with a selected vendor
 
-While you're working with a vendor record, you can easily identify which contracts are associated with that vendor. To view the contracts that are associated with a specific vendor, follow these steps.
+While you're working with a vendor record, you can easily identify which contracts are associated with that vendor. To view the contracts that are associated with a specific vendor, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Find and select the vendor that you want to work with. You must select only one vendor at a time.

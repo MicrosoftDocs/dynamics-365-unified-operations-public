@@ -43,7 +43,7 @@ Before you can set up tax branches, you must set up tax registration numbers for
 
 The **Tax branch** page is available only if you turn on the **Use tax branch** option on the **General ledger parameters** page.
 
-To turn on the **Use tax branch** option, follow these steps.
+To turn on the **Use tax branch** option, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, on the **Tax options** FastTab, set the **Use tax branch** option to **Yes**.
@@ -52,7 +52,7 @@ To turn on the **Use tax branch** option, follow these steps.
 
 Use the **Tax branch** page to create tax branches for a legal entity. VAT-registered legal entities must provide the tax branch code that is used for VAT, withholding tax transactions, and inventory movement between branches in the legal entity. You can select a branch as the head office and then update the tax branch code in the transactions by using tax branch as one of the financial dimensions for all financial postings. If a legal entity has many branches, the head office and all the tax branches will use the same tax registration number to report the transactions.
 
-To create a tax branch, follow these steps.
+To create a tax branch, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Tax branch**.
 1. On the Action Pane, select **New**.
@@ -74,7 +74,7 @@ Learn more in [Financial dimensions](../../general-ledger/financial-dimensions.m
 
 Create a record of the vendor and customer transactions that are performed at tax branches. Therefore, you must assign a tax branch to each vendor and customer. The tax branch that you specify for a vendor or customer is then used as the default tax branch for all vendor or customer transactions. Use the **All vendors** and **All customers** pages to specify a tax branch for vendors and customers.
 
-To set up a tax branch for a vendor or a customer, follow these steps.
+To set up a tax branch for a vendor or a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors** or **Accounts receivable** \> **Customers** \> **All customers**.
 1. Open an existing vendor or customer account or create a new vendor or customer account.
@@ -85,7 +85,7 @@ To set up a tax branch for a vendor or a customer, follow these steps.
 
 Use the **Sites** page to create one or more sites, and to assign a tax branch to a site to track the inventory movement at that tax branch.
 
-To assign a tax branch to a site, follow these steps.
+To assign a tax branch to a site, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Sites**.
 1. Create a site.

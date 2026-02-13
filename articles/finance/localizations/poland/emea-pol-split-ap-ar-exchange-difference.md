@@ -35,7 +35,7 @@ In the **Feature management** workspace, turn on the following feature: **(Polan
 
 ### Set up ledger accounts
 
-To set up a ledger account that can be used to post the exchange difference amount that is related to the tax amount of the invoice, follow these steps.
+To set up a ledger account that can be used to post the exchange difference amount that is related to the tax amount of the invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Currencies** \> **Currency revaluation accounts**. 
 2. On the **Currency revaluation accounts** page, select the currency code, and then, in the **Ledger** field, select the code of the legal entity.

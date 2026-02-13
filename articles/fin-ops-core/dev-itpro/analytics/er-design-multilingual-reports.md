@@ -4,7 +4,7 @@ description: Learn about how you can use Electronic reporting (ER) labels to des
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 05/31/2022
+ms.date: 10/02/2025
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -178,7 +178,7 @@ ER supports different ways to specify the culture for a generated report. Theref
 > - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
 > - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
 >
-> In version 10.0.20 and later, the locale of format components of the **Common\\File** and **Excel\\File** types is used to format values during [PDF conversion](electronic-reporting-destinations.md#OutputConversionToPDF) of a generated document.
+> In version 10.0.20 and later, the locale of format components of the **Common\\File** and **Excel\\File** types is used to format values during [PDF conversion](er-output-conversion-to-pdf.md) of a generated document.
 
 ## Translation
 
@@ -202,7 +202,7 @@ You can export either all labels or the labels for a single language that you sp
 
 ![Sample of the exported file containing ER lables for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
 
-This format is used for automatic translation of labels by  external translation services such as [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
+This format is used for automatic translation of labels by  external translation services. When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
 
 ![ER Configurations page allowing to import ER labels to the selected conviguration version.](./media/er-multilingual-labels-load.png)
 

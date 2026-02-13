@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Dynamics AX platform update 1 (May 2016)
 description: Learn about new or changed features in Microsoft Dynamics AX platform update 1. This version was released in May 2016.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
-ms.date: 07/12/2024
+ms.date: 11/21/2025
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -219,7 +219,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 
 | What can you do? | Why is this important? |
 |------------------|------------------------|
-| Add a Yammer or Twitter conversation feed to a page by using the new Feed control. | As an administrator, you can configure a Yammer feed to a workspace, so that users can view and participate in a relevant conversation. For example, a Yammer feed control can be added to the **Sales processing** workspace by a developer and then configured to point to a "Sales Discussion" Yammer group. |
+| Add a Microsoft Viva Engage or Twitter conversation feed to a page by using the new Feed control. | As an administrator, you can configure a Viva Engage feed to a workspace, so that users can view and participate in a relevant conversation. For example, a Viva Engage feed control can be added to the **Sales processing** workspace by a developer and then configured to point to a "Sales Discussion" group on Microsoft Viva Engage. |
 | Configure mail so that it's sent via the new Microsoft Exchange Mail Provider. | As an administrator, you can configure mail so that it's sent via the new Exchange Mail Provider. When a Microsoft 365 license is associated with the tenant (domain), the Exchange Mail Provider is a great option for several reasons. For example, it sends email as the current user instead of using a single saved account. Additionally, unlike the Simple Mail Transfer Protocol (SMTP) provider, the Exchange Mail Provider saves email in the Sent folder. Finally, it doesn't require any configuration except turning it on. |
 | See the Skype for Business presence indicator next to email fields that use the **SysEmailAddress** or **EmailBase** EDT. (This feature applies only to non-grid fields that aren't in edit mode.) | Users can quickly see whether a contact is online and available to answer a question via Skype for Business. |
 | Add unbound text into Word templates as labels using the Word add-in. | As a template designer, you can use labels for unbound text so that the text is translated appropriately depending on what language is currently being used when a document is generated. |
@@ -236,6 +236,5 @@ This article describes features that are either new or changed in Microsoft Dyna
 [What's new or changed in finance and operations home page](../../fin-ops/get-started/whats-new-changed.md)
 
 [New or updated task guides (May 2016)](../../fin-ops/get-started/new-updated-task-guides-available-may-2016.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

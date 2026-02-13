@@ -1,8 +1,8 @@
 ---
 title: Compensation and Benefits Power BI content
 description: Learn about the Compensation and Benefits Power BI content, including a table that outlines how to understand the data model and entities.
-author: jcart1106
-ms.author: jcart
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 12/19/2017
 ms.reviewer: twheeloc

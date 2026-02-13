@@ -46,7 +46,7 @@ The **Summary** FastTab of the **Warehouse mobile devices** workspace provides t
 
 The **Devices needing attention** FastTab of the **Warehouse mobile devices** workspace provides a quick overview of devices that require attention. It provides the following two tabs:
 
-- **Devices to update** – Select this tab to view a list of devices that are running an old version of the Warehouse Management application. You should update each of these devices to the latest version to ensure optimal compliance, performance, and user experience. For details about the latest version of the app and a change history, see [What's new or changed in the Warehouse Management mobile app](whats-new-wma.md). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md) or [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md) (depending on which type of authentication method you are using).
+- **Devices to update** – Select this tab to view a list of devices that are running an old version of the Warehouse Management application. You should update each of these devices to the latest version to ensure optimal compliance, performance, and user experience. For details about the latest version of the app and a change history, see [What's new or changed in the Warehouse Management mobile app](whats-new-wma.md). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 - **Devices to replace** – Select this tab to view a list of devices that are running an operation system that's no longer supported. These devices might pose a risk to system integrity and compliance. Therefore, you should replace them as soon as possible. If the list includes devices that you're no longer using, you can [delete them](#delete-devices).
 
 ## <a name="licenses"></a>Manage device licenses
@@ -66,7 +66,7 @@ For complete licensing details, see the [Dynamics 365 Licensing Guide](https://g
 
 ### <a name="license-state"></a>Update licensing information for a device
 
-The **Warehouse mobile devices** workspace lets you view information about each device that's connected to the system. It also lets you view and manage the device license status for each device. To update licensing information for a device, follow these steps.
+The **Warehouse mobile devices** workspace lets you view information about each device that's connected to the system. It also lets you view and manage the device license status for each device. To update licensing information for a device, follow these steps:
 
 1. Open the **Warehouse mobile devices** workspace.
 1. On the **Summary** FastTab, select a tile to open the relevant device list (such as **Device licenses** or **Devices supported**).
@@ -80,7 +80,7 @@ The **Warehouse mobile devices** workspace lets you view information about each 
 
 ## <a name="rename-devices"></a>Rename a device
 
-Devices are primarily identified using a unique device ID, which is, due to privacy reasons, unrelated to any other device identifier, such as a device serial number or device name. To make it easier to identify which device ID correlates to which physical device, you can give each device a friendly name in addition to the device ID. To rename a device, follow these steps.
+Devices are primarily identified using a unique device ID, which is, due to privacy reasons, unrelated to any other device identifier, such as a device serial number or device name. To make it easier to identify which device ID correlates to which physical device, you can give each device a friendly name in addition to the device ID. To rename a device, follow these steps:
 
 1. Open the **Warehouse mobile devices** workspace.
 1. On the **Summary** FastTab, select a tile to open the relevant device list (such as **Devices supported**). Alternatively, go to **Warehouse management \> Inquiries and reports \> Mobile device logs \> Mobile devices**.

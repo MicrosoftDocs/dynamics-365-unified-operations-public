@@ -1,12 +1,12 @@
 ---
 title: Process parameters
 description: Learn about how to implement custom parameters in the process automation framework, including overviews and code examples for various interfaces.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.date: 06/10/2024
 ms.custom: 
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-09-10
@@ -287,3 +287,4 @@ implements ProcessScheduleIExplodeOccurrences
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

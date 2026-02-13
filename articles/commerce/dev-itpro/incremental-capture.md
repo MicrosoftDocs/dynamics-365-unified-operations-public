@@ -55,7 +55,7 @@ The following features must be enabled prior to enabling incremental capture.
 
 This feature was originally introduced for incremental capture for headquarters invoicing through the payments SDK and has been augmented to also enable incremental capture support through the Dynamics 365 Payment Connector for Adyen and all channels. 
 
-To enable the "Extensibility to support incremental credit card capture" feature in Commerce headquarters, follow these steps.
+To enable the "Extensibility to support incremental credit card capture" feature in Commerce headquarters, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management**. 
 1. Select the **All** tab to show all available features.
@@ -64,7 +64,7 @@ To enable the "Extensibility to support incremental credit card capture" feature
 
 ### Set the credit card authorization parameter
 
-To set the credit card authorization parameter in headquarters, follow these steps.
+To set the credit card authorization parameter in headquarters, follow these steps:
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**. 
 1. In the left navigation pane, select **Credit card**.

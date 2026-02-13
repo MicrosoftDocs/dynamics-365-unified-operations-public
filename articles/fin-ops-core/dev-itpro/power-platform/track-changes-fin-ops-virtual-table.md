@@ -2,9 +2,9 @@
 title: Track changes for finance and operations virtual tables in Dataverse
 description: Learn about how to enable Track changes for finance and operations virtual tables in Microsoft Dataverse, including prerequisites to tracking changes.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 07/12/2024
+ms.date: 01/21/2026
 ms.custom: 
   - NotInToc
   - bap-template
@@ -18,22 +18,21 @@ ms.dyn365.ops.version: 10.0.31
 
 [!include[banner](../includes/banner.md)]
 
-[This topic is pre-release documentation and is subject to change.]
-
 ## Row version change tracking for finance and operations
 
-A new change tracking option has been added to finance and operations apps to enable incremental synchronization of data using the Microsoft Dataverse. The new change tracking is a prerequisute for several features such as Data archival, Synapse integration, Mobile offline and Relevance search. The goal, over time, is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
+A new change tracking option is added to finance and operations apps to enable incremental synchronization of data by using Microsoft Dataverse. The new change tracking option is a prerequisite for several features such as data archival, Synapse integration, mobile offline, and relevance search. The goal, over time, is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
 
-## Prerequisite to track changes for finance and operations virtual tables in Dataverse 
+## Prerequisite to track changes for finance and operations virtual tables in Dataverse
 
-- The **Allow Row Version Change Tracking** metadata property, must be set to **Yes** for the data entity, see [Allow Row version change tracking for Data entities](../data-entities/rowversion-change-track.md).
-- Finance and Operations entities must be visible in Dataverse, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md).
- 
- ## Track changes for finance and operations virtual tables in Dataverse 
+- Set the **Allow Row Version Change Tracking** metadata property to **Yes** for the data entity. For more information, see [Allow Row version change tracking for Data entities](../data-entities/rowversion-change-track.md).
+- Finance and operations entities must be visible in Dataverse. For more information, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md).
 
-If the above prerequisites are met, then the final step is to enable change tracking by selecting **Track changes** for the Virtual table in the Power Apps, see [Enable change tracking to control data synchronization](/power-platform/admin/enable-change-tracking-control-data-synchronization).
+## Track changes for finance and operations virtual tables in Dataverse
+
+If you meet the prerequisites, enable change tracking by selecting **Track changes** for the virtual table in Power Apps. For more information, see [Enable change tracking to control data synchronization](/power-platform/admin/enable-change-tracking-control-data-synchronization).
 
 > [!IMPORTANT]
-> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](./enable-power-platform-integration.md). To enable see [What are Preview features, and how do I enable them?](/power-platform/admin/what-are-preview-features-how-do-i-enable-them).
+>
+> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration is enabled with Dataverse database. For more information, see [Enable the Microsoft Power Platform integration](./enable-power-platform-integration.md). To enable, see [What are Preview features, and how do I enable them?](/power-platform/admin/what-are-preview-features-how-do-i-enable-them).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

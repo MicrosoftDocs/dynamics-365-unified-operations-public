@@ -1,8 +1,8 @@
 ---
 title: Migrate Segmented Entry controls
 description: Learn about migration scenarios for the Segmented Entry control, including various X++ code examples and scenarios.
-author: RyanCCarlson2
-ms.author: rcarlson
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template

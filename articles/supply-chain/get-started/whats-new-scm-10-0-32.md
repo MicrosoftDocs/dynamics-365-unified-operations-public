@@ -32,7 +32,7 @@ The following table lists the features that are included in this release. We mig
 | Planning | New exception process for migrating to Planning Optimization | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) | Enabled by default |
 | Planning | [Transition to Planning Optimization one company at a time](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/transition-planning-optimization-one-company-at-time) | [Continue to use deprecated master planning with existing companies](../master-planning/continue-using-deprecated-planning.md) | Enabled by default |
 | Procurement | [Improve security for vendor bank account information updates](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-security-vendor-bank-account-information-updates) |  [Vendor bank account workflow](../../finance/accounts-payable/vendor-bank-account-workflow.md) | Feature management:<br>*Vendor bank account change proposal workflow* |
-| Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
+| Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*Cross-company data sharing for products* |
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
 | Warehouse management | [Optimize performance of internal movements in warehouse](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-performance-internal-movements-warehouse) | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Feature management:<br>*Warehouse-specific inventory transactions* |
 | Warehouse management | [Pack shipments with speed and resilience](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/pack-shipments-speed-resilience) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Container label layouts and printing](../warehousing/print-container-labels.md)<br><br>[Mobile device container packing policies](../warehousing/warehouse-app-pack-containers-policies.md) | Feature management:<br>*Pack containers using the Warehouse Management mobile app* |
@@ -147,7 +147,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Mandatory |
 | Warehouse management | [Maximum execution time for the warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md)  | Mandatory |
 | Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Mandatory |
-| Warehouse management | [Organization-wide "Schedule work creation" wave method](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
+| Warehouse management | Organization-wide "Schedule work creation" wave method | Mandatory |
 | Warehouse management | [Organization-wide system directed work sequencing](../warehousing/system-directed-work-sequencing.md) | Mandatory |
 | Warehouse management | [Organization wide wave step code](../warehousing/advanced-load-building-during-wave.md) | Mandatory |
 | Warehouse management | [Outbound sorting](../warehousing/outbound-sorting.md) | Mandatory |
@@ -162,7 +162,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | On by default |
 | Warehouse management | Scale unit support for warehouse app work lists | Mandatory |
 | Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Mandatory |
-| Warehouse management | [Schedule work creation](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
+| Warehouse management | Schedule work creation | Mandatory |
 | Warehouse management | [System directed cluster picking](../warehousing/system-directed-cluster-pick.md) | Mandatory |
 | Warehouse management | System directed work sequencing | Mandatory |
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |

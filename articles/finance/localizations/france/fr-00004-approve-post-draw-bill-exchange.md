@@ -21,7 +21,7 @@ This article explains how to draw up, approve, and post a bill of exchange in Mi
 
 The following procedure was created using the demo data company FRSI. The functionality described is available for legal entities whose primary address is in France.
 
-To draw up, approve, and post a bill of exchange, follow these steps.
+To draw up, approve, and post a bill of exchange, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments \> Bill of exchange \> Draw bill of exchange journal**.
 1. In the list, mark the selected row.

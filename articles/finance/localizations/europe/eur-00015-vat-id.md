@@ -22,7 +22,7 @@ The following procedure walks you through how to set up VAT ID registration prer
 
 The procedure is intended for system administrators, and the information here applies to all European countries/regions. The procedure was created using the demo data company DEMF with Germany as the legal entity primary address. 
 
-To set up VAT ID registration prerequisites, follow these steps.
+To set up VAT ID registration prerequisites, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Global address book \> Registration types \> Registration types**.
 1. Select **New** to open the drop dialog.

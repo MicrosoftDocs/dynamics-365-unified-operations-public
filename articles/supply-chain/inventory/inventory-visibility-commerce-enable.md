@@ -57,7 +57,7 @@ Before you can use the features that this article describes, your system must me
 
 ## Enable adjustments in Supply Chain Management
 
-To enable adjustments in Supply Chain Management, follow these steps.
+To enable adjustments in Supply Chain Management, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management** \> **Inventory Visibility** \> **Inventory Visibility integration**.
@@ -65,7 +65,7 @@ To enable adjustments in Supply Chain Management, follow these steps.
 
 ## <a name="key-vault"></a>Create a key vault to hold the client secret for Inventory Visibility
 
-To create a key vault to hold the client secret for Inventory Visibility, follow these steps.
+To create a key vault to hold the client secret for Inventory Visibility, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Search for or select **Key vaults** to open the **Key vaults** page.
@@ -93,7 +93,7 @@ To create a key vault to hold the client secret for Inventory Visibility, follow
 
 ## <a name="app-registration"></a>Register a Microsoft Entra application to provide access to the key vault
 
-To register a Microsoft Entra application to enable Supply Chain Management and Commerce to access the key vault, follow these steps.
+To register a Microsoft Entra application to enable Supply Chain Management and Commerce to access the key vault, follow these steps:
 
 1. In the [Azure portal](https://portal.azure.com/), return to the home page.
 1. Search for or select **App registrations** to open the **App registrations** page.
@@ -129,7 +129,7 @@ After the application is registered, create an access policy to enable it to acc
 
 ## <a name="scm-vault-setup"></a>Set up Supply Chain Management to access the new key vault
 
-To set up Supply Chain Management to access the new key vault through the new application, follow these steps.
+To set up Supply Chain Management to access the new key vault through the new application, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Use the company picker to select the same company (legal entity ID) as your Dynamics 365 Commerce channel.
@@ -146,8 +146,19 @@ To set up Supply Chain Management to access the new key vault through the new ap
 
     - **Name** – Enter a name to identify the secret. You'll need this value later. Therefore, copy it, paste it into your temporary text file, and label it.
     - **Description** – Enter a short description.
-    - **Secret** – Enter a value in the form *vault:///\<SecretName\>*, where *\<SecretName\>* is the **Name** value that you copied when you created the secret for the key vault. (See step 10 in the [Create a key vault to hold the client secret for Inventory Visibility](#key-vault) section.) For example, if the name of your key vault secret is *commerce-iv-01-secret*, enter *vault:///commerce-iv-01-secret*.
+    - **Secret** – Enter a value using the following format:
+
+        *vault://\<KeyVaultName\>/\<SecretName\>/\<SecretVersion\>*
+
+        The *\<KeyVaultName\>* and *\<SecretVersion\>* attributes are optional. However, the *\<SecretName\>* attribute is required, and is the **Name** value that you copied when you created the secret for the key vault (see step 10 in the [Create a key vault to hold the client secret for Inventory Visibility](#key-vault) section). If the secret version isn't defined in the Key Vault secret key, the system retrieves the active secret that has the latest expiration date. In most cases, you can define a Key Vault secret key in the following format:
+
+        *vault://\<SecretName\>*
+
+        For example, if the name of your key vault secret is *commerce-iv-01-secret*, enter *vault://commerce-iv-01-secret*.
+
     - **Secret type** – Select *Manual*.
+
+    After filling in all the necessary fields, you can click the **Validate** button to verify your secret.
 
 1. On the **Secrets** FastTab, on the toolbar, select **Validate**. If you correctly entered all the values, you receive the following informational message: "Validation successful." If you receive an error message, double-check your settings, and try again.
 1. On the Action Pane, select **Save**. Be patient, because the save operation takes about two minutes.
@@ -156,7 +167,7 @@ For more information about the settings that are mentioned in this procedure, se
 
 ## Set up the integration between Inventory Visibility and Commerce
 
-To set up the integration between Inventory Visibility and Commerce, follow these steps.
+To set up the integration between Inventory Visibility and Commerce, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**.
@@ -171,7 +182,7 @@ To set up the integration between Inventory Visibility and Commerce, follow thes
 
 ## Run the global configuration job
 
-To run the global configuration job, follow these steps.
+To run the global configuration job, follow these steps:
 
 1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 1. In the list pane, select the record that's named *1110 Global configuration*.

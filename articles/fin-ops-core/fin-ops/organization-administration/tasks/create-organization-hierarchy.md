@@ -1,8 +1,8 @@
 --- 
 title: Create an organization hierarchy
 description: Learn how to create an organization hierarchy, including a step-by-step processes, including an outline on adding organizations to hierarchies. 
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak 
 ms.topic: how-to
 ms.date: 12/15/2020
 ms.custom:

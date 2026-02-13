@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 08/18/2025
+ms.date: 10/02/2025
 ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
@@ -28,7 +28,7 @@ For several other reports that can't be configured in the Print management frame
 
 The tables in the [Accounting documents](#accounting-documents) section of this article list the reports that this feature is applicable to. The tables show the name of the file component that must configure for each report in ER destinations. They also indicate whether the **File** destination can be configured for the report in Print management.
 
-To configure ER destinations for accounting documents, follow these steps.
+To configure ER destinations for accounting documents, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Feature management** workspace and enable the **Allow using the ER framework for post-processing of reports in Excel and Word formats** feature.
 1. Import the latest versions of these ER configurations from the Global configuration repository:
@@ -50,7 +50,7 @@ To configure ER destinations for accounting documents, follow these steps.
 
 > [!TIP]
 > - If you don't want to get a zip folder together with the generated document, create a line for the **Zip** component, and leave the **Settings** field blank. If you don't create this line, you will always get a zip folder together with the document, in addition to the configured ER destinations for that document.
-> - To show the file on the screen, select the **Convert to PDF** checkbox for the line. If you don't select this checkbox, make sure that you've installed Office online. For more information, see [Use the PDF conversion option](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md#ConvertToPDF).
+> - To show the file on the screen, select the **Convert to PDF** checkbox for the line. If you don't select this checkbox, make sure that you've installed Office online. For more information, see [Use the PDF conversion option](../../../fin-ops-core/dev-itpro/analytics/er-output-conversion-to-pdf.md).
 
 If you enable **File** destination setting to store the document as a file on SharePoint, each time that you generate a document, a new file will be created and stored.
 

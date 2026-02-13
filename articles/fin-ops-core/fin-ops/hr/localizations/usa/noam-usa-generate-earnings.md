@@ -34,7 +34,7 @@ Earnings that are automatically generated use settings for the position to ident
 > [!NOTE]
 > When you generate earnings for workers, you specify only the pay cycle and pay period to use. You don't specify the type of earning to generate. Recurring earnings, salary, leave, and schedule-based earnings are all created in the same process. Premium earnings, such as overtime premiums, and retroactive earnings are created separately.
 
-To automatically generate worker earnings, follow these steps.
+To automatically generate worker earnings, follow these steps:
 
 1. Click **Payroll** &gt; **Earnings statement processing** &gt; **Generate earnings**.
 
@@ -58,7 +58,7 @@ To automatically generate worker earnings, follow these steps.
 
 ## Manually enter earnings
 
-To manually enter earnings that are based on pieces and earnings for exceptions, such as sick time or vacation time, follow these steps.
+To manually enter earnings that are based on pieces and earnings for exceptions, such as sick time or vacation time, follow these steps:
 
 1. Click **Payroll** &gt; **Earnings statements** &gt; **All Earnings statements**.
 2. Open an earnings statement, and then click **Edit**.
@@ -82,7 +82,7 @@ You can manually enter premium earnings, or you can generate them by using an au
 
 If a worker should receive a premium for a pay period that the worker has no other earnings in, manually create an earnings statement for that worker, and then generate the premium earnings.
 
-To generate premium earnings for workers, follow these steps.
+To generate premium earnings for workers, follow these steps:
 
 1. Determine whether there are dependencies between any premiums that you offer. For example, if you offer a premium that is paid in addition to a shift differential, the additional premium can't be calculated unless the earnings for the shift differential are already on the earnings statement.
 2. Click **Payroll** &gt; **Periodic** &gt; **Earnings statement processing** &gt; **Generate premium earnings**.
@@ -136,7 +136,7 @@ To create overtime premiums, manually add earning lines that have a rate basis o
 > [!IMPORTANT]
 > To help guarantee that the calculations are correct, you must enter overtime lines after all other earnings for the pay period have been entered. If you change any earnings on the earnings statement, you must delete and re-create the overtime premium lines.
 
-To add overtime premiums for workers, follow these steps.
+To add overtime premiums for workers, follow these steps:
 
 1. Click **Payroll** &gt; **Earnings statements** &gt; **All Earnings statements**.
 2. Open an earnings statement, and then click **Edit**.
