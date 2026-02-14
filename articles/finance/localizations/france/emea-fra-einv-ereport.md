@@ -22,6 +22,10 @@ This article helps you get started with electronic invoicing and electronic repo
 > [!NOTE]
 > This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
 
+Watch the overview of the French electronic invoicing and electronic reporting implementation in Finance.
+
+> [!VIDEO 45223d9e-5e49-42dc-895c-7d9ccb08b17a]
+
 ## Prerequisites
 
 Before you start, make sure these prerequisites are in place:
