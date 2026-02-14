@@ -1,28 +1,27 @@
 ---
 title: Commerce runtime (CRT) services
-description: This article describes the Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality.
+description: Learn about Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/17/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: global
+ms.date: 02/13/2026
+ms.topic: how-to
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: global
 ms.search.validFrom: 2018-05-18
-ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+ms.custom:
+  - bap-template
 ---
 # Commerce runtime (CRT) services
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, you should customize CRT. Store Commerce calls CRT to request that it performs business logic. CRT processes the request and then sends the response back to point of sale. POS is like a thin client, all the business logic should be done in CRT.
+This article explains Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality in Microsoft Dynamics 365 Commerce.
 
-A CRT service is a group of requests/responses. Anytime that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
+Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, customize CRT. Store Commerce calls CRT to request that it performs business logic. CRT processes the request and then sends the response back to point of sale. POS is like a thin client where the business logic should be done in CRT.
 
-This article shows some important requests/responses that you can customize for your business scenario.
+A CRT service is a group of requests and responses. Anytime that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
+
+This article shows some important requests and responses that you can customize for your business scenario.
 
 There are three main layers in CRT:
 
@@ -30,22 +29,22 @@ There are three main layers in CRT:
 - Workflow
 - Data Access
 
-All CRT customization for business logic can be done in Services, Workflow or Data Access layers, other core layers that are required for CRT to work are runtime, authentication, and data access managers and you should avoid any customization on these layers.
+You can customize all CRT business logic in the Services, Workflow, or Data Access layers. Other core layers that are required for CRT to work are runtime, authentication, and data access managers. Avoid any customization on these layers.
 
 > [!NOTE]
 > Detailed information about all CRT classes can be found in the Retail SDK, which is found at RetailSDK\Documents\CommerceRuntimeMessages.chm.
 
 ## Overall flow
 
-The overall flow looks like this:
+The overall flow looks like this pattern:
 
 CRT service request \< \> Zero or more workflow requests \< \> Zero or more data access requests
 
-For example, multiple workflow and data access requests are called to perform the **Create sales order** service request.
+For example, the **Create sales order** service request uses multiple workflow and data access requests.
 
 ## CRT services
 
-Each CRT service contains one or more requests/responses. For example, the Customer service in CRT contains all the customer-related requests/responses. Each request/response is run in a different flow.
+Each CRT service contains one or more requests and responses. For example, the Customer service in CRT contains all the customer-related requests and responses. Each request and response runs in a different flow.
 
 ### Default CRT services
 
@@ -67,7 +66,7 @@ For more information about each service, see the CRT request/response document i
 | GiftCardService            | This service provides information about internal activities that are related to gift cards, such as issuing the gift card, getting the balance, and adding value. |
 | LoyaltyService             | This service implements a program that rewards repeat customers. |
 | NotificationService        | This service maintains the POS notification service. |
-| PaymentService             | This service lets you connect your online store to a payment service to provide credit card authorization and use preconfigured payment processing. You can also extend the payment service to add additional third-party payment processors. |
+| PaymentService             | This service lets you connect your online store to a payment service to provide credit card authorization and use preconfigured payment processing. You can also extend the payment service to add more partner payment processors. |
 | ProductService             | This service gets product-related and variant-related information. |
 | ProductsService            | This service gets information that is related to products and variants. |
 | PricingService             | This service gets the price of an item in real time. The price is adjusted, based on the base price and any applicable discounts. Discounts can be customized for each retailer. |
@@ -80,27 +79,27 @@ For more information about each service, see the CRT request/response document i
 | ShippingService            | This service calculates shipping costs and determines shipping options for the current order. |
 | StockCountService          | This service creates, commits, and synchronizes stock journals. |
 | StoreOperationService      | This service maintains store-related operation services, such as Save and Drop, Tender declaration, and Search journal. |
-| TaxService                 | This service calculates the sales tax for the current order. You can use sales tax information provided, or from a third-party sales tax service. |
+| TaxService                 | This service calculates the sales tax for the current order. You can use sales tax information provided, or from a partner sales tax service. |
 | TotalingService            | This service calculates the totals on the sales transactions and sales lines. |
 
 For extension scenarios, you can add CRT triggers, create new services, and override any of the requests in the service class. For information about how to extend and understand CRT extension patterns, see [Commerce runtime (CRT) extensibility](commerce-runtime-extensibility.md).
 
 > [!NOTE]
-> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
+> CRT extension code shouldn't refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes aren't backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
 ### AddressService
 
-The Address service supports the following requests/responses for various extension scenarios.
+The Address service supports the following requests and responses for various extension scenarios.
 
 | Request                            | Purpose                                                                                         |
 |------------------------------------|-------------------------------------------------------------------------------------------------|
-| GetCountryRegionsServiceRequest    | This request gets the list of countries and regions that are supported.                         |
-| GetStateProvincesServiceRequest    | This request gets the list of states or provinces that are supported for the country or region. |
+| GetCountryRegionsServiceRequest    | This request gets the list of countries/regions that are supported.                         |
+| GetStateProvincesServiceRequest    | This request gets the list of states or provinces that are supported for the country/region. |
 | GetCitiesServiceRequest            | This request gets the list of cities that are supported for the state or region.                |
 | GetDistrictServiceRequest          | This request gets the list of districts that are supported.                                     |
 | GetZipCodesServiceRequest          | This request gets the list of ZIP Codes that are supported.                                     |
 | GetFromZipPostalCodeServiceRequest | This request gets the list of postal codes supported.                                           |
-| GetAddressFormattingServiceRequest | This request gets the address format for the specified country or region.                       |
+| GetAddressFormattingServiceRequest | This request gets the address format for the specified country/region.                       |
 
 ### BarcodeService
 
@@ -112,11 +111,12 @@ The Address service supports the following requests/responses for various extens
 
 ### CartService
 
-It's possible to generate extensions that can cause parallel execution in an additional thread, as shown in the following example:
+You can create extensions that enable parallel execution in another thread, as shown in the following example:
+
 ```Console
 cartService.Execute(createRequest(calculateSalesTransactionServiceRequest, CalculationModes.Totals));
 ```
-The example above could generate high CPU usage in a system due to concurrent access to both the insert and **FindEntry** functions of the dictionary due to parallel execution.
+The preceding example can cause high CPU usage in a system because parallel execution leads to concurrent access to both the insert and **FindEntry** functions of the dictionary.
 
 | Request                                                     | Purpose                                                                                                    |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ The example above could generate high CPU usage in a system due to concurrent ac
 | GetCustomerBalanceServiceRequest             | This request gets the balance of the customer's account.                 |
 | GetOrderHistoryServiceRequest                | This request gets the customer's order history.                          |
 | GetPurchaseHistoryServiceRequest             | This request gets the history of the customer's recent purchases.        |
-| CustomerSearchByFieldsServiceRequest         | This request is run when you search customer by using fields such as name, phone number etc. (hint search). |
+| CustomerSearchByFieldsServiceRequest         | This request is run when you search customer by using fields such as name or phone number. |
 | GetCustomerSearchFieldsServiceRequest        | This request gets the list of customer search fields (hint fields).      |
 
 ### PricingService
@@ -166,7 +166,7 @@ The example above could generate high CPU usage in a system due to concurrent ac
 
 | Request                     | Purpose                                                                                                                                                                               |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ProductSearchServiceRequest | This request gets the product list, based on the search text from the POS. (This is an old request. For customization, use the new **SearchProductsServiceRequest** request instead.) |
+| ProductSearchServiceRequest | This request gets the product list, based on the search text from the POS. (This request is deprecated. For customization, use the new **SearchProductsServiceRequest** request instead.) |
 | GetProductServiceRequest    | This request gets the product, based on the product ID.                                                                                                                               |
 | GetProductRefinersRequest   | This request retrieves the product refiner values.                                                                                                                                    |
 
@@ -174,8 +174,8 @@ The example above could generate high CPU usage in a system due to concurrent ac
 
 | Request                          | Purpose                                                                      |
 |----------------------------------|------------------------------------------------------------------------------|
-| GetProductsServiceRequest        | This request gets the products, based on the products IDs that are provided. |
-| GetVariantProductsServiceRequest | This request gets specific variations of master type products.               |
+| GetProductsServiceRequest        | This request gets the products, based on the products IDs that you provide. |
+| GetVariantProductsServiceRequest | This request gets specific variations of product masters.               |
 
 ### ReasonCodeService
 
@@ -185,7 +185,7 @@ The example above could generate high CPU usage in a system due to concurrent ac
 | CalculateRequiredReasonCodesServiceRequest                          | This request calculates the required reason code for the workflow or POS operation.                         |
 | CalculateCartRequiredReasonCodesServiceRequest                      | This request calculates the required reason code for the cart workflow.                                     |
 | CalculateDropAndDeclareTransactionRequiredReasonCodesServiceRequest | This request calculates the required reason code for the drop and tender declaration transaction.           |
-| CalculateNonSalesTransactionRequiredReasonCodesServiceRequest       | This request calculates the required reason code for the non-sales transaction, such as tender declaration. |
+| CalculateNonSalesTransactionRequiredReasonCodesServiceRequest       | This request calculates the required reason code for the nonsales transaction, such as tender declaration. |
 | GetReturnOrderReasonCodesServiceRequest                             | This request gets the required reason code for the return transaction.                                      |
 | ValidateReasonCodeLineForUpdateServiceRequest                       | This request validates the reason code lines that are added during the save cart request.                   |
 
@@ -195,14 +195,14 @@ The example above could generate high CPU usage in a system due to concurrent ac
 |---------------------------------------|---------------------------------------------------------------------------------------------------|
 | GetReceiptServiceRequest              | This request gets the receipt type and generates the receipt data, based on the receipt type.     |
 | GetCustomReceiptFieldServiceRequest   | Override this request, and add custom logic for your custom fields that are added in the receipt. |
-| GetEmailReceiptServiceRequest         | This request gets the formatted receipts that will be used for print and email scenarios.         |
+| GetEmailReceiptServiceRequest         | This request gets the formatted receipts that are used for print and email scenarios.         |
 | PopulateTaxSummaryIndiaServiceRequest | This request populates the tax summary for India transaction.                                     |
 
 ### SearchProductsService
 
 | Request                      | Purpose                                                         |
 |------------------------------|-----------------------------------------------------------------|
-| SearchProductsServiceRequest | This request is run when you search for a product from the POS. |
+| SearchProductsServiceRequest | This request runs when you search for a product from the POS. |
 
 ### TaxService
 
@@ -210,19 +210,19 @@ The example above could generate high CPU usage in a system due to concurrent ac
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CalculateTaxServiceRequest   | This request calculates taxes on the transaction.                                                                                                                                                  |
 | AssignTaxCodesServiceRequest | This request assigns tax codes on the transaction's taxable items before the tax calculation. The default tax calculation handler of the **CalculateTaxServiceRequest** request uses this message. |
-| PopulateTaxRatesRequest      | This request populates tax rates for the recalled transaction. No tax percentage information is persisted for tax lines. This message handler restores the information.                            |
+| PopulateTaxRatesRequest      | This request populates tax rates for the recalled transaction. No tax percentage information persists for tax lines. This message handler restores the information.                            |
 
 ## Workflow layer
 
-On top of the Services layer is the Workflow layer. A workflow is a collection of services and business logic that together define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, do validation, check the inventory quantity, calculate shipping, calculate tax, and calculate discounts. You can customize the existing workflows, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
+On top of the Services layer is the Workflow layer. A workflow is a collection of services and business logic that together define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, do validation, check the inventory quantity, calculate shipping, calculate tax, and calculate discounts. You can customize the existing workflows, or you can create new workflows. You can even use a workflow to connect to a partner system as part of your business processes.
 
-Just like services, workflows use the request/response pattern. The request object inherited from the base CRT [Request](/dynamicsax-2012/appuser-itpro/request-class-microsoft-dynamics-commerce-runtime-messages) class. The response object inherited from the base CRT [Response](/dynamicsax-2012/appuser-itpro/response-class-microsoft-dynamics-commerce-runtime-messages) class. A workflow also has a request handler class that extends the [WorkflowRequestHandler<TRequest, TResponse>](/dynamicsax-2012/appuser-itpro/workflowrequesthandler-trequest-tresponse-class-microsoft-dynamics-commerce-runtime-workflow) class. To create a workflow, you create a request class and a response class, and you then create a request handler class that contains the business logic for the workflow.
+Just like services, workflows use the request/response pattern. The request object inherits from the base CRT [Request](/dynamicsax-2012/appuser-itpro/request-class-microsoft-dynamics-commerce-runtime-messages) class. The response object inherits from the base CRT [Response](/dynamicsax-2012/appuser-itpro/response-class-microsoft-dynamics-commerce-runtime-messages) class. A workflow also has a request handler class that extends the [WorkflowRequestHandler<TRequest, TResponse>](/dynamicsax-2012/appuser-itpro/workflowrequesthandler-trequest-tresponse-class-microsoft-dynamics-commerce-runtime-workflow) class. To create a workflow, you create a request class and a response class, and you then create a request handler class that contains the business logic for the workflow.
 
-For example, when you create a cash-and-carry transaction or a customer order, many different steps or workflows are completed before the order is created. One of the workflow steps in the order process is the Save cart request. The Save cart request workflow is responsible for saving any changes that are made to the cart from the POS. For example, when you add an item to the cart, change the quantity, and so on, anything that you do in the POS will cause a call to the SaveCart to save the changes to the POS and database.
+For example, when you create a cash-and-carry transaction or a customer order, many different steps or workflows are completed before the order is created. One of the workflow steps in the order process is the Save cart request. The Save cart request workflow is responsible for saving any changes that are made to the cart from the POS. For example, when you add an item to the cart, change the quantity, and so on, anything that you do in the POS causes a call to the SaveCart to save the changes to the POS and database.
 
 ### Default workflows and handlers
 
-The following table lists the default workflow requests and response. CRT services call the workflows request and response based on the operation you perform in POS. You can customize any of these workflows request and response according to your business scenario. 
+The following table lists the default workflow requests and responses. CRT services call the workflow requests and responses based on the operation you perform in POS. You can customize any of these workflow requests and responses according to your business scenario. 
 
 | Request                           | Handler                                 | Purpose                                                                                                                    |
 |-----------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -257,6 +257,5 @@ The following table lists the default workflow requests and response. CRT servic
 | UpdateCommissionSalesGroupRequest | UpdateCommissionSalesGroupHandler       | This request encapsulates a request for updating the sales representative on the cart or the cart line.                    |
 | UploadOrderRequest                | UploadOrderRequestHandler               | This request uploads the sales order.                                                                                      |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | This request validates the cart for checkout.                                                                              |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
