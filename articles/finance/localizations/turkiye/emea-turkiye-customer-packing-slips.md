@@ -22,7 +22,6 @@ Before you begin, you must meet the following prerequisites:
 
 - Your legal entity's primary address must be in Türkiye.
 - The Electronic reporting (ER) configurations must be imported from Microsoft Dynamics Lifecycle Services (LCS) or Dataverse.
-- A posted packing slip must exist for the sales order.
 - ER destinations must be configured if you want XML files to be automatically sent to file locations, email, SharePoint, or other channels.
 
 The following ER configurations are required to generate UBL-TR packing slip documents.
@@ -32,6 +31,8 @@ The following ER configurations are required to generate UBL-TR packing slip doc
 | 1 | Invoice model | Data model | The shared data model that standardizes the structure of sales documents. It acts as the base model for generating packing slip XML output. |
 | 2 | Packing slip model mapping | Model mapping | Links the Invoice data model to application data sources related to packing slips. |
 | 3 | UBL Packing slip (TR) | Format | Generates Turkish electronic packing slip XML documents in the UBL-TR DespatchAdvice format. This is the final output format used for e-packing slips. |
+
+For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 ## Configure parameters
 
@@ -43,8 +44,6 @@ To reference the imported ER format configurations, follow these steps:
 
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the **UBL Packing slip (TR)** in Packing slip parameter.
-
-For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Configure legal entity data
 
