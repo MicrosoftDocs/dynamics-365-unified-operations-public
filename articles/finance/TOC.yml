@@ -4402,6 +4402,8 @@
                       href: localizations/turkiye/emea-turkiye-prorated-depreciation.md
                     - name: Export of customer electronic invoices
                       href: localizations/turkiye/emea-turkiye-customer-electronic-invoices.md
+                    - name: Export of customer electronic packing slips
+                      href: localizations/turkiye/emea-turkiye-customer-packing-slips.md
                     - name: Use checks and promissory notes
                       href: localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md                      
                     - name: Generate e-Ledger
