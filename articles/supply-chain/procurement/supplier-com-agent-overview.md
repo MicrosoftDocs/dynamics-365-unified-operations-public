@@ -39,6 +39,19 @@ The agent can determine what each email is about (for example, whether it's a pu
 
 Learn more in [Review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md).
 
+Specifically, the agent will help on the following scenarios:
+- Increase/decrease order quantity
+- Cancel order quantity/cancel line
+- Price increase/decrease
+- Updating confirmed delivery date
+- Updating confirmed shipping date
+
+The agent currently does not support the following scenarios:
+- Splitting a line into multiple deliveries
+- Changing site for delivery receipt for specific line
+- Changing vendor for a specific line
+- Changing vendor for the purchase order
+
 ## Cost
 
 The Supplier Communications Agent incurs charges based on the number of Microsoft Copilot Studio credits you use when running it. The agent has a fixed cost per run and a variable cost that depends on the resources it consumes.
