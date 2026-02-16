@@ -1,10 +1,10 @@
 ---
-title: Use fixed asset revaluation groups
-description: Learn how to use fixed asset revaluation groups for Türkiye.
+title: Perform fixed asset revaluation
+description: Learn how to perform fixed asset revaluation for Türkiye.
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 02/02/2026
+ms.date: 02/16/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Türkiye
@@ -12,15 +12,13 @@ ms.search.validFrom: 2022-11-03
 ms.dyn365.ops.version: AX 10.0.45
 ---
 
-# Use fixed asset revaluation groups
+# Perform fixed asset revaluation
 [!INCLUDE[banner](../../includes/banner.md)]
 
-This article provides information about how to use fixed asset revaluation groups in Dynamics 365 Finance for Türkiye.
+This article explains how to perform fixed asset revaluation in Microsoft Dynamics 365 Finance for Türkiye.
 
-Revaluation groups are used to set up revaluation conditions for fixed assets.  
-For example, a revaluation group can store a factor or a revaluation date.  
-To revalue a fixed asset, you must specify the revaluation group on the **Books** page.  
-Values from the revaluation group are used by the fixed asset journal for revaluation proposals and for value adjustments of revaluation transactions.  
+Fixed asset revaluation can be performed by using predefined revaluation groups or by specifying revaluation parameters directly in the fixed asset book or revaluation journal.
+The article covers the use of revaluation groups, posting profile configuration, revaluation proposals, and how to review revaluation results in both the Fixed assets module.
 
 The following example shows how the factor affects the revalued amount and the resulting adjustment transaction:  
 
@@ -35,6 +33,10 @@ In this example:
 - If the factor is **0.50**, the revalued amount becomes 50,000 TRY, and the system posts a **credit** adjustment of 50,000 TRY.  
 
 ## Create a revaluation group  
+
+This section provides information about how to create a revaluation group.
+
+Revaluation groups are optional and are used to standardize and reuse revaluation parameters such as factor and revaluation date across multiple fixed assets.
 
 Follow these steps to configure a revaluation group:
 
