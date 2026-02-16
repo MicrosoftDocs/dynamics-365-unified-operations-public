@@ -1,17 +1,17 @@
 ---
-title: Export customer electronic packing slips
+title: Export of customer electronic packing slips
 description: Learn how to configure and export customer electronic packing slips for Türkiye in Microsoft Dynamics 365 Finance by using UBL-TR format and Electronic reporting (ER) configurations.
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 02/02/2026
+ms.date: 02/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2026-01-19
 ms.dyn365.ops.version: AX 10.0.45
 ---
 
-# Export customer electronic packing slips
+# Export of customer electronic packing slips
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
