@@ -34,7 +34,23 @@ As mentioned in the introduction, Conditional Access requires that your mobile d
 | **Windows**  | The user must have a work account.         |
 | **Android**  | Microsoft Authenticator must be installed. |
 | **iOS**      | Microsoft Authenticator must be installed. |
+#### Set up Microsoft Authenticator
+For iOS:
 
+ - Install **Microsoft Authenticator** from the App Store.
+ - Open the app and select **the menu button(top-left corner)**.
+ - Select **Settings**.
+ - Select **Device registration**.
+ - On the setup page, enteryour email or organizational account and select **Register device**.
+
+ For Android:
+
+ - Install **Microsoft Authenticator** from the App Store.
+ - Open the app and select **the menu button(top-right corner)**.
+ - Select **Settings**.
+ - Select **Device registration**.
+ - On the setup page, enteryour email or organizational account and select **Register device**.
+ 
 ## Configure your Microsoft Entra ID app registration to support Conditional Access
 
 To use Conditional Access, you must manually set up an app registration in Microsoft Entra ID (instead of using the global Microsoft Entra ID application). The application registration enables the mobile app to authenticate and connect to your Supply Chain Management environment. When you're setting up the application registration, you must be sure to include the new signature hash for Android devices (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`). Even if you already use a manual app registration, you might need to update it to include this new signature hash, so you should check. Detailed, updated instructions are provided in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service).
