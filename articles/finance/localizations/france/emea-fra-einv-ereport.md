@@ -124,6 +124,10 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
+Watch the overview of the Edicom credentials configuration in Finance.
+
+> [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
+
 ## Configure electronic document parameters
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
