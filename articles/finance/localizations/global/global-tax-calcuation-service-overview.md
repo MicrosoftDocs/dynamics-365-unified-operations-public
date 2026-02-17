@@ -39,11 +39,19 @@ Import and set up your Tax Calculation configuration by using the version that m
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
+| 10.0.47         | Tax Calculation Configuration 50.78.269<br> This configuration is also compatible with all lower supported versions.|
 | 10.0.46         | Tax Calculation Configuration 47.73.265 |
 | 10.0.45         | Tax Calculation Configuration 47.73.265 |
-| 10.0.44         | Tax Calculation Configuration 47.73.265 |
-| 10.0.43         | Tax Calculation Configuration 47.73.265 |
 
+> [!IMPORTANT] 
+> To use **Tax Calculation Configuration 50.78.269**, you will need to synchronize **Tax measure types**.
+> For this:
+> 1.	Open **Globalization studio** workspace, click **Electronic reporting** tile, click **Tax configurations** tile.
+> 2.	On **Configurations** page, select **Configurations**.
+> 3.	Under **Advanced settings** group, select **Tax measure types**.
+> 4.	On **Tax Measure types** page, click **Synchronize** button.
+
+ 
 ## Data flow
 
 Here's an outline of the data flow process for Tax Calculation.
