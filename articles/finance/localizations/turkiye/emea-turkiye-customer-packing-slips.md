@@ -4,7 +4,7 @@ description: Learn how to configure and export customer electronic packing slips
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: article
-ms.date: 02/16/2026
+ms.date: 02/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2026-01-19
@@ -18,11 +18,11 @@ ms.dyn365.ops.version: AX 10.0.45
 This article describes how to configure and use **electronic packing slips (e-packing slips)** in Microsoft Dynamics 365 Finance for Türkiye.  
 Microsoft Dynamics 365 Finance supports the generation of electronic packing slip XML file in the required **UBL-TR DespatchAdvice** format.
 
-Before you begin, you must meet the following prerequisites:
+Before you begin, make sure you meet the following prerequisites:
 
-- Your legal entity's primary address must be in Türkiye.
-- The Electronic reporting (ER) configurations must be imported from Microsoft Dynamics Lifecycle Services (LCS) or Dataverse.
-- ER destinations must be configured if you want XML files to be automatically sent to file locations, email, SharePoint, or other channels.
+- Your legal entity's primary address is in Türkiye.
+- You import the Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS) or Dataverse.
+- You configure ER destinations if you want XML files to be automatically sent to file locations, email, SharePoint, or other channels.
 
 The following ER configurations are required to generate UBL-TR packing slip documents.
 
@@ -43,32 +43,32 @@ This section describes how to configure the mandatory setup for generating UBL-T
 To reference the imported ER format configurations, follow these steps:
 
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the **UBL Packing slip (TR)** in Packing slip parameter.
+1. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the **UBL Packing slip (TR)** in **Packing slip parameter**.
 
 ### Configure legal entity data
 
 To configure the legal entity for e-packing slip generation, follow these steps:
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**, and select a legal entity.
-2. On the **Addresses** FastTab, add a valid primary address for the legal entity.
+1. On the **Addresses** FastTab, add a valid primary address for the legal entity.
 
    > [!NOTE]  
-   > Unlike electronic invoices, electronic packing slips do not require bank information or IBAN to be configured.
+   > Unlike electronic invoices, electronic packing slips don't require bank information or IBAN to be configured.
 
 ### Configure customer account data
 
-This section provides information about how to configure customer accounts for customer e-packing slips.
+This section explains how to configure customer accounts for customer e-packing slips.
 
 To configure customer account data, follow these steps.  
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**, and select a customer.
-2. On the **Addresses** FastTab, add a valid address for the customer.
-3. Specify the VAT ID of the customer. Learn more in [Set up VAT IDs of customers and vendors](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md#set-up-vat-ids-of-customers-and-vendors).
-4. In the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
-5. Set the **eInvoice attachment** option to **Yes** to attach an XML file to the electronic packing slip, if an attachment is necessary.
+1. On the **Addresses** FastTab, add a valid address for the customer.
+1. Specify the VAT ID of the customer. For more information, see [Set up VAT IDs of customers and vendors](../../localizations/turkiye/emea-turkiye-set-up-legal-entity.md#set-up-vat-ids-of-customers-and-vendors).
+1. In the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
+1. Set the **eInvoice attachment** option to **Yes** to attach an XML file to the electronic packing slip, if an attachment is necessary.
 
    > [!NOTE]  
-   > After **Registration IDs** are defined for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
+   > After you define **Registration IDs** for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
    > If needed, you can also select the value manually.
    
    > [!NOTE]  
@@ -76,15 +76,15 @@ To configure customer account data, follow these steps.
 
 ### Set up unit of measure mappings for e-packing slips
 
-This section explains how to set up unit of measure mappings in Finance so that internal unit codes (such as *EA*, *KG*, or *M*), are correctly converted to UN/ECE unit codes (such as *C62*, *KGM*, or *MTR*).  
+This section explains how to set up unit of measure mappings in Finance so that internal unit codes (such as *EA*, *KG*, or *M*) are correctly converted to UN/ECE unit codes (such as *C62*, *KGM*, or *MTR*).  
 
 To configure the mappings, follow these steps:
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit, and then select **External codes**.
-1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter the **internal unit ID** (for example, *EA* for "each") that represents the unit used in Finance.
-1. In the **Standard code** column, select the checkbox.
-1. In the **Value** section, in the **Value** field, enter the **UN/ECE unit code** (for example, *C62* for "each").  
+1. On **External codes**, in the **Overview** section, in the **Code** column, enter the internal unit ID (for example, *EA* for "each") that represents the unit used in Finance.
+1. Select the checkbox in the **Standard code** column.
+1. In the **Value** section, enter the UN/ECE unit code (for example, *C62* for "each") in the **Value** field.  
    This value is used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
    > [!NOTE]
@@ -98,29 +98,29 @@ To configure the mappings, follow these steps:
    > In this example, the internal unit **EA** (each) defined in Finance is mapped to the international unit code **C62**, which is then written into the XML as the `unitCode` attribute.
    
    > [!TIP]
-   > If no specific units of measure are defined, the default unit **EA** (each) is used in the UBL-TR e-packing slip XML.
+   > If you don't define specific units of measure, the default unit **EA** (each) is used in the UBL-TR e-packing slip XML.
 
-   ![Units of measure configuration.](../media/emea-turkiye-unit-code-mapping.png)
+   :::image type="content" source="../media/emea-turkiye-unit-code-mapping.png" alt-text="Screenshot of the Units of measure configuration page showing external code mappings.":::
 
 ## Configure transportation details for electronic packing slips
 
-For electronic packing slips in Türkiye, transportation-related information must be specified on the sales order.  
-This information is required to populate the vehicle, driver, and carrier sections of the UBL-TR DespatchAdvice XML.
+For electronic packing slips in Türkiye, you must specify transportation-related information on the sales order.  
+This information populates the vehicle, driver, and carrier sections of the UBL-TR DespatchAdvice XML.
 
-Transportation details are maintained at the sales order level and must be completed before the packing slip is posted.
+Maintain transportation details at the sales order level and complete them before posting the packing slip.
 
 ### Define transportation details on a sales order
 
 To define transportation information for a sales order, follow these steps:
 
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
-2. Select a sales order.
-3. On the Action Pane, select **Pick and pack**.
-4. Select **Transportation details**.
+1. Select a sales order.
+1. On the Action Pane, select **Pick and pack**.
+1. Select **Transportation details**.
 
-Use the **Transportation details** page to enter carrier, vehicle, and driver information that is required for electronic packing slip generation.
+Use the **Transportation details** page to enter carrier, vehicle, and driver information that's required for electronic packing slip generation.
 
-   ![Transportation details.](../media/emea-turkiye-transportation-details.png)
+   :::image type="content" source="../media/emea-turkiye-transportation-details.png" alt-text="Screenshot of the Transportation details page showing carrier, vehicle, and driver fields.":::
 
 ### Carrier information
 
@@ -134,7 +134,7 @@ The following table describes the carrier-related fields on the **Transportation
 | Carrier | Identifies the transport company |
 
    > [!NOTE]  
-   > Carrier information is mapped to the **CarrierParty** section of the UBL-TR DespatchAdvice XML and is mandatory for e-Packing slip documents in Türkiye.
+   > Carrier information is mandatory for e-Packing slip documents in Türkiye and maps to the **CarrierParty** section of the UBL-TR DespatchAdvice XML.
 
 ### Vehicle and trailer information
 
@@ -147,7 +147,7 @@ The following table describes vehicle-related fields.
 | Registration number | Specifies vehicle plate number |
 | Trailer registration number | Specifies trailer plate number |
 
-This information is mapped to the **TransportMeans** elements in the UBL-TR DespatchAdvice XML.
+This information maps to the **TransportMeans** elements in the UBL-TR DespatchAdvice XML.
 
    > [!NOTE]  
    > If no trailer is used, only the vehicle registration number is required.
@@ -163,59 +163,59 @@ The following table describes driver-related fields.
 | Driver | Reference to a predefined driver record |
 | Driver name | Full name of the driver |
 
-The driver name is included in the electronic packing slip XML as required by Turkish regulations.
+Turkish regulations require including the driver name in the electronic packing slip XML.
 
 ### Effect on electronic packing slip generation
 
-Transportation details are read from the sales order when the packing slip is posted.  
-The values are then passed to the Electronic Reporting (ER) format during XML generation.
+Transportation details come from the sales order when you post the packing slip.  
+You pass the values to the Electronic Reporting (ER) format during XML generation.
 
-If required transportation information is missing or incomplete, the generated UBL-TR DespatchAdvice document may fail validation during submission.
+If required transportation information is missing or incomplete, the generated UBL-TR DespatchAdvice document might fail validation during submission.
 
 ## Generate electronic packing slips
 
-Electronic packing slips can be generated after a packing slip is posted for a sales order.
+You can generate electronic packing slips after posting a packing slip for a sales order.
 
-To generate an electronic packing slip XML file, follow these steps.
+To generate an electronic packing slip XML file, follow these steps:
 
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
-2. Select a sales order that has a posted packing slip.
-3. Select **Pick and pack** Tab.
-4. On the Action Pane, select **Packing slip journal**.
-5. Select a packing slip journal.
-6. Select **Preview/Print**.
-7. Select **Original preview**.
+1. Select a sales order that has a posted packing slip.
+1. Select the **Pick and pack** tab.
+1. On the Action Pane, select **Packing slip journal**.
+1. Select a packing slip journal.
+1. Select **Preview/Print**.
+1. Select **Original preview**.
 
-If ER destinations are configured, the XML will automatically be delivered to the defined destination.  
-If no destination is configured, the XML output will be stored in the **Electronic reporting jobs** page.
+If you configure ER destinations, the XML automatically goes to the defined destination.  
+If you don't configure a destination, the **Electronic reporting jobs** page stores the XML output.
 
-   ![Generate e-packing slip.](../media/emea-turkiye-generate-packing-slip.png)
+   :::image type="content" source="../media/emea-turkiye-generate-packing-slip.png" alt-text="Screenshot of the Packing slip journal page showing the Preview/Print menu options.":::
 
 ## View electronic packing slips
 
-If ER destinations are defined for electronic packing slip formats, the output files that are generated are sent to a related file destination configured for the ER destination.
-Learn about how to configure destinations for generated electronic documents in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+If you define ER destinations for electronic packing slip formats, the system sends the generated output files to a related file destination that you configure for the ER destination.
+For more information about configuring destinations for generated electronic documents, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-If no Electronic reporting (ER) destinations are defined for electronic packing slip formats, output files for electronic packing slips are generated on the Electronic reporting jobs page.
+If you don't define Electronic reporting (ER) destinations for electronic packing slip formats, the system generates output files for electronic packing slips on the Electronic reporting jobs page.
 
-To view these e-packing slip files, follow these steps.
+To view these e-packing slip files, follow these steps:
 
 1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**.
 1. Select a job, and then select **Show files**.
 1. Select **Open** to download the file that contains the electronic packing slip.
 
-   ![View e-packing slip.](../media/emea-turkiye-view-packing-slip.png)
+   :::image type="content" source="../media/emea-turkiye-view-packing-slip.png" alt-text="Screenshot of the Electronic reporting jobs page showing the Show files option.":::
 
-If generation of the electronic packing slip fails because of errors, to view more details about the error message select **Show log** \> **Message details**.
+If generation of the electronic packing slip fails because of errors, you can view more details about the error message by selecting **Show log** \> **Message details**.
 
-   ![Message details.](../media/emea-turkiye-message-details.png)
+   :::image type="content" source="../media/emea-turkiye-message-details.png" alt-text="Screenshot of the Message details dialog showing error information.":::
 
 ## Send electronic packing slips to ER destinations
 
-You can set up ER destinations for electronic packing slip formats. In this case, output XML files that contain electronic packing slips are automatically sent to the defined destinations immediately after the packing slips are posted.
+You can set up ER destinations for electronic packing slip formats. When you set up these destinations, the system automatically sends output XML files that contain electronic packing slips to the defined destinations immediately after the packing slips are posted.
 
-When you post the packing slips, you must turn on the **Print packing slip** parameter.
+When you post the packing slips, turn on the **Print packing slip** parameter.
 
-Learn more about ER destinations in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+For more information, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
