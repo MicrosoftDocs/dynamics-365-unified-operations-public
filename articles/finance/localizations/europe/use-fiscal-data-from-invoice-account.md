@@ -27,5 +27,6 @@ To enable this functionality for purchase orders, sales orders, and free text in
 -	**Always** - The information is updated from the invoice account.
 -	**Ask** - The user is prompted to specify whether the information should be updated from the invoice account or from the vendor or customer account. If the user selects **Yes**, the information is updated from the invoice account; otherwise the default is to update information from the vendor or customer account.
 
+This functionality is managed by a feature named Enable defaulting of fiscal data from invoice account. This feature needs to be enabled to be able to see and configure the parameters in this page. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
