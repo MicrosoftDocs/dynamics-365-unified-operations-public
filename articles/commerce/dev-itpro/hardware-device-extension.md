@@ -1,22 +1,22 @@
 ---
 title: Integrate the POS with a new hardware device and generate the extension installer
-description: This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer.
+description: Learn how to integrate the point of sale (POS) with a new hardware device and generate the extension installer in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 07/27/2020
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2019-08-2019
-ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
+ms.custom:
+  - bap-template
 ---
 
 # Integrate the POS with a new hardware device and generate the extension installer
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer. 
+This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer in Microsoft Dynamics 365 Commerce. 
 
 ## Hardware Station overview
 
