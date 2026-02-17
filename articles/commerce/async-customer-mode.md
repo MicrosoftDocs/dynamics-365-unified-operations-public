@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Asynchronous customer creation mode
 description: Learn about the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
@@ -20,7 +18,7 @@ ms.custom:
 
 This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 
-In Commerce, you can create customers in two modes: synchronous (or sync) and asynchronous (or async). By default, you create customers synchronously. In other words, you create customers in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. If many concurrent customer creation calls are made, performance can be affected because the process generates Commerce Data Exchange Real-time Service calls to Commerce headquarters. Learn more in [Commerce Data Exchange and commerce channel communications](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service).
+In Commerce, you can create customers in two modes: synchronous (or sync) and asynchronous (or async). By default, you create customers synchronously. In other words, you create customers in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. If many concurrent customer creation calls are made, performance can be affected because the process generates Commerce Data Exchange Real-time Service calls to Commerce headquarters. Learn more in [Commerce Data Exchange and commerce channel communications](dev-itpro/define-retail-channel-communications-cdx.md#real-time-service).
 
 If you set the **Create customer in async mode** option to **Yes** in the store's functionality profile (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), Real-time Service calls aren't used to create customer records in the channel database. The async customer creation mode doesn't affect the performance of Commerce headquarters. You assign a temporary globally unique identifier (GUID) to every new async customer record and use it as the customer account ID. POS users don't see this GUID. Instead, those users see **Pending sync** as the customer account ID.
 
