@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/02/2025
+ms.date: 02/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -135,7 +135,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **What do you need to do?**        | <ul><li>For new tenants that are created after August 19, 2024, the connection string won't be available to you. You'll use public APIs from the platform **SharedServiceUnitStorage** class to interact with the storage account.</li><li>For existing tenants that were created before August 19, 2024, your current code will continue to function. However, because **GetCsuStorageConnectionString** will be deprecated in version 10.0.43 (PU67) service updates (March 2025), we recommend that you remove direct dependency on the storage connection string. Instead, use public methods from **SharedServiceUnitStorage** to interact with the storage account.</li><li>For ISVs, if you have direct use of the connection string in your solutions, it must be removed. Public APIs from **SharedServiceUnitStorage** will be used to get relevant storage objects for interaction with the storage account. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | <p>The phased rollout of this change has been fully completed across all applicable environments.</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
+| **Status**                         | <p>The phased rollout of this change is fully completed across all applicable environments.</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
 
 ### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022
 
