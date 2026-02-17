@@ -34,22 +34,25 @@ As mentioned in the introduction, Conditional Access requires that your mobile d
 | **Windows**  | The user must have a work account.         |
 | **Android**  | Microsoft Authenticator must be installed. |
 | **iOS**      | Microsoft Authenticator must be installed. |
+
+
 #### Set up Microsoft Authenticator
-For iOS:
 
- - Install **Microsoft Authenticator** from the App Store.
- - Open the app and select **the menu button(top-left corner)**.
- - Select **Settings**.
- - Select **Device registration**.
- - On the setup page, enteryour email or organizational account and select **Register device**.
+To set up Microsoft Authenticator for iOS, follow these steps:
+1. Install **Microsoft Authenticator** from the App Store.
+2. Open the app and select the **Menu** button.
+3. Select **Settings**.
+4. Select **Device registration**.
+5. On the setup page, enter your email or organizational account.
+6. Select **Register device**.
 
- For Android:
-
- - Install **Microsoft Authenticator** from the App Store.
- - Open the app and select **the menu button(top-right corner)**.
- - Select **Settings**.
- - Select **Device registration**.
- - On the setup page, enteryour email or organizational account and select **Register device**.
+ To set up Microsoft Authenticator for Android, follow these steps:
+1. Install **Microsoft Authenticator** from the App Store.
+2. Open the app and select the **Menu** button.
+3. Select **Settings**.
+4. Select **Device registration**.
+5. On the setup page, enter your email or organizational account.
+6. Select **Register device**.
  
 ## Configure your Microsoft Entra ID app registration to support Conditional Access
 
