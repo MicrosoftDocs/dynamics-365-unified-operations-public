@@ -152,9 +152,9 @@ If records already exist for the dimension, the master records are updated when 
 If you're using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value defaults from the new customer number when you create the new customer.  
 
 > [!NOTE]
-> You can intentionally default a dimension value to **blank** by assigning a **fixed dimension value of blank** on a main account (via *Legal entity overrides*).  
+> You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).  
 >  
-> If you do **not** intend for a blank dimension value to be defaulted, ensure that the dimension’s fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension’s fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
 
 ## Derived dimensions
 
