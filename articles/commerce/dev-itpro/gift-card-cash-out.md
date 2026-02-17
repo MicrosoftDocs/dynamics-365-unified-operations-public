@@ -89,7 +89,7 @@ To configure and test the Store Commerce app, follow these steps:
 1. The line for **gift card cash out** is added to the **Current transaction** for cash out.
 1. Select the **Cash** payment method and the drawer opens when the transaction is completed.
 
-       :::image type="content" source="./media/GiftCardCashout03.png" alt-text="Screenshot of the POS screen with Cash out gift card highlighted.":::
+    :::image type="content" source="./media/GiftCardCashout03.png" alt-text="Screenshot of the POS screen with Cash out gift card highlighted.":::
 
 ## Troubleshooting
 
