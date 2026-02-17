@@ -110,6 +110,12 @@ If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you
 
 Yes. On-premises installations use Active Directory Federation Service (AD&nbsp;FS) instead of Microsoft Entra ID. However, the settings are similar, including the settings for user-based authentication methods such as device code flow. Learn more in [Configure the Warehousing app for on-premises deployments](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
+## Is it mandatory to have Microsoft Authenticator installed on the same mobile device as the Warehouse Management mobile app?
+
+No, the authentication is capable to use webview or native view to authenticate. However, if you wish to increase security and use modern features like Entra conditional access, you'll be required to have Microsoft Authenticator.
+ 
+If you use Conditional access, you have to install Authenticator on the same device. The platform requirements explicitly state that for Android and iOS, Microsoft Authenticator must be installed. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md)
+
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
 Partially. You can use Microsoft Entra Conditional Access to connect the app, but Conditional Access provides less detailed access control and oversight than Microsoft Entra ID does. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md) and the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access/).

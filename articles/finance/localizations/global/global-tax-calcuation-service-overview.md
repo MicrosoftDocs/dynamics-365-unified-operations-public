@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 12/18/2025
+ms.date: 02/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
@@ -39,11 +39,19 @@ Import and set up your Tax Calculation configuration by using the version that m
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
+| 10.0.47         | Tax Calculation Configuration 50.78.269<br> This configuration is also compatible with all lower supported versions.|
 | 10.0.46         | Tax Calculation Configuration 47.73.265 |
 | 10.0.45         | Tax Calculation Configuration 47.73.265 |
-| 10.0.44         | Tax Calculation Configuration 47.73.265 |
-| 10.0.43         | Tax Calculation Configuration 47.73.265 |
 
+> [!IMPORTANT] 
+> To use **Tax Calculation Configuration 50.78.269**, you need to synchronize **Tax measure types**.
+> To complete this step:
+> 1.	Open **Globalization studio** workspace, select **Electronic reporting** tile, and then select **Tax configurations** tile.
+> 1.	On **Configurations** page, select **Configurations**.
+> 1.	Under **Advanced settings** group, select **Tax measure types**.
+> 1.	On **Tax Measure types** page, select **Synchronize**.
+
+ 
 ## Data flow
 
 Here's an outline of the data flow process for Tax Calculation.
@@ -101,3 +109,5 @@ You can run Tax Calculation with supported localization features. The following 
 - [Tax feature support for transfer order](Tax-feature-support-for-transfer-order.md)
 
 - [How to build extension in tax service](tax-service-add-data-fields-tax-integration-by-extension.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
