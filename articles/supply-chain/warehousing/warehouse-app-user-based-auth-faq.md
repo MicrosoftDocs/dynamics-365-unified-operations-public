@@ -112,9 +112,9 @@ Yes. On-premises installations use Active Directory Federation Service (AD&nbsp;
 
 ## Is it mandatory to have Microsoft Authenticator installed on the same mobile device as the Warehouse Management mobile app?
 
-**NO.** The authentication is capable to use webview or native view to authenticate. However, if you wish to increase security and use modern features like Entra Conditional Access, you will be required to have Microsoft Authenticator.
+No, the authentication is capable to use webview or native view to authenticate. However, if you wish to increase security and use modern features like Entra conditional access, you'll be required to have Microsoft Authenticator.
  
-You have to install Authenticator on the same device, if you use Conditional Access. The platform requirements explicitly state that for Android and iOS, Microsoft Authenticator must be installed. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md)
+If you use Conditional access, you have to install Authenticator on the same device. The platform requirements explicitly state that for Android and iOS, Microsoft Authenticator must be installed. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md)
 
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
