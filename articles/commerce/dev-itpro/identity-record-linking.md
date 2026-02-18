@@ -73,7 +73,7 @@ For B2C sites, automatic linking performs the following checks:
 
 [Deploy a new e-commerce tenant](../deploy-ecommerce-site.md)
 
-[Create an e-commerce site](../createecommerce-site.md)
+[Create an e-commerce site](../create-ecommerce-site.md)
 
 [Associate a Dynamics 365 Commerce site with an online channel](../associate-site-online-store.md)
 
