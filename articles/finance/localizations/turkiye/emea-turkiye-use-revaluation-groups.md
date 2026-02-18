@@ -38,7 +38,7 @@ This section explains how to create a revaluation group.
 
 Revaluation groups are optional. Use them to standardize and reuse revaluation parameters, such as the factor and revaluation date, across multiple fixed assets.
 
-Follow these steps to configure a revaluation group:
+To configure a revaluation group, follow these steps:
 
 1. Go to **Fixed assets > Setup > Revaluation groups**.  
 1. Select **New**.  
@@ -56,7 +56,7 @@ When you post a fixed asset revaluation in Finance, the system generates ledger 
 - **Revaluation – Depreciation**: Adjusts the accumulated depreciation according to the revaluation factor.
 - **Revaluation – Depreciation past**: Adjusts the accumulated depreciation according to the revaluation factor.  
 
-To define ledger accounts for these types: 
+To define ledger accounts for these types, follow these steps: 
 
 1. Go to **Fixed assets > Setup > Posting profiles**.
 1. Select the posting profile where you want to define revaluation ledger accounts.
@@ -81,11 +81,12 @@ To define ledger accounts for these types:
 1. In the **Account relation** field, select the fixed asset or fixed asset group.
 1. In the **Main account** field, specify the desired values.
 1. In the **Offset account** field, specify the desired values.  
-1. Select **Save**. For more information, see [Set up fixed asset posting profiles](../../../finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md).
+1. Select **Save**. Learn more in [Set up fixed asset posting profiles](../../../finance/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md).
 
 ## Create a revaluation proposal
 
 This section explains how to create a revaluation proposal for fixed assets in Finance. 
+
 To create a revaluation proposal, complete the following steps:  
 
 - Set up the **Fixed asset book** for each asset.  
@@ -97,9 +98,9 @@ The following table describes the fields that are available in the **Revaluation
 | Field | Description |
 |-------|-------------|
 | To date | Specifies the end date for the revaluation period. Transactions up to this date are included. |
-| Get from transaction date | Indicates whether the system should use the transaction date instead of the “To date” value. |
-| Transaction date | Defines the posting date for revaluation journal lines. If left blank, the “To date” value is used. |
-| Factor | Coefficient used to revalue acquisition cost and accumulated depreciation. Editable only if “Get factor from book” is set to No. |
+| Get from transaction date | Indicates whether the system should use the transaction date instead of the **To date** value. |
+| Transaction date | Defines the posting date for revaluation journal lines. If left blank, the **To date** value is used. |
+| Factor | Coefficient used to revalue acquisition cost and accumulated depreciation. Editable only if **Get factor from book** is set to No. |
 | Get factor from book | When set to **Yes**, retrieves the revaluation factor defined in the fixed asset book. |
 | Intra-year transaction | Indicates whether multiple revaluations can be applied within the same fiscal year. |
 | Fixed asset number | Limits the proposal to a specific fixed asset. Leave blank to include all eligible assets. |
@@ -158,6 +159,8 @@ When you post a fixed asset journal for revaluation, you can review the results 
 
 ### Review in the Fixed asset valuations
 
+To review in the Fixed asset valuations, follow these steps:
+
 1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 1. Select the asset that you revalued.
 1. Select **Valuations** on ActionPane.
@@ -169,6 +172,8 @@ When you post a fixed asset journal for revaluation, you can review the results 
 
 ### Review in the Fixed asset book
 
+To review in the Fixed asset book, follow these steps:
+
 1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 1. Select the asset that you revalued.
 1. Select **Books** on ActionPane.
@@ -178,6 +183,8 @@ When you post a fixed asset journal for revaluation, you can review the results 
    - Check that the **Revaluation – Depreciation** is adjusted.
 
 ### Review in Fixed asset transactions
+
+To review in Fixed asset transactions, follow these steps:
 
 1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 1. Select the asset that you revalued.
