@@ -4,8 +4,6 @@ description: Learn how to configure and use payment processing with nonrecurring
 author: shajain
 ms.date: 02/18/2026
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: ritakimani
@@ -161,3 +159,4 @@ When you select a record, you see details for the customer account, sales order,
 [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
