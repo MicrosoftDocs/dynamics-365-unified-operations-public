@@ -81,7 +81,7 @@ After you complete all the configuration steps described in the previous chapter
 
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest version of the **French electronic invoice (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest version of the **QQQQQQQQQQQFrench electronic invoice (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, confirm that the following Electronic reporting configurations are imported as a result of the **French electronic invoice (FR)** globalization feature import.
 
     - **Invoice model**
@@ -90,8 +90,7 @@ After you complete all the configuration steps described in the previous chapter
     - **UBL Sales e-credit note (FR)**
     - **UBL Project e-invoice (FR)**
     - **UBL Project e-credit note (FR)**
-    - **E-Reporting (FR)**
-    - ...
+    - **Edicom life cycle status format (FR)**
     - ...
 
     > [!NOTE]
@@ -99,9 +98,10 @@ After you complete all the configuration steps described in the previous chapter
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices.
 
-    - **Vendor invoice import (FR)**
+    - **Vendor invoice import Edicom (FR)**
     - **Vendor invoice Mapping to destination (FR)**
     - **Import invoice context model**
+    - **Import invoice status query**
 
      > [!IMPORTANT]
     > Make sure that the **Vendor invoice Mapping to destination (FR)** Electronic Reporting configuration is marked as **Default for model mapping**.
