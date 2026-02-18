@@ -23,11 +23,11 @@ Use financial dimensions to further categorize financial transactions. Financial
 
 Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). Also, explore the differences between the two in the document Differences between financial tags and financial dimensions.  
 
-When you create a financial dimension, this article explains the various types of financial dimensions and how to set them up.
+This article explains the various types of financial dimensions and how to set them up.
 
 ## Create financial dimensions
 
-Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. Two types of financial dimensions exist: custom dimensions and entity-backed dimensions.
+Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions.
 
 ### Financial dimension naming requirements
 
@@ -42,9 +42,9 @@ Invalid dimension names include:
 
 ## Custom dimensions
 
-To create a user-defined financial dimension, select **Custom dimension** in the **Use values from** field. Users share custom dimensions across legal entities and enter and maintain the values.
+To create a user-defined financial dimension, in the **Use values from** field, select **Custom dimension**. Custom dimensions are shared across legal entities, and the values are entered and maintained by users.
 
-You can specify a dimension value mask to limit the amount and type of information that users can enter for dimension values. Enter characters that remain the same for each dimension value, such as letters or a symbol.
+You can specify a dimension value mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a symbol.
 
 > [!IMPORTANT]
 > Don't use the chart of accounts delimiter in the dimension value mask.
@@ -57,25 +57,25 @@ To limit the dimension value to the letters "CC" and three numbers, enter **CC-\
 
 ## Entity-backed dimensions
 
-To create an entity-backed financial dimension, select a system-defined entity in the **Use values from** field to base the financial dimension on. For entity-backed dimensions, users define the values somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
+To create an entity-backed financial dimension, in the **Use values from** field, select a system-defined entity to base the financial dimension on. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
 
-For example, to create dimension values for projects, select **Projects**. This selection allows any value from the project table to be used as a dimension value directly.
-Create a dimension value for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
+For example, to create dimension values for projects, select **Projects**. This allows any value from the project table to be used as a dimension value directly.
+A dimension value is then created for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
 
 > [!IMPORTANT]
-> When exporting financial dimension values, only the following values are exported:
+> Important: When exporting financial dimension values, only the following values are exported:
 >
 > - Custom dimension values
-> - Only entity-backed dimension values that users used or entered as a dimension value. For example, the value was entered as a default dimension value or entered on a transaction.
+> - Only entity-back dimension values that have been used or entered as a dimension value. For example, the value was entered as a default dimension value or entered on a transaction.
 > - Only entity-backed dimension values that have a property defined for the value, such as the value is suspended or active from/to dates are defined.
 
 ### Financial dimension values
 
-After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
+After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
 
 For a custom financial dimension, use this page to create and edit dimension values. You can only enter or edit the **Dimension value** and **Description** fields for custom dimensions.  
 
-For an entity-backed financial dimension, you can't create dimension values from this page. You also can't edit the dimension value and descriptions from within the page. For example, let's say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can't edit the project **Dimension value** or **Description**. This information comes directly from the project setup. If you need a new project value, you must create it from the **Project** page.  
+For an entity-backed financial dimension, you can't create dimension values from this page. You also can't edit the dimension value and descriptions from within the page. For example, let's say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can't edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, you must create it from the **Project** page.  
 
 > [!IMPORTANT]
 > When working with the **Financial dimension values entity** for data import or export, this entity only contains values that are used as dimensions. You see only values that are used in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or have had properties modified (such as Active from/Active to dates, Suspended status, and other overrides). Unused values don't appear in the entity.
@@ -125,20 +125,28 @@ But, not all dimensions are valid for all legal entities. Additionally, some dim
 
 Department has dimension values of 100, 200, and 300. USMF, USSI, and DEMF all use the Department dimension. DEMF is only permitted to use department 100 and 200. To restrict DEMF from using Department 300, create a legal entity override where you mark the dimension value as Suspended. USMF and USSI still have full access to departments 100, 200, and 300.  
 
+## Renaming financial dimensions
+
+When working with financial dimensions, you might need to rename dimension values or the dimensions themselves. However, several requirements and considerations affect your ability to rename financial dimensions and their values.
+
+- Change entity-backed dimensions through their source entity - You can't rename entity-backed dimension values through the **Financial dimension values** page. Rename them on the corresponding entity page. For example, rename Department dimension values in the **Operating units** page where the department is defined.
+- Ensure dimension value names are unique - Dimension value names must be unique across the system. To check for duplicates, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, choose a different name.
+- Verify you have sufficient privileges - Your user account must have the necessary roles and privileges to modify dimension values. If you're unable to make changes, contact your system administrator to verify permissions.
+
 ## Deleting financial dimensions
 
 To help maintain referential integrity of the data, you can rarely delete financial dimensions. If you try to delete a financial dimension, the system evaluates the following criteria:
 
-- Has the financial dimension been used on any posted or unposted transactions, or in any type of dimension value combination?
+- Was the financial dimension used on any posted or unposted transactions, or in any type of dimension value combination?
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
 - Is the financial dimension part of a default financial dimension integration format?
-- Has the financial dimension been set up as a default dimension?
-- Has the financial dimension been unselected from the Financial Reporting setup?
+- Was the financial dimension set up as a default dimension?
+- Was the financial dimension unselected from the Financial Reporting setup?
 
 If any of these criteria are met, you can't delete the financial dimension.
 
 > [!NOTE]
-> Starting in Finance version 10.0.27, the system doesn't automatically select financial dimensions for financial reporting setup as you create them.
+> Starting in Finance version 10.0.27, the system doesn't automatically select financial dimensions for financial reporting setup as they're created.
 
 ### Financial dimensions as legal entities
 
@@ -158,7 +166,7 @@ Here are some of the limitations:
 
 ## Default dimension values
 
-You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
+You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
 
 A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
 
@@ -196,6 +204,9 @@ Enter the dimension combinations that you want to derive from the dimension in t
 >
 >If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
 
+> [!IMPORTANT]
+> When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
+
 ### Overriding existing values with derived dimensions
 
 By default, the derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that you already established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions aren't changed by derived dimensions.
@@ -206,9 +217,9 @@ Derived dimensions with this setting don't automatically replace the existing de
 
 ### Preventing changes with derived dimensions
 
-When you use **Add segment** on the **Derived dimensions** page to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it's derived on a page. The default setting is off, so it doesn't prevent the derived dimension values from being changed. Change the setting to **Yes** to prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value can't be changed if the **Prevent changes** setting is **Yes**.
+When you use **Add segment** on the **Derived dimensions** page to add a segment as a derived dimension, you see an option at the bottom of the **Add segment** page that you can use to prevent changes to that dimension when it's derived on a page. The default setting is off, so it doesn't prevent the derived dimension values from being changed. Change the setting to **Yes** to prevent the dimension from being changed after it is derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value can't be changed if the **Prevent changes** setting is **Yes**.
 
-The setting doesn't prevent changes if the dimension value is valid but it's not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you can't edit Department 20. However, if you enter Cost center 20 and it's not in the list of derived dimensions for Cost center, then you can edit the Department value.
+This setting doesn't prevent changes if the dimension value is valid but isn't listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you can't edit Department 20. However, if you enter Cost center 20 and it's not in the list of derived dimensions for Cost center, then you can edit the Department value.
 
 In all cases, the account value and all dimensions values are still validated against the account structures after the derived dimensions values are applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the **Derived dimensions** page before you can use them in transactions.
 
@@ -218,8 +229,8 @@ When you change dimensions on the **Financials dimensions** FastTab, the dimensi
 
 You can set up the derived dimensions segments and values by using entities.
 
-- The Derived dimensions entity sets up the driving dimensions and the segments that are used for those dimensions.
-- The Derived dimensions value entity lets you import the values that should be derived for each driving dimension.
+- The **Derived dimensions** entity sets up the driving dimensions and the segments that are used for those dimensions.
+- The **Derived dimensions value** entity lets you import the values that should be derived for each driving dimension.
 
 When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
 
