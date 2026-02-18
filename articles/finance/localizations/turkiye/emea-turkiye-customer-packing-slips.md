@@ -16,12 +16,12 @@ ms.dyn365.ops.version: AX 10.0.45
 [!INCLUDE[banner](../../includes/banner.md)]
 
 This article describes how to configure and use **electronic packing slips (e-packing slips)** in Microsoft Dynamics 365 Finance for Türkiye.  
-Microsoft Dynamics 365 Finance supports the generation of electronic packing slip XML file in the required **UBL-TR DespatchAdvice** format.
+Finance supports the generation of electronic packing slip XML file in the required **UBL-TR DespatchAdvice** format.
 
 Before you begin, make sure you meet the following prerequisites:
 
 - Your legal entity's primary address is in Türkiye.
-- You import the Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS) or Dataverse.
+- You import the Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services or Dataverse.
 - You configure ER destinations if you want XML files to be automatically sent to file locations, email, SharePoint, or other channels.
 
 The following ER configurations are required to generate UBL-TR packing slip documents.
@@ -32,7 +32,7 @@ The following ER configurations are required to generate UBL-TR packing slip doc
 | 2 | Packing slip model mapping | Model mapping | Links the Invoice data model to application data sources related to packing slips. |
 | 3 | UBL Packing slip (TR) | Format | Generates Turkish electronic packing slip XML documents in the UBL-TR DespatchAdvice format. This is the final output format used for e-packing slips. |
 
-For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
+Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 ## Configure parameters
 
@@ -59,7 +59,7 @@ To configure the legal entity for e-packing slip generation, follow these steps:
 
 This section explains how to configure customer accounts for customer e-packing slips.
 
-To configure customer account data, follow these steps.  
+To configure customer account data, follow these steps:  
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**, and select a customer.
 1. On the **Addresses** FastTab, add a valid address for the customer.
@@ -68,11 +68,9 @@ To configure customer account data, follow these steps.
 1. Set the **eInvoice attachment** option to **Yes** to attach an XML file to the electronic packing slip, if an attachment is necessary.
 
    > [!NOTE]  
-   > After you define **Registration IDs** for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
+   > - After you define **Registration IDs** for customer and vendor accounts, the **Tax exempt number** field is automatically populated.  
    > If needed, you can also select the value manually.
-   
-   > [!NOTE]  
-   > The delivery address and delivery terms are essential because these values are mapped into the UBL-TR DespatchAdvice XML structure. 
+   > - The delivery address and delivery terms are essential because these values are mapped into the UBL-TR DespatchAdvice XML structure. 
 
 ### Set up unit of measure mappings for e-packing slips
 
@@ -84,8 +82,7 @@ To configure the mappings, follow these steps:
 1. Select a unit, and then select **External codes**.
 1. On **External codes**, in the **Overview** section, in the **Code** column, enter the internal unit ID (for example, *EA* for "each") that represents the unit used in Finance.
 1. Select the checkbox in the **Standard code** column.
-1. In the **Value** section, enter the UN/ECE unit code (for example, *C62* for "each") in the **Value** field.  
-   This value is used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
+1. In the **Value** section, enter the UN/ECE unit code (for example, *C62* for "each") in the **Value** field. This value is used as the **unitCode** attribute in the `<InvoicedQuantity>` element of the generated e-invoice XML.
 
    > [!NOTE]
    > The configured unit mapping determines the `unitCode` value that appears in the `<cbc:DeliveredQuantity>` element of the generated UBL-TR e-packing slip XML.  
@@ -130,8 +127,8 @@ The following table describes the carrier-related fields on the **Transportation
 
 | Field | Description |
 |------|-------------|
-| Carrier type | Specifies the type of carrier that performs the transportation |
-| Carrier | Identifies the transport company |
+| Carrier type | Specifies the type of carrier that performs the transportation. |
+| Carrier | Identifies the transport company. |
 
    > [!NOTE]  
    > Carrier information is mandatory for e-Packing slip documents in Türkiye and maps to the **CarrierParty** section of the UBL-TR DespatchAdvice XML.
@@ -144,8 +141,8 @@ The following table describes vehicle-related fields.
 
 | Field | Description |
 |------|-------------|
-| Registration number | Specifies vehicle plate number |
-| Trailer registration number | Specifies trailer plate number |
+| Registration number | Specifies vehicle plate number. |
+| Trailer registration number | Specifies trailer plate number. |
 
 This information maps to the **TransportMeans** elements in the UBL-TR DespatchAdvice XML.
 
@@ -160,15 +157,14 @@ The following table describes driver-related fields.
 
 | Field | Description |
 |------|-------------|
-| Driver | Reference to a predefined driver record |
-| Driver name | Full name of the driver |
+| Driver | Reference to a predefined driver record. |
+| Driver name | Full name of the driver. |
 
 Turkish regulations require including the driver name in the electronic packing slip XML.
 
 ### Effect on electronic packing slip generation
 
-Transportation details come from the sales order when you post the packing slip.  
-You pass the values to the Electronic Reporting (ER) format during XML generation.
+Transportation details come from the sales order when you post the packing slip. You pass the values to the Electronic Reporting (ER) format during XML generation. 
 
 If required transportation information is missing or incomplete, the generated UBL-TR DespatchAdvice document might fail validation during submission.
 
@@ -186,15 +182,14 @@ To generate an electronic packing slip XML file, follow these steps:
 1. Select **Preview/Print**.
 1. Select **Original preview**.
 
-If you configure ER destinations, the XML automatically goes to the defined destination.  
-If you don't configure a destination, the **Electronic reporting jobs** page stores the XML output.
+If you configure ER destinations, the XML automatically goes to the defined destination. If you don't configure a destination, the **Electronic reporting jobs** page stores the XML output.
 
    :::image type="content" source="../media/emea-turkiye-generate-packing-slip.png" alt-text="Screenshot of the Packing slip journal page showing the Preview/Print menu options.":::
 
 ## View electronic packing slips
 
 If you define ER destinations for electronic packing slip formats, the system sends the generated output files to a related file destination that you configure for the ER destination.
-For more information about configuring destinations for generated electronic documents, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+Learn more about configuring destinations for generated electronic documents in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 If you don't define Electronic reporting (ER) destinations for electronic packing slip formats, the system generates output files for electronic packing slips on the Electronic reporting jobs page.
 
@@ -216,6 +211,6 @@ You can set up ER destinations for electronic packing slip formats. When you set
 
 When you post the packing slips, turn on the **Print packing slip** parameter.
 
-For more information, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+Learn more in [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
