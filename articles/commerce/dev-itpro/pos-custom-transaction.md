@@ -1,11 +1,10 @@
 ---
 title: Add custom controls to Store Commerce transaction pages
-description: This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
+description: Learn how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 02/18/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2017-11-22
@@ -19,7 +18,7 @@ ms.custom:
 
 This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 
-You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This article explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
+Use custom controls to add more information to a transaction page. Add a custom control to a transaction page by using the screen layout designer. In the designer, use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. Implement business logic for the custom control in your own extensions by using the POS extension framework. This article explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
 > [!NOTE]
 > This article applies to Dynamics 365 Finance, and to Microsoft Dynamics 365 Retail with platform update 8 and Retail App update 4 hotfix.
@@ -27,14 +26,14 @@ You can add more information to a transaction page by using custom controls. You
 ## Add a new custom control
 
 1. Sign in to Dynamics 365 Commerce.
-2. Select **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
-3. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
-4. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
-5. If you're prompted to install the designer tool, select **Open**, and follow the installation instructions.
-6. When you're prompted for your Microsoft Microsoft Entra credentials, enter the information to start the designer.
-7. In the designer, drag the custom control from the left pane to the page, and then adjust, resize, or reposition the custom control as you require.
-8. On the page, right-click the custom control, and then select **Customize**.
-9. In the dialog box, set these properties:
+1. Select **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+1. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
+1. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
+1. If you're prompted to install the designer tool, select **Open**, and follow the installation instructions.
+1. When you're prompted for your Microsoft Microsoft Entra credentials, enter the information to start the designer.
+1. In the designer, drag the custom control from the left pane to the page, and then adjust, resize, or reposition the custom control as you require.
+1. On the page, right-click the custom control, and then select **Customize**.
+1. In the dialog box, set these properties:
 
    - **Control Name:** lineDetails
    - **Package Name:** Pos_Extensibility_Samples
@@ -43,19 +42,19 @@ You can add more information to a transaction page by using custom controls. You
      > [!NOTE]
      > These names should match the names in the extension manifest.
 
-10. Close the designer by selecting the **Close** button (**X**).
-11. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes won't be saved.
-12. Select **Retail** > **Retail IT** > **Distribution schedule**.
-13. Select the **Registers (1090)** job, and then select **Run now**.
+1. Close the designer by selecting the **Close** button (**X**).
+1. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes aren't saved.
+1. Select **Retail** > **Retail IT** > **Distribution schedule**.
+1. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Add business logic to the custom control
 
 1. Start Microsoft Visual Studio 2015 as an administrator.
-2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
-3. In the **POS.Extensions** project, create a folder that is named **CustomControlExtensions**.
-4. In the **CustomControlExtensions** folder, create a folder that is named **Cart**.
-5. In the **Cart** folder, create a Typescript file that is named **CartViewController.ts**.
-6. In the **CartViewController.ts** file, add the following **import** statement to import the relevant entities and context.
+1. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
+1. In the **POS.Extensions** project, create a folder named "CustomControlExtensions."
+1. In the **CustomControlExtensions** folder, create a folder named "Cart."
+1. In the **Cart** folder, create a TypeScript file named "CartViewController.ts."
+1. In the **CartViewController.ts** file, add the following **import** statement to import the relevant entities and context.
 
     ```typescript
     import { ProxyEntities } from "PosApi/Entities";
@@ -63,7 +62,7 @@ You can add more information to a transaction page by using custom controls. You
     import * as CartView from "PosApi/Extend/Views/CartView";
     ```
 
-7. Create a class that is named **CartViewController**, and extend it from **CartExtensionViewControllerBase**. The **CartExtensionViewControllerBase** class contains the cart and tender lines, the cart line selected handler, and the cart line cleared handler. These elements will be used to show the selected line in the custom control.
+1. Create a class named "CartViewController," and extend it from **CartExtensionViewControllerBase**. The **CartExtensionViewControllerBase** class contains the cart and tender lines, the cart line selected handler, and the cart line cleared handler. Use these elements to show the selected line in the custom control.
 
     ```typescript
     export default class CartViewController extends CartView.CartExtensionViewControllerBase {
@@ -71,7 +70,7 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-8. In the **CartViewController** class, add two private variables to get the selected cart lines and tender lines.
+1. In the **CartViewController** class, add two private variables to get the selected cart lines and tender lines.
 
     ```typescript
     private _selectedCartLines: ProxyEntities.CartLine[];
@@ -79,7 +78,7 @@ You can add more information to a transaction page by using custom controls. You
     private _selectedTenderLines: ProxyEntities.TenderLine[];
     ```
 
-9. Create a class **constructor** method to set the cart and tender selection information.
+1. Create a class **constructor** method to set the cart and tender selection information.
 
     ```typescript
     constructor(context: IExtensionCartViewControllerContext) {
@@ -139,8 +138,8 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-10. In the **Cart** folder, create an HTML file that is named **LineDetailsCustomControl.html**.
-11. In the **LineDetailsCustomControl.html** file, add two text fields to show the ID and description for the selected line item. Delete the default code, and add the following code.
+1. In the **Cart** folder, create an HTML file named "LineDetailsCustomControl.html."
+1. In the **LineDetailsCustomControl.html** file, add two text fields to show the ID and description for the selected line item. Delete the default code, and add the following code.
 
     ```typescript
     <!DOCTYPE html>
@@ -164,9 +163,9 @@ You can add more information to a transaction page by using custom controls. You
         </html>
         ```
 
-12. In the **Cart** folder, create a Typescript file that is named **LineDetailsCustomControl.ts**.
-13. In the **LineDetailsCustomControl.ts** file, add the logic to bind the line details information.
-14. Import the POS entities and type extensions to use the reference type in the constructor and other events.
+1. In the **Cart** folder, create a TypeScript file named "LineDetailsCustomControl.ts."
+1. In the **LineDetailsCustomControl.ts** file, add the logic to bind the line details information.
+1. Import the POS entities and type extensions to use the reference type in the constructor and other events.
 
     ```typescript
     import {
@@ -177,13 +176,13 @@ You can add more information to a transaction page by using custom controls. You
     import { ProxyEntities } from "PosApi/Entities";
     ```
 
-15. Create a class, and extend it from **CartViewCustomControlBase**.
+1. Create a class, and extend it from **CartViewCustomControlBase**.
 
     ```typescript
     export default class LineDetailsCustomControl extends CartViewCustomControlBase {}
     ```
 
-16. Declare the following private variables to set the cart item ID and description.
+1. Declare the following private variables to set the cart item ID and description.
 
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_LineDetails";
@@ -194,7 +193,7 @@ You can add more information to a transaction page by using custom controls. You
     private _state: ICartViewCustomControlState;
     ```
 
-17. Create the **constructor** method to initialize and get the selected handler.
+1. Create the **constructor** method to initialize and get the selected handler.
 
     ```typescript
     constructor(id: string, context: ICartViewCustomControlContext) {
@@ -229,7 +228,7 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-18. Add the **onReady** method to bind the control to the specified HTML element.
+1. Add the **onReady** method to bind the control to the specified HTML element.
 
     ```typescript
     public onReady(element: HTMLElement): void {
@@ -242,7 +241,7 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-19. Add the **init** method to set the state.
+1. Add the **init** method to set the state.
 
     ```typescript
     public init(state: ICartViewCustomControlState): void {
@@ -331,8 +330,8 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-20. In the **CustomControlExtensions** folder, create a JSON file that is named **manifest.json**.
-21. In the **manifest.json** file, add the following code.
+1. In the **CustomControlExtensions** folder, create a JSON file named "manifest.json."
+1. In the **manifest.json** file, add the following code.
 
     ```typescript
     {
@@ -362,7 +361,7 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-22. In the **POS.Extensions** project, open the **extensions.json** file, and update it with the following **CustomControlExtensions** samples, so that the POS includes this extension at runtime.
+1. In the **POS.Extensions** project, open the **extensions.json** file, and update it with the following **CustomControlExtensions** samples, so that the POS includes this extension at runtime.
 
     ```typescript
     {
@@ -377,7 +376,7 @@ You can add more information to a transaction page by using custom controls. You
     }
     ```
 
-23. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.
+1. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.
 
     ```typescript
     "exclude": [
@@ -387,15 +386,12 @@ You can add more information to a transaction page by using custom controls. You
     ],
     ```
 
-24. Compile and rebuild the project.
+1. Compile and rebuild the project.
 
 ## Validate the customization
 
 1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
-2. On the **Welcome** screen, select the **Current transaction** button.
-3. Add any item to the transaction, and then select the line item that you added.
-
-    The custom control should show the ID and description for the selected line item.
-
+1. On the **Welcome** screen, select the **Current transaction** button.
+1. Add any item to the transaction, and then select the line item that you added. The custom control shows the ID and description for the selected line item.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
