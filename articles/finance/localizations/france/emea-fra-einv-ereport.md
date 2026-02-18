@@ -37,7 +37,7 @@ Before you start, make sure these prerequisites are in place:
 
 - Install the **Electronic invoicing add-in** as described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 - Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
-- Configure the common part of the **Electronic document parameters**.
+- Configure the common part of the [**Electronic document parameters**](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
   > [!NOTE]
   > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and make read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
