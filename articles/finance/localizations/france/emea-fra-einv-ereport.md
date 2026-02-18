@@ -133,15 +133,17 @@ Watch the overview of the Edicom credentials configuration in Finance.
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the following tables.
    - **Customer Invoice journal**
-   - **Project invoice**
-   - 
+   - **Project invoice**   
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
-
- :::image type="content" source="../belgium/emea-bel-einoices-docs.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
 > [!NOTE]
 > If you created derived equivalents of the earlier Electronic Reporting configurations, use them instead of the standard configurations.
-    
+
+:::image type="content" source="e-inv-fra-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
+
+> [!NOTE]
+> To minimize the risk of accidental massive submissions, the system implements forcible default filtering by documents dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for documents processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
+
 1. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
 1. In the **Channel** field, enter **EdiStatus**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
 1. In the **Company** field, select the legal entity.
