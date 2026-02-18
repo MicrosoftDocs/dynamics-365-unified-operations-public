@@ -31,7 +31,7 @@ To address these issues, incremental capture support was introduced for the Dyna
 
 The following illustration shows the difference between the different payment capture frameworks when multiple captures are done against a single authorization.
 
-:::image type="content" source="../dev-itpro/media/INC_DIFF.png" alt-text="Diagram of the current payment capture framework versus incremental capture.":::
+:::image type="content" source="../dev-itpro/media/INC_DIFF.png" alt-text="Screenshot of the current payment capture framework versus incremental capture.":::
 
 Incremental capture support for headquarters invoicing (in other words, any invoicing that occurs as part of order fulfillment in headquarters) was first added to the payments SDK in Commerce version 10.0.13. In Commerce version 10.0.18, incremental capture support through the SDK was extended to channels outside of headquarters. For the storefront, Store Commerce, and call center, this extended support means that authorizations created for new orders can be marked as **SupportsMultipleCaptures**. When you later invoice those orders in headquarters or Store Commerce, you can capture payments and retain the original authorization for reference when you capture payments for subsequent invoices.
 
