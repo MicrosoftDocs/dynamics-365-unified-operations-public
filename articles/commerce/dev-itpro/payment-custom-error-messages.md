@@ -1,24 +1,24 @@
 ---
 title: Create custom localized error messages for payment terminal extensions
-description: This article explains how to create custom error messages for payment terminal extensions.
+description: Learn how to create custom error messages for payment terminal extensions.
 author: Reza-Assadi
-ms.date: 07/20/2018
+ms.date: 02/18/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 
-ms.search.industry: Retail
+  - bap-template
 ---
 
 # Create custom localized error messages for payment terminal extensions
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to create custom localized error messages for payment terminal extensions. These custom error messages are most often used so that the payment terminal can give the cashier who is using the point of sale (POS) terminal relevant information about why a specific payment was unsuccessful. For example, the external payment terminal or gateway might return unique identifiers (such as reference numbers or transaction identifiers) that are relevant for troubleshooting with the payment provider.
+This article explains how to create custom localized error messages for payment terminal extensions.
+
+Custom error messages are most often used so that the payment terminal can give the cashier who is using the point of sale (POS) terminal relevant information about why a specific payment was unsuccessful. For example, the external payment terminal or gateway might return unique identifiers (such as reference numbers or transaction identifiers) that are relevant for troubleshooting with the payment provider.
 
 ## Key terms
 
@@ -26,13 +26,13 @@ This article explains how to create custom localized error messages for payment 
 |---|---|
 | Payment connector | An extension library that is written to integrate the POS with a payment terminal. |
 
-## Overview
 The remaining sections in this article describe the following steps for creating custom localized error messages for payment terminal extensions:
 
-- **[Create custom error messages](#create-custom-error-messages)** – This section explains how to create custom error messages in the payment connector that can be returned and shown in the POS.
-- **[Create localized error messages](#create-localized-error-messages)** – This section explains how to localize the error messages in the payment connector that are returned and shown in the POS.
+- **[Create custom error messages](#create-custom-error-messages)** – Create custom error messages in the payment connector that the POS can return and show.
+- **[Create localized error messages](#create-localized-error-messages)** – Localize the error messages in the payment connector that the POS returns and shows.
 
 ## Create custom error messages
+
 To trigger a custom error message in the POS, you must set the appropriate error in the **Errors** property of the **paymentInfo** object that is passed to the **AuthorizePaymentTerminalDeviceResponse** object. Specifically, you must set the **isLocalized** parameter on the constructor of the **PaymentError** object to **true** to force the POS to use the custom error message instead of the built-in error message for a declined payment.
 
 ``` csharp
@@ -109,43 +109,46 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 
 The following illustration shows how the custom error message appears in the POS.
 
-![Custom payment error message in the POS.](media/PAYMENTS/CUSTOM-ERRORS/POS-Custom-Payment-Error.jpg)
+:::image type="content" source="media/PAYMENTS/CUSTOM-ERRORS/POS-Custom-Payment-Error.jpg" alt-text="Screenshot of a custom payment error message in the POS.":::
 
 ## Create localized error messages
 
 ### Create resource files for each locale
-To return localized error messages from the payment connector to the POS, you must create localized resource files for each locale that you plan to support. To create a resource file, follow these steps:
+
+To return localized error messages from the payment connector to the POS, create localized resource files for each locale that you plan to support. To create a resource file, follow these steps:
 
 1. In Microsoft Visual Studio, right-click the connector project (or a subfolder, as required), and then select **Add \> New Item**.
-2. In the new **Add New Item** dialog box, select **Visual C# Items** in the left pane and **Resource File** in the center pane.
+1. In the new **Add New Item** dialog box, select **Visual C# Items** in the left pane and **Resource File** in the center pane.
 
-    ![Create new resource file in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
+    :::image type="content" source="media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg" alt-text="Screenshot of creating a new resource file in Visual Studio.":::
 
-Note that a culture-specific postfix (for example, **en-us**) is required in the file name of every resource file that you create, so that localized satellite assemblies can be generated.
+Add a culture-specific postfix (for example, **en-us**) to the file name of every resource file that you create. This postfix generates localized satellite assemblies.
 
-When you've finished, the following resource files should be present in your project. Although the following illustration shows only one extra locale (**en-us**), you can add support for as many locales as you require.
+When you finish, the following resource files should be present in your project. Although the following illustration shows only one extra locale (**en-us**), you can add support for as many locales as you require.
 
-Make sure that a culture-neutral resources file (**Messages.resx** in this example) is defined. This file is used as a fallback if the file for a specific culture is missing.
+Make sure that you define a culture-neutral resources file (**Messages.resx** in this example). The system uses this file as a fallback if the file for a specific culture is missing.
 
-![Resource files in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg)
+:::image type="content" source="media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg" alt-text="Screenshot of resource files in Visual Studio.":::
 
-You must also make sure that the correct properties are set for the resource files in Visual Studio, as shown in the following illustration.
+Make sure that you set the correct properties for the resource files in Visual Studio, as shown in the following illustration.
 
-![Properties of a new resource file in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Properties-Resource-File.jpg)
+:::image type="content" source="media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Properties-Resource-File.jpg" alt-text="Screenshot of properties of a new resource file in Visual Studio.":::
 
 ### Create custom localized error messages
-Every resource file must contain every error message that you want to customize and localize. The following illustration shows an example of a resource file. Notice that the **CustomPaymentConnector_Decline** entry is referenced in the code to retrieve the appropriate message for a specific locale. Every resource file for every locale should have an identical set of localized messages.
 
-![Content of a resource file in Visual Studio.](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Content-Resource-File.jpg)
+Every resource file must contain every error message that you want to customize and localize. The following illustration shows an example of a resource file. The code references the **CustomPaymentConnector_Decline** entry to retrieve the appropriate message for a specific locale. Every resource file for every locale should have an identical set of localized messages.
+
+:::image type="content" source="media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Content-Resource-File.jpg" alt-text="Screenshot of content of a resource file in Visual Studio.":::
 
 ### Load the localized message in the connector code
+
 The following example shows how you can use the resource files that you created earlier in your payment connector code to load a localized message. The process consists of two steps:
 
-1. Make sure that **terminalSettings** is retrieved during the **OpenPaymentTerminalDeviceRequest** request, to access the locale for the request.
-2. During the **AuthorizePaymentTerminalDeviceRequest** call (or equivalent calls), use the **Locale** property on **terminalSettings** to retrieve the correct resource file for the localized message.
+1. Make sure that the code retrieves **terminalSettings** during the **OpenPaymentTerminalDeviceRequest** request, so you can access the locale for the request.
+1. During the **AuthorizePaymentTerminalDeviceRequest** call (or equivalent calls), use the **Locale** property on **terminalSettings** to retrieve the correct resource file for the localized message.
 
 > [!NOTE]
-> The following example has been significantly simplified to show the mechanics of loading localized messages during the runtime of your payment connector code. However, we recommend that you introduce a new set of classes to manage loading of the appropriate resource file.
+> The following example is simplified to show the mechanics of loading localized messages during the runtime of your payment connector code. However, use a new set of classes to manage loading of the appropriate resource file.
 
 ``` csharp
 namespace Contoso.Commerce.HardwareStation.PaymentSample 
@@ -248,6 +251,5 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
