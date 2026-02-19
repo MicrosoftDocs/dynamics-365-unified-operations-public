@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 payment data use
-description: This article provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
+description: This article provides an overview of the data that's managed by the payment connectors for Microsoft Dynamics 365.
 author: BrianShook
 ms.date: 02/18/2026
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
+This article provides an overview of the data that's managed by the payment connectors for Microsoft Dynamics 365.
 
 ## Key terms
 
@@ -28,7 +28,7 @@ This article provides an overview of the data that is managed by the payment con
 
 ## Overview
 
-This article provides specific details about the following areas with respect to data that is managed by the payment connectors:
+This article provides specific details about the following areas with respect to data that's managed by the payment connectors:
 
 - **[Data used in card-present scenarios](#data-used-in-card-present-scenarios)** – This section provides a list and descriptions of data fields that the payment connector receives for card-present scenarios.
 - **[Data used in card-not-present scenarios](#data-used-in-card-not-present-scenarios)** – This section provides a list and descriptions of data fields that the payment connector receives for card-not-present scenarios.
@@ -137,15 +137,15 @@ This section describes data that you send to the payment connector for card-not-
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
-| PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. |
-| PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
-| PaymentCard | ExpirationYear | The expiration year of the card that is used for the payment. |
-| PaymentCard | ExpirationMonth | The expiration month of the card that is used for the payment. |
-| PaymentCard | StreetAddress | The street of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | City | The city of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | State | The state or province of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | PostalCode | The postal code of the billing address that is associated with the card that is used for the payment. |
+| MerchantAccount | MerchantId | The merchant information that's defined on the **POS hardware profile** page in the finance and operations client. |
+| PaymentCard | Last4Digits | The last four digits of the card that's used for the payment. |
+| PaymentCard | UniqueCardId | The unique randomized identifier of the card that's used for the payment. |
+| PaymentCard | ExpirationYear | The expiration year of the card that's used for the payment. |
+| PaymentCard | ExpirationMonth | The expiration month of the card that's used for the payment. |
+| PaymentCard | StreetAddress | The street of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | City | The city of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | State | The state or province of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | PostalCode | The postal code of the billing address that's associated with the card that's used for the payment. |
 | TransactionData | IndustryType | The type of channel where the payment occurred (for example, **Retail**, **Direct Marketing**, or **E-Commerce**). |
 | TransactionData | AllowPartialAuthorization | A value that indicates whether partial authorization is supported. |
 | TransactionData | Amount | The total amount of the transaction. |
@@ -158,7 +158,7 @@ This section describes data that you send to the payment connector for card-not-
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
+| MerchantAccount | MerchantId | The merchant information that's defined on the **POS hardware profile** page in the finance and operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | PurchaseLevelData | L2Data | The list of "Level 2" data. For more information, see the [L2 data](#l2-data) section later in this article. |
@@ -168,7 +168,7 @@ This section describes data that you send to the payment connector for card-not-
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
+| MerchantAccount | MerchantId | The merchant information that's defined on the **POS hardware profile** page in the finance and operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 
@@ -176,15 +176,15 @@ This section describes data that you send to the payment connector for card-not-
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
-| PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. |
-| PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
-| PaymentCard | ExpirationYear | The expiration year of the card that is used for the payment. |
-| PaymentCard | ExpirationMonth | The expiration month of the card that is used for the payment. |
-| PaymentCard | StreetAddress | The street of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | City | The city of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | State | The state or province of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | PostalCode | The postal code of the billing address that is associated with the card that is used for the payment. |
+| MerchantAccount | MerchantId | The merchant information that's defined on the **POS hardware profile** page in the finance and operations client. |
+| PaymentCard | Last4Digits | The last four digits of the card that's used for the payment. |
+| PaymentCard | UniqueCardId | The unique randomized identifier of the card that's used for the payment. |
+| PaymentCard | ExpirationYear | The expiration year of the card that's used for the payment. |
+| PaymentCard | ExpirationMonth | The expiration month of the card that's used for the payment. |
+| PaymentCard | StreetAddress | The street of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | City | The city of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | State | The state or province of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | PostalCode | The postal code of the billing address that's associated with the card that's used for the payment. |
 | TransactionData | IndustryType | The type of channel where the payment occurred (for example, **Retail**, **Direct Marketing**, or **E-Commerce**). |
 | TransactionData | AllowPartialAuthorization | A value that indicates whether partial authorization is supported. |
 | TransactionData | Amount | The total amount of the transaction. |
@@ -197,13 +197,13 @@ This section describes data that you send to the payment connector for card-not-
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
+| MerchantAccount | MerchantId | The merchant information that's defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Name | The name of the cardholder. |
-| PaymentCard | StreetAddress | The street of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | City | The city of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | State | The state or province of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | PostalCode | The postal code of the billing address that is associated with the card that is used for the payment. |
-| PaymentCard | Country | The country/region of the billing address that is associated with the card that is used for the payment. |
+| PaymentCard | StreetAddress | The street of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | City | The city of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | State | The state or province of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | PostalCode | The postal code of the billing address that's associated with the card that's used for the payment. |
+| PaymentCard | CountryRegion | The country/region of the billing address that's associated with the card that's used for the payment. |
 | PaymentCard | ShowSameAsShippingAddress | A value that identifies whether the billing address is the same as the shipping address. |
 | TransactionData | IndustryType | The type of channel where the payment occurred (for example, **Retail**, **Direct Marketing**, or **E-Commerce**). |
 | TransactionData | AllowPartialAuthorization | A value that indicates whether partial authorization is supported. |
@@ -220,14 +220,14 @@ This section describes data that you send to the payment connector for card-not-
 | Namespace | Field | Description |
 |---|---|---|
 | L2Data | OrderDateTime | The date and time when the order occurred. |
-| L2Data | OrderNumber | The order number that is associated with the order. |
+| L2Data | OrderNumber | The order number that's associated with the order. |
 | L2Data | InvoiceDateTime | The date and time when the order was invoiced. |
 | L2Data | InvoiceNumber | The invoice number for the order. |
 | L2Data | OrderDescription | The description of the order. |
-| L2Data | SummaryCommodityCode | The commodity code that is associated with the product. |
+| L2Data | SummaryCommodityCode | The commodity code that's associated with the product. |
 | L2Data | MerchantContact | The contact information for the merchant. |
 | L2Data | MerchantTaxId | The unique tax identifier of the merchant. |
-| L2Data | MerchantType | The unique merchant identifier that is maintained by the payment processor. |
+| L2Data | MerchantType | The unique merchant identifier that's maintained by the payment processor. |
 | L2Data | PurchaserId | The unique identifier of the purchaser. |
 | L2Data | PurchaserTaxId | The unique tax identifier of the purchaser. |
 | L2Data | ShipToCity | The city of the shipping address. |
