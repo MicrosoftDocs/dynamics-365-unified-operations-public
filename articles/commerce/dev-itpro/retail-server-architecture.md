@@ -1,30 +1,30 @@
 ---
 title: Headless commerce architecture
-description: This article describes the architecture of the headless commerce.
+description: This article provides an overview of the architecture of the headless commerce.
 author: aneesa
-ms.date: 06/25/2021
+ms.date: 02/19/2026
 ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2021-02-28
-ms.dyn365.ops.version: AX 10.0.16
+ms.custom: 
+  - bap-template
 ---
 
 # Headless commerce architecture
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
+This article provides an overview of the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
 
-![Commerce Scale Unit architecture.](media/CSUExtensionArchitecture.PNG)
+:::image type="content" source="media/CSUExtensionArchitecture.PNG" alt-text="Diagram of Commerce Scale Unit architecture.":::
 
 ## Omnichannel solution provided by the headless commerce
 
-The commerce APIs of the headless commerce are consumed by Microsoft Dynamics 365 Commerce (back-office, in-store, call center, and e-commerce) and provide a complete omnichannel solution. The APIs can be consumed by third-party applications and Microsoft Power Platform connectors.
+Microsoft Dynamics 365 Commerce (headquarters, in-store, call center, and e-commerce) consumes the commerce APIs of the headless commerce and provides a complete omnichannel solution. Partner applications and Microsoft Power Platform connectors can also consume the APIs.
 
-![Commerce Scale Unit platform integration.](./media/CSUConsumer.PNG)
+:::image type="content" source="./media/CSUConsumer.PNG" alt-text="Diagram of Commerce Scale Unit platform integration.":::
 
 ## Components
 
@@ -36,7 +36,7 @@ The headless commerce contains these components:
 
 ### Consumer APIs
 
-The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 Commerce and third-party applications to consume. The API layer is built by using ASP.NET Core. It provides different authentication options so that the clients can consume the APIs. The APIs are a wrapper that exposes the business logic. For more information, see the following articles:
+The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 Commerce and partner applications to consume. The API layer is built by using ASP.NET Core. It provides different authentication options so that the clients can consume the APIs. The APIs are a wrapper that exposes the business logic. For more information, see the following articles:
 
 + [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 + [Consume APIs](consume-retail-server-api.md)
@@ -51,7 +51,7 @@ CRT is a collection of portable .NET libraries that contain the core commerce bu
 
 ### Channel database
 
-The channel database holds transactional data and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. Master data is pushed down from Commerce headquarters to the channel database by using Commerce Data Exchange (CDX). Transactional data that is stored in the channel database is pulled back to Commerce headquarters by using CDX. For more information, see [Channel database extensions](channel-db-extensions.md).
+The channel database holds transactional data and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. Commerce Data Exchange (CDX) pushes master data from Commerce headquarters to the channel database. CDX pulls transactional data that is stored in the channel database back to Commerce headquarters. For more information, see [Channel database extensions](channel-db-extensions.md).
 
 ## Headless Commerce Integration
 
