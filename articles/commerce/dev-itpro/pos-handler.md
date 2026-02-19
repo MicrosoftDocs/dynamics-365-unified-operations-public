@@ -124,17 +124,19 @@ In each monthly update, Microsoft adds more extension points. Check the **Pos.ap
 | SelectCustomerOrderTypeClientRequestHandler | Runs when you get a dialog box with options to choose between customer order or quote.          |
 | GetCancellationChargeClientRequestHandler | Runs when you get a dialog box to enter the cancellation shipping charge during the customer order workflow.          |
 
-## How to override a handler in POS
+## Override a handler in POS
 
-If you want to override any of the preceding POS request handler logic, use the following steps:
+To override any of the preceding POS request handler logic, follow these steps:
 
 1. Create a new class and extend it from the corresponding handler class. For example, if you're overriding `GetSerialNumberClientRequestHandler`, extend your class from `GetSerialNumberClientRequestHandler`.
 1. Implement the `executeAsync` method.
 1. Either call the default handler or add your custom logic inside the `executeAsync` method and return the response.
 
-## Step by step instructions
+### Step-by-step instructions
 
-The following example shows how to override `GetSerialNumberClientRequestHandler` to automate the serial number entry in POS. By default, POS displays a dialog box to enter the serial number if the item is configured to ask for serial number. You want to avoid showing this dialog box and enter serial number through code.
+The following example procedure shows how to override `GetSerialNumberClientRequestHandler` class to automate the serial number entry in POS. By default, POS displays a dialog box to enter the serial number if the item is configured to ask for serial number. You want to avoid showing this dialog box and enter serial number through code.
+
+To override POS request handler logic, follow these steps:
 
 1. Open Visual Studio 2015 in administrator mode.
 1. Open **ModernPOS solution** from `...\RetailSDK\POS`.
