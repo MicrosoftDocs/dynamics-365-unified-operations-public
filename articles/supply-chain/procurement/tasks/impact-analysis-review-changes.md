@@ -104,8 +104,8 @@ Purchasers may accept changes that:
 - Have an impact, but the purchaser decides to accept anyway. This could be because there is no other option but to accept.
   
 They can accept changes without navigating back to the purchase order by following the steps:
-- To accept changes when using the Supplier Communications Agent, see Review and accept changes suggested by the agent.
-- To accept changes when using the vendor collaboration Module, see Updating a PO when a vendor suggests changes.
+- To accept changes when using the Supplier Communications Agent, see [Review and apply purchase order changes received in vendor emails](/dynamics365/supply-chain/procurement/supplier-com-agent-apply-email-changes#review-and-apply-purchase-order-changes-received-in-vendor-emails-production-ready-preview).
+- To accept changes when using the vendor collaboration Module, see [Updating a PO when a vendor suggests changes](/dynamics365/supply-chain/procurement/vendor-collaboration-work-external-vendors#updating-a-po-when-a-vendor-suggests-changes).
 
 For changes with impact that the purchaser accepts, they now know what the exact impact will be, and can communicate in a targeted manner to relevant colleagues in sales, production, planning, senior management and so on.
 
