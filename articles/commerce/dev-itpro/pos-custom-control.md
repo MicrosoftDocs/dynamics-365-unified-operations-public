@@ -2,7 +2,7 @@
 title: Add custom controls to POS views
 description: Learn how you can enhance the information that appears in Microsoft Dynamics 365 Commerce POS views by adding custom controls.
 author: josaw1
-ms.date: 02/18/2026
+ms.date: 02/19/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -49,6 +49,8 @@ The following table shows the views that support custom controls in POS.
 ## Create a custom control
 
 The following example shows how you can use extension to add custom controls to one of the existing POS views. For this example, you want information about product availability to appear in the product details view. To show this information, add a custom data list that has four columns: **Location**, **Inventory**, **Reserved**, and **Ordered**. You can use the same procedure to show other custom information in the POS views.
+
+To create a custom control, follow these steps:
 
 1. On the developer virtual machine (VM), start Microsoft Visual Studio 2015.
 1. Open the **ModernPos.sln** file from RetailSDK\\POS.
@@ -105,10 +107,12 @@ The following example shows how you can use extension to add custom controls to 
 
 ## Add constructor and initialize data list
 
-Next, add the constructor and initialize the data list with the product availability information. When you navigate to the page, the product availability information loads.
+Next, you add the constructor and initialize the data list with the product availability information. When you navigate to the page, the product availability information loads.
 
 > [!NOTE]
 > The following steps don't include the source code, but you can copy the full code from `RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SimpleProductDetails\ProductAvailabilityPanel.ts`.
+
+To a add constructor and initialize data list, follow these steps:
 
 1. In your **SampleExtensions** folder, add a new .json file, name it **manifest.json**, and paste the following code into it.
 
@@ -181,6 +185,8 @@ Next, add the constructor and initialize the data list with the product availabi
     ```
 
 ## Test the extension
+
+To test the extension, follow these steps:
 
 1. Press F5, and deploy the POS to test your customization.
 1. After the POS starts, sign in. Then search for any product, and open the product details view. You should now see the custom control that you added. Here's an example.
