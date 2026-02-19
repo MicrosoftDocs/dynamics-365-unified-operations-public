@@ -138,9 +138,9 @@ The following example shows how to override `GetSerialNumberClientRequestHandler
 
 1. Open Visual Studio 2015 in administrator mode.
 1. Open **ModernPOS solution** from `...\RetailSDK\POS`.
-1. Under the **POS.Extensions** project, create a new folder called "POSRequestHandlerExtension."
-1. Under the **POSRequestHandlerExtension** folder, create new folder called "Handlers."
-1. In the **Handlers** folder, add a new `.ts` (TypeScript) file and name it "GetSerialNumberClientRequestHandlerExt.ts."
+1. Under the **POS.Extensions** project, create a new folder called **POSRequestHandlerExtension**.
+1. Under the **POSRequestHandlerExtension** folder, create new folder called **Handlers**.
+1. In the **Handlers** folder, add a new `.ts` (TypeScript) file and name it **GetSerialNumberClientRequestHandlerExt.ts**.
 1. Add the following import statement to import the relevant entities and context in the **GetSerialNumberClientRequestHandlerExt.ts** file.
 
     ```typescript
@@ -221,7 +221,7 @@ The following example shows how to override `GetSerialNumberClientRequestHandler
     }
     ```
 
-1. Create a new json file under the **POSRequestHandlerExtension** folder. Name it "manifest.json."
+1. Create a new json file under the **POSRequestHandlerExtension** folder. Name it **manifest.json**.
 
 1. In the **manifest.json** file, copy and paste the following code. Be sure to delete the default generated code before copying this code.
 
@@ -277,7 +277,9 @@ The following example shows how to override `GetSerialNumberClientRequestHandler
 
 1. Compile and rebuild the project.
 
-## How to test your extension
+## Test your extension
+
+To test your extension, follow these steps.
 
 1. Press F5 and deploy the POS to test your customization.
 1. After POS launches, sign in to POS and add a serial item to a transaction.
