@@ -2,7 +2,7 @@
 title: Extend the point of sale (POS) Dual display view
 description: Learn how to extend the POS Dual display view so that it shows custom information in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/18/2026
+ms.date: 02/19/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -39,6 +39,8 @@ Add a custom control column in the POS Dual display view to show the cart detail
 
 ## Configure the hardware profile to enable dual display
 
+To configure the hardware profile to enable dual display, follow these steps:
+
 1. Sign in to the client.
 1. Go to **Retail and Commerce > Channel setup > POS setup > POS profiles > Hardware profiles**.
 1. Select the hardware profile that is linked to your register.
@@ -50,6 +52,8 @@ Add a custom control column in the POS Dual display view to show the cart detail
 > You can find the end-to-end (E2E) sample in `...\RetailSDK\POS\Extensions\DualDisplaySample`.
 
 ## Add a new custom control for extension of the POS Dual display view
+
+To add a new custom control for extension of the POS Dual display view, follow these steps:
 
 1. Start Microsoft Visual Studio 2015 in Administrator mode.
 1. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
@@ -596,6 +600,8 @@ Add a custom control column in the POS Dual display view to show the cart detail
 1. Compile and rebuild the project.
 
 ## Validate the customization
+
+To validate the customization, follow these steps:
 
 1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
 1. On the welcome screen, select the **Current transaction** button.
