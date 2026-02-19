@@ -1,4 +1,4 @@
-#How impact analysis works#
+# How impact analysis works #
 
 When a purchase order response is received with a date or quantity change to a line (including cancellation), the Impact Analysis agent automatically identifies which downstream orders and inventory levels are affected. This helps purchasing teams understand the full scope of a supply chain disruption before taking action.
 ## Changes to Purchase Order Lines That Trigger an Impact Analysis
