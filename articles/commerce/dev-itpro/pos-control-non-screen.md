@@ -1,29 +1,28 @@
 ---
 title: Add custom controls to nonscreen designer-based POS views
-description: This article demonstrates how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
+description: Learn how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/14/2024
+ms.date: 02/19/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anvenkat
 ms.search.validFrom: 2017-12-01
 ms.custom: 
   - bap-template
 ---
-
-
 # Add custom controls to nonscreen designer-based POS views
 
 [!include [banner](../../includes/banner.md)]
 
-You can enhance the information displayed on a Microsoft Dynamics 365 Commerce point of sale (POS) view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. You can implement custom controls by using the POS extension framework. 
+This article explains how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
+
+You can enhance the information displayed on a Microsoft Dynamics 365 Commerce point of sale (POS) view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. You can implement custom controls by using the POS extension framework.
 
 > [!NOTE]
 > Currently, you can't place a custom control in a particular location of a POS view. At runtime, the POS loads it in a fixed position.
 
-This article applies to Dynamics 365 Finance, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix. 
+This article applies to Dynamics 365 Finance, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix.
 
 The following table lists the nonscreen layout designer-based views that support custom controls.
 
@@ -43,17 +42,19 @@ The following table lists the screen layout designer based-views that support cu
 
 ## Create the custom control
 
-The following example demonstrates how to add a custom control to one of the  existing POS views using extensions. For example, suppose  you want to show the product availability information in the product details view by adding custom data list that has four columns - Location, Inventory, Reserved, and Ordered.
+The following example shows how to add a custom control to one of the existing POS views by using extensions. For example, suppose you want to show the product availability information in the product details view by adding a custom data list that has four columns - Location, Inventory, Reserved, and Ordered.
 
-A custom control is an HTML page with the custom information to be displayed. A corresponding Typescript file contains the logic for the control. 
+A custom control is an HTML page with the custom information to display. A corresponding TypeScript file contains the logic for the control.
+
+To create the custom control, follow these steps:
 
 1. Open Visual Studio 2015 in administrator mode.
-2. Open Modern POS from **\RetailSDK\POS**.
-3. Under the **POS.Extensions** project, create a new folder named **ProdDetailsCustomColumnExtensions**.
-4. Under **ProdDetailsCustomColumnExtensions**, create a new folder named **ViewExtensions**.
-5. Under **ViewExtensions**, create new folder named **SimpleProductDetails**.
-6. Add a new HTML file inside the **SimpleProductDetails** folder and name it **ProductAvailabilityPanel.html**.  
-7. Open **ProductAvailabilityPanel.html** and add the following code. The code adds a POS data list control to show the product availability information and the width of the control.
+1. Open Modern POS from **\RetailSDK\POS**.
+1. Under the **POS.Extensions** project, create a new folder named **ProdDetailsCustomColumnExtensions**.
+1. Under **ProdDetailsCustomColumnExtensions**, create a new folder named **ViewExtensions**.
+1. Under **ViewExtensions**, create new folder named **SimpleProductDetails**.
+1. Add a new HTML file inside the **SimpleProductDetails** folder and name it **ProductAvailabilityPanel.html**.  
+1. Open **ProductAvailabilityPanel.html** and add the following code. The code adds a POS data list control to show the product availability information and the width of the control.
 
     ```html
     <!DOCTYPE html>
@@ -73,9 +74,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
     </body>
     </html>
     ```
-    
-8. In the **SimpleProductDetails** folder, add a new typescript file and name it **ProductAvailabilityPanel.ts**.
-9. Add the following **import** statements to import the relevant entities and context.
+
+1. In the **SimpleProductDetails** folder, add a new TypeScript file and name it **ProductAvailabilityPanel.ts**.
+1. Add the following **import** statements to import the relevant entities and context.
 
     ```typescript
     import {
@@ -91,15 +92,15 @@ A custom control is an HTML page with the custom information to be displayed. A 
     import { ArrayExtensions } from "PosApi/TypeExtensions";
     import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
     ```
-    
-10. Create a new class named **ProductAvailabilityPanel** and extend it from **SimpleProductDetailsCustomControlBase**.
+
+1. Create a new class named **ProductAvailabilityPanel** and extend it from **SimpleProductDetailsCustomControlBase**.
 
     ```typescript
     export default class ProductAvailabilityPanel extends SimpleProductDetailsCustomControlBase { }
     ```
 
-11. Inside the class, declare the following variables for state and data list information.
- 
+1. Inside the class, declare the following variables for state and data list information.
+
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
     public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
@@ -107,7 +108,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
     public readonly title: Observable<string>;
     private _state: ISimpleProductDetailsCustomControlState;
     ```
-12. Add a class constructor method to initialize the data list columns.
+1. Add a class constructor method to initialize the data list columns.
 
     ```typescript
     constructor(id: string, context: ISimpleProductDetailsCustomControlContext) {
@@ -170,7 +171,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
-13. Add the **OnReady** method to bind the HTML control.
+1. Add the **OnReady** method to bind the HTML control.
 
     ```typescript
     public onReady(element: HTMLElement): void {
@@ -186,8 +187,8 @@ A custom control is an HTML page with the custom information to be displayed. A 
     }
     ```
 
-14. Add the **init** method to get the product availability details so when the page loads, the data is fetched and updated in the data list.
- 
+1. Add the **init** method to get the product availability details so when the page loads, the data is fetched and updated in the data list.
+
      ```typescript
     public init(state: ISimpleProductDetailsCustomControlState): void {
 
@@ -214,9 +215,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
-   
-    The entire code example is shown below.
-   
+
+    The entire code example is shown in the following section.
+
     ```typescript
     import {
         SimpleProductDetailsCustomControlBase,
@@ -339,9 +340,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
         }
     }
     ```
-15. Create a new .json file and under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.
+1. Create a new .json file under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.
 
-16. In the **manifest.json** file, add the following code.
+1. In the **manifest.json** file, add the following code.
 
     ```typescript
      {
@@ -373,8 +374,8 @@ A custom control is an HTML page with the custom information to be displayed. A 
     }
     ```
 
-17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so that during runtime POS includes the extension.
- 
+1. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so that during runtime POS includes the extension.
+
      ```typescript
      {
         "extensionPackages": [
@@ -388,8 +389,8 @@ A custom control is an HTML page with the custom information to be displayed. A 
     }
     ```
 
-18. Open the **tsconfig.json** and comment out the extension package folders from the exclude list. POS uses this file to include or exclude extensions. By default, the list contains the excluded extensions list. If you want to include any extension part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.
- 
+1. Open the **tsconfig.json** and comment out the extension package folders from the exclude list. POS uses this file to include or exclude extensions. By default, the list contains the excluded extensions list. If you want to include any extension as part of the POS, add the extension folder name and comment out the extension from the extension list as shown.
+
     ```typescript
      "exclude": [
         "AuditEventExtensionSample",
@@ -404,11 +405,12 @@ A custom control is an HTML page with the custom information to be displayed. A 
         //"ProdDetailsCustomColumnExtensions"
     ],
     ```
-19. Compile and rebuild the project.
+
+1. Compile and rebuild the project.
 
 ### Access static resources in extensions
 
-To access static resources in extensions to be able to load them in POS, see the following example code that does this using `context.extensionPackageInfo.baseUrl`.
+To access static resources in extensions and load them in POS, see the following example code. The code uses `context.extensionPackageInfo.baseUrl` to access static resources.
 
 ```typescript
 import { IPostProductSaleTriggerOptions, PostProductSaleTrigger } from "PosApi/Extend/Triggers/ProductTriggers";
@@ -438,8 +440,9 @@ export default class BeepSoundPostProductSaleTrigger extends PostProductSaleTrig
 
 ## Validate the customization
 
-1. Press **F5** and deploy the POS to test your customization.
-2. After POS launches, sign in to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
+To validate the customization, follow these steps:
 
+1. Press **F5** and deploy the POS to test your customization.
+1. After POS launches, sign in to POS. Search for any product and go to the product details view. You should see the custom control that you added.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
