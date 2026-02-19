@@ -1,6 +1,6 @@
 ---
 title: Publish media assignments
-description: This article describes how to publish media assignments by using omnichannel media management in Microsoft Dynamics 365 Commerce.
+description: Learn how to publish media assignments by using omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 07/26/2024
 ms.topic: overview
