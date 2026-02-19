@@ -31,7 +31,7 @@ Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microso
 If your Commerce tenant is created with a Commerce version before the version 10.0.46 GA release, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
 
 > [!NOTE] 
-> When you switch from Azure AD B2C to Microsoft Entra External ID, any authentication profiles previously configured for Azure AD B2C no longer appear or are available for use.
+> When you switch from Azure AD B2C to Microsoft Entra External ID, authentication profiles previously configured for Azure AD B2C no longer appear and are unavailable for use.
 
 ## Create a Microsoft Entra external tenant on Azure
 
