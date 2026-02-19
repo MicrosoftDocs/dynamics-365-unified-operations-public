@@ -12,7 +12,7 @@ In most cases, purchasers will not want to spend time on changes to purchase ord
 Based on the impact analysis, purchasers can decide whether to follow up with the supplier. If, for example, the impact is very significant to production and/or sales orders and there is enough time to do so, the purchaser may look for alternatives and have conversations with the supplier and internal stakeholders to see if anything can be done. Based on the details in the impact analysis, they know who to contact.
 
 In situations where the purchaser decides there is no viable mitigation, or when the change does not have impact, the agent helps apply the changes directly to the purchase order from the same user experience, eliminating the need to manually locate and update the order.
-See <Review impact of purchase order changes from vendors>.
+See [Review impact of purchase order changes from vendors](tasks/impact-analysis-review-changes.md).
 
 ## Simulate if purchase order changes have impact ##
 
@@ -23,4 +23,4 @@ Some key use cases for this simulation include:
 - Proactively testing potential scenarios for at-risk or high-priority purchase orders. This could be purchase orders for which you have received no reply yet.
 - Evaluating if supplier proposals to new dates and/or quantities that are communicated after following up solve the impact. This can be done by comparing the output of a simulation to the impact analysis of the communicated change.
 - Evaluating changes received and reviewed in external channels that do not automatically trigger an impact analysis.
-See <Simulate if purchase order changes have impact>.
+See [Simulate if purchase order changes have impact](impact-analysis-simulation.md).
