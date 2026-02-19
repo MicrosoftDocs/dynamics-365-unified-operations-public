@@ -145,7 +145,7 @@ Review and update the **QQQQQQQQQQQFrench electronic invoice (FR)** feature conf
 > To minimize the risk of accidental massive submissions, the system implements forcible default filtering by documents dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for documents processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
 
 1. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
-1. In the **Channel** field, enter **EdiStatus**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
+1. In the **Channel** field, enter **EdiExport**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
 1. In the **Company** field, select the legal entity.
 1. In the **Document context** field, select the **Data channel context** mapping from the **Customer invoice context model** configuration.
 1. In the **Channel type** field, select **Export**.
@@ -154,16 +154,24 @@ Review and update the **QQQQQQQQQQQFrench electronic invoice (FR)** feature conf
 1. In the **Company** field, select a required legal entity.
 1. In the **Document context** field, select the **Data channel context** mapping from the **Import invoice context model** configuration.
 1. In the **Channel type** field, select **Import**.
+1. In the **Status field name** field, enter **ReferenceId**. Enter the value exactly as shown. The system uses it to import incoming electronic invoices statuses.
+1. In the **Model mapping context for status** field, select the **Data channel context** mapping from the **Import invoice status query** configuration.
 1. In the **Import sources** section, select **Add** to create an import source.
 1. In the **Name** field, enter **ResponseXml**. Enter the value exactly as shown.
 1. In the **Data entity name** field, select the **Vendor invoice header** entity.
-1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import** configuration.
+1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import Edicom (FR)** configuration.
+1. Select **Add** to create anonther import source in the **second** line.
+1. In the **Name** field, enter **Status**. Enter the value exactly as shown.
+1. Toggle the checkbox in the **Optional** column.
+1. In the **Data entity name** field, select the **Electronic document receipt log** entity.
+1. In the **Model mapping** field, select the **Edicom life cycle status (FR)** configuration.
+1. Toggle the checkbox in the **Import as business document status file** column.
 1. Select **Save**, and then close the page.
 
-:::image type="content" source="../belgium/emea-bel-einoices-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
+:::image type="content" source="e-inv-fra-integr-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
 > [!NOTE]
-> If you use integration channels other than **EdiStatus** and **EdiImport**, do another configuration for the feature and related context configurations.
+> If you use integration channels other than **EdiExport** and **EdiImport**, do another configuration for the feature and related context configurations.
 
 ## Set up registration numbers
 
