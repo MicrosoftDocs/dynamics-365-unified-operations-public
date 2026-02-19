@@ -94,3 +94,25 @@ Additional visual elements:
 
 **Important Note:**
 > This is a projection based on current planning data. It shows what **would happen** if you accept the change, but the plan has not been updated yet. Once you accept the change and update the purchase order, master planning will need to run to create the new official plan.
+
+
+## Accept changes and apply them to the purchase order ##
+
+Purchasers may accept changes that:
+
+- Have no or low downstream impact.
+- Have an impact, but the purchaser decides to accept anyway. This could be because there is no other option but to accept.
+  
+They can accept changes without navigating back to the purchase order by following the steps:
+- To accept changes when using the Supplier Communications Agent, see Review and accept changes suggested by the agent.
+- To accept changes when using the vendor collaboration Module, see Updating a PO when a vendor suggests changes.
+
+For changes with impact that the purchaser accepts, they now know what the exact impact will be, and can communicate in a targeted manner to relevant colleagues in sales, production, planning, senior management and so on.
+
+## Push back on supplier on changes with impact and evaluate proposals ##
+For changes with impact, purchasers may want to push back on the supplier to:
+   - Request expedited production or shipping 
+   - Ask for split or partial delivery options
+
+The **Impact simulation** functionality within the Impact Analysis capability can help you evaluate proposals from suppliers on increases in quantity and earlier delivery dates than what was communicated in the change request. This can help evaluate whether proposals from suppliers reduce or eliminate the impact.
+
