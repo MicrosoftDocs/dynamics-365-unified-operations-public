@@ -1,66 +1,69 @@
 ---
 title: Extend the point of sale (POS) Dual display view
-description: This article explains how to extend the POS Dual display view so that it shows custom information.
+description: Learn how to extend the POS Dual display view so that it shows custom information in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 02/19/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-05-31
-ms.dyn365.ops.version: 8.0.1
-ms.search.industry: retail
+ms.custom: 
+  - bap-template
 ---
 
 # Extend the point of sale (POS) Dual display view
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to extend the point of sale (POS) Dual display view so that it shows custom information. This article is applicable to Microsoft Dynamics 365 Finance 7.2 or Microsoft Dynamics 365 Retail 7.2 with KB 4091080, and later versions.
+This article explains how to extend the point of sale (POS) Dual display view so that it shows custom information in Microsoft Dynamics 365 Commerce.
 
-You can extend the POS Dual display view by adding a custom control. In the custom control, you can add images, POS data lists, labels, and so on, to show custom information.
+You can extend the POS Dual display view by adding a custom control. In the custom control, you can add images, POS data lists, labels, and other elements to show custom information.
 
 > [!NOTE]
-> You can extend the POS Dual display view only by adding a custom control. The custom control will override the standard content that is shown in the POS Dual display view. The dual display custom control and other extension details information related to dual display will not be shown in the extension details view.
+> You can extend the POS Dual display view only by adding a custom control. The custom control overrides the standard content that the POS Dual display view shows. The dual display custom control and other extension details information related to dual display don't appear in the extension details view.
 
 ## Required steps
 
-Here is an overview of the steps that are required in order to customize the POS Dual display view.
+Here's an overview of the steps that are required to customize the POS Dual display view.
 
 1. Configure the hardware profile to enable dual display.
-2. Create a folder in the POS.Extensions project for extension of the POS Dual display view.
-3. Add a new custom control that includes custom information.
-4. Update the manifest.json and extensions.json files with the extension of the POS Dual display view.
-5. Deploy the changes, and validate the customization.
+1. Create a folder in the POS.Extensions project for extension of the POS Dual display view.
+1. Add a new custom control that includes custom information.
+1. Update the manifest.json and extensions.json files with the extension of the POS Dual display view.
+1. Deploy the changes, and validate the customization.
 
 ## Scenario or business problem
 
-You will add a custom control column in the POS Dual display view to show the cart details and information about the customer and the store employee.
+Add a custom control column in the POS Dual display view to show the cart details and information about the customer and the store employee.
 
 ## Configure the hardware profile to enable dual display
 
+To configure the hardware profile to enable dual display, follow these steps:
+
 1. Sign in to the client.
-2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
-3. Select the hardware profile that is linked to your register.
-4. On the **Dual display** tab, set the **Dual display in use** option to **Yes**.
-5. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-6. Select the **Registers** (**1090**) job, and then select **Run now**.
+1. Go to **Retail and Commerce > Channel setup > POS setup > POS profiles > Hardware profiles**.
+1. Select the hardware profile that is linked to your register.
+1. On the **Dual display** tab, set the **Dual display in use** option to **Yes**.
+1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**.
+1. Select the **Registers** (**1090**) job, and then select **Run now**.
 
 > [!NOTE]
-> You can find the end-to-end (E2E) sample in …\\RetailSDK\\POS\\Extensions\\DualDisplaySample.
+> You can find the end-to-end (E2E) sample in `...\RetailSDK\POS\Extensions\DualDisplaySample`.
 
 ## Add a new custom control for extension of the POS Dual display view
 
+To add a new custom control for extension of the POS Dual display view, follow these steps:
+
 1. Start Microsoft Visual Studio 2015 in Administrator mode.
-2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
-3. Under the **POS.Extensions** project, create a folder that is named **DualDisplayExtension**.
-4. Under the **DualDisplayExtension** folder, create a folder that is named **CustomControl**.
-5. In the **CustomControl** folder, create a HTML file that is named **DualDisplayCustomControl.html**.
+1. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+1. Under the **POS.Extensions** project, create a folder named "DualDisplayExtension."
+1. Under the **DualDisplayExtension** folder, create a folder named "CustomControl."
+1. In the **CustomControl** folder, create an HTML file named "DualDisplayCustomControl.html."
 
-    In the HTML file, you will add a data list control to show the cart details, and text controls to show the total amount, customer name, employee name, and sign-in status.
+    In the HTML file, add a data list control to show the cart details, and text controls to show the total amount, customer name, employee name, and sign-in status.
 
-6. Copy the following code, and paste it into the **DualDisplayCustomControl.html** file.
+1. Copy the following code, and paste it into the **DualDisplayCustomControl.html** file.
 
     ```typescript
     <!DOCTYPE html>
@@ -96,12 +99,12 @@ You will add a custom control column in the POS Dual display view to show the ca
     </html>
     ```
 
-    Next, you will add the resource file that is used to localize the field name.
+    Next, add the resource file that is used to localize the field name.
 
-7. Under the **DualDisplayExtension** folder, create a folder that is named **Resources**.
-8. Under the **Resources** folder, create a folder that is named **Strings**.
-9. Under the **Strings** folder, create a folder that is named **en-US**.
-10. In the en-US folder add a new resources file and and change the file extension and name to resources.resjson and inside the resources.resjson file copy paste the below resource strings.
+1. Under the **DualDisplayExtension** folder, create a folder named "Resources."
+1. Under the **Resources** folder, create a folder named "Strings."
+1. Under the **Strings** folder, create a folder named "en-US."
+1. In the **en-US** folder, add a new resources file. Change the file extension and name to **resources.resjson**. Inside the **resources.resjson** file, copy and paste the following resource strings.
 
     ```typescript
     //======================================================================================================
@@ -140,8 +143,8 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ```
 
-11. In the **CustomControl** folder, create a TypeScript file (.ts file) that is named **DualDisplayCustomControl.ts**.
-12. Copy the following code, and paste it into the **DualDisplayCustomControl.ts** file. This code imports the relevant entities and context.
+1. In the **CustomControl** folder, create a TypeScript file (.ts file) named "DualDisplayCustomControl.ts."
+1. Copy the following code, and paste it into the **DualDisplayCustomControl.ts** file. This code imports the relevant entities and context.
 
     ```typescript
     import {
@@ -157,13 +160,13 @@ You will add a custom control column in the POS Dual display view to show the ca
     import { ProxyEntities } from "PosApi/Entities";
     ```
 
-13. In the **DualDisplayCustomControl.ts** file, create a class that is named **DualDisplayCustomControl**, and extend it from the **DualDisplayCustomControlBase** class. You extend from the **DualDisplayCustomControlBase** class to get all the events that are exposed for dual display.
+1. In the **DualDisplayCustomControl.ts** file, create a class named "DualDisplayCustomControl." Extend it from the **DualDisplayCustomControlBase** class. By extending the **DualDisplayCustomControlBase** class, you get all the events that are exposed for dual display.
 
     ```typescript
     export default class DualDisplayCustomControl extends DualDisplayCustomControlBase { }
     ```
 
-14. Inside the **DualDisplayCustomControl** class, add the following variables to get the cart, customer, and employee details.
+1. Inside the **DualDisplayCustomControl** class, add the following variables to get the cart, customer, and employee details.
 
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsoft_Pos_Extensibility_Samples_DualDisplay";
@@ -193,10 +196,11 @@ You will add a custom control column in the POS Dual display view to show the ca
     private readonly_cartLinesObservable: ObservableArray<ProxyEntities.CartLine>;
     private readonly_customer: Observable<ProxyEntities.Customer>;
     private readonly_loggedOn: Observable<boolean>;
-    private readonly_employee: Observable<ProxyEntities.Employee>; private_selectedTenderLines: ProxyEntities.TenderLine[];
+    private readonly_employee: Observable<ProxyEntities.Employee>;
+    private_selectedTenderLines: ProxyEntities.TenderLine[];
     ```
 
-15. Create a class constructor method to initialize all the variables.
+1. Create a class constructor method to initialize all the variables.
 
     ```typescript
     constructor(id: string, context: IDualDisplayCustomControlContext) {
@@ -311,7 +315,7 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ```
 
-16. Add the **onReady** method to bind the control to the specified HTML element.
+1. Add the **onReady** method to bind the control to the specified HTML element.
 
     ```typescript
     /**
@@ -329,7 +333,7 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ```
 
-17. Add the **init** method to initialize all the controls.
+1. Add the **init** method to initialize all the controls.
 
     ```typescript
     /**
@@ -345,7 +349,7 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ```
 
-    Here is what the overall class should look like.
+    Here's what the overall class should look like.
 
     ```typescript
     import {
@@ -527,8 +531,8 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ``` 
 
-18. In the **DualDisplayExtension** folder, create a JavaScript Object Notation (JSON) file (.json file) that is named **manifest.json**.
-19. Copy the following code, and paste it into the **manifest.json** file. Delete the default generated code before you copy this code.
+1. In the **DualDisplayExtension** folder, create a JavaScript Object Notation (JSON) file (.json file) named "manifest.json."
+1. Copy the following code, and paste it into the **manifest.json** file. Delete the default generated code before you copy this code.
 
     ```typescript
     {
@@ -555,7 +559,7 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ```
 
-20. Open the **extensions.json** file under the **POS.Extensions** project, and update it with the **DualDisplayExtension** samples. In that way, the POS will include this extension during runtime.
+1. Open the **extensions.json** file under the **POS.Extensions** project. Update it with the **DualDisplayExtension** samples. This update makes the POS include this extension during runtime.
 
     ```typescript
     {
@@ -573,7 +577,7 @@ You will add a custom control column in the POS Dual display view to show the ca
     }
     ```
 
-21. Open the **tsconfig.json** file, and comment out the extension package folders in the exclude list. The POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions. If you want to include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the extension list, as shown here.
+1. Open the **tsconfig.json** file. Comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains all the excluded extensions. If you want to include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the extension list, as shown in the following code.
 
     ```typescript
     "exclude": [
@@ -593,15 +597,16 @@ You will add a custom control column in the POS Dual display view to show the ca
     ],
     ```
 
-22. Compile and rebuild the project.
+1. Compile and rebuild the project.
 
 ## Validate the customization
 
-1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
-2. On the welcome screen, select the **Current transaction** button.
-3. Add any item to the transaction. For example, add item number **0005**.
-4. Add any customer to transaction. For example, add **Karen Berg**.
-5. The dual display should show the cart, total, employee, and customer details.
+To validate the customization, follow these steps:
 
+1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
+1. On the welcome screen, select the **Current transaction** button.
+1. Add any item to the transaction. For example, add item number **0005**.
+1. Add any customer to transaction. For example, add **Karen Berg**.
+1. The dual display shows the cart, total, employee, and customer details.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

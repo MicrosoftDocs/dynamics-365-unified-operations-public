@@ -1,15 +1,15 @@
 ---
 title: Add custom controls to POS views
-description: This article explains how you can enhance the information that appears in the Dynamics 365 Commerce POS views by adding custom controls.
+description: Learn how you can enhance the information that appears in Microsoft Dynamics 365 Commerce POS views by adding custom controls.
 author: josaw1
-ms.date: 09/15/2017
+ms.date: 02/19/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-09-15
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 
@@ -17,15 +17,17 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-To enhance the information that appears in the views in Microsoft Dynamics 365 Commerce POS, you can add custom controls. A custom control lets you add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework.
+This article explains how you can enhance the information that appears in Microsoft Dynamics 365 Commerce POS views by adding custom controls.
 
-In Cart view, you can add custom controls by using the POS screen layout designer. In this case, you can drag a custom control to a location of your choice, and you can also set the height and width of the control. You then write the extension logic in the extension project.
+To enhance the information that appears in the views in Microsoft Dynamics 365 Commerce POS, add custom controls. A custom control lets you add your own custom information to the existing POS views. Use the POS extension framework to implement custom controls.
+
+In Cart view, add custom controls by using the POS screen layout designer. Drag a custom control to a location of your choice, and set the height and width of the control. Then, write the extension logic in the extension project.
 
 For example, in the following illustration, three custom controls were added by using the screen layout designer.
 
-![POS screen layout designer in Cart view.](media/pos-custom-control-1.png)
+:::image type="content" source="media/pos-custom-control-1.png" alt-text="Screenshot of the POS screen layout designer in Cart view.":::
 
-Currently, only Cart view lets you use the screen layout designer to add custom controls. For all other screens, you should do the layout in the extension project. One advantage of using the screen layout designer is that you can drag the custom control wherever you want on the screen. On other screens, the position is fixed, but you can modify the position by specifying the height and width.
+Currently, only Cart view lets you use the screen layout designer to add custom controls. For all other screens, do the layout in the extension project. One advantage of using the screen layout designer is that you can drag the custom control wherever you want on the screen. On other screens, the position is fixed, but you can modify the position by specifying the height and width.
 
 ## Custom control matrix
 
@@ -46,22 +48,24 @@ The following table shows the views that support custom controls in POS.
 
 ## Create a custom control
 
-The following example shows how you can use extension to add custom controls to one of the existing POS views. For this example, we want information about product availability to appear in the product details view. To show this information, we will add a custom data list that has four columns: **Location**, **Inventory**, **Reserved**, and **Ordered**. You can use the same procedure to show other custom information in the POS views.
+The following example shows how you can use extension to add custom controls to one of the existing POS views. For this example, you want information about product availability to appear in the product details view. To show this information, add a custom data list that has four columns: **Location**, **Inventory**, **Reserved**, and **Ordered**. You can use the same procedure to show other custom information in the POS views.
+
+To create a custom control, follow these steps:
 
 1. On the developer virtual machine (VM), start Microsoft Visual Studio 2015.
-2. Open the **ModernPos.sln** file from RetailSDK\\POS.
-3. In the **POS.Extensions** project, add a new folder, and name it **SampleExtensions**.
-4. In the new **SampleExtensions** folder, add another folder, and name it **ViewExtensions**.
-5. In the **ViewExtensions** folder, add another folder, and name it **SimpleProductDetails**.
+1. Open the **ModernPos.sln** file from RetailSDK\\POS.
+1. In the **POS.Extensions** project, add a new folder, and name it **SampleExtensions**.
+1. In the new **SampleExtensions** folder, add another folder, and name it **ViewExtensions**.
+1. In the **ViewExtensions** folder, add another folder, and name it **SimpleProductDetails**.
 
     > [!NOTE]
-    > If you're extending a view, you should give the folder the same name as the view, to make navigation and code maintenance easier.
+    > If you're extending a view, give the folder the same name as the view. This naming convention makes navigation and code maintenance easier.
 
-6. In the **SimpleProductDetails** folder, add a new .html file, and name it **ProductAvailabilityPanel.html**. Also add a new .ts file, and name it **ProductAvailabilityPanel.ts**. In the .html file, you can add whatever information you want the custom control to show. In the .ts file, you add the corresponding logic.
+1. In the **SimpleProductDetails** folder, add a new .html file, and name it **ProductAvailabilityPanel.html**. Also add a new .ts file, and name it **ProductAvailabilityPanel.ts**. In the .html file, add whatever information you want the custom control to show. In the .ts file, add the corresponding logic.
 
     A custom control is a simple HTML page that has your custom information.
 
-7. Open the **ProductAvailabilityPanel.html** file, and paste the following code into it.
+1. Open the **ProductAvailabilityPanel.html** file, and paste the following code into it.
 
     ```html
     <!DOCTYPE html>
@@ -82,11 +86,11 @@ The following example shows how you can use extension to add custom controls to 
     </html>
     ```
 
-    In the file, you add the POS data list control to show the product availability information. You also specify the width of the control.
+    In the file, add the POS data list control to show the product availability information. You also specify the width of the control.
 
     You can copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ProductAvailabilityPanel.html.
 
-8. Open the **ProductAvailabilityPanel.ts** file, and paste the following code into it.
+1. Open the **ProductAvailabilityPanel.ts** file, and paste the following code into it.
 
     ```typescript
     import {
@@ -99,14 +103,16 @@ The following example shows how you can use extension to add custom controls to 
     import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
     ```
 
-    To write our custom logic, we imported the list of controls and other data objects from the POS application programming interface (API).
+    To write your custom logic, import the list of controls and other data objects from the POS application programming interface (API).
 
 ## Add constructor and initialize data list
 
-Next, you must add the constructor and initialize the data list with the product availability information. In this way, when you navigate to the page, the product availability information is loaded.
+Next, you add the constructor and initialize the data list with the product availability information. When you navigate to the page, the product availability information loads.
 
 > [!NOTE]
-> We didn't copy the source code here, but you can copy the full code from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails\\ProductAvailabilityPanel.ts.
+> The following steps don't include the source code, but you can copy the full code from `RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SimpleProductDetails\ProductAvailabilityPanel.ts`.
+
+To a add constructor and initialize data list, follow these steps:
 
 1. In your **SampleExtensions** folder, add a new .json file, name it **manifest.json**, and paste the following code into it.
 
@@ -144,15 +150,15 @@ Next, you must add the constructor and initialize the data list with the product
     }
     ```
 
-    During runtime, the manifest informs the POS that a custom control has been added in **SimpleProductDetailsView**. In the preceding code example, we included all the required metadata that the POS requires in order to load the control.
+    During runtime, the manifest informs the POS that a custom control is added in **SimpleProductDetailsView**. In the preceding code example, it includes all the required metadata that the POS requires in order to load the control.
 
-    - **Extend** – Inform the POS that there is an extension for an existing POS feature.
+    - **Extend** – Inform the POS that there's an extension for an existing POS feature.
     - **Views** – Specify that an existing POS view is being extended.
-    - **View Name** – Specify the view that is being extended.
-    - **Controls config** – Specify the control that you are adding, such as **Custom control**.
-    - **Control metadata** – Specify the name, the path of the .html file path, and the path of the typescript module (that is, the .ts file).
+    - **View Name** – Specify the view that's being extended.
+    - **Controls config** – Specify the control that you're adding, such as **Custom control**.
+    - **Control metadata** – Specify the name, the path of the .html file path, and the path of the TypeScript module (that is, the .ts file).
 
-3. Open the **extensions.json** file, and paste the following code into it.
+1. Open the **extensions.json** file, and paste the following code into it.
 
     ```json
     {
@@ -164,12 +170,12 @@ Next, you must add the constructor and initialize the data list with the product
     }
     ```
 
-    In the extensions.json file, you specify the various extensions that you have. In this case, we added a new extension folder. Therefore, we must specify that folder.
+    In the extensions.json file, you specify the various extensions that you have. In this case, you added a new extension folder. Therefore, you must specify that folder.
     
     > [!NOTE]
     > Each extension folder or package that you specify here should have a manifest.
 
-4. Open the **tsconfig.json** file, and include your extension. Paste the following code into the file.
+1. Open the **tsconfig.json** file, and include your extension. Paste the following code into the file.
 
     ```json
     "extends": "../tsconfigs/tsmodulesconfig",
@@ -180,12 +186,13 @@ Next, you must add the constructor and initialize the data list with the product
 
 ## Test the extension
 
+To test the extension, follow these steps:
+
 1. Press F5, and deploy the POS to test your customization.
-2. After the POS is started, sign in. Then search for any product, and open to product details view. You should now see the custom control that you added. Here is an example.
+1. After the POS starts, sign in. Then search for any product, and open the product details view. You should now see the custom control that you added. Here's an example.
 
     ![Product availability information in the product details view.](media/pos-custom-control-2.png)
 
-You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.
-
+You can copy the full code for this sample from `RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SimpleProductDetail`.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
