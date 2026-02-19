@@ -9,8 +9,8 @@ ms.custom:
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: France
-ms.search.validFrom: 2026-03-01
-ms.dyn365.ops.version: AX 10.0.45
+ms.search.validFrom: 2026-04-15
+ms.dyn365.ops.version: AX 10.0.48
 ---
 
 # Electronic invoicing and Electronic reporting for France
@@ -108,12 +108,12 @@ After you complete all the configuration steps described in the previous chapter
     
 ## Configure the electronic invoicing feature
 
-The **French electronic invoice (FR)** feature publishes some parameters with default values. Before you deploy the feature, review the default values and update them so they reflect your business operations.
+The **QQQQQQQQQQQFrench electronic invoice (FR)** feature publishes some parameters with default values. Before you deploy the feature, review the default values and update them so they reflect your business operations.
 
-Review and update the **French electronic invoice (FR)** feature configuration:
+Review and update the **QQQQQQQQQQQFrench electronic invoice (FR)** feature configuration:
 
 1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Copy the imported **French electronic invoice (FR)** globalization feature and select your configuration provider, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Copy the imported **QQQQQQQQQQQFrench electronic invoice (FR)** globalization feature and select your configuration provider, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, check that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify these required **Edicom** connection and integration parameters:
 
@@ -353,10 +353,16 @@ Set up units of measure.
 
 ## Issue electronic invoices
 
-After you complete the required configuration steps, generate and submit electronic invoices for posted invoices: go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+After you complete the required configuration steps, generate and submit electronic invoices for posted invoices: 
+
+### Start submission of electronic documents
+
+go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 > [!IMPORTANT]
 > In current implementations, the standard submission procedure only generates electronic invoices and stores them in the service. It doesn't submit them. To submit invoices, complete these extra steps.
+
+### Run submission process in export channels
 
 Follow these steps to submit the generated electronic invoices.
 
@@ -368,6 +374,19 @@ Check the submission results at **Organization administration** \> **Periodic** 
 
 > [!NOTE]
 > Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
+
+### Update documents statuses
+
+QQQQQQQQQQQQQQQQQQQQQ
+
+### Configure documents statuses
+
+WWWWWWWWWWWWWWWWWWW
+
+### Enter documents statuses
+
+WWWWWWWWWWWWWWWWWWW
+
 
 ## Receive incoming electronic invoices
 
@@ -383,7 +402,7 @@ Follow the steps in [Import vendor electronic invoices](../europe/emea-peppol-im
 
 ### Receive electronic invoices
 
-After you complete the configuration, receive incoming electronic invoices in the **PEPPOL** format.
+After you complete the configuration, receive incoming electronic invoices in the French-specific UBL-based format.
 
 > [!NOTE]
 > Review incoming electronic invoices in the **Inbound** folder and its subfolders in your [Ediwin](https://ediwin.edicomgroup.com/) portal.
