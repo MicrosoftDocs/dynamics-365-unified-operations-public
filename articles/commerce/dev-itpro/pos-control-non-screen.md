@@ -2,7 +2,7 @@
 title: Add custom controls to nonscreen designer-based POS views
 description: Learn how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/18/2026
+ms.date: 02/19/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -45,6 +45,8 @@ The following table lists the screen layout designer based-views that support cu
 The following example shows how to add a custom control to one of the existing POS views by using extensions. For example, suppose you want to show the product availability information in the product details view by adding a custom data list that has four columns - Location, Inventory, Reserved, and Ordered.
 
 A custom control is an HTML page with the custom information to display. A corresponding TypeScript file contains the logic for the control.
+
+To create the custom control, follow these steps:
 
 1. Open Visual Studio 2015 in administrator mode.
 1. Open Modern POS from **\RetailSDK\POS**.
@@ -437,6 +439,8 @@ export default class BeepSoundPostProductSaleTrigger extends PostProductSaleTrig
 ```
 
 ## Validate the customization
+
+To validate the customization, follow these steps:
 
 1. Press **F5** and deploy the POS to test your customization.
 1. After POS launches, sign in to POS. Search for any product and go to the product details view. You should see the custom control that you added.
