@@ -19,7 +19,7 @@ ms.custom:
 
 This article provides an overview of the various Microsoft Dynamics 365 Commerce in-store topologies.
 
-<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">:::image type="content" source="media/CHANNEL/INSTORE/Topology.jpg" alt-text="Screenshot of choosing the right store topology.":::</a>
+<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="Choose the Right Dynamics 365 Retail In-Store Topology diagram.">:::image type="content" source="media/CHANNEL/INSTORE/Topology.jpg" alt-text="Choose the Right Dynamics 365 Retail In-Store Topology diagram.":::</a>
 
 ## Supported capabilities when connectivity is lost
 
