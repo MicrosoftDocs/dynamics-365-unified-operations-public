@@ -414,13 +414,10 @@ Sample code for custom filter extensions is available in the Retail SDK at `...\
 
 ## Validate the customization
 
-Follow these steps to validate the customization.
+To validate the customization, follow these steps.
 
 1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
-1. Search for customer **2001** by using the search bar on the top.
-
-    You should see the custom columns that you added.
-
+1. Search for customer **2001** by using the search bar on the top. You should see the custom columns that you added.
 1. Select a customer, and then select the new app bar button. A dialog box should appear that contains details about the selected customer.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
