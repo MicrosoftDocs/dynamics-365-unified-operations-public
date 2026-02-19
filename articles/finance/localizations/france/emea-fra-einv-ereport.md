@@ -50,7 +50,7 @@ Configure the common part of the Azure resources required for Electronic invoici
 
 Add the following element to the key vault:
 
-- Add the secret for the **token** that authorizes access to Edicom services. Obtain it from Edicom as described in the prerequisites.
+- Add the secret for the **token** that authorizes access to Edicom services. Obtain it from Edicom as described in the prerequisites. You can find more details in the dedicated [chapter](#EdCred), once other required parameters are also configured.
 
 ## Set up electronic invoicing Key Vault parameters
 
@@ -124,7 +124,7 @@ Review and update the **QQQQQQQQQQQFrench electronic invoice (FR)** feature conf
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
-Watch the overview of the Edicom credentials configuration in Finance.
+<a id="EdCred"></a>Watch the overview of the Edicom credentials configuration in Finance.
 
 > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
 
