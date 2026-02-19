@@ -91,6 +91,8 @@ After you complete all the configuration steps described in the previous chapter
     - **UBL Project e-invoice (FR)**
     - **UBL Project e-credit note (FR)**
     - **Edicom life cycle status format (FR)**
+    - **Customer invoice context model**
+    - **Export invoice context model**
     - ...
 
     > [!NOTE]
@@ -102,6 +104,7 @@ After you complete all the configuration steps described in the previous chapter
     - **Vendor invoice Mapping to destination (FR)**
     - **Import invoice context model**
     - **Import invoice status query**
+    - ...
 
      > [!IMPORTANT]
     > Make sure that the **Vendor invoice Mapping to destination (FR)** Electronic Reporting configuration is marked as **Default for model mapping**.
