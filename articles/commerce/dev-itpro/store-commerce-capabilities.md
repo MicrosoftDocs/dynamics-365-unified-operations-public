@@ -1,11 +1,10 @@
 ---
 title: Store Commerce app capabilities
-description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the capabilities of the Store Commerce app in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/25/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-09-30
@@ -17,11 +16,11 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The Store Commerce app is the modern point of sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage back-office operations such as inventory and order-proccessing. The app also enables businesses to manage customer relationships with loyalty and clienteling. 
+This article provides an overview of the capabilities of the Store Commerce app in Microsoft Dynamics 365 Commerce.
 
-Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete omni-channel solution. For example, a customer can buy a product online and pick it up in a nearby store, thereby continuing their shopping journey across channels without losing any data. 
+The Store Commerce app is the modern point of sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage back-office operations such as inventory and order processing. The app also enables businesses to manage customer relationships with loyalty and clienteling. 
 
-This article provides an overview of the Store Commerce app capabilities.
+Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete omni-channel solution. For example, a customer can buy a product online and pick it up in a nearby store so they can continue their shopping journey across channels without losing any data.
 
 ## Platform
 
@@ -31,18 +30,18 @@ This article provides an overview of the Store Commerce app capabilities.
 | Headless Commerce | The Commerce Scale Unit hosts the headless commerce engine. The headless commerce engine serves as the central point for all commerce business logic and powers a complete omni-channel solution. | <p>[Architecture overview](commerce-architecture.md)</p><p>[Headless architecture](retail-server-architecture.md)</p> | [Tech talk](https://community.dynamics.com/blogs/post/?postid=440e7ceb-b166-44ab-ad26-bcd1753bb4b9) |
 | Commerce headquarters | Commerce headquarters provides back-office capabilities that enable the configuration of products, employees, business processes, pricing, and other functionality that is required for the business. | [Architecture overview](commerce-architecture.md) | |
 | Point of sale (POS) | The Store Commerce app is the POS experience for Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. In addition, it provides several deployment options to retailers, helps improve performance, and offers improved application lifecycle management (ALM). | [Store Commerce App](store-commerce.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=fe3ca68a-642e-4b78-8994-bc8814a15dcd)</p><p>[Video](https://youtu.be/7B332XH_zfs)</p><p>[Migration from MPOS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md)</p> |
-| Cloud deployment | Multiple instances of Commerce Scale Units can be deployed for load distribution and geo proximity. | [Cloud deployment](../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md) | |
-| On-premises deployment | Using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) | |
+| Cloud deployment | You can deploy multiple instances of Commerce Scale Units for load distribution and geo proximity. | [Cloud deployment](../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md) | |
+| On-premises deployment | By using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) | |
 
 ## Device management
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Multiple form factors | The Store Commerce app is supported on multiple device form factors, such as PCs, tablets, and mobile devices. The responsive user interface (UI) enables the layout to automatically be resized and adjust to the screen size. | [Visual configurations](../pos-screen-layouts.md) |  |
-| Cross-platform | The Store Commerce app is supported on web, Windows, iOS, and Android platforms. | [Platforms](hybridapp.md) | |
-| Branding | The screen designer lets you customize screen layouts to meet your business requirements. In addition, themes, layouts, colors, and images can be created based on employee roles, and can then be shared across users for brand consistency and ease of use. | [Visual configurations](../pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
+| Multiple form factors | The Store Commerce app supports multiple device form factors, such as PCs, tablets, and mobile devices. The responsive user interface (UI) automatically resizes and adjusts the layout to the screen size. | [Visual configurations](../pos-screen-layouts.md) |  |
+| Cross-platform | The Store Commerce app supports web, Windows, iOS, and Android platforms. | [Platforms](hybridapp.md) | |
+| Branding | The screen designer lets you customize screen layouts to meet your business requirements. In addition, you can create themes, layouts, colors, and images based on employee roles, and then share them across users for brand consistency and ease of use. | [Visual configurations](../pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topology | Different in-store topologies are supported, based on network availability. | <p>[Topology](retail-modern-pos-architecture.md)</p><p>[Infographic](retail-in-store-topology.md)</p> | |
-| Multi-device management | Multiple devices across stores can be easily managed from Commerce headquarters. | [Activation](set-up-activation-accounts-validate-devices-hq.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=cf7c7f33-9f1f-48b4-b866-f4398ece11df) |
+| Multi-device management | You can easily manage multiple devices across stores from Commerce headquarters. | [Activation](set-up-activation-accounts-validate-devices-hq.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=cf7c7f33-9f1f-48b4-b866-f4398ece11df) |
 
 ## Employee management
 
@@ -50,8 +49,8 @@ This article provides an overview of the Store Commerce app capabilities.
 |---|---|---|---|
 | Sign-in | Each store employee can have a dedicated sign-in. Sign-in types include user name, bar code, magnetic stripe reader (MSR), biometrics, and Microsoft Entra ID. | <p>[Microsoft Entra ID](../aad-pos-logon.md)</p><p>[Extended logon](../extended-logon.md)</p> | |
 | Permissions | Different levels of permissions are supported for employees, such as permission to create orders and permission to edit orders. | [Permissions](../tasks/create-pos-permission-groups.md) | |
-| Time and attendance management | Attendance can be managed by using the Time Clock function. Attendance data can be processed into payroll by using the Dynamics 365 Human Resources app. | [Time management](../retail-time-attendance.md) | |
-| Sales commission | Sales can be tracked by sales representative to calculate commissions or other incentives. | [Commission](../pos-sales-groups-track-commissions.md) | |
+| Time and attendance management | Use the Time Clock function to manage attendance. You can process attendance data into payroll by using the Dynamics 365 Human Resources app. | [Time management](../retail-time-attendance.md) | |
+| Sales commission | Track sales by sales representative to calculate commissions or other incentives. | [Commission](../pos-sales-groups-track-commissions.md) | |
 
 ## Merchandising
 
@@ -81,24 +80,24 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Customer management | Create, edit, and manage customer accounts. Customer accounts can be managed in async mode to avoid real-time processing. | [Management](../customer-mgmt-stores.md) | |
-| Customer attributes | The Customer attributes framework enables additional customer related data to be captured based on business requirements. | [Attributes](customer-attributes.md) | |
+| Customer management | Create, edit, and manage customer accounts. Manage customer accounts in async mode to avoid real-time processing. | [Management](../customer-mgmt-stores.md) | |
+| Customer attributes | The Customer attributes framework enables you to capture more customer related data based on business requirements. | [Attributes](customer-attributes.md) | |
 | Customer details page | A rich customer details page provides an omni-channel view of the customer's interactions across all channels. These interactions include purchases, wish lists, and loyalty points. | | |
 | Cloud-powered customer search | Search customers by name, telephone number, email address, loyalty card, address, and so on. | [Cloud powered search](../customer-search.md) | |
 | Loyalty and rewards | Customers can join loyalty programs, and earn and redeem loyalty points across channels. | [Loyalty](../set-up-customer-loyalty-program.md) | [Video](https://learn-video.azurefd.net/vod/player?id=6559a7a7-7fef-4051-b423-bfc2b202f744) |
-| Clienteling | Manage key customers by using a client book, and track activities and notes on the customer profile. Dynamics 365 Customer Insights integration lets store employees get cues about the next best action for each customer. | [Clienteling](clienteling-overview.md#activities-and-notes) | [Video](https://learn-video.azurefd.net/vod/player?id=d26bcf4b-1d98-48db-b7f8-1bea8b4bb70d) |
+| Clienteling | Use a client book to manage key customers, and track activities and notes on the customer profile. Dynamics 365 Customer Insights integration lets store employees get cues about the next best action for each customer. | [Clienteling](clienteling-overview.md#activities-and-notes) | [Video](https://learn-video.azurefd.net/vod/player?id=d26bcf4b-1d98-48db-b7f8-1bea8b4bb70d) |
 
 ## Pricing and discounts
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Trade agreements | Pricing managers can use trade agreements to define special prices, based on long-term deals for specific customers. | [Pricing](../price-management.md)| [Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
-| Sales agreements | Pricing managers can use sales agreements to define contract-based prices in business-to-business (B2B) commerce scenarios. | [Pricing](../price-management.md) | |
-| Price adjustments | Pricing managers can use the price adjustments capability to create, track, and manage price markdowns for their products over time. | [Price adjustments](../price-adjustments-discounts.md) | |
-| Discounts | Pricing managers can set up several types of discounts to run a variety of promotions. These discounts include simple discounts, quantity discounts, threshold discounts, mix and match discounts, tender-based discounts, and shipping discounts. | [Discounts](../retail-discounts-overview.md) | |
-| Coupons | Pricing managers can set up coupon codes or bar codes, link them to discounts, and distribute them to customers. Sales associates can add coupons to sales transactions or remove them. | [Coupons](../coupons.md) | |
-| Price groups | Pricing managers can use the price group capability to define contextual prices, based on channels, catalogs, affiliations, or loyalty programs. | [Pricing](../price-management.md) | |
-| Available promotions | Sales associates can easily look up available promotions for products in the store, products that have been added to a transaction, and so on. | [Pricing functions](../pos-pricing-functions.md) | |
+| Trade agreements | Pricing managers use trade agreements to define special prices, based on long-term deals for specific customers. | [Pricing](../price-management.md)| [Video](https://www.youtube.com/watch?v=r2VD8IxHesM) |
+| Sales agreements | Pricing managers use sales agreements to define contract-based prices in business-to-business (B2B) commerce scenarios. | [Pricing](../price-management.md) | |
+| Price adjustments | Pricing managers use the price adjustments capability to create, track, and manage price markdowns for their products over time. | [Price adjustments](../price-adjustments-discounts.md) | |
+| Discounts | Pricing managers set up several types of discounts to run various promotions. These discounts include simple discounts, quantity discounts, threshold discounts, mix and match discounts, tender-based discounts, and shipping discounts. | [Discounts](../retail-discounts-overview.md) | |
+| Coupons | Pricing managers set up coupon codes or bar codes, link them to discounts, and distribute them to customers. Sales associates can add coupons to sales transactions or remove them. | [Coupons](../coupons.md) | |
+| Price groups | Pricing managers use the price group capability to define contextual prices, based on channels, catalogs, affiliations, or loyalty programs. | [Pricing](../price-management.md) | |
+| Available promotions | Sales associates can easily look up available promotions for products in the store, products added to a transaction, and so on. | [Pricing functions](../pos-pricing-functions.md) | |
 | Price checks | Sales associates can quickly check active sales prices of products in the store. | [Pricing functions](../pos-pricing-functions.md) | |
 | Price overrides | Sales associates who have the required permissions can override system-configured or calculated prices. | [Pricing functions](../pos-pricing-functions.md) | |
 | Manual discounts | Sales associates who have the required permissions can apply manual discounts to sales transaction or sales lines. | [Pricing functions](../pos-pricing-functions.md) | |
@@ -117,20 +116,20 @@ This article provides an overview of the Store Commerce app capabilities.
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
 | Taxes | The Store Commerce app supports many types of indirect taxes, such as sales tax, value-added tax (VAT), goods and services tax (GST), unit-based fees, and withholding tax. | [Taxes](/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json) | |
-| Charges | Charges can be configured at the line level, at the header level, as auto-charges, by channel, and so on. | [Charges](../omni-auto-charges.md) | |
+| Charges | You can configure charges at the line level, at the header level, as autocharges, by channel, and so on. | [Charges](../omni-auto-charges.md) | |
 
 ## Order processing and fulfillment
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Order creation | An order can be created for shipment or for pickup at a nearby store. Time slots can be provided for pickup. | [Overview](../customer-orders-overview.md) | |
-| Order modification | An order can be modified, returned, canceled, and so on. | <p>[Cancel](../customer-orders-overview.md#cancel-a-customer-order)</p><p>[Returns](../pos-returns.md)</p> | |
+| Order creation | Create an order for shipment or for pickup at a nearby store. Provide time slots for pickup. | [Overview](../customer-orders-overview.md) | |
+| Order modification | Modify, return, cancel, and more. | <p>[Cancel](../customer-orders-overview.md#cancel-a-customer-order)</p><p>[Returns](../pos-returns.md)</p> | |
 | Search | Search for and filter orders by using order-specific information. | [Search](../enhancedorderrecall.md) | |
-| Order attributes | The Order attribute framework enables additional order-related information to be captured based on business requirements. | [Attributes](order-attributes.md) | |
-| Direct delivery | Items can be marked for direct delivery by a vendor to a customer address. Direct delivery is also known as drop shipping. | [Direct delivery](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
+| Order attributes | The Order attribute framework enables you to capture more order-related information based on business requirements. | [Attributes](order-attributes.md) | |
+| Direct delivery | Mark items for direct delivery by a vendor to a customer address. Direct delivery is also known as drop shipping. | [Direct delivery](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Quotation | Store employees can create quotations for customers, and can specify a special price, manual discounts, and a quotation validity date. | [Quotation](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
 | Fulfillment | Stores can pick, pack, and ship orders. A packing slip can be added to the packages that are ready for shipment. | [Fulfillment](../order-fulfillment-overview.md) | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=e72dff7e-3652-4aa5-b2b9-e502f412f89e)</p> <p>[Video](https://learn-video.azurefd.net/vod/player?id=50c67f62-16a0-47e8-af5e-0d3e69f3da71)</p>|
-| Distributed order management | The Store Commerce app supports intelligent order fulfillment optimization where business strategies can be configured based on the nature of the business, the type of customer, the origin of an order, and the delivery method for an order. | [DOM](../dom.md) | [Video](https://learn-video.azurefd.net/vod/player?id=83cec34a-642e-4a0e-a96d-3357f73f41bd)|
+| Distributed order management | The Store Commerce app supports intelligent order fulfillment optimization where you can configure business strategies based on the nature of the business, the type of customer, the origin of an order, and the delivery method for an order. | [DOM](../dom.md) | [Video](https://learn-video.azurefd.net/vod/player?id=83cec34a-642e-4a0e-a96d-3357f73f41bd)|
 
 ## Inventory management
 
@@ -173,15 +172,15 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Print receipts | Receipts of various types, such as sales receipts, credit card receipts, gift receipts, and invoices, can be printed by default or after cashier confirmation at checkout. They can also be reprinted from the journal. | [Printing](../receipt-templates-printing.md) | |
-| Email receipts | Receipts can be emailed from the POS after a checkout is completed. | [Email](../email-receipts.md) | |
-| Design receipts | Store receipts can be customized so that they show data and layouts that are appropriate to the retailer and transaction type. Receipts can also be extended so that they show custom data that is required by the retailer. | [Design](../receipt-templates-printing.md) | |
+| Print receipts | Print receipts of various types, such as sales receipts, credit card receipts, gift receipts, and invoices. By default, the POS prints the receipt, or the cashier can confirm the printing at checkout. Reprint receipts from the journal. | [Printing](../receipt-templates-printing.md) | |
+| Email receipts | Email receipts from the POS after a checkout is completed. | [Email](../email-receipts.md) | |
+| Design receipts | Customize store receipts so that they show data and layouts that are appropriate to the retailer and transaction type. Extend receipts so that they show custom data that is required by the retailer. | [Design](../receipt-templates-printing.md) | |
 
 ## Offline support
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Seamless offline | Seamless offline lets you continue to transact even when internet connectivity is limited or unavailable. Data exclusion helps you reduce the data size of the offline databases and maximize performance. | [Offline](../pos-operations.md) | |
+| Seamless offline | Seamless offline support lets you continue to transact even when internet connectivity is limited or unavailable. Data exclusion helps you reduce the data size of the offline databases and maximize performance. | [Offline](../pos-operations.md) | |
 | Performance-based switching | Switch to offline when performance degradation is detected. | [Offline](implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI) |
 | Offline dashboard | The **Offline status** dashboard shows the offline status, errors, and details of the data for each device. Therefore, it's easy to manage the status of many devices. | [Offline](implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI)|
 
@@ -189,32 +188,34 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Commerce headquarters | Commerce headquarters solutions can be customized by adding or modifying business processes. Commerce headquarters supports the use of metadata and a code-driven extension model to add custom functionality. It can be easily integrated into external solutions. | [Overview](extend-customer-cdx-package.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=999bfeff-16b3-44d7-aa10-a5082a01030b) |
-| Headless commerce | The Extensible Omni-channel API framework can be used to customize and add business logic. APIs that have request handlers, and pre-trigger and post-trigger extension patterns. | [CSU](retail-server-customer-consumer-api.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6) |
-| Commerce SDK | The Commerce SDK includes the code, code samples, templates, and tools that are required to extend or customize Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components. | [SDK](retail-sdk/sdk-github.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6) |
-| Point of sale | Store Commerce app can be extended independently by using the POS extension feature of the Commerce SDK. The framework supports customization of the user experience (UX), workflows, and business logic. | [POS](pos-extension/pos-extension-overview.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6) |
+| Commerce headquarters | You can customize Commerce headquarters solutions by adding or modifying business processes. Commerce headquarters supports the use of metadata and a code-driven extension model to add custom functionality. You can easily integrate it into external solutions. | [Overview](extend-customer-cdx-package.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=999bfeff-16b3-44d7-aa10-a5082a01030b) |
+| Headless commerce | Use the Extensible Omnichannel API framework to customize and add business logic. The APIs include request handlers, and pre-trigger and post-trigger extension patterns. | [CSU](retail-server-customer-consumer-api.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6) |
+| Commerce SDK | The Commerce SDK includes the code, code samples, templates, and tools that you need to extend or customize Dynamics 365 Commerce functionality. Different repositories (repos) in GitHub publish the SDK, depending on the extension components. | [SDK](retail-sdk/sdk-github.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6) |
+| Point of sale | Use the POS extension feature of the Commerce SDK to independently extend the Store Commerce app. The framework supports customization of the user experience (UX), workflows, and business logic. | [POS](pos-extension/pos-extension-overview.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6) |
 
 ## Reporting
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Sales reports | Sales reports by staff, register, payment type, returns, product, and so on, are available to store managers. Managers can view these reports, and use them to allocate commission and identify product trends. | | |
+| Sales reports | Store managers can access sales reports by staff, register, payment type, returns, product, and other categories. Managers can view these reports, and use them to allocate commission and identify product trends. | | |
 
 ## Diagnostics
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
 | Operational insights | Store-curated service health reliability and performance metrics are available in the customer's Application Insights subscription. Advanced alerting and monitoring capabilities are available. | | |
-| Health check | Availability of peripherals that are connected to a POS can be verified by running the health check operation. Individual peripheral issues can then be fixed and verified. | [Health check](../pos-healthcheck.md) | [Video](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
+| Health check | Running the health check operation verifies the availability of peripherals that are connected to a POS. You can then fix and verify individual peripheral issues. | [Health check](../pos-healthcheck.md) | [Video](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
 
 ## Globalization
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Multi-market support | Market-specific features such as fiscal integration, GST, advanced invoicing, and prepayments are supported out of the box. This capability covers several markets in Europe, the Americas, Russia, Asia, Saudi Arabia, and so on. | [Globalization](../localizations/dev-itpro/fiscal-integration-for-retail-channel.md) | |
+| Multi-market support | The solution supports market-specific features such as fiscal integration, GST, advanced invoicing, and prepayments out of the box. This capability covers several markets in Europe, the Americas, Russia, Asia, Saudi Arabia, and other regions. | [Globalization](../localizations/dev-itpro/fiscal-integration-for-retail-channel.md) | |
 
 ## Compliance
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, and accessibility and various privacy laws and regulations. | | |
+| Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, and accessibility, as well as various privacy laws and regulations. | | |
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
