@@ -285,7 +285,7 @@ Managing users from the customer hierarchy provides several benefits:
 - **Audit-friendly**: Reasons for access changes are captured and preserved.
 - **Scalable administration**: Organizations can manage many users and outlets without duplicating effort.
  
-## Contact‑Aware Call Center Experiences
+## Contact-aware Call Center Experiences
  
 B2B multioutlet support extends to assisted selling capabilities in Commerce. It improves how customer service users identify and work with individual buyers who place orders on behalf of an organization.
  
