@@ -95,18 +95,18 @@ After you complete all the configuration steps described in the previous chapter
     - **UBL Project e-credit note (FR)**
     - **Edicom life cycle status format (FR)**
     - **Customer invoice context model**
-    - **Export invoice context model**
     - ...
 
     > [!NOTE]
     > If the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices.
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices and to udpate submitted documents statuses.
 
     - **Vendor invoice import Edicom (FR)**
     - **Vendor invoice Mapping to destination (FR)**
     - **Import invoice context model**
     - **Import invoice status query**
+    - **Export invoice context model**
     - ...
 
      > [!IMPORTANT]
@@ -130,6 +130,8 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
+> [!NOTE]
+> While deploying the feature, toggle the **Activate application setup** checkbox in the **APPLICATION** section. In this case, the system will automatically pre-configure the significant part of the **Electronic document parameters** in Finance. You can review and change the preconfigured parameters, as described in the next chapter.
 
 ## Configure electronic document parameters
 
