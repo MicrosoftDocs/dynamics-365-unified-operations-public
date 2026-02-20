@@ -4,7 +4,7 @@ description: Learn how to split and transfer fixed assets between legal entitiie
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 09/04/2025
+ms.date: 02/04/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
