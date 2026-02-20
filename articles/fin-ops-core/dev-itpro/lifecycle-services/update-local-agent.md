@@ -19,13 +19,14 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.3.0, which was released in January 2024.
+This article explains how to update the local agent. The latest version of the local agent is version 3.5.0, which was released in February 2026.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has been completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.5.0               | This version has some bug fixes as well as uptakes new versions of dependent SDKs. | Feberuary 2026 | Not applicable |
 | 3.4.0               | This version upgrades the Microsoft Azure Service Fabric SDK and the Azure Storage libraries. | February 2025 | Not applicable |
 | 3.3.0               | This version adds node tag management capabilities to the local agent. | January 2024 | Not applicable |
 | 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
@@ -50,6 +51,12 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.5.0
+- This version upgrades the Service Fabric SDK to version 7.1.
+- It upgrades the Azure Storage libraries.
+- It fixes an issue with the local agent hanging if the fileshare is unavailable.
+- It fixes an issue where the installers could hang during a deployment operation.
 
 ## What's new in local agent 3.4.0
 - This version upgrades the Service Fabric SDK to version 7.0.
