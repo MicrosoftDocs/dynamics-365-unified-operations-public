@@ -367,7 +367,7 @@ A B2B user who is associated with more than one organization will be prompted to
 
 ### Seamless access to organization based configurations
 
-All pricing, catalog and shopping cart/checkout configurations which would impact an organization's options when searching, filtering or purchasing products is available for contact based users. These elements can change immediately and accurately to reflect the currently active organization for multi-outlet users as well within a single logged in session.  
+All pricing, catalog and shopping cart/checkout configurations which would impact an organization's options when searching, filtering or purchasing products are available for contact-based users. These elements can change immediately and accurately to reflect the currently active organization for multi-outlet users as well within a single logged in session.  
 
 ### Persistent shopping carts when switching organizations
 
