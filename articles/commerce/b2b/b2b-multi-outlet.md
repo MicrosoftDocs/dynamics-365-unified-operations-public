@@ -351,7 +351,7 @@ This design balances flexibility and governance:
 - **Operational clarity**: Separates organizational ownership of orders from individual responsibility.
 - **Consistency**: Applies the same access rules across storefront and call center scenarios.
  
-## Contact-aware eCommerce Storefront experiences
+## Contact-aware B2B e-commerce storefront experiences
  
 ### Prospect workflow and standard log in support for contact based users
 
