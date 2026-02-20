@@ -34,6 +34,9 @@ Before you start, make sure these prerequisites are in place:
 - The company has a signed agreement with the certified Partner Agent and obtained the credentials required for esablishing a secure connection to Partner Agent's infrastructure.
   > [!NOTE]
   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
+  
+  Watch the overview of the Edicom credentials configuration in Finance. More details are provided in the [next](#EdCred) chapters.
+  > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
 
 - Install the **Electronic invoicing add-in** as described in [Install the add-in for Electronic invoicing microservices](../global/gs-e-invoicing-set-up-overview.md#install-the-add-in-for-electronic-invoicing-microservices).
 - Activate **Electronic invoicing integration** with Finance or Supply Chain Management as it's described in [Enable Electronic invoicing integration](../global/gs-e-invoicing-set-up-overview.md#enable-electronic-invoicing-integration).
@@ -44,13 +47,13 @@ Before you start, make sure these prerequisites are in place:
 
 - In the **Feature management** workspace, on the **All** tab, search for the **Electronic invoicing documents statuses handling** feature. If this feature doesn't appear on the page, select **Check for updates**. Select the feature, and then select **Enable now**.
   
-## Create the Azure Key Vault configuration
+<a id="EdCred"></a>## Create the Azure Key Vault configuration
 
 Configure the common part of the Azure resources required for Electronic invoicing functioning. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 Add the following element to the key vault:
 
-- Add the secret for the **token** that authorizes access to Edicom services. Obtain it from Edicom as described in the prerequisites. You can find more details in the dedicated [chapter](#EdCred), once other required parameters are also configured.
+- Add the secret for the **token** that authorizes access to Edicom services.
 
 ## Set up electronic invoicing Key Vault parameters
 
@@ -81,7 +84,7 @@ After you complete all the configuration steps described in the previous chapter
 
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest version of the **QQQQQQQQQQQFrench electronic invoice (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest version of the **French electronic invoice (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, confirm that the following Electronic reporting configurations are imported as a result of the **French electronic invoice (FR)** globalization feature import.
 
     - **Invoice model**
@@ -111,12 +114,12 @@ After you complete all the configuration steps described in the previous chapter
     
 ## Configure the electronic invoicing feature
 
-The **QQQQQQQQQQQFrench electronic invoice (FR)** feature publishes some parameters with default values. Before you deploy the feature, review the default values and update them so they reflect your business operations.
+The **French electronic invoice (FR)** feature publishes some parameters with default values. Before you deploy the feature, review the default values and update them so they reflect your business operations.
 
-Review and update the **QQQQQQQQQQQFrench electronic invoice (FR)** feature configuration:
+Review and update the **French electronic invoice (FR)** feature configuration:
 
 1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Copy the imported **QQQQQQQQQQQFrench electronic invoice (FR)** globalization feature and select your configuration provider, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Copy the imported **French electronic invoice (FR)** globalization feature and select your configuration provider, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, check that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify these required **Edicom** connection and integration parameters:
 
@@ -127,9 +130,6 @@ Review and update the **QQQQQQQQQQQFrench electronic invoice (FR)** feature conf
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
-<a id="EdCred"></a>Watch the overview of the Edicom credentials configuration in Finance.
-
-> [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
 
 ## Configure electronic document parameters
 
