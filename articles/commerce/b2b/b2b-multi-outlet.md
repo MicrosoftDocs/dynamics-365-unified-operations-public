@@ -358,7 +358,7 @@ This design balances flexibility and governance:
 When the B2B multi-outlet feature is enabled, the business partner sign up feature will instead create a contact for the first B2B user when a prospect is approved. Once the prospect is approved and their contact is created, the new B2B user can sign up using the existing authentication process through the storefront and start shopping immediately. In addition, the standard configuration for logging in and authenticating will operate in a similar manner using contacts as well. 
 
 > [!NOTE]
-> This process assumes that the contact already exists in Dynamics 365 Finance and Operations and is associated with an organization through a synchronized customer hierarchy. Registration and Sign-up applies only to B2B buyer organizations for this release.
+> This process assumes that the contact already exists in Dynamics 365 Finance and Operations and is associated with an organization through a synchronized customer hierarchy. Registration and sign-up apply only to B2B buyer organizations for this release.
 
 
 ### Intuitive controls and consistent organization display for multi-outlet B2B users
