@@ -58,7 +58,10 @@ For more information about how to resolve issues in on-premises environments, se
     #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
 
     # When enabled, the following script resolves a version mismatch issue with Microsoft.Identity.Client, allowing the Reporting Services app to install successfully.
-    # & $agentShare\scripts\TSG_UpdateSSRSIdentityClient.ps1 -SSRSServers BI1,BI2 # Edit list of servers as needed, separated by a comma 
+    # & $agentShare\scripts\TSG_UpdateSSRSIdentityClient.ps1 -SSRSServers BI1,BI2 # Edit list of servers as needed, separated by a comma
+
+    # When enabled this prevents the AOS deployer from getting stuck trying to deploy the AOS services.
+    # & $agentShare\scripts\TSG_UnblockAOSDeployerHang.ps1 -agentShare $agentShare
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -711,6 +714,61 @@ foreach ($server in $servers) {
 }
 
 Write-Host "`nAll deployments completed."
+```
+## <a name="AOSDeployerHang"></a>TSG\_UnblockAOSDeployerHang.ps1
+
+The following script addresses an issue where the deployment of an environment gets hung after reporting services has been deployed. This prevents the Gateway, Bootstrapper and other services from getting deployed without manual invocation of the installer. This script ensures that the installer does not hang when invoked by the local agent orchestration service.
+
+Impacted versions:
+- 10.0.44
+- 10.0.45
+- 10.0.46
+
+> [!NOTE] This TSG script is not necessary if you have Local Agent 3.5.0 or later installed.
+
+```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]
+    $agentShare = ''
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configPath = "$basePath\Apps\AOS\Setup\AOSSetupHybridCloud.exe.config"
+
+if(!(Test-Path $configPath))
+{
+    Write-Error "Unable to find AOSSetupHybridCloud.exe.config in path: $configPath" -Exception
+InvalidOperation
+}
+
+Write-Output "Found config: $configPath"
+
+[xml]$xml = Get-Content $configPath
+
+$diagnosticsNode = $xml.configuration.'system.diagnostics'
+
+if($diagnosticsNode)
+{
+    $xml.configuration.RemoveChild($diagnosticsNode) | Out-Null
+    $xml.Save($configPath)
+    Write-Output "Removed system.diagnostics section from AOSSetupHybridCloud.exe.config"
+}
+else
+{
+    Write-Output "No system.diagnostics section found, no changes needed."
+}
+
+Write-Output "TSG RemoveConsoleTraceFromSetup script succeeded"
 ```
 
 
