@@ -2,7 +2,7 @@
 title: Set up a Microsoft Entra External ID for user site authentication in Commerce e-commerce
 description: Learn how to set up a Microsoft Entra External ID for user site authentication in Microsoft Dynamics 365 Commerce e-commerce.
 author: AditiPattanaik
-ms.date: 12/23/2025
+ms.date: 02/19/2026
 ms.topic: how-to
 ms.search.region: Global
 ms.author: adpattanaik
@@ -21,7 +21,7 @@ This article explains how to set up your Microsoft Entra External ID tenant for 
 Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microsoft Entra External ID, Microsoft's next-generation Customer Identity and Access Management (CIAM) solution. This enhancement ensures a modern, secure, and scalable identity experience for business-to-consumer (B2C) and business-to-business (B2B) scenarios.
 
 > [!NOTE] 
-> After the end of sale for Azure AD B2C, existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
+> After the end of sale for Azure Active Directory B2C (Azure AD B2C), existing Azure AD B2C tenants continue to be supported until May 2030, with no new feature development. New deployments must be provisioned using Microsoft Entra External ID, because Azure AD B2C is no longer available for new tenants.
 
 ## Prerequisites to enable Microsoft Entra External ID in Commerce
 
@@ -29,6 +29,9 @@ Starting with version 10.0.45, Dynamics 365 Commerce e-commerce supports Microso
 > For Commerce tenants created with the Dynamics 365 Commerce version 10.0.46 general availability (GA) release or later versions, the Microsoft Entra External ID feature flight is enabled by default. For tenants created with Commerce versions before the 10.0.46 GA release, upgrading doesn't automatically enable the feature flight.
 
 If your Commerce tenant is created with a Commerce version before the version 10.0.46 GA release, you must first submit a request to the Commerce team to enable the feature flight. Then perform the following steps to create and enable Microsoft Entra External ID tenant user authentication.
+
+> [!NOTE] 
+> When you switch from Azure AD B2C to Microsoft Entra External ID, authentication profiles previously configured for Azure AD B2C no longer appear and are unavailable for use.
 
 ## Create a Microsoft Entra external tenant on Azure
 
@@ -94,7 +97,11 @@ Currently, Microsoft Entra External ID only supports one type of flow, which is 
 For information on customizing the default branding in user flows, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 > [!NOTE] 
-> Customizing the sign-in screen further requires that you use [Native authentication in Microsoft Entra External ID](/entra/identity-platform/concept-native-authentication). Modules can be built to interact with these APIs directly.
+> To customize the styling of a sign-in screen, you can upload a custom Cascading Style Sheets (CSS) file. For more information on CSS files, see [CSS template reference guide](/entra/fundamentals/reference-company-branding-css-template).
+
+The following example image shows a customized Adventure Works B2B sign-in screen.
+
+:::image type="content" source="./media/business-to-business-sign-in-screen.png" alt-text="Screenshot of an Adventure Works B2B sign-in screen.":::
 
 To create user flow in External ID, follow these steps:
 
