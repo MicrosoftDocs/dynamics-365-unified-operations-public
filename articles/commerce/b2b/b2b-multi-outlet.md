@@ -353,29 +353,29 @@ This design balances flexibility and governance:
  
 ## Contact-aware B2B e-commerce storefront experiences
  
-### Prospect workflow and standard log in support for contact based users
+### Prospect workflow and standard sign-in support for contact based users
 
-When the B2B multi-outlet feature is enabled, the business partner sign up feature will instead create a contact for the first B2B user when a prospect is approved. Once the prospect is approved and their contact is created, the new B2B user can sign up using the existing authentication process through the storefront and start shopping immediately. In addition, the standard configuration for logging in and authenticating will operate in a similar manner using contacts as well. 
+When the B2B multioutlet feature is enabled, the business partner sign up feature will instead create a contact for the first B2B user when a prospect is approved. Once the prospect is approved and their contact is created, the new B2B user can sign up using the existing authentication process through the storefront and start shopping immediately. In addition, the standard configuration for signing in and authenticating will operate in a similar manner using contacts as well.  
 
 > [!NOTE]
 > This process assumes that the contact already exists in Dynamics 365 Finance and Operations and is associated with an organization through a synchronized customer hierarchy. Registration and sign-up apply only to B2B buyer organizations for this release.
 
 
-### Intuitive controls and consistent organization display for multi-outlet B2B users
+### Intuitive controls and consistent organization display for multioutlet B2B users
 
-A B2B user who is associated with more than one organization will be prompted to select which account they would like to shop with upon logging in, and can change between their organizations freely. B2B users who are attached to a single organization have these elements hidden as part of their shopping experience to reduce any confusion when shopping or navigating the different links throughout the storefront. The currently active organization, along with the name of the user is displayed in the header at all times to provide a quick point of reference for the currently selected organization.
+A B2B user who is associated with more than one organization will be prompted to select which account they would like to shop with upon signing in, and can change between their organizations freely. B2B users who are attached to a single organization have these elements hidden as part of their shopping experience to reduce any confusion when shopping or navigating the different links throughout the storefront. The currently active organization, along with the name of the user is displayed in the header at all times to provide a quick point of reference for the currently selected organization.
 
-### Seamless access to organization based configurations
+### Seamless access to organization-based configurations
 
-All pricing, catalog and shopping cart/checkout configurations which would impact an organization's options when searching, filtering or purchasing products are available for contact-based users. These elements can change immediately and accurately to reflect the currently active organization for multi-outlet users as well within a single logged in session.  
+All pricing, catalog and shopping cart/checkout configurations which would impact an organization's options when searching, filtering or purchasing products are available for contact-based users. These elements can change immediately and accurately to reflect the currently active organization for multioutlet users as well within a single signed-in session.  
 
 ### Persistent shopping carts when switching organizations
 
-Multi-outlet users are given the freedom to switch between their organizations with their cart in any state, and can pick up where they left off after any number of organization selections.
+Multioutlet users are given the freedom to switch between their organizations with their cart in any state, and can pick up where they left off after any number of organization selections.
 
 ### Organization level orders and order templates available in the storefront
 
-Organization based order history visibility and order templates are available and allow for all users at a given organization to view orders and use order templates. 
+Organization-based order history visibility and order templates are available and allow for all users at a given organization to view orders and use order templates. 
  
 > [!NOTE]
 > For the current state of this feature, order templates and order history are only scoped at the organization level. User-level templates and order history are planned for a future release.
@@ -396,7 +396,7 @@ To configure multioutlet and contact-based B2B customer hierarchies, follow thes
 1. Run the **1110 CDX job**.
  
 > [!NOTE]
-> This preview feature is recommended for new B2B channel implementations only, without existing B2B users in the system. This feature cannot be disabled after enabling as well. A future release includes migration options for existing B2B organization and user configurations.
+> This preview feature is recommended for new B2B channel implementations only, without existing B2B users in the system. Once enabled, this feature cannot be disabled. A future release includes migration options for existing B2B organization and user configurations.
  
 ## Configure multioutlet organizations
  
