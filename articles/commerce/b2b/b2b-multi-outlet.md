@@ -69,7 +69,7 @@ This pattern increases:
  
 When each B2B user is treated as a separate customer account, pricing rules and discounts often have to be duplicated across records. The contact model removes this additional configuration step and instead allows any number of contact users at a given organization to be updated at once through the organization's pricing configurations.
  
-This duplication increased:
+This duplication increases:
  
 - Configuration and maintenance effort.
 - Difficulty of managing pricing changes consistently.
