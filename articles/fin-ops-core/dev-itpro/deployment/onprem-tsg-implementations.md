@@ -724,7 +724,8 @@ Impacted versions:
 - 10.0.45
 - 10.0.46
 
-> [!NOTE] This TSG script is not necessary if you have Local Agent 3.5.0 or later installed.
+> [!NOTE]
+> This TSG script is not necessary if you have Local Agent 3.5.0 or later installed.
 
 ```powershell
 param (
