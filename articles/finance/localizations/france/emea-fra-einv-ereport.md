@@ -100,7 +100,7 @@ After you complete all the configuration steps described in the previous chapter
     > [!NOTE]
     > If the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices and to udpate submitted documents statuses.
+1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices and to update submitted documents statuses.
 
     - **Vendor invoice import Edicom (FR)**
     - **Vendor invoice Mapping to destination (FR)**
