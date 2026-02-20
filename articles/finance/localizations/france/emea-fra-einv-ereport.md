@@ -180,7 +180,7 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 1. In the **Name** field, enter **Status**. Enter the value exactly as shown.
 1. Toggle the checkbox in the **Optional** column.
 1. In the **Data entity name** field, select the **Electronic document receipt log** entity.
-1. In the **Model mapping** field, select the **Edicom life cycle status (FR)** configuration.
+1. In the **Model mapping** field, select the **Edicom life cycle status format (FR)** configuration.
 1. Toggle the checkbox in the **Import as business document status file** column.
 1. Select **Save**, and then close the page.
 
