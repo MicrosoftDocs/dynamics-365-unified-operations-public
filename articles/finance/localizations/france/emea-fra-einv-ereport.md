@@ -47,7 +47,7 @@ Before you start, make sure these prerequisites are in place:
 
 - In the **Feature management** workspace, on the **All** tab, search for the **Electronic invoicing documents statuses handling** feature. If this feature doesn't appear on the page, select **Check for updates**. Select the feature, and then select **Enable now**.
   
-<a id="EdCred"></a>## Create the Azure Key Vault configuration
+## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
 Configure the common part of the Azure resources required for Electronic invoicing functioning. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
