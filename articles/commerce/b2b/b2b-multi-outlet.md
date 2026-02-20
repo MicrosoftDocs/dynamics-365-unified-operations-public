@@ -382,7 +382,7 @@ Organization based order history visibility and order templates are available an
   
 ### Uses existing data exchange and batch jobs to operate
 
-Enabling the feature will update all of the impacted download and upload data exhanges appropriately, requiring no additional job scheduling for day to day operations or configuration changes to take effect on the storefront.
+Enabling the feature will update all of the impacted download and upload data exchanges appropriately, requiring no additional job scheduling for day-to-day operations or configuration changes to take effect on the storefront.
 
 
 ## Enable the B2B multioutlet feature
