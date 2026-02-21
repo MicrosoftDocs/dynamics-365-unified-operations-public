@@ -3,7 +3,7 @@ title: Store Commerce app for mobile platforms
 description: Learn how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 12/12/2025
+ms.date: 02/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: global
@@ -148,9 +148,10 @@ See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payme
 
 ### Offline capabilities in iOS and Android (preview)
 
-> [!IMPORTANT]  
-> - The mobile apps distributed through the Apple App Store and Google Play Store don't support offline mode.  
+> [!IMPORTANT]
+> - The mobile apps distributed through the Apple App Store and Google Play Store don't support offline mode.
 > - Offline functionality for iOS and Android is only available in custom applications created using the Store Commerce SDK. Customers who require offline workflows must build and deploy their own mobile applications using the Store Commerce SDK.
+> - To learn how to create and package a custom Store Commerce mobile app with offline capabilities, see [Create and package a Store Commerce app for Android and iOS](store-comm-android-ios-ext.md).
 
 For Commerce version 10.0.45 and later releases, the following offline capabilities for iOS and Android are available.
 

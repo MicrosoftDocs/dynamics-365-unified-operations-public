@@ -1,11 +1,11 @@
 ---
-title: Skip "change due" dialog box in POS
-description: This article describes how to skip the "Change due" dialog box in the point of sale (POS) when a transaction is paid in full and there is no change due.
+title: Skip change due dialog box in POS
+description: Learn how to skip the change due dialog box in the Microsoft Dynamics 365 Commerce point of sale (POS) when a transaction is paid in full and there is no change due.
 author: BrianShook
-ms.date: 10/27/2020
+ms.date: 02/20/2026
 ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: shajain
@@ -14,13 +14,13 @@ ms.custom:
   - bap-template
 ---
 
-# Skip "change due" dialog box in POS
+# Skip change due dialog box in POS
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to skip the **Change due** dialog box in the point of sale (POS) when a transaction is paid in full and there's no change due.
+This article describes how to skip the **Change due** dialog box in the Microsoft Dynamics 365 Commerce point of sale (POS) when a transaction is paid in full and there's no change due.
 
-For payments at the POS, there is now a greater prevalence of credit usage, as most transactions don't require change to be provided to the customer. In Dynamics 365 Commerce, you can configure POS so that the  **Change due** dialog is skipped unless there's actually change due back to the customer. The **Change due** dialog box will also be shown if the receipt format for gift receipts is configured to print **As required**. When gift receipts are configured to print **As required**, the option to print a gift receipt is included in the **Change due** dialog box, overriding the **Skip change due** configuration.
+For payments at the POS, credit usage is now more common, as most transactions don't require change to be provided to the customer. In Dynamics 365 Commerce, you can configure POS so that the **Change due** dialog is skipped unless there's actually change due back to the customer. The **Change due** dialog box appears if the receipt format for gift receipts is configured to print **As required**. When gift receipts are configured to print **As required**, the option to print a gift receipt is included in the **Change due** dialog box, overriding the **Skip change due** configuration.
 
 ## Configure property to skip **Change due** dialog box
 
@@ -32,7 +32,7 @@ To configure the property, follow these steps:
 1. Open the functionality profile for the target store and select **Edit**. 
 1. Expand the **Functions** FastTab. Under the **Terminal** subheading, in the **Change due** field, select **Skip when zero**. 
 1. Select **Save**, and then run the **1070** channel configuration distribution schedule.
-1. After the changes are synchronized, sign out of the POS and then sign back in. Make a transaction that has no change due to the customer to verify that the **Change due** dialog box isn't displayed.  
+1. After the changes synchronize, sign out of the POS and then sign back in. Make a transaction that has no change due to the customer to verify that the **Change due** dialog box isn't displayed.  
 
 ## Additional resources
 
@@ -43,6 +43,5 @@ To configure the property, follow these steps:
 [Configure cash denominations for the point of sale (POS)](../cash-denominations.md)
 
 [Configure credit card processing](../tasks/configure-credit-card-processing.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
