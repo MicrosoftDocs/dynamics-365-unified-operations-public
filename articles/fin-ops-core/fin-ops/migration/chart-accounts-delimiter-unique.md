@@ -18,7 +18,11 @@ ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of finance and operations, you cannot have the same delimiter for the chart of accounts and dimension names or values. In some cases, users can import the segment delimiter into a dimension value, but the import will automatically escape the delimiter with the backslash "\" character. If there is a duplicate delimiter, you can change it after upgrade. 
+In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of finance and operations, you cannot have the same delimiter for the chart of accounts and dimension names or values. 
+
+If a dimension value contains the segment delimiter, the import automatically escapes it with a backslash. For example, if the delimiter is "-" and a customer account number is "1000-01", it's imported as "1000\\-01".
+
+If there is a duplicate delimiter, you can change it after upgrade. 
 
 ## Update delimiter
 If there is a conflict with the chart of accounts, the chart of accounts delimiter and the project/subproject ID format can be changed. No other dimension delimiters can be changed. 
