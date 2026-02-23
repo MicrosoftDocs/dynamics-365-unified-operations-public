@@ -28,7 +28,7 @@ A customer hierarchy is created and linked to the Customer record.
 1. The organization name is used as the hierarchy name.
 -	**Link initial contact to customer hierarchy as admin**
  The initial contact is linked to the customer hierarchy and designated as the hierarchy administrator, enabling access to additional functions on the storefront.
-- #### Subsequent Commerce configuration context
+ #### Subsequent Commerce configuration context
 After the automated onboarding flow completes, additional Commerce configurations may be applied, including:
 - Assignment of product catalogs
 - Configuration of user roles
