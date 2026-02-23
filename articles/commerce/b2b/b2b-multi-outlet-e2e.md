@@ -39,7 +39,7 @@ These steps support the organizations readiness for B2B eCommerce operations acr
 - #### Complete the setup for B2B channel availability
 After the organization account and customer hierarchy are created, complete the following steps to make the organization and its users available on one or more B2B channels.
 
-- #### Assign a catalog (if applicable)
+#### Assign a catalog (if applicable)
 Catalog assignment controls the products that are available to users of the B2B organization in the storefront.
 1.	Open the relevant customer hierarchy.
 2.	In the Catalogs section, select Add line.
