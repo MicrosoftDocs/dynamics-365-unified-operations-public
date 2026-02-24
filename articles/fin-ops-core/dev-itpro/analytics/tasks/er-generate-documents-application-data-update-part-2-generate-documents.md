@@ -22,7 +22,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 
 This procedure is created for users with the assigned role of system administrator or electronic reporting developer. You can complete these steps by using the DEMF dataset.
 
-Before you begin, change the country context for the DEMF company from DEU (Germany) to BEL (Belgium). Select **Organization administration** > **Organizations** > **Legal entities** to update the country code in the primary address of the legal entity DEMF. Restart your application.
+Before you begin, change the country/region context for the DEMF company from DEU (Germany) to BEL (Belgium). Select **Organization administration** > **Organizations** > **Legal entities** to update the country/region code in the primary address of the legal entity DEMF. Restart your application.
 
 
 ## Run imported ER format
