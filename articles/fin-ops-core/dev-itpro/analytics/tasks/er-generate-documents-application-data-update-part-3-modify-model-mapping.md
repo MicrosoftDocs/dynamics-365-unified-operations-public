@@ -38,7 +38,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
     * Archive header  
 11. In the **Item type** field, select **Record list**.
 12. Select **Add**.
-    * Because you are creating a record for each generated Intrastat report, you must accordingly create a new item.  
+    * Because you're creating a record for each generated Intrastat report, you must accordingly create a new item.  
 13. Select **New** to open the **Drop** dialog.
 14. In the **Name** field, type **File name**.
     * File name  
@@ -88,7 +88,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
     * This new mapping specifies the data flow for moving data (Intrastat reporting details) from the data model to the application tables (the update destination). You must use the root items of different models to get data from the application for the reporting process and then use the data from the data model for the application data update.
 8. Select **Designer**.
 9. In the tree, select **Data model\Data model**.
-    * Add the required data source. This is the data model that contains details of the reported Intrastat transactions to archive.  
+    * Add the required data source. This source is the data model that contains details of the reported Intrastat transactions to archive.  
 10. Select **Add root**.
 11. In the **Name** field, type **model**.
     * model  
