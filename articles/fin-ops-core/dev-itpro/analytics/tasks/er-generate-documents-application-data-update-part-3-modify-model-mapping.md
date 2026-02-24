@@ -2,7 +2,7 @@
 title: Modify models and mappings to generate documents that have application data
 description: This article describes how to design reporting configurations to generate an electronic document and update application data. (Part 2 - Generate documents).
 author: kfend
-ms.date: 06/19/2017
+ms.date: 02/24/2026
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -11,16 +11,18 @@ ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Modify models and mappings to generate documents that have application data
 
 [!include [banner](../../includes/banner.md)]
 
-To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 2: Generate documents)". 
+To complete the steps in this procedure, you must first complete the procedure, [Design configurations to generate documents that have application data](er-generate-documents-application-data-update-part-2-generate-documents.md).
 
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data. In this procedure, you will modify the ER configurations to start using them to generate electronic documents and update application data. This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset.
 
 
 ## Modify data model
+
 1. Go to Organization administration > Electronic reporting > Configurations.
 2. In the tree, select 'Intrastat (model)'.
     * You will extend how you use the data model. Besides using it as data source to generate the Intrastat report, the data model will be used to collect details about the Intrastat reporting process. The details will then be used to update application data.   
@@ -74,6 +76,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 38. Close the page.
 
 ## Modify model mapping
+
 1. In the tree, expand 'Intrastat (model)'.
 2. In the tree, select 'Intrastat (model)\Intrastat (mapping)'.
     * Modify the existing model mapping to start using it for  the application data update and to archive Intrastat reporting details.  
