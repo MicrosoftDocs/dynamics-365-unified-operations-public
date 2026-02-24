@@ -20,7 +20,6 @@ To complete the steps in this procedure, you must first complete the procedure, 
 
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data. In this procedure, you will modify the ER configurations to start using them to generate electronic documents and update application data. This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset.
 
-
 ## Modify data model
 
 1. Go to Organization administration > Electronic reporting > Configurations.
