@@ -42,6 +42,8 @@ Use the **Create balances** button to initialize the balances for a dimension se
 > [!NOTE]
 > Updating balances affect all General ledger posting activies. We recommend that you limit the number of dimension sets that have balances. 
 
+![](media/CreateBalances.png)
+
 ## Update balances
 
 Use the **Update balances** button to include the latest General ledger posting activity in the balances. Balance updates are light operations. They must process only the General ledger posting activity that has occurred since the last update.
