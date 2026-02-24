@@ -24,7 +24,6 @@ Compile-time functions are executed early during compilation of X++ code. They s
 
 -   `classNum` – Retrieves the ID of a class.
 -   `classStr` – During compile time, verifies that a class of that name exists. This approach is better than discovering the error later during run time.
--   `evalBuf`– Evaluates the input string of X++ code, and then returns the results as a string.
 -   `literalStr` – retrieves a label ID when given the string representation of a label, such as the string `"@SYS12345"`. For example, `myLabel.exists(literalStr("@SYS12345"));`.
 
 > [!NOTE]
