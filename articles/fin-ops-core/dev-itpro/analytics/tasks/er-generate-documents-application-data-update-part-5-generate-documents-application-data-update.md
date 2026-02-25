@@ -1,6 +1,6 @@
 ---
 title: Generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, ""ER Generate documents with application data update (Part 4 - Modify format)"".
+description: Learn how to generate electronic documents with application data updates using Electronic Reporting (ER) configurations.
 author: kfend
 ms.date: 02/25/2026
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4: Modify format)".
+To complete the steps in this procedure, you must first complete the procedure, [Modify formats to generate documents that have application data](er-generate-documents-application-data-update-part-4-modify-format.md).
 
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data. In this procedure, you execute the ER format configuration to generate the Intrastat report and update application data for archiving details of the reporting process.
 
