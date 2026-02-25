@@ -133,7 +133,7 @@ This procedure explains how to design Electronic reporting (ER) configurations t
 1. In the tree, select **Archive\<Relations\IntrastatArchiveDetail\Amount(AmountMST)**.
 1. In the tree, expand **model\Archive header\Enumerated lines**.
 1. In the tree, expand **model\Archive header\Enumerated lines\Value**.
-42. In the tree, select **model\Archive header\Enumerated lines\Value\Amount**.
+1. In the tree, select **model\Archive header\Enumerated lines\Value\Amount**.
 43. Select **Bind**.
 44. In the tree, select **Archive\<Relations\IntrastatArchiveDetail\Commodity(IntrastatCommodity)**.
 45. In the tree, select **model\Archive header\Enumerated lines\Value\Commodity rec id**.
