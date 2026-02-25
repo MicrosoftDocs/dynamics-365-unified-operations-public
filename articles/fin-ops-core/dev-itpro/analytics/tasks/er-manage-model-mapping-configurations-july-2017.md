@@ -92,7 +92,7 @@ Because ER configurations are shared among companies, you can complete this task
     * Sample format  
 1. Select **Create configuration**.
 1. Select **Designer**.
-1. Select **Add root** to open the drop dialog.
+1. Select **Add root** to open the **Drop** dialog.
 1. In the tree, select `Text\String`.
 1. Select **OK**.
 1. Select the **Mapping** tab.
