@@ -18,12 +18,12 @@ ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of finance and operations, you cannot have the same delimiter for the chart of accounts and dimension names or values. 
+In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of finance and operations, you must not have the same delimiter for the chart of accounts and dimension names or values. 
 
 >[!NOTE]
->If a dimension value contains the segment delimiter, the import automatically escapes it with a backslash. For example, if the delimiter is "-" and a customer account number is "1000-01", it's imported as "1000\\-01".
+>If an imported dimension value contains the segment delimiter, it will automatically be escaped with a backslash. For example, if the delimiter is "-" and a customer account number is "1000-01", it's imported as "1000\\-01".
 
-If there is a duplicate delimiter, you can change it after upgrade. 
+To use the current delimiter character within dimension values, change the chart of accounts delimiter.
 
 ## Update delimiter
 If there is a conflict with the chart of accounts, the chart of accounts delimiter and the project/subproject ID format can be changed. No other dimension delimiters can be changed. 
@@ -32,6 +32,8 @@ If there is a conflict with the chart of accounts, the chart of accounts delimit
 
 ### Other considerations
 Similar to project/subproject ID, any other master data records used as financial dimensions, such as vendors or customers, should not have account ID values that use the same character as the chart of accounts delimiter. 
+
+Subproject delimiters are automatically updated to match the delimiter of their parent project.
 
 ## How to determine if your environment requires updated delimiters 
 If delimiters in your upgraded environment are conflicting, you may experience instability when entering values in a segmented entry control or dimension entry control. This means that you will need to always use lookups or a flyout menu when entering account and dimension combinations.
