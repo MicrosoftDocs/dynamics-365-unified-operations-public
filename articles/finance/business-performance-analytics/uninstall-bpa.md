@@ -1,7 +1,7 @@
 ---
 title: Uninstall Business performance analytics
 description: Learn how to uninstall Business performance analytics.
-author: yashkv1 
+author: yvishwa 
 ms.author: yvishwa
 ms.topic: faq
 ms.custom:
@@ -217,6 +217,7 @@ After the cleanup script executes successfully, you can proceed to uninstall Bus
         "msdyn_BpaAnalyticalTables",
         "msdyn_BpaTablesTransformationJobFlows",
         "msdyn_BpaTablesDataProcessingConfigurations",
+        "msdyn_BpaTablesUserRoles",
         "msdyn_BpaTablesDataLakeSynchronizationWorkspace",
         "msdyn_BpaTablesDataLakeSynchronization",
         "msdyn_BpaTablesStandardEntities",
@@ -224,7 +225,6 @@ After the cleanup script executes successfully, you can proceed to uninstall Bus
         "msdyn_BpaTablesVirtualEntities",
         "msdyn_BpaTablesManagedDataLake",
         "msdyn_BpaPipelinePlugins",
-        "msdyn_BpaTablesUserRoles",
         "msdyn_BpaTablesSecurity",
         "msdyn_BpaConfig"
     ];
@@ -276,26 +276,26 @@ You can manually uninstall Business performance analytics through the Power Plat
 
 1. Business performance analytics anchor solution
 2. Business performance analytics solution
-3. Business performance analytics reports 
+3. Business performance analytics reports
 4. Business performance analytics plugins solution
-5. Business performance analytics permissions 
+5. Business performance analytics permissions
 6. Business performance analytics tables
 7. Business performance analytics controls
 8. Business performance analytics tables anchor solution
 9. Business performance analytics analytical tables workspace
 10. Business performance analytics analytical tables
 11. Business performance analytics tables transformation job flows
-12. Business performance analytics tables data processing configuration 
-13. Business performance analytics tables data lake synchronization workspace
-14. Business performance analytics tables data lake synchronization
-15. Business performance analytics tables standard entities
-16. Business performance analytics tables virtual entities workspace
-17. Business performance analytics tables virtual entities
-18. Business performance analytics tables managed data lake 
-19. Business performance analytics pipeline plugins solution
-20. Business performance analytics tables user roles 
-21. Business performance analytics tables security 
-22. Business performance analytics config 
+12. Business performance analytics tables data processing configuration
+13. Business performance analytics tables user roles
+14. Business performance analytics tables data lake synchronization workspace
+15. Business performance analytics tables data lake synchronization
+16. Business performance analytics tables standard entities
+17. Business performance analytics tables virtual entities workspace
+18. Business performance analytics tables virtual entities
+19. Business performance analytics tables managed data lake
+20. Business performance analytics pipeline plugins solution
+21. Business performance analytics tables security
+22. Business performance analytics config
 
 To delete each of the preceding solutions, follow these steps:
 
