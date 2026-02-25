@@ -33,7 +33,7 @@ This procedure is created for users with the assigned role of system administrat
 1. Select the **Intrastat archive ID** reference.
 1. In the **Number sequence code** field, type a value.
 
-       In the **Number sequence code** field, enter or select the value **Fore_2**.  
+    In the **Number sequence code** field, enter or select the value **Fore_2**.  
 
 1. Resolve changes to the Number sequence code.
 1. Select **Save**.
@@ -55,7 +55,7 @@ Review the generated XML file.
 1. Close the page.
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 
-        Open this form containing the Intrastat transactions included in the generated electronic document.    
+    Open this form containing the Intrastat transactions included in the generated electronic document.    
 
 1. Select **Intrastat archive**.
 
