@@ -148,7 +148,7 @@ Because ER configurations are shared among companies, you can complete this task
 
 1. In the tree, select `Sample data model\Sample format`.
 1. Select **Run**.
-        * You can't run the selected draft version of the ER format configuration because more than one model-mapping configuration exists for the undefined data model that is selected as the data source of the running ER format.      
+    * You can't run the selected draft version of the ER format configuration because more than one model-mapping configuration exists for the undefined data model that is selected as the data source of the running ER format.      
     * Next, you need to define the alternative model-mapping configuration as the one from which model mappings are used as data sources for running ER format.   
 1. In the tree, select `Sample data model\Sample mapping (alternative)`.
 1. Select **Yes** in the **Default for model-mapping** field.
