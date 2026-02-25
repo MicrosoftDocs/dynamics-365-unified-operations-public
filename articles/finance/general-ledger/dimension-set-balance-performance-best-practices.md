@@ -42,7 +42,7 @@ For dimension sets that are no longer in use, consider clearing their balances r
 ## Schedule automated balance updates
 
 >[!NOTE]
->The [**Performance enhancement for general ledger dimension set balance calculation**](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-set-new) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this workaround.
+>The [**Performance enhancement for general ledger dimension set balance calculation**](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-set-new) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
 
 For environments where large transaction volumes are regularly posted or imported, scheduling periodic balance updates helps keep the number of unprocessed transactions low and thus prevents slowdowns when reports are run. Schedule these jobs during off-peak hours to minimize the impact on other users.
 
