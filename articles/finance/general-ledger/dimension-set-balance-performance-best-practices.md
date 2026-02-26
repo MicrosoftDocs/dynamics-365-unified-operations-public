@@ -20,15 +20,36 @@ This article suggests practices for managing dimension set balances which help k
 
 ## Update vs. rebuild
 
-Two options are available for refreshing dimension set balances.
+Two options are available for refreshing dimension set balances. It's important to run these updates before generating reports rather than concurrently to ensure the accuracy of their data.
 
 - **Update balances** – This option processes only the transactions that were posted since the last update. It is a fast, incremental operation that adds new records to the existing balance.
 - **Rebuild balances** – This option clears all existing balance data and recalculates from the very beginning. It is a much more resource-intensive operation.
 
-In most situations, use **Update balances**. It is significantly faster and places less load on the system. Reserve **Rebuild balances** for cases where you suspect a balance is incorrect or a transaction appears to be missing — and only after other troubleshooting steps have been exhausted.
+In most situations, use **Update balances**. It is significantly faster and places less load on the system. Reserve **Rebuild balances** for two specific cases:
+
+1. Your balances appear to be out of balance due to data issues that need to be fixed
+2. You update balances multiple times per day, which can lead to incomplete data summarization; a rebuild optimizes the summary data and improves report efficiency
+
+Only use **Rebuild balances** after other troubleshooting steps have been exhausted.
 
 >[!IMPORTANT]
 >Once initiated, do not cancel an update, even if it is taking a long time.
+
+## Limit the scope of balance calculations
+
+Where possible, narrow the scope of balance calculations to avoid unnecessary processing.
+
+- **Use date-range specific rebuilds** – Using date ranges specifically targeting transactions that have not yet been added to the balances is recommended in almost all cases.
+- **Do not include the present date in balance updates** - Including the present date in balance updates can lead to problems, as it settles balances while transactions are still being posted. At the latest, extend your date range days up to the present date minus 1. 
+- **Run calculations per legal entity** – It is almost always recommended to update balances per legal entity. For very specific business cases, administrators may update balances for all legal entities via the dimension set form, though this can be computationally expensive and time-consuming.
+
+## Time balance calculations carefully
+
+When and how you run balance calculations has a significant impact on overall system performance.
+
+- **Run calculations sequentially** – Avoid running balance calculations for multiple dimension sets at the same time. Running them one after another produces better performance than running them in parallel.
+- **Avoid updates and rebuilds during year-end close** – Don't run updates or rebuilds while the year-end close process is in progress. Before year-end close completes, it automatically performs a targeted rebuild on a date range that may contain a large number of transactions. Running rebuilds in parallel during this time can be computationally expensive and unnecessary.
+- **Avoid large operations during peak hours** – Large updates or rebuilds during periods of high system activity can slow down the experience for other users. Schedule them for off-peak times whenever possible.
 
 ## Only create dimension sets you need
 
@@ -44,7 +65,7 @@ For dimension sets that are no longer in use, consider clearing their balances r
 >[!NOTE]
 >The [**Performance enhancement for general ledger dimension set balance calculation**](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-set-new) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
 
-For environments where large transaction volumes are regularly posted or imported, scheduling periodic balance updates helps keep the number of unprocessed transactions low and thus prevents slowdowns when reports are run. Schedule these jobs during off-peak hours to minimize the impact on other users.
+For environments where large transaction volumes are regularly posted or imported, scheduling periodic balance updates helps keep the number of unprocessed transactions low and thus prevents slowdowns when reports are run. Schedule these jobs during off-peak hours (for example, evenings) to minimize the impact on other users.
 
 To set up a recurring update job, select the dimension set, and then select **Update**. In the pane that appears on the right hand side, select **Recurrence** under **Run in the background** to define the job schedule.
 
@@ -53,9 +74,9 @@ To set up a recurring update job, select the dimension set, and then select **Up
 
 Keep the following points in mind:
 
-- Running updates too frequently can itself slow performance. Choose a cadence that keeps data reasonably current without placing unnecessary load on the system.
+- Running updates too frequently can itself slow performance. Choose a cadence that keeps data reasonably current without placing unnecessary load on the system. A default recommendation is to update balances daily, starting scheduled jobs soon after business hours. This may or may not be advisable depending on your business needs.
 - Some reports and inquiries trigger a balance update automatically. For example, selecting **Update** on the **Trial balance** list page runs an **Update balances** operation for that financial dimension set.
-- Scheduling a **Rebuild balances** job is not recommended unless you have a specific, recurring need for it. If a rebuild must be scheduled, run it infrequently — for example, monthly — and only during periods of minimal system activity.
+- Scheduling a **Rebuild balances** job is not recommended unless you have a specific, recurring need for it. If a rebuild must be scheduled, run it infrequently — for example, monthly — and only during periods of minimal system activity. 
 
 ## Factors influencing update performance
 
@@ -65,10 +86,9 @@ The time it takes to process balance updates depends on several factors:
 - Number of dimensions in your chart of accounts
 - Complexity of dimension configurations
 - Number of active dimension sets
-- Complexity of advanced rules
 - Number of distinct values used within each dimension
 
-To maximize performance, focus on optimizing these factors wherever possible.
+To maximize performance, focus on optimizing these factors wherever possible. For guidance on managing the number of values within each dimension, see the [highly variable dimensions](https://learn.microsoft.com/en-us/dynamics365/finance/cost-accounting/high-var-dimensions) documentation.
 
 ## Enable relevant features
 
@@ -80,26 +100,11 @@ The [**Performance enhancement for general ledger dimension set balance calculat
 >
 > Once feature is enabled, it is important to not disable this feature.
 
-We also recommend disabling **change tracking** on dimension set tables where it isn't required. Change tracking adds overhead to tables that are updated frequently, and it should be reserved for authoritative transactional tables where historical change visibility is a business or compliance requirement. In particular, consider disabling change tracking for **DimensionFocus** tables such as **DimensionFocusBalance**.
-
-## Limit the scope of balance calculations
-
-Where possible, narrow the scope of balance calculations to avoid unnecessary processing
-
-- **Run calculations per legal entity** – Unless cross-entity reporting requires it, run calculations per legal entity rather than across all legal entities at once.
-- **Use date-range specific rebuilds** – If you need to recover missing transactions, use a date-range specific rebuild that targets only the affected period. Always try this approach before resorting to a full clear and rebuild of all balances.
-
-## Time balance calculations carefully
-
-When and how you run balance calculations has a significant impact on overall system performance.
-
-- **Run calculations sequentially** – Avoid running balance calculations for multiple dimension sets at the same time. Running them one after another produces better performance than running them in parallel.
-- **Avoid updates and rebuilds during year-end close** – Don't run updates or rebuilds while the year-end close process is in progress. Before year-end close completes, it automatically performs a targeted rebuild on a date range that may contain a large number of transactions. Running rebuilds in parallel during this time can be computationally expensive and unnecessary.
-- **Avoid large operations during peak hours** – Large updates or rebuilds during periods of high system activity can slow down the experience for other users. Schedule them for off-peak times whenever possible.
+We also recommend disabling **change tracking** on dimension set tables where it isn't required, such as intermediate tables. Change tracking adds overhead to tables that are updated frequently, and it should be reserved for tables reflecting final computations where historical change visibility is a business or compliance requirement. In particular, consider disabling change tracking for **DimensionFocus** tables such as **DimensionFocusBalance**.
 
 ## Don't delete and recreate dimension sets
 
-Deleting and recreating a dimension set is not an effective way to resolve performance issues. Deleting a dimension set orphans the existing balance data, and recreating it generates a new, duplicate set of data. Over time, this bloat can worsen the performance problems you were trying to fix.
+Deleting and recreating a dimension set is not an effective way to resolve performance issues. Deletion and creation of dimension sets and the data for their balances can be compute and time intensive processes which lead to further delays and slowdowns.
 
 Instead, use the techniques described in this article to address performance concerns. If issues persist after following these practices, contact customer support.
 
