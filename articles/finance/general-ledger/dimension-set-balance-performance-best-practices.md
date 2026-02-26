@@ -34,16 +34,10 @@ Please note that during updates and rebuilds of a dimension set, users will be b
 
 ## When to rebuild balances
 
-There are a few situations in which the it is recommended to use **Rebuild balances** instead of **Update balances**.
-
-1. Your balances appear to be out of balance due to data issues that need to be fixed
-2. A date-range specific update did not recover missing transactions and/or successfully consolidate balances despite other troubleshooting attempts
-3. You update balances multiple times per day, which can lead to incomplete data summarization; a rebuild optimizes the summary data and improves report efficiency
-5. You need to rebuild balances for your year-end close process
+Use **Rebuild balances** sparingly. In most cases, **Update balances** is sufficient. A rebuild is appropriate when a balance discrepancy has been identified and a balance update did not resolve it.
 
 >[!NOTE]
 >If Trial Balance is correct but external reporting (Financial Reporter, MRDB) is not, clearing/rebuilding balances has no impact and should never be done
-
 
 ## Limit the scope of balance calculations
 
