@@ -60,12 +60,12 @@ Additional fields that are added to live tables must be added to the correspondi
 
 **BI Entity Requirements:**
 
-1. Follow the standard entity creation process: [Building an entity](../../dev-itpro/data-entities/data-entities#building-an-entity)
+1. Follow the standard entity creation process: [Building an entity](../data-entities/data-entities.md#building-an-entity)
 2. Include all fields from the source table
 3. **Enable Change Tracking and Rowversion Support** (Critical):
    - Archive and LTR require Change Tracking on entities
    - Enable rowversion support on the entity
-   - Follow: [Entity change tracking](../../dev-itpro/data-entities/entity-change-track)
+   - Follow: [Entity change tracking](../data-entities/entity-change-track.md)
 
 ### Step 3: Refresh the virtual entity in Dataverse
 
