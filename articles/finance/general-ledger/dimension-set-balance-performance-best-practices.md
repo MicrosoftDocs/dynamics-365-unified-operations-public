@@ -25,15 +25,25 @@ Two options are available for refreshing dimension set balances. It's important 
 - **Update balances** – This option processes only the transactions that were posted since the last update. It is a fast, incremental operation that adds new records to the existing balance.
 - **Rebuild balances** – This option clears all existing balance data and recalculates from the very beginning. It is a much more resource-intensive operation.
 
-In most situations, use **Update balances**. It is significantly faster and places less load on the system. Reserve **Rebuild balances** for two specific cases:
-
-1. Your balances appear to be out of balance due to data issues that need to be fixed
-2. You update balances multiple times per day, which can lead to incomplete data summarization; a rebuild optimizes the summary data and improves report efficiency
-
-Only use **Rebuild balances** after other troubleshooting steps have been exhausted.
+In most situations, use **Update balances**. It is significantly faster and places less load on the system.
 
 >[!IMPORTANT]
 >Once initiated, do not cancel an update, even if it is taking a long time.
+
+Please note that during updates and rebuilds of a dimension set, users will be blocked from viewing its trial balance. 
+
+## When to rebuild balances
+
+There are a few situations in which the it is recommended to use **Rebuild balances** instead of **Update balances**.
+
+1. Your balances appear to be out of balance due to data issues that need to be fixed
+2. A date-range specific update did not recover missing transactions and/or successfully consolidate balances despite other troubleshooting attempts
+3. You update balances multiple times per day, which can lead to incomplete data summarization; a rebuild optimizes the summary data and improves report efficiency
+5. You need to rebuild balances for your year-end close process
+
+>[!NOTE]
+>If Trial Balance is correct but external reporting (Financial Reporter, MRDB) is not, clearing/rebuilding balances has no impact and should never be done
+
 
 ## Limit the scope of balance calculations
 
@@ -47,7 +57,7 @@ Where possible, narrow the scope of balance calculations to avoid unnecessary pr
 
 When and how you run balance calculations has a significant impact on overall system performance.
 
-- **Run calculations sequentially** – Avoid running balance calculations for multiple dimension sets at the same time. Running them one after another produces better performance than running them in parallel.
+- **Run calculations sequentially** – Avoid running balance calculations for multiple dimension sets at the same time. Simultaneous balance updates and rebuilds may cause blocking and slowed performance. Running them one after another produces better performance than running them in parallel.
 - **Avoid updates and rebuilds during year-end close** – Don't run updates or rebuilds while the year-end close process is in progress. Before year-end close completes, it automatically performs a targeted rebuild on a date range that may contain a large number of transactions. Running rebuilds in parallel during this time can be computationally expensive and unnecessary.
 - **Avoid large operations during peak hours** – Large updates or rebuilds during periods of high system activity can slow down the experience for other users. Schedule them for off-peak times whenever possible.
 
@@ -86,19 +96,21 @@ The time it takes to process balance updates depends on several factors:
 - Number of dimensions in your chart of accounts
 - Complexity of dimension configurations
 - Number of active dimension sets
-- Number of distinct values used within each dimension
+- Number of distinct values used within each dimension.
+- Usage of [highly variable dimensions](https://learn.microsoft.com/en-us/dynamics365/finance/cost-accounting/high-var-dimensions) (highly specific and infrequently reused dimensions). For values of this nature, consider [financial tags](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag).
 
-To maximize performance, focus on optimizing these factors wherever possible. For guidance on managing the number of values within each dimension, see the [highly variable dimensions](https://learn.microsoft.com/en-us/dynamics365/finance/cost-accounting/high-var-dimensions) documentation.
+To maximize performance, focus on optimizing these factors wherever possible.
 
-## Enable relevant features
+## Enable the performance enhancement feature
 
 The [**Performance enhancement for general ledger dimension set balance calculation**](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-set-new) feature replaces the previous balance data model with a more scalable architecture. It significantly improves balance calculation performance, automatically schedules balance updates, and eliminates many of the manual management requirements for maintaining dimension set balances.
 
-
-> [!IMPORTANT]
+> [!WARNING]
 > This feature may introduce breaking changes in some environments. Test it in a UAT or sandbox environment before you enable it in production.
 >
 > Once feature is enabled, it is important to not disable this feature.
+
+## Disable change tracking on dimension set tables
 
 We also recommend disabling **change tracking** on dimension set tables where it isn't required, such as intermediate tables. Change tracking adds overhead to tables that are updated frequently, and it should be reserved for tables reflecting final computations where historical change visibility is a business or compliance requirement. In particular, consider disabling change tracking for **DimensionFocus** tables such as **DimensionFocusBalance**.
 
@@ -106,6 +118,6 @@ We also recommend disabling **change tracking** on dimension set tables where it
 
 Deleting and recreating a dimension set is not an effective way to resolve performance issues. Deletion and creation of dimension sets and the data for their balances can be compute and time intensive processes which lead to further delays and slowdowns.
 
-Instead, use the techniques described in this article to address performance concerns. If issues persist after following these practices, contact customer support.
+In instances where a dimension set is no longer needed, it may be optimal to **clear** the balances rather than delete the dimension set. For more information, please refer to the **Only create dimension sets you need** section. If issues persist after following these practices, contact customer support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
