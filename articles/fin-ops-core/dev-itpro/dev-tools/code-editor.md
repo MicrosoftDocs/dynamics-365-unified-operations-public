@@ -21,7 +21,7 @@ This article describes the code editor for Visual Studio.
 
 ## Code editor
 
-Use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you see the familiar features of the Visual Studio code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window.
+Use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you see the familiar features of the Visual Studio Code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window.
 
 :::image type="content" source="./media/31_devotoolsconcept.png" alt-text="Screenshot of the code editor with the FMVehicle class open.":::
 
