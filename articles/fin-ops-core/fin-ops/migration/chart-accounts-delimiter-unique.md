@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 02/26/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
@@ -18,10 +18,10 @@ ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of finance and operations, you must not have the same delimiter for the chart of accounts and dimension names or values. 
+In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of Dynamics 365 finance and operations, you can't have the same delimiter for the chart of accounts and dimension names or values. 
 
 >[!NOTE]
->If an imported dimension value contains the segment delimiter, it will automatically be escaped with a backslash. For example, if the delimiter is "-" and a customer account number is "1000-01", it's imported as "1000\\-01".
+>If an imported dimension value contains the segment delimiter, it automatically escapes with a backslash. For example, if the delimiter is "-" and a customer account number is "1000-01", it's imported as "1000\\-01".
 
 To use the current delimiter character within dimension values, change the chart of accounts delimiter.
 
