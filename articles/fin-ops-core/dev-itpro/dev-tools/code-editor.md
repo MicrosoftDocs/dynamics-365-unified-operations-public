@@ -4,7 +4,7 @@ description: Learn about the features of the code editor for Visual Studio, incl
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 02/26/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -21,9 +21,9 @@ This article describes the code editor for Visual Studio.
 
 ## Code editor
 
-You use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you will see the familiar features of the Visual Studio code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window.
+Use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you see the familiar features of the Visual Studio code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window.
 
-![Code editor with FMVehicle class.](./media/31_devotoolsconcept.png)
+:::image type="content" source="./media/31_devotoolsconcept.png" alt-text="Screenshot of the code editor with the FMVehicle class open.":::
 
 Other features, such as collapsible sections, are also available.
 
@@ -31,7 +31,7 @@ Other features, such as collapsible sections, are also available.
 
 You can open the element designer that corresponds to the current X++ source code by right-clicking in the code editor and then selecting **Open Designer**.
 
-![Menu item for opening the code editor.](./media/opendesigner.jpg)
+:::image type="content" source="./media/opendesigner.jpg" alt-text="Screenshot of the context menu with the Open Designer option in the code editor.":::
 
 ## Additional resources
 

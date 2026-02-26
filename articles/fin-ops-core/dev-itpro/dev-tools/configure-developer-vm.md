@@ -4,7 +4,7 @@ description: Learn about the recommended configurations of your one-box develope
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 06/20/2017
+ms.date: 06/26/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -15,25 +15,25 @@ ms.assetid: 09dbb06c-dbc7-468d-a78e-e89a97a59fe6
 
 # Configure one-box development environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-This article describes recommended configurations of your one-box developer environment.
+This article describes recommended configurations for your one-box developer environment.
 
 ## Setup
 
-1. Start Visual Studio, and on the toolbar, click <strong>Dynamics 365 **&gt; **Options</strong>.
-2. Expand the **Microsoft Dynamics** node, and then click **Projects**.
-3. Verify that the <strong>Organize projects by element type</strong> check box is selected, and click *<strong><em>OK.</em></strong>*
-4. To view the line numbers in your code editor, select **Tools** &gt; **Options** &gt; **Text** **Editor** &gt; **All Languages**.
-5. Select the **Line numbers** check box.
+1. Start Visual Studio, and on the toolbar, select **Dynamics 365** > **Options**.
+1. Expand the **Microsoft Dynamics** node, and then select **Projects**.
+1. Verify that the **Organize projects by element type** check box is selected, and select **OK**.
+1. To view the line numbers in your code editor, select **Tools** &gt; **Options** &gt; **Text** **Editor** &gt; **All Languages**.
+1. Select the **Line numbers** check box.
 
 
 
 ## Debugging
-For better performance of the X++ debugger, you might want to turn off IntelliTrace. IntelliTrace collects the complete execution history of an application. It is not supported for X++ debugging and causes performance issues in the IDE when debugging large packages like Application Suite. To turn off Intellitrace, click **Options** &gt; **IntelliTrace** &gt; **Enable IntelliTrace**, clear the check box, and then click **OK**. Note that Intellitrace is only available in the Enterprise version of Visual Studio.    
+For better performance of the X++ debugger, turn off IntelliTrace. IntelliTrace collects the complete execution history of an application. It's not supported for X++ debugging and causes performance issues in the IDE when debugging large packages like Application Suite. To turn off Intellitrace, select **Options** &gt; **IntelliTrace** &gt; **Enable IntelliTrace**, clear the check box, and then select **OK**. Intellitrace is only available in the Enterprise version of Visual Studio.        
 
 
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about how to generate a Customization Analysis Report for you
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 02/26/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -17,13 +17,14 @@ ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
+This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules.
 
 ## What is the Customization Analysis Report?
 
 The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process. The report is in the form of a Microsoft Excel workbook.
 
 ## How to generate the report
+
 The xppbp.exe tool is located in c:\\packages\\bin or I:\\AosService\\PackagesLocalDirectory\\bin.
 To generate the Customization Analysis Report, run the following command in a development environment.
 
@@ -43,8 +44,8 @@ If your custom model references an ISV model, then you must include the `-Packag
 xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C:\temp\BPCheckLogcd.xml -module="ApplicationSuite" -car=c:\temp\CAReport.xlsx
 ```
 
-
 ## Issues List
+
 This section describes all best practice rules (errors, warnings, or informational messages) that can appear on the **Issues List** page of the report and provides suggestions for fixing the issues. Issues are of the **metadata** or **code** type. For all **code** issues, keep in mind that, if the warning or error occurs in a method that you've overlaid, the lines of code that violate the rule might belong to a model in a lower layer. In that case, you're not responsible for fixing warnings and errors in code that isn't yours.
 
 ### BPCheckPackReturnsConnull
