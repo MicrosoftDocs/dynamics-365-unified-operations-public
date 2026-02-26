@@ -4,7 +4,7 @@ description: Learn about the recommended configurations of your one-box develope
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 06/26/2026
+ms.date: 02/26/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
