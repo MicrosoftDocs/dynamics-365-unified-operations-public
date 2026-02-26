@@ -2,7 +2,7 @@
 title: Dimension set balance best practices
 description: Guidance for users to avoid slowdowns and poor performance for misuse of financial dimension sets
 author: ethanrimes
-ms.author: ethanrimes
+ms.author: ethankallett
 ms.topic: article
 ms.date: 02/23/2026
 ms.reviewer: twheeloc
@@ -67,14 +67,13 @@ For dimension sets that are no longer in use, consider clearing their balances r
 ## Schedule automated balance updates
 
 >[!NOTE]
->The [**Performance enhancement for general ledger dimension set balance calculation**](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-set-new) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
+>The [Performance enhancement for general ledger dimension set balance calculation](financial-dimension-set-new.md) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
 
 For environments where large transaction volumes are regularly posted or imported, scheduling periodic balance updates helps keep the number of unprocessed transactions low and thus prevents slowdowns when reports are run. Schedule these jobs during off-peak hours (for example, evenings) to minimize the impact on other users.
 
 To set up a recurring update job, select the dimension set, and then select **Update**. In the pane that appears on the right hand side, select **Recurrence** under **Run in the background** to define the job schedule.
 
-![](media/update-job-recurrence.png)
-
+![Job recurrance](media/update-job-recurrence.png)
 
 Keep the following points in mind:
 
@@ -91,13 +90,13 @@ The time it takes to process balance updates depends on several factors:
 - Complexity of dimension configurations
 - Number of active dimension sets
 - Number of distinct values used within each dimension.
-- Usage of [highly variable dimensions](https://learn.microsoft.com/en-us/dynamics365/finance/cost-accounting/high-var-dimensions) (highly specific and infrequently reused dimensions). For values of this nature, consider [financial tags](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag).
+- Usage of [highly variable dimensions](../cost-accounting/high-var-dimensions.md) (highly specific and infrequently reused dimensions). For values of this nature, consider [financial tags](financial-tag.md).
 
 To maximize performance, focus on optimizing these factors wherever possible.
 
 ## Enable the performance enhancement feature
 
-The [**Performance enhancement for general ledger dimension set balance calculation**](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-set-new) feature replaces the previous balance data model with a more scalable architecture. It significantly improves balance calculation performance, automatically schedules balance updates, and eliminates many of the manual management requirements for maintaining dimension set balances.
+The [**Performance enhancement for general ledger dimension set balance calculation**](financial-dimension-set-new.md) feature replaces the previous balance data model with a more scalable architecture. It significantly improves balance calculation performance, automatically schedules balance updates, and eliminates many of the manual management requirements for maintaining dimension set balances.
 
 > [!WARNING]
 > This feature may introduce breaking changes in some environments. Test it in a UAT or sandbox environment before you enable it in production.
