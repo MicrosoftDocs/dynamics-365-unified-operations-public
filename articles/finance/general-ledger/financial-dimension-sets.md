@@ -42,7 +42,7 @@ Use the **Create balances** button to initialize the balances for a dimension se
 > [!NOTE]
 > Updating balances affect all General ledger posting activies. We recommend that you limit the number of dimension sets that have balances. 
 
-![](media/CreateBalances.png)
+![Create balance](media/CreateBalances.png)
 
 ## Update balances
 
