@@ -40,7 +40,7 @@ A dimension set can have balances that are based on its financial dimensions. Th
 Use the **Create balances** button to initialize the balances for a dimension set that doesn't currently have balances.
 
 > [!NOTE]
-> Updating balances affects all General ledger posting activies. Limit the number of dimension sets that have balances. 
+> Updating balances affects all General ledger posting activies. Limit the number of dimension sets that have balances.
 
 :::image type="content" source="media/create-balances.png" alt-text="Screenshot of the Create balances action for a financial dimension set.":::
 
@@ -58,8 +58,9 @@ Use the **Rebuild balances** button to re-create the balances from scratch. In t
 > [!IMPORTANT]
 > Rebuilding balances should only be performed when incorrect or missing balance values are observed on the trial balance. This operation can significantly increase database load and processing time, depending on the volume of transactional data. During the rebuild, the affected dimension set is locked for recalculation and the trial balance can't be accessed until processing is complete. In environments with large sets of transactions, this process might take several hours or, in rare cases, multiple days.
 > To avoid performance impacts:
->  - Don't rebuild balances for multiple dimension sets at the same time. Running parallel rebuilds can introduce extra blocking and negatively affect system performance.
->  - Always attempt a date range-specific rebuild first. Use targeted rebuilds to recalculate only the periods where the discrepancies might exist. This approach should be tried before performing a full clear and rebuild of all balances.
+>
+> - Don't rebuild balances for multiple dimension sets at the same time. Running parallel rebuilds can introduce extra blocking and negatively affect system performance.
+> - Always attempt a date range-specific rebuild first. Use targeted rebuilds to recalculate only the periods where the discrepancies might exist. This approach should be tried before performing a full clear and rebuild of all balances.
 
 If you have a scenario that regularly requires a rebuild of balances, contact customer support. Customer support can help you determine why balances don't match the data in General ledger.
 
@@ -69,8 +70,7 @@ Use the **Clear balances** button to remove the balances and stop any further up
 
 ## Delete a dimension set
 
-Don't use **delete and recreate** dimension sets as a workaround to solve potential problems with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with problems, contact customer support. 
-
+Don't use **delete and recreate** dimension sets as a workaround to solve potential problems with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with problems, contact customer support.
 
 For more information, see [Financial dimensions](financial-dimensions.md).
 
