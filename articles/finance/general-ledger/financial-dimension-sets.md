@@ -41,7 +41,7 @@ You can define which dimension attributes are included in your financial dimensi
 
 ![](media/define-financial-dimension-set.png)
 
-You may modify the dimensions attributes defining your dimension set any time you wish. However, if the dimension set already has balances, it is important to **Clear** and **Rebuild** them after your changes. 
+You may modify the dimensions attributes defining your dimension set any time you wish. However, if the dimension set already has balances, it is important to **Clear** and **Rebuild** them after your changes. Failure to do so may result in your trial balance having duplicate rows with the same dimension values or other unexpected problems.
 
 ## Create balances
 
