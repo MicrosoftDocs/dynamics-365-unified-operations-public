@@ -2,10 +2,10 @@
 
 title: Connect Business performance analytics data to Microsoft Fabric
 description: This article explains how to link your Business performance analytics data to Microsoft Fabric.
-author: yashkv1
+author: yvishwa
 ms.author: yvishwa
 ms.reviewer: twheeloc 
-ms.date: 9/30/2025
+ms.date: 2/27/2026
 ms.topic: how-to
 ms.custom:
 ms.search.form: business-performance-analytics

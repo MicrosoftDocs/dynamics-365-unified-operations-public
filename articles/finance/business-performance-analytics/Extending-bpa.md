@@ -1,8 +1,8 @@
 ---
-title: Extend Business performance analytics
+title: Extend Business performance analytics in Microsoft Fabric
 description: Learn how to extend Business performance analytics by bringing external facts and dimensions into a Business performance analytics data model.
-author: lizmota
-ms.author: jiwo
+author: yvishwa
+ms.author: jyvishwa
 ms.topic: how-to
 ms.date: 10/30/2024
 ms.custom:
@@ -10,7 +10,7 @@ ms.reviewer: twheeloc
 audience: Application User
 ---
 
-# Extend Business performance analytics
+# Extend Business performance analytics in Microsoft Fabric
 
 You can integrate external facts and dimensions into the Business performance analytics data model to enhance the existing analytical capabilities. However, if there is a strict star schema structure, it's essential that you preserve the integrity of the model while you enable the new data.
 
