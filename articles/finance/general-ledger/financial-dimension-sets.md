@@ -35,6 +35,14 @@ A **Performance enhancement for general ledger dimension set balance calculation
 
 A dimension set can have balances that are based on its financial dimensions. The balances exist in General ledger and are based on the dimension set definition. The balances are summarized from the General ledger data to help improve performance when they are retrieved (for example, when a trial balance is generated).
 
+## Define a financial dimension set
+
+You can define which dimension attributes are included in your financial dimension set by selecting them from the **Available financial dimensions** list and then moving them to the **Selected financial dimensions** list via the right arrow. You can select up to eleven dimension attributes to define a financial dimension set.
+
+![](media/define-financial-dimension-set.png)
+
+You may modify the dimensions attributes defining your dimension set any time you wish. However, if the dimension set already has balances, it is important to **Clear** and **Rebuild** them after your changes. 
+
 ## Create balances
 
 Use the **Create balances** button to initialize the balances for a dimension set that doesn't currently have balances.
@@ -68,7 +76,6 @@ Use the **Clear balances** button to remove the balances and stop any further up
 ## Delete a dimension set
 
 Don't **delete and recreate** dimension sets as any form of workaround to solve potential issues with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with issues, contact customer support. 
-
 
 For more information, see [Financial dimensions](financial-dimensions.md).
 
