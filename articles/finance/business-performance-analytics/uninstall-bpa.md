@@ -20,7 +20,7 @@ If you uninstall and then reinstall Business performance analytics, you can save
 
 1. **Custom reports in the default solution** – When you reinstall Business performance analytics, the app restores reports it owns in the default solution.
 1. **Reports protected by the `msdyn_bpaconfig` solution** – As long as you don't uninstall the `msdyn_bpaconfig` solution, Business performance analytics can recover custom reports from it. This safeguard helps protect against reports being deleted by an admin or other processes with elevated access.  
-1. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
+1. **Manually saving custom reports** – You can export and reimport your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
 
 ### Data cleanup before uninstall
 
