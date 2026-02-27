@@ -4,23 +4,23 @@ description: Learn about how the archive feature in Microsoft Dynamics 365 finan
 author: kehoej99 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 01/27/2026
 ms.custom:
 ms.reviewer: twheeloc
 
 ---
 # Archive customization (preview)
 
-This article explains how the archive feature in **Microsoft Dynamics 365 Finance and Operations apps** supports customization. The archival framework is extensible and allows you to include **custom table fields** and **custom tables** within supported functional scenarios.
+This article explains how the archive feature in Microsoft Dynamics 365 Finance and Operations apps supports customization. The archival framework is extensible and allows you to include **custom table fields** and **custom tables** within supported functional scenarios.
 
-### Supported Customization Options
+### Customization options
 
-- Add **custom fields** to Microsoft-managed tables in standard archive scenarios  
-- Add **custom tables** to standard archive scenarios  
-- Build your **own custom archive scenario** using custom tables  
+- Add custom fields to Microsoft managed tables in standard archive scenarios.  
+- Add custom tables to standard archive scenarios.  
+- Build your own custom archive scenario using custom tables.  
 
 > [!NOTE]  
-> Only **custom tables** can be included when building your own custom archive scenario.
+> Only custom tables can be included when building your own custom archive scenario.
 
 
 ## Add custom fields in history tables and business intelligence entities
@@ -42,40 +42,37 @@ Dataverse interacts with finance and Operations through virtual entities. These 
 
 ### Required fields on tables
 
-Tables (both live and history) that participate in archive scenarios must include:
+Tables, both live and history, that participate in archive scenarios must include:
 
-- **Fields used in WHERE conditions**: Any fields that will be used to filter data in your archive job (e.g., `DataAreaId`, `Ledger`, date ranges, status fields)
-- **Fields used in JOIN conditions**: Any fields that relate child tables to parent tables
+- Fields used in WHERE conditions: Any fields that will be used to filter data in your archive job (e.g., `DataAreaId`, `Ledger`, date ranges, status fields)
+- Fields used in JOIN conditions: Any fields that relate child tables to parent tables
 - **`Partition`**: Typically included for multi-tenant scenarios
 
 > [!NOTE]
-> **Virtual Entity Field Naming**: When F&O tables are published as virtual entities in Dataverse, the F&O `DataAreaId` column appears as `SysDataAreaId` on the virtual entity. The Archive Service automatically handles this naming difference when moving data between F&O and Dataverse.
+> **Virtual entity field naming**: When Dynamics 365 finance and operations tables are published as virtual entities in Dataverse, the Dynamics 365 finance and operations `DataAreaId` column appears as `SysDataAreaId` on the virtual entity. The Archive service automatically handles this naming difference when moving data between Dynamics 365 finance and operations and Dataverse.
 
 ### Step 1: Add fields to the history table via extensions
 
 The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in finance and operations apps, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
 
-**Critical requirements for history tables:**
-
-1. All fields from the live table must be present (except `SysRowVersion` and `SysDataState`)
-2. Ensure fields used in your archive scenario's join and where conditions are present
-3. Create a clustered index on `RecId`
-4. **Add indexes on fields used in join and where conditions** - these are required for reversal job scheduling
-   - The framework validates that these indexes exist when scheduling reversal jobs
-   - Users cannot schedule reversal jobs if these indexes are missing
+Critical requirements for history tables:
+1. All fields from the live table must be present (except `SysRowVersion` and `SysDataState`).
+2. Ensure fields used in your archive scenario's join and where conditions are present.
+3. Create a clustered index on `RecId`.
+4. **Add indexes on fields used in join and where conditions** - these are required for reversal job scheduling.
+   - The framework validates that these indexes exist when scheduling reversal jobs.
+   - Users can't schedule reversal jobs if these indexes are missing.
 
 ### Step 2: Add fields to BI entities via extensions
 
 Additional fields that are added to live tables must be added to the corresponding BI entities.
-
-**BI Entity Requirements:**
-
-1. Follow the standard entity creation process: [Building an entity](../data-entities/data-entities.md#building-an-entity)
-2. Include all fields from the source table
-3. **Enable Change Tracking and Rowversion Support** (Critical):
-   - Archive and LTR require Change Tracking on entities
-   - Enable rowversion support on the entity
-   - Follow: [Entity change tracking](../data-entities/entity-change-track.md)
+The following requirements are needed for the BI entities:
+1. Follow the standard entity creation process: [Building an entity](../data-entities/data-entities.md#building-an-entity).
+2. Include all fields from the source table.
+3. Enable change tracking and rowversion support - critical:
+   - Archive and LTR require change tracking on entities.
+   - Enable rowversion support on the entity.
+   - Follow: [Entity change tracking](../data-entities/entity-change-track.md).
 
 ### Step 3: Refresh the virtual entity in Dataverse
 
@@ -87,10 +84,10 @@ Archive scenarios require specific indexes on source (live) tables for optimal p
 
 ### Index structure requirements
 
-**For Root/Parent tables:**
+For root or parent tables requirements:
 
-1. Include all fields used in WHERE conditions for this table
-2. Recommended: Place the primary segregation field (e.g., `DataAreaId`, `Ledger`) as the first field if used
+1. Include all fields used in WHERE conditions for this table.
+2. Recommended: Place the primary segregation field (e.g., `DataAreaId`, `Ledger`) as the first field if used.
 3. Add as **included columns** (not index fields):
    - `RecId` (only if table doesn't use RecId as clustered key)
    - `SysRowVersion`
@@ -129,11 +126,11 @@ Archive scenarios require specific indexes on source (live) tables for optimal p
 </AxTableIndex>
 ```
 
-**For Child tables:**
+For child tables:
 
-1. Include all fields used in JOIN conditions to the parent table
-2. Include all fields used in WHERE conditions for this table
-3. Recommended: Place the primary segregation field (e.g., `DataAreaId`, `Ledger`) as the first field if used
+1. Include all fields used in JOIN conditions to the parent table.
+2. Include all fields used in WHERE conditions for this table.
+3. Recommended: Place the primary segregation field (e.g., `DataAreaId`, `Ledger`) as the first field if used.
 4. Add as **included columns** (not index fields):
    - `RecId` (only if table doesn't use RecId as clustered key)
    - `SysRowVersion`
@@ -176,7 +173,7 @@ Additional tables can be included in the archive scenario if they have a direct 
 To create a history table that corresponds to the live table in the archive scope, follow these steps:
 
 1. Create a new history table that mirrors all fields from the corresponding live table, including all metadata properties on the live table. See the [column exclusion rule](#excl-rule) earlier in this article.
-2. Ensure fields used in your archive scenario's join and where conditions are present
+2. Confirm that fields used in your archive scenario's join and where conditions are present.
 3. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on the `RecId` column is sufficient.
 4. **Add indexes on criteria fields** (required for reversal jobs) - include fields used in archive criteria such as date ranges, status fields, etc.
 5. Create additional indexes to improve query performance as required and to maintain foreign key relationships.
@@ -226,24 +223,24 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 }
 ```
 
-## Setting the Job Criteria Key (Recommended)
+## Setting the job criteria key (Recommended)
 
-The **Job Criteria Key** is a partitioning identifier that enables parallel execution of archive jobs. By explicitly providing a job criteria key when building your archive job contract, you enable better performance, scheduling, and observability for your archive scenario.
+The Job criteria key is a partitioning identifier that enables parallel execution of archive jobs. By explicitly providing a job criteria key when building your archive job contract, you enable better performance, scheduling, and observability for your archive scenario.
 
-### What is Job Criteria Key?
+### What is job criteria key?
 
 The job criteria key identifies the scope or partition of an archive job, allowing the Dataverse scheduler to run multiple archive jobs in parallel for different partitions (typically different legal entities or ledgers). Without a job criteria key, archive jobs may be processed sequentially, impacting performance.
 
-### Common Values
-- **DataAreaId** - Legal entity identifier (e.g., "USMF", "DEMF") for most archive scenarios
-- **Ledger RecId** - Ledger identifier (converted to string) for ledger-specific archive jobs
-- **Custom partition key** - Any field that represents a logical partition in your scenario
+### Common values
+- **DataAreaId** - Legal entity identifier (e.g., "USMF", "DEMF") for most archive scenarios.
+- **Ledger RecId** - Ledger identifier (converted to string) for ledger-specific archive jobs.
+- **Custom partition key** - Any field that represents a logical partition in your scenario.
 
-### How to Set Job Criteria Key
+### How to set job criteria key
 
 Use the **setJobCriteriaKey()** method on the ArchiveServiceArchiveJobPostRequestBuilder.
 
-### Example 1: Sales Order Archive (Using DataAreaId)
+### Example - Sales order archive using DataAreaId
 
 ```csharp
 private ArchiveJobPostRequest configurePostRequestWithSalesOrderEntities(
@@ -305,151 +302,145 @@ private ArchiveJobPostRequest configurePostRequestWithGeneralLedgerEntities(
 }
 ```
 
-### Best Practices
+### Best practices
 
-1. **Always include a conditional check** before calling `setJobCriteriaKey()` to ensure the value exists
-2. **Convert non-string values** to string (e.g., use `int642Str()` for Int64 values like Ledger RecId)
-3. **Add a comment** explaining what partition key you're using and why
-4. **Call setJobCriteriaKey()** early in your builder chain, before adding source tables
+ - Always include a conditional check** before calling `setJobCriteriaKey()` to ensure the value exists.
+ - Convert non-string values** to string (e.g., use `int642Str()` for Int64 values like Ledger RecId).
+ - Add a comment explaining what partition key you're using and why.
+ - Call setJobCriteriaKey()** early in your builder chain, before adding source tables.
 
-### Conditions for a Valid Job Criteria Key
+### Conditions for a valid job criteria key
 
 A value is suitable as a job criteria key if it meets these criteria:
-1. **Represents a logical partition** - The value should identify a distinct partition of your data (e.g., legal entity, ledger, customer, project)
-2. **Consistent within a job** - All records processed by the archive job should share the same criteria key value
-3. **String-compatible** - Must be convertible to string (use `int642Str()`, `int2Str()`, etc. for numeric values)
-4. **Present in root table** - The field should exist in your root source table's where conditions
-5. **Non-null and non-empty** - Always validate the value exists before passing it to `setJobCriteriaKey()`
+ - Represents a logical partition - The value should identify a distinct partition of your data (e.g., legal entity, ledger, customer, project).
+ - Consistent within a job - All records processed by the archive job should share the same criteria key value.
+ - String-compatible - Must be convertible to string (use `int642Str()`, `int2Str()`, etc. for numeric values).
+ - Present in root table - The field should exist in your root source table's where conditions.
+ - Non-null and non-empty - Always validate the value exists before passing it to `setJobCriteriaKey()`.
 
-### What Job Criteria Key Entails
+### What is a job criteria key 
 
-The job criteria key is fundamentally a partitioning mechanism that ensures **no overlapping records** between concurrent archive jobs. When choosing a value for the job criteria key, it must satisfy this critical condition: when running multiple archive jobs within the same scenario (e.g., Sales Orders), each job with a different job criteria key must process completely distinct sets of records with zero overlap.
+The job criteria key is fundamentally a partitioning mechanism that ensures no overlapping records between concurrent archive jobs. When choosing a value for the job criteria key, it must satisfy this critical condition: when running multiple archive jobs within the same scenario, sales orders, each job with a different job criteria key must process completely distinct sets of records with zero overlap.
 
-For example, if you run two Sales Order archive jobs simultaneously - one with job criteria key "USMF" and another with "DEMF" - the records archived by the USMF job must not overlap with records archived by the DEMF job. This is why `DataAreaId` is the ideal choice for most scenarios: it naturally partitions data by legal entity, guaranteeing no overlap.
+For example, if you run two sales order archive jobs simultaneously. One with job criteria key "USMF" and another with "DEMF". The records archived by the USMF job must not overlap with records archived by the DEMF job. This is why `DataAreaId` is the ideal choice for most scenarios: it naturally partitions data by legal entity, guaranteeing no overlap.
 
 ## Creating a custom Dataverse solution for archive
 
-ISVs, Partners, and Customers need to create and manage their own Dataverse solutions for their custom archival scenarios, which will be installed and managed separately from the official Microsoft Archival package.
+ISVs, partners, and customers need to create and manage their own Dataverse solutions for their custom archival scenarios, which will be installed and managed separately from the official Microsoft Archival package.
 
-### Step 1: Create a new Dataverse solution
+### Create a new Dataverse solution
 
 1. Navigate to [Power Apps](https://make.powerapps.com)
-2. Select your target environment (must have Long-Term Retention enabled)
-3. Go to **Solutions** > **New solution**
+2. Select your target environment (must have Long-Term Retention enabled).
+3. Go to **Solutions** > **New solution**.
 4. Provide solution details:
-   - **Display Name**: `[Your Company] Archive Solution` (e.g., "Contoso WHS Archive Solution")
-   - **Name**: Technical name (e.g., `ContosoWHSArchive`)
-   - **Publisher**: Select or create a custom publisher for your organization
-   - **Version**: Start with 1.0.0.0
-5. Click **Create**
+   - Display name: `[Your Company] Archive Solution`. For example, Contoso WHS Archive Solution. 
+   - Name: Technical name. For example, ContosoWHSArchive.
+   - Publisher: Select or create a custom publisher for your organization.
+   - Version: Start with 1.0.0.0.
+5. Click **Create**.
 
-### Step 2: Add virtual entities to your solution
+### Add virtual entities to your solution
 
-1. Open your newly created solution
-2. Click **Add existing** > **Table** > **Virtual table**
-3. Search for and select the BI entities you created in F&O for your archive scenario
-4. Add all entities related to your archive scope
+1. Open your newly created solution.
+2. Click **Add existing** > **Table** > **Virtual table**.
+3. Search for and select the BI entities you created in F&O for your archive scenario.
+4. Add all entities related to your archive scope.
 5. Ensure each entity has:
    - Change tracking enabled
    - Rowversion support configured
    - All required fields from source tables
 
-### Step 3: Configure table settings for long-term retention
+### Configure table settings for long-term retention
 
 For each virtual entity added:
 
-1. Select the table in your solution
-2. Go to **Settings** > **Advanced options**
-3. Enable **Track changes** (if not already enabled)
+1. Select the table in your solution.
+2. Go to **Settings** > **Advanced options**.
+3. Enable **Track changes**. 
 4. Under **Data retention**, configure:
    - Enable **Long-term retain this table**
    - Set retention policies as needed
-5. Save changes
+5. Save changes.
 
-### Step 4: Security permissions
+### Security permissions
 
-The Archive Service uses a First-Party Application (FPA) user to perform archival operations, including deleting archived records from active tables.
-
-**Archive Service FPA Permissions (Handled Automatically)**
-
-> [!IMPORTANT]
-> The Archive Service First-Party Application user is **safelisted** for archive operations in Dataverse. This means you **do NOT need to configure any custom security roles or permissions** in Dataverse for the Archive Service to perform delete operations on your archive entities.
-
-**What This Means:**
-- The Archive Service FPA user automatically has the required delete permissions for all virtual entities published from F&O
-- No manual security role configuration is required in Power Platform Admin Center (PPAC) for the Archive Service
-- Delete operations on root entities automatically cascade to child entities through Dataverse relationship configurations
-
-**F&O End User Permissions (Required)**
+The Archive service uses a first-party application user to perform archival operations, including deleting archived records from active tables.
+Archive service first-party application permissions are handled automatically.
 
 > [!IMPORTANT]
-> End users who create and manage archive jobs in Finance & Operations must have **System Administrator** role in F&O. The safelisting mentioned above only applies to the Archive Service application performing automated delete operations, not to end users.
+> The Archive service first-party application user is safelisted for archive operations in Dataverse. This means you don't need to configure any custom security roles or permissions in Dataverse for the Archive service to perform delete operations on your archive entities.
 
-**Your Action:** Nothing required for Archive Service permissions. Simply ensure:
-1. Your virtual entities are properly published from F&O with the correct relationships configured
-2. End users have System Administrator role in F&O to create and manage archive jobs
+- The Archive service first-party application user automatically has the required delete permissions for all virtual entities published from Dynamics 365 finance and operations.
+- No manual security role configuration is required in Power Platform Admin Center (PPAC) for the Archive service.
+- Delete operations on root entities automatically cascade to child entities through Dataverse relationship configurations.
 
-### Step 5: Export and package your solution
+### Dynamics 365 finance and operations end user required permissions
 
-1. In your solution, click **Export**
-2. Choose **Managed** solution (recommended for production deployments)
-3. Click **Next** and wait for the export to complete
-4. Download the solution file (`.zip`)
+End users who create and manage archive jobs in Dynamics 365 finance and operations must have **System Administrator** role in Dynamics 365 finance and operations. The safelisting mentioned above only applies to the Archive service application performing automated delete operations, not to end users.
 
-### Step 6: Deploy to target environments
+Your action - Nothing is required for Archive service permissions and confirm: 
+ - Your virtual entities are properly published from Dynamics 365 finance and operations with the correct relationships configured.
+ - End users have System Administrator role in Dynamics 365 finance and operations to create and manage archive jobs.
 
-1. Navigate to the target environment in Power Apps
-2. Go to **Solutions** > **Import**
-3. Upload your solution `.zip` file
-4. Follow the import wizard
+### Export and package your solution
 
-### Step 7: Version management and updates
+1. In your solution, click **Export**.
+2. Choose **Managed** solution (recommended for production deployments).
+3. Click **Next** and wait for the export to complete.
+4. Download the solution file (`.zip`).
+
+### Deploy to target environments
+
+1. Navigate to the target environment in Power Apps.
+2. Go to **Solutions** > **Import**.
+3. Upload your solution `.zip` file.
+4. Follow the import wizard.
+
+### Version management and updates
 
 When you need to update your archive solution:
+1. Increment the solution version (e.g., 1.0.0.0 → 1.1.0.0).
+2. Make necessary changes to entities in your F&O environment.
+3. Synchronize virtual entities in Dataverse.
+4. Export the solution again as managed.
+5. Import the updated solution to target environments.
 
-1. Increment the solution version (e.g., 1.0.0.0 → 1.1.0.0)
-2. Make necessary changes to entities in your F&O environment
-3. Synchronize virtual entities in Dataverse
-4. Re-export the solution as managed
-5. Import the updated solution to target environments
+### Considerations for external solutions
+- Independent lifecycle - Your custom archive solution operates independently from Microsoft's official Archive package.
+- No internal dependencies - Don't reference or depend on Microsoft internal packages.
+- Publisher prefix - Use your own publisher prefix for all customizations.
+- Field requirements - Ensure all Dynamics 365 finance and operations source tables have `DataAreaId` and `Partition` fields.
+- Index requirements - Add proper indexes to source tables with `DataAreaId` as first key column.
+- History table indexes - Add indexes on criteria fields to support reversal job scheduling.
+- Testing - Test thoroughly in sandbox/dev environments before production deployment.
+- Documentation - Maintain documentation of your solution components and deployment process.
+- Compatibility - Ensure compatibility with Archive framework version installed in your Dynamics 365 finance and operations environment.
 
-## Key considerations for external solutions
-
-- **Independent Lifecycle**: Your custom archive solution operates independently from Microsoft's official Archive package
-- **No Internal Dependencies**: Do not reference or depend on Microsoft internal packages
-- **Publisher Prefix**: Use your own publisher prefix for all customizations
-- **Field Requirements**: Ensure all F&O source tables have `DataAreaId` and `Partition` fields
-- **Index Requirements**: Add proper indexes to source tables with `DataAreaId` as first key column
-- **History Table Indexes**: Add indexes on criteria fields to support reversal job scheduling
-- **Testing**: Test thoroughly in sandbox/dev environments before production deployment
-- **Documentation**: Maintain documentation of your solution components and deployment process
-- **Compatibility**: Ensure compatibility with Archive framework version installed in your F&O environment
-
-## Integration with archive framework
+### Integration with archive framework
 
 Your custom solution integrates with the Archive framework through:
+ - Virtual entities - The Archive framework discovers and uses your virtual entities automatically when referenced in your job contract.
+ - Type registration - Your X++ type registration (created in F&O) references your entities.
+ - Job contract - Your `ArchiveAutomationJobRequestCreator` classes reference your BI entities by name.
+ - No code changes needed - The Archive framework doesn't require modifications to recognize external solutions.
 
-1. **Virtual Entities**: The Archive framework discovers and uses your virtual entities automatically when referenced in your job contract
-2. **Type Registration**: Your X++ type registration (created in F&O) references your entities
-3. **Job Contract**: Your `ArchiveAutomationJobRequestCreator` classes reference your BI entities by name
-4. **No Code Changes Needed**: The Archive framework doesn't require modifications to recognize external solutions
-
-## Troubleshooting
+### Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| **Reversal job scheduling fails/blocked** | Ensure all history tables have indexes on criteria fields (date ranges, status fields, etc.). The framework validates these indexes exist before allowing reversal job scheduling. |
-| **Archive job fails with field validation errors** | Verify that all source and history tables have required fields: `DataAreaId` and `Partition` |
-| **Archive job fails with index validation errors** | Ensure source tables have proper indexes with `DataAreaId` as the first key column. Include `RecId`, `Partition`, `SysRowVersion`, and `SysDataStateCode` as included columns. |
-| **Entities not appearing in Dataverse** | Ensure virtual entities are properly published from F&O and the environment has Virtual Entity provider configured |
-| **Long-Term Retention not available** | Verify the environment is configured as a managed environment and LTR is enabled |
-| **Archive job fails with entity errors** | Check that entity names in X++ code exactly match the Dataverse entity names |
-| **Permission/security errors** | The Archive Service is safelisted - no configuration needed. Ensure end users have System Administrator role in F&O. |
-| **User cannot create archive jobs** | Ensure the end user has System Administrator role in F&O |
-| **Version conflicts** | Use semantic versioning and test compatibility before upgrading |
-| **Import failures** | Ensure all dependencies (Archive Service package, Virtual Entity provider) are installed first |
+| Reversal job scheduling fails/blocked | Ensure all history tables have indexes on criteria fields (date ranges, status fields, etc.). The framework validates these indexes exist before allowing reversal job scheduling. |
+| Archive job fails with field validation errors | Verify that all source and history tables have required fields: `DataAreaId` and `Partition`. |
+| Archive job fails with index validation errors | Ensure source tables have proper indexes with `DataAreaId` as the first key column. Include `RecId`, `Partition`, `SysRowVersion`, and `SysDataStateCode` as included columns. |
+| Entities not appearing in Dataverse | Ensure virtual entities are properly published from Dynamics 365 finance and operations and the environment has Virtual Entity provider configured |
+| Long-term retention not available | Verify the environment is configured as a managed environment and LTR is enabled. |
+| Archive job fails with entity errors | Check that entity names in X++ code exactly match the Dataverse entity names. |
+| Permission/security errors | The Archive Service is safelisted - no configuration needed. Ensure end users have System Administrator role in Dynamics 365 finance and operations. |
+| User can't create archive jobs | Ensure the end user has System Administrator role in Dynamics 365 finance and operations. |
+| Version conflicts | Use semantic versioning and test compatibility before upgrading. |
+| Import failures | Ensure all dependencies (Archive Service package, Virtual Entity provider) are installed first. |
 
-## Example: Partner solution structure
+#### Partner solution structure example
 
 ```
 ContosoWHSArchiveSolution (Managed)
@@ -464,7 +455,7 @@ ContosoWHSArchiveSolution (Managed)
 └── Version: 1.0.0.0
 ```
 
-## Finance and operations table names in live, history, and Dataverse-managed data lake tables
+## Dynamics 365 finance and operations table names in live, history, and Dataverse-managed data lake tables
 
 | Scenario | Live table | History table | BI entity | Dataverse-managed data lake table |
 |---|---|---|---|---|
