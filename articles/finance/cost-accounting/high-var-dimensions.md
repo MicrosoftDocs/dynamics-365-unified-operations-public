@@ -18,7 +18,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-A *highly variable dimension* is a financial dimension that is characterized by values that aren't reused, either individually or in combination with other values. Financial dimensions are designed for values that persist for years. Therefore, issues with highly variable dimensions typically occur when values are used for only days or weeks. The generation of combinations is a resource-intensive process.
+A *highly variable dimension* is a financial dimension that is characterized by values that aren't reused, either individually or in combination with other values. Financial dimensions are designed for values that persist for years. 
+
+>[!WARNING]
+>Highly variable dimensions can have significant negative impacts on performance and wait times. Highly variable data is very seldom recommended to be stored as a financial dimension. Financial tags are more suited for highly variable transaction categorizations. For further guidance, see the [Recommendations](https://learn.microsoft.com/en-us/dynamics365/finance/cost-accounting/high-var-dimensions#recommendations) section.
+
+Values that are used for only days or weeks typically create highly variable dimensions. The generation and overhead of financial dimension combinations is resource-intensive.
 
 Two types of highly variable dimensions produce numerous combinations:
 
