@@ -2,7 +2,7 @@
 title: Extend Business performance analytics in Microsoft Fabric
 description: Learn how to extend Business performance analytics by bringing external facts and dimensions into a Business performance analytics data model.
 author: yvishwa
-ms.author: jyvishwa
+ms.author: yvishwa
 ms.topic: how-to
 ms.date: 10/30/2024
 ms.custom:
