@@ -11,7 +11,7 @@ ms.reviewer: twheeloc
 ---
 # Archive customization (preview)
 
-This article explains how the archive feature in Microsoft Dynamics 365 Finance and Operations apps supports customization. The archival framework is extensible and allows you to include **custom table fields** and **custom tables** within supported functional scenarios.
+This article explains how the archive feature in Microsoft Dynamics 365 finance and operations apps supports customization. The archival framework is extensible and allows you to include custom table fields and custom tables within supported functional scenarios.
 
 ### Customization options
 
@@ -44,14 +44,14 @@ Dataverse interacts with finance and Operations through virtual entities. These 
 
 Tables, both live and history, that participate in archive scenarios must include:
 
-- Fields used in WHERE conditions: Any fields that will be used to filter data in your archive job (e.g., `DataAreaId`, `Ledger`, date ranges, status fields)
+- Fields used in WHERE conditions: Any fields that are used to filter data in your archive job (for example, `DataAreaId`, `Ledger`, date ranges, status fields)
 - Fields used in JOIN conditions: Any fields that relate child tables to parent tables
 - **`Partition`**: Typically included for multi-tenant scenarios
 
 > [!NOTE]
 > **Virtual entity field naming**: When Dynamics 365 finance and operations tables are published as virtual entities in Dataverse, the Dynamics 365 finance and operations `DataAreaId` column appears as `SysDataAreaId` on the virtual entity. The Archive service automatically handles this naming difference when moving data between Dynamics 365 finance and operations and Dataverse.
 
-### Step 1: Add fields to the history table via extensions
+### Add fields to the history table via extensions
 
 The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in finance and operations apps, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
 
@@ -63,7 +63,7 @@ Critical requirements for history tables:
    - The framework validates that these indexes exist when scheduling reversal jobs.
    - Users can't schedule reversal jobs if these indexes are missing.
 
-### Step 2: Add fields to BI entities via extensions
+### Add fields to BI entities via extensions
 
 Additional fields that are added to live tables must be added to the corresponding BI entities.
 The following requirements are needed for the BI entities:
@@ -74,7 +74,7 @@ The following requirements are needed for the BI entities:
    - Enable rowversion support on the entity.
    - Follow: [Entity change tracking](../data-entities/entity-change-track.md).
 
-### Step 3: Refresh the virtual entity in Dataverse
+### Refresh the virtual entity in Dataverse
 
 The customized business entity must be refreshed in Dataverse to archive data in the Dataverse long-term retention store.
 
@@ -87,7 +87,7 @@ Archive scenarios require specific indexes on source (live) tables for optimal p
 For root or parent tables requirements:
 
 1. Include all fields used in WHERE conditions for this table.
-2. Recommended: Place the primary segregation field (e.g., `DataAreaId`, `Ledger`) as the first field if used.
+2. Recommended: Place the primary segregation field (for example, `DataAreaId`, `Ledger`) as the first field if used.
 3. Add as **included columns** (not index fields):
    - `RecId` (only if table doesn't use RecId as clustered key)
    - `SysRowVersion`
@@ -130,7 +130,7 @@ For child tables:
 
 1. Include all fields used in JOIN conditions to the parent table.
 2. Include all fields used in WHERE conditions for this table.
-3. Recommended: Place the primary segregation field (e.g., `DataAreaId`, `Ledger`) as the first field if used.
+3. Recommended: Place the primary segregation field (for example, `DataAreaId`, `Ledger`) as the first field if used.
 4. Add as **included columns** (not index fields):
    - `RecId` (only if table doesn't use RecId as clustered key)
    - `SysRowVersion`
@@ -175,7 +175,7 @@ To create a history table that corresponds to the live table in the archive scop
 1. Create a new history table that mirrors all fields from the corresponding live table, including all metadata properties on the live table. See the [column exclusion rule](#excl-rule) earlier in this article.
 2. Confirm that fields used in your archive scenario's join and where conditions are present.
 3. Don't mirror indexes from the live table in the history table. For most history tables, a clustered index on the `RecId` column is sufficient.
-4. **Add indexes on criteria fields** (required for reversal jobs) - include fields used in archive criteria such as date ranges, status fields, etc.
+4. Add indexes on criteria fields that are required for reversal jobs - include fields used in archive criteria such as date ranges, status fields, etc.
 5. Create additional indexes to improve query performance as required and to maintain foreign key relationships.
 6. Extend the `ArchiveAutomationJobRequestCreator` class for a scenario to add the new table to archive table chart.
 
@@ -232,7 +232,7 @@ The Job criteria key is a partitioning identifier that enables parallel executio
 The job criteria key identifies the scope or partition of an archive job, allowing the Dataverse scheduler to run multiple archive jobs in parallel for different partitions (typically different legal entities or ledgers). Without a job criteria key, archive jobs may be processed sequentially, impacting performance.
 
 ### Common values
-- **DataAreaId** - Legal entity identifier (e.g., "USMF", "DEMF") for most archive scenarios.
+- **DataAreaId** - Legal entity identifier (for example, "USMF", "DEMF") for most archive scenarios.
 - **Ledger RecId** - Ledger identifier (converted to string) for ledger-specific archive jobs.
 - **Custom partition key** - Any field that represents a logical partition in your scenario.
 
@@ -305,14 +305,14 @@ private ArchiveJobPostRequest configurePostRequestWithGeneralLedgerEntities(
 ### Best practices
 
  - Always include a conditional check** before calling `setJobCriteriaKey()` to ensure the value exists.
- - Convert non-string values** to string (e.g., use `int642Str()` for Int64 values like Ledger RecId).
+ - Convert non-string values** to string (for example, use `int642Str()` for Int64 values like Ledger RecId).
  - Add a comment explaining what partition key you're using and why.
  - Call setJobCriteriaKey()** early in your builder chain, before adding source tables.
 
 ### Conditions for a valid job criteria key
 
 A value is suitable as a job criteria key if it meets these criteria:
- - Represents a logical partition - The value should identify a distinct partition of your data (e.g., legal entity, ledger, customer, project).
+ - Represents a logical partition - The value should identify a distinct partition of your data (for example, legal entity, ledger, customer, project).
  - Consistent within a job - All records processed by the archive job should share the same criteria key value.
  - String-compatible - Must be convertible to string (use `int642Str()`, `int2Str()`, etc. for numeric values).
  - Present in root table - The field should exist in your root source table's where conditions.
@@ -320,7 +320,7 @@ A value is suitable as a job criteria key if it meets these criteria:
 
 ### What is a job criteria key 
 
-The job criteria key is fundamentally a partitioning mechanism that ensures no overlapping records between concurrent archive jobs. When choosing a value for the job criteria key, it must satisfy this critical condition: when running multiple archive jobs within the same scenario, sales orders, each job with a different job criteria key must process completely distinct sets of records with zero overlap.
+The job criteria key is fundamentally a partitioning mechanism that ensures no overlapping records between concurrent archive jobs. When choosing a value for the job criteria key, it must satisfy this critical condition: when running multiple archive jobs within the same scenario, sales orders, each job with a different job criteria key must process distinct sets of records with zero overlap.
 
 For example, if you run two sales order archive jobs simultaneously. One with job criteria key "USMF" and another with "DEMF". The records archived by the USMF job must not overlap with records archived by the DEMF job. This is why `DataAreaId` is the ideal choice for most scenarios: it naturally partitions data by legal entity, guaranteeing no overlap.
 
@@ -344,7 +344,7 @@ ISVs, partners, and customers need to create and manage their own Dataverse solu
 
 1. Open your newly created solution.
 2. Click **Add existing** > **Table** > **Virtual table**.
-3. Search for and select the BI entities you created in F&O for your archive scenario.
+3. Search for and select the BI entities you created in Dynamics 365 finance and operations for your archive scenario.
 4. Add all entities related to your archive scope.
 5. Ensure each entity has:
    - Change tracking enabled
@@ -369,7 +369,7 @@ The Archive service uses a first-party application user to perform archival oper
 Archive service first-party application permissions are handled automatically.
 
 > [!IMPORTANT]
-> The Archive service first-party application user is safelisted for archive operations in Dataverse. This means you don't need to configure any custom security roles or permissions in Dataverse for the Archive service to perform delete operations on your archive entities.
+> The Archive service first-party application user is safe listed for archive operations in Dataverse. This means you don't need to configure any custom security roles or permissions in Dataverse for the Archive service to perform delete operations on your archive entities.
 
 - The Archive service first-party application user automatically has the required delete permissions for all virtual entities published from Dynamics 365 finance and operations.
 - No manual security role configuration is required in Power Platform Admin Center (PPAC) for the Archive service.
@@ -377,9 +377,9 @@ Archive service first-party application permissions are handled automatically.
 
 ### Dynamics 365 finance and operations end user required permissions
 
-End users who create and manage archive jobs in Dynamics 365 finance and operations must have **System Administrator** role in Dynamics 365 finance and operations. The safelisting mentioned above only applies to the Archive service application performing automated delete operations, not to end users.
+End users who create and manage archive jobs in Dynamics 365 finance and operations must have **System Administrator** role in Dynamics 365 finance and operations. The safe listing mentioned above only applies to the Archive service application performing automated delete operations, not to end users.
 
-Your action - Nothing is required for Archive service permissions and confirm: 
+Your action - nothing is required for Archive service permissions and confirm: 
  - Your virtual entities are properly published from Dynamics 365 finance and operations with the correct relationships configured.
  - End users have System Administrator role in Dynamics 365 finance and operations to create and manage archive jobs.
 
@@ -400,8 +400,8 @@ Your action - Nothing is required for Archive service permissions and confirm:
 ### Version management and updates
 
 When you need to update your archive solution:
-1. Increment the solution version (e.g., 1.0.0.0 → 1.1.0.0).
-2. Make necessary changes to entities in your F&O environment.
+1. Increment the solution version (for example, 1.0.0.0 → 1.1.0.0).
+2. Make necessary changes to entities in your Dynamics 365 finance and operations environment.
 3. Synchronize virtual entities in Dataverse.
 4. Export the solution again as managed.
 5. Import the updated solution to target environments.
@@ -435,7 +435,7 @@ Your custom solution integrates with the Archive framework through:
 | Entities not appearing in Dataverse | Ensure virtual entities are properly published from Dynamics 365 finance and operations and the environment has Virtual Entity provider configured |
 | Long-term retention not available | Verify the environment is configured as a managed environment and LTR is enabled. |
 | Archive job fails with entity errors | Check that entity names in X++ code exactly match the Dataverse entity names. |
-| Permission/security errors | The Archive Service is safelisted - no configuration needed. Ensure end users have System Administrator role in Dynamics 365 finance and operations. |
+| Permission/security errors | The Archive Service is safe listed - no configuration needed. Ensure end users have System Administrator role in Dynamics 365 finance and operations. |
 | User can't create archive jobs | Ensure the end user has System Administrator role in Dynamics 365 finance and operations. |
 | Version conflicts | Use semantic versioning and test compatibility before upgrading. |
 | Import failures | Ensure all dependencies (Archive Service package, Virtual Entity provider) are installed first. |
