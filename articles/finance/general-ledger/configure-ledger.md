@@ -30,6 +30,32 @@ To configure the chart of accounts for a legal entity, go to **General ledger \>
 
 For more information about how to plan and configure the chart of accounts and main accounts, see [Plan the chart of accounts](plan-chart-of-accounts.md).
 
+## Changing the chart of accounts
+
+> [!IMPORTANT]
+> If transactions have been posted in the legal entity, the chart of accounts cannot be changed. There is no workaround for this restriction.
+
+If no transactions have been posted, you may still encounter the following error when attempting to change the chart of accounts:
+
+```
+The chart of accounts is in use as a default account and cannot be changed.
+```
+
+This error occurs when one or more posting profiles in the legal entity have default accounts that reference the current chart of accounts. Because main accounts are specific to a chart of accounts, the system cannot automatically map them to accounts in a different chart of accounts, so the posting profiles must be cleared manually before the change is allowed.
+
+Expand the error message bar at the top of the form to see a detailed list of every affected posting profile table, field, and company. If you closed the message, attempt the change again to regenerate the details.
+
+[![Summary of error message showing the chart of accounts is in use.](./media/ChartOfAccountsInUse-1.png)](./media/ChartOfAccountsInUse-1.png)
+
+After expanding, you can scroll through all affected rows:
+
+[![Expanded error details listing affected posting profile tables and fields.](./media/ChartOfAccountsInUse-2.png)](./media/ChartOfAccountsInUse-2.png)
+
+For each table and field listed, go to the corresponding posting profile and clear the default account. After all references are removed, retry changing the chart of accounts. Once the change is complete, you can re-enter the default accounts using main accounts from the new chart of accounts.
+
+> [!NOTE]
+> The **Bank account** table contains a main account field that is required and cannot be cleared in the application. If the bank account table is listed as a blocker, contact Microsoft Support for assistance.
+
 ## Selecting account structures
 
 Each legal entity in Dynamics 365 Finance can be configured to use one or more account structures. Each account structure defines the financial dimensions, and the combinations of main accounts and financial dimensions, that will be allowed when transactions are posted. You can use the same account structures in more than one legal entity.
