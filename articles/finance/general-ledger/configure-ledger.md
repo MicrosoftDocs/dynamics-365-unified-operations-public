@@ -26,7 +26,7 @@ For each legal entity in Microsoft Dynamics 365 Finance, details about the ledge
 
 If your legal entities must have different charts of accounts or different account structures, the legal entity override feature might be useful. By using the same chart of accounts and account structures for multiple legal entities, and then managing any exceptions through legal entity overrides, you can simplify maintenance over time.
 
-To configure the chart of accounts for a legal entity, go to **General ledger \> Ledger setup \> Ledger**. On the **Ledger** page, select **Chart of accounts**, and then, in the list, select the chart of accounts to use. Note that the chart of accounts can't be changed after you select a value and post transactions in the legal entity.
+To configure the chart of accounts for a legal entity, go to **General ledger \> Ledger setup \> Ledger**. On the **Ledger** page, select **Chart of accounts**, and then, in the list, select the chart of accounts to use.
 
 For more information about how to plan and configure the chart of accounts and main accounts, see [Plan the chart of accounts](plan-chart-of-accounts.md).
 
