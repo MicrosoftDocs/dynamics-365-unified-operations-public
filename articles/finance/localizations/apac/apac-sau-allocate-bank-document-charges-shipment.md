@@ -50,19 +50,16 @@ Follow these steps to allocate bank document charges.
     > [!NOTE]
     > The system automatically sets the **Offset account type** and **Offset account** fields.
 
-    :::image type="content" source="../media/apac-sau-general-journal-voucher.PNG" alt-text="Screenshot of entering the bank document charge code on a journal line."
-:::
+    :::image type="content" source="../media/apac-sau-general-journal-voucher.PNG" alt-text="Screenshot of entering the bank document charge code on a journal line.":::
 
 1. On the **List** tab, set the **Account** and **Debit** fields.
 1. On the **Letter of credit/import collection** page, on the Action Pane, select **Bank document** \> **Bank document charge**.
 
-    :::image type="content" source="../media/apac-sau-allocate-bank-docment-charge.PNG" alt-text="Screenshot of allocating bank document charges."
-:::
+    :::image type="content" source="../media/apac-sau-allocate-bank-docment-charge.PNG" alt-text="Screenshot of allocating bank document charges.":::
 
     The letter of credit or import collection that you created in the purchase order opens. It shows the bank document charge that you posted in the general journal for this letter of credit or import collection.
 
-    :::image type="content" source="../media/apac-sau-lc-bank-document-transactions.PNG" alt-text="Screenshot of letter of credit and import collection bank document transactions."
-:::
+    :::image type="content" source="../media/apac-sau-lc-bank-document-transactions.PNG" alt-text="Screenshot of letter of credit and import collection bank document transactions.":::
 
 1. Select the bank document charge transaction in **Edit** mode, and then select **Letter of credit/import collection** to allocate the selected bank document charge.
 

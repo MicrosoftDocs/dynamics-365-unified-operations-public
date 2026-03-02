@@ -25,9 +25,9 @@ The **Cross-border services** report shows a summary of incoming and outgoing cr
 1. Go to **General ledger** > **Chart of accounts** > **Accounts** > **Main accounts**, and create an account for each cross-border service. As part of the setup for each account that you create, follow these steps:
 
     1. On the **Legal entity overrides** FastTab, select **Add**, and select the legal entity.
-    1. On the **Legal entity overrides** FastTab select **Sales tax**, and then, in the **Sales tax direction** field, select either **Purchase** or **Sales**, depending on sales tax direction. For more information about how to create main accounts, see [Create a main account](https://learn.microsoft.com/dynamics365/finance/general-ledger/create-main-account).
+    1. On the **Legal entity overrides** FastTab select **Sales tax**, and then, in the **Sales tax direction** field, select either **Purchase** or **Sales**, depending on sales tax direction. For more information about how to create main accounts, see [Create a main account](../../general-ledger/tasks/create-main-account.md).
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**, and create a sales tax group for each country or region that a service is delivered to. As part of the setup for each group that you create, on the **General** FastTab, in the **Sales tax description** section, in the **Country/region or state** field, enter the country/region code. For more information about how to create sales tax groups, see [Set up sales tax groups and item sales tax groups](https://learn.microsoft.com/dynamics365/finance/tax/set-up-sales-tax-groups).
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**, and create a sales tax group for each country or region that a service is delivered to. As part of the setup for each group that you create, on the **General** FastTab, in the **Sales tax description** section, in the **Country/region or state** field, enter the country/region code. For more information about how to create sales tax groups, see [Set up sales tax groups and item sales tax groups](../../tax/set-up-sales-tax-groups.mds).
 
 ## Work with the Cross-border services report
 

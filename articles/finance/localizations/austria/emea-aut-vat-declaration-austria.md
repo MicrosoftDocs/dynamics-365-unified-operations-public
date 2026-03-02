@@ -211,8 +211,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
     > [!NOTE]
     > Be sure to associate all sales tax codes with lookup results. If any sales tax codes shouldn't generate values in the previously mentioned subsections of section 4, or in section 5, associate them with the **Other** lookup result.
     > 
-    > :::image type="content" source="../media/972efc3680f3683444f895b28cad394f.png" alt-text="Screenshot of the Application specific parameters page showing the Lookups FastTab."
-:::
+    > :::image type="content" source="../media/972efc3680f3683444f895b28cad394f.png" alt-text="Screenshot of the Application specific parameters page showing the Lookups FastTab.":::
 
 1. In the **State** field, change the value to **Completed**.
 1. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
