@@ -15,7 +15,6 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 # Best practices for managing financial dimension sets
 
 [!include [banner](../includes/banner.md)]
-the
 
 This article suggests practices for managing dimension set balances that help keep trial balance reports, balance initialization, and financial reports running efficiently. Following these recommendations is important because misuse of dimension sets can degrade system performance for all users.
 
@@ -28,24 +27,24 @@ Two options are available for refreshing dimension set balances. Run these updat
 
 In most situations, use **Update balances**. It's faster and places less load on the system.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Don't cancel an update, even if it's taking a long time.
 
-During updates and rebuilds of a dimension set, users can't view its trial balance. 
+During updates and rebuilds of a dimension set, users can't view its trial balance.
 
 ## When to rebuild balances
 
 Use **Rebuild balances** sparingly. In most cases, **Update balances** is sufficient. Use a rebuild when you identify a balance discrepancy and a balance update didn't resolve it.
 
->[!NOTE]
->If Trial Balance is correct but external reporting (Financial Reporter, MRDB) isn't, clearing or rebuilding balances has no impact and should never be done.
+> [!NOTE]
+>If Trial Balance is correct but external reporting (Financial Reporter, MRDB) isn't, clearing or rebuilding balances has no impact and shouldn't be done.
 
 ## Limit the scope of balance calculations
 
 Where possible, narrow the scope of balance calculations to avoid unnecessary processing.
 
 - **Use date-range specific rebuilds** – Use date ranges that specifically target transactions that aren't yet added to the balances.
-- **Don't include the present date in balance updates** - Including the present date in balance updates can lead to problems, as it settles balances while transactions are still being posted. At the latest, extend your date range days up to the present date minus 1. 
+- **Don't include the current date in balance updates** - Including the current date in balance updates can lead to problems, as it settles balances while transactions are still being posted. At the latest, extend your date range days up to the current date minus 1.
 - **Run calculations per legal entity** – Update balances per legal entity. For specific business cases, administrators can update balances for all legal entities via the dimension set form, though this process can be computationally expensive and time-consuming.
 
 ## Time balance calculations carefully
@@ -67,20 +66,20 @@ For dimension sets that are no longer in use, consider clearing their balances r
 
 ## Schedule automated balance updates
 
->[!NOTE]
+> [!NOTE]
 >The [Performance enhancement for general ledger dimension set balance calculation](financial-dimension-set-new.md) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
 
 For environments where large transaction volumes are regularly posted or imported, scheduling periodic balance updates helps keep the number of unprocessed transactions low and thus prevents slowdowns when running reports. Schedule these jobs during off-peak hours, such as evenings, to minimize the impact on other users.
 
-To set up a recurring update job, select the dimension set, and then select **Update**. In the pane that appears on the right, select **Recurrence** under **Run in the background** to define the job schedule.
+To set up a recurring update job, select the dimension set, and then select **Update**. In the pane that appears, select **Recurrence** under **Run in the background** to define the job schedule.
 
-![Job recurrance](media/update-job-recurrence.png)
+:::image type="content" source="media/update-job-recurrence.png" alt-text="Screenshot of the recurrence settings for scheduling a dimension set balance update job.":::
 
 Keep the following points in mind:
 
 - Running updates too frequently can slow performance. Choose a cadence that keeps data reasonably current without placing unnecessary load on the system. A default recommendation is to update balances daily, starting scheduled jobs soon after business hours. This recommendation might not fit your business needs.
 - Some reports and inquiries automatically trigger a balance update. For example, selecting **Update** on the **Trial balance** list page runs an **Update balances** operation for that financial dimension set.
-- Don't schedule a **Rebuild balances** job unless you have a specific, recurring need for it. If you must schedule a rebuild, run it infrequently - for example, monthly - and only during periods of minimal system activity. 
+- Don't schedule a **Rebuild balances** job unless you have a specific, recurring need for it. If you must schedule a rebuild, run it infrequently - for example, monthly - and only during periods of minimal system activity.
 
 ## Factors influencing update performance
 
