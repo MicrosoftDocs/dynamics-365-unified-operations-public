@@ -17,11 +17,12 @@ Two options are available for uninstalling Business performance analytics: code-
 If you must reinstall Business performance analytics after you uninstall it, wait four hours before reinstallation.
 
 If you uninstall and then reinstall Business performance analytics, custom reports can be saved in the following ways:
-1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.   
+
+1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.
 2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
 3. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
- 
-### Data cleanup before uninstall
+
+## Data cleanup before uninstall
 
 When Business performance analytics is uninstalled, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, may remain in the customer's storage. These residual elements aren't automatically deleted and can persist unless explicitly removed. To help maintain a clean and efficient environment, customers should run the data cleanup script provided below before performing the uninstall. This ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup may include removing folders like msdyn_BpaConfigs, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 
@@ -45,7 +46,6 @@ To perform data cleanup before uninstallation:
 
 > [!IMPORTANT]
 > Wait for the cleanup process to complete before uninstalling the solution.
-
 
 ```
 processDatalakeFolderDeletion = (shouldReset) => {
@@ -276,26 +276,26 @@ You can manually uninstall Business performance analytics through the Power Plat
 
 1. Business performance analytics anchor solution
 2. Business performance analytics solution
-3. Business performance analytics reports 
+3. Business performance analytics reports
 4. Business performance analytics plugins solution
-5. Business performance analytics permissions 
+5. Business performance analytics permissions
 6. Business performance analytics tables
 7. Business performance analytics controls
 8. Business performance analytics tables anchor solution
 9. Business performance analytics analytical tables workspace
 10. Business performance analytics analytical tables
 11. Business performance analytics tables transformation job flows
-12. Business performance analytics tables data processing configuration 
+12. Business performance analytics tables data processing configuration
 13. Business performance analytics tables data lake synchronization workspace
 14. Business performance analytics tables data lake synchronization
 15. Business performance analytics tables standard entities
 16. Business performance analytics tables virtual entities workspace
 17. Business performance analytics tables virtual entities
-18. Business performance analytics tables managed data lake 
+18. Business performance analytics tables managed data lake
 19. Business performance analytics pipeline plugins solution
-20. Business performance analytics tables user roles 
-21. Business performance analytics tables security 
-22. Business performance analytics config 
+20. Business performance analytics tables user roles
+21. Business performance analytics tables security
+22. Business performance analytics config
 
 To delete each of the preceding solutions, follow these steps:
 
