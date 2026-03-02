@@ -40,7 +40,7 @@ This functionality is available for legal entities that have their primary addre
     | Before 10.0.16                            | **Ledger transaction export format (BE)** under **Ledger accounting reports** > **Ledger transaction export (BE)** model. |
     | Starting from 10.0.16                     | **General ledger data export (BE)** under **Standard Audit File (SAF-T)** model.                                  |
 
-    :::image type="content" source="../media/be-audit-er-configs.png" alt-text="Screenshot of ER configurations." :::
+    :::image type="content" source="../media/be-audit-er-configs.png" alt-text="Screenshot of ER configurations.":::
 
 1. After import, make sure you have the following or later versions of ER configurations.
 
@@ -53,13 +53,13 @@ This functionality is available for legal entities that have their primary addre
     > [!NOTE]
     > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **General ledger data model mapping** configuration on the **Configurations** page.
 
-    :::image type="content" source="../media/be-audit-default-mm.png" alt-text="Screenshot of Default for model mapping option." :::
+    :::image type="content" source="../media/be-audit-default-mm.png" alt-text="Screenshot of Default for model mapping option.":::
 
 1. Starting in version 10.0.16, to use the **General ledger data export (BE)** format, define the ER configuration name in a new General ledger parameter. Go to **General ledger** > **Ledger setup** > **General ledger parameters**. 
 1. Expand the **Electronic reporting** FastTab and then select the **Ledger** tab. 
 1. In the **Ledger transactions export** group, in the **Ledger transactions export** field, select the format **General ledger data export (BE)**, and then save the new setting.
 
-    :::image type="content" source="../media/be-audit-gl-parameter.png" alt-text="Screenshot of GL parameter." :::
+    :::image type="content" source="../media/be-audit-gl-parameter.png" alt-text="Screenshot of GL parameter.":::
 
 ### Generate the Export ledger transactions report
 
