@@ -133,6 +133,9 @@ Change the **Account** value to **170150-004-**. **The journal functionality doe
 
 When you return to the voucher on the journal, the **BUSINESSUNIT** dimension does **not** reflect the fixed dimension value. It always has the value that was shown on the screen before posting. The posting process doesn't change anything that is entered on the voucher. Only the accounting entry is changed during posting.
 
+> [!NOTE]
+> A fixed dimension value can also be configured as blank. If it is, posting will force a blank value on the accounting entry regardless of what was entered on the journal line. If the account structure requires a value for that dimension, this results in a posting error. To resolve either issue, go to **Main accounts \> Legal entity overrides \> Default dimensions** and either enter a valid fixed value or set the dimension back to **Not fixed**.
+
 ## Developer notes
 
 If you're a developer and want to look at code for the defaulting process, review the following methods:
