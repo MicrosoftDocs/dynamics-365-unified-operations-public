@@ -218,10 +218,6 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 
 ## Setting the Job Criteria Key (Recommended)
 
-The **Job Criteria Key** is a partitioning identifier that enables parallel execution of archive jobs. By explicitly providing a job criteria key when building your archive job contract, you enable better performance, scheduling, and observability for your archive scenario.
-
-### What is Job Criteria Key?
-
 The job criteria key identifies the scope or partition of an archive job, allowing the Dataverse scheduler to run multiple archive jobs in parallel for different partitions (typically different legal entities or ledgers). Without a job criteria key, archive jobs may be processed sequentially, impacting performance.
 
 ### Common Values
