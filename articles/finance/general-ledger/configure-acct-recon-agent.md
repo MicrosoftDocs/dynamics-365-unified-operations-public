@@ -43,7 +43,7 @@ Before you use the Account reconciliation agent, make sure your system meets the
   - **Copilot in Microsoft Dynamics 365 Finance**, version 1.0.3049.1 or later
   
 - Normally, the Microsoft Copilot Studio agents needed for the Account reconciliation agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents.
-- To check if the agents were successfully published, follow these steps:
+- To check if the agents are successfully published, follow these steps:
 
 1. Go to Copilot Studio and find your environment.
 1. Confirm that the following Microsoft Copilot Studio agents are published in that environment:
@@ -81,7 +81,7 @@ The user accounts need the following security roles:
 ### Deploy the agent
 
 >[!NOTE]
-> There are two ways to deploy the agent. The first way is to use the new Agent Deployment Wizard experience. The second way is to manually create the required connections and activate the flows by using a powershell script. The following sections describe the two ways.  
+> You can deploy the agent in two ways. The first way is to use the new Agent Deployment Wizard experience. The second way is to manually create the required connections and activate the flows by using a powershell script. The following sections describe the two ways.  
 
 ### Deployment via the Agent deployment wizard
 
@@ -128,7 +128,7 @@ For more information about Agent Deployment wizard, see [Deploy Dynamics 365 age
 
 #### Create the required connections
 
-The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent.
+The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. Set up those connectors before you use the agent.
 
 To set up the connectors, follow these steps:
 
@@ -153,7 +153,7 @@ You're returned to the Connections page. The new connector appears at the bott
 
 #### Update connection references and activate the triggering flows
 
-To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. This section provides a sample PowerShell script that you can use to complete both tasks.
+To finish setting up agent identity, update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. This section provides a sample PowerShell script that you can use to complete both tasks.
 
 To use the sample PowerShell script, follow these steps:
 
