@@ -84,6 +84,7 @@ When you enter a journal and select an account in the profit and loss range, if 
 
 If you need more than seven criteria, add them on the next line. When you work in the **Allowed value details** section, you see that the **+Add new** criteria isn't active after the seventh criterion is entered. This restriction happens because of factors such as:
 
+- Column width
 - How the data is stored
 - Performance of the **Allowed value details** control
 - Usability
