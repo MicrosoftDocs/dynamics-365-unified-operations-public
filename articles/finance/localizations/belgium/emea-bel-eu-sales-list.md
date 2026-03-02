@@ -37,7 +37,7 @@ For general setup information, see [EU Sales list reporting](../europe/emea-eu-s
 
 ### Set up information about the company
 
-Create a registration type, and assign it to the **VAT ID** registration category for every country or region that your company does business with. Create another registration type, and assign it to the **Enterprise ID (COID)** registration category for the company. For more information, see [Registration IDs](../europe/emea-registration-ids.md).
+Create a registration type, and assign it to the **VAT ID** registration category for every country/region that your company does business with. Create another registration type, and assign it to the **Enterprise ID (COID)** registration category for the company. For more information, see [Registration IDs](../europe/emea-registration-ids.md).
 
 1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select your company.
@@ -218,7 +218,7 @@ For general information about how to create a setup, postings, and transfer tran
     | ZIP/postal code                                                             | 1840                                 |                                                                                 |
     | Street                                                                      | Ulitca 12                            |                                                                                 |
     | City                                                                        | Gorod                                |                                                                                 |
-    | Country code                                                                | BE                                   |                                                                                 |
+    | Country/region code                                                                | BE                                   |                                                                                 |
     | Email Address                                                               | <contoso@contoso.com>                  |                                                                                 |
     | Phone                                                                       | +49 123 456 789                      |                                                                                 |
     | Month **Note:** This field might be named **Quarter** instead of **Month**. | 08                                   |                                                                                 |
@@ -239,3 +239,5 @@ For general information about how to create a setup, postings, and transfer tran
 1. Review the report in Excel format that is generated.
 
     :::image type="content" source="../media/EUSL-bel.png" alt-text="Screenshot of the generated EUSL report in Excel.":::
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

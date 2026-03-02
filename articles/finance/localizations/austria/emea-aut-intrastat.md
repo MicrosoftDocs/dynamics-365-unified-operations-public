@@ -24,7 +24,7 @@ The Austrian Intrastat declaration includes the following fields:
 - Transaction code
 - Statistical procedure
 - Product name
-- Partner country ISO code
+- Partner country/region ISO code
 - Country/region of origin
 - Net mass
 - Additional unit
@@ -52,7 +52,7 @@ For more information, see [Download ER configurations from the Global repository
 1. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 1. In the **Transaction code** field, select the transaction code for property transfers. Use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). Use it also for corrections. Austrian companies use one-digit transaction codes.
 1. In the **Credit note** field, select the transaction code for the return of goods.
-1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report.
+1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report.
 
 ### Set up the product parameters for the Intrastat declaration
 
@@ -83,7 +83,7 @@ For more information, see [Download ER configurations from the Global repository
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) are transferred.
+On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country/region of destination (for dispatches) or consignment (for arrivals) are transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 
@@ -206,7 +206,7 @@ The following example shows how to set up Austrian Intrastat and create the Intr
 1. In the **Direction** field select **Dispatches**.
 1. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-    | Commodity code | Transaction code | Statistical procedure | Product name    | Partner country ISO code | Country/Region of origin | Net mass | Additional unit | Mode of transport | Invoice amount | Statistical value |
+    | Commodity code | Transaction code | Statistical procedure | Product name    | Partner country/region ISO code | Country/Region of origin | Net mass | Additional unit | Mode of transport | Invoice amount | Statistical value |
     |----------------|------------------|-----------------------|-----------------|--------------------------|-------------------|----------|-----------------|-------------------|----------------|-------------------|
     | 10020030       | 1                | 31710                 | MidRangeSpeaker | IT                       | AT                | 50       |                 | 3                 | 2632           | 2632              |
 
@@ -251,7 +251,7 @@ The following example shows how to set up Austrian Intrastat and create the Intr
 1. In the **Direction** field, select **Arrivals**.
 1. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-    | Commodity code | Transaction code | Statistical procedure | Product name    | Partner country ISO code | Country of origin | Net mass | Additional unit | Mode of transport | Invoice amount | Statistical value |
+    | Commodity code | Transaction code | Statistical procedure | Product name    | Partner countryregion ISO code | Country/Region of origin | Net mass | Additional unit | Mode of transport | Invoice amount | Statistical value |
     |----------------|------------------|-----------------------|-----------------|--------------------------|-------------------|----------|-----------------|-------------------|----------------|-------------------|
     | 10020030       | 1                | 10000                 | StandardSpeaker | DE                       | DE                | 48       |                 | 3                 | 965            | 965               |
 

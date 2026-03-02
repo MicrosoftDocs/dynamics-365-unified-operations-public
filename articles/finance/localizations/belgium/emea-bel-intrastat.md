@@ -61,7 +61,7 @@ For more information, see [Download ER configurations from the Global repository
 1. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 1. In the **Transaction code** field, select the transaction code for property transfers. Use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). Also use it for corrections. Belgian companies use two-digit transaction codes. For more information, see [Intrastat - Info](https://www.nbb.be/statistics/foreign-trade/intrastat-info).
 1. In the **Credit note** field, select the transaction code for the return of goods.
-1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report.
+1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report.
 1. On the **Number sequences** FastTab, set the number sequences for the **Intrastat archive ID** and **XML file number** references.
 
 ### Set up an address format
@@ -92,7 +92,7 @@ To set up an address format that includes state or province information, follow 
 1. Go to **Product information management** > **Products** > **Released products**.
 1. In the grid, select a product.
 1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select a commodity code.
-1. In the **Origin** section, in the **Country/region** field, select the product's country or region of origin.
+1. In the **Origin** section, in the **Country/region** field, select the product's country/region of origin.
 1. On the **Manage inventory** FastTab, in the **Net weight** field, enter the product's weight in kilograms.
 
 ### Set up the transport method and mode of delivery
@@ -113,7 +113,7 @@ To set up an address format that includes state or province information, follow 
 
     - Commodity
     - Transaction code
-    - Country of origin/destination
+    - Country/region of origin or destination
     - State
     - Country/region of origin
     - Direction
@@ -139,7 +139,7 @@ For more information about registration IDs, see [Registration IDs](../europe/em
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) are transferred.
+On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country/region of destination (for dispatches) or consignment (for arrivals) are transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 
@@ -400,6 +400,5 @@ To set up an address format that includes county information, follow these steps
 1. Review the generated Excel report.
 
     :::image type="content" source="../media/intrastat_be_6.png" alt-text="Screenshot of the Intrastat report on arrivals.":::
-    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
