@@ -18,6 +18,7 @@ ms.service: dynamics-365-op
 # Move Lifecycle Services implementation projects from on-premises to the cloud
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments that are hosted on your own infrastructure to the Azure cloud.
 

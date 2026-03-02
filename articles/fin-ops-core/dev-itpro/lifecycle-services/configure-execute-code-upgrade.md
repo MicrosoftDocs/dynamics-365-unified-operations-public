@@ -18,6 +18,7 @@ ms.custom: sfi-image-nochange
 # Configure the code upgrade service in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of the Dynamics 365 finance and operations apps.
 

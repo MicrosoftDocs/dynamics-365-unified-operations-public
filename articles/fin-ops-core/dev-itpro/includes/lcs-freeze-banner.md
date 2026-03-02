@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> New project creation in Microsoft Dynamics Lifecycle Services (LCS) is frozen for new Dynamics 365 Finance, Supply Chain Management, and Project Operations customers as of February 2026. New customers should use the [Power Platform admin center](/power-platform/admin/unified-experience/finance-operations-apps-overview) instead. For more information, see [LCS project creation freeze](../lifecycle-services/lcs-project-creation-freeze.md).

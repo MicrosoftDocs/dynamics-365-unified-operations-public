@@ -14,6 +14,7 @@ ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 # Add methodologies to solutions
 
 [!include[banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services. It also provides information about the requirements for methodologies.
 

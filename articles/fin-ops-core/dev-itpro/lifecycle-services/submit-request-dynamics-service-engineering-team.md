@@ -19,6 +19,7 @@ ms.custom: sfi-image-nochange
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 

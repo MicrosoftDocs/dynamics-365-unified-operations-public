@@ -16,6 +16,7 @@ ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
 # Regulatory watch and communication of regulatory updates
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 As part of the requirements for Lifecycle Services solutions for localization and translation, localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services.
 

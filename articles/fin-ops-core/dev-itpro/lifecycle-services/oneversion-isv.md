@@ -15,6 +15,7 @@ ms.dyn365.ops.version: Platform update 24
 # Delivering ISV solutions using One Version
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 Thanks to One Version, new updates are now automatically broadcast, downtime is minimal, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
 

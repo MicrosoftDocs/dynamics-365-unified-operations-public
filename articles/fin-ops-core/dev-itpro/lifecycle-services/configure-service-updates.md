@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Platform update 24
 # Configure service updates through Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 In Microsoft Dynamics Lifecycle Services, you can specify how and when you receive service updates from Microsoft for your environments.
 

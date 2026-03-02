@@ -17,6 +17,7 @@ ms.assetid:
 # Track user sign-ins
  
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 Many organizations need to maintain an audit trail of users who use the system. This requirement can be in place for compliance reasons, or to enable trackbacks in the event of incorrect use.
 

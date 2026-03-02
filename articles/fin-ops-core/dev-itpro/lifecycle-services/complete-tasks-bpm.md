@@ -17,6 +17,7 @@ ms.custom: sfi-image-nochange
 # Complete tasks in Business process modeler (BPM)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 ## Upload a task recording
 

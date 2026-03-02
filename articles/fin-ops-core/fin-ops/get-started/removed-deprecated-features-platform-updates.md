@@ -27,6 +27,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
+## Feature deprecation effective February 2026
+
+### New LCS project creation frozen for new customers
+
+| &nbsp;  | &nbsp; |
+|---|---|
+| **Reason for deprecation/removal** | LCS is being replaced by the Power Platform admin center as part of the unified admin strategy for Dynamics 365 Finance, Supply Chain Management, and Project Operations. |
+| **Replaced by another feature?** | Yes. [Power Platform admin center (PPAC)](/power-platform/admin/unified-experience/finance-operations-apps-overview) |
+| **Product areas affected** | Dynamics 365 Finance, Supply Chain Management, Project Operations |
+| **Deployment option** | Cloud |
+| **Status** | New LCS project creation frozen for new customers as of February 16, 2026. Existing customers with active LCS projects retain access. An [exception request process](https://aka.ms/LCSProjectCreationException) is available. For more information, see [LCS project creation freeze](../../dev-itpro/lifecycle-services/lcs-project-creation-freeze.md). |
+
 ## Feature deprecation effective February 2027
 
 ### The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027

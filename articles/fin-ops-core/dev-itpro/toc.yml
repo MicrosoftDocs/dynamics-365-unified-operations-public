@@ -1079,6 +1079,8 @@ items:
       items:
       - name: Resources for Lifecycle Services
         items:
+        - name: LCS project creation freeze
+          href: lifecycle-services/lcs-project-creation-freeze.md
         - name: Lifecycle Services resources
           href: lifecycle-services/lcs.md
         - name: LCS for customers

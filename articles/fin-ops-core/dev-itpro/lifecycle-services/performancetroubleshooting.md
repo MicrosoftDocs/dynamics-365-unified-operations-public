@@ -17,6 +17,7 @@ ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 # Performance troubleshooting using tools in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article describes how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services (LCS).
 

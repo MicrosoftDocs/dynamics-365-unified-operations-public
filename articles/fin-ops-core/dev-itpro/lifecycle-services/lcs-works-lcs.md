@@ -18,6 +18,7 @@ ms.custom: sfi-image-nochange
 # Lifecycle Services for finance and operations apps customers
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article is for customers who sign up for the current versions of finance and operations apps. Partners who work with customers to help them move through the lifecycle of their Microsoft Dynamics 365 Lifecycle Services project also find this information useful.
 

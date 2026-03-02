@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Platform update 24
 # Get notified about service updates through Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how you can stay up to date about service updates from Microsoft.
 

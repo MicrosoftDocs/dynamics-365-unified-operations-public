@@ -14,6 +14,7 @@ ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 # Process and consume data packages in finance and operations apps 
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 A data package for a finance and operations app can consist of one or many data entities. A typical data package consists of a group of entities for a specific task, process, or function. For example, the data entities that are required for general ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, a package header, and any other files for the data entities that are included.
 

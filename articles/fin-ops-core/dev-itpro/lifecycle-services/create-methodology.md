@@ -17,6 +17,7 @@ ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 # Create or update methodologies
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 Lifecycle Services for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. By using a methodology, you can easily track and report on your progress.
 

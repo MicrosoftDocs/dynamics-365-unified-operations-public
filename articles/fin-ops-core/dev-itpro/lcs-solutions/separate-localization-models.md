@@ -16,6 +16,7 @@ ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0
 # Separation of localization models
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 As part of the requirements for Lifecycle Services solutions for localization and translation, if a localization solution for previous versions of Dynamics 365 finance and operations apps contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
 
