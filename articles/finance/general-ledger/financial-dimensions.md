@@ -77,15 +77,6 @@ For a custom financial dimension, use this page to create and edit dimension val
 
 For an entity-backed financial dimension, you can't create dimension values from this page. You also can't edit the dimension value and descriptions from within the page. For example, let's say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can't edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, you must create it from the **Project** page.  
 
-#### Exporting financial dimension values
-
-> [!IMPORTANT]
-> When working with the **Financial dimension values entity** for data import or export, this entity only contains values that are used as dimensions. You see only values that are used in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or have had properties modified (such as Active from/Active to dates, Suspended status, and other overrides). Unused values don't appear in the entity.
-
-The **Open in Excel** button and Data Management Framework (DMF) exports both use the Financial dimension values entity. If a value is visible on the **Financial dimension values** page but missing from an entity export, use **Export to Excel** from that page instead, which returns all values regardless of whether they've been used. Values returned from **Export to Excel** are read-only, while those viewed via **Open in Excel** are interactive, allowing for writes back to source.
-
-To make a value available through the entity, import a property override for it using the **Financial dimension values entity** — for example, setting an *Active from* date or a *Suspended* status. Once an override is imported, the value appears in subsequent entity exports.
-
 ## Activating dimensions
 
 When you activate a financial dimension, the table updates to include the name of the financial dimension. Deleted dimensions are removed. You can create and edit dimension values before you activate a financial dimension. However, you can't consume a financial dimension anywhere until you activate it. For example, you can't add a financial dimension to an account structure until you activate the financial dimension.
