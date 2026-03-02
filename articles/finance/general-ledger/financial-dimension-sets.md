@@ -49,14 +49,14 @@ Use the **Create balances** button to initialize the balances for a dimension se
 Use the **Update balances** button to include the latest General ledger posting activity in the balances. Balance updates are light operations. They must process only the General ledger posting activity that occurs since the last update.
 
 > [!NOTE]
-> Display of the trial balance forces an update, to ensure that the balances that are shown are current. Consider using a recurring batch job so that updates to your most frequently used dimension sets are quick. In this way, you help minimize the time that trial balance users must wait.
+> Display of the trial balance forces an update, to ensure that the balances are current. Consider using a recurring batch job so that updates to your most frequently used dimension sets are quick. In this way, you help minimize the time that trial balance users must wait.
 
 ## Rebuild balances
 
 Use the **Rebuild balances** button to re-create the balances from scratch. In this way, you help ensure that they match the data in General ledger. A rebuild of balances requires lots of processing and shouldn't usually be required.
 
 > [!IMPORTANT]
-> Rebuilding balances should only be performed when incorrect or missing balance values are observed on the trial balance. This operation can significantly increase database load and processing time, depending on the volume of transactional data. During the rebuild, the affected dimension set is locked for recalculation and the trial balance can't be accessed until processing is complete. In environments with large sets of transactions, this process might take several hours or, in rare cases, multiple days.
+> Rebuilding balances should only be performed when you observe incorrect or missing balance values on the trial balance. This operation can significantly increase database load and processing time, depending on the volume of transactional data. During the rebuild, the affected dimension set is locked for recalculation and the trial balance can't be accessed until processing is complete. In environments with large sets of transactions, this process might take several hours or, in rare cases, multiple days.
 > To avoid performance impacts:
 >
 > - Don't rebuild balances for multiple dimension sets at the same time. Running parallel rebuilds can introduce extra blocking and negatively affect system performance.
