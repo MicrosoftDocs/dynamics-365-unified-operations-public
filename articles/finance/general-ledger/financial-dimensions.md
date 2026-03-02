@@ -73,9 +73,11 @@ A dimension value is then created for each project name. The **Financial dimensi
 
 After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
 
-For a custom financial dimension, use this page to create and edit dimension values. You can only enter or edit the **Dimension value** and **Description** fields for custom dimensions.  
+For a custom financial dimension, use this page to create and edit dimension values. You can only enter or edit the **Dimension value** and **Description** fields for custom dimensions. Dimension values have a maximum length of 30 characters.
 
-For an entity-backed financial dimension, you can't create dimension values from this page. You also can't edit the dimension value and descriptions from within the page. For example, let's say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can't edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, you must create it from the **Project** page.  
+For an entity-backed financial dimension, you can't create dimension values from this page. You also can't edit the dimension value and descriptions from within the page. For example, let's say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can't edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, you must create it from the **Project** page.
+
+To validate whether a ledger account or default dimension combination is structurally valid, use the **Dimension data validation** page. For more information, see [Dimension data validation](financial-dimension-data-validation.md).
 
 ## Activating dimensions
 
@@ -147,6 +149,10 @@ If any of these criteria are met, you can't delete the financial dimension.
 
 > [!NOTE]
 > Starting in Finance version 10.0.27, the system doesn't automatically select financial dimensions for financial reporting setup as they're created.
+
+For custom dimensions, creating any dimension value constitutes a reference. A custom dimension that has had any values created can't be deleted even if those values were never used on a transaction.
+
+In most cases, renaming is preferable to deleting. Rename a retired dimension or value (for example, **\_\_\_DONOTUSE\_DimensionName**) to indicate it's no longer in use — this sidesteps the data integrity constraints that block deletion, whether at the dimension level or on an individual value that has been referenced. If deletion is still required, a thorough assessment of all data references to the dimension's values is needed before any data can be removed.
 
 ### Financial dimensions as legal entities
 
