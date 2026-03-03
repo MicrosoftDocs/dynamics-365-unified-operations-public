@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: DataManagementWorkspace, CustParameters
 ms.topic: how-to
-ms.date: 01/07/2025
+ms.date: 02/25/2026
 ms.custom: 
   - bap-template
 ---
@@ -27,7 +27,7 @@ For a conceptual overview that describes how the improved quote-to-cash system w
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.34 or later.
-- You must be running [Dual-write Supply Chain solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.203.
+- You must be running [Dual-write Supply Chain solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwscm) version 2.3.4.203 or later.
 
 > [!IMPORTANT]
 > Before you enable the functionality that's described in this article, we strongly recommend that you complete (that is, win or cancel) any existing sales quotations that are in progress. Then, after you enable the functionality, re-create the quotations as required. This approach allows for a clean switch to the new integrated functionality.
@@ -66,7 +66,7 @@ Follow these steps to enable the required mappings in Supply Chain Management.
 1. In the **Data management** workspace, select **Dual-write**.
 1. On the **Dual-write** page, on the Action Pane, select **Apply solution**.
 1. In the **Apply solution** dialog box, select the maps to apply. At a minimum, you must select the map where the **Display name** field is set to *Dynamics 365 Supply Chain Management extended entity maps*. However, we recommend that you select all the maps that are listed. When you've finished selecting maps, select **Apply**.
-1. On the **Dual-write** page, in the grid, find the row where the **Table map** field is set to *Dynamics 365 Sales feature management states (msdyn\_supplychainfeaturestates)*. Select the row, and then select **Run** on the Action Pane.
+1. On the **Dual-write** page, in the grid, find the row where the **Table map** field is set to *Dynamics 365 Sales feature parameters (msdyn\_supplychainfeaturestates)*. Select the row, and then select **Run** on the Action Pane.
 1. The **Initial writes and related table map(s)** dialog box shows a single row, for the table map that you selected in the previous step. Set the following fields for this row:
 
     - **Initial sync** – Select this checkbox.
@@ -141,7 +141,7 @@ After you enable the **Integrate quotation lifecycles** functionality, if the sa
 
 1. In Supply Chain Management, go to **System administration** \> **Workspaces** \> **Data management**.
 1. In the **Data management** workspace, select **Dual-write**.
-1. Run an initial synchronization for the table map that's named *Dynamics 365 Sales feature management states (msdyn\_supplychainfeaturestates)*.
+1. Run an initial synchronization for the table map that's named *Dynamics 365 Sales feature parameters (msdyn\_supplychainfeaturestates)*.
 1. Make sure that the following maps are running:
 
     - *Dynamics 365 Sales order headers (salesorders)*

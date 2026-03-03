@@ -122,8 +122,8 @@ This section shows how to create a custom Power BI dataset that extends the Busi
 ### Step 4 (Optional): Publish the dataset to Fabric
 
 1. In Power BI Desktop, select **File > Publish > Publish to Power BI**.
-1. Choose the Fabric-backed workspace where you want the dataset to reside.
-1. After publishing, go to <https://app.powerbi.com> to verify the dataset appears in the workspace.
+2. Choose the Fabric-backed workspace where you want the dataset to reside.
+3. After publishing, go to <https://app.powerbi.com> to verify the dataset appears in the workspace.
 
     You now have a dataset that you can extend so that it includes other data sources. You can also create new measures on it.
 

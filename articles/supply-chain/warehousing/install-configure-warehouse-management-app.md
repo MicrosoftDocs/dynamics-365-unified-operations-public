@@ -9,7 +9,7 @@ ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
   - bap-template
-  - sfi-ropc-blocked
+  - sfi-ropc-nochange
 ---
 
 # Install the Warehouse Management mobile app

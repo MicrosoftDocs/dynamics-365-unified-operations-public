@@ -22,7 +22,13 @@ If you uninstall and then reinstall Business performance analytics, you can save
 1. **Reports protected by the `msdyn_bpaconfig` solution** – As long as you don't uninstall the `msdyn_bpaconfig` solution, Business performance analytics can recover custom reports from it. This safeguard helps protect against reports being deleted by an admin or other processes with elevated access.  
 1. **Manually saving custom reports** – You can export and reimport your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
 
-### Data cleanup before uninstall
+If you uninstall and then reinstall Business performance analytics, custom reports can be saved in the following ways:
+
+1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.
+2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
+3. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
+
+## Data cleanup before uninstall
 
 When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. These residual elements aren't automatically deleted and can persist unless you explicitly remove them. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 

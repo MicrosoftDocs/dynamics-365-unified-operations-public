@@ -1,24 +1,24 @@
 ---
 title: Use POS controls in extensions
-description: This article explains how to use Point of Sale (POS) controls in extensions.
+description: Learn how to use Microsoft Dynamics 365 Commerce point of sale (POS) controls in extensions.
 author: josaw1
-ms.date: 04/13/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
+ms.date: 02/20/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-13
-ms.dyn365.ops.version: AX 10.0.18
+ms.custom: 
+  - bap-template
 ---
 
 # Use POS controls in extensions
 
 [!include [banner](../../../includes/banner.md)]
 
-This article explains how to use Point of Sale (POS) controls in extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article explains how to use Microsoft Dynamics 365 Commerce point of sale (POS) controls in extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
-The **PosApi** library provides a consistent look and feel between the extension user interface (UI) and the rest of POS by giving access to common POS controls. These controls are available as interfaces in the **PosApi/Consume/Controls** module. Instances of these controls can be created by using the control factory that is provided in the extension context. The UI extension classes include views, dialog boxes, and custom controls.
+The **PosApi** library provides a consistent look and feel between the extension user interface (UI) and the rest of POS by giving access to common POS controls. These controls are available as interfaces in the **PosApi/Consume/Controls** module. You can create instances of these controls by using the control factory provided in the extension context. The UI extension classes include views, dialog boxes, and custom controls.
 
 The following example shows how to use the control factory to create a **DataList** control in the **onReady** function of a custom view controller.
 
@@ -73,11 +73,11 @@ The following POS controls are supported.
 
 | Control | Interfaces | Description |
 |---------|------------|-------------|
-| Data list | IDataList, IPaginatedDataList | A responsive list control that is used throughout POS to show rows of information. |
-| Date picker  | IDatePicker | The date picker control that is used in POS. |
-| Menu | IMenu | The menu control that is used in POS to show contextual information. |
+| Data list | IDataList, IPaginatedDataList | A responsive list control that's used throughout POS to show rows of information. |
+| Date picker  | IDatePicker | The date picker control that's used in POS. |
+| Menu | IMenu | The menu control that's used in POS to show contextual information. |
 | Number Pad | IAlphanumericNumPad, ICurrencyNumPad, INumericNumPad, ITransactionNumPad | <p>Number pads that are used throughout POS. Different types of number pads have different behaviors and input formatting:</p><ul><li>**Alphanumeric numpad** – This type of number pad accepts alphanumeric input.</li><li>**Currency numpad** – This type of number pad accepts monetary values.</li><li>**Numeric numpad** – This type of number pad accepts only numeric values.</li><li>**Transaction numpad** – This type of number pad accepts item identifiers or quantities. It's typically used in transaction scenarios.</li></ul> |
-| Time Picker | ITimePicker | The time picker control that is used in POS. |
+| Time Picker | ITimePicker | The time picker control that's used in POS. |
 | Toggle | IToggle | The toggle switch control that is used in POS. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

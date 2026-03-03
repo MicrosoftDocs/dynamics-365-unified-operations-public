@@ -1,5 +1,5 @@
 ---
-title: Financial dimensions
+title: Financial dimensions and tags
 description: Learn about the various types of financial dimensions and tags and how they're set up.
 author: anaborges02
 ms.author: aolson
@@ -57,7 +57,7 @@ To limit the dimension value to the letters "CC" and three numbers, enter **CC-\
 
 ## Entity-backed dimensions
 
-To create an entity-backed financial dimension, in the **Use values from** field, select a system-defined entity to base the financial dimension on. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
+To create an entity-backed financial dimension, in the **Use values from** field, select a system-defined entity to base the financial dimension on. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific. Dimensions that are company-specific (also known as company-striped dimensions) are only visible when accessed as a user from the associated company.
 
 For example, to create dimension values for projects, select **Projects**. This allows any value from the project table to be used as a dimension value directly.
 A dimension value is then created for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
@@ -176,7 +176,7 @@ If you're using a template to create a master record, make sure that the templat
 
 > [!NOTE]
 > You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).  
->  
+> 
 > If you don't intend for a blank dimension value to be defaulted, ensure that the dimension’s fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
 
 ## Derived dimensions

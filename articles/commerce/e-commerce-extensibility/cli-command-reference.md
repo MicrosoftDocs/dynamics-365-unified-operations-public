@@ -1,11 +1,10 @@
 ---
 title: CLI command reference
-description: This article covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: Learn about the command-line interface (CLI) commands available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
@@ -19,7 +18,7 @@ ms.custom:
 
 This article covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-All the following commands must be run by using Yarn. They all have the following structure.
+Run all the following commands by using Yarn. They all have the following structure.
 
 ```bash
 yarn {msdyn365} {command} {command-arguments}
@@ -35,9 +34,9 @@ For information about each command, see the entries in this article, or use the 
 yarn start <--verbose>
 ```
 
-This command builds and launches the Node server using the port defined in the .env file.
+This command builds and launches the Node server by using the port defined in the .env file.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Examples**
 
@@ -59,7 +58,7 @@ yarn build <--verbose>
 
 This command performs a complete build on the customization code.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Examples**
 
@@ -79,10 +78,10 @@ yarn build --verbose
 yarn msdyn365 add-component-override <themeName> <componentName> <--list-components> <--verbose>
 ```
 
-This command adds a component to the specified theme component folder. The component can then be modified as desired from that folder.
+This command adds a component to the specified theme component folder. You can modify the component as needed from that folder.
 
-- The `--list-components` option is used to show a list of components.
-- The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+- Use the `--list-components` option to display a list of components.
+- Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Examples**
 
@@ -102,9 +101,9 @@ yarn msdyn365 add-component-override --list-components
 yarn msdyn365 add-data-action <action-name> <--verbose>
 ```
 
-This command adds a template data action to the root/src/actions folder.
+Use this command to add a template data action to the `root/src/actions` folder.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -120,9 +119,9 @@ yarn msdyn365 add-data-action getMyData --verbose
 yarn msdyn365 add-module <module-name> <--verbose>
 ```
 
-This command adds a module to the root/src/modules folder. Module names are case-insensitive. 
+Use this command to add a module to the `root/src/modules` folder. Module names aren't case-sensitive. 
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -138,9 +137,9 @@ yarn msdyn365 add-module product-feature --verbose
 yarn msdyn365 add-theme <theme-name> <--verbose>
 ```
 
-This command adds a theme to the root/src/themes folder.
+Use this command to add a theme to the `root/src/themes` folder.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -156,9 +155,9 @@ yarn msdyn365 add-theme spring-theme --verbose
 yarn msdyn365 add-view-extension <theme-name> <Module-name> <--verbose>
 ```
 
-This command adds a module view extension to the root/src/themes/\<theme-name\>/views folder. The theme can then add more module definition items, such as configurations, resources, and slots.
+Use this command to add a module view extension to the `root/src/themes/<theme-name>/views` folder. The theme can then add more module definition items, such as configurations, resources, and slots.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -176,7 +175,7 @@ yarn msdyn365 clone <module-library-module-name> <new-module-name> <--verbose>
 
 This command creates a renamed copy of a module library module and adds the source code to the local root/src/modules folder.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -192,9 +191,9 @@ yarn msdyn365 clone content-block super-content-block --verbose
 yarn msdyn365 create-request-hook <--verbose>
 ```
 
-This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**), which can intercept the rendering request that is sent to the **root/src/modules** folder on the Node server.
+This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). The hook file intercepts the rendering request that the Node server sends to the **root/src/modules** folder.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -210,12 +209,12 @@ yarn msdyn365 create-request-hook --verbose
 yarn msdyn365 optimize-module-css <themeName> --requiredStyles=<requiredStylesFolder> --componentStyles=<componentStylesFolder> --assetFiles=<assetFiles> --assetVar=<assetVar>
 ```
 
-This command optimizes styles for the [module CSS optimization](module-css-optimization.md) feature by creating the necessary file structure.  Styles still must be updated within the individual **\<MODULE_NAME\>.scss** files for specific modules.
+This command optimizes styles for the [module CSS optimization](module-css-optimization.md) feature by creating the necessary file structure. You still need to update styles within the individual **\<MODULE_NAME\>.scss** files for specific modules.
 
-- The `--requiredStyles` option is used to specify the folder names of required/abstract styles.
-- The `--componentStyles` option is used to provide the folder names of component styles. 
-- The `--assetFiles` option is used to provide the file names where style assets are being used. 
-- The `--assetVar` option is used to provide variable names that describe the path to asset files without using the `$` character.
+- Use the `--requiredStyles` option to specify the folder names of required or abstract styles.
+- Use the `--componentStyles` option to provide the folder names of component styles. 
+- Use the `--assetFiles` option to provide the file names where style assets are used. 
+- Use the `--assetVar` option to provide variable names that describe the path to asset files without using the ` character.
 
 **Example**
 
@@ -231,11 +230,11 @@ yarn msdyn365 optimize-module-css adventureWorks --requiredStyles=00-settings,01
 yarn msdyn365 pack <--verbose>
 ```
 
-This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package is then uploaded to the Node server using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
+This command creates a package of the local site configurations such as modules, data actions, themes, and more. Upload this package to the Node server by using Microsoft Dynamics Lifecycle Services (LCS). Run this command from the root directory of your local SDK files.
 
-The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
+The output is a zip file in the directory where you run the command. The name uses the name and version that you find in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
 
-The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
+Use the `--verbose` option to get more detailed debugging output in the command prompt window.
 
 **Example**
 
@@ -251,9 +250,9 @@ yarn msdyn365 pack --verbose
 yarn msdyn365 packages
 ```
 
-This command prints the packageVersions.json file that was generated at build time to the console.
+This command prints the `packageVersions.json` file to the console. The build process generates this file.
 
-The packageVersions.json file includes information about Dynamics 365 Commerce packages and Dynamics 365 Commerce module packages, their versions, and how the versions that are used were determined.
+The `packageVersions.json` file includes information about Dynamics 365 Commerce packages and Dynamics 365 Commerce module packages, their versions, and how the process determines the versions that are used.
 
 **Example**
 
@@ -269,7 +268,7 @@ yarn msdyn365 packages
 yarn msdyn365 pack --preview
 ```
 
-This command creates a package with the latest SDK preview version, and is available with SDK version 1.41.10-preview.0 and later.
+This command creates a package by using the latest SDK preview version. It's available in SDK version 1.41.10-preview.0 and later.
 
 ## update-versions
 
@@ -279,7 +278,7 @@ This command creates a package with the latest SDK preview version, and is avail
 yarn msdyn365 update-versions <entity>
 ```
 
-This command updates the entity (SDK, module library, or retail proxy) versions to the latest release.
+Use this command to update the entity (SDK, module library, or retail proxy) versions to the latest release.
 
 **Examples**
 
@@ -289,7 +288,7 @@ yarn msdyn365 update-versions retail-proxy
 yarn msdyn365 update-versions sdk
 ```
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+Use the **--verbose** option to get more detailed debugging output in the command prompt window.
 
 ## validate
 
@@ -299,7 +298,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 yarn msdyn365 validate <path/to/directory>
 ```
 
-This command runs a series of validation checks on your package and any modules in the package. Specifically, it makes sure that each module has a valid definition .json file.
+Use this command to run validation checks on your package and any modules in the package. It makes sure that each module has a valid definition .json file.
 
 The path is the full path of the package folder that contains the package.json file.
 
@@ -308,11 +307,11 @@ The path is the full path of the package folder that contains the package.json f
 ```bash
 yarn msdyn365 validate ./
 ```
+
 ## Additional resources
 
 [E-commerce architectural overview](architectural-overview.md)
 
 [E-commerce components](ecommerce-components.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
