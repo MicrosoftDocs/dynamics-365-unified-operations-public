@@ -386,18 +386,6 @@ This same behavior applies to the **DimensionCombinationEntity** and **Dimension
 - **Different ledger dimension types** — Default accounts, ledger accounts, budget accounts, budget control accounts, and focus balance accounts are all stored in DimensionAttributeValueCombination. Records of different types can share the same DisplayValue.
 - **Hash algorithm migration** — The HashV2 update required creating new records for some combinations that couldn't be re-hashed in place. The old and new records differ only in the Hash and HashVersion columns, which aren't exposed on the entity.
 
-The entities are designed to be joined through other entities to provide context, not queried in isolation for all records. To see the full differences between apparent duplicates, join back to the underlying tables:
-
-```sql
-SELECT DCE.*, DAVC.*
-FROM DIMENSIONCOMBINATIONENTITY DCE
-JOIN DIMENSIONATTRIBUTEVALUECOMBINATION DAVC ON DAVC.RECID = DCE.RECID
-
-SELECT DSE.*, DAVS.*
-FROM DIMENSIONSETENTITY DSE
-JOIN DIMENSIONATTRIBUTEVALUESET DAVS ON DAVS.RECID = DSE.RECID
-```
-
 ### Dimension FK references can't be shared between data areas
 
 Dimension FK columns (such as **DefaultDimension** on **CustTable**) must not be replicated between companies through cross-company data sharing (SysDataSharing, DuplicateRecordSharing) or manual record copying.
