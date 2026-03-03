@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 02/17/2026
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -21,23 +21,11 @@ ms.custom:
 This article describes removed features, or features that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature isn't in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
-This list is intended to help you consider these removals and deprecations for your own planning.
+Use this list to help you consider these removals and deprecations for your own planning.
 
-Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
-
-## Feature deprecation effective February 2026
-
-### New LCS project creation frozen for new customers
-
-| &nbsp;  | &nbsp; |
-|---|---|
-| **Reason for deprecation/removal** | LCS is being replaced by the Power Platform admin center as part of the unified admin strategy for Dynamics 365 Finance, Supply Chain Management, and Project Operations. |
-| **Replaced by another feature?** | Yes. [Power Platform admin center (PPAC)](/power-platform/admin/unified-experience/finance-operations-apps-overview) |
-| **Product areas affected** | Dynamics 365 Finance, Supply Chain Management, Project Operations |
-| **Deployment option** | Cloud |
-| **Status** | New LCS project creation frozen for new customers as of February 16, 2026. Existing customers with active LCS projects retain access. An [exception request process](https://aka.ms/LCSProjectCreationException) is available. For more information, see [LCS project creation freeze](../../dev-itpro/lifecycle-services/lcs-project-creation-freeze.md). |
+For detailed information about objects in finance and operations apps, see the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
 ## Feature deprecation effective February 2027
 
@@ -50,6 +38,18 @@ Detailed information about objects in finance and operations apps can be found i
 | **Product areas affected** | Microsoft finance and operations applications |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | Deprecated. The Data Integrator templates for Dynamics 365 Field Service will no longer be available after February 28, 2027. This integration works by synchronizing work orders, agreements, inventory, and projects between Field Service and Supply Chain Management. Instead, look to a simpler, more integrated Field Service experience. Learn more in [Connect Field Service to finance and operations](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/connect-field-service-finance-operations) and [Link work orders to projects for unified financials](/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/link-work-orders-projects-unified-financials). |
+
+## Feature deprecation effective February 2026
+
+### New Lifecycle Services project creation frozen for new customers
+
+| &nbsp;  | &nbsp; |
+|---|---|
+| **Reason for deprecation/removal** | Dynamics 365 Lifecycle Services is being replaced by the Microsoft Power Platform admin center as part of the unified admin strategy for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations. |
+| **Replaced by another feature?** | Yes. [Power Platform admin center (PPAC)](/power-platform/admin/unified-experience/finance-operations-apps-overview) |
+| **Product areas affected** | Finance, Supply Chain Management, Project Operations |
+| **Deployment option** | Cloud |
+| **Status** | New Lifecycle Services project creation is frozen for new customers starting February 16, 2026. Existing customers with active Lifecycle Services projects retain access. An [exception request process](https://aka.ms/LCSProjectCreationException) is available. For more information, see [Lifecycle Services project creation freeze](../../dev-itpro/lifecycle-services/lcs-project-creation-freeze.md). |
 
 ## Feature deprecation effective April 2025
 

@@ -453,7 +453,7 @@ items:
             href: ../fin-ops/deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
-        - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
+        - name: Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects
           href: deployment/arm-onbarding-us-goverment.md
         - name: Azure ExpressRoute and finance and operations
           href: deployment/expressroute.md
@@ -501,7 +501,7 @@ items:
             href: migration-upgrade/on-prem-version-update-policy.md
         - name: Set up and deploy on-premises environments
           items: 
-          - name: Set up on-premises projects in LCS
+          - name: Set up on-premises projects in Lifecycle Services
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
           - name: Set up and deploy on-premises environments (Application 10.0.32 and later)
             href: deployment/setup-deploy-on-premises-latest.md
@@ -665,9 +665,9 @@ items:
           href: dev-tools/pipeline-asset-upload.md
         - name: Deploy assets by using Azure Pipelines
           href: dev-tools/pipeline-deploy-asset.md
-        - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
+        - name: Create a Lifecycle Services connection in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection.md
-        - name: Update LCS connection authentication tasks to MSAL in Azure Pipelines
+        - name: Update Lifecycle Services connection authentication tasks to MSAL in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection-update.md
         - name: Update the hosted Azure Pipeline for new NuGet packages
           href: dev-tools/pipeline-nuget-split.md
@@ -1073,19 +1073,19 @@ items:
           href: gdpr/respond-dsr-request-talent.md
         - name: Respond to requests for personal data in AX 2012
           href: gdpr/gdpr-ax2012.md
-        - name: GDPR data requests for LCS
+        - name: GDPR data requests for Lifecycle Services
           href: gdpr/gdpr-lcs.md
     - name: Lifecycle Services
       items:
       - name: Resources for Lifecycle Services
         items:
-        - name: LCS project creation freeze
+        - name: Lifecycle Services project creation freeze
           href: lifecycle-services/lcs-project-creation-freeze.md
         - name: Lifecycle Services resources
           href: lifecycle-services/lcs.md
-        - name: LCS for customers
+        - name: Lifecycle Services for customers
           href: lifecycle-services/lcs-works-lcs.md
-        - name: LCS for partners
+        - name: Lifecycle Services for partners
           href: lifecycle-services/getting-started-lcs.md
         - name: Supported web browsers
           href: lifecycle-services/web-browsers.md
@@ -1171,7 +1171,7 @@ items:
         href: lifecycle-services/user-logins.md
       - name: Asset library
         href: lifecycle-services/asset-library.md
-      - name: Performance troubleshooting using tools in LCS
+      - name: Performance troubleshooting using tools in Lifecycle Services
         href: lifecycle-services/performancetroubleshooting.md
       - name: Query cookbook
         href: lifecycle-services/querycookbook.md
