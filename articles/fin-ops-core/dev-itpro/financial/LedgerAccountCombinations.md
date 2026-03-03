@@ -371,9 +371,7 @@ Generation of a hash message requires something that uniquely identifies each di
 
 ### Risks of changing data directly
 
-It's important that no data be directly modified outside the application framework (for example, in Microsoft SQL Server Management Studio). This guideline applies to the modification of data in *any* column of the table, not just the columns that have been discussed in this article. It also applies to the replication of data from one row to another, and to attempts to create "new" sets or combinations outside the dimension framework storage classes.
-
-It's important that you understand this guideline when you're considering backups and partial restorations of data that might affect referential and hash integrity. For example, if you back up only the Ledger Dimension related records and import them into another partition, you might cause issues unless you also import all the other records in the dimension framework, in addition to all the backing entity records, such as records from the CustTable table or other table that were used to create any combinations. Any attempt to modify the data in these tables, or to synthesize GUIDs or hashes, will cause data to become corrupted, and will require complex, time-consuming analysis to find the source of the corruption and try to fix it.
+For detailed information about why financial dimension data must not be modified directly, which tables are affected, and what to do instead when dimension values are incorrect, see [Modifying financial dimension data](modifying-financial-dimension-data.md).
 
 ### Apparent duplicate combinations
 
