@@ -2,7 +2,7 @@
 title: Financial dimension links for sites
 description: Learn how to link a financial dimension to the site inventory dimension in Dynamics 365 Supply Chain Management so that profit and loss figures can be calculated per site.
 author:
-ms.author:
+ms.author: ethanrimes
 ms.reviewer: kamaybac
 ms.search.form: InventSiteDimensionLink
 ms.topic: how-to
