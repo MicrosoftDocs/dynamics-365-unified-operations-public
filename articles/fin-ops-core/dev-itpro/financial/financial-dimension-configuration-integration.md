@@ -80,6 +80,15 @@ Therefore, the string looks like this: **605140-001-02-**
 
 The second row is imported as defined in the import file: **Main account == 110110** **Department == 002** **Cost Center == 04** **Customer == ABC**
 
+## Using DimensionAttributeActivationEntity
+
+The `DimensionAttributeActivationEntity` data entity can be used to activate financial dimensions through Data Management. However, this entity must only be used while the system is in **maintenance mode**.
+
+> [!WARNING]
+> Running `DimensionAttributeActivationEntity` outside of maintenance mode can cause dbSync to fail to complete, leaving SQLDICTIONARY caches out of sync across AOS instances. This results in "column not filterable" errors, form personalization failures, and exceptions in dimension query providers that require a full AOS restart to resolve.
+
+For information about how to enable maintenance mode, see [Maintenance mode](../deployment/maintenance-mode.md).
+
 ## Additional resources
 
 [Add dimensions to Excel templates](dimensions-overview.md)
