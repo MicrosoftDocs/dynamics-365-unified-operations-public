@@ -379,6 +379,25 @@ When you browse the tables of the dimension framework and view only the **Displa
 
 For example, an account structure has **MainAccount-Department** in one company and another account structure has **MainAccount-CostCenter** in a different company. In this scenario, the **DisplayValue** string of two combinations, one for each account structure, can appear as **145-A**. For the first account structure, **A** represents a department in the first company. However, for the second account structure, it represents a cost center in the second company. Additionally, multiple types of a Ledger Dimension are stored in the DimensionAttributeValueCombination table. For example, special types for budgeting might appear the same to have the types as other combinations when you examine the **DisplayValue** fields. However, they hold different information internally and hold uniquely different hash values.
 
+This same behavior applies to the **DimensionCombinationEntity** and **DimensionSetEntity**. Querying these entities can return seemingly duplicate rows based on **DisplayValue**, but the underlying records differ. Common reasons include:
+
+- **Company-striped data** — Dimension data is stored globally but can reference company-specific backing records. A default dimension of "Department 001 - Project P012" could exist separately for USMF, USSI, and RUMF, producing three unique rows. The entity doesn't expose the data area; that's held by the owning table with the FK reference.
+- **Integration format excludes dimensions** — If the integration format exports only "Department - Project" but the system tracks "Department - Customer - Project - Employee", two records with different Customer/Employee values collapse to the same DisplayValue in the entity output.
+- **Different ledger dimension types** — Default accounts, ledger accounts, budget accounts, budget control accounts, and focus balance accounts are all stored in DimensionAttributeValueCombination. Records of different types can share the same DisplayValue.
+- **Hash algorithm migration** — The HashV2 update required creating new records for some combinations that couldn't be re-hashed in place. The old and new records differ only in the Hash and HashVersion columns, which aren't exposed on the entity.
+
+The entities are designed to be joined through other entities to provide context, not queried in isolation for all records. To see the full differences between apparent duplicates, join back to the underlying tables:
+
+```sql
+SELECT DCE.*, DAVC.*
+FROM DIMENSIONCOMBINATIONENTITY DCE
+JOIN DIMENSIONATTRIBUTEVALUECOMBINATION DAVC ON DAVC.RECID = DCE.RECID
+
+SELECT DSE.*, DAVS.*
+FROM DIMENSIONSETENTITY DSE
+JOIN DIMENSIONATTRIBUTEVALUESET DAVS ON DAVS.RECID = DSE.RECID
+```
+
 ### Dimension FK references can't be shared between data areas
 
 Dimension FK columns (such as **DefaultDimension** on **CustTable**) must not be replicated between companies through cross-company data sharing (SysDataSharing, DuplicateRecordSharing) or manual record copying.
@@ -423,40 +442,6 @@ Default accounts from posting profiles (containing only a main account), budget 
 
 The **DimensionAttributeValueCombination** and **DimensionAttributeValueSet** tables contain "unpivoted" columns and 50-100+ supporting indexes that were added in Dynamics 365 version 7.0. These columns store denormalized dimension values directly on the combination/set record, replacing the need for complex multi-table joins when querying by dimension value.
 
-For example, finding all posted transactions for Department D1, Project P2, and CostCenter C3:
-
-**Querying through normalized (pivoted) rows:**
-
-```sql
-SELECT * FROM GENERALJOURNALENTRY GJE
-JOIN GENERALJOURNALACCOUNTENTRY GJAE ON GJAE.GENERALJOURNALENTRY = GJE.RECID
-JOIN DIMENSIONATTRIBUTEVALUECOMBINATION DAVC ON DAVC.RECID = GJAE.LEDGERDIMENSION
-JOIN DIMENSIONATTRIBUTEVALUEGROUPCOMBINATION DAVGC ON DAVGC.DIMENSIONATTRIBUTEVALUECOMBINATION = DAVC.RECID
-JOIN DIMENSIONATTRIBUTELEVELVALUE DALV1 ON DALV1.DIMENSIONATTRIBUTEVALUEGROUP = DAVGC.DIMENSIONATTRIBUTEVALUEGROUP
-JOIN DIMENSIONATTRIBUTEVALUE DAV1 ON DAV1.RECID = DALV1.DIMENSIONATTRIBUTEVALUE
-JOIN DIMENSIONATTRIBUTE DA1 ON DA1.RECID = DAV1.DIMENSIONATTRIBUTE
-JOIN DIMENSIONATTRIBUTELEVELVALUE DALV2 ON DALV2.DIMENSIONATTRIBUTEVALUEGROUP = DAVGC.DIMENSIONATTRIBUTEVALUEGROUP
-JOIN DIMENSIONATTRIBUTEVALUE DAV2 ON DAV2.RECID = DALV2.DIMENSIONATTRIBUTEVALUE
-JOIN DIMENSIONATTRIBUTE DA2 ON DA2.RECID = DAV2.DIMENSIONATTRIBUTE
-JOIN DIMENSIONATTRIBUTELEVELVALUE DALV3 ON DALV3.DIMENSIONATTRIBUTEVALUEGROUP = DAVGC.DIMENSIONATTRIBUTEVALUEGROUP
-JOIN DIMENSIONATTRIBUTEVALUE DAV3 ON DAV3.RECID = DALV3.DIMENSIONATTRIBUTEVALUE
-JOIN DIMENSIONATTRIBUTE DA3 ON DA3.RECID = DAV3.DIMENSIONATTRIBUTE
-WHERE DA1.NAME = 'Department' AND DALV1.DISPLAYVALUE = 'D1'
-  AND DA2.NAME = 'Project' AND DALV2.DISPLAYVALUE = 'P2'
-  AND DA3.NAME = 'CostCenter' AND DALV3.DISPLAYVALUE = 'C3'
-```
-
-**Querying through unpivoted columns:**
-
-```sql
-SELECT * FROM GENERALJOURNALENTRY GJE
-JOIN GENERALJOURNALACCOUNTENTRY GJAE ON GJAE.GENERALJOURNALENTRY = GJE.RECID
-JOIN DIMENSIONATTRIBUTEVALUECOMBINATION DAVC ON DAVC.RECID = GJAE.LEDGERDIMENSION
-WHERE DAVC.DEPARTMENTVALUE = 'D1'
-  AND DAVC.PROJECTVALUE = 'P2'
-  AND DAVC.COSTCENTERVALUE = 'C3'
-```
-
 The indexes on these columns are mandatory. Without them, queries against unpivoted columns fall back to table scans, which would be worse than the original normalized approach. Don't remove these indexes.
 
 Some account types (such as Customer, Vendor, Bank, and Project) are entered through the Segmented Entry Control on journal lines but are single-value references rather than multi-segment ledger accounts. Because they share the same control and data model, the system auto-generates these as **SystemGeneratedAttribute** dimension types, which also produce unpivoted columns and indexes.
@@ -465,7 +450,7 @@ Some account types (such as Customer, Vendor, Bank, and Project) are entered thr
 
 The dimension framework is designed to insert data only on first use of each unique set of values and reuse references for each subsequent request. Over time, the number of inserts should decrease as combinations are reused.
 
-If insert performance to dimension tables isn't improving over time, the most common cause is the use of **highly variable dimensions** — dimension values with such high volatility that they're rarely reused. Examples include dates, serial numbers, license plates, ticket numbers, and inventory dimensions (size, color, site/warehouse/location). These should be implemented as [financial tags](../../../finance/general-ledger/financial-tag.md) or custom fields rather than financial dimensions.
+If insert performance to dimension tables isn't improving over time, the most common cause is the use of **highly variable dimensions** — dimension values with such high volatility that they're rarely reused. Examples include dates, serial numbers, license plates, ticket numbers, and inventory dimensions (size, color, site/warehouse/location). These should be implemented as [financial tags](../../../finance/general-ledger/financial-tag.md) or custom fields rather than financial dimensions. For more information, see [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions).
 
 ### Versioning/date-effective data
 
