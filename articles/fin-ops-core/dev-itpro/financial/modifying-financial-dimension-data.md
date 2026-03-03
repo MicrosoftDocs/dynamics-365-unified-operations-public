@@ -42,6 +42,27 @@ The following dimension framework tables must not be modified directly through S
 
 The **DimensionAttributeValueCombinationStatus** and **DimensionAttributeValueGroupStatus** tables are exceptions. These are validation cache tables that exist only for performance reasons. They can be truncated without causing data corruption. Truncating them only affects the time it takes to validate combinations against the account structure until the cache is rebuilt.
 
+The **DimensionValueDeleteAudit** table is another special case. A row is written to this table each time a record that serves as a source of financial dimension values is deleted from its backing table. Because each row captures approximately 2,000 bytes of call stack data, the table can grow rapidly if records are mass-deleted from backing tables.
+
+> [!WARNING]
+> Frequently deleting records from tables that serve as dimension sources is strongly discouraged. The dimension framework is designed for write-once, reuse-many data. Mass deletes can create data growth and produce duplication in dimension data that affects reporting.
+
+If **DimensionValueDeleteAudit** is consuming excessive disk space, you can clear the **CallStack** column (which reclaims space while preserving rows and their audit identity) or delete old rows. Either operation can be run by using the [zero-downtime script execution tool](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/run-custom-scripts) with the following X++ script. Uncomment only one option and verify the scope before running.
+
+```xpp
+DimensionValueDeleteAudit audit;
+
+ttsBegin;
+
+// Option 1: Delete records older than 1 year
+// delete_from audit where audit.CreatedDateTime < DateTimeUtil::date(DateTimeUtil::addYears(DateTimeUtil::utcNow(), -1));
+
+// Option 2: Clear only the CallStack column to reclaim space while keeping the rows
+// update_recordset audit setting CallStack = '';
+
+ttsCommit;
+```
+
 ### Impact on balances and reporting
 
 Modifying posted dimension data alters that data for all posted transactions that reference it, not just the current document. This can cause balance discrepancies and reporting problems that are difficult to identify and clean up after the fact. Because the dimension framework doesn't maintain reference counts, there's no straightforward way to assess the full scope of the impact before it occurs.
@@ -53,6 +74,13 @@ It's important that no data be directly modified outside the application framewo
 It's important that you understand this guideline when you're considering backups and partial restorations of data that might affect referential and hash integrity. For example, if you back up only the Ledger Dimension related records and import them into another partition, you might cause issues unless you also import all the other records in the dimension framework, in addition to all the backing entity records, such as records from the CustTable table or other table that were used to create any combinations. Any attempt to modify the data in these tables, or to synthesize GUIDs or hashes, will cause data to become corrupted, and will require complex, time-consuming analysis to find the source of the corruption and try to fix it.
 
 Renaming a backing entity value directly in the database (for example, renaming a customer account or department code through SQL) bypasses the `.update()` and `.renamePrimaryKey()` methods on the backing table that contain synchronization code for the dimension framework. This can result in inconsistent, contradictory names where the backing entity shows the new name but dimension records still reference the old one. For further guidance on this issue, see [Dimension value shows a wrongly named or cased natural key](/dynamics-365/finance/general-ledger/dim-value-name-wrong-or-incorrect-case.md).
+
+If dimension display values are already out of sync with the backing record, on version 10.0.18 and later you can resynchronize them by using the Data Maintenance portal:
+
+1. Navigate to the **Data Maintenance portal**.
+2. Select **Rebuild dimension data from source records**.
+3. Select **Run**.
+4. Wait for the batch job to complete. When the status shows **Complete**, the dimension display values are resynchronized with the underlying backing records.
 
 For more information about how the dimension framework uses hashes internally and why modifications break data integrity, see [Ledger account combinations](/dynamics365/fin-ops-core/dev-itpro/financial/LedgerAccountCombinations.md).
 

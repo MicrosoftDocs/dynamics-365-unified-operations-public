@@ -67,6 +67,10 @@ The first step is to create a view in the same model as your backing table. Befo
       + **Key** – This is the surrogate key, typically the RecID.
       + **Value** - This is the natural key, for example the AccountNum. It is a string up to 30 characters.
       + **Name** – This is the description, which is typically the **Name** or **Description** field. It is a string up to 60 characters.
+
+    > [!WARNING]
+    > Don't extend the `DimensionValue` extended data type (EDT) beyond its supported size. The **Value** field supports a maximum of 30 characters and the **Name** field supports a maximum of 60 characters. Changing the type to **Memo** is not supported. Exceeding these limits or using an unsupported type causes dimension and dimension value forms to fail to load with buffer overflow or invalid type errors.
+
 1.  You may need to create a **Range** on the view if the backing table removes data. For example, if you are using an Operating unit and only want Department, use the range for that operating unit.
 1.  Right-click **Indexes** and select **New Index**. Select **Value** as the Data field on the **Properties** pane. You can rename the index if needed, however, you need to set **Allow Duplicates** to **No**.
 1. Right-click **Indexes** and select **New Index**. Select **Name** as the Data field on the **Properties** pane. You can rename the index if needed, however, you need to set **Allow Duplicates** to **Yes**.
@@ -161,6 +165,8 @@ DimensionCache::clearAllScopes();
 
 Now that you have completed the steps, navigate to the **Financial dimensions** page in the General ledger. Click the drop-down menu on the **Use Values from** field and verify that your value is available.
 
+> [!IMPORTANT]
+> DimAttribute views must be deployed to every environment where they are needed, including UAT and production. A view that exists only in a development environment causes `DimensionEnabledType` errors when any operation uses the `DimensionAttribute` data entity, including Dual Write, Data Management framework imports, and the Excel add-in. FleetManagement demo data views must not be deployed outside of development environments.
 
 ## Add a new OMOperatingUnit type backed entity
 
@@ -200,5 +206,10 @@ public void persistEntity(DataEntityRuntimeContext _entityCtx)
 > [!NOTE]
 > This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.
 
+## Data entity model references
+
+If you create a `DimensionCombinationEntity` or `DimensionSetEntity` by using the **Add financial Dimensions for OData** add-in in Visual Studio, your custom model must include a reference to the **Dimensions** model. To add the reference, go to **Model Management** > **Update model parameters** in Visual Studio and add **Dimensions** to the referenced model list.
+
+If an extension on one of these entities was previously defined in a model that no longer exists, check **Event Viewer** > **Dynamics** > **Ax-Metadata** to identify which models still hold a reference to the extension.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
