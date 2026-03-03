@@ -65,7 +65,7 @@ To link Business performance analytics data to your organization's Fabric worksp
 
     > [!NOTE]
     > The workspace must be in the same Azure region as the Dataverse environment.
-    
+
     > [!IMPORTANT]
     > Confirm that you're using the correct workspace ID. The workspace ID is the GUID found in the URL when you open the workspace. Don't use a workspace identity ID, as it's not the same and causes issues with Business performance analytics linking and results in **Workspace not found** errors.
 
@@ -91,7 +91,7 @@ If you no longer need the shortcuts, select **Unlink** on the **Manage** page in
 
 > [!IMPORTANT]
 > Business performance analytics manages the shortcuts. Don't delete or remove them directly in Fabric.
- 
+
 ## Extend the Business performance analytics dataset with your own data sources
 
 This section shows how you can create a custom Power BI dataset that extends the Business performance analytics dataset with your own data sources. This functionality lets you use the Business performance analytics dataset as part of your own reporting capabilities in Power BI. In this way, you can create more comprehensive and tailored reports that harness the power of Business performance analytics and your own customized business insights.
@@ -123,11 +123,9 @@ This section shows how you can create a custom Power BI dataset that extends the
 
 1. In Power BI Desktop, select **File > Publish > Publish to Power BI**.
 2. Choose the Fabric-backed workspace where you want the dataset to reside.
-3. After publishing, go to https://app.powerbi.com to verify the dataset appears in the workspace.
-
+3. After publishing, go to <https://app.powerbi.com> to verify the dataset appears in the workspace.
 
     You now have a dataset that you can extend so that it includes other data sources. You can also create new measures on it.
-
 
 > [!NOTE]
 > **Authentication issues:** Ensure that you use OAuth 2.0 for authentication when you create connections.
