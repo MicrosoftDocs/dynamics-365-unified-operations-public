@@ -45,6 +45,16 @@ By following these steps, your view automatically appears in the **Use values fr
 > [!NOTE]
 > If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
 
+## Purpose of DimAttribute views
+
+DimAttribute___ views serve several purposes in the dimension framework:
+
+- **Identification** — They identify backing tables that hold data that should serve as a source of financial dimension values.
+- **Consistent schema** — They provide a uniform schema across all backing tables: a **Key** (RecId), **Value** (natural key string), and **Name** (description string), with an optional **Category** for striping.
+- **Secure access** — They expose only the surrogate key and natural key mappings needed by the framework, without granting access to other columns on the backing table (such as address, salary, or position data).
+- **Multiple dimension types from a single table** — A range on the view allows a single backing table to supply multiple distinct financial dimensions. For example, the **OMOperatingUnit** table serves as the source for Business Units, Departments, and Cost Centers, each through a separate DimAttribute view with a different range filter.
+- **Alternate name sources** — The extended description (**Name** column) can be sourced from a joined table (such as **DirPartyTable**) rather than the primary backing table, because it's used only for display and not for resolving uniqueness.
+
 ## Step 1: Create a view
 
 The first step is to create a view in the same model as your backing table. Before you complete the following steps, verify that the backing table has **Create Rec Id Index = Yes** in the **Table Properties** pane. Alternatively, ensure that the table has a unique index and RECID is the first segment of that index.

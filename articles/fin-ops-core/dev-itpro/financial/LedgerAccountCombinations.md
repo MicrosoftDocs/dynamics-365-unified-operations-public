@@ -379,6 +379,94 @@ When you browse the tables of the dimension framework and view only the **Displa
 
 For example, an account structure has **MainAccount-Department** in one company and another account structure has **MainAccount-CostCenter** in a different company. In this scenario, the **DisplayValue** string of two combinations, one for each account structure, can appear as **145-A**. For the first account structure, **A** represents a department in the first company. However, for the second account structure, it represents a cost center in the second company. Additionally, multiple types of a Ledger Dimension are stored in the DimensionAttributeValueCombination table. For example, special types for budgeting might appear the same to have the types as other combinations when you examine the **DisplayValue** fields. However, they hold different information internally and hold uniquely different hash values.
 
+### Dimension FK references can't be shared between data areas
+
+Dimension FK columns (such as **DefaultDimension** on **CustTable**) must not be replicated between companies through cross-company data sharing (SysDataSharing, DuplicateRecordSharing) or manual record copying.
+
+The dimension tables (**DimensionAttributeValueSet**, **DimensionAttributeValueCombination**) are not company-specific (SaveDataPerCompany = No), but the records they reference internally often are. A default dimension set can contain segment references that point back to RecId values in company-specific tables like **CustTable** or **ProjTable**. Consider this example:
+
+```
+CustTable (SaveDataPerCompany: Yes)
+
+AccountNum     DataArea     RecId     DefaultDim
+CUST001        USMF         201       401
+
+DimensionAttributeValueSet (SaveDataPerCompany: No)
+
+RecId
+401
+
+DimensionAttributeValueSetItem (SaveDataPerCompany: No)
+
+DimensionSource     DimensionValueReference     ParentRecId     Segment
+CustTable           201                         401             1  (CUST001)
+ProjTable           301                         401             2  (ProjA)
+```
+
+If you replicate the **CustTable** record to another company (RUMF) by copying the row, the new record inherits **DefaultDim = 401**. That dimension set still contains segment references to RecId 201 in USMF's **CustTable** and RecId 301 in USMF's **ProjTable**. Customer CUST001 in RUMF now carries default dimensions that reference the wrong company's data, and this corruption propagates into posted combinations and can split trial balance rows for the same visual key.
+
+There is no workaround. Don't replicate dimension FK values between data areas.
+
+### AccountStructure column on DimensionAttributeValueCombination
+
+Many rows in the **DimensionAttributeValueCombination** (DAVC) table have a blank **AccountStructure** column. This is by design and doesn't indicate data corruption.
+
+The framework only populates **DAVC.AccountStructure** when all of the following are true:
+
+- The combination is a multi-segment Account type ledger dimension (**LedgerDimensionType::Account**).
+- The referenced **DimensionHierarchy** type is Account Structure.
+- The hierarchy is not system-generated (**DimensionHierarchy.IsSystemGenerated = No**).
+
+Default accounts from posting profiles (containing only a main account), budget combinations, single-segment journal accounts, and focus balance combinations all have this field blank by design.
+
+### Unpivoted columns and indexes
+
+The **DimensionAttributeValueCombination** and **DimensionAttributeValueSet** tables contain "unpivoted" columns and 50-100+ supporting indexes that were added in Dynamics 365 version 7.0. These columns store denormalized dimension values directly on the combination/set record, replacing the need for complex multi-table joins when querying by dimension value.
+
+For example, finding all posted transactions for Department D1, Project P2, and CostCenter C3:
+
+**Querying through normalized (pivoted) rows:**
+
+```sql
+SELECT * FROM GENERALJOURNALENTRY GJE
+JOIN GENERALJOURNALACCOUNTENTRY GJAE ON GJAE.GENERALJOURNALENTRY = GJE.RECID
+JOIN DIMENSIONATTRIBUTEVALUECOMBINATION DAVC ON DAVC.RECID = GJAE.LEDGERDIMENSION
+JOIN DIMENSIONATTRIBUTEVALUEGROUPCOMBINATION DAVGC ON DAVGC.DIMENSIONATTRIBUTEVALUECOMBINATION = DAVC.RECID
+JOIN DIMENSIONATTRIBUTELEVELVALUE DALV1 ON DALV1.DIMENSIONATTRIBUTEVALUEGROUP = DAVGC.DIMENSIONATTRIBUTEVALUEGROUP
+JOIN DIMENSIONATTRIBUTEVALUE DAV1 ON DAV1.RECID = DALV1.DIMENSIONATTRIBUTEVALUE
+JOIN DIMENSIONATTRIBUTE DA1 ON DA1.RECID = DAV1.DIMENSIONATTRIBUTE
+JOIN DIMENSIONATTRIBUTELEVELVALUE DALV2 ON DALV2.DIMENSIONATTRIBUTEVALUEGROUP = DAVGC.DIMENSIONATTRIBUTEVALUEGROUP
+JOIN DIMENSIONATTRIBUTEVALUE DAV2 ON DAV2.RECID = DALV2.DIMENSIONATTRIBUTEVALUE
+JOIN DIMENSIONATTRIBUTE DA2 ON DA2.RECID = DAV2.DIMENSIONATTRIBUTE
+JOIN DIMENSIONATTRIBUTELEVELVALUE DALV3 ON DALV3.DIMENSIONATTRIBUTEVALUEGROUP = DAVGC.DIMENSIONATTRIBUTEVALUEGROUP
+JOIN DIMENSIONATTRIBUTEVALUE DAV3 ON DAV3.RECID = DALV3.DIMENSIONATTRIBUTEVALUE
+JOIN DIMENSIONATTRIBUTE DA3 ON DA3.RECID = DAV3.DIMENSIONATTRIBUTE
+WHERE DA1.NAME = 'Department' AND DALV1.DISPLAYVALUE = 'D1'
+  AND DA2.NAME = 'Project' AND DALV2.DISPLAYVALUE = 'P2'
+  AND DA3.NAME = 'CostCenter' AND DALV3.DISPLAYVALUE = 'C3'
+```
+
+**Querying through unpivoted columns:**
+
+```sql
+SELECT * FROM GENERALJOURNALENTRY GJE
+JOIN GENERALJOURNALACCOUNTENTRY GJAE ON GJAE.GENERALJOURNALENTRY = GJE.RECID
+JOIN DIMENSIONATTRIBUTEVALUECOMBINATION DAVC ON DAVC.RECID = GJAE.LEDGERDIMENSION
+WHERE DAVC.DEPARTMENTVALUE = 'D1'
+  AND DAVC.PROJECTVALUE = 'P2'
+  AND DAVC.COSTCENTERVALUE = 'C3'
+```
+
+The indexes on these columns are mandatory. Without them, queries against unpivoted columns fall back to table scans, which would be worse than the original normalized approach. Don't remove these indexes.
+
+Some account types (such as Customer, Vendor, Bank, and Project) are entered through the Segmented Entry Control on journal lines but are single-value references rather than multi-segment ledger accounts. Because they share the same control and data model, the system auto-generates these as **SystemGeneratedAttribute** dimension types, which also produce unpivoted columns and indexes.
+
+#### Insert performance and highly variable dimensions
+
+The dimension framework is designed to insert data only on first use of each unique set of values and reuse references for each subsequent request. Over time, the number of inserts should decrease as combinations are reused.
+
+If insert performance to dimension tables isn't improving over time, the most common cause is the use of **highly variable dimensions** — dimension values with such high volatility that they're rarely reused. Examples include dates, serial numbers, license plates, ticket numbers, and inventory dimensions (size, color, site/warehouse/location). These should be implemented as [financial tags](../../../finance/general-ledger/financial-tag.md) or custom fields rather than financial dimensions.
+
 ### Versioning/date-effective data
 
 The dimension framework doesn't directly support versioning or date-effective data. The platform assigns new RecID's to the latest version row in date-effective tables. As the dimension framework takes reference to backing values by the **RecId** at the time of original entry, the introduction of a new record causes the system to no longer be able to join to the older versions because the date context isn't persisted with the dimension data.
