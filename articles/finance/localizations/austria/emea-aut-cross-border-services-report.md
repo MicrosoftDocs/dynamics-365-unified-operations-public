@@ -107,3 +107,5 @@ The following example shows how you can set up and generate the **Cross-border s
     :::image type="content" source="../media/emea-aut-cross-border-services-report-service.png" alt-text="Screenshot of the Cross-border services report grouped by service.":::
 
     [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
+
