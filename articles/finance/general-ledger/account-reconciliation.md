@@ -82,7 +82,22 @@ To view the settings and configuration for the account reconciliation feature, u
 
 - For testing purposes, you can adjust the frequency and the time of the next processing run in the process automation. Look in the background processes for the **Automatic account reconciliation process** process. For production use, consider the impact of the time and frequency of processing runs, and set an appropriate schedule.
 - On the batch jobs page, confirm that the status of the **Process automation polling system** system batch job is **Waiting**, not **Withhold**.
+- On the **Account reconciliation configuration** page, confirm the **Reconciliation option** is set to **Yes** for the modules intended to be included in reconciliation. 
 
 ### I selected the action to create a journal, but I didn't actually create or post the journal. The voucher now appears on the page for addressed exceptions. What should I do?
 
 Review the addressed exceptions, and select **Undo** to move the exception back to the list of open exceptions. It can then be reprocessed.
+
+With the release of Dynamics 365 finance and operations version 10.0.46, the flow for to create a journal entry has been improved. When clicking **Create journal entry**, a slider page appears. The user can complete the details for the journal entry. A new parameter is added to **General ledger parameters** to specify a journal name as a default. 
+
+### Can I adjust how often the process automation for Account reconciliation process runs? 
+
+Yes, in the background processes for process automations, users can configure the frequency of the Automatic account reconciliation process. By default, the frequency is set to run every 6 hours. 
+To adjust the frequency of the process automation, click **Edit** and adjust the Execution details.  
+
+>[NOTE!]
+> Click **View most recent results** to review execution times for prior process automation runs to gauge the best cadence for the process automation to run. If users are interacting with the Account reconciliation workspace often throughout the day, more frequent process automation runs are preferred. If users aren't frequently working in the Account reconciliation workspace, then a less frequent cadence of once per day may be preferred. 
+
+### Can I force the process automation to run now? 
+
+Yes, in the background processes for process automations, users can configure the Automatic account reconciliation process. To adjust the next run of the process automation, click **Edit** and adjust the **Next execution date** to yesterday’s date. This causes the process automation to be picked up with the next run of the **Process automation polling** system. 
