@@ -25,12 +25,12 @@ B2B organization onboarding begins when a B2B Buyer prospect is approved. The fo
 A contact is created under the Customer record. This contact replaces the traditional person-type Customer record model and represents the initial user for the organization. The contact is also added to the attached online channels address book.
 
 
-**Create customer hierarchy and link to Customer record** — A customer hierarchy is created and linked to the Customer record.
+**Create customer hierarchy and link to Customer record**—A customer hierarchy is created and linked to the Customer record.
 - The hierarchy is configured as a B2B buyer hierarchy.
 - The organization name is used as the hierarchy name.
         
 **Link initial contact to customer hierarchy as admin** —
- The initial contact is linked to the customer hierarchy and designated as the hierarchy administrator, enabling access to additional functions on the storefront.
+ The initial contact is linked to the customer hierarchy and designated as the hierarchy administrator, enabling access to extra functions on the storefront.
  
 
 #### Complete the setup for B2B channel availability
@@ -54,7 +54,7 @@ Contacts represent individual users who can access the storefront on behalf of t
  **Behavior**
 -	The list shows all contacts that are available to be linked to the customer hierarchy.
 -	In prospect-based onboarding flows, the initial contact is already linked and assigned the Admin role.
--	If a selected contact does not exist under the linked organization account, a new contact is created under that organization and will reflect any updates made to any instance of that contact.
+-	If a selected contact does not exist under the linked organization account, a new contact is created under that organization, reflecting updates made to any instance of that contact.
 
 
 #### Enable the contact for storefront access
@@ -78,7 +78,7 @@ Roles determine the permissions that a contact has within the organization.
 
 
 #### Complete organization account configuration (if applicable)
-Depending on business requirements, additional configuration may be required at the organization account level to ensure the correct purchasing experience in the storefront.
+Depending on business requirements, more configuration may be required at the organization account level to ensure the correct purchasing experience in the storefront.
 Examples include:
 -	Pricing configuration
 - Discount assignment
@@ -98,7 +98,7 @@ The 1010  Customers job synchronizes:
 
 **Result**
 
-After these steps are completed and data synchronization finishes, the organization and its enabled contacts can sign in to the B2B storefront and access the assigned channels, catalogs, and purchasing configuration.
+Once the data is synchronized, the organization and its enabled contacts can sign in to the B2B storefront.
 
 ### Manual B2B Organization Account Set Up
 Manual onboarding is used to enable online access for an existing B2B organization by creating and linking a customer hierarchy to that organization. This process is performed primarily on the Customer hierarchies page in Finance and Operations.
@@ -111,14 +111,14 @@ Before starting manual onboarding, ensure that:
   1. The organization account already exists.
   1. At least one contact exists with a valid email address.
 
-#### Create a contact (if required)
+#### Create a contact (if necessary)
 An organization must have at least one contact available to establish an initial administrator for the customer hierarchy. 
 
   1. If no contact exists, create a contact under the organization account.
   1. The contact must have a valid email address to support storefront access.
 
 > [!NOTE]
-> The selected contact will become the initial Administrator for the customer hierarchy.
+> The selected contact becomes the initial Administrator for the customer hierarchy.
 
 #### Create a customer hierarchy
 Customer hierarchies define how organizations and users are structured for B2B commerce.
@@ -131,7 +131,6 @@ After selecting the hierarchy type:
 
   1.	Enter a name for the customer hierarchy.
   1.	In the Organization field, select the appropriate organization account from the dropdown list.
-  1.	Linking the organization establishes the commercial context that will be used by all users associated with the hierarchy.
 
 #### Select the initial admin contact (required)
 When linking an organization during manual hierarchy creation, the system requires selection of an initial administrator.
@@ -144,13 +143,13 @@ When linking an organization during manual hierarchy creation, the system requir
 Selecting an initial admin contact is required to save the customer hierarchy.
 If the prompt is canceled, the organization is not linked and the hierarchy cannot be saved.
 
-#### Automatically link additional contacts as users
+#### Automatically link other contacts as users
 After the initial admin contact is selected:
 
   1. Any remaining eligible contacts associated with the organization are automatically linked to the customer hierarchy.
   1. These contacts are assigned the User role by default.
      
-This reduces the need for manual user linking during initial setup.
+This automatic process reduces the need for manual user linking during initial setup.
 
 #### Enable contacts for storefront access (required)
 Contacts must be enabled to access the B2B storefront.
@@ -161,7 +160,7 @@ Contacts must be enabled to access the B2B storefront.
 ***Important***
 
 Only enabled contacts can sign in to the storefront.
-The enable and disable controls take effect after the data has been synchronized through Commerce Data Exchange (CDX) job 1010 – Customers and are used to control site access.
+The enable and disable controls take effect through the Commerce Data Exchange (CDX) job 1010 – Customers and are used to control site access.
 
 #### Assign catalogs (if applicable)
 Catalog assignment determines which products are available to users in the storefront.
@@ -185,8 +184,8 @@ Roles control what users can see and manage in the storefront.
 > At least one contact must remain assigned the Admin role for each customer hierarchy.
 
 
-#### Perform additional organization account configuration (if applicable)
-Depending on business requirements, additional configuration may be required at the organization account level to ensure correct storefront behavior.
+#### Perform other organization account configuration (if necessary)
+Depending on business requirements, other configuration may be required at the organization account level to ensure correct storefront behavior.
 
 Examples include:
 
@@ -204,7 +203,7 @@ The 1010 Customers job synchronizes:
 
 **Result**
 
-After these steps are completed and data synchronization finishes, the existing organization and its enabled contacts can sign in to the B2B storefront and access the assigned channels, catalogs, and purchasing configurations.
+Once the data is synchronized, the organization and its enabled contacts can sign in to the B2B storefront.
 
 ### Other user management functions
 
@@ -224,7 +223,7 @@ To update a contact role:
 > Each customer hierarchy must have at least one contact assigned the Admin role.
 
 #### Link a contact to another customer hierarchy
-Contacts can be associated with more than one organization by linking them to additional customer hierarchies.
+Contacts can be associated with more than one organization by linking them to other customer hierarchies.
 
 To link a contact to another hierarchy
 
@@ -249,7 +248,7 @@ To remove a contact from a hierarchy
 
 **Important**
 
-Contacts that have placed one or more orders cannot be removed from the hierarchy.
+Only contacts with no orders can be removed.
 In these cases, use the Disable contact procedure instead to remove storefront access while preserving audit history.
 
 #### Disable a contact for a specific organization
@@ -299,7 +298,7 @@ The sign-in process allows existing contacts to access the storefront.
 To sign in
   1.	In the storefront header, select Sign in.
   1.	Enter credentials.
-         - If required, complete the Forgot password flow to reset credentials.
+         - If necessary, complete the Forgot password flow to reset credentials.
          - After password reset, the user is signed in automatically.
 
 
@@ -369,7 +368,7 @@ The order creation experience depends on the organization selection made during 
         - The flow proceeds directly to sales order creation.
 
 > [!NOTE] 
-> If a single organization is selected but the contact is inactive for that organization, the sales order is created with the organization account assigned, but the contact is not associated with the order.
+> An inactive contact cannot be assigned to an order.
 
 
 ## Related information
