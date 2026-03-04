@@ -3,7 +3,7 @@ title: End to End Experiences/Configuration Steps (preview)
 description: Learn about End to End Experiences/Configuration steps for native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
 ms.date: 02/06/2026
-ms.topic: overview
+ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: v-jcavataio
