@@ -21,15 +21,19 @@ ms.dyn365.ops.version: Version 1611
 This article describes fiscal documents for Brazil.
 
 A fiscal document is a legal document that registers the transfer of ownership of an item or service that a fiscal establishment (issuer) provides to a person or another fiscal establishment (customer, vendor, subsidiary, or branch). A fiscal document registers taxes. Each fiscal establishment issues and receives fiscal documents for all transactions, including sales, purchases, tax adjustments, and item or asset transfers. You can generate fiscal documents by using the following formats:
+
 - Printed fiscal document – The fiscal document is printed on paper.
 - Electronic fiscal document – A digital fiscal document is issued and received in an electronic format. An electronic fiscal document can be a federal electronic fiscal document (NF-e), which is generated for items and reported at the state or federal level, or it can be a municipal NF-e, which is generated for services and reported at the municipal level.
 
 You must report all fiscal documents that you issue or receive by your fiscal establishment at the federal, state, or municipal authority level. You must report the fiscal documents in specific formats, such as Sistema Público de Escrituração Digital (SPED) fiscal or fiscal books, SPED Programa de Integração Social/Contribuição para o financiamente da securidade social (SPED PIS/COFINS), or Sistema Integrado de Informações sobre Operações Interestaduais com Mercadorias e Serviços (SINTEGRA). The fiscal document framework ensures that all of the posted fiscal documents conform to a specific structure, regardless of the process that is used to generate the fiscal document. You can review the posted fiscal documents on the **All fiscal documents** list page. You can review the fiscal document transactions, posted sales taxes, posted charges, referenced fiscal documents, and fiscal document text for a posted fiscal document. The fiscal document framework also ensures that all related information uses the correct format. Related information includes:
+
 - Relationships between fiscal documents and their source documents.
 - Fiscal document text, referenced processes, fiscal references, invoices and installments, posted sales tax, and posted charges.
 
 ## View and print fiscal documents
+
 You can view and print all fiscal documents from the following pages:
+
 - **Accounts receivable** &gt; **Fiscal documents** &gt; **All fiscal documents**
 - **Accounts payable** &gt; **Fiscal documents** &gt; **All fiscal documents**
 - **General ledger** &gt; **Inquire and reports** &gt; **Fiscal documents** &gt; **All fiscal documents**
@@ -39,6 +43,7 @@ You can view and print all fiscal documents from the following pages:
 - **Fiscal books** &gt; **Booking period**
 
 ## Actions
+
 After you post a fiscal document, you can see the following information.
 
 | **Action button**                 | **Description**                                                                                                                                                                                                                                                                                                                                                      |

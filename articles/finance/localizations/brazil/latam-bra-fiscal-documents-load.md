@@ -13,7 +13,7 @@ ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
 
-# Generate fiscal documents for a load 
+# Generate fiscal documents for a load
 
 [!include [banner](../../includes/banner.md)]
 
@@ -96,7 +96,7 @@ Follow these steps to complete this task.
 
 1. Select **Invoice** to open the **Posting invoice** form, where you can view the sales order lines that the load is created for. The lines have only the load line quantities.
 1. Select the **Posting** check box to post the sales orders for the load to generate fiscal documents.
-1. Specify any additional details that are required. 
+1. Specify any additional details that are required.
 1. Select **OK** to post the sales orders for the load and generate the fiscal documents.
 
 ## Technical information for system administrators

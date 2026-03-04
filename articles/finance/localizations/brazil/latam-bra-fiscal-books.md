@@ -19,18 +19,18 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about fiscal books. Fiscal books are one of three projects that make up the Public Digital Bookkeeping System (SPED). They help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED. 
+This article provides information about fiscal books. Fiscal books are one of three projects that make up the Public Digital Bookkeeping System (SPED). They help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED.
 
 The Public Digital Bookkeeping System, or Sistema Público de Escrituração Digital (SPED), provides detailed information about the fiscal documents that are related to services and goods, calculations of profits, logistical operations, and financial transactions. SPED is divided into three projects: electronic documents, fiscal books, and accounting books. Fiscal books help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED. Here are the fiscal books:
 
 - SPED fiscal – ICMS/IPI taxes
-    - ICMS, ICMS-ST, and IPI tax assessment
-    - Tax assessment reporting
-    - SPED fiscal text file generation
+  - ICMS, ICMS-ST, and IPI tax assessment
+  - Tax assessment reporting
+  - SPED fiscal text file generation
 - SPED fiscal – Adjustments
-    - Tax adjustment transactions
-    - Tax assessment process
-    - SPED fiscal text file generation
+  - Tax adjustment transactions
+  - Tax assessment process
+  - SPED fiscal text file generation
 - Fiscal books reporting
 - SPED – CIAP (Controle de Credito de ICMS do Ativo Permanente, or Fixed asset tax credit control)
 
