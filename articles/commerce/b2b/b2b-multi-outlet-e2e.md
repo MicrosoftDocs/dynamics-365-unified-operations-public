@@ -38,18 +38,18 @@ After the organization account and customer hierarchy are created, complete the 
 
 #### Assign a catalog (if applicable)
 Catalog assignment controls the products that are available to users of the B2B organization in the storefront.
-1.	Open the relevant customer hierarchy.
-1.	In the Catalogs section, select Add line.
-1.	Select the appropriate catalog.
+1. Open the relevant customer hierarchy.
+1. In the Catalogs section, select Add line.
+1. Select the appropriate catalog.
 
 > [!NOTE]
 > Catalog assignment is optional and depends on how assortments are managed in your Dynamics 365 Commerce environment.
 
 #### Link contacts to the customer hierarchy
 Contacts represent individual users who can access the storefront on behalf of the organization.
-1.	In the Hierarchy section, select Add.
-1.	From the list, select the contact to link.
-1.	Select Select.
+1. In the Hierarchy section, select Add.
+1. From the list, select the contact to link.
+1. Select Select.
 
  **Behavior**
 -	The list shows all contacts that are available to be linked to the customer hierarchy.
@@ -369,9 +369,5 @@ The order creation experience depends on the organization selection made during 
 ## Related information
 
 For an overview of native B2B multioutlet capabilities in Microsoft Dynamics 365 Commerce, see [B2B multioutlet capabilities (preview)](b2b-multi-outlet.md).
-- Organization-based purchasing context, where pricing, catalogs, addresses, and credit limits are defined.
-- Contact-based access, where users are associated with one or more organizations through customer hierarchies.
-- Context-aware ordering, where the selected outlet determines pricing, inventory, and checkout behavior.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
