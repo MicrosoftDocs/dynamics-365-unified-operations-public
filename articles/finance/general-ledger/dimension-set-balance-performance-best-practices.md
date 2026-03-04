@@ -39,6 +39,8 @@ Use **Rebuild balances** sparingly. In most cases, **Update balances** is suffic
 > [!NOTE]
 >If Trial Balance is correct but external reporting (Financial Reporter, MRDB) isn't, clearing or rebuilding balances has no impact and shouldn't be done.
 
+If a balance rebuild doesn't resolve the discrepancy, queue the **Rebuild dimension data from source records** data maintenance action. This resyncs dimension display values and data area data from their source records and can correct out-of-balance conditions that a rebuild alone doesn't fix.
+
 ## Limit the scope of balance calculations
 
 Where possible, narrow the scope of balance calculations to avoid unnecessary processing.
