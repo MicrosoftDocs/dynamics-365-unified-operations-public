@@ -371,7 +371,7 @@ Generation of a hash message requires something that uniquely identifies each di
 
 ### Risks of changing data directly
 
-For detailed information about why financial dimension data must not be modified directly, which tables are affected, and what to do instead when dimension values are incorrect, see [Modifying financial dimension data](modifying-financial-dimension-data.md).
+For detailed information about why financial dimension data must not be modified directly, which tables are affected, and what to do instead when dimension values are incorrect, see [Modifying financial dimension data](/dynamics365/fin-ops-core/dev-itpro/financial/modifying-financial-dimension-data.md).
 
 ### Apparent duplicate combinations
 
