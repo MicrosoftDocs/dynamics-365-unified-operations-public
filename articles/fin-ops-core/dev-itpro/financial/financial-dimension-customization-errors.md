@@ -31,7 +31,7 @@ A financial dimension backed by a custom or customized DimAttribute view may sho
 
 ### Cause
 
-The dimension framework validates the schema of every registered DimAttribute view at startup. The view must contain exactly the columns defined in [Make backing tables consumable as financial dimensions](dimensionable-entities.md). If the view has extra columns — for example, because an ISV or customization added fields to a shipped `DimAttribute*` view — the framework rejects the view silently at load time.
+The dimension framework validates the schema of every registered DimAttribute view at startup. The view must contain exactly the columns defined in [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities). If the view has extra columns — for example, because an ISV or customization added fields to a shipped `DimAttribute*` view — the framework rejects the view silently at load time.
 
 The valid column sets are:
 
@@ -43,7 +43,7 @@ The valid column sets are:
 Identify which DimAttribute view has the wrong schema and remove the extra fields:
 
 - If a custom model added fields to one of the **shipped** `DimAttribute*` views, undo those customizations. Shipped DimAttribute views must not be extended with additional fields.
-- If a **new custom** DimAttribute view has extra fields, correct its schema to match the steps in [Make backing tables consumable as financial dimensions](dimensionable-entities.md).
+- If a **new custom** DimAttribute view has extra fields, correct its schema to match the steps in [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities).
 
 After deploying the corrected code, the dimension reappears in the Dimension Details form automatically on the next AOS startup.
 
@@ -149,8 +149,8 @@ On version 10.0.42 and later, the error message identifies this cause: *"At leas
 
 ## See also
 
-- [Make backing tables consumable as financial dimensions](dimensionable-entities.md)
-- [Dimension FK reference EDT usage](dimension-fk-edt-usage.md)
-- [Modifying financial dimension data](modifying-financial-dimension-data.md)
+- [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities)
+- [Dimension FK reference EDT usage](/dynamics365/fin-ops-core/dev-itpro/financial/dimension-fk-edt-usage.md)
+- [Modifying financial dimension data](/dynamics365/fin-ops-core/dev-itpro/financial/modifying-financial-dimension-data.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
