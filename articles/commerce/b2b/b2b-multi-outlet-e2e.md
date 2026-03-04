@@ -264,8 +264,8 @@ To disable a contact
   5.	When prompted, enter a reason for disabling the contact.
 
 > [!NOTE]
-  > - Disabled contacts cannot sign in to the storefront for that organization.
-  > - The Enable/Disable actions on the contact form also update the contacts status in the customer hierarchy.
+> - Disabled contacts cannot sign in to the storefront for that organization.
+> - The Enable/Disable actions on the contact form also update the contacts status in the customer hierarchy.
 
 #### Synchronize changes to the storefront
 After completing any user management changes:
