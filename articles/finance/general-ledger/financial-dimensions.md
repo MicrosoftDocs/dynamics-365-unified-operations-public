@@ -154,6 +154,12 @@ For custom dimensions, creating any dimension value constitutes a reference. A c
 
 In most cases, renaming is preferable to deleting. Rename a retired dimension or value (for example, **\_\_\_DONOTUSE\_DimensionName**) to indicate it's no longer in use — this sidesteps the data integrity constraints that block deletion, whether at the dimension level or on an individual value that has been referenced. If deletion is still required, a thorough assessment of all data references to the dimension's values is needed before any data can be removed.
 
+### Deleting financial dimension values
+
+A dimension value can be deleted only if it has never been used. Values that have been entered in a ledger account, default dimension, or transaction are read-only.Expand commentComment on line R153
+
+If you can no longer use a value, either **rename it** to indicate it's inactive or **suspend it** on the **Financial dimension values** page. Suspended values are hidden from lookups and can't be entered on new transactions, but can be renamed and reused later.
+
 ### Financial dimensions as legal entities
 
 You can use financial dimensions to represent legal entities. You don't need to create the legal entities in Dynamics 365 Finance. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The intercompany accounting functionality in Finance is designed to address only the accounting entries that each transaction creates.
