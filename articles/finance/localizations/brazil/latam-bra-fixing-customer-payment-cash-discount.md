@@ -10,7 +10,6 @@ ms.date: 03/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2019-10-07
-ms.dyn365.ops.version: 10.0.5
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 ---
 
