@@ -11,7 +11,7 @@ ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Dimension FK reference EDT usage
+# Choosing the Correct Extended Data Type (EDT) for Financial Dimension Foreign Keys
 
 [!include [banner](../includes/banner.md)]
 
@@ -74,5 +74,5 @@ There are five main EDTs used in the dimension framework.
 
 ## See also
 
-- [Make backing tables consumable as financial dimensions](dimensionable-entities.md)
-- [Modifying financial dimension data](modifying-financial-dimension-data.md)
+- [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities.md)
+- [Modifying financial dimension data](/dynamics365/fin-ops-core/dev-itpro/financial/modifying-financial-dimension-data.md)
