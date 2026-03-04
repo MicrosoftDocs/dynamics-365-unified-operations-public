@@ -425,26 +425,9 @@ The order creation experience depends on the organization selection made during 
 > If a single organization is selected but the contact is inactive for that organization, the sales order is created with the organization account assigned, but the contact is not associated with the order.
 
 
-## B2B multioutlet capabilities (preview)
+## Related information
 
-[!INCLUDE [banner](../../includes/banner.md)]
-[!INCLUDE [banner](../../includes/preview-banner.md)]
-
-This article describes the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
-
-Many B2B organizations operate through multiple purchasing locations, branches, or outlets. The same group of buyers often places orders for one or more outlets. Commercial rules such as pricing, credit limits, catalogs, and fulfillment settings are defined centrally at the organization or outlet level.
- 
-B2B multioutlet support in Dynamics 365 Commerce is a scalable model that allows one user identity to place orders across multiple associated outlets. This model reduces duplicate configuration and improves visibility across orders.
- 
-This capability changes how Commerce models B2B users and organizations. It moves from a *person-based customer account model* to a *contact-based identity model* that integrates with *customer hierarchies*.
- 
-## What is B2B multioutlet support?
- 
-B2B multioutlet support allows a single business user, represented as a contact, to access and place orders for multiple organizations or outlets in the same Commerce environment.
- 
-Key characteristics include:
- 
-- Single sign-in identity for users who manage multiple outlets.
+For an overview of native B2B multioutlet capabilities in Microsoft Dynamics 365 Commerce, see [B2B multioutlet capabilities (preview)](b2b-multi-outlet.md).
 - Organization-based purchasing context, where pricing, catalogs, addresses, and credit limits are defined.
 - Contact-based access, where users are associated with one or more organizations through customer hierarchies.
 - Context-aware ordering, where the selected outlet determines pricing, inventory, and checkout behavior.
