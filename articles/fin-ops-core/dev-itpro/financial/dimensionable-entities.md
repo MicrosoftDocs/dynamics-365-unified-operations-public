@@ -83,8 +83,11 @@ The first step is to create a view in the same model as your backing table. Befo
     > [!IMPORTANT]
     > Security access must be granted to non-admin users for the new view.
     > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
-    > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.  
-       
+    > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.
+
+    > [!WARNING]
+    > If security access isn't granted to the view, non-admin users can still enter dimension values, but the dimension framework can't read the display value back for those users. The framework silently stores a blank display value in the transaction instead of the actual value name. These blanks don't produce an immediate error during data entry. They surface later as **"You must select a value in the [Dimension] field"** or **"dimension missing"** errors at posting time, which can be difficult to trace back to this root cause.
+
 14. Right-click **View** and select **View Code**. Add the following code to the view. This registers it in the dimension framework. Here's an example using the view created for CustTable.
 
       ```xpp
