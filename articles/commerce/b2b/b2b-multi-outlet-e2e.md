@@ -1,6 +1,6 @@
 ---
-title: End to End Experiences/Configuration Steps (preview)
-description: Learn about End to End Experiences/Configuration steps for native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
+title: B2B multioutlet end-to-end Experiences and Configuration Steps (preview)
+description: Learn about the end-to-end experiences and configuration steps for native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
 ms.date: 02/06/2026
 ms.topic: how-to
@@ -12,7 +12,7 @@ ms.search.form: RetailOperations
 ms.custom: 
   - bap-template
 ---
-# End to End Experiences/Configuration Steps (preview)
+# B2B multioutlet end to end experiences and configuration steps (preview)
 [!include [banner](../../includes/banner.md)]
 ## User management within Dynamics 365 Finance and Operations
 ### B2B organization account setup - prospect flow
@@ -138,10 +138,9 @@ When linking an organization during manual hierarchy creation, the system requir
   1. The selection list includes active contacts from the selected organization that have email addresses.
 
 
-***Important***
-
-Selecting an initial admin contact is required to save the customer hierarchy.
-If the prompt is canceled, the organization is not linked and the hierarchy cannot be saved.
+> [!IMPORTANT]
+> Selecting an initial admin contact is required to save the customer hierarchy.
+> If the prompt is canceled, the organization is not linked and the hierarchy cannot be saved.
 
 #### Automatically link other contacts as users
 After the initial admin contact is selected:
@@ -157,10 +156,9 @@ Contacts must be enabled to access the B2B storefront.
   1.	In the Hierarchy grid, select the contact.
   1.	Select Enable.
 
-***Important***
-
-Only enabled contacts can sign in to the storefront.
-The enable and disable controls take effect through the Commerce Data Exchange (CDX) job 1010 – Customers and are used to control site access.
+> [!IMPORTANT]
+> Only enabled contacts can sign in to the storefront.
+> The enable and disable controls take effect through the Commerce Data Exchange (CDX) job 1010 – Customers and are used to control site access.
 
 #### Assign catalogs (if applicable)
 Catalog assignment determines which products are available to users in the storefront.
@@ -367,7 +365,6 @@ The order creation experience depends on the organization selection made during 
 
 > [!NOTE] 
 > An inactive contact cannot be assigned to an order.
-
 
 ## Related information
 
