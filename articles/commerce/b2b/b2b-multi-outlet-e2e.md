@@ -12,7 +12,7 @@ ms.search.form: RetailOperations
 ms.custom: 
   - bap-template
 ---
-# B2B multioutlet end to end experiences and configuration steps (preview)
+# B2B multioutlet end-to-end experiences and configuration steps (preview)
 [!include [banner](../../includes/banner.md)]
 ## User management within Dynamics 365 Finance and Operations
 ### B2B organization account setup - prospect flow
