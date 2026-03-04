@@ -60,14 +60,14 @@ Fiscal books help you create the fiscal establishment's tax assessment, tax paym
 1. On the **Adjustment and information for fiscal documents** page, in the **Identification** field, enter an adjustment code. Then enter a description of the adjustment code.
 1. Select appropriate values in the **State**, **Classification**, **Assessment type**, **Responsibility**, **Tax payment type**, and **Source of the tax** fields.
 
-    The **Adjustment code** field is filled automatically, based on the values of the other fields on the page.
+    The system fills the **Adjustment code** field automatically, based on the values of the other fields on the page.
 
 1. Enter the occurrence code for the GIA fiscal obligation.
 1. Enter the first and last dates that the adjustment codes apply.
 1. On the **Payment** FastTab, select the **Other debit** check box to create another tax adjustment payment that isn't included in the periodic payment.
-1. On the **Posting** FastTab, in the **Company accounts** field, select the legal entity where the tax adjustment transactions should be posted.
-1. In the **Sales tax code** field, select the tax code that should be used to select the accounts receivable or accounts payable account. The account that is selected depends on whether the tax adjustment is a debit or a credit.
-1. Select the main account that should be used to post the revenue or expense part of the adjustment transaction.
+1. On the **Posting** FastTab, in the **Company accounts** field, select the legal entity where you want to post the tax adjustment transactions.
+1. In the **Sales tax code** field, select the tax code that should be used to select the accounts receivable or accounts payable account. The account that the system selects depends on whether the tax adjustment is a debit or a credit.
+1. Select the main account that you want to use to post the revenue or expense part of the adjustment transaction.
 
 ## Set up adjustment codes for ICMS tax
 
@@ -75,26 +75,26 @@ Fiscal books help you create the fiscal establishment's tax assessment, tax paym
 1. Select a state.
 1. Select the tax type:
 
-    - **ICMS** – The adjustment code is used for federal Imposto sobre Circulação de Mercadorias e Serviços (ICMS) tax.
-    - **ICMS-ST** – The adjustment code is used for federal ICMS-ST tax.
-    - **ICMS-DIFF** – The adjustment code is used for federal ICMS-DIFF tax.
+    - **ICMS** – Use the adjustment code for federal Imposto sobre Circulação de Mercadorias e Serviços (ICMS) tax.
+    - **ICMS-ST** – Use the adjustment code for federal ICMS-ST tax.
+    - **ICMS-DIFF** – Use the adjustment code for federal ICMS-DIFF tax.
 
 1. Select a classification, and enter an occurrence code.
 
-    The **Adjustment code** field is filled automatically, based on the values of the other fields on the page.
+    The system fills the **Adjustment code** field automatically, based on the values of the other fields on the page.
 
 1. Enter the first and last dates that the adjustment codes apply.
 1. In the **GIA** field group, select an occurrence code.
 1. On the **Payment** FastTab, select the **Other debit** option to create another tax adjustment payment that isn't included in the periodic payment.
-1. On the **Posting** FastTab, in the **Company accounts** field, select the legal entity where the tax adjustment transactions should be posted.
-1. In the **Sales tax code** field, select the tax code that should be used to select the accounts receivable or accounts payable account. The account that is selected depends on whether the tax adjustment is a debit or a credit.
-1. Select the main account that should be used to post the revenue or expense part of the adjustment transaction.
+1. On the **Posting** FastTab, in the **Company accounts** field, select the legal entity where you want to post the tax adjustment transactions.
+1. In the **Sales tax code** field, select the tax code that should be used to select the accounts receivable or accounts payable account. The account that the system selects depends on whether the tax adjustment is a debit or a credit.
+1. Select the main account that you want to use to post the revenue or expense part of the adjustment transaction.
 
 ## Set up adjustment codes for IPI taxes
 
 1. On the **IPI adjustment codes table** page, enter an adjustment code. The first character must be **0** (zero) for a credit adjustment or **1** for a debit adjustment.
 1. Enter a description.
-1. If the adjustment code is used to report the reversal of an Imposto sobre Produtos Industrializados (IPI) tax amount that you previously reported, select the **Reversal adjustment code** option.
+1. If you use the adjustment code to report the reversal of an Imposto sobre Produtos Industrializados (IPI) tax amount that you previously reported, select the **Reversal adjustment code** option.
 1. Enter the first and last dates that the adjustment code applies.
 
 On the **Observation codes** page, you can set up observation codes to adjust ICMS or ICMS-ST amounts.
@@ -102,9 +102,9 @@ On the **Observation codes** page, you can set up observation codes to adjust IC
 ## Set up fiscal books parameters per state
 
 1. On the **Fiscal books parameters per state** page, select a state.
-1. If you can adjust the ICMS tax amounts on fiscal documents, select the **By fiscal document** option, then select the default adjustment code and observation code.
+1. If you can adjust the ICMS tax amounts on fiscal documents, select the **By fiscal document** option, and then select the default adjustment code and observation code.
 
-    If you can't adjust the ICMS tax amounts on fiscal documents, clear the **By fiscal document** option, then select the default adjustment code.
+    If you can't adjust the ICMS tax amounts on fiscal documents, clear the **By fiscal document** option, and then select the default adjustment code.
 
 1. To automatically calculate an ICMS credit installment when you create an outgoing transaction, select the **Calculate installment for outgoing transactions** option.
 
@@ -164,4 +164,4 @@ On the **Fixed asset groups** page, you can set up a fixed asset group.
 
 On the **Accountant details** page, you can set up accountant information for tax booking.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]
