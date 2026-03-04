@@ -47,7 +47,7 @@ The **DimensionValueDeleteAudit** table is another special case. A row is writte
 > [!WARNING]
 > Frequently deleting records from tables that serve as dimension sources is strongly discouraged. The dimension framework is designed for write-once, reuse-many data. Mass deletes can create data growth and produce duplication in dimension data that affects reporting.
 
-If **DimensionValueDeleteAudit** is consuming excessive disk space, you can clear the **CallStack** column (which reclaims space while preserving rows and their audit identity) or delete old rows. Either operation can be run by using the [zero-downtime script execution tool](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/run-custom-scripts) with the following X++ script. Uncomment only one option and verify the scope before running.
+If **DimensionValueDeleteAudit** is consuming excessive disk space, you can clear the **CallStack** column (which reclaims space while preserving rows and their audit identity) or delete old rows. Either operation can be run by using the [zero-downtime script execution tool](/dynamics365/fin-ops-core/dev-itpro/deployment/run-custom-scripts) with the following X++ script. Uncomment only one option and verify the scope before running.
 
 ```xpp
 DimensionValueDeleteAudit audit;
