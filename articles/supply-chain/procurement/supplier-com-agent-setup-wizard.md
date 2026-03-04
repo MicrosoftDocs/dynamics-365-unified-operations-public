@@ -98,74 +98,36 @@ Select the button **Connect the agent** to use the connections you have just sel
 
 Select the button **Activate data flows**, and wait for all of the flows listed to switch to a state of *Activated*.
 
-### Configure private mailbox
+### Configure mailbox
 
-To enable the email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level. It is your organization's choice, if to use private mailboxes, shared mailboxes, or both. As a minimum, one mailbox needs to be configured for the agent to work.
+To enable the email analysis and delivery features of the Supplier Communications Agent, you must configure one or more mailboxes and synchronize them with Dataverse using server-side synchronization.
+Your organization can choose to use shared mailboxes, private mailboxes, or both. At a minimum, at least one mailbox must be configured for the agent to work.
 
-> [!IMPORTANT]
-> Only the owner of a private mailbox can create an agent configuration and review agent results related to it. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
-
-To set up a private mailbox, follow these steps:
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user with the system administrator security role. (Although users without an administrator role can enable synchronization for their own mailboxes, administrator approval might be required.)
-1. Select the environment that you want to set up.
-1. On the command bar, select **Settings**.
-1. On the **Settings** page, under **Email**, select **Mailboxes**.
-1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
-1. Select the check box for each mailbox that you want to use with the Supplier Communications Agent.
-1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
-
-After you set up a private mailbox, the user who owns it must update the personalization settings to specify that all emails should be tracked.
-
-To enable tracking of all emails for a private mailbox that you own, follow these steps:
-
-1. On the **Active Mailboxes** page, select the **Settings** button (gear symbol) in the upper right, and then select **Personalization Settings**.
-1. In the **Set Personal Options** dialog, on the **Email** tab, in the **Track** field, select *All email messages*.
-1. Select **OK**.
-
-### Configure Shared mailbox
-
-#### Configure the team's settings
+#### Configure Shared mailbox
 
 If you use a shared mailbox, follow these steps:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a user who has a system administrator security role.
-1. Select the environment that you want to set up.
-1. On the command bar, select **Settings**.
-1. On the **Settings** page, under **Users + permissions**, select **Teams**.
-1. On the command bar, select **Create team**.
-1. In the **New team** dialog, specify a name (for example *My Mail Team*), business unit, and administrator as required. Set the **Team type** field to *Owner*.
-1. Select **Next**.
-1. In the **Add team members** dialog, add all the users who should have access to the shared mailbox.
+1. Select **Set up shared mailbox**.
+1. Enter the shared mailbox email address. Make sure the shared mailbox already exists in Exchange Server. See [Create a shared mailbox](https://learn.microsoft.com/en-us/microsoft-365/admin/email/create-a-shared-mailbox).
+1. Select Search, then select Set up.
+1. Follow the on-screen instructions to approve and enable the configuration for the shared mailbox.
+This process associates the shared mailbox with a team in the Power Platform environment.
 
     > [!IMPORTANT]
-    > Add all users who create an agent configuration and review agent results that are related to this mailbox as team members.
+    > Add all users who create agent configurations or review agent results related to this mailbox as members of the associated team.
 
-#### Manage security roles
+### Configure private mailbox
 
-1. Select **Next**.
-1. In the **Manage security roles** dialog, select *Basic User* and *Finance and Operations Basic User*, and then select **Save**.
+To set up a private mailbox, follow these steps:
 
-#### Activate the mailbox
+1. Select **Set up private mailbox**.
+2. Search for a user. If the user does not appear, see [Add users to environment](https://learn.microsoft.com/en-us/power-platform/admin/add-users-to-environment)
+3. Select the mailbox associated with the selected user.
+4. Select **Set up**.
+5. Follow the on-screen instructions to approve and enable the configuration. This process enables synchronization between the email server and Dataverse for the selected mailbox.
 
-1. You should be now on the list of teams. Find the newly created team, and open it.
-1. In the upper-right corner, find the **Default Queue** associated with the team and open it. The queue has the same name as the team, set within angle brackets (for example: *\<My Mail Team\>*).
-1. A mailbox should be shown in the **Email settings** section. Select the mailbox name.
-1. On the mailbox details page, select **Activate** on the command bar and then select **Activate** in the dialog.
-1. In the section **Mailbox Information**, enter the shared **Email address** and save.
-1. On the command bar, select **Test & Enable Mailboxes**.
-
-    > [!TIP]
-    > If this operation fails, review the **Alerts** section for the mailbox. If it includes an error message that states that approval is required, you must ask your global or Exchange admin to approve the mailbox. Learn more in [Approve email](/power-platform/admin/connect-exchange-online#approve-email).
-
-#### Ensure the email address is used by a single mailbox
-
-Ensure that no other mailboxes that have the same email address are set up and active:
-
- 1. Return to the **Settings** page for your environment.
- 1. Under **Email**, select **Mailboxes**.
- 1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
- 1. If any other mailboxes have the same email address as the shared mailbox email address, deactivate them.
+> [!IMPORTANT]
+> Only the owner of a private mailbox can create agent configurations and review agent results related to that mailbox. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
 
 Get detailed instructions in [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
