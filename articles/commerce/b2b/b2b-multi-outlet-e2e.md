@@ -62,8 +62,8 @@ A contact must be enabled before the user can sign in to the B2B storefront.
 1.	Select the contact in the Hierarchy grid.
 1.	Select Enable.
 
-**Important**
-Only enabled contacts can sign in and access the storefront. Contacts that are linked but not enabled cannot place orders or view organization data.
+> [!IMPORTANT]
+> Only enabled contacts can sign in and access the storefront. Contacts that are linked but not enabled cannot place orders or view organization data.
 
 #### Assign or update the contact role (if applicable)
 Roles determine the permissions that a contact has within the organization.
