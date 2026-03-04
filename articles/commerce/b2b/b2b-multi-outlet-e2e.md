@@ -12,7 +12,8 @@ ms.search.form: RetailOperations
 ms.custom: 
   - bap-template
 ---
-#  End to End experiences/Configuration Steps
+# End to End Experiences/Configuration Steps (preview)
+[!include [banner](../../includes/banner.md)]
 ## User Management
 ### B2B Organization Account Set Up  Prospect flows
 B2B organization onboarding begins when a B2B Buyer prospect is approved. 
