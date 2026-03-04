@@ -47,6 +47,26 @@ The types of operating units include cost centers, business units, value streams
 | Department          | An operating unit that represents a category or functional part of an organization that performs a specific task, such as sales or accounting. | Used to report on functional areas. A department might have profit and loss responsibility, and might consist of a group of cost centers. |
 | Retail channel      | An operating unit that represents a brick and mortar store, an online store, or call center. | Used for the management and operational control of one or more stores within or across legal entities. |
 
+### Establishments
+
+> [!NOTE]
+> **Availability**: Establishments support in Dynamics 365 Finance is available starting with version **10.0.48**.
+>  **Establishments** functionality in Dynamics 365 Finance is controlled by **Feature management**. To use **Establishments** in business documents and enable establishment‑level **Registration ID** validation and immutable storage on invoices, the **Establishment and Registration ID governance on invoices** feature must be enabled. When the feature is turned off, establishment‑specific behavior (such as establishment selection, defaulting, and validation on invoices) is not applied.
+
+In Dynamics 365 Finance, an establishment represents an operational unit of a legal entity that carries out economic activity on a stable basis and may require its own regulatory identifiers, such as registration numbers used on invoices and regulatory reports.
+
+Establishments are modeled using existing **Operating units**, combined with an **Organizational hierarchy** assigned with *Enterprise establishment structure* **Organizational hierarchy purpose**, to support regulatory, invoicing, and compliance scenarios. 
+
+A single legal entity can have one or multiple establishments, while remaining the sole legal and accounting entity. All establishments share the same legal identity of the company but may have distinct operational identities for invoicing and regulatory purposes.
+
+**Operating units** can be used to represent **Establishments** when a business requires:
+
+- Identification of the issuing or receiving unit on invoices
+- Separate regulatory identifiers per operational location
+- Consistent establishment selection across sales, purchasing, projects, and journals
+
+Only **Operating units** that are explicitly included in a dedicated **Organizational hierarchy** assigned with **Enterprise establishment structure** purpose are treated as **Establishments** by the system. 
+
 ### Teams
 
 A team is an organization in which the members share a common responsibility, interest, or objective. Teams can't be used in organizational hierarchies.
@@ -61,6 +81,16 @@ Set up organizational hierarchies to view and report on your business from diffe
 Each hierarchy is assigned to a purpose. The purpose of a hierarchy determines the types of organizations that can be included in the hierarchy. The purpose also determines which application scenarios a hierarchy can be used in.
 
 Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and can't be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
+
+### Establishment hierarchy
+
+> [!NOTE]
+> **Availability**: Establishments support in Dynamics 365 Finance is available starting with version **10.0.48**.
+>  **Establishments** functionality in Dynamics 365 Finance is controlled by **Feature management**. To use **Establishments** in business documents and enable establishment‑level **Registration ID** validation and immutable storage on invoices, the **Establishment and Registration ID governance on invoices** feature must be enabled. When the feature is turned off, establishment‑specific behavior (such as establishment selection, defaulting, and validation on invoices) is not applied.
+
+**Organizational hierarchies** can be used to define which **Operating units** represent valid **Establishments** within a legal entity.
+
+To support establishment scenarios, Dynamics 365 Finance introduces a dedicated organization hierarchy purpose: **Enterprise establishment structure**. This hierarchy purpose determines which operating units are considered establishments and participate in **Registration ID** validation and immutability on documents such as invoices.
 
 ## Using Organizational Hierarchies in Financial Reporting
 
