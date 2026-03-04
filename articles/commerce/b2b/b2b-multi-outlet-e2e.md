@@ -304,7 +304,7 @@ To sign in
 Contacts who are configured with access to multiple organization accounts can select which organization they want to work with.
 
 > [!NOTE]
->The organization selection module is displayed only for contacts that have access to more than one organization.
+> The organization selection module is displayed only for contacts that have access to more than one organization.
 
 **To select an organization**
   1.	Sign in to the B2B storefront.
