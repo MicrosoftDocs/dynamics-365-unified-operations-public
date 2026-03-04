@@ -246,11 +246,9 @@ To remove a contact from a hierarchy
   1.	In the Hierarchy grid, select the contact.
   1.	Select Delete.
 
-**Important**
-
-Only contacts with no orders can be removed.
-In these cases, use the Disable contact procedure instead to remove storefront access while preserving audit history.
-
+> [!IMPORTANT]
+> Contacts that have placed one or more orders cannot be removed from the hierarchy.
+> In these cases, use the Disable contact procedure instead to remove storefront access while preserving audit history.
 #### Disable a contact for a specific organization
 
 Disabling a contact removes storefront access for the organization while keeping the contact and hierarchy relationship intact.
