@@ -300,7 +300,7 @@ To sign in
          - After password reset, the user is signed in automatically.
 
 
-### Select an organization (multi-outlet access)
+### Select an organization (multioutlet access)
 Contacts who are configured with access to multiple organization accounts can select which organization they want to work with.
 
 > [!NOTE]
