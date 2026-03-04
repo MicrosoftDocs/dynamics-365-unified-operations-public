@@ -92,7 +92,7 @@ Credit limit evaluation continues to be performed at the **Organization (custome
  
 ### Business partner prospect approval flow updates
 
-The B2B multioutlet feature updates the standard business partner prospect flow to automatically create a contact associated with the new Organization and link it to a customer hierarchy to enable storefront access.
+The B2B multioutlet feature updates the standard business partner prospect flow to automatically create a contact associated with the new Organization instead of a "person" type account and link it to a customer hierarchy with no additional configuration changes required.
  
 ### Manage user access through customer hierarchies in D365 Finance and Operations
  
@@ -132,7 +132,7 @@ For users who can act on behalf of multiple Organizations/outlets:
  
 #### Prospect workflow and sign-in for contact-based users
  
-When the B2B multioutlet feature is enabled, the business partner sign-up process allows for new B2B prospects to be submitted and processed with approval using the contact-based model. The new user can then use the storefront sign-up process to gain access to the storefront.
+When the B2B multioutlet feature is enabled, the business partner sign-up process allows for new B2B prospects to be submitted and processed with approval. The new contact-based user can then use the storefront sign-up process to gain access to the storefront.
  
 #### Organization-level orders and order templates
  
