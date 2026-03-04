@@ -87,10 +87,10 @@ The `DimensionAttributeActivationEntity` data entity can be used to activate fin
 > [!WARNING]
 > Running `DimensionAttributeActivationEntity` outside of maintenance mode can cause dbSync to fail to complete, leaving SQLDICTIONARY caches out of sync across AOS instances. This results in "column not filterable" errors, form personalization failures, and exceptions in dimension query providers that require a full AOS restart to resolve.
 
-For information about how to enable maintenance mode, see [Maintenance mode](../deployment/maintenance-mode.md).
+For information about how to enable maintenance mode, see [Maintenance mode](/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode).
 
 ## Additional resources
 
-[Add dimensions to Excel templates](dimensions-overview.md)
+[Add dimensions to Excel templates](/dynamics365/fin-ops-core/dev-itpro/financial/dimensions-overview)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
