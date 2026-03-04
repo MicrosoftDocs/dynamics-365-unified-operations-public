@@ -57,11 +57,12 @@ To set up tax exempt numbers, follow these steps:
 
 To set up the Declaration 347 report, follow these steps:
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following VAT declaration formats:
-    - Declaration 347 export format (ES)
-    - Declaration 347 report format (ES)
+1. Open the **Electronic reporting** workspace, and import the latest versions of these ER formats under the **Declaration 347 model**:
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    -   Declaration 347 export format (ES)
+    -   Declaration 347 report format (ES)
+
+Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**.
 1. On the **Cash ledger accounts** page, specify the cash ledger accounts that are required for the Declaration 347.
@@ -121,25 +122,26 @@ To generate the Declaration 347 report, follow these steps:
 
     | Field                                       | Description  |
     |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Task   code                                 | The task code that describes the   origin of the transaction:<br>- **A - Purchase**: This task code is automatically defined for purchase transactions.<br>- **B - Sales**: This task code is automatically defined for sales transactions.<br>-   **C - Payment via credit institution**: Select this value if the transaction is a payment that was made through a credit institution.<br>- **D -   Purchases from public entity**: Select this value if the transaction is a purchase from a public entity.<br>- **E - Subventions**: Select this value if the transaction is a subvention that is received from public administrations or private companies. |
-    | Tax exempt number                         | The tax exempt number of the customer or vendor.  |
-    | Name                                        | The name of the customer or vendor.    |
-    | County                                      | The county of the customer or vendor.   |
-    | Country/region                              | The International Organization for Standardization (ISO) code for the customer's or vendor's country or region.   |
-    | 1st quarter amount                        | The total amount of aggregated transactions that were posted in the first quarter of the year.  |
-    | 2nd quarter amount                        | The total amount of aggregated transactions that were posted in the second quarter of the year.  |
-    | 3rd quarter amount                        | The total amount of aggregated transactions that were posted in the third quarter of the year.  |
-    | 4th quarter amount                        | The total amount of aggregated transactions that were posted in the fourth quarter of the year.  |
-    | Amount                                      | The total amount of the aggregated transactions in the accounting currency.  |
-    | Amount settled                            | The amount in the accounting currency. |
-    | Amounts in cash                           | The amount of payments in cash for the transaction. This value is filled in only for customer transactions.  |
-    | Invoice year of cash                      | The year of the invoice that is associated with cash payments on the transaction line. This field is set if the **Amounts is cash** field is set.  |
-    | Tenancy                                     | Select this checkbox to indicate that the transaction is a tenancy process.  |
-    | Representative                              | Select this checkbox to indicate that the tax exempt number is attached to a legal representative of the customer or vendor.    |
-    | Insurance process                         | Select this checkbox to indicate that the transaction is an insurance process.    |
-    | Special regime for cash accounting method | Select this checkbox to indicate that the **Special regime for cash accounting** method is set up for this period.   |
-    | Deposit                                     | Select this checkbox to indicate that the transaction is a deposit.    |
-    | Reverse charge                            | Select this checkbox to indicate that the reverse charge is used for this transaction.   |
+    | Declaration line > Tax   exempt number      | The tax exempt number of the   customer or vendor.        |
+    | Declaration line > Name                     | The name of the customer or   vendor.            |
+    | Declaration line > County                   | The county of the customer or   vendor.                  |
+    | Declaration line > Country/region                    | The International Organization   for Standardization (ISO) code for the customer's or vendor's country or   region.  |
+    | Operation > Task   code                                 | The task code that describes the   origin of the transaction:<br>- **A - Purchase**: This task code is   automatically defined for purchase transactions.<br>- **B - Sales**:   This task code is automatically defined for sales transactions.<br>-   **C - Payment via credit institution**: Select this value if the transaction   is a payment that was made through a credit institution.<br>- **D -   Purchases from public entity**: Select this value if the transaction is a   purchase from a public entity.<br>- **E - Subventions**: Select this   value if the transaction is a subvention that is received from public   administrations or private companies. |
+    | Operation > BDNS call number                            | This field is available when the **Task code** is set to **E**. Specify the 6-digit number of call code for the grant or aid in the BDNS (Base de Datos Nacional de Subvenciones, National Grants Database). |
+    | Amount > 1st   quarter amount                        | The total amount of aggregated   transactions that were posted in the first quarter of the year.                                         |
+    | Amount > 2nd   quarter amount                        | The total amount of aggregated   transactions that were posted in the second quarter of the year.   |
+    | Amount > 3rd   quarter amount                        | The total amount of aggregated   transactions that were posted in the third quarter of the year.                |
+    | Amount > 4th   quarter amount                        | The total amount of aggregated   transactions that were posted in the fourth quarter of the year.                             |
+    | Amount > Amount                                      | The total amount of the   aggregated transactions in the accounting currency.                              |
+    | Amount > Amount   settled                            | The amount in the accounting   currency.          |
+    | Amounts in cash > Amounts   in cash                           | The amount of payments in cash   for the transaction. This value is filled in only for customer transactions.        |
+    | Amounts in cash > Invoice year for cash                      | The year of the invoice that is   associated with cash payments on the transaction line. This field is set if   the **Amounts is cash** field is set.      |
+    | Administration > Tenancy                                     | Select this check box to   indicate that the transaction is a tenancy process.     |
+    | Administration > Representative                              | Select this check box to   indicate that the tax exempt number is attached to a legal representative of   the customer or vendor.        |
+    | Administration > Insurance   process                         | Select this check box to   indicate that the transaction is an insurance process.         |
+    | Administration > Special   regime for cash accounting method | Select this check box to   indicate that the **Special regime for cash accounting** method is set up for   this period.      |
+    | Administration > Deposit                                     | Select this check box to   indicate that the transaction is a deposit.     |
+    | Administration > Reverse   charge                            | Select this check box to   indicate that the reverse charge is used for this transaction.                              |
 
 1. If you selected the **Tenancy** checkbox on the **General** tab, select **Declaration 347 tenants** to add information about tenants.
 
