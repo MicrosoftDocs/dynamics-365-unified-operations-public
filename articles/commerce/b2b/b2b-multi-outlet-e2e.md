@@ -100,7 +100,7 @@ The 1010  Customers job synchronizes:
 
 Once the data is synchronized, the organization and its enabled contacts can sign in to the B2B storefront.
 
-### Manual B2B Organization Account Set Up
+### Manual B2B Organization Account Setup
 Manual onboarding is used to enable online access for an existing B2B organization by creating and linking a customer hierarchy to that organization. This process is performed primarily on the Customer hierarchies page in Finance and Operations.
 
 A key requirement of this process is that at least one contact must be selected and assigned as an administrator for the customer hierarchy. The contact can exist under the linked organization account or under another organization account.
