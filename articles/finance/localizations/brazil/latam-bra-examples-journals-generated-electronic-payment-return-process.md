@@ -1,12 +1,12 @@
 ---
 title: Journals generated during the electronic payment return process for Brazil
-description: Learn how payment journals are generated when you  post the return file for electronic payments. Approved payment lines in return files are posted to journals.
+description: Learn how payment journals are generated when you post the return file for electronic payments.
 author: kailiang
 ms.author: kailiang
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/20/2017
+ms.date: 03/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
@@ -58,11 +58,5 @@ When you post the approved payment lines, the three payment lines are posted to 
 | 002            | 1            | January 5, 2013  | Approved | 1,000  |
 | 003            | 1            | January 1, 2013  | Approved | 3,000  |
 | 004            | 1            | January 3, 2013  | Approved | 4,000  |
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to configure fiscal books, which help you consolidate fis
 author: v-gonode
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 03/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2017-06-30
