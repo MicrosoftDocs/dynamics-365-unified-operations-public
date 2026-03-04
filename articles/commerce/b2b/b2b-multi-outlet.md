@@ -19,8 +19,6 @@ ms.custom:
 [!INCLUDE [banner](../../includes/preview-banner.md)]
 
 This article describes the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
-
-Many B2B organizations operate through multiple purchasing locations, branches, or outlets. The same group of buyers often places orders for one or more outlets. Commercial rules such as pricing, credit limits, catalogs, and fulfillment settings are defined centrally at the organization or outlet level.
  
 B2B multioutlet support in Dynamics 365 Commerce is a scalable model that allows one user identity to place orders across multiple associated outlets. This model reduces duplicate configuration and improves visibility across orders.
  
@@ -41,7 +39,7 @@ This model reflects common B2B operations. It also removes the need to create du
  
 ## Why B2B multioutlet support matters
  
-B2B organizations rarely operate as a single purchasing entity. Instead, they often include multiple branches, outlets, cost centers, or locations that place orders independently. These entities still belong to the same legal or commercial organization.
+Many B2B organizations operate through multiple purchasing locations, branches, or outlets. The same group of buyers often places orders for one or more outlets. Commercial rules such as pricing, credit limits, catalogs, and fulfillment settings are defined centrally at the organization or outlet level.
  
 Supporting this operating model is critical for:
  
@@ -49,7 +47,7 @@ Supporting this operating model is critical for:
 - Operational efficiency for administrators.
 - A streamlined buying experience for users.
  
-B2B multioutlet support addresses this need by separating *user identity* from *purchasing context*. At the same time, it keeps centralized control over commercial configuration.
+B2B multioutlet support addresses this need by separating *user identity* from *purchasing context*. 
  
 ## Challenges with traditional B2B commerce models
  
