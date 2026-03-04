@@ -315,7 +315,7 @@ Contacts who are configured with access to multiple organization accounts can se
   1.	The selected organization is marked as Selected.
   1.	The organization name appears in the My account menu.
 
-Once selected, all storefront elements that depend on organization or customer hierarchy contextsuch as pricing, catalogs, and checkout behavior are updated accordingly.
+Once selected, all storefront elements that depend on organization or customer hierarchy context such as pricing, catalogs, and checkout behavior are updated accordingly.
 
 ### Switch organizations during a session
 The storefront supports switching between organizations without signing out.
