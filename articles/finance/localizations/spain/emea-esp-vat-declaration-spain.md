@@ -148,7 +148,7 @@ Open the **Electronic reporting** workspace, and import the latest versions of t
 - VAT Declaration Excel (ES)
 - VAT Declaration TXT (ES)
 
-Learn more in [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### <a name="set-up"></a>Set up application-specific parameters for VAT declaration fields
 
