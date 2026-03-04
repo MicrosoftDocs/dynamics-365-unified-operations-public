@@ -9,402 +9,180 @@ ms.search.region: Global
 ms.author: v-jcavataio
 ms.search.validFrom: 2021-01-31
 ms.search.form: RetailOperations
-ms.custom: 
+ms.custom:
   - bap-template
 ---
-
+ 
 # B2B multioutlet capabilities (preview)
-
+ 
 [!INCLUDE [banner](../../includes/banner.md)]
 [!INCLUDE [banner](../../includes/preview-banner.md)]
-
-This article describes the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
  
-B2B multioutlet support in Dynamics 365 Commerce is a scalable model that allows one user identity to place orders across multiple associated outlets. This model reduces duplicate configuration and improves visibility across orders.
- 
-This capability changes how Commerce models B2B users and organizations. It moves from a *person-based customer account model* to a *contact-based identity model* that integrates with *customer hierarchies*.
+Native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce let one signed-in user place orders for multiple associated Organizations or outlets. This approach reduces duplicate setup and aligns the online buying experience with common B2B operating models where buyers purchase on behalf of more than one branch or purchasing entity.
  
 ## What is B2B multioutlet support?
  
-B2B multioutlet support allows a single business user, represented as a contact, to access and place orders for multiple organizations or outlets in the same B2B Online Channel.
+B2B multioutlet support lets a single business user—represented as a **contact**—access and place orders for multiple Organizations/outlets in the same B2B online channel.
  
 Key characteristics include:
  
-- Single sign-in identity for users who manage multiple outlets.
-- Organization-based purchasing context, where pricing, catalogs, addresses, and credit limits are defined.
-- Contact-based access, where users are associated with one or more organizations through customer hierarchies.
-- Context-aware ordering, where the selected outlet determines pricing, inventory, and checkout behavior.
+- **Single sign-in identity**: A user signs in once by using one storefront identity.
+- **Organization-based purchasing context**: Pricing, catalogs, addresses, credit limits, and fulfillment rules are defined per Organization/outlet.
+- **Contact-based access model**: A contact is associated with one or more Organizations through **customer hierarchies**.
+- **Context-aware ordering**: The active Organization/outlet determines pricing, inventory, and checkout behavior.
  
-This model reflects common B2B operations. It also removes the need to create duplicate users or customer records for each outlet.
+When a contact has access to more than one Organization, the storefront can prompt the user to choose the Organization/outlet to shop for. Users can switch between available Organizations during a session.
  
 ## Why B2B multioutlet support matters
  
-Many B2B organizations operate through multiple purchasing locations, branches, or outlets. The same group of buyers often places orders for one or more outlets. Commercial rules such as pricing, credit limits, catalogs, and fulfillment settings are defined centrally at the organization or outlet level.
+Many B2B Organizations operate through multiple purchasing locations (for example, branches, stores, or outlets). Often, the same group of buyers places orders for more than one location, while commercial rules such as pricing, catalogs, credit limits, and fulfillment options vary by purchasing entity.
  
-Supporting this operating model is critical for:
+B2B multioutlet support helps by separating **user identity** from **purchasing context**, which supports:
  
-- Scalability as organizations grow.
-- Operational efficiency for administrators.
-- A streamlined buying experience for users.
+- **Scalability** as Organizations add outlets and buyers.
+- **Operational efficiency** by reducing duplicate records and configuration.
+- **A streamlined buyer experience** by removing the need for multiple sign-ins.
  
-B2B multioutlet support addresses this need by separating *user identity* from *purchasing context*. 
+## How this differs from traditional B2B commerce models
  
-## Challenges with traditional B2B commerce models
+Traditional implementations often enforce a one-to-one relationship between a buyer’s online identity and a purchasing account. As Organizations grow, this can lead to:
  
-Traditional B2B Commerce implementations often enforce a one-to-one relationship between a user and a purchasing account. As organizations expand, that model creates several problems.
+- **Multiple user accounts for the same person**, one per outlet or purchasing account.
+- **Duplicate pricing and catalog configuration** across many buyer records.
+- **Fragmented order history**, where purchasing activity is spread across multiple buyer accounts instead of being consolidated at the Organization level.
  
-### Separate user accounts for each outlet
- 
-Organizations frequently create multiple user accounts for the same individual, one per outlet or purchasing account. For example, a regional buyer who manages five stores might need five separate sign-ins.
- 
-This pattern increases:
- 
-- User frustration from managing multiple credentials.
-- Administrative effort for onboarding, role changes, and offboarding.
-- Risk of inconsistent access and security gaps.
- 
-### Duplicate pricing configuration
- 
-When each B2B user is treated as a separate customer account, pricing rules and discounts often have to be duplicated across records. The contact model removes this additional configuration step and instead allows any number of contact users at a given organization to be updated at once through the organization's pricing configurations.
- 
-This duplication increases:
- 
-- Configuration and maintenance effort.
-- Difficulty of managing pricing changes consistently.
-- Risk of configuration drift between users attached to the same organization.
- 
-### Fragmented order history
- 
-Sales orders are created against individual customer accounts instead of a single organizational entity. As a result:
- 
-- Order history is spread across multiple customer accounts.
-- Headquarters lacks a consolidated view of organizational purchasing.
-- Customer service has limited visibility into the total organizational spend.
- 
-## The shift enabled by B2B multioutlet support
- 
-B2B multioutlet support separates two core concepts:
- 
-- **Who places the order**: The contact
-- **Which entity is purchasing**: The organization or outlet
- 
-This separation aligns Commerce with common B2B business practices.
- 
-### Centralized commercial control
- 
-Organizations define pricing, discounts, catalogs, credit limits, and fulfillment rules once at the organization or outlet level. Commerce reuses these settings across all associated users.
- 
-### Flexible user access
- 
-Commerce represents users as contacts. Administrators can associate each contact with one or more outlets through customer hierarchies. A single user can act on behalf of multiple outlets without duplicating identity or configuration.
+B2B multioutlet support addresses these issues by using a contact identity model and an Organization-centric transaction model.
  
 ## What changes with B2B multioutlet support?
  
-B2B multioutlet support adds capabilities that modernize user management, transaction ownership, storefront behavior, and call center workflows.
+B2B multioutlet support introduces a model shift:
  
-### Users are managed as contacts
+- **Who places the order**: the **contact** (user identity)
+- **Which entity is purchasing**: the **Organization/outlet** (purchasing context)
  
-With B2B multioutlet support, users are modeled as contacts instead of person-type customer accounts.
+This shift affects user management, sales order creation, storefront behavior, and call center experiences.
  
-- Each contact represents an individual user who signs in to the storefront.
-- A single contact can be associated with one or more organizations or outlets. The contact is granted online access through association with an organization’s customer hierarchy.
-- Contacts inherit purchasing rules such as pricing, catalogs, credit limits, and fulfillment settings from the organization context.
+### Users are managed as contacts (not person-type customer accounts)
  
-This approach simplifies identity management and aligns with enterprise authentication models.
+With B2B multioutlet support:
  
-### Single sign-in for orders across multiple outlets
+- Each signed-in user is represented as a **contact**.
+- A single contact can be associated with one or more Organizations/outlets through **customer hierarchies**.
+- Contacts inherit purchasing rules (pricing, catalogs, credit limits, fulfillment, and channel access) from the active Organization/outlet context.
  
-With B2B multioutlet support, users sign in to the Commerce storefront once. They can access all authorized outlets without maintaining separate credentials for each location.
+This approach reduces identity duplication and simplifies administration as Organizations add outlets or change staffing.
  
-In this model, a user is represented as a contact and authenticated through a single identity. The contact can be associated with one or more organizations or outlets through customer hierarchies. After the user signs in, the storefront lets the user select the outlet to use for ordering.
+### Organization-based sales order creation (with contact recorded)
  
-#### How single sign-in works
-
-Single sign-in works in the following ways:
-
-- The user signs in by using a single storefront identity.
-- After the user signs in, the storefront determines which organizations or outlets the contact can access.
-- If multiple outlets are available, the storefront shows an organization selection experience.
-- The selected outlet determines pricing, catalogs, inventory availability, and checkout behavior.
+With B2B multioutlet support enabled:
  
-Users can switch between outlets during the same session without signing out.
+- **Sales orders are created against the Organization account**, represented by the customer hierarchy.
+- The **contact is recorded on the sales order** for auditing and tracking, but the contact doesn’t own the purchasing account.
  
-#### Business value
+This approach consolidates purchasing activity under the Organization regardless of which contact placed the order.
  
-Single sign-in across outlets provides several benefits:
+#### Credit controls remain Organization-driven
  
-- **Simplified user experience**: Users manage one set of credentials instead of multiple sign-ins for different outlets.
-- **Reduced identity duplication**: Organizations avoid creating multiple user accounts for the same individual.
-- **Improved security and governance**: Administrators manage access centrally through customer hierarchies instead of distributing access across multiple accounts.
-- **Operational efficiency**: Onboarding and offboarding users is faster because administrators apply access changes once at the contact level.
- 
-#### Impact on storefront behavior
- 
-When a user switches outlets during a session, the following things happen:
- 
-- Pricing, catalogs, and inventory availability are refreshed based on the selected outlet.
-- The storefront indicates the active purchasing context.
-- Each outlet has its own shopping cart, which supports a clean and consistent user experience.
- 
-This behavior helps users place orders in the correct organizational context while using a single sign-in.
- 
-## Sales order creation: From individual customer accounts to organization-based ordering
- 
-### Current behavior in traditional B2B e-commerce
- 
-In many existing Dynamics 365 Commerce B2B implementations, sales orders are created against *individual customer accounts* that represent buyers. Even when users belong to the same organization, each user owns a separate transactional customer account.
- 
-As a result:
- 
-- Orders for the same organization are distributed across multiple customer accounts.
-- Order ownership doesn't align with how organizations manage purchasing.
-- Credit limit evaluation is already performed at the customer hierarchy (organization) level, not at the individual contact or outlet level.
- 
-Although organization-level credit evaluation already exists, user-centric order creation adds reporting and operational complexity.
- 
-### Challenges with the current order creation model
-
-Challenges with the current order creation model include:
- 
-- Fragmented order history across multiple buyer accounts.
-- Higher maintenance effort for managing many customer records.
-- Misalignment between business ownership and transaction ownership.
- 
-### Organization-based sales order creation with B2B multioutlet support
- 
-With B2B multioutlet support enabled, Commerce uses an organization-centric transaction model.
- 
-New behavior includes:
- 
-- Sales orders are created against the organization account, represented by the customer hierarchy.
-- Contacts represent the users who place orders but don't own the customer account.
-- Each sales order retains a contact reference for auditing and tracking.
- 
-This approach consolidates purchasing activity under the organization, regardless of which user places the order.
- 
-## Business impact of organization-based ordering
- 
-### Consolidated organizational purchasing view
- 
-Benefits of a consolidated organizational purchasing view include:
- 
-- A single, unified view of all orders.
-- Improved reporting and analytics.
-- Simplified customer service support for multiuser organizations.
- 
-### Credit controls remain organization-driven
- 
-Credit limit evaluation continues to be performed at the *customer hierarchy (organization) level*. This approach ensures that:
- 
-- Credit exposure reflects total organizational purchasing.
-- Credit limits aren't defined per user.
-- Credit control aligns with standard B2B credit practices.
+Credit limit evaluation continues to be performed at the **Organization (customer hierarchy) level**, reflecting total organizational exposure.
  
 > [!NOTE]
-> Credit limits are evaluated at the organization (customer hierarchy) level, not at the individual contact level.
+> Credit limits are evaluated at the Organization (customer hierarchy) level, not at the individual contact level.
  
-### Clear accountability without data fragmentation
+## Experiences enabled by B2B multioutlet support
  
-Although the organization owns the orders, the system records which contact placed each order. This record supports:
+### Business partner prospect approval flow updates
+
+The B2B multioutlet feature updates the standard business partner prospect flow to automatically create a contact associated with the new Organization and link it to a customer hierarchy to enable storefront access.
  
-- Auditability.
-- User-level accountability.
-- Investigation by customer service.
+### Manage user access through customer hierarchies in D365 Finance and Operations
  
-### Reduce administrative overhead
+Customer hierarchies are the primary control point for managing B2B multioutlet access. Administrators use customer hierarchies to associate contacts with Organizations/outlets and manage their access.
  
-Organizations reduce administrative overhead in the following ways:
+Common administration actions include:
  
-- Adding or removing users without creating or deleting customer accounts.
-- Scaling buyers and outlets without duplicating configuration.
-- Maintaining cleaner customer data.
+- **Associate contacts** to an Organization/outlet by adding them to the customer hierarchy.
+- **Assign roles** (Administrator or User) at the hierarchy level to control permissions.
+- **Enable/Disable access** for a contact (without removing historical associations).
  
-## Manage user access through customer hierarchies
+Associating contacts using the customer hierarchy has the same effect as associating them through the Organization account. It provides consistent access behavior, regardless of where an administrator makes the change. This alignment helps ensure that user status remains consistent across Organization accounts, customer hierarchies, and Commerce channels.
  
-Customer hierarchies are the primary control point for managing user access in B2B multioutlet support. Administrators can associate, update, and manage contacts from the customer hierarchy view. This approach helps ensure that access rules are applied consistently across Commerce, the storefront, and customer service experiences.
- 
-This centralized approach simplifies user lifecycle management while preserving auditability and historical integrity.
- 
-### Associate contacts from the customer hierarchy
- 
-Administrators can associate contacts with an organization by adding the contacts directly to the customer hierarchy.
- 
-When an administrator adds a contact through the customer hierarchy:
- 
-- The contact is authorized to act on behalf of the linked organization.
-- The contact inherits organization-level purchasing context, including pricing, catalogs, credit limits, and channel access.
-- The administrator can assign a role (administrator or user) at the hierarchy level to control permissions.
- 
-Associating contacts using the customer hierarchy has the same effect as associating them through the organization account. It provides consistent access behavior, regardless of where an administrator makes the change.
- 
-### Make users inactive in the customer hierarchy
- 
-Customer hierarchies provide controls to disable user access without removing historical associations.
+#### Disable contacts while preserving audit history
  
 When an administrator disables a contact in the customer hierarchy:
  
-- The contact loses storefront access for the selected organization.
-- The contact remains associated with the organization for auditing and reporting.
+- The contact loses storefront access for the selected Organization/outlet.
+- The association remains for auditing and reporting.
 - Existing orders and historical transactions remain unchanged.
  
-Contacts who placed orders can't be fully removed from the hierarchy. Disabling access helps maintain security while preserving transaction history.
+Contacts who placed orders can’t be fully removed from the hierarchy; disabling access helps maintain governance while preserving transaction history.
  
-### Provide a reason when disabling a contact
+##### Capture a reason when disabling access
  
-When an administrator disables a contact, they're prompted to enter a reason.
+When a contact is disabled, administrators are prompted to enter a reason (for example, role change, temporary suspension, or the user left the Organization). This reason is stored for auditing and operational visibility.
  
-Examples include:
+### Storefront experiences for multioutlet users
  
-- The user left the organization.
-- Temporary suspension.
-- Role change.
-- Access is no longer required.
+For users who can act on behalf of multiple Organizations/outlets:
  
-The Commerce administrator enters the disable reason during the process. The reason is stored in the customer hierarchy for auditing and operational visibility.
+- After sign-in, the storefront determines which Organizations/outlets the contact can access.
+- If multiple Organizations/outlets are available, the user can select the active purchasing context.
+- Pricing, catalogs, inventory availability, and checkout behavior update based on the selected Organization/outlet.
+- The storefront indicates the active purchasing context.
+- Each Organization/outlet has its own shopping cart, which helps keep purchasing context consistent.
  
-Capturing a reason helps organizations understand access decisions and supports compliance and audit scenarios.
+#### Prospect workflow and sign-in for contact-based users
  
-### Impact of organization updates on customer hierarchy associations
+When the B2B multioutlet feature is enabled, the business partner sign-up process allows for new B2B prospects to be submitted and processed with approval using the contact-based model. The new user can then use the storefront sign-up process to gain access to the storefront.
  
-Changes made to a contact at the organization account level are reflected in the customer hierarchy. Examples include:
+#### Organization-level orders and order templates
  
-- **Disabling a contact at the organization level**: The contact is treated as inactive in the customer hierarchy and loses storefront access.
-- **Re-enabling a contact**: Access can be restored without reconfiguring hierarchy associations.
-- **Updating contact details (name and status)**: Contact detail updates flow through to hierarchy-based access evaluation and storefront authentication.
- 
-This alignment helps ensure that user status remains consistent across organization accounts, customer hierarchies, and Commerce channels.
- 
-### Why hierarchy-based user management matters
- 
-Managing users from the customer hierarchy provides several benefits:
- 
-- **Centralized control**: Administrators manage access from a single, authoritative structure.
-- **Immediate effect**: Enable and disable actions take effect without more configuration.
-- **Audit-friendly**: Reasons for access changes are captured and preserved.
-- **Scalable administration**: Organizations can manage many users and outlets without duplicating effort.
- 
-## Contact-aware Call Center Experiences
- 
-B2B multioutlet support extends to assisted selling capabilities in Commerce. It improves how customer service users identify and work with individual buyers who place orders on behalf of an organization.
- 
-These enhancements improve auditability and operational clarity, without changing the organization-centric transaction model.
- 
-### Enhancements to the Customer Service form
- 
-With B2B multioutlet support enabled, the **Customer Service** form supports associating a *contact* with a sales order.
- 
-- The *organization account* remains the customer for the order.
-- The *contact* represents the individual who places or requests the order.
-- Contact association is optional and is used for identification, auditing, and support.
- 
-This enhancement helps customer service users distinguish between the organization and the contact who acted on behalf of the organization.
- 
-### Associate a contact with a sales order
- 
-When creating or reviewing a sales order in customer service:
- 
-- A **Contact** field is available on the sales order.
-- Customer service users can select a contact who is associated with the organization through the customer hierarchy.
-- The selected contact is stored on the order as a reference that indicates who placed or requested the order.
- 
-For orders that originate from the storefront, the system populates the contact reference automatically.
- 
-### Call center behavior for disabled or inactive contacts
- 
-Contact association is governed by the contact’s active status in the organization and customer hierarchy.
- 
-#### Only active contacts can create new sales orders
- 
-- Only active contacts that are associated with the selected organization can be associated with new sales orders.
-- If a contact is disabled or inactive for the organization:
-  - The contact doesn't appear as a selectable option.
-  - The contact can't be associated with the order.
- 
-This behavior helps ensure that only authorized and active users are linked to new transactions.
- 
-#### Existing orders and historical data remain unchanged
- 
-- If a contact becomes inactive after placing an order:
-  - The existing sales order remains unchanged.
-  - The contact reference is retained for auditing and reporting.
-- Historical orders continue to show the original contact, even if the contact is no longer active.
- 
-This behavior preserves transaction history while enforcing current access rules.
- 
-#### Customer service users can create orders when contacts are inactive
- 
-If all contacts for an organization are inactive:
- 
-- Customer service users can still create sales orders by using the organization account.
-- No contact is associated with the order unless an active contact is available.
- 
-This approach supports business continuity while maintaining access controls.
- 
-#### Design benefits
- 
-This design balances flexibility and governance:
- 
-- **Security**: Prevents inactive or unauthorized users from being linked to new transactions.
-- **Auditability**: Maintains a clear record of who placed historical orders.
-- **Operational clarity**: Separates organizational ownership of orders from individual responsibility.
-- **Consistency**: Applies the same access rules across storefront and call center scenarios.
- 
-## Contact-aware B2B e-commerce storefront experiences
- 
-### Prospect workflow and standard sign-in support for contact based users
-
-When the B2B multioutlet feature is enabled, the business partner sign up feature will instead create a contact for the first B2B user when a prospect is approved. Once the prospect is approved and their contact is created, the new B2B user can sign up using the existing authentication process through the storefront and start shopping immediately. In addition, the standard configuration for signing in and authenticating will operate in a similar manner using contacts as well.  
-
-> [!NOTE]
-> This process assumes that the contact already exists in Dynamics 365 Finance and Operations and is associated with an organization through a synchronized customer hierarchy. Registration and sign-up apply only to B2B buyer organizations for this release.
-
-
-### Intuitive controls and consistent organization display for multioutlet B2B users
-
-A B2B user who is associated with more than one organization will be prompted to select which account they would like to shop with upon signing in, and can change between their organizations freely. B2B users who are attached to a single organization have these elements hidden as part of their shopping experience to reduce any confusion when shopping or navigating the different links throughout the storefront. The currently active organization, along with the name of the user is displayed in the header at all times to provide a quick point of reference for the currently selected organization.
-
-### Seamless access to organization-based configurations
-
-All pricing, catalog and shopping cart/checkout configurations which would impact an organization's options when searching, filtering or purchasing products are available for contact-based users. These elements can change immediately and accurately to reflect the currently active organization for multioutlet users as well within a single signed-in session.  
-
-### Persistent shopping carts when switching organizations
-
-Multioutlet users are given the freedom to switch between their organizations with their cart in any state, and can pick up where they left off after any number of organization selections.
-
-### Organization level orders and order templates available in the storefront
-
-Organization-based order history visibility and order templates are available and allow for all users at a given organization to view orders and use order templates. 
+Order history visibility and order templates are available at the **Organization** level so that users associated with the same organization can access shared purchasing history and templates.
  
 > [!NOTE]
-> For the current state of this feature, order templates and order history are only scoped at the organization level. User-level templates and order history are planned for a future release.
-  
-### Uses existing data exchange and batch jobs to operate
+> For the current state of this feature, order templates and order history are only scoped at the Organization level. User-level templates and order history are planned for a future release.
+ 
+### Contact-aware call center experiences
+ 
+B2B multioutlet support extends to assisted selling in Commerce by improving how customer service users identify and work with individual buyers.
+ 
+With B2B multioutlet support enabled:
+ 
+- The **Organization account** remains the customer for the sales order.
+- A **Contact** field can be used to associate the individual who placed or requested the order.
+- For storefront-originated orders, the system can populate the contact reference automatically.
 
-Enabling the feature will update all of the impacted download and upload data exchanges appropriately, requiring no additional job scheduling for day-to-day operations or configuration changes to take effect on the storefront.
+#### Updated contact-based customer search option
 
-
+Updated options within the customer service form are available to search for a specific contact in the system through various identifying information. Once a contact is found, their related Organization(s) are available to select from to create a new order, or review previously placed orders that are connected with that contact. The existing option to search by Organization is available as well, with updates to the user interface for related contact information.
+ 
+#### Behavior for inactive contacts
+ 
+- Only **active** contacts associated with the selected Organization/outlet can be used on new sales orders.
+- If a contact becomes inactive after placing an order, the existing order remains unchanged and retains the contact reference.
+- If all contacts are inactive, customer service users can still create sales orders by using the Organization account, without associating a contact.
+ 
 ## Enable the B2B multioutlet feature
  
 The **B2B Multi-Outlet Ordering with Contact-Based Access** feature is available for preview starting with Commerce version 10.0.47.
-
-To configure multioutlet and contact-based B2B customer hierarchies, follow these steps:
  
-1. In Commerce headquarters, go to the **Feature management** workspace (**System administration > Workspaces > Feature management**).
-1. Enable the **B2B Multi-Outlet Ordering with Contact-Based Access** feature.
+To enable it:
+ 
+1. In Commerce headquarters, go to **Feature management** (**System administration > Workspaces > Feature management**).
+1. Enable **B2B Multi-Outlet Ordering with Contact-Based Access**.
 1. Run the **1110 CDX job**.
  
 > [!NOTE]
-> This preview feature is recommended for new B2B channel implementations only, without existing B2B users in the system. Once enabled, this feature cannot be disabled. A future release includes migration options for existing B2B organization and user configurations.
+> This preview feature is recommended for new B2B channel implementations only, without existing B2B users in the system. Once enabled, this feature can't be disabled.
  
-## Configure multioutlet organizations
+## Configure multioutlet Organizations (high level)
  
-At a high level, administrators set up multioutlet organizations by:
+At a high level, administrators set up multioutlet Organizations by:
  
-- Creating or onboarding organization accounts.
-- Creating contacts to represent **B2B** users for **organization accounts**.
-- Linking contacts to **one or more** organizations by using customer hierarchies.
+- Creating or onboarding Organization accounts.
+- Creating contacts to represent B2B users.
+- Linking contacts to one or more Organizations by using customer hierarchies.
 - Assigning roles, catalogs, and channels.
 - Enabling contacts for storefront access.
 - Synchronizing data to Commerce by using CDX jobs.
-
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
