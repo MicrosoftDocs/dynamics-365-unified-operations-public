@@ -808,7 +808,7 @@ To configure multioutlet and contact-based B2B customer hierarchies, follow thes
 1. Run the **1110 CDX job**.
  
 > [!NOTE]
-> This preview feature is recommended for new B2B channel implementations only, without existing B2B users in the system. This feature cannot be disabled after enabling as well. A future release includes migration options for existing B2B organization and user configurations.
+> This preview feature is recommended for new B2B channel implementations only, without existing B2B users in the system. Once enabled, this feature can't be disabled. A future release includes migration options for existing B2B organization and user configurations.
  
 ## Configure multioutlet organizations
  
