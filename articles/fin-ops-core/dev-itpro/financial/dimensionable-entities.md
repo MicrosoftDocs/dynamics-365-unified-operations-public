@@ -37,7 +37,7 @@ Examples of highly variable data include timestamps and identifiers that are fre
  - Tickets
  - License numbers 
 
-These are considered highly variable values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
+These are considered highly variable values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](/dynamics365/finance/general-ledger/financial-tag).
 
 By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
 
