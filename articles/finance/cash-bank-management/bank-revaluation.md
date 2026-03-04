@@ -1,10 +1,10 @@
 ---
 title: Bank foreign currency revaluation 
 description: Learn about the process of bank foreign currency revaluation, including outlines on setup, running the process, and reversal of revaluation transactions.
-author: ericwangchen
+author: music727
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 03/04/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -26,6 +26,11 @@ As part of a period end, accounting conventions require that bank account balanc
 > [!NOTE]
 > When you run the revaluation process, the balance in each bank account that is posted in a foreign currency will be revalued. The unrealized gain or loss transactions that are created during the revaluation process are system-generated. Two transactions might be created, one for the accounting currency and one for the reporting currency, if a reporting currency is relevant. Each accounting entry will be posted to the unrealized gain or loss and the main account that is being revalued.
 
+
+
+> [!IMPORTANT]
+> If the **Enhancements to bank foreign currency revaluation** feature is enabled, the calculation logic for bank foreign currency revaluation changes. Before you can successfully run bank foreign currency revaluation by using the enhanced logic, you must reset historical bank foreign currency revaluation data. For more information, see [Bank foreign currency revaluation enhancement](#bank-foreign-currency-revaluation-enhancement).
+
 ## Prepare to run foreign currency revaluation
 
 Before you run the revaluation process, the following setup is required.
@@ -36,6 +41,7 @@ Before you run the revaluation process, the following setup is required.
 - On the **Cash and bank management parameters** page, on the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 
 The **Exchange rate type enhancement for bank foreign currency revaluation** feature lets you use additional exchange rate types for foreign currency revaluation. You can define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or bank account. When you run foreign currency revaluation, these defined exchange rate types override the default type that's defined in the ledger setup.
+In addition, the **Enhancements to bank foreign currency revaluation** feature introduces a refined calculation logic for unrealized gains and losses, especially when financial dimensions are used on bank transactions.
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 2. On the **General** tab, in the **Exchange rate type source** field, select one of the following values:
@@ -78,7 +84,8 @@ The foreign currency revaluation transaction is also split across the dimensions
 
 #### Bank foreign currency revaluation enhancement
 
-The **Enhancements to bank foreign currency revaluation** feature provides an alternative way to calculate bank foreign currency revaluation. This feature enables organizations to select all or none of the financial dimensions when the gain or loss is calculated. In addition, this feature changes the calculation logic. It calculates the balance of the bank account by considering either all financial dimensions or no financial dimensions. It then calculates the unrealized gain or loss per ledger account. 
+The **Enhancements to bank foreign currency revaluation** feature provides an alternative way to calculate unrealized gains and losses for bank accounts.
+This feature changes how balances are evaluated when financial dimensions are used on bank transactions. Instead of calculating the gain or loss at the total bank account level and allocating it proportionally across dimensions, the enhanced logic calculates balances by considering either **All financial dimensions** or **No financial dimensions**. It then calculates the unrealized gain or loss per ledger account based on the selected option. This approach helps avoid disproportionate gains or losses when positive and negative balances exist across different dimensions.
 
 > [!IMPORTANT]
 > After this feature is enabled, it can't be disabled.
@@ -118,7 +125,11 @@ Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | -9,000               | -10,800              | -90                             |
 
 > [!NOTE]
-> To use this enhancement when you revalue foreign currency, you must first run **Reset foreign currency revaluation, define dimension level** (**Cash and bank management** \> **Periodic tasks** \> **Reset foreign currency revaluation, define dimension level**).
+> To use this enhancement when you revalue foreign currency, you must first run **Reset foreign currency revaluation, define dimension level** by running **Cash and bank management** > **Periodic tasks** > **Reset foreign currency revaluation, define dimension level**.
+> This reset is required to align historical bank foreign currency revaluation data with the enhanced calculation logic.
+> - The reset process is **one-time and irreversible**.
+> - After the reset is completed, bank foreign currency revaluation can be run **only for dates later than the reset posting date**.
+> - Reversal of the reset process isn't supported.
 
 ### Reverse foreign currency revaluation
 
@@ -126,5 +137,14 @@ If you must reverse the revaluation transaction, select **Reverse transaction** 
 
 To reverse several revaluations, you must reverse the most current revaluation first. Then continue to reverse older revaluations in date order. You can then process new revaluations for the periods that you reversed.
 
+### Troubleshooting bank foreign currency revaluation
+
+If bank foreign currency revaluation runs successfully but no gain or loss amounts are generated, verify the following:
+- The **Enhancements to bank foreign currency revaluation** feature is enabled.
+- The **Reset foreign currency revaluation, define dimension level** process has been completed for the affected bank accounts.
+- The revaluation date is **later than the reset posting date**.
+- The bank account has an open balance in a foreign currency after the reset date.
+
+If historical revaluation data exists and the reset hasn't been run, bank accounts might be blocked from revaluation or produce no updated amounts
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
