@@ -39,8 +39,8 @@ After the organization account and customer hierarchy are created, complete the 
 #### Assign a catalog (if applicable)
 Catalog assignment controls the products that are available to users of the B2B organization in the storefront.
 1.	Open the relevant customer hierarchy.
-2.	In the Catalogs section, select Add line.
-3.	Select the appropriate catalog.
+1.	In the Catalogs section, select Add line.
+1.	Select the appropriate catalog.
 
 > [!NOTE]
 > Catalog assignment is optional and depends on how assortments are managed in your Dynamics 365 Commerce environment.
@@ -48,8 +48,8 @@ Catalog assignment controls the products that are available to users of the B2B 
 #### Link contacts to the customer hierarchy
 Contacts represent individual users who can access the storefront on behalf of the organization.
 1.	In the Hierarchy section, select Add.
-2.	From the list, select the contact to link.
-3.	Select Select.
+1.	From the list, select the contact to link.
+1.	Select Select.
 
  **Behavior**
 -	The list shows all contacts that are available to be linked to the customer hierarchy.
@@ -60,7 +60,7 @@ Contacts represent individual users who can access the storefront on behalf of t
 #### Enable the contact for storefront access
 A contact must be enabled before the user can sign in to the B2B storefront.
 1.	Select the contact in the Hierarchy grid.
-2.	Select Enable.
+1.	Select Enable.
 
 **Important**
 Only enabled contacts can sign in and access the storefront. Contacts that are linked but not enabled cannot place orders or view organization data.
@@ -68,10 +68,10 @@ Only enabled contacts can sign in and access the storefront. Contacts that are l
 #### Assign or update the contact role (if applicable)
 Roles determine the permissions that a contact has within the organization.
 1.	Select the contact in the Hierarchy grid.
-2.	Select Change role.
-3.	Assign one of the following roles:
-      - Admin
-      - User
+1.	Select Change role.
+1.	Assign one of the following roles:
+  - Admin
+  - User
 
 > [!NOTE]
 > At least one contact must be assigned the Admin role for each customer hierarchy.
@@ -89,9 +89,9 @@ After configuration is complete, synchronize data so that changes are available 
 Run Commerce Data Exchange (CDX) job 1010 Customers.
 The 1010  Customers job synchronizes:
 
-  - Organization account data
-  - Contact records
-  - Customer hierarchy relationships
+- Organization account data
+- Contact records
+- Customer hierarchy relationships
 
 > [!NOTE]
 > B2B Seller/Buyer organizations are not available to use with this feature and will be included in a future release.
@@ -109,13 +109,13 @@ A key requirement of this process is that at least one contact must be selected 
 Before starting manual onboarding, ensure that:
 
   1. The organization account already exists.
-  2. At least one contact exists with a valid email address.
+  1. At least one contact exists with a valid email address.
 
 #### Create a contact (if required)
 An organization must have at least one contact available to establish an initial administrator for the customer hierarchy. 
 
   1. If no contact exists, create a contact under the organization account.
-  2. The contact must have a valid email address to support storefront access.
+  1. The contact must have a valid email address to support storefront access.
 
 > [!NOTE]
 > The selected contact will become the initial Administrator for the customer hierarchy.
@@ -123,20 +123,20 @@ An organization must have at least one contact available to establish an initial
 #### Create a customer hierarchy
 Customer hierarchies define how organizations and users are structured for B2B commerce.
   1.	Go to Retail and Commerce > Customers > Customer hierarchies.
-  2.	Select New.
+  1.	Select New.
 
 
 #### Link the customer hierarchy to an organization account
 After selecting the hierarchy type:
 
   1.	Enter a name for the customer hierarchy.
-  2.	In the Organization field, select the appropriate organization account from the dropdown list.
-  3.	Linking the organization establishes the commercial context that will be used by all users associated with the hierarchy.
+  1.	In the Organization field, select the appropriate organization account from the dropdown list.
+  1.	Linking the organization establishes the commercial context that will be used by all users associated with the hierarchy.
 
 #### Select the initial admin contact (required)
 When linking an organization during manual hierarchy creation, the system requires selection of an initial administrator.
   1. A prompt appears to select the initial admin contact.
-  2. The selection list includes active contacts from the selected organization that have email addresses.
+  1. The selection list includes active contacts from the selected organization that have email addresses.
 
 
 ***Important***
@@ -148,7 +148,7 @@ If the prompt is canceled, the organization is not linked and the hierarchy cann
 After the initial admin contact is selected:
 
   1. Any remaining eligible contacts associated with the organization are automatically linked to the customer hierarchy.
-  2. These contacts are assigned the User role by default.
+  1. These contacts are assigned the User role by default.
      
 This reduces the need for manual user linking during initial setup.
 
@@ -156,7 +156,7 @@ This reduces the need for manual user linking during initial setup.
 Contacts must be enabled to access the B2B storefront.
 
   1.	In the Hierarchy grid, select the contact.
-  2.	Select Enable.
+  1.	Select Enable.
 
 ***Important***
 
@@ -167,7 +167,7 @@ The enable and disable controls take effect after the data has been synchronized
 Catalog assignment determines which products are available to users in the storefront.
 
   1.	In the Catalogs section of the customer hierarchy, select Add line.
-  2.	Select the appropriate catalog.
+  1.	Select the appropriate catalog.
 
 > [!NOTE]
 > Catalog assignment is optional and depends on how assortments are managed in your environment.
@@ -176,10 +176,10 @@ Catalog assignment determines which products are available to users in the store
 Roles control what users can see and manage in the storefront.
 
   1.	Select a contact in the Hierarchy grid.
-  2.	Select Change role.
-  3.	Assign one of the following roles:
-        - Admin
-        - User
+  1.	Select Change role.
+  1.	Assign one of the following roles:
+    - Admin
+    - User
 
 > [!NOTE]
 > At least one contact must remain assigned the Admin role for each customer hierarchy.
@@ -243,9 +243,9 @@ Removing a contact deletes the relationship between the contact and the customer
 To remove a contact from a hierarchy
 
   1.	Go to Retail and Commerce > Customers > Customer hierarchies.
-  2.	Open the relevant customer hierarchy.
-  3.	In the Hierarchy grid, select the contact.
-  4.	Select Delete.
+  1.	Open the relevant customer hierarchy.
+  1.	In the Hierarchy grid, select the contact.
+  1.	Select Delete.
 
 **Important**
 
@@ -258,10 +258,10 @@ Disabling a contact removes storefront access for the organization while keeping
 To disable a contact
 
   1.	Go to Retail and Commerce > Customers > Customer hierarchies.
-  2.	Open the relevant customer hierarchy.
-  3.	In the Hierarchy grid, select the contact.
-  4.	Select Disable.
-  5.	When prompted, enter a reason for disabling the contact.
+  1.	Open the relevant customer hierarchy.
+  1.	In the Hierarchy grid, select the contact.
+  1.	Select Disable.
+  1.	When prompted, enter a reason for disabling the contact.
 
 > [!NOTE]
 > - Disabled contacts cannot sign in to the storefront for that organization.
