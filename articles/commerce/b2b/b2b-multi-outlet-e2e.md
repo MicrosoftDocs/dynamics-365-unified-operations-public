@@ -278,7 +278,7 @@ This job synchronizes:
 After synchronization completes, the updated user access, roles, and organization associations are reflected in the B2B storefront and Customer Service experiences.
 
 ## Storefront Experiences
-### Storefront Sign Up
+### Storefront sign up
 
 The sign-up process allows a contact to create credentials and access the B2B storefront.
 
