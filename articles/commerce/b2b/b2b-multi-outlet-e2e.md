@@ -14,7 +14,7 @@ ms.custom:
 ---
 # End to End Experiences/Configuration Steps (preview)
 [!include [banner](../../includes/banner.md)]
-## User Management within D365 Finance and Operations
+## User management within Dynamics 365 Finance and Operations
 ### B2B Organization Account Set Up - Prospect flow
 B2B organization onboarding begins when a B2B Buyer prospect is approved. The following entities and relationships are established:
 
