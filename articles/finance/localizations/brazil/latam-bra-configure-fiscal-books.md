@@ -5,13 +5,12 @@ author: v-gonode
 ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 12/05/2025
-ms.custom:
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2017-06-30
 ms.search.form: FBTaxStatement_BR
-ms.dyn365.ops.version: July 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 # Configure fiscal books
