@@ -18,32 +18,29 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-
 This article provides an overview of the process of bank foreign currency revaluation. It explains how to set up and run the process, and provides information about the calculation for the process. It also explains how to reverse revaluation transactions, if reversal is required.
 
-As part of a period end, accounting conventions require that bank account balances in foreign currencies be revalued by using different exchange rate types (current, historical, average, and so on). The bank foreign currency revaluation feature can be used to revalue one or more bank accounts. The feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
+As part of a period end, accounting conventions require that you revalue bank account balances in foreign currencies by using different exchange rate types (current, historical, average, and so on). Use the bank foreign currency revaluation feature to revalue one or more bank accounts. This feature is also a global feature. Therefore, from a single page, you can revalue banks across all the legal entities that you have access to.
 
 > [!NOTE]
-> When you run the revaluation process, the balance in each bank account that is posted in a foreign currency will be revalued. The unrealized gain or loss transactions that are created during the revaluation process are system-generated. Two transactions might be created, one for the accounting currency and one for the reporting currency, if a reporting currency is relevant. Each accounting entry will be posted to the unrealized gain or loss and the main account that is being revalued.
-
-
+> When you run the revaluation process, the system revalues the balance in each bank account that's posted in a foreign currency. The process creates unrealized gain or loss transactions. If a reporting currency is relevant, the process might create two transactions: one for the accounting currency and one for the reporting currency. Each accounting entry posts to the unrealized gain or loss and the main account that you're revaluing.
 
 > [!IMPORTANT]
-> If the **Enhancements to bank foreign currency revaluation** feature is enabled, the calculation logic for bank foreign currency revaluation changes. Before you can successfully run bank foreign currency revaluation by using the enhanced logic, you must reset historical bank foreign currency revaluation data. For more information, see [Bank foreign currency revaluation enhancement](#bank-foreign-currency-revaluation-enhancement).
+> If you enable the **Enhancements to bank foreign currency revaluation** feature, the calculation logic for bank foreign currency revaluation changes. Before you can successfully run bank foreign currency revaluation by using the enhanced logic, you must reset historical bank foreign currency revaluation data. For more information, see [Bank foreign currency revaluation enhancement](#bank-foreign-currency-revaluation-enhancement).
 
 ## Prepare to run foreign currency revaluation
 
-Before you run the revaluation process, the following setup is required.
+Before you run the revaluation process, complete the following setup steps.
 
-- On the **Ledger** page, specify the exchange rate type. If an exchange rate type isn't defined on the main account, this exchange rate type is used during foreign currency revaluation.
+- On the **Ledger** page, specify the exchange rate type. If you don't define an exchange rate type on the main account, the revaluation process uses the exchange rate type from the **Ledger** page.
 - On the **Ledger** page, specify the realized gain, realized loss, unrealized gain, and unrealized loss accounts for currency revaluation. Realized gain and realized loss accounts are used when Accounts receivable and Accounts payable transactions are settled. Unrealized gain and unrealized loss accounts are used to revalue open transactions and general ledger main accounts.
-- On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company. If no accounts are defined, the accounts from the **Ledger** page are used.
+- On the **Currency revaluation accounts** page, select different currency revaluation accounts for each currency and company. If you don't define accounts, the process uses accounts from the **Ledger** page.
 - On the **Cash and bank management parameters** page, on the **Number sequences** tab, add a number sequence for foreign currency revaluation.
 
-The **Exchange rate type enhancement for bank foreign currency revaluation** feature lets you use additional exchange rate types for foreign currency revaluation. You can define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or bank account. When you run foreign currency revaluation, these defined exchange rate types override the default type that's defined in the ledger setup.
+By using the **Exchange rate type enhancement for bank foreign currency revaluation** feature, you can use additional exchange rate types for foreign currency revaluation. Define accounting currency exchange rate types and reporting currency exchange rate types for each legal entity or bank account. When you run foreign currency revaluation, these defined exchange rate types override the default type that's defined in the ledger setup.
 In addition, the **Enhancements to bank foreign currency revaluation** feature introduces a refined calculation logic for unrealized gains and losses, especially when financial dimensions are used on bank transactions.
 
-1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
+1. Go to **Cash and bank management** > **Setup** > **Cash and bank management parameters**.
 2. On the **General** tab, in the **Exchange rate type source** field, select one of the following values:
 
     - **Ledger** – Use the exchange rate type that's defined in the ledger setup.
@@ -55,28 +52,28 @@ In addition, the **Enhancements to bank foreign currency revaluation** feature i
 
 ## Process foreign currency revaluation
 
-After the setup is completed, use the **Foreign currency revaluation** page in Cash and bank management to revalue the balances of one or more bank accounts across all legal entities. You can run the process in real time, or you can schedule it to run by using a batch.
+After you complete the setup, use the **Foreign currency revaluation** page in Cash and bank management to revalue the balances of one or more bank accounts across all legal entities. You can run the process in real time, or you can schedule it to run by using a batch.
 
-The **Foreign currency revaluation** page shows the history of each revaluation process. It shows when the process was run and what criteria were defined, and provides a link to the voucher that was created for the revaluation. It also shows whether a previous revaluation was reversed. To run the revaluation process, select **Foreign currency revaluation** on the Action Pane to open the **Bank - foreign currency revaluation** dialog box.
+The **Foreign currency revaluation** page shows the history of each revaluation process. It shows when you ran the process and what criteria you defined, and it provides a link to the voucher that was created for the revaluation. It also shows whether you reversed a previous revaluation. To run the revaluation process, select **Foreign currency revaluation** on the Action Pane to open the **Bank - foreign currency revaluation** dialog box.
 
-The **Revaluation date** field defines the cutoff date for calculating the foreign currency balance that will be revalued. The sum of all bank transactions that occurred up through this date is revalued.
+The **Revaluation date** field defines the cutoff date for calculating the foreign currency balance that you want to revalue. The sum of all bank transactions that occurred up through this date is revalued.
 
-The **Exchange rate date** field defines the date of the exchange rate that will be used to revalue the currency balances. For example, you can revalue the balances as of January 31 but use the exchange rate that is defined for February 1.
+The **Exchange rate date** field defines the date of the exchange rate that you want to use to revalue the currency balances. For example, you can revalue the balances as of January 31 but use the exchange rate that is defined for February 1.
 
-The revaluation process can be run for one or more legal entities. The lookup shows only the legal entities that you have access to. Select the legal entities for which you want to select the bank accounts that are eligible for foreign currency revaluation. All the bank accounts for those legal entities will be shown in the grid.
+You can run the revaluation process for one or more legal entities. The lookup shows only the legal entities that you have access to. Select the legal entities for which you want to select the bank accounts that are eligible for foreign currency revaluation. The grid shows all the bank accounts for those legal entities.
 
 Set the **Preview before posting** option to **Yes** if you want to review the results of the revaluation before you post it. The foreign currency revaluation has a preview that can be posted. You don't have to run the revaluation process again. You can export the results in the preview to Microsoft Excel to keep a history of how the amounts were calculated. You can't use batch processing if you want to preview the results of the revaluation.
 
 Select **OK** to process the foreign currency revaluation. A record is created to track the history of each run. A separate record is created for each legal entity and posting layer.
 
 >[!NOTE]
-> If the **Enable process automation for bank foreign currency revaluation** feature is enabled, process automations for bank foreign currency revaluations are available. For more information, see [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md).
+> If you enable the **Enable process automation for bank foreign currency revaluation** feature, process automations for bank foreign currency revaluations are available. For more information, see [Process automation](../../fin-ops-core/fin-ops/sysadmin/process-automation.md).
 
-## Calculate unrealized gain/loss
+## Calculate unrealized gain or loss
 
 In Cash and bank management, the bank currency is considered to be the base currency and it isn't revalued. The balance of the bank account in the accounting currency is revalued using the exchange rates between the bank currency and the accounting currency on the **Exchange rate date**. The balance of the bank account in the reporting currency is also revalued using the exchange rates between the bank currency and the reporting currency on the **Exchange rate date**.
 
-A transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the accounting currency. Another transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the reporting currency. The entries for these transactions are marked as reconciled. 
+A transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the accounting currency. Another transaction is created for the difference between the balance of the bank account and the new balance that is calculated for the reporting currency. The entries for these transactions are marked as reconciled.
 
 No entry is made for the accounting currency if the bank currency matches the accounting currency. Likewise, no entry is made for the reporting currency if the bank currency matches the reporting currency.
 
@@ -85,14 +82,14 @@ The foreign currency revaluation transaction is also split across the dimensions
 #### Bank foreign currency revaluation enhancement
 
 The **Enhancements to bank foreign currency revaluation** feature provides an alternative way to calculate unrealized gains and losses for bank accounts.
-This feature changes how balances are evaluated when financial dimensions are used on bank transactions. Instead of calculating the gain or loss at the total bank account level and allocating it proportionally across dimensions, the enhanced logic calculates balances by considering either **All financial dimensions** or **No financial dimensions**. It then calculates the unrealized gain or loss per ledger account based on the selected option. This approach helps avoid disproportionate gains or losses when positive and negative balances exist across different dimensions.
+This feature changes how balances are evaluated when financial dimensions are used on bank transactions. Instead of calculating the gain or loss at the total bank account level and allocating it proportionally across dimensions, the enhanced logic calculates balances by considering either all financial dimensions or no financial dimensions. It then calculates the unrealized gain or loss per ledger account based on the selected option. This approach helps avoid disproportionate gains or losses when positive and negative balances exist across different dimensions.
 
 > [!IMPORTANT]
-> After this feature is enabled, it can't be disabled.
+> After you enable this feature, you can't disable it.
 
 #### Example 1 - Different exchange rate on the dimensions
 
-The following table shows three ending balances in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD. 
+The following table shows three ending balances in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD.
 
 | Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Exchange rate - EUR/USD |
 | ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ----------------------- |
@@ -100,9 +97,9 @@ The following table shows three ending balances in the transaction currency (EUR
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 1.175                   |
 | Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000               | 36,600               | 1.22                    |
 
-Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date. The gain/loss is calculated as follows:
+Assume the exchange rate between EUR and USD is 1:1.21 on the revaluation date. The system calculates the gain or loss as follows:
 
-| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain/loss -USD |
+| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain or loss -USD |
 | ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ------------------------------- |
 | Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 100                             |
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 700                             |
@@ -110,16 +107,16 @@ Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date
 
 #### Example 2 - Positive and negative balance on the dimensions
 
-The following table shows one positive balance and one negative balance in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD. 
+The following table shows one positive balance and one negative balance in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD.
 
 | Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Exchange rate -EUR/USD |
 | ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ---------------------- |
 | Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 1.2                    |
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | -9,000               | -10,800              | 1.2                    |
 
-Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date. The gain/loss is calculated as follows:
+Assume the exchange rate between EUR and USD is 1:1.21 on the revaluation date. The system calculates the gain or loss as follows:
 
-| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain/loss -USD |
+| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain or loss -USD |
 | ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ------------------------------- |
 | Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 100                             |
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | -9,000               | -10,800              | -90                             |
@@ -127,19 +124,21 @@ Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date
 > [!NOTE]
 > To use this enhancement when you revalue foreign currency, you must first run **Reset foreign currency revaluation, define dimension level** by running **Cash and bank management** > **Periodic tasks** > **Reset foreign currency revaluation, define dimension level**.
 > This reset is required to align historical bank foreign currency revaluation data with the enhanced calculation logic.
+>
 > - The reset process is **one-time and irreversible**.
-> - After the reset is completed, bank foreign currency revaluation can be run **only for dates later than the reset posting date**.
+> - After the reset is completed, you can run bank foreign currency revaluation **only for dates later than the reset posting date**.
 > - Reversal of the reset process isn't supported.
 
 ### Reverse foreign currency revaluation
 
-If you must reverse the revaluation transaction, select **Reverse transaction** on the **Foreign currency revaluation** page. A new foreign currency revaluation historical record is created to maintain the historical audit trail that tracks when the revaluation occurred or was reversed.
+If you need to reverse the revaluation transaction, select **Reverse transaction** on the **Foreign currency revaluation** page. The system creates a new foreign currency revaluation historical record to maintain the historical audit trail that tracks when the revaluation occurred or was reversed.
 
 To reverse several revaluations, you must reverse the most current revaluation first. Then continue to reverse older revaluations in date order. You can then process new revaluations for the periods that you reversed.
 
 ### Troubleshooting bank foreign currency revaluation
 
-If bank foreign currency revaluation runs successfully but no gain or loss amounts are generated, verify the following:
+If bank foreign currency revaluation runs successfully but doesn't generate any gain or loss amounts, verify the following conditions:
+
 - The **Enhancements to bank foreign currency revaluation** feature is enabled.
 - The **Reset foreign currency revaluation, define dimension level** process has been completed for the affected bank accounts.
 - The revaluation date is **later than the reset posting date**.
