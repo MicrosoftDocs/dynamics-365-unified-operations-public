@@ -28,7 +28,7 @@ This capability changes how Commerce models B2B users and organizations. It move
  
 ## What is B2B multioutlet support?
  
-B2B multioutlet support allows a single business user, represented as a contact, to access and place orders for multiple organizations or outlets in the same Commerce environment.
+B2B multioutlet support allows a single business user, represented as a contact, to access and place orders for multiple organizations or outlets in the same B2B Online Channel.
  
 Key characteristics include:
  
