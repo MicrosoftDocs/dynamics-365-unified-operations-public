@@ -61,7 +61,7 @@ After you create and confirm the purchase order for a foreign vendor, and before
 
 For this scenario, you must create and post a direct import fiscal document.
 
-| | |
+| Section | Description |
 |---|---|
 | Background | The company imports items and must issue an entrance nota fiscal for the imported items with the correct taxes calculated for the items to be released in Customs. The following people and roles are involved: <ul><li>Alicia (Purchasing agent)</li><li>April (Accounts payable coordinator)</li><li>Sammy (Shipping and receiving)</li></ul> |
 | User goals | <ul><li>Have the sales tax (II, IPI, PIS, COFINS, ICMS) correctly calculated for the import nota fiscal, according to the rules that the government specifies.</li><li>Print the entrance nota fiscal.</li></ul> |
