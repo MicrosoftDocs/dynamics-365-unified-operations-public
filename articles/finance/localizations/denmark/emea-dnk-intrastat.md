@@ -90,9 +90,9 @@ For more information about registration IDs, see [Registration IDs](../europe/em
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) are transferred.
+On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country/region of destination (for dispatches) or consignment (for arrivals) are transferred.
 
-Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
+Alternatively, you can manually enter transactions by selecting **New** on the action pane.
 
 ### Generate an Intrastat report
 
