@@ -43,7 +43,7 @@ The chart of accounts is in use as a default account and cannot be changed.
 
 This error occurs when one or more posting profiles in the legal entity have default accounts that reference the current chart of accounts. Because main accounts are specific to a chart of accounts, the system cannot automatically map them to accounts in a different chart of accounts, so the posting profiles must be cleared manually before the change is allowed.
 
-Expand the error message bar at the top of the form to see a detailed list of every affected posting profile table, field, and company. If you closed the message, attempt the change again to regenerate the details.
+Expand the error message bar at the top of the form to see a detailed list of every affected posting profile table, field, and company. If you closed the message, attempt to change the chart of accounts again to regenerate the details.
 
 [![Summary of error message showing the chart of accounts is in use.](./media/ChartOfAccountsInUse-1.png)](./media/ChartOfAccountsInUse-1.png)
 
