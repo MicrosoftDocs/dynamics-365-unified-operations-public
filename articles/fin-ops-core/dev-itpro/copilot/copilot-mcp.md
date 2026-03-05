@@ -178,3 +178,4 @@ The current implementation of the Dynamics 365 ERP MCP server has the following 
 
 1. **Advanced filters:** The MCP server doesn't support advanced filters on grids. For example, it doesn't support the "before," "after," and "between" operators for date columns. It supports only the "matches" operator for filtering.
 2. **Environment downtime:** The MCP server will be unavailable during environment downtime, such as servicing windows. Any MCP requests made by agents during these servicing windows will fail.
+3. **Copilot for finance and operations apps:** Adding the Dynamics 365 ERP MCP server as a tool in the Copilot for finance and operations apps agent, enabling it for use with the sidecar chat panel in the client, is not yet supported. Although you are not blocked from adding the MCP server to the agent, you may experience errors in the execution. Microsoft support does not guarantee assistance for resolving errors or issues for these scenarios.
