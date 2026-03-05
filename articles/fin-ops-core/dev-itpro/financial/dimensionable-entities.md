@@ -168,9 +168,6 @@ DimensionCache::clearAllScopes();
 
 Now that you have completed the steps, navigate to the **Financial dimensions** page in the General ledger. Click the drop-down menu on the **Use Values from** field and verify that your value is available.
 
-> [!IMPORTANT]
-> DimAttribute views must be deployed to every environment where they are needed, including UAT and production. A view that exists only in a development environment causes `DimensionEnabledType` errors when any operation uses the `DimensionAttribute` data entity, including Dual Write, Data Management framework imports, and the Excel add-in. FleetManagement demo data views must not be deployed outside of development environments.
-
 ## Add a new OMOperatingUnit type backed entity
 
 If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:
