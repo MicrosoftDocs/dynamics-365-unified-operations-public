@@ -4,7 +4,7 @@ description: Learn how to enable Copilot support for the Confirmed purchase orde
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.topic: how-to
-ms.date: 09/11/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: kamaybac
@@ -29,7 +29,7 @@ The **Confirmed purchase orders with changes** workspace is enabled by default. 
 
 The Copilot experience for the **Confirmed purchase orders with changes** workspace provides a troubleshooting feature that helps you identify missing configuration steps. If one or more of the configuration steps are missing, the Copilot summarization tiles offer a troubleshooting link.
 
-[<img src="media/po-change-review-trouble-shooting.png" alt="Screenshot of the Confirmed purchase orders with changes workspace." title="Screenshot of the trouble shooter for Copilot configuration." width="720" />](media/po-change-review-trouble-shooting.png#lightbox)
+:::image type="content" source="media/po-change-review-trouble-shooting.png" alt-text="Screenshot of the Confirmed purchase orders with changes workspace." lightbox="media/po-change-review-trouble-shooting.png#lightbox":::
 
 Select the link to open a troubleshooting feature that checks all installation and configuration requirements that Copilot needs to work. The feature marks the steps that require attention.
 

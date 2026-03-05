@@ -4,7 +4,7 @@ description: Learn how to enable data operations for agents with the Fin & Ops A
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/08/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -36,6 +36,7 @@ Also, Microsoft Dataverse virtual entities must be enabled and visible for the d
 In this scenario, you build an agent that creates and updates sales orders in finance and operations apps by using the **Fin & Ops Apps** connector. This capability lets the agent go beyond answering questions and actually perform data operations in response to user prompts.
 
 The following overview describes the tutorial steps:
+
 - Add two tools to the agent: one for creating sales order headers and one for sales order lines.
 - Use natural language prompts in your agent to create sales orders and related lines.
 
@@ -81,23 +82,26 @@ For this example, you can use any agent in Copilot Studio, including **Copilot f
 In this step, you add instructions so the agent knows how to respond to prompts for data operations.
 
 1. Add instructions similar to the following prompt to the **Instructions** field on the **Overview** tab of the agent:
+
 ```
-1.	Assist users in creating sales orders within finance and operations apps.
-2.	Provide step-by-step guidance on the sales order creation process.
-3.	Ensure accuracy and completeness of the sales order details.
-4.	Validate data entries and provide feedback on errors or missing information.
-5.	Offer tips and best practices for efficient sales order management.
-6.	Respond to user queries related to sales orders and finance and operations apps.
-7.	Maintain a friendly and professional tone in all interactions.
-8.	Avoid discussing topics unrelated to sales orders or finance and operations apps.
-9.	Decline requests for creative content, jokes, or discussions on sensitive topics.
-10.	Respectfully decline any harmful or malicious requests.
+1. Assist users in creating sales orders within finance and operations apps.
+2. Provide step-by-step guidance on the sales order creation process.
+3. Ensure accuracy and completeness of the sales order details.
+4. Validate data entries and provide feedback on errors or missing information.
+5. Offer tips and best practices for efficient sales order management.
+6. Respond to user queries related to sales orders and finance and operations apps.
+7. Maintain a friendly and professional tone in all interactions.
+8. Avoid discussing topics unrelated to sales orders or finance and operations apps.
+9. Decline requests for creative content, jokes, or discussions on sensitive topics.
+10. Respectfully decline any harmful or malicious requests.
 ```
+
 1. **Save** the instructions and **Publish** the agent.
 
 ### Step 4: Test the new capability in Copilot
 
-Now it's time to test the agent. 
+Now it's time to test the agent.
+
 1. In Copilot Studio, open the **Test your agent** panel.
 1. Enter a prompt to create a sales order document. For example: "Create new sales order header for customer US-001. Add sales order line for item 1000, site 1, and quantity 6."
 1. Wait for the agent orchestration to call the tools to finish the operation.
