@@ -9,7 +9,7 @@ ms.custom:
 ms.reviewer: twheeloc
 
 ---
-# Archive customization (preview)
+# Archive customization
 
 This article explains how the archive feature in Microsoft Dynamics 365 finance and operations apps supports customization. The archival framework is extensible and allows you to include custom table fields and custom tables within supported functional scenarios.
 
@@ -17,7 +17,7 @@ This article explains how the archive feature in Microsoft Dynamics 365 finance 
 
 - Add custom fields to Microsoft managed tables in standard archive scenarios.  
 - Add custom tables to standard archive scenarios.  
-- Build your own custom archive scenario using custom tables.  
+- Build your own custom archive scenario using custom tables (Preview).
 
 > [!NOTE]  
 > Only custom tables can be included when building your own custom archive scenario.
