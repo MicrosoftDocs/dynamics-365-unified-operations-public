@@ -32,7 +32,7 @@ The advance VAT declaration in Spain contains the following information.
 **VAT accrued**
 
 | Box – Tax base | Box – Rate % | Box – Tax amount | Description | Lookup result / Total   |
-|--------------------|--------------------|------------------|---------------|----------------------|
+| ---------------- | --------------|- -----------------| ---------------| ---------------------- |
 | 150 | 151 | 152 | VAT accrued - General regime - zero rate.     | VATAccruedGeneralRegimeZero</br>UseTaxGeneralRegimeZero (also reported in boxes 28/29)   |
 | 165 | 166 | 167 | VAT accrued - General regime - Extra reduced rate.  | VATAccruedGeneralRegimeExtra</br>UseTaxGeneralRegimeExtra (also reported in boxes 28/29)  |
 | 01  | 02  | 03  | VAT accrued - General regime - Super reduced rate.   | VATAccruedGeneralRegimeSuperReduced</br>UseTaxGeneralRegimeSuperReduced (also reported in boxes 28/29)    |
@@ -53,7 +53,7 @@ The advance VAT declaration in Spain contains the following information.
 **VAT deductible**
 
 | Box – tax base     | Box – tax amount | Description                      | Lookup result / Total                 |
-|--------------------|------------------|----------------------------------------------------------------------------------------|--------------------------------|
+| ------------------ | ---------------- | -------------------------------- |-------------------------------- |
 | 28                 | 29               | VAT deduction - Amounts collected in current internal operations.                      | VATDeductionCurrentInternalOperations UseTaxGeneralRegimeSuperReduced (also reported in boxes 01/03)</br>UseTaxGeneralRegimeReduced (also reported in boxes 04/06)</br>UseTaxGeneralRegimeStandard (also reported in boxes 07/09) |
 | 30                 | 31               | VAT deduction - Amounts collected in internal operations with investment goods.        | VATDeductionInvestmentInternalOperations                    |
 | 32                 | 33               | VAT deduction - Amounts collected on imports of current goods.                         | VATDeductionImportsCurrentGoods                     |
@@ -70,7 +70,7 @@ The advance VAT declaration in Spain contains the following information.
 **SECTION – ADDITIONAL INFORMATION**
 
 | Box – tax base | Description                                                                      | Lookup result / User input parameter              |
-|----------------|----------------------------------------------------------------------------------|---------------------------------------------------|
+| ---------------- | ---------------------------------------------------------------------------------- |--------------------------------------------------- |
 | 58        | Simplified regime result                                                     | User input parameter in the report dialog |
 | 59             | Intra-community deliveries of goods and services.                                | EUSales                                           |
 | 60             | Exports and similar operations.                                                  | Exports                                           |
@@ -83,7 +83,7 @@ The advance VAT declaration in Spain contains the following information.
 **SECTION – RESULT**
 
 | Box – tax amount | Description            | Lookup result / User input parameters / Total                                      |
-|------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| ---------------- | ---------------------- |----------------------------------------------------------------------------------- |
 | 76               | Regularization of taxes according to art. 80.5 LIVA.                                                                                    | Regularizations80.5                    |
 | 64          | Sum of results.                                                                                                                     | [46] + [58] + [76]            |
 | 65               | Not applicable                                                                                                                          | **Common territory** user input parameter in the report dialog. The default value is 100 percent. |

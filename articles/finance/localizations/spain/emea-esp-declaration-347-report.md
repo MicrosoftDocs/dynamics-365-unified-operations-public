@@ -49,7 +49,7 @@ To set up tax-exempt numbers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
 1. For each tax-exempt number, create a record on the page, and specify the following information:
-    - **Country/region:** Select the country or region of the tax registration of the counterparty.
+    - **Country/region:** Select the country/region of the tax registration of the counterparty.
     - **Tax exempt number:** Enter the tax-exempt number of the counterparty.
     - **Company name:** (Optional) Enter the name of the counterparty.
 
@@ -125,7 +125,7 @@ To generate the Declaration 347 report, follow these steps:
     | Declaration line > Tax   exempt number      | The tax exempt number of the   customer or vendor.        |
     | Declaration line > Name                     | The name of the customer or   vendor.            |
     | Declaration line > County                   | The county of the customer or   vendor.                  |
-    | Declaration line > Country/region                    | The International Organization   for Standardization (ISO) code for the customer's or vendor's country or   region.  |
+    | Declaration line > Country/region                    | The International Organization   for Standardization (ISO) code for the customer's or vendor's country/region.  |
     | Operation > Task   code                                 | The task code that describes the   origin of the transaction:<br>- **A - Purchase**: This task code is   automatically defined for purchase transactions.<br>- **B - Sales**:   This task code is automatically defined for sales transactions.<br>-   **C - Payment via credit institution**: Select this value if the transaction   is a payment that was made through a credit institution.<br>- **D -   Purchases from public entity**: Select this value if the transaction is a   purchase from a public entity.<br>- **E - Subventions**: Select this   value if the transaction is a subvention that is received from public   administrations or private companies. |
     | Operation > BDNS call number                            | This field is available when the **Task code** is set to **E**. Specify the 6-digit number of call code for the grant or aid in the BDNS (Base de Datos Nacional de Subvenciones, National Grants Database). |
     | Amount > 1st   quarter amount                        | The total amount of aggregated   transactions that were posted in the first quarter of the year.                                         |
