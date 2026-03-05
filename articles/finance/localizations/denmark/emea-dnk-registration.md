@@ -352,7 +352,7 @@ For more information, see [Submit a VAT return in XML format to the Danish Tax A
 
 Dynamics 365 Finance users that create a new legal entity in Denmark will receive a notification to register in the NemHandelsregisteret. They can register directly from this notification by clicking on the links to NemHandel.
 
-Existing users will see a feature callout notification when they open the default dashboard in a Danish legal entity. This notification will continue appearing until it's acknowledged.
+Existing users see a feature callout notification when they open the default dashboard in a Danish legal entity. This notification continues to appear until it's acknowledged.
 
 To complete registration, users must enter a valid Central Business Register (CVR) number and European Article Number (EAN) in the registration IDs for the legal entity. Once all the necessary information is entered, the notification will no longer appear.
 
