@@ -283,7 +283,7 @@ For information about how to create a general setup, create postings, and transf
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 1. Verify that the grid includes one service line and one item line.
 
-  :::image type="content" source="../media/EUSL-cze-ex.png" alt-text="Screenshot of the EU sales list page."​:::
+    :::image type="content" source="../media/EUSL-cze-ex.png" alt-text="Screenshot of the EU sales list page."​:::
 
 1. Select a service line, and then, on the Action Pane, select **Mark** > **Mark as reported**.
 1. In the **Criteria** field, enter **8/2/2021** (August 2, 2021). Then select **OK**.
