@@ -74,6 +74,9 @@ The following rules are followed to enter financial dimension values by default 
 
 For the purpose of entering dimension values by default, the journal default process can't determine whether a blank dimension value was intentionally left blank, or whether the default entry wasn't made. If a dimension value is intentionally left blank, a value might still be entered by default by using the defaulting order that is described earlier. If you require that a dimension has a blank value, you might have to create a dimension that has a value of **0** (zero) or **Blank**, so that it can be used in place of a blank dimension.
 
+> [!NOTE]
+> A fixed dimension value can also be configured as blank. If it is, posting will force a blank value on the accounting entry regardless of what was entered on the journal line. If the account structure requires a value for that dimension, this results in a posting error. To resolve either issue, go to **General ledger \> Chart of accounts \> Main accounts**. Select **Default dimensions** from the **Legal entity overrides** section, and either enter a valid fixed value or set the dimension back to **Not fixed**.
+
 Review the following scenarios for examples of the financial dimension defaulting order.
 
 ### Scenario 1
@@ -132,9 +135,6 @@ Go to the **Lines**. In the **Account type** field, select **Ledger**, and then,
 Change the **Account** value to **170150-004-**. **The journal functionality doesn't prevent a fixed dimension value from being changed.** Enter either a debit amount or a credit amount. In the **Offset account type** field, select **Ledger**, and then, in the **Offset account** field, enter **170250**. The financial dimension value 004 is entered as a default from the Account. Then post the document. In the journal, select **Voucher**. Notice that the **BUSINESSUNIT** value reverted to the fixed dimension value, **003**, during posting.
 
 When you return to the voucher on the journal, the **BUSINESSUNIT** dimension does **not** reflect the fixed dimension value. It always has the value that was shown on the screen before posting. The posting process doesn't change anything that is entered on the voucher. Only the accounting entry is changed during posting.
-
-> [!NOTE]
-> A fixed dimension value can also be configured as blank. If it is, posting will force a blank value on the accounting entry regardless of what was entered on the journal line. If the account structure requires a value for that dimension, this results in a posting error. To resolve either issue, go to **Main accounts \> Legal entity overrides \> Default dimensions** and either enter a valid fixed value or set the dimension back to **Not fixed**.
 
 ## Developer notes
 
