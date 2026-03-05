@@ -32,7 +32,7 @@ The advance VAT declaration in Spain contains the following information.
 **VAT accrued**
 
 | Box – Tax base | Box – Rate % | Box – Tax amount | Description | Lookup result / Total   |
-| ---------------- | --------------|- -----------------| ---------------| ---------------------- |
+| ---------------- | -------------- | ----------------- | --------------- | ---------------------- |
 | 150 | 151 | 152 | VAT accrued - General regime - zero rate.     | VATAccruedGeneralRegimeZero</br>UseTaxGeneralRegimeZero (also reported in boxes 28/29)   |
 | 165 | 166 | 167 | VAT accrued - General regime - Extra reduced rate.  | VATAccruedGeneralRegimeExtra</br>UseTaxGeneralRegimeExtra (also reported in boxes 28/29)  |
 | 01  | 02  | 03  | VAT accrued - General regime - Super reduced rate.   | VATAccruedGeneralRegimeSuperReduced</br>UseTaxGeneralRegimeSuperReduced (also reported in boxes 28/29)    |
