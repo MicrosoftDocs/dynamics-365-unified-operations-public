@@ -48,7 +48,7 @@ The advance VAT declaration in Spain contains the following information.
 | 19                 | 20                 | 21               | Equivalence surcharge - Reduced rate.                                                 | EquivalenceSurchargeReduced |
 | 22                 | 23                 | 24               | Equivalence surcharge - Standard rate.                                                | EquivalenceSurchargeStandard |
 | 25                 | Not applicable     | 26               | Modifications bases and fees of the equivalence surcharge.                            | EquivalenceSurchargeModifications |
-| Not applicable | Not applicable | 27    | Total VAT accrued.   | [152] + [03] + [155] + [06] + [09] + [11] + [13] + [15] + [158] + [18] + [21] + [24] + [26] + [167] + [170]        |          |
+| Not applicable | Not applicable | 27    | Total VAT accrued.   | [152] + [03] + [155] + [06] + [09] + [11] + [13] + [15] + [158] + [18] + [21] + [24] + [26] + [167] + [170]        |
 
 **VAT deductible**
 
@@ -65,7 +65,7 @@ The advance VAT declaration in Spain contains the following information.
 | Not applicable     | 43               | VAT deduction - Regularization on investment.                                          | VATDeductionRegularizationInvestment           |
 | Not applicable     | 44               | VAT deduction - Annual regularization by application of the final pro rata percentage. | VATDeductionAnnualRegularizationProRata    |
 | Not applicable | 45           | Total to deduct.                                                                   | [29] + [31] + [33] + [35] + [37] + [39] + [41] + [42] + [43] + [44]       |
-| Not applicable | 46           | General regime result.                                                            | [27] – [45]          |                                                        |
+| Not applicable | 46           | General regime result.                                                            | [27] – [45]          |
 
 **SECTION – ADDITIONAL INFORMATION**
 
@@ -89,7 +89,7 @@ The advance VAT declaration in Spain contains the following information.
 | 65               | Not applicable                                                                                                                          | **Common territory** user input parameter in the report dialog. The default value is 100 percent. |
 | 66       | Attributable to the State Administration.                                                                                               | [64] × [65]              |
 | 77       | Import VAT settled by Customs pending entry.                                                                                            | ImportVATSettledByCustoms             |
-| 110      | Amounts to be compensated pending from previous periods.| **Previous period amounts to compensate** user input parameter in the report dialog.               |               |
+| 110      | Amounts to be compensated pending from previous periods.| **Previous period amounts to compensate** user input parameter in the report dialog. |
 | 78  | Amounts to be offset from previous periods applied in this period. | **Previous period amounts to offset** user input parameter in the report dialog. |
 | 87  | Quotas to be offset from previous periods pending for subsequent periods.| [110] – [78]    |
 | 68  | Exclusively for taxpayers who pay jointly to the State Administration and the Provincial Councils. Result of the annual regularization. | AnnualRegularization     |
