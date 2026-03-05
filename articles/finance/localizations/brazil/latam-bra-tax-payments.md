@@ -84,11 +84,14 @@ When you reverse a tax payment, the status of the original transaction is set to
 
 You can delete tax payments if the voucher number isn't blank when you post the payment transaction.
 
-For more information, see the following topics:
+## Additional resources
 
-- [Set up interest and fines for vendor payments](br-00065-1-set-up-interest-fines-vendor-payments.md)
-- [Calculate interest and fines on vendor payments](br-00065-2-calculate-interest-fines-vendor-payments.md)
-- [Set up interest and fines on customer payments](br-00066-1-set-up-interest-fines-customer-payments.md)
-- [Calculate interest and fines on customer payments](br-00066-2-calculate-interest-fines-customer-payments.md)
+[Set up interest and fines for vendor payments](br-00065-1-set-up-interest-fines-vendor-payments.md)
+
+[Calculate interest and fines on vendor payments](br-00065-2-calculate-interest-fines-vendor-payments.md)
+
+[Set up interest and fines on customer payments](br-00066-1-set-up-interest-fines-customer-payments.md)
+
+[Calculate interest and fines on customer payments](br-00066-2-calculate-interest-fines-customer-payments.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
