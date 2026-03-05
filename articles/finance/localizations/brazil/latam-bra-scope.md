@@ -331,8 +331,8 @@ The following sections list the features that are specific to Brazil.
   - Block G: G001-G110-G125-G126-G130-G140-G990
   - Block H: H001-H005-H010-H020-H030-H990.
 
-        > [!NOTE]
-        > H005 and related records are only supported for reason code = 01, 05 for RS state and 06.
+    > [!NOTE]
+    > H005 and related records are only supported for reason code = 01, 05 for RS state and 06.
 
   - Block K: K001-K100-K200-K220-K230-K235-K260-K265-K270-K275-K280-K290-K291-K292-K990
   - Block 1: 1001-1010-1250-1225
@@ -408,11 +408,11 @@ The following sections list the features that are specific to Brazil.
 
 ### GIA-SP
 
-- Generating GIA São Paulo state text files in accordance with [version 08.00 (01/02/2013)](http://www.fazenda.sp.gov.br/download/download_gia.shtm).
+- Generating GIA São Paulo state text files in accordance with version 08.00 (01/02/2013).
 
 ### GIA-ST Nacional
 
-- Generating GIA-ST text files in accordance with [version 3.1](http://www.fazenda.sp.gov.br/download/downloadgiast.shtm).
+- Generating GIA-ST text files in accordance with version 3.1.
 
 ### SPED Accounting
 
