@@ -17,9 +17,9 @@ ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
 
 [!include [banner](../includes/banner.md)]
 
-This article reviews the commands in Microsoft Visual Studio Tools to help you determine how elements are used in an application.  
+This article reviews the commands in Microsoft Visual Studio Tools that help you determine how elements are used in an application.  
 
-Because of the large number of elements in a typical application, commands are available in Microsoft Visual Studio Tools that make it easier to determine how an element is used.
+Because of the large number of elements in a typical application, Microsoft Visual Studio Tools includes commands that make it easier to determine how an element is used.
 
 ## Finding where elements are used
 
