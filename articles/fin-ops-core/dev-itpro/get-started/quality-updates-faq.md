@@ -58,7 +58,7 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 1. Select **Settings**.
 1. In the **Updates** section, select **Maintenance Settings**.
 
-:::image type="content" source="../devitpro/media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
+:::image type="content" source="../media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
 
 1. Choose your preferred days to receive PQUs.
 
