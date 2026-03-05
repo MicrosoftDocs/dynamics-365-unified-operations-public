@@ -127,9 +127,9 @@ For general information about which types of transactions are included in the EU
 ### Generate the EU sales list report
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. Transfer transactions. In addition to the main codes in the **List code** column, you can use the **Property movement** code for sale items.
-3. On the Action Pane, select **Reporting**.
-4. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
+1. Transfer transactions. In addition to the main codes in the **List code** column, you can use the **Property movement** code for sale items.
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
 
     | Field            | Description                                                                         |
     |------------------|-------------------------------------------------------------------------------------|
@@ -141,7 +141,7 @@ For general information about which types of transactions are included in the EU
     | Report file name | Enter the name of the .xlsx file.                                                   |
     | Tax authority code to file the report | Enter the Tax authority code that's reported in the **c_pracufo** field, in the **VetaP** section of the report. |
 
-5. Select **OK**, and review the generated reports.
+1. Select **OK**, and review the generated reports.
 
 ### Generate a corrective EU sales list report
 
@@ -166,10 +166,10 @@ For information about how to create a general setup, create postings, and transf
 ### Set up information about the company
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
-2. Select the **DEMF** legal entity.
-3. In the **Name** field, enter **Contoso Entertainment System Czech Republic**.
-4. On the **Addresses** FastTab, select **Edit**.
-5. In the **Edit address** dialog box, set the following fields.
+1. Select the **DEMF** legal entity.
+1. In the **Name** field, enter **Contoso Entertainment System Czech Republic**.
+1. On the **Addresses** FastTab, select **Edit**.
+1. In the **Edit address** dialog box, set the following fields.
 
     | Field               | Value           |
     |---------------------|-----------------|
@@ -183,7 +183,7 @@ For information about how to create a general setup, create postings, and transf
     | City                | Gorod           |
     | Primary             | Yes             |
 
-6. Select **OK**.
+1. Select **OK**.
 
 ### Set up foreign trade parameters
 
@@ -282,9 +282,6 @@ For information about how to create a general setup, create postings, and transf
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 1. Verify that the grid includes one service line and one item line.
-
-    :::image type="content" source="../media/EUSL-cze-ex.png" alt-text="Screenshot of the EU sales list page."​:::
-
 1. Select a service line, and then, on the Action Pane, select **Mark** > **Mark as reported**.
 1. In the **Criteria** field, enter **8/2/2021** (August 2, 2021). Then select **OK**.
 1. In the **Selection** field, select **Reported**.
