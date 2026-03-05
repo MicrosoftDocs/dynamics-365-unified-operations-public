@@ -109,7 +109,7 @@ Also, disable **change tracking** on dimension set tables where it's not require
 
 ## Rebuild balances after modifying dimension set attributes
 
-You may modify the dimensions attributes defining your dimension set any time you wish. However, if the dimension set already has balances, it is important to **Clear** and **Rebuild** them after your changes. Failure to do so may result in your trial balance having duplicate rows with the same dimension values or other unexpected problems.
+You may modify the dimensions attributes defining your dimension set at any time. However, if the dimension set already has balances, it's important to **Clear** and **Rebuild** them after your changes. Failure to do so may result in your trial balance having duplicate rows with the same dimension values or other unexpected problems.
 
 ## Don't delete and recreate dimension sets
 
