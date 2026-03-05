@@ -42,8 +42,8 @@ In Finance, import version 173 or later of these ER configurations from the Glob
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!IMPORTANT]
-> - After you import all the ER configurations from the previous table, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
-> - :::image type="content" source="../media/dk-saf-t-default-model-mapping.png" alt-text="Screenshot of the Default for model mapping option set to Yes for the SAF-T General model mapping configuration.":::
+> After you import all the ER configurations from the previous table, set the **Default for model mapping** option to **Yes** for the **SAF-T General model mapping** configuration.
+> :::image type="content" source="../media/dk-saf-t-default-model-mapping.png" alt-text="Screenshot of the Default for model mapping option set to Yes for the SAF-T General model mapping configuration.":::
 
 ### <a name="satt"></a>Select the Accounting electronic report format in General ledger parameters
 
