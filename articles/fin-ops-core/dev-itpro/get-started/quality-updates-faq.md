@@ -58,11 +58,11 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 1. Select **Settings**.
 1. In the **Updates** section, select **Maintenance Settings**.
 
-    :::image type="content" source="https://github.com/user-attachments/assets/372620cb-4c27-40ff-84a3-e79331f5a904" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
+:::image type="content" source="../../fin-ops/get-started/media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
 
 1. Choose your preferred days to receive PQUs.
 
-    :::image type="content" source="https://github.com/user-attachments/assets/bc7ac1c8-8e76-4c45-a4ec-51964344f494" alt-text="Screenshot of the preferred day selection for receiving PQUs.":::
+:::image type="content" source="../../fin-ops/get-started/media/maintenance-settings-day-selection.png" alt-text="Screenshot of the preferred day selection for receiving PQUs.":::
 
 1. Select Maintenance Cadence as "Every Update". 
 2. Select **Save**.
