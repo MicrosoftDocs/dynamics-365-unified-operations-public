@@ -58,17 +58,17 @@ Follow these steps in the Power Platform Admin Center (PPAC):
 1. Select **Settings**.
 1. In the **Updates** section, select **Maintenance Settings**.
 
-:::image type="content" source="../media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
+   :::image type="content" source="../media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance Settings option in the updates section.":::
 
 1. Choose your preferred days to receive PQUs.
 
-:::image type="content" source="../media/maintenance-settings-day-selection.png" alt-text="Screenshot of the preferred day selection for receiving PQUs.":::
+   :::image type="content" source="../media/maintenance-settings-day-selection.png" alt-text="Screenshot of the preferred day selection for receiving PQUs.":::
 
 1. Select Maintenance Cadence as "Every Update". 
-2. Select **Save**.
+1. Select **Save**.
 
-> [!NOTE]
-> Live environments always receive updates at least five days after Sandbox. This process remains unchanged under the biweekly cadence.
+   > [!NOTE]
+   > Live environments always receive updates at least five days after Sandbox. This process remains unchanged under the biweekly cadence.
 
 ### Which day should I choose for receiving PQU updates?
 
