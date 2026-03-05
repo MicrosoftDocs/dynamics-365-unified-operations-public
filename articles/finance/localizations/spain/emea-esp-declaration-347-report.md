@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2025
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
@@ -16,21 +16,21 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to generate the Declaration 347 report available to legal entities that have their primary address in Spain in Microsoft Dynamics 365 Finance.
+This article explains how to generate the Declaration 347 report in Microsoft Dynamics 365 Finance. Legal entities with their primary address in Spain can use this report.
 
-The Declaration 347 report must be electronically submitted to the tax authorities every year during the first 20 days of March. It must include all the information from the previous fiscal year (January through December). All transactions over 3,000 Euros must be included. Also, cash payment amounts that exceed 6,000 Euros in a year must be included. Amounts are split per quarter over the year.
+You must electronically submit the Declaration 347 report to the tax authorities every year during the first 20 days of March. It must include all the information from the previous fiscal year (January through December). You must include all transactions over 3,000 euros. Also, you must include cash payment amounts that exceed 6,000 euros in a year. Amounts are split per quarter over the year.
 
-You can use the **Declaration 347** form to generate the Declaration 347 report. All invoices are grouped either by tax exempt number and customer/vendor number, or only by tax exempt number. The resulting aggregated line is included on the **Declaration 347** form if the total amount of invoices on the line exceeds the value of the **Minimum amount** field that's set in the **Declaration 347** dialog. If some invoices are paid in cash, and the total amount of cash payments for invoices on the line exceeds the value of the **Minimum amount of payments in cash** field in the **Declaration 347** dialog, this amount will be shown in the **Amounts in cash** field of the declaration.
+Use the **Declaration 347** form to generate the Declaration 347 report. The form groups all invoices either by tax exempt number and customer or vendor number, or only by tax exempt number. The form includes the resulting aggregated line if the total amount of invoices on the line exceeds the value of the **Minimum amount** field set in the **Declaration 347** dialog. If you pay some invoices in cash, and the total amount of cash payments for invoices on the line exceeds the value of the **Minimum amount of payments in cash** field in the **Declaration 347** dialog, this amount appears in the **Amounts in cash** field of the declaration.
 
 ## Prerequisites
 
-The following procedures must be completed up before you start work with the Declaration 347 report.
+Complete the following procedures before you start work with the Declaration 347 report.
 
 ### Set up a legal entity
 
 To set up a legal entity, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and select your legal entity.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**, and select your legal entity.
 1. On the **Addresses** FastTab, create an address.
 1. In the **Country/region** field, select **Spain**, and mark the address as **Primary**.
 1. Fill in the remaining address components.
@@ -40,18 +40,18 @@ To set up a legal entity, follow these steps:
 
 To set up contact information, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 1. On the **Contact information** tab, add lines for **Phone** and **Email**, and set them to **Primary**.
 
-### Set up tax exempt numbers
+### Set up tax-exempt numbers
 
-To set up tax exempt numbers, follow these steps:
+To set up tax-exempt numbers, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt numbers**.
-1. For each tax exempt number, create a record on the page, and specify the following information:
-    -   **Country/region:** Select the country or region of the tax registration of the counterparty.
-    -   **Tax exempt number:** Enter the tax exempt number of the counterparty.
-    -   **Company name:** (Optional) Enter the name of the counterparty.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
+1. For each tax-exempt number, create a record on the page, and specify the following information:
+    - **Country/region:** Select the country or region of the tax registration of the counterparty.
+    - **Tax exempt number:** Enter the tax-exempt number of the counterparty.
+    - **Company name:** (Optional) Enter the name of the counterparty.
 
 ## Set up the Declaration 347 report
 
@@ -59,21 +59,21 @@ To set up the Declaration 347 report, follow these steps:
 
 1. Open the **Electronic reporting** workspace, and import the latest versions of these ER formats under the **Declaration 347 model**:
 
-    -   Declaration 347 export format (ES)
-    -   Declaration 347 report format (ES)
+    - Declaration 347 export format (ES)
+    - Declaration 347 report format (ES)
 
 Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**.
+1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Sales tax** > **Cash ledger accounts**.
 1. On the **Cash ledger accounts** page, specify the cash ledger accounts that are required for the Declaration 347.
-1. Go to **Tax \> Setup \> Sales tax \> 347 validation lists**.
-1. On the **Validation list** page, specify any sales tax groups that should be excluded from the Declaration 347.
+1. Go to **Tax** > **Setup** > **Sales tax** > **347 validation lists**.
+1. On the **Validation list** page, specify any sales tax groups that you want to exclude from the Declaration 347.
 
 ## Generate the Declaration 347 report
 
 To generate the Declaration 347 report, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Declaration 347**.
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Sales tax** > **Declaration 347**.
 1. On the **Declaration 347** form, select **Generate**.
 1. In the **Declaration 347** dialog, set the following fields.
 
@@ -91,7 +91,7 @@ To generate the Declaration 347 report, follow these steps:
 1. Select **OK** to generate the data on the **Declaration 347** form.
 1. Review the information on the declaration.
 
-    ![Declaration 347 page.](../media/1_Declaration_347.png)
+    :::image type="content" source="../media/1_Declaration_347.png" alt-text="Screenshot of the Declaration 347 page.":::
 
     The **General** tab has the following fields.
 
@@ -116,7 +116,7 @@ To generate the Declaration 347 report, follow these steps:
 
 1. Select **Transactions** to review and modify the information for the aggregated customer transactions and vendor transactions before you generate the report as an ASCII file.
 
-    ![Transactions page, Overview tab.](../media/2_Transactions.png)
+    :::image type="content" source="../media/2_Transactions.png" alt-text="Screenshot of the Transactions page, Overview tab.":::
 
 1. On the **Transactions** page, on the **General** tab, review the following fields.
 
@@ -129,9 +129,9 @@ To generate the Declaration 347 report, follow these steps:
     | Operation > Task   code                                 | The task code that describes the   origin of the transaction:<br>- **A - Purchase**: This task code is   automatically defined for purchase transactions.<br>- **B - Sales**:   This task code is automatically defined for sales transactions.<br>-   **C - Payment via credit institution**: Select this value if the transaction   is a payment that was made through a credit institution.<br>- **D -   Purchases from public entity**: Select this value if the transaction is a   purchase from a public entity.<br>- **E - Subventions**: Select this   value if the transaction is a subvention that is received from public   administrations or private companies. |
     | Operation > BDNS call number                            | This field is available when the **Task code** is set to **E**. Specify the 6-digit number of call code for the grant or aid in the BDNS (Base de Datos Nacional de Subvenciones, National Grants Database). |
     | Amount > 1st   quarter amount                        | The total amount of aggregated   transactions that were posted in the first quarter of the year.                                         |
-    | Amount > 2nd   quarter amount                        | The total amount of aggregated   transactions that were posted in the second quarter of the year.   |
-    | Amount > 3rd   quarter amount                        | The total amount of aggregated   transactions that were posted in the third quarter of the year.                |
-    | Amount > 4th   quarter amount                        | The total amount of aggregated   transactions that were posted in the fourth quarter of the year.                             |
+    | Amount > 2nd quarter amount                        | The total amount of aggregated   transactions that you posted in the second quarter of the year.   |
+    | Amount > 3rd quarter amount                        | The total amount of aggregated   transactions that you posted in the third quarter of the year.                |
+    | Amount > 4th quarter amount                        | The total amount of aggregated   transactions that you posted in the fourth quarter of the year.                             |
     | Amount > Amount                                      | The total amount of the   aggregated transactions in the accounting currency.                              |
     | Amount > Amount   settled                            | The amount in the accounting   currency.          |
     | Amounts in cash > Amounts   in cash                           | The amount of payments in cash   for the transaction. This value is filled in only for customer transactions.        |
@@ -143,9 +143,9 @@ To generate the Declaration 347 report, follow these steps:
     | Administration > Deposit                                     | Select this check box to   indicate that the transaction is a deposit.     |
     | Administration > Reverse   charge                            | Select this check box to   indicate that the reverse charge is used for this transaction.                              |
 
-1. If you selected the **Tenancy** checkbox on the **General** tab, select **Declaration 347 tenants** to add information about tenants.
+1. If you select the **Tenancy** checkbox on the **General** tab, select **Declaration 347 tenants** to add information about tenants.
 
-    ![Declaration 347 tenants page.](../media/3_Declaration347_tenants.png)
+    :::image type="content" source="../media/3_Declaration347_tenants.png" alt-text="Screenshot of the Declaration 347 tenants page.":::
 
 1. On the **Declaration 347 tenants** page, on the **Overview** tab, set the **Name**, **Amount**, **Reference of estate**, **County**, **Country/region**, **City**, and **Street** fields.
 1. On the **General** tab, set the **ZIP/postal code**, **Address abbreviation**, **Street No.**, **Entrance**, **Floor**, **Door**, and **Location code** fields for the building or property.
@@ -163,36 +163,36 @@ You can create a new Declaration 347 for the same period and use the delta repor
 
 To generate the delta report, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Declaration 347**, and select **Generate** to generate the report that has corrections.
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Sales tax** > **Declaration 347**, and select **Generate** to generate the report that has corrections.
 1. In the **Declaration 347** dialog, set the **Replacement declaration** option to **Yes** to identify this declaration as a correction of the original declaration.
 1. In the **Previous declaration number** field, enter the declaration number of the original declaration, and then select **OK**.
-1. Select **Output \> Delta report**.
+1. Select **Output** > **Delta report**.
 1. In the **Delta report** dialog, in the **Format mapping** field, select the **Declaration 347 report format (ES)** format that you downloaded earlier.
 1. In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this article.
 
 ## Example
 
-Consider an example in the DEMF legal entity.
+Consider the following example in the DEMF legal entity.
 
 ### Set up example
 
 To set up an example in the DEMF legal entity, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
+1. In Dynamics 365 Finance, go to **Organization administration** > **Setup** > **Organization** > **Legal entities**.
 1. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **B80833593**.
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**, and select **New** to create a line.
-    
-    ![Cash ledger accounts page.](../media/4_Cash_ledger_accounts.png)
+1. Go to **Tax** > **Setup** > **Sales tax** > **Cash ledger accounts**, and select **New** to create a line.
 
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt number** and select **New** to create a line.
+    :::image type="content" source="../media/4_Cash_ledger_accounts.png" alt-text="Screenshot of the Cash ledger accounts page.":::
 
-    ![Tax exempt numbers page.](../media/5_Tax_exempt_numbers.png)
+1. Go to **Tax** > **Setup** > **Sales tax** > **Tax exempt number** and select **New** to create a line.
+
+    :::image type="content" source="../media/5_Tax_exempt_numbers.png" alt-text="Screenshot of the Tax exempt numbers page.":::
 
 ### Customer transactions
 
 To set up customer transactions, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**, and select customer **DE-010**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers**, and select customer **DE-010**.
 1. On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396364B**.
 1. Select **Save**, and close page.
 1. Select customer **DE-011**.
@@ -203,7 +203,7 @@ To set up customer transactions, follow these steps:
 1. Select **Save**, and close page.
 1. Select customer **DE-014**.
 1. On the **Address** FastTab, verify that **DEU** is set as the country/region, and then, on the **Invoice and Delivery** FastTab, verify that the **Tax exempt number** field is set to **DE9801**.
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, create the following four invoices, and then post them.
+1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**, create the following four invoices, and then post them.
 
     | **Invoice** | **Customer** | **Date**          | **Delivery address** | **Amount** |
     |-------------|--------------|-------------------|----------------------|------------|
@@ -212,7 +212,7 @@ To set up customer transactions, follow these steps:
     | FTI-000009  | DE-011       | February 5, 2020  | ESP                  | 8,000.00   |
     | FTI-000010  | DE-014       | February 10, 2020 | DEU                  | 6,500.00   |
 
-1. Go to **Accounts receivable** \> **Payments** \> **Customer payment journal**, create the following five payments, and then post them.
+1. Go to **Accounts receivable** > **Payments** > **Customer payment journal**, create the following five payments, and then post them.
 
     | **Date**          | **Account (tax exempt number)** | **Settled invoice** | **Credit** | **Offset account type** | **Offset account** |
     |-------------------|---------------------------------|---------------------|------------|-------------------------|--------------------|
@@ -224,21 +224,21 @@ To set up customer transactions, follow these steps:
 
 ### Vendor transactions
 
-To set up vendor transactions, follow these steps:
+Set up vendor transactions by following these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**, and select vendor **DE-001**.
-1. On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **03566243B**.
+1. In Dynamics 365 Finance, go to **Accounts payable** > **Vendors** > **All vendors**, and select vendor **DE-001**.
+1. On the **Address** FastTab, set **ESP** as the country/region. On the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **03566243B**.
 1. Select **Save**, and close page.
 1. Select vendor **DE-01001**.
-1. On the **Address** FastTab, verify that **DEU** is set as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE124363748**.
-1. Go to **Accounts payable** \> **Invoices** \> **Invoice journal**, create the following two invoices, and then post them.
+1. On the **Address** FastTab, verify that **DEU** is set as the country/region. On the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE124363748**.
+1. Go to **Accounts payable** > **Invoices** > **Invoice journal**, create the following two invoices, and then post them.
 
     | **Invoice** | **Vendor** | **Date**         | **Vendor address** | **Amount** |
     |-------------|------------|------------------|--------------------|------------|
     | 1           | DE-001     | February 4, 2020 | ESP                | 6,300      |
     | 2           | DE-01001   | February 7, 2020 | DEU                | 7,100      |
 
-1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**, create the following two payments, and then post them.
+1. Go to **Accounts payable** > **Payments** > **Vendor payment journal**, create the following two payments, and then post them.
 
     | **Date**          | **Account** | **Invoice** | **Credit** | **Offset account type** | **Offset account** |
     |-------------------|-------------|-------------|------------|-------------------------|--------------------|
@@ -249,37 +249,34 @@ To set up vendor transactions, follow these steps:
 
 To generate the Declaration 347 and delta reports, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Declaration 347**, select **Generate**, and fill the following fields with the following values:
+1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Sales tax** > **Declaration 347**, select **Generate**, and fill the following fields with the following values:
     - **Fiscal year** – 2020
     - **Minimum amount** – 6000
     - **Minimum amount of payments in cash** - 6000
 1. Select **OK**.
-1. Select the declaration line that was created, select **Transactions**, and review the data.
+1. Select the declaration line that you created, select **Transactions**, and review the data.
 
-    ![Transactions page.](../media/6_Transactions.png)
+    :::image type="content" source="../media/6_Transactions.png" alt-text="Screenshot of the Transactions page.":::
 
     - The line for customer **DE-012** wasn't transferred to the declaration because both amounts were less than 6,000.
     - On the line for customer **DE-011** (tax exempt number **01396365B**), because the payment amount in cash is less than 6,000 it was reset to 0 (zero).
     - On the line for vendor **DE-001** (tax exempt number **03566243B**), even though the payment was in cash, the cash payment amount is 0 (zero) because the **Amounts in cash** field is filled in only for customers.
 
-1. Close the **Transactions** page, and then, on the **Declaration 347** form, select **Generate** to generate the report that has corrections.
+1. Close the **Transactions** page. On the **Declaration 347** form, select **Generate** to generate the report that has corrections.
 1. Set the **Replacement declaration** option to **Yes** to identify this declaration as a correction of the original declaration.
 1. In the **Previous declaration number** field, enter the declaration number of the original declaration, and then select **OK**.
-1. Select the declaration line that is created, select **Transactions**, and edit the line for customer with tax exempt number **DE9801** in the following way:
+1. Select the declaration line that you created, select **Transactions**, and edit the line for customer with tax exempt number **DE9801** in the following way:
     - The value in **1st quarter amount** column becomes 7000 instead of 6500
     - The value in **2nd quarter amount** column becomes 3000 instead of 0.
 
-    ![Transactions page, 1st and 2nd quarter amount columns.](../media/7_Transactions.png)
+    :::image type="content" source="../media/7_Transactions.png" alt-text="Screenshot of the Transactions page, 1st and 2nd quarter amount columns.":::
 
 1. Close the **Transactions** page.
-1. Select **Output \> Delta report**.
+1. Select **Output** > **Delta report**.
 1. In the **Format mapping** field, select **Declaration 347 report format (ES)**.
 1. In the **File name** field, enter the file name, and then select **OK**.
 1. Open downloaded file and review the data. Notice that only the line that has corrections is printed on the report.
 
-![Declaration 347 report format (ES) generated data.](../media/8_Declaration347.png)
-
-
-
+:::image type="content" source="../media/8_Declaration347.png" alt-text="Screenshot of the Declaration 347 report format (ES) generated data.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
