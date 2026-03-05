@@ -47,7 +47,7 @@ The types of operating units include cost centers, business units, value streams
 | Department          | An operating unit that represents a category or functional part of an organization that performs a specific task, such as sales or accounting. | Used to report on functional areas. A department might have profit and loss responsibility, and might consist of a group of cost centers. |
 | Retail channel      | An operating unit that represents a brick and mortar store, an online store, or call center. | Used for the management and operational control of one or more stores within or across legal entities. |
 
-### Establishments
+### <a id="establishments"></a>Establishments
 
 > [!NOTE]
 > **Availability**: Establishments support in Dynamics 365 Finance is available starting with version **10.0.48**.
