@@ -4,7 +4,7 @@ description: Learn about how the archive feature in Microsoft Dynamics 365 finan
 author: kehoej99 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 01/27/2026
+ms.date: 03/05/2026
 ms.custom:
 ms.reviewer: twheeloc
 
