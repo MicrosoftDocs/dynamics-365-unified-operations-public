@@ -29,7 +29,7 @@ Before you start to prepare your Finance environment for direct submission of VA
 
 ### Delegate rights to an accounting system provider at skat.dk
 
-To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to an accounting system provider (Regnskabssystemsudbyder \[RSU\]) at skat.dk. A guide that explains how to delegate rights to an RSU is published in the [skat.dk portal](https://skat.dk/erhverv/moms/momsregnskab). You can also access it at [https://info.skat.dk/data.aspx?oid=2339573&chk=219318](https://info.skat.dk/data.aspx?oid=2339573&chk=219318). To submit your VAT returns directly from Dynamics 365 Finance to NemVirksomhed APIs, delegate the **NemVirksomhed - adgang for regnskabssystemudbyder** RSU to the following Danish Central Business Register (Centrale Virksomhedsregister \[CVR\]) number: **13612870**.
+To submit your VAT return directly to the Danish Tax Agency, you must delegate rights to an accounting system provider (Regnskabssystemsudbyder \[RSU\]) at skat.dk. A guide that explains how to delegate rights to an RSU is published at [https://info.skat.dk/data.aspx?oid=2339573&chk=219318](https://info.skat.dk/data.aspx?oid=2339573&chk=219318). To submit your VAT returns directly from Dynamics 365 Finance to NemVirksomhed APIs, delegate the **NemVirksomhed - adgang for regnskabssystemudbyder** RSU to the following Danish Central Business Register (Centrale Virksomhedsregister \[CVR\]) number: **13612870**.
 
 ### Set up Power Platform Integration for the environment in Lifecycle Services and install the Electronic Invoicing add-in
 
