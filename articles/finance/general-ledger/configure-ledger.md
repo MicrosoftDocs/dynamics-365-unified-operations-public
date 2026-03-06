@@ -42,7 +42,7 @@ The chart of accounts is used by default accounts in this ledger. It cannot be c
 ```
 
 ```
-Main accounts from chart of accounts %1 have been assigned to posting profiles. The chart of accounts can be changed only after all main accounts are removed from all posting profiles within the ledger for legal entity %2.
+Main accounts from chart of accounts ... have been assigned to posting profiles. The chart of accounts can be changed only after all main accounts are removed from all posting profiles within the ledger for legal entity ...
 ```
 
 This error occurs when one or more posting profiles in the legal entity have default accounts that reference the current chart of accounts. Because main accounts are specific to a chart of accounts, the system cannot automatically map them to accounts in a different chart of accounts, so the posting profiles must be cleared manually before the change is allowed.
