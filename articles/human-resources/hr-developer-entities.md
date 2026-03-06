@@ -28,6 +28,7 @@ ms.custom: sfi-image-nochange
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 

@@ -27,6 +27,7 @@ ms.custom: sfi-image-nochange
 ---
 
 # Human resources to bookable resource integration
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 Human resources to bookable resource integration enable organizations to integrate their worker information. By bringing together worker information, including information about skills and proficiencies, the integration enhances the resource manager's experience and helps them find the best resources for a requirement. This functionality alleviates the pain of double entry and maintenance of workers and characteristics. This data no longer has to be entered and maintained in both Microsoft Dynamics 365 Project operations and other areas that use the Universal Resource Scheduling (URS) solution for resource scheduling.
 

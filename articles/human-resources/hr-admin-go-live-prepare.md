@@ -26,9 +26,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Prepare for Human Resources go-live
 
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article describes how to prepare to go live with a Dynamics 365 Human Resources project by using Microsoft Dynamics Lifecycle Services (LCS). 
 
