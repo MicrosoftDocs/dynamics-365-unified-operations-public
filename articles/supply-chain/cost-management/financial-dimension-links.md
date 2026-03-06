@@ -55,38 +55,30 @@ Before you configure a dimension link, complete the following setup in General l
 ### Create a financial dimension
 
 1. Go to **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimensions**.
-1. Select **New**, choose **Custom dimension**, and assign a name (for example, *Business Unit* or *Site*).
-1. Select **Activate** to make the dimension available.
-
-> [!NOTE]
-> A financial dimension can't be added as a segment in an account structure until it is activated.
-
-1. Select **Dimension values** to create the individual values that will map to your inventory sites.
+2. Select **New**, choose **Custom dimension**, and assign a name (for example, *Business Unit* or *Site*).
+3. Select **Activate** to make the dimension available.
+4. Select **Dimension values** to create the individual values that will map to your inventory sites.
 
 ### Configure account structures
 
 1. Go to **General ledger** \> **Chart of accounts** \> **Structures** \> **Configure account structures**.
-1. Create a new structure, or edit an existing one.
-1. Select **Add segment** and add your financial dimension.
-1. Configure blank allowances as needed, then select **Activate**.
+2. Create a new structure, or edit an existing one.
+3. Select **Add segment** and add your financial dimension.
+4. Configure blank allowances as needed, then select **Activate**.
 
 ### Add the account structure to the ledger
 
 1. Go to **General ledger** \> **Ledger setup** \> **Ledger**.
-1. Select **Edit** and add the account structure to the ledger.
+2. Select **Edit** and add the account structure to the ledger.
 
 ## Set up a financial dimension link
 
 After completing the prerequisites, configure the dimension link and map each site to a dimension value.
 
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
-1. Select **Edit**, then in the dropdown, select the financial dimension you want to link to the site inventory dimension.
-
-   > [!NOTE]
-   > Only financial dimensions that have been added to your account structure appear in the list.
-
-1. Select **Sites** in the menu to open **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Sites**. **Warehouse management** \> **Setup** \> **Warehouse** \> **Sites** may also be a valid path to navigate to the **Sites** form. 
-1. For each site, select **Financial dimensions** and, in edit mode, assign the corresponding financial dimension value.
+2. Select **Edit**, then in the dropdown, select the financial dimension you want to link to the site inventory dimension.
+3. Select **Sites** in the menu to open **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Sites**. **Warehouse management** \> **Setup** \> **Warehouse** \> **Sites** may also be a valid path to navigate to the **Sites** form. 
+4. For each site, select **Financial dimensions** and, in edit mode, assign the corresponding financial dimension value.
 
    > [!IMPORTANT]
    > Each site must be mapped to a unique financial dimension value. Duplicate mappings will cause errors when the link is activated.
@@ -98,8 +90,8 @@ After completing the prerequisites, configure the dimension link and map each si
 Activating the link enables automatic population of the financial dimension on transactions whenever a site is selected.
 
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
-1. Select **Activate link** in the menu.
-1. Select **OK** and wait for the operation to complete.
+2. Select **Activate link** in the menu.
+3. Select **OK** and wait for the operation to complete.
 
 Once active, any transaction that includes a site—inventory journals, purchase orders, sales orders, and so on—automatically populates the associated financial dimension value based on the site-to-dimension mapping.
 
@@ -110,7 +102,7 @@ Once active, any transaction that includes a site—inventory journals, purchase
 Locking the dimension link prevents users from manually editing the linked financial dimension field on transaction lines. This enforces data integrity by ensuring the dimension value always derives from the site mapping rather than manual input.
 
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
-1. Select **Lock link** in the menu.
+2. Select **Lock link** in the menu.
 
 When the link is locked, the financial dimension field on transaction lines (such as purchase order lines) is grayed out and non-editable. This behavior is by design.
 
