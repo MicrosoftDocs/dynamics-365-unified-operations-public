@@ -4,7 +4,7 @@ description: Learn about Microsoft Dynamics 365 Lifecycle Services for finance a
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global

@@ -4,7 +4,7 @@ description: Learn about how to configure the Code upgrade tile to migrate your 
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: upgrade-and-migration-article
-ms.date: 08/01/2017
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

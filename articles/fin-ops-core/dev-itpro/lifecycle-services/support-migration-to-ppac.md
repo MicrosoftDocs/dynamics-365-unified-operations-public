@@ -4,7 +4,7 @@ description: Learn about the removal of Microsoft Dynamics Lifecycle Services Su
 author: dgorn
 ms.author: dgorn
 ms.topic: article
-ms.date: 02/22/2024
+ms.date: 03/06/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak

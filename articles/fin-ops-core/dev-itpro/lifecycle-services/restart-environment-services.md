@@ -4,7 +4,7 @@ description: Learn about how to restart individual services in environments that
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

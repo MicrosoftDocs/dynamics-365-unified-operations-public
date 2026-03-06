@@ -4,7 +4,7 @@ description: Learn about data deletion that occurs after a finance and operation
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 02/17/2023
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global

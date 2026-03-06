@@ -4,7 +4,7 @@ description: Learn about how to change the environment administrator for a finan
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 04/28/2023
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global 

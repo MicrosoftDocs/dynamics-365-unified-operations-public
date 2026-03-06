@@ -4,7 +4,7 @@ description: Learn about how to use Microsoft Dynamics Lifecycle Services to sub
 author: filatovm
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.search.region: global
 ms.search.validFrom: 2016-02-28

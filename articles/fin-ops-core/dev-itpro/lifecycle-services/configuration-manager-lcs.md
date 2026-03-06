@@ -4,7 +4,7 @@ description: The Configuration manager (beta) functionality lets you copy a conf
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro

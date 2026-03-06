@@ -4,7 +4,7 @@ description: Learn about how to reconfigure your environment with a new platform
 author: PeterRFriis
 ms.author: peterfriis
 ms.topic: article
-ms.date: 12/05/2017
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

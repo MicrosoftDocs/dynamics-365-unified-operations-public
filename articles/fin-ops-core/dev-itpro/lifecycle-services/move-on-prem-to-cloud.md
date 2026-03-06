@@ -4,7 +4,7 @@ description: Learn about how to move your Microsoft Dynamics 365 Finance + Opera
 author: ttreen
 ms.author: marwalke
 ms.topic: how-to
-ms.date: 10/28/2024
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: IT Pro

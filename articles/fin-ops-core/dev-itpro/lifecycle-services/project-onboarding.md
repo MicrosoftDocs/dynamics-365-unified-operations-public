@@ -4,7 +4,7 @@ description: Learn about the Project onboarding wizard in Microsoft Dynamics 365
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Developer, IT Pro

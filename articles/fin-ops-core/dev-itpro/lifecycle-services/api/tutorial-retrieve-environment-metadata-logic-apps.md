@@ -4,7 +4,7 @@ description: Learn about how to use the Microsoft Dynamics Lifecycle Services AP
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 11/13/2023
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.component: pa-admin
 search.audienceType: 
@@ -13,6 +13,9 @@ ms.custom:
   - bap-template
   - sfi-image-nochange
 ---
+
+[!include [banner](../../includes/banner.md)]
+[!include [LCS freeze](../../includes/lcs-freeze-banner.md)]
 
 # Retrieve environment metadata via Logic Apps tutorial
 

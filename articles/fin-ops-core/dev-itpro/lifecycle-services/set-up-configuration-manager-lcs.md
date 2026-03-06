@@ -4,7 +4,7 @@ description: Learn about how to set up the Configuration manager, including outl
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

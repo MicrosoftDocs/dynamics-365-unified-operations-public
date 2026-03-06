@@ -4,7 +4,7 @@ description: Learn about how to apply country/region context to meet localizatio
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global

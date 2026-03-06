@@ -4,7 +4,7 @@ description: Access the web browsers that are supported for Lifecyle Services, i
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 03/29/2022
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

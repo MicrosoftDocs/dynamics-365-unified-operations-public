@@ -4,7 +4,7 @@ description: Learn about the Asset Library functionality in Microsoft Dynamics 3
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 02/08/2023
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 sericksaudience: Developer, IT Pro
 ms.search.region: Global

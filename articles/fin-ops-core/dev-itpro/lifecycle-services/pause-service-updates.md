@@ -4,7 +4,7 @@ description: Learn about how to pause service updates to your environments, incl
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 03/20/2024
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak  
 audience: Developer, IT Pro

@@ -4,7 +4,7 @@ description: Learn about the difference between regulatory and competitive featu
 author: kfend
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global

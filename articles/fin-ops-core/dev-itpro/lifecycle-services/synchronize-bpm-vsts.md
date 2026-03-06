@@ -4,7 +4,7 @@ description: Learn about how to synchronize a BPM library in Lifecycle Services 
 author: amarshall
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

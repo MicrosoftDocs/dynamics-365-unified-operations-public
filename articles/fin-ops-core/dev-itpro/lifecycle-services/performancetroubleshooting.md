@@ -4,7 +4,7 @@ description: Learn about tools that Microsoft Dynamics Lifecycle Services (LCS) 
 author: laneswenka
 ms.author: laswenka
 ms.topic: troubleshooting-general
-ms.date: 03/06/2023
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global

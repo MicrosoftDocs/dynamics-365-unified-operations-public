@@ -4,7 +4,7 @@ description: Learn about how to process and consume data packages in a solution,
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

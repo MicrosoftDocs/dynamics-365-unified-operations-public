@@ -4,7 +4,7 @@ description: Learn about the freeze on new project creation in Microsoft Dynamic
 author: laneswenka
 ms.author: laswenka
 ms.topic: concept-article
-ms.date: 03/02/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
