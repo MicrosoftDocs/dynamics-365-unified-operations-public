@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 # Employment V2 entity
 
 > [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
+> The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
 This article describes the Hcm Employment V2 entity (PayIntV1HcmEmploymentV2Entity) for Dynamics 365 Human Resources.
 

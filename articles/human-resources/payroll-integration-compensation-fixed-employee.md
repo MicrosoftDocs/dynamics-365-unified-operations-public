@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compensation Fixed Employee entity
-description: This article provides details and an example query for the Hcm Comp Fixed Empl entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Comp Fixed Empl entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 02/20/2026
 ms.topic: article
@@ -22,16 +22,16 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Compensation Fixed Employee entity
+# Employee Fixed Compensation entity
 
 > [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
+> The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Hcm Compensation Fixed Employee entity (PayIntV1HcmCompFixedEmplEntity) for Dynamics 365 Human Resources.
+This article describes the Employee fixed compensation entity (PayIntV1HcmCompFixedEmplEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
-This entity provides information about the hcm comp fixed empl.
+This entity provides information about the employee fixed compensation plans.
 
 ## Properties
 

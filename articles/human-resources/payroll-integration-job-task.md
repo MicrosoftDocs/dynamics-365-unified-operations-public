@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 # Job Task entity
 
 > [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
+> The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
 This article describes the Hcm Job Task entity (PayIntV1HcmJobTaskEntity) for Dynamics 365 Human Resources.
 

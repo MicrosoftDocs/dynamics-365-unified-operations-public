@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 # Employment Term entity
 
 > [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.40.
+> The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.40.
 
 This article describes the Hcm Employment Term entity (PayIntV1HcmEmploymentTermEntity) for Dynamics 365 Human Resources.
 

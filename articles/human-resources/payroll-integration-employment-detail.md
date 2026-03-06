@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 # Employment Detail entity
 
 > [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.42.
+> The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.42.
 
 This article describes the Employment Detail entity (PayIntV2EmploymentDetailEntity) for Dynamics 365 Human Resources.
 
