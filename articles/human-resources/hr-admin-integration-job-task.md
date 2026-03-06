@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the Job task entity (PayIntV1HcmJobTaskEntity) for Dynamics 365 Human Resources.
+This article describes the Job task entity for Dynamics 365 Human Resources.
 
 ## Description
 
@@ -39,26 +39,26 @@ This entity provides information about the job task.
 
 | Property | Physical name | Type | Use | Description |
 |---|---|---|---|---|
-| Description | mserp\_Description | String | Read-only| The description of the job task. |
-| JobTaskId | mserp\_JobTaskId | String | Read-only | The ID of the job task. |
-| Note | mserp\_Note | String | Read-only | Notes for the job task. |
+| Description | mshr\_Description | String | Read-only| The description of the job task. |
+| JobTaskId | mshr\_JobTaskId | String | Read-only | The ID of the job task. |
+| Note | mshr\_Note | String | Read-only | Notes for the job task. |
 
 ## Example query for PayIntV1HcmJobTaskEntity
 
 **Request**
 
-Entity name: mserp\_payintv1hcmjobtaskentities
+Entity name: mshr\_hcmjobtaskentities
 
 ```http 
-GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmjobtaskentities
+GET [Organization URI]/api/data/v9.1/mshr_hcmjobtaskentities
 ```
 
 **Response**
 
 ```json
 {
-    "mserp_description": "Customer calls",
-    "mserp_jobtaskid": "Customer calls",
-    "mserp_note": "This job includes communication with the customers, and stakeholders.",
+    "mshr_description": "Customer calls",
+    "mshr_jobtaskid": "Customer calls",
+    "mshr_note": "This job includes communication with the customers, and stakeholders.",
 }
 ```

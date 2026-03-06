@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the Job family entity (PayIntV1HcmJobFamilyEntity) for Dynamics 365 Human Resources.
+This article describes the Job family entity for Dynamics 365 Human Resources.
 
 ## Description
 
@@ -39,24 +39,24 @@ This entity provides information about the job family.
 
 | Property | Physical name | Type | Use | Description |
 |---|---|---|---|---|
-| JobFamilyId | mserp\_JobFamilyId | String | Read-only | The ID of the job family. |
-| Description | mserp\_Description | String | Read-only | The description of the job family. |
+| JobFamilyId | mshr\_JobFamilyId | String | Read-only | The ID of the job family. |
+| Description | mshr\_Description | String | Read-only | The description of the job family. |
 
-## Example query for PayIntV1HcmJobFamilyEntity
+## Example query for HCM job family entity
 
 **Request**
 
-Entity name: mserp\_payintv1hcmjobfamilyentities
+Entity name: mshr\_hcmjobfamilyentities
 
 ```http
-GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmjobfamilyentities_
+GET [Organization URI]/api/data/v9.1/mshr_hcmjobfamilyentities_
 ```
 
 **Response**
 
 ```json
 {
-    "mserp_jobfamilyid": "Finance Jobs",
-    "mserp_description": "Accounting, Payroll",
+    "mshr_jobfamilyid": "Finance Jobs",
+    "mshr_description": "Accounting, Payroll",
 }
 ```

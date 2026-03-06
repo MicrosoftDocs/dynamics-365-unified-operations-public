@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 >[!NOTE]
->For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
+>For the payroll integration to work for customers using the mshr entities for Ceredian Dayforce, navigate to [API-based payroll integration with Ceridian Dayforce](./hr-admin-payroll-api-integration-dayforce.md).
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -59,7 +59,7 @@ This documentation includes details and developer guidance for using the Dataver
 
 The endpoints for the Payroll integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints aren't deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment.
 
-For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md).
+For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](./../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 
 ## Data model
 
@@ -71,16 +71,15 @@ The following diagram illustrates relationships within the API. Several types ha
 
 Entities:
 
-- [Payroll employee](hr-admin-integration-payroll-api-payroll-employee.md)
-- [Payroll worker address](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Payroll fixed compensation plan](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
-- [Payroll variable compensation plan](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
-- [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job.md)
-- [Payroll position](hr-admin-integration-payroll-api-payroll-position.md)
+- [Payroll employee](PayIntV1PayrollEmployeeEntity.md)
+- [Payroll worker address](PayIntV1PayrollWorkerAddressCurrentEntity.md)
+- [Payroll fixed compensation plan](PayIntV1HcmCompFixedEmplEntity.md)
+- [Payroll variable compensation enrollment](PayIntV1HcmVariableCompensationEnrollmentEntity.md)
+- [Payroll position job](PayIntV1PayrollPositionJobEntity.md)
+- [Payroll position](PayIntV1HcmPositionEntity.md)
 
 ## See also
 
-[Generate and review payroll entities](hr-admin-integration-payroll-api-generate-review-entities.md)<br>
 [Configure Human Resources parameters](hr-setup-parameters.md)<br>
 [Configure Human Resources shared parameters](hr-setup-shared-parameters.md)<br>
 [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>

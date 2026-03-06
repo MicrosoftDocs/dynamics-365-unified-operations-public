@@ -27,9 +27,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the HCM job compensation entities (payintv1hcmjobcompensationentities) for Dynamics 365 Human Resources.
+This article describes the HCM job compensation entities for Dynamics 365 Human Resources.
 
-Physical name: mserp\_payintv1hcmjobcompensationentities
+Physical name: mshr\_hcmjobcompensationentities
 
 ## Description
 
@@ -39,40 +39,40 @@ These entities provide information about the job compensation details.
 
 | Property | Physical name | Type | Use | 
 |---|---|---|---|
-| mserp\_Job | Job | Int64 | Read-only |
-| mserp\_CompensationLevel | CompensationLevel | Int64 | Read-only |
-| mserp\_MarketControlPay | MarketControlPay | Real | Read-only |
-| mserp\_MarketMaximumPay | MarketMaximumPay | Real | Read-only |
-| mserp\_MarketMinimumPay | MarketMinimumPay | Real | Read-only |
-| mserp\_MarketSource | MarketSource | String | Read-only |
-| mserp\_SurveyCompany | SurveyCompany | Int64 | Read-only |
-| mserp\_ExternalSurveyCode | ExternalSurveyCode | String | Read-only |
-| mserp\_JobId | JobId | String | Read-only |
-| mserp\_CompensationLevelId | CompensationLevelId | String | Read-only |
-| mserp\_SurveyCompanyId | SurveyCompanyId | String | Read-only |
+| mshr\_Job | Job | Int64 | Read-only |
+| mshr\_CompensationLevel | CompensationLevel | Int64 | Read-only |
+| mshr\_MarketControlPay | MarketControlPay | Real | Read-only |
+| mshr\_MarketMaximumPay | MarketMaximumPay | Real | Read-only |
+| mshr\_MarketMinimumPay | MarketMinimumPay | Real | Read-only |
+| mshr\_MarketSource | MarketSource | String | Read-only |
+| mshr\_SurveyCompany | SurveyCompany | Int64 | Read-only |
+| mshr\_ExternalSurveyCode | ExternalSurveyCode | String | Read-only |
+| mshr\_JobId | JobId | String | Read-only |
+| mshr\_CompensationLevelId | CompensationLevelId | String | Read-only |
+| mshr\_SurveyCompanyId | SurveyCompanyId | String | Read-only |
 
 ## Example query for the HCM job compensation entities
 
-Entity name: mserp\_payintv1hcmjobcompensationentities
+Entity name: mshr\_hcmjobcompensationentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/payintv1hcmjobcompensationentities
+GET [Organization URI]/api/data/v9.1/hcmjobcompensationentities
 ```
 
 **Response**
 
 ```JSON
 {
-    "mserp_marketcontrolpay": 160000,
-    "mserp_marketmaximumpay": 240000,
-    "mserp_marketminimumpay": 100000,
-    "mserp_marketsource": "Market One",
-    "mserp_externalsurveycode": "VP Operations",
-    "mserp_jobid": "VP of Operations",
-    "mserp_compensationlevelid": "B2",
-    "mserp_surveycompanyid": "National1",
-    "mserp_primaryfield": "VP of Operations | B2",
+    "mshr_marketcontrolpay": 160000,
+    "mshr_marketmaximumpay": 240000,
+    "mshr_marketminimumpay": 100000,
+    "mshr_marketsource": "Market One",
+    "mshr_externalsurveycode": "VP Operations",
+    "mshr_jobid": "VP of Operations",
+    "mshr_compensationlevelid": "B2",
+    "mshr_surveycompanyid": "National1",
+    "mshr_primaryfield": "VP of Operations | B2",
 }
 ```

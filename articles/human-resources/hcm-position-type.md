@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the HCM position type entity (payintv1hcmpositiontypeentities) for Dynamics 365 Human Resources.
+This article describes the HCM position type entity for Dynamics 365 Human Resources.
 
-Physical name: mserp_payintv1hcmpositiontypeentities
+Physical name: mshr_hcmpositiontypeentities
 
 ## Description
 
@@ -40,26 +40,26 @@ This entity provides information about the payroll position details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| Description | mserp_Description | String | Read-only |
-| HcmEmploymentStatus | mserp_Classification | Enum | Read-only |
-| TypeId | mserp_PositionTypeId | String | Read-only |
+| Description | mshr_Description | String | Read-only |
+| HcmEmploymentStatus | mshr_Classification | Enum | Read-only |
+| TypeId | mshr_PositionTypeId | String | Read-only |
 
 ## Example query for the HCM position type entity
 
-Entity name: mserp_payintv1hcmpositiontypeentities
+Entity name: mshr_hcmpositiontypeentities
 
 ## Request
 
 ```http
-GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmpositiontypeentities
+GET [Organization URI]/api/data/v9.1/mshr_hcmpositiontypeentities
 ```
 
 **Response**
 
 ```JSON
 {  
-    "mserp_description": "Full-time employee",  
-    "mserp_classification": 200000001,  
-    "mserp_positiontypeid": "Full-time",  
+    "mshr_description": "Full-time employee",  
+    "mshr_classification": 200000001,  
+    "mshr_positiontypeid": "Full-time",  
 }
 ```

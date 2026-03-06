@@ -27,9 +27,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the HCM person details entities (payintv1hcmpersondetailsentities) for Dynamics 365 Human Resources.
+This article describes the HCM person details entities for Dynamics 365 Human Resources.
 
-Physical name: mserp\_payintv1hcmpersondetailsentities
+Physical name: mshr\_hcmpersondetailsentities
 
 ## Description
 
@@ -39,46 +39,46 @@ These entities provide information about the person details.
 
 | Property | Physical name | Type | Use | 
 |---|---|---|---|
-| mserp\_IsDisabledVeteran | IsDisabledVeteran | Enum | Read-only |
-| mserp\_ExpatriateRulingValidTo | ExpatriateRulingValidTo | Date time offset | Read-only |
-| mserp\_ExpatriateRulingValidFrom | ExpatriateRulingValidFrom | Date time offset | Read-only |
-| mserp\_IsExpatriateRulingApplicable | IsExpatriateRulingApplicable | Enum | Read-only |
-| mserp\_MaritalStatus | MaritalStatus | Enum | Read-only |
-| mserp\_MilitaryServiceEndDate | MilitaryServiceEndDate | Date time offset | Read-only |
-| mserp\_MilitaryServiceStartDate | MilitaryServiceStartDate | Date time offset | Read-only |
-| mserp\_NumberOfDependents | NumberOfDependents | Int | Read-only |
-| mserp\_Person | Person | Int64 | Read-only |
-| mserp\_PartyNumber | PartyNumber | String | Read-only |
-| mserp\_ValidFrom | ValidFrom | Date time offset | Read-only |
-| mserp\_ValidTo | ValidTo | Date time offset | Read-only |
-| mserp\_VeteranStatus | VeteranStatus | Int64 | Read-only |
-| mserp\_VeteranStatusId | VeteranStatusId | | Read-only |
+| mshr\_IsDisabledVeteran | IsDisabledVeteran | Enum | Read-only |
+| mshr\_ExpatriateRulingValidTo | ExpatriateRulingValidTo | Date time offset | Read-only |
+| mshr\_ExpatriateRulingValidFrom | ExpatriateRulingValidFrom | Date time offset | Read-only |
+| mshr\_IsExpatriateRulingApplicable | IsExpatriateRulingApplicable | Enum | Read-only |
+| mshr\_MaritalStatus | MaritalStatus | Enum | Read-only |
+| mshr\_MilitaryServiceEndDate | MilitaryServiceEndDate | Date time offset | Read-only |
+| mshr\_MilitaryServiceStartDate | MilitaryServiceStartDate | Date time offset | Read-only |
+| mshr\_NumberOfDependents | NumberOfDependents | Int | Read-only |
+| mshr\_Person | Person | Int64 | Read-only |
+| mshr\_PartyNumber | PartyNumber | String | Read-only |
+| mshr\_ValidFrom | ValidFrom | Date time offset | Read-only |
+| mshr\_ValidTo | ValidTo | Date time offset | Read-only |
+| mshr\_VeteranStatus | VeteranStatus | Int64 | Read-only |
+| mshr\_VeteranStatusId | VeteranStatusId | | Read-only |
 
 ## Example query for the HCM person details entities
 
-Entity name: mserp\_payintv1hcmpersondetailsentities
+Entity name: mshr\_hcmpersondetailsentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/payintv1hcmpersondetailsentities
+GET [Organization URI]/api/data/v9.1/hcmpersondetailsentities
 ```
 
 **Response**
 
 ```JSON
 {
-    "mserp_isdisabledveteran": 200000000,
-    "mserp_isexpatriaterulingapplicable": 200000000,
-    "mserp_maritalstatus": 200000001,
-    "mserp_numberofdependents": 2,
-    "mserp_partynumber": "000000032",
-    "mserp_validfrom": "2012-09-11T20:09:56Z",
-    "mserp_validto": "2154-12-31T23:59:59Z",
-    "mserp_veteranstatusid": "",
-    "mserp_militaryservicestartdate": null,
-    "mserp_expatriaterulingvalidto": null,
-    "mserp_militaryserviceenddate": null,
-    "mserp_expatriaterulingvalidfrom": null
+    "mshr_isdisabledveteran": 200000000,
+    "mshr_isexpatriaterulingapplicable": 200000000,
+    "mshr_maritalstatus": 200000001,
+    "mshr_numberofdependents": 2,
+    "mshr_partynumber": "000000032",
+    "mshr_validfrom": "2012-09-11T20:09:56Z",
+    "mshr_validto": "2154-12-31T23:59:59Z",
+    "mshr_veteranstatusid": "",
+    "mshr_militaryservicestartdate": null,
+    "mshr_expatriaterulingvalidto": null,
+    "mshr_militaryserviceenddate": null,
+    "mshr_expatriaterulingvalidfrom": null
 }
 ```

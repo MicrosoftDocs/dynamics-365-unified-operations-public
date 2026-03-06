@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the HCM position base entity (payintv1hcmpositionbaseentities) for Dynamics 365 Human Resources.
+This article describes the HCM position base entity for Dynamics 365 Human Resources.
 
-Physical name: mserp\_payintv1hcmpositionbaseentities
+Physical name: mshr\_hcmpositionbaseentities
 
 ## Description
 
@@ -40,22 +40,22 @@ This entity provides information about the base position details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| mserp\_PositionId | PositionId | String | Read-only |
+| mshr\_PositionId | PositionId | String | Read-only |
 
 ## Example query for the HCM position base entity
 
-Entity name: mserp\_payintv1hcmpositionbaseentities
+Entity name: mshr\_hcmpositionbaseentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/payintv1hcmpositionbaseentities
+GET [Organization URI]/api/data/v9.1/mshr_hcmpositionbaseentities
 ```
 
 **Response**
 
 ```JSON
 {
-    "mserp_positionid": "000001",
+    "mshr_positionid": "000001",
 }
 ```
