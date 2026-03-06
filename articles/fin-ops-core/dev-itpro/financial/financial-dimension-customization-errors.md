@@ -27,7 +27,6 @@ A financial dimension backed by a custom or customized DimAttribute view may sho
 - A dimension that should be backed by an entity (such as `OMDepartment`) shows as **\<Custom dimension\>** instead.
 - The dimension can't be added to an integration format or account structure even though other dimensions can.
 - The dimension still appears in account structures and in the Segmented Entry Control on existing transactions because it was previously used, but it can't be selected for new use.
-- The error `"DimensionAttributeValue.getValue called with an invalid DimensionAttribute record Id"` appears in telemetry.
 
 ### Cause
 
@@ -133,8 +132,6 @@ Extensible Data Security (XDS) policies applied to a backing table or its DimAtt
 > [!IMPORTANT]
 > XDS security is not compatible with tables that serve as financial dimension sources. Applying XDS to such a table prevents the dimension framework from resolving values for users subject to that policy.
 
-On version 10.0.41 and later, the error message explicitly identifies XDS as the cause: *"XDS policies prevent successful resolution of the DimensionAttribute RecId %1 for table %2 with view %3."*
-
 **Fix:** Remove XDS policies from the backing table and its DimAttribute view, or restructure data access so that dimension sources are not subject to row-level security.
 
 ### Cause 5: Hidden characters in the natural key value
@@ -142,8 +139,6 @@ On version 10.0.41 and later, the error message explicitly identifies XDS as the
 The natural key value stored in the backing table contains non-printable Unicode characters or visually identical substitutes (for example, a non-breaking space ALT+0160 instead of a regular space ALT+0032). The value appears correct in the UI and in SQL results, but the byte sequence doesn't match what the calling code passes to the framework.
 
 A value that looks like `110110` might be stored as `***110110` when the leading bytes are inspected — the invisible characters cause the framework lookup to fail.
-
-On version 10.0.42 and later, the error message identifies this cause: *"At least one record was found in the backing table through the DimAttribute* wrapping view partially matching the requested value. Its natural key string length is longer than supported..."*
 
 **Fix:** Clear and retype the affected value directly in the form to remove hidden characters. If the characters are being introduced by an external integration, add validation to the integration to sanitize the input before it reaches Finance.
 
