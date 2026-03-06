@@ -14,10 +14,10 @@ ms.custom:
   - sfi-image-nochange
 ---
 
+# Retrieve environment metadata via Logic Apps tutorial
+
 [!include [banner](../../includes/banner.md)]
 [!include [LCS freeze](../../includes/lcs-freeze-banner.md)]
-
-# Retrieve environment metadata via Logic Apps tutorial
 
 This tutorial shows how you can take advantage of the Microsoft Dynamics Lifecycle Services API to periodically scan your environments and capture the metadata details.
 
