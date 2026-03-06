@@ -9,6 +9,8 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2023-12-30
 ms.search.form: nemhandel, NemHandelsRegistret, notification, registration, denmark
+ms.custom: 
+  - bap-template
 ---
 
 # Notification and registration for the NemHandelsRegistret in Denmark
