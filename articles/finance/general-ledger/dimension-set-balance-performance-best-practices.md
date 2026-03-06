@@ -107,6 +107,10 @@ The [**Performance enhancement for general ledger dimension set balance calculat
 
 Also, disable **change tracking** on dimension set tables where it's not required, such as intermediate tables. Change tracking adds overhead to tables that you frequently update. Reserve it for tables that reflect final computations where historical change visibility is a business or compliance requirement. In particular, consider disabling change tracking for **DimensionFocus** tables such as **DimensionFocusBalance**.
 
+## Rebuild balances after modifying dimension set attributes
+
+You may modify the dimensions attributes defining your dimension set at any time. However, if the dimension set already has balances, it's important to **Clear** and **Rebuild** them after your changes. Failure to do so may result in your trial balance having duplicate rows with the same dimension values or other unexpected problems.
+
 ## Don't delete and recreate dimension sets
 
 Don't delete and recreate a dimension set to resolve performance problems. Deleting and creating dimension sets can be compute and time intensive processes. These processes lead to further delays and slowdowns.
