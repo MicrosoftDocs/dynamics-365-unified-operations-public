@@ -118,7 +118,7 @@ When an administrator disables a contact in the customer hierarchy:
  
 Contacts who placed orders can’t be fully removed from the hierarchy; disabling access helps maintain governance while preserving transaction history.
  
-##### Capture a reason when disabling access
+#### Capture a reason when disabling access
  
 When a contact is disabled, administrators are prompted to enter a reason (for example, role change, temporary suspension, or the user left the Organization). This reason is stored for auditing and operational visibility.
  
