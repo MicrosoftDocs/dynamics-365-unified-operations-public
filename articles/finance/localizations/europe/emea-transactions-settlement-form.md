@@ -3,7 +3,7 @@ title: View transactions on settlement for Eastern Europe
 description: Learn about the Transactions on settlement page for customers and vendors, including a list of scenarios in which you can view settlement-related information.
 author: EvgenyPopovMBS
 ms.author: evgenypopov
-ms.topic: how to
+ms.topic: how-to
 ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
