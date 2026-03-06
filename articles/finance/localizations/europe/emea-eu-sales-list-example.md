@@ -10,7 +10,7 @@ ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ---
 
-# Example for generic EU Sales list 
+# Example for generic EU sales list 
 
 [!include [banner](../../includes/banner.md)]
 
@@ -326,7 +326,7 @@ To transfer transactions, follow these steps:
 1. Find the line where the **Table** field is set to **Customer invoice journal** and the **Field** field is set to **Date**. In the **Criteria** field, select `8/1/2021..8/31/2021`.
 1. Find the line where the **Table** field is set to **Customer invoice journal** and the **Field** field is set to **List code**. Verify that the **Criteria** field is set to `!Not included`.
 1. Select **OK**.
-1. Select **OK**, and verify that the free text invoices that you created earlier are moved to the **EU sales list** page.
+1. Select **OK**, and verify that the free text invoices you created earlier are moved to the **EU sales list** page.
 
    :::image type="content" source="../media/EUSL_example.png" alt-text="Screenshot of the EU sales list page showing transferred free text invoices.":::
 
