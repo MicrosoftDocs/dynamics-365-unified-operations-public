@@ -16,13 +16,13 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 
 [!include [banner](../includes/banner.md)]
 
-This article suggests practices for managing dimension set balances that help keep trial balance reports, balance initialization, and financial reports running efficiently. Following these recommendations is important because misuse of dimension sets can degrade system performance for all users.
+This article suggests practices for managing dimension set balances that help keep trial balance reports, balance initialization, and financial reports running efficiently. Misuse of dimension sets can degrade system performance for all users.
 
 ## Update vs. rebuild
 
 Two options are available for refreshing dimension set balances. Run these updates before generating reports rather than concurrently to ensure the accuracy of their data.
 
-- **Update balances** – This option processes only the transactions that were posted since the last update. It's a fast, incremental operation that adds new records to the existing balance.
+- **Update balances** – This option processes only the transactions that you posted since the last update. It's a fast, incremental operation that adds new records to the existing balance.
 - **Rebuild balances** – This option clears all existing balance data and recalculates from the very beginning. It's a much more resource-intensive operation.
 
 In most situations, use **Update balances**. It's faster and places less load on the system.
@@ -39,19 +39,19 @@ Use **Rebuild balances** sparingly. In most cases, **Update balances** is suffic
 > [!NOTE]
 >If Trial Balance is correct but external reporting (Financial Reporter, MRDB) isn't, clearing or rebuilding balances has no impact and shouldn't be done.
 
-If a balance rebuild doesn't resolve the discrepancy, queue the **Rebuild dimension data from source records** data maintenance action. This resyncs dimension display values and data area data from their source records and can correct out-of-balance conditions that a rebuild alone doesn't fix.
+If a balance rebuild doesn't resolve the discrepancy, queue the **Rebuild dimension data from source records** data maintenance action. This action resynchronizes dimension display values and data area data from their source records. It can correct out-of-balance conditions that a rebuild alone doesn't fix.
 
 ## Limit the scope of balance calculations
 
-Where possible, narrow the scope of balance calculations to avoid unnecessary processing.
+Narrow the scope of balance calculations to avoid unnecessary processing.
 
 - **Use date-range specific rebuilds** – Use date ranges that specifically target transactions that aren't yet added to the balances.
 - **Don't include the current date in balance updates** - Including the current date in balance updates can lead to problems, as it settles balances while transactions are still being posted. At the latest, extend your date range days up to the current date minus 1.
-- **Run calculations per legal entity** – Update balances per legal entity. For specific business cases, administrators can update balances for all legal entities via the dimension set form, though this process can be computationally expensive and time-consuming.
+- **Run calculations per legal entity** – Update balances per legal entity. For specific business cases, administrators can update balances for all legal entities through the dimension set page, though this process can be computationally expensive and time-consuming.
 
 ## Time balance calculations carefully
 
-When and how you run balance calculations has a significant impact on overall system performance.
+When and how you run balance calculations significantly affects overall system performance.
 
 - **Run calculations sequentially** – Avoid running balance calculations for multiple dimension sets at the same time. Simultaneous balance updates and rebuilds can cause blocking and slowed performance. Running them one after another produces better performance than running them in parallel.
 - **Avoid updates and rebuilds during year-end close** – Don't run updates or rebuilds while the year-end close process is in progress. Before year-end close completes, it automatically performs a targeted rebuild on a date range that might contain a large number of transactions. Running rebuilds in parallel during this time can be computationally expensive and unnecessary.
@@ -64,12 +64,12 @@ Each update and rebuild cycle processes every active dimension set. Creating dim
 For dimension sets that are no longer in use, consider clearing their balances rather than deleting them:
 
 - Clearing balances effectively deactivates a dimension set without removing it, so it remains available if you need it again in the future.
-- To clear balances, go to **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**, and then select **Clear balances**.
+- To clear balances, go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimension sets**, and then select **Clear balances**.
 
 ## Schedule automated balance updates
 
 > [!NOTE]
->The [Performance enhancement for general ledger dimension set balance calculation](financial-dimension-set-new.md) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
+> The [Performance enhancement for general ledger dimension set balance calculation](financial-dimension-set-new.md) feature automatically schedules dimension set balance updates. Users with this feature enabled should disregard this best practice.
 
 For environments where large transaction volumes are regularly posted or imported, scheduling periodic balance updates helps keep the number of unprocessed transactions low and thus prevents slowdowns when running reports. Schedule these jobs during off-peak hours, such as evenings, to minimize the impact on other users.
 
@@ -111,7 +111,7 @@ Also, disable **change tracking** on dimension set tables where it's not require
 
 ## Don't delete and recreate dimension sets
 
-Don't delete and recreate a dimension set to resolve performance problems. Deleting and creating dimension sets can be compute and time intensive processes. These processes lead to further delays and slowdowns.
+Don't delete and recreate a dimension set to resolve performance problems. Deleting and creating dimension sets can be compute-intensive and time-intensive processes. These processes lead to further delays and slowdowns.
 
 If you no longer need a dimension set, you might want to **clear** the balances instead of deleting the dimension set. For more information, see the **Only create dimension sets you need** section. If problems persist after following these practices, contact customer support.
 
