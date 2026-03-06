@@ -367,7 +367,7 @@ The order creation experience depends on the Organization account selection made
 Creating a sales order for the Contact at a given Organization will adhere to the specific configurations for the selected Organization account. Some example areas include:
 - Product eligibility through catalogs (based on Organization account's Customer hierarchy)
 - Pricing and discounts
-- Credit limits for on-account payments
+- Organization account’s Credit limits for on-account payments
 
 
 > [!NOTE] 
