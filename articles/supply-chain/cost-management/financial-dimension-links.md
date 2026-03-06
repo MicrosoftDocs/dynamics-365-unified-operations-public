@@ -64,7 +64,7 @@ Before you configure a dimension link, complete the following setup in General l
 1. Go to **General ledger** \> **Chart of accounts** \> **Structures** \> **Configure account structures**.
 2. Create a new structure, or edit an existing one.
 3. Select **Add segment** and add your financial dimension.
-4. Configure blank allowances as needed, then select **Activate**.
+4. Select **Activate**.
 
 ### Add the account structure to the ledger
 
