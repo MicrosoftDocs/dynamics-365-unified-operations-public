@@ -9,7 +9,7 @@ ms.search.region: Global
 ms.author: v-jcavataio
 ms.search.validFrom: 2021-01-31
 ms.search.form: RetailOperations
-ms.custom: 
+ms.custom:
   - bap-template
 ---
 # B2B multioutlet end-to-end experiences and configuration steps (preview)
@@ -52,15 +52,15 @@ Contacts represent individual B2B users who can access the B2B eCommerce storefr
 1. Select Select.
 
  **Behavior**
--	The list shows all Contacts that are available to be linked to the Organization account or Organization's Customer hierarchy.
--	In prospect-based onboarding flows, the initial Contact is already linked to the Organization account and assigned the Admin role.
--	If a selected Contact does not exist under the linked Organization account, a new Contact is created under that Organization account, reflecting updates made to any instance of that Contact.
+- The list shows all Contacts that are available to be linked to the Organization account or Organization's Customer hierarchy.
+- In prospect-based onboarding flows, the initial Contact is already linked to the Organization account and assigned the Admin role.
+- If a selected Contact does not exist under the linked Organization account, a new Contact is created under that Organization account, reflecting updates made to any instance of that Contact.
 
 
 #### Enable the Contact for storefront access
 A Contact must be enabled before the user can sign in to the B2B storefront.
-1.	Select the Contact in the Hierarchy fast-tab.
-1.	Select Enable.
+1. Select the Contact in the Hierarchy fast-tab.
+1. Select Enable.
 
 > [!IMPORTANT]
 > Only enabled Contacts can sign in and access the storefront. Contacts that are linked but not enabled cannot place orders or view Organization data.
@@ -276,7 +276,7 @@ This job synchronizes:
 
 After synchronization completes, the updated user access, roles, and Organization associations are reflected in the B2B storefront and Customer Service experiences.
 
-## Storefront Experiences
+## Storefront experiences
 ### Storefront sign up
 
 The sign-up process allows a Contact to create credentials and access the B2B storefront.
@@ -339,7 +339,7 @@ To review available catalogs
 **Expected outcome**
 When the active Organization changes, the available catalogs may also change, depending on Customer hierarchy and channel configuration.
 
-## Call Center (Customer Service) experiences 
+## Call center (customer service) experiences
 ### Review Contact information on placed orders
 Orders placed through the storefront include Contact-level tracking.
   -	The Contact field appears in the General section of the sales order header.
@@ -365,7 +365,7 @@ The order creation experience depends on the Organization account selection made
         - The flow proceeds directly to sales order creation for the Call center user.
 
 Creating a sales order for the Contact at a given Organization will adhere to the specific configurations for the selected Organization account. Some example areas include:
-- Product eligiblity through catalogs (based on Organization account's Customer hierarchy)
+- Product eligibility through catalogs (based on Organization account's Customer hierarchy)
 - Pricing and discounts
 - Credit limits for on-account payments
 
