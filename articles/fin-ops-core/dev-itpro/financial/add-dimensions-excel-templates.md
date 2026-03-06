@@ -91,7 +91,7 @@ The only value that is present on Microsoft Excel templates after installation i
 9.  Build the project and then synchronize it with the database.
 
 > [!NOTE]
-> The relationship lookup control in Excel is limited to 999 items. This is a platform restriction, not a dimension framework limitation. Users should use the filtering capabilities to narrow results rather than scrolling through all possible values.
+> The lookup control in Excel is limited to 999 items. Users should use the filtering capabilities to narrow results rather than scrolling through all possible values.
 
 ## Additional resources
 
