@@ -64,13 +64,12 @@ There are five main EDTs used in the dimension framework.
 | Default main accounts or non-ledger accounts | DimensionDynamicDefaultAccount | DimensionAttributeValueCombination |
 
 > [!NOTE]
-> There are a few EDTs extending `LedgerDimensionBudget` that are used only in special cases related to Budget. These EDTs have been approved by the dimensions team. In most cases, the five standard EDTs should be sufficient. For anything module-specific that doesn't fall into the categories above, contact the dimensions framework team to discuss the scenario.
+> Module-specific scenarios that do not fall into any of the above categories should not be stored in dimension tables.
 
 ## Impact of incorrect EDT usage
 
 - **Dimension reference scanners** can't correctly identify dimension usage on fields with the wrong EDT.
 - **Data maintenance actions** fail to process dimension data correctly, which can lead to data corruption during cleanup.
-- **Financial tags migration** can be prevented from detecting all references, because the scanners that support converting financial dimensions to financial tags rely on correct EDT usage.
 
 ## See also
 
