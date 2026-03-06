@@ -35,10 +35,14 @@ For more information about how to plan and configure the chart of accounts and m
 > [!IMPORTANT]
 > If transactions have been posted in the legal entity, the chart of accounts cannot be changed. There is no workaround for this restriction.
 
-If no transactions have been posted, you may still encounter the following error when attempting to change the chart of accounts:
+If no transactions have been posted, you may still encounter an error like one of the following when attempting to change the chart of accounts:
 
 ```
-The chart of accounts is in use as a default account and cannot be changed.
+The chart of accounts is used by default accounts in this ledger. It cannot be changed until they are removed from posting profiles. Please see the infolog for a list of where they are in use.
+```
+
+```
+Main accounts from chart of accounts %1 have been assigned to posting profiles. The chart of accounts can be changed only after all main accounts are removed from all posting profiles within the ledger for legal entity %2.
 ```
 
 This error occurs when one or more posting profiles in the legal entity have default accounts that reference the current chart of accounts. Because main accounts are specific to a chart of accounts, the system cannot automatically map them to accounts in a different chart of accounts, so the posting profiles must be cleared manually before the change is allowed.
