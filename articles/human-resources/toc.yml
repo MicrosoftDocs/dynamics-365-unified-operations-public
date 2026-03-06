@@ -1080,109 +1080,109 @@ items:
       - name: Payroll entities
         items:
         - name: Bank account disbursement
-          href: PayIntV1BankAccountDisbursementEntity.md
+          href: payroll-integration-bank-account-disbursement.md
         - name: Person name historical
-          href: PayIntV1DirPersonNameHistoricalEntity.md
+          href: payroll-integration-person-name-historical.md
         - name: Employee fixed compensation
-          href: PayIntV1HcmCompFixedEmplEntity.md
+          href: payroll-integration-compensation-fixed-employee.md
         - name: Fixed compensation plan
-          href: PayIntV1HcmCompFixedPlanTableEntity.md
+          href: payroll-integration-compensation-fixed-plan-table.md
         - name: Variable compensation plan
-          href: PayIntV1HcmCompVarPlanTableEntity.md
+          href: payroll-integration-compensation-variable-plan-table.md
         - name: Employee employment
-          href: PayIntV1HcmEmploymentEmployeeEntity.md
+          href: payroll-integration-employment-employee.md
         - name: Employment term
-          href: PayIntV1HcmEmploymentTermEntity.md
+          href: payroll-integration-employment-term.md
         - name: Employment type
-          href: PayIntV1HcmEmploymentTypeEntity.md
+          href: payroll-integration-employment-type.md
         - name: Employment v2
-          href: PayIntV1HcmEmploymentV2Entity.md
+          href: payroll-integration-employment.md
         - name: Identification type
-          href: PayIntV1HcmIdentificationTypeEntity.md
+          href: payroll-integration-identification-type.md
         - name: Base job
-          href: PayIntV1HcmJobBaseEntity.md
+          href: payroll-integration-job-base.md
         - name: Job compensation
-          href: PayIntV1HcmJobCompensationEntity.md
+          href: payroll-integration-job-compensation.md
         - name: Job detail
-          href: PayIntV1HcmJobDetailEntity.md
+          href: payroll-integration-job-detail.md
         - name: Job
-          href: PayIntV1HcmJobEntity.md
+          href: payroll-integration-job.md
         - name: Job family
-          href: PayIntV1HcmJobFamilyEntity.md
+          href: payroll-integration-job-family.md
         - name: Job function
-          href: PayIntV1HcmJobFunctionEntity.md
+          href: payroll-integration-job-function.md
         - name: Job task
-          href: PayIntV1HcmJobTaskEntity.md
+          href: payroll-integration-job-task.md
         - name: Job type
-          href: PayIntV1HcmJobTypeEntity.md
+          href: payroll-integration-job-type.md
         - name: Labor union
-          href: PayIntV1HcmLaborUnionEntity.md
+          href: payroll-integration-labor-union.md
         - name: Person details
-          href: PayIntV1HcmPersonDetailsEntity.md
+          href: payroll-integration-person-details.md
         - name: Person identification number
-          href: PayIntV1HcmPersonIdentificationNumberEntity.md
+          href: payroll-integration-person-identification-number.md
         - name: Base position
-          href: PayIntV1HcmPositionBaseEntity.md
+          href: payroll-integration-position-base.md
         - name: Position default dimension
-          href: PayIntV1HcmPositionDefaultDimensionEntity.md
+          href: payroll-integration-position-default-dimension.md
         - name: Position detail
-          href: PayIntV1HcmPositionDetailEntity.md
+          href: payroll-integration-position-detail.md
         - name: Position
-          href: PayIntV1HcmPositionEntity.md
+          href: payroll-integration-position.md
         - name: Position hierarchy
-          href: PayIntV1HcmPositionHierarchyEntity.md
+          href: payroll-integration-position-hierarchy.md
         - name: Position hierarchy type
-          href: PayIntV1HcmPositionHierarchyTypeEntity.md
+          href: payroll-integration-position-hierarchy-type.md
         - name: Position timeline
-          href: PayIntV1HcmPositionTimelineEntity.md
+          href: payroll-integration-position-timeline.md
         - name: Position type
-          href: PayIntV1HcmPositionTypeEntity.md
+          href: payroll-integration-position-type.md
         - name: Position worker assignment
-          href: PayIntV1HcmPositionWorkerAssignmentEntity.md
+          href: payroll-integration-position-worker-assignment.md
         - name: Unions
-          href: PayIntV1HcmUnionsEntity.md
+          href: payroll-integration-unions.md
         - name: Variable compensation award
-          href: PayIntV1HcmVariableCompensationAwardEntity.md
+          href: payroll-integration-variable-compensation-award.md
         - name: Variable compensation enrollment
-          href: PayIntV1HcmVariableCompensationEnrollmentEntity.md
+          href: payroll-integration-variable-compensation-enrollment.md
         - name: Variable compensation type
-          href: PayIntV1HcmVariableCompensationTypeEntity.md
+          href: payroll-integration-variable-compensation-type.md
         - name: Worker payroll info
-          href: PayIntV1HcmWorkerPayrollInfoEntity.md
+          href: payroll-integration-worker-payroll-info.md
         - name: Worker postal address
-          href: PayIntV1HcmWorkerPostalAddressEntity.md
+          href: payroll-integration-worker-postal-address.md
         - name: Leave bank transaction
-          href: PayIntV1LeaveBankTransactionEntity.md
+          href: payroll-integration-leave-bank-transaction.md
         - name: Legal entity
-          href: PayIntV1OMLegalEntity.md
+          href: payroll-integration-legal-entity.md
         - name: Payroll employee
-          href: PayIntV1PayrollEmployeeEntity.md
+          href: payroll-integration-payroll-employee.md
         - name: Payroll fixed compensation plan
-          href: PayIntV1PayrollFixedCompensationPlanEntity.md
+          href: payroll-integration-payroll-fixed-compensation-plan.md
         - name: Payroll position details
-          href: PayIntV1PayrollPositionDetailsEntity.md
+          href: payroll-integration-payroll-position-details.md
         - name: Payroll position
-          href: PayIntV1PayrollPositionEntity.md
+          href: payroll-integration-payroll-position.md
         - name: Payroll position job
-          href: PayIntV1PayrollPositionJobEntity.md
+          href: payroll-integration-payroll-position-job.md
         - name: Payroll worker address current
-          href: PayIntV1PayrollWorkerAddressCurrentEntity.md
+          href: payroll-integration-payroll-worker-address-current.md
         - name: Position union agreement
-          href: PayIntV1PositionUnionAgreementEntity.md
+          href: payroll-integration-position-union-agreement.md
         - name: Worker bank account
-          href: PayIntV1WorkerBankAccountEntity.md
+          href: payroll-integration-worker-bank-account.md
         - name: Worker contact
-          href: PayIntV1WorkerContactEntity.md
+          href: payroll-integration-worker-contact.md
         - name: Worker
-          href: PayIntV1WorkerEntity.md
+          href: payroll-integration-worker.md
         - name: Employment detail
-          href: PayIntV2EmploymentDetailEntity.md
+          href: payroll-integration-employment-detail.md
         - name: Employee v2
-          href: PayIntV2HcmEmployeeV2Entity.md
+          href: payroll-integration-employee.md
         - name: Variable compensation enrollment position
-          href: PayIntV2HcmVariableCompensationEnrollmentPositionEntity.md
+          href: payroll-integration-variable-compensation-enrollment-position.md
         - name: Base worker
-          href: PayIntV2HcmWorkerBaseEntity.md
+          href: payroll-integration-worker-base.md
       - name: Leave and absence related entities
         items:
           - name: Leave balance
@@ -1220,7 +1220,7 @@ items:
           - name: API payroll integration with Dayforce
             items:
              - name: Setup instructions
-               href: hr-admin-payroll-api-integration-dayforce-updated.md
+               href: hr-admin-payroll-api-integration-dayforce.md
              - name: Mshr Payroll entities
                items:
                 - name: Payroll employee

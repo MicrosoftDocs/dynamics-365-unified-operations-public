@@ -35,7 +35,7 @@ To be able to use the payroll address, you must enable it from the [shared param
 
 ## Define the identification type
 
-To expose the identification type ID in the [payroll employee entity](PayIntV1PayrollEmployeeEntity.md), you must [configure human resources parameters](hr-setup-shared-parameters.md) for each company.
+To expose the identification type ID in the [payroll employee entity](payroll-integration-payroll-employee.md), you must [configure human resources parameters](hr-setup-shared-parameters.md) for each company.
 
 1. In the **Compensation management** workspace, under links, select **Human Resources Parameters**. 
 2. On the **Payroll integration** tab, specify the value of the following fields.
@@ -43,7 +43,7 @@ To expose the identification type ID in the [payroll employee entity](PayIntV1Pa
 | Field | Description |
 | --- | --- |
 | Use identification types in payroll processing | When this option is selected, the selected type ID will be exposed in the payroll employee entity. |
-| Identification type | The identification type to be exposed in the field **mshr_payrollemployeeentityid** of the [payroll employee entity](PayIntV1PayrollEmployeeEntity.md). |
+| Identification type | The identification type to be exposed in the field **mshr_payrollemployeeentityid** of the [payroll employee entity](payroll-integration-payroll-employee.md). |
 
 ## See also
 

@@ -71,12 +71,12 @@ The following diagram illustrates relationships within the API. Several types ha
 
 Entities:
 
-- [Payroll employee](PayIntV1PayrollEmployeeEntity.md)
-- [Payroll worker address](PayIntV1PayrollWorkerAddressCurrentEntity.md)
-- [Payroll fixed compensation plan](PayIntV1HcmCompFixedEmplEntity.md)
-- [Payroll variable compensation enrollment](PayIntV1HcmVariableCompensationEnrollmentEntity.md)
-- [Payroll position job](PayIntV1PayrollPositionJobEntity.md)
-- [Payroll position](PayIntV1HcmPositionEntity.md)
+- [Payroll employee](payroll-integration-payroll-employee.md)
+- [Payroll worker address](payroll-integration-payroll-worker-address-current.md)
+- [Payroll fixed compensation plan](payroll-integration-compensation-fixed-employee.md)
+- [Payroll variable compensation enrollment](payroll-integration-variable-compensation-enrollment.md)
+- [Payroll position job](payroll-integration-payroll-position-job.md)
+- [Payroll position](payroll-integration-position.md)
 
 ## See also
 

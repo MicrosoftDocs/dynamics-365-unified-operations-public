@@ -74,7 +74,7 @@ Human Resources is a virtual data source in Dataverse. It provides full create, 
 
 ### Register the app in Microsoft Azure
 
-You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see Quickstart: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app).
+You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see Quickstart: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app).
 
 1.	Open the [Microsoft Azure portal](https://portal.azure.com/).
 2.	In the Azure services list, select **App registrations**.
@@ -150,7 +150,7 @@ Following entities are present for dayforce integration [Mshr payroll entities](
 
 ## Change tracking
 
-The change tracking feature in Dataverse detects data that has changed since the data was originally extracted or last synced. For more information, see [Use change tracking to synchronize data with external systems](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).  
+The change tracking feature in Dataverse detects data that has changed since the data was originally extracted or last synced. For more information, see [Use change tracking to synchronize data with external systems](https://learn.microsoft.com/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).  
 
 To enable change tracking, follow these steps.
 1.	Go to **System administration > Data management > Data entities**.
