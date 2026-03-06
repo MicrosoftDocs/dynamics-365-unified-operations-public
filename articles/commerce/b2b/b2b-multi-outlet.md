@@ -92,7 +92,7 @@ Credit limit evaluation continues to be performed at the **Organization (custome
  
 ### Business partner prospect approval flow updates
 
-The B2B multioutlet feature updates the standard business partner prospect flow to automatically create a contact associated with the new Organization instead of a "person" type account and link it to a customer hierarchy with no additional configuration changes required.
+The B2B multioutlet feature updates the standard business partner prospect flow to automatically create a Contact associated with the new Organization instead of a "person" type Customer account and link it to a Customer Hierarchy with no additional configuration changes required.
  
 ### Manage user access through customer hierarchies in D365 Finance and Operations
  
@@ -104,13 +104,15 @@ Common administration actions include:
 - **Assign roles** (Administrator or User) at the hierarchy level to control permissions.
 - **Enable/Disable access** for a contact (without removing historical associations).
  
-Associating contacts using the customer hierarchy has the same effect as associating them through the Organization account. It provides consistent access behavior, regardless of where an administrator makes the change. This alignment helps ensure that user status remains consistent across Organization accounts, customer hierarchies, and Commerce channels.
+Associating Contacts using the Customer hierarchy has the same effect as associating them through the Organization account. It provides consistent access behavior, regardless of where an administrator makes the change. This alignment helps ensure that user status remains consistent across Organization accounts, Customer hierarchies, and Commerce channels.
  
 #### Disable contacts while preserving audit history
  
 When an administrator disables a contact in the customer hierarchy:
  
-- The contact loses storefront access for the selected Organization/outlet.
+- The contact loses eCommerce B2B storefront access for the selected Organization/outlet.
+- Call center customer service agents can no longer create a sales order using the disabled contact information.
+- Call center representative cannot order on behalf of the disabled contact via eCommerce B2B Storefront. 
 - The association remains for auditing and reporting.
 - Existing orders and historical transactions remain unchanged.
  
@@ -125,9 +127,9 @@ When a contact is disabled, administrators are prompted to enter a reason (for e
 For users who can act on behalf of multiple Organizations/outlets:
  
 - After sign-in, the storefront determines which Organizations/outlets the contact can access.
-- If multiple Organizations/outlets are available, the user can select the active purchasing context.
+- If multiple Organizations/outlets are available, the user can select the active Outlet purchasing context.
 - Pricing, catalogs, inventory availability, and checkout behavior update based on the selected Organization/outlet.
-- The storefront indicates the active purchasing context.
+- The storefront indicates the active purchasing context based on the selected Outlet.
 - Each Organization/outlet has its own shopping cart, which helps keep purchasing context consistent.
  
 #### Prospect workflow and sign-in for contact-based users
