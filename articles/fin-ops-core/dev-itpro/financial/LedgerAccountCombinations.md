@@ -381,38 +381,39 @@ For example, an account structure has **MainAccount-Department** in one company 
 
 This same behavior applies to the **DimensionCombinationEntity** and **DimensionSetEntity**. Querying these entities can return seemingly duplicate rows based on **DisplayValue**, but the underlying records differ. Common reasons include:
 
-- **Company-striped data** — Dimension data is stored globally but can reference company-specific backing records. A default dimension of "Department 001 - Project P012" could exist separately for USMF, USSI, and RUMF, producing three unique rows. The entity doesn't expose the data area; that's held by the owning table with the FK reference.
+- **Company-striped data** — Dimension data is stored globally but can reference company-specific backing records. A default dimension of "Department 001 - Project P012" could exist separately for USMF, USSI, and RUMF, producing three unique rows. The entity doesn't expose the data area; that's held by the owning table with the foreign key reference.
 - **Integration format excludes dimensions** — If the integration format exports only "Department - Project" but the system tracks "Department - Customer - Project - Employee", two records with different Customer/Employee values collapse to the same DisplayValue in the entity output.
 - **Different ledger dimension types** — Default accounts, ledger accounts, budget accounts, budget control accounts, and focus balance accounts are all stored in DimensionAttributeValueCombination. Records of different types can share the same DisplayValue.
 - **Hash algorithm migration** — The HashV2 update required creating new records for some combinations that couldn't be re-hashed in place. The old and new records differ only in the Hash and HashVersion columns, which aren't exposed on the entity.
 
-### Dimension FK references can't be shared between data areas
+### Dimension foreign key references can't be shared between data areas
 
-Dimension FK columns (such as **DefaultDimension** on **CustTable**) must not be replicated between companies through cross-company data sharing (SysDataSharing, DuplicateRecordSharing) or manual record copying.
+Dimension foreign key columns (such as **DefaultDimension** on **CustTable**) must not be replicated between companies through cross-company data sharing (SysDataSharing, DuplicateRecordSharing) or manual record copying.
 
 The dimension tables (**DimensionAttributeValueSet**, **DimensionAttributeValueCombination**) are not company-specific (SaveDataPerCompany = No), but the records they reference internally often are. A default dimension set can contain segment references that point back to RecId values in company-specific tables like **CustTable** or **ProjTable**. Consider this example:
 
-```
-CustTable (SaveDataPerCompany: Yes)
+**CustTable (SaveDataPerCompany: Yes)**
 
-AccountNum     DataArea     RecId     DefaultDim
-CUST001        USMF         201       401
+| AccountNum | DataArea | RecId | DefaultDim |
+|------------|----------|-------|------------|
+| CUST001 | USMF | 201 | 401 |
 
-DimensionAttributeValueSet (SaveDataPerCompany: No)
+**DimensionAttributeValueSet (SaveDataPerCompany: No)**
 
-RecId
-401
+| RecId |
+|-------|
+| 401 |
 
-DimensionAttributeValueSetItem (SaveDataPerCompany: No)
+**DimensionAttributeValueSetItem (SaveDataPerCompany: No)**
 
-DimensionSource     DimensionValueReference     ParentRecId     Segment
-CustTable           201                         401             1  (CUST001)
-ProjTable           301                         401             2  (ProjA)
-```
+| DimensionSource | DimensionValueReference | ParentRecId | Segment |
+|-----------------|-------------------------|-------------|---------|
+| CustTable | 201 | 401 | 1 (CUST001) |
+| ProjTable | 301 | 401 | 2 (ProjA) |
 
 If you replicate the **CustTable** record to another company (RUMF) by copying the row, the new record inherits **DefaultDim = 401**. That dimension set still contains segment references to RecId 201 in USMF's **CustTable** and RecId 301 in USMF's **ProjTable**. Customer CUST001 in RUMF now carries default dimensions that reference the wrong company's data, and this corruption propagates into posted combinations and can split trial balance rows for the same visual key.
 
-There is no workaround. Don't replicate dimension FK values between data areas.
+There is no workaround. Don't replicate dimension foreign key values between data areas.
 
 ### AccountStructure column on DimensionAttributeValueCombination
 

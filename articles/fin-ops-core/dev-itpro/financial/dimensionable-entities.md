@@ -50,7 +50,7 @@ By following these steps, your view automatically appears in the **Use values fr
 DimAttribute___ views serve several purposes in the dimension framework:
 
 - **Identification** — They identify backing tables that hold data that should serve as a source of financial dimension values.
-- **Consistent schema** — They provide a uniform schema across all backing tables: a **Key** (RecId), **Value** (natural key string), and **Name** (description string), with an optional **Category** for striping.
+- **Consistent schema** — They provide a uniform schema across all backing tables: a **Key** (RecId), **Value** (natural key string), and **Name** (description string).
 - **Secure access** — They expose only the surrogate key and natural key mappings needed by the framework, without granting access to other columns on the backing table (such as address, salary, or position data).
 - **Multiple dimension types from a single table** — A range on the view allows a single backing table to supply multiple distinct financial dimensions. For example, the **OMOperatingUnit** table serves as the source for Business Units, Departments, and Cost Centers, each through a separate DimAttribute view with a different range filter.
 - **Alternate name sources** — The extended description (**Name** column) can be sourced from a joined table (such as **DirPartyTable**) rather than the primary backing table, because it's used only for display and not for resolving uniqueness.
@@ -84,9 +84,6 @@ The first step is to create a view in the same model as your backing table. Befo
     > Security access must be granted to non-admin users for the new view.
     > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
     > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.
-
-    > [!WARNING]
-    > If security access isn't granted to the view, non-admin users can still enter dimension values, but the dimension framework can't read the display value back for those users. The framework silently stores a blank display value in the transaction instead of the actual value name. These blanks don't produce an immediate error during data entry. They surface later as **"You must select a value in the [Dimension] field"** or **"dimension missing"** errors at posting time, which can be difficult to trace back to this root cause.
 
 14. Right-click **View** and select **View Code**. Add the following code to the view. This registers it in the dimension framework. Here's an example using the view created for CustTable.
 
@@ -208,7 +205,7 @@ public void persistEntity(DataEntityRuntimeContext _entityCtx)
 
 ## Data entity model references
 
-If you create a `DimensionCombinationEntity` or `DimensionSetEntity` by using the **Add financial Dimensions for OData** add-in in Visual Studio, your custom model must include a reference to the **Dimensions** model. To add the reference, go to **Model Management** > **Update model parameters** in Visual Studio and add **Dimensions** to the referenced model list.
+If you create a `DimensionCombinationEntity` or `DimensionSetEntity` customization by using the **Add financial Dimensions for OData** add-in in Visual Studio, your custom model must include a reference to the **Dimensions** model. To add the reference, go to **Model Management** > **Update model parameters** in Visual Studio and add **Dimensions** to the referenced model list.
 
 If an extension on one of these entities was previously defined in a model that no longer exists, check **Event Viewer** > **Dynamics** > **Ax-Metadata** to identify which models still hold a reference to the extension.
 

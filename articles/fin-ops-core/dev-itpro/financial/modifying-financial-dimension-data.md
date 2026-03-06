@@ -47,22 +47,6 @@ The **DimensionValueDeleteAudit** table is another special case. A row is writte
 > [!WARNING]
 > Frequently deleting records from tables that serve as dimension sources is strongly discouraged. The dimension framework is designed for write-once, reuse-many data. Mass deletes can create data growth and produce duplication in dimension data that affects reporting.
 
-If **DimensionValueDeleteAudit** is consuming excessive disk space, you can clear the **CallStack** column (which reclaims space while preserving rows and their audit identity) or delete old rows. Either operation can be run by using the [zero-downtime script execution tool](/dynamics365/fin-ops-core/dev-itpro/deployment/run-custom-scripts) with the following X++ script. Uncomment only one option and verify the scope before running.
-
-```xpp
-DimensionValueDeleteAudit audit;
-
-ttsBegin;
-
-// Option 1: Delete records older than 1 year
-// delete_from audit where audit.CreatedDateTime < DateTimeUtil::date(DateTimeUtil::addYears(DateTimeUtil::utcNow(), -1));
-
-// Option 2: Clear only the CallStack column to reclaim space while keeping the rows
-// update_recordset audit setting CallStack = '';
-
-ttsCommit;
-```
-
 ### Impact on balances and reporting
 
 Modifying posted dimension data alters that data for all posted transactions that reference it, not just the current document. This can cause balance discrepancies and reporting problems that are difficult to identify and clean up after the fact. Because the dimension framework doesn't maintain reference counts, there's no straightforward way to assess the full scope of the impact before it occurs.
@@ -75,12 +59,25 @@ It's important that you understand this guideline when you're considering backup
 
 Renaming a backing entity value directly in the database (for example, renaming a customer account or department code through SQL) bypasses the `.update()` and `.renamePrimaryKey()` methods on the backing table that contain synchronization code for the dimension framework. This can result in inconsistent, contradictory names where the backing entity shows the new name but dimension records still reference the old one. For further guidance on this issue, see [Dimension value shows a wrongly named or cased natural key](/dynamics-365/finance/general-ledger/dim-value-name-wrong-or-incorrect-case.md).
 
-If dimension display values are already out of sync with the backing record, on version 10.0.18 and later you can resynchronize them by using the Data Maintenance portal:
+If dimension display values are already out of sync with the backing record, you can resynchronize them in one of two ways.
+
+**Option 1: Use the Data Maintenance portal (version 10.0.18 and later)**
 
 1. Navigate to the **Data Maintenance portal**.
 2. Select **Rebuild dimension data from source records**.
 3. Select **Run**.
 4. Wait for the batch job to complete. When the status shows **Complete**, the dimension display values are resynchronized with the underlying backing records.
+
+**Option 2: Rename the backing record through the application**
+
+For a single record, you can trigger resynchronization without running a batch job by renaming the backing entity value through the application UI:
+
+1. Open the backing entity record (for example, the customer or department).
+2. Rename the value to a temporary name (for example, prepend an underscore: `_DEPT001`).
+3. Save the record. This triggers the `.renamePrimaryKey()` method, which synchronizes the dimension display values to the temporary name.
+4. Rename the value back to its original name and save again. This triggers a second synchronization, leaving dimension display values consistent with the correct original name.
+
+This approach works because each save through the application invokes the synchronization hooks that a direct SQL rename bypasses.
 
 For more information about how the dimension framework uses hashes internally and why modifications break data integrity, see [Ledger account combinations](/dynamics365/fin-ops-core/dev-itpro/financial/LedgerAccountCombinations.md).
 
