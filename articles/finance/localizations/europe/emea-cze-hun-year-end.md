@@ -5,7 +5,6 @@ author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: overview
 ms.date: 03/06/2026
-ms.custom:
 ms.reviewer: johnmichalak
 ms.search.region: Czech Republic, Hungary
 ms.search.validFrom: 2016-02-28
