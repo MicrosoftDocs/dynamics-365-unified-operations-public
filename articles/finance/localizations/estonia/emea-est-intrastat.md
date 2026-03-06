@@ -132,7 +132,7 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination or consignment are transferred.
+On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country/region of destination or consignment are transferred.
 
 You can also manually enter transactions by selecting **New** on the Action Pane.
 
@@ -247,13 +247,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 1. Select **OK** to close the **Intrastat Filter** dialog box.
 1. Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
 
-   :::image type="content" source="../media/intrastat_ee_1.png" alt-text="Screenshot of the line that represents the sales order on the Intrastat page."
-:::
+   :::image type="content" source="../media/intrastat_ee_1.png" alt-text="Screenshot of the line that represents the sales order on the Intrastat page.":::
 
 1. Select the transaction line, and then select the **General** tab to view more details.
 
-   :::image type="content" source="../media/intrastat_ee_2.png" alt-text="Screenshot of sales order details on the General tab of the Intrastat page."
-:::
+   :::image type="content" source="../media/intrastat_ee_2.png" alt-text="Screenshot of sales order details on the General tab of the Intrastat page.":::
 
 1. On the Action Pane, select **Output** > **Report**.
 1. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
@@ -279,8 +277,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 1. Review the report in Excel format that is generated.
 
-    :::image type="content" source="../media/intrastat_ee_3.png" alt-text="Screenshot of the Intrastat report on dispatches."
-:::
+    :::image type="content" source="../media/intrastat_ee_3.png" alt-text="Screenshot of the Intrastat report on dispatches.":::
 
 ### Create a purchase order
 
@@ -310,13 +307,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 1. Select **OK** to close the **Intrastat Filter** dialog box.
 1. Select **OK** to transfer the transactions, and review the Intrastat journal.
 
-    :::image type="content" source="../media/intrastat_ee_4.png" alt-text="Screenshot of the line that represents the purchase order on the Intrastat page."
-:::
+    :::image type="content" source="../media/intrastat_ee_4.png" alt-text="Screenshot of the line that represents the purchase order on the Intrastat page.":::
 
 1. Review the information on the **General** tab for the purchase order.
 
-    :::image type="content" source="../media/intrastat_ee_5.png" alt-text="Screenshot of purchase order details on the General tab of the Intrastat page."
-:::
+    :::image type="content" source="../media/intrastat_ee_5.png" alt-text="Screenshot of purchase order details on the General tab of the Intrastat page.":::
 
 1. On the Action Pane, select **Output** > **Report**.
 1. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
@@ -340,7 +335,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 1. Review the report in Excel format that is generated.
 
-    :::image type="content" source="../media/intrastat_ee_6.png" alt-text="Screenshot of the Intrastat report on arrivals."
-:::
+    :::image type="content" source="../media/intrastat_ee_6.png" alt-text="Screenshot of the Intrastat report on arrivals.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
