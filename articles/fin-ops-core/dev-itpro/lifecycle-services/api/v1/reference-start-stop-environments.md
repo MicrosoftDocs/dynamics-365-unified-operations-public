@@ -3,7 +3,7 @@ title: Start and stop environments
 description: Learn about how you can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: laneswenka
 ms.author: laswenka
-ms.date: 08/17/2021
+ms.date: 03/06/2026
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -14,21 +14,23 @@ ms.search.validFrom: 2021-01-31
 # Start and stop environments
 
 [!include [banner](../../../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
-You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. Using these APIs will ensure the LCS environment status is synced with the actual environment. 
-
-Note that the same validation rules from the details page in LCS apply to the API.
+You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) by using the LCS Environment API. By using these APIs, you ensure that the LCS environment status stays in sync with the actual environment. 
 
 > [!NOTE]
-> - Only **Customer-managed** environments are supported. Self-service environments do not have the same concept of stop and start and are not supported by this API. Microsoft-managed environments are not supported.
-> - These APIs will trigger/invoke the operation. A successful response only indicates that the trigger was successful.
-> - For **stop**, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
-> - For **start**, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
+> The same validation rules that apply to the details page in LCS also apply to the API.
+
+> [!NOTE]
+> - Only **Customer-managed** environments are supported. Self-service environments don't have the same concept of stop and start, so they're not supported by this API. Microsoft-managed environments aren't supported.
+> - These APIs trigger the operation. A successful response only indicates that the trigger was successful.
+> - For **stop**, the API returns an error if the environment is already undergoing another operation or if the environment is already stopped.
+> - For **start**, the API returns an error if the environment is already undergoing another operation but returns success if the environment is already started.
 
 
 ## Permissions
 
-One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) content.
+You need one of the following permissions to call this API. For more information about permissions and how to select them, see [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md).
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
@@ -36,7 +38,7 @@ One of the following permissions is required to call this API. For more informat
 
 ## HTTP request
 
-Use the following POST method to send an HTTP request to stop or start an environment. 
+Use the following POST method to send an HTTP request that stops or starts an environment. 
 
 **Stop an environment**
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +66,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-The response is always a **200 OK** response, unless you aren't correctly authenticated. Be sure to use the **IsSuccess** property to evaluate the success or failure of the action.
+The response is always a **200 OK** response, unless you're incorrectly authenticated. Use the **IsSuccess** property to evaluate the success or failure of the action.
 
 ## Example
 
@@ -84,20 +86,20 @@ POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
 ```
 ## Rate limits
 
-To better load balance the request, there are rate limits on the Start and Stop API: 
+To better load balance the request, the Start and Stop APIs have rate limits: 
 
-For **Start** API, the following limits will be enforced:
+For the **Start** API, the following limits apply:
 
- * 1 call for each environment for 5 minutes
- * 30 calls for each user for 30 minutes
+ * 1 call for each environment every 5 minutes
+ * 30 calls for each user every 30 minutes
                 
-For **Stop** API, the following limits will be enforced:
+For the **Stop** API, the following limits apply:
 
- * 1 call for each environment for 5 minutes
- * 30 calls for each user for 30 minutes
+ * 1 call for each environment every 5 minutes
+ * 30 calls for each user every 30 minutes
 
 > [!NOTE]
-> Requests that exceed the limits will be rejected with a “HTTP 429 Too Many Requests” response. The **retry-after** header will indicate the number of seconds when the request can be retried.
+> The API rejects requests that exceed these limits and returns a `HTTP 429 Too Many Requests` response. The **retry-after** header shows the number of seconds before you can retry the request.
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

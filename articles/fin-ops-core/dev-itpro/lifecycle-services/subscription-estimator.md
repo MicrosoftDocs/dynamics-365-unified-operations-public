@@ -4,7 +4,7 @@ description: Learn about how to use the Subscription estimator tool that's avail
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,6 +18,7 @@ ms.custom:
 # Subscription estimator in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 Subscription estimator is a tool that's available in Microsoft Dynamics Lifecycle Services. Microsoft uses this tool to estimate the initial size of the production environment that it must provision for a customer. Before customers can request deployment of a production environment, they must estimate their peak workloads in terms of transaction counts and then upload that information to Lifecycle Services. By using the details of user licenses and transaction counts to infer subscription requirements, the Subscription estimator tool helps ensure that the provisioned environment meets the customer's business requirements.
 

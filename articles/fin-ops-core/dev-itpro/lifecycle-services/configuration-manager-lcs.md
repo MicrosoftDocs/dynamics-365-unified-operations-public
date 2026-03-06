@@ -4,7 +4,7 @@ description: The Configuration manager (beta) functionality lets you copy a conf
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -18,6 +18,7 @@ ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 You can use the Configuration manager to copy configurations from and to Dynamics AX 2012 R3 environments that meet the following criteria:
 -   Managed as part of a Lifecycle Services project

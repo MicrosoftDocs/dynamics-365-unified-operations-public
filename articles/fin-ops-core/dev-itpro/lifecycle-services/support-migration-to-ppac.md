@@ -4,7 +4,7 @@ description: Learn about the removal of Microsoft Dynamics Lifecycle Services Su
 author: dgorn
 ms.author: dgorn
 ms.topic: article
-ms.date: 02/22/2024
+ms.date: 03/06/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -13,6 +13,7 @@ ms.reviewer: johnmichalak
 # Migration of the Lifecycle Services Support experience to Power Platform admin center
 
 [!include[banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 To consolidate related functionality from multiple sites and more effectively provide Help content, the **Support** page in Microsoft Dynamics Lifecycle Services is being retired. Users will transition to [Power Platform admin center](/power-platform/admin/admin-documentation) and use it to submit and view support requests.
 

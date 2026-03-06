@@ -4,7 +4,7 @@ description: Learn about queries in the SQL Insights tab and how they should be 
 author: sericks007
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,6 +16,7 @@ ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 # Query cookbook
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services. It explains how to use these queries when troubleshooting performance problems. For more information about this feature, see [Performance troubleshooting using tools in Lifecycle Services](performancetroubleshooting.md).
 

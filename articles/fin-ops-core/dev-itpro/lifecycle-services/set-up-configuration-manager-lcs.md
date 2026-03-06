@@ -4,7 +4,7 @@ description: Learn about how to set up the Configuration manager, including outl
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,6 +17,7 @@ ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]
 > This feature isn't supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities don't currently include the functionality in AX 2012 R3, some configuration data isn't copied between environments.
