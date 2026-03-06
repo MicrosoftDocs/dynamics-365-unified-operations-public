@@ -10,9 +10,7 @@ ms.date: 07/01/2024
 ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Türkiye, United Kingdom
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
 ---
-
 # Tax directives for Europe
 
 [!include [banner](../../includes/banner.md)]
@@ -25,6 +23,5 @@ EU Directive lists the information that is required by suppliers for their custo
 
 > [!NOTE]
 > Verify that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency** on the **Form setup** page on the **General** tab (**Accounts receivable > Setup > Forms > Form setup** or **Project management and accounting > Setup > Forms > Form setup**).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
