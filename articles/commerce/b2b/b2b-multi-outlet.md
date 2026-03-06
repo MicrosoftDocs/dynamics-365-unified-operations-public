@@ -110,11 +110,11 @@ Associating Contacts using the Customer hierarchy has the same effect as associa
  
 When an administrator disables a contact in the customer hierarchy:
  
-- The contact loses eCommerce B2B storefront access for the selected Organization/outlet.
-- Call center customer service agents can no longer create a sales order using the disabled contact information.
-- Call center representative cannot order on behalf of the disabled contact via eCommerce B2B Storefront. 
+- The contact loses B2B e-commerce storefront access for the selected Organization/outlet.
+- Call center customer service agents can no longer create sales orders or place orders on behalf of the disabled contact via the B2B e-commerce storefront.
 - The association remains for auditing and reporting.
 - Existing orders and historical transactions remain unchanged.
+ 
  
 Contacts who placed orders can’t be fully removed from the hierarchy; disabling access helps maintain governance while preserving transaction history.
  
