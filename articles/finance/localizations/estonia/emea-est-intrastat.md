@@ -132,7 +132,7 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination or consignment are transferred.
+On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country/region of destination or consignment are transferred.
 
 You can also manually enter transactions by selecting **New** on the Action Pane.
 
