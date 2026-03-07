@@ -40,7 +40,7 @@ The fields can also be observed through direct SQL queries or the **SysTableBrow
 System tracking fields are enabled on tables across multiple areas of the application, including tables in the General Ledger and Financial Dimensions area such as **MainAccount** and **DimensionAttributeValue**.
 
 > [!NOTE]
-> If you recently upgraded to version 10.0, you may notice that existing records show the upgrade date in the **CreatedDateTime** and **ModifiedDateTime** fields. This is expected. Because these columns didn't exist on the table before the upgrade, the database synchronization (dbSync) process populates them with the current date and time when the columns are added. The system can't determine the original creation or modification dates for records that existed before tracking was enabled. All records created or modified after the upgrade reflect accurate dates.
+> If you recently upgraded, you may notice that existing records show the upgrade date in the **CreatedDateTime** and **ModifiedDateTime** fields. This is expected. Because these columns didn't exist on the table before the upgrade, the database synchronization (dbSync) process populates them with the current date and time when the columns are added. The system can't determine the original creation or modification dates for records that existed before tracking was enabled. All records created or modified after the upgrade reflect accurate dates.
 
 ## Additional resources
 
