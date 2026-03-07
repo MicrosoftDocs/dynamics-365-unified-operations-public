@@ -49,7 +49,7 @@ You can't change the delimiter if existing dimension values already contain the 
 When you change the delimiter, the system schedules a data maintenance action called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter might not update immediately, and the old delimiter might continue to appear until the data maintenance action completes. The system processes the newest dimensions first to reduce the possibility of errors during the transition. Monitor the progress of the action by going to the data maintenance portal in **System administration** > **Setup** > **Data Maintenance**.
 
 > [!IMPORTANT]
-> Don't schedule the delimiter change multiple times. If the delimiter hasn't updated yet, wait for the data maintenance action to complete.
+> Don't schedule the delimiter change multiple times. If the delimiter hasn't updated yet, wait for the data maintenance action to complete before rescheduling.
 
 After the action finishes, the new delimiter appears in the **General ledger parameters** dialog and all dimension data uses the new delimiter consistently.
 
