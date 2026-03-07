@@ -56,9 +56,26 @@ To add organizations to a hierarchy, follow these steps:
 1. Add organizations, as necessary.
 1. To add an organization, select **Edit** and then select **Insert**. When you're done making changes, you can save a draft and publish the changes.
 
+> [!NOTE]
+> A hierarchy can only be published once per calendar day. If you need to publish multiple times, use a consistent time zone each time. Mixing time zones across publishes on the same day can cause a conflict that prevents publishing.
+
 The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall," "Outlet," "Online," and "Call Center" channels. Various retail, call center, and online channels can then be added to each.
 
 :::image type="content" source="media/hierarchy-designer.png" alt-text="Screenshot of the example hierarchy designer.":::
+
+## Importing hierarchy data
+
+You can import organization hierarchy structures using data entities. If you're importing a multi-level hierarchy, import from the top down—start with the highest parent node, then add each level of child nodes in separate import operations. Attempting to import all levels at once can result in the error "The Organization does not exist" because child nodes may be processed before their parent nodes are available.
+
+## Deleting a legal entity after hierarchy publishing
+
+Once a legal entity has been added to an organization hierarchy and that hierarchy has been published, the legal entity can no longer be deleted—even if you later remove it from the hierarchy and republish. The **Delete** button remains unavailable.
+
+This is by design. Publishing a hierarchy creates a permanent historical record of that structure, which is used to support backdated reporting and auditing. Because those records reference the legal entity, the system protects it from deletion to preserve that history.
+
+If you remove a legal entity from an unpublished hierarchy *before* the hierarchy is ever published, the delete option remains available. But once a version of the hierarchy that includes the legal entity has been published, the restriction is permanent.
+
+Leaving an unused legal entity in the system has no negative impact on day-to-day operations.
 
 ## Additional resources
 

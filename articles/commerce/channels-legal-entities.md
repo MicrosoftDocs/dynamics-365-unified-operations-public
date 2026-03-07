@@ -62,6 +62,15 @@ The following image shows details of an example legal entity.
 
 ![Legal entity general section.](media/legal-entities-general.png)
    
+## Changing a legal entity's country or region
+
+The country or region you set on a legal entity's primary address controls which localization features are available to that entity, such as tax rules and statutory reporting. After financial transactions have been posted for a legal entity, this country or region can no longer be changed through the application. This is by design to protect the integrity of posted financial data.
+
+> [!IMPORTANT]
+> If the legal entity is currently registered in Denmark, changing its country or region is not permitted under any circumstances due to legal regulations. The only option in this case is to create a new legal entity in the intended country or region.
+
+If you need to correct the country or region for a legal entity with posted transactions, contact Microsoft Support. This is not a self-service operation and requires product team approval.
+
 ## Additional resources
 
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
