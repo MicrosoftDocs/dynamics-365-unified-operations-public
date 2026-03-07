@@ -181,25 +181,25 @@ If you're using a template to create a master record, make sure that the templat
 
 ### Supported entities for copy values on create
 
-The **Copy values to this dimension on each new DimensionName created** toggle is only available for entity-backed dimensions whose backing table has been configured to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
+The **Copy values to this dimension on each new DimensionName created** toggle is only available for entity-backed dimensions that have been configured to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
 
 The following entity-backed dimensions support copy values on create out of the box:
 
-- Asset (AssetTable)
-- Bank account (BankAccountTable)
-- Customer group (CustGroup)
-- Customer (CustTable)
-- Position (HcmPosition)
-- Worker (HcmWorker)
-- Item (InventTable)
-- Project invoice (ProjInvoiceTable)
-- Project (ProjTable)
-- Retail channel (RetailChannel)
-- Retail store (RetailStore)
-- Retail terminal (RetailTerminal)
-- Vendor (VendTable)
+- Asset
+- Bank account
+- Customer group
+- Customer
+- Position
+- Worker
+- Item
+- Project invoice
+- Project
+- Retail channel
+- Retail store
+- Retail terminal
+- Vendor
 
-Custom dimensions and entity-backed dimensions not in this list don't support this feature by default. If you need to enable copy values on create for a custom or unsupported entity-backed dimension, a developer must add the required attribute and code to the backing table. For more information, see [Enable copy values on create for financial dimensions](../../fin-ops-core/dev-itpro/financial/enable-copy-values-dimension-on-create.md).
+Custom dimensions and entity-backed dimensions not in this list don't support this feature by default. If you need to enable copy values on create for a custom or unsupported entity-backed dimension, a developer must configure the dimension to support it. For more information, see [Enable copy values on create for financial dimensions](../../fin-ops-core/dev-itpro/financial/enable-copy-values-dimension-on-create.md).
 
 ## Derived dimensions
 
