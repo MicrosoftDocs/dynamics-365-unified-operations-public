@@ -44,6 +44,17 @@ If you need to change the delimiter that separates segments in your chart of acc
 
 You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "~" but you already have a dimension value in use such as "Cust~1", the system blocks the change. In this case, consider selecting a different delimiter.
 
+### What to expect after changing the delimiter
+
+When you change the delimiter, the system schedules the update as a background batch job called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter doesn't update immediately. After you confirm the change, you see an info message and the dialog closes, but the delimiter still shows the old value. This is expected behavior.
+
+The background job updates the delimiter across all existing dimension combinations. The job typically completes within a few minutes, depending on the volume of data. After the job finishes, the new delimiter appears in the **General ledger parameters** dialog.
+
+> [!IMPORTANT]
+> Don't schedule the delimiter change job multiple times. If the delimiter hasn't updated yet, wait for the background job to complete. You can check the status of the job in the **Data Maintenance** portal, where the job appears as **Scheduled** or **In Progress**.
+
+If the job shows as **Completed** but the delimiter hasn't changed, check the task history log for errors and rerun the action.
+
 ### Best practices for delimiters and dimension values
 
 While it's technically possible to include delimiter characters within dimension values, doing so can cause problems when the system parses account combinations. For instance, if you have a dimension value "Cust-049" and your delimiter is "-", the system might interpret "049" as the value for the next segment. If "049" isn't a valid value for that segment, you receive an error message.
