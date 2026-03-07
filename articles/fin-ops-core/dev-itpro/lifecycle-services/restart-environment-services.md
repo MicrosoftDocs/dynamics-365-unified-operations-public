@@ -4,7 +4,7 @@ description: Learn about how to restart individual services in environments that
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 7.3
 # Restart environment services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 You can use the Restart services functionality in Microsoft Dynamics Lifecycle Services (LCS) to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment of the **Self-service** type. You can use this functionality to restart the following services:
 

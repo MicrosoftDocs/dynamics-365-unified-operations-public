@@ -4,7 +4,7 @@ description: Learn about how partners can get started with Microsoft Dynamics Li
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -18,6 +18,7 @@ ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 # Lifecycle Services for finance and operations apps partners
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how partners can get started with Microsoft Dynamics 365 Lifecycle Services.
 

@@ -2,7 +2,7 @@
 title: Business process libraries in Business process modeler (BPM)
 description: Learn about how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
 author: johnmichalak
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.topic: article
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -16,6 +16,7 @@ ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 # Business process libraries in Business process modeler (BPM)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 

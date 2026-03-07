@@ -4,7 +4,7 @@ description: Learn about how to create and modify methodologies in Microsoft Dyn
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -14,6 +14,7 @@ ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 # Add methodologies to solutions
 
 [!include[banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services. It also provides information about the requirements for methodologies.
 

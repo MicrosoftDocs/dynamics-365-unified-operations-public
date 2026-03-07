@@ -4,7 +4,7 @@ description: Learn about how to modify connected flowcharts, create and upload f
 author: AngelMarshall
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,6 +17,7 @@ ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 # Flowcharts in Business process modeler (BPM)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]
 > Flowchart diagrams in Business process modeler are deprecated. For more information, see [Flowchart diagrams in Business process modeler](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler).

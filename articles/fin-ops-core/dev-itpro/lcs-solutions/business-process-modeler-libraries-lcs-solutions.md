@@ -4,7 +4,7 @@ description: Learn about how to create and work with Business process modeler (B
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -15,6 +15,7 @@ ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 
 This article explains how to create and work with Business process modeler (BPM) libraries.

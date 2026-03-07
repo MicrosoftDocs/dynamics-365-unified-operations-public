@@ -4,7 +4,7 @@ description: Learn about the requirements used to verify that custom code meets 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -14,6 +14,7 @@ ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 # Validate applications for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article provides information about the requirements that verify custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a finance and operations apps environment.
 
