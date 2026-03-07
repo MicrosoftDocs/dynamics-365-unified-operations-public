@@ -48,12 +48,31 @@ You can't change the delimiter if existing dimension values already contain the 
 
 When you change the delimiter, the system schedules the update as a background batch job called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter doesn't update immediately. After you confirm the change, you see an info message and the dialog closes, but the delimiter still shows the old value. This is expected behavior.
 
-The background job updates the delimiter across all existing dimension combinations. The job typically completes within a few minutes, depending on the volume of data. After the job finishes, the new delimiter appears in the **General ledger parameters** dialog.
+The background job updates the delimiter across all existing dimension combinations. For small datasets, the job typically completes within a few minutes. The system processes the newest dimensions first to reduce the possibility of errors during the transition.
+
+For environments with a large number of dimension combinations, the process may be split into multiple batches. By default, each batch is allowed one hour to run before it stops and returns control to the system. Data Maintenance picks the job back up approximately six hours later for the next batch. This cycle repeats until all records are processed.
 
 > [!IMPORTANT]
-> Don't schedule the delimiter change job multiple times. If the delimiter hasn't updated yet, wait for the background job to complete. You can check the status of the job in the **Data Maintenance** portal, where the job appears as **Scheduled** or **In Progress**.
+> Don't schedule the delimiter change job multiple times. If the delimiter hasn't updated yet, wait for the background job to complete. You can check the status of the job in the **Data Maintenance** portal.
 
-If the job shows as **Completed** but the delimiter hasn't changed, check the task history log for errors and rerun the action.
+#### Understanding the job status
+
+The **Completed** status in the Data Maintenance portal can be misleading. It means the current batch run is complete, not necessarily the entire job. To check whether more work remains, select **Run** in the Data Maintenance portal. If the status changes to **Scheduled**, there are still records to process. If the status doesn't change, the job is fully complete.
+
+#### Mixed delimiters and report errors during processing
+
+While the delimiter change process is still running, you might see different delimiters in the same journal or encounter errors when running reports. These symptoms are temporary and resolve after the process finishes updating all dimension combination records.
+
+After the job finishes, the new delimiter appears in the **General ledger parameters** dialog and all dimension data uses the new delimiter consistently.
+
+#### Manual override for large datasets
+
+If you need the delimiter change to complete without batching, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** job in the Data Maintenance portal. This job processes all remaining records in a single run instead of batching the changes.
+
+> [!NOTE]
+> The manual override job runs for a longer period and uses more system resources, which can cause performance issues. It only runs to completion if the standard process isn't already running. Consider using this option during off-peak hours.
+
+If the job shows as fully completed but the delimiter hasn't changed or mixed delimiters persist, check the task history log for errors and rerun the action.
 
 ### Best practices for delimiters and dimension values
 
