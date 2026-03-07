@@ -57,9 +57,9 @@ After the action finishes, the new delimiter appears in the **General ledger par
 
 #### Manual override for large datasets
 
-By default, the data maintenance action runs in batches. Each batch is allowed one hour to process before it stops, and Data Maintenance picks up the next batch approximately six hours later. For environments with a large volume of dimension data, this means the full delimiter change can take multiple cycles to complete.
+If you experience errors when running reports after a delimiter change, or if you see different delimiters in use in the same journal, the standard data maintenance action might still be processing records. This can happen in environments with a large volume of dimension data, because the action runs in batches and might need multiple cycles to finish.
 
-If you need the delimiter change to finish sooner, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the Data Maintenance portal. This action processes all remaining records in a single run instead of batching.
+To resolve these symptoms sooner, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the Data Maintenance portal (**System administration** > **Setup** > **Data Maintenance**). This action processes all remaining records in a single run instead of batching.
 
 > [!NOTE]
 > The manual override action runs for a longer period and uses more system resources, which can cause performance issues. It only runs to completion if the standard action isn't already running. Consider using this option during off-peak hours.
