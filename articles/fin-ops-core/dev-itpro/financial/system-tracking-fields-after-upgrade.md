@@ -1,6 +1,6 @@
 ---
 title: System tracking fields show recent dates after upgrade
-description: Learn why financial dimension and general ledger records may show recent created or modified dates after an upgrade to version 10.0, and why this behavior is by design.
+description: Learn why records may show recent created or modified dates after an upgrade to version 10.0 when system tracking fields are added to tables, and why this behavior is by design.
 author: anaborges
 ms.author: anaborges
 ms.topic: article
@@ -16,24 +16,24 @@ ms.dyn365.ops.version: Version 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains why some financial records may display recent created or modified dates after an upgrade, even though the records existed before the upgrade.
+This article explains why records may display recent created or modified dates after an upgrade, even though the records existed before the upgrade.
 
 ## Overview
 
-Multiple tables in the General Ledger and Financial Dimensions area have had system tracking fields enabled on them. These fields include:
+As part of ongoing improvements to auditing and data integrity, system tracking fields have been enabled on various tables across the application. These fields include:
 
 - **CreatedBy**
 - **CreatedDateTime**
 - **ModifiedBy**
 - **ModifiedDateTime**
 
-These fields were added to improve auditing capabilities and to assist with data corruption investigations.
+When these fields are added to a table that didn't previously have them, existing records may appear to have been recently created or modified. This is expected behavior and is explained in the following sections.
 
 ## Why records show recent dates
 
-Because these fields didn't previously exist on the tables, the database synchronization (dbSync) process that runs during an upgrade adds the new columns. When the columns are added, the current date and time are automatically populated for all existing records.
+When system tracking fields are enabled on a table, the database synchronization (dbSync) process that runs during an upgrade adds the new columns. Because the columns didn't previously exist, the system can't determine the actual date and time that existing records were originally created or modified. Instead, the current date and time of the upgrade are automatically populated as the initial values.
 
-The system can't determine the actual date and time that a record was originally created, because that information wasn't tracked before the upgrade. Instead, the date and time that the column was added is used as the initial value. Any records that are created or modified after the upgrade report the correct date and time going forward.
+Any records that are created or modified after the upgrade report the correct date and time going forward.
 
 ## How to identify these fields
 
@@ -41,21 +41,12 @@ These fields aren't shown on standard user-facing form layouts. To view them, na
 
 The fields can also be observed through direct SQL queries or the **SysTableBrowser** tool.
 
-## Affected tables
+## Scope
 
-The following tables are examples of tables that had system tracking fields added:
-
-- **MainAccount**
-- **DimensionAttributeValue**
-- Other financial dimension-related tables
-
-> [!NOTE]
-> This behavior is not limited to financial dimension tables. Any table that has system tracking fields added during an upgrade will exhibit the same behavior.
+This behavior applies to any table that has system tracking fields added during an upgrade. Examples include tables in the General Ledger and Financial Dimensions area, such as **MainAccount** and **DimensionAttributeValue**, but the same behavior occurs for any table across the application where these fields are newly enabled.
 
 ## Additional resources
 
-[Financial dimension activation](activate-financial-dimensions.md)
-
-[Financial dimension configuration](financial-dimension-configuration-integration.md)
+[Database synchronization](../dev-tools/database-synchronization.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
