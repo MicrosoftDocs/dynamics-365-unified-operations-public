@@ -46,23 +46,25 @@ You can't change the delimiter if existing dimension values already contain the 
 
 ### What to expect after changing the delimiter
 
-When you change the delimiter, the system schedules the update as a background batch job called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter doesn't update immediately. After you confirm the change, you see an info message and the dialog closes, but the delimiter still shows the old value. This is expected behavior.
+When you change the delimiter, the system schedules a data maintenance action called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter doesn't update immediately, and the old value continues to appear until the action completes. This is expected behavior.
 
-The background job updates the delimiter across all existing ledger accounts. The system processes the newest dimensions first to reduce the possibility of errors during the transition.
+The system processes the newest dimensions first to reduce the possibility of errors during the transition.
 
 > [!IMPORTANT]
-> Don't schedule the delimiter change job multiple times. If the delimiter hasn't updated yet, wait for the background job to complete. You can check the status of the job in the **Data Maintenance** portal.
+> Don't schedule the delimiter change multiple times. If the delimiter hasn't updated yet, wait for the data maintenance action to complete. To check the status, go to **System administration** > **Setup** > **Data Maintenance** and look for the **Dimension value rename and modify chart of accounts delimiter process** action. The status shows as **Scheduled** or **In Progress** while the action is still running.
 
-After the job finishes, the new delimiter appears in the **General ledger parameters** dialog and all dimension data uses the new delimiter consistently.
+After the action finishes, the new delimiter appears in the **General ledger parameters** dialog and all dimension data uses the new delimiter consistently.
 
 #### Manual override for large datasets
 
-If you need the delimiter change to complete without batching, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** job in the Data Maintenance portal. This job processes all remaining records in a single run instead of batching the changes.
+By default, the data maintenance action runs in batches. Each batch is allowed one hour to process before it stops, and Data Maintenance picks up the next batch approximately six hours later. For environments with a large volume of dimension data, this means the full delimiter change can take multiple cycles to complete.
+
+If you need the delimiter change to finish sooner, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the Data Maintenance portal. This action processes all remaining records in a single run instead of batching.
 
 > [!NOTE]
-> The manual override job runs for a longer period and uses more system resources, which can cause performance issues. It only runs to completion if the standard process isn't already running. Consider using this option during off-peak hours.
+> The manual override action runs for a longer period and uses more system resources, which can cause performance issues. It only runs to completion if the standard action isn't already running. Consider using this option during off-peak hours.
 
-If the job shows as fully completed but the delimiter hasn't changed, check the task history log for errors and rerun the action.
+If the action shows as fully completed but the delimiter hasn't changed, check the task history log for errors and rerun the action.
 
 ### Best practices for delimiters and dimension values
 
