@@ -57,7 +57,7 @@ After the action finishes, the new delimiter appears in the **General ledger par
 
 If you experience errors when running reports after a delimiter change, or if you see different delimiters in use in the same journal, the standard data maintenance action might still be processing records.
 
-To resolve these symptoms, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the data maintenance portal (**System administration** > **Setup** > **Data Maintenance**). This action processes all remaining records in a single run instead of batching.
+If rescheduling the delimiter **Dimension value rename and modify chart of accounts delimiter process** does not fix the issue, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the data maintenance portal (**System administration** > **Setup** > **Data Maintenance**). This action processes all remaining records in a single run instead of batching.
 
 > [!WARNING]
 > Don't use the manual override as the default option for delimiter changes. The manual override action runs for a longer period and uses more system resources, which can cause performance issues. It only runs to completion if the standard action isn't already running. Consider using this option during off-peak hours.
