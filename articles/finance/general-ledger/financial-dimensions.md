@@ -4,7 +4,7 @@ description: Learn about the various types of financial dimensions and tags and 
 author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 01/30/2026
+ms.date: 03/06/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 8.1
 
 Use financial dimensions to further categorize financial transactions. Financial dimension values become segments within the ledger account and you can use them for further analysis, such as generating a profit and loss financial statement by a dimension or a trial balance by dimension.  
 
-Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). Also, explore the differences between the two in the document Differences between financial tags and financial dimensions.  
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). Also, explore the differences between the two in the document Differences between financial tags and financial dimensions.  
 
 This article explains the various types of financial dimensions and how to set them up.
 
@@ -71,7 +71,7 @@ A dimension value is then created for each project name. The **Financial dimensi
 
 ### Financial dimension values
 
-After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
+After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
 
 For a custom financial dimension, use this page to create and edit dimension values. You can only enter or edit the **Dimension value** and **Description** fields for custom dimensions.  
 
@@ -177,7 +177,29 @@ If you're using a template to create a master record, make sure that the templat
 > [!NOTE]
 > You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).  
 > 
-> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension’s fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+
+### Supported entities for copy values on create
+
+The **Copy values to this dimension on each new DimensionName created** toggle is only available for entity-backed dimensions whose backing table has been configured to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
+
+The following entity-backed dimensions support copy values on create out of the box:
+
+- Asset (AssetTable)
+- Bank account (BankAccountTable)
+- Customer group (CustGroup)
+- Customer (CustTable)
+- Position (HcmPosition)
+- Worker (HcmWorker)
+- Item (InventTable)
+- Project invoice (ProjInvoiceTable)
+- Project (ProjTable)
+- Retail channel (RetailChannel)
+- Retail store (RetailStore)
+- Retail terminal (RetailTerminal)
+- Vendor (VendTable)
+
+Custom dimensions and entity-backed dimensions not in this list don't support this feature by default. If you need to enable copy values on create for a custom or unsupported entity-backed dimension, a developer must add the required attribute and code to the backing table. For more information, see [Enable copy values on create for financial dimensions](../../fin-ops-core/dev-itpro/financial/enable-copy-values-dimension-on-create.md).
 
 ## Derived dimensions
 
