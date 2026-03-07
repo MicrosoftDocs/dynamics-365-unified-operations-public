@@ -4,7 +4,7 @@ description: Learn about the Project onboarding wizard in Microsoft Dynamics 365
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Developer, IT Pro
@@ -17,6 +17,7 @@ ms.dyn365.ops.version:
 # Project onboarding
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 
 Project onboarding is a self-paced, wizard-driven onboarding experience that guides project users in Microsoft Dynamics 365 Lifecycle Services through the process of setting up the key configuration components for a new implementation project for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Retail. You can also access this wizard during and after the implementation to update the information as needed.

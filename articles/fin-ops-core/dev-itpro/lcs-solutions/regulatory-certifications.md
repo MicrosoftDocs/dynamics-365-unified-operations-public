@@ -4,7 +4,7 @@ description: Learn about certifications is used in the title of the feature, inc
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -16,6 +16,7 @@ ms.assetid: d0b8286a-b2c1-4fa2-905a-3383b1d34d56
 # Regulatory certification information in feature titles
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 As part of the requirements for Lifecycle Services solutions for localization and translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires to be legally compliant for sale in the intended market. This article shows how to use information about certifications in the title of the feature.
 

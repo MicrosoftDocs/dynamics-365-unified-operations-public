@@ -4,7 +4,7 @@ description: Learn about how to upgrade and analyze your code in Microsoft Dynam
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -14,6 +14,7 @@ ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 # Migrate code for finance and operations apps solutions
 
 [!include[banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 To complete your solution package, the first step is to upgrade your code by using the best practices in **Migrate and Create finance and operations Apps Solutions** in Microsoft Dynamics Lifecycle Services. After that step is completed, you must run the Customization Analysis Report (CAR). This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 

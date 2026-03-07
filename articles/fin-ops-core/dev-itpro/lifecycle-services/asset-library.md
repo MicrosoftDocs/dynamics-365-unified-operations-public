@@ -4,7 +4,7 @@ description: Learn about the Asset Library functionality in Microsoft Dynamics 3
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 02/08/2023
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 sericksaudience: Developer, IT Pro
 ms.search.region: Global
@@ -16,6 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Asset library in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics 365 Lifecycle Services. Two types of Asset library are available in Lifecycle Services: the Shared asset library and the project-level Asset library.
 

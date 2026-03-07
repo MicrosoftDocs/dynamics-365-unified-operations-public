@@ -4,7 +4,7 @@ description: Learn about the support experience for cloud and on-premises deploy
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 11/11/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,6 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Set up technical support for finance and operations apps 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 ## Prerequisites
 
