@@ -43,22 +43,22 @@ To create a job ad, fill in the following fields:
 - **Skills** – Specify the skill set required for the job position.
 - **Compensation** – By including information about the salary range, benefits, and any perks that are associated with the position, you can help make the job ad attractive to potential candidates.
 - **Currency** – Select the currency of the compensation.
-- **Position type** – You can create job ads for full-time or part-time contract employees.
+- **Position type** – Create job ads for full-time or part-time contract employees.
 - **Recruiting request** – Select **Recruiting request** to view details about the job ad such as compensation, job description, and external title in the recruiting request.
 
 ## Recruiting requests
 
-A *recruiting request* is a document that hiring managers in Dynamics 365 Finance use to create the requirement for job openings. A recruiting request can be published if it has an **Active** status. After a recruiting request is published, it can't be updated. For more information, see [Recruit job candidates](hr-personnel-recruit.md). 
+Hiring managers in Dynamics 365 Finance use a *recruiting request* to create the requirement for job openings. A recruiting request can be published if it has an **Active** status. After you publish a recruiting request, you can't update it. For more information, see [Recruit job candidates](hr-personnel-recruit.md). 
 
 ## Job ad statuses
  
-There are five statuses of job ads:
+Job ads have five statuses:
 
 - **Draft** – The job ad isn't saved.
 - **In progress** – The job ad was saved, and the process of adding hiring team members, adding a hiring template, or gaining approval is in progress.
 - **Active** – The job ad was posted to the careers site. After a job ad is posted, its details can't be changed.
 - **Inactive** – The job ad was deactivated after it was posted to job boards.
-- **Complete** – The job ad was completed by selecting **Complete**. After a job ad is completed, activities can't be added.
+- **Complete** – You completed the job ad by selecting **Complete**. After you complete a job ad, you can't add activities.
 
 ## Add members to the hiring team
 
@@ -95,18 +95,18 @@ To add a hiring template to a job ad, follow these steps:
 
 
 ### Screening questions
-Recruiters can add a set of questions related to specific job ads. Candidates answer these questions during the application process. The responses provided by applicants can be used by recruiters to filter through applicants for job vacancies. Recruiters can tailor these questions to suit the needs of the job opening, such as years of experience or willingness to relocate. For instance, if a recruiter is looking for candidates with a minimum of 5 years’ experience, they could swiftly eliminate applicants who have less experience.
+Recruiters can add a set of questions related to specific job ads. Candidates answer these questions during the application process. The responses provided by applicants can be used by recruiters to filter through applicants for job vacancies. Recruiters can tailor these questions to suit the needs of the job opening, such as years of experience or willingness to relocate. For example, if a recruiter is looking for candidates with a minimum of five years’ experience, they can swiftly eliminate applicants who have less experience.
 
 To add screening questions, follow these steps: (optional)
-1. Go to **Screening questions** tab in a draft job ad.
-2. Click **Search** for the **Screening** template. This displays the **Screening** templates.
-3. Select the **Screening** template from the list. Multiple templates can be selected.
-4. All the questions on the selected templates will be displayed.
+1. Go to the **Screening questions** tab in a draft job ad.
+2. Select **Search** for the **Screening** template. This action displays the **Screening** templates.
+3. Select the **Screening** template from the list. You can select multiple templates.
+4. View all the questions on the selected templates.
 
  
 ## Job ad approval
 
-If job ads require approval from higher management, recruiters can assign approvers who must either accept or reject the job ads. When a recruiter assigns approvers and changes the stage to the **Approval** stage, approvers receive a notification through the following channels:
+If higher management needs to approve job ads, recruiters can assign approvers who accept or reject the job ads. When a recruiter assigns approvers and changes the stage to the **Approval** stage, approvers receive a notification through the following channels:
 
 - Outlook
 - Teams
@@ -122,13 +122,13 @@ To add approvers to the approval list, follow these steps:
 1. Select the approvers.
 1. If you want to add more approvers, select **Save** and then **Create new**. Otherwise, select **Save** and then **Close**.
 
-The next stage is **Approval**. The status of the approval is changed to **Pending approval**.
+The next stage is **Approval**. The system changes the status of the approval to **Pending approval**.
 
 ### Approve or reject a job ad
 
 When the stage is changed to **Approval**, approvers receive notifications in Teams, Outlook, and the Recruiting add-on app. They can use any of these channels to approve or reject the job ad.
 
-To approve or reject a job ad, an approver follows these steps.
+To approve or reject a job ad, an approver follows these steps:
 
 1. Select **Job ad approvals** to view the list of job ads that require your action.
 1. Select the **Approval id** value of the job ad that you want to give input for.
@@ -153,24 +153,24 @@ The business process flow of a job ad has the following stages:
 ## Post a new job ad
 
 To post a new job ad using a recruiting request, follow these steps:
-1.	Create a recruiting request in Dynamics 365 Human resources. Learn more at [Recruit job candidates](hr-personnel-recruit.md). 
+1. Create a recruiting request in Dynamics 365 Human Resources. To learn more, see [Recruit job candidates](hr-personnel-recruit.md). 
 2.	Select **Job Ads** from the left menu pane.
 3.	Choose **+ New**.
-4.	Select a recruiting request. All the information that's added as a part of recruiting request is extracted and displayed in the relevant fields.
-5.	Fill other required fields.
-6.	Click **Save**.
+4. Select a recruiting request. The app extracts and displays all the information that's added as part of the recruiting request in the relevant fields.
+5. Fill in the other required fields.
+6. Select **Save**.
 7.	Go to the **Hiring team** tab and add hiring team members.
 8.	Go to the **Hiring process** tab and select a hiring template.
-9.	Go to the **Approvals** tab and (optional) turn on the **Approval required** tab and add approvers.
+9. Go to the **Approvals** tab, optionally turn on the **Approval required** tab, and add approvers.
 10.	Move the business process flow from draft to the next stage. 
 
 To post a new job ad without a recruiting request, follow these steps:
 1. Select **Job ads** from the left menu pane.
-2. Click **+New**.
+2. Select **+New**.
 3. Fill in all the required fields.
-4. Click **Save**.
+4. Select **Save**.
 5. Go to the **Hiring team** tab and add hiring team members.
 6. Go to the **Hiring process** tab and pick a hiring template.
-7. Go to the **Approvals** tab and (optional) turn on the **Approval required** tab and add approvers.
+7. Go to the **Approvals** tab, optionally turn on the **Approval required** tab, and add approvers.
 8. Move the business process flow from draft to the next stage.
 
