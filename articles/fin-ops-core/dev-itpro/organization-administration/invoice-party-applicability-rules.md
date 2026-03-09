@@ -145,7 +145,7 @@ A company that has mulptiple branches receives a vendor invoices from a vendor's
 
 ### Configuration
 
-A *Branch ID* **Registration type** is created and assigned to the *Branch ID* **Registration category**.
+A *Branch ID* [**Registration type**](registration-ids.md#registration-type-creation) is created and assigned to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
 
 **Require establishment on vendor invoice** checkbox is enabled in **Accounts payable parameters**.
 
