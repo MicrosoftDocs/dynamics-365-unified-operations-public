@@ -17,9 +17,9 @@ ms.assetid:
 
 # Invoice party applicability rules for registration categories
 
-**Invoice party applicability rules** extend the **Registration ID** framework in Dynamics 365 Finance by defining which registration IDs are required and applicable for each party involved in an invoice, based on the party’s role, address purpose, and country/region requirements.
+**Invoice party applicability rules** extend the [**Registration ID**](registration-ids.md) framework in Dynamics 365 Finance by defining which registration IDs are required and applicable for each party involved in an invoice, based on the party’s role, address purpose, and country/region requirements.
 
-This functionality is available starting with Dynamics 365 Finance version **10.0.48** and is enabled through the **Establishment and Registration ID governance on invoices** feature in **Feature management**. When enabled, registration categories can be configured with applicability rules that drive validation, selection, and immutable storage of registration IDs on posted invoices.
+This functionality is available starting with Dynamics 365 Finance version **10.0.48** and is enabled through the **Establishment and Registration ID governance on invoices** feature in **Feature management**. When enabled, [registration categories](registration-ids.md#supported-registration-categories) can be configured with applicability rules that drive validation, selection, and immutable storage of registration IDs on posted invoices.
 
 In many invoicing scenarios, multiple parties can participate in a single transaction. For example, issuing and receiving legal entities, establishments, customers, and vendors. 
 Regulatory requirements often differ depending on:
@@ -90,6 +90,17 @@ This integration ensures that vendor invoices are validated against the correct 
 
 For more information about how the ship‑from address is captured and validated on vendor invoices, see [**Vendor ship‑from address support on invoices**](../../../finance/accounts-payable/vendor-ship‑from-address.md).
 
+## Availability of invoice party applicability rules
+
+**Invoice party applicability rules** can be configured and evaluated for the following registration categories:
+
+- VAT ID
+- Enterprise ID (COID)
+- Branch ID
+- SIRET
+
+**Invoice party applicability rules** are not evaluated for other registration categories. For registration categories that are not listed above, **Registration IDs** can still be stored and maintained by using the Registration ID framework, but they are not validated or enforced through invoice party applicability rules during invoice processing.
+
 ## Example 1: VAT ID applicability on invoices
 
 This example illustrates how invoice party applicability rules work using the **VAT ID** registration category.
@@ -100,7 +111,7 @@ A company issues customer invoices in multiple countries and must ensure that VA
 
 ### Configuration
 
-A *VAT ID* **Registration type** is created and assigned to the *VAT ID* **Registration category**.
+A *VAT ID* [**Registration type**](registration-ids.md#registration-type-creation) is created and assigned to the *VAT ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
 
 **Require establishment on customer invoice** checkbox is enabled in **Accounts receivable parameters**.
 
