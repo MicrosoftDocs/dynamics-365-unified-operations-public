@@ -97,14 +97,15 @@ When you're done with the developer environment, or in some cases where troubles
 2. Highlight the environment that you want to remove and select **Deallocate**, which power down the machine in your Azure subscription.
 3. After the deallocation is successful, the environment is in a *Deallocated* state.  You may now use the **Delete** button to start the deletion process.
 
-You can't delete a cloud-hosted environment if the virtual network (VNET) that was created with it is also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing VNET so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original VNET.
+You can't delete a cloud-hosted environment if the virtual network (VNET) that you created with it is also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing VNET so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original VNET, or move the shared VNET outside of the resource group of the environment you're trying to delete.
 
 If the delete operation fails, check to see if one of the following issues may have occurred:
 
-- The Azure connector management certificate has expired.
+- The Azure connector management certificate expired or the Azure connector isn't working as expected. Review [Complete the Azure Resource Manager onboarding process](../deployment/arm-onboarding.md) to make sure all the steps regarding the authorization and access control are correctly set up.
 - The Azure subscription has been moved to a different tenant than where it was originally.
-- The Azure subscription has been disabled.
+- The Azure subscription has been disabled or deleted.
 - There are Azure policies in your subscription that prevent you from deleting one or more resources in your environment's resource group.
+- There are one or more [resource locks](/azure/azure-resource-manager/management/lock-resources) on resources in the environment's resource group. Remove the locks and try the operation again. This situation can also occur if a feature such as a backup vault prevents deletion of a resource.
 
 If Lifecycle Services wasn't able to successfully complete the delete operation, the operation is marked as *Incomplete*. Use the **Delete Lifecycle Services metadata** button to clean up this environment's metadata from the Lifecycle Services backend systems.
 
