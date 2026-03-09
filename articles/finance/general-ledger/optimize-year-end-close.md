@@ -15,6 +15,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Optimize year-end close 
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 The Optimize year-end close service add-in for Microsoft Dynamics 365 Finance enables year-end close processing to run outside the Application Object Server (AOS) instance for Dynamics 365 Finance resources. It uses microservice technology. The benefits that are associated with the Optimize year-end close functionality include improved performance and minimized impact on the SQL database during year-end close processing.
 

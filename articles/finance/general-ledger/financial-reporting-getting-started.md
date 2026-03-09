@@ -18,6 +18,7 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 # Get started with financial reporting 
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 

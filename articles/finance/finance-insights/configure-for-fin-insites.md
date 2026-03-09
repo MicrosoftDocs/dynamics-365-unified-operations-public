@@ -15,8 +15,9 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 # Configuration for Finance insights
 
 [!include [banner](../includes/banner.md)]
-
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 [!include [finance-insights-update-banner](includes/finance-insights-update-banner.md)]
+
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains the configuration steps that enable your system to use the capabilities that are available in Finance insights. To successfully complete the procedures in this article, you must have System administrator and System customizer access in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), System administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics 365 Lifecycle Services.
 

@@ -19,6 +19,7 @@ ms.custom: evergreen
 # Set up fixed assets
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
 
 This article provides an overview of the setup of the **Fixed assets** module. 
 
