@@ -375,7 +375,7 @@ If you need to refresh entity metadata for any entities in your hierarchy:
 3. Open the entity and trigger refresh
 4. Repeat for all entities in your hierarchy
 
-**Troubleshooting:** See [Virtual entity refresh troubleshooting](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-faq#case-3-virtual-entity-that-isnt-eligible-for-archival)
+**Troubleshooting:** See [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival)
 
 ### Configure change tracking and LTR
 
@@ -398,8 +398,8 @@ This simpler approach is suitable for most implementations. Manually enable chan
 > If you skip any entity in the hierarchy, LTR for that table won't work, and archive jobs may fail validation.
 
 **Detailed instructions:**
-- [Enable a table for long-term retention](https://learn.microsoft.com/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
-- [Enable change tracking for entities](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track)
+- [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
+- [Enable change tracking for entities](../data-entities/entity-change-track.md)
 
 **Advantages:**
 - Simple and straightforward

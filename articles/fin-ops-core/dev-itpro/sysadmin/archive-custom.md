@@ -239,8 +239,8 @@ This approach is simpler and doesn't require solution management expertise. You 
 6. Repeat for all entities in your archive scope
 
 **Detailed instructions:**
-- [Enable a table for long-term retention](https://learn.microsoft.com/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
-- [Enable change tracking for entities](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track)
+- [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
+- [Enable change tracking for entities](../data-entities/entity-change-track.md)
 
 **Advantages:**
 - Simple and straightforward

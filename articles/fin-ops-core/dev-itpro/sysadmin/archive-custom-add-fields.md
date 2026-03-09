@@ -182,7 +182,7 @@ If automatic sync hasn't occurred or you need immediate refresh, use one of thes
 4. Search for your entity (for example, `mserp_salestablebiEntity`)
 5. Open the entity and trigger refresh
 
-**Troubleshooting:** If refresh isn't working, see [Virtual entity refresh troubleshooting](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-faq#case-3-virtual-entity-that-isnt-eligible-for-archival)
+**Troubleshooting:** If refresh isn't working, see [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival)
 
 ### Verify field appears in entity
 
