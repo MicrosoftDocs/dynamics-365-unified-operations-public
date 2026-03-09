@@ -1,8 +1,8 @@
 ---
 title: Registration categories' invoice party applicability rules
 description: Registration categories' invoice party applicability rules alloew to determine which registration IDs apply to each invoice party role based on country/region requirements.
-author: 
-ms.author: 
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
 ms.date: 08/03/2026
 ms.reviewer: johnmichalak
