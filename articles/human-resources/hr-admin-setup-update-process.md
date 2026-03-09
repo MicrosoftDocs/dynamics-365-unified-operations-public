@@ -24,7 +24,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Update process
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]
 > For more information about the update process, see [Process for moving to the latest update of finance and operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). For more information about hotfixes, see [Download updates from Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md).
