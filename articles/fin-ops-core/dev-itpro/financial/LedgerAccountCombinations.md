@@ -439,7 +439,7 @@ Some account types (such as Customer, Vendor, Bank, and Project) are entered thr
 
 The dimension framework is designed to insert data only on first use of each unique set of values and reuse references for each subsequent request. Over time, the number of inserts should decrease as combinations are reused.
 
-If insert performance to dimension tables isn't improving over time, the most common cause is the use of **highly variable dimensions** — dimension values with such high volatility that they're rarely reused. Examples include dates, serial numbers, license plates, ticket numbers, and inventory dimensions (size, color, site/warehouse/location). These should be implemented as [financial tags](../../../finance/general-ledger/financial-tag.md) or custom fields rather than financial dimensions. For more information, see [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions).
+If insert performance to dimension tables isn't improving over time, the most common cause is the use of **highly variable dimensions** — dimension values with such high volatility that they're rarely reused. Examples include dates, serial numbers, license plates, ticket numbers, and inventory dimensions (size, color, site/warehouse/location). These should be implemented as [financial tags](/dynamics365/finance/general-ledger/financial-tag) or custom fields rather than financial dimensions. For more information, see [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions).
 
 ### Versioning/date-effective data
 
