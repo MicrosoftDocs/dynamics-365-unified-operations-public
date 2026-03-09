@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Human Resources customer migration
 
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 ## How should Dynamics 365 Human Resources customers plan to move to the finance and operations infrastructure?
 
