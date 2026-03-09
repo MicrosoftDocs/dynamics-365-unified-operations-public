@@ -5566,7 +5566,7 @@
                 - name: Configure Registration IDs
                   href: ../fin-ops-core/dev-itpro/organization-administration/registration-ids.md?context=/dynamics365/context/finance
                 - name: Define invoice party applicability rules for registration categories
-                  href:../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md?context=/dynamics365/context/finance
+                  href: ../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md?context=/dynamics365/context/finance
             - name: Workflow system
               items:
                 - name: Workflow system overview
