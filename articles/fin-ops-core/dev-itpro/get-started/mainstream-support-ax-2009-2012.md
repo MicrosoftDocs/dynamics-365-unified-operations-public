@@ -4,7 +4,7 @@ description: Learn about the end of  mainstream support for Microsoft Dynamics A
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 10/30/2025
+ms.date: 03/09/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
