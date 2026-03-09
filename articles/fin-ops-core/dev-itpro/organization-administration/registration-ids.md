@@ -1,8 +1,8 @@
 ---
 title: Registration IDs
 description: The Registration IDs functionality provides a unified framework for managing registration IDs across all countries and regions.
-author: 
-ms.author: 
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
 ms.date: 08/03/2026
 ms.reviewer: johnmichalak
