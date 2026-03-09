@@ -5563,9 +5563,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/finance
                 - name: Configure address books
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?context=/dynamics365/context/finance
-                - name: Registration IDs
+                - name: Configure Registration IDs
                   href: ../fin-ops-core/dev-itpro/organization-administration/registration-ids.md?context=/dynamics365/context/finance
-                - name: Invoice party applicability rules for registration categories
+                - name: Define invoice party applicability rules for registration categories
                   href:../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md?context=/dynamics365/context/finance
             - name: Workflow system
               items:
