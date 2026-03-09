@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 # Dynamics 365 Human Resources customer merge overview
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 ## Dynamics Human Resources 365 customer merge
 
