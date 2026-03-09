@@ -20,3 +20,89 @@ ms.assetid:
 **Invoice party applicability rules** extend the **Registration ID** framework in Dynamics 365 Finance by defining which registration IDs are required and applicable for each party involved in an invoice, based on the party’s role, address purpose, and country/region requirements.
 
 This functionality is available starting with Dynamics 365 Finance version **10.0.48** and is enabled through the **Establishment and Registration ID governance on invoices** feature in **Feature management**. When enabled, registration categories can be configured with applicability rules that drive validation, selection, and immutable storage of registration IDs on posted invoices.
+
+In many invoicing scenarios, multiple parties can participate in a single transaction. For example, issuing and receiving legal entities, establishments, customers, and vendors. 
+Regulatory requirements often differ depending on:
+
+- the *invoice party role* (issuer or receiver),
+- the *organizational level* (legal entity or establishment),
+- the *address purpose* used on the invoice (such as invoice, or head office).
+
+**Invoice party applicability rules** provide a deterministic and consistent mechanism to define:
+
+- which registration categories apply to each invoice party role,
+- when a registration ID is mandatory for an invoice,
+- how registration IDs are resolved, validated and immutably stored during invoice posting.
+
+This ensures that invoices consistently include the correct registration IDs for compliance, reporting, auditing, and electronic invoicing scenarios.
+
+Invoice party applicability rules are part of the **Establishment and Registration ID governance on invoices** feature. When this feature is enabled:
+
+- **Registration categories** support invoice‑specific applicability rules.
+- **Registration IDs** that are mandatory for a given invoice party role are validated stored at posting time.
+- Applicable registration IDs are *immutably stored* on posted invoices and used consistently across downstream processes.
+
+These rules apply across all invoice creation paths, including customer invoices, vendor invoices and project invoices.
+
+## How invoice party applicability rules work
+
+**Invoice party applicability rules** are configured at the registration category level and evaluated during invoice processing.
+
+Each rule defines:
+
+- the *invoice party role* (Legal entity, Establishment, Customer, or Vendor),
+- the *address purpose* that determines where the registration ID is resolved from (Head company, Invoice, Primary).
+
+During invoice posting, the system evaluates these rules to determine:
+
+- which **Registration IDs** must be present,
+- which **Registration IDs** apply to the specific invoice context,
+- invoice posting cannot proceed if required **Registration IDs** are missing.
+
+**Invoice party applicability rules** work together with module‑specific invoice parameters in **Accounts payable**, **Accounts receivable**, and **Project management and accounting**.
+
+| Parameter name | Parameter location in Finance | Description | 
+|----------------|-----------------|-------------|
+| **Require establishment on vendor invoice** checkbox | **Accounts payable** > **Setup** > **Accounts payable parameters** > **Invoice** tab > **Invoice** FastTab | When enabled, the system enforces establishment requirements on vendor invoice header or lines: <br>• Enables the **Establishment** field on vendor invoice documents. <br> • Applies defaulting logic to automatically populate the **Establishment** where possible, based on **Site** setup or **Financial dimensions** on the document. <br>• Validates that an **Establishment** is specified before posting and prevents posting if the field is empty. <br> **Note**: The **Establishment** value cannot be changed after the invoice is posted. |
+| **Require establishment on customer invoice** checkbox |  **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Updates** tab > **Invoice** FastTab | When enabled, the system enforces establishment requirements on the customer invoice header. <br>• Enables the **Establishment** field on customer invoice documents. <br> • Applies defaulting logic to automatically populate the **Establishment** where possible, based on **Site** setup or **Financial dimensions** on the document. <br>• Validates that an **Establishment** is specified before posting and prevents posting if the field is empty. <br> **Note**: The **Establishment** value cannot be changed after the invoice is posted. |
+| **Require establishment on project invoice** checkbox | **Project management and accounting** > **Setup** > **Project management and accounting parameters** > **Invoice** tab | When enabled, the system enforces establishment requirements on the project invoice header. <br>• Enables the **Establishment** field on project invoice documents. <br> • Applies defaulting logic to automatically populate the **Establishment** where possible, based on **Financial dimensions** on the document. <br>• Validates that an **Establishment** is specified before posting and prevents posting if the field is empty. <br> **Note**: The **Establishment** value cannot be changed after the invoice is posted. |
+
+These parameters control whether an **Establishment** is required on invoices and determine when establishment‑level **Registration IDs** must be enforced during invoice posting.
+When establishment enforcement is enabled, the system validates that an applicable establishment is specified on the invoice and uses the defined applicability rules to resolve the corresponding **Registration IDs**. 
+This ensures consistent identification of invoice parties at both legal entity and establishment levels and guarantees that the correct registration information is validated and immutably stored on posted invoices.
+
+For more information about **Establishments**, how they are defined, and how they interact with invoice processing, see [Establishments](organizations-organizational-hierarchies.md#establishments).
+
+## Example: VAT ID applicability on invoices
+
+This example illustrates how invoice party applicability rules work using the **VAT ID** registration category.
+
+### Scenario
+
+A company issues customer invoices in multiple countries and must ensure that VAT registration numbers are consistently applied and validated on invoices.
+
+### Configuration
+
+A *VAT ID* **Registration type** is created and assigned to the *VAT ID* **Registration category**.
+
+Invoice party applicability rules are defined for the VAT ID category, for example:
+
+- Invoice party role: Legal entity
+- Address purpose: Head company or Primary
+- Invoice party role: Customer
+- Address purpose: Invoice address
+
+Before posting an invoice, users can preview the registration IDs that the system has determined by selecting the **Registration IDs** button on the source document page.
+
+### Result
+
+When an invoice is posted:
+
+- The system determines the applicable **Registration IDs** for both the issuing legal entity and the customer based on their roles and addresse purpose configured in **Invoice party applicability rules**.
+- Configuration of **Invoice party applicability rules** for *VAT ID* requires a registration IDs to be specified for legal entity (Invoice issuer legal entity) and customer (Invoice receiver legal entity).
+- If **Registration ID** of *VAT ID* **Registration category** is not setup for legal entity or customer involved in invoice transaction, invoice posting is blocked.
+- If **Registration ID** of *VAT ID* **Registration category** are setup for legal entity or customer involved in invoice transaction, these **Registration IDs** are immutably stored for the posted invoice.
+
+The resolved VAT registration IDs are stored on the posted invoice and used for reporting, compliance, and electronic invoicing. For posted invoices, the **Registration IDs** button in invoice journal allows users to review the registration IDs that were determined and stored at the time of posting.
+
+This approach ensures consistent VAT handling across all invoice types without requiring country‑specific customizations.
