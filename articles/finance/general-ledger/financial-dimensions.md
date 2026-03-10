@@ -69,6 +69,8 @@ A dimension value is then created for each project name. The **Financial dimensi
 > - Only entity-back dimension values that have been used or entered as a dimension value. For example, the value was entered as a default dimension value or entered on a transaction.
 > - Only entity-backed dimension values that have a property defined for the value, such as the value is suspended or active from/to dates are defined.
 
+If you want to rename or delete dimension values from entity-backed dimensions, do this from the source entity rather than from the **Financial dimension values** page. 
+
 ### Financial dimension values
 
 After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
