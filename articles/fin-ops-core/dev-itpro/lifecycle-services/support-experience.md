@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Set up technical support for finance and operations apps 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 ## Prerequisites
 

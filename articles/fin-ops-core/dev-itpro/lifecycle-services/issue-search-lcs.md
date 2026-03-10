@@ -16,7 +16,7 @@ ms.assetid: 160b2882-c70c-44b1-9780-68dc47afb2e8
 # Issue search in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services. It explains how to search for product issues and regulatory features, and describes the information that is provided for each status.
 

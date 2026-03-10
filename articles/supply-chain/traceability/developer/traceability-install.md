@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 11/12/2025
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Install, update, or uninstall Traceability (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article describes how to install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
@@ -104,7 +105,7 @@ This section describes how to check for updates to the Traceability app and how 
 
 ## Uninstall the Traceability Add-in from Supply Chain Management
 
-The Traceability Add-in is automatically installed on your Supply Chain Management environment when you install the Traceability app in Power Apps. However, to uninstall the add-in, you must use Microsoft Dynamics 365 Lifecycle Services (LCS) by following these steps:
+The Traceability Add-in is automatically installed on your Supply Chain Management environment when you install the Traceability app in Power Apps. However, to uninstall the add-in, you must use Microsoft Dynamics Lifecycle Services by following these steps:
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
 1. Open the page for managing your Supply Chain Management environment.

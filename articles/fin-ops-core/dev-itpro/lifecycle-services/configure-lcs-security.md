@@ -18,7 +18,7 @@ ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 
 [!include [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Security in Microsoft Dynamics Lifecycle Services is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. The members of a project might not all be members of the same organization. <br>
 

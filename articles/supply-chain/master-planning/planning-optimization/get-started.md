@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
 ---
@@ -14,12 +14,13 @@ ms.custom:
 # Get started with master planning
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 Master planning in Supply Chain Management is provided by an external service called the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. This article explains how to obtain and set up that service.
 
 ## Availability
 
-Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa, and India. If you try to install the add-in from another geographic region, then Lifecycle Services (LCS) shows a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa, and India. If you try to install the add-in from another geographic region, then Microsoft Dynamics Lifecycle Services shows a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 > [!NOTE]
 > Planning Optimization doesn't support on-premises deployments of Dynamics 365 Supply Chain Management.
@@ -36,7 +37,7 @@ To use Planning Optimization, you must make sure your system has all of the prer
 
 Before you install the Planning Optimization Add-in, the following prerequisites must be in place:
 
-- You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
+- You must be running Supply Chain Management on an Lifecycle Services enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
 
 - Your system must be set up for Power Platform integration. Learn more in [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
@@ -62,11 +63,11 @@ To use Planning Optimization, you must enable its configuration key. To do so:
 
 ### Install the Planning Optimization Add-in
 
-You must install the add-in from your LCS project and then turn on the Planning Optimization functionality from the Supply Chain Management user interface.
+You must install the add-in from your Lifecycle Services project and then turn on the Planning Optimization functionality from the Supply Chain Management user interface.
 
 To install the Planning Optimization Add-in:
 
-1. Sign in to LCS, and open the desired environment.
+1. Sign in to Lifecycle Services, and open the desired environment.
 1. Go to **Full details**.
 1. Scroll down to the **Environment add-ins** FastTab.
 1. Select **Install a new add-in**.
@@ -96,7 +97,7 @@ To configure your system to use the Planning Optimization Add-in for master plan
     |---|---|---|
     | Connected | A connection has been established between the Planning Optimization service and Supply Chain Management. | Yes |
     | Enabling connection | A request to turn on the connection to the Planning Optimization service is currently in progress. | No |
-    | Disconnected | There's no connection to the Planning Optimization service. The connection can be turned on from LCS, as described earlier in this article. | No |
+    | Disconnected | There's no connection to the Planning Optimization service. The connection can be turned on from Lifecycle Services, as described earlier in this article. | No |
     | Disabling connection | A request to turn off the connection to the Planning Optimization service is currently in progress. | No |
     | Getting status | The system is waiting for status information from the Planning Optimization service. | No |
 

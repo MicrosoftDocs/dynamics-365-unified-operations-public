@@ -15,7 +15,7 @@ ms.search.validFrom: 03/22/2022
 # Supported web browsers for Lifecycle Services 
 
 [!include[banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Users can access Microsoft Dynamics Lifecyle Services (LCS) by using the most recent versions of these popular browsers: 
 
