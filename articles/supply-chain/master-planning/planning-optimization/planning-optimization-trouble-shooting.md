@@ -14,7 +14,7 @@ ms.custom:
 # Troubleshoot Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 
 This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0
 # Subscriptions, Lifecycle Services projects, and Microsoft Entra tenants FAQ
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 
 When customers subscribe through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Microsoft Entra tenant, one Microsoft Dynamics Lifecycle Services Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production environment. For more information about these core concepts, see [finance and operations application architecture](../organization-administration/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
 

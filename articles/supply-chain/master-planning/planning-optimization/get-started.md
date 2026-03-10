@@ -14,7 +14,7 @@ ms.custom:
 # Get started with master planning
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 
 Master planning in Supply Chain Management is provided by an external service called the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. This article explains how to obtain and set up that service.
 

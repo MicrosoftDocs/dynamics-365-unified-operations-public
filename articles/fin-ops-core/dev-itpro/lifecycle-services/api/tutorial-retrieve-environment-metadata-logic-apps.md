@@ -17,7 +17,7 @@ ms.custom:
 # Retrieve environment metadata via Logic Apps tutorial
 
 [!include [banner](../../includes/banner.md)]
-[!include [LCS freeze](../../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../../includes/lcs-freeze-banner.md)]
 
 This tutorial shows how you can take advantage of the Microsoft Dynamics Lifecycle Services API to periodically scan your environments and capture the metadata details.
 

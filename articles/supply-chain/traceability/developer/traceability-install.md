@@ -14,7 +14,7 @@ ms.custom:
 # Install, update, or uninstall Traceability (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article describes how to install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
