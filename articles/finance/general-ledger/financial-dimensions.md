@@ -156,7 +156,7 @@ In most cases, renaming is preferable to deleting. Rename a retired dimension or
 
 ### Deleting financial dimension values
 
-A dimension value can be deleted only if it has never been used. Values that have been entered in a ledger account, default dimension, or transaction are read-only.Expand commentComment on line R153
+A dimension value can be deleted only if it has never been used. Values that have been entered in a ledger account, default dimension, or transaction are read-only.
 
 If you can no longer use a value, either **rename it** to indicate it's inactive or **suspend it** on the **Financial dimension values** page. Suspended values are hidden from lookups and can't be entered on new transactions, but can be renamed and reused later.
 
