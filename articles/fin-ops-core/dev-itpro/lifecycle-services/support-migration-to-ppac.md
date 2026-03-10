@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 # Migration of the Lifecycle Services Support experience to Power Platform admin center
 
 [!include[banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 To consolidate related functionality from multiple sites and more effectively provide Help content, the **Support** page in Microsoft Dynamics Lifecycle Services is being retired. Users will transition to [Power Platform admin center](/power-platform/admin/admin-documentation) and use it to submit and view support requests.
 

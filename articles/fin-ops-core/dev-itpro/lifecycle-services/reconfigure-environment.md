@@ -17,7 +17,7 @@ search.app:
 # Reconfigure environments to take a new platform or topology
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 

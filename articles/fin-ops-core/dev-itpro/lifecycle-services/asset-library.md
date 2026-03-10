@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Asset library in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics 365 Lifecycle Services. Two types of Asset library are available in Lifecycle Services: the Shared asset library and the project-level Asset library.
 

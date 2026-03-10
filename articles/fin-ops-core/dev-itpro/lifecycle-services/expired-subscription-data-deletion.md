@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-16
 # Expired subscriptions and data deletion
 
 [!include[banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article provides a brief overview of licenses for finance and operations apps. These licenses are also referred to as subscriptions. The article describes how subscriptions relate to projects in Microsoft Dynamics Lifecycle Services, and what happens when your license subscriptions expire.
 

@@ -18,7 +18,7 @@ search.app:
 # Local agent predeployment and postdeployment scripts
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Local agent 2.3.0 supports the execution of predeployment and postdeployment scripts. Therefore, you can now set up Microsoft Windows PowerShell scripts that run before and after the environment is deployed. This feature applies to deployments and redeployments, and also to servicing operations.
 
