@@ -24,12 +24,12 @@ Version 4.0.38.0 adds the following fixes and improvements:
 
 - Fixed an issue that caused pages to render incorrectly when users navigated from the **Item inquiry** page to a custom page.
 - Fixed an issue where the **Back** button didn't clear previously selected data when navigating between **Item inquiry** pages.
-- Fixed an issue where the `ConnectionSetting` parameter wasn't taken considered when using a mobile mass deployment (MDM) solution.
+- Fixed an issue where some [mobile mass deployment (MDM) solutions](warehouse-app-intune-user-based.md) couldn't push connection settings (such as those specified in the **ConnectionsJson** field in Microsoft Intune) to the app.
 - Fixed an issue where browser shortcuts appeared when users scanned a value.
 - Improved the diagnostic file collection flow. Users can now share or save the diagnostic file in a local folder, which is useful when using kiosk mode.
-- Fixed an issue where users couldn't scan a license plate on the **Confirm** page for *Movement* flows. Only the last character of the barcode was shown.
+- Fixed an issue where users couldn't scan a license plate on the **Confirm** page when running *Movement* flows. Only the last character of the barcode was shown.
+- Fixed an issue in the *Movement* flow where a previous value could be shown in the step banner on the wrong step.
 - Fixed a visual issue where **Work list** tile headers that contained special characters weren't displayed correctly.
-- Fixed an issue in the *Movement* flow where the previous value was shown in the step banner on the wrong step.
 
 ## Version 4.0.37.0
 
