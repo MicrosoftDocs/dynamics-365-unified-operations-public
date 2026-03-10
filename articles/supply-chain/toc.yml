@@ -186,17 +186,17 @@
           href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/supply-chain
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/supply-chain
-        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
+        - name: Subscriptions, Lifecycle Services projects, and Microsoft Entra tenants FAQ
           href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/supply-chain
         - name: Move environments between data centers
           href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/supply-chain
         - name: Move licenses between agreement types
           href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/supply-chain
-        - name: Move LCS implementation projects to different Microsoft Entra tenants
+        - name: Move Lifecycle Services implementation projects to different Microsoft Entra tenants
           href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/supply-chain
-        - name: Move LCS implementation projects from on-premises to cloud
+        - name: Move Lifecycle Services implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/supply-chain
-        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
+        - name: Multiple Lifecycle Services projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
@@ -1337,13 +1337,13 @@
         items:
         - name: Manage configurations lifecycle
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?context=/dynamics365/context/supply-chain
-        - name: Lifecycle Services (LCS)
+        - name: Lifecycle Services
           items:
-          - name: Upload configurations into LCS
+          - name: Upload configurations into Lifecycle Services
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?context=/dynamics365/context/supply-chain
-          - name: Import configurations from LCS
+          - name: Import configurations from Lifecycle Services
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?context=/dynamics365/context/supply-chain
-          - name: Download configurations from LCS
+          - name: Download configurations from Lifecycle Services
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/supply-chain
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/supply-chain

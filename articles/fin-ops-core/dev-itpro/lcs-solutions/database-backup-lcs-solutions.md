@@ -14,7 +14,7 @@ ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 # Back up the databases for finance and operations apps
 
 [!include[banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 You need a backup of the finance and operations apps database for your Microsoft Dynamics Lifecycle Services solution package. When you back up the database, include the master, reference, and transactional data that's specific to your solution and industry. Use this data for your presales demo deployments.
 

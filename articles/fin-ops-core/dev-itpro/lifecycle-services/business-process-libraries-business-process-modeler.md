@@ -16,7 +16,7 @@ ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 # Business process libraries in Business process modeler (BPM)
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 

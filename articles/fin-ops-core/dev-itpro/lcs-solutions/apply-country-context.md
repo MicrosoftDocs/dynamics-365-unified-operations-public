@@ -16,7 +16,7 @@ ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 # Apply country/region context
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 To meet the requirements for Lifecycle Services solutions for localization and translation, localization ISV solution providers must implement all country/region specific functionality so that country/region context controls it. This article describes how to apply country/region context to meet these requirements. In this article, you can find information about how you should use the country/region context property and what application objects control user interface elements.
 
