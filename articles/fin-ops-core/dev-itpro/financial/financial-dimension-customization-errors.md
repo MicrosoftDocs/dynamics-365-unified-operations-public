@@ -37,6 +37,16 @@ The valid column sets are:
 - **Standard views:** `Key`, `Value`, `Name` (three columns, plus system columns)
 - **Date-effective views:** `Key`, `Value`, `Name`, `ValidFrom`, `ValidTo` (five columns, plus system columns)
 
+Common reasons include:
+
+- The view hasn't been deployed or synchronized to the current environment.
+- The data source node on the view isn't named **BackingEntity**.
+- The field names on the view aren't exactly **Key**, **Value**, and **Name**.
+- The required indexes are missing, have duplicate names, or have incorrect **Allow Duplicates** settings.
+- The **Configuration key** on the view doesn't match the configuration key of the backing table.
+- The event subscriber method that registers the view with the dimension framework is absent, has an incorrect delegate name, or references the wrong view.
+- Security privileges for the view haven't been added to the **SysServerAXBasicMaintain** security duty.
+
 ### Resolution
 
 Identify which DimAttribute view has the wrong schema and remove the extra fields:
