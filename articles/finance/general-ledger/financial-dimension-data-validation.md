@@ -46,4 +46,4 @@ On a dimension entry control, select **Options** > **Validate data integrity**.
 
 [![Validate data integrity option on a dimension entry control.](./media/dimension-data-validation-dec.png)](./media/dimension-data-validation-dec.png)
 
-[!INCLUDE[footer-include](../../includes/footer-include.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
