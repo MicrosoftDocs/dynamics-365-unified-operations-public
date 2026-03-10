@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Create a new transportation management engine
 
 [!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management.
 
@@ -109,12 +110,12 @@ One way to deploy third-party TMS engines is through a deployment package. To de
 
 1. In Visual Studio, go to **Extensions \> Dynamics 365 \> Deploy \> Create Deployment Package** and create a deployment package for the new model you created as described in [Create a new TMS engine](#create-tms-engine).
 
-1. In Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to LCS.
+1. In Microsoft Dynamics Lifecycle Services, go to **Asset Library \> Software deployable package**. Select **Add** to add the deployment package you created to Lifecycle Services.
 
 1. After the validation completes, go to **Environments \> {Your Environment ID} \> Maintain \> Apply updates**, select the deployable package, and apply it.
 
 > [!NOTE]
-> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your LCS administrator for support.
+> If the system warns you that you don't have permission to deploy packages on Lifecycle Services, contact your Lifecycle Services administrator for support.
 
 ## Set up the TMS engine in Supply Chain Management
 

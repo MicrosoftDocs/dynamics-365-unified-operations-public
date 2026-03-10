@@ -6,12 +6,11 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/10/2024
+ms.date: 03/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
-ms.dyn365.ops.version: Version 1611
 ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
 ---
 
@@ -25,10 +24,11 @@ This article explains how to set up fiscal information for addresses, legal enti
 
 For any legal entity that has an address in Brazil, the Instituto Brasileiro de Geografia e Estatística (IBGE) code must be set up on the state and/or city. The IBGE code is used to identify the region where the address is located, so that correct taxes are considered. The IBGE code information comes from the IBGE, which is an official organization that maps the Brazilian geography.
 
-1.  On the **Address setup** page, in the **State/province** field group, in the **Country/region** field, select **BRA**. Then, in the **IBGE code** field, enter the IBGE code for the state.
-2.  In the **City** field group, in the **Country/region** field, select **BRA**. Then, in the **IBGE code** field, enter the IBGE code for the city.
+1. On the **Address setup** page, in the **State/province** field group, in the **Country/region** field, select **BRA**. Then, in the **IBGE code** field, enter the IBGE code for the state.
+1. In the **City** field group, in the **Country/region** field, select **BRA**. Then, in the **IBGE code** field, enter the IBGE code for the city.
 
 ## Customer tax attributes
+
 The following fields on the **Customer** page are required for a Brazilian legal entity.
 
 | Field                                                                   | Description                                                                                                                                                                                                       |
@@ -50,6 +50,7 @@ The following fields on the **Customer** page are required for a Brazilian legal
 | Presence type                                                           | The type of presence when a fiscal document is issued to the customer.                                                                                                                                            |
 
 ## Vendor tax attributes
+
 The following fields on the **Vendor** page are required for a Brazilian legal entity.
 
 | Field                             | Description                                                                                                                         |
@@ -69,6 +70,7 @@ The following fields on the **Vendor** page are required for a Brazilian legal e
 | Service on delivery address       | Set this option to **Yes** to apply the service codes and IBGE city code.                                                           |
 
 ## Product tax attributes
+
 The following fields on the **Product information** page are required for a Brazilian legal entity.
 
 | Field                                   | Description                                                                        |
@@ -81,11 +83,5 @@ The following fields on the **Product information** page are required for a Braz
 | ICMS on service                         | The ICMS tax that is applied on an item of the service type.                       |
 | Approximate tax percentage (Tax burden) | The tax rate that is used to calculate the approximate tax amount for the product. |
 | CEST (Tax substitution code)            | The code number that is used if tax substitution is allowed for the item.          |
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
