@@ -16,7 +16,7 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ---
 
 # Configure Microsoft Power Platform for use with the Financial reporting add-in
-[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to configure Microsoft Power Platform so that it can be used with the Financial reporting add-in.
 
