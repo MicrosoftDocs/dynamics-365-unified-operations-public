@@ -18,7 +18,7 @@ ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 # SEPA credit transfer overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The article also explains how to set up and transmit a credit transfer payment file.
 
