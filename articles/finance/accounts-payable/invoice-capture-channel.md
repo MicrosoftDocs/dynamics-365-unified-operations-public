@@ -18,7 +18,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 # Manage channels in the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article explains what a channel is and provides information about how to manage channels in the Invoice capture solution.
 
