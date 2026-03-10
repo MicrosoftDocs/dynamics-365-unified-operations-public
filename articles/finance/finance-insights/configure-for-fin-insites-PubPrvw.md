@@ -17,7 +17,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 # Configuration for Finance insights - version 10.0.20 and later
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 
 
 
