@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 02/26/2026
+ms.date: 03/10/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
@@ -27,14 +27,14 @@ To use the current delimiter character within dimension values, change the chart
 
 ## Update delimiter
 
-If there's a conflict with the chart of accounts, you can change the chart of accounts delimiter and the project/subproject ID format. You can't change any other dimension delimiters.
+If there's a conflict with the chart of accounts, change the chart of accounts delimiter and the project or subproject ID format. You can't change any other dimension delimiters.
 
 - Change the chart of accounts delimiter after upgrade in **General ledger parameters** > **Chart of accounts and dimensions** > **Change delimiter**.
-- If the only conflict is with the project/subproject ID format, change that value in **Project management and accounting parameters** > **General** > **Modify subproject format**.
+- If the only conflict is with the project or subproject ID format, change that value in **Project management and accounting parameters** > **General** > **Modify subproject format**.
 
 ### Other considerations
 
-Similar to project/subproject ID, any other master data records used as financial dimensions, such as vendors or customers, shouldn't have account ID values that use the same character as the chart of accounts delimiter.
+Similar to project or subproject ID, any other master data records used as financial dimensions, such as vendors or customers, shouldn't have account ID values that use the same character as the chart of accounts delimiter.
 
 Subproject delimiters automatically update to match the delimiter of their parent project.
 

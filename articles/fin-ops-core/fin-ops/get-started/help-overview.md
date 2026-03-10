@@ -4,7 +4,7 @@ description: Learn about the Help system for finance and operations apps, includ
 author: edupont04
 ms.author: edupont
 ms.topic: overview
-ms.date: 07/17/2024
+ms.date: 03/10/2026
 ms.reviewer: edupont
 ms.collection: get-started
 audience: Application User
