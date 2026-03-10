@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 8.0
 # Report a production outage
 
 [!include[banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Lifecycle Services has a feature called **Report production outage**. All customers who purchase one or more Dynamics 365 finance and operations apps and create implementation projects with a production environment deployed in Lifecycle Services can use this feature. It provides a quick and effective way to escalate issues to Microsoft Support if the services in a production environment are degraded or become unavailable.
 

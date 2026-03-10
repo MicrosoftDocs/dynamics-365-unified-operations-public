@@ -15,7 +15,7 @@ ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 # Project migration manager
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 The Microsoft Dynamics Lifecycle Services Project migration manager lets you move your project data from one geography (or geo) to another geography that Lifecycle Services supports. This article describes the terminology and supported scenarios for this functionality, and provides answers to frequently asked questions.
 

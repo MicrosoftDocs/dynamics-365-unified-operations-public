@@ -16,7 +16,7 @@ ms.assetid:
 # Create and automate user acceptance tests
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner, use BPM to distribute test libraries to your customers via Lifecycle Services and Lifecycle Services solutions. If you're a customer, use BPM to author and distribute test libraries across different projects and teams.
 
