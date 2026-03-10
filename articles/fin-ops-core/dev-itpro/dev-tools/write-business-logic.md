@@ -217,23 +217,19 @@ Create a reference from the X++ project named **FleetManagement Migrated** to th
 
 1. Right-click the FleetManagement Migrated project, select **Add**, and then select **Reference**. Select the row for the DriversLicenseEvaluator project in the **Projects** references tab, and then select **OK**.
 
-    :::image type="content" source="./media/addreference_linqc1.png" alt-text="Screenshot of the Add Reference dialog box in Visual Studio."
-    :::
+    :::image type="content" source="./media/addreference_linqc1.png" alt-text="Screenshot of the Add Reference dialog box in Visual Studio.":::
 
 1. Under the FleetManagement migrated project, expand the **References** node. You see a new reference to the **DriversLicenseEvaluator** project.
 
-    :::image type="content" source="./media/solutionexplorerreferences_linqc2.png" alt-text="Screenshot of the Solution Explorer showing the References node with the DriversLicenseEvaluator reference."
-    :::
+    :::image type="content" source="./media/solutionexplorerreferences_linqc2.png" alt-text="Screenshot of the Solution Explorer showing the References node with the DriversLicenseEvaluator reference.":::
 
 #### Build sequence
 
 Your C# DriversLicenseEvaluator project is built before the FleetManagement migrated project is built. This build order exists because the added reference makes the Fleet project dependent on your project. To view the build sequence, right-click the FleetManagement solution, select **Project Build Order**, and then select **Dependencies**.
 
-:::image type="content" source="./media/projectdependencies1_linqc2.png" alt-text="Screenshot of the Project Dependencies dialog box showing build order in Visual Studio."
-:::
+:::image type="content" source="./media/projectdependencies1_linqc2.png" alt-text="Screenshot of the Project Dependencies dialog box showing build order in Visual Studio.":::
 
-:::image type="content" source="./media/projectdependencies2_linqc1.png" alt-text="Screenshot of the Project Dependencies dialog box showing project dependencies in Visual Studio."
-:::
+:::image type="content" source="./media/projectdependencies2_linqc1.png" alt-text="Screenshot of the Project Dependencies dialog box showing project dependencies in Visual Studio.":::
 
 ### Add your event handler to a delegate
 
@@ -279,8 +275,7 @@ In this section, you set breakpoints and run the Fleet application under the Vis
 
 For this test, you're debugging the C# code that you wrote. To do this, you need to tell Visual Studio to load the symbols for the assembly that contains the C# code. Go to **Dynamics 365 &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** checkbox isn't selected.
 
-:::image type="content" source="./media/options_linqc2.png" alt-text="Screenshot of the Debugging options dialog box in Visual Studio."
-:::
+:::image type="content" source="./media/options_linqc2.png" alt-text="Screenshot of the Debugging options dialog box in Visual Studio.":::
 
 > [!TIP]
 > If you can't get to the breakpoint in the C# code, you might want to open the **Modules** window (**Debug &gt; Windows &gt; Modules**), find the C# module, and load it explicitly.
@@ -294,8 +289,7 @@ For this test, you're debugging the C# code that you wrote. To do this, you need
 1. Find the variable customer a few lines above your breakpoint.
 1. Right-click the customer variable, and then select **QuickWatch**. Any long integer value proves that your LINQ query worked.
 
-    :::image type="content" source="./media/quickwatch_linqc2.png" alt-text="Screenshot of the QuickWatch window in Visual Studio showing the customer variable."
-    :::
+    :::image type="content" source="./media/quickwatch_linqc2.png" alt-text="Screenshot of the QuickWatch window in Visual Studio showing the customer variable.":::
 
 1. Press **F5** to complete the **Save** operation.
 

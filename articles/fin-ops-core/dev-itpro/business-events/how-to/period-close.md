@@ -79,8 +79,7 @@ The following example describes the general steps for subscribing to a change-ba
 
    :::image type="content" source="../../media/Image7.png" alt-text="Screenshot of preparing to send the request for approval, part 1.":::
 
-   :::image type="content" source="../../media/Image8.png" alt-text="Screenshot of preparing to send the request for approval, part 2.
-   ":::
+   :::image type="content" source="../../media/Image8.png" alt-text="Screenshot of preparing to send the request for approval, part 2.":::
 
 1. Start the approval process.
 

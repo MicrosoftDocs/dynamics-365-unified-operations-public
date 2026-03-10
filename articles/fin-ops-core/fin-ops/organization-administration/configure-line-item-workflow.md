@@ -46,5 +46,5 @@ Follow these steps to specify whether the same workflow processes all the line i
 
     On the **Workflow** tab, select the workflow to use to process line items that meet the set of conditions that you defined.
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
-[INCLUDE[footer-include](../../../includes/footer-banner.md)]

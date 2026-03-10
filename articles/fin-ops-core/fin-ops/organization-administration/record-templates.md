@@ -23,7 +23,7 @@ This article introduces the concept of record templates and explains how you can
 
 Record templates can help you create records more quickly. However, you can only create record templates for some record types.
 
-For example, imagine you're entering rental information for a car rental business that's located in San Francisco. Since most of the customers are likely to be from the San Francisco area, it would be helpful if you could automatically fill in the values for the **State**, **Country**, and **City** fields on the rental form.
+For example, imagine you're entering rental information for a car rental business that's located in San Francisco. Since most of the customers are likely to be from the San Francisco area, it would be helpful if you could automatically fill in the values for the **State**, **Country/Region**, and **City** fields on the rental form.
 
 > [!NOTE]
 > You can apply templates only in areas that you have access to. However, you can see all template titles when you create a new record. Other users can also see all template titles if you create templates that are available to all users. Be sure to consider this visibility when naming templates. For example, avoid using names that include words such as "commission" if it's confidential that some employees in the company have commission-based salaries.

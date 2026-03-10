@@ -42,7 +42,7 @@ The following resources provide guidance and information that can help developer
 - [Apply country/region context](../../dev-itpro/lcs-solutions/apply-country-context.md)
 - [Regulatory certification information in feature titles](../../dev-itpro/lcs-solutions/regulatory-certifications.md)
 - [Classification of localization features](../../dev-itpro/lcs-solutions/classify-localization-features.md)
-- [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
+- [Country/region Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ### Regulatory updates and communication
 
