@@ -1,22 +1,22 @@
 ---
 title: Set up signers for print forms
-description: For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors.
+description: Learn how to set up signers and titles for customers and vendors in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia.
 author: kfend
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/05/2025
+ms.topic: how-to
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.custom: 
+  - bap-template
 ---
 
 # Set up signers for print forms
 
 [!include [banner](../../includes/banner.md)]
 
-For legal entities in the Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
+For legal entities in the Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
 
 ## Set up default values
 
@@ -39,7 +39,7 @@ To set up signers for the documents that a company prints, use the **Officials**
 | Job title | Select the signer's job title. If the signer's title isn't in the list, manually enter the signer's title. |
 | Account code | Select whether the signer can sign all documents of the selected document type, or only documents for a specific customer or vendor. |
 | Account relation | Select the customer or vendor account that is related to the selected account code. This field is available only if you select **Record** in the **Account code** field. |
-| Our | A selected check box indicates that the position is internal. |
+| Our | Select the checkbox to indicate that the position is internal. |
 | Association with warehouse | Select whether the signer is assigned to all warehouses or only a specific warehouse. The following options are available:<ul><li>**All** – The signer is assigned to all warehouses.</li><li>**Record** – The signer is assigned to a specific warehouse.</li></ul> |
 | Warehouse | Select the warehouse code that corresponds to the warehouse that the signer is assigned to. This field is available only if you select **Record** in the **Association with warehouse** field. |
 
@@ -49,7 +49,7 @@ You can assign a number sequence code for officials in the **Number sequences** 
 
 ## Modify signers in primary documents
 
-The Officials functionality shows the default predefined signers from the Officials table. On the **Posting invoice** page, on the **Officials** tab, you can change a signer's name and title on the primary document for the following document types:
+The Officials functionality shows the default predefined signers from the **Officials** table. On the **Posting invoice** page, on the **Officials** tab, you can change a signer's name and title on the primary document for the following document types:
 
 - Customer invoice
 - Vendor invoice

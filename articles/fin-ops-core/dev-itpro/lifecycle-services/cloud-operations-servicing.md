@@ -4,7 +4,7 @@ description: Learn about cloud operations and servicing, including an overview o
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 04/27/2022
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -15,6 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Cloud operations and servicing
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 For customers, partners, and Microsoft to be successful in this endeavor, we must ensure that most of the actions are self-serve with the Microsoft Dynamics Service Engineering (DSE) team managing by exception. To attain this self-serve mode, the Microsoft Product team continues to add more automation around the various features needed to operate an environment.
 

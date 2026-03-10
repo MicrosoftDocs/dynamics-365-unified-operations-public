@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 07/21/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Troubleshoot Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../../includes/lcs-freeze-banner.md)]
 
 This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 
