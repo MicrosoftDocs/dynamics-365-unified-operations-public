@@ -45,8 +45,7 @@ To deploy a cloud development environment in your Lifecycle Services project:
 1. Create a connection between a Lifecycle Services project and your Azure subscription. You need your Azure subscription ID and must authorize the use of the subscription.
 1. Select **+** under **Environments** to deploy.
 
-    :::image type="content" source="media/access-instances-5.jpeg" alt-text="Screenshot of the Lifecycle Services Onboard methodology."
-:::
+    :::image type="content" source="media/access-instances-5.jpeg" alt-text="Screenshot of the Lifecycle Services Onboard methodology.":::
 
 1. Select an application and platform version.
 1. Select an environment topology. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
@@ -80,14 +79,14 @@ End users can access the system. The administrator can add users to this system 
 
 You can access cloud environments both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. You get the Remote Desktop credentials from the environment page on the Lifecycle Services project site (see the illustration earlier in this article).
 
-:::image type="content" source="media/restricted-admin.png" alt-text="Screenshot of restricted admin access."
-:::
+:::image type="content" source="media/restricted-admin.png" alt-text="Screenshot of restricted admin access.":::
 
 For environments deployed **before Platform update 12**:
+
 1. Select the VM name.
 1. Use the local administrator user name and password that appear to connect to the cloud VM through Remote Desktop. You can reveal the password by selecting the show password icon.
 
-For any environments deployed **on or after Platform update 12**, there are distinct accounts, a developer account, and an admin account. 
+For any environments deployed **on or after Platform update 12**, there are distinct accounts, a developer account, and an admin account.
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from Lifecycle Services.
 
@@ -99,7 +98,7 @@ When you're done with the developer environment, or if troubleshooting an infras
 1. Highlight the environment that you want to remove and select **Deallocate**. This action powers down the machine in your Azure subscription.
 1. After the deallocation is successful, the environment is in a *Deallocated* state. You can now use the **Delete** button to start the deletion process.
 
-You can't delete a cloud-hosted environment if the virtual network (VNET) that you created with it is also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing VNET so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original VNET, or move the shared VNET outside of the resource group of the environment you're trying to delete.
+You can't delete a cloud-hosted environment if the virtual network that you created with it's also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing virtual network so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original virtual network, or move the shared virtual network outside of the resource group of the environment you're trying to delete.
 
 If the delete operation fails, check to see if one of the following issues occurred:
 
@@ -116,7 +115,7 @@ If Lifecycle Services can't successfully complete the delete operation, the oper
 
 You can easily identify the environment’s resource group in the Azure subscription, as it has the same name as the environment in Lifecycle Services.
 
-## VM that runs locally
+## VM that is running locally
 
 You can download a virtual hard disk (VHD) from Lifecycle Services and set it up on a local machine. This system is a preconfigured one-box development environment of finance and operations apps that a developer can access. You can find the VHD in the Shared Asset library of Lifecycle Services under the asset type **Downloadable VHD**.
 
@@ -163,7 +162,7 @@ Follow these steps to run the VM from Hyper-V Manager.
 
 For POS customizations, you must also follow these steps on the guest VM.
 
-1. Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424).
+1. Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](/windows/uwp/debug-test-perf/test-with-the-emulator).
 1. Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
 
 ### Provision the administrator user
@@ -213,7 +212,7 @@ On a VM, you can find most of the application configuration by opening the web.c
 
 ### Commerce configuration
 
-The software development kit (SDK) is available at `C:\RetailSDK`. For more information about how to use and customize applications, see the following topics:
+The software development kit (SDK) is available at `C:\RetailSDK`. For more information about how to use and customize applications, see the following articles:
 
 - [Retail software development kit (SDK) architecture](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
 - [Point of sale (POS) device activation](../../../commerce/dev-itpro/retail-device-activation.md)
@@ -291,13 +290,13 @@ You can hide local account passwords by lowering a user's security role in the p
 
 Microsoft hasn't tested or supported these environments with Azure Bastion.  
 
-### Environment is in a failed state with the error message, "Updated Microsoft Entra ID Tenant is missing reply URL configuration". How do I resolve this issue?
+### Environment is in a failed state with the error message, "Updated Microsoft Entra ID Tenant is missing reply URL configuration." How do I resolve this issue?
 
 This message indicates that a Tier 1/customer-managed environment is configured with a Microsoft Entra ID tenant different from the one used at the time of deployment. To resolve this issue, use one of the following options:
 
 1. (Recommended) Delete the environment and redeploy it by using the tenant in which you want to use the environment.
 1. Revert the settings to the tenant configuration that you used at the time of deployment.
-1. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I am getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
+1. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I'm getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 
@@ -314,7 +313,7 @@ To facilitate cloud-hosted deployments, create customer-specific cloud-hosted en
 
 As stated earlier, it's important to deploy finance and operations environments under the correct Microsoft Entra tenant. For Tier 1/customer-managed environments that you deploy through LCS, you can't change the Microsoft Entra tenant settings after deployment.
 
-### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
+### How can I fix my existing environment when my environment is in a failed state or I'm getting sign-in errors?
 
 If you have environments where you previously used the Admin user provisioning tool to update the tenant settings, delete those environments and then redeploy them under the correct Microsoft Entra tenant.
 
@@ -323,7 +322,7 @@ If you can't delete and redeploy an existing environment, add its URL to the con
 > [!NOTE]
 > Since you're manually adding these URLs, you also need to manually clean up these URLs when you delete the environment.
 
-1. If you don't already have it on your machine, install the Microsoft.Graph PowerShell module.
+1. If you don't already have it on your machine, install the Microsoft. Graph PowerShell module.
 
     ```powershell
     Install-Module Microsoft.Graph
