@@ -313,7 +313,7 @@ To facilitate cloud-hosted deployments, create customer-specific cloud-hosted en
 
 As stated earlier, it's important to deploy finance and operations environments under the correct Microsoft Entra tenant. For Tier 1/customer-managed environments that you deploy through LCS, you can't change the Microsoft Entra tenant settings after deployment.
 
-### How can I fix my existing environment when my environment is in a failed state or I'm getting sign-in errors?
+### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
 
 If you have environments where you previously used the Admin user provisioning tool to update the tenant settings, delete those environments and then redeploy them under the correct Microsoft Entra tenant.
 
