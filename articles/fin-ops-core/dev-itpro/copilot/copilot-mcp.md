@@ -145,12 +145,17 @@ For more information about Copilot Studio licensing and credits, see:
 - [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management)
 - [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995)
 
-### Premium licenses
+### Premium user licenses
 The following premium licenses are exempt from the tool execution billing *for agents built on clients other than Copilot Studio*. Agents built on Copilot Studio continue to bill at the fixed rate per tool call for users with these premium licenses.
 - Dynamics 365 Finance Premium
 - Dynamics 365 Supply Chain Management Premium
 
 For Copilot Studio agents, agent usage is included in the Microsoft 365 Copilot license. Business to Employee usage of Copilot Studio agents is included in the Microsoft 365 Copilot USL when the user of that agent is licensed with Microsoft 365 Copilot and the agent operates by using the authenticated Microsoft 365 Copilot USL user's identity. In these cases, the tool calls to the Dynamics 365 ERP MCP server don't incur additional credit consumption.
+
+### Agent licenses
+Dynamics 365 user licenses are not currently required for the identity of your agent. Users interacting with a chat-based agent do need to have a user license for the Dynamics 365 application to access the data and business operations of the application. But the agent identity does not need to be assigned an additional license. This is also true for autonomous agents that don't have an interactive user as long as the agent is either built in Microsoft Copilot Studio or accessing Dynamics 365 through any of the Dynamics 365 ERP MCP servers.
+
+Agent identities are exempt from Dynamics 365 user license requirements when they are assigned to the **System Agent** security role in finance and operations apps. The role is available by default for finance and operations apps environments. It provides no permissions with no duties or privileges assigned to it, and you should not add any app permissions. The role is intended only to exempt the agent from licensing requirements where applicable. You should assign other security roles to your agent that grant the appropriate app permissions based on the tasks the agent performs.
 
 ## Known limitations
 The current implementation of the Dynamics 365 ERP MCP server has the following limitations:
