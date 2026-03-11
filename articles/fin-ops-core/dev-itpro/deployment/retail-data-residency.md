@@ -18,7 +18,7 @@ ms.custom:
 
 ## Choose a region
 
-When you initialize a cloud Commerce Scale Unit (CSU), select a data center location to host it. To minimize network latency and improve performance, choose a datacenter location that's close to the channels you plan to serve by using the CSU. For approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). You can also use a web-based utility, such as [Azure speed reference](https://azurespeedtest.azurewebsites.net/), to measure latency to Azure datacenters from each store location. This information can help you choose the right datacenter when you initialize the CSU.
+When you initialize a cloud Commerce Scale Unit (CSU), select a data center location to host it. To minimize network latency and improve performance, choose a datacenter location that's close to the channels you plan to serve by using the CSU. For approximate locations of each datacenter, see [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/). This information can help you choose the right datacenter when you initialize the CSU.
 
 ## Data between regions
 

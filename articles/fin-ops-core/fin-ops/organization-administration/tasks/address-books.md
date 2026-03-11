@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure address books
 
-[!NCLUDE[banner](../../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 Use this procedure and the decisions you made  when planning the configuration of the global address book and additional address books to set up additional address books for your organization.
 
