@@ -4,7 +4,7 @@ description: Learn about how to use the Project migration manager to move your p
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 05/19/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-09-30
@@ -13,6 +13,9 @@ ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ---
 
 # Project migration manager
+
+[!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 The Microsoft Dynamics Lifecycle Services Project migration manager lets you move your project data from one geography (or geo) to another geography that Lifecycle Services supports. This article describes the terminology and supported scenarios for this functionality, and provides answers to frequently asked questions.
 

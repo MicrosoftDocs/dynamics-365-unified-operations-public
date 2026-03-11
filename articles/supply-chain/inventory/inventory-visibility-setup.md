@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/24/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -15,6 +15,7 @@ ms.custom:
 # Install and set up Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
