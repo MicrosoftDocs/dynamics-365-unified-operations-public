@@ -4,7 +4,7 @@ description: Learn how to use a Model Context Protocol (MCP) server to create an
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 03/09/2026
+ms.date: 03/11/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -58,11 +58,11 @@ The following data tools are available in the Dynamics 365 ERP MCP server.
 | Tool name | Description |
 | --------- | ----------- |
 | `data_find_entity_type` | Find OData entity types. This tool is needed for calling the `data_get_entity_metadata` tool. The tool returns multiple top hits that might be related to your query. You decide which one matches your search. |
-| `data_get_entity_metadata` | Get metadata for an entity. This metadata is needed for calling the `data_find_entities`, `data_create_entities`, `data_update_entities`, `data_delete_entities` tools. |
-| `data_create_entities` | Create data records using OData. Deep inserts are not supported for create. |
-| `data_delete_entities` | Delete data records using OData. |
-| `data_update_entities` | Update data records using OData. |
-| `data_find_entities` | Find or read data records using OData. |
+| `data_get_entity_metadata` | Get metadata for an entity. This metadata is needed for calling the `data_find_entities`, `data_create_entities`, `data_update_entities`, and `data_delete_entities` tools. |
+| `data_create_entities` | Create data records by using OData. Deep inserts aren't supported for create. |
+| `data_delete_entities` | Delete data records by using OData. | 
+| `data_update_entities` | Update data records by using OData. | 
+| `data_find_entities` | Find or read data records by using OData. |
 
 ### Form tools
 
@@ -70,7 +70,7 @@ The form tools in the MCP server enable the agent to navigate server forms to co
 
 Although form tools are conceptually similar to Computer Use Agents (CUA), the tools don't work directly with the application client. Rather than opening a client session for the agent interaction, the tools work through server APIs that provide the agent with the application view model as context, enabling more optimized agent interactions.
 
-Form tools are optimal for enabling agents to perform operations that are available in the application that aren't standard Create, Read, Update, Delete (CRUD) operations. For example, actions in the application performed by clicking buttons that execute business logic through code are available to agents through these tools, or retrieving record values that are calculated at runtime in the application. By using these tools, the agent works with the application like a human with the same security access would perform the actions.
+Form tools are optimal for enabling agents to perform operations that are available in the application that aren't standard Create, Read, Update, Delete (CRUD) operations. For example, actions in the application performed by clicking buttons that execute business logic through code are available to agents through these tools, or retrieving record values that the application calculates at runtime. By using these tools, the agent works with the application like a human with the same security access would perform the actions.
 
 The following form tools are available in the Dynamics 365 ERP MCP server.
 
@@ -136,7 +136,7 @@ Two types of costs are associated with using the Dynamics 365 ERP MCP server in 
 1. The agent orchestration cost (LLM cost), and
 1. The MCP server execution cost (tool calls to the server).
 
-These costs are different when using the MCP server in Microsoft Copilot Studio versus other agent clients, like Microsoft Foundry or non-Microsoft clients. When using the MCP server in Copilot Studio, the tool calls align with the *Agent Action* feature, which bills at a fixed rate per tool call. In Copilot Studio, billing for the *Agent Action* feature includes both the LLM cost for orchestration and the execution of the MCP server. Because Copilot Studio is a low-code platform, the variable LLM cost of token consumption has been abstracted away, providing a fixed rate for both orchestration and tool invocation. There is no incremental charge for the cost of the execution of the MCP server.
+These costs differ when you use the MCP server in Microsoft Copilot Studio versus other agent clients, such as Microsoft Foundry or non-Microsoft clients. When you use the MCP server in Copilot Studio, the tool calls align with the *Agent Action* feature, which bills at a fixed rate per tool call. In Copilot Studio, billing for the *Agent Action* feature includes both the LLM cost for orchestration and the execution of the MCP server. Because Copilot Studio is a low-code platform, it abstracts away the variable LLM cost of token consumption and provides a fixed rate for both orchestration and tool invocation. There's no incremental charge for the execution cost of the MCP server.
 
 For agents built on other agent clients, usage of the Dynamics 365 ERP MCP server incurs a cost of 1 copilot credit per 10 tool calls to the server (or .1 credits per tool call). This is an incremental cost charged by Microsoft for the execution of the MCP server. The cost for the LLM orchestration is a separate charge by the agent client for token consumption, based on that rates of that client.
 
@@ -147,14 +147,19 @@ For agents built on other agent clients, usage of the Dynamics 365 ERP MCP serve
 
 For more information about Copilot Studio licensing and credits, see:
 - [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management)
-- [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995)
+- [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995).
 
-### Premium licenses
+### Premium user licenses
 The following premium licenses are exempt from the tool execution billing *for agents built on clients other than Copilot Studio*. Agents built on Copilot Studio continue to bill at the fixed rate per tool call for users with these premium licenses.
 - Dynamics 365 Finance Premium
 - Dynamics 365 Supply Chain Management Premium
 
 For Copilot Studio agents, agent usage is included in the Microsoft 365 Copilot license. Business to Employee usage of Copilot Studio agents is included in the Microsoft 365 Copilot USL when the user of that agent is licensed with Microsoft 365 Copilot and the agent operates by using the authenticated Microsoft 365 Copilot USL user's identity. In these cases, the tool calls to the Dynamics 365 ERP MCP server don't incur additional credit consumption.
+
+### Agent licenses
+Currently, you don't need Dynamics 365 finance and operations user licenses for your agent's identity. While users who interact with a chat-based agent need a user license for the Dynamics 365 application to access the data and business operations of the application, the agent identity doesn't need an additional license. This requirement also applies to autonomous agents without an interactive user, as long as the agent is either built in Microsoft Copilot Studio or accesses Dynamics 365 finance and operations through any of the Dynamics 365 ERP MCP servers.
+
+Agent identities are exempt from Dynamics 365 finance and operations user license requirements when you assign them to the **System agent** security role in Dynamics 365 finance and operations apps. The role is available by default for Dynamics 365 finance and operations apps environments. It provides no permissions and has no duties or privileges assigned to it, and you shouldn't add any app permissions. The role is intended only to exempt the agent from licensing requirements where applicable. Assign other security roles to your agent that grant the appropriate app permissions based on the tasks the agent performs.
 
 ## Known limitations
 
@@ -183,4 +188,4 @@ The current implementation of the Dynamics 365 ERP MCP server has the following 
 
 1. **Advanced filters:** The MCP server doesn't support advanced filters on grids. For example, it doesn't support the "before," "after," and "between" operators for date columns. It supports only the "matches" operator for filtering.
 1. **Environment downtime:** The MCP server is unavailable during environment downtime, such as servicing windows. Any MCP requests that agents make during these servicing windows fail.
-1. **Copilot for finance and operations apps:** Adding the Dynamics 365 ERP MCP server as a tool in the Copilot for finance and operations apps agent, enabling it for use with the sidecar chat panel in the client, isn't yet supported. Although you're not blocked from adding the MCP server to the agent, you might experience errors in the execution. Microsoft support doesn't guarantee assistance for resolving errors or issues for these scenarios.
+1. **Copilot for finance and operations apps:** Adding the Dynamics 365 ERP MCP server as a tool in the Copilot for finance and operations apps agent, enabling it for use with the sidecar chat panel in the client, isn't yet supported. Although you're not blocked from adding the MCP server to the agent, you might experience errors in the execution. Microsoft support doesn't guarantee assistance for resolving errors or problems for these scenarios.
