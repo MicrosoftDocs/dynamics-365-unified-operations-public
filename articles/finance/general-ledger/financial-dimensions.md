@@ -137,6 +137,16 @@ When working with financial dimensions, you might need to rename dimension value
 - Ensure dimension value names are unique - Dimension value names must be unique across the system. To check for duplicates, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, choose a different name.
 - Verify you have sufficient privileges - Your user account must have the necessary roles and privileges to modify dimension values. If you're unable to make changes, contact your system administrator to verify permissions.
 
+### Rename by primary key
+
+Some entities—such as customers and vendors—don't support direct renaming of their identifier and instead require the **Rename primary key** option. This is because they use their account number as their primary key rather than their name. 
+
+1. Find the record to change.
+2. Select **Options** > **Record info**.
+3. Select **Rename Primary Key**.
+4. Enter a temporary name (for example, append an underscore) and select **OK**. Acknowledge any dialogs indicating the value will be renamed.
+5. Repeat the steps above to open **Rename Primary Key** again, this time entering the intended name with correct casing.
+
 ## Deleting financial dimensions
 
 To help maintain referential integrity of the data, you can rarely delete financial dimensions. If you try to delete a financial dimension, the system evaluates the following criteria:
