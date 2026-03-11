@@ -24,7 +24,7 @@ Space saving observations provide cleanup routines in AX 2012 to help reduce the
 
 ## Download the report script
 
-To download the **Upgrade analysis** report script (UpgradeAnalysisReport.SQL), go to [Upgrade Analysis Report](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/UpgradeAnalysisReport.SQL).
+To download the **Upgrade analysis** report script (UpgradeAnalysisReport.SQL), go to [Upgrade Analysis Report](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/AX2012DataUpgrade/UpgradeAnalysisReport.SQL).
 
 ## Run the report script
 

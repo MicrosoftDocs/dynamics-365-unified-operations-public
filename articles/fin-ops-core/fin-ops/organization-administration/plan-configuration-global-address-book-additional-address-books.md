@@ -4,7 +4,7 @@ description: Learn about the considerations and decisions for the global address
 author: msftbrking
 ms.author: anisagrawal
 ms.topic: article
-ms.date: 01/13/2020
+ms.date: 03/10/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
@@ -18,25 +18,25 @@ ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
+This article describes the considerations and decisions that you must make during the planning process before you set up and configure the global address book and any additional address books. Some of the decisions require that you confirm the decisions made for other areas of the product, such as the organization hierarchy.
 
 ## Global address book
 
-Before you begin to work with the global address book, you must determine the default values for it. These default values are then used for any additional address books that you create.
+Before you begin to work with the global address book, determine the default values for it. Use these default values for any additional address books that you create.
 
 **Decisions**
 
 - What sequence should names be displayed in for party records of the **Person** type? For example, one sequence is last name, middle name, first name.
-- Should party records be deleted from the address book when the role record is deleted? For example, if a customer record is deleted, should the party record also be deleted?
-- When a new record is created, should users be notified if a duplicate record is found in the global address book?
+- Should the system delete party records from the address book when the system deletes the role record? For example, if the system deletes a customer record, should the system also delete the party record?
+- When a user creates a new record, should the system notify the user if a duplicate record is found in the global address book?
 - Should the Data Universal Numbering System (DUNS) number be included in a party record's information?
-- If the DUNS number is included in a party record, should the uniqueness of the number be checked?
-- When a party record is created in the global address book, do you want a default party type, person, or organization?
+- If the system includes the DUNS number in a party record, should the system check the uniqueness of the number?
+- When a user creates a party record in the global address book, do you want a default party type, person, or organization?
 - Which user roles should have access to the private addresses and contact information of party records?
 
 ## Additional address books
 
-After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business. For example, Fabrikam is an international organization that has multiple companies and multiple lines of business. Fabrikam plans to create an address book for each line of business. For lines of business that occur in more than one location, such as the pneumatic tools business, Fabrikam plans to create an address book for each location. Chris, the IT manager at Fabrikam, has created the following list of address books that are required. This list also describes the party records that each address book must include.
+After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business. For example, Fabrikam is an international organization that has multiple companies and multiple lines of business. Fabrikam plans to create an address book for each line of business. For lines of business that occur in more than one location, such as the pneumatic tools business, Fabrikam plans to create an address book for each location. Chris, the IT manager at Fabrikam, created the following list of address books that are required. This list also describes the party records that each address book must include.
 
 - **Public Sector Contracts (PubSC)** – Party records for all parties that are involved in the public sector contracts that Fabrikam holds.
 - **Private Sector Contracts (PriSC)** – Party records for all parties that are involved in the private sector contracts that Fabrikam holds.

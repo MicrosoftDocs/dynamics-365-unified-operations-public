@@ -6,7 +6,7 @@ ms.author: epegors
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 01/22/2025
+ms.date: 03/09/2026
 ms.reviewer: johnmichalak
 ms.search.region: global
 ms.search.validFrom: 2022-04-28
@@ -16,15 +16,15 @@ ms.search.validFrom: 2022-04-28
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 finance and operations apps are generally available to support data residency in specific geographies. These deployment options serve customers in regulated industries and commercial organizations that do business with entities in specific geographies that might require local data residency.
+Microsoft Dynamics 365 finance and operations apps generally support data residency in specific geographies. These deployment options serve customers in regulated industries and commercial organizations that do business with entities in specific geographies that might require local data residency.
 
 ## Data residency
 
-Data residency for finance and operations apps environments and Microsoft Dynamics Lifecycle Services isn't necessarily the same. You can view the supported regions when you deploy environments. Only regions that are marked **Data resident region** store the data in the same geography as Lifecycle Services. Regions that aren't marked in this way are *not data resident* (that is, the data isn't located in the same geography as Lifecycle Services). Customers who require that neither Lifecycle Services data nor environment data should leave the geographic boundary must ensure that they use the correct Lifecycle Services endpoint and the correct region for environment deployment when they create the Lifecycle Services Implementation project. For more information about which geographies store Lifecycle Services data, see the [Supported geographies and endpoints](#supported-geographies-and-endpoints) section of this article.
+Data residency for finance and operations apps environments and Microsoft Dynamics Lifecycle Services isn't necessarily the same. You can view the supported regions when you deploy environments. Only regions that are marked **Data resident region** store the data in the same geography as Lifecycle Services. Regions that aren't marked in this way are *not data resident* (that is, the data isn't located in the same geography as Lifecycle Services). Customers who require that neither Lifecycle Services data nor environment data leaves the geographic boundary must ensure that they use the correct Lifecycle Services endpoint and the correct region for environment deployment when they create the Lifecycle Services Implementation project. For more information about which geographies store Lifecycle Services data, see the [Supported geographies and endpoints](#supported-geographies-and-endpoints) section of this article.
 
 ### Supported geographies and endpoints
 
-Dynamics 365 finance and operations apps environments can be deployed across many geographies. For a complete list of available regions, see the [Feature availability across geographies](#feature-availability-across-geographies) section of this article. Lifecycle Services is used to deploy the environments, and several instances are available globally to provide data residency for the data that's stored in Lifecycle Services.
+You can deploy Dynamics 365 finance and operations apps environments across many geographies. For a complete list of available regions, see the [Feature availability across geographies](#feature-availability-across-geographies) section of this article. You use Lifecycle Services to deploy the environments. Several instances are available globally to provide data residency for the data that's stored in Lifecycle Services.
 
 The following table lists the Lifecycle Services geographies and endpoints.
 
@@ -45,7 +45,7 @@ The following table lists the Lifecycle Services geographies and endpoints.
 
 ## Feature availability across geographies
 
-Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the following documents to get an overview of services and their availability in the geographies that you're planning to use:
+Microsoft strives to maintain functional parity between commercially available services across geographies. The product team continues to evaluate these services and capabilities for inclusion and updates in future releases. Use the following documents to get an overview of services and their availability in the geographies that you're planning to use:
 
 * [Microsoft Business Application Feature Availability - Americas](https://aka.ms/bapfunctionalparityamericas)
 * [Microsoft Business Application Feature Availability - EMEA](https://aka.ms/bapfunctionalparityemea)
