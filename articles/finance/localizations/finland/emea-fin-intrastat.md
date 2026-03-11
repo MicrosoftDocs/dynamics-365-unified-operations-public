@@ -28,8 +28,8 @@ The Finnish Intrastat declaration includes the following fields. All of the fiel
 | Agent | The VAT number of the agent. This number is set in the **Tax exempt number** field on the **Agent** tab of the **Foreign trade parameters** page. |
 | VAT number of trading partner | The tax-exempt number of the counterparty. |
 | Commodity code | The commodity code according to the Combined Nomenclature (CN) classification. This code is set on the product page. |
-| Country/region of consignment (arrivals) / Country of destination (dispatches) | The International Organization for Standardization (ISO) code of the country/region of the counterparty. |
-| Country/region of origin | The ISO code of the country/region where the goods were produced. This code is set in the **Country of origin** field on the product page. |
+| Country/region of consignment (arrivals) / Country/region of destination (dispatches) | The International Organization for Standardization (ISO) code of the country/region of the counterparty. |
+| Country/region of origin | The ISO code of the country/region where the goods were produced. This code is set in the **Country/region of origin** field on the product page. |
 | Nature of transaction | The transaction code. Companies in Finland use two-digit codes. |
 | Mode of transport | The code of the mode of transport. Companies in Finland use one-digit transport codes. |
 | Net mass | The net mass of the goods item in kilograms. The unit itself ("kg") isn't printed. |
