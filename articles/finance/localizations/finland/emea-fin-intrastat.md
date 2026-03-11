@@ -28,8 +28,8 @@ The Finnish Intrastat declaration includes the following fields. All of the fiel
 | Agent | The VAT number of the agent. This number is set in the **Tax exempt number** field on the **Agent** tab of the **Foreign trade parameters** page. |
 | VAT number of trading partner | The tax-exempt number of the counterparty. |
 | Commodity code | The commodity code according to the Combined Nomenclature (CN) classification. This code is set on the product page. |
-| Country of consignment (arrivals) / Country of destination (dispatches) | The International Organization for Standardization (ISO) code of the country/region of the counterparty. |
-| Country of origin | The ISO code of the country/region where the goods were produced. This code is set in the **Country of origin** field on the product page. |
+| Country/region of consignment (arrivals) / Country of destination (dispatches) | The International Organization for Standardization (ISO) code of the country/region of the counterparty. |
+| Country/region of origin | The ISO code of the country/region where the goods were produced. This code is set in the **Country of origin** field on the product page. |
 | Nature of transaction | The transaction code. Companies in Finland use two-digit codes. |
 | Mode of transport | The code of the mode of transport. Companies in Finland use one-digit transport codes. |
 | Net mass | The net mass of the goods item in kilograms. The unit itself ("kg") isn't printed. |
@@ -110,7 +110,7 @@ Alternatively, you can create a customer's VAT registration numbers by using the
 1. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 1. In the **Transaction code** field, select the transaction code for property transfers. Use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). Also use it for corrections. Companies in Finland use two-digit transaction codes.
 1. In the **Credit note** field, select the transaction code for the return of goods. Use this code for returns of goods.
-1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**, so that the country appears on your Intrastat report.
+1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**, so that the country/region appears on your Intrastat report.
 1. On the **Agent** tab, add information about the company that provides the statistical declaration. In the **Sales tax** section, in the **Tax exempt number** field, enter the VAT number of the agent.
 
 ### Set up the product parameters for the Intrastat declaration
@@ -140,7 +140,7 @@ Alternatively, you can create a customer's VAT registration numbers by using the
 
 ### Intrastat transfer
 
-On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country/region of destination (for dispatches) or consignment (for arrivals) are transferred.
+On the **Intrastat** page, on the Action Pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country/region of destination (for dispatches) or consignment (for arrivals) are transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 
