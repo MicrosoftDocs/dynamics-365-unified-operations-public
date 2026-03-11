@@ -57,7 +57,7 @@ There's some overlap between workflow and Microsoft Power Automate.
 
 ## Why can't the workflow editor start under AD FS?
 
-When running under Active Directory Federation Services (AD FS) in an upgraded environment, the workflow editor might have trouble starting. If it does, make sure that you add the URL '<https://dynamicsaxworkfloweditor/>' to the property **Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application** in the ADFS settings.
+When running under Active Directory Federation Services (AD FS) in an upgraded environment, the workflow editor might have trouble starting. If it does, make sure that you add the URL `<https://dynamicsaxworkfloweditor/>` to the property **Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application** in the ADFS settings.
 
 ## Why am I getting SQL deadlocks on workflow processing?
 
