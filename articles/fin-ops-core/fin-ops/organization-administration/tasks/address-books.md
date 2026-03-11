@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure address books
 
-[!include [banner](../../includes/banner.md)]
+[!NCLUDE[banner](../../includes/banner.md)]
 
 Use this procedure and the decisions you made in the [Planning the configuration of the global address book and additional address books](../../includes/planning-global-address-book.md) article to set up additional address books for your organization.
 
@@ -33,4 +33,4 @@ The demo data company used to create this task is USMF.
 1. Select the arrow to add the selected available teams to the address book.
 1. Select **Save**.
 
-[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
