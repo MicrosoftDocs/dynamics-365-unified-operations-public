@@ -4,7 +4,7 @@ description: Learn about the workflow system, including overviews on workflows o
 author: ChrisGarty
 ms.author: cgarty
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 03/10/2026
 ms.reviewer: twheeloc 
 ms.collection: get-started
 audience: Application User
@@ -24,7 +24,7 @@ This article describes the workflow system.
 
 ## What is workflow?
 
-The term *workflow* can be defined in two ways: as a system and as a business process.
+You can define the term *workflow* in two ways: as a system and as a business process.
 
 ### Workflow is a system
 
@@ -34,17 +34,17 @@ Workflow is a system that runs on the Application Object Server (AOS). The workf
 
 A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following illustration shows a workflow for expense reports.
 
-![Workflow with elements that are assigned to users.](./media/workflow_user.gif)
+:::image type="content" source="./media/workflow_user.gif" alt-text="Screenshot of workflow with elements that are assigned to users.":::
 
-To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts submitted by Sam. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
+To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam submitted. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 
 ## Benefits of using the workflow system
 
-There are several benefits of using the workflow system in your organization:
+Use the workflow system in your organization to get these benefits:
 
-- **Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed. By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.
-- **Process visibility** – You can track the status, history, and performance metrics of workflow instances. This helps you determine whether changes should be made to the workflow to improve efficiency.
-- **Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.
+- **Consistent processes** – Define how to process specific documents, such as purchase requisitions and expense reports. By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.
+- **Process visibility** – Track the status, history, and performance metrics of workflow instances. This information helps you determine whether you need to make changes to the workflow to improve efficiency.
+- **Centralized work list** – View a centralized work list that displays the workflow tasks and approvals assigned to you.
 
 
 ## Workflow content

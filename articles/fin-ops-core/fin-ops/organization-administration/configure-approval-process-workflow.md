@@ -4,7 +4,7 @@ description: Learn how to configure the approval processes in a workflow, includ
 author: ChrisGarty
 ms.author: cgarty
 ms.topic: how-to
-ms.date: 02/08/2024
+ms.date: 03/10/2026
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -20,173 +20,133 @@ ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 
 Use the following procedure to configure the properties of the approval process.
 
-To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.
+To configure an approval process, in the workflow editor, right-click the approval element, and then select **Properties** to open the **Properties** form.
 
 ## Name the approval process
 
 Follow these steps to enter a name for the approval process.
 
-1. In the left pane, click **Basic Settings**.
-2. In the **Name** field, enter a unique name for the approval process.
+1. In the left pane, select **Basic Settings**.
+1. In the **Name** field, enter a unique name for the approval process.
 
 ## Specify when the system automatically acts on the document
 
-You can configure the system to automatically act on the document if specific conditions are met. For example, the system can approve expense reports that have total amounts that are less than USD 100. Follow these steps to specify when the system acts on the document.
+You can configure the system to automatically act on the document if specific conditions are met. For example, the system can approve expense reports that have total amounts that are less than USD 100. Follow these steps to specify when the system acts on the document:
 
-1. In the left pane, click **Automatic actions**.
-2. Select the **Enable automatic actions** check box.
-3. Click **Add condition**.
-4. Enter a condition.
-5. Enter additional conditions, if necessary.
-6. To verify that the conditions that you entered are configured correctly, complete the following steps:
+1. In the left pane, select **Automatic actions**.
+1. Select the **Enable automatic actions** check box.
+1. Select **Add condition**.
+1. Enter a condition.
+1. Enter additional conditions, if necessary.
+1. To verify that the conditions you entered are configured correctly, complete the following steps:
 
-    1. Click **Test** to open the **Test workflow condition** form.
-    2. Select a record in the **Validate condition** area of the form.
-    3. Click **Test**. The system evaluates the record to determine whether it meets the conditions that you defined.
-    4. Click **OK** or **Cancel** to return to the **Properties** form.
+    1. Select **Test** to open the **Test workflow condition** form.
+    1. Select a record in the **Validate condition** area of the form.
+    1. Select **Test**. The system evaluates the record to determine whether it meets the conditions that you defined.
+    1. Select **OK** or **Cancel** to return to the **Properties** form.
 
-7. In the **Auto complete action** list, select the action that the system should take on the document.
+1. In the **Auto complete action** list, select the action that the system should take on the document.
 
-## Specify when notifications are sent
+## Specify when to send notifications
 
-You can send notifications to people when a document has been approved, rejected, delegated, or escalated, or when a change has been requested. Follow these steps to specify when notifications are sent, and who the notifications are sent to.
+You can send notifications to people when a document is approved, rejected, delegated, or escalated, or when a change is requested. Follow these steps to specify when to send notifications and who receives them.
 
-1. In the left pane, click **Notifications**.
-2. Select the check box next to the events to send notifications for:
+1. In the left pane, select **Notifications**.
+1. Select the check box next to the events to send notifications for:
 
-    - **Delegate** – When a document has been assigned to another user for approval.
-    - **Escalate** – When the assigned user has not acted on a document in the allotted time.
-    - **Approve** – When a document has been approved.
-    - **Reject** – When a document has been rejected.
-    - **Request change** – When the assigned user has requested a change to a document that was submitted.
+    - **Delegate** – When a document is assigned to another user for approval.
+    - **Escalate** – When the assigned user doesn't act on a document in the allotted time.
+    - **Approve** – When a document is approved.
+    - **Reject** – When a document is rejected.
+    - **Request change** – When the assigned user requests a change to a submitted document.
 
-3. Select the row for an event that you selected in step 2.
-4. Click the **Notification text** tab.
-5. In the text box, enter the text for the notification.
-6. To personalize the text, you can insert placeholders, which are replaced with the appropriate data when they are displayed to users. To insert a placeholder, follow these steps:
+1. Select the row for an event that you selected in step 2.
+1. Select the **Notification text** tab.
+1. In the text box, enter the text for the notification.
+1. To personalize the text, insert placeholders, which are replaced with the appropriate data when they're displayed to users. To insert a placeholder, follow these steps:
 
-    1. Click in the text box at the location where the placeholder should appear.
-    2. Click **Insert placeholder**.
-    3. In the list that is displayed, select the placeholder to insert.
-    4. Click **Insert**.
+    1. Select the text box at the location where the placeholder should appear.
+    1. Select **Insert placeholder**.
+    1. In the list that appears, select the placeholder to insert.
+    1. Select **Insert**.
 
-7. To add translations of the notification, click **Translations**. In the form that is displayed, follow these steps:
+1. To add translations of the notification, select **Translations**. In the form that appears, follow these steps:
 
-    1. Click **Add**.
-    2. In the list that is displayed, select the language in which you will enter the text.
-    3. In the **Translated text** text box, enter the text.
-    4. To personalize the text, insert placeholders.
-    5. Click **Close**.
+    1. Select **Add**.
+    1. In the list that appears, select the language for the text.
+    1. In the **Translated text** text box, enter the text.
+    1. To personalize the text, insert placeholders.
+    1. Select **Close**.
 
-8. Click the **Recipient** tab.
-9. Specify who the notifications are sent to. Select one of the options in the following table, and then follow the additional steps for the option before you go to step 10.
+1. Select the **Recipient** tab.
+1. Specify who receives the notifications. Select one of the options in the following table, and then follow the additional steps for the option before you go to step 10.
 
-    <table>
-    <thead>
-    <tr>
-    <th>Option</th>
-    <th>Notification recipients</th>
-    <th>Additional steps</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td><strong>Participant</strong></td>
-    <td>Users who are assigned to a specific group or role</td>
-    <td>
-    <ol>
-    <li>After you select <strong>Participant</strong>, click the <strong>Role based</strong> tab.</li>
-    <li>In the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</li>
-    <li>In the <strong>Participant</strong> list, select the group or role to send notifications to.</li>
-    </ol>
-    </td>
-    </tr>
-    <tr>
-    <td><strong>Workflow user</strong></td>
-    <td>Users who participate in the current workflow</td>
-    <td>
-    <ol>
-    <li>After you select <strong>Workflow user</strong>, click the <strong>Workflow user</strong> tab.</li>
-    <li>In the <strong>Workflow user</strong> list, select a user who participates in the workflow.</li>
-    </ol>
-    </td>
-    </tr>
-    <tr>
-    <td><strong>User</strong></td>
-    <td>Specific users</td>
-    <td>
-    <ol>
-    <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>Select the users to send notifications to, and then move these users to the <strong>Selected users</strong> list.</li>
-    </ol>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+| Option | Notification recipients | Additional steps |
+|---|---|---|
+| **Participant** | Users who are assigned to a specific group or role | 1. After you select **Participant**, select the **Role based** tab. 1. In the **Type of participant** list, select the type of group or role to send notifications to. 1. In the **Participant** list, select the group or role to send notifications to. |
+| **Workflow user** | Users who participate in the current workflow | 1. After you select **Workflow user**, select the **Workflow user** tab. 1. In the **Workflow user** list, select a user who participates in the workflow. |
+| **User** | Specific users | 1. After you select **User**, select the **User** tab. 1. Select the users to send notifications to, and then move these users to the **Selected users** list. |
 
-10. Repeat steps 3 through 9 for each event that you selected in step 2.
-
+1. Repeat steps 3 through 9 for each event that you selected in step 2.
 
 ## Specify a final approver
 
-To require additional approval if the user that submitted the document also approves it, you can specify a final approver for the approval step.
+To require extra approval when the user who submitted the document also approves it, specify a final approver for the approval step.
 
 1. In the workflow editor, right-click the approval element, and then select **Properties** to open the **Properties** form.
-2. In the left pane, click **Advanced settings**.
-3. Select the **Use final approver** check box.
-4. In the list, select a user to be the final approver.
-
+1. In the left pane, select **Advanced settings**.
+1. Select the **Use final approver** check box.
+1. In the list, select a user to be the final approver.
 
 ## Prevent the submitter from approving steps in the workflow
 
-To prevent users that submit documents for approval from being to approve documents themselves, follow these steps: 
+To prevent users who submit documents for approval from approving the documents themselves, follow these steps:
+
 1. Go to **System administration > Workflow > Workflow parameters > General > Approver**.
-2. Update the **Disallow approval by submitter** setting on the workflow to **Yes**. 
+1. Update the **Disallow approval by submitter** setting on the workflow to **Yes**.
 
-By default, this is set to **No**, and users can approve the document if they are included in the approval step's assignment settings.
+By default, this setting is **No**, and users can approve the document if they're included in the approval step's assignment settings.
 
-If the workflow is set to **Disallow approval by submitter** and includes approval steps with a final approver, confirm that the final approver isn't a user that typically submits documents to workflow, since they won't be able to complete the approval.
-
+If you set the workflow to **Disallow approval by submitter** and include approval steps with a final approver, make sure the final approver isn't a user who typically submits documents to workflow, since they can't complete the approval.
 
 ## Set a time limit
 
-Follow these steps if the approval process must be completed in a specific time.
+Follow these steps if you need to complete the approval process within a specific time.
 
 > [!NOTE]
 > The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.
 
-1. In the left pane, click **Advanced settings**.
-2. Select the **Set a time limit for the workflow** **element** check box.
-3. In the **Duration** field, specify when the approval process must be completed. Select one of the following options:
+1. In the left pane, select **Advanced settings**.
+1. Select the **Set a time limit for the workflow** **element** check box.
+1. In the **Duration** field, specify when the approval process must be completed. Select one of the following options:
 
     - **Hours** – Enter the number of hours in which the approval process must be completed. Then select the calendar that your organization uses, and enter information about your organization's work week.
     - **Days** – Enter the number of days in which the approval process must be completed. Then select the calendar that your organization uses, and enter information about your organization's work week.
     - **Weeks** – Enter the number of weeks in which the approval process must be completed.
-    - **Months** – Select the day and week by which the approval process must be completed. For example, you may want the approval process to be completed by Friday of the third week of the month.
-    - **Years** – Select the day, week, and month by which the approval process must be completed. For example, you may want the approval process to be completed by Friday of the third week of December.
+    - **Months** – Select the day and week by which the approval process must be completed. For example, you might want the approval process to be completed by Friday of the third week of the month.
+    - **Years** – Select the day, week, and month by which the approval process must be completed. For example, you might want the approval process to be completed by Friday of the third week of December.
 
-4. If the time limit is exceeded, the system acts on the document. In the **Action** list, select the action that the system should take.
+1. If the time limit is exceeded, the system acts on the document. In the **Action** list, select the action that the system should take.
 
 ## Specify which actions are available to the user
 
-When a document is assigned to a user for approval, the user must act on the document. Follows these steps to specify which actions the user can take on the document that was submitted.
+When you assign a document to a user for approval, the user must act on the document. Follow these steps to specify which actions the user can take on the submitted document.
 
-1. In the left pane, click **Advanced settings**.
-2. Select the **Approve** check box if the user can approve the document.
-3. Select the **Reject** check box the user can reject the document.
-4. Select the **Request change** check box the user can request changes to the document.
-5. Select the **Delegate** check box if the user can assign the document to another user for approval.
+1. In the left pane, select **Advanced settings**.
+1. Select the **Approve** check box if the user can approve the document.
+1. Select the **Reject** check box if the user can reject the document.
+1. Select the **Request change** check box if the user can request changes to the document.
+1. Select the **Delegate** check box if the user can assign the document to another user for approval.
 
 > [!NOTE]
-> The **Enable actions from the work list in Enterprise Portal** check box has been deprecated.
+> The **Enable actions from the work list in Enterprise Portal** check box is deprecated.
 
 ## Configure the approval steps
 
-An approval process consists of approval steps. Complete the following procedure to add steps the approval process and configure the steps.
+An approval process consists of approval steps. Complete the following procedure to add steps to the approval process and configure the steps.
 
 1. In the workflow editor, double-click the approval process. The workflow editor displays the steps of the approval process.
-2. To add an approval step, drag the step from the **Workflow elements** area to the canvas.
-3. To configure an approval step, see [Configure approval steps in a workflow](configure-approval-step-workflow.md).
-
+1. To add an approval step, drag the step from the **Workflow elements** area to the canvas.
+1. To configure an approval step, see [Configure approval steps in a workflow](configure-approval-step-workflow.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

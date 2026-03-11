@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions related to address boo
 author: msftbrking
 ms.author: brking
 ms.topic: faq
-ms.date: 01/07/2025
+ms.date: 03/09/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -34,34 +34,34 @@ Yes, you can add multiple party records to an address book and also remove multi
 As of Microsoft Dynamics 365 Finance version 10.0.32, an administrator can use the following procedure to enable the advanced address maintenance feature so that historical addresses can be deleted.
 
 1. Go to **Feature Management \> Check for updates**.
-2. Search for **Advanced address maintenance**. Advanced address maintenance is disabled by default.
-3. Select **Enable**.
+1. Search for **Advanced address maintenance**. Advanced address maintenance is disabled by default.
+1. Select **Enable**.
 
 After the **Advanced address maintenance** feature is enabled by an administrator, follow these steps to delete historical addresses.
 
 1. Open the **Global address book** list page.
-2. Select the party record to remove historical addresses for.
-3. On the **Addresses** tab, select **More options \> Advanced**.
-4. On the **History** tab, select one or more addresses.
-5. Select **Delete** to delete the selected addresses.
+1. Select the party record to remove historical addresses for.
+1. On the **Addresses** tab, select **More options \> Advanced**.
+1. On the **History** tab, select one or more addresses.
+1. Select **Delete** to delete the selected addresses.
 
 If an address that you're trying to delete is linked to another record, you receive an error message.
 
 Alternatively, you can set up a SysOperation framework batch job to delete multiple historical addresses.
 
 1. Go to **Organization administration \> Periodic \> Delete deactivated addresses**.
-2. Select **OK**.
+1. Select **OK**.
 
 You're notified whether the batch job succeeded or failed.
 
 You can also delete inactive postal addresses through the Microsoft Office add-in.
 
 1. Open the **Global address book** list page.
-2. Select the party record to remove historical addresses for.
-3. On the **Addresses** tab, select **More options \> Advanced**.
-4. Select the Microsoft Office logo in the upper-right corner.
-5. Select **Inactive Logistics Postal Address**.
-6. Sign in to the add-in by using your credentials. You can use the add-in to delete only inactive addresses.
+1. Select the party record to remove historical addresses for.
+1. On the **Addresses** tab, select **More options \> Advanced**.
+1. Select the Microsoft Office logo in the upper-right corner.
+1. Select **Inactive Logistics Postal Address**.
+1. Sign in to the add-in by using your credentials. You can use the add-in to delete only inactive addresses.
 
 > [!NOTE]
 > You can't use this procedure to update records or insert new records. For example, if you try to update the **ValidFrom** date, the record will be deleted instead.
@@ -107,8 +107,7 @@ For more information about how to change the location owner of an imported addre
 
 No, the global address book won't synchronize the customer. Because Customer's V3 mapping supports only the **Person** party type for contacts and **Organization** party type for accounts, the record doesn't reach Dataverse, and no errors are displayed. A separate party record of the **Person** or **Organization** types must be created.
 
->[!Note]
+> [!NOTE]
 > Data can't be deleted using excel due to dependency on the platform. Users can remove addresses using the **Manage addresses** page.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
