@@ -225,11 +225,11 @@ Enter the dimension combinations that you want to derive from the dimension in t
 
 By default, the derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that you already established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions aren't changed by derived dimensions.
 
-![](media/derived-dimensions-replace-values.png)
-
 You can change the behavior of derived dimensions to override existing values by selecting the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. If you select this field, you can enter a dimension with derived dimension values and those derived dimension values override any values that already exist. Using the previous example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if the values were already department 50 and location 60, the values change to department 20 and location 30.
 
 Derived dimensions with this setting don't automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values are only overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
+
+![](media/derived-dimensions-replace-values.png)
 
 When **Replace existing dimension values with derived values** is disabled, the derived dimensions will still automatically overwrite blank fields.
 
