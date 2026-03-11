@@ -229,6 +229,8 @@ You can change the behavior of derived dimensions to override existing values by
 
 Derived dimensions with this setting don't automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values are only overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
 
+When **Replace existing dimension values with derived values** is disabled, the derived dimensions will still automatically overwrite blank fields.
+
 ### Preventing changes with derived dimensions
 
 When you use **Add segment** on the **Derived dimensions** page to add a segment as a derived dimension, you see an option at the bottom of the **Add segment** page that you can use to prevent changes to that dimension when it's derived on a page. The default setting is off, so it doesn't prevent the derived dimension values from being changed. Change the setting to **Yes** to prevent the dimension from being changed after it is derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value can't be changed if the **Prevent changes** setting is **Yes**.
