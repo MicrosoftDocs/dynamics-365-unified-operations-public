@@ -292,6 +292,8 @@ Check the submission results at **Organization administration** \> **Periodic** 
 > [!NOTE]
 > Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
 
+According to the Singaporean electronic invoicing requirements, each generated e-invoice is being assigned with the unique identifier which is added to the XML files of related e-invoices in the **cbc:UUID** element. The idendifier is also observable in the related Invoice Journals as the rightmost column of the invoices list.
+
 ## Receive incoming electronic invoices
 
 Set more parameters in Microsoft Dynamics 365 Finance to import incoming invoices.
