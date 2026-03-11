@@ -1740,7 +1740,7 @@ items:
       - name: Localization and regulatory features
         items:
         - name: Globalization resources
-          href: ../fin-ops/lcs/country-region.md
+          href: ../fin-ops/lcs/globalization-resources.md
         - name: Classification of localization features
           href: lcs-solutions/classify-localization-features.md
         - name: Apply country/region context

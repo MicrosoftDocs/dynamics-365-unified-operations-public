@@ -2,7 +2,7 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: rashmansur
-ms.date: 03/2/2025
+ms.date: 03/05/2026
 ms.topic: faq
 ms.custom: 
   - bap-template
@@ -219,9 +219,9 @@ A release is a service update version that has been made available to customers.
 
 A release in post-update servicing reaches its end-of-service date about one month after autoupdates are completed for the latest version. Therefore, customers who chose to pause have time to complete their required update before the servicing window for their version is closed. The following illustration shows the staggered release rollout and servicing model.
 
-![Staggered release rollout servicing model.](../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png)
+:::image type="content" source="../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png" alt-text="Screenshot of the staggered release rollout servicing model.":::
 
-![Staggered release rollout servicing model legend.](../media/OneVersion-FAQs-Staggered-Release-Rollout-Servicing-Model-legend.png)
+:::image type="content" source="../media/OneVersion-FAQs-Staggered-Release-Rollout-Servicing-Model-legend.png" alt-text="Screenshot of the staggered release rollout servicing model legend.":::
 
 > [!IMPORTANT]
 > The Support team at Microsoft can't accept cases for issues that are reported from versions that are at their end of service. You must first update to the latest service update and then apply the latest quality update. At that point, if the issue persists, you can report it.

@@ -60,7 +60,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 <!-- - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html) -->
 - [Electronic reporting overview](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Localization and regulatory features](../../../fin-ops-core/fin-ops/lcs/country-region.md?toc=%2ffin-and-ops%2ftoc.json)
+- [Localization and regulatory features](../../../fin-ops-core/fin-ops/lcs/globalization-resources.md?toc=%2ffin-and-ops%2ftoc.json)
 - [Create a VAT declaration in the XML format without transferring it to ELSTER (White paper)](https://www.microsoft.com/download/details.aspx?id=101929)
 
 
