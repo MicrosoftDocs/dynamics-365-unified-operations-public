@@ -2,7 +2,7 @@
 title: Workflow history summary
 description: This topic describes the copilot capabilities on the Workflow history page.
 author: JodiChristiansen
-ms.date: 01/23/2025
+ms.date: 03/10/2026
 ms.update-cycle: 180-days
 ms.topic: article
 ms.custom: 
@@ -23,9 +23,9 @@ This article explains how to enable the optional **Summary by Copilot** field on
 The **Workflow history summary** feature is enabled by default in Dynamics 365 Finance version 10.0.39.
 
 > [!NOTE]
-> As of version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39, the **Workflow history summary** feature is set to **On by default** in Feature management.
+> As of version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39, the **Workflow history summary** feature is turned on by default in Feature management.
 
-Workflow history can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in workflow history, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Copilot prerequisites](../../../finance/accounts-receivable/Enable-copilot-in-finance.md).
+You can use workflow history either with or without its AI-powered copilot functionality. To use the copilot functionality in workflow history, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Copilot prerequisites](../../../finance/accounts-receivable/Enable-copilot-in-finance.md).
 
 Use this feature to get an AI-generated summary of the workflow history that you're viewing on the **Workflow history** page. The submitter, submission date, current status, approval or rejection, request change actions, due dates, and comments are summarized for you. This feature is powered by Azure OpenAI Service's large language model. It's designed to reduce the time that you spend searching the workflow history for the most important details, so that you can approve documents quickly and efficiently.
 
@@ -38,7 +38,7 @@ This feature has two purposes:
 
 ## Country/region and language availability
 
-For information about the languages that this Copilot feature was validated for, see [Explore Copilot features by geography and languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although the feature can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience. 
+For information about the languages that Microsoft validated this Copilot feature for, see [Explore Copilot features by geography and languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although you can use the feature in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience. 
 
 ## Version requirements
 
@@ -46,8 +46,8 @@ Workflow history summary requires the latest PQU on Dynamics 365 Finance version
 
 ## Role requirements
 
-To use this feature, the user must be able to view workflow history in Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
+To use this feature, you must be able to view workflow history in Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
 ## Summary by Copilot
 
-The **Summary by Copilot** field appears at the top of any **Workflow history** page if the workflow was submitted. The first line shows the submitter, submitted date, current status, and comments. The next lines show the most recent workflow actions. Workflow actions include approvals, delegations, rejections, and change requests. The workflow action dates and the user who performed each action are shown together with any comments that were entered. The comments might be summarized if they exceed the space that was allocated for comments.
+The **Summary by Copilot** field appears at the top of any **Workflow history** page if you submit the workflow. The first line shows the submitter, submitted date, current status, and comments. The next lines show the most recent workflow actions. Workflow actions include approvals, delegations, rejections, and change requests. The workflow action dates and the user who performed each action are shown together with any comments that were entered. The comments might be summarized if they exceed the space that was allocated for comments.

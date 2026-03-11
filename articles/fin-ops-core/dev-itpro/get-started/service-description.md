@@ -107,7 +107,7 @@ For more information, see [Onboarding an implementation project](../organization
 
 ## Globalization
 
-Finance and operations apps are served from several Azure regions around the world. Finance and operations apps provide functionality to support different countries/regions and native languages. For more information, see [Localization and regulatory features](../../fin-ops/lcs/country-region.md#localization-and-regulatory-features).
+Finance and operations apps are served from several Azure regions around the world. Finance and operations apps provide functionality to support different countries/regions and native languages. For more information, see [Localization and regulatory features](../../fin-ops/lcs/globalization-resources.md#localization-and-regulatory-features).
 
 ### Country/region-specific considerations
 
