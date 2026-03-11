@@ -40,7 +40,7 @@ This section explains how to create a class library that has a TMS engine implem
 
    :::image type="content" source="../transportation/media/042.png" alt-text="Completing model creation." lightbox="../transportation/media/042.png":::
 
-1. In a new solution, create a new Supply Chain Management project, and name it *TMSThirdParty*. The framework must be set to *.NET Framework 4.8* or newer. Double check that the project's file (`TMSThirdParty.rnrproj`) has the correct .NET Framework version. If it doesn't, update it directly in the file to `<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>`. In the project properties, set the project's model to *TMSEngines*.
+1. In a new solution, create a new Supply Chain Management project, and name it *TMSThirdParty*. The framework must be set to *.NET Framework 4.8* or newer. Double check that the project's file (`TMSThirdParty.rnrproj`) specifies the correct .NET Framework version. If it doesn't, update it directly in the file to `<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>`. In the project properties, set the project's model to *TMSEngines*.
 1. Add a new C\# *Class Library (.NET Framework)* to your solution, and name it *ThirdPartyTMSEngines*. The framework must be set to *.NET Framework 4.8* or newer and must match the settings on the *TMSThirdParty* project.
 1. In the *ThirdPartyTMSEngines* project, add references to Supply Chain Management–specific assemblies specified in the following list.
 
