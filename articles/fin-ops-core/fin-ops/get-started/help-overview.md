@@ -184,7 +184,6 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Microsoft Dynamics 365 documentation](/dynamics365/) | This site hosts or links to all product documentation for Dynamics 365. |
 | [Microsoft Learn training](/training/) | This site is the free Microsoft eLearning site. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | This site provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. It's useful in all phases of an implementation. |
-| [Support blog](https://aka.ms/AXSupportBlog) | This site provides tips and tricks that are posted by the Support team. |
 | [Previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
