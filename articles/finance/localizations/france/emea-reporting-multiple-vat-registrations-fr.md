@@ -8,7 +8,6 @@ ms.custom:
   - bap-template
 ms.date: 03/11/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: France
 ms.search.validFrom: 2023-04-10
 ---
