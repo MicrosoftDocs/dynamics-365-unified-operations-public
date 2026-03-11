@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "aarticles/fin-ops-core/fin-ops/lcs/country-region.md",
+      "source_path": "articles/fin-ops-core/fin-ops/lcs/country-region.md",
       "redirect_url": "/dynamics365/fin-ops-core/fin-ops/lcs/globalization-resources",
       "redirect_document_id": "false"  
     },
