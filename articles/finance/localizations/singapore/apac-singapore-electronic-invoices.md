@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Singapore in
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 03/11/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -32,12 +32,12 @@ Before you start, make sure these prerequisites are in place:
 - The company has a signed agreement with the electronic document delivery service provider that supports document interchange in the PEPPOL (PINT) format.
 - Register the following profile ID for Microsoft Dynamics 365 Finance electronic document interchange:
 
-    - **urn:peppol:bis:billing** – Use this profile to interchange documents in PEPPOL (PINT) format.
+  - **urn:peppol:bis:billing** – Use this profile to interchange documents in PEPPOL (PINT) format.
 
 - Get the credentials from the service provider to integrate the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
 
-   > [!NOTE]
-   > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the Electronic Invoicing ISV last-mile connection service provider. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
+  > [!NOTE]
+  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the Electronic Invoicing ISV last-mile connection service provider. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
 
 - Learn about Electronic Invoicing in the [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
 - Complete the common Electronic Invoicing service configuration in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
@@ -54,13 +54,13 @@ Add the following element to the key vault:
 
 Set up electronic invoicing Key Vault parameters.
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in **Key Vault settings**, in **Key Vault**, select the key vault reference you created earlier.
 1. In **SAS token secret**, select the storage account secret URL used to authenticate access to the storage account.
 1. Select **Key Vault parameters**.
 1. On the **Key Vault parameters** page, in **Certificates**, select **Add** and create an element of the appropriate type for each secret described earlier.
 
-    - <a id="Tok"></a>Add the **token** element of type **Secret**.
+   - <a id="Tok"></a>Add the **token** element of type **Secret**.
 
 > [!NOTE]
 > Match the value in the **Name** column to the secret name described earlier.
@@ -70,19 +70,19 @@ Set up electronic invoicing Key Vault parameters.
 1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest version of the **Singaporean electronic invoice (SG)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, confirm that the following Electronic reporting configurations are imported as a result of the **Singaporean electronic invoice (SG)** globalization feature import.
 
-    - **Invoice model**
-    - **Invoice model mapping**
-    - **PINT Sales e-invoice** 
-    - **PINT Sales e-credit note**
-    - **PINT Project e-invoice**
-    - **PINT Project e-credit note**
-    - **Customer invoice context model**
-    - **Response message model**
-    - **Edicom Response Processing**
-    - **Error log import Json**
+   - **Invoice model**
+   - **Invoice model mapping**
+   - **PINT Sales e-invoice** 
+   - **PINT Sales e-credit note**
+   - **PINT Project e-invoice**
+   - **PINT Project e-credit note**
+   - **Customer invoice context model**
+   - **Response message model**
+   - **Edicom Response Processing**
+   - **Error log import Json**
 
-    > [!NOTE]
-    > If the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+     > [!NOTE]
+     > If the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices.
 
@@ -106,20 +106,20 @@ Review and update the **Singaporean electronic invoice (SG)** feature configurat
     - **Destination** – Construct the destination by appending **_EDIWIN** to the service ID number. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) you created earlier.
 
-    :::image type="content" source="apac-sgp-einv-feature-parameters.jpg" alt-text="Screenshot of the Feature parameters tab configured for the Globalization feature for Singapore.":::
+    :::image type="content" source="media/apac-sgp-einv-feature-parameters.jpg" alt-text="Screenshot of the Feature parameters tab configured for the Globalization feature for Singapore.":::
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
- :::image type="content" source="../belgium/emea-bel-einoices-docs.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
+    :::image type="content" source="../belgium/emea-bel-einoices-docs.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
-> [!NOTE]
-> If you created derived equivalents of the earlier Electronic Reporting configurations, use them instead of the standard configurations.
+   > [!NOTE]
+   > If you created derived equivalents of the earlier Electronic Reporting configurations, use them instead of the standard configurations.
     
 1. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
 1. In the **Channel** field, enter **EdiStatus**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
@@ -137,10 +137,10 @@ Review and update the **Singaporean electronic invoice (SG)** feature configurat
 1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import** configuration.
 1. Select **Save**, and then close the page.
 
-:::image type="content" source="../belgium/emea-bel-einoices-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
+   :::image type="content" source="../belgium/emea-bel-einoices-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
-> [!NOTE]
-> If you use integration channels other than **EdiStatus** and **EdiImport**, do another configuration for the feature and related context configurations.
+   > [!NOTE]
+   > If you use integration channels other than **EdiStatus** and **EdiImport**, do another configuration for the feature and related context configurations.
 
 ## Set up registration numbers
 
@@ -158,12 +158,12 @@ To set up the Goods and Services Tax (GST) registration number, see [GST Registr
 
 Set up the postal address structure.
 
-1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
-1. Ensure the following required elements are configured.
+1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**.
+1. Ensure the following required elements are configured:
 
-    - Country code
-    - Postal code
-    - Street
+   - Country code
+   - Postal code
+   - Street
 
 ## Configure legal entity data
 
@@ -171,14 +171,14 @@ Set up the postal address structure.
 
 Add the primary address.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**, and select a legal entity.
 1. On the **Addresses** FastTab, add the primary address for the legal entity.
 
 ### Seller identification
 
 Add the registration numbers.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 1. On the Action Pane, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add**, set **Registration type** to the [Unique Entity Number (UEN)](#UEN) type you created earlier, and enter the UEN value in **Registration number**.
 1. Select **Add**, set **Registration type** to the [Goods and Services Tax (GST)](#GST) type you created earlier, and enter the GST value in **Registration number**.
@@ -191,7 +191,7 @@ Add the registration numbers.
 
 To enter the address, follow these steps:
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 1. Select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
 
@@ -199,7 +199,7 @@ To enter the address, follow these steps:
 
 To enter the registration numbers, follow these steps:
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [Unique Entity Number (UEN)](#UEN) registration type that you created earlier.
@@ -211,7 +211,7 @@ To enter the registration numbers, follow these steps:
    The **UEN** number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element and the **GST** number is entered in the **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cac:PartyTaxScheme\\cbc:CompanyID** element in the electronic invoice XML file that is generated. It's used as the buyer's identification during the submission process.
 
 > [!NOTE]
-> For both, Seller and Buyer identification, the schema **0195** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If there's a necessity to redefine the default schema then perform the steps described in the next section. Otherwise you can ignore the next section.
+> For both, seller and buyer identification, the schema **0195** (Singapore UEN identifier) is used by default according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/). If you need to redefine the default schema, see the next section. Otherwise, you can ignore the next section.
 
 ## Configure identification schemas
 
@@ -221,34 +221,34 @@ Follow these steps only if you need to redefine the default identification schem
 
 Set up electronic document properties.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
-1. In the **Type** field, enter **CompanyEndpointType**. Enter the value exactly as shown. It's used for the **Seller** identification schema definition.
+1. Go to **Accounts receivable** > **Setup** > **Electronic document property types**, and select **New**.
+1. In the **Type** field, enter **CompanyEndpointType**. Enter the value exactly as shown. Use this type for the **Seller** identification schema definition.
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Legal entities**.
 1. Save your changes and return to the **Electronic document property types** page.
 1. Select **New** to create another electronic document property type.
-1. In the **Type** field, enter **CustomerEndpointType**. Enter the value exactly as shown. It's used for the **Buyer** identification schema definition.
+1. In the **Type** field, enter **CustomerEndpointType**. Enter the value exactly as shown. Use this type for the **Buyer** identification schema definition.
 1. Select **Applicability** to add an applicable table.
 1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Customers**.
 1. Save your changes, and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-    :::image type="content" source="../belgium/emea-bel-einoices-schemas.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
+   :::image type="content" source="../belgium/emea-bel-einoices-schemas.jpg" alt-text="Screenshot of the property type added on the Electronic document property types page.":::
 
 ### Enter the seller schema code
 
 To enter the Seller schema code, follow these steps:
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities** and select a legal entity.
+1. Go to **Organization administration** > **Organizations** > **Legal entities** and select a legal entity.
 1. Select **Electronic document properties** from the Action Pane.
 1. In the **Value** column, enter the required seller schema code.
 
 ### Enter the buyer schema codes
 
-To enter the Buyer schema codes, follow these steps:
+To enter the buyer schema codes, follow these steps:
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+1. Select a specific customer in the list. On the Action Pane, select the **Customer** tab. In the **Properties** group, select **Electronic document properties**.
 1. In the **Value** column, enter the required buyer schema code.
 
 > [!NOTE]
@@ -259,7 +259,7 @@ To enter the Buyer schema codes, follow these steps:
 Set up units of measure.
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
-1. Select a unit ID, then select **External codes**.
+1. Select a unit ID, and then select **External codes**.
 1. On the **External codes** page, in **Overview**, in the **Code** column, enter the unit ID.
 1. In the **Standard code** column, select the checkbox.
 1. In the **Value** section, in the **Value** field, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
@@ -283,16 +283,16 @@ After you complete the required configuration steps, generate and submit electro
 
 Follow these steps to submit the generated electronic invoices.
 
-1. In the **Feature management** workspace, confirm that the **Export channels for electronic invoicing integration** feature is enabled. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. In the **Feature management** workspace, confirm that the **Export channels for electronic invoicing integration** feature is enabled. To learn more, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 1. In the **Channel** field, select the export channel you [created](#ExChannel), and then select **OK**.
 
 Check the submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 > [!NOTE]
-> Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
+> You can also find submitted electronic invoices in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders. You can monitor further processing there.
 
-According to the Singaporean electronic invoicing requirements, each generated e-invoice is being assigned with the unique identifier which is added to the XML files of related e-invoices in the **cbc:UUID** element. The idendifier is also observable in the related Invoice Journals as the rightmost column of the invoices list.
+According to the Singaporean electronic invoicing requirements, each generated e-invoice is assigned a unique identifier. This identifier is added to the XML files of related e-invoices in the **cbc:UUID** element. You can also see the identifier in the related Invoice Journals as the rightmost column of the invoices list.
 
 ## Receive incoming electronic invoices
 
@@ -315,12 +315,12 @@ After you complete the configuration, receive incoming electronic invoices in th
 
 Receive electronic invoices:
 
-1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
 1. Select **OK**, and then close the page.
 
-View receipt logs for processed electronic invoices: go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
+To view receipt logs for processed electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
 
-View successfully received invoices: go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
+To view successfully received invoices, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**.
 
 ## More information
 
