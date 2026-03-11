@@ -33,15 +33,15 @@ To address performance, use the **Performance enhancement for general ledger dim
 
 ## Dimension set balances
 
-A dimension set can have balances that are based on its financial dimensions. The balances exist in General ledger and are based on the dimension set definition. The balances are summarized from the General ledger data to help improve performance when they're retrieved (for example, when a trial balance is generated).
+A dimension set can have balances that are based on its financial dimensions. The balances exist in General ledger and are based on the dimension set definition. The balances are summarized from the General ledger data to help improve performance when they're retrieved. For example, when a trial balance is generated.
 
 ## Define a financial dimension set
 
-You can define which dimension attributes are included in your financial dimension set by selecting them from the **Available financial dimensions** list and then moving them to the **Selected financial dimensions** list via the right arrow. You can select up to eleven dimension attributes to define a financial dimension set.
+You can define which dimension attributes are included in your financial dimension set by selecting them from the **Available financial dimensions** list and  moving them to the **Selected financial dimensions** list via the right arrow. You can select up to eleven dimension attributes to define a financial dimension set.
 
 ![](media/define-financial-dimension-set.png)
 
-You may modify the dimensions attributes defining your dimension set any time you wish. However, if the dimension set already has balances, it is important to **Clear** and **Rebuild** them after your changes. Failure to do so may result in your trial balance having duplicate rows with the same dimension values or other unexpected problems.
+You may modify the dimensions attributes defining your dimension set at any time. However, if the dimension set already has balances, it's important to **Clear** and **Rebuild** them after your changes. Failure to do so may result in your trial balance having duplicate rows with the same dimension values or other unexpected problems.
 
 ## Create balances
 
