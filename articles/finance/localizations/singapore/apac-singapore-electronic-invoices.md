@@ -106,7 +106,7 @@ Review and update the **Singaporean electronic invoice (SG)** feature configurat
     - **Destination** – Construct the destination by appending **_EDIWIN** to the service ID number. For example, if the service ID number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) you created earlier.
 
-    :::image type="content" source="media/apac-sgp-einv-feature-parameters.jpg" alt-text="Screenshot of the Feature parameters tab configured for the Globalization feature for Singapore.":::
+    :::image type="content" source="apac-sgp-einv-feature-parameters.jpg" alt-text="Screenshot of the Feature parameters tab configured for the Globalization feature for Singapore.":::
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
