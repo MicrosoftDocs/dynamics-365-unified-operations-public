@@ -74,7 +74,7 @@ Yes, in Lifecycle Services Issue Search, Microsoft publishes information about u
 
 #### Are details about released regulatory features available?
 
-Yes, for larger features, Microsoft publishes this information in [Globalization resources](../../fin-ops/lcs/country-region.md).
+Yes, for larger features, Microsoft publishes this information in [Globalization resources](../../fin-ops/lcs/globalization-resources.md).
 
 ### Can I view and try actual regulatory features in Dynamics 365 before a release?
 

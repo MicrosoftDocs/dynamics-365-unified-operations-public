@@ -59,7 +59,7 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 ### Country/region functionality
 
-Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json).
+Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/globalization-resources.md?toc=/fin-and-ops/toc.json).
 
 ### Additional content
 
