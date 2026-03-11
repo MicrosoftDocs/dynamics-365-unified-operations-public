@@ -4,7 +4,7 @@ description: Learn about how to configure action-dependent destinations for an E
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 12/05/2022
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
