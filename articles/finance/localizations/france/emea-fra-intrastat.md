@@ -399,13 +399,11 @@ The following example shows how to set up French Intrastat and create the DEB re
 1. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**. Then select **OK**.
 1. Sort transactions by the **Date** field. The top transaction is the result transaction.
 
-    :::image type="content" source="../media/intrastat_fr_1.png" alt-text="Screenshot of the line that represents the sales order on the Intrastat page."
-:::
+    :::image type="content" source="../media/intrastat_fr_1.png" alt-text="Screenshot of the line that represents the sales order on the Intrastat page.":::
 
 1. Select the transaction line, and then select the **General** tab to view more details.
 
-    :::image type="content" source="../media/intrastat_fr_2.png" alt-text="Screenshot of the sales order details on the General tab of the Intrastat page."
-:::
+    :::image type="content" source="../media/intrastat_fr_2.png" alt-text="Screenshot of the sales order details on the General tab of the Intrastat page.":::
 
 1. On the action pane, select **Output** > **Report**.
 1. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, select the month of the sales order that you created.
@@ -414,12 +412,10 @@ The following example shows how to set up French Intrastat and create the DEB re
 1. Select **OK** to close the **Intrastat Report** dialog box.
 1. In the **Electronic report parameters** dialog box, on the **Parameters** FastTab, in the **Report level** field, select **5 - statistical response to shipment and tax declaration**, and review the report.
 
-    :::image type="content" source="../media/intrastat_fr_3.png" alt-text="Screenshot of the Intrastat Intracom report on dispatches."
-:::
+    :::image type="content" source="../media/intrastat_fr_3.png" alt-text="Screenshot of the Intrastat Intracom report on dispatches.":::
 
 1. Review the generated Excel report.
 
-    :::image type="content" source="../media/intrastat_fr_4.png" alt-text="Screenshot of the Intrastat report on dispatches."
-:::
+    :::image type="content" source="../media/intrastat_fr_4.png" alt-text="Screenshot of the Intrastat report on dispatches.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
