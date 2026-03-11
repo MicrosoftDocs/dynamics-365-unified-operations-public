@@ -102,9 +102,9 @@ For **child tables**:
 
 **Impact if missing**: LTR reconciliation operations will experience severe performance degradation, potentially causing archive jobs to timeout or fail.
 
-### 3. BI entities for Dataverse integration
+### 3. Finance and operations data entities for Dataverse integration
 
-**Business Intelligence (BI) entities** - Data entities that expose table data as virtual entities in Dataverse
+**Finance and operations data entities** - Data entities that expose table data as virtual entities in Dataverse
 
 **Purpose**: Enable Dataverse to access Dynamics 365 finance and operations data through virtual entities, allowing archive data to be stored in Dataverse long-term retention with minimal SQL Server footprint.
 
@@ -138,14 +138,14 @@ For **child tables**:
 
 **Extension class** (in BusinessIntelligence model):
 - Extends the base class using Chain of Command
-- Adds entity (BI entity) references
+- Adds finance and operations data entity references
 - Configures Dataverse integration
 - Uses `ArchiveServiceArchiveJobPostRequestBuilder` API
 
 **Why this split?** BusinessIntelligence model references data entities. Your base module shouldn't have dependencies on BusinessIntelligence. This layering prevents circular dependencies and maintains clean architecture.
 
 **Key builder methods:**
-- `addSourceTableForLongTermRetention()` - Adds a table to archive scope with its history table and BI entity
+- `addSourceTableForLongTermRetention()` - Adds a table to archive scope with its history table and finance and operations data entity
 - `addWhereCondition()` - Adds filtering criteria (for example, date ranges, status)
 - `addJoinCondition()` - Defines parent-child table relationships
 - `setJobCriteriaKey()` - Sets partition key for parallel execution
@@ -171,9 +171,9 @@ For complete configuration steps and considerations, see [Configure Dataverse fo
 2. **Create live tables**: Extend existing or create new tables with proper fields
 3. **Create history tables**: Mirror live tables with appropriate indexes
 4. **Add indexes**: Both criteria and reconciliation indexes on live tables
-5. **Create BI entities**: With all required properties configured
+5. **Create finance and operations data entities**: With all required properties configured
 6. **Publish entities**: Let `Auto Create` publish to Dataverse automatically (or manual publish)
-7. **Create job contract**: Base class + BI extension
+7. **Create job contract**: Base class + finance and operations data entity extension
 8. **Configure Dataverse**: Enable CT and LTR (manual or solution-based)
 9. **Test**: Create test archive job and verify data movement
 
@@ -280,7 +280,7 @@ This approach involves creating a Dataverse solution that packages your entity c
 
 1. Open your solution
 2. Click **Add existing** > **Table** > **Virtual table**
-3. Search for and select your BI entities
+3. Search for and select your finance and operations data entities
 4. Add all entities related to your archive scope
 5. For each entity:
    - Go to table **Settings** > **Advanced options**
@@ -424,7 +424,7 @@ When you need to update your archive solution:
 Your custom solution integrates with the Archive framework through:
  - Virtual entities - The Archive framework discovers and uses your virtual entities automatically when referenced in your job contract.
  - Type registration - Your X++ type registration (created in F&O) references your entities.
- - Job contract - Your `ArchiveAutomationJobRequestCreator` classes reference your BI entities by name.
+ - Job contract - Your `ArchiveAutomationJobRequestCreator` classes reference your finance and operations data entities by name.
  - No code changes needed - The Archive framework doesn't require modifications to recognize external solutions.
 
 #### Partner solution structure example
@@ -442,97 +442,6 @@ ContosoWHSArchiveSolution (Managed)
 └── Version: 1.0.0.0
 ```
 
-## Dynamics 365 finance and operations table names in live, history, and Dataverse-managed data lake tables
+## Table naming reference
 
-| Scenario | Live table | History table | BI entity | Dataverse-managed data lake table |
-|---|---|---|---|---|
-| Finance General ledger | GENERALJOURNALACCOUNTENTRY | GENERALJOURNALACCOUNTENTRYHISTORY | GeneraljournalaccountentryBiEntity | mserp\_GeneraljournalaccountentryBiEntity |
-| | GENERALJOURNALACCOUNTENTRY\_W | GENERALJOURNALACCOUNTENTRYHISTORY\_W | GeneraljournalaccountentrywBiEntity | mserp\_GeneraljournalaccountentrywBiEntity |
-| | GENERALJOURNALENTRY | GENERALJOURNALENTRYHISTORY | GeneraljournalentryBiEntity | mserp\_GeneraljournalentryBiEntity |
-| | GENERALJOURNALENTRY\_W | GENERALJOURNALENTRYHISTORY\_W | GeneraljournalentrywBiEntity | mserp\_GeneraljournalentrywBiEntity |
-| | LEDGERCONSOLIDATEHISTREF | LEDGERCONSOLIDATEHISTREFHISTORY | LedgerconsolidatehistrefBiEntity | mserp\_LedgerconsolidatehistrefBiEntity |
-| | LEDGERENTRY | LEDGERENTRYHISTORY | LedgerentryBiEntity | mserp\_LedgerentryBiEntity |
-| | LEDGERENTRYJOURNAL | LEDGERENTRYJOURNALHISTORY | LedgerentryjournalBiEntity | mserp\_LedgerentryjournalBiEntity |
-| | LEDGERENTRYJOURNALIZING | LEDGERENTRYJOURNALIZINGHISTORY | LedgerentryjournalizingBiEntity | mserp\_LedgerentryjournalizingBiEntity |
-| | LEDGERTRANSSETTLEMENT | LEDGERTRANSSETTLEMENTHISTORY | LedgertranssettlementBiEntity | mserp\_LedgertranssettlementBiEntity |
-| | SUBLEDGERVOUCHERGENERALJOURNALENTRY | SUBLEDGERVOUCHERGENERALJOURNALENTRYHISTORY | SubledgervouchergeneraljournalentryBiEntity |mserp\_SubledgervouchergeneraljournalentryBiEntity |
-| Supply Chain Management Sales order | MCRRETURNSALESTABLE | MCRRETURNSALESTABLEHISTORY | McrreturnsalestableBiEntity | mserp\_McrreturnsalestableBiEntity |
-| | MCRSALESLINE | MCRSALESLINEHISTORY | McrsaleslineBiEntity | mserp\_McrsaleslineBiEntity |
-| | MCRSALESTABLE | MCRSALESTABLEHISTORY | McrsalestableBiEntity | mserp\_McrsalestableBiEntity |
-| | RETAILSALESLINE | RETAILSALESLINEHISTORY | RetailsaleslineBiEntity | mserp\_RetailsaleslineBiEntity |
-| | RETAILSALESTABLE | RETAILSALESTABLEHISTORY | RetailsalestableBiEntity | mserp\_RetailsalestableBiEntity |
-| | SALESLINE | SALESLINEHISTORY | SaleslineBiEntity | mserp\_SaleslineBiEntity |
-| | SALESLINE\_BR | SALESLINEHISTORY\_BR | SaleslinebrBiEntity | mserp\_SaleslinebrBiEntity |
-| | SALESLINE\_IN | SALESLINEHISTORY\_IN | SaleslineinBiEntity | mserp\_SaleslineinBiEntity |
-| | SALESLINE\_W | SALESLINEHISTORY\_W | SaleslinewBiEntity | mserp\_SaleslinewBiEntity |
-| | SALESTABLE | SALESTABLEHISTORY | SalestableBiEntity | mserp\_SalestableBiEntity |
-| | SALESTABLE\_BR | SALESTABLEHISTORY\_BR | SalestablebrBiEntity | mserp\_SalestablebrBiEntity |
-| | SALESTABLE\_RU | SALESTABLEHISTORY\_RU | SalestableruBiEntity | mserp\_SalestableruBiEntity |
-| | SALESTABLE\_W | SALESTABLEHISTORY\_W | SalestablewBiEntity | mserp\_SalestablewBiEntity |
-| Supply Chain Management Inventory transaction | INVENTTRANSARCHIVE | INVENTTRANSARCHIVEHISTORY | InventtransarchiveBiEntity | mserp\_InventTransArchiveBiEntity |
-| Supply Chain Management Inventory Journal | INVENTJOURNALTABLE | INVENTJOURNALTABLEHISTORY | InventjournaltableBiEntity | mserp\_InventjournaltableBiEntity |
-| | INVENTJOURNALTABLE_IN | INVENTJOURNALTABLE_INHISTORY | InventjournaltableinBiEntity | mserp\_InventjournaltableinBiEntity |
-| | INVENTJOURNALTRANS | INVENTJOURNALTRANSHISTORY | InventjournaltransBiEntity | mserp\_InventjournaltransBiEntity |
-| | INVENTJOURNALTRANS_IN | INVENTJOURNALTRANS_INHISTORY | InventjournaltransinBiEntity | mserp\_InventjournaltransinBiEntity |
-| Finance Tax Trans | TAXTRANS | TAXTRANSHISTORY | TaxtransBiEntity | mserp\_TaxtransBiEntity |
-| | TAXTRANS\_BR | TAXTRANSHISTORY\_BR | TaxtransbrBiEntity | mserp\_TaxtransbrBiEntity |
-| | TAXTRANSGENERALJOURNALACCOUNTENTRY | TAXTRANSGENERALJOURNALACCOUNTENTRYHISTORY | TaxtransgeneraljournalaccountentryBiEntity | mserp\_TaxtransgeneraljournalaccountentryBiEntity |
-| | TAXTRANS\_IN | TAXTRANSHISTORY\_IN | TaxtransinBiEntity | mserp\_TaxtransinBiEntity |
-| | TAXTRANS_IT | TAXTRANSHISTORY\_IT | TaxtransitBiEntity | mserp\_TaxtransitBiEntity |
-| | TAXTRANS_REPORTING | TAXTRANSHISTORY_REPORTING | TaxtransreportingBiEntity | mserp\_TaxtransreportingBiEntity |
-| | TAXTRANS\_RU | TAXTRANSHISTORY\_RU | TaxtransruBiEntity | mserp\_TaxtransruBiEntity |
-| | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRY | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRYHISTORY | TaxtranssubledgerjournalaccountentryBiEntity | mserp\_TaxtranssubledgerjournalaccountentryBiEntity |
-| | TAXTRANS\_TH | TAXTRANSHISTORY\_TH | TaxtransthBiEntity | mserp\_TaxtransthBiEntity |
-| | TAXTRANS\_W | TAXTRANSHISTORY\_W | TaxtranswBiEntity | mserp\_TaxtranswBiEntity | 
-| Commerce transaction | RetailTransactionTable | RetailTransactionTableHistory | RetailTransactionTableBIEntity | mserp\_RetailTransactionTableBIEntity |
-| | RetailTransactionCashManagementTrans | RetailTransactionCashManagementTransHistory | RetailTransactionCashManagementTransBIEntity | mserp\_RetailTransactionCashManagementTransBIEntity |
-| | RetailTransactionFiscalCustomer | RetailTransactionFiscalCustomerHistory | RetailTransactionFiscalCustomerBIEntity | mserp\_RetailTransactionFiscalCustomerBIEntity |
-| | RetailTransactionSupplementaryInvoice | RetailTransactionSupplementaryInvoiceHistory | RetailTransactionSupplementaryInvoiceBIEntity | mserp\_RetailTransactionSupplementaryInvoiceBIEntity |
-| | RetailTransactionTable\_RU | RetailTransactionTable\_RUHistory | RetailTransactionTable\_RUBIEntity | mserp\_RetailTransactionTable\_RUBIEntity |
-| | RetailTransactionBankedTenderTrans | RetailTransactionBankedTenderTransHistory | RetailTransactionBankedTenderTransBIEntity | mserp\_RetailTransactionBankedTenderTransBIEntity |
-| | RetailTransactionValidationError | RetailTransactionValidationErrorHistory | RetailTransactionValidationErrorBIEntity | mserp\_RetailTransactionValidationErrorBIEntity |
-| | RetailTransactionTenderDeclarationTrans | RetailTransactionTenderDeclarationTransHistory | RetailTransactionTenderDeclarationTransBIEntity | mserp\_RetailTransactionTenderDeclarationTransBIEntity |
-| | RetailTransactionTaxMeasure | RetailTransactionTaxMeasureHistory | RetailTransactionTaxMeasureBIEntity | mserp\_RetailTransactionTaxMeasureBIEntity |
-| | RetailTransactionSalesTrans | RetailTransactionSalesTransHistory | RetailTransactionSalesTransBIEntity | mserp\_RetailTransactionSalesTransBIEntity |
-| | RetailTransactionPaymentTrans | RetailTransactionPaymentTransHistory | RetailTransactionPaymentTransBIEntity | mserp\_RetailTransactionPaymentTransBIEntity |
-| | RetailTransactionPaymentTrans\_BR | RetailTransactionPaymentTrans\_BRHistory | RetailTransactionPaymentTrans\_BRBIEntity | mserp\_RetailTransactionPaymentTrans\_BRBIEntity |
-| | RetailTransactionSafeTenderTrans | RetailTransactionSafeTenderTransHistory | RetailTransactionSafeTenderTransBIEntity | mserp\_RetailTransactionSafeTenderTransBIEntity |
-| | RetailTransactionPaymentRefundableAmounts | RetailTransactionPaymentRefundableAmountsHistory | RetailTransactionPaymentRefundableAmountsBIEntity | mserp\_RetailTransactionPaymentRefundableAmountsBIEntity |
-| | RetailTransactionAdditionalAddressTrans | RetailTransactionAdditionalAddressTransHistory | RetailTransactionAdditionalAddressTransBIEntity | mserp\_RetailTransactionAdditionalAddressTransBIEntity |
-| | RetailTransactionAddressTrans | RetailTransactionAddressTransHistory | RetailTransactionAddressTransBIEntity | mserp\_RetailTransactionAddressTransBIEntity |
-| | RetailTransactionAffiliationTrans | RetailTransactionAffiliationTransHistory | RetailTransactionAffiliationTransBIEntity | mserp\_RetailTransactionAffiliationTransBIEntity |
-| | RetailTransactionAttributeTrans | RetailTransactionAttributeTransHistory | RetailTransactionAttributeTransBIEntity | mserp\_RetailTransactionAttributeTransBIEntity |
-| | RetailTransactionChargeTaxMeasure | RetailTransactionChargeTaxMeasureHistory | RetailTransactionChargeTaxMeasureBIEntity | mserp\_RetailTransactionChargeTaxMeasureBIEntity |
-| | RetailTransactionChargeTaxTrans | RetailTransactionChargeTaxTransHistory | RetailTransactionChargeTaxTransBIEntity | mserp\_RetailTransactionChargeTaxTransBIEntity |
-| | RetailTransactionChargeTaxTransGTE | RetailTransactionChargeTaxTransGTEHistory | RetailTransactionChargeTaxTransGTEBIEntity | mserp\_RetailTransactionChargeTaxTransGTEBIEntity |
-| | RetailTransactionCustomerAccountDepositTrans | RetailTransactionCustomerAccountDepositTransHistory | RetailTransactionCustomerAccountDepositTransBIEntity | mserp\_RetailTransactionCustomerAccountDepositTransBIEntity |
-| | RetailTransactionDiscountTrans | RetailTransactionDiscountTransHistory | RetailTransactionDiscountTransBIEntity | mserp\_RetailTransactionDiscountTransBIEntity |
-| | RetailTransactionFiscalTrans | RetailTransactionFiscalTransHistory | RetailTransactionFiscalTransBIEntity | mserp\_RetailTransactionFiscalTransBIEntity |
-| | RetailTransactionFiscalTransExtendedData | RetailTransactionFiscalTransExtendedDataHistory | RetailTransactionFiscalTransExtendedDataBIEntity | mserp\_RetailTransactionFiscalTransExtendedDataBIEntity |
-| | RetailTransactionIncomeExpenseTrans | RetailTransactionIncomeExpenseTransHistory | RetailTransactionIncomeExpenseTransBIEntity | mserp\_RetailTransactionIncomeExpenseTransBIEntity |
-| | RetailTransactionInfocodeTrans | RetailTransactionInfocodeTransHistory | RetailTransactionInfocodeTransBIEntity | mserp\_RetailTransactionInfocodeTransBIEntity |
-| | RetailTransactionKitsDisassemblyTrans | RetailTransactionKitsDisassemblyTransHistory | RetailTransactionKitsDisassemblyTransBIEntity | mserp\_RetailTransactionKitsDisassemblyTransBIEntity |
-| | RetailTransactionLoyaltyRewardPointTrans | RetailTransactionLoyaltyRewardPointTransHistory | RetailTransactionLoyaltyRewardPointTransBIEntity | mserp\_RetailTransactionLoyaltyRewardPointTransBIEntity |
-| | RetailTransactionMarkupTrans | RetailTransactionMarkupTransHistory | RetailTransactionMarkupTransBIEntity | mserp\_RetailTransactionMarkupTransBIEntity |
-| | RetailTransactionNoteTrans | RetailTransactionNoteTransHistory | RetailTransactionNoteTransBIEntity | mserp\_RetailTransactionNoteTransBIEntity |
-| | RetailTransactionOrderInvoiceTrans | RetailTransactionOrderInvoiceTransHistory | RetailTransactionOrderInvoiceTransBIEntity | mserp\_RetailTransactionOrderInvoiceTransBIEntity |
-| | RetailTransactionTaxTrans\_IN | RetailTransactionTaxTrans\_INHistory | RetailTransactionTaxTrans\_INBIEntity | mserp\_RetailTransactionTaxTrans\_INBIEntity |
-| | RetailTransactionTaxTrans | RetailTransactionTaxTransHistory | RetailTransactionTaxTransBIEntity | mserp\_RetailTransactionTaxTransBIEntity |
-| | RetailTransactionTaxTransGTE | RetailTransactionTaxTransGTEHistory | RetailTransactionTaxTransGTEBIEntity | mserp\_RetailTransactionTaxTransGTEBIEntity |
-| | RetailEodStatementControllerLog | RetailEodStatementControllerLogHistory | RetailEodStatementControllerLogBIEntity | mserp\_RetailEodStatementControllerLogBIEntity |
-| | RetailEodStatementEventLog | RetailEodStatementEventLogHistory | RetailEodStatementEventLogBIEntity | mserp\_RetailEodStatementEventLogBIEntity |
-| | RetailEodTransactionAggregationHeader | RetailEodTransactionAggregationHeaderHistory | RetailEodTransactionAggregationHeaderBIEntity | mserp\_RetailEodTransactionAggregationHeaderBIEntity |
-| | RetailEodTransactionAggregationTrans | RetailEodTransactionAggregationTransHistory | RetailEodTransactionAggregationTransBIEntity | mserp\_RetailEodTransactionAggregationTransBIEntity |
-| | RetailEodTransactionError | RetailEodTransactionErrorHistory | RetailEodTransactionErrorBIEntity | mserp\_RetailEodTransactionErrorBIEntity |
-| | RetailEodTransactionBankedTenderTrans | RetailEodTransactionBankedTenderTransHistory | RetailEodTransactionBankedTenderTransBIEntity | mserp\_RetailEodTransactionBankedTenderTransBIEntity |
-| | RetailEodTransactionIncomeExpenseTrans | RetailEodTransactionIncomeExpenseTransHistory | RetailEodTransactionIncomeExpenseTransBIEntity | mserp\_RetailEodTransactionIncomeExpenseTransBIEntity |
-| | RetailEodTransactionInfocodeTrans | RetailEodTransactionInfocodeTransHistory | RetailEodTransactionInfocodeTransBIEntity | mserp\_RetailEodTransactionInfocodeTransBIEntity |
-| | RetailEodTransactionOrderInvoiceTrans | RetailEodTransactionOrderInvoiceTransHistory | RetailEodTransactionOrderInvoiceTransBIEntity | mserp\_RetailEodTransactionOrderInvoiceTransBIEntity |
-| | RetailEodTransactionPaymentTrans | RetailEodTransactionPaymentTransHistory | RetailEodTransactionPaymentTransBIEntity | mserp\_RetailEodTransactionPaymentTransBIEntity |
-| | RetailEodTransactionSafeTenderTrans | RetailEodTransactionSafeTenderTransHistory | RetailEodTransactionSafeTenderTransBIEntity | mserp\_RetailEodTransactionSafeTenderTransBIEntity |
-| | RetailEodTransactionSalesTrans | RetailEodTransactionSalesTransHistory | RetailEodTransactionSalesTransBIEntity | mserp\_RetailEodTransactionSalesTransBIEntity |
-| | RetailEodTransactionTable | RetailEodTransactionTableHistory | RetailEodTransactionTableBIEntity | mserp\_RetailEodTransactionTableBIEntity |
-| | RetailEodTransactionTenderDeclarationTrans | RetailEodTransactionTenderDeclarationTransHistory | RetailEodTransactionTenderDeclarationTransBIEntity | mserp\_RetailEodTransactionTenderDeclarationTransBIEntity |
-| | RetailStatementJour | RetailStatementJourHistory | RetailStatementJourBIEntity | mserp\_RetailStatementJourBIEntity |
-| | RetailStatementTrans | RetailStatementTransHistory | RetailStatementTransBIEntity | mserp\_RetailStatementTransBIEntity |
-| | RetailStatementVoucher | RetailStatementVoucherHistory | RetailStatementVoucherBIEntity | mserp\_RetailStatementVoucherBIEntity |
+For a complete mapping of Microsoft-provided table names across live, history, finance and operations data entity, and Dataverse layers, see [Archive table naming reference](archive-tables-reference.md). This reference is useful when implementing customizations and verifying entity names for archive job contracts.

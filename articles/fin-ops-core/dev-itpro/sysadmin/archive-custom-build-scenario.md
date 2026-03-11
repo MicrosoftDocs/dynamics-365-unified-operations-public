@@ -24,7 +24,7 @@ This scenario is for archiving custom transaction data that isn't related to Mic
 - Custom source link table (transaction header)
 - Custom table hierarchy (headers, lines, details)
 - Custom history tables (one per live table)
-- Custom BI entities (one per live table)
+- Custom finance and operations data entities (one per live table)
 - Job contract creator class (two separate classes required)
 - Archive service type registration
 - Optional UI components
@@ -291,9 +291,9 @@ Add indexes on foreign keys and commonly queried fields:
 
 **Why these indexes:** They enable efficient querying of archived data and are required for reversal scheduling.
 
-## Step 4: Create BI entities
+## Step 4: Create finance and operations data entities
 
-**Objective:** Create BI entities to enable Dataverse virtual entities for long-term retention.
+**Objective:** Create finance and operations data entities to enable Dataverse virtual entities for long-term retention.
 
 ### Create entity for each live table
 
@@ -661,11 +661,11 @@ private ArchiveJobPostRequest addSourceLinkTableForLongTermRetention(
 **Base class (in your model):**
 - Defines archive scope (what tables)
 - Specifies relationships (JOINs)
-- No BI entity references
+- No finance and operations data entity references
 
-**BI Extension class (in BusinessIntelligence model):**
+**Finance and operations data entity extension class (in BusinessIntelligence model):**
 - Adds LTR configuration
-- Links BI entities to tables
+- Links finance and operations data entities to tables
 - Enables managed data lake access
 
 **This separation enables:**
@@ -737,7 +737,7 @@ public class CustomWorkflowModule
 ### Build solution
 
 1. Build your main model (tables, base job creator, type registration)
-2. Build BusinessIntelligence model (BI entities, extension class)
+2. Build BusinessIntelligence model (finance and operations data entities, extension class)
 3. Resolve any compilation errors
 
 ### Synchronize database
@@ -759,7 +759,7 @@ After deployment:
 1. Navigate to **Data Management** workspace
 2. Go to **Framework parameters** > **Entity settings**
 3. Click **Refresh entity list**
-4. Verify your BI entities appear
+4. Verify your finance and operations data entities appear
 
 ### Verify virtual entities in Dataverse
 
@@ -829,7 +829,7 @@ SELECT * FROM CustomWorkflowHeader WHERE WorkflowId = '[TestID]'  -- Should retu
 | Archive type not appearing in UI | Type registration didn't run | Verify `registerTypes()` is called on startup |
 | Job creation fails validation | Missing indexes on live tables | Add `ArchiveCriteriaIdx` and `ArchiveSysVersionIdx` to all tables |
 | Child table data not archiving | JOIN conditions incorrect | Verify foreign key field names match exactly |
-| Managed data lake missing tables | Entity not configured for LTR | Verify `Allow Retention = Yes` on all BI entities |
+| Managed data lake missing tables | Entity not configured for LTR | Verify `Allow Retention = Yes` on all finance and operations data entities |
 | Change tracking failures | Rowversion not enabled | Enable rowversion and `Allow Row Version Change Tracking` on entities |
 | Reversal jobs blocked | Missing indexes on history tables | Add foreign key and criteria indexes to history tables |
 | Performance issues | Missing reconciliation indexes | Add `ArchiveSysVersionIdx` to all live tables |
@@ -849,8 +849,8 @@ Before deploying to production:
 - [ ] History tables have foreign key indexes
 - [ ] No references to Microsoft-managed tables
 
-**BI Entities:**
-- [ ] BI entity created for each live table
+**Finance and operations data entities:**
+- [ ] Finance and operations data entity created for each live table
 - [ ] All required properties set (`Auto Create`, `Allow Retention`, etc.)
 - [ ] Rowversion enabled on all entities
 - [ ] Virtual entities published to Dataverse

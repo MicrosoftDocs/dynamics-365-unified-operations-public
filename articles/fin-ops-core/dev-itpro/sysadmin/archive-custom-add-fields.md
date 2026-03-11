@@ -11,7 +11,7 @@ ms.reviewer: twheeloc
 ---
 # Scenario 1: Add custom fields to Microsoft-managed tables
 
-This article describes how to extend existing Microsoft archive scenarios (such as General Ledger, Sales Order, Inventory Journal) by adding custom fields to live tables and ensuring proper synchronization with history tables and BI entities.
+This article describes how to extend existing Microsoft archive scenarios (such as General Ledger, Sales Order, Inventory Journal) by adding custom fields to live tables and ensuring proper synchronization with history tables and finance and operations data entities.
 
 ## Overview
 
@@ -20,7 +20,7 @@ This scenario applies when you need to add custom fields to standard Microsoft t
 **Components involved:**
 - Table extensions for live tables
 - Table extensions for history tables  
-- Entity extensions for BI entities
+- Entity extensions for finance and operations data entities
 - Dataverse virtual entity refresh
 
 **No code changes needed:** You don't need to modify job contract creator classes. The framework automatically includes your custom fields in archive operations.
@@ -106,9 +106,9 @@ If the Microsoft-managed table doesn't already have this property enabled, you m
 
 **Why this is required:** During archive operations, the framework copies data from live tables to history tables using identical field mappings. If fields don't match, the data copy operation fails.
 
-## Step 3: Add custom field to BI entity
+## Step 3: Add custom field to finance and operations data entity
 
-**Objective:** Ensure the BI entity includes your custom field so it's available for Dataverse virtual entities and long-term retention.
+**Objective:** Ensure the finance and operations data entity includes your custom field so it's available for Dataverse virtual entities and long-term retention.
 
 ### Create entity extension
 
@@ -230,7 +230,7 @@ SELECT CustomField, * FROM SalesTable WHERE RecId = [TestRecId]
 **Validate field synchronization:**
 - Live table has the custom field ✅
 - History table has matching field with identical properties ✅
-- BI entity extension includes the field ✅
+- Finance and operations data entity extension includes the field ✅
 - Virtual entity in Dataverse shows the field ✅
 
 ## Related articles

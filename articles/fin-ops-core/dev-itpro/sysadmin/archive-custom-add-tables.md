@@ -25,7 +25,7 @@ This scenario applies when you have custom tables that are related to Microsoft-
 **Components involved:**
 - Custom live tables (new)
 - Custom history tables (new)
-- Custom BI entities (new)
+- Custom finance and operations data entities (new)
 - Job contract creator extension (code required)
 - Dataverse configuration
 
@@ -207,9 +207,9 @@ Add indexes on fields used in archive criteria and queries:
 
 **Why these indexes matter:** They enable efficient querying of archived data and are required for reversal job scheduling to work properly.
 
-## Step 3: Create BI entity
+## Step 3: Create finance and operations data entity
 
-**Objective:** Create a BI entity to enable Dataverse virtual entity for long-term retention.
+**Objective:** Create a finance and operations data entity to enable Dataverse virtual entity for long-term retention.
 
 ### Create data entity
 
@@ -402,7 +402,7 @@ private ArchiveJobPostRequest addCustomTableForLongTermRetention(
         ArchiveServiceSourceTableConfiguration::newForSourceTable(
             tableStr(CustomLedgerTransSettlement),              // Live table
             tableStr(CustomLedgerTransSettlementHistory),       // History table
-            tableStr(mserp_customledgertranssettlementbientity), // BI entity (Dataverse name)
+            tableStr(mserp_customledgertranssettlementbientity), // Finance and operations data entity (Dataverse name)
             tableStr(GeneralJournalAccountEntry)))              // Parent table
         
         // Define JOIN condition to parent
