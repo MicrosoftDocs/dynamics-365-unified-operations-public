@@ -103,7 +103,7 @@ This section explains how to create a class library that has a TMS engine implem
 
     :::image type="content" source="../transportation/media/052.png" alt-text="The solution, which includes a reference to the TMSThirdParty project." lightbox="../transportation/media/052.png":::
 
-1. Build the solution. Verify that the new library appears in the **References** node in the Application Explorer.
+1. Build the solution. Verify that the new library appears in the **References** node in Application Explorer.
 
     :::image type="content" source="../transportation/media/061.png" alt-text="The new library in Application Explorer's References node." lightbox="../transportation/media/061.png":::
 
