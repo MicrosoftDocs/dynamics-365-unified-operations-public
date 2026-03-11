@@ -14,13 +14,37 @@ ms.search.form:
 ms.dyn365.ops.version: 8.0.1
 ---
 
-# Detect and recreate missing consolidation transactions
+# Recreate missing consolidation transactions
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article describes why you may need to use the Detect and recreate missing consolidation transactions feature in Dynamics 365 Finance. A new feature in 10.0.48 called **Detect and recreate missing consolidation transactions** is available in the Consolidations menu. This option helps resolve data inconsistencies that can occur when a consolidation process is unexpectedly stopped for example, due to a system interruption or manual termination).
+This article describes why you may need to use the **Recreate missing consolidation transactions** option in Dynamics 365 Finance. This new option in 10.0.48 called **Recreate missing consolidation transactions** helps resolve data inconsistencies that can occur when a consolidation process is unexpectedly stopped, for example, due to a system interruption or manual termination.
 
-## Perform consolidation
+## When would this be needed? 
 
-After the consolidation templates are set up, use the **Consolidate online** page to consolidate legal entities.
+If a consolidation process stops while it is still running, some consolidation records may be partially written to the database. These incomplete records:
+
+ - Cannot be automatically cleaned up when the consolidation is run again.
+ - Can cause duplicate or doubled balances to appear in the trial balance.
+ - May result in missing or incomplete consolidation transaction headers or lines.
+
+Over time, this can lead to incorrect financial results and reconciliation issues.
+
+## What does this option do?
+
+The **Recreate missing consolidation transactions** option scans the system to detect consolidation transactions that are missing or incomplete as a result of a failed or forcibly stopped consolidation process. You can run the detection first to scan for affected consolidation transactions. Then you can run it again to recreate the missing consolidation headers and lines. You can run both processes at the same time as well. 
+
+## How to use it
+
+Go to **Consolidations > Recreate missing consolidation transactions** to analyze the current data. Enter a **From date** and **To date** before running the process. The dates should match the dates of the last consolidation period but may be set to a wider date range. If a large date range is used it will slow down the processing time. If missing consolidation transactions are found the results will be displayed. To recreate the missing consolidation transactions, set **Recreate missing consolidation transactions** to Yes. Run the process again and the system will automatically recreate the missing records.
+
+Once the process is finished any recreated consolidation transactions can be viewed in **Consolidations > Consolidation transactions**. 
+
+This action is intended to repair data inconsistencies caused by an interrupted consolidation process and does not replace a normal consolidation run.
+
+### Key benefits
+
+*   Reconstructs missing consolidation transaction headers and lines after an interrupted consolidation
+*   Makes incomplete consolidation transactions visible in the Consolidations transactions UI
+*   Enables users to review and remove consolidation transactions that could not be deleted previously
