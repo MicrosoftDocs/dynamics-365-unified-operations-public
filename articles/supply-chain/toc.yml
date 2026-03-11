@@ -1627,7 +1627,7 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
-        - name: Sample management (preview)
+        - name: Sample management
           items:
           - name: Sample management overview
             href: inventory/quality-sample-management-overview.md
