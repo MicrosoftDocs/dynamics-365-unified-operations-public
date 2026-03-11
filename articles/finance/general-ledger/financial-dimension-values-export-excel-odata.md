@@ -30,6 +30,9 @@ The workbooks listed under **Open in Excel** — **Financial dimension values**,
 > Because these workbooks use the **Financial dimension values entity**, they are subject to the same scope as DMF exports: only values that have been used as dimensions or have had properties explicitly modified are returned. Unused values don't appear.
 >
 > Values that are used include those entered in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or those that have had properties modified (such as Active from/Active to dates, Suspended status, and other overrides).
+>
+> For dimensions sourced from other records in the system (such as customers, departments, or cost centers), not all values are exported — only those that have been used as described above.
+
 
 ## Export to Excel
 
