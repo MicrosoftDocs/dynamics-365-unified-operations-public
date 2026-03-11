@@ -88,7 +88,7 @@ When you activate a financial dimension, the table updates to include the name o
 When you select **Activate all**, the system updates all inactive or renamed dimensions to active, which the **Status changes** field shows. As **Activate all** processes every pending addition, rename, or deletion across all dimensions at once, there is no need to rerun the operation for each dimension. The system must be in maintenance mode when activating financial dimensions.
 
 > [!WARNING]
-> If you have customizations that depend on the schema column names of dimension tables — for example, Excel templates built with the entity integration wizard — those customizations must be removed and redeployed **before** you rename or delete dimensions. Failing to do so can cause database synchronization errors after activation. After dimensions are changed, rerun the wizard and update the dimension names in the customization.
+> If you have customizations that depend on the schema column names of dimension tables, those customizations must be removed and redeployed **before** you rename or delete dimensions. Failing to do so can cause database synchronization errors after activation. After dimensions are changed, rerun the wizard and update the dimension names in the customization.
 
 ### Translations
 
