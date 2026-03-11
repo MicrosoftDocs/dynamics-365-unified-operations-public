@@ -102,10 +102,6 @@ To generate the EU sales list report, follow these steps:
 
 1. Select **OK**, and review the generated reports.
 
-## Example
-
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Finland, see [Example for generic EU Sales list](xref:taxes-eu-sales-list-example). However, for this example, create **FI111222999** as the company's VAT ID.
-
 ### Create an EU sales list report
 
 To create an EU sales list report, follow these steps:
