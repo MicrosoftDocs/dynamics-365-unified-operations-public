@@ -4,7 +4,7 @@ description: Learn about some of the technical aspects of saved views and descri
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/27/2024
+ms.date: 03/12/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2019-07-31
@@ -17,14 +17,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Saved views are an important expansion of personalization capabilities finance and operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) article provides general details about this feature, this article focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
+Saved views are an important expansion of personalization capabilities finance and operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) article provides general details about this feature, this article focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views.
 
-## "User-perceived" pages
-Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this link makes sense to the user, as the user's perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations isn't intuitive or obvious because users don't see or care about the boundaries between modeled forms. 
+## User-perceived" pages
+
+Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this link makes sense to the user, as the user's perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations isn't intuitive or obvious because users don't see or care about the boundaries between modeled forms.
 
 Saved views try to eliminate this confusion by letting users create views on "user-perceived" pages. Therefore, users don't have to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:
 
-- **More than one "user-perceived" page in a single modeled form:** The standard modeling of Master Details and Transaction Details forms (for example, the **CustTable** and **PurchTable** forms, respectively) consists of more than one "user-perceived" page: a grid page and a details page. 
+- **More than one "user-perceived" page in a single modeled form:** The standard modeling of Master Details and Transaction Details forms (for example, the **CustTable** and **PurchTable** forms, respectively) consists of more than one "user-perceived" page: a grid page and a details page.
 
     Because users aren't aware when this transition from list to details crosses a form boundary, view support in Details forms is handled differently to allow views to be defined separately for the grid and details portions. This means that the view selector for the "grid" and "details" can show different sets of available views. The special casing of view support on these forms also allows the "grid" views to allow filters in their view definitions, whereas the "details" view only needs personalizations.
 
@@ -35,34 +36,37 @@ Saved views try to eliminate this confusion by letting users create views on "us
 These are highly technical modifications to the personalization subsystem that are only available when view is enabled. These modifications are important for ensuring that users have a predictable and understandable experience with views.
 
 ## View support
+
 The style of a form determines the level of support for views.
 
 - Views include queries for these form types:
 
-    - List pages (Design.Style = ListPage)
-    - Simple lists (Design.Style = SimpleList)
-    - Grid portions of Master Details and Transaction Details forms (Design.Style=ListPage)
-    - Task single and Task double pages (Design.Style or Design.Pattern = TaskSingle or TaskDouble)
+  - List pages (Design.Style = ListPage)
+  - Simple lists (Design.Style = SimpleList)
+  - Grid portions of Master Details and Transaction Details forms (Design.Style=ListPage)
+  - Task single and Task double pages (Design.Style or Design.Pattern = TaskSingle or TaskDouble)
 
 - Views don't include queries for these form types:
 
-    - Any other full-page form that wasn't listed earlier in this section
-    - Workspaces
+  - Any other full-page form that wasn't listed earlier in this section
+  - Workspaces
 
         The "Saved views support for workspaces" feature enables saved views to be defined and shared for both modeled workspaces and user-created workspaces.
 
-    - Dialogs
-    - Details portions of Master Details and Transaction Details forms
+  - Dialogs
+  - Details portions of Master Details and Transaction Details forms
 
 - Views aren't currently supported on these form types:
 
-    - Dashboards
-    - Secondary forms like drop-down dialogs, lookups, and enhanced previews
+  - Dashboards
+  - Secondary forms like drop-down dialogs, lookups, and enhanced previews
 
 ## Modifying forms to fully utilize views
+
 While most forms work well with saved views, there are some areas that may require changes to form logic so that views work as expected on these forms without causing confusion. Here are some key items to keep in mind during development of new forms.
 
 ### Custom filters
+
 Custom filters are controls that are modeled on forms and that cause modifications to the query. Users have a suboptimal user experience if the integration between views and these custom filters isn't implemented. For example, the views might not be marked as having unsaved changes after a custom filter is used, or the custom filter value might not always be aligned to the current view or query.
 
 Form owners can provide better experiences with custom filters by taking advantage of the following two methods. These methods were introduced specifically to improve custom filter support with saved views.
@@ -71,13 +75,14 @@ Form owners can provide better experiences with custom filters by taking advanta
 - **element.formCustomFilterChanged():** This new API is called by the custom filter control when it has changed the query on the user's behalf. When it's called, the system marks the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's **modified()** method if changes to the control immediately cause the query to be refreshed, or to call this API for a custom filter on a button click if the adjustment of one or more custom filters requires a button for the changes to take effect.
 
 ### Relative filter values
-Forms might have to use relative filter conditions to retrieve the appropriate information when the page is loaded. For example, they often have to use filter conditions to restrict data for the current user, current date, and current legal entity. If a form hard-codes a filter to a specific value, any view that is saved with that filter might have issues showing the intended data or being shared with other users. For example, a form hard-codes a "current date" filter to a specific date, that query is saved to a view, and the view is shared with another user. In this case, the view might provide unexpected results, because it still tries to retrieve data from the hard-coded date in the past instead of the current date. Or a filter condition was intended to represent the current user but was hard-coded to a specific user. In this case, when the view is shared with another user, an error might occur when that user tries to load or import the view. 
+
+Forms might have to use relative filter conditions to retrieve the appropriate information when the page is loaded. For example, they often have to use filter conditions to restrict data for the current user, current date, and current legal entity. If a form hard-codes a filter to a specific value, any view that is saved with that filter might have issues showing the intended data or being shared with other users. For example, a form hard-codes a "current date" filter to a specific date, that query is saved to a view, and the view is shared with another user. In this case, the view might provide unexpected results, because it still tries to retrieve data from the hard-coded date in the past instead of the current date. Or a filter condition was intended to represent the current user but was hard-coded to a specific user. In this case, when the view is shared with another user, an error might occur when that user tries to load or import the view.
 
 To help avoid this situation, forms that have relative filter conditions should have filter values that use **SysQueryRangeUtil** methods in combination with the finance and operations [advanced filter syntax](../../fin-ops/get-started/advanced-filtering-query-options.md), specifically the syntax where a filter value is enclosed in parentheses. Evaluation of the filter method is then deferred until the query is run. Therefore, relative filtering conditions can be used in views and passed between users without causing issues. Users in the user interface can use this same syntax with the "matches" operator to achieve the same effect.  
 
 As an explicit example, consider a form that has a filter condition on a **User** field. If the filter value is set to **currentUserId()**, the function is evaluated immediately, and the hard-coded user name is used in the query. If a simple change is made to the filter value, so that it's set to **(currentUserId())** instead, the function is saved to the query definition. Therefore, a view that has this condition can be saved to views and passed to other users without causing issues.  
 
-Here are some typical examples. 
+Here are some typical examples.
 
 | Description | Filter value |
 |---|---|
@@ -91,16 +96,18 @@ For more relative date queries, see [Advanced date queries that use SysQueryRang
 ### Improved developer control over the handling of default queries with views
 
 #### Giving the default view priority over a menu item query
+
 By default, if a user navigates to a page by using a menu item that has an associated query, the system runs the menu item's query instead of the default view's query. In this case, the user is notified by an informational message that includes an action to force load the default view's query.
 
-In version 10.0.32, a new extension point has been added to enable form developers to override this default system behavior for individual forms. Specifically, developers can call the **EnableSavedViewQueryPriority** method from the **FormRunPersonalizationSettings** class before **super()** of **init()** during the form lifecycle to give the default view's query priority over the menu item's query. 
+In version 10.0.32, a new extension point has been added to enable form developers to override this default system behavior for individual forms. Specifically, developers can call the **EnableSavedViewQueryPriority** method from the **FormRunPersonalizationSettings** class before **super()** of **init()** during the form lifecycle to give the default view's query priority over the menu item's query.
 
-When this behavior is enabled, the system tries to merge the default view's query with the menu item's query during the **run()** portion of the lifecycle. 
+When this behavior is enabled, the system tries to merge the default view's query with the menu item's query during the **run()** portion of the lifecycle.
 
 #### Manually handling query merge failures
+
 As part of the default view rollout during form load, the query that's associated with the default view goes through a merge process with the default form's query (or the default menu item's query if the **EnableSavedViewQueryPriority** method has been invoked). A failure to merge the queries indicates an incompatibility, from the system perspective, between the view's query and the form's (or menu item's) query. This incompatibility can occur if, for example, the view adds a filter on a field that a hidden or locked filter is already applied to.
 
-The form might have additional context that enables this incompatibility to be resolved, so that the view's query can be correctly merged as the user expects. In version 10.0.32, a new extension point has been added to give developers a fallback method for making these adjustments when they're required. Specifically, if the standard query merging fails, developers can replace the implementation of the **OnFailureQueryPersonalizationApply** method to make the required modifications to the target query. The `_sourceQuery` parameter provides the view's query, and the `_targetQuery` represents the query that is run when the view that has a query personalization is loaded. 
+The form might have additional context that enables this incompatibility to be resolved, so that the view's query can be correctly merged as the user expects. In version 10.0.32, a new extension point has been added to give developers a fallback method for making these adjustments when they're required. Specifically, if the standard query merging fails, developers can replace the implementation of the **OnFailureQueryPersonalizationApply** method to make the required modifications to the target query. The `_sourceQuery` parameter provides the view's query, and the `_targetQuery` represents the query that is run when the view that has a query personalization is loaded.
 
 ```
 [Replaceable]
@@ -111,19 +118,22 @@ public boolean OnFailureQueryPersonalizationApply(Query _sourceQuery, Query _tar
 ```
 
 ### Opting forms out of views
+
 Although this approach isn't recommended, developers can opt an individual form out of saved views support as required. In this case, no view selector is available on the form, and there are no publish capabilities.
 
-To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form: 
+To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form:
 
 this.disableSavedViewsOnForm();
 
 ### Code that can negatively affect views
+
 X++ code late in the form startup cycle can interfere with the ability of views to work as users expect. In particular, be aware of the following items:
 
 - Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.
 - Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.
 
 ### Secondary list pages
+
 In the long term, the plan is for views to replace modeled secondary list pages.
 
 - Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users, because the default view query won't be run when users navigate to a form by using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.
@@ -137,7 +147,4 @@ The **Saved views performance enhancement** feature helps to improve form load p
 
 However, because this feature changes when some personalizations that are associated with the default view are applied, the behavior on the page might change. In particular, any code that affects the query in the **OnPostRun** event handler of the form will now be run after the view query is run, not before. Therefore, before you enable the feature, you should evaluate any query-affecting code in the **OnPostRun** event handler in forms.
 
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
