@@ -120,6 +120,10 @@ If you use Conditional access, you have to install Authenticator on the same dev
 
 Partially. You can use Microsoft Entra Conditional Access to connect the app, but Conditional Access provides less detailed access control and oversight than Microsoft Entra ID does. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md) and the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access/).
 
+For Intune,  Learn more in:
+[Learn about Conditional Access and Intune](https://learn.microsoft.com/en-us/intune/intune-service/protect/conditional-access),
+[Common ways to use Conditional Access with Intune](https://learn.microsoft.com/en-us/intune/intune-service/protect/conditional-access-intune-common-ways-use).
+
 ## Can I authenticate using Microsoft Entra Guest User Access?
 
 Yes. You can add an external user as a guest in the Microsoft Entra admin center. Learn how in [Quickstart: Add a guest user and send an invitation](/entra/external-id/b2b-quickstart-add-guest-users-portal).
