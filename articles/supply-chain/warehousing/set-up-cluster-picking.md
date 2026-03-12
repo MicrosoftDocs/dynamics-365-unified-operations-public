@@ -77,6 +77,9 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 
 ## Cluster picking strategy
 
+> [!NOTE]
+> The cluster picking strategy feature is available in Dynamics 365 Supply Chain Management version 10.0.48 and later.
+
 The **Cluster picking strategy** field on the cluster profile controls whether workers pick inventory for all cluster positions at a location in a single step, or handle each position individually. You set this field in the cluster profile.
 
 The field offers three options.
@@ -143,11 +146,11 @@ Consider a cluster with two positions picking a serial-tracked item:
 
 The cluster sort criteria (configured under **Cluster sorting** on the cluster profile) behave differently depending on the selected strategy.
 
-| Strategy | Sort criteria | Editable? |
-|---|---|---|
-| Process by location | Fully customizable | Yes |
-| Process by position (tracked items) | Auto-set: Location → Item number → Work ID → Line number (all ascending) | No |
-| Process by position (all items) | Auto-set: Location → Item number → Work ID → Line number (all ascending) | No |
+| Strategy | Sort criteria |
+|---|---|
+| Process by location | Fully customizable |
+| Process by position (tracked items) | Auto-set: Location → Item number → Work ID → Line number (all ascending) |
+| Process by position (all items) | Auto-set: Location → Item number → Work ID → Line number (all ascending) |
 
 > [!IMPORTANT]
 > When you save a cluster profile with **Process by position (tracked items)** or **Process by position (all items)** selected, the system automatically deletes any existing sort criteria and creates the following four default sort fields:
