@@ -51,7 +51,7 @@ The style of a form determines the level of support for views.
   - Any other full-page form that wasn't listed earlier in this section
   - Workspaces
 
-        The "Saved views support for workspaces" feature enables saved views to be defined and shared for both modeled workspaces and user-created workspaces.
+    sThe "Saved views support for workspaces" feature enables saved views to be defined and shared for both modeled workspaces and user-created workspaces.
 
   - Dialogs
   - Details portions of Master Details and Transaction Details forms
