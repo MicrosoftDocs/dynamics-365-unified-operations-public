@@ -25,21 +25,21 @@ B2B organization onboarding begins when a B2B buyer prospect is approved. You th
 - **Create organization account**: You create an organization account and assign it to the attached online channel's address book.
 - **Create contact under organization account**: You create a contact under the organization account. This contact replaces the traditional person-type customer account model and represents the initial user for the organization. You also add the contact to the attached online channels address book.
 - **Create customer hierarchy and link to organization account**: You create a customer hierarchy and link it to the organization account.
-  - The hierarchy is configured as a B2B buyer hierarchy.
-  - The organization name is used as the hierarchy name.
-- **Link initial contact to customer hierarchy as Admin**: You link the initial contact to the customer hierarchy and designate the contact as the hierarchy administrator. This configuration enables access to other functions on the storefront.
+    - The hierarchy is configured as a B2B buyer hierarchy.
+    - The organization name is used as the hierarchy name.
+- **Link initial contact to customer hierarchy as the administrator**: You link the initial contact to the customer hierarchy and designate the contact as the hierarchy administrator. This configuration enables access to other functions on the storefront.
 
 After you create the organization account and customer hierarchy, complete the following steps to make the organization account and its users available on one or more B2B channels.
 
 ### Assign a catalog (if applicable)
 
-Catalog assignment controls the products that are available to users of the B2B Partner organization in the storefront.
+Catalog assignment controls the products that are available to users of the B2B partner organization in the storefront.
 
 To assign a catalog, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. Open the relevant customer hierarchy.
-1. In the **Catalogs** section, select **Add line**.
+1. Under **Customer hierarchy ID**, select the relevant hierarchy ID.
+1. On the **Catalogs** FastTab, select **Add line**.
 1. Select the appropriate catalog.
 
 > [!NOTE]
@@ -52,21 +52,24 @@ Contacts represent individual B2B users who can access the B2B e-commerce storef
 To link contacts to the customer hierarchy, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. In the **Hierarchy** section, select **Add**.
-1. From the list, select the contact to link.
-1. Select **Select**.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select **Add**.
+1. From the dropdown list, select the contact to link.
+1. In the dialog that appears, select **Select**.
 
-- The list shows all contacts that are available to be linked to the organization account or organization's customer hierarchy.
-- In prospect-based onboarding flows, the initial contact is already linked to the organization account and assigned the Admin role.
-- If a selected contact doesn't exist under the linked organization account, a new contact is created under that organization account that reflects updates made to any instance of that contact.
+> [!NOTE]
+> - The list shows all contacts that are available to be linked to the organization account or organization's customer hierarchy.
+> - In prospect-based onboarding flows, the initial contact is already linked to the organization account and assigned the Admin role.
+> - If a selected contact doesn't exist under the linked organization account, a new contact is created under that organization account that reflects updates made to any instance of that contact.
 
 ### Enable the contact for storefront access
 
-A contact must be enabled before the user can sign in to the B2B storefront.
+You just enable a contact before the associated user can sign in to the B2B storefront.
 
 To enable the contact for storefront access, follow these steps:
 
-1. In headquarters, go to (path).
+1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
 1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Enable**.
 
@@ -79,12 +82,14 @@ Roles determine the permissions that a contact has within the organization.
 
 To assign or update the contact role, follow these steps:
 
-1. In headquarters, go to (path).
-1. In the **Hierarchy** grid, select the contact.
+1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Change role**.
-1. Assign one of the following roles:
+1. Under **Role**, select one of the following roles:
     - **Admin**
     - **User**
+1. Select **OK**.
 
 > [!NOTE]
 > At least one contact must be assigned the Admin role for each customer hierarchy.
@@ -129,8 +134,9 @@ An organization account must have at least one contact available to establish an
 
 To create a contact, follow these steps:
 
-1. In headquarters, go to (path).
-1. Under the organization account, create a contact. The contact must have a valid email address to support storefront access.
+1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select **Add** to add the contact as an administrator. The contact must have a valid email address to support storefront access.
 
 > [!NOTE]
 > The selected contact becomes the initial administrator for the customer hierarchy.
@@ -144,25 +150,25 @@ To create a customer hierarchy and link it to an organization account, follow th
 1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
 1. Select **New**.
 1. Enter a name for the customer hierarchy.
-1. In the organization field, select the appropriate organization account from the dropdown list.
+1. In the **Organization** field, select the appropriate organization account from the dropdown list.
 
-### Select the initial admin contact (required)
+### Select the initial administrator contact (required)
 
 When you link an organization account during manual hierarchy creation, the system requires selection of an initial administrator.
 
-  1. A prompt appears to select the initial admin contact.
-  1. The selection list includes active contacts from the selected organization that have email addresses.
+- A prompt appears to select the initial administrator contact.
+- The selection list includes active contacts from the selected organization that have email addresses.
 
 > [!IMPORTANT]
-> - Selecting an initial admin contact is required to save the customer hierarchy.
+> - Selecting an initial administrator contact is required to save the customer hierarchy.
 > - If the prompt is canceled, the organization isn't linked and the hierarchy can't be saved.
 
 ### Automatically link other contacts as users
 
-After the initial admin contact is selected:
+After the initial administrator contact is selected:
 
-  1. Any remaining eligible contacts associated with the organization are automatically linked to the customer hierarchy.
-  1. These contacts are assigned the User role by default.
+- Any remaining eligible contacts associated with the organization are automatically linked to the customer hierarchy.
+- These contacts are assigned the **User** role by default.
      
 This automatic process reduces the need for manual user linking during initial setup.
 
@@ -170,8 +176,10 @@ This automatic process reduces the need for manual user linking during initial s
 
 Contacts must be enabled to access the B2B storefront.
 
-  1. In the **Hierarchy** grid, select the contact.
-  1. Select **Enable**.
+1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select the contact.
+1. Select **Enable**.
 
 > [!IMPORTANT]
 > - Only enabled contacts can sign in to the storefront.
@@ -181,7 +189,9 @@ Contacts must be enabled to access the B2B storefront.
 
 Catalog assignment determines which products are available to users in the storefront.
 
-1. In the **Catalogs** section of the customer hierarchy, select **Add line**.
+1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
+1. Under **Customer hierarchy ID**, select the relevant hierarchy ID.
+1. On the **Catalogs** FastTab, select **Add line**.
 1. Select the appropriate catalog.
 
 > [!NOTE]
@@ -191,14 +201,17 @@ Catalog assignment determines which products are available to users in the store
 
 Roles control what users can see and manage in the storefront.
 
-1. Select a contact in the **Hierarchy** grid.
+1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Change role**.
-1. Assign one of the following roles:
+1. Under **Role**, select one of the following roles:
     - **Admin**
     - **User**
+1. Select **OK**.
 
 > [!NOTE]
-> At least one contact must remain assigned the Admin role for each customer hierarchy.
+> At least one contact must remain assigned the **Admin** role for each customer hierarchy.
 
 ### Other organization account configuration (optional)
 
@@ -232,8 +245,8 @@ Roles control the level of access a contact has for a specific organization.
 To update a contact role, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. Open the relevant customer hierarchy.
-1. In the **Hierarchy** grid, select the contact.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Change role**.
 1. Assign one of the following roles:
   - **Admin**
@@ -249,11 +262,13 @@ Contacts can be associated with more than one organization by linking them to ot
 To link a contact to another hierarchy, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. Open the target customer hierarchy.
-1. In the **Hierarchy** section, select **Add**.
-1. Select the appropriate contact from the list.
-1. Select **Select** to confirm. The selection list displays all contacts available for linking.
-  - If the selected contact doesn't exist under the linked organization account, a new contact is created under that organization using the same party ID as the original contact.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select **Add**.
+1. Select the appropriate contact from the list. The selection list displays all contacts available for linking.
+1. In the dialog that appears, select **Select**.
+
+> [!NOTE]
+> If the selected contact doesn't exist under the linked organization account, a new contact is created under that organization using the same party ID as the original contact.
 
 ### Remove a contact link from a customer hierarchy
 
@@ -262,12 +277,12 @@ When you remove a contact, you delete the relationship between the contact and t
 To remove a contact from a hierarchy, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. Open the relevant customer hierarchy.
-1. In the **Hierarchy** grid, select the contact.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Delete**.
 
 > [!IMPORTANT]
-> - Contacts that place one or more orders can't be removed from the hierarchy. In these cases, disable the contact instead to remove storefront access while preserving audit history.
+> Contacts that place one or more orders can't be removed from the hierarchy. In these cases, disable the contact instead to remove storefront access while preserving audit history.
 
 ### Disable a contact for an organization
 
@@ -276,8 +291,8 @@ Disabling a contact removes storefront access for the organization while keeping
 To disable a contact, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. Open the relevant customer hierarchy.
-1. In the **Hierarchy** grid, select the contact.
+1. Under **Customer hierarchy ID**, select the hierarchy ID.
+1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Disable**.
 1. When prompted, enter a reason for disabling the contact.
 
