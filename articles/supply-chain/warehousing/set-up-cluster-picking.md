@@ -73,3 +73,91 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 > If you have multiple work records for an item that has **Material picking in license plate locations** set to *Staging*, then the Warehouse Management mobile app may show the error message "Current work is frozen" during the cluster picking process. As a workaround, either make sure that you only pick inventory from locations that aren't license plate tracked for the raw material cluster picking process or set **Material picking in license plate locations** to *Order picking* for these items. Learn more in [Release a production order](../production-control/tasks/release-production-order.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+## Cluster picking strategy
+
+The **Cluster picking strategy** field on the cluster profile controls whether workers pick inventory for all cluster positions at a location in a single step, or handle each position individually. You set this field in the cluster profile.
+
+The field offers three options.
+
+| Option | Behavior |
+|---|---|
+| **Process by location** | Default behavior. At each pick location, the worker picks the total quantity across all cluster positions in a single step. The system then presents a sort step where the worker distributes the picked quantity to each position. Cluster sort criteria are fully customizable. |
+| **Process by position (tracked items)** | At each pick location, the worker handles each cluster position one at a time, but only for items tracked by batch or serial number below the location level. Non-tracked items at the same location still use the process-by-location approach. |
+| **Process by position (all items)** | At each pick location, the worker handles every cluster position one at a time, regardless of whether the item has tracking dimensions. |
+
+> [!NOTE]
+> When you select **Process by position (tracked items)**, serial-tracked items where the serial number is captured at *packing* are excluded from by-position processing. Because the serial number isn't required until packing rather than picking, those items continue to use the process-by-location flow.
+
+### How the strategy affects the picking flow
+
+With the default **Process by location** strategy, the picking sequence at a single location looks like this:
+
+1. The worker arrives at the pick location.
+2. The mobile device shows the *total* quantity to pick for all cluster positions at that location.
+3. The worker picks the consolidated quantity in a single scan.
+4. The device presents the sort step — the worker distributes the picked quantity to each cluster position.
+5. The worker moves to the next location.
+
+For items without tracking dimensions, this flow is efficient. For batch- or serial-tracked items, however, the sort step requires the worker to assign specific batch or serial numbers to specific positions, which can be complex and error-prone.
+
+With either **Process by position** option, the sort step is eliminated:
+
+1. The worker arrives at the pick location.
+2. The device shows the pick screen for the *first* cluster position, displaying only the quantity needed for that position.
+3. The worker picks the quantity and confirms.
+4. The device advances to the next position at the same location, if applicable.
+5. Steps 3 and 4 repeat until all positions at the location are complete.
+6. The worker moves to the next location.
+
+Because each pick step is already tied to a specific position, batch and serial numbers are captured per position at the moment of picking. No post-pick distribution is needed.
+
+#### Example
+
+Consider a cluster with two positions picking a serial-tracked item:
+
+- **Position 1** — Sales order 1, requires 1 ea
+- **Position 2** — Sales order 2, requires 2 ea
+
+**With Process by location:**
+
+| Step | Screen prompt | Worker action |
+|---|---|---|
+| 1 | Pick 3 ea from location A-01-01 | Scans item and license plate |
+| 2 | Sort: assign quantity to Position 1 | Enters 1, confirms 1 ea |
+| 3 | Sort: assign quantity to Position 2 | Enters 2, confirms 2 ea |
+| 4 | Put cluster to staging | Confirms location |
+
+**With Process by position (tracked items or all items):**
+
+| Step | Screen prompt | Worker action |
+|---|---|---|
+| 1 | Position 1 – Pick 1 ea from location A-01-01 | Scans item and serial number |
+| 2 | Confirm Position 1 | Confirms position |
+| 3 | Position 2 – Pick 2 ea from location A-01-01 | Scans item and serial numbers |
+| 4 | Confirm Position 2 | Confirms position |
+| 5 | Put cluster to staging | Confirms location |
+
+### Effect on cluster sort criteria
+
+The cluster sort criteria (configured under **Cluster sorting** on the cluster profile) behave differently depending on the selected strategy.
+
+| Strategy | Sort criteria | Editable? |
+|---|---|---|
+| Process by location | Fully customizable | Yes |
+| Process by position (tracked items) | Auto-set: Location → Item number → Work ID → Line number (all ascending) | No |
+| Process by position (all items) | Auto-set: Location → Item number → Work ID → Line number (all ascending) | No |
+
+> [!IMPORTANT]
+> When you save a cluster profile with **Process by position (tracked items)** or **Process by position (all items)** selected, the system automatically deletes any existing sort criteria and creates the following four default sort fields:
+>
+> 1. Location (ascending)
+> 2. Item number (ascending)
+> 3. Work ID (ascending)
+> 4. Line number (ascending)
+>
+> You can manually edit these sort criteria after they are created. However, changing the sort order can lead to a suboptimal picking route. For example, if the sort criteria no longer group work by location first, the system may direct the worker to pick one position at a location, then travel to a different location for another position, and then return to the original location to pick the remaining position there — resulting in unnecessary travel between locations.
+
+> [!NOTE]
+> If you switch back to **Process by location** after previously using a by-position strategy, the auto-created sort criteria remain in place. You can then edit or remove them as needed.
