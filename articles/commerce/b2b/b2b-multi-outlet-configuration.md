@@ -148,7 +148,7 @@ To create a customer hierarchy and link it to an organization account, follow th
 
 ### Select the initial admin contact (required)
 
-When linking an organization account during manual hierarchy creation, the system requires selection of an initial administrator.
+When you link an organization account during manual hierarchy creation, the system requires selection of an initial administrator.
 
   1. A prompt appears to select the initial admin contact.
   1. The selection list includes active contacts from the selected organization that have email addresses.
@@ -267,10 +267,9 @@ To remove a contact from a hierarchy, follow these steps:
 1. Select **Delete**.
 
 > [!IMPORTANT]
-> - Contacts that have placed one or more orders can't be removed from the hierarchy.
-> - In these cases, use the Disable contact procedure instead to remove storefront access while preserving audit history.
+> - Contacts that place one or more orders can't be removed from the hierarchy. In these cases, disable the contact instead to remove storefront access while preserving audit history.
 
-### Disable a contact for a specific organization
+### Disable a contact for an organization
 
 Disabling a contact removes storefront access for the organization while keeping the contact and hierarchy relationship intact.
 
@@ -335,7 +334,7 @@ To select an organization, follow these steps:
 1. Sign in to the B2B storefront.
 1. In the header, use **Select** to select the preferred organization account. The selected organization is then marked as **Selected**, and the organization name appears in the **My account** menu.
 
-After you select an organization, all storefront elements that depend on organization or customer hierarchy context such as pricing, catalogs, and checkout behavior are updated accordingly.
+After you select an organization, storefront functions that depend on organization or customer hierarchy context such as pricing, catalogs, and checkout behavior are updated accordingly.
 
 ### Switch organizations during a session
 
@@ -347,10 +346,10 @@ To switch organizations, follow these steps:
 1. Select **Switch organization**.
 1. Select a different organization from the list.
 
-When switching organizations, the storefront displays a confirmation dialog explaining that:
+When you switch organizations, the storefront displays a confirmation dialog explaining that:
 - Pricing, discounts, and inventory may change.
 - The current shopping cart is preserved.
-- Cart items can be restored when switching back to the previous organization.
+- Cart items can be restored when you switch back to the previous organization.
 
 The confirmation dialog ensures that users understand the impact of changing organizational context.
 
