@@ -46,7 +46,7 @@ B2B multioutlet support helps by separating *user identity* from *purchasing con
  
 ## Differences from traditional B2B commerce models
  
-Traditional implementations often enforce a one-to-one relationship between a buyer's online identity and a purchasing account. As organizations grow, this can lead to:
+Traditional implementations often enforce a one-to-one relationship between a buyer's online identity and a purchasing account. As organizations grow, one-to-one relationships can lead to:
  
 - *Multiple user accounts for the same person*, one per outlet or purchasing account.
 - *Duplicate pricing and catalog configuration* across many buyer records.
@@ -64,7 +64,7 @@ B2B multioutlet support introduces a model shift:
 This shift affects user management, sales order creation, storefront behavior, and call center experiences.
 
 > [!NOTE]
-> Credit limits continue to be evaluated at the organization (customer hierarchy) level, not at the individual contact level. This reflects total organizational exposure.
+> Credit limits continue to be evaluated at the organization (customer hierarchy) level, not at the individual contact level.
  
 ### Users are managed as contacts (not person-type customer accounts)
  
@@ -97,9 +97,9 @@ Customer hierarchies are the primary control point for managing B2B multioutlet 
  
 Common administration actions include:
  
-- *Associate contacts* to an organization or outlet by adding them to the customer hierarchy.
-- *Assign roles* (Admin or User) at the hierarchy level to control permissions.
-- *Enable or disable access* for a contact, without removing historical associations.
+- Associate contacts with an organization or outlet by adding them to the customer hierarchy.
+- Assign roles (admin or user) at the hierarchy level to control permissions.
+- Enable or disable access for contacts, without removing historical associations.
  
 Associating contacts using the customer hierarchy has the same effect as associating them through the organization account. It provides consistent access behavior regardless of where an administrator makes the change. This alignment helps ensure that user status remains consistent across organization accounts, customer hierarchies, and Commerce channels.
  
@@ -151,7 +151,7 @@ With B2B multioutlet support enabled:
 
 #### Updated contact-based customer search option
 
-Updated options within the customer service form are available to search for a specific contact in the system through various identifying information. Once a contact is found, their related organization(s) are available to select from to create a new order, or review previously placed orders that are connected with that contact. The existing option to search by organization is available as well, with updates to the user interface for related contact information.
+Updated options within the customer service form are available to search for a specific contact in the system through various identifying information. Once a contact is found, their related organizations are available to select from to create a new order, or review previously placed orders that are connected with that contact. The existing option to search by organization is available as well, with updates to the user interface for related contact information.
  
 #### Behavior for inactive contacts
  
