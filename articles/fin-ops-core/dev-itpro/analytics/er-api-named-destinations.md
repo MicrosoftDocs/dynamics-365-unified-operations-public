@@ -4,7 +4,7 @@ description: Learn about how the Electronic reporting (ER) API can be used to en
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 08/04/2021
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -13,32 +13,32 @@ ms.search.form: ERFormatDestinationTable
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Change code to enable users to configure and use named ER destinations
+# Change code so users can configure and use named ER destinations
 
 [!include [banner](../includes/banner.md)]
 
-To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER format mapping. When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of the format are always run. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
+To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), run an ER format mapping. When you use the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework to call an ER format mapping, it runs all [destinations](electronic-reporting-destinations.md#applicability) configured for components of the format. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
 
-You can also configure [action-dependent ER destinations](er-action-dependent-destinations.md) for the ER format. You can then use the [extended](er-apis-app10-0-17.md#er-api-run-format-with-action-code) API of the ER framework to call an ER format mapping that provides a user action code. The action code runs only the destinations that were configured for the action that was provided.
+You can also configure [action-dependent ER destinations](er-action-dependent-destinations.md) for the ER format. You can then use the [extended](er-apis-app10-0-17.md#er-api-run-format-with-action-code) API of the ER framework to call an ER format mapping that provides a user action code. The action code runs only the destinations configured for the action provided.
 
-In some cases, you must configure [print management](document-reporting-services.md) and select the same ER format for different print management records, so that you can apply different ER destinations for generated documents when you run that format. For example, you might configure print management so that it runs the same ER format to email original documents and to print document copies to a network printer. You can use the new [API](er-apis-app10-0-21.md) of the ER framework in Microsoft Dynamics 365 Finance version 10.0.21 for this purpose.
+In some cases, you must configure [print management](document-reporting-services.md) and select the same ER format for different print management records, so that you can apply different ER destinations for generated documents when you run that format. For example, you might configure print management so that it runs the same ER format to email original documents and to print document copies to a network printer. Use the new [API](er-apis-app10-0-21.md) of the ER framework in Microsoft Dynamics 365 Finance version 10.0.21 for this purpose.
 
 ## <a name="er-api-set-print-management-record-specific-destination"></a>API to enable users to configure ER destinations that are print management record specific
 
 Currently, you can open the **Print management setup** page for every type of business document, to specify how the business document is generated and delivered. For every available record of the print management tree, you can perform the following actions:
 
-- Use the **Report format** field to select either a SQL Server Reporting Services (SSRS) report or an ER format that will be run.
+- Use the **Report format** field to select either a SQL Server Reporting Services (SSRS) report or an ER format that runs.
 - Use the **Destination** button to open the **Print destination settings** dialog box, so that you can change the destination of the generated report.
 - Review the **Destination** field, which shows the defined destination.
 
 > [!IMPORTANT]
-> If an ER format is selected in the **Report format** field, the configured SSRS destination won't be applied for a generated report.
+> If you select an ER format in the **Report format** field, the configured SSRS destination isn't applied for a generated report.
 
-You can change this behavior and configure ER destinations that are specific to a print management record. Unlike general ER destination, these destinations are named. A single named destination can be selected for several print management records. For more information, see [Configure print management record-specific ER destinations](er-named-destinations.md).
+You can change this behavior and configure ER destinations that are specific to a print management record. Unlike general ER destinations, these destinations are named. You can select a single named destination for several print management records. For more information, see [Configure print management record-specific ER destinations](er-named-destinations.md).
 
-First, you must turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+First, turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
-Next, you must enable users to configure print management record–specific ER destinations for a specific type of business document, if this functionality isn't enabled by default. In Finance version 10.0.21, the functionality isn't enabled for every type of business document, because the `isNamedDestinationEnabledByDocumentType` method of the `ERNamedDestinationReportEnabler` class returns *false* for any `PrintMgmtDocumentType` document type that is provided. 
+Next, enable users to configure print management record–specific ER destinations for a specific type of business document, if this functionality isn't enabled by default. In Finance version 10.0.21, the functionality isn't enabled for every type of business document, because the `isNamedDestinationEnabledByDocumentType` method of the `ERNamedDestinationReportEnabler` class returns *false* for any `PrintMgmtDocumentType` document type that is provided.  
 
 ```xpp
 /// <summary>Class for enabling NamedDestinationFeature for current document type.</summary>
@@ -79,9 +79,9 @@ final class ERNamedDestinationReportEnablerContoso_Extension
 
 ## <a name="er-api-pass-print-management-record-specific-destination"></a>API to run a format mapping where the destination that is provided is print management record specific
 
-When you enable users to configure print management record–specific destinations, the expectation is that a named destination is configured for a print management record. When the print management record is used to run an ER format and generate an outbound document, you must pass that named destination to the ER framework to force ER to run only that destination, not any other destinations that might be configured for the ER format that is running. 
+When you enable users to configure print management record–specific destinations, they expect a named destination configured for a print management record. When you use the print management record to run an ER format and generate an outbound document, you must pass that named destination to the ER framework to force ER to run only that destination, not any other destinations that might be configured for the ER format that is running.  
 
-The following code for the `ERPrintMgmtReportFormatSubscriber` class shows how the ER framework is currently called to generate a free text invoice.
+The following code for the `ERPrintMgmtReportFormatSubscriber` class shows how the ER framework currently gets called to generate a free text invoice.
 
 ```xpp
 /// <summary>
@@ -197,13 +197,13 @@ public static void runFreeTextInvoiceReport(NonSSRSPrintMgmtAdapterReportExecute
 }
 ```
 
-The reference to a named destination is provided in the `NamedDestination` field of the `PrintMgmtSettings` table. You must pass this reference to the `runFreeTextInvoiceReport` method from the processed print management record that extends `ReportDestinationContract`.
+The `NamedDestination` field of the `PrintMgmtSettings` table includes the reference to a named destination. You must pass this reference to the `runFreeTextInvoiceReport` method from the processed print management record that extends `ReportDestinationContract`.
 
 ## Applicability
 
-To set up named destinations and force the ER framework to use the named destination that is provided, you must first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+To set up named destinations and force the ER framework to use the named destination, first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
-The named ER destinations for all types of business documents that can be generated in Finance by using the ER framework are enabled. For more information, see the **Configurable business documents – specific destinations via printer management settings in the reports** feature in the "Globalization" section for the "Dynamics 365 Finance" application in the Dynamics 365 and industry clouds release plan for the [2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
+The feature enables named ER destinations for all types of business documents that can be generated in Finance by using the ER framework. For more information, see the **Configurable business documents – specific destinations via printer management settings in the reports** feature in the "Globalization" section for the "Dynamics 365 Finance" application in the Dynamics 365 and industry clouds release plan for the [2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
 ## Additional resources
 
