@@ -33,17 +33,13 @@ This document describes the steps to schedule a **Payroll data sync batch job** 
 - Click on **Modules**.
 - Select the **Payroll** module.
 
-    [![Payroll module.](./media/payroll-module.png)](./media/payroll-module.png#lightbox)
-
 ### 2. Open Schedule Payroll Data Sync
 - Under the **Payroll** module, click **Schedule payroll data sync**.
-
-    [![Payroll data sync job.](./media/payroll-data-sync.png)](./media/payroll-data-sync.png#lightbox)
 
 
 ### 3. Select Entity Name
 - Select the **Entity Name** from the dropdown.
-- To identify the correct entity name, refer to the table in the **Entity Names** section below.
+- To identify the correct entity name, refer to the table in the [Entity Names](#entity-names-to-schedule-data-sync-batch-job) section below.
 
 ### 4. Configure Background Processing
 - Enable **Run in the background**.
@@ -55,8 +51,6 @@ This document describes the steps to schedule a **Payroll data sync batch job** 
   - **Critical job**: No
   - **Monitoring category**: Undefined
 
-    [![Payroll batch job.](./media/payroll-batch-job.png)](./media/payroll-batch-job.png#lightbox)
-
 
 ### 5. Define Recurrence
 - Define the recurrence for the data sync job.
@@ -66,8 +60,6 @@ This document describes the steps to schedule a **Payroll data sync batch job** 
   - **Start date/time**: As required
   - **End by**: Set an appropriate end date
 
-    [![Payroll batch job recurrence.](./media/payroll-batch-job-recurrence.png)](./media/payroll-batch-job-recurrence.png#lightbox)
-
 
 ### 6. Schedule the Job
 - Click **OK**.
@@ -76,16 +68,8 @@ This document describes the steps to schedule a **Payroll data sync batch job** 
 
 ### 7. Verify the Batch Job
 - Navigate to : System Administration > Inquiries > Batch jobs
-
-    [![Batch jobs menu.](./media/batch-jobs-menu.png)](./media/batch-jobs-menu.png#lightbox)
-
-- Filter the batch jobs based on **Job description**.
-
-    [![Batch jobs filter.](./media/batch-job-filter.png)](./media/batch-job-filter.png#lightbox)
-
+- Filter the batch jobs based on **Job description**. Use contains filter and provide 'payroll' text.
 - Verify that the payroll data sync job appears in the list.
-
-    [![Payroll batch job filter.](./media/payroll-batch-job-list.png)](./media/payroll-batch-job-list.png#lightbox)
 
 
 ## Entity Names to Schedule Data Sync Batch Job
