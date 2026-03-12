@@ -57,7 +57,7 @@ To add organizations to a hierarchy, follow these steps:
 1. To add an organization, select **Edit** and then select **Insert**. When you're done making changes, you can save a draft and publish the changes.
 
 > [!NOTE]
-> A hierarchy can only be published once per calendar day. If you need to publish multiple times, use a consistent time zone each time. Mixing time zones across publishes on the same day can cause a conflict that prevents publishing.
+> A hierarchy can only be published once per calendar day in a given time zone. Each time you publish, the system records the effective date based on the time zone you select. If you later publish using a different time zone, the resulting dates can overlap or collide, which blocks the publish. To avoid this, always use the same time zone when publishing a hierarchy.
 
 The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall," "Outlet," "Online," and "Call Center" channels. Various retail, call center, and online channels can then be added to each.
 
