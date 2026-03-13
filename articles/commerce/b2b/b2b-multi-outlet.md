@@ -23,7 +23,7 @@ Native business-to-business (B2B) multioutlet capabilities in Dynamics 365 Comme
  
 ## B2B multioutlet support
  
-B2B multioutlet support lets a single business user—represented as a **contact**—access and place orders for multiple organizations or outlets in the same B2B online channel.
+B2B multioutlet support lets a single business user contact access and place orders for multiple organizations or outlets in the same B2B online channel.
  
 Key characteristics include:
  
@@ -58,19 +58,19 @@ B2B multioutlet support addresses these issues by using a contact identity model
  
 B2B multioutlet support introduces a model shift:
  
-- **Who places the order**: The *contact* (user identity)
-- **Which entity is purchasing**: The *organization or outlet** (purchasing context)
+- **Who places the order**: The *contact* (user identity).
+- **Which entity is purchasing**: The *organization or outlet* (purchasing context).
  
 This shift affects user management, sales order creation, storefront behavior, and call center experiences.
 
 > [!NOTE]
 > Credit limits continue to be evaluated at the organization (customer hierarchy) level, not at the individual contact level.
  
-### Users are managed as contacts (not person-type customer accounts)
+### Users are managed as contacts
  
 With B2B multioutlet support:
  
-- Each signed-in user is represented as a contact.
+- Each signed-in user is represented as a contact (not a person-type customer account).
 - A single contact can be associated with one or more organizations or outlets through customer hierarchies.
 - Contacts inherit purchasing rules such as pricing, catalogs, credit limits, fulfillment, and channel access from the active organization or outlet context.
  
@@ -172,7 +172,8 @@ To enable the feature, follow these steps:
 > [!NOTE]
 > - The preview feature is only recommended for new B2B channel implementations without existing B2B users in the system.
 > - Once enabled, this feature can't be disabled.
- 
+
+<!--REDUNDANT, COVERED in CONFIG ARTICLE
 ## Configure multioutlet organizations (high level)
  
 At a high level, administrators set up multioutlet organizations by:
@@ -183,5 +184,10 @@ At a high level, administrators set up multioutlet organizations by:
 - Assigning roles, catalogs, and channels.
 - Enabling contacts for storefront access.
 - Synchronizing data to Commerce by using CDX jobs.
- 
+-->
+
+## Additional resources
+
+[B2B multioutlet configuration](b2b-multi-outlet-configuration.md)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
