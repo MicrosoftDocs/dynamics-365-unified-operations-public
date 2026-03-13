@@ -4,7 +4,7 @@ description: Learn about the user log functionality in finance and operations ap
 author: ToddLefor
 ms.author: tlefor
 ms.topic: overview
-ms.date: 07/23/2019
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -49,96 +49,15 @@ For finance and operations apps, Microsoft acts as a processor. As a data proces
 
 The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
-![Data flow from customers.](../media/privacy-customers-controller-processor.jpg)
+:::image type="content" source="../media/privacy-customers-controller-processor.jpg" alt-text="Screenshot of data flow from customers to the application database showing controller and processor roles.":::
 
 When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business has collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="45%" />
-<col width="25%" />
-<col width="10%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>
-<strong>Role</strong>
-</td>
-<td>
-<strong>Scenarios</strong>
-</td>
-<td>
-<strong>Implementation</strong>
-</td>
-<td>
-<strong>Level of data access</strong>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p><strong>Your customer (2)</strong></p>
-</td>
-<td>
-<ul>
-<li>View personal data </li>
-<li>Correct personal data</li>
-<li>Erase personal data </li>
-<li>Object to processing</li>
-<li>Export personal data</li></ul>
-</td>
-<td>
-<p>You must provide a mechanism for your customer to exercise a DSR (process or service).</p>
-</td>
-<td>
-<p>Your customer sees only their personal data.</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p><strong>Your employee – information worker</strong></p>
-</td>
-<td>
-<ul>
-<li>View personal data </li>
-<li>Correct personal data</li>
-<li>Erase personal data </li>
-<li>Object to processing</li>
-<li>Export personal data</li></ul>
-</td>
-<td>
-<p>You must provide a mechanism for your worker to exercise a DSR (process or service). Some activity information may be obtained from Microsoft</p>
-</td>
-<td>
-<p>Your information worker sees only their personal data.</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p><strong>Your employee – privacy administrator</strong></p>
-</td>
-<td>
-<ul>
-<li>Validates the user identity request  </li>
-<li>Locates the personal data across systems </li>
-<li>Curates the data based on your policy</li>
-<li>Creates a data package or executes an action</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Uses finance and operations to locate the data and fulfill the request. </li>
-<li>Writes a customization.</li>
-<li>Reaches out to third parties for shared-controller DSRs.</li>
-<li>Reaches out to Microsoft for activity data.</li> 
-</ul>
-</td>
-<td>
-<p>Your GDRP administrator sees the data that has been obtained to fulfill the DSR request.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| **Role** | **Scenarios** | **Implementation** | **Level of data access** |
+|---|---|---|---|
+| **Your customer (2)** | <ul><li>View personal data </li><li>Correct personal data</li><li>Erase personal data </li><li>Object to processing</li><li>Export personal data</li></ul> | You must provide a mechanism for your customer to exercise a DSR (process or service). | Your customer sees only their personal data. |
+| **Your employee – information worker** | <ul><li>View personal data </li><li>Correct personal data</li><li>Erase personal data </li><li>Object to processing</li><li>Export personal data</li></ul> | You must provide a mechanism for your worker to exercise a DSR (process or service). Some activity information may be obtained from Microsoft | Your information worker sees only their personal data. |
+| **Your employee – privacy administrator** | <ul><li>Validates the user identity request  </li><li>Locates the personal data across systems </li><li>Curates the data based on your policy</li><li>Creates a data package or executes an action</li></ul> | <ul><li>Uses finance and operations to locate the data and fulfill the request. </li><li>Writes a customization.</li><li>Reaches out to third parties for shared-controller DSRs.</li><li>Reaches out to Microsoft for activity data.</li></ul> | Your GDRP administrator sees the data that has been obtained to fulfill the DSR request. |
 
 ## Responding to requests to view, correct, erase, object, or export personal data
 
@@ -244,7 +163,7 @@ The controller can make DSR requests regarding telemetry data by using the [Micr
 
 Finance and operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
-![Data model for the Global address book.](../media/privacy-address-data-model.jpg)
+:::image type="content" source="../media/privacy-address-data-model.jpg" alt-text="Screenshot of the data model for the Global address book.":::
 
 ### Each person is a type of party
 
@@ -325,7 +244,7 @@ As you use finance and operations apps, you might find that you generate or coll
 <Link to form that prints the full inventory>
 -->
 
-![Solution explorer showing the AssetClassification field in the properties.](../media/privacy-asset-classification-detail-invent-section.jpg)
+:::image type="content" source="../media/privacy-asset-classification-detail-invent-section.jpg" alt-text="Screenshot of Solution explorer showing the AssetClassification field in the properties.":::
 
 ## Age Gating: Preventing minors from using the service
 
@@ -351,15 +270,15 @@ Privacy laws and regulations specifu that systems must stop processing a minor's
 
 In the **About** box, you will find links to the Microsoft user rights documentation, and to the Microsoft privacy and cookies documentation. You can also add a link to your organization's privacy statement.
 
-![Solution explorer showing the asset.](../media/privacy-privacy-01-w-note.jpg)
+:::image type="content" source="../media/privacy-privacy-01-w-note.jpg" alt-text="Screenshot of Solution explorer showing the asset.":::
 
 On the **System parameters** page, system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
 
-![System parameters where you add a link to your organization's privacy statement.](../media/privacy-privacy-02.jpg)
+:::image type="content" source="../media/privacy-privacy-02.jpg" alt-text="Screenshot of System parameters where you add a link to your organization's privacy statement.":::
 
 When you've completed your entries in the system parameters, the link to your organization's privacy notice will appear in the **About** box, as show in the following illustration.
 
-![Modified About box with a link to an organization's privacy notice.](../media/privacy-privacy-03-w-note.jpg)
+:::image type="content" source="../media/privacy-privacy-03-w-note.jpg" alt-text="Screenshot of Modified About box with a link to an organization's privacy notice.":::
 
 ## Clarification of the scope of this content
 

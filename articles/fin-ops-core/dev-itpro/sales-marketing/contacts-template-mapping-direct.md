@@ -4,7 +4,7 @@ description: Learn aboutthe templates and underlying tasks that are used to sync
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -19,8 +19,6 @@ ms.custom:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
@@ -30,7 +28,7 @@ This article discusses the templates and underlying tasks that are used to synch
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png" alt-text="Screenshot of data flow in Prospect to cash.":::
 
 ## Templates and tasks
 
@@ -40,13 +38,13 @@ The following templates and underlying tasks are used to synchronize Contact (Co
 
 - **Names of the templates in Data integration**
 
-    - Contacts (Sales to Supply Chain Management) - Direct
-    - Contacts to Customer (Sales to Supply Chain Management) - Direct
+  - Contacts (Sales to Supply Chain Management) - Direct
+  - Contacts to Customer (Sales to Supply Chain Management) - Direct
 
 - **Names of the tasks in the Data integration project**
 
-    - Contacts
-    - ContactToCustomer
+  - Contacts
+  - ContactToCustomer
 
 The following synchronization task is required before contact synchronization can occur: Accounts (Sales to Supply Chain Management)
 
@@ -90,33 +88,32 @@ Contacts are tagged by using the **IsContactPersonExternallyMaintained** propert
 
 - By adding the following mappings, you can help reduce the number of manual updates that are required in Supply Chain Management. You can use a default value or a value map from, for example, **Country/Region** or **City**.
 
-    - **SiteId** – A default site can also be defined on products in Supply Chain Management. A site is required in order to generate quotations and sales orders in Supply Chain Management.
+  - **SiteId** – A default site can also be defined on products in Supply Chain Management. A site is required in order to generate quotations and sales orders in Supply Chain Management.
 
         A template value for **SiteId** isn't defined.
 
-    - **WarehouseId** – A default warehouse can also be defined on products in Supply Chain Management. A warehouse is required in order to generate quotations and sales orders in Supply Chain Management.
+  - **WarehouseId** – A default warehouse can also be defined on products in Supply Chain Management. A warehouse is required in order to generate quotations and sales orders in Supply Chain Management.
 
         A template value for **WarehouseId** isn't defined.
 
-    - **LanguageId** – A language is required in order to generate quotations and sales orders in Supply Chain Management.
-    
+  - **LanguageId** – A language is required in order to generate quotations and sales orders in Supply Chain Management.
+
         The default template value for is **en-us**.
 
 ## Template mapping in Data integration
 
-The following illustrations show an example of a template mapping in Data integration. 
+The following illustrations show an example of a template mapping in Data integration.
 
 > [!NOTE]
 > The mapping shows which column information will be synchronized from Sales to Supply Chain Management.
 
 ### Contact to contact example
 
-![Contact to contact template mapping in Data integrator.](../../../supply-chain/sales-marketing/media/contacts-direct-template-mapping-data-integrator-1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/contacts-direct-template-mapping-data-integrator-1.png" alt-text="Screenshot of contact to contact template mapping in Data integrator.":::
 
 ### Contact to customer example
 
-![Contact to customer template mapping in Data integrator.](../../../supply-chain/sales-marketing/media/contacts-direct-template-mapping-data-integrator-2.png)
-
+:::image type="content" source="../../../supply-chain/sales-marketing/media/contacts-direct-template-mapping-data-integrator-2.png" alt-text="Screenshot of contact to customer template mapping in Data integrator.":::
 
 ## Related articles
 
@@ -129,8 +126,5 @@ The following illustrations show an example of a template mapping in Data integr
 [Synchronization of sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
