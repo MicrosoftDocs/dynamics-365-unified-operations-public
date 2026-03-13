@@ -22,12 +22,12 @@ This article explains how to configure business-to-business (B2B) multioutlet ca
 
 B2B organization onboarding begins when a B2B buyer prospect is approved. You then complete the following steps to establish entities and relationships:
 
-- **Create organization account**: You create an organization account and assign it to the attached online channel's address book.
-- **Create contact under organization account**: You create a contact under the organization account. This contact replaces the traditional person-type customer account model and represents the initial user for the organization. You also add the contact to the attached online channels address book.
-- **Create customer hierarchy and link to organization account**: You create a customer hierarchy and link it to the organization account.
+1. **Create organization account**: Create an organization account and assign it to the attached online channel's address book.
+1. **Create contact under organization account**: Create a contact under the organization account. This contact replaces the traditional person-type customer account model and represents the initial user for the organization. You also add the contact to the attached online channels address book.
+1. **Create customer hierarchy and link to organization account**: Create a customer hierarchy and link it to the organization account.
     - The hierarchy is configured as a B2B buyer hierarchy.
     - The organization name is used as the hierarchy name.
-- **Link initial contact to customer hierarchy as the administrator**: You link the initial contact to the customer hierarchy and designate the contact as the hierarchy administrator. This configuration enables access to other functions on the storefront.
+1. **Link initial contact to customer hierarchy as the administrator**: Link the initial contact to the customer hierarchy and designate the contact as the hierarchy administrator. This configuration enables access to other functions on the storefront.
 
 After you create the organization account and customer hierarchy, complete the following steps to make the organization account and its users available on one or more B2B channels.
 
@@ -59,12 +59,12 @@ To link contacts to the customer hierarchy, follow these steps:
 
 > [!NOTE]
 > - The list shows all contacts that are available to be linked to the organization account or organization's customer hierarchy.
-> - In prospect-based onboarding flows, the initial contact is already linked to the organization account and assigned the Admin role.
+> - In prospect-based onboarding flows, the initial contact is already linked to the organization account and is assigned the **Admin** role.
 > - If a selected contact doesn't exist under the linked organization account, a new contact is created under that organization account that reflects updates made to any instance of that contact.
 
 ### Enable the contact for storefront access
 
-You just enable a contact before the associated user can sign in to the B2B storefront.
+You enable a contact before the associated user can sign in to the B2B storefront.
 
 To enable the contact for storefront access, follow these steps:
 
@@ -92,7 +92,7 @@ To assign or update the contact role, follow these steps:
 1. Select **OK**.
 
 > [!NOTE]
-> At least one contact must be assigned the Admin role for each customer hierarchy.
+> At least one contact must be assigned the **Admin** role for each customer hierarchy.
 
 ### Complete organization account configuration (if applicable)
 
@@ -237,7 +237,7 @@ The **1010 (Customers)** job synchronizes:
 Once the data is synchronized, the organization and its enabled contacts can sign in to the B2B storefront.
 
 ## Configure other user management functions
-
+<!--
 ### Update role assignment for a contact
 
 Roles control the level of access a contact has for a specific organization.
@@ -248,12 +248,14 @@ To update a contact role, follow these steps:
 1. Under **Customer hierarchy ID**, select the hierarchy ID.
 1. On the **Hierarchy** FastTab, select the contact.
 1. Select **Change role**.
-1. Assign one of the following roles:
-  - **Admin**
-  - **User**
+1. Under **Role**, select one of the following roles:
+    - **Admin**
+    - **User**
+1. Select **OK**.
+-->
 
 > [!NOTE]
-> Each customer hierarchy must have at least one contact assigned the Admin role.
+> Each customer hierarchy must have at least one contact assigned the **Admin** role.
 
 ### Link a contact to another customer hierarchy
 
@@ -368,7 +370,7 @@ When you switch organizations, the storefront displays a confirmation dialog exp
 
 The confirmation dialog ensures that users understand the impact of changing organizational context.
 
-### Catalog visibility and My catalogs
+### Catalog visibility using My catalogs
 
 Catalog visibility in the storefront is evaluated based on the active organization account and its customer hierarchy configuration.
 
