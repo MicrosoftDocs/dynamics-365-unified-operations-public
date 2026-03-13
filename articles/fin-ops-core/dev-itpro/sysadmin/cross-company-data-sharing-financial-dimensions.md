@@ -4,7 +4,7 @@ description: Learn about cross-company data sharing for financial dimensions.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/12/2024
+ms.date: 03/13/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2024-11-11

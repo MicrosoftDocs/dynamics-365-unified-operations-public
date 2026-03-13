@@ -4,7 +4,7 @@ description: Learn about how to set user preferences to customize your user inte
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 03/12/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -22,42 +22,17 @@ This article explains how to set user preferences to customize your user interac
 
 ## Set user preferences
 
-1. In Report designer, on the **Tools** menu, click **Options**.
-2. In the **Options** dialog box, select your preferences.
-3. Click **OK**.
+1. In Report designer, on the **Tools** menu, select **Options**.
+1. In the **Options** dialog box, select your preferences.
+1. Select **OK**.
 
 ## Options dialog box options
-<table>
-<thead>
-<tr>
-<th>User option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>At startup</td>
-<td>Select what you see when Report Designer starts. Select one of the following options:
-<ul>
-<li><strong>Load last loaded report</strong> – Open the last report that you viewed.</li>
-<li><strong>Show Open window</strong> – Open the <strong>Open</strong> window. The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</li>
-<li><strong>Show empty environment</strong> – Open an empty designer window.</li>
-</ul></td>
-</tr>
-<tr>
-<td>Display confirmation before exiting Report designer</td>
-<td>Select whether to receive a warning message when you exit the application. This message helps guarantee that you don't exit the program unintentionally.</td>
-</tr>
-<tr>
-<td>Automatically apply cell underline in column headers</td>
-<td>Select whether to insert an underline in the cell of a new column header.</td>
-</tr>
-<tr>
-<td>Management Reporter files location</td>
-<td>Specify the default location for files. The application uses the default location when you export building block groups.</td>
-</tr>
-</tbody>
-</table>
+| User option | Description |
+|---|---|
+| At startup | Select what you see when Report Designer starts. Select one of the following options: **Load last loaded report** – Open the last report that you viewed. **Show Open window** – Open the **Open** window. The **Open** window provides a search window that you can use to quickly find building blocks. **Show empty environment** – Open an empty designer window. |
+| Display confirmation before exiting Report designer | Select whether to receive a warning message when you exit the application. This message helps guarantee that you don't exit the program unintentionally. |
+| Automatically apply cell underline in column headers | Select whether to insert an underline in the cell of a new column header. |
+| Management Reporter files location | Specify the default location for files. The application uses the default location when you export building block groups. |
 
 ## Additional resources
 
