@@ -38,7 +38,7 @@ To apply the reverse charge, complete the following setup.
 
 Use separate sales tax codes for sales operations and purchase operations.
 
-| | |
+| Sales tax code | Description |
 |---|---|
 | **Sales tax code for sales** | Create a sales tax code for reverse charge sales operations (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**). |
 | **Sales tax code for purchases** | Create positive and negative sales tax codes for the reverse charge VAT for purchases (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**). 1. Create a sales tax code that has a positive value. 1. Create a sales tax code that has a negative value. Set the **Allow negative sales tax percentage** option to **Yes**. You must assign this negative sales tax code to an item sales tax group and then assign that item sales tax group to the items that are subject to the reverse charge VAT. For more information, see the next section, "Set up sales tax groups and item sales tax groups." |
@@ -47,7 +47,7 @@ Use separate sales tax codes for sales operations and purchase operations.
 
 Use separate sales tax groups for sales operations and purchase operations.
 
-| | |
+| Sales tax code | Description |
 |---|---|
 | **Sales tax groups for sales** | Create a sales tax group for sales operations that have the reverse charge (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**). On the **Setup** tab, include the sales tax code for the reverse charge in this group. Select the **Exempt** and **Reverse charge** check boxes for the sales tax code. |
 | **Sales tax groups for purchases** | Create a sales tax group for purchase operations that have the reverse charge (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**). On the **Setup** tab, include both positive and negative sales tax codes in this group. Select the **Reverse charge** check box for the sales tax code that has a negative value. |
