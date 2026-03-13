@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 
 [!include [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 You can associate an activity diagram with a business process. Use activity diagrams to describe how a business process or task is completed in a proposed software solution.
 

@@ -39,7 +39,7 @@ Attachments that are already set up to be stored in the **DocuValue** table in t
 
 ### Option 2: Migrate attachments from a file share location
 
-Attachments that are stored in a file share in the Dynamics AX 2012 environment must be migrated to the Dynamics AX 2012 database. For more information, see [Move Documents from Shared Location to Database](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/MoveDocumentsToDatabase).
+Attachments that are stored in a file share in the Dynamics AX 2012 environment must be migrated to the Dynamics AX 2012 database. For more information, see [Move Documents from Shared Location to Database](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Administration/AX2012DataUpgrade/MoveDocumentsToDatabase).
 
 ## Post-upgrade steps
 

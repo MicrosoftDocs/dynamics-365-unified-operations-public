@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 2012
 # Synchronize BPM libraries with Azure DevOps
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Azure DevOps. By using this approach, you can review processes and associate requirements with business processes. When you synchronize a BPM library with an Azure DevOps project, you can track the progress of your implementation project in Azure DevOps. You can also associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
 

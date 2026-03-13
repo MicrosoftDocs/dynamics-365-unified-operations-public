@@ -17,7 +17,7 @@ ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
 
 [!include [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Lifecycle Services for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of finance and operations apps.
 
