@@ -11,7 +11,6 @@ ms.reviewer: johnmichalak
 ms.search.region: GBL
 ms.search.validFrom: 2020-07-03
 ---
-Markdown, content, and Acrolinx fixes
 # Invoice issue deadline (GBL)
 
 [!include [banner](../../includes/banner.md)]
