@@ -237,7 +237,7 @@ The **1010 (Customers)** job synchronizes:
 Once the data is synchronized, the organization and its enabled contacts can sign in to the B2B storefront.
 
 ## Configure other user management functions
-<!--
+<!--REDUNDANT
 ### Update role assignment for a contact
 
 Roles control the level of access a contact has for a specific organization.
@@ -424,6 +424,6 @@ Creating a sales order for the contact at a given organization adheres to the sp
 
 ## Additional resources
 
-[B2B multioutlet capabilities (preview)](b2b-multi-outlet.md).
+[B2B multioutlet capabilities](b2b-multi-outlet.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
