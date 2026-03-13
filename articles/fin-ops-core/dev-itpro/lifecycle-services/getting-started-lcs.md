@@ -18,7 +18,7 @@ ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 # Lifecycle Services for finance and operations apps partners
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article explains how partners can get started with Microsoft Dynamics 365 Lifecycle Services.
 

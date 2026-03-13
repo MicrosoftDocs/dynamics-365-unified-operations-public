@@ -17,7 +17,7 @@ ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 # Flowcharts in Business process modeler (BPM)
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]
 > Flowchart diagrams in Business process modeler are deprecated. For more information, see [Flowchart diagrams in Business process modeler](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler).

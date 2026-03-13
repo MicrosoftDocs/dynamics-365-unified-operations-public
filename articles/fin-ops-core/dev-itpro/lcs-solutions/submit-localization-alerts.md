@@ -15,7 +15,7 @@ ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 # Submit alerts about country or region-specific regulatory features
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article describes how to use Microsoft Dynamics 365 Lifecycle Services to submit alerts through the Dynamics 365 regulatory alert submission service. This article also explains how to track planned and released regulatory features through Lifecycle Services Issue search. 
 

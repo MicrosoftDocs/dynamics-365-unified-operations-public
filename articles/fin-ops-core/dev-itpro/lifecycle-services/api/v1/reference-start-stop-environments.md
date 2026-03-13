@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-01-31
 # Start and stop environments
 
 [!include [banner](../../../includes/banner.md)]
-[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../../../includes/lcs-freeze-banner.md)]
 
 You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) by using the LCS Environment API. By using these APIs, you ensure that the LCS environment status stays in sync with the actual environment. 
 

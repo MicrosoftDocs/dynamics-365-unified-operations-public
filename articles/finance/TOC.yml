@@ -1643,7 +1643,7 @@
             - name: Globalization Studio overview
               href: localizations/global/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globalization resources
-              href: ../fin-ops-core/fin-ops/lcs/country-region.md?context=/dynamics365/context/finance
+              href: ../fin-ops-core/fin-ops/lcs/globalization-resources.md?context=/dynamics365/context/finance
             - name: Globalization services
               items:
                 - name: Globalization services overview
@@ -1772,7 +1772,7 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
-                        - name: Singapore (preview)
+                        - name: Singapore
                           href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
                           href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance

@@ -18,7 +18,7 @@ ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 
 [!include [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Monitoring capabilities in Lifecycle Services are being rebuilt in [Monitoring and telemetry using Application Insights](../monitoring-telemetry/monitoring-overview.md) experiences for Finance and Operations apps. The following sections describe the available pages in Lifecycle Services monitoring. However, some capabilities begin to be disabled starting in September 2024.
 

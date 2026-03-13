@@ -12,6 +12,7 @@ audience: Application User
 ---
 
 # Prerequisites to installing Business performance analytics 
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 ## Before you install
 

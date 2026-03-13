@@ -18,7 +18,7 @@ ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 
 [!include [banner](../includes/banner.md)]
 [!include [Lifecycle deprecation](../includes/lcs-deprecation.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 
 Microsoft Dynamics Lifecycle Services provides regularly updated services. The goal of Lifecycle is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. Customers and partners can access Lifecycle as part of their support plans. If you're a customer of the newest version of the Dynamics 365 finance and operations apps, you can sign in by using your Microsoft Microsoft Entra credentials. [Go to Lifecycle](https://lcs.dynamics.com/Logon/Index).

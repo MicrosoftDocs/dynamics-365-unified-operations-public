@@ -88,7 +88,7 @@ Use the Common Data Model utility console application (CDMUtil_ConsoleApp) to cr
 
 To create a database in Synapse, follow these steps:
 
-1. Go to [Dynamics-365-FastTrack-Implementation-Assets GitHub](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution#2-cdmutil-console-app), and follow the steps to download the **CDMUtilConsoleApp.zip** file.
+1. Go to [Dynamics-365-FastTrack-Implementation-Assets GitHub](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Analytics/CDMUtilSolution#2-cdmutil-console-app), and follow the steps to download the **CDMUtilConsoleApp.zip** file.
 1. Extract the zip file into a local folder.
 1. Open the **CDMUtil_ConsoleApp.dll.config** file in a text editor, and update the following values:
 

@@ -4,7 +4,7 @@ description: Learn about how to add new rules to Optimization advisor, including
 author: kamaybac
 ms.author: kamaybac
 ms.topic: how-to
-ms.date: 02/04/2018
+ms.date: 03/10/2026
 ms.custom:
 ms.reviewer: kamaybac
 audience: Application User

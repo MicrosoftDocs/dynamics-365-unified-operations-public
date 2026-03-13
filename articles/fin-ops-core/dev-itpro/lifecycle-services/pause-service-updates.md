@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 24
 # Pause service updates through Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article explains how to pause updates to your sandbox and production cloud environments by using Microsoft Dynamics Lifecycle Services. This article doesn't apply to on-premises environments.
 

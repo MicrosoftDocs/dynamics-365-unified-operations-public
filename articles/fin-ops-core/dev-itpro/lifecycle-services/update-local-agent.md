@@ -18,7 +18,7 @@ ms.assetid:
 # Update the local agent
 
 [!include [banner](../includes/banner.md)]
-[!include [LCS freeze](../includes/lcs-freeze-banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article explains how to update the local agent. The latest version of the local agent is version 3.5.0, which was released in February 2026.
 
