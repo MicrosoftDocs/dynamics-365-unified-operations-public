@@ -1608,9 +1608,9 @@
         href: b2b/quantity-limits.md
       - name: B2B indirect workflows 
         href: b2b/b2b-indirect.md
-      - name: B2B multioutlet capabilities
+      - name: B2B multioutlet capabilities (preview)
         href: b2b/b2b-multi-outlet.md
-      - name: B2B multioutlet configuration
+      - name: B2B multioutlet configuration (preview)
         href: b2b/b2b-multi-outlet-configuration.md        
       - name: Commerce catalogs for B2B sites
         items:
