@@ -2,10 +2,9 @@
 title: Deployment guidelines for cash registers for France
 description: This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: France
 ms.author: anupamar
 ms.search.validFrom: 2021-04-30
@@ -17,7 +16,7 @@ ms.custom:
 [!include [banner](../../../finance/includes/banner.md)]
 
 > [!WARNING]
-> You should only implement the steps that are described in this article if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> Implement the steps in this article only if you're using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled automatically. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](emea-fra-cash-registers.md#set-up-commerce-for-france).
 
@@ -94,10 +93,10 @@ To enable the RestrictingShiftDuration component, follow these steps:
 
 To enable Modern POS extension components, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and ensure that it can be compiled without errors. Additionally, confirm that you can run Modern POS from Visual Studio by using the **Run** command.
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure it compiles without errors. Also, confirm that you can run Modern POS from Visual Studio by using the **Run** command.
 
     > [!NOTE]
-    > Modern POS must not be customized. You must enable User Account Control (UAC) and uninstall previously installed instances of Modern POS as required.
+    > Don't customize Modern POS. You must enable User Account Control (UAC) and uninstall previously installed instances of Modern POS as required.
 
 1. In the **extensions.json** file, add the following lines to enable the extensions that must be loaded.
 
@@ -118,7 +117,7 @@ To enable Modern POS extension components, follow these steps:
     ```
 
     > [!NOTE]
-    > For more information, and for examples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+    > For more information, and for examples that show how to include source code folders and enable extensions to load, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
 1. Rebuild the solution.
 1. Run Modern POS in the debugger, and test the functionality.
@@ -127,7 +126,7 @@ To enable Modern POS extension components, follow these steps:
 
 To enable Cloud POS extension components, follow these steps:
 
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and ensure that it can be compiled without errors.
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure it compiles without errors.
 1. In the **extensions.json** file, add the following lines to enable the extensions that must be loaded.
 
     ``` json
@@ -147,7 +146,7 @@ To enable Cloud POS extension components, follow these steps:
     ```
 
     > [!NOTE]
-    > For more information, and for examples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+    > For more information, and for examples that show how to include source code folders and enable extensions to load, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
 1. Rebuild the solution.
 1. Run the solution by using the **Run** command, and then follow the steps in the Retail software development kit (SDK) handbook.
@@ -188,7 +187,7 @@ To create deployable packages that contain Commerce components, and to apply tho
 
 ## Migrate to Commerce version 10.0.29 or later
 
-The steps described in this section are required if you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
+Follow the steps in this section if you're using Commerce version 10.0.28 or earlier and want to migrate to version 10.0.29 or later. To correctly update your Commerce environment, follow the steps below.
 
 1. Update Commerce headquarters.
 1. Enable [France-specific features](emea-fra-cash-registers.md#enable-features-for-france) in the **Feature management** workspace and distribute the changes to channels.
@@ -202,4 +201,5 @@ The steps described in this section are required if you are using Commerce versi
         - Microsoft/Receipts.FR
         - Microsoft/FifAuditEvent.FR
         - Microsoft/RestrictShiftDuration
-        
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

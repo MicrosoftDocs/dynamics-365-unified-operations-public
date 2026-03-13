@@ -4,7 +4,7 @@ description: Learn how to identify monitoring requirements.
 author: kennysaelen
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/20/2025
+ms.date: 03/09/2026
 ms.author: kesaelen
 ms.reviewer: johnmichalak
 ms.custom: bap-template
@@ -14,11 +14,11 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-To build an effective monitoring and telemetry solution in finance and operations apps, it's crucial that you define the correct set of requirements. This approach also ensures that the solution is aligned with your team's needs and delivers actionable insights that help maintain the health of your applications. Use the information in this article to establish a strong foundation for your monitoring and telemetry strategy.
+To build an effective monitoring and telemetry solution in finance and operations apps, define the correct set of requirements. This approach also ensures that the solution aligns with your team's needs and delivers actionable insights that help maintain the health of your applications. Use the information in this article to establish a strong foundation for your monitoring and telemetry strategy.
 
 ## Understand your business objectives
 
-Begin by identifying the overarching goals (objectives) that your monitoring solution should support. These objectives should be aligned with the strategic priorities of your organization.
+Begin by identifying the overarching goals that your monitoring solution should support. These goals should align with the strategic priorities of your organization.
 
 **Examples of objectives:**
 
@@ -29,11 +29,11 @@ Begin by identifying the overarching goals (objectives) that your monitoring sol
 
 ## Identify key stakeholders
 
-Gather input from all stakeholders who will use or benefit from the monitoring solution.
+Gather input from all stakeholders who use or benefit from the monitoring solution.
 
 **Common stakeholders:**
 
-- IT Operations teams
+- IT operations teams
 - Development teams
 - Product managers
 - Customer support teams
@@ -70,7 +70,7 @@ Define the key metrics and key performance indicators (KPIs) that provide insigh
 
 ## Establish alerting and notification requirements
 
-Identify the conditions under which alerts should be triggered, and determine how notifications are managed.
+Identify the conditions that trigger alerts, and determine how to manage notifications.
 
 **Alerting best practices:**
 
@@ -82,18 +82,18 @@ Identify the conditions under which alerts should be triggered, and determine ho
 
 - Email
 - Text (SMS)
-- Microsoft Teams/Slack integrations
+- Microsoft Teams or Slack integrations
 
 ## Consider data retention and privacy
 
-Define how long telemetry data should be retained, and ensure compliance with data privacy regulations.
+Define how long to retain telemetry data, and ensure compliance with data privacy regulations.
 
 - **Retention periods** – Align retention periods with business and compliance needs. Consider costs, and establish an archiving policy.
 - **Privacy considerations** – Ensure that personally identifiable information (PII) is excluded or anonymized where necessary.
 
 ## Evaluate visualization needs
 
-Determine how telemetry data should be visualized to provide actionable insights.
+Determine how to visualize telemetry data to provide actionable insights.
 
 - **Dashboards** – Create role-specific dashboards (for example, operational and business).
 - **Reports** – Define periodic reporting needs (for example, weekly SLA compliance).
@@ -111,7 +111,7 @@ Ensure that your monitoring solution adheres to your organization's governance p
 
 ## Thoroughly document requirements
 
-Create a detailed requirements document that can guide the design and implementation of your monitoring solution.
+Create a detailed requirements document that guides the design and implementation of your monitoring solution.
 
 **Information to include:**
 

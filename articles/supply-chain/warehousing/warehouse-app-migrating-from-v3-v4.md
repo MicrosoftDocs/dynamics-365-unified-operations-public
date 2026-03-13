@@ -26,6 +26,8 @@ For V4, Microsoft rewrote the code for the Warehouse Management mobile app to ta
 >
 > - The [Migration information](#migration-information) section provides important advice that can help you avoid unexpected disruptions during the migration process.
 > - The [Rollout](#rollout) section provides the rollout schedule and download details.
+> - Check the [Migrating from V3 and V4 for iOS](#migration-information) section before uptake v4 for iOS device. This section provides important advice that can help you avoid unexpected disruptions during the migration process.
+
 
 ## <a name="rollout"></a>Rollout
 
@@ -37,7 +39,7 @@ The general availability release of V4 is available for the following platforms 
 
 - **Google Android** – Available globally starting at the end of January 2026 from [Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement) and [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
 - **Microsoft Windows** – Available globally starting in February 2026 from [Microsoft App Center](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release).
-- **Apple iOS** – Available globally starting in February 2026 from the Apple App Store. As of January 2026, it's available through [Apple Test Flight](https://testflight.apple.com/).
+- **Apple iOS** – The official release of WMA iOS v4 began on 23 February 2026. As of January 2026, it's available through [Apple Test Flight](https://testflight.apple.com/).
 
 ## <a name="migration-information"></a>Migration information
 
@@ -58,6 +60,28 @@ V4 supports a smooth transition from V3. The following considerations summarize 
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. You can use different authentication methods for each version without conflict. This capability allows for a phased rollout of V4 without disrupting ongoing operations. However, you can't run V3 and V4 on the same device at the same time.
 - **V3 Requests remain active** – Microsoft *does not block** requests coming from V3. You can continue using V3 until you're ready to migrate.
 
+> [!TIP]
+>
+> - Application stores, including the Microsoft Store, Google Play, and the Apple App Store, prioritize user-driven updates and device state over enterprise-wide synchronization. When auto-updates are enabled on your store configurations, the store services the new version and installs when the device state is available.
+> - To ensure a consistent and predictable migration, we strongly recommend using a Mobile Device Management (MDM) solution, such as Microsoft Intune. Unlike app stores, an MDM provides a dedicated management channel that allows administrators to control over the updates.
+
+### <a name="migration-information-ios"></a> Migrating from V3 and V4 for iOS
+
+***Release Information***: The official release of WMA iOS v4 began on 23 February 2026.
+The rollout will be phased, starting with a limited percentage of users. The rollout scope gradually increases over time to ensure stability and quality.
+If you don't see WMA iOS v4 available in the App Store, we strongly recommend joining **TestFlight** to access and test the v4 version.
+
+To ensure a smooth migration, we recommend that you to check the following points:
+
+- **Authentication Changes**: WMA iOS V4 introduces important changes to authentication, Device Code authentication is no longer supported in iOS v4. Before upgrading, ensure that your environment supports user/password authentication to avoid login issues.
+- **Connection Configuration**: When upgrading from V3 to V4, The existing connection settings aren't preserved. Users must manually re-add their connections after upgrading to V4. Manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+ 
+To ensure a smooth migration, it's recommended that you:
+- Join TestFlight to validate V4 behavior in your environment. You can join through [Apple Test Flight](https://testflight.apple.com/).
+- Confirm that user/password authentication is properly configured.
+- If you want to avoid auto-update, make sure that you disabled the auto update on your app store configurations.
+
+
 ### If you need to return to V3
 
 If critical problems arise while you're testing V4, you can return to V3.0.9. The following conditions apply:
@@ -68,6 +92,18 @@ If critical problems arise while you're testing V4, you can return to V3.0.9. Th
     - [Downgrade to V3 for Android](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-android/distribution_groups/official%20release)
     - [Downgrade to V3 for Windows](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/dynanics-365-for-finance-and-operations-warehousing-windows/distribution_groups/official%20release)
 
+- **How to Install the Microsoft Certificate from an MSIX bundle File** 
+    1. Navigate to the folder that contains the MSIX bundle folder
+    2. Right‑click the  MSIX  and select Properties.
+    3. In the Properties window, open the Digital Signatures tab.
+    4. From the list of signatures, select the Microsoft signature.
+    5. Click Details, then select View Certificate.
+    6. Click Install Certificate.
+    7. Choose the certificate store location.
+    8. Select Local Machine and click Next.
+    9. Select Trusted Root Certification Authorities.
+    10. Click Next, then Finish to complete the certificate installation.
+  
 ## <a name="authentication"></a>Authentication
 
 ### Authentication in cloud environments
@@ -100,7 +136,7 @@ The following table summarizes the supported authentication methods for each pla
 | --- | --- | --- |
 | **Windows** | Device code, Username/password, Broker | Device code, Username/password |
 | **Android** | Device code, Username/password | Username/password only |
-| **iOS** | Username/password only | *Not Supported* |
+| **iOS** | Username/password only | Username/password only |
 
 ## <a name="rollout"></a>Transition period support
 

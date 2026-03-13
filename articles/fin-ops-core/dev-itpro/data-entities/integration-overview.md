@@ -4,9 +4,9 @@ description: Learn about integration between finance and operations apps and thi
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 10/29/2025
+ms.date: 03/09/2026
 ms.reviewer: johnmichalak
-ms.search.region: Global
+ms.search.region: Globals
 ms.search.validFrom: 2016-02-28
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
@@ -217,7 +217,7 @@ This scenario is best implemented by using batch data APIs.
 In finance and operations:
 
 1. Determine all the entities that are required for the integration.
-2. Make sure that data management is enabled for the entities.
+1. Make sure that data management is enabled for the entities.
 
 In the on premises system:
 
@@ -240,8 +240,8 @@ This scenario is best implemented by using batch data APIs.
 In Finance and Operations:
 
 1. Determine all the entities that are required for the integration.
-2. Make sure that data management is enabled for the entities.
-3. If incremental push is required, make sure that change tracking can be enabled on the entities.
+1. Make sure that data management is enabled for the entities.
+1. If incremental push is required, make sure that change tracking can be enabled on the entities.
 
 In the on premises inventory system:
 

@@ -44,7 +44,6 @@ Select a feature area to learn more about it.
 - [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)
 - [Manage your e-Commerce site](online-store-overview.md)
-- [Fraud protection](dev-itpro/DFP.md)
 - [Commerce development and extensibility](dev-itpro/retail-sdk/sdk-github.md)
 
 ## eLearning courses

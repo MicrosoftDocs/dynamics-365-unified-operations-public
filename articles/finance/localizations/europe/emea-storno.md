@@ -1,15 +1,15 @@
 ---
 title: Storno accounting
-description: Storno accounting is the practice of using negative numbers to reverse original journal account entries, including an example.
+description: Learn how to us Storno accounting to reverse original journal account entries.
 author: kfend
 ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/05/2025
+ms.topic: how-to
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
+  - bap-template
 ---
 
 # Storno accounting
@@ -108,7 +108,10 @@ You can customize the display of Storno in forms, grids, columns, and fields. Fo
 
 ## How documents create Storno
 
-Certain documents create cancellation transactions. For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss. For more details, see [Foreign currency revaluation for General ledger](../../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Foreign currency revaluation for Accounts payable and Accounts receivable](../../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). After a cancellation transaction is created, new transactions are created with unrealized gain and loss. Cancellation transactions are also created for inventory. For more information, see [Inventory close](../../../supply-chain/cost-management/inventory-close.md). 
+Certain documents create cancellation transactions. For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss. For more details, see [Foreign currency revaluation for General ledger](../../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Foreign currency revaluation for Accounts payable and Accounts receivable](../../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). 
+
+After a cancellation transaction is created, new transactions are created with unrealized gain and loss. Cancellation transactions are also created for inventory. For more information, see [Inventory close](../../../supply-chain/cost-management/inventory-close.md). 
+
 Some documents allow you to cancel the previously posted document. For example, you can create a Credit Note to cancel a previously created Invoice. Documents use specific parameters to create reverse or Storno transactions. For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter. The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
