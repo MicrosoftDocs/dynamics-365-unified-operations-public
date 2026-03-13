@@ -179,7 +179,7 @@ For more information, see [Download ER configurations from the Global repository
 1. Go to **Tax** > **Sales tax** > **Sales tax codes**.
 1. Create unique sales tax codes for each of your tax registrations.
 1. On the **Report setup** FastTab, in the **EU sales list** section, set the **Excluded** option to **Yes** if tax transactions that have a selected sales tax code shouldn't be transferred to the EU sales list.
-1. In the **Country/region type** section, in the **Country/region type** field, define the tax transaction type for VAT reporting: **EU**, **Domestic**, or **Third country**.
+1. In the **Country/region type** section, in the **Country/region type** field, define the tax transaction type for VAT reporting: **EU**, **Domestic**, or **Third country/region**.
 
     This setting is mandatory in some countries/regions, such as the United Kingdom.
 
