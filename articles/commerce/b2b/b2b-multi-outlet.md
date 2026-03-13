@@ -173,19 +173,6 @@ To enable the feature, follow these steps:
 > - The preview feature is only recommended for new B2B channel implementations without existing B2B users in the system.
 > - Once enabled, this feature can't be disabled.
 
-<!--REDUNDANT, COVERED in CONFIG ARTICLE
-## Configure multioutlet organizations (high level)
- 
-At a high level, administrators set up multioutlet organizations by:
- 
-- Creating or onboarding organization accounts.
-- Creating contacts to represent B2B users.
-- Linking contacts to one or more organizations by using customer hierarchies.
-- Assigning roles, catalogs, and channels.
-- Enabling contacts for storefront access.
-- Synchronizing data to Commerce by using CDX jobs.
--->
-
 ## Additional resources
 
 [B2B multioutlet configuration](b2b-multi-outlet-configuration.md)
