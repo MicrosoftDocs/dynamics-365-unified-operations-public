@@ -1,5 +1,5 @@
 ---
-title: Modern workflows in POS (preview)
+title: Modern workflows in POS
 description: This article provides an overview of modernized workflows that improve the usability, extensibility, and accessibility in Microsoft Dynamics 365 Commerce Store Commerce point of sale (POS).
 author: anush6121
 ms.author: anvenkat 
@@ -10,10 +10,9 @@ ms.custom:
   - bap-template
 ---
 
-# Modern workflows in POS (preview)
+# Modern workflows in POS
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of modernized workflows that improve the usability, extensibility, and accessibility in Microsoft Dynamics 365 Commerce Store Commerce point of sale (POS).
 
@@ -236,6 +235,7 @@ To enable intuitive interactions, the date picker in the Store Commerce app is u
 Store associates can persist their zoom settings, eliminating the need to readjust the display each time the application is opened. This feature is especially useful for kiosk mode users without a keyboard and mouse.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
 
 
