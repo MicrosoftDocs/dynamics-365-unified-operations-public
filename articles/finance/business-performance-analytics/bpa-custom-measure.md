@@ -28,7 +28,7 @@ Before you add custom measures to Business performance analytics, the following 
 ## Before you start
 
 - **Backup**: Export and save the current semantic model (.pbix) and any existing measure artifacts before making changes.
-- **Versioning**: Keep a versioned copy of the edited model and the final .tmdl files.
+- **Versioning**: Keep a versioned copy of the edited model and the final `.tmdl` files.
 - **Test tenant**: Test your measures in a non-production Business performance analytics environment first.
 
 ## High-level flow
@@ -37,8 +37,8 @@ Before you add custom measures to Business performance analytics, the following 
 2. Open the model in Power BI Desktop (or Tabular Editor via External Tools).
 3. Add or modify measures.
 4. Validate and test the measures in Power BI.
-5. Save project artifacts and export .tmdl files.
-6. Upload .tmdl files to Business performance analytics.
+5. Save project artifacts and export `.tmdl` files.
+6. Upload `.tmdl` files to Business performance analytics.
 7. Validate in Business performance analytics and refresh reports/dashboards.
 
 ## Download the semantic model
@@ -85,7 +85,7 @@ CALCULATE(
 
 ### Naming guidelines
 
-- Use a clear prefix to indicate source or owner, for example, **Ext_[Team]_[MeasureName]**.
+- Use a clear prefix to indicate source or owner, for example, **[Custom]_[Team]_[MeasureName]**.
 - Keep names short but descriptive.
 - Avoid special characters that may break upload scripts.
 
@@ -104,23 +104,23 @@ To validate and test your custom measures, follow these steps:
 
 ## Export .tmdl files
 
-To export .tmdl files for upload to Business performance analytics, follow these steps:
+To export `.tmdl` files for upload to Business performance analytics, follow these steps:
 
-1. Use Tabular Editor (or your model-authoring tool) to export the measure(s) or model objects to .tmdl files that Business performance analytics expects.
+1. Use Tabular Editor (or your model-authoring tool) to export the measure(s) or model objects to `.tmdl` files that Business performance analytics expects.
 2. Typical export steps in Tabular Editor:
    - Right-click the measure or selected objects.
-   - Select **Save/Export** > choose **.tmdl** (or your team's export option).
+   - Select **Save/Export** > choose **`.tmdl`** (or your team's export option).
 
 > [!NOTE]
-> If you don't have Tabular Editor or an export option, consult your tooling documentation for .tmdl export instructions.
+> If you don't have Tabular Editor or an export option, consult your tooling documentation for `.tmdl` export instructions.
 
-## Upload .tmdl files to Business performance analytics
+## Upload `.tmdl` files to Business performance analytics
 
 To upload your custom measures to Business performance analytics, follow these steps:
 
 1. In Business performance analytics, select **Administration** > **Report measures**.
-2. Locate the **Upload/Import measures** functionality (**Upload .tmdl files**).
-3. Upload each .tmdl file per the UI instructions.
+2. Locate the **Upload/Import measures** functionality (**Upload `.tmdl` files**).
+3. Upload each `.tmdl` file per the UI instructions.
 4. Confirm the upload succeeded and note any errors or warnings.
 
 ## Post-upload validation
