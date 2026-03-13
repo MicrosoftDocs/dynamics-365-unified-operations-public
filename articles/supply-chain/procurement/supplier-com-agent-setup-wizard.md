@@ -1,12 +1,12 @@
 ---
-title: Set up and configure the Supplier Communications Agent (production ready preview) by using the Microsoft Copilot agent deployment wizard 
-description: Learn how to use the Microsoft Copilot agent deployment wizard, to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
-author: BogdanaBotez
-ms.author: andbot
+title: Use the Copilot agent deployment wizard to set up and configure the Supplier Communications Agent (preview)
+description: Learn how to use the Microsoft Copilot agent deployment wizard to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management.
+author: t-benebo
+ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 03/13/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -16,41 +16,45 @@ ms.custom:
 
 <!-- Bogdana's note: I haven't linked this anywhere yet - let's review it first, then I will link it to the main setup documentation.-->
 
-# Set up and configure the Supplier Communications Agent (production ready preview) by using the Microsoft Copilot agent deployment wizard
+# Use the Copilot agent deployment wizard to set up and configure the Supplier Communications Agent (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how system administrators can set up and configure the Supplier Communications Agent, by using the [Agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub.
+This article explains how system administrators can set up and configure the Supplier Communications Agent by using the [Agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub.
 
-## Setup the agent by using the agent deployment wizard
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Set up the agent by using the agent deployment wizard
 
 To access the agent deployment wizard, follow these steps:
 
-1. Open [Copilot Hub in Power Platform admin center and select Dynamics 365](https://aka.ms/InstallD365Agents).
-1. Select the target environment.
-1. Choose **Supplier Communications Agent**.
-1. Select **Add** to launch the agent deployment wizard.
+1. Open [Copilot Hub in Power Platform admin center](https://aka.ms/InstallD365Agents) and select **Dynamics 365**.
+1. Select **Select environment** and choose your target environment.
+1. In the **All agents** section, find the **Supplier Communications Agent** tile and select the **Add** button in that tile to launch the agent deployment wizard.
+1. The **Overview** page opens, which provides a summary of the agent deployment wizard and its capabilities. Select **Next** to continue.
+1. The **Check prerequisites** page opens.
+    - In the **Make sure the following apps are up to date with at least the versions noted** section, review this list of required apps and versions. Make sure that the apps listed are installed in your environment and that their versions are equal to or greater than the ones listed. If any of the apps aren't installed or updated to the required version, install or update them before you continue. A link to the Power Platform admin center is provided in that section to help you check the app versions and do the installations or updates if needed. Mark the **Complete** check after you've confirmed that all of the apps meet the requirements.
 
-### Check Prerequisites
+### Check prerequisites
 
 Before you can use the Supplier Communications Agent, your system must meet the following requirements:
 
-- Validate that the apps listed in the wizard are installed with a version equal or greater than the ones listed.
+- Validate that the apps listed in the wizard are installed with a version equal to or greater than the ones listed.
 - Confirm that [Copilot is enabled](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features).
 - Confirm message consumption settings and billing for Copilot. You can manage these settings [on the **Licenses** page in Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/billing/licenses/copilotStudio/overview).
 - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier Communications Agent - inbound*
     - *Supplier Communications Agent - outbound*.
 
-If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting). 
+If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
 
-When done, choose Next to advance to the following wizard step.
+When done, select **Next** to advance to the following wizard step.
 
 ### Set up agent identity
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. 
+The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work.
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
@@ -90,18 +94,19 @@ Add the agent identity user to the Dataverse environment. Assign the agent ident
 
 #### Create the required connections
 
-There are two connection types that the agent will use: *Microsoft Dataverse* and *Microsoft Copilot Studio*. For each type, if a connection already exists, select an existing one from the menu. If no connections are available, use the *+* button to create a new connection.
+The agent uses two types of connections: *Microsoft Dataverse* and *Microsoft Copilot Studio*. For each type, select an existing connection from the menu if one is available. If no connections are available, select the **+** button to create a new connection.
 
-Select the button **Connect the agent** to use the connections you have just selected, and wait until the agent is connected.
+Select **Connect the agent** to use the connections you selected, and wait until the agent is connected.
 
 #### Activate data flows and processes
 
-Select the button **Activate data flows**, and wait for all of the flows listed to switch to a state of *Activated*.
+Select **Activate data flows** and wait for all of the flows listed to switch to the *Activated* state.
 
 ### Configure mailbox
 
 To enable the email analysis and delivery features of the Supplier Communications Agent, you must configure one or more mailboxes and synchronize them with Dataverse using server-side synchronization.
-Your organization can choose to use shared mailboxes, private mailboxes, or both. At a minimum, at least one mailbox must be configured for the agent to work.
+
+Your organization can choose to use shared mailboxes, private mailboxes, or both. At a minimum, you must configure at least one mailbox for the agent to work.
 
 #### Configure Shared mailbox
 
@@ -109,7 +114,7 @@ If you use a shared mailbox, follow these steps:
 
 1. Select **Set up shared mailbox**.
 1. Enter the shared mailbox email address. Make sure the shared mailbox already exists in Exchange Server. See [Create a shared mailbox](https://learn.microsoft.com/en-us/microsoft-365/admin/email/create-a-shared-mailbox).
-1. Select Search, then select Set up.
+1. Select **Search** and then select **Set up**.
 1. Follow the on-screen instructions to approve and enable the configuration for the shared mailbox.
 This process associates the shared mailbox with a team in the Power Platform environment.
 
@@ -121,7 +126,7 @@ This process associates the shared mailbox with a team in the Power Platform env
 To set up a private mailbox, follow these steps:
 
 1. Select **Set up private mailbox**.
-2. Search for a user. If the user does not appear, see [Add users to environment](https://learn.microsoft.com/en-us/power-platform/admin/add-users-to-environment)
+2. Search for a user. If the user doesn't appear, see [Add users to environment](/power-platform/admin/add-users-to-environment).
 3. Select the mailbox associated with the selected user.
 4. Select **Set up**.
 5. Follow the on-screen instructions to approve and enable the configuration. This process enables synchronization between the email server and Dataverse for the selected mailbox.
@@ -135,7 +140,7 @@ Get detailed instructions in [Set up server-side synchronization of email](/powe
 
 #### Publish Copilot Studio agents
 
-Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies in your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
     - *Supplier Communications Agent - inbound*
     - *Supplier Communications Agent - outbound*.
 
@@ -196,7 +201,7 @@ Learn how to fix common issues that are related to server-side synchronization i
 
 ## Refresh data (optional)
 
-After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+After you enable the Supplier Communications Agent in a sandbox environment, refresh the data. By refreshing the data, you can use the same data in the sandbox environment as you have in the production environment for testing. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 

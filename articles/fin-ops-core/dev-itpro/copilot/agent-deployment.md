@@ -73,10 +73,9 @@ Use the agent deployment wizard if you are:
 
 To access the agent deployment wizard, follow these steps:
 
-1. Open [Copilot Hub in Power Platform admin center and select Dynamics 365](https://aka.ms/InstallD365Agents).
-1. Select the target environment.
-1. Choose a Dynamics 365 agent.
-1. Select **Add** to launch the agent deployment wizard for the selected agent.
+1. Open [Copilot Hub in Power Platform admin center](https://aka.ms/InstallD365Agents) and select **Dynamics 365**.
+1. Select **Select environment** and choose your target environment.
+1. In the **All agents** section, find the **Supplier Communications Agent** tile and select the **Add** button in that tile to launch the agent deployment wizard.
 
 ## Common deployment steps for Dynamics 365 agents
 
