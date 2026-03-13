@@ -90,15 +90,15 @@ Contacts are tagged by using the **IsContactPersonExternallyMaintained** propert
 
   - **SiteId** – A default site can also be defined on products in Supply Chain Management. A site is required in order to generate quotations and sales orders in Supply Chain Management.
 
-        A template value for **SiteId** isn't defined.
+    A template value for **SiteId** isn't defined.
 
   - **WarehouseId** – A default warehouse can also be defined on products in Supply Chain Management. A warehouse is required in order to generate quotations and sales orders in Supply Chain Management.
 
-        A template value for **WarehouseId** isn't defined.
+    A template value for **WarehouseId** isn't defined.
 
   - **LanguageId** – A language is required in order to generate quotations and sales orders in Supply Chain Management.
 
-        The default template value for is **en-us**.
+    The default template value for is **en-us**.
 
 ## Template mapping in Data integration
 
