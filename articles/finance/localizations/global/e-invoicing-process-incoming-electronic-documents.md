@@ -5,7 +5,6 @@ author: ilikond
 ms.author: ikondratenko
 ms.topic: article
 ms.date: 03/13/2026
-ms.custom: 
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.custom: 
