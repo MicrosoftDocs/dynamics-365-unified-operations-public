@@ -1608,6 +1608,8 @@
         href: b2b/b2b-indirect.md
       - name: B2B multioutlet capabilities
         href: b2b/b2b-multi-outlet.md
+      - name: B2B multioutlet configuration (preview)
+        href: b2b/b2b-multi-outlet-configuration.md        
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
