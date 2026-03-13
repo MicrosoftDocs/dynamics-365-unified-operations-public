@@ -3,10 +3,11 @@ title: Multiple VAT registration numbers
 description: Learn about the functionality for multiple value-added tax (VAT) registration numbers, including prerequisites and an outline on enabling features.
 author: liza-golub
 ms.author: wangchen
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/07/2024
 ms.reviewer: johnmichalak
-ms.dyn365.ops.version: AX 10.0.18
+ms.custom: 
+  - bap-template
 ---
 
 # Multiple VAT registration numbers
@@ -154,3 +155,5 @@ You can still manually run the sales tax payment report by going to **Tax** \> *
 
 > [!NOTE]
 > Even if the feature isn't enabled on the **Tax calculation parameters** page, the tax registration ID will be copied from the original sales tax transactions to the offset sales tax transactions.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
