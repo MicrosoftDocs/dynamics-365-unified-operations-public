@@ -88,7 +88,7 @@ The following table shows the fields that are included in the German Intrastat d
 
     1. Go to **Product information management** > **Products** > **Released products**.
     1. In the grid, select the product.
-    1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Country of origin** field, select **DEU**.
+    1. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Country/region of origin** field, select **DEU**.
 
 1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For German Intrastat, select the following fields:
 
@@ -109,7 +109,7 @@ The following table shows the fields that are included in the German Intrastat d
 
 ### Intrastat transfer
 
-On the **Intrastat** page, on the action pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) are transferred.
+On the **Intrastat** page, on the action pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country/region as the country/region of destination (for dispatches) or consignment (for arrivals) are transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the action pane.
 
