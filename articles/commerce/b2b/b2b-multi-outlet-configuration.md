@@ -98,7 +98,7 @@ To assign or update the contact role, follow these steps:
 
 Depending on business requirements, more configuration may be required at the organization account level to ensure the correct purchasing experience in the storefront. Examples include:
 
--	Pricing configuration.
+- Pricing configuration.
 - Discount assignment.
 - Credit limits.
 - Other organization-specific purchasing settings.
@@ -211,7 +211,7 @@ Roles control what users can see and manage in the storefront.
 1. Select **OK**.
 
 > [!NOTE]
-> At least one contact must remain assigned the **Admin** role for each customer hierarchy.
+> Each customer hierarchy must have at least one contact assigned the **Admin** role.
 
 ### Other organization account configuration (optional)
 
@@ -237,25 +237,6 @@ The **1010 (Customers)** job synchronizes:
 Once the data is synchronized, the organization and its enabled contacts can sign in to the B2B storefront.
 
 ## Configure other user management functions
-<!--REDUNDANT
-### Update role assignment for a contact
-
-Roles control the level of access a contact has for a specific organization.
-
-To update a contact role, follow these steps:
-
-1. In headquarters, go to **Retail and Commerce > Customers > Customer hierarchies**.
-1. Under **Customer hierarchy ID**, select the hierarchy ID.
-1. On the **Hierarchy** FastTab, select the contact.
-1. Select **Change role**.
-1. Under **Role**, select one of the following roles:
-    - **Admin**
-    - **User**
-1. Select **OK**.
--->
-
-> [!NOTE]
-> Each customer hierarchy must have at least one contact assigned the **Admin** role.
 
 ### Link a contact to another customer hierarchy
 
