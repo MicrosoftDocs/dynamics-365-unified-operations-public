@@ -1,5 +1,5 @@
 ---
-title: B2B multioutlet capabilities
+title: B2B multioutlet capabilities (preview)
 description: Learn about the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
 ms.date: 03/13/2026
@@ -13,9 +13,10 @@ ms.custom:
   - bap-template
 ---
  
-# B2B multioutlet capabilities
+# B2B multioutlet capabilities (preview)
  
 [!INCLUDE [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/preview-banner.md)]
 
 This article explains the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 
