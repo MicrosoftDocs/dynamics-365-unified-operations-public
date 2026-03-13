@@ -1,5 +1,5 @@
 ---
-title: B2B multioutlet configuration
+title: B2B multioutlet configuration (preview)
 description: Learn how to configure business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
 ms.date: 03/13/2026
@@ -12,9 +12,10 @@ ms.search.form: RetailOperations
 ms.custom:
   - bap-template
 ---
-# B2B multioutlet configuration
+# B2B multioutlet configuration (preview)
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to configure business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 
