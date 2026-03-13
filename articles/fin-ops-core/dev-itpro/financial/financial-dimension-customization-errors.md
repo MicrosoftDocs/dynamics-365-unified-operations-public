@@ -58,6 +58,14 @@ If you need to create a new backing table for use as a financial dimension, foll
 > [!IMPORTANT]
 > Never modify `DimAttribute*` views directly in the database. This can cause data corruption and runtime errors due to metadata inconsistencies. Always deploy corrections through code.
 
+## Don't set Primary Company Control on shared financial dimension entities
+
+The **Primary Company Control** property on a data entity tells the entity framework that each record belongs to a single legal entity. When set, the framework adds a `DATAAREAID` column to the entity's backing view and automatically injects a company filter at runtime. This is correct for company-specific entities like Customers or Vendors.
+
+Financial dimension values are shared reference data that exist once and are reused across all legal entities. If a customization sets Primary Company Control on a shared entity like **Financial Dimension Values**, the entity framework silently converts it from cross-company to company-specific. Exports through DMF, OData, and Excel add-ins then return only the current company's values.
+
+There is no runtime workaround — the entity framework re-applies the filter from metadata even if you manually alter the view. Remove the Primary Company Control setting from the entity to restore cross-company behavior.
+
 ## See also
 
 - [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities)
