@@ -34,139 +34,86 @@ To access the agent deployment wizard, follow these steps:
 1. Select **Select environment** and choose your target environment.
 1. In the **All agents** section, find the **Supplier Communications Agent** tile and select the **Add** button in that tile to launch the agent deployment wizard.
 1. The **Overview** page opens, which provides a summary of the agent deployment wizard and its capabilities. Select **Next** to continue.
-1. The **Check prerequisites** page opens.
-    - In the **Make sure the following apps are up to date with at least the versions noted** section, review this list of required apps and versions. Make sure that the apps listed are installed in your environment and that their versions are equal to or greater than the ones listed. If any of the apps aren't installed or updated to the required version, install or update them before you continue. A link to the Power Platform admin center is provided in that section to help you check the app versions and do the installations or updates if needed. Mark the **Complete** check after you've confirmed that all of the apps meet the requirements.
+1. The **Check prerequisites** page opens. Make sure your environment meets all of the prerequisites for the agent. The prerequisites are organized into sections on this page, and you must meet all of the prerequisites in each section to continue. Here's how to review the prerequisites:
 
-### Check prerequisites
+    - In the **Make sure the following apps are up to date with at least the versions noted** section, review this list of required apps and versions. Make sure that the apps listed are installed in your environment and that their versions are equal to or greater than the ones listed. If any of the apps aren't installed or updated to the required version, install or update them before you continue. A link to the Power Platform admin center is provided to help you check the app versions and do the installations or updates if needed. Mark the **Complete** check after you've confirmed that all of the apps meet the requirements.
+    - The remaining sections on this page automatically check whether all other required features and settings are enabled in your environment. If they are, green check marks are shown. If any of the features or settings aren't enabled, enable them before you continue. Links to the Power Platform admin center are provided in each section to help you enable the relevant features or settings if needed. Learn more in [Enable or disable Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features).
+    - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment. If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).  <!-- KFM: Is this status reported in the **Configure data and connector policies** section, or is this requirement in addition to what is indicated there? There is a **required connections** list here, but it doesn't match the values below; those are listed later in the wizard though (**Enable agent** page) how does the list in the UI on this page relate to teh list below? -->
+        - *Supplier Communications Agent - inbound*
+        - *Supplier Communications Agent - outbound*.
+    - Each time you make changes to meet the prerequisites, go back to the agent deployment wizard and select the reload button at the right side of each section to let the wizard check the status of that section again. When all prerequisites are met, green check marks are shown for all sections.
 
-Before you can use the Supplier Communications Agent, your system must meet the following requirements:
+    When all prerequisites are met, select **Next** to continue.
 
-- Validate that the apps listed in the wizard are installed with a version equal to or greater than the ones listed.
-- Confirm that [Copilot is enabled](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features).
-- Confirm message consumption settings and billing for Copilot. You can manage these settings [on the **Licenses** page in Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/billing/licenses/copilotStudio/overview).
-- Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
-    - *Supplier Communications Agent - inbound*
-    - *Supplier Communications Agent - outbound*.
+1. The **Set up agent identity** page opens. Use this page to set up the *agent identity user* account that the agent uses to interact with Dataverse and Microsoft Copilot Studio. To set up your agent identity user, follow links and make settings in the following sections on this page:
 
-If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+    - **Create your agent's Entra user ID** – For security and ease of maintenance, use a dedicated identity for the agent. If you don't already have an eligible user available, select the link provided to open the Microsoft 365 admin center and create a new user that will be the agent identity user. Then select that user in the drop-down list provided.
+    - **Assign product licenses** – The Supplier Communications Agent uses premium tier connectors, so the agent identity user you selected must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). Examples of sufficient licenses are listed in this section (just one of these licenses is needed <!-- KFM: correct? -->). Select the link provided to open the Microsoft 365 admin center, where you can review and assign licenses for the agent identity user. Select the **Complete** check box after you've assigned the required license to the agent identity user.
+    - **Add agent user to environment, assign required security roles** – The agent identity user must have access to your Dataverse environment and must be assigned each of the security roles listed in this section. Make a note of the roles listed and then select the link provided to open the Microsoft 365 admin center, where you can review and assign security roles for the agent identity user. <!-- KFM: The section says we also need to add the agent user, but will they actually be here already? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
+    - **Add agent user to Finance and Operations, assign required security roles** – The agent identity user must also be added as a user in Supply Chain Management and assigned the security roles listed in this section. Make a note of the roles listed <!-- KFM: I think the *(Preview) Supplier Communication Agent* role might not be available until we've turned on the feature in FM, which we don't do until later in this wizard. --> and then select the link provided to open the **Users** page of Supply Chain Management <!-- KFM: The link opens the wrong page (opens PPAC). Will this be fixed? Should we instead provide the correct SCM path here? Is the **Users** page where we actually want to go? -->, where you can review and assign security roles for the agent identity user. <!-- KFM: The section says we also need to add the agent user, but will they actually be here already (I suppose because we assigned them a license above)? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
 
-When done, select **Next** to advance to the following wizard step.
+    When you've confirmed all the required settings and selected all the check boxes, select **Next** to continue.
 
-### Set up agent identity
+1. The **Connect the agent** page opens. To set up each of the required connections, make settings in the following sections on this page:
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work.
+    - **Connect the agent** – The agent uses two types of connections: *Microsoft Dataverse* and *Microsoft Copilot Studio*. For each type, select an existing connection from the menu if one is available. If no connections are available, select the **+** button to create a new connection. Select **Connect the agent** to use the connections you selected, and wait until the agent is connected. <!-- KFM: I suppose this is right, but it's not working on my Aurora system, so I can't confirm. I don't have any + buttons. -->
+    - **Activate data flows and processes** – Select **Activate data flows** and wait for all of the flows listed to switch to the *Activated* state.
 
-> [!TIP]
-> For security and ease of maintenance, use a dedicated identity for the agent.
+    When all connections are shown as successful, select **Next** to continue.
 
-Use the user management features for your tenant to create an *agent identity user*.
+1. The **Configure mailboxes** page opens – To enable the email analysis and delivery features of the Supplier Communications Agent, you must configure one or more mailboxes and synchronize them with Dataverse using server-side synchronization. You can choose to use shared mailboxes, private mailboxes, or both. At a minimum, you must configure at least one mailbox.
 
-#### Create your agent's Entra user ID
+    - To use a shared mailbox, follow these steps:
 
-Activate the selection field to choose an eligible user. If no such user exists, follow the instructions on the screen to create one.
+        1. Select **Set up shared mailbox**.
+        1. Enter the shared mailbox email address. Make sure the shared mailbox already exists in Exchange Server. Learn more in [Create a shared mailbox](/microsoft-365/admin/email/create-a-shared-mailbox).
+        1. Select **Search** and then select **Set up**.
+        1. Follow the on-screen instructions to approve and enable the configuration for the shared mailbox.
 
-#### Assign product licenses
+        This process associates the shared mailbox with a team in the Power Platform environment.
 
-The Supplier Communications Agent uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+        > [!IMPORTANT]
+        > Add all users who create agent configurations or review agent results related to this mailbox as members of the associated team.
 
-Examples of sufficient licenses include *Power Apps Premium*, *Power Automate Premium*, or *Dynamics 365 Supply Chain Management*.
+    - To set up a private mailbox, follow these steps:
 
-Use the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses) to assign the required licenses.
+        1. Select **Set up private mailbox**.
+        1. Search for a user. If the user doesn't appear, see [Add users to environment](/power-platform/admin/add-users-to-environment).
+        1. Select the mailbox associated with the selected user.
+        1. Select **Set up**.
+        1. Follow the on-screen instructions to approve and enable the configuration. This process enables synchronization between the email server and Dataverse for the selected mailbox.
 
-#### Add agent user to environment, assign required security roles
+        > [!IMPORTANT]
+        > Only the owner of a private mailbox can create agent configurations and review agent results related to that mailbox. The owner must have permissions to [manage the agent configuration](supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
 
-Add the agent identity user to the Dataverse environment. Assign the agent identity user the following security roles:
+        Learn more in [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
-- Required Dataverse user roles:
+1. The **Enable agent** page opens. To enable the agent, follow links and make settings in the following sections on this page:
 
-    - *Finance and Operation Basic User*
-    - *Supplier Communications Agent*
-    - *Environment Maker*
-
-#### Add agent user to Finance and Operations, assign required security roles
-
-- Required Supply Chain Management user roles:
-
-    - *(Preview) Supplier Communications Agent*
-    - *System user*
-
-### Connect the agent
-
-#### Create the required connections
-
-The agent uses two types of connections: *Microsoft Dataverse* and *Microsoft Copilot Studio*. For each type, select an existing connection from the menu if one is available. If no connections are available, select the **+** button to create a new connection.
-
-Select **Connect the agent** to use the connections you selected, and wait until the agent is connected.
-
-#### Activate data flows and processes
-
-Select **Activate data flows** and wait for all of the flows listed to switch to the *Activated* state.
-
-### Configure mailbox
-
-To enable the email analysis and delivery features of the Supplier Communications Agent, you must configure one or more mailboxes and synchronize them with Dataverse using server-side synchronization.
-
-Your organization can choose to use shared mailboxes, private mailboxes, or both. At a minimum, you must configure at least one mailbox for the agent to work.
-
-#### Configure Shared mailbox
-
-If you use a shared mailbox, follow these steps:
-
-1. Select **Set up shared mailbox**.
-1. Enter the shared mailbox email address. Make sure the shared mailbox already exists in Exchange Server. See [Create a shared mailbox](https://learn.microsoft.com/en-us/microsoft-365/admin/email/create-a-shared-mailbox).
-1. Select **Search** and then select **Set up**.
-1. Follow the on-screen instructions to approve and enable the configuration for the shared mailbox.
-This process associates the shared mailbox with a team in the Power Platform environment.
-
-    > [!IMPORTANT]
-    > Add all users who create agent configurations or review agent results related to this mailbox as members of the associated team.
-
-### Configure private mailbox
-
-To set up a private mailbox, follow these steps:
-
-1. Select **Set up private mailbox**.
-2. Search for a user. If the user doesn't appear, see [Add users to environment](/power-platform/admin/add-users-to-environment).
-3. Select the mailbox associated with the selected user.
-4. Select **Set up**.
-5. Follow the on-screen instructions to approve and enable the configuration. This process enables synchronization between the email server and Dataverse for the selected mailbox.
-
-> [!IMPORTANT]
-> Only the owner of a private mailbox can create agent configurations and review agent results related to that mailbox. The owner must have permissions to [manage the agent configuration](./supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
-
-Get detailed instructions in [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
-
-### Enable agent
-
-#### Publish Copilot Studio agents
-
-Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies in your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
-    - *Supplier Communications Agent - inbound*
-    - *Supplier Communications Agent - outbound*.
-
-If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
-
-#### Enable agent related features
-
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
-
-    - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
-    - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
-    - *(Production ready preview) Supplier Communications Agent*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    - **Publish Copilot Studio agents** – Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies in your environment that prevent the publishing of these agents (learn more in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting)). This section lists the agents that must be published. Select the link provided here to go to Copilot Studio, where you can check whether these agents are published and publish them if necessary. Learn more in [Key concepts - Publish and deploy your agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels). When you have confirmed that the agents are published, return here and select the **Complete** check box.
+    - **Enable agent related features** – This section lists the features that must be turned on in the in Supply Chain Management. Make a note of the features listed here and then select the link provided to open the Feature [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, where you can enable each of the features. When you have confirmed that the features are enabled, return here and select the **Complete** check box.
 
     > [!TIP]
-    > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
+    >
+    > - The *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is optional. It allows the agent to send emails automatically. We recommend that you turn off this feature for sandbox environments because data there (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    > - If you don't see all of the features listed on this page, select **Check for updates** to refresh the list of features.
+    > - If you can't enable the *Agent management* feature, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, including version requirements and Copilot Studio billing.
+
+    When you've completed all of the settings on this page, select **Next** to continue.
+
+1. The final page of teh wizard opens. Select **Finish** to complete the setup.
+
+
 
 <!-- Bogdana: The following is a step not included in the wizard - TODO: contact Christian/Karl to figure it out -->
 
-### Assign user permissions
+## Assign user permissions
 
 All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
 
 Additionally, assign the roles described in the following subsections.
 
-#### Permissions for users who manage the agent configuration
+### Permissions for users who manage the agent configuration
 
 - Required Dataverse user roles:
 
@@ -179,7 +126,7 @@ Additionally, assign the roles described in the following subsections.
     - *System user*
     - *Purchasing manager* and/or *Purchasing agent*
 
-#### Permissions for users who review agent results
+### Permissions for users who review agent results
 
 - Required Dataverse user roles:
     - *Basic User*
@@ -188,16 +135,6 @@ Additionally, assign the roles described in the following subsections.
 - Required Supply Chain Management user roles:
     - *System user*
     - *Purchasing agent*
-
-### Troubleshooting
-
-#### Issues with setting up Supplier Communications Agent
-
-For help with problems that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
-
-#### Issues with server-side synchronization
-
-Learn how to fix common issues that are related to server-side synchronization in [Troubleshooting and monitoring](/power-platform/admin/troubleshooting-monitoring-server-side-synchronization).
 
 ## Refresh data (optional)
 
@@ -210,3 +147,13 @@ When you use the [review and apply purchase order changes received in vendor ema
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
 1. On the **Contact information** FastTab, add a row with your own email address (the one you'll send or forward test messages from).
+
+## Troubleshooting
+
+### Issues with setting up Supplier Communications Agent
+
+For help with problems that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
+
+### Issues with server-side synchronization
+
+Learn how to fix common issues that are related to server-side synchronization in [Troubleshooting and monitoring](/power-platform/admin/troubleshooting-monitoring-server-side-synchronization).
