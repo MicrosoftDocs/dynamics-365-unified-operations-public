@@ -4,7 +4,7 @@ description: Learn about the Microsoft Entra ID security groups feature, includi
 author: pnghub
 ms.author: jiwo
 ms.topic: article
-ms.date: 01/06/2025
+ms.date: 03/13/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2022-11-10
