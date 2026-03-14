@@ -4,7 +4,7 @@ description: Learn about how to archive Microsoft Dynamics 365 Supply Chain Mana
 author: pnghub
 ms.author: amiyaaloke
 ms.topic: how-to
-ms.date: 4/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc
 ---
