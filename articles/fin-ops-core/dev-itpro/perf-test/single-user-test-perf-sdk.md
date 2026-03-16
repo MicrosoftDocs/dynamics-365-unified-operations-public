@@ -52,13 +52,13 @@ Before you run a single-user test, work with your business team to define your e
 
 1. Under your **PerfSDK** folder, create a folder named **Common\\External\\Selenium**.
 
-    :::image type="content" source="./media/single-user-test-03.png" alt-text="Screenshot of the new PerfSDK folder."`:::
+   :::image type="content" source="./media/single-user-test-03.png" alt-text="Screenshot of the new PerfSDK folder."`:::
 
 1. Copy the following files, and save them to the **Common\\External\\Selenium** folder you created in the previous step:
 
-    - IEDriverServer.exe from the unzipped IEDriverServer\_Win32\_3.13.0.zip file
-    - WebDriver.dll and WebDriver.xml from the lib\\net45 folder in the unzipped Selenium.WebDriver.StrongNamed.3.13.1.zip file
-    - WebDriver.Support.dll and WebDriver.Support.xml from the lib\\net45 folder in the unzipped Selenium.Support.StrongNamed.3.13.1.zip file
+   - IEDriverServer.exe from the unzipped IEDriverServer\_Win32\_3.13.0.zip file
+   - WebDriver.dll and WebDriver.xml from the lib\\net45 folder in the unzipped Selenium.WebDriver.StrongNamed.3.13.1.zip file
+   - WebDriver.Support.dll and WebDriver.Support.xml from the lib\\net45 folder in the unzipped Selenium.Support.StrongNamed.3.13.1.zip file
 
 ## Generate a C# performance test from Task recorder
 
@@ -67,22 +67,22 @@ When you finish recording the end-to-end scenario, generate a C# performance tes
 1. In a development environment, open Microsoft Visual Studio as an admin.
 1. Open the **PerfSDKSample** solution from your **PerfSDK** folder. In a tier-1 sandbox or a cloud-hosted-environment, you typically find the **PerfSDK** folder in `<Service volume>:\PerfSDK\PerfSDKLocalDirectory`.
 
-    :::image type="content" source="./media/single-user-test-05.png" alt-text="Screenshot of the PerfSDK directory."`:::
+   :::image type="content" source="./media/single-user-test-05.png" alt-text="Screenshot of the PerfSDK directory."`:::
 
 1. Add a reference to the WebDriver.dll file in the `Common\External\Selenium` folder.
 
-    :::image type="content" source="./media/single-user-test-06.png" alt-text="Screenshot of the PerfSDKSample references."`:::
+   :::image type="content" source="./media/single-user-test-06.png" alt-text="Screenshot of the PerfSDKSample references."`:::
 
 1. On the **Dynamics 365** menu, point to **Addins**, and then select **Create C# perf test from recording**.
 1. In the **Import Task Recording** dialog box, enter the following required details:
 
-    - **Recording path** – The file location of the developer recording of your end-to-end scenario.
-    - **Project path** – The location of the PerfSDKSample project. Typically, the path is `<Your_PerfSDK_Folder>\SampleProject\PerfSDKSample\PerfSDKSample.csproj`.
-    - **PerfSDK path** – The location of PerfSDK. Typically, the path is `<ServiceVolumeDrive>\PerfSDK\PerfSDKLocalDirectory`.
+   - **Recording path** – The file location of the developer recording of your end-to-end scenario.
+   - **Project path** – The location of the PerfSDKSample project. Typically, the path is `<Your_PerfSDK_Folder>\SampleProject\PerfSDKSample\PerfSDKSample.csproj`.
+   - **PerfSDK path** – The location of PerfSDK. Typically, the path is `<ServiceVolumeDrive>\PerfSDK\PerfSDKLocalDirectory`.
     
 1. Select **Import**. A new C# class is created under the **Generated** folder of your PerfSDKSample project.
 
-    :::image type="content" source="./media/single-user-test-09.png" alt-text="Screenshot of the new C# class in the Generated folder."`:::
+   :::image type="content" source="./media/single-user-test-09.png" alt-text="Screenshot of the new C# class in the Generated folder."`:::
 
 1. Build the solution.
 
@@ -90,10 +90,10 @@ When you finish recording the end-to-end scenario, generate a C# performance tes
 
 1. Update the **CloudEnvironment.config** file of the PerfSDKSample project in the following ways, so that it reflects the configuration of your environment:
 
-    - Verify that the **HostName** and **SOAPHostName** match your development environment.
-    - Verify that the **UserName** for **SelfMintingAdminUser** matches the admin account of your development environment.
-    - In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **AadAuthenticator** with **SelfMintedTokenAuthenticator**.
-    - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
+   - Verify that the **HostName** and **SOAPHostName** match your development environment.
+   - Verify that the **UserName** for **SelfMintingAdminUser** matches the admin account of your development environment.
+   - In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **AadAuthenticator** with **SelfMintedTokenAuthenticator**.
+   - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
 
 1. In Visual Studio, on the **Test** menu, point to **Windows**, and then select **Test Explorer**.
 1. Right-click your test case, and then select **Run selected tests**.
