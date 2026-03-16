@@ -67,7 +67,7 @@ When you finish recording the end-to-end scenario, generate a C# performance tes
 1. In a development environment, open Microsoft Visual Studio as an admin.
 1. Open the **PerfSDKSample** solution from your **PerfSDK** folder. In a tier-1 sandbox or a cloud-hosted-environment, you typically find the **PerfSDK** folder in `<Service volume>:\PerfSDK\PerfSDKLocalDirectory`.
 
-   :::image type="content" source="./media/single-user-test-05.png" alt-text="Screenshot of the PerfSDK directory."`:::
+   :::image type="content" source="../media/single-user-test-05.png" alt-text="Screenshot of the PerfSDK directory."`:::
 
 1. Add a reference to the WebDriver.dll file in the `Common\External\Selenium` folder.
 
