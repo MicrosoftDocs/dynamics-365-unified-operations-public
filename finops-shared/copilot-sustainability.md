@@ -1,7 +1,7 @@
 ---
 author: leeclontz
 ms.topic: include
-ms.date: 02/20/2026
+ms.date: 03/16/2026
 ms.author: leeclontz
 ms.service: dynamics-365-cross-app
 ms.reviewer: edupont
@@ -16,7 +16,7 @@ The following Copilot experiences are available in Microsoft Sustainability Mana
 | **Generate reports with Copilot (preview)** | Generate an emissions report or a Corporate Sustainability Reporting Directive (CSRD) report. Start report generation from the Copilot side pane. | [Generate preparation reports with Copilot (preview)](/industry/sustainability/sustainability-manager-copilot-reports) |
 | **Query data with Copilot (preview)** | Ask Copilot questions about your organization's data to quickly find values such as an assessment report metric or an organizational unit's revenue. Start data querying from the Copilot side pane. | [Query data with Copilot (preview)](/industry/sustainability/sustainability-manager-copilot-data-query) |
 | **Find facts with Copilot (preview)** | Draft qualitative and quantitative responses for ESG disclosures. Copilot finds relevant data in your uploaded documents and suggests facts that meet disclosure requirements. Review and edit the facts before you add them to reports. | [Find facts with Copilot (preview)](/industry/sustainability/sustainability-manager-copilot-find-facts) |
-| **Microsoft 365 Copilot chat (preview)** | Helps you get summaries, suggestions, and guided actions within your app. It streamlines tasks and boosts productivity by providing contextual assistance based on your organization's data. | [Microsoft 365 Copilot chat (preview)](/industry/sustainability/microsoft-sustainability-manager/use-microsoft-365-copilot-model-driven-apps) |
+| **Microsoft 365 Copilot (preview)** | Helps you get summaries, suggestions, and guided actions within your app. It streamlines tasks and boosts productivity by providing contextual assistance based on your organization's data. | [Microsoft 365 Copilot (preview)](/industry/sustainability/microsoft-sustainability-manager/use-microsoft-365-copilot-model-driven-apps) |
 | **Agent feed (preview)** | Lets you manage and work with agents directly within your apps. It makes the app a central place for human‑agent collaboration by providing a complete activity feed that shows everything agents do for you, wherever you are in the app. | [Supervise agents in model-driven apps with agent feed (preview)](/industry/sustainability/microsoft-sustainability-manager/supervise-agents-with-agent-feed) |
 | **Form fill assistance** | Helps you complete forms more efficiently by suggesting relevant values based on context. It analyzes available data to autopopulate fields and reduce manual input. This helps you to fill forms faster and with fewer errors. | [Use Copilot's form fill assistance feature in model-driven apps](/industry/sustainability/microsoft-sustainability-manager/form-fill-assistance) |
 | **Find data in a view** | Helps you quickly locate and narrow down your data using natural language, without relying on complex filtering options. The feature analyzes intent and context to surface the most accurate results, reducing the need for manual searches. | [Find data in a view with AI (preview)](/industry/sustainability/microsoft-sustainability-manager/find-data-with-ai) |
