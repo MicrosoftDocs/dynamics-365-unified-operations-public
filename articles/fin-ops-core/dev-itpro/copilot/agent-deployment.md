@@ -18,6 +18,7 @@ ms.collection:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The agent deployment wizard in Copilot Hub provides a centralized experience for deploying Dynamics 365 agents to your business applications. It guides administrators through a secure, validated process that deploys Microsoft‑provided agents into environments such as Dataverse, Power Platform, and Microsoft finance and operations apps.
 

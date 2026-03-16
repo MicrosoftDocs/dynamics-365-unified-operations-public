@@ -2453,6 +2453,8 @@
           href: procurement/supplier-com-agent-overview.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
+        - name: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
+          href: procurement/supplier-com-agent-setup-wizard.md
         - name: Solve common problems when setting up the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup-faq.md
         - name: Test the Supplier Communications Agent

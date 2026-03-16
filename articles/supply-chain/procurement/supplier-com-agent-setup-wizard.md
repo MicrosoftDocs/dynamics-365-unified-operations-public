@@ -1,6 +1,6 @@
 ---
-title: Use the Copilot agent deployment wizard to set up and configure the Supplier Communications Agent (preview)
-description: Learn how to use the Microsoft Copilot agent deployment wizard to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management.
+title: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
+description: Learn how to use the agent deployment wizard to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -13,19 +13,21 @@ ms.custom:
 
 <!-- Bogdana's note: I haven't linked this anywhere yet - let's review it first, then I will link it to the main setup documentation.-->
 
-# Use the Copilot agent deployment wizard to set up and configure the Supplier Communications Agent (preview)
+# Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how system administrators can set up and configure the Supplier Communications Agent by using the [Agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub.
+This article explains how system administrators can use the [agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub to set up and configure the Supplier Communications Agent.
+
+The agent deployment wizard is an alternative to the manual setup process described in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md). It provides a guided experience for setting up an agent and automatically configures many of the required settings for you. You don't need to run the wizard if you already set up the Supplier Communications Agent manually.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Run the Copilot agent deployment wizard
+## Run the agent deployment wizard
 
-To access the agent deployment wizard, follow these steps:
+To use the agent deployment wizard to set up the Supplier Communications Agent, follow these steps:
 
 1. Open [Copilot Hub in Power Platform admin center](https://aka.ms/InstallD365Agents) and select **Dynamics 365**.
 1. Select **Select environment** and choose your target environment.
@@ -46,8 +48,8 @@ To access the agent deployment wizard, follow these steps:
 
     - **Create your agent's Entra user ID** – For security and ease of maintenance, use a dedicated identity for the agent. If you don't already have an eligible user available, select the link provided to open the Microsoft 365 admin center and create a new user that will be the agent identity user. Then select that user in the drop-down list provided.
     - **Assign product licenses** – The Supplier Communications Agent uses premium tier connectors, so the agent identity user you selected must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). Examples of sufficient licenses are listed in this section (just one of these licenses is needed <!-- KFM: correct? -->). Select the link provided to open the Microsoft 365 admin center, where you can review and assign licenses for the agent identity user. Select the **Complete** check box after you've assigned the required license to the agent identity user.
-    - **Add agent user to environment, assign required security roles** – The agent identity user must have access to your Dataverse environment and must be assigned each of the security roles listed in this section. Make a note of the roles listed and then select the link provided to open the Microsoft 365 admin center, where you can review and assign security roles for the agent identity user. <!-- KFM: The section title says we also need to add the agent user, but will they actually be here already? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
-    - **Add agent user to Finance and Operations, assign required security roles** – The agent identity user must also be added as a user in Supply Chain Management and assigned the security roles listed in this section.<!-- KFM: The section title says we need to add the agent user, but will they actually be here already (I suppose because we assigned them a license above)? If not, how do we add them? --> Make a note of the roles listed  and then select the link provided to open the **Users** page of Supply Chain Management <!-- KFM: The link opens the wrong page (opens PPAC). Will this be fixed? Should we instead provide the correct SCM path here? Is the **Users** page where we actually want to go? -->, where you can review and assign security roles for the agent identity user<!-- KFM: I didn't see the *(Preview) Supplier Communication Agent* role in the UI, which might mean that it's not available until we've turned on the feature in FM, which we don't do until later in this wizard. -->.  Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
+    - **Add agent user to environment, assign required security roles** – The agent identity user must have access to your Dataverse environment and must be assigned each of the security roles listed in this section. Make a note of the roles listed and then select the link provided to open the Microsoft 365 admin center, where you can review and assign security roles for the agent identity user. <!-- KFM: The section title says we also need to add the agent user, but will they actually be here already? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back and select the **Complete** check box.
+    - **Add agent user to Finance and Operations, assign required security roles** – The agent identity user must also be added as a user in Supply Chain Management and assigned the security roles listed in this section.<!-- KFM: The section title says we need to add the agent user, but will they actually be here already (I suppose because we assigned them a license above)? If not, how do we add them? --> Make a note of the roles listed  and then select the link provided to open the **Users** page of Supply Chain Management <!-- KFM: The link opens the wrong page (opens PPAC). Will this be fixed? Should we instead provide the correct SCM path here? Is the **Users** page where we actually want to go? -->, where you can review and assign security roles for the agent identity user<!-- KFM: I didn't see the *(Preview) Supplier Communication Agent* role in the UI, which might mean that it's not available until we've turned on the feature in FM, which we don't do until later in this wizard. -->.  Make sure that each of the required roles is assigned to the agent identity user, and then go back and select the **Complete** check box.
 
     When you've confirmed all the required settings and selected all the check boxes, select **Next** to continue.
 
