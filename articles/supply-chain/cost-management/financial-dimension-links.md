@@ -62,7 +62,7 @@ When you activate the financial dimension link, the following occurs:
 2. Click **Activate link**.
 3. Click **Yes**.
 
-The **Current status:** field displays that the financial dimension link is active, and the color of the button is yellow. The **Reference** field is not available.
+The **Current status** field displays that the financial dimension link is active, and the color of the button is yellow. The **Reference** field is not available.
 
 ## Lock the financial dimension link
 
@@ -79,7 +79,7 @@ You must set up a financial dimension link before you can lock the link.
 2. Click **Lock link**. The **Linked dimension update** form is displayed.
 3. Click **OK**. All open transactions are updated accordingly.
 
-The **Current status:** field displays that the financial dimension link is locked, and the color of the button is green.
+The **Current status** field displays that the financial dimension link is locked, and the color of the button is green.
 
 ## Unlock the financial dimension link
 
@@ -92,7 +92,7 @@ After a financial dimension link is locked, you can unlock it. When it is unlock
 1. Click **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 2. Click **Unlock link**.
 
-The **Current status:** field displays that the financial dimension link is active, and the color of the button is yellow.
+The **Current status** field displays that the financial dimension link is active, and the color of the button is yellow.
 
 ## Deactivate the financial dimension link
 
@@ -105,6 +105,6 @@ When you deactivate a financial dimension link, the following occurs:
 1. Click **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 2. Click **Deactivate link**.
 
-The **Current status:** field displays that the financial dimension link is inactive, and the color of the button is red.
+The **Current status** field displays that the financial dimension link is inactive, and the color of the button is red.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
