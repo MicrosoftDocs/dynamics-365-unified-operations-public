@@ -86,8 +86,9 @@ Add the agent identity user both to the Dataverse environment and to Supply Chai
     - *(Preview) Supplier Communications Agent*
     - *System user*
     - *System agent*
- 
-Note that the *System agent* role in Supply Chain Management is needed to ensure that the agent identity is exempt from license enforcement. This means, you will not need to have a user license allocated to the agent. 
+
+> [!NOTE]
+> The *System agent* role in Supply Chain Management exempts the agent identity user from license enforcement. This means that you don't need to allocate a user license to the agent.
 
 ### Create the required connections
 
