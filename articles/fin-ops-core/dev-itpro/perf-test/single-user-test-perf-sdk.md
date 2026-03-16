@@ -52,7 +52,7 @@ Before you run a single-user test, work with your business team to define your e
 
 1. Under your **PerfSDK** folder, create a folder named **Common\\External\\Selenium**.
 
-   :::image type="content" source="./media/single-user-test-03.png" alt-text="Screenshot of the new PerfSDK folder.":::
+   :::image type="content" source="media/single-user-test-03.png" alt-text="Screenshot of the new PerfSDK folder.":::
 
 1. Copy the following files, and save them to the **Common\\External\\Selenium** folder you created in the previous step:
 
@@ -67,11 +67,11 @@ When you finish recording the end-to-end scenario, generate a C# performance tes
 1. In a development environment, open Microsoft Visual Studio as an admin.
 1. Open the **PerfSDKSample** solution from your **PerfSDK** folder. In a tier-1 sandbox or a cloud-hosted-environment, you typically find the **PerfSDK** folder in `<Service volume>:\PerfSDK\PerfSDKLocalDirectory`.
 
-   :::image type="content" source="../media/single-user-test-05.png" alt-text="Screenshot of the PerfSDK directory.":::
+   :::image type="content" source="media\single-user-test-05.png" alt-text="Screenshot of the PerfSDK directory.":::
 
 1. Add a reference to the WebDriver.dll file in the `Common\External\Selenium` folder.
 
-   :::image type="content" source="./media/single-user-test-06.png" alt-text="Screenshot of the PerfSDKSample references.":::
+   :::image type="content" source="media/single-user-test-06.png" alt-text="Screenshot of the PerfSDKSample references.":::
 
 1. On the **Dynamics 365** menu, point to **Addins**, and then select **Create C# perf test from recording**.
 1. In the **Import Task Recording** dialog box, enter the following required details:
@@ -82,7 +82,7 @@ When you finish recording the end-to-end scenario, generate a C# performance tes
     
 1. Select **Import**. A new C# class is created under the **Generated** folder of your PerfSDKSample project.
 
-   :::image type="content" source="./media/single-user-test-09.png" alt-text="Screenshot of the new C# class in the Generated folder.":::
+   :::image type="content" source="media/single-user-test-09.png" alt-text="Screenshot of the new C# class in the Generated folder.":::
 
 1. Build the solution.
 
