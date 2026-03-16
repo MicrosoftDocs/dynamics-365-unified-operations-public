@@ -9,9 +9,6 @@ ms.topic: how-to
 ms.date: 03/13/2026
 ms.custom:
   - bap-template
-  - ai-gen-docs-bap
-  - ai-gen-description
-  - ai-seo-date:04/24/2025
 ---
 
 <!-- Bogdana's note: I haven't linked this anywhere yet - let's review it first, then I will link it to the main setup documentation.-->
@@ -26,7 +23,7 @@ This article explains how system administrators can set up and configure the Sup
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Set up the agent by using the agent deployment wizard
+## Run the Copilot agent deployment wizard
 
 To access the agent deployment wizard, follow these steps:
 
@@ -38,7 +35,7 @@ To access the agent deployment wizard, follow these steps:
 
     - In the **Make sure the following apps are up to date with at least the versions noted** section, review this list of required apps and versions. Make sure that the apps listed are installed in your environment and that their versions are equal to or greater than the ones listed. If any of the apps aren't installed or updated to the required version, install or update them before you continue. A link to the Power Platform admin center is provided to help you check the app versions and do the installations or updates if needed. Mark the **Complete** check after you've confirmed that all of the apps meet the requirements.
     - The remaining sections on this page automatically check whether all other required features and settings are enabled in your environment. If they are, green check marks are shown. If any of the features or settings aren't enabled, enable them before you continue. Links to the Power Platform admin center are provided in each section to help you enable the relevant features or settings if needed. Learn more in [Enable or disable Copilot features](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings#enable-or-disable-copilot-features).
-    - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment. If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).  <!-- KFM: Is this status reported in the **Configure data and connector policies** section, or is this requirement in addition to what is indicated there? There is a **required connections** list here, but it doesn't match the values below; those are listed later in the wizard though (**Enable agent** page) how does the list in the UI on this page relate to teh list below? -->
+    - Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment. If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).  <!-- KFM: Is this status reported in the **Configure data and connector policies** section, or is this requirement in addition to what is indicated there? There is a **required connections** list here, but it doesn't match the values below; those are listed later in the wizard though (**Enable agent** page)--how does the list in the UI on this page relate to the list below? -->
         - *Supplier Communications Agent - inbound*
         - *Supplier Communications Agent - outbound*.
     - Each time you make changes to meet the prerequisites, go back to the agent deployment wizard and select the reload button at the right side of each section to let the wizard check the status of that section again. When all prerequisites are met, green check marks are shown for all sections.
@@ -49,8 +46,8 @@ To access the agent deployment wizard, follow these steps:
 
     - **Create your agent's Entra user ID** – For security and ease of maintenance, use a dedicated identity for the agent. If you don't already have an eligible user available, select the link provided to open the Microsoft 365 admin center and create a new user that will be the agent identity user. Then select that user in the drop-down list provided.
     - **Assign product licenses** – The Supplier Communications Agent uses premium tier connectors, so the agent identity user you selected must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). Examples of sufficient licenses are listed in this section (just one of these licenses is needed <!-- KFM: correct? -->). Select the link provided to open the Microsoft 365 admin center, where you can review and assign licenses for the agent identity user. Select the **Complete** check box after you've assigned the required license to the agent identity user.
-    - **Add agent user to environment, assign required security roles** – The agent identity user must have access to your Dataverse environment and must be assigned each of the security roles listed in this section. Make a note of the roles listed and then select the link provided to open the Microsoft 365 admin center, where you can review and assign security roles for the agent identity user. <!-- KFM: The section says we also need to add the agent user, but will they actually be here already? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
-    - **Add agent user to Finance and Operations, assign required security roles** – The agent identity user must also be added as a user in Supply Chain Management and assigned the security roles listed in this section. Make a note of the roles listed <!-- KFM: I think the *(Preview) Supplier Communication Agent* role might not be available until we've turned on the feature in FM, which we don't do until later in this wizard. --> and then select the link provided to open the **Users** page of Supply Chain Management <!-- KFM: The link opens the wrong page (opens PPAC). Will this be fixed? Should we instead provide the correct SCM path here? Is the **Users** page where we actually want to go? -->, where you can review and assign security roles for the agent identity user. <!-- KFM: The section says we also need to add the agent user, but will they actually be here already (I suppose because we assigned them a license above)? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
+    - **Add agent user to environment, assign required security roles** – The agent identity user must have access to your Dataverse environment and must be assigned each of the security roles listed in this section. Make a note of the roles listed and then select the link provided to open the Microsoft 365 admin center, where you can review and assign security roles for the agent identity user. <!-- KFM: The section title says we also need to add the agent user, but will they actually be here already? If not, how do we add them? --> Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
+    - **Add agent user to Finance and Operations, assign required security roles** – The agent identity user must also be added as a user in Supply Chain Management and assigned the security roles listed in this section.<!-- KFM: The section title says we need to add the agent user, but will they actually be here already (I suppose because we assigned them a license above)? If not, how do we add them? --> Make a note of the roles listed  and then select the link provided to open the **Users** page of Supply Chain Management <!-- KFM: The link opens the wrong page (opens PPAC). Will this be fixed? Should we instead provide the correct SCM path here? Is the **Users** page where we actually want to go? -->, where you can review and assign security roles for the agent identity user<!-- KFM: I didn't see the *(Preview) Supplier Communication Agent* role in the UI, which might mean that it's not available until we've turned on the feature in FM, which we don't do until later in this wizard. -->.  Make sure that each of the required roles is assigned to the agent identity user, and then go back select the **Complete** check box.
 
     When you've confirmed all the required settings and selected all the check boxes, select **Next** to continue.
 
@@ -101,32 +98,32 @@ To access the agent deployment wizard, follow these steps:
 
     When you've completed all of the settings on this page, select **Next** to continue.
 
-1. The final page of teh wizard opens. Select **Finish** to complete the setup.
-
-
+1. The final page of the wizard opens. Select **Finish** to complete the setup.
 
 <!-- Bogdana: The following is a step not included in the wizard - TODO: contact Christian/Karl to figure it out -->
 
 ## Assign user permissions
 
-All Dynamics 365 Supply Chain Management users working with the agent must also be created as Dataverse users (if they aren't already). To learn how, go to [Create users](/power-platform/admin/create-users).
+After you run the setup wizard, you must set up user permissions for the users who will manage the agent configuration and review agent results. The permissions are different for users who manage the agent configuration and users who review agent results, as described in the following sections.
 
-Additionally, assign the roles described in the following subsections.
+If you need to create new users in your environment to manage the agent configuration or review agent results, learn how to [Create users](/power-platform/admin/create-users).
 
-### Permissions for users who manage the agent configuration
+### Required permissions for users who manage the agent configuration
+
+The following permissions are required for users who create and manage the agent configuration:
 
 - Required Dataverse user roles:
-
     - *Basic User*
     - *Finance and Operations Agent Configuration Manager*
     - *Finance and Operations Basic User*
 
 - Required Supply Chain Management user roles:
-
     - *System user*
     - *Purchasing manager* and/or *Purchasing agent*
 
-### Permissions for users who review agent results
+### Required permissions for users who review agent results
+
+The following permissions are required for users who review the agent results:
 
 - Required Dataverse user roles:
     - *Basic User*
@@ -136,7 +133,7 @@ Additionally, assign the roles described in the following subsections.
     - *System user*
     - *Purchasing agent*
 
-## Refresh data (optional)
+## Refresh data on sandbox environments (optional)
 
 After you enable the Supplier Communications Agent in a sandbox environment, refresh the data. By refreshing the data, you can use the same data in the sandbox environment as you have in the production environment for testing. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 
