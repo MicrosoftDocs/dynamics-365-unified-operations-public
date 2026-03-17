@@ -66,6 +66,9 @@ The ACL check method is applicable to the following document types:
 
 Based on the ACL check method, only items that are authorized for the selected customer account are permitted for the document.
 
+> [!NOTE] 
+> For sales quotations and sales agreements, validation occurs upon confirmation. This differs from sales orders, where validation happens when an item is added.
+
 ## Set up approved customer lists
 
 To set up and maintain customers who are authorized to buy one or more products, use the **Approved customer list setup** page. To open this page, go to one of the following locations:
