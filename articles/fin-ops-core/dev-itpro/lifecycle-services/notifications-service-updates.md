@@ -4,7 +4,7 @@ description: Learn about the various ways that you can be notified about service
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Platform update 24
 # Get notified about service updates through Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 This article explains how you can stay up to date about service updates from Microsoft.
 

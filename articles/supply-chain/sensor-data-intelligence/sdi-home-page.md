@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 01/06/2025
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,6 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enables organizations to drive business processes in Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor. It's an updated, renamed version of the *IoT Intelligence* feature that was previously available for Supply Chain Management.
@@ -22,7 +23,7 @@ Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enab
 Sensor Data Intelligence lets you perform the following tasks:
 
 - Collect details from machines and equipment to update maintenance asset counter values in Supply Chain Management and drive predictive maintenance.
-- Set up the solution by using a simple onboarding wizard instead of manually installing and configuring components in Microsoft Dynamics Lifecycle Services (LCS).
+- Set up the solution by using a simple onboarding wizard instead of manually installing and configuring components in Microsoft Dynamics Lifecycle Services.
 - Deploy components on your own subscription, so that you have more flexibility to manage Azure components.
 - Configure, scale, and extend the solution as business logic that runs on Azure components. Those components are now managed on your own subscription. Therefore, you can customize them as required to meet your unique business needs.
 

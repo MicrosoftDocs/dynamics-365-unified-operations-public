@@ -4,7 +4,7 @@ description: Learn about how you, as a data controller, can use Microsoft Dynami
 author: shielasogge
 ms.author: shielas
 ms.topic: article
-ms.date: 02/28/2023
+ms.date: 03/13/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global

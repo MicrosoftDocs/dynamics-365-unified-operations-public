@@ -4,7 +4,7 @@ description: Learn how to mass deploy the Warehouse Management app with user-bas
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 02/20/2024
+ms.date: 03/03/2026
 ms.reviewer: kamaybac
 ms.search.form:
 ms.custom:
@@ -131,7 +131,7 @@ Follow these steps to set up Intune to support managed configuration for Android
 1. In the **Configuration Settings** section, in the **Configuration settings format** field, select *Use configuration designer*.
 1. In the **Configuration Settings** section, select **Add**.
 1. In the dialog box, select the checkbox for **ConnectionsJson**. Then select **OK** to close the dialog box.
-1. A new row is added to the grid in the **Configuration Settings** section of the **Settings** tab. The **Configuration key** field is set to *ConnectionsJason*. In the **Value type** field, select *String*. Then, in the **Configuration value** field, paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
+1. A new row is added to the grid in the **Configuration Settings** section of the **Settings** tab. The **Configuration key** field is set to *ConnectionsJson*. In the **Value type** field, select *String*. Then, in the **Configuration value** field, paste the entire contents of the JSON file that you created in the [Create a connection JSON file](#create-a-connection-json-file) section.
 1. Select **Next** to continue.
 1. On the **Assignments** tab, add the user groups and/or devices that the configuration policy should apply to. For information about how to use the settings, see [Add app configuration policies for managed Android Enterprise devices](/mem/intune/apps/app-configuration-policies-use-android).
 1. When you've finished, select **Next** to continue.

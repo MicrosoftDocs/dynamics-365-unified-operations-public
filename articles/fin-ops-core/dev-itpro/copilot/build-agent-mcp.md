@@ -4,7 +4,7 @@ description: Learn how to build an agent in Microsoft Copilot Studio with the Mo
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 11/05/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -17,7 +17,7 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-The **Dynamics 365 ERP MCP** server provides a dynamic framework for agents to perform data operations and access the business logic of finance and operations apps. Developers can build agents that work with data and perform nearly any function that's available to a user through the application interface, without the need for custom code, connectors, or APIs. This article provides guidance and best practices for building an agent with the MCP server in Microsoft Copilot Studio.
+The **Dynamics 365 ERP MCP** server provides a dynamic framework for agents to perform data operations and access the business logic of finance and operations apps. Developers can build agents that work with data and perform nearly any function that's available to a user through the application interface, without the need for custom code, connectors, or APIs. This article provides guidance and best practices for building an agent by using the MCP server in Microsoft Copilot Studio.
 
 ## Prerequisites
 
@@ -39,20 +39,20 @@ After you add the **Dynamics 365 ERP MCP** server, the agent can access the tool
 Learn more about configuration options for the MCP tools in [Add tools and resources from a Model Context Protocol (MCP) server to your agent](/microsoft-copilot-studio/mcp-add-components-to-agent).
 
 > [!NOTE]
-> You can also select the **Dynamics 365 ERP MCP** server in Microsoft Copilot Studio. This server contains 13 static tools for specific actions in Dynamics 365 Finance and Supply Chain Management. However, this version of the server is retired due to limitations in the server's scale and extensibility. We continue to enhance the **Dynamics 365 ERP MCP** server.
+> You can also select the **Dynamics 365 ERP MCP** server in Microsoft Copilot Studio. This server contains 13 static tools for specific actions in Dynamics 365 Finance and Supply Chain Management. However, this version of the server is retired due to limitations in the server's scale and extensibility. The product team continues to enhance the **Dynamics 365 ERP MCP** server.
 
 ## Selecting a model
 
-On the **Overview** tab, you can view and change the agent's model. This model is the primary model the agent uses for reasoning, orchestration, and responding to prompts and instructions. The model you select for your agent significantly affects the quality of responses in your agent.
+On the **Overview** tab, view and change the agent's model. This model is the primary model the agent uses for reasoning, orchestration, and responding to prompts and instructions. The model you select for your agent significantly affects the quality of responses in your agent.
 
 While you can use GPT-4.1 in other clients like Microsoft Visual Studio Code with GitHub Copilot and achieve good results, don't use it as the orchestration model for agents in Copilot Studio. The recommended model for agents using the Dynamics 365 ERP MCP server is **Claude Sonnet 4.5**. This model provides a better success rate in Copilot Studio over other default models like GPT-4.1. If Claude Sonnet 4.5 isn't available in your environment, use **GPT-5 (Chat)**.
 
 > [!NOTE]
-> Claude models are external models not hosted in Azure. Tenant administrators must approve them for use on the tenant. Learn more in [Choose an external model as the primary AI model](/microsoft-copilot-studio/authoring-select-external-response-model).
+> Claude models are external models not hosted in Azure. Tenant administrators must approve them for use on the tenant. To learn more, see [Choose an external model as the primary AI model](/microsoft-copilot-studio/authoring-select-external-response-model).
 
 ## Providing agent instructions
 
-The **Instructions** on the **Overview** tab of the agent are the core directives or guidance on how the agent should function. They tell the agent what to do and how to do it (tools, workflows, tone), in natural language statements. They can give the agent important context for improving the agentic orchestration in selecting the right tool or knowledge source, filling inputs for tools based on context, or generating responses to the user. Learn more about writing instructions for agents in Copilot Studio in [Write agent instructions](/microsoft-copilot-studio/authoring-instructions).
+The **Instructions** on the **Overview** tab of the agent are the core directives or guidance on how the agent should function. They tell the agent what to do and how to do it (tools, workflows, tone), in natural language statements. They can give the agent important context for improving the agentic orchestration in selecting the right tool or knowledge source, filling inputs for tools based on context, or generating responses to the user. To learn more about writing instructions for agents in Copilot Studio, see [Write agent instructions](/microsoft-copilot-studio/authoring-instructions).
 
 Providing instructions to an agent with the Dynamics 365 ERP MCP server helps the agent understand when and how to use the tools in the MCP server. The following principles can help you write effective agent instructions:
 

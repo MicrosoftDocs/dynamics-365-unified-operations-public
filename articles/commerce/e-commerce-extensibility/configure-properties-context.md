@@ -1,11 +1,10 @@
 ---
 title: Configure module properties to be shown based on context
-description: This article describes how to configure module properties in Microsoft Dynamics 365 Commerce so that they are shown or hidden based on the contextual values of other configuration properties.
+description: Learn how to configure module properties in Microsoft Dynamics 365 Commerce so that they're shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/20/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,9 +15,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure module properties in Microsoft Dynamics 365 Commerce so that they are shown or hidden based on the contextual values of other configuration properties.
+This article describes how to configure module properties in Microsoft Dynamics 365 Commerce so that they appear or are hidden based on the contextual values of other configuration properties.
 
-Multiple module configuration properties can be defined in a module's definition file. However, there might be scenarios where the relevance of some property fields depends on the values that are set for other property fields of the module. Property fields that aren't relevant should be hidden to minimize the number of fields that are shown to a page editor who is configuring the module. This behavior helps reduce complexity and the possibility of confusion.
+You can define multiple module configuration properties in a module's definition file. However, some property fields might only be relevant depending on the values that you set for other property fields of the module. Hide property fields that aren't relevant to minimize the number of fields that a page editor sees when configuring the module. This behavior helps reduce complexity and the possibility of confusion.
 
 A module can use a conditional schema to define the rules that the module properties pane in Commerce site builder should follow to show or hide property fields based on the values of other property fields. For example, a module has a **layout** property that allows for two layouts, one of which has plain text, and the other of which has rich text and an image. In this case, the module designer might want to ensure that only property fields that are appropriate to the context (that is, the layout) are shown in site builder when a page editor configures the module.
 
@@ -26,11 +25,11 @@ The ability to show or hide property fields based on context is supported in mod
 
 ## Schema dependencies
 
-Schema dependencies can be used to declare that the schema should change when a specific value is selected for a configuration property. The **[oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/)** property is used with the **dependentSchemas** property to declare the list of configuration properties that are applicable to a specific configuration value.
+Use schema dependencies to declare that the schema should change when a specific value is selected for a configuration property. Use the **[oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/)** property with the **dependentSchemas** property to declare the list of configuration properties that are applicable to a specific configuration value.
 
 ### Schema dependencies example
 
-As the following example of a module definition file shows, when the **layout** property is set to **plainTextOnly**, the **featureText** property should be shown. Alternatively, when the **layout** property is set to **richTextWithImage**, the **featureRichText**, **featureImage**, and **imageAlignment** properties should be shown (but the **featureText** property should not be shown).
+As the following example of a module definition file shows, when the **layout** property is set to **plainTextOnly**, the **featureText** property appears. Alternatively, when the **layout** property is set to **richTextWithImage**, the **featureRichText**, **featureImage**, and **imageAlignment** properties appear (but the **featureText** property doesn't appear).
 
 ```json
 {
@@ -66,11 +65,11 @@ As the following example of a module definition file shows, when the **layout** 
 
 ## Property dependencies
 
-Property dependencies can be used to declare that specific configuration properties must be present if the value of another configuration property is present.
+Use property dependencies to declare that specific configuration properties must be present if the value of another configuration property is present.
 
 ### Property dependencies example
 
-In the following example, the **dependentSchemas** property specifies that whenever the **productTitle** value is entered, the **subTitle** configuration property should be shown in site builder.
+In the following example, the **dependentSchemas** property specifies that whenever the **productTitle** value is entered, the **subTitle** configuration property appears in site builder.
 
 ```json
 {
@@ -102,7 +101,7 @@ In the following example, the **dependentSchemas** property specifies that whene
 
 ## Handling property override conflicts
 
-Because the **dependentSchemas** property is supported in both module definition files and module definition extension files, there might be conflicts between the two types of files. By setting a Boolean **override** property to **true** in the module definition extension file, you can enable overrides of specific configuration properties.
+Both module definition files and module definition extension files support the **dependentSchemas** property. Because of this support, conflicts can occur between these two types of files. To override specific configuration properties, set the Boolean **override** property to **true** in the module definition extension file.
 
 The following examples show a module definition file and a module definition extension file that uses the **override** property.
 
@@ -272,11 +271,11 @@ The following tables list possible scenarios and expected outcomes when schema d
 
 | Scenario | Expected outcome |
 |----------|------------------|
-| A schema dependency is used only in the module definition file. No conflicts exist between properties in the schema dependency and the module definition extension file. | The schema dependency is applied. |
-| A schema dependency is used only in the module definition extension file. No conflicts exist between properties in the schema dependency and the module definition extension file. | The schema dependency is applied. |
-| A schema dependency is used only in the module definition file. A conflict exists between properties in the schema dependency and the module definition extension file. For example, property A is declared both in the schema dependency of the module definition file and in the module definition extension file, which doesn't have a schema dependency. | A build error occurs. |
-| A schema dependency on the same property is used both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
-| The same property is defined both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
+| You use a schema dependency only in the module definition file. No conflicts exist between properties in the schema dependency and the module definition extension file. | The system applies the schema dependency. |
+| You use a schema dependency only in the module definition extension file. No conflicts exist between properties in the schema dependency and the module definition extension file. | The system applies the schema dependency. |
+| You use a schema dependency only in the module definition file. A conflict exists between properties in the schema dependency and the module definition extension file. For example, property A is declared both in the schema dependency of the module definition file and in the module definition extension file, which doesn't have a schema dependency. | A build error occurs. |
+| You use a schema dependency on the same property both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
+| You define the same property both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
 
 ### Override scenarios
 
@@ -308,6 +307,5 @@ The following tables list possible scenarios and expected outcomes when schema d
 [Add module configuration fields](add-module-config-fields.md)
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

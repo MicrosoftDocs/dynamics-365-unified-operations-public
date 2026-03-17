@@ -1,15 +1,15 @@
 ---
 title: Deployment guidelines for the fiscal registration service integration sample for Germany (legacy)
-description: This article provides guidelines for deploying the fiscal integration sample for Germany from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
+description: Learn about guidelines for deploying the fiscal integration sample for Germany from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.date: 02/26/2026
+ms.topic: how-to
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-
+ms.custom: 
+  - bap-template
 ---
 # Deployment guidelines for the fiscal registration service integration sample for Germany (legacy)
 
@@ -17,11 +17,11 @@ ms.search.validFrom: 2019-03-01
 [!include [banner](../../../finance/includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> You must follow the guidelines in this article only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, the fiscal registration service integration sample for Germany is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](emea-deu-fi-sample.md#configure-channel-components).
+> Follow the guidelines in this article only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, the fiscal registration service integration sample for Germany is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](emea-deu-fi-sample.md#configure-channel-components).
 
 This article provides guidelines for deploying the fiscal registration service integration sample for Germany from the Dynamics 365 Commerce Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for Germany](emea-deu-fi-sample.md). 
 
-The fiscal integration sample for Germany is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT) and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
+The fiscal integration sample for Germany is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT) and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. Use an unmodified Retail SDK to make the changes that are described in this article. Use a source control system such as Azure DevOps where no files are changed yet.
 
 ## Development environment
 
@@ -34,18 +34,18 @@ The CRT extension components are included in the CRT samples. To complete the fo
 #### DocumentProvider.EFRSample component
 
 1. Find the **Runtime.Extensions.DocumentProvider.EFRSample** project, and build it.
-2. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
+1. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
+1. Copy the assembly file to the CRT extensions folder:
 
     - **Commerce Scale Unit:** Copy the file to the **\\bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Copy the file to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extension configuration file for CRT:
+1. Find the extension configuration file for CRT:
 
     - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
@@ -54,18 +54,18 @@ The CRT extension components are included in the CRT samples. To complete the fo
 #### DocumentProvider.DataModelEFR component
 
 1. Find the **Runtime.Extensions.DocumentProvider.DataModelEFR** project, and build it.
-2. In the **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
+1. In the **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** assembly file.
+1. Copy the assembly file to the CRT extensions folder:
 
     - **Commerce Scale Unit:** Copy the file to the **\\bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Copy the file to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extension configuration file for CRT:
+1. Find the extension configuration file for CRT:
 
     - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
@@ -78,7 +78,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-2. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
@@ -95,22 +95,22 @@ The Hardware station extension components are included in the Hardware station s
 ##### EFRSample component
 
 1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
-2. In the **Extension.EFRSample\\bin\\Debug** folder, find the following assembly files:
+1. In the **Extension.EFRSample\\bin\\Debug** folder, find the following assembly files:
 
     - Contoso.Commerce.HardwareStation.EFRSample.dll
     - Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll
 
-3. Copy the assembly files to the Hardware station extensions folder:
+1. Copy the assembly files to the Hardware station extensions folder:
 
     - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
     - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
 
-4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
+1. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
 
     - **Shared hardware station:** The file is located under the IIS Hardware station site location.
     - **Dedicated hardware station on Modern POS:** The file is located under the Modern POS client broker location.
 
-5. Add the following line to the **composition** section of the configuration file.
+1. Add the following line to the **composition** section of the configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
@@ -142,7 +142,7 @@ To use POS extension sample in the legacy SDK, follow these steps:
 
 ### Production environment
 
-In the previous procedure, you enabled the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+In the previous procedure, you enabled the extensions that are components of the fiscal registration service integration sample. In addition, follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -161,7 +161,7 @@ In the previous procedure, you enabled the extensions that are components of the
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
         ```
 
-2. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
+1. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
 
     - Add the following lines to include the CRT extensions in the deployable packages.
 
@@ -177,9 +177,9 @@ In the previous procedure, you enabled the extensions that are components of the
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
         ```
 
-3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-4. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in [Set up Commerce for Germany](emea-deu-fi-sample.md#set-up-commerce-for-germany).
+1. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+1. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+1. Complete all the required setup tasks that are described in [Set up Commerce for Germany](emea-deu-fi-sample.md#set-up-commerce-for-germany).
 
 ## Design of extensions
 
@@ -187,22 +187,22 @@ The fiscal registration service integration sample for Germany is based on the [
 
 ### Commerce runtime extension design
 
-The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
+The fiscal document provider extension generates service-specific documents and handles responses from the fiscal registration service.
 
 The CRT extension is **Runtime.Extensions.DocumentProvider.EFRSample**. For more information about the design of the fiscal integration solution, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### Request handler
 
-There is one request handler for the document provider, **DocumentProviderEFRFiscalDEU**. This handler is used to generate fiscal documents for the fiscal registration service. It's inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce headquarters.
+The document provider uses one request handler, **DocumentProviderEFRFiscalDEU**. This handler generates fiscal documents for the fiscal registration service. It inherits from the **INamedRequestHandler** interface. The **HandlerName** method returns the name of the handler. The handler name needs to match the connector document provider name that you specify in Commerce headquarters.
 
 The connector supports the following requests:
 
-- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document to generate. It returns a service-specific document that registers in the fiscal registration service.
 - **GetFiscalTransactionExtendedDataDocumentProviderRequest** – This request returns the response together with extended data.
 
 #### Configuration
 
-The **DocumentProviderFiscalEFRSampleGermany** configuration file is located in the **Configuration** folder of the extension project. The purpose of this file is to enable settings for the document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The **DocumentProviderFiscalEFRSampleGermany** configuration file is in the **Configuration** folder of the extension project. This file enables you to configure settings for the document provider from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration.
 
 The following settings are added:
 
@@ -210,13 +210,13 @@ The following settings are added:
 - **Tax group for gift cards and deposits** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that involve gift cards or deposits.
 - **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service.
 - **Tax group for VAT exempt** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that are exempt from tax obligations.
-- **Include customer data** – If this parameter is turned on, requests to the fiscal service will contain customer information, such as names and addresses, in cases where a customer is added to a transaction.
+- **Include customer data** – If this parameter is turned on, requests to the fiscal service contain customer information, such as names and addresses, in cases where a customer is added to a transaction.
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
+The fiscal connector extension communicates with the fiscal registration service.
 
-The Hardware station extension is **HardwareStation.Extension.EFRSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+The Hardware station extension is **HardwareStation.Extension.EFRSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that it receives from the fiscal registration service.
 
 #### Request handler
 
@@ -224,23 +224,23 @@ The **EFRHandler** request handler is the entry point for handling requests to t
 
 The connector supports the following requests:
 
-- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
-- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
-- **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
+- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response.
+- **IsReadyFiscalDeviceRequest** – This request checks the health of the fiscal registration service.
+- **InitializeFiscalDeviceRequest** – This request initializes the fiscal registration service.
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The configuration file is located in the **Configuration** folder of the extension project. The file enables you to configure settings for the fiscal connector from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration.
 
 The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds (ms), that the driver will wait for a response from the fiscal registration service.
-- **Show fiscal registration notifications** – If this parameter is turned on, notifications from the fiscal service will be shown as user messages at the POS.
+- **Timeout** – The amount of time, in milliseconds (ms), that the driver waits for a response from the fiscal registration service.
+- **Show fiscal registration notifications** – If this parameter is turned on, notifications from the fiscal service are shown as user messages at the POS.
 
 ### POS fiscal connector extension design
 
-The purpose of the POS fiscal connector extension is to communicate with the fiscal registration service from POS. It uses the HTTPS protocol for communication.
+The POS fiscal connector extension communicates with the fiscal registration service from POS. It uses the HTTPS protocol for communication.
 
 #### Fiscal connector factory
 
@@ -259,4 +259,6 @@ The EFR fiscal connector is located in the **Pos.Extension\\Connectors\\Efr\\Efr
 The configuration file is located in the **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds, that the connector will wait for a response from the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the connector waits for a response from the fiscal registration service.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

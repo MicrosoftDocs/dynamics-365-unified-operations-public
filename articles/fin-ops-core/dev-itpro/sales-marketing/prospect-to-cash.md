@@ -4,7 +4,7 @@ description: Learn about the Prospect to cash solution between Dynamics 365 Supp
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global

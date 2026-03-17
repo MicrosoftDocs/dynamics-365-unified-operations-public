@@ -4,7 +4,7 @@ description: This article explains how to embed third-party apps to augment the 
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 10/30/2025
+ms.date: 03/09/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-30
@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Many customers use a range of applications to run their businesses. Some of those applications are third-party web apps that work with finance and operations apps. To provide a more seamless user experience, you can embed third-party apps directly into your finance and operations apps (if the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps they require without having to switch tabs or windows.
+Many customers use a range of applications to run their businesses. Some of those applications are third-party web apps that work with finance and operations apps. To provide a more seamless user experience, you can embed third-party apps directly into your finance and operations apps (if the third-party apps support embedding). By using this approach, users can access the websites and apps they require without having to switch tabs or windows.
 
 Use one of the following methods to embed a third-party app or website. These methods are similar to the methods that you use to embed canvas apps from Microsoft Power Apps into finance and operations apps.
 
@@ -32,7 +32,7 @@ Use this procedure to supplement an existing page in the system with an embedded
 1. Open the **Add an app** pane:
 
     1. Select **Settings** and then **Personalize** to open the **Personalization** toolbar.
-    1. Select **More \> Add an app**.
+    1. Select **More** > **Add an app**.
 
 1. Select the region of the page where you want to add the app. This region must be a *tab container* for a pivot tab, FastTab, blade, or workspace section.
 1. Select **Website**.
@@ -54,7 +54,7 @@ Use this procedure to supplement an existing page in the system with an embedded
 Use this procedure if the app that you want to embed isn't related to an existing page, or if you want a full-page experience for the app inside the finance and operations app.
 
 1. Open the dashboard.
-1. Select and hold (or right-click) on the dashboard, select **Personalize**, then select **Add a page**.
+1. Select and hold (or right-click) on the dashboard, select **Personalize**, select **Add a page**.
 1. In the **Add a page** pane, select **Website**.
 1. Configure the embedded app:
 
@@ -74,7 +74,7 @@ After you embed an app by using one of the methods that are described in the pre
 
 - **Publish the view (Recommended):** If you save the embedded app to a view, publish the view to users who have the appropriate security roles in the targeted legal entities. In this case, only the desired users see the embedded app on that page. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
 
-    You can also publish an app that you embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, then select **Publish page**. An experience that resembles the *Publishing views* experience is shown, and you can select the security roles and legal entities to publish to.  
+    You can also publish an app that you embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience that resembles the *Publishing views* experience is shown, and you can select the security roles and legal entities to publish to.  
 
 - **Copy the personalization:** For pages that don't support views, you can copy the personalization to the appropriate users. For more information, see [Sharing personalizations](personalize-user-experience.md#share-personalizations).
 
@@ -84,32 +84,32 @@ To view an embedded app on a page in finance and operations apps, open the page 
 
 ## Editing or removing embedded apps
 
-After you embed an app on a page, you might need to edit its configuration (for example, by changing the section label or the URL). Alternatively, you might need to remove it from the page. Use one of the following procedures to edit the configuration of an embedded app or remove it completely.
+After you embed an app on a page, you might need to edit its configuration, such as changing the section label or the URL. Or, you might need to remove the app from the page. Use one of the following procedures to edit the configuration of an embedded app or remove it.
 
 ### Apps that you embed on existing pages
 
 1. Open the page where you embedded the app.
 1. Select **Settings** and then **Personalize** to open the **Personalization** toolbar.
-1. Select the **Select** tool, then select the embedded app.
-1. To edit the app, make the required changes to its configuration, then select **Save**.
+1. Select the **Select** tool, and then select the embedded app.
+1. To edit the app, make the required changes to its configuration, and then select **Save**.
 
-    Alternatively, to remove the app, select **Delete**.
+    To remove the app, select **Delete**.
 
-1. Resave or republish the view. If you leave the page without explicitly saving the view, none of the actions that you performed in the **Edit website** pane are maintained.
+1. Resave or republish the view. If you leave the page without explicitly saving the view, you don't maintain any of the actions that you performed in the **Edit website** pane.
 
 ### Apps that you embed from the dashboard
 
 1. Open the dashboard.
-1. Select and hold (or right-click) the tile that is associated with the embedded app, then select **Personalize**.
-1. To edit the app, select **Edit page**. In the **Edit website** pane, make the required changes to the app configuration, then select **Save**.
+1. Select and hold (or right-click) the tile that's associated with the embedded app, and then select **Personalize**.
+1. To edit the app, select **Edit page**. In the **Edit website** pane, make the required changes to the app configuration, and then select **Save**.
 
-    Alternatively, to remove the app, select **Remove page**.
+    To remove the app, select **Remove page**.
 
 ## Appendix
 
 ### Troubleshooting
 
-If a website isn't rendered correctly after you embed it in a finance and operations app, or if you receive an error message that states that the URL denied a connection, the website is probably configured to prevent itself from being embedded in an iframe. Follow these steps to determine whether you can embed the website.
+If a website doesn't render correctly after you embed it in a finance and operations app, or if you receive an error message that states that the URL denied a connection, the website is probably configured to prevent itself from being embedded in an iframe. Follow these steps to determine whether you can embed the website.
 
 1. Open the developer tools for the browser that you're using.
 1. On the **Network** tab, find and select the response from the embedded site.

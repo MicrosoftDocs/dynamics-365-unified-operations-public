@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks that are used to syn
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: kamaybac
 audience: IT Pro
@@ -70,12 +70,12 @@ An invoice origin must be set up for the integration, to distinguish the free te
 Besides appearing on the invoice header, the **External invoice number** information can be used to help guarantee that invoices that are created from Field Service agreement invoices are filtered out during invoice synchronization from Supply Chain Management to Field Service.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Invoice origin codes**.
-2. Select **New** to create a new invoice origin.
-3. In the **Invoice origin** field, enter a name for the invoice origin, such as **FS**.
-4. In the **Description** field, enter a description, such as **Field Service Agreement Invoice**.
-5. Select the **Origin type assignment** check box.
-6. Set the **Invoice origin type** field to **Agreement invoice integration**.
-7. Select **Save**.
+1. Select **New** to create a new invoice origin.
+1. In the **Invoice origin** field, enter a name for the invoice origin, such as **FS**.
+1. In the **Description** field, enter a description, such as **Field Service Agreement Invoice**.
+1. Select the **Origin type assignment** check box.
+1. Set the **Invoice origin type** field to **Agreement invoice integration**.
+1. Select **Save**.
 
 ### In the Data Integration project
 
@@ -91,11 +91,11 @@ The following illustrations show the template mapping in Data integration.
 
 ### Agreement invoices (Field Service to Supply Chain Management): Invoice headers
 
-![Template mapping in Data integration for invoice headers.](../../../supply-chain/sales-marketing/media/FSFreeTextInvoice1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/FSFreeTextInvoice1.png" alt-text="Screenshot of template mapping in Data integration for invoice headers.":::
 
 ### Agreement invoices (Field Service to Supply Chain Management): Invoice lines
 
-![Template mapping in Data integration for invoice lines.](../../../supply-chain/sales-marketing/media/FSFreeTextInvoice2.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/FSFreeTextInvoice2.png" alt-text="Screenshot of template mapping in Data integration for invoice lines.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

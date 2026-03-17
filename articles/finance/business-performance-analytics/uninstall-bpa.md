@@ -12,18 +12,25 @@ ms.date: 1/26/2026
 
 # Uninstall Business performance analytics
 
-Two options are available for uninstalling Business performance analytics: code-based uninstallation and manual uninstallation.  
+You can uninstall Business performance analytics by using either code-based uninstallation or manual uninstallation.  
 
-If you must reinstall Business performance analytics after you uninstall it, wait four hours before reinstallation.
+If you need to reinstall Business performance analytics after uninstalling it, wait four hours before reinstalling.
+
+If you uninstall and then reinstall Business performance analytics, you can save custom reports in the following ways:
+
+1. **Custom reports in the default solution** – When you reinstall Business performance analytics, the app restores reports it owns in the default solution.
+1. **Reports protected by the `msdyn_bpaconfig` solution** – As long as you don't uninstall the `msdyn_bpaconfig` solution, Business performance analytics can recover custom reports from it. This safeguard helps protect against reports being deleted by an admin or other processes with elevated access.  
+1. **Manually saving custom reports** – You can export and reimport your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
 
 If you uninstall and then reinstall Business performance analytics, custom reports can be saved in the following ways:
-1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.   
+
+1. **Custom reports in the default solution** – When Business performance analytics is reinstalled, reports owned by the Business performance analytics app in the default solution are restored.
 2. **Reports protected by the `msdyn_bpaconfig` solution** – As long as the `msdyn_bpaconfig` solution isn't uninstalled, Business performance analytics can recover custom reports from it. This safeguard was introduced to help protect against reports being deleted by an admin or other processes with elevated access.  
 3. **Manually saving custom reports** – You can export and re-import your custom reports. For more information, see [Preserve and manage custom reports](./custom-reports.md).  
- 
-### Data cleanup before uninstall
 
-When Business performance analytics is uninstalled, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, may remain in the customer's storage. These residual elements aren't automatically deleted and can persist unless explicitly removed. To help maintain a clean and efficient environment, customers should run the data cleanup script provided below before performing the uninstall. This ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup may include removing folders like msdyn_BpaConfigs, backup directories, and other Business performance analytics managed artifacts that aren't needed.
+## Data cleanup before uninstall
+
+When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. These residual elements aren't automatically deleted and can persist unless you explicitly remove them. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 
 To perform data cleanup before uninstallation:
 
@@ -31,21 +38,20 @@ To perform data cleanup before uninstallation:
 > This process is required for Business performance analytics 2.5 and must be completed while the `msdyn_BpaTablesManagedDataLake` and `msdyn_bpapipelineplugins` solutions are still installed.
 
 1. Before you uninstall the solutions, open Business performance analytics.
-2. Press **F12** to open your browser's developer console.
-3. Copy the following script into the console and press **Enter**:
+1. Press **F12** to open your browser's developer console.
+1. Copy the following script into the console and press **Enter**:
 
     ```javascript
     processDatalakeFolderDeletion()
     ```
 
-4. The cleanup process starts. This process might take a while to complete.
-5. To check the status of the cleanup, you can:
-    - Rerun steps 3 and 4 to get the current status
+1. The cleanup process starts. This process might take a while to complete.
+1. To check the status of the cleanup, you can:
+    - Rerun steps 3 and 4 to get the current status.
     - Check the execution history of the **Business performance analytics uninstall datalake cleanup** flow.
 
 > [!IMPORTANT]
 > Wait for the cleanup process to complete before uninstalling the solution.
-
 
 ```
 processDatalakeFolderDeletion = (shouldReset) => {
@@ -190,15 +196,15 @@ processDatalakeFolderDeletion = (shouldReset) => {
 
 ```
 
-After the cleanup script executes successfully, you can proceed to uninstall Business performance analytics using Option 1 or 2.  
+After the cleanup script executes successfully, you can proceed to uninstall Business performance analytics by using Option 1 or 2.  
 
 ## Option 1: Code-based uninstallation
 
 1. Sign in to the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using Dataverse admin credentials.
-2. Select the environment to uninstall Business performance analytics.
-3. Select the environment URL that is provided in the details. You're redirected to the sign-in page for the Dataverse environment.
-4. Open your browser's developer tools by selecting **Ctrl**+**Shift**+**I** or going to **More tools** \> **Developer tools**. Then select the **Console** tab to open the developer console.
-5. Copy the following JavaScript code, and paste it into the developer console to start the uninstallation process.
+1. Select the environment to uninstall Business performance analytics.
+1. Select the environment URL that is provided in the details. You're redirected to the sign-in page for the Dataverse environment.
+1. Open your browser's developer tools by selecting **Ctrl**+**Shift**+**I** or going to **More tools** > **Developer tools**. Then select the **Console** tab to open the developer console.
+1. Copy the following JavaScript code, and paste it into the developer console to start the uninstallation process.
 
     ```javascript
     // Get the current org URL
@@ -268,42 +274,42 @@ After the cleanup script executes successfully, you can proceed to uninstall Bus
     start();
     ```
 
-Deletion of all the solutions requires approximately 20 minutes. If the operation is successful, you receive the following message: "Business performance analytics solutions removed successfully."
+Deleting all the solutions takes about 20 minutes. If the operation is successful, you see the following message: "Business performance analytics solutions removed successfully."
 
 ## Option 2: Manual uninstallation
 
-You can manually uninstall Business performance analytics through the Power Platform admin center. The solutions must be manually deleted in the following order:
+You can manually uninstall Business performance analytics through the Power Platform admin center. You must manually delete the solutions in the following order:
 
 1. Business performance analytics anchor solution
-2. Business performance analytics solution
-3. Business performance analytics reports
-4. Business performance analytics plugins solution
-5. Business performance analytics permissions
-6. Business performance analytics tables
-7. Business performance analytics controls
-8. Business performance analytics tables anchor solution
-9. Business performance analytics analytical tables workspace
-10. Business performance analytics analytical tables
-11. Business performance analytics tables transformation job flows
-12. Business performance analytics tables data processing configuration
-13. Business performance analytics tables user roles
-14. Business performance analytics tables data lake synchronization workspace
-15. Business performance analytics tables data lake synchronization
-16. Business performance analytics tables standard entities
-17. Business performance analytics tables virtual entities workspace
-18. Business performance analytics tables virtual entities
-19. Business performance analytics tables managed data lake
-20. Business performance analytics pipeline plugins solution
-21. Business performance analytics tables security
-22. Business performance analytics config
+1. Business performance analytics solution
+1. Business performance analytics reports
+1. Business performance analytics plugins solution
+1. Business performance analytics permissions
+1. Business performance analytics tables
+1. Business performance analytics controls
+1. Business performance analytics tables anchor solution
+1. Business performance analytics analytical tables workspace
+1. Business performance analytics analytical tables
+1. Business performance analytics tables transformation job flows
+1. Business performance analytics tables data processing configuration
+1. Business performance analytics tables user roles
+1. Business performance analytics tables data lake synchronization workspace
+1. Business performance analytics tables data lake synchronization
+1. Business performance analytics tables standard entities
+1. Business performance analytics tables virtual entities workspace
+1. Business performance analytics tables virtual entities
+1. Business performance analytics tables managed data lake
+1. Business performance analytics pipeline plugins solution
+1. Business performance analytics tables security
+1. Business performance analytics config
 
 To delete each of the preceding solutions, follow these steps:
 
 1. In [Power Apps](https://make.preview.powerapps.com/), on the left navigation pane, select **Solutions**.
-2. Select the solution to delete, and then select **Delete**.
-3. Select **Delete** again to confirm the operation.
-4. Wait for the **Deleting** message box to disappear.
+1. Select the solution to delete, and then select **Delete**.
+1. Select **Delete** again to confirm the operation.
+1. Wait for the **Deleting** message box to disappear.
 
-Deletion of all the solution requires approximately 20 minutes. If the operation is successful, you receive the following message: "Successfully deleted solution."
+Deleting all the solutions takes about 20 minutes. If the operation is successful, you receive the following message: "Successfully deleted solution."
 
-If you encounter any issues during the cleanup or uninstall process, contact support.
+If you encounter any problems during the cleanup or uninstall process, contact support.
