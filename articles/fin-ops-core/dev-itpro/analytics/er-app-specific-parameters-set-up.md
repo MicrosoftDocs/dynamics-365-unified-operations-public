@@ -68,7 +68,7 @@ You can use the ER framework to set up application-specific parameters for an ER
 1. On the **Conditions** FastTab, select **Add**.
 1. In the **Code** field of the new record, select the drop-down arrow to open the lookup.
 
-        The lookup presents the list of tax codes for selection. This list is returned by the **Model.Data.Tax** data source that's configured in the base ER format. Because this data source contains the **Name** field, the name of each tax code appears in the lookup.
+    The lookup presents the list of tax codes for selection. This list is returned by the **Model.Data.Tax** data source that's configured in the base ER format. Because this data source contains the **Name** field, the name of each tax code appears in the lookup.
 
     :::image type="content" source="./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG" alt-text="Screenshot of the Code field lookup on the ER application-specific parameters page.":::
 
@@ -113,15 +113,15 @@ You can use the ER framework to set up application-specific parameters for an ER
     1. In the **Code** field, select the **\*Not blank\*** option.
     1. In the **Lookup result** field, select the **Other** value.
 
-        By adding this last record, you define the following rule: When the tax code passed as an argument doesn't satisfy any of the previous rules, the lookup data source returns **Other** as the requested taxation level.
+       By adding this last record, you define the following rule: When the tax code passed as an argument doesn't satisfy any of the previous rules, the lookup data source returns **Other** as the requested taxation level.
 
-    :::image type="content" source="./media/GER-AppSpecParms-LookupForm-RulesSet.PNG" alt-text="Screenshot of the last record added on the ER application-specific parameters page.":::
+       :::image type="content" source="./media/GER-AppSpecParms-LookupForm-RulesSet.PNG" alt-text="Screenshot of the last record added on the ER application-specific parameters page.":::
 
 1. In the **State** field, select **Completed**.
 
-    When you run an ER format version that has a status of either **Completed** or **Shared**, this set of rules must be in the **Completed** state. Otherwise, execution of the base ER format is interrupted when the format tries to load data from this set of rules while the **Selector** lookup data source is running.
+   When you run an ER format version that has a status of either **Completed** or **Shared**, this set of rules must be in the **Completed** state. Otherwise, execution of the base ER format is interrupted when the format tries to load data from this set of rules while the **Selector** lookup data source is running.
 
-    When you run an ER format version that has a status of **Draft**, the base ER format can access this set of rules, regardless of its state.
+   When you run an ER format version that has a status of **Draft**, the base ER format can access this set of rules, regardless of its state.
 
 1. Select **Save**.
 1. Close the **Application specific parameters** page.
@@ -135,13 +135,13 @@ To run the ER format in the DEMF company, follow these steps:
 1. In the dialog box that appears, select **OK**.
 1. Download the generated statement and store it locally.
 
-    In the generated statement, the summary of the **InVAT7** tax code is on the **Reduced** level, and the summaries of the **VAT19** and **InVA19** tax codes are on the **Regular** level. The configuration in the legal entity–dependent set of rules determines this behavior.
+   In the generated statement, the summary of the **InVAT7** tax code is on the **Reduced** level, and the summaries of the **VAT19** and **InVA19** tax codes are on the **Regular** level. The configuration in the legal entity–dependent set of rules determines this behavior.
 
 1. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Select the **InVAT7** tax code.
 1. On the Action Pane, on the **Sales tax code** tab, in the **Inquiries** group, select **Posted sales tax** to view information about the tax value and applied tax rate per tax code.
 
-    :::image type="content" source="./media/GER-AppSpecParms-Statement.PNG" alt-text="Screenshot of the Posted sales tax page showing tax values and applied tax rates.":::
+   :::image type="content" source="./media/GER-AppSpecParms-Statement.PNG" alt-text="Screenshot of the Posted sales tax page showing tax values and applied tax rates.":::
 
 1. Close the **Posted sales tax** page.
 
@@ -182,7 +182,7 @@ To run the ER format in the USMF company, complete the following steps:
 1. In the dialog box that appears, select **OK**.
 1. Download the generated statement and store it locally.
 
-                In the generated statement, observe that you reused the same ER format for a different legal entity, but you didn't make any adjustments to the ER format.
+    In the generated statement, observe that you reused the same ER format for a different legal entity, but you didn't make any adjustments to the ER format.
 
 ## Reuse legal entity–dependent parameters
 
@@ -200,7 +200,7 @@ To export parameters, complete the following steps:
 1. On the Action Pane, select **Export**.
 1. Download the generated file and store it locally.
 
-        The configured set of application-specific parameters is exported as an XML file.
+    The configured set of application-specific parameters is exported as an XML file.
 
 #### Import parameters
 

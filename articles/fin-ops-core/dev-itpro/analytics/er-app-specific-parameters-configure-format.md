@@ -74,11 +74,11 @@ In this example, you create a configuration for the Litware, Inc sample company.
 
 1.	On the **Mapping** tab, expand the **Model**, **Data**, and **Summary** items.
 
-        The **Model.Data.Summary** data source returns the list of tax transactions. These transactions are summarized by tax code. For this data source, the **Model.Data.Summary.Level** calculated field is configured to return the code for the taxation level of each summarized record. For any tax code retrieved from the **Model.Data.Summary** data source at runtime, the calculated field returns the taxation level code (**Regular**, **Reduced**, **None**, or **Other**) as a text value. The **Model.Data.Summary.Level** calculated field filters records of the **Model.Data.Summary** data source and enters the filtered data in each XML element that represents a taxation level by using the **Model.Data2.Level1**, **Model.Data2.Level2**, and **Model.Data2.Level3** fields.
+    The **Model.Data.Summary** data source returns the list of tax transactions. These transactions are summarized by tax code. For this data source, the **Model.Data.Summary.Level** calculated field is configured to return the code for the taxation level of each summarized record. For any tax code retrieved from the **Model.Data.Summary** data source at runtime, the calculated field returns the taxation level code (**Regular**, **Reduced**, **None**, or **Other**) as a text value. The **Model.Data.Summary.Level** calculated field filters records of the **Model.Data.Summary** data source and enters the filtered data in each XML element that represents a taxation level by using the **Model.Data2.Level1**, **Model.Data2.Level2**, and **Model.Data2.Level3** fields.
 
     :::image type="content" source="./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG" alt-text="Screenshot of the Model.Data.Summary data source list of tax transactions.":::
 
-        The **Model.Data.Summary.Level** calculated field contains an ER expression. Tax codes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, and **InVAT0**) are hardcoded into this configuration. Therefore, this ER format depends on the legal entity where the tax codes were configured.
+    The **Model.Data.Summary.Level** calculated field contains an ER expression. Tax codes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, and **InVAT0**) are hardcoded into this configuration. Therefore, this ER format depends on the legal entity where the tax codes were configured.
 
     :::image type="content" source="./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG" alt-text="Screenshot of the Model.Data.Summary.Level calculated field with hardcoded tax codes.":::
 
@@ -145,7 +145,7 @@ Next, add a new data source to specify how business users can create legal entit
 1.	On the **Mapping** tab, select **Add**.
 1.	Select **Format enumeration\Lookup**.
 
-        You just identified that each rule business users specify for taxation level recognition returns a value of an ER format enumeration. Notice that the **Lookup** data source type can be accessed under the **Data model** and **Dynamics 365 for Operations** blocks in addition to the **Format enumeration** block. Therefore, you can use ER data model enumerations and application enumerations to specify the type of values returned for the data sources of that type. To learn more about the **Lookup** data sources, see [Configure Lookup data sources to use the ER application-specific parameters feature](er-lookup-data-sources.md).
+    You just identified that each rule business users specify for taxation level recognition returns a value of an ER format enumeration. Notice that the **Lookup** data source type can be accessed under the **Data model** and **Dynamics 365 for Operations** blocks in addition to the **Format enumeration** block. Therefore, you can use ER data model enumerations and application enumerations to specify the type of values returned for the data sources of that type. To learn more about the **Lookup** data sources, see [Configure Lookup data sources to use the ER application-specific parameters feature](er-lookup-data-sources.md).
     
 1.	In the **Name** field, enter **Selector**.
 1.	In the **Format enumeration** field, select **List of taxation levels**.
@@ -182,7 +182,7 @@ Next, add a new data source to specify how business users can create legal entit
     
     :::image type="content" source="./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG" alt-text="Screenshot of the Format designer page with new data source.":::
 
-        The evaluation of configured rules depends on the data type of the fields that you select to define conditions of those rules. When you select a field that is configured as a field of either the **Numeric** or **Date** data type, the criteria differ from the criteria described earlier for the **String** data type. For **Numeric** and **Date** fields, the rule must be specified as a range of values. The condition of the rule is considered satisfied when a value that is passed to the data source is in the configured range.
+    The evaluation of configured rules depends on the data type of the fields that you select to define conditions of those rules. When you select a field that is configured as a field of either the **Numeric** or **Date** data type, the criteria differ from the criteria described earlier for the **String** data type. For **Numeric** and **Date** fields, the rule must be specified as a range of values. The condition of the rule is considered satisfied when a value that is passed to the data source is in the configured range.
     
     The following illustration shows an example of this type of setup. In addition to the **Model.Data.Tax.Code** field of the **String** data type, the **Model.Tax.Summary.Base** field of the **Real** data type is used to specify conditions for a lookup data source.
     
@@ -235,7 +235,7 @@ Because business users might use different languages to specify legal entity–d
 
     :::image type="content" source="./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG" alt-text="Screenshot of the Format designer page with new formula added.":::
 
-        The **LevelByLookup** calculated field that you added returns the taxation level as the value of the **List of taxation levels** format enumeration for each summarized tax transactions record. The tax code of the record is passed to the **Model.Selector** lookup data source, and the set of rules for this data source selects the correct taxation level.
+    The **LevelByLookup** calculated field that you added returns the taxation level as the value of the **List of taxation levels** format enumeration for each summarized tax transactions record. The tax code of the record is passed to the **Model.Selector** lookup data source, and the set of rules for this data source selects the correct taxation level.
 
 ### Add a new format enumeration-based data source
 

@@ -50,7 +50,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckPackReturnsConnull
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule applies to all classes that implement the **SysPackable** interface. It makes sure that the **Pack** method doesn't return **Connull()**. |
 | Error message       | Container pack method returns connull in a Runbase derived class                |
@@ -59,7 +59,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckParametersModified
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if a parameter of a method is modified inside a method.                      |
 | Error message       | Parameter 1% in method %1 are modified inside the method                                     |
@@ -68,7 +68,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckSQLCode
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if your X++ code contains direct SQL code.       |
 | Error message       | SQL code found in method %1                                      |
@@ -77,7 +77,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckNestedLoopInCode
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if it finds a **while select** loop nested within a loop.    |
 | Error message       | Nested data access loop found in %1 method                                                |
@@ -86,7 +86,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckInsertMethodInLoop
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if it finds a call to the method **insert** nested inside a loop. Use **InsertRecordList** instead. This rule doesn't apply to InMemory tables. |
 | Error message       | Insert method can be replaced with RecordInsertList in method %1                       |
@@ -95,7 +95,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckSelectwithJoin
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if it finds nested **select** statements that aren't joined.  |
 | Error message       | Nested select statement in %1 method can be joined                                |
@@ -104,7 +104,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPFunctionCallwithSelect
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if a function call is found within a **select** statement.   |
 | Error message       | Function call found in select statement in method %1     |
@@ -113,7 +113,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckinvalidExecuteQuery
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if a call to **addRange** is found after a call to **super()** in the **ExecuteQuery** method. |
 | Error message       | Add range after super() shouldn't be added in ExecuteQuery method for form %1               |
@@ -122,7 +122,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckInvalidInitFormMethod
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule makes sure that you don't initialize form controls and data sources in a form's **init** method before you call **super()**. It fails if it finds a statement that uses **element** or **this** before the call to **super()** (**this.aMethod()** or **element.aMethod()**). An informational message is shown only for some allowed patterns, such as initializing number sequences (**numberSeqPreInit**). |
 | Error message       | Form element statements shouldn't be used before super() in init method of form %1      |
@@ -131,7 +131,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckEmptyLoop
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if it finds loops that have no statements. |
 | Error message       | Empty loop found in method %1 in class %2                  |
@@ -140,7 +140,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckLockQueryRange
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if the code calls **AddRange** in the **init** method of the form, and doesn't set the range as locked or hidden.      |
 | Error message       | Range should be locked or hidden in form %1    |
@@ -149,7 +149,7 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckSkipStatementValidation
 
-| | |
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description | This rule reports an informational message if it finds a set-based operation that doesn't have **Skip** statements. When **update_recordset** is found, the rule checks for **skipDataMethods(true)**. The rule applies only when the **update** method on the table is overridden. When **insert_recordset** is found, the rule checks for **skipDataMethods(true)**. The rule applies only when the **insert** method on the table is overridden. When **delete_from** is found, the rule checks for **skipDeleteActions(true)**. The rule applies only when the **insert** method on the table is overridden. This is an informational message that highlights the need to call **skip** methods to take full advantage of the performance gains of set-based operations. If **skip** methods aren't used, the execution falls back to a row-by-row operation. |
 | Error message | Set-based operation must invoke Skip statements in method %1 in class %2; otherwise, execution falls back to a row by row operation. |
@@ -158,8 +158,9 @@ This section describes all best practice rules (errors, warnings, or information
 
 ### BPCheckNoTTSTryBlock
 
-| Description | This rule fails if it finds a <strong>try</strong> statement within a <strong>tts</strong> block that isn't handled correctly. |
+| &nbsp; | &nbsp; |
 |---|---|
+| Description | This rule fails if it finds a **try** statement within a **tts** block that isn't handled correctly. |
 | Error message | Tts block with Try statement does not explicitly catch exceptions in method %1 |
 | Issue type/severity | Code/Warning |
 | How to fix it | Use the code example that follows this table. |
@@ -186,7 +187,7 @@ catch(Exception::UpdateConflictNotRecovered) {}
 
 ### BPCheckEmptyTableMethod
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule checks for table methods that have no source code. Empty table methods cause record-set operations on the table to fall back to a row-by-row operation. |
 | Error message       | %1 table has an empty %2 method           |
@@ -195,7 +196,7 @@ catch(Exception::UpdateConflictNotRecovered) {}
 
 ### BPCheckBatchJobsEnabled
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule makes sure that all classes that extend **RunBaseBatch** have a **canGoBatch** method that returns **true**. |
 | Error message       | Custom job is not batch-enabled in class %1         |
@@ -204,7 +205,7 @@ catch(Exception::UpdateConflictNotRecovered) {}
 
 ### BPCheckDisplayMethodCached
 
-| | |
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description | For each control that binds to a data method, this rule fails if one of these conditions is met: The **Cache Data Method** property is set to **Auto**, the corresponding table **display**/**edit** method doesn't have the **SysClientCacheDataMethodAttribute**, and the **init** method of the data source doesn't use **CacheAddMethod**. The **Cache Data Method** property is set to **No**, and the **init** method of the data source doesn't use **CacheAddMethod**. |
 | Error message | Display method %1 in form %2 not cached |
@@ -228,7 +229,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckSQLQueryInInit
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if a data access query that has a **while** loop is found in the **init** method of a form. This pattern could cause performance issues when the form is initialized. |
 | Error message       | SQL query with while loop was found in init method of form %1            |
@@ -237,7 +238,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckNewQueryWithForm
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if it finds the **new Query()** statement in the **init** or **executeQuery** method of a form. |
 | Error message       | Data source query overridden in form method %1      |
@@ -246,7 +247,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckSelectForUpdateAbsent
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if **Select ForUpdate** is used to select records, but an update isn't being performed. This rule doesn't apply to tables that are enabled for Optimistic Concurrency Control (OCC). |
 | Error message       | Select ForUpdate not implemented in method %1   |
@@ -255,7 +256,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckTablePropertyMismatch
 
-| | |
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description | This rule fails when the table belongs to a table group but doesn't have the appropriate **Cache Lookup** value. The rule fails if one of these conditions is met: The **Table Group** property is set to **Main**, and the **Cache Lookup** property is set to **NotinTTS** or **EntireTable**. The **Table Group** property is set to **Group** or **Parameter**, and the **Cache Lookup** property is set to **NotinTTS**. The **Table Group** property is set to **WorksheetHeader**, **WorksheetLine**, or **Transaction**, and the **Cache Lookup** property is set to **Found**, **FoundAndEmpty**, or **EntireTable**. |
 | Error message | %1 table has an invalid combination of table group and cache lookup |
@@ -264,7 +265,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckMissingDeleteActions
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule checks that the value of either a **delete** action or the **On Delete** property of a table relation isn't set to **None**. The rule doesn't trigger when the related or current table is a tempDB, in-memory table, reference table, staging table, or parameter table. |
 | Error message       | Delete actions missing in table %1 which is related to table %2 with relation name %3      |
@@ -273,7 +274,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckAddressModel
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if a table field is of the **AddressZipCodeId** or **AddressStateId** types. These types indicate that the code doesn't use the newer Address framework. |
 | Error message       | Field %1 of table %2 is not part of address location model   |
@@ -282,7 +283,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckDimensionModel
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails if a table field is of the **Dimension** or **LedgerAccount** types. These types indicate that the code doesn't use the newer Financial Dimension framework. |
 | Error message       | Field %1 of table %2 is not part of financial dimension framework               |
@@ -291,7 +292,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckNumberofNewFields
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule verifies that more than 10 fields aren't added to a table during the process of customizing or extending that table. This rule doesn't apply to staging tables. |
 | Error message       | Number of new fields in table %1 is greater than      |
@@ -300,7 +301,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckEnumUpgradeIssue
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule fails when the following condition is met: When you customize an enum (overlayer), new enum values are less than the maximum existing value + 10. This rule doesn't apply to extensible enums. |
 | Error message       | Enum %1 will have upgrade issues    |
@@ -309,7 +310,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckPassiveJoinUse
 
-| | |
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description | This rule validates that, when a form preloads data, the link type of tab page data sources is passive. The rule fails if all the following conditions are met: A form has the **AllowPreLoading** property set to **Yes**. A tab page on the form is bound to a top-level data source. The data source's **Join Source** property is set. The data source's **Link Type** property isn't set to **Passive**. |
 | Error message | New message suggest: "Use passive joins on data sources %1 bound to a tab page control in form %2" |
@@ -318,7 +319,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckAlternateKeyAbsent
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule verifies that tables that have a unique index have at least one alternate key. |
 | Error message       | Table %1 doesn't have an alternate key                                                  |
@@ -327,7 +328,7 @@ You can fix this warning by using one of the following patterns:
 
 ### BPCheckBaseTableModified
 
-|||
+| &nbsp; | &nbsp; |
 |---------------------|-------------------------------------|
 | Description         | This rule discourages the customization (overlayering) of a list of specific base tables that are shipped by Microsoft. Examples are the SourceDocumentHeader and SourceDocumentLine tables. |
 | Error message       | %1 is a base table and must not be modified   |
