@@ -4,7 +4,7 @@ description: Learn about the Compensation Power BI content. It explains how to a
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/19/2017
+ms.date: 03/11/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -20,12 +20,14 @@ ms.dyn365.ops.version: July 2017 update
 This article describes the **Compensation** Microsoft Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
-The **Compensation** Power BI content is shown in the **Compensation management** workspace if you use one of the following products:
+
+The **Compensation** Power BI content appears in the **Compensation management** workspace if you use one of the following products:
 
 - finance and operations apps
 - Microsoft Dynamics 365 Human Resources
 
 ## Reports that are included in the Power BI content
+
 The reports that are included in **Compensation** the Power BI content have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                     | Contents |
@@ -38,7 +40,8 @@ The reports that are included in **Compensation** the Power BI content have both
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-The following data is used to fill the reports in the **Compensation** Power BI content. This table shows the entities that the content was based on.
+
+The **Compensation** Power BI content uses the following data to fill the reports. This table shows the entities that the content is based on.
 
 | Entity                   | Contents                                                                                                   | Relationships with other entities |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
