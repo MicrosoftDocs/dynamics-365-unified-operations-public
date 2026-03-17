@@ -39,7 +39,7 @@ Before installing Business performance analytics, complete the following prerequ
 - Confirm the Power App users are enabled in Dynamics 365 Finance
 - Configure Dynamics 365 Finance
 - Configure Power Platform Admin Center
-- Enable the TDS endpoint in Power Platform Admin Center
+- Enable the Tabular Data Stream endpoint in Power Platform Admin Center
 
 #### Required privileges
 
@@ -132,4 +132,4 @@ Before you install Business performance analytics, set up the following configur
 4. In Power Platform Admin Center, select **Resources** and then select **Dynamics 365 installed apps**.
 5. Find **Finance and Operations Virtual Entity** and check if any updates are available.
 6. If an update is available, update the application. (Only required if you're installing Business performance analytics on existing environments).
-7. Ensure the TDS (Tabular Data Stream) endpoint is enabled for the environment. Business performance analytics requires the TDS endpoint to be turned on. For more information, see [Manage feature settings](/power-platform/admin/control-tds-settings).
+7. Ensure the Tabular Data Stream endpoint is enabled for the environment. Business performance analytics requires the Tabular Data Stream endpoint to be turned on. For more information, see [Manage feature settings](/power-platform/admin/control-tds-settings).
