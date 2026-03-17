@@ -26,6 +26,8 @@ For more information about Commerce offline functionality, see [Additional resou
 
 ## Troubleshooting
 
+For troubleshooting guidance on Commerce offline implementation errors, see [Troubleshoot Commerce offline implementation errors](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-offline-implementation).
+<!--
 If the following table doesn't list an error that you're receiving, create a support request so that Microsoft Support can help you fix the issue. This section is updated with more errors over time. Therefore, review this article before you implement or update Store Commerce app registers that use offline databases.
 
 All troubleshooting errors start with **Microsoft\_Dynamics\_**. However, the following table omits this prepended string from the error codes to shorten them.
@@ -43,6 +45,7 @@ All troubleshooting errors start with **Microsoft\_Dynamics\_**. However, the fo
 | Commerce\_Runtime\_RealtimeServiceNotSupported<br>Commerce\_Runtime\_TransientStorageError | Can't switch to offline mode. The offline database is either incorrectly installed or incorrectly configured. Verify that everything is set up successfully. Also, contact your system administrator. |
 | Commerce\_Runtime\_TerminalNotFound<br>Commerce\_Runtime\_DeviceConfigurationNotFound | To fix this problem, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job). Also, contact your system administrator. |
 | Internal\_Server\_Error<br>Request\_Timeout\_Error<br>Commerce\_Runtime\_InvalidFormat | These errors cover various possible scenarios. Therefore, contact Support to get direct assistance (where applicable). |
+-->
 
 ## Additional resources
 
