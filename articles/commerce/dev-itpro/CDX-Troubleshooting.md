@@ -36,7 +36,7 @@ In the following known scenarios, some configurations in Commerce headquarters m
 
 ## Error-based troubleshooting
 
-For inormation on error-based troubleshooting, see [Troubleshoot Commerce Data Exchange (CDX)](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-data-exchange).
+For information on error-based troubleshooting, see [Troubleshoot Commerce Data Exchange (CDX)](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-data-exchange).
 <!--
 If an error doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This article focuses on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
 
