@@ -4,7 +4,7 @@ description: Access the list of deprecated APIs and migration guidance for some 
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global

@@ -4,7 +4,7 @@ description: Learn about the end-to-end process for upgrading from Microsoft Dyn
 author: laneswenka
 ms.author: laswenka
 ms.topic: upgrade-and-migration-article
-ms.date: 12/2/2024
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -34,7 +34,7 @@ We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) a
 
 ## End-to-end data upgrade process
 
-![Data upgrade process.](media/endToEndDataUpgradeProcess.png)
+:::image type="content" source="media/endToEndDataUpgradeProcess.png" alt-text="Screenshot of the data upgrade process.":::
 
 ### Prerequisites
 
