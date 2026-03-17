@@ -92,7 +92,7 @@ Production system readiness includes, but isn't limited to, the following condit
 
 Use the production environment to **operate** the solution, not build it. The production environment is sized to run your business. The sizing is based on the subscription estimate and diagnostic data from performance testing. After deployment, you can and should do a mock cutover and a final round of validation on the production environment. Before the final cutover, you can request a point-in-time restore to restore the production environment to a clean snapshot (maximum 28 days in the past).
 
-To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as [PsPing](/sysinternals/downloads/psping) and [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) to test latency to Azure data centers.
+To select the appropriate data center for the production environment, consider the latency from the geographic locations where the business operates. Use tools such as [PsPing](/sysinternals/downloads/psping) to test latency to Azure data centers.
 
 The following illustration shows the environment planning process.
 

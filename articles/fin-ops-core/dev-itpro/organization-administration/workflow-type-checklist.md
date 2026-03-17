@@ -2,7 +2,7 @@
 title: Workflow type checklist
 description: Learn about the steps that are required to create a new workflow type, including a workflow type checklist and extra resources.
 author: josaw1
-ms.author: wheeloc
+ms.author: twheeloc
 ms.topic: checklist
 ms.date: 03/17/2026
 ms.reviewer: twheeloc
