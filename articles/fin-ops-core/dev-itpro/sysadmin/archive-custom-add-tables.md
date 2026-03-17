@@ -9,7 +9,7 @@ ms.custom:
 ms.reviewer: twheeloc
 
 ---
-# Scenario 2: Add custom tables to standard archive scenarios
+# Add custom tables to standard archive scenarios
 
 This article describes how to add related custom tables to existing Microsoft archive scenarios. For example, adding a custom settlement table to the General Ledger archive scenario, or adding custom shipment tracking tables to the Sales Order archive scenario.
 
@@ -17,31 +17,31 @@ This article describes how to add related custom tables to existing Microsoft ar
 
 This scenario applies when you have custom tables that are related to Microsoft-managed tables and should be archived together. The custom tables have foreign key relationships to the standard tables.
 
-**Example scenarios:**
+Example scenarios:
 - Custom ledger settlement table related to `GeneralJournalAccountEntry`
 - Custom shipment tracking table related to `SalesTable`
 - Custom quality inspection table related to `InventJournalTable`
 
-**Components involved:**
+Components involved:
 - Custom live tables (new)
 - Custom history tables (new)
 - Custom finance and operations data entities (new)
 - Job contract creator extension (code required)
 - Dataverse configuration
 
-**Code required:** Yes - You must extend the scenario's job contract creator class to add your tables to the archive scope.
+Code required - Yes, you must extend the scenario's job contract creator class to add your tables to the archive scope.
 
 ## Prerequisites
 
-- Access to Visual Studio with Dynamics 365 finance and operations development tools
-- Development environment with Archive framework deployed
-- Understanding of parent-child table relationships
-- Understanding of job contract builder API
-- System Administrator role in Dynamics 365 finance and operations
+- Access to Visual Studio with Dynamics 365 finance and operations development tools.
+- Development environment with Archive framework deployed.
+- Understanding of parent-child table relationships.
+- Understanding of job contract builder API.
+- System Administrator role in Dynamics 365 finance and operations.
 
-## Step 1: Create custom live table
+### Create custom live table
 
-**Objective:** Create your custom transaction table that will be included in the archive scope.
+Create your custom transaction table that will be included in the archive scope.
 
 ### Design table structure
 
