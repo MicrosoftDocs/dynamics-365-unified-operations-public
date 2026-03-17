@@ -47,18 +47,18 @@ Before installing Business performance analytics, complete the following prerequ
 
   - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Follow these steps to confirm that you have these privileges:
 
-        1. In the Power Platform Admin Center, go to **Environments**.
-        2. Select the relevant environment.
-        3. In the **Access** section, select users.
-        4. Select **Installing user** > **Roles**. Confirm the necessary privileges.
+   1. In the Power Platform Admin Center, go to **Environments**.
+   2. Select the relevant environment.
+   3. In the **Access** section, select users.
+   4. Select **Installing user** > **Roles**. Confirm the necessary privileges.
 
 - In Microsoft Dynamics 365 Finance:
 
   - The **System administrator** role in Microsoft Dynamics 365 Finance. Follow these steps to confirm that you have these privileges:
 
-        1. In Dynamics 365 Finance, go to **System administration**.
-        2. Select **Users** > **Users**.
-        3. Select **Installing user** > **Roles**. Confirm the necessary permissions.
+   1. In Dynamics 365 Finance, go to **System administration**.
+   2. Select **Users** > **Users**.
+   3. Select **Installing user** > **Roles**. Confirm the necessary permissions.
 
 - In Microsoft Dynamics Lifecycle Services:
 
