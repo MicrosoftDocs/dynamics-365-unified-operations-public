@@ -36,6 +36,8 @@ In the following known scenarios, some configurations in Commerce headquarters m
 
 ## Error-based troubleshooting
 
+For inormation on error-based troubleshooting, see [Troubleshoot Commerce Data Exchange (CDX)](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-data-exchange).
+<!--
 If an error doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This article focuses on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
 
 
@@ -54,6 +56,7 @@ If an error doesn't appear in the following table, create a support request, as 
 | No download sessions are applied, and no upload sessions are created. | If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
 | Upload sessions fail, and you receive the following error message: `Infolog for task Default:P-0001 (...) Error when bulk inserting data. Target table: RetailListingStatusLog.`. | An error occurs because the upload session package contains multiple records in the **RetailListingStatusLog** table. These records have the same **StatusDateTime** value between two or more. If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
 | When a cashier tries to switch to offline mode or is forced offline, the switch fails. | There are many possible causes. First, verify basic information: Does the computer have available hard drive space? If you're using SQL Server Express, is the size of the offline database at the 10 gigabytes (GB) limit? Are there pending download sessions for the register? (Pending download sessions indicate that the register is no longer up to date. Therefore, offline switching might temporarily be prevented.) Additionally, contact Microsoft Support. If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
+-->
 
 ## Additional resources
 
