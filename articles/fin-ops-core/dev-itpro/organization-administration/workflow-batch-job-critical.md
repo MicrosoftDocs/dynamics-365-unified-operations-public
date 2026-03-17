@@ -4,7 +4,7 @@ description: Learn about how to configure the workflow Message Processing batch 
 author: ChrisGarty
 ms.author: cgarty
 ms.topic: how-to
-ms.date: 05/11/2017
+ms.date: 03/17/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -20,18 +20,18 @@ ms.assetid: 9dc45189-6e7e-4207-ad78-dbbb644dd1ce
 [!include [banner](../../../finance/includes/banner.md)]
 
 
-The workflow system uses various batch jobs. **Workflow message processing** is an important batch job used to process workflow messages. If workflow is a key component of your organization, you should consider configuring the **Workflow message processing** batch job as critical.
+The workflow system uses various batch jobs. **Workflow message processing** is an important batch job that processes workflow messages. If workflow is a key component of your organization, consider configuring the **Workflow message processing** batch job as critical.
 
-Configuring the **Workflow message processing** batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, the support team can better monitor failures and take action to resolve any issues that may have caused the failure.
+When you configure the **Workflow message processing** batch job as critical, the system actively tracks its status. When a critical batch job fails, the support team can better monitor failures and take action to resolve any problems.
 
 Follow these steps to configure the **Workflow message processing** batch job as critical.
 
-1. Navigate to the **Batch jobs** page.
-2. Search for **Workflow message processing** using the quick filter.
-3. Select the **Workflow message processing** batch job.
-4. Click **Edit** in the action pane.
-5. Select the **Critical Job** check box.
-6. Click **Save** in the action pane.
+1. Go to the **Batch jobs** page.
+1. Search for **Workflow message processing** by using the quick filter.
+1. Select the **Workflow message processing** batch job.
+1. Select **Edit** in the action pane.
+1. Select the **Critical Job** check box.
+1. Select **Save** in the action pane.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
