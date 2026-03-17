@@ -75,11 +75,11 @@ Before you can complete the tasks in this article, complete the following prereq
 4. Configure Accounts payable parameters:
 
     1. Go to **Accounts payable** > **Payment setup** > **Methods of payment**.
-    2. Select the **Electronic** method of payment.
-    3. Configure the selected method of payment so that it uses the **BACS (UK)** ER format that you downloaded earlier for vendor payment processing:
+    1. Select the **Electronic** method of payment.
+    1. Configure the selected method of payment so that it uses the **BACS (UK)** ER format that you downloaded earlier for vendor payment processing:
 
         1. On the **File formats** FastTab, set the **Generic electronic Export format** option to **Yes**.
-        2. In the **Export format configuration** field, select **BACS (UK)**.
+        1. In the **Export format configuration** field, select **BACS (UK)**.
 
     :::image type="content" source="media/GER-APParameters.png" alt-text="Screenshot of the Methods of payment page.":::
 
@@ -89,11 +89,11 @@ Before you can complete the tasks in this article, complete the following prereq
 5. Create an example vendor payment:
 
     1. Go to **Accounts payable** > **Payments** > **Payment journal**.
-    2. Make sure that you didn't post the payment journal.
+    1. Make sure that you didn't post the payment journal.
 
         :::image type="content" source="media/GER-APJournal.png" alt-text="Screenshot of the Payment journal page.":::
 
-    3. Select **Lines**, and enter a line that has the following information.
+    1. Select **Lines**, and enter a line that has the following information.
 
         | Field               | Example value   |
         |---------------------|-----------------|
@@ -111,21 +111,21 @@ Before you can complete the tasks in this article, complete the following prereq
 ### Configure ER parameters
 
 1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting parameters**.
-2. On the **Attachments** tab, in the **Baseline** field, select **File** as the document type. The Document management (DM) framework uses this type to keep documents that are related to the baseline feature as DM attachments.
+1. On the **Attachments** tab, in the **Baseline** field, select **File** as the document type. The Document management (DM) framework uses this type to keep documents that are related to the baseline feature as DM attachments.
 
     :::image type="content" source="media/GER-ERParameters.png" alt-text="Screenshot of the Electronic reporting parameters page.":::
 
 ### Generate baseline copies of vendor payment–related documents
 
 1. Go to **Accounts payable** > **Payments** > **Payment journal**.
-2. Select **Lines**.
-3. Select **Generate payments**.
-4. Select the **Electronic** method of payment.
-5. Select the **GBSI OPER** bank account.
-6. Set the **Print control report** option to **Yes**.
-7. Download the generated output as a ZIP file.
-8. Open the downloaded file.
-9. Extract the following files from the downloaded file:
+1. Select **Lines**.
+1. Select **Generate payments**.
+1. Select the **Electronic** method of payment.
+1. Select the **GBSI OPER** bank account.
+1. Set the **Print control report** option to **Yes**.
+1. Download the generated output as a ZIP file.
+1. Open the downloaded file.
+1. Extract the following files from the downloaded file:
 
     - **File** payment file in text format
     - **ERVendOutPaymControlReport** control report file in XLSX format
@@ -135,57 +135,57 @@ Before you can complete the tasks in this article, complete the following prereq
 ### Turn on the ER baseline feature
 
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
-2. On the **Configurations** tab, select **User parameters**.
-3. Set the **Run in debug mode** option to **Yes**.
+1. On the **Configurations** tab, select **User parameters**.
+1. Set the **Run in debug mode** option to **Yes**.
 
 When you turn on the **Run in debug mode** parameter, the ER framework takes these actions after it runs any ER format that generates outgoing documents:
 
 1. It checks whether a baseline is configured for any components of the ER format that ran.
-2. It checks whether each configured baseline is applicable in the current conditions, like the company code of the signed-in company, the file name, and the file name extension of the generated output.
-3. For each applicable baseline, it takes these steps:
+1. It checks whether each configured baseline is applicable in the current conditions, like the company code of the signed-in company, the file name, and the file name extension of the generated output.
+1. For each applicable baseline, it takes these steps:
 
     1. It compares the output that the ER format generates with the corresponding baseline.
-    2. It stores the results of the comparison in the ER configurations debug log.
+    1. It stores the results of the comparison in the ER configurations debug log.
 
 ### Configure ER baselines for vendor payment processing
 
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
-2. Select **Baselines**.
-3. Select **New**.
-4. In the **Reference** field, select the **BACS (UK)** format.
-5. Select **Attachments**.
-6. Add a new baseline for the vendor payment file:
+1. Select **Baselines**.
+1. Select **New**.
+1. In the **Reference** field, select the **BACS (UK)** format.
+1. Select **Attachments**.
+1. Add a new baseline for the vendor payment file:
 
     1. Select **New**.
-    2. In the **Type** field, select the **File** DM document type that you configured in the ER parameters to store baseline artifacts.
-    3. Browse to select the locally saved **File** payment file in text format.
-    4. In the **Description** field, enter **Payment TXT file**.
+    1. In the **Type** field, select the **File** DM document type that you configured in the ER parameters to store baseline artifacts.
+    1. Browse to select the locally saved **File** payment file in text format.
+    1. In the **Description** field, enter **Payment TXT file**.
 
-7. Add a new baseline for the control report for the vendor payment:
+1. Add a new baseline for the control report for the vendor payment:
 
     1. Select **New**.
-    2. In the **Type** field, select the **File** DM document type that you configured in the ER parameters to store baseline artifacts.
-    3. Browse to select the locally saved **ERVendOutPaymControlReport** control report file in XLSX format.
-    4. In the **Description** field, enter **Payment XLSX control report**.
+    1. In the **Type** field, select the **File** DM document type that you configured in the ER parameters to store baseline artifacts.
+    1. Browse to select the locally saved **ERVendOutPaymControlReport** control report file in XLSX format.
+    1. In the **Description** field, enter **Payment XLSX control report**.
 
     :::image type="content" source="media/GER-BaselineAttachments.png" alt-text="Screenshot of the Configurations page with the Payment XLSX control report selected.":::
 
-8. Close the page.
-9. On the **Baselines** tab, select **New** to configure a baseline for the payment file:
+1. Close the page.
+1. On the **Baselines** tab, select **New** to configure a baseline for the payment file:
 
     1. Name the line **Baseline setting for payment file**.
-    2. In the **File component name** field, select **file** to apply this baseline to the ER format output that generates the payment file in BACS (UK) text format.
-    3. In the **Companies** field, select **GBSI** to apply this baseline when the **BACS (UK)** ER format is run in the GBSI company.
-    4. In **File name mask** field, enter **\*.TXT** to apply this baseline only to outputs of the **file** format component that have the **.txt** file name extension.
-    5. In the **Baseline** field, select **Payment TXT file** so that this baseline is used for comparison with the generated output.
+    1. In the **File component name** field, select **file** to apply this baseline to the ER format output that generates the payment file in BACS (UK) text format.
+    1. In the **Companies** field, select **GBSI** to apply this baseline when the **BACS (UK)** ER format is run in the GBSI company.
+    1. In **File name mask** field, enter **\*.TXT** to apply this baseline only to outputs of the **file** format component that have the **.txt** file name extension.
+    1. In the **Baseline** field, select **Payment TXT file** so that this baseline is used for comparison with the generated output.
 
-10. Select **New** to configure a baseline for the control report:
+1. Select **New** to configure a baseline for the control report:
 
     1. Name the line **Baseline setting for control report**.
-    2. In the **File component name** field, select **ERVendOutPaymControlReport** to apply this baseline to the ER format output that generates the control report.
-    3. In the **Companies** field, select **GBSI** to apply this baseline when the **BACS (UK)** ER format is run in the GBSI company.
-    4. In **File name mask** field, enter **\*.XLSX** to apply this baseline only to outputs of the **ERVendOutPaymControlReport** format component that have the **.xslx** file name extension.
-    5. In the **Baseline** field, select **Payment XLSX control report** so that this baseline is used for comparison with the generated output.
+    1. In the **File component name** field, select **ERVendOutPaymControlReport** to apply this baseline to the ER format output that generates the control report.
+    1. In the **Companies** field, select **GBSI** to apply this baseline when the **BACS (UK)** ER format is run in the GBSI company.
+    1. In **File name mask** field, enter **\*.XLSX** to apply this baseline only to outputs of the **ERVendOutPaymControlReport** format component that have the **.xslx** file name extension.
+    1. In the **Baseline** field, select **Payment XLSX control report** so that this baseline is used for comparison with the generated output.
 
     :::image type="content" source="media/GER-BaselineRules.png" alt-text="Screenshot of the Baselines FastTab on the Configurations page.":::
 
@@ -196,22 +196,22 @@ As a functional power user, you can record your own steps to test vendor payment
 ### Reset user settings
 
 1. Open the default dashboard.
-2. Select the **Settings** button (the gear symbol).
-3. Select **User options**.
-4. Select **Usage data**.
-5. Select **Reset**.
-6. Select **Yes** to confirm that you want to reset usage data.
-7. Close the page.
+1. Select the **Settings** button (the gear symbol).
+1. Select **User options**.
+1. Select **Usage data**.
+1. Select **Reset**.
+1. Select **Yes** to confirm that you want to reset usage data.
+1. Close the page.
 
 ### Record the steps to prepare data for testing
 
 1. Select the **Settings** button (the gear symbol).
-2. Select **Task recorder**.
-3. Select **Playback recording**.
-4. Select **Open from this PC**.
-5. Select **Browse**, and select the locally saved **Prepare\\Recording.xml** file.
-6. Select **Start**.
-7. Keep selecting **Play next pending step** until you play all the steps in the recording.
+1. Select **Task recorder**.
+1. Select **Playback recording**.
+1. Select **Open from this PC**.
+1. Select **Browse**, and select the locally saved **Prepare\\Recording.xml** file.
+1. Select **Start**.
+1. Keep selecting **Play next pending step** until you play all the steps in the recording.
 
 This task recording performs the following actions:
 
@@ -219,11 +219,11 @@ This task recording performs the following actions:
 
     :::image type="content" source="media/GER-Recording1Review1.png" alt-text="Screenshot of task recording steps 3 through 4.":::
 
-2. Turn on the **Run in debug mode** ER user parameter.
+1. Turn on the **Run in debug mode** ER user parameter.
 
     :::image type="content" source="media/GER-Recording1Review2.png" alt-text="Screenshot of task recording steps 9 through 10.":::
 
-3. Clean up the ER debug log that contains the results of the comparison of generated files to baselines.
+1. Clean up the ER debug log that contains the results of the comparison of generated files to baselines.
 
     :::image type="content" source="media/GER-Recording1Review3.png" alt-text="Screenshot of task recording steps 13 through 15.":::
 
@@ -232,27 +232,27 @@ This task recording performs the following actions:
 Play (and edit, if needed) the **Process\\Recording.xml** task recording that you downloaded earlier. This recording processes vendor payments and validates the results of the comparison of generated documents to corresponding baselines.
 
 1. Select the **Settings** button (the gear symbol).
-2. Select **Task recorder**.
-3. Select **Playback recording**.
-4. Select **Open from this PC**.
-5. Select **Browse**, and select the locally saved **Process\\Recording.xml** file.
-6. Select **Start**.
-7. Keep selecting **Play next pending step** until you play all the steps in the recording.
+1. Select **Task recorder**.
+1. Select **Playback recording**.
+1. Select **Open from this PC**.
+1. Select **Browse**, and select the locally saved **Process\\Recording.xml** file.
+1. Select **Start**.
+1. Keep selecting **Play next pending step** until you play all the steps in the recording.
 
 This task recording performs the following actions:
 
 1. Starts vendor payment processing.
-2. Selects the correct runtime parameters, and turns on generation of a control report.
+1. Selects the correct runtime parameters, and turns on generation of a control report.
 
     :::image type="content" source="media/GER-Recording2Review1.png" alt-text="Screenshot of task recording steps 3 through 8.":::
 
-3. Accesses the ER debug log to record the results of the comparison of generated outputs to corresponding baselines.
+1. Accesses the ER debug log to record the results of the comparison of generated outputs to corresponding baselines.
 
     In the ER debug log, the results of the comparison appear in the **Generated text** field. The **Format component** and **Format path that caused a log entry** fields refer to the file component for which the generated output is compared to the baseline.
 
     :::image type="content" source="media/GER-ERDebugLog.png" alt-text="Screenshot of entries on the Electronic reporting run logs page.":::
 
-4. Records the comparison of the current output to the baseline by using the **Validate** Task recorder option and selecting  **Current Value**.
+1. Records the comparison of the current output to the baseline by using the **Validate** Task recorder option and selecting  **Current Value**.
 
     :::image type="content" source="media/GER-TRRecordValidation.png" alt-text="Screenshot of using the Validate option for comparison with the current value.":::
 
@@ -263,17 +263,17 @@ This task recording performs the following actions:
 ## Add the recorded tests to Azure DevOps
 
 1. Open the Azure DevOps environment.
-2. Select the project that you defined in the RSAT parameters when you [configured the tool](#prerequisites).
-3. Select the test plan that you defined in the RSAT parameters when you [configured the tool](#prerequisites).
-4. Create a new test case for the selected test plan:
+1. Select the project that you defined in the RSAT parameters when you [configured the tool](#prerequisites).
+1. Select the test plan that you defined in the RSAT parameters when you [configured the tool](#prerequisites).
+1. Create a new test case for the selected test plan:
 
     1. Name the test case **Prepare data to test processing of vendor's electronic payment**.
-    2. Attach the **Recording.xml** file from the **Prepare** folder that you downloaded earlier.
+    1. Attach the **Recording.xml** file from the **Prepare** folder that you downloaded earlier.
 
-5. Create a new test case for the selected test plan:
+1. Create a new test case for the selected test plan:
 
     1. Name the test case **Test processing of vendor payments by using ER format BACS (UK)**.
-    2. Attach the **Recording.xml** file from the **Process** folder that you downloaded earlier.
+    1. Attach the **Recording.xml** file from the **Process** folder that you downloaded earlier.
 
     :::image type="content" source="media/GER-RSAT-DevOps-Tests-Passed.png" alt-text="Screenshot of the new test cases for the selected test plan.":::
 
@@ -285,26 +285,26 @@ This task recording performs the following actions:
 ### Load the tests from Azure DevOps to RSAT
 
 1. Open the local RSAT application in the current topology.
-2. Select **Load** to load the tests that currently reside in Azure DevOps into RSAT.
+1. Select **Load** to load the tests that currently reside in Azure DevOps into RSAT.
 
     :::image type="content" source="media/GER-RSAT-RSAT-Tests-Loaded.png" alt-text="Screenshot of the tests loaded into RSAT.":::
 
 ### Create automation and parameters files
 
 1. In RSAT, select the tests that you loaded from Azure DevOps.
-2. Select **New** to create RSAT automation and parameters files.
+1. Select **New** to create RSAT automation and parameters files.
 
     :::image type="content" source="media/GER-RSAT-RSAT-Tests-Initiated.png" alt-text="Screenshot of the RSAT automation and parameters files created in RSAT.":::
 
 ### Modify the parameters files
 
 1. In RSAT, select the **Prepare data to test processing of vendor's electronic payment** test case.
-2. Select **Edit**.
-3. In the Microsoft Excel workbook that is opened, on the **General** worksheet, change the company code to **GBSI**, because this company will be used for test execution.
-4. In RSAT, select the **Test processing of vendor payments by using ER format BACS (UK)** test case.
-5. Select **Edit**.
-6. In the Excel workbook that is opened, on the **General** worksheet, change the company code to **GBSI**.
-7. On the **ERFormatMappingRunLogTable** worksheet, notice that cells A:3 and C:3 contain the text of the fields in the ER debug log table that are used to validate the results of the comparison of the output to the baseline. These texts will be used to evaluate ER debug log records that are created during test execution.
+1. Select **Edit**.
+1. In the Microsoft Excel workbook that is opened, on the **General** worksheet, change the company code to **GBSI**, because this company will be used for test execution.
+1. In RSAT, select the **Test processing of vendor payments by using ER format BACS (UK)** test case.
+1. Select **Edit**.
+1. In the Excel workbook that is opened, on the **General** worksheet, change the company code to **GBSI**.
+1. On the **ERFormatMappingRunLogTable** worksheet, notice that cells A:3 and C:3 contain the text of the fields in the ER debug log table that are used to validate the results of the comparison of the output to the baseline. These texts will be used to evaluate ER debug log records that are created during test execution.
 
     :::image type="content" source="media/GER-RSAT-RSAT-ExcelParameters.png" alt-text="Screenshot of the ERFormatMappingRunLogTable worksheet.":::
 
@@ -313,7 +313,7 @@ This task recording performs the following actions:
 ### Run the tests in RSAT
 
 1. In RSAT, select the loaded tests.
-2. Select **Run**.
+1. Select **Run**.
 
 Test cases automatically run in the application by using a web browser.
 
@@ -332,15 +332,15 @@ The test execution results are also sent to Azure DevOps so that you can do furt
 This test suite fails when at least one of the generated outputs doesn't match the corresponding baseline. To create this condition, use your derived version of the **BACS (UK)** format that generates a payment file with different content than the corresponding baseline. To simulate this condition, use the same **BACS (UK)** format but change the payment amount on the processed payment line.
 
 1. Open the application and go to **Accounts payable \> Payments \> Payment journal**.
-2. Select **Lines**.
-3. Select the payment line, and then select **Payment status \> None**.
-4. In the **Debit** field, change the value from **1,000.00** to **2,000.00**.
-5. Select **Save** to save your changes.
+1. Select **Lines**.
+1. Select the payment line, and then select **Payment status \> None**.
+1. In the **Debit** field, change the value from **1,000.00** to **2,000.00**.
+1. Select **Save** to save your changes.
 
 ### Run the tests in RSAT
 
 1. In RSAT, select the loaded tests.
-2. Select **Run**.
+1. Select **Run**.
 
 Test cases automatically run in the application by using a web browser.
 
