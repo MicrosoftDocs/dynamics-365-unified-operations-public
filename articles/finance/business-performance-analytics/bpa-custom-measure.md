@@ -1,6 +1,6 @@
 ---
 title: Add custom measures to Business performance analytics (preview)
-description: This article explains how to add custom Power BI measures to the Business performance analytics semantic model and upload them for use in reports.
+description: Learn how to add custom Power BI measures to the Business performance analytics semantic model.
 author: yvishwa
 ms.author: yvishwa
 ms.reviewer: twheeloc 
@@ -159,4 +159,4 @@ Before uploading your custom measures, verify the following items:
 
 ## See also
 
-[Tabular Model Definition Language (TMDL) overview](/analysis-services/tmdl/tmdl-overview?view=sql-analysis-services-2025)
+[Tabular Model Definition Language (TMDL) overview](/analysis-services/tmdl/tmdl-overview)
