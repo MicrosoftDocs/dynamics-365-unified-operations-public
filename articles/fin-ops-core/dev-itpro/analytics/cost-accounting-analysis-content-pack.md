@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 01/30/2025
+ms.date: 03/09/2026
 ms.search.region: Global
 ms.custom: 
   - bap-template
@@ -16,19 +16,19 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes what is included in the **Cost accounting analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This article describes what the **Cost accounting analysis** Microsoft Power BI content includes. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Overview
 
-The **Cost accounting analysis** Power BI content is intended for cost controllers or anyone who is responsible for performing cost control of an organization. It includes the key metrics, such as cost, magnitude, and cost rate by actual cost, budget cost, and flexible budget cost. It uses transaction data from the **Cost accounting** module and provides an aggregate view of costs for the whole organization in one reporting currency. Managers can filter the data by cost objects to perform cost control of their organizational units, even if the organization can have several legal entities.
+The **Cost accounting analysis** Power BI content is intended for cost controllers or anyone who's responsible for performing cost control of an organization. It includes the key metrics, such as cost, magnitude, and cost rate by actual cost, budget cost, and flexible budget cost. It uses transaction data from the **Cost accounting** module and provides an aggregate view of costs for the whole organization in one reporting currency. Managers can filter the data by cost objects to perform cost control of their organizational units, even if the organization has several legal entities.
 
-Because the **Cost accounting analysis** content highlights variances between the actual costs and budgeted costs, managers can be notified about positive and negative trends for their operational units. Managers can drill down to the cost element hierarchies or individual cost elements. In this way, managers can gain detailed insight into how cost variances have occurred, and then take effective action.
+Because the **Cost accounting analysis** content highlights variances between the actual costs and budgeted costs, it notifies managers about positive and negative trends for their operational units. Managers can drill down to the cost element hierarchies or individual cost elements. In this way, managers can gain detailed insight into how cost variances occurred, and then take effective action.
 
 The **Cost accounting analysis** content lets cost accountants analyze how cost flows through the cost objects of the whole organization.
 
 To learn more about Cost accounting, see [Cost accounting home page](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
-By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for the Cost accounting analysis Power BI content](setup-security-cost-accounting-content-pack.md).
+By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations is then filtered based on the access level that's controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for the Cost accounting analysis Power BI content](setup-security-cost-accounting-content-pack.md).
 
 ## Accessing the Power BI content
 
@@ -37,11 +37,11 @@ You can find the **Cost accounting analysis** Power BI content in the Shared ass
 Be sure to download the **Cost accounting analysis** content that applies to the version of Microsoft Dynamics 365 that you're using.
 
 > [!NOTE]
-> KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB here at <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+> KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## Metrics that are included in the Power BI content
+## Metrics included in the Power BI content
 
-The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost accounting analysis** Power BI content.
+The content includes a set of report pages. Each page consists of a set of metrics that the report visualizes as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost accounting analysis** Power BI content.
 
 | Report page                      | Chart                                                                                                                         | Tile                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
@@ -63,9 +63,9 @@ The content includes a set of report pages. Each page consists of a set of metri
 
 ## Understanding the data model and entities
 
-The following data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
+The report pages in the **Cost accounting analysis** Power BI content use the following data. This data is represented as aggregate measurements staged in the Entity store. The Entity store is a Microsoft SQL Server database that's optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The following key aggregate measurements are used as the basis of the content.
+The content uses the following key aggregate measurements.
 
 | Entity                  | Key aggregate measurement | Data source for Dynamics 365      | Field     | Description                                        |
 |-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
@@ -99,7 +99,7 @@ The following table shows how the key aggregate measurements are used to create 
 | Flexible budget cost rate variance            | \[Flexible budget cost rate\] - \[Actual cost rate\]                                                                   |
 | Flexible budget cost rate variance percentage | IF(\[Flexible budget cost rate\] = 0, BLANK(), \[Flexible budget cost rate variance\] / \[Flexible budget cost rate\]) |
 
-The following key dimensions are used as filters to slice the aggregate measurements to achieve greater granularity and provide deeper analytical insights.
+The following key dimensions are used as filters to slice the aggregate measurements. By using these filters, you can achieve greater granularity and provide deeper analytical insights.
 
 | Entity                             | Examples of attributes                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|

@@ -2,7 +2,7 @@
 title: Fetch an environment's RSAT certificate in a zip file
 description: Learn about how to fetch the Regression Suite Automation Tool (RSAT) certificate bundle through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: laneswenka
-ms.date: 01/14/2022
+ms.date: 03/06/2026
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -14,6 +14,7 @@ ms.search.validFrom: 2021-08-12
 # Fetch an environment's RSAT certificate in a zip file
 
 [!include [banner](../../../includes/banner.md)]
+[!include [LCS freeze](../../../../../includes/lcs-freeze-banner.md)]
 
 You can fetch the Regression Suite Automation Tool (RSAT) certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a Base 64–encoded zip file and a Base 64–encoded password for the private certificate password.
 

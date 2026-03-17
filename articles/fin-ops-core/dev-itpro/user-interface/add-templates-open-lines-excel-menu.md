@@ -4,7 +4,7 @@ description: Learn about how you can promote a template to the Open lines in the
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 06/20/2017
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -17,15 +17,15 @@ ms.assetid: 9793bf54-cfb8-4ba1-bc8f-ba49ef37884a
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
+This article describes how you can promote a template to the **Open lines in Excel** menu that is available on journal pages.
 
-Some of the most frequently used templates are the journal templates. Some of these journal templates have been promoted so that they appear on the **Open lines in Excel** menu by default. However, when you add a new template to the system, it must be promoted so that it's available on both the **Open in Office** menu and the **Open lines in Excel** menu. To promote a new template, follow these steps:
+Some of the most frequently used templates are the journal templates. You can promote these journal templates so they appear on the **Open lines in Excel** menu by default. However, when you add a new template to the system, you must promote it so it's available on both the **Open in Office** menu and the **Open lines in Excel** menu. To promote a new template, follow these steps:
 
-1.  Create a Microsoft Excel template, and save it locally. For more information, see [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md).
+1. Create a Microsoft Excel template, and save it locally. For more information, see [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md).
 
-2.  In Microsoft Visual Studio, create a new project for a model that has a reference to the ApplicationSuite model. 
+1. In Microsoft Visual Studio, create a new project for a model that has a reference to the ApplicationSuite model.
 
-3.  Create a new class, implement the **LedgerIJournalExcelTemplate** interface, and extend **DocuTemplateRegistrationBase**. Your implementation (supported journal type, and so on) defines the context that your template will be available as an option for in the Open in Excel experience. This example uses LedgerJournalHeaderEntity and LedgerJournalLineEntity, but you aren't limited to these entities. You can define your own entities, as long as they follow the journal header/line entity pattern. Here is an example from the **LedgerDailyJournalExcelTemplate** class.
+1. Create a new class, implement the **LedgerIJournalExcelTemplate** interface, and extend **DocuTemplateRegistrationBase**. Your implementation (supported journal type, and so on) defines the context that your template will be available as an option for in the Open in Excel experience. This example uses LedgerJournalHeaderEntity and LedgerJournalLineEntity, but you're not limited to these entities. You can define your own entities, as long as they follow the journal header/line entity pattern. Here's an example from the **LedgerDailyJournalExcelTemplate** class.
 
     ```xpp
     using Microsoft.Dynamics.Platform.Integration.Office;  
@@ -166,17 +166,12 @@ Some of the most frequently used templates are the journal templates. Some of th
     }
     ```
 
-4.  Build the project/model that has the new resources. You should have one new resource and one new class. 
+1. Build the project/model that has the new resources. You should have one new resource and one new class.
 
-5.  In the client, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**. You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu.
-
+1. In the client, go to **Common** > **Common** > **Office integration** > **Document templates** > **Reload system templates**. You see the new template in the list. If you open the journal page that you added the template to, you also see that template on the **Open lines in Excel** menu.
 
 ## Additional resources
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
