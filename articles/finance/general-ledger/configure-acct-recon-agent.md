@@ -4,7 +4,7 @@ description: Learn how to set up and configure the Account reconciliation agent 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 02/26/2026
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -56,7 +56,13 @@ Confirm that the agents are shared with the organization.
 
 Learn more in [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).  
 
-## Set up agent identity
+## Set up agent identity users and assign security roles
+Use the user management features for your tenant to create an agent identity user. Then assign the licenses and security roles described in the following subsections to that user. 
+ 
+### License requirements 
+
+The Account reconciliation agent uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq). Examples of sufficient licenses include Power Apps premium, Power Automate premium, or Dynamics 365 Finance. 
+Use the Microsoft 365 admin center to assign the required licenses. 
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
@@ -77,6 +83,9 @@ The user accounts need the following security roles:
 
   - Account reconciliation agent
   - System user
+ 
+>[!NOTE]
+> The system agent security role is exempt from Dynamics 365 finance and operations user license requirements. For more information, see [Use Model Context Protocol for finance and operations apps](../../fin-ops-core/dev-itpro/copilot/copilot-mcp.md#agent-licenses). 
 
 ### Deploy the agent
 
