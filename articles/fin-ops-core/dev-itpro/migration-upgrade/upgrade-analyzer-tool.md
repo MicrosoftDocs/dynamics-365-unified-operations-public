@@ -4,7 +4,7 @@ description: Learn about how to use the Upgrade analysis report to plan your upg
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 07/18/2023
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global

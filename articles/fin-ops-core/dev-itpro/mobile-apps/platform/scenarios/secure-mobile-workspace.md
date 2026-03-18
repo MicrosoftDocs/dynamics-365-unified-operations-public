@@ -4,7 +4,7 @@ description: Learn about how to limit a user's access to a workspace, including 
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
@@ -20,25 +20,27 @@ ms.custom:
 This article describes how to limit a user's access to a workspace.
 
 ## Assign a menu item to workspace
-Workspaces can be tied to a menu item. Users who don't have access to the menu item can't use the workspace, because the workspace is shown only to users who have rights to the menu item.
 
-If a menu item isn't assigned to a workspace, the workspace is always shown to the user.
+You can tie workspaces to a menu item. Users who don't have access to the menu item can't use the workspace, because the workspace only appears to users who have rights to the menu item.
+
+If you don't assign a menu item to a workspace, the workspace always appears to the user.
 
 Follow these steps to help secure your workspaces by assigning a menu item.
 
 1. Add a **SysAppWorkspaceSecurityAttribute** attribute to the workspace class, and specify the menu item to assign to the workspace.
 
-    ![Assign a menu item to a workspace.](media/workspace-api/SecureWorkspaceOption1.png)
+   :::image type="content" source="media/workspace-api/SecureWorkspaceOption1.png" alt-text="Screenshot of assigning a menu item to a workspace.":::
 
-2. Build the menu item and workspace. To test your changes, sign in to mobile app by using a user account that does’nt have access to the menu item.
+1. Build the menu item and workspace. To test your changes, sign in to the mobile app by using a user account that doesn't have access to the menu item.
 
 ## Override the workspaceHidden method
+
 You can also specify whether the workspace is hidden or shown, based on parameters. By overriding the **workspaceHidden** method, you enable your code to control the visibility of the workspace, as shown in the following code example.
 
-![Override the workspaceHidden method.](media/workspace-api/SecureWorkspaceOption2.png)
+:::image type="content" source="media/workspace-api/SecureWorkspaceOption2.png" alt-text="Screenshot of overriding the workspaceHidden method.":::
 
 ## Add a menu item and override the workspaceHidden method
-You can use both the preceding methods in your app. The menu item provides a security check, and the **workspaceHidden** method contains additional logic that is related to the visibility of the workspace.
 
+You can use both the preceding methods in your app. The menu item provides a security check, and the **workspaceHidden** method contains extra logic that's related to the visibility of the workspace.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

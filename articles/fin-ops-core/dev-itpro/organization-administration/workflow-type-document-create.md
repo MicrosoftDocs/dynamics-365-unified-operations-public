@@ -4,7 +4,7 @@ description: Learn about how to create a workflow document class, including an o
 author: josaw1
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 06/19/2019
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,24 +17,24 @@ ms.assetid:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-You define table fields in a query to create workflow conditions. In a typical scenario, calculated fields are used to determine the behavior of a workflow. For example, a dynamic sales total of all records in a table can be used as a workflow condition to determine whether the step should be used. However, a limitation of queries is that you can't define calculated fields in the queries themselves. To overcome this query limitation, you must use a workflow document class. This article describes how to create a workflow document class.
+You define table fields in a query to create workflow conditions. In a typical scenario, you use calculated fields to determine the behavior of a workflow. For example, you can use a dynamic sales total of all records in a table as a workflow condition to determine whether the step should be used. However, a limitation of queries is that you can't define calculated fields in the queries themselves. To overcome this query limitation, you must use a workflow document class. This article describes how to create a workflow document class.
 
 The workflow document class that you create defines table fields for conditions in two ways: the Application Explorer query and parameter methods. You must override the **getQueryName** method of the [WorkflowDocument class](/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) to return the name of the query. You can optionally add calculated fields by adding parameter methods that have a specific signature on the class. For more information about workflow conditions, see [Configure workflow properties](../../fin-ops/organization-administration/configure-workflow-properties.md) and [Configure conditional decisions in a workflow](../../fin-ops/organization-administration/configure-conditional-decision-workflow.md).
 
-The following procedures explain how to create a workflow document class that includes a parameter method for a calculated field. Before you begin, you must create a query that specifies the data that will be accessed. For more information about workflow queries, see [Create a query for a workflow type](workflow-type-query.md).
+The following procedures explain how to create a workflow document class that includes a parameter method for a calculated field. Before you begin, you must create a query that specifies the data that the workflow accesses. For more information about workflow queries, see [Create a query for a workflow type](workflow-type-query.md).
 
 > [!NOTE]
-> If you used the **Workflow** wizard to create the workflow type, the wizard has already created the workflow document class.
+> If you use the **Workflow** wizard to create the workflow type, the wizard already creates the workflow document class.
 
 ## Create a workflow document class
 
 1. Follow one of these steps to create a new query:
 
-    + In Application Explorer, expand the **Classes** node. Right-click the **Classes** node, and then select **New Class**. A class group appears under the **Classes** node. Right-click the new class, select **Rename**, and then enter a name for the workflow document class.
+    + In **Application Explorer**, expand the **Classes** node. Right-click the **Classes** node, and then select **New Class**. A class group appears under the **Classes** node. Right-click the new class, select **Rename**, and then enter a name for the workflow document class.
     + On the **Project** menu, select **Add new item**. In the **Add new item** dialog box, select **Class**. Enter a name for the class, and then select **Create**.
 
-2. Expand the new class, select **classDeclaration**, right-click the class declaration, and then select **Edit**.
-3. Enter the following code in the class declaration.
+1. Expand the new class, select **classDeclaration**, right-click the class declaration, and then select **Edit**.
+1. Enter the following code in the class declaration.
 
     ```X++
     class <MyWorkflowDocumentClassName> extends WorkflowDocument
@@ -42,13 +42,13 @@ The following procedures explain how to create a workflow document class that in
     }
     ```
 
-4. Close the **Editor** window, and select **Yes** to save your changes.
-5. Right-click the new class, point to **Override Method**, and then select **getQueryName**. A method node that is named **getQueryName** appears under the workflow document class node, and the **Editor** window appears.
+1. Close the **Editor** window, and select **Yes** to save your changes.
+1. Right-click the new class, point to **Override Method**, and then select **getQueryName**. A method node that is named **getQueryName** appears under the workflow document class node, and the **Editor** window appears.
 
     > [!NOTE]
     > Be sure to select **getQueryName** as the method to override. The [WorkflowDocument.getQuery method](/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)) is used only internally to retrieve the actual query, based on the string that is returned by the [WorkflowDocument.getQueryName method](/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)).
 
-6. In the **Editor** window, enter the following code for the query method.
+1. In the **Editor** window, enter the following code for the query method.
 
     ```X++
     QueryName getQueryName()
@@ -61,15 +61,15 @@ After you create the workflow document class, you can bind it to the workflow ty
 
 You can add a calculated field to the workflow document class only if it meets these conditions:
 
-- It must be named **parm \<name\>**.
-- It must define the **CompanyId**, **TableId**, and **RecId** parameters.
-- It must return an extended data type (EDT) that will be included in the list of fields that define conditions or notification messages. The label for the EDT must uniquely identify the value.
+- You name it **parm \<name\>**.
+- It defines the **CompanyId**, **TableId**, and **RecId** parameters.
+- It returns an extended data type (EDT) that's included in the list of fields that define conditions or notification messages. The label for the EDT must uniquely identify the value.
 
 ## Add a calculated field to the workflow document class
 
-1. In the workflow document class that you want to add a calculated field to, right-click the class, and then select **New Method**. A new method node appears under the **Classes** node.
-2. Right-click the new method node, and then select **Edit**.
-3. Enter code in the format that is shown in the following example. This example shows how to add a calculated field to determine the total credit amount for a journal.
+1. In the workflow document class where you want to add a calculated field, right-click the class, and then select **New Method**. A new method node appears under the **Classes** node.
+1. Right-click the new method node, and then select **Edit**.
+1. Enter code in the format shown in the following example. This example shows how to add a calculated field to determine the total credit amount for a journal.
 
     ```X++
     public TotalJournalCreditAmount parmTotalJournalCreditAmount(CompanyId _companyId, TableId _tableId, RecId _recId)

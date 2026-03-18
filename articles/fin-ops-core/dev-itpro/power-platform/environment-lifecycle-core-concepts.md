@@ -4,7 +4,7 @@ description: Learn about the core concepts for environment lifecycle operations 
 author: laneswenka
 ms.author: laswenka
 ms.topic: overview
-ms.date: 02/23/2024
+ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -13,13 +13,14 @@ ms.search.validFrom: 2021-10-13
 ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
+
 # Environment lifecycle operations - Core concepts
 
 [!INCLUDE[banner](../includes/banner.md)]
 
 Every day, administrators perform lifecycle operations on their environments. These operations include common activities such as backing up and restoring data and refreshing sandbox environments with new transactions from production instances. This article provides an overview of core concepts for environment lifecycle operations and includes links to more detailed scenario articles.
 
-To learn more about Power Platform Integration, watch our TechTalk on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community) YouTube channel.
+To learn more about Power Platform Integration, watch the TechTalk on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community) YouTube channel.
 
 > [!VIDEO https://www.youtube.com/embed/HmJIuHhx3Hg]
 
@@ -39,9 +40,9 @@ For environment lifecycle operations, there are some terminology and technical d
 
 ## Scenarios supported when Power Platform Integration is enabled
 
-When Power Platform Integration is enabled, the finance and operations apps instance is connected to a Dataverse instance. Therefore, your conceptually whole environment has two halves that you must consider. For example, a sandbox consists of two environments: one environment in Lifecycle Services and one connected environment in Power Platform admin center.
+When you enable Power Platform Integration, the finance and operations apps instance connects to a Dataverse instance. Therefore, your conceptually whole environment has two halves that you must consider. For example, a sandbox consists of two environments: one environment in Lifecycle Services and one connected environment in Power Platform admin center.
 
-This duality of each conceptual environment has an impact on the lifecycle operations that are listed in the previous section. The following subsection lists each end-to-end scenario and links to detailed articles that walk through each one.
+This duality of each conceptual environment affects the lifecycle operations that are listed in the previous section. The following subsection lists each end-to-end scenario and links to detailed articles that walk through each one.
 
 ### Additional resources
 
