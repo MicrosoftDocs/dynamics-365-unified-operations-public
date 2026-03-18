@@ -21,7 +21,7 @@ This article explains how to set up and enable the pay by link payment method to
 Pay by link functionality enables merchants to offer modern payment methods that give customers the flexibility to choose their preferred payment method. Pay by link eliminates the need for a payment terminal. Therefore, store associates can be mobile and accept various types of payments. In addition, pay by link enables customers to pay from their current location. In this way, it can help reduce checkout lines and therefore expedite the checkout process.
 
 > [!NOTE]
-> Starting with Commerce version 10.0.46, pay by link functionality is also available for orders created from point of sale (POS) and call center. 
+> Pay by link functionality is also available for orders created from point of sale (POS) and call center. This capability was available as a private preview in Commerce version 10.0.46 and is available as a public preview starting with Commerce version 10.0.47.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ Pay by link for cash and carry transactions is available starting with the Comme
 - **Commerce headquarters**: 10.0.44 and any version for 10.0.45
 
 > [!NOTE]
-> Pay by link functionality for customer orders in POS and call center is available starting with the Commerce 10.0.46 release. However, these capabilities are in private preview.
+> Pay by link functionality for customer orders in POS and call center was available as a private preview starting with the Commerce 10.0.46 release and is available as a public preview starting with Commerce version 10.0.47.
 
 ### Required role to complete the setup
 
@@ -228,7 +228,7 @@ In Commerce version 10.0.44, the pay by link payment method supports scenarios w
 Customers visiting a physical store often like the products on display, but need more time to evaluate before making a purchase. When customers are ready to purchase products, they often choose to order them online because they'd rather avoid another trip to the physical store. This not only results in the loss of sale for the physical store, but also a lost commission for the store associate who helped the customer evaluate the product. To mitigate such losses, stores can use the Adyen connector's pay by link functionality to create the order and email the corresponding payment link to the customer. If the customer makes a payment within a predefined duration, then the order can be released for processing, otherwise the system cancels the order. This flow ensures that the sale is credited to the store and the store associate who helped the customer with the sale.
 
 > [!NOTE]
-> This feature is available as a private preview starting with Commerce version 10.0.46.
+> This feature was available as a private preview starting with Commerce version 10.0.46 and is available as a public preview starting with Commerce version 10.0.47.
 
 ### Set up pay by link functionality for orders in POS
 
@@ -236,7 +236,7 @@ In addition to the generic pay by link setup described earlier in this article, 
 
 To enable the pay later via payment link functionality, follow these steps:
 
-1. In Commerce headquarters, enable the **Enable asynchronous payments for sales orders** feature in the **Feature management** workspace. However, since this feature is a private preview feature, you must first contact Microsoft support to include this feature in your environment.
+1. In Commerce headquarters, enable the **Enable asynchronous payments for sales orders** feature in the **Feature management** workspace. In Commerce version 10.0.46, this feature is a private preview feature, so you must first contact Microsoft support to include this feature in your environment. Starting with Commerce version 10.0.47, the feature is available as a public preview and you can enable it directly from the **Feature management** workspace without contacting Microsoft support.
 1. To ensure that all the new tables are initialized, run the **Initialize commerce scheduler** job while keeping the **Delete existing configuration** and **Update subjobs only** configurations set to **No**.
 1. Define the hold code to be applied to orders to be paid later via a payment link. To do so, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab, and for the **Hold code for payment confirmation** configuration, select a hold code.
 1. Define the duration in minutes that is allowed for the customer to make a payment for the order. If the customer doesn't make a payment during this duration, then the system cancels the order. To define the payment duration, go to the **Account receivable parameters** \> **General** \> **Sales setup** FastTab and select a value for the **Order hold timeout for pending payments (minutes)** configuration.
@@ -286,7 +286,7 @@ To manually check the payment status of an order, follow these steps:
 Sending a payment link to customers via email for phone orders provides customers with a wide range of payment options, providing convenience and flexibility. This process builds customer trust because it avoids the need to ask for the customer's phone number while on the call. 
 
 > [!NOTE]
-> This feature is available as a private preview in the Commerce version 10.0.46 release.
+> This feature was available as a private preview in the Commerce version 10.0.46 release and is available as a public preview starting with Commerce version 10.0.47.
 
 ### Set up for pay by link for orders in call center
 
