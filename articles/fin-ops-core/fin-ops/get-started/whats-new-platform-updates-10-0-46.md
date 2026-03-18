@@ -29,7 +29,7 @@ This section lists the features included in this release when available. We migh
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changes reported at this time |---|---|---|
+| System administration | Batch history logging options | A configurable option to skip persisting the **INFO** and **PARAMETERS** columns when writing to the batch history table, providing database storage optimization and improved write performance. Learn more in [Batch history logging options](../../dev-itpro/sysadmin/batch-history-logging-options.md). | Feature flight |
 
 ## Feature enhancements included in this release
 

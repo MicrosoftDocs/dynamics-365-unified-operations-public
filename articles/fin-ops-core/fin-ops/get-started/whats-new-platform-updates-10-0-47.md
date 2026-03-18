@@ -30,6 +30,7 @@ This section lists the features included in this release when available. The art
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | System administration | Data tools for Dynamics 365 ERP MCP | New data tools are added to the Dynamics 365 ERP MCP server, enabling agents to perform standard data operations to create, read, update, and delete data in the finance and operations apps environment through data entities. Learn more in [Use Model Context Protocol for finance and operations apps](../../dev-itpro/copilot/copilot-mcp.md) | On by default |
+| System administration | Batch history logging options | A configurable option to skip persisting the **INFO** and **PARAMETERS** columns when writing to the batch history table, providing database storage optimization and improved write performance. Learn more in [Batch history logging options](../../dev-itpro/sysadmin/batch-history-logging-options.md). | Feature flight |
 
 ## Feature enhancements included in this release
 

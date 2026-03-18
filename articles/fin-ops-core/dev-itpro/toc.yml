@@ -1929,6 +1929,8 @@ items:
           href: sysadmin/alerts.md
         - name: Enhanced batch forms
           href: sysadmin/enhanced-forms.md
+        - name: Batch history logging options
+          href: sysadmin/batch-history-logging-options.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
         - name: Clean up the batch job table
