@@ -15,17 +15,17 @@ ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOr
 
 Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods. For each sales line, you can provide a date that takes account of existing on-hand inventory, production capacity, and transportation times.
 
-CTP extends [available-to-promise](../../sales-marketing/delivery-dates-available-promise-calculations.md) (ATP) functionality by considering capacity information. Whereas ATP considers only material availability and assumes infinite capacity resources, CTP considers availability of both materials and capacity. Therefore, it provides a more realistic picture of whether demand can be satisfied within a given time frame.
+CTP extends [available-to-promise](../../sales-marketing/delivery-dates-available-promise-calculations.md) (ATP) functionality by considering capacity information. Whereas ATP considers material availability and assumes infinite capacity resources, CTP considers availability of both materials and capacity.    
 
 CTP works slightly differently, depending on the master planning engine that you're using (Planning Optimization or the deprecated master planning engine). This article describes how to set it up for each engine.
 
 ## How CTP compares to ATP
 
-CTP and ATP are similar, but CTP can often provide a more accurate result, as the following example shows.
+ATP should be used when you sell from stock and capacity is not a constraint, while CTP should be used when you assemble or make-to-order and capacity constraints must be taken into account. In such cases CTP can often provide a more accurate result, as the following example shows.
 
-Item A is an item that is composed of items B and C, and the on-hand quantity of item A is 0 (zero). If you do an ATP check that considers only materials, the ATP quantity will also be 0 (zero). However, if you do a CTP check, the system will check the availability of items B and C, check the resources that are required to make them into item A, and calculate how many of item A can be made. In addition, the CTP calculation can check the resources and materials that are required to make more of items B and C, and to use them to make more of item A.
+Item A is an item that is composed of items B and C, and the on-hand quantity of item A is 0 (zero). If you do an ATP check, the ATP quantity will also be 0 (zero). However, if you do a CTP check, the system will check the availability of items B and C, check the resources that are required to make them into item A, and calculate how many of item A can be made. In addition, the CTP calculation can check the resources and materials that are required to make more of items B and C, and to use them to make more of item A.
 
-A CTP calculation that considers both materials and resources might show a larger quantity than a calculation that checks only materials, particularly when the item that is being checked is an assemble-to-order item. In other words, CTP functionality is based on the explosion function and can be run for a selected sales order line to calculate the expected delivery date.
+A CTP calculation that considers both materials and resources might show a larger quantity than a calculation that checks only materials, particularly when the item that is being checked is an assemble or make-to-order item. In other words, CTP functionality is based on the explosion function and can be run for a selected sales order line to calculate the expected delivery date.
 
 ## <a name="real-time-ctp"></a>Near real-time CTP
 
@@ -33,6 +33,9 @@ A CTP calculation that considers both materials and resources might show a large
 
 > [!NOTE]
 > Because both Planning Optimization and the deprecated master planning engine can now use standard *CTP* delivery date control, CTP for Planning Optimization delivery date control is renamed in Supply Chain Management version 10.0.41. It's now named *Batch CTP* instead of *CTP for Planning Optimization* to better describe the difference.
+
+> [!NOTE]
+> Because CTP considers material and capacity availability and leadtimes for the bill of material and route for the item sold, the CTP calculation is not as fast as the ATP calculation. When deciding which order promissing policy to apply for an item, you should base the policy on whether item is produced to and sold from stock (ATP, ATP + Issue Margin, or Sales Lead Time) or if it is an assemble or make-to-order item (CTP).
 
 ### Enable Near real-time CTP
 
