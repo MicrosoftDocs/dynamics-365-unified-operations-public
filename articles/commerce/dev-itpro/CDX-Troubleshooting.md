@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Commerce Data Exchange troubleshooting
 description: This article provides information that helps you troubleshoot CDX in implementations.
 author: aneesa
@@ -26,7 +24,7 @@ Data configuration and synchronization are crucial to correct implementation. Re
 
 Before you go through this article, it's important that you understand the concepts of a channel (store), registers and devices, and the Store Commerce app offline database. Therefore, review some of the resources at the end of this article, such as the CDX implementation guide and the overview of the Commerce architecture.
 
-## Scenario-based usage troubleshooting
+## Diagnose scenario-based usage problems
 
 In the following known scenarios, some configurations in Commerce headquarters might cause out-of-box CDX functionality not to achieve expected, successful results. This list is updated as more scenarios become known.
 
