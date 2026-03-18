@@ -32,9 +32,9 @@ In the following known scenarios, some configurations in Commerce headquarters m
 - The **RetailServiceAccount** user is altered, or XDS policies are assigned to it. The **RetailServiceAccount** user is an important, pregenerated account that's used for various reasons and purposes. Microsoft highly recommends that you don't alter this account in any way. If you're using XDS policies, don't assign any policy to the account that reduces the data that the account can see or access.
 - CDX jobs fail with timeout errors when they generate upload packages. This issue most often occurs when custom-created transactional tables are missing an index on the **ReplicationCounterFromOrigin** column in these generated tables.
 
-## Error-based troubleshooting
+## Troubleshoot errors
 
-For information on error-based troubleshooting, see [Troubleshoot Commerce Data Exchange (CDX)](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-data-exchange).
+To troubleshoot errors, see [Troubleshoot Commerce Data Exchange (CDX)](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-data-exchange).
 <!--
 If an error doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This article focuses on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
 
