@@ -2,7 +2,7 @@
 title: Enable pay by link in POS by using the Dynamics 365 Payment Connector for Adyen
 description: Learn how to set up and enable the pay by link payment method to capture payments using the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: shajain
-ms.date: 11/24/2025
+ms.date: 03/18/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -42,7 +42,7 @@ Pay by link for cash and carry transactions is available starting with the Comme
 - **Commerce headquarters**: 10.0.44 and any version for 10.0.45
 
 > [!NOTE]
-> Pay by link functionality for customer orders in POS and call center was available as a private preview starting with the Commerce 10.0.46 release and is available as a public preview starting with Commerce version 10.0.47.
+> Pay by link functionality for customer orders in POS and call center was available as a private preview starting with the Commerce 10.0.46 release, and is available as a public preview starting with Commerce version 10.0.47.
 
 ### Required role to complete the setup
 
@@ -152,7 +152,7 @@ In both cases, the pay by link option is shown only if the administrator selects
 > [!NOTE]
 > The **Payment Input Type** button is available only for payment methods where the **Function** field is set to **Card** or **Wallet**, and the **Operation name** field is set to **Pay card**.
 
-:::image type="content" source="media/payment-input-type.png" alt-text="Screenshot that shows the payment input type options on the Payment Input Type page opened from a selected payment method in Commerce headquarters.":::
+:::image type="content" source="media/payment-input-type.png" alt-text="Screenshot that shows the payment input type options on the Payment Input Type page.":::
 
 If **Manual entry** is added as a payment input type, when a cashier selects the payment method in POS, the customer is prompted to manually enter their credit card number on the payment terminal. In addition, when the manual entry option is enabled, the **Allow manual card numbers** property (**Electronic payment setup** \> **Allow manual card numbers**) is set to **True** and disabled. If the manual entry option is removed, the **Allow manual card numbers** property remains disabled, but it can be edited by the user.
 
