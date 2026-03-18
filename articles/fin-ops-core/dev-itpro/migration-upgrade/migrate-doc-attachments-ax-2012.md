@@ -4,7 +4,7 @@ description: Learn about how to migrate document attachments from Microsoft Dyna
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 04/26/2022
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

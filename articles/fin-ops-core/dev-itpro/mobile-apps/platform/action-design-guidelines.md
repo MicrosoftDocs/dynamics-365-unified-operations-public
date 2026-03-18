@@ -4,7 +4,7 @@ description: Learn about action design guidelines for mobile apps, including cod
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -18,46 +18,46 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
-Actions let users create, update, or delete data, and also run business processes on that data (such as *submit*, *confirm*, and *post*). A user who completes an action first supplies the data for the action (if the action accepts data input). When the user has finished supplying the data, the action is put into a queue of similar actions (which are sometimes referred to as *data sync operations*). If the device is connected/online, the queue is processed immediately. Otherwise, it's processed the next time that the device is connected. The queue is processed asynchronously and doesn’t require the user’s attention unless there is an error during data synchronization. Errors of this type can occur because of server-side data validation. Actions are powered by a server-side mechanism that resembles Task recordings. This mechanism extracts the user’s input from the action and then automatically runs the business process steps on the server by using the input values that the user supplied. The mechanism automatically opens forms, clicks buttons on the forms, and enters the user's input into controls on the forms. This process of playing back the action against the forms on the server occurs asynchronously, against “headless” forms. The mobile app informs the user when the process is completed, and shows the user any info, warning, or error messages that the forms logged. When you design an action, it’s important that you first consider what entity the action is related to. In the current framework, an action must operate on only one entity. An action should not update multiple entities at the same time. For example, an action to create a new sales order should create only the header for the order. It should not also try to create lines, because the lines are separate entities. When you decide to design the action, consider the following questions to determine how to proceed.
+Actions let users create, update, or delete data. They also run business processes on that data, such as *submit*, *confirm*, and *post*. A user who completes an action first supplies the data for the action, if the action accepts data input. When the user finishes supplying the data, the action goes into a queue of similar actions. These actions are sometimes referred to as *data sync operations*. If the device is connected, the queue processes immediately. Otherwise, it processes the next time that the device is connected. The queue processes asynchronously and doesn’t require the user’s attention unless there's an error during data synchronization. Errors of this type can occur because of server-side data validation. Actions use a server-side mechanism that resembles Task recordings. This mechanism extracts the user’s input from the action, and then automatically runs the business process steps on the server by using the input values that the user supplied. The mechanism automatically opens forms, clicks buttons on the forms, and enters the user's input into controls on the forms. This process of playing back the action against the forms on the server occurs asynchronously, against “headless” forms. The mobile app informs the user when the process is completed, and shows the user any info, warning, or error messages that the forms logged. When you design an action, first consider what entity the action is related to. In the current framework, an action must operate on only one entity. An action shouldn't update multiple entities at the same time. For example, an action to create a new sales order should create only the header for the order. It shouldn't also try to create lines, because the lines are separate entities. When you decide to design the action, consider the following questions to determine how to proceed.
 
 ### How do I design an action that enables an entity to be created?
 
-1.  Identify or create a list view page for the entity.
-2.  Make sure that the form that is used for the list view page includes a **New** button that can be used to add new records to the list.
-3.  Use the designer to create a new action for the page. While you're designing the action, be careful not to perform any unnecessary actions. Enter data only in those fields that should be available to the user, and click only those buttons that are required (for example the **New** button and the **Save** button).
+1. Identify or create a list view page for the entity.
+1. Make sure that the form used for the list view page includes a **New** button that users can use to add new records to the list.
+1. Use the designer to create a new action for the page. While you're designing the action, be careful not to perform any unnecessary actions. Enter data only in those fields that should be available to the user, and click only those buttons that are required (such as the **New** button and the **Save** button).
 
 ### How do I design an action that enables an entity to be edited?
 
-1.  Identify or create a details view page for the entity.
-2.  Make sure that the form that is used for the details view page includes an **Edit** button that can be used to edit the visible record.
-3.  Make sure that the form that is used for the details view page lets users open a specific record by applying filters in the filter pane.
-4.  Use the designer to create a new action for the page. While you're designing the action, be careful not to perform any unnecessary actions. Enter data only in those fields that should be available to the user, and click only those buttons that are required (for example, the **Edit** button and the **Save** button).
+1. Identify or create a details view page for the entity.
+1. Make sure that the form used for the details view page includes an **Edit** button that users can use to edit the visible record.
+1. Make sure that the form used for the details view page lets users open a specific record by applying filters in the filter pane.
+1. Use the designer to create a new action for the page. While you're designing the action, be careful not to perform any unnecessary actions. Enter data only in those fields that should be available to the user, and click only those buttons that are required (such as the **Edit** button and the **Save** button).
 
 ### How do I design an action that enables an entity to be deleted?
 
-1.  Identify or create a details view page for the entity.
-2.  Make sure that the form that is used for the details view page includes a **Delete** button that can be used to delete the visible record.
-3.  Make sure that the form that is used for the details view page lets users open a specific record by applying filters in the filter pane.
-4.  Use the designer to create a new action for the page, and just click **Delete** as a part of the process of designing the action.
+1. Identify or create a details view page for the entity.
+1. Make sure that the form used for the details view page includes a **Delete** button that users can use to delete the visible record.
+1. Make sure that the form used for the details view page lets users open a specific record by applying filters in the filter pane.
+1. Use the designer to create a new action for the page, and just click **Delete** as a part of the process of designing the action.
 
 ### How do I design an action that enables a business action to be performed on an entity?
 
-1.  Identify or create a details view page for the entity.
-2.  Make sure that the form that is used for the details view page includes a **Delete** button that can be used to delete the visible record.
-3.  Make sure that the form that is used for the details view page lets users open a specific record by applying filters in the filter pane.
-4.  Use the designer to create a new action for the page, and just perform the steps that are required in the business action. You don't necessarily have to enter data in fields as part of the action. For an action such as *submit*, you just have to click the **Submit** button (and acknowledge any confirmations that appear).
+1. Identify or create a details view page for the entity.
+1. Make sure that the form used for the details view page includes a **Delete** button that users can use to delete the visible record.
+1. Make sure that the form used for the details view page lets users open a specific record by applying filters in the filter pane.
+1. Use the designer to create a new action for the page, and perform the steps required in the business action. You don't necessarily have to enter data in fields as part of the action. For an action such as *submit*, you just have to select the **Submit** button (and acknowledge any confirmations that appear).
 
 ### How do I design an action that enables a field value to be set via a rich lookup?
 
-Lookups for fields in the mobile app don't have a correlation to the advanced lookup behaviors in the cloud version of the app. Regardless of whether you have a custom lookup in the cloud vesion of the app or an automatic lookup that uses a simple query, the mobile app doesn't run existing lookup code when it must determine which UI to show the user. (Remember that the user might be offline while using the app, and server-side code isn’t run until the action is synchronized.) However, lookup/control overrides such as *modified* are run when the value is set by the mobile back end as it synchronizes the data from the action. When the mobile app detects that a field on an action was selected from a lookup field on a form, it shows a device-native combo box/list picker control, and populates the items by directly querying the backing table of that lookup field. The items in the list show the user data from the TitleField for records in that table. Follow these steps to add the rich lookup experience to your action. This lookup experience includes a full-page multi-column lookup selector that has offline search.
+Lookups for fields in the mobile app don't correlate to the advanced lookup behaviors in the cloud version of the app. Regardless of whether you have a custom lookup in the cloud version of the app or an automatic lookup that uses a simple query, the mobile app doesn't run existing lookup code when it must determine which UI to show the user. (Remember that the user might be offline while using the app, and server-side code isn't run until the action is synchronized.) However, lookup and control overrides such as *modified* run when the value is set by the mobile back end as it synchronizes the data from the action. When the mobile app detects that a field on an action was selected from a lookup field on a form, it shows a device-native combo box or list picker control, and populates the items by directly querying the backing table of that lookup field. The items in the list show the user data from the TitleField for records in that table. Follow these steps to add the rich lookup experience to your action. This lookup experience includes a full-page multicolumn lookup selector that has offline search.
 
-1.  Identify or create a list view page for the entity behind the lookup. You can reuse existing list view pages that you've already created.
-2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
-3.  In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties. 
+1. Identify or create a list view page for the entity behind the lookup. You can reuse existing list view pages that you already created.
+1. After you finish designing the action, select the field to add rich lookup functionality to, and then select **Properties**.
+1. In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties.
 
-![Setting the control properties.](media/lookupdesigner.png)
+:::image type="content" source="media/lookupdesigner.png" alt-text="Screenshot of the control properties settings.":::
 
-4.  Save and publish your changes to the action.
+1. Save and publish your changes to the action.
 
 If you don't see the property for the existing list view page or can't access the **Control properties** dialog box when you're designing your action, you might be using an older build of the app. In this case, you can still add rich lookup functionality by using a business logic file.
 

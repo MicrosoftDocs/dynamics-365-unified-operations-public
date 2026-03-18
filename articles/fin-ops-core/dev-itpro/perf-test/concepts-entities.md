@@ -4,7 +4,7 @@ description: Learn about the test entity class that represents data and associat
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
-ms.date: 03/27/2019
+ms.date: 03/16/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer
@@ -17,18 +17,18 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-A test entity class represents data and behavior that are perceived as a single concept. Test entity classes are based on pages such as **Sales order**, **Transfer order**, and **Released product**. The test entity classes expose the properties that are most often used in test scenarios, and the behavior that is most important from the perspective of test data setup and scenario tests.
+A test entity class represents data and behavior that users perceive as a single concept. Test entity classes are based on pages such as **Sales order**, **Transfer order**, and **Released product**. The test entity classes expose the properties that are most often used in test scenarios, and the behavior that is most important from the perspective of test data setup and scenario tests.
 
 An entity in the Acceptance test library (ATL) **must** have the following methods:
 
-+ Property methods that are used to get and set entity properties.
-+ Fluent setter methods that enable entity properties to be set in a fluent manner.
++ Property methods that get and set entity properties.
++ Fluent setter methods that set entity properties in a fluent manner.
 + A method that saves the entity to the database.
 
 An entity in ATL *can* have the following methods:
 
-+ Action methods that are used to expose business operations that are relevant to the entity.
-+ Query methods that are used to enable navigation to components and related entities.
++ Action methods that expose business operations that are relevant to the entity.
++ Query methods that enable navigation to components and related entities.
 
 ## Naming convention
 
@@ -36,10 +36,10 @@ An entity in ATL *can* have the following methods:
 
 In this naming convention:
 
-+ `<ModuleName>` is based on the names of the modules in main menu. You should use a short version or an abbreviation to support brevity of test code.
++ `<ModuleName>` is based on the names of the modules in main menu. Use a short version or an abbreviation to support brevity of test code.
 + `<EntityName>` is based on the user interface (UI) names instead of the table names. For example, use `SalesOrder`, not `SalesTable`.
 
-If an entity has two UI names, it's OK to use the shorter name. For example, you can use `Item` instead of `ReleasedProduct`, because these names are used interchangeably.
+If an entity has two UI names, use the shorter name. For example, you can use `Item` instead of `ReleasedProduct`, because these names are used interchangeably.
 
 ### Examples
 
@@ -51,7 +51,7 @@ AtlEntityTransferOrderLine
 
 ## Property methods
 
-One of the main purposes of a test entity is to expose data. The properties of the entity can be set or retrieved by using `parm` (property) methods.
+One of the main purposes of a test entity is to expose data. Use `parm` (property) methods to set or retrieve the entity's properties.
 
 ### Primitive type properties
 
@@ -73,13 +73,13 @@ public SalesQty parmQuantity(SalesQty _qty = 0)
 
 ### Entity references
 
-If there is a customer entity that is named `AtlEntityCustomer`, for example, a reference to `customer` should be exposed as a property method on the `AtlEntitySalesOrder` entity.
+If there's a customer entity named `AtlEntityCustomer`, expose a reference to `customer` as a property method on the `AtlEntitySalesOrder` entity.
 
 ```xpp
 public AtlEntityCustomer parmCustomer(AtlEntityCustomer _custTable = null)
 ```
 
-The property method can be used as either a setter or a getter.
+You can use the property method as either a setter or a getter.
 
 ```xpp
 salesOrder.parmCustomer(customer); // setter
@@ -89,11 +89,11 @@ customer = salesOrder.parmCustomer(); // getter
 
 #### Entity reference methods naming conventions
 
-The `parm` prefix should be used to identify property methods. When you expose an entity reference property, use the UI name of the field instead of the Application Object Tree (AOT) name. If the UI name includes the `Id`, `Code`, or `Number` suffix, omit the suffix. For example, use `parmItem` instead of `parmItemNumber`.
+Use the `parm` prefix to identify property methods. When you expose an entity reference property, use the UI name of the field instead of the Application Object Tree (AOT) name. If the UI name includes the `Id`, `Code`, or `Number` suffix, omit the suffix. For example, use `parmItem` instead of `parmItemNumber`.
 
 ### Record references
 
-If the customer entity hasn't yet been created and won't be created in the near future, the reference property should expose the corresponding record buffer (`CustTable`).
+If you don't create the customer entity yet and don't plan to create it soon, the reference property should expose the corresponding record buffer (`CustTable`).
 
 ```xpp
 public CustTable parmCustomer(CustTable _custTable = null)
@@ -101,7 +101,7 @@ public CustTable parmCustomer(CustTable _custTable = null)
 
 #### Record reference naming conventions
 
-Use the same naming conventions that are used for entity references.
+Use the same naming conventions that you use for entity references.
 
 ### Id references
 
@@ -119,7 +119,7 @@ Use the UI name if it includes terms such as `Id`, `Number`, `Account`, `Code`, 
 
 #### Id reference methods contract
 
-The `Id` reference method always uses the provided `Id` to find the referenced entity, and it delegates the call to the entity or record reference method. If no entity or record is found based on the specified `Id` value, an error message is thrown.
+The `Id` reference method always uses the provided `Id` to find the referenced entity, and it delegates the call to the entity or record reference method. If no entity or record is found based on the specified `Id` value, it throws an error message.
 
 ## Fluent setter methods
 
@@ -141,21 +141,21 @@ salesLine.setItem(batchItem).setInventDims([warehouse]).setQty(10).save();
 
 `set<PropertyName>`
 
-In this naming convention, `<PropertyName>` should match what is used in the name of the corresponding property method.
+In this naming convention, `<PropertyName>` should match the name of the corresponding property method.
 
 ## Action methods
 
-Entities represent not only data but also relevant actions. Actions can be implemented either as a simple action method or as a command object initializer.
+Entities represent not only data but also relevant actions. You can implement actions as simple action methods or as command object initializers.
 
 ### Simple action methods
 
-Simple action methods represent a complete action. They should not be fluently chained. The exception is the `save` method, which should be fluent.
+Simple action methods represent a complete action. They shouldn't be fluently chained. The exception is the `save` method, which should be fluent.
 
 #### Naming convention
 
 `<ExecuteBusinessOperation>`
 
-In this naming convention, `<ExecuteBusinessOperation>` is a verb that represents the business operation. It should be the same term that is used on the menu item in the UI.
+In this naming convention, `<ExecuteBusinessOperation>` is a verb that represents the business operation. Use the same term that appears on the menu item in the UI.
 
 #### Examples
 
@@ -167,7 +167,7 @@ salesOrder.postInvoice();
 
 ### Command object initializers
 
-Command object initializers return a command object that lets you specify parameters of the command and run it.
+Command object initializers return a command object that you use to specify parameters for the command and run it.
 
 ```xpp
 transferLine.pick().setQty(10).setWMSLocation(bulkLocation).execute();
@@ -177,7 +177,7 @@ transferLine.pick().setQty(10).setWMSLocation(bulkLocation).execute();
 
 `<ExecuteBusinessOperation>`
 
-In this naming convention, `<ExecuteBusinessOperation>` is a verb that represents the business operation. It should be the same term that is used on the menu item in the UI.
+In this naming convention, `<ExecuteBusinessOperation>` is a verb that represents the business operation. Use the same term that appears on the menu item in the UI.
 
 #### Examples
 
@@ -189,13 +189,13 @@ purchaseOrder.register().execute();
 
 ### Action entities
 
-Some actions that are available for an entity can be considered entities themselves. Vendor invoices are one example. Before you post an invoice, you might want to set up parameters of the invoice, edit lines, and save the invoice for later. For these commands, you can introduce a separate entity class.
+Some actions that are available for an entity can be considered entities themselves. Vendor invoices are one example. Before you post an invoice, you might want to set up parameters for the invoice, edit lines, and save the invoice for later. For these commands, you can introduce a separate entity class.
 
 #### Naming convention
 
 `new<ActionName>`
 
-In this naming convention, `<ActionName>` is a noun that represents the business operation. The name should be the UI name of the business operation.
+In this naming convention, `<ActionName>` is a noun that represents the business operation. Use the UI name of the business operation.
 
 #### Example
 
@@ -220,24 +220,24 @@ AtlEntityInventTransferOrderReceipt
 
 Composition is a relationship where the composite entity has sole responsibility for the disposition of the component parts. The relationship between the composite and the component is a strong "has a" relationship, because the composite object takes ownership of the component. Therefore, the composite is responsible for creating and destroying the component parts.
 
-An object instance can be part of only one composite. If the composite object is destroyed, all the component parts must be destroyed. The component parts have no independent existence outside the composite object, and they can't be transferred to another object. Composition enforces encapsulation, because the component parts are usually members of the composite object.
+An object instance can be part of only one composite. If you destroy the composite object, you must also destroy all the component parts. The component parts have no independent existence outside the composite object, and they can't be transferred to another object. Composition enforces encapsulation, because the component parts are usually members of the composite object.
 
 An example of a composite object is a source document that is made up of source document lines.
 
 ### Example
 
-In the source document example, the document entity serves as the composition root and is responsible for creating any new instances of document lines. In this case, the source document entity will have an `addLine()` method that initializes and returns a new line for the document.
+In the source document example, the document entity serves as the composition root and creates new instances of document lines. The source document entity has an `addLine()` method that initializes and returns a new line for the document.
 
 
 ```xpp
 public AtlEntitySalesLine addLine()
 ```
 
-The `addLine()` method adds the line object (`salesLine` in this example) to a collection of lines and returns the parent entity (`SalesOrder` in this example) to preserve the fluency of application programming interfaces (APIs). To create a new line, create a `newLine()` method.
+The `addLine()` method adds the line object (`salesLine` in this example) to a collection of lines and returns the parent entity (`SalesOrder` in this example) to keep the fluency of application programming interfaces (APIs). To create a new line, use a `newLine()` method.
 
 ### Naming convention for adding components
 
-Methods for adding components should use the UI names of the buttons.
+Use the UI names of the buttons for methods that add components.
 
 #### Example
 
@@ -251,11 +251,11 @@ You can search for components by using query methods.
 
 #### Naming convention for component collections
 
-Methods for accessing component collections should use the UI names of the grid on the hosting page.
+Use the UI names of the grid on the hosting page for methods that access component collections.
 
 ## Query methods
 
-Query methods on an entity let you search for components and related entities.
+By using query methods on an entity, you can search for components and related entities.
 
 ### Example
 
@@ -263,11 +263,11 @@ Query methods on an entity let you search for components and related entities.
 transferOrderLine = transferOrder.lines().withItem(item).single();
 ```
 
-In this example, `lines()` is a query method that returns the `AtlQueryTransferOrderLines` query. This query is already filtered so that it returns only transfer order lines for the transfer order that the `lines()` method was called on.
+In this example, `lines()` is a query method that returns the `AtlQueryTransferOrderLines` query. This query already filters so it returns only transfer order lines for the transfer order that the `lines()` method called on.
 
 ### Naming convention
 
-Use the UI names whenever you can. Abbreviations are acceptable if the UI name is too long to be used in test automation.
+Use the UI names whenever you can. Use abbreviations if the UI name is too long to use in test automation.
 
 ### Example
 
@@ -280,7 +280,7 @@ public AtlQueryWHSLoadLines lines()
 
 ## Additional resources
 
-[Queries in the Acceptance test library](concepts-queries.md)
+[Queries in the Acceptance test library](concepts-queries.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
