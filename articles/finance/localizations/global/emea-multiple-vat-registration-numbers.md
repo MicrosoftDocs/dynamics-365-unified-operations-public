@@ -4,7 +4,7 @@ description: Learn about the functionality for multiple value-added tax (VAT) re
 author: liza-golub
 ms.author: wangchen
 ms.topic: how-to
-ms.date: 03/13/2026
+ms.date: 03/18/2026
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
