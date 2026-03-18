@@ -40,7 +40,7 @@ You can find detailed information about objects in Finance and Operations apps i
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2020, Microsoft plans to no longer support Chinese voucher types set up without Account groups selection. For more details about new feature design, see [What's new in 10.0.7](https://learn.microsoft.com/dynamics365-release-plan/2020/wave-2/dynamics365-finance/removed-deprecated-features). |
+| **Status**                         | Deprecated: By December 1, 2020, Microsoft plans to no longer support Chinese voucher types set up without Account groups selection.  |
 
 ## Finance and Operations 10.0.6 with Platform update 30
 
