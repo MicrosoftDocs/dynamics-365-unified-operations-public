@@ -3,51 +3,49 @@ title: Tax calculation data model
 description: Learn about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
 ms.author: kailiang
-ms.topic: overview
-ms.date: 02/09/2024
-ms.custom:
+ms.topic: how-to
+ms.date: 03/19/2026
 ms.reviewer: johnmichalak 
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-08-02
-ms.search.form:
-ms.dyn365.ops.version: 10.0.21
+ms.custom: 
+  - bap-template
 ---
 
 # Tax calculation data model
 
 This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
 
-The *tax data model* is made up of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in finance and operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
+The *tax data model* consists of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in finance and operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
 
 > [!NOTE] 
 > Some nodes that are defined in the data model, such as **Record ID** and **Table ID**, are for technical purposes. They aren't available columns in the tax calculation feature configuration.
 
 Follow these steps to view the tax calculation data model.
 
-1. Open the **Globalization Studio** workspace, and select **Electronic reporting** \> **Tax configurations**.
-2. Select **Tax Data Model** \> **Tax Calculation Data Model**.
-3. On the **Versions** FastTab, select a version.
-4. Select **Designer**.
+1. Open the **Globalization Studio** workspace, and select **Electronic reporting** > **Tax configurations**.
+1. Select **Tax Data Model** > **Tax Calculation Data Model**.
+1. On the **Versions** tab, select a version.
+1. Select **Designer**.
 
-    [![Designer button.](../media/tax-calculation-model-mapping-designer-1.png)](../media/tax-calculation-model-mapping-designer-1.png)
+    :::image type="content" source="../media/tax-calculation-model-mapping-designer-1.png" alt-text="Screenshot of the Designer button.":::
 
-5. Expand the **Tax Calculation** node.
-6. Expand the **Header** node to view the header data models.
-7. Expand the **Lines** node to view the line data models.
+1. Expand the **Tax Calculation** node.
+1. Expand the **Header** node to view the header data models.
+1. Expand the **Lines** node to view the line data models.
 
-    [![Data models.](../media/tax-calculation-model-mapping-designer-2.png)](../media/tax-calculation-model-mapping-designer-2.png)
+    :::image type="content" source="../media/tax-calculation-model-mapping-designer-2.png" alt-text="Screenshot of the data models in the designer.":::
 
 You can also view the tax calculation data model and the available columns in the applicability rules table.
 
 1. Open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
-2. On the **Tax calculation features** page, find a tax feature that has a status of **Draft**, and then select **Edit**.
-3. On the **General** tab, select the configuration version, based on the version of the tax calculation data model. For example, select **40.46.212**.
-4. On the **Tax group applicability** tab, select **Manage columns**.
+1. On the **Tax calculation features** page, find a tax feature that has a status of **Draft**, and then select **Edit**.
+1. On the **General** tab, select the configuration version, based on the version of the tax calculation data model. For example, select **40.46.212**.
+1. On the **Tax group applicability** tab, select **Manage columns**.
 
-    [![Manage columns.](../media/tax-calculation-model-mapping-3.png)](../media/tax-calculation-model-mapping-3.png)
+    :::image type="content" source="../media/tax-calculation-model-mapping-3.png" alt-text="Screenshot of the Manage columns option.":::
 
-The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
+The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the system collects the values of the fields that are defined in the applicability rules tables and sends them to the tax calculation service. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
 
 ## Version updates and restrictions
 
@@ -142,3 +140,4 @@ Twenty-six data models are included as fields on the lines of a transaction. As 
 | Variant number                | <ul><li>**Sales order:** Variant number</li><li>**Purchase order:** Variant number</li><li>**Sales quotation:** Variant number</li></ul> |
 | Warehouse                     | <ul><li>**Sales order:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li><li>**Purchase order:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li><li>**Transfer order - Ship:** From warehouse</li><li>**Transfer order - Receive:** To warehouse</li><li>**Purchase requisition:** Line &gt; Warehouse</li><li>**Request for quotation:** Line &gt; Warehouse</li><li>**Sales quotation:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li></ul> |
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
