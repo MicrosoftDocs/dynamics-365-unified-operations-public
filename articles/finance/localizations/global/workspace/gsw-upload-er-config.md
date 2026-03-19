@@ -57,15 +57,15 @@ To create a Dataverse solution, follow these steps:
   - **SolutionFolder** – Specify the solution folder.
   - **ConfigurationsIndexRowName** – Specify the name of the Dataverse table record that has the index file for configurations. Use only alphanumeric characters and spaces. If you change the name later, the corresponding row in the Dataverse table has a different globally unique identifier (GUID), and index files are duplicated. If you don't have any ER configurations, you can omit this parameter. Here's an example.
 
-        ``` command
-        Contoso Electronic Reporting Configurations Index
-        ```
+    ``` command
+    Contoso Electronic Reporting Configurations Index
+    ```
 
   - **FeaturesIndexRowName** – Specify the name of the Dataverse table record that has the index file for features. Use only alphanumeric characters and spaces. If you change the name later, the corresponding row in the Dataverse table has a different GUID, and index files are duplicated. If you don't have any Globalization features, you can omit this parameter. Here's an example.
 
-        ``` command
-        Contoso Globalization Features Index
-        ```
+    ``` command
+    Contoso Globalization Features Index
+    ```
 
     Here's an example of the full PowerShell 7 command line.
 
