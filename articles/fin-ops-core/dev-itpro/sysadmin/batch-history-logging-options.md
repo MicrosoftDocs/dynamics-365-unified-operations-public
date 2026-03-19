@@ -28,27 +28,27 @@ The **Batch history logging options** feature provides a configurable option to 
 
 ## Prerequisites
 
-The **Batch history logging options** feature must be enabled through a feature flight. Contact Microsoft Support to enable the flight for your environment.
+Enable the **Batch history logging options** feature through a feature flight. Contact Microsoft Support to enable the flight for your environment.
 
 ## Configure batch history logging options
 
-When the feature flight is enabled, a **Batch history logging option** setting becomes available on the **Batch job** page. The recommended option is set by default when the flight is enabled.
+When you enable the feature flight, the **Batch history logging option** setting becomes available on the **Batch job** page. The recommended option is set by default when you enable the feature flight.
 
 To configure batch history logging options, follow these steps:
 
-1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
-2. In the **Batch history** section, locate the **Batch history logging option** setting.
-3. Select the preferred logging option based on your requirements.
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
+1. In the **Batch history** section, locate the **Batch history logging option** setting.
+1. Select the preferred logging option based on your requirements.
 
-    - **Recommended** (default) - The **INFO** and **PARAMETERS** columns aren't persisted in the batch history table. This option provides the best database storage optimization and write performance.
-    - **Legacy** - The **INFO** and **PARAMETERS** columns are persisted in the batch history table. Select this option if you require the historical info log and parameter data for troubleshooting or auditing purposes.
+   - **Recommended** (default) - The **INFO** and **PARAMETERS** columns aren't persisted in the batch history table. This option provides the best database storage optimization and write performance.
+   - **Legacy** - The **INFO** and **PARAMETERS** columns are persisted in the batch history table. Select this option if you require the historical info log and parameter data for troubleshooting or auditing purposes.
 
-> [!NOTE]
-> When the recommended option is selected, the **INFO** and **PARAMETERS** values in the **BATCHHISTORY** table are stored as NULL. The current batch job's info log and parameters remain visible in the **Batch jobs** page. Only the historical records in the batch history table are affected.
+   > [!NOTE]
+   > When you select the recommended option, the **INFO** and **PARAMETERS** values in the **BATCHHISTORY** table are stored as NULL. The current batch job's info log and parameters remain visible in the **Batch jobs** page. Only the historical records in the batch history table are affected.
 
-## Behavior when the flight is disabled
+## Behavior when the feature flight is disabled
 
-When the feature flight isn't enabled, the **Batch history logging option** setting is hidden from the user interface. In this state, the system persists the **INFO** and **PARAMETERS** columns in the batch history table as it does by default.
+When you disable the feature flight, the **Batch history logging option** setting is hidden from the user interface. In this state, the system persists the **INFO** and **PARAMETERS** columns in the batch history table as it does by default.
 
 ## Best practices
 
