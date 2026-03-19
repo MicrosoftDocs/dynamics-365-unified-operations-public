@@ -14,6 +14,8 @@ ms.custom:
 
 # Tax calculation data model
 
+[!include [banner](../../includes/banner.md)]
+
 This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
 
 The *tax data model* consists of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in finance and operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
