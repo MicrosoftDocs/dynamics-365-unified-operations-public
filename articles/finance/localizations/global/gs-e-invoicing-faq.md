@@ -70,10 +70,6 @@ Integration with the Electronic Invoicing service requires at least a Tier 2 vir
 
 You can achieve testing through configuration. To test invoice submission, you can connect to Finance or Supply Chain Management from a user acceptance testing (UAT) environment and submit the test invoices. Electronic invoicing supports the configuration of test digital certificates. For e-invoices that require digital approval, it also supports the setup of a URL from test web services that the tax authorities publish.
 
-## Is there documentation about the out-of-box country/region-specific electronic invoicing features?
-
-Yes. For information about the availability of electronic invoicing features and the formats that they support, see [Availability of electronic invoicing features](e-invoicing-country-specific-availability.md).
-
 ## Does the Electronic Invoicing service enable a legal entity in Finance or Supply Chain Management that's configured for a specific country/region to consume electronic invoicing features from different countries/regions?
 
 Yes. You can use the electronic invoicing features to process business document submissions independently of the country/region of the legal entity. However, the following conditions must be met:
