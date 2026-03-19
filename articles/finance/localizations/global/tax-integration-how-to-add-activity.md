@@ -5,7 +5,6 @@ author: Qiuchen-Ren
 ms.author: qire
 ms.topic: how-to
 ms.date: 03/19/2026
-ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
