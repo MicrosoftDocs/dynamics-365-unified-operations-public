@@ -100,7 +100,7 @@ In this example, you create a configuration for the sample company, Litware, Inc
 3. Select **Mapping**.
 1. Expand the **Model**, **Data,** and **Summary** items. 
 
-        The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None**, or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
+    The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None**, or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
 
     :::image type="content" source="media/er-calculated-field-type-03.png" alt-text="Screenshot of Format designer page showing details of the Data model Model to learn parameterized calls.":::
 
@@ -148,7 +148,7 @@ You can improve the provided format by adding one calculated field to filter the
 
     You can only use primitive data types to specify the type of the parameter’s argument. Therefore, you can't use **Record list**, **Record**, or **Enum** types for this purpose.
 
-        You can specify up to eight parameters for a single calculated field.
+    You can specify up to eight parameters for a single calculated field.
 
     :::image type="content" source="media/er-calculated-field-type-05.png" alt-text="Screenshot of Parameter data source list.":::
 
