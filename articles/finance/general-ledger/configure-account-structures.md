@@ -137,7 +137,7 @@ Modification is suitable for scenarios such as:
 
 - **Broadening a range** — For example, changing from 1000-2000 to 1000-3000.
 - **Restricting a range** — For example, specifying a **Department** segment range of 012-014.
-- **Subdividing a main account** — For example, modifying a **BalanceSheet** structure with range 1000-3000 into **BalanceSheet_Small** with range 1000-2000, and then creating **BalanceSheet_Large** with range 2000-3000. For performance reasons, this is preferable to deleting **BalanceSheet** outright and creating two new structures.
+- **Subdividing a main account** — For example, modifying a **BalanceSheet** structure with range 1000-3000 into **BalanceSheet_Small** with range 1000-2000, and then creating **BalanceSheet_Large** with range 2000-3000.
 
 To modify an account structure:
 
@@ -149,9 +149,6 @@ To modify an account structure:
 
 ### Deleting an account structure
 
-An account structure can be deleted if there are no blocking unposted transactions. Before deleting, first resolve any blocking transactions using the steps described above. If you can't locate the blocking transactions, contact support.
-
-> [!NOTE]
-> Before deleting an account structure, consider whether modifying the existing structure would better suit your needs. Modifying avoids the need to reconfigure dependent processes and can be more performant than creating a new structure from scratch. For more information, see [Modifying an existing account structure](#modifying-an-existing-account-structure).
+If you don't plan on creating any additional account structures and a given account structure has no blocking unposted transactions, it may be deleted. Before deleting, first resolve any blocking transactions using the steps described above. If you can't locate the blocking transactions, contact support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
