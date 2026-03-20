@@ -188,8 +188,8 @@ Follow these steps to use caching and a data source of the **Calculated field** 
     1. In the **Data sources** pane, select **Box\\Vend**.
     1. Select **Cache**.
 
-    > [!NOTE]
-        > The **Box\\Vend** data source is cached in the scope of all vendor transactions of the **Trans** data source at runtime.
+> [!NOTE]
+> The **Box\\Vend** data source is cached in the scope of all vendor transactions of the **Trans** data source at runtime.
 
 8. Update the nested **Trans\\\#Vend** data source so that it uses the **Box\\Vend** data source:
 

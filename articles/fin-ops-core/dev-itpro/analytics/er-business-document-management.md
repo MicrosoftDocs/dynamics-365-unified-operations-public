@@ -42,7 +42,7 @@ For a complete list of all the reports planned for the October 2019 release, see
 
 For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-More reports will become available in future releases. You receive special notifications about additional reports separately. To learn how to review the list of currently available reports, see the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
+More reports will become available in future releases. You receive special notifications about additional reports separately. To learn how to review the list of currently available reports, see the section [List of ER configurations released in Finance to support configurable business documents](#list-of-er-configurations-released-in-finance-to-support-configurable-business-documents).
 
 To learn more about this feature, complete the example in this article.
 
@@ -157,7 +157,7 @@ Use the following procedure to set up the basic parameters for all legal entitie
 The selected document type is company-specific and is used when working with Business document management in the company for which the selected document type is configured. When working with Business document management in another company, use the same selected document type if it isn't configured for this company. When a document type is configured, it's used instead of the one selected in the **SharePoint document type** field.
 
 > [!NOTE]
-> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable by using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#EditInOfficeDesktopApp). You can keep this parameter blank if you plan to modify the template by only using the functionality in Microsoft 365. For more information, see [Edit a template in Microsoft 365](#EditInOffice365).
+> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable by using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#edit-a-template-in-the-office-desktop-application). You can keep this parameter blank if you plan to modify the template by only using the functionality in Microsoft 365. For more information, see [Edit a template in Microsoft 365](#edit-a-template-in-microsoft-365).
 
 ## Configure access permissions
 
@@ -311,7 +311,7 @@ You can modify the template by using Microsoft 365. For example, in Office onlin
 ### Edit a template in the Office desktop application
 
 > [!NOTE]
-> This function is only available when the **SharePoint document type** parameter is properly configured. For more information, see [Configure parameters](#SetupBdmParameters).
+> This function is only available when the **SharePoint document type** parameter is properly configured. For more information, see [Configure parameters](#configure-parameters).
 
 1. Select the **Open in Desktop App** option to modify the template by using the functionality of the Office desktop application (Excel in this example). The editable template is copied from the permanent storage to the temporary storage configured in the Business document management parameters as a SharePoint folder.
 1. Confirm that you want to open the template from the temporary file storage in the Office desktop Excel application.
@@ -373,7 +373,7 @@ The modified template generates the free text invoice report for the selected it
 
     :::image type="content" source="./media/BDM-Overview-AddRevision.png" alt-text="Screenshot of creating revisions to the template on the Business document management workspace page.":::
 
-        You created a new revision of your template that is stored in the permanent template's storage. Now you can continue editing the template of the second revision that is currently selected as active.
+    You've created a new revision of your template that is stored in the permanent template's storage. Now you can continue editing the template of the second revision that is currently selected as active.
 
 1. Select the first revision and then select **Set active**. You can select another revision as active if you want to return to that revision of the template.
 1. Select the second revision, and then select **Delete**.
