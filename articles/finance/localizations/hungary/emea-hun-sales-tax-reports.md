@@ -53,7 +53,7 @@ This report also includes the same information for each partner separately, and 
 1. Go to **Tax** > **Periodic tasks** > **VAT reporting**.
 1. In the upper part of the **VAT reporting** page, set the **Date** and **Settlement period** fields. The grid shows settlement periods that are available for VAT reporting.
 
-    :::image type="content" source="../media/HU-sales-tax-reports-1.png" alt-text="Screenshot of the VAT reporting page." :::
+    :::image type="content" source="../media/HU-sales-tax-reports-1.png" alt-text="Screenshot of the VAT reporting page.":::
 
 1. Select the line for the required settlement period, and then select **Create report**.
 1. In the **Sales tax declaration information** dialog box, set the following fields.
