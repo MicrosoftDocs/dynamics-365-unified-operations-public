@@ -114,7 +114,7 @@ After you update the repository in your environment with the recently loaded fil
 
 Select **General ledger** > **Inquire and reports** > **Ledger reports** > **Electronic ledger accounting statement** to generate the required XML files and download them to your environment. The following table describes the parameters that you must set.
 
-| | |
+| Parameter| Description |
 |---|---|
 | **SAT consolidation account group** | Select the consolidation account group that you previously configured to identify the SAT account group. |
 | **Period** | Select the period for the report. The selected date includes all general ledger transactions for the selected month. |
