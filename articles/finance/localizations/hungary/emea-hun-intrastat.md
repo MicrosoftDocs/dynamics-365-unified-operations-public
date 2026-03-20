@@ -114,7 +114,7 @@ For more information, see [Registration IDs](../europe/emea-registration-ids.md)
     1. In the **Telephone** field, enter the telephone number of the employee.
     1. In the **Email** field, enter the email address of the employee.
 
-1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For Hungary, select **Domestic** in the **Country/region type** field.
+1. On the **Country/region properties** tab, in the **Country/region** field, list all the countries/regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report. For Hungary, select **Domestic** in the **Country/region type** field.
 
 ## Set up compression of Intrastat
 
@@ -132,7 +132,7 @@ For more information, see [Registration IDs](../europe/emea-registration-ids.md)
 
 ## Intrastat transfer
 
-On the **Intrastat** page, on the action pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. The system transfers only documents that have an EU country as the country or region of destination or consignment.
+On the **Intrastat** page, on the action pane, select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. The system transfers only documents that have an EU country/region as the country/region of destination or consignment.
 
 You can also manually enter transactions by selecting **New** on the action pane.
 
