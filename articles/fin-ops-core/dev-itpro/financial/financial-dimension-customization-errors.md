@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes best practices for writing customizations that interact with the financial dimension framework. These guidelines are based on the most common mistakes observed in partner and ISV code. Following them helps avoid runtime errors, missing dimensions, and data integrity issues.
+This article describes best practices for writing customizations that interact with the financial dimension framework. These guidelines are based on the most common mistakes observed in partner and Independent Software Vendor (ISV) code. Following them helps avoid runtime errors, missing dimensions, and data integrity issues.
 
 ## Calling dimension APIs
 
@@ -56,7 +56,7 @@ If you need to create a new backing table for use as a financial dimension, foll
 
 The **Primary Company Control** property on a data entity tells the entity framework that each record belongs to a single legal entity. When set, the framework adds a `DATAAREAID` column to the entity's backing view and automatically injects a company filter at runtime. This is correct for company-specific entities like Customers or Vendors.
 
-Financial dimension values are shared reference data that exist once and are reused across all legal entities. If a customization sets Primary Company Control on a shared entity like **Financial Dimension Values**, the entity framework silently converts it from cross-company to company-specific. Exports through DMF, OData, and Excel add-ins then return only the current company's values.
+Financial dimension values are shared reference data that exist once and are reused across all legal entities. If a customization sets Primary Company Control on a shared entity like **Financial Dimension Values**, the entity framework silently converts it from cross-company to company-specific. Exports through the Data Management Framework (DMF), Open Data Protocol (OData), and Excel add-ins then return only the current company's values.
 
 There is no runtime workaround — the entity framework re-applies the filter from metadata even if you manually alter the view. Remove the Primary Company Control setting from the entity to restore cross-company behavior.
 
