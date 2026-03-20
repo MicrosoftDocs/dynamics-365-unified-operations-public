@@ -22,7 +22,7 @@ According to the requirements for accounting foreign currencies under "Act C of 
 - The functional currency value calculated using the foreign currency rate at the time when you obtain the holdings.
 - The functional currency value calculated using the average rate or the rate determined by the first in, first out (FIFO) method.
 
-In legal entities that have Hungarian country context, you can calculate the average exchange rate for outgoing petty cash and bank transactions. When journal lines have outgoing petty cash or bank transactions, the calculation algorithm for the average exchange rate uses the summarized amounts of the accounting currency and the foreign currency before the specified transaction date.
+In legal entities that have Hungarian country/region context, you can calculate the average exchange rate for outgoing petty cash and bank transactions. When journal lines have outgoing petty cash or bank transactions, the calculation algorithm for the average exchange rate uses the summarized amounts of the accounting currency and the foreign currency before the specified transaction date.
 
 This article explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions. It also explains how to use the function for calculating the daily exchange rate for incoming and outgoing bank and petty cash transactions.
 
