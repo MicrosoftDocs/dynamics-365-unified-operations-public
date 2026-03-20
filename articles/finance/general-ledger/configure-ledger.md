@@ -64,42 +64,6 @@ To remove an account structure, on the **Ledger** page, on the **Account structu
 
 For more information about how to set up your account structures, see [Configure account structures](configure-account-structures.md).
 
-## Changing account structures
-
-When you need to modify or remove an account structure that is already in use, unposted transactions can block the change. An unposted transaction is considered blocking if it references the account structure and the proposed change would make that transaction invalid. The system prevents the modification or deletion until these transactions are resolved.
-
-To find and resolve blocking transactions:
-
-1. Go to **General ledger** > **Journal entries** > **General journals**.
-2. Filter by **Show** > **Not posted**.
-3. Select a journal and select **Lines** in the action pane to view its transactions.
-4. Transactions that reference the account structure can be removed with the **Delete** button or updated to reference a different ledger account or offset account.
-
-### Modifying an existing account structure
-
-In many cases, modifying an existing account structure is preferable to deleting it and creating a new one. Modification avoids the overhead of reassigning the structure across legal entities and reconfiguring dependent processes.
-
-Modification is suitable for scenarios such as:
-
-- **Broadening a range** — For example, changing from 1000-2000 to 1000-3000.
-- **Restricting a range** — For example, specifying a **Department** segment range of 012-014.
-- **Subdividing a main account** — For example, modifying a **BalanceSheet** structure with range 1000-3000 into **BalanceSheet_Small** with range 1000-2000, and then creating **BalanceSheet_Large** with range 2000-3000. For performance reasons, this is preferable to deleting **BalanceSheet** outright and creating two new structures.
-
-To modify an account structure:
-
-1. First, resolve any blocking unposted transactions using the steps above.
-2. Go to **General ledger** > **Structures** > **Configure account structures** and select the desired structure.
-3. Select **Edit** in the action pane, and replace or update the criteria as needed for your business scenario.
-4. Select **Validate** to validate your changes.
-5. Select **Activate** to save your changes and wait for successful activation.
-
-### Deleting an account structure
-
-An account structure can be deleted if there are no blocking unposted transactions. Before deleting, first resolve any blocking transactions using the steps described above. If you can't locate the blocking transactions, contact support.
-
-> [!NOTE]
-> Before deleting an account structure, consider whether modifying the existing structure would better suit your needs. Modifying avoids the need to reconfigure dependent processes and can be more performant than creating a new structure from scratch. For more information, see [Modifying an existing account structure](#modifying-an-existing-account-structure).
-
 ## Configuring calendars for the ledger
 
 Another component of the ledger is the fiscal calendar. You must select a fiscal calendar for each legal entity. You can use the same fiscal calendar in more than one legal entity. When you select a fiscal calendar for the ledger, the system makes a copy. This copy is referred to as the ledger calendar. By using the ledger calendar, you can select the status of the periods and the modules in each period.
