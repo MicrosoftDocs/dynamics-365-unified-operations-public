@@ -54,11 +54,11 @@ When two or more security policies apply, the intersection (not the union) of th
 XDS isn't supported for financial dimensions and using XDS with financial dimension data results in corruption of the data.
 
 > [!NOTE]
-> Although XDS shouldn't be applied directly to financial dimension data, XDS policies on backing entities (such as Customers, Vendors, or Operating units) can affect the visibility of entity-backed dimension values. If a user's role is restricted by an XDS policy on the backing entity, the corresponding dimension values may appear blank or missing.
+> XDS should not be applied directly to financial dimension data. XDS policies on backing entities (such as Customers, Vendors, or Operating units) can affect the visibility of entity-backed dimension values. If a user's role is restricted by an XDS policy on the backing entity, the corresponding dimension values may appear blank or missing.
 
 ## Bypassing XDS policy
 
-A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy. If a user is assigned with the role  *XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access are purely role-based.
+A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy. If a user is assigned with the role  *XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access are purely role-based. Temporarily configuring **XDSDataAccessPolicyBypassRole** can be useful for determining if a user's inability to see or modify data is due to XDS policies. 
 
 For example, [Create a simple security policy](create-simple-security-policy.md).
 
