@@ -80,6 +80,9 @@ policies before access to the record is allowed.
 
 XDS isn't supported for financial dimensions and using XDS with financial dimension data results in corruption of the data.
 
+> [!NOTE]
+> Although XDS shouldn't be applied directly to financial dimension data, XDS policies on backing entities (such as Customers, Vendors, or Operating units) can affect the visibility of entity-backed dimension values. If a user's role is restricted by an XDS policy on the backing entity, the corresponding dimension values may appear blank or missing.
+
 ## Bypassing XDS policy
 
 A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy.

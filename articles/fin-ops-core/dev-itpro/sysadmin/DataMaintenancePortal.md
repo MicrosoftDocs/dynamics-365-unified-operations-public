@@ -38,3 +38,16 @@ To access the Data Maintenance Portal, administrators can go to **System adminis
 > [!NOTE]
 > The recurrence of data maintenance processes are handled by the process automation framework as background processes. There are two main types of background processes: one for scanning for opportunities and one for running tasks. For more information, see [Process automation framework development](../process-automation/process-automation-framework.md).
 
+## Pausing data maintenance during schema changes
+
+Data maintenance jobs can interfere with operations that modify the database schema, such as financial dimension activation or database upgrades. If data maintenance jobs run during these operations, they can block dimension tables and cause timeouts or failures.
+
+To prevent interference:
+
+1. Go to **System administration** > **Setup** > **Process automations** and select the **Background processes** tab.
+2. Select **Data maintenance job to find opportunities** and select **Edit**. Set a sleep period to prevent the job from running during the operation.
+3. Repeat for **Data maintenance job to run fixes**.
+4. Go to **System administration** > **Inquiries** > **Batch jobs** and cancel any currently running data maintenance jobs.
+5. Perform the schema change operation (for example, activate financial dimensions).
+6. After the operation completes, return to **Process automations** and remove the sleep period so data maintenance resumes normally.
+

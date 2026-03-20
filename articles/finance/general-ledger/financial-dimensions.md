@@ -29,16 +29,7 @@ This article explains the various types of financial dimensions and how to set t
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions.
 
-### Financial dimension naming requirements
-
-When you create a financial dimension, the dimension name must start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. The dimension name can't use reserved system field names such as RecId. If you don't meet these requirements, you receive **The financial dimension name ... contains invalid characters** error message.
-
-For example, some valid dimension names include Department, CostCenter, _CustomDim, and Project_1.  
-Invalid dimension names include:
-
-- 123Dept - starts with a number
-- Cost-Center - contains a hyphen
-- RecId - reserved system field name
+Financial dimension names must follow specific rules. For the full list of naming requirements, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).
 
 ## Custom dimensions
 
@@ -170,7 +161,10 @@ In most cases, renaming is preferable to deleting. Rename a retired dimension or
 
 A dimension value can be deleted only if it has never been used. Values that have been entered in a ledger account, default dimension, or transaction are read-only.
 
-If you can no longer use a value, either **rename it** to indicate it's inactive or **suspend it** on the **Financial dimension values** page. Suspended values are hidden from lookups and can't be entered on new transactions, but can be renamed and reused later.
+If you can no longer use a value, consider these alternatives to deletion:
+
+- **Rename** the dimension value to indicate it shouldn't be used. For example, add a **\_\_\_DONOTUSE\_** prefix. Later, when a new dimension value is needed, you can rename and reuse the old value rather than creating a new one. This practice of reusing existing dimension values is a best practice and can improve application performance.
+- **Suspend** the dimension value. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**. Select the dimension, select **Dimension values**, select the value to suspend, select **Edit**, and mark it as suspended. Suspended values are hidden from lookups and can't be entered on new transactions, but can be renamed and reused later.
 
 ### Financial dimensions as legal entities
 

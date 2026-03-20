@@ -20,11 +20,23 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure shows how to add an entity backed financial dimension and a custom financial dimension. The guide uses the USMF demo company.
 
+## Naming requirements
+
+Financial dimension names must follow these rules:
+
+- Must start with a letter or an underscore.
+- Can contain only letters, numbers, or underscores after the first character.
+- Can't contain spaces or special characters.
+- Can't use reserved system field names such as RecId.
+- Shouldn't include the chart of accounts delimiter.
+
+For entity-backed dimensions, the name can differ from the system-defined entity. If a name doesn't meet these requirements, you receive a **The financial dimension name [DIMENSION NAME] contains invalid characters** error.
+
 ## Create an entity backed financial dimension
 1. Go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**.
 2. Click **New**.
-3. In the **Use values from** field, select a system-defined entity to base the financial dimension on. 
-4. In the **Dimension name** field, type a value to describe the financial dimension. The name can be different than the system-defined entity but can't contain spaces or special characters.
+3. In the **Use values from** field, select a system-defined entity to base the financial dimension on.
+4. In the **Dimension name** field, type a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
 5. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension can't be used until it's activated.  
 6. Click **Close** on the activation message.
 7. Click **Activate**. Dimension activation can be scheduled to run by batch at a specific date and time.  
@@ -33,8 +45,7 @@ This procedure shows how to add an entity backed financial dimension and a custo
 ## Create a custom financial dimension
 1. Click **New**.
 2. In the **Use values from** field, select **Custom dimension**.
-3. In the **Dimension name** field, type a value to describe the financial dimension.
-    - The name can't contain spaces or special characters.  
+3. In the **Dimension name** field, type a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
     - You can specify an account mask to limit the amount and type of information that you can enter for dimension values.   
     - You can enter characters that remain the same for each dimension value, such as letters or a hyphen. You can also enter number signs (#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created. Use a number sign (#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. Example: To limit the dimension value to the letters CC and three numbers, you enter CC-### as the format mask.  
 4. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.     
