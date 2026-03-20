@@ -103,7 +103,7 @@ To store electronic report files in a SharePoint location, you must configure ac
 1. On **Electronic reporting source**, select **File states for the sources** to review the content of the configured file sources for the current ER format.
 1. In the **Files** section, review the list of files. This list presents the following information:
 
-        - Source files that are applicable, based on the file name mask (if it's defined), and that are ready for data import. For these files, the **Sources log for the import format** section is blank.
+    - Source files that are applicable, based on the file name mask (if it's defined), and that are ready for data import. For these files, the **Sources log for the import format** section is blank.
     - Previously imported files. For each of these files, in the **Sources log for the import format** section, you can review the history of import of this file.
 
 You can also open **File states for the sources** by selecting **Organization administration** > **Electronic reporting** > **File states for the sources**. In this case, the page provides information about file sources for all ER formats with configured file sources in the company that you're currently signed in to.
@@ -154,7 +154,7 @@ You can also open **File states for the sources** by selecting **Organization ad
 1. Select **Accounts payable** > **Periodic tasks** > **Tax 1099** > **Vendor settlement for 1099s**.
 1. In the **From date** and **To date** fields, enter appropriate values. Then select **Manual 1099 transactions**.
 
-        The vendor transactions imported from the Excel files on SharePoint for voucher **V-00001**, are presented on the page.
+    The vendor transactions imported from the Excel files on SharePoint for voucher **V-00001**, are presented on the page.
 
     :::image type="content" source="./media/GERImportFromSharePoint-14-ImportedTransactions.PNG" alt-text="Screenshot of 1099 vendor transactions page.":::
 
