@@ -41,7 +41,7 @@ To access the Data Maintenance Portal, administrators go to **System administrat
 
 ## Pausing data maintenance during schema changes
 
-Data maintenance jobs can interfere with operations that modify the database schema, such as financial dimension activation or database upgrades. If data maintenance jobs run during these operations, they can block dimension tables and cause timeouts or failures.
+Data maintenance jobs can interfere with data schema changes, such as changes to financial dimension names, account structures, or database upgrades. If data maintenance jobs run during these operations, they can block dimension tables and cause timeouts or failures.
 
 To prevent interference:
 
