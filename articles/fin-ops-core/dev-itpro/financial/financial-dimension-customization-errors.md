@@ -66,6 +66,14 @@ Financial dimension values are shared reference data that exist once and are reu
 
 There is no runtime workaround — the entity framework re-applies the filter from metadata even if you manually alter the view. Remove the Primary Company Control setting from the entity to restore cross-company behavior.
 
+## Don't hardcode dimension names in entity extensions                                                                                 
+
+When extending a data entity to include a financial dimension, avoid hardcoding the dimension name (for example, `"Department"` or `"CostCenter"`) in your X++ code. Instead, look up the dimension by name dynamically using `DimensionAttribute::findByName()`. This ensures your customization continues to work if the dimension is renamed.
+
+> [!NOTE]
+> Using a hardcoded dimension name in an entity extension is a legacy pattern. The current approach looks up the dimension by name
+dynamically, so it remains valid even after renames.
+
 ## See also
 
 - [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities)
