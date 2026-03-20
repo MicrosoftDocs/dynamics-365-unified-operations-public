@@ -84,7 +84,7 @@ For more information, see [Download Electronic reporting configurations from Lif
     - In the **Country/region** column, select **HUN**.
     - In the **Country/region type** column, select **Domestic**.
 
-1. List all the countries/regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
+1. List all the countries/regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU**.
 1. On the **Company information** FastTab, set the following fields:
 
     - In the **Legal entity** field, select your company.
