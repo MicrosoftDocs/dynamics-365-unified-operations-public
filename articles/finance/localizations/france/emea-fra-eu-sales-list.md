@@ -1,34 +1,33 @@
 ---
-title: EU Sales list for France
+title: EU sales list for France
 description: Learn about the European Union (EU) sales list report for services (Déclaration européenne de services DES), including an overview on setup.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
- 
 ---
 
-# EU Sales list for France
+# EU sales list for France
 
 [!include [banner](../../includes/banner.md)]
 
 This article provides information about the European Union (EU) sales list report for services (Déclaration européenne de services [DES]). The French EU sales list report contains information about the sale of services for reporting in XML format.
 
-The following fields are included on the French EU sales list report:
+The French EU sales list report includes the following fields:
 
 - **EU sales list header:**
 
-    - Company VAT ID
-    - Reporting month
-    - Reporting year
+  - Company VAT ID
+  - Reporting month
+  - Reporting year
 
 - **EU sales list lines:**
 
-    - Customer VAT ID
-    - Total amount of services
+  - Customer VAT ID
+  - Total amount of services
 
 ## Setup
 
@@ -36,19 +35,19 @@ For general setup information, see [EU Sales list reporting](../europe/emea-eu-s
 
 ### Set up company information
 
-Create a registration type, and assign it to **VAT ID** registration category for France and all the countries or regions that your company does business with. For more information, see [Registration IDs](../europe/emea-registration-ids.md).
+Create a registration type, and assign it to the **VAT ID** registration category for France and all the countries or regions that your company does business with. For more information, see [Registration IDs](../europe/emea-registration-ids.md).
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
-2. In the grid, select your company.
-3. On the Action Pane, select **Registration IDs**.
-4. On the **Registration ID** FastTab, select **Add**.
-5. On the **Overview** tab, in the **Registration type** field, select the registration type that you created.
-6. Enter your company's value-added tax (VAT) ID.
-7. Optional: On the **General** tab, in the **General** section, change the period when the VAT ID is used.
-8. Close this page.
+1. In the grid, select your company.
+1. On the Action Pane, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add**.
+1. On the **Overview** tab, in the **Registration type** field, select the registration type that you created.
+1. Enter your company's value-added tax (VAT) ID.
+1. (Optional) On the **General** tab, in the **General** section, change the period when the VAT ID is used.
+1. Close this page.
 
-> [!NOTE] 
-> If the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab is set (that is, it isn't blank), that value will be used, instead of the VAT ID that you created, in the .xml and .xlsx files for the EU sales list report.
+> [!NOTE]
+> If you set the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab (that is, it isn't blank), the system uses that value instead of the VAT ID that you created in the .xml and .xlsx files for the EU sales list report.
 
 ### Import Electronic reporting configurations
 
@@ -64,21 +63,21 @@ For more information, see [Download Electronic reporting configurations from Lif
 ### Set up foreign trade parameters
 
 1. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
-3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (FR)**.
-4. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
-5. On the **Country/region properties** tab, select **New**, and set the following fields:
+1. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
+1. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (FR)**.
+1. In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
+1. On the **Country/region properties** tab, select **New**, and set the following fields:
 
     - In the **Country/region** field, select **FRA**.
     - In the **Country/region type** field, select **Domestic**.
 
-6. List all the countries or regions that your company does business with. For each country/region that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries/regions on the **EU sales list** page.
+1. List all the countries or regions that your company does business with. For each country or region that is part of the EU, in the **Country/region type** field, select **EU** to show trade with those countries or regions on the **EU sales list** page.
 
 ### Set up sales tax groups
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**.
-2. Create a sales tax group to use when lines are created for the report.
-3. In the **Reporting type** field, select **Service**.
+1. Create a sales tax group to use when you create lines for the report.
+1. In the **Reporting type** field, select **Service**.
 
 ## Work with the EU sales list
 
@@ -88,7 +87,7 @@ For general information about which types of transactions are included in the EU
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 2. Transfer service transactions in the usual way.
-3. On the Action Pane, select **Reporting**.
+3. On the action pane, select **Reporting**.
 4. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
 
     | Field            | Description                                                                         |
@@ -109,17 +108,17 @@ For information about how to create a general setup, create postings, and transf
 ### Create an EU sales list report
 
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
-2. On the Action Pane, select **Reporting**.
-3. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
+1. On the Action Pane, select **Reporting**.
+1. In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
 
     - In the **Reporting period** field, select **Monthly**.
     - In the **From date** field, select **8/1/2021** (August 1, 2021).
     - Set the **Generate file** option to **Yes**.
     - In the **File name** field, enter **FR-001F**.
-    -   Set the **Generate report** option to **Yes**.
-    -   In the **Report file name** field, enter **FR -001R**.
+    - Set the **Generate report** option to **Yes**.
+    - In the **Report file name** field, enter **FR -001R**.
 
-4. Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
+1. Select **OK**, and review the report in XML format that is generated. The following tables show the values on the example report.
 
    **EU sales list header**
 
@@ -138,9 +137,8 @@ For information about how to create a general setup, create postings, and transf
    | Sum of all invoices by customer | 120.00       | 240.00         |
    | Customer VAT ID                 | ES1234567    | SE100200300400 |
 
-5.  Review the report in Excel format that is generated.
+1. Review the report in Excel format that is generated.
 
-    ![Table Description automatically generated with medium confidence](../media/EUSL-fra.png)
-    
+    :::image type="content" source="../media/EUSL-fra.png" alt-text="Screenshot of the EU sales list report for France in Excel format.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

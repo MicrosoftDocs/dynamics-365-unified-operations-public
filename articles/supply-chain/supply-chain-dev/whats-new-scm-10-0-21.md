@@ -139,7 +139,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.21 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.21, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166&dbType=3&qc=4b9449bf0d947113983bd0697140bf4d8727bfafd5566aa682cb38db343374de).
+For information about the bug fixes included in each of the updates that are part of 10.0.21, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166&dbType=3&qc=4b9449bf0d947113983bd0697140bf4d8727bfafd5566aa682cb38db343374de).
 
 ### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 

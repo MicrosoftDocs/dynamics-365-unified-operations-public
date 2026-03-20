@@ -4,7 +4,7 @@ description: Learn about how to customize the user interface by using the proces
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Developer
@@ -33,7 +33,7 @@ An instance of **ProcessScheduleOccurrenceCardBuilderContract** is passed into e
 
 The **ProcessScheduleOccurrenceCard** class lets you customize the appearance of an occurrence card that is shown in the calendar view. The first two lines are controlled by the process automation framework and can't be modified. In the following illustration, the subheader is the **Completed at** phrase, and the status message is the word **Completed** that has a blue background.
 
-![Default occurrence card that shows the status and time.](media/uptake-schedule.png)
+:::image type="content" source="media/uptake-schedule.png" alt-text="Screenshot of the default occurrence card that shows the status and time.":::
 
 | Method | Description |
 |---|---|

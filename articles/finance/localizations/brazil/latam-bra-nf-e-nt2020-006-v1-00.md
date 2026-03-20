@@ -6,28 +6,27 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/27/2024
+ms.date: 03/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2021-02-05
-ms.dyn365.ops.version: 8
 ---
 
 # NT2020.006 – Intermediary sales digital platform for NF-e
 
 [!include [banner](../../includes/banner.md)]
 
-A sale can occur even when the customer isn't physically present. Instead, a digital platform or marketplace can serve as an intermediary for the transaction. In these scenarios, the XML of the electronic fiscal document model 55 (NF-e) that is issued from the sale must contain a new tag to indicate that an intermediary participated in the operation.
+A sale can occur even when the customer isn't physically present. Instead, a digital platform or marketplace serves as an intermediary for the transaction. In these scenarios, the XML of the electronic fiscal document model 55 (NF-e) that you issue from the sale must contain a new tag to indicate that an intermediary participated in the operation.
 
 This feature supports scenarios when a digital platform or marketplace is owned or licensed by the fiscal document issuer.
 
 ## Enable the technical note in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 1. Sign in to your instance of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
-2. Go to **Organization administration** \> **Organizations** \> **Fiscal establishments** \> **Fiscal establishments**.
-3. Select the fiscal establishment, and then select **Edit**.
-4. On the **NF-e and NFC-e federal** FastTab, in the **NF-e technical notes** field group, select **Enable NF-e technical note**.
-5. In the **NF-e technical notes** field, select **2020.006 v1.10 technical note** for version 1.10 of the technical note.
+1. Go to **Organization administration** > **Organizations** > **Fiscal establishments** > **Fiscal establishments**.
+1. Select the fiscal establishment, and then select **Edit**.
+1. On the **NF-e and NFC-e federal** FastTab, in the **NF-e technical notes** field group, select **Enable NF-e technical note**.
+1. In the **NF-e technical notes** field, select **2020.006 v1.10 technical note** for version 1.10 of the technical note.
 
 ## Enable the technical note in Dynamics AX 2012 R3
 
@@ -38,8 +37,8 @@ This feature supports scenarios when a digital platform or marketplace is owned 
 
 Technical note NT2020.006 introduced new NF-e rejection codes. Complete the following steps to add the codes.
 
-1. Go to **Organization administration** \> **Organizations** \> **Electronic documents** \> **NF-e federal parameters**.
-2. On the **Rejection codes** tab, select **New** to enter the new rejection codes. For the list of new rejection codes, consult the documentation of the NT2020.006 technical note available in the [NF-e Portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx).
+1. Go to **Organization administration** > **Organizations** > **Electronic documents** > **NF-e federal parameters**.
+1. On the **Rejection codes** tab, select **New** to enter the new rejection codes. For the list of new rejection codes, see the documentation of the NT2020.006 technical note available in the [NF-e Portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx).
 
 ## Scope from version 1.00 of the Technical Note
 
@@ -65,8 +64,9 @@ If the presence type is different than those listed, the **&lt;indintermed&gt;**
 - YB01-20: Update in the rules when the node **&lt;infIntermed&gt;** must not exist
 - YA02a, YA02a-10, YA02a-20: New tag **&lt;xPag&gt;** added when **&lt;tPag&gt;** = 99
 
-
 ## Out of scope for the feature
 
 - This feature doesn't support NF-e that are issued from free text invoices that are generated from sales where the customer isn't physically present and a sales digital platform serves as an intermediary.
 - This feature doesn't support NF-e that are issued from returns, transfer orders, or complementary and tax credit scenarios.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Enable cross-company inventory lookup for POS (preview)
+title: Enable cross-company inventory lookup for POS
 description: Learn how to enable and configure the cross-company inventory lookup feature in Microsoft Dynamics 365 Commerce point of sale (POS) to view inventory availability across different legal entities.
 author: yufeih
 ms.date: 02/25/2026
@@ -12,10 +12,9 @@ ms.custom:
   - bap-template
 ---
 
-# Enable cross-company inventory lookup for POS (preview)
+# Enable cross-company inventory lookup for POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article explains how to enable and configure cross-company inventory lookup feature in Microsoft Dynamics 365 Commerce point of sale (POS). This feature allows retail associates to view real-time inventory availability across multiple legal entities and warehouse locations, enabling better customer service and informed purchase decisions.
 

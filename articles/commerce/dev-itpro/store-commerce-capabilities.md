@@ -109,7 +109,7 @@ Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete
 | Credit and debit | The Store Commerce app supports major credit and debit card payments through Adyen Payment Gateway and order fulfillment through PayPal. The Payments SDK allows for external gateway connections that are supported by independent software vendor (ISV) integrations. | <p>[Adyen](adyen-connector.md?tabs=10-0-23)</p><p>[PayPal](paypal.md)</p><p>[Payments](../payment-methods.md)</p> | <p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=3744d4c9-480c-4ab4-aab6-fc0390f0b7b3)</p><p>[Tech talk](https://community.dynamics.com/blogs/post/?postid=6a043aed-b800-4dba-a455-c36c87177e1d)</p> |
 | Digital wallet support | The Store Commerce app supports payments through digital wallet payment methods that don't use Bank Identification Number (BIN) ranges as traditional credit and debit cards do. Payment methods can be mapped to digital wallet payments such as Adyen. | [Wallet](wallets.md) | |
 | Gift card support | Bank Identification Number Dynamics 365 gift card, Stored Value Solutions (SVS), and Givex gift cards. Gift cards can be purchased and redeemed in an order. | [Gift cards](gift-card.md) | [Tech talk](https://community.dynamics.com/blogs/post/?postid=29edd444-ed7d-4a60-97dd-2ffcb649721c) |
-| Fraud protection | Dynamics 365 Fraud Protection helps you prevent fraudulent activity and identify places where fraud might be unnoticed. | [Fraud protection](dfp.md) | [Video](https://www.youtube.com/watch?v=j_1nEiq3LfM) |
+
 
 ## Taxes and charges
 

@@ -4,7 +4,7 @@ description: Learn about how to download Electronic reporting (ER) configuration
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 08/27/2020
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ---
 
-# Download Electronic reporting configurations from Lifecycle Services
+# Download electronic reporting configurations from Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,9 +66,9 @@ This article explains how to download the newest version of [Electronic reportin
 
 ## Additional resources
 
-[Electronic reporting (ER) overview](general-electronic-reporting.md)
+- [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
-[Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md)
+- [Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
