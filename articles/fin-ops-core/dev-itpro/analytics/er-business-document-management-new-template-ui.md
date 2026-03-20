@@ -20,7 +20,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Business document management lets business users edit business document templates by using a Microsoft Office 365 service or the appropriate Microsoft Office desktop application. Edits might include design changes or new deployments, or users might add placeholders to include more data without having to change the source code. For more information about how to work with Business document management, see [Business document management overview](er-business-document-management.md).
+With Business document management, business users can edit business document templates by using a Microsoft Office 365 service or the appropriate Microsoft Office desktop application. Edits might include design changes or new deployments, or users might add placeholders to include more data without changing the source code. For more information about how to work with Business document management, see [Business document management overview](er-business-document-management.md).
 
 The new user interface (UI) is clearer and easier to use. The **Business document** area shows only the templates that the current [active](tasks/er-configuration-provider-mark-it-active-2016-11.md) [provider](general-electronic-reporting.md#Provider) owns and that are located in the current instance of Dynamics 365 Finance. In the previous UI, the **Template** tab listed all the templates that were available for any provider. It also showed all the templates that any user with the same role created and edited.
 
@@ -49,7 +49,7 @@ Follow these steps to turn on this feature for all legal entities.
 
 ## Add or activate a provider
 
-Each template of a business document is stored in an ER format configuration that is marked as owned by a specific configuration provider. When you create a new template, you also create a new ER format configuration to hold it. Therefore, you must identify a provider for that configuration. The active provider of the ER framework is used for this purpose. If there's no provider in ER, you can create one. If there's no *active* provider, you can activate one of the existing providers. When you start adding a new template, a dialog for adding or activating a provider opens if necessary.
+Each template of a business document is stored in an ER format configuration that a specific configuration provider owns. When you create a new template, you also create a new ER format configuration to hold it. Therefore, you must identify a provider for that configuration. Use the active provider of the ER framework for this purpose. If there's no provider in ER, you can create one. If there's no *active* provider, you can activate one of the existing providers. When you start adding a new template, a dialog for adding or activating a provider opens if necessary.
 
 ### Add a new provider
 
@@ -85,7 +85,7 @@ This example shows how to use the **New document** button in the **Business docu
 
 :::image type="content" source="./media/BDM_overview_new_template1.png" alt-text="Screenshot of Business document management workspace.":::
 
-1. On the **Create a new template** page, on the **Select** tab, select the document to use as a template, then select **Create document**.
+1. On the **Create a new template** page, on the **Select** tab, select the document to use as a template, and then select **Create document**.
 
 :::image type="content" source="./media/BDM_overview_new_template2.png" alt-text="Screenshot of Business documents dialog box.":::
 
@@ -113,7 +113,7 @@ Follow these steps to provide the required information before you upload a templ
    :::image type="content" source="./media/BDM_overview_new_UI_import_31.jpg" alt-text="Screenshot of Data source tab on the Upload tab of the Create a new template page.":::
 
     > [!NOTE]
-    > The **Filter** FastTab is used to search the correct data source (that is, the ER model configuration). You can edit all filter fields to find the most appropriate data source for the document that you're uploading.
+        > Use the **Filter** FastTab to search the correct data source (that is, the ER model configuration). You can edit all filter fields to find the most appropriate data source for the document that you're uploading.
     > 
     > The conditions on the **Filter** FastTab are used as **OR** conditions.
 
@@ -133,7 +133,7 @@ For more information, see [Business document management overview](er-business-do
 This example shows how to use the **New document** button in the **Business document management** workspace to create and edit a template in an ER format configuration that Microsoft provides and that is located in the Global repository. In this example, the active provider is Contoso, which uses the ER format configuration that Microsoft provides. After you select **New document**, the **Import from Global repository** tab on the **Create a new template** page shows all the business document templates that the Global repository stores but that are missing in the current Finance instance. After you select a template, you import it from the Global repository into the current Finance instance to create a new editable copy. You store the edited template in a new ER format configuration that the system automatically generates.
 
 1. In the **Business document management** workspace, select **New document**.
-1. On the **Create a new template** page, on the **Import from Global repository** tab, select the document to use as a template, then select **Create document**.
+1. On the **Create a new template** page, on the **Import from Global repository** tab, select the document to use as a template, and then select **Create document**.
 
 :::image type="content" source="./media/BDM_overview_new_template22.png" alt-text="Screenshot of Import from Global repository tab on the Create a new template page.":::
 
