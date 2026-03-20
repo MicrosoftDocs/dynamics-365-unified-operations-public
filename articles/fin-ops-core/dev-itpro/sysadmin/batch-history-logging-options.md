@@ -1,8 +1,8 @@
 ---
 title: Batch history logging options
 description: Learn how to configure batch history logging options to skip persisting INFO and PARAMETERS columns in the batch history table for improved database performance.
-author: snagamalla
-ms.author: snagamalla
+author: yogeshpatil
+ms.author: yogeshpatil
 ms.topic: how-to
 ms.date: 03/18/2026
 ms.reviewer: johnmichalak
