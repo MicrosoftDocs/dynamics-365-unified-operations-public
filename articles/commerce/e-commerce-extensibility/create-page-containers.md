@@ -1,11 +1,10 @@
 ---
 title: Create a page container module
-description: This article describes how to create a page container module in Microsoft Dynamics 365 Commerce.
+description: Learn how to create a page container module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/26/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -18,9 +17,9 @@ ms.custom:
 
 This article describes how to create a page container module in Microsoft Dynamics 365 Commerce.
 
-A page container is a module that controls the core structure of a page through specific layout regions that are known as *slots*. For example, a page container might have slots that are defined for the header area, main content area, and footer area. A page container can be embedded only at the root of a page, and each page must have only one page container.
+A page container is a module that controls the core structure of a page through specific layout regions that are known as *slots*. For example, a page container might have slots that are defined for the header area, main content area, and footer area. You can embed a page container only at the root of a page, and each page can have only one page container.
 
-Page authors can configure which modules go into each slot, and the container rendering code then controls the layout of those slots. Configuration settings can also be exposed to page authors so that they can further configure the layout.
+Page authors can configure which modules go into each slot, and the container rendering code then controls the layout of those slots. You can also expose configuration settings to page authors so that they can further configure the layout.
 
 ## Create a new page container module
 
@@ -34,7 +33,7 @@ yarn msdyn365 add-module campaign-page-container
 
 Then open the definition file for the new module, **campaign-page-container.definition.json**, and change the **$type** value to **pageModule**.
 
-In the following example, notice that the **slots** section contains the various named slots that the page container supports. To restrict a slot so that only a specific set of modules can be put into it, use the **"allowedTypes"** array to define the list of allowed modules. Alternatively, use an asterisk (\*) to allow any module to be put into the slot.
+In the following example, the **slots** section contains the various named slots that the page container supports. To restrict a slot so that only a specific set of modules can be put into it, use the **"allowedTypes"** array to define the list of allowed modules. Alternatively, use an asterisk (\*) to allow any module to be put into the slot.
 
 ```json
 {
@@ -99,9 +98,9 @@ The following example shows an excerpt from a React view file (campaign-page-con
 
 ## Test a page container module
 
-To test a page container module in a local development environment, you must use a page mock.
+To test a page container module in a local development environment, use a page mock.
 
-The following example shows a page mock that can be used for testing. It's saved in the **/src/pageMocks** directory as **campaignContainerMock.json**.
+The following example shows a page mock that you can use for testing. Save it in the **/src/pageMocks** directory as **campaignContainerMock.json**.
 
 ```json
 {
@@ -162,13 +161,13 @@ The following example shows a page mock that can be used for testing. It's saved
 }
 ```
 
-Notice that the preceding page mock defines only the **primary** slot in the page container. However, you can also include the **header** and **footer** slots as you require.
+The preceding page mock defines only the **primary** slot in the page container. However, you can also include the **header** and **footer** slots as needed.
 
 ## Preview the page
 
 To preview the page in a local web browser, follow these steps:
 
-1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command, as shown in the following example.
 
     ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start

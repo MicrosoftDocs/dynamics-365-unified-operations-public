@@ -2,9 +2,9 @@
 title: Set up an email notification profile
 description: Learn how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 11/24/2025
+ms.date: 01/22/2026
 ms.topic: how-to
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-20
@@ -24,16 +24,16 @@ For additional email configuration information, see [Configure and send email](.
 
 ## Create an email template
 
-Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters for each notification type you want to support. This template defines the email subject, sender, default language, and email body for each supported language.
+Before you can enable an email notification type, create an organization email template in Commerce headquarters for each notification type you want to support. This template defines the email subject, sender, default language, and email body for each supported language.
 
 To create an email template, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Parameters \> Organization email templates**.
 1. On the action pane, select **New**.
 1. In the **Email ID** field, enter an ID to help identify this template.
-1. In the **Sends name** field, enter the senders name.
+1. In the **Sends name** field, enter the sender's name.
 1. In the **Email Description**, enter a meaningful description.
-1. In the **Sender email**, enter the senders email address.
+1. In the **Sender email**, enter the sender's email address.
 1. In the **General** section, select a default language for the email template. The default language is used when no localized template exists for the specified language.
 1. Expand the **Email message content** section and select **New** to create the template content. For each content item, select the language and provide the email subject line. If the email has a body, ensure that the **Has body** box is checked.
 1. On the action pane, select **Email message** to provide an email body template.
@@ -60,7 +60,7 @@ To create an email event, follow these steps:
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. Under **Retail email notification settings**, select **New**.
-1. Select the appropriate **Email notification type** from the drop-down list. The `RetailEventNotificationType` enum defines the options in the drop-down list. If you want to add an option to the drop-down list, you must [extend the enum](../fin-ops-core/dev-itpro/extensibility/add-enum-value.md).
+1. Select the appropriate **Email notification type** from the drop-down list. The `RetailEventNotificationType` enum defines the options in the drop-down list. To add an option to the drop-down list, [extend the enum](../fin-ops-core/dev-itpro/extensibility/add-enum-value.md).
 1. Select the email template you created from the **Email ID** drop-down list.
 1. Select the **Active** checkbox.
 1. On the action pane, select **Save**.
@@ -71,42 +71,42 @@ The following image shows some example event notification settings.
 
 ##  Associate the email notification profile with a channel
 
-You can activate the email notification profile by associating it with a brick and mortal store channel, online channel, or call center channel. To associate the email notification profile with a channel, in headquarters, go to the channel form and select the desired email notification profile. 
+You can activate the email notification profile by associating it with a brick-and-mortar store channel, online channel, or call center channel. To associate the email notification profile with a channel, in headquarters, go to the channel form and select the desired email notification profile. 
 
 > [!NOTE]
-> The email notification profile can also be defined in headquarters at **Commerce parameters** \> **General**, but Microsoft recommends that you define email notification profile at the individual channel level.
+> You can also define the email notification profile in headquarters at **Commerce parameters** \> **General**, but Microsoft recommends that you define the email notification profile at the individual channel level.
 
 ## Enable the optimized order notifications processing feature
 
-When the **Optimized order notifications processing** feature is enabled, the email notification process job is executed in parallel and more emails can be processed at a time.
+When you enable the **Optimized order notifications processing** feature, the system runs the email notification process job in parallel and processes more emails at the same time.
 
 To enable the optimized order notifications processing feature in headquarters, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. On the **Not enabled** tab, in the **Feature name** list, find and select the **Optimized order notifications processing** feature.
-1. In the lower-right corner, select **Enable now**. After the feature is turned on, it appears in the list on the **All** tab, with a status of **Enabled**.
+1. In the lower-right corner, select **Enable now**. After the feature turns on, it appears in the list on the **All** tab, with a status of **Enabled**.
 
 ## Schedule a recurring email notification process job
 
-To send out email notifications, you must have the **Process retail order email notification** job running.
+To send email notifications, the **Process retail order email notification** job must be running.
 
 To set up a batch job in headquarters for sending transactional emails, follow these steps:
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
 1. In the **Process retail order email notification** dialog, select **Recurrence**.
 1. In the **Define recurrence** dialog, select **No end date**.
-1. Under **Recurrence pattern**, select **Minutes**, and then set the **Count** field to **1**. These settings ensure that email notifications are processed as quickly as possible.
+1. Under **Recurrence pattern**, select **Minutes**, and then set the **Count** field to **1**. These settings ensure that the system processes email notifications as quickly as possible.
 1. Select **OK** to return to the **Process retail order email notification** dialog.
 1. Select **OK** to complete the job setup.
 
 ### Enable optimized email notification processing
 
-The **Optimized order notifications processing** feature enables optimized processing of email order notifications. When this feature is enabled, order notification emails are sent by several tasks running in parallel, resulting in higher job throughput. 
+The **Optimized order notifications processing** feature enables optimized processing of email order notifications. When you enable this feature, several tasks run in parallel to send order notification emails, resulting in higher job throughput. 
 
 To enable optimized email notification processing, go to **Workspaces \> Feature Management** and enable the **Optimized order notifications processing** feature. 
 
 > [!NOTE]
-> If your Commerce headquarters version is older than 10.0.31, you must cancel the currently running **Process retail email order notification** batch job by going to **System Administration \> Inquiries \> Batch jobs** and deleting it. To recreate the batch job, follow the instructions in [Schedule a recurring email notification process job](#schedule-a-recurring-email-notification-process-job). 
+> If your Commerce headquarters version is older than 10.0.31, you must cancel the currently running **Process retail email order notification** batch job. Go to **System Administration \> Inquiries \> Batch jobs** and delete the batch job. To recreate the batch job, follow the instructions in [Schedule a recurring email notification process job](#schedule-a-recurring-email-notification-process-job). 
 
 ## Schedule a clean-up batch job for email notification logs
 
@@ -114,20 +114,20 @@ To set up a clean-up batch job in headquarters for cleaning up email notificatio
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Clean up email notification logs**.
 1. In the **Clean up email notification logs** dialog, configure the following parameters:
-    1. **Also delete unsent emails** - When this parameter is set to **Yes**, emails that aren't sent successfully are deleted by the clean-up batch job.
-    1. **Retention days** - This parameter specifies the number of days that emails should be kept. Only emails that are older than the number of days specified are deleted by the clean-up batch job.
+    1. **Also delete unsent emails** - When you set this parameter to **Yes**, the clean-up batch job deletes emails that aren't sent successfully.
+    1. **Retention days** - Specify the number of days that emails should be kept. The clean-up batch job deletes only emails that are older than the number of days specified.
 1. To set up a recurring job that checks and cleans up the email notification logs older than the specified number of retention days, select **Recurrence**.
 1. In the **Define recurrence** dialog, configure the recurrence pattern.
-    - For example, to define a recurrence frequency of three months, under **Recurrence pattern**, select **Months**, and then for **Count** enter the number "3". This configuration has the batch job check and clean up logs every three months.
+    - For example, to define a recurrence frequency of three months, under **Recurrence pattern**, select **Months**, and then for **Count** enter the number "3". This configuration makes the batch job check and clean up logs every three months.
     - To keep the clean-up batch job running indefinitely, select **No end date**.
 1. Select **OK** to return to the **Clean up email notification logs** dialog.
 1. Select **OK** to complete the job setup.
 
-Once the batch job starts, it continues to create subtasks to delete email notification logs based on the parameters until no logs are left to delete. The maximum number of logs that can be deleted by each subtask is 2000. To change the maximum number of logs that can be deleted, in headquarters go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Configuration parameters**, and then for the **NotificationLog_NumOfRowsToBeCleaned** parameter, enter a new maximum number. 
+Once the batch job starts, it continues to create subtasks to delete email notification logs based on the parameters until no logs are left to delete. Each subtask can delete up to 2,000 logs. To change the maximum number of logs that each subtask can delete, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Configuration parameters** in headquarters. For the **NotificationLog_NumOfRowsToBeCleaned** parameter, enter a new maximum number. 
 
 ## Next steps
 
-Before emails can be sent, you must configure your outgoing mail service. For more information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Before you can send emails, you must configure your outgoing mail service. For more information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## Troubleshooting
 
@@ -136,10 +136,10 @@ Before emails can be sent, you must configure your outgoing mail service. For mo
 To check the email notification log, follow these steps:
 
 1. Go to `https://<environment-URL>/?mi=RetailEventNotificationLog`.
-1. If email isn't found in the log, then the email notification isn't processed. Verify that the **Email notification profile** is created correctly. 
+1. If the log doesn't show the email, the system didn't process the email notification. Verify that you correctly created the **Email notification profile**.
     1. Go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
     1. In the **Retail event notification settings** section, verify the email notification type is active.
-    1. Select **Email ID**, in the email template, verify that the sender email, default language code, and email message content are configured correctly. 
+    1. Select **Email ID**. In the email template, verify that the sender email, default language code, and email message content are configured correctly.
 1. Verify that the **Process retail order email notification** job is scheduled.
     1. Go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
     1. Find the **Process retail order email notification** batch job.
@@ -161,6 +161,5 @@ To check email sending failures, follow these steps:
 [Channel setup prerequisites](channels-prerequisites.md)
 
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,15 +1,15 @@
 ---
 title: Extend the customer CDX package to add custom data
-description: This article explains how to add custom data to the customer Commerce Data Exchange (CDX) package in Microsoft Dynamics 365 Commerce.
+description: Learn how to add custom data to the customer Commerce Data Exchange (CDX) package in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/21/2022
+ms.date: 02/17/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chgriffin
-ms.search.region: Global
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2022-03-30
-ms.dyn365.ops.version: AX 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Extend the customer CDX package to add custom data
@@ -18,17 +18,17 @@ ms.dyn365.ops.version: AX 10.0.25
 
 This article explains how to extend the customer Commerce Data Exchange (CDX) package to add custom data in Microsoft Dynamics 365 Commerce.
 
-When point of sale (POS) or any client application calls the Commerce Customer Search application programming interface (API), the API searches for the customer in the channel database. If the customer isn't found in the channel database, and if remote search is enabled in Commerce headquarters, the API makes a real-time call to Commerce headquarters to fetch the data. If the customer data is found in Commerce headquarters, Commerce headquarters generates the customer data CDX package and synchronizes it to the channel database.
+When point of sale (POS) or any client application calls the Commerce Customer Search application programming interface (API), the API searches for the customer in the channel database. If the API doesn't find the customer in the channel database, and if remote search is enabled in Commerce headquarters, the API makes a real-time call to Commerce headquarters to fetch the data. If the customer data is found in Commerce headquarters, headquarters generates the customer data CDX package and synchronizes it to the channel database.
 
-If you want to include custom data (for example, **Loyalty**, **Affiliation**, or **Extension** table data) as part of the customer data CDX package and synchronize it to the channel database, you must use X++ to extend the **RetailTransactionServiceCustomerExtensions** class in Commerce headquarters.
+If you want to include custom data (for example, **Loyalty**, **Affiliation**, or **Extension** table data) as part of the customer data CDX package and synchronize it to the channel database, use X++ to extend the **RetailTransactionServiceCustomerExtensions** class in Commerce headquarters.
 
 To add the custom data part of the package, override the **addAdditionalCustomerDataToPackage** method from the **RetailTransactionServiceCustomerExtensions** class, add a custom query to read the data from the required tables, and then write the data part of the **RetailCdxDataPackageSerializationHelper** object.
 
 ## Prerequisites for adding the X++ extension
 
-- CDX must be extended to synchronize the custom table and fields. If you're synchronizing extension tables, a Commerce runtime (CRT) extension is required to read the extension table data. If you're using existing entities (for example, **Loyalty**, **Affiliation**, or **Customer**), no CRT extension is required, because the out-of-box CRT code will fetch the data. For more information, see [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md).
-- Maintain data integrity between the **Customer** table and the additional data that is fetched. This additional data includes the extension tables.
-- All the extension and synchronization tables must have write permissions for the CDX framework to write the data to the table.
+- Extend CDX to synchronize the custom table and fields. If you're synchronizing extension tables, you need a Commerce runtime (CRT) extension to read the extension table data. If you're using existing entities (for example, **Loyalty**, **Affiliation**, or **Customer**), you don't need a CRT extension, because the out-of-box CRT code fetches the data. For more information, see [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md).
+- Maintain data integrity between the **Customer** table and the additional data that you fetch. This data includes the extension tables.
+- The extension and synchronization tables must have write permissions for the CDX framework to write the data to the table.
 
 To create the custom method to add the data part of the Customer CDX data package, follow these steps:
 
@@ -62,7 +62,7 @@ To create the custom method to add the data part of the Customer CDX data packag
 
 ## Example
 
-In this example, the data is fetched from the following tables and included in the package:
+In this example, you fetch data from the following tables and include it in the package:
 
 - RetailLoyaltyCard
 - RetailLoyaltyCardTier
@@ -152,3 +152,5 @@ public final class RetailTransactionServiceCustomerExtensions_Sample_Extension
     }
 }
 ```
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

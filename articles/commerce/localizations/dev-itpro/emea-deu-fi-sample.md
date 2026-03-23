@@ -2,10 +2,9 @@
 title: Fiscal registration service integration sample for Germany
 description: This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-05-29
@@ -18,13 +17,13 @@ ms.custom:
 
 This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 
-To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the EFR (Electronic Fiscal Register solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
+To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the EFR (Electronic Fiscal Register solution from [EFSTA](https://www.efsta.eu/en/fiscalization/germany) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
 
-Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/de).
+Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/en/fiscalization/germany).
 
 ## Scenarios
 
-The following scenarios are covered by the fiscal registration service integration sample for Germany.
+The fiscal registration service integration sample for Germany covers the following scenarios.
 
 ### Sales operations
 
@@ -36,13 +35,13 @@ The following scenarios are covered by the fiscal registration service integrati
 
         The start of each transaction is registered in a technical security element (TSE) that is connected to the EFR service. As a result of registration, a TSE assigns a transaction ID (TID).
 
-    2. Registration of the transaction end
+    1. Registration of the transaction end
 
-        When a transaction is concluded at the POS, it's registered by using the same TID that was assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
+        When a transaction concludes at the POS, the same TID registers the transaction. The TID is assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
 
-    3. Capturing a response from the fiscal registration service
+    1. Capturing a response from the fiscal registration service
 
-        Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consists of the following information:
+        A TSE receives security data as part of a response and saves it in the transaction in the channel database. The security data consists of the following information:
 
         - TID
         - Date and time of the transaction start
@@ -56,7 +55,7 @@ The following scenarios are covered by the fiscal registration service integrati
 
 #### Notifying users about fiscal registration failures
 
-There are two ways that the fiscal registration service can notify users about failures that occurred during the fiscal registration:
+Two ways exist for the fiscal registration service to notify users about failures that occurred during the fiscal registration:
 
 - Print additional information from the response in the **Info message** field on receipts.
 - Show notifications from the fiscal service as user messages at the POS.
@@ -90,13 +89,13 @@ Receipt printing is mandatory in Germany. All receipts must contain at least the
 
 #### Voided, suspended, and recalled transactions
 
-- A voided transaction is registered as a request to terminate a transaction in the fiscal registration service.
-- A suspended transaction is registered as a request to terminate a transaction in the fiscal registration service.
-- Recall of a suspended transaction is registered as the start of a new transaction in the fiscal registration service.
+- The fiscal registration service registers a voided transaction as a request to terminate a transaction.
+- The fiscal registration service registers a suspended transaction as a request to terminate a transaction.
+- The fiscal registration service registers recall of a suspended transaction as the start of a new transaction.
 
-### Non-sales transactions and shift closing
+### Nonsales transactions and shift closing
 
-The following non-sales transactions are registered as non-fiscal operations in the fiscal registration service by using the **NFS** tag:
+Register the following nonsales transactions as nonfiscal operations in the fiscal registration service by using the **NFS** tag:
 
 - Declare start amount
 - Float entry
@@ -106,20 +105,20 @@ The following non-sales transactions are registered as non-fiscal operations in 
 - Income accounts
 - Expense accounts
 
-The **Close shift** operation is also registered as a non-fiscal operation in the fiscal registration service by using the **NFS** tag.
+Register the **Close shift** operation as a nonfiscal operation in the fiscal registration service by using the **NFS** tag.
 
 ### Data export and audit
 
-All transactions must be signed by a TSE to ensure their integrity, authenticity, and completeness, and to help prevent manipulation of recorded data.
+A TSE must sign all transactions to ensure their integrity, authenticity, and completeness, and to help prevent manipulation of recorded data.
 
 > [!WARNING]
-> Only a certified TSE can be used. For information about the types and models of TSEs that are supported in the EFR solution, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website. For information about how to choose and obtain a TSE, contact [EFSTA](https://www.efsta.eu/at).
+> Use only a certified TSE. For information about the types and models of TSEs that the EFR solution supports, see the "EFR Guide \[DE\]" document that's published on the [EFSTA documentation](https://public.efsta.net/efr/) website. For information about how to choose and obtain a TSE, contact [EFSTA](https://www.efsta.eu/en/fiscalization/germany).
 
-Regulations in Germany require support for the DSFinV-K export. The DSFinV-K export can be triggered in the EFR solution. For more information about the DSFinV-K export, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website.
+Regulations in Germany require support for the DSFinV-K export. The EFR solution can trigger the DSFinV-K export. For more information about the DSFinV-K export, see the "EFR Guide \[DE\]" document that's published on the [EFSTA documentation](https://public.efsta.net/efr/) website.
 
 ### Limitations of the sample
 
-The fiscal registration service supports only scenarios where sales tax is included in prices. Therefore, the **Prices include sales tax** option must be set to **Yes** for both stores and customers.
+The fiscal registration service supports only scenarios where sales tax is included in prices. Therefore, set the **Prices include sales tax** option to **Yes** for both stores and customers.
 
 The fiscal service doesn't support situations where more than one sales tax code is applied to the same transaction line.
 
@@ -129,27 +128,27 @@ The fiscal integration framework doesn't support sales quotations. Therefore, th
 
 This section describes the Commerce settings that are specific to and recommended for Germany. For more setup information, see [Commerce home page](../../welcome.md).
 
-To use the functionality that is specific to Germany, you must specify the following settings.
+To use the functionality that's specific to Germany, specify the following settings.
 
 - In the primary address of the legal entity, set the **Country/region** field to **DEU** (Germany).
 - In the POS functionality profile of every store that is located in Germany, set the **ISO code** field to **DE** (Germany).
 
-You must also specify the following settings for Germany. Be sure to run appropriate distribution jobs after you complete the setup.
+Specify the following settings for Germany. Be sure to run appropriate distribution jobs after you complete the setup.
 
 ### Set up VAT per German requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax features, see [Sales tax overview](../../../finance/general-ledger/indirect-taxes-overview.md).
+Create sales tax codes, sales tax groups, and item sales tax groups. Set up sales tax information for products and services. For more information about how to set up and use sales tax features, see [Sales tax overview](../../../finance/general-ledger/indirect-taxes-overview.md).
 
 On sales receipts, you can print an abbreviated code for a sales tax code (for example, "A" or "B"). To make this functionality available, set the **Code for printing** field on the **Sales tax codes** page.
 
 ### Set up stores
 
-On the **All stores** page, update the store details. Specifically, set the following parameters:
+On **All stores**, update the store details. Set the following parameters:
 
-- In the **Sales tax group** field, specify the sales tax group that should be used for sales to the default customer.
+- In the **Sales tax group** field, specify the sales tax group for sales to the default customer.
 - Set the **Prices include sales tax** option to **Yes**.
-- Set the **Name** field to the company name. This change helps ensure that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-form text.
-- Set the **Tax identification number (TIN)** field to the company identification number. This change helps ensure that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-form text.
+- Set the **Name** field to the company name. This change ensures that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-form text.
+- Set the **Tax identification number (TIN)** field to the company identification number. This change ensures that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-form text.
 
 ### Set up functionality profiles
 
@@ -159,7 +158,7 @@ Set up POS functionality profiles. On the **Receipt numbering** FastTab, set up 
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. The **Language ID**, **Text ID**, and **Text** values that are shown in the table are examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or greater than 900001.
 
 Add the following POS labels to the **POS** section of the **Language text** page.
 
@@ -177,7 +176,7 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 | en-US       | 900010  | Check value                           |
 | en-US       | 900011  | Info message                          |
 
-On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. The **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
 | Name                            | Type    | Caption text ID |
 |---------------------------------|---------|-----------------|
@@ -194,17 +193,17 @@ On the **Custom fields** page, add the following records for the custom fields f
 | INFOMESSAGE\_DE                 | Receipt | 900011          |
 
 > [!NOTE]
-> It's important that you specify correct custom field names, as listed in the preceding table. An incorrect custom field name will cause missing data in receipts.
+> It's important that you specify correct custom field names, as listed in the preceding table. An incorrect custom field name causes missing data in receipts.
 
 ### Configure receipt formats
 
-For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
+For each required receipt format, change the value of the **Print behavior** field to **Always print**.
 
-In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+In the Receipt format designer, add the following custom fields to the appropriate receipt sections. The field names correspond to the language texts that you defined in the previous section.
 
 - **Header:** Add the following fields:
 
-    - **Store name** and **Tax Identification Number** fields, which are used to print the company name and identification number on receipts. Alternatively, you can add the company name and identification number to the layout as free-form text.
+    - **Store name** and **Tax Identification Number** fields, which print the company name and identification number on receipts. Alternatively, add the company name and identification number to the layout as free-form text.
     - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
 
 - **Lines:** Add the following fields:
@@ -212,20 +211,20 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Item name** field
     - **Qty** field
     - **Total price with tax** field
-    - **Tax Retail Print Code** field, which is used to print the abbreviated code that corresponds to the sales tax code that applies to the item
+    - **Tax Retail Print Code** field, which prints the abbreviated code that corresponds to the sales tax code that applies to the item
 
 - **Footer:** Add the following fields:
 
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
-    - Fields in the **Tax break down** field group. All the fields in this field group must be printed on one separate line.
+    - Fields in the **Tax break down** field group. All the fields in this field group print on one separate line.
 
-        - **Tax Id** field, which is a standard field that enables a sales tax summary to be printed for each sales tax code. The field must be added to a new line.
-        - **Tax Percentage** field, which is a standard field that is used to print the effective tax rate for the sales tax code.
-        - **Tax Basis (sales)** field, which is used to print the receipt's total cash sale amount for the sales tax code. Prepayments and gift card operations are excluded.
-        - **Tax Amount (sales)** field, which is used to print the receipt's tax amount for cash sales for the sales tax code.
-        - **Tax Retail Print Code** field, which is used to print the abbreviated code that corresponds to the sales tax code.
+        - **Tax Id** field, which is a standard field that enables a sales tax summary to be printed for each sales tax code. Add the field to a new line.
+        - **Tax Percentage** field, which is a standard field that prints the effective tax rate for the sales tax code.
+        - **Tax Basis (sales)** field, which prints the receipt's total cash sale amount for the sales tax code. Prepayments and gift card operations are excluded.
+        - **Tax Amount (sales)** field, which prints the receipt's tax amount for cash sales for the sales tax code.
+        - **Tax Retail Print Code** field, which prints the abbreviated code that corresponds to the sales tax code.
 
-    - Fields that contain secured transaction data that is returned by the fiscal registration service:
+    - Fields that contain secured transaction data that the fiscal registration service returns:
 
         - **Transaction ID** field, which identifies the number of the cash transaction in the fiscal registration service
         - **Transaction start date time** field
@@ -233,10 +232,10 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Serial number of the security element** field
         - **Signature counter** field
         - **Check value** field
-        - **QR Code** field, which is used to print the reference to the registered cash transaction in the form of a QR code
+        - **QR Code** field, which prints the reference to the registered cash transaction in the form of a QR code
 
         > [!NOTE]
-        > The **QR Code** value is retrieved from the fiscal register response. EFR returns a QR code in its response only if the value of the **Attributes** field in the EFR configuration is described in the EFSTA documentation. The QR code format in the **Attributes** field in the EFR configuration must be set to **BMP**.
+        > The **QR Code** value comes from the fiscal register response. EFR returns a QR code in its response only if the value of the **Attributes** field in the EFR configuration is described in the EFSTA documentation. The QR code format in the **Attributes** field in the EFR configuration must be set to **BMP**.
 
     - **Info message** field, so that notification messages from the fiscal registration service can be shown on receipts. For example, if a signature device is broken, special text can be printed on a receipt.
 
@@ -257,8 +256,8 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
     > [!WARNING]
     > The error handling capabilities of the fiscal integration framework might not be fully aligned with local fiscal regulations.
     >
-    > - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
-    > - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
+    > - Don't turn on the **Continue on error** option on the **Fiscal registration process** page, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
+    > - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
 
 1. [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Configure channel components](#configure-channel-components).
@@ -270,7 +269,7 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Download configuration files for the fiscal document provider and the fiscal connector:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Select a correct release branch version according to your SDK/application version.
+    1. Select the correct release branch version according to your SDK or application version.
     1. Open **src \> FiscalIntegration \> Efr**.
     1. Download the fiscal document provider configuration file at **Configurations \> DocumentProviders \> DocumentProviderFiscalEFRSampleGermany.xml**.
     1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml**.
@@ -289,14 +288,14 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal registration service will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal registration service connects to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 #### Default data mapping
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-- **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service. Here is the default mapping:
+- **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service. Here's the default mapping:
 
     ```
     1: 0; 2: 1; 3: 3; 4: 8; 5: 2; 6: 0; 7: 7; 8: 6; 9: 0; 10: 8; 11: 1
@@ -318,26 +317,26 @@ The following default data mapping is included in the fiscal document provider c
     | 8              | Gift card           |
     | 9              | Tender Remove/Float |
     | 10             | Loyalty Cards       |
-    | 11             | Non-local checks    |
+    | 11             | Nonlocal checks    |
 
-    Therefore, you must modify the sample mapping according to the payment methods that are configured in your application.
+    Modify the sample mapping according to the payment methods that you configure in your application.
 
-- **Include customer data** – If this parameter is turned on, requests to the fiscal service will contain customer information, such as names and addresses, in cases where a customer is added to a transaction.
-- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service. Here is the default mapping:
+- **Include customer data** – If this parameter is turned on, requests to the fiscal service include customer information, such as names and addresses, in cases where a customer is added to a transaction.
+- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that you set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service. Here's the default mapping:
 
     ```
     A: 19.00; B: 7.00; C: 10.70; D: 5.50; E: 0.00
     ```
 
-    The first component in each pair represents a VAT tax group that is supported by the EFR fiscal registration service. The second component represents the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
+    The first component in each pair represents a VAT tax group that the EFR fiscal registration service supports. The second component represents the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
 
-- **Tax group for gift cards and deposits** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that involve gift cards or deposits. Here is the default mapping:
+- **Tax group for gift cards and deposits** – The value of the **TaxG** attribute in requests that the fiscal service receives, based on operations that involve gift cards or deposits. Here's the default mapping:
 
     ```
     G
     ```
 
-- **Tax group for VAT exempt** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that are exempt from tax obligations. Here is the default mapping:
+- **Tax group for VAT exempt** – The value of the **TaxG** attribute in requests that the fiscal service receives, based on operations that are exempt from tax obligations. Here's the default mapping:
 
     ```
     F
@@ -348,11 +347,11 @@ The following default data mapping is included in the fiscal document provider c
 
 #### Fiscal connector settings
 
-The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
+The fiscal connector configuration includes the following settings. This configuration is part of the fiscal integration sample:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds, that the fiscal connector will wait for a response from the fiscal registration service.
-- **Show fiscal registration notifications** – This flag controls whether notifications that the fiscal registration service returns should be shown to the operator.
+- **Timeout** – The amount of time, in milliseconds, that the fiscal connector waits for a response from the fiscal registration service.
+- **Show fiscal registration notifications** – This flag controls whether the operator sees notifications that the fiscal registration service returns.
 
 ### Configure channel components
 
@@ -364,7 +363,7 @@ The following settings are included in the fiscal connector configuration that i
 
 To set up a development environment to test and extend the sample, follow these steps:
 
-1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select the correct release branch version according to your SDK and application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, and build it.
 1. Install Commerce runtime extensions:
 
@@ -427,22 +426,22 @@ The purpose of the extension that is a fiscal document provider is to generate s
 
 #### Request handler
 
-There is one request handler for the document provider, **DocumentProviderEFRFiscalDEU**. This handler is used to generate fiscal documents for the fiscal registration service. It's inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce headquarters.
+There's one request handler for the document provider, **DocumentProviderEFRFiscalDEU**. This handler is used to generate fiscal documents for the fiscal registration service. It's inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce headquarters.
 
 The connector supports the following requests:
 
-- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document to generate. It returns a service-specific document that the fiscal registration service registers.
 - **GetFiscalTransactionExtendedDataDocumentProviderRequest** – This request returns the response together with extended data.
 
 #### Configuration
 
-The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration.
 
 ### Hardware station extension design
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
 
-The Hardware station extension is **HardwareStation.Extension.EFRSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+The Hardware station extension is **HardwareStation.Extension.EFRSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that it receives from the fiscal registration service.
 
 #### Request handler
 
@@ -456,11 +455,11 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Commerce headquarters. The file format aligns with the requirements for fiscal integration configuration.
 
 ### POS fiscal connector extension design
 
-The purpose of the POS fiscal connector extension is to communicate with the fiscal registration service from POS. It uses the HTTPS protocol for communication.
+The POS fiscal connector extension communicates with the fiscal registration service from POS. It uses the HTTPS protocol for communication.
 
 #### Fiscal connector factory
 
@@ -471,14 +470,14 @@ The fiscal connector factory maps the connector name to the fiscal connector imp
 The EFR fiscal connector is located in the **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts** file. It implements the **IFiscalConnector** interface that supports the following requests:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
-- **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
-- **FiscalRegisterInitializeClientRequest** – This request is used to initialize the fiscal registration service.
+- **FiscalRegisterIsReadyClientRequest** – This request is for a health check of the fiscal registration service.
+- **FiscalRegisterInitializeClientRequest** – This request initializes the fiscal registration service.
 
 #### Configuration
 
 The configuration file is located in the **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds, that the connector will wait for a response from the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the connector waits for a response from the fiscal registration service.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

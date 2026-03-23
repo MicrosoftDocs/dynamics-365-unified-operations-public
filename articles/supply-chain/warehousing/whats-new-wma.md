@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 12/10/2025
+ms.date: 02/13/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -18,13 +18,110 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.38.0
+
+Version 4.0.38.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused pages to render incorrectly when users navigated from the **Item inquiry** page to a custom page.
+- Fixed an issue where the **Back** button didn't clear previously selected data when navigating between **Item inquiry** pages.
+- Fixed an issue where some [mobile mass deployment (MDM) solutions](warehouse-app-intune-user-based.md) couldn't push connection settings (such as those specified in the **ConnectionsJson** field in Microsoft Intune) to the app.
+- Fixed an issue where browser shortcuts appeared when users scanned a value.
+- Improved the diagnostic file collection flow. Users can now share or save the diagnostic file in a local folder, which is useful when using kiosk mode.
+- Fixed an issue where users couldn't scan a license plate on the **Confirm** page when running *Movement* flows. Only the last character of the barcode was shown.
+- Fixed an issue in the *Movement* flow where a previous value could be shown in the step banner on the wrong step.
+- Fixed a visual issue where **Work list** tile headers that contained special characters weren't displayed correctly.
+
+## Version 4.0.37.0
+
+Version 4.0.37.0 adds the following fixes and improvements:
+
+- Fixed an issue when the domain name is present in the connection configuration, user had to enter complete email address.
+
+## Version 4.0.36.0
+
+Version 4.0.36.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused fields on the Custom Legacy page to be displayed incorrectly.
+- Added support for on-premises environments on iOS.
+- Fixed an issue where duplicate names in the XML caused connection failures.
+- Fixed an issue where the Copilot summary was not refreshed.
+- Fixed an issue where popup list item names were parsed incorrectly, causing an error.
+- Fixed an issue where spinner values were reset incorrectly after an error occurred.
+- Fixed an issue where sending multiple requests caused an application error.
+- Improved error messages to provide better clarity for users.
+- Improved authentication for on-premises environments on Windows. If you experience issues with a previously working on-premises authentication on Windows, edit the connection and set broker No.
+- Fixed an issue where the pull-to-refresh gesture on the work list page didn't refresh correctly.  
+
+## Version 4.0.35.0
+
+Version 4.0.35.0 adds the following fixes and improvements:
+
+- Fixed an issue in the Sales picking flow where the corresponding quantity value was selected incorrectly.
+  
+## Version 4.0.34.0
+
+Version 4.0.34.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused installation failure on Windows devices when using a mobile mass deployment (MDM) solution.
+
+## Version 4.0.33.0
+
+Version 4.0.33.0 adds the following fixes and improvements:
+
+- Corrected the requirements listed on the Google Play store, which previously stated that near-field communication (NFC) and camera hardware were required. You can install and use the app on devices that don't include these features.
+- Resolved a calculator issue that caused a process-guide error when users selected the submit button.
+
+## Version 4.0.32.0
+
+Version 4.0.32.0 adds the following fixes and improvements:
+
+- Aligned authentication with Warehouse Management mobile app version 4.0.29.
+- Fixed an issue that caused some apps to crash in the previous version.
+
+## Version 4.0.31.0
+
+Version 4.0.31.0 adds the following fixes and improvements:
+
+- Fixed an issue that caused some apps to crash in the previous version.
+- Added options to check Wi-Fi status, export HAR files, and view logs.
+- The app now sends meaningful Wi-Fi telemetry data to Application Insights.
+- Fixed several critical crash scenarios, including a gesture-related crash on older devices.
+- Fixed an issue where the *Confirm location* placeholder wasn't visible when scanning with the device camera.
+- Fixed a visual issue where the focus indicator on work list cards was invisible in light mode.
+- Added a **Diagnostics** button to the main menu to improve accessibility.
+- Fixed an issue where losing the internet connection redirected users to the sign-in page instead of the page where the connection was lost.
+- Resolved an authentication issue that required users to sign in a second time.
+
+## Version 4.0.30.0
+
+Version 4.0.30.0 adds the following fixes and improvements:
+
+- Fixed an authentication issue on on-premises Windows installations.
+- Improved transitions when navigating between pages.
+- Fixed an issue where the work list search field wasn't cleared after refreshing the page.
+- Fixed an issue where step instructions didn't remember the *Do not show again* selection when two menu items had the same name.
+- Improved Wi-Fi diagnostics through better request handling and clearer error reporting.
+- Fixed a concurrency-related issue that could cause sign-out failures.
+- Fixed an issue on custom legacy pages where fields could appear in the wrong order or show incorrect values after edits.
+- Added a loading spinner for long-running sign-out operations.
+
+## Version 4.0.29.0
+
+Version 4.0.29.0 adds the following fixes and improvements:
+
+- Fixed an authentication failure that occurred when multiple connections used the same client ID. The failure showed an incorrect redirect URL.
+- Fixed an issue that affected deployment of the app to iOS devices when using a mobile mass deployment (MDM) solution.
+- Improved support for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Added support for ProGlove devices.
+- Added support for [haptic feedback through external wearable devices](warehouse-app-haptic-feedback.md).
+
 ## Version 4.0.28.0
 
 Version 4.0.28.0 adds the following fixes and improvements:
 
 - Fixed an issue where pulling down to refresh didn't update the work list cards.
-- Enabled brokered authentication for Android, iOS, and Windows, which allows support for features such as Microsoft Entra Conditional Access.
-- Added an option on Android to use a new redirect URI, which is required for Microsoft Entra Conditional Access.
+- Enabled brokered authentication for Android, iOS, and Windows, which allows support for features such as [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
+- Added an option on Android to use a new redirect URI, which is required for [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md).
 - Improved camera-based barcode scanning by adding camera zoom and augmented-reality assisted barcode focusing.
 - Fixed issues with hardware keyboard detection.
 - Added support for keycode mapping.

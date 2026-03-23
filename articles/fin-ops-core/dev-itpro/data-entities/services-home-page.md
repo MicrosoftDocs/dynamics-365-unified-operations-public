@@ -1,10 +1,10 @@
 ---
 title: Service endpoints overview
-description: Learn about the service endpoints that are available, including a table that lists services avaialable for various service endpoints.
+description: Learn about the service endpoints that are available, including a table that lists services available for various service endpoints.
 author: pnghub
-ms.author: priysharma
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 06/22/2020
+ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -18,9 +18,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
+This article describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
 
 ## List of services
+
 The following table lists all the service endpoints, and compares the endpoints available for the application, and AX 2012.
 
 | Service endpoint            | AX 2012 | Finance and operations         |
@@ -40,11 +41,12 @@ This article describes authentication for services, and the REST Metadata servic
 - [Open Data Protocol (OData)](odata.md)
 
 ## Authentication
+
 OData services, JSON-based custom services, and the REST metadata service support standard OAuth 2.0 authentication.
 
-We currently support both [Authorization Code Grant flow](/previous-versions/azure/dn645542(v=azure.100)) and [Service to service calls using client credentials (shared secret or certificate)](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+Currently, both [Authorization Code Grant flow](/previous-versions/azure/dn645542(v=azure.100)) and [Service to service calls using client credentials (shared secret or certificate)](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) are supported.
 
-Two kinds of application are supported in Microsoft Entra ID (Microsoft Entra ID):
+Microsoft Entra ID supports two kinds of applications:
 
 - **Native client application** – This flow uses a user name and password for authentication and authorization.
 - **Web application (Confidential client)** – A confidential client is an application that can keep a client password confidential to the world. The authorization server assigned this client password to the client application.
@@ -54,50 +56,50 @@ For more information, see:
 - [Authorize access to web applications using OAuth 2.0 and Microsoft Entra ID](/previous-versions/azure/dn645545(v=azure.100))
 - [Troubleshoot service authentication issues](troubleshoot-service-authentication.md)
 
-The following illustration describes how authorization must be configured for Authorization code grant flow.
+The following illustration shows how to configure authorization for the Authorization code grant flow.
 
-![Authorization code grant flow.](./media/services-authentication.png)
+:::image type="content" source="./media/services-authentication.png" alt-text="Screenshot of the authorization code grant flow diagram.":::
 
-And below is the illustration describes how authorization works for Service to service calls using client credentials (shared secret or certificate).
+The following illustration shows how authorization works for service to service calls that use client credentials (shared secret or certificate).
 
-![Service to service calls using client credentials.](./media/S2SAuth.jpg)
+:::image type="content" source="./media/S2SAuth.jpg" alt-text="Screenshot of the service to service calls using client credentials diagram.":::
 
 ### Register a web application with Microsoft Entra ID
 
 > [!NOTE]
-> These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers.
+> Not everyone in your organization needs to complete these steps. Only one Azure Service Administrator user needs to add the application and share the client ID with the developers.
 
 **Prerequisite:** You must have an Azure subscription and admin access to Microsoft Entra ID.
 
-Before any clients can communicate with the services, they must be registered in (Microsoft Entra ID). These steps will help you register an application with (Microsoft Entra ID). The steps are explained in the [Azure app registration training guide](/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, you must register them in Microsoft Entra ID. These steps help you register an application with Microsoft Entra ID. For more information, see the [Azure app registration training guide](/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, use the following additional information.
 
-Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
-Under **Delegated permissions**, you must select, at a minimum, the following options:
+Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown earlier.
+Under **Delegated permissions**, select, at a minimum, the following options:
 
 - Access Dynamics AX Custom Service
 - Access Dynamics AX data
 - Access Dynamics AX online as organization users
 
  > [!IMPORTANT]
- > Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive a Microsoft Entra token.
+ > Make sure that you copy the key, because you won't see it again. You need this secret key to complete your OAuth authentication and receive a Microsoft Entra token.
 
-### Register your external application 
+### Register your external application
 
 1. In finance and operations apps, go to **System administration** \> **Setup** \> **Microsoft Entra applications**.
-2. Select **New**.
-3. Fill in the fields for the new record:
+1. Select **New**.
+1. Fill in the fields for the new record:
 
     - In the **Client Id** field, enter the application ID that you registered in Microsoft Entra ID.
     - In the **Name** field, enter a name for the application.
-    - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
+    - In the **User ID** field, select an appropriate service account user ID. For this example, select the **Admin** user. However, as a better practice, provision a dedicated service account that has the correct permissions for the operations that must be performed.
 
-    When you've finished, select **Save**.
+    When you finish, select **Save**.
 
-You've now finished setting up the prerequisites. After the external application retrieves an Microsoft Entra authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
+You finished setting up the prerequisites. After the external application retrieves a Microsoft Entra authentication token, it can use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
 
 ### Client sample code
 
-The following is C\# sample code for getting a token from Microsoft Entra ID. In this flow, the user will be presented with a consent form (for cross-tenant application) and a sign-in form.
+The following C# sample code gets a token from Microsoft Entra ID. In this flow, the user sees a consent form (for cross-tenant application) and a sign-in form.
 
 ```csharp
 UriBuilder uri = new UriBuilder ("https://login.windows.net/contoso2ax.onmicrosoft.com");
@@ -111,7 +113,7 @@ AuthenticationResult authenticationResult = authenticationContext.AcquireToken("
 string authenticationHeader = authenticationResult.CreateAuthorizationHeader();
 ```
 
-To pass the user name and password without showing a pop-up, you can use the following overload of **AcquireToken**.
+To pass the user name and password without showing a pop-up, use the following overload of **AcquireToken**.
 
 ```csharp
 UserCredential userCred = new UserCredential (username, password);
@@ -119,19 +121,19 @@ authenticationContext.AcquireToken("https://axdynamics1001aos.cloud.dynamics.com
 ```
 
 ## REST metadata service
-The REST metadata service is a read-only service. In other words, users can make only GET requests. The main purpose of this endpoint is to provide metadata information for elements. It is an OData implementation.
+
+The REST metadata service is a read-only service. In other words, users can make only GET requests. The main purpose of this endpoint is to provide metadata information for elements. It's an OData implementation.
 
 This endpoint is hosted at `http://\[baseURI\]/Metadata`.
 
 Currently, this endpoint provides metadata for the following elements:
 
-- **Labels** – Returns labels from the system. Labels have a dual pair key of language and ID, so that you can retrieve the value of the label.
+- **Labels** – Returns labels from the system. Labels use a dual pair key of language and ID, so you can retrieve the value of the label.
 
     **Example:** `https://[baseURI\]/metadata/Labels(Id='@SVC\_ODataLabelFile:Label1',Language='en-us')`
 
 - **Data entities** – Returns a JSON-formatted list of all the data entities in the system.
 
     **Example:** `https://[baseURI\]/Metadata/DataEntities`
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

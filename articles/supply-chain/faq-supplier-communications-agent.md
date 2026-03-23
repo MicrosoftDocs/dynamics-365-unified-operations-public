@@ -4,7 +4,7 @@ description: Get answers to frequently asked questions about the AI technology t
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 06/17/2025
+ms.date: 02/05/2026
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs

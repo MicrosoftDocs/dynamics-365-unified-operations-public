@@ -2,9 +2,9 @@
 title: Integrated worker, job, and position
 description: Learn about integrated worker data in Microsoft Dynamics 365 apps, including a table that maps HR data for employees, contractors, positions, and jobs.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 05/08/2023
+ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -47,8 +47,5 @@ A list of Human Resources entities and unmapped fields within those entities are
 |Entity | Unmapped fields   |
 |-----------------------------|----------------------------------|
 |Worker                |WorkerStatus  Gender      |
-
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

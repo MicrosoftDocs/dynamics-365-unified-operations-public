@@ -4,7 +4,7 @@ description: Learn about the most common types of test data methods, including n
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: how-to
-ms.date: 03/27/2019
+ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-Entity and helper navigation objects expose test methods that let you set up test data. This article provides information about the most common types of test data methods.
+Entity and helper navigation objects expose test methods that you can use to set up test data. This article provides information about the most common types of test data methods.
 
 ## Factory methods
 
-Factory methods focus on creating data that doesn't yet exist in the database. There are two types of entity factory methods, `init` methods and `create` methods. An `init` method initializes the entity but doesn't save it to the database. A `create` method initializes the entity and saves it to the database.
+Factory methods focus on creating data that doesn't yet exist in the database. Two types of entity factory methods exist: `init` methods and `create` methods. An `init` method initializes the entity but doesn't save it to the database. A `create` method initializes the entity and saves it to the database.
 
 ### Naming convention
 
@@ -29,7 +29,7 @@ Factory methods focus on creating data that doesn't yet exist in the database. T
 
 `create<EntitySpecification>`
 
-In this naming convention, `<EntitySpecification>` is the description of the key characteristics of the object that must be created.
+In this naming convention, `<EntitySpecification>` is the description of the key characteristics of the object that you must create.
 
 ### Examples
 
@@ -56,9 +56,9 @@ public AtlEntitySalesOrder createDefault()
 
 ### Prerequisite data
 
-The `init` method should take care of setting up prerequisites.
+The `init` method sets up prerequisite data.
 
-Before some entities can be created, specific prerequisites must be set up. In these cases, the `ensure` method must be called before the entity is initialized. You must also subscribe to all the entity events that require automatic setup of prerequisites.
+Before you can create some entities, you need to set up specific prerequisites. In these cases, call the `ensure` method before you initialize the entity. Also, subscribe to all the entity events that require automatic setup of prerequisites.
 
 #### Example
 
@@ -80,13 +80,13 @@ public AtlEntitySalesOrder initDefault()
 
 ## Builder methods
 
-Builder methods are responsible for initializing creator objects that will be used to create data that doesn't yet exist in the database.
+Builder methods initialize creator objects that you use to create data that doesn't yet exist in the database.
 
 ### Naming convention
 
 `<EntitySpecification>Builder`
 
-In this naming convention, `<EntitySpecification>` is the description of the key characteristics of the object that must be created.
+In this naming convention, `<EntitySpecification>` is the description of the key characteristics of the object that you must create.
 
 ### Example
 
@@ -96,13 +96,13 @@ catchWeightItem = data.invent().items().cwBuilder();
 
 ## Well-known data methods
 
-Well-known data methods provide a way to reference an entity that is set up in a specific way. If the entity doesn't exist in the database, it's created.
+Well-known data methods provide a way to reference an entity that is set up in a specific way. If the entity doesn't exist in the database, the method creates it.
 
 ### Naming convention
 
 `<EntitySpecification>`
 
-In this naming convention, `<EntitySpecification>` is the description of the key characteristics of the object that must be retrieved.
+In this naming convention, `<EntitySpecification>` is the description of the key characteristics of the object that you must retrieve.
 
 ### Example
 
@@ -118,7 +118,7 @@ Sometimes, a real-world name communicates the contract better.
 pieces = data.common().units().pieces();
 ```
 
-In this example, it's clear that **pieces** is a unit of measure of the "quantity" class, and that is has a decimal precision of 0 (zero).
+In this example, it's clear that **pieces** is a unit of measure of the "quantity" class, and it has a decimal precision of 0 (zero).
 
 ### Contract of well-known data methods
 
@@ -132,7 +132,7 @@ Here are a few things to remember about the common contract of the well-known da
     fifo1.InventModelGroupId == fifo2.InventModelGroupId;
     ```
 
-- Creation of a test entity isn't always worth the effort. If a test entity isn't created, the corresponding record buffer should be returned from the well-known data method. For example, if you don't invest the time and effort to create the Site entity, the `site` well-known data method will return InventSite records.
+- Creating a test entity isn't always worth the effort. If you don't create a test entity, return the corresponding record buffer from the well-known data method. For example, if you don't invest the time and effort to create the Site entity, the `site` well-known data method returns InventSite records.
 
     ```xpp
     InventSite site = data.invent().sites().default();
@@ -147,7 +147,7 @@ Here are a few things to remember about the common contract of the well-known da
 
 ### Implementation
 
-If there is already a builder or a factory method that is named `<EntitySpecification>`, it should be used as the internal implementation to create the well-known entity.
+If there's already a builder or a factory method named `<EntitySpecification>`, use it as the internal implementation to create the well-known entity.
 
 #### Example
 
@@ -165,7 +165,7 @@ public InventTable whsBatchAbove(ItemId _itemId = this.whsBatchAboveItemId())
 
 ## Ensure methods
 
-Ensure methods are responsible for setting up prerequisites that are required in order to create an entity or run a business operation.
+Ensure methods set up prerequisites that are required to create an entity or run a business operation.
 
 ### Naming convention
 
@@ -196,11 +196,11 @@ public void ensureCanCreate()
 
 #### Automatic prerequisite setup
 
-To enable automatic prerequisite setup, you must call the `ensure` methods in the appropriate `init` method. For more information, see the [Factory methods](#factory-methods) section earlier in this article.
+To enable automatic prerequisite setup, call the `ensure` methods in the appropriate `init` method. For more information, see the [Factory methods](#factory-methods) section earlier in this article.
 
 ## Query methods
 
-Query methods are responsible for initializing new queries for the entity type of the navigation node that they are defined on.
+Query methods initialize new queries for the entity type of the navigation node that they define.
 
 ### Naming convention
 
@@ -216,7 +216,7 @@ purchaseLinesQuery = data.invent().transferOrderLines().query();
 
 ## Specification methods
 
-Specification methods are responsible for initializing new specification objects for the entity type of the navigation node that they are defined on.
+Specification methods initialize new specification objects for the entity type of the navigation node that they define.
 
 ### Naming convention
 
@@ -244,7 +244,6 @@ salesOrder = data.sales().salesOrders().find(salesOrderId);
 
 ### Automatic prerequisite setup
 
-If the entity has query support, the implementation should use the query that has already set up prerequisite support. Otherwise, after you find the record buffer and initialize the new instance of the entity, you should subscribe `ensure` methods to the business operation events of the entity.
-
+If the entity supports queries, use the query that already sets up prerequisite support. Otherwise, after you find the record buffer and initialize the new instance of the entity, subscribe `ensure` methods to the business operation events of the entity.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

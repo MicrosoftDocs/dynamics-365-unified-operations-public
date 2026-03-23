@@ -5,7 +5,7 @@ author: yufei-huang
 ms.author: yufeihuang
 ms.search.form: 
 ms.topic: article
-ms.date: 08/14/2025
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -13,10 +13,11 @@ ms.custom:
 # Inventory Visibility tips
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 Here are a few tips that you should consider when you set up and use the Inventory Visibility Add-in:
 
-- Unless you using the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), you should check for linking mismatch warnings in Lifecycle Services before you install Inventory Visibility. To do so, open the details page for your environment in Lifecycle Services and look for a warning that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the linking mismatch is fixed, you can install Inventory Visibility.
+- Unless you using the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), you should check for linking mismatch warnings in Microsoft Dynamics Lifecycle Services before you install Inventory Visibility. To do so, open the details page for your environment in Lifecycle Services and look for a warning that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the linking mismatch is fixed, you can install Inventory Visibility.
 - If you have more than one Supply Chain Management environment, create a different Microsoft Entra application for each environment. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the latest installation of the Inventory Visibility Add-in will be valid.
 - Inventory Visibility isn't currently supported for cloud-hosted environments. It's supported only for Tier-2+ environments.
 - The application programming interface (API) allows multiple `SiteID` and `LocationID` values to be specified in each query. The maximum limit is defined by the following equation: `NumOf(SiteID)` &times; `NumOf(LocationID)` &le; 100.

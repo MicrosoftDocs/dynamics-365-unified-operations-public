@@ -32,3 +32,4 @@ Before you can use Sensor Data Intelligence, it must be turned on for your syste
 1. If the *Sensor Data Intelligence* feature is enabled on your system, select it in the list, and then select **Disable** to disable it. You can't use this older version of the feature together with the new preview version that you will enable in the next step.
 1. Use the **Filter** field to search for the feature that is named *(Preview) Sensor Data Intelligence*.
 1. Select the feature in the list, and then select **Enable now** to enable it.
+1. If you'd also like to use the [production auto report scenario](sdi-scenario-production-auto-report.md) (optional), use the **Filter** field to search for the feature that is named *(Preview) Sensor Data Intelligence - Auto report progress*, and then select **Enable now** to enable it.

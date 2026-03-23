@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: how-to
-ms.date: 12/06/2024
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -14,10 +14,11 @@ ms.custom:
 # Master planning system architecture
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 In Supply Chain Management, master planning is managed by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management, which enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
 
-To use Planning Optimization, you must install the Planning Optimization Add-in from your project in Microsoft Dynamics Lifecycle Services (LCS) and turn on the Planning Optimization functionality in Supply Chain Management. Learn more in [Get started with master planning](planning-optimization/get-started.md).
+To use Planning Optimization, you must install the Planning Optimization Add-in from your project in Microsoft Dynamics Lifecycle Services and turn on the Planning Optimization functionality in Supply Chain Management. Learn more in [Get started with master planning](planning-optimization/get-started.md).
 
 The following illustration shows the advantage of running Planning Optimization during office hours.
 
@@ -36,7 +37,7 @@ Planning Optimization can help you achieve the following goals:
 
 ## Architecture and data flow
 
-When the Planning Optimization Add-in is installed from LCS, a secure connection to the Planning Optimization service is established. The service is located in the same data center country or region as the related Supply Chain Management instance. After Planning Optimization is set up, when master planning is run, master data and transactional data are sent from Supply Chain Management to the Planning Optimization service.
+When the Planning Optimization Add-in is installed from Lifecycle Services, a secure connection to the Planning Optimization service is established. The service is located in the same data center country or region as the related Supply Chain Management instance. After Planning Optimization is set up, when master planning is run, master data and transactional data are sent from Supply Chain Management to the Planning Optimization service.
 
 If the Planning Optimization Add-in is uninstalled, all related data in the Planning Optimization service is removed.
 

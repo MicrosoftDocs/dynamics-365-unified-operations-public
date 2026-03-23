@@ -35,7 +35,7 @@ The feature also lets you generate and print calibration reports, such as calibr
 Before you can use test instrument calibration features in Supply Chain Management, your system must meet the following requirements:
 
 - You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Advanced quality management* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is turned on by default.
 
 ## <a name="parameters"></a>Set up instrument calibration parameters
 

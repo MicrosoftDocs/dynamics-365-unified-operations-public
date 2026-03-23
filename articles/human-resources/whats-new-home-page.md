@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Human Resources
 description: This article points to articles that describe the new and changed features in each release of Dynamics 365 Human Resources
 author: twheeloc
-ms.date: 10/24/2025
+ms.date: 01/26/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 
@@ -36,6 +36,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|---------------|-------------|
+| 10.0.47 | 10.0.2527 | March 2026 |[What's new or changed in Dynamics 365 Human Resources 10.0.47 (March 2026)](get-started/hr-whats-new-10-0-47.md)|
 | 10.0.46 | 10.0.2428 | December 2025 |[What's new or changed in Dynamics 365 Human Resources 10.0.46 (December 2025)](get-started/hr-whats-new-10-0-46.md)|
 | 10.0.45 | 10.0.2345 | September 2025 |[What's new or changed in Dynamics 365 Human Resources 10.0.45 (September 2025)](get-started/hr-whats-new-10-0-45.md)|
 | 10.0.44 | 10.0.2263 | June 2025 |[What's new or changed in Dynamics 365 Human Resources 10.0.44 (June 2025)](get-started/hr-whats-new-10-0-44.md)|

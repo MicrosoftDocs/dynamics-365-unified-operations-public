@@ -4,7 +4,7 @@ description: Learn how to use Adaptive Cards that are embedded on pages in finan
 author: jaredha
 ms.author: jaredha
 ms.topic: article
-ms.date: 11/04/2024
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2024-10-28
@@ -15,9 +15,9 @@ ms.dyn365.ops.version: PU66F
 
 [!include [banner](../includes/banner.md)]
 
-[Adaptive Cards](/adaptive-cards) are a platform-agnostic way for developers to create rich, interactive, card-like interfaces that can be embedded in various applications, such as Microsoft Teams, Outlook, Copilot Studio chatbots, and other chat or web applications. The key benefit of Adaptive Cards is that developers can design a card once and then use it across multiple platforms without having to adjust the layout for each one. The open card exchange format lets developers describe content as a simple JavaScript Object Notation(JSON) object. Therefore, it's easy to structure and manipulate cards dynamically.
+[Adaptive Cards](/adaptive-cards) are a platform-agnostic way for developers to create rich, interactive, card-like interfaces that they can embed in various applications, such as Microsoft Teams, Outlook, Copilot Studio chatbots, and other chat or web applications. The key benefit of Adaptive Cards is that developers can design a card once and then use it across multiple platforms without having to adjust the layout for each one. The open card exchange format lets developers describe content as a simple JavaScript Object Notation (JSON) object. Therefore, it's easy to structure and dynamically manipulate cards.
 
-The Adaptive Cards control for finance and operations apps lets developers render Adaptive Cards natively on application pages. Learn more on the [Adaptive Cards](https://adaptivecards.io) site, which includes documentation, samples, and a designer that you can use to start to build your own Adaptive Cards.
+By using the Adaptive Cards control for finance and operations apps, developers can render Adaptive Cards natively on application pages. To learn more, see the [Adaptive Cards](https://adaptivecards.io) site, which includes documentation, samples, and a designer that you can use to start to build your own Adaptive Cards.
 
 :::image type="content" source="./media/AdaptiveCardControl.png" alt-text="Screenshot of an Adaptive Card that shows a customer profile and insights on the Customers page in finance and operations apps.":::
 
@@ -32,7 +32,7 @@ To use an Adaptive Card on a page in finance and operations apps, follow these s
 
 ### Define the data properties for an Adaptive Card
 
-First define the data properties that populate the Adaptive Card. Create a new class as a data contract that extends the `AdaptiveCardData` class, and define the properties. Then add an accessor method for each property in the class.
+First, define the data properties that populate the Adaptive Card. Create a new class as a data contract that extends the `AdaptiveCardData` class, and define the properties. Then add an accessor method for each property in the class.
 
 The following example shows a class that contains properties for an Adaptive Card that displays a profile and insights about a customer record.
 
@@ -98,14 +98,14 @@ After you define the properties that populate the Adaptive Card, configure the A
 To define how the fields are laid out on an Adaptive Card, follow these steps:
 
 1. Create a class that extends the `AdaptiveCardTemplate` class.
-1. Define the class as a data contract that has accessor methods to return properties that are set in the class.
-1. For the `type` property, provide a value that is used as an identifier for the template type.
+1. Define the class as a data contract that has accessor methods to return properties that you set in the class.
+1. For the `type` property, provide a value that serves as an identifier for the template type.
 1. For the `template` property, provide a string of the JSON object that defines the layout and format of the Adaptive Card.
 
     > [!TIP]
     > If you need help creating the JSON for the Adaptive Card template, you can use tools such as the [Adaptive Cards designer](https://adaptivecards.io/designer).
 
-1. Build your project to make the template available for use on pages finance and operations apps.
+1. Build your project to make the template available for use on pages in finance and operations apps.
 
 The following example shows a class for an Adaptive Card template. This class includes actions to refresh the contents of the card, copy defined card elements, and provide feedback through thumbs-up and thumbs-down voting.
 
@@ -129,19 +129,19 @@ public class AdaptiveCardCustomerTemplate extends AdaptiveCardTemplate
 
 To add an Adaptive Card control in the desired place on a page in finance and operations apps, follow these steps: 
 
-1. In Visual Studio, in the page design of the page in your development environment for finance and operations apps, find the node where you want to put the Adaptive Card. Select and hold (or right-click) the node, and then select **New** \> **Adaptive card**.
-1. In the properties for the control, for the **Name** property, provide a name for the new card.
-1. For the **Template class** property, select the template class that you created earlier.
+1. In Visual Studio, in the page design of the page in your development environment for finance and operations apps, find the node where you want to put the Adaptive Card. Select and hold (or right-click) the node, and then select **New** > **Adaptive card**.
+1. In the properties for the control, enter a name for the new card in the **Name** property.
+1. Select the template class that you created earlier for the **Template class** property.
 
 ### Populate the data properties on the Adaptive Card
 
-After the Adaptive Card control is added to the desired page, you can define the data that populates the properties in the template for the card.
+After you add the Adaptive Card control to the desired page, define the data that populates the properties in the template for the card.
 
 To populate the data properties for an Adaptive Card, follow these steps:
 
 1. View the code for the page where you added the Adaptive Card.
 1. Create an instance of your data class, and populate the properties of the data contract.
-1. Create a class that defines any actions that should be added to the template.
+1. Create a class that defines any actions that you want to add to the template.
 
 The following example shows the definition of properties and actions to populate the template that you created earlier.
 

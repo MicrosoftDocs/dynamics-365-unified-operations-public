@@ -4,7 +4,7 @@ description: Learn how IT administrators use the agent deployment wizard in the 
 author: cabeln
 ms.author: cabeln
 ms.topic: concept-article
-ms.date: 07/21/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom:
 ms.reviewer: kamaybac
@@ -33,7 +33,7 @@ The agent deployment wizard provides a consistent deployment experience across a
 
 The following image shows the Dynamics 365 agent deployment wizard landing page in Power Platform admin center.
 
-:::image type="content" source="media/agent-deployment-wizard.png" alt-text="Dynamics 365 agent deployment wizard landing page." lightbox="media/agent-deployment-wizard.png":::
+:::image type="content" source="media/agent-deployment-wizard.png" alt-text="Screenshot of the Dynamics 365 agent deployment wizard landing page." lightbox="media/agent-deployment-wizard.png":::
 
 ## Purpose of the agent deployment wizard
 

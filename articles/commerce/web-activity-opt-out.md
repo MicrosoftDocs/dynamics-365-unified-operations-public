@@ -1,26 +1,24 @@
 ---
 title: Opt out of web activity event collection
-description: This article explains how you can let visitors to your website opt out of web activity event collection in Microsoft Dynamics 365 Commerce.
+description: Learn how to allow visitors to your Microsoft Dynamics 365 Commerce site to opt out of web activity event collection.
 author: bebeale
-ms.date: 05/15/2020
+ms.date: 01/30/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
-ms.search.industry: Retail, eCommerce
-ms.search.form: 
+ms.custom:
+  - bap-template
 ---
 
 # Opt out of web activity event collection
 
 [!include [banner](includes/banner.md)]
 
-This article explains how you can let customers opt out of web activity event collection in Microsoft Dynamics 365 Commerce.
+This article explains how to allow visitors to your Microsoft Dynamics 365 Commerce site to opt out of web activity event collection.
 
-Dynamics 365 Commerce lets site administrators analyze the web activity of users of their e-commerce sites. In that way, they can better understand how their sites are used, and they can optimize the sites to provide an improved user experience and meet business objectives.
+Dynamics 365 Commerce lets site administrators analyze the web activity of users of their e-commerce sites. Administrators can use this data to better understand how their sites are used, and optimize the sites to provide an improved user experience and meet business objectives.
 
 ## Ways for administrators to implement an opt-out experience
 
@@ -33,7 +31,7 @@ In Account management in Commerce headquarters (HQ), administrators can opt out 
 1. In the HQ client, on the **All customers** page, search for and select a customer.
 1. On the customer details page, on the **Retail** FastTab, in the **Privacy** section, set the **Do not track web activity** option to **Yes**.
 
-    ![Privacy settings.](media/Disablepersonalizationpart2.png)
+    :::image type="content" source="media/Disablepersonalizationpart2.png" alt-text="Screenshot of privacy settings.":::
 
 1. Select **Save**, and then close the page.
 

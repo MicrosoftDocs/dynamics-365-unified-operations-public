@@ -2,7 +2,7 @@
 title: Ratings and reviews overview
 description: Learn about ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 01/02/2026
+ms.date: 01/28/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-10-31
 This article explains ratings and reviews in Microsoft Dynamics 365 Commerce.
 
 > [!IMPORTANT]
-> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases. Renewals for existing customers will be discontinued soon.
+> The Dynamics 365 Commerce Ratings and Reviews license is no longer available for new purchases. Renewals for existing customers will end soon.
 
 Ratings and reviews are crucial for e-commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-commerce website.
 
@@ -28,7 +28,7 @@ Ratings and reviews functionality in Dynamics 365 Commerce is an omnichannel sol
 
 The following illustration shows how the ratings and reviews solution works in Dynamics 365 Commerce.
 
-![Ratings and reviews in Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+:::image type="content" source="media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg" alt-text="Screenshot of the ratings and reviews solution in Dynamics 365 Commerce.":::
 
 The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Because human approval isn't required, moderation costs are reduced. The system also offers moderator tools you can use to respond to customer concerns, feedback, and take-down requests, and to address data requests from users.
 
@@ -61,5 +61,7 @@ The following video provides an overview of ratings and reviews capabilities in 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
 
 
