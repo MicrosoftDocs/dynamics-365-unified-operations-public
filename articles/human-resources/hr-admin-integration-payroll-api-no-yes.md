@@ -31,7 +31,7 @@ This article describes the No Yes option set for Dynamics 365 Human Resources.
 
 ## Option set: No Yes
 
-Physical name: mshr_noyes
+Physical name: mserp_noyes
 
 This enumeration provides the option set for the typical Boolean properties in Human Resources virtual entities.
 

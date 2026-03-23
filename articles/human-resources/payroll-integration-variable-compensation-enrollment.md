@@ -41,7 +41,6 @@ This entity provides information about variable compensation enrollment.
 | Personnelnumber | mserp_personnelnumber | String | Read-only |
 | Status | mserp_status | Enum | Read-only |
 | Dataareaid | mserp_dataareaid | String | Read-only |
-| Mserp Dataareaid Id Value | _mserp_dataareaid_id_value | Guid | Read-only |
 | Awardamount | mserp_awardamount | Real | Read-only |
 | Numberofunitsreal | mserp_numberofunitsreal | Real | Read-only |
 | Awardpercent | mserp_awardpercent | Real | Read-only |

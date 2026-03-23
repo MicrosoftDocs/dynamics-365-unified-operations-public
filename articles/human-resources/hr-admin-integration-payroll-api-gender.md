@@ -31,7 +31,7 @@ This article describes the Gender option set for Dynamics 365 Human Resources.
 
 ## Option set: Gender option
 
-This enumeration provides the option set of genders for the employee. This is available in the mshr_hcmpersongender option set.
+This enumeration provides the option set of genders for the employee. This is available in the mserp_hcmpersongender option set.
 
 | Value | Label | Description |
 | --- | --- | --- |

@@ -64,7 +64,7 @@ GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmemploymentemployeeentities
     "mserp_validto": "2024-01-01T00:00:00Z",
     "mserp_employmentstartdate": "2024-01-01T00:00:00Z",
     "mserp_employmentenddate": "2024-01-01T00:00:00Z",
-    "mserp_legalentityid" : "USMF",
+    "mserp_legalentityid": "USMF",
     "mserp_personnelnumber": "000171"
 }
 ```

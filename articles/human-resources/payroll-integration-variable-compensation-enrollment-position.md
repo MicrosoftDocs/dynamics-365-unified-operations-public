@@ -43,7 +43,6 @@ This entity provides information about the variable compensation enrollment posi
 | Partynumber | mserp_partynumber | String | Read-only |
 | Personnelnumber | mserp_personnelnumber | String | Read-only |
 | Positionid | mserp_positionid | String | Read-only |
-| Mserp Dataareaid Id Value | _mserp_dataareaid_id_value | Guid | Read-only |
 | Positionvalidto | mserp_positionvalidto | Date time offset | Read-only |
 | Planid | mserp_planid | String | Read-only |
 
@@ -67,7 +66,6 @@ GET [Organization URI]/api/data/v9.1/mserp_payintv2hcmvariablecompensationenroll
     "mserp_partynumber": "000023",
     "mserp_personnelnumber": "000001",
     "mserp_positionid": "000001",
-    "_mserp_dataareaid_id_value": "00000000-0000-0000-0000-000000000000",
     "mserp_positionvalidto": "2024-01-01T00:00:00Z",
     "mserp_planid": "StepC"
 }

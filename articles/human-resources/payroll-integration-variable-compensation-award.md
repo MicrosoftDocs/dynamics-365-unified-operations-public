@@ -39,7 +39,6 @@ This entity provides information about the variable compensation award.
 |---|---|---|---|
 | Planid | mserp_planid | String | Read-only |
 | Unitvaluev2 | mserp_unitvaluev2 | Real | Read-only |
-| Mserp Dataareaid Id Value | _mserp_dataareaid_id_value | Guid | Read-only |
 | Positionvalidto | mserp_positionvalidto | Date time offset | Read-only |
 | Fixedplanid | mserp_fixedplanid | String | Read-only |
 | Dataareaid | mserp_dataareaid | String | Read-only |

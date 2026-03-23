@@ -31,7 +31,7 @@ This article describes the Benefit Plan Type Cover option set for Dynamics 365 H
 
 ## Option set: Process type
 
-Physical name: mshr_plantypecode
+Physical name: mserp_plantypecode
 
 This enumeration provides the option set for process type in Human Resources virtual entities.
 
