@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-When you set up a link between a financial dimension and the site inventory dimension, your legal entity can calculate profit and loss figures for each site.
+To enable the system to calculate profit and loss figures for each site for your legal entity, link a financial dimension to the site inventory dimension and assign a financial dimension value to each site.
 
 ## Set up a financial dimension link to a site
 
@@ -33,7 +33,7 @@ To set up a financial dimension link to a site, follow these steps:
 1. On the list pane, select the site you want to link the financial dimension to.
 1. Expand the **Financial dimensions** FastTab. The financial dimension that you selected in the previous page is shown here under the **Default financial dimensions** heading.
 1. From the drop-down list under the **Default financial dimensions** heading, select the financial dimension value that you want to associate with the selected site.
-1. Repeat steps 5 to 7 for each site that you want to link to the selected financial dimension.
+1. Repeat steps 5 to 7 for each site.
 1. When you're done, select **Save**.
 
 ## Activate a financial dimension link
@@ -89,7 +89,7 @@ You can unlock locked financial dimension links. Unlocking a link allows you to 
 When you deactivate a financial dimension link, the following changes occur:
 
 - The link between the site inventory dimension and the financial dimension is removed.
-- The linked financial dimension isn't assigned the dimension value specified for the site inventory dimension.
+- The linked financial dimension isn't assigned the dimension value specified for each site.
 
 - You can choose a different financial dimension to link to the site inventory dimension.
 
