@@ -28,7 +28,7 @@ To set up a financial dimension link to a site, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 1. On the Action Pane, select **Edit**.
-1. In the **Reference** field, select the financial dimension to link to the site inventory dimension. <!-- KFM: I don't see a **Reference** field. Do you mean **Select the dimension to be linked to the storage dimension, site**? -->
+1. In the **Select the dimension to be linked to the storage dimension, Site** field, select the financial dimension to link to the site inventory dimension.
 1. On the Action Pane, select **Sites** to open the **Sites** page.
 1. On the list pane, select the site you want to link the financial dimension to.
 1. Expand the **Financial dimensions** FastTab. The financial dimension that you selected in the previous page is shown here under the **Default financial dimensions** heading.
@@ -52,7 +52,7 @@ To activate a financial dimension link, follow these steps:
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 1. On the Action Pane, select **Activate link**.
 1. The **Linked dimension update** dialog opens. Select **OK** to activate the link.
-1. The **Current status** field updates to show that the *Dimension link is active*, and the color of the button is yellow. <!-- KFM: The button doesn't change color for me. Just the label. --> The **Reference** field isn't available. <!-- KFM: Do you mean the **Select the dimension to be linked to the storage dimension, site** field is inactive? -->
+1. The **Current status** field updates to show that the *Dimension link is active* and the **Select the dimension to be linked to the storage dimension, Site** field becomes inactive.
 
 ## Lock a financial dimension link
 
@@ -70,7 +70,7 @@ To lock a financial dimension link, follow these steps:
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 1. On the Action Pane, select **Lock link**.
 1. The **Linked dimension update** dialog opens. Select **OK** to lock the link. The system updates all open transactions accordingly.
-1. The **Current status** field updates to show that the *Dimension link is locked*, and the color of the button is green. <!-- KFM: The button doesn't change color for me. Just the label. -->
+1. The **Current status** field updates to show that the *Dimension link is locked*.
 
 ## Unlock a financial dimension link
 
@@ -82,7 +82,7 @@ You can unlock locked financial dimension links. Unlocking a link allows you to 
 
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 1. On the Action Pane, select **Unlock link**.
-1. The **Current status** field updates to show that the *Dimension link is active*, and the color of the button is yellow. <!-- KFM: The button doesn't change color for me. Just the label. -->
+1. The **Current status** field updates to show that the *Dimension link is active*.
 
 ## Deactivate a financial dimension link
 
@@ -97,6 +97,6 @@ To deactivate a financial dimension link, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **Posting** \> **Dimension link**.
 1. On the Action Pane, select **Deactivate link**.
-1. The **Current status** field updates to show that the *Dimension link is inactive*, and the color of the button is red. <!-- KFM: The button doesn't change color for me. Just the label. -->
+1. The **Current status** field updates to show that the *Dimension link is inactive*.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
