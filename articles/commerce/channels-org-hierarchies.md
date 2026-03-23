@@ -61,7 +61,7 @@ To add organizations to a hierarchy, follow these steps:
 
 The following image shows an example organization hierarchy. In this example, the legal entity "Contoso Retail" has three cost centers: "Mall," "Online," and "Call Center." The "Mall" cost center has four retail channels: "Atlanta," "Houston," "San Francisco," and "San Jose."
 
-:::image type="content" source="media/hierarchy-valid-combinations.png" alt-text="Screenshot of an example organization hierarchy showing the allowed dimension value combinations for each node.":::
+![Screenshot of an example organization hierarchy showing the allowed dimension value combinations for each node.](media/hierarchy-valid-combinations.png)
 
 If this hierarchy is linked to an account structure that includes both a **Cost center** dimension and a **Retail channel** dimension, the hierarchy controls which combinations are valid. For example, entering a cost center of "Mall" with a retail channel of "Fabrikam" would produce a validation error, because "Fabrikam" isn't listed under "Mall" in the hierarchy.
 
@@ -71,11 +71,11 @@ Organization hierarchies can be linked to account structures to control which di
 
 1. Navigate to the account structure and select **View** > **Relationships**.
 
-   :::image type="content" source="media/account-structure-relationships.png" alt-text="Screenshot showing the View and Relationships option on an account structure.":::
+   ![Screenshot showing the View and Relationships option on an account structure.](media/account-structure-relationships.png)
 
 1. Review which organization hierarchy relationships are included in validation. Any hierarchy that is checked is used to validate dimension value combinations when transactions are entered.
 
-   :::image type="content" source="media/account-structure-hierarchy-included.png" alt-text="Screenshot showing which organization hierarchies are included in account structure validation.":::
+   ![Screenshot showing which organization hierarchies are included in account structure validation.](media/account-structure-hierarchy-included.png)
 
 To view or edit the hierarchies themselves, go to **Organization administration** > **Organizations** > **Organization hierarchies**.
 
