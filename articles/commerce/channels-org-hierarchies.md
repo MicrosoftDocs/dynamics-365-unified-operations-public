@@ -59,9 +59,34 @@ To add organizations to a hierarchy, follow these steps:
 > [!NOTE]
 > A hierarchy can only be published once per calendar day in a given time zone. Each time you publish, the system records the effective date based on the time zone you select. If you later publish using a different time zone, the resulting dates can overlap or collide, which blocks the publish. To avoid this, always use the same time zone when publishing a hierarchy.
 
-The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall," "Outlet," "Online," and "Call Center" channels. Various retail, call center, and online channels can then be added to each.
+The following image shows an example organization hierarchy. In this example, the legal entity "Contoso Retail" has three cost centers: "Mall," "Online," and "Call Center." The "Mall" cost center has four retail channels: "Atlanta," "Houston," "San Francisco," and "San Jose."
 
-:::image type="content" source="media/hierarchy-designer.png" alt-text="Screenshot of the example hierarchy designer.":::
+:::image type="content" source="media/hierarchy-valid-combinations.png" alt-text="Screenshot of an example organization hierarchy showing the allowed dimension value combinations for each node.":::
+
+If this hierarchy is linked to an account structure that includes both a **Cost center** dimension and a **Retail channel** dimension, the hierarchy controls which combinations are valid. For example, entering a cost center of "Mall" with a retail channel of "Fabrikam" would produce a validation error, because "Fabrikam" isn't listed under "Mall" in the hierarchy.
+
+## Verify hierarchy relationships in account structures
+
+Organization hierarchies can be linked to account structures to control which dimension value combinations are allowed during transaction entry. To check which hierarchies are linked to an account structure, follow these steps.
+
+1. Navigate to the account structure and select **View** > **Relationships**.
+
+   :::image type="content" source="media/account-structure-relationships.png" alt-text="Screenshot showing the View and Relationships option on an account structure.":::
+
+1. Review which organization hierarchy relationships are included in validation. Any hierarchy that is checked is used to validate dimension value combinations when transactions are entered.
+
+   :::image type="content" source="media/account-structure-hierarchy-included.png" alt-text="Screenshot showing which organization hierarchies are included in account structure validation.":::
+
+To view or edit the hierarchies themselves, go to **Organization administration** > **Organizations** > **Organization hierarchies**.
+
+## Publishing delay for newly published hierarchies
+
+After you publish a new or updated organization hierarchy, it may take up to 24 hours (though typically less) for the changes to take effect in transaction validation. During this period, you may receive validation errors when entering dimension combinations that should be valid under the newly published hierarchy.
+
+If you encounter this issue, you can either:
+
+- Wait for the published hierarchy to take effect.
+- Set the transaction date to the next day to work around the delay.
 
 ## Importing hierarchy data
 
