@@ -107,6 +107,9 @@ If you don't have a production environment deployed already on the old tenant, y
 > [!IMPORTANT]
 > Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process).
 
+> [!IMPORTANT]
+> Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed, see [Securely access customer data by using Customer Lockbox Known Issues](/power-platform/admin/about-lockbox#known-issues).  
+
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a prerequisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime of up to 48 hours.
 
 Before requesting the production environment, ensure that all prerequisites are completed:
