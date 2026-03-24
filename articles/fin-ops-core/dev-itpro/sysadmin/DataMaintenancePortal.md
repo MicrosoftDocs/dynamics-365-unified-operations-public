@@ -39,15 +39,15 @@ To access the Data Maintenance Portal, administrators go to **System administrat
 > [!NOTE]
 > The process automation framework handles the recurrence of data maintenance processes as background processes. Two main types of background processes exist: one for scanning for opportunities and one for running tasks. For more information, see [Process automation framework development](../process-automation/process-automation-framework.md).
 
-## Pausing data maintenance during schema changes
+## Pausing data maintenance actions when in maintenance mode
 
-Data maintenance jobs can interfere with data schema changes, such as changes to financial dimension names, account structures, or database upgrades. If data maintenance jobs run during these operations, they can block dimension tables and cause timeouts or failures.
+Data maintenance jobs can interfere with operations performed in maintenance mode, such as financial dimension activation. If data maintenance jobs run during these operations, they can block tables and cause timeouts or failures.
 
 To prevent interference:
 
 1. Go to **System administration** > **Setup** > **Process automations** and select the **Background processes** tab.
-2. Select **Data maintenance job to find opportunities** and select **Edit**. Set a sleep period to prevent the job from running during the operation.
+2. Select **Data maintenance job to find opportunities** and select **Edit**. Set a sleep period to prevent the job from running while you are in maintenance mode.
 3. Repeat for **Data maintenance job to run fixes**.
 4. Go to **System administration** > **Inquiries** > **Batch jobs** and cancel any currently running data maintenance jobs.
-5. Perform the schema change operation (for example, activate financial dimensions).
+5. Use maintenance mode to perform the schema change operation (for example, activate financial dimensions).
 6. After the operation completes, return to **Process automations** and remove the sleep period so data maintenance resumes normally.
