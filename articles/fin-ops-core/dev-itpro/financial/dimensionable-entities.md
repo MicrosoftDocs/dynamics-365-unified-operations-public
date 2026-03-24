@@ -203,10 +203,4 @@ public void persistEntity(DataEntityRuntimeContext _entityCtx)
 > [!NOTE]
 > This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.
 
-## Data entity model references
-
-If you create a `DimensionCombinationEntity` or `DimensionSetEntity` customization by using the **Add financial Dimensions for OData** add-in in Visual Studio, your custom model must include a reference to the **Dimensions** model. To add the reference, go to **Model Management** > **Update model parameters** in Visual Studio and add **Dimensions** to the referenced model list.
-
-If an extension on one of these entities was previously defined in a model that no longer exists, check **Event Viewer** > **Dynamics** > **Ax-Metadata** to identify which models still hold a reference to the extension.
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
