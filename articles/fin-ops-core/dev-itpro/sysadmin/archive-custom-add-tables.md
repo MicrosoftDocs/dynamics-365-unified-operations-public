@@ -4,14 +4,18 @@ description: Learn how to add related custom tables to existing Microsoft archiv
 author: kehoej99 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 03/09/2026
+ms.date: 03/24/2026
 ms.custom:
+  - bap-template
 ms.reviewer: twheeloc
 
 ---
+
 # Add custom tables to standard archive scenarios
 
-This article describes how to add related custom tables to existing Microsoft archive scenarios. For example, adding a custom settlement table to the General Ledger archive scenario, or adding custom shipment tracking tables to the Sales Order archive scenario.
+[!include [banner](../includes/banner.md)]
+
+This article describes how to add related custom tables to existing Microsoft archive scenarios. For example, you can add a custom settlement table to the General Ledger archive scenario or add custom shipment tracking tables to the Sales Order archive scenario.
 
 ## Overview
 
@@ -41,20 +45,20 @@ Code required - Yes, you must extend the scenario's job contract creator class t
 
 ### Create custom live table
 
-Create your custom transaction table that will be included in the archive scope.
+Create your custom transaction table that you include in the archive scope.
 
 ### Design table structure
 
 Before creating the table, identify:
-1. **Parent table**: Which Microsoft table does this relate to? (for example, `GeneralJournalAccountEntry`, `SalesTable`, `InventJournalTable`)
-2. **Relationship type**: One-to-one or one-to-many?
-3. **Foreign key**: Which field links to the parent?
-4. **Business data**: What additional fields are needed?
+1. **Parent table**: Which Microsoft table does this table relate to? (for example, `GeneralJournalAccountEntry`, `SalesTable`, `InventJournalTable`)
+1. **Relationship type**: Is it one-to-one or one-to-many?
+1. **Foreign key**: Which field links to the parent table?
+1. **Business data**: What additional fields do you need?
 
 ### Create table in Visual Studio
 
-1. Right-click project > **Add** > **New Item** > **Table**
-2. Name your table using your naming convention:
+1. Right-click the project, and then select **Add** > **New Item** > **Table**.
+1. Name your table using your naming convention:
    - Example: `CustomLedgerTransSettlement`
    - Example: `CustomShipmentTracking`
    - Example: `CustomQualityInspection`
@@ -68,7 +72,7 @@ Before creating the table, identify:
 
 **Segregation fields if needed(match parent table):**
 - `DataAreaId` (EDT: DataAreaId) - For legal entity segregation
-- `Partition` (EDT: PartitionKey) - For multi-tenant scenarios
+- `Partition` (EDT: PartitionKey) - For multitenant scenarios
 
 **Business-specific fields:**
 - Add your custom transaction fields
@@ -77,15 +81,15 @@ Before creating the table, identify:
 
 ### Add relation to parent table
 
-1. Expand **Relations** in table designer
-2. Right-click > **New** > **Relation**
-3. Configure relation:
-   - **Name**: Descriptive name (for example, `GeneralJournalAccountEntry`)
-   - **Related Table**: Parent table name
-   - **Cardinality**: ZeroMore (typically)
-4. Add relation constraint:
-   - **Field**: Your foreign key field (for example, `TransRecId`)
-   - **Related Field**: `RecId` on parent table
+1. Expand **Relations** in table designer.
+1. Right-click, select **New**, and then select **Relation**.
+1. Configure relation:
+   - **Name**: Descriptive name (for example, `GeneralJournalAccountEntry`).
+   - **Related Table**: Parent table name.
+   - **Cardinality**: ZeroMore (typically).
+1. Add relation constraint:
+   - **Field**: Your foreign key field (for example, `TransRecId`).
+   - **Related Field**: `RecId` on parent table.
 
 **Example table structure:**
 ```
@@ -101,9 +105,9 @@ CustomLedgerTransSettlement
 
 ### Configure table properties
 
-1. In Visual Studio, select your live table
-2. In Properties window, find **ChangeTrackingEnabled**
-3. Set value to **Yes**
+1. In Visual Studio, select your live table.
+1. In the **Properties** window, find **ChangeTrackingEnabled**.
+1. Set the value to **Yes**.
 
 ### Add archive criteria index (Required)
 
@@ -134,7 +138,7 @@ This index is critical for archive job performance and validation.
 </AxTableIndex>
 ```
 
-###Add reconciliation index for LTR (Required)
+### Add reconciliation index for LTR (Required)
 
 ```xml
 <AxTableIndex>
@@ -159,8 +163,8 @@ This index is critical for archive job performance and validation.
 
 ### Create history table
 
-1. Right-click project > **Add** > **New Item** > **Table**
-2. Name: `[YourTable]History`
+1. Right-click the project, and then select **Add** > **New Item** > **Table**.
+1. Enter a name: `[YourTable]History`.
    - Example: `CustomLedgerTransSettlementHistory`
    - Example: `CustomShipmentTrackingHistory`
 
@@ -179,7 +183,7 @@ Copy all fields from your live table **except**:
 ### Configure history table properties
 
 In table properties:
-1. **Don't copy unique indexes** from live table
+1. **Don't copy unique indexes** from live table.
 
 ### Add indexes for criteria fields
 
@@ -213,19 +217,19 @@ Add indexes on fields used in archive criteria and queries:
 
 ### Create data entity
 
-1. Right-click project > **Add** > **New Item** > **Data Entity**
-2. Name: `[YourTable]BiEntity`
+1. Right-click the project, and then select **Add** > **New Item** > **Data Entity**.
+1. Enter a name: `[YourTable]BiEntity`
    - Example: `CustomLedgerTransSettlementBiEntity`
    - Example: `CustomShipmentTrackingBiEntity`
 
 ### Configure primary data source
 
 1. In entity designer, set **Data Sources**:
-   - **Primary Data Source**: Your live table
-   - Ensure all fields are included
-2. Set field visibility:
-   - All fields must have **Public** visibility
-   - Fields inaccessible externally should still be public for archive
+   - Set **Primary Data Source** to your live table.
+   - Ensure all fields are included.
+1. Set field visibility:
+   - Set all fields to **Public** visibility.
+   - Keep fields that are inaccessible externally as public for archive.
 
 ### Configure critical entity properties
 
@@ -244,12 +248,12 @@ These properties are mandatory for archive and LTR:
 
 ### Enable rowversion support
 
-Follow the steps in: [Entity change tracking](../data-entities/entity-change-track.md)
+Follow the steps in [Entity change tracking](../data-entities/entity-change-track.md).
 
 **Quick steps:**
-1. Add change tracking to data source
-2. Enable rowversion on entity
-3. Test entity in Data Management workspace
+1. Add change tracking to data source.
+1. Enable rowversion on entity.
+1. Test entity in Data Management workspace.
 
 ### Build and test entity
 
@@ -265,77 +269,77 @@ Follow the steps in: [Entity change tracking](../data-entities/entity-change-tra
 
 **Objective:** Make your entity available in Dataverse for long-term retention.
 
-### Automatic publishing (Recommended)
+### Automatic publishing (recommended)
 
-With `Auto Create = Yes` configured:
-1. Virtual entity publishes automatically after first entity sync
-2. May take 24-48 hours for automatic publication
-3. No manual action required
+When you set `Auto Create` to `Yes`:
+1. The virtual entity publishes automatically after the first entity sync.
+1. Automatic publication might take 24 to 48 hours.
+1. No manual action is required.
 
-### Manual publishing (If needed)
+### Manual publishing (if needed)
 
-If you need immediate publishing or automatic didn't work:
+If you need immediate publishing or automatic publishing didn't work:
 
-1. Navigate to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com)
-2. Select your environment
-3. Go to **Settings** > **Product** > **Features**
-4. Find **Dynamics 365 Finance and Operations Virtual Entities**
-5. Search for your entity
-6. Click **Enable** to publish
+1. Go to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+1. Select your environment.
+1. Go to **Settings** > **Product** > **Features**.
+1. Find **Dynamics 365 Finance and Operations Virtual Entities**.
+1. Search for your entity.
+1. Select **Enable** to publish.
 
-### Refresh virtual entity metadata (If needed)
+### Refresh virtual entity metadata (if needed)
 
-If you need to refresh entity metadata after making changes:
+If you need to refresh entity metadata after making changes, use one of the following options:
 
 **Option 1: Manual refresh via Advanced Find**
 
-1. Navigate to **Advanced Find** in your Dataverse environment
-2. Select **Available Finance and Operation entities**
-3. Filter **Name** contains your entity name (for example, `customledgertranssettlementbientity`)
-4. From results, open the record
-5. Click the **Refresh** checkbox
-6. Save the record
+1. Go to **Advanced Find** in your Dataverse environment.
+1. Select **Available Finance and Operation entities**.
+1. Filter **Name** to include your entity name (for example, `customledgertranssettlementbientity`).
+1. From the results, open the record.
+1. Select the **Refresh** checkbox.
+1. Save the record.
 
 **Option 2: Using Power Apps Maker Portal**
 
-1. Navigate to [Power Apps Maker Portal](https://make.powerapps.com)
-2. Go to **Tables** and find your entity
-3. Open the entity and trigger refresh
+1. Go to [Power Apps Maker Portal](https://make.powerapps.com).
+1. Go to **Tables** and find your entity.
+1. Open the entity and trigger refresh.
 
-**Troubleshooting:** See [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival)
+**Troubleshooting:** See [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival).
 
 ### Configure change tracking and LTR
 
-Third parties (ISVs, partners, and customers) have two approaches to configure entities for long-term retention:
+Third parties (ISVs, partners, and customers) use two approaches to configure entities for long-term retention:
 
 #### Approach 1: Manual configuration (Recommended for most scenarios)
 
-This simpler approach is suitable for most implementations. Manually enable change tracking and LTR for each entity in Power Apps Maker.
+Use this simpler approach for most implementations. Manually enable change tracking and LTR for each entity in Power Apps Maker.
 
 **Steps:**
 
-1. Navigate to [Power Apps Maker Portal](https://make.powerapps.com)
-2. Select your environment > **Tables**
-3. Find your virtual entity (for example, `mserp_customledgertranssettlementbientity`)
-4. Enable change tracking and long-term retention for the entity
+1. Go to [Power Apps Maker Portal](https://make.powerapps.com).
+1. Select your environment > **Tables**.
+1. Find your virtual entity (for example, `mserp_customledgertranssettlementbientity`).
+1. Enable change tracking and long-term retention for the entity.
 
 **Detailed instructions:**
-- [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
-- [Enable change tracking for entities](../data-entities/entity-change-track.md)
+- [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
+- [Enable change tracking for entities](../data-entities/entity-change-track.md).
 
 **Advantages:**
-- Simple and straightforward
-- No solution management expertise required
-- Quick to implement
+- Simple and straightforward.
+- No solution management expertise required.
+- Quick to implement.
 
 #### Approach 2: Automated solution deployment (Advanced)
 
-This approach involves building Dataverse solutions that package your entity configurations for automated deployment across multiple environments.
+Build Dataverse solutions that package your entity configurations for automated deployment across multiple environments.
 
 **Best for:**
-- Multiple environments requiring consistent configuration
-- Organizations with established ALM processes
-- Scenarios requiring version-controlled configurations
+- Multiple environments requiring consistent configuration.
+- Organizations with established ALM processes.
+- Scenarios requiring version-controlled configurations.
 
 For complete instructions on building and deploying Dataverse solutions, see [Configure Dataverse for long-term retention - Option 2](archive-custom.md#option-2-automated-solution-deployment-advanced).
 
@@ -353,11 +357,11 @@ Find the contract creator class for the scenario you're extending:
 ### Create extension in BusinessIntelligence model
 
 > [!IMPORTANT]
-> Create this extension in the **BusinessIntelligence** model, not your base model. This ensures proper layering and dependency management.
+> Create this extension in the **BusinessIntelligence** model, not your base model. This approach ensures proper layering and dependency management.
 
-1. In BusinessIntelligence model project, create new class
-2. Name: `[ExistingCreator]_[YourModel]_Extension`
-3. Add extension attribute:
+1. In the BusinessIntelligence model project, create a new class.
+1. Name: `[ExistingCreator]_[YourModel]_Extension`.
+1. Add the extension attribute.
 
 ```xpp
 using Microsoft.Dynamics.Archive.Contracts;
@@ -443,7 +447,7 @@ private ArchiveJobPostRequest addCustomTableForLongTermRetention(
 
 **Entity name in Dataverse:**
 - Use the Dataverse virtual entity name (starts with `mserp_`)
-- All lowercase in code
+- Use all lowercase in code
 - Example: `tableStr(mserp_customledgertranssettlementbientity)`
 
 ## Step 6: Test archive with custom table
@@ -452,31 +456,31 @@ private ArchiveJobPostRequest addCustomTableForLongTermRetention(
 
 ### Create test data
 
-1. Create parent table record (for example, journal entry)
-2. Create related custom table record with foreign key reference
-3. Ensure segregation fields match (`DataAreaId`, etc.)
-4. Add meaningful data to test fields
+1. Create parent table record, such as a journal entry.
+1. Create related custom table record with foreign key reference.
+1. Ensure segregation fields match, like `DataAreaId`.
+1. Add meaningful data to test fields.
 
 ### Create test archive job
 
-1. Navigate to Dynamics 365 finance and operations archive workspace
-2. Select the archive type you extended
-3. Create archive job with criteria that includes your test data
-4. Review job details to verify table count includes your custom table
+1. Go to the Dynamics 365 Finance and Operations archive workspace.
+1. Select the archive type you extended.
+1. Create archive job with criteria that includes your test data.
+1. Review job details to verify table count includes your custom table.
 
 ### Verify job contract
 
-Check Archive service logs for job creation:
-- Verify custom table appears in job contract
-- Confirm JOIN conditions are correct
-- Validate WHERE conditions match criteria
+Check archive service logs for job creation:
+- Verify custom table appears in job contract.
+- Confirm JOIN conditions are correct.
+- Validate WHERE conditions match criteria.
 
 ### Test data movement
 
 **Execute archive job:**
-1. Run the archive job
-2. Monitor job progress
-3. Verify job completes successfully
+1. Run the archive job.
+1. Monitor job progress.
+1. Verify the job completes successfully.
 
 **Verify data in history table:**
 ```sql
@@ -491,17 +495,17 @@ INNER JOIN GeneralJournalAccountEntryHistory p ON c.TransRecId = p.RecId
 ```
 
 **Verify data in managed data lake:**
-- Navigate to Dataverse managed data lake
-- Find CSV files for your custom table
-- Verify records are present
-- Check field values are correct
+- Go to Dataverse managed data lake.
+- Find CSV files for your custom table.
+- Verify records are present.
+- Check field values are correct.
 
 ### Test restore operation
 
-1. Create reversal job for archived data
-2. Execute restore
-3. Verify custom table data returns to live table
-4. Validate parent-child relationships are intact
+1. Create reversal job for archived data.
+1. Run the restore job.
+1. Verify custom table data returns to live table.
+1. Validate parent-child relationships are intact.
 
 ```sql
 SELECT * FROM CustomLedgerTransSettlement WHERE TransRecId = [TestParentRecId]
@@ -509,7 +513,9 @@ SELECT * FROM CustomLedgerTransSettlement WHERE TransRecId = [TestParentRecId]
 
 ## Related articles
 
-- [Archive customization overview](archive-custom.md)
-- [Scenario 1: Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md)
-- [Scenario 3: Build your own custom archive scenario](archive-custom-build-scenario.md)
-- [Configure Dataverse for long-term retention](archive-custom.md#configure-dataverse-for-long-term-retention)
+- [Archive customization overview](archive-custom.md).
+- [Scenario 1: Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md).
+- [Scenario 3: Build your own custom archive scenario](archive-custom-build-scenario.md).
+- [Configure Dataverse for long-term retention](archive-custom.md#configure-dataverse-for-long-term-retention).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

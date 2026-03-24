@@ -308,7 +308,17 @@ items:
           - name: Set up and manage archive data in finance and operations apps
             href: sysadmin/archive-setup-manage.md
         - name: Archive customization
-          href: sysadmin/archive-custom.md
+          items: 
+          - name: Archive customization
+            href: sysadmin/archive-custom.md
+          - name: Add custom fields to Microsoft-managed tables
+            href: sysadmin/archive-custom-fields.md 
+          - name: Add custom tables to standard archive scenarios
+            href: sysadmin/archive-custom-tables.md
+          - name: Build your own custom archive scenario
+            href: sysadmin/archive-build-custom-scenario.md
+          - name: Archive table naming reference
+            href: sysadmin/archive-table-naming.md
         - name: View archive data
           href: sysadmin/archive-view.md
         - name: Archive data scenarios

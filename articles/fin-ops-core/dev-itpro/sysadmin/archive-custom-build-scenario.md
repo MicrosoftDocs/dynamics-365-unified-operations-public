@@ -6,10 +6,14 @@ ms.author: Weijiesa
 ms.topic: how-to
 ms.date: 03/09/2026
 ms.custom:
+  - bap-template
 ms.reviewer: twheeloc
 
 ---
+
 # Scenario 3: Build your own custom archive scenario
+
+[!include [banner](../includes/banner.md)]
 
 This article describes how to build a complete custom archive scenario from scratch using only custom tables. This allows you to archive custom business transactions independently of Microsoft-managed archive scenarios.
 
@@ -884,3 +888,5 @@ Before deploying to production:
 - [Scenario 1: Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md)
 - [Scenario 2: Add custom tables to standard scenarios](archive-custom-add-tables.md)
 - [Configure Dataverse for long-term retention](archive-custom.md#configure-dataverse-for-long-term-retention)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

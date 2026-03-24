@@ -4,16 +4,20 @@ description: Reference documentation showing how Microsoft-provided tables are n
 author: kehoej99 
 ms.author: Weijiesa 
 ms.topic: reference
-ms.date: 01/27/2026
+ms.date: 03/24/2026
 ms.custom:
+  - bap-template
 ms.reviewer: twheeloc
 
 ---
+
 # Archive table naming reference
+
+[!include [banner](../includes/banner.md)]
 
 This reference shows how Microsoft-provided tables are named across the archive framework layers. Each row maps the same logical entity as it moves through the archive pipeline: from the live transaction table in Dynamics 365 finance and operations, to the history table, to the finance and operations data entity, and finally to the Dataverse-managed data lake table.
 
-**Use this reference to:**
+## Use this reference to
 - Understand naming conventions across archive layers
 - Look up corresponding table names when implementing customizations
 - Verify entity names for your archive job contracts
@@ -134,3 +138,5 @@ The following table lists all Microsoft-provided archive scenarios and their cor
 - [Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md)
 - [Add custom tables to standard scenarios](archive-custom-add-tables.md)
 - [Build your own custom archive scenario](archive-custom-build-scenario.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
