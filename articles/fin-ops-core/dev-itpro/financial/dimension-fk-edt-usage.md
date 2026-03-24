@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 When creating fields with foreign keys to financial dimension tables, you must select the correct extended data type (EDT). Both the foreign key relation and the correct EDT are necessary for the dimension framework to function properly. Using the incorrect EDT can result in data corruption and cause unintended behavioral differences within the application.
 
-The dimension framework contains reference scanners and data maintenance actions that identify dimension usage. Using the incorrect EDT prevents these scanners from detecting the dimension usage. Additionally, these scanners are used to support conversion of financial dimensions to financial tags for improved performance, and incorrect EDTs can prevent that conversion from detecting all references.
+The dimension framework contains reference scanners and data maintenance actions that identify dimension usage. Using the incorrect EDT prevents these scanners from detecting the dimension usage.
 
 ## EDT reference guide
 
@@ -45,13 +45,13 @@ There are five main EDTs used in the dimension framework.
 
 - **Foreign key to:** DimensionAttributeValueCombination
 - **Use for:** Non-ledger account types where a companion account type enum (typically `LedgerJournalACType`) determines the backing entity. The value is a single-segment DAVC referencing an entity such as Customer, Vendor, Bank, Fixed Asset, or Project.
-- **Examples:** A general journal line where the account type is set to Bank and the account field holds a single bank account value.
+- **Examples:** LedgerDimension and OffsetLedgerDimension on the general journal. If you select Ledger as the account type, you can enter a full ledger account. But if you select Customer or Vendor, you can select a customer or vendor for the LedgerDimension.
 
 ### DimensionDynamicDefaultAccount
 
 - **Foreign key to:** DimensionAttributeValueCombination
 - **Use for:** Scenarios where the dimension value could come from a default account or a non-ledger account such as Customer or Vendor.
-- **Examples:** Default offset accounts defined on header tables that are defaulted to all lines on the document/journal, default offset accounts for project expenses.
+- **Examples:** The Travel and Expense payment method, where you set a default offset account based on the payment method. You can select Ledger, Worker, Bank, or Vendor as the account type and then set the offset account accordingly. It's similar to DimensionDynamicAccount, but instead of being the foreign key on the line itself, it's on the settings table that defines a default value.
 
 ## Decision matrix
 
