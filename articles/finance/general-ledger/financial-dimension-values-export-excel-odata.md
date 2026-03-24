@@ -42,6 +42,6 @@ If a value is visible on the **Financial dimension values** page but missing fro
 
 ## Making values available through the OData add-in or DMF framework
 
-To make a value available through the OData add-in or DMF framework, import a property override for it using the **Financial dimension values entity** — for example, setting an *Active from* date or a *Suspended* status. Once an override is imported, the value appears in subsequent OData add-in workbooks and DMF exports.
+If a dimension value doesn't appear in OData add-in workbooks or DMF exports, it's because no property has been set for it. To make the value available, set any property on it — for example, an *Active from* date or a *Suspended* status. You can do this directly on the **Financial dimension values** page by selecting the value and updating its properties, or in bulk by importing overrides through the **Financial dimension values entity** via DMF. Once a property is set, the value appears in subsequent OData add-in workbooks and DMF exports.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
