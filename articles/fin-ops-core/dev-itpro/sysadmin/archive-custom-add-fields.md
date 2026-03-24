@@ -28,7 +28,7 @@ Components involved:
 - Entity extensions for finance and operations data entities
 - Dataverse virtual entities refresh
 
-No code changes needed - You don't need to modify job contract creator classes. The framework automatically includes your custom fields in archive operations.
+No code changes are needed. You don't need to modify job contract creator classes. The framework automatically includes your custom fields in archive operations.
 
 ## Prerequisites
 
@@ -84,7 +84,7 @@ If the Microsoft-managed table doesn't already have this property enabled, you m
 # Synchronize database to create the field in SQL Server
 ```
 
-For more information, see [Add fields to tables through extension](../extensibility/add-field-extension.md).
+Learn more in [Add fields to tables through extension](../extensibility/add-field-extension.md).
 
 ### Add custom fields to history table
 
@@ -183,7 +183,7 @@ If the base entity has `Auto Create = Yes` and `Auto Refresh = Yes` set:
 
 If automatic sync doesn't occur or you need an immediate refresh, use one of these methods:
 
-Manual refresh via advanced find
+To manually refresh via advanced find, follow these steps:
 
 1. Go to **Advanced find** in your Dataverse environment.
 1. Select **Available Finance and Operation entities**.
@@ -193,7 +193,7 @@ Manual refresh via advanced find
 1. Save the record.
 1. Wait for refresh to complete.
 
-Using Power Apps Maker Portal
+To refresh using Power Apps Maker Portal, follow these steps:
 
 1. Go to [Power Apps Maker Portal](https://make.powerapps.com).
 1. Select your environment.
@@ -201,9 +201,11 @@ Using Power Apps Maker Portal
 1. Search for your entity (for example, `mserp_salestablebiEntity`).
 1. Open the entity and trigger refresh.
 
-If the refresh doesn't work, see [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival).
+If the refresh doesn't work, follow the guidance in [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival).
 
-#### Verify field appears in entity
+#### Verify field appears in the entity
+
+To vrify field appears in the entity, follow these steps:
 
 1. In Power Apps, open the virtual entity.
 1. Go to **Columns** tab.
@@ -212,9 +214,9 @@ If the refresh doesn't work, see [Virtual entity refresh troubleshooting](archiv
 
 #### Test archive and restore
 
-Verify that archive jobs include your custom field data throughout the archive lifecycle.
+Verify that archive jobs include your custom field data throughout the archive lifecycle. Create a test archive job.
 
-Create test archive job
+To create a test archive job, follow these steps:
 
 1. Go to the Dynamics 365 finance and operations archive workspace.
 1. Select the relevant archive type. For example, **Sales order archive** or **General ledger archive**.
@@ -232,7 +234,7 @@ SELECT CustomField, * FROM SalesTableHistory WHERE RecId = [TestRecId]
 SELECT CustomField, * FROM GeneralJournalAccountEntryHistory WHERE RecId = [TestRecId]
 ```
 
-Test the restore operation:
+To test the restore operation, follow these steps:
 
 1. Create a reversal (restore) job for the archived data.
 1. Execute the restore operation.

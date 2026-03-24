@@ -22,11 +22,13 @@ This article describes how to add related custom tables to existing Microsoft ar
 This scenario applies when you have custom tables that are related to Microsoft-managed tables and should be archived together. The custom tables have foreign key relationships to the standard tables.
 
 Example scenarios:
+
 - Custom ledger settlement table related to `GeneralJournalAccountEntry`
 - Custom shipment tracking table related to `SalesTable`
 - Custom quality inspection table related to `InventJournalTable`
 
 Components involved:
+
 - Custom live tables (new)
 - Custom history tables (new)
 - Custom finance and operations data entities (new)
@@ -50,10 +52,11 @@ Create your custom transaction table that you include in the archive scope.
 ### Design table structure
 
 Before creating the table, identify:
+
 1. **Parent table**: Which Microsoft table does this table relate to? (for example, `GeneralJournalAccountEntry`, `SalesTable`, `InventJournalTable`)
 1. **Relationship type**: Is it one-to-one or one-to-many?
 1. **Foreign key**: Which field links to the parent table?
-1. **Business data**: What additional fields do you need?
+1. **Business data**: What other fields do you need?
 
 ### Create table in Visual Studio
 
@@ -66,15 +69,18 @@ Before creating the table, identify:
 ### Add required fields
 
 **Foreign key to parent table:**
+
 - Field name convention: `[ParentTable]RecId` (for example, `TransRecId`, `SalesRecId`)
 - Type: Int64
 - Relation to parent table's `RecId`
 
 **Segregation fields if needed(match parent table):**
+
 - `DataAreaId` (EDT: DataAreaId) - For legal entity segregation
 - `Partition` (EDT: PartitionKey) - For multitenant scenarios
 
 **Business-specific fields:**
+
 - Add your custom transaction fields
 - Follow Dynamics 365 finance and operations field naming conventions
 - Use appropriate Extended Data Types (EDTs)
@@ -92,6 +98,7 @@ Before creating the table, identify:
    - **Related Field**: `RecId` on parent table.
 
 **Example table structure:**
+
 ```
 CustomLedgerTransSettlement
 ├── RecId (Int64, Primary Key)
@@ -171,10 +178,12 @@ This index is critical for archive job performance and validation.
 ### Mirror all fields from live table
 
 Copy all fields from your live table **except**:
+
 - `SysRowVersion` (system-managed)
 - `SysDataState` (system-managed)
 
 **All other fields must be identical:**
+
 - Same field names
 - Same data types
 - Same EDTs
@@ -183,6 +192,7 @@ Copy all fields from your live table **except**:
 ### Configure history table properties
 
 In table properties:
+
 1. **Don't copy unique indexes** from live table.
 
 ### Add indexes for criteria fields
@@ -251,6 +261,7 @@ These properties are mandatory for archive and LTR:
 Follow the steps in [Entity change tracking](../data-entities/entity-change-track.md).
 
 **Quick steps:**
+
 1. Add change tracking to data source.
 1. Enable rowversion on entity.
 1. Test entity in Data Management workspace.
@@ -272,6 +283,7 @@ Follow the steps in [Entity change tracking](../data-entities/entity-change-trac
 ### Automatic publishing (recommended)
 
 When you set `Auto Create` to `Yes`:
+
 1. The virtual entity publishes automatically after the first entity sync.
 1. Automatic publication might take 24 to 48 hours.
 1. No manual action is required.
@@ -324,10 +336,12 @@ Use this simpler approach for most implementations. Manually enable change track
 1. Enable change tracking and long-term retention for the entity.
 
 **Detailed instructions:**
+
 - [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 - [Enable change tracking for entities](../data-entities/entity-change-track.md).
 
 **Advantages:**
+
 - Simple and straightforward.
 - No solution management expertise required.
 - Quick to implement.
@@ -337,6 +351,7 @@ Use this simpler approach for most implementations. Manually enable change track
 Build Dataverse solutions that package your entity configurations for automated deployment across multiple environments.
 
 **Best for:**
+
 - Multiple environments requiring consistent configuration.
 - Organizations with established ALM processes.
 - Scenarios requiring version-controlled configurations.
@@ -350,6 +365,7 @@ For complete instructions on building and deploying Dataverse solutions, see [Co
 ### Locate existing job contract creator
 
 Find the contract creator class for the scenario you're extending:
+
 - General Ledger: `LedgerArchiveAutomationJobRequestCreator`
 - Sales Order: `SalesOrderArchiveAutomationJobRequestCreator`
 - Inventory Journal: `InventJournalArchiveAutomationJobRequestCreator`
@@ -432,20 +448,24 @@ private ArchiveJobPostRequest addCustomTableForLongTermRetention(
 ### Key implementation points
 
 **Parent table specification:**
+
 - Must match exactly the parent table name in the scenario
 - Typos in parent table name cause validation failures
 
 **JOIN conditions:**
+
 - Must match actual foreign key relationships
 - Use exact field names from both tables
 - Only `Equals` operator supported for JOINs
 
 **WHERE conditions:**
+
 - Must include same segregation fields as parent (for example, `DataAreaId`)
-- Additional filters are optional
+- Other filters are optional
 - Use appropriate operators (`Equals`, `GreaterThan`, `LessThan`, etc.)
 
 **Entity name in Dataverse:**
+
 - Use the Dataverse virtual entity name (starts with `mserp_`)
 - Use all lowercase in code
 - Example: `tableStr(mserp_customledgertranssettlementbientity)`
@@ -466,11 +486,12 @@ private ArchiveJobPostRequest addCustomTableForLongTermRetention(
 1. Go to the Dynamics 365 Finance and Operations archive workspace.
 1. Select the archive type you extended.
 1. Create archive job with criteria that includes your test data.
-1. Review job details to verify table count includes your custom table.
+1. Review job detail to verify table count includes your custom table.
 
 ### Verify job contract
 
 Check archive service logs for job creation:
+
 - Verify custom table appears in job contract.
 - Confirm JOIN conditions are correct.
 - Validate WHERE conditions match criteria.
@@ -478,11 +499,13 @@ Check archive service logs for job creation:
 ### Test data movement
 
 **Execute archive job:**
+
 1. Run the archive job.
 1. Monitor job progress.
 1. Verify the job completes successfully.
 
 **Verify data in history table:**
+
 ```sql
 -- Check custom table data moved to history
 SELECT * FROM CustomLedgerTransSettlementHistory
@@ -495,6 +518,7 @@ INNER JOIN GeneralJournalAccountEntryHistory p ON c.TransRecId = p.RecId
 ```
 
 **Verify data in managed data lake:**
+
 - Go to Dataverse managed data lake.
 - Find CSV files for your custom table.
 - Verify records are present.

@@ -18,6 +18,7 @@ ms.reviewer: twheeloc
 This reference shows how Microsoft-provided tables are named across the archive framework layers. Each row maps the same logical entity as it moves through the archive pipeline: from the live transaction table in Dynamics 365 finance and operations, to the history table, to the finance and operations data entity, and finally to the Dataverse-managed data lake table.
 
 ## Use this reference to
+
 - Understand naming conventions across archive layers
 - Look up corresponding table names when implementing customizations
 - Verify entity names for your archive job contracts
@@ -78,7 +79,7 @@ The following table lists all Microsoft-provided archive scenarios and their cor
 | | TAXTRANS\_RU | TAXTRANSHISTORY\_RU | TaxtransruBiEntity | mserp\_TaxtransruBiEntity |
 | | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRY | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRYHISTORY | TaxtranssubledgerjournalaccountentryBiEntity | mserp\_TaxtranssubledgerjournalaccountentryBiEntity |
 | | TAXTRANS\_TH | TAXTRANSHISTORY\_TH | TaxtransthBiEntity | mserp\_TaxtransthBiEntity |
-| | TAXTRANS\_W | TAXTRANSHISTORY\_W | TaxtranswBiEntity | mserp\_TaxtranswBiEntity | 
+| | TAXTRANS\_W | TAXTRANSHISTORY\_W | TaxtranswBiEntity | mserp\_TaxtranswBiEntity |
 | Commerce transaction | RetailTransactionTable | RetailTransactionTableHistory | RetailTransactionTableBIEntity | mserp\_RetailTransactionTableBIEntity |
 | | RetailTransactionCashManagementTrans | RetailTransactionCashManagementTransHistory | RetailTransactionCashManagementTransBIEntity | mserp\_RetailTransactionCashManagementTransBIEntity |
 | | RetailTransactionFiscalCustomer | RetailTransactionFiscalCustomerHistory | RetailTransactionFiscalCustomerBIEntity | mserp\_RetailTransactionFiscalCustomerBIEntity |
