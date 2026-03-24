@@ -312,11 +312,11 @@ items:
           - name: Archive customization
             href: sysadmin/archive-custom.md
           - name: Add custom fields to Microsoft-managed tables
-            href: sysadmin/archive-custom-fields.md 
+            href: sysadmin/archive-custom-add-fields.md
           - name: Add custom tables to standard archive scenarios
             href: sysadmin/archive-custom-add-tables.md
           - name: Build your own custom archive scenario
-            href: sysadmin/archive-custom-build-custom-scenario.md
+            href: sysadmin/archive-custom-build-scenario.md
           - name: Archive table naming reference
             href: sysadmin/archive-tables-reference.md
         - name: View archive data
