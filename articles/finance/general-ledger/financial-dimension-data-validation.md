@@ -1,10 +1,10 @@
 ---
 title: Dimension data validation
-description: Learn how to validate the data integrity of ledger account combinations and default dimension sets in Dynamics 365 Finance.
+description: Learn how to validate journal entries and dimension data in Dynamics 365 Finance, including how to use the Validate and Simulate posting options on journal lines.
 author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 03/02/2026
+ms.date: 03/23/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,9 +17,33 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../includes/banner.md)]
 
-Starting in version 10.0.39, you can validate whether a ledger account or default dimension combination is structurally valid using the **Dimension data validation** page at **General ledger** > **Chart of accounts** > **Dimensions** > **Dimension data validation**.
+Before you post a journal, you can check your entries for errors. There are two ways to validate dimension data: directly from journal lines in the user interface, or by using the **Dimension data validation** page.
 
-## Run a validation
+## Validate journal lines
+
+You can validate entries directly from any journal. From the journal, select **Lines** on the Action Pane to open the journal lines. Then, on the Action Pane, select the **Validate** dropdown to access the following options:
+
+- **Validate** – Checks all journal lines for errors such as missing accounts, invalid dimension combinations, or amounts that don't balance. Any issues are displayed as messages so you can correct them before posting.
+- **Validate voucher only** – Checks only the voucher-level rules, such as whether the voucher balances by currency, without running the full set of line-level checks.
+- **Simulate posting** – Runs the full posting process without actually creating any accounting entries. Use this option to see exactly what would be posted, including generated distributions, so you can verify the results before committing.
+
+[![Validate dropdown on journal lines showing Validate, Validate voucher only, and Simulate posting options.](./media/validate-transaction-journal-ui.png)](./media/validate-transaction-journal-ui.png)
+
+## Validate from dimension fields
+
+You can also trigger validation directly from any account or dimension field without navigating away from your current page.
+
+On a segmented entry control, right-click the account field and select **Validate data integrity**.
+
+[![Validate data integrity option on a segmented entry control.](./media/dimension-data-validation-sec.png)](./media/dimension-data-validation-sec.png)
+
+On a dimension entry control, select **Options** > **Validate data integrity**.
+
+[![Validate data integrity option on a dimension entry control.](./media/dimension-data-validation-dec.png)](./media/dimension-data-validation-dec.png)
+
+## Validate by record ID
+
+For advanced troubleshooting, you can validate whether a specific ledger account or default dimension combination is structurally valid by using the **Dimension data validation** page at **General ledger** > **Chart of accounts** > **Dimensions** > **Dimension data validation**.
 
 Enter the following information and select **Run**:
 
@@ -33,17 +57,5 @@ Enter the following information and select **Run**:
 The **Is valid** field shows whether the combination or set is valid. Select **Detailed results** to see the individual checks that were performed.
 
 [![Dimension data validation detailed results.](./media/dimension-data-validation-detailed-results.png)](./media/dimension-data-validation-detailed-results.png)
-
-## Validate from the UI
-
-You can also trigger validation directly from any account or dimension field in the UI without navigating to the **Dimension data validation** page.
-
-On a segmented entry control, right-click the account field and select **Validate data integrity**.
-
-[![Validate data integrity option on a segmented entry control.](./media/dimension-data-validation-sec.png)](./media/dimension-data-validation-sec.png)
-
-On a dimension entry control, select **Options** > **Validate data integrity**.
-
-[![Validate data integrity option on a dimension entry control.](./media/dimension-data-validation-dec.png)](./media/dimension-data-validation-dec.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
