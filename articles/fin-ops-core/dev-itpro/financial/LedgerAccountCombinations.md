@@ -433,7 +433,7 @@ The **DimensionAttributeValueCombination** and **DimensionAttributeValueSet** ta
 
 The indexes on these columns are mandatory. Without them, queries against unpivoted columns fall back to table scans, which would be worse than the original normalized approach. Don't remove these indexes.
 
-Some account types (such as Customer, Vendor, Bank, and Project) are entered through the Segmented Entry Control on journal lines but are single-value references rather than multi-segment ledger accounts. Because they share the same control and data model, the system auto-generates these as **SystemGeneratedAttribute** dimension types, which also produce unpivoted columns and indexes.
+Some account types (such as Customer, Vendor, Bank, and Project) are entered through the [Segmented Entry Control](/dynamics365/fin-ops-core/dev-itpro/financial/segmented-entry-control-migration-guidance) on journal lines but are single-value references rather than multi-segment ledger accounts. Because they share the same control and data model, the system auto-generates these as **SystemGeneratedAttribute** dimension types, which also produce unpivoted columns and indexes.
 
 #### Insert performance and highly variable dimensions
 
