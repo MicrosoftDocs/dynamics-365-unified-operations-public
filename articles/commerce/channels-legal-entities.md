@@ -67,7 +67,7 @@ The following image shows details of an example legal entity.
 The country or region you set on a legal entity's primary address controls which localization features are available to that entity, such as tax rules and statutory reporting. After financial transactions have been posted for a legal entity, this country or region can no longer be changed through the application. This is by design to protect the integrity of posted financial data.
 
 > [!IMPORTANT]
-> If the legal entity is currently registered in Denmark, changing its country or region is not permitted under any circumstances due to legal regulations. The only option in this case is to create a new legal entity in the intended country or region.
+> If the legal entity is currently registered in Denmark, changing its country or region is not permitted under any circumstances due to legal regulations. The only option in this case is to create a new legal entity in the intended country or region. For further Denmark-specific legislation, see the [Danish Bookkeeping Act](/dynamics365/finance/localizations/denmark/emea-dnk-registration). 
 
 If you need to correct the country or region for a legal entity with posted transactions, contact Microsoft Support. This is not a self-service operation and requires product team approval.
 
