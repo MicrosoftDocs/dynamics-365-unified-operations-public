@@ -415,6 +415,9 @@ If you replicate the **CustTable** record to another company (RUMF) by copying t
 
 There is no workaround. Don't replicate dimension foreign key values between data areas.
 
+> [!NOTE]
+> An exception exists when all financial dimensions are global (not company-specific) and all companies use a single chart of accounts. In that configuration, single record sharing (SRS) may be configured for dimension foreign key references, because no company-specific backing records are involved.
+
 ### AccountStructure column on DimensionAttributeValueCombination
 
 Many rows in the **DimensionAttributeValueCombination** (DAVC) table have a blank **AccountStructure** column. This is by design and doesn't indicate data corruption.

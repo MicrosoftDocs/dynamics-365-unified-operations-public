@@ -44,7 +44,7 @@ There are five main EDTs used in the dimension framework.
 ### DimensionDynamicAccount
 
 - **Foreign key to:** DimensionAttributeValueCombination
-- **Use for:** Non-ledger account types where a companion account type enum (typically `LedgerJournalACType`) determines the backing entity. The value is a single-segment DAVC referencing an entity such as Customer, Vendor, Bank, Fixed Asset, or Project.
+- **Use for:** Scenarios where the dimension value could come from ledger accounts or a non-ledger account such as Customer and Vendor
 - **Examples:** LedgerDimension and OffsetLedgerDimension on the general journal. If you select Ledger as the account type, you can enter a full ledger account. But if you select Customer or Vendor, you can select a customer or vendor for the LedgerDimension.
 
 ### DimensionDynamicDefaultAccount
