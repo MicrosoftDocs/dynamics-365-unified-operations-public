@@ -379,6 +379,8 @@ Set up units of measure.
 
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices: 
 
+:::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
+
 ### Start submission of electronic documents
 
 go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
@@ -439,6 +441,12 @@ Receive electronic invoices:
 View receipt logs for processed electronic invoices: go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
 View successfully received invoices: go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
+
+## Appendix
+
+### List of Electronic Reporting configurations
+
+aaa
 
 ## More information
 
