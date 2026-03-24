@@ -69,7 +69,7 @@ The first step is to create a view in the same model as your backing table. Befo
       + **Name** – This is the description, which is typically the **Name** or **Description** field. It is a string up to 60 characters.
 
     > [!WARNING]
-    > Don't extend the `DimensionValue` extended data type (EDT) beyond its supported size. The **Value** field supports a maximum of 30 characters and the **Name** field supports a maximum of 60 characters. Changing the type to **Memo** is not supported. Exceeding these limits or using an unsupported type causes dimension and dimension value forms to fail to load with buffer overflow or invalid type errors.
+    > Don't extend the `DimensionValue` extended data type (EDT) beyond its supported size. The view's **Value** and **Name** fields must stay within the backing entity's size limits so the dimension framework can correctly map values from the source table. The **Value** field supports a maximum of 30 characters and the **Name** field supports a maximum of 60 characters. Changing the type to **Memo** is not supported. Exceeding these limits or using an unsupported type causes dimension and dimension value forms to fail to load with buffer overflow or invalid type errors.
 
 1.  You may need to create a **Range** on the view if the backing table removes data. For example, if you are using an Operating unit and only want Department, use the range for that operating unit.
 1.  Right-click **Indexes** and select **New Index**. Select **Value** as the Data field on the **Properties** pane. You can rename the index if needed, however, you need to set **Allow Duplicates** to **No**.
