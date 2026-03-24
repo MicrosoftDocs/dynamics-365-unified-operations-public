@@ -41,7 +41,7 @@ To access the Data Maintenance Portal, administrators go to **System administrat
 
 ## Pausing data maintenance actions when in maintenance mode
 
-Data maintenance jobs can interfere with operations performed in maintenance mode, such as financial dimension activation. If data maintenance jobs run during these operations, they can block tables and cause timeouts or failures.
+Data maintenance jobs can interfere with schema-changing operations performed in maintenance mode, such as deploying new packages, servicing updates, version upgrades, license configuration key changes, country/region-specific key changes, or financial dimension activation. If data maintenance jobs run during these operations, they can block tables and cause timeouts or failures.
 
 To prevent interference:
 
