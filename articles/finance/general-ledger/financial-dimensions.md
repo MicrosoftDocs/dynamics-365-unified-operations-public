@@ -136,36 +136,30 @@ Some entities—such as customers and vendors—don't support direct renaming of
 1. Find the record to change.
 2. Select **Options** > **Record info**.
 3. Select **Rename Primary Key**.
-4. Enter a temporary name (for example, append an underscore) and select **OK**. Acknowledge any dialogs indicating the value will be renamed.
-5. Repeat the steps above to open **Rename Primary Key** again, this time entering the intended name with correct casing.
+4. Enter the new name and select **OK**. Acknowledge any dialogs indicating the value will be renamed.
 
-## Deleting financial dimensions
+## Deleting financial dimensions and dimension values
 
-To help maintain referential integrity of the data, you can rarely delete financial dimensions. If you try to delete a financial dimension, the system evaluates the following criteria:
+To protect data integrity, the system restricts deletion of both financial dimensions and their values. In most cases, neither can be deleted once they've been referenced. Instead of deleting, consider renaming or suspending:
 
-- Was the financial dimension used on any posted or unposted transactions, or in any type of dimension value combination?
-- Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
-- Is the financial dimension part of a default financial dimension integration format?
-- Was the financial dimension set up as a default dimension?
-- Was the financial dimension unselected from the Financial Reporting setup?
+- **Rename** the dimension or value to indicate it shouldn't be used (for example, **\_\_\_DONOTUSE\_DimensionName**). Later, when a new value is needed, you can rename and reuse the old one rather than creating a new one. Reusing existing dimension values can improve application performance.
+- **Suspend** a dimension value to prevent it from being used on new transactions. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**. Select the dimension, select **Dimension values**, select the value, select **Edit**, and mark it as suspended. Suspended values are hidden from lookups but can be renamed and reused later.
 
-If any of these criteria are met, you can't delete the financial dimension.
+### When a financial dimension can't be deleted
+
+A financial dimension can't be deleted if any of the following are true:
+
+- It's used in any active account structure, advanced rule structure, or financial dimension set.
+- It's part of a default financial dimension integration format, or is set up as a default dimension.
+- It's still selected in the Financial Reporting setup.
+- Any dimension value has been created for the dimension — even if the value was never used on a transaction.
 
 > [!NOTE]
 > Starting in Finance version 10.0.27, the system doesn't automatically select financial dimensions for financial reporting setup as they're created.
 
-For custom dimensions, creating any dimension value constitutes a reference. A custom dimension that has had any values created can't be deleted even if those values were never used on a transaction.
+### When a dimension value can't be deleted
 
-In most cases, renaming is preferable to deleting. Rename a retired dimension or value (for example, **\_\_\_DONOTUSE\_DimensionName**) to indicate it's no longer in use — this sidesteps the data integrity constraints that block deletion, whether at the dimension level or on an individual value that has been referenced. If deletion is still required, a thorough assessment of all data references to the dimension's values is needed before any data can be removed.
-
-### Deleting financial dimension values
-
-A dimension value can be deleted only if it has never been used. Values that have been entered in a ledger account, default dimension, or transaction are read-only.
-
-If you can no longer use a value, consider these alternatives to deletion:
-
-- **Rename** the dimension value to indicate it shouldn't be used. For example, add a **\_\_\_DONOTUSE\_** prefix. Later, when a new dimension value is needed, you can rename and reuse the old value rather than creating a new one. This practice of reusing existing dimension values is a best practice and can improve application performance.
-- **Suspend** the dimension value. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**. Select the dimension, select **Dimension values**, select the value to suspend, select **Edit**, and mark it as suspended. Suspended values are hidden from lookups and can't be entered on new transactions, but can be renamed and reused later.
+A dimension value can't be deleted if it has been used on any posted or unposted transaction, or in any dimension value combination such as a ledger account or default dimension. If deletion is still required, a thorough assessment of all data references to the value is needed before any data can be removed.
 
 ### Financial dimensions as legal entities
 
