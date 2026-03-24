@@ -1,0 +1,42 @@
+# Set up and configure impact analysis #
+
+[This article is prerelease documentation and is subject to change.]
+This article explains how system administrators can set up and configure the Impact Analysis Agent to be used to analyze the downstream impact of changes communicated by vendors through e-mail, the Vendor Collaboration Module, as well as to simulate potential changes to orders.
+Prerequisites
+Before you can use the Impact Analysis Agent, your system must meet the following requirements:
+o	You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later, with all available quality updates.
+o	The following features must be turned on in feature management. Select Check for updates if the features aren't shown on your system.
+o	(Production ready Preview) Immersive Home
+o	(Production ready preview) Agent management
+o	(Preview) Disruption Mitigation Agent[LS1.1]
+ Tip
+If you can't enable the Agent management features, make sure that all of the prerequisites are fulfilled, such as version requirements and Copilot Studio billing enablement.
+•	In the Power Platform admin center, make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
+o	First, install Copilot for finance and operations apps version 1.0.3048.2 or later. If it's already installed, update it to the latest version.
+o	Then, install Copilot in Microsoft Dynamics 365 Supply Chain Management version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
+Configure the source of the impact analysis
+The Impact Analysis can be configured to automatically run when change requests are received by the following vendor communication sources as input:
+•	E-mails analyzed and changes detected by the Supplier Communications Agent <Review and apply purchase order changes received in vendor emails (production ready preview)>
+•	Vendor collaboration module <Vendor collaboration with external vendors>.
+
+To enable the impact analysis to run based on change requests coming through one or both sources, follow these steps:
+1.	Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has permissions to manage the agent configuration.
+2.	Go to Agents > Agents (Preview).
+3.	On the Library tab, for Show impact of changes made to purchase orders with Disruption Mitigation Agent, select Select.
+4.	Select Source to enable vendor emails if using Supplier Communications agent for e-mail communication and/or the Vendor collaboration module. 
+5.	Select Activate.
+If you intend to use the Impact Analysis Agent with the Supplier Communications Agent to automatically analyze the impact of changes communicated in e-mails, additional steps need to be followed outlined in:
+•	<Set up and configure the Supplier Communications Agent (production ready preview)>.
+•	Review and apply purchase order changes received in vendor emails (production ready preview) - Supply Chain Management | Dynamics 365 | Microsoft Learn – Configure the agent to track your email
+If you intend to use the Impact Analysis Agent with the Vendor Collaboration Module, you do not need additional set-up.[LS2.1][AK2.2]
+Test Impact Analysis
+[This article is prerelease documentation and is subject to change.]
+Learn how to test the Impact Analysis Agent in Microsoft Dynamics 365 Supply Chain Management.
+The agent has two independent features:
+•	Review impact of purchase order changes from vendors (with and without accepting changes)
+•	See downstream impact of simulated purchase order line changes (what-if analysis)
+We recommend setting up and testing the See downstream impact of simulated purchase order line changes feature first because it is not dependent on an input source of purchase order changes. After completing the steps outlined in <Set up and configure Impact Analysis>, you will be able to simulate changes on purchase orders in the All Purchase Orders page.
+See <Simulate if purchase order changes have impact>.
+To test the impact analysis on e-mails through the Supplier Communications Agent, follow the steps here to test the Updates from vendors feature in <Test the Supplier Communications Agent (production ready preview)>. On any e-mail received with a change in date or quantity, the impact analysis will be automatically triggered, and you will see the outcome on the same Purchase order receipt and follow-up workspace with:
+•	A “Has Impact” or “No impact” tag under the “Impact” column in the table summarizing the changes
+•	A summary of the impact of the selected changed purchase order line with a button to View details
