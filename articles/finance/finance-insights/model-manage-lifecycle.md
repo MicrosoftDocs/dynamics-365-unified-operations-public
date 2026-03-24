@@ -17,6 +17,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 # Model management lifecycle
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
 

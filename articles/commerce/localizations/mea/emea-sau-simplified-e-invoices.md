@@ -1,28 +1,29 @@
 ---
 title: Generate and submit simplified electronic invoices for Saudi Arabia
-description: This article explains the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
+description: Learn about the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: ilikond
 ms.author: ikondratenko
-ms.date: 09/03/2024
+ms.date: 02/27/2026
 ms.topic: how-to
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
 ms.search.validFrom: 2022-11-21
-
+ms.custom: 
+  - bap-template
 ---
 # Generate and submit simplified electronic invoices for Saudi Arabia
 
 [!include[banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
-> The functionality described in this article is meant to support the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features meant to support the Phase 1 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](emea-sau-qr-code.md). 
+> The functionality described in this article supports the Phase 2 requirements of the e-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features that support the Phase 1 requirements of the e-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](emea-sau-qr-code.md). 
 
-This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. This article also provides guidelines for setting up the functionality.
+This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
 The electronic invoicing functionality that's available for Saudi Arabia in Commerce provides the following capabilities:
 
-- Generate an XML file of a simplified e-invoice when a sales transaction is concluded in Commerce point of sale (POS).
+- Generate an XML file of a simplified e-invoice when a sales transaction concludes in Commerce point of sale (POS).
 - Generate a cryptographic stamp, or a digital signature, for the simplified e-invoice.
 - Generate and print a QR code for the simplified e-invoice that includes the cryptographic stamp.
 - Submit the simplified e-invoice from Commerce headquarters to Saudi Arabian tax authorities (Zakat, Tax and Customs Authority \[ZATCA\]) for reporting purposes.
@@ -31,10 +32,10 @@ For more information about the electronic invoicing requirements for Saudi Arabi
 
 The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follows:
 
-1. When the checkout process is completed for a sales transaction in POS, POS uses Commerce Scale Unit (CSU) to send the Commerce runtime (CRT) a request to generate and digitally sign a simplified e-invoice. The [Fiscal registration framework](../dev-itpro/fiscal-integration-for-retail-channel.md) and an [internal](../dev-itpro/fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector are used to implement the generation and digital signing of simplified e-invoices.
+1. When the checkout process completes for a sales transaction in POS, POS uses Commerce Scale Unit (CSU) to send Commerce runtime (CRT) a request to generate and digitally sign a simplified e-invoice. The [Fiscal registration framework](../dev-itpro/fiscal-integration-for-retail-channel.md) and an [internal](../dev-itpro/fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector are used to implement the generation and digital signing of simplified e-invoices.
 
     > [!NOTE]
-    > If POS is in offline mode, the generation and digital signing of an e-invoice occur in the local copy of CRT on the POS machine.
+    > If POS is in offline mode, the local copy of CRT on the POS machine generates and digitally signs the e-invoice.
 
 1. CRT generates a simplified e-invoice in an XML format. [Electronic reporting (ER)](../../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement the XML format of e-invoices for Saudi Arabia. A common format is used for simplified e-invoices in Commerce and regular tax e-invoices in Dynamics 365 Finance.
 1. CRT sends Commerce headquarters a request to provide a digital certificate.
@@ -52,14 +53,14 @@ The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follo
 
 This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../../welcome.md).
 
-As a prerequisite, you should complete the setup of the electronic invoicing functionality for Saudi Arabia, including the configuration of the Electronic invoicing service. For more information, see [Customer electronic invoices in Saudi Arabia](../../../finance/localizations/mea/emea-sau-e-invoices.md).
+As a prerequisite, complete the setup of the electronic invoicing functionality for Saudi Arabia, including the configuration of the Electronic invoicing service. For more information, see [Customer electronic invoices in Saudi Arabia](../../../finance/localizations/mea/emea-sau-e-invoices.md).
 
-To use the Commerce functionality that is specific to Saudi Arabia, you must complete the following tasks:
+To use the Commerce functionality that's specific to Saudi Arabia, complete the following tasks:
 
 - Set the **Country/region** field to **SAU** (Saudi Arabia) in the primary address of the legal entity.
 - Set the **ISO code** field to **SA** (Saudi Arabia) in the POS functionality profile of every store that's located in Saudi Arabia.
 
-You must also specify the following settings for Saudi Arabia. Note that you must run appropriate distribution jobs after you complete the setup.
+Specify the following settings for Saudi Arabia. Run appropriate distribution jobs after you complete the setup.
 
 1. [Enable Commerce features](#enable-features-for-saudi-arabia) for Saudi Arabia in the **Feature management** workspace.
 1. [Set up value-added tax (VAT)](#set-up-vat-per-saudi-arabian-requirements) per the Saudi Arabian VAT regulations.
@@ -79,21 +80,21 @@ Enable the following features in the **Feature management** workspace:
 
 ### Set up VAT per Saudi Arabian requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../../finance/general-ledger/indirect-taxes-overview.md) and [Configure sales tax codes](../../../finance/localizations/mea/emea-sau-e-invoices.md#configure-sales-tax-codes).
+Create sales tax codes, sales tax groups, and item sales tax groups. Set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../../finance/general-ledger/indirect-taxes-overview.md) and [Configure sales tax codes](../../../finance/localizations/mea/emea-sau-e-invoices.md#configure-sales-tax-codes).
 
-You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Saudi Arabia.
+Specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Saudi Arabia.
 
 ### Configure custom fields to use in receipt formats for sales receipts
 
-You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
+You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup created for.
 
-On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
+On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt layouts. The **Language ID**, **Text ID**, and **Text** values that are shown in the table are examples. You can change them to meet your requirements. However, the **Text ID** values must be unique and be equal to or higher than 900001.
 
 | Language ID | Text ID | Text    |
 |-------------|---------|---------|
 | en-US       | 900001  | QR Code |
 
-On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. The **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
 | Name             | Type    | Caption text ID |
 |------------------|---------|-----------------|
@@ -108,7 +109,7 @@ On the **Commerce parameters** page, on the **Configuration parameters** tab, ad
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+For each required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Field names correspond to the language texts that you defined in the previous section.
 
@@ -122,7 +123,7 @@ For more information about how to work with receipt formats, see [Set up and des
 
 Complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md):
 
-1. [Set up a fiscal registration process](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to Saudi Arabia](#configure-the-fiscal-registration-process).
+1. [Set up a fiscal registration process](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note the settings of the fiscal registration process that are [specific to Saudi Arabia](#configure-the-fiscal-registration-process).
 1. [Set error handling settings](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Enable manual execution of deferred fiscal registration](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
@@ -133,7 +134,7 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce software development kit (SDK):
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Open the last available release branch.
+    1. Open the latest available release branch.
     1. Open **src** \> **FiscalIntegration** \> **ElectronicInvoiceSaudiArabia**.
     1. Download the configuration file for the fiscal connector, **ConnectorSample.xml**.
     1. Download the configuration file for the fiscal document provider, **DocumentProviderSample.xml**.
@@ -150,11 +151,11 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 
 ### Configure the digital signature parameters
 
-To digitally sign and submit simplified e-invoices, you must obtain so-called Cryptographic Stamp Identifiers (CSIDs) from ZATCA. CSIDs are in the form of digital certificates. For more information about how to obtain CSIDs, see [Electronic invoicing onboarding in Saudi Arabia](../../../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md). You must obtain a CSID for each POS register that you will use, because sequential numbering and digital signing of simplified e-invoices are done per POS register.
+To digitally sign and submit simplified e-invoices, you must obtain Cryptographic Stamp Identifiers (CSIDs) from ZATCA. CSIDs come as digital certificates. For more information about how to obtain CSIDs, see [Electronic invoicing onboarding in Saudi Arabia](../../../finance/localizations/mea/gs-e-invoicing-sa-onboarding.md). You must get a CSID for each POS register that you use, because sequential numbering and digital signing of simplified e-invoices happen per POS register.
 
-The digital certificates that will be used to digitally sign simplified e-invoices are stored in Key Vault. For the offline mode of the Store Commerce app, signing can also be done by using a digital certificate that's stored in the local storage of the machine that the Store Commerce app is installed on. The [User-defined certificate profiles for retail stores](../global/certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../../dev-itpro/manage-secrets.md) feature.
+Store the digital certificates that you use to digitally sign simplified e-invoices in Key Vault. For the offline mode of the Store Commerce app, you can also sign by using a digital certificate that's stored in the local storage of the machine where the Store Commerce app is installed. The [User-defined certificate profiles for retail stores](../global/certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../../dev-itpro/manage-secrets.md) feature.
 
-To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](../global/certificate-profiles-for-retail-stores.md#set-up-certificate-profiles). You must configure a separate certificate profile for each CSID that you obtain from ZATCA.
+To configure certificates and certificate profiles that you can use for digital signing, follow the steps in [Set up certificate profiles](../global/certificate-profiles-for-retail-stores.md#set-up-certificate-profiles). You must configure a separate certificate profile for each CSID that you get from ZATCA.
 
 After you configure certificate profiles, follow these steps:
 
@@ -164,7 +165,7 @@ After you configure certificate profiles, follow these steps:
 
 ### Specify ER configurations
 
-You must download the latest versions of the following configurations from the Dataverse repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
+Download the latest versions of the following configurations from the Dataverse repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 - E-invoice generation configurations:
 
@@ -185,9 +186,9 @@ You must also configure legal entity–specific parameters of the e-invoice form
 1. On the **Configurations** page, select the **Sales e-invoice (SA)** format that you imported earlier, and then select **Configurations** \> **Application specific parameters** \> **Setup**.
 1. On the **Application specific parameters** page, select the version of the format configuration that you want to configure the parameters for.
 1. On the **Lookups** FastTab, select the record for the **PaymentMethodSubstitutionLookup** lookup.
-1. On the **Conditions** FastTab, create records to link methods of payment that are configured for customers in the **Accounts receivable** module to payment means that ZATCA defines for e-invoices.
+1. On the **Conditions** FastTab, create records to link methods of payment that you configured for customers in the **Accounts receivable** module to payment means that ZATCA defines for e-invoices.
 1. In the **Lookup result** field, select a payment means code.
-1. In the **Name** field, select a customer payment method that must correspond to the payment means code. If you want the payment means code to be selected when the customer payment method isn't specified, you can select **\*Blank\***. If you want the payment means code to be selected for any customer payment method, you can select **\*Not blank\***.
+1. In the **Name** field, select a customer payment method that must correspond to the payment means code. If you want the payment means code to be selected when the customer payment method isn't specified, select **\*Blank\***. If you want the payment means code to be selected for any customer payment method, select **\*Not blank\***.
 
     The **Line** field is automatically set. It defines the order in which payment means codes are searched for a customer payment method. You can change the order by using the **Move up** and **Move down** buttons.
 
@@ -217,14 +218,14 @@ In Commerce headquarters, follow these steps to set up e-invoice submission para
 
 ### Enable the digital signature in offline mode
 
-To enable the digital signature in offline mode, you must follow these steps after you activate POS on a new device.
+To enable the digital signature in offline mode, follow these steps after you activate POS on a new device.
 
 1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0**, the database is fully synchronized.
 1. Sign out of POS.
 1. Wait for the offline database to be fully synchronized.
 1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0**, the database is fully synchronized.
 1. Restart POS.
 
 ## E-invoice submission
@@ -232,3 +233,5 @@ To enable the digital signature in offline mode, you must follow these steps aft
 To initiate submission of simplified e-invoices to ZATCA, run the **Submit electronic documents** periodic operation in Commerce headquarters.
 
 You can review the submission log on the **Electronic document submission log** page.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

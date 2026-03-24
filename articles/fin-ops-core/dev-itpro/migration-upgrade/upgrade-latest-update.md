@@ -4,7 +4,7 @@ description: Learn about the process for moving to the latest update of finance 
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 11/01/2021
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -24,8 +24,8 @@ For information about the contents of each release of finance and operations, se
 
 For information about One Version service updates, see the [One Version service updates overview](../lifecycle-services/oneversion-overview.md).
 
-> [!Note]
-> For those looking to upgrade to finance and operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX 2012 to finance and operations](upgrade-overview-2012.md).
+> [!NOTE]
+> To upgrade to finance and operations from Microsoft Dynamics AX 2012, see [Upgrade from AX 2012 to finance and operations](upgrade-overview-2012.md).
 
 ## Definitions
 
@@ -33,11 +33,11 @@ For information about One Version service updates, see the [One Version service 
 - **Update** – The process of applying a binary package to an environment to move it from one official release of finance and operations to the next release, for source environments starting with version 8.0. This process has lower downtime requirements and doesn't involve data upgrade. For more information, see the [Rebuild and update](upgrade-latest-update.md#rebuild-and-update) section later in this article.
 
 ## Paths to One Version
-<img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
-There are three primary paths to get to the latest version of finance and operations.  Each path is referenced below with a link to detailed steps.
+:::image type="content" source="../migration-upgrade/media/OneVersion_Paths.png" alt-text="Screenshot of paths to One Version.":::
+You can use three primary paths to get to the latest version of finance and operations. Each path is referenced below with a link to detailed steps.
 
 ### Self-service upgrade
-*Applicable starting version: Microsoft Dynamics 365 Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*<br/>
+*Applicable starting versions: Microsoft Dynamics 365 Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*<br/>
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
 
@@ -54,7 +54,7 @@ This path involves removing Microsoft X++ hotfixes and creating a merged update 
 [Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).
 
 ### Automatic update
-*Applicable starting version: Finance and Operations 8.1.0+*<br/>
+*Applicable starting versions: Finance and Operations 8.1.0+*<br/>
 *Scope: Simple*<br/>
 This path involves configuring your project for continuous updates.
 

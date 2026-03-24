@@ -1,11 +1,10 @@
 ---
 title: Set up a build pipeline for a fiscal integration sample
-description: This article explains how to set up build and release pipelines for a fiscal integration sample from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) so that you can generate and release the Cloud Scale Unit and self-service deployable packages for the sample code.
+description: Learn how to set up build and release pipelines for a fiscal integration sample from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: josaw1
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 10/20/2019
@@ -17,10 +16,10 @@ ms.custom:
 
 [!include[banner](../../../finance/includes/banner.md)]
 
-This article explains how to set up build and release pipelines for a [fiscal integration sample](../dev-itpro/fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK). In this way, you can use the [independent packaging and extension model](../../dev-itpro/build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the sample code.
+This article explains how to set up build and release pipelines for a [fiscal integration sample](../dev-itpro/fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK). By using the [independent packaging and extension model](../../dev-itpro/build-pipeline.md), you can generate and release the Cloud Scale Unit and self-service deployable packages for the sample code.
 
 > [!NOTE]
-> The steps that are described in this article won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For the steps that are required to deploy a fiscal integration sample if you're using the Retail SDK from the developer VM in LCS, see the corresponding fiscal integration sample documentation.
+> The steps in this article don't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For the steps that are required to deploy a fiscal integration sample if you're using the Retail SDK from the developer VM in LCS, see the corresponding fiscal integration sample documentation.
 
 ## Set up a build pipeline in Azure DevOps to generate Cloud Scale Unit extension packages and Retail self-service packages
 
@@ -31,7 +30,7 @@ This article explains how to set up build and release pipelines for a [fiscal in
 1. Select or get an appropriate YAML file from the **Pipeline\\YAML_Files** folder of the [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repo. For more information about how to find a template YAML file for the sample, see the readme.md file of the fiscal integration solution or the public documentation for the fiscal integration sample.
 1. Select **Continue**.
 
-    The YAML file has steps for using a certificate to sign the Scale Unit, Modern POS, and Hardware Station extension installers. The script will look for a certificate file in Azure Key Vault and then use the certificate for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, and certificate name. To sign the certificate by using a timestamp, you must also provide the timestamp server details. For more information, see [Set and retrieve a certificate from Azure Key Vault using the Azure portal](/azure/key-vault/certificates/quick-create-portal).
+    The YAML file has steps for using a certificate to sign the Scale Unit, Modern POS, and Hardware Station extension installers. The script looks for a certificate file in Azure Key Vault and then uses the certificate for signing. To read the certificate from Azure Key Vault, you must provide the application ID, secret, and certificate name. To sign the certificate by using a timestamp, you must also provide the timestamp server details. For more information, see [Set and retrieve a certificate from Azure Key Vault using the Azure portal](/azure/key-vault/certificates/quick-create-portal).
 
     To view the details of the key vault and the timestamp server in the pipeline, create the following variables on the **Variables** tab in your build pipeline, and provide values for them. To help secure the variables, you can select **Secret** as the variable type.
 
@@ -50,10 +49,10 @@ This article explains how to set up build and release pipelines for a [fiscal in
     > [!NOTE]
     > In the names of the Retail self-service extension packages, the asterisk (\*) represents the name of the fiscal integration solution.
     >
-    > Depending on the fiscal integration sample, extensions of some Commerce components may be not needed. Therefore, some of the output files might be omitted.
+    > Depending on the fiscal integration sample, extensions of some Commerce components might not be needed. Therefore, some of the output files might be omitted.
 
 1. Save your changes, and add the build to the queue.
-1. When the build is completed, you can download the packages from **Published Artifacts**:
+1. When the build completes, you can download the packages from **Published Artifacts**:
 
     - **Cloud scale unit package:**
 
@@ -69,8 +68,10 @@ This article explains how to set up build and release pipelines for a [fiscal in
 
 ## Set up a release pipeline for the Cloud Scale Unit extension package
 
-To set up a release pipeline for the Cloud Scale Unit extension package for the fiscal integration sample, follow the steps in [Set up a release pipeline for the Cloud Scale Unit extension package](../../dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-the-cloud-scale-unit-extension-package).
+To set up a release pipeline for the Cloud Scale Unit extension package for the fiscal integration sample, see [Set up a release pipeline for the Cloud Scale Unit extension package](../../dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-the-cloud-scale-unit-extension-package).
 
 ## Set up a release pipeline for Retail self-service packages
 
-To set up a release pipeline for Retail self-service packages for the fiscal integration sample, follow the steps in [Set up a release pipeline for Commerce self-service packages](../../dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-commerce-self-service-packages).
+To set up a release pipeline for Retail self-service packages for the fiscal integration sample, see [Set up a release pipeline for Commerce self-service packages](../../dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-commerce-self-service-packages).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

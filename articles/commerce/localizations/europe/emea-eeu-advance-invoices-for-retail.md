@@ -1,11 +1,10 @@
 ---
 title: Advance invoices for Commerce for Eastern Europe
-description: This article explains how to set up advance notices for Commerce for Eastern Europe.
+description: Learn how to set up advance notices for Microsoft Dynamics 365 Commerce for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Czech Republic, Hungary, Poland
 ms.author: anupamar
 ms.search.validFrom: 2018-10-01
@@ -19,7 +18,7 @@ ms.custom:
 
 The information in this article applies to the Eastern European localization and is specific to the commerce industry.
 
-For Poland, Hungary, and Czech Republic, when a prepayment is received from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes, and it's required to generate and print an advance invoice document that includes the prepayment amount. Additionally, for Poland, advance invoice transactions must be posted in the general ledger.
+For Poland, Hungary, and the Czech Republic, when a customer makes a prepayment through Point of Sale (POS), register the prepayment for tax purposes. Generate and print an advance invoice document that includes the prepayment amount. Additionally, for Poland, post advance invoice transactions in the general ledger.
 
 When the invoice for the sales order is finally posted, the final document should include the advance invoice, and any prepayments should be indicated.
 
@@ -38,7 +37,7 @@ The following scenarios are supported:
 
 ### Enable the functionality to create advance invoices
 
-You must enable the following feature in the **Feature management** workspace:
+Enable the following feature in the **Feature management** workspace:
 
 - Enable posting advance invoices from POS
 
@@ -50,14 +49,14 @@ Then, on the **Commerce parameters** page, on the **Customer orders** tab, on th
 ### Define the parameters for posting advance invoices
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
-2. On the **Updates** tab, on the **Advance invoice** FastTab, set the **Posting profile**, **Sales tax group**, and **Item sales tax group** fields. If these fields are set correctly, the advance invoice will be posted. If these fields aren't set, advance invoices won't be posted.
+1. On the **Updates** tab, on the **Advance invoice** FastTab, set the **Posting profile**, **Sales tax group**, and **Item sales tax group** fields. If you set these fields correctly, the system posts the advance invoice. If you don't set these fields, the system doesn't post advance invoices.
 
 ### Turn off posting of the Sales tax on prepayment journal voucher
 
-The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is turned on. To verify that this requirement is met, follow these steps:
+Don't post the sales tax on prepayment journal voucher if the system turns on advance invoice posting. To verify that this requirement is met, follow these steps:
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
-2. On the **Ledger and sales tax** tab, on the **Payment** FastTab, make sure that the following fields are blank or set to **No**:
+1. On the **Ledger and sales tax** tab, on the **Payment** FastTab, make sure that the following fields are blank or set to **No**:
 
     - Sales tax on prepayment journal voucher
     - Posting profile with prepayment journal voucher
@@ -66,24 +65,23 @@ The Sales tax on prepayment journal voucher must not be posted if advance invoic
 
 ## Print advance invoices
 
-You can print advance invoices from POS on a Microsoft Windows printer that is connected to the hardware station. There are two options for printing an advance invoice from POS:
+You can print advance invoices from POS on a Microsoft Windows printer that the hardware station connects to. You have two options for printing an advance invoice from POS:
 
-- **Print an advance invoice after a transaction is concluded in POS.** This option occurs automatically if an advance invoice was generated and a Windows printer was correctly set up. In this case, only the last advance invoice that is linked to the customer order is printed.
-- **Reprint an advance invoice from the transaction journal.** Select **Show journal** to open the transactions journal, find the customer order, and then select **Print Advance invoice**. In this case, all advance invoices that are linked to the customer order are printed.
+- **Print an advance invoice after a transaction concludes in POS.** This option occurs automatically if an advance invoice is generated and a Windows printer is correctly set up. In this case, only the last advance invoice that links to the customer order is printed.
+- **Reprint an advance invoice from the transaction journal.** Select **Show journal** to open the transactions journal, find the customer order, and then select **Print Advance invoice**. In this case, all advance invoices that link to the customer order are printed.
 
 ### Set up a Windows printer
 
-Follow these steps to enable documents to be printed from POS on a Windows printer that is connected to the hardware station.
+Follow these steps to enable printing documents from POS on a Windows printer that the hardware station connects to.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
-2. Select a hardware profile that is related to the store where the printer is used.
-3. In either the **Printer** section or the **Printer 2** section, update the settings:
+1. Select a hardware profile that's related to the store where you use the printer.
+1. In either the **Printer** section or the **Printer 2** section, update the settings:
 
     - In the **Printer** field, select **Windows driver**.
     - In the **Device name** field, enter the name of the printer.
 
-4. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-5. Select job **1090**, and then select **Run now**.
-
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+1. Select job **1090**, and then select **Run now**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

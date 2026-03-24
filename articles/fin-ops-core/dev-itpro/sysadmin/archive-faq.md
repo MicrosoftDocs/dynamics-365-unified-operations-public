@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: Weijiesa
 ms.author: Weijiesa
 ms.topic: faq
-ms.date: 11/07/2025
+ms.date: 03/09/2026
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -69,8 +69,8 @@ There are two scenarios in this situation as follows:
 Scenario 1 - You have executed the Data Archive scenario in the production environment
 You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
 
->[!Note]
->Ensure no archival jobs are running, as this could interfere with the execution of LTR jobs in the sandbox environment.
+> [!NOTE]
+> Ensure no archival jobs are running, as this could interfere with the execution of LTR jobs in the sandbox environment.
 
 Scenario 2 - You are testing the Data Archive scenario on the sandbox environment and Data Archive isn't enabled in the production environment.
 You need to restore the AXDB from LCS and copy the Dataverse environment from the Power Platform admin center to ensure both environments are identical at the time of the data refresh.
