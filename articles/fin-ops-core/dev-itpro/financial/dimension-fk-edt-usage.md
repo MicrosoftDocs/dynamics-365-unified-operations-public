@@ -33,7 +33,7 @@ There are five main EDTs used in the dimension framework.
 
 - **Foreign key to:** DimensionAttributeValueCombination
 - **Use for:** Multi-segment ledger accounts that include the main account plus financial dimensions.
-- **Examples:** Journal lines where you need the full ledger account combination, transactions that post to the ledger and require all dimensions resolved.
+- **Examples:** Journal lines where you need the full ledger account combination (main account plus all dimensions resolved).
 
 ### LedgerDimensionDefaultAccount
 
@@ -44,8 +44,8 @@ There are five main EDTs used in the dimension framework.
 ### DimensionDynamicAccount
 
 - **Foreign key to:** DimensionAttributeValueCombination
-- **Use for:** Scenarios where the dimension value could come from ledger accounts or a non-ledger account such as Customer or Vendor.
-- **Examples:** Journal lines where dimensions can be dynamic and include non-ledger accounts. The account type for the line should be determined by a field that uses the `LedgerJournalACType` enum.
+- **Use for:** Non-ledger account types where a companion account type enum (typically `LedgerJournalACType`) determines the backing entity. The value is a single-segment DAVC referencing an entity such as Customer, Vendor, Bank, Fixed Asset, or Project.
+- **Examples:** A general journal line where the account type is set to Bank and the account field holds a single bank account value.
 
 ### DimensionDynamicDefaultAccount
 
