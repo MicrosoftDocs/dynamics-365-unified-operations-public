@@ -21,81 +21,49 @@ This article explains how the archive feature in Microsoft Dynamics 365 finance 
 
 The archive framework supports three customization scenarios:
 
-- **Scenario 1: Add custom fields** to Microsoft-managed tables in standard archive scenarios (for example, General Ledger, Sales Order).
-- **Scenario 2: Add custom tables** to standard archive scenarios.
-- **Scenario 3: Build your own custom archive scenario** by using custom tables.
+1. Add custom fields to Microsoft-managed tables in standard archive scenarios. For example, General ledger or Sales order.
+2. Add custom tables to standard archive scenarios.
+3. Build your own custom archive scenario by using custom tables.
 
 > [!NOTE]  
-> **Custom scenario limitation**: When building your own custom archive scenario (Scenario 3), you must use only custom tables. Custom scenarios can't reference Microsoft-managed tables, even as join or lookup dependencies.
+> When building your own custom archive scenario, you only use custom tables. Custom scenarios can't reference Microsoft-managed tables, even as join or lookup dependencies.
 
-## Step-by-step: Creating archive objects
+## Create archive objects
 
-To implement archive customization, create and configure multiple interconnected objects. Understanding this complete architecture helps you plan and execute your customization successfully.
-
-### Object creation sequence
+To implement archive customization, create and configure multiple interconnected objects. 
 
 Follow this sequence to ensure dependencies are correctly established:
+ - Tables in Dynamics 365 finance and operations. Live tables are the source transaction tables that contain active business data.
+ - Set the **`ChangeTrackingEnabled`** property to **`Yes`** on all source (live) tables to enable change tracking for archive operations.
+ - Mirror tables that store archived historical data. These tables store archived data that's finalized but are still needed for infrequent access, reporting, or analytics. History tables use less storage optimization and reduced indexing compared to live tables.
+ - Field mirroring - Must contain all fields from the live table except `SysRowVersion` and `SysDataState` (the platform manages these fields).
+ - Naming convention - Live table name plus "History" suffix (for example, `SalesTable` → `SalesTableHistory`).
 
-### 1. Tables in Dynamics 365 finance and operations
+If there are no indexes on criteria fields in history tables, this prevents reversal job scheduling. The framework validates these indexes exist before allowing reversal operations.
 
-**Live tables** - The source transaction tables that contain active business data.
-
-**Implementation approach by scenario:**
-
-- **Scenario 1 (Custom fields)**: Use table extensions to add fields to existing Microsoft-managed tables.
-- **Scenario 2 and 3 (Custom tables)**: Create new table definitions from scratch.
-
-**Required table property:**
-
-- Set the **`ChangeTrackingEnabled`** property to **`Yes`** on all source (live) tables to enable change tracking for archive operations.
-
-**History tables** - Mirror tables that store archived historical data.
-
-**Purpose**: Store archived data that's finalized but still needed for infrequent access, reporting, or analytics. History tables use less storage optimization and reduced indexing compared to live tables.
-
-**Critical requirements:**
-
-1. **Field mirroring**: Must contain all fields from the live table except `SysRowVersion` and `SysDataState` (the platform manages these fields).
-1. **Naming convention**: Live table name plus "History" suffix (for example, `SalesTable` → `SalesTableHistory`).
-
-**Common mistake to avoid**: Forgetting to add indexes on criteria fields in history tables prevents reversal job scheduling. The framework validates these indexes exist before allowing reversal operations.
-
-### 2. Indexes on live tables
-
+### Indexes on live tables
 All source (live) tables that participate in archive jobs need two types of indexes for optimal performance and proper framework operation.
+ - Archive criteria index - Optimizes archive job filtering, data retrieval and enables efficient identification and processing of records that meet archive criteria.
 
-**Archive criteria index** - Optimizes archive job filtering and data retrieval
-
-**Purpose**: Enables efficient identification and processing of records that meet archive criteria.
-
-**Structure requirements:**
-
-For **root/parent table**:
-
+The structure requirements for root or parent tables:
 - Include all fields used in WHERE conditions for this table
-- Recommended: Place primary segregation field (`DataAreaId`, `Ledger`) as first field
+- Place primary segregation field (`DataAreaId`, `Ledger`) as first field
 - Add as included columns (not index fields): `RecId`, `SysRowVersion`, `SysDataStateCode`
 
-For **child tables**:
-
+The structure requirements for child tables:
 - Include fields used in JOIN conditions to parent table
 - Include fields used in WHERE conditions for this table
 - Add as included columns: `RecId`, `SysRowVersion`, `SysDataStateCode`
 
-**Why this matters**: Without proper criteria indexes, archive jobs perform poorly or fail validation checks during job creation.
+Without proper criteria indexes, archive jobs perform poorly or fail validation checks during job creation.
 
-**Reconciliation index (ArchiveSysVersionIdx)** - Required for long-term retention
+Reconciliation index (ArchiveSysVersionIdx) - Required for long-term retention and enables efficient reconciliation during the LTR marking stage when data is prepared for movement to Dataverse.
 
-**Purpose**: Enables efficient reconciliation during the LTR marking stage when data is prepared for movement to Dataverse.
-
-**Critical requirements:**
-
-- **Must exist on all tables** (both root and child tables) that participate in LTR scenarios
-- **Exact field sequence**: `SysDataStateCode` followed by `SysRowVersion`
-- **Index type**: Nonclustered index
-- **Naming**: Use `ArchiveSysVersionIdx` for consistency
-
-**Structure:**
+### Requirements
+- Must exist on all tables - both root and child tables that participate in LTR scenarios
+- Exact field sequence - `SysDataStateCode` followed by `SysRowVersion`
+- Index type - Nonclustered index
+- Naming - Use `ArchiveSysVersionIdx` for consistency
 
 ```xml
 <AxTableIndex>
@@ -111,19 +79,16 @@ For **child tables**:
 </AxTableIndex>
 ```
 
-**Impact if missing**: LTR reconciliation operations experience severe performance degradation, potentially causing archive jobs to time out or fail.
+If this is missing, LTR reconciliation operations experience severe performance degradation, potentially causing archive jobs to time out or fail.
 
-### 3. Finance and operations data entities for Dataverse integration
+### Finance and operations data entities for Dataverse integration
 
-**Finance and operations data entities** - Data entities that expose table data as virtual entities in Dataverse.
+Finance and operations data entities are the data entities that expose table data as virtual entities in Dataverse. By using virtual entities, Dataverse can access Dynamics 365 finance and operations data. You can store archive data in Dataverse for long-term retention with a minimal SQL Server footprint.
 
-**Purpose**: By using virtual entities, Dataverse can access Dynamics 365 finance and operations data. You can store archive data in Dataverse for long-term retention with a minimal SQL Server footprint.
+Entity naming convention - `[TableName]BiEntity` (for example, `SalesTableBiEntity`, `CustomModuleHeaderBiEntity`).
 
-**Entity naming convention**: `[TableName]BiEntity` (for example, `SalesTableBiEntity`, `CustomModuleHeaderBiEntity`).
-
-**Critical entity properties that you must configure:**
-
-| Property | Required Value | Purpose |
+Entity properties: 
+| Property | Required value | Purpose |
 |----------|---------------|---------|
 | `IsPublic` | Yes | Makes the entity available outside Dynamics 365 finance and operations. |
 | `PublicEntityName` | Entity name | Name exposed to external systems. |
@@ -133,46 +98,39 @@ For **child tables**:
 | `Auto Create` | Yes | Automatically creates virtual entity in Dataverse. |
 | `Auto Refresh` | Yes | Keeps metadata synchronized with Dataverse. |
 
-### 4. Job contract creator classes
+### Job contract creator classes
 
-**Archive job request creator** - X++ classes that build the archive job contract specifying what to archive and how
+Archive job request creator - X++ classes that build the archive job contract specifying what to archive. This constructs the job contract tells the Archive service which tables to process, how they're related, what criteria to use for filtering, and which entities to use for Dataverse.
 
-**Purpose**: Constructs the job contract that tells the Archive service which tables to process, how they're related, what criteria to use for filtering, and which entities to use for Dataverse.
+Two-class pattern for proper layering:
+1. Base class in your module
+     - Contains business logic for archive scenario
+     - Defines table relationships
+     - Handles criteria validation
+     - Doesn't reference entity names to avoid circular dependencies
+2. Extension class in BusinessIntelligence model
+    - Extends the base class by using chain of command
+    - Adds finance and operations data entity references
+    - Configures Dataverse integration
+    - Uses `ArchiveServiceArchiveJobPostRequestBuilder` API
 
-**Two-class pattern for proper layering:**
+BusinessIntelligence model references data entities and your base module shouldn't have dependencies on BusinessIntelligence. This layering approach prevents circular dependencies and maintains clean architecture.
 
-**Base class** (in your module):
+### Key builder methods
 
-- Contains business logic for archive scenario
-- Defines table relationships
-- Handles criteria validation
-- Doesn't reference entity names (to avoid circular dependencies)
+- `addSourceTableForLongTermRetention()` - Adds a table to archive scope with its history table and finance and operations data entity.
+- `addWhereCondition()` - Adds filtering criteria, such as date ranges or status.
+- `addJoinCondition()` - Defines parent-child table relationships.
+- `setJobCriteriaKey()` - Sets partition key for parallel execution.
+- `finalizeArchiveJobPostRequest()` - Builds final contract.
 
-**Extension class** (in BusinessIntelligence model):
+### Parent-child relationships
+- Root tables have no parent specified.
+- Child tables must specify their parent table name.
+- Framework validates that relationships exist.
+- JOIN conditions must match actual foreign key relationships.
 
-- Extends the base class by using Chain of Command
-- Adds finance and operations data entity references
-- Configures Dataverse integration
-- Uses `ArchiveServiceArchiveJobPostRequestBuilder` API
-
-**Why this split?** BusinessIntelligence model references data entities. Your base module shouldn't have dependencies on BusinessIntelligence. This layering approach prevents circular dependencies and maintains clean architecture.
-
-**Key builder methods:**
-
-- `addSourceTableForLongTermRetention()` - Adds a table to archive scope with its history table and finance and operations data entity
-- `addWhereCondition()` - Adds filtering criteria, such as date ranges or status
-- `addJoinCondition()` - Defines parent-child table relationships
-- `setJobCriteriaKey()` - Sets partition key for parallel execution
-- `finalizeArchiveJobPostRequest()` - Builds final contract
-
-**Parent-child relationships:**
-
-- Root tables have no parent specified
-- Child tables must specify their parent table name
-- Framework validates that relationships exist
-- JOIN conditions must match actual foreign key relationships
-
-### 5. Dataverse configuration
+### Dataverse configuration
 
 After you create all Dynamics 365 finance and operations objects, configure Dataverse to enable long-term retention. You have two options: manual configuration (simpler) or automated solution deployment (for multiple environments).
 
@@ -180,121 +138,76 @@ For complete configuration steps and considerations, see [Configure Dataverse fo
 
 ### Development workflow summary
 
-**Typical development sequence:**
+1. Design phase - Identify tables, relationships, and archive criteria.
+1. Create live tables - Extend existing or create new tables with proper fields.
+1. Create history tables - Mirror live tables with appropriate indexes.
+1. Add indexes - Both criteria and reconciliation indexes on live tables.
+1. Create finance and operations data entities - With all required properties configured.
+1. Publish entities - Let `Auto Create` publish to Dataverse automatically or manually publish.
+1. Create job contract - Base class plus finance and operations data entity extension.
+1. Configure Dataverse - Enable CT and LTR (manual or solution-based).
+1. Test - Create test archive job and verify data movement.
 
-1. **Design phase**: Identify tables, relationships, and archive criteria
-1. **Create live tables**: Extend existing or create new tables with proper fields
-1. **Create history tables**: Mirror live tables with appropriate indexes
-1. **Add indexes**: Both criteria and reconciliation indexes on live tables
-1. **Create finance and operations data entities**: With all required properties configured
-1. **Publish entities**: Let `Auto Create` publish to Dataverse automatically (or manual publish)
-1. **Create job contract**: Base class plus finance and operations data entity extension
-1. **Configure Dataverse**: Enable CT and LTR (manual or solution-based)
-1. **Test**: Create test archive job and verify data movement
-
-**For detailed implementation steps, see the scenario-specific guides:**
-
+For additional information about the implementation steps, see the following:
 - [Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md)
 - [Add custom tables to standard scenarios](archive-custom-add-tables.md)
 - [Build your own custom archive scenario](archive-custom-build-scenario.md).
 
-## Implementation scenarios
+#### Implementation scenarios
 
 Choose the scenario that matches your customization needs:
-
-### Scenario 1: Add custom fields to Microsoft-managed tables
-
-Extend existing archive tables, such as General Ledger or Sales Order, by adding custom fields through table and entity extensions.
-
-**Use when:** You need to archive extra fields on standard Microsoft tables.
-
-[View detailed implementation guide →](archive-custom-add-fields.md)
-
-### Scenario 2: Add custom tables to standard scenarios
-
-Add your custom tables as related data to existing Microsoft archive scenarios, such as custom settlement tables linked to General Ledger.
-
-**Use when:** You have custom tables with foreign key relationships to Microsoft-managed tables.
-
-[View detailed implementation guide →](archive-custom-add-tables.md)
-
-### Scenario 3: Build custom archive scenario
-
-Create a new archive scenario for your custom business data, independent of Microsoft scenarios.
+ - Add custom fields to Microsoft-managed tables - Extend existing archive tables, such as General ledger or Sales order, by adding custom fields through table and entity extensions. For more information, see [View detailed implementation guide](archive-custom-add-fields.md).
+ - Add custom tables to standard scenarios - Add your custom tables as related data to existing Microsoft archive scenarios, such as custom settlement tables linked to General ledger. This is can be used when you have custom tables with foreign key relationships to Microsoft-managed tables. For more information, see [View detailed implementation guide](archive-custom-add-tables.md).
+ - Build custom archive scenario - Create a new archive scenario for your custom business data, independent of Microsoft scenarios. Use this when you have standalone custom transaction data unrelated to Microsoft tables. For more information, see [View detailed implementation guide](archive-custom-build-scenario.md).
 
 > [!IMPORTANT]
 > Custom scenarios must include **only custom tables**. Custom scenarios must not reference Microsoft-managed tables at all, even as join or lookup dependencies.
 
-**Use when:** You have standalone custom transaction data unrelated to Microsoft tables.
+### Configure Dataverse for long-term retention
 
-[View detailed implementation guide →](archive-custom-build-scenario.md)
+After you create your custom tables, entities, and indexes in Dynamics 365 finance and operations, configure Dataverse to enable long-term retention. Third parties (ISVs, partners, and customers) have two options:
+1. Manual configuration (Simpler) - Manually enable change tracking and LTR from Power Apps Maker portal.
+2. Automated solution (Advanced) - Build and deploy Dataverse solutions that carry entity configurations.
 
-## Configure Dataverse for long-term retention
-
-After you create your custom tables, entities, and indexes in Dynamics 365 Finance and Operations, you need to configure Dataverse to enable long-term retention. Third parties (ISVs, partners, and customers) have two options:
-
-- **Option 1: Manual configuration (Simpler)** - Manually enable change tracking and LTR from Power Apps Maker portal
-- **Option 2: Automated solution (Advanced)** - Build and deploy Dataverse solutions that carry entity configurations
-
-### Option 1: Manual configuration (Recommended for most scenarios)
-
+### Manual configuration - recommended for most scenarios
 This approach is simpler and doesn't require solution management expertise. You manually configure each entity in the Power Apps Maker portal.
 
-**Prerequisites:**
-
-- You must publish virtual entities from Dynamics 365 Finance and Operations with `Auto Create = Yes`.
+The following prerequisites are required to configure an entity:
+- You must publish virtual entities from Dynamics 365 finance and operations with `Auto Create = Yes`.
 - Your environment must have long-term retention enabled.
 - You must have appropriate permissions in Power Apps.
 
-**Steps:**
-
+To manually configure an entity, follow these steps:
 1. Go to [Power Apps Maker Portal](https://make.powerapps.com).
 1. Select your target environment.
-1. Go to **Tables** and filter by "Available Finance and Operations Entities".
+1. Go to **Tables**. Filter by **Available Finance and Operations Entities**.
 1. Find your custom virtual entities (for example, `mserp_customtablebientity`).
 1. For each entity, enable change tracking and long-term retention.
 1. Repeat for all entities in your archive scope.
 
-**Detailed instructions:**
-
+For more information, see:
 - [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 - [Enable change tracking for entities](../data-entities/entity-change-track.md).
 
-**Advantages:**
-
-- Simple and straightforward.
-- No solution management required.
-- Quick to implement.
-- Easy to modify configurations.
-
-**Disadvantages:**
-
-- Manual configuration needed for each environment.
-- No automated deployment across environments.
-- Configuration not tracked in source control.
-
-### Option 2: Automated solution deployment (Advanced)
-
+### Automated solution deployment
 This approach involves creating a Dataverse solution that packages your entity configurations for automated deployment across environments.
 
-**Prerequisites:**
-
+Required prerequisites:
 - Understanding of Dataverse solutions
 - Development environment for solution creation
 - Deployment pipeline for solution distribution
 
-**Steps:**
-
 #### Create a new Dataverse solution
 
+To create a new Dataverse solution, follow these steps:
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select your development environment.
 1. Go to **Solutions** > **New solution**.
 1. Enter solution details:
-   - **Display name**: `[Your Company] Archive Solution` (for example, "Contoso WHS Archive Solution")
-   - **Name**: Technical name (for example, `ContosoWHSArchive`)
-   - **Publisher**: Select or create a custom publisher for your organization
-   - **Version**: Start with 1.0.0.0
+   - **Display name** - `[Your Company] Archive Solution` (for example, "Contoso WHS Archive Solution").
+   - **Name** - Technical name (for example, `ContosoWHSArchive`).
+   - **Publisher** - Select or create a custom publisher for your organization.
+   - **Version** - Start with 1.0.0.0.
 1. Select **Create**.
 
 #### Add virtual tables and configure settings
@@ -398,14 +311,12 @@ When you enable change tracking and LTR through the Power Apps UI (step 5), the 
 | `<statecode>` | `0` | Active state |
 | `<statuscode>` | `1` | Active status |
 
-**When to manually edit Customizations.xml:**
-
+Manually edit Customizations.xml under the following conditions:
 - Building CI/CD pipelines that need to programmatically configure entities
 - Bulk-configuring many entities without using the UI
 - Troubleshooting solution deployment problems
 - Advanced ALM scenarios requiring version control of exact XML structure
 
-</details>
 
 #### Export and package your solution
 
@@ -431,25 +342,11 @@ When you need to update your archive solution:
 1. Export the solution again as managed.
 1. Import the updated solution to target environments.
 
-**Advantages:**
-
-- Automated deployment across environments
-- Configuration tracked in solution
-- Consistent configuration across environments
-- Easier to manage multiple entities
-
-**Disadvantages:**
-
-- Requires solution management expertise
-- More complex setup process
-- Requires versioning and lifecycle management
-
 ### Integration with archive framework
 
 Your custom solution integrates with the Archive framework through:
-
 - Virtual entities - The Archive framework discovers and uses your virtual entities automatically when you reference them in your job contract.
-- Type registration - Your X++ type registration (created in F&O) references your entities.
+- Type registration - Your X++ type registration references your entities.
 - Job contract - Your `ArchiveAutomationJobRequestCreator` classes reference your finance and operations data entities by name.
 - No code changes needed - The Archive framework doesn't require modifications to recognize external solutions.
 
