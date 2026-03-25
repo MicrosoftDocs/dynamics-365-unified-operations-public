@@ -367,7 +367,7 @@ For more information, see:
 
 #### Automated solution deployment (Advanced)
 This approach involves building Dataverse solutions that package your entity configurations for automated deployment across multiple environments.
-For complete instructions on building and deploying Dataverse solutions, see [Configure Dataverse for long-term retention - Option 2](archive-custom.md#option-2-automated-solution-deployment-advanced).
+For complete instructions on building and deploying Dataverse solutions, see [Configure Dataverse for long-term retention - Option 2](archive-custom.md#automated-solution-deployment-advanced).
 
 #### Create job contract creator (Base class)
 To create the base job contract creator that defines your archive scope, follow these steps:
