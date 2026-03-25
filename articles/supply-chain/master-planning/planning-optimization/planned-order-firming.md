@@ -127,10 +127,11 @@ To firm a planned order by using the query-based firming process, follow these s
 
 ## Track firmed orders
 
-To track a planned order that was firmed, follow these steps:
+To track planned orders that were firmed, follow these steps:
 
-1. [Open any planned orders list page](approved-planned-order.md#view-planned-orders).
-1. Open or select the planned order that you want to track.
-1. On the Action Pane, on the **View** tab, in the **View** group, select **Firming history**.
+1. Go to **Master-planning \> Inquiries and reports \> Master planning \> Firming history**.
+
+ [!NOTE]
+> You can also access firming history from any of the planned order pages such as **Master-planning \> Master planning \> Planned orders**. Firming history data is created for planned orders that have been firmed. Therefore the firming history shown will by nature be unrelated to any planned order selected. The firming history shown will be similar to the firming history shown when accessed through **Master-planning \> Inquiries and reports \> Master planning \> Firming history**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
