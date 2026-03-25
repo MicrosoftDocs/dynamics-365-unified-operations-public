@@ -3,8 +3,8 @@
 
 title: Benefit plan type cover
 description: This article describes the Benefit plan type cover option set for Dynamics 365 Human Resources.
-author: marcelbf
-ms.date: 07/25/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
