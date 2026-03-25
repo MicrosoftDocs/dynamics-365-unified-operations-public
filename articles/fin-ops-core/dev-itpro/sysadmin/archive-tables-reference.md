@@ -17,26 +17,25 @@ ms.reviewer: twheeloc
 
 This reference shows how Microsoft-provided tables are named across the archive framework layers. Each row maps the same logical entity as it moves through the archive pipeline: from the live transaction table in Dynamics 365 finance and operations, to the history table, to the finance and operations data entity, and finally to the Dataverse-managed data lake table.
 
-## Use this reference to
-
-- Understand naming conventions across archive layers
-- Look up corresponding table names when implementing customizations
-- Verify entity names for your archive job contracts
-- Map data between different storage layers
+Use this reference to:
+- Understand naming conventions across archive layers.
+- Look up corresponding table names when implementing customizations.
+- Verify entity names for your archive job contracts.
+- Map data between different storage layers.
 
 ## Table naming conventions
 
-| Layer | Naming Pattern | Example |
+| Layer | Naming pattern | Example |
 |-------|---------------|---------|
-| Live table | Original F&O table name | `SALESTABLE` |
-| History table | Live table + "History" suffix | `SALESTABLEHISTORY` |
-| Finance and operations data entity | Live table + "BiEntity" suffix | `SalestableBiEntity` |
+| Live table | Original Dynamics 365 finance and operations table name | `SALESTABLE` |
+| History table | Live table and "History" suffix | `SALESTABLEHISTORY` |
+| Finance and operations data entity | Live table and "BiEntity" suffix | `SalestableBiEntity` |
 | Dataverse table | "mserp_" prefix + data entity name | `mserp_SalestableBiEntity` |
 
 > [!NOTE]
 > These finance and operations data entities use the "BiEntity" suffix in their technical names (for example, `SalestableBiEntity`). This naming convention identifies them as data entities specifically designed for archive and Dataverse integration.
 
-## Supported scenarios
+### Supported scenarios
 
 The following table lists all Microsoft-provided archive scenarios and their corresponding table names across each layer.
 
