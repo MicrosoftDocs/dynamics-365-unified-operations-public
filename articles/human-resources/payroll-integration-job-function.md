@@ -2,7 +2,7 @@
 # required metadata
 
 title: Job Function entity
-description: This article provides details and an example query for the Hcm Job Function entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the HCM Job Function entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 02/20/2026
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Hcm Job Function entity (PayIntV1HcmJobFunctionEntity) for Dynamics 365 Human Resources.
+This article describes the HCM Job Function entity (PayIntV1HcmJobFunctionEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
