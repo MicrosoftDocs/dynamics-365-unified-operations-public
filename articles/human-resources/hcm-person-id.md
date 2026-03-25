@@ -4,7 +4,7 @@
 title: HCM person identification entities
 description: This article provides details and an example query for the HCM person identification entities in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 05/24/2024
+ms.date: 03/25/2026
 ms.topic: article
 ms.reviewer: twheeloc
 
