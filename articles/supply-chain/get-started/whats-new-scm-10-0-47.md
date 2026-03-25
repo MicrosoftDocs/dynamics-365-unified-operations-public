@@ -102,7 +102,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ### What's new or changed in the Warehouse Management mobile app
 
-The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md).
+The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/warehouse-app-whats-new.md).
 
 ### What's new or changed in Demand planning
 
