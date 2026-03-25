@@ -14,6 +14,22 @@ ms.reviewer: twheeloc
 
 This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
+> [!IMPORTANT]
+> **Archive scenarios temporarily disabled in production**
+>
+> All archive scenarios except **General Ledger** are temporarily disabled in production environments. This precautionary measure has been taken to prevent potential field level data loss in Datalake.
+>
+> **Affected scenarios:**
+> - Tax transactions
+> - Inventory transactions
+> - Inventory journals
+> - Sales orders
+>
+> **Not affected:**
+> - General Ledger archive (remains available in production)
+>
+> Existing completed archive jobs are not impacted. This page will be updated when the affected scenarios are re-enabled in production.
+> 
 ## Business application data lifecycle
 
 The business application data lifecycle has three stages:
