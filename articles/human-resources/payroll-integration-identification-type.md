@@ -2,7 +2,7 @@
 # required metadata
 
 title: Identification Type entity
-description: This article provides details and an example query for the Hcm Identification Type entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the HCM Identification Type entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 02/20/2026
 ms.topic: article
