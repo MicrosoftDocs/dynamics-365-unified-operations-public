@@ -11,7 +11,7 @@ ms.reviewer: twheeloc
 
 ---
 
-# Scenario 3: Build your own custom archive scenario
+# Build your own custom archive scenario
 
 [!include [banner](../includes/banner.md)]
 
@@ -24,8 +24,7 @@ Use this scenario to archive custom transaction data that isn't related to Micro
 > [!IMPORTANT]
 > Custom scenarios must include **only custom tables**. Custom scenarios must not reference Microsoft-managed tables at all, even as join or lookup dependencies. If your custom tables are related to Microsoft tables, use [Scenario 2: Add custom tables to standard scenarios](archive-custom-add-tables.md) instead.
 
-**Components involved:**
-
+Components involved:
 - Custom source link table (transaction header)
 - Custom table hierarchy (headers, lines, details)
 - Custom history tables (one per live table)
@@ -34,9 +33,9 @@ Use this scenario to archive custom transaction data that isn't related to Micro
 - Archive service type registration
 - Optional UI components
 
-**Code required:** Yes - Extensive X++ development for table structure, job contracts, and type registration.
+Extensive X++ development for table structure, job contracts, and type registration.
 
-## Prerequisites
+### Prerequisites
 
 - Access to Visual Studio with Dynamics 365 finance and operations development tools
 - Development environment with Archive framework deployed
@@ -45,17 +44,11 @@ Use this scenario to archive custom transaction data that isn't related to Micro
 - System Administrator role in Dynamics 365 finance and operations
 - Familiarity with X++ programming
 
-## Design planning
+### Design planning
 
 Before starting development, plan your archive scenario structure.
-
-### Identify source link table
-
-The **source link table** is the root table that defines what gets archived. Think of it as the "header" table for your archive scope.
-
-### Design table hierarchy
-
-Map out your table relationships:
+ - Identify source link table - The **source link table** is the root table that defines what gets archived. Think of it as the "header" table for your archive scope.
+ - Design table hierarchy - Map out your table relationships:
 
 ```
 CustomWorkflowHeader (Source Link)
@@ -65,23 +58,19 @@ CustomWorkflowHeader (Source Link)
 └── CustomWorkflowComment (1-to-many)
 ```
 
-**Design principles:**
-
+Design principles:
 - Parent-child relationships through `RecId` foreign keys
 - Clear relationship cardinality (one-to-one, one-to-many)
 - No circular dependencies
 
 ### Define archive criteria
 
-What makes a record eligible for archive?
-
-**Common criteria patterns:**
-
+Common criteria patterns:
 - Age-based: Records older than X days, months, or years.
-- Status-based: Records with "Completed," "Closed," or "Finalized" status.
+- Status-based: Records with **Completed**, **Closed**, or **Finalized** status.
 - Volume-based: Records beyond retention threshold.
 
-**Example criteria:**
+Example criteria:
 
 ```xpp
 // Workflow completed over 2 years ago
@@ -90,12 +79,8 @@ CompletedDate < (today() - 730)
 && DataAreaId == _selectedLegalEntity
 ```
 
-## Step 1: Create source link table
-
-**Objective:** Create the root table that defines your archive scope.
-
-### Create table
-
+### Create source link table
+To create the root table that defines your archive scope, follow these steps:
 1. Right-click the project, and then select **Add** > **New Item** > **Table**.
 1. Name your source link table:
    - Example: `CustomWorkflowHeader`
@@ -103,19 +88,15 @@ CompletedDate < (today() - 730)
    - Example: `TelemetrySessionHeader`
 
 ### Add required fields
-
-**Mandatory fields:**
-
+Mandatory fields:
 - `RecId` (Int64, Primary Key) - Automatically added
-
-**Business fields:**
-
+Business fields:
 - Transaction identifier (for example, `WorkflowId`, `BatchId`, `SessionId`)
 - Status field (for example, `WorkflowStatus`)
 - Date fields for criteria (for example, `CreatedDate`, `CompletedDate`)
 - Other relevant transaction data
 
-**Example structure:**
+Example structure:
 
 ```
 CustomWorkflowHeader
@@ -168,7 +149,7 @@ This index is **critical** for archive job query performance.
 </AxTableIndex>
 ```
 
-**Index design rules:**
+Index design rules:
 
 - First field: Primary segregation (`DataAreaId` or `Partition`)
 - Next fields: Criteria fields used in WHERE conditions, such as status or dates
@@ -191,16 +172,11 @@ This index is **critical** for archive job query performance.
 ```
 
 > [!IMPORTANT]
-> **Both indexes are mandatory** on the source link table and all related child tables. Missing indexes cause job failures or poor LTR performance.
+> Both indexes are mandatory on the source link table and all related child tables. Missing indexes cause job failures or poor LTR performance.
 
-## Step 2: Create related child tables
+#### Create related child tables
 
-**Objective:** Create all tables in your table hierarchy.
-
-### Create each child table
-
-For each child table in your hierarchy:
-
+To create all tables in your table hierarchy, follow these steps:
 1. Create the table with an appropriate name, such as `CustomWorkflowLine` or `CustomWorkflowAttachment`.
 1. Add a foreign key field to the parent, such as `WorkflowHeaderRecId`.
 1. Add segregation fields like `DataAreaId` or `Partition` that match the parent.
@@ -209,7 +185,7 @@ For each child table in your hierarchy:
 
 ### Define parent-child relationships
 
-**Add relation to parent for each child table:**
+Add relation to parent for each child table:
 
 ```xml
 <AxTableRelation>
@@ -228,7 +204,7 @@ For each child table in your hierarchy:
 
 ### Add required indexes to each child table
 
-**Archive criteria index (includes foreign key):**
+Archive criteria index (includes foreign key):
 
 ```xml
 <AxTableIndex>
@@ -252,7 +228,7 @@ For each child table in your hierarchy:
 </AxTableIndex>
 ```
 
-**Reconciliation index (same on every table):**
+Reconciliation index (same on every table):
 
 ```xml
 <AxTableIndex>
@@ -268,14 +244,8 @@ For each child table in your hierarchy:
 </AxTableIndex>
 ```
 
-## Step 3: Create history tables
-
-**Objective:** Create history tables for archived data storage.
-
-### Create history table for each live table
-
-For **every** table in your hierarchy (source link and all children):
-
+#### Create history tables
+To create history tables for archived data storage, follow these steps:
 1. Create corresponding history table
 1. Name: `[LiveTableName]History`
    - Example: `CustomWorkflowHeaderHistory`
@@ -288,49 +258,38 @@ Copy all fields from the live table **except**:
 - `SysRowVersion` (system-managed, changes on move)
 - `SysDataState` (system-managed, changes on move)
 
-**All other fields must be identical:**
-
+All other fields must be identical:
 - Same names
 - Same data types
 - Same EDTs
 - Same lengths
 
-### Configure history table properties
+#### Configure history table properties
 
-For each history table:
-
-1. **Don't copy unique indexes** from live table (archived data doesn't need uniqueness).
+For each history table, don't copy unique indexes from live table (archived data doesn't need uniqueness).
 
 ### Add indexes for query performance
 
-Add indexes on foreign keys and commonly queried fields:
+Add indexes on foreign keys and commonly queried fields as they enable efficient querying of archived data and are required for reversal scheduling.
 
-**Why these indexes:** They enable efficient querying of archived data and are required for reversal scheduling.
-
-## Step 4: Create finance and operations data entities
-
-**Objective:** Create finance and operations data entities to enable Dataverse virtual entities for long-term retention.
-
-### Create entity for each live table
-
-For **every** live table (source link and all children):
-
+#### Create finance and operations data entities
+To create finance and operations data entities to enable Dataverse virtual entities for long-term retention, follow these steps:
 1. Right-click the project, and then select **Add** > **New Item** > **Data Entity**.
 1. Enter a name: `[TableName]BiEntity`
    - Example: `CustomWorkflowHeaderBiEntity`
    - Example: `CustomWorkflowLineBiEntity`
 
-### Configure primary data source
+#### Configure primary data source
 
-1. Set **Data Sources**:
+1. Set **Data sources**:
    - **Primary Data Source**: Corresponding live table
    - Include all fields
 1. Set field visibility:
    - All fields = **Public**
 
-### Configure mandatory entity properties
+#### Configure mandatory entity properties
 
-These properties are **required** for archive and LTR:
+These properties are required for archive and LTR:
 
 | Property | Value | Purpose |
 |----------|-------|---------|
@@ -343,27 +302,19 @@ These properties are **required** for archive and LTR:
 | `Allow Row Version Change Tracking` | **Yes** | **Required for change tracking** |
 | `ChangeTrackingEnabled` | Yes | Enables change detection |
 
-### Enable rowversion support
+#### Enable rowversion support
 
 For each entity, see [Entity change tracking](../data-entities/entity-change-track.md).
-
-**Quick steps:**
-
 1. Add change tracking to data source.
 1. Enable rowversion on entity.
 1. Test entity in Data Management workspace.
 
-## Step 5: Publish virtual entities to Dataverse
-
-**Objective:** Make entities available in Dataverse for LTR.
-
-### Automatic publishing (recommended)
-
-When you set `Auto Create` to `Yes`:
-
-- Virtual entities publish automatically after entity sync
-- This process might take 24 to 48 hours
-- No manual action is required
+#### Publish virtual entities to Dataverse
+To make entities available in Dataverse for LTR using one of the following solutions:
+ - Automatic publishing (recommended) - When you set `Auto Create` to `Yes`:
+     - Virtual entities publish automatically after entity sync.
+     - This process might take 24 to 48 hours.
+     - No manual action is required.
 
 ### Verify entities in Dataverse
 
@@ -372,12 +323,11 @@ When you set `Auto Create` to `Yes`:
 1. Search for your entities, such as `mserp_customworkflowheaderbientity`.
 1. Verify that all entities in your hierarchy are present.
 
-### Refresh virtual entity metadata (if needed)
+#### Refresh virtual entity metadata (if needed)
 
 If you need to refresh entity metadata for any entities in your hierarchy, use one of the following options:
 
-**Option 1: Manual refresh via Advanced Find**
-
+Manual refresh using advanced find:
 1. Go to **Advanced Find** in your Dataverse environment.
 1. Select **Available finance and operation entities**.
 1. Filter **Name** to include your entity name (for example, `customworkflowheaderbientity`).
@@ -386,25 +336,19 @@ If you need to refresh entity metadata for any entities in your hierarchy, use o
 1. Save the record.
 1. Repeat for all entities in your hierarchy.
 
-**Option 2: Using Power Apps Maker Portal**
-
+Using Power Apps Maker Portal:
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
 1. Go to **Tables** and find each entity.
 1. Open the entity and trigger refresh.
 1. Repeat for all entities in your hierarchy.
 
-**Troubleshooting:** See [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival).
+For more information, see [Virtual entity refresh troubleshooting](archive-faq.md#case-3-virtual-entity-that-isnt-eligible-for-archival).
 
-### Configure change tracking and LTR
+#### Configure change tracking and LTR
 
 Third parties (ISVs, partners, and customers) can use two approaches to configure entities for long-term retention:
 
-#### Approach 1: Manual configuration
-
-This simpler approach is suitable for most implementations. Manually enable change tracking and LTR for each entity in Power Apps Maker.
-
-**Steps:**
-
+Manual configuration - This simpler approach is suitable for most implementations. Manually enable change tracking and LTR for each entity in Power Apps Maker.
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
 1. For each virtual entity in your hierarchy (source link plus all children):
    - Find the entity (for example, `mserp_customworkflowheaderbientity`).
@@ -415,43 +359,24 @@ This simpler approach is suitable for most implementations. Manually enable chan
 > [!IMPORTANT]
 > If you skip any entity in the hierarchy, LTR for that table doesn't work, and archive jobs might fail validation.
 
-**Detailed instructions:**
+For more information, see:
 
 - [Enable a table for long-term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
 - [Enable change tracking for entities](../data-entities/entity-change-track.md)
 
-**Advantages:**
 
-- Simple and straightforward
-- No solution management expertise required
-- Quick to implement
-
-#### Approach 2: Automated solution deployment (Advanced)
-
+#### Automated solution deployment (Advanced)
 This approach involves building Dataverse solutions that package your entity configurations for automated deployment across multiple environments.
-
-**Best for:**
-
-- Multiple environments requiring consistent configuration
-- Organizations with established ALM processes
-- Scenarios requiring version-controlled configurations
-- Custom scenarios with many entities
-
 For complete instructions on building and deploying Dataverse solutions, see [Configure Dataverse for long-term retention - Option 2](archive-custom.md#option-2-automated-solution-deployment-advanced).
 
-## Step 6: Create job contract creator (Base class)
-
-**Objective:** Create the base job contract creator that defines your archive scope.
-
-### Create base job contract creator class
-
+#### Create job contract creator (Base class)
+To create the base job contract creator that defines your archive scope, follow these steps:
 1. Create a new class in your model.
 1. Name: `Custom[ScenarioName]ArchiveAutomationJobRequestCreator`
    - Example: `CustomWorkflowArchiveAutomationJobRequestCreator`
 1. Extend: `ArchiveAutomationJobRequestCreator`
 
-### Implement class structure
-
+Implement class structure
 ```xpp
 using Microsoft.Dynamics.Archive.Contracts;
 
@@ -464,7 +389,7 @@ public class CustomWorkflowArchiveAutomationJobRequestCreator extends ArchiveAut
 }
 ```
 
-### Implement createPostJobRequest method
+#### Implement createPostJobRequest method
 
 Use this method to build the job contract by using the builder API:
 
@@ -515,7 +440,7 @@ public ArchiveJobPostRequest createPostJobRequest(var _criteria)
 }
 ```
 
-### Implement addChildTables method
+#### Implement addChildTables method
 
 Add each child table to the archive scope:
 
@@ -578,37 +503,29 @@ private void addChildTables(ArchiveServiceArchiveJobPostRequestBuilder _builder)
 }
 ```
 
-### Key implementation rules
+#### Key implementation rules
 
-**Parent table specification:**
-
+Parent table specification:
 - For source link table: Use `.newForSourceTable(liveTable, historyTable)` (no parent)
 - For child tables: Use `.newForSourceTable(liveTable, historyTable, entityName, parentTable)`
 
-**JOIN conditions:**
-
+JOIN conditions:
 - Must match foreign key relationships exactly
 - Only `Equals` operator supported for JOINs
 - Field names must be exact (case-sensitive)
 
-**WHERE conditions:**
-
+WHERE conditions:
 - Include segregation fields that match the parent
 - Use field references for dynamic values: `fieldStr(ParentTable, FieldName)`
 - Use literal values for static criteria: `WorkflowStatus::Completed`
 
-**Entity names:**
-
+Entity names:
 - Use Dataverse virtual entity name (starts with `mserp_`)
 - Use all lowercase
 - Example: `tableStr(mserp_customworkflowheaderbientity)`
 
-## Step 7: Create job contract creator (BI Extension)
-
-**Objective:** Create BI extension class to add LTR configuration.
-
-### Create extension in BusinessIntelligence model
-
+#### Create job contract creator (BI Extension)
+To create BI extension class to add LTR configuration, follow these steps:
 > [!IMPORTANT]
 > You must create this extension in the **BusinessIntelligence** model. Don't create it in your main model.
 
@@ -627,7 +544,7 @@ public final class CustomWorkflowArchiveAutomationJobRequestCreator_BI_Extension
 }
 ```
 
-### Extend createPostJobRequest with LTR configuration
+#### Extend createPostJobRequest with LTR configuration
 
 ```xpp
 public ArchiveJobPostRequest createPostJobRequest(var _criteria)
@@ -642,7 +559,7 @@ public ArchiveJobPostRequest createPostJobRequest(var _criteria)
 }
 ```
 
-### Implement LTR configuration method
+#### Implement LTR configuration method
 
 ```xpp
 private ArchiveJobPostRequest addSourceLinkTableForLongTermRetention(
@@ -681,37 +598,29 @@ private ArchiveJobPostRequest addSourceLinkTableForLongTermRetention(
 }
 ```
 
-### Why two separate classes?
-
-**Base class (in your model):**
-
+#### Why two separate classes?
+Base class (in your model):
 - Defines archive scope (what tables)
 - Specifies relationships (JOINs)
 - No finance and operations data entity references
 
-**Finance and operations data entity extension class (in BusinessIntelligence model):**
-
+Finance and operations data entity extension class (in BusinessIntelligence model):
 - Adds LTR configuration
 - Links finance and operations data entities to tables
 - Enables managed data lake access
 
-**This separation enables:**
-
+This separation enables:
 - Clear dependency management
 - Model layering best practices
 - Independent testing of archive vs LTR
 
-## Step 8: Register archive service type
-
-**Objective:** Register your custom archive type so it appears in the archive framework.
-
-### Create type registration class
-
+#### Register archive service type
+To register your custom archive type so it appears in the archive framework, follow these steps:
 1. Create a new class in your model.
 1. Name: `Custom[ScenarioName]ArchiveServiceTypeRegistration`
 1. Implement `ArchiveServiceTypeRegistration` interface
 
-### Implement registration logic
+#### Implement registration logic
 
 ```xpp
 using Microsoft.Dynamics.Archive.Contracts;
@@ -735,14 +644,14 @@ public class CustomWorkflowArchiveServiceTypeRegistration implements ArchiveServ
 }
 ```
 
-### Add archive type to enum
+#### Add archive type to enum
 
 1. Extend `ArchiveType` enum
 1. Add new enum value for your scenario:
    - Name: `CustomWorkflow`
    - Label: "Custom workflow archive"
 
-### Ensure registration runs on startup
+#### Ensure registration runs on startup
 
 The type registration must run during application startup. Register it in your module startup:
 
@@ -758,71 +667,63 @@ public class CustomWorkflowModule
 }
 ```
 
-## Step 9: Build and deploy
-
-**Objective:** Compile and deploy all components.
-
-### Build solution
-
+#### Build and deploy
+To build your solution, follow these steps:
 1. Build your main model (tables, base job creator, type registration)
 1. Build BusinessIntelligence model (finance and operations data entities, extension class)
 1. Resolve any compilation errors
 
-### Synchronize database
+#### Synchronize database
 
 ```powershell
 # Sync database to create tables and indexes
 # Use Visual Studio: Dynamics 365 > Synchronize Database
 ```
 
-### Deploy to environment
+#### Deploy to environment
 
 1. Create deployable package
 1. Deploy to target environment
 1. Verify deployment success
 
-### Synchronize entities
+#### Synchronize entities
 
 After deployment:
 
-1. Navigate to **Data Management** workspace
-1. Go to **Framework parameters** > **Entity settings**
-1. Select **Refresh entity list**
-1. Verify your finance and operations data entities appear
+1. Navigate to **Data Management** workspace.
+1. Go to **Framework parameters** > **Entity settings**.
+1. Select **Refresh entity list**.
+1. Verify your finance and operations data entities appear.
 
-### Verify virtual entities in Dataverse
+#### Verify virtual entities in Dataverse
 
-1. Wait 24-48 hours for automatic publishing (or manually publish)
-1. Verify entities appear in Power Apps Maker
-1. Configure change tracking and LTR for each entity
+1. Wait 24-48 hours for automatic publishing (or manually publish).
+1. Verify entities appear in Power Apps Maker.
+1. Configure change tracking and LTR for each entity.
 
-## Step 10: Test end-to-end
+#### Test end-to-end
+To create test data, follow these steps:
+1. Create test header record in source link table.
+1. Create related child records (lines, details, attachments).
+1. Ensure segregation fields match (`DataAreaId`, etc.).
+1. Set status/date fields to meet archive criteria.
 
-**Objective:** Validate complete archive scenario functionality.
+#### Test archive job creation
 
-### Create test data
+1. Navigate to archive workspace.
+1. Select your custom archive type.
+1. Create archive job with test criteria.
+1. Verify job details show correct table count.
 
-1. Create test header record in source link table
-1. Create related child records (lines, details, attachments)
-1. Ensure segregation fields match (`DataAreaId`, etc.)
-1. Set status/date fields to meet archive criteria
+#### Execute archive job
 
-### Test archive job creation
+1. Run the archive job.
+1. Monitor job progress.
+1. Verify job completes successfully.
 
-1. Navigate to archive workspace
-1. Select your custom archive type
-1. Create archive job with test criteria
-1. Verify job details show correct table count
+#### Validate data movement
 
-### Execute archive job
-
-1. Run the archive job
-1. Monitor job progress
-1. Verify job completes successfully
-
-### Validate data movement
-
-**Check history tables:**
+Check history tables:
 
 ```sql
 -- Verify header moved to history
@@ -832,29 +733,27 @@ SELECT * FROM CustomWorkflowHeaderHistory WHERE WorkflowId = '[TestID]'
 SELECT * FROM CustomWorkflowLineHistory WHERE WorkflowHeaderRecId = [TestHeaderRecId]
 ```
 
-**Check managed data lake:**
+Check managed data lake:
 
 - Navigate to Dataverse managed data lake
 - Find CSV files for all tables
 - Verify records present with correct data
 
-**Verify live table cleanup:**
+Verify live table cleanup:
 
 ```sql
 -- Confirm records removed from live tables
 SELECT * FROM CustomWorkflowHeader WHERE WorkflowId = '[TestID]'  -- Should return no rows
 ```
 
-### Test restore operation
+#### Test restore operation
 
-1. Create reversal job
-1. Execute restore
-1. Verify data returns to live tables
-1. Validate parent-child relationships intact
+1. Create reversal job.
+1. Execute restore.
+1. Verify data returns to live tables.
+1. Validate parent-child relationships intact.
 
-## Validation and troubleshooting
-
-### Common issues and solutions
+#### Common issues and solutions
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
@@ -867,58 +766,54 @@ SELECT * FROM CustomWorkflowHeader WHERE WorkflowId = '[TestID]'  -- Should retu
 | Performance issues | Missing reconciliation indexes | Add `ArchiveSysVersionIdx` to all live tables |
 | Job contract null reference | Base class method not called | Ensure `next createPostJobRequest()` in extension |
 
-### Predeployment checklist
+#### Predeployment checklist
 
 Before deploying to production:
 
-**Tables:**
+Tables:
+ - Source link table created with all fields.
+ - All child tables created with foreign keys.
+ - Parent-child relationships defined on all child tables.
+ - `ArchiveCriteriaIdx` added to all tables.
+ - `ArchiveSysVersionIdx` added to all tables.
+ - History tables mirror all live tables (except `SysRowVersion`/`SysDataState`).
+ - History tables have foreign key indexes.
+ - No references to Microsoft-managed tables.
 
-- [ ] Source link table created with all fields
-- [ ] All child tables created with foreign keys
-- [ ] Parent-child relationships defined on all child tables
-- [ ] `ArchiveCriteriaIdx` added to all tables
-- [ ] `ArchiveSysVersionIdx` added to all tables
-- [ ] History tables mirror all live tables (except `SysRowVersion`/`SysDataState`)
-- [ ] History tables have foreign key indexes
-- [ ] No references to Microsoft-managed tables
+Finance and operations data entities:
+ - Finance and operations data entity created for each live table.
+ - All required properties set (`Auto Create`, `Allow Retention`, etc.).
+ - Rowversion enabled on all entities.
+ - Virtual entities published to Dataverse.
+ - Change tracking enabled on all virtual entities.
+ - LTR enabled on all virtual entities in Dataverse.
 
-**Finance and operations data entities:**
+Code:
+- Base job contract creator class created.
+- `createPostJobRequest` implements archive criteria.
+- All child tables added with correct JOINs.
+- BI extension class created in BusinessIntelligence model.
+- LTR configuration added for source link table.
+- Type registration class created.
+- Archive type added to `ArchiveType` enum.
+- Type registration runs on startup.
+- No compilation errors.
 
-- [ ] Finance and operations data entity created for each live table
-- [ ] All required properties set (`Auto Create`, `Allow Retention`, etc.)
-- [ ] Rowversion enabled on all entities
-- [ ] Virtual entities published to Dataverse
-- [ ] Change tracking enabled on all virtual entities
-- [ ] LTR enabled on all virtual entities in Dataverse
+Testing:
+- Test data created for all tables.
+- Archive job created successfully.
+- Job contract includes all tables.
+- Archive job moves data to history tables.
+- Managed data lake contains CSV for all tables.
+- Live tables cleaned after archive.
+- Reversal job restores data correctly.
+- Parent-child relationships maintained.
 
-**Code:**
-
-- [ ] Base job contract creator class created
-- [ ] `createPostJobRequest` implements archive criteria
-- [ ] All child tables added with correct JOINs
-- [ ] BI extension class created in BusinessIntelligence model
-- [ ] LTR configuration added for source link table
-- [ ] Type registration class created
-- [ ] Archive type added to `ArchiveType` enum
-- [ ] Type registration runs on startup
-- [ ] No compilation errors
-
-**Testing:**
-
-- [ ] Test data created for all tables
-- [ ] Archive job created successfully
-- [ ] Job contract includes all tables
-- [ ] Archive job moves data to history tables
-- [ ] Managed data lake contains CSV for all tables
-- [ ] Live tables cleaned after archive
-- [ ] Reversal job restores data correctly
-- [ ] Parent-child relationships maintained
-
-## Related articles
+#### Related articles
 
 - [Archive customization overview](archive-custom.md)
-- [Scenario 1: Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md)
-- [Scenario 2: Add custom tables to standard scenarios](archive-custom-add-tables.md)
+- [Add custom fields to Microsoft-managed tables](archive-custom-add-fields.md)
+- [Add custom tables to standard scenarios](archive-custom-add-tables.md)
 - [Configure Dataverse for long-term retention](archive-custom.md#configure-dataverse-for-long-term-retention)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
