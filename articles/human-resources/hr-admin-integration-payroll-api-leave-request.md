@@ -3,8 +3,8 @@
 
 title: Leave request
 description: This article provides details and an example query for the leave request entity in Dynamics 365 Human Resources.
-author: marcelbf
-ms.date: 07/09/2024
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: how-to
 # optional metadata
 
