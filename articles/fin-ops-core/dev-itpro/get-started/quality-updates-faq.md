@@ -20,7 +20,9 @@ This article provides answers to frequently asked questions about the proactive 
 
 ### What is the biweekly cadence for PQU?
 
-The biweekly cadence introduces a more frequent release cycle for proactive quality updates. Instead of receiving updates every 26 days, PQUs are now released every two weeks.
+The biweekly cadence introduces a more frequent release cycle for proactive quality updates.
+
+Starting with version 10.0.47, PQUs move from the previous 28‑day schedule to this **two‑week cadence**, helping customers receive fixes and improvements sooner while maintaining a predictable update rhythm.
 
 Each biweekly cycle includes:
 
@@ -29,7 +31,7 @@ Each biweekly cycle includes:
 
 You can view the upcoming rollout calendar here: [PQU Release Calendar](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule#high-level-pqu-train-schedule).
 
-### Why is the rollout schedule changing from 26 days to a biweekly cadence?
+### Why is the rollout schedule changing from 28 days to a biweekly cadence?
 
 This change ensures that customers receive fixes and improvements faster. A biweekly cadence helps:
 
