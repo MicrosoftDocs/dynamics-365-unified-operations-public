@@ -90,8 +90,8 @@ Entity naming convention - `[TableName]BiEntity` (for example, `SalesTableBiEnti
 Entity properties: 
 
 | Property | Required value | Purpose |
-
 |----------|---------------|---------|
+
 | `IsPublic` | Yes | Makes the entity available outside Dynamics 365 finance and operations. |
 | `PublicEntityName` | Entity name | Name exposed to external systems. |
 | `PublicCollectionName` | Entity name + 's' | Collection name for OData endpoints. |
