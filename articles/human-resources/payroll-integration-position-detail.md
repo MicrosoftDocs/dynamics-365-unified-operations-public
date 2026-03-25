@@ -2,7 +2,7 @@
 # required metadata
 
 title: Position Detail entity
-description: This article provides details and an example query for the Hcm Position Detail entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the HCM Position Detail entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 02/20/2026
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Hcm Position Detail entity (PayIntV1HcmPositionDetailEntity) for Dynamics 365 Human Resources.
+This article describes the HCM Position Detail entity (PayIntV1HcmPositionDetailEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
