@@ -2,7 +2,7 @@
 # required metadata
 
 title: Variable Compensation Enrollment Position entity
-description: This article provides details and an example query for the Hcm Variable Compensation Enrollment Position entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the HCM Variable Compensation Enrollment Position entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 02/20/2026
 ms.topic: article
@@ -22,12 +22,12 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Hcm Variable Compensation Enrollment Position entity
+# Variable Compensation Enrollment Position entity
 
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.45.
 
-This article describes the Hcm Variable Compensation Enrollment Position entity (PayIntV2HcmVariableCompensationEnrollmentPositionEntity) for Dynamics 365 Human Resources.
+This article describes the HCM Variable Compensation Enrollment Position entity (PayIntV2HcmVariableCompensationEnrollmentPositionEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
