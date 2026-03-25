@@ -3,8 +3,8 @@
 
 title: Compensation pay frequency
 description: This article provides details and an example query for the Compensation pay frequency entity in Dynamics 365 Human Resources.
-author: marcelbf
-ms.date: 09/01/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
