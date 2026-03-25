@@ -4,7 +4,7 @@ description: Learn how to set up and configure the Account reconciliation agent 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 03/17/2026
+ms.date: 03/25/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
