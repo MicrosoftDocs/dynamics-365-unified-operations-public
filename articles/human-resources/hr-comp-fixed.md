@@ -3,8 +3,8 @@
 
 title: Compensation fixed plan table entity
 description: This article provides details and an example query for the Compensation fixed plan table entity in Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 04/10/2024
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 
 # optional metadata
