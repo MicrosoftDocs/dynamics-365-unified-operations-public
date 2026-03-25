@@ -21,11 +21,11 @@ You can specify coverage settings in several ways:
 
 - Specify coverage settings for a coverage group.
 
-        Create a coverage group that contains settings for all products linked to the coverage group. To create a coverage group, go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**. You can link a coverage group to a product. If the link is specific to a site, warehouse, or product dimension, use the **Coverage group** field on the **Item coverage** page. If the link is generic, regardless of the product dimensions, use the **Coverage group** field on the **Plan** FastTab of the **Product details** page. By default, if you don't link a coverage group to a product, master planning uses the general coverage group that you specify on the **Master planning parameters** page.
+    Create a coverage group that contains settings for all products linked to the coverage group. To create a coverage group, go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**. You can link a coverage group to a product. If the link is specific to a site, warehouse, or product dimension, use the **Coverage group** field on the **Item coverage** page. If the link is generic, regardless of the product dimensions, use the **Coverage group** field on the **Plan** FastTab of the **Product details** page. By default, if you don't link a coverage group to a product, master planning uses the general coverage group that you specify on the **Master planning parameters** page.
 
 - Specify coverage settings for a product.
 
-        Create coverage settings for a specific product. Go to **Product information management** \> **Products** \> **Released products**. Select the product, and then, on the Action Pane, on the **Plan** tab, in the **Coverage** group, select **Item coverage** to open the **Item coverage** page. If the product is already linked to a coverage group, you can override the coverage group settings by using the **Override** field. The coverage settings on the **Item coverage** page take precedence over the settings on the **Coverage group** page.
+    Create coverage settings for a specific product. Go to **Product information management** \> **Products** \> **Released products**. Select the product, and then, on the Action Pane, on the **Plan** tab, in the **Coverage** group, select **Item coverage** to open the **Item coverage** page. If the product is already linked to a coverage group, you can override the coverage group settings by using the **Override** field. The coverage settings on the **Item coverage** page take precedence over the settings on the **Coverage group** page.
 
 - Specify coverage settings for a product by using a wizard.
 
@@ -33,7 +33,7 @@ You can specify coverage settings in several ways:
 
 - Specify coverage settings for a dimension group.
 
-        Go to **Product information management** \> **Products** \> **Released products**. On the **Released product details** page, on the **General** FastTab, in the **Administration** section, select the link in the **Storage dimension group** field. On the **Storage dimension groups** page, select the **Coverage plan by dimension** check box to create the coverage settings for a dimension in the storage dimension group. You must select the **Coverage plan by dimension** field for all product dimensions, such as configuration, color, size, and style.
+    Go to **Product information management** \> **Products** \> **Released products**. On the **Released product details** page, on the **General** FastTab, in the **Administration** section, select the link in the **Storage dimension group** field. On the **Storage dimension groups** page, select the **Coverage plan by dimension** check box to create the coverage settings for a dimension in the storage dimension group. You must select the **Coverage plan by dimension** field for all product dimensions, such as configuration, color, size, and style.
 
 ## Coverage codes
 
