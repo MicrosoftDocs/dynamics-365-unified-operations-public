@@ -4,7 +4,7 @@
 title: HCM Fixed Compensation employee entity
 description: This article provides details and an example query for the HCM Fixed Compensation employee entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 05/22/2024
+ms.date: 03/25/2026
 ms.topic: article
 ms.reviewer: twheeloc
 
