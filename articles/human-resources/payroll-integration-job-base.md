@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that is noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Hcm Job Base entity (PayIntV1HcmJobBaseEntity) for Dynamics 365 Human Resources.
+This article describes the HCM Job Base entity (PayIntV1HcmJobBaseEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
