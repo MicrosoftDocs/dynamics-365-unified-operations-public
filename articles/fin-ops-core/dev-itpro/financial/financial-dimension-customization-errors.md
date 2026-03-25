@@ -2,7 +2,7 @@
 title: Best practices for financial dimension customizations
 description: Learn about best practices when writing customizations that interact with the financial dimension framework, including calling dimension APIs and building DimAttribute views.
 author: ethanrimes
-ms.author: ethanrimes
+ms.author: ethankallett
 ms.topic: best-practice
 ms.date: 03/03/2026
 ms.reviewer: johnmichalak
@@ -86,8 +86,8 @@ If your customization imports data that will be used as dimension values, valida
 
 ## See also
 
-- [Make backing tables consumable as financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimensionable-entities)
-- [Dimension FK reference EDT usage](/dynamics365/fin-ops-core/dev-itpro/financial/dimension-fk-edt-usage.md)
-- [Modifying financial dimension data](/dynamics365/fin-ops-core/dev-itpro/financial/modifying-financial-dimension-data.md)
+- [Make backing tables consumable as financial dimensions](dimensionable-entities.md)
+- [Dimension FK reference EDT usage](dimension-fk-edt-usage.md)
+- [Modifying financial dimension data](modifying-financial-dimension-data.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
