@@ -67,7 +67,7 @@ To set up mshr Virtual tables, follow these steps.
 
 ### Register the app in Microsoft Azure
 
-You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Register an application with the Microsoft identity platform](../../../entra/identity-platform/quickstart-register-app.md).
+You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Register an application with the Microsoft identity platform](entra/identity-platform/quickstart-register-app.md).
 
 1.	Open the [Microsoft Azure portal](https://portal.azure.com/).
 2.	In the Azure services list, select **App registrations**.
@@ -138,7 +138,7 @@ To see the entities that are present for dayforce integration, see [Mshr payroll
 
 ## Change tracking
 
-The change tracking feature in Dataverse detects data that has changed since the data was originally extracted or last synced. For more information, see [Use change tracking to synchronize data with external systems](../../../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md).  
+The change tracking feature in Dataverse detects data that has changed since the data was originally extracted or last synced. For more information, see [Use change tracking to synchronize data with external systems](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md).  
 
 To enable change tracking, follow these steps.
 1.	Go to **System administration > Data management > Data entities**.
