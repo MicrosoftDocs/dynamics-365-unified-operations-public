@@ -66,6 +66,6 @@ These settings will enable the user interface changes tied to the B2B multioutle
 
 ## Additional resources
 
-[Create Commerce catalogs for B2B sites](./b2b/b2b-multi-outlet.md)
+[B2B multioutlet overview](./b2b/b2b-multi-outlet.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
