@@ -3,8 +3,8 @@
 
 title: Payroll worker benefit plan
 description: This article provides details and an example query for the Payroll worker benefit plan entity in Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 07/28/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
@@ -51,7 +51,7 @@ This entity provides information about the benefits plan for a given worker.
 | **Valid to**</br>mserp_validto</br>*Date Time Offset* |  Read-only | The time up to which this record is valid. |
 | **Plan type ID**</br>mserp_plantypeid</br>*String* | Read-only | The identifier of the plan type. |
 | **Plan type code**</br>mserp_plantypecode</br>*[benefit plan type cover option set](hr-admin-integration-payroll-api-benefit-plan-type-cover.md)* | Read-only | The specification of the plan type. |
-| **Number of pay periods**</br>mserp_payperiod</br>*Integer* | Read-only | The number of pay periods that represents how often the benefit provider or employees are paid. This amount will be used to calculate the employee's annual benefit salary amount. |
+| **Number of pay periods**</br>mserp_payperiod</br>*Integer* | Read-only | The number of pay periods that represents how often the benefit provider or employees are paid. This amount is used to calculate the employee's annual benefit salary amount. |
 | **Employee amount**</br>mserp_amountemployee</br>*Decimal* | Read-only | The employee amount or percentage. |
 | **Employer amount**</br>mserp_amountemployer</br>*Decimal* | Read-only | The employer amount or percentage. |
 | **Primary field**</br>mserp_primaryfield</br>*String* | System generated | Primary field. |
