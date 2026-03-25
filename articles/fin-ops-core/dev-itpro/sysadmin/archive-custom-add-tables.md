@@ -299,7 +299,7 @@ For more information see:
 
 #### Automated solution deployment (Advanced)
 Build Dataverse solutions that package your entity configurations for automated deployment across multiple environments.
-For complete instructions on building and deploying Dataverse solutions, see [Configure Dataverse for long-term retention](archive-custom.md#automated-solution-deployment-advanced).
+For complete instructions on building and deploying Dataverse solutions, see [Configure Dataverse for long-term retention](archive-custom.md#automated-solution-deployment).
 
 #### Extend job contract to include custom table
 Modify the archive job contract to include your custom table in the archive scope.
