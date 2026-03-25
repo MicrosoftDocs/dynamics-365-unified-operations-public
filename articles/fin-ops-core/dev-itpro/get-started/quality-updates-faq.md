@@ -22,7 +22,7 @@ This article provides answers to frequently asked questions about the proactive 
 
 The biweekly cadence introduces a more frequent release cycle for proactive quality updates.
 
-Starting with version 10.0.47, PQUs move from the previous 28‑day schedule to this **two‑week cadence**, helping customers receive fixes and improvements sooner while maintaining a predictable update rhythm.
+Starting with version **10.0.47**, PQUs move from the previous 28‑day schedule to a **two‑week cadence**, helping customers receive fixes and improvements sooner while maintaining a predictable update rhythm.
 
 Each biweekly cycle includes:
 
