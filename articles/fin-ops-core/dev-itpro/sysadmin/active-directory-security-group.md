@@ -33,7 +33,7 @@ Before you enable the **Microsoft Entra ID security groups** feature, be aware o
 - The **User Id** value of users that you create through JIT provisioning has a leading dollar sign ($) and numbers.
 - Publishing views to security roles doesn't consider the role assignments made to Microsoft Entra ID security groups.
 - You apply legal entity assignments to the entire Microsoft Entra ID security group.
-- Starting with FR version 10.0.42, Financial Reporting (FR) no longer supports role and privilege assignments made through imported Microsoft Entra ID security groups. You must assign user roles and privileges directly to FnO user accounts for access to FR.
+- Starting with Financial reporting version 10.0.42, Financial reporting no longer supports role and privilege assignments made through imported Microsoft Entra ID security groups. You must assign user roles and privileges directly to Dynamics 365 finance and operations user accounts for access to Financial reporting.
 
 Microsoft doesn't expect to address these known limitations until the group experience is unified with the more comprehensive feature in Dataverse. Learn more in [Manage group teams](/power-platform/admin/manage-group-teams).
 
