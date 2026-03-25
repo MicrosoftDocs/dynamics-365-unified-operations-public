@@ -85,9 +85,7 @@ If this is missing, LTR reconciliation operations experience severe performance 
 
 Finance and operations data entities are the data entities that expose table data as virtual entities in Dataverse. By using virtual entities, Dataverse can access Dynamics 365 finance and operations data. You can store archive data in Dataverse for long-term retention with a minimal SQL Server footprint.
 
-Entity naming convention - `[TableName]BiEntity` (for example, `SalesTableBiEntity`, `CustomModuleHeaderBiEntity`).
-
-Entity properties: 
+Entity naming convention - `[TableName]BiEntity`. For example, `SalesTableBiEntity`, `CustomModuleHeaderBiEntity`.
 
 | Property | Required value | Purpose |
 |----------|---------------|---------|
