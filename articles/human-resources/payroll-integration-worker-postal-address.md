@@ -2,7 +2,7 @@
 # required metadata
 
 title: Worker Postal Address entity
-description: This article provides details and an example query for the Hcm Worker Postal Address entity in Microsoft Dynamics 365 Human Resources.
+description: This article provides details and an example query for the HCM Worker Postal Address entity in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 02/20/2026
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.40.
 
-This article describes the Hcm Worker Postal Address entity (PayIntV1HcmWorkerPostalAddressEntity) for Dynamics 365 Human Resources.
+This article describes the HCM Worker Postal Address entity (PayIntV1HcmWorkerPostalAddressEntity) for Dynamics 365 Human Resources.
 
 ## Description
 
