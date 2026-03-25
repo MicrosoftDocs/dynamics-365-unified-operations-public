@@ -3948,7 +3948,7 @@
       - name: The Warehouse Management mobile app
         items:
         - name: What's new or changed in the Warehouse Management mobile app
-          href: warehousing/whats-new-wma.md
+          href: warehousing/warehouse-app-whats-new.md
         - name: Install, set up, and connect mobile devices
           items:
           - name: Install the Warehouse Management mobile app
