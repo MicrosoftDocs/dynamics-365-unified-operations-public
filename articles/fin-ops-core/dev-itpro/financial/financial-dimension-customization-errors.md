@@ -87,7 +87,6 @@ If your customization imports data that will be used as dimension values, valida
 ## See also
 
 - [Make backing tables consumable as financial dimensions](dimensionable-entities.md)
-- [Dimension FK reference EDT usage](dimension-fk-edt-usage.md)
-- [Modifying financial dimension data](modifying-financial-dimension-data.md)
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
