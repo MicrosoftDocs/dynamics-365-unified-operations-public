@@ -1039,7 +1039,7 @@ items:
             href: hr-admin-integration-ats-api-rating-level.md
           - name: Screening types
             href: hr-admin-integration-ats-api-screening-types.md
-          - name: Example query for Candidate to hire
+          - name: Candidate to hire
             href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
       - name: Candidate option sets
         items:
@@ -1147,7 +1147,7 @@ items:
           href: payroll-integration-variable-compensation-enrollment.md
         - name: Variable compensation type
           href: payroll-integration-variable-compensation-type.md
-        - name: Worker payroll info
+        - name: Worker payroll 
           href: payroll-integration-worker-payroll-info.md
         - name: Worker postal address
           href: payroll-integration-worker-postal-address.md
