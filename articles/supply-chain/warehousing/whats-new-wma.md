@@ -18,6 +18,21 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 4.0.39.0
+
+Version 4.0.39.0 includes the following fixes and improvements:
+
+- Improved authentication for Android, Windows, and iOS.
+- Fixed an issue where a toast message blocked scanning on iOS.
+- Resolved issues with Entra Conditional Access on Android.
+- Added the option to turn on scrolling for details cards so you can view more information on one screen. The scrollable details card is designed for larger screens; on smaller devices, the feature may not work as expected. On smaller screens, switching to landscape mode may reduce the available space, which could affect scrolling behavior.
+- Fixed an issue where the keyboard covered the bottom buttons on the **Edit Connection** page on iOS.
+- Fixed an issue that caused error messages to appear twice during blind cycle counts.
+- Resolved random animation crashes on older devices.
+- Expanded device compatibility to support more device types.
+- Improved overall app performance.
+- Fixed a bug where the step banner displayed the placeholder *Scan or enter here* instead of the actual step value.
+
 ## Version 4.0.38.0
 
 Version 4.0.38.0 adds the following fixes and improvements:
