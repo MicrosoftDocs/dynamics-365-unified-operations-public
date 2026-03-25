@@ -3,8 +3,8 @@
 
 title: Award type
 description: This article describes the Award type option set for Dynamics 365 Human Resources.
-author: marcelbf
-ms.date: 06/25/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
