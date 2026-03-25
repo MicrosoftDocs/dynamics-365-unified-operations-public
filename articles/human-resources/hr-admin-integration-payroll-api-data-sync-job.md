@@ -3,8 +3,8 @@
 
 title: Schedule Payroll Data Sync Job
 description: This article describes the batch job required to sync data for payroll entities.
-author: twheeloc
-ms.date: 09/03/2025
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: concept-article
 # optional metadata
 
@@ -21,60 +21,46 @@ ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Schedule Payroll Data Sync Job
+# Schedule Payroll Data sync job
 
 ## Overview
 This document describes the steps to schedule a **Payroll data sync batch job** in **Dynamics 365 Human Resources**, including how to configure recurrence and verify the batch job execution.
 
 
 ## Steps
-
-### 1. Navigate to Payroll Module
-- Click on **Modules**.
-- Select the **Payroll** module.
-
-### 2. Open Schedule Payroll Data Sync
-- Under the **Payroll** module, click **Schedule payroll data sync**.
-
-
-### 3. Select Entity Name
-- Select the **Entity Name** from the dropdown.
+1. In Microsoft Dynamics 365 Human Resources, click **Modules**.
+2. Select the **Payroll** module.
+3. Click **Schedule payroll data sync**.
+4. Select the **Entity Name** from the dropdown.
 - To identify the correct entity name, refer to the table in the [Entity Names](#entity-names-to-schedule-data-sync-batch-job) section below.
-
-### 4. Configure Background Processing
-- Enable **Run in the background**.
-- Expand the section and configure the following:
+5. Enable **Run in the background**.
+6. Expand the section and configure the following:
   - **Batch processing**: Yes
   - **Task description**: Payroll data synchronization
   - **Batch group**: (select as applicable)
   - **Private**: No
   - **Critical job**: No
   - **Monitoring category**: Undefined
-
-
-### 5. Define Recurrence
-- Define the recurrence for the data sync job.
+7. Define the recurrence for the data sync job.
 - Example configuration:
   - **Recurrence pattern**: Hours
   - **Repeat every**: 8 hours
   - **Start date/time**: As required
   - **End by**: Set an appropriate end date
+8. Click **OK** to schedule the batch job for payroll data synchronization.
 
 
-### 6. Schedule the Job
-- Click **OK**.
-- A batch job will be scheduled for payroll data synchronization.
+### Verify the batch job
+To verify the batch job, follow these steps:
+1. Go to **System administration** > **Inquiries** > **Batch jobs**.
+2. Filter the batch jobs based on **Job description**.
+3. Use the contains filter and provide 'payroll' text.
+4. Verify that the payroll data sync job appears in the list.
 
 
-### 7. Verify the Batch Job
-- Navigate to : System Administration > Inquiries > Batch jobs
-- Filter the batch jobs based on **Job description**. Use contains filter and provide 'payroll' text.
-- Verify that the payroll data sync job appears in the list.
+## Entity names to schedule data sync batch job
 
-
-## Entity Names to Schedule Data Sync Batch Job
-
-| Entity Name for Batch Job | Corresponding PayIntV1 Change Tracking Table |
+| Entity name for batch job | Corresponding PayIntV1 change tracking table |
 |-------------------------------|------------------------------------------|
 | HcmWorkerEntity | PayIntV1Worker |
 | HcmWorkerContactEntity | PayIntV1WorkerContact |
@@ -106,7 +92,7 @@ This document describes the steps to schedule a **Payroll data sync batch job** 
 | HcmVariableCompensationEnrollmentPositionEntity |PayIntV2HcmVariableCompensationEnrollmentPosition |
 
 
-## Legal Entity Specific Payroll Integration Entities
+#### Legal Entity specific payroll integration entities
 
 The following entities contain legal entity specific data. Since batch jobs execute within a specific legal entity context, a separate batch job must be scheduled for each legal entity.
 
@@ -117,6 +103,3 @@ The following entities contain legal entity specific data. Since batch jobs exec
 - PayIntV1PayrollEmployeeEntity  
 - PayIntV2HcmVariableCompensationEnrollmentPositionEntity  
 
-## Appendix
-- Batch jobs can be monitored and managed from the **System Administration** module.
-- Use meaningful task descriptions to easily identify payroll-related sync jobs.
