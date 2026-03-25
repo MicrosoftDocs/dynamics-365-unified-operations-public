@@ -3,8 +3,8 @@
 
 title: Bank Account Disbursement entity
 description: This article provides details and an example query for the Bank Account Disbursement entity in Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 02/20/2026
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 
 # optional metadata
