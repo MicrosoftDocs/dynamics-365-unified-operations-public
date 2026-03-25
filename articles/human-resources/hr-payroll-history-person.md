@@ -3,8 +3,8 @@
 
 title: Historical person name entity
 description: This article provides details and an example query for the Historical person name entity in Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 04/04/2024
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 
 # optional metadata
