@@ -109,7 +109,7 @@ To add a matching field, follow these steps:
 1. Don't add unique constraints.
 
 > [!IMPORTANT]
-> Field matching is critical - The field name, data type, extended data type, and length must be identical between live and history tables. Any mismatch causes archive jobs to fail with schema validation errors.
+> Field matching is critical - the field name, data type, extended data type, and length must be identical between live and history tables. Any mismatch causes archive jobs to fail with schema validation errors.
 
 ### Build and synchronize
 
