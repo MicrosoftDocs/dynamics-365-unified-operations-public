@@ -42,16 +42,14 @@ Support for additional data types is planned in future releases.
 > [!IMPORTANT]
 > **Archive scenarios temporarily disabled in production**
 >
-> All archive scenarios except **General Ledger** are temporarily disabled in production environments. This precautionary measure was taken to prevent potential field-level data loss in the Datalake. 
+> All archive scenarios are temporarily disabled in production environments. This precautionary measure was taken to prevent potential field-level data loss in the Datalake. 
 >
 > **Affected scenarios:**
 > - Tax transactions
 > - Inventory transactions
 > - Inventory journals
 > - Sales orders
->
-> **Not affected:**
-> - General Ledger archive (remains available in production)
+> - General Ledger 
 >
 > Existing completed archive jobs are not impacted. This page will be updated when the affected scenarios are re-enabled in production.
 > 
