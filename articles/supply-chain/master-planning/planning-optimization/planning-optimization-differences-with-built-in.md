@@ -47,6 +47,7 @@ Planning Optimization results (including planned orders, quantities, and dates) 
 | Zero positive days | Setting positive days to one in Planning Optimization provides the same behavior as setting positive days to zero in the deprecated master planning engine. |
 | Planning with negative on-hand quantities | If the system shows a negative aggregate on-hand quantity, Planning Optimization treats it as quantity 0 (zero) to help avoid over supply. Learn more in [Planning with negative on-hand quantities](negative-on-hand.md). The deprecated master planning engine instead replenished the negative quantity. |
 | Firming manual planned production orders | When firming planned production orders that were created manually, Planning Optimization doesn't automatically trigger the explosion of items. You must manually trigger item explosions as needed. |
+| CTP with Lean manufacturing | Kanban rule replenishment strategy 'event' with event type 'sales event' set to 'Automatic with CTP' will not automatically generate and add kanbans to the schedule for a sales order order line with delivery date control method CTP. Instead replenish through a planning kanban and apply autofirming |
 
 ## Related information
 
