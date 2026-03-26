@@ -74,7 +74,7 @@ Pay statements are generated for the pay cycle, pay period, and payment run type
 > [!NOTE]
 > If a worker payment occurs outside the system, see "Record payments made outside Payroll" in [Pay statements and payment generation FAQ](noam-usa-pay-statements-payment-generation-process.md).
 
-To generate pay statements, follow these steps.
+To generate pay statements, follow these steps:
 
 1. On the **Generate pay statements** page, enter information in the following fields. You can also generate a single pay statement from the **Payroll** tab on the **Worker** or **Position** page.
 

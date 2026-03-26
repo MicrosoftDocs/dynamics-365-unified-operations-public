@@ -18,6 +18,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 # Manage channels in the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article explains what a channel is and provides information about how to manage channels in the Invoice capture solution.
 
@@ -117,7 +118,7 @@ If the **Use managed flow** option is set **No**, the Document receive API is ca
 
 ## Create a new channel
 
-To create a new channel, administrators can follow these steps.
+To create a new channel, administrators can follow these steps:
 
 1. In the navigation pane, select **Manage channels**.
 2. On the Action Pane, select **New**.
@@ -146,7 +147,7 @@ When a legal entity is assigned to a channel, the corresponding business unit is
 
 ## Create a new channel using an unmanaged flow
 
-To create a channel by using an unmanaged flow in Invoice capture, follow these steps.
+To create a channel by using an unmanaged flow in Invoice capture, follow these steps:
 
 1. Select **New** to create a channel. 
 2. Enter a channel name, and set the **Use Manage channel** option to **No**.

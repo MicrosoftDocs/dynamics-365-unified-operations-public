@@ -28,7 +28,7 @@ Together with [business intelligence](/power-bi/fundamentals/power-bi-service-ov
 - Built in [personalization experience](personalize-user-experience.md)
 - [Microsoft Power Platform](../power-platform/overview.md) tools
 - [Visual Studio](https://visualstudio.microsoft.com)–based [finance and operations software development kit (SDK)](../dev-tools/developer-home-page.md) and [Azure DevOps build automation](../dev-tools/developer-home-page.md#build-automation-using-azure)
-- Independent software vendor (ISV) solutions from [AppSource](https://appsource.microsoft.com/partners)
+- Independent software vendor (ISV) solutions from [Marketplace](https://marketplace.microsoft.com/partners)
 
 Based on requirements, customers choose their solution approach. They work with their implementation partner to define, develop, and test their solution by using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services](../lifecycle-services/lcs.md). There are four common scenarios:
 
@@ -107,7 +107,7 @@ For more information, see [Onboarding an implementation project](../organization
 
 ## Globalization
 
-Finance and operations apps are served from several Azure regions around the world. Finance and operations apps provide functionality to support different countries/regions and native languages. For more information, see [Localization and regulatory features](../../fin-ops/lcs/country-region.md#localization-and-regulatory-features).
+Finance and operations apps are served from several Azure regions around the world. Finance and operations apps provide functionality to support different countries/regions and native languages. For more information, see [Localization and regulatory features](../../fin-ops/lcs/globalization-resources.md#localization-and-regulatory-features).
 
 ### Country/region-specific considerations
 

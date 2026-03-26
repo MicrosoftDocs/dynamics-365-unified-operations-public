@@ -38,7 +38,7 @@ Learn more in [Download ER configurations from the Global repository of Configur
 
 ## Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade parameters**.
 1. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (SE)**.
@@ -50,7 +50,7 @@ To set up foreign trade parameters, follow these steps.
 
 ## Set up the product parameters for the Intrastat declaration
 
-To set up the product parameters for the Intrastat declaration, follow these steps.
+To set up the product parameters for the Intrastat declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released products**.
 1. In the grid, select a product.
@@ -73,7 +73,7 @@ Alternatively, you can manually enter transactions by selecting **New** on the A
 
 ### Generate an Intrastat report
 
-To generate an Intrastat report, follow these steps.
+To generate an Intrastat report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 1. On the Action Pane, select **Output** \> **Report**.
@@ -97,7 +97,7 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 ### Preliminary setup
 
-To do preliminary setup, follow these steps.
+To do preliminary setup, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organization** \> **Legal entities**, and select the **DEMF** legal entity.
 1. On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **SWE (Sweden)**.
@@ -109,7 +109,7 @@ To do preliminary setup, follow these steps.
 
 ### Create transaction codes
 
-To create transaction codes, follow these steps.
+To create transaction codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Transaction codes**.
 1. On the Action Pane, select **New**.
@@ -119,7 +119,7 @@ To create transaction codes, follow these steps.
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 1. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **1**.
@@ -133,7 +133,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Set up product information
 
-To set up product information, follow these steps.
+To set up product information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Products** \> **Released  products**.
 1. In the grid, select **D0001**.
@@ -143,7 +143,7 @@ To set up product information, follow these steps.
 
 ### Change the site address
 
-To change the site address, follow these steps.
+To change the site address, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Sites**.
 1. In the grid, select **1**.
@@ -153,7 +153,7 @@ To change the site address, follow these steps.
 
 ### Create a sales order with an EU customer
 
-To create a sales order with an EU customer, follow these steps.
+To create a sales order with an EU customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. On the Action Pane, select **New**.
@@ -170,7 +170,7 @@ To create a sales order with an EU customer, follow these steps.
 
 ### Transfer the transaction to the Intrastat journal and review the result
 
-To transfer the transaction to the Intrastat journal and review the result, follow these steps.
+To transfer the transaction to the Intrastat journal and review the result, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 1. On the Action Pane, select **Transfer**.
@@ -204,7 +204,7 @@ To transfer the transaction to the Intrastat journal and review the result, foll
 
 ### Create a purchase order
 
-To create a purchase order, follow these steps.
+To create a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. On the Action Pane, select **New**.
@@ -220,7 +220,7 @@ To create a purchase order, follow these steps.
 
 ### Create an Intrastat declaration for arrivals
 
-To create an Intrastat declaration for arrivals, follow these steps.
+To create an Intrastat declaration for arrivals, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat**.
 1. On the Action Pane, select **Transfer**.

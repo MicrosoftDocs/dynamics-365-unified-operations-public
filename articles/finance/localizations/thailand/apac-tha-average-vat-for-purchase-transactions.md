@@ -23,7 +23,7 @@ You can use multiple tax rates to manage the proportion of VAT between the VAT b
 
 ## Set up average VAT
 
-To set up average VAT, follow these steps.
+To set up average VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters** \> **Sales tax**, and enable **Manage realized and unrealized VAT**.
 1. In the **Calculation method** field, select **Total**.
@@ -231,7 +231,7 @@ The VAT is calculated and posted to different accounts, as shown in the followin
 
 The *Average VAT* report includes the details of transactions that have average VAT. You must submit the **Average VAT** report to the Revenue Department of Thailand every month.
 
-To generate the Average VAT report, follow these steps.
+To generate the Average VAT report, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Average VAT**.
 1. In the **Tax month** field, select the month for which to generate the report.
@@ -277,7 +277,7 @@ The following table explains the information that is shown on the **Average VAT*
 
 This example shows how to post a purchase order when there is unrealized VAT at the end of the year, but the payment is held in the new year and uses the new proportion.
 
-To run through the example procedure, follow these steps.
+To run through the example procedure, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and set up sales tax codes for average realized VAT.
     1.  In the **Sales tax code** field, enter **AVAT**.

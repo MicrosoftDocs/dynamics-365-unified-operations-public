@@ -56,7 +56,7 @@ Cluster profiles control how the system creates each cluster. If different clust
 
 ### Create a mobile device menu item
 
-To create a new mobile device menu item for system-directed cluster picking and link the cluster profile ID to the mobile device menu item, follow these steps.
+To create a new mobile device menu item for system-directed cluster picking and link the cluster profile ID to the mobile device menu item, follow these steps:
 
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. Select **New**.

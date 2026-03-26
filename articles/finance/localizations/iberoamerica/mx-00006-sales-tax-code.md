@@ -20,7 +20,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This article describes how to create the tax report category codes and to assign a tax report category code to a sales tax code to use in sales, purchase, and summary tax reports. Use these categories to group all transactions as required by the authorities.
 
-To create tax report category codes, follow these steps.
+To create tax report category codes, follow these steps:
 
 1. Got to **Tax** > **Setup** > **Tax category codes**.
 1. Select **New**.
@@ -28,7 +28,7 @@ To create tax report category codes, follow these steps.
 1. In the **Tax report category description** field, enter a brief description.
 1. Select **Save**, and then close the page.
 
-To set up a sales tax code, follow these steps.
+To set up a sales tax code, follow these steps:
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 1. Select **New**.

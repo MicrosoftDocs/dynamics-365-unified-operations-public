@@ -29,7 +29,7 @@ The procedures use the demo data company JPMF.
 
 ## Set up an asset retirement obligation document
 
-To set up an asset retirement obligation document, follow these steps.
+To set up an asset retirement obligation document, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Asset retirement obligation documents**.
 1. Select **New**.
@@ -41,7 +41,7 @@ To set up an asset retirement obligation document, follow these steps.
 
 ## Create a fixed asset and assign the asset retirement obligation document to it
 
-To create a fixed asset and assign the asset retirement obligation document to it, follow these steps.
+To create a fixed asset and assign the asset retirement obligation document to it, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Fixed assets**.
 1. Select **New**.
@@ -54,7 +54,7 @@ To create a fixed asset and assign the asset retirement obligation document to i
 
 ## Enter the asset retirement obligation amounts
 
-To enter the asset retirement obligation amounts, follow these steps.
+To enter the asset retirement obligation amounts, follow these steps:
 
 1. On the fixed asset **Asset retirement obligation** page, on the **Estimated retirement** FastTab, select **Create** to open the drop-down menu.
 1. In the **Transaction date** field, enter the date on which to recognize the asset retirement obligation.

@@ -27,7 +27,7 @@ The procedures use the demo data company JPMF.
 
 ## Set up depreciation settlement rules
 
-To set up depreciation settlement rules, follow these steps.
+To set up depreciation settlement rules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation settlement rules**.
 1. Optionally, if the settlement rule table is empty, you're asked if you want to import the default set of rules. Select **OK** to import the default set of rules.  
@@ -42,7 +42,7 @@ To set up depreciation settlement rules, follow these steps.
 
 ## Set up a book
 
-To set up a book, follow these steps.
+To set up a book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Books**.
 1. Select **New**.

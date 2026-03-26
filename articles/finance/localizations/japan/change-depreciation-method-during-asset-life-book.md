@@ -29,7 +29,7 @@ Before you complete the following procedures, you must select the **Fixed Asset*
 
 ## Change a depreciation profile
 
-To change a depreciation profile, follow these steps.
+To change a depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Books**.
 1. Use the Quick Filter to find records. For example, filter on the **Book** field with a value of "250NDB_CUR".

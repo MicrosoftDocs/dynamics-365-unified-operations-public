@@ -25,7 +25,7 @@ Before you complete the procedure, you must first select the **Fixed Asset** con
 
 The procedure uses the demo data company JPMF.
 
-To propose and post accelerated depreciation, follow these steps.
+To propose and post accelerated depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

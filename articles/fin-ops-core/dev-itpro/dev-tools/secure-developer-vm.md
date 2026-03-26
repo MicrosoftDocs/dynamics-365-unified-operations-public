@@ -3,7 +3,7 @@ title: Secure one-box development environments
 description: Learn about how to help secure one-box developer environments, including outlines on default configurations and how to deploy to a custom virtual network.
 author: mnordick
 ms.author: mnordick
-ms.date: 12/05/2025
+ms.date: 12/16/2025
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -64,7 +64,7 @@ The following table shows the regional instances of Lifecycle Services.
 | Geography | Lifecycle Services URL | Lifecycle Services IP addresses |
 |---|---|---|
 | United States/Public | lcs.dynamics.com | 104.42.56.231<br>20.125.130.131<br>20.9.194.46<br>4.255.162.39<br>4.150.11.25<br>13.89.189.103 |
-| Azure Government/GCC | gov.lcs.microsoftdynamics.us | 20.141.106.7<br>20.141.192.69 |
+| Azure Government/GCC | gov.lcs.microsoftdynamics.us | 52.227.70.23<br>51.54.161.13 |
 | Azure Government/GCC High | high.lcs.microsoftdynamics.us | 52.245.167.30<br>20.141.241.11 |
 | Azure Government/DoD | dod.lcs.microsoftdynamics.us | 52.181.207.10<br>52.180.251.93 |
 | China | lcs.dynamics.cn | 52.130.253.37<br>52.131.87.112 |

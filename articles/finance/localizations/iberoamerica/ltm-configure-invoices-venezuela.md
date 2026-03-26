@@ -27,7 +27,7 @@ Configure the following pages to use them in future sales transactions:
 - Number sequence
 - Journal names
 
-To complete the sales invoice configuration, follow these steps.
+To complete the sales invoice configuration, follow these steps:
 
 1. Create the **document class type** that represents the fiscal documents that will be used in future transactions. Examples include invoices, credit notes, debit notes, and packing slips. Learn more in [Document class type for Latin America](ltm-core-document-class-type.md).
 1. Create at least one **Establecimiento** as a **sales point prefix** that is part of the document number **XXXX**-XXXXXXXX. Enable the **Validate CA** option. Learn more in [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
@@ -40,7 +40,7 @@ To complete the sales invoice configuration, follow these steps.
 
 ## Configure a vendor invoice
 
-Vendor invoices have the same configuration requirements as sales invoices, but automatically generated numeration isn't required. To configure a vendor invoice, follow these steps.
+Vendor invoices have the same configuration requirements as sales invoices, but automatically generated numeration isn't required. To configure a vendor invoice, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**, and create one document class for each fiscal document that the company receives from vendors. Examples include purchase invoices, purchase credit notes, and purchase debit notes.
 1. Add a document class type.

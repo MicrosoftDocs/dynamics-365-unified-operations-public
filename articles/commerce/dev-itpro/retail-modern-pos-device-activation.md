@@ -44,7 +44,7 @@ The self-service process lets you download the appropriate version of the Modern
 
 ## Setup
 
-Before you start the steps that are outlined in this article, follow these steps.
+Before you start the steps that are outlined in this article, follow these steps:
 
 - Verify that you have credentials to sign in to headquarters.
 - Verify that you have administrative or root access to install Modern POS on a device.
@@ -151,7 +151,7 @@ Workers have already been created and assigned to the Houston address book in th
 
 ### Create a worker
 
-To create a worker, follow these steps.
+To create a worker, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Employees** \> **Workers**.
 2. On the Action Pane, select **New** to create a new employee.

@@ -43,7 +43,7 @@ To configure application-specific parameters, complete the following configurati
 
 ### Configure the COL withholding certificate FTE format
 
-To configure the COL withholding certificate FTE format, follow these steps.
+To configure the COL withholding certificate FTE format, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** > **Electronic reporting**, and select **Reporting configurations** \> **LTM Tax Report**.
 1. Select the **COL Withholding Certificate FTE** format.
@@ -66,7 +66,7 @@ To configure the COL withholding certificate FTE format, follow these steps.
 
 ### Configure the COL withholding certificate ICA format
 
-To configure the COL withholding certificate ICA format, follow these steps.
+To configure the COL withholding certificate ICA format, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations** \> **LTM Tax Report** 
 1. Select the **COL Withholding Certificate ICA** format.
@@ -89,7 +89,7 @@ To configure the COL withholding certificate ICA format, follow these steps.
 
 ### Configure the COL withholding certificate IVA format
 
-To configure the COL withholding certificate IVA format, follow these steps.
+To configure the COL withholding certificate IVA format, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations** \> **LTM Tax Report** 
 1. Select the **COL Withholding certificate IVA** format.
@@ -118,7 +118,7 @@ To configure the COL withholding certificate IVA format, follow these steps.
 
 ## Generate the withholding certificate format for Colombia
 
-To generate the certificate, follow these steps.
+To generate the certificate, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select the name of the format you need to generate (:::no-loc text="COL Withholding Certificate FTE":::, :::no-loc text="COL Withholding Certificate ICA":::, or :::no-loc text="COL Withholding certificate IVA":::), and then select **OK**.

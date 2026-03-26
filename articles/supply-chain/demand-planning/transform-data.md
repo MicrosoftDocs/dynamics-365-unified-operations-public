@@ -32,7 +32,7 @@ Typically, a manager or system administrator creates the initial collection of r
 
 You have to run a transformation profile only as often as you import new data into the relevant tables. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.
 
-To update your time series by running an existing transformation profile, follow these steps.
+To update your time series by running an existing transformation profile, follow these steps:
 
 1. On the navigation pane, select **Operations** \> **Transformations**.
 1. Find the profile for the type of transformation that you want to run, and select the link for it in the **Name** column.
@@ -50,7 +50,7 @@ To update your time series by running an existing transformation profile, follow
 
 Each time that your organization requires a new type of data transformation, a manager or admin must create a new transformation profile. After the profile is created, it becomes available to users, who can run it as often as they require.
 
-To create or edit a transformation profile, follow these steps.
+To create or edit a transformation profile, follow these steps:
 
 1. On the navigation pane, select **Operations** \> **Transformations**.
 1. On the Action Pane, select **New**.

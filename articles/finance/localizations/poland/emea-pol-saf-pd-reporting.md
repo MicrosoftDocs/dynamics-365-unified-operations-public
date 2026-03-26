@@ -41,7 +41,7 @@ The **PL JPK_KR_PD EM setup.zip** package provides a setup for the JPK_KR_PD pro
 
 ### Create an electronic message for JPK_KR_PD reporting - Tworzyć
 
-To create an electronic message for JPK_KR_PD reporting, follow these steps.
+To create an electronic message for JPK_KR_PD reporting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 2. Select **JPK_KR_PD**, and then, on the **Messages** FastTab, select **New**.
@@ -53,7 +53,7 @@ To create an electronic message for JPK_KR_PD reporting, follow these steps.
 
 If you [configured Finance to automatically calculate the amounts](emea-pol-saf-pd-setup.md#rpd) for the Income Tax Register (RPD) section of the SAF Accounting Books Income Tax – JPK_KR_PD report as the balance based on a specific combination of Financial dimension set values, you can run the **Oblicz RPD JPK_KR_PD** action. Users can review the automatically calculated amounts before generating the electronic file.
 
-To calculate the values of the RPD figures based on the financial dimension set, follow these steps.
+To calculate the values of the RPD figures based on the financial dimension set, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 2. Select **JPK_KR_PD**, and then select the electronic message created by the previous **Tworzyć JPK_KR_PD** action and select **Collect data**.
@@ -65,7 +65,7 @@ To calculate the values of the RPD figures based on the financial dimension set,
 
 You can review the parameters of the executable class that was specified for each execution of the **Oblicz RPD JPK_KR_PD** action.
 
-To review the parameters of the executable class, follow these steps.
+To review the parameters of the executable class, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 2. Select **JPK_KR_PD**, and then, select the electronic message, expand the **Action log** FastTab, select the **Oblicz RPD JPK_KR_PD** action for which you want to review the parameters.
@@ -75,7 +75,7 @@ To review the parameters of the executable class, follow these steps.
 
 When all the data is ready in the system, you can generate the JPK_KR_PD report in Excel format.
 
-To generate the JPK_KR_PD report in Excel format, follow these steps.
+To generate the JPK_KR_PD report in Excel format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Electronic messages**.
 2. On the **Messages** FastTab, select **Generate report**.
@@ -106,7 +106,7 @@ You can review the report parameters after the report is generated in batch. To 
 
 When all the data is ready in the system, you can generate an JPK_KR_PD file in XML format.
 
-To generate an JPK_KR_PD file in XML format, follow these steps.
+To generate an JPK_KR_PD file in XML format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Electronic messages**.
 2. On the **Messages** FastTab, select **Generate report**.
@@ -148,7 +148,7 @@ You can generate a SAF Accounting Books Income Tax - JPK_KR_PD using **General l
 > The RPD section of JPK_KR_PD report is supported only when the report is generated from the Electronic messages page (using the JPK_KR_PD Electronic message processing).
 > We recommend using the SAF Accounting Books Income Tax menu item to generate the JPK_KR_PD for preview only.
 
-To generate a SAF Accounting Books Income Tax - JPK_KR_PD report, follow these steps.
+To generate a SAF Accounting Books Income Tax - JPK_KR_PD report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File Accounting Books Income Tax**.
 2. Set the following parameters, and then select **OK**.
@@ -168,7 +168,7 @@ To generate a SAF Accounting Books Income Tax - JPK_KR_PD report, follow these s
 
 A SAF Accounting Books Income Tax - JPK_KR_PD for a long period, such as a quarter or a year, can include a large amount of data and take a long time to be generated. Therefore, we recommend that you use batch jobs. The dialog for every SAF report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
-To review batch jobs or find a generated file, follow these steps.
+To review batch jobs or find a generated file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 1. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.

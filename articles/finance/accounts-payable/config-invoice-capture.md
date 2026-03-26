@@ -119,7 +119,7 @@ In **Manage vendors**, there are three options to sync the vendor accounts:
 - **Sync by legal entity** – The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
 - **Sync by selection** – Administrators can search and select one or multiple vendors and sync the selected vendors.
 
-An Accounts payable administrator can initiate the vendor synchronization manually or in real time. To enable real-time synchronization, follow these steps.
+An Accounts payable administrator can initiate the vendor synchronization manually or in real time. To enable real-time synchronization, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Invoice capture**.
 2. Select the **Sync all vendors** checkbox next to the onboarded legal entity.

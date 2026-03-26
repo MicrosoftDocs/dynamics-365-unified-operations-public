@@ -4,7 +4,7 @@ description: Learn about how to use the Electronic reporting tool to generate bu
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/23/2021
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -18,9 +18,9 @@ ms.assetid:
 
 [!include [banner](../includes/banner.md)]
 
-You can use the Electronic reporting (ER) tool to design reports that you can run to generate required electronic documents. You can use Microsoft Excel or Microsoft Word documents to specify the layout of a report. The ER Operations designer lets you attach the Excel or Word document as a template for the report. The named elements in the attached template are associated with the format elements of the ER report. Format elements of the report are bound to data sources. These elements specify the data that will be entered, at runtime, in the documents that are generated.
+You can use the Electronic reporting (ER) tool to design reports that you can run to generate required electronic documents. Use Microsoft Excel or Microsoft Word documents to specify the layout of a report. The ER Operations designer lets you attach the Excel or Word document as a template for the report. The named elements in the attached template are associated with the format elements of the ER report. Format elements of the report are bound to data sources. These elements specify the data that will be entered, at runtime, in the documents that are generated.
 
-This new functionality goes beyond existing ER capabilities for creating documents in Microsoft Office formats. For more information, play the following task guides. You can find these task guides under the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process.
+This new functionality goes beyond existing ER capabilities for creating documents in Microsoft Office formats. For more information, see the following task guides. You can find these task guides under the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process.
 
 - ER Design a configuration for generating reports in OPENXML format
 - ER Design a configuration for generating reports in Microsoft WORD format
@@ -29,26 +29,26 @@ This new functionality goes beyond existing ER capabilities for creating documen
 
 ### Embed an image in an Excel worksheet
 
-First, you must add a placeholder for the image in an Excel document. Open an Excel workbook, and add a picture as a placeholder for the image that you will add later. Then use the ER tool to add a new ER format configuration to include the report that you're designing. Attach the Excel workbook as a template for the format of the report, and then import the content of the workbook into the ER format. The format definition will be created automatically. The image placeholder that you added will be included in the ER format definition as a **CELL** element.
+First, add a placeholder for the image in an Excel document. Open an Excel workbook, and add a picture as a placeholder for the image that you add later. Then use the ER tool to add a new ER format configuration to include the report that you're designing. Attach the Excel workbook as a template for the format of the report, and then import the content of the workbook into the ER format. The format definition is created automatically. The image placeholder that you added is included in the ER format definition as a **CELL** element.
 
 > [!NOTE]
-> You can manually specify the format definition instead of importing it. When you save your changes, the format will be validated.
+> You can manually specify the format definition instead of importing it. When you save your changes, the format is validated.
 
 Next, bind the **CELL** element of the ER format to the field from the format's data source that provides the picture's data in binary format at runtime. When an ER data model is used as a format's data source, the data type of the field must be [Container](er-formula-supported-data-types-composite.md#container). Currently, an ER data model field that has the [Container](er-formula-supported-data-types-composite.md#container) data type can be bound to several types of data sources that return images in binary format. You can access a field in a data table and a file that is attached to the data table's record by using the Document management framework.
 
 > [!IMPORTANT]
-> - If you want to fill the image placeholder in the document that you're creating by using the Excel template, the ER format must contain the **CELL** element that refers to the named picture element in the Excel template. Otherwise, no image placeholder will appear in the report's output. If the binding of a **CELL** element returns no data at runtime, the document that is generated will show the image placeholder from the template. To hide an image in the document that you're generating, define a **CELL** element, and specify that the **Enabling** expression should return a value of **FALSE**.
-> - In the Excel template, use a unique name for every element. These elements include pictures and cells. If you duplicate an element name, the content of the report that is generated will be ambiguous and confusing.
+> - To fill the image placeholder in the document that you're creating by using the Excel template, the ER format must contain the **CELL** element that refers to the named picture element in the Excel template. Otherwise, no image placeholder appears in the report's output. If the binding of a **CELL** element returns no data at runtime, the generated document shows the image placeholder from the template. To hide an image in the document that you're generating, define a **CELL** element, and specify that the **Enabling** expression returns **FALSE**.
+> - In the Excel template, use a unique name for every element. These elements include pictures and cells. If you duplicate an element name, the content of the generated report is ambiguous and confusing.
 
 ### Embed images in the header and footer of an Excel worksheet
 
-Use the Excel workbook document as a template to specify the layout of a report. The workbook can contain multiple worksheets, each of which can be designed so that it has a header and a footer. Excel supports up to three images in the header and footer of every worksheet. The images can be aligned to the left, right, or center.
+Use the Excel workbook document as a template to specify the layout of a report. The workbook can contain multiple worksheets, each of which can be designed to have a header and a footer. Excel supports up to three images in the header and footer of every worksheet. The images can be aligned to the left, right, or center.
 
-In Finance release 10.0.21, you can manage the header and footer images that are generated by an ER solution that has an Excel template.
+In Finance release 10.0.21, you can manage the header and footer images generated by an ER solution that has an Excel template.
 
-If you want a default picture to appear in the header or footer of a generated document, you can add an image to the header or footer of a worksheet of an ER template. To access this image in your ER format, you must add the **Picture** component under the [Header](er-fillable-excel.md#header-component) or [Footer](er-fillable-excel.md#footer-component) component of the format. Configure the alignment of the **Picture** component as appropriate. 
+If you want a default picture to appear in the header or footer of a generated document, add an image to the header or footer of a worksheet of an ER template. To access this image in your ER format, add the **Picture** component under the [Header](er-fillable-excel.md#header-component) or [Footer](er-fillable-excel.md#footer-component) component of the format. Configure the alignment of the **Picture** component as appropriate. 
 
-You can also use the **Picture** component to put an image into the header or footer of a generated document at runtime, even if the template contains no default image. To specify the media content that should put into the header or footer of a generated document as either a new image or a replacement for a default image, you must bind the **Picture** component to a data source of the [Container](er-formula-supported-data-types-composite.md#container) type that represents an image in binary format.
+You can also use the **Picture** component to put an image into the header or footer of a generated document at runtime, even if the template contains no default image. To specify the media content that you want to put into the header or footer of a generated document as either a new image or a replacement for a default image, bind the **Picture** component to a data source of the [Container](er-formula-supported-data-types-composite.md#container) type that represents an image in binary format.
 
 Every **Header** or **Footer** component can hold one **Picture** component for each supported alignment: **Left**, **Center**, and **Right**.
 
@@ -57,52 +57,54 @@ The **Scale the height** property of the **Picture** component lets you use the 
 - Select **Original** to keep the initial size of the image.
 - Select **Relative** to scale the height of the image in proportion to the height of the header or footer that holds that image.
 
-    - In this case, the height of the image must be defined as a percentage of the parent header or footer.
+    - In this case, define the height of the image as a percentage of the parent header or footer.
     - If the scaling value exceeds 100 percent, the image might overlap the data area of the corresponding worksheet.
-    - If the height of the image is changed when the scaling is applied, the width is also changed to maintain the image's original aspect ratio.
+    - If the scaling changes the height of the image, the width also changes to maintain the image's original aspect ratio.
 
-- Select **Absolute** to resize the image according to the height and width values (in pixels) that are provided at design time.
+- Select **Absolute** to resize the image according to the height and width values (in pixels) provided at design time.
 
     - If the specified height exceeds the height of the parent header or footer, the image might overlap the data area of the corresponding worksheet.
 
-You can also use the **Enabled** property of the **Picture** component to control the visibility of an image that is put into a generated document by using this component.
+You can also use the **Enabled** property of the **Picture** component to control the visibility of an image that you put into a generated document by using this component.
 
 > [!NOTE]
 > You must use the ER format designer to add a **Picture** component to the editable ER format. You can't add the component when you use the [Business document management](er-business-document-management.md) workspace to edit the template of a business document.
 
-To learn more about this functionality, follow the steps in [Design an ER format to generate a report in Excel format with embedded images in page headers or footers](er-embed-images-header-footer-excel-reports.md).
+To learn more about this functionality, see [Design an ER format to generate a report in Excel format with embedded images in page headers or footers](er-embed-images-header-footer-excel-reports.md).
 
 ## Embed a shape in an Excel document
 
-First, you must add a placeholder for the shape in an Excel document. Open an Excel workbook, and select **Shape**, **Text box**, or **WordArt** as a placeholder for the shape. Then use the ER tool to add a new ER format configuration to include the report that you're designing. Attach the Excel workbook as a template for the format of the report, and then import the content of the workbook into the ER format. The format definition will be created automatically. The shape placeholder that you added will be included in the ER format definition as a **CELL** element that refers to the named Excel shape element.
+First, add a placeholder for the shape in an Excel document. Open an Excel workbook, and select **Shape**, **Text box**, or **WordArt** as a placeholder for the shape. Then use the ER tool to add a new ER format configuration to include the report that you're designing. Attach the Excel workbook as a template for the format of the report, and then import the content of the workbook into the ER format. The format definition is created automatically. The shape placeholder that you added is included in the ER format definition as a **CELL** element that refers to the named Excel shape element.
 
 > [!NOTE]
-> You can manually specify the format definition instead of importing it. When you save your changes, the format will be validated.
+> You can manually specify the format definition instead of importing it. When you save your changes, the format is validated.
 
-Next, bind the **CELL** element in the ER format to the field from the format's data source that provides the data at runtime. This data can be converted to a text string. When the **CELL** element in the ER format refers to a shape element in the Excel template that supports text, the text that is provided through this binding at runtime will be shown in a shape in the document that is generated.
+Next, bind the **CELL** element in the ER format to the field from the format's data source that provides the data at runtime. You can convert this data to a text string. When the **CELL** element in the ER format refers to a shape element in the Excel template that supports text, the text provided through this binding at runtime appears in a shape in the generated document.
 
 > [!IMPORTANT]
-> - If you want to use the Excel template that includes the shape placeholder to generate a new document, the ER format must contain a **CELL** element that refers to the Excel shape element. Otherwise, no shape placeholder will appear in the report's output. If the binding of a **CELL** element that refers to the named Excel shape element returns no data at runtime, the document that is generated will show the text of the shape placeholder from the Excel template. To hide a shape in the document that you're generating, define a **CELL** element that refers to the named Excel shape element, and specify that the **Enabling** expression should return a value of **FALSE**.
-> - In the Excel template, use a unique name for every element. These elements include shapes and cells. If you duplicate an element name, the content of the report that is generated will be ambiguous and confusing.
+> - To use the Excel template that includes the shape placeholder to generate a new document, the ER format must contain a **CELL** element that refers to the Excel shape element. Otherwise, no shape placeholder appears in the report's output. If the binding of a **CELL** element that refers to the named Excel shape element returns no data at runtime, the generated document shows the text of the shape placeholder from the Excel template. To hide a shape in the generated document, define a **CELL** element that refers to the named Excel shape element, and specify that the **Enabling** expression returns **FALSE**.
+> - In the Excel template, use a unique name for every element. These elements include shapes and cells. If you duplicate an element name, the content of the generated report is ambiguous and confusing.
 
 ## Embed an image in a Word document
+
 > [!IMPORTANT]
 > You can reuse the ER format that uses an Excel template to create documents that include embedded images. In the ER format, make sure that a name is specified for the **CELL** element that refers to a named picture element in Excel, and that is bound to a data source that returns a picture at runtime.
 
-First, you must configure the Word document's layout. Use the **Picture Content** control to create a placeholder for the embedded image. To access this control, you must first make the **Developer** tab visible on the Word Ribbon.
+First, configure the Word document's layout. Use the **Picture Content** control to create a placeholder for the embedded image. To access this control, you must first make the **Developer** tab visible on the Word Ribbon.
 
 Next, delete the Excel template from the ER format, and attach the Word template document. Update the reference to the template, and save your changes. The structure of the current ER format is saved to the Word template as a new custom XML part that is named **Report**.
 
 Next, save the Word template for the current ER format to your local computer. Open the template, and open the **XML Mapping** pane. Find the custom XML part that is named **Report**, and then point to the **CELL** element in the ER report that is bound to a data source that returns an image in binary format. Map this XML part's item to the selected **Picture Content** control, and save your changes.
 
-[![embed images.](./media/embed-images-shapes-01.png)](./media/embed-images-shapes-01.png)
+:::image type="content" source="./media/embed-images-shapes-01.png" alt-text="Screenshot of XML Mapping pane showing the Report custom XML part mapped to the Picture Content control in a Word document.":::
 
 Finally, delete the Word template from the ER format, and attach the Word document that includes the mapped custom XML parts. Update the format reference to the template, and save the changes that you made to this ER format.
 
 ## More information
-To become familiar with the details of this feature, play the set of task guides, **ER Make reports in MS Office formats with embedded images**. These task guides show how you can embed the images of a company logo and an authorized person's signature in the payment checks that are generated by using the ER tool in Excel and Word documents.
 
-The following table lists the files that are required in order to complete the **ER Make reports in MS Office formats with embedded images** task guides. Download and save the files to your local computer.
+To learn more about this feature, play the set of task guides, **ER Make reports in MS Office formats with embedded images**. These task guides show how you can embed the images of a company logo and an authorized person's signature in the payment checks that the ER tool generates in Excel and Word documents.
+
+The following table lists the files that you need to complete the **ER Make reports in MS Office formats with embedded images** task guides. Download and save the files to your local computer.
 
 | Description                                          | File name                   |
 |------------------------------------------------------|-----------------------------|
@@ -116,7 +118,7 @@ The following table lists the files that are required in order to complete the *
 
 The following graphic provides an example of the test printout for a payment check that is generated from the Excel template.
 
-[![Payment check test printout.](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
+:::image type="content" source="./media/embed-images-shapes-02.png" alt-text="Screenshot of a payment check test printout generated from the Excel template.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

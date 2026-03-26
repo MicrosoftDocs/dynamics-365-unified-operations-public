@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 4
 
 Often, the information that is stored in existing tables doesn't satisfy customer requirements. Therefore, additional tables must be created, and data from those tables must be shown on pages.
 
-You can add new data sources to existing forms through extension. Follow these steps.
+You can add new data sources to existing forms through extension. follow these steps:
 
 1. In the extension model, create a form extension for the selected form.
 1. Right-click the form extension, and then select **New Data Source**.

@@ -30,7 +30,7 @@ Accounts payable amounts that are written off because of expiration of the limit
 
 ### Set up accounts payable parameters
 
-To set up accounts payable parameters, follow these steps.
+To set up accounts payable parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Ledger and sales tax** tab, on the **Creditor debts** FastTab, in the **Income code** field, specify the income code to assign to transactions for writing off bad accounts payable debt.
@@ -42,7 +42,7 @@ To set up accounts payable parameters, follow these steps.
 
 ### Set up the debt interval for hopeless debts
 
-To set up the debt interval for hopeless debts, follow these steps.
+To set up the debt interval for hopeless debts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Debt interval**.
 1. In the **From** field, enter the lower limit of the debt interval, in days. For example, enter **240**.
@@ -113,7 +113,7 @@ In the journal, you should approve the **Accounts payable inventory act** regist
 
 ### Recognize and write off hopeless debt
 
-To recognize and write off hopeless debt, follow these steps.
+To recognize and write off hopeless debt, follow these steps:
 
 1. Calculate and approve the tax register journal for the previous period. For more information, see [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-and-work-with-a-tax-register-journal).
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Amortization** \> **Trade liabilities amortization**.
@@ -135,7 +135,7 @@ To recognize and write off hopeless debt, follow these steps.
 
 ### Cancel the write-off of hopeless debt
 
-To cancel the write-off of hopeless debts, follow these steps.
+To cancel the write-off of hopeless debts, follow these steps:
 
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Amortization** \> **Trade liabilities amortization cancellation**.
 1. In the **Calculation date** field, select a date that indicates the required calculation period.

@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Migration to Planning Optimization for master planning
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 The built-in master planning engine is now obsolete (deprecated). It's being replaced by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This article provides information about the impact on new and existing deployments. It includes information about required actions.
 

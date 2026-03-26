@@ -20,7 +20,7 @@ This article explains how to download or update the infrastructure scripts for y
 
 ## Download the infrastructure scripts
 
-To download the infrastructure scripts, follow these steps.
+To download the infrastructure scripts, follow these steps:
 
 1. Sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2).
 1. On the dashboard, select the **Shared asset library** tile.

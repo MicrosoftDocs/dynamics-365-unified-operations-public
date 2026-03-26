@@ -77,7 +77,7 @@ Mobile device menu items that use the following work creation processes provide 
 
 The **To location** setting for a menu item overrides the default receiving location for the warehouse, for all orders that are processed by using that menu item.
 
-To set up a mobile device menu item to support receiving at a custom location, follow these steps.
+To set up a mobile device menu item to support receiving at a custom location, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select or create a menu item that uses one of the work creation processes that are listed earlier in this section.

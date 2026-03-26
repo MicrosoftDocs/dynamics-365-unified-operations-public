@@ -72,7 +72,7 @@ The customer invoice for the intercompany sales order is automatically posted in
 > 
 > This limitation has been fixed by a recent feature in release 10.0.25. Intercompany sales orders can now be invoiced when the vendor invoice workflow is configured in the intercompany purchasing company.
 > 
-> To enable this feature, follow these steps.
+> To enable this feature, follow these steps:
 >
 > 1. Select the intercompany sales legal entity.  
 > 2. Go to **Accounts receivable \> Customers \> All customers**.

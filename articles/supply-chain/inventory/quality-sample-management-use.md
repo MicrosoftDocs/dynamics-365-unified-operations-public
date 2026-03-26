@@ -1,5 +1,5 @@
 ---
-title: Manage and process samples (preview)
+title: Manage and process samples
 description: Learn how workers can use sample management features to collect and manage samples for quality testing.
 author: johanhoffmann
 ms.author: johanho
@@ -11,13 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Manage and process samples (preview)
+# Manage and process samples
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
-Sample management is a component of quality control in manufacturing. It ensures that products meet regulatory and quality standards. The processes described in this article serve as an example of how you can implement sample management. However, the specific details might vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity. 
+Sample management is a component of quality control in manufacturing. It ensures that products meet regulatory and quality standards. The processes described in this article serve as an example of how you can implement sample management. However, the specific details might vary depending on your company's branch, industry, and practices. By tailoring the sample management process to your organization's needs, you can maintain compliance, improve operational efficiency, and ensure product integrity.
 
 Use this guide as a framework to understand the key steps involved, and adapt them to align with your unique requirements and workflows. Proper implementation of sample management can significantly enhance traceability, accountability, and overall quality assurance.
 

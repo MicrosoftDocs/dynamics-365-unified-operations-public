@@ -1,24 +1,22 @@
 ---
 title: What's new or changed in Dynamics 365 Retail
-description: This page points you to resources that can help you learn about the new features in the latest releases of Microsoft Dynamics 365 Retail.
+description: Learn about the new features in the latest releases of Microsoft Dynamics 365 Retail.
 author: josaw1
-ms.date: 10/20/2018
+ms.date: 01/30/2026
 ms.topic: whats-new
-audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-07-31
-ms.dyn365.ops.version: Retail July 2017 update
-ms.search.industry: retail
+ms.custom: 
+  - bap-template
 ---
 
 # What's new and changed in Dynamics 365 Retail
 
 [!include [banner](../../includes/banner.md)]
 
-This page points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail.
-
+This article points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail.
 
 ## Releases of Dynamics 365 Retail
 
@@ -34,7 +32,7 @@ This page points you to resources that can help you learn about the new features
 | Dynamics 365 for Finance & Operations - Retail - 8.0.2 | 8.0.35.15211 | June 2018 | [KB 4340414 Microsoft Dynamics 365 Finance - Version 8.0.2 (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340414&bugId=219341&qc=e2713468c8e09c07d63f960acde805dd89f05409b2f44f8d47ba8b4d8d24491b), [KB 4340413 Microsoft Dynamics 365 Finance - Version 8.0.2 (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4340413&bugId=219344&qc=977f9cae5b13b9ed618351108bfb5f02e8d0366a28ed0d99a472d9c9941560a3) |
 | Dynamics 365 for Retail - 7.3.2.5 | 7.3.21971.64091 | June 2018 | [KB 4342134Microsoft Dynamics 365 for Retail - Version 7.3.2.5 - BugFix Package 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
-\* The link points to a Knowledge Base (KB) article. You must log in to Lifecycle Services (LCS) to view the KB article.
+\* The link points to a Knowledge Base (KB) article. You must sign in to Lifecycle Services (LCS) to view the KB article.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

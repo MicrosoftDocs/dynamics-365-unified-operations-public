@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 08/13/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Inventory Visibility public APIs
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes the public APIs that are provided by Inventory Visibility.
 
@@ -52,7 +53,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/transaction/adjustment/bulk` | Post | [Sync external inventory changes through Inventory Visibility](inventory-visibility-sync-changes.md) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management. This ID is the one stated for Supply Chain Management in Lifecycle Services, not the ID of the Power Platform environment that is linked to the Supply Chain Management environment.
+> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management. This ID is the one stated for Supply Chain Management in Microsoft Dynamics Lifecycle Services, not the ID of the Power Platform environment that is linked to the Supply Chain Management environment.
 >
 > The bulk API can return a maximum of 512 records for each request.
 
@@ -60,7 +61,7 @@ The following table lists the APIs that are currently available:
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
-To get a security service token, follow these steps.
+To get a security service token, follow these steps:
 
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
 1. Fetch a Microsoft Entra token (`aadToken`) by submitting an HTTP request that has the following properties:

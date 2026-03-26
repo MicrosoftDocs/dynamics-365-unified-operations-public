@@ -43,7 +43,7 @@ A department might include a group of cost centers. Positions can be assigned to
 | **Addresses**           | Add the address information for the department. For example, add the mailing address for the building that the department is located in.                                  |
 | **Contact information** | Add contact information for the department. For example, add a telephone number for the service desk in the department.                                        |
 
-To add a department to the department hierarchy, follow these steps.
+To add a department to the department hierarchy, follow these steps:
 
 1.  Click **Human Resources** &gt; **Departments** &gt; **Department hierarchy**.
 2.  Click **Edit**, and then select the organization that the department should be under.

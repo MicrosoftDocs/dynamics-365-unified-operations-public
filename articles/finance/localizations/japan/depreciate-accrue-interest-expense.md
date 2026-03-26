@@ -27,7 +27,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Depreciate a fixed asset with asset retirement obligation
 
-To depreciate a fixed asset with asset retirement obligation, follow these steps.
+To depreciate a fixed asset with asset retirement obligation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -45,7 +45,7 @@ To depreciate a fixed asset with asset retirement obligation, follow these steps
 
 ## Accrue the interest expense
 
-To accrue the interest expense, follow these steps.
+To accrue the interest expense, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

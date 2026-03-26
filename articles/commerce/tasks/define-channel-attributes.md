@@ -1,11 +1,11 @@
 --- 
 title: Define channel attributes
-description: Enrich the channel by adding channel and product attributes. 
+description: Learn how to define channel attributes in Microsoft Dynamics 365 Commerce. 
 author: mariash529
-ms.date: 06/20/2024
+ms.date: 02/10/2026
 ms.topic: how-to
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia   
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
@@ -16,50 +16,45 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Enrich the channel by adding channel and product attributes. You must add the channel to the organization default hierarchy before you can define the attributes.
+This article explains how to define channel attributes in Microsoft Dynamics 365 Commerce.
 
+You can enrich a channel by adding channel and product attributes. You must add the channel to the organization default hierarchy before you can define the attributes.
 
-## Define channel product attribute.
-1. Go to Retail and Commerce > Channel setup > Channel categories and product attributes.
-2. In the tree, select 'Contoso Retail\Fashion\Houston'.
-3. Click Edit.
-4. In the Category hierarchy field, enter or select a value.
-    * The navigation hierarchy will be used for navigating the product inside your channels.  
-5. Expand the Attribute group section.
-6. Click Add.
-    * The attribute group will be shown in the product details and also will help when using the product filter.  
-7. In the Name field, enter or select a value.
-8. Click View attributes.
-9. Expand the Attributes section.
-10. Click Add.
-11. In the list, mark the selected row.
-12. Click AddBtn.
-13. Click OK.
-14. Click Save.
-15. Close the page.
-16. Expand the Products section.
-17. Click Add.
-18. In the list, mark the selected row.
-19. Click Add.
-    * Similarly you can add multiple products.  
-20. Click OK.
-21. Click Attributes.
-22. Expand the Channel media section.
-23. Click Edit.
-24. In the Channel field, select an option.
-25. Select the Default check box.
-26. Click OK.
-27. Expand the Channel product attributes section.
-28. In the Brand field, type a value.
-    * Similarly you can set the other attributes.  
-29. Click Save.
-30. Close the page.
-31. Click Save.
-32. Click Publish channel updates.
-    * After publish the data will be ready for sync with the channel tables. If you didn't publish the modified data will not be synced with the channel tables.  
-33. Click OK.
-34. Click Save.
+To define channel product attributes, follow these steps:
 
-
+1. In Commerce headquarters, go to Retail and Commerce > Channel setup > Channel categories and product attributes.
+1. In the tree, select **Contoso Retail\Fashion\Houston**.
+1. Select **Edit**.
+1. In the **Category hierarchy** field, enter or select a value. The navigation hierarchy is used for navigating the product inside your channels.  
+1. Expand the **Attribute group** section.
+1. Select **Add**. The attribute group is shown in the product details and also helps when using the product filter.  
+1. In the **Name** field, enter or select a value.
+1. Select **View attributes**.
+1. Expand the **Attributes** section.
+1. Select **Add**.
+1. In the list, mark the selected row.
+1. Select **Add**.
+1. Select **OK**.
+1. Select **Save**.
+1. Close the page.
+1. Expand the **Products** section.
+1. Select **Add**.
+1. In the list, mark the selected row.
+1. Select **Add**. Similarly, you can add multiple products.  
+1. Select **OK**.
+1. Select **Attributes**.
+1. Expand the **Channel media** section.
+1. Select **Edit**.
+1. In the **Channel** field, select an option.
+1. Select the **Default** check box.
+1. Select **OK**.
+1. Expand the **Channel product attributes** section.
+1. In the **Brand** field, type a value. Similarly, you can set the other attributes.  
+1. Select **Save**.
+1. Close the page.
+1. Select **Save**.
+1. Select **Publish channel updates**. After you publish, the data is ready for sync with the channel tables. If you don't publish, the modified data isn't synced with the channel tables.  
+1. Select **OK**.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/24/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -15,6 +15,7 @@ ms.custom:
 # Install and set up Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
@@ -225,7 +226,7 @@ The uninstall process terminates the Inventory Visibility Add-in, unregisters th
 > If you want to continue to use Inventory Visibility in the current environment, we recommend that you don't delete all solutions from your Dataverse environment. If you want to delete all inventory data in Dataverse, we recommend that you use the [delete all inventory data](inventory-visibility-power-platform.md#delete-data) option.
 
 > [!NOTE]
-> If you must delete all solutions that are related to Inventory Visibility, follow these steps.
+> If you must delete all solutions that are related to Inventory Visibility, follow these steps:
 >
 > 1. Open [Power Apps](https://make.powerapps.com).
 > 1. Use the environment picker in the upper right to select the target Dataverse environment.

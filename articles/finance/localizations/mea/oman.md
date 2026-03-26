@@ -2,9 +2,9 @@
 title: Oman overview
 description: Learn about functionality specific to Oman, including information and links to documentation resources about reverse charge VAT.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/15/2021
+ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Oman

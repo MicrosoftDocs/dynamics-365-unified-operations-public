@@ -4,7 +4,7 @@ description: Learn how to set up methods of payment so you can create and post t
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 03/13/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak 
@@ -19,16 +19,16 @@ ms.search.form: CustPaymMode, CustVendPaymFormat
 
 This article explains how to set up methods of payment so you can create and post the bill of exchange after approving it from the draw bill of exchange journal in Microsoft Dynamics 365 Finance.
 
-The following procedure was created using the demo data company FRSI. 
+The following procedure uses the demo data company FRSI. 
 
-The functionality described is available for legal entities whose primary address is in France. To perform this procedure you should have a role of Accounts receivables manager.
+The functionality described in this article is available for legal entities whose primary address is in France. To perform this procedure, you should have the **Accounts receivables manager** role.
 
-To set up methods of payment, follow these steps.
+To set up methods of payment, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Methods of payment**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Payments setup** > **Methods of payment**.
 1. Select **New**.
 1. In the **Method of payment** field, enter a value.
-4. In the **Description** field, enter a value.
+1. In the **Description** field, enter a value.
 1. In the **Payment status** field, select **Approved**.
 1. In the **Payment type** field, select **Bill of exchange**.
 1. Expand or collapse the **General** section.
@@ -46,7 +46,5 @@ To set up methods of payment, follow these steps.
 1. Select or clear the **Create and post draw journal automatically when posting invoices** checkbox.
 1. Select or clear the **Run export script** checkbox.
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

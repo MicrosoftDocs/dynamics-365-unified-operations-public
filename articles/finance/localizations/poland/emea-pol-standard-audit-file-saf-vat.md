@@ -56,7 +56,7 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a id="er-format-setup"></a>Set up the ER format in General ledger parameters
 
-To set up the ER format in General ledger parameters, follow these steps.
+To set up the ER format in General ledger parameters, follow these steps:
 
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT sale and purchase registers** field, select the **VAT Register (PL)** ER format.
@@ -539,7 +539,7 @@ For invoices that aren't paid within 150 days, an **Overdue debt VAT** periodic 
 
 Initially, the configuration is an example of a SAF VAT invoices file - JPK_FA that is based on the reporting codes from the table earlier in this article. If you must adapt the configuration to another set of reporting codes, use the configuration to derive the format.
 
-To configure the ER model and format for the report, follow these steps.
+To configure the ER model and format for the report, follow these steps:
 
 1. In the configuration tree, select the format. Then select **Create configuration**.
 1. Select the **Derive from name** option, enter the name and description of the new format, and then select **Create configuration**. The format that is created is a copy of the parent format. 
@@ -574,7 +574,7 @@ You can specify additional selection parameters by selecting **Filter** on the *
 
 A SAF VAT sales and purchase register - JPK_VAT for a long period, such as a month or a quarter, can include a large amount of data and take a long time to be generated. Therefore, we recommend that you use batch jobs. The dialog box for every SAF report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. Learn more about batch processing in [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
-To review batch jobs or find a generated file, follow these steps.
+To review batch jobs or find a generated file, follow these steps:
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Find a line that is related to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.

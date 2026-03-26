@@ -33,7 +33,7 @@ The careers site helps candidates showcase their skills and qualifications, and 
 
 Candidates must have an account to sign in to the careers site.
 
-To sign in to the careers site if you already have an account, follow these steps.
+To sign in to the careers site if you already have an account, follow these steps:
 
 1. On the home page of the careers site, select **Sign in**.
 1. Enter your email address and password. 
@@ -50,7 +50,7 @@ An icon that contains the candidate's initials appears in the upper-right corner
  
 ## Create a profile
 
-To create a profile, follow these steps.
+To create a profile, follow these steps:
 
 1. Select the icon in the upper-right corner of the page, and then select **My profile**.
 1. Select **Create profile**.

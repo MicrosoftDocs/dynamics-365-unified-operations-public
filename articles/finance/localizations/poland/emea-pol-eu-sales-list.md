@@ -66,7 +66,7 @@ To set up and use EU sales list reporting for multiple VAT registrations, see [M
 
 ### Set up information about the company
 
-To set up information about the company, follow these steps.
+To set up information about the company, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. In the grid, select your company.
@@ -93,7 +93,7 @@ For more information, see [Import electronic reporting (ER) configurations from 
 
 ### Set up foreign trade parameters
 
-To set up foreign trade parameters, follow these steps.
+To set up foreign trade parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Foreign trade** \> **Foreign trade parameters**.
 1. On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
@@ -107,7 +107,7 @@ To set up foreign trade parameters, follow these steps.
 
 ### Set up a sales tax authority
 
-To set up a sales tax authority, follow these steps.
+To set up a sales tax authority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
 1. Create a sales tax authority.
@@ -119,7 +119,7 @@ For general information about the types of transactions that are included in the
 
 ### Generate an EU sales list report
 
-To generate an EU sales list report, follow these steps.
+To generate an EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. On the Action Pane, select **Transfer** to transfer transactions to the **EU sales list**.
@@ -142,7 +142,7 @@ To generate an EU sales list report, follow these steps.
 
 ### Generate a correction for EU sales list report
 
-To generate a correction for EU sales list report, follow these steps.
+To generate a correction for EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Declarations** \> **Foreign trade** \> **EU sales list**.
 1. Select the line that you want to correct and select **Copy lines** \> **To lines with status included** to create a new line that is linked to an existing one with **Corrected** checkbox marked automatically.
@@ -173,7 +173,7 @@ For information about how to set up purchases and create a vendor invoice, see [
 
 ### Set up a sales tax authority
 
-To set up a sales tax authority, follow these steps.
+To set up a sales tax authority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 1. Create the **TA_POL** sales tax authority.
@@ -181,7 +181,7 @@ To set up a sales tax authority, follow these steps.
 
 ### Generate an EU sales list report
 
-To generate an EU sales list report, follow these steps.
+To generate an EU sales list report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**.
 1. On the Action Pane, select **Reporting**.

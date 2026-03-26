@@ -102,7 +102,7 @@ When you enter data ahead of the place where the system is processing, you can e
 
 In version 10.0.38 and later, users can update multiple selected rows in a single action by using the **Bulk editing in grids** feature, which can be enabled through Feature management.
 
-To use this feature, follow these steps.
+To use this feature, follow these steps:
 
 1. In the grid, select the rows that you want to update.
 2. Select **Grid options** \> **Edit selected rows**.

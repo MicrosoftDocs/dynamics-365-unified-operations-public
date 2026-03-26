@@ -25,7 +25,7 @@ Before you complete the following procedure, you must create and confirm a recog
 
 The procedure uses the demo data company JPMF.
 
-To propose and post impairment amounts that you recognize and calculate on a cash generating unit, follow these steps.
+To propose and post impairment amounts that you recognize and calculate on a cash generating unit, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

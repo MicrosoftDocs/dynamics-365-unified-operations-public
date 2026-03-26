@@ -20,7 +20,7 @@ This article explains how to set up and generate the VAT declaration for Russia 
 
 ## Set up the VAT declaration
 
-To start to work with the VAT declaration, follow these steps.
+To start to work with the VAT declaration, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the VAT declaration format:
 
@@ -271,7 +271,7 @@ Application 1 contains the following information:
 
 ## Sections for exports that are taxed at a rate of 0 percent
 
-Before you generate the sections of the VAT declaration for exports that are taxed at a rate of 0 percent, follow these steps.
+Before you generate the sections of the VAT declaration for exports that are taxed at a rate of 0 percent, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **VAT operation codes**, and create VAT operation codes for export trade.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and assign VAT operation codes to sales tax codes.
@@ -394,7 +394,7 @@ For the earlier example, the following data will be present in section 6 of the 
 
 ## Generate a VAT declaration in electronic format
 
-To generate a VAT declaration in electronic format, follow these steps.
+To generate a VAT declaration in electronic format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
 1. Select the format to generate the report in. For example, select **НДС 5.09 (2022)**.

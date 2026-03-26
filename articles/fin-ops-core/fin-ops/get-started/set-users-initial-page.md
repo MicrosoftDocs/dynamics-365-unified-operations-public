@@ -4,7 +4,7 @@ description: Learn how a user or admin can set the initial page shown to a user 
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
-ms.date: 04/25/2025
+ms.date: 03/05/2026
 ms.search.region: Global
 ms.search.form: SysUserSetup, SysUserManagement
 ms.topic: how-to

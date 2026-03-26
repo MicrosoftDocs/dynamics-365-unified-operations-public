@@ -31,14 +31,14 @@ The Federal Informational Address System (or FIAS) address database might be req
 
 ### Set up the address format, country or region, state or province, county, city and postal code
 
-To set up the address format, country or region, state or province, county, city and postal code, follow these steps.
+To set up the address format, country or region, state or province, county, city and postal code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup** to open the **Address setup** page.
 1. On the **Address format**, **Country/region**, **State/province**, **County**, **City** and **ZIP/postal codes** tabs, you can set up the address format, country or region, state or province, county, city, and postal code.
 
 ### Set up a new district
 
-To set up a new district, follow these steps.
+To set up a new district, follow these steps:
 
 1. On the **Address setup** page, on the **District** tab, select the country or region, state or province, county code, and city code.
 1. Select **New** to create a new district for the selected country or region, state or province, county, and city.
@@ -52,7 +52,7 @@ To set up a new district, follow these steps.
 
 ### Set up a street code
 
-To set up a street code, follow these steps.
+To set up a street code, follow these steps:
 
 1. On the **Address setup** page, on the **Street** tab, verify that **RUS** is selected in the **Country/region** field.
 1. Select the state or province, county code, city code, and district code.
@@ -67,7 +67,7 @@ To set up a street code, follow these steps.
 
 ### Set up a group of houses
 
-To set up a group of houses, follow these steps.
+To set up a group of houses, follow these steps:
 
 1. On the **Address setup** page, on the **Group of houses** tab, verify that **RUS** is selected in the **Country/region** field.
 1. Select the state or province, county code, city code, district code, and street code.
@@ -82,7 +82,7 @@ To set up a group of houses, follow these steps.
 
 ### Set up a group of flats
 
-To set up a group of flats, follow these steps.
+To set up a group of flats, follow these steps:
 
 1. On the **Address setup** page, on the **Group of flats** tab, verify that **RUS** is selected in the **Country/region** field.
 1. Select the state or province, county code, city code, district code, street code, and group of houses code.
@@ -97,7 +97,7 @@ To set up a group of flats, follow these steps.
 
 ### Set up land plots
 
-To set up land plots, follow these steps.
+To set up land plots, follow these steps:
 
 1. On the **Address setup** page, on the **Land plots** tab, verify that **RUS** is selected in the **Country/region** field.
 1. Select the state or province, county code, city code, district code, and street code.
@@ -112,7 +112,7 @@ To set up land plots, follow these steps.
 
 ## Create an address for a customer
 
-To create an address for a customer, follow these steps.
+To create an address for a customer, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Open a customer record, and then, on the **Addresses** FastTab, select **More options \> Advanced** to open the **Manage addresses** page.
@@ -136,7 +136,7 @@ To create an address for a customer, follow these steps.
 
 ### Import an FIAS metadata package
 
-To import an FIAS metadata package, follow these steps.
+To import an FIAS metadata package, follow these steps:
 
 1. Go to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/Logon/Index), and in the Shared asset library, on the **Data package** tab, download the **RU FIAS – FiasMetadataPackage**. This package file contains the required data for the import jobs runtime.
 
@@ -162,7 +162,7 @@ To import an FIAS metadata package, follow these steps.
 
 ### Set up a template to import FIAS data
 
-To set up a template to import FIAS data, follow these steps.
+To set up a template to import FIAS data, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Workspaces \> Data management**.
 1. In the **Import / Export** section, select the **Templates** tile to open the **Template** page.
@@ -186,7 +186,7 @@ To set up a template to import FIAS data, follow these steps.
 
 When you import FIAS data into the system the first time, you should create a job for a full FIAS import.
 
-To set up a job for a full FIAS import, follow these steps.
+To set up a job for a full FIAS import, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Workspaces \> Data management**.
 1. In the **Import / Export** section, select the **Import** tile to create a new import job.
@@ -203,7 +203,7 @@ To set up a job for a full FIAS import, follow these steps.
 
 To update existing address data, you should create a job to import FIAS delta.
 
-To set up a job to import FIAS delta, follow these steps.
+To set up a job to import FIAS delta, follow these steps:
 
 1. Go to [LCS](https://lcs.dynamics.com/Logon/Index), and in the Shared asset library, on the **Data package** tab, download the **RU FIAS – FiasTransformations** file.
 1. In Dynamics 365 Finance, go to **System administration \> Workspaces \> Data management**.
@@ -235,7 +235,7 @@ To set up a job to import FIAS delta, follow these steps.
 
 Because the full FIAS database contains a very large number of records, some performance issues might occur during import. To help prevent these issues, the first time that you do an import, you should use the FIAS database file in TXT format. You can find this file in the LCS Shared asset library. It contains the FIAS database on December 1, 2018.
 
-To do a full FIAS import to an empty database, follow these steps.
+To do a full FIAS import to an empty database, follow these steps:
 
 1. Go to [LCS](https://lcs.dynamics.com/Logon/Index), and in the Shared asset library, on the **Data package** tab, download the **RU FIAS - addrObjCSV** file. Verify that the file contains the AS_ADDROBJ_20181216_\<number of state\>.txt file and, optionally, House, Stead, and Room files.
 1. Create a zip archive that contains the files from the downloaded package for one or more states.
@@ -255,7 +255,7 @@ To do a full FIAS import to an empty database, follow these steps.
 
 ### Update addresses from FIAS
 
-To update addresses from FIAS, follow these steps.
+To update addresses from FIAS, follow these steps:
 
 1. Download the database with the latest updated date from [The FIAS website](https://fias.nalog.ru/).
 1. Select the downloaded database in ZIP format, and do the import just as you did in the previous section. However, in the **Import of data** dialog, set the **Full import** option to **No**.
@@ -264,7 +264,7 @@ To update addresses from FIAS, follow these steps.
 
 The time that is required to import FIAS data depends on the amount of data that is being imported and the system setup. Here are some tips that might help speed up the import process.
 
-To potentially speed up the import process, follow these steps.
+To potentially speed up the import process, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration \> Workspaces \> Data management**.
 1. In the **Import / Export** section, select the **Framework parameters** tile to open the **Data import/export framework parameters** page.

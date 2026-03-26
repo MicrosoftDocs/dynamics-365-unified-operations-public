@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/13/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -23,7 +23,7 @@ You use the Journal voucher page to enter and post payments that you receive fro
 
 The following procedure uses the BRMF demo company.
 
-To use the Journal voucher page to enter and post payments that you receive from customers, follow these steps.
+To use the Journal voucher page to enter and post payments that you receive from customers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. In the list, find and select the desired record.

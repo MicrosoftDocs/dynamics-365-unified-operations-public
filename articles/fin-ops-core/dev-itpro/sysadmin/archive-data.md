@@ -94,7 +94,7 @@ For example, when the administrator views the **Dataverse database storage** rep
 
 ![Screenshot that shows an example of the Dataverse database storage report.](./media/storage.png)
 
-To view the storage that's consumed by finance and operations data, follow these steps.
+To view the storage that's consumed by finance and operations data, follow these steps:
 
 1. Go to the [Power Platform admin center reports for finance and operations apps](/power-platform/admin/finance-operations-storage-capacity).
 1. Select **Capacity** \> **Finance and operations**.

@@ -25,7 +25,7 @@ The following guidelines assume that you use a two-version approach to update st
 - Allow cost records to be entered for all sites (that is, leave the **Site** field blank). If you enter a site, cost records can be entered only for that site.
 - Use a fallback principle of **Active**.
 
-To add new manufacturing items throughout the frozen period, follow these steps.
+To add new manufacturing items throughout the frozen period, follow these steps:
 
 1. Use the **Costing version setup** page to enable cost records to be entered into the second costing version that contains the incremental updates. Prevent the activation of pending costs, where activation is allowed after pending costs have been completely and accurately defined. Indicate a blank from-date as a policy in the costing version, and then enter the from-date when you enter each cost record. The from-date should represent a date before the new items are purchased or manufactured.
 1. Use the **Item price** page to enter cost records for new purchased items. For each cost record, enter the costing version that contains incremental updates, and use a from-date that comes before the expected manufacturing date for new manufactured items.

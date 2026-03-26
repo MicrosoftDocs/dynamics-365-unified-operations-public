@@ -3,10 +3,10 @@ title: Purchase duties
 description: Learn about purchase duties in Austria, what are calculated for legal entities that have a primary address in Austria.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 06/26/2024
+ms.date: 03/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Austria
 ms.search.validFrom: 2016-05-31
@@ -26,3 +26,5 @@ To specify the value of the purchase duty, select **Purchase duty value** to ope
 Purchase duties are generated when you settle and post sales taxes. You can generate the **Purchase duty** report from the **Purchase duty reporting** menu.
 
 For more information about global sales tax functionality, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

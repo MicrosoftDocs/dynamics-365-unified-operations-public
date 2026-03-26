@@ -27,7 +27,7 @@ The procedures can be completed by using any data set.
 
 To complete them, you must download and save the following file: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-In this article, you will create the required ER configurations for the Litware, Inc. sample company. Therefore, before you complete the procedures in this article, you must follow these steps.
+In this article, you will create the required ER configurations for the Litware, Inc. sample company. Therefore, before you complete the procedures in this article, you must follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, verify that the configuration provider for the **Litware, Inc.** sample company is available and marked as active. If you don't see this configuration provider, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).

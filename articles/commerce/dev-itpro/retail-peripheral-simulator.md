@@ -29,7 +29,7 @@ The peripheral simulator is a utility that Microsoft provides as part of Microso
 
 The peripheral simulator package file to download is located in the Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 
-To install the peripheral simulator, follow these steps.
+To install the peripheral simulator, follow these steps:
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 2. Go to **Shared asset Library**.
@@ -83,7 +83,7 @@ You can use the peripheral simulator to test product barcodes, receipt formats, 
 
 #### Set up a hardware profile
 
-To set up a hardware profile, follow these steps.
+To set up a hardware profile, follow these steps:
 
 1. In Dynamics 365 Commerce headquarters, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Hardware profiles**.
 2. Select **New** to create a profile.
@@ -113,7 +113,7 @@ To set up a hardware profile, follow these steps.
 
 #### Assign the hardware profile to a register
 
-To assign the hardware profile to a register, follow these steps.
+To assign the hardware profile to a register, follow these steps:
 
 1. After the hardware profile is created, in headquarters go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **Registers**.
 2. In the **POS registers** list, select the link in the **Register number** field for the register that should use the peripheral simulator.
@@ -123,7 +123,7 @@ To assign the hardware profile to a register, follow these steps.
 
 #### Synchronize changes to the channel database
 
-To synchronize changes to the channel database, follow these steps.
+To synchronize changes to the channel database, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 2. Select the **1090** distribution schedule.
@@ -166,7 +166,7 @@ The virtual peripheral printer just shows receipts as they're printed from the P
 
 #### Configure receipt printing
 
-To configure receipt printing, follow these steps.
+To configure receipt printing, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Hardware profiles**.
 2. Select the hardware profile that you created for virtual peripherals.
@@ -180,7 +180,7 @@ When a scale product is added to the POS transaction, and a scale is configured,
 
 ##### Configure a scale product
 
-To configure a scale product, follow these steps.
+To configure a scale product, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Products and categories** \> **Released products by category**.
 2. Open the product record.
@@ -189,7 +189,7 @@ To configure a scale product, follow these steps.
 
 ##### Synchronize changes to the channel database
 
-To synchronize changes to the channel database, follow these steps.
+To synchronize changes to the channel database, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 2. Select the **1040** distribution schedule.
@@ -203,7 +203,7 @@ The virtual signature capture device prompts the user to provide a signature on 
 
 ##### Set up a tender to require a signature
 
-To set up a tender to require a signature, follow these steps.
+To set up a tender to require a signature, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**.
 2. Select the store.
@@ -216,7 +216,7 @@ To set up a tender to require a signature, follow these steps.
 
 ##### Synchronize changes to the channel database
 
-To synchronize changes to the channel database, follow these steps.
+To synchronize changes to the channel database, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 2. Select the **1070** distribution schedule.
@@ -248,7 +248,7 @@ The POS simulator is also provided as a standalone utility that is independent o
 
 ### Use the POS simulator
 
-To use the POS simulator, follow these steps.
+To use the POS simulator, follow these steps:
 
 1. Select **Start** on your computer, type **Peripheral simulator**, and then select the app when it appears in the search results.
 2. Select **Use virtual peripherals**. The supported devices are listed as tabs on the left side of the window. To view a specific device, select the tab for that device.
@@ -282,7 +282,7 @@ To edit a device that is already created, use the left arrow (**&lt;**) and righ
 
 #### Configure an OPOS device
 
-To configure an OPOS device, follow these steps.
+To configure an OPOS device, follow these steps:
 
 1. Select **OPOS** as the device type.
 2. Select the name of the device driver. This value is required. This list includes all the OPOS service objects that are installed on the local machine where devices are being tested. You can also manually enter the device driver name.
@@ -310,7 +310,7 @@ The POS simulator can be used to test network devices. The following network dev
 > [!NOTE]
 > No payment terminals are supported out of the box.
 
-To configure a network device, follow these steps.
+To configure a network device, follow these steps:
 
 1. Select **Network** as the device type.
 2. Enter data for the rest of the fields.

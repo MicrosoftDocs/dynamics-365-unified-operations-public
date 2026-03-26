@@ -25,7 +25,7 @@ The following procedure walks you through how to create a fixed asset with a spe
 
 Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
 
-To create a fixed asset with a special depreciation profile, follow these steps.
+To create a fixed asset with a special depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.

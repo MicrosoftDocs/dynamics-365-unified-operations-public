@@ -25,7 +25,7 @@ In different countries (such as the Republic of Türkiye), the realized gain or 
 
 ## Create a currency revaluation posting profile
 
-To create a currency revaluation posting profile, follow these steps.
+To create a currency revaluation posting profile, follow these steps:
 
 1. Go to **General ledger \> Currencies \> Currency revaluation posting profile**.
 2. In the **Currency code** field, select **All** for all currencies or **Table** for a specific currency.

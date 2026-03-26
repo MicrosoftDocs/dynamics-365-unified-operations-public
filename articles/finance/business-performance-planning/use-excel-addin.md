@@ -26,7 +26,7 @@ The process of configuring and using the Excel add-in involves the following tas
 
 ## Prepare your Excel file
 
-To prepare an Excel file to use the add-in, follow these steps.
+To prepare an Excel file to use the add-in, follow these steps:
 
 1. Confirm that the Excel add-in is installed. For more information, see [Install the Excel add-in for business performance planning](install-excel-add.md).
 2. In business performance planning, go to the cube of your choice.
@@ -36,7 +36,7 @@ To prepare an Excel file to use the add-in, follow these steps.
 
 ## Connect to Dataverse and load your data model
 
-To connect to Dataverse and load a data model, follow these steps.
+To connect to Dataverse and load a data model, follow these steps:
 
 1. On the Excel ribbon, on the **Data** tab, select **Get data**.
 2. Select **From database**, and then select **SQL server database**.
@@ -51,7 +51,7 @@ To connect to Dataverse and load a data model, follow these steps.
 
 ## Create a PivotTable based on your data model
 
-To create a PivotTable that's based on a data model, follow these steps.
+To create a PivotTable that's based on a data model, follow these steps:
 
 1. On the Excel ribbon, on the **Insert** tab, select **Pivot table from data model**. Your cube and dimension tables should be shown.
 2. Configure the PivotTable by bringing fact data, amounts, or values from your cube into the **Values** section.
@@ -62,7 +62,7 @@ A message at the top of the PivotTable pane notifies you that there are no relat
 
 ## Begin planning
 
-To begin planning by using a cube, follow these steps.
+To begin planning by using a cube, follow these steps:
 
 1. On the Excel ribbon, select the **Planning** tab if it isn't selected.
 2. If you're in **Viewing** mode, switch to **Editing** mode. You're prompted to authenticate.
@@ -71,7 +71,7 @@ To begin planning by using a cube, follow these steps.
 5. Optional: You can save the workbook locally and share it with coworkers to enable collaborative planning. Your coworkers must authenticate by using their credentials. They must also update the data from the **Data** tab of the Excel ribbon.
 6. Optional: You can add comments to the cells that you're modifying the values for. These comments are workbook-specific and aren't stored on Dataverse. They aren't retained if a new workbook is downloaded or created from the business performance planning app.
 
-To begin planning by using dimensions, follow these steps.
+To begin planning by using dimensions, follow these steps:
 
 1. On the Excel ribbon, on the **Planning** tab, select **Edit dimension**. A list of all the dimensions that you can view and edit is shown.
 2. Select a dimension to open its contents on another worksheet.

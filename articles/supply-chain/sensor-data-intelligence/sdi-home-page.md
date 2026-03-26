@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 01/06/2025
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,6 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enables organizations to drive business processes in Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor. It's an updated, renamed version of the *IoT Intelligence* feature that was previously available for Supply Chain Management.
@@ -22,7 +23,7 @@ Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enab
 Sensor Data Intelligence lets you perform the following tasks:
 
 - Collect details from machines and equipment to update maintenance asset counter values in Supply Chain Management and drive predictive maintenance.
-- Set up the solution by using a simple onboarding wizard instead of manually installing and configuring components in Microsoft Dynamics Lifecycle Services (LCS).
+- Set up the solution by using a simple onboarding wizard instead of manually installing and configuring components in Microsoft Dynamics Lifecycle Services.
 - Deploy components on your own subscription, so that you have more flexibility to manage Azure components.
 - Configure, scale, and extend the solution as business logic that runs on Azure components. Those components are now managed on your own subscription. Therefore, you can customize them as required to meet your unique business needs.
 
@@ -38,6 +39,7 @@ Sensor Data Intelligence enables several types of functionality, each of which i
 | [Asset maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance cost and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets. |
 | [Machine status](sdi-scenario-equipment-downtime.md) | Ensure operation efficiency by using sensor readings to notify planners about machine outages and provide options for mitigating potential delays. |
 | [Product quality](sdi-scenario-product-quality.md) | Ensure the quality of product batches by comparing sensor readings for actual properties of each product batch, such as moisture, temperature, or custom-defined quality metrics. The system will notify users when deviations occur. |
+| [Production auto report](sdi-scenario-production-auto-report.md) | Automatically report finished quantities when a machine generates enough sensor signals to reach a defined output threshold.  |
 | [Production delays](sdi-scenario-production-delays.md) | Use sensor readings to compare actual cycle time to planned cycle time, and notify supervisors when production isn't on schedule. Supervisors can then intervene as required to ensure maximum operation efficiency. |
 
 ## Architecture

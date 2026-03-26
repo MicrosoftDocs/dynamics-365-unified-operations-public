@@ -29,7 +29,7 @@ You must configure the following pages to use them in future sales transactions:
 - Number sequence
 - Journal names
 
-To configure a sales invoice, follow these steps.
+To configure a sales invoice, follow these steps:
 
 1. Create the *document class type* that represents the fiscal documents to use in future transactions. Examples of these documents include invoices and credit notes.
 1. Create at least one *sales point prefix* to use in the document class numeration. The sales point should match the document mask of the document class that it's assigned to. Learn more in [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
@@ -42,7 +42,7 @@ To configure a sales invoice, follow these steps.
 
 Vendor invoices have the same configuration requirements as sales invoices, except automatically generated numeration isn't required.
 
-To configure a vendor invoice, follow these steps.
+To configure a vendor invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**, and create one document class for each fiscal document that the company receives from vendors. Examples include purchase invoices, purchase credit notes, and purchase debit notes.
 1. Add a document class type.

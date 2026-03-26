@@ -87,7 +87,7 @@ Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT D
 > [!NOTE]
 > We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
-To set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats, follow these steps.
+To set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace.
 2. Select the **Reporting configurations** tile.
@@ -275,7 +275,7 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 
 The process of setting up the EM functionality for VAT returns with direct submission to Altinn has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
 
-To import a package of data entities that includes a predefined EM setup, follow these steps.
+To import a package of data entities that includes a predefined EM setup, follow these steps:
 
 1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
 2. In the list of data package files, find **NO VAT return Altinn vN** (where "N" is the version of the package), and download it to your computer. We recommend that you download the latest available version of the package.
@@ -302,7 +302,7 @@ To import a package of data entities that includes a predefined EM setup, follow
 
 The **NO VAT return – Altinn** setup file provides the **Tax registration number** additional field for **NO VAT return** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the **NO VAT return with direct submission to Altinn** feature in Finance. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Norway. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
-To define the VAT registration number that the **NO VAT return with direct submission to Altinn** feature in Finance must use to submit VAT returns, follow these steps.
+To define the VAT registration number that the **NO VAT return with direct submission to Altinn** feature in Finance must use to submit VAT returns, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **NO VAT return** processing.
 2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used to send the VAT return to Altinn.
@@ -316,7 +316,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
 You can generate a VAT return in Excel format to preview VAT amounts during the period. 
 
-To set up a paper format to preview VAT returns, follow these steps.
+To set up a paper format to preview VAT returns, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspaces** \> **Feature management**.
 2. On the **All** tab, find and select the **VAT statement format reports** feature in the list.
@@ -358,7 +358,7 @@ Electronic message processing that is defined for the **NO VAT return – Altinn
 
 The **NO VAT return** processing lets you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in XML or Excel format. The collection of sales tax payment transactions is implemented by using the **NO VAT Collect sales tax payments** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **NO VAT Collect sales tax payments** action.
 
-To define a sales tax settlement period, follow these steps.
+To define a sales tax settlement period, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records**.
 2. Select **NO VAT Collect sales tax payments**.
@@ -399,7 +399,7 @@ For more information about how to populate records from multiple companies in EM
 
 To work with the electronic messages functionality, you must define the related number sequences.
 
-To define the related number sequences, follow these steps.
+To define the related number sequences, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
 2. On the **Number sequences** tab, set up two number sequences:
@@ -423,7 +423,7 @@ If any of these file types aren't defined on the **File types** tab, add them.
 
 The Tax Administration web service validates VAT returns. This web service then sends the validation results in XML format. To make it easier for users to read and analyze the validation results, you can download and use an Extensible Stylesheet Language Transformations (XSLT) transformation.
 
-To set up a validation results transformation schema, follow these steps.
+To set up a validation results transformation schema, follow these steps:
 
 1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
 2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer. The file name is, **NO VAT validation result converter.zip**.
@@ -440,7 +440,7 @@ The system will automatically apply the attached XSLT file to validation results
 
 Different groups of users might require access to different electronic message processing. You can limit access to each type of processing, based on security groups that are defined in the system.
 
-To define which security roles have access to the **NO VAT return** processing, follow these steps.
+To define which security roles have access to the **NO VAT return** processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select the **NO VAT return** processing, and add the security groups that must work with this processing. 
@@ -451,7 +451,7 @@ If security roles aren't defined for electronic message processing, only a syste
 
 When an access token for ID-porten and Altinn is retrieved, it's stored in the system database in an encrypted format. The access token must be used whenever a request of any type is sent to ID-porten or Altinn. For security reasons, access to the access token must be limited to the security groups that send requests. If a user who isn't in one of those security groups tries to send a request to Altinn, a message notifies them that they aren't allowed to use the selected web application for interoperation.
 
-To set up security groups that must have access to access tokens for ID-porten or Altinn, follow these steps.
+To set up security groups that must have access to access tokens for ID-porten or Altinn, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
 2. Select the web application (**ID-porten** or **Altinn**) to define security groups for.
@@ -463,7 +463,7 @@ If security roles aren't defined for a web application, only a system admin can 
 
 When you [register an integration point in the ID-porten web portal](emea-nor-vat-return-integration-point.md), you should safely store the client ID and client secret that will be used for direct submission to Altinn from Finance. In the following procedure, you will copy the client ID and client secret of your integration point in ID-porten and paste them into Finance.
 
-To set up the client ID and client secret of your ID-porten integration point in Finance, follow these steps.
+To set up the client ID and client secret of your ID-porten integration point in Finance, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
 2. In the **Client ID** field, paste the client ID of your integration point in ID-porten.
@@ -474,7 +474,7 @@ To set up the client ID and client secret of your ID-porten integration point in
 
 Internet addresses (URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. 
 
-To set up a URL that is used in **ID-porten**, follow these steps.
+To set up a URL that is used in **ID-porten**, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
 2. **Base URL** field is blank.
@@ -486,7 +486,7 @@ To set up a URL that is used in **ID-porten**, follow these steps.
 4. In the **Token URL path** field, enter `https://idporten.no/token` for *production* integration or `https://test.idporten.no/token` for *sandbox* integration.
 5. Copy the full URL of the current page from your browser's address bar, and paste it into the **Redirect URL** field.
 
-To set up an internet address that is used by **Altinn** web services, follow these steps.
+To set up an internet address that is used by **Altinn** web services, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
 2. In the **Base URL** field, enter one of the following internet addresses:

@@ -155,13 +155,13 @@ When you create a new product based on an engineering category, you create both 
 - When the *Product readiness checks* feature is turned *off* on your system, the readiness policy is set and shown only on [engineering category](engineering-versions-product-category.md) records. To learn which policy applies to a released product, the system checks the **Product readiness policy** field for the related engineering category. You can change the readiness policy for an existing product by editing the related engineering category (not the shared product).
 - When the *Product readiness checks* feature is turned *on*, it adds a **Product readiness policy** field to the **Product** page (where shared products are set up) and to the **Released product** page (where the value is read-only and is taken from the related shared product). The system finds the readiness policy for a released product by checking the related shared product. When you use an engineering category to create a new engineering product, the system creates both a shared product and a released product, and copies any **Product readiness policy** setting for the engineering category to the new shared product. You can then change the readiness policy for an existing product by editing the related shared product (not the released engineering category).
 
-To assign a readiness policy to a shared product, follow these steps.
+To assign a readiness policy to a shared product, follow these steps:
 
 1. Go to **Product information \> Products \> Products**.
 1. Open or create the product that you want to assign a readiness policy to.
 1. On the **General** FastTab, set the **Product readiness policy** field to the name of the policy that should apply to the product.
 
-To assign a readiness policy to an engineering category, follow these steps.
+To assign a readiness policy to an engineering category, follow these steps:
 
 1. Go to **Engineering change management \> Setup \> Engineering product category details**.
 1. Open or create the engineering category that you want to assign a readiness policy to.

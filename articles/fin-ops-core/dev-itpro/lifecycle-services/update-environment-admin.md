@@ -4,7 +4,7 @@ description: Learn about how to change the environment administrator for a finan
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 04/28/2023
+ms.date: 03/06/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global 
@@ -14,6 +14,7 @@ ms.search.validFrom: 2018-03-05
 # Update the environment administrator
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 When you create a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS), one of the configuration options requires that you select a user as the environment administrator. This user becomes the email account that is associated with the default **Admin** user record that the System Administrator role is assigned to in finance and operations apps.
 

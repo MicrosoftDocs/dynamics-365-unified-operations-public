@@ -43,7 +43,7 @@ Each tile provides a **Show** link. When you select this link, the view beneath 
 
 ## Review changes to confirmed purchase orders
 
-Purchasers use the workspace to review and accept changes to confirmed purchase orders. They typically follow these steps.
+Purchasers use the workspace to review and accept changes to confirmed purchase orders. They typically follow these steps:
 
 1. Study all changes to confirmed purchase orders and their downstream impact.
 1. Focus on changes that have a low risk of downstream impact.

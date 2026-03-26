@@ -63,7 +63,7 @@ Previously, variable compensation plans were linked to the employee level. By as
 
 ### Link variable plan awards to positions
 
-To link a variable plan award to a position, follow these steps.
+To link a variable plan award to a position, follow these steps:
 
 1. Go to **Human Resources** \> **Workers**, and select a worker.
 1. On the Action Pane, on the **Compensation** tab, select **Variable plan awards**.
@@ -72,7 +72,7 @@ To link a variable plan award to a position, follow these steps.
 
 ### Link variable plan enrollments to positions
 
-To link a variable plan enrollment to a position, follow these steps.
+To link a variable plan enrollment to a position, follow these steps:
 
 1. Go to **Human Resources** \> **Workers**, and select a worker.
 1. On the Action Pane, on the **Compensation** tab, select **Variable plan enrollment**.

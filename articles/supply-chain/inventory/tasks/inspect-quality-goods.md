@@ -20,14 +20,14 @@ If the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.
 
 ## Step 1: Select a quality order
 
-To select a quality order, follow these steps.
+To select a quality order, follow these steps:
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
 1. Select the quality order that was generated before you started this procedure.
 
 ## Step 2: Record test results
 
-To record test results, follow these steps.
+To record test results, follow these steps:
 
 1. Select **Results**.
 1. Select **Edit**.
@@ -38,7 +38,7 @@ To record test results, follow these steps.
 
 ## Step 3: Validate the quality order
 
-To validate the quality order, follow these steps.
+To validate the quality order, follow these steps:
 
 1. Select **Validate**.
 1. In the **Validated by** field, select the user who is doing the inspection.

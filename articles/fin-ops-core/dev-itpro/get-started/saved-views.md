@@ -51,7 +51,7 @@ Unlike traditional personalization, views aren't automatically saved when a user
 
 To ensure that the current state of the view is known, when you start to change a view by personalizing or filtering it, an asterisk (\*) appears next to the current view name. This symbol indicates that you're looking at an unsaved, modified version of that view.
 
-If you want to save those changes, follow these steps.
+If you want to save those changes, follow these steps:
 
 1. Select the view name to open the view selector.
 2. To modify the existing view, select **Save**. This action isn't available for locked views. 
@@ -147,14 +147,14 @@ In some environments, it may take up to an hour before users see the published v
 
 After you publish a view, you might find that you want to change it. Although you can't make live changes to a published view, because these views are locked for editing for all users (including publishers), you can republish a view to update it.
 
-If the changes that you want to make to a published view only involve the publish parameters (the name and description of the view, or the security roles the view is published to), follow these steps.
+If the changes that you want to make to a published view only involve the publish parameters (the name and description of the view, or the security roles the view is published to), follow these steps:
 
 1. Switch to the published view for the parameters that you want to update. 
 2. On the view selector drop-down menu, select **Republish**. If you're using version 10.0.12 or earlier, you must select **Publish** and then **Yes** to update the existing view.
 3. Update the name, description, security roles, and legal entities for the view. 
 4. Select **Publish**. If you originally selected this published view as the default view, it will be the default view for users again after you republish it. 
 
-If the changes to the published view involve modifications of the personalizations or filters that are associated with the view, follow these steps.
+If the changes to the published view involve modifications of the personalizations or filters that are associated with the view, follow these steps:
 
 1. Load the published view that you want to change. 
 2. Make the required changes to the local draft.

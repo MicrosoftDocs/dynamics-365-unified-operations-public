@@ -4,7 +4,7 @@ description: Learn about how to enable automatic retries on batch jobs and tasks
 author: matapg007
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/18/2024
+ms.date: 03/13/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-Implementation of a retry mechanism in Finance and Operations Batch is vital for maintaining robust data processing. A retry mechanism provides fault tolerance by automatically handling transient errors. Therefore, it ensures uninterrupted operation without requiring manual intervention. In addition, it enhances data integrity by reprocessing incomplete or failed transactions. Therefore, it reduces the risk of data loss. By minimizing downtime and manual intervention, a retry mechanism improves operational efficiency, so that batch processing can proceed smoothly, despite intermittent errors or disruptions.
+Implementation of a retry mechanism in finance and Ooerations Batch is vital for maintaining robust data processing. A retry mechanism provides fault tolerance by automatically handling transient errors. Therefore, it ensures uninterrupted operation without requiring manual intervention. In addition, it enhances data integrity by reprocessing incomplete or failed transactions. Therefore, it reduces the risk of data loss. By minimizing downtime and manual intervention, a retry mechanism improves operational efficiency, so that batch processing can proceed smoothly, despite intermittent errors or disruptions.
 
 ## Retry mechanisms for batch tasks
 
@@ -30,10 +30,10 @@ Two types of retries can be used for batch tasks:
 
 You can configure this functionality through the batch job setup, by adjusting the retry count on the batch task. The **Maximum retries** parameter determines the number of retries that are attempted for a task, regardless of the error type or batch server restart. If a task fails, the batch platform evaluates the number of retries that have been performed. If the count is less than the **Maximum retries** value, the task is reset to a ready state for reprocessing. The highest allowed value for the **Maximum retries** parameter is **5**.
 
-To set the **Maximum retries** value via the Batch user interface, follow these steps.
+To set the **Maximum retries** value via the Batch user interface, follow these steps:
 
 1. On the **Batch jobs** page, select **Batch task details**.
-2. On the **General** tab, adjust the value of the **Maximum retries** field for the batch task.
+1. On the **General** tab, adjust the value of the **Maximum retries** field for the batch task.
 
 > [!NOTE]
 > Setting the retry count on a runtime batch task isn't supported. If you try to define this value programmatically, the platform overrides it to **0** (zero), and the runtime task isn't retried.

@@ -45,7 +45,7 @@ The list page shows all transactions for customers that have the same party ID a
 
 The menus on the **Customer transactions** list page vary, depending on the legal entity for the transaction. For example, if a feature is available only for Swiss legal entities, the menu options for that feature appear only when a Swiss transaction is selected.
 
-To access the feature, follow these steps.
+To access the feature, follow these steps:
 
 1. Select **Accounts receivable \> All customers**.
 2. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Transactions** group, select **Global transactions**.
@@ -67,7 +67,7 @@ You can update due dates and discount dates for open customer transactions. In r
 
 ### Activate the feature
 
-To add due dates to the **Customer transactions** list page and change payment settings for a transaction by using the **Update due date and cash discount dates** dialog box, follow these steps.
+To add due dates to the **Customer transactions** list page and change payment settings for a transaction by using the **Update due date and cash discount dates** dialog box, follow these steps:
 
 1. Select **Accounts receivable \> Setup \> Accounts receivable parameters**.
 2. On the **Settlements** tab, set the **Show due date and allow edit** option to **Yes**.
