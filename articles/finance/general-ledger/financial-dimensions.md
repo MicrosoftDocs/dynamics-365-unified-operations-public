@@ -73,7 +73,7 @@ When you select **Activate all**, the system updates all inactive or renamed dim
 > [!WARNING]
 > If you have customizations that depend on the schema column names of dimension tables, those customizations must be removed **before** you rename or delete dimensions. Failing to do so can cause database synchronization errors after activation. After making the desired edits, you can recreate and redeploy the removed customizations.
 
-### Translations
+## Translations
 
 Use the **Text translation** page to translate the following text into various languages:
 
@@ -86,11 +86,30 @@ When you enter your financial dimension name and financial dimension value descr
 > [!IMPORTANT]
 > Translated text is only used when the user language is different from the system language. The system is designed this way to increase performance.  
 
-If you don't enter the values in the system language, you might not get the expected results. To fix the problem, change the financial dimension name and financial dimension value description to the system language. The translated text isn't necessary for the system language.  
+If you don't enter the values in the system language, you might not get the expected results. To fix the problem, change the financial dimension name and financial dimension value description to the system language. The translated text isn't necessary for the system language.
+
+### How translation lookup works
+
+The system uses the following logic to determine which name or description to display for a financial dimension, dimension value, or main account:
+
+1. **If the user's language matches the system language**, the system displays the default value from the main record. No translation lookup is performed.
+2. **If the user's language differs from the system language**, the system looks for a translation record that matches the user's language.
+   - If a translation exists for the user's language, the translated text is displayed.
+   - If no translation exists for the user's language, the system falls back to the default value from the main record.
+
+The system doesn't attempt to find translations in any other languages. There's no fallback chain — the only options are the user's specific language translation or the default value.
+
+This translation logic applies consistently to all entities that can be used as financial dimension values, including main accounts, items, and custom financial dimensions, as well as the financial dimension name itself.
+
+### Best practices for translations
+
+- Enter all default names and descriptions in the system language. This ensures that users whose language matches the system language see the correct values.
+- Create translation records for every language that users in your organization need. If a translation is missing, the user sees the default value instead.
+- If a user reports seeing the wrong language for dimension names or values, verify that a translation record exists for their language and that their user language settings are correct.
 
 ### Example
 
-The system language is set to "es" (Spanish).  
+The system language is set to "es" (Spanish).
 A new financial dimension is created. You enter the dimension name in English, not Spanish: "Ownership."
 
 - You can define the name in a non-system language, but it's not recommended.
@@ -98,9 +117,11 @@ You create two translations for the "Ownership" dimension name:
 - "es" (Spanish) = Propiedad
 - "de" (German) = Besitz
 
-User 1 has a user language of "de." When they see the dimension name, it displays as "Besitz."  
+User 1 has a user language of "de." When they see the dimension name, it displays as "Besitz."
 
-User 2 has a user language of "es." When they see the dimension name, it displays as "Ownership." The dimension name of "Ownership" is shown because the user language is the same as the system language. As a result, the system doesn't look for any translations.  
+User 2 has a user language of "es." When they see the dimension name, it displays as "Ownership." The dimension name of "Ownership" is shown because the user language is the same as the system language. As a result, the system doesn't look for any translations.
+
+User 3 has a user language of "fr" (French). No French translation exists, so the system falls back to the default value "Ownership." To fix this, create a French translation for the dimension name.  
 
 ## Legal entity overrides
 
