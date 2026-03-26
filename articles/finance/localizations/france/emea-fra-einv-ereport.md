@@ -230,7 +230,7 @@ Optinally, to configure the Tax exempt number, follow these steps.
 1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
 1. Create a registration category.
 1. In the **Registration types** field, select the registration type that you created in step 2.
-1. In the **Registration categories** field, select **VAT**.
+1. In the **Registration categories** field, select **VAT ID**.
 
 ## Set up address structure
 
@@ -446,7 +446,27 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 
 ### List of Electronic Reporting configurations
 
-aaa
+- Invoice model
+  - Invoice status model mapping
+  - UBL Sales e-invoice (FR)
+  - UBL Sales e-credit note (FR)
+  - UBL Project e-invoice (FR)
+  - UBL Project e-credit note (FR)
+  - Vendor invoice import Edicom (FR)
+  - Vendor invoice Mapping to destination (FR)
+  - Invoice status base format
+  - Payment confirmation format
+  - Rejection format
+- Customer invoice context model
+  - Import response context
+  - AP response context
+  - AR response context
+- Response message model
+  - Edicom life cycle status format (FR)
+  - Edicom Response status parsing format(FR)
+  - Response message model mapping to destination
+  - Edicom Response Invoice Status (FR)
+  - Edicom Response Processing (FR)
 
 ## More information
 
