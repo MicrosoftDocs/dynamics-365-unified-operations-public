@@ -22,6 +22,16 @@ This article describes how to enter account and dimension combinations or ledger
 
 Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions. The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures. When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience. When you enter the field, you can start to type and it will search the value and the description. For example, if you type 180 it will search any value that begins with that number combination. Or you may type Cash and it will search any value that has a description that begins with Cash. You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria. 
 
+## When dimensions are validated
+
+The segmented entry control allows you to freely type account and dimension values while you're entering them in the field. The control doesn't block your input as you type, even if the values don't match your account structures or derived dimensions.
+
+Validation happens when you leave the field. When you move to another field, press Tab, or take an action on the page, the system checks what you entered against your account structures and derived dimensions list. If the values aren't valid, you'll receive an error at that point.
+
+This is different from the **Financial dimensions** FastTab, where dimensions that are marked to prevent changes can't be edited at all. In the segmented entry control, you can edit all dimensions, but the system verifies your entries after you move on.
+
+## Keyboard shortcuts
+
 The following table describes the keyboard shortcuts that can be used when the lookup is closed.
 
 <table>
@@ -99,8 +109,14 @@ The following table describes the keyboard shortcuts that can be used when the l
 </tbody>
 </table>
 
+## Copy and paste limitations
 
+Copy and paste isn't supported for Account and Offset Account columns in General Journal lines. These columns use segmented entry controls that validate each dimension segment separately, which isn't compatible with standard paste operations. This is a known limitation.
 
+If you need to enter account and dimension values in bulk, use one of the following alternatives:
+
+- **Data Management Framework (DMF)** — Export the General Journal lines from the **Data Management** workspace, make your changes in Excel or another tool, and then import the updated data back. This is the recommended approach for large data entry tasks.
+- **Excel add-in** — Open the General Journal, select **Open in Excel**, edit the journal lines directly in the spreadsheet, and publish the changes back to Dynamics 365. For more information, see [Exporting and editing dimensions data in Excel via OData plug-in](/dynamics365/finance/general-ledger/financial-dimension-values-export-excel-odata).
 
 
 

@@ -46,6 +46,9 @@ The chart of accounts delimiter is the character that separates segments in a le
 
 If a dimension value contains the delimiter character, the system can misinterpret it when parsing ledger accounts. For example, if the delimiter is "-" and a dimension value is "Cust-049", the system might treat "049" as the next segment, which causes errors.
 
+> [!WARNING]
+> Dimension values that contain the delimiter character may appear to work correctly when used in default dimensions, but will cause errors when you enter ledger accounts through the segmented entry control or when you post transactions. This is because the system only parses the full segmented account string in those contexts, where it misinterprets the delimiter within the value as a segment separator.
+
 To avoid issues:
 
 - **Recommended**: Don't use the delimiter character in any dimension values. If conflicting values already exist, rename them.
