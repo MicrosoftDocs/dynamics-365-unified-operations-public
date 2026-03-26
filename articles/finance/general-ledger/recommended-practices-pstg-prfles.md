@@ -30,6 +30,10 @@ If adjustments are required to an account that is controlled by the system and a
 - Create a secondary main account where the adjustments can be posted. Then use a **Total account** or a special row on your financial reports to group and sum the accounts together.
 - Reverse the original transactions in the appropriate subledger, make any required corrections, and then repost the transaction through the same subledger.
 
+## Updating posting profiles after changing the chart of accounts
+
+If you change the chart of accounts for a legal entity, you must update all posting profiles and posting definitions to reference main accounts from the new chart of accounts. Main accounts are specific to a chart of accounts, so references that were configured under the previous chart of accounts aren't automatically updated. Leaving stale references in place can cause data integrity issues in the general ledger. For more information, see [Changing the chart of accounts](/dynamics365/finance/general-ledger/configure-ledger#changing-the-chart-of-accounts).
+
 ## Changing posting profiles after transactions exist
 
 If you change a posting profile after transactions exist, the reconciliation can fail, and your subledger and ledger can become out of balance. In general, we recommend that you **not** change the posting profile after transactions exist.
