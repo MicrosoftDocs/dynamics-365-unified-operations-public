@@ -117,23 +117,23 @@ At any point in time, the inventory receipt with the latest expiry date is used 
 
 To see how this process works, consider the following scenario:
 
-[:::image type="content" source="media/fefo-scenario.png" alt-text="Diagram of FEFO inventory scenario showing stock levels, batch expiry dates, safety limit, and sales orders over four days." lightbox="media/fefo-scenario.png":::](media/FEFOScenario.png)
+:::image type="content" source="media/fefo-scenario.png" alt-text="Diagram of FEFO inventory scenario showing stock levels, batch expiry dates, safety limit, and sales orders over four days." lightbox="media/fefo-scenario.png":::
 
 When you run planning, it covers the first sales order from the existing on-hand inventory and an additional purchase order for the remaining quantity.
 
-[:::image type="content" source="media/fefo-example-1.png" alt-text="Screenshot of inventory planning screen showing sales order pegged to on-hand stock and planned purchase orders." lightbox="media/fefo-example-1.png":::](media/FEFO1.png)
+:::image type="content" source="media/fefo-example-1.png" alt-text="Screenshot of inventory planning screen showing sales order pegged to on-hand stock and planned purchase orders." lightbox="media/fefo-example-1.png":::
 
 A planned order is created to bring the available inventory back to the safety limit.
 
-[:::image type="content" source="media/fefo-example-2.png" alt-text="Screenshot of inventory planning screen showing a planned purchase order created to cover safety stock, with pegging details displayed.":::](media/FEFO2.png)
+:::image type="content" source="media/fefo-example-2.png" alt-text="Screenshot of inventory planning screen showing a planned purchase order created to cover safety stock, with pegging details displayed." lightbox="media/fefo-example-2.png":::
 
 When you plan the second sales order, the previously created planned order that covers the safety stock is used to cover this quantity. Hence, the safety stock is constantly rolling.
 
-[:::image type="content" source="media/fefo-example-3.png" alt-text="Screenshot of inventory planning screen showing sales order pegged to safety stock replenishment with planned orders listed." lightbox="media/fefo-example-3.png":::](media/FEFO3.png)
+:::image type="content" source="media/fefo-example-3.png" alt-text="Screenshot of inventory planning screen showing sales order pegged to safety stock replenishment with planned orders listed." lightbox="media/fefo-example-3.png":::
 
 Finally, another planned order is created to cover the safety stock.
 
-[:::image type="content" source="media/fefo-example-4.png" alt-text="Screenshot of Net requirements page showing planned purchase orders and safety stock requirement for batch items." lightbox="media/fefo-example-4.png":::](media/FEFO4.png)
+:::image type="content" source="media/fefo-example-4.png" alt-text="Screenshot of Net requirements page showing planned purchase orders and safety stock requirement for batch items." lightbox="media/fefo-example-4.png":::
 
 All the batches expire accordingly, and planned orders are created to refill the safety stock after it expires.
 
