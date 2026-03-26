@@ -447,24 +447,26 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 ### List of Electronic Reporting configurations
 
 - Invoice model
-  - Invoice status model mapping
+  - Invoice model mapping
   - UBL Sales e-invoice (FR)
   - UBL Sales e-credit note (FR)
   - UBL Project e-invoice (FR)
   - UBL Project e-credit note (FR)
   - Vendor invoice import Edicom (FR)
   - Vendor invoice Mapping to destination (FR)
+  - Invoice status model mapping
   - Invoice status base format
   - Payment confirmation format
   - Rejection format
 - Customer invoice context model
+  - Import invoice context model
   - Import response context
   - AP response context
   - AR response context
 - Response message model
+  - Response message model mapping to destination
   - Edicom life cycle status format (FR)
   - Edicom Response status parsing format(FR)
-  - Response message model mapping to destination
   - Edicom Response Invoice Status (FR)
   - Edicom Response Processing (FR)
 
