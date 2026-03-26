@@ -24,8 +24,8 @@ Use organization hierarchies to view and report on your business from various pe
 
 Before you create an organization hierarchy, you must create organizations. For more information, see [Create legal entities](channels-legal-entities.md) or [Create operating units](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json).
 
-
 For more information, see the following articles.
+
 - [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 - [Plan your organization hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 - [Create an organization hierarchy](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)
@@ -57,19 +57,19 @@ To add organizations to a hierarchy, follow these steps:
 1. To add an organization, select **Edit** and then select **Insert**. When you're done making changes, you can save a draft and publish the changes.
 
 > [!NOTE]
-> A hierarchy can only be published once per calendar day in a given time zone. Each time you publish, the system records the effective date based on the time zone you select. If you later publish using a different time zone, the resulting dates can overlap or collide, which blocks the publish. To avoid this, always use the same time zone when publishing a hierarchy.
+> You can only publish a hierarchy once per calendar day in a given time zone. Each time you publish, the system records the effective date based on the time zone you select. If you later publish using a different time zone, the resulting dates can overlap or collide, which blocks the publish. To avoid this problem, always use the same time zone when publishing a hierarchy.
 
 The following image shows an example organization hierarchy. In this example, the legal entity "Contoso Retail" has three cost centers: "Mall," "Online," and "Call Center." The "Mall" cost center has four retail channels: "Atlanta," "Houston," "San Francisco," and "San Jose."
 
 ![Screenshot of an example organization hierarchy showing the allowed dimension value combinations for each node.](media/hierarchy-valid-combinations.png)
 
-If this hierarchy is linked to an account structure that includes both a **Cost center** dimension and a **Retail channel** dimension, the hierarchy controls which combinations are valid. For example, entering a cost center of "Mall" with a retail channel of "Fabrikam" would produce a validation error, because "Fabrikam" isn't listed under "Mall" in the hierarchy.
+If you link this hierarchy to an account structure that includes both a **Cost center** dimension and a **Retail channel** dimension, the hierarchy controls which combinations are valid. For example, entering a cost center of "Mall" with a retail channel of "Fabrikam" produces a validation error, because "Fabrikam" isn't listed under "Mall" in the hierarchy.
 
 ## Verify hierarchy relationships in account structures
 
-Organization hierarchies can be linked to account structures to control which dimension value combinations are allowed during transaction entry. To check which hierarchies are linked to an account structure, follow these steps.
+You can link organization hierarchies to account structures to control which dimension value combinations are allowed during transaction entry. To check which hierarchies are linked to an account structure, follow these steps:
 
-1. Navigate to the account structure and select **View** > **Relationships**.
+1. Go to the account structure and select **View** > **Relationships**.
 
    ![Screenshot showing the View and Relationships option on an account structure.](media/account-structure-relationships.png)
 
@@ -77,11 +77,11 @@ Organization hierarchies can be linked to account structures to control which di
 
    ![Screenshot showing which organization hierarchies are included in account structure validation.](media/account-structure-hierarchy-included.png)
 
-To view or edit the hierarchies themselves, go to **Organization administration** > **Organizations** > **Organization hierarchies**.
+To view or edit the hierarchies, go to **Organization administration** > **Organizations** > **Organization hierarchies**.
 
 ## Publishing delay for newly published hierarchies
 
-After you publish a new or updated organization hierarchy, it may take up to 24 hours (though typically less) for the changes to take effect in transaction validation. During this period, you may receive validation errors when entering dimension combinations that should be valid under the newly published hierarchy.
+After you publish a new or updated organization hierarchy, it can take up to 24 hours (though typically less) for the changes to take effect in transaction validation. During this period, you might receive validation errors when entering dimension combinations that should be valid under the newly published hierarchy.
 
 If you encounter this issue, you can either:
 
@@ -90,17 +90,17 @@ If you encounter this issue, you can either:
 
 ## Importing hierarchy data
 
-You can import organization hierarchy structures using data entities. If you're importing a multi-level hierarchy, import from the top down—start with the highest parent node, then add each level of child nodes in separate import operations. Attempting to import all levels at once can result in the error "The Organization does not exist" because child nodes may be processed before their parent nodes are available.
+You can import organization hierarchy structures by using data entities. If you're importing a multilevel hierarchy, import from the top down - start with the highest parent node, and then add each level of child nodes in separate import operations. Attempting to import all levels at once can result in the error "The Organization doesn't exist" because the system might process child nodes before their parent nodes are available.
 
 ## Deleting a legal entity after hierarchy publishing
 
-Once a legal entity has been added to an organization hierarchy and that hierarchy has been published, the legal entity can no longer be deleted—even if you later remove it from the hierarchy and republish. The **Delete** button remains unavailable.
+After you add a legal entity to an organization hierarchy and publish that hierarchy, you can't delete the legal entity - even if you later remove it from the hierarchy and republish. The **Delete** button stays unavailable.
 
-This is by design. Publishing a hierarchy creates a permanent historical record of that structure, which is used to support backdated reporting and auditing. Because those records reference the legal entity, the system protects it from deletion to preserve that history.
+This restriction is by design. When you publish a hierarchy, you create a permanent historical record of that structure. This record supports backdated reporting and auditing. Because those records reference the legal entity, the system protects it from deletion to preserve that history.
 
-If you remove a legal entity from an unpublished hierarchy *before* the hierarchy is ever published, the delete option remains available. But once a version of the hierarchy that includes the legal entity has been published, the restriction is permanent.
+If you remove a legal entity from an unpublished hierarchy *before* you publish the hierarchy, the delete option stays available. But once you publish a version of the hierarchy that includes the legal entity, the restriction is permanent.
 
-Leaving an unused legal entity in the system has no negative impact on day-to-day operations.
+Leaving an unused legal entity in the system doesn't negatively affect day-to-day operations.
 
 ## Additional resources
 
@@ -115,6 +115,5 @@ Leaving an unused legal entity in the system has no negative impact on day-to-da
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
