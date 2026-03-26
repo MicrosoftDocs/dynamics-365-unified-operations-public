@@ -1,6 +1,6 @@
 --- 
 title: Define financial dimensions
-description: Learn how to add an entity backed financial dimension, including a step-by-step process for creating an entity backed financial dimension.
+description: Learn how to create entity-backed and custom financial dimensions, including naming requirements and how to activate dimensions.
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: how-to
@@ -77,6 +77,15 @@ To avoid issues:
 8. In the **Dimension value** field, type a name to describe your financial dimension value.
 9. In the **Description** field, type a description that describes your financial dimension value.
 
+## Activate financial dimensions
 
+After you create a financial dimension, you must activate it before it can be used anywhere in the system, such as in account structures or on transactions.
+
+When you activate a financial dimension, the table updates to include the name of the financial dimension. Deleted dimensions are removed. You can create and edit dimension values before you activate a financial dimension. However, you can't consume a financial dimension anywhere until you activate it. For example, you can't add a financial dimension to an account structure until you activate the financial dimension.
+
+When you select **Activate all**, the system updates all inactive or renamed dimensions to active, which the **Status changes** field shows. As **Activate all** processes every pending addition, rename, or deletion across all dimensions at once, there is no need to rerun the operation for each dimension. The system must be in maintenance mode when activating financial dimensions.
+
+> [!WARNING]
+> If you have customizations that depend on the schema column names of dimension tables, those customizations must be removed **before** you rename or delete dimensions. Failing to do so can cause database synchronization errors after activation. After making the desired edits, you can recreate and redeploy the removed customizations.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

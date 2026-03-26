@@ -22,7 +22,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 [!include [banner](../includes/banner.md)]
 
-When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is and how the components work together.
+When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is, how the components work together, and how default and derived dimension values are applied.
 
 ## Chart of accounts and financial dimension components
 
@@ -43,6 +43,81 @@ You can optionally define a balancing financial dimension. On the **Ledger** pag
 ### Default/fixed financial dimensions on the main account
 
 Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
+
+## Default dimension values
+
+In addition to fixed and default dimensions on main accounts described above, you can also configure dimensions to automatically copy values from master records.
+
+You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
+
+A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
+
+If records already exist for the dimension, turning on the feature updates the master records. However, existing documents and transactions aren't updated.
+
+If you're using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value defaults from the new customer number when you create the new customer.
+
+> [!NOTE]
+> You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).
+>
+> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+
+## Derived dimensions
+
+You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
+
+Set up derived values on the dimensions page.
+
+1. Select a dimension and then select **Derived dimensions**.
+
+    The **Derived dimensions** page includes a grid. The selected dimension segment is the first column in this grid.
+
+1. Add the segments that you want to derive. Each segment appears as a column.
+
+Enter the dimension combinations that you want to derive from the dimension in the first column. For example, to use the cost center as the dimension that the department and location derive from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
+
+### Shared dimensions only
+
+You can only configure derived dimensions for shared dimensions, not company-specific dimensions.
+
+**Examples of shared dimensions (allowed):** Departments, Cost Center
+
+**Examples of company-specific dimensions (not allowed):** Project, Bank Accounts, Customers, Vendors
+
+To check if a dimension is shared or company-specific, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions** and select **Dimension values** from the action pane. Company-specific dimensions show the company name at the bottom of the tile.
+
+If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
+
+> [!IMPORTANT]
+> When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
+
+### Overriding existing values with derived dimensions
+
+By default, derived dimensions don't override existing values. This means you can establish default dimensions on master records, and those dimensions aren't changed by derived dimensions.
+
+To change this behavior, select the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. Using the previous example, if department was already set to 50 and location to 60, entering cost center 10 would change them to department 20 and location 30.
+
+Derived dimensions with this setting don't automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values are only overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
+
+![](media/derived-dimensions-replace-values.png)
+
+When **Replace existing dimension values with derived values** is disabled, the derived dimensions will still automatically overwrite blank fields.
+
+### Preventing changes with derived dimensions
+
+When you use **Add segment** on the **Derived dimensions** page to add a segment as a derived dimension, an option at the bottom of the **Add segment** page lets you prevent changes to that dimension when it's derived. The default setting is off. Change it to **Yes** to prevent the dimension from being changed after it is derived.
+
+This setting doesn't prevent changes if the entered driving dimension value isn't in the derived dimensions list. Using the previous example, entering cost center 10 would lock department to 20. But entering cost center 20, if it has no derived rules, would leave department editable.
+
+In all cases, the account value and all dimensions values are still validated against the account structures after the derived dimensions values are applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the **Derived dimensions** page before you can use them in transactions.
+
+### Derived dimensions and entities
+
+You can set up the derived dimensions segments and values by using entities.
+
+- The **Derived dimensions** entity sets up the driving dimensions and the segments that are used for those dimensions.
+- The **Derived dimensions value** entity lets you import the values that should be derived for each driving dimension.
+
+When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
 
 ## Order in which default dimensions are applied during posting
 

@@ -27,7 +27,7 @@ The Excel button on the **Financial dimension values** page opens a dropdown wit
 The workbooks listed under **Open in Excel** — **Financial dimension values**, **Financial dimension value legal entity overrides**, and **Financial dimension value translations** — connect to Finance via the OData plug-in. The workbook stays live, and any edits you make can be published back to Finance directly from Excel.
 
 > [!IMPORTANT]
-> Because these workbooks use the **Financial dimension values entity**, they are subject to the same scope as DMF exports: only values that have been used as dimensions or have had properties explicitly modified are returned. Unused values don't appear.
+> Because these workbooks use the **Financial dimension values entity**, they are subject to the same scope as DMF exports. Custom dimension values are always exported. However, for entity-backed dimensions, only values that have been used as dimensions or have had properties explicitly modified are returned. Unused entity-backed values don't appear.
 >
 > Values that are used include those entered in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or those that have had properties modified (such as Active from/Active to dates, Suspended status, and other overrides).
 >
