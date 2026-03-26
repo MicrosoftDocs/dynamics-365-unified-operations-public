@@ -22,7 +22,7 @@ The **Archive with Dataverse long term retention** feature decreases the amount 
 > [!IMPORTANT]
 > **Purge from history archive (Preview) feature is temporarily disabled in production**
 >
-> This feature has been temporarily disabled in all production environments to prevent potential archived data loss. This precautionary measure helps protect the integrity of customer data while the issue is being investigated and resolved.
+> This feature is temporarily disabled in all production environments until further notice to prevent potential archived data loss. This precautionary measure helps protect the integrity of customer data while the issue is being investigated and resolved.
 >
 > **What this means for you:**
 > - Existing purge jobs that have completed will not be affected.
