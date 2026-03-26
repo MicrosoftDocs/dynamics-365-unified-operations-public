@@ -27,7 +27,6 @@ The **Archive with Dataverse long term retention** feature decreases the amount 
 > **What this means for you:**
 > - Existing purge jobs that have already completed are not affected.
 > - The **Delete history** button is temporarily unavailable in production environments.
-> - The feature continues to work in UNO and local environments.
 >
 > This page will be updated when the feature is re-enabled in production.
 
