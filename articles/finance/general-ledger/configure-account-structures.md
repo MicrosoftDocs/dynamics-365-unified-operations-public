@@ -118,37 +118,4 @@ When you're satisfied with your new setup or a change to an account structure, a
 
 For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md), and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
 
-## Changing account structures
-
-When you need to delete an account structure that is already in use, unposted transactions can block the deletion. An unposted transaction is considered blocking if it references the account structure and the proposed deletion would make that transaction invalid. The system prevents the deletion until these transactions are resolved.
-
-To find and resolve blocking transactions:
-
-1. Go to **General ledger** > **Journal entries** > **General journals**.
-2. Filter by **Show** > **Not posted**.
-3. Select a journal and select **Lines** in the action pane to view its transactions.
-4. Transactions that reference the account structure can be removed with the **Delete** button or updated to reference a different ledger account or offset account.
-
-### Modifying an existing account structure
-
-In many cases, modifying an existing account structure is preferable to deleting it and creating a new one. Modification avoids the overhead of reassigning the structure across legal entities and reconfiguring dependent processes.
-
-Modification is suitable for scenarios such as:
-
-- **Broadening a range** — For example, changing from 1000-2000 to 1000-3000.
-- **Restricting a range** — For example, specifying a **Department** segment range of 012-014.
-- **Subdividing a main account** — For example, modifying a **BalanceSheet** structure with range 1000-3000 into **BalanceSheet_Small** with range 1000-2000, and then creating **BalanceSheet_Large** with range 2000-3000.
-- **Adding or removing dimensions** — For example, adding a new financial dimension segment to the structure or removing one that is no longer needed.
-
-To modify an account structure:
-
-1. Go to **General ledger** > **Structures** > **Configure account structures** and select the desired structure.
-3. Select **Edit** in the action pane, and replace or update the criteria as needed for your business scenario.
-4. Select **Validate** to validate your changes.
-5. Select **Activate** to save your changes and wait for successful activation.
-
-### Deleting an account structure
-
-If you don't plan on creating any additional account structures and a given account structure has no blocking unposted transactions, it may be deleted. Before deleting, first resolve any blocking transactions using the steps described above. If you can't locate the blocking transactions, contact support.
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
