@@ -17,15 +17,15 @@ ms.reviewer: johnmichalak
 
 This article explains how to purge data from the history table in Microsoft Dynamics 365.
 
-The **Archive with Dataverse long term retention** feature decreases the amount of space that customers use in their finance and operations database. To achieve this decrease, it reduces the indexing on the relevant data as it's moved to history tables for archiving. However, as time passes, data that is stored in history tables might no longer be needed. The **Purge from history archive** feature helps minimize storage space for data that is stored in Dynamics 365 by letting customers purge that data from history tables. In this way, customers can benefit fully from the **Archive with Dataverse long term retention** feature.
+The **Archive with Dataverse long term retention** feature decreases the amount of space that customers use in their finance and operations database. To achieve this decrease, it reduces the indexing on the relevant data as it's moved to history tables for archiving. However, as time passes, data that is stored in history tables may no longer be needed. The **Purge from history archive** feature helps minimize storage space for data that is stored in Dynamics 365 finance and operations by letting customers purge that data from history tables. In this way, customers can benefit fully from the **Archive with Dataverse long term retention** feature.
 
 > [!IMPORTANT]
-> **Purge from history feature is temporarily disabled in production**
+> **Purge from history archive (Preview) feature is temporarily disabled in production**
 >
-> The **Purge from history archive** feature has been temporarily disabled in all production environments to prevent potential archived data loss. This precautionary measure ensures the integrity of customer data while the issue is being investigated and resolved.
+> This feature has been temporarily disabled in all production environments to prevent potential archived data loss. This precautionary measure helps protect the integrity of customer data while the issue is being investigated and resolved.
 >
 > **What this means for you:**
-> - Existing purge jobs that have already completed are not affected.
+> - Existing purge jobs that have completed will not be affected.
 > - The **Delete history** button is temporarily unavailable in production environments.
 >
 > This page will be updated when the feature is re-enabled in production.
