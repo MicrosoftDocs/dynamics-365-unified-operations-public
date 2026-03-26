@@ -55,7 +55,7 @@ The channel database holds transactional data and master data from one or more c
 
 ## Headless Commerce Integration
 
-Microsoft provides a set of sample implementations that are tailored to headless and composable commerce scenarios. These samples can help you *kick-start* and *accelerate* the development of custom storefronts by using Dynamics 365 Commerce headless engine (commonly referred to as headless commerce). The [Headless Commerce Samples GitHub repository](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Commerce/HeadlessCommerceSamples) includes both technical guidance and hands-on code samples to help you quickly get started.
+Microsoft provides a set of sample implementations that are tailored to headless and composable commerce scenarios. These samples can help you *kick-start* and *accelerate* the development of custom storefronts by using Dynamics 365 Commerce headless engine (commonly referred to as headless commerce). The [Headless Commerce Samples GitHub repository](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/ERP/Commerce/HeadlessCommerceSamples) includes both technical guidance and hands-on code samples to help you quickly get started.
 
 The samples serve as quick-start templates and reference implementations for partners, software development companies (formerly referred to as independent software vendors or ISVs), and customers. The samples cover core scenarios such as authentication, customer data, product data, pricing, cart, checkout, and order ingestion.
 

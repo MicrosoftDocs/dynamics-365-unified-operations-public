@@ -1643,7 +1643,7 @@
             - name: Globalization Studio overview
               href: localizations/global/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globalization resources
-              href: ../fin-ops-core/fin-ops/lcs/country-region.md?context=/dynamics365/context/finance
+              href: ../fin-ops-core/fin-ops/lcs/globalization-resources.md?context=/dynamics365/context/finance
             - name: Globalization services
               items:
                 - name: Globalization services overview
@@ -1772,7 +1772,7 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
-                        - name: Singapore (preview)
+                        - name: Singapore
                           href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
                           href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
@@ -4715,6 +4715,8 @@
                   href: business-performance-analytics/bpa-fabric.md
                 - name: External facts and dimensions into Business performance analytics
                   href: business-performance-analytics/extending-bpa.md
+                - name: Add custom measures to Business performance analytics (preview)
+                  href: business-performance-analytics/bpa-custom-measure.md
             - name: ERP Analytics MCP (preview)
               items:
                 - name: Dynamics 365 ERP Analytics MCP for finance and operations apps
@@ -5759,6 +5761,8 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimension-expression-builder-subpattern.md
                 - name: Financial dimension configuration
                   href: ../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md
+                - name: Financial dimension customization
+                  href: ../fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors.md
                 - name: Financial dimension activation
                   href: ../fin-ops-core/dev-itpro/financial/activate-financial-dimensions.md
                 - name: Financial dimensions and main accounts in right-to-left languages

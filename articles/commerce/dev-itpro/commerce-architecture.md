@@ -130,10 +130,6 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 ### Commerce surround services
 
-#### Dynamics 365 Fraud Protection
-
-[Dynamics 365 Fraud Protection](/dynamics365/fraud-protection/overview) integrates into the e-commerce checkout flows that Commerce Scale Unit manages and processes. The Commerce Scale Unit automatically provisions the connection to the service. Customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Commerce headquarters. The service can run either in **evaluate** mode, so that you can assess the effectiveness of the service, or in **protect** mode, so that you can catch fraudulent transactions by using configured business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](dfp.md).
-
 #### Dynamics 365 Customer Insights
 
 Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they're valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](clienteling-overview.md#integrate-customer-insights-with-commerce).
@@ -178,10 +174,6 @@ Dataverse is the unified data store that integrates the data from all your busin
 [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/)
 
 [Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/)
-
-[Dynamics 365 Fraud Protection](/dynamics365/fraud-protection/overview)
-
-[Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](dfp.md)
 
 [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
 

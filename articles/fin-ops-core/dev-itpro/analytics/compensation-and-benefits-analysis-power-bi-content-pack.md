@@ -4,7 +4,7 @@ description: Learn about the Compensation and Benefits Power BI content, includi
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/19/2017
+ms.date: 03/11/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -13,14 +13,15 @@ ms.dyn365.ops.version: Version 1611
 ms.assetid: 18634bb5-3341-42f2-9cc9-7b04708b506b
 ---
 
-# Compensation and Benefits Power BI content
+# Compensation and benefits Power BI content
 
 [!include [banner](../includes/banner.md)]
 
 This article describes the Compensation and Benefits Power BI content. 
 
-## Reports that are included in the content pack
-After you've connected the content pack to your data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+## Reports that the content pack includes
+
+After you connect the content pack to your data, the reports show your organization's data. If you never used Microsoft Power BI before, learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). The reports that the content pack includes have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                     | Contents                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,7 +31,8 @@ After you've connected the content pack to your data, the reports show your orga
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-The application data is used to populate the reports in the Compensation and Benefits content pack. The following table shows the entities that the content pack was based on.
+
+The application uses data to populate the reports in the Compensation and Benefits content pack. The following table shows the entities that the content pack is based on.
 
 | Entity                            | Contents                                                                                                   | Relationships with other entities |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|

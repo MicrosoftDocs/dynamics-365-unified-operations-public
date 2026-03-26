@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: AppConsistencyCustomScriptListPage
 ms.topic: how-to
-ms.date: 01/30/2025
+ms.date: 03/05/2026
 ms.search.region: Global
 ms.custom: 
   - bap-template
@@ -38,7 +38,7 @@ Every uploaded package is saved in the system and goes through a defined workflo
 
 As the following illustration shows, the system provides details about how each deployable package was run in X++ and which entities were touched.
 
-![Script details page.](media/script-details.png "Script details page")
+:::image type="content" source="media/script-details.png" alt-text="Screenshot of the Script details page.":::
 
 ## Assign duties to users to control access
 

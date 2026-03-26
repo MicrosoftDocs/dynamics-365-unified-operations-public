@@ -4,7 +4,7 @@ description: Learn about how to monitor replication for the Data migration toolk
 author: ttreen
 ms.author: ttreen
 ms.topic: how-to
-ms.date: 04/26/2023
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -45,7 +45,7 @@ Each publication has two SQL agent jobs:
 
 To monitor the replication in SSMS, connect to the source on-premises database server, expand the **Replication** folder, select and hold (or right-click), and then select **Launch Replication Monitor** to open Replication Monitor.
 
-[![Screenshot of the Replication Monitor window.](./media/Replication-Monitor2.png)](./media/Replication-Monitor2.png)
+:::image type="content" source="./media/Replication-Monitor2.png" alt-text="Screenshot of the Replication Monitor window.":::
 
 > [!NOTE]
 > As the preceding illustration shows, there's only one publication for tables that have primary keys, whereas there are usually two.
@@ -59,14 +59,14 @@ There are a few ways to view the snapshot agent details:
 
 The **Snapshot Agent** window is opened.
 
-[![Screenshot of snapshop agent details in the Snapshot Agent window.](./media/snapshot-agent-details3.png)](./media/snapshot-agent-details3.png)
+:::image type="content" source="./media/snapshot-agent-details3.png" alt-text="Screenshot of snapshot agent details in the Snapshot Agent window.":::
 
 The process of generating a snapshot has four steps:
 
 1. Update statistics on indexes.
-2. Create bulk copy files.
-3. Customize object scripting.
-4. Generate scripts.
+1. Create bulk copy files.
+1. Customize object scripting.
+1. Generate scripts.
 
 The snapshot files are created in the folder that you specified when you set up the Data migration toolkit. In File Explorer, open that folder, and drill down through the folders to the publications that you're reviewing.
 
@@ -85,7 +85,7 @@ The following table explains the different types of snapshot files.
 
 After the snapshot is completed, the following message is shown: "A snapshot of \<number of articles\> article(s) was generated."
 
-[![Screenshot that shows the snapshot generation message in Snapshot Agent window.](./media/articles-generated4.png)](./media/articles-generated4.png)
+:::image type="content" source="./media/articles-generated4.png" alt-text="Screenshot that shows the snapshot generation message in Snapshot Agent window.":::
 
 At this stage, the snapshot is only in the file share. In the next step, the distributor will move it to the target (subscriber) database.
 
@@ -103,7 +103,7 @@ Follow these steps to move a snapshot.
 
 1. Run the .pre files. These scripts drop existing objects in the target.
 
-    [![Screenshot that shows the .pre files being run.](./media/first-step5.png)](./media/first-step5.png)
+    :::image type="content" source="./media/first-step5.png" alt-text="Screenshot that shows the .pre files being run.":::
 
 2. Run the .sch files. These scripts create the tables.
 3. After the tables have been scripted in the subscriber (target) database, the bulk copy files are imported into the target.
@@ -115,13 +115,13 @@ Follow these steps to move a snapshot.
 
 On the **Undistributed Commands** tab, you can monitor the progress of the distribution, including the number of outstanding commands to apply and the estimated remaining time.
 
-[![Screenshot of the Undistributed Commands tab.](./media/undistributed-commands6.png)](./media/undistributed-commands6.png)
+:::image type="content" source="./media/undistributed-commands6.png" alt-text="Screenshot of the Undistributed Commands tab.":::
 
 After the snapshot is delivered, the following message is shown: "Delivered snapshot from the \\\\unc\\server\\folder."
 
 If there are no more outstanding commands, the **Undistributed Commands** tab shows the number of outstanding commands to apply as **0** (zero) and the estimated remaining time as **00:00:00**.
 
-[![Screenshot of the Undistributed Commands when there are no more outstanding commands.](./media/undis-commands-completed7.png)](./media/undis-commands-completed7.png)
+:::image type="content" source="./media/undis-commands-completed7.png" alt-text="Screenshot of the Undistributed Commands when there are no more outstanding commands.":::
 
 ## Transaction replication
 
@@ -132,7 +132,7 @@ After the snapshot is delivered, any new transactions that were created in the d
 While the snapshot is being pushed, you can monitor the bandwidth from the distributor process to the target database. This information is useful if upload performance issues occur.
 
 1. Open Task manager.
-2. Select **Open resource monitor**.
-3. In Resource Monitor, on the **Network** tab, filter on **DISTRIB.exe**. The send bandwidth speed is shown.
+1. Select **Open resource monitor**.
+1. In Resource Monitor, on the **Network** tab, filter on **DISTRIB.exe**. The send bandwidth speed is shown.
 
-[![Screenshot that shows the available send bandwidth in Resource Monitor.](./media/send-band8.png)](./media/send-band8.png)
+:::image type="content" source="./media/send-band8.png" alt-text="Screenshot that shows the available send bandwidth in Resource Monitor.":::

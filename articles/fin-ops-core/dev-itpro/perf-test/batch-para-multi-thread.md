@@ -4,7 +4,7 @@ description: Learn about batch parallelism and multi-threading in Microsoft Dyna
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/07/2024
+ms.date: 03/16/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -48,7 +48,7 @@ When global journals are posted, if the selected journals span multiple companie
 
 ### Changes in the journal posting process when the top picking pattern is used
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Beginning with Dynamics 365 release 10.0.39, users can select top picking pattern for batch job posting, which provides additional performance gains, reducing system usage and a more balanced workload on tasks by optimizing the concurrent tasks.
 
 The journal posting process has the following changes when the top picking pattern is used:

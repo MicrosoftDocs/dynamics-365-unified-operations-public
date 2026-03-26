@@ -4,7 +4,7 @@ description: This article explains how to monitor the upgrade from Microsoft Dyn
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 11/14/2024
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global

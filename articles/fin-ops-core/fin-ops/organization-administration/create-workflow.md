@@ -4,7 +4,7 @@ description: Learn about how to create a workflow, including outlines on opening
 author: ChrisGarty
 ms.author: cgarty
 ms.topic: overview
-ms.date: 09/19/2024
+ms.date: 03/10/2026
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -25,13 +25,13 @@ This article explains how to create a workflow.
 
 ## Open the workflow editor
 
-The module that you're working in determines the types of workflow that you can create. To select the type of workflow to create a new workflow using the workflow editor, follow these steps:
+The module that you're working in determines the types of workflows that you can create. To select the type of workflow to create a new workflow by using the workflow editor, follow these steps:
 
 1. Open the module that you want to create a new workflow for. For example, to create a workflow for purchase requisitions, select **Procurement and sourcing**.
-2. Select **Setup \> \[Module name\] workflows**.
-3. On the list page that appears, on the Action Pane, select **New**.
-4. On the **Create workflow** page, select the type of workflow to create, and then select **Create workflow**. The workflow editor is launched. 
-5. Select or sign in to the account to use with the workflow editor. If prompted to **Stay signed in to all your apps**, select **OK** to allow the account to automatically sign in to the workflow editor and other apps in the future, or select **No, sign in to this app only** if you prefer to only sign in to the workflow editor for this session.
+1. Select **Setup** > **[Module name] workflows**.
+1. On the list page that appears, on the action pane, select **New**.
+1. On the **Create workflow** page, select the type of workflow to create, and then select **Create workflow**. The workflow editor launches. 
+1. Select or sign in to the account to use with the workflow editor. If prompted to **Stay signed in to all your apps**, select **OK** to allow the account to automatically sign in to the workflow editor and other apps in the future, or select **No, sign in to this app only** if you prefer to only sign in to the workflow editor for this session.
 
 ## Drag workflow elements onto the canvas
 
@@ -46,8 +46,8 @@ To connect one workflow element to another, hold the pointer over an element unt
 Follow these steps to configure the properties of the workflow.
 
 1. Select the canvas to ensure that no workflow element is selected.
-2. Select **Properties** to open the **Properties** page for the workflow.
-3. Follow the procedures in the [Configure workflow properties](configure-workflow-properties.md) article.
+1. Select **Properties** to open the **Properties** page for the workflow.
+1. Follow the procedures in the [Configure workflow properties](configure-workflow-properties.md) article.
 
 ## Configure the elements of the workflow
 
@@ -61,19 +61,19 @@ Configure each element that you dragged onto the canvas. For information about h
 - [Configure conditional decisions in a workflow](configure-conditional-decision-workflow.md)
 - [Configure parallel branches in a workflow](configure-parallel-activity-workflow.md)
 - [Configure a parallel branch](configure-parallel-branch-workflow.md)
-- [Configure line-item workflows](configure-line-item-workflow.md)
+- [Configure line-item workflows](configure-line-item-workflow.md).
 
 ## Resolve any errors or warnings
 
-The **Errors and warnings** pane at the bottom of the workflow editor shows messages that have been generated for the workflow. To find the element where an error or warning occurred, double-click the error or warning message. You must resolve all errors and warnings before you can make the workflow active.
+The **Errors and warnings** pane at the bottom of the workflow editor shows messages that the workflow generates. To find the element where an error or warning occurred, double-click the error or warning message. You must resolve all errors and warnings before you can make the workflow active.
 
 ## Save and activate the workflow
 
 When you're ready to save and activate the workflow, follow these steps:
 
 1. Select **Save and close** to close the workflow editor and open the **Save workflow** page.
-2. Enter comments about the changes that you've made to the workflow, and then select **OK**.
-3. If all errors and warnings have been resolved, the **Activate workflow** page appears. Select one of the following options:
+1. Enter comments about the changes that you made to the workflow, and then select **OK**.
+1. If you resolved all errors and warnings, the **Activate workflow** page appears. Select one of the following options:
 
     - To activate this version of the workflow, select **Activate the new version**. When a workflow is active, users can submit documents to it for processing.
     - If you don't want to activate this version, select **Do not activate the new version**. You can activate the workflow later.

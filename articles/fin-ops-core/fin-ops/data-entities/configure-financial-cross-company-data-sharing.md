@@ -4,7 +4,7 @@ description: Learn about how to configure, enable, validate, and resolve conflic
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 06/26/2019
+ms.date: 03/10/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User 
@@ -23,33 +23,33 @@ This procedure shows how to configure, enable, validate, and resolve conflicts w
 This task guide requires Dynamics AX platform 7.1 or later.
 
 1. Go to **Navigation pane > Modules > System administration > Workspaces > Data management**.
-2. Click **Import**.
-3. In the **Name** field, type a value.
-4. In the **Source data format** field, select the 'Package' type. Click **Upload**. Navigate to the location of the Financial data sharing template package file and select that file.
-5. Click **Save**.
-6. In the list, mark the selected row. Select the data sharing policy that was just created.  
-7. Click **Import**.
-8. Click **Close**.
-9. Refresh the page.
-10. Close the page.
-11. Close the page.
-12. Close the page.
-13. Go to **Navigation pane > Modules > System administration > Setup > Configure cross-company data sharing**.
-14. In the list, find and select **Payment days**.
-15. Click **Add**.
-16. In the list, mark the selected row.
-17. In the **Company** field, type 'USSI'.
-18. Click **Add**.
-19. In the **Company** field, type 'USMF'.
-20. Click **Save**.
-21. Click **Enable**.
-22. Click **Yes**.
-23. Click **Find sharing issues**.
-24. Click **Yes**.
-25. Click **Update field value**.
-26. Click **Use value from company 1**.
-27. Refresh the page.
-28. Close the page.
+1. Select **Import**.
+1. In the **Name** field, enter a value.
+1. In the **Source data format** field, select the **Package** type. Select **Upload**. Go to the location of the Financial data sharing template package file and select that file.
+1. Select **Save**.
+1. In the list, select the row. Select the data sharing policy that you created.  
+1. Select **Import**.
+1. Select **Close**.
+1. Refresh the page.
+1. Close the page.
+1. Close the page.
+1. Close the page.
+1. Go to **Navigation pane > Modules > System administration > Setup > Configure cross-company data sharing**.
+1. In the list, find and select **Payment days**.
+1. Select **Add**.
+1. In the list, select the row.
+1. In the **Company** field, enter **USSI**.
+1. Select **Add**.
+1. In the **Company** field, enter **USMF**.
+1. Select **Save**.
+1. Select **Enable**.
+1. Select **Yes**.
+1. Select **Find sharing issues**.
+1. Select **Yes**.
+1. Select **Update field value**.
+1. Select **Use value from company 1**.
+1. Refresh the page.
+1. Close the page.
 
 
 
