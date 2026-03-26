@@ -22,15 +22,34 @@ This procedure shows how to add an entity backed financial dimension and a custo
 
 ## Naming requirements
 
-Financial dimension names must follow these rules:
+### Financial dimension names
+
+When you create a financial dimension, the name must follow these rules:
 
 - Must start with a letter or an underscore.
-- Can contain only letters, numbers, or underscores after the first character.
+- After the first character, can only contain letters, numbers, or underscores.
 - Can't contain spaces or special characters.
 - Can't use reserved system field names such as RecId.
-- Shouldn't include the chart of accounts delimiter.
 
-For entity-backed dimensions, the name can differ from the system-defined entity. If a name doesn't meet these requirements, you receive a **The financial dimension name [DIMENSION NAME] contains invalid characters** error.
+For entity-backed dimensions, the dimension name can differ from the source entity name. If a name doesn't meet these requirements, you receive a **The financial dimension name [DIMENSION NAME] contains invalid characters** error.
+
+### Dimension value requirements
+
+When you create or enter dimension values, keep the following in mind:
+
+- Dimension values have a maximum length of 30 characters.
+- For custom dimensions, you can set up a format mask to control what users can enter. Use number signs (\#) as placeholders for numbers and ampersands (&) as placeholders for letters. For example, **CC-\#\#\#** limits values to the letters "CC" followed by three numbers.
+
+### Avoid using the chart of accounts delimiter
+
+The chart of accounts delimiter is the character that separates segments in a ledger account (for example, the hyphen in **110-020-300**). Don't use this character in financial dimension names, dimension values, or main account numbers.
+
+If a dimension value contains the delimiter character, the system can misinterpret it when parsing ledger accounts. For example, if the delimiter is "-" and a dimension value is "Cust-049", the system might treat "049" as the next segment, which causes errors.
+
+To avoid issues:
+
+- **Recommended**: Don't use the delimiter character in any dimension values. If conflicting values already exist, rename them.
+- **Alternative**: Change the delimiter to a different character. To learn how, see [Change the segment delimiter](/dynamics365/finance/general-ledger/plan-chart-of-accounts#change-the-segment-delimiter).
 
 ## Create an entity backed financial dimension
 1. Go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**.

@@ -34,7 +34,14 @@ Consider these factors when you plan the structure of the chart of accounts for 
 - The reporting requirements of your legal entity
 - The degree of specification that is required, both for both external organizations and for your organization
 
-Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Don't use any special characters in your main accounts that are used as delimiters for chart of accounts. Otherwise, you might experience instability, or you might always have to use lookups or the dialog box when you enter combinations of accounts and dimensions. For more information, see [Create a main account](tasks/create-main-account.md).
+Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. For more information, see [Create a main account](tasks/create-main-account.md).
+
+> [!IMPORTANT]
+> Don't use the chart of accounts delimiter character in main account numbers, financial dimension names, or dimension values. For details and best practices, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).
+
+Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports.
+
+You create account structures on the **Configure account structures** page. Account structures define valid combinations. These combinations, together with main accounts, form a chart of accounts. For more information, see [Create account structures](tasks/create-account-structures.md).
 
 ## Change the segment delimiter
 
@@ -43,23 +50,6 @@ If you need to change the delimiter that separates segments in your chart of acc
 ### What prevents a delimiter change
 
 You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "~" but you already have a dimension value in use such as "Cust~1", the system blocks the change. In this case, consider selecting a different delimiter.
-
-### Best practices for delimiters and dimension values
-
-While it's technically possible to include delimiter characters within dimension values, doing so can cause problems when the system parses account combinations. For instance, if you have a dimension value "Cust-049" and your delimiter is "-", the system might interpret "049" as the value for the next segment. If "049" isn't a valid value for that segment, you receive an error message.
-
-To avoid these problems, use one of the following options:
-
-- **Option 1 (Recommended)**: Don't use the delimiter character in your dimension values. If conflicting dimension values already exist, change them to prevent misinterpretation.
-- **Option 2**: Change the segment delimiter to a different character. This option isn't available for financial tags.
-
-Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports.
-
-You create account structures on the **Configure account structures** page. Account structures define valid combinations. These combinations, together with main accounts, form a chart of accounts. For more information, see [Create account structures](tasks/create-account-structures.md).
-
-**Legal entity overrides**
-
-Not all main accounts are valid for all legal entities, and some main accounts might be relevant only for a specific period. In this scenario, use the **Legal entity overrides** section to identify the companies that the main account should be suspended for, the owner, and the period when the dimension is active. The overrides at the shared level can't be more restrictive than the overrides at the legal entity level.
 
 For more information, see the following topics:
 
