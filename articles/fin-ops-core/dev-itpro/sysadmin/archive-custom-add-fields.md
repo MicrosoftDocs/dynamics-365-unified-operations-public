@@ -15,20 +15,20 @@ ms.reviewer: twheeloc
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to extend existing Microsoft archive scenarios, such as General ledger, Sales order, Inventory journal, by adding custom fields to live tables and ensuring proper synchronization with history tables and finance and operations data entities.
+This article describes how to extend existing Microsoft archive scenarios, such as General ledger, Sales order, and Inventory journal, by adding custom fields to live tables and ensuring proper synchronization with history tables and finance and operations data entities.
 
 ## Overview
 
-This scenario applies when you need to add custom fields to standard Microsoft tables that are already part of an archive scenario. For example, adding a custom status field to `SalesTable` or a custom reference field to `GeneralJournalAccountEntry`.
+Use this scenario when you need to add custom fields to standard Microsoft tables that are already part of an archive scenario. For example, you might add a custom status field to `SalesTable` or a custom reference field to `GeneralJournalAccountEntry`.
 
-Components involved:
+This scenario involves the following components:
 
 - Table extensions for live tables
 - Table extensions for history tables  
 - Entity extensions for finance and operations data entities
 - Dataverse virtual entities refresh
 
-No code changes are needed. You don't need to modify job contract creator classes. The framework automatically includes your custom fields in archive operations.
+You don't need to make any code changes. You don't need to modify job contract creator classes. The framework automatically includes your custom fields in archive operations.
 
 ## Prerequisites
 
@@ -75,7 +75,7 @@ Example fields:
 > [!IMPORTANT]
 > On the source (live) table, set the property **`ChangeTrackingEnabled`** to **`Yes`**. This property is required for archive operations to track data changes.
 
-If the Microsoft-managed table doesn't already have this property enabled, you might need to verify with the owning team or check if already configured.
+If the Microsoft-managed table doesn't already have this property enabled, you might need to verify with the owning team or check if it's already configured.
 
 ### Build and synchronize
 
@@ -142,7 +142,7 @@ To add the data source field, follow these steps:
 1. Right-click the data source and select **New** > **Field**.
 1. Map the field to your custom field from the source table:
    - Set **Data Field** to match your custom field name.
-   - Set **Data Method** if using computed fields.
+   - Set **Data Method** if you're using computed fields.
 1. Configure field visibility:
    - Set **Visible** = **Yes** for the field to appear in the entity.
 
@@ -205,12 +205,12 @@ If the refresh doesn't work, follow the guidance in [Virtual entity refresh trou
 
 #### Verify field appears in the entity
 
-To vrify field appears in the entity, follow these steps:
+To verify the field appears in the entity, follow these steps:
 
 1. In Power Apps, open the virtual entity.
-1. Go to **Columns** tab.
+1. Go to the **Columns** tab.
 1. Search for your custom field.
-1. Verify field type matches your Dynamics 365 finance and operations field.
+1. Verify the field type matches your Dynamics 365 finance and operations field.
 
 #### Test archive and restore
 
