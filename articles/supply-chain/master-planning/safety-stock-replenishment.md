@@ -19,10 +19,10 @@ Safety stock is an item quantity that's held in inventory to reduce the risk tha
 
 The system always tries to prevent the accumulated quantity of an item from falling below its safety stock limit. Whenever the master planning engine detects that the accumulated on-hand inventory for an item will fall below its minimum, it creates a planned order to replenish the item and schedules the order to arrive before the minimum threshold is crossed. Therefore, safety stock is fulfilled on *Today's date* + *Procurement time*.
 
-During planning, if there's actual demand, the system pegs it against a planned order that was generated for safety stock, if this approach will enable the demand to be fulfilled on time. Because the system always tries to keep the accumulated on-hand inventory level above the safety stock level, it will create a new planned order to cover the safety stock that was claimed for the actual demand.
+During planning, if there's actual demand, the system will peg it against a planned order that was generated for safety stock, if this approach will enable the demand to be fulfilled on time and strict safetystock pegging is not enforced https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/safety-stock-pegging. Because the system always tries to keep the accumulated on-hand inventory level above the safety stock level, it will create a new planned order to cover the safety stock that was claimed for the actual demand. When strict safety stock pegging is enforced, actual demand will not peg against a planned order generated for safety stock.  
 
 > [!NOTE]
-> Because safety stock isn't really demand, any demand will be prioritized over the safety stock. Therefore, the system can create a planned order to fulfill safety stock, but if actual demand arrives later, that demand can claim the safety stock quantity. (The new demand will be pegged against the original planned order.)
+> Because safety stock isn't really demand, any demand will be prioritized over the safety stock for as long as strict safety stock pegging is off. Therefore, the system can create a planned order to fulfill safety stock, but if actual demand arrives later, that demand can claim the safety stock quantity. (The new demand will be pegged against the original planned order.)
 
 ## Set the safety stock level for an item
 
