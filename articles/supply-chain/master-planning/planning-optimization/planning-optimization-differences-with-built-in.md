@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/24/2026
+ms.date: 03/26/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimization results (including planned orders, quantities, and dates) might differ from results from the deprecated master planning engine. The differences can be caused by pending features. This article lists differences between Planning Optimization and the deprecated master planning engine that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
+Planning Optimization results (including planned orders, quantities, and dates) might differ from results from the deprecated master planning engine. Pending features can cause these differences. This article lists differences between Planning Optimization and the deprecated master planning engine that aren't listed on the **[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)** page.
 
 | Feature | How Planning Optimization differs from deprecated master planning |
 |---|---|
@@ -47,7 +47,8 @@ Planning Optimization results (including planned orders, quantities, and dates) 
 | Vendor calendar lead time | Planning Optimization doesn't consider closed days from the vendor's calendar when calculating lead times for delivery dates. It only considers the coverage group calendar when calculating lead times. Learn more in [Calendar matrix for Planning Optimization](safety-margins.md#calendar-setup-overview-matrix). |
 | Zero positive days | Setting positive days to one in Planning Optimization provides the same behavior as setting positive days to zero in the deprecated master planning engine. |
 | Planning with negative on-hand quantities | If the system shows a negative aggregate on-hand quantity, Planning Optimization treats it as quantity 0 (zero) to help avoid over supply. Learn more in [Planning with negative on-hand quantities](negative-on-hand.md). The deprecated master planning engine instead replenished the negative quantity. |
-| Firming manual planned production orders | When firming planned production orders that you created manually, Planning Optimization doesn't automatically trigger the explosion of items. You must manually trigger item explosions as needed. |
+| Firming manual planned production orders | When firming planned production orders that were created manually, Planning Optimization doesn't automatically trigger the explosion of items. You must manually trigger item explosions as needed. |
+| CTP with lean manufacturing | The *event* kanban rule replenishment strategy with event type *sales event* set to *Automatic with CTP* doesn't automatically generate and add kanbans to the schedule for sales order order lines that use the *CTP* delivery date control method. Instead, replenish through a planning kanban and apply auto-firming. |
 
 ## Related information
 
