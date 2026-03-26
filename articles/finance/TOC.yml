@@ -5760,7 +5760,7 @@
                 - name: Financial dimension configuration
                   href: ../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md
                 - name: Financial dimension customization
-                  href: ../in-ops-core/dev-itpro/financial/financial-dimension-customization-errors.md
+                  href: ../fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors.md
                 - name: Financial dimension activation
                   href: ../fin-ops-core/dev-itpro/financial/activate-financial-dimensions.md
                 - name: Financial dimensions and main accounts in right-to-left languages
