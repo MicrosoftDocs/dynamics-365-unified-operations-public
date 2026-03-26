@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 ms.topic: how-to
-ms.date: 11/19/2025
+ms.date: 03/26/2026
 ms.custom:
   - bap-template
 ---
@@ -39,7 +39,7 @@ To run the Planning Optimization fit analysis and view the results, follow these
 The following table shows the various results that can appear after a fit analysis. Number signs (*\#*) are replaced with a number that indicates the number of records that have the listed issue.
 
 > [!IMPORTANT]
-> For features that aren't yet supported, the following table provides an availability estimate based on our current roadmap. These estimates are subject to change without notice.
+> For features that aren't yet supported, the following table provides an availability estimate based on the current roadmap. These estimates are subject to change without notice.
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
