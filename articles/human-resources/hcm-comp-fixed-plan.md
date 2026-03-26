@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the HCM compensation fixed plan table entity (payintv1hcmcompfixedplantableentities) for Dynamics 365 Human Resources.
+This article describes the HCM compensation fixed plan table entity for Dynamics 365 Human Resources.
 
-Physical name: mserp\_payintv1hcmcompfixedplantableentities
+Physical name: mshr\_hcmcompfixedplantableentities
 
 ## Description
 
@@ -40,48 +40,48 @@ This entity provides information about the compensation fixed plan details.
 
 | Physical name|Property|Type | Use |
 |---|---|---|---|
-| mserp\_ControlPoint | ControlPoint | String | Read-only |
-| mserp\_Currency | Currency | String | Read-only |
-| mserp\_Description | Description | String | Read-only |
-| mserp\_RecommendationAllowed | RecommendationAllowed | Enum | Read-only |
-| mserp\_CompensationStructure | CompensationStructure | String | Read-only |
-| mserp\_HireRule | HireRule | Enum | Read-only |
-| mserp\_MarketPriceIndicator | MarketPriceIndicator | Enum | Read-only |
-| mserp\_PayFrequency | PayFrequency | String | Read-only |
-| mserp\_Plan | Plan | String | Read-only |
-| mserp\_OutOfRangeTolerance | OutOfRangeTolerance | Enum | Read-only |
-| mserp\_Type | Type | Enum | Read-only |
-| mserp\_EffectiveDate | EffectiveDate | Date time offset | Read-only |
-| mserp\_ExpirationDate | ExpirationDate | Date time offset | Read-only |
-| mserp\_RefPointSetupId | Type | String | Read-only |
+| mshr\_ControlPoint | ControlPoint | String | Read-only |
+| mshr\_Currency | Currency | String | Read-only |
+| mshr\_Description | Description | String | Read-only |
+| mshr\_RecommendationAllowed | RecommendationAllowed | Enum | Read-only |
+| mshr\_CompensationStructure | CompensationStructure | String | Read-only |
+| mshr\_HireRule | HireRule | Enum | Read-only |
+| mshr\_MarketPriceIndicator | MarketPriceIndicator | Enum | Read-only |
+| mshr\_PayFrequency | PayFrequency | String | Read-only |
+| mshr\_Plan | Plan | String | Read-only |
+| mshr\_OutOfRangeTolerance | OutOfRangeTolerance | Enum | Read-only |
+| mshr\_Type | Type | Enum | Read-only |
+| mshr\_EffectiveDate | EffectiveDate | Date time offset | Read-only |
+| mshr\_ExpirationDate | ExpirationDate | Date time offset | Read-only |
+| mshr\_RefPointSetupId | Type | String | Read-only |
 
 ## Example query for the HCM compensation fixed plan table entity
 
-Entity name: mserp\_payintv1hcmcompfixedplantableentities
+Entity name: mshr\_hcmcompfixedplantableentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/payintv1hcmcompfixedplantableentities
+GET [Organization URI]/api/data/v9.1/hcmcompfixedplantableentities
 ```
 
 **Response**
 
 ```JSON
 {
-    "mserp_controlpoint": "",
-    "mserp_currency": "USD",
-    "mserp_description": "Executive Broad Band",
-    "mserp_recommendationallowed": 200000000,
-    "mserp_compensationstructure": "ExBand",
-    "mserp_hirerule": 200000001,
-    "mserp_marketpriceindicator": 200000000,
-    "mserp_payfrequency": "Annual",
-    "mserp_plan": "ExBand",
-    "mserp_outofrangetolerance": 200000002,
-    "mserp_type": 200000002,
-    "mserp_effectivedate": "2005-01-01T00:00:00Z",
-    "mserp_expirationdate": "2154-12-31T00:00:00Z",
-    "mserp_refpointsetupid": "",
+    "mshr_controlpoint": "",
+    "mshr_currency": "USD",
+    "mshr_description": "Executive Broad Band",
+    "mshr_recommendationallowed": 200000000,
+    "mshr_compensationstructure": "ExBand",
+    "mshr_hirerule": 200000001,
+    "mshr_marketpriceindicator": 200000000,
+    "mshr_payfrequency": "Annual",
+    "mshr_plan": "ExBand",
+    "mshr_outofrangetolerance": 200000002,
+    "mshr_type": 200000002,
+    "mshr_effectivedate": "2005-01-01T00:00:00Z",
+    "mshr_expirationdate": "2154-12-31T00:00:00Z",
+    "mshr_refpointsetupid": "",
 }
 ```
