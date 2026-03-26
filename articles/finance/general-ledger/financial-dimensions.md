@@ -32,7 +32,7 @@ Financial dimensions that you create on the **Financial dimensions** page are us
 
 ### Custom dimensions
 
-A custom dimension is a user-defined financial dimension where you select **Custom dimension** in the **Use values from** field. Custom dimensions are shared across legal entities, and the values are entered and maintained by users.
+A custom dimension is a financial dimension that reflects your organization's specific business needs — for example, an internal cost center classification, fleet identifier, or expense purpose. Unlike entity-backed dimensions, custom dimension values don't come from an existing table in the system — you create and maintain the available values manually on the **Financial dimension values** page. In addition, custom dimensions are always shared across legal entities. 
 
 ### Entity-backed dimensions
 
