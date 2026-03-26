@@ -1388,6 +1388,8 @@
                   href: general-ledger/consolidate-online.md
                 - name: Consolidate online templates
                   href: general-ledger/Consolidation-templates.md
+                - name: Recreate missing consolidation transactions
+                  href: general-ledger/recreate-missing-consolidation-trx.md
                 - name: Import subsidiary data from files
                   href: general-ledger/import-subsidiary-data-from-files.md
                 - name: Export subsidiary data to a file
