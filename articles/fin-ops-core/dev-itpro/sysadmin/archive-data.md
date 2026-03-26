@@ -42,7 +42,7 @@ Support for additional data types is planned in future releases.
 > [!IMPORTANT]
 > **Archive scenarios temporarily disabled in production**
 >
-> All archive scenarios except **General Ledger** are temporarily disabled in production environments. This precautionary measure has been taken to prevent potential field level data loss in Datalake.
+> All archive scenarios except **General Ledger** are temporarily disabled in production environments. This precautionary measure  was taken to prevent potential field-level data loss in the Datalake. 
 >
 > **Affected scenarios:**
 > - Tax transactions
