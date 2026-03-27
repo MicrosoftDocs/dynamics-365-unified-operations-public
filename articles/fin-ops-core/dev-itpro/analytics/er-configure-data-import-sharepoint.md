@@ -4,7 +4,7 @@ description: Learn about how to import data from Microsoft SharePoint, including
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 03/20/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -34,7 +34,7 @@ To complete the examples in this article, you must have the following access:
 
 ### Create required ER configurations
 
-Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Excel format](parse-incoming-documents-excel.md). After you complete the task guides, you have the following setup.
+The **ER Import data from a Microsoft Excel file** task guide is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. This task guide walks you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Excel format](parse-incoming-documents-excel.md). When you complete the task guide, you have the following setup.
 
 #### ER configurations
 
@@ -45,34 +45,34 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 
 #### Sample of the incoming file for data import
 
-- Excel file **1099import-data.xlsx**, with vendor transactions that should be imported.
+- Excel file **1099import-data.xlsx**, with vendor transactions that you want to import.
 
 :::image type="content" source="./media/GERImportFromSharePoint-02-Excel.PNG" alt-text="Screenshot of sample Excel file for importing from SharePoint.":::
     
 > [!NOTE]
-> The format for importing vendor transactions is selected as the default model mapping. Therefore, if you run a model mapping of the **1099 Payments model**, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
+> The format for importing vendor transactions is the default model mapping. Therefore, if you run a model mapping of the **1099 Payments model**, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
 
 ## Configure access to SharePoint for file storage
 
 To store electronic report files in a SharePoint location, you must configure access to the SharePoint Server instance used by the current company. In this example, the company is USMF. For instructions, see [Configure SharePoint storage](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
 1. Complete the steps in [Configure SharePoint storage](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
-2. Open the configured SharePoint site.
-3. Create the following folders where you can store incoming electronic reporting files:
+1. Open the configured SharePoint site.
+1. Create the following folders where you can store incoming electronic reporting files:
 
      - Files import source (main) (Example shown in screenshot below)
      - Files import source (alternative)
 
     :::image type="content" source="./media/GERImportFromSharePoint-04-SharePointFolder1.png" alt-text="Screenshot of Files import source (main) folder in SharePoint.":::
 
-4. (Optional) Create the following folders where you can store files after import. 
+1. (Optional) Create the following folders where you can store files after import. 
 
     - Files archive folder - This folder is for successfully imported files.
     - Files warning folder - This folder is for files that were imported with a warning.
     - Files error folder - This folder is for files that failed to import.
 
 1. Go to **Organization administration > Document management > Document types**.
-6. Create the following document types that help to access the SharePoint folders that you created. For instructions, see [Configure document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
+1. Create the following document types that help to access the SharePoint folders that you created. For instructions, see [Configure document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Document type       | Group              | Location      | SharePoint folder      |
 |--------------------|--------------------|---------------|------------------------|
@@ -96,15 +96,15 @@ To store electronic report files in a SharePoint location, you must configure ac
 
 > [!NOTE]
 > - The ER *source* is defined for each application company individually. By contrast, ER *configurations* are shared across companies.
-> - When you delete an ER source setting for an ER format, all connected file states (see below) are also deleted by confirmation.
+> - When you delete an ER source setting for an ER format, all the connected file states are also deleted by confirmation. (see the following section).
 
 ## Review the file states for the ER format
 
 1. On **Electronic reporting source**, select **File states for the sources** to review the content of the configured file sources for the current ER format.
 1. In the **Files** section, review the list of files. This list presents the following information:
 
-    - Source files that are applicable, based on the file name mask (if it's defined), and that are ready for data import. For these files, the **Sources log for the import format** section is blank.
-    - Previously imported files. For each of these files, in the **Sources log for the import format** section, you can review the history of import of this file.
+    - Source files that are applicable, based on the file name mask (if you define one), and that are ready for data import. For these files, the **Sources log for the import format** section is blank.
+    - Previously imported files. For each of these files, in the **Sources log for the import format** section, you can review the history of import for this file.
 
 You can also open **File states for the sources** by selecting **Organization administration** > **Electronic reporting** > **File states for the sources**. In this case, the page provides information about file sources for all ER formats with configured file sources in the company that you're currently signed in to.
 
@@ -164,11 +164,11 @@ You can also open **File states for the sources** by selecting **Organization ad
 
     :::image type="content" source="./media/GERImportFromSharePoint-15-Excel.PNG" alt-text="Screenshot of sample Microsoft Excel file for importing from SharePoint.":::
 
-1. Upload the updated Excel file that contains vendors transactions to the **Files import source (main)** SharePoint folder.
+1. Upload the updated Excel file that contains vendor transactions to the **Files import source (main)** SharePoint folder.
 1. Open the ER configurations tree, select the **1099 Payment model**, and expand the list of ER model components.
 1. Select the name of the model mapping to update the model mapping so that the incorrect vendor code is considered an error during the data import process.
 1. Select **Designer**.
-1. On the **Validations** tab, change the post-validation action for the validation rule that evaluates whether the vendor account exists in the application. Update the value of the **Post-validation action** field to **Stop execution**, save your changes, and close the page.
+1. On the **Validations** tab, change the post-validation action for the validation rule that checks whether the vendor account exists in the application. Update the value of the **Post-validation action** field to **Stop execution**, save your changes, and close the page.
 
     :::image type="content" source="./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG" alt-text="Screenshot of ER model mapping designer page.":::
 
