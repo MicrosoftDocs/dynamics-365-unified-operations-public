@@ -15,7 +15,7 @@ ms.custom:
 
 # Organization Selection module
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article covers the Organization selection module and how to add it to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 
@@ -27,9 +27,9 @@ The following illustration shows an example of an Organization Selection module.
 
 ## Add an Organization selection module to your site
 
-To add a Organization selection module to your site in Commerce site builder, follow these steps:
-
-### Create a Organization selection page
+To add an Organization selection module to your site in Commerce site builder, follow these steps:
+
+### Create an Organization selection page
 
 First, create the organization selector page.
 
@@ -56,9 +56,9 @@ Next, connect the organization selector page to the appropriate route in order t
 
 1. Go to **Site Settings** in the bottom left corner to expand the menu and see the navigation options.
 1. Go to **Extensions** in this menu.
-1. go to the **Routes** tab at the top of the Extensions page.
-1. Find the route for **Organization Selection** in the list and link it with the new page created in the steps above.
-1. Click **Save and Publish** at the top of the page.
+1. Go to the **Routes** tab at the top of the Extensions page.
+1. Find the route for **Organization Selection** in the list and link it with the new page created in the steps above.
+1. Select **Save and Publish** at the top of the page.
 
     :::image type="content" source="./media/Ext-routes-Org-select-1.png" alt-text="Screenshot of configuring the Organization Selection route in the extensions page of Site builder.":::
 
