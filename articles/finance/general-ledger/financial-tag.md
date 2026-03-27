@@ -132,6 +132,15 @@ If a document has downstream documents, the tags from the parent document are us
 
 When tag values are entered on transactions, no validation occurs during either transaction entry or posting. Even if a tag of the **List** or **Custom list** value type is defined, the tag values aren't validated to ensure that they exist in the list. For example, a tag of the **List** value type is created, and the purchase order number is selected as the source of the list. Although a list of purchase order numbers will be presented, the user can enter a purchase order number that doesn't exist in the list.
 
+If validation is required, change the tag's value type to **Fixed list** or **Fixed custom list** (available in version 10.0.44 and later). To switch an existing tag:
+
+1. Go to **General ledger** \> **Chart of accounts** \> **Financial tags** \> **Financial tags**.
+2. Select the financial tag that you want to enable validation for.
+3. In the **Value type** field, select **Fixed list** or **Fixed custom list**.
+4. Select **Activate** to activate the tag.
+
+After you switch to a fixed type, only values that exist in the defined list are accepted during transaction entry.
+
 ## Posting transactions that have tag values
 
 After a transaction is posted, the financial tags are available on the lines of the general ledger account entry. They're shown on the **Voucher transactions** and **Transactions for main account** pages. The financial tags are shown in separate columns, so that they're easier to sort and filter. 
@@ -154,3 +163,23 @@ Although financial tags are available for reporting, they aren't part of the led
 [![Editing tag values on voucher transaction lines.](./media/internal-voucher4.png)](./media/internal-voucher4.png)
 
 The page shows the lines that you selected in **Voucher transactions**, including the current financial tags and new financial tags. The current tag values are entered as default values for the new tags. Therefore, you don't have to manually enter everything again but can instead change only what's incorrect. You can use the **Bulk update selected records** button to do mass updates. Mass updates are useful if you want to assign tag values to large groups of posted transactions that were incorrect or that no tag values were defined for (for example, because they were posted before the feature was enabled).
+
+## Filter voucher transactions by financial tag
+
+When filtering voucher transactions using the query form, select **General journal account entry** as the table — not **Financial tags**. The **Financial tags** table displays generic column names (Tag01, Tag02, and so on) instead of your configured tag names, which leads to ambiguous and potentially incorrect results.
+
+[![Incorrect: filtering with the Financial tags table shows generic Tag01–Tag20 column names.](./media/SysQueryFinTags.png)](./media/SysQueryFinTags.png)
+
+Instead, select **General journal account entry** as the table. The financial tag fields appear with their configured names, so you can identify and filter on the correct tag.
+
+[![Correct: filtering with General journal account entry shows configured tag names.](./media/SysQueryFinTags2.png)](./media/SysQueryFinTags2.png)
+
+## Troubleshoot the "Part Reference's menu item must point to a Form" error
+
+If users receive the error **"Part Reference's menu item must point to a Form"** when opening a form that includes financial tags, the cause is typically a missing security configuration.
+
+Financial tag controls require the **Financial tag essentials** privilege, which grants access to the display menu items used by the financial tag preview. By default, this privilege is included in the **Use basic functionality** duty, which is assigned to the **System user**, **Retail service**, and **Retail store IT** roles.
+
+[![Security configuration showing the Financial tag essentials privilege and its associated duty.](./media/FinTagSecurityconfiguration.png)](./media/FinTagSecurityconfiguration.png)
+
+To resolve the error, either assign one of these roles to the affected user, or add the **Financial tag essentials** privilege to a role the user already has. If the error persists after updating security, a service restart may be needed to clear cached security state.

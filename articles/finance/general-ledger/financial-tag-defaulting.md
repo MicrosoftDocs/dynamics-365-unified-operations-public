@@ -73,6 +73,12 @@ To create a financial tag rule, follow these steps:
 
 [![Screenshot that shows the definition of a new financial tag rule in the New dialog box.](./media/NewRule.png)](./media/NewRule.png)
 
+### Simulate a financial tag rule
+
+You can test a rule before it affects live transactions. Select **Simulate** while creating a new rule, or select the **Simulate** button at the top of the **Financial tag rules** page to simulate an existing rule. Choose an existing journal to run the rule against, and the simulation shows what the financial tag value would evaluate to for each line.
+
+[![Simulate form showing rule results against an existing journal.](./media/FinTagRuleSimulateForm.png)](./media/FinTagRuleSimulateForm.png)
+
 ### Copy a financial tag rule
 
 In the *copy a financial tag* rule, there are two options for copying a financial tag rule. Both require that you select a valid rule in the current legal entity as the source rule to copy.
@@ -85,3 +91,11 @@ In the *copy a financial tag* rule, there are two options for copying a financia
 - When a record is created, the rules that are defined for the transaction entry point and transaction level run the first defaulting of values into the corresponding financial tag fields, as defined for each target.
 - For journals, when the account field or the offset account field is set for all the user-defined rules for the transaction level, the financial tags are populated for each target. It's important that you know which rules have the **Overwrite existing value** option set to **Yes**. For those rules, any values that the user or a system rule previously set are overwritten.
 - When the final record is saved, the user rules run again to provide the final overwrite of financial tags. This overwrite is based on the overwrite that a user might have changed before they saved the record, or before they moved to a new row (and therefore caused the record to be saved).
+
+For example, if a rule is set at the **Header** level, you'll see the financial tags populated as soon as a new journal is created:
+
+[![Financial tags automatically populated on a journal header by a defaulting rule.](./media/FinTagRuleHeaderDefaulting.png)](./media/FinTagRuleHeaderDefaulting.png)
+
+If a rule is set at the **Account** level, the rule runs when you create a new line, change the account field, or save the record:
+
+[![Financial tags automatically populated on a journal line by a defaulting rule.](./media/FinTagRuleLineDefaulting.png)](./media/FinTagRuleLineDefaulting.png)
