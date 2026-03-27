@@ -41,6 +41,8 @@ An entity-backed financial dimension is based on a system-defined entity that yo
 For example, to create dimension values for projects, select **Projects**. This allows any value from the project table to be used as a dimension value directly.
 A dimension value is then created for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
 
+Entity-backed dimension values aren't available in the dimension framework until the value has been used in a transaction, posting profile, journal, or similar context. A record that exists in the source entity (for example, a new customer) won't appear as a selectable dimension value until it has been referenced in one of these areas.
+
 If you want to rename or delete dimension values from entity-backed dimensions, do this from the source entity rather than from the **Financial dimension values** page. For more information, see [Modifying and deleting financial dimensions](modifying-deleting-financial-dimensions.md).
 
 ## Financial dimension values

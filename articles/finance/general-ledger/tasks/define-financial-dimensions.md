@@ -39,6 +39,7 @@ When you create or enter dimension values, keep the following in mind:
 
 - Dimension values have a maximum length of 30 characters.
 - For custom dimensions, you can set up a format mask to control what users can enter. Use number signs (\#) as placeholders for numbers and ampersands (&) as placeholders for letters. For example, **CC-\#\#\#** limits values to the letters "CC" followed by three numbers.
+- Dimension values must not contain hidden or invisible characters, such as invisible Unicode characters or hard spaces (ALT+0160). These characters can look identical to normal text but cause lookup failures because the values don't match exactly. If a dimension value contains hidden characters, open the source record, temporarily change the key field to a different value, save, then change it back and save again to remove the hidden characters.
 
 ### Avoid using the chart of accounts delimiter
 
@@ -87,5 +88,16 @@ When you select **Activate all**, the system updates all inactive or renamed dim
 
 > [!WARNING]
 > If you have customizations that depend on the schema column names of dimension tables, those customizations must be removed **before** you rename or delete dimensions. Failing to do so can cause database synchronization errors after activation. After making the desired edits, you can recreate and redeploy the removed customizations.
+
+### Conditions that can prevent activation
+
+The following conditions can cause activation to fail or time out:
+
+- **Name conflicts** — The dimension name you're using already exists from a previous dimension that was deleted or renamed but not yet activated. Activate all pending changes to clear the conflict, or choose a different name. If the error mentions an extension column conflict on **DimensionAttributeValueCombination** or related entities, the package containing that extension must be removed before the rename can proceed.
+- **Translated name conflicts** — The dimension name already exists as a translated name on another financial dimension. Choose a different name or remove the conflicting translation.
+- **Change Data Capture (CDC)** — CDC is enabled on the **DimensionAttributeValueCombination** or **DimensionAttributeValueSet** tables. CDC prevents the schema changes that activation requires. Disable CDC on these tables before activating, and re-enable it afterward if needed.
+- **Change tracking** — Change tracking enabled on dimension tables can cause performance issues and timeouts during activation. Disable change tracking on these tables before activating. For more information, see [Enable change tracking for entities](/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track).
+- **Data maintenance jobs** — Background data maintenance jobs can lock dimension tables during activation. Pause these jobs before activating. For steps, see [Pausing data maintenance actions when in maintenance mode](/dynamics365/fin-ops-core/dev-itpro/sysadmin/datamaintenanceportal#pausing-data-maintenance-actions-when-in-maintenance-mode).
+- **Highly variable dimensions** — Dimensions with a very large number of unique values can cause activation to time out due to data volume. For guidance, see [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

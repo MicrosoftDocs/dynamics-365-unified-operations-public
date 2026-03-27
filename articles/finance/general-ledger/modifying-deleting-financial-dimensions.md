@@ -62,4 +62,10 @@ A financial dimension can't be deleted if any of the following are true:
 
 A dimension value can't be deleted if it has been used on any posted or unposted transaction, or in any dimension value combination such as a ledger account or default dimension. If deletion is still required, a thorough assessment of all data references to the value is needed before any data can be removed.
 
+### Deleting entity-backed records used as dimension values
+
+When you delete a record from a source entity (such as a customer, vendor, project, or bank account) that is used as a financial dimension value, the system runs a reference scan before allowing the deletion. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record.
+
+If deletion is blocked, consider renaming or suspending the value instead, as described earlier in this article.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
