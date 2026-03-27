@@ -30,7 +30,7 @@ See [Impact analysis overview]().
 
 This section describes how the Procurement Agent capabilities fit into the procurement workflow based on whether supplier communications or the Vendor Collaboration Module is used to communicate with suppliers around purchase order confirmations and changes. 
 
-### If using emails through supplier communications to communicate with suppliers: ###
+### If using emails through supplier communications to communicate with suppliers together with impact analysis: ###
 
 <Diagram>
   
@@ -43,7 +43,7 @@ This section describes how the Procurement Agent capabilities fit into the procu
   7. *No impact*: The purchaser can accept the change and update the purchase order (supplier communications)
   8. *Has impact*: The purchaser can view more details about the impact (impact analysis) and determine how to proceed. This can be to follow up with the supplier, accept the change and update the PO if nothing can be done (supplier communications), cancel the PO, as well as informing stakeholders. 
 
-### If using Vendor Collaboration Module to communcate with suppliers: ###
+### If using Vendor Collaboration Module to communcate with suppliers together with impact analysis: ###
 
 <Diagram>
 
