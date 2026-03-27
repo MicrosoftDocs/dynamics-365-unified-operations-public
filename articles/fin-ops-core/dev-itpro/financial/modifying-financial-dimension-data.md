@@ -40,6 +40,8 @@ The following dimension framework tables must not be modified directly through S
 - **DimensionAttributeValueGroupCombination**
 - **DimensionAttributeLevelValue**
 
+Because the dimension framework is insert-only and never deletes records, these tables can grow very large when financial dimensions are misused to track highly variable data such as serial numbers, dates, or document numbers. These values are rarely reused across transactions, which prevents the framework's deduplication from working as designed. For guidance on identifying and addressing this pattern, see [Highly variable dimensions](/dynamics365/finance/general-ledger/high-var-dimensions).
+
 The **DimensionAttributeValueCombinationStatus** and **DimensionAttributeValueGroupStatus** tables are exceptions. These are validation cache tables that exist only for performance reasons. They can be truncated without causing data corruption. Truncating them only affects the time it takes to validate combinations against the account structure until the cache is rebuilt.
 
 The **DimensionValueDeleteAudit** table is another special case. A row is written to this table each time a record that serves as a source of financial dimension values is deleted from its backing table. Because each row captures approximately 2,000 bytes of call stack data, the table can grow rapidly if records are mass-deleted from backing tables.
