@@ -6,7 +6,7 @@ ms.author: pvillads
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/05/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
@@ -63,7 +63,7 @@ final class MyClass_Extension
 }
 ```
 
-Because the runtime system expresses the classes, it's not meaningful to derive from the extension class. Therefore, the extension class must be marked as **final**. The extension class **MyClass_Extension** doesn't extend the designated class (**MyClass**). Therefore, you can't override methods from **MyClass** in **MyClass_Extension**. In the example above, the **classStr** compile-time function designates the augmented class and serves two purposes:
+Because the runtime system expresses the classes, it's not meaningful to derive from the extension class. Therefore, the extension class must be marked as **final**. The extension class **MyClass_Extension** doesn't extend the designated class (**MyClass**). Therefore, you can't override methods from **MyClass** in **MyClass_Extension**. In the example preceding, the **classStr** compile-time function designates the augmented class and serves two purposes:
 
 - It produces a compilation error if the **MyClass** class doesn't exist.
 - It informs the compiler about what kind of artifact is augmented. Artifact names by themselves don't uniquely identify a given artifact to augment. For example, forms can have the same names as tables, classes, and enums.
