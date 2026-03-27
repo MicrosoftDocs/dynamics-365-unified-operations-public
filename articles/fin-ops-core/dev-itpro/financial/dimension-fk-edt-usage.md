@@ -1,8 +1,8 @@
 ---
 title: Dimension foreign key reference EDT usage
 description: Learn which extended data types (EDTs) to use for foreign key fields that reference financial dimension tables, and the impact of using the wrong EDT.
-author: ethankallett
-ms.author: ethanrimes
+author: ethanrimes
+ms.author: ethankallett
 ms.topic: conceptual
 ms.date: 03/02/2026
 ms.reviewer: johnmichalak
