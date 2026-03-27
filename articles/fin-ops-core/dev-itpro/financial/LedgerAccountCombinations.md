@@ -1,7 +1,6 @@
 ---
 title: Ledger account combinations
 description: Learn about combinations of ledger accounts in the dimension framework, including outlines of the dimension framework and dimension enumerations.
-author: twheeloc
 author: ethanrimes
 ms.author: ethankallett
 ms.topic: article
