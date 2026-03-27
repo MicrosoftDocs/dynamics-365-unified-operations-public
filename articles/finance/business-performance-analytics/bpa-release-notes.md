@@ -25,12 +25,12 @@ The February release of Business performance analytics version 2.7 and contains 
 | Category | Feature | Description |
 |----------|---------|-------------|
 | Data model additions and changes | Acquire to dispose data model | Release Acquire‑to‑Dispose dimensional model in BPA 2.7, expanding BPA’s value chain coverage across Fix asset acquisition, usage, and disposal. |
-| Bug fix | Purchase Invoice Fact producing duplicates when joining in purchase_invoice_header_allocated_charge_and_tax_df | Purchase Invoice has duplicates and so reports are blank |
-| Bug fix | Excel report creation failed from UI | Addressed issue where Excel report creation fails when attempting from the UI |
-| Bug fix | Foreign keys are not validated when dim transforms are skipped | Fix theThe current behaviour does not enforce foreign key validation when dimensional transforms are skipped. |
 | Transform changes | Add Reporting Tag Transforms | Add Reporting Tag Transforms |
 | Transform changes | Add O2C-V2 ReturnAuthorizationFactTransform | Add O2C-V2 ReturnAuthorizationFactTransform |
 | Transform changes | Add O2C-V2 SalesDeferralScheduleFactTransform | Add O2C-V2 SalesDeferralScheduleFactTransform |
+| Bug fix | Purchase Invoice Fact producing duplicates when joining in purchase_invoice_header_allocated_charge_and_tax_df | Purchase Invoice has duplicates and so reports are blank |
+| Bug fix | Excel report creation failed from UI | Addressed issue where Excel report creation fails when attempting from the UI |
+| Bug fix | Foreign keys are not validated when dim transforms are skipped | Fix theThe current behaviour does not enforce foreign key validation when dimensional transforms are skipped. |
 | Other changes | Release Analytics MCP Server to 2.5 | Release Analytics MCP Server 2.5, strengthening platform reliability and performance to support enterprise‑scale analytics. |
 
 ## December 2025
