@@ -4,7 +4,7 @@ description: Learn about the Microsoft Entra ID security groups feature, includi
 author: pnghub
 ms.author: jiwo
 ms.topic: article
-ms.date: 03/24/2026
+ms.date: 03/26/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2022-11-10
@@ -41,7 +41,7 @@ Microsoft doesn't expect to address these known limitations until the group expe
 
 To enable the feature, go to **System administration \> Setup \> License configuration**. You can find the **Microsoft Entra ID security group** configuration key in the **Administration** folder.
 
-You can edit configuration keys only in maintenance mode. Lern more in [Maintenance mode](../sysadmin/maintenance-mode.md).
+You can edit configuration keys only in maintenance mode. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
 
 ## Import and configure Microsoft Entra ID security groups
 
