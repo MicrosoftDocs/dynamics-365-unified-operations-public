@@ -54,10 +54,10 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.45 PQU-4 | December 31, 2025 | January 5, 2026 to February 8, 2026| Completed |
 | 10.0.45 PQU-5 | January 28, 2026 | February 2, 2026 to March 8, 2026| Completed |
 | 10.0.45 PQU-6 | February 25, 2026 | March 2, 2026 to April 5, 2026| In-Progress |
-| 10.0.45 PQU-7 | March 25, 2026 | March 30, 2026 to May 3, 2026| Not Started |
+| 10.0.45 PQU-7 | March 25, 2026 | March 30, 2026 to May 3, 2026| In-Progress |
 | 10.0.45 PQU-8 | April 22, 2026 | April 27, 2026 to May 30, 2026| Not Started |
 | 10.0.45 PQU-9 | May 27, 2026 | June 1, 2026 to July 5, 2026| Not Started |
-| 10.0.46 PQU-1 | February 4, 2026 | February 9, 2025 to March 14, 2026 | In-Progress |
+| 10.0.46 PQU-1 | February 4, 2026 | February 9, 2025 to March 14, 2026 | Completed |
 | 10.0.46 PQU-2 | March 4, 2026 | March 9, 2026 to April 11, 2026| In-Progress |
 | 10.0.46 PQU-3 | April 1, 2026 | April 6, 2026 to May 9, 2026| Not Started |
 | 10.0.46 PQU-4 | April 29, 2026 | May 4, 2026 to June 6, 2026| Not Started |
@@ -121,7 +121,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | March 23 to March 26, 2026 | April 4 to April 5, 2026 |
 | Station 6 | March 24 to March 27, 2026 | April 4 to April 5, 2026 |
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-6 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.45 Release-6 train schedule
 
 **App version: 10.0.2345.175**
 
@@ -138,22 +138,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | March 23 to March 26, 2026 | April 4 to April 5, 2026 |
 | Station 6 | March 24 to March 27, 2026 | April 4 to April 5, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.46 Release-1 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.45 Release-7 train schedule
 
-**App version: 10.0.2428.95**
+**App version: 10.0.2345.190**
 
-**Platform version: 7.0.7778.45**
+**Platform version: 7.0.7690.128**
 
-**Unified Environment Provisioning Application Version: 10.0.46.2**
+**Unified Environment Provisioning Application Version: 10.0.45.9**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | February 9 to February 12, 2026 | NA |
-| Station 2 | February 16 to February 19, 2026 | February 28 to March 1, 2026 |
-| Station 3 | February 17 to February 20, 2026 | February 28 to March 1, 2026 |
-| Station 4 | February 23 to February 26, 2026 | March 7 to March 8, 2026 |
-| Station 5 | March 2 to March 5, 2026 | March 14 to March 15, 2026 |
-| Station 6 | March 3 to March 6, 2026 | March 14 to March 15, 2026 |
+| Station 1 | March 30 to April 2, 2026 | NA |
+| Station 2 | April 6 to April 9, 2026 | April 18 to April 19, 2026 |
+| Station 3 | April 7 to April 10, 2026 | April 18 to April 19, 2026 |
+| Station 4 | April 13 to April 16, 2026 | April 25 to April 26, 2026 |
+| Station 5 | April 20 to April 23, 2026 | May 2 to May 3, 2026 |
+| Station 6 | April 21 to April 24, 2026 | May 2 to May 3, 2026 |
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.46 Release-2 train schedule
 
