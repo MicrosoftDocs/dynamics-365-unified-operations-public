@@ -5767,6 +5767,10 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimensionable-entities.md
                 - name: Add lookup values for financial dimensions to Excel templates
                   href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
+                - name: Dimension foreign key reference EDT usage
+                  href: ../fin-ops-core/dev-itpro/financial/dimension-fk-edt-usage.md
+                - name: Modifying financial dimension data
+                  href: ../fin-ops-core/dev-itpro/financial/modifying-financial-dimension-data.md
             - name: Segmented entry control
               items:
                 - name: Migrate Segmented Entry controls
