@@ -42,22 +42,22 @@ The goal of the new design is to encapsulate the control implementation and not 
 - **Example**
   - **Before:**
 
-        ```xpp
-        Public void jumpRef()
-        {
-            ledgerDimensionDefaultAccountcontroller.jumpRef();
-        }
-        ```
+    ```xpp
+    Public void jumpRef()
+    {
+        ledgerDimensionDefaultAccountcontroller.jumpRef();
+    }
+    ```
 
   - **After:**
 
-        ```xpp
-        Public void jumpRef()
-        {
-            segmentedEntryControl1.jumpRef();
-            segmentedEntryControl2.jumpRef();
-        }
-        ```
+    ```xpp
+    Public void jumpRef()
+    {
+        segmentedEntryControl1.jumpRef();
+        segmentedEntryControl2.jumpRef();
+    }
+    ```
 
     These changes are made so that it's easier to copy and paste code that must be moved elsewhere (for example, in some instances of **loadSegments()** and other such methods). You can ignore this change when you decide whether the method can be deleted. Your decision should depend on whether the method has any custom logic.
 - The code upgrade script does not handle cases where a controller is instantiated within a method. These cases must be migrated manually.
@@ -852,121 +852,121 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
 - **Dynamic account:**
   - **Before:**
 
-        ```xpp
-        // Creating the dialog field for the SEC
-        dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
-        dialogDynamicAccount = _dialog.addFieldValue(extendedTypeStr(LedgerDimensionBase), defaultOffsetLedgerDimension, "@SYS115166", "@SYS115167");
-        dimensionDynamicAccountController = DimensionDynamicAccountController::constructForDialog(dialogDynamicAccount, dialogDynamicAccountType, enumStr(LedgerJournalACTypeForPaymProposal));
-                    dimensionDynamicAccountController.parmIsDefaultAccount(true);
+    ```xpp
+    // Creating the dialog field for the SEC
+    dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
+    dialogDynamicAccount = _dialog.addFieldValue(extendedTypeStr(LedgerDimensionBase), defaultOffsetLedgerDimension, "@SYS115166", "@SYS115167");
+    dimensionDynamicAccountController = DimensionDynamicAccountController::constructForDialog(dialogDynamicAccount, dialogDynamicAccountType, enumStr(LedgerJournalACTypeForPaymProposal));
+                dimensionDynamicAccountController.parmIsDefaultAccount(true);
 
-        public void dialogPostRun(DialogRunBase _dialog)
+    public void dialogPostRun(DialogRunBase _dialog)
+    {
+    …
+
+    dialogDynamicAccountType.registerOverrideMethod('modified', 'accountType_Modified', this);
+
+    ...
+    }
+
+    private boolean accountType_Modified(FormComboBoxControl _formComboBoxControl)
+    {
+        boolean valueWasModified;
+
+        valueWasModified = _formComboBoxControl.modified();
+        if (valueWasModified)
         {
-        …
-
-        dialogDynamicAccountType.registerOverrideMethod('modified', 'accountType_Modified', this);
-
-        ...
+            dialogDynamicAccount.value(0);
         }
 
-        private boolean accountType_Modified(FormComboBoxControl _formComboBoxControl)
-        {
-            boolean valueWasModified;
-
-            valueWasModified = _formComboBoxControl.modified();
-            if (valueWasModified)
-            {
-                dialogDynamicAccount.value(0);
-            }
-
-            return valueWasModified;
-        }
-        ```
+        return valueWasModified;
+    }
+    ```
 
   - **After:**
 
-        ```xpp
-        // Creating the dialog field for the SEC
-        protected Object dialog()
-        {
-        ...        
+    ```xpp
+    // Creating the dialog field for the SEC
+    protected Object dialog()
+    {
+    ...        
 
-        // Create the account type dialog field
-        dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
-        // Create the SEC dialog field
-        dialogDynamicAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(DimensionDynamicAccountControl), extendedTypeStr(LedgerDimensionBase), "@SYS115166", defaultOffsetLedgerDimension);
+    // Create the account type dialog field
+    dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
+    // Create the SEC dialog field
+    dialogDynamicAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(DimensionDynamicAccountControl), extendedTypeStr(LedgerDimensionBase), "@SYS115166", defaultOffsetLedgerDimension);
 
-        // Provide account type information for the SEC field
-        SegmentedEntryControlBuild::initDialogFieldAccountType(dialogDynamicAccount, enumStr(LedgerJournalACTypeForPaymProposal) , defaultOffsetAccountType);
-        // Set additional parameters on the SEC dialog field
-        SegmentedEntryControlBuild segmentedEntryControlBuild = dialogDynamicAccount.control(); 
-        segmentedEntryControlBuild.parmIsDefaultAccount(true);
+    // Provide account type information for the SEC field
+    SegmentedEntryControlBuild::initDialogFieldAccountType(dialogDynamicAccount, enumStr(LedgerJournalACTypeForPaymProposal) , defaultOffsetAccountType);
+    // Set additional parameters on the SEC dialog field
+    SegmentedEntryControlBuild segmentedEntryControlBuild = dialogDynamicAccount.control(); 
+    segmentedEntryControlBuild.parmIsDefaultAccount(true);
 
         …
         }
 
-        // Override for modified method of the Account type checkbox to update the SEC when account type is changed
-        public int accountType_selectionChange(FormComboBoxControl _formComboBoxControl)
-        {
-        SegmentedEntryControl secDDAC = dialogDynamicAccount.control();
-        accountType = _formComboBoxControl.selection();
+    // Override for modified method of the Account type checkbox to update the SEC when account type is changed
+    public int accountType_selectionChange(FormComboBoxControl _formComboBoxControl)
+    {
+    SegmentedEntryControl secDDAC = dialogDynamicAccount.control();
+    accountType = _formComboBoxControl.selection();
 
-        // This is the backing variable used to pack the account specified via the SEC
-        ledgerDimensionDynamicAccount = 0; 
-        // Clear the SEC value
-        secDDAC.clearReference();                     
+    // This is the backing variable used to pack the account specified via the SEC
+    ledgerDimensionDynamicAccount = 0; 
+    // Clear the SEC value
+    secDDAC.clearReference();                     
 
-        // Specify the new account type to the SEC; this is an additional step needed for the AX SEC
-        secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
+    // Specify the new account type to the SEC; this is an additional step needed for the AX SEC
+    secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
 
-        return true;
-        }
+    return true;
+    }
 
-        // Set default account type based on value read from SysLastValue
-        public void dialogPostRun(DialogRunBase _dialog)
-        {
-        …
-        // Default any previously saved account type info
-        secDDAC = dialogDynamicAccount.control();
-        secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
-        ….
-        }
-        ```
+    // Set default account type based on value read from SysLastValue
+    public void dialogPostRun(DialogRunBase _dialog)
+    {
+    …
+    // Default any previously saved account type info
+    secDDAC = dialogDynamicAccount.control();
+    secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
+    ….
+    }
+    ```
 
 - **Ledger account:**
   - **Before:**
 
-        ```xpp
-        dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703", "@SYS85534");
-        ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
-        ```
+    ```xpp
+    dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703", "@SYS85534");
+    ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
+    ```
 
   - **After:**
 
-        ```xpp
-        DialogField dialogLedgerAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionAccountControl), extendedTypeStr(LedgerDimensionAccount), "@SYS119703", feeLedgerDimension);
-        ```
+    ```xpp
+    DialogField dialogLedgerAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionAccountControl), extendedTypeStr(LedgerDimensionAccount), "@SYS119703", feeLedgerDimension);
+    ```
 
 - **Default account:**
   - **Before:**
 
-        ```xpp
-        dialogInterCompanyLedgerDimension = dialog.addFieldValue(extendedTypeStr(LedgerDimensionDefaultAccount),interCompanyLedgerDimension, "@SYS21687", "@SYS85534");
-        ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountController::constructForDialog(dialogInterCompanyLedgerDimension);
-        ```
+    ```xpp
+    dialogInterCompanyLedgerDimension = dialog.addFieldValue(extendedTypeStr(LedgerDimensionDefaultAccount),interCompanyLedgerDimension, "@SYS21687", "@SYS85534");
+    ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountController::constructForDialog(dialogInterCompanyLedgerDimension);
+    ```
 
   - **After:**
 
-        ```xpp
-        DialogField dialogDefaultAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionDefaultAccountControl), extendedTypeStr(LedgerDimensionDefaultAccount), "@SYS21687", interCompanyLedgerDimension);
-        ```
+    ```xpp
+    DialogField dialogDefaultAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionDefaultAccountControl), extendedTypeStr(LedgerDimensionDefaultAccount), "@SYS21687", interCompanyLedgerDimension);
+    ```
 
 - **Budget:**
   - **Before:** No uptake of the **Budget** controller (**BudgetLedgerDimensionController**) for a dialog scenario was found in the existing program source code.
   - **After:**
 
-        ```xpp
-        DialogField dialogBudget = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudget), 'Budget', ledgerDimensionBudget);
-        ```
+    ```xpp
+    DialogField dialogBudget = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudget), 'Budget', ledgerDimensionBudget);
+    ```
 
     **Notes:**
   - The new API lets you specify the label (**Budget** in the preceding example) while you set up the dialog field.
@@ -976,9 +976,9 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
   - **Before:** No uptake of the **Budget planning** controller (**BudgetPlanningLedgerDimensionController**) for a dialog scenario was found in the existing program source code.
   - **After:**
 
-        ```xpp
-        DialogField dialogBudgetPlanning = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetPlanningLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudgetPlanning), 'Budget planning', ledgerDimensionBudgetPlanning);
-        ```
+    ```xpp
+    DialogField dialogBudgetPlanning = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetPlanningLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudgetPlanning), 'Budget planning', ledgerDimensionBudgetPlanning);
+    ```
 
     **Notes:**
   - The new API lets you specify the label (**Budget planning** in the preceding example) while you set up the dialog field.

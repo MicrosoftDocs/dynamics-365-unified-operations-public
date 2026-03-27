@@ -59,7 +59,7 @@ If you want to save those changes, follow these steps:
 
     1. Select **Save as**. 
     1. In the **Save view as** pane, enter a name and, optionally, a description for the view.
-    1. If you want this view to be your default view, select **Pin as default**. For more information about default views, see [Changing the default view](#changing-the-default-view). 
+    1. If you want this view to be your default view, select **Pin as default**. For more information about default views, see [Changing the default view](#change-the-default-view). 
     1. (Optional) Select whether you want this view to be available for just a subset of legal entities. By default, views are saved as global views. 
     1. Select **Save**.
 

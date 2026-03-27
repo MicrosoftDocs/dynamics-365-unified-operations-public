@@ -85,8 +85,7 @@ If you already installed the demo data, you can skip to the next section.
 
 1. Select **Setup Demo Data**.
 
-    :::image type="content" source="./media/configuration_customizemodel.png" alt-text="Screenshot of the Configuration page in Customize Model."
-    lightbox="./media/configuration_customizemodel.png":::
+    :::image type="content" source="./media/configuration_customizemodel.png" alt-text="Screenshot of the Configuration page in Customize Model." lightbox="./media/configuration_customizemodel.png":::
 
 1. If you're prompted to reload the demo data, select **Yes**.
 1. When the data finishes loading, select **Close**.
