@@ -39,6 +39,9 @@ Examples of highly variable data include timestamps and identifiers that are fre
 
 These are considered highly variable values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](/dynamics365/finance/general-ledger/financial-tag).
 
+> [!NOTE]
+> The **DimensionFinancialTag** table stores values for custom financial dimensions that aren't backed by an existing system table. It is not related to the **FinTag** table, which stores financial tag data. Despite the similar naming, these are separate features with no overlap in data or behavior.
+
 By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
 
 
