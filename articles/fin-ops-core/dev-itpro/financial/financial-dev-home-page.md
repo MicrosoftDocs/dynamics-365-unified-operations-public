@@ -42,6 +42,12 @@ This article provides links to topics about financials development.
     + [Migration guidance for Segmented Entry controls](../financial/segmented-entry-control-migration-guidance.md)
     + [Parm methods for Segmented Entry controls](../financial/segmented-entry-control-parm-method-specification.md)
 
+- Financial tags
+
+    + [Financial tags developer overview](../financial/financial-tags-overview.md)
+    + [Uptake financial tags on forms and entities](../financial/financial-tags-uptake.md)
+    + [Financial tag defaulting rules](../financial/financial-tags-defaulting.md)
+
 - Currency Exchange rate providers
 
     + [Create exchange rate providers](../financial/create-exchange-rate-providers.md)
