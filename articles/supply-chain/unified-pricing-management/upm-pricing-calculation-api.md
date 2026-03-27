@@ -15,21 +15,17 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-The pricing calculation API enables external applications to retrieve accurate, real-time pricing and discount calculation results directly from Microsoft Dynamics 365 Supply Chain Management. By providing key input data—such as product and customer details—external systems can programmatically access calculated prices without creating sales orders. This helps ensure pricing consistency across your sales channels and simplifies quoting and integration workflows.
+The pricing calculation API enables external applications to retrieve accurate, real-time pricing and discount calculation results directly from Microsoft Dynamics 365 Supply Chain Management. By providing key input data, such as product and customer details, external systems can programmatically access calculated prices without creating sales orders. This approach helps ensure pricing consistency across your sales channels and simplifies quoting and integration workflows.
 
 > [!IMPORTANT]
-> This API is designed for low- to moderate-frequency pricing queries from system-to-system integrations. It isn't intended to replace the Dynamics 365 Commerce Scale Unit (CSU) pricing APIs. For high-scale, high-performance pricing scenarios—such as e-commerce storefronts, point-of-sale (POS), or product catalog browsing—Commerce Scale Unit APIs remain the recommended approach. Learn more at [Commerce pricing APIs](/dynamics365/commerce/pricing-apis).
+> This API is designed for low- to moderate-frequency pricing queries from system-to-system integrations. It isn't intended to replace the Dynamics 365 Commerce Scale Unit (CSU) pricing APIs. For high-scale, high-performance pricing scenarios—such as e-commerce storefronts, point-of-sale (POS), or product catalog browsing—Commerce Scale Unit APIs remain the recommended approach. Learn more at [Commerce pricing APIs](../../commerce/pricing-apis.md).
 
 ## Prerequisites
 
 To use the features described in this article, your system must meet the following requirements:
 
-<!-- TODO: PM input needed – Confirm the minimum version (e.g., 10.0.48 or later). -->
-
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
-- The feature named *Calculate prices for external systems through API* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-<!-- TODO: PM input needed – Confirm the exact feature name as it appears in Feature management. -->
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.47 or later.
+- Unified pricing management must be [enabled in your environment](upm-pricing-management-overview.md).
 
 ## Business scenarios
 
@@ -42,7 +38,7 @@ This API is a good fit when external systems need to validate or retrieve prices
 
 ### When to use Commerce Scale Unit pricing APIs instead
 
-For high-performance pricing workloads, you should use the Dynamics 365 Commerce Scale Unit (CSU) pricing APIs instead. CSU pricing APIs are purpose-built for scenarios that include:
+For high-performance pricing workloads, use the Dynamics 365 Commerce Scale Unit (CSU) pricing APIs instead of the pricing calculation API. CSU pricing APIs are purpose-built for scenarios that include:
 
 - E-commerce and web shopping experiences
 - Product detail page (PDP) pricing
@@ -75,13 +71,11 @@ The pricing calculation API uses OAuth 2.0 with Microsoft Entra ID (formerly Azu
 
 ### Register the external application
 
-<!-- TODO: I think we should have detailed steps for registering an app in Microsoft Entra ID and configuring permissions for Supply Chain Management. The following is an AI-generated placeholder for those steps. Please review carefully. -->
-
-Before you can call the API, you must register your external application in both Microsoft Entra ID and Supply Chain Management. The following procedure describes how to set up the registration.
+Before you can call the API, register your external application in both Microsoft Entra ID and Supply Chain Management. The following procedure describes how to set up the registration.
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with an account that has permissions to manage app registrations.
-1. Navigate to **Microsoft Entra ID** \> **App registrations** and either select an existing registration or create a new one. Note the **Application (client) ID** value.
-1. Under the same app registration, go to **Certificates & secrets** and select **+ New client secret**. Enter a description, set the expiration period, and then select **Add**.
+1. Go to **Microsoft Entra ID** \> **App registrations** and either select an existing registration or create a new one. Note the **Application (client) ID** value.
+1. Under the same app registration, go to **Certificates & secrets** and select **New client secret**. Enter a description, set the expiration period, and then select **Add**.
 
     > [!IMPORTANT]
     > Copy the secret value immediately after it's generated. The value is only shown once and can't be retrieved later.
@@ -90,12 +84,20 @@ Before you can call the API, you must register your external application in both
 1. Select **New** to add a record to the grid. Then set the following fields for it:
     - **Client ID** – Enter the application (client) ID that you noted earlier.
     - **Name** – Enter a descriptive name for the application.
-    - **User ID** – Select a user account that has appropriate permissions (for example, a system administrator for testing).
+    - **User ID** – Select a user account that has appropriate permissions.
 1. Select **Save**.
+
+The following resources provide more information about how to register an application in Microsoft Entra ID:
+
+- For instructions that show how to use Windows PowerShell to register an application in Microsoft Entra ID, see [Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+
+- For complete details about how to manually register an application in Microsoft Entra ID, see the following articles:
+    - [Register an application in Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app)
+    - [Register a Microsoft Entra app and create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## API endpoint
 
-Send pricing requests to the following endpoint using an HTTP POST method:
+Send pricing requests to the following endpoint by using an HTTP POST method:
 
 ```http
 POST {D365_URL}/api/services/GUPPricingServiceGroup/GUPPricingService/getActivePrices
@@ -105,7 +107,7 @@ Replace `{D365_URL}` with the base URL of your Supply Chain Management environme
 
 ## Request structure
 
-All input parameters must be wrapped inside a single request object. Parameter names are case-sensitive.
+Wrap all input parameters inside a single request object. Parameter names are case-sensitive.
 
 ### Request parameters
 
@@ -125,7 +127,7 @@ The following table describes the top-level parameters that you can include in t
 
 ### PriceLookupContext structure
 
-The `priceLookupContext` parameter contains a `HeaderContext` object and an optional `LineContexts` array. Together, these provide the pricing engine with the information it needs to calculate accurate prices.
+The `priceLookupContext` parameter contains a `HeaderContext` object and an optional `LineContexts` array. Together, these elements provide the pricing engine with the information it needs to calculate accurate prices.
 
 #### HeaderContext
 
@@ -135,15 +137,15 @@ The `HeaderContext` object provides order-level details such as the customer, ch
 |---|---|---|---|
 | `CustomerAccount` | string | Optional | The customer account number. |
 | `ChannelId` | long | Required if `dataAreaId` isn't provided | The record ID of the channel where prices and discounts are calculated. Either `dataAreaId` or `ChannelId` must be provided. |
-| `InventorySiteId` | string | Optional | The inventory site. If not specified, defaults are taken from the channel. If the channel isn't provided, defaults come from the customer account. To override defaults and leave the value blank, specify an empty string (`""`). |
+| `InventorySiteId` | string | Optional | The inventory site. If you don't specify this value, the system takes the default from the channel. If the channel isn't provided, the system takes the default from the customer account. To override defaults and leave the value blank, specify an empty string (`""`). |
 | `InventoryLocationId` | string | Optional | The inventory location (warehouse). The same defaulting logic applies as for `InventorySiteId`. |
 | `AffiliationLoyaltyTierLines` | array of objects | Optional | An array of affiliation and loyalty tier IDs. Each object contains an `AffiliationId` (long) and a `LoyaltyTierId` (long). |
 | `SalesOrderProperties` | array of objects | Optional | Key-value pairs for additional order-level attributes. Each object contains a `Name` (string), an optional `TypeName` (string), and a `Value` (string). |
 
 > [!TIP]
-> Affiliation and loyalty tier information is automatically applied if the affiliation or loyalty tier is linked to the customer account. You don't need to include it explicitly in the request unless you want to specify additional affiliations.
+> The system automatically applies affiliation and loyalty tier information if the customer account links to the affiliation or loyalty tier. You don't need to include this information explicitly in the request unless you want to specify additional affiliations.
 
-The following example shows a `HeaderContext` object that specifies a customer, channel, inventory dimensions, affiliation/loyalty tier data, and sales order properties.
+The following example shows a `HeaderContext` object that specifies a customer, channel, inventory dimensions, affiliation and loyalty tier data, and sales order properties.
 
 ```json
 "HeaderContext": {
@@ -219,8 +221,6 @@ The following example shows a `LineContexts` array with one product line that sp
 
 The following example shows a complete request that uses `priceLookupContext` with both a `HeaderContext` and `LineContexts` array.
 
-<!-- TODO: PM input needed – Provide or confirm a complete sample request body. The internal documentation had an empty sample request section. -->
-
 ```json
 {
     "request": {
@@ -265,7 +265,7 @@ The API returns a JSON response that contains transaction-level information and 
 
 ### Key response fields
 
-The following table describes the key fields that are returned for each item in the `ItemResults` array.
+The following table describes the key fields that the API returns for each item in the `ItemResults` array.
 
 | Field | Type | Description |
 |---|---|---|
@@ -402,14 +402,14 @@ The response provides several price-related values that help you understand how 
 Keep the following best practices in mind when you work with the pricing calculation API:
 
 - **Case sensitivity** – All parameter names are case-sensitive. Make sure you use the exact casing shown in this article when you construct requests.
-- **Site and location defaults** – If `InventorySiteId` or `InventoryLocationId` isn't specified, defaults are taken from the channel configuration. If the channel isn't provided, defaults come from the customer account. To override defaults and leave the values blank, specify empty strings (`""`).
+- **Site and location defaults** – If `InventorySiteId` or `InventoryLocationId` isn't specified, the system takes defaults from the channel configuration. If the channel isn't provided, the system takes defaults from the customer account. To override defaults and leave the values blank, specify empty strings (`""`).
 - **Choosing between productIds and LineContexts** – Use `LineContexts` for detailed line-level pricing scenarios, such as when you need to specify multiple products, attributes, or specific quantities. Don't mix `LineContexts` with `productIds` in the same request.
-- **Affiliation and loyalty tier** – Affiliation and loyalty tier information is automatically applied if it's linked to the customer account. You don't need to include it explicitly in the request unless you want to specify additional affiliations.
+- **Affiliation and loyalty tier** – The system automatically applies affiliation and loyalty tier information if it's linked to the customer account. You don't need to include it explicitly in the request unless you want to specify additional affiliations.
 - **Multiple attribute values** – The `SalesOrderProperties` and `SalesLineProperties` fields don't support multiple values for the same attribute in a single request. If you need results for different attribute values, split them into separate requests.
 
 ## Extend the API
 
-If you need to add custom parameters to the input or output of the pricing calculation API, you can use the extension points available in the `GUPPricingServiceClass` class. The following methods are available for extension:
+If you need to add custom parameters to the input or output of the pricing calculation API, use the extension points available in the `GUPPricingServiceClass` class. You can extend the following methods:
 
 - `initHeaderPricingObjectHash` – Extend to add custom logic when the header-level pricing object is initialized.
 - `initLinePricingObjectHash` – Extend to add custom logic when the line-level pricing object is initialized.
