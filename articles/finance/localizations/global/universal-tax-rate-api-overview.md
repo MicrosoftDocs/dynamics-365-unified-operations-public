@@ -53,6 +53,7 @@ We recommend that you import and set up your Tax calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 |---|---|
+| 10.0.48 | Tax Calculation Data Model for ISV Integration 50.78.13 |
 | 10.0.39 | Tax Calculation Data Model for ISV Integration 40.65.5 |
 
 ## Enable a tax solution provider
