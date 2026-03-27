@@ -4,7 +4,7 @@ description: Learn about how you can add the ability to look up dimension values
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 06/24/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
@@ -20,19 +20,19 @@ ms.dyn365.ops.version: Version 1611
 
 This article provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
-The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) article. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this article. 
+The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) article. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this article.
 
 > [!NOTE]
 > This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
 
-1.  In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
-2.  Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.
-3.  Right click **Relations**. Select **New** and then click **Relation.**
-4.  In the **Properties** pane, set the following properties.
-    -   **Validate** - No
-    -   **Cardinality** - ZeroMore
-    -   **Name** - Enter the name of the financial dimension, such as Department.
-    -   **Related Data Entity** - Select the entity for the financial dimension that you entered in the **Name** field. The following table contains a list of the financial dimensions and the related entities.
+1. In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
+1. Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.
+1. Right click **Relations**. Select **New** and then click **Relation.**
+1. In the **Properties** pane, set the following properties.
+    - **Validate** - No
+    - **Cardinality** - ZeroMore
+    - **Name** - Enter the name of the financial dimension, such as Department.
+    - **Related Data Entity** - Select the entity for the financial dimension that you entered in the **Name** field. The following table contains a list of the financial dimensions and the related entities.
 
         | Financial dimension 'Use values from'     | Related entity                            |
         |-------------------------------------------|-------------------------------------------|
@@ -72,24 +72,23 @@ The only value that is present on Microsoft Excel templates after installation i
         | Vendors                                   | DimAttributeVendTableEntity               |
         | Workers                                   | DimAttributeHcmWorkerEntity               |
 
-    -   **Related Data Entity Cardinality** - **ZeroOne**
-    -   **Related Data Entity Role** - Enter a unique name, such as "Dimension Department Lookup".
-    -   **Relationship Type** - **Association**
-    -   **Role** - Enter a unique name, such as Dimension Department.
+    - **Related Data Entity Cardinality** - **ZeroOne**
+    - **Related Data Entity Role** - Enter a unique name, such as "Dimension Department Lookup".
+    - **Relationship Type** - **Association**
+    - **Role** - Enter a unique name, such as Dimension Department.
 
-5.  Right-click the **Financial dimension** name under **Relations.**
-6.  Select **New**, and then click **Normal.**
-7.  In the Properties pane, choose the name of the Financial dimension in the **Field**.
-8.  In the Related field, type **Value**. The new relation is similar to the following example.
-    
+1. Right-click the **Financial dimension** name under **Relations.**
+1. Select **New**, and then click **Normal.**
+1. In the Properties pane, choose the name of the Financial dimension in the **Field**.
+1. In the Related field, type **Value**. The new relation is similar to the following example.
+
     ```xpp
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![Relation properties in Visual Studio.](./media/lookupwiki.png)
+    :::image type="content" source="./media/lookupwiki.png" alt-text="Screenshot of relation properties in Visual Studio.":::
 
-9.  Build the project and then synchronize it with the database.
-
+1. Build the project and then synchronize it with the database.
 
 ## Additional resources
 
@@ -98,6 +97,5 @@ The only value that is present on Microsoft Excel templates after installation i
 [Extensibility home page](../extensibility/extensibility-home-page.md)
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
