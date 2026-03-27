@@ -16,6 +16,20 @@ audience: Application User
 
 This article provides information about what's new or changed in Business performance analytics.  
 
+## February 2026
+
+The February release of Business performance analytics version 2.7 and contains the following features.
+
+### Feature enhancements
+
+| Category | Feature | Description |
+|----------|---------|-------------|
+| Data model additions and changes | Acquire-to-Dispose data model | Release Acquire‑to‑Dispose dimensional model, expanding BPA’s value chain coverage across Fix asset acquisition, usage, and disposal. |
+| Bug fix | Purchase Invoice Fact producing duplicates when joining in purchase_invoice_header_allocated_charge_and_tax_df | Purchase Invoice has duplicates and so reports are blank |
+| Bug fix | Excel report creation failed from UI | Addressed issue where Excel report creation fails when attempting from the UI |
+| Bug fix | Foreign keys are not validated when dim transforms are skipped | Fix theThe current behaviour does not enforce foreign key validation when dimensional transforms are skipped. |
+| Other changes | Release Analytics MCP Server | Release MCP Server 2.5, strengthening platform reliability and performance to support growing BPA adoption and enterprise‑scale analytics. |
+
 ## December 2025
 
 The December release of Business performance analytics version 2.6 and contains the following features.
