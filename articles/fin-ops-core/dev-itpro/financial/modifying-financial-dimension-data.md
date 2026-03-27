@@ -1,8 +1,8 @@
 ---
 title: Modifying financial dimension data
 description: Learn why financial dimension data is immutable, which tables can't be modified, and what to do instead when dimension values are incorrect on posted documents.
-author: ethankallett
-ms.author: ethanrimes
+author: ethanrimes
+ms.author: ethankallett
 ms.topic: conceptual
 ms.date: 03/02/2026
 ms.reviewer: johnmichalak
