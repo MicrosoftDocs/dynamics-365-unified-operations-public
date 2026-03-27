@@ -29,11 +29,13 @@ In addition to automatically analyzing changes communicated by suppliers, impact
 The following conceptual flow shows how supplier communications and impact analysis interact within the Procurement Agent.
 <Diagram>
 
-High‑level flow:
+**High‑level purchaser workflow with the Procurement Agent**:
 
-- Vendors send confirmations or change requests through supported channels such as email or the Vendor Collaboration module.
-- Supplier communications receives, extracts, and structures these supplier updates and links them to the relevant purchase orders.
-- Supplier change requests are passed to impact analysis for evaluation.
-- Impact analysis assesses the downstream impact on inventory, production, and customer deliveries.
-- Procurement teams review the results and decide whether to accept the change, negotiate with the vendor, or take further action.
-- Impact analysis can also be triggered at any time through manual simulation, allowing procurement teams to evaluate the impact of hypothetical or internally proposed changes—even when no supplier request has been received yet.
+1. Send purchase order to vendor
+2. Supplier communications sends follows up emails to vendors for confirmation if response is missing or delayed.
+3. Supplier communications receives and processes email purchase order responses.
+  4. For purchase order confirmations, supplier communications automatically applies these to the purchase order
+  5. For purchase order changes, supplier communications highlights the changed field(s) and impact analysis automatically identifies if the change has downstream impact on orders and inventory levels.
+6. If using Vendor Collaboration Module, impact analysis is also automatically run for any change requests received
+7. For changes without downstream impact, purchasers can apply changes
+8. For changes with downstream impact, purchasers can choose to apply the change or follow up with the supplier, as well as determine further action to mitigate impact. If impact cannot be avoided, they know who to inform based on what the impact will be.
