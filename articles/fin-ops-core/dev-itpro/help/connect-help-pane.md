@@ -4,7 +4,7 @@ description: Learn about how you can extend the in-product Help pane with custom
 author: brentholtorf
 ms.author: bholtorf
 ms.topic: how-to
-ms.date: 07/17/2024
+ms.date: 03/26/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -16,13 +16,13 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-If you deliver custom Help content for a finance and operations solution, you can extend the **Help** pane so that it consumes that content. You complete this one-time configuration by using the finance and operations development environment in Microsoft Visual Studio. After you've finished, users can select among tabs for task guides, Microsoft Help content, and your Help content.
+If you deliver custom Help content for a finance and operations solution, you can extend the **Help** pane so that it consumes that content. Complete this one-time configuration by using the finance and operations development environment in Microsoft Visual Studio. After you finish, users can select among tabs for task guides, Microsoft Help content, and your Help content.
 
 The process for connecting your [custom Help website](custom-help-overview.md#custom-help-sites) to the in-product **Help** pane involves the following steps:
 
 1. Extend the **Help** pane in Visual Studio.
-2. Assign an index to a language.
-3. Customize language fallback.
+1. Assign an index to a language.
+1. Customize language fallback.
 
 > [!IMPORTANT]
 > The procedures that follow require the development tools for finance and operations apps in Visual Studio. For more information, see [Development tools in Visual Studio](../dev-tools/development-tools-overview.md).
@@ -31,14 +31,14 @@ The process for connecting your [custom Help website](custom-help-overview.md#cu
 
 [!INCLUDE [custom-help-toolkit-tools](../includes/custom-help-toolkit-tools.md)]
 
-The **Help Pane extension** folder contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.
+The **Help Pane extension** folder contains the **AzureSearchCustomHelp** solution that you can open in the finance and operations development environment. That folder also contains the **HelppaneOption.axpp** project that you can import into the solution in Visual Studio.
 
 ### Extend the Help pane
 
 1. In the finance and operations development environment, open the **AzureSearchCustomHelp.sln** solution.
-2. On the **Dynamics 365** menu, select **Import project**.
-3. In the **File name** field, specify the path of the **HelppaneOption.axpp** project, and then select **OK** to complete the import process. Update the references so that no references are missing.
-4. In the **HelppaneMacro** file, update the values of the following parameters:
+1. On the **Dynamics 365** menu, select **Import project**.
+1. In the **File name** field, specify the path of the **HelppaneOption.axpp** project, and then select **OK** to complete the import process. Update the references so that no references are missing.
+1. In the **HelppaneMacro** file, update the values of the following parameters:
 
     - **\[WebAppName\]** – Specify the name of the web app that you created in [Create a web app](walkthrough-help-azure.md#webapp). For example, specify **MyCustomHelpWebApp**.
     - **Admin key value** – Specify the admin key for the Azure Cognitive Search service. You can find the key in **Access keys** under **Settings** on the left of the search service in the [Azure portal](https://portal.azure.com/).
@@ -58,7 +58,7 @@ The **Help Pane extension** folder contains the **AzureSearchCustomHelp** soluti
     #define.htm('html')
     ```
 
-5. Optional: If you want to change any of the user interface (UI) strings that appear in the **Help** pane, edit the **Customhelppane.en-US.label.txt** file.
+1. Optional: If you want to change any of the user interface (UI) strings that appear in the **Help** pane, edit the **Customhelppane.en-US.label.txt** file.
 
 Next, you must specify the language that the search index for your custom Help is intended for.
 
@@ -67,17 +67,17 @@ Next, you must specify the language that the search index for your custom Help i
 ### Assign a custom index to a language
 
 1. Open the **Language.config** file in the solution.
-2. In the list, find the language of the index, and specify an index name by using the **index=""**, **parentindex=""**, or **ultimateindex=""** key.
+1. In the list, find the language of the index, and specify an index name by using the **index=""**, **parentindex=""**, or **ultimateindex=""** key.
 
-    For example, you created search indexes for English (United States) and German (Austria), and you named them **myenusindex** and **mydeatindex**, respectively. In this case, here is what your entries will look like.
+    For example, you created search indexes for English (United States) and German (Austria), and you named them **myenusindex** and **mydeatindex**, respectively. In this case, your entries look like the following example.
 
     ```
     <add language="en-US" ultimateindex="myenusindex" />
     <add language="de-AT" parentlanguage="de" index="mydeatindex" />
     ```
 
-3. Optional: Customize language fallback for your index, as described in the next section.
-4. Build the **AzureSearchCustomHelp** solution.
+1. (Optional) Customize language fallback for your index, as described in the next section.
+1. Build the **AzureSearchCustomHelp** solution.
 
 The result is a model that you upload to the Asset library of the customer project or the solution project in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -86,18 +86,18 @@ The result is a model that you upload to the Asset library of the customer proje
 *Language fallback* means that the **Help** pane runs a search in additional languages if the intended language either doesn't return a result or doesn't exist.
 
 > [!NOTE]
-> A custom index must be available for the additional languages.
+> You must have a custom index for the additional languages.
 
-The search and fallback order have the following order of priority:
+The search and fallback order follow this priority:
 
-1. The language that is set in the client (for example, **de-AT**)
-2. The language that is defined in the **parentlanguage** attribute for that language (for example, **\<add language="de-AT" parentlanguage="de" index="mydeindex" /\>**)
-3. The language that the **ultimateindex** attribute is set for (for example, **\<add language="en-US" ultimateindex="myenusindex" /\>**)
+1. The language that you set in the client (for example, **de-AT**)
+1. The language that the **parentlanguage** attribute defines for that language (for example, **\<add language="de-AT" parentlanguage="de" index="mydeindex" /\>**)
+1. The language that the **ultimateindex** attribute sets (for example, **\<add language="en-US" ultimateindex="myenusindex" /\>**)
 
 > [!IMPORTANT]
-> If the **parentlanguage** attribute is set, there must be a corresponding **parentindex** key.
+> If you set the **parentlanguage** attribute, you must also set a corresponding **parentindex** key.
 
-The following scenario is valid, because **language="de"** has **parentindex="indexde"**, and both **de-DE** and **de-AT** are descendants of **de**.
+The following scenario is valid because **language="de"** has **parentindex="indexde"**, and both **de-DE** and **de-AT** are descendants of **de**.
 
 ```
 <add language="de" parentindex="indexde"/>
@@ -109,7 +109,7 @@ The following sections provide sample configurations.
 
 ### Help content for one locale
 
-In this configuration, you have Help content only for English (United States). Regardless of the locale that clients are set to, they will show the Help content in English (United States).
+In this configuration, you have Help content only for English (United States). Regardless of the locale that clients set, they show the Help content in English (United States).
 
 ```
 <add language="en-US" ulitmateindex="indexenus"/>
@@ -117,7 +117,7 @@ In this configuration, you have Help content only for English (United States). R
 
 ### Help content for multiple locales
 
-In this configuration, you have Help content for French, German, and English (United States). Clients that are set to the **de** locale will show the Help content in German, clients that are set to the **fr** locale will show the content in French, and clients that are set to any other locale will show the content in English (United States).
+In this configuration, you have Help content for French, German, and English (United States). Clients that are set to the **de** locale show the Help content in German, clients that are set to the **fr** locale show the content in French, and clients that are set to any other locale show the content in English (United States).
 
 ```
 <add language="en-US" ulitmateindex="indexenus"/>
@@ -125,7 +125,7 @@ In this configuration, you have Help content for French, German, and English (Un
 <add language="de" parentindex="indexde"/>
 ```
 
-If clients are set to the **de** or **fr** locale, but no results are found in the German or French content, respectively, results will be shown in English (United States), if content is available in that language.
+If clients are set to the **de** or **fr** locale, but no results are found in the German or French content, respectively, the system shows results in English (United States), if content is available in that language.
 
 ### Help content that uses parent locales
 
@@ -137,7 +137,7 @@ In this configuration, you have Help content for German, German (Austria), and E
 <add language="de-AT" parentlanguage="de" index="indexdeat"/>
 ```
 
-If the client is set to the **de-AT** locale, but no results are found in the German (Austria) content, results will be shown in German and English (United States), if content is available in those languages.
+If the client is set to the **de-AT** locale, but no results are found in the German (Austria) content, the system shows results in German and English (United States), if content is available in those languages.
 
 ## See also
 

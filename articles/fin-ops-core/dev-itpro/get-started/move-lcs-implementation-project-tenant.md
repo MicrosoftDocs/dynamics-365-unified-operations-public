@@ -28,7 +28,7 @@ You can move your subscriptions and your Microsoft Dynamics Lifecycle Services I
 
 The process for moving your subscriptions and all related artifacts has four main steps, as shown in the following illustration.
 
-![Process for moving subscriptions.](../../fin-ops/get-started/media/move-subscription-process.png)
+:::image type="content" source="../../fin-ops/get-started/media/move-subscription-process.png" alt-text="Screenshot of the process for moving subscriptions.":::
 
 ## Activate subscriptions on the new tenant
 
@@ -96,7 +96,7 @@ On the new tenant, you get a new Lifecycle Services project that you must initia
 
 Depending on your solution and scope, you might have to perform more steps on the new Microsoft Entra tenant. These steps might include registering applications (for recurring integrations and warehouse management), adding domains, and setting up directory synchronization to enable single sign-on (SSO).
 
-Calls to web services are allowed only from the **home** tenant for the environment. For example, the original tenant was companya.com, and integration ran as `services\@companya.com`. In this case, when you switch tenants to companyb.com, you can no longer use `services\@companya.com` for web service calls, even if you update **userInfo.networkdomain** to `https://sts.windows.net/companyb.com`.
+Calls to web services are allowed only from the **home** tenant for the environment. For example, the original tenant was companya.com, and integration ran as `services\@companya.com`. In this case, when you switch tenants to companyb.com, you can't use `services\@companya.com` for web service calls, even if you update **userInfo.networkdomain** to `https://sts.windows.net/companyb.com`.
 
 > [!IMPORTANT]
 > On your sandbox environments, you lose any document handling attachments that are stored in Azure Blob storage. Microsoft moves Blob storage only for production environments.

@@ -4,7 +4,7 @@ description: Learn about service update availability and the different release o
 author: hmahl
 ms.author: kschaff
 ms.topic: article
-ms.date: 08/25/2025
+ms.date: 03/26/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -28,7 +28,7 @@ Customers can take up to four service updates per year and are required to take 
 
 > [!IMPORTANT]
 > Microsoft releases four service updates annually, in February, April, July, and October. The maximum number of consecutive updates that can be paused is one and taking a minimum of two service updates per year is required. For answers to common questions about how these changes affect the release process, see [One Version service updates FAQ](one-version.md).
->
+
 > [!NOTE]
 > A sandbox autoupdate occurs seven days before the production update.
 
@@ -53,7 +53,7 @@ In the following table:
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers who are enrolled in the First Release program and to the date when the service update is made generally available.
 >
-> **Release naming convention as of the 10.0.38 release**
+> #### Release naming convention as of the 10.0.38 release
 >
 > The first half of the release label refers to the calendar year and quarter when the auto update production start date is scheduled. The second part is the product version as it appears in Lifecycle Services. An asterisk (\*) at the end of the label indicates a major release. For example: **CY25Q4: 10.0.45\*** is product version 10.0.45 that's made available for autoupdate in the fourth quarter of 2025. It's a major update (the "October" release).
 > 

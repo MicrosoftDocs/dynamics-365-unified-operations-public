@@ -4,7 +4,7 @@ description: Learn about how to subscribe to events that has a parameter of any 
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: how-to
-ms.date: 03/06/2026
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,12 +16,12 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../includes/banner.md)]
 
-Some delegate methods are implemented so that they can request a response from subscribing delegate handler methods. The delegate calling logic then uses the response from a potential subscriber when it continues execution after the response is received. These delegate methods usually have a signature that has an **EventHandlerResult** parameter as the last parameter. However, because of the support for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** types, the parameter can be of any type that implements the **IEventHandlerResult** interface.
+Some delegate methods request a response from subscribing delegate handler methods. The delegate calling logic uses the response from a potential subscriber when it continues execution after the response is received. These delegate methods usually have a signature that has an **EventHandlerResult** parameter as the last parameter. However, because of the support for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** types, the parameter can be of any type that implements the **IEventHandlerResult** interface.
 
 + In general, the logic implemented in the delegate handler method should contain a condition that verifies that the subscribing logic is responsible for providing a response. It should also include logic to provide the response in the form of a result.
 + When the delegate handler method must provide the response to an **EventHandlerResult** object parameter, the subscribing logic might also contain logic to calculate or retrieve the result.
 + When the condition and the response logic are implemented, calculate the result only when the condition is **true**.
-+ All the subscribing delegate handler methods are run when a delegate is called. Therefore, make sure that the overhead of running your method is as low as possible when the method isn't responsible for providing a response. Make sure that the condition is evaluated to **false** as quickly as possible when your delegate handler method isn't responsible for providing a result.
++ All the subscribing delegate handler methods run when a delegate is called. Therefore, make sure that the overhead of running your method is as low as possible when the method isn't responsible for providing a response. Make sure that the condition is evaluated to **false** as quickly as possible when your delegate handler method isn't responsible for providing a result.
 
 ## Examples
 
@@ -45,7 +45,7 @@ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(Inven
 When the delegate method requests a response by using an **EventHandlerAcceptResult** or an **EventHandlerRejectResult** object parameter, the subscriber is expected to respond only with an accept or a reject. The subscribing logic might also add messages to the Infolog.
 
 The following example resembles the previous example. However, the delegate method now requests a response by using an **EventHandlerAcceptResult** object and by calling the **accept** method.
-	
+ 
 ```xpp
 [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerAcceptResult _result)
@@ -88,54 +88,53 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
 
 In addition to the previously described practices, follow these general guidelines:
 
-- Respond only when the subscribing logic is responsible for responding. The delegate handler methods are implemented to provide a response when a specific condition is met. Therefore, the subscribing logic must provide a result when a specific condition is met. Before the subscribing logic responds, it shouldn't evaluate whether the result object parameter already contains a result. For example, a delegate handler method shouldn't contain logic that resembles the logic in the following example. This logic evaluates whether the **EventHandlerResult** object parameter already contains a result when the method runs.
++ Respond only when the subscribing logic is responsible for responding. Implement the delegate handler methods to provide a response when a specific condition is met. Therefore, the subscribing logic must provide a result when a specific condition is met. Before the subscribing logic responds, it shouldn't evaluate whether the result object parameter already contains a result. For example, a delegate handler method shouldn't contain logic that resembles the logic in the following example. This logic evaluates whether the **EventHandlerResult** object parameter already contains a result when the method runs.
 
     > [!WARNING]
     > This example shows code that you should **not** write.
 
     ```xpp
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
-	public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
-	{
-	    // this if statement is an example of the bad practice.
-	    if (_result.hasResult())
-	    {
-	         return;
-	    }
-	    switch (_inventLocationType)
-	    {
-	        case InventLocationType::Standard:
-	        case InventLocationType::Quarantine:
-	        case InventLocationType::Transit:
-	             _result.result(true);
-	            break;
-	    }
-	}
-    ```
-    
-- Don't provide a response on behalf of other subscribers. If the delegate handler method isn't responsible for providing a response, it must not provide one. If the method provides a response when the condition isn't met, it provides a response on behalf of other subscribers. The requesting logic must handle situations where no subscribers respond. The delegate handler method must not contain logic that resembles the logic in the following example. This logic provides a result when the condition is **false**.
-    
-    > [!WARNING]
-    > This example shows code that you should **not** write.
-    
-    ```xpp
-	[SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
-	public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
-	{
-	    switch (_inventLocationType)
-	    {
-	        case InventLocationType::Standard:
-	        case InventLocationType::Quarantine:
-	        case InventLocationType::Transit:
-	            _result.result(true);
-	            break;
-		    // this default block is an example of the bad practice
-	        default:
-	            _result.result(false);
-	            break;
-	    }
-	}
+ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
+ {
+     // this if statement is an example of the bad practice.
+     if (_result.hasResult())
+     {
+          return;
+     }
+     switch (_inventLocationType)
+     {
+         case InventLocationType::Standard:
+         case InventLocationType::Quarantine:
+         case InventLocationType::Transit:
+              _result.result(true);
+             break;
+     }
+ }
     ```
 
++ Don't provide a response on behalf of other subscribers. If the delegate handler method isn't responsible for providing a response, it must not provide one. If the method provides a response when the condition isn't met, it provides a response on behalf of other subscribers. The requesting logic must handle situations where no subscribers respond. The delegate handler method must not contain logic that resembles the logic in the following example. This logic provides a result when the condition is **false**.
+
+    > [!WARNING]
+    > This example shows code that you should **not** write.
+
+    ```xpp
+ [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
+ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
+ {
+     switch (_inventLocationType)
+     {
+         case InventLocationType::Standard:
+         case InventLocationType::Quarantine:
+         case InventLocationType::Transit:
+             _result.result(true);
+             break;
+      // this default block is an example of the bad practice
+         default:
+             _result.result(false);
+             break;
+     }
+ }
+    ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
