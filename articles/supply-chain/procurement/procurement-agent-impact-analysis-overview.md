@@ -1,3 +1,5 @@
+# Impact analysis overview #
+
 The Procurement Agent in Dynamics 365 Supply Chain Management works with procurement teams to manage supplier changes that affect purchase orders and supply commitments. Impact analysis evaluates if and how supplier changes affect inventory levels, production schedules, and customer deliveries. It helps teams react faster and with higher confidence when suppliers propose changes to purchase orders by clearly indicating whether they have a downstream impact.
 
 Instead of spending a lot of time manually tracing pegging, reservations, or planning dependencies across the system for each change communicated by suppliers, teams are able to quickly determine which can be safely accepted, and which require further action. This helps prioritize time spent on changes with impact, ultimately protecting service levels and production continuity.
