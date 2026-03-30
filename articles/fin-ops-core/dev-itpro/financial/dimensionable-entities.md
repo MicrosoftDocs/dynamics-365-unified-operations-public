@@ -17,14 +17,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides the steps to make a backing table usable as a Financial dimension.
+This article provides the steps to make a backing table usable as a financial dimension.
 
 > [!IMPORTANT]
 > Don't create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. A physical table, and not a view must be used as a source of dimension values for a DimAttribute[BackingTable] view you will create in the following steps. Though using a view as the base data source may seem to work, financial reporting queries will fall back to row-by-row processing to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports.
 >
-> The primary table that you use as a source of financial dimension data must have a unique natural key value of 30 characters or less, and that value must resolve to a single RECID within that table. You can get the extended Name column from another source join (such as DirPartyTable or elsewhere) because it's used only for displaying additional context to the user and isn't used to resolve uniqueness on natural key entry.
+> By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
 
-Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that provide a high level of reuse across multiple transactions. Don't select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This choice can increase storage and processing costs and negatively impact performance and analytical value.
+Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Don't select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
 Examples of highly variable data include timestamps and identifiers that are frequently incremented, such as:
 
@@ -42,26 +42,14 @@ These values are highly variable and shouldn't be used as financial dimensions. 
 > [!NOTE]
 > The **DimensionFinancialTag** table stores values for custom financial dimensions that aren't backed by an existing system table. It isn't related to the **FinTag** table, which stores financial tag data. Despite the similar naming, these two features are separate with no overlap in data or behavior.
 
-By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
-
 > [!NOTE]
-> If your dimension is backed by the **OMOperatingUnit** table, many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
-
-## Purpose of DimAttribute views
-
-DimAttribute___ views serve several purposes in the dimension framework:
-
-- **Identification**: They identify backing tables that hold data that should serve as a source of financial dimension values.
-- **Consistent schema**: They provide a uniform schema across all backing tables: a **Key** (RecId), **Value** (natural key string), and **Name** (description string).
-- **Secure access**: They expose only the surrogate key and natural key mappings needed by the framework, without granting access to other columns on the backing table (such as address, salary, or position data).
-- **Multiple dimension types from a single table**: A range on the view allows a single backing table to supply multiple distinct financial dimensions. For example, the **OMOperatingUnit** table serves as the source for Business Units, Departments, and Cost Centers, each through a separate DimAttribute view with a different range filter.
-- **Alternate name sources**: The extended description (**Name** column) can be sourced from a joined table (such as **DirPartyTable**) rather than the primary backing table, because it's used only for display and not for resolving uniqueness.
+> If the **OMOperatingUnit** table backs your dimension, many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
 
 ## Step 1: Create a view
 
 First, create a view in the same model as your backing table. Before you complete the following steps, verify that the backing table has **Create Rec Id Index = Yes** in the **Table Properties** pane. Alternatively, ensure that the table has a unique index and RECID is the first segment of that index.
 
-1. In your project, select **Add** > **New Item**. Select **View** and then select **Add**.
+1. In your project, select **Add** > **New Item**. Select **View**, and then select **Add**.
 1. Right-click **View** and select **Rename**. Name the view **DimAttribute**[BackingTableName]. For example, DimAttributeCustTable.
 1. Expand **View Metadata**, and then drag your table to the **Data Sources** node on the view.
 1. Rename the node from **BackingTableName** to **BackingEntity**.
@@ -69,10 +57,6 @@ First, create a view in the same model as your backing table. Before you complet
       - **Key** – This is the surrogate key, typically the RecID.
       - **Value** - This is the natural key, for example the AccountNum. It's a string up to 30 characters.
       - **Name** – This is the description, which is typically the **Name** or **Description** field. It's a string up to 60 characters.
-
-    > [!WARNING]
-    > Don't extend the `DimensionValue` extended data type (EDT) beyond its supported size. The view's **Value** and **Name** fields must stay within the backing entity's size limits so the dimension framework can correctly map values from the source table. The **Value** field supports a maximum of 30 characters and the **Name** field supports a maximum of 60 characters. Changing the type to **Memo** isn't supported. Exceeding these limits or using an unsupported type causes dimension and dimension value forms to fail to load with buffer overflow or invalid type errors.
-
 1. You might need to create a **Range** on the view if the backing table removes data. For example, if you're using an Operating unit and only want Department, use the range for that operating unit.
 1. Right-click **Indexes** and select **New Index**. Select **Value** as the Data field on the **Properties** pane. You can rename the index if needed, but set **Allow Duplicates** to **No**.
 1. Right-click **Indexes** and select **New Index**. Select **Name** as the Data field on the **Properties** pane. You can rename the index if needed, but set **Allow Duplicates** to **Yes**.
@@ -85,7 +69,7 @@ First, create a view in the same model as your backing table. Before you complet
     > [!IMPORTANT]
     > Grant security access to non-admin users for the new view.
     > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Select **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You might need to extend one of these into the model that you're using.
-    > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created earlier and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag and drop the newly created **Security Privilege** into the **Privileges list**.
+    > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created earlier and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag and drop the newly created **Security Privilege** into the **Privileges list**.  
 
 1. Right-click **View** and select **View Code**. Add the following code to the view. This code registers the view in the dimension framework. Here's an example using the view created for CustTable.
 
@@ -155,7 +139,7 @@ public void renamePrimaryKey()
 
 ## Step 4: Clear caches to force detection of the new view
 
-Because the list of entities that you can consume as a dimension is cached on the server, the creation of a new entity doesn't appear in the list of existing entities until you clear the caches or restart both the client and the server. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.
+Because the list of entities that can be consumed as a dimension is cached on the server, the creation of a new entity doesn't appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.
 
 ```xpp
 DimensionCache::clearAllScopes();
@@ -167,7 +151,7 @@ Now that you completed the steps, go to the **Financial dimensions** page in the
 
 ## Add a new OMOperatingUnit type backed entity
 
-If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:
+If you add a new Organization Model OMOperatingUnitType enumeration, you can use similar steps to make it consumable as a dimension. You can shorten these steps as follows:
 
 1. Copy one of the existing `DimAttributeOM[BackingTableName]` views, rename it appropriately, and then adjust all associated labels and help text.
 1. Expand the `Datasource\BackingEntity (OMOperatingUnit)\Ranges` node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that you added.
@@ -187,7 +171,7 @@ if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
 }
 ```
 
-**Example**
+### Example
 
 ```xpp
 public void persistEntity(DataEntityRuntimeContext _entityCtx)

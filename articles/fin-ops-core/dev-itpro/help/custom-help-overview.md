@@ -4,7 +4,7 @@ description: Learn about how you can extend the Microsoft Help system so that it
 author: edupont04
 ms.author: edupont
 ms.topic: overview
-ms.date: 07/17/2024
+ms.date: 03/26/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -18,28 +18,28 @@ ms.dyn365.ops.version: Operations
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
-Finance and operations apps are often customized and extended to fit an organization's needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the finance and operations client. This article describes the main steps and decision points.
+Organizations often customize and extend finance and operations apps to fit their needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the finance and operations client. This article describes the main steps and decision points.
 
 > [!NOTE]
-> Users of finance and operations apps can create custom task guides to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, go to [Help system](../../fin-ops/get-started/help-overview.md).
+> Users of finance and operations apps can create custom task guides to supplement conceptual content that describes the functionality of their solution. Microsoft, partners, and an organization itself can provide these conceptual descriptions, which are also referred to as Help. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
 
 The following illustration, and this article in general, use the term *Help* for conceptual descriptions that either include or exclude how-to guides. The term *task guides* refers to in-product task guides.
 
-![Customized Help solution and the Help pane.](../../fin-ops/get-started/media/help-architecture.png)
+:::image type="content" source="../../fin-ops/get-started/media/help-architecture.png" alt-text="Screenshot of the customized Help solution and the Help pane.":::
 
 ## Custom Help content
 
-Custom Help content typically originates from one of three sources:
+Custom Help content typically comes from one of three sources:
 
 - Microsoft documentation repositories (repos)
 
-    Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It is not intended to be customized directly but to be supplemented by articles on your local website. However, depending on your solution, you might need a copy of Microsoft's content.
+    Microsoft's content in the various GitHub repos is optimized for the [learn.microsoft.com](https://learn.microsoft.com) site and the tools that are used for this site. It's not intended to be customized directly but to be supplemented by articles on your local website. However, depending on your solution, you might need a copy of Microsoft's content.
 
 - Existing customized Dynamics AX content
 
-    You can convert Dynamics AX custom Help content so that it can be used in Dynamics 365.
+    You can convert Dynamics AX custom Help content so that you can use it in Dynamics 365.
 
-- HTML files that are created specifically for your solution
+- HTML files that you create specifically for your solution
 
     Learn more about the metadata that must be added to your HTML files for context-sensitive Help and search to work correctly in the [Metadata requirements for custom Help files](#metadata-requirements-for-custom-help-files) section.
 
@@ -48,11 +48,11 @@ Custom Help content typically originates from one of three sources:
 The end-to-end process depends on the customer's solution and the users' expectations. A typical process involves the following steps:
 
 1. Create the custom Help content.
-2. Publish the content on a website.
-3. Index the content by using a search service.
-4. Connect the custom **Help** pane to the website and the search service.
+1. Publish the content on a website.
+1. Index the content by using a search service.
+1. Connect the custom **Help** pane to the website and the search service.
 
-Microsoft provides sample tools and scripts that can help you covert content and configure the Help pane to include your custom Help. Find the samples at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).  
+Microsoft provides sample tools and scripts that can help you convert content and configure the Help pane to include your custom Help. Find the samples at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).  
 <!-- 
 You're welcome to share your knowledge by contributing to this documentation through the link on the page or by joining the [Dynamics 365 community](https://community.dynamics.com/). -->
 
@@ -68,15 +68,15 @@ The following table outlines the main objectives that admins typically have for 
 
 ## <a name="custom-help-sites"></a>Custom Help websites
 
-Before the product can connect to your Help content, you must customize the in-product **Help** pane so that it shows your content. Learn more at [Connect a custom Help website to the Help pane](connect-help-pane.md).  
+Before the product can connect to your Help content, you must customize the in-product **Help** pane so that it shows your content. For more information, see [Connect a custom Help website to the Help pane](connect-help-pane.md).  
 
 The following conditions must be met:
 
 - Your content must be available on a website.
 
-    You can deploy your content to an existing website, or you can set up a dedicated website to host your content. The website can be private or public, but we recommend that you **do not** require users to sign in to access your content.
+    You can deploy your content to an existing website, or you can set up a dedicated website to host your content. The website can be private or public, but don't require users to sign in to access your content.
 
-- Your content must be indexed by a search service.
+- A search service must index your content.
 
   Learn more in the [Generate JSON files for the search service](#json) section.
 
@@ -86,17 +86,17 @@ The following conditions must be met:
 
 ## Metadata requirements for custom Help files
 
-The following metadata must be present in your topics for context-sensitive Help and full-text search to return results.
+To ensure context-sensitive Help and full-text search return results, include the following metadata in your topics.
 
 | Property | Description |
 |----------|-------------|
-| title | The value is used for full-text search from the **Help** pane. |
-| description | The value is used for full-text search from the **Help** pane. |
+| title | The value for full-text search from the **Help** pane. |
+| description | The value for full-text search from the **Help** pane. |
 | ms.search.form | The value contains the Application Object Tree (AOT) name of a page and is used for context-sensitive search from the **Help** pane. |
-| ms.locale | The value indicates the language of the article. It's mapped against the current browser locale when the **Help** pane searches the content. Language fallback can be configured for the target custom Help website. Learn more at [Language and locale descriptors in the product and in Help](language-locale.md). |
-| ms.search.scope | The value determines which client the Help article is shown in. You can specify one or more values. Values include **Core**, **Operations**, **Retail**, and **Human Resources**. |
+| ms.locale | The value indicates the language of the article. It's mapped against the current browser locale when the **Help** pane searches the content. You can configure language fallback for the target custom Help website. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md). |
+| ms.search.scope | The value determines which client the Help article shows in. You can specify one or more values. Values include **Core**, **Operations**, **Retail**, and **Human Resources**. |
 
-The following table describes the values that can be specified for the **ms.search.scope** property. You can specify one or more values. The values determine which client a Help article is shown in.
+The following table describes the values that you can specify for the **ms.search.scope** property. You can specify one or more values. The values determine which client a Help article shows in.
 
 | Value | Description |
 |-------|-------------|
@@ -116,11 +116,11 @@ The following properties are reserved for future use:
 
 ## <a name="json"></a>Generate JSON files for the search service
 
-The **ConvertHtmlToJson** tool transforms HTML files into JSON files. You can then add the JSON files to the Microsoft Azure Search service, which will generate context-sensitive links to your Help content. Find the tool at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).
+The **ConvertHtmlToJson** tool transforms HTML files into JSON files. You can then add the JSON files to the Microsoft Azure Search service, which generates context-sensitive links to your Help content. Find the tool at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).
 
 The JSON files include metadata that the indexer uses to identify the form and language that the target Help page is intended for.
 
-Here is the syntax for running ConvertHtmlToJson.exe.
+Here's the syntax for running ConvertHtmlToJson.exe.
 
 ```
 ConvertHtmlToJson.exe --h <path> -j <path> --v <true|false>
@@ -142,14 +142,14 @@ ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-
 
 ## Reuse Dynamics AX 2012 content
 
-If you have content from Dynamics AX 2012, you can reuse it for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce. However, you must first transform the HTML files so that they can be used in the custom Help environment.  
+If you have content from Dynamics AX 2012, you can reuse it for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce. However, you must first transform the HTML files so that you can use them in the custom Help environment.  
 
-The **run_ax2012.ps1** Windows PowerShell script transforms AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the AX 2012 HTML files:
+The **run_ax2012.ps1** Windows PowerShell script transforms AX 2012 HTML files so that you can use them in the custom Help environment. The script makes the following changes to the AX 2012 HTML files:
 
-- Replace the **Microsoft.Help.F1** metadata name with **ms.search.form**.
-- Replace the **Title** metadata name with **title**.
-- Change the file name extension from **.htm** to **.html**.
-- Add the following metadata.
+- Replaces the **Microsoft.Help.F1** metadata name with **ms.search.form**.
+- Replaces the **Title** metadata name with **title**.
+- Changes the file name extension from **.htm** to **.html**.
+- Adds the following metadata.
 
     ```html
     <meta name="ms.search.region" content="Global" />
@@ -185,7 +185,7 @@ For a description of the required metadata, go to the [Metadata requirements for
 
 ### <a name="moving-to-markdown"></a>Convert HTML content to Markdown
 
-To convert your content to Markdown, use a third-party tool. Microsoft does not provide a tool that can convert HTML to Markdown.
+To convert your content to Markdown, use a third-party tool. Microsoft doesn't provide a tool that can convert HTML to Markdown.
 
 After you've converted your content to Markdown, use an open-source tool to generate content for your website. Markdown gives you access to a wide range of open-source tools. For more information, go to [Contribute to the Help](contributor-guide.md).
 

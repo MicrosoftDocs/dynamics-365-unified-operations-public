@@ -4,7 +4,7 @@ description: Learn about how to use the search functionality to navigate to page
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 01/03/2025
+ms.date: 03/10/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.validFrom: 2016-02-28

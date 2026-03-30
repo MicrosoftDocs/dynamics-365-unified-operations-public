@@ -4,7 +4,7 @@ description: Learn about the difference between regulatory and competitive featu
 author: kfend
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -16,6 +16,7 @@ ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
 # Classification of localization features
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 As part of the requirements for Lifecycle Services solutions for localization and translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS). This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.
 
@@ -43,7 +44,7 @@ For more information about BPM, see [Upload custom business processes to Busines
 
 ## Additional resources
 
-- [Globalization resources](../../fin-ops/lcs/country-region.md)
+- [Globalization resources](../../fin-ops/lcs/globalization-resources.md)
 
 
 

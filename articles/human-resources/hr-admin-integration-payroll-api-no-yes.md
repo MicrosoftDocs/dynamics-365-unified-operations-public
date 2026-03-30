@@ -3,8 +3,8 @@
 
 title: Payroll API No Yes
 description: This article describes the No Yes option set in the Dynamics 365 Human Resources Payroll API.
-author: marcelbf
-ms.date: 06/25/2021
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
@@ -23,15 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll - No Yes option set
 
-
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the No Yes option set for Dynamics 365 Human Resources.
 
 ## Option set: No Yes
 
-Physical name: mshr_noyes
+Physical name: mserp_noyes
 
 This enumeration provides the option set for the typical Boolean properties in Human Resources virtual entities.
 

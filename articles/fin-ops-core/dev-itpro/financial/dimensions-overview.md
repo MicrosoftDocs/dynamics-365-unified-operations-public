@@ -42,7 +42,7 @@ To view dimension formats, go to **General ledger** > **Chart of accounts** > **
 
 ## Add dimensions to Dynamics 365 Finance
 
-Modifying the **DimensionCombinationEntity** is easier by using the **Add financial dimensions for OData** add-in in Visual Studio.
+It's easier to modify the **DimensionCombinationEntity** by using the **Add financial dimensions for OData** add-in in Visual Studio.
 
 1. In Microsoft Visual Studio, select **Dynamics 365 > Addins > Add financial dimensions for Odata.**
 1. After clicking **Add financial dimensions for Odata**, use the wizard to add the financial dimensions.

@@ -86,12 +86,9 @@ The only value that's present on Microsoft Excel templates after installation is
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![Relation properties in Visual Studio.](./media/lookupwiki.png)
+    :::image type="content" source="./media/lookupwiki.png" alt-text="Screenshot of relation properties in Visual Studio.":::
 
 1. Build the project and then synchronize it with the database.
-
-> [!NOTE]
-> The lookup control in Excel is limited to 999 items. Use the filtering capabilities to narrow results rather than scrolling through all possible values.
 
 ## Additional resources
 

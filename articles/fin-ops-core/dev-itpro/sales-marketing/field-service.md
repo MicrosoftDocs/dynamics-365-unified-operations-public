@@ -4,7 +4,7 @@ description: Learn about the Integration with Microsoft Dynamics 365 Field Servi
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
-ms.date: 12/02/2025
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -25,7 +25,7 @@ Standard templates can be used to create custom integration projects, where more
 
 The field service integration builds on top of the existing prospect-to-cash functionality.
 
-![Synchronization of business processes between Supply Chain Management and Field Service.](../../../supply-chain/sales-marketing/media/field-service-integration.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/field-service-integration.png" alt-text="Screenshot of synchronization of business processes between Supply Chain Management and Field Service.":::
 
 The first phase  of the integration between Field Service and Supply Chain Management is focused on enabling work orders and agreements in Field Service to be invoiced in Supply Chain Management. The supported flow starts in Field Service, where information from work orders is synchronized to Supply Chain Management as sales orders. In Supply Chain Management, the sales orders are invoiced to generate invoice documents. In addition, the information from Field Service agreement invoices is synchronized to Supply Chain Management. The Microsoft Dynamics 365 Data Integrator synchronizes data by using customizable projects. Standard templates can be used to create custom integration projects where more standard and custom columns, and also tables, can be mapped to adjust the integration and meet specific requirements.
 
@@ -50,7 +50,7 @@ The functionality in this second phase focused on giving field technicians insig
 - Supply Chain Management projects connected with Dynamics 365 Field Service work orders
 - Dynamics 365 Field Service work orders with link to Supply Chain Management projects, apply this project number to the sales order to allow invoicing from the project.
 
-![Synchronization of business processes between Supply Chain Management and Field Service, including inventory and project information.](../../../supply-chain/sales-marketing/media/FSv2overview.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/FSv2overview.png" alt-text="Screenshot of synchronization of business processes between Supply Chain Management and Field Service, including inventory and project information.":::
 
 ### The second phase of the integration between Field Service and Supply Chain Management enables synchronization with the following templates
 

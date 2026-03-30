@@ -6,22 +6,20 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/13/2024
+ms.date: 03/19/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39
 ---
-
 # Create a SharePoint connection
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-The Electronic Invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that Electronic invoicing can access a specific SharePoint site, you must provide the site credentials to the Electronic Invoicing service. Additionally, to ensure that the credentials are securely stored, don't provide them directly. Instead, store them in an Azure Key Vault, and provide a Key Vault secret.
+The Electronic Invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that the Electronic Invoicing service can access a specific SharePoint site, you must provide the site credentials to the Electronic Invoicing service. To ensure secure storage of the credentials, don't provide them directly. Instead, store them in an Azure Key Vault, and provide a Key Vault secret.
 
 ## Grant access to a SharePoint folder
 
-1. Create an app registration in the tenant where the Dynamics 365 Finance environment is installed.
+1. Create an app registration in the tenant where you installed the Dynamics 365 Finance environment.
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
     1. Go to **App registrations**.
@@ -30,7 +28,7 @@ The Electronic Invoicing service can read files from Microsoft SharePoint folder
     1. Select the new app registration.
     1. On the **Authentication** tab, enable the **Allow public client flows** option.
     1. On the **Certificates & secrets** tab, select **New client secret** to create a client secret.
-    1. Copy the value of the secret that was created.
+    1. Copy the value of the secret that you created.
 
     Follow these guidelines:
 
@@ -40,15 +38,15 @@ The Electronic Invoicing service can read files from Microsoft SharePoint folder
 
 1. Save the **App Registration secret** and **Application (client) ID** values as two new secrets in the key vault in the setup of your Electronic invoicing parameters.
 1. Add the secrets that you created to the Key Vault parameters in the setup of your Electronic invoicing parameters. For more information, see [Configure Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
-1. In the Azure portal, grant access to SharePoint. This step should be completed by the tenant administrator.
+1. In the Azure portal, grant access to SharePoint. The tenant administrator should complete this step.
 
     1. Select the app registration that you created.
     1. On the **API permissions** tab, select **Add a permission**.
-    1. Select **Microsoft graph (Application permissions)** \> **Sites.Selected**.
+    1. Select **Microsoft graph (Application permissions)** > **Sites.Selected**.
     1. Select **Grant admin consent for \<*user&nbsp;name*\>**.
     1. Review the **Status** field to make sure that permissions are granted.
 
-        ![Screenshot that shows permissions granted on the API permissions tab.](../media/configured-permissions.jpg)
+        :::image type="content" source="../media/configured-permissions.jpg" alt-text="Screenshot that shows permissions granted on the API permissions tab.":::
 
     1. Open [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), and sign in.
     1. In the left pane, on the **Sample queries** tab, under **SharePoint Sites**, select **get SharePoint site based on relative path of the site**.
@@ -85,9 +83,11 @@ The Electronic Invoicing service can read files from Microsoft SharePoint folder
 
         In this request body, **\{app-id\}** is the **Application (client) ID** value, and **\{app-name\}** is the **Application name** value.
 
-        ![Screenshot of the POST query.](../media/app-id-query.jpg)
+        :::image type="content" source="../media/app-id-query.jpg" alt-text="Screenshot of the POST query.":::
 
-    1. On the **Modify permissions** tab, select **Open the permissions panel**, and then select **Sites** \> **Sites.FullControl.All** \> **Consent**.
+    1. On the **Modify permissions** tab, select **Open the permissions panel**, and then select **Sites** > **Sites.FullControl.All** > **Consent**.
     1. Select **Run query**.
 
 The Electronic Invoicing service now has access to your SharePoint site.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

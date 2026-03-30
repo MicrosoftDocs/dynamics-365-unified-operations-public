@@ -4,7 +4,7 @@ description: Learn about how to use commands with the Acceptance test library, i
 author: MichaelFruergaardPontoppidan
 ms.author: mfp
 ms.topic: article
-ms.date: 03/27/2019
+ms.date: 03/16/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-Command classes are responsible for running business operations. They let you use fluent application programming interfaces (APIs) to set the parameters of these operations.
+Command classes run business operations. Use fluent APIs to set the parameters for these operations.
 
 ## Naming convention
 
@@ -25,9 +25,9 @@ Command classes are responsible for running business operations. They let you us
 
 In this naming convention:
 
-+ `<ModuleName>` is based on the names of the modules on the main menu. You should use a short version or an abbreviation to support brevity of test code.
-+ `<EntityName>` is optional and is used when the command applies to different types of entities.
-+ `<ExecuteBusinessOperation>` is a verb that represents the name of the business operation.
++ Use a short version or abbreviation of the module name from the main menu for `<ModuleName>`. This choice keeps your test code brief.
++ Use `<EntityName>` when the command applies to different types of entities. This part is optional.
++ Use a verb for `<ExecuteBusinessOperation>` that clearly represents the business operation.
 
 ## Examples
 
@@ -39,9 +39,9 @@ AtlCommandSalesReturnOrderLineRegister
 
 ## Implementation
 
-Command objects that are returned should implement the `AtlICommand` interface and should inherit from the `AtlCommand` class.
+Return command objects that implement the `AtlICommand` interface and inherit from the `AtlCommand` class.
 
-Command objects should provide fluent setter methods that are used to set the parameters of the command.
+Command objects should provide fluent setter methods to set the command parameters.
 
 ### Example
 
@@ -51,15 +51,15 @@ salesLine.pick().setInventDims([locationOut]).setQty(pickedQty).execute();
 
 ## Fluent setter methods
 
-Commands allow for two types of fluent setter methods, `for` methods and `set` methods:
+Commands support two types of fluent setter methods: `for` methods and `set` methods.
 
-+ **for** – These methods are used for command parameters that represent the entities that the command applies to.
++ **for** – Use these methods for command parameters that represent the entities that the command applies to.
 
-    For example, the invoice command can apply to sales orders. Therefore, a `for` method is used to set the sales order that the invoice command applies to.
+    For example, the invoice command can apply to sales orders. Therefore, use a `for` method to set the sales order that the invoice command applies to.
 
-+ **set** – These methods are used for all other parameters of the command. 
++ **set** – Use these methods for all other parameters of the command. 
 
-    For example, when you reserve a sales line, you usually specify a quantity. The quantity isn't something that the command applies to but is instead a simple parameter of the command. Therefore, a `set` method is used to specify the quantity parameter of the reservation command.
+    For example, when you reserve a sales line, you usually specify a quantity. The quantity isn't something that the command applies to but is instead a simple parameter of the command. Therefore, use a `set` method to specify the quantity parameter of the reservation command.
 
 ### Naming convention
 
@@ -67,7 +67,7 @@ Commands allow for two types of fluent setter methods, `for` methods and `set` m
 
 `set<CommandParameterName>`
 
-In this naming convention, `<CommandParameterName>` is the name of the parameter that is being set for the command by using the fluent method.
+In this naming convention, `<CommandParameterName>` is the name of the parameter that the fluent method sets for the command.
 
 ### Examples
 

@@ -4,7 +4,7 @@ description: Access links to the release plans, major announcements, and more fo
 author: laneswenka
 ms.author: laswenka
 ms.topic: whats-new
-ms.date: 06/30/2020
+ms.date: 03/06/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.8
 # What's new or changed in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and their partners can use to manage projects from pre-sales through implementation and operations. LCS provides checklists and tools to help you manage your project, based on the phase of the project and the industry that you're working in. It also provides a dashboard, so that you have a single location where you can obtain up-to-date project information.
 

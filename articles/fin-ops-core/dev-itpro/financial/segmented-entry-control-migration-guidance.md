@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
@@ -20,73 +20,74 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
-The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**)</em>. Any property that was previously manipulated or called on the controller must now be called on the control. 
+The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**)</em>. Any property that was previously manipulated or called on the controller must now be called on the control.
 
 **Notes:**
 
--   Some APIs have naming differences between the controller and the control. The following table lists these APIs.
+- Some APIs have naming differences between the controller and the control. The following table lists these APIs.
 
     | Controller method (old) | Control method (new) |
     |-------------------------|--------------------|
-    | parmDate | parmControlDate | 
-    | parmFilterLedgerPostingType | parmPostingType| 
-    | parmDimensionAccountStorageUsage | parmDimensionAccountStorageUsageType | 
-    
--   **Example**
-    -   **Before:** controller.parmDate(systemDateGet())
-    -   **After:** LedgerAccount.parmControlDate(systemDateGet());
+    | parmDate | parmControlDate |
+    | parmFilterLedgerPostingType | parmPostingType|
+    | parmDimensionAccountStorageUsage | parmDimensionAccountStorageUsageType |
+
+- **Example**
+  - **Before:** controller.parmDate(systemDateGet())
+  - **After:** LedgerAccount.parmControlDate(systemDateGet());
 
     In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance.
--   In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller. 
+- In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller.
 
--   **Example**
-    -   **Before:**
+- **Example**
+  - **Before:**
 
-        ```xpp
-        Public void jumpRef()
-        {
-            ledgerDimensionDefaultAccountcontroller.jumpRef();
-        }
-        ```
+    ```xpp
+    Public void jumpRef()
+    {
+        ledgerDimensionDefaultAccountcontroller.jumpRef();
+    }
+    ```
 
-    -   **After:**
+  - **After:**
 
-        ```xpp
-        Public void jumpRef()
-        {
-            segmentedEntryControl1.jumpRef();
-            segmentedEntryControl2.jumpRef();
-        }
-        ```
+    ```xpp
+    Public void jumpRef()
+    {
+        segmentedEntryControl1.jumpRef();
+        segmentedEntryControl2.jumpRef();
+    }
+    ```
 
     These changes are made so that it's easier to copy and paste code that must be moved elsewhere (for example, in some instances of **loadSegments()** and other such methods). You can ignore this change when you decide whether the method can be deleted. Your decision should depend on whether the method has any custom logic.
--   The code upgrade script does not handle cases where a controller is instantiated within a method. These cases must be migrated manually.
--   The MRU functionality from Microsoft Dynamics AX 2012 has been removed in Dynamics AX and won't be replaced.
--   **parmTaxCode** has been removed. There is no replacement.
+- The code upgrade script does not handle cases where a controller is instantiated within a method. These cases must be migrated manually.
+- The MRU functionality from Microsoft Dynamics AX 2012 has been removed in Dynamics AX and won't be replaced.
+- **parmTaxCode** has been removed. There is no replacement.
 
 ## Properties
-The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example. 
 
-![custom properties for the Segmented Entry control.](./media/111.png)
+The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example.
+
+:::image type="content" source="./media/111.png" alt-text="Screenshot of custom properties for the Segmented Entry control.":::
 
 Not all properties apply to all **Controller** class types. Properties that don't apply to a selected controller class will be disabled. The following table provides details about the properties.
 
 | Property           | Valid values      | Usage           |
 |-------------------------|--------------------|--------------------|
-| Account Type Field | A field from the datasource. | Determines the type of account used. Typically utilized for journal entry from a multi-segment ledger account to single segment values from other backing tables such as Cust, Vend, Bank, Project and similar. | 
-| Controller Class | One of 6 Controller classes. For example, LedgerDimensionDefaultAccountController. | Determines the pattern and behavior of the Segmented Entry control. More information about this property is provided below. | 
-| Include Financial Accounts | NoYes | Determines if Main accounts that are Financial accounts are valid for use. | 
-| Include Total Accounts | NoYes | Determines if Main accounts of type Total are valid for use. | 
-| Is Default Account | TrueFalse | For a Dynamic account, determines if the account should be a default or full account. | 
-| Lock Main Account Segment | NoYes | Controls whether the Main account segment is locked. Typically used in journals and distributions based upon configuration. | 
-| Posting Type | A value from the LedgerPostingType enumeration. | The Main account is validated to see if the posting type is allowed to be used with that account. | 
-| Validate Blocked For Manual Entry | NoYes | Determines if the 'Blocked for Manual Entry' status on the dimension should be respected or not. | 
-
+| Account Type Field | A field from the datasource. | Determines the type of account used. Typically utilized for journal entry from a multi-segment ledger account to single segment values from other backing tables such as Cust, Vend, Bank, Project and similar. |
+| Controller Class | One of 6 Controller classes. For example, LedgerDimensionDefaultAccountController. | Determines the pattern and behavior of the Segmented Entry control. More information about this property is provided below. |
+| Include Financial Accounts | NoYes | Determines if Main accounts that are Financial accounts are valid for use. |
+| Include Total Accounts | NoYes | Determines if Main accounts of type Total are valid for use. |
+| Is Default Account | TrueFalse | For a Dynamic account, determines if the account should be a default or full account. |
+| Lock Main Account Segment | NoYes | Controls whether the Main account segment is locked. Typically used in journals and distributions based upon configuration. |
+| Posting Type | A value from the LedgerPostingType enumeration. | The Main account is validated to see if the posting type is allowed to be used with that account. |
+| Validate Blocked For Manual Entry | NoYes | Determines if the 'Blocked for Manual Entry' status on the dimension should be respected or not. |
 
 ## Controller class property
+
 The following table provides details about each controller.
 
-| Controller           | Details      | 
+| Controller           | Details      |
 |-------------------------|--------------------|
 | BudgetLedgerDimension | This Controller provides budget based support for data entry in the Segmented Entry control. When using this controller, an Account Structure must be provided to the Segmented Entry control. |
 | BudgetPlanningLedgerDimension | This Controller provides budget planning based support for data entry in the Segmented Entry control. When using this controller, an Account Structure must be provided to the Segmented Entry control. |
@@ -101,22 +102,22 @@ The following table provides details about each controller.
 
 #### AX 2012
 
-If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**. 
+If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**.
 
-[![SegmentedEntry control type.](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+:::image type="content" source="./media/segmentmigrate01.png" alt-text="Screenshot of SegmentedEntry control type." lightbox="./media/segmentmigrate01.png":::
 
 #### Dynamics AX
 
-An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control. 
+An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control.
 
-> [!NOTE] 
-> To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. 
+> [!NOTE]
+> To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**.
 
-[![New SegmentedEntryControl.](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
+:::image type="content" source="./media/segmentmigrate02-623x1024.png" alt-text="Screenshot of New SegmentedEntryControl." lightbox="./media/segmentmigrate02.png":::
 
-The following screen shot shows how new control will look. 
+The following screen shot shows how new control will look.
 
-[![New control in list.](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+:::image type="content" source="./media/segmentmigrate03.png" alt-text="Screenshot of new control in list." lightbox="./media/segmentmigrate03.png":::
 
 ### Step 2
 
@@ -321,10 +322,10 @@ public void onSegmentChanged(DimensionControlSegment _segment)
 
 **Notes:**
 
--   To add the **onSegmentChanged()** method, follow these steps:
-    1.  Expand the **Segmented Entry** control to add the method to.
-    2.  Right-click the **Methods** node, and then select **Override** &gt; **onSegmentChanged**.
--   The new method doesn't have to call **super()** or any other method on either the control or the controller.
+- To add the **onSegmentChanged()** method, follow these steps:
+    1. Expand the **Segmented Entry** control to add the method to.
+    1. Right-click the **Methods** node, and then select **Override** &gt; **onSegmentChanged**.
+- The new method doesn't have to call **super()** or any other method on either the control or the controller.
 
 ### Step 9
 
@@ -520,7 +521,7 @@ public void active()
 }
 ```
 
-> [!NOTE] 
+> [!NOTE]
 > After all the code has been moved out of the **gotFocus()** method, you can delete the method.
 
 ### Step 14
@@ -537,13 +538,13 @@ ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountControlle
 
 Set the following properties on the control:
 
--   **Data Source**
--   **Reference Field**
--   **Controller Class**
+- **Data Source**
+- **Reference Field**
+- **Controller Class**
 
-[![Set Controller Class.](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
+:::image type="content" source="./media/segmentmigrate04.png" alt-text="Screenshot of Set Controller Class." lightbox="./media/segmentmigrate04.png":::
 
-[![Set Reference Field.](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
+:::image type="content" source="./media/segmentmigrate05.png" alt-text="Screenshot of Set Reference Field." lightbox="./media/segmentmigrate05.png":::
 
 > [!NOTE]
 > A controller class is required for the control to work. Therefore, a run-time error will be thrown if the **Controller Class** property isn't set.
@@ -595,9 +596,9 @@ ledgerDimensionDefaultAccountController.parmFilterLedgerPostingType(LedgerPostin
 
 #### Dynamics AX
 
-This is the **Posting Type** property on the control. The control that the **PostingType** property must be set on can be determined from the mapping details that are derived by looking at the **parmControl()** call. 
+This is the **Posting Type** property on the control. The control that the **PostingType** property must be set on can be determined from the mapping details that are derived by looking at the **parmControl()** call.
 
-[![Posting Type property.](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
+:::image type="content" source="./media/segmentmigrate06.png" alt-text="Screenshot of Posting Type property." lightbox="./media/segmentmigrate06.png":::
 
 These properties can also be set in code, through corresponding **parm** methods on the control instance. Here's an example.
 
@@ -609,9 +610,9 @@ ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
 #### AX 2012
 
-Override **resolveReference()** in the data source field for the ledger dimension. 
+Override **resolveReference()** in the data source field for the ledger dimension.
 
-[![resolveReference method.](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
+:::image type="content" source="./media/segmentmigrate07.png" alt-text="Screenshot of resolveReference method." lightbox="./media/segmentmigrate07.png":::
 
 #### Dynamics AX
 
@@ -673,17 +674,17 @@ DimensionDynamicAccountController::construct(ledgerJournalTrans_ds, fieldStr(Led
 
 There are two methods for implementing this functionality. These methods are mutually exclusive, so use only one of them, depending on the situation:
 
--   For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method. 
+- For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method.
 
     > [!NOTE]
     > If the **super()** call has been removed from the **modified()** method for the field that is bound to the **Account Type Field** property, this method won't work. We have seen this issue in some journal forms, such as **LedgerJournalTransDaily**. In such cases, either add the **super()** call back to the **modified()** method, or use the second method.
--   Set the account type manually by calling the **parmAccountTypeEnumValue()** method on the control. Here's an example.
+- Set the account type manually by calling the **parmAccountTypeEnumValue()** method on the control. Here's an example.
 
     ```xpp
     LedgerJournalTrans_AccountNum.parmAccountTypeEnumValue(enum2int(ledgerJournalTrans.AccountType));
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > The call to **parmAccountTypeEnumValue()** must be put in both the data source's **active()** method and the **modified()** method of the field that will provide the account type.
 
 ### Step 23
@@ -726,7 +727,7 @@ LedgerDimensionDefaultAccountController.parmIncludeFinancialAccounts(NoYes::Yes)
 
 #### Dynamics AX
 
-This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. 
+This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control.
 
 > [!NOTE]
 > Because of a framework bug, if you don't set this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
@@ -790,6 +791,7 @@ ToBudgetTransactionLine_LedgerDimension.parmDoValueActiveDatesValidation(false);
 
 ToBudgetTransactionLine_LedgerDimension.parmDoValueSuspendedValidation(false);
 ```
+
 ### Step 28
 
 #### AX 2012
@@ -842,150 +844,148 @@ This method has been deprecated and must not be used. You should delete all call
 
 ### Migrating a Segmented Entry control on a dialog
 
-The uptake pattern for the new **Segmented Entry** control on a dialog has changed in Dynamics AX. Instead of interacting with the controller class API, you must now interact with the **SegmentedEntryControlBuild** class to link the SEC with the dialog. This section shows the code patterns for using SEC on a dialog with different controller types. 
+The uptake pattern for the new **Segmented Entry** control on a dialog has changed in Dynamics AX. Instead of interacting with the controller class API, you must now interact with the **SegmentedEntryControlBuild** class to link the SEC with the dialog. This section shows the code patterns for using SEC on a dialog with different controller types.
 
-> [!NOTE] 
+> [!NOTE]
 > Help text is no longer required in Dynamics AX, so you don't have to set the Help text on dialog fields.
 
--   **Dynamic account:**
-    -   **Before:**
+- **Dynamic account:**
+  - **Before:**
 
-        ```xpp
-        // Creating the dialog field for the SEC
-        dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
-        dialogDynamicAccount = _dialog.addFieldValue(extendedTypeStr(LedgerDimensionBase), defaultOffsetLedgerDimension, "@SYS115166", "@SYS115167");
-        dimensionDynamicAccountController = DimensionDynamicAccountController::constructForDialog(dialogDynamicAccount, dialogDynamicAccountType, enumStr(LedgerJournalACTypeForPaymProposal));
-                    dimensionDynamicAccountController.parmIsDefaultAccount(true);
+    ```xpp
+    // Creating the dialog field for the SEC
+    dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
+    dialogDynamicAccount = _dialog.addFieldValue(extendedTypeStr(LedgerDimensionBase), defaultOffsetLedgerDimension, "@SYS115166", "@SYS115167");
+    dimensionDynamicAccountController = DimensionDynamicAccountController::constructForDialog(dialogDynamicAccount, dialogDynamicAccountType, enumStr(LedgerJournalACTypeForPaymProposal));
+                dimensionDynamicAccountController.parmIsDefaultAccount(true);
 
-        public void dialogPostRun(DialogRunBase _dialog)
+    public void dialogPostRun(DialogRunBase _dialog)
+    {
+    …
+
+    dialogDynamicAccountType.registerOverrideMethod('modified', 'accountType_Modified', this);
+
+    ...
+    }
+
+    private boolean accountType_Modified(FormComboBoxControl _formComboBoxControl)
+    {
+        boolean valueWasModified;
+
+        valueWasModified = _formComboBoxControl.modified();
+        if (valueWasModified)
         {
+            dialogDynamicAccount.value(0);
+        }
+
+        return valueWasModified;
+    }
+    ```
+
+  - **After:**
+
+    ```xpp
+    // Creating the dialog field for the SEC
+    protected Object dialog()
+    {
+    ...        
+
+    // Create the account type dialog field
+    dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
+    // Create the SEC dialog field
+    dialogDynamicAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(DimensionDynamicAccountControl), extendedTypeStr(LedgerDimensionBase), "@SYS115166", defaultOffsetLedgerDimension);
+
+    // Provide account type information for the SEC field
+    SegmentedEntryControlBuild::initDialogFieldAccountType(dialogDynamicAccount, enumStr(LedgerJournalACTypeForPaymProposal) , defaultOffsetAccountType);
+    // Set additional parameters on the SEC dialog field
+    SegmentedEntryControlBuild segmentedEntryControlBuild = dialogDynamicAccount.control(); 
+    segmentedEntryControlBuild.parmIsDefaultAccount(true);
+
         …
-
-        dialogDynamicAccountType.registerOverrideMethod('modified', 'accountType_Modified', this);
-
-        ...
         }
 
-        private boolean accountType_Modified(FormComboBoxControl _formComboBoxControl)
-        {
-            boolean valueWasModified;
+    // Override for modified method of the Account type checkbox to update the SEC when account type is changed
+    public int accountType_selectionChange(FormComboBoxControl _formComboBoxControl)
+    {
+    SegmentedEntryControl secDDAC = dialogDynamicAccount.control();
+    accountType = _formComboBoxControl.selection();
 
-            valueWasModified = _formComboBoxControl.modified();
-            if (valueWasModified)
-            {
-                dialogDynamicAccount.value(0);
-            }
+    // This is the backing variable used to pack the account specified via the SEC
+    ledgerDimensionDynamicAccount = 0; 
+    // Clear the SEC value
+    secDDAC.clearReference();                     
 
-            return valueWasModified;
-        }
-        ```
+    // Specify the new account type to the SEC; this is an additional step needed for the AX SEC
+    secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
 
-    -   **After:**
+    return true;
+    }
 
-        ```xpp
-        // Creating the dialog field for the SEC
-        protected Object dialog()
-        {
-        ...        
+    // Set default account type based on value read from SysLastValue
+    public void dialogPostRun(DialogRunBase _dialog)
+    {
+    …
+    // Default any previously saved account type info
+    secDDAC = dialogDynamicAccount.control();
+    secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
+    ….
+    }
+    ```
 
-        // Create the account type dialog field
-        dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
-        // Create the SEC dialog field
-        dialogDynamicAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(DimensionDynamicAccountControl), extendedTypeStr(LedgerDimensionBase), "@SYS115166", defaultOffsetLedgerDimension);
+- **Ledger account:**
+  - **Before:**
 
-        // Provide account type information for the SEC field
-        SegmentedEntryControlBuild::initDialogFieldAccountType(dialogDynamicAccount, enumStr(LedgerJournalACTypeForPaymProposal) , defaultOffsetAccountType);
-        // Set additional parameters on the SEC dialog field
-        SegmentedEntryControlBuild segmentedEntryControlBuild = dialogDynamicAccount.control(); 
-        segmentedEntryControlBuild.parmIsDefaultAccount(true);
+    ```xpp
+    dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703", "@SYS85534");
+    ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
+    ```
 
-        …
-        }
+  - **After:**
 
-        // Override for modified method of the Account type checkbox to update the SEC when account type is changed
-        public int accountType_selectionChange(FormComboBoxControl _formComboBoxControl)
-        {
-        SegmentedEntryControl secDDAC = dialogDynamicAccount.control();
-        accountType = _formComboBoxControl.selection();
+    ```xpp
+    DialogField dialogLedgerAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionAccountControl), extendedTypeStr(LedgerDimensionAccount), "@SYS119703", feeLedgerDimension);
+    ```
 
-        // This is the backing variable used to pack the account specified via the SEC
-        ledgerDimensionDynamicAccount = 0; 
-        // Clear the SEC value
-        secDDAC.clearReference();                     
+- **Default account:**
+  - **Before:**
 
-        // Specify the new account type to the SEC; this is an additional step needed for the AX SEC
-        secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
+    ```xpp
+    dialogInterCompanyLedgerDimension = dialog.addFieldValue(extendedTypeStr(LedgerDimensionDefaultAccount),interCompanyLedgerDimension, "@SYS21687", "@SYS85534");
+    ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountController::constructForDialog(dialogInterCompanyLedgerDimension);
+    ```
 
-        return true;
-        }
+  - **After:**
 
-        // Set default account type based on value read from SysLastValue
-        public void dialogPostRun(DialogRunBase _dialog)
-        {
-        …
-        // Default any previously saved account type info
-        secDDAC = dialogDynamicAccount.control();
-        secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
-        ….
-        }
-        ```
+    ```xpp
+    DialogField dialogDefaultAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionDefaultAccountControl), extendedTypeStr(LedgerDimensionDefaultAccount), "@SYS21687", interCompanyLedgerDimension);
+    ```
 
--   **Ledger account:**
-    -   **Before:**
+- **Budget:**
+  - **Before:** No uptake of the **Budget** controller (**BudgetLedgerDimensionController**) for a dialog scenario was found in the existing program source code.
+  - **After:**
 
-        ```xpp
-        dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703", "@SYS85534");
-        ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
-        ```
-
-    -   **After:**
-
-        ```xpp
-        DialogField dialogLedgerAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionAccountControl), extendedTypeStr(LedgerDimensionAccount), "@SYS119703", feeLedgerDimension);
-        ```
-
--   **Default account:**
-    -   **Before:**
-
-        ```xpp
-        dialogInterCompanyLedgerDimension = dialog.addFieldValue(extendedTypeStr(LedgerDimensionDefaultAccount),interCompanyLedgerDimension, "@SYS21687", "@SYS85534");
-        ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountController::constructForDialog(dialogInterCompanyLedgerDimension);
-        ```
-
-    -   **After:**
-
-        ```xpp
-        DialogField dialogDefaultAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionDefaultAccountControl), extendedTypeStr(LedgerDimensionDefaultAccount), "@SYS21687", interCompanyLedgerDimension);
-        ```
-
--   **Budget:**
-    -   **Before:** No uptake of the **Budget** controller (**BudgetLedgerDimensionController**) for a dialog scenario was found in the existing program source code.
-    -   **After:**
-
-        ```xpp
-        DialogField dialogBudget = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudget), 'Budget', ledgerDimensionBudget);
-        ```
+    ```xpp
+    DialogField dialogBudget = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudget), 'Budget', ledgerDimensionBudget);
+    ```
 
     **Notes:**
-    -   The new API lets you specify the label (**Budget** in the preceding example) while you set up the dialog field.
-    -   The default value for the control is specified via the **ledgerDimensionBudget** variable.
-    -   You must specify the account structure that should be used with the **Budget** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
--   **Budget planning:**
-    -   **Before:** No uptake of the **Budget planning** controller (**BudgetPlanningLedgerDimensionController**) for a dialog scenario was found in the existing program source code.
-    -   **After:**
+  - The new API lets you specify the label (**Budget** in the preceding example) while you set up the dialog field.
+  - The default value for the control is specified via the **ledgerDimensionBudget** variable.
+  - You must specify the account structure that should be used with the **Budget** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
+- **Budget planning:**
+  - **Before:** No uptake of the **Budget planning** controller (**BudgetPlanningLedgerDimensionController**) for a dialog scenario was found in the existing program source code.
+  - **After:**
 
-        ```xpp
-        DialogField dialogBudgetPlanning = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetPlanningLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudgetPlanning), 'Budget planning', ledgerDimensionBudgetPlanning);
-        ```
-        
+    ```xpp
+    DialogField dialogBudgetPlanning = SegmentedEntryControlBuild::addToDialog(dialog, classstr(BudgetPlanningLedgerDimensionControl), extendedTypeStr(LedgerDimensionBudgetPlanning), 'Budget planning', ledgerDimensionBudgetPlanning);
+    ```
+
     **Notes:**
-    -   The new API lets you specify the label (**Budget planning** in the preceding example) while you set up the dialog field.
-    -   The default value for the control is specified via the **ledgerDimensionBudgetPlanning** variable.
-    -   You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
-
+  - The new API lets you specify the label (**Budget planning** in the preceding example) while you set up the dialog field.
+  - The default value for the control is specified via the **ledgerDimensionBudgetPlanning** variable.
+  - You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
 
 ## Additional resources
-
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
@@ -994,10 +994,5 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
 [Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
-
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
