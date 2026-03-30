@@ -111,7 +111,7 @@ The following table describes the keyboard shortcuts that can be used when the l
 
 ## Copy and paste limitations
 
-Copy and paste isn't supported for Account and Offset Account columns in General Journal lines. These columns use segmented entry controls that validate each dimension segment separately, which isn't compatible with standard paste operations. This is a known limitation.
+Copy and paste isn't supported for Account and Offset Account columns in General Journal lines. These columns use segmented entry controls that validate each dimension segment separately, which isn't compatible with standard paste operations.
 
 If you need to enter account and dimension values in bulk, use one of the following alternatives:
 
