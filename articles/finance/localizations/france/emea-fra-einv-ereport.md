@@ -435,12 +435,13 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
   - UBL Sales e-credit note (FR)
   - UBL Project e-invoice (FR)
   - UBL Project e-credit note (FR)
+  - Vendor invoice import
   - Vendor invoice import Edicom (FR)
-  - Vendor invoice Mapping to destination (FR)
+  - Vendor invoice Mapping to destination
   - Invoice status model mapping
-  - Invoice status base format
-  - Payment confirmation format
-  - Rejection format
+  - Edicom invoice status format
+  - Edicom invoice status payment confirmation format
+  - Edicom invoice status reject format
 - Customer invoice context model
   - Import invoice context model
   - Import response context
@@ -452,6 +453,8 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
   - Edicom Response status parsing format(FR)
   - Edicom Response Invoice Status (FR)
   - Edicom Response Processing (FR)
+  - Edicom response error log import
+  - Edicom Response message status fromat
 
 ## More information
 
