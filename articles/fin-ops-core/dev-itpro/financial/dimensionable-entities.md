@@ -1,8 +1,8 @@
 ---
 title: Make backing tables consumable as financial dimensions
 description: Learn about the steps that you need to follow to make a backing table usable as a Financial dimension, including code examples.
-author: twheeloc
-ms.author: twheeloc
+author: ethanrimes
+ms.author: ethankallett
 ms.topic: how-to
 ms.date: 03/27/2026
 ms.reviewer: twheeloc
@@ -37,9 +37,10 @@ Examples of highly variable data include timestamps and identifiers that are fre
 - Tickets
 - License numbers
 
-These are considered highly variable values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
+These values are highly variable and shouldn't be used as financial dimensions. The correct use is to implement these values as financial tags. For more information about financial tags, see [Financial tags](/dynamics365/finance/general-ledger/financial-tag).
 
-By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
+> [!NOTE]
+> The **DimensionFinancialTag** table stores values for custom financial dimensions that aren't backed by an existing system table. It isn't related to the **FinTag** table, which stores financial tag data. Despite the similar naming, these two features are separate with no overlap in data or behavior.
 
 > [!NOTE]
 > If the **OMOperatingUnit** table backs your dimension, many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
