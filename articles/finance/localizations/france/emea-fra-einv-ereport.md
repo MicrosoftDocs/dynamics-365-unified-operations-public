@@ -84,33 +84,16 @@ After you complete all the configuration steps described in the previous chapter
 
 ## Import the electronic invoicing feature
 
-1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest version of the **French electronic invoice (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, confirm that the following Electronic reporting configurations are imported as a result of the **French electronic invoice (FR)** globalization feature import.
+1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest versions of the following globalization features as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+   - **French electronic invoice (FR)**
+   - **French electronic invoice response (FR)**
+  
+1. All the required Electronic Reporting configurations will be automatically imported as a result of the globalization features import. You can review imported Electronic Reporting configurations in the **Electronic reporting** workspace, on the **Reporting configurations** tile. The full list of the required Electronic Reporting configurations can be found in the **[List of Electronic Reporting configurations](#ERconfigs)** section of the **Appendix** chapter.
+> [!NOTE]
+> If some of the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-    - **Invoice model**
-    - **Invoice model mapping**
-    - **UBL Sales e-invoice (FR)**
-    - **UBL Sales e-credit note (FR)**
-    - **UBL Project e-invoice (FR)**
-    - **UBL Project e-credit note (FR)**
-    - **Edicom life cycle status format (FR)**
-    - **Customer invoice context model**
-    - ...
-
-    > [!NOTE]
-    > If the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
-
-1. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, import the latest versions of the following Electronic reporting configurations to receive incoming vendor invoices and to update submitted documents statuses.
-
-    - **Vendor invoice import Edicom (FR)**
-    - **Vendor invoice Mapping to destination (FR)**
-    - **Import invoice context model**
-    - **Import invoice status query**
-    - **Export invoice context model**
-    - ...
-
-     > [!IMPORTANT]
-    > Make sure that the **Vendor invoice Mapping to destination (FR)** Electronic Reporting configuration is marked as **Default for model mapping**.
+> [!IMPORTANT]
+> Make sure that the **Response message model mapping to destination** Electronic Reporting configuration is marked as **Default for model mapping**.
     
 ## Configure the electronic invoicing feature
 
@@ -444,7 +427,7 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 
 ## Appendix
 
-### List of Electronic Reporting configurations
+### <a id="ERconfigs"></a>List of Electronic Reporting configurations
 
 - Invoice model
   - Invoice model mapping
