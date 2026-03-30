@@ -95,9 +95,9 @@ After you complete all the configuration steps described in the previous chapter
 > [!IMPORTANT]
 > Make sure that the **Response message model mapping to destination** Electronic Reporting configuration is marked as **Default for model mapping**.
     
-## Configure the electronic invoicing feature
+## Configure the electronic invoicing features
 
-The **French electronic invoice (FR)** feature publishes some parameters with default values. Before you deploy the feature, review the default values and update them so they reflect your business operations.
+The **French electronic invoice (FR)** and **ZZZZZZZZZZZZZZZZZZZZZZZ** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
 
 Review and update the **French electronic invoice (FR)** feature configuration:
 
@@ -113,8 +113,10 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 
 1. Each copy starts as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
-> [!NOTE]
-> While deploying the feature, toggle the **Activate application setup** checkbox in the **APPLICATION** section. In this case, the system will automatically pre-configure the significant part of the **Electronic document parameters** in Finance. You can review and change the preconfigured parameters, as described in the next chapter.
+   > [!NOTE]
+   > While deploying the feature, toggle the **Activate application setup** checkbox in the **APPLICATION** section. In this case, the system will automatically pre-configure the significant part of the **Electronic document parameters** in Finance. You can review and change the preconfigured parameters, as described in the next chapter.
+
+1. Repeat steps 2 till 5 for the **ZZZZZZZZZZZZZZZZZZZZZZZ** feature.
 
 ## Configure electronic document parameters
 
