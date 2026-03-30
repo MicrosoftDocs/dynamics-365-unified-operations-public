@@ -19,10 +19,10 @@ To enable the system to calculate profit and loss figures for each site for your
 
 ## Set up a financial dimension link to a site
 
-Setting up a financial dimension link to a site has the following effects:
+When you set up a financial dimension link to a site, you:
 
-- A financial dimension is associated with the site inventory dimension.
-- A financial dimension value is associated with each site.
+- Associate a financial dimension with the site inventory dimension.
+- Associate a financial dimension value with each site.
 
 To set up a financial dimension link to a site, follow these steps:
 
@@ -31,7 +31,7 @@ To set up a financial dimension link to a site, follow these steps:
 1. In the **Select the dimension to be linked to the storage dimension, Site** field, select the financial dimension to link to the site inventory dimension.
 1. On the Action Pane, select **Sites** to open the **Sites** page.
 1. On the list pane, select the site you want to link the financial dimension to.
-1. Expand the **Financial dimensions** FastTab. The financial dimension that you selected in the previous page is shown here under the **Default financial dimensions** heading.
+1. Expand the **Financial dimensions** FastTab. The financial dimension that you selected in the previous page appears under the **Default financial dimensions** heading.
 1. From the drop-down list under the **Default financial dimensions** heading, select the financial dimension value that you want to associate with the selected site.
 1. Repeat steps 5 to 7 for each site.
 1. When you're done, select **Save**.
@@ -56,7 +56,7 @@ To activate a financial dimension link, follow these steps:
 
 ## Lock a financial dimension link
 
-Locking a financial dimension link has the following effects:
+When you lock a financial dimension link, the following effects take place:
 
 - New inventory transactions that use both inventory dimensions and financial dimensions get a financial dimension value based on the value specified for the site.
 - You can post transactions that use both inventory dimensions and financial dimensions only when the dimension value of the linked financial dimension matches the value specified for the site.
@@ -74,7 +74,7 @@ To lock a financial dimension link, follow these steps:
 
 ## Unlock a financial dimension link
 
-You can unlock locked financial dimension links. Unlocking a link allows you to complete these tasks:
+You can unlock locked financial dimension links. When you unlock a link, you can complete these tasks:
 
 - Post transactions that use both inventory dimensions and financial dimensions, even if the dimension value of the linked financial dimension doesn't match the value that is specified for the site.
 - Modify the dimension value of the linked financial dimension on open transactions that use both financial dimensions and inventory dimensions.
