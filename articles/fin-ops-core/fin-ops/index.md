@@ -71,7 +71,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="../../finance/general-ledger/general-ledger.md">General ledger</a></p>
 <p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Project management</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Public sector</a></p>
-<p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
+<p><a href="lcs/globalization-resources.md">Regional regulatory features</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
 <p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Employee self service</a></p>

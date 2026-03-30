@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/24/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -15,11 +15,12 @@ ms.custom:
 # Install and set up Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
 > [!TIP]
-> If you're a feature consultant or solution consultant, we recommend that you join the [Inventory Visibility Add-in group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=46697168896), where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
+> If you're a feature consultant or solution consultant, we recommend that you join the [D365 SCM Inventory Management and Inventory Visibility](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3NDgxNTg0NjQifQ) community on Microsoft Viva Engage, where you can read about the latest developments, exchange tips with other consultants and developers, and discuss features.
 >
 > For useful code samples and troubleshooting guides, visit the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples).
 >
@@ -225,7 +226,7 @@ The uninstall process terminates the Inventory Visibility Add-in, unregisters th
 > If you want to continue to use Inventory Visibility in the current environment, we recommend that you don't delete all solutions from your Dataverse environment. If you want to delete all inventory data in Dataverse, we recommend that you use the [delete all inventory data](inventory-visibility-power-platform.md#delete-data) option.
 
 > [!NOTE]
-> If you must delete all solutions that are related to Inventory Visibility, follow these steps.
+> If you must delete all solutions that are related to Inventory Visibility, follow these steps:
 >
 > 1. Open [Power Apps](https://make.powerapps.com).
 > 1. Use the environment picker in the upper right to select the target Dataverse environment.

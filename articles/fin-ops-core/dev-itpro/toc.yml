@@ -15,14 +15,12 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.47 (January 2026)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-47.md
+        - name: Platform updates for version 10.0.46 (October 2025)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-46.md
         - name: Platform updates for version 10.0.45 (September 2025)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-45.md
-        - name: Platform updates for version 10.0.44 (April 2025)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-44.md
-        - name: Platform updates for version 10.0.43 (January 2025)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-43.md
-        - name: Platform updates for version 10.0.42 (December 2024)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-42.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -310,7 +308,17 @@ items:
           - name: Set up and manage archive data in finance and operations apps
             href: sysadmin/archive-setup-manage.md
         - name: Archive customization
-          href: sysadmin/archive-custom.md
+          items: 
+          - name: Archive customization
+            href: sysadmin/archive-custom.md
+          - name: Add custom fields to Microsoft-managed tables
+            href: sysadmin/archive-custom-add-fields.md
+          - name: Add custom tables to standard archive scenarios
+            href: sysadmin/archive-custom-add-tables.md
+          - name: Build your own custom archive scenario
+            href: sysadmin/archive-custom-build-scenario.md
+          - name: Archive table naming reference
+            href: sysadmin/archive-tables-reference.md
         - name: View archive data
           href: sysadmin/archive-view.md
         - name: Archive data scenarios
@@ -455,7 +463,7 @@ items:
             href: ../fin-ops/deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
-        - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
+        - name: Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects
           href: deployment/arm-onbarding-us-goverment.md
         - name: Azure ExpressRoute and finance and operations
           href: deployment/expressroute.md
@@ -503,7 +511,7 @@ items:
             href: migration-upgrade/on-prem-version-update-policy.md
         - name: Set up and deploy on-premises environments
           items: 
-          - name: Set up on-premises projects in LCS
+          - name: Set up on-premises projects in Lifecycle Services
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
           - name: Set up and deploy on-premises environments (Application 10.0.32 and later)
             href: deployment/setup-deploy-on-premises-latest.md
@@ -667,9 +675,9 @@ items:
           href: dev-tools/pipeline-asset-upload.md
         - name: Deploy assets by using Azure Pipelines
           href: dev-tools/pipeline-deploy-asset.md
-        - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
+        - name: Create a Lifecycle Services connection in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection.md
-        - name: Update LCS connection authentication tasks to MSAL in Azure Pipelines
+        - name: Update Lifecycle Services connection authentication tasks to MSAL in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection-update.md
         - name: Update the hosted Azure Pipeline for new NuGet packages
           href: dev-tools/pipeline-nuget-split.md
@@ -1075,17 +1083,19 @@ items:
           href: gdpr/respond-dsr-request-talent.md
         - name: Respond to requests for personal data in AX 2012
           href: gdpr/gdpr-ax2012.md
-        - name: GDPR data requests for LCS
+        - name: GDPR data requests for Lifecycle Services
           href: gdpr/gdpr-lcs.md
     - name: Lifecycle Services
       items:
       - name: Resources for Lifecycle Services
         items:
+        - name: Lifecycle Services project creation freeze
+          href: lifecycle-services/lcs-project-creation-freeze.md
         - name: Lifecycle Services resources
           href: lifecycle-services/lcs.md
-        - name: LCS for customers
+        - name: Lifecycle Services for customers
           href: lifecycle-services/lcs-works-lcs.md
-        - name: LCS for partners
+        - name: Lifecycle Services for partners
           href: lifecycle-services/getting-started-lcs.md
         - name: Supported web browsers
           href: lifecycle-services/web-browsers.md
@@ -1171,38 +1181,12 @@ items:
         href: lifecycle-services/user-logins.md
       - name: Asset library
         href: lifecycle-services/asset-library.md
-      - name: Performance troubleshooting using tools in LCS
+      - name: Performance troubleshooting using tools in Lifecycle Services
         href: lifecycle-services/performancetroubleshooting.md
       - name: Query cookbook
         href: lifecycle-services/querycookbook.md
       - name: Expired subscriptions and data deletion
         href: lifecycle-services/expired-subscription-data-deletion.md
-      - name: Microsoft Dynamics 365 Translation Service
-        items: 
-        - name: What's new in Dynamics Translation Service
-          href: lifecycle-services/dts-announcements.md
-        - name: Dynamics 365 Translation Service overview
-          href: lifecycle-services/translation-service-overview.md
-        - name: Dynamics 365 Translation Service API
-          href: lifecycle-services/dts-api-info.md
-        - name: Dynamics Lifecycle Services API - Authentication
-          href: lifecycle-services/lcs-aad-app-reg.md
-        - name: Translate user interface files
-          href: lifecycle-services/use-translation-service.md
-        - name: Translate documentation files
-          href: lifecycle-services/use-translation-service-ua.md
-        - name: Translation memory files
-          href: lifecycle-services/use-translation-service-tm.md
-        - name: Azure DevOps extension
-          href: lifecycle-services/dts-devops-extension.md
-        - name: Azure DevOps extension tutorial
-          href: lifecycle-services/dts-ado-tutorial.md
-        - name: Visual Studio extension
-          href: lifecycle-services/dts-visual-studio.md
-        - name: Visual Studio Code extension 
-          href: lifecycle-services/dts-vscode-doc.md
-        - name: Dynamics 365 Translation Service Connector
-          href: lifecycle-services/dts-connector-info.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview
@@ -1766,7 +1750,7 @@ items:
       - name: Localization and regulatory features
         items:
         - name: Globalization resources
-          href: ../fin-ops/lcs/country-region.md
+          href: ../fin-ops/lcs/globalization-resources.md
         - name: Classification of localization features
           href: lcs-solutions/classify-localization-features.md
         - name: Apply country/region context
@@ -1869,11 +1853,13 @@ items:
           href: ../fin-ops/sysadmin/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: ../fin-ops/sysadmin/assign-users-security-roles.md
+        - name: Security role duplicate with license filter
+          href: sysadmin/security-role-duplicate-with-license-filter.md
         - name: Security governance 
           items:
             - name: User security governance overview
               href: ../fin-ops/sysadmin/security-gov-overview.md
-            - name: License usage summary report (preview)
+            - name: License usage summary report
               href: ../fin-ops/sysadmin/security-gov-license-usage-summary.md
             - name: Set up security categories
               href: ../fin-ops/sysadmin/security-category.md
@@ -1897,6 +1883,8 @@ items:
               href: ../fin-ops/sysadmin/security-version.md
             - name: Privileged user management
               href: ../fin-ops/sysadmin/priv-user-mgmt.md            
+            - name: Manage device based user access
+              href: ../fin-ops/sysadmin/security-gov-device-based-access.md 
             - name: Available reports for security
               href: ../fin-ops/sysadmin/security-reports.md 
             - name: Security governance faq
@@ -1911,8 +1899,12 @@ items:
           href: sysadmin/extensible-data-security-policies.md
         - name: Create a security policy
           href: sysadmin/create-simple-security-policy.md
-      - name: Stay compliant with user licensing requirements
-        href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: Compliance
+        items:
+        - name: Stay compliant with user licensing requirements
+          href: sysadmin/stay-compliant-user-license-requirement.md
+        - name: Prepare for User validation
+          href: sysadmin/prepare-for-user-validation.md
       - name: View independent software vendor license status
         href: sysadmin/view-isv-license-status.md
       - name: Process automation
@@ -1947,6 +1939,8 @@ items:
           href: sysadmin/alerts.md
         - name: Enhanced batch forms
           href: sysadmin/enhanced-forms.md
+        - name: Batch history logging options
+          href: sysadmin/batch-history-logging-options.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
         - name: Clean up the batch job table
@@ -2337,10 +2331,14 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copilot-generative-help.md
+      - name: Deploy Dynamics 365 agents by using the agent deployment wizard (preview)
+        href: ../dev-itpro/copilot/agent-deployment.md
       - name: Agent management (production ready preview)
         href: ../fin-ops/copilot/agent-mgmt.md
       - name: Immersive Home (production ready preview)
         href: ../fin-ops/copilot/immersive-home.md
+      - name: Agent feed (preview)
+        href: copilot/agent-feed-api.md
       - name: Chat with finance and operations data
         href: copilot/chat-with-fno-data.md
       - name: Enable Copilot capabilities and features
@@ -2355,14 +2353,12 @@ items:
           href: copilot/extend-copilot-generative-help.md
         - name: Enable enhanced user feedback for Copilot and related experiences
           href: copilot/enable-copilot-feedback.md
-      - name: Extending Copilot capabilities in finance and operations apps
+      - name: Building Copilot and agent capabilities
         items:
         - name: Overview
           href: copilot/extend-copilot.md
         - name: Architecture of Copilot for finance and operations
           href: copilot/copilot-architecture.md
-        - name: Use Model Context Protocol for finance and operations
-          href: copilot/copilot-mcp.md
         - name: Using application context with Copilot
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
@@ -2373,6 +2369,16 @@ items:
           href: copilot/copilot-attachments.md
         - name: Customize the zero prompt experience (preview)
           href: copilot/copilot-zero-prompt.md
+        - name: MCP for finance and operations apps
+          items:
+          - name: Use Model Context Protocol for finance and operations
+            href: copilot/copilot-mcp.md
+          - name: Build an agent with Dynamics 365 ERP MCP
+            href: copilot/build-agent-mcp.md
+          - name: Use ERP MCP with Visual Studio Code
+            href: copilot/mcp/mcp-vscode.md
+          - name: Use ERP MCP with Microsoft Foundry
+            href: copilot/mcp/mcp-foundry.md
         - name: Tutorials
           items:
           - name: Extend Copilot capabilities with low-code plugins
@@ -2399,7 +2405,7 @@ items:
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
       - name: Responsible AI FAQ for Immersive Home in finance and operations apps (production ready preview)      
         href: ../fin-ops/copilot/faq-immersive-home.md
-      - name: Responsible AI FAQ for Agent management in finance and operations apps (preview)
+      - name: Responsible AI FAQ for Agent management in finance and operations apps (production ready preview)
         href: ../fin-ops/copilot/faq-agent-mgmt.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md

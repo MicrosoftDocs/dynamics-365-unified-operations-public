@@ -4,7 +4,7 @@ description: Learn how to add the tax and legal information that you can use to 
 author: Fhernandez0088
 ms.author: v-federicohe 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 01/05/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Tax and legal attributes for Latin America
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article explains how to add the tax and legal information that you can use to comply with company and fiscal legislation. The attributes that you can configure include the tax identification at different levels, the taxpayer classification per country, and different customizable concepts that can be manually filled. The fields for this information are located on the **LATAM** FastTab of the following pages:
 
@@ -40,7 +42,7 @@ To enable the **LATAM tax and legal** functionality, first enable the **LATAM Gl
     - **Warehouse management** \> **Setup** \> **Shipping** \> **Shipping carriers**
     - **Sales and marketing** \> **Relationships** \> **Contacts** \> **All contacts**
 
-2. On the **LATAM** FastTab, set the following fields.
+1. On the **LATAM** FastTab, set the following fields.
 
     | Field | Description |
     |-------|-------------|
@@ -54,6 +56,6 @@ To enable the **LATAM tax and legal** functionality, first enable the **LATAM Gl
     | **State identification number** | Enter the company's tax ID number for the state or province. |
     | **Activities start date** | Enter the company's commercial activity start date. This date is usually stipulated in the company statute. This field is available only on the **Legal entities** page. |
 
-3. Enter any remaining field information that's required.
+1. Enter any remaining field information that's required.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.assetid: b8c5d7a4-ee2b-4ab1-b042-88472b97f035
 ms.search.region: Global
@@ -22,7 +22,7 @@ Describes the design-time metadata properties for Segmented Entry controls.
 
 The custom properties for the Segmented Entry control are found under the Controller group. Here is an example.
 
-[![SEC Property Sheet Example.](./media/capture1.png)](./media/capture1.png)
+:::image type="content" source="./media/capture1.png" alt-text="Screenshot of the SEC Property Sheet Example." lightbox="./media/capture1.png":::
 
 Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  For more information, see [Valid properties](#valid-properties).
 

@@ -80,7 +80,7 @@ If you want to requeue a message that was previously canceled, select it in the 
 
 ## <a name="processor-batch-job"></a>Schedule message processing by using the message processor batch job
 
-To process a message queue, you must set up a batch job to run it. Usually you'll set up a fixed, regular schedule for processing each queue. However, you can also run any queue on demand. To create and schedule the required batch jobs, follow these steps.
+To process a message queue, you must set up a batch job to run it. Usually you'll set up a fixed, regular schedule for processing each queue. However, you can also run any queue on demand. To create and schedule the required batch jobs, follow these steps:
 
 1. Go to **System administration \> Message processor \> Message processor**.
 1. In the **Message processor** dialog box, in the **Message queue** field, select the message queue that's associated with the messages that you want to process. The queue that you select will depend on the feature or system that generated the messages.
@@ -104,7 +104,7 @@ You can configure the number of processor tasks that should be dedicated to each
 
 1. On the Action Pane, select **Save**.
 
-## Additional resources
+## Related information
 
 - [Clean up processed and canceled message processor messages](message-processor-cleanup.md)
 - [Business events, custom message queues, and custom message types](developer/message-processor-develop.md)

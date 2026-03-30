@@ -4,7 +4,7 @@ description: Learn about sales trade agreement prices, including an outline on c
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 10/25/2024
+ms.date: 11/11/2025
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
@@ -20,6 +20,18 @@ Unified pricing management uses the standard *Trade agreement price - sales pric
 
 > [!NOTE]
 > Unified pricing management respects [standard *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Unified pricing management will use the sales agreement. If no sales agreement applies, Unified pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Unified pricing management. Instead, Unified pricing management provides a new approach to defining discount rules.
+
+## Net pricing
+
+To support negotiated final prices in trade agreements, you can define sales prices directly with or without price adjustments and explicitly prevent additional discount applications. This approach ensures accurate discount-exempt pricing aligned with contractual or wholesale pricing needs. This function supports sales trade agreement pricing by allowing pricing administrators to define:
+
+- A final exclusive net price that reflects the outcome of negotiation  
+- Whether price adjustments (such as percentage increases or decreases) are included  
+- Whether promotional or system-applied discounts should be prevented from further affecting the transaction price  
+
+This capability is especially relevant in business-to-business (B2B), channel sales, or regulated pricing models, where discount logic shouldn't be allowed to alter the agreed price. It's can also be important for long-term contracts that require strict adherence to fixed pricing that excludes further discounts.
+
+To define a trade agreement sales price as a *net* (final, exclusive) price that isn't subject to further discounting, set **Allow Price Adjustment** to *No* and **Prevent Discount** to *Yes* for the relevant sales trade agreement lines. Learn more in [Manage pricing rules for a sales trade agreement journal](#pricing-rules).
 
 ## Configure sales trade agreements, including concurrence rules
 
@@ -106,13 +118,15 @@ Follow these steps to create and manage your sales trade agreement journals.
 1. Set the following fields for the new or selected journal:
 
     - **Name** – Select an existing trade agreement journal name. For the name that you select, the **Enable price attributes** option must be set to *Yes* and the **Relation** field must be set to *Price (sales)* on the **Trade agreement journal names** page.
-    - **Price/discount journal number** – A value is automatically generated the first time that you save a new journal. The field then becomes read-only. 
+    - **Price/discount journal number** – A value is automatically generated the first time that you save a new journal. The field then becomes read-only.
     - **Description** – Enter a short description of the journal. For new journals, this field takes its default value from the selected trade agreement journal name.
     - **Posted** – This read-only field shows whether the journal has been posted.
     - **Posted on** – If the journal has been posted, this read-only field shows the date when it was posted.
     - **Enable price attributes** – This read-only field takes its default value from the selected trade agreement journal name.
 
 1. On the Action Pane, select **Save**.
+
+<a name="pricing-rules"></a>
 
 ## Manage pricing rules for a sales trade agreement journal
 
@@ -147,6 +161,8 @@ Follow these steps to add, view, and manage pricing rules for a sales trade agre
     - **Price attribute detail** – This field summarizes the line attribute values that identify the products that the line applies to. For lines that apply to all products, this field is blank. To change the values, select **Edit price attribute** on the toolbar.
     - **Price attribute combination rank** – This field shows the rank that's assigned to the price attribute group combination that was selected for the current line in the **Edit price attribute** dialog box. The value affects how concurrent rules are resolved when more than one rule can apply to the same order line.
     - **Allow price adjustment** – Select this checkbox if your sales trade agreement price isn't your final unit price, but additional margin component price adjustments will be permitted. For an example that shows how this setting can affect the final unit price, see the table after this procedure.
+    - **Prevent Discount** – Select this checkbox to prevent any additional discounts from being applied for this line. To define a trade agreement sales price as a *net* (final, exclusive) price that isn't subject to further discounting, set **Allow Price Adjustment** to *No* and **Prevent Discount** to *Yes*. Learn more in [Net pricing](#net-pricing).
+    - **Allow Price Adjustment** – Select this checkbox to apply adjustments (such as markup or markdown) to include in the sales price. To define a trade agreement sales price as a *net* (final, exclusive) price that isn't subject to further discounting, set **Allow Price Adjustment** to *No* and **Prevent Discount** to *Yes*. Learn more in [Net pricing](#net-pricing).
     - **Allow unit conversion** – Select this checkbox to allow the price that you specified for the selected unit to be converted proportionately for sales lines that specify other units. The conversion is based on the available unit conversion factors. This feature lets you maintain a single record that can apply to sales in different units.
     - **From** – Enter a minimum quantity for the line. This value defines the minimum quantity that a customer must order to qualify for the agreement price.
     - **To** – Enter a maximum quantity for the line. This value defines the maximum quantity that a customer can order and still qualify for the agreement price.

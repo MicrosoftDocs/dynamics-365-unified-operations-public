@@ -1,10 +1,10 @@
 ---
 title: Organization administration home page
-description: Access the organization administration home page and resources that will help you in your organization, including resources for number sequences and organizations.
-author: sericks007
-ms.author: sericks
+description: Access the organization administration home page and resources that help you in your organization, including resources for number sequences and organizations.
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 08/18/2017
+ms.date: 11/21/2025
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
@@ -19,13 +19,13 @@ ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 
 [!include [banner](../includes/banner.md)]
 
-This article points to content that will help power users and administrators configure the system to work smoothly and effectively for your organization and business.
+This article points to content that helps power users and administrators configure the system to work smoothly and effectively for your organization and business.
 
-Much of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help your organization run more efficiently.
+Much of the content listed here applies to features in the **Organizational administration** module. However, you can perform a couple of tasks, such as creating and using a record template, in any module to help your organization run more efficiently.
 
 ## Number sequences
 
-Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference.
+Use number sequences to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is a *reference*. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference.
 
 - [Number sequences overview](number-sequence-overview.md)
 - [Set up number sequences using a wizard](tasks/set-up-number-sequences-wizard.md) (Task guide)
@@ -33,9 +33,9 @@ Number sequences are used to generate readable, unique identifiers for master da
 
 ## Organizations
 
-An organization is a group of people who are working together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
+An organization is a group of people who work together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
 
-Before you set up organizations and organization hierarchies, make sure that you plan how your business will be modeled. The organization model has a significant effect on implementation and business processes.
+Before you set up organizations and organization hierarchies, plan how your business is modeled. The organization model has a significant effect on implementation and business processes.
 
 - [Organizations and organizational hierarchies overview](organizations-organizational-hierarchies.md)
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
@@ -45,9 +45,9 @@ Before you set up organizations and organization hierarchies, make sure that you
 
 ## Address books
 
-The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information.
+The global address book is a centralized repository for master data that you must store for all internal and external persons and organizations that your company interacts with. The data associated with party records includes the party's name, address, and contact information.
 
-After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business.
+After you create the global address book, you can create more address books as you require, such as a separate address book for each company in your organization or for each line of business.
 
 - [Global address book overview](../../dev-itpro/organization-administration/overview-global-address-book.md)
 - [Plan for the global address book and other address books](plan-configuration-global-address-book-additional-address-books.md)
@@ -56,7 +56,7 @@ After you create the global address book, you can create additional address book
 
 ## Workflow
 
-Workflow is a system that you can use to create individual workflows, or business processes. When you create a workflow, you specify how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.
+Workflow is a system that you can use to create individual workflows or business processes. When you create a workflow, you specify how a document flows or moves through the system by showing who must complete a task, make a decision, or approve a document.
 
 - [Workflow system overview](overview-workflow-system.md)
 - [Workflow elements](workflow-elements.md)
@@ -74,14 +74,14 @@ You can use electronic signatures for critical business processes. Some processe
 
 ## Case management
 
-By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently.
+By planning, tracking, and analyzing cases, you can develop efficient resolutions that you can use for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently.
 
 - [Case management overview](../../dev-itpro/organization-administration/cases.md)
 - [Plan case category security, case processes, and case categories](../../dev-itpro/organization-administration/plan-case-management.md)
 
 ## Record templates
 
-Record templates can help you to create records more quickly. You can create a record template so that field values that are used often do not have to be entered explicitly for each new record.
+Record templates can help you create records more quickly. You can create a record template so that you don't have to enter field values that you use often for each new record.
 
 - [Record templates overview](record-templates.md)
 - [Create a record template to facilitate data entry](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Task guide)

@@ -1,10 +1,10 @@
 --- 
-title: Import German audit file configuration
-description: Learn how to import the German audit file electronic reporting data model and format configurations in Microsoft Dynamics 365 Finance.
-author: mrolecki
-ms.author: mrolecki
+title: Prepare your environment to generate a GDPdU audit file.
+description: Learn how to prepare your environment to generate a GDPdU audit file in Microsoft Dynamics 365 Finance.
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 12/03/2025
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -13,28 +13,22 @@ ms.search.validFrom: 2016-06-30
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 ---
 
-# Import German audit file configuration
+# Prepare your environment to generate a GDPdU audit file
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to import the German audit file electronic reporting data model and format configurations in Microsoft Dynamics 365 Finance.
+This article explains how to prepare your environment to generate a GDPdU audit file in Microsoft Dynamics 365 Finance.
 
-The following procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
+Before you can generate a GDPdU audit file, you must import the latest versions of the following Electronic reporting (ER) configurations.
 
-To import the German audit file electronic reporting data model and format configurations, follow these steps.
+| ER configuration         | Type          | Description |
+|--------------------------|---------------|-------------|
+| Data export model        | Model         | The unified data model for data export. This model also contains the **German audit file - default groups** model mapping component necessary to collect data for German audit file. |
+| German audit file output | Format        | The exporting format in the GDPdU audit file structure. |
 
-1. In Dynamics 365 Finance, go to **Organization administration > Workspaces > Electronic reporting**.
-1. In the list, mark the selected row.
-1. Select **Set active**.
-1. In the list, mark the selected row.
-1. Select **Repositories**.
-1. Select **Open**.
-1. Select **Show filters**.
-1. Filter to find the configuration in the list. You can also search for "German audit file output" to narrow down the list of results.  
-1. Select **Apply**.
-1. Select **Import**.
-1. Select **Yes**.
+> [!NOTE]
+> After you import all the ER configurations in the previous table, on the **Configurations** page, set the **Default for model mapping** option to **Yes** for the **Data export model** configuration.
 
-
+Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

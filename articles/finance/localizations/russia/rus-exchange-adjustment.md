@@ -34,7 +34,7 @@ The exchange rate difference on the currency bank account can be either positive
 
 ### Set up ledger accounts for currency bank account revaluation
 
-To set up ledger accounts for currency bank account revaluation, follow these steps.
+To set up ledger accounts for currency bank account revaluation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Currencies** \> **Currency parameters**.
 1. On the left side of the **Currency revaluation accounts** page, in the **Legal entities** field, select a company.
@@ -48,7 +48,7 @@ To set up ledger accounts for currency bank account revaluation, follow these st
 
 ### Set up a number sequence
 
-To set up a number sequence, follow these steps.
+To set up a number sequence, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
 1. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Bank – Exchange adjustment** reference.
@@ -57,7 +57,7 @@ To set up a number sequence, follow these steps.
 
 To do revaluation on the reporting date, use the **Foreign currency revaluation** page.
 
-To calculate the exchange rate difference for a bank account, follow these steps.
+To calculate the exchange rate difference for a bank account, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Periodic tasks** \> **Foreign currency revaluation – Bank**.
 1. On the **Foreign currency revaluation** page, in the **On date** field, select the revaluation date.
@@ -69,7 +69,7 @@ To calculate the exchange rate difference for a bank account, follow these steps
 
 You can review the posted exchange adjustment transactions on the **Bank transactions** page.
 
-To view exchange adjustment transactions, follow these steps.
+To view exchange adjustment transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 1. Select the bank account, and then select **Transactions**.

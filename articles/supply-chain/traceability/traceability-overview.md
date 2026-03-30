@@ -34,7 +34,7 @@ Traceability follows products and goods as they move through the supply chain. I
 
 ## Join the Traceability group on Microsoft Viva Engage
 
-For more help and support, join the [Traceability group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=129953431552&view=all). In this group, you can find the following resources:
+For more help and support, join the [Traceability add-in for Dynamics 365 Supply Chain Management](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc4Mjk1NTQxNzYifQ) community on Viva Engage. In this group, you can find the following resources:
 
 - On the **Conversations** tab, you can read conversation threads, ask questions, share experiences, and connect with other users. The group includes consultants, Microsoft partners, Microsoft product team members, and other experts and users who can share tips, help answer questions, and provide guidance.
 - On the **Files** tab, you can find presentations, videos, tutorials, and hands-on labs that help you learn more about Traceability.

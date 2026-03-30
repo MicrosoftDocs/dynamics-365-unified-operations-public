@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/27/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
@@ -16,11 +16,11 @@ ms.search.validFrom: 2017-12-31
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to cancel a customer fiscal document that marks the fiscal document as canceled and reverses all ledger and financial transactions in Brazil with Microsoft Dynamics 365 Finance.
+This article describes how to cancel a customer fiscal document in Brazil by using Microsoft Dynamics 365 Finance. When you cancel the fiscal document, the system marks the fiscal document as canceled and reverses all ledger and financial transactions.
 
-You can cancel an incorrect customer fiscal document by using the **Cancel fiscal document** page. When you cancel a fiscal document, the fiscal document is marked as canceled, and all of the ledger transactions and financial transactions are reversed.
+You can cancel an incorrect customer fiscal document by using the **Cancel fiscal document** page. When you cancel a fiscal document, the system marks the fiscal document as canceled and reverses all ledger and financial transactions.
 
-To cancel a customer fiscal document, follow these steps.
+To cancel a customer fiscal document, follow these steps:
 
 1. In Dynamics 365 Finance, go to either **Accounts receivable \> Common \> Sales orders \> All sales orders** or **Sales and marketing \> Common \> Sales orders \> All sales orders**.
 1. Select a sales order to cancel.

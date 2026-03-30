@@ -1,12 +1,12 @@
 ---
 title: Global Inventory Accounting home page
 description: Access the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management with outlines on availability and licensing.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 07/21/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Global Inventory Accounting home page
 
 [!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 International organizations are under increasing pressure from authorities to comply with local and global accounting standards. The valuation of inventory plays a significant role in ensuring compliance. The Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management provides a comprehensive solution that enables organizations (especially international organizations) to use multiple costing ledgers to do inventory accounting. Therefore, those organizations can comply with multiple accounting standards and internal management accounting at the same time.
 
@@ -46,9 +47,9 @@ Global Inventory Accounting is currently available in the following Azure geogra
 - United Kingdom
 - United States
 
-If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services (LCS) will show a message that your geographic region isn't supported. Global Inventory Accounting doesn't support on-premises deployments of Supply Chain Management.
+If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services will show a message that your geographic region isn't supported. Global Inventory Accounting doesn't support on-premises deployments of Supply Chain Management.
 
-If you have any issues enabling Global Inventory Accounting in one of the supported geographic regions listed here, please send an email message with your environment ID to [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com) for validation.
+If you have any issues enabling Global Inventory Accounting in one of the supported geographic regions listed here, log the issuee through Microsoft Customer Service and Support channels including your environment ID, tenant ID, and error details in the request.
 
 ## Licensing
 

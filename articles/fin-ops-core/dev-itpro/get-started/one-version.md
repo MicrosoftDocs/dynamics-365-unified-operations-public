@@ -2,7 +2,7 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: rashmansur
-ms.date: 03/2/2025
+ms.date: 03/05/2026
 ms.topic: faq
 ms.custom: 
   - bap-template
@@ -219,9 +219,9 @@ A release is a service update version that has been made available to customers.
 
 A release in post-update servicing reaches its end-of-service date about one month after autoupdates are completed for the latest version. Therefore, customers who chose to pause have time to complete their required update before the servicing window for their version is closed. The following illustration shows the staggered release rollout and servicing model.
 
-![Staggered release rollout servicing model.](../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png)
+:::image type="content" source="../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png" alt-text="Screenshot of the staggered release rollout servicing model.":::
 
-![Staggered release rollout servicing model legend.](../media/OneVersion-FAQs-Staggered-Release-Rollout-Servicing-Model-legend.png)
+:::image type="content" source="../media/OneVersion-FAQs-Staggered-Release-Rollout-Servicing-Model-legend.png" alt-text="Screenshot of the staggered release rollout servicing model legend.":::
 
 > [!IMPORTANT]
 > The Support team at Microsoft can't accept cases for issues that are reported from versions that are at their end of service. You must first update to the latest service update and then apply the latest quality update. At that point, if the issue persists, you can report it.
@@ -299,7 +299,7 @@ The service update that's generally available to all customers for self-update a
 
 ### How do my ISVs stay current?
 
-Service updates to customer environments are backward compatible, and no action by the independent software vendors (ISVs) is required. ISVs develop on the minimum required platform release that their code depends on. Breaking changes have a 12-month lead time, so that ISVs can include them and do validation. Microsoft recommends that ISVs take advantage of the preview release for each service update. In this way, they can get early access to the platform code and validate their solutions against the update before it's made generally available. Microsoft encourages both ISVs and customers to join the [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) group on Microsoft Viva Engage. This Viva Engage group provides a forum where participants can receive preview and release-related announcements, and collaborate with others in the finance and operations apps community.
+Service updates to customer environments are backward compatible, and no action by the independent software vendors (ISVs) is required. ISVs develop on the minimum required platform release that their code depends on. Breaking changes have a 12-month lead time, so that ISVs can include them and do validation. Microsoft recommends that ISVs take advantage of the preview release for each service update. In this way, they can get early access to the platform code and validate their solutions against the update before it's made generally available. Microsoft encourages both ISVs and customers to join the [Preview Early Access](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc5NDE5MzIwMzIifQ) community on Microsoft Viva Engage. This Viva Engage group provides a forum where participants can receive preview and release-related announcements, and collaborate with others in the finance and operations apps community.
 
 ### What about new features?
 

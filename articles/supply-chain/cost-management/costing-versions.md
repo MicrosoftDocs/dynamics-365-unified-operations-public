@@ -1,8 +1,8 @@
 ---
 title: Costing versions overview
 description: Learn about costing versions, how to maintain them, and the types of data that you can include in them, with an outline on standard or planned costs.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 ms.topic: overview

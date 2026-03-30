@@ -15,6 +15,23 @@ ms.custom:
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 1.1.0.4
+
+### New feature introduced in version 1.1.0.4
+
+This version of Demand planning enhances basic forecast calculations by adding two new features:
+
+- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. Designed specifically for intermittent demand, which is demand data with many zero-demand periods with occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
+- Forecasting with signals with the *XGBoost* forecast model has been extended to allow up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
+
+### New fixes and improvements in version 1.1.0.4
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability.
+- Improved performance when exporting forecast to Supply Chain Management with data aggregation.
+- Improved forecast calculation performance.
+
 ## Version 1.0.0.3424
 
 ### New feature introduced in version 1.0.0.3424

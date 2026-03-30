@@ -6,20 +6,22 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak
 ms.search.region: France
 ---
 
 # Generate an FEC in Dynamics 365 Finance
 
-To generate a Fichier des écritures comptables (FEC) audit file, follow these steps.
+[!include [banner](../../includes/banner.md)]
 
-1. Go to **General Ledger** \> **Periodic tasks** \> **Data export**. 
-2. If the Electronic reporting (ER) format isn't set up in the **Format mapping** field on the **General ledger parameters** page, select **FEC audit file (FR)** in the **Format mapping** field on the **Data export** page. Then select **OK**. 
-3. If the ER format is set up in the **Format mapping** field on the **General ledger parameters** page, the **Data export** page doesn't appear. You can go directly to the dialog box for the report.
-4. On the **Electronic report parameters** page, in the **Period - date from** and **Period - date to** fields, enter the start and end dates of the period.
-5. In the **FEC report content composition** field, select one or more of the following output files to generate, and then select **Select**.
+To generate a Fichier des écritures comptables (FEC) audit file, follow these steps:
+
+1. Go to **General Ledger** > **Periodic tasks** > **Data export**. 
+1. If the Electronic reporting (ER) format isn't set up in the **Format mapping** field on the **General ledger parameters** page, select **FEC audit file (FR)** in the **Format mapping** field on the **Data export** page. Then select **OK**. 
+1. If the ER format is set up in the **Format mapping** field on the **General ledger parameters** page, the **Data export** page doesn't appear. You can go directly to the dialog box for the report.
+1. On the **Electronic report parameters** page, in the **Period - date from** and **Period - date to** fields, enter the start and end dates of the period.
+1. In the **FEC report content composition** field, select one or more of the following output files to generate, and then select **Select**.
 
     | Name                            | Description | Conditions |
     |---------------------------------|-------------|------------|
@@ -31,6 +33,8 @@ To generate a Fichier des écritures comptables (FEC) audit file, follow these s
     | 6 FEC Main Extended             | FEC main file including fiscal year opening balances details for customers and vendors | For this part of the report, set the **Period - date from** and **Period - date to** fields. Make sure that the specified period includes the beginning of a fiscal year. |
     | 7 Missing numbers justification | As of version 10.0.23 of Finance, use this annex to report general ledger account vouchers that are missing in the FEC Main file. | For this part of the report, set the **Period - date from** and **Period - date to** fields. |
 
-6. General ledger transactions that are included in the **FEC Main** and **FEC Main Extended** report types must be filtered by the **Current** posting layer. Only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** must be included to the FEC. Use the **Records to include** field to filter for the records that the report should include. Use the filter to report data that complies with the rules in Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français."
-7. To generate the report in batch mode, on **Run in the background** FastTab, specify the batch parameters.
-8. When you've finished specifying all the parameters, select **OK** to generate the report.
+1. Filter general ledger transactions that are included in the **FEC Main** and **FEC Main Extended** report types by the **Current** posting layer. Only include main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** to the FEC. Use the **Records to include** field to filter for the records that the report should include. Use the filter to report data that complies with the rules in Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français."
+1. To generate the report in batch mode, on **Run in the background** FastTab, specify the batch parameters.
+1. When you finish specifying all the parameters, select **OK** to generate the report.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

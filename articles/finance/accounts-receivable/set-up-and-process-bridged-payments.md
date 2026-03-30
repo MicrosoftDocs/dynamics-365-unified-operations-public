@@ -35,7 +35,7 @@ To use bridging posting, you must set up one or more methods of payment so that 
 
 ## Process and transfer bridging posting
 
-To create and process bridging posting, follow these steps.
+To create and process bridging posting, follow these steps:
 
 1. Go to **Accounts receivable &gt; Payments &gt; Customer payment journal**.
 2. Select **New** to create a journal.
@@ -43,7 +43,7 @@ To create and process bridging posting, follow these steps.
 4. Add lines to the customer payment journal, and select the method of payment that is configured for bridging posting.
 5. Post the journal. The transactions will be posted to the main account that you selected in the **Bridging account** field in the previous procedure.
 
-When the transactions have cleared the bank, and you want to transfer the payment from the bridging account to the payment account that is specified for the method of payment, follow these steps.
+When the transactions have cleared the bank, and you want to transfer the payment from the bridging account to the payment account that is specified for the method of payment, follow these steps:
 
 1. Go to **General ledger &gt; Journal entries &gt; General journals**.
 2. Select **New** to create a journal.

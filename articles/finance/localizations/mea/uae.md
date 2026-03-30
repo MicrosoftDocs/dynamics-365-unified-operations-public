@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 12/09/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: United Arab Emirates (UAE)
@@ -31,6 +31,6 @@ Country/region specific functionality for the UAE is activated by using the **Lo
 
 [![Country/region code of the primary address set to ARE on the Legal entities page.](../media/uae_vat_01.jpg)]
 
-For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../../fin-ops-core/fin-ops/lcs/country-region.md).
+For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../../fin-ops-core/fin-ops/lcs/globalization-resources.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

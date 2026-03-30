@@ -29,7 +29,7 @@ Follow these steps to use a single price structure for a company.
 
 ## Configure the single price structure
 
-To set up the price structure for a company that uses a single structure, follow these steps.
+To set up the price structure for a company that uses a single structure, follow these steps:
 
 1. Go to **Pricing management \> Setup \> Price component codes \> Price trees**. The **Price trees** page shows your current price structure (if you have one), and lets you add or remove price component codes in the structure. The components are grouped according to the **Price component** value that's set for each price component code in the list.
 

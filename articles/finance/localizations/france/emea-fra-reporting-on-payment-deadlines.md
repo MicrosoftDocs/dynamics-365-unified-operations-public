@@ -50,7 +50,7 @@ Import the most recent versions of the configurations. The version description u
 
 ## Generate the report
 
-To generate the report, follow these steps.
+To generate the report, follow these steps:
 
 1. Go to **General ledger** > **Inquiries and reports** > **Statistics** > **Statistics on invoices report**.
 1. In the **Statistics on invoices** dialog box, in the **Format mapping** field, select one of the ER formats.

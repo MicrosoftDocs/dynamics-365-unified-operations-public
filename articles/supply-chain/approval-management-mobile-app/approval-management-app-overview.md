@@ -29,7 +29,7 @@ The following illustration shows an example where the Approvals Management mobil
 :::image type="content" source="media/approval-app-list-example.png" alt-text="Screenshot that shows multiple purchase orders selected for action in the Approvals Management mobile app." lightbox="media/approval-app-list-example.png":::
 
 > [!NOTE]
-> Use of the Approvals Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses and requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. You can find complete and up-to-date licensing information in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+> Use of the Approvals Management mobile app requires a license. You can find complete and up-to-date licensing information in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544). Licensing terms are subject to change without notice.
 
 The Approvals Management mobile app replaces the now-deprecated [Purchase order approval mobile workspace](../procurement/purchase-order-mobile-workspace.md).
 

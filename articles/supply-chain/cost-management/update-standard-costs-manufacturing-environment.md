@@ -1,8 +1,8 @@
 ---
 title: Update standard costs in a manufacturing environment
 description: Learn how to update standard costs in a manufacturing environment. The type of update affects the steps that you must complete to update standard costs.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: CostingVersion, InventStdCostConv
 ms.topic: how-to

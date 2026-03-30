@@ -1,8 +1,8 @@
 ---
 title: Moving average fallback cost sequence
 description: Learn about fallback cost sequences for moving average calculations in Microsoft Dynamics 365 Supply Chain Management with a step-by-step process.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
@@ -23,7 +23,7 @@ One way that you can calculate the cost of your inventory is by using a *moving 
 
 To determine which of these cost values should be used in moving average calculations, the system uses a *fallback cost sequence* to establish the order of preference for the values. If the preferred cost value isn't available, the system uses the next-preferred value, and so on.
 
-To select the fallback cost sequence for moving average calculations, follow these steps.
+To select the fallback cost sequence for moving average calculations, follow these steps:
 
 1. Go to **Cost management** \> **Inventory accounting policies setup** \> **Parameters**.
 2. On the **Inventory accounting** tab, in the **Moving average** section, set the **Fallback cost sequence** field to one of the following values:

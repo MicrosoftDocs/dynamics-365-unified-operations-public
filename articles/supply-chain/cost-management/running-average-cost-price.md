@@ -1,8 +1,8 @@
 ---
 title: Running average cost price
 description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 ms.topic: how-to
@@ -47,6 +47,8 @@ The following table shows when the system posts inventory transactions by using 
 
 > [!NOTE]
 > If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Options for including physical value in cost calculations](include-physical-value.md).
+
+<a name="avoid-pricing-amp"></a>
 
 ## Avoiding pricing amplification
 

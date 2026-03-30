@@ -1,10 +1,10 @@
 ---
-title: Set up and configure the Account Reconciliation Agent (production ready preview)
-description: Learn how to set up and configure the Account Reconciliation Agent in Microsoft Dynamics 365 Finance.
+title: Set up and configure the Account reconciliation agent (production ready preview)
+description: Learn how to set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 05/12/2025
+ms.date: 03/25/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -15,60 +15,134 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ---
 
-# Set up and configure the Account Reconciliation Agent (production ready preview)
+# Set up and configure the Account reconciliation agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how system administrators can set up and configure the Account Reconciliation Agent in Microsoft Dynamics 365 Finance.
+This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
+
+>[!NOTE]
+> Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
 
 ## Prerequisites
 
-Before you can use the Account Reconciliation Agent, your system must meet the following requirements:
+Before you use the Account reconciliation agent, make sure your system meets the following requirements:
 
-- You must be running Dynamics 365 Finance version 10.0.44 or later.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features aren't shown in your system, select **Check for updates**.
+- You're running Dynamics 365 Finance version 10.0.44 or later. To use Dynamics 365 ERP Model Context Protocol capabilities, you're running Dynamics 365 Finance version 10.0.47 or later.
+- You turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). If the features don't appear in your system, select **Check for updates**.
 
-    - (Preview) Immersive Home
-    - (Production ready preview) Agent management
-    - (Production ready preview) Account reconciliation agent
+  - (Preview) Immersive Home
+  - (Production ready preview) Agent management
+  - (Production ready preview) Account reconciliation agent
+  - (Preview) Dynamics 365 ERP Model Context Protocol server (Optional)
 
-- You must be running the following packages in the Power Platform admin center:
+- You're running the following packages in the Power Platform admin center:
 
-    - **Copilot for finance and operations apps**, version 1.0.3048.2 or later
-    - **Copilot in Microsoft Dynamics 365 Finance**, version 1.0.3049.1 or later
+  - **Copilot for finance and operations apps**, version 1.0.3048.2 or later
+  - **Copilot in Microsoft Dynamics 365 Finance**, version 1.0.3049.1 or later
+  
+- Normally, the Microsoft Copilot Studio agents needed for the Account reconciliation agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents.
+- To check if the agents are successfully published, follow these steps:
+
+1. Go to Copilot Studio and find your environment.
+1. Confirm that the following Microsoft Copilot Studio agents are published in that environment:
+
+- Account reconciliation agent
+- Account reconciliation amounts
+- Account reconciliation API
+If the agents aren't published, see [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
+Confirm that the agents are shared with the organization.
 
 Learn more in [Immersive Home overview](../../fin-ops-core/fin-ops/copilot/immersive-home.md).  
 
-## Set up agent identity
+## Set up agent identity users and assign security roles
+
+Use the user management features for your tenant to create an agent identity user. Then assign the licenses and security roles described in the following subsections to that user.
+
+### License requirements
+
+The Account reconciliation agent uses premium tier connectors, so the agent identity user must have a license that permits those connectors. To learn more, see [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq). Examples of sufficient licenses include Power Apps premium, Power Automate premium, or Dynamics 365 Finance.
+Use the Microsoft 365 admin center to assign the required licenses.
 
 > [!TIP]
-> For security and ease of maintenance, we recommend that you use a dedicated identity for the agent.
+> For security and ease of maintenance, use a dedicated identity for the agent.
 
 ### Set up agent identity users and assign security roles
 
 Create agent identity user accounts in both Dataverse and Finance.
 
-The user accounts must have the following security roles:
+Assign the following security roles to the user accounts:
 
 - Required Dataverse user roles:
 
-    - Finance and Operations basic user
-    - Account reconciliation agent role
-    - Environment maker
+  - Finance and Operations basic user
+  - Account reconciliation agent role
+  - Environment maker
 
 - Required Finance user roles:
 
-    - Account reconciliation agent
-    - System user
+  - Account reconciliation agent
+  - System user
 
-### Create the required connections
+>[!NOTE]
+> The system agent security role is exempt from Dynamics 365 finance and operations user license requirements. For more information, see [Use Model Context Protocol for finance and operations apps](../../fin-ops-core/dev-itpro/copilot/copilot-mcp.md#agent-licenses).
 
-The Account Reconciliation Agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. You must set up those connectors before you can use the agent.
+### Deploy the agent
 
-To set up the connectors, follow these steps.
+>[!NOTE]
+> You can deploy the agent in two ways. The first way is to use the new Agent Deployment Wizard experience. The second way is to manually create the required connections and activate the flows by using a PowerShell script. The following sections describe the two ways.  
 
-1. Sign in to [Power Apps](https://make.powerapps.com) as an environment administrator user.
+### Deployment via the Agent deployment wizard
+
+The Agent deployment wizard simplifies the process of setting up required connections for the agent and activates the necessary flows.  
+
+### Access the Deployment wizard
+
+To access the Deployment wizard, follow these steps:
+
+1. Open Copilot Hub in Power Platform admin center and select Dynamics 365.
+1. If you don't see Copilot Hub in Power Platform Admin Center, check if the feature flag ShowDynamics365ERPInCopilotHub is enabled.
+1. Select the target environment.
+1. Choose the Accounts reconciliation agent.
+1. Select **Add** to launch the Agent deployment wizard.
+
+### Deploy the Agent using the Wizard
+
+Prerequisites - The wizard checks if the target environment meets all required prerequisites for the Accounts reconciliation agent. It also includes an optional action to refresh the virtual entities for the Accounts reconciliation agent. While this step is optional, it's recommended that you refresh the virtual entities for the proper activation of the Accounts reconciliation agent.  
+
+### Select the Agent identity
+
+Each agent runs under a dedicated agent user identity. In this step, you select the previously created user as part of the Set up Agent identity step.
+
+### Connecting the Agent
+
+In this step, the wizard asks you to select the connection reference for Microsoft Dataverse and Copilot Studio. If the connection reference doesn't exist, you can create it. To create the connection reference, select the **Plus** icon next to the connection reference dropdown. Create connection references by using the agent identity you set up previously, as mentioned on the UI.
+
+After you select or create a connection reference for each of the resources or applications, select **Connect the Agent** to set up the connection references for the agent.  
+
+Next, activate all Power Automate flows used by the agent, as part of the second step on this page.
+
+### Enabling the agent
+
+The final step makes the agent available for use.
+To enable the agent, follow these steps:
+
+1. Publish the agent bot in Copilot Studio.
+1. Verify that the agent is enabled and available in the target environment.
+1. When you enable the agent, it becomes active and ready for use.
+
+For more information about Agent Deployment wizard, see [Deploy Dynamics 365 agents by using the agent deployment wizard (preview)](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
+
+### Manual deployment of the agent
+
+#### Create the required connections
+
+The Account reconciliation agent uses connectors to Dataverse and Microsoft Copilot Studio to do its work. Set up those connectors before you use the agent.
+
+To set up the connectors, follow these steps:
+
+1. Sign in to [Power Apps](https://make.powerapps.com) by using the newly created agent identity user.
 1. In the left pane, select **Connections**.
 1. At the top of the page, select **New connection**.
 1. In the **Search** field, enter **Microsoft Dataverse**.
@@ -82,11 +156,16 @@ To set up the connectors, follow these steps.
 
     You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
 
-### Update connection references and activate the triggering flows
+1. At the top of the page, select **New connection**.
+1. Search for the Fin & Ops Apps (Dynamics 365) connection.
+1. Select **Create**, and follow the on-screen instructions to create the connector. When you're prompted to sign in, sign in as the intended agent identity.
+You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
 
-To finish setting up agent identity, you must update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. This section provides a sample PowerShell script that you can use to complete both tasks.
+#### Update connection references and activate the triggering flows
 
-To use the sample PowerShell script, follow these steps.
+To finish setting up agent identity, update the agent's connection references so that they point to the connections that you created. You must also activate the triggering Power Automate flows. This section provides a sample PowerShell script that you can use to complete both tasks.
+
+To use the sample PowerShell script, follow these steps:
 
 1. Copy the script, and save it as a .ps1 file.
 1. Before you run the script, set the following four parameters at the top:
@@ -95,9 +174,10 @@ To use the sample PowerShell script, follow these steps.
     - `dataverseUrl` – Specify the URL of your Dataverse environment. You can find this URL in the Power Platform admin center.
     - `DVConnectionName` – Specify the name of the Dataverse connector to use. The connector is named after the agent identity that you signed in as when you [created it](#create-the-required-connections). You can find the name on the **Connections** page in Power Apps.
     - `MCSConnectionName` – Specify the name of the Copilot Studio connector to use. The connector is named after the agent identity that you signed in as when you [created it](#create-the-required-connections). You can find the name on the **Connections** page in Power Apps.
+    - `DynamicsAXConnectionName`  – Specify the name of the Fin & Ops Apps connector to use. The connector is named after the agent identity that you signed in as when you created it. You can find the name on the **Connections** page in Power Apps.
 
- 1. Customize the script as you require. 
- 1. Run the script from any PowerShell console. When you're prompted to sign in, sign in as an environment administrator.
+1. Customize the script as you require.
+1. Run the script from any PowerShell console. When you're prompted to sign in, sign in as an environment administrator.
 
 #### Sample script to update connection references and enable triggering flows
 
@@ -111,6 +191,8 @@ Param(
     [string]$DVConnectionName = "",
     [Parameter(Mandatory=$true, HelpMessage="Microsoft Copilot Studio connection name")]
     [string]$MCSConnectionName = ""
+    [Parameter(Mandatory=$false, HelpMessage="Dynamics 365 Finance and Operations connection name")]
+    [string]$DynamicsAXConnectionName = ""
 )
 # Check PS version
 if ($PSVersionTable.PSVersion.Major -lt 7) {
@@ -287,6 +369,10 @@ Set-ConnectionReferenceConnection `
     -providerName "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio" `
     -connectionReferenceLogicalName "msdyn_sharedmicrosoftcopilotstudio_462f2" `
     -accessToken $accessToken
+if ($DynamicsAXConnectionName)
+{
+    Set-ConnectionReferenceConnection -userProvidedConnectionName $DynamicsAXConnectionName -providerName "/providers/Microsoft.PowerApps/apis/shared_dynamicsax" -connectionReferenceLogicalName "msdyn_accountReconciliationApi.shared_dynamicsax.d2dc587e63f84ef68793f11e1a7b9ba3" -accessToken $accessToken
+}
 
 Write-Host
 Write-Host 'Activating flows...'
@@ -311,4 +397,4 @@ Enable-TriggerFlow -flowId 'c2ad4a0d-228f-ef11-96d2-002248047a14' -accessToken $
 
 Write-Host
 Write-Host 'Account reconciliation agents are ready for use' -ForegroundColor Green
-```
+ ```

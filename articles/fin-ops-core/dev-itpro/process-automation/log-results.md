@@ -4,7 +4,7 @@ description: Learn about how to log results and messages from process automation
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Developer
@@ -28,11 +28,11 @@ Both scheduled processes and polled processes support logging of results and mes
 
 The following illustration shows the result view.
 
-![Status, time, and message for a result.](media/execution-results.png)
+:::image type="content" source="media/execution-results.png" alt-text="Screenshot of status, time, and message for a result.":::
 
 The following illustration shows the message view. To open this view, select **View log** in the **Log** column in the result view.
 
-![Exception type and message for an individual message.](media/execution-message-log.png)
+:::image type="content" source="media/execution-message-log.png" alt-text="Screenshot of exception type and message for an individual message.":::
 
 ## ProcessExecutionSourceLink table
 

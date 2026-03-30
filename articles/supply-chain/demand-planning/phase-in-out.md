@@ -52,7 +52,7 @@ The following table shows an example of forecasted sales after the phase in and 
 
 ## Manage phase in/out rule groups
 
-Use phase in/out rule groups to define the phase in/out calculations that are applied in your forecast and calculation models. To create, view, or edit a rule group, follow these steps.
+Use phase in/out rule groups to define the phase in/out calculations that are applied in your forecast and calculation models. To create, view, or edit a rule group, follow these steps:
 
 1. On the navigation pane, select **Configuration** \> **Phase in/out**.
 1. Follow one of these steps:

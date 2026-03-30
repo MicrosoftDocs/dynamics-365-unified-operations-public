@@ -22,7 +22,7 @@ This article describes tasks such as reprinting pay statements, and replacing pa
 
 ## Print or reprint pay statements for previously processed payments
 
-To print or reprint pay statements for payments that were previously processed, follow these steps.
+To print or reprint pay statements for payments that were previously processed, follow these steps:
 
 1. Open the **Pay statements report** page. You can also print pay statements from the **All Pay statements** page.
 2. In the **Pay cycle** field, select the pay cycle for the pay statements to print.
@@ -34,7 +34,7 @@ If a check was damaged when it was printed, you can follow these steps to reprin
 
 If you have permissions to change values on the **Cash and bank management parameters** page, and you want to use the same check number, on the **Cash and bank management parameters** page, in the **Check setup** section, select the **Allow check reuse** check box. 
 
-If you don't have permission to change values on the **Cash and bank management parameters** page, follow these steps.
+If you don't have permission to change values on the **Cash and bank management parameters** page, follow these steps:
 
 1. On the **Payment journal** page, select the payment journal, and then click **Lines**.
 2. On the **Journal voucher** page, select the check payment to reprint.
@@ -50,7 +50,7 @@ If you don't have permission to change values on the **Cash and bank management 
 
 ## Reissue a check to a worker after the payment journal is posted
 
-Use this procedure when check payments were generated, and the payment journal was posted, but you want to reprint a check for a worker. For example, you might have to reprint a check that was lost. To issue another check for a worker, follow these steps.
+Use this procedure when check payments were generated, and the payment journal was posted, but you want to reprint a check for a worker. For example, you might have to reprint a check that was lost. To issue another check for a worker, follow these steps:
 
 1. On the **Cash and bank management parameters** page, select the check, and then click **Payment reversal**. You can reverse only checks that have a payment status of **Paid**.
 2. On the **Payment reversal** page, complete the information, and then click **OK**.
@@ -75,7 +75,7 @@ If the check or Automated Clearing House (ACH) file that contains the payment ha
 
 If the pay statement hasn't been submitted or posted, you don't reverse the pay statement. Instead, delete it. For more information, see [Generate and work with pay statements](noam-usa-pay-statements.md). 
 
-To void a check and reverse the payment, follow these steps.
+To void a check and reverse the payment, follow these steps:
 
 1. On the **Checks** page, select the check, and then click **Payment reversal**. You can reverse only checks that have a payment status of **Paid**.
 2. On the **Payment reversal** page, complete the information, and then click **OK**.
@@ -103,7 +103,7 @@ To void a check and reverse the payment, follow these steps.
 
 ## Recreate an ACH file
 
-To re-create an ACH file for a group of electronic payments when the payment journal hasn't been posted, follow these steps.
+To re-create an ACH file for a group of electronic payments when the payment journal hasn't been posted, follow these steps:
 
 1. On the **Payment journal** page, select the payment journal that contains the lines to re-create the file for, and then click **Lines**.
 2. On the **Journal voucher** page, select the lines to re-create the file for.

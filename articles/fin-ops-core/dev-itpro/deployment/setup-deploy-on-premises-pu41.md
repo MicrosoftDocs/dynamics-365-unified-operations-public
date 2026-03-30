@@ -20,7 +20,7 @@ ms.service: dynamics-365-op
 
 This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 through. Platform update 41 is available with version 10.0.17. Platform update 55 is available with version 10.0.31.
 
-The [Local Business Data group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. There, you can post any questions or feedback that you have about the on-premises deployment.
+The [Local Business Data](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc5NDAxNDYxNzYifQ) community on Microsoft Viva Engage is available. There, you can post any questions or feedback that you have about the on-premises deployment.
 
 ## Finance + Operations components
 

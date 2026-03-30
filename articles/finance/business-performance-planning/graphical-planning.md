@@ -49,7 +49,7 @@ If a dimension field that is used in a slicer isn't added to the **Filters** fie
 
 #### Add dimension fields
 
-To add dimension fields to the **Filters** field, follow these steps.
+To add dimension fields to the **Filters** field, follow these steps:
 
 1. Drag the required dimension fields (for example, **Category**, **Account**, and **Business Unit**) to the filters section of the Graphical planning visual.
 2. Go to the **Data** pane. Dimensions are prefixed with "Msdyn\_xpnadim" in the data column of Power BI. After you find the dimension that you want, expand it, select the **msdyn\_name** field, and drag it to the filters section.

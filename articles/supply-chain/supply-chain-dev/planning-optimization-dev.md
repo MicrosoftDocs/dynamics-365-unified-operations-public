@@ -10,12 +10,12 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Unified developer experience for planning optimization (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+
+[!include [banner](../includes/banner.md)]
 
 Microsoft Power Platform provides a unified developer experience that includes tools and environments for writing and debugging extensions for the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This topic provides an overview of the process for setting up a development environment and testing your extensions.
 
@@ -42,7 +42,7 @@ After you complete the steps in the [Step-by-step provisioning guide](/power-pla
 
 ### Confirm that the Planning Optimization Add-in is installed
 
-To confirm that you successfully added the Planning Optimization Add-in to your environment, follow these steps.
+To confirm that you successfully added the Planning Optimization Add-in to your environment, follow these steps:
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the navigation pane, select **Environments**, and then open the environment where you installed the add-in.
@@ -51,12 +51,12 @@ To confirm that you successfully added the Planning Optimization Add-in to your 
 
 ### Turn on Planning Optimization for your Supply Chain Management environment
 
-To turn on Planning Optimization for your Supply Chain Management environment, follow these steps.
+To turn on Planning Optimization for your Supply Chain Management environment, follow these steps:
 
 1. Sign in to your new Supply Chain Management environment. (You can find your Supply Chain Management URL on the environment page in [Power Platform admin center](https://admin.powerplatform.microsoft.com).)
 1. Follow the instructions in [Turn on Planning Optimization for your environment](/dynamics365/supply-chain/master-planning/planning-optimization/get-started#turn-on-planning-optimization-for-your-environment).
 
-## Related resources
+## Related information
 
 - [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview)
 - [Unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview)

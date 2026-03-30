@@ -4,7 +4,7 @@ description: Learn how to use dataflows to load data into the Business performan
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 11/24/2025
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -16,6 +16,12 @@ ms.dyn365.ops.version: Human Resources
 # Load data into Business performance planning using dataflows
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+
+
+> [!NOTE]
+> This article describes the cube creation process that's available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new cube creation process is available. For more information, see [Cubes (preview)](bpp-create-cubes.md). 
 
 Fact data is a combination of multiple sources, or some level of transformation must be done to get the data into the correct structure for planning. When you load production data, we recommend that you use dataflows. Dataflows provide better support for typical production volume and complexity. They also provide a transformation experience, detailed status results when data is loaded, and the option to schedule refreshes of the data.
 
@@ -27,7 +33,7 @@ Dataflows can populate dimensions and cubes in Business performance planning. Af
 
 ## Populate dimensions and cubes
 
-To use dataflows to populate dimension or cube values, follow these steps.
+To use dataflows to populate dimension or cube values, follow these steps:
 
 1. In Power Apps, create the dimension or cube in Business performance planning before you create the dataflow. Make a note of the table name for the cube or dimension. Here are some examples:
 
@@ -52,7 +58,7 @@ A dataflow can be used to load data only if the dimension or cube has already be
 
 This example shows how to create a dataflow when you're loading fact data into a cube.
 
-To create the cube in Business performance planning dimensions, follow these steps.
+To create the cube in Business performance planning dimensions, follow these steps:
 
 1. In the **Cube** list, select **New cube**.
 2. Enter a name for the cube.

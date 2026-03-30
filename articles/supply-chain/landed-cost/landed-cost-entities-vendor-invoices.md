@@ -1,8 +1,8 @@
 ---
 title: Vendor invoice entities
 description: Learn about vendor invoice entities, which enable cost type codes to be configured for internal costs or externally derived costs.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: reference

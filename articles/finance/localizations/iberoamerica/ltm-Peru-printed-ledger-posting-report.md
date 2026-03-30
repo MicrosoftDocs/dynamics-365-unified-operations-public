@@ -32,7 +32,7 @@ Before generating and printing the report, complete the following prerequisites:
 
 Learn more in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the **Electronic Reporting (ER)** parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
-- Create a new **SSRS Reports/Services reference** record, then follow these steps.
+- Create a new **SSRS Reports/Services reference** record, then follow these steps:
   
   1. In the **Report/Service Id** field, enter **PrintLPost**.
   1. In the **Report/Service name** field, enter **PrintLPost**.
@@ -44,7 +44,7 @@ Learn more in [Import Electronic reporting (ER) configurations from Dataverse](.
 
 ## Print the Ledger Posting report for Peru
 
-To print the ledger posting report for Peru, follow these steps.
+To print the ledger posting report for Peru, follow these steps:
 1. Go to **General Ledger > Inquiries and Reports > LATAM > Ledger Posting Report**.
 1. In the **Ledger posting report** dialog box, set the filters for the report.
 1. In the **Report ID field**, select the corresponding report or service ID.

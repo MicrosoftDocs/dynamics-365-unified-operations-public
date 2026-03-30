@@ -20,7 +20,7 @@ An *interface* specifies a set of public instance methods. An interface defines 
 
 All interfaces are public, even if you don't explicitly add the **public** keyword in front of the **interface** keyword in interface declaration. The methods on an interface are also public. Explicit inclusion of the keyword **public** is optional. 
 
-To create an interface, follow these steps.
+To create an interface, follow these steps:
 
 1.  In Server Explorer, right-click the project, and then click **Add**.
 2.  In the **New Item** dialog box, select **Interface**, and then enter a name for the interface.

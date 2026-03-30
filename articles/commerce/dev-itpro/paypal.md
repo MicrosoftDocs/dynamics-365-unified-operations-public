@@ -166,7 +166,7 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
 
 ### Set up the PayPal payment method for the online store
 
-To set up the PayPal payment method for the online store, follow these steps.
+To set up the PayPal payment method for the online store, follow these steps:
 
 1. In the online store where the PayPal payment connector is configured, on the **Setup** tab, select **Payment methods**.
 1. Select **New** to add a payment method.
@@ -205,7 +205,7 @@ Customers can review orders and change checkout order details before they select
 
 #### Configure the checkout fragment for express payments using PayPal with the payment module
 
-To set up the checkout fragment for express payments using PayPal in site builder, follow these steps.
+To set up the checkout fragment for express payments using PayPal in site builder, follow these steps:
 
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
@@ -224,7 +224,7 @@ To set up the checkout fragment for express payments using PayPal in site builde
 
 #### Configure the cart page for express using PayPal with the Payment module
 
-To set up the cart page for express payment using PayPal in site builder, follow these steps.
+To set up the cart page for express payment using PayPal in site builder, follow these steps:
 
 1. Go to **Pages**.
 1. Select your site's cart page, and then select **Edit**.

@@ -21,7 +21,7 @@ This article explains how to create a vendor for Mexico to support the Declaraci
 
 The following procedure uses the MXMF demo company data.
 
-To create a vendor to support the DIOT declaration and other legal reports, follow these steps.
+To create a vendor to support the DIOT declaration and other legal reports, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Vendors \> All vendors**.
 1. Select **New**.

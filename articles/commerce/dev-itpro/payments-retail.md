@@ -2,9 +2,8 @@
 title: Payments FAQ
 description: This article answers frequently ask questions about payment options in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 05/18/2023
+ms.date: 10/24/2025
 ms.topic: faq
-audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
@@ -66,7 +65,18 @@ Yes, but you must connect them using customization.
 
 ### What is the Service level agreement (SLA) for out-of-box payment connectors like Adyen?
 
-For the Adyen connector, refer to the Adyen connector [overview page](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) if the issue is related to set up. For other setup or functional issues with the connector itself, create a support request with Microsoft. If the issue is originating from the device itself or Adyen's processing service, contact Adyen support at support-dynamics365@adyen.com.
+If the issue is related to Adyen connector setup, refer to the [Dynamics 365 Payment Connector for Adyen overview](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector). 
+
+For other setup or functional issues associated with the Dynamics 365 Payment Connector, create a Microsoft Support request.
+
+If the issue originates from the device itself or Adyen's processing service, use the following email template to start the support process with the Adyen team. To expedite troubleshooting, ensure that the email contains all the required details.
+
+| Field        | Value |
+|--------------|-------|
+| To           | `support@adyen.com` |
+| Cc           | |
+| Subject line | Microsoft Dynamics Support Request |
+| Body         | <p>Hi Support,</p><p>Please provide support for the following issue:</p><ul><li>Merchant account</li><li>Environment (Test/Prod)</li><li>Channel (POS/call center/Commerce e-commerce)</li><li>Payment Service Provider (PSP) reference number, if the issue involved a specific transaction. (You can find the PSP reference number on the receipt, in the Adyen Customer Area, or on the transactions menu on the POS terminal.)</li><li>Screenshot or photo of the error message, if applicable.</li><li>Event Viewer logs (in .txt format)</li><li>Description of the issue and troubleshooting steps that you've tried.</li></ul> |
 
 ### If a supported payment provider issues an update, will Microsoft automatically update the payment connector or do I need to work with the payment provider to get the updated payment connector?
 

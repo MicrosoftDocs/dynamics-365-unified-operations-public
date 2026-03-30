@@ -1,8 +1,8 @@
 ---
 title: Landed cost inquiries
 description: Learn how to find and use the various types of inquiries that are available for the Landed cost module with a table that defines various columns.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMLine, ITMItemTracking, ITMContainerActivityTracking, ITMContainerTracking
 ms.topic: how-to

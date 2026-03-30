@@ -2,9 +2,9 @@
 title: Settle vendor consolidated invoices using a payment journal
 description: Learn how to settle vendor consolidated invoices for Japan using a payment journal in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/09/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -17,17 +17,17 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to settle vendor consolidated invoices for Japan using a payment journal in Microsoft Dynamics 365 Finance.
+This article explains how to settle vendor consolidated invoices for Japan by using a payment journal in Microsoft Dynamics 365 Finance.
 
-In Japan, payments are made and settled against consolidated invoices.
+In Japan, you make payments and settle them against consolidated invoices.
 
-The following procedure walks you through how to settle a consolidated invoice using a payment journal and the payment proposal feature. 
+The following procedure walks you through how to settle a consolidated invoice by using a payment journal and the payment proposal feature.
 
 Before you complete the procedure, ensure that you have a consolidated invoice created and confirmed. 
 
 The procedure uses the demo data company JPMF.
 
-To settle vendor consolidated invoices using a payment journal, follow these steps.
+To settle vendor consolidated invoices by using a payment journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
 1. In the **Consolidation ID** field, copy the value to reference later. You can use "JPMF-000002" from the demo data company JPMF.  
@@ -45,8 +45,6 @@ To settle vendor consolidated invoices using a payment journal, follow these ste
 1. Confirm that the payment line was generated based on the proposal and then provide a date for posting. When there are multiple invoices tied on one consolidated invoice, multiple lines might be generated on the payment journal.  
 1. Select **Post**.
 1. Go to **Accounts payable \> Periodic tasks \> Consolidated invoice**.
-1. Confirm that the status of the consolidated invoice has been updated to be **Settled**.  
-
-
+1. Confirm that the status of the consolidated invoice is **Settled**.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

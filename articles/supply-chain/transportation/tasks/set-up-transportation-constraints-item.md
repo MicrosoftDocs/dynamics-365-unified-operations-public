@@ -1,20 +1,21 @@
---- 
+---
 title: Set up transportation constraints for an item
-description: This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.
+description: Learn how to set up a transportation constraint to prevent a selected item from being transported through a selected hub.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 08/27/2024
-ms.custom:
-ms.reviewer: kamaybac    
+ms.reviewer: kamaybac
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
+ms.topic: how-to
+ms.date: 11/19/2025
+ms.custom:
+  - bap-template
 ---
 
 # Set up transportation constraints for an item
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure sets up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator.
+This procedure sets up a transportation constraint to prevent a selected item from being transported through a selected hub. A Transportation coordinator typically carries out this task.
 
 ## Create an item constraint
 

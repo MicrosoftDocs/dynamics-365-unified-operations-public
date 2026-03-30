@@ -48,7 +48,7 @@ Follow these steps to install the business performance planning app.
 
 ## Delete the app
 
-If you must delete the business performance planning app, follow these steps.
+If you must delete the business performance planning app, follow these steps:
 
 1. In the app, delete all the cubes and then all the dimensions.
 1. In Microsoft Power Platform, open the maker portal for the environment, and select **Solutions**.

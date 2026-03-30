@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: DataManagementWorkspace, CustParameters
 ms.topic: how-to
-ms.date: 03/15/2024
+ms.date: 03/10/2026
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -31,7 +31,7 @@ Before you can follow the procedures in this article, your system must meet the 
 To use the features described in this topic, your system must meet the following version requirements:
 
 - You must be running Supply Chain Management version 10.0.39 or later.
-- You must be running [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm) version 2.3.4.312 or later.
+- You must be running [Dual-write Supply Chain solution](https://marketplace.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm) version 2.3.4.312 or later.
 - If you've deployed the dual-write global address book (GAB) solution, you must be running version 3.5.2.72 or later of the GAB solution.
 
 ### Number sequence requirements

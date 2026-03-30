@@ -28,7 +28,7 @@ There are two types of time freezes:
 
 ## Manage time freeze rules
 
-To view, create, edit, or delete a time freeze rule, follow these steps.
+To view, create, edit, or delete a time freeze rule, follow these steps:
 
 1. On the navigation pane, select **Configuration** \> **Time freezes**.
 

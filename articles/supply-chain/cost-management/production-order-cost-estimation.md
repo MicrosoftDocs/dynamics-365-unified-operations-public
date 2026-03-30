@@ -1,8 +1,8 @@
 ---
 title: Production order cost estimation
 description: Learn about production cost estimation, which provides the capacity consumption costs of producing items in the planned production order quantity.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: BOMCalcTrans, InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
 ms.topic: how-to

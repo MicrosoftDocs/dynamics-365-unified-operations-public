@@ -1,13 +1,13 @@
 ---
 title: Platform updates for version 10.0.27 of finance and operations apps (July 2022)
 description: Learn about the features that are included in the platform updates for version 10.0.27 of finance and operations apps released in July 2022.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 04/12/2024
+ms.date: 11/21/2025
 ms.update-cycle: 1095-days
 ms.reviewer: johnmichalak
 ms.search.region: Global

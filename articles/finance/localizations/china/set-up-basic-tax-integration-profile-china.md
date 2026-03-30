@@ -2,9 +2,9 @@
 title: Set up basic tax integration profile for China
 description: This article describes how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/11/2025
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
@@ -19,13 +19,14 @@ ms.custom:
 
 This article describes how to set up a tax integration profile, update customer settings for issuing VAT invoices, and set up VAT invoice descriptions for China in Microsoft Dynamics 365 Finance.
 
-The following procedure was created using the demo data company CNMF.
+This procedure uses the demo data company CNMF.
 
 Before you can execute the procedure, you must complete the following procedures:
+
 - Golden tax integration import setup
 - Maintain golden tax export format procedure
 
-To set up basic tax integration profile for China, follow these steps.
+To set up basic tax integration profile for China, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Tax integration \> Tax integration profiles**.
 1. Select **New**.
@@ -39,7 +40,7 @@ To set up basic tax integration profile for China, follow these steps.
 1. In the **Invoice auditor** field, enter or select a value.
 1. In the **Payment collector** field, enter or select a value.
 1. In the **Format mapping** field, enter or select a value.
-1. In the Non-deductible VAT invoices field, select **Yes**.
+1. In the **Non-deductible VAT invoices** field, select **Yes**.
 1. Expand the **Default value of description and unit** section.
 1. Select **New**.
 1. In the list, mark the selected row.
@@ -62,7 +63,5 @@ To set up basic tax integration profile for China, follow these steps.
 1. In the **Description** field, enter a value.
 1. In the **Unit** field, enter or select a value.
 1. Select **Save**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

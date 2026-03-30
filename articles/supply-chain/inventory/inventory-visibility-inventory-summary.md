@@ -31,7 +31,7 @@ The **Inventory summary** feature isn't compatible with [items enabled for wareh
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
-To enable the **Inventory summary** page and set the synchronization frequency in UI version 2, follow these steps.
+To enable the **Inventory summary** page and set the synchronization frequency in UI version 2, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
@@ -53,7 +53,7 @@ To enable the **Inventory summary** page and set the synchronization frequency i
 
 ## Turn on the inventory summary feature in UI version 1
 
-To enable the **Inventory summary** page and set the synchronization frequency in UI version 1, follow these steps.
+To enable the **Inventory summary** page and set the synchronization frequency in UI version 1, follow these steps:
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the **Change area** menu at the bottom of the navigation pane, select **Legacy UI**.

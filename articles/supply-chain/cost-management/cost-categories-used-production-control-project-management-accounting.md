@@ -1,8 +1,8 @@
 ---
 title: Cost categories used in Production control and Project management accounting
 description: Learn about the cost categories that you must define for these types of production work for production and project purposes.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ProjCategory
 ms.topic: how-to

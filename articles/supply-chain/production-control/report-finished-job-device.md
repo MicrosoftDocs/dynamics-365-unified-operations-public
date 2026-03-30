@@ -31,7 +31,7 @@ Workers use the **Report progress** page on the job card device to report quanti
 
 ## Control whether quantities that are reported as finished are added to inventory
 
-To control whether and how the quantities that are reported as finished on the last operation should be added to inventory, follow these steps.
+To control whether and how the quantities that are reported as finished on the last operation should be added to inventory, follow these steps:
 
 1. Go to **Product control \> Setup \> Manufacturing execution \> Production order defaults**.
 1. On the **Report as finished** tab, set the **Update finished report on-line** field to one of the following values:
@@ -129,7 +129,7 @@ The job card device supports three scenarios for reporting on serial-controlled 
 
 To enable a product to support any of the available serial-controlled scenarios, follow these steps:
 
-To enable each scenario, follow these steps.
+To enable each scenario, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the product to configure.
@@ -199,7 +199,7 @@ Warehouse management processes (WMS) can use the license plate dimension to trac
 
 ### Set up reporting as finished to a license plate
 
-To control whether workers should reuse an existing license plate or generate a new license plate when they report quantities as finished, follow these steps.
+To control whether workers should reuse an existing license plate or generate a new license plate when they report quantities as finished, follow these steps:
 
 1. Go to **Production control \> Setup \> Manufacturing execution \> Configure job card for devices**.
 2. Set the following options for each device:

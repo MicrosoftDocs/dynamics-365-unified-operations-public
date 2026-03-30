@@ -30,7 +30,7 @@ If a package isn't successfully applied, you have two options:
 If package application fails, and you want to retry the operation, select **Resume**.
 
 ### Use the logs
-If package application fails, and you want to use the logs, follow these steps.
+If package application fails, and you want to use the logs, follow these steps:
 
 1. Download and then unzip the log files.
 2. Select the role that a step failed for, such as **AOS** or **BI**.
@@ -45,7 +45,7 @@ If package application fails, and you want to use the logs, follow these steps.
 
 **Description**
 
-Because the package that was applied wasn't valid, the servicing status is **Failed**, and no updates are listed in the **Environment updates** section. To verify whether the package is valid, follow these steps.
+Because the package that was applied wasn't valid, the servicing status is **Failed**, and no updates are listed in the **Environment updates** section. To verify whether the package is valid, follow these steps:
 
 1. Download and unzip the logs.
 2. Navigate to the logs for the Application Object Server (AOS) machine.
@@ -79,7 +79,7 @@ There isn't enough disk space to download the package. Inspect all the machines.
 
 Note that if you select **Resume** in this situation, you won't resolve the issue.
 
-To verify that the deployment failed because space issues, follow these steps.
+To verify that the deployment failed because space issues, follow these steps:
 
 1. Navigate to the **DownloadFilesAndSlipstreamTools-xxx** folder.
 2. Open the output file, and view the error message to see whether the step failed because space issues.
@@ -106,7 +106,7 @@ A step might fail with errors for one of the following reasons:
 - There is an issue with the servicing scripts.
 - A random failure occurred when the step was executed.
 
-To verify what the issue is, follow these steps.
+To verify what the issue is, follow these steps:
 
 1. Download and navigate to the step logs.
 2. Open the output file for the step, and see whether there are any errors.

@@ -35,7 +35,7 @@ To associate a guide, you use a maintenance checklist line in Asset management. 
 
 ### Associate a guide with a maintenance checklist template
 
-To associate a guide with a maintenance checklist template, follow these steps.
+To associate a guide with a maintenance checklist template, follow these steps:
 
 1. Create a guide by using the Dynamics 365 Guides PC and HoloLens apps. For information about how to create a guide, see the following articles:
 

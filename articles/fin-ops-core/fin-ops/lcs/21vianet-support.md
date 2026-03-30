@@ -2,9 +2,9 @@
 title: Support for finance and operations operated by 21Vianet in China
 description: Learn about how finance and operations apps provide many self-service support options and support through 21Vianet.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 10/02/2019
+ms.date: 11/21/2025
 ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: China (PRC)
@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-Finance and operations apps provides many self-service support options and support through 21Vianet.
+Finance and operations apps provide many self-service support options and support through 21Vianet.
 
 ## Self-help resources
 
@@ -33,9 +33,9 @@ Finance and operations apps provides many self-service support options and suppo
 
 ### Presales support
 
-Pre-sales support phone number: +86 400-886-6134
+Presales support phone number: +86 400-886-6134
 
-Pre-sales support provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. 
+Presales support provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, presales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. 
 
 ### Billing and subscription management support through 21Vianet
 
@@ -55,22 +55,22 @@ Here are some examples of billing and subscription management issues:
 
 ### Assisted Technical support through 21Vianet
 
-When you experience a technical issue with your deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
+When you experience a technical issue with your deployment, report it to 21Vianet through the [Lifecycle Services portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
 
 A support request (SR) is handled within hours, depending on the severity of its impact to your business:
 
-- **Critical business impact** - You will receive an initial response within 1 hour or less, and a support representative will work continuously, all day, until the problem is resolved. You will be expected to allocate appropriate resources to work on the request until the problem is resolved and provide accurate contact information to the support personnel handling your case.
-- **Non-critical business impact** - You will receive an initial response within 8 hours or less. You will be expected to provide accurate contact information to the support personnel handling your case.
+- **Critical business impact** - You'll receive an initial response within 1 hour or less, and a support representative will work continuously, all day, until the problem is resolved. You'll be expected to allocate appropriate resources to work on the request until the problem is resolved and provide accurate contact information to the support personnel handling your case.
+- **Non-critical business impact** - You receive an initial response within 8 hours or less. You are expected to provide accurate contact information to the support personnel handling your case.
 
 
 ### Get Premier support
-If you run mission-critical solutions, Premier support offers additional value:
+If you run mission-critical solutions, Premier support offers more value:
 
 - Proven advisory services designed to maximize your Dynamics 365 investment.
 - A designated service delivery manager committed to improving your Dynamics 365 experience.
 - Top priority reactive support to help ensure service continuity.
 
-For details about purchasing Premier support, contact your Microsoft Account team. If you have a Premier support plan you can contact support via [My Premier Online](https://support.microsoft.com/premier). 
+For details about purchasing Premier support, contact your Microsoft Account team. If you have a Premier support plan, you can contact support via [My Premier Online](https://support.microsoft.com/premier). 
 
 ## Additional resources
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)

@@ -71,7 +71,7 @@ Follow these steps to create a multisource policy.
 
 If vendor agreements that you have in place establish a minimum quantity per order for some items, you can add rules for those conditions to the system. These minimum order settings apply to all multisource policies and only to multisource policies. (In other words, rules for minimum orders per vendor apply only to planned purchase orders that are created by master planning. They don't apply to quantities from manually created purchase orders.)
 
-To set up minimum order per vendor rules, follow these steps.
+To set up minimum order per vendor rules, follow these steps:
 
 1. Go to **Procurement and sourcing \> Setup \> Policies \> Multisource policies**.
 1. On the Action Pane, select **Order quantity per vendor**.
@@ -93,7 +93,7 @@ To set up minimum order per vendor rules, follow these steps.
 
 To set up a product so that it can be purchased from multiple vendors, you must specify which multisource policy applies to it.
 
-To specify the multisource policy that applies to a product, follow these steps.
+To specify the multisource policy that applies to a product, follow these steps:
 
 1. Follow one of these steps:
 
@@ -120,7 +120,7 @@ To specify the multisource policy that applies to a product, follow these steps.
 
 For each multisource policy assignment, you can view your actual purchases and vendor allocations for the current period, and compare them against your target allocations.
 
-To view and compare target and actual vendor allocations, follow these steps.
+To view and compare target and actual vendor allocations, follow these steps:
 
 1. Go to **Procurement and sourcing \> Setup \> Policies \> Multisource policy assignments**.
 1. Select the assignment to inspect.

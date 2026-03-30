@@ -6,42 +6,41 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/20/2024
+ms.date: 03/04/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 8.1
 ---
 
 # Enable the Fiscal Establishment dimension
 
 [!include [banner](../../includes/banner.md)]
 
-SPED-Reinf events R-4010, R-4020, and R-4040 require that a fiscal establishment is determined for non-fiscal operations that are posted through a journal. Therefore, you must enable fiscal establishment as a dimension and select it on the lines of a journal.
+SPED-Reinf events R-4010, R-4020, and R-4040 require that you determine a fiscal establishment for non-fiscal operations that you post through a journal. Therefore, you must enable fiscal establishment as a dimension and select it on the lines of a journal.
 
 Follow these steps to enable fiscal establishment as a dimension.
 
-1. Go to **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimensions** to add and configure the new dimension, **Fiscal Establishment**. Set the new dimension as **Active**.
+1. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions** to add and configure the new dimension, **Fiscal Establishment**. Set the new dimension as **Active**.
 
-    ![New dimension on the Fiscal dimensions page.](../media/bra-fiscal-dimenssions.png)
+    :::image type="content" source="../media/bra-fiscal-dimenssions.png" alt-text="Screenshot of the new dimension on the Fiscal dimensions page.":::
 
-2. Go to **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
-3. In the list, find and select the **Fiscal Establishment** dimension, and then select the left arrow to add it to the **Available financial dimensions** list.
+1. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimension sets**.
+1. In the list, find and select the **Fiscal Establishment** dimension, and then select the left arrow to add it to the **Available financial dimensions** list.
 
-    ![Adding the new dimension to the Available financial dimensions list on the Fiscal dimension sets page.](../media/bra-fiscal-establishment.png)
+    :::image type="content" source="../media/bra-fiscal-establishment.png" alt-text="Screenshot of adding the new dimension to the Available financial dimensions list on the Fiscal dimension sets page.":::
 
-4. Go to **General ledger** \> **Chart of accounts** \> **Structures** \> **Configure account structures**, and select the line that you want to configure the account structure for.
-5. Select **Edit**, and make any necessary changes to the account structure.
+1. Go to **General ledger** > **Chart of accounts** > **Structures** > **Configure account structures**, and select the line that you want to configure the account structure for.
+1. Select **Edit**, and make any necessary changes to the account structure.
 
-    ![Edit button on the Account structures page.](../media/bra-acc-structure.png)
+    :::image type="content" source="../media/bra-acc-structure.png" alt-text="Screenshot of the Edit button on the Account structures page.":::
 
-6. While you're editing the account structure, select **Add segment**, and add **Fiscal Establishment**.
-7. Select **Activate**, and add the dimension separator.
+1. While you're editing the account structure, select **Add segment**, and add **Fiscal Establishment**.
+1. Select **Activate**, and add the dimension separator.
 
-    ![Adding a segment to the account structure.](../media/bra-add-segment.png)
+    :::image type="content" source="../media/bra-add-segment.png" alt-text="Screenshot of adding a segment to the account structure.":::
 
-After the **Fiscal Establishment** dimension is configured, it's available for selection among the financial dimensions for a journal line.
+After you configure the **Fiscal Establishment** dimension, it's available for selection among the financial dimensions for a journal line.
 
-![Financial dimensions being selected for a journal line.](../media/bra-sel-dim.png)
+:::image type="content" source="../media/bra-sel-dim.png" alt-text="Screenshot of financial dimensions being selected for a journal line.":::
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

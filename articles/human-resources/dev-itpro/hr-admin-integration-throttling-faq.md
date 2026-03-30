@@ -64,10 +64,6 @@ The throttling limits for the Human Resources service are based on three categor
 - **Time usage:** 5 minutes of total execution time in 5 minutes
 - **Concurrency:** 25 requests at any given time
 
-## How do I access the Data management group on Microsoft Viva Engage?
-
-Follow this link: [Data management group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13408417).
-
 ## Will a retry request receive preferential treatment over a new request?
 
 No.

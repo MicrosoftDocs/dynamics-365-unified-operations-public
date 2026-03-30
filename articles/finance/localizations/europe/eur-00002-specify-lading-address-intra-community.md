@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/27/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
@@ -20,16 +20,16 @@ ms.search.form:
 
 This article explains how to specify a lading address for an intra-community trade transaction with Microsoft Dynamics 365 Finance.
 
-The following procedure shows how to specify a lading address for an intra-community trade transaction. For example, a Germany company orders items from a vendor with a German business address. This vendor has a warehouse in Italy and ships the items from there. This delivery must be reported in the Intrastat. The same behavior is valid for customer returns.
+The following procedure shows how to specify a lading address for an intra-community trade transaction. For example, a Germany company orders items from a vendor with a German business address. This vendor has a warehouse in Italy and ships the items from there. You must report this delivery in the Intrastat. The same behavior is valid for customer returns.
 This procedure applies to all European countries/regions.
 
 Before you can complete the procedure, you must configure Intrastat reporting. The procedure is intended for accountants.
 
-The following procedure uses the was created using the demo data company DEMF with a primary address in Germany.
+The following procedure uses the demo data company DEMF with a primary address in Germany.
 
-To specify a lading address for an intracommunity transaction, follow these steps.
+To specify a lading address for an intracommunity transaction, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
+1. In Dynamics 365 Finance, go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 1. Select **New**.
 1. Enter or select a value. For example, select **DE-001**. This vendor has a German business address.  
 1. Select **OK**.
@@ -61,13 +61,11 @@ To specify a lading address for an intracommunity transaction, follow these step
 1. Close the page.
 1. Select **Post**.
 1. Close the page.
-1. Go to **Tax \> Declarations \> Foreign trade \> Intrastat**.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 1. Select **Transfer**.
 1. In the **Vendor invoice** field, select **Yes**.
 1. Select **OK**.
 1. Select the **General** tab.
 1. Find a newly created line and verify that the sender shipped the goods from Italy.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

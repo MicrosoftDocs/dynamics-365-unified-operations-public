@@ -1,8 +1,8 @@
 ---
 title: Prepare to maintain standard costs for manufactured items
 description: Learn about the steps for preparing to maintain costs for manufactured items, including a step-by-step process for preparing to maintain costs. 
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventStdCostConv 
 ms.topic: how-to
@@ -17,7 +17,7 @@ ms.custom:
 
 This article describes the steps for preparing to maintain costs for manufactured items. The steps for manufactured items differ slightly from the steps for purchased items.
 
-Policies that are assigned to manufactured items can affect the cost calculations for the parent manufactured items. To prepare to maintain costs for manufactured items, follow these steps.
+Policies that are assigned to manufactured items can affect the cost calculations for the parent manufactured items. To prepare to maintain costs for manufactured items, follow these steps:
 
 1. Assign an item model group to the manufactured item.
 

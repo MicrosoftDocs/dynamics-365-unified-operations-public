@@ -21,7 +21,7 @@ This article explains how to authorize your Microsoft Dynamics 365 Finance envir
 
 Before you start to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services, make sure that you've [registered an integration point in ID-porten](emea-nor-vat-return-integration-point.md). Additionally, make sure that the **Gyldig(e) redirect uri-er** field of your integration point is set to the internet address (URL) of the **Web applications** page in the legal entity that you will interoperate with ID-porten and Altinn web services from.
 
-To authorize your Finance environment in ID-porten and Altinn web services, follow these steps.
+To authorize your Finance environment in ID-porten and Altinn web services, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
 1. Select the **NO ID-Porten** web application in the list on the left.

@@ -23,7 +23,7 @@ To use a cost other than the current cost for returns from a customer, use one o
 
 ## Method 1: Manually enter the return cost price
 
-By default, when you add items to a return order, the items are returned to inventory at the current cost price. To specify a different return cost price, follow these steps.
+By default, when you add items to a return order, the items are returned to inventory at the current cost price. To specify a different return cost price, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales returns** \> **All return orders**.
 

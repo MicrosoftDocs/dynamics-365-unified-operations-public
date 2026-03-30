@@ -22,7 +22,7 @@ This article explains how to set up fixed assets for Russia in Microsoft Dynamic
 
 You define a value model so that you can create fixed asset transactions in the general ledger for accounting functions, such as tax and business transactions. You can also create submodels and depreciation groups for each value model.
 
-To set up fixed asset value models, follow these steps.
+To set up fixed asset value models, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Value models**.
 1. Select **New** to create a value model.
@@ -53,7 +53,7 @@ To set up fixed asset value models, follow these steps.
 
 You can set up posting profiles for fixed assets. Posting profiles define the ledger accounts that are used for each fixed asset transaction.
 
-To set up fixed asset posting profiles, follow these steps.
+To set up fixed asset posting profiles, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Posting profiles**.
 1. Select **New** to create a fixed asset posting profile.
@@ -136,7 +136,7 @@ Fixed asset groups are used to group fixed assets. By defining fixed asset group
 
 Use the **FA groups** list page to define fixed asset groups for accounting of fixed assets, working clothes, special rigging, and not-valuable fixed assets (NVFAs). To each group that you define, you assign an appropriate type by using the **Type of group** field. You can also use the **FA group value models** page to set up value models for the fixed asset groups that you define, and can specify the duration of an asset's wear or usage period.
 
-To set up fixed asset groups, follow these steps.
+To set up fixed asset groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **FA groups**.
 1. Select **New** to create a fixed asset group.
@@ -166,7 +166,7 @@ To set up fixed asset groups, follow these steps.
 
 ## Set up fixed asset parameters
 
-To set up fixed asset parameters, follow these steps.
+To set up fixed asset parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
 1. On the **Fixed assets** tab, on the **General** FastTab, in the **Base value model** field, select the value model for accounting.

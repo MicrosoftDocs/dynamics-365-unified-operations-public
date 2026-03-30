@@ -4,7 +4,7 @@ description: Learn about how to get started with Electronic invoicing for Austra
 author: ilikond
 ms.author: ikondratenko
 ms.topic: get-started
-ms.date: 01/29/2024
+ms.date: 03/02/2026
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application User
@@ -19,31 +19,31 @@ ms.dyn365.ops.version: AX 10.0.39
 [!INCLUDE[banner](../../includes/banner.md)]
 [!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+This article helps you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that depend on the country or region in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
 After you configure Electronic invoicing, you can generate XML files of electronic invoices by using the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format specification with the Australian and New Zealand extension.
 
 > [!NOTE]
-> The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management. For on-premises deployments, see [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md).
+> The electronic invoicing approach described in this article is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management. For on-premises deployments, see [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md).
 
 ## Prerequisites
 
-Before you begin the procedures in this article, the following prerequisites must be met:
+Before you begin the procedures in this article, make sure the following prerequisites are met:
 
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-- Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- You're familiar with Electronic invoicing as described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
+- You complete the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Country/region-specific configuration for the Electronic invoicing for Australia and New Zealand feature
 
-Some of the parameters from the **Electronic invoicing for Australia and New Zealand** Electronic invoicing feature are published with default values. Before you deploy this feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
+Some parameters in the **Electronic invoicing for Australia and New Zealand** Electronic invoicing feature have default values. Before you deploy this feature to the service environment, review the default values, and update them as needed to better reflect your business operations.
 
 1. Import the latest version of the **Electronic invoicing for Australia and New Zealand** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 
     > [!NOTE]
-    > The **Electronic invoicing for Australia and New Zealand** feature is provided by Microsoft. It's ready to use and requires no additional configuration. For information about how to configure invoicing features if you must apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Australia or New Zealand.
+    > Microsoft provides the **Electronic invoicing for Australia and New Zealand** feature. It's ready to use and requires no additional configuration. For information about how to configure invoicing features if you must apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Australia or New Zealand.
 
-1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. Always create the copy of the feature as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Finance configuration
 
@@ -58,7 +58,7 @@ You must configure some additional parameters directly in Finance.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](../media/apac_aus_nzl_einvoice_parameters.jpg)
+    :::image type="content" source="../media/apac_aus_nzl_einvoice_parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
 1. Save your changes, and close the page.
 
@@ -79,31 +79,31 @@ The primary address of the legal entity must be in Australia or New Zealand.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 1. On the **Addresses** FastTab, add a valid address for the customer.
 1. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
-1. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+1. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who is the buyer's contact.
 
     > [!NOTE]
-    > All available contact persons must already be defined for this customer.
+    > Define all available contact persons for this customer.
 
 ### Configure units of measure
 
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID in the list, and then select **External codes**.
-1. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-1. In the **Value** section, in the **Value** field, enter the external code to use as the [units of measure](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) code for international trade.
+1. On **External codes**, in the **Overview** section, enter a code in the **Code** field that corresponds to the selected unit ID.
+1. In the **Value** section, enter the external code in the **Value** field to use as the [units of measure](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) code for international trade.
 
     > [!NOTE]
     > When no specific units of measure are assumed, the default value **EA** (each) is used.
 
 ### Configure sales tax codes
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-1. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-1. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code that you selected in step 2.
-1. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+1. Select a sales tax code. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+1. In the **Overview** section, create a line for the selected unit. Enter the sales tax code in the **External code** field that you selected in step 2.
+1. In the **Value** section, enter an external code in the **Value** field to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
 
 ### Customer requisition
 
-When you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter a customer requisition. You can also add an optional customer reference.
+When you register free text invoices, invoices that are based on sales orders, or project invoices, enter a customer requisition. You can also add an optional customer reference.
 
 #### Free text invoices
 
@@ -122,17 +122,17 @@ When you register free text invoices, invoices that are based on sales orders, o
 1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 1. Create a new project contract, or select an existing project contract.
 1. On the **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
-1. On the **Funding source details** page, on the **Other** FastTab, in the **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract.
+1. On the **Funding source details** page, on the **Other** FastTab, in the **References** section, enter default values for the contract in the **Customer requisition** and **Customer reference** fields.
 
 ## Issue electronic invoices
 
 After you complete all the required configuration steps, you can generate electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type.
+You can check the results of a submission by going to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log** and selecting the required document type.
 
-To download the XML files of electronic invoices for successfully processed invoices, select **Electronic document** \> **Download file**.
+To download the XML files of electronic invoices for successfully processed invoices, select **Electronic document** > **Download file**.
 
-![Screenshot that shows the Download file command on the Electronic document submission log page.](../media/apac_aus_nzl_einvoice_log.jpg)
+:::image type="content" source="../media/apac_aus_nzl_einvoice_log.jpg" alt-text="Screenshot that shows the Download file command on the Electronic document submission log page.":::
 
 ## Additional resources
 

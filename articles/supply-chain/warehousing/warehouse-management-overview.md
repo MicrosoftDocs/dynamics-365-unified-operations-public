@@ -5,8 +5,8 @@ author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSParameters, WHSWorkPool
-ms.topic: how-to
-ms.date: 05/16/2024
+ms.topic: overview
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
@@ -21,7 +21,7 @@ The Warehouse management module lets you manage warehouse processes in manufactu
 
 To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.
 
-- Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.
+- Go to the **Warehouse management parameters** page under **Warehouse management** \> **Setup** to set up general warehouse parameters.
 
 You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
@@ -42,12 +42,12 @@ You must configure components for inbound and outbound warehouse process workflo
 - Various item receiving capabilities
 - Multiple picking strategies
 - Out-of-the-box support for the next generation of bar code scanners
-- Pallet/container types for warehouse processes
+- Pallet and container types for warehouse processes
 - Advanced counting capabilities
 - Label printing and label routing with Zebra ZPL support
 - Business intelligence integration into Power BI
 - Manual and automatic movement of inventory
-- Fully-integrated quality control (QMS)
+- Fully integrated quality control (QMS)
 - Full traceability of workers' material handling
 - Outbound wave processing
 - Manual packing and automatic containerization support
@@ -58,7 +58,7 @@ You must configure components for inbound and outbound warehouse process workflo
 
 ### What's new and in development
 
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
 
 ### Blogs
 
@@ -66,7 +66,7 @@ You can find opinions, news, and other information about Warehouse management an
 
 ## Articles
 
-The following article explore various aspects of warehouse management in Dynamics 365 Supply Chain Management:
+The following article explores various aspects of warehouse management in Dynamics 365 Supply Chain Management:
 
 - [Reservations in Warehouse management](reservations-in-warehouse-management.md)
 

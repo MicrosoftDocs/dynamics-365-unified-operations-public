@@ -1,10 +1,10 @@
 ---
 title: License codes and configuration keys report
 description: Access a report that lists the license codes and configuration keys associated with finance and operations apps.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 02/16/2021
+ms.date: 11/20/2025
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -20,15 +20,12 @@ ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
 
 This article points you to a report that lists the license codes and configuration keys available in finance and operations.
 
-When you purchase finance and operations, all functionality is included. By default, some features and functionality that you do not use may be enabled. The administrator should disable the features that are not needed by disabling license codes and configuration keys.
+When you purchase finance and operations, you get all functionality. By default, some features and functionality that you don't use might be enabled. The administrator should disable the features that aren't needed by disabling license codes and configuration keys.
 
-When a license code or configuration key is disabled, the associated module or feature is removed from the user interface. Large sets of functionality, such as modules, are controlled by license codes. Many license codes, in turn, enable configuration keys that allow you to enable and disable functionality at a more detailed level.
+When you disable a license code or configuration key, you remove the associated module or feature from the user interface. License codes control large sets of functionality, such as modules. Many license codes enable configuration keys that let you enable and disable functionality at a more detailed level.
 
 ## To view the report
-The **License codes and configuration keys report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key. 
 
-
-
-
+The **License codes and configuration keys report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each available configuration key. The report also shows the license code and menu items associated with each configuration key. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,7 +88,7 @@ When you review a request for change, you can search for dependencies. In this w
 
 #### Review affected transactions, block selected transactions, and send notifications
 
-To review affected transactions, block selected transactions, and send related notifications, follow these steps.
+To review affected transactions, block selected transactions, and send related notifications, follow these steps:
 
 1. Go to **Engineering change management \> Common \> Engineering change management \> Engineering change requests**.
 1. Either open an existing change request, or select **New** on the Action Pane to create a new change request.

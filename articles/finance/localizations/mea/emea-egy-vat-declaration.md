@@ -57,7 +57,7 @@ To generate the VAT return form and related reports in an Egypt legal entity, up
 - Tax declaration model mapping.version.70.120.xml or a later version
 - VAT Declaration Excel (EG).version.70.32  or a later version
 
-After you download the ER configurations from Lifecycle Services (LCS) or the global repository, follow these steps.
+After you download the ER configurations from Lifecycle Services (LCS) or the global repository, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Electronic reporting** workspace and select the **Reporting configurations** tile.
 1. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -81,7 +81,7 @@ These following lookup configurations are used to classify the transactions in p
 - **SalesOperationTypeLookup** > Column N: Operation type
 - **SalesItemTypeLookup** > Column O: Item type
 
-To set up the different lookups used to generate VAT declaration and related books reports, follow these steps.
+To set up the different lookups used to generate VAT declaration and related books reports, follow these steps:
 
 1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up the rules to identify the tax transaction in the related box of the VAT return form.
 1. Select the current version, and on the **Lookups** FastTab, select the lookup name. For example, **SalesItemTypeLookup**. This lookup identifies the list of classifications in the Sales VAT book that are required by the tax authority.
@@ -194,7 +194,7 @@ The following tables represent an example of suggested configuration for the des
 
 To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the **General ledger parameters** page.
 
-To set up general ledger parameters, follow these steps.
+To set up general ledger parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
@@ -206,7 +206,7 @@ To set up general ledger parameters, follow these steps.
 
 The process to prepare and submit a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
-To generate a tax declaration report, follow these steps.
+To generate a tax declaration report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
 1. Select the **Settlement period**.

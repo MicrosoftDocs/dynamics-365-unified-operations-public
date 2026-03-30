@@ -4,10 +4,11 @@ description: Learn about how to archive Dynamics 365 Supply Chain Management Inv
 author: epodkolz
 ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 4/10/2024
+ms.date: 03/13/2026
 ms.custom:
 ms.reviewer: twheeloc
 ---
+
 # Archive Dynamics 365 Supply Chain Management Inventory journal data
 
 This article explains how to archive Dynamics 365 Supply Chain Management Inventory journal data.
@@ -28,7 +29,7 @@ The **Archive with Dataverse long term retention** workspace should now be avail
 
 ## Set up an archival job
 
-To move inventory journal records to Dataverse long term retention, follow these steps.
+To move inventory journal records to Dataverse long term retention, follow these steps:
 
 1. Go to **Workspaces** \> **Archive with Dataverse long term retention**.
 1. Select **Inventory journal**.
@@ -42,7 +43,7 @@ You receive a message that the long term retention job has been created.
 
 ## View the status of the long term retention job
 
-To view the results of the long term retention job, follow these steps.
+To view the results of the long term retention job, follow these steps:
 
 1. Go to **Workspaces** \> **Archive with Dataverse long term retention** \> **Inventory journal**.
 1. A list of long term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.
@@ -54,7 +55,7 @@ To view the results of the long term retention job, follow these steps.
 
 When inventory journal data is archived by using Dataverse long term retention, the archived data is replicated to a history table in the Dynamics 365 Supply Chain Management database. Users can then view the archived data by using an inquiry page.
 
-To view the historical data, follow these steps.
+To view the historical data, follow these steps:
 
 1. Go to **Workspaces** \> **Archive with Dataverse long term retention** \> **Inventory journal**.
 1. A list of long term retention jobs is shown. Select the job where the **Job status** field is set to **Completed**.

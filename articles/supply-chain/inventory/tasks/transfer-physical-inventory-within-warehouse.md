@@ -48,7 +48,7 @@ There are options to specify *From* and *To* dimensions for each journal line. T
 
 ## View inventory transactions
 
-To see the transactions that were created when you posted your journal, follow these steps.
+To see the transactions that were created when you posted your journal, follow these steps:
 
 1. On the **Journal lines** FastTab, select the line you want to inspect.
 1. On the **Journal lines** FastTab toolbar, select **Inventory** \>  **Transactions**.

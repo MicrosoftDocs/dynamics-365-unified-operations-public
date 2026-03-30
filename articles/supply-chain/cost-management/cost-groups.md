@@ -1,8 +1,8 @@
 ---
 title: Cost groups
 description: Learn how cost groups provide the basis for segmenting and analyzing cost contributions in a manufactured item’s calculated cost.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: BOMCostGroup
 ms.topic: article

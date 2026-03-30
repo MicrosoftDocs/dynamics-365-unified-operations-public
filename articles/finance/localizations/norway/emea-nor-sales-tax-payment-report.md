@@ -25,7 +25,7 @@ This article includes country/region-specific information about how to set up th
 
 To generate a VAT declaration in the required format for a specific tax authority, you must set up the report layout for the sales tax authorities.
 
-To set up the report layout for the sales tax authorities, follow these steps.
+To set up the report layout for the sales tax authorities, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales tax authorities** page.
 1. In the **Report layout** field, select **Norwegian report format**.
@@ -95,7 +95,7 @@ You can use the designer to review or change the configuration that you selected
 
 ## Generate the VAT statement
 
-To generate the VAT statement, follow these steps.
+To generate the VAT statement, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Report sales tax for settlement period** page.
 1. Enter values in the **Settlement period**, **From date**, and **Sales tax payment version** fields.
@@ -114,7 +114,7 @@ To generate the VAT statement, follow these steps.
   
 ### Create a report after a sales tax payment update
 
-To create a report after a sales tax payment update, follow these steps.
+To create a report after a sales tax payment update, follow these steps:
 
 1. In Dynamics 365 Finance, go to the **Sales tax payments** page.
 1. Select the applicable vouchers, and then select **Export VAT file**.

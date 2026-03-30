@@ -4,7 +4,7 @@ description: Learn how to define and use custom drivers in business performance 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 06/11/2025
+ms.date: 11/11/2025
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -15,7 +15,10 @@ ms.dyn365.ops.version:
 
 # Custom drivers in Dynamics 365 Finance business performance planning
 
-This article explains how to extend a planning cube by adding drivers such as **Price**, **Quantity**, or **Discount** to the default **Amount** driver. In this way, you can support more granular or driver-based planning logic.
+> [!NOTE]
+> This article describes the cube creation process that's available in Business performance planning versions 1.13 and earlier. Starting in version 1.14, a new cube creation process is available. For more information, see [Cubes (preview)](bpp-create-cubes.md).  
+
+This article explains how to extend a planning cube by adding drivers such as Price, Quantity, or Discount to the default **Amount** driver. In this way, you can support more granular or driver-based planning logic.
 
 Planners can use business performance planning to do driver-based modeling directly within planning cubes. In addition to the default **Amount** driver, you can define drivers such as **Quantity**, **Price**, or **Discount**, or other user-defined inputs, during the cube creation stage. These drivers support flexible allocation. They also support downstream calculations that use the calculated column and Data Analysis Expressions (DAX) measures.
 
@@ -26,7 +29,7 @@ Planners can use business performance planning to do driver-based modeling direc
 
 ## Add drivers
 
-To add drivers, follow these steps.
+To add drivers, follow these steps:
 
 1. In business performance planning, go to **Cubes**.
 1. Select **New cube**.
@@ -43,10 +46,7 @@ To add drivers, follow these steps.
     - Discount
     - Headcount
 
-Each driver appears as a separate editable column in the cube and is available for formulas.
-
-> [!TIP]
-> Each driver must be defined before you upload data into the cube. After data is loaded, the driver structure is locked.
+Each driver appears as a separate editable column in the cube and is available for formulas. Drivers must be defined before you upload data into the cube. After data is loaded, the driver structure is locked.
 
 ## Write-back from Power BI and Excel
 
@@ -71,9 +71,9 @@ Unlike computed columns, driver fields are fully editable and user-controlled th
 
 ## Example
 
-If you want to calculate revenue as *Price* &times; *Quantity*, follow these steps.
+If you want to calculate revenue as *Price* &times; *Quantity*, follow these steps:
 
 1. Add the **Price** and **Quantity** drivers.
-1. Create the following computed column: **Revenue = Price \* Quantity**.
+1. Create the following computed column: Revenue = Price \* Quantity.
 
 Learn more in [Create calculated columns](calculated-columns.md).

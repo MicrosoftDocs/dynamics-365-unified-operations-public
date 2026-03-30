@@ -66,7 +66,7 @@ Here is an overview of the steps for setting up assessed tax:
 
 ### Set up assessed tax codes and rates
 
-To set up assessed tax codes and rates, follow these steps.
+To set up assessed tax codes and rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 1. Create a sales tax code.
@@ -77,7 +77,7 @@ To set up assessed tax codes and rates, follow these steps.
 
 ### Set up budget revenue codes for assessed tax
 
-To set up budget revenue codes for assessed tax, follow these steps.
+To set up budget revenue codes for assessed tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Cash and bank management \> Setup \> Payment order setup \> Budget revenue classification**.
 1. Create a budget revenue code for assessed tax.
@@ -85,7 +85,7 @@ To set up budget revenue codes for assessed tax, follow these steps.
 
 ### Assign a budget revenue code a to sales tax code
 
-To assign a budget revenue code a to sales tax code, follow these steps.
+To assign a budget revenue code a to sales tax code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Sales tax relations**.
 1. Create a record.
@@ -95,7 +95,7 @@ To assign a budget revenue code a to sales tax code, follow these steps.
 
 ### Set up methods of assessed tax base calculation
 
-To set up methods of assessed tax base calculation, follow these steps.
+To set up methods of assessed tax base calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Methods of assessed tax base calculation**.
 1. For each asset kind code, specify the method of assessed tax base calculation (**Yearly average value** or **Cadastral value**), as shown in the following table.
@@ -117,7 +117,7 @@ To set up methods of assessed tax base calculation, follow these steps.
 
 ### Set up tax allowances
 
-To set up tax allowances, follow these steps.
+To set up tax allowances, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Tax allowances**.
 1. Create a record.
@@ -133,7 +133,7 @@ To set up tax allowances, follow these steps.
 
 ### Assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax amount
 
-To assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax amount, follow these steps.
+To assign tax allowances to a sales tax code as a reduction of the tax rate and a reduction of the tax amount, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Sales tax relations**.
 1. Select the record for the sales tax code.
@@ -141,7 +141,7 @@ To assign tax allowances to a sales tax code as a reduction of the tax rate and 
 
 ### Set up the territory code (OKTMO code) of the legal entity
 
-To set up the territory code (OKTMO code) of the legal entity, follow these steps.
+To set up the territory code (OKTMO code) of the legal entity, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. On the **Addresses** FastTab, select **More options \> Advanced**.
@@ -158,7 +158,7 @@ To set up the territory code (OKTMO code) of the legal entity, follow these step
 
 You must create the tax authorities that you're required to report assessed tax declarations to.
 
-To set up tax authorities and related OKTMO codes, follow these steps.
+To set up tax authorities and related OKTMO codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax authorities**.
 1. Create a tax authority.
@@ -179,7 +179,7 @@ To set up tax authorities and related OKTMO codes, follow these steps.
 
 If the organization has realty objects that are located in territories that differ from the organization's main location, or if the organization has separate subdivisions, you should set up company divisions.
 
-To set up company divisions, their registration reason codes (KPP), and their OKTMO codes, follow these steps.
+To set up company divisions, their registration reason codes (KPP), and their OKTMO codes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Setup \> Separate divisions**.
 1. Create a company division.
@@ -199,7 +199,7 @@ To set up company divisions, their registration reason codes (KPP), and their OK
 
 If the organization has realty objects that are located in territories that differ from the organization's main location, or if the organization has separate subdivisions, you should set up organization locations and assign them to company divisions.
 
-To set up the organization's locations and assign them to company divisions, follow these steps.
+To set up the organization's locations and assign them to company divisions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Location**.
 1. Select an existing location, or create a new location.
@@ -214,7 +214,7 @@ If the **Separate division ID** field is blank, the location is the same as the 
 
 If a realty asset is distributed among several territories, it should be reported under the appropriate OKTMO code. You should set up distribution territories, assign an OKTMO code to each territory, and associate the OKTMO codes with tax authorities.
 
-To set up territories for distributed realty assets, follow these steps.
+To set up territories for distributed realty assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Distribution**.
 1. Create a territory.
@@ -234,7 +234,7 @@ To set up territories for distributed realty assets, follow these steps.
 
 If the organization has railways, set up the railway assets factors.
 
-To set up railway assets factors, follow these steps.
+To set up railway assets factors, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Railway assets factors**.
 1. Select **New**.
@@ -244,7 +244,7 @@ To set up railway assets factors, follow these steps.
 
 ### Set up fixed assets parameters for posting assessed tax
 
-To set up fixed assets parameters for posting assessed tax, follow these steps.
+To set up fixed assets parameters for posting assessed tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Parameters**.
 1. On the **Number sequences** tab, for the **Assessed tax registers journal number** reference, select a number sequence for the tax register.
@@ -260,7 +260,7 @@ To set up fixed assets parameters for posting assessed tax, follow these steps.
 
 If assessed tax transactions will be automatically created based on calculated tax registers, you should set up a journal.
 
-To set up the journal for posting assessed tax, follow these steps.
+To set up the journal for posting assessed tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Journal setup \> Journal names**.
 1. Create a line.
@@ -271,7 +271,7 @@ To set up the journal for posting assessed tax, follow these steps.
 
 If assessed tax transactions will be automatically created based on calculated tax registers, you should set up posting groups.
 
-To set up a posting group for assessed tax postings, follow these steps.
+To set up a posting group for assessed tax postings, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Tax reporting \> Group of posting of taxes**.
 1. Create a line.
@@ -291,7 +291,7 @@ Here is an overview of the steps for creating a realty asset and setting up para
 
 ### Define the date of including in the tax base for a realty asset
 
-To define the date of including in the tax base for a realty asset, follow these steps.
+To define the date of including in the tax base for a realty asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Setup \> Parameters**.
 1. On the **Tax reporting** tab, in the **Assessed tax** section, in the **Date of including in the tax base** field, specify when the realty asset should be entered in the tax base of the assessed tax register:
@@ -303,7 +303,7 @@ To define the date of including in the tax base for a realty asset, follow these
 
 #### Create a realty fixed asset and define parameters for assessed tax calculation
 
-To create a realty fixed asset and define parameters for assessed tax calculation, follow these steps.
+To create a realty fixed asset and define parameters for assessed tax calculation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select an existing fixed asset, or create a new fixed asset.
@@ -325,7 +325,7 @@ By default, realty objects are considered to be located at the organization's lo
 
 If the organization has realty objects that are located in different territories and registered in different tax authorities, you must specify the location of the realty asset.
 
-To specify the location of the realty, follow these steps.
+To specify the location of the realty, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select the line for the realty asset.
@@ -334,7 +334,7 @@ To specify the location of the realty, follow these steps.
 
 #### Specify the distribution for a realty asset that is located in several territories
 
-To specify the distribution for a realty asset that is located in several territories, follow these steps.
+To specify the distribution for a realty asset that is located in several territories, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select the line for the realty asset.
@@ -348,7 +348,7 @@ To specify the distribution for a realty asset that is located in several territ
 
 The cadastral cost of a realty asset might change because of a change in qualitative and quantitative characteristics. Follow these steps to record the change in cadastral value.
 
-To change the cadastral cost of realty that is taxed according to cadastral rules, follow these steps.
+To change the cadastral cost of realty that is taxed according to cadastral rules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Common \> Fixed assets**.
 1. Select the line for the realty asset.
@@ -386,7 +386,7 @@ After you've finished the setup, registered the acquisition of realty assets, an
     - The tax base, tax amount (or advance payment amount), advance amount for previous periods, and code and amount for tax allowance through reduction of the tax amount
     - The tax amount that is paid outside Russia (This value isn't automatically calculated. If it's required, it must be manually entered.)
 
-To calculate and approve assessed tax registers, follow these steps.
+To calculate and approve assessed tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 1. Select **New**.
@@ -414,7 +414,7 @@ To calculate and approve assessed tax registers, follow these steps.
 
 If you've corrected any realty asset data for the previous periods, you should create corrective tax registers to reflect the corrected assessed tax amounts.
 
-To create corrective registers, follow these steps.
+To create corrective registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 1. Select the approved journal for the period that must be corrected.
@@ -429,7 +429,7 @@ To create corrective registers, follow these steps.
 
 ### Set up the system to generate an assessed tax declaration
 
-To set up the system to generate an assessed tax declaration, follow these steps.
+To set up the system to generate an assessed tax declaration, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the assessed tax declaration.
 
@@ -470,7 +470,7 @@ To set up the system to generate an assessed tax declaration, follow these steps
 
 Before you can generate the assessed tax declaration for a tax year, you must calculate the assessed tax register for the same year, and assessed tax registers for the first, second, and third quarters.
 
-To generate an assessed tax declaration, follow these steps.
+To generate an assessed tax declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**, and select the report format to generate.
 
@@ -506,7 +506,7 @@ You must also manually upload the generated file to the special third-party soft
 
 After you've calculated and approved tax registers and generated an assessed tax declaration, you can create transactions for assessed tax accruals.
 
-To create and post assessed tax ledger transactions, follow these steps.
+To create and post assessed tax ledger transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 1. Select the journal, and then select **Ledger journal \> Assessed tax**.

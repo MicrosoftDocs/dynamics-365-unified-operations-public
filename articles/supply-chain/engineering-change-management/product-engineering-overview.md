@@ -40,7 +40,7 @@ To use engineering change management, both the BOM number sequence and the formu
 
 ## Turn the required configuration keys on or off
 
-As of Supply Chain Management version 10.0.36, all **Engineering Change Management** keys are turned on by default, but the **Product dimension - Version** key will only be turned on by default for new systems (not for older systems that are upgraded to version 10.0.36 or later). If you need to turn any of these keys on or off, follow these steps.
+As of Supply Chain Management version 10.0.36, all **Engineering Change Management** keys are turned on by default, but the **Product dimension - Version** key will only be turned on by default for new systems (not for older systems that are upgraded to version 10.0.36 or later). If you need to turn any of these keys on or off, follow these steps:
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.

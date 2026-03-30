@@ -37,7 +37,7 @@ As of January 2025, the *Analyze demand plans with Copilot* feature is available
 
 ## Ask Copilot to analyze your data
 
-To ask Copilot to analyze your data, follow these steps.
+To ask Copilot to analyze your data, follow these steps:
 
 1. On the navigation pane, select **Worksheets**.
 1. Open the worksheet that you want to analyze.

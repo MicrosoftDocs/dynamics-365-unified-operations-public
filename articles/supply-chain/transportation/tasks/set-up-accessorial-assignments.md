@@ -1,41 +1,36 @@
---- 
+---
 title: Set up accessorial assignments
 description: Learn how to set up an accessorial assignment, including a step-by-step process for setting up accessorial assignments done by transportation coordinators.
 author: lisascholz91
 ms.author: lisascholz
-ms.topic: how-to
-ms.date: 11/14/2016
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: TMSAccessorialAssignment 
+ms.topic: how-to
+ms.date: 11/19/2025
+ms.custom:
+  - bap-template
 ---
 
 # Set up accessorial assignments
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to set up an accessorial assignment. This is typically done by a transportation coordinator. Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.
-
+This procedure shows how to set up an accessorial assignment. A transportation coordinator typically performs this task. Before you follow the procedure, complete the instructions in [Set up hub accessorial charges and accessorial masters](set-up-hub-accessorial-charges-accessorial-masters.md).
 
 ## Set up Accessorial assignment
-1. Go to Transportation management > Setup > Rating > Accessorial assignments.
-2. Click New.
-3. In the Name field, type a value.
-4. Toggle the expansion of the Details section.
-5. In the Hub field, click the drop-down button to open the lookup.
-6. In the list, select the Hub that you created an accessorial master for when you ran the "Set up hub accessorial charges and accessorial masters" guide. 
-7. In the Hub accessorial ID field, click the drop-down button to open the lookup.
-8. In the list, click the link in the selected row.
-9. Toggle the expansion of the Criteria section.
-    * In the Criteria section you can choose the exact criteria for when the charge should apply, based on the different values offered here.  
-10. Set the Always apply option to Yes.
-11. In the Accessorial assignment level field, select an option.
-12. Toggle the expansion of the Calculation section.
-13. In the Accessorial fee type field, select 'Flat'.
-    * The Accessorial fee type determines how to calculate the actual charge. In this example it's a flat charge.  
-14. In the Accessorial fee field, enter a number.
-15. Click Save.
 
-
+1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Accessorial assignments**.
+1. Select **New**.
+1. In the **Name** field, type a value.
+1. Expand the **Details** section.
+1. In the **Hub** field, select the hub that you created an accessorial master for when you completed the procedure in [Set up hub accessorial charges and accessorial masters](set-up-hub-accessorial-charges-accessorial-masters.md).
+1. In the **Hub accessorial ID** field, select the link in the selected row.
+1. Expand the **Criteria** section. Here, you can choose the exact criteria for when the charge should apply, based on the different values offered here.  
+1. Set the **Always apply** option to *Yes*.
+1. In the **Accessorial assignment level** field, select an option.
+1. Expand the **Calculation** section.
+1. In the **Accessorial fee type** field, select *Flat*. The accessorial fee type determines how to calculate the actual charge. In this example, it's a flat charge.  
+1. In the **Accessorial fee** field, enter a number.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

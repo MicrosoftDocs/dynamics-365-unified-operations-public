@@ -1,8 +1,8 @@
 ---
 title: Options for including physical value in cost calculations
 description: Learn how to use the "Include physical value" and "Include physical value in weighted average recalculation" options for cost calculations.
-author: prasungoel
-ms.author: prasungoel
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventModelGroup
 ms.topic: how-to
@@ -73,7 +73,7 @@ This feature lets you choose whether to include physically updated transactions 
 To use the feature described in this section, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The feature that is named *Recalculation for Weighted Average Cost including Physical Transaction* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Recalculation for Weighted Average Cost including Physical Transaction* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Choose whether to include physical value in weighted average recalculation
 

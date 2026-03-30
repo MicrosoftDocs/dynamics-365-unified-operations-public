@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.45 of finance and operations apps (Sept
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.45 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 09/15/2025
+ms.date: 03/19/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -28,7 +28,7 @@ This section lists the features included in this release when available. We migh
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| No changes reported at this time |---|---|---|
+| System administration | Batch history logging options | A configurable option to skip persisting the **INFO** and **PARAMETERS** columns when writing to the batch history table, which provides database storage optimization and improved write performance. Learn more in [Batch history logging options](../../dev-itpro/sysadmin/batch-history-logging-options.md). | Feature flight |
 
 ## Feature enhancements included in this release
 
@@ -59,4 +59,4 @@ The [Removed or deprecated platform features](../../fin-ops/get-started/removed-
 
 Deprecation notices appear in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before any feature is removed.
 
-For breaking changes that affect only compilation time, but are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. These changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. These changes are functional updates that you must make to the compiler.

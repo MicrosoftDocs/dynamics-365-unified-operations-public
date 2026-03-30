@@ -1,10 +1,10 @@
 --- 
 title: Set up electronic signatures
 description: Learn how to set up electronic signatures, including how to enable the Electronic signature configuration key.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/15/2025
+ms.date: 03/05/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Application User 
@@ -20,15 +20,15 @@ ms.dyn365.ops.version: Version 7.0.0
 
 An electronic signature confirms the identity of a person who is about to start or approve a computing process. In some industries, an electronic signature is as legally binding as a handwritten one.
 
-Electronic signatures are a regulations compliance requirement for several regulated industries, such as pharmaceuticals, food and beverage, aerospace, and defense. They are also necessary for compliance with regulations that are issued by the United States Food and Drug Administration (FDA) in part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11).
+Electronic signatures are a regulations compliance requirement for several regulated industries, such as pharmaceuticals, food and beverage, aerospace, and defense. They're also necessary for compliance with regulations that the United States Food and Drug Administration (FDA) issues in part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11).
 
 Electronic signatures aren't the same as digital signatures. An electronic signature is just a substitute for a handwritten signature, whereas a digital signature provides additional security measures. A digital signature can help identify whether another user or process tampered with the data. A digital signature can also be verified, and this verification can't be refuted by the owner of the certificate that was used to sign the data. Although electronic signatures and digital signatures differ, they can work together. For example, in finance and operations apps, electronic signatures have built-in digital signature functionality.
 
-You can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field. As was mentioned earlier, electronic signatures in finance and operations apps have built-in digital signature functionality. Each user who signs documents must obtain a valid cryptographic certificate. When a document is signed, the private key that is associated with that certificate is validated.
+You can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field. As was mentioned earlier, electronic signatures in finance and operations apps have built-in digital signature functionality. Each user who signs documents must obtain a valid cryptographic certificate. When a document is signed, the private key that's associated with that certificate is validated.
 
 ## Enable the Electronic signature configuration key
 
-1. Go to **System administration** \> **Setup** \> **License configuration**.
+1. Go to **System administration** > **Setup** > **License configuration**.
 1. In the tree, expand **Administration**, and verify that the **Electronic signature** checkbox is selected. If the checkbox is cleared, you must enable maintenance mode before you can select it. You can enable maintenance mode in the environment by running a maintenance job from Microsoft Dynamics 365 Lifecycle Services. Alternatively, you can use the Deployment.Setup tool locally. After you select the **Electronic signature** checkbox, turn off maintenance mode.
 1. Close the page.
 
@@ -38,10 +38,10 @@ You can use electronic signatures for critical business processes. Some processe
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-Most electronic signature features are standard for all current versions of Microsoft Dynamics 365 Supply Chain Management. However, passphrase constraints and the ability to require comments are recent enhancements. Before you can use them, your system must meet the following requirements:
+Most electronic signature features are standard for all current versions of Microsoft Dynamics 365 Supply Chain Management. However, passphrase constraints and the ability to require comments are recent enhancements. Before you can use these features, your system must meet the following requirements:
 
-- You must be running Supply Chain Management version 10.0.44 or later.
-- The feature that is named *(Preview) Electronic signature improvements* must be turned on in [Feature management](../../get-started/feature-management/feature-management-overview.md).
+- You're running Supply Chain Management version 10.0.44 or later.
+- You turn on the **(Preview) Electronic signature improvements** feature in [Feature management](../../get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

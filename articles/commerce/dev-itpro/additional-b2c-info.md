@@ -45,7 +45,7 @@ Microsoft Entra ID B2C allows you to set up a custom sign-in domain for the Micr
 
 If you use a custom sign-in domain, the domain must be entered into Commerce site builder.
 
-To enter a custom sign-in domain in site builder, follow these steps.
+To enter a custom sign-in domain in site builder, follow these steps:
 
 1. In the top right corner of site builder, select the site switcher, and then select **Manage sites**.
 1. In the left navigation pane, select **Tenant settings \> Site authentication setup**.

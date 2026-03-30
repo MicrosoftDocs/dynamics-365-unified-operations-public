@@ -43,7 +43,7 @@ Yes, the Asset Management mobile app is available in all the same languages as S
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
-The [Asset Management group on Microsoft Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17556554&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage group participants include Microsoft partners, customers, experts, and employees.
+The [Asset Management](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3MjY5OTg1MjgifQ) community on Microsoft Viva Engage is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage community participants include Microsoft partners, customers, experts, and employees.
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
@@ -65,7 +65,7 @@ This error can occur because the *Asset Management app* role doesn't have the pr
 
 ## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
+The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *Marketplace*.
 
 Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
 

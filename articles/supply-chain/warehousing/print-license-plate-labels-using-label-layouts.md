@@ -3,18 +3,19 @@ title: License plate label layouts and printing
 description: Learn how to set up and print license plate labels using label layouts, including an outline on enabling license plate label layouts.
 author: Mirzaab
 ms.author: mirzaab
-ms.topic: how-to
-ms.date: 07/23/2024
-ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource, WHSDocumentRouting
+ms.topic: how-to
+ms.date: 11/20/2025
+ms.custom:
+  - bap-template
 ---
 
 # License plate label layouts and printing
 
 [!include [banner](../includes/banner.md)]
 
-Labels layouts are used to control what information is printed on a label and how it's laid out. There are two ways to define a license plate label layout:
+Label layouts control what information prints on a label and how it's arranged. You can define a license plate label layout in two ways:
 
 - **Document routing label layouts** – These layouts provide basic layout capabilities.
 - **Label layouts** – These layouts let you build more advanced layouts. Your layouts can have repeating structures and include header, body, and footer elements. You can print information from the related tables and define custom date, time, and number formats.
@@ -23,7 +24,7 @@ This article describes how to create and use *label layouts* for license plate l
 
 ## Enable license plate label layouts
 
-To enable license plate label layouts, you must set up the following elements (as described later in this article):
+To enable license plate label layouts, set up the following elements (as described later in this article):
 
 - **[Warehouse management parameters](#parameters)** – Define whether to use document routing label layouts or label layouts.
 - **[License plate label layout](#lp-label-layout)** – Define the label layout to use for the license plate labels.
@@ -38,9 +39,9 @@ Follow these steps to set up warehouse parameters for license plate label printi
 
 ## <a name="lp-label-layout"></a>Create a license plate label layout
 
-The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that's sent to the printer. Typically, you'll copy this code from a label designer program.
+The label layout controls what information is printed on the label and how it's laid out. Enter the ZPL code that's sent to the printer. Typically, you copy this code from a label designer program.
 
-As the system generates a label, it can replace field and method names that are used in the label layout with actual values. You can easily find text that will be replaced by looking for dollar signs (`$`) in the code.
+As the system generates a label, it can replace field and method names that are used in the label layout with actual values. You can easily find text that the system replaces by looking for dollar signs (`) in the code.
 
 ### Create a basic label layout
 
@@ -53,11 +54,11 @@ Follow these steps to create a license plate label layout.
 
     - **Label layout ID** – Enter a name for the layout (for example, *License plate*).
     - **Description** – Enter a short description of the layout (for example, *License plate*).
-    - **Definition type** – Select the method that's used to define the label layout:
+        - **Definition type** – Select the method used to define the label layout:
 
         - *ZPL* – Define the label layout by using ZPL.
-        - *Variables* – Define a label layout that can be used with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Microsoft Dynamics 365 Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
-        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
+        - *Variables* – Define a label layout that you can use with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that Microsoft Dynamics 365 Supply Chain Management sends by mapping them to the corresponding placeholders in the label design from the external system.
+        - *Variables (script)* – Use the script format to define a label layout that you can use with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
 
             ```plaintext
             "filePath": "/Instant Print/GS1-128.nlbl", 
@@ -70,9 +71,9 @@ Follow these steps to create a license plate label layout.
             ]
             ```
 
-    - **Label layout data source ID** – Leave this field blank if you'll use only license plate data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
+    - **Label layout data source ID** – Leave this field blank if you use only license plate data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
-    - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
+    - **Date, time, and number format** – Select the language to use when date, time, and number values that appear in the label layout are formatted.
     - **Printer stock type** – Select a *printer stock type*. A printer stock type typically describes the type of paper that a specific printer uses. It's also used to specify the type of paper that a specific label layout should be printed to. For information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
 
 1. On the **Printer text Layout** FastTab, enter label code in a way that's appropriate for the selected definition type. The following example shows code that you can copy and paste for testing if the **Definition type** field is set to *ZPL*.
@@ -99,15 +100,15 @@ Follow these steps to create a license plate label layout.
     > While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps:
     >
     > 1. In the **Tables** list, select the table.
-    > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
+    > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, then select the name of the field or method to add.
     > 1. If the **Definition type** field is set to *ZPL* or *Variables (script)*, select **Insert at end of text** to add the field or method to the end of the code. As you require, move the new field or method to the place in the code where you want to use it.
-    > 1. If the **Definition type** field is set to *Variables*, select a row in the **Data variables** table, and then select **Insert field reference** to add the field or method as a field value.
+    > 1. If the **Definition type** field is set to *Variables*, select a row in the **Data variables** table, then select **Insert field reference** to add the field or method as a field value.
 
 1. On the Action Pane, select **Save**.
 
 ### Set up and use a label layout data source
 
-In the label layout in the preceding example, only the license plate ID (`$LicensePlateId$`) is used, and this value is available directly in the license plate table. If you want to include related information (such as that order number that's related to a license plate), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout.
+In the label layout in the preceding example, only the license plate ID (`$LicensePlateId) is used, and this value is available directly in the license plate table. If you want to include related information (such as the order number that's related to a license plate), and the required layout label data source doesn't already exist, follow these steps to create it and then select it in your label layout.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout data source**.
 1. On the Action Pane, select **New**.
@@ -117,8 +118,8 @@ In the label layout in the preceding example, only the license plate ID (`$Licen
     - **Description** – Enter a short description of the data source (for example, *License plate + Purchase order*).
     - **Label layout type** – Select *License plate label*.
     - **Join type** – Select the type of joins to use in the data source. Choose one of the following options:
-       - *Inner* – Use inner joins, which only return rows where there's a match in both tables. This creates more specialized joined tables, which might be what you're looking for. This is the default behavior.
-       - *Outer* – Use outer joins, which return all rows from the left table and the matched rows from the right table. This creates larger joined tables that contain more information.
+       - *Inner* – Use inner joins, which only return rows where there's a match in both tables. This join type creates more specialized joined tables. This option is the default behavior.
+       - *Outer* – Use outer joins, which return all rows from the left table and the matched rows from the right table. This join type creates larger joined tables that contain more information.
 
     Using outer joins can sometimes help reduce the number of label layout data sources that you need to set up. For example, a license plate label with an inner join to batch requires two label layout data sources: one for items that are batch enabled and one for items that aren't. However, an outer join would let you use just one label layout data source because it returns all items, regardless of whether they're batch enabled. If you instead only want to print labels for non-batch items, then an inner join might work better.
 
@@ -127,10 +128,10 @@ In the label layout in the preceding example, only the license plate ID (`$Licen
 1. A standard query editor dialog box appears. On the **Joins** tab, add joins to the required tables. (For example, if you want your label to show the order number, you might make a join to the purchase order table.)
 1. Go to **Warehouse management \> Setup \> Document routing \> Label layout**.
 1. Create or select a label layout, and then, in the **Label layout data source ID** field, select the record that you just created.
-1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables will include a number as a suffix (*\_\#*).
+1. You can now add the new field values to the print layout code. Be sure to reference the correct *table.field-names* values in the ZPL code. The additional tables include a number as a suffix (*\_\#*).
 
 > [!CAUTION]
-> On the **Label layout data source** page, be careful about removing a table from the query for an existing record. You might remove field and/or method names that are already used in existing label layouts.
+> On the **Label layout data source** page, be careful about removing a table from the query for an existing record. You might remove field and method names that are already used in existing label layouts.
 
 ### <a name="label-template"></a>Enable label template support
 
@@ -141,9 +142,9 @@ Label templates let you design labels that have more advanced layouts, which can
 1. Follow one of these steps:
 
     - To create a new layout, select **New** on the Action Pane.
-    - To edit an existing layout, select the layout on the list pane, and then select **Edit** on the Action Pane.
+    - To edit an existing layout, select the layout on the list pane, then select **Edit** on the Action Pane.
 
-1. In the **Label layout data source ID** field, select a data source. (A data source is required to enable label template support. However, if you need only license plate data, you can select a very simple data source where no joins are defined.)
+1. In the **Label layout data source ID** field, select a data source. (You need a data source to enable label template support. However, if you need only license plate data, you can select a simple data source where no joins are defined.)
 1. Set the **Enable label template support** option to *Yes*.
 1. Use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are put in a license plate.
 
@@ -191,31 +192,31 @@ Label templates let you design labels that have more advanced layouts, which can
     ```
 
     > [!NOTE]
-    > Because of the `RowsPerLabel=5` attribute, this example will loop over license plate lines and split out a label for each set of five license plate lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
+    > Because of the `RowsPerLabel=5` attribute, this example loops over license plate lines and splits out a label for each set of five license plate lines. If you change the attribute to `RowsPerLabel=1`, a label is generated for each line.
     >
-    > This example will print one copy of each label. If you require more copies (for example, one copy for each side of the license plate), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`.
+    > This example prints one copy of each label. If you need more copies (for example, one copy for each side of the license plate), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`.
 
 ## <a name="routing"></a>Set up license plate label routing
 
-To specify the license plate label layouts that are used and where they're printed, you must define a document routing record, as described in the following procedure.
+To specify the license plate label layouts and where they're printed, you must define a document routing record, as described in the following procedure.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Document routing**.
 1. At the top of the list pane, set the **Work order type** field to *Purchase orders*.
 1. On the Action Pane, select **New** to create a routing record.
 1. On the header of the new routing record, set the following fields:
 
-    - **Sequence number** – Enter an integer to define the order that the routing record should be evaluated in. Each routing must have a unique sequence number. The system evaluates routings in order of ascending sequence numbers and uses the first routing that criteria are met for.
+    - **Sequence number** – Enter an integer to define the order that the routing record is evaluated in. Each routing must have a unique sequence number. The system evaluates routings in order of ascending sequence numbers and uses the first routing that meets the criteria.
     - **Name** – Enter a name for the routing record. For example, enter *License plate*.
 
 1. On the **Overview** FastTab, use the following fields to define the criteria that are used to select the label routing:
 
-    - **Warehouse** – Specify the warehouse where the routing should be used.
-    - **Mobile device user ID** – Specify the user ID that the routing should be used for. To use the routing for any worker, leave this field blank.
-    - **Account number** – Specify the vendor account that the routing should be used for. To use the routing for any vendor, leave this field blank.
-    - **Carrier** – Specify the carrier that the routing should be used for. To use the routing for any carrier, leave this field blank.
-    - **Work template** – Specify the work template that the routing should be used for. To use the routing for any work template, leave this field blank.
-    - **From zone ID** and **To zone ID** - Specify the range of zones that the routing should be used for. To use the routing for any zone, leave these fields blank.
-    - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, and then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
+    - **Warehouse** – Specify the warehouse where the routing is used.
+    - **Mobile device user ID** – Specify the user ID that the routing is used for. To use the routing for any worker, leave this field blank.
+    - **Account number** – Specify the vendor account that the routing is used for. To use the routing for any vendor, leave this field blank.
+    - **Carrier** – Specify the carrier that the routing is used for. To use the routing for any carrier, leave this field blank.
+    - **Work template** – Specify the work template that the routing is used for. To use the routing for any work template, leave this field blank.
+    - **From zone ID** and **To zone ID** - Specify the range of zones that the routing is used for. To use the routing for any zone, leave these fields blank.
+    - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
 
 1. On the **Document routing printers** FastTab, assign the printer and label layout that should be used when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
 
@@ -231,7 +232,7 @@ If you want a license plate label to be printed automatically each time that a n
 1. Follow one of these steps:
 
     - To create a new menu item, select **New** on the Action Pane.
-    - To edit an existing menu item, select it in the list pane, and then select **Edit** on the Action Pane.
+    - To edit an existing menu item, select it in the list pane, then select **Edit** on the Action Pane.
 
 1. Set the following fields for the new or selected menu item:
 
@@ -243,7 +244,7 @@ If you want a license plate label to be printed automatically each time that a n
 
 1. Close the page.
 
-If you created a new mobile device menu item, you must add it to the mobile device menu, as shown in the following example. In this example, you'll add it to the existing **Inbound** mobile device menu.
+If you create a new mobile device menu item, you must add it to the mobile device menu, as shown in the following example. In this example, you add it to the existing **Inbound** mobile device menu.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. On the Action Pane, select **Edit**.
@@ -254,7 +255,7 @@ If you created a new mobile device menu item, you must add it to the mobile devi
 
 ## Run a scenario to print license plate labels
 
-If you want to experiment with printing license plate labels, you can set up a scenario for doing mixed license plate receiving through the Warehouse Management mobile app. Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
+To experiment with printing license plate labels, set up a scenario for mixed license plate receiving through the Warehouse Management mobile app. Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md). Follow the instructions in that article, and confirm that the scenario described in this article is supported.
 
 ## Related information
 

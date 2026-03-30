@@ -37,7 +37,7 @@ Accounting transactions where ledger account **57** (**Transfers in transit**) i
 
 ### Set up account interval groups for Bank, Cash, and Other account types
 
-To set up account interval groups for Bank, Cash, and Other account types, follow these steps.
+To set up account interval groups for Bank, Cash, and Other account types, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Account interval groups**.
 2. On the Action Pane, select **New**.
@@ -49,7 +49,7 @@ To set up account interval groups for Bank, Cash, and Other account types, follo
 
 ### Assign expense codes to tax registers and set up exceptions
 
-To set up expenses for the **Cash payment issue** and **Cash payment receipt** tax registers, follow these steps.
+To set up expenses for the **Cash payment issue** and **Cash payment receipt** tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 2. Select the tax register, and then, on the Action Pane, select **Expense codes**.

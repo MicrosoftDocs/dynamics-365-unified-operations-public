@@ -4,7 +4,7 @@ description: This article describes how to set up Brazilian legal entity paramet
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 03/13/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -20,7 +20,7 @@ This article describes how to set up Brazilian legal entity parameters in Micros
 
 The following procedure walks you through how to set up Brazilian legal entity parameters. This procedure uses the BRMF demo company.
 
-To set up Brazilian legal entity parameters, follow these steps.
+To set up Brazilian legal entity parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Setup \> Brazilian parameters**.
 1. In the **Enable CFPS code** field, select **Yes**.

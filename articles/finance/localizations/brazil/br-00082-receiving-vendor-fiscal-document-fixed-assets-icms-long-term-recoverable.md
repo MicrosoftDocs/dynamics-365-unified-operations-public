@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can post a fiscal document that you receive from the acquisition of fixed as
 
 The following procedure uses the BRMF demo company.
 
-To post a fiscal document received from the acquisition of fixed assets and then recover the ICMS taxes, follow these steps.
+To post a fiscal document received from the acquisition of fixed assets and then recover the ICMS taxes, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.

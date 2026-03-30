@@ -1,8 +1,8 @@
 ---
 title: Estimate and manage landed costs
 description: The system uses your auto cost setup to determine an estimate for your landed cost. Learn how you can define various scenarios to deliver a more accurate estimate.
-author: prasungoel 
-ms.author: prasungoel 
+author: AndersEvenGirke
+ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 ms.topic: how-to
@@ -137,7 +137,7 @@ Use the buttons on the Action Pane of the **Cost estimates** page to work with t
 
 The **Item cost price update** periodic task updates all cost estimates that match the filters that you set when you run the task. The effect is similar to the effect of selecting **Update standard cost** on the Action Pane for a single estimate. However, in this case, the update applies to all matching estimates.
 
-To run the periodic task, follow these steps.
+To run the periodic task, follow these steps:
 
 1. Go to **Landed cost** \> **Periodic tasks** \> **Item cost price update**.
 1. In the **Update cost price from estimate** dialog box, set the following fields as required to limit the scope of the update:
@@ -166,7 +166,7 @@ This feature enables you to include landed costs in the accounting distribution 
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.34 or later.
-- The feature that is named *Source document and accounting distribution support for Landed Cost* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
+- The feature named *Source document and accounting distribution support for Landed Cost* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.43, this feature is turned on by default.
 
 ### View landed costs in the accounting distribution of product receipts
 

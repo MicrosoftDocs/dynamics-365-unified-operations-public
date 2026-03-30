@@ -1,5 +1,5 @@
 ---
-title: Cross-company product sharing (preview)
+title: Cross-company product sharing
 description: Learn how to share released-product data across companies to reduce the volume of data that must be maintained and simplify maintaining product master data.
 author: sgmsft
 ms.author: shwgarg
@@ -10,16 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Cross-company product sharing (preview)
+# Cross-company product sharing
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice.-->
 
 Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -28,10 +23,7 @@ To use the features described in this article, your system must meet the followi
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
     - *Master company data sharing*
-    - *(Preview) Cross-company data sharing for products*
-
-> [!NOTE]
-> If you are running Supply Chain Management version 10.0.42 or older and would like to use this feature, then send an email with your environment ID in Microsoft Dynamics Lifecycle Services to the [Cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team that's responsible for the feature will then enable it for your environment. You must also follow the instructions provided in the [Set up your system for product sharing in version 10.0.42 and older](#old-version-setup) section later in this article.
+    - *Cross-company data sharing for products*
 
 ## Get started with cross-company data sharing
 
@@ -57,24 +49,6 @@ Before you enable cross-company data sharing for products, work through the foll
 - **Specify the default parameters for each company.** You might want to align default parameters across all companies in the data sharing policy.
 - **Consider whether any of your business processes are affected by the single record sharing functionality.** Read the detailed list of [limitations and notes that apply for shared products](#limitations) later in this article, and prepare your system as required.
 
-## <a name="old-version-setup"></a>Set up your system for product sharing in version 10.0.42 and older
-
-As mentioned in the [prerequisites](#prerequisites), if you are running Supply Chain Management version 10.0.42 or older, you can only enable this feature with assistance from the Microsoft Support. After Microsoft Support enables the feature for you, you must also complete the following procedure. Don't do this if you are running version 10.0.43 or later.
-
-1. Enable the following flights. If you don't know how to complete this step, contact Microsoft Support.
-
-   - `DbSyncEnableSingleRecordSharing`
-   - `EnableSysSharing`
-   - `EnableSysDataSharingTypeTableConfiguration`
-   - `InventTableDataSharingFeature`
-
-2. Do a database synchronization.
-3. Restart Internet Information Services (IIS).
-4. Put your environment in [maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-5. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the [*Master company data sharing*](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md#master-company-sharing) feature.
-6. Turn off [maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-7. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *(Preview) Cross-company data sharing for products* feature.
-
 ## Set up sharing policies for products and product-related information
 
 To share products and product-related information, you must create and set up your sharing policies on the **Configure cross-company data sharing** page. Each sharing policy establishes a set of tables and fields that are shared.
@@ -86,7 +60,7 @@ To share products and product-related information, you must create and set up yo
 
 We recommend that you set up duplicate record sharing for tables that handle policies and related information.
 
-To create a duplicate record sharing policy, follow these steps. You can create as many duplicate record sharing policies as you want.
+To create a duplicate record sharing policy, follow these steps: You can create as many duplicate record sharing policies as you want.
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
@@ -109,7 +83,7 @@ To create a duplicate record sharing policy, follow these steps. You can create 
 
 The *Released product* table (`Inventtable`) must be set up for single record sharing.
 
-To create single record sharing policies for the **Released product** table and other tables, follow these steps.
+To create single record sharing policies for the **Released product** table and other tables, follow these steps:
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
@@ -198,7 +172,7 @@ By default, most country/region-specific fields are disabled in product tables, 
 
 When you create a product, you must specify several different units of measure, each for a specific purpose. For example, you might specify an inventory unit, a purchase unit, and a sales unit. The **New released product** dialog box shows the same default unit for all of them, based on the default setting for the current company. However, you can edit the unit for each unit of measure separately in the dialog box.
 
-To assign the default unit for a company, follow these steps.
+To assign the default unit for a company, follow these steps:
 
 1. On the navigation bar, select the company (legal entity) that you want to set defaults for.
 1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.

@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 11/12/2025
 ms.custom: 
   - bap-template
 ---
@@ -20,24 +20,24 @@ This article describes how to verify, import, and remove demo data. It also expl
 
 ## Verify demo data
 
-Usually, demo data is installed automatically when you first install the Traceability Add-in for Dynamics 365 Supply Chain Management.
+Usually, the installation process automatically installs demo data when you first install the Traceability Add-in for Dynamics 365 Supply Chain Management.
 
-To check whether demo data is installed on your system, follow these steps.
+To check whether your system has demo data, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Activity**.
-1. Verify that configuration settings shown in the following table are shown on the **Activity** page.
+1. Verify that the configuration settings shown in the following table appear on the **Activity** page.
 
     | Company | Activity Code | Activity Type | Source Activity Code | Source Activity Type | Track or not |
     |--|--|--|--|--|--|
     | USMF | Goods Receipt | Production | Goods Receipt | Production | TRUE |
     | USMF | Consumption | Production | Consumption | Production | TRUE |
 
-    If the configuration settings aren't shown, then you can import the demo data as described in the next section.
+    If the configuration settings don't appear, import the demo data as described in the next section.
 
 ## Import demo data
 
-If you'd like to explore Traceability using demo data, but the data isn't available, follow these steps to import it.
+If you want to explore Traceability by using demo data but don't have the data, follow these steps to import it.
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Home** \> **Get started**.
@@ -46,12 +46,12 @@ If you'd like to explore Traceability using demo data, but the data isn't availa
 
 ## Delete all data
 
-When you're done exploring the demo data, you can remove it from your system, together with all other data that's been collected since you started using Traceability.
+When you're done exploring the demo data, you can remove it from your system, along with all other data that's been collected since you started using Traceability.
 
 > [!WARNING]
 > This procedure removes *all* data from the Traceability Add-in for Supply Chain Management, not just the demo data. Be sure you want to delete all data before you proceed.
 
-To delete all data from the Traceability Add-in, follow these steps.
+To delete all data from the Traceability Add-in, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Home** \> **Get started**.
@@ -66,13 +66,13 @@ The demo data describes the components of a manufactured bicycle. The following 
 
 ## Explore the demo data
 
-This section shows how to explore the capabilities of the Traceability app using the demo data. Several common scenarios are described.
+This section shows how to explore the capabilities of the Traceability app by using the demo data. It describes several common scenarios.
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
 1. Make a *backwards search*, which lets you enter a unique identifier of a finished good to retrieve its genealogy, activity, and data collection.
 
-    Use the search field to look for a specific serial number of a finished good. For example, you can use the serial number *bike-s0001* or *bike-s0002* to find the genealogy tree of a bike from the demo data.
+    Use the search field to look for a specific serial number of a finished good. For example, use the serial number *bike-s0001* or *bike-s0002* to find the genealogy tree of a bike from the demo data.
 
 1. Traceability shows a genealogy tree for the serial number you entered. Now you can do an *activity verification* by following these steps:
 

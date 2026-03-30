@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, CustTable, EcoResProductDetailsExtended, InventModelGroup
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
@@ -21,7 +21,7 @@ Shelf life is the amount of time that a product can be stored until it can no lo
 
 This section explains how master planning suggests supply for shelf-life items.
 
-When you run a master plan, it generates suggested planned orders (supply) that fulfill your demand and also minimize delays. If your plan includes items that have limited shelf life, planning calculations become more complex. The plan must not only minimize delays but also use existing supply before it expires. The plan tries to use supply that's closest to its expiration date before supply that expires later. Therefore, master planning seeks to achieve the following goals, in this order:
+When you run a master plan, it generates suggested planned orders (supply) that fulfill your demand and also minimize delays. If your plan includes items with a limited shelf life, planning calculations become more complex. The plan must not only minimize delays but also use existing supply before it expires. The plan tries to use supply that's closest to its expiration date before supply that expires later. Therefore, master planning seeks to achieve the following goals, in this order:
 
 1. Minimize the sum of delays.
 1. Maximize the sum of FEFO supply.
@@ -87,7 +87,7 @@ Use the following procedure to set up sellable days for each product for each cu
         - *All* – The row applies to all items.
 
     - **Item relation** – If you set the **Item code** field to *Table*, select a specific item. If you set the **Item code** field to *Group*, select an item group. If you set the **Item code** field to *All*, this field is unavailable.
-    - **Sellable days** – Enter the minimum number of days that the customer must have to sell matching products before the batch expires. The sellable days value is based on the requested receipt date (or the confirmed receipt date, if it's defined) for the matching products on the sales order.
+    - **Sellable days** – Enter the minimum number of days that the customer must have to sell matching products before the batch expires. The sellable days value is based on the requested receipt date (or the confirmed receipt date, if defined) for the matching products on the sales order.
     - *(Other product dimensions)* – To further limit the scope of a row, specify other dimension values (such as **Size** and **Color**) as required. To control which dimensions are shown in the grid, select **Display dimensions** on the Action Pane.
 
 ### Set up all relevant products so that they're FEFO date controlled

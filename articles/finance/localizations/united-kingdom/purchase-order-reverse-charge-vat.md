@@ -27,7 +27,7 @@ Before you complete the procedure, you must complete the procedures in [Set up r
 
 ## Create a purchase order
 
-To create a purchase order, follow these steps.
+To create a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Select **New**.

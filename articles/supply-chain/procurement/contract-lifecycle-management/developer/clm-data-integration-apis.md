@@ -58,7 +58,7 @@ Learn more about data management and data import/export projects in [Data manage
 
 ## Configure and use service-based authentication
 
-To gain access to the data entities through the API, your CLM system must authenticate with Supply Chain Management. Service-based authentication with Microsoft Entra ID provides a secure way to allow an external CLM system to connect with Supply Chain Management. To set up service-based authentication, follow these steps.
+To gain access to the data entities through the API, your CLM system must authenticate with Supply Chain Management. Service-based authentication with Microsoft Entra ID provides a secure way to allow an external CLM system to connect with Supply Chain Management. To set up service-based authentication, follow these steps:
 
 1. Register an application in Microsoft Entra ID. Make a note of the application ID (client ID) for the new application.
 1. In Supply Chain Management, go to **System administration** \> **Setup** \> **Microsoft Entra ID applications**.

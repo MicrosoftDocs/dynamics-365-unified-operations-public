@@ -1,10 +1,10 @@
 ---
 title: Supported fonts
 description: Finance and operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service.
-author: sericks007
-ms.author: sericks
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: article
-ms.date: 04/13/2021
+ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include[banner](../includes/banner.md)]
 
-finance and operations apps include access to hundreds of standard, business-ready fonts available for documents rendered by the cloud-hosted service. 
+Finance and operations apps include access to hundreds of standard, business-ready fonts for documents rendered by the cloud-hosted service.
 
-This portfolio will continue to grow as the service expands into new regions and industries. The service doesn't support installation of custom fonts in customer environments.
+This portfolio continues to grow as the service expands into new regions and industries. The service doesn't support installing custom fonts in customer environments.
 
 The following list captures the portfolio of font families available for documents produced using SQL Server Reporting Services (SSRS) services in finance and operations apps.
 
@@ -300,10 +300,10 @@ The following list captures the portfolio of font families available for documen
 | Yu Gothic UI Semibold    | Finance and operations font |
 | Yu Gothic UI Semilight   | Finance and operations font |
 
-## Supported fonts for application version 8.0 with Platform update 23
+## Supported fonts for application version 8.0 with Platform Update 23
 
-|  Number   | Font family            |
-|-----|--------------------------|
+| Number | Font family |
+|--------|-------------|
 | 1   | Agency FB                |
 | 2   | Algerian                 |
 | 3   | Arial                    |
@@ -578,6 +578,4 @@ The following list captures the portfolio of font families available for documen
 | 272 | Yu Gothic UI Semibold    |
 | 273 | Yu Gothic UI Semilight   |
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

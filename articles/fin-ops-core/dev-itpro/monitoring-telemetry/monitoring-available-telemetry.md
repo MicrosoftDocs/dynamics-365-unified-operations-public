@@ -1,12 +1,12 @@
 ---
 title: Available telemetry
 description: Get an overview of the telemetry that is available in the Monitoring and telemetry feature.
-author: kennysaelen
+author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 09/15/2025
-ms.author: kesaelen
-ms.reviewer: johnmichalak
+ms.date: 01/15/2026
+ms.author: rijoshi 
+ms.reviewer: twheeloc
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] include robust, out-of-box telemetry capabilities when Application Insights is enabled. These capabilities provide critical insights into various aspects of the system and help customers monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
+[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] include robust, out-of-box telemetry capabilities when you enable Application Insights. These capabilities provide critical insights into various aspects of the system and help you monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
 
 ## Form run telemetry
 
@@ -70,25 +70,22 @@ The Data Management Framework (DMF) logs errors to the Custom Events table in Ap
 - Identify and fix integration issues
 - Monitor data pipeline health
 
-## Batch telemetry (preview)
+## Batch telemetry
 
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+> [!IMPORTANT]
+> - This feature is available in **PU69/10.0.45 (build >= 7.0.7690.21)** and **PU68/10.0.44 (build >= 7.0.7606.126)**.
 
-Telemetry from the batch framework is logged to the CustomEvents table in your Azure Monitor Application Insights instance.
+Batch telemetry is controlled by the following 3 flights: If it's not enabled in your environments, reach out to Microsoft support.
+1. **BatchTelemetryConfigurationFlight**
+1. **BatchThreadInfoTelemetryFlight**
+1. **BatchTelemetryCallstackFlight**
 
-> [!NOTE]
-> - This feature is in **PU69/10.0.45 (build >= 7.0.7690.21)** and backported to **PU68/10.0.44 (build >= 7.0.7606.126)**.
+If it's not enabled in your environments, reach out to Microsoft support.
 
-To enable Batch telemetry, activate the following flights:
-- **BatchTelemetryConfigurationFlight**
-- **BatchThreadInfoTelemetryFlight**
-- **BatchTelemetryCallstackFlight**
-
-After you enable the flights, new telemetry signals appear under the **Configure** tab:
+After the flights are enabled, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
-- **Batch Stop Time** - Logs when a batch job completes. Support duration tracking.
+- **Batch Stop Time** - Logs when a batch job completes. Supports duration tracking.
 - **Batch Throttling** - Captures throttling events and related system metrics (CPU, memory, SQL DTU).
 - **Batch Failure** - Adds diagnostic details when a batch job or task can't schedule. It complements existing Infolog errors by correlating telemetry with the originating batch job.
 - **Batch Queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
@@ -102,5 +99,14 @@ With batch telemetry, you can:
 ### Resources
 
 - Plug and play dashboard: [Batch Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/tree/main/Dashboards/AzureDataExplorer/Batch)
+  
+## DMF telemetry (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+We're enhancing the **Monitoring** and **Telemetry** features by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you might notice additional events in the UI, the underlying telemetry is planned for preview in January 2026. We share additional details as soon as the feature becomes available.
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

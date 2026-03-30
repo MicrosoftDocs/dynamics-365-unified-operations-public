@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqGroup, EcoResProductDetailsExtended
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.custom:
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up on-hand inventory. Use this approach to help compress lead times and absorb shocks to your supply chain. It helps you mitigate the "bullwhip effect," because demand variability isn't passed all the way down the supply chain. (The *bullwhip effect* refers to how small fluctuations in demand at the retail level can cause progressively larger fluctuations in demand at the wholesale, distributor, manufacturer, and raw material supplier levels.)
+Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up on-hand inventory. Use this approach to help compress lead times and absorb shocks to your supply chain. It helps you mitigate the "bullwhip effect," because demand variability doesn't pass all the way down the supply chain. (The *bullwhip effect* refers to how small fluctuations in demand at the retail level can cause progressively larger fluctuations in demand at the wholesale, distributor, manufacturer, and raw material supplier levels.)
 
 Inventory positioning is the first step of Demand Driven Materials Resource Planning (DDMRP).
 
@@ -108,7 +108,7 @@ Items become decoupling points when they belong to a coverage group that you con
 
 ### Set an item as a decoupling point
 
-To set an item as a decoupling point, follow these steps.
+To set an item as a decoupling point, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Find and select a released item that you want to set up for DDMRP.

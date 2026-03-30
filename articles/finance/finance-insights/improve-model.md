@@ -1,11 +1,11 @@
 ---
 title: Improve the prediction model
 description: Learn about features that you can use to improve the performance of prediction models, including outlines on selecting historical outcomes and filters.
-author: ShivamPandeyMSFT
+author: wei-msft 
 ms.author: shpandey
 ms.topic: article
-ms.date: 07/16/2021
-ms.reviewer: kfend
+ms.date: 10/24/2025
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-05-28
@@ -22,7 +22,7 @@ This article describes features that you can use to improve the performance of p
 
 ## Select historical outcomes
 
-You first select one or more of the three possible outcomes for invoices: **On time**, **Late**, and **Very late**. All three outcomes should be selected. If you clear the selection of any of the outcomes, invoices will be filtered out of the training process and the accuracy of the prediction will be reduced.
+You first select one or more of the three possible outcomes for invoices: **On time**, **Late**, and **Very late**. All three outcomes should be selected. If you clear the selection of any of the outcomes, invoices are filtered out of the training process and the accuracy of the prediction is reduced.
 
 [![Confirming outcomes.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
@@ -30,9 +30,9 @@ If your organization requires only two outcomes, change the **Late** and **Very 
 
 ## Select fields
 
-When you're selecting fields to include in the model, be aware that the list includes all available fields in the Microsoft Dataverse table that is mapped to the data in the Azure data lake. Some of these fields should **not** be selected. The fields that should not be selected fall into one of three categories:
+When you're selecting fields to include in the model, the list includes all available fields in the Microsoft Dataverse table that is mapped to the data in the Azure data lake. Some of these fields should **not** be selected. The fields that shouldn't be selected fall into one of three categories:
 
-- The field is required for the Dataverse table, but there is no backing data for it in the data lake.
+- The field is required for the Dataverse table, but there's no backing data for it in the data lake.
 - The field is an ID and therefore doesn't make sense for a machine learning feature.
 - The field represents information that won't be available during prediction.
 
@@ -44,7 +44,7 @@ The following illustration shows the fields that are available for the invoice t
 
 [![Available fields for the invoice table.](./media/available-fields.png)](./media/available-fields.png)
 
-The following fields should not be selected for training:
+The following fields shouldn't be selected for training:
 
 - **Invoice Account** (category 2)
 - **Is closed** (category 3) – This field is used to filter invoices for training (closed) and prediction (not closed).
@@ -59,13 +59,21 @@ The following illustration shows the fields that are available for the customer 
 
 [![Available fields for the customer table.](./media/related-entities.png)](./media/related-entities.png)
 
-The following field should not be selected for training:
+The following field shouldn't be selected for training:
 
 - **Row Unique Key** (category 2)
 
 ## Filters
 
 You can filter the invoices that are used for training by setting filter criteria for fields on the invoice or in the customer tables. For example, you can set a threshold to include only invoices where the total equals or exceeds a specific amount. Alternatively, you can exclude invoices that are associated with customers in a specific customer group.
+
+Choose a training start date to ignore any records where the invoice date is earlier than that.
+
+[![Training data start date.](./media/training-data-start-date.png)](./media/training-data-start-date.png)
+
+In some versions of Finance insights, there's a default filter that displays the last eight quarters.
+
+If this filter is already active and to narrow things down further, use the **Training start date** as a filter.
 
 For more information on filtering your data, see [Create a prediction model](/ai-builder/prediction-create-model#filter-your-data).
 

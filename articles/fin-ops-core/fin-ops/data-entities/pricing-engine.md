@@ -2,16 +2,16 @@
 title: Sync on-demand with the Supply Chain Management pricing engine
 description: Learn about how to use the pricing engine in Microsoft Dynamics 365 Supply Chain Management from Microsoft Dynamics 365 Sales.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/10/2019
+ms.date: 01/21/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 
-# Sync on-demand with the Supply Chain Management pricing engine
+# Sync on demand with the Supply Chain Management pricing engine
 
 [!include [banner](../../../finance/includes/banner.md)]
 
@@ -20,7 +20,7 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
 > [!NOTE]
 > An improved approach to pricing for sales quotations and sales orders is also available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. Additionally, when a sales quotation or sales order and a line are created and updated in Sales, line details, monetary line values, and totals can immediately be updated and synced between systems. For details about how to set up and enable these capabilities, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md) and [Enable and configure seamless sync with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-seamless-sync.md).
 
-## Use the pricing engine from Supply Chain Management in Sales with Use system pricing calculation equal to Yes
+## Use the pricing engine from Supply Chain Management in Sales with Use system pricing calculation set to Yes
 
 1. In Sales, go to **Sales \> Orders**.
 1. Select **New** to create a new order, or select an existing order in the **My Orders** list.
@@ -41,28 +41,28 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
 
 ## How it works
 
-When you create an order in Sales, that order is immediately synced to Supply Chain Management by using the values that you entered in Sales. When you select **Price order** or **Price quote** in Sales, Supply Chain Management calculates the price for each order line, and the total order, based on trade agreement rules that are defined in Supply Chain Management. The new calculated values are then synced back to Sales.
+When you create an order in Sales, the system immediately syncs that order to Supply Chain Management by using the values that you entered in Sales. When you select **Price order** or **Price quote** in Sales, Supply Chain Management calculates the price for each order line, and the total order, based on trade agreement rules that are defined in Supply Chain Management. The new calculated values are then synced back to Sales.
 
 ## Set trade agreement evaluation options in Supply Chain Management
 
-You can configure Supply Chain Management to either respect or ignore trade agreements when it calculates the price of an order that was created in Sales. Follow these steps to set up this option.
+You can configure Supply Chain Management to either respect or ignore trade agreements when it calculates the price of an order that you created in Sales. Follow these steps to set up this option.
 
 1. Sign in to your Supply Chain Management environment.
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
-1. On the **Prices** tab, on the **Trade agreement evaluation** FastTab, add or remove the row for the **Manual entry** policy as you require. The presence or absence of this policy controls whether the Supply Chain Management pricing engine will automatically overrule the sales price that was entered in Sales.
+1. On the **Prices** tab, on the **Trade agreement evaluation** FastTab, add, or remove the row for the **Manual entry** policy as needed. The presence or absence of this policy controls whether the Supply Chain Management pricing engine automatically overrules the sales price that you entered in Sales.
 
-    - If the **Manual entry** policy *is not* present in the **Trade agreement evaluation** setup, Supply Chain Management is the price master. When a user selects **Price order** or **Price quote** on the Action Pane in Sales, the Supply Chain Management pricing engine is called, and the sales price that was entered in Sales is overwritten, unless it equals the sales price that is calculated in Supply Chain Management.
+    - If the **Manual entry** policy *isn't* present in the **Trade agreement evaluation** setup, Supply Chain Management is the price master. When a user selects **Price order** or **Price quote** on the Action Pane in Sales, the Supply Chain Management pricing engine is called, and the sales price that was entered in Sales is overwritten, unless it equals the sales price that is calculated in Supply Chain Management.
     - If the **Manual entry** policy *is* present in the **Trade agreement evaluation** setup, Sales is the price master. The sales price that was entered in Sales is prevented from being automatically overwritten when a user selects **Price order** or **Price quote** on the Action Pane in Sales.
-    - Order lines and quotation lines that have a **Price per unit** and/or **Discount** value of *0* (zero) in Sales are treated as a special case. If a relevant trade agreement price is available, Supply Chain Management will *always* apply it to these fields, regardless of the **Trade agreement evaluation** setup.
+    - Order lines and quotation lines that have a **Price per unit** and/or **Discount** value of *0* (zero) in Sales are treated as a special case. If a relevant trade agreement price is available, Supply Chain Management *always* applies it to these fields, regardless of the **Trade agreement evaluation** setup.
 
     For an example of each of these cases, see the scenarios that follow.
 
 ## Example scenario 1: Trade agreement evaluation without the Manual entry option
 
-In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *does not* include the **Manual entry** policy. A Sales user enters an order line that has a non-zero sales price in Sales, and no sales price is defined for the item in Supply Chain Management.
+In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *doesn't* include the **Manual entry** policy. A Sales user enters an order line that has a nonzero sales price in Sales, and no sales price is defined for the item in Supply Chain Management.
 
 1. In Sales, a user creates an order line that has a **Price per unit** value of 1 US dollar (USD).
-1. The order line is synced to Supply Chain Management with a sales price of 1 USD.
+1. The order line is synced to Supply Chain Management with a sales price of $1.
 1. In Sales, the user selects **Price order** on the Action Pane.
 1. Supply Chain Management searches for relevant prices and discounts, and then calculates totals. Because the item has no sales price in Supply Chain Management, the calculation updates the line so that it has a sales price of 0 USD.
 1. The new sales price of the line is synced back to Sales.
@@ -70,36 +70,36 @@ In this scenario, the **Trade agreement evaluation** setup in Supply Chain Manag
 
 ## Example scenario 2: Trade agreement evaluation with the Manual entry option
 
-In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *does* include the **Manual entry** policy. A Sales user enters an order line that has a non-zero sales price in Sales. Supply Chain Management includes a trade agreement that sets a sales price of 2 USD for the ordered item.
+In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *includes* the **Manual entry** policy. A Sales user enters an order line that has a nonzero sales price in Sales. Supply Chain Management includes a trade agreement that sets a sales price of $2 for the ordered item.
 
-1. In Sales, a user creates an order line for an item that has a **Price per unit** value of 1 USD.
-1. The order line is synced to Supply Chain Management with a sales price of 1 USD.
+1. In Sales, a user creates an order line for an item that has a **Price per unit** value of $1.
+1. The order line is synced to Supply Chain Management with a sales price of $1.
 1. In Sales, the user selects **Price order** on the Action Pane.
 1. Because the **Trade agreement evaluation** setup in Supply Chain Management includes the **Manual entry** policy, the sales price isn't changed, even though an applicable trade agreement specifies another sales price.
 1. The sales price remains unchanged in Sales and in Supply Chain Management.
 
 ## Example scenario 3: Trade agreement evaluation for an item that has a sales price of zero in Sales
 
-In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *does* include the **Manual entry** policy. The Sales user enters an order line that has a sales price of 0 (zero) in Sales. Supply Chain Management includes a trade agreement that sets a sales price of 2 USD for an ordered item.
+In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *includes* the **Manual entry** policy. The Sales user enters an order line that has a sales price of 0 (zero) in Sales. Supply Chain Management includes a trade agreement that sets a sales price of $2 for an ordered item.
 
-1. In Sales, a user creates an order line that has a **Price per unit** value of 0 USD and a **Line discount** value of 0 USD.
-1. The order line is synced to Supply Chain Management with a sales price of 0 USD.
-1. Because it received an order line that has a sales price of 0 (zero), Supply Chain Management calls its pricing engine, even though the **Manual entry** option is enabled. The pricing engine returns the sales price of 2 USD that is established by the trade agreement and updates the order line in Supply Chain Management.
+1. In Sales, a user creates an order line that has a **Price per unit** value of $0 and a **Line discount** value of 0.
+1. The order line is synced to Supply Chain Management with a sales price of $0.
+1. Because it received an order line that has a sales price of 0 (zero), Supply Chain Management calls its pricing engine, even though the **Manual entry** option is enabled. The pricing engine returns the sales price of $2 that is established by the trade agreement and updates the order line in Supply Chain Management.
 1. The updated sales price isn't yet synced to the order line in Sales.
 1. In Sales, the user selects **Price order** on the Action Pane.
-1. The order line in Supply Chain Management keeps its sales price of 2 USD, which is now synced back to Sales. Therefore, the **Price per unit** value of the order line in Sales is updated from 0 USD to 2 USD.
-1. In Sales, the user enters a new **Line discount** value of 0.50 USD. Sales now calculates that the **Extended amount** value for the line is 1.50 USD.
-1. The order line is synced to Supply Chain Management with a **Line discount** value of 0.50 USD.
+1. The order line in Supply Chain Management keeps its sales price of $2, which is now synced back to Sales. Therefore, the **Price per unit** value of the order line in Sales is updated from $0 to $2.
+1. In Sales, the user enters a new **Line discount** value of 0.50. Sales now calculates that the **Extended amount** value for the line is 1.50.
+1. The order line is synced to Supply Chain Management with a **Line discount** value of 0.50.
 1. In Sales, the user selects **Price order** on the Action Pane.
 1. No prices or discounts change for the order line in Sales.
 
 ## Limitations
 
-When the columns in Sales are filled in, the following limitations apply:
+When you fill in the columns in Sales, the following limitations apply:
 
-- The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.
-- Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** column on the sales order line page in Supply Chain Management.
-- Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.
+- Sales doesn't replicate the setup of charges and charge allocations from Supply Chain Management.
+- Pricing doesn't consider special retail pricing that you specify in the **Retail Channel** column on the sales order line page in Supply Chain Management.
+- Discounts that you define in the **Trade Allowance Management** section of Supply Chain Management aren't considered.
 - Pricing doesn't consider sales agreements.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

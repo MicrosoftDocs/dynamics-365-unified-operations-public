@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/04/2024
+ms.date: 12/03/2025
 ms.reviewer: johnmichalak
 
 ---
@@ -15,9 +15,9 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+Companies in Germany are legally required to provide an export of financial data in a machine-readable form. This article describes how Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations. This functionality is also available for legal entities whose primary address is in Austria.
 
-Companies in Germany and some other countries/regions are legally required to export data for all transactions and master data from a fiscal year, and to provide this data to auditors within a reasonable time. The data must be collected in a specific file format, so that it can be imported to the auditor’s audit environment. This procedure is controlled by tax authorities. The data that must be exported depends on the requirements for an audit. For example, a typical set of exported data includes the following master data and transaction tables:
+Set of exported data includes the following master data and transaction tables:
 
 -   Main accounts
 -   Ledger transactions
@@ -30,16 +30,14 @@ Companies in Germany and some other countries/regions are legally required to ex
 -   Fixed assets master data
 -   Fixed assets transactions
 
-In the current version of Finance, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations. Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.
-
 ## Table groups and table definitions
 The following sections list the tables that are set up as examples in the **German audit file** electronic reporting data model configuration. You can use these tables out of the box to export the data. You can also customize existing table groups and extend the list of supported table groups in the configuration of the **German audit file** electronic reporting data model.
 
-### General ledger
+### <a name="general-ledger"></a> General ledger
 
 The following tables show the General ledger data structure definitions.
 
-#### Sachkonten
+#### Sachkonten (General ledger accounts)
 
 | Number | Feldname                  | Feldtyp | Beschreibung                                      | Electronic Reporting Data Source Path |
 |-----|---------------------------|---------|---------------------------------------------------|------------------------------------------------------------|
@@ -51,7 +49,7 @@ The following tables show the General ledger data structure definitions.
 | 6   | SACHKONTOBENUTZUNG        | Zeichen | Einstellung für einzelnen Benutzer des Sachkontos | MainAccount/ValidateUser                                   |
 | 7   | KONTENART                 | Zeichen | Kontenart                                         | MainAccount/Type                                           |
 
-#### Sachkontobuchungen
+#### Sachkontobuchungen (General ledger account entries)
 
 | Number | Feldname               | Feldtyp   | Beschreibung                                      | Electronic Reporting Data Source Path                                             |
 |-----|------------------------|-----------|---------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -76,11 +74,11 @@ The following tables show the General ledger data structure definitions.
 | 19  | GEGENKONTO             | Zeichen   | Nummer des Gegenkontos                            | $GeneralJournalEntry/RecId                                          |
 | 20  | DOKUMENT               | Zeichen   | Dokument                                          | $GeneralJournalEntry/DocumentNumber                                 |
 
-### Tax ledger
+### <a name="tax-ledger"></a> Tax ledger
 
 The following tables show the Tax data structure definitions.
 
-#### Umsatzsteuercodes
+#### Umsatzsteuercodes (VAT codes)
 
 | Number | Feldname          | Feldtyp   | Beschreibung      | Electronic Reporting Data Source Path|
 |-----|-------------------|-----------|-------------------|-------------------------------------------------------------------------|
@@ -90,7 +88,7 @@ The following tables show the Tax data structure definitions.
 | 4   | GULTIGAB          | Datum     | Gültig ab         | TaxData/TaxFromDate                         |
 | 5   | GULTIGBIS         | Datum     | Gültig bis        | TaxData/TaxToDate                           |
 
-#### MehrwertsteuerGruppen
+#### MehrwertsteuerGruppen (VAT Groups)
 
 | Number | Feldname                      | Feldtyp | Beschreibung               | Electronic Reporting Data Source Path |
 |-----|-------------------------------|---------|----------------------------|-------------------------------------------------|
@@ -101,7 +99,7 @@ The following tables show the Tax data structure definitions.
 | 5   | MEHRWERTSTEUERCODE            | Zeichen | Mehrwertsteuercode         | TaxGroupData/TaxCode    |
 | 6   | ERWERBSSTEUER                 | Zeichen | Erwerbssteuer              | TaxGroupData/UseTax       |
 
-#### Umsatzsteuerbuchungen
+#### Umsatzsteuerbuchungen (VAT entries)
 
 | Number | Feldname               | Feldtyp   | Beschreibung                                | Electronic Reporting Data Source Path |
 |-----|------------------------|-----------|---------------------------------------------|--------------------------------------|
@@ -123,11 +121,11 @@ The following tables show the Tax data structure definitions.
 | 16  | SACHKONTO              | Zeichen   | Sachkonto                                   | $TaxTrans/accountNameOperational()                         |
 | 17  | ARTIKEL\_MWST\_GRUPPE  | Zeichen   | Artikel-Mehrwertsteuergruppe                | $TaxTrans/TaxItemGroup                                   |
 
-### Accounts receivable
+### <a name="accounts-receivable"></a> Accounts receivable
 
 The following tables show the Accounts receivable data structure definitions.
 
-#### Kunden
+#### Kunden (Customers)
 
 | Number | Feldname             | Feldtyp | Beschreibung                          | Electronic Reporting Data Source Path|
 |-----|----------------------|---------|---------------------------------------|--------------------------------------|
@@ -145,7 +143,7 @@ The following tables show the Accounts receivable data structure definitions.
 | 12  | MWST\_GRUPPE         | Zeichen | MWSt Gruppe - Inland / EU / Drittland | CustTable/TaxGroup                                       |
 | 13  | WÄHRUNG              | Zeichen | Währung                               | CustTable/Currency                                       |
 
-#### Kundenbuchungen
+#### Kundenbuchungen (Customer bookings)
 
 | Number | Feldname                 | Feldtyp   | Beschreibung                          | Electronic Reporting Data Source Path |
 |-----|--------------------------|-----------|---------------------------------------|-----------------------------------------------------------------------------------|
@@ -162,11 +160,11 @@ The following tables show the Accounts receivable data structure definitions.
 | 11  | LETZTER\_AUSGLEICH       | Datum     | Letzter Ausgleich                     | $CustTrans/LastSettleDate                                 |
 | 12  | BUCHUNGSART              | Zeichen   | Buchungsart                           | $CustTrans/TransType                                      |
 
-### Accounts payable
+### <a name="accounts-payable"></a> Accounts payable
 
 The following tables show the Accounts payable data structure definitions.
 
-#### Lieferanten
+#### Lieferanten (Suppliers)
 
 | Number | Feldname                  | Feldtyp | Beschreibung                             | Electronic Reporting Data Source Path |
 |-----|---------------------------|---------|------------------------------------------|------------------------------------------------------------------------------------|
@@ -182,7 +180,7 @@ The following tables show the Accounts payable data structure definitions.
 | 10  | MWST\_GRUPPE              | Zeichen | MWSt Gruppe - Inland / EU / Drittland    | VendTable/TaxGroup                                       |
 | 11  | WAHRUNG                   | Zeichen | Währung                                  | VendTable/Currency                                       |
 
-#### Lieferantenbuchungen
+#### Lieferantenbuchungen (Supplier bookings)
 
 | Number | Feldname                 | Feldtyp   | Beschreibung                          | Electronic Reporting Data Source Path |
 |-----|--------------------------|-----------|---------------------------------------|-------------------------------------------------------------------------------------|
@@ -200,13 +198,13 @@ The following tables show the Accounts payable data structure definitions.
 | 12  | BUCHUNGSART              | Zeichen   | Buchungsart                           | $VendTrans/TransType                                      |
 | 13  | STATUS                   | Zeichen   | Status                                | $VendTrans/Approved                                       |
 
-### Fixed assets
+### <a name="fixed-assets"></a> Fixed assets
 
 Starting in version **33** of the **Data export model** configuration, Fixed assets data export is supported.
 
 The following tables show the Fixed assets data structure definitions.
 
-#### Anlagen
+#### Anlagen (Assets)
 
 | Number | Feldname       | Feldtyp | Beschreibung                                 | Electronic Reporting Data Source Path |
 |------------|--------------------|-------------|--------------------------------------------------|-------------------------------------------|
@@ -220,7 +218,7 @@ The following tables show the Fixed assets data structure definitions.
 | 8          | ANLAGENMODELL      | Zeichen     | Modellnummer der Anlage                          | AssetTable/Model                          |
 | 9          | STATUS             | Zeichen     | Status der Anlage, ob vorhanden oder nicht       | AssetTable/\$AssetBook/Status             |
 
-#### Anlagenbuchungen
+#### Anlagenbuchungen (Fixed asset bookings)
 
 | Number | Feldname       | Feldtyp | Beschreibung                                 | Electronic Reporting Data Source Path |
 |------------|-----------------|-------------|-----------------------------------------------|--------------------------------------------------------|

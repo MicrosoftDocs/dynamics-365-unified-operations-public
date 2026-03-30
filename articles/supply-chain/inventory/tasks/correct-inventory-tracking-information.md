@@ -1,55 +1,65 @@
---- 
+---
 title: Correct inventory tracking information
 description: Learn about the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.
 author: banluo-ms
 ms.author: banluo
-ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
-ms.reviewer: kamaybac   
+ms.reviewer: kamaybac
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans  
+ms.topic: how-to
+ms.date: 11/12/2025
+ms.custom:
+  - bap-template
 ---
 
 # Correct inventory tracking information
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. In this example, we'll update the information of a batch controlled item by changing an incorrectly registered batch to another batch. You can walk through this procedure in demo data company USPI, or using your own data. If you use your own data, you need to have an item that's batch-enabled, and it must not be location-controlled. You also need to have an inventory journal name set up for inventory transfers. These tasks would normally be carried out by a warehouse employee.
-
+This procedure walks you through the process of creating and posting an inventory transfer journal to correct inventory tracking information. In this example, you update the information of a batch-controlled item by changing an incorrectly registered batch to another batch. You can walk through this procedure in demo data company *USPI*, or use your own data. If you use your own data, you need to have an item that's batch-enabled, and it must not be location-controlled. You also need to have an inventory journal name set up for inventory transfers. These tasks are normally carried out by a warehouse employee.
 
 ## Create an inventory transfer journal
-1. Go to Transfer.
-2. Click New.
-3. In the Name field, enter or select a value.
-4. Click OK.
+
+To create an inventory transfer journal, follow these steps:
+
+1. Go to **Transfer**.
+1. Select **New**.
+1. In the **Name** field, enter or select a value.
+1. Select **OK**.
 
 ## Create journal lines
-1. Click New.
-2. In the Item number field, enter or select a value.
-    * If you are using USPI, select item M5003.  
-3. In the Quantity field, enter a number.
-4. Click the Inventory dimensions tab.
-5. In the Batch number field, enter or select a value.
-6. In the Site field, enter or select a value.
-7. In the Warehouse field, enter or select a value.
-8. In the Batch number field, enter or select a value.
+
+To create journal lines, follow these steps:
+
+1. Select **New**.
+1. In the **Item number** field, enter or select a value. If you're using *USPI* demo data, select item *M5003*.  
+1. In the **Quantity** field, enter a number.
+1. Select the **Inventory dimensions** tab.
+1. In the **Batch number** field, enter or select a value.
+1. In the **Site** field, enter or select a value.
+1. In the **Warehouse** field, enter or select a value.
+1. In the **Batch number** field, enter or select a value.
 
 ## Post the journal
-1. Click Post.
-2. Click OK.
+
+To post the journal, follow these steps:
+
+1. Select **Post**.
+1. Select **OK**.
 
 ## Check tracing information
-1. Click Inventory.
-2. Click Trace.
-3. Click OK.
-    * Using this tracing information you can back trace which batch you corrected inventory from.  You can also use the Item tracing page to see this information.  
-4. Close the page.
+
+To check tracing information, follow these steps:
+
+1. Select **Inventory**.
+1. Select **Trace**.
+1. Select **OK**. With this tracing information, you can trace back to the batch you corrected inventory from. You can also use the Item tracing page to see this information.  
+1. Close the page.
 
 ## Check inventory transactions
-1. Click Inventory.
-2. Click Transactions.
-    * Here you can see the transactions that were created when you posted your journal.   
 
+To check inventory transactions, follow these steps:
 
+1. Select **Inventory**.
+1. Select **Transactions**. Here you can see the transactions that were created when you posted your journal.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

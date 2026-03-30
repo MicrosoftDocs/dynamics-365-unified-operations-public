@@ -25,11 +25,11 @@ This article explains how to configure Warehouse management only mode by setting
 To use the Warehouse management only mode capability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
-- The feature that's named *Warehouse management only mode* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Warehouse management only mode* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, this feature is mandatory and can't be turned off.
 
 ## <a name="source-systems"></a>Configure your source systems
 
-Use the **Source systems** page to set up each external system that you want to use Warehouse management only mode to integrate with. To use Warehouse management only mode, you must have at least one record on this page. To set up a source system, follow these steps.
+Use the **Source systems** page to set up each external system that you want to use Warehouse management only mode to integrate with. To use Warehouse management only mode, you must have at least one record on this page. To set up a source system, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
 1. Follow one of these steps:

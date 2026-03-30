@@ -4,7 +4,7 @@ description: Learn how to use file attachments with Copilot for finance and oper
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 10/08/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -25,6 +25,7 @@ The chat experience for Copilot for finance and operations apps lets you attach 
 ## Prerequisites
 
 To use attachments with Copilot for finance and operations apps, make sure these requirements are met:
+
 - Finance and operations apps must be version 10.0.45 or later.
 - Install these solutions in the Microsoft Power Platform environment. If they're not installed, you can learn about installing Dynamics 365 solution packages in Dataverse in [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
   - The Copilot for finance and operations package includes:
@@ -40,14 +41,14 @@ To use attachments with Copilot for finance and operations apps, make sure these
 
 The attachments feature supports uploading a file to your chat session or taking a screenshot of the current browser window in your finance and operations apps client session to attach to the chat session.
 
-To add a file attachment to the chat session, follow these steps.
+To add a file attachment to the chat session, follow these steps:
 
 1. Select the **Attach** button in the chat window.
 1. Select **Browse...**.
 1. Go to the file location, and select the file you want to attach.
 1. Select **Open**.
 
-To add a screenshot attachment to your chat session with Copilot for finance and operations apps, follow these steps.
+To add a screenshot attachment to your chat session with Copilot for finance and operations apps, follow these steps:
 
 1. Select the **Attach** button in the chat window.
 1. Select **Add screenshot**.
@@ -68,7 +69,7 @@ This example shows how to extend Copilot for finance and operations apps with a 
 
 ### Create a new topic
 
-To create a new topic, follow these steps.
+To create a new topic, follow these steps:
 
 1. In Copilot Studio, open the **Copilot for finance and operations apps** agent.
 1. Select the **Topics** tab, and select **Add a topic \> From blank**.
@@ -76,7 +77,7 @@ To create a new topic, follow these steps.
 
 ### Get the attachment file
 
-To get the attachment file, follow these steps.
+To get the attachment file, follow these steps:
 
 1. In the new topic, select **Add node** \> **Variable management** \> **Set a variable value** to add a new **Set variable value** node.
 1. Create a new local variable in the **Set variable** field called **attachment_data**.
@@ -84,7 +85,7 @@ To get the attachment file, follow these steps.
 
 ### Create a prompt that analyzes the error screenshot
 
-To create a prompt that analyzes the error screenshot, follow these steps.
+To create a prompt that analyzes the error screenshot, follow these steps:
 
 1. After the **Set variable value** node, select **Add node** \> **Add tool** \> **New prompt**.
 1. Change the prompt title to **Troubleshoot FinOps errors**.
@@ -97,7 +98,7 @@ To create a prompt that analyzes the error screenshot, follow these steps.
 
 ### Return the response to the user
 
-To return the response to the user, follow these steps.
+To return the response to the user, follow these steps:
 
 1. After the **Prompt** node, select **Add node** \> **Send a message**.
 1. On the **Message** node, select the **Insert PowerFx expression** button.
@@ -107,7 +108,7 @@ To return the response to the user, follow these steps.
 
 After saving the topic, and publishing the changes to the agent, you can now try out the new attachments feature. In the finance and operations apps client, perform an operation that returns an error message. With the error message displayed on screen:
 
-To test the attachments, follow these steps.
+To test the attachments, follow these steps:
 
 1. Open the Copilot sidecar chat panel.
 1. Select the **Attach** button, then **Add screenshot**.
