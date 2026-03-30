@@ -89,7 +89,7 @@ After you complete all the configuration steps described in the previous chapter
 
 1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest versions of the following globalization features as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
    - **French electronic invoice (FR)**
-   - **French electronic invoice response (FR)**
+   - **French electronic invoice response (FR) ZZZZZZZZZZZ**
   
 1. All the required Electronic Reporting configurations will be automatically imported as a result of the globalization features import. You can review imported Electronic Reporting configurations in the **Electronic reporting** workspace, on the **Reporting configurations** tile. The full list of the required Electronic Reporting configurations can be found in the **[List of Electronic Reporting configurations](#ERconfigs)** section of the **Appendix** chapter.
 > [!NOTE]
@@ -100,7 +100,7 @@ After you complete all the configuration steps described in the previous chapter
     
 ## Configure the electronic invoicing features
 
-The **French electronic invoice (FR)** and **ZZZZZZZZZZZZZZZZZZZZZZZ** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
+The **French electronic invoice (FR) ZZZZZZZ** and **ZZZZZZZZZZZZZZZZZZZZZZZ** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
 
 Review and update the **French electronic invoice (FR)** feature configuration:
 
@@ -373,7 +373,7 @@ Set up units of measure.
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. Submission process consists of of 3 major steps. 
 
 - **Submission of e-invoices to Edicom** - at this stage, the system generates the XMLs of e-invoices and submit it to Edicom.
-- **Inquiring statuses of submited e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Falied** if the submited invoice is **Rejected** by Edicom due to various reasons or **Pending service response** if the submited invoice is successfully validated by Edicom and the system is ready for further processing.
+- **Inquiring statuses of submited e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Falied** if the submited invoice is **Rejected** by Edicom due to various reasons or **Pending update status execution** if the submited invoice is successfully validated by Edicom and the system is ready for further processing.
 - **Update statuses of submited e-invoices** - at this stage, D365 and Edicom can intercommunicate echanging differnet e-invoices statuses unitl the concluding status is reached or due to pre-configured timeout.
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
@@ -382,10 +382,10 @@ After you complete the required configuration steps, generate and submit electro
 
 To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-Check the submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
-
 > [!NOTE]
-> Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
+> During this stage, the system performs 2 first actions from the **French electronic invoice (FR) ZZZZZZZ** feature for the related invoice: generates the XML file of the electronic invoice in the required format and, if the first action is successfull, submits the generated XML file to Edicom.
+
+Check the submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md). The documents can have either **Falied** submission status, if there were either Electronic Reporting run-time errors or Edicom portal is unreachable, or **Pending service response** submission status, when ready for further processing.
 
 ### Inquiring statuses of submited e-invoices
 
@@ -394,7 +394,10 @@ To enquire the initial status of the submitted electronic invoices from Edicom, 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 1. In the **Channel** field, select the export channel you [created](#ExChannel), and then select **OK**.
 
+Check the results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. The documents can be in either **Falied** status if it was rejected by Edicom due to syntactical, semantical or other validation errors, or **Pending update status execution** if it is successfully validated by Edicom and ready for further processing.
 
+> [!NOTE]
+> Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
 
 ### Update statuses of submited e-invoices
 
