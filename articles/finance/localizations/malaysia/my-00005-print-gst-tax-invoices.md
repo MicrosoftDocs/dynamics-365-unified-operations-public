@@ -26,7 +26,7 @@ Before you can complete the procedures, you must select the **GST invoice** invo
 
 ## Print a GST invoice
 
-To print a GST invoice, follow these steps.
+To print a GST invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
@@ -78,7 +78,7 @@ To print a GST invoice, follow these steps.
 
 ## Print a GST invoice report
 
-To print a GST invoice report, follow these steps.
+To print a GST invoice report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.

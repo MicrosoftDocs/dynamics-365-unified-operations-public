@@ -35,7 +35,7 @@ For the store selector to display available stores, the fulfillment group must b
 
 In addition, for each store in the fulfillment group, the latitude and longitude of the retail store must be defined in headquarters.
 
-To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps.
+To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps:
 
 1. In Commerce headquarters, go to **Organization administration \> Organizations  \> Operating unit**.
 1. Search by the operating unit number in the left pane.
@@ -128,7 +128,7 @@ For **Pickup in store** mode, the module can be used only on PDPs and cart pages
 - For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
 - For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
-To configure the store selector module to show available stores for a store locations page, follow these steps.
+To configure the store selector module to show available stores for a store locations page, follow these steps:
 
 1. In Commerce headquarters, go to **Templates**, and select **New** to create a new template.
 1. In the **New template** dialog box, under **Template name**, enter **Marketing template**, and then select **OK**.

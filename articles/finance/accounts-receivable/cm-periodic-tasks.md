@@ -29,7 +29,7 @@ When you run the process, customer balance statistics are updated immediately. T
 ## Force credit hold
 
 Instead of using blocking reasons to put a sales order on a credit hold, you can use the **Force credit hold** periodic task to put multiple sales orders on hold. 
-To run this process, follow these steps.
+To run this process, follow these steps:
 
 1. Go to **Credit and collections** \> **Periodic tasks** \> **Credit management** \> **Force credit hold**.
 1. Select a reason.

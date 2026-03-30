@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-06-01
 
 This article explains how to create a credit note against a purchase order invoice in Microsoft Dynamics 365 Finance.
 
-To create a credit note against a purchase order invoice, follow these steps.
+To create a credit note against a purchase order invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Purchase orders \> All purchase orders**.
 1. Create a purchase order.
@@ -32,14 +32,14 @@ To create a credit note against a purchase order invoice, follow these steps.
 
 ## Validate the tax details
 
-To validate the tax details, follow these steps.
+To validate the tax details, follow these steps:
 
 1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
 1. Select **Close**, and then select **Confirm**.
 
 ## Post the purchase invoice
 
-To post the purchase invoice, follow these steps.
+To post the purchase invoice, follow these steps:
 
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. In the **Default quantity for lines** field, select **Ordered quantity**.

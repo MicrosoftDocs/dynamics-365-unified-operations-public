@@ -26,7 +26,7 @@ Configuration data templates are predefined lists of entities for each module ar
 
 The **Template** page in the **Data management** workspace provides tools that help you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner. Use **Enhanced view** to take advantage of the new features.
 
-To create a template, follow these steps.
+To create a template, follow these steps:
 
 1. Select **New** to create a template. Enter an ID and name for the template. The status is set to **Draft**.
 1. Add or remove entities as needed.

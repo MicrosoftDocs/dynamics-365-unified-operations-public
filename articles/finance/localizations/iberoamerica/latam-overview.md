@@ -4,7 +4,7 @@ description: Access an overview of functionality specific to Latin American, inc
 author: EvgenyPopovMBS
 ms.author: evgenypopov 
 ms.topic: overview
-ms.date: 08/27/2025
+ms.date: 03/03/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak  
 ---
@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 # Latin America overview
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 In Latin America (LATAM), Microsoft Dynamics 365 Finance previously supported out-of-box localizations for Brazil and Mexico. Then, in 2023 release wave 1, Microsoft delivered out-of-box localizations for more countries/regions in Latin America. In future release waves, we will continue to extend the scope of supported countries/regions in Latin America to address the needs of multiple global and local customers. Eventually, we will deliver out-of-box localizations for a total of 16 LATAM countries/regions.
 
@@ -39,7 +41,7 @@ Some of the functionality that's referred to in this article might not yet be av
 | Dominican Republic | Not planned | Available |
 | Peru | Not planned  | Available |
 | Venezuela | Not planned | Available |
-| Argentina | 2026 wave 1 | 2026 wave 2 |
+| Argentina | 2026 wave 2 | To be determined |
 
 ## See also
 
@@ -52,3 +54,5 @@ The following articles include information about working with Finance in Latin A
 - [Vendor set configuration](ltm-core-vendors-set.md)
 - [Address setup for Latin America](ltm-core-address-setup.md)
 - [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

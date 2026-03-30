@@ -71,14 +71,14 @@ Setting up wallet payment methods and the wallet user experience is a four-step 
 
 #### Step 1: Create a new electronic payment type (card type)
 
-To create a new electronic payment type, follow these steps.
+To create a new electronic payment type, follow these steps:
 
 1. In Commerce headquarters, go to the **Card types** form (**Retail and Commerce \> Channel step \> Payment methods \> Card types**).
 1. Create a new card type for Alipay. For **Type**, select **Wallet**.
 
 #### Step 2: Map the newly created card type to a processor payment method
 
-To map the newly created card type to a processor payment method, follow these steps.
+To map the newly created card type to a processor payment method, follow these steps:
 
 1. In headquarters for the card type you created, on the Action Pane select **Processor mapping**. 
 1. On the **Processor payment mapping methods** form, in the **CARD TENDER TYPES** section, select the newly created card type ID.
@@ -96,7 +96,7 @@ The following table maps processor payment values to their respective wallet pay
      
 #### Step 3: Add the card type to a payment method of the brick-and-mortar store
 
-To add the card type to a payment method of a brick-and-mortar store, follow these steps.
+To add the card type to a payment method of a brick-and-mortar store, follow these steps:
 
 1. In headquarters, go to the **All stores** form (**Retail and Commerce \> Channels \> Stores \> All stores**).
 1. Open the payment methods form associated with the store where the wallet need to be enabled.

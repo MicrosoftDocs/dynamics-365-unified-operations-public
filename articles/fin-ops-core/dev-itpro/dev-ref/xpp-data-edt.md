@@ -28,7 +28,7 @@ You can also base EDTs on other EDTs. EDTs are standard data types, but they hav
 
 ## Create an EDT
 
-This feature isn't implemented as a language construct. To create an EDT, follow these steps.
+This feature isn't implemented as a language construct. To create an EDT, follow these steps:
 
 1.  In Solution Explorer, right-click on the project, point to **Add**, and then click **New item**.
 2.  In the **Add New Item** dialog box, select **Installed** and then **Artifacts** in the left pane.

@@ -51,7 +51,7 @@ Learn more in [Tax application for Latin America](ltm-core-tax-application.md).
 
 Lookups and conditions let you select the document classification IDs and tax codes used in transactions shown in the report.
 
-To configure application-specific parameters for format 1005, after you meet the prerequisites, follow these steps.
+To configure application-specific parameters for format 1005, after you meet the prerequisites, follow these steps:
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
 1. In the tree on the left, select **LTM Tax Report deployment** \> **Format 1005**.
@@ -138,7 +138,7 @@ To configure application-specific parameters for format 1005, after you meet the
 
 ## Issue file format 1005
 
-To issue file format 1005, follow these steps.
+To issue file format 1005, follow these steps:
 
 1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1005**, then select **OK**.
@@ -147,7 +147,7 @@ To issue file format 1005, follow these steps.
 
 ## Generate Format 1005 report in Excel
 
-To generate Format 1005 report in Excel, follow these steps.
+To generate Format 1005 report in Excel, follow these steps:
 
 1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select **File format 1005 Excel**.

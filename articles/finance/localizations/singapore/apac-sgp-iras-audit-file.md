@@ -53,7 +53,7 @@ Import the most recent versions of the configurations. The version description u
 
 In the IAF for Singapore, sales tax codes that are used in Finance must be associated with Singaporean standard GST codes for the purpose of IAF reporting.
 
-If your legal entity's GST codes are set up in accordance with the Singaporean standard GST codes, follow these steps.
+If your legal entity's GST codes are set up in accordance with the Singaporean standard GST codes, follow these steps:
 
 1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** ER format.
 2. Confirm that the company that you're working in is the company for which you'll run the IAF for Singapore.
@@ -74,7 +74,7 @@ If your legal entity's GST codes aren't set up in accordance with the Singaporea
 
 ### <a name="features"></a>Enable features in Feature management
 
-To enable features in Feature management, follow these steps.
+To enable features in Feature management, follow these steps:
 
 1. Go to the **Feature management** workspace.
 2. On the **All** tab, find and select the following features in the feature list. Note that enabling some of these features is optional.
@@ -91,7 +91,7 @@ To enable features in Feature management, follow these steps.
 
 ### <a name="gl-param"></a>Select the ER configuration in General ledger parameters
 
-To select the ER configuration in General ledger parameters, follow these steps.
+To select the ER configuration in General ledger parameters, follow these steps:
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **IRAS Audit File - IAF in TXT (SG)**.
@@ -118,7 +118,7 @@ To report the GST Registration Number of the company that is reporting the IAF, 
 
 ## Generate an IAF for Singapore
 
-To generate an IAF for Singapore, follow these steps.
+To generate an IAF for Singapore, follow these steps:
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 2. In the report dialog, set the following fields.

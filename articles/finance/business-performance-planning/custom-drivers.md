@@ -29,7 +29,7 @@ Planners can use business performance planning to do driver-based modeling direc
 
 ## Add drivers
 
-To add drivers, follow these steps.
+To add drivers, follow these steps:
 
 1. In business performance planning, go to **Cubes**.
 1. Select **New cube**.
@@ -71,7 +71,7 @@ Unlike computed columns, driver fields are fully editable and user-controlled th
 
 ## Example
 
-If you want to calculate revenue as *Price* &times; *Quantity*, follow these steps.
+If you want to calculate revenue as *Price* &times; *Quantity*, follow these steps:
 
 1. Add the **Price** and **Quantity** drivers.
 1. Create the following computed column: Revenue = Price \* Quantity.

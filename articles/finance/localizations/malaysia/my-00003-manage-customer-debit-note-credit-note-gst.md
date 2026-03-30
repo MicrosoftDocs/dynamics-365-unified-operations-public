@@ -27,7 +27,7 @@ The procedures use the demo data company MYMF.
 
 ## Create a debit note from a sales order
 
-To create a debit note from a sales order, follow these steps.
+To create a debit note from a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select **New**.
@@ -64,7 +64,7 @@ To create a debit note from a sales order, follow these steps.
 
 ## Create a credit note from a free text invoice
 
-To create a credit note from a free text invoice, follow these steps.
+To create a credit note from a free text invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.

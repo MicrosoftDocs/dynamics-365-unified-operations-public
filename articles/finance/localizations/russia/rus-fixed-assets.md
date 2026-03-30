@@ -40,7 +40,7 @@ The following examples show the types of non-financial information that are rela
 
 Before you create transactions for any fixed or intangible asset, you must register the asset record and provide basic information about the asset.
 
-To register fixed assets, follow these steps.
+To register fixed assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. On the Action Pane, select **New** to create a fixed asset.
@@ -86,7 +86,7 @@ To register fixed assets, follow these steps.
 
 ## Fixed asset value models
 
-To update or create value models for the fixed asset, follow these steps.
+To update or create value models for the fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Fixed assets** page, on the Action Pane, select **Value models**.
 
@@ -120,7 +120,7 @@ To update or create value models for the fixed asset, follow these steps.
 
 ### View asset transactions
 
-To view the fixed asset transactions, follow these steps.
+To view the fixed asset transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. On the Action Pane, select **Value models**.
@@ -139,7 +139,7 @@ To view the fixed asset transactions, follow these steps.
 
 The value of an asset on a specific date reflects the results of all transactions for that asset.
 
-To view the balance of an asset, follow these steps.
+To view the balance of an asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. On the Action Pane, select **Value models**.

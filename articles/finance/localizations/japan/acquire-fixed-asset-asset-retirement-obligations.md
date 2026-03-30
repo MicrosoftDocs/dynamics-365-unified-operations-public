@@ -25,7 +25,7 @@ The following procedure walks you through how to acquire a fixed asset with an a
 
 Before you can complete the following procedure, you must first select the **Fixed Assets** configuration key.
 
-To acquire a fixed asset with an ARO, follow these steps.
+To acquire a fixed asset with an ARO, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Asset retirement obligations \> Fixed assets journal**.
 1. Select **New**.

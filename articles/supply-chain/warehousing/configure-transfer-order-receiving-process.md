@@ -23,7 +23,7 @@ Two fields are used to configure the receiving process. The **Transfer order rec
 
 ## Configure the receiving process for a warehouse
 
-To configure the receiving process for a warehouse, follow these steps.
+To configure the receiving process for a warehouse, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters**.
 1. On the **General** tab, on the **Receiving** FastTab, set the following fields:

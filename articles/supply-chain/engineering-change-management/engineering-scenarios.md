@@ -41,7 +41,7 @@ Work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-s
 
 ### Set up an engineering organization
 
-An engineering organization owns the engineering data, and is responsible for product design and product changes. To set up your engineering organizations, follow these steps.
+An engineering organization owns the engineering data, and is responsible for product design and product changes. To set up your engineering organizations, follow these steps:
 
 1. Go to **Engineering change management** \> **Setup** \> **Engineering organizations**.
 1. Select **New** to add a row to the grid, and set the following values for it:
@@ -63,7 +63,7 @@ An engineering organization owns the engineering data, and is responsible for pr
 
 ### Set up product lifecycle states
 
-As an engineering product goes through its lifecycle, it's important that you be able to control which transactions are allowed for each lifecycle state. To set up the product lifecycle states, follow these steps.
+As an engineering product goes through its lifecycle, it's important that you be able to control which transactions are allowed for each lifecycle state. To set up the product lifecycle states, follow these steps:
 
 1. Go to **Engineering change management** \> **Setup** \> **Product lifecycle state**.
 1. Select **New** to add a lifecycle state, and set the following values for it:
@@ -131,7 +131,7 @@ As an engineering product goes through its lifecycle, it's important that you be
 
 ### Set up an engineering product category
 
-Engineering product categories provide the basis for creating engineering products (that is, products that are versioned and controlled through engineering change management). To set up engineering product categories, follow these steps.
+Engineering product categories provide the basis for creating engineering products (that is, products that are versioned and controlled through engineering change management). To set up engineering product categories, follow these steps:
 
 1. Go to **Engineering change management** \> **Engineering product category details**.
 1. Select **New** to create a category.
@@ -164,7 +164,7 @@ Engineering product categories provide the basis for creating engineering produc
 
 ## Create a new engineering product
 
-An engineering product is a product that is versioned and controlled through engineering change management. In other words, you can control the changes during its life, and the change information will be saved using engineering change orders. To create engineering products, follow these steps.
+An engineering product is a product that is versioned and controlled through engineering change management. In other words, you can control the changes during its life, and the change information will be saved using engineering change orders. To create engineering products, follow these steps:
 
 1. Make sure that you're in the legal entity of your engineering organization (*DEMF* for this example). Use the company picker on the right side of the navigation bar as required.
 1. Open the **Released products** page by following one of these steps:
@@ -265,7 +265,7 @@ The Engineering department has now released the information to the local compani
 
 Because you set the **Product acceptance** field to *Manual* on the **Engineering change management parameters** page for the *USMF* company, products must be manually accepted before they are released to that company. In other words, they must be reviewed and accepted before they become released products.
 
-To review the product and release it in the *USMF* company, follow these steps.
+To review the product and release it in the *USMF* company, follow these steps:
 
 1. Set the legal entity to *USMF*. (Use the company picker on the right side of the navigation bar.)
 1. Go to **Engineering change management** \> **Common** \> **Product releases** \> **Open product releases**.
@@ -300,7 +300,7 @@ The master data manager for the *USMF* company wants to make sure that the produ
 
 ## Add the engineering product to a sales order
 
-The product can now be sold to a customer. To add the product to a sales order, follow these steps.
+The product can now be sold to a customer. To add the product to a sales order, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. On the Action Pane, select **New**.
@@ -390,7 +390,7 @@ The engineer now reviews the request from the customer and creates a change orde
 
 ## Release the changed product
 
-The product can now be released again to the *USMF* company and then sent to the customer. To release the product directly from the engineering change order, follow these steps.
+The product can now be released again to the *USMF* company and then sent to the customer. To release the product directly from the engineering change order, follow these steps:
 
 1. Open the engineering change order that you created in the previous exercise, if it isn't already open.
 1. On the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Search**.

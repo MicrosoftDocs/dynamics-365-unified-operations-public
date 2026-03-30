@@ -24,7 +24,7 @@ In Microsoft Dynamics 365 Finance, you can generate a VAT declaration in paper f
 
 Before you start to generate the **VAT 100** report, make sure that the following prerequisites are in place in your system.
 
-To configure the prerequisites, follow these steps.
+To configure the prerequisites, follow these steps:
 
 1. In Dynamics 365 Finance, import the following electronic reporting (ER) configurations.
 
@@ -50,7 +50,7 @@ To configure the prerequisites, follow these steps.
 
 ## Generate a VAT 100 report
 
-To generate a paper format of the VAT 100 report, follow these steps.
+To generate a paper format of the VAT 100 report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
 1. Select the settlement period, and then, in the **From date** field, enter the start date of the reporting period.

@@ -27,7 +27,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Modify a depreciation rate schedule
 
-To modify a depreciation rate schedule, follow these steps.
+To modify a depreciation rate schedule, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation rate schedules \> Depreciation rate schedules**.
 1. Select **Edit**.
@@ -38,7 +38,7 @@ To modify a depreciation rate schedule, follow these steps.
 
 ## Associate a depreciation rate schedule to a depreciation profile
 
-To associate a depreciation rate schedule to a depreciation profile, follow these steps.
+To associate a depreciation rate schedule to a depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
 1. Select **Edit**.

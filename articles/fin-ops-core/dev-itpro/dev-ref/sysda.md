@@ -31,7 +31,7 @@ The following sections provide examples of each type of query and the customizat
 
 ## Select query
 
-To run a **select** query, follow these steps.
+To run a **select** query, follow these steps:
 
 1. Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.
 2. Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.
@@ -105,6 +105,7 @@ It supports all seven comparison expressions: namely,
 - \<
 - \<=
 - LIKE
+- IN
 
 It supports ORDER BY clauses.
 
@@ -172,7 +173,7 @@ SysDaQueryObjectBuilder::from(exampleTable)
 
 ## Update statement
 
-To run an **update** statement, follow these steps.
+To run an **update** statement, follow these steps:
 
 1. Create and configure a **SysDaUpdateObject** object.
 2. Update data by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. Because updates modify the data in the database, you must wrap the call to **execute** in **ttsbegin** and **ttscommit** statements.
@@ -213,7 +214,7 @@ info("Updated value is: " + t1.stringField);
 
 ## Insert statement
 
-To run an **insert** statement, follow these steps.
+To run an **insert** statement, follow these steps:
 
 1. Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.
 2. Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in **SysDaQueryObject.projection()** must match the order of the fields in **SysDaInsertObject.fields()**.
@@ -272,7 +273,7 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 
 ## Delete statement
 
-To run a **delete** statement, follow these steps.
+To run a **delete** statement, follow these steps:
 
 1. Create and configure a **SysDaQueryObject** object to specify which rows to delete.
 2. Create a **SysDaDeleteObject** object, and pass the **SysDaQueryObject** object to the constructor.
@@ -313,6 +314,35 @@ ttsbegin;
 ttscommit;
 
 info("Number of rows deleted: " + any2Str(t.RowCount()));
+```
+
+## IN keyword
+
+The SysDaInExpression class filters rows based on values from a list. It is a strongly typed container that is derived from the Array class.
+The following example filters rows where the **TransType** value is equal to either Sales or Cust.
+
+```xpp
+CustTrans custTrans;
+SysDaQueryObject qe = new SysDaQueryObject(custTrans);
+Array array = new Array(Types::Integer);
+
+array.value(1, LedgerTransType::Sales);
+array.value(2, LedgerTransType::Cust);
+
+qe.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly10;
+qe.whereClause(new SysDaInExpression(
+    new SysDaFieldExpression(custTrans, fieldStr(CustTrans, TransType)),
+    new SysDaValueExpression(array.pack())));
+
+SysDaSearchObject so = new SysDaSearchObject(qe);
+SysDaSearchStatement ss = new SysDaSearchStatement();
+
+while (ss.findNext(so))
+{
+    info(strFmt('%1 - %2', custTrans.AccountNum, custTrans.TransType));
+}
+
+//so.toString: WHILE SELECT FIRSTONLY10 FROM CustTrans WHERE (CustTrans.TransType in System.Object[])
 ```
 
 ## Clauses

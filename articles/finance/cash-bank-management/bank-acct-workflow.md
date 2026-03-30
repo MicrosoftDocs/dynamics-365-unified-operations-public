@@ -19,6 +19,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article explains how to enable an approval workflow for bank accounts in the **Cash and bank management** module.
 
@@ -32,7 +33,7 @@ This article explains how to enable an approval workflow for bank accounts in th
 
 ## Activate an approval workflow
 
-To enable a bank account approval workflow, follow these steps.
+To enable a bank account approval workflow, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank master data change setup**.
 1. Set the following parameters:
@@ -47,9 +48,11 @@ To enable a bank account approval workflow, follow these steps.
 
 ## View the change history
 
-To view the bank account change history, follow these steps.
+To view the bank account change history, follow these steps:
 
 1. Go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 1. Select **Changes**.
 1. Select **Change history**.
+
+
 

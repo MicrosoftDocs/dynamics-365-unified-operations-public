@@ -4,7 +4,7 @@ description: Learn about how you can personalize the app and user experience, co
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/27/2024
+ms.date: 03/26/2026
 ms.reviewer: twheeloc
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
@@ -18,13 +18,13 @@ ms.custom:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article explains how you can personalize the app and covers the following subjects: 
+This article explains how you can personalize the app and covers the following subjects:
 
-- **System-wide options** – These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zone. 
-- **Restricted personalization access** – At this access level, user actions that are associated with typical page usage are automatically saved by the app and restored the next time that you visit the page. For example, the app stores the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs. 
-- **Full personalization access** – At this access level, users have access to all personalization capabilities in the app. In particular, they have access to the **Personalization** toolbar. 
+- **System-wide options** – These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zone.
+- **Restricted personalization access** – At this access level, user actions that are associated with typical page usage are automatically saved by the app and restored the next time that you visit the page. For example, the app stores the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs.
+- **Full personalization access** – At this access level, users have access to all personalization capabilities in the app. In particular, they have access to the **Personalization** toolbar.
 - **Sharing personalizations** – Users who have full personalization access can export their page personalizations and share them with other users.
-- **Administration of personalizations** – Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level. 
+- **Administration of personalizations** – Privileged users can access the **Personalization** administration page to manage all personalizations at an organizational level.
 
 ## System-wide options for the current user
 
@@ -39,22 +39,22 @@ In addition to changing your user settings, you can also view and delete your us
 
 ## Restricted personalization access (formerly implicit personalizations)
 
-At the **restricted personalization access** level, user actions that are associated with typical page usage are automatically saved by the app and restored the next time that you visit the page. No explicit save action is required. 
+At the **restricted personalization access** level, user actions that are associated with typical page usage are automatically saved by the app and restored the next time that you visit the page. No explicit save action is required.
 
-Here's a list of the actions that fall under typical page usage and are covered by restricted personalization access: 
+Here's a list of the actions that fall under typical page usage and are covered by restricted personalization access:
 
 - **Grid column widths** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. The app stores the width that you set for a column. Then, the next time that you open that page, the column will be resized to that width.
-- **Grid footer and column totals** – *(Available only when the new grid control is turned on)* You can decide whether a total should be shown at the bottom of any numeric column in a grid, and whether the grid footer should be visible. The app stores these preferences and applies them the next time that you open the page. For more information, see [Grid capabilities](grid-capabilities.md). 
+- **Grid footer and column totals** – *(Available only when the new grid control is turned on)* You can decide whether a total should be shown at the bottom of any numeric column in a grid, and whether the grid footer should be visible. The app stores these preferences and applies them the next time that you open the page. For more information, see [Grid capabilities](grid-capabilities.md).
 - **FastTabs** – Some pages have expandable sections that are known as *FastTabs*. The app stores information about the FastTabs that you expanded or collapsed. The next time that you open the page, the same FastTabs will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FastTab, because the app doesn't have to retrieve the information for FastTabs until they're expanded. As is explained later in this article, you can also change the order of the FastTabs on a page.
 - **FactBoxes** – Some pages have a **Related information** pane that shows read-only information that is related to the current subject of the page. Each section in the **Related information** pane is known as a *FactBox*. You can expand or collapse the **Related information** pane, and you can also expand or collapse individual FactBoxes. The app stores these preferences. The next time that you open the page, the **Related information** pane and the individual FactBoxes will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing the **Related information** Pane or a FactBox, because the app doesn't have to retrieve the information for FactBoxes until they're expanded.
 - **Action Panes** – An *Action Pane* appears near the top of most pages. The Action Pane contains buttons for many of the actions that you can perform on the current page. These buttons are often organized on tabs. You can *pin* the whole Action Pane open, or you can collapse it by default. The next time that you open the page, the Action Pane will be either open or collapsed, based on your last interaction with the page. If you pinned the Action Pane open, the last tab that you were using is displayed.
 - **QuickFilters** – A *QuickFilter* appears above many grids. The QuickFilter lets you filter the grid based on a single column that you select. The app stores the column that you filtered on. Then, the next time that you open that page, the grid will use that same column for filtering by default. However, you can still select a different column to filter the grid on.
 - **Column header filters** – When you filter a grid by using *column header filters*, you can change the filter operator as you require to find the data that you want. For example, you can change the operator from **begins with** to **is exactly**. Every time that you use a column header filter and change the filter operator, the app stores the change. Then, the next time that you filter on that column, the filter operator will be restored.
-- **Navigation pane** – You can open the *navigation pane* by selecting the **Expand the navigation pane** button in the upper left of any page. (This button is sometimes referred to as the _**Menu** button_, *hamburger*, *hamburger menu*, or *hamburger button*.) You can pin the navigation pane open, or you can collapsed it by default. After you pin the navigation pane open, the app will keep it open until you collapse it.
+- **Navigation pane** – You can open the *navigation pane* by selecting the **Expand the navigation pane** button in the upper left of any page. (This button is sometimes referred to as the ***Menu** button*, *hamburger*, *hamburger menu*, or *hamburger button*.) You can pin the navigation pane open, or you can collapsed it by default. After you pin the navigation pane open, the app will keep it open until you collapse it.
 
 ## Full personalization access (formerly explicit personalizations)
 
-At the **full personalization access** level, users have access to all the personalization capabilities that the app provides. Because different people and companies have different needs when they interact with the app, especially in terms of utilized fields, personalization provides tools that let users and organizations tailor the way that information is ordered and interacted with in the app. These capabilities are key to providing simplified, optimized experiences in the app that are tailored to you and your organization. 
+At the **full personalization access** level, users have access to all the personalization capabilities that the app provides. Because different people and companies have different needs when they interact with the app, especially in terms of utilized fields, personalization provides tools that let users and organizations tailor the way that information is ordered and interacted with in the app. These capabilities are key to providing simplified, optimized experiences in the app that are tailored to you and your organization.
 
 For pages with [saved views](saved-views.md), an explicit save is required to persist any user changes to the user experience for the current view. For pages without saved views, these changes are saved automatically.
 
@@ -83,7 +83,7 @@ You can use the property window to personalize an element in the following ways:
 - Include the information in the FastTab's summary section (if the element is on a FastTab).
 - Skip the field so that it never receives focus when you tab through the page.
 - Prevent data in the field from being edited (for any record).
-- Designate a field to be required for data entry. If no value is entered in this field, it appears with a red border and an asterisk to indicate this state. 
+- Designate a field to be required for data entry. If no value is entered in this field, it appears with a red border and an asterisk to indicate this state.
 
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and property windows for elements on the default dashboard might let you create a new custom workspace.
 
@@ -115,13 +115,13 @@ The following tools are available on the **Personalization** toolbar:
 - Use the **Move** tool to move an element to a different location in the current group of elements. You can't move an element outside its parent group. To use this tool, select the **Move** button on the toolbar, and then select the element to move. When you select an element, the app determines the locations where the element is allowed to be moved. These locations are known as *drop zones*. As you drag the element around in the current group, each drop zone is shown as a colored, bold line next to the area where the element can be dropped.
 - Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** button on the toolbar, all elements that are currently skipped are shown in a shaded container. You can interactively remove or add fields to the tab sequence.
 - Use the **Show in header** tool when you want a field to appear in the FastTab's summary section. When you select the **Show in header** button on the toolbar, all fields that are selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from the summary by selecting the fields.
-- Use the **Require** tool to designate an element as required for data entry. When you select the **Require** button on the toolbar, all elements that are personalized to make them required are shown in a shaded container. You can then make them not required again. 
+- Use the **Require** tool to designate an element as required for data entry. When you select the **Require** button on the toolbar, all elements that are personalized to make them required are shown in a shaded container. You can then make them not required again.
 - Use the **Lock** tool to mark an element as either editable or noneditable. When you select the **Lock** button on the toolbar, all elements that are currently noneditable are shown in a shaded container. You can then make them editable again. Some fields are required and can't be made noneditable. A padlock symbol appears next to those fields.
 - Use the **Add an app from Power Apps** tool to embed an app that was created by using Microsoft Power Apps into the page. This option is available only when the [Saved views](saved-views.md) feature is turned off.
 - Use the **Add an app** button to embed an app into the page. This app can either be an app created from Microsoft [Power Apps](embed-power-apps.md) or a [third-party](embed-website.md] app.  
-- Use the **Clear** tool to reset the page to its default state. This action applies to the current view for pages that support saved views and to all personalizations on the current page for pages that don't support saved views. You can't undo this action, so only use this tool if you're sure that you want to reset the view or page. 
+- Use the **Clear** tool to reset the page to its default state. This action applies to the current view for pages that support saved views and to all personalizations on the current page for pages that don't support saved views. You can't undo this action, so only use this tool if you're sure that you want to reset the view or page.
 - Use the **Import** tool to load a personalization from a file that you or someone else previously created. The imported personalizations then become a view on the page. If the view already exists, you have the option to skip the import, replace the current view that has the same name, or rename the imported view.
-- Use the **Export** tool to save the current view for the page to a file with which you can share your personalizations with other users. Users can then import the file that contains your personalizations for the page. 
+- Use the **Export** tool to save the current view for the page to a file with which you can share your personalizations with other users. Users can then import the file that contains your personalizations for the page.
 - Select the **Close** button to close the **Personalization** toolbar and return the page to its previous interactive state.
 
 When you use the **Personalization** toolbar, you must explicitly save personalizations to a view for them to be persisted.  
@@ -142,7 +142,7 @@ For some pages that include lists, the **Add to workspace** personalization feat
 - To add a link to a workspace, first filter the list on the page so that it displays the data that you're interested in (and save it to a view if the current page has a large view selector). After you select **Add to workspace**, select a workspace and then select **Link** in the **Presentation** field. After you select **Configure**, you can specify the label that should be used for the link and also optionally a label for the section on the workspace where this link is to be placed. If that section doesn't exist, a new section is created.
 
 > [!NOTE]
-> If the **Saved views for workspaces** feature is enabled, when you configure your list, tile, or link you also have to select the workspace view to which you want to add the element. The available workspace views appear in the **Workspace options** section of each **Configure** dialog. 
+> If the **Saved views for workspaces** feature is enabled, when you configure your list, tile, or link you also have to select the workspace view to which you want to add the element. The available workspace views appear in the **Workspace options** section of each **Configure** dialog.
 
 After you add a list, tile, or link to a workspace, you can open that workspace and rearrange the elements within it as you want.
 
@@ -156,9 +156,9 @@ Users can modify the size of any non-KPI tile via personalization. In a workspac
 
 ### Personalize your dashboard
 
-The dashboard is often the first page that you see when you open the app. It can be personalized like any other page in the system, by using the same mechanisms that are described earlier in this article. 
+The dashboard is often the first page that you see when you open the app. It can be personalized like any other page in the system, by using the same mechanisms that are described earlier in this article.
 
-One unique personalization capability that is available on the dashboard is the ability to add tiles. 
+One unique personalization capability that is available on the dashboard is the ability to add tiles.
 
 - If the **Full-page apps** feature is turned off, you add a new tile by right-clicking an element on the dashboard and then selecting **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile to whatever you want.
 - If the **Full-page apps** feature is turned on, you add a new tile by right-clicking an element on the dashboard and then selecting **Add an app**. In the dialog, select whether you want to add a tile for a new workspace or a tile that has content from [Power Apps](embed-power-apps.md) or a [website](embed-website.md). Then follow the steps to configure the option that you selected. A new tile is then created at the bottom of the dashboard.
@@ -179,17 +179,17 @@ If the page supports saved views, the best way to share personalizations with ot
 
 If the page doesn't support views, the recommended way to share personalizations is to copy them between users. This method is available only to privileged users (for example, system administrators) who can look up a specific user's personalization in the system (including the users' personal views) and copy the configuration to other users.
 
-To copy personalizations between users, follow these steps.
+To copy personalizations between users, follow these steps:
 
 1. Go **System administration \> Setup \> Personalization**.
-2. To copy personal views, follow these steps.
+2. To copy personal views, follow these steps:
 
     1. Select **Personal views**.
     2. Select the desired views in the list.
     3. Select **Copy to users**.
     4. Select the users to distribute the views to.
 
-3.  To copy personalizations on pages that don't support views, follow these steps.
+3. To copy personalizations on pages that don't support views, follow these steps:
 
     1. Select **User settings**.
     2. Select the user who has the personalization that you want to distribute.
@@ -220,7 +220,7 @@ Additionally, admins can export other users' personalizations by following these
 
 To import a view or personalization, you can just open the **Personalization** toolbar and select **Import**. Additionally, admins can import a file and immediately give it to one or more users.
 
-If saved views are enabled, follow these steps.
+If saved views are enabled, follow these steps:
 
 1. Go to **System administration \> Setup \> Personalization**.
 2. On the Action Pane, select **Import views \> User views**.
@@ -248,6 +248,5 @@ Personalization data doesn't need to be cleared or reset when moving to a new ve
 When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, you use personalization to hide a column for the Batch number inventory dimension, but the column appears the next time that the page is opened. This behavior occurs because the **Dimension display** settings control the inventory dimension columns that are shown. The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on individual pages.
 
 Therefore, in the preceding example, if you don't want the column for the Batch number inventory dimension to appear on a page, you must clear that dimension as part of the **Display dimensions** option for that page.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

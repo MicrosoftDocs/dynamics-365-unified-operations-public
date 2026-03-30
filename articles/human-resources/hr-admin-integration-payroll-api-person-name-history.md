@@ -3,8 +3,8 @@
 
 title: Person name history
 description: This article provides details and an example query for the Person name history entity in Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 07/09/2024
+author: avanish2821
+ms.date: 03/25/2026
 ms.topic: article
 # optional metadata
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 This article describes the Person name history entity in Dynamics 365 Human Resources.
 
-Physical name: mshr_dirpersonnamehistoricalentity.
+Physical name: mserp_dirpersonnamehistoricalentity.
 
 ### Description
 
@@ -42,53 +42,53 @@ This entity provides information about the name history for a given person.
 
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **First name**</br>mshr_firstname</br>*String* | Read-only | The first name. |
-| **Last name prefix**</br>mshr_lastnameprefix</br>*String*) | Read-only | The last name prefix. |
-| **Last name**</br>mshr_lastname</br>*String*) | Read-only | The last name. |
-| **Middle name**</br>mshr_middlename</br>*String*) | Read-only | The middle name. |
-| **Valid to**</br>mshr_validto</br>*String*) | Read-only | The date that the name is valid to. |
-| **Party number**</br>mshr_partynumber</br>*String* | Read-only | A user-readable, system-generated unique identifier for the person. |
-| **Primary field**</br>mshr_primaryfield</br>*String* | Read-only | The unique identifier of the record. |
-| **Person name history entity ID**</br>mshr_dirpersonnamehistoricalentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the record. |
+| **First name**</br>mserp_firstname</br>*String* | Read-only | The first name. |
+| **Last name prefix**</br>mserp_lastnameprefix</br>*String*) | Read-only | The last name prefix. |
+| **Last name**</br>mserp_lastname</br>*String*) | Read-only | The last name. |
+| **Middle name**</br>mserp_middlename</br>*String*) | Read-only | The middle name. |
+| **Valid to**</br>mserp_validto</br>*String*) | Read-only | The date that the name is valid to. |
+| **Party number**</br>mserp_partynumber</br>*String* | Read-only | A user-readable, system-generated unique identifier for the person. |
+| **Primary field**</br>mserp_primaryfield</br>*String* | Read-only | The unique identifier of the record. |
+| **Person name history entity ID**</br>mserp_dirpersonnamehistoricalentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the record. |
 
 ## Relations
 
 | Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
-| Not applicable | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | Not applicable | mshr_FK_PayrollEmployeeEntity_Name |
+| Not applicable | [mserp_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | Not applicable | mserp_FK_PayrollEmployeeEntity_Name |
 
 ## Example query for Payroll employee
 
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_dirpersonnamehistoricalentities?$filter=mshr_partynumber eq 'HR000001606'
+GET [Organizaton URI]/api/data/v9.1/mserp_dirpersonnamehistoricalentities?$filter=mserp_partynumber eq 'HR000001606'
 ```
 
 **Response**
 
 ```json
 {
-    "mshr_firstname": "Agustina",
-    "mshr_lastnameprefix": "",
-    "mshr_lastname": "Fierro",
-    "mshr_middlename": "middle",
-    "mshr_validto": "2021-09-10T21:23:53Z",
-    "mshr_partynumber": "HR000001606",
-    "mshr_primaryfield": "HR000001606 | ",
-    "mshr_dirpersonnamehistoricalentityid": "00000832-0000-0000-c12b-014105000000",
-    "mshr_validfrom": null
+    "mserp_firstname": "Agustina",
+    "mserp_lastnameprefix": "",
+    "mserp_lastname": "Fierro",
+    "mserp_middlename": "middle",
+    "mserp_validto": "2021-09-10T21:23:53Z",
+    "mserp_partynumber": "HR000001606",
+    "mserp_primaryfield": "HR000001606 | ",
+    "mserp_dirpersonnamehistoricalentityid": "00000832-0000-0000-c12b-014105000000",
+    "mserp_validfrom": null
 },
 {
-    "mshr_firstname": "Agustina",
-    "mshr_lastnameprefix": "",
-    "mshr_lastname": "Fierro",
-    "mshr_middlename": "",
-    "mshr_validto": "2154-12-31T23:59:59Z",
-    "mshr_partynumber": "HR000001606",
-    "mshr_primaryfield": "HR000001606 | 9/10/2021 09:23:54 pm",
-    "mshr_dirpersonnamehistoricalentityid": "00000832-0000-0000-d20b-000010000000",
-    "mshr_validfrom": "2021-09-10T21:23:54Z"
+    "mserp_firstname": "Agustina",
+    "mserp_lastnameprefix": "",
+    "mserp_lastname": "Fierro",
+    "mserp_middlename": "",
+    "mserp_validto": "2154-12-31T23:59:59Z",
+    "mserp_partynumber": "HR000001606",
+    "mserp_primaryfield": "HR000001606 | 9/10/2021 09:23:54 pm",
+    "mserp_dirpersonnamehistoricalentityid": "00000832-0000-0000-d20b-000010000000",
+    "mserp_validfrom": "2021-09-10T21:23:54Z"
 }
 ```
 

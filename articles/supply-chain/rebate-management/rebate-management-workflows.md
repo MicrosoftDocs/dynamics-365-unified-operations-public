@@ -56,11 +56,11 @@ Sometimes, you might have to resubmit a workflow for a deal because of missing o
 Before you can deactivate and resubmit workflows for vendor rebate deals, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.43 or later.
-- The feature that is named *Enable resubmission of workflows for vendor rebate deals* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
+- The feature named *Enable resubmission of workflows for vendor rebate deals* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 
 ### Deactivate and resubmit a workflow
 
-To deactivate and resubmit a workflow for a vendor rebate deal, follow these steps.
+To deactivate and resubmit a workflow for a vendor rebate deal, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management deals** \> **All rebate management deals**.
 1. Find and select the deal that you want to deactivate, edit, and resubmit. The deal must already be active.

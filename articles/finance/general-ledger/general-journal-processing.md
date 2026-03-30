@@ -117,7 +117,7 @@ To quickly delete all journal lines in a journal, go to **Functions** > **Delete
 
 ### Load ledger transactions
 
-To use the **Load ledger transactions** function to transfer selected ledger transactions to the current journal, follow these steps.
+To use the **Load ledger transactions** function to transfer selected ledger transactions to the current journal, follow these steps:
 
 1. Go to **General ledger** > **Journals** > **General journal**.
 1. Enter a new journal, or select an existing journal, and then select **Lines**.
@@ -155,7 +155,7 @@ The following example uses the **Load ledger transactions** feature.
 
 To restrict the use of voucher numbers, use the General journal entry table and the **Voucher** field.
 
-The default query includes the **Journal number** field. However, that field refers to the **Journal entry number** field, not the **Journal batch number** field. To add the **Journal batch number** field to the query, follow these steps.
+The default query includes the **Journal number** field. However, that field refers to the **Journal entry number** field, not the **Journal batch number** field. To add the **Journal batch number** field to the query, follow these steps:
 
 1. In the query, on the **Joins** tab, expand the **General journal account entry** table.
 1. Select the **General journal entry** table.

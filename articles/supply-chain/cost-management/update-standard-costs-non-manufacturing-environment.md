@@ -25,7 +25,7 @@ The following guidelines assume that you use a two-version approach to update st
 - Allow cost records to be entered for all sites. If you specify a site, cost records can be entered only for that site.
 - Indicate a fallback principle of *None*. The fallback principle applies only to cost calculations for manufactured items.
 
-To correct, adjust, or update standard costs for new items, follow these steps.
+To correct, adjust, or update standard costs for new items, follow these steps:
 
 1. Use the **Costing version setup** page to enable cost data to be entered into the second costing version. Optionally, prevent the activation of pending costs, so that activation will be allowed after pending costs have been completely and accurately defined. You can also optionally enter a date in the **From date** field. As a general guideline, use the date when you intend to enable the incremental updates. Alternatively, leave the **From date** field blank for the costing version, and then enter a date in the **From date** field for each cost record.
 1. Use the **Item price** page to enter updates as item cost records that are enclosed in the second costing version.

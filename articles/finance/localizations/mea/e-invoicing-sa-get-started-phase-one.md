@@ -31,7 +31,7 @@ Before you deploy the application setup to your connected Finance or Supply Chai
 
 This section complements the [Country/region-specific configuration of application setup](../e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with electronic invoicing" article.
 
-To configure the Saudi Arabian electronic invoice (SA) electronic invoicing feature, follow these steps.
+To configure the Saudi Arabian electronic invoice (SA) electronic invoicing feature, follow these steps:
 
 1. In RCS, in the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 1. On the **Electronic invoicing features** page, verify that the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature is selected.

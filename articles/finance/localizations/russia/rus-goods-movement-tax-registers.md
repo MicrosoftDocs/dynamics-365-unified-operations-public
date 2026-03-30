@@ -54,7 +54,7 @@ To set up the **Warehoused items** register, follow the steps in the next sectio
 
 ### Set up the Warehoused items register
 
-To set up the Warehoused items register, follow these steps.
+To set up the Warehoused items register, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 1.  On the **Tax registers** page, set up a register.

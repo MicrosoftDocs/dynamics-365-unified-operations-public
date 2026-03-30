@@ -1,11 +1,10 @@
 ---
 title: Core data actions
-description: This article covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: Learn about core data actions included in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 07/30/2024
+ms.date: 02/03/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -16,15 +15,15 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK). 
+This article provides a list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-You can find most of the core data actions in the **\\node\_modules\\@msdyn365-commerce-modules** and **\\node\_modules\\@msdyn365-commerce** directories. Many core data actions can be found under the **\\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib** directory, and some core data actions can be found within specific related subdirectories, like for example the cart state data actions which can be found under the **\\node\_modules\\@msdyn365-commerce\\global-state\\src\\cart-state** directory.
+You can find most of the core data actions in the **\\node\_modules\\@msdyn365-commerce-modules** and **\\node\_modules\\@msdyn365-commerce** directories. Many core data actions are under the **\\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib** directory. Some core data actions are within specific related subdirectories. For example, you can find the cart state data actions under the **\\node\_modules\\@msdyn365-commerce\\global-state\\src\\cart-state** directory.
 
-> [!NOTE] 
+> [!NOTE]
 > All core data actions are observable data actions that are wrapped in an **AsyncResult** class.
 
 Data action| Description
---- | --- 
+--- | ---
 add-address | Add a new address to an existing customer.
 checkout | Initiate checkout for an order.
 delete-address | Delete an existing customer address.
@@ -74,7 +73,5 @@ update-primary-address | Update a customer's primary address.
 [Event-based data actions](event-based-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

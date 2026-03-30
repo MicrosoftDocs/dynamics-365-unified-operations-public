@@ -14,12 +14,12 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.47 (March)
+                  href: get-started/whats-new-changed-10-0-47.md
                 - name: Finance 10.0.46 (December)
                   href: get-started/whats-new-changed-10-0-46.md
                 - name: Finance 10.0.45 (September)
-                  href: get-started/whats-new-changed-10-0-45.md   
-                - name: Finance 10.0.44 (June)
-                  href: get-started/whats-new-changed-10-0-44.md
+                  href: get-started/whats-new-changed-10-0-45.md           
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -1132,6 +1132,8 @@
                       href: general-ledger/financial-dimension-sets.md
                     - name: New finance dimension set feature 
                       href: general-ledger/financial-dimension-set-new.md
+                    - name: Manage financial dimension sets
+                      href: general-ledger/dimension-set-balance-performance-best-practices.md
                     - name: Maintain financial dimension default templates
                       href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
                     - name: Financial dimensions and posting
@@ -1466,6 +1468,14 @@
           items:
             - name: Finance insights home page
               href: finance-insights/finance-insights-home-page.md
+            - name: Migrate to Business performance analytics
+              items:
+                - name: Finance insights update
+                  href: finance-insights/finance-insights-update.md
+                - name: Finance insights update FAQ
+                  href: finance-insights/finance-insights-update-faq.md
+                - name: Uninstall Finance insights
+                  href: finance-insights/uninstall-finance-insights.md              
             - name: Setup and administration
               items:
                 - name: Configure Finance insights
@@ -1633,7 +1643,7 @@
             - name: Globalization Studio overview
               href: localizations/global/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globalization resources
-              href: ../fin-ops-core/fin-ops/lcs/country-region.md?context=/dynamics365/context/finance
+              href: ../fin-ops-core/fin-ops/lcs/globalization-resources.md?context=/dynamics365/context/finance
             - name: Globalization services
               items:
                 - name: Globalization services overview
@@ -1684,6 +1694,8 @@
                           href: localizations/global/gs-e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
                         - name: Create a new Globalization feature
                           href: localizations/global/gs-e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
+                        - name: Delete Globalization features
+                          href: localizations/global/gs-e-invoicing-delete-new-globalization-feature.md?context=/dynamics365/context/finance
                         - name: Work with configurations
                           href: localizations/global/gs-e-invoicing-work-configurations.md
                         - name: Work with feature setups
@@ -1760,7 +1772,7 @@
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                             - name: Simplified electronic invoices in Commerce for Saudi Arabia
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
-                        - name: Singapore (preview)
+                        - name: Singapore
                           href: localizations/singapore/apac-singapore-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Uruguay
                           href: localizations//iberoamerica/ltm-uruguay-electronic-invoice-configuration.md?context=/dynamics365/context/finance
@@ -2136,7 +2148,8 @@
                          href: localizations/brazil/brazil-reform-calculation-project-quotation.md                       
                        - name: Calculation in General journal in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-calculation-general-journal.md
-
+                       - name: Work with NFS-e Service Invoices
+                         href: localizations/brazil/brazil-nfs-e-service-invoices.md                         
                     - name: Fiscal books
                       items:
                         - name: Brazil fiscal books overview
@@ -2449,6 +2462,8 @@
                       href: localizations/iberoamerica/ltm-Colombia-foramt-1009.md
                     - name: Format 1012 file for Colombia configuration
                       href: localizations/iberoamerica/ltm-Colombia-format-1012.md
+                    - name: Add Concepts to File Formats 1000 in Electronic Reporting
+                      href: localizations/iberoamerica/ltm-colombia-formats-1000-concepts.md
                     - name: Set up legal entity and tax information for Colombia
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-colombia.md
                 - name: Costa Rica
@@ -3332,7 +3347,7 @@
                     - name: Yearly tax communication
                       href: localizations/italy/emea-ita-yearly-tax-communication.md
                     - name: Fiscal journal report
-                      href: localizations/italy/emea-ita-fiscal-journal.md
+                      href: localizations/italy/emea-ita-fiscal-journal-er.md
                     - name: Competence date for transactions in Italy
                       href: localizations/italy/emea-ita-competence-date.md
                     - name: General ledger simulations (Italy)
@@ -3671,6 +3686,8 @@
                         href: localizations/iberoamerica/ltm-ledger-posting-report.md
                       - name: VAT book printing configuration
                         href: localizations/iberoamerica/ltm-vat-book.md
+                      - name: Generate invoices XMLs using electronic document feature
+                        href: localizations/iberoamerica/ltm-core-generate-xmls.md  
                       - name: Tax application for Latin America
                         href: localizations/iberoamerica/ltm-core-tax-application.md                                    
                 - name: Latvia
@@ -4387,8 +4404,12 @@
                       href: localizations/turkiye/emea-turkiye-final-year-depreciation.md
                     - name: Use prorated depreciation on fixed assets
                       href: localizations/turkiye/emea-turkiye-prorated-depreciation.md
+                    - name: Perform fixed asset revaluation
+                      href: localizations/turkiye/emea-turkiye-use-revaluation-groups.md
                     - name: Export of customer electronic invoices
                       href: localizations/turkiye/emea-turkiye-customer-electronic-invoices.md
+                    - name: Export of customer electronic packing slips
+                      href: localizations/turkiye/emea-turkiye-customer-packing-slips.md
                     - name: Use checks and promissory notes
                       href: localizations/turkiye/emea-turkiye-checks-and-promissory-notes.md                      
                     - name: Generate e-Ledger
@@ -4662,36 +4683,52 @@
               href:  business-performance-analytics/bpa-release-notes.md
             - name: Setup and administration
               items: 
-                - name: Configure business performance analytics
+                - name: Configure Business performance analytics
                   href: business-performance-analytics/configure-BPA.md
-                - name: Install business performance analytics
+                - name: Install Business performance analytics
                   href: business-performance-analytics/install-bpa.md
-                - name: Configure security in business performance analytics
+                - name: Configure security in Business performance analytics
                   href: business-performance-analytics/set-up-security.md
                 - name: Custom report import, export, and migration
                   href: business-performance-analytics/custom-reports.md
-            - name: Key concepts in business performance analytics
+                - name: Reassign ownership of Business performance analytics workflow
+                  href: business-performance-analytics/bpa-flow-owner.md
+            - name: Key concepts in Business performance analytics
               items:
                 - name: Business performance analytics data model
                   href: business-performance-analytics/business-performance-analytics-data-model.md
-            - name: Use business performance analytics
+            - name: Use Business performance analytics
               items:
-                - name: Access business performance analytics
+                - name: Access Business performance analytics
                   href: business-performance-analytics/access-bpa.md
                 - name: Business performance analytics Microsoft reports
                   href: business-performance-analytics/Reports-in-BPA.md 
-                - name: Create business performance analytics reports
+                - name: Create Business performance analytics reports
                   href: business-performance-analytics/how-to-create-and-edit-reports.md  
                 - name: Business performance analytics Excel add-in
                   href: business-performance-analytics/bpa-excel.md 
                 - name: Generative help and guidance in Business performance analytics
                   href: business-performance-analytics/copilot-in-business-performance-analytics.md
-            - name: Extend business performance analytics
+            - name: Extend Business performance analytics
               items:             
-                - name: Extend business performance analytics in Microsoft Fabric 
-                  href: business-performance-analytics/bpa-fabric.md  
+                - name: Extend Business performance analytics in Microsoft Fabric
+                  href: business-performance-analytics/bpa-fabric.md
                 - name: External facts and dimensions into Business performance analytics
                   href: business-performance-analytics/extending-bpa.md
+                - name: Add custom measures to Business performance analytics (preview)
+                  href: business-performance-analytics/bpa-custom-measure.md
+            - name: ERP Analytics MCP (preview)
+              items:
+                - name: Dynamics 365 ERP Analytics MCP for finance and operations apps
+                  href: business-performance-analytics/erp-analytics-mcp-overview.md
+                - name: ERP Analytics MCP technical details
+                  href: business-performance-analytics/erp-analytics-mcp-technical-details.md
+                - name: Use ERP Analytics MCP in Visual Studio Code
+                  href: business-performance-analytics/erp-analytics-mcp-vscode.md
+                - name: Build an agent in Copilot Studio
+                  href: business-performance-analytics/erp-analytics-mcp-copilot-studio.md
+                - name: ERP Analytics MCP FAQ
+                  href: business-performance-analytics/erp-analytics-mcp-faq.md
             - name: Business performance analytics FAQ
               href: business-performance-analytics/bpa-faq.md
             - name: Business performance analytics troubleshooting
@@ -4702,7 +4739,7 @@
           items:
             - name: Business performance planning overview
               href: business-performance-planning/business-performance-planning-overview.md
-            - name: Install business performance planning
+            - name: Install Business performance planning
               href: business-performance-planning/Install-BPP2.md
             - name: Install Planning app
               href: business-performance-planning/bpp-app-install.md
@@ -5287,7 +5324,7 @@
                 - name: Configure model mappings
                   items:
                     - name: Configure country/region context dependent ER model mappings
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/finance
+                      href: ../fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping.md?context=/dynamics365/context/finance
                     - name: Manage ER model mapping in separate ER configurations
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/finance
                     - name: Manage several derived mappings for a single model root
@@ -5724,6 +5761,8 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimension-expression-builder-subpattern.md
                 - name: Financial dimension configuration
                   href: ../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md
+                - name: Financial dimension customization
+                  href: ../fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors.md
                 - name: Financial dimension activation
                   href: ../fin-ops-core/dev-itpro/financial/activate-financial-dimensions.md
                 - name: Financial dimensions and main accounts in right-to-left languages
@@ -5756,8 +5795,6 @@
       items:
         - name: Overview
           href: ../finance/transparency-note.md
-        - name: Set up Agent management (production ready preview)
-          href: ../fin-ops-core/fin-ops/copilot/agent-mgmt.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
         - name: Customer page summary FAQ

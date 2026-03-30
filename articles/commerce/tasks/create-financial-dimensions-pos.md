@@ -1,11 +1,10 @@
 --- 
 title: Create financial dimensions for POS registers and configure dimension values on registers
-description: This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. 
+description: Learn how to create and configure financial dimensions for point of sale (POS) registers in Microsoft Dynamics 365 Commerce. 
 author: jashanno
-ms.date: 11/14/2019
+ms.date: 02/10/2026
 ms.topic: how-to 
-audience: Application User 
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30 
@@ -16,27 +15,29 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. This procedure doesn't include other related steps, such as creating dimension sets and account structures. Those tasks can be found in other articles. This recording uses USRT demo company.
+This article explains how to create and configure financial dimensions for point of sale (POS) registers in Microsoft Dynamics 365 Commerce.
 
-1. Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.
-2. Click New.
-3. In the Use values from field, select an option.
-4. In the Dimension name field, type a value.
-5. Click Activate.
-6. Click Close.
-7. Click Activate.
-8. Click Dimension values.
-9. Close the page.
-10. Click Save.
-11. Close the page.
-12. Go to Retail and Commerce > Channel setup > POS setup > Registers.
-13. In the list, find and select the desired record.
-14. Toggle the expansion of the Financial dimensions section.
-15. Click Edit.
-16. In the Terminal field, click the drop-down button to open the lookup.
-17. In the list, find and select the dimension value for the register being updated.
-18. Click Save.
+The following procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. This procedure doesn't include other related steps, such as creating dimension sets and account structures. This recording uses USRT demo company.
 
+To create and configure financial dimensions for point of sale (POS) registers, follow these steps:
 
+1. In Commerce headquarters, go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
+1. Select **New**.
+1. In the **Use values from** field, select an option.
+1. In the **Dimension name** field, type a value.
+1. Select **Activate**.
+1. Select **Close**.
+1. Select **Activate**.
+1. Select **Dimension values**.
+1. Close the page.
+1. Select **Save**.
+1. Close the page.
+1. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **Registers**.
+1. In the list, find and select the desired record.
+1. Toggle the expansion of the **Financial dimensions** section.
+1. Select **Edit**.
+1. In the **Terminal** field, select the drop-down button to open the lookup.
+1. In the list, find and select the dimension value for the register you're updating.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

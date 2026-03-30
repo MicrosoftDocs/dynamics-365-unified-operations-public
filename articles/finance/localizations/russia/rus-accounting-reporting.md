@@ -20,7 +20,7 @@ This article explains how to set up accounting reporting for Russia in Microsoft
 
 ## Set up accounting reporting
 
-To set up accounting reporting, follow these steps.
+To set up accounting reporting, follow these steps:
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for accounting reporting.
 
@@ -100,7 +100,7 @@ To set up accounting reporting, follow these steps.
 
 ## Generate accounting reporting in electronic format
 
-To generate an accounting reporting in electronic format, follow these steps.
+To generate an accounting reporting in electronic format, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
 1. In the left pane, select the report format to generate. For example, select **БухОтч 5.08 (2019)**.

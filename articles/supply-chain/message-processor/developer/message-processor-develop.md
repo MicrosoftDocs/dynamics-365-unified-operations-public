@@ -383,7 +383,7 @@ Follow these steps to create a new message type.
     }
     ```
 
-## Additional resources
+## Related information
 
 - [Monitor and control message processor messages](../message-processor.md)
 - [Clean up processed and canceled message processor messages](../message-processor-cleanup.md)

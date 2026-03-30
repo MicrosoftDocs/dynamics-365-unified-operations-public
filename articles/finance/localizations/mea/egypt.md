@@ -2,9 +2,9 @@
 title: Egypt overview
 description: Learn about functionality specific to Egypt and access information and links to documentation resources for Egypt, incluing resources about invoices.
 author: mrolecki
-ms.author: mrolecki
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 09/15/2021
+ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Egypt
@@ -29,6 +29,5 @@ This article includes information and links to documentation resources for Egypt
 - [References to original invoices in credit notes](../../accounts-receivable/original-invoice-numbers-credit-notes.md)
 - [Reverse charge VAT](../global/emea-reverse-charge.md)
 - [Global withholding tax](../../general-ledger/global-withholding-tax-overview.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

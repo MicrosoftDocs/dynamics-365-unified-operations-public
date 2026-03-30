@@ -25,7 +25,7 @@ You must be in the accounting supervisor role to complete these procedures, whic
 
 ## Create GST relief categories
 
-To create GST relief categories, follow these steps.
+To create GST relief categories, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> GST relief category**.
 1. Select **New**.
@@ -36,7 +36,7 @@ To create GST relief categories, follow these steps.
 
 ## Create GST relief groups
 
-To create GST relief groups, follow these steps.
+To create GST relief groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Sales tax \> GST relief group**.
 1. Select **New**.

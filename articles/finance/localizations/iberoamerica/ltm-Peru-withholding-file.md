@@ -40,7 +40,7 @@ Before you can generate and print IGV withholding tax reports, the following pre
 
 ## Configure application-specific parameters
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces**, and select **Reporting configurations**.
 1. In the **LTM Tax report** group, select the desired format.
@@ -57,7 +57,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate an IGV withholding tax report
 
-To generate an IGV withholding tax report, follow these steps.
+To generate an IGV withholding tax report, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select a value.

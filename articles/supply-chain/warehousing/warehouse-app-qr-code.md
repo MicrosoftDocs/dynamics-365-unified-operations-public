@@ -77,7 +77,7 @@ Follow these steps to ask Copilot to generate a QR code for your JSON configurat
 
 ### Option 2: Use an online QR code generator
 
-To generate a QR code by using an online QR code generator, follow these steps.
+To generate a QR code by using an online QR code generator, follow these steps:
 
 1. Visit any reputable QR code generator website. Bing can help you find one.
 1. Select *Text* or *JSON* format.

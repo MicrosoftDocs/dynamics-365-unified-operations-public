@@ -25,7 +25,7 @@ Miscellaneous charges can be allocated to the cost of goods, either works or ser
 
 ## Allocate charges according to weight or volume of goods
 
-To allocate charges according to weight or volume of goods, follow these steps.
+To allocate charges according to weight or volume of goods, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders** or **Accounts receivable** \> **Orders** \> **All sales orders.**
 1. Create a new order.
@@ -38,7 +38,7 @@ To allocate charges according to weight or volume of goods, follow these steps.
 
 ## Allocate charges according to weight and volume of goods during facture creation
 
-To allocate charges according to weight and volume of goods during facture creation, follow these steps.
+To allocate charges according to weight and volume of goods during facture creation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Purchase orders** \> **All purchase orders** or **Accounts receivable** \> **Orders** \> **All sales orders**.
 1. Create a new order, and then select **Update facture**.

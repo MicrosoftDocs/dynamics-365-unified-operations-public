@@ -25,7 +25,7 @@ Before you begin the procedure, ensure that a consolidated invoice is created an
 
 The procedure uses the demo data company JPMF.
 
-To settle customer consolidated invoices by using the settle transactions functionality, follow these steps.
+To settle customer consolidated invoices by using the settle transactions functionality, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Periodic tasks \> Consolidated invoice**.
 1. Confirm that the consolidated invoice you want to settle has a status of **Confirmed**.  

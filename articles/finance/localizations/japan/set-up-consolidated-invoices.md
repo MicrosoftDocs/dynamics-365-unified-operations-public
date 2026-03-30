@@ -23,7 +23,7 @@ In Japan, you can enable consolidated invoices to fit the Japanese business prac
 
 ## Configure accounts receivable parameters for consolidated invoices
 
-To configure accounts receivable parameters for consolidated invoices, follow these steps.
+To configure accounts receivable parameters for consolidated invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Expand the **Customer** section and enable the consolidated invoice for customers.
@@ -31,14 +31,14 @@ To configure accounts receivable parameters for consolidated invoices, follow th
 
 ## Configure payment days
 
-To configure payment days, follow these steps.
+To configure payment days, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Payment days**.
 1. Select **New** to create and configure a payment day.  
 
 ## Configure terms of payment
 
-To configure terms of payment, follow these steps.
+To configure terms of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Payments setup \> Terms of payment**.
 1. Use the **Quick Filter** to find records. For example, filter on the **Terms of payment** field with a value of "COD".

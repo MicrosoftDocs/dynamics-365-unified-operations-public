@@ -35,7 +35,7 @@ There might be customer or vendor payments on bank statements in the app. This f
 
 ## Complete cash application on the reconciliation worksheet
 
-To manually complete cash application on the reconciliation worksheet, follow these steps.
+To manually complete cash application on the reconciliation worksheet, follow these steps:
 
 1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 2. Open or create a bank reconciliation worksheet.
@@ -58,7 +58,7 @@ To manually complete cash application on the reconciliation worksheet, follow th
 
 ### Settle customer invoices
 
-To use matching rules to automatically settle open customer invoices, including project invoices, follow these steps.
+To use matching rules to automatically settle open customer invoices, including project invoices, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.
@@ -83,7 +83,7 @@ To use matching rules to automatically settle open customer invoices, including 
 
 ### Generate customer payments
 
-To use matching rules to automatically generate customer payments without settling customer invoices, follow these steps.
+To use matching rules to automatically generate customer payments without settling customer invoices, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.
@@ -117,7 +117,7 @@ To use matching rules to automatically generate customer payments without settli
 
 ### Generate vendor payments
 
-To use matching rules to automatically generate vendor payments without settling vendor invoices, follow these steps.
+To use matching rules to automatically generate vendor payments without settling vendor invoices, follow these steps:
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.

@@ -23,7 +23,7 @@ Before you can complete the following procedure, you must have at least one endo
 
 The procedure uses the demo data company JPMF.
 
-To reverse an endorsed bill of exchange, follow these steps.
+To reverse an endorsed bill of exchange, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payments \> Endorse bills of exchange**.
 1. In the list, find and select a bill of exchange with a status of **Endorsed**.

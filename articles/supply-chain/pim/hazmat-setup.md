@@ -88,7 +88,7 @@ The following table describes the field that is available on the **Country** Fas
 
 Material codes establish settings that are related to a specific hazardous component that might be included in a released product. Each material code belongs to a specific hazardous material regulation, and its definition must conform to that regulation. When you apply a material code to a released product by using the **Material code** field, all the material code's hazardous materials settings are automatically applied to that product. Therefore, the process of setting up released products is faster and less prone to error.
 
-To manage your hazardous material definitions, follow these steps.
+To manage your hazardous material definitions, follow these steps:
 
 1. Go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation**.
 2. Select the regulation to set up a hazardous material definition for.

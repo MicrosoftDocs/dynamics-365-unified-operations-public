@@ -22,7 +22,7 @@ When you've finished creating, analyzing, and editing a forecast, you can export
 
 Demand planning lets you build a collection of *export profiles*. Each Supply Chain Management export profile exports data to a specific Supply Chain Management instance. Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to export as they require.
 
-To run an existing data export profile, follow these steps.
+To run an existing data export profile, follow these steps:
 
 1. On the navigation pane, select **Data management** \> **Export**.
 1. Find the profile for the type of export that you want to run, and select the link for it in the **Name** column.
@@ -72,7 +72,7 @@ You can download the **Time series values** grid from any selected time series a
 
 If you require a file that has a row for each date instead, you should create a CSV export profile and run it as described in the [Create and manage profiles for export to CSV](#new-csv-profiles) section. This type of CSV file might be more useful for importing data into other systems.
 
-To export the **Time series values** grid from any selected time series to a CSV file, follow these steps.
+To export the **Time series values** grid from any selected time series to a CSV file, follow these steps:
 
 1. Open the time series that you want to export from.
 1. On the **Time series values** FastTab, select **Download** on the toolbar.
@@ -85,7 +85,7 @@ Demand planning lets you build a collection of *export profiles*. Each CSV expor
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to export as they require.
 
-To run an existing data export profile, follow these steps.
+To run an existing data export profile, follow these steps:
 
 1. On the navigation pane, select **Data management** \> **Export**.
 1. Find the profile for the type of export that you want to run, and select the link for it in the **Name** column.

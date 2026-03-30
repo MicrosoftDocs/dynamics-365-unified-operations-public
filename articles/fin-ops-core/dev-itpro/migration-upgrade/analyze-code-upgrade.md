@@ -4,7 +4,7 @@ description: Learn how to use the Code upgrade service in Microsoft Dynamics Lif
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 09/12/2023
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -38,7 +38,7 @@ In the Analyze phase, we use the report to help estimate the effort that's requi
 
 The following illustration shows an overview of the process for configuring the Code upgrade service.
 
-![Configuration process for the Code upgrade service.](media/codeUpgradeConfigurationProcess.png)
+:::image type="content" source="media/codeUpgradeConfigurationProcess.png" alt-text="Screenshot of the configuration process for the Code upgrade service.":::
 
 The output of the code upgrade service is designed to be consumed by a developer. This output will help the developer estimate the effort that's required to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in Azure DevOps and the new version of the code that the service generates.
 
@@ -55,7 +55,7 @@ Dynamics 365 finance and operations apps don't allow for customization via overl
 > [!NOTE]
 > The AX 2012 Management utilities must be installed in the environment that you want to export the model store from. 
 
-To export the model store, follow these steps.
+To export the model store, follow these steps:
 
 1. Open **Microsoft Dynamics AX 2012 Management Shell**, which is located under **Administrative Tools**.
 2. Run the following command to export the model store. Adjust the path as required.
@@ -89,16 +89,16 @@ You can create new folders directly in the Azure DevOps web interface, under **R
 To connect to an Azure DevOps project, Lifecycle Services is authenticated by using a personal access token. Follow these steps to create a personal access token in Azure DevOps. If you've already configured your Lifecycle Services project to connect to your Azure DevOps project, you can skip this section.
 
 1. Sign in to VisualStudio.com, and find your Azure DevOps project.
-2. Select **User settings**, and then select **Personal access tokens**.
-3. Select **New token** to create a personal access token. Set the following fields:
+1. Select **User settings**, and then select **Personal access tokens**.
+1. Select **New token** to create a personal access token. Set the following fields:
 
     - **Name** – Enter an appropriate name.
     - **Organization** – This field should be set to the organization by default.
     - **Expiration** – Enter a date.
     - **Scopes** – Set this field to **Full access**.
 
-4. Select **Create**.
-5. Copy the **CodeUpgrade token** value to your clipboard.
+1. Select **Create**.
+1. Copy the **CodeUpgrade token** value to your clipboard.
 
 > [!NOTE]
 > You won't be able to find the token details after this step is completed. Confirm that the token code is copied before you navigate away from the page.
@@ -106,15 +106,15 @@ To connect to an Azure DevOps project, Lifecycle Services is authenticated by us
 ### Configure your Lifecycle Services project to connect to Azure DevOps
 
 1. In your Lifecycle Services project, go to the **Project settings** tile, and select **Azure DevOps**.
-2. Select **Setup Azure DevOps**. This configuration is required by many Lifecycle Services tools. If you've already configured Lifecycle Services to connect to your Azure DevOps project, you can skip this section.
-3. Enter the site for your Azure DevOps organization and the access token that you created earlier. Then select **Continue**.
-4. Select the project in your Azure DevOps organization that you want to connect to. Then select **Continue**.
-5. On the **Review and save** page, select **Save**.
+1. Select **Setup Azure DevOps**. This configuration is required by many Lifecycle Services tools. If you've already configured Lifecycle Services to connect to your Azure DevOps project, you can skip this section.
+1. Enter the site for your Azure DevOps organization and the access token that you created earlier. Then select **Continue**.
+1. Select the project in your Azure DevOps organization that you want to connect to. Then select **Continue**.
+1. On the **Review and save** page, select **Save**.
 
 ### Run the Code Upgrade
 
 1. In your Lifecycle Services project, select **Code upgrade** from the drop-down menu or the **Code Upgrade Tile**.
-2. Select **Add**, and set the following fields:
+1. Select **Add**, and set the following fields:
 
     - **Name** – Enter a name for the code upgrade.
     - **Description** – Enter a description.
@@ -122,17 +122,17 @@ To connect to an Azure DevOps project, Lifecycle Services is authenticated by us
     - **Release you are upgrading to** – Specify **Dynamics 365 for finance and operations**.
     - **Estimation only** – Select this checkbox to generate a report without checking in or creating a new code branch in Azure DevOps. Use this setting when you want to evaluate the potential size of the work that's involved in the upgrade before you commit to the actual upgrade.
 
-3. Select **Create**.
-4. Select **Add files**. Then, on the **File upload** page, set the following fields:
+1. Select **Create**.
+1. Select **Add files**. Then, on the **File upload** page, set the following fields:
 
     - **File Type** – Specify **ModelStore.zip file**.
     - **Browse** – Browse for the exported compressed model store file that you created earlier.
 
-5. Select **Upload**.
-6. After the file is uploaded, it appears on the **Code upgrade service file upload** page. Select the zip file.
-7. Select **Analyze code**. The code upgrade process is started. For a large solution, this process typically takes 40 to 60 minutes to be completed.
-8. Return to the **Code upgrade** tile in Lifecycle Services, and select the name of your analysis to view the results.
-9. The code upgrade service creates a new branch and checks the upgraded code in to your Azure DevOps project. After the upgrade process is completed, your code exists in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade.
+1. Select **Upload**.
+1. After the file is uploaded, it appears on the **Code upgrade service file upload** page. Select the zip file.
+1. Select **Analyze code**. The code upgrade process is started. For a large solution, this process typically takes 40 to 60 minutes to be completed.
+1. Return to the **Code upgrade** tile in Lifecycle Services, and select the name of your analysis to view the results.
+1. The code upgrade service creates a new branch and checks the upgraded code in to your Azure DevOps project. After the upgrade process is completed, your code exists in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade.
 
 > [!NOTE]
 > If you selected the **Estimation only** checkbox, no code is uploaded into Azure Dev Ops.

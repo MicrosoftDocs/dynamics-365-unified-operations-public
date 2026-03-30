@@ -21,7 +21,7 @@ This article explains how to define templates for the milestone billing function
 
 ## Add a template
 
-To add a milestone template, follow these steps.
+To add a milestone template, follow these steps:
 
 1. Go to **Subscription billing \> Recurring contract billing \> Setup \> Milestone templates**.
 2. Select **New**.
@@ -40,7 +40,7 @@ To add a milestone template, follow these steps.
 
 ## Delete a template
 
-To delete a milestone template, follow these steps.
+To delete a milestone template, follow these steps:
 
 1. Select one or more lines to delete, and then select **Delete**.
 2. When you're prompted to confirm the action, select **Yes**.
@@ -75,7 +75,7 @@ Before you start to use milestone functionality, you should complete these tasks
 
 After you've created the milestone templates, billing schedule groups, and items, you can create a billing schedule that uses the milestone functionality.
 
-To set up a billing schedule that uses milestones, follow these steps.
+To set up a billing schedule that uses milestones, follow these steps:
 
 1. From the **All/Active billing schedules** list on the **Billing schedules** page, select **New**.
 2. On the **All billing schedules** page, create a new billing schedule, and specify a customer account and a start date.
@@ -90,7 +90,7 @@ To set up a billing schedule that uses milestones, follow these steps.
 
 ## Edit milestone allocation on a billing schedule line
 
-To edit milestone allocation on a billing schedule line, follow these steps.
+To edit milestone allocation on a billing schedule line, follow these steps:
 
 1. On the **Billing schedules** page > **All or active billing schedules**, in the **Schedule number** field, select the schedule number of the billing schedule.
 2. In the **Billing schedule lines** section, enter an item, specify **Milestone** as the item, and select **Milestone allocation**.

@@ -27,7 +27,7 @@ Before you complete the procedure, you must first select the **Fixed Asset** con
 
 The procedure uses the JPMF demo company data.
 
-To propose additional depreciation, follow these steps.
+To propose additional depreciation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.

@@ -40,7 +40,7 @@ The following table shows an example of accounting entries for sales of goods an
 
 ### Set up fixed offset posting
 
-To set up fixed offset posting, follow these steps.
+To set up fixed offset posting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Parameters** \> **Setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, make sure that the **Calculation method** field is set to
@@ -58,7 +58,7 @@ To set up fixed offset posting, follow these steps.
 
 A posting group must be specified for each sales tax code. Use the standard method to set up parameters in the posting group.
 
-To set up a posting group, follow these steps.
+To set up a posting group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Ledger posting groups** to open the **Ledger posting groups** page.
 1. In the **Ledger Posting group** field, enter unique code for the posting group.

@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/04/2025
+ms.date: 03/20/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -18,7 +18,7 @@ This article describes how to set up the value-added tax (VAT) declaration 65A w
 
 To automatically generate the reports, first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
-For Hungary, you must configure the following elements:
+For Hungary, configure the following elements:
 
 - Report field lookup
 - Details lookup
@@ -34,16 +34,16 @@ In the following table, the "Lookup result" column shows the lookup result that 
 
 The VAT declaration 65A in Hungary contains the following sections:
 
-* 65A-01-01
-* 65A-01-02
-* 65A-01-03
-* 65A-01-05
+- 65A-01-01
+- 65A-01-02
+- 65A-01-03
+- 65A-01-05
 
 ### Section 65A-01-01
 
-Use the following tables to determine how a lookup result that is preconfigured in the format is associated with a VAT declaration box.
+Use the following tables to determine how a lookup result that's preconfigured in the format associates with a VAT declaration box.
 
-**VAT payable**
+#### VAT payable
 
 <p><strong>&nbsp;</strong></p>
 <table>
@@ -64,7 +64,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Supply of goods outside the territory of the Community, supply of services covered by it and supply of goods and services in connection with international transport</p>
+<p>Supply of goods outside the territory of the Community, supply of services covered by it, and supply of goods and services in connection with international transport</p>
 </td>
 <td width="47">
 <p>01</p>
@@ -266,7 +266,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>Intra - Community acquisitions of products subject to a 5% rate</p>
+<p>Intra-community acquisitions of products subject to a 5% rate</p>
 </td>
 <td width="47">
 <p>12</p>
@@ -281,7 +281,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>Intra - Community acquisitions of products subject to a 18% rate</p>
+<p>Intra-community acquisitions of products subject to an 18% rate</p>
 </td>
 <td width="47">
 <p>13</p>
@@ -355,7 +355,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>The obligation to pay tax on a service used from a Community taxable person is subject to VAT Act. Pursuant to Section 37 (1) (tax rate of 27%)</p>
+<p>The obligation to pay tax on a service used from a Community taxable person is subject to the VAT Act. Pursuant to Section 37 (1) (tax rate of 27%)</p>
 </td>
 <td width="47">
 <p>18</p>
@@ -400,7 +400,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>5% tax payable by the purchaser on the supply of goods in the case of a transaction within the community under VAT Act. Section 91 (2)</p>
+<p>5% tax that the purchaser must pay on the supply of goods for a transaction within the community under VAT Act, Section 91 (2).</p>
 </td>
 <td width="47">
 <p>20</p>
@@ -415,7 +415,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>18% tax payable by the purchaser on the supply of goods in the case of a transaction within the community under VAT Act. Section 91 (2)</p>
+<p>18% tax that the purchaser must pay on the supply of goods for a transaction within the community under VAT Act, Section 91 (2).</p>
 </td>
 <td width="47">
 <p>21</p>
@@ -430,7 +430,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>27% tax payable by the purchaser on the supply of goods in the case of a transaction within the community under VAT Act. Section 91 (2)</p>
+<p>27% tax that the purchaser must pay on the supply of goods for a transaction within the community under VAT Act, Section 91 (2).</p>
 </td>
 <td width="47">
 <p>22</p>
@@ -464,7 +464,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="302">
-<p>Tax - free import of goods</p>
+<p>Tax-free import of goods</p>
 </td>
 <td width="47">
 <p>23</p>
@@ -553,7 +553,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="302">
-<p>Purchase of goods pursuant to VAT Act &sect; 32, &sect; 34 (27% tax rate)</p>
+<p>Purchase of goods pursuant to VAT Act § 32, § 34 (27% tax rate)</p>
 </td>
 <td width="47">
 <p>28</p>
@@ -568,7 +568,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="302">
-<p>Tax payable under the rules of reverse charge pursuant to VAT Act &sect; 142</p>
+<p>Tax payable under the rules of reverse charge pursuant to VAT Act § 142</p>
 </td>
 <td width="47">
 <p>29</p>
@@ -644,10 +644,9 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tbody>
 </table>
 
-
 ### Section 65A-01-02
 
-Use the following tables to determine how a lookup result that is preconfigured in the format is associated with a VAT declaration box.
+Use the following tables to determine how a lookup result that's preconfigured in the format associates with a VAT declaration box.
 
 **Details of VAT payable**
 
@@ -781,7 +780,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>The amount received as an advance payment from the sum of the rows 05-07</p>
+<p>The amount received as an advance payment from the sum of rows 05-07</p>
 </td>
 <td width="47">
 <p>45</p>
@@ -823,7 +822,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Excise tax content in the tax base of lines 11, 16</p>
+<p>Excise tax content in the tax base of lines 11 and 16</p>
 </td>
 <td width="47">
 <p>48</p>
@@ -879,7 +878,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>The tax payable on waste under the rules of reverse in the amount of line 29</p>
+<p>The tax payable on waste under the rules of reverse charge in the amount of line 29</p>
 </td>
 <td width="47">
 <p>52</p>
@@ -893,7 +892,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>The tax payable in case of transfer of a property right entitling to emit a greenhouse gas under the rules of reverse charge taxation from the amount of line 29</p>
+<p>The tax payable when you transfer a property right that entitles the holder to emit a greenhouse gas under the rules of reverse charge taxation. This amount comes from line 29.</p>
 </td>
 <td width="47">
 <p>53</p>
@@ -907,7 +906,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>The tax payable in case of using the service according to the rules of reverse charge taxation specified in &sect; 142 of VAT Act from the amount of line 29</p>
+<p>The tax payable when you use the service according to the rules of reverse charge taxation specified in &sect; 142 of VAT Act. This amount comes from line 29.</p>
 </td>
 <td width="47">
 <p>54</p>
@@ -921,7 +920,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>The tax payable in case of using the service according to the rules of reverse charge taxation specified in &sect; 142 of VAT Act from the amount of line 29</p>
+<p>The tax payable when you use the service according to the rules of reverse charge taxation specified in &sect; 142 of VAT Act. This amount comes from line 29.</p>
 </td>
 <td width="47">
 <p>55</p>
@@ -935,7 +934,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Sales subject to tax guarantees on intra-Community sales made by the importer in connection with tax-free imports of products from line 02</p>
+<p>Sales subject to tax guarantees on intra-Community sales that the importer makes in connection with tax-free imports of products from line 02.</p>
 </td>
 <td width="47">
 <p>56</p>
@@ -949,7 +948,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Amount of tax-free intra-Community sales made by the importer / taxable person but declared by the indirect customs representative / tax warehouse operator from line 02</p>
+<p>Amount of tax-free intra-Community sales from line 02 that the indirect customs representative or tax warehouse operator declared on behalf of the importer or taxable person</p>
 </td>
 <td width="47">
 <p>57</p>
@@ -963,7 +962,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Amount of tax-free sales of a new means of transport within the Community made by the importer / taxable person but declared by the indirect customs representative / tax warehouse operator from line 03</p>
+<p>Amount of tax-free sales of a new means of transport within the Community from line 03 that the indirect customs representative or tax warehouse operator declared on behalf of the importer or taxable person</p>
 </td>
 <td width="47">
 <p>58</p>
@@ -977,7 +976,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Amount of tax-free imports from line 23 made by the importer but declared by the indirect customs representative in the framework of self-taxation</p>
+<p>Amount of tax-free imports from line 23 that the indirect customs representative declared on behalf of the importer as part of self-taxation</p>
 </td>
 <td width="47">
 <p>59</p>
@@ -991,7 +990,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Amount of imports of the goods taxed at 5% made by the importer but declared by the indirect customs representative in the framework of self-taxation from line 24</p>
+<p>Amount of imports of goods taxed at 5% from line 24 that the indirect customs representative declared on behalf of the importer as part of self-taxation</p>
 </td>
 <td width="47">
 <p>60</p>
@@ -1005,7 +1004,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Amount of imports of the goods taxed at 18% made by the importer but declared by the indirect customs representative in the framework of self-taxation from line 25</p>
+<p>Amount of imports for goods taxed at 18% that the importer imports but the indirect customs representative declares as part of self-taxation from line 25</p>
 </td>
 <td width="47">
 <p>61</p>
@@ -1019,7 +1018,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="349">
-<p>Amount of imports of the goods taxed at 27% made by the importer but declared by the indirect customs representative in the framework of self-taxation from line 26</p>
+<p>Amount of imports for goods taxed at 27% that the importer imports but the indirect customs representative declares as part of self-taxation from line 26</p>
 </td>
 <td width="47">
 <p>62</p>
@@ -1033,7 +1032,6 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 </tbody>
 </table>
-
 
 **Deductible input tax on purchases**
 
@@ -1055,7 +1053,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="293">
-<p>Domestic purchase of tax - free goods</p>
+<p>Domestic purchase of tax-free goods</p>
 </td>
 <td width="38">
 <p>63</p>
@@ -1220,10 +1218,9 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tbody>
 </table>
 
-
 ### Section 65A-01-03
 
-Use the following tables to determine how a lookup result that is preconfigured in the format is associated with a VAT declaration box.
+Use the following tables to determine how a lookup result that's preconfigured in the format associates with a VAT declaration box.
 
 **Deductible input tax on purchases**
 
@@ -1335,7 +1332,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 <p>78</p>
 </td>
 <td width="85">
-<p>In-Kind</p>
+<p>In-kind</p>
 </td>
 <td width="266">
 <p>78-InKindPurchases</p>
@@ -1343,7 +1340,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="321">
-<p>The amount of the unrealized investment in one's own enterprise from the amount of line 76</p>
+<p>The amount of the unrealized investment in your own enterprise from the amount on line 76</p>
 </td>
 <td width="47">
 <p>79</p>
@@ -1352,13 +1349,12 @@ Use the following tables to determine how a lookup result that is preconfigured 
 <p>Details</p>
 </td>
 <td width="266">
-<p>79-UnrelizedInvestmentsOwnBusiness</p>
+<p>79-UnrealizedInvestmentsOwnBusiness</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
-
 
 **Value added tax accounting**
 
@@ -1405,12 +1401,12 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="266">
 <p>The result of the following formula:</p>
-<p>Line 36 &ndash; line 76 &ndash; line 82</p>
+<p>Line 36 - line 76 - line 82</p>
 </td>
 </tr>
 <tr>
 <td width="312">
-<p>Amount of tax to be paid (if amount in line 83 is positive)</p>
+<p>Amount of tax to pay (if the amount in line 83 is positive)</p>
 </td>
 <td width="57">
 <p>84</p>
@@ -1425,7 +1421,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="312">
-<p>Amount of recoverable tax (if amount in line 83 is negative and you are entitled to a refund)</p>
+<p>Amount of recoverable tax (if the amount in line 83 is negative and you're entitled to a refund)</p>
 </td>
 <td width="57">
 <p>85</p>
@@ -1435,7 +1431,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </td>
 <td width="266">
 <p>The result of the following formula:</p>
-<p>0 &ndash; line 83, if 83 &lt; 0; otherwise, 0</p>
+<p>0 - line 83, if 83 &lt; 0; otherwise, 0</p>
 </td>
 </tr>
 <tr>
@@ -1449,14 +1445,13 @@ Use the following tables to determine how a lookup result that is preconfigured 
 <p>User input parameter</p>
 </td>
 <td width="266">
-<p>Tax base &ndash; Receivable amount carried forward</p>
-<p>Tax amount &ndash; Receivable amount carried forward</p>
+<p>Tax base - receivable amount carried forward</p>
+<p>Tax amount - receivable amount carried forward</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
-
 
 **Details of the return**
 
@@ -1492,7 +1487,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="321">
-<p>The value, exclusive tax, of goods resold as an intermediate customer in a "triangular transaction" (Intra-Community)</p>
+<p>The value, exclusive of tax, of goods resold as an intermediate customer in a "triangular transaction" (Intra-Community)</p>
 </td>
 <td width="47">
 <p>89</p>
@@ -1566,7 +1561,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="321">
-<p>The tax-free value of goods which are considered to have been assembled or assembled in another Member State of the Community from line 90</p>
+<p>The tax-free value of goods considered to be assembled in another Member State of the Community from line 90</p>
 </td>
 <td width="47">
 <p>94</p>
@@ -1596,12 +1591,11 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </table>
 <p>&nbsp;</p>
 
-
 ### Section 65A-01-05
 
-Use the following tables to determine how a lookup result that is preconfigured in the format is associated with a VAT declaration box.
+Use the following tables to determine how a lookup result that's preconfigured in the format associates with a VAT declaration box.
 
-**Sale / purchase of products listed in Annex I to Regulation (EC)**
+**Sale or purchase of products listed in Annex I to Regulation (EC)**
 
 <table>
 <tbody>
@@ -1707,7 +1701,6 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </table>
 <p>&nbsp;</p>
 
-
 ### Purchase reverse charge VAT
 
 If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result of **Report field lookup** that contains "UseTax" in the name.
@@ -1718,15 +1711,15 @@ For example, for taxable intra-community acquisitions, you configure sales tax c
 
 Alternatively, you configure two sales tax codes:
 
-* **VAT_S_EU**, which has a tax rate value of -27 percent
+- **VAT_S_EU**, which has a tax rate value of -27 percent
 
-* **InVAT_S_EU**, which has a tax rate value of 27 percent
+- **InVAT_S_EU**, which has a tax rate value of 27 percent
 
 You then associate the codes with lookup results of **Report field lookup** in the following way:
 
-* Associate **VAT_S_EU** with the **14-EUPurchasesStandardRateTaxPayable** lookup result.
+- Associate **VAT_S_EU** with the **14-EUPurchasesStandardRateTaxPayable** lookup result.
 
-* Associate **InVAT_S_EU** with the 69-**EUPurchasesTaxDeductible** lookup result.
+- Associate **InVAT_S_EU** with the **69-EUPurchasesTaxDeductible** lookup result.
 
 In this case, amounts that use the **VAT_S_EU** sales tax code are reflected on line 14 ("Intra - Community acquisitions of products subject to a 27% rate"). Amounts that use the **InVAT_S_EU** sales tax code are reflected on line 69 ("Amount of tax deductible on intra - Community acquisitions of goods").
 
@@ -1734,7 +1727,7 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 ## Summary report overview
 
-In Hungary, you can generate a report 65M that contains the following information for each vendor:
+In Hungary, you can generate report 65M that contains the following information for each vendor:
 
 - The number of purchase invoices, and their total tax base and tax amount
 - The number of corrective invoices, and their total tax base and tax amount
@@ -1747,7 +1740,7 @@ A list of purchase invoices 65M-02 lists all the purchase invoices for the perio
 - The fulfillment date. The fulfillment date is the date when the goods are sold or the services are performed. If an invoice doesn't have a fulfillment date, the invoice date is used.
 - The tax base in 1,000 Hungarian forints (HUF).
 - The tax amount in 1,000 HUF.
-- The marking of the final invoice that is received after receipt of the advance invoice.
+- The marking of the final invoice that you receive after receipt of the advance invoice.
 
 A list of corrective invoices 65M-02-K lists all the corrective invoices. For each corrective invoice and its original invoice, it contains the following information:
 
@@ -1759,14 +1752,14 @@ A list of corrective invoices 65M-02-K lists all the corrective invoices. For ea
 - The tax base in 1,000 HUF
 - The tax amount in 1,000 HUF
 
-The following are examples show how report 65M is filled in.
+The following examples show how to fill in report 65M.
 
 ### Example 1: Corrective invoice
 
 - **August 1, 2022 (01.08.2022)**: Purchase invoice Inv1 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
 - **August 20, 2022 (20.08.2022)**: Corrective invoice CN1 for a -100,000 HUF tax base and a -27,000 HUF tax amount.
 
-**Report for August 2022**
+### Report for August 2022
 
 _65M-02_
 
@@ -1809,7 +1802,6 @@ _65M-02_
 </tbody>
 </table>
 <p>&nbsp;</p>
-
 
 _65M-02-K_
 
@@ -1888,12 +1880,11 @@ _65M-02-K_
 </table>
 <p>&nbsp;</p>
 
-
 ### Example 2: Corrective invoice to multiple original invoices
 
 - **August 2, 2022 (02.08.2022)**: Purchase invoice Inv2 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
 - **August 3, 2022 (03.08.2022)**: Purchase invoice Inv3 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-- **August 22, 2022 (22.08.2022)**: Corrective invoice CN2 for a -200,000 HUF tax base and a -54,000 HUF tax amount, where -100,000 HUF are correcting Inv2, and -100,000 HUF are correcting Inv3.
+- **August 22, 2022 (22.08.2022)**: Corrective invoice CN2 for a -200,000 HUF tax base and a -54,000 HUF tax amount, where -100,000 HUF corrects Inv2, and -100,000 HUF corrects Inv3.
 
 **Report for August 2022**
 
@@ -1955,7 +1946,6 @@ _65M-02_
 </tbody>
 </table>
 <p>&nbsp;</p>
-
 
 _65M-02-K_
 
@@ -2080,11 +2070,10 @@ _65M-02-K_
 </table>
 <p>&nbsp;</p>
 
-
 ### Example 3: Advance invoice for partial amount
 
 - **August 3, 2022 (03.08.2022)**: Invoice for prepayment Inv4 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-- **August 23, 2022 (23.08.2022)**: Final invoice (minus the invoice for the prepayment) Inv 5 for a 2,000,000 HUF tax base (= 3,000,000 – 1,000,000) and a 54 000 HUF tax amount (= 81,000 – 27,000).
+- **August 23, 2022 (23.08.2022)**: Final invoice (minus the invoice for the prepayment) Inv 5 for a 2,000,000 HUF tax base (= 3,000,000 – 1,000,000) and a 54,000 HUF tax amount (= 81,000 – 27,000).
 
 _65M-02_
 
@@ -2129,7 +2118,7 @@ _65M-02_
 <p>Inv5</p>
 </td>
 <td width="151">
-<p>23.08.2022</p>
+<p>08/23/2022</p>
 </td>
 <td width="142">
 <p>2000</p>
@@ -2146,7 +2135,7 @@ _65M-02_
 <p>Inv5</p>
 </td>
 <td width="151">
-<p>23.08.2022</p>
+<p>08/23/2022</p>
 </td>
 <td width="142">
 <p>3000</p>
@@ -2161,7 +2150,6 @@ _65M-02_
 </tbody>
 </table>
 <p>&nbsp;</p>
-
 
 ### Example 4: Advance invoice for full amount
 
@@ -2209,17 +2197,16 @@ _65M-02_
 </table>
 <p>&nbsp;</p>
 
-
 ## Configure system parameters
 
 To generate a VAT declaration, you must configure the VAT number.
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
-2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Hungary, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Hungary, and that uses the **VAT Id** registration category.
-5. In the **Registration number** field, enter the tax number.
-6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+1. Select the legal entity, and then select **Registration IDs**.
+1. Select or create the address in Hungary, and then, on the **Registration ID** FastTab, select **Add**.
+1. In the **Registration type** field, select the registration type that's dedicated to Hungary and uses the **VAT Id** registration category.
+1. In the **Registration number** field, enter the tax number.
+1. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
@@ -2243,9 +2230,9 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
 Follow these steps to define which sales tax codes generate which lines on the VAT declaration (for lines 01–35 and 63–75).
 
 1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT declaration XML (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
-3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
-4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
+1. Select the **VAT declaration XML (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
+1. On the **Application specific parameters** page, on the **Lookups** tab, select **Report field lookup**.
+1. On the **Conditions** tab, set the following fields to associate the sales tax codes and report fields.
 
 <table>
 <tbody>
@@ -2270,8 +2257,8 @@ Follow these steps to define which sales tax codes generate which lines on the V
 <p>Tax code</p>
 </td>
 <td>
-<p>Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box.</p>
-<p>We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration line.</p>
+<p>Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate declaration box.</p>
+<p>Separate sales tax codes so that one sales tax code generates amounts in only one declaration line.</p>
 </td>
 </tr>
 <tr>
@@ -2279,7 +2266,7 @@ Follow these steps to define which sales tax codes generate which lines on the V
 <p>Transaction classifier</p>
 </td>
 <td>
-<p>If you created enough sales tax codes so that one sales tax code generates an amount on only one VAT declaration line, you can select <strong>*Not blank*</strong>. Otherwise, select a transaction classifier. The following transaction classifiers are available:</p>
+<p>If you create enough sales tax codes so that one sales tax code generates an amount on only one VAT declaration line, select <strong>*Not blank*</strong>. Otherwise, select a transaction classifier. The following transaction classifiers are available:</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Purchase &ndash; Tax receivable from a purchase or a purchase reverse charge.</strong></p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>PurchaseExempt</strong> &ndash;Tax-exempt purchase.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Sales &ndash; Tax payable.</strong></p>
@@ -2294,16 +2281,15 @@ Follow these steps to define which sales tax codes generate which lines on the V
 </table>
 <p>&nbsp;</p>
 
-
 > [!NOTE]
-> 
-> Associate all sales tax codes with lookup results. If any sales tax codes should not generate values on the VAT declaration, associate them with the **Other** lookup result.
+>
+> Associate all sales tax codes with lookup results. If any sales tax codes shouldn't generate values on the VAT declaration, associate them with the **Other** lookup result.
 
 #### Set up application-specific parameters for Details
 
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Details lookup**.
-2. On the **Conditions** FastTab, define which sales tax codes generate which lines on the VAT declaration (for lines 37–42, 45–62, 79, and 88–95, which are details of lines 01–35 and 63–75 that are defined in **Report field lookup**).
-3. Create the last line, and associate all other sales tax codes with the **Other** lookup result.
+1. On the **Conditions** FastTab, define which sales tax codes generate which lines on the VAT declaration (for lines 37–42, 45–62, 79, and 88–95, which are details of lines 01–35 and 63–75 that are defined in **Report field lookup**).
+1. Create the last line, and associate all other sales tax codes with the **Other** lookup result.
 
 <table>
 <tbody>
@@ -2333,20 +2319,19 @@ Follow these steps to define which sales tax codes generate which lines on the V
 </table>
 <p>&nbsp;</p>
 
-
 #### Set up application-specific parameters for In-kind contributions, Assets, and Annex I
 
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **In-kind** lookup.
-2. On the **Conditions** FastTab, define which sales tax codes are for in-kind contributions and generate values on lines 44 and 78.
-3. Create the last line, and associate all other sales tax codes with the **Other** lookup result as shown in the last step of the previous procedure.
-4. On the **Lookups** FastTab, select **Assets lookup**.
-5. On the **Conditions** FastTab, define which sales tax codes are for assets (property, plant, and equipment), sales, and purchases, and generate values on lines 43 and 77.
-6. Create the last line, and associate all other sales tax codes with the **Other** lookup result as before.
-7. On the **Lookups** FastTab, select **AnnexI lookup**.
-8. On the **Conditions** FastTab, define which sales tax codes generate values in section 65A-01-05 (lines 100 and 101) of the VAT declaration.
-9. Create the last line, and associate all other sales tax codes to the **Other** lookup result, as before.
-10. On the **Lookups** FastTab, select **Summary report lookup**.
-11. On the **Conditions** FastTab, define which invoice sales tax groups and sales tax codes should be included in the 65M summary report when they are used in vendor invoices. If all vendor invoices should be included on the Summary report, regardless of sales tax groups and sales tax codes, create the following lines.
+1. On the **Conditions** FastTab, define which sales tax codes are for in-kind contributions and generate values on lines 44 and 78.
+1. Create the last line, and associate all other sales tax codes with the **Other** lookup result as shown in the last step of the previous procedure.
+1. On the **Lookups** FastTab, select **Assets lookup**.
+1. On the **Conditions** FastTab, define which sales tax codes are for assets (property, plant, and equipment), sales, and purchases, and generate values on lines 43 and 77.
+1. Create the last line, and associate all other sales tax codes with the **Other** lookup result as before.
+1. On the **Lookups** FastTab, select **AnnexI lookup**.
+1. On the **Conditions** FastTab, define which sales tax codes generate values in section 65A-01-05 (lines 100 and 101) of the VAT declaration.
+1. Create the last line, and associate all other sales tax codes to the **Other** lookup result, as before.
+1. On the **Lookups** FastTab, select **Summary report lookup**.
+1. On the **Conditions** FastTab, define which invoice sales tax groups and sales tax codes should be included in the 65M summary report when you use them in vendor invoices. If all vendor invoices should be included on the Summary report, regardless of sales tax groups and sales tax codes, create the following lines.
 
 <table>
 <tbody>
@@ -2387,32 +2372,31 @@ Follow these steps to define which sales tax codes generate which lines on the V
 </table>
 <p>&nbsp;</p>
 
-
 #### Set up application-specific parameter for the XML file format version
 
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **XML values lookup**.
-2. On the **Conditions** FastTab, define values for some constant XML elements:
+1. On the **Conditions** FastTab, define values for some constant XML elements:
 
-  - In the **Element** column, select **FormatVersion**.
-  - In the **Lookup result** column, enter the value of the format version. For example, for the XML file 2265 applicable for the year 2022, enter **2.0**.
+- In the **Element** column, select **FormatVersion**.
+- In the **Lookup result** column, enter the value of the format version. For example, for the XML file 2265 applicable for the year 2022, enter `2.0`.
 
-3. On the Action Pane, select **Export** to export the settings in an XML file. Then close the page.
-4. Select the **VAT declaration Excel (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
-5. Select **Import**, and select the file that you exported earlier.
+1. On the action pane, select **Export** to export the settings in an XML file. Then close the page.
+1. Select the **VAT declaration Excel (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
+1. Select **Import**, and select the file that you exported earlier.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
-2. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (HU)** ER format.
+1. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (HU)** ER format.
 
 This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-3. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+1. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
-If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps:
 
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
-2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **HUN**, select the **VAT Declaration Excel (HU)** ER format.
+1. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **HUN**, select the **VAT Declaration Excel (HU)** ER format.
 
 ## Set up electronic messages
 
@@ -2421,27 +2405,27 @@ If you're configuring the VAT declaration in a legal entity that has [multiple V
 The data package contains electronic message settings that are used to preview the VAT declaration in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **HU VAT declaration package**. The downloaded file is named **HU VAT declaration package.zip**.
-2. In Finance, in the **Data management** workspace, select **Import**.
-3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
-4. On the **Selected entities** FastTab, select **Add file**.
-5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
-6. Select **Close**.
-7. After the data entities are uploaded, on the Action Pane, select **Import**.
-8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported **(HU VAT declaration)**.
+1. In Finance, in the **Data management** workspace, select **Import**.
+1. On the **Import** FastTab, enter a name for the job in the **Group name** field.
+1. On the **Selected entities** FastTab, select **Add file**.
+1. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
+1. Select **Close**.
+1. After the data entities are uploaded, on the Action Pane, select **Import**.
+1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported **(HU VAT declaration)**.
 
 ### Configure electronic messages
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-2. Select the line for **HU Populate VAT return records**, and then select **Edit query**.
-3. Use the filter to specify the settlement periods to include on the report.
-4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+1. Select the line for **HU Populate VAT return records**, and then select **Edit query**.
+1. Use the filter to specify the settlement periods to include on the report.
+1. If you need to report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
 ## <a name="preview-vat"></a>Preview the VAT declaration, incoming transactions, and outgoing transactions in Excel
 
 ### Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
 
 1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
-2. Set the following fields.
+1. Set the following fields.
 
 <table>
 <tbody>
@@ -2467,8 +2451,8 @@ The data package contains electronic message settings that are used to preview t
 </td>
 <td>
 <p>Select one of the following values:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong> &ndash; Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrections</strong> &ndash; Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</p>
+<ul>
+<li><strong>Original</strong> – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Total list</strong> &ndash; Generate a report for all the sales tax transactions for the period, including the original and all corrections.</p>
 </td>
 </tr>
@@ -2483,8 +2467,7 @@ The data package contains electronic message settings that are used to preview t
 </tbody>
 </table>
 
-
-3. Select **OK**, and then, in the **Electronic report parameters** dialog box, set the following fields.
+1. Select **OK**, and then, in the **Electronic report parameters** dialog box, set the following fields.
 
 <table>
 <tbody>
@@ -2502,7 +2485,7 @@ The data package contains electronic message settings that are used to preview t
 <p>Tax amount - Deductible amount moved from previous period</p>
 </td>
 <td width="423">
-<p>Enter the amounts that have been moved from the previous period. These amounts are shown on line 82.</p>
+<p>Enter the amounts that you moved from the previous period. These amounts appear on line 82.</p>
 </td>
 </tr>
 <tr>
@@ -2511,20 +2494,19 @@ The data package contains electronic message settings that are used to preview t
 <p>Tax amount - Receivable amount carried forward</p>
 </td>
 <td width="423">
-<p>Enter the amounts to move to the next period. These amounts are shown on line 86.</p>
+<p>Enter the amounts to move to the next period. These amounts appear on line 86.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
 
-
-4. Select **OK**, and review the Excel report.
+1. Select **OK**, and review the Excel report.
 
 ### <a name="settle"></a>Settle and post sales tax
 
 1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
-2. Set the following fields.
+1. Set the following fields.
 
 <table>
 <tbody>
@@ -2566,18 +2548,16 @@ The data package contains electronic message settings that are used to preview t
 </table>
 <p>&nbsp;</p>
 
-
-3. Select **OK**.
+1. Select **OK**.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
 1. Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
-2. Select Print report, and then select **OK**.
-3. Review the Excel file that is generated for the selected sales tax payment line.
+1. Select **Print report**, and then select **OK**.
+1. Review the Excel file that's generated for the selected sales tax payment line.
 
 > [!NOTE]
-> 
-> The report is generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
+> The report is generated only for the selected line of the sales tax payment. If you need to generate a report, such as a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
 
 ## Generate a VAT declaration from electronic messages
 
@@ -2585,25 +2565,24 @@ When you use electronic messages to generate the report, you can collect tax dat
 
 The following procedure applies to the electronic message processing example that you imported earlier from the LCS Shared asset library.
 
-1. Go to **Tax** > **Inquiries and reports** >** Electronic messages** > **Electronic messages**.
-2. In the left pane, select **HU VAT declaration**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
-4. Select the message line that is created, enter a description, and then specify the start date and end date for the declaration.
+1. Go to **Tax** > **Inquiries and reports** >**Electronic messages** > **Electronic messages**.
+1. In the left pane, select **HU VAT declaration**.
+1. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+1. Select the message line that you created, enter a description, and then specify the start date and end date for the declaration.
 
 > [!NOTE]
-> 
 > Steps 5 through 7 are optional.
 
-5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
-6. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
-7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
-8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
-9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
-10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-vat) section earlier in this topic, and then select **OK**.
-11. Select the **Attachments** button in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
-12. Select **Generate report**.
-13. To generate a report in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
-14. Set the following fields.
+1. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that you generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
+1. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, the system includes all sales tax payments of the selected period that aren't included in any other message of the same processing.
+1. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+1. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
+1. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
+1. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-vat) section earlier in this topic, and then select **OK**.
+1. Select the **Attachments** button in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
+1. Select **Generate report**.
+1. To generate a report in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
+1. Set the following fields.
 
 <table>
 <tbody>
@@ -2652,7 +2631,7 @@ The following procedure applies to the electronic message processing example tha
 <p>Power of attorney</p>
 </td>
 <td width="464">
-<p>If you selected a tax representative, select the type of power of attorney: <strong>Add-hoc</strong> or <strong>Permanent</strong>.</p>
+<p>If you selected a tax representative, select the type of power of attorney: <strong>Ad-hoc</strong> or <strong>Permanent</strong>.</p>
 </td>
 </tr>
 <tr>
@@ -2669,7 +2648,7 @@ The following procedure applies to the electronic message processing example tha
 <p>Tax amount - Deductible amount moved from previous period</p>
 </td>
 <td width="464">
-<p>Enter the amounts that have been moved from the previous period. These amounts are shown on line 82.</p>
+<p>Enter the amounts that you moved from the previous period. These amounts appear on line 82.</p>
 </td>
 </tr>
 <tr>
@@ -2678,32 +2657,31 @@ The following procedure applies to the electronic message processing example tha
 <p>Tax amount - Receivable amount carried forward</p>
 </td>
 <td width="464">
-<p>Enter the amounts to move to the next period. These amounts are shown on line 86.</p>
+<p>Enter the amounts to move to the next period. These amounts appear on line 86.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
 
-
-15. Select the **Attachments** button in the upper-right corner of the page, and download the electronic file that was generated. You should then manually upload this file to the tax authority tool or portal.
+1. Select the **Attachments** button in the upper-right corner of the page, and download the electronic file that the portal generates. You should then manually upload this file to the tax authority tool or portal.
 
 ## <a name="run-a-vat"></a>Run a VAT declaration for multiple legal entities
 
-To use the formats to report the VAT declaration for a group of legal entities, you must first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
+To use the formats to report the VAT declaration for a group of legal entities, first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
 ### Set up electronic messages to collect tax data from several legal entities
 
 Follow these steps to set up electronic messages to collect data from multiple legal entities.
 
 1. Go to **Workspaces** > **Feature management**.
-2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
-3. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-4. On the **Populate records action** page, select the line for **HU Populate VAT return records**.
+1. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
+1. On the **Populate records action** page, select the line for **HU Populate VAT return records**.
 
    In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
-5. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
+1. In the **Datasources setup** grid, add a line for each additional legal entity that you need to include in reporting. For each new line, set the following fields.
 
 <table>
 <tbody>
@@ -2720,7 +2698,7 @@ Follow these steps to set up electronic messages to collect data from multiple l
 <p>Name</p>
 </td>
 <td>
-<p>Enter a value that will help you understand where this record comes from. For example, enter <strong>VAT payment of Subsidiary 1</strong>.</p>
+<p>Enter a value that helps you understand where this record comes from. For example, enter <strong>VAT payment of Subsidiary 1</strong>.</p>
 </td>
 </tr>
 <tr>
@@ -2728,7 +2706,7 @@ Follow these steps to set up electronic messages to collect data from multiple l
 <p>Message item type</p>
 </td>
 <td>
-<p>Select <strong>VAT return</strong>. This value is the only value that is available for all the records.</p>
+<p>Select <strong>VAT return</strong>. This value is the only value that's available for all the records.</p>
 </td>
 </tr>
 <tr>
@@ -2784,17 +2762,15 @@ Follow these steps to set up electronic messages to collect data from multiple l
 <p>User query</p>
 </td>
 <td>
-<p>This checkbox is automatically selected when you define criteria by selecting <strong>Edit query</strong>.</p>
+<p>Select this checkbox automatically when you define criteria by selecting <strong>Edit query</strong>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
 
+1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that you specified in the **Company** field on the line.
 
-6. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
-
-  When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all the legal entities that you defined.
-
+  When you complete the setup, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all the legal entities that you defined.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

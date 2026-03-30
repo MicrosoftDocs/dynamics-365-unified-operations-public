@@ -1,11 +1,11 @@
 ---
 title: Use Copilot in site builder to enrich product detail pages
-description: This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
+description: Learn how to use Microsoft Copilot in site builder to enrich product detail pages for Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 01/22/2025
+ms.date: 01/20/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -21,11 +21,11 @@ This article describes how to use Microsoft Copilot in site builder to enrich pr
 
 > [!NOTE]
 > - Starting in March 2024, Copilot in site builder is generally available for all Dynamics 365 Commerce customers globally. With this release, Copilot in site builder is supported in 23+ locales. For more information, see [Copilot International Availability](https://go.microsoft.com/fwlink/?linkid=2263265).
-> - Depending on the hosting region for your environment, you may need to access Copilot resources that aren't in your hosting region. If so, you can allow your request to be routed to another region by following the instructions in [Enable cross-geo communication for Copilot](#enable-cross-geo-communication-for-copilot). For more information, see [Enable copilots and generative AI features](https://go.microsoft.com/fwlink/?linkid=2263523).
+> - Depending on the hosting region for your environment, you might need to access Copilot resources that aren't in your hosting region. If so, you can allow your request to be routed to another region by following the instructions in [Enable cross-geo communication for Copilot](#enable-cross-geo-communication-for-copilot). For more information, see [Enable copilots and generative AI features](https://go.microsoft.com/fwlink/?linkid=2263523).
 
 If you run an e-commerce website, you know the importance of engaging and persuasive product enrichment and marketing content that can attract and convert your customers. However, it can be time-consuming and challenging to create such content, especially if you have a large product catalog and a diverse audience. To help with content creation, Microsoft introduced Copilot in site builder, a new AI-powered tool that helps you easily and efficiently generate high-quality content.
 
-Copilot in site builder works seamlessly with Dynamics 365 Commerce site builder to help you quickly create product enrichment and marketing content that's customized for your target audience and brand tone. Site builder offers a range of templates, features, and tools to help you customize your website to meet your needs and preferences. By using Copilot in site builder, you can quickly and efficiently generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites.
+Copilot in site builder works seamlessly with Dynamics 365 Commerce site builder to help you quickly create product enrichment and marketing content customized for your target audience and brand tone. Site builder offers a range of templates, features, and tools to help you customize your website to meet your needs and preferences. By using Copilot in site builder, you can quickly and efficiently generate persuasive, compelling, and engaging product enrichment and marketing content for your e-commerce websites.
 
 The following video provides an overview of product enrichment with Copilot in site builder.
 
@@ -36,30 +36,30 @@ To use Copilot in site builder to initiate the creative process, first select a 
 Copilot in site builder offers the following capabilities:
 
 - **Initiate the creative process** – Copilot generates content based on basic product information such as the name, description, attributes, and dimensions. You can then use the generated content to spark further ideas.
-- **Optimize for search engines** – Optimize your product marketing content for search engines to help rank your e-commerce site rank higher in internet search results and drive up sales.
-- **Choose the messaging tone** – You can select the voice that best fits your brand and audience, and you can specify a unique tone for each product. For example, the tone of the messaging for a product might be adventurous, casual, luxurious, formal, informational, or educational.
+- **Optimize for search engines** – Optimize your product marketing content for search engines to help your e-commerce site rank higher in internet search results and drive up sales.
+- **Choose the messaging tone** – Select the voice that best fits your brand and audience, and specify a unique tone for each product. For example, the tone of the messaging for a product might be adventurous, casual, luxurious, formal, informational, or educational.
 - **Create custom messages for specific buyers** – Select the intended audience to create custom messages for specific buyers, such as new parents, graduates, older adults, and health care workers.
 - **Amplify with key highlights** – Use natural language to augment your content with key highlights that are specific to a product, and generate engaging text snippets that help amplify key highlights for your product.
 - **Make basic modifications** – Easily make basic text modifications, either by using an inline rich text editor or by using natural language to provide key prompts to format text.
 
 > [!NOTE]
-> Copilot in site builder can be used with content block and text block modules when you enrich product pages. For more information, see [Learn more about standard product enrichment](./enrich-product-page.md).
+> You can use Copilot in site builder with content block and text block modules when you enrich product pages. For more information, see [Learn more about standard product enrichment](./enrich-product-page.md).
 
 ## Enable the Copilot in site builder feature
 
-To use Copilot in site builder, you must first enable the feature in site builder.
+To use Copilot in site builder, first enable the feature in site builder.
 
-To enable the Copilot in site builder feature, follow these steps.
+To enable the Copilot in site builder feature, follow these steps:
 
 1. In site builder, go to **Tenant settings \> Features**.
 1. Set the **Copilot for Dynamics 365 content generation** option to **On**.
 
 > [!NOTE]
-> Content that's generated by AI can include incorrect information. Before you use any AI-generated content that's suggested, review it to ensure that it's accurate and appropriate. By using this feature, you acknowledge and agree to the [Supplemental terms of use for Microsoft Power Platform and Dynamics 365 preview for online services](https://go.microsoft.com/fwlink/?linkid=2189520).
+> AI-generated content can include incorrect information. Before you use any suggested AI-generated content, review it to ensure that it's accurate and appropriate. By using this feature, you acknowledge and agree to the [Supplemental terms of use for Microsoft Power Platform and Dynamics 365 preview for online services](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-When you enable the Copilot in site builder feature at the tenant level, the Copilot capability is automatically enabled for all sites that are associated with the tenant. However, site administrators can control the availability of Copilot at the level of the individual site.
+When you enable the Copilot in site builder feature at the tenant level, you automatically enable the Copilot capability for all sites that are associated with the tenant. However, site administrators can control the availability of Copilot at the level of the individual site.
 
-To control the availability of Copilot in site builder feature at the site level, follow these steps.
+To control the availability of Copilot in site builder feature at the site level, follow these steps:
 
 1. Go to your site in site builder.
 1. Go to **Site settings \> Features**.
@@ -70,61 +70,61 @@ To control the availability of Copilot in site builder feature at the site level
 
 Currently, Copilot services are hosted in a [limited number of data centers](/power-platform/admin/geographical-availability-copilot) across the world. To prevent unwanted use of cross-geo services, the default behavior is to disable Copilot features in geos that don't have local Copilot services.
 
-To enable Copilot in geos that don't have local Copilot services, follow these steps.
+To enable Copilot in geos that don't have local Copilot services, follow these steps:
 
-1. To opt-in to the service, in site builder, go to **Tenant settings \> Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
-1. In the consent dialog, select **Agree**
+1. To opt in to the service, in site builder, go to **Tenant settings \> Features** and set the **Enable cross geo communication for Copilot** feature flag to **On**.
+1. In the consent dialog, select **Agree**.
 1. On the command bar, select **Save**.
 
 ## Configure and preselect tones for your brand and organization
 
 You can choose up to five tone options that Copilot in site builder uses to craft messaging that fits your brand and organization. These tones are then available for use by team members who are responsible for updating product enrichment content. You can also preselect any of the chosen tones to set them as defaults for quickly generating content via Copilot.
 
-To choose tone options and preselect default tones in site builder, follow these steps.
+To choose tone options and preselect default tones in site builder, follow these steps:
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Tones**, select **Edit**.
 1. Select **Choose tones**. 
 1. On the **Tones** flyout menu, select up to five tones, and then select **Apply**.
 
-    ![Choose tones in site builder](media/choose-tones.png)
+    :::image type="content" source="media/choose-tones.png" alt-text="Screenshot of the Tones flyout menu in site builder.":::
 
 1. Under **Chosen tones**, select any tones that you want to preselect as default tones.
 1. On the command bar, select **Save**.
 
 ## Configure and preselect target client options
 
-You can choose up to five target client options to help Copilot craft messaging that targets your intended audience. These target clients are then available for use by team members who are responsible for updating product enrichment content. You can also preselect any of the chosen target clients to set them as defaults for quickly generating content via Copilot.
+Choose up to five target client options to help Copilot craft messaging that targets your intended audience. Team members responsible for updating product enrichment content can use these target clients. You can also preselect any of the chosen target clients to set them as defaults for quickly generating content via Copilot.
 
-To choose target client options and preselect default target clients in site builder, follow these steps.
+To choose target client options and preselect default target clients in site builder, follow these steps:
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Target clients**, select **Edit**.
 1. Select **Choose target clients**.
 1. On the **Target clients** flyout menu, select up to five target clients, and then select **Apply**.
 
-    ![Choose target clients in site builder](media/choose-target-clients.png)
+    :::image type="content" source="media/choose-target-clients.png" alt-text="Screenshot of the Target clients flyout menu in site builder.":::
 
 1. Under **Chosen target clients**, select any target clients that you want to preselect as default target clients.
 1. On the command bar, select **Save**.
 
 ## Selective content filtering
 
-Microsoft is committed to providing a responsible and ethical solution for your e-commerce needs. We designed Copilot in site builder so that, by default, it avoids promoting products from sensitive and regulated industries, such as alcohol, tobacco, and soft drugs.
+Microsoft is committed to providing a responsible and ethical solution for your e-commerce needs. By default, Copilot in site builder avoids promoting products from sensitive and regulated industries, such as alcohol, tobacco, and soft drugs.
 
 However, you might have different preferences and requirements for your business. Site administrators can override the default content filtering settings and customize the product enrichment and marketing content that Copilot in site builder generates.
 
-To override content filtering restrictions in site builder, follow these steps.
+To override content filtering restrictions in site builder, follow these steps:
 
 1. Go to **Site settings \> Copilot**.
 1. Under **Content filtering**, for the content themes that you want to override, set the options to **Off**.
 
 > [!NOTE]
-> Copilot settings for tones, target clients, and sensitive/regulated industries are predefined by the system. If you have feedback or requests to revise or add more options, contact Microsoft Support.
+> The system predefines Copilot settings for tones, target clients, and sensitive or regulated industries. If you have feedback or requests to revise or add more options, contact Microsoft Support.
 
 ## Use Copilot to create content for a product page
 
-To use Copilot to create content for a product page, follow these steps.
+To use Copilot to create content for a product page, follow these steps:
 
 1. In site builder for your site, in the left navigation pane, select **Products**.
 1. Select a product for which you want to create content, and that doesn't already have a customized product page.

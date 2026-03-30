@@ -34,11 +34,11 @@ The preupgrade checklist for the Dynamics 365 upgrade is included in AX 2012 R3 
 
 ## Run the preupgrade checklist
 
-To run the preupgrade checklist, follow these steps.
+To run the preupgrade checklist, follow these steps:
 
 - Go to **System Administration \> Setup \> Checklists \> Dynamics 365 for Unified Operations data upgrade checklist**.	
 
-If the checklist isn't shown, follow these steps.
+If the checklist isn't shown, follow these steps:
 
 1. Open the **Developer workspace**, and in the **AOT** go to **Menu Items \> Display \> SysCheckList\_UpgradeToNextV**.
 2. Select and hold (or right-click) **SysCheckList\_UpgradeToNextV**, and then select **Open**.

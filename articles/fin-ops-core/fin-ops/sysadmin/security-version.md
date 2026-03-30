@@ -23,7 +23,7 @@ The security version feature lets you maintain multiple versions of security con
 
 ## Create a version
 
-To create a version of the security configurations at a point in time, follow these steps.
+To create a version of the security configurations at a point in time, follow these steps:
 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security versions**.
 1. Select **Create version**.
@@ -34,7 +34,7 @@ Version creation is an asynchronous process. You can use the **Status** column t
 
 ## Restore a version
 
-To restore the security configurations to a version that was created earlier, follow these steps.
+To restore the security configurations to a version that was created earlier, follow these steps:
 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security versions**.
 1. Select the version to restore.
@@ -54,7 +54,7 @@ This action resets this environment to the selected version state. All security 
 
 After security versions are created, users can compare them to gain insights into the differences between them.
 
-To compare versions, follow these steps.
+To compare versions, follow these steps:
 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security versions**.
 1. Select a version for comparison.
@@ -67,7 +67,7 @@ To compare versions, follow these steps.
 
 Users can delete security versions that aren't required.
 
-To delete a security version, follow these steps.
+To delete a security version, follow these steps:
 
 1. Go to **System administration** \> **Security** \> **Security governance** \> **Security versions**.
 1. Select the version to delete.

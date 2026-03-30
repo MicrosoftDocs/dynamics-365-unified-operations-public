@@ -18,7 +18,7 @@ Master planning can replenish approved purchase requisitions. Therefore, to cove
 
 ## Enable master plans to include requisitions
 
-To include requisitions during the coverage calculation for a master plan, follow these steps.
+To include requisitions during the coverage calculation for a master plan, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
 1. Create or select a master plan.

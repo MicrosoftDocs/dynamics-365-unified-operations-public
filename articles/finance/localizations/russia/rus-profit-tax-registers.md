@@ -105,7 +105,7 @@ The set of tax registers that must be provided for the reporting period is gener
 
 ## Create a tax register
 
-To create a tax register, follow these steps.
+To create a tax register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**.
 1. Select **New** to create a tax register, and set the following fields:
@@ -128,7 +128,7 @@ To create a tax register, follow these steps.
 
 For some tax registers, you must determine which expense and income codes form the information in the tax register.
 
-To set up expense and income codes for a tax register, follow these steps.
+To set up expense and income codes for a tax register, follow these steps:
 
 1. On the **Tax registers** page, in the left pane, select a tax register. Then, on the Action Pane, select **Expense codes** to set up expense and income codes for the tax register.
 1. On the **Expense code setup** page, in the left pane, select an expense or income code, or create a new line.
@@ -141,7 +141,7 @@ To set up expense and income codes for a tax register, follow these steps.
 
 ### View the tax registers tree
 
-To view the tax registers tree, follow these steps.
+To view the tax registers tree, follow these steps:
 
 1. On the **Tax registers** page, in the left pane, select a tax register. 
 1. On the Action Pane, select **Tree** to view the structure of the tax register tree.
@@ -164,7 +164,7 @@ The tree structure shows that some tax registers are calculated by using informa
 
 A new journal can be created only if all journals for previous periods have been approved.
 
-To create a tax register journal, follow these steps.
+To create a tax register journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**. The page shows the list of tax register journals that have been created.
 1. On the Action Pane, select **New**.
@@ -184,7 +184,7 @@ The journal lines contain tax registers where the calculation period is the same
 
 Field display parameters are loaded from the register settings, but the list of hidden fields can be set in the tax register journal.
 
-To hide a field, follow these steps.
+To hide a field, follow these steps:
 
 1. On the **Register journal lines** page, select the register line.
 1. On the **Hide** tab, select **Add** to add a line.
@@ -193,7 +193,7 @@ To hide a field, follow these steps.
 
     ![Change rhe fields](../media/rus-profit-tax-4.png)
 
-To add a field, follow these steps.
+To add a field, follow these steps:
 
 1. On the **Register journal lines** page, select the column header, and then select **Insert columns**.
 1. In the **Insert columns** dialog, in the **Select** column, select the fields to add.
@@ -203,7 +203,7 @@ To add a field, follow these steps.
 
 If the composition of the tax register journal has changed, follow these steps to update its lines. The composition might change if, for example, a new register is created after the journal has already been created.
 
-To update the tax register journal, follow these steps.
+To update the tax register journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. On the Action Pane, select **Lines**.
@@ -217,7 +217,7 @@ To update the tax register journal, follow these steps.
 
 ### Calculate and print tax registers
 
-To calculate and print tax registers, follow these steps.
+To calculate and print tax registers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. On the Action Pane, select **Lines**.
@@ -235,7 +235,7 @@ To calculate and print tax registers, follow these steps.
 
 ### Recalculate tax registers
 
-To recalculate a tax register, follow these steps.
+To recalculate a tax register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Journal entries** \> **Tax register journal**.
 1. On the Action Pane, select **Lines**.
@@ -247,7 +247,7 @@ To recalculate a tax register, follow these steps.
 
 ### View and print register lines
 
-To view and print register lines, follow these steps.
+To view and print register lines, follow these steps:
 
 1. On the **Register journal lines** page, select the register line, and then, on the Action Pane, select **Register lines** to view the lines of the tax register. The content and the list of columns differ for each tax register. For detailed information, see the article for each register.
 1. Select **Expand/Collapse node** to view all lines or just the last line.
@@ -276,7 +276,7 @@ Automatically created register lines can be manually edited or deleted. Lines ca
 
 #### Edit register lines
 
-To edit register lines, follow these steps.
+To edit register lines, follow these steps:
 
 1. On the **Register lines** page, on the Action Pane, select **Edit**.
 1. Edit the lines as required, and then, on the Action Pane, select **Save**.
@@ -284,7 +284,7 @@ To edit register lines, follow these steps.
 
 #### Delete a register line
 
-To delete a register line, follow these steps.
+To delete a register line, follow these steps:
 
 1. On the **Register lines** page, select the line.
 1. On the Action Pane, select **Delete**.
@@ -293,7 +293,7 @@ To restore a line after you delete it, you must recalculate the tax register.
 
 #### Manually add a line to the tax register
 
-To manually add a line to the tax register, follow these steps.
+To manually add a line to the tax register, follow these steps:
 
 1. On the **Register lines** page, on the Action Pane, select **New**.
 1. Set the fields for the new line, and then, on the Action Pane, select **Save**.
@@ -303,7 +303,7 @@ To manually add a line to the tax register, follow these steps.
 
 After you calculate all tax registers and review the data, the registers must be approved. When you approve all calculated tax registers, the tax register journal automatically selects the **Approved** checkbox. The tax register journal is automatically approved if all the tax registers that are included in it are approved.
 
-To approve a tax register, follow these steps.
+To approve a tax register, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Register journal lines** page, on the Action Pane, select **Edit**.
 1. Select the **Approved** checkbox, and then, in the **Worker** field, select the user who approved the register.
@@ -312,7 +312,7 @@ To cancel the approval of a register, clear the **Approved** checkbox. The **Wor
 
 ### Print the tax register by using the Register lines report
 
-To print the tax register by using the Register lines report, follow these steps.
+To print the tax register by using the Register lines report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Register lines**.
 1. In the **Register lines** dialog, in the **Default** section, define the criteria for selecting a tax register for the report. The values must match each other. Otherwise, the register won't be printed.

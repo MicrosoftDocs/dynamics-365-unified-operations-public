@@ -94,7 +94,7 @@ You can set up the locations of cash registers on the **Cash register locations*
 
 #### Prerequisites for the Czech Republic
 
-Before you set up cash register locations for a legal entity that has its primary address in the Czech Republic, you must follow these steps.
+Before you set up cash register locations for a legal entity that has its primary address in the Czech Republic, you must follow these steps:
 
 1. Create a tax registration type for the BP ID by selecting **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
 

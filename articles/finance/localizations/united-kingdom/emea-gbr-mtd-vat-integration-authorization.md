@@ -52,7 +52,7 @@ After you obtain your user credentials, a web application of the production type
 
 ### Obtain an authorization code
 
-To get an authorization code from HMRC, follow these steps.
+To get an authorization code from HMRC, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 Finance** web application.
 1. On the Action Pane, select **Get authorization code** and select **Yes** to confirm that you want to initialize the authorization process.
@@ -78,7 +78,7 @@ To get an authorization code from HMRC, follow these steps.
 
 ### Obtain an access token
 
-To initialize retrieval of an access token within 10 minutes after HMRC grants an authorization code, follow these steps.
+To initialize retrieval of an access token within 10 minutes after HMRC grants an authorization code, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 Finance** web application.
 1. On the **Web applications** page, on the Action Pane, select **Obtain access token** to request an access token from HMRC.

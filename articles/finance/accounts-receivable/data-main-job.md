@@ -36,7 +36,7 @@ Two new data maintenance jobs are available:
   
 These data maintenance jobs are scheduled to run daily. By default, they retain data for 30 days and remove older records in small, controlled batches.
 
-To modify the retention period, follow these steps.
+To modify the retention period, follow these steps:
 
 1. Open the **Accounts receivable parameters** page.
 1. On the **Updates** tab, on the **Data maintenance** FastTab, update the **Number of days to retain customer invoice reporting data** field. Organizations can use this field to set their own data retention policies, based on their requirements.

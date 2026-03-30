@@ -22,7 +22,7 @@ This article explains how to register and set up advance holders for Russia in M
 
 ## Set up parameters for advance holders
 
-To set up parameters for advance holders, follow these steps.
+To set up parameters for advance holders, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 1. On the **Advance holders** tab, in the **Posting profile** field, select the default posting profile that should be used to complete transactions for advance holders.
@@ -57,7 +57,7 @@ To set up parameters for advance holders, follow these steps.
 
 You must create an advance holder group to group advance holders. For example, you can group advance holders by vouchers that are calculated in a single account.
 
-To set up an advance holder group, follow these steps.
+To set up an advance holder group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Advance holders** \> **Advance holder groups**.
 1. Select **New** to create a new advance holder group or **Edit** to adjust an existing group.
@@ -74,7 +74,7 @@ You can set up the following posting profiles for an account of operations:
 - A separate ledger account for each group of advance holders.
 - A separate ledger account for each advance holder.
 
-To set up posting profiles for accounting vouchers, follow these steps.
+To set up posting profiles for accounting vouchers, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Advance holders** \> **Employee posting profiles**.
 1. Select **New** to create a new posting profile or **Edit** to adjust an existing profile.
@@ -114,7 +114,7 @@ To set up posting profiles for accounting vouchers, follow these steps.
 
 You must set up the terms of payment when you register the purchase of goods from a vendor through an advance holder. The advance holder makes the purchase.
 
-To set up the terms of payment, follow these steps.
+To set up the terms of payment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payment setup** \> **Terms of payment**.
 1. Select **New** to create a new terms of payment record or **Edit** to adjust an existing record.
@@ -129,7 +129,7 @@ To set up the terms of payment, follow these steps.
 
 Expense rates are used to generate an advance report for per diem expenses. They are also used for automatic calculation of standard and over-rate amounts.
 
-To set up the per diem expense rates, follow these steps.
+To set up the per diem expense rates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Advance holders** \> **Expense rates**.
 1. Select **New** to create a new expense or **Edit** to adjust an existing expense.

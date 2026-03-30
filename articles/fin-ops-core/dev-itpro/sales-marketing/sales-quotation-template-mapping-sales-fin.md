@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks used to synchronize 
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
@@ -17,8 +17,6 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-
 The article discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
@@ -28,7 +26,7 @@ The article discusses the templates and underlying tasks that are used to synchr
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-![Data flow in Prospect to cash.](../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/prospect-to-cash-data-flow.png" alt-text="Screenshot of data flow in Prospect to cash.":::
 
 ## Template and tasks
 
@@ -37,8 +35,8 @@ The following template and underlying tasks are used to synchronize sales quotat
 - **Name of the template in Data integration:** Sales Quotes (Sales to Supply Chain Management) - Direct
 - **Names of the tasks in the Data integration project:**
 
-    - QuoteHeader
-    - QuoteLine
+  - QuoteHeader
+  - QuoteLine
 
 The following synchronization tasks are required before synchronization of sales quotation headers and lines can occur:
 
@@ -87,8 +85,8 @@ Before sales quotations are synchronized, it's important that you update the fol
 
 - Go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the following settings are used:
 
-    - The **Use system prizing calculation system** option is set to **Yes**.
-    - The **Discount calculation method** field is set to **Line item**.
+  - The **Use system prizing calculation system** option is set to **Yes**.
+  - The **Discount calculation method** field is set to **Line item**.
 
 ### Setup in the Data integration project
 
@@ -107,12 +105,13 @@ Before sales quotations are synchronized, it's important that you update the fol
 
 - Optional: You can add the following mappings to help guarantee that sales quotation lines are imported into Supply Chain Management if there is no default information from either the customer or the product:
 
-    - **SiteId** – A site is required in order to generate quotations and sales order lines in Supply Chain Management. There is no default template value for **SiteId**.
-    - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Supply Chain Management. There is no default template value for **WarehouseId**.
+  - **SiteId** – A site is required in order to generate quotations and sales order lines in Supply Chain Management. There is no default template value for **SiteId**.
+  - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Supply Chain Management. There is no default template value for **WarehouseId**.
 
 ## Template mapping in data integrator
 
 > [!NOTE]
+>
 > - The **Discount**, **Charges**, and **Tax** fields are controlled by a complex setup in Supply Chain Management. Currently, this setup doesn't support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are handled by Supply Chain Management.
 > - The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.
 
@@ -120,16 +119,14 @@ The following illustrations show an example of a template mapping in data integr
 
 ### QuoteHeader
 
-![Template mapping in data integrator, QuoteHeader.](../../../supply-chain/sales-marketing/media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-quotation-direct-template-mapping-data-integrator-1.png" alt-text="Screenshot of template mapping in data integrator, QuoteHeader.":::
 
 ### QuoteLine
 
-![Template mapping in data integrator, QuoteLine.](../../../supply-chain/sales-marketing/media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/sales-quotation-direct-template-mapping-data-integrator-2.png" alt-text="Screenshot of template mapping in data integrator, QuoteLine.":::
 
 ## Related articles
 
 [Prospect to cash](prospect-to-cash.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
@@ -43,18 +43,17 @@ dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
 
 For the second parameter, choose the class that satisfies the requirements for your dialog.  The options are:
 
--   LedgerDimensionAccountController
--   LedgerDimensionDefaultAccountController
--   DimensionDynamicAccountController
--   BudgetLedgerDimensionController
--   BudgetPlanningLedgerDimensionController
+- LedgerDimensionAccountController
+- LedgerDimensionDefaultAccountController
+- DimensionDynamicAccountController
+- BudgetLedgerDimensionController
+- BudgetPlanningLedgerDimensionController
 
 This scenario is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
 
--   Binding the dynamic account type.
--   Company selection support.
--   Account structure selection support.
-
+- Binding the dynamic account type.
+- Company selection support.
+- Account structure selection support.
 
 ## Additional resources
 
@@ -65,6 +64,5 @@ This scenario is a simple dialog scenario around Segmented Entry. More advanced 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

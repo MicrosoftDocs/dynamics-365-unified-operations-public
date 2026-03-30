@@ -25,7 +25,7 @@ Before you complete the procedures, select the **Fixed Asset** configuration key
 
 ## Create an equipment group
 
-To create an equipment group, follow these steps.
+To create an equipment group, follow these steps:
 
 1. Create equipment group **Fixed assets \> Setup \> Equipment group**.
 1. Select **New**.
@@ -40,7 +40,7 @@ To create an equipment group, follow these steps.
 
 ## Configure default equipment group on fixed assets
 
-To configure a default equipment group on fixed assets, follow these steps.
+To configure a default equipment group on fixed assets, follow these steps:
 
 1. Create equipment group **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select the fixed asset to which you want to assign the equipment group.

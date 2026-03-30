@@ -4,7 +4,7 @@
 title: Provision Dynamics 365 Human Resources
 description: This article explains how to provision a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/25/2025
+ms.date: 12/02/2025
 ms.topic: article
 # optional metadata
 
@@ -24,6 +24,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Provision Dynamics 365 Human Resources 
+[!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 
 This article explains how to provision a new production environment for Microsoft Dynamics 365 Human Resources.

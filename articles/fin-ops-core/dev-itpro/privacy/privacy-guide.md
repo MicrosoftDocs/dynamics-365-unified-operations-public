@@ -4,7 +4,7 @@ description: Learn about the user log functionality in finance and operations ap
 author: ToddLefor
 ms.author: tlefor
 ms.topic: overview
-ms.date: 07/23/2019
+ms.date: 03/13/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -18,10 +18,10 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-The privacy laws and regulations of the European Union set a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). Privacy governs the handling and use of personal data of EU citizens and residents. Enforcement begins May 25, 2018, and there are significant consequences for non-compliance. For more information about the regulation, see the [European Union site](https://europa.eu/).
+The privacy laws and regulations of the European Union set a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). Privacy governs the handling and use of personal data of EU citizens and residents. Enforcement begins May 25, 2018, and there are significant consequences for noncompliance. For more information about the regulation, see the [European Union site](https://europa.eu/).
 
 > [!NOTE]
-> For information about the scope and coverage of this documentation, see [Clarification of the scope of this content](#clarification-of-the-scope-of-this-content) section at the end of this article.
+> For information about the scope and coverage of this documentation, see the [Clarification of the scope of this content](#clarification-of-the-scope-of-this-content) section at the end of this article.
 >
 > Before utilizing any product features in support of your compliance efforts, please ensure that you have applied all of the related hotfixes.
 
@@ -33,13 +33,13 @@ EU citizens have specific data subject rights (DSRs) that let them perform the f
 + Object to processing of their personal data.
 + Export their personal data.
 
-Personal data is defined in the following way of [the regulation](https://data.consilium.europa.eu/doc/document/ST-5419-2016-INIT/en/pdf) (organizations do not have personal data):
+Personal data is defined in the following way of [the regulation](https://data.consilium.europa.eu/doc/document/ST-5419-2016-INIT/en/pdf) (organizations don't have personal data):
 
 > (1) 'personal data' means any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
 
 To determine responsibilities for compliance,  the following roles are identified:
 
-+ **Data controller** – The controller controls personal data and determines how it's used. The responsibilities of the controller include but are not limited to collecting, maintaining, directing actions, protecting, modifying and deleting personal data. The controller either adds users to the system, grants access to the system, and collects data from data subjects, or has employees who complete these tasks on the company's behalf. The burden of understanding the request process and carrying out the request rests with the controller.
++ **Data controller** – The controller controls personal data and determines how to use it. The responsibilities of the controller include but aren't limited to collecting, maintaining, directing actions, protecting, modifying, and deleting personal data. The controller either adds users to the system, grants access to the system, and collects data from data subjects, or has employees who complete these tasks on the company's behalf. The burden of understanding the request process and carrying out the request rests with the controller.
 + **Data processor** – The processor provides services to, and processes data on behalf of, the data controller. The processor performs actions on behalf of the controller. The processor makes it possible for the controller to be compliant, but has no ownership of the data and doesn't respond directly to DSR requests.
 + **Data subject** – A data subject is a natural person whose personal information is being used.
 + **C1** – C1 is a Microsoft direct customer (IT Admin in the Enterprise Cloud).
@@ -49,107 +49,26 @@ For finance and operations apps, Microsoft acts as a processor. As a data proces
 
 The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
-![Data flow from customers.](../media/privacy-customers-controller-processor.jpg)
+:::image type="content" source="../media/privacy-customers-controller-processor.jpg" alt-text="Screenshot of data flow from customers to the application database showing controller and processor roles.":::
 
-When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business has collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant.
+When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="45%" />
-<col width="25%" />
-<col width="10%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>
-<strong>Role</strong>
-</td>
-<td>
-<strong>Scenarios</strong>
-</td>
-<td>
-<strong>Implementation</strong>
-</td>
-<td>
-<strong>Level of data access</strong>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p><strong>Your customer (2)</strong></p>
-</td>
-<td>
-<ul>
-<li>View personal data </li>
-<li>Correct personal data</li>
-<li>Erase personal data </li>
-<li>Object to processing</li>
-<li>Export personal data</li></ul>
-</td>
-<td>
-<p>You must provide a mechanism for your customer to exercise a DSR (process or service).</p>
-</td>
-<td>
-<p>Your customer sees only their personal data.</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p><strong>Your employee – information worker</strong></p>
-</td>
-<td>
-<ul>
-<li>View personal data </li>
-<li>Correct personal data</li>
-<li>Erase personal data </li>
-<li>Object to processing</li>
-<li>Export personal data</li></ul>
-</td>
-<td>
-<p>You must provide a mechanism for your worker to exercise a DSR (process or service). Some activity information may be obtained from Microsoft</p>
-</td>
-<td>
-<p>Your information worker sees only their personal data.</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p><strong>Your employee – privacy administrator</strong></p>
-</td>
-<td>
-<ul>
-<li>Validates the user identity request  </li>
-<li>Locates the personal data across systems </li>
-<li>Curates the data based on your policy</li>
-<li>Creates a data package or executes an action</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Uses finance and operations to locate the data and fulfill the request. </li>
-<li>Writes a customization.</li>
-<li>Reaches out to third parties for shared-controller DSRs.</li>
-<li>Reaches out to Microsoft for activity data.</li> 
-</ul>
-</td>
-<td>
-<p>Your GDRP administrator sees the data that has been obtained to fulfill the DSR request.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| **Role** | **Scenarios** | **Implementation** | **Level of data access** |
+|---|---|---|---|
+| **Your customer (2)** | <ul><li>View personal data </li><li>Correct personal data</li><li>Erase personal data </li><li>Object to processing</li><li>Export personal data</li></ul> | You must provide a mechanism for your customer to exercise a DSR (process or service). | Your customer sees only their personal data. |
+| **Your employee – information worker** | <ul><li>View personal data </li><li>Correct personal data</li><li>Erase personal data </li><li>Object to processing</li><li>Export personal data</li></ul> | You must provide a mechanism for your worker to exercise a DSR (process or service). Some activity information might be obtained from Microsoft. | Your information worker sees only their personal data. |
+| **Your employee – privacy administrator** | <ul><li>Validates the user identity request  </li><li>Locates the personal data across systems </li><li>Curates the data based on your policy</li><li>Creates a data package or executes an action</li></ul> | <ul><li>Uses finance and operations to locate the data and fulfill the request. </li><li>Writes a customization.</li><li>Reaches out to third parties for shared-controller DSRs.</li><li>Reaches out to Microsoft for activity data.</li></ul> | Your GDPR administrator sees the data that it obtained to fulfill the DSR request. |
 
 ## Responding to requests to view, correct, erase, object, or export personal data
 
-Suppose that a customer decides that they want to understand what personal data of theirs is maintained by an organization. That customer approaches that organization and asks to exercise their DSR. When data subjects exercise their DSRs, controllers must address each of the following items specifically:
+Suppose that a customer wants to understand what personal data you maintain about them. The customer approaches your organization and asks to exercise their DSR. When data subjects exercise their DSRs, you must address each of the following items specifically:
 
 + Properly identify the person and role (is the person an employee, a customer, a vendor?) by using information that the data subject gave you as part of their request. This information might be a name, an employee ID or customer number, or another identifier.
 + Record the date and time of the request. (You have 30 days to complete the request.)
-+ Affirm that the DSR request is proper and valid. You will need to work with your legal counsel to determine what is valid. For example, you must make sure that compliance with a DSR request doesn't conflict with any other legal obligations that you have.
++ Affirm that the DSR request is proper and valid. Work with your legal counsel to determine what is valid. For example, make sure that compliance with a DSR request doesn't conflict with any other legal obligations that you have.
 + Verify that you have the information that is related to the request.
 
-### Reasons why certain personal data may not be modified or deleted
+### Reasons why certain personal data can't be modified or deleted
 
 The following table lists several reasons why personal data modification or deletion is restricted in certain scenarios.
 
@@ -166,14 +85,14 @@ An organization might decide to take any of the following actions in response to
 
 + Use the Person search report to find and collect personal data. To access this report, from the navigation pane, select **Modules > System administration > Inquiries > Person search report**. 
 + Extend the Person search report by authoring a new entity or extending an existing entity.
-+ Use search and filter features to find specific personal data and export that data by using the Microsoft Office Export functionality or print that information to a .pdf using browser extensions.
++ Use search and filter features to find specific personal data and export that data by using the Microsoft Office Export functionality or print that information to a .pdf by using browser extensions.
 + Use provided documentation to identify data tables that contain data that the controller has identified as personal data.
 + Author a custom form that locates and exports personal data.
 + Author an external portal or website that allows an authenticated customer to see their personal data.
 
-The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the Microsoft Dynamics Lifecycle Services (LCS) site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities, or extending the provided entities.
+The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the Microsoft Dynamics Lifecycle Services (LCS) site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities or extending the provided entities.
 
-If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./privacy-extend-person-search-report.md).
+If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft provides. For information about how to extend the Person search report, see [Extend the Person search report](./privacy-extend-person-search-report.md).
 
 ### Right to correct\* \**
 
@@ -198,7 +117,7 @@ An organization might decide to take any of the following actions in response to
 
 + Delete or otherwise erase personal data where the product enables that action directly.
 + Anonymize the personal data where the product enables that action directly.
-+ Author a customization to erase/modify the personal data.
++ Author a customization to erase or modify the personal data.
 
 \* As an enterprise resource planning system, finance and operations does not allow for deletion of certain business or transactional data, and will not endorse nor provide functionality for the deletion of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
@@ -207,13 +126,13 @@ An organization might decide to take any of the following actions in response to
 An organization might decide to take any of the following actions in response to a DSR request to port data:
 
 + Use the Microsoft Office Add-in to export personal data.
-+ Author a custom report that enables the export of personal data.
-+ Author a customization that exports personal data.
++ Create a custom report that enables the export of personal data.
++ Develop a customization that exports personal data.
 + Use or extend the Person search report to gather information in support of a request for a copy of the data subject's personal information.
 
 The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the LCS site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities.
 
-If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./privacy-extend-person-search-report.md).
+If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft provides. For information about how to extend the Person search report, see [Extend the Person search report](./privacy-extend-person-search-report.md).
 
 The controller may, at their sole discretion choose to redact certain types of information that may fall outside of the scope of data that must be returned to the data subject as defined within privacy laws and regulations.
 
@@ -244,7 +163,7 @@ The controller can make DSR requests regarding telemetry data by using the [Micr
 
 Finance and operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
-![Data model for the Global address book.](../media/privacy-address-data-model.jpg)
+:::image type="content" source="../media/privacy-address-data-model.jpg" alt-text="Screenshot of the data model for the Global address book.":::
 
 ### Each person is a type of party
 
@@ -255,30 +174,30 @@ Roles that are associated with party records are referred to as party roles. The
 + **Worker** – A person who assumes the role of an employee or a contractor, or who is paid in exchange for services.
 + **User** – A person who is a user of the system. The user isn't identified in the Global address book.
 + **Vendor** – A party that supplies products to one or more legal entities in exchange for payment.
-+ **Competitor** – A person or organization that provides goods or services that are like the goods or services that your business provides. Out of the box, there is no particular identification for competitors.
++ **Competitor** – A person or organization that provides goods or services that are like the goods or services that your business provides. Out of the box, there's no particular identification for competitors.
 + **Applicant** – A person who makes a formal written or electronic request to work for an organization or fill an open position in it.
-+ **Contact** – A person, either inside or outside your organization, that you've created an entry for. In this entry, you can save information such as the person's street and email addresses, telephone and fax numbers, and webpage URLs.
++ **Contact** – A person, either inside or outside your organization, that you create an entry for. In this entry, you can save information such as the person's street and email addresses, telephone and fax numbers, and webpage URLs.
 
 ### The right to view and port: It's all about the party
 
 When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this article, a **person** is a type of **party** that plays a **role**.
 
-Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](..//office-integration/office-integration-edit-excel.md) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
+Some organizations conduct their activities only through business-to-business relationships and have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organizations might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](..//office-integration/office-integration-edit-excel.md) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
 ## The Person search report
 
-To support the controller, this report offers a refinement of the existing entity model reporting functionality that is available in the **Data management** workspace. The **Data management** workspace offers a collection of pre-packaged representations of most role types. These representations are known as entities.
+To support the controller, this report offers a refinement of the existing entity model reporting functionality that's available in the **Data management** workspace. The **Data management** workspace offers a collection of prepackaged representations of most role types. These representations are known as entities.
 
 > [!NOTE]
-> The Person search report is available for Finance, Supply Chain Managament, Commerce, and Human Resources. Currently the report does not support Microsoft Dynamics AX 2012. 
+> The Person search report is available for Finance, Supply Chain Management, Commerce, and Human Resources. Currently the report doesn't support Microsoft Dynamics AX 2012. 
 
 An entity represents an instance of a specific role. The data management functionality lets the controller export entity data to several formats, such as colon-separated values, comma-separated values (CSV), semicolon-separated values, tab-separated values, Microsoft Excel, and XML.
 
-The Person search report provides additional capabilities in the **Data management** workspace that export entity data by providing a party ID that is used to identify **all** roles (and corresponding entities) that are associated with the party. This capability lets you export all entity and transaction data in a single action, for either a single party or a collection of parties.
+The Person search report provides additional capabilities in the **Data management** workspace that export entity data by providing a party ID that you can use to identify **all** roles (and corresponding entities) that are associated with the party. This capability lets you export all entity and transaction data in a single action, for either a single party or a collection of parties.
 
 When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this article, a **person** is a type of **party** that plays a **role**.
 
-Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
+Some organizations conduct their activities only through business-to-business relationships and have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organizations might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
 ## Additional notes that apply to requests for data
 
@@ -291,7 +210,7 @@ Some organizations conduct their activities only through business-to-business re
 
 The following table lists several reasons why data modifications might be restricted.
 
-|Reason | Comment |
+| Reason | Comment |
 |-------|---------|
 | Audit | Data must be preserved for compliance and auditing. |
 | Calculated | Data that has been calculated can be changed only by changing the data that is included in the calculation. |
@@ -325,7 +244,7 @@ As you use finance and operations apps, you might find that you generate or coll
 <Link to form that prints the full inventory>
 -->
 
-![Solution explorer showing the AssetClassification field in the properties.](../media/privacy-asset-classification-detail-invent-section.jpg)
+:::image type="content" source="../media/privacy-asset-classification-detail-invent-section.jpg" alt-text="Screenshot of Solution explorer showing the AssetClassification field in the properties.":::
 
 ## Age Gating: Preventing minors from using the service
 
@@ -339,7 +258,7 @@ As the tenant admin of the service, you will be required to set up Microsoft Ent
 
 Any user who isn't configured by using Azure Age Gating will be restricted from using the service, even if the user isn't a minor. Age Gating must be configured.
 
-We will restrict access to our software and systems by using a sign-in age gate.
+We restrict access to our software and systems by using a sign-in age gate.
 
 ### How will age gating work?
 
@@ -347,19 +266,19 @@ Privacy laws and regulations specifu that systems must stop processing a minor's
 
 ## Privacy notices and user subject rights
 
-### Displaying your organizations user rights and privacy notice
+### Displaying your organization's user rights and privacy notice
 
 In the **About** box, you will find links to the Microsoft user rights documentation, and to the Microsoft privacy and cookies documentation. You can also add a link to your organization's privacy statement.
 
-![Solution explorer showing the asset.](../media/privacy-privacy-01-w-note.jpg)
+:::image type="content" source="../media/privacy-privacy-01-w-note.jpg" alt-text="Screenshot of Solution explorer showing the asset.":::
 
-On the **System parameters** page, system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
+On the **System parameters** page, a system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
 
-![System parameters where you add a link to your organization's privacy statement.](../media/privacy-privacy-02.jpg)
+:::image type="content" source="../media/privacy-privacy-02.jpg" alt-text="Screenshot of System parameters where you add a link to your organization's privacy statement.":::
 
-When you've completed your entries in the system parameters, the link to your organization's privacy notice will appear in the **About** box, as show in the following illustration.
+When you complete your entries in the system parameters, the link to your organization's privacy notice appears in the **About** box, as shown in the following illustration.
 
-![Modified About box with a link to an organization's privacy notice.](../media/privacy-privacy-03-w-note.jpg)
+:::image type="content" source="../media/privacy-privacy-03-w-note.jpg" alt-text="Screenshot of Modified About box with a link to an organization's privacy notice.":::
 
 ## Clarification of the scope of this content
 

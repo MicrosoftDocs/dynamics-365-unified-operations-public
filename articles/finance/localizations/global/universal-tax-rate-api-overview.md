@@ -57,7 +57,7 @@ We recommend that you import and set up your Tax calculation configuration with 
 
 ## Enable a tax solution provider
 
-To enable a tax solution provider, follow these steps.
+To enable a tax solution provider, follow these steps:
 
 1. Enable the following features in Feature management:
 
