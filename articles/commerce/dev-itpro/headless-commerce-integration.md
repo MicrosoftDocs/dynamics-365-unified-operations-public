@@ -21,7 +21,7 @@ This article describes the information and samples that are available to help yo
 
 Microsoft provides a set of sample implementations that are tailored to headless and composable commerce scenarios. These samples can help you *kick-start* and *accelerate* the development of custom storefronts by using Microsoft Dynamics 365 Commerce headless engine (commonly referred to as headless commerce).
 
-The [Headless Commerce Integration Samples GitHub repository](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Commerce/HeadlessCommerceSamples) includes both technical guidance and working code samples to help you build and integrate with the Retail Server APIs.
+The [Headless Commerce Integration Samples GitHub repository](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/ERP/Commerce/HeadlessCommerceSamples) includes both technical guidance and working code samples to help you build and integrate with the Retail Server APIs.
 
 ## Guidance and architecture
 

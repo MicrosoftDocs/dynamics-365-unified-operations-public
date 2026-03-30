@@ -4,7 +4,7 @@
 title: Set up the Interview schedule feature in the Dynamics 365 Human Resources Recruiting add-on 
 description: Learn about the Interview schedule feature in the Microsoft Dynamics 365 Human Resources Recruiting add-on.
 author: twheeloc
-ms.date: 08/18/2025
+ms.date: 01/23/2026
 ms.topic: how-to
 # optional metadata
 
@@ -37,6 +37,8 @@ To meet these challenges, Microsoft developed an efficient and well-organized in
 ## Find interview time slots for panel members
 
 Recruiters can use this functionality to book time slots for panel members, based on their availability in their Outlook calendar. Recruiters can confirm time slots with panel members before they book them. Alternatively, they can select available time slots for booking without waiting for confirmation from panel members.
+
+New **Calendar** view is available with the Recruiting add-on: 2.2.3306.1 release. This visual interface provides a clear overview of each panel member’s availability, making scheduling more efficient and reducing back-and-forth communication. The inclusion of a legend (Available slot, busy slot, selected slot, confirmed slot, Sent for confirmation) ensures that users can quickly interpret the status of each slot, promoting transparency, and ease of use throughout the interview scheduling process.
 
 ### Book a slot with confirmation
 

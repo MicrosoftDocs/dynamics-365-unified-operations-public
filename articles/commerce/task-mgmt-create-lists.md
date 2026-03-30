@@ -1,14 +1,15 @@
 ---
 title: Create task lists and add tasks
-description: This article describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
+description: Learn how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 05/28/2024
+ms.date: 01/29/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: ritakimani
 ms.search.validFrom: 2020-02-03
+ms.custom: 
+  - bap-template
 ---
 
 # Create task lists and add tasks
@@ -19,7 +20,7 @@ This article describes how to create task lists and add tasks to them in Microso
 
 A *task* defines a specific piece of work or an action that someone must complete on or before a specified due date. In Dynamics 365 Commerce, a task can include detailed instructions and information about a contact person. It can also include links to back-office operations, point of sale (POS) operations, or site pages, to help improve productivity and provide the context that the task owner requires to complete the task efficiently.
 
-A *task list* is a collection of tasks that must be completed as part of a business process. For example, there might be a task list that a new worker must complete during onboarding, a task list for cashiers who work evening shifts, or a task list that must be completed to prepare the store for an upcoming holiday season. In Commerce, every task list that has a target date can be assigned to any number of stores or employees, and it can be configured to recur.
+A *task list* is a collection of tasks that must be completed as part of a business process. For example, there might be a task list that a new worker must complete during onboarding, a task list for cashiers who work evening shifts, or a task list that must be completed to prepare the store for an upcoming holiday season. In Commerce, you can assign every task list that has a target date to any number of stores or employees, and you can configure it to recur.
 
 Both managers and workers can create task lists in Commerce back office, and then assign them to a set of stores.
 
@@ -27,14 +28,14 @@ Both managers and workers can create task lists in Commerce back office, and the
 
 Before you start the process of creating a task list, make sure you complete the configurations in the [Configure task management](task-mgmt-configure.md) article. To create a task list, follow these steps:
 
-1. Go to **Retail and Commerce \> Task management \> Task management administration**.
+1. Go to **Retail and Commerce > Task management > Task management administration**.
 1. Select **New**, and then enter values in the **Name**, **Description**, and **Owner** fields.
 1. Select **Save**.
 
 ## Add tasks to a task list
 
 To add tasks to a task list, follow these steps:
- 
+
 1. On the **Tasks** FastTab of an existing task list, select **New** to add a task.
 1. In the **Create a new task** dialog box, in the **Name** field, enter a name for the task.
 1. In the **Due data offset from target date** field, enter a positive or negative integer value. For example, enter **-2** if the task should be completed two days before the task list's due date.
@@ -43,7 +44,7 @@ To add tasks to a task list, follow these steps:
 1. In the **Task link** field, enter a link, based on the nature of the task.
 
 > [!TIP]
-> Although you can use the **Assigned to** field to assign tasks to someone while you're creating a task list, we recommend that you avoid assigning tasks during task list creation. Instead, assign the tasks after the list is instantiated for individual stores.
+> Although you can use the **Assigned to** field to assign tasks to someone while you're creating a task list, don't assign tasks during task list creation. Instead, assign the tasks after the list is instantiated for individual stores.
 
 ## Use task links to help improve worker productivity
 
@@ -60,13 +61,13 @@ To add task links while you create a task, follow these steps:
 
 The following illustration shows the selection of task links in the **Edit task** dialog box.
 
-![Selecting task links in the Edit task dialog box.](media/HQ-POS-Tasks-Linking.png)
+:::image type="content" source="media/HQ-POS-Tasks-Linking.png" alt-text="Screenshot of selecting task links in the Edit task dialog box.":::
 
 ### Configure a POS operation so that it can be linked to a task
 
 To configure a POS operation so that it can be linked to a task, follow these steps:
 
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> POS operations**.
+1. Go to **Retail and Commerce > Channel setup > POS setup > POS > POS operations**.
 1. Select **Edit**, find the POS operation, and then select the **Enable Task Management** check box for it.
 
 ## Additional resources
@@ -78,6 +79,5 @@ To configure a POS operation so that it can be linked to a task, follow these st
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
 
 [Task management in POS](task-mgmt-POS.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

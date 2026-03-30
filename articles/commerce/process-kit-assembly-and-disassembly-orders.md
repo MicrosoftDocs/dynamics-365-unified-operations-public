@@ -1,14 +1,15 @@
 ---
 title: Process kit assembly and disassembly orders
-description: This article describes how to process kit assembly and disassembly orders for retail product kits in Microsoft Dynamics 365 Commerce.
+description: Learn how to process kit assembly and disassembly orders for retail product kits in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/03/2023
+ms.date: 01/28/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-10-23
+ms.custom: 
+  - bap-template
 ---
 
 # Process kit assembly and disassembly orders
@@ -32,11 +33,11 @@ To process assembly orders, follow these steps:
 1. Select **Post** to post the assembly order and run the inventory process to update the status of the products.
 
 > [!NOTE]
-> After the assembly order is posted, you can't use it to assemble additional kit configurations. To assemble additional kit configurations, you must create a new assembly order for the product kit.
+> After you post the assembly order, you can't use it to assemble more kit configurations. To assemble more kit configurations, create a new assembly order for the product kit.
 
 ## Process disassembly orders
 
-To process a disassembly order, a warehouse worker must update the quantities for each kit configuration that's being disassembled. After the order is processed, post it to run the inventory process that updates the status of the products from reserved to committed. Inventory for the kit configurations is then decreased, and inventory for the individual products that are included in the kit configurations is increased.
+To process a disassembly order, a warehouse worker updates the quantities for each kit configuration that's being disassembled. After the order is processed, post it to run the inventory process that updates the status of the products from reserved to committed. The process decreases inventory for the kit configurations and increases inventory for the individual products included in the kit configurations.
 
 To process disassembly orders, follow these steps:
 
@@ -47,7 +48,7 @@ To process disassembly orders, follow these steps:
 1. Select **Post** to post the disassembly order and run the inventory process to update the status of the products.
 
 > [!NOTE]
-> After the disassembly order is posted, you can't use it to disassemble additional kit configurations. To disassemble additional kit configurations, you must create a new disassembly order for the product kit.
+> After you post the disassembly order, you can't use it to disassemble more kit configurations. To disassemble more kit configurations, create a new disassembly order for the product kit.
 
 ## Additional resources
 

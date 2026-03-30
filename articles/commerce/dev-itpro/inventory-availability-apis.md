@@ -1,15 +1,15 @@
 ---
 title: Inventory availability APIs for e-commerce
-description: This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
+description: Learn about the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/07/2023
+ms.date: 02/18/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: wenxyang
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2022-11-10
-
+ms.custom: 
+  - bap-template
 ---
 # Inventory availability APIs for e-commerce
 
@@ -292,7 +292,7 @@ For more information about how to consume Retail Server APIs in external applica
 
 ## UpdateProductWarehouseAvailabilities
 
-The UpdateProductWarehouseAvailabilities API uses the Inventory Visibility Service (IVS) to update omnichannel inventory data in real time. As a prerequisite to using this API, you must first enable IVS as the inventory data provider for your Commerce environment. The UpdateProductWarehouseAvailabilities API operates under the [BusinessPartnerEmployee](./retail-server-customer-consumer-api.md#roles) role, which is used for requests that represent a contractor working for a seller channel in a business to business to business (B2B2B) scenario.
+The UpdateProductWarehouseAvailabilities API uses the Inventory Visibility Service (IVS) to update omnichannel inventory data in real time. To use this API, first enable IVS as the inventory data provider for your Commerce environment. The UpdateProductWarehouseAvailabilities API works under the [BusinessPartnerEmployee](./retail-server-customer-consumer-api.md#roles) role. Use this role for requests that represent a contractor working for a seller channel in a business to business to business (B2B2B) scenario.
 
 ### Input parameters
 
@@ -351,23 +351,23 @@ The UpdateProductWarehouseAvailabilities API uses the Inventory Visibility Servi
 
 ## The quantity output of APIs
 
-The GetEstimatedAvailability and GetEstimatedProductWarehouseAvailability APIs can fetch inventory data from two data sources:
+The `GetEstimatedAvailability` and `GetEstimatedProductWarehouseAvailability` APIs fetch inventory data from two data sources:
 
-- When the **Use Inventory Visibility as inventory data provider** setting is turned on in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from the IVS you configured for your Commerce headquarters environment.
-- When the **Use Inventory Visibility as inventory data provider** setting is turned off in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from the Commerce Scale Unit (CSU) channel databases where estimated physical available and total available quantities are calculated.
+- When you turn on the **Use Inventory Visibility as inventory data provider** setting in **Commerce shared parameters** in headquarters, the APIs retrieve inventory availability data from the Inventory Visibility Service (IVS) you configured for your Commerce headquarters environment.
+- When you turn off the **Use Inventory Visibility as inventory data provider** setting in **Commerce shared parameters** in headquarters, the APIs retrieve inventory availability data from the Commerce Scale Unit (CSU) channel databases where estimated physical available and total available quantities are calculated.
 
 The returned values can be shown on your e-commerce site, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products that have an "out of stock" inventory level.
 
-Other APIs that are available in Commerce can also directly access Commerce headquarters to fetch on-hand quantities for products. However, we don't recommend that you use them in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your Commerce headquarters servers. For channel-side calculation, the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs can provide a more accurate estimate of a product's availability by considering the transactions that have been created in the channels but that aren't yet known to Commerce headquarters.
+Other APIs that are available in Commerce can also directly access Commerce headquarters to fetch on-hand quantities for products. However, don't use them in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your Commerce headquarters servers. For channel-side calculation, the `GetEstimatedAvailability` and `GetEstimatedProductWarehouseAvailability` APIs provide a more accurate estimate of a product's availability by considering the transactions that are created in the channels but that aren't yet known to Commerce headquarters.
 
-To define how product quantity should be returned in the API output, follow these steps:
+To define how product quantity returns in the API output, follow these steps:
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
+1. Go to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters**.
 1. On the **Inventory** tab, on the **Inventory availability APIs for e-Commerce** FastTab, in the **Quantity in API output** field, select one of the following options:
 
-    - **Return inventory quantity** – The physical available and total available quantities of a requested product are returned in the API output.
-    - **Return inventory quantity subtracting inventory buffer** – The quantity that's returned in the API output is adjusted by subtracting the inventory buffer value. For more information about the inventory buffer, see [Configure inventory buffers and inventory levels](../inventory-buffers-levels.md).
-    - **Not return inventory quantity** – Only the inventory level is returned in the API output. For more information about inventory levels, see [Configure inventory buffers and inventory levels](../inventory-buffers-levels.md).
+    - **Return inventory quantity** – The API output returns the physical available and total available quantities of a requested product.
+    - **Return inventory quantity subtracting inventory buffer** – The API output quantity is adjusted by subtracting the inventory buffer value. For more information about the inventory buffer, see [Configure inventory buffers and inventory levels](../inventory-buffers-levels.md).
+    - **Not return inventory quantity** – The API output returns only the inventory level. For more information about inventory levels, see [Configure inventory buffers and inventory levels](../inventory-buffers-levels.md).
 
 1. Run the **1070** (**Channel configuration**) job to sync the latest setting to channels.
 

@@ -4,7 +4,7 @@ description: Learn scripts that you can use to resolve issues in on-premises env
 author: faix
 ms.author: osfaixat
 ms.topic: upgrade-and-migration-article
-ms.date: 07/25/2025
+ms.date: 02/20/2026
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: Developer
@@ -18,14 +18,14 @@ ms.service: dynamics-365-op
 # Scripts for resolving issues in on-premises environments
 [!include [banner](../includes/banner.md)]
 
-This article serves as a central repository for scripts that you can use to fix issues in on-premises environments. These scripts must usually be run as predeployment or post-deployment scripts.
+This article serves as a central repository for scripts that you can use to fix problems in on-premises environments. Usually, run these scripts as predeployment or post-deployment scripts.
 
-For more information about how to resolve issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
+For more information about how to resolve problems in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
 
 ## Prepare your environment for script execution
 
 1. Configure the execution of predeployment and post-deployment scripts. For more information, see [Local agent predeployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
-2. Add the following code to your Predeployment.ps1 script.
+1. Add the following code to your Predeployment.ps1 script.
 
     ```powershell
     # This has to be filled out
@@ -58,15 +58,18 @@ For more information about how to resolve issues in on-premises environments, se
     #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
 
     # When enabled, the following script resolves a version mismatch issue with Microsoft.Identity.Client, allowing the Reporting Services app to install successfully.
-    # & $agentShare\scripts\TSG_UpdateSSRSIdentityClient.ps1 -SSRSServers BI1,BI2 # Edit list of servers as needed, separated by a comma 
+    # & $agentShare\scripts\TSG_UpdateSSRSIdentityClient.ps1 -SSRSServers BI1,BI2 # Edit list of servers as needed, separated by a comma
+
+    # When enabled this prevents the AOS deployer from getting stuck trying to deploy the AOS services.
+    # & $agentShare\scripts\TSG_UnblockAOSDeployerHang.ps1 -agentShare $agentShare
     ```
 
-3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
-4. In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.
+1. From the relevant section of this article, copy the code that you need to fix your problem, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other problems that you must fix.
+1. In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.
 
 ## <a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1 
 
-The following script is used to fix an issue that occurs when SysClassRunner is run in some versions of the platform. For more information about this issue, see [SysClassRunner doesn't run successfully](troubleshoot-on-prem.md#SysClassRunner).
+Use the following script to fix a problem that occurs when SysClassRunner runs in some versions of the platform. For more information about this problem, see [SysClassRunner doesn't run successfully](troubleshoot-on-prem.md#SysClassRunner).
 
 ```powershell
 param (
@@ -137,7 +140,7 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG\_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue that occurs when Financial reporting is deployed in some versions of the platform. For more information about this issue, see [Couldn't load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
+Use the following script to fix a problem that occurs when Financial reporting is deployed in some versions of the platform. For more information about this problem, see [Couldn't load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
 
 ```powershell
 param (
@@ -194,7 +197,7 @@ else
 
 ## <a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
 
-The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform. This script shouldn't be used from Application version 10.0.35 or later.
+Use the following script to fix an issue where users can't download or export files in some versions of the platform. Don't use this script for application versions 10.0.35 or later.
 
 ```powershell
 param (
@@ -236,7 +239,7 @@ Write-Output "TSG WindowsAzureStorage script succeeded"
 
 ## <a name="taxengine"></a>TSG\_RemoveFilesFromZip.ps1
 
-The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9. Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, which in newer releases have been moved to different module folders. This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.
+Use the following script to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9. Due to how the prepare process works, some older versions of DLLs remain in the TaxEngine folder. In newer releases, these DLLs are moved to different module folders. This script removes these DLLs from the downloaded asset before deploying it to the AOS nodes.
 
 ```powershell
 [CmdletBinding()]
@@ -306,12 +309,12 @@ finally
 
 ## <a name="useGMSA"></a>TSG\_EnableGMSAForAOS.ps1
 
-The following script is used to change the account the AOS runs under from an Active Directory (AD) user to a group Managed Service Account (gMSA).
+Use the following script to change the account that AOS runs under from an Active Directory (AD) user to a group Managed Service Account (gMSA).
 
 > [!NOTE]
 > This script can only be used starting with version 10.0.17.
-> You need to reinstall the printers on each AOS node as they aren't available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
-> This script has been updated to work with application version 10.0.32, but also works with older application versions.
+> You need to reinstall the printers on each AOS node as the gMSA account can't access them. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
+> This script is updated to work with application version 10.0.32 but also works with older application versions.
 
 ```powershell
 param (
@@ -371,7 +374,7 @@ Write-Output "Successfully updated the configuration for AOS gMSA execution."
 
 ## <a name="enableDixf"></a>TSG\_EnableDixfService.ps1
 
-The following script is used to enable the Data Management Framework service for your environment.
+Use the following script to enable the Data Management Framework service for your environment.
 
 >[!NOTE]
 > This script can only be used starting with version 10.0.32.
@@ -436,7 +439,7 @@ Write-Output "Successfully updated the configuration and enabled DixfService."
 
 ## <a name="disableMR"></a>TSG\_DisableMRDeployment.ps1
 
-The following script is used to prevent the Financial reporting service from being deployed.
+Use the following script to prevent the Financial reporting service from being deployed.
 
 ```powershell
 param (
@@ -467,10 +470,10 @@ Write-Host "Finished Disabling FinancialReporting component."
 
 ## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
 
-The following script can be used for older environments to configure SSRS with HTTPS and enable the gMSA account that's used in new configurations.
+Use the following script for older environments to configure SSRS with HTTPS and enable the gMSA account that's used in new configurations.
 
 >[!NOTE]
->If you have used an IP address in LCS for your SSRS server, you need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the **Environment** page then **Maintain** > **Update settings**.
+>If you use an IP address in LCS for your SSRS server, change that address to the Fully Qualified Domain Name (FQDN) for the reporting server. You can change this setting on the **Environment** page. Select **Maintain** > **Update settings**.
 
 ```powershell
 param (
@@ -535,7 +538,7 @@ Write-Output "Successfully updated the configuration HTTPS (443) for Reporting S
 
 ## <a name="SSRSIdentityClient"></a>TSG\_UpdateSSRSIdentityClient.ps1
 
-The following script addresses an issue where the Dynamics 365 Reporting services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with Dynamics 365. During installation, the Reporting services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
+Use the following script to address an issue where the Dynamics 365 Reporting services extensions fail to install. This problem arises due to the version of Microsoft.Identity.Client bundled with Dynamics 365. During installation, the Reporting services configuration updates the SSRS DLLs and configuration files with outdated binding redirect versions, leading to compatibility issues.
 
 > [!NOTE]
 > This issue is resolved in the following versions: 
@@ -543,7 +546,7 @@ The following script addresses an issue where the Dynamics 365 Reporting service
 > - 10.0.44 - Platform version - 7.0.7606.173
 
 > [!NOTE]
-> The script relies on WinRM for remote execution. If you're unable to run PowerShell scripts remotely, you can extract the embedded script content from the $scriptContent variable and save it locally on your BI nodes as LBDUpdateSSRSClientIdentity.ps1. In that case, you need to run the script manually on each BI node during deployment.
+> The script relies on WinRM for remote execution. If you can't run PowerShell scripts remotely, you can extract the embedded script content from the `$scriptContent` variable and save it locally on your BI nodes as `LBDUpdateSSRSClientIdentity.ps1`. In that case, you need to run the script manually on each BI node during deployment.
 
 ```PowerShell
 #
@@ -711,6 +714,62 @@ foreach ($server in $servers) {
 }
 
 Write-Host "`nAll deployments completed."
+```
+## <a name="AOSDeployerHang"></a>TSG\_UnblockAOSDeployerHang.ps1
+
+The following script addresses an issue where the deployment of an environment hangs after the deployment of reporting services. This issue prevents the deployment of the gateway, bootstrapper, and other services without manual invocation of the installer. This script ensures that the installer doesn't hang when the local agent orchestration service invokes it.
+
+Impacted versions:
+- 10.0.44
+- 10.0.45
+- 10.0.46
+
+> [!NOTE]
+> This TSG script is not necessary if you have Local Agent 3.5.0 or later installed.
+
+```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]
+    $agentShare = ''
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configPath = "$basePath\Apps\AOS\Setup\AOSSetupHybridCloud.exe.config"
+
+if(!(Test-Path $configPath))
+{
+    Write-Error "Unable to find AOSSetupHybridCloud.exe.config in path: $configPath" -Exception
+InvalidOperation
+}
+
+Write-Output "Found config: $configPath"
+
+[xml]$xml = Get-Content $configPath
+
+$diagnosticsNode = $xml.configuration.'system.diagnostics'
+
+if($diagnosticsNode)
+{
+    $xml.configuration.RemoveChild($diagnosticsNode) | Out-Null
+    $xml.Save($configPath)
+    Write-Output "Removed system.diagnostics section from AOSSetupHybridCloud.exe.config"
+}
+else
+{
+    Write-Output "No system.diagnostics section found, no changes needed."
+}
+
+Write-Output "TSG RemoveConsoleTraceFromSetup script succeeded"
 ```
 
 

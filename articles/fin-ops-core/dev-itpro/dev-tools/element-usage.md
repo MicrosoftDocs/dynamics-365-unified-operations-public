@@ -4,7 +4,7 @@ description: Learn about the commands that have been added to the Microsoft Visu
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -17,21 +17,21 @@ ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
 
 [!include [banner](../includes/banner.md)]
 
-This article reviews the commands that have been added to the Microsoft Visual Studio Tools to help you determine how elements are used in an application. 
+This article reviews the commands in Microsoft Visual Studio Tools that help you determine how elements are used in an application.  
 
-Because of the large number of elements in a typical application, commands have been added to the Microsoft Visual Studio Tools to make it easier to determine how an element is used.
+Because of the large number of elements in a typical application, Microsoft Visual Studio Tools includes commands that make it easier to determine how an element is used.
 
 ## Finding where elements are used
 
-During build operations, cross-reference information is generated that can be used to show how elements are used. You can right-click an element and then click **Find References** to display a list of the locations where that element is used. When you click one of the items in the list, the designer for the element opens. 
+During build operations, the tools generate cross-reference information that you can use to show how elements are used. You can right-click an element and then select **Find References** to display a list of the locations where that element is used. When you select one of the items in the list, the designer for the element opens. 
 
-[![23\_DevoToolsConcept.](./media/23_devotoolsconcept.png)](./media/23_devotoolsconcept.png)
+:::image type="content" source="./media/23_devotoolsconcept.png" alt-text="Screenshot of the Find References results showing where an element is used." lightbox="./media/23_devotoolsconcept.png":::
 
 ## Viewing a reference diagram
 
-When you right-click some higher-level elements, such as tables, the **View Reference** command is available. This command produces a graphic that shows the elements that are related to the current element. You can right-click the items in the graphic and then click **Go To Definition** to navigate to those elements. 
+When you right-click some higher-level elements, such as tables, you see the **View Reference** command. This command produces a graphic that shows the elements that are related to the current element. You can right-click the items in the graphic and then select **Go To Definition** to navigate to those elements. 
 
-[![24\_DevoToolsConcept.](./media/24_devotoolsconcept.png)](./media/24_devotoolsconcept.png)
+:::image type="content" source="./media/24_devotoolsconcept.png" alt-text="Screenshot of the reference diagram showing elements related to the current element." lightbox="./media/24_devotoolsconcept.png":::
 
 ## Additional resources
 

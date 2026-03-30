@@ -20,7 +20,7 @@ This article describes how to install business performance planning visuals. To 
 ## Prerequisites for the installation of Power BI visuals
 
 1. A Dynamics 365 Finance or Business performance planning environment with Dataverse enabled.
-2. Import business performance planning visuals from [Microsoft AppSource](https://appsource.microsoft.com). For more information, see [Import visuals](/power-bi/developer/visuals/import-visual).
+2. Import business performance planning visuals from [Microsoft Marketplace](https://marketplace.microsoft.com). For more information, see [Import visuals](/power-bi/developer/visuals/import-visual).
 3. Connect Power BI to your Dataverse environment. For more information, see [Use direct query in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery).
 4. To work with the visuals and publish to a Power BI workspace, a Power BI license is required. For more information, see [Licenses and subscriptions for business users](/power-bi/consumer/end-user-license).
 5. You must have authentication for Power BI enabled for the visuals to work. For more information, see [Obtain Microsoft Entra access token](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
@@ -28,12 +28,12 @@ This article describes how to install business performance planning visuals. To 
 
 
     > [!NOTE]
-    > You must have the AppSource Custom Visuals single sign-on (SSO) feature enabled in step 4. If this feature isn't enabled, you receive an **Unable to authenticate to Dataverse service** error.
+    > You must have the Marketplace Custom Visuals single sign-on (SSO) feature enabled in step 4. If this feature isn't enabled, you receive an **Unable to authenticate to Dataverse service** error.
     > Use the SQL Server connector to ensure the write-back works properly. The Dataverse connector isn’t supported for write-back as it doesn’t expose the logical names required by Business performance planning.
 
-### Install visuals from Microsoft appsource
+### Install visuals from Microsoft Marketplace
 
-To install visuals from Microsoft appsource, follow these steps:
+To install visuals from Microsoft Marketplace, follow these steps:
 1. Open Power BI, and select the workspace or report where you intend to configure the visual.
 2. In the Visualizations pane, select the ellipsis (⋯) > Get more visuals.
 3. Search for Business performance planning.
@@ -49,7 +49,7 @@ To install visuals from Microsoft appsource, follow these steps:
 5. Select **Add**. The visuals appear in the Power BI Visualizations pane.
 
 >[!TIP]
-> Always install visuals directly from Microsoft AppSource to ensure you’re using the latest certified version with SSO and write-back support.   
+> Always install visuals directly from Microsoft Marketplace to ensure you’re using the latest certified version with SSO and write-back support.   
     
 ## Connect Power BI to your Dataverse data
 
@@ -117,7 +117,7 @@ To configure the Business performance planning visual, follow these steps:
 ### Recommendations
  - Always use DirectQuery for real-time write-back and allocation.
  - When connecting to a cube, use **Select related tables** to load all dimension relationships and unselect unnecessary system tables.
- - Enable the AppSource Custom Visuals SSO feature to prevent authentication errors.
+ - Enable the Marketplace Custom Visuals SSO feature to prevent authentication errors.
  - Use table prefixes for easier identification:
 msdyn_xpnacube_ for cube tables
 msdyn_xpnadim_ for dimension tables

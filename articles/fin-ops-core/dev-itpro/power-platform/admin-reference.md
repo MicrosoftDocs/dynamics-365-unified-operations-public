@@ -31,7 +31,7 @@ This article explains how to configure virtual entities for finance and operatio
 
 ## <a name="get-virtual-entity-solution"></a>Getting the virtual entity solution
 
-The Dataverse solution for finance and operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [finance and operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
+The Dataverse solution for finance and operations virtual entities must be installed from Microsoft Marketplace virtual entity solution. For more information, see [finance and operations virtual entity](https://marketplace.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Dataverse.
 

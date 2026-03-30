@@ -1,11 +1,10 @@
 ---
 title: Mass deployment of sealed Commerce self-service components
-description: This article explains how to use the framework for self-service component installers to silently install and service deployments.
+description: Learn how to use the framework for self-service component installers to silently install and service deployments in Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 07/25/2024
+ms.date: 02/17/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global 
 ms.author: asharchw
 ms.search.validFrom: 2021-04-30
@@ -18,19 +17,19 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Once Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (seen in point of sale as version 9.27). This is due to the migration to .NET Core.
+> Once Commerce Scale Unit (CSU) is updated to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (seen in point of sale as version 9.27). This requirement is due to the migration to .NET Core.
 
-This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services. Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
+This article applies to the sealed framework and component installers that Microsoft releases every month, starting with the 10.0.18 release. Microsoft makes these installers available in the Shared asset library in Microsoft Dynamics Lifecycle Services. The first several releases of these new installers are designated as **(Preview)**. However, this designation only differentiates the new installers while Microsoft determines whether there are any other functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023.
 
-This article explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
+This article explains how to use the new installers to perform silent installation and servicing updates by using command-line arguments. These arguments let you do mass deployment in several different ways.
 
 > [!NOTE]
-> - Self-service, sealed installers won't be made available in Commerce headquarters and are only downloadable through LCS.
+> - You can't access self-service, sealed installers in Commerce headquarters. You can only download them through Microsoft Dynamics Lifecycle Services (LCS).
 > - Starting with the Commerce version 10.0.32 release, .NET 6 is required as a prerequisite for the sealed self-service components.
 
 ## Delimiters for mass deployment
 
-The following table shows the delimiters that can be used in the command line execution.
+The following table shows the delimiters that you can use in the command line execution.
 
 
 | Delimiter                 | Description |
@@ -38,28 +37,28 @@ The following table shows the delimiters that can be used in the command line ex
 | --AadTokenIssuerPrefix | The prefix for the Microsoft Microsoft Entra token issuer. |
 | --AsyncClientAadClientId | The Microsoft Entra client ID that Async Client should use during communications with Headquarters. |
 | --AsyncClientAppInsightsInstrumentationKey | The Async Client AppInsights instrumentation key. |
-| --AsyncClientCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Async Client Identity certificate location that should be used to authenticate with Microsoft Entra for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-AsyncClientCertThumbprint** parameter. |
-| --AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-AsyncClientCertFullPath** parameter. |
+| --AsyncClientCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Async Client Identity certificate location that should be used to authenticate with Microsoft Entra for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN. The value **\<MyThumbprint\>** is replaced with the certificate thumbprint that you want to use. Don't use this parameter together with the **-AsyncClientCertThumbprint** parameter. |
+| --AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate that you want to use to authenticate with Microsoft Entra for communications with Headquarters. This thumbprint is used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-AsyncClientCertFullPath** parameter. |
 | --ClientAppInsightsInstrumentationKey | The Client AppInsights instrumentation key. |
 | --CloudPosAppInsightsInstrumentationKey | The Cloud POS AppInsights instrumentation key. |
-| --Config | The configuration file that should be used during installation. An example of a file name is **Contoso.CommerceScaleUnit.xml**. Read below for additional information on how to create a configuration file. |
+| --Config | The configuration file that you want to use during installation. An example of a file name is **Contoso.CommerceScaleUnit.xml**. |
 | --CposAadClientId | The Microsoft Entra client ID that Cloud POS should use during device activation. This parameter isn't required for on-premises deployments. |
 | --Device | The device ID, as shown on the **Devices** page in Headquarters. |
 | --EnvironmentId | The environment ID. |
 | --HardwareStationAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
-| --InPlaceUpgradeFromModernPOS | Used to upgrade from Modern POS to Store Commerce. Unless other parameters are used, the default assumption is to capture the Modern POS device token and then uninstall Modern POS. |
+| --InPlaceUpgradeFromModernPOS | Used to upgrade from Modern POS to Store Commerce. Unless other parameters are used, the default assumption is to capture the Modern POS device token, and then uninstall Modern POS. |
 | Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and doesn't have a leading dash character. |
-| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Microsoft Entra authentication, POS offline won't function, as online connectivity is always required. |
-| --Port | The port that should be associated with and used by the Retail Server virtual directory. If no port is set, the default port, 443, will be used. |
+| --InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer tries to find a default instance that meets the prerequisites. When using Microsoft Entra authentication, POS offline doesn't function, as online connectivity is always required. |
+| --Port | The port that should be associated with and used by the Retail Server virtual directory. If you don't set a port, the default port, 443, is used. |
 | --Register | The register ID, as shown on the **Registers** page in Headquarters. |
 | --RetailServerAadClientId | The Microsoft Entra client ID that Retail Server should use during communications with Headquarters. |
 | --RetailServerAadResourceId | The Retail Server Microsoft Entra app resource ID that should be used during device activation. This parameter isn't required for on-premises deployments. |
-| --RetailServerCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Retail Server Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-RetailServerCertThumbprint** parameter. |
-| --RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. This thumbprint will be used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Don't use this parameter together with the **-RetailServerCertFullPath** parameter. |
-| --RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value will be used during device activation. |
+| --RetailServerCertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the Retail Server Identity certificate that should be used to authenticate with Microsoft Entra for communications with Headquarters. For example, `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` is a correctly formatted URN where the value **\<MyThumbprint\>** is replaced with the certificate thumbprint that you want to use. Don't use this parameter together with the **-RetailServerCertThumbprint** parameter. |
+| --RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate that you want to use to authenticate with Microsoft Entra for communications with Headquarters. This thumbprint is used to search the **LocalMachine/My** store location and name to find the correct certificate to use. Don't use this parameter together with the **-RetailServerCertFullPath** parameter. |
+| --RetailServerURL | The Retail Server URL that the installer should use. (This URL is also known as the Commerce Scale Unit \[CSU\] URL.) For Modern POS, this value is used during device activation. |
 | --SkipAadCredentialsCheck| A switch that indicates whether Microsoft Entra credential prerequisite checks should be skipped. The default value is **false**. |
 | --SkipCertCheck | A switch that indicates whether certificate prerequisite checks should be skipped. The default value is **false**. |
-| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations that are run prior to performing the device token capture from Modern POS. This flag should only be used in test environments, and shouldn't be used in production. |
+| --SkipEnhancedModernPOSUpgradeValidation | A switch to skip the standard validations that are run before performing the device token capture from Modern POS. This flag should only be used in test environments, and shouldn't be used in production. |
 | --SkipIisCheck | A switch that indicates whether Internet Information Services (IIS) prerequisite checks should be skipped. The default value is **false**. |
 | --SkipNetFrameworkCheck | A switch that indicates whether .NET Framework prerequisite checks should be skipped. The default value is **false**. |
 | --SkipScaleUnitHealthcheck | A switch that indicates whether the health check on installed components should be skipped. The default value is **false**. |
@@ -67,9 +66,9 @@ The following table shows the delimiters that can be used in the command line ex
 | --SkipSqlFullTextCheck | A switch that indicates whether validation of the SQL Server prerequisite that requires Full Text Search should be skipped. The default value is **false**. |
 | --SkipSqlServerCheck | A switch that indicates whether SQL Server prerequisite checks should be skipped. The default value is **false**. |
 | --SkipUninstallModernPOSAfterUpgrade | A switch to skip the uninstallation of Modern POS after performing the upgrade to Store Commerce and the device token capture from Modern POS. |
-| --SqlServerName | The SQL Server name. If the name isn't specified, the installer will try to find the default instance. |
-| --SslcertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the certificate location that should be used to encrypt HTTP traffic to the scale unit. For example, `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` is a correctly formatted URN where the value **\<MyThumbprint\>** will be replaced with the certificate thumbprint that should be used. Don't use this parameter together with the **-SslCertThumbprint** parameter. |
-| --SslCertThumbprint | The thumbprint of the certificate that should be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-SslCertFullPath** parameter. |
+| --SqlServerName | The SQL Server name. If you don't specify the name, the installer tries to find the default instance. |
+| --SslcertFullPath | The fully formatted URN path that uses the thumbprint as the search metric of the certificate location that should be used to encrypt HTTP traffic to the scale unit. For example, `store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>` is a correctly formatted URN where the value **\<MyThumbprint\>** is replaced with the certificate thumbprint that you want to use. Don't use this parameter together with the **-SslCertThumbprint** parameter. |
+| --SslCertThumbprint | The thumbprint of the certificate that should be used to encrypt HTTP traffic to the scale unit. This thumbprint is used to search the **LocalMachine/My store** location and name to find the correct certificate to use. Don't use this parameter together with the **-SslCertFullPath** parameter. |
 | --StoreSystemAosUrl | The Headquarters (AOS) URL. |
 | --StoreSystemChannelDatabaseId | The channel database ID (name). |
 | --TenantId | The Microsoft Entra tenant ID. |
@@ -82,13 +81,13 @@ The following table shows the delimiters that can be used in the command line ex
 
 ## General overview
 
-The new framework for self-service installers has various features and improvements. The new framework currently generates installers only for Modern POS, hardware station, and CSU (self-hosted). It's important to understand the basic command line usage of the sealed installers, which should look similar to that used in the following example. 
- 
+The new framework for self-service installers offers various features and improvements. Currently, the new framework generates installers only for Modern POS, hardware station, and CSU (self-hosted). You should understand the basic command line usage of the sealed installers, which looks similar to the usage in the following example.
+
 ```Console
 <Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>"
 ```
 
-The installer doesn't automatically perform prerequisite installations that would require system changes. As such, it's important to follow installer instructions regarding missing or incorrect prerequisites. For example, it's important to disable the following TLS 1.0 and TLS 1.1 keys in the registry:
+The installer doesn't automatically perform prerequisite installations that require system changes. As such, you must follow the installer instructions regarding missing or incorrect prerequisites. For example, you need to disable the following TLS 1.0 and TLS 1.1 keys in the registry:
  - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client\Enabled = 0
  - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server\Enabled = 0
  - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client\Enabled = 0
@@ -96,7 +95,7 @@ The installer doesn't automatically perform prerequisite installations that woul
  - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
  - Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
 
-If you use a configuration file, it should be an XML file that uses keys titled with the parameter names above and values according to the parameter, where required. Use the following Store Commerce-focused configuration file as an example to create the configuration file you need:
+If you use a configuration file, it should be an XML file that uses keys titled with the parameter names and values according to the parameter, where required. Use the following Store Commerce-focused configuration file as an example to create the configuration file you need:
 ```Console
 <?xml version="1.0" encoding="UTF-8"?>
  <configuration>
@@ -114,30 +113,30 @@ If you use a configuration file, it should be an XML file that uses keys titled 
 
 The installer requires the parameter **install** (or **uninstall** to remove the installation) and any parameters specific to that installation. **Parameter Name** should include any parameters that are needed such as register, CSU URL, or certificate information. **Parameter Information** should include any additional information about the parameters.
 
-The sealed framework has been created to allow for the following alterations:
-- **Sealed** – The new installer framework completely separates Microsoft-distributed base component installers from the extensibility-based customizations. The customizations will be installed afterward but will then be untethered in regard to updates (so that updates will be allowed only for the Microsoft base component, only for the customizations, or for both).
-- **GUI-less** – There's no longer a user interface (UI). Instead, there is a command line–driven executable for each component installer. This change is one of several key changes or features that are used to focus the new installer framework for use with mass deployment.
-- **Deeper logging** – Enhanced installer logs allow for better validation of installation completion or failure, the steps that were performed, and any warnings or errors that were generated.
-- **Clean-up** – In the new framework, the component installers work harder to maintain the cleanliness of installation directories, by clearing the full contents of the component folder before they install the newer components. This clean-up ensures that there are no leftover files that could cause issues and prevent successful installation.
+The sealed framework supports the following alterations:
+- **Sealed** – The new installer framework completely separates Microsoft-distributed base component installers from the extensibility-based customizations. The customizations are installed afterward but are untethered in regard to updates. This separation means that updates can be allowed only for the Microsoft base component, only for the customizations, or for both.
+- **GUI-less** – There's no longer a user interface (UI). Instead, there's a command line–driven executable for each component installer. This change is one of several key changes or features that focus the new installer framework for use with mass deployment.
+- **Deeper logging** – Enhanced installer logs provide better validation of installation completion or failure, the steps that were performed, and any warnings or errors that were generated.
+- **Clean-up** – In the new framework, the component installers work harder to maintain the cleanliness of installation directories by clearing the full contents of the component folder before they install the newer components. This clean-up ensures that no leftover files cause problems and prevent successful installation.
 
-Three components haven't been migrated to the new framework: the Virtual Peripheral Simulator, Async Server Connector Service (used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (used for Dynamics AX 2012 R3 support).
+Three components aren't migrated to the new framework: the Virtual Peripheral Simulator, Async Server Connector Service (used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (used for Dynamics AX 2012 R3 support).
 
 > [!NOTE]
-> Installers are stored locally and retained.  It's important, over time, to manage or delete the retained installers to not waste disk space. It's recommended to keep the current installer for the base component(s) and any extension installers for the latest version(s) for purposes of recovery from extreme situations.
+> Installers are stored locally and retained. Over time, manage or delete the retained installers so you don't waste disk space. Keep the current installer for the base components and any extension installers for the latest versions to help with recovery from extreme situations.
 
 ## Migration
 
-Migration from the old self-service framework component installers to the new framework component installers requires uninstallation of the old components.
+To migrate from the old self-service framework component installers to the new framework component installers, uninstall the old components.
 
-- **Modern POS** – The new installer framework caused the application to receive a new application signature ID. Therefore, full uninstallation of old components is required before the new framework Modern POS component is installed. Because of the requirement for full uninstallation, device activation will be required again. (This device reactivation is a one-time requirement, provided that uninstallation doesn't occur again.)
-- **Hardware station** – As an IIS website, the new installer framework requires that the base folder structure is reworked. Therefore, full uninstallation of old components is required before the new framework hardware station component is installed.
-- **Commerce Scale Unit (CSU, self-hosted)** – As a series of IIS websites, the new installer framework requires that the base folder structure is reworked.  Therefore, full uninstallation of old components is required before the new framework CSU (self-hosted) component is installed.
+- **Modern POS** – The new installer framework gives the application a new application signature ID. Therefore, you must uninstall the old components before you install the new framework Modern POS component. Because you must uninstall the old components, you need to activate the device again. This device reactivation is a one-time requirement, as long as you don't uninstall the new components.
+- **Hardware station** – As an IIS website, the new installer framework requires that you rework the base folder structure. Therefore, you must uninstall the old components before you install the new framework hardware station component.
+- **Commerce Scale Unit (CSU, self-hosted)** – As a series of IIS websites, the new installer framework requires that you rework the base folder structure. Therefore, you must uninstall the old components before you install the new framework CSU (self-hosted) component.
 
 ## Modern POS
 
 ### Before you begin
 
-It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. As an additional requirement, the SQL instance that's used must have both **Windows authentication** and **SQL Server authentication** modes. You can manage and change this configuration under the **Security** subheading in the **Properties** window in SQL Server Management Studio.
+It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article. As an additional requirement, the SQL instance that you use must have both **Windows authentication** and **SQL Server authentication** modes. You can manage and change this configuration under the **Security** subheading in the **Properties** window in SQL Server Management Studio.
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client\Enabled = 0
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server\Enabled = 0
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client\Enabled = 0
@@ -146,17 +145,17 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727\SchUseSt
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727\SchUseStrongCrypto = 1
 
 > [!NOTE]
-> On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, it's possible for Store Commerce to be unable to complete device activation. This issue occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It's important to understand that a loopback can be a security risk, so it's not recommended that you use a loopback unless absolutely necessary.
+> On a single-computer system such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Store Commerce might be unable to complete device activation. This problem occurs because Store Commerce can't make network calls to the same computer (that is, calls to itself). While this problem should never occur in a production setting, you can mitigate the problem by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications are publicly available to help enable this loopback. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). A loopback can be a security risk, so don't use a loopback unless it's necessary.
 
 ### Examples of silent deployment
 
-This section shows examples of commands that are used to install Modern POS.
+This section shows examples of commands that you can use to install Modern POS.
 
 #### Silently install Modern POS
 
-The following command silently installs (or updates) Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
+The following command silently installs or updates Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-The following basic command showcases the available options if an installation is requested. It's highly recommended that this command is used when first testing or using the installer.
+The following basic command shows the available options if an installation is requested. Use this command when first testing or using the installer.
 
 ```Console
 CommerceModernPOS.exe help install
@@ -165,19 +164,19 @@ CommerceModernPOS.exe help install
 > [!NOTE]
 > A configuration file isn't required for Modern POS. The installer now has parameters (shown earlier in this article) for the various values that are used during device activation.
 
-The following command specifies all the parameters that should be used during device activation after the Modern POS application is installed. This example uses the **Houston-3** register, which is a commonly used value in Dynamics 365 Commerce demo data.
+The following command specifies all the parameters that you should use during device activation after the Modern POS application is installed. This example uses the **Houston-3** register, which is a commonly used value in Dynamics 365 Commerce demo data.
 
 ```Console
 CommerceModernPOS.exe install --Register "Houston-3" --Device "Houston-3" --RetailServerURL "https://MyDynamics365CommerceURL.dynamics.com/Commerce"
 ```
 
-The following command specifies the parameters that should be used to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required. We don't recommend that you skip checks when you install in production.
+The following command specifies the parameters that you should use to install and configure the offline database. The SQL Server is specified together with the configuration file that should be used. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required. Don't skip checks when you install in production.
 
 ```Console
 CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" -Config "ModernPOS.Houston-3.xml" 
 ```
 
-The following command specifies the parameters that should be used to upgrade from Modern POS to Store Commerce (with an offline database in use). These parameters capture the device token used by Modern POS (removing the need for a manual device activation process), and then uninstall Modern POS. The SQL Server is specified together with the configuration file that should be used.
+The following command specifies the parameters that you should use to upgrade from Modern POS to Store Commerce (with an offline database in use). These parameters capture the device token used by Modern POS (removing the need for a manual device activation process), and then uninstall Modern POS. The SQL Server is specified together with the configuration file that should be used.
 
 ```Console
 CommerceModernPOS.exe install -InstallOffline -SQLServerName "SQLExpress" --InPlaceUpgradeFromModernPOS
@@ -189,7 +188,7 @@ You can mix and match these concepts to achieve the installation results that yo
 
 ### Before you begin
 
-It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this article. There's no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it's recommended that you run the following command:
+It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this article. The Merchant Account Information Tool is no longer available. Instead, the merchant account information is installed when a POS terminal pairs with the hardware station. When you test this installer for the first time, run the following command:
 
 ```Console
 CommerceHardwareStation.exe help install
@@ -197,11 +196,11 @@ CommerceHardwareStation.exe help install
 
 ### Examples of silent deployment
 
-This section shows examples of commands that are used to install hardware station.
+This section shows examples of commands that you use to install hardware station.
 
 #### Silently install hardware station
 
-The following command silently installs (or updates) hardware station. It has the standard command structure that is used to service components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
+The following command silently installs (or updates) hardware station. It has the standard command structure that you use to service components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
 The following basic command runs the executable file installer.
 
@@ -212,20 +211,20 @@ HardwareStation.exe install --Port 443 --CSUURL "https://MyDynamics365CommerceUR
 > [!NOTE]
 > A configuration file isn't required for hardware station. The installer now has parameters (shown earlier in this article) for the various values that are required.
 
-The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation. 
+The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation.
 
 > [!NOTE]
-> We don't recommend that you skip checks unless you do thorough testing ahead of time, or except in development situations. We don't recommend that you skip checks when you install in production.
+> Don't skip checks unless you do thorough testing ahead of time, or except in development situations. Don't skip checks when you install in production.
 
 ```Console
 HardwareStation.exe install --SkipFirewallUpdate --SkipOPOSCheck --SkipVersionCheck --SkipURLCheck --Config "HardwareStation.Houston.xml"
 ```
 
-As is customary, it's common to mix and match these concepts to achieve the installation results that you want.
+As is customary, mix and match these concepts to achieve the installation results that you want.
 
 ## Commerce Scale Unit (self-hosted)
 
-When testing this installer for the first time, it's recommended to that you run the following command:
+When you test this installer for the first time, run the following command:
 
 ```Console
 CommerceStoreScaleUnitSetup.exe help install
@@ -233,17 +232,17 @@ CommerceStoreScaleUnitSetup.exe help install
 
 ### Before you begin
 
-It's critical that you remove the old self-service CSU (self-hosted) component. For more information, see the migration steps earlier in this article.
+Remove the old self-service CSU (self-hosted) component. For more information, see the migration steps earlier in this article.
 
 ### Examples of silent deployment
 
-This section shows examples of commands that are used to install CSU (self-hosted).
+This section shows examples of commands that install CSU (self-hosted).
 
 #### Silently install CSU (self-hosted)
 
-The following command silently installs (or updates) CSU (self-hosted). It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
+The following command silently installs (or updates) CSU (self-hosted). It has the standard command structure that's used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
+Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requires a fairly large amount of additional information. The following command is the minimum command (with parameters) needed to run the executable file installer when no configuration file is present. Unless you use a trusted SQL certificate, include the `--TrustSqlServerCertificate` parameter.
 
 ```Console
 CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-AsyncClient" --RetailServerMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-RetailServer" --CPOSMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-CloudPOS" --RetailServerMicrosoft Entra IDResourceID "https://retailstorescaleunit.retailserver.com" --Config "Contoso.StoreSystemSetup.xml"
@@ -252,30 +251,22 @@ CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateTh
 > [!NOTE]
 > A configuration file is still required for CSU (self-hosted).
 
-The following command is a more thorough command that runs the executable file installer with some alternative parameters. Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
+The following command is a more thorough command that runs the executable file installer with some alternative parameters. Unless you use a trusted SQL certificate, include the `--TrustSqlServerCertificate` parameter.
 
 ```Console
 CommerceScaleUnit.exe install --Port 446 --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-AsyncClient" --RetailServerMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-RetailServer" --CPOSMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-CloudPOS" --RetailServerMicrosoft Entra IDResourceID "https://retailstorescaleunit.retailserver.com" --Verbosity 0 --Config "Contoso.StoreSystemSetup.xml"
 ```
 
-The following command specifies parameters required to skip the prerequisite checks during a standard installation. 
+The following command specifies parameters required to skip the prerequisite checks during a standard installation.
 
 > [!NOTE]
-> - We don't recommend that you skip checks unless you do thorough testing ahead of time, or except in development situations. We don't recommend that you skip checks when you install in production.
-> - Unless a trusted SQL certificate is used, the `--TrustSqlServerCertificate` parameter is required.
+> - Don't skip checks unless you do thorough testing ahead of time, or except in development situations. Don't skip checks when you install in production.
+> - Unless you use a trusted SQL certificate, include the `--TrustSqlServerCertificate` parameter.
 
 ```Console
 CommerceScaleUnit.exe install --skipscaleunithealthcheck --skipcertcheck --skipaadcredentialscheck --skipschannelcheck --skipiischeck --skipnetcorebundlecheck --skipsqlservercheck --skipnetframeworkcheck --skipversioncheck --skipurlcheck --Config "Contoso.StoreSystemSetup.xml" --SSLCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --AsyncClientCertFullPath "store://My/LocalMachine?FindByThumbprint=MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-AsyncClient" --RetailServerMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-RetailServer" --CPOSMicrosoft Entra IDClientID "MyMicrosoft Entra ID-Client-IDFor-CloudPOS" --RetailServerMicrosoft Entra IDResourceID "https://retailstorescaleunit.retailserver.com"
 ```
 
 You can mix and match these concepts to achieve the installation results that you want.
-
-<!--## Mass deployment examples using InTune
-
-This section will be added in a future update.
-
-## Mass deployment examples using System Center Configuration Manager (SCCM)
-
-This section will be added in a future update.-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

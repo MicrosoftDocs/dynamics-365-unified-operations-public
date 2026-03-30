@@ -2,9 +2,9 @@
 title: Dual-write overview
 description: Learn about dual-write, which provides near-real-time interaction between customer engagement apps and finance and operations apps.
 author: RamaKrishnamoorthy
-ms.author: ramasri
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 06/06/2024
+ms.date: 01/15/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 audience: IT Pro
@@ -24,7 +24,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 Dual-write provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps.
 
-![Data relationship between apps.](media/dual-write-overview.jpg)
+:::image type="content" source="media/dual-write-overview.jpg" alt-text="Screenshot of data relationship between apps.":::
 
 Dual-write has two aspects: an *infrastructure* aspect and an *application* aspect.
 
@@ -33,7 +33,7 @@ Dual-write has two aspects: an *infrastructure* aspect and an *application* aspe
 The dual-write infrastructure is extensible and reliable, and includes the following key features:
 
 + Synchronous and bidirectional data flow between applications
-+ Synchronization, together with play, pause, and catchup modes to support the system during online and offline/asynchronous modes.
++ Synchronization, together with play, pause, and catchup modes to support the system during online and offline/asynchronous modes
 + Ability to sync initial data between the applications
 + Combined view of activity and error logs for data admins
 + Ability to configure custom alerts and thresholds, and to subscribe to notifications
@@ -74,17 +74,17 @@ Dual-write provides data integration across Microsoft Dynamics 365 applications.
 
 ## <a id="developer-architect"></a>What does dual-write mean for developers and architects of customer engagement apps?
 
-Dual-write automates the data flow between finance and operations apps and customer engagement apps. Dual-write consists of two AppSource solutions that are installed on Dataverse. The solutions expand the table schema, plugins, and workflows on Dataverse so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on finance and operations apps.
+Dual-write automates the data flow between finance and operations apps and customer engagement apps. Dual-write consists of two Marketplace solutions that you install on Dataverse. The solutions expand the table schema, plugins, and workflows on Dataverse so that they can scale to ERP size. For a successful implementation, developers and architects of customer engagement apps must understand these changes and collaborate with their counterparts on finance and operations apps.
 
 To create parity with finance and operations applications, dual-write makes some crucial changes in the Dataverse schema. If you understand the plan, you can avoid some design and development rework in the future.
 
-+ When the dual-write AppSource package is installed, Dataverse will have new concepts such as company and party. These concepts help applications built on Dataverse, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with finance and operations apps.
++ When you install the dual-write Marketplace package, Dataverse includes new concepts such as company and party. These concepts help applications built on Dataverse, including Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service, and Dynamics 365 Field Service, to interact seamlessly with finance and operations apps.
 
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system).
 
-+ To prevent data loss during currency transmission between finance and operations apps and the Dataverse, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing rows to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](../../../fin-ops/data-entities/currrency-decimal-places.md).
++ To prevent data loss during currency transmission between finance and operations apps and the Dataverse, you can extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing rows to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than four decimal places of precision don't need to opt in. For more information, see [Currency data-type migration for dual-write](../../../fin-ops/data-entities/currrency-decimal-places.md).
 
-+ [Date effectivity](../../dev-tools/date-effectivity.md) will be added to Dataverse. It will support past, present, and future data on the same table.
++ [Date effectivity](../../dev-tools/date-effectivity.md) is added to Dataverse. It supports past, present, and future data on the same table.
 
 + Product [unit conversions](../../../../supply-chain/pim/tasks/manage-unit-measure.md) are supported for products, quotes, orders, and invoices.
 

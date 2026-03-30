@@ -56,7 +56,7 @@ To turn on Planning Optimization for your Supply Chain Management environment, f
 1. Sign in to your new Supply Chain Management environment. (You can find your Supply Chain Management URL on the environment page in [Power Platform admin center](https://admin.powerplatform.microsoft.com).)
 1. Follow the instructions in [Turn on Planning Optimization for your environment](/dynamics365/supply-chain/master-planning/planning-optimization/get-started#turn-on-planning-optimization-for-your-environment).
 
-## Related resources
+## Related information
 
 - [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview)
 - [Unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview)

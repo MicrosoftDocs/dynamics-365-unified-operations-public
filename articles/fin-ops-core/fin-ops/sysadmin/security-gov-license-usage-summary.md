@@ -4,131 +4,235 @@ description: Learn about the user security governance license usage summary repo
 author: ceian  
 ms.author: ceian
 ms.topic: concept-article
-ms.date: 12/29/2025
+ms.date: 01/06/2026
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 2025-09-02
+ms.search.validFrom: 2025-12-30
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Understand the User license summary in User security governance
+# License usage summary overview
 
-[!INCLUDE[banner](../includes/banner.md)]
+The **Security Governance License Usage Summary** is a tool in Dynamics 365 Finance & Operations that helps system administrators, licensing managers, and compliance officers see which licenses each user needs based on their assigned security roles. Instead of just giving raw license counts, this feature shows how each user's security roles - and the permissions within those roles - translate into licensing requirements.
 
-If you're unfamiliar with how Dynamics 365 licenses work or want to review the licensing model, see [Dynamics 365 Licensing Resources](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all) for the most up-to-date details on licensing.
+:::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
 
-The **User license summary** page in the **User security governance** workspace helps administrators understand how security roles and respective permissions define the license requirements across their Dynamics 365 finance and operations environment.
+This information helps your organization:
 
-:::image type="content" source="media/security-governance-license-usage-summary-overview.png" alt-text="Screenshot of License Usage summary overview." lightbox="media/security-governance-license-usage-summary-overview.png":::
+- **Confirm that security roles are configured for required licenses** for the tasks users perform.
+- **Align security roles with internal controls and compliance** by revealing which permissions drive certain license requirements.
+- **Plan and optimize license requirements** by providing a clear view of how security roles drive required licenses.
 
-This page provides a telemetry-driven view of user activities and calculates the effective license requirements based on actual usage. By using this information, organizations can align licensing with Microsoft's current licensing guide.
+Additionally, if your organization has multiple Dynamics 365 finance and operations apps environments (such as multiple production environments), you can get a consolidated view of licensing across all environments (including sandbox environments) by using the **[User License Consumption report](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** in the **[Power Platform admin center](https://aka.ms/PPAC)**.
 
-## Availability
+In the Security Governance workspace, **License Usage Summary** focuses on one environment at a time, while the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/financeAndOperations)** provides a tenant-wide perspective.
 
-The User security governance feature and its related license usage summary tools are available in Dynamics 365 finance and operations version 10.0.44.
+>[!Note]
+> **License Usage Summary** is a reporting tool only. It doesn't assign licenses or change any user's access. It shows which licenses are required based on each user's  assigned security roles and security role's configured security objects license requirements.
 
-### Enable the workspace
+> [!IMPORTANT]
+> If you're not familiar with the Dynamics 365 licensing model or license types (for example, what is included in a **Finance** compared to an **Operations - Activity** license, or **attach** license requirements), review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) and [Dynamics 365 Licensing Deck](https://go.microsoft.com/fwlink/?linkid=2279233). Customers must acquire and assign appropriate subscription licenses for its users in **[Microsoft 365 admin center](https://admin.microsoft.com)** per [Microsoft's product terms](https://go.microsoft.com/fwlink/?linkid=2339737). Microsoft provides these reports to help customers monitor required licenses based on their users' configured access to Dynamics 365 finance and operations apps. User license reporting might vary based on user security role assignment and might be periodically enhanced to reflect Microsoft's current licensing requirements. [Learn more](https://go.microsoft.com/fwlink/?linkid=2323873).
+
+> [!IMPORTANT]
+> Updates to assigned security roles and customizations to security role's security objects typically take **2 to 8 hours** to appear in security governance reporting. Allow time for changes to be processed and reflected in the reports.
+
+## Getting started: Enabling the feature
 
 Before you access the **User security governance** workspace, activate it in **Feature management**:
 
-1. Go to **System administration > Feature management**.
-1. Search for:
+1. Sign in to your Dynamics 365 finance and operations environment with **System Administrator** rights.
+1. Go to **System administration > Feature management**. Select and enable the following features:
    - *User security governance*
    - *User security governance license usage summary report*
-1. Select and enable both features.
 
-:::image type="content" source="media/security-governance-license-usage-summary-feature-enable.png" alt-text="Screenshot of Security governance in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enable.png":::
+:::image type="content" source="media/security-governance-license-usage-summary-feature-enable.png" alt-text="Security governance in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enable.png":::
 
-### Access the workspace
+:::image type="content" source="media/security-governance-license-usage-summary-feature-enabled.png" alt-text="Security governance features enabled in the system admin user experience." lightbox="media/security-governance-license-usage-summary-feature-enabled.png":::
 
-To access the **User License Summary** page, follow these steps:
+> [!IMPORTANT]
+> The **Security Governance** feature and **User Security Governance license usage summary report** are available only in versions [10.0.43](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule?context=%2Fdynamics365%2Fcontext%2Fcommerce#high-level-pqu-train-schedule) and later.
 
-1. Sign in to Dynamics 365 finance and operations.
-1. Go to **System administration > Security > Security Governance > License usage summary**.
+:::image type="content" source="media/security-governance-version-info.png" alt-text="Security governance version info." lightbox="media/security-governance-version-info.png":::
 
-## Workspace details
+## Accessing License Usage Summary
 
-The User security governance license usage summary page provides a layered view of:
+Once the feature is enabled, access the **License Usage Summary** page by:
 
-- How system permissions are exercised
-- How responsibilities map to different role types
+1. Sign in to your Dynamics 365 finance and operations environment with **System Administrator** rights.
+2. Go to **System administration > Security > Security Governance > License usage summary**.
 
-These details give you deeper visibility into user access patterns and help you make sure that roles align with intended responsibilities.
+Within this workspace, you find multiple tabs that provide different views:
 
-For a consolidated view across all environments within the same tenant, see the reports in the **Power Platform admin center**.
+- **User Role Licenses**: User and the licenses required based on the user's assigned security roles.
+- **Role Licenses**: Security role and the minimum license required for the role, including details on **Entitled**, **Not Entitled**, and **Not Required** configured security objects.
+- **Duty Licenses**: Shows license requirements for individual duties (groupings of privileges), if you need to examine license at the duty level.
+- **Privilege Licenses**: Shows license requirements for individual privileges or menu items, for the most detailed analysis.
 
-The workspace offers summaries across multiple dimensions:
+Each of these views helps you analyze license requirements from a different angle.
+For regular license reviews, focus on the **User Role Licenses** and **Role Licenses** tabs.
 
-- **User** - Individual usage patterns from telemetry
-- **User Role License** - Role-to-license tier mapping
-- **Role** - Aggregate role-level permissions
-- **Duty** - Functional areas or grouped operations
-- **Privilege** - Specific actions or menu items tied to user tasks
+## Understanding license usage summary
 
-## Key attributes
+:::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-overview.png" alt-text="User Role Licenses Overview screen with multiple finance and commerce licenses." lightbox="media/security-governance-license-usage-summary-user-role-licenses-overview.png":::
 
-Each securable object has these attributes:
+In the **User Role Licenses** view, each row corresponds to a user and displays the licenses that the user requires, given all the security roles assigned to them. Key columns in this view:
 
-- **License type** - Associated license level
-- **Entitled** - Included in the mapped license scope
-- **Not Entitled** - Not included in the mapped license (requires different license)
-- **Not Required** - Actions or privilege inherited in system user, not included in license computation
+- **User ID** - The user's Entra ID name whose license requirements you're examining.
 
-These attributes simplify reviews and make sure that security access matches business needs.
+- **License** - The license needed for that user's assigned security roles. The system looks at all the security objects in the assigned roles and determines which license covers the most security objects in the role.
 
-## Detailed license contributors
+- **License quantity** - License quantity shows how many licenses a user needs. Any row marked with 1 means that license is required. In most cases, a user needs **one base license**. If more than one row is marked with 1, that means the user also needs **attach licenses**:
+  - **1 row marked 1 → base license only**
+  - **2 rows marked 1 → base license + 1 attach license**
+  - **3 rows marked 1 → base license + 2 attach licenses**
 
-The bottom panel shows license requirements for each securable object:
+You might see multiple rows for the same SKU, but only **one row per SKU** is marked with 1 to indicate it's required. The total number of rows with a 1 determines how many bases plus attach licenses the user needs.
 
-- **SecurableType** - Menu item display
-- **AOT Name / Child Name** - From the application object tree
-- **Access Level** - Read or write
+>[!Tip]
+> For more **detailed analysis**, select **Open in Microsoft Office** to download a detailed view in Microsoft Excel.
 
-### Example
+### How to use the License Usage Summary view
 
-:::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="Screenshot of License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
+- **Verify expected licenses** : Check that each user's license requirement matches what you expect for their assigned security roles. If a user's license requirement is exactly what you'd anticipate (for example, a finance clerk shows a **Finance** license), then you know their roles and associated security objects are appropriately configured. Then ensure that the user has the required license assigned in the [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses).
 
-The user *Cade.Armanda.Olander* requires one **Finance** license:
-
-| Role Name              | License                 | License Quantity | Notes |
-|------------------------|-------------------------|------------------|-------|
-| Accountant              | Finance                 | 1                | This security role has the highest priority license requirement |
-| Retail Store Manager    | Operations - Activity   | 0                | No additional license requirement for this role, for this user, if the user is assigned a Finance license |
-| System User             | None                    | 0                | No additional license requirement for this role, for this user, if the user is assigned a Finance license |
-
-Select the **Role License** tab, and select **Accountant** role to inspect specific objects (*3362*) Entitled security objects contributing to the requirement of a **Finance** license. For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
-
-**Role License** tab:
-
-| SKU Name | Securable Object Count | Entitlement | Notes |
-|----------|------------------------|--------------------|-------|
-| Finance  | 3,362                  | **Entitled** | Included in the mapped license scope |
-| Finance  | 1,557                  | **Not Entitled** | Not included in the mapped license (requires different license) |
-
-:::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="Screenshot of License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
+- **Investigate higher-than-expected licenses**: Pay special attention to users who require a higher license than seems appropriate. For instance, if a **Warehouse clerk** needs a **Finance** license, it could mean they inadvertently received a role with permissions that only a user requiring a **Finance** license should have. Identify which roles that user has, and then use the **Role Licenses** view for those roles to see what might be causing the increased requirement.
 
 >[!Tip]
 > To see which permissions are excluded when evaluating license requirements, duplicate the security role or duty by using the [Duplicate a security role or duty with a license filter](/dynamics365/fin-ops-core/dev-itpro/sysadmin/security-role-duplicate-with-license-filter) feature.
 
+- **Address multiple license requirement**: When the license quantity for a user is more than one, that user's role and associated security objects span multiple product licenses. The highest-priority license is the required base license, and the remaining lower priority licenses are required attach licenses. Make sure the user is assigned all required licenses in the [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses). Also consider if the extra security privileges (and the possible attach licenses they require) are truly needed, or if the assigned security role's configured security objects could be reduced to optimize the number of different required licenses.
+
+## Understanding the Role Licenses view
+
+The **Role Licenses** view shows the license requirements for each security role in the system. Each row in this view is a security role, and it shows the minimum license level a user needs if they get that role.
+
+ **Filter** by a security role, and sort by **Entitled** to see how many security objects are entitled, not entitled, or not required by each license. This breakdown helps explain what entitled security objects are covered by a particular license.
+
+:::image type="content" source="media/security-governance-license-usage-role-filter.png" alt-text="Role Licenses filtered for showing multiple license entitled values" lightbox="media/security-governance-license-usage-role-filter.png":::
+
+Key columns in the **Role Licenses** view:
+
+- **Security Role** - Name of the security role (for example, Accountant).
+
+- **SKU Name** - The lowest-level Dynamics 365 license that covers all configured security objects in the role. If the role's permissions include any function that requires a higher license, that higher license with the calculated **Entitled** security objects appears.
+
+
+**Entitlement counts** - For the required license, the role's configured security objects are broken down into three categories:
+
+- **Entitled** - Included security objects within the mapped license
+- **Not Entitled** - Not included in the mapped license (requires different license)
+- **Not Required** - Security objects or privilege inherited in system user, not included in license computation
+
+This breakdown helps you understand why a role requires the license it does.
+
+:::image type="content" source="media/security-governance-license-usage-role-filter-priority.png" alt-text="Role Licenses filtered with priority column included." lightbox="media/security-governance-license-usage-role-filter-priority.png":::
+
+## Securable object license classification
+
+Each security object in a role falls into one of three classifications regarding the required license:
+
+| Securable Object Status | Details |
+|------------------------|---------|
+| **Entitled** | The role's required license **includes** these security objects. No different license is required. |
+| **Not Entitled** | The role's required license **doesn't cover** these security objects. A different license is required, which can change the role's overall license requirement. |
+| **Not Required** | The security object **doesn't count toward the license requirement**. For example, the included security objects might be inherited by the system user and therefore aren't included in the license computation.
+
+## Drilling down into specific security objects
+
+The **License Usage Summary** also lets you inspect exactly which security objects contribute to a role or user's license requirements.
+
+**Detailed panel**: When you select a particular user (on the **User Licenses** tab) or a role (on the **Role Licenses** tab), a detailed panel appears at the bottom of the page listing individual security objects related to that selection.
+
+:::image type="content" source="media/security-governance-license-usage-summary-user-role-licenses-detailed.png" alt-text="Detailed Panel drill down into specific security objects." lightbox="media/security-governance-license-usage-summary-user-role-licenses-detailed.png":::
+
+For each listed security object, you see details such as:
+
+- **SecurableType** - The type of object, such as a form, report, menu item, button, API, and more.
+- **AOT Name / AOT Child Name** - The name of the object from the **Application Object Tree** and any child AOT subcomponent.
+- **Access Level** - The level of access granted, such as **Read**, **Update**, **Create**, **Invoke**, **Delete**, and more.
+- **Entitled** / **Not Entitled** / **Not Required** - Whether the current license context covers the object, the object requires a different license, or the object might be inherited in system user and therefore not included in license computation.
+
+Examining this detailed breakdown allows you to pinpoint the exact privileges or duties causing a higher license requirement. For example, you might discover that the **Retail Store Manager** role includes a privilege that is marked as **Not Entitled** under the **Operations - Activity** license. This finding implies that the functionality requires a higher license (perhaps a Supply Chain Management or Commerce license), which might drive the requirement for an attach license or a higher base license for users assigned that role.
+
+With this information, you can make informed decisions, such as removing that privilege from the role for users who don't need it, or knowing that anyone with that role should also be assigned the requisite attach license.
+
+> [!IMPORTANT]
+> Many out-of-the-box securable objects include read-only entry points. Read access to these standard security objects requires at least a **[Dynamics 365 Team Members](https://admin.cloud.microsoft/?#/licensedetailpage/8e7a3d30-d97d-43ab-837c-d7701cef83dc)** license. Review the latest [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) for additional information.
+
 >[!Tip]
->You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
+> You can also use [Security analysis](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-reports) to find where specific privileged entry points are introduced into roles, and Security configuration to adjust security roles.
 
-### Use cases
+## Example: A user with multiple assigned security roles
 
-Organizations can use this summary to:
+In the following example, a user, *Cade.Armand.Olander*, is assigned three security roles: **Accountant**, **Retail Store Manager**, and **System User**.
 
-- Validate that security roles match actual user responsibilities.  
-- Find and fix role assignments that are excessive or outdated.  
-- Improve governance by aligning usage with internal controls.  
-- Get ready for future compliance and audits.  
+**What the License Usage Summary shows**
 
-Administrators can use this page to:
+- The **Accountant** role drives a **Finance** license requirement. Because **Finance** is the highest required license for this user, it becomes the user's **required base license**.
 
-- Evaluate roles for review or refinement.  
-- Identify segregation of duties risks.
-- Export data for audit, license planning, or governance.
+- The **Retail Store Manager** role (which on its own requires **Operations – Activity**) doesn't increase the total license count in this case, because the **Finance** base license already covers the required security objects needed for the user's lower-tier roles.
+
+- The **System User** role doesn't add other license requirements.
+
+**Result**: The user needs **only one Finance license**.
+
+**Action to take (cost + compliance)**:
+If the user's job responsibilities don't require Finance-level functionality, consider removing or replacing the **higher-privilege role** (Accountant) so the user qualifies for a **lower-cost license** aligned to their actual duties.
+
+:::image type="content" source="media/security-governance-license-usage-summary-example.png" alt-text="License Usage summary example." lightbox="media/security-governance-license-usage-summary-example.png":::
+
+In this example, the **License Usage Summary report** shows the following for *Cade.Armand.Olander*:
+
+| Role Name              | License                 | License Quantity | Notes |
+|------------------------|-------------------------|------------------|-------|
+| **Accountant**              | Finance                 | 1                | This security role has the highest priority license requirement |
+| **Retail Store Manager**    | Operations - Activity   | 0                | No other license requirement for this role, for this user, if the user is assigned a **Finance** license |
+| **System User**             | None                    | 0                | No other license requirement for this role, for this user, if the user is assigned a **Finance** license |
+
+In this example, for this user, *Cade.Armand.Olander*, the **Finance** license is the necessary base license due to the high-level permissions of the **Accountant** security role. Even though the user also has the **Retail Store Manager role** (which by itself requires an **Operations - Activity** license), the **Finance license** covers that role's requirements too, so a second license isn't required.
+
+### Role License view for example
+
+:::image type="content" source="media/security-governance-license-usage-summary-example-role-license.png" alt-text="License Usage Summary Role License detailed." lightbox="media/security-governance-license-usage-summary-example-role-license.png":::
+
+In this example, the **Role License** view, with the selected **Accountant** role, shows the **Accountant** role is configured with 3,362 **Entitled** security objects contributing to the requirement of a **Finance** license.
+
+>[!Tip]
+> For more detailed analysis, select **Open in Microsoft Office** to download a detailed view in Excel.
+
+| SKU Name | Securable Object Count | Entitlement | Notes |
+|----------|------------------------|--------------------|-------|
+| **Finance**  | **3,362**                  | **Entitled** | Included in the mapped license scope |
+| **Finance**  | **1,557**                  | **Not Entitled** | Not included in the mapped license (requires different license) |
+
+In this example, you can draw a few conclusions:
+
+- Assign the user a **Finance** license in the [Microsoft 365 admin center](https://admin.cloud.microsoft/?#/licenses) to ensure their access to the system.
+- If the user's performed business functions don't actually require a **Finance** license, consider removing the **Accountant** role (and perhaps assigning a more appropriate role) so that the user can be fully served by a lower license like **Operations - Activity**. This change reduces licensing requirements and limits the user's access to only what they need.
+- If the user truly needs both roles **Accountant** and **Retail Store Manager**, ensure they're assigned a **Finance** license. In this example, an **Operations - Activity** license isn't needed because a **Finance** license supersedes it for this user's roles.
+
+## Ongoing Management and Best Practices
+
+Make reviewing the **License Usage Summary report** part of your regular governance routines to help maintain both **compliance** and **cost efficiency**. Here are some best practices:
+
+- **Regular license reviews**: Periodically review the **License Usage Summary report** to catch any unexpected changes in license requirements. For example, if someone's required license increases (due to a global customization to the security role), you'll want to know and address it.
+- **Role audits**: Use the **Role Licenses** view to audit custom roles and even standard roles. If a role is causing users to need a higher license level, decide if that's required. It might be better to adjust the role's configured security objects or split responsibilities between roles to avoid over-privileging users.
+- **Support compliance audits**: When preparing for a compliance audit, export the License Usage Summary data to Microoft Excel. This provides auditors with the detailed reporting that your organization is properly managing license requirements.
+- **Cost management**: Keep an eye out for users who have high-level licenses but might not be using all their features. If the **License Usage Summary report** indicates that certain users could operate under a less expensive license, consider adjusting their roles security objects (and their license assignments) to optimize licensing costs.
+- **Segregation of duties (SoD)**: While analyzing roles and user access, be mindful of SoD conflicts. The License Usage Summary, together with other security tools in Dynamics 365, can highlight if a user or role has permissions that should be segregated. Use this insight to refine roles and ensure critical processes have proper checks and balances.
+
+By using the **Security Governance License Usage Summary** regularly, you can keep your Dynamics 365 Finance & Operations environment **secure**, **compliant**, and **cost-effective**. This tool allows you to adjust security roles and license allocations proactively, ensuring that each user has the access they need while your organization only pays for the licenses that are truly required.
+
+## Related information
+
+- [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)  
+- [Finance and Operations Apps Security Role FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)
+- [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)
+- [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)
+- [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)  
+- [Prepare for finance and operations apps user license validation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/prepare-for-user-validation)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

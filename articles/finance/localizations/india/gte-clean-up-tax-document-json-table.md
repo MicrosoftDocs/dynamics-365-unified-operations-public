@@ -2,7 +2,7 @@
 title: Clean up the TaxDocumentJSON table 
 description: Learnhow free up space in the database by removing old data from the TaxDocumentJSON table, including outlines on purpose and supported versions.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: how-to
 ms.date: 06/10/2022
 ms.custom:

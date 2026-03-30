@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 12/30/2025
+ms.date: 01/12/2026
 ms.reviewer: johnmichalak
 ms.search.region: Poland
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
@@ -343,8 +343,8 @@ To import a package of data entities that includes a predefined electronic messa
 
     Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synced.
 
-1. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh is complete. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-itpro/data-entities/data-entities.md#entity-list-refresh).
-1. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+1. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh is complete. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+1. Validate that the source data and target data are correctly mapped.
 1. Before you use the data entities for the first time to import the data, sync the mapping of source data and target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch.
 1. Save the mapping.
 1. Repeat steps 3 through 6 for each data entity in the package.
@@ -555,7 +555,5 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 | CorrATR89b4 | 30202 | Sales tax receivable | K_47 | + |
 
 For invoices that aren't paid within 150 days, you can apply an [**Overdue debt VAT**](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task. In this case, use the same reporting codes that are used for K_41 and K_43. The system automatically interprets transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

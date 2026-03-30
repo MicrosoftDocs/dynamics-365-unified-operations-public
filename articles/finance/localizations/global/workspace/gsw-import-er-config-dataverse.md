@@ -4,7 +4,7 @@ description: Learn how to import Electronic reporting (ER) configurations from M
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 03/13/2025
+ms.date: 03/19/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -21,7 +21,7 @@ This article explains how to import Electronic reporting (ER) configurations fro
 
 ## Set up integration with Dataverse
 
-To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment. For more information, see the following articles:
+To use this functionality, you need a Dataverse environment that's connected to your Dynamics 365 Finance environment. For more information, see the following articles:
 
 - [Enable Power Platform Integration](../../../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
 - [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
@@ -30,26 +30,26 @@ To use this functionality, you should have a Dataverse environment that's connec
 You should also add a security role to access tables in Dataverse by following these steps:
 
 1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
-2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
-3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles).
+1. In that security role, add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+1. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles).
 
 ## Import the Globalization solution
 
 This functionality uses the [Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview).
 
-You can import the Globalization solution by following these steps.
+Import the Globalization solution by following these steps:
 
-1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on AppSource.
+1. Go to [Globalization Solution for Microsoft Dynamics 365 Finance](https://aka.ms/GlobalizationSolution) on Marketplace.
 1. Select **Get it now**.
 1. Fill in the required data.
 1. Select an environment, and then select **Install**.
 
 ## Import configurations from Dataverse
 
-A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. It enables the same user interface (UI) that the Dataverse enables. Therefore, you can import single and filtered configurations.
+This solution adds a new type of repository for getting ER configurations in Dynamics 365 Finance. This repository is known as the Dataverse configuration repository. It provides the same user interface (UI) that Dataverse provides. Therefore, you can import single and filtered configurations.
 
 > [!NOTE]
-> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39, however, it may be disabled in your environment.
+> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39. However, it might be disabled in your environment.
 
 ### Open the Dataverse configuration repository
 
@@ -61,7 +61,7 @@ To open the Dataverse configuration repository, follow these steps:
     - Electronic reporting functional consultant
     - System administrator
 
-1. Go to **Organization administration** \> **Workspaces** \> **Globalization studio**.
+1. Go to **Organization administration** > **Workspaces** > **Globalization studio**.
 1. In the **Configuration providers** section, select the **Microsoft** tile.
 1. On the **Microsoft** tile, select **Repositories**.
 
@@ -80,7 +80,7 @@ To open the Dataverse configuration repository, follow these steps:
 ## Import a single configuration
 
 > [!NOTE]
-> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER configuration released by Microsoft to appear in the Dataverse configuration repository. If the configuration update is expected but does not appear in the Dataverse configuration repository, or if auto-updates are disabled in your environment, you can also manually trigger the update of the Globalization solution package in your Power Platform admin center portal. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps) for more details on how to update solutions in Power Platform admin center.
+> It can take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER configuration released by Microsoft to appear in the Dataverse configuration repository. If you expect a configuration update but don't see it in the Dataverse configuration repository, or if auto-updates are disabled in your environment, you can manually trigger the update of the Globalization solution package in your Power Platform admin center portal. To learn more about updating solutions in Power Platform admin center, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps).
 
 To import a single configuration, follow these steps:
 
@@ -97,22 +97,22 @@ To import a single configuration, follow these steps:
 
 To import filtered configurations, follow these steps:
 
-1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any tags that are needed.
+1. On the **Configuration repository** page, on the **Filter** FastTab, in the **Tags** grid, add any needed tags.
 1. In the **Country/region applicability** field, select the appropriate country/region codes.
 1. Select **Apply filter**.
 1. The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions. Select **Import** to download the filtered configurations from Dataverse to the current Dynamics 365 Finance instance.
-1. Select **Reset filter** to clean up the specified selection conditions.
+1. Select **Reset filter** to remove the specified selection conditions.
 
 :::image type="content" source="media/gsw-config-repo-reset-filter.png" alt-text="Screenshot of the Configuration repository page, where a Country/region applicability filter is applied.":::
 
 > [!NOTE]
-> Depending on the ER settings, configurations are validated after they're imported. You might be notified about any inconsistency issues that are found. Before you can use the imported configuration version, you must fix the issues. For more information, see the list of related resources for this article.
->
-> ER configurations can be configured as dependent on other configurations. Therefore, when you import a selected configuration, other configurations might be automatically imported. For more information about configuration dependencies, see [Define the dependency of ER configurations on other components](../../../../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
+> - Depending on the ER settings, the system validates configurations after you import them. You might see a notification about any inconsistency problems that it finds. You must fix these problems before you can use the imported configuration version. For more information, see the list of related resources for this article.
+> - You can configure ER configurations as dependent on other configurations. Therefore, when you import a selected configuration, the system might automatically import other configurations. For more information about configuration dependencies, see [Define the dependency of ER configurations on other components](../../../../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
 
-## Related resources
+## Additional resources
 
-- [Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
-- [Globalization feature components](../gs-e-invoicing-working-globalization-features.md)
+[Get started with Tax Calculation - High-level configuration](../global-get-started-with-tax-calculation-service.md#high-level-configuration)
+
+[Globalization feature components](../gs-e-invoicing-working-globalization-features.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

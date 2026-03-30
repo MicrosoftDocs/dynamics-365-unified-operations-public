@@ -1,18 +1,14 @@
 ---
 title: Create an Excel workbook to edit retail transactions
-description: This article describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
+description: Learn how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 01/21/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.industry: Retail
 ---
 # Create an Excel workbook to edit retail transactions
 
@@ -20,9 +16,7 @@ ms.search.industry: Retail
 
 This article describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
-There is a predefined Excel template that customers can access from different parts of the system and use to edit and audit retail transactions. However, customers can also create a custom Excel workbook for this purpose.
+A predefined Excel template is available for customers to access from different parts of the system. Use this template to edit and audit retail transactions. However, you can also create a custom Excel workbook for this purpose.
 
 ## Create and configure an Excel workbook
 
@@ -41,7 +35,7 @@ To create and configure an Excel workbook so that you can edit retail transactio
     1. Repeat the previous three steps as required.
 
 1. Select **Design**, and then select **Add table**.
-1. Based on the data that has to be modified, select the entities that must be added to the Excel workbook for editing. Use the following table as a reference.
+1. Based on the data that you need to modify, select the entities that you need to add to the Excel workbook for editing. Use the following table as a reference.
 
     | Transaction type | Data entities to use |
     |------------------|----------------------|
@@ -53,11 +47,11 @@ To create and configure an Excel workbook so that you can edit retail transactio
     | Declare starting amount, Tender removal, Float entry, Change tender, Invoice payment, Customer deposit | Transaction (auditable), Payment transactions (auditable) |
 
     > [!NOTE]
-    > It's important that you add only one data entity to each Excel workbook. Additionally, all fields that are marked by a key symbol must be added to the relevant workbook.
+    > Add only one data entity to each Excel workbook. Also, you must add all fields marked with a key symbol to the relevant workbook.
 
-1. After the workbook is configured, apply the required filters. Be sure to apply the same filters to all the worksheets in the file. Avoid loading very large amounts of data into the Excel file. Otherwise, performance might be affected, and Excel and your system might slow down. We recommend that you always use "Company" and either "Statement Number" or "Transaction Number" as filters for your file.
-1. After the filters are configured, select **Refresh** to load the data.
-1. Edit the required data, and then publish it. If the **Publish** button is unavailable, some key fields probably weren't added to the Excel workbook.
+1. After you configure the workbook, apply the required filters. Be sure to apply the same filters to all the worksheets in the file. Avoid loading large amounts of data into the Excel file. Otherwise, performance might be affected, and Excel and your system might slow down. Always use **Company** and either **Statement Number** or **Transaction Number** as filters for your file.
+1. After you configure the filters, select **Refresh** to load the data.
+1. Edit the required data, and then publish it. If the **Publish** button is unavailable, you probably didn't add some key fields to the Excel workbook.
 
 ## Additional resources
 

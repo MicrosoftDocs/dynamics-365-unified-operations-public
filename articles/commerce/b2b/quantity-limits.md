@@ -1,11 +1,10 @@
 ---
 title: Set product quantity limits for B2B e-commerce sites
-description: This article describes how to set product quantity limits for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
+description: Learn how to set product quantity limits for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 01/15/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2021-01-31
@@ -20,9 +19,9 @@ ms.custom:
 
 This article describes how to set product quantity limits for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 
-Most products have a unit of measure that defines their grouping. The grouping affects how the products can be sold. Some products might have an additional grouping for quantities. This grouping determines whether the products can be sold as individual units or multiples, and whether there is a minimum or maximum order quantity limit that must be followed.
+Most products have a unit of measure that defines their grouping. The grouping affects how you can sell the products. Some products have an additional grouping for quantities. This grouping determines whether you can sell the products as individual units or multiples, and whether there's a minimum or maximum order quantity limit that you must follow.
 
-The quantity limiting feature ensures that the minimum, maximum, multiple, and standard quantities that are configured in Microsoft Dynamics 365 Commerce (in the default order settings or the Commerce site builder site settings) are applied to customer orders that are placed on an e-commerce site. Product quantity limits aren't currently supported for the point of sale (POS) and call centers.
+The quantity limiting feature ensures that the minimum, maximum, multiple, and standard quantities that you configure in Commerce (in the default order settings or the Commerce site builder site settings) apply to customer orders that are placed on an e-commerce site. Product quantity limits aren't currently supported for the point of sale (POS) and call centers.
 
 Many retailers provide the option of customer orders (also known as special orders) to meet various product and fulfillment requirements. Here are some typical scenarios:
 
@@ -32,23 +31,23 @@ Many retailers provide the option of customer orders (also known as special orde
 
 ## Turn on the default order settings feature in Commerce headquarters
 
-Before you can set product quantity limits, the default order settings feature must be turned on in Commerce headquarters.
+Before you can set product quantity limits, turn on the default order settings feature in Commerce headquarters.
 
 To turn on the default order settings feature, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Find and select the **Support the Site and Default order settings in the customer order** feature.
-1. At the bottom of the right pane, select **Enable now**. 
+1. At the bottom of the right pane, select **Enable now**.
 
-## Define quantity settings 
+## Define quantity settings
 
 You can define the quantity settings on the **Default order settings** page.
 
-To define the quantity settings, follow these steps: 
+To define the quantity settings, follow these steps:
 
-1. Go to Product **Retail and Commerce \> Products and categories \> Released products by category**.
+1. Go to Product **Retail and Commerce > Products and categories > Released products by category**.
 1. Select a released product.
-1. On the Action Pane, on the **Manage inventory** tab, in the **Order settings** group, select **Default order settings**. 
+1. On the Action Pane, on the **Manage inventory** tab, in the **Order settings** group, select **Default order settings**.
 1. On the **Default order settings** page, on the **Sales order** FastTab, in the **Sales quantity** section, set the product sales quantities:
 
     - **Multiple** – The quantity that the product can be bought in multiples of.
@@ -60,11 +59,11 @@ To define the quantity settings, follow these steps:
 
 To turn on the B2B order quantity limits feature in Commerce site builder, follow these steps:
 
-1. Go to **Site settings \> Extensions**
-1. Under **Enable Order Quantity Limits**, select **Enabled for B2B customers** in the drop-down menu. 
+1. Go to **Site settings > Extensions**.
+1. Under **Enable Order Quantity Limits**, select **Enabled for B2B customers** in the drop-down menu.
 
-> [!NOTE] 
-> Updated site builder settings take effect only after the app.settings.json file has been updated. For more information, see [SDK and Module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+> [!NOTE]
+> Updated site builder settings take effect only after the `app.settings.json` file is updated. For more information, see [SDK and Module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Additional resources
 
@@ -75,6 +74,5 @@ To turn on the B2B order quantity limits feature in Commerce site builder, follo
 [Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
 
 [Configure the customer account payment method for B2B e-commerce sites](payment-method.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

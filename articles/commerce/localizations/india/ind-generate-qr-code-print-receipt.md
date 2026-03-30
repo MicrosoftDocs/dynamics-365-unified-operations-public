@@ -1,76 +1,75 @@
 ---
 title: Generate QR codes and print them on receipts for India
-description: This article explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
+description: Learn how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India in Microsoft Dynamics 365 Commerce.
 author: ritakimani
-ms.date: 07/29/2024
+ms.date: 02/27/2026
 ms.topic: how-to
-ms.custom: 
-  - bap-template
-ms.reviewer: josaw
+ms.reviewer: v-griffinc
 ms.search.region: India
 ms.author: ritakimani
-
+ms.custom: 
+  - bap-template
 ---
 # Generate QR codes and print them on receipts for India
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
+This article provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India in Microsoft Dynamics 365 Commerce.
 
 ## Prerequisites
 
-Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.13. Therefore, the information in this article is valid only for version 10.0.13 and later.
+Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.11. Therefore, the information in this article is valid only for version 10.0.13 and later.
 
-Commerce versions 10.0.17 and later support printing QR codes on receipts using Retail Hardware Station. In versions 10.0.16 and earlier, QR codes can only be printed from Modern POS (MPOS).
+Commerce versions 10.0.17 and later support printing QR codes on receipts by using Retail Hardware Station. In versions 10.0.16 and earlier, QR codes can only be printed from Modern POS (MPOS).
 
 ## Data schema changes
 
-Because invoice printing isn't supported in Dynamics 365 Commerce, there are no UPI-related fields in Point of sale (POS). Therefore, the fields should be added in the scope of code customization. We recommend that you extend the RetailStoreTenderTypeTable table by adding two string fields: **UPIId** and **UPIName**. As part of this customization, you should extend the **RetailStoreTenderTypeTable** form to edit the fields in the user interface (UI). You should also extend the channel data schema and download jobs. For more information, see [Channel database extensions](../../dev-itpro/channel-db-extensions.md).
+Because invoice printing isn't supported in Dynamics 365 Commerce, there are no UPI-related fields in Point of sale (POS). Therefore, add the fields as part of code customization. Extend the RetailStoreTenderTypeTable table by adding two string fields: **UPIId** and **UPIName**. As part of this customization, extend the **RetailStoreTenderTypeTable** form to edit the fields in the user interface (UI). You should also extend the channel data schema and download jobs. For more information, see [Channel database extensions](../../dev-itpro/channel-db-extensions.md).
 
 ## Set up receipts in Commerce headquarters
 
-1. Create a new language text that will be used for a new custom receipt field for a QR code:
+1. Create a new language text for a custom receipt field for a QR code:
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Channel setup** > **POS profiles** > **Language text**.
-    2. On the **POS** tab, on the **POS language text** FastTab, select **Add** to create a language text.
-    3. In the **Language ID** field, specify the language of the new language text (for example, **en-us** for US English).
-    4. In the **Text ID** field, enter the identifier of the new language text.
-    5. In the **Text** field, enter the new language text (for example, **Tax invoice QR code**).
+    1. On the **POS** tab, on the **POS language text** FastTab, select **Add** to create a language text.
+    1. In the **Language ID** field, specify the language of the new language text (for example, **en-us** for US English).
+    1. In the **Text ID** field, enter the identifier of the new language text.
+    1. In the **Text** field, enter the new language text (for example, **Tax invoice QR code**).
 
-       ![Creating a language text for a QR code receipt field.](../media/language-text-page.png)
+       :::image type="content" source="../media/language-text-page.png" alt-text="Screenshot of creating a language text for a QR code receipt field.":::
 
-2.  Create a new custom receipt field for a QR code:
+1. Create a new custom receipt field for a QR code:
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Channel setup** > **POS profiles** > **Custom field**.
-    2. On the Action Pane, select **New** to add a field.
-    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE_QR**).
-    4. In the **Type** field, select **Receipt**.
-    5. In the **Caption text ID** field, enter the **Text ID** value from the language text that you created earlier.
+    1. On the Action Pane, select **New** to add a field.
+    1. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE_QR**).
+    1. In the **Type** field, select **Receipt**.
+    1. In the **Caption text ID** field, enter the **Text ID** value from the language text that you created earlier.
 
-        ![Creating a receipt custom field for a QR code.](../media/custom-fields.png)
+        :::image type="content" source="../media/custom-fields.png" alt-text="Screenshot of creating a receipt custom field for a QR code.":::
 
-3.  Add a custom field for a QR code to a receipt:
+1. Add a custom field for a QR code to a receipt:
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Channel setup** > **POS** > **Receipt formats**.
-    2. Select the receipt to add a QR code to.
-    3. On the Action Pane, select **Designer**.
-    4. Download the receipt designer, run it, and sign in.
-    5. Add a custom field to the receipt header or footer.
+    1. Select the receipt to add a QR code to.
+    1. On the Action Pane, select **Designer**.
+    1. Download the receipt designer, run it, and sign in.
+    1. Add a custom field to the receipt header or footer.
 
-4. Sync the changes with the channel database:
+1. Sync the changes with the channel database:
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Distribution schedule**.
-    2. Run jobs **1070** and **1090**.
+    1. Run jobs **1070** and **1090**.
 
 ## Create a CRT extension to support printing QR codes
 
-To support the new custom receipt field for a QR code, you must create a CRT extension that will create a URL string and generate a QR code for it. For an example that shows how to add a custom field to a receipt, see [Extend Commerce Store receipts](../../dev-itpro/retail-sdk/retail-sdk-samples.md).
+To support the new custom receipt field for a QR code, create a CRT extension that creates a URL string and generates a QR code for it. For an example that shows how to add a custom field to a receipt, see [Extend Commerce Store receipts](../../dev-itpro/retail-sdk/retail-sdk-samples.md).
 
 Follow these steps to handle the new custom receipt field for a QR code.
 
 1. Install the Retail software development kit (SDK). For more information, see [Retail software development kit (SDK)](../../dev-itpro/retail-sdk/retail-sdk-overview.md).
-2.  In the Retail SDK, create a C\# project.
-3.  In the new C\# project, add references to the following packages per Commerce release:
+1. In the Retail SDK, create a C# project.
+1. In the new C# project, add references to the following packages per Commerce release:
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
@@ -97,10 +96,10 @@ Follow these steps to handle the new custom receipt field for a QR code.
 - Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
 - Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
 ```
-    
+
 ---
 
-4. Create a class to handle. 
+1. Create a class to handle the process.
 
     ```C#
     public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware.
@@ -108,14 +107,14 @@ Follow these steps to handle the new custom receipt field for a QR code.
         // Add code here.
     }
     ```
-       
-5. Implement a handler method that will handle the new custom receipt field and return a QR code as a string.
+
+1. Implement a handler method that handles the new custom receipt field and returns a QR code as a string.
 
     ```C#
     /// <summary>
     /// Gets the custom receipt field value for sales receipt.
     /// </summary>
-    /// <param name="request>The service request to get custom receipt field value.</param>
+    /// <param name="request">The service request to get custom receipt field value.</param>
     /// <returns>The value of custom receipt field.</returns>
     private async Task<Response>
     GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest
@@ -138,9 +137,9 @@ Follow these steps to handle the new custom receipt field for a QR code.
 
     The handler should include the following steps.
 
-    1. Generate UPI link based on the sales order (**SalesOrder**) that is passed as the request parameter.
-    2. Run **EncodeQrCodeServiceRequest** to generate a QR code. (**EncodeQrCodeServiceRequest** is part of the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting** package.)
-    3. Wrap the QR code string that is returned in a `<>` tag.
+    1. Generate a UPI link based on the sales order (**SalesOrder**) that the request parameter passes.
+    1. Run **EncodeQrCodeServiceRequest** to generate a QR code. (**EncodeQrCodeServiceRequest** is part of the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting** package.)
+    1. Wrap the returned QR code string in a `<>` tag.
 
         ```C#
         var qrCodeRequest = new
@@ -156,9 +155,9 @@ Follow these steps to handle the new custom receipt field for a QR code.
             return receiptFieldValue;
         ```  
 
-6. Add the required extensions to **CommerceRuntime.Ext.config**. Here, **Contoso.Commerce.Runtime.ReceiptsIndia** is the name of the new extension for printing the QR code assembly.
+1. Add the required extensions to **CommerceRuntime.Ext.config**. In this step, **Contoso.Commerce.Runtime.ReceiptsIndia** is the name of the new extension for printing the QR code assembly.
 
-    ```xml 
+    ```xml
     <commerceRuntimeExtensions>
           <composition>
             <!--
@@ -176,10 +175,19 @@ Follow these steps to handle the new custom receipt field for a QR code.
           </composition>
        </commerceRuntimeExtensions>
     ```
-   
+
+## Create the receipt format
+
+Create the receipt format in the **Receipt format** screen. You can create a receipt format for the **Receipt** receipt type, and make the required changes.
+
+1. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profile** > **Receipt formats**.
+1. Select a receipt format for the **Receipt** receipt type, and make the required changes.
+
+:::image type="content" source="../media/apac-ind-gst-receipt-format.png" alt-text="Screenshot of receipt format design.":::
+
 ## Printing QR code images on OPOS printers
 
-When using an OPOS printer, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of this conversion.
+When you use an OPOS printer, you might need to convert the QR code image from the *png* format to the *bmp* format. The following example shows how to make this conversion.
 
    ```C#
     ...
@@ -223,7 +231,7 @@ When using an OPOS printer, you may need to convert the QR code image from the *
 
 ## Samples of a CRT extension class for printing QR codes
 
-The following code blocks grouped by Commerce release provide samples of CRT extension classes for printing QR codes.
+The following code blocks, grouped by Commerce release, provide samples of CRT extension classes for printing QR codes.
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
@@ -550,7 +558,7 @@ namespace Contoso
             }
         }
     }
-```     
+```
 
 # [Commerce 10.0.25](#tab/commerce-10-0-25)
 
@@ -854,7 +862,7 @@ namespace Contoso
         }
     }
 }
-```   
+```
 
 # [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
 
@@ -1159,4 +1167,6 @@ namespace Contoso
         }
     }
 }
-```     
+```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

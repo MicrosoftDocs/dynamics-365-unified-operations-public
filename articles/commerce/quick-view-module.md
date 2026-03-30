@@ -1,11 +1,10 @@
 ---
 title: Quick view module
-description: This article covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about quick view modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/31/2024
+ms.date: 01/28/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2020-01-08
@@ -17,18 +16,18 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article describes quick view modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-The quick view module lets users quickly view product information when they browse products on a list page, and add one or more products to the cart from the list page, without having to go to the product details page (PDP). The quick view module provides an overview of the product information that users require to make an "add to cart" decision. It also provides a link to the PDP, so that users can view additional product details and purchase options.
+By using the quick view module, users can quickly view product information when they browse products on a list page. They can add one or more products to the cart from the list page, without having to go to the product details page (PDP). The quick view module provides an overview of the product information that users require to make an "add to cart" decision. It also provides a link to the PDP, so that users can view more product details and purchase options.
 
-The quick view module is supported by the [product collection](product-collection-module-overview.md) and [search results](search-result-module.md) modules.
+The [product collection](product-collection-module-overview.md) and [search results](search-result-module.md) modules support the quick view module.
 
 > [!IMPORTANT]
 > The quick view module is available as of the Commerce version 10.0.17 release.
 
 The following illustration shows an example of a quick view module on a product list page.
 
-![Example of a quick view module on a product list page.](./media/ecommerce-quickview.PNG)
+:::image type="content" source="./media/ecommerce-quickview.PNG" alt-text="Screenshot of a quick view module on a product list page.":::
 
 ## Module properties
 
@@ -36,18 +35,18 @@ The quick view module supports some of the same functions as the buy box module.
 
 | Property | Values | Description |
 |----------------|--------|-------------|
-| Heading tag | **H1**, **H2**, **H3**, **H4**, **H5**, or **H6** | This property defines the heading tag for the product title. If the quick view module is at the top of the page, this property should be set to **H1** to meet accessibility standards. |
+| Heading tag | **H1**, **H2**, **H3**, **H4**, **H5**, or **H6** | This property defines the heading tag for the product title. If the quick view module is at the top of the page, set this property to **H1** to meet accessibility standards. |
 | Allow custom price | **True** or **False** | If this property is set to **True**, the user can enter a custom price. |
-| Minimum price | Integer | This property is applicable only if the **Allow custom price** property is set to **True**. It defines the minimum price that the user can enter (for example, $1). |
-| Maximum price | Integer | This property is applicable only if the **Allow custom price** property is set to **True**. It defines the maximum price that the user can enter (for example, $1,000). |
+| Minimum price | Integer | This property applies only if the **Allow custom price** property is set to **True**. It defines the minimum price that the user can enter (for example, $1). |
+| Maximum price | Integer | This property applies only if the **Allow custom price** property is set to **True**. It defines the maximum price that the user can enter (for example, $1,000). |
 
 ## Commerce site builder settings
 
-Like the buy box module, the quick view module respects the settings at **Site Settings \> Extensions \> Add product to cart**. However, the **Navigate to cart page** setting is ignored, because it's inconsistent with the purpose of the quick view module, which is to enable users to browse multiple products on a list page and add them to the cart without moving away from the list page.
+Like the buy box module, the quick view module respects the settings at **Site Settings \> Extensions \> Add product to cart**. However, the **Navigate to cart page** setting is ignored, because it's inconsistent with the purpose of the quick view module. This purpose is to enable users to browse multiple products on a list page and add them to the cart without moving away from the list page.
 
 ## Add a quick view module to a product collection module
 
-A quick view module can be added to the product collection and search results modules.
+You can add a quick view module to the product collection and search results modules.
 
 To add a quick view module to a product collection module in Commerce site builder, follow these steps:
 

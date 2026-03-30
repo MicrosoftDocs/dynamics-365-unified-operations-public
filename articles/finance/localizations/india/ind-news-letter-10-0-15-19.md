@@ -2,7 +2,7 @@
 title: What's new or changed for the Indian GST localization in 10.0.15-10.0.19
 description: Learn about new or changed functionality for Indian Goods and Services Tax (GST) features in Microsoft Dynamics 365 Finance versions 10.0.15 through 10.0.19.
 author: prabhatb
-ms.author: prabhatb
+ms.author: johnmichalak
 ms.topic: whats-new
 ms.custom:
   - bap-template

@@ -1,11 +1,10 @@
 ---
 title: Cart module
-description: This article covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about cart modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,7 +18,7 @@ ms.custom:
 
 This article covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-A cart module shows the items that have been added to the cart before the customer proceeds to checkout. The module also shows an order summary and lets the customer apply or remove promotional codes.
+A cart module shows the items added to the cart before the customer proceeds to checkout. The module also shows an order summary and lets the customer apply or remove promotional codes.
 
 The cart module supports signed-in checkout and guest checkout. It also supports a **Back to shopping** link. You can configure the route for this link at **Site Settings \> Extensions \> Routes**.
 
@@ -27,24 +26,24 @@ The cart module renders data based on the cart ID, which is a browser cookie ava
 
 The following image shows an example of a cart page on the Fabrikam site.
 
-![Example of a cart module on the Fabrikam site.](./media/cart2.PNG)
+:::image type="content" source="./media/cart2.PNG" alt-text="Screenshot of a cart module on the Fabrikam site.":::
 
-The following image shows an example of a cart page on the Fabrikam site. In this example, there is a handling fee for a line item.
+The following image shows an example of a cart page on the Fabrikam site. In this example, there's a handling fee for a line item.
 
-![Example of a cart module with a handling fee for a line item.](./media/ecommerce-handling-fee.png)
+:::image type="content" source="./media/ecommerce-handling-fee.png" alt-text="Screenshot of a cart module with a handling fee for a line item.":::
 
 ## Cart module properties and slots
 
 | Property | Values | Description |
 |----------------|--------|-------------|
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A heading for the cart, such as "Shopping bag" or "Items in your cart." |
-| Show out of stock errors | **True** or **False** | If this property is set to **True**, the cart page will show stock-related errors. We recommend that you set this property to **True** if inventory checks are applied on the site. |
-| Show shipping charges for line items | **True** or **False** | If this property is set to **True**, cart line items will show the shipping charges, if this information is available. This feature isn't supported in the Fabrikam theme, because users select shipping only in the checkout flow. However, this feature can be turned on in other workflows if it's applicable. |
+| Show out of stock errors | **True** or **False** | If this property is set to **True**, the cart page shows stock-related errors. We recommend that you set this property to **True** if inventory checks are applied on the site. |
+| Show shipping charges for line items | **True** or **False** | If this property is set to **True**, cart line items show the shipping charges, if this information is available. This feature isn't supported in the Fabrikam theme, because users select shipping only in the checkout flow. However, this feature can be turned on in other workflows if it's applicable. |
 | Show available promotions| **True** or **False** | If this property is set to **True**, the cart shows available promotions, based on items in the cart. This capability is available in the Dynamics 365 Commerce 10.0.16 release. |
 
 ## Modules that can be used in a cart module
 
-- **Text block** – This module supports custom messaging in the cart module. The messages are driven by the content management system (CMS). Any message can be added, such as "For issues with your order, contact 1-800-Fabrikam."
+- **Text block** – This module supports custom messaging in the cart module. The content management system (CMS) generates the messages. Any message can be added, such as "For issues with your order, contact 1-800-Fabrikam."
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information on this module, see [Store selector module](store-selector.md).
 
 ## Module properties
@@ -56,7 +55,7 @@ The following cart module settings can be configured at **Site Settings \> Exten
 - **Back to shopping** – This property is used to specify the route for the **Back to shopping** link. The route can be configured at the site level, allowing retailers to take the customer back to the home page or any other page on the site.
 
 > [!IMPORTANT]
-> In the Dynamics 365 Commerce 10.0.14 release and later, items in the cart are aggregated based on the settings that are defined in the online functionality profile for the online store in Commerce headquarters. For more information about how to create an online functionality profile and set the properties that are required for aggregation, see [Create an online functionality profile](online-functionality-profile.md).
+> In the Dynamics 365 Commerce 10.0.14 release and later, items in the cart are aggregated based on the settings defined in the online functionality profile for the online store in Commerce headquarters. For more information about how to create an online functionality profile and set the properties that are required for aggregation, see [Create an online functionality profile](online-functionality-profile.md).
 
 ## Commerce Scale Unit interaction
 
