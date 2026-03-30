@@ -99,3 +99,6 @@ For example, if a rule is set at the **Header** level, you'll see the financial 
 If a rule is set at the **Account** level, the rule runs when you create a new line, change the account field, or save the record:
 
 [![Financial tags automatically populated on a journal line by a defaulting rule.](./media/FinTagRuleLineDefaulting.png)](./media/FinTagRuleLineDefaulting.png)
+
+> [!NOTE]
+> Every journal or document is responsible for calling the defaulting engine for its own scenarios. Defaulting behavior may differ between documents based on the document's implementation. The above examples are generally the expected behavior, but technically, the defaulting can be slightly different between documents.
