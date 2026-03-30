@@ -21,6 +21,7 @@ This article describes the steps that are required to set up and print the gener
 
 Before you print the general ledger report, the following prerequisites must be met:
 
+
 - The legal entity must have an address in a country/region that's within the LATAM localization.
 - The country/region-specific LATAM feature and the general feature must be enabled.
 - The following ER configurations must be imported from the Global repository:
