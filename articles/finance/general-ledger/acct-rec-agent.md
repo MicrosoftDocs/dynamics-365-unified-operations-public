@@ -4,7 +4,7 @@ description: Learn about the Account Reconciliation Agent in Microsoft Dynamics 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 04/30/2025
+ms.date: 03/30/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -21,6 +21,9 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The Account Reconciliation Agent represents a transformative step toward a continuous financial close and offers significant benefits to Microsoft's customers. With it, we shift away from a reactive approach that relies on Microsoft SQL Server Reporting Services (SSRS) reports for reconciliation. In place of that approach, we introduce a proactive experience. The innovative **Account reconciliation** workspace raises exceptions and uses an intelligent agent to evaluate those exceptions and provide recommended actions.
+
+>[!NOTE]
+> We're enhancing the Account Reconciliation Agent to give customers more configuration flexibility and predictable credit consumption. Until these improvements are release, this agent requires activation by the Microsoft team. To request activiation and be guided through the process, complete this [form](https://forms.office.com/r/wCREkgRH6D). 
 
 Here are some of the benefits:
 
