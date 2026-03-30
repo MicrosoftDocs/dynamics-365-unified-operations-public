@@ -4,7 +4,7 @@ description: Learn how to complete cash application in advanced bank reconciliat
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 11/19/2025
+ms.date: 03/30/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -82,9 +82,9 @@ To use matching rules to automatically settle open customer invoices, including 
 14. Select **OK** to run the automatic matching.
 
 > [!IMPORTANT]
-> If the feature **Enable cash discount support for settle customer invoice matching rules** is enabled, the system supports automatic application of customer cash discounts during bank reconciliation settlement when customer invoices are settled through reconciliation rules. This enhancement ensures that cash discounts are applied consistently, whether invoices are settled manually or automatically through bank reconciliation, eliminating residual open balances caused by unapplied discounts.
-> A new parameter is available on **Settle customer invoice** bank reconciliation rule to define whether to **Search for invoice cash discount**. When set to **Yes**, the reconciliation process evaluates whether a cash discount applies during settlement.
-> If grace period is defined on the **Method of payment** selected during invoice posting, it is also taken into consideration when applying cash discount.
+> If the **Enable cash discount support for settle customer invoice matching rules** feature is enabled, the system supports automatic application of customer cash discounts during bank reconciliation settlement when customer invoices are settled through reconciliation rules. This enhancement ensures that cash discounts are applied consistently, whether invoices are settled manually or automatically through bank reconciliation, eliminating residual open balances caused by unapplied discounts.
+> A new parameter is available on the **Settle customer invoice** bank reconciliation rule that defines if invoice cash discounts are applied. When the **Search for invoice cash discount** field is set to **Yes**, the reconciliation process evaluates whether a cash discount applies during settlement.
+> If grace period is defined on the **Method of payment** selected during invoice posting, it's also taken into consideration when applying cash discount.
 
 ### Generate customer payments
 
