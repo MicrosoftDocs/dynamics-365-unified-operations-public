@@ -40,7 +40,7 @@ Don't directly modify the following dimension framework tables through SQL state
 - **DimensionAttributeValueGroupCombination**
 - **DimensionAttributeLevelValue**
 
-Because the dimension framework is insert-only and never deletes records, these tables can grow very large when financial dimensions are misused to track highly variable data such as serial numbers, dates, or document numbers. These values are rarely reused across transactions, which prevents the framework's deduplication from working as designed. For guidance on identifying and addressing this pattern, see [Highly variable dimensions](../../../finance/general-ledger/high-var-dimensions.md).
+Because the dimension framework is insert-only and never deletes records, these tables can grow very large when financial dimensions are misused to track highly variable data such as serial numbers, dates, or document numbers. These values are rarely reused across transactions, which prevents the framework's deduplication from working as designed. For guidance on identifying and addressing this pattern, see [Highly variable dimensions](../../../finance/general-ledger/cost-accounting/high-var-dimensions.md).
 
 The **DimensionAttributeValueCombinationStatus** and **DimensionAttributeValueGroupStatus** tables are exceptions. These tables are validation cache tables that exist only for performance reasons. You can truncate them without causing data corruption. Truncating them only affects the time it takes to validate combinations against the account structure until the cache is rebuilt.
 
