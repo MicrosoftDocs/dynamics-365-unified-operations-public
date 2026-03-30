@@ -21,7 +21,7 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 >[!NOTE]
-> We're enhancing the Account Reconciliation Agent to give customers more configuration flexibility and predictable credit consumption. Until these improvements are release, this agent requires activation by the Microsoft team. To request activiation and be guided through the process, complete this [form](https://forms.office.com/r/wCREkgRH6D)
+> Microsoft is enhancing the Account Reconciliation Agent to give customers more configuration flexibility and predictable credit consumption. Until these improvements are released, the Microsoft team must activate this agent. To request activation and be guided through the process, complete this [form](https://forms.office.com/r/wCREkgRH6D).
 
 This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 
@@ -160,7 +160,7 @@ To set up the connectors, follow these steps:
     You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
 
 1. At the top of the page, select **New connection**.
-1. Search for the Fin & Ops Apps (Dynamics 365) connection.
+1. Search for the **Fin & Ops Apps (Dynamics 365)** connection.
 1. Select **Create**, and follow the on-screen instructions to create the connector. When you're prompted to sign in, sign in as the intended agent identity.
 You're returned to the **Connections** page. The new connector appears at the bottom of the list and is named after the agent identity that you signed in as when you created it.
 
