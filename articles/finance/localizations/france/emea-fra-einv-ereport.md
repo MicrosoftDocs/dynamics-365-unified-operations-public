@@ -120,10 +120,13 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 
 ## Configure electronic document parameters
 
+Electronic documents are preconfigured as a result of the globalization features deployment to the service, if **Activate application setup* option was enabled during the deployment. This chapter is provided for information purpose mainly, or if you decide to ammend the standard system setup.
+
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the following tables.
    - **Customer Invoice journal**
-   - **Project invoice**   
+   - **Project invoice**
+   - **ZZZZZZZZZZZZZZ**
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
 > [!NOTE]
@@ -144,6 +147,8 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 
 > [!NOTE]
 > If you created derived equivalents of the earlier Electronic Reporting configurations, use them instead of the standard configurations.
+
+## Configure integration channels
 
 1. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
 1. In the **Channel** field, enter **EdiExport**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
