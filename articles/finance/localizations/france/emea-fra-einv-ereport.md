@@ -45,8 +45,11 @@ Before you start, make sure these prerequisites are in place:
   > [!NOTE]
   > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and make read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
 
-- In the **Feature management** workspace, on the **All** tab, enable the **Electronic invoicing documents statuses handlingZZZZZZZZZ** and **ZZZZZZZZZZZZZZZZZZZZZZZ** features. If thess features don't appear on the page, select **Check for updates**. Select the features consequently, and then select **Enable now** for each of them.
-  
+- In the **Feature management** workspace, on the **All** tab, enable the following features. If thess features don't appear on the page, select **Check for updates**. Select the features consequently, and then select **Enable now** for each of them. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+   - **Electronic invoicing documents statuses handlingZZZZZZZZZ**
+   - **ZZZZZZZZZZZZZZZZZZZZZZZ**
+   - **Export channels for electronic invoicing integration**
+    
 ## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
 Configure the common part of the Azure resources required for Electronic invoicing functioning. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
@@ -379,20 +382,19 @@ After you complete the required configuration steps, generate and submit electro
 
 To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-
-
-### Inquiring statuses of submited e-invoices
-
-Follow these steps to submit the generated electronic invoices.
-
-1. In the **Feature management** workspace, confirm that the **Export channels for electronic invoicing integration** feature is enabled. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-1. In the **Channel** field, select the export channel you [created](#ExChannel), and then select **OK**.
-
 Check the submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 > [!NOTE]
 > Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
+
+### Inquiring statuses of submited e-invoices
+
+To enquire the initial status of the submitted electronic invoices from Edicom, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+1. In the **Channel** field, select the export channel you [created](#ExChannel), and then select **OK**.
+
+
 
 ### Update statuses of submited e-invoices
 
