@@ -57,7 +57,7 @@ Make the main account the first segment in the account structure, or as close to
 
 ### Don't rely solely on advanced rules
 
-Don't put an asterisk (\*) for every segment in the account structure and then rely entirely on advanced rules for validation. This approach is difficult to manage and often leads to user error during maintenance that can prevent the system from posting.
+Don't put an asterisk (\*) for every segment in the account structure and then rely entirely on advanced rules for validation. This approach is difficult to manage, often leads to user error during maintenance that can prevent the system from posting, and can cause performance issues during activation and transaction entry.
 
 ### Keep structures simple and purpose-driven
 
@@ -65,7 +65,7 @@ Consider your business needs, growth plan, and maintenance plan when designing s
 
 ## Preparing for activation
 
-Account structure activation syncs all unposted transactions to match the new structure. The more unposted transactions there are, the longer activation takes. The following practices help keep activation times reasonable.
+Account structure activation synchronizes all unposted transactions to match the new structure. The more unposted transactions there are, the longer activation takes. The following practices help keep activation times reasonable.
 
 ### Reduce unposted transactions before activating
 

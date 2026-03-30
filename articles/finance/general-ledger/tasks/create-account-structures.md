@@ -56,10 +56,10 @@ This article walks through the process of creating, activating, and deleting acc
 
 ## Activating account structures
 
-When you're satisfied with your new setup or a change to an account structure, you must activate it before it takes effect. During activation, the system validates the structure and then syncs all unposted transactions to match the new structure. Posted transactions aren't affected by account structure changes.
+When you're satisfied with your new setup or a change to an account structure, you must activate it before it takes effect. During activation, the system validates the structure and then synchronizes all unposted transactions to match the new structure. Posted transactions aren't affected by account structure changes.
 
 > [!NOTE]
-> Account structure activation is not the same as dimension activation. Account structure activation syncs unposted transactions to match your updated structure and runs as a batch job during normal operations. It can't be performed in maintenance mode.
+> Account structure activation is not the same as dimension activation. Account structure activation synchronizes unposted transactions to match your updated structure and runs as a batch job during normal operations. It can't be performed in maintenance mode.
 
 The activation process runs as a batch job. Depending on the volume of unposted transactions, activation can take anywhere from a few seconds to several hours. While activation is running, the structure is marked as **Activating** on the **Account structures** page.
 
