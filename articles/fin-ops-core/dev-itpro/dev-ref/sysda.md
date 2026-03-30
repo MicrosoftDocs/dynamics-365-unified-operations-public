@@ -105,6 +105,7 @@ It supports all seven comparison expressions: namely,
 - \<
 - \<=
 - LIKE
+- IN
 
 It supports ORDER BY clauses.
 
@@ -313,6 +314,35 @@ ttsbegin;
 ttscommit;
 
 info("Number of rows deleted: " + any2Str(t.RowCount()));
+```
+
+## IN keyword
+
+The SysDaInExpression class filters rows based on values from a list. It is a strongly typed container that is derived from the Array class.
+The following example filters rows where the **TransType** value is equal to either Sales or Cust.
+
+```xpp
+CustTrans custTrans;
+SysDaQueryObject qe = new SysDaQueryObject(custTrans);
+Array array = new Array(Types::Integer);
+
+array.value(1, LedgerTransType::Sales);
+array.value(2, LedgerTransType::Cust);
+
+qe.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly10;
+qe.whereClause(new SysDaInExpression(
+    new SysDaFieldExpression(custTrans, fieldStr(CustTrans, TransType)),
+    new SysDaValueExpression(array.pack())));
+
+SysDaSearchObject so = new SysDaSearchObject(qe);
+SysDaSearchStatement ss = new SysDaSearchStatement();
+
+while (ss.findNext(so))
+{
+    info(strFmt('%1 - %2', custTrans.AccountNum, custTrans.TransType));
+}
+
+//so.toString: WHILE SELECT FIRSTONLY10 FROM CustTrans WHERE (CustTrans.TransType in System.Object[])
 ```
 
 ## Clauses
