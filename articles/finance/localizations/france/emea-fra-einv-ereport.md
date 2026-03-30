@@ -120,7 +120,7 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 
 ## Configure electronic document parameters
 
-Electronic documents are preconfigured as a result of the globalization features deployment to the service, if **Activate application setup* option was enabled during the deployment. This chapter is provided for information purpose mainly, or if you decide to ammend the standard system setup.
+Electronic documents are preconfigured as a result of the globalization features deployment to the service, if **Activate application setup** option was enabled during the deployment. This chapter is provided for information purpose mainly, or if you decide to ammend the standard system setup. If no amendment required, you can skip this chapter and go to the **Configure integration channels** chapter.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the following tables.
