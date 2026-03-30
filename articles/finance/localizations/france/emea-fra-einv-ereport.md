@@ -367,18 +367,21 @@ Set up units of measure.
 
 ## Issue electronic invoices
 
-After you complete the required configuration steps, generate and submit electronic invoices for posted invoices: 
+After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. Submission process consists of of 3 major steps. 
+
+- **Submission of e-invoices to Edicom** - at this stage, the system generates the XMLs of e-invoices and submit it to Edicom.
+- **Inquiring statuses of submited e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Falied** if the submited invoice is **Rejected** by Edicom due to various reasons or **Pending service response** if the submited invoice is successfully validated by Edicom and the system is ready for further processing.
+- **Update statuses of submited e-invoices** - at this stage, D365 and Edicom can intercommunicate echanging differnet e-invoices statuses unitl the concluding status is reached or due to pre-configured timeout.
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
-### Start submission of electronic documents
+### Submission of e-invoices to Edicom
 
-go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-> [!IMPORTANT]
-> In current implementations, the standard submission procedure only generates electronic invoices and stores them in the service. It doesn't submit them. To submit invoices, complete these extra steps.
 
-### Run submission process in export channels
+
+### Inquiring statuses of submited e-invoices
 
 Follow these steps to submit the generated electronic invoices.
 
@@ -391,7 +394,7 @@ Check the submission results at **Organization administration** \> **Periodic** 
 > [!NOTE]
 > Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
 
-### Update documents statuses
+### Update statuses of submited e-invoices
 
 QQQQQQQQQQQQQQQQQQQQQ
 
