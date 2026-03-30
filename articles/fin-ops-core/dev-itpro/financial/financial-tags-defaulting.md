@@ -54,7 +54,7 @@ Rules execute at specific trigger levels defined in the `FinTagRuleTriggerLevel`
 | `PrimaryAccountModified` | When the primary account field changes. |
 | `OffsetAccountModified` | When the offset account field changes. |
 
-Defaulting occurs both at the form level (user creates or modifies a record) and at the entity level (during data import).
+Defaulting occurs both at the form level (user creates or modifies a record) and at the entity level (during data import). Each journal or document is responsible for calling the defaulting engine for its own scenarios. While rules generally execute on create, modify, and save, the uptake logic in each document's implementation determines when the defaulting engine is invoked, so behavior may differ slightly between documents.
 
 ## Defaulting Rule Condition Builder
 

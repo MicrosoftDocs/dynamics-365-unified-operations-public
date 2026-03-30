@@ -51,7 +51,7 @@ Use financial tags instead of financial dimensions when the data doesn't appear 
 The data flow for financial tags across a transaction is:
 
 1. **Voucher entry** - Tags are entered or defaulted on journal lines.
-2. **Defaulting** - Rules copy tags from header to line or from main account to offset account.
+2. **Defaulting** - Rules copy tags from header to line or from main account to offset account. Users may also define additional defaulting rules to automatically populate the financial tag.
 3. **Posting** - Tag values are persisted with the subledger and general ledger entries.
 4. **Edit after posting** - Tags can be modified on posted vouchers via the Edit Voucher tool (**General Ledger > Inquiries and reports > Voucher transactions > Edit Voucher**).
 5. **Archival** - Tags are included in archive-to-history and archive-to-data-lake operations.
@@ -66,7 +66,7 @@ Records in the **FinTag** table are immutable and reused based on a record-level
 | Table | Description | Record creation |
 |---|---|---|
 | **FinTagConfiguration** | Each row corresponds to a column in the **FinTag** table, storing the user-defined name and backing entity. Maximum 20 records per company. Deletes are not permitted because they would break existing tag references. | **Financial Tags** form or **FinancialTagConfiguration** entity. |
-| **FinTag** | Each record holds up to 20 values, one per column. The combination serves as a foreign key on consuming tables. Updates and deletes are not permitted; changes create a new record to preserve data integrity when multiple consumers reference the same record. A hash is stored for lookup and can be regenerated with `dbo.FinTagCreateHash()`. | Created whenever a user specifies a new combination of values. |
+| **FinTag** | Each record holds up to 20 values, one per column. The combination serves as a foreign key on consuming tables. Updates and deletes are not permitted; changes create a new record to preserve data integrity when multiple consumers reference the same record. A hash is stored for lookup and can be regenerated with `dbo.FinTagCreateUnicodeHash()`. | Created whenever a user specifies a new combination of values. |
 | **FinTagCustomListValue** | Stores the user-defined values for **Custom List** tags. References **FinTagConfiguration**; values are deleted if the tag type changes. | Created via the **Tag Values** button on the Financial Tags form, or through entity import. |
 | **FinTagParameters** | Holds the financial tag delimiter. This value cannot be changed after it has been set. | Created once. |
 | **FinTagTagNameValueView** | A pivot view that transforms each tag value into a separate row. Used to populate the **FinTagGridLookup** form. | N/A (view). |
