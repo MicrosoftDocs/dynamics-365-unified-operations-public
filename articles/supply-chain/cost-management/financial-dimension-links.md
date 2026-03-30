@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: InventSiteDimensionLink
 ms.topic: how-to
-ms.date: 03/23/2026
+ms.date: 03/30/2026
 ms.custom:
   - bap-template
 ---
@@ -90,7 +90,6 @@ When you deactivate a financial dimension link, the following changes occur:
 
 - The link between the site inventory dimension and the financial dimension is removed.
 - The linked financial dimension isn't assigned the dimension value specified for each site.
-
 - You can choose a different financial dimension to link to the site inventory dimension.
 
 To deactivate a financial dimension link, follow these steps:
