@@ -141,7 +141,7 @@ To set up source system disposition codes, follow these steps:
 
 ### Set up return item policies
 
-Return item policies let you control the conditions under which the system allows items to be returned. You can set policies for each item, groups of items, or all items, as you require. To set up your policies, follow these steps.
+Return item policies let you control the conditions under which the system allows items to be returned. You can set policies for each item, groups of items, or all items, as you require. To set up your policies, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Return items** \> **Return item policies**.
 1. On the Action Pane, select **New** to create a policy.

@@ -67,7 +67,7 @@ Follow these steps to set up your customer price attributes.
 
 ### Assign customer price attribute values to customers
 
-Customer price attributes are initially assigned the default value that's set up for the attribute. If you must assign a specific value for a customer, follow these steps.
+Customer price attributes are initially assigned the default value that's set up for the attribute. If you must assign a specific value for a customer, follow these steps:
 
 1. Go to **Sales and marketing \> Customers \> All customers**.
 1. Select a customer in the grid.
@@ -89,7 +89,7 @@ Follow these steps to set up your sales order price attributes.
 
 ### Assign sales order price attribute values to sales orders
 
-Sales order price attributes are initially assigned the default value that's set up for the attribute. If you must assign a specific value for an order, follow these steps.
+Sales order price attributes are initially assigned the default value that's set up for the attribute. If you must assign a specific value for an order, follow these steps:
 
 1. Go to **Sales and marketing \> Orders \> All sales orders**.
 1. Select an order in the grid, or create a new one.

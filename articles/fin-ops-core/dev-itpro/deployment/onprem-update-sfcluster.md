@@ -26,7 +26,7 @@ This article provides guidance about how to update your Microsoft Azure Service 
 
 Dynamics 365 Finance + Operations (on-premises) environments require a specific version of the Service Fabric runtime. You can find the minimum Service Fabric runtime version that your version of Finance + Operations requires in [Minimum Azure Service Fabric runtime](.\onprem-compatibility.md#minimum-azure-service-fabric-runtime).
 
-To update the Service Fabric runtime for your cluster, follow these steps.
+To update the Service Fabric runtime for your cluster, follow these steps:
 
 1. From a node that belongs to the Service Fabric cluster, run the following PowerShell commands to get a list of available Service Fabric runtime versions.
 

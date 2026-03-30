@@ -4,7 +4,7 @@ description: Access links to the programs, tools, and processes available that a
 author: alejandra-cabrales
 ms.author: alcabral
 ms.topic: article
-ms.date: 01/04/2021
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started  
 audience: IT Pro
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-These topics describe the programs, tools, and processes available related to the implementation lifecycle of your finance and operations project.
+These topics describe the programs, tools, and processes related to the implementation lifecycle of your finance and operations project.
 
 ## Programs
 

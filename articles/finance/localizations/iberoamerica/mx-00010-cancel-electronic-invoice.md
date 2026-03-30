@@ -21,7 +21,7 @@ This article explains how to cancel a Comprobante Fiscal Digital por Internet (C
 
 ## Cancel a CFDI electronic invoice
 
-To cancel a CFDI electronic invoice, follow these steps.
+To cancel a CFDI electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Inquiries and reports \> CFDI (electronic invoices)**.
 1. Select an electronic invoice that has a status of **Approved**.
@@ -40,7 +40,7 @@ To specify the reason for the cancellation, go to **Functions \> Cancel CFDI** o
 
 ## Manually cancel a CFDI electronic invoice
 
-To manually cancel a CFDI electronic invoice, follow these steps.
+To manually cancel a CFDI electronic invoice, follow these steps:
 
 1. Select an invoice that has a status of **Approved**.
 1. On the Action Pane, select **Functions \> Manual cancel**.
@@ -52,7 +52,7 @@ To manually cancel a CFDI electronic invoice, follow these steps.
 
 If a CFDI document was canceled in a PAC application but has a status of **In progress** a long time after cancellation, you can use the **Update electronic document status** periodic task to update the status a CFDI document. 
 
-To manually update the status of a CFDI document that's in progress after cancellation, follow these steps.
+To manually update the status of a CFDI document that's in progress after cancellation, follow these steps:
 
 1. Go to **Accounts receivable \> Invoices \> E-invoices \> Update electronic invoice status**.
 1. Filter the records to find those where the status must be updated.

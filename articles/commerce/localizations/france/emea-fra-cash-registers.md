@@ -46,7 +46,7 @@ The following table shows the Dynamics 365 Commerce documentation that is relate
 | <p>High-level design</p><p>Technical architecture</p> | This documentation describes the software product, its components, and data flows, and also the technical design of the product. | <p>[Commerce home page](../../welcome.md) and nested links</p><p>[Dynamics 365 Commerce architecture overview](../../dev-itpro/commerce-architecture.md)</p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france)</p> |
 | <p>Functional specification</p><p>User documentation</p> | This documentation describes the functions of the software. | <p>[Commerce home page](../../welcome.md) and nested links</p><p>[France-specific POS features](#france-specific-pos-features)</p> |
 | Versioning strategy | <p>This documentation describes the versioning approach and the version management procedure for the software product.</p><p>The current major Dynamics 365 Commerce version is **10.0**. Service updates for this version are indicated by a consecutive number after the version number: **10.0.X**. For more information about the software lifecycle policy and service updates, use the links in this table.</p>| <p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p><p>[Software lifecycle policy and cloud releases](../../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)</p><p>[Service update availability](../../../fin-ops-core/dev-itpro/get-started/public-preview-releases.md)</p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)</p><p>[What's new or changed in Dynamics 365 Commerce](../../get-started/whats-new-home-page.md)</p><p>[Dynamics 365 Commerce component versioning requirements](../../dev-itpro/arch-component-versioning.md)</p> |
-| Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../../fin-ops-core/fin-ops/lcs/country-region.md) |
+| Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../../fin-ops-core/fin-ops/lcs/globalization-resources.md) |
 | Maintenance documentation | This documentation describes implementation and maintenance of the software solution. | <p>[Service description](../../../fin-ops-core/dev-itpro/get-started/service-description.md)</p><p>[Before you buy](../../../fin-ops-core/fin-ops/get-started/before-you-buy.md)</p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)</p><p>[Implementation lifecycle management home page](../../../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md)</p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../../dev-itpro/Synchronize-installers.md)</p><p>[Set up Commerce for France](#set-up-commerce-for-france)</p><p>[Compliance checklist](#compliance-checklist)</p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/support/)</p><p>[Submit service requests](../../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)</p><p>[One Version service updates overview](../../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p> |
 | Auditor documentation | This documentation describes how to access the data, the files, and the process that are used by the authorities. | [Fiscal archive for France](emea-fra-fiscal-archive.md) |
 
@@ -491,7 +491,7 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 #### Configure the fiscal registration process
 
-To enable the fiscal registration process for France in Commerce headquarters, follow these steps.
+To enable the fiscal registration process for France in Commerce headquarters, follow these steps:
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
@@ -610,7 +610,7 @@ This section describes basic scenarios that you can complete to validate that yo
 
 #### Validate a sales transaction
 
-To validate a digitally signed sales transaction after it's completed, follow these steps.
+To validate a digitally signed sales transaction after it's completed, follow these steps:
 
 1. In POS, verify that all [France-specific fields](#configure-receipt-formats) of the receipt, except the fields that are related to a receipt copy, are printed and have correct values. To check some of the fields, you must complete the next step.
 1. In Commerce headquarters, follow these steps:
@@ -635,7 +635,7 @@ To validate a digitally signed sales transaction after it's completed, follow th
 
 #### Validate a shift
 
-To validate a digitally signed shift after it's closed, follow these steps.
+To validate a digitally signed shift after it's closed, follow these steps:
 
 1. In POS, verify that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you must complete the next step.
 1. In Commerce headquarters, follow these steps:
@@ -661,7 +661,7 @@ To validate a digitally signed shift after it's closed, follow these steps.
 
 #### Validate an audit event
 
-To validate a digitally signed audit event, follow these steps.
+To validate a digitally signed audit event, follow these steps:
 
 1. In Commerce headquarters, run the P-job to download audit event data to Commerce headquarters.
 1. Open the **Audit events** page, and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date**, and **Time** fields to find the event. The **Log string** field contains the description of the event.

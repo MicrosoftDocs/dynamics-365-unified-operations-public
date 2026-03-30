@@ -64,17 +64,19 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
 1. Make a note of the redirect URIs for each device type. You need these URIs when you create the native application in AD&nbsp;FS.
 
     For V4 of the Warehouse Management mobile app, the redirect URIs are as follows:
-        - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
-        - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
-        - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
+
+    - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/{clientId}*
+    - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+    - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
     > For Windows, replace the `{clientId}` placeholder with the client ID of the application that you create in AD&nbsp;FS. The client ID is a unique identifier for the application.
 
     For V3 of the Warehouse Management mobile app, the redirect URIs are as follows:
-        - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
-        - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
-        - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
+
+    - **Windows:** *ms-appx-web://microsoft.aad.brokerplugin/S-1-15-2-3857744515-191373067-2574334635-916324744-1634607484-364543842-2321633333*
+    - **Android:** *msauth://com.microsoft.warehousemanagement/hpavxC1xAIAr5u39m1waWrUbsO8=*
+    - **iOS:** *msauth.com.microsoft.WarehouseManagement://auth*
 
     > [!NOTE]
     > The redirect URIs aren't required for the device code flow. However, you must provide them if you want to use the user name and password authentication method.
@@ -98,7 +100,7 @@ To enable the Warehouse Management mobile app to interact with a specific Dynami
 
 ## <a name="user-azure-ad"></a>Set up a mobile-device user account in Finance + Operations (on-premises)
 
-To create a user that corresponds to the user credentials for the Warehouse Management mobile app, follow these steps.
+To create a user that corresponds to the user credentials for the Warehouse Management mobile app, follow these steps:
 
 1. In Supply Chain Management, go to **System administration** \> **Users** \> **Users**.
 1. Create a user.
@@ -110,7 +112,7 @@ To create a user that corresponds to the user credentials for the Warehouse Mana
 
 If a device is lost or compromised, you must remove its ability to access Finance + Operations (on-premises). If the lost or compromised device uses the device code flow for authentication, you must disable the associated user in Active Directory. By disabling the user, you revoke access for any device that uses the device code associated with that user. For this reason, we recommend that you have one Active Directory user per device.
 
-To disable a user in Active Directory, follow these steps.
+To disable a user in Active Directory, follow these steps:
 
 1. In the Active Directory Users and Computers tool, find the user who is associated with the device.
 1. Select and hold (or right-click) the user, then select **Disable account** to disable the user's account.

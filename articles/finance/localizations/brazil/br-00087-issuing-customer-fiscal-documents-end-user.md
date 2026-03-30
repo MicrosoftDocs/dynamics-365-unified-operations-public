@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can issue a fiscal document to a customer who bought goods from a fiscal est
 
 The following procedure uses the BRMF demo company.
 
-To issue a fiscal document to a customer who bought goods from the fiscal establishment, follow these steps.
+To issue a fiscal document to a customer who bought goods from the fiscal establishment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
 1. Use the Quick Filter to find records. For example, filter on the **Account** field with a value of "BRMF-000004".

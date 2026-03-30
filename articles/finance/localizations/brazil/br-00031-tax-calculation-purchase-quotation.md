@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 This article describes how to create a purchase request for quotation (RFQ) in Brazil with Microsoft Dynamics 365 Finance.
 
-You can create an RFQ and enter the applicable fiscal information when you enter the vendor reply. When the RFQ is accepted, a purchase order is created that has the same fiscal information that is entered in the RFQ. 
+You can create an RFQ and enter the applicable fiscal information when you enter the vendor reply. When you accept the RFQ, you create a purchase order that has the same fiscal information that you entered in the RFQ. 
 
 The following procedure uses the BRMF demo company.
 
-To to create a purchase request for quotation (RFQ), follow these steps.
+To create a purchase request for quotation (RFQ), follow these steps:
 
 1. In Dynamics 365 Finance, go to **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
 1. Select **New**.

@@ -21,7 +21,7 @@ According to Legislative Decree no. 127/2015, article 1, and Decree Law 78/2010,
 
 ### Prerequisites
 
-Before you set up the **Quarterly VAT communication (LIPE)** report, follow these steps.
+Before you set up the **Quarterly VAT communication (LIPE)** report, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Registration numbers** FastTab, in the **Italy** section, in the **Fiscal code** field, enter your organization's fiscal code. (This code has between 11 and 16 digits.)

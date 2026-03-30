@@ -43,7 +43,7 @@ On the **Human resources shared parameters** page, you can create benefit email 
 
 ## Create a new email ID template
 
-To create a new email ID template, follow these steps.
+To create a new email ID template, follow these steps:
 
 1. Go to **System email templates**.
 2. Select **New**.
@@ -54,7 +54,7 @@ To create a new email ID template, follow these steps.
 
 ## Send email to employees
 
-To send an email to a new hire who hasn't started yet, follow these steps.
+To send an email to a new hire who hasn't started yet, follow these steps:
 
 1. Open the **Benefits management** workspace.
 2. Select the tile for the group of employees that you want to send the email to.

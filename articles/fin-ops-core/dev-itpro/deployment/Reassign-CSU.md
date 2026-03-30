@@ -57,7 +57,7 @@ This procedure and the next procedure must be completed during the planned downt
 
 ### Migrate channels to a new CSU
 
-To migrate channels to a new CSU, follow these steps.
+To migrate channels to a new CSU, follow these steps:
 
 1. On the **Store details** page, set the **Live channel database** field to the destination CSU database. Ensure that the modified CSU database is in the same database group as the original CSU database. You can find all database group settings on the **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group** form in headquarters.
 1. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.

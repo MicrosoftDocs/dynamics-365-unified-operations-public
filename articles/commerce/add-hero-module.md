@@ -1,11 +1,10 @@
 ---
 title: Content block module
-description: This article covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: Learn about content block modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/31/2024
+ms.date: 01/14/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -19,55 +18,55 @@ ms.custom:
 
 This article covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-A content block module is used to market products or promotions through a combination of images and text. For example, a retailer can add a content block module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.
+Use a content block module to market products or promotions through a combination of images and text. For example, a retailer can add a content block module to the home page of an e-commerce site to promote a new product and attract the attention of customers.
 
-A content block module is driven by data from the content management system (CMS). It's a stand-alone module that doesn't depend on any other modules on the page. A content block module can be put on any site page where a retailer wants to market or promote something (for example, products, sales, or features).
+A content block module uses data from the content management system (CMS). It's a stand-alone module that doesn't depend on any other modules on the page. A retailer can add a content block module to any site page where they want to market or promote something, such as products, sales, or features.
 
-## Examples of content block module in e-Commerce
+## Examples of content block module in e-commerce
 
-- A content block module can be used on the home page of an e-Commerce site to highlight promotions and new products.
-- A content block module can be used on a product details page to showcase product information.
-- Multiple content block modules can be put inside a carousel module to highlight multiple products or promotions.
+- Use a content block module on the home page of an e-commerce site to highlight promotions and new products.
+- Use a content block module on a product details page to showcase product information.
+- Add multiple content block modules inside a carousel module to highlight multiple products or promotions.
 
 ## Content block modules and themes
 
 Content block modules can support various layouts and styles based on a theme. For example, the Fabrikam theme supports three layout variations of a content block module: hero, feature, and tile. The hero layout shows an image on the background with text overlay. The feature layout shows an image and text side by side. The tile layout allows multiple content blocks in a tile format.
 
-In addition, the theme can expose different properties for each layout. A theme developer can build more layouts with more styles using the content block module.
+In addition, the theme can expose different properties for each layout. A theme developer can build more layouts with more styles by using the content block module.
 
 The following image shows an example of a content block module with a hero layout.
 
-![Example of a hero module.](./media/Hero.PNG)
+:::image type="content" source="./media/Hero.PNG" alt-text="Screenshot of a hero module.":::
 
 The following image shows an example of a content block module with a feature layout.
 
-![Examples of feature modules.](./media/Feature.PNG)
+:::image type="content" source="./media/Feature.PNG" alt-text="Screenshot of feature modules.":::
 
 ## Content block module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Image          | Image file | An image can be used to showcase a product or a promotion. An image can be uploaded to the image gallery, or an existing image can be used. |
-| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-| Paragraph      | Paragraph text | Hero modules support paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. Some of these capabilities can be overridden by the page theme that is applied to the module. |
-| Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Hero modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
+| Image          | Image file | Use an image to showcase a product or a promotion. Upload an image to the image gallery, or use an existing image. |
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, change the tag to meet accessibility requirements. |
+| Paragraph      | Paragraph text | Hero modules support paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. The page theme that you apply to the module can override some of these capabilities. |
+| Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Hero modules support one or more "call to action" links. If you add a link, include link text, a URL, and an ARIA label. Make ARIA labels descriptive to meet accessibility requirements. Configure links so that they open in a new tab. |
 
 ## Content block module properties exposed by the Fabrikam theme 
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Text placement | **Left**, **Right**, **Center** | This property defines the position of the text on the image. It only applies to the hero layout. |
-| Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. It only applies to the hero layout.|
-| Image placement       | **Left**,  **Right** | This property specifies if the image should be to the left or right of the text. It only applies to the feature layout.  |
+| Text placement | **Left**, **Right**, **Center** | Define the position of the text on the image. It only applies to the hero layout. |
+| Text theme     | **Light** or **Dark** | Define a color scheme for the text, based on the background image. For example, if the image has a dark background, apply a light theme to make the text more visible and to meet color contrast ratios for accessibility purposes. It only applies to the hero layout.|
+| Image placement       | **Left**,  **Right** | Specify if the image should be to the left or right of the text. It only applies to the feature layout.  |
 
 ## Add a content block module to a new page
 
-To add a hero module to a new page and set the required properties, follow these steps.
+To add a hero module to a new page and set the required properties, follow these steps:
 
-1. Go to **Templates**, and create a page template that is named **Content block template**.
+1. Go to **Templates**, and create a page template named **Content block template**.
 1. In the **Main** slot of the default page, add a hero module.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Use the hero template that you just created to create a page that is named **Content block page**.
+1. Use the hero template that you just created to create a page named **Content block page**.
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the hero module, and then select **OK**.
 1. In the outline tree on the left, select the content block module.

@@ -97,7 +97,7 @@ The process of configuring a new language for an e-commerce site has three steps
 
 #### Step 2: Add the language to a channel in site builder
 
-To add a language to a channel in site builder, follow these steps.
+To add a language to a channel in site builder, follow these steps:
 
 1. In Commerce site builder, open your site, and then open the **Channels** page in site settings.
 1. Select the name of the channel that you want to add the language to.
@@ -122,7 +122,7 @@ Dynamics 365 Commerce e-commerce sites can serve experiences that are defined ac
 
 The prerequisites and tasks that are associated with setting up a channel (online store) are beyond the scope of this document. For more information about how to set up an online channel in Commerce headquarters, see [Channel setup basics](channels-overview.md#channel-setup-basics). For information about the steps and requirements specific to online channels, see [Set up an online channel](channel-setup-online.md).
 
-To add a channel to your site in site builder, follow these steps.
+To add a channel to your site in site builder, follow these steps:
 
 1. In Commerce site builder, go to **Site settings \> Channels**. 
 1. Select **Add a channel**.
@@ -158,7 +158,7 @@ The steps for localizing content for pages, fragments, and media assets are simi
 
 #### Step 1: Export an XLIFF file
 
-To export an XLIFF file for a page, fragment, or image in site builder, follow these steps.
+To export an XLIFF file for a page, fragment, or image in site builder, follow these steps:
 
 1. Open the asset that you want to export base language content for, so that it can be localized.
 1. On the command bar, select **Localization \> Export XLIFF**.
@@ -183,7 +183,7 @@ For information about the schema that governs XLIFF files, see the [XLIFF 2.2 Sp
 
 #### Step 3: Import the localized XLIFF file
 
-To import an XLIFF file for an asset, follow these steps.
+To import an XLIFF file for an asset, follow these steps:
 
 1. In Commerce site builder, open the asset that you want to import an XLIFF file for.
 1. In the channel and locale picker in the upper right, select the channel and language that you're importing localized content for.

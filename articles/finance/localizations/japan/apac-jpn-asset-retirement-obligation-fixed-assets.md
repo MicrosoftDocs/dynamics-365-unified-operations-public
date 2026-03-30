@@ -4,7 +4,7 @@ description: Learn how the ARO liability is recognized, amortized, and accrued, 
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 03/21/2018
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Japan
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
+In Japan, you recognize asset retirement obligation (ARO) for fixed assets that have legal obligations at their retirement. This article explains how to recognize, amortize, and accrue the ARO liability, and how to retire the fixed asset and ARO liability.
 
-Asset retirement obligation (ARO) is used to distribute the retirement cost of an asset to its service life. ARO is initially recognized as a liability when you acquire or construct a fixed asset. The ARO liability is equal to the present value of the estimated retirement cost for the asset at the beginning of its service life. When the ARO liability is added to the acquisition cost of the fixed asset, the ARO liability cost is amortized throughout the service life of the fixed asset. Interest expense on the ARO liability is accrued at the discount rate, so that the final ARO liability reaches the initially estimated retirement cost. When the fixed asset is retired, the payable due is accounted for in the ARO liability account. No more expenses are accounted unless there is a difference from the original estimate. The following table shows a real-world example of the life cycle.
+Use asset retirement obligation (ARO) to distribute the retirement cost of an asset to its service life. You initially recognize ARO as a liability when you acquire or construct a fixed asset. The ARO liability equals the present value of the estimated retirement cost for the asset at the beginning of its service life. When you add the ARO liability to the acquisition cost of the fixed asset, you amortize the ARO liability cost throughout the service life of the fixed asset. You accrue interest expense on the ARO liability at the discount rate, so that the final ARO liability reaches the initially estimated retirement cost. When you retire the fixed asset, you account for the payable due in the ARO liability account. You don't account for any more expenses unless there's a difference from the original estimate. The following table shows a real-world example of the life cycle.
 
 | Item        | Content                                                                                                                                                                                   |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -35,7 +35,7 @@ Asset retirement obligation (ARO) is used to distribute the retirement cost of a
 ![T-account representation of the ARO transactions.](../media/aro-t-account.png) 
 
 ## Setup information
-To use ARO, you must complete the following setup tasks:
+To use ARO, complete the following setup tasks:
 
 -   Set up basic fixed asset parameters, such as a default Book, reason codes, and number sequences on the **Fixed assets parameters** page
 -   Define a fixed asset group on the **Fixed asset groups** page

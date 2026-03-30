@@ -20,7 +20,7 @@ This article explains how to create a credit note against a sales invoice in Mic
 
 ## Create a sales order
 
-To create a sales order, follow these steps.
+To create a sales order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Sales orders \> All sales orders**.
 1. Create a sales credit note for a taxable item.
@@ -40,7 +40,7 @@ To create a sales order, follow these steps.
 
 ## Post the invoice
 
-To post the invoice, follow these steps.
+To post the invoice, follow these steps:
 
 1. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
 1. In the **Quantity** field, select **All**.
@@ -53,7 +53,7 @@ To post the invoice, follow these steps.
 
 ## Validate the voucher
 
-To validate the voucher, follow these steps.
+To validate the voucher, follow these steps:
 
 1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 1. Select **Voucher**.

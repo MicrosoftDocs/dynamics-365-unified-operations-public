@@ -2,15 +2,14 @@
 title: European article numbering (EAN) location numbers
 description: Learn about European article numbering (EAN) location numbers, including an outline on EAN location numbers in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
-ms.topic: article
-ms.date: 12/07/2017
+ms.author: johnmichalak
+ms.topic: overview
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-ms.search.form: E
-ms.dyn365.ops.version: Version 1611
+ms.custom: 
+  - bap-template
 ---
 
 # European article numbering (EAN) location numbers
@@ -21,9 +20,9 @@ A European article numbering (EAN) location number is an electronic address that
 
 ## EAN location numbers in Microsoft Dynamics 365 Finance
 
-Departments, directorates, agencies, and other organizations in Denmark have EAN location numbers that uniquely identify a customer's billing address. An EAN location number can be defined as one category and type of registration ID. It's then used for a legal entity, customer, vendor, or any other party that supports registration IDs.
+Departments, directorates, agencies, and other organizations in Denmark have EAN location numbers that uniquely identify a customer's billing address. You can define an EAN location number as one category and type of registration ID. Use it for a legal entity, customer, vendor, or any other party that supports registration IDs.
 
-An EAN location number has a fixed length of 13 digits. This number must be processed in its entirety. Here's an example of an EAN location number:
+An EAN location number has a fixed length of 13 digits. You must process this number in its entirety. Here's an example of an EAN location number:
 
 5790987654321
 

@@ -226,7 +226,7 @@ Depending on your on-hand quantities, the work quantities that are created might
 
 Later in this scenario, you'll use the Warehouse Management mobile app (or an emulator), where you must identify the license plate to complete the picking and replenishment scenarios.
 
-To find the license plate IDs that you'll need later, follow these steps.
+To find the license plate IDs that you'll need later, follow these steps:
 
 1. Go to **Inventory management \> Inquiries and reports \> On-hand list**.
 1. Select the **Show filters** button to open the filter pane.

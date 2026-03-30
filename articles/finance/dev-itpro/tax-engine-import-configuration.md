@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 7.3
 # Tax engine import configuration
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article provides information about import tax engine configuration.
 

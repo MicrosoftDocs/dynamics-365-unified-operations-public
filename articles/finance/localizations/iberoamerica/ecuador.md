@@ -4,7 +4,7 @@ description: Learn about Microsoft Dynamics 365 Finance documentation resources 
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: overview
-ms.date: 07/30/2025
+ms.date: 12/05/2025
 ms.reviewer: johnmichalak
 ms.search.region: Ecuador
 ms.search.validFrom: 2025-01-27
@@ -32,13 +32,15 @@ This overview provides a comprehensive guide to setting up legal entities in Ecu
 - [Configure sales and purchase invoices for Ecuador](ltm-Configure-invoices-Ecuador.md)
 - [Post Ecuadorian refund invoice transactions](ltm-Ecuadorian-refund-invoice.md)
 
-## General reporting 
+## General reporting
+
 - [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
 - [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
 - [VAT book printing configuration](ltm-vat-book.md)
 - [printing configuration for invoice layout](ltm-invoice-layout-print.md)
 
 ## Specific reporting for Ecuador
+
 - [Configure Ecuadorian sales VAT book printing](ltm-Ecaudor-sales-vat-book.md)
 - [Configure printing for the Ecuador Sales book by establishment report](ltm-Ecuador-sales-book-establishment.md)
 - [Configure Ecuadorian purchase VAT book details printing](ltm-Ecuador-purchase-vat-book-report.md)
@@ -48,8 +50,8 @@ This overview provides a comprehensive guide to setting up legal entities in Ecu
 - [Configure Simplified transactional appendix (ATS) printing](ltm-Ecuador-ATS-report.md)
 
 ## Electronic Invoice format
-- [Configure electronic invoice parameters for Ecuador](ltm-ecuador-conf-electronic-invoice.md)
 
+- [Configure electronic invoice parameters for Ecuador](ltm-ecuador-conf-electronic-invoice.md)
 
 ## Additional resources
 
@@ -57,4 +59,3 @@ This overview provides a comprehensive guide to setting up legal entities in Ecu
 - [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -24,7 +24,7 @@ After you've scheduled preventive maintenance jobs, the next step is to create w
 
 ## Create work orders based on your maintenance schedule
 
-To create work orders that are based on your maintenance schedule, follow these steps.
+To create work orders that are based on your maintenance schedule, follow these steps:
 
 1. Open one of the following pages, depending on how you want to select schedule items for your work orders:
 
@@ -50,7 +50,7 @@ To create work orders that are based on your maintenance schedule, follow these 
 
 This feature lets you define rules for grouping work order lines under a single work order when the system is set up to generate work orders automatically, based on a maintenance plan. Previously, automatically generated work orders could contain only one line. However, you can now group work orders by, for example, asset, asset type, or functional location. (Manually generated work orders could already be grouped in this way, as described in the previous section of this article.)
 
-To set up grouping for automatically generated work orders, follow these steps.
+To set up grouping for automatically generated work orders, follow these steps:
 
 1. Go to **Asset management \> Setup \> Preventative maintenance \> Maintenance plans**.
 1. For each plan where you want to generate grouped work orders, follow these steps:

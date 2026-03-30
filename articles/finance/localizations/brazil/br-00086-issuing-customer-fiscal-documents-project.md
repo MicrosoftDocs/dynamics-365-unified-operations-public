@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can issue a fiscal document for a project. The fiscal document can be either
 
 The following procedure uses the BRMF demo company.
 
-To issue customer fiscal documents for a project, follow these steps.
+To issue customer fiscal documents for a project, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> Project contracts**.
 1. Select **New**.

@@ -69,7 +69,7 @@ To set up a container group, follow these steps:
 
 You can set up rules for the containerization process, such as inventory mixing rules and other packing strategies. For example, you can set up a rule so that workers can't pack allocation lines that represent sales orders from different customers in the same container.
 
-To set up a container build template, follow these steps.
+To set up a container build template, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container build template**.
 1. Create a new container build template.

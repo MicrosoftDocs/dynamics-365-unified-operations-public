@@ -103,7 +103,7 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 
 The **Warehouse management parameters** page provides a few settings that establish global GS1 options.
 
-To set up global GS1 options, follow these steps.
+To set up global GS1 options, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, on the **Bar codes** FastTab, set the following fields:
@@ -133,7 +133,7 @@ Logistics managers can use standard international application identifiers and/or
 
 To get started quickly, you can load a list of common international application identifiers. You can then extend or edit the list later, as you require.
 
-To load the standard application identifiers, follow these steps.
+To load the standard application identifiers, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data application identifiers**.
 1. On the Action Pane, select **Create default setup**.
@@ -145,7 +145,7 @@ To load the standard application identifiers, follow these steps.
 
 If some or all application identifiers that your company uses differ from the standard set, you can create your own codes from scratch or customize the standard set as you require.
 
-To set up and customize your GS1 own application identifiers, follow these steps.
+To set up and customize your GS1 own application identifiers, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data application identifiers**.
 1. Follow one of these steps:
@@ -187,7 +187,7 @@ To establish the generic bar code data setup, go to **Warehouse management \> Se
 
 ### Customize the standard generic bar code data setup
 
-To customize the generic bar code data setup, follow these steps.
+To customize the generic bar code data setup, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data generic setup**.
 1. Follow one of these steps:
@@ -210,7 +210,7 @@ If no bar code data policy is assigned to a menu item, the system can capture on
 
 To get started quickly, you can load a set of standard bar code data policies. You can then extend or edit the policies later, as you require.
 
-To load the standard application identifiers, follow these steps.
+To load the standard application identifiers, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data policy**.
 1. On the Action Pane, select **Create default setup**.
@@ -223,7 +223,7 @@ To load the standard application identifiers, follow these steps.
 > [!WARNING]
 > Some bar code data policies might not work with every mobile flow that you use. When you configure custom bar code data policies, you must test the mobile device flow by using different pieces of information that are scanned at different points in the flow. In this way, you can determine whether the flow behaves as you expect.
 
-To set up and customize your bar code data policies, follow these steps.
+To set up and customize your bar code data policies, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> Barcode data policy**.
 1. Follow one of these steps:

@@ -37,7 +37,7 @@ This article includes information and links to resources that can help you set u
 - [Printing configuration for invoice layout](ltm-invoice-layout-print.md)
 
 ## Electronic Invoice format
-- [Connection configuration for Costa Rica electronic invoicing](ltm-costa-rica-ei-connec-configuration.md)
+- [Connection configuration for Costa Rica electronic invoicing](ltm-costa-rica-ei-connect-configuration.md)
 - [Configure electronic invoice parameters for Costa Rica](ltm-costa-rica-electronic-invoice-conf.md)
 
 ## Additional resources

@@ -389,7 +389,7 @@ The following grid defines the link between the source table in Dynamics 365 Fin
 
 ## Configure electronic document parameters
 
-To configure electronic document parameters, follow these steps.
+To configure electronic document parameters, follow these steps:
 
 1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Uruguay are imported. Learn more in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.

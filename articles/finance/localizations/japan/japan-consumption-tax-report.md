@@ -2,9 +2,9 @@
 title: Generate Japan consumption tax report
 description: Learn how to generate the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,9 +19,9 @@ ms.custom:
 
 This article explains how to generate the Japan consumption tax report in Microsoft Dynamics 365 Finance.
 
-The following procedure was created using the demo data company JPMF.
+The following procedure uses the demo data company JPMF.
 
-To generate the Japan consumption tax report, follow these steps.
+To generate the Japan consumption tax report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Japanese sales tax report**.
 1. In the **From date** field, enter a date.
@@ -50,7 +50,6 @@ To generate the Japan consumption tax report, follow these steps.
 1. To generate the final report, select **Print reports**.  
 
 > [!NOTE]
-> To calculate the consumption tax report that should be submitted from October 1, 2019, you must turn on the **Japanese sales tax report** feature in the **Feature management** workspace. Learn more at [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
+> To calculate the consumption tax report that you submit from October 1, 2019, onward, turn on the **Japanese sales tax report** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

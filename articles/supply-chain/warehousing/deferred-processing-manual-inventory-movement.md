@@ -23,7 +23,7 @@ Background processing is achieved by using the [Process warehouse app events fea
 
 To use deferred processing, you must set up and use a work processing policy. For deferred put processing, the [Deferred processing of warehouse work feature](deferred-put.md) supports the following work types: *Sales order*, *Transfer order issue*, and *Replenishment*. The *Deferred processing of manual inventory movement operation* features adds a new work type: *Inventory movement*.
 
-To set up a work processing policy, follow these steps.
+To set up a work processing policy, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Work \> Work processing policies**.
 1. Either select an existing policy in the list, or create a new policy by selecting **New** on the Action Pane. The header of every policy has the following fields:

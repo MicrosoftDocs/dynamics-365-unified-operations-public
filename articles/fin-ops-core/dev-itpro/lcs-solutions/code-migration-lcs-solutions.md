@@ -4,7 +4,7 @@ description: Learn about how to upgrade and analyze your code in Microsoft Dynam
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
-ms.date: 11/10/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -14,6 +14,7 @@ ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 # Migrate code for finance and operations apps solutions
 
 [!include[banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 To complete your solution package, the first step is to upgrade your code by using the best practices in **Migrate and Create finance and operations Apps Solutions** in Microsoft Dynamics Lifecycle Services. After that step is completed, you must run the Customization Analysis Report (CAR). This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
@@ -51,7 +52,7 @@ xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\
 The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\LocalDirectory\bin)*. Any warnings or errors that appear on the **Issues** tab of the report must be resolved. A copy of the CAR report must be submitted to Microsoft prior to your validation meeting. For more information, see [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md) or refer to the [Dynamics Community blog](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) for issues and exceptions.
 
 ## Additional resources
-[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on Marketplace](lcs-solutions-app-source.md)
 
 [Develop and customize home page](../dev-tools/developer-home-page.md#code-migration)
 

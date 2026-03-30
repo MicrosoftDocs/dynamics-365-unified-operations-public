@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/13/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can set up NF-e web services, rejection codes, and schemas to generate an NF
 
 The following procedure uses the BRMF demo company.
 
-To set up NF-e web services, rejection codes, and schemas to generate an NF-e, follow these steps.
+To set up NF-e web services, rejection codes, and schemas to generate an NF-e, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Electronic fiscal documents \> NF-e federal parameters**.
 1. Select **New**. One tax authority must be created per state.  

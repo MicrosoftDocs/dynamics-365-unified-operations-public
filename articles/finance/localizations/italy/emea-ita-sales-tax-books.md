@@ -116,7 +116,7 @@ If the **Attach report to Sales tax book status** checkbox is selected for the s
 
 ## Set up the Italian sales tax books electronic report
 
-As of Finance version 10.0.39, you can use the Italian sales tax books electronic report in PDF format. To prepare Finance to generate the Italian sales tax books electronic report in PDF format, follow these steps.
+As of Finance version 10.0.39, you can use the Italian sales tax books electronic report in PDF format. To prepare Finance to generate the Italian sales tax books electronic report in PDF format, follow these steps:
 
 1. Import the following ER configurations.
 
@@ -141,7 +141,7 @@ As of Finance version 10.0.39, you can use the Italian sales tax books electroni
 
 ## Generate the Italian sales tax books electronic report
 
-To generate the Italian sales tax books electronic report, follow these steps.
+To generate the Italian sales tax books electronic report, follow these steps:
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. The **Report sales tax for settlement period** dialog box appears.
 1. In the **Settlement period** field, select the sales tax settlement period to generate the report for.

@@ -1,11 +1,10 @@
 ---
 title: Process loyalty reward point adjustments
-description: This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points.
+description: Learn how to look up loyalty card information and adjust loyalty reward points in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 02/11/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
@@ -17,28 +16,27 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role or a Customer service manager role.
+This article explains how to look up loyalty card information and adjust loyalty reward points in Microsoft Dynamics 365 Commerce.
 
-1. Go to Loyalty cards.
-2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-4. Click Card transactions.
-    * On this page you can view all loyalty transactions for the selected loyalty card.  
-5. Close the page.
-6. Click Card adjustments.
-7. Click New.
-8. In the Reward point field, enter or select a value.
-9. In the Amount or quantity field, enter a number.
-    * You can add or remove points from the loyalty card by using positive or negative amounts.  
-10. In the Loyalty program field, enter or select a value.
-11. In the Comment field, type a value.
-12. Click Post adjustment.
-13. Click Yes.
-14. Close the page.
-    * Normally at this point you'd refresh the page to see the result of the reward points adjustment in the Reward point summary tab. But if you are running this as a task guide, don't refresh now because if you do, the task guide will stop.  
-15. Click Card transactions.
-16. Close the page.
+The following procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. The procedure uses the USRT demo data company, and is intended for the operations manager or customer service manager roles.
 
+To process loyalty reward point adjustments, follow these steps.
 
+1. In Commerce headquarters, go to **Loyalty cards**.
+1. In the list, find and select the desired record.
+1. In the list, select the link in the selected row.
+1. Select **Card transactions**. You can view all loyalty transactions for the selected loyalty card.  
+1. Close the page.
+1. Select **Card adjustments**.
+1. Select **New**.
+1. In the **Reward point** field, enter or select a value.
+1. In the **Amount or quantity** field, enter a number. You can add or remove points from the loyalty card by using positive or negative amounts.  
+1. In the **Loyalty program** field, enter or select a value.
+1. In the **Comment** field, type a value.
+1. Select **Post adjustment**.
+1. Select **Yes**.
+1. Close the page. Normally, here you'd refresh the page to see the result of the reward points adjustment in the **Reward point summary** tab. But if you're running this procedure as a task guide, don't refresh now because if you do, the task guide stops.  
+1. Select **Card transactions**.
+1. Close the page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

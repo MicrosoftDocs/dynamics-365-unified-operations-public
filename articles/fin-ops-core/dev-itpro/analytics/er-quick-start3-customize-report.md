@@ -115,7 +115,7 @@ Notice that, in addition to the selected **Peppol Sales Invoice** ER format, oth
 
 ![Configurations page.](./media/er-quick-start3-imported-solution1a.png)
 
-To simulate the state that ER configurations in the current Finance instance  would be in if you imported version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, on August 7, 2019), follow these steps.
+To simulate the state that ER configurations in the current Finance instance  would be in if you imported version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, on August 7, 2019), follow these steps:
 
 - On the Action Pane, select **Delete** to delete all ER configurations that were published after August 7, 2019. The only **Invoice model**, **Invoice model mapping** (initially named **Customer invoice model mapping**), **UBL Sales invoice** and **Peppol Sales Invoice** configurations must be left.
 - For the remained ER configurations, on the **Versions** FastTab, select **Delete** to delete all versions of ER configurations that were published after August 7, 2019.

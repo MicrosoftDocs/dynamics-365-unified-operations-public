@@ -44,7 +44,7 @@ To deploy a development or build environment in your Azure subscription, or to d
 
 :::image type="content" source="./media/alm-flow-01.png" alt-text="Screenshot of Cloud-hosted environment menu item.":::
 
-Then follow these steps.
+Then follow these steps:
 
 1. Select **Add**.
 

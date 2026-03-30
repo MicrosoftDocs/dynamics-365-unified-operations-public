@@ -2,9 +2,9 @@
 title: Set up master data for inclusion of deductible expenses for multiple posting layers
 description: Learn how to create fixed asset rules with required master data for inclusion of deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 05/09/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -21,13 +21,13 @@ ms.custom:
 
 This article explains how to create fixed asset rules with required master data for inclusion of deductible expenses  for multiple posting layers for Japan in Microsoft Dynamics 365 Finance.
 
-Before you complete the following procedures, you must first select the **Fixed Asset** configuration key.
+Before you complete the following procedures, select the **Fixed Asset** configuration key.
 
 The procedures use the demo data company JPMF.
 
 ## Set up depreciation settlement rules
 
-To set up depreciation settlement rules, follow these steps.
+To set up depreciation settlement rules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation settlement rules**.
 1. Optionally, if the settlement rule table is empty, you're asked if you want to import the default set of rules. Select **OK** to import the default set of rules.  
@@ -42,7 +42,7 @@ To set up depreciation settlement rules, follow these steps.
 
 ## Set up a book
 
-To set up a book, follow these steps.
+To set up a book, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Books**.
 1. Select **New**.
@@ -51,14 +51,12 @@ To set up a book, follow these steps.
 1. Expand the **General** section.
 1. Configure the parameters according to the core fixed asset features.  
 1. Expand the **Derived books** section.
-1. Select the book on the tax layer that will reference this book. If you add a derived book for the acquisition type, the system simplifies the operation by automatically acquiring the tax layer book.
+1. Select the book on the tax layer that references this book. If you add a derived book for the acquisition type, the system simplifies the operation by automatically acquiring the tax layer book.
 1. Select **Save**.
 1. Use the Quick Filter to search for the tax layer book that you want to run settlement with the current layer book.  
 1. Expand the **General** section.
 1. In the **Referenced book** field, enter the book that you created.  
 1. Select **Save**.
 1. Close the page.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

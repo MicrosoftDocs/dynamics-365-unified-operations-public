@@ -84,7 +84,7 @@ The June regular release of Dual-write GAB solution 3.5.2.131 contains the follo
 
 ## March 2024
 
-Release notes for March 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+Release notes for March 2024 releases of [Dual-write core solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
 
 ### Version 1.0.24031.1
 
@@ -139,7 +139,7 @@ The March release of Dual-write GAB solution 3.5.2.35 contains the following bug
 
 ## January 2024
 
-Release notes for January 2024 releases of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+Release notes for January 2024 releases of [Dual-write core solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
 
 ### Version 1.0.24014.1
 
@@ -173,7 +173,7 @@ Release notes for January 2024 releases of [Dual-write core solution](https://ap
 
 ### Dual-write core
 
-Release notes for the December 2023 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+Release notes for the December 2023 release of [Dual-write core solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
 **Version:** 1.0.23114.1
 
 | Type | Number | Description | Status |
@@ -262,7 +262,7 @@ The October release of Dual-write GAB solution 3.5.1.135 contains the following 
 
 ## September 2023
 
-Release notes for the September 2023 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+Release notes for the September 2023 release of [Dual-write core solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
 **Version:** 1.0.23084.2
 
 | Type | Number | Description | Status |
@@ -272,7 +272,7 @@ Release notes for the September 2023 release of [Dual-write core solution](https
 
 ## August 2023
 
-Release notes for the August 2023 release of [Dual-write core solution 1.0.23084.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).
+Release notes for the August 2023 release of [Dual-write core solution 1.0.23084.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).
 
 > [!NOTE]
 > Beginning with this release there's a new naming convention for version numbers of the dual-write core solution. The format of the version number is **1.0.YYMMW.versionNumber**, where "YYMMW" are the calendar year, month, and week in which the version build is created. The "versionNumber" is **0** by default. With this change we also introduce a more consistent cadence in version rollouts for the dual-write core solution.
@@ -300,7 +300,7 @@ In addition to the above fixes, the following new objects are also included in t
 
 ## July 2023 release
 
-The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) rolls out in mid July with the following bug fixes and optimizations.
+The July 2023 release of [Dual-write core solution 1.0.42.1](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) rolls out in mid July with the following bug fixes and optimizations.
 
 | Feature | Description | Status |
 | ---|---|---|
@@ -356,7 +356,7 @@ The May release of the Dual-write Global Address Book solution 3.5.1.87 contains
 
 ## March 2023 release
 
-The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid March.
+The March release of [Dual-write core solution 1.0.41.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid March.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -378,7 +378,7 @@ The March release of [Dual-write core solution 1.0.41.0](https://appsource.micro
 
 ## February 2023 release
 
-The February release of [Dual-write core solution 1.0.40.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes.
+The February release of [Dual-write core solution 1.0.40.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -386,15 +386,15 @@ The February release of [Dual-write core solution 1.0.40.0](https://appsource.mi
 
 ## January 2023 release
 
-The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesn't include customer facing bug fixes or features.
+The January release of [Dual-write core solution 1.0.39.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesn't include customer facing bug fixes or features.
 
 ## November 2022 release
 
-The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesn't include customer facing bug fixes or features.
+The November release of [Dual-write core solution 1.0.38.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesn't include customer facing bug fixes or features.
 
 ## October 2022 release
 
-The October release of [Dual-write core solution 1.0.37.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+The October release of [Dual-write core solution 1.0.37.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -431,7 +431,7 @@ The August release of Dual-write Global Address Book solution 3.5.1.22 contains 
 
 ## July 2022 release
 
-The July release of [Dual-write core solution 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+The July release of [Dual-write core solution 1.0.36.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -456,7 +456,7 @@ The July release of Dual-write Global Address Book solution 3.5.1.6 contains the
 
 ## June 2022 release
 
-The June release of [Dual-write core solution 1.0.35.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following features and bug fixes.
+The June release of [Dual-write core solution 1.0.35.0](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following features and bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -500,7 +500,7 @@ This release includes the following map changes:
 
 ## March 2022 release
 
-The March 2022 release of the [Dual-write Supply Chain solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) contains the following changes.
+The March 2022 release of the [Dual-write Supply Chain solution](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwscm) contains the following changes.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -524,7 +524,7 @@ The March 2022 release of the [Dual-write Supply Chain solution](https://appsour
 
 ## January 2022 release
 
-The January 2022 release of [Dual-write core version 1.1.33](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+The January 2022 release of [Dual-write core version 1.1.33](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
 
 | Feature | Description | Status |
 |------|---------|-------|
@@ -570,7 +570,7 @@ The November 2021 release of Dual-write Party and Global Address Book Solutions 
 
 ## September 2021 release of party and global address book
 
-The September 2021 hotfix release of [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).
+The September 2021 hotfix release of [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).
 
 This release contains bug fixes listed in the following table.
 
@@ -591,7 +591,7 @@ This release contains bug fixes listed in the following table.
 
 ## August 2021 release
 
-The August 2021 release of Dual-write application orchestration solution version 2.3.0.15 is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The August 2021 release of Dual-write application orchestration solution version 2.3.0.15 is based on [Dual-write core solution version 1.0.29](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -618,7 +618,7 @@ This release includes following map changes.
 
 ## August 2021 release of party and global address book
 
-The August 2021 release of [Dual-write Party and Global Address Book Solutions 3.1.0.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The August 2021 release of [Dual-write Party and Global Address Book Solutions 3.1.0.2](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains features and bug fixes listed in the following table.
 
@@ -635,7 +635,7 @@ This release contains features and bug fixes listed in the following table.
 
 ## July 2021 release
 
-The July 2021 hotfix release of Dual-write application orchestration solution version is based on [Dual-write core solution version 1.0.28](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The July 2021 hotfix release of Dual-write application orchestration solution version is based on [Dual-write core solution version 1.0.28](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -645,7 +645,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## June 2021 release
 
-The June 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.98 is based on [Dual-write core solution version 1.0.27](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The June 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.98 is based on [Dual-write core solution version 1.0.27](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -663,7 +663,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## May 2021 release
 
-The May 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.60 is based on [Dual-write core solution version 1.0.26](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The May 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.60 is based on [Dual-write core solution version 1.0.26](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -674,7 +674,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## May 2021 release of party and global address book
 
-The May 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.0.0.26](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The May 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.0.0.26](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.24](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the bug fixes listed in the following table.
 
@@ -707,7 +707,7 @@ Follow these steps to apply the new maps:
 
 ## April 2021 release
 
-The April 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.60 is based on [Dual-write core solution version 1.0.25](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The April 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.60 is based on [Dual-write core solution version 1.0.25](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -721,7 +721,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## March 2021 release
 
-The March 2021 release of Dual-write application orchestration solution version  2.2.2.50 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The March 2021 release of Dual-write application orchestration solution version  2.2.2.50 is based on [Dual-write core solution version 1.0.24](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -735,7 +735,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## February 2021 release
 
-The February 2021 release of Dual-write application orchestration solution version  2.2.2.23 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of finance and operations apps and version 9.1.0000.11732 or newer of Dataverse.
+The February 2021 release of Dual-write application orchestration solution version  2.2.2.23 is based on [Dual-write core solution version 1.0.24](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of finance and operations apps and version 9.1.0000.11732 or newer of Dataverse.
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -749,7 +749,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## January 2021 release
 
-The January 2021 release of Dual-write application orchestration solution version 2.2.1.30 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
+The January 2021 release of Dual-write application orchestration solution version 2.2.1.30 is based on [Dual-write core solution version 1.0.24](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -758,7 +758,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | French-localized strings in the user interface exceeded the maximum limit of 100 characters. | General availability |
 | Bug fix | Error while starting the Dataverse released distinct products map. | General availability |
 
-The January 2021 release of Dual-write application orchestration solution version 2.2.1.23 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
+The January 2021 release of Dual-write application orchestration solution version 2.2.1.23 is based on [Dual-write core solution version 1.0.24](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -795,7 +795,7 @@ The October 2020 release of the Dual-write application orchestration solution an
 
 ## September 2020 release
 
-The September 2020 release of Dual-write application orchestration solution version 2.0.777.493 is based on [Dual-write core solution version 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The September 2020 release of Dual-write application orchestration solution version 2.0.777.493 is based on [Dual-write core solution version 1.0.21](https://marketplace.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 The September 2020 release contains the features and bug fixes listed in the following table.
 

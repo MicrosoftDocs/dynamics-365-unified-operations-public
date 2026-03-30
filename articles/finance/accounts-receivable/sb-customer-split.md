@@ -22,7 +22,7 @@ On a billing schedule, the *invoice account* is the customer who receives the sa
 
 After a billing schedule is created, additional customers can be added to the billing schedule header.
 
-To add a customer, follow these steps.
+To add a customer, follow these steps:
 
 1. On the **Billing schedule** tab, select **Customer split**. The **Customer account** and **Customer account name** fields at the top specify the customer who is assigned as the **Billing schedule customer**.
 

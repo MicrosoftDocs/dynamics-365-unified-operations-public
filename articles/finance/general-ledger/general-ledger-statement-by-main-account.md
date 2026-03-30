@@ -90,7 +90,7 @@ To optimize the timing and memory consumption of report generation, we recommend
 
 ## Generate a General ledger statement by main account report
 
-To generate a **General ledger statement by main account** report, follow these steps.
+To generate a **General ledger statement by main account** report, follow these steps:
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **Ledger reports** \> **General ledger statement by main account**.
 2. In the report dialog box, set the following fields.

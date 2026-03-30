@@ -24,7 +24,7 @@ By integrating the **Asset management** and **Fixed assets** modules, you can li
 
 This optional configuration lets you set a default functional location for new maintenance assets that are created from fixed assets. You typically complete this configuration this just one time, if you complete it at all.
 
-To complete the configuration, follow these steps.
+To complete the configuration, follow these steps:
 
 1. Go to **Asset management \> Setup \> Asset management parameters**.
 1. On the **Fixed assets** tab, in the **Functional location** field, select the default location.
@@ -36,7 +36,7 @@ This section provides a collection of procedures that show various ways that you
 
 ### Associate an existing maintenance asset with a fixed asset
 
-To associate an existing maintenance asset with a fixed asset, follow these steps.
+To associate an existing maintenance asset with a fixed asset, follow these steps:
 
 1. Go to **Asset management \> Assets \> All assets** (or **Active assets**).
 1. Select an asset.
@@ -45,7 +45,7 @@ To associate an existing maintenance asset with a fixed asset, follow these step
 
 ### View the fixed asset that is associated with a selected maintenance asset
 
-To view the fixed asset that is associated with a selected maintenance asset, follow these steps.
+To view the fixed asset that is associated with a selected maintenance asset, follow these steps:
 
 1. Go to **Asset management \> Assets \> All assets** (or **Active assets**).
 1. Select an asset.
@@ -55,7 +55,7 @@ To view the fixed asset that is associated with a selected maintenance asset, fo
 
 ### View the maintenance asset that is associated with a selected fixed asset
 
-To view the maintenance asset that is associated with a selected fixed asset, follow these steps.
+To view the maintenance asset that is associated with a selected fixed asset, follow these steps:
 
 1. Go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select an asset.
@@ -67,7 +67,7 @@ To view the maintenance asset that is associated with a selected fixed asset, fo
 
 Asset management work orders can be posted for maintenance assets, and each of those work orders typically has a cost. When a fixed asset is associated with a maintenance asset, you can go directly from the fixed asset to view the related costs.
 
-To view the maintenance costs that are associated with a fixed asset, follow these steps.
+To view the maintenance costs that are associated with a fixed asset, follow these steps:
 
 1. Go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select an asset.
@@ -77,7 +77,7 @@ To view the maintenance costs that are associated with a fixed asset, follow the
 
 ### <a name="new-maintenance-from-fixed"></a>Create a new maintenance asset for an existing fixed asset
 
-To create a new maintenance asset for an existing fixed asset, follow these steps.
+To create a new maintenance asset for an existing fixed asset, follow these steps:
 
 1. Go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select an asset.
@@ -86,7 +86,7 @@ To create a new maintenance asset for an existing fixed asset, follow these step
 
 ### Create a new fixed asset and add a new maintenance asset for it
 
-To create a new fixed asset and add a new maintenance asset for it, follow these steps.
+To create a new fixed asset and add a new maintenance asset for it, follow these steps:
 
 1. Go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. On the Action Pane, select **New**.
@@ -98,7 +98,7 @@ To create a new fixed asset and add a new maintenance asset for it, follow these
 
 In some cases, you might have to disassociate a maintenance asset from its fixed asset. For example, if you want to [create a new maintenance asset](#new-maintenance-from-fixed) from a fixed asset, you must first remove any existing association.
 
-To remove an existing association between a maintenance asset and a fixed asset, follow these steps.
+To remove an existing association between a maintenance asset and a fixed asset, follow these steps:
 
 1. Go to **Asset management \> Assets \> All assets** (or **Active assets**).
 1. Find and open the maintenance asset.

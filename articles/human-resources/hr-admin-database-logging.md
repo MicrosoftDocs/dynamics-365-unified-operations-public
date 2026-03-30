@@ -5,7 +5,7 @@
 title: Configure and manage database logging
 description: You can track changes to tables and fields in Dynamics 365 Human Resources with database logging.
 author: twheeloc
-ms.date: 12/15/2021
+ms.date: 12/02/2025
 ms.topic: how-to
 # optional metadata
 
@@ -52,7 +52,6 @@ Database logs can contain sensitive data. Limit access to include only security 
 While valuable from a business perspective, database logging can be expensive in resource use and management. The performance implications of database logging include:
 
 - The database log table can grow quickly and cause an increase in the size of the database. Growth depends on the amount of logged data that you decide to keep. By default, the database log table maintains only 30 days of log data. 
-
 - Database logging can adversely affect long-running automated processes, such as long-running data imports.
 
 ### Best practices

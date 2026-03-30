@@ -25,7 +25,7 @@ The procedure was created using the MXMF demo data company.
 
 ## Post and issue a CFDI electronic invoice
 
-To post and issue a CFDI electronic invoice, follow these steps.
+To post and issue a CFDI electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select **New**.

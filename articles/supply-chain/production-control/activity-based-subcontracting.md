@@ -55,7 +55,7 @@ This requirement enforces the use of the first in, first out (FIFO) inventory mo
 
 ### Subcontracted process activities
 
-To configure a process activity as a subcontracted activity, follow these steps.
+To configure a process activity as a subcontracted activity, follow these steps:
 
 1.  Configure a subcontracted work cell. To configure a work cell as subcontracted, you must create a resource of the **Vendor** type and associate it with the work cell (resource group). A runtime cost category of the **Direct outsourcing** cost group type should be assigned to the work cell. The cost categories for setup and quantity aren't required.
 2.  After a process activity is created and related to a subcontracted work cell, you must configure a service for the activity before the production flow version can be activated. You complete this step on the **Activity** **details** page. For activities that are associated with a subcontracted work cell, the **Service terms** FastTab is shown. On this FastTab, add a default service that is valid for all output items. If specific output items require different services or different service calculation parameters (for example, a different service ratio), you can add other services to the activity.

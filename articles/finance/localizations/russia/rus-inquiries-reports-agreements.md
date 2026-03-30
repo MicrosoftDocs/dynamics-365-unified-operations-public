@@ -22,7 +22,7 @@ This article explains how to restore previously deducted VAT amounts for fixed a
 
 ### <a name="sales-agreement-amounts"></a>View sales agreement amounts
 
-To view sales agreement amounts, follow these steps.
+To view sales agreement amounts, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Sales agreements** page, select an agreement, and then, on the **Sales agreement** tab, in the **Related information** section, select **Agreement amount** to open the **Customer transactions** page.
 
@@ -41,7 +41,7 @@ To view sales agreement amounts, follow these steps.
 
 ### View purchase agreement amounts
 
-To view purchase agreement amounts, follow these steps.
+To view purchase agreement amounts, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Purchase agreements** page, select an agreement, and then, on the **Purchase agreement** tab, in the **Related information** section, select **Agreement amount** to open the **Vendor transactions** page.
 
@@ -53,7 +53,7 @@ To view purchase agreement amounts, follow these steps.
 
 ### View sales orders and service invoices that are linked to sales agreements
 
-To view sales orders and service invoices that are linked to sales agreements, follow these steps.
+To view sales orders and service invoices that are linked to sales agreements, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Sales agreements** page, select an agreement.
 1. On the **Sales agreement** tab, in the **Related information** section, follow any of these steps:
@@ -64,7 +64,7 @@ To view sales orders and service invoices that are linked to sales agreements, f
 
 ### View purchase orders that are linked to purchase agreements
 
-To view purchase orders that are linked to purchase agreements, follow these steps.
+To view purchase orders that are linked to purchase agreements, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Purchase agreements** page, select an agreement.
 1. On the **Purchase agreement** tab, in the **Related information** section, follow any of these steps:
@@ -89,7 +89,7 @@ An act of adjustment contains the following data in the context of the customer 
 
 ### <a name="generate-act-adjustment-customer"></a>Generate an act of adjustment for a customer
 
-To generate an act of adjustment for a customer, follow these steps.
+To generate an act of adjustment for a customer, follow these steps:
 
 1.  In Dynamics 365 Finance, go to **Accounts receivable** \> **Inquiries and reports** \> **Act of adjustment**.
 1.  In the **Counteragent** section, specify the following details:
@@ -119,7 +119,7 @@ To generate an act of adjustment for a customer, follow these steps.
 
 ### Generate an act of adjustment for a vendor
 
-To generate an act of adjustment for a vendor, follow these steps.
+To generate an act of adjustment for a vendor, follow these steps:
 
 1. In Dynamics 365 Finance, go to**Accounts receivable** \> **Inquiries and reports** \> **Act of adjustment**.
 1. In the **Counteragent** section, in the **Vendor account** field, select the vendor for which to to generate the act of adjustment.

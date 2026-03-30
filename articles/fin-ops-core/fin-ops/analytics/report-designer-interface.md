@@ -4,7 +4,7 @@ description: Learn about how to navigate through Report designer and how to use 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 11/22/2022
+ms.date: 03/12/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -155,6 +155,7 @@ The **Help** menu is available to all users and includes the following commands.
 |         |                                                                          |
 
 ## Report designer toolbar buttons
+
 The following tables describe the toolbar buttons that you can use when you design reports. Some toolbar buttons are available only in specific circumstances. For example, the buttons for promoting and demoting reporting units are available only when you're modifying a reporting tree definition.
 
 ### Standard toolbar
@@ -163,24 +164,24 @@ The standard toolbar provides quick access to file and edit commands. This toolb
 
 | Button                                                                                       | Description |
 |----------------------------------------------------------------------------------------------|-------------|
-| ![New button.](../../dev-itpro/analytics/media/rowc130389.png)]                             | Create a new (empty) report definition, row definition, column definition, or reporting tree definition. |
-| ![Open button.](../../dev-itpro/analytics/media/openfolderc130389.png)]              | Open an existing row definition, column definition, reporting tree definition, or report definition. |
-| ![Save button.](../../dev-itpro/analytics/media/savec130389.png)                          | Save the current row definition, column definition, reporting tree definition, or report definition. |
-| ![Copy button.](../../dev-itpro/analytics/media/copyc130389.png)                          | Copy the selected text to the clipboard. |
-| ![Cut button.](../../dev-itpro/analytics/media/cutc130389.png)                             | Delete the selected text, and copy it to the clipboard. |
-| ![Paste button.](../../dev-itpro/analytics/media/pastec130389.png)                       | Insert the text from the clipboard. |
-| ![Undo button.](../../dev-itpro/analytics/media/undoc130389.png)                          | Undo the last action. |
-| ![Redo button.](../../dev-itpro/analytics/media/redoc130389.png)                           | Reverse the last undo action. |
-| ![Find button.](../../dev-itpro/analytics/media/findc130389.png)                           | Open the **Find and Replace** dialog box, where you can search and replace text in the active window. |
-| ![Insert row button.](../../dev-itpro/analytics/media/insertrowc130389.png)           | Insert an empty row into the row definition or an empty header row into the column definition. This button is available from a row definition or column definition. |
-| ![Insert column button.](../../dev-itpro/analytics/media/insertcolumnc130389.png)  | Insert an empty column into the column definition. This button is available from a column definition. |
-| ![Lock button.](../../dev-itpro/analytics/media/lockc130389.png)                          | Apply a password to the current building block. This button is available to users who have the **Designer** or **Administrator** role. |
-| ![Row link button.](../../dev-itpro/analytics/media/rowlinkc130389.png)                 | Open the **Row Links** dialog box, where you can specify the sources for data links in row definitions and reporting tree definitions. This button is available from a row definition. |
-| ![Promote button.](../../dev-itpro/analytics/media/promotec130389.png)                | Promote a unit of the reporting tree definition. When you select a child unit and then click **Promote**, the child unit is moved to the same level as its parent unit. |
-| ![Demote button.](../../dev-itpro/analytics/media/demotec130389.png)                    | Demote a unit of the reporting tree definition. When you select a unit and then click **Demote**, the unit becomes a child of the unit that precedes it. |
-| ![Expand button.](../../dev-itpro/analytics/media/expandtreebuttonc130389.png) | Expand all units of the reporting tree definition at the level of the selected unit. |
-| ![Collapse button.](../../dev-itpro/analytics/media/collapsec130389.png)              | Collapse the reporting tree. |
-| ![Help button.](../../dev-itpro/analytics/media/helpc130389.png)                           | Open Help. |
+| :::image type="content" source="../../dev-itpro/analytics/media/rowc130389.png" alt-text="Screenshot of the New button.":::  | Create a new (empty) report definition, row definition, column definition, or reporting tree definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/openfolderc130389.png" alt-text="Screenshot of the Open button."::: | Open an existing row definition, column definition, reporting tree definition, or report definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/savec130389.png" alt-text="Screenshot of the Save button."::: | Save the current row definition, column definition, reporting tree definition, or report definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/copyc130389.png" alt-text="Screenshot of the Copy button."::: | Copy the selected text to the clipboard. |
+| :::image type="content" source="../../dev-itpro/analytics/media/cutc130389.png" alt-text="Screenshot of the Cut button."::: | Delete the selected text, and copy it to the clipboard. |
+| :::image type="content" source="../../dev-itpro/analytics/media/pastec130389.png" alt-text="Screenshot of the Paste button."::: | Insert the text from the clipboard. |
+| :::image type="content" source="../../dev-itpro/analytics/media/undoc130389.png" alt-text="Screenshot of the Undo button."::: | Undo the last action. |
+| :::image type="content" source="../../dev-itpro/analytics/media/redoc130389.png" alt-text="Screenshot of the Redo button."::: | Reverse the last undo action. |
+| :::image type="content" source="../../dev-itpro/analytics/media/findc130389.png" alt-text="Screenshot of the Find button."::: | Open the **Find and Replace** dialog box, where you can search and replace text in the active window. |
+| :::image type="content" source="../../dev-itpro/analytics/media/insertrowc130389.png" alt-text="Screenshot of the Insert row button."::: | Insert an empty row into the row definition or an empty header row into the column definition. This button is available from a row definition or column definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/insertcolumnc130389.png" alt-text="Screenshot of the Insert column button."::: | Insert an empty column into the column definition. This button is available from a column definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/lockc130389.png" alt-text="Screenshot of the Lock button."::: | Apply a password to the current building block. This button is available to users who have the **Designer** or **Administrator** role. |
+| :::image type="content" source="../../dev-itpro/analytics/media/rowlinkc130389.png" alt-text="Screenshot of the Row link button."::: | Open the **Row Links** dialog box, where you can specify the sources for data links in row definitions and reporting tree definitions. This button is available from a row definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/promotec130389.png" alt-text="Screenshot of the Promote button."::: | Promote a unit of the reporting tree definition. When you select a child unit and then click **Promote**, the child unit is moved to the same level as its parent unit. |
+| :::image type="content" source="../../dev-itpro/analytics/media/demotec130389.png" alt-text="Screenshot of the Demote button."::: | Demote a unit of the reporting tree definition. When you select a unit and then click **Demote**, the unit becomes a child of the unit that precedes it. |
+| :::image type="content" source="../../dev-itpro/analytics/media/expandtreebuttonc130389.png" alt-text="Screenshot of the Expand button."::: | Expand all units of the reporting tree definition at the level of the selected unit. |
+| :::image type="content" source="../../dev-itpro/analytics/media/collapsec130389.png" alt-text="Screenshot of the Collapse button."::: | Collapse the reporting tree. |
+| :::image type="content" source="../../dev-itpro/analytics/media/helpc130389.png" alt-text="Screenshot of the Help button."::: | Open Help. |
 
 ### Formatting toolbar
 
@@ -188,16 +189,16 @@ The formatting toolbar provides easy access to style commands. This toolbar incl
 
 | Button                                                                                                       | Description                                           |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| ![Font style button.](../../dev-itpro/analytics/media/formattingc130389.png)                        | Apply the selected font style to the current text.   |
-| ![Font button.](../../dev-itpro/analytics/media/fonttype.png)                                                 | Set the current text to the selected font.           |
-| ![Font size button.](../../dev-itpro/analytics/media/fontsize.png)                                           | Set the current text to selected font size (in  points). |
-| ![Bold button.](../../dev-itpro/analytics/media/boldc130389.png)                                           | Make the current text bold.                          |
-| ![Italic button.](../../dev-itpro/analytics/media/italicsc130389.png)                                 | Make the current text italic.                        |
-| [[Underline button.](../../dev-itpro/analytics/media/underlinec130389.png)                           | Underline the current text.                          |
-| ![Decrease indent button.](../../dev-itpro/analytics/media/outdentlsc130389.png)                     | Decrease the indent of the current text.             |
-| ![Increase indent button.](../../dev-itpro/analytics/media/indentlsc130389.png)]                       | Increase the indent of the current text.             |
-| ![Background color button.](../../dev-itpro/analytics/media/fillbackgroundcolorc130389.png) | Change the background color of the current cell.     |
-| ![Font color button.](../../dev-itpro/analytics/media/fontcolorc130389.png)                          | Change the color of the current text.                |
+| :::image type="content" source="../../dev-itpro/analytics/media/formattingc130389.png" alt-text="Screenshot of the Font style button."::: | Apply the selected font style to the current text.   |
+| :::image type="content" source="../../dev-itpro/analytics/media/fonttype.png" alt-text="Screenshot of the Font button."::: | Set the current text to the selected font.           |
+| :::image type="content" source="../../dev-itpro/analytics/media/fontsize.png" alt-text="Screenshot of the Font size button."::: | Set the current text to selected font size (in  points). |
+| :::image type="content" source="../../dev-itpro/analytics/media/boldc130389.png" alt-text="Screenshot of the Bold button."::: | Make the current text bold.                          |
+| :::image type="content" source="../../dev-itpro/analytics/media/italicsc130389.png" alt-text="Screenshot of the Italic button."::: | Make the current text italic.                        |
+| :::image type="content" source="../../dev-itpro/analytics/media/underlinec130389.png" alt-text="Screenshot of the Underline button."::: | Underline the current text.                          |
+| :::image type="content" source="../../dev-itpro/analytics/media/outdentlsc130389.png" alt-text="Screenshot of the Decrease indent button."::: | Decrease the indent of the current text.             |
+| :::image type="content" source="../../dev-itpro/analytics/media/indentlsc130389.png" alt-text="Screenshot of the Increase indent button."::: | Increase the indent of the current text.             |
+| :::image type="content" source="../../dev-itpro/analytics/media/fillbackgroundcolorc130389.png" alt-text="Screenshot of the Background color button."::: | Change the background color of the current cell.     |
+| :::image type="content" source="../../dev-itpro/analytics/media/fontcolorc130389.png" alt-text="Screenshot of the Font color button."::: | Change the color of the current text.                |
 
 ### Report designer toolbar
 
@@ -205,18 +206,17 @@ The report designer toolbar provides quick access to commands for navigating wit
 
 | Button                                                                                              | Description |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| ![Report definition button.](../../dev-itpro/analytics/media/reportc130389.png)           | Show the report definition that is listed on the **Window** menu. |
-| ![Row definition button.](../../dev-itpro/analytics/media/rowc130389.png)          | Show the row definition that is assigned to the active report definition. |
-| ![Column definition button.](../../dev-itpro/analytics/media/columnc130389.png) | Show the column definition that is assigned to the active report definition. |
-| ![Reporting tree definition button.](../../dev-itpro/analytics/media/treec130389.png)           | Show the reporting tree definition that is assigned to the active report definition. |
-| ![Report Viewer button.](../../dev-itpro/analytics/media/reportviewerc130389.png)        | Start the Report Viewer and show the most recent version of the generated report. This button is available from a report definition if you've generated at least one report. |
-| ![Generate report button.](../../dev-itpro/analytics/media/generate-to-ddvc130389.png) | Generate a report from the active report definition. This button is available from a report definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/reportc130389.png" alt-text="Screenshot of the Report definition button."::: | Show the report definition that is listed on the **Window** menu. |
+| :::image type="content" source="../../dev-itpro/analytics/media/rowc130389.png" alt-text="Screenshot of the Row definition button."::: | Show the row definition that is assigned to the active report definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/columnc130389.png" alt-text="Screenshot of the Column definition button."::: | Show the column definition that is assigned to the active report definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/treec130389.png" alt-text="Screenshot of the Reporting tree definition button."::: | Show the reporting tree definition that is assigned to the active report definition. |
+| :::image type="content" source="../../dev-itpro/analytics/media/reportviewerc130389.png" alt-text="Screenshot of the Report Viewer button."::: | Start the Report Viewer and show the most recent version of the generated report. This button is available from a report definition if you've generated at least one report. |
+| :::image type="content" source="../../dev-itpro/analytics/media/generate-to-ddvc130389.png" alt-text="Screenshot of the Generate report button."::: | Generate a report from the active report definition. This button is available from a report definition. |
 
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
 
 [Generate financial reports](generate-financial-report.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -25,7 +25,7 @@ Partial disassembly (liquidation) of fixed asset objects can cause the original 
 
 To create the partial fixed asset disassembly transactions, you must configure the transaction profiles.
 
-To configure transaction profiles, follow these steps.
+To configure transaction profiles, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Posting profiles**.
 1. On the Action Pane, select **Options \> Partial dismantlement**.
@@ -33,7 +33,7 @@ To configure transaction profiles, follow these steps.
 
 ## Create a partial fixed asset disassembly transaction
 
-To create a partial fixed asset disassembly transaction, follow these steps.
+To create a partial fixed asset disassembly transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Fixed assets**.
 1. Select the fixed asset, and then, on the Action Pane, on the **Fixed asset** tab, select **Componentry**.
@@ -262,7 +262,7 @@ As a result of the calculation, a balance value, a balance depreciation, and a m
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
 
-To reverse partial dismantlement transactions, follow these steps.
+To reverse partial dismantlement transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Fixed assets**, and on the Action Pane, select **Value models**.
 1. On the **FA value models** page, on the Action Pane, select **Transactions**. 

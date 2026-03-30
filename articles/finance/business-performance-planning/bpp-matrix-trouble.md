@@ -4,7 +4,7 @@ description: Learn about some current known issues in the Matrix planning visual
 author: twheeloc
 ms.author: romainpham
 ms.topic: overview
-ms.date: 11/25/2025
+ms.date: 12/08/2025
 ms.reviewer: twheeloc
 ms.collection: get-started
 

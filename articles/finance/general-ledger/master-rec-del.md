@@ -33,7 +33,7 @@ Master records that are used in a posted document can't be deleted. Only the fin
 
 ## Example
 
-For example, if you want to delete a MainAccount master record, follow these steps.
+For example, if you want to delete a MainAccount master record, follow these steps:
 
 1. Go to **General ledger** \> **Chart of accounts** \> **Accounts** \> **Main accounts**.
 2. Select the main account to delete.

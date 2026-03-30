@@ -4,7 +4,7 @@ description: Learn about the Dynamics Symbol font, which defines the set of out-
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 03/20/2023
+ms.date: 03/12/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global

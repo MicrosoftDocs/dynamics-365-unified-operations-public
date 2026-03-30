@@ -1,6 +1,6 @@
 ---
-title: Fiscal journal report
-description: Learn about the Fiscal journal report in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
+title: Fiscal journal report SSRS-based
+description: Learn about the Fiscal journal report SSRS-based in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
 author: liza-golub
 ms.author: egolub
 ms.topic: article
@@ -14,7 +14,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 ---
 
-# Fiscal journal report
+# Fiscal journal report SSRS-based
 
 The Italian **Fiscal journal** report is a monthly report that lists all the vouchers and journal entries in order of posting date. To access it, go to **General ledger** \> **Inquiries and reports** \> **Fiscal journal**.
 
@@ -44,7 +44,7 @@ This feature improves the calculation logic for page numbering on the Italian **
 
 This feature also enables an algorithm for grouping lines that have the same column values into one line. Therefore, only the necessary pages are included on the report printout.
 
-If you must calculate the number of documents that are included in the Fiscal journal, follow these steps.
+If you must calculate the number of documents that are included in the Fiscal journal, follow these steps:
 
 1. Print the report in PDF file format.
 2. Convert the PDF to Microsoft Excel format by using conversion software.

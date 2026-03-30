@@ -238,7 +238,7 @@ When the analysis simulation returns the expected result, you can run the analys
 > [!NOTE]
 > The ability to set individual product lifecycle states by using the data entities for released products or product variants isn't supported.
 
-For more information, see [Product lifecycle state](../../../supply-chain/pim/product-lifecycle.md).
+For more information, see [Product lifecycle states](../../../supply-chain/pim/product-lifecycle.md).
 
 ## Retail proxy – New extension point added to support retail proxy extension without inline changes
 

@@ -129,7 +129,7 @@ We have recently added or significantly updated the following help articles. The
 | Warehouse management | [Import inbound ASNs through data entities](../warehousing/import-asn-data-entity.md) |
 | Warehouse management | [Over-picking for sales orders and transfer orders](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Warehouse management | [Schedule wave label printing during wave](../warehousing/configure-task-based-wave-label-printing.md) |
-| Warehouse management | [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md) |
+| Warehouse management | [What's new or changed in the Warehouse Management mobile app](../warehousing/warehouse-app-whats-new.md) |
 
 ## Related information
 
@@ -139,7 +139,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.21 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.21, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166&dbType=3&qc=4b9449bf0d947113983bd0697140bf4d8727bfafd5566aa682cb38db343374de).
+For information about the bug fixes included in each of the updates that are part of 10.0.21, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166&dbType=3&qc=4b9449bf0d947113983bd0697140bf4d8727bfafd5566aa682cb38db343374de).
 
 ### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 

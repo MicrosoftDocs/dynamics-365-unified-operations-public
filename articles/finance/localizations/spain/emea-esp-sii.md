@@ -68,7 +68,7 @@ Electronic message functionality is provided to maintain the different processes
 
 The process of setting up the electronic message functionality to work with the SII system has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables, and that you import the ER configurations before you import the data entities.
 
-To import a package of data entities that includes a predefined EM setup, follow these steps.
+To import a package of data entities that includes a predefined EM setup, follow these steps:
 
 1. Go to [Microsoft Dynamics Lifecycle Service (LCS)](https://lcs.dynamics.com/v2).
 1. In the Shared asset library, and select the **Data package** asset type.
@@ -125,7 +125,7 @@ To work with the SII system, you must use a security certificate that is provide
 
 For more information about how to set up Key Vault, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client) and [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
 
-To set up the internet address and certificates for the SII system, follow these steps.
+To set up the internet address and certificates for the SII system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **System administration** \> **Setup** \> **System parameters**.
 1. Set the **Use advanced certificate store** option to **No** to store sensitive data locally. Set the option to **Yes** to use Key Vault storage.
@@ -152,7 +152,7 @@ To set up the internet address and certificates for the SII system, follow these
 
 After the data entities are imported into the database, complete the following tasks. When you've completed them, the electronic message functionality will be ready to use.
 
-To set up EM parameters for the SII system, follow these steps.
+To set up EM parameters for the SII system, follow these steps:
 
 1. Set up executable class parameters.
 1. Set up additional fields and automatically defined rules.
@@ -171,7 +171,7 @@ Three executable classes are included in the two types of electronic messages pr
 
 ### <a id="siigenerateitems"></a>Set up the SIIGenerateItems executable class
 
-To set up the SIIGenerateItems executable class, follow these steps.
+To set up the SIIGenerateItems executable class, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**.
 1. On the **Executable class settings** page, select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
@@ -217,7 +217,7 @@ To set up the SIIGenerateItems executable class, follow these steps.
 
 ### Set up the SIIPartyAttributesEvaluation executable class
 
-To set up the SIIPartyAttributesEvaluation executable class, follow these steps.
+To set up the SIIPartyAttributesEvaluation executable class, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
 1. On the **Executable class settings** page, select the **SIIPartyAttributesEvaluation** executable class that is associated with the **EMAdditionalFieldsEvaluationController_ES** executable class name.
@@ -235,7 +235,7 @@ To set up the SIIPartyAttributesEvaluation executable class, follow these steps.
 
 ### Set up the MonitorCollectionInCash executable class
 
-To set up the MonitorCollectionInCash executable class, follow these steps.
+To set up the MonitorCollectionInCash executable class, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
 1. On the **Executable class settings** page, select the **MonitorCollectionInCash** executable class that is associated with the **EMCheckChangesCollectionInCashController_ES** executable class name.
@@ -404,7 +404,7 @@ Financial reasons can be specified for invoices that are posted from the followi
 
 When you create an invoice from the types of documents that invoices can be created from, you can set up a specific reason for the invoice. The **GenerateMessageItem** action will analyze this reason, and the reason SII code will be set for the electronic message item.
 
-To set up financial reasons, follow these steps.
+To set up financial reasons, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Setup \> Financial reasons**.
 1. Select an existing line, or create a new line.
@@ -525,7 +525,7 @@ The following illustration shows the algorithm schema for each of these four sub
 
 To work with the Electronic messages functionality, you must define related number sequences.
 
-To set up number sequences for electronic messages, follow these steps.
+To set up number sequences for electronic messages, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **General ledger parameters**.
 1. On the **Number sequences** tab, set up two number sequences:
@@ -536,14 +536,14 @@ To set up number sequences for electronic messages, follow these steps.
 
 Different groups of users might require access to **SII** and **CollectionInCash** processing. You can limit access to the processing based on security groups that are defined in the system.
 
-To limit access to **SII** and **CollectionInCash** processing, follow these steps.
+To limit access to **SII** and **CollectionInCash** processing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Electronic messages \> Electronic message processing**.
 1. Select **SII** or **CollectionInCash** processing, and then add the security groups that must work with that processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 ## <a name='exempt'></a> Set up exempt code types on issued and received invoice formats
 
-To support the scenario of reporting exempt code types on issued and received invoices, follow these steps.
+To support the scenario of reporting exempt code types on issued and received invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Workspace** \> **Electronic reporting**.
 1. Go to **Reporting configurations**.
@@ -598,7 +598,7 @@ According to SII system rules, an extended set of parameters must be used when i
 - The country/region of the primary address of the counterparty from the invoice is identified as **EU** in the **Country/region properties** section of the **Foreign trade parameters** page (**Tax \> Setup \> Foreign trade \> Foreign trade parameters**).
 - The counterparty is included in the SII intra-community setup (go to **Tax \> Setup \> Electronic messages \> Message item additional fields**, and then, in the **TipoOperacion** field, specify those counterparties for which invoices must be reported as intra-community invoices).
 
-To verify that you correctly set up the parameters for the **SIIGenerateItems** executable class for the **TipoOperacion** additional field, follow these steps.
+To verify that you correctly set up the parameters for the **SIIGenerateItems** executable class for the **TipoOperacion** additional field, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
 1. Select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
@@ -606,7 +606,7 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 
 ### Set up sales tax codes to report the exempt code types on issued and received invoices files
 
-To set up sales tax codes to report the exempt code types on issued and received invoices files, follow these steps.
+To set up sales tax codes to report the exempt code types on issued and received invoices files, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
 1. Select a **Sales tax group**.
@@ -618,7 +618,7 @@ This set up drives the fulfilling of the 'CausaExencionType' tag on the issued a
 
 ### Set up item sales tax codes to flag the good investments on the received invoices file
 
-To distinguish the acquisition of goods between investments and non-investments from received invoices, follow these steps.
+To distinguish the acquisition of goods between investments and non-investments from received invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes** and select a sales tax code.
 1. In **Report Setup**, **SII REPORT**, set **Classify as investment** to **Yes** to indicate that the selected sales tax code be reported as an investment.
@@ -696,7 +696,7 @@ The following table describes the manual user actions that are included in **SII
 
 ### Run SII processing to report invoices
 
-To report invoices to the SII system, follow these steps.
+To report invoices to the SII system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Run processing**.
@@ -714,7 +714,7 @@ To run SII processing in batch mode for automated processing of interoperation w
 
 ### Exclude an invoice from reporting to the SII system
 
-To exclude an invoice from reporting to the SII system, follow these steps.
+To exclude an invoice from reporting to the SII system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Update status** to update the status of the EM items to **Excluido**. Invoices that have a status of **Excluido** won't be included on the report.
@@ -738,7 +738,7 @@ To set up accounts for payment transactions that are related to cash, go to **Ta
 
 Before you report collections in cash data, the related amounts should be aggregated in the system.
 
-To prepare data to report collections in cash to the SII system, follow these steps.
+To prepare data to report collections in cash to the SII system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Declarations \> Sales tax \> Collections in cash reports**. Each **Collections in cash** report should be created and reported for one calendar year.
 1. On the Action Pane, select **Generate** to create a report for a year.
@@ -779,7 +779,7 @@ The following table describes the actions of **CollectionInCash** processing.
 
 ### Run CollectionInCash EM processing to report invoices
 
-To use **CollectionInCash** processing to report invoices, follow these steps.
+To use **CollectionInCash** processing to report invoices, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Run processing**.
@@ -788,7 +788,7 @@ To use **CollectionInCash** processing to report invoices, follow these steps.
 
 ### Exclude a collection in cash record from reporting to the SII system
 
-To exclude a collection in cash record from reporting to the SII system, follow these steps.
+To exclude a collection in cash record from reporting to the SII system, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
 1. On the Action Pane, select **Update status** to update the status of the EM items to **Excluido**. EM items that have a status of **Excluido** won't be included on the report.

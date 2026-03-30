@@ -4,7 +4,7 @@ description: Learn about how to connect finance and operations apps with a new M
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 02/23/2024
+ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer, IT Pro
@@ -13,43 +13,44 @@ ms.search.validFrom: 2021-10-13
 ms.search.form:
 ms.dyn365.ops.version: 10.0.0
 ---
+
 # Connect finance and operations apps with a new Microsoft Dataverse instance
 
 [!include[banner](../includes/banner.md)]
 
-Administrators in Microsoft Dynamics Lifecycle Services are finding that more capabilities require connection to Dataverse via Power Platform Integration. Customers who don't already use Dataverse for low-code applications and services, or with other Dynamics 365 apps, can quickly set up and connect an instance. This article explains how to connect your finance and operations apps environment with a new Dataverse instance to combine them into one logical environment.
+Administrators in Microsoft Dynamics Lifecycle Services find that more capabilities require connection to Dataverse through Power Platform Integration. Customers who don't already use Dataverse for low-code applications and services, or with other Dynamics 365 apps, can quickly set up and connect an instance. This article explains how to connect your finance and operations apps environment with a new Dataverse instance to combine them into one logical environment.
 
 This article goes through the following steps.
 
 1. Select **Setup** on the **Power Platform Integration** tab.
-2. Configure Dataverse by using a template.
-3. Confirm that you want to proceed.
-4. Wait for provisioning to be completed.
+1. Configure Dataverse by using a template.
+1. Confirm that you want to proceed.
+1. Wait for provisioning to be completed.
 
-As an example of this scenario, a customer who has deployed a finance and operations apps environment wants to connect it to a new Dataverse environment. This operation unlocks popular features such as add-ins, dual-write, virtual entities, and out-of-box business events, so that the rich finance and operations apps data can be made available for low-code applications and services.
+As an example of this scenario, a customer who deployed a finance and operations apps environment wants to connect it to a new Dataverse environment. This operation unlocks popular features such as add-ins, dual-write, virtual entities, and out-of-box business events, so that the rich finance and operations apps data can be made available for low-code applications and services.
 
 ## Power Platform connection isn't reversible
 
-Connecting, or linking as it's also referred, a finance and operations apps environment to a Microsoft Dataverse instance isn't reversible.  The integration between the two systems is done via the infrastructure and disconnecting them would result in data loss. If you wish to delete the Microsoft Dataverse instance, you may follow the guide - [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
+Connecting, or linking as it's also referred, a finance and operations apps environment to a Microsoft Dataverse instance isn't reversible.  The integration between the two systems uses the infrastructure, and disconnecting them results in data loss. To delete the Microsoft Dataverse instance, see [Delete environments when Power Platform Integration is enabled](./environment-lifecycle-delete-env.md).
 
 ## Prerequisites
 
-The following prerequisites must be in place before you set up the Microsoft Power Platform integration:
+Before you set up the Microsoft Power Platform integration, make sure you have the following prerequisites in place:
 
 - Make sure that at least 1 gigabyte (GB) of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup fails. To view your capacity, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
-- Validate the governance policy of your tenant in Power Platform admin center. To do this validation, you must have either the **Tenant administrator** role or the **Power Platform administrator** role.
+- Validate the governance policy of your tenant in Power Platform admin center. To validate this policy, you must have either the **Tenant administrator** role or the **Power Platform administrator** role.
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-    2. In the left navigation, select **Settings** to open the **Power Platform settings** page.
+    1. In the left navigation, select **Settings** to open the **Power Platform settings** page.
 
     :::image type="content" source="media/ppi-ppac-governance-environmentcreation.png" alt-text="Screenshot of the Power Platform settings page.":::
 
-- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Microsoft Entra ID. To make this change, you must be assigned to the **Tenant administrator** role.
+- For organizations that **don't allow everyone** to create Power Platform environments, add the user who sets up the integration in Lifecycle Services to one of the following roles in Microsoft Entra ID. To make this change, you must be assigned to the **Tenant administrator** role.
 
-    - Dynamics 365 Service Admin
-    - Power Platform Admin
+  - Dynamics 365 Service Admin
+  - Power Platform Admin
 
-- The user who does the setup in Lifecycle Services must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan** license, the **AX Enterprise** license, or an application-specific license, such as **Dynamics 365 Finance**.
+- The user who sets up the integration in Lifecycle Services must be licensed. Use the Microsoft 365 admin center to apply the **Dynamics 365 Unified Operations Plan** license, the **AX Enterprise** license, or an application-specific license, such as **Dynamics 365 Finance**.
 
 ## Step 1: Select Setup on the Power Platform Integration tab
 
@@ -61,21 +62,21 @@ A Power Platform environment ID should already be listed on the **Power Platform
 
 ## Step 2: Configure Dataverse by using a template
 
-In this step, you add Dataverse to your initial Power Platform environment. To enable this connection, leave the **Use a different Power Platform Environment** option set to **No** in the **Power Platform Integration Setup** dialog box. If you've already deployed a Dataverse instance with other Dynamics 365 applications, and you want to connect to it, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
+In this step, you add Dataverse to your initial Power Platform environment. To enable this connection, leave the **Use a different Power Platform Environment** option set to **No** in the **Power Platform Integration Setup** dialog box. If you already deployed a Dataverse instance with other Dynamics 365 applications, and you want to connect to it, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
 
-Select an available template. A Dataverse instance is created, and several applications are preinstalled, based on your requirements.
+Select an available template. The process creates a Dataverse instance and preinstalls several applications based on your requirements.
 
 The following templates are available:
 
-* **Dynamics 365 standard** – This template enables add-ins, virtual entities, business events, and dual-write platform components, but it doesn't contain any application maps for dual-write. This template is the one that's most often used.
-* **Dynamics 365 standard with Dual-write** – This template enables everything from the standard template and installs application maps for dual-write.
-* **Project Operations** – This template is a special template for customers who have the **Dynamics 365 Project Operations** license. It preinstalls solutions that are required for Project Operations to run, in addition to enabling and installing everything from the Dynamics 365 standard with Dual-write template.
+- **Dynamics 365 standard** – This template enables add-ins, virtual entities, business events, and dual-write platform components, but it doesn't contain any application maps for dual-write. This template is the one that you use most often.
+- **Dynamics 365 standard with Dual-write** – This template enables everything from the standard template and installs application maps for dual-write.
+- **Project Operations** – This template is a special template for customers who have the **Dynamics 365 Project Operations** license. It preinstalls solutions that are required for Project Operations to run, in addition to enabling and installing everything from the Dynamics 365 standard with Dual-write template.
 
 After you select a template, select the **Agree** checkbox, and then select **Setup**.
 
 ## Step 3: Confirm that you want to proceed
 
-A dialog box appears and indicates that the action can't be reversed. The action of connecting finance and operations apps with Microsoft Power Platform and Dataverse is similar in nature to the action of applying a Microsoft platform update to your environment. After it's done, it can't be undone.
+A dialog box appears and indicates that you can't reverse this action. Connecting finance and operations apps with Microsoft Power Platform and Dataverse is similar in nature to applying a Microsoft platform update to your environment. After it's done, you can't undo it.
 
 To proceed with the setup activity, enter your name in the dialog box.
 
@@ -87,5 +88,5 @@ Provisioning a new Dataverse instance takes only a few minutes. There's a brief 
 
 ## Recommendations
 
-* Because this action can't be reversed, if you already have a Dataverse instance that you want to link with the finance and operations environment, set the **Use a different Power Platform Environment** option to **Yes** in step 2, and see [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
-* As you perform environment lifecycle operations such as restoring data, consider the finance and operations environment and Power Platform environment one environment, and maintain the 1:1 mapping.
+- This action can't be reversed. If you already have a Dataverse instance that you want to link with the finance and operations environment, set the **Use a different Power Platform Environment** option to **Yes** in step 2. To learn more, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
+- As you perform environment lifecycle operations such as restoring data, consider the finance and operations environment and Power Platform environment one environment, and maintain the 1:1 mapping.

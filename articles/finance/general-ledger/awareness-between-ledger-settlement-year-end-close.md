@@ -156,7 +156,7 @@ Some fields from the original transactions must change in the opening balance de
 Information from the original transactions can be found on the **Ledger settlement** page. Each detailed opening balance transaction shows the **Original transaction date** column in the grid. This column can help you match transactions in the new fiscal year. In Microsoft Dynamics 365 Finance version 10.0.33, you can view the **Original document** and **Original document date** columns. You can select **View original voucher** to drill back to the full original voucher.
 
 ## <a name="settle-transactions"></a>Settle transactions
-To settle ledger transactions, follow these steps.
+To settle ledger transactions, follow these steps:
 
 1. Go to **General ledger** > **Periodic tasks** > **Ledger settlements**.
 2.	Set the filters at the top of the page.

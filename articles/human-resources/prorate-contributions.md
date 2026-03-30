@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 The employee contribution amounts for Savings and FSA benefit plans can be prorated based on the number of pay periods in the benefit period.
 
-To enable proration, follow these steps.
+To enable proration, follow these steps:
 
 1. Make sure that a start date and end date are specified for the benefit period.
 2. In the period configuration, if the previous period is specified, make sure that there's no gap or overlap between the benefit periods.

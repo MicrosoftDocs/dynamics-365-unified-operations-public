@@ -108,13 +108,13 @@ To determine the version that is installed in your source and target environment
 
 <img src="media/FinancialReporting_Binaries2.png" width="500px" alt="MRApplicationService">
 
-Customers that are using version 8.1 or later should follow these steps.
+Customers that are using version 8.1 or later should follow these steps:
 
 1. Go to the **Update** tiles for your UAT environment. Save the updates to your Project asset library.
 2. Apply the package to your UAT environment.
 3. Verify that the error has been resolved.
 
-Customers that are using version 8.0 or earlier should follow these steps.
+Customers that are using version 8.0 or earlier should follow these steps:
 
 1. Review the environment history of your source environment. Specifically, look for any "Platform and application binary package" package that has been deployed to the source environment but not to the target environment.
 2. Apply the binary package to your target environment.

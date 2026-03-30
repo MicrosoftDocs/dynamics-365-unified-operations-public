@@ -24,7 +24,7 @@ For example, a fixed asset may be deactivated in the case of capital improvement
 
 ## Temporarily deactivate a fixed asset
 
-To temporarily deactivate a fixed asset, follow these steps.
+To temporarily deactivate a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the fixed asset to temporarily deactivate. The status of the asset is currently **In operation**.
@@ -36,7 +36,7 @@ To temporarily deactivate a fixed asset, follow these steps.
 
 ## Reactivate a fixed asset
 
-To reactivate a fixed asset, follow these steps.
+To reactivate a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the fixed asset that has a status of **Temporary closing-down**.
@@ -50,7 +50,7 @@ To reactivate a fixed asset, follow these steps.
 
 Before you can post an update for a major repair of a fixed asset, you must complete the following procedures.
 
-To post an update for a major repair of a fixed asset, follow these steps.
+To post an update for a major repair of a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, create dimensions for depreciation. Learn more in [Define financial dimensions](../../general-ledger/tasks/define-financial-dimensions.md).
 1. Set up expense codes. 
@@ -59,7 +59,7 @@ To post an update for a major repair of a fixed asset, follow these steps.
 
 ### Create a journal for a major repair of a fixed asset
 
-To create a journal for a major repair of a fixed asset, follow these steps.
+To create a journal for a major repair of a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Create a fixed asset (FA) journal.
@@ -86,7 +86,7 @@ To create a journal for a major repair of a fixed asset, follow these steps.
 
 ### Update a value model for a fixed asset
 
-To update a value model for a fixed asset, follow these steps.
+To update a value model for a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 1. Select a fixed asset, and then, on the Action Pane, select **Value models**.
@@ -104,7 +104,7 @@ To update a value model for a fixed asset, follow these steps.
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
 
-To reverse major repair transactions, follow these steps.
+To reverse major repair transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
 1. On the **FA value models** page, on the Action Pane, select **Transactions**.

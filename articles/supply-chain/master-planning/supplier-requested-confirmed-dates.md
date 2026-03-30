@@ -43,7 +43,7 @@ To enable supplier requested and confirmed shipment dates for a legal entity (co
 
 ## <a name="parameters"></a>Specify whether requested ship dates can be in the past
 
-Sometimes, because of your requested receipt date, plus the lead time, transport days, vendor ship calendar, and other settings, the system might calculate a requested ship date that's in the past. To specify how the system handles this situation, follow these steps.
+Sometimes, because of your requested receipt date, plus the lead time, transport days, vendor ship calendar, and other settings, the system might calculate a requested ship date that's in the past. To specify how the system handles this situation, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
 1. On the **Delivery** tab, in the **Requested ship date in the past** field, select one of the following values:
@@ -54,7 +54,7 @@ Sometimes, because of your requested receipt date, plus the lead time, transport
 
 ## Set up purchase transport days
 
-To define the number of days that are required to transfer goods between addresses, follow these steps.
+To define the number of days that are required to transfer goods between addresses, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **Distribution** \> **Purchase transport days**.
 1. Follow one of these steps:
@@ -83,7 +83,7 @@ To calculate requested ship dates, you must set up an address for each vendor. T
 
 ### Set up vendor addresses
 
-To set up addresses for a vendor, follow these steps.
+To set up addresses for a vendor, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Open the vendor record that you want to work with.
@@ -169,7 +169,7 @@ If you have goods that must be expedited, and the relevant vendor makes an excep
 
 For information about how to set up a ship calendar and define the available ship dates and times for it, see [Calendars and master planning](supply-chain-calendars-master-planning.md).
 
-To assign a ship calendar to a vendor, follow these steps.
+To assign a ship calendar to a vendor, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Open the vendor record that you want to assign a ship calendar to.
@@ -441,3 +441,10 @@ This scenario shows how requested ship and receipt dates are calculated when you
 
     - **Requested receipt date** – The value matches the **Requested receipt date** value from the RFQ.
     - **Requested ship date** – The value is calculated backward from the requested receipt date, based on the purchase transport days setup.
+
+## Related information
+
+- [Calendars and master planning](supply-chain-calendars-master-planning.md)
+- [Improve scheduling engine performance](scheduling-engine-performance.md)
+- [Date and time parameters used by Planning Optimization](planning-optimization/date-time-used.md)
+- [Safety margins](planning-optimization/safety-margins.md)

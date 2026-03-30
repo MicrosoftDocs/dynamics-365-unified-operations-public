@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can use the CIAP fixed asset transactions page to create CIAP credit install
 
 The following procedure uses the BRMF demo company.
 
-To use the CIAP fixed asset transactions page to create CIAP credit installments, follow these steps.
+To use the CIAP fixed asset transactions page to create CIAP credit installments, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Common \> Booking period**.
 1. Select **Create new booking period** to open the drop dialog.

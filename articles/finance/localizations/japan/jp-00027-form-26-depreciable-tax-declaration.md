@@ -2,9 +2,9 @@
 title: JP-00027 Form 26 for depreciable tax declaration
 description: Learn how to assign a registration number to a fixed asset and print the Form 26 report for Japan in Microsoft Dynamics 365 Finance.
 author: kfend
-ms.author: kfend
+ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/25/2025
+ms.date: 12/08/2025
 ms.reviewer: johnmichalak
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
@@ -19,13 +19,13 @@ ms.custom:
 
 This article explains how to assign a registration number to a fixed asset and print the Form 26 report for Japan in Microsoft Dynamics 365 Finance.
 
-The following procedure walk you through how to assign a registration number to a fixed asset and print the form 26 report. The procedures use the JPMF demo company data. 
+The following procedure shows you how to assign a registration number to a fixed asset and print the form 26 report. The procedures use the JPMF demo company data. 
 
-Before you complete the procedures, you must first select the **Fixed Asset** configuration key.
+Before you complete the procedures, select the **Fixed Asset** configuration key.
 
 ## Create a registration number
 
-To create a registration number, follow these steps.
+To create a registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Organizations \> Legal entities**.
 1. Select **Registration IDs**.
@@ -48,7 +48,7 @@ To create a registration number, follow these steps.
 
 ## Create a fixed asset location and assign registration number
 
-To create a fixed asset location and assign registration number, follow these steps.
+To create a fixed asset location and assign registration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset attributes \> Fixed assets locations**.
 1. Select **New**.
@@ -63,7 +63,7 @@ To create a fixed asset location and assign registration number, follow these st
 
 ## Define location to a fixed asset group
 
-To define location to a fixed asset group, follow these steps.
+To define location to a fixed asset group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed asset groups**.
 1. In the list, find and select the desired record. For example, select **VEHI-A**.  
@@ -73,7 +73,7 @@ To define location to a fixed asset group, follow these steps.
 
 ## Create a fixed asset
 
-To create a fixed asset, follow these steps.
+To create a fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Fixed assets \> Fixed assets**.
 1. Select **New**.
@@ -83,7 +83,7 @@ To create a fixed asset, follow these steps.
 
 ## Create an acquisition
 
-To create an acquisition, follow these steps.
+To create an acquisition, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Journal entries \> Fixed assets journal**.
 1. Select **New**.
@@ -97,7 +97,7 @@ To create an acquisition, follow these steps.
 
 ## Verify the Form 26 report
 
-To verify the Form 26 report, follow these steps.
+To verify the Form 26 report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Inquiries and reports \> Depreciable asset declaration reports \> Form 26: Depreciable assets taxation ledger report**.
 1. In the **Calendar year** field, enter or select a value.
@@ -105,7 +105,5 @@ To verify the Form 26 report, follow these steps.
 1. In the **Registration number** field, enter or select a value.
 1. Open and save the report in the required location.
 1. Validate the printed report. The fixed assets should be sorted and grouped by registration number. Similar sorting of fixed assets is also provided for the Form 26-1 n Form 26-2 reports.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

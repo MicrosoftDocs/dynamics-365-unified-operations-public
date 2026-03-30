@@ -26,7 +26,7 @@ This article describes functionality that is available only if the **Payroll - U
 
 In some cases, a worker payment is made and taxes are withheld outside the Payroll system. For example, when stock shares for an employee are vested, and a specific number of shares is withheld to cover the taxes, the vesting is a worker payment. Although the event occurs outside Payroll, you must record the event and all transactions that are associated with it in Payroll, so that statutory reporting and pay statement reporting are accurate.
 
-To record payments that were made outside Payroll, follow these steps.
+To record payments that were made outside Payroll, follow these steps:
 
 1. Enter the earnings for payments that were made outside Payroll. For instructions, see the "Manually enter worker earnings" section of the [Generate earnings for workers](noam-usa-generate-earnings.md) article. On the **Line details** FastTab, select the **Manual** check box.
 

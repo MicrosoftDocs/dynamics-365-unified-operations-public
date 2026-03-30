@@ -24,7 +24,7 @@ You can register a fixed asset acquisitios using a vendor invoice journal or a p
 
 Before you can register the purchase of a fixed asset, you must register the asset on the **Fixed assets** page.
 
-To register a fixed asset acquisition using an invoice journal, follow these steps.
+To register a fixed asset acquisition using an invoice journal, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**. On the Action pane, select **Fixed asset** to create a fixed asset, or select a fixed asset record.
 1. Select **New** to create a fixed asset with a **Scheduled** status.
@@ -54,7 +54,7 @@ To register a fixed asset acquisition using an invoice journal, follow these ste
 
 You can register the purchase of a fixed asset by creating a purchase order. Before creating a purchase order, you should create a released product with a **Service** or **Item** product type. When you select an item with the **Service** product type in the purchase order line, you can enter several fixed assets, related with one purchase order line. When you select an item with the **Item** product type in the purchase order line, you can only enter one fixed asset. This fixed asset needs to be related to the purchase order line.  
 
-To register a fixed asset acquisition using a purchase order, follow these steps.
+To register a fixed asset acquisition using a purchase order, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Common** \> **Released products**.
 1. Create a new item and in the **Item type** field, select **Service** or **Item**. On the **General** tab, fill in the **FA group** field. For more information, see [Create a released product for a single company](../../../supply-chain/pim/tasks/create-released-product-single-company.md).
@@ -72,7 +72,7 @@ To register a fixed asset acquisition using a purchase order, follow these steps
     
 When you create a reverse transaction, the information and amount of the original transaction are saved. By default, the reversal date and the original transaction date are the same. However, when reversing transactions, you can specify a reversal date that is different from the original transaction date. You can also reverse an amortization transaction using this process. 
 
-To reverse a fixed asset acquisition transaction, follow these steps.
+To reverse a fixed asset acquisition transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets** \> **Common** \> **Fixed assets**. Select **Value Models**\> **Transactions** to open the **FA Transactions** page.
 1. Select the fixed asset acquisition transaction, and then select **Reverse transaction** to open the **Reverse transaction** page.

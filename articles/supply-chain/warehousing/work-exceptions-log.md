@@ -65,7 +65,7 @@ The system provides a clean-up batch job to help you delete multiple entries in 
 
 This feature requires Supply Chain Management version 10.0.43 or later.
 
-To clean up the work exceptions log, follow these steps.
+To clean up the work exceptions log, follow these steps:
 
 1. Go to **Warehouse management** \> **Periodic tasks** \> **Clean up** \> **Clean up work exceptions logs**.
 1. In the dialog, expand the **Parameters** FastTab and make the following settings:

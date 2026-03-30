@@ -20,7 +20,7 @@ This article explains how to export services that have zero-rated tax in Microso
 
 The following procedures walk you through how to export services that have zero-rated tax and then validate the tax details.
 
-To export services that have zero-rated tax, follow these steps.
+To export services that have zero-rated tax, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General journal \> Journals \> Invoices \> General journal**.
 1. Create a journal.
@@ -34,7 +34,7 @@ To export services that have zero-rated tax, follow these steps.
 
 ## Validate the tax details
 
-To validate the tax details, follow these steps.
+To validate the tax details, follow these steps:
 
 1. Select **Tax document**.
 1. Select **Close**.

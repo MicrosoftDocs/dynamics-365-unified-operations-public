@@ -25,21 +25,21 @@ The **Asset management** module has been integrated with the **Fixed asset (Russ
 - Relate an asset to a Russian fixed asset.
 - Create an asset, and view the asset and costs that are related to the fixed asset from the Russian fixed asset record.
 
-To relate an asset to a Russian fixed asset, follow these steps.
+To relate an asset to a Russian fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Asset management** \> **Assets** \> **All assets**.
 1. Select the asset record, and then, on the **Fixed asset** FastTab, in the **Fixed asset (Russia)** section, select the fixed asset.
 
 You can create an asset directly from a Russian fixed asset. In this case, the system automatically relates the new asset to the fixed asset.
 
-To create an asset directly from a Russian fixed asset, follow these steps.
+To create an asset directly from a Russian fixed asset, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the fixed asset record, and then, on the Action Pane, on the **Assets management** tab, select **Create maintenance asset**. 
 
 You can open the asset that's related to the Russian fixed asset from a Russian fixed asset record. In this way, you can track the asset cost.
 
-To open the asset that's related to the Russian fixed asset from a Russian fixed asset record, follow these steps.
+To open the asset that's related to the Russian fixed asset from a Russian fixed asset record, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
 1. Select the fixed asset record, and then, on the Action Pane, on the **Assets management** tab, select **Maintenance asset** or **Maintenance cost**. 

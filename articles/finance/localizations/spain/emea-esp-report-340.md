@@ -40,7 +40,7 @@ Report 340 includes the following entries:
     
 ## Generate a Spanish VAT book and export the Report 340 ASCII file
 
-To generate a Spanish VAT book and export the Report 340 ASCII file, follow these steps.
+To generate a Spanish VAT book and export the Report 340 ASCII file, follow these steps:
 
 1. Go to [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2).
 1. In the Shared asset library, download the latest version of the electronic reporting (ER) configurations for the following VAT declaration format:
@@ -117,7 +117,7 @@ To generate a Spanish VAT book and export the Report 340 ASCII file, follow thes
 
 ## Example
 
-To run through an example, follow these steps.
+To run through an example, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and create the following codes.
 

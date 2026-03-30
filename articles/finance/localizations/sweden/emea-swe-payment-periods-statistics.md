@@ -53,7 +53,7 @@ Every year, SCRO (Bolagsverket) publishes the size definition for Swedish-based 
 
 To configure the **Statistics of vendor payment periods** report in Finance, access the SCRO e-service by using your company's registered business credentials, and download the published file. You must then import the downloaded file into Finance.
 
-To create a reporting period and import SCRO vendor size definition data, follow these steps.
+To create a reporting period and import SCRO vendor size definition data, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Statistics of vendor payment periods**.
 1. On the **Statistics of vendor payment periods** page, select **New** to create a reporting period, and enter the reporting period dates.
@@ -81,7 +81,7 @@ The report considers invoices that are paid after the agreed payment term if the
 
 The percentage of invoices that are paid after the agreed payment term is calculated and includes all invoices that are paid during the reporting period.
 
-To calculate vendor payment statistics, follow these steps.
+To calculate vendor payment statistics, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Periodic tasks** \> **Statistics of vendor payment periods** to run the calculation of statistics.
 1. Select **Calculate Statistics**. The system starts the process of calculating statistics of payment delays.

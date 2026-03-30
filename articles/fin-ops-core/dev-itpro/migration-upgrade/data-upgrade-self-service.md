@@ -4,7 +4,7 @@ description: Learn about how to upgrade data from Microsoft Dynamics AX 2012 in 
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 07/24/2024
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -18,15 +18,15 @@ ms.search.validFrom: 2021-06-30
 This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this article in the following order:
 
 1. [Prerequisites](data-upgrade-self-service.md#prerequisites)
-2. [Data upgrade process](data-upgrade-self-service.md#data-upgrade-process) – Run the DataMigrationTool.exe application to complete the upgrade process.
-3. [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
-4. [Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)  – This section helps you reset the process parameters and restart any of the processes.
+1. [Data upgrade process](data-upgrade-self-service.md#data-upgrade-process) – Run the DataMigrationTool.exe application to complete the upgrade process.
+1. [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
+1. [Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)  – This section helps you reset the process parameters and restart any of the processes.
 
 ## Prerequisites
 
 1. A successful upgrade test has been completed in a cloud hosted (development) environment, or self hosted development VHD environment, with customer data. This test should have been run against the same application version and customizations as the self-service environment. 
-2. Download the **Data Migration Toolkit for Dynamics365 Version 1.0.12 (or higher)** from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset Library, select **Model** as the asset type, and then select the model file. Unblock the ZIP download via file properties before extracting. 
-3. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
+1. Download the **Data Migration Toolkit for Dynamics365 Version 1.0.12 (or higher)** from Microsoft Dynamics Lifecycle Services. In the Shared asset Library, select **Model** as the asset type, and then select the model file. Unblock the ZIP download via file properties before extracting. 
+1. Create a self-service environment in Lifecycle Services. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
 
 > [!IMPORTANT]
 > It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 version you are using.
@@ -36,11 +36,11 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > Keep the following points in mind:
 > 
 > - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can't be run against a production environment.
-> - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics 365** from LCS.
+> - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics 365** from Lifecycle Services.
 > - Don't deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
-4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
-5. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
+1. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
+1. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
 
     ```sql
     -- If @installed is 0, replication must be added to the SQL Server installation.
@@ -54,13 +54,13 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
     If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
-6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
+1. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
 
     > [!NOTE]
     > The SQL login used for the toolkit needs to have **sysadmin** server role assigned. You can use an existing SQL login or create a new one as needed. 
 
-7. Enable and start the SQL Server Agent on the source database server.
-8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
+1. Enable and start the SQL Server Agent on the source database server.
+1. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
@@ -107,7 +107,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     > [!IMPORTANT]
     > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you might need to manually start the replication on during downtime hours. 
     
-9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
+1. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there might be situations where you want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.  
@@ -120,7 +120,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
 ### Run the DataMigrationTool.exe application
 
-Before you begin the replication process, the LCS environment will be in a **Deployed** state when it's created.
+Before you begin the replication process, the Lifecycle Services environment will be in a **Deployed** state when it's created.
 
 1. Run the **DataMigrationTool.exe** application.
 
@@ -130,14 +130,14 @@ Before you begin the replication process, the LCS environment will be in a **Dep
     - UAE: **\[ uae.lcs.dynamics.com \]**     
     After you enter the cloud environment, you will receive a prompt to sign in.
 
-3. Provide the credentials that are used to sign in to LCS.
+1. Provide the credentials that are used to sign in to Lifecycle Services.
 
-4. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
+1. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
 
-    To validate the given values, you need to sign in using the credentials that are used to sign in to LCS.
+    To validate the given values, you need to sign in using the credentials that are used to sign in to Lifecycle Services.
 
     > [!NOTE]
-    > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in LCS. You can also find the **Environment-Id** value on the **Environment details** page.
+    > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in Lifecycle Services. You can also find the **Environment-Id** value on the **Environment details** page.
 
 ### Complete the data replication and upgrade
 
@@ -172,22 +172,22 @@ After the validation is successful, the application presents a set of menu optio
     - It authorizes the source IP address.
     - It validates the target databases.
 
-2. **Environment preparation: Prepare the target environment for the data upgrade**
+1. **Environment preparation: Prepare the target environment for the data upgrade**
 
-    This step changes the state of the LCS environment from **Deployed** to **Ready for replication**.
+    This step changes the state of the Lifecycle Services environment from **Deployed** to **Ready for replication**.
 
-3. **Replication: Cleanup Target Database**
+1. **Replication: Cleanup Target Database**
 
     This step performs the following actions:
 
-    1. Change the state of the LCS environment from **Ready for replication** to **Replication in progress**.
-    2. Delete all AX product tables, views, stored procedures, and user-defined functions in the target database.
+    1. Change the state of the Lifecycle Services environment from **Ready for replication** to **Replication in progress**.
+    1. Delete all AX product tables, views, stored procedures, and user-defined functions in the target database.
 
-4. **Replication: Setup Distributor**
+1. **Replication: Setup Distributor**
 
     This step creates a distribution database under the **System Databases** folder on the source server. This distribution database is used for replication.
 
-5. **Replication: Setup Publication for Primary Key (PK) Tables**
+1. **Replication: Setup Publication for Primary Key (PK) Tables**
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
 
@@ -231,7 +231,7 @@ After the validation is successful, the application presents a set of menu optio
 
     If AX Service acquires a schema lock during creation of the primary key publication, those tables will be ignored from the publication. They are added to temporary tables and marked for replication during creation of the cutover publication.
 
-    > [IMPORTANT]
+    > [!IMPORTANT]
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
    
     > [!NOTE]
@@ -239,7 +239,7 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
  
-8. **Cutover: Remove replication setup**
+1. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
 
@@ -256,34 +256,34 @@ After the validation is successful, the application presents a set of menu optio
     > RECONFIGURE WITH OVERRIDE
     > ```
 
-9. **Post-replication: Update environment state to Replicated**
+1. **Post-replication: Update environment state to Replicated**
 
-    This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
+    This step changes the state of the Lifecycle Services environment from **Replication in progress** to **Replication completed**.
 
-10. **Data Synchronise: Trigger Transformation**
+1. **Data Synchronise: Trigger Transformation**
 
-    This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
+    This step triggers the data upgrade. When the action is successful, the state of the Lifecycle Services environment changes from **Replication completed** to **Data upgrade in progress**.
 
     At this point, only the data upgrade trigger occurs. The actual data upgrade occurs in the self-service environment. To learn the status of the data upgrade, use the **'ds'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
-    If data upgrade is successful, the **'ds'** option is shown as **AX 2012 upgrade topology (LCS) status: Deployed**, and all the upgrade steps will be in a **Completed** state.
+    If data upgrade is successful, the **'ds'** option is shown as **AX 2012 upgrade topology Lifecycle Services status: Deployed**, and all the upgrade steps will be in a **Completed** state.
 
-    If data upgrade fails, the **'ds'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**, and one or more upgrade steps will be in a **Failed** state. The **Menu option (10)** tool will show a status of **Resume**.
+    If data upgrade fails, the **'ds'** option is shown as **AX 2012 upgrade topology Lifecycle Services status: Failed**, and one or more upgrade steps will be in a **Failed** state. The **Menu option (10)** tool will show a status of **Resume**.
 
-    After you address and fix the reasons for the failure, you can perform the **Resume** operation. When the action is successful, the state of the LCS environment changes from **Failed** to **Data upgrade in progress**.
+    After you address and fix the reasons for the failure, you can perform the **Resume** operation. When the action is successful, the state of the Lifecycle Services environment changes from **Failed** to **Data upgrade in progress**.
 
     > [!NOTE]
     > Repeat this step until the data upgrade is successful.
 
-11. **Rollback data upgrade: Trigger rollback**
+1. **Rollback data upgrade: Trigger rollback**
 
-    This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated**. This changes the environment from **Failed** to the **Replicated** state.
+    This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the Lifecycle Services environment state to **Replicated**. This changes the environment from **Failed** to the **Replicated** state.
     
     At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this article.
     
-    If rollback is successful, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Replicated**.
+    If rollback is successful, the **'rbs'** option is shown as **AX 2012 upgrade topology Lifecycle Services status: Replicated**.
 
-    If rollback fails, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**.
+    If rollback fails, the **'rbs'** option is shown as **AX 2012 upgrade topology Lifecycle Services status: Failed**.
 
 For more information about the data upgrade process, see [Upgrade from AX 2012 – Data upgrade FAQ](upgrade-faq.md). This article answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 
@@ -318,7 +318,7 @@ You can use the following options to review the reports of the replication valid
 - **Clear:** Clear the environment setup activity. All information is cleared from the cache, such as the **project-Id** value, **Environment-Id** value, and source database details.
 - **Help:** Show the data upgrade migration options with the updated status.
 - **Exit:** Close the application.
-- **Set-failed:** If you want to delete the environment—and if the environment is in the **PreparingForReplication**, **ReadyForReplication**, or **Replicating & Replicated)** state—use this option to set the environment state to **Failed**, and then the environment can be deleted from  LCS.
+- **Set-failed:** If you want to delete the environment—and if the environment is in the **PreparingForReplication**, **ReadyForReplication**, or **Replicating & Replicated)** state—use this option to set the environment state to **Failed**, and then the environment can be deleted from  Lifecycle Services.
 
 ## Troubleshooting
 

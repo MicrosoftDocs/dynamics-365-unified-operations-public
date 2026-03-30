@@ -26,7 +26,7 @@ In addition, you can use the standard user interface (UI) to import your custom 
 
 You have to import data only as often as the relevant data changes in the external systems. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.
 
-To update your data by running an existing data import profile, follow these steps.
+To update your data by running an existing data import profile, follow these steps:
 
 1. On the navigation pane, select **Data management** \> **Import**.
 1. Find the profile for the type of import that you want to run, and select the link for it in the **Name** column.
