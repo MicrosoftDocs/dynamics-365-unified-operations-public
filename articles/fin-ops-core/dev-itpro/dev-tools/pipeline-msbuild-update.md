@@ -4,7 +4,7 @@ description: Learn about how to update a legacy pipeline in Azure Pipelines to u
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 09/23/2020
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -30,7 +30,7 @@ If your build virtual machine has Visual Studio 2019 installed, you can use the 
 Finally, you can check your build pipeline on the **Build the solution** step. The **MSBuild Version** property indicates the version of **Visual Studio** in use.
 
 | MSBuild version | Visual Studio version |
-|---|---|
+| --- | --- |
 | MSBuild 14.0 | Visual Studio 2015 |
 | MSBuild 15.0 | Visual Studio 2017 |
 | MSBuild 16.0 | Visual Studio 2019 |
@@ -42,13 +42,11 @@ Finally, you can check your build pipeline on the **Build the solution** step. T
 
 The following four properties, in three tasks in the pipeline, need to be updated.
 
-| Task name | Task property | Old value | New value|
-| --- | --- | --- | ---|
+| Task name | Task property | Old value | New value |
+| --- | --- | --- | --- |
 | Build the solution | MSBuild Version | MSBuild 14.0/15.0 | MSBuild 16.0 |
 | Database Sync | MSBuild Version | MSBuild 14.0/15.0 | MSBuild 16.0 |
 | Execute Tests | Test platform version | Visual Studio 2015/2017 | Visual Studio 2019 |
 | Execute Tests | Other console options | `/Platform:X64 /InIsolation /UseVsixExtensions:true` | `/Platform:X64 /InIsolation /TestAdapterPath:"$(VsixExtensionFolder)"` |
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
