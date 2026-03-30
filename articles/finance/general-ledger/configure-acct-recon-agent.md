@@ -20,6 +20,9 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
+>[!NOTE]
+> We're enhancing the Account Reconciliation Agent to give customers more configuration flexibility and predictable credit consumption. Until these improvements are release, this agent requires activation by the Microsoft team. To request activiation and be guided through the process, complete this [form](https://forms.office.com/r/wCREkgRH6D)
+
 This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 
 >[!NOTE]
