@@ -1,11 +1,11 @@
 ---
 title: Add lookup values for financial dimensions to Excel templates
 description: Learn about how you can add the ability to look up dimension values in Microsoft Excel templates, including a table outlining dimensions and related entities.
-author: twheeloc
-ms.author: twheeloc
+author: ethanrimes
+ms.author: ethankallett
 ms.topic: how-to
 ms.date: 03/27/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
@@ -20,14 +20,14 @@ ms.dyn365.ops.version: Version 1611
 
 This article provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
-The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) article. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this article.
+The only value that's present on Microsoft Excel templates after installation is MainAccount. This value is the only dimension that all customers have. To add dimensions to Microsoft Excel templates, complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) article. After you add the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this article.
 
 > [!NOTE]
 > This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
 
 1. In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
 1. Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.
-1. Right click **Relations**. Select **New** and then click **Relation.**
+1. Right-click **Relations**. Select **New** and then select **Relation**.
 1. In the **Properties** pane, set the following properties.
     - **Validate** - No
     - **Cardinality** - ZeroMore
