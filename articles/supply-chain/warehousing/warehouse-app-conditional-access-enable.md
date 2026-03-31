@@ -47,19 +47,17 @@ The setup steps are the same for both Android and iOS:
 5. Enter your email or organizational account.
 6. Select **Register device**.
  
-## Configure your Microsoft Entra ID app registration to support Conditional Access
+## App registration
 
-Conditional Access requires a manual app registration in Microsoft Entra ID — the global application doesn't support it.
+Conditional Access works with the global Microsoft Entra ID application — you don't need a manual app registration. The global application is the recommended approach because it's simpler to set up and maintain.
 
-If you already have a manual app registration, verify that it includes the Android signature hash for brokered authentication: `Xo8WBi6jzSxKDVR4drqm84yr9iU=`. If it doesn't, update your registration to add it.
-
-If you don't have a manual app registration yet, create one by following the steps in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). The signature hash is included in those steps.
+If you already use a manual app registration for other reasons (such as on-premises environment requirements), it also works with Conditional Access. Ensure your registration includes the Android signature hash for brokered authentication: `Xo8WBi6jzSxKDVR4drqm84yr9iU=`. Learn more in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service).
 
 <a name="config-devices"></a>
 
 ## Configure devices to use Conditional Access
 
-After setting up your app registration, configure each device to use brokered authentication. You can do this manually through the app UI or automatically by distributing a JSON file via QR code or MDM. Both methods are described below.
+When using the global application, brokered authentication is enabled by default. The only additional configuration required is enabling the new redirect URI on Android devices. You can configure devices manually through the app UI or automatically by distributing a JSON file via QR code or MDM.
 
 ### Configure the connection manually
 
@@ -74,11 +72,10 @@ To manually set up a connection that supports Conditional Access:
 1. Make the following settings on the **Edit connection** page:
 
     - **Authentication method** – Set to *Username and Password*.
-    - **Cloud** – Set to *Manual*.
-    - **Use broker** – If you're using Windows or Android, set this option to *Yes*. If you're using iOS, the system handles this setting automatically, so the setting isn't shown.
-    - **AndroidNewRedirectURI** – If you're using an Android device, set this option to *Yes*.
+    - **Cloud** – Set to *Azure Global* (recommended). If you use a manual app registration, set to *Manual* and also provide the **Microsoft Entra ID client** and **Microsoft Entra ID tenant** values.
+    - **AndroidNewRedirectURI** – If you're using an Android device, set this option to *Yes*. This is the only additional setting required for Android devices to support Conditional Access.
 
-        Configure all the other settings as described in [Manually configure the application](install-configure-warehouse-management-app.md#config-manually). If you previously had **Cloud** set to *Azure Global*, remember also to set values for **Microsoft Entra ID client** and **Microsoft Entra ID tenant** as described in that article.
+        Configure all the other settings as described in [Manually configure the application](install-configure-warehouse-management-app.md#config-manually).
 
 1. Select **Save**.
 1. Sign in with the worker's Microsoft Entra credentials.
@@ -87,32 +84,33 @@ To manually set up a connection that supports Conditional Access:
 
 To prepare for automatic connection configurations to be distributed by using a QR code or mobile device management (MDM) system, create a JSON file that contains the connection details. Learn more in [Configure the application by importing connection settings](install-configure-warehouse-management-app.md#configure-the-application-by-importing-connection-settings).
 
-To configure devices to support Conditional Access, your JSON configuration file must use the following values in addition to the other standard settings:
+For Android devices, add the following setting to your JSON configuration file:
 
-- `"ConnectionType": "UsernamePassword"`
-- `"AuthCloud": "Manual"`
-- `"UseBroker": true`
 - `"AndroidNewRedirectURI": true`
 
-Remember that when you use `"AuthCloud": "Manual"`, you must also set values for `ActiveDirectoryClientAppId` and `ActiveDirectoryTenant`.
+For all platforms, the connection must use username/password authentication:
 
-The following example shows a complete JSON-based connection configuration that includes all the required settings, including the settings needed to support Conditional Access:
+- `"ConnectionType": "UsernamePassword"`
+
+When using the global application (`"AuthCloud": "AzureGlobal"`), brokered authentication is enabled by default, so you don't need to set `"UseBroker"` or `"AuthCloud"` explicitly.
+
+The following example shows a complete JSON-based connection configuration using the global application with Conditional Access support on Android:
 
 ```json
 {
-    "ActiveDirectoryClientAppId": "aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
-    "ConnectionName": "Connection5",
-    "ActiveDirectoryResource": "<https://yourenvironment5.cloudax.dynamics.com>",
-    "ActiveDirectoryTenant": "<https://login.windows.net/7b363b3e-3803-4632-8e5b-e82f45ddc359>",
+    "ConnectionName": "Connection1",
+    "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
     "Company": "USMF",
     "IsEditable": true,
-    "IsDefaultConnection": false,
-    "UseBroker": true,
+    "IsDefaultConnection": true,
     "ConnectionType": "UsernamePassword",
-    "AuthCloud": "Manual",
+    "AuthCloud": "AzureGlobal",
     "AndroidNewRedirectURI": true
 }
 ```
+
+> [!NOTE]
+> If you use a manual app registration instead of the global application, set `"AuthCloud": "Manual"` and also include `"ActiveDirectoryClientAppId"` and `"ActiveDirectoryTenant"` values.
 
 For more information about distributing the JSON file to your devices, see [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md) and [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 

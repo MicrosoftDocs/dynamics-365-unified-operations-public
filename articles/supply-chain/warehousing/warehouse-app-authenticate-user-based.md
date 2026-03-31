@@ -72,12 +72,9 @@ When you use username/password authentication, each human worker must enter the 
 The Warehouse Management mobile app uses a Microsoft Entra ID application registration to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
 
 > [!IMPORTANT]
-> You can always use a manually created application registration to authenticate and connect, but the global application is easier to use if it supports your scenarios. If you're running one of the following scenarios, you must use a manually created application registration instead of the global one.
+> The global application is the recommended approach — it's easier to set up and maintain, and it supports most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). You only need a manually created application registration if you have specific requirements that the global application doesn't meet (for example, because you're using certain on-premises environment configurations).
 >
->- If you use [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md) to enforce access controls based on conditions such as user risk, device status, app sensitivity, location, and so on, then you must use a manually created application registration. Be sure to include the new signature hash for Android devices (`Xo8WBi6jzSxKDVR4drqm84yr9iU=`), as described later in this section.
->- If you have specific requirements that the global application doesn't meet (for example, because you're using certain on-premises environment configurations), then you must use a manually created application registration.
->
-> If you're able to use the global application, then you can skip this section. For more information about how to use the global application, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md). If you prefer or require a manual application registration, continue with this section.
+> If you're able to use the global application, you can skip this section. For more information about how to use the global application, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md). If you require a manual application registration, continue with this section.
 
 The following procedure shows one way to register an application in Microsoft Entra ID. For detailed information and alternatives, use the links after the procedure.
 
