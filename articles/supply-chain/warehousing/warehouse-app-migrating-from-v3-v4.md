@@ -64,10 +64,10 @@ V4 supports a smooth transition from V3. The following considerations summarize 
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. You can use different authentication methods for each version without conflict. This capability allows for a phased rollout of V4 without disrupting ongoing operations. However, you can't run V3 and V4 on the same device at the same time.
 - **V3 requests remain active** – Microsoft does not block requests coming from V3. You can continue using V3 until you're ready to migrate.
 
-> [!TIP]
+> [!IMPORTANT]
+> **Microsoft does not force-update any device.** When a new version of the Warehouse Management mobile app is released, Microsoft publishes it to the app stores (Microsoft Store, Google Play, and Apple App Store). The update is only downloaded to a device if auto-update is enabled in the device's store settings. If auto-update is disabled, the device continues to run its current version until an administrator or user manually triggers the update.
 >
-> - Application stores, including the Microsoft Store, Google Play, and the Apple App Store, prioritize user-driven updates and device state over enterprise-wide synchronization. When auto-updates are enabled on your store configurations, the store services the new version and installs when the device state is available.
-> - To ensure a consistent and predictable migration, we strongly recommend using a Mobile Device Management (MDM) solution, such as Microsoft Intune. Unlike app stores, an MDM provides a dedicated management channel that allows administrators to control over the updates.
+> To ensure a consistent and predictable migration across your device fleet, we strongly recommend using a Mobile Device Management (MDM) solution, such as Microsoft Intune. Unlike app stores, an MDM provides a dedicated management channel that gives administrators full control over when and how updates are applied to each device.
 
 ### <a name="migration-information-ios"></a> Migrating from V3 to V4 for iOS
 
