@@ -15,13 +15,13 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to assign coordinates to warehouse locations, configure the sorting algorithms that optimize picking routes, add the sorting step to wave processing, and configure batch processing for large-volume warehouses.
+Warehouse spatial location sorting optimizes picking routes by assigning X, Y, and Z coordinates to warehouse locations. You can configure the sorting algorithms, add the sorting step to wave processing, and set up batch processing for large-volume warehouses.
 
 ## Prerequisites
 
 Before you set up warehouse spatial locations, the following prerequisites must be met:
 
-- The **Warehouse spatial location** feature must be enabled in the **Feature management** workspace. For more information, see [Warehouse spatial location](warehouse-spatial-location.md).
+- The *Warehouse spatial location* feature must be turned on in **Feature management**. Learn more in [Warehouse spatial location](warehouse-spatial-location.md).
 - Warehouse locations must already be defined for your warehouse.
 
 ## Configure warehouse-level sorting settings
@@ -36,7 +36,7 @@ To configure warehouse-level spatial location settings, follow these steps.
 
 ### Distance calculation strategy
 
-Select the method that the system uses to calculate the distance between two locations. The choice affects how distances are measured, which in turn affects the sort order of pick work lines. For more information about how each strategy calculates distance, see [Distance calculation strategies](warehouse-spatial-location.md#distance-calculation-strategies).
+Select the method that the system uses to calculate the distance between two locations. The choice affects how distances are measured, which in turn affects the sort order of pick work lines. Learn more about how each strategy calculates distance in [Distance calculation strategies](warehouse-spatial-location.md#distance-calculation-strategies).
 
 - **Straight Line** – Calculates the direct distance between two points, assuming the worker can move freely in any direction. Use this strategy for open warehouse layouts where workers can walk diagonally.
 - **City Block** – Calculates the distance along a grid-like path (walking along one axis and then another), assuming the worker must follow aisles. Use this strategy for warehouses with aisle-based layouts where workers can't cut across aisles.
@@ -49,7 +49,7 @@ Select the method that the system uses to retrieve a location's coordinates.
 
 ### Location sorting algorithm
 
-Select the algorithm that the system uses to sort pick work lines. Both algorithms sort picks so that the worker starts at the farthest location from the put (destination) location and finishes at the nearest. For more information about how each algorithm works, see [Sorting algorithms](warehouse-spatial-location.md#sorting-algorithms).
+Select the algorithm that the system uses to sort pick work lines. Both algorithms sort picks so that the worker starts at the farthest location from the put (destination) location and finishes at the nearest. Learn more about how each algorithm works in [Sorting algorithms](warehouse-spatial-location.md#sorting-algorithms).
 
 - **Fast calculation** – Builds a route by repeatedly selecting the nearest unvisited location, then reverses it. Generates a route quickly and produces good results in most scenarios. Recommended for high-volume wave processing where calculation speed is the priority.
 - **Optimized route** – Starts with the same route as fast calculation, then improves it by checking whether rearranging segments produces a shorter path. Recommended when minimizing travel distance is the priority. This option may take slightly longer to calculate but can produce noticeably shorter routes for complex pick patterns.
@@ -84,7 +84,7 @@ To add the wave step, follow these steps.
 1. Position the step after the work creation steps (such as **createWork**) and before the release step. The sort must run after work is created so that there are pick lines to sort.
 
 > [!NOTE]
-> The **Sort picking work lines** method only appears in the available methods list after the **Warehouse spatial location** feature is enabled in the **Feature management** workspace. If the method still doesn't appear, go to **Warehouse management \> Setup \> Waves \> Wave process methods**, and select **Regenerate methods**.
+> The **Sort picking work lines** method only appears in the available methods list after the *Warehouse spatial location* feature is turned on in **Feature management**. If the method still doesn't appear, go to **Warehouse management \> Setup \> Waves \> Wave process methods**, and select **Regenerate methods**.
 
 ## Configure batch processing for sort picking work lines
 

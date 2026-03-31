@@ -15,9 +15,9 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The warehouse spatial location feature lets you assign X, Y, and Z coordinates to warehouse locations. The system uses these coordinates to calculate optimized picking routes that minimize the travel distance that warehouse workers spend moving between locations during pick work.
+The *warehouse spatial location* feature lets you assign X, Y, and Z coordinates to warehouse locations. The system uses these coordinates to calculate optimized picking routes that minimize the travel distance that warehouse workers spend moving between locations during pick work.
 
-When this feature is enabled, the **Sort picking work lines** wave processing step reorders the pick work lines within a work so that workers follow an efficient route through the warehouse. The step uses the assigned coordinates, your selected distance calculation strategy, and your selected sorting algorithm to determine the optimal order.
+When this feature is turned on, the **Sort picking work lines** wave processing step reorders the pick work lines within a work so that workers follow an efficient route through the warehouse. The step uses the assigned coordinates, your selected distance calculation strategy, and your selected sorting algorithm to determine the optimal order.
 
 ## Key concepts
 
@@ -175,21 +175,21 @@ The difference between the strategies is most pronounced when the worker must co
 To use this feature, the following prerequisites must be met:
 
 - The **Warehouse and Transportation management** configuration key must be enabled.
-- The **Warehouse spatial location** feature must be enabled in the **Feature management** workspace.
+- The *Warehouse spatial location* feature must be turned on in **Feature management**.
 
 > [!IMPORTANT]
 > This feature is currently in preview. Preview features aren't meant for production use and might have limited functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-## Enable the feature
+## Turn on the feature
 
-To enable the warehouse spatial location feature, follow these steps.
+To turn on the warehouse spatial location feature, follow these steps.
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 2. On the **All** tab, search for *Warehouse spatial location*.
 3. Select the feature, and then select **Enable now**.
 
 > [!NOTE]
-> After the feature is enabled, you can disable it again if needed. However, any coordinate values and configuration that you've already entered will remain in the database.
+> After the feature is turned on, you can turn it off again if needed. However, any coordinate values and configuration that you've already entered remain in the database.
 
 ## Related information
 
