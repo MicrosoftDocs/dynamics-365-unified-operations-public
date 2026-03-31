@@ -17,12 +17,18 @@ ms.custom:
 
 Warehouse spatial location sorting optimizes picking routes by assigning X, Y, and Z coordinates to warehouse locations. You can configure the sorting algorithms, add the sorting step to wave processing, and set up batch processing for large-volume warehouses.
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Prerequisites
 
-Before you set up warehouse spatial locations, the following prerequisites must be met:
+To use warehouse spatial locations, your system must meet the following requirements:
 
-- The *Warehouse spatial location* feature must be turned on in **Feature management**. Learn more in [Warehouse spatial location](warehouse-spatial-location.md).
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.48 or later.
+- The feature named *Warehouse spatial location* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Warehouse locations must already be defined for your warehouse.
+
+> [!NOTE]
+> After you turn on the *Warehouse spatial location* feature, you can turn it off again if needed. However, all coordinate values and configurations that you entered remain in the database.
 
 ## Configure warehouse-level sorting settings
 
@@ -32,27 +38,16 @@ To configure warehouse-level spatial location settings, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Select the warehouse that you want to configure.
-1. On the **Warehouse** FastTab, in the **Warehouse coordinates configuration** section, set the following fields.
+1. On the **Warehouse** FastTab, in the **Warehouse coordinates configuration** section, make the following settings:
 
-### Distance calculation strategy
-
-Select the method that the system uses to calculate the distance between two locations. The choice affects how distances are measured, which in turn affects the sort order of pick work lines. Learn more about how each strategy calculates distance in [Distance calculation strategies](warehouse-spatial-location.md#distance-calculation-strategies).
-
-- **Straight Line** – Calculates the direct distance between two points, assuming the worker can move freely in any direction. Use this strategy for open warehouse layouts where workers can walk diagonally.
-- **City Block** – Calculates the distance along a grid-like path (walking along one axis and then another), assuming the worker must follow aisles. Use this strategy for warehouses with aisle-based layouts where workers can't cut across aisles.
-
-### Coordinate retrieval strategy
-
-Select the method that the system uses to retrieve a location's coordinates.
-
-- **Location coordinates** – Retrieves the X, Y, and Z coordinate values directly from the fields on the location record.
-
-### Location sorting algorithm
-
-Select the algorithm that the system uses to sort pick work lines. Both algorithms sort picks so that the worker starts at the farthest location from the put (destination) location and finishes at the nearest. Learn more about how each algorithm works in [Sorting algorithms](warehouse-spatial-location.md#sorting-algorithms).
-
-- **Fast calculation** – Builds a route by repeatedly selecting the nearest unvisited location, then reverses it. Generates a route quickly and produces good results in most scenarios. Recommended for high-volume wave processing where calculation speed is the priority.
-- **Optimized route** – Starts with the same route as fast calculation, then improves it by checking whether rearranging segments produces a shorter path. Recommended when minimizing travel distance is the priority. This option may take slightly longer to calculate but can produce noticeably shorter routes for complex pick patterns.
+    - **Distance calculation strategy** – Select the method that the system uses to calculate the distance between two locations. The choice affects how distances are measured, which in turn affects the sort order of pick work lines. Learn more about how each strategy calculates distance in [Distance calculation strategies](spatial-location-overview.md#distance-calculation-strategies). Choose one of the following options:
+      - *Straight Line* – Calculates the direct distance between two points, assuming the worker can move freely in any direction. Use this strategy for open warehouse layouts where workers can walk diagonally.
+      - *City Block* – Calculates the distance along a grid-like path (walking along one axis and then another), assuming the worker must follow aisles. Use this strategy for warehouses with aisle-based layouts where workers can't cut across aisles.
+    - **Coordinate retrieval strategy** – Select the method that the system uses to retrieve a location's coordinates. Only one setting is currently available <!-- KFM: Right? -->:
+        - *Location coordinates* – Retrieves the X, Y, and Z coordinate values directly from the fields on the location record.
+    - **Location sorting algorithm** – Select the algorithm that the system uses to sort pick work lines. Both algorithms sort picks so that the worker starts at the farthest location from the put (destination) location and finishes at the nearest. Learn more about how each algorithm works in [Sorting algorithms](spatial-location-overview.md#sorting-algorithms). Choose one of the following options:
+        - *Fast calculation* – Builds a route by repeatedly selecting the nearest unvisited location, then reverses it. Generates a route quickly and produces good results in most scenarios. Recommended for high-volume wave processing where calculation speed is the priority.
+        - *Optimized route* – Starts with the same route as fast calculation, then improves it by checking whether rearranging segments produces a shorter path. Recommended when minimizing travel distance is the priority. This option may take slightly longer to calculate but can produce noticeably shorter routes for complex pick patterns.
 
 ## Assign coordinates to warehouse locations
 
@@ -62,11 +57,11 @@ To assign coordinates to warehouse locations, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 1. Select a location record.
-1. Set the following fields.
+1. Make the following settings:
 
-- **X coordinate** – The position of the location along the X axis of the warehouse. This value typically represents the aisle or horizontal position.
-- **Y coordinate** – The position of the location along the Y axis of the warehouse. This value typically represents the position within an aisle (depth).
-- **Z coordinate** – The position of the location along the Z axis of the warehouse. This value typically represents the vertical level (for example, the shelf or rack level). Set this to 0 for ground-level locations to exclude vertical distance from calculations.
+    - **X coordinate** – Enter the position of the location along the X axis of the warehouse. This value typically represents the aisle or horizontal position.
+    - **Y coordinate** – Enter the position of the location along the Y axis of the warehouse. This value typically represents the position within an aisle (depth).
+    - **Z coordinate** – Enter the position of the location along the Z axis of the warehouse. This value typically represents the vertical level (for example, the shelf or rack level). Set this to 0 for ground-level locations to exclude vertical distance from calculations.
 
 > [!TIP]
 > Use a consistent coordinate system across all locations in a warehouse. For example, you might use the aisle number for X, the bay number for Y, and the shelf level for Z.
@@ -97,10 +92,10 @@ To configure batch processing, follow these steps.
 1. On the Action Pane, select **Task configuration**.
 1. On the **Wave post method task configuration** page, select **New** to add a configuration row.
 1. In the **Warehouse** field, select the warehouse that you want to configure batch processing for.
-1. Set the following fields.
+1. Make the following settings:
 
-- **Maximum number of batch tasks** – The maximum number of parallel batch tasks that the system creates to process the sort step. The actual number of tasks is the lesser of this value and the number of works to sort. A higher value allows more parallel processing but uses more batch server capacity.
-- **Wave processing batch group** – The batch group to use for the sorting batch tasks. If you leave this field blank, the system uses the default wave processing batch group that is configured in **Warehouse management parameters**.
+    - **Maximum number of batch tasks** – Enter the maximum number of parallel batch tasks that the system creates to process the sort step. The actual number of tasks is the lesser of this value and the number of works to sort. A higher value allows more parallel processing but uses more batch server capacity.
+    - **Wave processing batch group** – Enter the batch group to use for the sorting batch tasks. If you leave this field blank, the system uses the default wave processing batch group that is configured in **Warehouse management parameters**.
 
 > [!TIP]
 > Start with a small number of batch tasks (for example, 2-4) and increase the value based on your wave volume and batch server capacity. Each batch task processes one work at a time from a shared queue, so the work is automatically distributed across available tasks.
@@ -115,9 +110,9 @@ This scenario shows how spatial location sorting reorders pick work lines to red
 ### Set up
 
 1. Configure a warehouse with the following settings:
-   - **Distance calculation strategy**: *Straight Line*
-   - **Coordinate retrieval strategy**: *Location coordinates*
-   - **Location sorting algorithm**: *Fast calculation*
+   - **Distance calculation strategy** – *Straight Line*
+   - **Coordinate retrieval strategy** – *Location coordinates*
+   - **Location sorting algorithm** – *Fast calculation*
 
 1. Create four pick locations with the following coordinates:
 
@@ -201,7 +196,7 @@ In this example, both strategies produce the same sorted order because the relat
 
 ## Related information
 
-- [Warehouse spatial location](warehouse-spatial-location.md)
+- [Warehouse spatial location](spatial-location-overview.md)
 - [Wave processing](wave-processing.md)
 - [Wave templates](wave-templates.md)
 
