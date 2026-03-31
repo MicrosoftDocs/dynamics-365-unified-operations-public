@@ -17,13 +17,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to enable the **Copy values to this dimension on each new DimensionName created** feature for custom entity-backed financial dimensions or for entity-backed dimensions that don't support it out of the box.
+This article explains how to enable the **Copy values to this dimension on each new <DimensionName> created** feature for custom entity-backed financial dimensions or for entity-backed dimensions that don't support it out of the box.
 
 ## Overview
 
 When a financial dimension is backed by an entity such as Customer or Vendor, the system can automatically copy the dimension value into the default dimensions of a new record. For example, when you create a new customer, the customer ID is automatically added as the customer dimension value in the default dimensions for that customer record.
 
-This behavior is controlled by the **Copy values to this dimension on each new DimensionName created** toggle on the **Financial dimensions** details form. However, this toggle is only enabled for entity-backed dimensions whose backing table has been specifically configured to support it.
+This behavior is controlled by the **Copy values to this dimension on each new <DimensionName> created** toggle on the **Financial dimensions** details form. However, this toggle is only enabled for entity-backed dimensions whose backing table has been specifically configured to support it.
 
 Out of the box, the following 13 entities support this feature:
 
@@ -50,7 +50,7 @@ If you have a custom entity-backed dimension or need to enable this feature for 
 
 ## Step 1: Add the DimensionCanCopyValuesOnCreateAttribute to the view
 
-The **Copy values to this dimension on each new DimensionName created** toggle on the dimension details form is activated by the `DimensionCanCopyValuesOnCreateAttribute` attribute. You must add this attribute to the `DimAttribute` view for your backing table.
+The **Copy values to this dimension on each new <DimensionName> created** toggle on the dimension details form is activated by the `DimensionCanCopyValuesOnCreateAttribute` attribute. You must add this attribute to the `DimAttribute` view for your backing table.
 
 Open the view in Visual Studio and add the following attribute to the view class declaration:
 
@@ -91,7 +91,7 @@ If the backing table is part of the standard product and you can't directly modi
 
 1. Build your project and synchronize the database.
 2. Navigate to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
-3. Select the dimension that you configured and verify that the **Copy values to this dimension on each new DimensionName created** toggle is now enabled and can be turned on.
+3. Select the dimension that you configured and verify that the **Copy values to this dimension on each new <DimensionName> created** toggle is now enabled and can be turned on.
 4. Turn on the toggle, then create a new record of the backing entity type. Verify that the dimension value is automatically added to the default dimensions of the new record.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
