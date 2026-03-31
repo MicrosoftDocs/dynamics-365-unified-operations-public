@@ -19,11 +19,11 @@ ms.dyn365.ops.version: AX 7.0.0
 This article contains the documentation available for the System classes.
 
 > [!NOTE]
-> This article is not a complete list of the System table members. You can find a complete list of tables and their members in the Application Explorer.
+> This article isn't a complete list of the System table members. You can find a complete list of tables and their members in the Application Explorer.
 
 ## Common
 
-The Common table is the base class for all tables. It does not contain any data. It is primarily used in X++ code to refer to any table in a polymorphic way.
+The Common table is the base class for all tables. It doesn't contain any data. It's primarily used in X++ code to refer to any table in a polymorphic way.
 
 ### Methods
 
@@ -61,7 +61,7 @@ The Common table is the base class for all tables. It does not contain any data.
 | fieldAccessRight             | Returns the field access right.                                                                                             |
 | fieldBufferAccessRight       | Returns the field access right for the current record.                                                                      |
 | fieldState                   | Sets or returns the state of a field in the table buffer.                                                                   |
-| getAllowRedefault            | Returns the list of fields that are allowed to re-default.                                                                  |
+| getAllowRedefault            | Returns the list of fields that are allowed to redefault.                                                                  |
 | getDefaultingDependencies    | Returns the container that holds defaulting dependencies.                                                                   |
 | getExtension                 | Returns the table extension.                                                                                                |
 | getFieldValue                | Gets the value of the specified field from a table buffer.                                                                  |
@@ -85,7 +85,7 @@ The Common table is the base class for all tables. It does not contain any data.
 | isTmp                        | Indicates whether this is a temporary table.                                                                                |
 | joinChild                    | Finds the join child of the current record.                                                                                 |
 | joinParent                   | Finds the join parent of the current record.                                                                                |
-| linkPhysicalTableInstance    | Checks whether there is a link for the physical table instance for the record.                                              |
+| linkPhysicalTableInstance    | Checks whether there's a link for the physical table instance for the record.                                              |
 | merge                        | Merges the current table with the specified table.                                                                          |
 | modifiedField                | Modifies the specified field to the original.                                                                               |
 | modifiedFieldValue           | Modifies the specified field to the original value.                                                                         |
@@ -102,7 +102,7 @@ The Common table is the base class for all tables. It does not contain any data.
 | renamePrimaryKey             | Renames the foreign keys in other tables according to the change of the corresponding primary key value in this table.      |
 | reread                       | Rereads the record from the table.                                                                                          |
 | RowCount                     | Retrieves the number of rows in the table.                                                                                  |
-| selectForUpdate              | Gets and sets the property that indicates whether to select records for update when they are read.                          |
+| selectForUpdate              | Gets and sets the property that indicates whether to select records for update when they're read.                          |
 | selectLocked                 | Indicates whether to select locked records.                                                                                 |
 | selectRefRecord              | Selects the record by referenced field ID.                                                                                  |
 | selectWithRepeatableRead     | Gets and sets the property that indicates whether repeatable read is enabled.                                               |
@@ -111,7 +111,7 @@ The Common table is the base class for all tables. It does not contain any data.
 | setFieldValue                | Sets the field value in the record buffer.                                                                                  |
 | setSQLTracing                | Enables or disables SQL tracing mode.                                                                                       |
 | setTempDB                    |                                                                                                                             |
-| setTmp                       | Sets the table so that it is not persisted to the database.                                                                 |
+| setTmp                       | Sets the table so that it isn't persisted to the database.                                                                 |
 | setTmpData                   | Sets the contents of the temporary table to the specified data.                                                             |
 | setXDSContext                | Sets new XDS context.                                                                                                       |
 | skipDatabaseLog              | Gets and sets the property that indicates whether to skip database log requests.                                            |
@@ -192,7 +192,7 @@ The DataArea table contains a list of companies that have been created in the da
 | id           | String  | DataAreaId    |                  | ID for an area of data                                                                                                    |
 | isVirtual    | Enum    |               | boolean          |                                                                                                                           |
 | name         | String  | UserIdStr     |                  | Name                                                                                                                      |
-| Partition    | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition    | Int64   | Partition     |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId        | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion   | Integer | RecVersion    |                  |                                                                                                                           |
 | timeZone     | Enum    |               | Timezone         |                                                                                                                           |
@@ -213,7 +213,7 @@ The DataArea table contains a list of companies that have been created in the da
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -229,8 +229,8 @@ The DatabaseLog table stores configuration information for the SysDatabaseLog ta
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | domainId          | String      | DomainId          |                  | ID for the domain                                                                                                         |
 | logField          | Integer     | FieldId           |                  | ID for the field                                                                                                          |
 | logTable          | Integer     | TableId           |                  | ID for the table                                                                                                          |
@@ -261,7 +261,7 @@ The DatabaseLog table stores configuration information for the SysDatabaseLog ta
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -269,7 +269,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## DEL\_AccessRightsList
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Fields
 
@@ -279,8 +279,8 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 | accessTypeFkeyUse | Enum        |                   | AccessType       |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | domainId          | String      | DomainId          |                  | ID for the domain                                                                                                         |
 | elementName       | String      | UtilElementName   |                  | Name of the application element.                                                                                          |
 | groupId           | String      | UserGroupId       |                  | ID for the user group                                                                                                     |
@@ -311,7 +311,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -328,8 +328,8 @@ The CompanyDomainList table contains associations between the DomainInfo and Dat
 | companyId         | String      | SelectableDataArea |                  | ID for the company you can select                                                                                         |
 | createdBy         | String      | CreatedBy          |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime    |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | domainId          | String      | DomainId           |                  | ID for the domain                                                                                                         |
 | modifiedBy        | String      | ModifiedBy         |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime   |                  |                                                                                                                           |
@@ -353,7 +353,7 @@ The CompanyDomainList table contains associations between the DomainInfo and Dat
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -361,7 +361,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## DEL_DomainInfo
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Fields
 
@@ -386,7 +386,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -431,8 +431,8 @@ The UserGroupList table contains the list of users associated with each user gro
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | groupId           | String      | UserGroupId       |                  | ID for the user group                                                                                                     |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -461,7 +461,7 @@ The UserGroupList table contains the list of users associated with each user gro
 
 ## ModelSecPolRuntimeEx
 
-The ModelSecPolRuntimeEx table stores the runtime metadata that is necessary to apply security policies.
+The ModelSecPolRuntimeEx table stores the runtime metadata that's necessary to apply security policies.
 
 ### Fields
 
@@ -496,7 +496,7 @@ The ModelSecPolRuntimeEx table stores the runtime metadata that is necessary to 
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -528,7 +528,7 @@ The ModelSecPolRuntimeView view shows the runtime metadata for the currently act
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -542,16 +542,16 @@ The Partitions table contains the list of data partitions in the system.
 
 | Field             | Type        | Extended Type     | Enumeration Type | Description                                                                                                                             |
 |-------------------|-------------|-------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| createdBy         | String      | CreatedBy         |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| createdDateTime   | UtcDateTime | CreatedDateTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| modifiedBy        | String      | ModifiedBy        |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| name              | String      | UserIdStr         |                  | Name (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))          |
-| PartitionKey      | String      | PartitionKey      |                  | Partition Key (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| RecId             | Int64       | RecId             |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
-| recVersion        | Integer     | RecVersion        |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| createdBy         | String      | CreatedBy         |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| createdDateTime   | UtcDateTime | CreatedDateTime   |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| modifiedBy        | String      | ModifiedBy        |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| name              | String      | UserIdStr         |                  | Name (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))          |
+| PartitionKey      | String      | PartitionKey      |                  | Partition Key (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| RecId             | Int64       | RecId             |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| recVersion        | Integer     | RecVersion        |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
 
 ### Field Groups
 
@@ -574,7 +574,7 @@ The Partitions table contains the list of data partitions in the system.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -591,14 +591,14 @@ The PrintJobHeader table contains information regarding the current print job
 | createdBy           | String      | CreatedBy        |                  |                                                                                                                           |
 | createdDateTime     | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
 | dataAreaId          | String      | DataAreaId       |                  |                                                                                                                           |
-| dEL\_CreatedTime    | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime    | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | deviceName          | String      |                  |                  |                                                                                                                           |
 | format              | Enum        |                  | PrintFormat      |                                                                                                                           |
 | jobDescription      | String      |                  |                  |                                                                                                                           |
 | jobStatus           | Enum        |                  | PrintJobStatus   |                                                                                                                           |
 | jobType             | String      |                  |                  |                                                                                                                           |
 | numberOfPages       | Int         |                  |                  |                                                                                                                           |
-| Partition           | Int64       | Partition        |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition           | Int64       | Partition        |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | printedBy           | String      | UserId           |                  | ID for the user                                                                                                           |
 | printedDate         | date        |                  |                  |                                                                                                                           |
 | printedTime         | Int         |                  |                  |                                                                                                                           |
@@ -645,7 +645,7 @@ The PrintJobPages table contains information regarding the currently printing pa
 | pageContents     | Container |               |                  |                                                                                                                           |
 | pageNo           | Int       |               |                  |                                                                                                                           |
 | pagesHeaderRecId | Int64     | RecId         |                  | Unique ID for the record in the database                                                                                  |
-| Partition        | Int64     | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition        | Int64     | Partition     |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId            | Int64     | RecId         |                  |                                                                                                                           |
 | recVersion       | Integer   | RecVersion    |                  |                                                                                                                           |
 
@@ -698,7 +698,7 @@ The SecurableObject table contains all security artifacts reference by the secur
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -788,7 +788,7 @@ The SecurityEntryPointLink table contains the entry point to securable object ma
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -827,7 +827,7 @@ The SecurityPermission table contains the list of permissions that have been spe
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -901,7 +901,7 @@ The SecurityRole table reflects the list of roles defined by the security AOT ro
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -917,7 +917,7 @@ Rules for dynamically assigning users to role
 |---------------------------|-------------|---------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | MembershipRuleDescription | String      | MembershipRuleDescription |                  | Description of the automatic role membership rule                                                                         |
 | MembershipRuleName        | String      | MembershipRuleName        |                  | Name of the automatic role membership rule                                                                                |
-| Partition                 | Int64       | Partition                 |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition                 | Int64       | Partition                 |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId                     | Int64       | RecId                     |                  |                                                                                                                           |
 | recVersion                | Integer     | RecVersion                |                  |                                                                                                                           |
 | RuleQuery                 | Container   |                           |                  |                                                                                                                           |
@@ -942,7 +942,7 @@ Rules for dynamically assigning users to role
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1007,7 +1007,7 @@ The SecurityRoleExplodedGraph table contains all role relationships, direct or i
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1045,7 +1045,7 @@ The SecurityRolePermissionOverride table contains the list of permissions that h
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1160,7 +1160,7 @@ The SecurityRoleTaskGrant table contains the list of role to duty mappings and r
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1177,9 +1177,9 @@ The SecuritySegregationOfDutiesConflict table stores information about segregati
 | AssignmentMode          | Enum        |                                    | RoleAssignmentMode            |                                                                                                                           |
 | createdBy               | String      | CreatedBy                          |                               |                                                                                                                           |
 | createdDateTime         | UtcDateTime | CreatedDateTime                    |                               |                                                                                                                           |
-| dEL\_CreatedTime        | Integer     | DEL\_CreatedTime                   |                               | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime        | Integer     | DEL\_CreatedTime                   |                               | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_ExistingTask       | Int64       | RecId                              |                               |                                                                                                                           |
-| dEL\_ModifiedTime       | Integer     | DEL\_ModifiedTime                  |                               | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime       | Integer     | DEL\_ModifiedTime                  |                               | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_NewTask            | Int64       | RecId                              |                               |                                                                                                                           |
 | ExistingDuty            | Int64       | RecId                              |                               |                                                                                                                           |
 | ExistingRole            | Int64       | RecId                              |                               | Unique ID for the record in the database                                                                                  |
@@ -1189,7 +1189,7 @@ The SecuritySegregationOfDutiesConflict table stores information about segregati
 | NewDuty                 | Int64       | RecId                              |                               |                                                                                                                           |
 | NewRole                 | Int64       | RecId                              |                               | Unique ID for the record in the database                                                                                  |
 | NewTask                 | Int64       | RecId                              |                               | Unique ID for the record in the database                                                                                  |
-| Partition               | Int64       | Partition                          |                               | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition               | Int64       | Partition                          |                               | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | ReasonForOverride       | VarString   | SegregationOfDutiesOverrideComment |                               | Comment explaining the reason for overriding the segregation of duties violation                                          |
 | RecId                   | Int64       | RecId                              |                               |                                                                                                                           |
 | recVersion              | Integer     | RecVersion                         |                               |                                                                                                                           |
@@ -1231,7 +1231,7 @@ The SecuritySegregationOfDutiesConflict table stores information about segregati
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1288,7 +1288,7 @@ The SecuritySegregationOfDutiesRule table stores the rules governing segregation
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1327,7 +1327,7 @@ The SecuritySubRole table contains all sub roles that have been specified on the
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1364,7 +1364,7 @@ The SecuritySubTask table contains the duty to privilege mappings that have been
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1403,7 +1403,7 @@ The SecurityTask table contains the list of duties and privileges that have been
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1441,7 +1441,7 @@ The SecurityTaskEntryPoint table contains the list of privilege to entry point m
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1478,7 +1478,7 @@ The SecurityTaskExplodedGraph table contains the duty to privilege mappings that
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1515,7 +1515,7 @@ The SecurityTaskPermission table is obsolete.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1553,7 +1553,7 @@ The SecurityTaskPermissionOverride table contains the list of permissions that h
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1569,7 +1569,7 @@ The SecurityUserRole table contains the user to role mappings.
 |------------------|-------------|---------------|----------------------|---------------------------------------------------------------------------------------------------------------------------|
 | AssignmentMode   | Enum        |               | RoleAssignmentMode   |                                                                                                                           |
 | AssignmentStatus | Enum        |               | RoleAssignmentStatus |                                                                                                                           |
-| Partition        | Int64       | Partition     |                      | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition        | Int64       | Partition     |                      | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId            | Int64       | RecId         |                      |                                                                                                                           |
 | recVersion       | Integer     | RecVersion    |                      |                                                                                                                           |
 | SecurityRole     | Int64       | RecId         |                      | Unique ID for the record in the database                                                                                  |
@@ -1596,7 +1596,7 @@ The SecurityUserRole table contains the user to role mappings.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1612,7 +1612,7 @@ The SecurityUserRoleCondition table contains the list of companies that constrai
 |------------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | ControllingKey   | int64   |               |                  |                                                                                                                           |
 | DataArea         | String  | DataAreaId    |                  | ID for an area of data                                                                                                    |
-| Partition        | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition        | Int64   | Partition     |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId            | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion       | Integer | RecVersion    |                  |                                                                                                                           |
 | SecurityUserRole | Int64   | RecId         |                  | Unique ID for the record in the database                                                                                  |
@@ -1636,7 +1636,7 @@ The SecurityUserRoleCondition table contains the list of companies that constrai
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1721,7 +1721,7 @@ The SqlDictionary table describes the current state of the database with respect
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1729,7 +1729,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## SqlParameters
 
-The SqlParameters table stores database related information in the form of parameter and value pairs. This table is not used in Microsoft Dynamics Ax 2009.
+The SqlParameters table stores database related information in the form of parameter and value pairs. This table isn't used in Microsoft Dynamics Ax 2009.
 
 ### Fields
 
@@ -1751,7 +1751,7 @@ The SqlParameters table stores database related information in the form of param
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1759,13 +1759,13 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## SqlStatistics
 
-The SqlStatistics table stores related database statistics for the user. This table is not used in Microsoft Dynamics Ax 2009.
+The SqlStatistics table stores related database statistics for the user. This table isn't used in Microsoft Dynamics Ax 2009.
 
 ### Fields
 
 | Field             | Type        | Extended Type     | Enumeration Type | Description                                                                                                               |
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | indexId           | Integer     | IndexId           |                  | ID for the index                                                                                                          |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -1875,7 +1875,7 @@ The SqlSyncInfo table captures messages and DDL statements during the database s
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateReadUpdateDelete. The Application Object Server authorizes each create, read, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateReadUpdateDelete. The Application Object Server authorizes each create, read, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1918,7 +1918,7 @@ The SysActiveTempTable table provides data about the temporary database tables t
 | Field            | Type        | Extended Type    | Enumeration Type | Description                                                                                                               |
 |------------------|-------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime  | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
-| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | InstanceId       | String      | UtilElementName  |                  | Name of the application element.                                                                                          |
 | RecId            | Int64       | RecId            |                  |                                                                                                                           |
 | recVersion       | Integer     | RecVersion       |                  |                                                                                                                           |
@@ -1934,7 +1934,7 @@ The SysActiveTempTable table provides data about the temporary database tables t
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1963,7 +1963,7 @@ The SysBCProxyUserAccount table stores the business connector proxy information 
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -1979,7 +1979,7 @@ The SysBreakpointList table contains a list of developers that have breakpoints 
 |------------------|-------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy        | String      | CreatedBy        |                  |                                                                                                                           |
 | createdDateTime  | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
-| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | machineName      | String      | NetworkDomain    |                  |                                                                                                                           |
 | RecId            | Int64       | RecId            |                  |                                                                                                                           |
 | recVersion       | Integer     | RecVersion       |                  |                                                                                                                           |
@@ -2073,7 +2073,7 @@ The SysCacheFlush table contains data that is used for synchronization of caches
 | createdBy       | String      | CreatedBy       |                  |                                                                                                                           |
 | createdDateTime | UtcDateTime | CreatedDateTime |                  |                                                                                                                           |
 | EventsContainer | Container   |                 |                  |                                                                                                                           |
-| Partition       | Int64       | Partition       |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition       | Int64       | Partition       |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId           | Int64       | RecId           |                  |                                                                                                                           |
 | recVersion      | Integer     | RecVersion      |                  |                                                                                                                           |
 | SessionId       | Int         |                 |                  |                                                                                                                           |
@@ -2092,7 +2092,7 @@ The SysCacheFlush table contains data that is used for synchronization of caches
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateDelete. The Application Object Server authorizes each create and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateDelete. The Application Object Server authorizes each create and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2108,7 +2108,7 @@ The SysClientSessions contains the data for the client sessions that are current
 |------------------|-------------|---------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | clientComputer   | String      | UserIdStr           |                  | Name                                                                                                                                    |
 | clientType       | Int         |                     |                  |                                                                                                                                         |
-| DataPartition    | String      | PartitionKey        |                  | Partition Key (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| DataPartition    | String      | PartitionKey        |                  | Partition Key (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_company     | String      |                     |                  |                                                                                                                                         |
 | DEL\_Login\_time | Int         |                     |                  |                                                                                                                                         |
 | helpLanguage     | String      | InstalledLanguageId |                  |                                                                                                                                         |
@@ -2145,7 +2145,7 @@ The SysClientSessions contains the data for the client sessions that are current
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2162,16 +2162,16 @@ The SysConfig table contains license and configuration information.
 | configType        | Enum        |                   | ConfigType       |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | expiration        | String      |                   |                  |                                                                                                                           |
 | id                | Int         |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
 | RecId             | Int64       | RecId             |                  |                                                                                                                           |
 | recVersion        | Integer     | RecVersion        |                  |                                                                                                                           |
-| shadowValue       | String      |                   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| timestamp         | String      |                   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| shadowValue       | String      |                   |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| timestamp         | String      |                   |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | userCount         | Int         |                   |                  |                                                                                                                           |
 | value             | String      |                   |                  |                                                                                                                           |
 
@@ -2184,7 +2184,7 @@ The SysConfig table contains license and configuration information.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2200,8 +2200,8 @@ The SysEncryptionKey table stores the encryption key that is used to encrypt the
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | Key               | Container   |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -2216,7 +2216,7 @@ The SysEncryptionKey table stores the encryption key that is used to encrypt the
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2246,7 +2246,7 @@ The SysGlobalConfiguration table stores system level global setting that can be 
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2288,7 +2288,7 @@ The SysLastValue table is storage for the usage data that is recorded as users n
 | designName  | String    | UtilElementName    |                  | Name of the application element.                                                                                          |
 | elementName | String    | UtilElementName    |                  | Name of the application element.                                                                                          |
 | isKernel    | Enum      |                    | boolean          |                                                                                                                           |
-| Partition   | Int64     | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition   | Int64     | Partition          |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId       | Int64     | RecId              |                  |                                                                                                                           |
 | recordType  | Enum      |                    | UtilElementType  |                                                                                                                           |
 | recVersion  | Integer   | RecVersion         |                  |                                                                                                                           |
@@ -2341,7 +2341,7 @@ The SysModel table contains information about installed models on the system.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2381,7 +2381,7 @@ The SysModelElement table lists the ModelElements that the installation holds.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2426,7 +2426,7 @@ The SysModelElementData table provides the Layer specific data for any SysModelE
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2471,7 +2471,7 @@ The SysModelElementDataOld table provides the Layer specific data for any SysMod
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2503,7 +2503,7 @@ The SysModelElementLabel table contains the label text for a given language.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2534,7 +2534,7 @@ The SysModelElementLabelOld table contains the label text for a given language.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2574,7 +2574,7 @@ The SysModelElementOld table lists the ModelElements that the installation holds
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2609,7 +2609,7 @@ The SysModelElementSource table contains the Source Text for all SysModelElement
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2644,7 +2644,7 @@ The SysModelElementSourceOld table contains the Source Text for all SysModelElem
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2679,7 +2679,7 @@ The SysModelElementType table specifies the possible SysModelElement types. Its 
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2713,7 +2713,7 @@ The SysModelElementTypeOld table specifies the possible SysModelElementOld types
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2741,7 +2741,7 @@ The SysModelLayer table lists the possible LayerId and Name. If Model data exist
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2768,7 +2768,7 @@ The SysModelLayerOld table lists the possible LayerId and Name. If Model data ex
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2820,7 +2820,7 @@ The SysModelManifest table contains the manifest information about deployed mode
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2847,7 +2847,7 @@ The SysModelManifestCategory table contains the category aspect of the manifest 
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2873,7 +2873,7 @@ The SysModelManifestCategoryOld table contains the category aspect of the manife
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2925,7 +2925,7 @@ The SysModelManifestOld table contains the manifest information about deployed m
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2956,7 +2956,7 @@ The SysModelOld table contains information about installed models on the system.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -2964,7 +2964,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## SysOccConfiguration
 
-The SysOccConfiguration table stores the global concurrency model setting and updates the conflict exception login policy.
+The SysOccConfiguration table stores the global concurrency model setting and updates the conflict exception sign in policy.
 
 ### Fields
 
@@ -2986,7 +2986,7 @@ The SysOccConfiguration table stores the global concurrency model setting and up
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3004,12 +3004,12 @@ The SysRecordLevelSecurity table contains all the record level security restrict
 | companyId         | String      | SelectableDataArea |                  | ID for the company you can select                                                                                         |
 | createdBy         | String      | CreatedBy          |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime    |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_groupId      | String      | UserGroupId        |                  | ID for the user group                                                                                                     |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | modifiedBy        | String      | ModifiedBy         |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime   |                  |                                                                                                                           |
-| Partition         | Int64       | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition         | Int64       | Partition          |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId             | Int64       | RecId              |                  |                                                                                                                           |
 | recVersion        | Integer     | RecVersion         |                  |                                                                                                                           |
 | restriction       | Container   |                    |                  |                                                                                                                           |
@@ -3035,7 +3035,7 @@ The SysRecordLevelSecurity table contains all the record level security restrict
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3073,7 +3073,7 @@ The SysServerSessions table is used to store information about the active AOS Se
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3135,7 +3135,7 @@ The SystemSequences table holds the next available record ID block for each tabl
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3149,7 +3149,7 @@ The TableCollectionList table stores the mapping between table collections and v
 
 | Field           | Type    | Extended Type   | Enumeration Type | Description                                                                                                               |
 |-----------------|---------|-----------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Partition       | Int64   | Partition       |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition       | Int64   | Partition       |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId           | Int64   | RecId           |                  |                                                                                                                           |
 | recVersion      | Integer | RecVersion      |                  |                                                                                                                           |
 | tableCollection | String  | UtilElementName |                  | Name of the application element.                                                                                          |
@@ -3173,7 +3173,7 @@ The TableCollectionList table stores the mapping between table collections and v
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3203,7 +3203,7 @@ The TimeZonesList table contains the list of the time zones that are supported.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3255,7 +3255,7 @@ The TimeZonesRulesData table contains the GMT offsets and daylight saving time i
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3263,14 +3263,14 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## UserDataAreaFilter
 
-The UserDataAreaFilter table contains a list of selectable companies for a user. It is populated by invoking the populateSelectableCompanies method on the SecurityRights class.
+The UserDataAreaFilter table contains a list of selectable companies for a user. It's populated by invoking the populateSelectableCompanies method on the SecurityRights class.
 
 ### Fields
 
 | Field      | Type    | Extended Type | Enumeration Type | Description                                                                                                               |
 |------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | DataArea   | String  | DataAreaId    |                  | ID for an area of data                                                                                                    |
-| Partition  | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition  | Int64   | Partition     |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId      | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion | Integer | RecVersion    |                  |                                                                                                                           |
 | User       | String  | UserId        |                  | ID for the user                                                                                                           |
@@ -3316,7 +3316,7 @@ The UserInfo table contains a list of users and their active directory and defau
 | credentialRecId           | int64   |                     |                      |                                                                                                                           |
 | debuggerPopup             | Int     |                     |                      |                                                                                                                           |
 | debugInfo                 | Int     |                     |                      |                                                                                                                           |
-| defaultPartition          | Enum    |                     | boolean              | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| defaultPartition          | Enum    |                     | boolean              | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_\_unused1            | String  |                     |                      |                                                                                                                           |
 | DEL\_\_unused2            | String  |                     |                      |                                                                                                                           |
 | DEL\_defaultModelId       | Int     |                     |                      |                                                                                                                           |
@@ -3333,7 +3333,7 @@ The UserInfo table contains a list of users and their active directory and defau
 | formFontSize              | Int     |                     |                      |                                                                                                                           |
 | garbagecollectlimit       | Int     |                     |                      |                                                                                                                           |
 | generalInfo               | Int     |                     |                      |                                                                                                                           |
-| globalExcelExportFilePath | String  |                     |                      | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| globalExcelExportFilePath | String  |                     |                      | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | globalExcelExportLocation | Int     |                     |                      |                                                                                                                           |
 | globalExcelExportMode     | Int     |                     |                      |                                                                                                                           |
 | globalFormOpenMode        | Int     |                     |                      |                                                                                                                           |
@@ -3351,7 +3351,7 @@ The UserInfo table contains a list of users and their active directory and defau
 | networkAlias              | String  | NetworkAlias        |                      |                                                                                                                           |
 | networkDomain             | String  | NetworkDomain       |                      |                                                                                                                           |
 | notifyTimeZoneMismatch    | Enum    |                     | boolean              |                                                                                                                           |
-| Partition                 | Int64   | Partition           |                      | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition                 | Int64   | Partition           |                      | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | preferredCalendar         | Enum    |                     | PreferredCalendar    |                                                                                                                           |
 | PreferredLocale           | String  | PreferredLocale     |                      |                                                                                                                           |
 | preferredTimeZone         | Enum    |                     | Timezone             |                                                                                                                           |
@@ -3403,7 +3403,7 @@ The UserInfo table contains a list of users and their active directory and defau
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateDelete. The Application Object Server authorizes each create and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateDelete. The Application Object Server authorizes each create and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3419,7 +3419,7 @@ The UserInfoStartupModel table holds the preferred startup model for each layer 
 |------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Layer      | Enum    |               | UtilEntryLevel   |                                                                                                                           |
 | ModelId    | Int64   | ModelRecid    |                  | The ID of the model.                                                                                                      |
-| Partition  | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition  | Int64   | Partition     |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId      | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion | Integer | RecVersion    |                  |                                                                                                                           |
 | UserId     | String  | UserGroupId   |                  | ID for the user group                                                                                                     |
@@ -3444,7 +3444,7 @@ The UserInfoStartupModel table holds the preferred startup model for each layer 
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3462,8 +3462,8 @@ The UtilElements table contains the application that is shown in the AOT.
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
 | name              | String      | UtilElementName   |                  | Name of the application element.                                                                                          |
@@ -3485,7 +3485,7 @@ The UtilElements table contains the application that is shown in the AOT.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3493,7 +3493,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## UtilElementsOld
 
-The UtilElementsOld table contains the application model stored in the application folder. It is used during the upgrade process.
+The UtilElementsOld table contains the application model stored in the application folder. It's used during the upgrade process.
 
 ### Fields
 
@@ -3503,8 +3503,8 @@ The UtilElementsOld table contains the application model stored in the applicati
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
 | name              | String      | UtilElementName   |                  | Name of the application element.                                                                                          |
@@ -3540,8 +3540,8 @@ The UtilIdElements table contains the application model shown in the AOT.
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | id                | Int         |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -3564,7 +3564,7 @@ The UtilIdElements table contains the application model shown in the AOT.
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3572,7 +3572,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ## UtilIdElementsOld
 
-The UtilIdElementsOld table contains the application model stored in the application folder. It is used during the upgrade process.
+The UtilIdElementsOld table contains the application model stored in the application folder. It's used during the upgrade process.
 
 ### Fields
 
@@ -3582,8 +3582,8 @@ The UtilIdElementsOld table contains the application model stored in the applica
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | id                | Int         |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -3645,7 +3645,7 @@ The UtilModels table contains information about models that are installed on the
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3660,7 +3660,7 @@ The VirtualDataAreaList table stores the mapping between real companies and virt
 | Field           | Type    | Extended Type      | Enumeration Type | Description                                                                                                               |
 |-----------------|---------|--------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | id              | String  | SelectableDataArea |                  | ID for the company you can select                                                                                         |
-| Partition       | Int64   | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| Partition       | Int64   | Partition          |                  | (This field applies only to the following versions: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId           | Int64   | RecId              |                  |                                                                                                                           |
 | recVersion      | Integer | RecVersion         |                  |                                                                                                                           |
 | virtualDataArea | String  | VirtualDataArea    |                  | ID for a virtual company                                                                                                  |
@@ -3689,7 +3689,7 @@ The VirtualDataAreaList table stores the mapping between real companies and virt
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 
@@ -3720,7 +3720,7 @@ The VSAssembly table contains synchronization information that describes the las
 
 ### Security Note
 
-Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
+Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation isn't authorized to perform the operation, an exception occurs.
 
 ### Inheritance Hierarchy
 

@@ -89,7 +89,7 @@ The singleton guarantees that the class has only one instance. The following exa
 Singleton i = Singleton::Instance();
 ```
 
-## Static methods
+## Static method
 
 Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Use static methods to work with data that's stored in tables. You can't use member variables in a static method. Use the following syntax to call static methods.
 
