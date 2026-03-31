@@ -46,8 +46,8 @@ Before you start, make sure these prerequisites are in place:
   > Service environment configuration is required only if the Regulatory Configuration Service (RCS) experience was previously used to configure the Electronic Invoicing service. Otherwise, keep the **Environment** parameter empty. The system assigns it automatically and make read-only. For more information, see [Service environment configuration](../global/gs-e-invoicing-set-up-overview.md#service-environment-configuration).
 
 - In the **Feature management** workspace, on the **All** tab, enable the following features. If thess features don't appear on the page, select **Check for updates**. Select the features consequently, and then select **Enable now** for each of them. Learn more in [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-   - **Electronic invoicing documents statuses handlingZZZZZZZZZ**
-   - **ZZZZZZZZZZZZZZZZZZZZZZZ**
+   - **E-Invoice Document Status Lifecycle Management**
+   - **E-Invoice Document Response Submission**
    - **Export channels for electronic invoicing integration**
    - **Execute update actions for submitted documents**
     
@@ -358,7 +358,7 @@ For Project invoices, the functionality of Advanced notes is not applicable. Fol
 1. Save your changes and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
-### Enter the Legal Entity mandatory notes
+#### Enter the Legal Entity mandatory notes
 
 To enter the Legal Entity mandatory notes, follow these steps.
 
@@ -366,7 +366,7 @@ To enter the Legal Entity mandatory notes, follow these steps.
 1. Select **Electronic document properties** from the Action Pane.
 1. In the **Value** column, enter the required note text for each of the mandatory notes.
 
-### Enter the Customers mandatory notes
+#### Enter the Customers mandatory notes
 
 To enter the Customers mandatory notes, follow these steps.
 
@@ -374,7 +374,7 @@ To enter the Customers mandatory notes, follow these steps.
 1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
 1. In the **Value** column, enter the required note text for each of the mandatory notes.
 
-### Enter the Invoices mandatory notes
+#### Enter the Invoices mandatory notes
 
 To enter the Invoices mandatory notes, follow these steps.
 
