@@ -4,7 +4,7 @@ description: X++ and C# syntax and programming are compared between each other, 
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 04/10/2020
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -29,10 +29,11 @@ The following sections describe some basic similarities and differences between 
 ### Similarities
 
 The following X++ features are the same for C#:
--   Single line (`//`) and multi-line (`/* */`) comments.
--   `==` (equal) operator for determining whether two values are equal.
--   `!=` (not equal to) operator for determining whether two values aren't equivalent.
--   `+` (plus sign) operator for string concatenation.
+
+- Single line (`//`) and multi-line (`/* */`) comments.
+- `==` (equal) operator for determining whether two values are equal.
+- `!=` (not equal to) operator for determining whether two values aren't equivalent.
+- `+` (plus sign) operator for string concatenation.
 
 ### Differences
 
@@ -48,15 +49,16 @@ The following table lists X++ features that are different in C#.
 ### X++ and C# Samples
 
 This section contains two simple code samples. One sample is written in X++, and the other is in C\#. Both samples achieve the same result. The following X++ features are demonstrated:
--   `//` single line comment
--   `/\*` `\*/` multi-line comment
--   `if` statement
--   `==` operator
--   `!=` operator
--   `+` operator to concatenate strings
--   Global::info for message output, with and without the Global:: prefix
--   Global::error for message output
--   The use of single and double quotation characters (' and ") as string delimiters.
+
+- `//` single line comment
+- `/\*` `\*/` multi-line comment
+- `if` statement
+- `==` operator
+- `!=` operator
+- `+` operator to concatenate strings
+- Global::info for message output, with and without the Global:: prefix
+- Global::error for message output
+- The use of single and double quotation characters (' and ") as string delimiters.
 
 > [!NOTE]
 > The best practice is to use double quotation marks for any string that might be displayed to the user.
@@ -100,7 +102,7 @@ Here's the output from the Infolog window:
 
 #### C# Sample
 
-The following C# program is a rewrite of the previous X++ program. 
+The following C# program is a rewrite of the previous X++ program.
 
 ```csharp
 using System;
@@ -142,18 +144,20 @@ Hello World, Implicit default to .Out, 2.
 ```
 
 ## X++, C# Comparison: Loops
+
 This section compares the loop features between X++ and C\#.
 
-###  Similarities
+### Similarities
 
 The following features are the same in X++ and C\#:
--   Declarations for variables of the int primitive data type. Declarations for other primitive types are almost the same, but the types might have different names.
--   while statement for loops.
--   break statement to exit a loop.
--   continue statement to jump up to the top of a loop.
--   <= (less than or equal) comparison operator.
 
-###  Differences
+- Declarations for variables of the int primitive data type. Declarations for other primitive types are almost the same, but the types might have different names.
+- while statement for loops.
+- break statement to exit a loop.
+- continue statement to jump up to the top of a loop.
+- <= (less than or equal) comparison operator.
+
+### Differences
 
 The following table lists X++ features that are different in C#.
 
@@ -165,7 +169,6 @@ The following table lists X++ features that are different in C#.
 | Temporarily suspend a console program that has already begun.| The `pause` statement.| In C#, a command line program can be paused by the following line of code:<br>`Console.In.Read();`| In X++ you continue by clicking an OK button on a modal dialog box. In C# you continue by pressing any keyboard on the keyboard.|
 | Display a message.| In X++, the `print` statement displays a message in the Print window.| In C# a message can be displayed on the console by the following line of code:<br>`Console.WriteLine();`| The X++ `print` function is used only when you test. An X++ program that uses `print` almost always uses the `pause` statement somewhere later in the code. For production X++ code, use the Global::info Method instead of `print`. The `strfmt` function is often used together with `info`. There isn't a reason to use `pause` after `info`.|
 | Make a sound.| The beep function makes a sound that you can hear. | In C# a sound that you can hear is issued by the following line of code:<br>`Console.Beep();`| The statements each produce a short tone.|
-
 
 ### Print and Global::info
 
@@ -238,7 +241,7 @@ public class Pgm_CSharp
     }
 }
 ```
- 
+
 ##### Output
 
 The console output from the C# program is as follows:
@@ -281,7 +284,7 @@ static void JobRs002a_LoopsWhileFor(Args _args)
     pause;
 }
 ```
- 
+
 ##### Output
 
 The output in the X++ Print window is as follows:
@@ -322,7 +325,7 @@ public class Pgm_CSharp
     }
 }
 ```
- 
+
 ##### Output
 
 The console output from the C# program is as follows:
@@ -357,9 +360,10 @@ The following sections show comparable switch statements in X++ and C\#.
 #### X++ switch Example
 
 The X++ switch example shows the following:
--   `case iTemp:` and `case (93-90):` to show that **case** expressions aren't limited to constants, as they are in C\#.
--   `//break;` to show that `break;` statements aren't required in X++, although they are almost always desirable.
--   `case 2, (93-90), 5:` to show that multiple expressions can be listed on one **case** clause in X++.
+
+- `case iTemp:` and `case (93-90):` to show that **case** expressions aren't limited to constants, as they are in C\#.
+- `//break;` to show that `break;` statements aren't required in X++, although they are almost always desirable.
+- `case 2, (93-90), 5:` to show that multiple expressions can be listed on one **case** clause in X++.
 
 ```xpp
 static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
@@ -399,8 +403,9 @@ iEnum is one of these values: 4: 3
 #### C# switch Example
 
 The C\# switch example shows the following:
--   case 1: has a comment explaining that only constant expressions can be given on a **case** clause.
--   `break;` statements occur after the last statement in each **case** block that has statements, as is required by C\#.
+
+- case 1: has a comment explaining that only constant expressions can be given on a **case** clause.
+- `break;` statements occur after the last statement in each **case** block that has statements, as is required by C\#.
 
 ```csharp
 using System;
@@ -441,16 +446,18 @@ iEnum is one of these values: 2,3,5: 3
 >>
 ***/
 ```
- 
+
 ## X++, C# Comparison: String Case and Delimiters
+
 This section compares the treatment of strings with mixed casing in X++ and C\#. It also explains the string delimiters that are available in X++.
 
 ### Similarities
 
 The following X++ features are the same as in C\#:
--   The backslash (\\) is the escape operator for string delimiters.
--   The at sign (@) nullifies the escape effect of the backslash when the at sign is written immediately before the open quotation mark of a string.
--   The plus sign (+) is the string concatenation operator.
+
+- The backslash (\\) is the escape operator for string delimiters.
+- The at sign (@) nullifies the escape effect of the backslash when the at sign is written immediately before the open quotation mark of a string.
+- The plus sign (+) is the string concatenation operator.
 
 ### Differences
 
@@ -458,7 +465,7 @@ X++ features that are different in C\# are listed in the following table.
 
 | Feature | X++ | C# | Comments |
 |---|---|---|---|
-| `== `comparison operator| Insensitive: the `==` operator is insensitive to differences in string casing.| In C#, the `==` operator is sensitive to differences in string casing.| In X++ you can use the strCmp Function for case sensitive comparisons between strings.|
+| `==`comparison operator| Insensitive: the `==` operator is insensitive to differences in string casing.| In C#, the `==` operator is sensitive to differences in string casing.| In X++ you can use the strCmp Function for case sensitive comparisons between strings.|
 | String delimiters| In X++ you can use either the single (') or double (`"`) quotation mark as the string delimiter.<p><strong>Note:</strong> Usually the best practice is to use double quotation marks for strings that might be displayed to the user. However, it's convenient to delimit a string with single quotation marks when a double quotation mark is one of the characters in the string.</p>| In C# you must use the double quotation mark as the string delimiter. This refers to the type `System.String`.| In X++ and C# you have the option of embedding a delimiter in a literal string and escaping it with \. <br>In X++ you also have the alternative of embedding single quotation marks in a string that is delimited by double quotation marks (or the reverse), without having to use the escape.|
 | Character delimiters| X++ has a string data type (`str`), but no character type.| In C# you must use the single quotation mark as the character delimiter. This refers to the type `System.Char`.| In the .NET Framework, a `System.String` of length one is a different data type than a `System.Char` character.|
 
@@ -641,6 +648,7 @@ The output from the C# program to the command line console is as follows:
 The **container** is a special data type that is available in X++. It can be considered as similar to an array, or similar to a `List` collection.
 
 ## Comparison: Collections
+
 In a finance and operations application, you can use the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
 
 ### Comparing the Use of the List Classes
@@ -709,7 +717,7 @@ listStrings.Insert (7 ,"dog");
 
 ### Example 4: Iterate Through a List
 
-Both X++ and C\# have iterator classes that you can use to step through the items in a collection as shown in the following examples. 
+Both X++ and C\# have iterator classes that you can use to step through the items in a collection as shown in the following examples.
 
 ```xpp
 // X++
@@ -741,7 +749,7 @@ while (literator.MoveNext())
 
 ### Example 4b: foreach in C\#
 
-In C\# the **foreach** keyword is often used to simplify the task of iterating through a list. The following code example behaves the same as the previous C\# example. 
+In C\# the **foreach** keyword is often used to simplify the task of iterating through a list. The following code example behaves the same as the previous C\# example.
 
 ```csharp
 foreach (string currentString in listStrings)
@@ -750,7 +758,7 @@ foreach (string currentString in listStrings)
 }
 ```
 
-###  Example 5: Delete the Second Item
+### Example 5: Delete the Second Item
 
 The following code examples delete the second item from the collection. In X++ this requires an iterator. In C\# the collection itself provides the method for removing an item.
 
@@ -766,7 +774,7 @@ literator.delete();
 listStrings.RemoveAt(1);
 ```
 
-###  Example 6: Combine Two Collections
+### Example 6: Combine Two Collections
 
 The following code examples combine the contents of two collections into one.
 
@@ -789,10 +797,11 @@ In a finance and operations application, you can use the `Map` collection class.
 ### Similarities
 
 The following list describes similarities between X++ and C\# regarding their collections that store key-value pairs:
--   Both prevent duplicate keys.
--   Both use an enumerator (or iterator) to loop through the items.
--   Both key-value collection objects are constructed with designations of the types that are stored as key and value.
--   Both can store class objects, and aren't limited to storing primitives like **int**.
+
+1. Both prevent duplicate keys.
+1. Both use an enumerator (or iterator) to loop through the items.
+1. Both key-value collection objects are constructed with designations of the types that are stored as key and value.
+1. Both can store class objects, and aren't limited to storing primitives like **int**.
 
 ### Differences
 
@@ -919,15 +928,17 @@ dictKeyValue.Remove(104);
 ```
 
 ## Comparison: Exceptions
+
 There are some similarities but many differences when we compare exception related behavior between X++ and C\#. The **try**, **catch**, and **throw** keywords behave the same in X++ and C#. But the types of exceptions thrown and caught are different for the two languages.
 
 ### Similarities
 
 Similarities between X++ and C\# regarding their exception features include the following examples:
--   Both languages have the same **try** keyword.
--   Both have the same **catch** keyword.
--   Both enable for a **catch** statement that doesn't specify any particular exception. Such a **catch** statement catches all exceptions that reach it.
--   Both have the same **throw** keyword.
+
+- Both languages have the same **try** keyword.
+- Both have the same **catch** keyword.
+- Both enable for a **catch** statement that doesn't specify any particular exception. Such a **catch** statement catches all exceptions that reach it.
+- Both have the same **throw** keyword.
 
 ### Differences
 
@@ -939,15 +950,16 @@ Exception-related differences between X++ and C\# are described in the following
 | <strong>finally</strong>| The `finally` keyword is supported to follow the `try` and `catch` keywords.| The <strong>finally</strong> keyword marks a block of code that follows the <strong>try</strong> and <strong>catch</strong> blocks. The finally will be executed regardless of whether any exception is thrown or caught.| The semantics are identical to the semantics in C#.|
 | Specific exceptions| In X++ an exception is an element of the `Exception` enum, such as **Error**, **Deadlock**, or **CodeAccessSecurity**. No exception can contain another.| In C# an exception is an instance of the `System.Exception` base class, or any class that inherits from it. An exception can be contained in the `InnerException` property of the thrown exception.| In X++ each thrown exception is a value of the Exception enum. For more information, see Exception Enumeration.|
 | Exception message| In X++ the message that is created when an exception is raised is available only in the Infolog, and the message is not directly tied to the exception.| In C# the message is the `Message` member of the `System.Exception` object.| In X++ the Global::error method is the mechanism that display exception messages in the Infolog. For more information, see Exception Handling with try and catch Keywords.|
-| Exception conditions| In X++ an error occurs when you call an instance method on an object variable that has not yet had anything assigned to it. However, no exception is raised along with this error. Therefore no `catch` block can gain control even if the unassigned variable is misused in a `try` block. In the following code example, the error caused by the code `box4.toString();` doesn't cause control to transfer to any `catch` block: `DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // No Exception value catches this. { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| In C# a `System.NullReferenceException` is raised when an uninitialized variable is treated as an object reference.| There might be several other differences in the conditions that raise exceptions.|
+| Exception conditions| In X++ an error occurs when you call an instance method on an object variable that has not yet had anything assigned to it. However, no exception is raised along with this error. Therefore no `catch` block can gain control even if the unassigned variable is misused in a `try` block. In the following code example, the error caused by the code `box4.toString();` doesn't cause control to transfer to any `catch` block: `DialogBox box4;` `try` { `box4.toString();` `info("toString did not error, but expected an error.");` } catch (Exception::Error) // No Exception value catches this. { `info("Invalid use of box4 gave control to catch, unexpected.");` }| In C# a `System.NullReferenceException` is raised when an uninitialized variable is treated as an object reference.| There might be several other differences in the conditions that raise exceptions.|
 | SQL transactions| In X++ when an SQL exception occurs in a <strong>ttsBegin</strong> - <strong>ttsCommit</strong> transaction, no <strong>catch</strong> statement inside the transaction block can process the exception.| In C# a catch block inside an SQL transaction can catch the exception.| |
 
 ### Examples
 
 The following X++ features are demonstrated:
--   **try** keyword.
--   **catch** keyword.
--   The behavior after an Exception::Error exception occurs.
+
+- **try** keyword.
+- **catch** keyword.
+- The behavior after an Exception::Error exception occurs.
 
 #### X++ Example
 
@@ -988,7 +1000,6 @@ static void JobRs008a_Exceptions(Args _args)
 }
 ```
 
- 
 ##### Output
 
 Here's the output from the Infolog window:
@@ -1057,7 +1068,6 @@ public class Pgm_CSharp
 } // EOClass
 ```
 
- 
 ##### Output
 
 Here's the output to the C\# console:
@@ -1069,6 +1079,7 @@ End of program.
 ```
 
 ## Comparison: Automated Retry After an Exception
+
 Sometimes you can write code in a catch block that fixes the cause of an exception that occurs during run time. X++ provides a **retry** keyword that can be used only inside a **catch** block. The **retry** keyword enables a program to jump back to the start of the **try** block after the problem has been corrected by code in the **catch** block. C# doesn't have a **retry** keyword. However, C# code can be written to provide equivalent behavior.
 
 ### Code Samples for Retry
@@ -1175,7 +1186,6 @@ public class Pgm_CSharp
 }
 ```
 
- 
 #### Output
 
 Here's the output to the console:
@@ -1192,6 +1202,7 @@ End of C# caller method.
 ```
 
 ## Comparison: Operators
+
 This section compares the operators between X++ and C\#.
 
 ### Assignment Operators
@@ -1216,11 +1227,9 @@ The following table lists the arithmetic operators.
 | +| The addition operator is the same in X++ and C#. The plus sign is also used for string concatenation. This operator adds numbers and concatenates strings in both languages.|
 | -| The subtraction operator is the same in X++ and C#.|
 
-
 ### Bitwise Operators
 
 The following table compares the bitwise operators between X++ and C\#.
-
 
 | X++ and C\# |                     Differences                      |
 |-------------|------------------------------------------------------|
@@ -1234,16 +1243,17 @@ The following table compares the bitwise operators between X++ and C\#.
 ### Relational Operators
 
 The following relational operators are the same in X++ and C\#:
--   `==`
--   `<=`
--   `<=`
--   `>`
--   `<`
--   `!=`
--   `&&`
--   `||`
--   `!`
--   `? :`
+
+- `==`
+- `<=`
+- `<=`
+- `>`
+- `<`
+- `!=`
+- `&&`
+- `||`
+- `!`
+- `? :`
 
 ## Comparison: Events
 
@@ -1264,17 +1274,17 @@ There are differences in the way delegates are used for events in X++ versus C#.
 
 The important things to notice are the following in the X++ example:
 
--   The `XppClass` has a delegate member that is named `myDelegate`.
+- The `XppClass` has a delegate member that is named `myDelegate`.
 
     > [!NOTE]
     > The AOT contains a node for the delegate. The node is located at AOT > Classes > XppClass > myDelegate. Several event handler nodes can be located under the myDelegate node. Event handlers that are represented by nodes in the AOT can't be removed by the -= operator during run time.
 
--   The {} braces at the end of the delegate declaration are required, but they can't have any code in them.
--   The `XppClass` has two methods whose parameter signatures are compatible with the delegate. One method is static.
--   The two compatible methods are added to the delegate with the += operator and the **eventHandler** keyword. These statements do not call the event handler methods, the statements only add the methods to the delegate.
--   The event is raised by one call to the delegate.
--   The parameter value that passed in to the delegate is received by each event handler method.
--   The short X++ job at the top of the example starts the test.
+- The {} braces at the end of the delegate declaration are required, but they can't have any code in them.
+- The `XppClass` has two methods whose parameter signatures are compatible with the delegate. One method is static.
+- The two compatible methods are added to the delegate with the += operator and the **eventHandler** keyword. These statements do not call the event handler methods, the statements only add the methods to the delegate.
+- The event is raised by one call to the delegate.
+- The parameter value that passed in to the delegate is received by each event handler method.
+- The short X++ job at the top of the example starts the test.
 
 ```xpp
 // X++
@@ -1374,8 +1384,9 @@ The X++ and C\# compilers recognize many of the same keywords. In most cases, th
 ### Differences
 
 A fundamental difference between the precompiler directives in X++ versus C\# is the \#define keyword that both language precompilers recognize. Unlike C\#, in X++ the \#define directive requires a dot in its syntax. In X++, parentheses can be used to give the defined symbol a value. These differences are shown in the following examples:
--   In X++: \#define.InitialYear(2003)
--   In C\#: \#define InitialYear
+
+- In X++: \#define.InitialYear(2003)
+- In C\#: \#define InitialYear
 
 A minor difference is that in C\# there can be spaces and tab characters between the \# character and the directive keyword, such as \# define Testing.
 
@@ -1412,6 +1423,7 @@ The following table lists X++ precompiler directives that have no direct counter
 | \#globalmacro        | In X++, \#globalmacro is almost the same as the preferred \#localmacro.          |
 
 ## Comparison: Object Oriented Programming
+
 The object oriented programming (OOP) principles of X++ differ from C\#.
 
 ### Conceptual Comparisons
@@ -1444,15 +1456,17 @@ The following table lists the OOP-related keywords in X++ and C#.
 | <strong>private</strong> and <strong>protected</strong>| The <strong>private</strong> and <strong>protected</strong> keywords can be used to modify the declaration of a class member.| The <strong>private</strong> and <strong>protected</strong> keywords can be used to modify the declaration of a class member.||
 | <strong>public</strong>| A method that is not modified with <strong>public</strong>, <strong>protected</strong>, or <strong>private</strong> has the default access level of <strong>public</strong>.| A method that is not modified with <strong>public</strong>, <strong>protected</strong>, or <strong>private</strong> has the default access level of <strong>private</strong>.||
 | <strong>static</strong>| A method can be <strong>static</strong>, but a field can't.| Both methods and fields can be <strong>static</strong>.| |
-| <strong>super</strong>| The <strong>super</strong> keyword is used in a derived class to access the same method on its base class. `void method2()`<br>`{`<br>`    // Call method2 method`<br> `    // on the base class.`<br> `    super();` <br>`}`<br>| The <strong>base</strong> keyword is used in a derived class to access various methods in its base class. <br>`void method2()` <br>`{`<br> `    // Call methods on`<br> `    // the base class.`<br> `    base.method2();`<br> `    base.method3();` <br>`}`| In C#, there's special syntax for using <strong>base</strong> to call the base constructor.|
+| <strong>super</strong>| The <strong>super</strong> keyword is used in a derived class to access the same method on its base class. `void method2()`<br>`{`<br>`// Call method2 method`<br> `// on the base class.`<br> `super();` <br>`}`<br>| The <strong>base</strong> keyword is used in a derived class to access various methods in its base class. <br>`void method2()` <br>`{`<br> `// Call methods on`<br> `// the base class.`<br> `base.method2();`<br> `base.method3();` <br>`}`| In C#, there's special syntax for using <strong>base</strong> to call the base constructor.|
 | <strong>this</strong>| For a call from one instance method to another on the same object, a qualifier for the called method is required. The keyword <strong>this</strong> is available as a qualifier for the current object.| For a call from one instance method to another on the same object, a qualifier for the called method is not required. However, the <strong>this</strong> keyword is available as a qualifier for the current object. In practice, the keyword <strong>this</strong> can be helpful by displaying IntelliSense information.| |
 | `finalize`| The `Object` class contains the `finalize` method. The `finalize` method is not <strong>final</strong>, and it can be overridden. The `finalize` method appears to resemble the `System.Object.Finalize` method in C#, but in X++ the `finalize` method has no special meaning of any kind. An object is automatically removed from memory when the last reference to the object stops referencing the object. For example, this can happen when the last reference goes out of scope or is assigned another object to reference.| The methods `Finalize` and `Dispose` are common on some types of classes. The garbage collector calls the `Finalize` and `Dispose` methods when it destroys and object.| In C#, the `System.GC.Collect` method in the .NET Framework can be called to start the garbage collector. There isn't a similar function in X++ because X++ uses a deterministic garbage collector.|
 | `main`| Classes that are invoked from a menu have their `main` method called by the system.| Classes that are invoked from a command line console have their `Main` method called by the system.| |
 
 ## Comparison: Classes
+
 When you use C\# in the .NET Framework, classes are grouped into namespaces. Each namespace focuses on a functional area such as file operations or reflection. However, when you use the classes in X++, there are no visible groupings like a namespace.
 
 ### Comparison: Classes about Reflection
+
 In X++ the `TreeNode` class provides access to the Application Object Tree (AOT). The `TreeNode` class is the center of reflection functionality in X++. The `TreeNode` class and its methods can be compared to the `System.Reflection` namespace in the .NET Framework that C\# uses.
 
 The following table lists several classes that are available to you when you write C\# code. These are .NET Framework classes. For this table, all C\# classes are in the `System.Reflection` namespace unless otherwise specified. Each row shows the corresponding class, or class member, that is available to you when your write X++ code.
@@ -1467,6 +1481,7 @@ The following table lists several classes that are available to you when you wri
 | `TreeNode .AOTsave` `TreeNode .AOTinsert`                     | `System .Reflection .Emit` (namespace of classes) | The `AOTsave` method applies changes from a `TreeNode` object in your X++ code to the AOT, and the changes are persisted. For a large code sample, see TreeNode.AOTsave Method.       |
 
 ### Comparison: Classes about File IO
+
 There are several classes that perform file input and output (IO) operations. In the .NET Framework that is used in C\#, the counterparts to these classes reside in the `System.IO` namespace.
 
 The following table lists several .NET Framework classes for C\# that are in the `System.IO` namespace. Each row in the table shows the X++ class or method that best corresponds to the .NET Framework class.
@@ -1484,6 +1499,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 | `CodeAccessPermission` `FileIoPermission`| `System.Security` `.CodeAccessPermission` The namespace `System.Security.Permissions` includes the following classes:<ul><li>`CodeAccessSecurityAttribute`</li><li>`FileIOPermissionAttribute`</li><li>`FileIOPermission`</li><li>`FileIOPermissionAccess`</li></ul>| The concepts and methods of `assert`, `demand`, and `revertAssert` apply to both languages. However, the `deny` and `revertDeny` methods that are available in C# aren't available in X++.|
 
 ## X++, ANSI SQL Comparison: SQL Select
+
 In X++, the SQL **select** statement syntax differs from the American National Standards Institute (ANSI) specification.
 
 ### Single Table Select
@@ -1523,17 +1539,18 @@ Message (04:02:29 pm)
 4001 , The Bulb
 ***/
 ```
- 
+
 ### X++ SQL Keywords
 
 The following X++ SQL keywords are among those that are't part of ANSI SQL:
--   crosscompany
--   firstonly100
--   forceliterals
--   forcenestedloop
--   forceplaceholders
--   forceselectorder
--   validtimestate
+
+- crosscompany
+- firstonly100
+- forceliterals
+- forcenestedloop
+- forceplaceholders
+- forceselectorder
+- validtimestate
 
 #### Join Clause
 
@@ -1575,7 +1592,7 @@ static void OByWhere453Job(Args _args)
     }
 }
 ```
- 
+
 ### Aggregate Fields
 
 The following table lists some differences in how aggregate fields in the **select** column list are referenced between X++ SQL and ANSI SQL. Aggregate fields are those that are derived by functions such as **sum** or **avg**.
@@ -1628,7 +1645,4 @@ The following table lists other differences of the **select** statement between 
 |Cursors for navigating returned rows.|The while select statement provides cursor functionality. The alternative is to use the **next** keyword.|You can declare a **cursor** for looping through the rows that are returned from a **select** statement.||
 |**From** clause.|The **from** keyword is optional when no columns are listed and only one table is referenced. The following two syntax options are equivalent: <br>`select \* from tCustTable;` <br>`select tCustTable;`|A **select** statement can't read from a table unless the **from** clause is used.|In X++ SQL, the simple **select** statement fills the table buffer variable with the first row that was returned. This is illustrated by the following code fragment: <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
 
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

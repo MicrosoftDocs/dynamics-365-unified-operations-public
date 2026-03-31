@@ -4,7 +4,7 @@ description: Learn about how you can debug X++ code by using the debugging featu
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 03/03/2026
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global

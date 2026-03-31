@@ -4,7 +4,7 @@ description: Learn about the X++ run-time functions, including a table that outl
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 07/23/2019
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the X++ run-time functions.
 
-The X++ language provides nearly 200 system functions that aren't part of any class and are executed at run time. Run-time functions are used for data type conversions, mathematical operations, and so on. Here are some common run-time functions:
+The X++ language provides nearly 200 system functions that aren't part of any class and run at runtime. Use run-time functions for data type conversions, mathematical operations, and similar tasks. Here are some common run-time functions:
 
 - **str2Int** – Creates an int value from a str value.
 - **abs** – Creates a positive real value from a real value that is either positive or negative.
@@ -40,7 +40,7 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 
 ## Categories and functions
 
-The following table lists and describes only the categories of X++ functions. These categories are intended to help you understand the many functions. However, the categories don't represent any formal construct.
+The following table lists and describes the categories of X++ functions. These categories help you understand the many functions. However, the categories don't represent any formal construct.
 
 | Category                  | Description  |
 |---|---|
@@ -224,6 +224,5 @@ static void sleepExample(Args _arg)
     print "job slept for " + int2str(i/1000) + " seconds";
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
