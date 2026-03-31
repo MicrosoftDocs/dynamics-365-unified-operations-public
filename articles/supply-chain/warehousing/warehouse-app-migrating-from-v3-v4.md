@@ -26,7 +26,7 @@ For V4, Microsoft rewrote the code for the Warehouse Management mobile app to ta
 >
 > - The [Migration information](#migration-information) section provides important advice that can help you avoid unexpected disruptions during the migration process.
 > - The [Rollout](#rollout) section provides the rollout schedule and download details.
-> - Check the [Migrating from V3 and V4 for iOS](#migration-information) section before uptake v4 for iOS device. This section provides important advice that can help you avoid unexpected disruptions during the migration process.
+> - If you're migrating iOS devices, read the [Migrating from V3 to V4 for iOS](#migration-information-ios) section before you begin — connection settings are not preserved on iOS and Device Code authentication is no longer supported.
 
 
 ## <a name="rollout"></a>Rollout
@@ -54,32 +54,37 @@ If you're running a newer version of Android, use V4 because it provides better 
 V4 supports a smooth transition from V3. The following considerations summarize what stays compatible during the migration and what you should plan for when upgrading.
 
 - **Customizations are preserved** – All customizations and configurations from V3 are fully compatible with V4 and remain functional.
-- **Connection settings can be preserved** – When you upgrade the Warehouse Management mobile app from version 3.0.8 or higher to V4, your existing connection settings are automatically migrated to V4. The settings aren't migrated from older versions of V3, so if you're running version 3.0.7 or older, upgrade to version 3.0.8 or later before upgrading to V4. *To preserve connection settings, don't uninstall V3*. Instead, just download the V4 installer to the device and select the **Upgrade** option when running it. If you uninstall V3 and then install V4, you lose your connection settings. Connection settings are only preserved during an upgrade, not during a fresh installation. If manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
-   As an example, if you're running V3.0.7 or older, first upgrade to 3.0.8 or 3.0.9 to preserve the connection settings. Then upgrade to V4.
+- **Connection settings can be preserved (Android and Windows only)** – When you upgrade the Warehouse Management mobile app from version 3.0.8 or higher to V4 on Android or Windows, your existing connection settings are automatically migrated. To preserve settings:
+   - Don't uninstall V3. Instead, download the V4 installer and select the **Upgrade** option.
+   - If you're running V3.0.7 or older, first upgrade to V3.0.8 or V3.0.9, then upgrade to V4.
+   - Connection settings are only preserved during an upgrade, not during a fresh installation.
+
+   **On iOS, connection settings are not preserved** during the upgrade. You must reconfigure connections manually after installing V4. To simplify this, prepare QR codes in advance. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
 - **MDM Deployment** – If you use mobile device management (MDM) solutions to distribute the app, the connection settings are preserved when you migrate from V3.0.9 to V4, or from V4 to any later version of V4.
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. You can use different authentication methods for each version without conflict. This capability allows for a phased rollout of V4 without disrupting ongoing operations. However, you can't run V3 and V4 on the same device at the same time.
-- **V3 Requests remain active** – Microsoft *does not block** requests coming from V3. You can continue using V3 until you're ready to migrate.
+- **V3 requests remain active** – Microsoft does not block requests coming from V3. You can continue using V3 until you're ready to migrate.
 
 > [!TIP]
 >
 > - Application stores, including the Microsoft Store, Google Play, and the Apple App Store, prioritize user-driven updates and device state over enterprise-wide synchronization. When auto-updates are enabled on your store configurations, the store services the new version and installs when the device state is available.
 > - To ensure a consistent and predictable migration, we strongly recommend using a Mobile Device Management (MDM) solution, such as Microsoft Intune. Unlike app stores, an MDM provides a dedicated management channel that allows administrators to control over the updates.
 
-### <a name="migration-information-ios"></a> Migrating from V3 and V4 for iOS
+### <a name="migration-information-ios"></a> Migrating from V3 to V4 for iOS
 
-***Release Information***: The official release of WMA iOS v4 began on 23 February 2026.
-The rollout will be phased, starting with a limited percentage of users. The rollout scope gradually increases over time to ensure stability and quality.
-If you don't see WMA iOS v4 available in the App Store, we strongly recommend joining **TestFlight** to access and test the v4 version.
+The official release of WMA iOS V4 began on 23 February 2026. The rollout is phased, starting with a limited percentage of users and gradually increasing over time.
 
-To ensure a smooth migration, we recommend that you to check the following points:
+> [!IMPORTANT]
+> iOS migration has two key differences from Android and Windows:
+>
+> - **Connection settings are not preserved.** When upgrading from V3 to V4 on iOS, existing connection settings are lost. You must manually reconfigure connections after the upgrade. To simplify this process, generate QR codes in advance. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+> - **Device Code authentication is no longer supported on iOS V4.** Before upgrading, ensure your environment is configured for username/password authentication.
 
-- **Authentication Changes**: WMA iOS V4 introduces important changes to authentication, Device Code authentication is no longer supported in iOS v4. Before upgrading, ensure that your environment supports user/password authentication to avoid login issues.
-- **Connection Configuration**: When upgrading from V3 to V4, The existing connection settings aren't preserved. Users must manually re-add their connections after upgrading to V4. Manual reconfiguration is required, you can generate and scan QR codes for easy setup. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
- 
-To ensure a smooth migration, it's recommended that you:
-- Join TestFlight to validate V4 behavior in your environment. You can join through [Apple Test Flight](https://testflight.apple.com/).
-- Confirm that user/password authentication is properly configured.
-- If you want to avoid auto-update, make sure that you disabled the auto update on your app store configurations.
+#### Before you upgrade iOS devices
+
+1. Verify that username/password authentication is properly configured in your environment.
+2. Prepare QR codes or JSON configuration files for all connections that need to be reconfigured.
+3. If you want to validate V4 behavior before the full rollout, join [Apple TestFlight](https://testflight.apple.com/) to test the V4 version.
+4. If you want to prevent automatic updates, disable auto-update in your App Store or MDM configurations.
 
 
 ### If you need to return to V3

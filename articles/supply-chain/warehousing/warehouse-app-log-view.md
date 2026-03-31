@@ -13,31 +13,40 @@ ms.custom:
 
 # View the app log on a mobile device
 
-This article explains how to open and use the **Local log view** page in the Warehouse Management mobile app. The page lets you access and manage log entries related to app activity. It's especially useful when something goes wrong and you need to share details with the Microsoft support or development team for troubleshooting.
+The Warehouse Management mobile app maintains a local log of app operations. Use the **Local log view** page to review activity, identify errors, and export logs for troubleshooting with the Microsoft support team.
 
-## About the app log
+## What the app log records
 
-The app log stores a record of local app operations, including sign-in attempts, page navigation, and other actions. It also records any errors that occur. If you're having trouble with the app, then these log entries can help the Microsoft support and development teams understand what went wrong and how to fix the issue.
+The app log captures events as they happen on the device, including:
+
+- Sign-in attempts and authentication events
+- Page navigation and workflow steps
+- Connection events and network activity
+- Errors and exceptions
+
+Logs are stored locally on the device and can be exported as a file for sharing with support.
 
 ## Open the Local log view page
 
-To view the app log, open the **Local log view** page as described in the following procedure.
-
-1. Open the Warehouse Management mobile app on the device where you're having trouble.
-1. Do one of the following steps:
-    - On the **Welcome** page, select **Set up connection** (or select **Connect** and then select **Set up connection**).
-    - On the **Main menu** page, select **Connection settings** and then select **Set up connection**.
-1. On the **Connection setup** pop-up menu, select **Diagnostics**.
-1. On the **Diagnostics** page, select **Local log view**.
+1. Open the Warehouse Management mobile app on the affected device.
+1. Navigate to the **Diagnostics** page:
+    - From the **Welcome** page: Select **Set up connection** (or select **Connect** and then **Set up connection**), then select **Diagnostics**.
+    - From the **Main menu**: Select **Connection settings**, then **Set up connection**, then **Diagnostics**.
+1. Select **Local log view**.
 
     :::image type="content" source="media/wma-local-log-view.png" alt-text="Screenshot of the Local log view page." lightbox="media/wma-local-log-view.png":::
 
-## Work with the Local log view page
+## Find and filter log entries
 
-The following features of the **Local log view** page can help you find and export information when you're having problems with the app.
+- **Filter by time or type:** Select the filter button next to the **Search** field to narrow the log list by time range or issue type.
+- **Search:** Enter text in the **Search** field to find specific log entries (for example, an error message or connection event).
+- **View details:** Select a log entry to see its full details, including timestamp, type, and message.
 
-- To open a pop-up dialog where you can filter the log list by time or issue type, select the filter button next to the **Search** field.
-- To find specific log entries, enter text into the **Search** field.
-- To view details about a line, such as time, type, and message, select the line in the list.
-- To save all log entries as a local text file, select the **Save** button next to the **Search** field.
-- To get help, share the saved log file with the Microsoft support or development team.
+## Export and share logs
+
+You can export logs from the device in two ways:
+
+- **Save to local file:** Select the **Save** button next to the **Search** field. The app saves all log entries as a text file to the device's local storage.
+- **Share:** Use the device's share function to send the log file directly via email or other apps.
+
+When contacting the Microsoft support team, export and attach the log file to your support request. This helps the team understand the sequence of events that led to the issue.

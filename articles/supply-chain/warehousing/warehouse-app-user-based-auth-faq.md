@@ -32,7 +32,7 @@ User-based authentication offers the following advantages over service-based aut
 - User-based authentication is easier to configure and use.
 - User-based authentication is more secure in contexts where the Warehouse Management mobile app is used.
 - User-based authentication provides more robust security and more configuration options in Microsoft Entra ID.
-- User-based authentication establishes a foundation for adding support for single sign-on (SSO) authentication across devices and apps in a future release.
+- User-based authentication enables single sign-on (SSO) authentication across apps on the same device.
 
 ## Is service-based authentication deprecated everywhere?
 
@@ -74,7 +74,7 @@ No, you don't need to map users on the **Microsoft Entra ID applications** page 
 
 ## How often does the Warehouse Management mobile app need to be signed in?
 
-The session timeout period depends on your Microsoft Entra ID policies. By default, the session lasts for 90 days after each sign in. Therefore, at least 91 days pass between sign-ins.
+The session timeout period depends on your Microsoft Entra ID policies. By default, the session lasts for 90 days after the last sign-in. Workers only need to reauthenticate if more than 90 days pass without activity.
 
 ## Can I set the session timeout period to more than 90 days?
 
@@ -112,19 +112,21 @@ Yes. On-premises installations use Active Directory Federation Service (AD&nbsp;
 
 ## Is it mandatory to have Microsoft Authenticator installed on the same mobile device as the Warehouse Management mobile app?
 
-No, the authentication is capable to use webview or native view to authenticate. However, if you wish to increase security and use modern features like Entra conditional access, you'll be required to have Microsoft Authenticator.
+No. For basic authentication, the app can use a webview or native view to authenticate without Microsoft Authenticator.
 
-If you use Conditional access, you have to install Authenticator on the same device. The platform requirements explicitly state that for Android and iOS, Microsoft Authenticator must be installed. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md)
+However, Microsoft Authenticator **is required** on the same device if you use any of the following features:
+
+- **Microsoft Entra Conditional Access** — Required on Android and iOS devices. Learn more in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md).
+- **Single sign-on (SSO) on iOS** — Microsoft Authenticator acts as the identity broker.
+- **Brokered authentication on Android** — Either Microsoft Authenticator or Intune Company Portal is required.
 
 ## Can I authenticate using Microsoft Entra Conditional Access?
 
-Partially. You can use Microsoft Entra Conditional Access to connect the app, but Conditional Access provides less detailed access control and oversight than Microsoft Entra ID does.
+Yes. You can use Microsoft Entra Conditional Access to enforce policies such as multifactor authentication (MFA), device compliance, and location-based access controls. This requires Warehouse Management mobile app version 4.0.28 or later and brokered authentication.
 
-Learn more about Conditional Access in [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md) and the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access/).
+To learn how to set it up, see [Use Microsoft Entra Conditional Access with the Warehouse Management mobile app](warehouse-app-conditional-access-enable.md).
 
-Learn more about using Conditional Access with Microsoft Intune in
-[Learn about Conditional Access and Intune](/intune/intune-service/protect/conditional-access) and
-[Common ways to use Conditional Access with Intune](/intune/intune-service/protect/conditional-access-intune-common-ways-use).
+For general information about Conditional Access, see the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access/). For Intune-specific guidance, see [Learn about Conditional Access and Intune](/intune/intune-service/protect/conditional-access) and [Common ways to use Conditional Access with Intune](/intune/intune-service/protect/conditional-access-intune-common-ways-use).
 
 ## Can I authenticate using Microsoft Entra Guest User Access?
 

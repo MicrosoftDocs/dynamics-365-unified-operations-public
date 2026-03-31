@@ -123,6 +123,9 @@ After you generate the required QR code, you can distribute it in any of the fol
 - Display it on-screen for easy scanning.
 - Include it in documentation or setup guides.
 
+> [!IMPORTANT]
+> QR codes contain connection configuration data, which may include tenant IDs and environment URLs. Treat QR codes as sensitive information and distribute them only through secure channels. Avoid posting them in publicly accessible locations.
+
 > [!TIP]
 > Copilot can decode a QR code if you enter a prompt such as "Please decode this QR code" and attach the image. This technique can be useful if you want to verify the contents of a QR code before you distribute it.
 

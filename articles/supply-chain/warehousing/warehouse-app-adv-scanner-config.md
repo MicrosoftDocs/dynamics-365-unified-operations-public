@@ -39,3 +39,7 @@ To configure your mobile device to use this feature, look for the following sett
 - **Intent type** – Set the value to *Broadcast intent*.
 - **Intent category** – Leave the default value.
 - **Extra key** – The Warehouse Management mobile app requires that bar code data arrives as a string value for the `com.symbol.datawedge.data_string` key. For Zebra and ProGlove devices, you don't have to specify this value, because the devices use this key name by default. However, you might have to specify the value for other devices.
+
+## Verify your configuration
+
+After configuring intent output, test the setup by scanning a known bar code on a field in the Warehouse Management mobile app. If the scanned value appears correctly in the field, the configuration is working. If the field remains empty or shows unexpected characters, review the intent settings on your device and ensure that keystroke output is disabled.

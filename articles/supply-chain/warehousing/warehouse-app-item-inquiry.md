@@ -40,7 +40,7 @@ This information allows the worker to confirm inventory without interrupting act
 To enable this functionality, you must configure the mobile device menu item in the system. Create the **Item inquiry** menu item by following these steps.
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
-1. On the Action Pane, **New** to add a mobile device menu item.
+1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
     - **Menu item name** – Enter an internal name for the menu item (for example, *Item inquiry*).
     - **Title** – Enter the title for the menu item as workers should see it (for example, *Item inquiry*).
