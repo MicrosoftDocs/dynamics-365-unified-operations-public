@@ -29,14 +29,14 @@ To make your code easy to read and maintain, be explicit, and indicate with pare
 
 The operators in the following table are listed in precedence order. The higher in the table an operator appears, the higher precedence it has. Operators with higher precedence are evaluated before operators with a lower precedence. The operator precedence of X++ isn't the same as other languages, such as C# and Java.
 
-|              Operators in precedence order               |                 Syntax                 |
-|----------------------------------------------------------|----------------------------------------|
-| unary operators                                          | `- ~ !`                  |
-| multiplicative, shift, bitwise AND, bitwise exclusive OR | `* / % DIV << >> & ^`    |
-| additive, bitwise inclusive OR                           | `+ -`                   |
-| relational, equality                                     | `< <= == != > >= like as is` |
-| logical operators (AND, OR)                              | `&& |` |             |
-| conditional                                              | `? :`                   |
+| Operators in precedence order                            | Syntax                                              |
+|----------------------------------------------------------|-----------------------------------------------------|
+| unary operators                                          | `- ~ !`                                             |
+| multiplicative, shift, bitwise AND, bitwise exclusive OR | `* / % DIV << >> & ^`                               |
+| additive, bitwise inclusive OR                           | `+ -`                                               |
+| relational, equality                                     | `< <= == != > >= like as is`                        |
+| logical operators (AND, OR)                              | &&, \|\|                                            |
+| conditional                                              | `? :`                                               |
 
 Operators on the same line in the table have equal precedence. If an expression contains more than one of these operators, the expression is evaluated from left to right unless assignment operators are used. Assignment operators are evaluated from right to left. For example, `&&` (logical AND) and `||` (logical OR) have the same precedence and are evaluated from left to right. This precedence means that `0 && 0 || 1 == 1`, and `1 || 0 && 0 == 0`
 
