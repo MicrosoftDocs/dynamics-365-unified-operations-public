@@ -1,10 +1,10 @@
 ---
 title: What are the prerequisites to installing Business performance analytics
 description: This article describes how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
-author: jinniew
-ms.author: jiwo
+author: damienmaspero
+ms.author: damienma
 ms.topic: article
-ms.date: 03/17/2026
+ms.date: 03/31/2026
 
 ms.custom:
 ms.reviewer: twheeloc 
