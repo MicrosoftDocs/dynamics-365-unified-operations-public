@@ -168,7 +168,7 @@ Here are some of the limitations:
 
 You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
 
-A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new <DimensionName> created**, where **<DimensionName>** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
+A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new [DimensionName] created**, where **[DimensionName]** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
 
 If records already exist for the dimension, turning on the feature updates the master records. However, existing documents and transactions aren't updated.
 
@@ -181,7 +181,7 @@ If you're using a template to create a master record, make sure that the templat
 
 ### Supported entities for copy values on create
 
-The **Copy values to this dimension on each new <DimensionName> created** toggle is only available for entity-backed dimensions that have been configured to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
+The **Copy values to this dimension on each new [DimensionName] created** toggle is only available for entity-backed dimensions that have been configured to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
 
 The following entity-backed dimensions support copy values on create out of the box:
 
