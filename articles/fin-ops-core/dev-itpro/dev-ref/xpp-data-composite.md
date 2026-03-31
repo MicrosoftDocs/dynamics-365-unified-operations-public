@@ -5,7 +5,7 @@ author: josaw1
 ms.search.region: Global
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 08/27/2021
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.validFrom: 2016-02-28
@@ -20,15 +20,15 @@ This article describes composite data types in X++. The composite data types in 
 
 ## Array
 
-An *array* is a variable that contains a list of items that have the same data type. The elements of an array are accessed by using integer indexes. You use a separate statement to initialize each element in an array. When you use a container data type or an array object to create a collection, you can initialize multiple elements by using a single statement. By default, all the items in an array have the default value of the data type in the array. There are three kinds of arrays: *dynamic arrays*, *fixed-length arrays*, and *partly on disk arrays*.
+An *array* is a variable that contains a list of items that have the same data type. You access the elements of an array by using integer indexes. You use a separate statement to initialize each element in an array. When you use a container data type or an array object to create a collection, you can initialize multiple elements by using a single statement. By default, all the items in an array have the default value of the data type in the array. There are three kinds of arrays: *dynamic arrays*, *fixed-length arrays*, and *partly on disk arrays*.
 
-- **Dynamic arrays** – These arrays are declared by using an empty array option. In other words, they have only brackets (\[\]).
-- **Fixed-length arrays** – These arrays can hold the number of items that is specified in the declaration. Fixed-length arrays are declared like dynamic arrays, but a length option is included in the brackets.
-- **Partly on disk arrays** – These arrays are declared as either dynamic arrays or fixed-length arrays that have an extra option that declares how many items should be held in memory. The other items are stored on disk and are automatically loaded when they are referenced.
+- **Dynamic arrays** – Declare these arrays by using an empty array option. In other words, they have only brackets (\[\]).
+- **Fixed-length arrays** – These arrays hold the number of items that you specify in the declaration. Declare fixed-length arrays like dynamic arrays, but include a length option in the brackets.
+- **Partly on disk arrays** – Declare these arrays as either dynamic arrays or fixed-length arrays that have an extra option that declares how many items should be held in memory. The other items are stored on disk and are automatically loaded when they're referenced.
 
-X++ supports only one-dimensional arrays. However, you can mimic the behavior of multiple array indexes. (For more information, see the [Multiple array indexes](#multiple-array-indexes) section). Variables in objects and tables can be declared as arrays. For example, this functionality is used in address lines in the standard application. An array collection class lets you store objects in an array.
+X++ supports only one-dimensional arrays. However, you can mimic the behavior of multiple array indexes. For more information, see the [Multiple array indexes](#multiple-array-indexes) section. You can declare variables in objects and tables as arrays. For example, this functionality is used in address lines in the standard application. An array collection class lets you store objects in an array.
 
-Array indexes begin at 1. The first item in the array is referenced as \[1\], the second item is referenced as \[2\], and so on. The following syntax is used to access an array element: **ArrayItemReference = ArrayVariable \[ Index \]**. In this syntax, **ArrayVariable** is the identifier of the array, and **Index** is the number of the array element. **Index** can be an integer expression. Item zero \[0\] is used to clear the array. If a value is assigned to index 0 in an array, all elements in the array are reset to their default value.
+Array indexes begin at 1. The first item in the array is referenced as \[1\], the second item is referenced as \[2\], and so on. Use the following syntax to access an array element: **ArrayItemReference = ArrayVariable \[ Index \]**. In this syntax, **ArrayVariable** is the identifier of the array, and **Index** is the number of the array element. **Index** can be an integer expression. Use item zero \[0\] to clear the array. If you assign a value to index 0 in an array, all elements in the array are reset to their default value.
 
 An assignment of one entire array to another is performed by reference.
 
@@ -69,14 +69,14 @@ public void ArrayMethod()
 
 ### Multiple array indexes
 
-Some languages, such as C++ and C\#, let you declare arrays that have more than one index. In other words, you can define "arrays of arrays." In X++, you can't directly create multiple array indexes because only one-dimensional arrays are supported. However, you can implement multiple indexes by using the method that is described in this section. For example, you want to declare an array that has two dimensions, to hold an amount that is earned by country/region by dimension. There are 10 countries and three dimensions. In C++ and C\#, you declare the following array.
+Some languages, such as C++ and C\#, let you declare arrays that have more than one index. In other words, you can define "arrays of arrays." In X++, you can't directly create multiple array indexes because only one-dimensional arrays are supported. However, you can implement multiple indexes by using the method described in this section. For example, you want to declare an array that has two dimensions, to hold an amount that is earned by country/region by dimension. There are 10 countries and three dimensions. In C++ and C\#, you declare the following array.
 
 ```csharp
 // This is C# or C++ code, not X++ code.
 long earning[10, 3];
 ```
 
-However, X++ doesn't support this declaration. Instead, you can define a one-dimensional array where the number of elements is the product of the elements in each dimension. Here is an example.
+However, X++ doesn't support this declaration. Instead, you can define a one-dimensional array where the number of elements is the product of the elements in each dimension. Here's an example.
 
 ```xpp
 public void MultipleArrayMethod()
@@ -130,7 +130,7 @@ The **container** type resembles other constructs, such as arrays and collection
 
 When you construct a **List** object, you determine the one type of data that the **List** object can store. This restriction is less flexible for a **List** than it is for a container. However, you can store objects in a **List**, whereas a container can store only value types. The difference between a container and an array is that an array can hold only items of its declared type. You can allocate memory space for an array and fill that space with values later. For example, you can fill in values in a loop. This behavior is efficient and performs well. When you want to build a new container by appending new data, you can use either the **+=** operator or the **conIns** function. The **+=** operator is the faster alternative. Use the **conIns** function only when you want to add new data before the last index of the original data.
 
-You can't store object references in containers. When the compiler detects an attempt to store an object reference in a container, it issues an error message. If the type of the element that is added to the container is **anytype**, the compiler can’t determine whether the value is a reference type. In this case, the compiler allows the attempt. Although the compiler doesn't diagnose the code as erroneous, an error will be thrown at run time.
+You can't store object references in containers. When the compiler detects an attempt to store an object reference in a container, it issues an error message. If the type of the element that is added to the container is **anytype**, the compiler can’t determine whether the value is a reference type. In this case, the compiler allows the attempt. Although the compiler doesn't diagnose the code as erroneous, an error is thrown at run time.
 
 ### Container examples
 
@@ -236,21 +236,21 @@ static void UseQuery()
 
 ## Classes as data types
 
-A *class* is a type definition that describes both variables and methods for instances of the class. (The instances of a class are also known as *objects*.) A class is only a definition for objects, and all objects are **null** when they are declared. In Application Explorer, every application class under the **Classes** node is a data type. You can declare variables of these types in your code. You can construct instances of a class and assign the instances to variables.
+A *class* is a type definition that describes both variables and methods for instances of the class. (The instances of a class are also known as *objects*.) A class is only a definition for objects, and all objects are **null** when they're declared. In Application Explorer, every application class under the **Classes** node is a data type. You can declare variables of these types in your code. You can construct instances of a class and assign the instances to variables.
 
-Classes can be nested in source code. Nested classes are available only inside forms (such as a class that extends **FormRun**), and are used to represent controls, data sources, or data fields. An attribute decoration, such as the attribute decoration on a class or a method, can omit the suffix of the attribute name if the suffix is **Attribute**. Therefore, X++ allows **\[MyFavorite\]** instead of requiring **\[MyFavoriteAttribute\]**. Additionally, attributes are now applied to the handlers of delegates and methods, to map the handlers to those targets.
+You can nest classes in source code. You can use nested classes only inside forms (such as a class that extends **FormRun**), and they represent controls, data sources, or data fields. An attribute decoration, such as the attribute decoration on a class or a method, can omit the suffix of the attribute name if the suffix is **Attribute**. Therefore, X++ allows **\[MyFavorite\]** instead of requiring **\[MyFavoriteAttribute\]**. Additionally, you apply attributes to the handlers of delegates and methods, to map the handlers to those targets.
 
-In AX 2012 and earlier versions, you could designate a method to run on either the client or the server. However, in finance and operations applications, all compiled X++ code is run as .NET Common Intermediate Language (CIL) on the server. There is no longer any code that is evaluated at the client site or in the browser. Therefore, the **client** and **server** keywords are now ignored. Although these keywords don't cause a compile error if they are used, they should not be used in any new code.
+In AX 2012 and earlier versions, you could designate a method to run on either the client or the server. However, in finance and operations applications, all compiled X++ code runs as .NET Common Intermediate Language (CIL) on the server. There's no longer any code that's evaluated at the client site or in the browser. Therefore, the **client** and **server** keywords are now ignored. Although these keywords don't cause a compile error if they're used, don't use them in any new code.
 
 ### Private and protected member variables
 
-Previously, all member variables that were defined in a class were protected. You can now make the visibility of member variables explicit by adding the **private**, **protected**, and **public** keywords. The interpretation of these modifiers is obvious and is aligned with the semantics for methods:
+Previously, all member variables that you defined in a class were protected. You can now make the visibility of member variables explicit by adding the **private**, **protected**, and **public** keywords. The interpretation of these modifiers is obvious and is aligned with the semantics for methods:
 
-- **private** – The member variable can be used only within the class where it’s defined.
-- **protected** – The member variable can be used in the class where it’s defined and all subclasses of that class.
-- **public** – The member variable can be used anywhere. It’s visible outside the confines of the class hierarchy where it’s defined.
+- **private** – The member variable can be used only within the class where you define it.
+- **protected** – The member variable can be used in the class where it's defined and all subclasses of that class.
+- **public** – The member variable can be used anywhere. It's visible outside the confines of the class hierarchy where it's defined.
 
-By default, member variables that aren’t adorned with an explicit modifier are still protected. However, as a best practice, you should explicitly specify the visibility. As we described earlier, when a member variable is defined as **public**, it can be accessed outside the class where it’s defined. In this case, you must specify a qualifier that designates the object that is hosting the variable. To specify the qualifier, use the dot notation, as you do for method calls.
+By default, member variables that aren't adorned with an explicit modifier are still protected. However, as a best practice, you should explicitly specify the visibility. As described earlier, when you define a member variable as **public**, you can access it outside the class where it's defined. In this case, you must specify a qualifier that designates the object that hosts the variable. To specify the qualifier, use the dot notation, as you do for method calls.
 
 In the following example, **field1** is accessed by using the explicit **this** qualifier. In this case, it might not be a good idea to make a member variable public, because that approach exposes the internal workings of the class to its consumers, and therefore creates a strong dependency between the class implementation and its consumers. You should always try to depend only on a contract, not an implementation.
 
@@ -269,7 +269,7 @@ public class AnotherClass3
 
 ### Static constructors and static fields
 
-*Static fields* are fields that are declared by using the **static** keyword. Conceptually, static fields apply to the class, not to instances of the class. Static constructors are guaranteed to run before any static calls or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. You never call the static constructor explicitly. Instead, the compiler will generate code to make sure that the constructor is called exactly one time, before any other method on the class is called. A static constructor is used to initialize any static data or perform an action that must be performed only one time. You can't provide parameters for the static constructor, and it must be marked with the **static** keyword.
+*Static fields* are fields that you declare by using the **static** keyword. Conceptually, static fields apply to the class, not to instances of the class. Static constructors are guaranteed to run before any static calls or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. You never call the static constructor explicitly. Instead, the compiler generates code to make sure that the constructor is called exactly one time, before any other method on the class is called. A static constructor initializes any static data or performs an action that must be performed only one time. You can't provide parameters for the static constructor, and it must be marked with the **static** keyword.
 
 ```xpp
 // An example of how a singleton (call instance in the example below)
@@ -301,7 +301,7 @@ public class Singleton
 
 ### Class elements in Application Explorer
 
-Under most class nodes in Application Explorer, there are two special nodes: a **classDeclaration** node and a **new** node. A **classDeclaration** always contains the X++ **class** keyword. Additional keywords, such as **extends**, can be included to modify the class. This node can also contain declarations of member variables.
+Under most class nodes in Application Explorer, you see two special nodes: a **classDeclaration** node and a **new** node. A **classDeclaration** node always contains the X++ **class** keyword. You can include extra keywords, such as **extends**, to modify the class. This node can also contain declarations of member variables.
 
 In the following example, the variables **m\_priority** and **m\_rectangle** are members of the class.
 
@@ -318,9 +318,9 @@ public class YourDerivedClass extends YourBaseClass
 }
 ```
 
-A **new** operator contains logic that is run when the **new** operator is used to create an instance of the class. The logic in the **new** method might construct an object and assign that object to a variable that is declared in the **classDeclaration**. Each class can have only one **new** method. However, in the **new** method, you often should call the **new** method of the base class. To call the **new** method of the base class, call **super()**.
+A **new** operator contains logic that runs when the **new** operator is used to create an instance of the class. The logic in the **new** method might construct an object and assign that object to a variable that the **classDeclaration** declares. Each class can have only one **new** method. However, in the **new** method, you often call the **new** method of the base class. To call the **new** method of the base class, call **super()**.
 
-The following example shows the **new** method for the **YourDerivedClass** class in the previous **classDeclaration** example. In this **new** method, the code constructs an instance of the **Rectangle** class. The instance is assigned to the **m\_rectangle** variable. The **this** keyword that is used in the example is optional, however, if you include it, IntelliSense might be more helpful.
+The following example shows the **new** method for the **YourDerivedClass** class in the previous **classDeclaration** example. In this **new** method, the code constructs an instance of the **Rectangle** class. The instance is assigned to the **m\_rectangle** variable. The **this** keyword that is used in the example is optional, but if you include it, IntelliSense might be more helpful.
 
 ```xpp
 // An example of the new method from the previous classDeclaration example.
@@ -332,25 +332,25 @@ void new(int _length, int _width)
 
 ### Garbage collection
 
-Eventually during run time, most objects no longer have any variable that points to them. The system scans for these objects and erases them from memory. The memory space then becomes available for other uses. The **Object** class has a method that is named **finalize**. However, the **finalize** method isn't a destructor. The runtime never calls the **finalize** method, even when an object is collected as garbage.
+Eventually during run time, most objects no longer have any variable that points to them. The system scans for these objects and erases them from memory. The memory space then becomes available for other uses. The **Object** class has a method named **finalize**. However, the **finalize** method isn't a destructor. The runtime never calls the **finalize** method, even when an object is collected as garbage.
 
 ### System classes
 
-In Application Explorer, under **System Documentation** &gt; **Classes**, there is a list of the kernel classes or system classes. System classes aren't written in X++, and you can't see their source code. You can't add system classes. System classes usually have a **new** method, but they don't have a **classDeclaration** node. Every application class implicitly extends the **Object** system class. Some system classes are extended by an application class that has a similar name. For instance, **xClassFactory** is extended by **ClassFactory**. In these cases, you should not use the system class. For more information, see "Substitute application classes for system classes" in [Classes and methods](xpp-classes-methods.md).
+In Application Explorer, under **System Documentation** &gt; **Classes**, you see a list of the kernel classes or system classes. System classes aren't written in X++, and you can't see their source code. You can't add system classes. System classes usually have a **new** method, but they don't have a **classDeclaration** node. Every application class implicitly extends the **Object** system class. Some system classes are extended by an application class that has a similar name. For example, **xClassFactory** is extended by **ClassFactory**. In these cases, don't use the system class. For more information, see "Substitute application classes for system classes" in [Classes and methods](xpp-classes-methods.md).
 
 ### Extension methods
 
 The extension method feature lets you add extension methods to a target class by writing the methods in a separate extension class. The following rules apply:
 
 - The extension class must be static.
-- The name of the extension class must end with the ten-character suffix **\_Extension**, however, there’s no restriction on the part of the name that precedes the suffix.
+- The name of the extension class must end with the ten-character suffix **\_Extension**, but there's no restriction on the part of the name that precedes the suffix.
 - Every extension method in the extension class must be declared as **public static**.
-- The first parameter in every extension method is the type that the extension method extends. However, when the extension method is called, the caller must not pass in anything for the first parameter. Instead, the system automatically passes in the required object for the first parameter.
+- The first parameter in every extension method is the type that the extension method extends. However, when you call the extension method, you don't pass in anything for the first parameter. Instead, the system automatically passes in the required object for the first parameter.
 - The target of an extension method must be a class, table, view, or map application object type.
 
-An extension class can contain private or protected static methods. These methods are typically used for implementation details and aren't exposed as extensions. The extension method technique doesn’t affect the source code of the class that it extends, therefore, the addition to the class doesn't require over-layering.
+An extension class can contain private or protected static methods. These methods typically handle implementation details and aren't exposed as extensions. The extension method technique doesn't affect the source code of the class that it extends, so the addition to the class doesn't require over-layering.
 
-Upgrades to the target class are never affected by any existing extension methods. If an upgrade to the target class adds a method that has the same name as your extension method, your extension method can no longer be reached through objects of the target class. The extension method technique uses the same dot-delimited syntax that you often use to call regular instance methods. Extension methods can access all public artifacts of the target class, but they can’t access anything that is protected or private. Therefore, extension methods can be considered a type of syntactic sugar. Regardless of the target type, an extension class is used to add extension methods to the type. For example, an extension table isn't used to add methods to a table, and there’s no such thing as an extension table.
+Upgrades to the target class never affect any existing extension methods. If an upgrade to the target class adds a method that has the same name as your extension method, your extension method is no longer accessible through objects of the target class. The extension method technique uses the same dot-delimited syntax that you often use to call regular instance methods. Extension methods can access all public artifacts of the target class, but they can't access anything that is protected or private. Therefore, you can consider extension methods a type of syntactic sugar. Regardless of the target type, an extension class is used to add extension methods to the type. For example, you don't use an extension table to add methods to a table, and there's no such thing as an extension table.
 
 ```xpp
 // An example of an extension class holding a few extension methods.
@@ -374,7 +374,7 @@ public static class AtlInventLocation_Extension
 
 ## Delegates as data types
 
-A *delegate* collects methods that subscribe to it. The delegate specifies the parameter signature that all its subscriber methods must share. When the delegate is called, the delegate calls each of its subscribers. A delegate never returns a value and **can't have a default value**. At first, every delegate has no subscribed methods. There is no limit on the number of parameters that a delegate can declare, and there is no limitation on the type of those parameters. The delegate body is always empty, because the delegate's only purpose is to define the contract that subscribers must conform to. A delegate doesn't have to be defined in a class. Delegates can also be defined in a table, form, or query.
+A *delegate* collects methods that subscribe to it. The delegate specifies the parameter signature that all its subscriber methods must share. When you call the delegate, the delegate calls each of its subscribers. A delegate never returns a value and **can't have a default value**. At first, every delegate has no subscribed methods. There's no limit on the number of parameters that a delegate can declare, and there's no limitation on the type of those parameters. The delegate body is always empty, because the delegate's only purpose is to define the contract that subscribers must conform to. A delegate doesn't have to be defined in a class. You can also define delegates in a table, form, or query.
 
 ### Delegate examples
 
@@ -424,17 +424,17 @@ abstract class VarDatClass
 
 ## Tables as data types
 
-All tables can be treated as class definitions. A table variable can be considered an instance (object) of the table (class) definition. For every field in a table variable, the default value is **empty**. You can address fields and create methods on tables. The methods can be invoked on instances of the table. To manipulate (that is, read, update, insert, and delete) records in tables, you must declare at least one table variable that can hold the record in focus. As a best practice, you should use the name of the table as the name of the variable but use an initial lowercase letter. Here are a few important differences between tables and objects:
+You can treat all tables as class definitions. Consider a table variable as an instance (object) of the table (class) definition. For every field in a table variable, the default value is **empty**. You can address fields and create methods on tables. You can invoke the methods on instances of the table. To manipulate (that is, read, update, insert, and delete) records in tables, you must declare at least one table variable that can hold the record in focus. As a best practice, use the name of the table as the name of the variable but use an initial lowercase letter. Here are a few important differences between tables and objects:
 
 - You can't allocate space for table variables. Allocation is done implicitly.
 - Fields in table variables are public. You can reference them anywhere.
-- Fields in table variables can be referenced by using expressions.
+- You can reference fields in table variables by using expressions.
 
-There is no automatic conversion, but table variables that are declared as **Common** can hold data from any table.
+There's no automatic conversion, but table variables that you declare as **Common** can hold data from any table.
 
 ### Scope of table variables
 
-In most respects, table variables can be considered objects, however, unlike objects, they aren't explicitly allocated. Only a variable declaration is required. All tables are compatible with the **Common** table, just as all objects are compatible with the **Object** class. Table variables are declared as common buffers and can be used to hold data from any table. You can't access tables that don't have table variables. The principles for declaring table variables and objects are the same, except with regard to the allocation of space.
+In most respects, you can consider table variables as objects. However, unlike objects, they aren't explicitly allocated. You only need a variable declaration. All tables are compatible with the **Common** table, just as all objects are compatible with the **Object** class. You declare table variables as common buffers, and you can use them to hold data from any table. You can't access tables that don't have table variables. The principles for declaring table variables and objects are the same, except with regard to the allocation of space.
 
 ### Table examples
 
@@ -457,7 +457,7 @@ public void printAccountNo()
 }
 ```
 
-The following example uses the **fieldCnt** and **fieldCnt2Id** methods. The **fieldCnt** method counts the number of fields in a table, whereas **fieldCnt2Id** returns the ID for a field number. For example, you can use the **fieldCnt2Id** method to learn that field number 6 in a table has the ID 54. This conversion is required, because there is no guarantee that the IDs of the fields in a table are consecutive.
+The following example uses the **fieldCnt** and **fieldCnt2Id** methods. The **fieldCnt** method counts the number of fields in a table, whereas **fieldCnt2Id** returns the ID for a field number. For example, you can use the **fieldCnt2Id** method to learn that field number 6 in a table has the ID 54. This conversion is required, because there's no guarantee that the IDs of the fields in a table are consecutive.
 
 ```xpp
 // An example of the various possibilities for referencing fields in records.
@@ -480,4 +480,3 @@ public void printCust()
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

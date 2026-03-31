@@ -6,7 +6,7 @@ ms.author: pvillads
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/13/2024
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -18,10 +18,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+An SQL injection attack happens when someone passes malicious data values to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you're not careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in finance and operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
 
-An SQL injection attack occurs when malicious data values are passed to Microsoft SQL Server in a query string. Those values can cause lots of damage in a database. SQL injection can occur if you aren't careful about how you use a query to pass data that comes from an uncontrolled source, such as user input, to SQL Server. SQL injection isn't usually an issue in finance and operations apps, because the built-in data access statements in X++ prevent it. However, if you use Direct-SQL, SQL injection can occur when raw SQL code is passed to the server.
-
-A new API will help mitigate these attacks. The API is available starting with platform updates for version 10.0.17 of finance and operations apps (April 2021).
+A new API helps mitigate these attacks. The API is available starting with platform updates for version 10.0.17 of finance and operations apps (April 2021).
 
 ## The issue
 
@@ -52,7 +51,7 @@ public str GetFirstName(str name)
 }
 ```
 
-Additionally, there is either a page where users can enter customer names in a string field, or a service endpoint that enables names to come into the server.
+Additionally, there's either a page where users can enter customer names in a string field, or a service endpoint that enables names to come into the server.
 
 In this scenario, everything works well if users enter valid names such as "Jones." However, a malicious user might enter the following string as a name.
 
@@ -60,19 +59,19 @@ In this scenario, everything works well if users enter valid names such as "Jone
 '; drop table Customer --
 ```
 
-In this case, here is the final query that the server runs.
+In this case, here's the final query that the server runs.
 
 ```xpp
 SELECT TOP(1) firstName FROM Customer WHERE customer.Name = ''; drop table Customer --'
 ```
 
-The first quotation mark in the given string just ends the string literal that should contain the name that the user is looking for. Then another SQL statement is run because of the semicolon (;), which is a statement terminator token. This second statement irretrievably deletes the **Customer** table and all the data in it. Finally, the commenting characters (--) ensure that the single quotation mark at the end doesn't cause syntax errors. Therefore, the string is valid Transact SQL (T-SQL).
+The first quotation mark in the given string just ends the string literal that should contain the name that the user is looking for. Then another SQL statement runs because of the semicolon (;), which is a statement terminator token. This second statement irretrievably deletes the **Customer** table and all the data in it. Finally, the commenting characters (--) ensure that the single quotation mark at the end doesn't cause syntax errors. Therefore, the string is valid Transact SQL (T-SQL).
 
-SQL injection occurs because the connection to SQL Server doesn't impose any restrictions that prevent it from performing operations that create or delete tables, views, and stored procedures at runtime. Therefore, organizations must rely on the assumption that developers are reasonable people who know what they are doing.
+SQL injection occurs because the connection to SQL Server doesn't impose any restrictions that prevent it from performing operations that create or delete tables, views, and stored procedures at runtime. Therefore, organizations must rely on the assumption that developers are reasonable people who know what they're doing.
 
 ## The solution
 
-SQL Server mitigates the threat by using *statement parameters*. Statement parameters never use literals that are subject to textual changes to the resulting string. Instead, they provide named parameters, the actual content of which is provided contextually. For this release, Microsoft has added a new API that lets you use parameters instead of building SQL strings in code.
+SQL Server mitigates the threat by using *statement parameters*. Statement parameters never use literals that are subject to textual changes to the resulting string. Instead, they provide named parameters, the actual content of which is provided contextually. For this release, Microsoft added a new API that you can use to include parameters instead of building SQL strings in code.
 
 The following example shows what the code from the previous example looks like after these changes are incorporated.
 
@@ -105,9 +104,9 @@ public str GetFirstName(str name)
 }
 ```
 
-The updated example uses the new **executeQueryWithParameters** API instead of the old API that didn't take parameters. The code builds the map that contains the mapping from parameter names to parameter values. In this case, **Name** will be the value of **\@Name** in SQL. The incoming **name** value can be anything.
+The updated example uses the new **executeQueryWithParameters** API instead of the old API that didn't take parameters. The code builds the map that contains the mapping from parameter names to parameter values. In this case, **Name** is the value of **\@Name** in SQL. The incoming **name** value can be anything.
 
-A related method on the **Statement** type is used to run statements that return integer values instead of rows. Typically, the integer value indicates the number of rows that are affected. The following example uses the X++ data statements with the **executeQueryWithParameters** API.
+A related method on the **Statement** type runs statements that return integer values instead of rows. Typically, the integer value indicates the number of rows that are affected. The following example uses the X++ data statements with the **executeQueryWithParameters** API.
 
 ```xpp
 public void InsertWithStrParameter()
@@ -135,9 +134,8 @@ public void InsertWithStrParameter()
 
 ## Conclusion
 
-As Microsoft introduces the new methods, we are also marking the existing methods (that is, the methods without the parameters) as obsolete. The usual deprecation periods apply. Therefore, you can update your code to take advantage of the new protection that the parameters provide.
+As Microsoft introduces the new methods, it also marks the existing methods (that is, the methods without the parameters) as obsolete. The usual deprecation periods apply. Therefore, update your code to take advantage of the new protection that the parameters provide.
 
-Although the new **executeQueryWithParameters** API helps you protect your customers from disasters, you aren't required to use it. You can still do string concatenations and provide an empty parameter set. However, in this case, you don't gain the advantages that the parameters provide. We hope that you will take this opportunity to eliminate any dangerous usage that you have in your code.
-
+Although the new **executeQueryWithParameters** API helps you protect your customers from disasters, you're not required to use it. You can still do string concatenations and provide an empty parameter set. However, in this case, you don't gain the advantages that the parameters provide. Take this opportunity to eliminate any dangerous usage that you have in your code.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

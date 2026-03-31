@@ -4,7 +4,7 @@ description: Learn about various System classes with tables that outline descrip
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 11/06/2017
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article contains the documentation available for the System classes. 
+This article contains the documentation available for the System classes.
 
 > [!NOTE]
 > This article is not a complete list of the System table members. You can find a complete list of tables and their members in the Application Explorer.
@@ -181,6 +181,7 @@ The Common table is the base class for all tables. It does not contain any data.
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common)
 
 ## DataArea
+
 The DataArea table contains a list of companies that have been created in the database.
 
 ### Fields
@@ -219,6 +220,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [DataArea Table](#dataarea)
 
 ## DatabaseLog
+
 The DatabaseLog table stores configuration information for the SysDatabaseLog table.
 
 ### Fields
@@ -266,6 +268,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [DatabaseLog Table](#databaselog)
 
 ## DEL\_AccessRightsList
+
 Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
 
 ### Fields
@@ -315,6 +318,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) DEL-AccessRightsList Table
 
 ## DEL_CompanyDomainList
+
 The CompanyDomainList table contains associations between the DomainInfo and DataArea tables. Security rights are granted per domain.
 
 ### Fields
@@ -356,6 +360,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) DEL_CompanyDomainList Table
 
 ## DEL_DomainInfo
+
 Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
 
 ### Fields
@@ -388,6 +393,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) DEL_DomainInfo Table
 
 ## DEL_UserGroupInfo
+
 The UserGroupInfo table contains the list of available user groups.
 
 ### Fields
@@ -416,6 +422,7 @@ The UserGroupInfo table contains the list of available user groups.
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) DEL_UserGroupInfo Table
 
 ## DEL_UserGroupList
+
 The UserGroupList table contains the list of users associated with each user groups.
 
 ### Fields
@@ -453,6 +460,7 @@ The UserGroupList table contains the list of users associated with each user gro
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) DEL_UserGroupList Table
 
 ## ModelSecPolRuntimeEx
+
 The ModelSecPolRuntimeEx table stores the runtime metadata that is necessary to apply security policies.
 
 ### Fields
@@ -495,6 +503,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [ModelSecPolRuntimeEx Table](#modelsecpolruntimeex)
 
 ## ModelSecPolRuntimeView
+
 The ModelSecPolRuntimeView view shows the runtime metadata for the currently active security policies.
 
 ### Fields
@@ -526,6 +535,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [ModelSecPolRuntimeView Table](#modelsecpolruntimeview)
 
 ## Partitions
+
 The Partitions table contains the list of data partitions in the system.
 
 ### Fields
@@ -571,6 +581,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [Partitions Table](#partitions)
 
 ## PrintJobHeader
+
 The PrintJobHeader table contains information regarding the current print job
 
 ### Fields
@@ -622,6 +633,7 @@ The PrintJobHeader table contains information regarding the current print job
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [PrintJobHeader Table](#printjobheader)
 
 ## PrintJobPages
+
 The PrintJobPages table contains information regarding the currently printing page of a print job
 
 ### Fields
@@ -658,6 +670,7 @@ The PrintJobPages table contains information regarding the currently printing pa
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [PrintJobPages Table](#printjobpages)
 
 ## SecurableObject
+
 The SecurableObject table contains all security artifacts reference by the security framework.
 
 ### Fields
@@ -692,6 +705,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurableObject Table](#securableobject)
 
 ## SecurityDuty
+
 ### Fields
 
 | Field       | Type   | Extended Type           | Enumeration Type | Description |
@@ -719,6 +733,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityDuty Table](#securityduty)
 
 ## SecurityEntryPointInferredTables
+
 ### Fields
 
 | Field                | Type   | Extended Type | Enumeration Type     | Description |
@@ -743,6 +758,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityEntryPointInferredTables Table](#securityentrypointinferredtables)
 
 ## SecurityEntryPointLink
+
 The SecurityEntryPointLink table contains the entry point to securable object mapping that has been specified on the AOT nodes of menu items and web menu items.
 
 ### Fields
@@ -779,6 +795,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityEntryPointLink Table](#securityentrypointlink)
 
 ## SecurityPermission
+
 The SecurityPermission table contains the list of permissions that have been specified on the AOT nodes of forms, reports, security code permissions, and service operations.
 
 ### Fields
@@ -817,6 +834,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityPermission Table](#securitypermission)
 
 ## SecurityPrivilege
+
 ### Fields
 
 | Field       | Type   | Extended Type                | Enumeration Type | Description |
@@ -844,6 +862,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityPrivilege Table](#securityprivilege)
 
 ## SecurityRole
+
 The SecurityRole table reflects the list of roles defined by the security AOT role node.
 
 ### Fields
@@ -889,6 +908,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRole Table](#securityrole)
 
 ## SecurityRoleAssignmentRule
+
 Rules for dynamically assigning users to role
 
 ### Fields
@@ -929,6 +949,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRoleAssignmentRule Table](#securityroleassignmentrule)
 
 ## SecurityRoleDutyExplodedGraph
+
 ### Fields
 
 | Field        | Type  | Extended Type | Enumeration Type | Description |
@@ -955,6 +976,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRoleDutyExplodedGraph Table](#securityroledutyexplodedgraph)
 
 ## SecurityRoleExplodedGraph
+
 The SecurityRoleExplodedGraph table contains all role relationships, direct or indirect, as defined by the AOT sub role nodes of the security role nodes.
 
 ### Fields
@@ -992,6 +1014,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRoleExplodedGraph Table](#securityroleexplodedgraph)
 
 ## SecurityRolePermissionOverride
+
 The SecurityRolePermissionOverride table contains the list of permissions that have been specified on the security role AOT nodes.
 
 ### Fields
@@ -1029,6 +1052,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRolePermissionOverride Table](#securityrolepermissionoverride)
 
 ## SecurityRolePrivilegeExplodedGraph
+
 ### Fields
 
 | Field             | Type  | Extended Type | Enumeration Type | Description |
@@ -1055,6 +1079,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRolePrivilegeExplodedGraph Table](#securityroleprivilegeexplodedgraph)
 
 ## SecurityRoleRuntime
+
 ### Fields
 
 | Field                | Type   | Extended Type      | Enumeration Type | Description |
@@ -1107,6 +1132,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRoleRuntime Table](#securityroleruntime)
 
 ## SecurityRoleTaskGrant
+
 The SecurityRoleTaskGrant table contains the list of role to duty mappings and role to privilege mappings as defined by the AOT security role node.
 
 ### Fields
@@ -1141,6 +1167,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityRoleTaskGrant Table](#securityroletaskgrant)
 
 ## SecuritySegregationOfDutiesConflict
+
 The SecuritySegregationOfDutiesConflict table stores information about segregation of duties conflicts that result from attempted assignments of users to roles, and resolutions to the conflicts provided by authorized users.
 
 ### Fields
@@ -1211,6 +1238,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecuritySegregationOfDutiesConflict Table](#securitysegregationofdutiesconflict)
 
 ## SecuritySegregationOfDutiesRule
+
 The SecuritySegregationOfDutiesRule table stores the rules governing segregation of duties.
 
 ### Fields
@@ -1267,6 +1295,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecuritySegregationOfDutiesRule Table](#securitysegregationofdutiesrule)
 
 ## SecuritySubRole
+
 The SecuritySubRole table contains all sub roles that have been specified on the security role AOT nodes.
 
 ### Fields
@@ -1305,6 +1334,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecuritySubRole Table](#securitysubrole)
 
 ## SecuritySubTask
+
 The SecuritySubTask table contains the duty to privilege mappings that have been specified on the security duty AOT nodes.
 
 ### Fields
@@ -1341,6 +1371,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecuritySubTask Table](#securitysubtask)
 
 ## SecurityTask
+
 The SecurityTask table contains the list of duties and privileges that have been defined by the AOT security duty and security privilege nodes.
 
 ### Fields
@@ -1379,6 +1410,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityTask Table](#securitytask)
 
 ## SecurityTaskEntryPoint
+
 The SecurityTaskEntryPoint table contains the list of privilege to entry point mappings that have been specified on the AOT security privilege node.
 
 ### Fields
@@ -1416,6 +1448,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityTaskEntryPoint Table](#securitytaskentrypoint)
 
 ## SecurityTaskExplodedGraph
+
 The SecurityTaskExplodedGraph table contains the duty to privilege mappings that have been specified on the security duty AOT nodes.
 
 ### Fields
@@ -1452,6 +1485,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityTaskExplodedGraph Table](#securitytaskexplodedgraph)
 
 ## SecurityTaskPermission
+
 The SecurityTaskPermission table is obsolete.
 
 ### Fields
@@ -1488,6 +1522,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityTaskPermission Table](#securitytaskpermission)
 
 ## SecurityTaskPermissionOverride
+
 The SecurityTaskPermissionOverride table contains the list of permissions that have been specified on the security privilege AOT nodes.
 
 ### Fields
@@ -1525,6 +1560,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityTaskPermissionOverride Table](#securitytaskpermissionoverride)
 
 ## SecurityUserRole
+
 The SecurityUserRole table contains the user to role mappings.
 
 ### Fields
@@ -1567,6 +1603,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityUserRole Table](#securityuserrole)
 
 ## SecurityUserRoleCondition
+
 The SecurityUserRoleCondition table contains the list of companies that constrain a user to role mappings. If there are no entries for a particular user to role mapping then the user is granted the permissions of that role for all companies.
 
 ### Fields
@@ -1606,6 +1643,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SecurityUserRoleCondition Table](#securityuserrolecondition)
 
 ## SqlDescribe
+
 The SqlDescribe table is used to store the table and field metadata. The SqlDataDictionary::tablemetadata method populates this table by using a back end database query.
 
 ### Fields
@@ -1647,6 +1685,7 @@ The SqlDescribe table is used to store the table and field metadata. The SqlData
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SqlDescribe Table](#sqldescribe)
 
 ## SqlDictionary
+
 The SqlDictionary table describes the current state of the database with respect to the table and field metadata. The table also contains view and table dependency information. The database synchronization engine uses the SqlDictionary table to determine the actions that are required to synchronize the AOT with the database.
 
 ### Fields
@@ -1689,6 +1728,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SqlDictionary Table](#sqldictionary)
 
 ## SqlParameters
+
 The SqlParameters table stores database related information in the form of parameter and value pairs. This table is not used in Microsoft Dynamics Ax 2009.
 
 ### Fields
@@ -1718,6 +1758,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SqlParameters Table](#sqlparameters)
 
 ## SqlStatistics
+
 The SqlStatistics table stores related database statistics for the user. This table is not used in Microsoft Dynamics Ax 2009.
 
 ### Fields
@@ -1773,6 +1814,7 @@ The SqlStatistics table stores related database statistics for the user. This ta
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SqlStatistics Table](#sqlstatistics)
 
 ## SqlStorage
+
 The SqlStorage table contains information about table space and its Oracle attributes.
 
 ### Fields
@@ -1806,6 +1848,7 @@ The SqlStorage table contains information about table space and its Oracle attri
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SqlStorage Table](#sqlstorage)
 
 ## SqlSyncInfo
+
 The SqlSyncInfo table captures messages and DDL statements during the database synchronization process. Once the synchronization process is complete the information in the table is deleted.
 
 ### Fields
@@ -1839,6 +1882,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SqlSyncInfo Table](#sqlsyncinfo)
 
 ## Subquery
+
 The Subquery table is used by position based paging functionality.
 
 ### Fields
@@ -1866,6 +1910,7 @@ The Subquery table is used by position based paging functionality.
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [Subquery Table](#subquery)
 
 ## SysActiveTempTable
+
 The SysActiveTempTable table provides data about the temporary database tables that are currently created. The table is used by the framework to manage the lifetime of these tables.
 
 ### Fields
@@ -1896,6 +1941,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysActiveTempTable Table](#sysactivetemptable)
 
 ## SysBCProxyUserAccount
+
 The SysBCProxyUserAccount table stores the business connector proxy information that is entered through the SysBcAliasForm security form. This table always contains one record.
 
 ### Fields
@@ -1924,6 +1970,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysBCProxyUserAccount Table](#sysbcproxyuseraccount)
 
 ## SysBreakpointList
+
 The SysBreakpointList table contains a list of developers that have breakpoints in MorphX.
 
 ### Fields
@@ -1957,6 +2004,7 @@ The SysBreakpointList table contains a list of developers that have breakpoints 
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysBreakpointList Table](#sysbreakpointlist)
 
 ## SysBreakpoints
+
 The SysBreakpoints table contains a list of all the breakpoints in MorphX.
 
 ### Fields
@@ -1989,6 +2037,7 @@ The SysBreakpoints table contains a list of all the breakpoints in MorphX.
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysBreakpoints Table](#sysbreakpoints)
 
 ## SysCacheFlush
+
 The SysCacheFlush table contains data that is used for synchronization of caches across multiple AOS servers.
 
 ### Fields
@@ -2015,6 +2064,7 @@ The SysCacheFlush table contains data that is used for synchronization of caches
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysCacheFlush Table](#syscacheflush)
 
 ## SysClientAccessLog
+
 ### Fields
 
 | Field           | Type        | Extended Type   | Enumeration Type | Description                                                                                                               |
@@ -2049,6 +2099,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysClientAccessLog Table](#sysclientaccesslog)
 
 ## SysClientSessions
+
 The SysClientSessions contains the data for the client sessions that are currently active in the system.
 
 ### Fields
@@ -2101,6 +2152,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysClientSessions Table](#sysclientsessions)
 
 ## SysConfig
+
 The SysConfig table contains license and configuration information.
 
 ### Fields
@@ -2139,6 +2191,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysConfig Table](#sysconfig)
 
 ## SysEncryptionKey
+
 The SysEncryptionKey table stores the encryption key that is used to encrypt the EP query string and post the data parameters.
 
 ### Fields
@@ -2170,6 +2223,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysEncryptionKey Table](#sysencryptionkey)
 
 ## SysGlobalConfiguration
+
 The SysGlobalConfiguration table stores system level global setting that can be used to configure specific components.
 
 ### Fields
@@ -2199,6 +2253,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysGlobalConfiguration Table](#sysglobalconfiguration)
 
 ## SysInheritanceRelations
+
 The SysInheritanceRelations framework helper table for table inheritance. The table stores table inheritance hierarchy related information.
 
 ### Fields
@@ -2222,6 +2277,7 @@ The SysInheritanceRelations framework helper table for table inheritance. The ta
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysInheritanceRelations Table](#sysinheritancerelations)
 
 ## SysLastValue
+
 The SysLastValue table is storage for the usage data that is recorded as users navigate the system.
 
 ### Fields
@@ -2261,6 +2317,7 @@ The SysLastValue table is storage for the usage data that is recorded as users n
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysLastValue Table](#syslastvalue)
 
 ## SysModel
+
 The SysModel table contains information about installed models on the system.
 
 ### Fields
@@ -2291,6 +2348,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModel Table](#sysmodel)
 
 ## SysModelElement
+
 The SysModelElement table lists the ModelElements that the installation holds.
 
 ### Fields
@@ -2330,6 +2388,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElement Table](#sysmodelelement)
 
 ## SysModelElementData
+
 The SysModelElementData table provides the Layer specific data for any SysModelElement.
 
 ### Fields
@@ -2374,6 +2433,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementData Table](#sysmodelelementdata)
 
 ## SysModelElementDataOld
+
 The SysModelElementDataOld table provides the Layer specific data for any SysModelElementOld.
 
 ### Fields
@@ -2418,6 +2478,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementDataOld Table](#sysmodelelementdataold)
 
 ## SysModelElementLabel
+
 The SysModelElementLabel table contains the label text for a given language.
 
 ### Fields
@@ -2449,6 +2510,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementLabel Table](#sysmodelelementlabel)
 
 ## SysModelElementLabelOld
+
 The SysModelElementLabelOld table contains the label text for a given language.
 
 ### Fields
@@ -2479,6 +2541,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementLabelOld Table](#sysmodelelementlabelold)
 
 ## SysModelElementOld
+
 The SysModelElementOld table lists the ModelElements that the installation holds.
 
 ### Fields
@@ -2518,6 +2581,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementOld Table](#sysmodelelementold)
 
 ## SysModelElementSource
+
 The SysModelElementSource table contains the Source Text for all SysModelElements that have source.
 
 ### Fields
@@ -2552,6 +2616,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementSource Table](#sysmodelelementsource)
 
 ## SysModelElementSourceOld
+
 The SysModelElementSourceOld table contains the Source Text for all SysModelElementsOld that have source.
 
 ### Fields
@@ -2586,6 +2651,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementSourceOld Table](#sysmodelelementsourceold)
 
 ## SysModelElementType
+
 The SysModelElementType table specifies the possible SysModelElement types. Its Recid is backwards compatible with the UtilRecordType enum for the ‘old’ element types.
 
 ### Fields
@@ -2620,6 +2686,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementType Table](#sysmodelelementtype)
 
 ## SysModelElementTypeOld
+
 The SysModelElementTypeOld table specifies the possible SysModelElementOld types. Its Recid is backwards compatible with the UtilRecordType enum for the ‘old’ element types.
 
 ### Fields
@@ -2653,6 +2720,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelElementTypeOld Table](#sysmodelelementtypeold)
 
 ## SysModelLayer
+
 The SysModelLayer table lists the possible LayerId and Name. If Model data exists in a layer it reports the aggregated version number for that layer.
 
 ### Fields
@@ -2680,6 +2748,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelLayer Table](#sysmodellayer)
 
 ## SysModelLayerOld
+
 The SysModelLayerOld table lists the possible LayerId and Name. If Model data exists in a layer it reports the aggregated version number for that layer.
 
 ### Fields
@@ -2706,6 +2775,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelLayerOld Table](#sysmodellayerold)
 
 ## SysModelManifest
+
 The SysModelManifest table contains the manifest information about deployed models, such as Description, Publisher and Version of a model
 
 ### Fields
@@ -2757,6 +2827,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelManifest Table](#sysmodelmanifest)
 
 ## SysModelManifestCategory
+
 The SysModelManifestCategory table contains the category aspect of the manifest information for deployed models.
 
 ### Fields
@@ -2783,6 +2854,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelManifestCategory Table](#sysmodelmanifestcategory)
 
 ## SysModelManifestCategoryOld
+
 The SysModelManifestCategoryOld table contains the category aspect of the manifest information for deployed models.
 
 ### Fields
@@ -2808,6 +2880,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelManifestCategoryOld Table](#sysmodelmanifestcategoryold)
 
 ## SysModelManifestOld
+
 The SysModelManifestOld table contains the manifest information about deployed models, such as Description, Publisher and Version of a model.
 
 ### Fields
@@ -2859,6 +2932,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelManifestOld Table](#sysmodelmanifestold)
 
 ## SysModelOld
+
 The SysModelOld table contains information about installed models on the system.
 
 ### Fields
@@ -2889,6 +2963,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysModelOld Table](#sysmodelold)
 
 ## SysOccConfiguration
+
 The SysOccConfiguration table stores the global concurrency model setting and updates the conflict exception login policy.
 
 ### Fields
@@ -2918,6 +2993,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysOccConfiguration Table](#sysoccconfiguration)
 
 ## SysRecordLevelSecurity
+
 The SysRecordLevelSecurity table contains all the record level security restrictions that are configured by the system administrator. The restrictions are persisted on a per company, per group basis.
 
 ### Fields
@@ -2966,6 +3042,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysRecordLevelSecurity Table](#sysrecordlevelsecurity)
 
 ## SysServerSessions
+
 The SysServerSessions table is used to store information about the active AOS Servers in the system.
 
 ### Fields
@@ -3003,6 +3080,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysServerSessions Table](#sysserversessions)
 
 ## SysSetbasedHelper
+
 The SysSetbasedHelper framework helper table for table inheritance set-based operations.
 
 ### Fields
@@ -3025,6 +3103,7 @@ The SysSetbasedHelper framework helper table for table inheritance set-based ope
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SysSetbasedHelper Table](#syssetbasedhelper)
 
 ## SystemSequences
+
 The SystemSequences table holds the next available record ID block for each table.
 
 ### Fields
@@ -3063,6 +3142,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [SystemSequences Table](#systemsequences)
 
 ## TableCollectionList
+
 The TableCollectionList table stores the mapping between table collections and virtual companies.
 
 ### Fields
@@ -3100,6 +3180,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [TableCollectionList Table](#tablecollectionlist)
 
 ## TimeZonesList
+
 The TimeZonesList table contains the list of the time zones that are supported.
 
 ### Fields
@@ -3129,6 +3210,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [TimeZonesList Table](#timezoneslist)
 
 ## TimeZonesRulesData
+
 The TimeZonesRulesData table contains the GMT offsets and daylight saving time information for all time zones that are supported.
 
 ### Fields
@@ -3180,6 +3262,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [TimeZonesRulesData Table](#timezonesrulesdata)
 
 ## UserDataAreaFilter
+
 The UserDataAreaFilter table contains a list of selectable companies for a user. It is populated by invoking the populateSelectableCompanies method on the SecurityRights class.
 
 ### Fields
@@ -3214,6 +3297,7 @@ The UserDataAreaFilter table contains a list of selectable companies for a user.
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UserDataAreaFilter Table](#userdataareafilter)
 
 ## UserInfo
+
 The UserInfo table contains a list of users and their active directory and default information.
 
 ### Fields
@@ -3326,6 +3410,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UserInfo Table](#userinfo)
 
 ## UserInfoStartupModel
+
 The UserInfoStartupModel table holds the preferred startup model for each layer for each user.
 
 ### Fields
@@ -3366,6 +3451,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UserInfoStartupModel Table](#userinfostartupmodel)
 
 ## UtilElements
+
 The UtilElements table contains the application that is shown in the AOT.
 
 ### Fields
@@ -3406,6 +3492,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UtilElements Table](#utilelements)
 
 ## UtilElementsOld
+
 The UtilElementsOld table contains the application model stored in the application folder. It is used during the upgrade process.
 
 ### Fields
@@ -3442,6 +3529,7 @@ The UtilElementsOld table contains the application model stored in the applicati
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UtilElementsOld Table](#utilelementsold)
 
 ## UtilIdElements
+
 The UtilIdElements table contains the application model shown in the AOT.
 
 ### Fields
@@ -3483,6 +3571,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UtilIdElements Table](#utilidelements)
 
 ## UtilIdElementsOld
+
 The UtilIdElementsOld table contains the application model stored in the application folder. It is used during the upgrade process.
 
 ### Fields
@@ -3520,6 +3609,7 @@ The UtilIdElementsOld table contains the application model stored in the applica
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UtilIdElementsOld Table](#utilidelementsold)
 
 ## UtilModels
+
 The UtilModels table contains information about models that are installed on the system.
 
 ### Fields
@@ -3562,6 +3652,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [UtilModels Table](#utilmodels)
 
 ## VirtualDataAreaList
+
 The VirtualDataAreaList table stores the mapping between real companies and virtual companies.
 
 ### Fields
@@ -3605,6 +3696,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [VirtualDataAreaList Table](#virtualdataarealist)
 
 ## VSAssembly
+
 The VSAssembly table contains synchronization information that describes the last time an assembly that is stored under the Visual Studio Projects node in the AOT was deployed..
 
 ### Fields
@@ -3633,9 +3725,5 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 ### Inheritance Hierarchy
 
 [xRecord Class](/dotnet/api/dynamics.ax.application) [Common Table](#common) [VSAssembly Table](#vsassembly)
-
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
