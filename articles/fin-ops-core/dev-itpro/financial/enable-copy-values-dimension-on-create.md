@@ -52,11 +52,11 @@ If you have a custom entity-backed dimension or need to enable this feature for 
 
 The **Copy values to this dimension on each new DimensionName created** toggle on the dimension details form is activated by the `DimensionCanCopyValuesOnCreateAttribute` attribute. You must add this attribute to the `DimAttribute` view for your backing table.
 
-Open the `DimAttribute<TableName>` view in Visual Studio and add the following attribute to the view class declaration:
+Open the view in Visual Studio and add the following attribute to the view class declaration:
 
 ```xpp
 [DimensionCanCopyValuesOnCreateAttribute]
-public class DimAttribute<TableName> extends common
+public class <ViewName> extends common
 {
 }
 ```
@@ -85,34 +85,13 @@ Replace `<TableName>` with the name of your backing table, `<KeyField>` with the
 
 ### For a core product dimension (you don't own the table)
 
-If the backing table is part of the standard product and you can't directly modify it, use a post-event handler on the `insert` method and Chain of Command (CoC) on `DimensionEnabledType::canCopyValuesOnCreate()` to return `true` for your entity.
-
-**Post-event handler on insert:**
-
-```xpp
-[ExtensionOf(tableStr(<TableName>))]
-final class <TableName>_Extension
-{
-    public void insert()
-    {
-        next insert();
-
-        DimensionDefaultFacade::copyDimensionValueToDefaultDimensionField(
-            this,
-            fieldNum(<TableName>, <KeyField>),
-            this,
-            fieldNum(<TableName>, <DefaultDimensionForeignKey>));
-    }
-}
-
-```
+If the backing table is part of the standard product and you can't directly modify it, use a post-event handler on the `insert()` method, and then, implement chain of Command on the `DimensionEnabledType::canCopyValuesOnCreate()` method to return `true` for your entity.
 
 ## Step 3: Build and validate
 
 1. Build your project and synchronize the database.
-2. Clear the dimension caches by running `DimensionCache::clearAllScopes()` in a runnable class, or restart the server.
-3. Navigate to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
-4. Select the dimension that you configured and verify that the **Copy values to this dimension on each new DimensionName created** toggle is now enabled and can be turned on.
-5. Turn on the toggle, then create a new record of the backing entity type. Verify that the dimension value is automatically added to the default dimensions of the new record.
+2. Navigate to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
+3. Select the dimension that you configured and verify that the **Copy values to this dimension on each new DimensionName created** toggle is now enabled and can be turned on.
+4. Turn on the toggle, then create a new record of the backing entity type. Verify that the dimension value is automatically added to the default dimensions of the new record.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
