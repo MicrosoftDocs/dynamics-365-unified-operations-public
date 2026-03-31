@@ -52,11 +52,11 @@ If you have a custom entity-backed dimension or need to enable this feature for 
 
 The **Copy values to this dimension on each new DimensionName created** toggle on the dimension details form is activated by the `DimensionCanCopyValuesOnCreateAttribute` attribute. You must add this attribute to the `DimAttribute` view for your backing table.
 
-Open the `DimAttribute[YourTableName]` view in Visual Studio and add the following attribute to the view class declaration:
+Open the `DimAttribute<TableName>` view in Visual Studio and add the following attribute to the view class declaration:
 
 ```xpp
 [DimensionCanCopyValuesOnCreateAttribute]
-public class DimAttribute[YourTableName] extends common
+public class DimAttribute<TableName> extends common
 {
 }
 ```
@@ -75,13 +75,13 @@ public void insert()
     super();
     DimensionDefaultFacade::copyDimensionValueToDefaultDimensionField(
         this,
-        fieldNum(YourTableName, YourKeyField),
+        fieldNum(<TableName>, <KeyField>),
         this,
-        fieldNum(YourTableName, DefaultDimension));
+        fieldNum(<TableName>, <DefaultDimensionForeignKey>));
 }
 ```
 
-Replace `YourTableName` with the name of your backing table, `YourKeyField` with the field that contains the natural key value (for example, `AccountNum`), and `DefaultDimension` with the field that holds the default dimension reference.
+Replace `<TableName>` with the name of your backing table, `<KeyField>` with the field that contains the natural key value (for example, `ItemId`), and `<DefaultDimensionForeignKey>` with the field that holds the default dimension reference.
 
 ### For a core product dimension (you don't own the table)
 
@@ -90,38 +90,21 @@ If the backing table is part of the standard product and you can't directly modi
 **Post-event handler on insert:**
 
 ```xpp
-[PostHandlerFor(tableStr(YourTableName), methodStr(YourTableName, insert))]
-public static void YourTableName_Post_insert(XppPrePostArgs args)
+[ExtensionOf(tableStr(<TableName>))]
+final class <TableName>_Extension
 {
-    YourTableName record = args.getThis() as YourTableName;
-    DimensionDefaultFacade::copyDimensionValueToDefaultDimensionField(
-        record,
-        fieldNum(YourTableName, YourKeyField),
-        record,
-        fieldNum(YourTableName, DefaultDimension));
-}
-```
-
-**Chain of Command on canCopyValuesOnCreate:**
-
-```xpp
-[ExtensionOf(classStr(DimensionEnabledType))]
-final class DimensionEnabledType_Extension
-{
-    public boolean canCopyValuesOnCreate()
+    public void insert()
     {
-        boolean ret = next canCopyValuesOnCreate();
-        if (!ret)
-        {
-            DimensionAttribute dimensionAttribute = DimensionAttribute::find(this.parmDimensionAttributeId());
-            if (dimensionAttribute.BackingEntityType == tableNum(DimAttributeYourTableName))
-            {
-                ret = true;
-            }
-        }
-        return ret;
+        next insert();
+
+        DimensionDefaultFacade::copyDimensionValueToDefaultDimensionField(
+            this,
+            fieldNum(<TableName>, <KeyField>),
+            this,
+            fieldNum(<TableName>, <DefaultDimensionForeignKey>));
     }
 }
+
 ```
 
 ## Step 3: Build and validate
