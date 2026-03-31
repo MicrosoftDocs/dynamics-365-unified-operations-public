@@ -101,7 +101,10 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 
 ## Manage connection configurations
 
-The Warehouse Management mobile app (version 2.0.41.0 and later) lets you import connection settings as a managed configuration through an MDM solution. The same **ConnectionsJson** configuration key is shared across all platforms.
+The Warehouse Management mobile app lets you import connection settings as a managed configuration through an MDM solution. The same **ConnectionsJson** configuration key is shared across all platforms.
+
+> [!TIP]
+> For Android devices, MDM managed configuration is the recommended method for delivering connection settings in enterprise deployments. Due to Android's [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) restrictions (enforced starting with Android 11), external tools can no longer place a `connections.json` file in the app's private data folder. MDM managed configuration bypasses this limitation by delivering settings through app configuration policies rather than the file system.
 
 The following subsections provide examples that show how to set up Intune to provide managed configuration for each of the supported mobile platforms. Learn more in [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview).
 

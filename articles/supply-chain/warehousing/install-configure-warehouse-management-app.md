@@ -104,7 +104,21 @@ If a device is lost or compromised, you can revoke its authentication by followi
 
 ## Configure the application by importing connection settings
 
-To make it easier to maintain and deploy the application on many mobile devices, you can import the connection settings instead of manually entering them on each device. This section explains how to create and import the settings.
+To make it easier to maintain and deploy the application on many mobile devices, you can import the connection settings instead of manually entering them on each device. The following table summarizes the available methods and when to use each one.
+
+| Method | Best for | Platform support |
+|---|---|---|
+| **[MDM managed configuration](#connection-file-qr)** (`ConnectionsJson` key) | Enterprise deployments with an MDM provider. Connection settings are pushed through app configuration policies without touching the device file system. | Android, Windows, iOS |
+| **[QR code](#connection-file-qr)** | Small to medium deployments, or individual device setup. The app scans a QR code containing the connection JSON. | Android, Windows, iOS |
+| **[JSON file import](#connection-file-qr)** (`connections.json`) | Deployments where files can be placed on the device file system. | Windows, Android (limited — see note below) |
+| **[Manual input](#config-manually)** | Individual device setup or troubleshooting. | Android, Windows, iOS |
+
+> [!IMPORTANT]
+> **Android platform limitation:** Starting with Android 11 (API level 30), Google enforces [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) restrictions that prevent external tools (including MDM file push, file managers, and USB file transfer) from writing to an app's private data folder. This means the `connections.json` file can no longer be placed at the default path (`Android/data/com.Microsoft.WarehouseManagement/files`) by any tool other than the app itself. You can still use the app's **Add from file** option to browse and select a JSON file stored in an accessible location (such as the Downloads folder), but automatic file-based import at the default path is no longer possible on Android.
+>
+> For enterprise Android deployments, use either the **MDM managed configuration** method (which delivers connection settings through app configuration policies via providers such as Microsoft Intune or SOTI) or the **QR code** method. Learn more in [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
+
+This section explains how to create and import the settings.
 
 ### <a name="connection-file-qr"></a>Create a connection settings file or QR code
 
@@ -202,8 +216,8 @@ You can't remove a connection by using the connection settings file.
 As has been mentioned, the default file name is *connections.json*. The default file location depends on which type of device you're using:
 
 - **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
-- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
-- **iOS:** File sharing isn't yet supported.
+- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files` (see the important note about [Android scoped storage limitations](#configure-the-application-by-importing-connection-settings) earlier in this section)
+- **iOS:** File sharing isn't supported. Use QR codes or MDM managed configuration instead.
 
 Usually, the paths are automatically created after the first run of the app. However, you can manually create them if you must transfer the connection settings file to the device before installation.
 
