@@ -81,33 +81,33 @@ The code in a solution is stored as XML. The following instructions show you how
 1. In the list of classes, double-click **FMDataHelper** to open the code editor. Here, you can see the implementation of the **FMDataHelper** X++ class.
 1. Scroll down in the code to locate the **main** method. **Tip**: You can also go to the main method by using the method navigation menu located on the top right of the code editor window.
 
-    :::image type="content" source="./media/main_introvisualstudio.png" alt-text="Screenshot of the Source menu in the code editor.".:::
+    :::image type="content" source="./media/main_introvisualstudio.png" alt-text="Screenshot of the Source menu in the code editor.":::
 
     If you set this class as the startup object of the project, the **main** method is the execution entry point when you run or debug the project.
 
-    :::image type="content" source="./media/fmdatahelper_introvisualstudio.png" alt-text="Screenshot of the source code for FmDataHelper.".:::
+    :::image type="content" source="./media/fmdatahelper_introvisualstudio.png" alt-text="Screenshot of the source code for FmDataHelper.":::
 
 1. In Windows, open **File Explorer**, and then browse to the following folder: `C:\Packages\FleetManagement\FleetManagement\AxClass`
 1. Double-click the file named `FMDataHelper.xml`. If you're prompted to choose a program to open the file, select **More options**, and then select **Microsoft Edge**. Otherwise, open it in Notepad.
 
-    :::image type="content" source="./media/notepad_introvisualstudio.png" alt-text="Screenshot of the browser view of source code.".:::
+    :::image type="content" source="./media/notepad_introvisualstudio.png" alt-text="Screenshot of the browser view of source code.":::
 
     In this file, you can see XML code that contains the metadata that describes the **FMDataHelper** class. For example, you can see that the class named **FMDataHelper** contains a set of methods. You can see the code that implements the **intializeNumberSequence** method, which is contained by an XML element. The `<![CDATA]>` tag ensures that the contained text isn't interpreted or changed by the XML parser. This metadata contains the source code that you viewed in the Visual Studio code window. When you develop a solution, you always work with code that's stored as XML. This means that the code files are stored on your computer, not in the database. There's no active connection to an application object server (AOS) while you develop your application. To avoid data loss, maintain your project files in a source code control system, such as Visual Studio Team Foundation Server. Although it's helpful to know how and where the source code files are stored, don't modify the XML files directly. **Always use Visual Studio to modify the source code for your projects.**
 1. Close the window that contains the **FMDataHelper.xml** file.
 1. In **Solution Explorer**, double-click **Label Files** in the **FleetManagement Migrated** project to open the folder to view the labels for the project. Then, double-click the **FLM\_en-US** node to open the label editor.
 
-    :::image type="content" source="./media/flm_en-us_introvisualstudio.png" alt-text="Screenshot of the label files in Solution Explorer.".:::
+    :::image type="content" source="./media/flm_en-us_introvisualstudio.png" alt-text="Screenshot of the label files in Solution Explorer.":::
 
     In the label editor **Search** box, enter "rental." As you type, you see the list of labels for the Fleet Management sample that contain the word "rental." You can double-click in any cell that you can edit to change its contents, and then save the label file.
 
-    :::image type="content" source="./media/search-rental_introvisualstudio.png" alt-text="Screenshot of the list of labels filtered by rental.".:::
+    :::image type="content" source="./media/search-rental_introvisualstudio.png" alt-text="Screenshot of the list of labels filtered by rental.":::
 
 ## Build the FleetManagement migrated project
 
 1. In **Solution Explorer**, right-click **Fleet Management Migrated**, and then select **Rebuild**.
 1. In the **Output** window, in the **Show output from** list, select **Build**. Verify that the build completed without compilation errors. Wait for the build to complete. The final build message in the **Output** window says, "... build completed." The final build message in the status bar (at the bottom left corner of Visual Studio) says "Ready."
 
-    :::image type="content" source="./media/output_introvisualstudio.png" alt-text="Screenshot of the Build output window.".:::
+    :::image type="content" source="./media/output_introvisualstudio.png" alt-text="Screenshot of the Build output window.":::
 
 1. On the **View** menu, select **Error List** to see the list of best-practice warnings. The project deliberately includes some warnings to demonstrate this feature.
 1. Double-click any warning message to view the code or resource that caused the warning.

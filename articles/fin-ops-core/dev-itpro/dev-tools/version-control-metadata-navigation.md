@@ -223,8 +223,7 @@ This section demonstrates how you can perform metadata-based searches throughout
 1. In the **Metadata search** window, in the **Search** field, enter the following text to find all of the table insert methods in the Application Suite model that contain a cross-company query: `type:table,method name:insert code:"crosscompany" model:"Application Suite"`.
 1. Wait for the search to complete. It might take a while.
 
-   :::image type="content" source="./media/metadatasearchresults_usingdevotools.png" alt-text="Screenshot of metadata search results in the Metadata search window."
-:::
+   :::image type="content" source="./media/metadatasearchresults_usingdevotools.png" alt-text="Screenshot of metadata search results in the Metadata search window.":::
 
 1. Double-click a result in the list. The code editor opens and places the cursor at the line that matches your search criteria.
 1. Select several elements in the results list by holding down the Ctrl key for multiple selections, right-click, and then select **Add to new project**. When you add the elements, you can create a new solution and project containing the selected elements.

@@ -45,7 +45,7 @@ After you install the model, follow these steps to add the new model to source c
 
 ## Deployable packages from third parties
 
-Manually install deployable packages from third parties on a development VM. Add the installed artifacts to source control. By synchronizing their local workspace, other developers can receive the runtime package on their VMs without having to install the deployable package. The build process on the build VM ensures that the runtime packages for any extensions or other dependencies are available on the build VM. In Platform update 6 and later, these runtime packages are included in the final deployable package that is created from the build VM. For more information, see the [Deploying third-party code](#deploying-third-party-code) section later in this article.
+Manually install deployable packages from third parties on a development VM. Add the installed artifacts to source control. By synchronizing their local workspace, other developers can receive the runtime package on their VMs without having to install the deployable package. The build process on the build VM ensures that the runtime packages for any extensions or other dependencies are available on the build VM. In Platform update 6 and later, these runtime packages are included in the final deployable package that is created from the build VM. For more information, see the [Deploying third-party code](#deploy-third-party-code) section later in this article.
 
 For information about how to install a deployable package on a development VM, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
