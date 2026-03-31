@@ -49,6 +49,7 @@ Before you start, make sure these prerequisites are in place:
    - **Electronic invoicing documents statuses handlingZZZZZZZZZ**
    - **ZZZZZZZZZZZZZZZZZZZZZZZ**
    - **Export channels for electronic invoicing integration**
+   - **Execute update actions for submitted documents**
     
 ## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
@@ -401,7 +402,16 @@ Check the results at **Organization administration** \> **Periodic** \> **Electr
 
 ### Update statuses of submited e-invoices
 
-QQQQQQQQQQQQQQQQQQQQQ
+As a part of documents lifecycle, for successfully submitted invoices, there is a possibility that some responses from Buyers come later on. Those responses can affect the statuses of submitted document. To keep documents statuses up to date, run the procedure described below.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
+1. Select any document and run **Functions** \> **Execute update actions** from the menu.
+1. The procedure will be run for all documents in the **Pending update actions execution** submission status. Define additional filtering, if required, and then select **OK**.
+
+> [!NOTE]
+> You can also configure periodic running this procedure in background to avoid manual intervention.
+>
+> Terminate
 
 ### Configure documents statuses
 
