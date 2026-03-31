@@ -339,10 +339,51 @@ According to French requirements, each individual electronic invoice must contai
 - **#PMT#** *the text of the second note*
 - **#AAB#** *the text of the third note*
 
+### Configure mandatory notes for Sales and Free text invoices
+
 To automate the notes creation, the recommendation is to use the functionality of [Advanced notes management](../italy/emea-ita-exil-structured-notes.md).
 You need to configure at least 3 external header-level notes with the mandatory prefixes for the required documents, for all or specifically selected customers. Once configured, the notes will be automatically added to the applicable documents upon creation.
 
 :::image type="content" source="emea-fra-advanced-notes.jpg" alt-text="Screenshot of the advance notes configuration.":::
+
+### Configure mandatory notes for Project invoices
+
+For Project invoices, the functionality of Advanced notes is not applicable. Follow the steps described below to configure the mandatory notes for Project invoices.
+
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
+1. In the **Type** field, enter the required notes codes (at least, **#PMD#**, **#PMT#**, and **#AAB#**). 
+1. In the **Group desription** field, enter **FReInvNotes**. Enter the value exactly as shown.
+1. Select **Applicability** to add an applicable table.
+1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Legal entities**, **Customers**, and **Project invoices**.
+1. Save your changes and return to the **Electronic document property types** page.
+1. Save your changes, and close the page.
+
+### Enter the Legal Entity mandatory notes
+
+To enter the Legal Entity mandatory notes, follow these steps.
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities** and select a legal entity.
+1. Select **Electronic document properties** from the Action Pane.
+1. In the **Value** column, enter the required note text for each of the mandatory notes.
+
+### Enter the Customers mandatory notes
+
+To enter the Customers mandatory notes, follow these steps.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
+1. In the **Value** column, enter the required note text for each of the mandatory notes.
+
+### Enter the Invoices mandatory notes
+
+To enter the Invoices mandatory notes, follow these steps.
+
+1. Go to **Project management and accounting** \> **Project invoices** \> **Project invoices**.
+1. Select a specific project invoice in the list, and then, on the Action Pane, on the **Project invoice** tab, in the **Properties** group, select **Electronic document properties**.
+1. In the **Value** column, enter the required note text for each of the mandatory notes.
+
+> [!NOTE]
+> Invoice-level notes have higher priority than Customer-level notes and Legal Entity-level notes. Use it if you need to enter specific notes for a particular invoice.  Customer-level notes have higher priority than Legal Entity-level notes. Use it when you need to have similar notes for all invoices issued to a specific customer. Use Legal Entity-level notes for the same notes for all invoices issued from the Legal Entity for all customers.
 
 ## Set up units of measure
 
