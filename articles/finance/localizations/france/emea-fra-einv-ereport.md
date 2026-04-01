@@ -50,7 +50,7 @@ Before you start, make sure these prerequisites are in place:
    - **E-Invoice Document Response Submission**
    - **Export channels for electronic invoicing integration**
    - **Execute update actions for submitted documents**
-   - **Establishment and Registration ID governance on invoices** if your scenarios assume multiple Registration IDs for Sellers and/or Buyers, such as SIREN, SIRET, VAT ID and Branch ID (electronic address).
+   - **Establishment and Registration ID governance on invoices** (*if your scenarios assume multiple Registration IDs for Sellers and/or Buyers, such as SIREN, SIRET, VAT ID and Branch ID as an electronic address*).
     
 ## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
@@ -244,6 +244,10 @@ If configured, Branch IDs will be used as electronic addresses for documents rou
 1. Create a registration category.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **Branch ID**.
+
+### ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Invoice party applicability rules for registration categories](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md)
 
 ## Set up address structure
 
