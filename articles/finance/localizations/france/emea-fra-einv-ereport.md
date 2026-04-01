@@ -187,7 +187,7 @@ Electronic documents are preconfigured as a result of the globalization features
 :::image type="content" source="e-inv-fra-integr-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
 > [!NOTE]
-> If you use integration channels other than **InvStatus**, **EdiStatus** and **EdiImport**, do another configuration for the feature and related context configurations.
+> If you use integration channels names other than **InvStatus**, **EdiStatus** and **EdiImport**, or import source name other than **ResponseXml**, you need to do related changes in the involved context configurations and invoicing feature setips' applicability rules and valiables.
 
 ## Set up registration numbers
 
