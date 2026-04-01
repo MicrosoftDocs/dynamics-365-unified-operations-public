@@ -164,33 +164,30 @@ Electronic documents are preconfigured as a result of the globalization features
 ## Configure integration channels
 
 1. <a id="ExChannel"></a>On the **Integration channels** tab, in the **Channels** section, select **Add** to create a new channel.
-1. In the **Channel** field, enter **EdiExport**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
+1. In the **Channel** field, enter **EdiStatus**. Enter the value exactly as shown. The system uses it to submit outgoing electronic invoices.
 1. In the **Company** field, select the legal entity.
 1. In the **Document context** field, select the **Data channel context** mapping from the **Customer invoice context model** configuration.
 1. In the **Channel type** field, select **Export**.
 1. In the **Channels** section, select **Add** to create another channel.
+1. In the **Channel** field, enter **InvStatus**. Enter the value exactly as shown. The system uses it to update lifecycle statuses for previously submitted invoices.
+1. In the **Company** field, select the legal entity.
+1. In the **Document context** field, select the **Data channel context** mapping from the **Import response context** configuration.
+1. In the **Channel type** field, select **Export**.
+1. In the **Channels** section, select **Add** to create another channel. 
 1. In the **Channel** field, enter **EdiImport**. Enter the value exactly as shown. The system uses it to import incoming electronic invoices.
 1. In the **Company** field, select a required legal entity.
 1. In the **Document context** field, select the **Data channel context** mapping from the **Import invoice context model** configuration.
 1. In the **Channel type** field, select **Import**.
-1. In the **Status field name** field, enter **ReferenceId**. Enter the value exactly as shown. The system uses it to import incoming electronic invoices statuses.
-1. In the **Model mapping context for status** field, select the **Data channel context** mapping from the **Import invoice status query** configuration.
 1. In the **Import sources** section, select **Add** to create an import source.
 1. In the **Name** field, enter **ResponseXml**. Enter the value exactly as shown.
 1. In the **Data entity name** field, select the **Vendor invoice header** entity.
 1. In the **Model mapping** field, select the **Import vendor invoice** mapping from the **Vendor invoice import Edicom (FR)** configuration.
-1. Select **Add** to create anonther import source in the **second** line.
-1. In the **Name** field, enter **Status**. Enter the value exactly as shown.
-1. Toggle the checkbox in the **Optional** column.
-1. In the **Data entity name** field, select the **Electronic document receipt log** entity.
-1. In the **Model mapping** field, select the **Edicom life cycle status format (FR)** configuration.
-1. Toggle the checkbox in the **Import as business document status file** column.
 1. Select **Save**, and then close the page.
 
 :::image type="content" source="e-inv-fra-integr-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
 > [!NOTE]
-> If you use integration channels other than **EdiExport** and **EdiImport**, do another configuration for the feature and related context configurations.
+> If you use integration channels other than **InvStatus**, **EdiStatus** and **EdiImport**, do another configuration for the feature and related context configurations.
 
 ## Set up registration numbers
 
