@@ -127,12 +127,12 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 Electronic documents are preconfigured as a result of the globalization features deployment to the service, if **Activate application setup** option was enabled during the deployment. This chapter is provided for information purpose mainly, or if you decide to ammend the standard system setup. If no amendment required, you can skip this chapter and go to the **Configure integration channels** chapter.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the following tables.
+1. On the **Electronic document** tab, add records for the following tables and views.
    - **Customer Invoice journal**
    - **Project invoice**
    - **Customer invoice response**
    - **Pending vendor invoice response**
-1. For each table name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. For each table or view name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
 > [!NOTE]
 > To minimize the risk of accidental massive submissions, the system implements forcible default filtering by documents dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for documents processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
@@ -143,14 +143,17 @@ Electronic documents are preconfigured as a result of the globalization features
 1. In the **Submission status** column, select the **Completed** value.
 1. In the **Data entity name** column, select the **Electronic document submission log** entity.
 1. In the **Model mapping** column, select the **Edicom life cycle status format (FR)** configuration.
+1. Repeat steps 2 till 6 for the following values in the **Submission status** column.
+   - **Failed**
+   - **Pending**
+   - **Pending update actions execution**   
 1. Select **New** to create a new response type.
 1. In the **Response types** column, enter **ValidationStatus**. Enter the value exactly as shown.
 1. In the **Submission status** column, select the **Completed** value.
 1. In the **Data entity name** column, select the **Electronic document submission log** entity.
 1. In the **Model mapping** column, select the **Edicom Response Processing (FR)** configuration and the **Invoice status** mapping name.
-1. Create 3 more pairs of response types with the following values in the **Submission status** column.
+1. Repeat steps 8 till 12 for the following values in the **Submission status** column.
    - **Failed**
-   - **Pending**
    - **Pending update actions execution**   
 
 :::image type="content" source="e-inv-fra-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
