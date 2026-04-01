@@ -31,7 +31,7 @@ Before you print the general ledger report, the following prerequisites must be 
 | Format  | :::no-loc text="General Ledger LATAM":::                         |
 
 > [!IMPORTANT]
-> For Colombia and Peru, specific formats must be imported.
+> For Colombia and Peru, specific formats must be also imported.
 > | Country |                    Format name                    | Link MSFT Learn |
 > |:-------:|:-------------------------------------------------:|:----------:|
 > | Colombia   | :::no-loc text="General Ledger CO":::  |[Set up and generate a printed general ledger report for Colombia]() |
