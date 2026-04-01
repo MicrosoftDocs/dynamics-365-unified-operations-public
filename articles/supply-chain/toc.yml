@@ -2453,22 +2453,40 @@
           href: procurement/tasks/create-project-purchase-order.md
         - name: Create a repeat purchase order
           href: procurement/tasks/create-repeat-purchase-order.md
-      - name: Supplier Communications Agent (production ready preview)
+      - name: Procurement Agent
         items:
-        - name: Supplier Communications Agent overview
-          href: procurement/supplier-com-agent-overview.md
-        - name: Set up and configure the Supplier Communications Agent
-          href: procurement/supplier-com-agent-setup.md
-        - name: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
-          href: procurement/supplier-com-agent-setup-wizard.md
-        - name: Solve common problems when setting up the Supplier Communications Agent
-          href: procurement/supplier-com-agent-setup-faq.md
-        - name: Test the Supplier Communications Agent
-          href: procurement/supplier-com-agent-testing.md
-        - name: Follow up on purchase orders using the Supplier Communications Agent
-          href: procurement/supplier-com-agent-follow-up.md
-        - name: Review and apply purchase order changes received in vendor emails
-          href: procurement/supplier-com-agent-apply-email-changes.md
+        - name: Procurement Agent overview
+          href: procurement/procurement-agent-overview.md
+        - name: Set up the Procurement Agent
+          href: procurement/procurement-agent-setup.md
+        - name: Impact analysis
+          items:
+          - name: Impact analysis overview
+            href: procurement/procurement-agent-impact-analysis-overview.md
+          - name: How impact analysis works
+            href: procurement/procurement-agent-impact-analysis-howitworks.md
+          - name: Set up, configure, and test impact analysis
+            href: procurement/procurement-agent-impact-analysis-setup.md
+          - name: Review impact of purchase order changes from vendors
+            href: procurement/procurement-agent-impact-analysis-review-changes.md
+          - name: Simulate if purchase order changes have impact
+            href: procurement/procurement-agent-impact-analysis-simulation.md
+        - name: Supplier communications (production ready preview)
+          items:
+          - name: Supplier communications overview
+            href: procurement/supplier-com-agent-overview.md
+          - name: Set up and configure the supplier communications
+            href: procurement/supplier-com-agent-setup.md
+          - name: Use the agent deployment wizard to set up the supplier communications (preview)
+            href: procurement/supplier-com-agent-setup-wizard.md
+          - name: Solve common problems when setting up the supplier communications
+            href: procurement/supplier-com-agent-setup-faq.md
+          - name: Test the supplier communications
+            href: procurement/supplier-com-agent-testing.md
+          - name: Follow up on purchase orders using the supplier communications
+            href: procurement/supplier-com-agent-follow-up.md
+          - name: Review and apply purchase order changes received in vendor emails
+            href: procurement/supplier-com-agent-apply-email-changes.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements
