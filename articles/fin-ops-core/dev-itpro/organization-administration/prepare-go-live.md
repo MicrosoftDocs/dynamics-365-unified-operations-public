@@ -92,13 +92,16 @@ For projects that opt out of the AI review, the familiar manual review process f
 > [!NOTE]
 > If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project using following steps in the portal to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect can work with you on the Go-Live review and guides you on the process to follow.
 
-#### Self-service create/join the project in the Dynamics 365 Implementation Portal
+#### Self-service Create/Join the project.
 
 Submitting the Go-live readiness review can be performed by partners and customer in the Dynamics 365 Implementation portal without involving Microsoft. The Onboarding Wizard in the Implementation portal has simplified the steps to create the project, add the admin and users, and submitting the Go-Live review for self-service.
 
 1. Create the project in Implementation portal. For more information about creating and joining the project, see [Create or join a project in the Implementation Portal](/dynamics365/guidance/implementation-portal/onboard-project).
 1. Ensure that the project admin on the project is from the **customer** organization. This user from the customer organization can then add more users and serve as the key participant in the Go-live readiness review. For more information about adding users, see [Admin](/dynamics365/guidance/implementation-portal/manage-projects#admin) section.
-1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://implementationportal.dynamics.com/). All users who have registered on portal can access this article. 
+
+#### Initiate the review
+1. Once the project is created, the project team can create and perform the Go-live readiness review in the portal using the guidance in the [Portal Help article](https://implementationportal.dynamics.com/). All users who have registered on portal can access this article.
+2. Read the pre-requisites and proceed to the next step to add the Customer Team members, Key Stakeholders to the review. The customer stakeholders must belong to the same tenant linked to the project.
 
 > [!NOTE]
 > If you encounter any issue with the portal, contact the portal Support team by selecting **Contact us** in the upper-right corner of the portal or sending an email to the [Support team](mailto:ftd365ip-support@microsoft.com). In the email, specify the ID of your project in Lifecycle Services, and provide details that describe the issue.
@@ -107,9 +110,12 @@ Submitting the Go-live readiness review can be performed by partners and custome
 
 - The project team should provide answers to all questions in the review. The review process in the portal supports multi-user scenarios. Multiple team members can provide details for the go-live review at the same time.
 - When answers are provided to all the questions in the Go-live Readiness Review, submit the review to Microsoft by selecting **Submit for review**.
-- If all the prerequisites are met, you can choose the key review participants and submit the review.
+- If all the prerequisites are met, you can choose the key review participants and submit the review. The key review participant must be from the Customer Organization and their login must belong to the same tenant linked to the project.
   - In this dialog box, there's an option to opt out of the AI review. If you choose this option, a manual review process follows, and the corresponding SLA (3 days) applies.
   - If you don't choose to opt out, the autonomous AI review process starts so that that the review completes on the same day.
+
+ > [!NOTE]
+> The Key review participant must belong to the same tenant linked to the Project. Only then they will be able to see the "Resolve/Mitigate all risks" button in the Portal if AI review process is opted.
 
 ### After the review is submitted in the portal
 
@@ -121,7 +127,7 @@ Submitting the Go-live readiness review can be performed by partners and custome
 #### Automated review process (not opted-out of AI review)
 - An AI system conducts the review. When the review completes, users who are selected as **Review participants** in the portal receive an email that provides updates about the review. The review completes within a few minutes after you submit the project for review.
 - The stakeholders can use the link in the email to access the Implementation Portal where they can review any potential risks, best practices, and recommendations for a successful go-live of the project. It's highly recommended to take corrective action on all the risks/issues for a successful go-live.
-- Only the people who are added to the review as key participants get a button with the label **Resolve/Mitigate all risks** in the Implementation Portal. If they choose that button, they confirm the mitigation of the relevant risks.
+- Only the people who are added to the review as key participants (belonging to the same tenant) get a button with the label **Resolve/Mitigate all risks** in the Implementation Portal. If they choose that button, they confirm the mitigation of the relevant risks.
 - When all critical risks are mitigated/accepted by the stakeholder in the Implementation Portal, the review is marked as completed, and the production environment slot in the Lifecycle Services project becomes available 15 minutes. A person from the organization or the implementation partner can then choose the **Configure** button in Lifecycle Services to configure the production environment.
 
 ## Production environment deployment
@@ -141,6 +147,22 @@ Production deployment takes approximately 30 minutes. When deployment is complet
 The production environment is sized based on the number of licenses that are allocated to the Lifecycle Services project and the transaction volumes in the [Subscription estimator](../lifecycle-services/subscription-estimator.md).
 
 After production is deployed, the project team can apply the deployable package by following the instructions in [Promote an update to production environments](../deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments) and then migrate the data. For data migration, we recommend that you prepare and validate data in a nonproduction environment and then [copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
+
+# FAQ
+### Who can create the project in the Portal?
+The customer user or Partner users (on behalf of the customer) can create the project in the Portal. Please ensure to give the right tenant ID to be linked to the project.
+
+### I am facing issues/error while creating the project.
+Please send an email with the details and screenshot of the error to [Support team](mailto:ftd365ip-support@microsoft.com). 
+
+### Why am I not able to submit the review?
+If you have answered all the questions, for the review to be submitted, atleast one key customer stakeholder (belonging to the same tenant linked to the project) should be added, the Subscription estimator must be "Active" in the Lifecycle Services Project and the LCS Phase should be set to "Deploy" (or ahead). Unless these conditions are met, the review cannot be submitted. Please update these in the Lifecycle Services project and retry after 15 minutes.
+
+### I am a customer and I have been added as a Key Stakeholder in the project review. I received the email to sign-off on risks but I don't see the "Resolve/Mitigate all risks" button in the Portal.
+The button is only visible for users who belong to the same domain as that of the tenant linked to the project. We validate the domain name (E.g., @contoso.com) and compare it with the tenant linked to the project. If they do not match, the button will not be visible. If you identify the mismatch post submission of review, please reach d365fogl@microsoft.com with the details to get it updated.
+
+### I have resolved the risks. But production "Configure" button has not been enabled in LCS.
+It might take ~15 minutes for the button to be enabled. If the button stays disabled even after 15 mins, please send an email to d365fogl@microsoft.com for assistance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
