@@ -90,7 +90,7 @@ After you complete all the configuration steps described in the previous chapter
 
 1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the latest versions of the following globalization features as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
    - **French electronic invoice (FR)**
-   - **French electronic invoice response (FR) ZZZZZZZZZZZ**
+   - **French electronic invoice status (FR)**
   
 1. All the required Electronic Reporting configurations will be automatically imported as a result of the globalization features import. You can review imported Electronic Reporting configurations in the **Electronic reporting** workspace, on the **Reporting configurations** tile. The full list of the required Electronic Reporting configurations can be found in the **[List of Electronic Reporting configurations](#ERconfigs)** section of the **Appendix** chapter.
 > [!NOTE]
@@ -101,7 +101,7 @@ After you complete all the configuration steps described in the previous chapter
     
 ## Configure the electronic invoicing features
 
-The **French electronic invoice (FR) ZZZZZZZ** and **ZZZZZZZZZZZZZZZZZZZZZZZ** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
+The **French electronic invoice (FR)** and **French electronic invoice status (FR)** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
 
 Review and update the **French electronic invoice (FR)** feature configuration:
 
@@ -120,7 +120,7 @@ Review and update the **French electronic invoice (FR)** feature configuration:
    > [!NOTE]
    > While deploying the feature, toggle the **Activate application setup** checkbox in the **APPLICATION** section. In this case, the system will automatically pre-configure the significant part of the **Electronic document parameters** in Finance. You can review and change the preconfigured parameters, as described in the next chapter.
 
-1. Repeat steps 2 till 5 for the **ZZZZZZZZZZZZZZZZZZZZZZZ** feature.
+1. Repeat steps 2 till 5 for the **French electronic invoice status (FR)** feature.
 
 ## Configure electronic document parameters
 
@@ -130,7 +130,8 @@ Electronic documents are preconfigured as a result of the globalization features
 1. On the **Electronic document** tab, add records for the following tables.
    - **Customer Invoice journal**
    - **Project invoice**
-   - **ZZZZZZZZZZZZZZ**
+   - **Customer invoice response**
+   - **Pending vendor invoice response**
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
 > [!NOTE]
