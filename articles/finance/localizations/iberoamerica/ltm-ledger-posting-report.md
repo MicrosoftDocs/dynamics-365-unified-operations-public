@@ -23,13 +23,18 @@ Before you can print a **Ledger Posting** report, the following prerequisites mu
 
 - The legal entity must have an address in a country/region that's within the LATAM localization.
 - You must enable the country/region-specific LATAM feature and the general feature.
-- The following Electronic reporting (ER) configurations must be imported:
+- Download the specific report configurations from the Dataverse configuration repository. These formats are applicable to all LATAM countries, except Bolivia.
 
-  - Ledger accounting reports
-  - Ledger Accounting LATAM
-  - Ledger posting
+| Element |                    Format name                    |
+|:-------:|:-------------------------------------------------:|
+| Model   | :::no-loc text="Ledger Accounting LATAM":::                               |
+| Format  | :::no-loc text="Ledger Posting LATAM":::                         |
 
-    For more information about ER configurations, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+> [!IMPORTANT]
+> For Bolivia, :::no-loc text="Ledger Posting Bolivia"::: must be imported instead.
+
+Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 - You must create a new SSRS Reports/Services reference and configure it in the following way:
 
