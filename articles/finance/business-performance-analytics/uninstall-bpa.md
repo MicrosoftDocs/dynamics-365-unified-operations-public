@@ -30,7 +30,7 @@ If you uninstall and then reinstall Business performance analytics, custom repor
 
 ## Data cleanup before uninstall
 
-When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. These residual elements aren't automatically deleted and can persist unless you explicitly remove them. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
+When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. The uninstallation process doesn't automatically delete these residual elements. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 
 To perform data cleanup before uninstallation:
 
@@ -279,24 +279,24 @@ You can manually uninstall Business performance analytics through the Power Plat
 
 1. Business performance analytics anchor solution
 <<<<<<< yvishwa-bpa-docs
-2. Business performance analytics MCP
-3. Business performance analytics solution
-4. Business performance analytics reports
-5. Business performance analytics plugins solution
-6. Business performance analytics permissions
-7. Business performance analytics tables transformation job flows
-8. Business performance analytics tables
-9. Business performance analytics controls
-10. Business performance analytics tables anchor solution
-11. Business performance analytics tables user roles
-12. Business performance analytics analytical tables
-13. Business performance analytics tables data processing configuration
-14. Business performance analytics tables data lake synchronization
-15. Business performance analytics tables virtual entities
-16. Business performance analytics tables managed data lake
-17. Business performance analytics pipeline plugins solution
-18. Business performance analytics tables security
-19. Business performance analytics configs
+1. Business performance analytics MCP
+1. Business performance analytics solution
+1. Business performance analytics reports
+1. Business performance analytics plugins solution
+1. Business performance analytics permissions
+1. Business performance analytics tables transformation job flows
+1. Business performance analytics tables
+1. Business performance analytics controls
+1. Business performance analytics tables anchor solution
+1. Business performance analytics tables user roles
+1. Business performance analytics analytical tables
+1. Business performance analytics tables data processing configuration
+1. Business performance analytics tables data lake synchronization
+1. Business performance analytics tables virtual entities
+1. Business performance analytics tables managed data lake
+1. Business performance analytics pipeline plugins solution
+1. Business performance analytics tables security
+1. Business performance analytics configs
 =======
 1. Business performance analytics solution
 1. Business performance analytics reports
@@ -319,6 +319,7 @@ You can manually uninstall Business performance analytics through the Power Plat
 1. Business performance analytics pipeline plugins solution
 1. Business performance analytics tables security
 1. Business performance analytics config
+
 >>>>>>> main
 
 To delete each of the preceding solutions, follow these steps:
