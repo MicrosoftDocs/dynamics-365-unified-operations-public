@@ -23,7 +23,7 @@ The organization selection module is a special container for listing all the org
 
 The following illustration shows an example of an organization selection module.
 
-:::image type="content" source="./media/Org-select-sample.png" alt-text="Screenshot of an organization selection module that lists three Organizations.":::
+:::image type="content" source="./media/organization-select-sample.png" alt-text="Screenshot of an organization selection module that lists three Organizations.":::
 
 ## Add an Organization selection module to your site
 
@@ -44,7 +44,7 @@ First, create the organization selection page.
 1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
 1. Under **Organization selection**, select **Main slot**, select the ellipsis (**...**), and then select **Add module**.
 
-    :::image type="content" source="./media/Author-web-page-Org-select-1.png" alt-text="Screenshot of adding a module to the Main slot under organization selection.":::
+    :::image type="content" source="./media/author-web-page-organization-select-1.png" alt-text="Screenshot of adding a module to the Main slot under organization selection.":::
 
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. Select the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
@@ -62,7 +62,7 @@ Next, connect the organization selection page to the appropriate route in order 
 
 1. Select **Save and Publish** at the top of the page.
 
-    :::image type="content" source="./media/Ext-routes-Org-select-1.png" alt-text="Screenshot of configuring the Organization Selection route in the extensions page of Site builder.":::
+    :::image type="content" source="./media/extension-routes-organization-select-1.png" alt-text="Screenshot of configuring the Organization Selection route in the extensions page of Site builder.":::
 
 These settings will enable the user interface changes tied to the B2B multioutlet feature in the header of the site to link to an organization selection page for multioutlet users.
 
