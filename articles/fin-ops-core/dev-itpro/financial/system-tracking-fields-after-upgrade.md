@@ -20,7 +20,7 @@ This article describes the system tracking fields that are enabled on tables acr
 
 ## Overview
 
-Various tables across the application have system tracking fields enabled on them. These fields automatically record who created or last modified a record, and when. The fields include:
+Various tables across the application have system tracking fields enabled on them. These fields automatically record who created or last modified a record. The fields include:
 
 - **CreatedBy** – The user who created the record.
 - **CreatedDateTime** – The date and time when the record was created.
