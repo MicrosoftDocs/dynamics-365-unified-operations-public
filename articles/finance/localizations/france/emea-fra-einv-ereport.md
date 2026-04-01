@@ -364,6 +364,8 @@ For Project invoices, the functionality of Advanced notes is not applicable. Fol
 1. Save your changes and return to the **Electronic document property types** page.
 1. Save your changes, and close the page.
 
+:::image type="content" source="e-inv-fra-properties.jpg" alt-text="Screenshot of the properties types configuration.":::
+
 #### Enter the Legal Entity mandatory notes
 
 To enter the Legal Entity mandatory notes, follow these steps.
@@ -390,8 +392,6 @@ To enter the Invoices mandatory notes, follow these steps.
 
 > [!NOTE]
 > Invoice-level notes have higher priority than Customer-level notes and Legal Entity-level notes. Use it if you need to enter specific notes for a particular invoice.  Customer-level notes have higher priority than Legal Entity-level notes. Use it when you need to have similar notes for all invoices issued to a specific customer. Use Legal Entity-level notes for the same notes for all invoices issued from the Legal Entity for all customers.
-
-:::image type="content" source="e-inv-fra-properties.jpg" alt-text="Screenshot of the properties types configuration.":::
 
 ## Set up units of measure
 
