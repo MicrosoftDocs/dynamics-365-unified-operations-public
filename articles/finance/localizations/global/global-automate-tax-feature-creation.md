@@ -1,6 +1,6 @@
 ---
 title: Automate tax feature creation based on tax master data (preview)
-description: Learn how to use the Tax Data Migration tool to automatically create a Tax Calculation feature based on existing core tax master data in Microsoft Dynamics 365 Finance.
+description: Learn how to use the Tax Data Migration functionality to automatically create a Tax Calculation feature based on existing core tax master data in Microsoft Dynamics 365 Finance.
 author: epodkolz
 ms.author: epodkolz
 ms.date: 03/31/2026
@@ -19,7 +19,7 @@ This article explains how to use the functionality to automatically create a Tax
 This feature reduces time and effort for businesses by simplifying the transition from core tax functionality to the advanced [Tax Calculation](global-tax-calcuation-service-overview.md) functionality. An automated tax feature creation process enables customers to adopt and realize the benefits of Tax Calculation faster and with less manual work. It reads existing core tax master data in the legal entity and automatically creates the required records in the Tax feature setup, reusing existing tax codes, sales tax groups, and item sales tax groups. This approach minimizes setup complexity, preserves current configurations, and ensures a smoother transition to the advanced Tax Calculation experience.
 
 > [!NOTE]
-> This functionality is supported globally, except for Brazil and India. If the legal entity is in Brazil or India, the **Tax Data Migration** button is not available, and a message informs you that the functionality is not supported in those countries/regions.
+> This functionality is supported globally, except for Brazil and India.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -38,20 +38,16 @@ Before you begin, the following prerequisites must be met:
 1. Navigate to **Globalization Studio** \> **Tax Calculation**.
 2. In the header, select the **Tax Data Migration (preview)** button.
 
-The tool reads the existing tax master data and automatically creates the necessary records in the Tax feature setup to ensure a complete and accurate data transfer. The tax feature is generated based on the existing tax codes, sales tax groups, and item sales tax groups of the current legal entity.
-
 > [!NOTE]
-> Although Globalization Studio settings are legal entity agnostic, this tool works only for the currently selected legal entity. You must switch to the correct legal entity before starting the process.
-
+> Although Globalization Studio settings are legal entity agnostic, this functionality works only for the currently selected legal entity. You must switch to the correct legal entity before starting the process.
 
 After the process is completed, the system creates the tax feature version in a **Completed** state. The following message is displayed: "The tax feature 'xxx' has been successfully created. You can review the setup in the feature version using the View button. If updates are needed, please create a new version to edit the tax feature."
 
 To review the generated setup, use the **View** button. If changes are needed, create a new version of the feature to make edits.
 
+## Tax feature creation behavior overview
 
-## Feature creation behavior
-
-During the tax feature creation process, the tool maps existing core tax settings from the legal entity into the Tax Calculation feature setup. The following sections describe key behaviors.
+During the tax feature creation process, the function maps existing core tax settings from the legal entity into the Tax Calculation feature setup. The following sections describe key behaviors.
 
 ### Tax group level settings 
 
@@ -60,8 +56,8 @@ In core tax, settings such as cash discount, use tax, reverse charge, and exempt
 #### Tax code variant handling
 When a tax code is assigned to multiple tax groups with different parameters, the system creates additional tax code variants during the tax feature creation process. For example:
 
-- In Tax Group **Test2**, tax code **Test10** has **Use tax** enabled.
 - In Tax Group **Test1**, the same tax code **Test10** is marked as **Exempt**.
+- In Tax Group **Test2**, tax code **Test10** has **Use tax** enabled.
 
 The system creates multiple versions of the tax code (for example, Test10, Test10\_1, Test10\_2, and so on). Each version is assigned to the appropriate tax group with the corresponding parameters.
 
@@ -69,10 +65,9 @@ If a tax code name is already at the maximum length (10 characters) and a varian
 
 #### Reverse sales tax on cash discount
 
-The default tax jurisdiction parameters are set based on the general ledger (GL) parameter values. If the **Reverse sales tax on cash discount** value in a sales tax group differs from the GL parameter, the system displays the following warning: "The default Reverse tax on cash discount parameter differs from the one set in the group(s): 'xxx', 'xxx'. Once the process completes, please manually create rules to ensure proper configuration."
+The default tax jurisdiction parameters are set based on the General ledger parameter values. If the **Reverse sales tax on cash discount** value in a sales tax group differs from the General ledger parameter, the system displays the following warning: "The default Reverse tax on cash discount parameter differs from the one set in the group(s): 'xxx', 'xxx'. Once the process completes, please manually create rules to ensure proper configuration."
 
 After the tax feature is created, you must manually maintain the tax jurisdiction parameters to ensure the sales tax group-level parameter scenario works correctly.
-
 
 ### Tax group character limit
 
@@ -83,7 +78,7 @@ If a tax group or item tax group contains tax codes whose total length exceeds 1
 
 ### Data mapping during tax feature creation
 
-During the tax feature creation process, the function maps existing core tax settings to the Tax Calculation feature setup. The following tables describe the mapping.
+The following tables describe the mapping that applies during the tax feature creation process.
 
 #### General ledger parameters to Tax jurisdiction parameters
 
@@ -109,8 +104,6 @@ During the tax feature creation process, the function maps existing core tax set
 
 In the Tax Calculation feature, the rounding precision behaves similarly to the configuration on the **Tax Configuration** page. However, the **Rounding Method** is initially set to **Ordinary**, which functions equivalently to **Normal** rounding.
 
-
-
 ## After the tax feature is created
 
 After the process is completed, review the following items:
@@ -119,7 +112,7 @@ After the process is completed, review the following items:
 2. **Duplicate tax codes** – Review any tax codes that were created with suffixes (\_1, \_2, and so on). Check the tax group assignments in the feature parameters to confirm they are correct.
 3. **Tax code settings** – Verify that tax code origins, rates, and other settings were created correctly.
 4. **Rounding method** – The default rounding method is set to **Ordinary**. Adjust if your business requires a different rounding method.
-5. **No incremental updates** – The tool always creates a tax feature based on the full current tax master data. If you modify tax master data after the tax feature is created (for example, add new tax codes, update tax groups, or change tax code settings), those changes are not automatically reflected in the previously created tax feature. To incorporate the changes, you can either create a new version of the tax feature and update the setup manually, or run the **Tax Data Migration** tool again to recreate the tax feature from scratch based on the current master data.
+5. **No incremental updates** – The process always creates a tax feature based on the full current tax master data. If you modify tax master data after the tax feature is created (for example, add new tax codes, update tax groups, or change tax code settings), those changes are not automatically reflected in the previously created tax feature. To incorporate the changes, you can either create a new version of the tax feature and update the setup manually, or run the **Tax Data Migration** process again to recreate the tax feature from scratch based on the current master data.
 
 After you review and, if needed, update the created tax feature, you can assign it to the legal entity and start using it for tax calculation. To do so, follow the steps in [Set up Tax Calculation in Globalization Studio workspace](/dynamics365/finance/localizations/global/global-get-started-with-tax-calculation-service#set-up-tax-calculation-in-globalization-studio-workspace).
 
