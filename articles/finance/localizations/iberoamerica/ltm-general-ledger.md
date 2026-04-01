@@ -32,10 +32,10 @@ Before you print the general ledger report, the following prerequisites must be 
 
 > [!IMPORTANT]
 > For Colombia and Peru, specific formats must be imported.
-> | Country |                    Format name                    |
-> |:-------:|:-------------------------------------------------:|
-> | Colombia   | :::no-loc text="General Ledger CO":::                               |
-> | Peru  | :::no-loc text="General Ledger PE":::                         |
+> | Country |                    Format name                    | Link MSFT Learn |
+> |:-------:|:-------------------------------------------------:|:----------:|
+> | Colombia   | :::no-loc text="General Ledger CO":::  |[Set up and generate a printed general ledger report for Colombia]() |
+> | Peru  | :::no-loc text="General Ledger PE"::: |[Set up and generate a printed general ledger report for Peru]() |
 
 Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 - Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
