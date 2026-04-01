@@ -4,7 +4,7 @@ description: Learn about the math run-time functions, including syntax strings, 
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 06/20/2017
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the math run-time functions.
+This article describes the math runtime functions.
 
 These functions perform mathematical calculations.
 
@@ -24,8 +24,8 @@ These functions perform mathematical calculations.
 
 Retrieves the absolute value of a real number. Examples:
 
--   **abs(-100.0)** returns the value **100.0**.
--   **abs(30.56)** returns the value **30.56**.
+- **abs(-100.0)** returns the value **100.0**.
+- **abs(30.56)** returns the value **30.56**.
 
 ### Syntax
 
@@ -62,10 +62,11 @@ static void absExample(Args _args)
 ```
 
 ## acos
+
 Retrieves the arc cosine of a real number.
 
 > [!NOTE]
-> Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."
+> If you provide argument values that are outside the -1 to 1 range, the function returns the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -99,10 +100,11 @@ static void acosExample(Args _args)
 ```
 
 ## asin
-Retrieves the arc sine of a real number.
+
+Retrieves the arcsine of a real number.
 
 > [!NOTE]
-> Argument values that are outside the -1 to 1 range cause the following run-time error: "Argument for trigonometric function out of range."
+> If you provide argument values that are outside the -1 to 1 range, the function returns the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -114,18 +116,19 @@ real asin(real arg)
 
 | Parameter | Description                               |
 |-----------|-------------------------------------------|
-| arg       | The number to calculate the arc sine for. |
+| arg       | The number to calculate the arcsine for. |
 
 ### Return value
 
-The arc sine of the specified number.
+The arcsine of the specified number.
 
 ### Remarks
 
 **aSin(0.36)** returns **0.37**.
 
 ## atan
-Retrieves the arc tangent of a real number.
+
+Retrieves the arctangent of a real number.
 
 ### Syntax
 
@@ -161,6 +164,7 @@ static void atanExample(Args _args)
 ```
 
 ## corrFlagGet
+
 Retrieves the state of the correction flag for a real number.
 
 ### Syntax
@@ -177,7 +181,7 @@ int corrFlagGet(real arg)
 
 ### Return value
 
-A non-zero value if the flag is set; **0** (zero) if the flag is cleared.
+A nonzero value if the flag is set; **0** (zero) if the flag is cleared.
 
 ### Example
 
@@ -193,6 +197,7 @@ static void corrFlagGetExample(Args _args)
 ```
 
 ## corrFlagSet
+
 Controls the correction flag for a real number.
 
 ### Syntax
@@ -206,14 +211,13 @@ real corrFlagSet(real real, int arg)
 | Parameter | Description                                                       |
 |-----------|-------------------------------------------------------------------|
 | real      | The number in which to turn the correction flag on or off.        |
-| arg       | **0** to turn the flag off; a non-zero value to turn the flag on. |
+| arg       | **0** to turn the flag off; a nonzero value to turn the flag on. |
 
 ### Return value
 
-**0** if the flag is now off; a non-zero value if the flag is now on.
+**0** if the flag is now off; a nonzero value if the flag is now on.
 
 ## cos
-
 
 Retrieves the cosine of a real number.
 
@@ -235,7 +239,7 @@ The cosine of the specified number.
 
 ### Remarks
 
-The value of the *arg* parameter must be in radians.
+Enter the value of the *arg* parameter in radians.
 
 ### Example
 
@@ -253,10 +257,11 @@ static void cosExample(Args _arg)
 ```
 
 ## cosh
+
 Retrieves the hyperbolic cosine of a real number.
 
 > [!NOTE]
-> Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."
+> If you enter argument values that are outside the -250 to 250 range, you get the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -276,7 +281,7 @@ The hyperbolic cosine of the specified number.
 
 ### Remarks
 
-The value of the *arg* parameter must be in radians.
+Enter the value of the *arg* parameter in radians.
 
 ### Example
 
@@ -292,6 +297,7 @@ static void coshExample(Args _arg)
 ```
 
 ## decRound
+
 Rounds a number to the specified number of decimal places.
 
 ### Syntax
@@ -315,11 +321,11 @@ The value of the specified number, rounded to the specified number of decimal pl
 
 The value of the *decimals* parameter can be positive, 0 (zero), or negative.
 
--   **decRound(1234.6574,2)** returns the value **1234.66**.
--   **decRound(1234.6574,0)** returns the value **1235**.
--   **decRound(1234.6574,-2)** returns the value **1200**.
--   **decRound(12345.6789,1)** returns the value **12345.70**.
--   **decRound(12345.6789,-1)** returns the value **12350.00**.
+- **decRound(1234.6574,2)** returns the value **1234.66**.
+- **decRound(1234.6574,0)** returns the value **1235**.
+- **decRound(1234.6574,-2)** returns the value **1200**.
+- **decRound(12345.6789,1)** returns the value **12345.70**.
+- **decRound(12345.6789,-1)** returns the value **12350.00**.
 
 ## exp
 
@@ -343,7 +349,7 @@ The natural antilogarithm of the specified real number.
 
 ### Remarks
 
-The calculated natural antilogarithm is the natural logarithm e raised to the power that is indicated by the *arg* parameter.
+The calculated natural antilogarithm is the natural logarithm e raised to the power that the *arg* parameter indicates.
 
 ### Example
 
@@ -362,6 +368,7 @@ static void expExample(Args _arg)
 ```
 
 ## exp10
+
 Retrieves the base-10 antilogarithm of the specified real number.
 
 ### Syntax
@@ -397,6 +404,7 @@ static void exp10Example(Args _arg)
 ```
 
 ## frac
+
 Retrieves the decimal part of a real number.
 
 ### Syntax
@@ -420,7 +428,8 @@ The decimal part of the specified number.
 **frac(12.345)** returns the value **0.345**.
 
 ## log10
-Retrieves the 10-digit logarithm of a real number.
+
+Retrieves the base-10 logarithm of a real number.
 
 ### Syntax
 
@@ -443,6 +452,7 @@ The base-10 logarithm of the specified number.
 **log10(200)** returns the value **2.30**.
 
 ## logN
+
 Retrieves the natural logarithm of the specified real number.
 
 ### Syntax
@@ -482,12 +492,12 @@ anytype max(anytype object1, anytype object2)
 
 ### Return value
 
-The larger of the two values that are specified by the *object1* and *object2* parameters.
+The larger of the two values that you specify by using the *object1* and *object2* parameters.
 
 ### Remarks
 
--   **max(12.0,12.1)** returns the value **12.1**.
--   **max(2,33)** returns the value **33**.
+- **max(12.0,12.1)** returns the value **12.1**.
+- **max(2,33)** returns the value **33**.
 
 ## min
 
@@ -506,7 +516,7 @@ anytype min(anytype object1, anytype object2)
 
 ### Return value
 
-The smaller of the two values that are specified by the *object1* and *object2* parameters.
+The smaller of the two values that you specify by using the *object1* and *object2* parameters.
 
 ### Remarks
 
@@ -527,6 +537,7 @@ static void minExample(Args _arg)
 ```
 
 ## power
+
 Raises a real number to the power of another real number.
 
 ### Syntax
@@ -540,18 +551,19 @@ real power(real arg, real exponent)
 | Parameter | Description                                                                 |
 |-----------|-----------------------------------------------------------------------------|
 | arg       | The number to calculate the power of.                                       |
-| exponent  | The number to raise the number that is specified by the *arg* parameter to. |
+| exponent  | The number to raise the number that you specify by using the *arg* parameter to. |
 
 ### Return value
 
-The real number that is the number specified by the *arg* parameter to the power of the number specified by the *exponent* parameter.
+The real number that is the number you specify by using the *arg* parameter to the power of the number you specify by using the *exponent* parameter.
 
 ### Remarks
 
--   **power(5.0,2.0)** returns the value **25.0**.
--   **power(4.0,0.5)** returns the value **2.0**.
+- **power(5.0,2.0)** returns the value **25.0**.
+- **power(4.0,0.5)** returns the value **2.0**.
 
 ## round
+
 Rounds a real number to the nearest multiple of another real number.
 
 ### Syntax
@@ -577,10 +589,10 @@ To round a real number to a specified number of decimal places, use the [decroun
 
 ### Remarks
 
--   **round(123.45,5.00)** returns the value **125.00**.
--   **round(7.45,1.05)** returns the value **7.35**.
--   **round(23.9,5.0)** returns the value **25.00**.
--   **round(26.1,5.0)** returns the value **25.00**.
+- `round(123.45,5.00)` returns the value `125.00`.
+- `round(7.45,1.05)` returns the value `7.35`.
+- `round(23.9,5.0)` returns the value `25.00`.
+- `round(26.1,5.0)` returns the value `25.00`.
 
 ## sin
 
@@ -627,6 +639,7 @@ static void sinExample(Args _arg)
 ```
 
 ## sinh
+
 Retrieves the hyperbolic sine of a real number.
 
 ### Syntax
@@ -711,6 +724,7 @@ static void tanExample(Args _arg)
 ```
 
 ## tanh
+
 Retrieves the hyperbolic tangent of a real number.
 
 ### Syntax
@@ -746,6 +760,7 @@ static void tanhExample(Args _arg)
 ```
 
 ## trunc
+
 Truncates a real number by removing any decimal places.
 
 ### Syntax
@@ -762,11 +777,11 @@ real trunc(real _decimal)
 
 ### Return value
 
-A number that is equivalent to the value of the *\_decimal* parameter after the decimal places have been removed.
+A number that is equivalent to the value of the *\_decimal* parameter after the decimal places are removed.
 
 ### Remarks
 
-This function always rounds numbers down to a complete integer.
+This function always rounds numbers down to a whole integer.
 
 ### Example
 
@@ -782,8 +797,5 @@ static void truncExample(Args _arg)
     pause;
 }
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

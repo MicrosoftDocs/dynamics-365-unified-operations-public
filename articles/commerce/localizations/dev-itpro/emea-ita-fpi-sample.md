@@ -2,10 +2,9 @@
 title: Fiscal printer integration sample for Italy
 description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 02/26/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2018-11-01
@@ -25,7 +24,7 @@ Microsoft doesn't release any hardware, software, or documentation from Epson. F
 
 ## Scenarios
 
-The following scenarios are covered by the fiscal printer integration sample for Italy:
+The fiscal printer integration sample for Italy covers the following scenarios:
 
 - Sales scenarios:
 
@@ -46,7 +45,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Print line discounts.
     - Gift cards:
 
-        - Exclude an issued/recharged gift card line from a fiscal receipt for a sale.
+        - Exclude an issued or recharged gift card line from a fiscal receipt for a sale.
         - Print a payment that uses a gift card as a regular method of payment.
 
     - Print fiscal receipts for customer order operations:
@@ -62,7 +61,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
-    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there is a paper jam.
+    - Retry fiscal registration if a retry is possible, such as if the fiscal printer isn't connected, isn't ready or isn't responding, the printer is out of paper, or there's a paper jam.
     - Defer fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
@@ -89,10 +88,10 @@ The fiscal printer integration sample implements the following rules that are re
 
 ### Limitations of the sample
 
-- The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both stores and customers.
+- The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, set the **Price include sales tax** option to **Yes** for both stores and customers.
 - Daily reports (fiscal X and fiscal Z) are printed by using the format that is embedded in the fiscal printer's firmware.
 - The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
-- The sample supports integration only with a fiscal printer that is working in the Registratore Telematico (RT)) mode.
+- The sample supports integration only with a fiscal printer that's working in the Registratore Telematico (RT) mode.
 
 ## Set up fiscal integration for Italy
 
@@ -118,13 +117,13 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Download configuration files for the fiscal document provider and the fiscal connector:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Select a correct release branch version according to your SDK/application version.
+    1. Select the correct release branch version according to your SDK or application version.
     1. Open **src \> FiscalIntegration \> EpsonFP90IIISample**.
     1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Configuration \> DocumentProviderEpsonFP90IIISample.xml**.
     1. Download the fiscal connector configuration file at **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml**.
 
     > [!NOTE]
-    > For Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
+    > For Commerce version 10.0.28 or earlier, use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
     >
     > - **Fiscal document provider configuration file:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml
     > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml
@@ -134,11 +133,11 @@ To enable the registration process, follow these steps to set up Commerce headqu
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile. Select the document provider and the connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#fiscal-connector-settings) as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
-9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
-10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer connects to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 #### Default data mapping
 
@@ -157,11 +156,11 @@ The following default data mapping is included in the fiscal document provider c
         "DepositPaymentMethod": {"PrinterPaymentType":"2", "PrinterPaymentIndex":"00"}}
     ```
 
-    Here is an explanation of the attributes in this mapping:
+    Here's an explanation of the attributes in this mapping:
 
     - **StorePaymentMethod** is a payment method that is set up for the store at **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods**.
     - **PrinterPaymentType** and **PrinterPaymentIndex** are the corresponding payment type and index that are defined in the Epson fiscal printer documentation.
-    - **DepositPaymentMethod** is used to specify a printer's payment type and index for the part of the customer order pickup amount that is settled with the customer order deposit.
+    - **DepositPaymentMethod** specifies a printer's payment type and index for the part of the customer order pickup amount that is settled with the customer order deposit.
 
     The following table shows how the sample mapping of payment methods corresponds to store payment methods that are configured in the standard demo data.
 
@@ -175,7 +174,7 @@ The following default data mapping is included in the fiscal document provider c
 
     You must modify the sample mapping according to the payment methods that are configured in your application.
 
-- **Barcode type for receipt number** – The type of bar code that is used to show a receipt number on a fiscal receipt. The default mapping is **CODE128**.
+- **Barcode type for receipt number** – The type of bar code that's used to show a receipt number on a fiscal receipt. The default mapping is **CODE128**.
 - **Print fiscal data in receipt header** – If this parameter is turned on, store information will be printed on the fiscal receipt. This information includes the store's name, address, and tax identification number, and the cashier's name.
 - **Fiscal printer department mapping** – The mapping of departments of the fiscal printer to value-added tax (VAT) rates, VAT exempt natures, and product types. The following example shows the default mapping.
 
@@ -194,10 +193,10 @@ The following default data mapping is included in the fiscal document provider c
         {"VATRate":"0000", "VATExemptNature":"NS", "ProductType":"0", "DepartmentNumber":"99"}]}
     ```
 
-    Here is an explanation of the attributes in this mapping:
+    Here's an explanation of the attributes in this mapping:
 
     - **VATRate** is a supported VAT rate that is configured as a sales tax code. The value in the mapping has two decimal places but no decimal separator. For example, **2200** represents 22 percent, and **1000** represents 10 percent.
-    - **VATExemptNature** is applicable only in cases where the VAT rate is 0 (zero), including cases where there is no tax. Currently, **VATExemptNature** is supported only for gift cards, and the value in the mapping should correspond to the value of the **VATExemptNatureForGiftCard** property in the XML configuration file.
+    - **VATExemptNature** applies only in cases where the VAT rate is 0 (zero), including cases where there's no tax. Currently, only gift cards support **VATExemptNature**, and the value in the mapping should correspond to the value of the **VATExemptNatureForGiftCard** property in the XML configuration file.
     - **ProductType** is the type of product. A value of **0** represents goods, and a value of **1** represents services.
     - **DepartmentNumber** is the number of the department that is configured in the printer and that corresponds to the previous three attributes.
 
@@ -211,13 +210,13 @@ The following default data mapping is included in the fiscal document provider c
 
     The info code that is selected for **Info code for return origin** should be configured as a mandatory info code that is fired one time per sales transaction. It should be assigned as the **Return product** info code in the POS functionality profile, so that it's fired when the **Return product** operation is run.
 
-    No default value is specified for this mapping. You must select an info code that is configured in your application.
+    This mapping has no default value. Select an info code that is configured in your application.
 
-- **Info code for original sales date** – The info code that is used to capture the original sales date for a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for return origin** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
+- **Info code for original sales date** – The info code that captures the original sales date for a return transaction if no original sales receipt is provided. Use this parameter together with the **Info code for return origin** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
 
-    The info code should be configured so that the **Input type** field is set to **Date**. It should be configured as a mandatory info code that is fired one time per sales transaction. It should also be assigned as the **Linked info code** for the info code that is selected for the **Info code for return origin** parameter, so that the two info codes are fired one after another.
+    Configure the info code so that the **Input type** field is set to **Date**. Configure it as a mandatory info code that fires one time per sales transaction. Assign it as the **Linked info code** for the info code that is selected for the **Info code for return origin** parameter, so that the two info codes fire one after another.
 
-    No default value is specified for this mapping. You must select an info code that is configured in your application.
+    This mapping has no default value. Select an info code that is configured in your application.
 
 - **Return origin mapping** – The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for return origin** and **Info code for original sales date** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. The following example shows the default mapping.
 
@@ -229,11 +228,11 @@ The following default data mapping is included in the fiscal document provider c
         "PrinterReturnOriginWithoutFiscalData":"POS"}
     ```
 
-    Here is an explanation of the attributes in this mapping:
+    Here's an explanation of the attributes in this mapping:
 
     - **ReturnOrigin** is one of possible origins of returns in your stores. The value should correspond to a value of the **Info code for return origin** parameter.
     - **PrinterReturnOrigin** is one of the return origins that the fiscal printer accepts (**POS**, **VR**, or **ND**).
-    - **PrinterReturnOriginWithoutFiscalData** is the return origin that the fiscal printer accepts and that corresponds to a return transaction that is linked to an original sales transaction that doesn't have linked fiscal data, because it wasn't registered through a fiscal printer. In this case, the original sales date is identified as the date of the original sales transaction.
+    - **PrinterReturnOriginWithoutFiscalData** is the return origin that the fiscal printer accepts and that corresponds to a return transaction that is linked to an original sales transaction that doesn't have linked fiscal data, because it wasn't registered through a fiscal printer. In this case, the original sales date identifies the date of the original sales transaction.
 
 The following default data mappings are obsolete and are kept only for backward compatibility:
 
@@ -242,22 +241,22 @@ The following default data mappings are obsolete and are kept only for backward 
 
 #### Fiscal connector settings
 
-The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
+The following settings are included in the fiscal connector configuration that's provided as part of the fiscal integration sample:
 
 - **Endpoint address** – The URL of the printer.
-- **Date and time synchronization** – A value that specifies whether the date and time of the printer must be synced with the connected Hardware station.
+- **Date and time synchronization** – A value that specifies whether the date and time of the printer must sync with the connected Hardware station.
 
 ### Configure channel components
 
 > [!NOTE]
 > - The fiscal printer integration sample for Italy is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
-> - Commerce samples that are deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
+> - Commerce samples that you deploy in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
 
 #### Set up the development environment
 
 To set up a development environment to test and extend the sample, follow these steps:
 
-1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select the correct release branch version according to your SDK/application version. For more information, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the fiscal printer integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln**, and build it.
 1. Install CRT extensions:
 
@@ -308,11 +307,11 @@ The purpose of the extension that is a fiscal document provider is to generate p
 
 The **DocumentProviderEpsonFP90III** request handler is the entry point for the request to generate documents from the fiscal printer.
 
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce headquarters.
+The handler inherits from the **INamedRequestHandler** interface. The **HandlerName** method returns the name of the handler. The handler name must match the connector document provider name that you specify in Commerce headquarters.
 
 The connector supports the following requests:
 
-- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a printer-specific document that should be registered in the fiscal printer.
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a printer-specific document that the fiscal printer registers.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, and printing Z report.
 
 #### Configuration
@@ -321,7 +320,7 @@ The configuration file for the fiscal document provider is located at **src\\Fis
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer. This extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal printer. It also handles the responses that are received from the fiscal printer.
+The fiscal connector communicates with the fiscal printer. This extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal printer. It also handles the responses that it receives from the fiscal printer.
 
 #### Request handler
 

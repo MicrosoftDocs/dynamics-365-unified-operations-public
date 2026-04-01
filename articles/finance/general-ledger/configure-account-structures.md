@@ -4,7 +4,7 @@ description: Learn about account structures and financial dimensions, including 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/14/2024
+ms.date: 03/02/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -24,6 +24,10 @@ Account structures use the main account and financial dimensions to create a set
 
 When creating an account structure, you can use up to 11 segments. If you need more than 11 segments, thoroughly evaluate your setup and requirements, as it impacts the user experience. Consider if a segment could be derived in a reporting scenario by using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you don't need location as a financial dimension. If after evaluation you determine more than 11 segments are needed, you can add extra segments by using advanced rules.
 
+[![Maximum dimensions per account rule.](./media/max-dimensions-per-account-rule.png)](./media/max-dimensions-per-account-rule.png)
+
+With advanced rules, you can add up to 16 segments.
+
 Account structures require the main account. The main account doesn't need to be the first segment in the structure, but it does identify what account structure is used during the account number entry. Because of this main account value, it can only exist in one structure assigned to the ledger so that they don't overlap. After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.
 
 > [!NOTE]
@@ -33,13 +37,13 @@ Account structures require the main account. The main account doesn't need to be
 
 To illustrate a best practice for setting up an account structure, assume that a company wants to track their balance sheet accounts (100000..399999) at the account and business unit financial dimension level. For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center. If they make a sale, they also like to track Customer. Using this scenario, it's recommended to have two account structures assigned to the company's ledger - one for Balance sheet accounts, and one for Profit and Loss accounts. To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.
 
-**Balance sheet account structure**
+### Balance sheet account structure
 
 |Main account          | Business unit    |
 |----------------------|-----------|
 |100000..399999 | *;"&nbsp;"|
 
-**Profit and loss account structure**
+### Profit and loss account structure
 
 |Main account          | Business unit    |Department          | Cost center    | &nbsp; |
 |----------------------|------------------|--------------------|-----------|---|
@@ -83,7 +87,9 @@ If you need more than seven criteria, add them on the next line. When you work i
 - Column width
 - How the data is stored
 - Performance of the **Allowed value details** control
-- Usability  
+- Usability
+
+[![Seven constraints on segment](./media/save-seven-constraints-segment.png)](./media/save-seven-constraints-segment.png) 
 
 > [!NOTE]
 > An upgrade from Microsoft Dynamics AX 2012 isn't supported when you specify more than seven criteria. You must correct this issue before you complete the upgrade to finance and operations apps.

@@ -4,7 +4,7 @@ description: Learn about the date run-time functions, including the dyName, dayO
 author: pvillads
 ms.author: pvillads
 ms.topic: language-reference
-ms.date: 05/19/2025
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -20,7 +20,7 @@ This article describes the date run-time functions.
 
 ## dayName
 
-Retrieves the name of the day of the week that is specified by a number.
+Retrieves the name of the day of the week that corresponds to a number.
 
 ```xpp
 str dayName(int number)
@@ -52,6 +52,7 @@ static void dayNameExample(Args _arg)
 ```
 
 ## dayOfMth
+
 Calculates the number of the day in the month for the specified date.
 
 ```xpp
@@ -88,7 +89,11 @@ static void dayOfMthExample(Args _arg)
 ```
 
 ## dayOfWk
-Calculates the number of day in the week for the specified date. **Note:** Monday is represented by **1**, Tuesday by **2**, and Sunday by **7**.
+
+Calculates the number of day in the week for the specified date.
+
+> [!NOTE]
+> Monday is represented by **1**, Tuesday by **2**, and Sunday by **7**.
 
 ```xpp
 int dayOfWk(date date)
@@ -118,6 +123,7 @@ static void dayOfWkExample(Args _arg)
 ```
 
 ## dayOfYr
+
 Calculates the number of days between January 1 and the specified date.
 
 ```xpp
@@ -152,6 +158,7 @@ static void dayOfYrExample(Args _arg)
 ```
 
 ## endMth
+
 Calculates the last date in the month of the specified date.
 
 ```xpp
@@ -176,7 +183,8 @@ endMth(02\2\1989); //Returns the date 28\2\1989.
 ```
 
 ## mkDate
-Creates a date, based on three integers that indicate the day, month, and year, respectively. 
+
+Creates a date, based on three integers that indicate the day, month, and year, respectively.
 
 ```xpp
 date mkDate(int day, int month, int year)
@@ -192,11 +200,11 @@ date mkDate(int day, int month, int year)
 
 ### Return value
 
-A **date** value that is based on the values of the *day*, *month*, and *year* parameters.
+A **date** value that's based on the values of the *day*, *month*, and *year* parameters.
 
 ### Remarks
 
-If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. 
+If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date.
 
 ### Example
 
@@ -213,6 +221,7 @@ static void mkDateExample(Args _arg)
 ```
 
 ## mthName
+
 Retrieves the name of the specified month
 
 ```xpp
@@ -247,7 +256,11 @@ static void mthNameExample(Args _arg)
 ```
 
 ## mthOfYr
-Retrieves the number of the month in the year for the specified date. **Note:** January is **1**, February is **2**, and December is **12**.
+
+Retrieves the number of the month in the year for the specified date.
+
+> [!NOTE]
+> January is **1**, February is **2**, and December is **12**.
 
 ```xpp
 int mthOfYr(date date)
@@ -276,6 +289,7 @@ static void mthOfYrExample(Args _arg)
 ```
 
 ## nextMth
+
 Retrieves the date in the following month that corresponds most closely to the specified date.
 
 ```xpp
@@ -307,12 +321,13 @@ static void nextMthExample(Args _arg)
     date d = nextMth(today());
 
     print "Closest date next month is "
-    + date2Str(d, 2, 2, -1, 2, -1, 4);
+        + date2Str(d, 2, 2, -1, 2, -1, 4);
     pause;
 }
 ```
 
 ## nextQtr
+
 Retrieves the date in the following quarter that corresponds most closely to the specified date.
 
 ```xpp
@@ -327,7 +342,7 @@ date nextQtr(date date)
 
 ### Return value
 
-The closest match to specified date that is found in the next quarter.
+The closest match to the specified date that the function finds in the next quarter.
 
 ### Remarks
 
@@ -347,6 +362,7 @@ static void nextQtrExample(Args _arg)
 ```
 
 ## nextYr
+
 Retrieves the date in the following year that corresponds most closely to the specified date.
 
 ```xpp
@@ -381,6 +397,7 @@ static void nextYrExample(Args _arg)
 ```
 
 ## prevMth
+
 Retrieves the date in the previous month that corresponds most closely to the specified date.
 
 ```xpp
@@ -405,6 +422,7 @@ prevMth(28\2\1998); // Returns the date 28/01/1998.
 ```
 
 ## prevQtr
+
 Retrieves the date in the previous quarter that corresponds most closely to the specified date.
 
 ```xpp
@@ -429,6 +447,7 @@ prevQtr(29\5\1996); // Returns the date 29/02/1996, because 1996 is a leap year.
 ```
 
 ## prevYr
+
 Retrieves the date in the previous year that corresponds most closely to the specified date.
 
 ```xpp
@@ -443,7 +462,7 @@ date prevYr(date date)
 
 ### Return value
 
-The closest match to the specified date that is found in the previous year.
+The closest match to the specified date that the system finds in the previous year.
 
 ### Remarks
 
@@ -453,7 +472,8 @@ prevYr(28\2\1998); //Returns the date 28/02/1997.
 ```
 
 ## systemDateGet
-Retrieves the session date, if it has been set.
+
+Retrieves the session date, if it's set.
 
 ```xpp
 date systemDateGet()
@@ -461,11 +481,11 @@ date systemDateGet()
 
 ### Return value
 
-The session date if it has been set; otherwise, the system date.
+The session date if it's set; otherwise, the system date.
 
 ### Remarks
 
-Consider using **Session date and time** on the **Tools** menu to open the **Session date and time** page. This page can be used to actively set the session date. After this set action is detected by the system, subsequent calls to the **systemDateGet** function return the session date. The **today** function returns the system date. This function doesn't support time zones.
+Use **Session date and time** on the **Tools** menu to open the **Session date and time** page. Use this page to set the session date. After the system detects this set action, subsequent calls to the **systemDateGet** function return the session date. The **today** function returns the system date. This function doesn't support time zones.
 
 ### Example
 
@@ -492,6 +512,7 @@ Message (03:46:00 pm)
 ```
 
 ## systemDateSet
+
 Changes the system date.
 
 ```xpp
@@ -510,7 +531,7 @@ The new system date.
 
 ### Remarks
 
-This function doesn't affect the session date. This method changes the date, but the time will be set to **0** (zero).
+This function doesn't affect the session date. This method changes the date, but the time is set to **0** (zero).
 
 ### Example
 
@@ -526,6 +547,7 @@ static void systemDateSetExample(Args _arg)
 ```
 
 ## timeNow
+
 Retrieves the current system time.
 
 ```xpp
@@ -549,6 +571,7 @@ static void timeNowExample(Args _arg)
 ```
 
 ## today
+
 Retrieves the current date on the system.
 
 ```xpp
@@ -572,6 +595,7 @@ static void todayExample(Args _arg)
 ```
 
 ## wkOfYr
+
 Calculates the week of the year that a date falls in, according to the ISO 8601 specification.
 
 ```xpp
@@ -633,7 +657,7 @@ static void WeekTests3Job(Args _args)
 }
 ```
 
-The previous example sent the following information to the Infolog for display. The output shows that there are differences between **wkOfYr** and **Global::weekOfYear**. 
+The previous example sends the following information to the Infolog for display. The output shows that there are differences between **wkOfYr** and **Global::weekOfYear**.
 
 ```xpp
 Message (01:59:13 pm) ----- 
@@ -643,6 +667,7 @@ Message (01:59:13 pm) -----
 ```
 
 ## year
+
 Retrieves the year from a **date** value.
 
 ```xpp
@@ -664,8 +689,5 @@ The year of the specified date.
 ```xpp
 year(0221998); //Returns the value 1998.
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

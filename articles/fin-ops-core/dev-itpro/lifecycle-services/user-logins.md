@@ -4,7 +4,7 @@ description: Learn about how to create an audit log of users who signed into you
 author: angelmarshall
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 01/20/2026
+ms.date: 03/06/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -17,6 +17,7 @@ ms.assetid:
 # Track user sign-ins
  
 [!include [banner](../includes/banner.md)]
+[!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 Many organizations need to maintain an audit trail of users who use the system. This requirement can be in place for compliance reasons, or to enable trackbacks in the event of incorrect use.
 

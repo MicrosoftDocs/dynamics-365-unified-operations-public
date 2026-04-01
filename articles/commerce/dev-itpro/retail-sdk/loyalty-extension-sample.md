@@ -1,69 +1,71 @@
 ---
 title: Loyalty extension sample
-description: This article explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
+description: Learn how to set up Microsoft Dynamics 365 Commerce so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
 author: ShalabhjainMSFT
-ms.date: 05/15/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
+ms.date: 02/20/2026
+ms.topic: how-to
 ms.author: shajain
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2017-05-15
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.assetid: 
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Loyalty extension sample
 
 [!include [banner](../../../includes/banner.md)]
 
+This article explains how to set up Microsoft Dynamics 365 Commerce so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
+
 ## Scenario
 
-A retailer wants customers to be able to earn loyalty points and pay by using loyalty points in a single transaction. 
+A retailer wants customers to be able to earn loyalty points and pay by using loyalty points in a single transaction.
 
 ## Scenario details
 
-The retailer has set up a loyalty scheme for the channel and associated that scheme with a loyalty program. The loyalty scheme includes some earning and redemption rules. The retailer wants customers to be able to partially pay a transaction amount by using their loyalty points. The customers should then be able to earn loyalty points for the remaining transaction amount that they pay by using other payment methods.
+The retailer sets up a loyalty scheme for the channel and associated that scheme with a loyalty program. The loyalty scheme includes some earning and redemption rules. The retailer wants customers to be able to partially pay a transaction amount by using their loyalty points. The customers should then be able to earn loyalty points for the remaining transaction amount that they pay by using other payment methods.
 
 ## Assumptions
 
-Because of the flexibility that the loyalty setup provides, this scenario can quickly become very complex. We have made some assumptions to reduce the complexity of this sample. However, these assumptions aren't far removed from the real-world examples. Here are the assumptions:
+Because of the flexibility that the loyalty setup provides, this scenario can quickly become complex. Assumptions were made to reduce the complexity of this sample. However, these assumptions aren't far removed from the real-world examples.
 
-+ No tiers are associated with the loyalty program.
-+ There is a single loyalty scheme and a single loyalty reward point type.
-+ There is a single earning rule that applies to all product categories. For example, this rule might specify that, for every $1 that the customer spends, the customer earns 0.1 reward point. 
-+ There is a single redemption rule that applies to all product categories. For example, this rule might specify that one reward point is equivalent to $1.
+Here are the assumptions:
 
-> [!NOTE] 
-> The earning and redemption rules that are mentioned here are just examples. For this sample, we have hard-coded the values. For a production scenario, the values should be read from the database instead.
+- No tiers are associated with the loyalty program.
+- There's a single loyalty scheme and a single loyalty reward point type.
+- There's a single earning rule that applies to all product categories. For example, this rule might specify that, for every $1 that the customer spends, the customer earns 0.1 reward point.
+- There's a single redemption rule that applies to all product categories. For example, this rule might specify that one reward point is equivalent to $1.
+
+> [!NOTE]
+> The earning and redemption rules that are mentioned here are just examples. For this sample, the values are hardcoded. For a production scenario, the values should be read from the database instead.
 
 ## Customization approach
 
-We implement this customization in two steps. In step 1, points will be earned as though loyalty points weren't used in the transaction. Then, in step 2, the extra points that were earned will be reduced, based on the points that were redeemed.
+Implement this customization in two steps. In step 1, the system earns points as though the transaction didn't use loyalty points. Then, in step 2, the system reduces the extra points that it earned, based on the points that the customer redeems.
 
-There are six service requests for the loyalty feature:
+The loyalty feature has six service requests:
 
-+ GetLoyaltyCardStatusServiceRequest
-+ CalculateLoyaltyRewardPointsServiceRequest
-+ IssueLoyaltyCardServiceRequest
-+ FillInLoyaltyRewardPointLinesForSalesServiceRequest
-+ FillInLoyaltyRewardPointLinesForReturnServiceRequest
-+ FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest
+- GetLoyaltyCardStatusServiceRequest
+- CalculateLoyaltyRewardPointsServiceRequest
+- IssueLoyaltyCardServiceRequest
+- FillInLoyaltyRewardPointLinesForSalesServiceRequest
+- FillInLoyaltyRewardPointLinesForReturnServiceRequest
+- FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest
 
-To calculate the reward points for a cash-and-carry transaction, the system uses **FillInLoyaltyRewardPointLinesForSalesServiceRequest** for sales transaction lines. This request, in turn, uses **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to do the actual reward calculation. Similarly, the system uses **FillInLoyaltyRewardPointLinesForReturnServiceRequest** for return transaction lines, and this request also uses **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to do the actual reward calculation. In the out-of-box implementation of the loyalty feature, customers can't both redeem and earn loyalty points in the same transaction. In other words, if the sales transaction has a tender line for the loyalty card, **FillInLoyaltyRewardPointLinesForSalesServiceRequest** doesn't call **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to calculate the reward points. 
+To calculate the reward points for a cash-and-carry transaction, the system uses **FillInLoyaltyRewardPointLinesForSalesServiceRequest** for sales transaction lines. This request, in turn, uses **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to do the actual reward calculation. Similarly, the system uses **FillInLoyaltyRewardPointLinesForReturnServiceRequest** for return transaction lines, and this request also uses **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to do the actual reward calculation. In the out-of-box implementation of the loyalty feature, customers can't both redeem and earn loyalty points in the same transaction. In other words, if the sales transaction has a tender line for the loyalty card, **FillInLoyaltyRewardPointLinesForSalesServiceRequest** doesn't call **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to calculate the reward points.
 
-To enable loyalty points to be redeemed and earned in the same transaction, we will work with one service request, **FillInLoyaltyRewardPointLinesForSalesServiceRequest**.
+To enable customers to redeem and earn loyalty points in the same transaction, work with one service request, **FillInLoyaltyRewardPointLinesForSalesServiceRequest**.
 
-### Step 1 
+### Step 1
 
-For our scenario, we must implement **FillInLoyaltyRewardPointLinesForSalesServiceRequest** in such a way that it always calls **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to calculate the reward points. However, this change will cause the system to calculate extra earned points, based on the amount that the customer pays by using loyalty points. Therefore, we must be able to reduce the earned points by an appropriate amount. This adjustment is done in step 2.
+For this scenario, implement **FillInLoyaltyRewardPointLinesForSalesServiceRequest** so that it always calls **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to calculate the reward points. However, this change causes the system to calculate extra earned points, based on the amount that the customer pays by using loyalty points. Therefore, you must be able to reduce the earned points by an appropriate amount. You make this adjustment in step 2.
 
 ### Step 2
 
-We take advantage of the post trigger mechanism that the extensibility framework provides on **FillInLoyaltyRewardPointLinesForSalesServiceRequest**. In the post trigger, we will use the earning and redemption rules to determine how many extra points were earned for each reward point that was redeemed. We will then subtract those extra points to get the correct amount.
+Use the post trigger mechanism that the extensibility framework provides on **FillInLoyaltyRewardPointLinesForSalesServiceRequest**. In the post trigger, use the earning and redemption rules to determine how many extra points are earned for each reward point that you redeem. Subtract those extra points to get the correct amount.
 
-#### Implement FillInLoyaltyRewardPointLinesForSalesServiceRequest 
+#### Implement FillInLoyaltyRewardPointLinesForSalesServiceRequest
 
 ```cs
 namespace Contoso
@@ -171,6 +173,5 @@ namespace Contoso
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

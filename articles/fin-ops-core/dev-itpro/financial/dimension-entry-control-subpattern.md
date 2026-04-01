@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.assetid: 6baee22e-2a86-428c-b9e2-178581c57830
 ms.search.region: Global
@@ -18,15 +18,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the Dimension Entry Control subpattern. This subpattern is used when you have a group or tab page that uses the Dimension Entry control (DEC). 
+This article provides information about the Dimension Entry Control subpattern. Use this subpattern when you have a group or tab page that uses the Dimension Entry control (DEC).
 
 ## Usage
 
-The Dimension Entry Control pattern is used when you have a group or tab page that uses the Dimension Entry control (DEC).
+Use the Dimension Entry Control pattern when you have a group or tab page that uses the Dimension Entry control (DEC).
 
 ## Wireframe
 
-![Wireframe for Dimension Entry Control subpattern.](media/decwireframe.png)
+:::image type="content" source="media/decwireframe.png" alt-text="Screenshot of the wireframe for Dimension Entry Control subpattern.":::
 
 ## Model
 
@@ -48,17 +48,16 @@ None.
 
 Form: **CustTable (TabFinancialDimensions)**
 
-![Example for CustTable using TabFinancialDimensions.](media/decexample.png)
+:::image type="content" source="media/decexample.png" alt-text="Screenshot of the example for CustTable using TabFinancialDimensions.":::
 
 ## Appendix
 
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
+This section contains answers to frequently asked questions that are related to this guideline or pattern.
 
 ### Open issues
 
 None.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

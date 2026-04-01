@@ -103,7 +103,7 @@ However, you need to understand several important concepts:
 - You can orchestrate your downstream jobs on a periodic basis (for example, every 10 minutes), or you can trigger them when a new change feed file is added to a folder.
 - In either case, your downstream data pipelines must have a *last processed* marker (also known as a watermark). Whenever you can, rely on the LSN field in the record as the watermark. However, you can also use the **File Date-Time** stamp as the watermark. By relying on the LSN, you ensure that you consume the changes in the same sequence in which the finance and operations database committed them.
 
-For an example that shows how you can build a downstream pipeline, see the [Synapse data ingestion template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF). You can use it to incrementally ingest data into a SQL-based data warehouse.
+For an example that shows how you can build a downstream pipeline, see the [Synapse data ingestion template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Analytics/SynapseToSQL_ADF). You can use it to incrementally ingest data into a SQL-based data warehouse.
 
 ### Simplifying BYOD-based ETL pipelines
 

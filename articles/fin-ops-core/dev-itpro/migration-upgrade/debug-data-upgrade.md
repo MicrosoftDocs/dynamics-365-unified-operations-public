@@ -4,7 +4,7 @@ description: Learn how to debug data upgrade scripts for upgrades of Microsoft D
 author: ttreen
 ms.author: ttreen
 ms.topic: upgrade-and-migration-article
-ms.date: 11/18/2024
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -39,24 +39,24 @@ Depending on the error message, you might have to debug the class method during 
 To debug a PreSync or PostSync upgrade class/method, follow these steps:
 
 1. On the development virtual machine (VM) where you're running the data upgrade, open Visual Studio. (The VM can be in a cloud hosted environment or on a virtual hard disk \[VHD\].) Learn more in [Upgrade from AX 2012 - Data upgrade in development environments]( data-upgrade-2012.md).
-2. Create a new, empty Dynamics 365 finance and operations solution. This step is useful when you debug and drill into sub-methods. You don't have to add any objects to the solution and project.
-3. On the **Dynamics 365** menu, select **Options**. Then, under **Dynamics 365** \> **Debugging**, select the following options:
+1. Create a new, empty Dynamics 365 finance and operations solution. This step is useful when you debug and drill into sub-methods. You don't have to add any objects to the solution and project.
+1. On the **Dynamics 365** menu, select **Options**. Then, under **Dynamics 365** \> **Debugging**, select the following options:
 
     - Debug the items in the solution and in specific packages. Limiting the number of items being debugged provides a better debugging experience.
     - Include packages \[Models\] – select all.
 
-4. In Application Explorer, find and open the class and method that you must debug, and set break points as required.
-5. Go to **Debug**, select **Attach To Process**, and set the following values:
+1. In Application Explorer, find and open the class and method that you must debug, and set break points as required.
+1. Go to **Debug**, select **Attach To Process**, and set the following values:
 
     - Select the **Show processes for all users** checkbox.
     - Enter **DataUpgradeBatch.exe** in the filter.
     - Select the **Automatic refresh** checkbox.
 
-6. Open a PowerShell prompt, and change the path to the folder where you're running the Data Upgrade deployable package.
-7. Rerun the data upgrade runbook that failed. Learn more in [Rerun the runbook after a failure](data-upgrade-2012.md#rerun-the-runbook-after-a-failure).
-8. After the data upgrade runbook resumes, go back to your Visual Studio session, and monitor the processes in the **Attach to Process** window. As soon as **DataUpgradeBatch.exe** appears, attach to it.
+1. Open a PowerShell prompt, and change the path to the folder where you're running the Data Upgrade deployable package.
+1. Rerun the data upgrade runbook that failed. Learn more in [Rerun the runbook after a failure](data-upgrade-2012.md#rerun-the-runbook-after-a-failure).
+1. After the data upgrade runbook resumes, go back to your Visual Studio session, and monitor the processes in the **Attach to Process** window. As soon as **DataUpgradeBatch.exe** appears, attach to it.
 
     > [!IMPORTANT]
     > You must attach quickly to avoid missing the point in the PreSync/PostSync batch process step where the class is run. Otherwise, you might not hit the breakpoint. You might also have to disable the **Automatic Refresh** option and manually select the **Refresh** button to ensure that you capture the start of the batch executable file.
 
-9. You should hit the breakpoints that you set. You can then begin debugging.
+1. You should hit the breakpoints that you set. You can then begin debugging.

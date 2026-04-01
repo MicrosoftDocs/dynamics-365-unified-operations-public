@@ -1,10 +1,8 @@
 ---
-# required metadata
-
 title: Commerce Data Exchange troubleshooting
 description: This article provides information that helps you troubleshoot CDX in implementations.
 author: aneesa
-ms.date: 02/12/2026
+ms.date: 03/20/2026
 ms.topic: troubleshooting-general
 ms.search.form: RetailTerminalTable, RetailDevice
 ms.reviewer: v-griffinc
@@ -26,7 +24,7 @@ Data configuration and synchronization are crucial to correct implementation. Re
 
 Before you go through this article, it's important that you understand the concepts of a channel (store), registers and devices, and the Store Commerce app offline database. Therefore, review some of the resources at the end of this article, such as the CDX implementation guide and the overview of the Commerce architecture.
 
-## Scenario-based usage troubleshooting
+## Diagnose scenario-based usage problems
 
 In the following known scenarios, some configurations in Commerce headquarters might cause out-of-box CDX functionality not to achieve expected, successful results. This list is updated as more scenarios become known.
 
@@ -34,26 +32,9 @@ In the following known scenarios, some configurations in Commerce headquarters m
 - The **RetailServiceAccount** user is altered, or XDS policies are assigned to it. The **RetailServiceAccount** user is an important, pregenerated account that's used for various reasons and purposes. Microsoft highly recommends that you don't alter this account in any way. If you're using XDS policies, don't assign any policy to the account that reduces the data that the account can see or access.
 - CDX jobs fail with timeout errors when they generate upload packages. This issue most often occurs when custom-created transactional tables are missing an index on the **ReplicationCounterFromOrigin** column in these generated tables.
 
-## Error-based troubleshooting
+## Troubleshoot CDX errors
 
-If an error doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This article focuses on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
-
-
-| Error | Description |
-|-------|-------------|
-| You receive the following error message: `System.ArgumentNullException: Value cannot be null. Parameter name: connectionString at Microsoft.Dynamics.Retail.CommerceDataExchange.SqlTargetRequestHandler.`. | An error occurs because of batch job statuses. (You can see the error in a failed download job on the **Download sessions** page.) Go to **System administration \> Inquiries \> Batch jobs**, find the data writing batch that is associated with the Commerce Scale Unit that the download job was supposed to be applied to, and change the batch job's status to **Withhold**. In environments that are earlier than version 10.0.12, also create a channel database group that is named **Legacy**, associate the **Default** channel database with this new group, and then exclude the new database group from all distribution schedules. CDX jobs shouldn't be generated for the **Default** channel database in the **Legacy** group. |
-| You can't perform the **Run now** command from the **Distribution schedule** page unless batch processing is used. | This change was intentionally made in version 10.0.11 because of performance problems that occurred if jobs ran during times when environments were most heavily used. In another change that was made as part of this feature enhancement, recurrence can't be used when the **Full data sync** command (full job synchronization) is run from the **Channel database** page in Commerce headquarters. Only a single occurrence can be run. Don't change this behavior. However, if you're in a development environment, you can change it by going to **Commerce shared parameters \> Configuration parameters** and setting a new name, **CDX\_DISABLE\_FORCESCHEDULEINBATCH**, that has a value of **1**. |
-| You receive the following error message: `Microsoft.Dynamics.Retail.CommerceDataExchange.SqlWriteRequestRunException: Failed to run SqlWriteRequestRunner for table AX.\<TABLE NAME\>.`. | An error occurs because the length of one or more **DBO** tables is extended, so that truncation of data is required. Therefore, a truncation failure occurs. Generate a support request. For best practices, see [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md). These best practices include removing the extended data type (EDT) extension on the table field that you're editing and using the CDX extension table to store the long (full) value that is required. |
-| The download session is failing. The error message states, "...tried too many times." | Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**, and set the **Try count** field to **3**. If the value of this field is too high, download sessions might fail during high-usage times. After you complete this step, the job sets its status to **Canceled** and stops retrying itself. Read [Commerce Data Exchange best practices](CDX-Best-Practices.md). |
-| You can't cancel a running CDX job. | If this problem occurs in a production environment, sign in to Microsoft Dynamics Lifecycle Services (LCS), and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
-| After you add multiple POS terminals, download sessions take a long time, or there's overall Commerce headquarters slowness. | When you create a new Store Commerce app offline database and add it to the relevant channel database group, it inherits all existing download sessions since the last full database synchronization occurred. Even at the best of times, the exceptional data generation that might occur can be too large and therefore affect performance. At the worst (that is, busiest) of times, it can severely impair the environment's performance. Have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) If it's too late to use this approach, create a support request. |
-| Normal, incremental (delta) synchronization takes much too long, even though the number of affected rows is small. | This problem can occur when a new channel (store) is created, because all the data must be re-created for the new store. Have a "dummy" channel database that is associated with a "dummy" channel database group, and assign it to the newly generated channel (store). In this way, data generation can occur when it's required and when the system is most available to do it. If it's too late to use this approach, create a support request. |
-| The P-job fails to create an upload session, and you receive the following error message: `System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK\_UPLOADSESSION'. Cannot insert duplicate key in object 'crt.UPLOADSESSION`. | If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
-| When you try to download an upload session package from the **Upload sessions** page in Commerce headquarters, you receive the following error message: `Record for Id - \<Number\> not found.`. | Create a support request. |
-| CDX download sessions fail to be applied, and you receive the following error message: `Failed to get download session package URI.`. | If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
-| No download sessions are applied, and no upload sessions are created. | If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
-| Upload sessions fail, and you receive the following error message: `Infolog for task Default:P-0001 (...) Error when bulk inserting data. Target table: RetailListingStatusLog.`. | An error occurs because the upload session package contains multiple records in the **RetailListingStatusLog** table. These records have the same **StatusDateTime** value between two or more. If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
-| When a cashier tries to switch to offline mode or is forced offline, the switch fails. | There are many possible causes. First, verify basic information: Does the computer have available hard drive space? If you're using SQL Server Express, is the size of the offline database at the 10 gigabytes (GB) limit? Are there pending download sessions for the register? (Pending download sessions indicate that the register is no longer up to date. Therefore, offline switching might temporarily be prevented.) Additionally, contact Microsoft Support. If this problem occurs in a production environment, sign in to LCS, and create a request for immediate support. If the problem occurs in a nonproduction environment, create a support request. |
+To troubleshoot errors, see [Troubleshoot Commerce Data Exchange (CDX)](/troubleshoot/dynamics-365/commerce/data-synchronization/commerce-data-exchange).
 
 ## Additional resources
 

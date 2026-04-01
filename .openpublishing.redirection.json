@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/lcs/country-region.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/lcs/globalization-resources",
+      "redirect_document_id": "false"  
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/analytics/er-region-dependent-model-mapping",
       "redirect_document_id": "false"  
@@ -28633,6 +28638,16 @@
     {
       "source_path": "articles/supply-chain/warehousing/warehouse-app-intune.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/DFP.md",
+      "redirect_url": "/dynamics365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/whats-new-wma.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
       "redirect_document_id": false
     }
   ]

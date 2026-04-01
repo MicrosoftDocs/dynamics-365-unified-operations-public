@@ -4,7 +4,7 @@ description: This article describes the CFO overview Microsoft Power BI content.
 author: kweekley
 ms.author: jiwo
 ms.topic: concept-article
-ms.date: 08/24/2021
+ms.date: 03/11/2026
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -21,16 +21,17 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)] 
 
-This article describes the **CFO overview** Microsoft Power BI content. This Power BI content applies to those using Microsoft Dynamics 365 Finance version 7.2. If you are using version 7.3 or later, please refer to [Financial Insights](financial-insights.md).
+This article describes the **CFO overview** Microsoft Power BI content. This Power BI content applies to those using Microsoft Dynamics 365 Finance version 7.2. If you're using version 7.3 or later, see [Financial Insights](financial-insights.md).
 
 ## Accessing the Power BI content
 
-Reports from the **CFO overview** Power BI content are shown in the **CFO overview** workspace.
+The **CFO overview** workspace shows reports from the **CFO overview** Power BI content.
 
 ## Reports that are included in the Power BI content
-The **CFO overview** Power BI content is a composite of reports from various other Power BI content, together with some actual and budget balances from General ledger. Therefore, this Power BI content gives the chief financial officer (CFO) an overview of the organization.
 
-The following table shows the Power BI content that the reports are copied from and the reports that are provided in the **CFO overview** workspace. Links are provided to the documentation for the various Power BI content.
+The **CFO overview** Power BI content combines reports from various other Power BI content with some actual and budget balances from General ledger. This Power BI content gives the chief financial officer (CFO) an overview of the organization.
+
+The following table shows the Power BI content that the reports come from and the reports that are provided in the **CFO overview** workspace. Links are provided to the documentation for the various Power BI content.
 
 | Power BI content that is included | Reports |
 |-----------------------------------|---------|

@@ -4,7 +4,7 @@ description: Learn about the Electronic reporting framework APIs changes in the 
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 11/28/2017
+ms.date: 03/12/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -12,26 +12,27 @@ ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
 ---
 
+
 # ER framework API changes for Application update 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 Finance, Enterprise edition Application update 7.3.
+This article describes how the API of the Electronic reporting (ER) framework is changed in Dynamics 365 Finance, Enterprise edition Application update 7.3.
 
-There are two types of changes to the ER APIs:
+Two types of changes affect the ER APIs:
 
-- Several X++ classes were moved from X++ to an external assembly.
-- The rest of X++ classes were marked as internal.
+- Several X++ classes moved from X++ to an external assembly.
+- The rest of X++ classes are internal.
 
-## How to access classes that were moved from X++ to an external assembly
+## How to access classes that moved from X++ to an external assembly
 
-To access external classes, you need to add the **using** directive to the beginning of your file.
+To access external classes, add the **using** directive to the beginning of your file.
 
 ```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
 ```
 
-You can then access an external class without any additional changes, for example.
+You can then access an external class without any additional changes.
 
 ```xpp
 var destination = new ERFileDestinationMemory();
@@ -55,7 +56,7 @@ In Application update 7.3 and later updates, the calling code must access the ER
 
 ### Code to display a format mapping lookup
 
-Before Application update 7.3
+Before application update 7.3
 
 ```xpp
 // pattern
@@ -75,7 +76,7 @@ ERObjectsFactory::createFormatMappingTableLookupForControlAndModel(_referenceGro
 
 ### Code to run a format mapping for data export
 
-Before Application update 7.3
+Before application update 7.3
 
 ```xpp
 // pattern
@@ -95,7 +96,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(erBinding, '', true).r
 
 ### Code to run a format mapping for data import
 
-Before Application update 7.3
+Before application update 7.3
 
 ```xpp
 // pattern
@@ -115,7 +116,7 @@ ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId(custPaymMod
 
 ### Code to create a browser file destination
 
-Before Application update 7.3
+Before application update 7.3
 
 ```xpp
 // sample code
@@ -131,7 +132,7 @@ ERObjectsFactory::createFileDestinationBrowser();
 
 ### Code to create an attachment file destination
 
-Before Application update 7.3
+Before application update 7.3
 
 ```xpp
 // pattern
@@ -148,6 +149,5 @@ ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about how you can use the SysAppWorkspace class to configure 
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/31/2024
+ms.date: 03/17/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-07-20
@@ -17,109 +17,110 @@ ms.custom:
 [!include [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
-Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following categories of APIs are available for use in sysAppWorkspace
+Use the workspace class, **SysAppWorkspace**, to create, configure, and publish workspaces on the server. The sysAppWorkspace class provides the following categories of APIs:
 
-- **Workspace attributes** - This is used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. 
-    - Download the sample project for Fleet Management Mobile App. This is an .axpp file found at [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
-    - After downloading the file, open Visual Studio on your Operations development environment, select **Dynamics 365 > Import Project**, and browse for the downloaded project file. On the same dialog box, select **Overwrite** and select **Create a new solution**. After the import is complete, build the solution (or build the Fleet Management model). 
-    - To review the example, start by reviewing the FMReservationManagementWorkspace class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.
-    - A mobile workspace can be created through designer pane, using X++ attribute APIs or a combination of both. See the "Use the workspace class to publish workspaces from AOT resources" section below for more details about how to import mobile app metadata from designer to AOT. The sample project Fleet Management Mobile App is a complete mobile app built using X++ attribute APIs.
+- **Workspace attributes** - Use these APIs to create pages, tasks, entities, lookups, and relationships to build mobile workspaces.
+  - Download the sample project for Fleet Management Mobile App. This project is an .axpp file available at [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
+  - After downloading the file, open Visual Studio on your Operations development environment, select **Dynamics 365 > Import Project**, and browse for the downloaded project file. On the same dialog box, select **Overwrite** and select **Create a new solution**. After the import finishes, build the solution (or build the Fleet Management model).
+  - To review the example, start by reviewing the FMReservationManagementWorkspace class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.
+  - You can create a mobile workspace through the designer pane, by using X++ attribute APIs, or by using a combination of both. For more details about how to import mobile app metadata from designer to AOT, see the "Use the workspace class to publish workspaces from AOT resources" section. The sample project Fleet Management Mobile App is a complete mobile app built by using X++ attribute APIs.
 
-- **Workspace metadata classes** - This is used to inspect and apply server-side business logic to metadata for mobile workspaces. 
+- **Workspace metadata classes** - Use these APIs to inspect and apply server-side business logic to metadata for mobile workspaces.
 
 For a complete list of server-side APIs, see [Server-side development (workspace X++ APIs)](../mobile-workspace-server-apis.md).
 
-
 ## Create a new workspace class
-To use the **SysAppWorkspace** class for your workspace, you must create a new class for the workspace by extending the **SysAppWorkspace** class. You can then use the new class to modify workspace metadata. The new class also provides hooks for life cycle management of the mobile app.
+
+To use the **SysAppWorkspace** class for your workspace, create a new class for the workspace that extends the **SysAppWorkspace** class. Use the new class to modify workspace metadata. The new class also provides hooks for life cycle management of the mobile app.
 
 Follow these steps to create a new workspace class for your workspace.
 
 1. Create a new class for your workspace, and extend it from the **SysAppWorkspace** class.
 
-    ![Workspace class.](media/workspace-api/WorkspaceClass.png)
+    :::image type="content" source="media/workspace-api/WorkspaceClass.png" alt-text="Screenshot of the workspace class.":::
 
-2. Add the **SysAppWorkspaceAttribute** attribute to the new class, and provide the **AppID** value of your workspace. You can find the app ID for your app on the **Summary** page in the mobile app designer.
+1. Add the **SysAppWorkspaceAttribute** attribute to the new class, and provide the **AppID** value for your workspace. You can find the app ID for your app on the **Summary** page in the mobile app designer.
 
-    ![App ID in the workspace summary.](media/workspace-api/workspaceSummary.png)
+    :::image type="content" source="media/workspace-api/workspaceSummary.png" alt-text="Screenshot of the app ID in the workspace summary.":::
 
-    ![AppID value in the workspace class.](media/workspace-api/WorkspaceClassWithAppId.png)
+    :::image type="content" source="media/workspace-api/WorkspaceClassWithAppId.png" alt-text="Screenshot of the AppID value in the workspace class.":::
 
-3. Optional: If your workspace is an Application Object Tree (AOT) resource, provide the AOT resource name as the second parameter for the **SysAppWorkspaceAttribute** constructor.
+1. (Optional) If your workspace is an Application Object Tree (AOT) resource, provide the AOT resource name as the second parameter for the **SysAppWorkspaceAttribute** constructor.
 
-    ![AOT resource name in the workspace class.](media/workspace-api/WorkspaceClassWithAOTResource.png)
+    :::image type="content" source="media/workspace-api/WorkspaceClassWithAOTResource.png" alt-text="Screenshot of the AOT resource name in the workspace class.":::
 
 ## Use the workspace class to publish workspaces from AOT resources
-Workspaces can reside in the database. They can also reside in the AOT as resources. To provide visibility into workspaces that are stored in AOT resources, you must create a workspace class and point it to the name of the AOT resource that contains the workspace. Workspaces that are stored as AOT resources can't be edited or deleted by using the mobile app designer. Those workspace can only be exported.
+
+Workspaces can reside in the database or in the AOT as resources. To provide visibility into workspaces that are stored in AOT resources, you must create a workspace class and point it to the name of the AOT resource that contains the workspace. You can't edit or delete workspaces that are stored as AOT resources by using the mobile app designer. You can only export those workspaces.
 
 Follow these steps to publish a workspace that resides in an AOT resource.
 
-1. When you're developing a workspace that is stored in the database, you must export it from the mobile app designer so that it can be stored as an AOT resource. The workspace is exported as an XML file.
+1. When you're developing a workspace that is stored in the database, export it from the mobile app designer so that you can store it as an AOT resource. Export the workspace as an XML file.
 
-    ![Export a workspace.](media/workspace-api/ExportWorkspace.png)
+    :::image type="content" source="media/workspace-api/ExportWorkspace.png" alt-text="Screenshot of exporting a workspace.":::
 
-2. Delete the workspace from the mobile app designer. You will load it from an AOT resource later.
+1. Delete the workspace from the mobile app designer. You will load it from an AOT resource later.
 
-    ![Delete a workspace.](media/workspace-api/DeleteWorkspace.png)
+    :::image type="content" source="media/workspace-api/DeleteWorkspace.png" alt-text="Screenshot of deleting a workspace.":::
 
-3. Create a new AOT resource, and select the exported workspace for the resource.
+1. Create a new AOT resource, and select the exported workspace for the resource.
 
-    ![Workspace as resource.](media/workspace-api/WorkspaceAsResource.png)
+    :::image type="content" source="media/workspace-api/WorkspaceAsResource.png" alt-text="Screenshot of the workspace as a resource.":::
 
-4. Create a new class for your workspace. This class should extend **SysAppWorkspace**. Apply the **SysAppWorkspaceAttribute** attribute to the class, and provide the app ID and the AOT resource name that contains the resource.
+1. Create a new class for your workspace. Extend this class from **SysAppWorkspace**. Apply the **SysAppWorkspaceAttribute** attribute to the class, and provide the app ID and the AOT resource name that contains the resource.
 
-    ![New workspace class.](media/workspace-api/NewWorkspaceClass.png)
+    :::image type="content" source="media/workspace-api/NewWorkspaceClass.png" alt-text="Screenshot of the new workspace class.":::
 
-5. Build the class, and reopen the mobile app designer.
+1. Build the class, and reopen the mobile app designer.
 
-    The workspace is now published. It appears in the designer, but can't be edited or deleted. Note that the workspace is loaded from metadata.
+    You published the workspace. It appears in the designer, but you can't edit or delete it. The workspace is loaded from metadata.
 
-    ![Workspace in metadata.](media/workspace-api/WorkspaceInMetadata.png)
+    :::image type="content" source="media/workspace-api/WorkspaceInMetadata.png" alt-text="Screenshot of the workspace in metadata.":::
 
-## Update a workspace that has already been published
-If your workspace is part of an AOT resource, you can't edit it by using the mobile app designer. In the following example, a workspace that is named **MyWorkspace** exists in the AOT, and it has a backing class that is named **WorkspaceInAOT**.
+## Update a workspace that you already published
 
-![Workspace in the AOT.](media/workspace-api/UpdateWorkspaceInAOT.png)
+If your workspace is part of an AOT resource, you can't edit it by using the mobile app designer. In the following example, a workspace named **MyWorkspace** exists in the AOT, and it has a backing class named **WorkspaceInAOT**.
 
-![Workspace in the AOT and published.](media/workspace-api/UpdateWorkspaceInAOTAndPublished.png)
+:::image type="content" source="media/workspace-api/UpdateWorkspaceInAOT.png" alt-text="Screenshot of the workspace in the AOT.":::
+
+:::image type="content" source="media/workspace-api/UpdateWorkspaceInAOTAndPublished.png" alt-text="Screenshot of the workspace in the AOT and published.":::
 
 Follow these steps to edit the workspace.
 
 1. Export the workspace by using the mobile app designer. The designer automatically creates new app IDs for workspaces that are stored in the AOT.
-2. Import the newly exported workspace by using the mobile app designer.
+1. Import the newly exported workspace by using the mobile app designer.
 
-   1. Optional: Change the name so that the newly added workspace can be distinguished from other workspaces.
-   2. Copy the app ID of the newly created workspace.
+   1. (Optional) Change the name so that you can distinguish the newly added workspace from other workspaces.
+   1. Copy the app ID of the newly created workspace.
 
-      ![New workspace in database.](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
+      :::image type="content" source="media/workspace-api/UpdateWorkspaceNewWorkspace.png" alt-text="Screenshot of the new workspace in database.":::
 
-      ![New workspace details.](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
+      :::image type="content" source="media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png" alt-text="Screenshot of the new workspace details.":::
 
-3. Create a new class that extends your backing class, apply the **SysAppWorkspaceAttribute** attribute, and specify the new app ID.
+1. Create a new class that extends your backing class, apply the **SysAppWorkspaceAttribute** attribute, and specify the new app ID.
 
-    ![Code editor with SysAppWorkspaceAttribute.](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
+    :::image type="content" source="media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png" alt-text="Screenshot of the code editor with SysAppWorkspaceAttribute.":::
 
-You can now continue to work with your new workspace and the backing class. After you've finished making your changes, you can merge them with the AOT-based workspace.
+You can now continue to work with your new workspace and the backing class. After you finish making your changes, you can merge them with the AOT-based workspace.
 
 ## Delete a workspace that is an AOT resource
-When a mobile workspace is stored as an AOT resource, you can't delete it by using the mobile app designer. Follow these steps to delete a workspace that exists as an AOT resource.
+
+When you store a mobile workspace as an AOT resource, you can't delete it by using the mobile app designer. To delete a workspace that exists as an AOT resource, use the following steps.
 
 1. Delete the AOT resource that contains the workspace.
 
-    ![Workspace to delete.](media/workspace-api/WorkspaceAsResourceToBeDeleted.png)
+    :::image type="content" source="media/workspace-api/WorkspaceAsResourceToBeDeleted.png" alt-text="Screenshot of the workspace to delete.":::
 
-2. Delete the workspace class that was created for the workspace.
+1. Delete the workspace class that you created for the workspace.
 
-    ![Workspace class to delete.](media/workspace-api/WorkspaceClassToBeDeleted.png)
+    :::image type="content" source="media/workspace-api/WorkspaceClassToBeDeleted.png" alt-text="Screenshot of the workspace class to delete.":::
 
-3. Do a full model build that contains the AOT resource and the class. The following illustrations shows a full build of the Application Foundation model. The Application Foundation model also contains the AOT resource and workspace class. To speed up the full build, you can clear all the selections on the **Options** tab.
+1. Run a full model build that includes the AOT resource and the class. The following illustrations show a full build of the Application Foundation model. The Application Foundation model also contains the AOT resource and workspace class. To speed up the full build, you can clear all the selections on the **Options** tab.
 
-    ![Full build menu item.](media/workspace-api/FullBuildMenuItem.png)
+    :::image type="content" source="media/workspace-api/FullBuildMenuItem.png" alt-text="Screenshot of the full build menu item.":::
 
-    ![Full build.](media/workspace-api/FullBuild.png)
+    :::image type="content" source="media/workspace-api/FullBuild.png" alt-text="Screenshot of the full build.":::
 
-4. When the build is completed, reopen the mobile app designer, and verify that the workspace is no longer there.
-
-
+1. When the build finishes, reopen the mobile app designer, and verify that the workspace is no longer there.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

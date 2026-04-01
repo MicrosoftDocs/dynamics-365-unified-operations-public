@@ -186,17 +186,17 @@
           href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/supply-chain
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/supply-chain
-        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
+        - name: Subscriptions, Lifecycle Services projects, and Microsoft Entra tenants FAQ
           href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/supply-chain
         - name: Move environments between data centers
           href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/supply-chain
         - name: Move licenses between agreement types
           href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/supply-chain
-        - name: Move LCS implementation projects to different Microsoft Entra tenants
+        - name: Move Lifecycle Services implementation projects to different Microsoft Entra tenants
           href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/supply-chain
-        - name: Move LCS implementation projects from on-premises to cloud
+        - name: Move Lifecycle Services implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/supply-chain
-        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
+        - name: Multiple Lifecycle Services projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
@@ -207,7 +207,7 @@
       - name: Globalization Studio overview
         href: ../finance/localizations/global/globalization-studio-overview.md?context=/dynamics365/context/supply-chain
       - name: Globalization resources
-        href: ../fin-ops-core/fin-ops/lcs/country-region.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/fin-ops/lcs/globalization-resources.md?context=/dynamics365/context/supply-chain
       - name: Globalization services
         items:
         - name: Globalization services overview
@@ -1337,13 +1337,13 @@
         items:
         - name: Manage configurations lifecycle
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?context=/dynamics365/context/supply-chain
-        - name: Lifecycle Services (LCS)
+        - name: Lifecycle Services
           items:
-          - name: Upload configurations into LCS
+          - name: Upload configurations into Lifecycle Services
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?context=/dynamics365/context/supply-chain
-          - name: Import configurations from LCS
+          - name: Import configurations from Lifecycle Services
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?context=/dynamics365/context/supply-chain
-          - name: Download configurations from LCS
+          - name: Download configurations from Lifecycle Services
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/supply-chain
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/supply-chain
@@ -1627,7 +1627,7 @@
             href: inventory/quality-operations.md
           - name: Nonconformance operation charges
             href: inventory/quality-charges.md
-        - name: Sample management (preview)
+        - name: Sample management
           items:
           - name: Sample management overview
             href: inventory/quality-sample-management-overview.md
@@ -1745,6 +1745,8 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Configure and manage financial dimension links to sites
+          href: cost-management/financial-dimension-links.md
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Consolidate inventory transactions
@@ -2371,6 +2373,8 @@
           href: unified-pricing-management/upm-concurrence-cross-codes.md
       - name: Calculate prices and discounts without creating sales orders
         href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
+      - name: Calculate prices for external systems through the pricing calculation API
+        href: unified-pricing-management/upm-pricing-calculation-api.md
       - name: Pricing data import and export entities
         href: unified-pricing-management/upm-pricing-data-entities.md
     - name: Procurement and sourcing
@@ -2457,6 +2461,8 @@
           href: procurement/supplier-com-agent-overview.md
         - name: Set up and configure the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup.md
+        - name: Use the agent deployment wizard to set up the Supplier Communications Agent (preview)
+          href: procurement/supplier-com-agent-setup-wizard.md
         - name: Solve common problems when setting up the Supplier Communications Agent
           href: procurement/supplier-com-agent-setup-faq.md
         - name: Test the Supplier Communications Agent
@@ -3165,6 +3171,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
+        - name: Calculate sales totals
+          href: sales-marketing/calculate-sales-totals.md
         - name: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)
           href: sales-marketing/pay-by-link-with-adyen-connector.md
         - name: Sales order FAQs
@@ -3944,13 +3952,15 @@
       - name: The Warehouse Management mobile app
         items:
         - name: What's new or changed in the Warehouse Management mobile app
-          href: warehousing/whats-new-wma.md
+          href: warehousing/warehouse-app-whats-new.md
         - name: Install, set up, and connect mobile devices
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Migrate the Warehouse Management mobile app from V3 to V4
             href: warehousing/warehouse-app-migrating-from-v3-v4.md
+          - name: Support policy for V3 of the Warehouse Management mobile app
+            href: warehousing/warehouse-app-support-info-v3.md
           - name: Use a QR code to connect the mobile app to Supply Chain Management
             href: warehousing/warehouse-app-qr-code.md
           - name: User-based authentication

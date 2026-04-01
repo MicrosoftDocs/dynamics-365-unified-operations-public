@@ -4,7 +4,7 @@ description: Access an overview of the Performance timer, which is a tool that h
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 06/20/2017
+ms.date: 03/16/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -18,28 +18,28 @@ ms.custom: sfi-image-nochange
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
+This article provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow.
 
-To open the Performance timer, open your webpage with the added parameter debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop Note: When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. 
+To open the Performance timer, open your webpage with the added parameter debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop > [!NOTE]
+> When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here.
 
-[![Example of timer located at top of screen.](./media/timer.png)](./media/timer.png) 
+:::image type="content" source="./media/timer.png" alt-text="Screenshot of timer located at top of screen.":::
 
-To open a list page, for example, such as the purchase order list page, click the Performance timer. The following screenshot shows the separation between client time and server time, and the total time. Additionally, you can see a set of performance counters and expensive server calls. 
+To open a list page, for example, such as the purchase order list page, click the Performance timer. The following screenshot shows the separation between client time and server time, and the total time. Additionally, you can see a set of performance counters and expensive server calls.
 
-[![Screen shot showing server performance counters.](./media/2_timer.png)](./media/2_timer.png) 
+:::image type="content" source="./media/2_timer.png" alt-text="Screenshot showing server performance counters.":::
 
 For more information about the server performance counters, click on any of the links.
 
--   **Forms** - Forms will show how many forms are currently open, plus the rate at which they opened and closed (per second), and a set of counters, such as the total amount of created or closed forms.
--   **GC** - This is information about the garbage collection processes on the server.
--   **Web client session** - This shows how many web client sessions you currently have and how many are in use.
--   **Services Session provider** - This is the total number of sessions created.
+- **Forms** - Forms will show how many forms are currently open, plus the rate at which they opened and closed (per second), and a set of counters, such as the total amount of created or closed forms.
+- **GC** - This is information about the garbage collection processes on the server.
+- **Web client session** - This shows how many web client sessions you currently have and how many are in use.
+- **Services Session provider** - This is the total number of sessions created.
 
-For more information, click a link. In the next screen, you can see how many SQL queries were triggered by this individual call and which SQL query was the most expensive. 
+For more information, click a link. In the next screen, you can see how many SQL queries were triggered by this individual call and which SQL query was the most expensive.
 
-[![Example of list of SQL queries triggered by call.](./media/3_timer.png)](./media/3_timer.png) 
+:::image type="content" source="./media/3_timer.png" alt-text="Screenshot of list of SQL queries triggered by call.":::
 
-This information can help you to understand what to trace and where to start troubleshooting. 
-
+This information can help you to understand what to trace and where to start troubleshooting.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

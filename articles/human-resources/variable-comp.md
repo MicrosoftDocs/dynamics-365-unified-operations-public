@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Human Resources
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 
-This article describes the Variable compensation type entity (payintv1hcmvariablecompensationtypeentities) for Dynamics 365 Human Resources. 
+This article describes the Variable compensation type entity for Dynamics 365 Human Resources. 
 
-Physical name: mserp_payintv1hcmvariablecompensationtypeentities
+Physical name: mshr_hcmvariablecompensationtypeentities
 
 ## Description
 
@@ -40,27 +40,27 @@ This entity provides information about the payroll position details.
 
 | Property | Physical name | Type | Use |
 |---|---|---|---|
-| Description | mserp_Description | String | Read-only |
-| Type | mserp_Type | Enum | Read-only |
-| TypeId | mserp_VariableCompensationType | String | Read-only |
+| Description | mshr_Description | String | Read-only |
+| Type | mshr_Type | Enum | Read-only |
+| TypeId | mshr_VariableCompensationType | String | Read-only |
 
 ## Example query for the Variable compensation type entity
 
-Entity name: mserp_payintv1hcmvariablecompensationtypeentities
+Entity name: mshr_hcmvariablecompensationtypeentities
 
 **Request**
 
 ```HTTP
-GET [Organization URI]/api/data/v9.1/mserp_payintv1hcmvariablecompensationtypeentities
+GET [Organization URI]/api/data/v9.1/mshr_hcmvariablecompensationtypeentities
 ```
 
 **Response**
 
 ```JSON
 {  
-    "mserp_description": "Bonus",  
-    "mserp_type": 200000000,  
-    "mserp_variablecompensationtype": "Bonus",  
-    "mserp_dataareaid": "usmf",  
+    "mshr_description": "Bonus",  
+    "mshr_type": 200000000,  
+    "mshr_variablecompensationtype": "Bonus",  
+    "mshr_dataareaid": "usmf",  
 }
 ```
