@@ -45,7 +45,7 @@ This section describes how the Procurement Agent capabilities fit into the procu
 
 ### If using emails through supplier communications to communicate with suppliers together with impact analysis ###
 
-<Diagram>
+:::image type="content" source="media/procurement-agent-supplier-communications-impact-analysis-workflow.png" alt-text="Diagram of the procurement agent workflow showing supplier communications, impact analysis, and decision steps for purchase order changes." lightbox="media/procurement-agent-supplier-communications-impact-analysis-workflow.png":::
   
 1. Send purchase order to vendor
 2. Follow up with vendor for confirmation (supplier communications)
@@ -56,9 +56,9 @@ This section describes how the Procurement Agent capabilities fit into the procu
 7. *No impact*: The purchaser can accept the change and update the purchase order (supplier communications)
 8. *Has impact*: The purchaser can view more details about the impact (impact analysis) and determine how to proceed. This can be to follow up with the supplier, accept the change and update the PO if nothing can be done (supplier communications), cancel the PO, as well as informing stakeholders.
 
-### If using Vendor Collaboration Module to communicateee with suppliers together with impact analysi ##s ## ###
+### If using Vendor Collaboration Module to communicate with suppliers together with impact analysis
 
-<Diagram>
+:::image type="content" source="media/procurement-agent-vendor-collaboration-impact-analysis.png" alt-text="Diagram of the vendor collaboration workflow showing PO change request, impact analysis, and decision steps." lightbox="media/procurement-agent-vendor-collaboration-impact-analysis.png":::
 
 1. Send purchase order to vendor
 2. Receive purchase order change request via the Vendor Collaboration Module's *In external review requires action* tab in the **Purchase order preparation** workspace
@@ -75,4 +75,4 @@ Learn about the billing rates and management for Copilot Studio in [Billing rate
 
 For information about how charges apply to each capability, refer to: [Cost for supplier communications](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/supplier-com-agent-overview#cost) and [Cost for impact analysis](insert link).
 
-Learn about the billing rates and management for Copilot Studio in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management).
+For information about how charges apply to each capability, refer to: [Cost for impact analysis]().
