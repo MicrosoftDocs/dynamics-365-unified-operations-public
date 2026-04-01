@@ -66,7 +66,7 @@ The following NuGet packages are available in the Shared asset library in Micros
   - This package contains the compiled X++ code for the Application Suite module. This code is optimized for building.
   - The name of the package is typically **PUXX/10.X.XX – Application Suite Build Reference**.
 
-These NuGet packages can also be downloaded using the Power Platform Visual Studio extension. For more information, see (Continuous integration and deployment)[/power-platform/developer/unified-experience/finance-operations-pipelines].
+These NuGet packages can also be downloaded using the Power Platform Visual Studio extension. For more information, see [Continuous integration and deployment](/power-platform/developer/unified-experience/finance-operations-pipelines).
 
 > [!NOTE]
 > Lifecycle Services contains six NuGet packages per release. The package that is named **PUXX/10.X.XX – application build reference** is the combined version of **PUXX/10.X.XX – Application 1 Build Reference** and **PUXX/10.X.XX – Application 2 Build Reference**. It isn't needed. The split packages are smaller and can be used instead of the single package.
