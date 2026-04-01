@@ -27,7 +27,7 @@ This feature reduces time and effort for businesses by simplifying the transitio
 
 Before you begin, the following prerequisites must be met:
 
-- The latest Tax Configuration must be imported in Electronic reporting > Tax configurations. For instructions, see [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse) or [Import Electronic reporting (ER) configurations](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations).
+- The [latest Tax Configuration](global-tax-calcuation-service-overview.md#versions) must be imported in Electronic reporting > Tax configurations. For instructions, see [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse) or [Import Electronic reporting (ER) configurations](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations).
 - The **(Preview) Automate tax feature creation based on tax master data** feature must be enabled in the **Feature management** workspace.
 
 ## Enable the feature
@@ -43,7 +43,7 @@ Before you begin, the following prerequisites must be met:
 
 After the process is completed, the system creates the tax feature version in a **Completed** state. The following message is displayed: "The tax feature 'xxx' has been successfully created. You can review the setup in the feature version using the View button. If updates are needed, please create a new version to edit the tax feature."
 
-To review the generated setup, use the **View** button. If changes are needed, create a new version of the feature to make edits.
+To review the generated setup, use the **View** button. If changes are needed, create a new version of the feature to make edits. For details, see [Configure the Tax Calculation feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 
 ## Tax feature creation behavior overview
 
@@ -67,7 +67,7 @@ If a tax code name is already at the maximum length (10 characters) and a varian
 
 The default tax jurisdiction parameters are set based on the General ledger parameter values. If the **Reverse sales tax on cash discount** value in a sales tax group differs from the General ledger parameter, the system displays the following warning: "The default Reverse tax on cash discount parameter differs from the one set in the group(s): 'xxx', 'xxx'. Once the process completes, please manually create rules to ensure proper configuration."
 
-After the tax feature is created, you must manually maintain the tax jurisdiction parameters to ensure the sales tax group-level parameter scenario works correctly.
+After the tax feature is created, you must manually maintain the tax jurisdiction parameters to ensure the sales tax group-level parameter scenario works correctly. For delatils, see [Tax jurisdiction parameters setup](global-tax-jurisdiction-cash-discount-setup.md).
 
 ### Tax group character limit
 
@@ -109,33 +109,26 @@ In the Tax Calculation feature, the rounding precision behaves similarly to the 
 After the process is completed, review the following items:
 
 1. **Tax jurisdiction parameters** – Verify that the mapped parameters from the general ledger match your business requirements. If the **Reverse sales tax on cash discount** value differs at the tax group level, manually create rules in the tax feature setup.
-2. **Duplicate tax codes** – Review any tax codes that were created with suffixes (\_1, \_2, and so on). Check the tax group assignments in the feature parameters to confirm they are correct.
+2. **Tax code variants** – Review any tax code variants that were created with suffixes (\_1, \_2, and so on). Check the tax group assignments in the feature parameters to confirm they are correct.
 3. **Tax code settings** – Verify that tax code origins, rates, and other settings were created correctly.
 4. **Rounding method** – The default rounding method is set to **Ordinary**. Adjust if your business requires a different rounding method.
 5. **No incremental updates** – The process always creates a tax feature based on the full current tax master data. If you modify tax master data after the tax feature is created (for example, add new tax codes, update tax groups, or change tax code settings), those changes are not automatically reflected in the previously created tax feature. To incorporate the changes, you can either create a new version of the tax feature and update the setup manually, or run the **Tax Data Migration** process again to recreate the tax feature from scratch based on the current master data.
 
 After you review and, if needed, update the created tax feature, you can assign it to the legal entity and start using it for tax calculation. To do so, follow the steps in [Set up Tax Calculation in Globalization Studio workspace](/dynamics365/finance/localizations/global/global-get-started-with-tax-calculation-service#set-up-tax-calculation-in-globalization-studio-workspace).
 
-If new tax codes, sales tax groups, or item sales tax groups were created during the tax feature creation process (for example, duplicate tax code variants with suffixes), those records are synchronized back to the core tax tables in Dynamics 365 Finance. For more information, see [Sync the tax setup from the Tax Calculation feature to Finance](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance).
+If new tax codes, sales tax groups, or item sales tax groups were created during the tax feature creation process (for example, tax code variants with suffixes), those records are synchronized back to the core tax tables in Dynamics 365 Finance. For more information, see [Sync the tax setup from the Tax Calculation feature to Finance](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance).
 
+## Key Considerations and Known limitations
 
-## Known limitations
-
-| Limitation | Description |
+| Topic | Description |
 |---|---|
 | One legal entity at a time | The process can only create a tax feature for the legal entity that you are currently signed in to. Switch to the correct legal entity before starting the process. |
 | Manual adjustments for parameters | If tax code attributes differ from ledger parameters or tax groups, you may need to adjust parameters manually after the tax feature is created. |
 | Tax code name limited to 10 characters | Tax codes are limited to a maximum of 10 characters. Longer codes are truncated before a suffix is appended (for example, `Test123456` becomes `Test1234_1`). |
 | Tax group character limit of 1,000 | A tax group or item tax group that contains over 1,000 characters causes an error. The process stops and the following message is displayed: "The tax group 'xxx' contains too many or excessively long tax codes. The total length must not exceed 1000 characters. The process has been cancelled." |
-| Reverse Sales Tax on Cash Discount | If the value of **Reverse sales tax on cash discount** in a sales tax group differs from the default general ledger parameter, you must manually create rules after the tax feature is created to ensure proper configuration. The value is taken from the general ledger. To use the value from the tax group level, adjust it manually. |
+| Reverse Sales Tax on Cash Discount | If the value of **Reverse sales tax on cash discount** in a sales tax group differs from the default General ledger parameter, you must manually create rules after the tax feature is created to ensure proper configuration. [Tax jurisdiction parameters setup](global-tax-jurisdiction-cash-discount-setup.md) |
 | Tax code variant handling | If a tax code (for example, VAT0) exists in different tax groups with different settings (such as exempt or use tax), the process creates separate tax code variants with a suffix (for example, VAT0 and VAT0\_1). The suffixes (\_1, \_2, and so on) are assigned in a non-deterministic order, but the parameter mappings remain correct. To identify which tax group a variant belongs to, check the tax group specified in the feature parameters. |
 | Brazil and India not supported | The functionality is not available for legal entities in Brazil and India. |
-
-
-
-
-
-
 
 ## Additional resources
 
