@@ -45,6 +45,9 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Pending vendor invoice model mapping** (for Danish responses scenarios, if required)
     - **Invoices communication model mapping (ID)** (for Indonesian batch submission scenarios, if required)
     - **Consolidated Invoice Model Mapping (MY)** (for Malaysian batch submission scenarios, if required)
+    - **Invoice status model mapping** (for French lifecycle statuses scenarios, if required)
+    - **AR response context** (for French lifecycle statuses scenarios, if required)
+    - **AP response context** (for French lifecycle statuses scenarios, if required)
 
 ## Set up Electronic document parameters
 
