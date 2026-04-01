@@ -50,6 +50,7 @@ Before you start, make sure these prerequisites are in place:
    - **E-Invoice Document Response Submission**
    - **Export channels for electronic invoicing integration**
    - **Execute update actions for submitted documents**
+   - **Establishment and Registration ID governance on invoices** if your scenarios assume multiple Registration IDs for Sellers and/or Buyers, such as SIREN, SIRET, VAT ID and Branch ID (electronic address).
     
 ## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
@@ -231,6 +232,18 @@ Optinally, to configure the Tax exempt number, follow these steps.
 1. Create a registration category.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **VAT ID**.
+
+### <a id="VAT"></a>Set up Branch ID 
+
+If configured, Branch IDs will be used as electronic addresses for documents routing. To configure the Branch ID, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+1. Create a registration type.
+1. In the **Country/region** field, select **FRA - France**.
+1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+1. Create a registration category.
+1. In the **Registration types** field, select the registration type that you created in step 2.
+1. In the **Registration categories** field, select **Branch ID**.
 
 ## Set up address structure
 
@@ -433,7 +446,7 @@ After you complete the required configuration steps, generate and submit electro
 To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 > [!NOTE]
-> During this stage, the system performs 2 first actions from the **French electronic invoice (FR) ZZZZZZZ** feature for the related invoice: generates the XML file of the electronic invoice in the required format and, if the first action is successfull, submits the generated XML file to Edicom.
+> During this stage, the system performs 2 first actions from the **French electronic invoice (FR)** feature for the related invoice: generates the XML file of the electronic invoice in the required format and, if the first action is successfull, submits the generated XML file to Edicom.
 
 Check the submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md). The documents can have either **Falied** submission status, if there were either Electronic Reporting run-time errors or Edicom portal is unreachable, or **Pending service response** submission status, when ready for further processing.
 
