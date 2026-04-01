@@ -98,16 +98,16 @@ In this example, you create a configuration for the sample company, Litware, Inc
     :::image type="content" source="media/er-calculated-field-type-02.png" alt-text="Screenshot of Format designer page.":::
 
 3. Select **Mapping**.
-1. Expand the **Model**, **Data,** and **Summary** items. 
+1. Expand the **Model**, **Data,** and **Summary** items.
 
-    The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None**, or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
+   The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None**, or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
 
     :::image type="content" source="media/er-calculated-field-type-03.png" alt-text="Screenshot of Format designer page showing details of the Data model Model to learn parameterized calls.":::
 
 1. Expand the **Model.Data2** item.
 1. Expand the **Model.Data2.Summary2** item.
    
-    The **Model.Data2.Summary2** data source is configured to group the **Model.Data.Summary** data source transaction details by taxation level (returned by the **Model.Data.Summary.Level** calculated field) and compute the aggregations.
+   The **Model.Data2.Summary2** data source is configured to group the **Model.Data.Summary** data source transaction details by taxation level (returned by the **Model.Data.Summary.Level** calculated field) and compute the aggregations.
 
     :::image type="content" source="media/er-calculated-field-type-04.png" alt-text="Screenshot of Format designer page showing details of the Model.Data2.Summary2 data source.":::
 
@@ -146,11 +146,11 @@ You can improve the provided format by adding one calculated field to filter the
 1. In the **Name** field, enter **Taxation Level**.
 1. In the **Type** field, select **String**.
 
-    You can only use primitive data types to specify the type of the parameter’s argument. Therefore, you can't use **Record list**, **Record**, or **Enum** types for this purpose.
+   You can only use primitive data types to specify the type of the parameter’s argument. Therefore, you can't use **Record list**, **Record**, or **Enum** types for this purpose.
 
-    You can specify up to eight parameters for a single calculated field.
+   You can specify up to eight parameters for a single calculated field.
 
-    :::image type="content" source="media/er-calculated-field-type-05.png" alt-text="Screenshot of Parameter data source list.":::
+   :::image type="content" source="media/er-calculated-field-type-05.png" alt-text="Screenshot of Parameter data source list.":::
 
 1. Select **OK**.
 
