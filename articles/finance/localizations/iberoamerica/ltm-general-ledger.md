@@ -21,16 +21,24 @@ This article describes the steps that are required to set up and print the gener
 
 Before you print the general ledger report, the following prerequisites must be met:
 
-
 - The legal entity must have an address in a country/region that's within the LATAM localization.
 - The country/region-specific LATAM feature and the general feature must be enabled.
-- The following ER configurations must be imported from the Global repository:
+- Download the specific report configurations from the Dataverse configuration repository. These formats are applicable to all LATAM countries, except Colombia and Peru
 
-  - Ledger accounting reports
-  - Ledger Accounting LATAM
-  - General Ledger LATAM
+| Element |                    Format name                    |
+|:-------:|:-------------------------------------------------:|
+| Model   | :::no-loc text="Ledger Accounting LATAM":::                               |
+| Format  | :::no-loc text="General Ledger LATAM":::                         |
 
-    For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+> [!IMPORTANT]
+> For Colombia and Peru, specific formats must be imported.
+> | Country |                    Format name                    |
+> |:-------:|:-------------------------------------------------:|
+> | Colombia   | :::no-loc text="General Ledger CO":::                               |
+> | Peru  | :::no-loc text="General Ledger PE":::                         |
+
+Learn more in [Import electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- Configure the electronic reporting (ER) parameters. Learn more in [Configure the electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
 - The SSRS Reports/Services references must be configured in the following way:
 
