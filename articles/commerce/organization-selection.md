@@ -9,7 +9,7 @@ ms.search.region: Global
 ms.author: v-jcavataio
 ms.search.validFrom: 2022-04-21
 ms.search.form: RetailOperations
-ms.custom: 
+ms.custom:
   - bap-template
 ---
 
