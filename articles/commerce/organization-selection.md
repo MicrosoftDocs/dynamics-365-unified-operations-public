@@ -23,7 +23,7 @@ The organization selection module is a special container for listing all the org
 
 The following illustration shows an example of an organization selection module.
 
-:::image type="content" source="./media/organization-select-sample.png" alt-text="Screenshot of an organization selection module that lists three Organizations.":::
+:::image type="content" source="./media/organization-select-sample.png" alt-text="Screenshot of an organization selection module that lists three organizations.":::
 
 ## Add an Organization selection module to your site
 
