@@ -4059,6 +4059,12 @@
           href: inventory/warehouse-template.md
         - name: Warehouse groups
           href: warehousing/warehouse-groups.md
+        - name: Warehouse spatial locations (preview)
+          items:
+          - name: Warehouse spatial location overview
+            href: warehousing/spatial-location-overview.md
+          - name: Set up warehouse spatial locations
+            href: warehousing/spatial-locations-setup.md
         - name: Control work by using work templates and location directives
           href: warehousing/control-warehouse-location-directives.md
         - name: Work with location directives

@@ -35,12 +35,12 @@ The *warehouse spatial location* feature employs the following key concepts:
 
 When the *Sort picking work lines* step runs during wave processing, the system performs the following steps for each work record:
 
-1. **Identifies the first put line** in the work. This is the destination where the worker delivers the picked items.
-1. **Collects all pick lines before the first put line.** Only these lines are sorted. Any lines after the first put (such as additional pick/put cycles in the same work) remain in their original positions.
-1. **Validates the work.** The system checks that there are at least two pick lines to sort, that the put location has valid coordinates, and that at least one pick location has valid coordinates. If validation fails, the work is skipped and the pick lines remain in their original order.
-1. **Calculates distances** between locations using the warehouse's configured distance calculation strategy.
-1. **Sorts the pick lines** using the warehouse's configured sorting algorithm so that the farthest pick location is first and the nearest pick location (closest to the put location) is last.
-1. **Renumbers the sorted pick lines** in the database so that the new order is preserved when the work is executed.
+1. *Identify the first put line in the work.* This line is the destination where the worker delivers the picked items.
+1. *Collect all pick lines before the first put line.* The system sorts only these lines. Any lines after the first put line (such as additional pick and put cycles in the same work) remain in their original positions.
+1. *Validate the work.* The system checks that there are at least two pick lines to sort, that the put location has valid coordinates, and that at least one pick location has valid coordinates. If validation fails, the system skips the work and keeps the pick lines in their original order.
+1. *Calculate distances between locations* by using the warehouse's configured distance calculation strategy.
+1. *Sort the pick lines* by using the warehouse's configured sorting algorithm so that the farthest pick location is first and the nearest pick location (closest to the put location) is last.
+1. *Renumber the sorted pick lines* in the database so that the new order is preserved when the work is done.
 
 ## Sorting algorithms
 
@@ -48,23 +48,23 @@ The *location sorting algorithm* controls how the system determines the order of
 
 ### Fast calculation algorithm
 
-The *fast calculation algorithm* is best for warehouses that need quick route calculation with good (but not always optimal) results. It works well when pick locations are spread evenly or arranged in lines. It uses a nearest-neighbor approach:
+The *fast calculation algorithm* works best for warehouses that need quick route calculation with good (but not always optimal) results. It works well when pick locations are spread evenly or arranged in lines. It uses a nearest-neighbor approach:
 
 1. Starting at the put location, the system finds the closest unvisited pick location.
-2. From that location, it finds the next closest unvisited pick location.
-3. This continues until all pick locations have been visited.
-4. The resulting route visits locations from nearest-to-farthest (relative to the put). The system then reverses the route so that the worker starts at the farthest location and ends at the nearest.
+1. From that location, it finds the next closest unvisited pick location.
+1. This process continues until all pick locations are visited.
+1. The resulting route visits locations from nearest-to-farthest (relative to the put). The system then reverses the route so that the worker starts at the farthest location and ends at the nearest.
 
 This algorithm is fast because it makes a single pass through the pick locations. However, because it always chooses the next closest location, it can produce routes with crossing paths when locations are spread across the warehouse in complex patterns.
 
 ### Optimized route algorithm
 
-The *optimized route algorithm* is best for warehouses where minimizing total travel distance is critical, especially when pick locations are clustered in groups or scattered in patterns where the nearest-neighbor approach produces crossing paths. It starts with the same nearest-neighbor route as fast calculation, and then improves it:
+The *optimized route algorithm* works best in warehouses where minimizing total travel distance is critical. This algorithm is especially useful when pick locations are clustered in groups or scattered in patterns where the nearest-neighbor approach produces crossing paths. It starts with the same nearest-neighbor route as fast calculation, and then improves it:
 
 1. The system builds the same initial route as fast calculation (as described in the previous section).
-2. It then repeatedly examines pairs of segments in the route and checks whether reversing the section between them produces a shorter total distance.
-3. When a shorter route is found, the system applies the change and continues checking.
-4. The process repeats until no further improvements are found or the maximum number of improvement passes is reached.
+1. It repeatedly examines pairs of segments in the route and checks whether reversing the section between them produces a shorter total distance.
+1. When it finds a shorter route, the system applies the change and continues checking.
+1. The process repeats until no further improvements are found or the maximum number of improvement passes is reached.
 
 The additional optimization step can eliminate crossing paths and produce noticeably shorter routes, especially for complex pick patterns. The trade-off is slightly longer calculation time.
 
@@ -87,7 +87,7 @@ Consider a warehouse with a put location (bay door) at coordinates (1, 1, 1) and
 | PICK-D | 25 | 25 | 1 |
 | PICK-E | 25 | 50 | 1 |
 
-- **Fast calculation result** – The nearest-neighbor approach starts at the put (1, 1, 1) and repeatedly selects the closest unvisited location. It then reverses the result. This can produce a route where the worker's path crosses itself, such as: *PICK-C \> PICK-A \> PICK-E \> PICK-B \> PICK-D \> Put*.
+- **Fast calculation result** – The nearest-neighbor approach starts at the put (1, 1, 1) and repeatedly selects the closest unvisited location. It then reverses the result. This approach can produce a route where the worker's path crosses itself, such as: *PICK-C \> PICK-A \> PICK-E \> PICK-B \> PICK-D \> Put*.
 - **Optimized route result** – The algorithm starts with the same route, then detects that reversing certain segments eliminates crossing paths. The result is a loop-free route with shorter total distance, such as: *PICK-C \> PICK-B \> PICK-D \> PICK-E \> PICK-A \> Put*.
 
 > [!TIP]
@@ -95,11 +95,11 @@ Consider a warehouse with a put location (bay door) at coordinates (1, 1, 1) and
 
 ## Distance calculation strategies
 
-The *distance calculation strategy* controls how the system measures the distance between two locations. The sorting algorithm uses these distances to determine which pick locations are closer or farther from the put location and from each other. The choice of strategy should match your warehouse layout so that the calculated distances reflect the actual paths that workers follow.
+The *distance calculation strategy* controls how the system measures the distance between two locations. The sorting algorithm uses these distances to determine which pick locations are closer or farther from the put location and from each other. Choose a strategy that matches your warehouse layout so that the calculated distances reflect the actual paths that workers follow.
 
 ### Straight line calculation strategy
 
-The *straight-line calculation strategy* is best for open warehouse layouts where workers can move diagonally, such as open floor areas or wide-aisle warehouses. It calculates the direct (Euclidean) distance between two points. It assumes that workers can move freely in any direction between locations. It's calculated using the formula:
+The *straight-line calculation strategy* works best for open warehouse layouts where workers can move diagonally, such as open floor areas or wide-aisle warehouses. It calculates the direct (Euclidean) distance between two points. It assumes that workers can move freely in any direction between locations. It's calculated using the formula:
 
     $distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (\lvert z_2 \rvert + \lvert z_1 \rvert)^2}$
 
@@ -107,7 +107,7 @@ The horizontal component uses the difference in X and Y coordinates. The vertica
 
 ### City block calculation strategy
 
-The *city-block calculation strategy* is best for warehouses with aisle-based layouts where workers must walk along aisles and turn corners rather than cutting across open space. It calculates the distance along a grid-like path (also known as Manhattan distance). It assumes that workers must follow aisles and can't cut diagonally. It's calculated using the formula:
+The *city-block calculation strategy* works best for warehouses with aisle-based layouts where workers walk along aisles and turn corners rather than cutting across open space. It calculates the distance along a grid-like path (also known as Manhattan distance). It assumes that workers must follow aisles and can't cut diagonally. It's calculated using the formula:
 
     $distance = \lvert x_2 - x_1 \rvert + \lvert y_2 - y_1 \rvert + \lvert z_2 \rvert + \lvert z_1 \rvert$
 
@@ -122,7 +122,7 @@ For example, to move from shelf level 1 to shelf level 4, the vertical distance 
 This approach models the real cost of vertical movement in a warehouse. A worker can't move directly from one shelf level to another. Instead, the worker must climb down from the current level to the ground (costing the full height of that level) and then climb up to the target level (costing the full height of that level). For example, using a ladder or lift to descend from level 1 and then ascend to level 4 requires more effort than a simple height difference of 3 suggests.
 
 > [!IMPORTANT]
-> Two locations at the same shelf level (for example, both at Z = 2) still have a vertical distance of |2| + |2| = 4, not 0. This reflects the fact that even on the same level, a worker must reach up to that shelf height at both the source and destination. If your warehouse has all locations on the ground level, set Z = 0 for all locations to eliminate the vertical component from distance calculations.
+> Two locations at the same shelf level (for example, both at Z = 2) still have a vertical distance of |2| + |2| = 4, not 0. This result reflects the reality that even on the same level, a worker must reach up to that shelf height at both the source and destination. If your warehouse has all locations on the ground level, set Z = 0 for all locations to eliminate the vertical component from distance calculations.
 
 ### Distance calculation examples
 
