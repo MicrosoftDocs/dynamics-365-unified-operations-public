@@ -468,7 +468,7 @@ Check the results at **Organization administration** \> **Periodic** \> **Electr
 
 ### Update statuses of submited e-invoices
 
-As a part of documents lifecycle, for successfully submitted invoices, there is a possibility that some responses from Buyers come later on. Those responses can affect the statuses of submitted document. To keep documents statuses up to date, run the procedure described below.
+As a part of documents lifecycle, for successfully submitted invoices, there is a possibility that some responses from Buyers come later on. Those responses can affect the statuses of submitted documents. To keep documents statuses up to date, run the procedure described below.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
 1. Select any document and run **Functions** \> **Execute update actions** from the menu.
@@ -476,8 +476,12 @@ As a part of documents lifecycle, for successfully submitted invoices, there is 
 
 > [!NOTE]
 > You can also configure periodic running this procedure in background to avoid manual intervention.
->
-> Terminate
+
+The procedure can be run multiple times retrieving various lifecycle documents statuses from Edicom until any **termination** status code is reached or a predefined **timeout** occurred. 
+
+The statuses codes for successfull or unsuccessfull termination and the timeout period in days can be configured in the related feature setup parameters. 
+
+:::image type="content" source="e-inv-fra-termination.jpg" alt-text="Screenshot of termination parameters configuration.":::
 
 ### Configure documents statuses
 
