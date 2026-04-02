@@ -560,6 +560,8 @@ The list of the status codes used for electronic invoicing in Microsoft D365 Fin
 | 212 | Payment received | **Mandatory** | The invoice is fully paid by the recipient. |
 | 213 | Rejected | **Mandatory** | The invoice is technically rejected by either issuer's or receiver's PA. |
 
+> [!NOTE]
+> The full list of statuses can be found in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
 
 ## More information
 
