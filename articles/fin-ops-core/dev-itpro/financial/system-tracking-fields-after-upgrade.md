@@ -4,7 +4,7 @@ description: Learn about the system tracking fields that are enabled on tables a
 author: anaborges
 ms.author: anaborges
 ms.topic: article
-ms.date: 03/06/2026
+ms.date: 04/03/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -27,19 +27,19 @@ Various tables across the application have system tracking fields enabled on the
 - **ModifiedBy** – The user who last modified the record.
 - **ModifiedDateTime** – The date and time when the record was last modified.
 
-These fields support auditing capabilities and assist with data integrity investigations. They're maintained automatically by the system and don't require any user input.
+These fields support auditing capabilities and assist with data integrity investigations. The system maintains these fields automatically and doesn't require any user input.
 
 ## Where to view these fields
 
-These fields aren't shown on standard form layouts. To view them, navigate to **Options** > **Record info** > **Show all fields** on the relevant form.
+Standard form layouts don't show these fields. To view them, go to **Options** > **Record info** > **Show all fields** on the relevant form.
 
-The fields can also be observed through direct SQL queries or the **SysTableBrowser** tool.
+You can also see these fields through direct SQL queries or by using the **SysTableBrowser** tool.
 
 ## Tables with system tracking fields
 
-System tracking fields are enabled on tables across multiple areas of the application, including tables in the General Ledger and Financial Dimensions area such as **MainAccount** and **DimensionAttributeValue**.
+The application enables system tracking fields on tables across multiple areas, including tables in the General Ledger and Financial Dimensions area such as **MainAccount** and **DimensionAttributeValue**.
 
 > [!NOTE]
-> If you recently upgraded to version 10.0, you may notice that existing records show the upgrade date in the **CreatedDateTime** and **ModifiedDateTime** fields. This is expected. Because these columns didn't exist on the table before the upgrade, the database synchronization (dbSync) process populates them with the current date and time when the columns are added. The system can't determine the original creation or modification dates for records that existed before tracking was enabled. All records created or modified after the upgrade reflect accurate dates.
+> If you recently upgraded to version 10.0, you might notice that existing records show the upgrade date in the **CreatedDateTime** and **ModifiedDateTime** fields. This date is expected. Because these columns didn't exist on the table before the upgrade, the database synchronization (dbSync) process adds the current date and time when it adds the columns. The system can't determine the original creation or modification dates for records that existed before tracking was enabled. All records created or modified after the upgrade reflect accurate dates.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
