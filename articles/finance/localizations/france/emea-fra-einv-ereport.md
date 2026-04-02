@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.48
 
 # Electronic invoicing and Electronic reporting for France
 
-This article helps you get started with electronic invoicing and electronic reporting for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified Partner Agent acting as the last mile connector.
+This article helps you get started with electronic invoicing and electronic reporting for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance via a certified Partner Agent (**PA**) acting as the last mile connector.
 
 :::image type="content" source="emea-fra-einoices-flow.jpg" alt-text="Screenshot of the e-invoicing and e-rporting flow for France.":::
 
@@ -33,7 +33,7 @@ Before you start, make sure these prerequisites are in place:
 - The company is a registered taxpayer in France.
 - The company has a signed agreement with the certified Partner Agent and obtained the credentials required for esablishing a secure connection to Partner Agent's infrastructure.
   > [!NOTE]
-  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent. For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
+  > This implementation assumes [Edicom](https://edicomgroup.com/electronic-invoicing) is the selected certified Partner Agent (PA). For more information, see [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
   
   Watch the overview of the Edicom credentials configuration in Finance. More details are provided in the [next](#EdCred) chapters.
   > [!VIDEO 70723008-ac71-4514-9b12-af8b7e792890]
@@ -546,6 +546,13 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
   - Edicom Response Processing (FR)
   - Edicom response error log import
   - Edicom Response message status fromat
+
+### <a id="StatusCodes"></a>List of lifecycle status codes
+
+| Code | Status | Requirement | Description |
+|------------|------------------|-----------------------------------|---------------------------------|
+| 200 | Deposited | Mandatory | An e-invoice is transmitted to the PA, which certifies that the document is checked and compliant. |
+| 201 | Issued by PA | Optional | The issuer's PA informs that it has transmitted the invoice to the recipient's PA. |
 
 ## More information
 
