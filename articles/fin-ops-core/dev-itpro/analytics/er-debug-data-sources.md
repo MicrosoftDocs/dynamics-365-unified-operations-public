@@ -154,7 +154,7 @@ The following settings of ER formats aren't currently accessible for data source
 
     :::image type="content" source="./media/er-data-debugger-transformation.png" alt-text="Screenshot of Transformations tab for the BankIBAN element.":::
 
-        As you can see, the **remove not alphanumeric** transformation uses an expression that truncates spaces from the provided text string.
+    As you can see, the **remove not alphanumeric** transformation uses an expression that truncates spaces from the provided text string.
 
 ## Start to debug in the Operation designer
 

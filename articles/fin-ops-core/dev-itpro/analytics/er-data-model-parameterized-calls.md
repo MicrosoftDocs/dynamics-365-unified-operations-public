@@ -194,11 +194,11 @@ You can implement the modifications when a running format collects, in memory, t
 1. Make sure that the `Root.Party` field is selected, and then, on the **Node** tab, select **Parameters**.
 1. In the **Parameters** dialog box, follow these steps:
 
-        1. On the **Parameters** tab, select **New**.
-        1. In the **Name** field, enter **PartyRefRecId**.
-        1. In the **Type** field, select **Int64**.
-        1. Select the **List** checkbox.
-        1. Select **OK** to finish entering the parameters.
+    1. On the **Parameters** tab, select **New**.
+    1. In the **Name** field, enter **PartyRefRecId**.
+    1. In the **Type** field, select **Int64**.
+    1. Select the **List** checkbox.
+    1. Select **OK** to finish entering the parameters.
 
     > [!NOTE]
     > You just configured the `Root.Party` data model field as a field that is called when a value is provided in the **PartyRefRecId** parameter. This value must be present in the list of records that contain a `Value` field of the *Int64* data type.
@@ -287,7 +287,7 @@ You can implement the modifications when a running format collects, in memory, t
     1. Select **Save**, and close **Formula designer**.
 
         > [!NOTE]
-                > You just configured the binding to call the configured `Data.DirParty` data source and provide the list of record identification codes specified in the format when the `Root.Party` data model field is called.
+        > You just configured the binding to call the configured `Data.DirParty` data source and provide the list of record identification codes specified in the format when the `Root.Party` data model field is called.
 
     1. In the **Data model** pane, select the `Root.Party.Name` data model field.
     1. In the **Data model** pane, select **Edit**.

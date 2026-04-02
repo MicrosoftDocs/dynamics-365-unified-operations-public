@@ -247,8 +247,8 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 1. Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner. When a custom destination factory is constructed, the application-driven parameter that specifies a target folder is passed. In this way, the target folder stores generated files.
 
-    > [!NOTE] 
-        > Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception is thrown at runtime.
+> [!NOTE]
+> Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception is thrown at runtime.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
