@@ -1,6 +1,6 @@
 ---
 title: Automate tax feature creation based on tax master data (preview)
-description: Learn how to use the Tax Data Migration functionality to automatically create a Tax Calculation feature based on existing core tax master data in Microsoft Dynamics 365 Finance.
+description: Learn how to use the Tax Data Migration functionality to automatically create a Tax Calculation feature based on existing sales tax master data in Microsoft Dynamics 365 Finance.
 author: epodkolz
 ms.author: epodkolz
 ms.date: 03/31/2026
@@ -14,9 +14,9 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to use the functionality to automatically create a Tax Calculation feature based on existing core tax master data in Microsoft Dynamics 365 Finance.
+This article explains how to use the functionality to automatically create a Tax Calculation feature based on existing sales tax master data in Microsoft Dynamics 365 Finance.
 
-This feature reduces time and effort for businesses by simplifying the transition from core tax functionality to the advanced [Tax Calculation](global-tax-calcuation-service-overview.md) functionality. An automated tax feature creation process enables customers to adopt and realize the benefits of Tax Calculation faster and with less manual work. It reads existing core tax master data in the legal entity and automatically creates the required records in the Tax feature setup, reusing existing tax codes, sales tax groups, and item sales tax groups. This approach minimizes setup complexity, preserves current configurations, and ensures a smoother transition to the advanced Tax Calculation experience.
+This feature reduces time and effort for businesses by simplifying the transition from standard sales tax functionality to the advanced [Tax Calculation](global-tax-calcuation-service-overview.md) functionality. An automated tax feature creation process enables customers to adopt and realize the benefits of Tax Calculation faster and with less manual work. It reads existing sales tax master data in the legal entity and automatically creates the required records in the Tax feature setup, reusing existing tax codes, sales tax groups, and item sales tax groups. This approach minimizes setup complexity, preserves current configurations, and ensures a smoother transition to the advanced Tax Calculation experience.
 
 > [!NOTE]
 > This functionality is supported globally, except for Brazil and India.
@@ -47,11 +47,11 @@ To review the generated setup, use the **View** button. If changes are needed, c
 
 ## Tax feature creation behavior overview
 
-During the tax feature creation process, the function maps existing core tax settings from the legal entity into the Tax Calculation feature setup. The following sections describe key behaviors.
+During the tax feature creation process, the function maps existing sales tax settings from the legal entity into the Tax Calculation feature setup. The following sections describe key behaviors.
 
 ### Tax group level settings 
 
-In core tax, settings such as cash discount, use tax, reverse charge, and exempt are defined at the tax group level. In Tax Calculation, these settings are defined at the line level in the tax feature. The functionality considers this setup mapping and creates the appropriate records during the tax feature creation.
+In standard sales tax, settings such as cash discount, use tax, reverse charge, and exempt are defined at the tax group level. In Tax Calculation, these settings are defined at the line level in the tax feature. The functionality considers this setup mapping and creates the appropriate records during the tax feature creation.
 
 #### Tax code variant handling
 When a tax code is assigned to multiple tax groups with different parameters, the system creates additional tax code variants during the tax feature creation process. For example:
@@ -116,7 +116,7 @@ After the process is completed, review the following items:
 
 After you review and, if needed, update the created tax feature, you can assign it to the legal entity and start using it for tax calculation. To do so, follow the steps in [Set up Tax Calculation in Globalization Studio workspace](/dynamics365/finance/localizations/global/global-get-started-with-tax-calculation-service#set-up-tax-calculation-in-globalization-studio-workspace).
 
-If new tax codes, sales tax groups, or item sales tax groups were created during the tax feature creation process (for example, tax code variants with suffixes), those records are synchronized back to the core tax tables in Dynamics 365 Finance. For more information, see [Sync the tax setup from the Tax Calculation feature to Finance](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance).
+If new tax codes, sales tax groups, or item sales tax groups were created during the tax feature creation process (for example, tax code variants with suffixes), those records are synchronized back to the standard sales tax tables in Dynamics 365 Finance. For more information, see [Sync the tax setup from the Tax Calculation feature to Finance](/dynamics365/finance/localizations/global/global-master-data-sync-tax-calculation-service-finance).
 
 ## Key Considerations and Known limitations
 
