@@ -30,9 +30,6 @@ Financial tags support the following value types:
 | **Fixed List** | Entity-backed list with validation (10.0.44+) | Enforced. Only values in the list are accepted. |
 | **Fixed Custom List** | User-defined list with validation (10.0.44+) | Enforced. Only values in the list are accepted. |
 
-> [!IMPORTANT]
-> **List** and **Custom List** types do not validate entered values at transaction entry or posting. This is by design. If validation is required, use **Fixed List** or **Fixed Custom List** types, available in version 10.0.44 and later.
-
 ## DimensionFinancialTag is not FinTag
 
 Financial tags (`FinTag*` tables) and custom financial dimensions (`DimensionFinancialTag` table) are two entirely separate features with no overlap in data or behavior.
@@ -54,8 +51,6 @@ The data flow for financial tags across a transaction is:
 2. **Defaulting** - Rules copy tags from header to line or from main account to offset account. Users may also define additional defaulting rules to automatically populate the financial tag.
 3. **Posting** - Tag values are persisted with the subledger and general ledger entries.
 4. **Edit after posting** - Tags can be modified on posted vouchers via the Edit Voucher tool (**General Ledger > Inquiries and reports > Voucher transactions > Edit Voucher**).
-5. **Archival** - Tags are included in archive-to-history and archive-to-data-lake operations.
-
 
 ## FinTag data model and core tables
 
