@@ -4,7 +4,7 @@ description: Learn how to plan the chart of accounts for your organization, whic
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 05/20/2025
+ms.date: 04/02/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,9 +20,9 @@ ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information to help you plan the chart of accounts for your organization.
+This article helps you plan the chart of accounts for your organization.
 
-To track and maintain financial information in an organization, set up a chart of accounts. A chart of accounts is a collection of accounts that define a financial framework. To further track the transactions in these accounts, add segments. These segments are known as financial dimensions. For example, an expense account might include financial dimensions that are named Department, Cost center, and Purpose. User-defined rules determine how financial dimensions are attached to the main accounts and to other financial dimensions, and also how transactions are entered. These user-defined rules are known as account structures and advanced rules.
+Set up a chart of accounts to track and maintain financial information in an organization. A chart of accounts is a collection of accounts that define a financial framework. To further track the transactions in these accounts, add segments. These segments are known as financial dimensions. For example, an expense account might include financial dimensions that are named Department, Cost center, and Purpose. User-defined rules determine how financial dimensions are attached to the main accounts and to other financial dimensions, and also how transactions are entered. These user-defined rules are known as account structures and advanced rules.
 
 The chart of accounts is a structured list of a legal entity's general ledger accounts. Use the list to prepare financial reports for authorities and owners. First, group the accounts into types of accounts and then further aggregate them into larger categories. At the most general level, group the accounts as revenues and costs (operating accounts), and assets and liabilities (balance accounts).
 
@@ -32,7 +32,7 @@ Consider these factors when you plan the structure of the chart of accounts for 
 
 - The reporting requirements of the country or region where your organization is based
 - The reporting requirements of your legal entity
-- The degree of specification that is required, both for both external organizations and for your organization
+- The degree of specification that is required, both for external organizations and for your organization
 
 Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Don't use any special characters in your main accounts that are used as delimiters for chart of accounts. Otherwise, you might experience instability, or you might always have to use lookups or the dialog box when you enter combinations of accounts and dimensions. For more information, see [Create a main account](tasks/create-main-account.md).
 
@@ -49,7 +49,7 @@ You can't change the delimiter if existing dimension values already contain the 
 When you change the delimiter, the system schedules a data maintenance action called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter might not update immediately, and the old delimiter might continue to appear until the data maintenance action completes. The system processes the newest dimensions first to reduce the possibility of errors during the transition. Monitor the progress of the action by going to the data maintenance portal in **System administration** > **Setup** > **Data Maintenance**.
 
 > [!IMPORTANT]
-> Don't schedule the delimiter change multiple times. If the delimiter hasn't updated yet, wait for the data maintenance action to complete before rescheduling.
+> Don't schedule the delimiter change multiple times. If the delimiter isn't updated yet, wait for the data maintenance action to complete before rescheduling.
 
 After the action finishes, the new delimiter appears in the **General ledger parameters** dialog and all dimension data uses the new delimiter consistently.
 
@@ -57,10 +57,10 @@ After the action finishes, the new delimiter appears in the **General ledger par
 
 If you experience errors when running reports after a delimiter change, or if you see different delimiters in use in the same journal, the standard data maintenance action might still be processing records.
 
-If rescheduling the delimiter **Dimension value rename and modify chart of accounts delimiter process** does not fix the issue, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the data maintenance portal (**System administration** > **Setup** > **Data Maintenance**). This action processes all remaining records in a single run instead of batching.
+If rescheduling the delimiter **Dimension value rename and modify chart of accounts delimiter process** doesn't fix the issue, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the data maintenance portal (**System administration** > **Setup** > **Data Maintenance**). This action processes all remaining records in a single run instead of batching.
 
 > [!WARNING]
-> Don't use the manual override as the default option for delimiter changes. The manual override action runs for a longer period and uses more system resources, which can cause performance issues. It only runs to completion if the standard action isn't already running. Consider using this option during off-peak hours.
+> Don't use the manual override as the default option for delimiter changes. The manual override action runs for a longer period and uses more system resources, which can cause performance problems. It only runs to completion if the standard action isn't already running. Consider using this option during off-peak hours.
 
 ### Best practices for delimiters and dimension values
 
