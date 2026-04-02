@@ -492,15 +492,6 @@ To configure the parameters, follow these steps.
 
 :::image type="content" source="e-inv-fra-termination.jpg" alt-text="Screenshot of termination parameters configuration.":::
 
-### Configure documents statuses
-
-WWWWWWWWWWWWWWWWWWW
-
-### Enter documents statuses
-
-WWWWWWWWWWWWWWWWWWW
-
-
 ## Receive incoming electronic invoices
 
 Set more parameters in Microsoft Dynamics 365 Finance to import incoming invoices.
@@ -528,6 +519,18 @@ Receive electronic invoices:
 View receipt logs for processed electronic invoices: go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
 View successfully received invoices: go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
+
+## Send electronic invoices responses
+
+After you complete ZZZZZZZZZZZZZZZZZZZZZZZzz
+
+### Send responses for Customer and Project invoices
+
+WWWWWWWWWWWWWWWWWWW
+
+### Send responses for Pending vendor invoices
+
+WWWWWWWWWWWWWWWWWWW
 
 ## Appendix
 
