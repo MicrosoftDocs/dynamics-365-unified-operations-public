@@ -33,6 +33,16 @@ Licensed customers must stay current with updates to the Invoice Capture online 
 - Customers who purchase subscriptions of finance and operations apps experience continuous updates that Microsoft manages. Customers can postpone one consecutive service update.
 - Customers can postpone one consecutive release of Invoice Capture.
 
+## March 2026
+
+The March release of the Invoice capture solution version 2.3.x contains the following feature enhancements and bug fixes.
+
+| Feature  | Description |
+| --- |--- |
+|OCR Async and Batch Processing | Large invoice documents are now processed asynchronously, extending the processing timeout from 2 minutes to 1 hour to prevent failures on high-page-count documents. Invoice entities are also created using batch operations, reducing database round-trips and improving throughput for high-volume scenarios. Both capabilities are enabled together via the Async Predict setting in System Settings. |
+|Bug Fix | Improved processing reliability for a timeout issue in the Invoice Capture deliver plugin when processing invoices with 300 or more lines. (Known issue: 6122374) |
+
+
 ## January 2026
 
 The January release of the Invoice capture solution version 2.1.x contains the following feature enhancements and bug fixes.
