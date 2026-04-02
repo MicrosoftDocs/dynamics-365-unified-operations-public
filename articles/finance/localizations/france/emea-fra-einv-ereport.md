@@ -480,6 +480,15 @@ As a part of documents lifecycle, for successfully submitted invoices, there is 
 The procedure can be run multiple times retrieving various lifecycle documents statuses from Edicom until any **termination** status code is reached or a predefined **timeout** occurred. 
 
 The statuses codes for successfull or unsuccessfull termination and the timeout period in days can be configured in the related feature setup parameters. 
+To configure the parameters, follow these steps.
+
+1. In the **Globalization Studio** workspace, the **Electronic invoicing** tile, select the **French electronic invoice (FR)** globalization feature.
+1. On the **Versions** tab, check that the **Draft** version is selected. Create a new draft version of the feature if necessary.
+1. On the **Setups** tab, select the feature setup for a required document.
+1. In the **Processing pipeline** section, select the last, **Terminate pipeline with optional condition and date** action.
+1. In the **Parameters** grid, select the **Success status values** parameter. In the **Value** column, enter status codes separated by comma. These statuses will be used for the pipeline processing termination, when reached. Learn more about the available statuses in the **[List of lifecycle status codes](#StatusCodes)** section of the **Appendix** chapter.
+1. Select the **Number of days** parameter. In the **Value** column, enter the number of days after which the pipeline will be terminated regardless of the processing document status.. 
+1. Complete and deploy the feature.
 
 :::image type="content" source="e-inv-fra-termination.jpg" alt-text="Screenshot of termination parameters configuration.":::
 
