@@ -23,7 +23,7 @@ This article explains how to enable the **Copy values to this dimension on each 
 
 When a financial dimension is backed by an entity such as Customer or Vendor, the system can automatically copy the dimension value into the default dimensions of a new record. For example, when you create a new customer, the customer ID is automatically added as the customer dimension value in the default dimensions for that customer record.
 
-This behavior is controlled by the **Copy values to this dimension on each new [DimensionName] created** toggle on the **Financial dimensions** details form. However, this toggle is only enabled for entity-backed dimensions whose backing table has been specifically configured to support it.
+You control this behavior by using the **Copy values to this dimension on each new [DimensionName] created** toggle on the **Financial dimensions** details form. However, this toggle is only enabled for entity-backed dimensions whose backing table is specifically configured to support it.
 
 Out of the box, the following 13 entities support this feature:
 
@@ -50,7 +50,7 @@ If you have a custom entity-backed dimension or need to enable this feature for 
 
 ## Step 1: Add the DimensionCanCopyValuesOnCreateAttribute to the view
 
-The **Copy values to this dimension on each new [DimensionName] created** toggle on the dimension details form is activated by the `DimensionCanCopyValuesOnCreateAttribute` attribute. You must add this attribute to the `DimAttribute` view for your backing table.
+The `DimensionCanCopyValuesOnCreateAttribute` attribute activates the **Copy values to this dimension on each new [DimensionName] created** toggle on the dimension details page. Add this attribute to the `DimAttribute` view for your backing table.
 
 Open the view in Visual Studio and add the following attribute to the view class declaration:
 
@@ -63,7 +63,7 @@ public class [ViewName] extends common
 
 ## Step 2: Add the copy logic to the backing table insert method
 
-You must add code to the `insert` method of the backing table so that when a new record is created, the dimension value is automatically copied into the default dimensions of that record.
+Add code to the `insert` method of the backing table so that when you create a new record, the dimension value automatically copies into the default dimensions of that record.
 
 ### For a custom dimension (you own the table)
 
@@ -85,13 +85,13 @@ Replace `[TableName]` with the name of your backing table, `[KeyField]` with the
 
 ### For a core product dimension (you don't own the table)
 
-If the backing table is part of the standard product and you can't directly modify it, use a post-event handler on the `insert()` method, and then, implement chain of Command on the `DimensionEnabledType::canCopyValuesOnCreate()` method to return `true` for your entity.
+If the backing table is part of the standard product and you can't directly modify it, use a post-event handler on the `insert()` method. Then, implement chain of command on the `DimensionEnabledType::canCopyValuesOnCreate()` method to return `true` for your entity.
 
 ## Step 3: Build and validate
 
 1. Build your project and synchronize the database.
-2. Navigate to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
-3. Select the dimension that you configured and verify that the **Copy values to this dimension on each new [DimensionName] created** toggle is now enabled and can be turned on.
-4. Turn on the toggle, then create a new record of the backing entity type. Verify that the dimension value is automatically added to the default dimensions of the new record.
+1. Go to **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**.
+1. Select the dimension that you configured and verify that the **Copy values to this dimension on each new [DimensionName] created** toggle is now enabled and can be turned on.
+1. Turn on the toggle, and then create a new record of the backing entity type. Verify that the dimension value is automatically added to the default dimensions of the new record.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
