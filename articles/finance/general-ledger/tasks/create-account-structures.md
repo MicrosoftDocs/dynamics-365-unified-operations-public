@@ -77,7 +77,7 @@ To monitor activation progress:
 
 For more information, see [Account structure activation performance enhancement](../account-structure-improvement.md).
 
-### If activation fails
+### Account structure activation failure
 
 If an activation fails, the structure reverts to **Draft** status. The error is typically not displayed on the account structure form itself — check the **batch job error log** for the specific error message.
 
