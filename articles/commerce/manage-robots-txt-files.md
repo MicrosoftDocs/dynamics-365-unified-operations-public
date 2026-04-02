@@ -19,7 +19,7 @@ ms.custom:
 This article describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
-> Starting February 2, 2026, a change is gradually scaling up to all customer environments where internal Commerce-generated domains (`.dynamics365commerce.ms`) return a deny-all response for robots.txt requests instead of the configured robots.txt file. This behavior prevents search engines from indexing test and staging environments. Custom production domains continue to serve the uploaded robots.txt file. To test your robots.txt configuration from an internal domain, use the `?domain=` query parameter as described in [Test robots.txt for a specific domain](#test-robotstxt-for-a-specific-domain).
+> Starting with the Commerce version 10.0.48 preview release, all HTTP responses served from internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex,nofollow` response header. This header instructs search engines not to index pages on internal domains and replaces the earlier deny-all robots.txt approach. This change is applied automatically to all tenants and doesn't require any version upgrade. For more information, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
 
 The robots exclusion standard, or robots.txt, is a standard that websites use to communicate with web robots. It instructs web robots about any areas of a website that shouldn't be visited. Robots are often used by search engines to index websites.
 
@@ -39,7 +39,14 @@ When you upload a robots.txt file for a custom domain such as `www.fabrikam.com`
 
 ### Internal Commerce-generated domains
 
-Internal domains that use the `.dynamics365commerce.ms` format don't return uploaded robots.txt files. Instead, these domains return a deny-all response that blocks all search engine indexing. This behavior ensures that test and staging environments aren't indexed by search engines, and that only your production custom domain is crawled and indexed.
+Internal domains that use the `.dynamics365commerce.ms` format serve the uploaded robots.txt file, similar to custom production domains. However, all HTTP responses from these domains include the `X-Robots-Tag: noindex,nofollow` header, which instructs search engines not to index or follow links on these pages. For more details, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
+
+### X-Robots-Tag response header for internal domains
+
+Starting with the Commerce version 10.0.48 preview release, all HTTP responses served from internal Commerce-generated domains (`.dynamics365commerce.ms`) include an `X-Robots-Tag: noindex,nofollow` response header. This change is applied automatically to all tenants and doesn't require any version upgrade. The header instructs search engines not to index the page and not to follow any links on it. It also allows search engine crawlers to re-crawl pages and discover the `noindex` directive, which helps remove any previously indexed content from search results.
+
+> [!NOTE]
+> The `X-Robots-Tag` header is only added to responses served from internal Commerce-generated domains. Custom production domains aren't affected by this header.
 
 ## Test robots.txt for a specific domain
 
@@ -66,7 +73,7 @@ To upload a robots.txt file in Commerce, follow these steps:
 
 > [!NOTE]
 > - During upload, Commerce verifies that the file is a text file, but it doesn't validate the file's contents.
-> - Uploaded robots.txt files are served only on custom production domains. Internal Commerce-generated domains (such as `.dynamics365commerce.ms`) return a deny-all robots.txt response to prevent test environments from being indexed. For more information, see [How robots.txt works with different domain types](#how-robotstxt-works-with-different-domain-types).
+> - Uploaded robots.txt files are served on both custom production domains and internal Commerce-generated domains. However, internal domains also include the `X-Robots-Tag: noindex,nofollow` response header on all HTTP responses to prevent search engine indexing. For more information, see [X-Robots-Tag response header for internal domains](#x-robots-tag-response-header-for-internal-domains).
 
 ## Download a robots.txt file
 
