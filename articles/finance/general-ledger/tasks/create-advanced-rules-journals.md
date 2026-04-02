@@ -56,7 +56,7 @@ Journal control restrictions apply **per account structure**, not globally acros
 
 - If no journal control segment values are specified for an account structure, **all values** for all segments in that structure are allowed.
 - If you add a restriction for a particular account structure, it only restricts segments for **that structure** — other account structures remain unrestricted.
-- If you intend to restrict entries to only one structure's accounts, you must also define restrictions for every other structure on the ledger to prevent values from being entered against them.
+- If you intend to restrict a dimension value to only one account strucutre, you must also define restrictions for every other structure on the ledger to prevent values from being entered against them.
 
 Journal control is **open by default**. Adding a restriction in one context doesn't disable access in other contexts.
 
