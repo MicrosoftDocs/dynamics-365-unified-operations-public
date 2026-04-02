@@ -1,0 +1,41 @@
+---
+title: Test the Supplier Communications Agent (production ready preview) emails from vendors without complete email setup
+description: Learn how to test the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management for smooth implementation and optimal performance.
+author: t-benebo
+ms.author: benebotg
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 02/04/2026
+ms.custom:
+  - bap-template
+---
+
+# Test the Supplier Communications Agent (production ready preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
+
+Learn how to test Emails from vendors with the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management.
+
+The agent has two independent features:
+
+- *Follow-up with vendors* (writing reminders)
+- *Updates from vendors* (reading vendor emails).
+
+For testing *Updates from vendors* (reading vendor emails), you can test the feature for a single email without having done the whole configuration, specially skipping the part where the shared mailbox or personal mailboxes are configured. 
+This can be useful if you want to try the feature with a single email or just to show how the agent works. 
+
+## Test the "Updates from vendors" (reading emails) feature without setup
+
+Enable the feature in feature management *(Production Ready Preview) Supplier communications*
+Go to *Procurement and sourcing > (Preview) Procurement Agent - Supplier Communications > (Preview) Emails from vendors*
+
+You will see the workspace where the emails from vendors would come if you had configured it with a configuration. Here you can just try with a single email by clicking:
+1. *Add vendor messages* on the top menu
+2. Enter a *Title*: the email title of an existing email you would like to try the agent with, either a real or a test one you can make up
+3. Enter the *Message*: enter the body of the email
+4. Enter an *Attachment*: optionally, enter an attachment if desired, it can be an image or a PDF. 
+5. Click *Save*
+6. Wait for a few minutes and refres the page, it will show the email you just send to the agent
