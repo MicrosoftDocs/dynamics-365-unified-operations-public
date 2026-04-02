@@ -50,7 +50,7 @@ After expanding, scroll through all affected rows:
 For each table and field listed, go to the corresponding posting profile and clear the default account. After you remove all references, retry changing the chart of accounts. After the change is complete, you must re-enter the default accounts by using main accounts from the new chart of accounts.
 
 > [!IMPORTANT]
-> After you change the chart of accounts, you must review and update all posting profiles and posting definitions that reference default accounts. Main accounts are specific to a chart of accounts, so default accounts that were configured under the previous chart of accounts don't automatically transfer to the new one. If these references aren't updated, transactions can post against main account records from the wrong chart of accounts. This can cause amounts to split across duplicate main account entries on the trial balance, and can lead to errors during fiscal period close or year-end close processes.
+> Main accounts are specific to a chart of accounts, so default accounts that were configured under the previous chart of accounts don't automatically transfer to the new one. If these references aren't updated in posting profiles and posting definitions, transactions can post against main account records from the wrong chart of accounts. This can cause amounts to split across duplicate main account entries on the trial balance, and can lead to errors during fiscal period close or year-end close processes.
 
 > [!NOTE]
 > The **Bank account** table contains a main account field that's required and can't be cleared in the application. If the bank account table is listed as a blocker, contact Microsoft support for assistance.
