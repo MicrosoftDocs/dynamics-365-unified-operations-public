@@ -62,7 +62,7 @@ The following settings of ER formats aren't currently accessible for data source
 1. Extract the **ISO20022 Credit transfer.xml** payment file from the ZIP file.
 1. Open the extracted payment file by using the XML file viewer.
 
-        In the payment file, the International Bank Account Number (IBAN) code of the vendor bank account contains no spaces. Therefore, it differs from the value that was [entered](#enteredIBANcode) on the **Bank accounts** page.
+    In the payment file, the International Bank Account Number (IBAN) code of the vendor bank account contains no spaces. Therefore, it differs from the value that was [entered](#enteredIBANcode) on the **Bank accounts** page.
 
     :::image type="content" source="./media/er-data-debugger-payment-file.png" alt-text="Screenshot of IBAN code without spaces in the payment file.":::
 
