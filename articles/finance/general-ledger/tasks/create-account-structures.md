@@ -110,7 +110,7 @@ If an account structure is no longer needed and has no blocking unposted transac
 
 You can't delete an account structure if unposted transactions reference it. To find and resolve these transactions:
 
-1. Go to **General ledger** > **Journal entries** > **General journals**.
+1. Navigate to the journal which has the transactions (e.g. **General ledger** > **Journal entries** > **General journals**).
 2. Filter by **Show** > **Not posted**.
 3. Select a journal and select **Lines** on the Action Pane to view its transactions.
 4. Transactions that reference the account structure can be removed with the **Delete** button or updated to reference a different ledger account or offset account.
