@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: shielas  
 ms.author: shielas
 ms.topic: whats-new
-ms.date: 01/30/2026
+ms.date: 04/03/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -41,7 +41,6 @@ The March release of the Invoice capture solution version 2.3.x contains the fol
 | --- |--- |
 |OCR Async and Batch Processing | Large invoice documents are now processed asynchronously, extending the processing timeout from 2 minutes to 1 hour to prevent failures on high-page-count documents. Invoice entities are also created using batch operations, reducing database round-trips and improving throughput for high-volume scenarios. Both capabilities are enabled together via the Async Predict setting in System Settings. |
 |Bug Fix | Improved processing reliability for a timeout issue in the Invoice Capture deliver plugin when processing invoices with 300 or more lines. (Known issue: 6122374) |
-
 
 ## January 2026
 
@@ -81,12 +80,12 @@ The September release of the Invoice capture solution version 1.9.9.x contains t
 | Feature  | Description |
 | --- |--- |
 | Enhanced invoice derivation plugin for better performance. (Preview) | The derivation logic is updated for better performance when deriving. |
-| Improvements when transferring invoices to Dynamics 365 Finance to prevent invoices getting stuck in **Awaiting** status. (Preview) | This improvement updates the transfer of invoices from Invoice capture to Dynamics 365 Finance to be asynchronous to avoid plugin timeouts. To review the new statuses available in Invoice capture, see [Captured invoice statuses](../accounts-payable/invoice-capture-workspace.md#captured-invoice-statuses) |
-|Improved accessibility for side-by-side viewer| Implemented tab sequence and the ability to move between lines and cells utilizing the keyboard. For more information, see [Power Apps keyboard shortcuts for editable grid views](/power-apps/user/keyboard-shortcuts#editable-grids-views). |
-|Bug fix - Procurement category derivation is optimized for performance when using invoice line descriptions. |The resolves an issue where customers see invoices stuck in **In processing** due to a large number of defined procurement categories. |
-| Bug fix - Improved derivation accuracy for invoice types.  |This fixes an issue when deriving the invoice type. If the invoice header doesn't have both the vendor account and legal entity, the derivation doesn't consider if the derived value is one of the allowed types. This issue results in invoices being marked as PO Invoices when Invoice capture is configured to classify invoices only as Cost invoices.|
-|Bug fix - Improved performance of **Remove all lines**. | This fixes an issue where the system is unresponsive when customers select **Remove all** to delete multiple line items in Invoice capture.|
-|Bug fix - Fixed consistency issues during invoice validation and transfer.| This fixes an issue where custom attributes are missing when transferring to Finance. For example, if a custom dimension is added to a line level, the custom attribute isn't transferred to Dynamics 365 Finance. This issue results in invoices failing at posting or posting with a blank dimension attribute.  
+| Improvements when transferring invoices to Dynamics 365 Finance to prevent invoices getting stuck in **Awaiting** status. (Preview) | This improvement updates the transfer of invoices from Invoice capture to Dynamics 365 Finance to be asynchronous to avoid plugin timeouts. To review the new statuses available in Invoice capture, see [Captured invoice statuses](../accounts-payable/invoice-capture-workspace.md#captured-invoice-statuses). |
+|Improved accessibility for side-by-side viewer| Implemented tab sequence and the ability to move between lines and cells by using the keyboard. For more information, see [Power Apps keyboard shortcuts for editable grid views](/power-apps/user/keyboard-shortcuts#editable-grids-views). |
+|Bug fix - Procurement category derivation is optimized for performance when using invoice line descriptions. |This fix resolves an issue where customers see invoices stuck in **In processing** due to a large number of defined procurement categories. |
+| Bug fix - Improved derivation accuracy for invoice types.  |This fix addresses an issue when deriving the invoice type. If the invoice header doesn't have both the vendor account and legal entity, the derivation doesn't consider if the derived value is one of the allowed types. This issue results in invoices being marked as PO Invoices when Invoice capture is configured to classify invoices only as Cost invoices.|
+|Bug fix - Improved performance of **Remove all lines**. | This fix resolves an issue where the system is unresponsive when customers select **Remove all** to delete multiple line items in Invoice capture.|
+|Bug fix - Fixed consistency issues during invoice validation and transfer.| This fix resolves an issue where custom attributes are missing when transferring to Finance. For example, if a custom dimension is added to a line level, the custom attribute isn't transferred to Dynamics 365 Finance. This issue results in invoices failing at posting or posting with a blank dimension attribute.  
 |Bug fix - Fixed derivation issues while populating details from purchase orders. | Improved derivation accuracy when populating item numbers where product variants are used on the purchase order. For example, a purchase order has lines with items that contain product variants. The invoice doesn't contain an item number, but it contains a line description. The purchase order number and line are populated, but the item number isn't populated.|
 
 ## August 2025
@@ -97,7 +96,7 @@ The August release of the Invoice capture solution version 1.9.8.x contains the 
 | --- |--- |
 |Bug Fix |The **Link purchase order line to invoice line** page only displayed 50 lines. Updated to remove the 50 line restriction. |
 |Bug Fix |Inconsistent derivation results were encountered during cache lookup errors. Users encountered issues where vendor wasn't derived.  |
-|Feature |Copy and paste support from PDF image to Invoice capture page. Users can now select text and numbers from the PDF page, and copy the selection to the invoice fields for easier data updates. Keyboard shortcuts of ctrl+c and ctrl+v are supported.|
+|Feature |Copy and paste support from PDF image to Invoice capture page. Users can now select text and numbers from the PDF page, and copy the selection to the invoice fields for easier data updates. Keyboard shortcuts of Ctrl+C and Ctrl+V are supported.|
 
 ## July 2025
 
