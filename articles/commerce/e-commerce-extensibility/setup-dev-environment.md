@@ -31,9 +31,12 @@ Go to the [Visual Studio Code site](https://code.visualstudio.com), and download
 
 Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-Version 16.x is the current supported version for online SDK bootloader package 1.27 and later. If you're using online SDK bootloader package 1.26 or earlier, you need to install Node 12.x. You can find the installer on the [Node.js website](https://nodejs.org).
+The supported versions are Node.js 16.x, 18.x, and 22.x. Node.js 16.x is recommended for most development environments. You can find the installer on the [Node.js website](https://nodejs.org).
 
 If you rely on other versions of Node.js for other projects, Microsoft recommends that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
+
+> [!NOTE]
+> If you upgrade to SDK packages that include Node.js 22 compatibility changes, you may encounter SCSS compilation or dependency changes. For more information, see [Package upgrade guide for Node.js 22 compatibility](sdk-package-upgrade-node22.md).
 
 ## Install Yarn
 
@@ -150,6 +153,8 @@ To install a new certificate on a developer environment, replace the public key 
 [Get started with e-commerce online extensibility development](sdk-getting-started.md)
 
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+
+[Package upgrade guide for Node.js 22 compatibility](sdk-package-upgrade-node22.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
 
