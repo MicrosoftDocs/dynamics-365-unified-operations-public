@@ -8,11 +8,12 @@ ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
+  - sfi-image-nochange
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-11-29
 ms.service: dynamics-365-op
-ms.custom: sfi-image-nochange
+
 ---
 
 # Upgrade or replace the SQL Server instance for Microsoft Dynamics 365 Finance + Operations (on-premises) environments

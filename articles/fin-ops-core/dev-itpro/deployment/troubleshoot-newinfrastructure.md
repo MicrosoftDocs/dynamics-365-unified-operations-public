@@ -8,13 +8,13 @@ ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
+  - sfi-image-nochange
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-12-31
 ms.search.form: 
 ms.dyn365.ops.version: 8.1.1
-ms.custom:
-  - sfi-image-nochange
+  
 ---
 
 # Troubleshoot environments deployed through self-service deployment

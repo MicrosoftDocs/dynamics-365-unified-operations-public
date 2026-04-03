@@ -6,6 +6,7 @@ ms.author: johnmichalak
 ms.topic: install-set-up-deploy
 ms.custom: 
   - bap-template
+  - sfi-image-nochange
 ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -13,7 +14,6 @@ ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.service: dynamics-365-op
-ms.custom: sfi-image-nochange
 
 ---
 

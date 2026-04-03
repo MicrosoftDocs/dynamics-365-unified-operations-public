@@ -182,21 +182,21 @@ Follow these steps to look for the DBSync.err file, find the errors, and inspect
     | Issue | Action |
     |-------|--------|
     | %Table Sync Failed for Table%Create Unique Index% | This issue typically occurs when a unique index is created, but the data isn't unique. Fix the data before you run the step again. |
-    | %Application configuration sync failed.%Custom action sync failed with error:% | View the information in the error message and the call stack to determine the application code that is causing the issue. |
-    | %cannot be found from underlying query&#39;&#39;s table% | This issue was fixed. For more information, refer to KB 4018815. |
+    | %Application configuration sync failed.%Custom action sync failed with error:% | View the information in the error message and the call stack to determine the application code that's causing the issue. |
+    | %can't be found from underlying query's table% | This issue was fixed. For more information, see KB 4018815. |
     | %Table Sync Failed for Table%Converting Field% | Follow the error message, fix the issue, and run the step again. |
     | %failed because one or more objects access this column% | See whether the index is in the metadata. If the index is in the metadata, this issue is a SyncEngine product issue. If the index isn't in the metadata, remove the index from the SQL database before you run the step again. |
-    | %cannot be found from underlying data source&#39;&#39;s table% | This issue was fixed. For more information, refer to KB 4018815. |
-    | &#39;%Table Sync Failed for Table%&#39; and errorMessage like &#39;%There is already an object named%&#39; | The Internal SqlDictionary table and SQL schema are out of sync. There isn't enough information in the logs to understand how this state was reached. |
+    | %can't be found from underlying data source's table% | This issue was fixed. For more information, see KB 4018815. |
+    | &#39;%Table Sync Failed for Table%&#39; and errorMessage like &#39;%There's already an object named%&#39; | The Internal SqlDictionary table and SQL schema are out of sync. There isn't enough information in the logs to understand how this state was reached. |
     | %Table Sync Failed for Table%Column names in each table must be unique% | SqlDictionary entries for the table are corrupted, and the field is missing. There isn't enough information in the logs to understand how this state was reached. |
-    | %Column name &#39;LOAD\_&#39; does not exist in the target table or view. CREATE INDEX% | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
-    | Cannot drop the index &#39;VENDREQUESTPROFILEQUESTIONNAIRE.I\_1301PROFILEQUESTIONNAIRE&#39;, because it does not exist or you do not have permission | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
-    | %The index entry of length 2046 bytes for the index &#39;I\_65750INDEX1&#39; exceeds the maximum length of 1700 bytes for nonclustered indexes% | Modify the index before you run the step again. |
+    | %Column name &#39;LOAD\_&#39; doesn't exist in the target table or view. CREATE INDEX% | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
+    | Can't drop the index &#39;VENDREQUESTPROFILEQUESTIONNAIRE.I\_1301PROFILEQUESTIONNAIRE&#39;, because it doesn't exist or you don't have permission | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
+    | %The index entry of length 2,046 bytes for the index &#39;I\_65750INDEX1&#39; exceeds the maximum length of 1,700 bytes for nonclustered indexes% | Modify the index before you run the step again. |
     | %Incorrect syntax near% | This issue is a SyncEngine issue. Create a ticket on Microsoft Support. |
-    | Reference to database and/or server name in &#39;TEMPDB.DBO.T\_TRVREQUISITIONLINE\_C4C3569DD5A14CDABAE71A341743FB61&#39; is not supported in this version of SQL Server | This issue is a SyncEngine issue. Create a ticket on Microsoft Support. |
+    | Reference to database and/or server name in &#39;TEMPDB.DBO.T\_TRVREQUISITIONLINE\_C4C3569DD5A14CDABAE71A341743FB61&#39; isn't supported in this version of SQL Server | This issue is a SyncEngine issue. Create a ticket on Microsoft Support. |
     | %Error: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.% | Retry the step. |
     | Database execution failed: Invalid column name &#39;DEFAULTDIMENSION&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | Database execution failed: Invalid object name &#39;PMBI\_DEPROJECTTIMESHEET&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
-    | %provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server%  | This issue should be fixed in Platform Update 3. Retry the step. |
+    | %provider: Named Pipes Provider, error: 40 - Couldn't open a connection to SQL Server%  | This issue should be fixed in Platform Update 3. Retry the step. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
