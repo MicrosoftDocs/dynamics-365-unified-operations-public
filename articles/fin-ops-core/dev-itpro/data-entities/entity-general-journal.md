@@ -4,6 +4,8 @@ description: Learn about the General journal data entity in finance and operatio
 author: edupont04
 ms.author: epegors
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 02/02/2024
 ms.collection: FastTrack
 ---

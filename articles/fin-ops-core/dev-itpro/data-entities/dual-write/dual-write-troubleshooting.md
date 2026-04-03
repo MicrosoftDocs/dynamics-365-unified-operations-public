@@ -4,6 +4,8 @@ description: Learn about general troubleshooting information for dual-write inte
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: troubleshooting-general
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

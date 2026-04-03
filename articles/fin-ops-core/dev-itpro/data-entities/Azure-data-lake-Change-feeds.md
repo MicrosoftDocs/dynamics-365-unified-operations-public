@@ -4,12 +4,14 @@ description: Learn about change data in a data lake and explains what you can do
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
+  - sfi-image-nochange
 ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
-ms.search.validFrom: 2021-06-10
-ms.custom: sfi-image-nochange
+ms.search.validFrom: 2021-06-10 
 
 ---
 

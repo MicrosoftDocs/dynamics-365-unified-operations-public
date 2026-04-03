@@ -289,6 +289,10 @@ items:
           href: data-entities/security-data-entities.md
         - name: Create read-only entities that expose financial dimensions
           href: financial/read-only-entity-financial.md
+        - name: System tracking fields on financial tables
+          href: financial/system-tracking-fields-after-upgrade.md
+        - name: Enable copy values on create for financial dimensions
+          href: financial/enable-copy-values-dimension-on-create.md
       - name: Bring your own database
         href: analytics/export-entities-to-your-own-database.md
       - name: Automated Entity store refresh

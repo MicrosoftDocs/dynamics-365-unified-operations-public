@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-06-30
@@ -38,6 +38,7 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 ### Microsoft SQL Server
 
 #### Software
+
 Both Microsoft SQL Server Standard Edition and Enterprise Edition are supported.
 
 This section covers the following SQL Server components:
@@ -53,7 +54,7 @@ This section covers the following SQL Server components:
 | Microsoft SQL Server 2016 SP2    | 10.0.9           | 10.0.28       |
 
 > [!IMPORTANT]
-> Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
+> Using multiple versions of Microsoft SQL Server throughout a single environment isn't supported.
 
 #### Database Collation
 
@@ -67,16 +68,16 @@ Finance + Operations (on-premises) supports a limited set of collations. The fol
 | Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and later |
 | SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
 
-#### High Availability 
+#### High Availability
 
-You should always utilize SQL Server in either a cluster or mirroring setup for production environments. 
+Always use SQL Server in either a cluster or mirroring setup for production environments.
 
 > [!IMPORTANT]
 > Database failover is only supported in an active or passive configuration. Read-only replicas aren't supported.
 
 ### Minimum Microsoft .NET Framework runtime
 
-The requirements for the .NET Framework are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
+Specify the requirements for the .NET Framework on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
 
 | Minimum version                        | Required since |
 |----------------------------------------|----------------|
@@ -85,7 +86,7 @@ The requirements for the .NET Framework are specified on a per-node basis. For s
 
 ### Minimum Visual C++ Redistributable runtime
 
-The requirements for the Visual C++ Redistributable are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
+Specify the requirements for the Visual C++ Redistributable on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
 
 >[!NOTE]
 >The Visual C++ Redistributable 2015-2022 is a unified package that replaces the older Visual C++ Redistributable 2015-2019 and Visual C++ Redistributable 2017 packages.
@@ -99,12 +100,11 @@ The requirements for the Visual C++ Redistributable are specified on a per-node 
 | Microsoft Visual C++ Redistributable 2017                       | 10.0.0           | 10.0.16            |
 | Microsoft Visual C++ Redistributable 2013                       | Original release |                    |
 
-
 ## On-premises environments only
 
 ### Active Directory Federation Services (AD FS)
 
-Active Directory Federation Services (AD FS) is a server role that can be installed on a machine running Windows Server. 
+Active Directory Federation Services (AD FS) is a server role that can be installed on a machine running Windows Server.
 
 | Version                                                     | Supported since  | End of life   |
 |-------------------------------------------------------------|------------------|---------------|
@@ -113,8 +113,9 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 | Active Directory Federation Services on Windows Server 2016 | Original release | 10.0.26       |
 
 > [!IMPORTANT]
+>
 > - AD FS on Windows Server 2016 only supports authentication through the Microsoft Entra Authentication Library (ADAL).
-> - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
+> - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019
 > (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 > - After July 1, 2022, any customers still using AD FS on Windows Server 2016 will no longer be able to use the Office add-ins. This is irrespective of the Microsoft Dynamics 365 Finance + Operations (on-premises) version that they are running.
 

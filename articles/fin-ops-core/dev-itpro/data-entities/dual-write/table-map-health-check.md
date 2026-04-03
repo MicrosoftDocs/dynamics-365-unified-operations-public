@@ -4,6 +4,8 @@ description: Learn about error codes for the table map health check, including a
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

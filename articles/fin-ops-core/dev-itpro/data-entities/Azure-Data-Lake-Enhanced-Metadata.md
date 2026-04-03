@@ -4,6 +4,8 @@ description: Learn about how data and metadata are stored in Microsoft Azure Dat
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
