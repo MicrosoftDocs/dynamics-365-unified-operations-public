@@ -32,7 +32,7 @@ The following steps are required to obtain a bearer token with the correct permi
 Navigate to the [Microsoft Entra app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
 
 ## Step 2. Configure API permissions
-Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**.  You might see several entries with a name similar to this, so be sure you use the one with the GUID, **913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0**.  
+Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**.  You might see several entries with a name similar to this, so be sure you use the one with the GUID, **aaaabbbb-0000-cccc-1111-dddd2222eeee**.  
 
 > [!NOTE]
 > These APIs make use of delegated permissions only at this time.  For applications that run with a user context, you request delegated permissions using the **scope** parameter of **user_impersonation**.  These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling the API endpoints.
