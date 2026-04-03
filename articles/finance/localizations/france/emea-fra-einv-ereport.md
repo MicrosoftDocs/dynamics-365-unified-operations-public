@@ -522,15 +522,36 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 
 ## Send electronic invoices responses
 
-Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses wich conclude electronic invoices lifecycle.
+Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses which conclude electronic invoices lifecycle.
 
 ### Send responses for Customer and Project invoices
 
-ZZZZZZZZZZZZZZZZ Current implementation allows sending only *payment reception confirmation* responses to your Buyers. To enter responses, follow these steps.
+Current implementation allows sending only *payment reception confirmation* responses to your Buyers. To enter responses, follow these steps.
+
+1. Go to **Accounts receivable** \> **Inquires and reports** \> **Invoices**\> **Invoice journal** for Sales and Free text invoices or to **Project management and accounting** \> **Project invoices** \> **Project invoices**.
+1. Select a specific invoice in the list, and then, on the Action Pane, on the **Invoice** / **Project invoice** tab, in the **Document** group, select **Add response**.
+1. In the **Response code** filed, select the required value from the list. The **Amount paid** filed will be automatically populated based on payments settled against this invoice. 
+1. Select **OK**, and then close the page.
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
+1. In the **Record to include** section, make sure that the required **Customer invoice response** records are selcted.
+1. Select **OK** to start the responses submission process.
+1. Check the responses submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, select **Customer invoice response** document type.  
 
 ### Send responses for Pending vendor invoices
 
-ZZZZZZZZZZZZZZ Current implementation allows sending only *refusal* responses to your Sellers. To enter responses, follow these steps.
+Current implementation allows sending only *refusal* responses to your Sellers. To enter responses, follow these steps.
+
+1. Go to **Accounts payable** \> **Invoices**\> **Pending vendor invoice**.
+1. Select a specific invoice in the list, and then, on the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Add response**.
+1. In the **Response code** filed, select the required value from the list.
+1. In the **Reason code** filed, select the required value from the list. 
+1. Select **OK**, and then close the page.
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
+1. In the **Record to include** section, make sure that the required **Pending vendor invoice response** records are selcted.
+1. Select **OK** to start the responses submission process.
+   > [!NOTE]
+   > At this stage, the **French electronic invoice status (FR)** globalization feature is being run for responses processing.
+1. Check the responses submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, select **Pending vendor invoice response** document type.  
 
 ## Appendix
 
