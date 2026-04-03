@@ -4,8 +4,9 @@ description: Learn about the parameters and options for data import and export, 
 author: pnghub
 ms.author: twheeloc
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/14/2026
-ms.custom:
 ms.reviewer: twheeloc
 ---
 

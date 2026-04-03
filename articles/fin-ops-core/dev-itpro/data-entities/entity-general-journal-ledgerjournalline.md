@@ -4,6 +4,8 @@ description: Learn about the LedgerJournalLine data entity in finance and operat
 author: edupont04
 ms.author: epegors
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 02/02/2024
 ms.collection: FastTrack
 ---

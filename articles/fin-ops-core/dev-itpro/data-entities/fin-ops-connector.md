@@ -4,6 +4,8 @@ description: Learn about the Application Connector for Microsoft Power Automate 
 author: pnghub
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

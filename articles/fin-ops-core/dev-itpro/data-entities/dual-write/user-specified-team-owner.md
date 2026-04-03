@@ -4,6 +4,8 @@ description: Learn how to set a user-specified team owner and how to view the ow
 author: nhelgren
 ms.author: nhelgren
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 04/26/2021
 ms.reviewer: johnmichalak
 audience: Developer

@@ -4,8 +4,9 @@ description: Get answers to frequently asked questions about dual-write async in
 author: pnghub
 ms.author: twheeloc
 ms.topic: faq
+ms.custom: 
+  - bap-template
 ms.date: 01/14/2026
-ms.custom:
 ms.reviewer: twheeloc
 ---
 

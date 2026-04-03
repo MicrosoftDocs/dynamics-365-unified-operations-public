@@ -4,6 +4,8 @@ description: Learn about application lifecycle management and the benefits of ma
 author: nhelgren
 ms.author: nhelgren
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer
@@ -15,8 +17,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Application lifecycle management
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 By making dual-write solution-aware, you enable basic application lifecycle management (ALM) capabilities, such as transportation and backup/restore of dual-write table maps across environments. You also enable scenarios where you can get solutions published by Microsoft or an independent software vendor (ISV) from Marketplace.
 

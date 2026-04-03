@@ -4,7 +4,7 @@ description: Learn how to configure the service-based Warehouse Management mobil
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 02/02/2024
+ms.date: 04/02/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
