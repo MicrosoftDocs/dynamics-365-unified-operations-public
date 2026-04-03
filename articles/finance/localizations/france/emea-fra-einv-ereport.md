@@ -522,15 +522,15 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 
 ## Send electronic invoices responses
 
-After you complete ZZZZZZZZZZZZZZZZZZZZZZZzz
+Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses wich conclude electronic invoices lifecycle.
 
 ### Send responses for Customer and Project invoices
 
-WWWWWWWWWWWWWWWWWWW
+ZZZZZZZZZZZZZZZZ Current implementation allows sending only *payment reception confirmation* responses to your Buyers. To enter responses, follow these steps.
 
 ### Send responses for Pending vendor invoices
 
-WWWWWWWWWWWWWWWWWWW
+ZZZZZZZZZZZZZZ Current implementation allows sending only *refusal* responses to your Sellers. To enter responses, follow these steps.
 
 ## Appendix
 
@@ -546,7 +546,7 @@ The list of the mandatory status codes supported in electronic invoicing for Mic
 | 213 | Rejected | **Mandatory** | The invoice is technically rejected by either issuer's or receiver's PA. |
 
 > [!NOTE]
-> The electronic invoicing functionality in Microsoft D365 Finance doesn't limit you with the only listed statuses. The system allows receving any valid status from your buyers PAs via Edicom. At the same time, current implementation allows sending only responses to your Sellers and payment reception confirmation responses to your Buyers.
+> The electronic invoicing functionality in Microsoft D365 Finance doesn't limit you with the only listed statuses. The system allows receving any valid status from your buyers PAs via Edicom. ZZZZZZZZZZZZZZZZZZZZZZZ At the same time, current implementation allows sending only refusal responses to your Sellers and payment reception confirmation responses to your Buyers.
 > The full list of statuses can be found in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
 
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
