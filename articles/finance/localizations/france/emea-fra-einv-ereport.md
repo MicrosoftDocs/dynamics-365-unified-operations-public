@@ -533,8 +533,10 @@ Current implementation allows sending only *payment reception confirmation* resp
 1. In the **Response code** filed, select the required value from the list. The **Amount paid** filed will be automatically populated based on payments settled against this invoice. 
 1. Select **OK**, and then close the page.
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-1. In the **Record to include** section, make sure that the required **Customer invoice response** records are selcted.
+1. In the **Record to include** section, make sure that the required **Customer invoice response** records are selected.
 1. Select **OK** to start the responses submission process.
+   > [!NOTE]
+   > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AR respsone** feature setup is being run for responses processing.
 1. Check the responses submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, select **Customer invoice response** document type.  
 
 ### Send responses for Pending vendor invoices
@@ -547,10 +549,10 @@ Current implementation allows sending only *refusal* responses to your Sellers. 
 1. In the **Reason code** filed, select the required value from the list. 
 1. Select **OK**, and then close the page.
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-1. In the **Record to include** section, make sure that the required **Pending vendor invoice response** records are selcted.
+1. In the **Record to include** section, make sure that the required **Pending vendor invoice response** records are selected.
 1. Select **OK** to start the responses submission process.
    > [!NOTE]
-   > At this stage, the **French electronic invoice status (FR)** globalization feature is being run for responses processing.
+   > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AP respsone** feature setup is being run for responses processing.
 1. Check the responses submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, select **Pending vendor invoice response** document type.  
 
 ## Appendix
@@ -567,7 +569,7 @@ The list of the mandatory status codes supported in electronic invoicing for Mic
 | 213 | Rejected | **Mandatory** | The invoice is technically rejected by either issuer's or receiver's PA. |
 
 > [!NOTE]
-> The electronic invoicing functionality in Microsoft D365 Finance doesn't limit you with the only listed statuses. The system allows receving any valid status from your buyers PAs via Edicom. ZZZZZZZZZZZZZZZZZZZZZZZ At the same time, current implementation allows sending only refusal responses to your Sellers and payment reception confirmation responses to your Buyers.
+> The electronic invoicing functionality in Microsoft D365 Finance doesn't limit you with the only listed statuses. The system allows receving any valid status from your buyers PAs via Edicom. At the same time, current implementation allows sending only refusal responses to your Sellers and payment reception confirmation responses to your Buyers.
 > The full list of statuses can be found in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
 
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
