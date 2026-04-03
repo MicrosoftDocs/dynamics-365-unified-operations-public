@@ -1,8 +1,8 @@
 ---
 title: What's new or changed in Invoice capture
 description: Learn about features that are either new or changed in Invoice capture.
-author: shielas  
-ms.author: shielas
+author: MaheshPrasadK   
+ms.author: mkarpana
 ms.topic: whats-new
 ms.date: 04/03/2026
 ms.update-cycle: 1095-days
