@@ -534,6 +534,21 @@ WWWWWWWWWWWWWWWWWWW
 
 ## Appendix
 
+### <a id="StatusCodes"></a>List of lifecycle status codes
+
+The list of the mandatory status codes supported in electronic invoicing for Microsoft D365 Finance.
+
+| Code | Status | Requirement | Description |
+|------------|------------------|-----------------------------------|---------------------------------|
+| 200 | Deposited | **Mandatory** | An e-invoice is transmitted to the PA, which certifies that the invoice is validated and compliant. |
+| 210 | Refused | **Mandatory** | The recipient has refused the invoice. |
+| 212 | Payment received | **Mandatory** | The invoice is fully paid by the recipient. |
+| 213 | Rejected | **Mandatory** | The invoice is technically rejected by either issuer's or receiver's PA. |
+
+> [!NOTE]
+> The electronic invoicing functionality in Microsoft D365 Finance doesn't limit you with the only listed statuses. The system allows receving any valid status from your buyers PAs via Edicom. At the same time, current implementation allows sending only responses to your Sellers and payment reception confirmation responses to your Buyers.
+> The full list of statuses can be found in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
+
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
 
 - Invoice model
@@ -563,20 +578,6 @@ WWWWWWWWWWWWWWWWWWW
   - Edicom response error log import
   - Edicom Response message status fromat
 
-### <a id="StatusCodes"></a>List of lifecycle status codes
-
-The list of the mandatory status codes supported in electronic invoicing for Microsoft D365 Finance.
-
-| Code | Status | Requirement | Description |
-|------------|------------------|-----------------------------------|---------------------------------|
-| 200 | Deposited | **Mandatory** | An e-invoice is transmitted to the PA, which certifies that the invoice is validated and compliant. |
-| 210 | Refused | **Mandatory** | The recipient has refused the invoice. |
-| 212 | Payment received | **Mandatory** | The invoice is fully paid by the recipient. |
-| 213 | Rejected | **Mandatory** | The invoice is technically rejected by either issuer's or receiver's PA. |
-
-> [!NOTE]
-> The electronic invoicing functionality in Microsoft D365 Finance doesn't limit you with the only listed statuses. The system allows receving any valid status from your buyers PAs via Edicom. At the same time, current implementation allows sending only *Refusal* responses to your Sellers.
-> The full list of statuses can be found in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
 
 ## More information
 
