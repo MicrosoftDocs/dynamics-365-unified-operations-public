@@ -4,7 +4,9 @@ description: Learn about a database export scenario for finance and operations, 
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 02/13/2024
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
@@ -17,28 +19,29 @@ ms.custom: sfi-ropc-nochange
 
 [!include [banner](../includes/banner.md)]
 
-Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). This tutorial shows how to export all the data and transactions from a sandbox standard user acceptance testing (UAT) environment.
+Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). This tutorial shows how to export all the data and transactions from a sandbox standard user acceptance testing (UAT) environment.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Refresh the UAT environment.
-> * Run the export to the Asset library in Microsoft Dynamics Lifecycle Services (LCS).
-> * Download the database backup.
-> * Import the database, and prepare it so that it can be used in a developer environment.
+>
+> - Refresh the UAT environment.
+> - Run the export to the Asset library in Microsoft Dynamics Lifecycle Services.
+> - Download the database backup.
+> - Import the database, and prepare it so that you can use it in a developer environment.
 
-As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into the development environment. In this way, the customer is able to debug specific transactions, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who is already live wants to load a recent copy of production transactions into the development environment. By using this approach, the customer can debug specific transactions or develop new features and reports by using realistic datasets.
 
 > [!IMPORTANT]
-> Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
+> Database copy to a build environment isn't supported. To learn more, see [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
 
 ## Known limitations
 
-Because of recent restrictions by the Microsoft Azure SQL Database platform, Microsoft doesn't recommend that you export your database if it's larger than 200 gigabytes (GB). If you must export a larger database, Microsoft recommends that you use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until SQL Database can support larger exports. This recommendation applies to export operations, not refresh operations. Refresh operations can support databases that are up to 4 terabytes (TB) in size.
+Because of recent restrictions by the Microsoft Azure SQL Database platform, Microsoft doesn't recommend that you export your database if it's larger than 200 gigabytes (GB). If you must export a larger database, use the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/b86878500e79f0fe0488c9aedf3fd38b30749fd4/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md) until SQL Database can support larger exports. This recommendation applies to export operations, not refresh operations. Refresh operations can support databases that are up to 4 terabytes (TB) in size.
 
 ## Prerequisites
 
-To do a refresh operation, you must have your production environment deployed, or you must have a minimum of two standard UAT environments. To complete this tutorial, you must have a developer environment deployed.
+To do a refresh operation, you must deploy your production environment, or you must have a minimum of two standard UAT environments. To complete this tutorial, you must deploy a developer environment.
 
 ## Refresh the UAT environment
 
@@ -68,7 +71,7 @@ Here's an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 
 > [!IMPORTANT]
-> To ensure that imported data is compatible with the metadata, you must trigger a full database synchronization from Visual Studio. 
+> To ensure that imported data is compatible with the metadata, you must trigger a full database synchronization from Visual Studio.
 
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
@@ -140,13 +143,13 @@ declare @DefaultDataGroupRecId BIGINT;
 declare @ExpectedDatabaseRecId BIGINT; 
 IF NOT EXISTS (select 1 from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName)
 BEGIN 
-	select @DefaultDataGroupRecId = RECID from RETAILCDXDATAGROUP where NAME = 'Default'; 
-	insert into RETAILCONNDATABASEPROFILE (DATAGROUP, NAME, CONNECTIONSTRING, DATASTORETYPE)
-	values (@DefaultDataGroupRecId, @ExpectedDatabaseName, NULL, 0); 
-	select @ExpectedDatabaseRecId = RECID from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName; 
-	insert into RETAILCDXDATASTORECHANNEL (CHANNEL, DATABASEPROFILE)
-	select RCT.RECID, @ExpectedDatabaseRecId from RETAILCHANNELTABLE RCT
-	inner join RETAILCHANNELTABLEEXT RCTEX on RCTEX.CHANNEL = RCT.RECID
+ select @DefaultDataGroupRecId = RECID from RETAILCDXDATAGROUP where NAME = 'Default'; 
+ insert into RETAILCONNDATABASEPROFILE (DATAGROUP, NAME, CONNECTIONSTRING, DATASTORETYPE)
+ values (@DefaultDataGroupRecId, @ExpectedDatabaseName, NULL, 0); 
+ select @ExpectedDatabaseRecId = RECID from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName; 
+ insert into RETAILCDXDATASTORECHANNEL (CHANNEL, DATABASEPROFILE)
+ select RCT.RECID, @ExpectedDatabaseRecId from RETAILCHANNELTABLE RCT
+ inner join RETAILCHANNELTABLEEXT RCTEX on RCTEX.CHANNEL = RCT.RECID
         update RETAILCHANNELTABLEEXT set LIVECHANNELDATABASE = @ExpectedDatabaseRecId where LIVECHANNELDATABASE = 0
 END; 
 --End create retail channel database record
@@ -175,13 +178,14 @@ After these services are stopped, rename the AxDB database **AxDB\_orig**, renam
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
 
 ### Post steps for Commerce environments
-If you're using Commerce channels, when you import a database that you originally exported from a self-service sandbox to a developer environment, the following additional steps must be performed on the destination developer environment. If you don't complete these steps, Commerce channels won't function.
 
-1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update to create the channel database.
-2.	To restore any previously deployed channel database extensions, reapply the corresponding Retail self-service deployable package.
+If you're using Commerce channels, when you import a database that you originally exported from a self-service sandbox to a developer environment, you must perform the following additional steps on the destination developer environment. If you don't complete these steps, Commerce channels won't function.
+
+1. To restore Commerce channels functionality, apply the latest Microsoft service update or quality update to create the channel database.
+1. To restore any previously deployed channel database extensions, reapply the corresponding Retail self-service deployable package.
 
 > [!NOTE]
-> Starting with Commerce version 10.0.38, the collated/legacy channel database is no longer updated or supported. To restore Commerce channel functionality, you must set up a sealed CSU following the instructions in [Install Commerce Scale Unit on a development environment](/dynamics365/commerce/dev-itpro/install-csu-dev-env)
+> Starting with Commerce version 10.0.38, the collated/legacy channel database is no longer updated or supported. To restore Commerce channel functionality, you must set up a sealed CSU following the instructions in [Install Commerce Scale Unit on a development environment](/dynamics365/commerce/dev-itpro/install-csu-dev-env).
 
 ### Reprovision the target environment
 
@@ -211,20 +215,20 @@ In the client, enter the values that you documented for the encrypted and enviro
 
 Are you looking for more tools to help you import backup files into your developer environments? Here are some other sources of information:
 
-* [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools created by the community.
-* [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
+- [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools created by the community.
+- [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
 
 ## Known issues
 
 ### The export database is in a "Preparation failed" state
 
-If the automation from LCS times out, the state of the export database is changed to **Preparation failed**. The export operation to export to the Asset library is still running in SQL Database. To resolve this issue, you can use the **Resume** button to reconnect the process with SQL Database. The process should then be successfully completed.
+If the automation from Lifecycle Services times out, the state of the export database changes to **Preparation failed**. The export operation to export to the Asset library is still running in SQL Database. To resolve this issue, use the **Resume** button to reconnect the process with SQL Database. The process should then be successfully completed.
 
-### The export database takes a long time
+### Exporting the database takes a long time
 
-The Azure SQL team announced that the Import/Export application programming interface (API) that LCS uses has variable execution times for any database that is over 200 GB in size. If you encounter this issue, you can either [connect your DevTest environment directly to the UAT database](dbmovement-scenario-debugdiag.md) or follow the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). Microsoft doesn't recommend that you export databases for backup purposes, because the point-in-time restore functionality is available and included with your environment.
+The Azure SQL team announced that the Import/Export application programming interface (API) that Lifecycle Services uses has variable execution times for any database that is over 200 GB in size. If you encounter this issue, you can either [connect your DevTest environment directly to the UAT database](dbmovement-scenario-debugdiag.md) or follow the [legacy documentation](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/68eef5b1ef783a62f3139adab236a574457af47e/articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). Microsoft doesn't recommend that you export databases for backup purposes, because the point-in-time restore functionality is available and included with your environment.
 
-The Lifecycle Services team works directly with the Azure SQL team to increase the performance of the Import/Export API to make improvements in upcoming releases of LCS.
+The Lifecycle Services team works directly with the Azure SQL team to increase the performance of the Import/Export API to make improvements in upcoming releases of Lifecycle Services.
 
 ### I can't download Management Studio installation files
 
@@ -235,12 +239,12 @@ When you try to download the Microsoft SQL Server Management Studio installer, y
 To work around this issue, follow these steps to enable file downloads.
 
 1. In your web browser, open **Internet options**.
-2. On the **Security** tab, select the **Internet** zone, and then select **Custom level**.
-3. Scroll to **Downloads**, and then, under **File download**, select the **Enable** option.
+1. On the **Security** tab, select the **Internet** zone, and then select **Custom level**.
+1. Scroll to **Downloads**, and then, under **File download**, select the **Enable** option.
 
 ### Database synchronization fails
 
-When you sync the database against the newly imported database from Microsoft Visual Studio, the synchronization might fail, and you might receive the following error message:
+When you sync the database against the newly imported database from Visual Studio, the synchronization might fail. You might receive the following error message:
 
 > Failed to open SQL connection syncengine.exe exited with code -1.
 
@@ -248,9 +252,9 @@ In this case, the following message is also logged under event ID 140 in the Win
 
 > Object Server Database Synchronizer: The internal system table version number stored in the database is higher than the version supported by the kernel (141/138). Use a newer Microsoft Dynamics kernel, or start Microsoft Dynamics using the -REPAIR command line parameter to enforce synchronization.
 
-This issue can occur when the platform build number of the current environment is lower than the platform build number of the source environment. To resolve the issue, follow one of these steps, depending on your circumstances:
+This problem occurs when the platform build number of the current environment is lower than the platform build number of the source environment. To resolve the problem, follow one of these steps, depending on your circumstances:
 
-- Use the **Updates** tiles on the environment page in LCS to upgrade the platform in the current environment so that it matches the platform in the source environment.
+- Use the **Updates** tiles on the environment page in Lifecycle Services to upgrade the platform in the current environment so that it matches the platform in the source environment.
 - Run the following query to adjust the expected version in the database.
 
     ```sql
@@ -262,16 +266,14 @@ This issue can occur when the platform build number of the current environment i
     ```
 
     > [!NOTE]
-    > The value **138** in this query is taken from the event log message, where version 138 was expected in this particular environment.
+    > The value **138** in this query comes from the event log message, where version 138 was expected in this particular environment.
 
 ### Performance
 
 The following guidelines can help you achieve optimal performance:
 
-- You must always import the .bacpac file locally to the computer that runs the SQL Server instance. Don't import it to a remote machine from Management Studio.
+- Always import the .bacpac file locally to the computer that runs the SQL Server instance. Don't import it to a remote machine from Management Studio.
 - Place the .bacpac file on drive D when you import it to a one-box environment that is hosted in Azure. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
-- Grant the account that runs the SQL Server Windows service [Instance File Initialization](/sql/relational-databases/databases/database-instant-file-initialization) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
-
+- Grant the account that runs the SQL Server Windows service [Instance File Initialization](/sql/relational-databases/databases/database-instant-file-initialization) rights. This action helps improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

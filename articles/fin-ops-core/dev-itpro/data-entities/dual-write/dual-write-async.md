@@ -4,6 +4,8 @@ description: Learn how to set up and manage dual-write async in Microsoft Dynami
 author: pnghub
 ms.author: twheeloc
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.custom:
 ms.reviewer: twheeloc

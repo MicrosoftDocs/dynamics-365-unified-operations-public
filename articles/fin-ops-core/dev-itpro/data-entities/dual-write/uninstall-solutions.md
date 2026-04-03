@@ -4,6 +4,8 @@ description: Learn about how to uninstall dual-write application orchestration s
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+sm.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

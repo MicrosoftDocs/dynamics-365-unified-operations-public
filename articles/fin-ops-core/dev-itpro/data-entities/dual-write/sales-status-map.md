@@ -4,6 +4,8 @@ description: Learn how to set up the sales order status columns for dual-write, 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: IT Pro

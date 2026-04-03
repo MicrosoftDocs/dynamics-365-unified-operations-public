@@ -4,6 +4,8 @@ description: Learn about change data in a data lake and explains what you can do
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

@@ -4,6 +4,8 @@ description: Access some tips for troubleshooting issues that involve service au
 author: pnghub
 ms.author: johnmichalak
 ms.topic: troubleshooting-general
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer

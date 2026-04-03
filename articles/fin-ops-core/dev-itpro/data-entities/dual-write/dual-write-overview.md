@@ -4,6 +4,8 @@ description: Learn about dual-write, which provides near-real-time interaction b
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
