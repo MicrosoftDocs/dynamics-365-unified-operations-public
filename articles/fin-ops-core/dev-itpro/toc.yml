@@ -292,7 +292,7 @@ items:
         - name: System tracking fields on financial tables
           href: financial/system-tracking-fields-after-upgrade.md
         - name: Enable copy values on create for financial dimensions
-          href: finanical/enable-copy-values-dimension-on-create.md
+          href: financial/enable-copy-values-dimension-on-create.md
       - name: Bring your own database
         href: analytics/export-entities-to-your-own-database.md
       - name: Automated Entity store refresh
