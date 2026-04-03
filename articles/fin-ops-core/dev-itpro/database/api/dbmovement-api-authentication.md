@@ -7,13 +7,14 @@ ms.topic: upgrade-and-migration-article
 ms.date: 04/03/2026
 ms.custom: 
   - bap-template
+  - sfi-image-nochange
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro 
 ms.search.region: Global
 ms.search.validFrom: 2019-09-30
 ms.search.form: 
 ms.dyn365.ops.version: 10.0.0
-ms.custom: sfi-ropc-nochange
+
 ---
 
 # Database movement API - Authentication

@@ -6,8 +6,8 @@ ms.author: johnmichalak
 ms.topic: article
 ms.custom: 
   - bap-template
+  - "separate-solution"
 ms.date: 01/15/2026
-ms.custom: "separate-solution"
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2021-11-29

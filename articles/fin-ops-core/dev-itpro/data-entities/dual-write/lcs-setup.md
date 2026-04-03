@@ -35,7 +35,7 @@ Follow these steps to set up dual-write from Lifecycle Services **Environment De
 
 1. Select the **Dual-write application** button.
 
-    :::image type="content" source="media/powerplat_integration_step2.png" alt-text="Screenshot of the Power Platform Integration section with the Dual-write application button.".:::
+    :::image type="content" source="media/powerplat_integration_step2.png" alt-text="Screenshot of the Power Platform Integration section with the Dual-write application button.":::
 
 1. Review the terms and conditions, and then select **Configure**.
 

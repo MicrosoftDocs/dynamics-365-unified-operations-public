@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 01/15/2026
-ms.custom:
 ms.reviewer: twheeloc
 ---
 

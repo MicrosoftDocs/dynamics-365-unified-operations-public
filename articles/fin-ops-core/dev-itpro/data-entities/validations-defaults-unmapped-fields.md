@@ -118,7 +118,7 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 
 ### Unmapped field comparison
 
-|  | Virtual field | Computed field |
+| Aspect | Virtual field | Computed field |
 |---|---|---|
 | Metadata properties | Is computed = No | - Is Computed = Yes<br>- Computed Field Method = static method |
 | Read | - X++ (override **postLoad**)<br>- Row by row | - SQL computed column<br>- Set-based read possible |

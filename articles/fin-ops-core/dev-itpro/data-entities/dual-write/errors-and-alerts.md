@@ -6,13 +6,14 @@ ms.author: nhelgren
 ms.topic: article
 ms.custom: 
   - bap-template
+  - sfi-image-nochange
 ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: sfi-image-nochange
+
 ---
 
 # Error management and alert notifications

@@ -6,13 +6,14 @@ ms.author: laswenka
 ms.topic: how-to
 ms.custom: 
   - bap-template
+  - sfi-image-nochange
 ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.custom: sfi-ropc-nochange
+
 ---
 
 # Export a copy of the standard user acceptance testing (UAT) database
