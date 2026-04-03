@@ -83,7 +83,7 @@ Instead of importing the Microsoft-provided model mapping file, you can create a
 
 You can view an editable version of the configured model mapping on the **Model mapping designer** page.
 
-![Structure of the ER model mapping on the Model mapping designer page.](./media/er-design-zpl-labels-mapping.png)
+:::image type="content" source="./media/er-design-zpl-labels-mapping.png" alt-text="Screenshot of the structure of the ER model mapping on the Model mapping designer page.":::
 
 ## Design a format
 
@@ -135,7 +135,7 @@ The following example uses a printer emulator application for ZPL labels to show
 1. Add a local printer for the current workstation, and configure it to pass generated labels from the DRA to a printer emulator application.
 1. Install a printer emulator application as an extension of the Chrome web browser, and configure it to pass generated labels from a local printer to a web service that renders generated labels and returns them to the printer emulator for preview.
 
-:::image type="content" source="media/zpl-printer-emulator-app.png" alt-text="Flow diagram of label routing: Finance to DRA, local printer, emulator, and rendering web service for preview.":::
+:::image type="content" source="media/printer-emulator-app-zpl-labels.png" alt-text="Screenshot of flow diagram of label routing from Finance to DRA, local printer, emulator, and rendering web service for preview.":::
 
 ### Install and configure a printer emulator application
 
