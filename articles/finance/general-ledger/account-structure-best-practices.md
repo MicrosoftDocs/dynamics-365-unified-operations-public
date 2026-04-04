@@ -82,7 +82,7 @@ Activation performs best when the system isn't simultaneously processing new tra
 - **Pause automated batch processes** — Temporarily suspend batch jobs that create or process transactions, such as vendor invoice processing, free text invoice posting, budget register entries, and similar recurring jobs. Resume these jobs after activation completes.
 - **Stop data imports and OData integrations** — Temporarily disable recurring data imports, Data Management Framework jobs, and OData integrations that create or modify transactions with financial dimensions.
 - **Inform users to avoid entering transactions** — Ask users to hold off on entering journals, invoices, purchase orders, and other documents that generate accounting distributions during the activation window.
-- **Turn off ISV and third-party batch jobs** — Temporarily disable batch jobs from third-party modules that process documents. For example, the **ExFlow** module can interfere with activation if its batch jobs are running simultaneously, causing the activation batch job to fail silently with no error message. Run ExFlow batch jobs and similar third-party processes only after activation completes.
+- **Turn off ISV and third-party batch jobs** — Temporarily disable batch jobs from third-party modules that process documents. Several are known to cause activation jobs to fail silently. Run these batch jobs and similar third-party processes only after activation completes.
 
 > [!NOTE]
 > These suspensions are temporary and only needed for the duration of the activation. Resume all batch jobs, integrations, and normal user activity as soon as activation completes.
