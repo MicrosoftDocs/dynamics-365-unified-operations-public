@@ -28,7 +28,7 @@ When working with financial dimensions, you might need to rename dimension value
 - Ensure dimension value names are unique - Dimension value names must be unique across the system. To check for duplicates, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**, select the dimension, then select **Dimension values**. If a duplicate exists, choose a different name.
 - Verify you have sufficient privileges - Your user account must have the necessary roles and privileges to modify dimension values. If you're unable to make changes, contact your system administrator to verify permissions.
 
-In some cases, if a dimension value was renamed outside the standard user interface, the financial dimension value may display inconsistent naming or casing across the application. This can happen if an incorrectly cased value was imported through an Excel-based data import or if a customization changed the value name without using the supported dimension update methods, such as through a direct database modification. To address the issue, rename the dimension value using the above guidance.
+In some cases, if a dimension value was renamed outside the standard user interface, the financial dimension value may display inconsistent naming or casing across the application. This can happen if an incorrectly cased value was imported through an Excel-based data import or if a customization changed the value name without using the supported dimension update methods, such as through a direct database modification. To address the issue, rename the dimension value using the standard rename process on the source entity page.
 
 ### Rename by primary key
 
@@ -64,7 +64,10 @@ A dimension value can't be deleted if it has been used on any posted or unposted
 
 ### Deleting entity-backed records used as dimension values
 
-When you delete a record from a source entity (such as a customer, vendor, project, or bank account) that is used as a financial dimension value, the system runs a reference scan before allowing the deletion. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record.
+When you delete a record from a source entity (such as a customer, vendor, project, or bank account) that is used as a financial dimension value, the system's response depends on how the dimension value was referenced:
+
+- **Used in a ledger account** — If the dimension value is part of any ledger account combination, deletion is blocked immediately.
+- **Used in a default dimension, posting profile, or other non-ledger-account context** — The system runs a reference scan before allowing the deletion. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record.
 
 If deletion is blocked, consider renaming or suspending the value instead, as described earlier in this article.
 

@@ -28,7 +28,13 @@ The segmented entry control allows you to freely type account and dimension valu
 
 Validation happens when you leave the field. When you move to another field, press Tab, or take an action on the page, the system checks what you entered against your account structures and derived dimensions list. If the values aren't valid, you'll receive an error at that point.
 
-This is different from the **Financial dimensions** FastTab, where dimensions that are marked to prevent changes can't be edited at all. In the segmented entry control, you can edit all dimensions, but the system verifies your entries after you move on.
+The following example shows the segmented entry control on a general journal line. The **Account** field displays the full account and dimension combination, and the lookup lets you select values for each segment.
+
+[![Segmented entry control on a general journal line showing the Account field with a dimension lookup open.](./media/segmented-entry-control.png)](./media/segmented-entry-control.png)
+
+This is different from the **Financial dimensions** FastTab, where each dimension has its own field and dimensions that are marked to prevent changes can't be edited at all. In the segmented entry control, you can edit all dimensions, but the system verifies your entries after you move on.
+
+[![Financial dimensions FastTab showing individual dimension fields for default dimension values.](./media/financial-dimensions-fasttab.png)](./media/financial-dimensions-fasttab.png)
 
 ## Keyboard shortcuts
 
@@ -111,7 +117,7 @@ The following table describes the keyboard shortcuts that can be used when the l
 
 ## Copy and paste limitations
 
-Copy and paste isn't supported for Account and Offset Account columns in General Journal lines. These columns use segmented entry controls that validate each dimension segment separately, which isn't compatible with standard paste operations.
+You can paste a full account and dimension combination into an individual segmented entry control, as well as paste values into individual segments. However, bulk pasting from Excel into the Account and Offset Account columns across multiple General Journal lines isn't supported, because these columns validate each dimension segment separately.
 
 If you need to enter account and dimension values in bulk, use one of the following alternatives:
 

@@ -39,8 +39,6 @@ Create the chart of accounts on the **Chart of accounts** page. You can create m
 > [!IMPORTANT]
 > Don't use the chart of accounts delimiter character in main account numbers, financial dimension names, or dimension values. For details and best practices, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).
 
-Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports.
-
 You create account structures on the **Configure account structures** page. Account structures define valid combinations. These combinations, together with main accounts, form a chart of accounts. For more information, see [Create account structures](tasks/create-account-structures.md).
 
 ## Change the segment delimiter
