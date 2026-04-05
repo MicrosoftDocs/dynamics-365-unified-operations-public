@@ -26,6 +26,22 @@ Financial tags (tags) are an alternative to financial dimensions. An organizatio
 
 This article explains the various types of financial dimensions and their key properties. For step-by-step creation instructions, see [Define financial dimensions](tasks/define-financial-dimensions.md).
 
+## Account structures and dimension validation rules
+
+A rich, rule-based system is used to define valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
+
+### Account structures
+
+An account structure is required when you set up your ledger. You must define and activate at least one account structure, and you must assign it to the ledger. The account structure must have the main account in it. You can define the order of segments that works best for the business. After the main account is defined, the system can determine the account structure that is used. By putting the main account first or near the front of a structure, you can help limit the values and also help the system apply the last known valid value as a default value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values. It also defines whether dimension values must be entered.
+
+### Advanced rules
+
+Advanced rules are an optional component when you set up the chart of accounts. You can add as many advanced rules as you want to an account structure. Advanced rules are often used to handle scenarios where additional financial dimensions must be tracked when specific criteria are met. For example, if you use a Travel expense account, you might want to track additional information, such as the event that the employee is traveling for. If there are multiple advanced rules, they are applied in alphabetical order, based on the names of the rules. The segments that a rule adds can be applied only after the segments of the account structure.
+
+### Balancing dimension
+
+You can optionally define a balancing financial dimension. On the **Ledger** page, you can define the financial dimension that should be balanced. Then, whenever transactions are posted to that financial dimension, the system automatically creates and posts entries to make the financial dimension balanced.
+
 ## Financial dimension types
 
 Financial dimensions that you create on the **Financial dimensions** page are used as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions.

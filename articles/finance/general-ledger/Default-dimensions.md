@@ -1,10 +1,10 @@
 ---
-title: Financial dimensions and posting 
-description: Learn about the components that make up the chart of accounts and how the components work together, including an outline on the order for default dimensions.
+title: Default dimensions
+description: Learn how default dimension values are configured and applied, including fixed dimensions on main accounts, copying values from master records, and the order in which defaults are applied during posting.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/29/2024
+ms.date: 04/05/2026
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -18,31 +18,15 @@ ms.dyn365.ops.version: July 2017 update
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
-# Financial dimensions and posting 
+# Default dimensions
 
 [!include [banner](../includes/banner.md)]
 
-When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is, how the components work together, and how default and derived dimension values are applied.
+Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article explains how default and fixed dimension values work on main accounts and how dimensions are applied during posting. For information about how account structures, advanced rules, and balancing dimensions define valid combinations of main accounts and dimension values, see [Financial dimensions](financial-dimensions.md).
 
-## Chart of accounts and financial dimension components
+## Default and fixed financial dimensions on the main account
 
-A rich, rule-based system is used to define valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
-
-### Account structures
-
-An account structure is required when you set up your ledger. You must define and activate at least one account structure, and you must assign it to the ledger. The account structure must have the main account in it. You can define the order of segments that works best for the business. After the main account is defined, the system can determine the account structure that is used. By putting the main account first or near the front of a structure, you can help limit the values and also help the system apply the last known valid value as a default value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values. It also defines whether dimension values must be entered.
-
-### Advanced rules
-
-Advanced rules are an optional component when you set up the chart of accounts. You can add as many advanced rules as you want to an account structure. Advanced rules are often used to handle scenarios where additional financial dimensions must be tracked when specific criteria are met. For example, if you use a Travel expense account, you might want to track additional information, such as the event that the employee is traveling for. If there are multiple advanced rules, they are applied in alphabetical order, based on the names of the rules. The segments that a rule adds can be applied only after the segments of the account structure.
-
-### Balancing dimension
-
-You can optionally define a balancing financial dimension. On the **Ledger** page, you can define the financial dimension that should be balanced. Then, whenever transactions are posted to that financial dimension, the system automatically creates and posts entries to make the financial dimension balanced.
-
-### Default/fixed financial dimensions on the main account
-
-Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
+You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
 
 ## Default dimension values
 
@@ -61,73 +45,15 @@ If you're using a template to create a master record, make sure that the templat
 >
 > If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
 
-## Derived dimensions
-
-You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
-
-> [!NOTE]
-> The dimension whose value triggers the derivation is called the *driving dimension*. In the previous example, cost center is the driving dimension because entering a cost center value drives the automatic entry of the department value.
-
-Set up derived values on the dimensions page.
-
-1. Select a dimension and then select **Derived dimensions**.
-
-    The **Derived dimensions** page includes a grid. The selected dimension segment is the first column in this grid.
-
-1. Add the segments that you want to derive. Each segment appears as a column.
-
-Enter the dimension combinations that you want to derive from the dimension in the first column. For example, to use the cost center as the dimension that the department and location derive from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
-
-### Shared dimensions only
-
-You can only configure derived dimensions for shared dimensions, not company-specific dimensions.
-
-**Examples of shared dimensions (allowed):** Departments, Cost Center
-
-**Examples of company-specific dimensions (not allowed):** Project, Bank Accounts, Customers, Vendors
-
-To check if a dimension is shared or company-specific, go to **General ledger > Chart of accounts > Dimensions > Financial dimensions** and select **Dimension values** from the action pane. Company-specific dimensions show the company name at the bottom of the tile.
-
-If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
-
-> [!IMPORTANT]
-> When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
-
-### Overriding existing values with derived dimensions
-
-By default, derived dimensions don't override existing values. This means you can establish default dimensions on master records, and those dimensions aren't changed by derived dimensions.
-
-To change this behavior, select the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. Using the previous example, if department was already set to 50 and location to 60, entering cost center 10 would change them to department 20 and location 30.
-
-The **Replace existing dimension values with derived values** setting only applies when a user manually enters a driving dimension value on a page. If the system fills in dimension values automatically through defaulting (for example, when default dimensions from a customer record are applied to a new sales order), derived dimensions don't override those defaulted values, even with this setting enabled.
-
-![](media/derived-dimensions-replace-values.png)
-
-When **Replace existing dimension values with derived values** is disabled, the derived dimensions will still automatically overwrite blank fields.
-
-### Preventing changes with derived dimensions
-
-When you use **Add segment** on the **Derived dimensions** page to add a segment as a derived dimension, an option at the bottom of the **Add segment** page lets you prevent changes to that dimension when it's derived. The default setting is off. Change it to **Yes** to prevent the dimension from being changed after it is derived.
-
-Prevent changes only applies when the entered dimension value has derived values set up for it. If there are no derived values defined for a particular value, users can still change the related dimensions freely. Using the previous example, entering cost center 10 would lock department to 20. But entering cost center 20, if it has no derived rules, would leave department editable.
-
-In all cases, the account value and all dimensions values are still validated against the account structures after the derived dimensions values are applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the **Derived dimensions** page before you can use them in transactions.
-
-### Derived dimensions and entities
-
-You can set up the derived dimensions segments and values by using entities.
-
-- The **Derived dimensions** entity sets up the driving dimensions and the segments that are used for those dimensions.
-- The **Derived dimensions value** entity lets you import the values that should be derived for each driving dimension.
-
-When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
-
 ## Order in which default dimensions are applied during posting
 
 People often have questions about the order that the various components run in. It's very important that you understand the order that default dimensions are applied in, because this behavior affects the approach that you take to setup.
 
 > [!NOTE]
 > This information applies only to the application of default dimensions in the application. If you import data by using Microsoft Excel or the Data Management Framework, the behavior differs.
+
+> [!NOTE]
+> Derived dimensions are applied at data-entry time, when a user manually enters a driving dimension value on a page, not during posting. This means derived dimensions run before the posting-time sequence described in the examples below. For more information, see [Derived dimensions](derived-dimensions.md).
 
 ### Example 1
 

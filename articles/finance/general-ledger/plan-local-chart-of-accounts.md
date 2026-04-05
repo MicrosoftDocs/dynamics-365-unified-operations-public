@@ -188,7 +188,6 @@ In this approach, a consolidation company is used to roll up and combine the bal
 
 - [Plan your chart of accounts](plan-chart-of-accounts.md)
 - [Configure ledgers](configure-ledger.md)
-- [Financial dimensions and posting](Default-dimensions.md#balancing-dimension)
 - [Financial dimension sets](financial-dimension-sets.md)
 - [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 - [Consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md)

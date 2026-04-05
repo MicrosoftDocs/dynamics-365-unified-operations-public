@@ -34,7 +34,7 @@ Consider these factors when you plan the structure of the chart of accounts for 
 - The reporting requirements of your legal entity
 - The degree of specification that is required, both for both external organizations and for your organization
 
-Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. For more information, see [Create a main account](tasks/create-main-account.md).
+Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports. For more information, see [Create a main account](tasks/create-main-account.md).
 
 > [!IMPORTANT]
 > Don't use the chart of accounts delimiter character in main account numbers, financial dimension names, or dimension values. For details and best practices, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).

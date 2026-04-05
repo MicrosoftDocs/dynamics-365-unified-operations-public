@@ -818,7 +818,7 @@
               href: general-ledger/ledger-subledger.md
             - name: Financial dimensions
               href: general-ledger/financial-dimensions.md
-            - name: Financial dimensions and posting
+            - name: Default dimensions
               href: general-ledger/Default-dimensions.md
             - name: Add financial dimensions to the CFO workspace
               href: general-ledger/CFO-workspace.md
@@ -1130,9 +1130,11 @@
                       href: general-ledger/financial-dimension-values-export-excel-odata.md
                     - name: Account and dimension combinations
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                    - name: Derived dimensions
+                      href: general-ledger/derived-dimensions.md
                     - name: Dimension value rules
                       items:
-                        - name: Financial dimensions and posting
+                        - name: Default dimensions
                           href: general-ledger/default-dimensions.md
                         - name: Create account structures
                           href: general-ledger/tasks/create-account-structures.md
