@@ -39,7 +39,7 @@ Create the chart of accounts on the **Chart of accounts** page. You can create m
 > [!IMPORTANT]
 > Don't use the chart of accounts delimiter character in main account numbers, financial dimension names, or dimension values. For details and best practices, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).
 
-You create account structures on the **Configure account structures** page. Account structures define valid combinations. These combinations, together with main accounts, form a chart of accounts. For more information, see [Create account structures](tasks/create-account-structures.md).
+You create account structures on the **Configure account structures** page. For more information, see [Create account structures](tasks/create-account-structures.md).
 
 ## Change the segment delimiter
 

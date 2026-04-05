@@ -71,4 +71,8 @@ When you delete a record from a source entity (such as a customer, vendor, proje
 
 If deletion is blocked, consider renaming or suspending the value instead, as described earlier in this article.
 
+## Financial dimension value sync
+
+The data maintenance portal includes the **Dimension value rename and modify chart of accounts delimiter process** job under the **Misc** tab. This job keeps financial dimension values in sync with their source entity records. If an entity-backed dimension value exists in the source table but doesn't appear in the dimension framework, check the status of this job. If no errors are present and the problem persists, select **Run now** to force a re-sync. For more information about the data maintenance portal, see [Data maintenance portal](/dynamics365/fin-ops-core/dev-itpro/sysadmin/datamaintenanceportal).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

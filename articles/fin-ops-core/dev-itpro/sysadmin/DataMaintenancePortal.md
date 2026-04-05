@@ -51,7 +51,3 @@ To prevent interference:
 4. Go to **System administration** > **Inquiries** > **Batch jobs** and cancel any currently running data maintenance jobs.
 5. Use maintenance mode to perform the schema change operation (for example, activate financial dimensions).
 6. After the operation completes, return to **Process automations** and remove the sleep period so data maintenance resumes normally.
-
-## Financial dimension value sync
-
-The data maintenance portal includes the **Dimension value rename and modify chart of accounts delimiter process** job under the **Misc** tab. This job keeps financial dimension values in sync with their source entity records. If an entity-backed dimension value exists in the source table but doesn't appear in the dimension framework, check the status of this job. If no errors are present and the problem persists, select **Run now** to force a re-sync.

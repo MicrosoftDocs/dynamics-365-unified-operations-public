@@ -50,7 +50,7 @@ In addition to fixed and default dimensions on main accounts described above, yo
 
 You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
 
-A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
+A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new [Dimension name] created**, where **[Dimension name]** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
 
 If records already exist for the dimension, turning on the feature updates the master records. However, existing documents and transactions aren't updated.
 
@@ -64,6 +64,9 @@ If you're using a template to create a master record, make sure that the templat
 ## Derived dimensions
 
 You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
+
+> [!NOTE]
+> The dimension whose value triggers the derivation is called the *driving dimension*. In the previous example, cost center is the driving dimension because entering a cost center value drives the automatic entry of the department value.
 
 Set up derived values on the dimensions page.
 
@@ -96,7 +99,7 @@ By default, derived dimensions don't override existing values. This means you ca
 
 To change this behavior, select the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. Using the previous example, if department was already set to 50 and location to 60, entering cost center 10 would change them to department 20 and location 30.
 
-Derived dimensions with this setting don't automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values are only overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
+The **Replace existing dimension values with derived values** setting only applies when a user manually enters a driving dimension value on a page. If the system fills in dimension values automatically through defaulting (for example, when default dimensions from a customer record are applied to a new sales order), derived dimensions don't override those defaulted values, even with this setting enabled.
 
 ![](media/derived-dimensions-replace-values.png)
 
@@ -106,7 +109,7 @@ When **Replace existing dimension values with derived values** is disabled, the 
 
 When you use **Add segment** on the **Derived dimensions** page to add a segment as a derived dimension, an option at the bottom of the **Add segment** page lets you prevent changes to that dimension when it's derived. The default setting is off. Change it to **Yes** to prevent the dimension from being changed after it is derived.
 
-This setting doesn't prevent changes if the entered driving dimension value isn't in the derived dimensions list. Using the previous example, entering cost center 10 would lock department to 20. But entering cost center 20, if it has no derived rules, would leave department editable.
+Prevent changes only applies when the entered dimension value has derived values set up for it. If there are no derived values defined for a particular value, users can still change the related dimensions freely. Using the previous example, entering cost center 10 would lock department to 20. But entering cost center 20, if it has no derived rules, would leave department editable.
 
 In all cases, the account value and all dimensions values are still validated against the account structures after the derived dimensions values are applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the **Derived dimensions** page before you can use them in transactions.
 
