@@ -68,20 +68,20 @@ The activation process runs as a batch job. Depending on the volume of unposted 
 
 ### Monitoring activation status
 
-As of application version 10.0.31, the **Account structure activation performance enhancement** feature lets you activate account structures more quickly by running multiple transaction updates at the same time. After the structure itself is validated, it's marked as active while unposted transaction processing continues in the background.
+When you activate an account structure, the system validates the structure and marks it as active. Unposted transaction processing then continues in the background, with multiple transaction updates running at the same time.
 
 To monitor activation progress:
 
 1. On the **Account structures** page, select **View activation status** above the grid, or select **View** on the Action Pane and then **Activation status**.
 2. A dialog box appears showing the individual tasks running as part of the activation process, along with each task's status and completion time.
 
-For more information, see [Account structure activation performance enhancement](../account-structure-improvement.md).
+For more information, see [Account structure activation](/dynamics365/finance/general-ledger/account-structure-improvement).
 
 ### Account structure activation failure
 
 If an activation fails, the structure reverts to **Draft** status. The error is typically not displayed on the account structure form itself — check the **batch job error log** for the specific error message.
 
-The most common reasons for activation failure are overlapping criteria, either within the structure or across other structures on the same ledger. For more information, see [Account structures overview](../configure-account-structures.md).
+The most common reasons for activation failure are overlapping criteria, either within the structure or across other structures on the same ledger. For more information, see [Account structures overview](/dynamics365/finance/general-ledger/configure-account-structures).
 
 ## Modifying an existing account structure
 

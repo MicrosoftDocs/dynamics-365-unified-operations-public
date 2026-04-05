@@ -112,7 +112,7 @@ The following factors can contribute to slow activation:
 
 | Factor | Description |
 |---|---|
-| Large volume of unposted transactions | Transactions in tables like LedgerJournalTrans, TaxUncommitted, and AccountingDistribution must all be synced to the new structure. |
+| Large volume of unposted transactions | All unposted transactions must be synced to the new structure. |
 | Active users and concurrent processing | Users entering transactions, automated batch processes, and data imports that create transactions during activation compete for the same resources. |
 | Multiple simultaneous activations | Running more than one activation at a time causes blocking, as each process updates the same data. |
 | [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions) | Non-financial data (like document numbers, serial numbers, or timestamps) used as financial dimensions creates unique dimension combinations that can't be grouped for bulk updates. |
