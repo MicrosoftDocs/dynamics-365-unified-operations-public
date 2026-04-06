@@ -5,7 +5,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.topic: article
 ms.date: 03/26/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2023-01-01
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: 10.0.36
 
 [!include [banner](../includes/banner.md)]
 
-Financial tag defaulting allows users to define rules as Power Fx formulas that automatically populate financial tag fields on records such as `LedgerJournalTrans`. When a user creates, modifies, or saves a record, the applicable rules execute to default tag values.
+Financial tag defaulting enables you to define rules as Power Fx formulas that automatically populate financial tag fields on records such as `LedgerJournalTrans`. When you create, modify, or save a record, the applicable rules execute to default tag values.
 
 ## What are financial tag rules
 
-A financial tag rule is defined by three components:
+A financial tag rule consists of three components:
 
 | Component | Description |
 |---|---|
@@ -30,16 +30,16 @@ A financial tag rule is defined by three components:
 
 ![Screenshot of the Financial tag rules form showing Transaction Entry Point, Level, and Target columns.](media/financial-tags/FinTagRulesForm.png)
 
-Each rule contains a Power Fx formula defining the defaulting logic. For example, a rule can default a "CustomerName" tag to the customer's name when the AccountType is Customer.
+Each rule contains a Power Fx formula that defines the defaulting logic. For example, a rule can default a "CustomerName" tag to the customer's name when the AccountType is Customer.
 
 ![Screenshot of a financial tag rule showing the Power Fx formula editor.](media/financial-tags/FinTagRulesEdit.png)
 
-### System rules vs user rules
+### System rules vs. user rules
 
 | Type | Description |
 |---|---|
-| **System rules** | Copy the entire FinTag field between levels (for example, header to account). They have a Transaction Entry Point and Level but no Target. Users cannot modify or delete system rules, but can disable them. |
-| **User rules** | Created by users to default individual tag values using Power Fx. Users can create, edit, delete, and enable/disable these rules. Rules can be authored using the Condition Builder or by entering Power Fx directly. |
+| **System rules** | Copy the entire FinTag field between levels (for example, header to account). They have a Transaction Entry Point and Level but no Target. Users can't modify or delete system rules, but can disable them. |
+| **User rules** | Created by users to default individual tag values using Power Fx. Users can create, edit, delete, and enable or disable these rules. Use the Condition Builder or enter Power Fx directly to author rules. |
 
 ![Screenshot showing a user rule with the Condition Builder panel.](media/financial-tags/FinTagRuleConditionBuilder.png)
 
@@ -54,7 +54,7 @@ Rules execute at specific trigger levels defined in the `FinTagRuleTriggerLevel`
 | `PrimaryAccountModified` | When the primary account field changes. |
 | `OffsetAccountModified` | When the offset account field changes. |
 
-Defaulting occurs both at the form level (user creates or modifies a record) and at the entity level (during data import). Each journal or document is responsible for calling the defaulting engine for its own scenarios. While rules generally execute on create, modify, and save, the uptake logic in each document's implementation determines when the defaulting engine is invoked, so behavior may differ slightly between documents.
+Defaulting occurs both at the form level (user creates or modifies a record) and at the entity level (during data import). Each journal or document is responsible for calling the defaulting engine for its own scenarios. While rules generally execute on create, modify, and save, the uptake logic in each document's implementation determines when the defaulting engine is invoked, so behavior might differ slightly between documents.
 
 ## Defaulting Rule Condition Builder
 
@@ -64,12 +64,12 @@ The Condition Builder is an extensible control that lets users define defaulting
 
 ### Supported operators
 
-The builder supports the following operators per data type:
+The builder supports the following operators for each data type:
 
 - **String fields**: `contains`, `begins with`, `ends with`, `is`
 - **Enum fields**: `is`
 
-The form control rendered depends on the data type: **ComboBox** for enum fields, **String** for text fields.
+The form control that the builder renders depends on the data type: **ComboBox** for enum fields and **String** for text fields.
 
 ### Core classes
 
@@ -77,17 +77,17 @@ The form control rendered depends on the data type: **ComboBox** for enum fields
 
 | Class | Responsibility |
 |---|---|
-| `DefaultingRuleConditionBuilder` | Master runtime logic and initialization of the extensible control. |
-| `DefaultingRuleConditionBuilderBuild` | Defines design-time properties visible in Visual Studio (controller class name, extensible control name). |
-| `DefaultingRuleConditionBuilderController` | Initial setup: supported operators, maximum expression count, maximum condition count. |
+| `DefaultingRuleConditionBuilder` | Manages runtime logic and initialization of the extensible control. |
+| `DefaultingRuleConditionBuilderBuild` | Defines design-time properties visible in Visual Studio, such as the controller class name and extensible control name. |
+| `DefaultingRuleConditionBuilderController` | Handles initial setup, including supported operators, maximum expression count, and maximum condition count. |
 
 ### Supporting classes
 
 | Class | Responsibility |
 |---|---|
-| `DefaultingRuleConditionBuilderCondition` | Manages a group of rule expressions within a single condition, including dynamic UI controls for adding/removing expression rows. |
+| `DefaultingRuleConditionBuilderCondition` | Manages a group of rule expressions within a single condition, including dynamic UI controls for adding and removing expression rows. |
 | `DefaultingRuleConditionBuilderExpressionRowControl` | Represents a single expression row (field, operator, value) and handles its controls, state, and conversion to Power Fx syntax. |
-| `DefaultingRuleConditionBuilderExpression` | Data object for a single expression: id, field, operator, value, and conditional type. |
+| `DefaultingRuleConditionBuilderExpression` | Data object for a single expression, including ID, field, operator, value, and conditional type. |
 | `DefaultingRuleConditionBuilderOperator` | Encapsulates operator metadata and provides mappings between display labels, operator enums, and Power Fx functions. |
 | `DefaultingRuleConditionBuilderSupportedOperator` | Defines which operators are available for each data type. |
 
