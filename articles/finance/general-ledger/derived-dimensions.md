@@ -37,7 +37,7 @@ Enter the dimension combinations that you want to derive from the dimension in t
 
 ## Shared dimensions only
 
-You can only configure derived dimensions for shared dimensions, not company-specific dimensions.
+You can only configure derived dimensions for dimensions shared across legal entities, not company-specific dimensions.
 
 **Examples of shared dimensions (allowed):** Departments, Cost Center
 
@@ -48,7 +48,7 @@ To check if a dimension is shared or company-specific, go to **General ledger > 
 If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
 
 > [!IMPORTANT]
-> When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
+> When you rename a source record that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new name.
 
 ## Overriding existing values with derived dimensions
 
@@ -56,11 +56,41 @@ By default, derived dimensions don't override existing values. This means you ca
 
 To change this behavior, select the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. Using the previous example, if department was already set to 50 and location to 60, entering cost center 10 would change them to department 20 and location 30.
 
-The **Replace existing dimension values with derived values** setting only applies when a user manually enters a driving dimension value on a page. If the system fills in dimension values automatically through defaulting (for example, when default dimensions from a customer record are applied to a new sales order), derived dimensions don't override those defaulted values, even with this setting enabled.
-
 ![](media/derived-dimensions-replace-values.png)
 
-When **Replace existing dimension values with derived values** is disabled, the derived dimensions will still automatically overwrite blank fields.
+
+## Deriving dimensions applied after defaults
+
+Derived dimension rules are applied after default dimensions are populated on a transaction.
+
+### Example
+
+The following example shows how derived dimensions interact with default dimensions.
+
+**Derived dimension configuration:**
+
+| Setting | Value |
+|---|---|
+| Driving dimension | CostCenter |
+| Derived dimensions | BusinessUnit, Department |
+| Replace existing dimension values with derived values | Disabled |
+
+**Default dimensions on the customer record:**
+
+| Dimension | Value |
+|---|---|
+| CostCenter | 12345 |
+| BusinessUnit | (blank) |
+| Department | (blank) |
+
+**Derived dimension rules:**
+
+| Driving dimension value | BusinessUnit | Department |
+|---|---|---|
+| CostCenter = 12345 | A | B |
+
+**Result**: When the customer's default dimensions are applied to a new transaction, CostCenter defaults to 12345. Because BusinessUnit and Department are blank, the derived dimension rules fill them in with A and B respectively.
+
 
 ## Preventing changes with derived dimensions
 

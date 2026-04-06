@@ -20,6 +20,8 @@ ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
 
 This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 
+A segmented entry control is an input field that lets you enter a full ledger account by typing or selecting values for each segment, such as the main account and financial dimensions, separated by the chart of accounts delimiter.
+
 Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions. The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures. When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience. When you enter the field, you can start to type and it will search the value and the description. For example, if you type 180 it will search any value that begins with that number combination. Or you may type Cash and it will search any value that has a description that begins with Cash. You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria. 
 
 ## When dimensions are validated
@@ -32,9 +34,6 @@ The following example shows the segmented entry control on a general journal lin
 
 [![Segmented entry control on a general journal line showing the Account field with a dimension lookup open.](./media/segmented-entry-control.png)](./media/segmented-entry-control.png)
 
-This is different from the **Financial dimensions** FastTab, where each dimension has its own field and dimensions that are marked to prevent changes can't be edited at all. In the segmented entry control, you can edit all dimensions, but the system verifies your entries after you move on.
-
-[![Financial dimensions FastTab showing individual dimension fields for default dimension values.](./media/financial-dimensions-fasttab.png)](./media/financial-dimensions-fasttab.png)
 
 ## Keyboard shortcuts
 

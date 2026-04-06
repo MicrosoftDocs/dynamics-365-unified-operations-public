@@ -69,8 +69,7 @@ To avoid issues:
 1. Click **New**.
 2. In the **Use values from** field, select **Custom dimension**.
 3. In the **Dimension name** field, type a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
-    - You can specify an account mask to limit the amount and type of information that you can enter for dimension values.   
-    - You can enter characters that remain the same for each dimension value, such as letters or a hyphen. You can also enter number signs (#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created. Use a number sign (#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. Example: To limit the dimension value to the letters CC and three numbers, you enter CC-### as the format mask.  
+    - You can specify a format mask to control what users can enter for dimension values. For details, see [Dimension value requirements](#dimension-value-requirements).
 4. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.     
 5. Click **Activate**. Dimension activation can be scheduled to run by batch at a specific date and time.      
 6. On **Action pane**, click **Dimension values**.

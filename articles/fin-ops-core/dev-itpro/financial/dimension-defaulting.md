@@ -19,7 +19,7 @@ This article explains default financial dimensions for developers. It explains w
 
 This article uses examples from the **USMF** demo data company.
 
-For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md). For information about how default and fixed dimension values work on main accounts and how dimensions are applied during posting, see [Default dimensions](../../../finance/general-ledger/dimension-default-values.md).
+For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md). For information about how default and fixed dimension values work on main accounts and how dimensions are applied during posting, see [Default dimensions](../../../finance/general-ledger/configure-default-dimensions.md).
 
 ### API for the list of default dimensions
 

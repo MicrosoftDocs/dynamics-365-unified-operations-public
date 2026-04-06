@@ -1135,7 +1135,7 @@
                     - name: Dimension value rules
                       items:
                         - name: Default dimensions
-                          href: general-ledger/dimension-default-values.md
+                          href: general-ledger/configure-default-dimensions.md
                         - name: Create account structures
                           href: general-ledger/tasks/create-account-structures.md
                         - name: Configure account structures
