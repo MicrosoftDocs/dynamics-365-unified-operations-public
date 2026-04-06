@@ -25,7 +25,14 @@ The Commerce functionality for Sweden includes a sample integration of the point
 
 The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
-Microsoft doesn't release any hardware, software, or documentation from Retail Innovation HTT AB. For information about how to get the control unit and operate it, contact [Retail Innovation HTT AB](https://www.retailinnovation.se/).
+Microsoft doesn't release any hardware, software, or documentation from Retail Innovation HTT AB. This company is no longer operating; see the notice below for more information.
+
+> [!IMPORTANT]
+> **Notice regarding Retail Innovation HTT AB:** The CleanCash Type A control unit referenced in this sample integration was manufactured by Retail Innovation HTT AB, which is no longer operating. New procurement of the CleanCash Type A hardware through the original vendor is not available.
+>
+> Customers who already have existing CleanCash hardware may continue to use this integration. Customers planning a new deployment in Sweden should identify an alternative fiscal control unit that meets Swedish Tax Agency (Skatteverket) requirements. The Microsoft product group is currently evaluating alternate vendor options and will share updates as they become available.
+>
+> For guidance on building a fiscal connector for an alternate control unit, see [Fiscal integration framework overview](fiscal-integration-for-retail-channel.md).
 
 ## Scenarios
 
