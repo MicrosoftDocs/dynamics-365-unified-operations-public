@@ -65,7 +65,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
     | Replacement Field Group | `DisplayValue` |
     | Label | `@FinTag:FinTag_Label` (default; adjust as needed) |
 
-    ![Screenshot showing FormReferenceGroupControl properties.](media/financial-tags/FormReferenceGroupControl.png)
+    ![Screenshot showing FormReferenceGroupControl properties.](media/financial-tags/form-reference-group-control.png)
 
 1. In the form's `init` method, register the control after `super()`:
 
