@@ -1060,7 +1060,7 @@ items:
         - name: Uptake financial tags on forms and entities
           href: financial/financial-tags-uptake.md
         - name: Financial tag defaulting rules
-          href: financial/financial-tags-defaulting.md
+          href: financial/default-financial-tags.md
       - name: Date effectivity
         href: dev-tools/date-effectivity.md
       - name: Development for independent software vendors
