@@ -1134,8 +1134,8 @@
                       href: general-ledger/derived-dimensions.md
                     - name: Dimension value rules
                       items:
-                        - name: Default financial dimensions
-                          href: ../fin-ops-core/dev-itpro/financial/dimension-defaulting.md
+                        - name: Default dimensions
+                          href: general-ledger/dimension-default-values.md
                         - name: Create account structures
                           href: general-ledger/tasks/create-account-structures.md
                         - name: Configure account structures
