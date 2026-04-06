@@ -4,7 +4,7 @@ description: Learn about how to configure ledgers for each legal entity, includi
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 03/16/2026
+ms.date: 04/06/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -50,7 +50,7 @@ After expanding, scroll through all affected rows:
 For each table and field listed, go to the corresponding posting profile and clear the default account. After you remove all references, retry changing the chart of accounts. After the change is complete, you must re-enter the default accounts by using main accounts from the new chart of accounts.
 
 > [!WARNING]
-> Do not bypass the posting profile validation for chart of accounts changes through customizations or direct data modifications. These checks protect the integrity of your general ledger. Circumventing them can result in data corruption that is typically discovered during reporting or year-end close and can be extraordinarily difficult to repair, if it can be repaired at all.
+> Don't bypass the posting profile validation for chart of accounts changes through customizations or direct data modifications. These checks protect the integrity of your general ledger. Circumventing them can result in data corruption that is typically discovered during reporting or year-end close and can be extraordinarily difficult to repair, if it can be repaired at all.
 
 > [!NOTE]
 > The **Bank account** table contains a main account field that's required and can't be cleared in the application. If the bank account table is listed as a blocker, contact Microsoft support for assistance.
