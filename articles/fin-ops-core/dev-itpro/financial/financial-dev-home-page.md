@@ -46,7 +46,7 @@ This article provides links to topics about financials development.
 
     + [Financial tags developer overview](../financial/financial-tags-overview.md)
     + [Uptake financial tags on forms and entities](../financial/financial-tags-uptake.md)
-    + [Financial tag defaulting rules](../financial/financial-tags-defaulting.md)
+    + [Financial tag defaulting rules](../financial/default-financial-tags.md)
 
 - Currency Exchange rate providers
 
