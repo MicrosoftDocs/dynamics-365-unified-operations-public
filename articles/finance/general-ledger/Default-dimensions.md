@@ -1,10 +1,10 @@
 ---
-title: Default dimensions
-description: Learn how default dimension values are configured and applied, including fixed dimensions on main accounts, copying values from master records, and the order in which defaults are applied during posting.
+title: Financial dimensions and posting 
+description: Learn about the components that make up the chart of accounts and how the components work together, including an outline on the order for default dimensions.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/05/2026
+ms.date: 04/29/2024
 ms.update-cycle: 1095-days
 ms.custom: 
   - bap-template
@@ -18,32 +18,31 @@ ms.dyn365.ops.version: July 2017 update
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
-# Default dimensions
+# Financial dimensions and posting 
 
 [!include [banner](../includes/banner.md)]
 
-Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article explains how default and fixed dimension values work on main accounts and how dimensions are applied during posting. For information about how account structures, advanced rules, and balancing dimensions define valid combinations of main accounts and dimension values, see [Financial dimensions](financial-dimensions.md).
+When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is and how the components work together.
 
-## Default and fixed financial dimensions on the main account
+## Chart of accounts and financial dimension components
 
-You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
+A rich, rule-based system is used to define valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
 
-## Default dimension values
+### Account structures
 
-In addition to fixed and default dimensions on main accounts described above, you can also configure dimensions to automatically copy values from master records.
+An account structure is required when you set up your ledger. You must define and activate at least one account structure, and you must assign it to the ledger. The account structure must have the main account in it. You can define the order of segments that works best for the business. After the main account is defined, the system can determine the account structure that is used. By putting the main account first or near the front of a structure, you can help limit the values and also help the system apply the last known valid value as a default value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values. It also defines whether dimension values must be entered.
 
-You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
+### Advanced rules
 
-A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new [Dimension name] created**, where **[Dimension name]** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
+Advanced rules are an optional component when you set up the chart of accounts. You can add as many advanced rules as you want to an account structure. Advanced rules are often used to handle scenarios where additional financial dimensions must be tracked when specific criteria are met. For example, if you use a Travel expense account, you might want to track additional information, such as the event that the employee is traveling for. If there are multiple advanced rules, they are applied in alphabetical order, based on the names of the rules. The segments that a rule adds can be applied only after the segments of the account structure.
 
-If records already exist for the dimension, turning on the feature updates the master records. However, existing documents and transactions aren't updated.
+### Balancing dimension
 
-If you're using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value defaults from the new customer number when you create the new customer.
+You can optionally define a balancing financial dimension. On the **Ledger** page, you can define the financial dimension that should be balanced. Then, whenever transactions are posted to that financial dimension, the system automatically creates and posts entries to make the financial dimension balanced.
 
-> [!NOTE]
-> You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).
->
-> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+### Default/fixed financial dimensions on the main account
+
+Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
 
 ## Order in which default dimensions are applied during posting
 
@@ -51,9 +50,6 @@ People often have questions about the order that the various components run in. 
 
 > [!NOTE]
 > This information applies only to the application of default dimensions in the application. If you import data by using Microsoft Excel or the Data Management Framework, the behavior differs.
-
-> [!NOTE]
-> Derived dimensions are applied at data-entry time, when a user manually enters a driving dimension value on a page, not during posting. This means derived dimensions run before the posting-time sequence described in the examples below. For more information, see [Derived dimensions](derived-dimensions.md).
 
 ### Example 1
 

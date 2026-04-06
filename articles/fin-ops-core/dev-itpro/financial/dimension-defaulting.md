@@ -1,11 +1,11 @@
 ---
 title: Default financial dimensions
-description: Learn about where the financial dimensions originate, the APIs that are used to merge them, and how they're used to create ledger dimensions.
+description: Learn how default dimension values are configured and applied, including fixed dimensions on main accounts, copying values from master records, the order in which defaults are applied during posting, and the APIs that are used to merge them.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/18/2024
-ms.reviewer: johnmichalak
+ms.date: 04/05/2026
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
@@ -15,13 +15,80 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains default financial dimensions for developers. It explains where the dimensions originate, the application programming interfaces (APIs) that are used to merge them, and how you use them to create ledger dimensions. The article includes examples that show the user interface (UI), SQL table queries, and the output of those queries. It also includes some explanation of APIs and examples of how they're used.
+Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article explains how default and fixed dimension values work on main accounts, how dimensions are applied during posting, the application programming interfaces (APIs) that are used to merge them, and how you use them to create ledger dimensions. The article includes examples that show the user interface (UI), SQL table queries, and the output of those queries.
 
 This article uses examples from the **USMF** demo data company.
 
 For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
 
-### Entering default dimensions
+## Default and fixed financial dimensions on the main account
+
+You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
+
+## Default dimension values
+
+In addition to fixed and default dimensions on main accounts described above, you can also configure dimensions to automatically copy values from master records.
+
+You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
+
+A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new [Dimension name] created**, where **[Dimension name]** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
+
+If records already exist for the dimension, turning on the feature updates the master records. However, existing documents and transactions aren't updated.
+
+If you're using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value defaults from the new customer number when you create the new customer.
+
+> [!NOTE]
+> You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).
+>
+> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+
+## Order in which default dimensions are applied during posting
+
+People often have questions about the order that the various components run in. It's very important that you understand the order that default dimensions are applied in, because this behavior affects the approach that you take to setup.
+
+> [!NOTE]
+> This information applies only to the application of default dimensions in the application. If you import data by using Microsoft Excel or the Data Management Framework, the behavior differs.
+
+> [!NOTE]
+> Derived dimensions are applied at data-entry time, when a user manually enters a driving dimension value on a page, not during posting. This means derived dimensions run before the posting-time sequence described in the examples below. For more information, see [Derived dimensions](../../../finance/general-ledger/derived-dimensions.md).
+
+### Example 1
+
+**Account structure**
+
+| Main account            | Business unit           | Department              | Cost center             |
+|-------------------------|-------------------------|-------------------------|-------------------------|
+| All values are allowed. | All values are allowed. | All values are allowed. | All values are allowed. |
+
+**Main account**
+
+| Main account | Name          | Legal entity | Department                                 |
+|--------------|---------------|--------------|--------------------------------------------|
+| 401100       | Product Sales | USMF         | Fixed – 022 Sales and Marketing department |
+
+For this very basic example, we will enter a general journal where the Department dimension is set to use the default value **023** (Operations). We will enter and post a ledger account.
+
+The default dimension on the journal header will cause department 023 to be applied by default on the sales account line. However, when the line is posted, the fixed dimension is applied, and the line is posted to department 022.
+
+### Example 2
+
+This example uses the same setup as the first example. However, we will add a second component and use the Department dimension as a balancing dimension. When **Department** is set as the balancing financial dimension for the USMF ledger, the fixed dimension is applied first. Then the balancing logic is applied to help guarantee that every department has a balanced entry.
+
+### Example 3
+
+In this example, we will add an advanced rule. The advanced rule specifies that if sales account 401100 and department 022 (Sales and Marketing) are used, the system should track an additional segment that is named Customer.
+
+This example is important because of the order. The account structure is determined after the main account is entered. If you refer to the account structure setup, the system can determine that the main account, business unit, department, and cost center are relevant. At this point, the advanced rule hasn't been triggered, because fixed dimensions aren't applied until default dimensions have been applied for the journal voucher during posting.
+
+The posting won't be successful, because the fixed dimension was applied at the end of the process. Dimension validation determines that the Customer segment is required if the main account is 401100 and the department is 022. Posting can't occur because of the validation error.
+
+In this example, you must overwrite the default value so that the advanced rule is triggered and you can enter the Customer segment. However, this solution isn't always possible, and some users aren't even aware of the posting rules. Therefore, it's important that you understand the order that default dimensions are applied in when you set up your chart of accounts.
+
+To achieve what you want in this example, you can change the configuration in several ways. For example, you can create a new account structure for sales accounts and include the Customer segment in the structure. You can also add more rows in an existing account structure, and specify the main account and valid department values. Then, in the additional customer structure, you might find it useful to have a separate account structure of sales accounts where the Customer segment is present.
+
+For more information about the examples shown with illustrations, see [Financial dimensions and posting](../../../finance/general-ledger/Default-dimensions.md).
+
+## Entering default dimensions
 
 More than 250 pages let you enter default financial dimensions. The dimensions are shown on a FastTab that lists them together with values and descriptions. In standard demo data, more than 30 dimensions are available. However, the following example of a **Financial dimensions** FastTab shows just five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project.
 

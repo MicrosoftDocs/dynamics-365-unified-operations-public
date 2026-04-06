@@ -818,7 +818,7 @@
               href: general-ledger/ledger-subledger.md
             - name: Financial dimensions
               href: general-ledger/financial-dimensions.md
-            - name: Default dimensions
+            - name: Financial dimensions and posting
               href: general-ledger/Default-dimensions.md
             - name: Add financial dimensions to the CFO workspace
               href: general-ledger/CFO-workspace.md
@@ -1134,8 +1134,8 @@
                       href: general-ledger/derived-dimensions.md
                     - name: Dimension value rules
                       items:
-                        - name: Default dimensions
-                          href: general-ledger/default-dimensions.md
+                        - name: Default financial dimensions
+                          href: ../fin-ops-core/dev-itpro/financial/dimension-defaulting.md
                         - name: Create account structures
                           href: general-ledger/tasks/create-account-structures.md
                         - name: Configure account structures
@@ -1144,6 +1144,8 @@
                           href: general-ledger/account-structure-improvement.md
                         - name: Create and assign advanced rule structures
                           href: general-ledger/tasks/create-assign-advanced-rule-structures.md
+                        - name: Financial dimensions and posting
+                          href: general-ledger/Default-dimensions.md
                         - name: Maintain financial dimension default templates
                           href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
                         - name: Default financial dimensions on financial journals
