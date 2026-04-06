@@ -28,11 +28,11 @@ A financial tag rule consists of three components:
 | **Transaction Level** | The level where the FinTag field resides (Header, Account, Offset Account, Line). |
 | **Target** | The specific financial tag to populate. |
 
-![Screenshot of the Financial tag rules form showing Transaction Entry Point, Level, and Target columns.](media/financial-tags/FinTagRulesForm.png)
+![Screenshot of the Financial tag rules form showing Transaction Entry Point, Level, and Target columns.](media/financial-tags/financial-tag-rules-form.png)
 
 Each rule contains a Power Fx formula that defines the defaulting logic. For example, a rule can default a "CustomerName" tag to the customer's name when the AccountType is Customer.
 
-![Screenshot of a financial tag rule showing the Power Fx formula editor.](media/financial-tags/FinTagRulesEdit.png)
+![Screenshot of a financial tag rule showing the Power Fx formula editor.](media/financial-tags/financial-tag-rules-edit.png)
 
 ### System rules vs. user rules
 
@@ -41,7 +41,7 @@ Each rule contains a Power Fx formula that defines the defaulting logic. For exa
 | **System rules** | Copy the entire FinTag field between levels (for example, header to account). They have a Transaction Entry Point and Level but no Target. Users can't modify or delete system rules, but can disable them. |
 | **User rules** | Created by users to default individual tag values using Power Fx. Users can create, edit, delete, and enable or disable these rules. Use the Condition Builder or enter Power Fx directly to author rules. |
 
-![Screenshot showing a user rule with the Condition Builder panel.](media/financial-tags/FinTagRuleConditionBuilder.png)
+![Screenshot showing a user rule with the Condition Builder panel.](media/financial-tags/financial-tag-rule-condition-builder.png)
 
 ## When rules execute
 
@@ -60,7 +60,7 @@ Defaulting occurs both at the form level (user creates or modifies a record) and
 
 The Condition Builder is an extensible control that lets users define defaulting rules without writing Power Fx formulas directly. It provides a UI for building conditions with expressions.
 
-![Diagram showing the structure of the Defaulting Rule Condition Builder control.](media/financial-tags/DefaultingRuleConditionBuilderStructure.png)
+![Diagram showing the structure of the Defaulting Rule Condition Builder control.](media/financial-tags/default-rule-condition-builder-structure.png)
 
 ### Supported operators
 
@@ -73,7 +73,7 @@ The form control that the builder renders depends on the data type: **ComboBox**
 
 ### Core classes
 
-![Diagram showing the relationship between Condition Builder classes.](media/financial-tags/DefaultingRuleConditionBuilderRelation.png)
+![Diagram showing the relationship between Condition Builder classes.](media/financial-tags/default-rule-condition-builder-relation.png)
 
 | Class | Responsibility |
 |---|---|
