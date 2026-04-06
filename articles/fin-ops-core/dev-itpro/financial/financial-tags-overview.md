@@ -56,7 +56,7 @@ The data flow for financial tags across a transaction is:
 
 Records in the **FinTag** table are immutable and reused based on a record-level hash key. When you specify a combination of tag values that already exists, the existing record is referenced rather than creating a duplicate.
 
-![Diagram showing the FinTag data model with relationships between tables.](media/financial-tags/DataModel.png)
+![Diagram showing the FinTag data model with relationships between tables.](media/financial-tags/data-model.png)
 
 | Table | Description | Record creation |
 |---|---|---|
