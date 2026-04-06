@@ -31,7 +31,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
     | Asset Classification | `System Metadata` |
     | Label | Leave blank (the EDT provides the label) |
 
-    ![Screenshot showing FinTagRecId field properties in Visual Studio.](media/financial-tags/EDTProperty.png)
+    ![Screenshot showing FinTagRecId field properties in Visual Studio.](media/financial-tags/property.png)
 
 1. Add a **RelationForeignKey** relation to the **FinTag** table:
 
@@ -49,7 +49,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
     If your table uses an offset FinTag field, create a separate relation for it.
 
-    ![Screenshot showing RelationForeignKey configuration for FinTag.](media/financial-tags/RelationForeignKey.png)
+    ![Screenshot showing RelationForeignKey configuration for FinTag.](media/financial-tags/relation-foreign-key.png)
 
 ## Add FinTag to a grid
 
@@ -101,7 +101,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
     | MenuItemName | `FinTagGridEntryFormPart` |
     | Run Mode | Local |
 
-    ![Screenshot showing FormPartControl setup for FinTagGridEntryFormPart.](media/financial-tags/FinTagGridEntryFormPart.png)
+    ![Screenshot showing FormPartControl setup for FinTagGridEntryFormPart.](media/financial-tags/financial-tag-grid-entry-form-part.png)
 
 1. On the form part, add a **Field relation link** under the **Links** node:
 
@@ -112,7 +112,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
     | TargetDataField | `FinTag` |
     | DataSource (target) | `FinTagTagNameValueTmp` |
 
-    ![Screenshot showing field relation link configuration.](media/financial-tags/FinTagGridLookupLink.png)
+    ![Screenshot showing field relation link configuration.](media/financial-tags/financial-tag-grid-lookup-link.png)
 
 1. Update security privileges for roles that need write access to this form part. On the appropriate privileges, add an **EntryPoint**:
 
@@ -126,11 +126,11 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
 Users who open pages by using the `FinTagReferenceGroupController` can access the **FinTagPreviewPart** display menu item. The **Financial tag essentials** privilege grants access to all required display menu items.
 
-![Screenshot showing the Financial tag essentials privilege with FinTagPreviewPart entry.](media/financial-tags/FinTagPreviewPart.png)
+![Screenshot showing the Financial tag essentials privilege with FinTagPreviewPart entry.](media/financial-tags/financial-tag-preview-part.png)
 
 By default, the **Use basic functionality** duty includes this privilege. Assign this duty to the **System user**, **Retail service**, or **Retail store IT** roles. Either assign one of these roles to the user, or add the **Financial tag essentials** privilege to a role the user already has.
 
-![Screenshot showing the security configuration with Financial tag essentials duty.](media/financial-tags/Securityconfiguration.png)
+![Screenshot showing the security configuration with Financial tag essentials duty.](media/financial-tags/security-configuration.png)
 
 ## Changing companies
 
@@ -186,7 +186,7 @@ For entities that support set-based processing, use the **FinTagSetBasedResolver
 
 On the staging table, add a mapping under the **Mappings** node with **Map** = `FinTagSetBasedResolver`.
 
-![Screenshot showing the FinTagSetBasedResolver mapping on a staging table.](media/financial-tags/FinTagSetBasedResolver.png)
+![Screenshot showing the FinTagSetBasedResolver mapping on a staging table.](media/financial-tags/financial-tag-set-based-resolver.png)
 
 Set each map connection. All fields except **OffsetDisplayValue** are required.
 
@@ -199,7 +199,7 @@ Set each map connection. All fields except **OffsetDisplayValue** are required.
 | `Staging` | The `RecId` of your staging table. |
 | `TransferStatus` | The `DMFTransferStatus` field on your staging table. |
 
-![Screenshot showing FinTagSetBasedResolver map field connections.](media/financial-tags/FinTagSetBasedResolverMap.png)
+![Screenshot showing FinTagSetBasedResolver map field connections.](media/financial-tags/financial-tag-set-based-resolver-map.png)
 
 ### Step 2: Resolve in copyCustomStagingToTarget
 
