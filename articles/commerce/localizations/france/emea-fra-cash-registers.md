@@ -530,7 +530,7 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 
 - **Certificate** – Select a certificate that is stored in Key Vault.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
-- **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
+- **Encoding** – Specify the encoding of the signed data. Only **UTF-8** is supported.
 - You can also specify a number sequence to use for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record where the **Reference** field is set to **Period grand total journal**, and then select a number sequence code in it.
 
 > [!NOTE]
