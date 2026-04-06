@@ -19,7 +19,50 @@ This article explains default financial dimensions for developers. It explains w
 
 This article uses examples from the **USMF** demo data company.
 
-For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md). For information about how default and fixed dimension values work on main accounts and how dimensions are applied during posting, see [Default dimensions](../../../finance/general-ledger/configure-default-dimensions.md).
+For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
+
+### Entering default dimensions
+
+More than 250 pages let you enter default financial dimensions. The dimensions are shown on a FastTab that lists them together with values and descriptions. In standard demo data, more than 30 dimensions are available. However, the following example of a **Financial dimensions** FastTab shows just five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project.
+
+:::image type="content" source="./media/DefaultDimensionEntry.png" alt-text="Screenshot of Financial dimensions FastTab.":::
+
+### Dimensions list
+
+The system first filters the dimensions based on the list of all active account structures that are associated with the ledger of the current company or the company that you specify on the page. Next, the system gets a union of all the dimensions in those account structures, plus all active advanced rules that are associated with those structures.
+
+:::image type="content" source="./media/FinancialDimensionList.png" alt-text="Screenshot of Financial dimensions list.":::
+
+### Ledger page
+
+On the **Ledger** page (**General Ledger \> Setup \> Ledger**), you can maintain the account structures for a company.
+
+:::image type="content" source="./media/LedgerStructureConfiguration.png" alt-text="Screenshot of Ledger page for the USMF company.":::
+
+### Account structures where the number of dimensions varies
+
+To determine how many dimensions an account structure uses, select it on the **Ledger** page, select **Configure account structure** above the grid, and then count the columns. The following illustrations show one account structure that uses three dimensions and another account structure that uses five dimensions.
+
+**Account structure that uses three dimensions**
+
+:::image type="content" source="./media/BalanceSheetAccountStructureSetup.png" alt-text="Screenshot of setup of the Balance sheet account structure for the USMF company.":::
+
+**Account structure that uses five dimensions**
+
+:::image type="content" source="./media/PandLAccountStructureSetup.png" alt-text="Screenshot of setup of the Profit and loss account structure for the USMF company.":::
+
+Between the two account structures that are shown in the preceding illustrations, there are four unique dimensions: BusinessUnit, Department, CostCenter, and ItemGroup. These four dimensions appear in the list of default dimensions. In addition, dimensions from advanced rule structures that are linked to the account structures through advanced rules are examined. In this example, the examination of dimensions from advanced rule structures causes a fifth dimension, Project, to be added to the list of default dimensions.
+
+The following illustration shows the advanced rule that causes the Project dimension to be included in the list of default dimensions.
+
+:::image type="content" source="./media/AdvancedRuleLinked.png" alt-text="Screenshot of advanced rule that is linked to the Profit and loss account structure.":::
+
+The following illustration shows the rule structure.
+
+:::image type="content" source="./media/RuleStructure.png" alt-text="Screenshot of rule structure for Project.":::
+
+> [!NOTE]
+> The MainAccount dimension doesn't appear in most lists of default dimensions. However, Budgeting is the exception. It explicitly includes the MainAccount dimension in the list of default dimensions.
 
 ### API for the list of default dimensions
 
@@ -82,6 +125,7 @@ If you set a financial dimension as **Not fixed**, it uses a default value that 
 
 > [!IMPORTANT]
 > A **Fixed** dimension always overwrites the dimension value at posting time, even if a user manually enters a different value. If a voucher displays different dimensions than the values entered on a journal, or if dimensions appear blank after posting, check whether the main account has fixed dimensions configured. To resolve unexpected overwrites, change the dimension from **Fixed value** to **Not fixed**, remove the default dimension, or set a default value that honors the account structure constraints.
+
 For more information, see [Default and fixed financial dimensions on the main account](../../../finance/general-ledger/Default-dimensions.md#defaultfixed-financial-dimensions-on-the-main-account).
 
 ### Copy vs. merge

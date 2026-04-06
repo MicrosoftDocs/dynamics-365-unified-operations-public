@@ -289,6 +289,10 @@ items:
           href: data-entities/security-data-entities.md
         - name: Create read-only entities that expose financial dimensions
           href: financial/read-only-entity-financial.md
+        - name: System tracking fields on financial tables
+          href: financial/system-tracking-fields-after-upgrade.md
+        - name: Enable copy values on create for financial dimensions
+          href: financial/enable-copy-values-dimension-on-create.md
       - name: Bring your own database
         href: analytics/export-entities-to-your-own-database.md
       - name: Automated Entity store refresh
@@ -308,7 +312,17 @@ items:
           - name: Set up and manage archive data in finance and operations apps
             href: sysadmin/archive-setup-manage.md
         - name: Archive customization
-          href: sysadmin/archive-custom.md
+          items: 
+          - name: Archive customization
+            href: sysadmin/archive-custom.md
+          - name: Add custom fields to Microsoft-managed tables
+            href: sysadmin/archive-custom-add-fields.md
+          - name: Add custom tables to standard archive scenarios
+            href: sysadmin/archive-custom-add-tables.md
+          - name: Build your own custom archive scenario
+            href: sysadmin/archive-custom-build-scenario.md
+          - name: Archive table naming reference
+            href: sysadmin/archive-tables-reference.md
         - name: View archive data
           href: sysadmin/archive-view.md
         - name: Archive data scenarios

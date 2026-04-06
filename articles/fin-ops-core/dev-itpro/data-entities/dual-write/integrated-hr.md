@@ -4,6 +4,8 @@ description: Learn about integrated worker data in Microsoft Dynamics 365 apps, 
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: Developer

@@ -4,7 +4,7 @@ description: Get an overview of the telemetry that is available in the Monitorin
 author: rijoshi1 
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/15/2026
+ms.date: 04/03/2026
 ms.author: rijoshi 
 ms.reviewer: twheeloc
 ms.custom: bap-template
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] include robust, out-of-box telemetry capabilities when you enable Application Insights. These capabilities provide critical insights into various aspects of the system and help you monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
+[!INCLUDE[finops-product-name-long](includes/finops-product-name-long.md)] includes robust, out-of-the-box telemetry capabilities when you enable Application Insights. These capabilities provide critical insights into various aspects of the system and help you monitor performance, diagnose issues, and optimize operations. This article provides an overview of the types of telemetry that are available and corresponding resources.
 
 ## Form run telemetry
 
@@ -63,26 +63,21 @@ Use the provided Power BI dashboards to visualize the telemetry.
 - Documentation: [View telemetry data in Application Insights](/dynamics365/supply-chain/warehousing/application-insights-monitor-usage-performance#view-telemetry-data-in-power-bi).
 - Power BI dashboard: [Warehouse Power BI dashboard](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
 
-## DMF errors
-
-The Data Management Framework (DMF) logs errors to the Custom Events table in Application Insights. Exceptions that bubble up to the X++ layer go to the Exceptions table. Each logged error has an associated error code. For error code details, see [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md).
-
-- Identify and fix integration issues
-- Monitor data pipeline health
-
 ## Batch telemetry
 
 > [!IMPORTANT]
+>
 > - This feature is available in **PU69/10.0.45 (build >= 7.0.7690.21)** and **PU68/10.0.44 (build >= 7.0.7606.126)**.
 
-Batch telemetry is controlled by the following 3 flights: If it's not enabled in your environments, reach out to Microsoft support.
+Three flights control batch telemetry:
+
 1. **BatchTelemetryConfigurationFlight**
 1. **BatchThreadInfoTelemetryFlight**
 1. **BatchTelemetryCallstackFlight**
 
-If it's not enabled in your environments, reach out to Microsoft support.
+If these flights aren't enabled in your environments, contact Microsoft support.
 
-After the flights are enabled, new telemetry signals appear under the **Configure** tab:
+When you enable the flights, new telemetry signals appear under the **Configure** tab:
 
 - **Batch Start Time** - Logs when a batch job starts.
 - **Batch Stop Time** - Logs when a batch job completes. Supports duration tracking.
@@ -91,10 +86,11 @@ After the flights are enabled, new telemetry signals appear under the **Configur
 - **Batch Queue** - Shows queue sizes for different queues in the priority-based scheduling framework.
 - **Batch Threads** - Shows active threads to help diagnose thread availability issues.
 
-With batch telemetry, you can:
-- Diagnose performance and scheduling bottlenecks
-- Enable proactive monitoring through alerts and dashboards
-- Accelerate resolution of operational issues
+By using batch telemetry, you can:
+
+- Diagnose performance and scheduling bottlenecks.
+- Enable proactive monitoring through alerts and dashboards.
+- Accelerate resolution of operational issues.
 
 ### Resources
 
@@ -105,8 +101,30 @@ With batch telemetry, you can:
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-We're enhancing the **Monitoring** and **Telemetry** features by introducing **DMF telemetry** integration with Application Insights. This capability is currently behind feature flights. While you might notice additional events in the UI, the underlying telemetry is planned for preview in January 2026. We share additional details as soon as the feature becomes available.
+Data Management Framework (DMF) telemetry helps your organization get deeper visibility into Data management executions, such as import and export operations.
+By using this integration, you can:
 
+- Monitor import and export data management functions with start and end times.
+- Monitor Job status from source to staging and staging to target
+- Monitor Failures with error messages at granular level
 
+DMF telemetry is controlled by the following 2 flights:
+
+- **DMFTelemetryConfigurationFlight**
+- **DMFEnableAppInsightsLogsAndErrors**
+If these flights aren't enabled in your environments, contact Microsoft support.
+
+When you enable the flights, new telemetry signals appear under the **Configure** tab:
+
+- **DMFJob Start** - Logs when a DMF job starts.
+- **DMFJob End** - Logs when a DMF job ends.
+- **DMFJob Status** - Logs job status from source to staging tables and staging to target tables.
+
+## DMF errors
+
+The Data Management Framework (DMF) logs errors to the Custom Events table in Application Insights. Exceptions that bubble up to the X++ layer go to the Exceptions table. Each logged error has an associated error code. For error code details, see [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md).
+
+- Identify and fix integration issues
+- Monitor data pipeline health
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

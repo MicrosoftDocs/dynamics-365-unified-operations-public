@@ -4,7 +4,7 @@ description: Learn about the new CustTrans  settleTransaction method and explain
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 06/01/2019
+ms.date: 03/26/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,7 +16,6 @@ ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 # Settle transactions by using CustTrans::settleTransaction
 
 [!include [banner](../includes/banner.md)]
-
 
 ## CustTrans::settleTransact is obsolete
 
@@ -72,7 +71,7 @@ Every customer settlement will get a unique settlement context. Because each set
 |---|---|---|---|
 | USMF | 7599 | 68719604825 | 1 |
 | USMF | 7599 | 68719604826 | 2 |
-	
+ 
 ### Replacement method parameters
 
 The **SpecTransExecutionContext** class defines a unique settlement execution context. It has two parts. The first part defines the customer or vendor for the settlement. The second part defines the source for the settlement.

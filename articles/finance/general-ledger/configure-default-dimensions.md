@@ -93,6 +93,28 @@ You can intentionally default a dimension value to blank by assigning a fixed di
 
 If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
 
+### Supported entities for copy values on create
+
+The **Copy values to this dimension on each new [DimensionName] created** toggle is only available for entity-backed dimensions that you configure to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
+
+The following entity-backed dimensions support copy values on create out of the box:
+
+- Asset
+- Bank account
+- Customer group
+- Customer
+- Position
+- Worker
+- Item
+- Project invoice
+- Project
+- Retail channel
+- Retail store
+- Retail terminal
+- Vendor
+
+Custom dimensions and entity-backed dimensions that aren't in this list don't support this feature by default. To enable copy values on create for a custom or unsupported entity-backed dimension, a developer must configure the dimension to support it. For more information, see [Enable copy values on create for financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/enable-copy-values-dimension-on-create.md).
+
 ## Additional resources
 
 For information about how defaults cascade during journal entry, see [Default dimension values in financial journals](/dynamics365/finance/general-ledger/dimensions-default-values).

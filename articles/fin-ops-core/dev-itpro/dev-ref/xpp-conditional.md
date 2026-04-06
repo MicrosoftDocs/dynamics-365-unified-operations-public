@@ -22,10 +22,10 @@ This article describes the conditional statements in X++. The conditional statem
 
 The **if** statement evaluates a conditional expression, and then executes a statement if the conditional expression is **true**. Use the **else** clause to provide an alternative statement that's executed if the condition is **false**. The syntax for an **if**...**else** statement is:
 
-**if (** *expression* **)** 
-    *statement* 
-**\[else** 
-    *statement* 
+**if (** *expression* **)**
+    *statement*
+**\[else**
+    *statement*
 **\]**
 
 In this syntax, both occurrences of *statement* can be **compound statements** (zero or more statements enclosed in braces). The *expression* in the parentheses (that is, the conditional expression) can be any valid expression that is interpreted as **true** or **false**. Values of all types can be interpreted as boolean values: All numbers except 0 (zero) are **true** and all nonempty strings are **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, consider using a **switch** statement instead to enhance legibility.
@@ -52,13 +52,13 @@ else
 
 ## Switch statements
 
-The **switch** statement is a multibranch language construct that works like nested **if** statements. The program evaluates the expression after the **switch** keyword and checks it against each case value. The case values must be constants so the compiler can evaluate them. 
+The **switch** statement is a multibranch language construct that works like nested **if** statements. The program evaluates the expression after the **switch** keyword and checks it against each case value. The case values must be constants so the compiler can evaluate them.
 
-- If a case constant matches the **switch** expression, the program executes the **case** statement. 
-- If the case contains a **break** statement, the program jumps out of the **switch**. 
-- If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. 
-- If the program doesn't find any matches, it executes the **default** statement. 
-- If the program doesn't find any matches and there's no **default** statement, it doesn't execute any of the statements inside the **switch** statement. 
+- If a case constant matches the **switch** expression, the program executes the **case** statement.
+- If the case contains a **break** statement, the program jumps out of the **switch**.
+- If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements.
+- If the program doesn't find any matches, it executes the **default** statement.
+- If the program doesn't find any matches and there's no **default** statement, it doesn't execute any of the statements inside the **switch** statement.
 
 Here's the syntax for a **switch** statement:
 
@@ -106,7 +106,7 @@ The following code example makes the execution drop through the first case branc
  }
 ```
 
-If you don't use the `break` statement, the program flow in the switch statement continues into the next case. Code segments A and B have the same behavior. 
+If you don't use the `break` statement, the program flow in the switch statement continues into the next case. Code segments A and B have the same behavior.
 
 This flow isn't recommended.
 
@@ -149,6 +149,5 @@ str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
 info(level);
 // Output is "B".
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

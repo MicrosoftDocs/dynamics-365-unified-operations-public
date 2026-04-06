@@ -29,7 +29,7 @@ The following video provides an introduction to this feature.
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.31 or later.
-- The feature that is named *Display product info in user's language* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature named *Display product info in user's language* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Turn the feature on or off in your system
 

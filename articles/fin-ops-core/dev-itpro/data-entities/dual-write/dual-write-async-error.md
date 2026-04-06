@@ -6,7 +6,8 @@ ms.author: twheeloc
 ms.topic: article
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
-ms.custom:
+ms.custom: 
+  - bap-template
   - sfi-image-nochange
 ---
 

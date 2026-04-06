@@ -4,6 +4,8 @@ description: Learn how you can connect your finance and operations environment t
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 01/16/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

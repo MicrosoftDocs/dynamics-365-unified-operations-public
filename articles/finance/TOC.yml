@@ -5777,6 +5777,8 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimension-expression-builder-subpattern.md
                 - name: Financial dimension configuration
                   href: ../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md
+                - name: Financial dimension customization
+                  href: ../fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors.md
                 - name: Financial dimension activation
                   href: ../fin-ops-core/dev-itpro/financial/activate-financial-dimensions.md
                 - name: Financial dimensions and main accounts in right-to-left languages
@@ -5785,6 +5787,10 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimensionable-entities.md
                 - name: Add lookup values for financial dimensions to Excel templates
                   href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
+                - name: Dimension foreign key reference EDT usage
+                  href: ../fin-ops-core/dev-itpro/financial/dimension-fk-edt-usage.md
+                - name: Modifying financial dimension data
+                  href: ../fin-ops-core/dev-itpro/financial/modifying-financial-dimension-data.md
             - name: Segmented entry control
               items:
                 - name: Migrate Segmented Entry controls

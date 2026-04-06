@@ -4,7 +4,7 @@ description: Learn about the end of  mainstream support for Microsoft Dynamics A
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/09/2026
+ms.date: 03/26/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -62,7 +62,7 @@ If a hotfix is needed for a part of the system where Microsoft doesn't provide t
 
 Yes, all legislation changes regardless of source (such as vendors, Microsoft research, or the localization community) are stored in the Lifecycle Service alerting project. To access the Lifecycle Services alerting project, follow these steps:
 
-1. **Sign up**: Send an email request to join the localization community (under NDA) at DynRegW@microsoft.com.
+1. **Sign up**: Send an email request to join the localization community (under NDA) at <DynRegW@microsoft.com>.
 1. **Access**: Sign in to the Lifecycle Services project **Regulatory Alerts - Worldwide** (available only for companies with NDA or individuals who signed up for the Insider Program).
 1. **Alerting guide**: Inform Microsoft about country/region regulation alerts and track the status of regulatory features. For more information, see [Submit alerts about country/region-specific regulatory features](../lcs-solutions/submit-localization-alerts.md).
 

@@ -4,6 +4,8 @@ description: Learn about the integration of customer data between finance and op
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -14,8 +16,6 @@ ms.search.validFrom: 2019-07-15
 # Integrated customer master
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 You can master customer data in more than one Dynamics 365 application. For example, you can create a customer row through sales activity in Dynamics 365 Sales (a customer engagement app), or you can create a customer row through retail activity in Dynamics 365 Commerce (a finance and operations app). No matter where the customer data originates, it's integrated behind the scenes. Integrated customer master gives you the flexibility to master customer data in any Dynamics 365 application and provides a comprehensive view of the customer across the Dynamics 365 application suite.
 
@@ -52,4 +52,3 @@ Customer data includes all information about the customer, such as the customer 
 | [Terms of payment](mapping-reference.md#161) | msdyn_paymentterms | This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

@@ -4,6 +4,8 @@ description: Learn about Open Data Protocol (OData) and explains how you can use
 author: sumadhey
 ms.author: twheeloc
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/14/2026
 ms.reviewer: twheeloc
 audience: Developer
@@ -55,7 +57,7 @@ The following table describes the resources and the corresponding URLs in the Fl
 
 ## OData services
 
-The product provides an OData REST endpoint. This endpoint exposes all the data entities that you mark as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that you can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology.
+The product provides an OData REST endpoint. This endpoint exposes all the data entities that you mark as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that you can use to insert and retrieve data from the system. Detailed labs for this feature are on the Lifecycle Services methodology.
 
 > [!NOTE]
 > When working with data entities by using OData, you must provide all fields in the entity key to make a successful OData call.

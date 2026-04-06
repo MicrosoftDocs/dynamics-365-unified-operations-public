@@ -4,7 +4,7 @@ description: Learn about the various types of financial dimensions and tags and 
 author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 01/30/2026
+ms.date: 03/06/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,15 +20,15 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
-Use financial dimensions to further categorize financial transactions. Financial dimension values become segments within the ledger account and you can use them for further analysis, such as generating a profit and loss financial statement by a dimension or a trial balance by dimension.
+Use financial dimensions to further categorize financial transactions. Financial dimension values become segments within the ledger account. Use them for further analysis, such as generating a profit and loss financial statement by a dimension or a trial balance by dimension.  
 
-Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). Also, explore the differences between the two in the document Differences between financial tags and financial dimensions.
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). To understand the differences between the two, see Differences between financial tags and financial dimensions.  
 
 This article explains the various types of financial dimensions and their key properties. For step-by-step creation instructions, see [Define financial dimensions](tasks/define-financial-dimensions.md).
 
 ## Financial dimension types
 
-Financial dimensions that you create on the **Financial dimensions** page are used as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions.
+Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. Two types of financial dimensions exist: custom dimensions and entity-backed dimensions.
 
 ### Custom dimensions
 
