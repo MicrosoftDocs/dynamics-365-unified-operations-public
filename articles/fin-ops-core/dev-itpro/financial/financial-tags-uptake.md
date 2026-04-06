@@ -4,7 +4,7 @@ description: Learn how to add financial tag support to your tables, forms, and d
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 03/26/2026
+ms.date: 04/06/2026
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
