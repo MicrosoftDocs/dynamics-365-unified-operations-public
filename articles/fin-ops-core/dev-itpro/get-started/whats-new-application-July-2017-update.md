@@ -66,7 +66,7 @@ For more information, see [Data validation checklist workspace](../../fin-ops/us
 
 ### Delete a main account and dimension value
 
-As companies go live, you might find main accounts or dimension values that you no longer need. To understand when you can remove a financial dimension, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
+As companies go live, you might find main accounts or dimension values that you no longer need. To understand when you can remove a financial dimension, see [Modifying and deleting financial dimensions](../../../finance/general-ledger/modifying-deleting-financial-dimensions.md).
 
 ### Display payment information for an expense
 

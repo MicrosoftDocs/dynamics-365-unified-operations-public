@@ -69,7 +69,7 @@ You can configure a dimension so that information for other dimensions is automa
 
 You can set up the derived dimensions segments and values by using entities.
 
-For more information, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
+For more information, see [Configure default dimensions](../../../finance/general-ledger/configure-default-dimensions.md) and [Derived dimensions](../../../finance/general-ledger/derived-dimensions.md).
 
 ## Dual currency
 

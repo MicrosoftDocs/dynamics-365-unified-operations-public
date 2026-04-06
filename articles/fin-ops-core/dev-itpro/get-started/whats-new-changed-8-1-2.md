@@ -45,7 +45,7 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 
 ## Derived dimension values
 
-This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
+This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Derived dimensions](../../../finance/general-ledger/derived-dimensions.md).
 
 ## Resume master planning
 This release includes enhanced planning engine functionality that helps to ensure that master planning batch jobs automatically resume if the main thread stops unexpectedly. This can happen if, for some reason, the batch server connection is lost during the master planning run. Before this feature was implemented, a complete rerun of master planning was needed. Now the master planning batch jobs automatically resume and continue at the place where they were interrupted. From the Master planning history log, the planner can see that the main thread was stopped unexpectedly and that the process was resumed.
