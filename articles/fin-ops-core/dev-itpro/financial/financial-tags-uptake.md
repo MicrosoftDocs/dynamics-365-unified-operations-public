@@ -5,7 +5,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.topic: article
 ms.date: 03/26/2026
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2023-01-01
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.36
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to add financial tag support to tables, forms, and data entities. If questions remain after reading this document, refer to the General journal implementation as the established pattern.
+This article describes how to add financial tag support to tables, forms, and data entities. If you have questions after reading this document, see the General journal implementation as the established pattern.
 
 ## Data model setup
 
@@ -33,7 +33,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
     ![Screenshot showing FinTagRecId field properties in Visual Studio.](media/financial-tags/EDTProperty.png)
 
-2. Add a **RelationForeignKey** relation to the **FinTag** table:
+1. Add a **RelationForeignKey** relation to the **FinTag** table:
 
     | Property | Value |
     |---|---|
@@ -67,7 +67,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
     ![Screenshot showing FormReferenceGroupControl properties.](media/financial-tags/FormReferenceGroupControl.png)
 
-2. In the form's `init` method, register the control after `super()`:
+1. In the form's `init` method, register the control after `super()`:
 
     ```xpp
     public void init()
@@ -79,7 +79,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
     }
     ```
 
-    This overrides all lookups and events for the control so it can be used for financial tags.
+    This code overrides all lookups and events for the control so you can use it for financial tags.
 
 ### FinTagReferenceGroupControllerContract properties
 
@@ -94,7 +94,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
 1. Add a **Tab Page** to your tab (set **Auto Declaration** = Yes).
 
-2. On the tab page, add a **FormPartControl**:
+1. On the tab page, add a **FormPartControl**:
 
     | Property | Value |
     |---|---|
@@ -103,7 +103,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
     ![Screenshot showing FormPartControl setup for FinTagGridEntryFormPart.](media/financial-tags/FinTagGridEntryFormPart.png)
 
-3. On the form part, add a **Field relation link** under the **Links** node:
+1. On the form part, add a **Field relation link** under the **Links** node:
 
     | Property | Value |
     |---|---|
@@ -114,7 +114,7 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
     ![Screenshot showing field relation link configuration.](media/financial-tags/FinTagGridLookupLink.png)
 
-4. Update security privileges for roles that need write access to this form part. On the appropriate privileges, add an **EntryPoint**:
+1. Update security privileges for roles that need write access to this form part. On the appropriate privileges, add an **EntryPoint**:
 
     | Property | Value |
     |---|---|
@@ -124,17 +124,17 @@ Financial tag data is stored in the **FinTag** table. To reference it from your 
 
 ## Security setup
 
-The **FinTagPreviewPart** display menu item must be accessible to users who open forms with the `FinTagReferenceGroupController`. The **Financial tag essentials** privilege grants access to all required display menu items.
+Users who open pages by using the `FinTagReferenceGroupController` can access the **FinTagPreviewPart** display menu item. The **Financial tag essentials** privilege grants access to all required display menu items.
 
 ![Screenshot showing the Financial tag essentials privilege with FinTagPreviewPart entry.](media/financial-tags/FinTagPreviewPart.png)
 
-By default, this privilege is included in the **Use basic functionality** duty, which is assigned to the **System user**, **Retail service**, and **Retail store IT** roles. Either assign one of these roles to the user, or add the **Financial tag essentials** privilege to a role the user already has.
+By default, the **Use basic functionality** duty includes this privilege. Assign this duty to the **System user**, **Retail service**, or **Retail store IT** roles. Either assign one of these roles to the user, or add the **Financial tag essentials** privilege to a role the user already has.
 
 ![Screenshot showing the security configuration with Financial tag essentials duty.](media/financial-tags/Securityconfiguration.png)
 
 ## Changing companies
 
-If your datasource allows changing companies, register the form part with the `DataObject` of the company field using `FinTagFormPartController`:
+If your data source allows changing companies, register the form part with the `DataObject` of the company field by using `FinTagFormPartController`:
 
 ```xpp
 FinTagFormPartController::registerFormPart(
@@ -145,9 +145,9 @@ FinTagFormPartController::registerFormPart(
 
 ## Disable editing
 
-There are two patterns for disabling editing on financial tags:
+Use two patterns for disabling editing on financial tags:
 
-**Pattern 1:** Disable via the datasource field:
+**Pattern 1:** Disable via the data source field:
 
 ```xpp
 MyTable_ds.object(fieldNum(MyTable, FinTag)).allowEdit(false);
@@ -163,7 +163,7 @@ FinTagFormPart.refresh();
 
 ## Entity support: row by row
 
-For entities that don't require set-based processing, use `FinTagResolver::resolve()` to convert a display value string into a **FinTag** RecId. Call this before `super()` in `insertEntityDataSource` and `updateEntityDataSource`:
+For entities that don't require set-based processing, use `FinTagResolver::resolve()` to convert a display value string into a **FinTag** RecId. Call this method before `super()` in `insertEntityDataSource` and `updateEntityDataSource`:
 
 ```xpp
 public void insertEntityDataSource(DataEntityRuntimeContext _entityCtx, DataEntityDataSourceRuntimeContext _dataSourceCtx)
@@ -275,7 +275,7 @@ update_recordset myEntityDataSource
 In version 10.0.41, `FinTagFeature` was made mandatory and removed from code and metadata. Instead of checking the feature flag, check whether FinTag configuration is set up. FinTag configuration is complete when both conditions are met:
 
 1. The FinTag delimiter is set (**General Ledger > Ledger setup > General ledger parameters > Financial Tags > Financial tag segment delimiter**).
-2. At least one FinTag value exists in the company (**General Ledger > Chart of accounts > Financial Tags**).
+1. At least one FinTag value exists in the company (**General Ledger > Chart of accounts > Financial Tags**).
 
 Forms and controls that previously checked `FinTagFeature::isEnabled()` now behave as enabled only when FinTag configuration is complete.
 
