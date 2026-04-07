@@ -28651,38 +28651,38 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-apply-email-changes.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-apply-email-changes.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-apply-email-changes.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-apply-email-changes.md",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-follow-up.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-follow-up.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-follow-up.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-follow-up.md",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-overview.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-overview.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-overview.md",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-setup-faq.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-setup-faq.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-setup-faq.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup-faq.md",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-setup-wizard.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-setup-wizard.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-setup-wizard.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup-wizard.md",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-setup.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-setup.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup.md",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/supply-chain/procurment/supplier-com-agent-testing.md",
-      "redirect_url": "/dynamics365/supply-chain/procurment/procurement-agent-supplier-com-testing.md",
+      "source_path": "articles/supply-chain/procurement/supplier-com-agent-testing.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-testing.md",
       "redirect_document_id": "false"
     }
   ]
