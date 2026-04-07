@@ -28,7 +28,7 @@ This feature reduces time and effort for businesses by simplifying the transitio
 
 Before you begin, ensure the following prerequisites are met:
 
-- Import the [latest Tax Configuration](global-tax-calcuation-service-overview.md#versions) in **Electronic reporting > Tax configurations**. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](workspace/gsw-import-er-config-dataverse.md) or [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- Import the [latest Tax Configuration](global-tax-calcuation-service-overview.md#versions) in **Electronic reporting > Tax configurations**. Learn more in [Import Electronic reporting (ER) configurations from Dataverse](workspace/gsw-import-er-config-dataverse.md) or [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 - Enable the **(Preview) Automate tax feature creation based on tax master data** feature in the **Feature management** workspace.
 
 ## Enable the Automate tax feature
