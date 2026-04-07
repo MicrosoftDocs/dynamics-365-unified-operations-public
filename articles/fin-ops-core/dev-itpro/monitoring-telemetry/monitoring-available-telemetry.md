@@ -120,6 +120,10 @@ When you enable the flights, new telemetry signals appear under the **Configure*
 - **DMFJob End** - Logs when a DMF job ends.
 - **DMFJob Status** - Logs job status from source to staging tables and staging to target tables.
 
+### Resources
+
+- Plug and play dashboard: [DMF Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/releases/tag/DMF-1.0.0.3)
+
 ## DMF errors
 
 The Data Management Framework (DMF) logs errors to the Custom Events table in Application Insights. Exceptions that bubble up to the X++ layer go to the Exceptions table. Each logged error has an associated error code. For error code details, see [Data management error descriptions and known limitations](../data-entities/dm-error-descriptions.md).
