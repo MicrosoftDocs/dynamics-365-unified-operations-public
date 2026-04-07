@@ -20,7 +20,7 @@ ms.custom:
 This article explains how system administrators can use the [agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md) from Copilot Hub to set up and configure the Supplier Communications Agent.
 
 > [!IMPORTANT]
-> The agent deployment wizard (preview) is an alternative to the manual setup process described in [Set up and configure the Supplier Communications Agent](supplier-com-agent-setup.md). It provides a guided experience for setting up an agent and automatically configures many of the required settings for you. You don't need to run the wizard if you already set up the Supplier Communications Agent manually.
+> The agent deployment wizard (preview) is an alternative to the manual setup process described in [Set up and configure the Supplier Communications Agent](procurement-agent-supplier-com-setup.md). It provides a guided experience for setting up an agent and automatically configures many of the required settings for you. You don't need to run the wizard if you already set up the Supplier Communications Agent manually.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -77,7 +77,7 @@ To use the agent deployment wizard to set up the Supplier Communications Agent, 
         1. Follow the on-screen instructions to approve and enable the configuration. This process enables synchronization between the email server and Dataverse for the selected mailbox.
 
         > [!IMPORTANT]
-        > Only the owner of a private mailbox can create agent configurations and review agent results related to that mailbox. The owner must have permissions to [manage the agent configuration](supplier-com-agent-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](supplier-com-agent-setup.md#permissions-for-users-who-review-agent-results).
+        > Only the owner of a private mailbox can create agent configurations and review agent results related to that mailbox. The owner must have permissions to [manage the agent configuration](procurement-agent-supplier-com-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](procurement-agent-supplier-com-setup.md#permissions-for-users-who-review-agent-results).
 
         Learn more in [Set up server-side synchronization of email](/power-platform/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks).
 
@@ -132,7 +132,7 @@ After you enable the Supplier Communications Agent in a sandbox environment, ref
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 
-When you use the [review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This limitation means that when you're testing the system and want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps:
+When you use the [review and apply purchase order changes received in vendor emails](procurement-agent-supplier-com-apply-email-changes.md) feature, the agent only reads emails from vendor domains. This limitation means that when you're testing the system and want to send or forward vendor emails from your own email account, you must add your email address as a vendor contact. To add your email address, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
 1. Create or select a vendor.
@@ -142,7 +142,7 @@ When you use the [review and apply purchase order changes received in vendor ema
 
 ### Issues with setting up Supplier Communications Agent
 
-For help with problems that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
+For help with problems that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](procurement-agent-supplier-com-setup-faq.md).
 
 ### Issues with server-side synchronization
 

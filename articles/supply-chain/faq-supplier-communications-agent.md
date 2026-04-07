@@ -108,4 +108,4 @@ When you use the feature, follow these recommendations:
 
 ## Related information
 
-- [Supplier Communications Agent overview](procurement/supplier-com-agent-overview.md)
+- [Supplier Communications Agent overview](procurement/procurement-agent-supplier-com-overview.md)

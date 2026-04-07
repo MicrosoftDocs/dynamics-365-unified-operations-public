@@ -29,7 +29,7 @@ The Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Managem
 
 The Supplier Communications Agent can automatically generate emails that remind vendors to confirm a purchase order or ask why a delivery is late. Therefore, purchasers don't have to spend time finding the orders that require attention and then writing emails for them. The agent can automatically send the emails right away, or it can save them as drafts that require human review before they can be sent.
 
-Learn more in [Follow up on purchase orders using the Supplier Communications Agent](supplier-com-agent-follow-up.md).
+Learn more in [Follow up on purchase orders using the Supplier Communications Agent](procurement-agent-supplier-com-follow-up.md).
 
 ## Speed up purchase order communications
 
@@ -37,7 +37,7 @@ The Supplier Communications Agent helps purchasers speed up communications with 
 
 The agent can determine what each email is about (for example, whether it's a purchase order confirmation or a purchase order change request) and which purchase order numbers it applies to. The agent then matches information that it extracts from the email to fields in the system and indicates any changes. In this way, purchasers can review just that information and update the fields in the system as required. They don't have to manually open the purchase order and do all the work. They can then spend the time that they save on other tasks that add more value.
 
-Learn more in [Review and apply purchase order changes received in vendor emails](supplier-com-agent-apply-email-changes.md).
+Learn more in [Review and apply purchase order changes received in vendor emails](procurement-agent-supplier-com-apply-email-changes.md).
 
 Specifically, the agent helps with the following scenarios:
 

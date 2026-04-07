@@ -27,7 +27,7 @@ The inbound functionality within supplier communications monitors and classifies
 
 Supplier communications also supports outbound communication, enabling teams to automate outgoing or follow-up communication.
 
-See [Supplier communications overview](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/supplier-com-agent-overview).
+See [Supplier communications overview](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-overview).
 
 ### Impact analysis ###
 
@@ -73,6 +73,6 @@ The Procurement Agent incurs charges based on the number of Microsoft Copilot St
 
 Learn about the billing rates and management for Copilot Studio in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management).
 
-For information about how charges apply to each capability, refer to: [Cost for supplier communications](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/supplier-com-agent-overview#cost) and [Cost for impact analysis](insert link).
+For information about how charges apply to each capability, refer to: [Cost for supplier communications](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-overview#cost) and [Cost for impact analysis](insert link).
 
 For information about how charges apply to each capability, refer to: [Cost for impact analysis]().

@@ -38,6 +38,6 @@ The following features in feature management are part of the Procurement Agent:
 
 They can be used together or in isolation. This means that you can use supplier communications without the automatic analysis of downstream impact, and you can use impact analysis on sources other and emails through supplier communications.
 
-For more information on setting up supplier communications, refer to: [Set up and configure supplier communications](supplier-com-agent-setup.md)
+For more information on setting up supplier communications, refer to: [Set up and configure supplier communications](procurement-agent-supplier-com-setup.md)
 
 For more information on setting up impact analysis, refer to: [Set up, configure and test impact analysis](procurement-agent-impact-analysis-setup.md)

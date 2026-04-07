@@ -27,7 +27,7 @@ Enabling this feature will allow manual simulations without additional configura
 
 If impact analysis is to be used on incoming change requests received through emails or the Vendor Collaboration Module, then these must be enabled first.
 
-See [Procurement Agent - Supplier communications](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/supplier-com-agent-overview) and [Vendor Collaboration Module](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+See [Procurement Agent - Supplier communications](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-overview) and [Vendor Collaboration Module](https://learn.microsoft.com/en-us/dynamics365/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 To enable the impact analysis to run based on change requests coming through one or both sources, follow these steps:
 

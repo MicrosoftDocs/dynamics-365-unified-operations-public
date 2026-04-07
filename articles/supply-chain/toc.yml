@@ -2476,19 +2476,19 @@
         - name: Supplier communications (production ready preview)
           items:
           - name: Supplier communications overview
-            href: procurement/supplier-com-agent-overview.md
+            href: procurement/procurement-agent-supplier-com-overview.md
           - name: Set up and configure the supplier communications
-            href: procurement/supplier-com-agent-setup.md
+            href: procurement/procurement-agent-supplier-com-setup.md
           - name: Use the agent deployment wizard to set up the supplier communications (preview)
-            href: procurement/supplier-com-agent-setup-wizard.md
+            href: procurement/procurement-agent-supplier-com-setup-wizard.md
           - name: Solve common problems when setting up the supplier communications
-            href: procurement/supplier-com-agent-setup-faq.md
+            href: procurement/procurement-agent-supplier-com-setup-faq.md
           - name: Test the supplier communications
-            href: procurement/supplier-com-agent-testing.md
+            href: procurement/procurement-agent-supplier-com-testing.md
           - name: Follow up on purchase orders using the supplier communications
-            href: procurement/supplier-com-agent-follow-up.md
+            href: procurement/procurement-agent-supplier-com-follow-up.md
           - name: Review and apply purchase order changes received in vendor emails
-            href: procurement/supplier-com-agent-apply-email-changes.md
+            href: procurement/procurement-agent-supplier-com-apply-email-changes.md
       - name: Prices, discounts, and rebates
         items:
         - name: Purchase agreements

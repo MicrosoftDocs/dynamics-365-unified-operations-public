@@ -28,7 +28,7 @@ Test the feature you need first. If you plan to use both features, start with *F
 
 ## Test the "Follow-up with vendors" (writing reminders) feature
 
-Use the user interface to [set up the feature](supplier-com-agent-follow-up.md) to fit your needs. Then test to make sure that the emails work as expected.
+Use the user interface to [set up the feature](procurement-agent-supplier-com-follow-up.md) to fit your needs. Then test to make sure that the emails work as expected.
 
 ## Test the "Updates from vendors" (reading emails) feature
 
