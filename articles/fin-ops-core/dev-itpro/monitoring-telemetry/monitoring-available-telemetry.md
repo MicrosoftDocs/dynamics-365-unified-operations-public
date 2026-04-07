@@ -103,8 +103,7 @@ By using batch telemetry, you can:
 
 
 > [!IMPORTANT]
->
-> - This feature is available in **PU71/10.0.47 (build >= 7.0.7858.68)**, **PU70/10.0.46 (build >= 7.0.7778.87)** and **PU69/10.0.45 (build >= 7.0.7690.137)**.
+> This feature is available in Microsoft Dynamics 365 finance and operations versions PU71/10.0.47 (build >= 7.0.7858.68), PU70/10.0.46 (build >= 7.0.7778.87) and PU69/10.0.45 (build >= 7.0.7690.137).
 
 Data Management Framework (DMF) telemetry helps your organization get deeper visibility into Data management executions, such as import and export operations.
 By using this integration, you can:
@@ -126,8 +125,7 @@ When you enable the flights, new telemetry signals appear under the **Configure*
 - **DMFJob Status** - Logs job status from source to staging tables and staging to target tables.
 
 ### Resources
-
-- Plug and play dashboard: [DMF Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/releases/tag/DMF-1.0.0.3)
+For more information, see [DMF Monitoring Dashboard](https://github.com/microsoft/Dynamics-365-FastTrack-FSCM-Telemetry-Samples/releases/tag/DMF-1.0.0.3)
 
 ## DMF errors
 
