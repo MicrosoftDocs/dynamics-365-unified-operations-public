@@ -77,7 +77,7 @@ To create a financial tag rule, follow these steps:
 
 You can test a rule before it affects live transactions. Select **Simulate** while creating a new rule, or select the **Simulate** button at the top of the **Financial tag rules** page to simulate an existing rule. Choose an existing journal to run the rule against, and the simulation shows what the financial tag value would evaluate to for each line.
 
-[![Simulate form showing rule results against an existing journal.](./media/FinTagRuleSimulateForm.png)](./media/FinTagRuleSimulateForm.png)
+[![Simulate form showing rule results against an existing journal.](./media/financial-tag-rule-simulate-form.png)](./media/financial-tag-rule-simulate-form.png)
 
 ### Copy a financial tag rule
 
@@ -94,11 +94,11 @@ In the *copy a financial tag* rule, you can copy a financial tag rule in two way
 
 For example, if you set a rule at the **Header** level, you see the financial tags populated as soon as you create a new journal:
 
-[![Financial tags automatically populated on a journal header by a defaulting rule.](./media/FinTagRuleHeaderDefaulting.png)](./media/FinTagRuleHeaderDefaulting.png)
+[![Financial tags automatically populated on a journal header by a defaulting rule.](./media/financial-tag-rule-header-defaulting.png)](./media/financial-tag-rule-header-defaulting.png)
 
 If you set a rule at the **Account** level, the rule runs when you create a new line, change the account field, or save the record:
 
-[![Financial tags automatically populated on a journal line by a defaulting rule.](./media/FinTagRuleLineDefaulting.png)](./media/FinTagRuleLineDefaulting.png)
+[![Financial tags automatically populated on a journal line by a defaulting rule.](./media/financial-tag-rule-line-defaulting.png)](./media/financial-tag-rule-line-defaulting.png)
 
 > [!NOTE]
 > Every journal or document is responsible for calling the defaulting engine for its own scenarios. Defaulting behavior might differ between documents based on the document's implementation. The preceding examples show the generally expected behavior, but technically, the defaulting can be slightly different between documents.
