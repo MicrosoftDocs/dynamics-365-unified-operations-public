@@ -48,7 +48,7 @@ To run the autocreate tax feature process, follow these steps:
 > [!NOTE]
 > Although Globalization Studio settings are legal entity agnostic, this functionality works only for the currently selected legal entity. You must switch to the correct legal entity before starting the process.
 
-When the process finishes, the system creates the tax feature version in a **Completed** state. The following message is displayed: **The tax feature 'xxx' is created successfully. You can review the setup in the feature version by using the View button. If updates are needed, create a new version to edit the tax feature.**
+When the process finishes, the system creates the tax feature version in a **Completed** state. The following message is displayed: **The tax feature 'xxxx' is created successfully. You can review the setup in the feature version by using the View button. If updates are needed, create a new version to edit the tax feature.**
 
 To review the generated setup, use the **View** button. If you need to make changes, create a new version of the feature to make edits. Learn more in [Configure the Tax Calculation feature](global-get-started-with-tax-calculation-service.md#configure-the-tax-calculation-feature).
 
@@ -73,7 +73,7 @@ If a tax code name is already at the maximum length (10 characters) and a varian
 
 #### Reverse sales tax on cash discount
 
-The system sets the default tax jurisdiction parameters based on the General ledger parameter values. If the **Reverse sales tax on cash discount** value in a sales tax group differs from the General ledger parameter, the system displays the following warning: **The default Reverse tax on cash discount parameter differs from the one set in the group(s): 'xxx', 'xxx'. Once the process completes, please manually create rules to ensure proper configuration.**
+The system sets the default tax jurisdiction parameters based on the General ledger parameter values. If the **Reverse sales tax on cash discount** value in a sales tax group differs from the General ledger parameter, the system displays the following warning: **The default Reverse tax on cash discount parameter differs from the one set in the group(s): 'xxxx', 'xxxx'. Once the process completes, please manually create rules to ensure proper configuration.**
 
 After the tax feature is created, you must manually maintain the tax jurisdiction parameters to ensure the sales tax group-level parameter scenario works correctly. Learn more in [Tax jurisdiction parameters setup](global-tax-jurisdiction-cash-discount-setup.md).
 
@@ -81,8 +81,8 @@ After the tax feature is created, you must manually maintain the tax jurisdictio
 
 If a tax group or item tax group contains tax codes whose total length exceeds 1,000 characters, the process stops and one of the following messages is displayed:
 
-- **The tax group 'xxx' contains too many or excessively long tax codes. The total length must not exceed 1,000 characters. The process has been canceled.**
-- **The item tax group 'xxx' contains too many or excessively long tax codes. The total length must not exceed 1,000 characters. The process has been canceled.**
+- **The tax group 'xxxx' contains too many or excessively long tax codes. The total length must not exceed 1,000 characters. The process has been canceled.**
+- **The item tax group 'xxxx' contains too many or excessively long tax codes. The total length must not exceed 1,000 characters. The process has been canceled.**
 
 ### Data mapping during tax feature creation
 
@@ -143,3 +143,5 @@ If you create new tax codes, sales tax groups, or item sales tax groups during t
 - [Tax Calculation overview](global-tax-calcuation-service-overview.md)
 - [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse)
 - [Import Electronic reporting (ER) configurations](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
