@@ -4,7 +4,7 @@ description: Learn about the Add-ins infrastructure that has been added to Micro
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 08/17/2017
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -19,16 +19,15 @@ ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 
 This article reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 
-A lot of great tools have been added to Microsoft Visual Studio to support development. However, there will always be additional tools to meet specific requirements. To make it easier to add these additional tools, an **Add-ins** infrastructure has been provided for developers. The additional tools are available in two places:
+Many great tools have been added to Microsoft Visual Studio to support development. However, there will always be other tools to meet specific requirements. To make it easier to add these other tools, an **Add-ins** infrastructure has been provided for developers. The other tools are available in two places:
 
--   The **Add-ins** submenu on the **Dynamics 365** menu
--   The **Add-ins** submenu on the shortcut menu in the element designer
+- The **Add-ins** submenu on the **Dynamics 365** menu
+- The **Add-ins** submenu on the shortcut menu in the element designer
 
 To make it easier to create your own add-ins, you can select the **Dynamics Developer Tools Add-in** project type when you create a new project in Visual Studio. This project type has the infrastructure that is required to implement an add-in.
 
 For more information on add-ins, see:
+
 - [Visual Studio add-ins that support form patterns](../user-interface/form-pattern-add-ins.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

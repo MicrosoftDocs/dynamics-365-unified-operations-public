@@ -4,7 +4,7 @@ description: Learn about how select statements fetch or manipulate data from dat
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 08/27/2021
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -18,14 +18,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The **select** statement fetches or manipulates data from the database.
 
-+ All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run.
-+ The **select** statement fetches only one record, or field. To fetch or traverse multiple records, you can use the **next** statement or the **[while select](xpp-while-select.md)** statement.
+- All **select** statements use a table variable to fetch records. You must declare this variable before running a **select** statement.
+- The **select** statement fetches only one record or field. To fetch or traverse multiple records, use the **next** statement or the **[while select](xpp-while-select.md)** statement.
 
-    + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
-    + It's more appropriate to use a **while select** statement to traverse multiple records.
+  - The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
+  - It's more appropriate to use a **while select** statement to traverse multiple records.
 
-+ The results of a **select** statement are returned in a table buffer variable.
-+ If you use a field list in the **select** statement, only those fields are available in the table variable.
+- The results of a **select** statement return in a table buffer variable.
+- If you use a field list in the **select** statement, only those fields are available in the table variable.
 
 The following example fetches all the columns in the first row of the CustTable table and prints the value in the **AccountNum** column of that row.
 
@@ -45,7 +45,7 @@ while select custTable
 }
 ```
 
-The following example prints the value in the **AccountNum** column of the first two rows that are returned by the **select** statement.
+The following example prints the value in the **AccountNum** column of the first two rows that the **select** statement returns.
 
 ```xpp
 CustTable custTable;

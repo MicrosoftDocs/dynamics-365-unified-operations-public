@@ -39,21 +39,6 @@ This feature currently supports archiving the following types of finance and ope
 
 Support for additional data types is planned in future releases.
 
-> [!IMPORTANT]
-> **Archive scenarios temporarily disabled in production**
->
-> All archive scenarios are temporarily disabled in production environments. This precautionary measure prevents potential field-level data loss in the Datalake.
->
-> **Affected scenarios:**
->
-> - General Ledger
-> - Tax transactions
-> - Inventory transactions
-> - Inventory journals
-> - Sales orders
->
-> Existing completed archive jobs aren't impacted. This article is updated when the affected scenarios are re-enabled in production.
->
 
 ## How archiving of finance and operations data works
 

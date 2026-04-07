@@ -4,7 +4,7 @@ description: Learn about the SQL connection error exception types in X++, includ
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 09/27/2018
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -20,14 +20,13 @@ This article describes the SQL connection error exception types in X++.
 
 ## TransientSqlConnectionError X++ exception
 
-During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
+During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception occurs. Depending on the application requirements, the application should catch and handle the exception.
 
 This exception usually occurs during a large transaction or when the database is under a lot of processing pressure.
 
-The TransientSqlConnectionError exception is not catchable within the transaction. The X++ transaction that encounters this exception is canceled (calling **ttsAbort**) before the exception occurs. This means that you need to use the catch block to identify the transient SQL connection error instead of a generic X++ error exception, and then retry the outermost transaction or retry application code logic in a new session. This exception allows the application to be designed for transient server failures.
+You can't catch the TransientSqlConnectionError exception within the transaction. The X++ transaction that encounters this exception is canceled (calling **ttsAbort**) before the exception occurs. This behavior means that you need to use the catch block to identify the transient SQL connection error instead of a generic X++ error exception. Then, retry the outermost transaction or retry application code logic in a new session. This exception allows the application to be designed for transient server failures.
 
-If an application transaction takes a long time to process, you can use multiple incremental delays to catch the TransientSqlConnectionError exception. Retrying your application code in a new session is most likely to succeed after you have caught the exception.
-
+If an application transaction takes a long time to process, use multiple incremental delays to catch the TransientSqlConnectionError exception. Retrying your application code in a new session is most likely to succeed after you catch the exception.
 
 ### Example
 
@@ -50,6 +49,5 @@ public static void LargeTransactionWrapper()
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

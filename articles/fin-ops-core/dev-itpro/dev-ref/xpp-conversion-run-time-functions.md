@@ -4,7 +4,7 @@ description: Learn about the conversion run-time functions, including parameters
 author: pvillads
 ms.author: pvillads
 ms.topic: language-reference
-ms.date: 12/13/2024
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the conversion run-time functions.
+This article describes the conversion runtime functions.
 
 ## any2Date
 
@@ -38,7 +38,7 @@ A **date** value.
 
 ### Remarks
 
-The *object* parameter can be of most data types, but useful output is obtained when it's of the **str** or **int** type. Inappropriate content generates a run-time error.
+The *object* parameter can be most data types, but you get useful output when it's of the **str** or **int** type. Inappropriate content generates a runtime error.
 
 ### Example
 
@@ -81,7 +81,7 @@ The value of the **Name** property for whichever element in the target enum has 
 
 ### Remarks
 
-The *object* parameter can be of most data types, but useful data is obtained only when you use a parameter of the **str** or **int** type. This input *object* parameter refers to the **Value** property of an individual element in the target enum.
+The *object* parameter can be most data types, but you get useful data only when you use a parameter of the **str** or **int** type. This input *object* parameter refers to the **Value** property of an individual element in the target enum.
 
 ### Example
 
@@ -141,7 +141,7 @@ An **int** value.
 
 ### Remarks
 
-The *object* parameter can be of most data types, but useful data is obtained only when you use parameters of the **enum**, **real**, or **str** type.
+The *object* parameter can be most data types, but you get useful data only when you use parameters of the **enum**, **real**, or **str** type.
 
 ### Example
 
@@ -206,7 +206,7 @@ A **real** value.
 
 ### Remarks
 
-The *object* parameter can be of most data types, but useful output is obtained for input elements of the **date**, **int**, **enum**, and **str** types.
+The *object* parameter can be most data types, but you get useful output for input elements of the **date**, **int**, **enum**, and **str** types.
 
 ### Example
 
@@ -254,7 +254,7 @@ A **str** value.
 
 ### Remarks
 
-The *object* parameter can be of most data types, but useful output is obtained from input elements of the **date**, **int**, and **enum** types.
+The *object* parameter can be most data types, but you get useful output from input elements of the **date**, **int**, and **enum** types.
 
 ### Example
 
@@ -381,7 +381,7 @@ A string that represents the specified date.
 
 ### Remarks
 
-MorphX allocates valid values to the formatting parameters if the specified values aren't valid. To use the date format that the user specified in Regional Settings, use the **strFmt** or **date2Str** function and specify **-1** in all the formatting parameters. When the regional settings control the date format, the settings can change from user to user. If **-1** is used for either *separator* parameter, both separators default to Regional Settings. The *sequence* parameter values must be any three-digit number that contains exactly one occurrence of each the digits 1, 2 and 3. The digits 1, 2, and 3 represent day, month, and year, respectively. For example, **321** produces the sequence year, month, and day. Or the value can be **-1** to use Regional Settings. No enumeration type should be used for this parameter, because numbers such as 321 exceed the range of valid values for enumeration values, which is 0 through 250, inclusive. The default value of the *flags* parameter is the **DateFlags::None** enumeration value, which means no left-to-right or right-to-left sequence processing is done.
+MorphX allocates valid values to the formatting parameters if the specified values aren't valid. To use the date format that the user specified in Regional Settings, use the **strFmt** or **date2Str** function and specify **-1** in all the formatting parameters. When the regional settings control the date format, the settings can change from user to user. If **-1** is used for either *separator* parameter, both separators default to Regional Settings. The *sequence* parameter values must be any three-digit number that contains exactly one occurrence of each the digits 1, 2, and 3. The digits 1, 2, and 3 represent day, month, and year, respectively. For example, **321** produces the sequence year, month, and day. Or the value can be **-1** to use Regional Settings. Don't use an enumeration type for this parameter, because numbers such as 321 exceed the range of valid values for enumeration values, which is 0 through 250, inclusive. The default value of the *flags* parameter is the **DateFlags::None** enumeration value, which means no left-to-right or right-to-left sequence processing is done.
 
 ### Example
 
@@ -426,17 +426,17 @@ str datetime2Str(utcdatetime datetime [, int flags = DateFlags::None])
 
 ### Return value
 
-A string that represents the **utcdatetime** value that was specified as the *datetime* parameter.
+A string that represents the **utcdatetime** value that you specify as the *datetime* parameter.
 
 ### Remarks
 
 #### Null date-time input
 
-If the minimum **utcdatetime** value is specified for the *datetime* parameter, the **datetime2Str** function treats it as a null input value. This causes the function to return an empty string. The date-time **1900-01-01T00:00:00** is returned by the **DateTimeUtil::minValue** method. This minimum value is treated as null.
+If you specify the minimum **utcdatetime** value for the *datetime* parameter, the **datetime2Str** function treats it as a null input value. This value causes the function to return an empty string. The **DateTimeUtil::minValue** method returns the date-time **1900-01-01T00:00:00**. The function treats this minimum value as null.
 
 #### Right-to-left local settings
 
-The default behavior of this function is to generate the string in left-to-right sequence, where the year portion is leftmost. However, the *flags* parameter value of the **DateFlags::FormatAll** enumeration value directs the function to generate the string in right-to-left sequence if the local settings are configured for right-to-left. The format of the **toStr** method of the **DateTimeUtil** class is unaffected by regional settings.
+By default, this function generates the string in left-to-right sequence, where the year portion is leftmost. However, if you set the *flags* parameter to the **DateFlags::FormatAll** enumeration value, the function generates the string in right-to-left sequence when local settings are configured for right-to-left. Regional settings don't affect the format of the **toStr** method of the **DateTimeUtil** class.
 
 ### Example
 
@@ -469,7 +469,7 @@ The value of the enumeration as a string.
 
 ### Example
 
-The following example returns the string "Not included." This is the label for the **IncludeNot** value of the **ListCode** enumeration type.
+The following example returns the string "Not included." This string is the label for the **IncludeNot** value of the **ListCode** enumeration type.
 
 ```xpp
 static void enum2StrExample(Args _arg)
@@ -583,7 +583,7 @@ str num2Char(int figure)
 
 ### Return value
 
-The character that is represented by the specified integer.
+The character that corresponds to the specified integer.
 
 ### Example
 
@@ -612,7 +612,7 @@ date num2Date(int _days)
 
 ### Return value
 
-The date that is the number of days that is specified by the *\_days* parameter after January 1, 1900.
+The date that is the number of days specified by the *\_days* parameter after January 1, 1900.
 
 ### Remarks
 
@@ -643,7 +643,7 @@ A string that represents the number.
 
 ### Remarks
 
-For the *decimals* parameter, the maximum value is **16**. If a larger number is used, this method obtains a value for the *decimals* parameter from the local computer instead. In both cases, rounding occurs. Here are the possible enumeration values for the *separator1* parameter:
+For the *decimals* parameter, the maximum value is **16**. If you use a larger number, the method gets a value for the *decimals* parameter from the local computer instead. In both cases, rounding occurs. Here are the possible enumeration values for the *separator1* parameter:
 
 -   **99** – Auto (the formatting settings of the user determine what decimal separator is used), enumeration value DecimalSeparator::Auto 
 -   **1** – Dot (.), enumeration value DecimalSeparator::Dot
@@ -785,7 +785,7 @@ enum str2Enum(enum _type, str _text)
 
 | Parameter | Description                                                              |
 |-----------|--------------------------------------------------------------------------|
-| \_type    | A variable that is declared of the **enum** type.                        |
+| \_type    | A variable that you declare as the **enum** type.                        |
 | \_text    | The localized **Label** property text of the target element in the enum. |
 
 ### Return value
@@ -794,11 +794,11 @@ An element of the target enum, which also represents an int.
 
 ### Remarks
 
-The related function **enum2str** returns the value of a **Label** property from one element in the enum. The value that is returned by **enum2str** function can be the input for the *\_type* parameter of the **str2enum** function. An appropriate value for the *\_text* parameter is **enum2Str(BankAccountType::SavingsAccount)**. Each element of an enum has a **Name** property and a **Label** property. In a fresh install, the **Name** values are almost always English words. In the English edition, the **Label** property value is almost always the same as the **Name** value. However, in non-English editions, the **Label** values are localized and therefore don't match the **Name** values.
+The related function **enum2str** returns the value of a **Label** property from one element in the enum. The value that the **enum2str** function returns can be the input for the *\_type* parameter of the **str2enum** function. An appropriate value for the *\_text* parameter is **enum2Str(BankAccountType::SavingsAccount)**. Each element of an enum has a **Name** property and a **Label** property. In a fresh install, the **Name** values are almost always English words. In the English edition, the **Label** property value is almost always the same as the **Name** value. However, in non-English editions, the **Label** values are localized and therefore don't match the **Name** values.
 
 ### Example
 
-To avoid string mismatches that are caused by localization to other spoken languages, we recommend that you use the **enum2str** function to generate the input into the **str2enum** function. The following example shows the appropriate way to use the **str2enum** function together with the **enum2str** function.
+To avoid string mismatches that localization to other spoken languages causes, use the **enum2str** function to generate the input into the **str2enum** function. The following example shows the appropriate way to use the **str2enum** function together with the **enum2str** function.
 
 ```xpp
 static void str2Enum_AcrossLangs(Args _arg)
@@ -837,7 +837,7 @@ Guid str2Guid(str text)
 
 ### Return value
 
-A GUID that is represented by the input string.
+A GUID that the input string represents.
 
 ### Remarks
 
@@ -924,7 +924,7 @@ The real number if the specified string contains a valid number; otherwise, **0*
 
 ### Remarks
 
-The following examples show how this function is used.
+The following examples show how to use this function.
 
 ```xpp
 str2Num("123.45") returns the value 123.45.
@@ -1041,7 +1041,7 @@ Message (04:33:56 pm)
 ```
 
 ## uint2Str
-Converts an integer to a string. The assumption is that the integer is unsigned.
+Converts an integer to a string. This function assumes that the integer is unsigned.
 
 ```xpp
 str uint2Str(int integer)
@@ -1055,7 +1055,7 @@ str uint2Str(int integer)
 
 ### Return value
 
-The string equivalent to the specified unsigned integer.
+The string equivalent of the specified unsigned integer.
 
 ### Remarks
 

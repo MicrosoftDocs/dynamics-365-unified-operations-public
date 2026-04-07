@@ -4,7 +4,7 @@ description: Learn about primitive data types in X++, which includes anytype, bo
 author: pvillads
 ms.author: pvillads
 ms.topic: article
-ms.date: 06/05/2025
+ms.date: 03/31/2026
 ms.reviewer: twheeloc
 
 audience: Developer
@@ -21,13 +21,13 @@ This article describes primitive data types in X++. The primitive data types in 
 
 ## anytype
 
-The **anytype** data type is a placeholder for any data type. 
+The **anytype** data type is a placeholder for any data type.
 
 To use **anytype** as a variable, the actual underlying type is determined by the first assignment. If the value is used before an assignment, a run-time error occurs. After you've assigned a value to **anytype**, you can't convert it to another data type.
 
 You can use **anytype** just as you use the data type that you convert it to. For example, if you assign an integer, you can apply relational and arithmetic operators to the variable.
 
-An **anytype** variable is automatically converted to a date, enumeration (enum), integer, real, string, extended data type (EDT) (record), class, or container when a value is assigned to the type. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **any2date**, **any2enum**, **any2int**, **any2real**, and **any2str**. 
+An **anytype** variable is automatically converted to a date, enumeration (enum), integer, real, string, extended data type (EDT) (record), class, or container when a value is assigned to the type. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **any2date**, **any2enum**, **any2int**, **any2real**, and **any2str**.
 
 ### anytype examples
 
@@ -159,7 +159,7 @@ public void DateMethod()
 
 An **enum** is a list of literals. Before you can use an **enum**, you must declare it in Application Explorer.
 
-An enumerated type (or enum) is a distinct type that defines a set of named constants, making your code more readable and maintainable. Enums are useful when you have a variable that identifies one value out of a small set of predefined values. Enums allows you to assign meaningful names to a set of integer values, improving code clarity. 
+An enumerated type (or enum) is a distinct type that defines a set of named constants, making your code more readable and maintainable. Enums are useful when you have a variable that identifies one value out of a small set of predefined values. Enums allows you to assign meaningful names to a set of integer values, improving code clarity.
 
 The literal values are represented internally as integers. The first literal has the number 0, the next literal has the number 1, the next literal has the number 2, and so on. You can use **enum** values as integers in expressions. The default value for the first entry is **0**, or **false**.
 
@@ -169,15 +169,16 @@ Thousands of enumerable types are built into the standard application. For examp
 
 ### Create an enum
 
-Enumerations aren't created in code, but in metadata. 
+Enumerations aren't created in code, but in metadata.
 
 To create an enumerated type, follow these steps:
+
 1. In Solution Explorer, right-click the project, point to **Add**, and click **New item**.
-2. Under **Dynamics 365 items**, select **Data Types**.
-3. Click **Base Enum** to select the new item type.
-4. In the **Name** field, enter a name for the enum, click **Add**. A new enum is added to the project, and the enum designer for the new element is opened.
-5. In the enum designer, right-click the enum name, click **New element**.
-6. In the **Properties** window, enter the name of the enum element.
+1. Under **Dynamics 365 items**, select **Data Types**.
+1. Click **Base Enum** to select the new item type.
+1. In the **Name** field, enter a name for the enum, click **Add**. A new enum is added to the project, and the enum designer for the new element is opened.
+1. In the enum designer, right-click the enum name, click **New element**.
+1. In the **Properties** window, enter the name of the enum element.
 
 ### enum examples
 
@@ -329,22 +330,23 @@ public void IntegerMethod()
 
 A **real** variable can hold decimal values in addition to integral values. You can use *decimal literals* anywhere that a **real** is expected. Real literals can be written by using exponential notation, such as **1.0e3**.
 
-A **real** has a precision of 128 bits, allowing around 28 significant digits, encoded as a binary coded decimal (BCD) number. The default value for a **real** is **0.0**. 
- 
+A **real** has a precision of 128 bits, allowing around 28 significant digits, encoded as a binary coded decimal (BCD) number. The default value for a **real** is **0.0**.
+
 A *decimal number* is a floating point value that consists of:
- - a sign
- - a numeric value where each digit is in the range 0 through 9
- - a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.
+
+- a sign
+- a numeric value where each digit is in the range 0 through 9
+- a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value.
 
 The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. These values are ±1.0 × 10⁻²⁸ to ±7.9 × 10²⁸.
 
 This representation makes the **real** type resilient to rounding errors.
- 
+
 All reals in this range can be used as literals in X++.
 
 Reals can be used with both relational and arithmetic operators. A **real** variable is automatically converted to a **boolean**, **enum**, or **int**. If the result is an integer, or if the operator is an integer operator, the **real** is converted to an integer. If the result is a **boolean**, the **real** is converted to a **boolean**, and so on. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2num** and **num2str**.
 
-All instances of the **real** type are implemented as instances of the .NET decimal type (**System.Decimal**). 
+All instances of the **real** type are implemented as instances of the .NET decimal type (**System.Decimal**).
 
 ### real examples
 
@@ -367,8 +369,6 @@ public static void roundingProblem(Args a)
     value  = round(value, 2);
 }
 ```
-
-
 
 ```xpp
 public void RealMethod()
@@ -489,7 +489,7 @@ void StringMethod()
 
 String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type and setting the **String size** in the **Properties** window. In the following screenshot, **FMCreditCardNum** can't exceed 20 characters.
 
-![FMCreditCardNum string size.](media/stringtruncation.png)
+:::image type="content" source="media/stringtruncation.png" alt-text="Screenshot of FMCreditCardNum string size property settings.":::
 
 Run the following code in the debugger by including it in a static **Main** method to observe the behavior.
 
@@ -555,4 +555,3 @@ public void utcdatetimeMethod()
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -1,10 +1,10 @@
 ---
 title: What are the prerequisites to installing Business performance analytics
 description: This article describes how to complete the prerequisites for Business performance analytics, including outlines on availability, and systema and version requirements.
-author: jinniew
-ms.author: jiwo
+author: damienmaspero
+ms.author: damienma
 ms.topic: article
-ms.date: 03/17/2026
+ms.date: 03/31/2026
 
 ms.custom:
 ms.reviewer: twheeloc 
@@ -26,7 +26,7 @@ To preview business performance analytics, you need a tier 2 environment (multib
 
 ### Version requirements
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.38 (application version 10.0.1777.94) or later.
+Business performance analytics requires Dynamics 365 Finance version 10.0.45 (Application version 10.0.2345.96) or later.
 
 ### What are the prerequisites for installing Business performance analytics
 

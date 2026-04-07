@@ -1,6 +1,6 @@
 ---
-title: Set up and configure the Supplier Communications Agent (production ready preview)
-description: Learn how to set up and configure the Supplier Communications Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
+title: Set up and configure Supplier communications (production ready preview)
+description: Learn how to set up and configure the Supplier communications in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -14,31 +14,31 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Set up and configure the Supplier Communications Agent (production ready preview)
+# Set up and configure Supplier Communications (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how system administrators can set up and configure the Supplier Communications Agent.
+This article explains how system administrators can set up and configure Supplier communications.
 
 ## Video instructions
 
-For video instructions on how to set up the Supplier Communications Agent, go to [Supplier Communications Agent: Set up and Configure | Dynamics 365 Bites (video)](https://aka.ms/SupplierCommunicationsAgentSetup).
+For video instructions on how to set up Supplier communications, go to [Supplier Communications Agent: Set up and Configure | Dynamics 365 Bites (video)](https://aka.ms/SupplierCommunicationsAgentSetup).
 
 The remaining sections in this article provide the same instructions in a text-based format.
 
 ## Prerequisites
 
-Before you can use the Supplier Communications Agent, your system must meet the following requirements:
+Before you can use the Supplier communications, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later, with all available quality updates.  
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Select **Check for updates** if the features aren't shown on your system.
 
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
-    - *(Production ready preview) Supplier Communications Agent*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    - *(Production ready preview) Procurement Agent - Supplier communications*
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Procurement Agent - Supplier communications - automatically sending follow-up emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
     > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
@@ -46,15 +46,15 @@ Before you can use the Supplier Communications Agent, your system must meet the 
 - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), make sure you're running the following versions of the following Dynamics 365 Apps in your Supply Chain Management environment. It's important that you install or update them in the following order:
     - First, install *Copilot for finance and operations apps* version 1.0.03048.2 or later. If it's already installed, update it to the latest version.
     - Then, install *Copilot in Microsoft Dynamics 365 Supply Chain Management* version 1.1.03071.1 or later. If it's already installed, update it to the latest version.
-- Normally, the Microsoft Copilot Studio agents needed for the Supplier Communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
-    - *Supplier Communications Agent - inbound*
+- Normally, the Microsoft Copilot Studio agents needed for the Supplier communications Agent to run are published automatically. But there might be data loss prevention (DLP) policies on your environment that prevent the publishing of these agents. To check if the agents were successfully published, go to [Copilot Studio](https://copilotstudio.microsoft.com/) and find your environment. Make sure that the following Microsoft Copilot Studio agents are published in that environment:
+    - *Supplier communications Agent - inbound*
     - *Supplier Communications Agent - outbound*.
 
     If the two agents aren't published, you can find help in [Troubleshoot data policy enforcement for Copilot Studio](/microsoft-copilot-studio/admin-dlp-troubleshooting).
 
 ## <a name="set-up-agent-identity"></a>Set up an agent identity
 
-The Supplier Communications Agent interacts with Dataverse and Microsoft Copilot Studio to do its work. Select the identity that the agent uses for these interactions and create the required connections.
+Supplier communications interacts with Dataverse and Microsoft Copilot Studio to do its work. Select the identity that the agent uses for these interactions and create the required connections.
 
 > [!TIP]
 > For security and ease of maintenance, use a dedicated identity for the agent.
@@ -65,7 +65,7 @@ Use the user management features for your tenant to create an *agent identity us
 
 #### License requirements
 
-The Supplier Communications Agent uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+ Supplier Communications uses premium tier connectors, so the agent identity user must have a license that permits those connectors. Learn more in [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq) or download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 Examples of sufficient licenses include *Power Apps Premium*, *Power Automate Premium*, or *Dynamics 365 Supply Chain Management*.
 
@@ -156,7 +156,7 @@ Additionally, assign the roles described in the following subsections.
 
 ## Synchronize mailboxes with Dataverse
 
-To enable the email analysis and delivery features of the Supplier Communications Agent, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
+To enable the email analysis and delivery features of Supplier Communications, you must set up targeted mailboxes so that they're synchronized with Dataverse at the server level.
 
 ### Private mailbox
 
@@ -170,7 +170,7 @@ To set up a private mailbox, follow these steps:
 1. On the command bar, select **Settings**.
 1. On the **Settings** page, under **Email**, select **Mailboxes**.
 1. On the **Select a view** dropdown menu at the top of the page, select **Active Mailboxes**.
-1. Select the check box for each mailbox that you want to use with the Supplier Communications Agent.
+1. Select the check box for each mailbox that you want to use with the Supplier communications Agent.
 1. On the command bar, select **Test & enable mailbox** to enable synchronization for the selected mailboxes.
 
 After you set up a private mailbox, the user who owns it must update the personalization settings to specify that all emails should be tracked.
@@ -220,9 +220,9 @@ Get detailed instructions in [Set up server-side synchronization of email](/powe
 
 ### Troubleshooting
 
-#### Issues with setting up Supplier Communications Agent
+#### Issues with setting up Supplier communications 
 
-For help with problems that might occur when setting up the Supplier Communications Agent, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
+For help with problems that might occur when setting up the Supplier communications, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](supplier-com-agent-setup-faq.md).
 
 #### Issues with server-side synchronization
 
@@ -230,7 +230,7 @@ Learn how to fix common issues that are related to server-side synchronization i
 
 ## Refresh data (optional)
 
-After you enable the Supplier Communications Agent in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+After you enable Supplier Communications in a sandbox environment, we recommend that you do a data refresh. In this way, when you do testing in the sandbox environment, you can use the same data that you have in the production environment. Learn how to do a database refresh in [Refresh database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 
 ## <a name="own-email"></a>Set your email address as a vendor contact for testing
 

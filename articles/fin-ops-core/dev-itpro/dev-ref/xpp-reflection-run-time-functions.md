@@ -4,7 +4,7 @@ description: Learn about the reflection run-time functions, including syntax str
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 06/20/2017
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,11 +16,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the reflection run-time functions.
+This article describes the reflection runtime functions.
 
 ## classIdGet
 
-Retrieves the numeric identifier (the class ID) of the class that the object that is initialized belongs to.
+Retrieves the numeric identifier (the class ID) of the class that the initialized object belongs to.
 
 ```xpp
 int classIdGet(class object)
@@ -50,7 +50,8 @@ static void classIdGetExample(Args _args)
 ```
 
 ## dimOf
-Retrieves the number of index elements that space has been allocated for in an X++ array.
+
+Retrieves the number of index elements that space is allocated for in an X++ array.
 
 ```xpp
 int dimOf(anytype object)
@@ -70,20 +71,20 @@ If the value of the *object* parameter is an array, the number of elements in th
 
 The **dimOf** function is intended for X++ arrays that are declared as the following X++ primitive types:
 
--   boolean
--   date
--   int
--   int64
--   real
--   utcDateTime
+- boolean
+- date
+- int
+- int64
+- real
+- utcDateTime
 
 An example is **int iAmounts\[6\];**. Arrays of enumeration values and extended data types are also supported if they are ultimately based on one of the preceding primitive data types (such as **int**). The **dimOf** function doesn't accept arrays of all X++ primitive types. Here are the array types that the **dimOf** function doesn't accept:
 
--   **str**
--   **container**
--   **anytype**
--   Arrays of class objects
--   Instances of the **Array** class
+- **str**
+- **container**
+- **anytype**
+- Arrays of class objects
+- Instances of the **Array** class
 
 ### Example
 
@@ -157,7 +158,8 @@ info(int2Str(dimOf(iCounts)));
 ```
 
 ## fieldId2Name
-Retrieves a string that represents the name of the field that is specified by a table ID number and a field ID number.
+
+Retrieves a string that represents the name of the field that you specify by using a table ID number and a field ID number.
 
 ```xpp
 str fieldId2Name(int tableid, int fieldid)
@@ -191,7 +193,8 @@ static void fieldId2NameExample(Args _arg)
 ```
 
 ## fieldId2PName
-Retrieves the printable name of the field that is specified by a table ID number and a field ID number.
+
+Retrieves the printable name of the field that you specify by using a table ID number and a field ID number.
 
 ```xpp
 str fieldId2PName(int tableid, int fieldid)
@@ -225,7 +228,8 @@ static void fieldId2PNameExample(Args _arg)
 ```
 
 ## fieldName2Id
-Retrieves the field ID of the table field that is specified by a table ID number and a field ID number.
+
+Retrieves the field ID of the table field that you specify by using a table ID number and a field ID number.
 
 ```xpp
 int fieldName2Id(int tableid, str fieldname)
@@ -240,7 +244,7 @@ int fieldName2Id(int tableid, str fieldname)
 
 ### Return value
 
-The ID of the field that is specified by the *tableid* and *fieldname* parameters.
+The ID of the field that the *tableid* and *fieldname* parameters specify.
 
 ### Example
 
@@ -256,6 +260,7 @@ static void fieldName2IdExample(Args _arg)
 ```
 
 ## indexId2Name
+
 Retrieves the name of an index.
 
 ```xpp
@@ -290,6 +295,7 @@ static void indexId2NameExample(Args _arg)
 ```
 
 ## indexName2Id
+
 Retrieves the ID of an index.
 
 ```xpp
@@ -322,6 +328,7 @@ static void indexName2IdExample(Args _arg)
 ```
 
 ## tableId2Name
+
 Retrieves a string that contains the name of a table.
 
 ```xpp
@@ -361,6 +368,7 @@ static void tableId2NameExample(Args _arg)
 ```
 
 ## tableId2PName
+
 Retrieves a string that contains the printable name (the label) of a table.
 
 ```xpp
@@ -400,6 +408,7 @@ static void tableId2NameExample(Args _arg)
 ```
 
 ## tableName2Id
+
 Retrieves the ID of a table.
 
 ```xpp
@@ -439,6 +448,7 @@ static void tableName2IdExample(Args _arg)
 ```
 
 ## typeOf
+
 Retrieves the type of an element.
 
 ```xpp
@@ -467,8 +477,5 @@ typeof(conpeek(conpeek(c, 1), 1)) != Types::Integer)
     // More code.
 }
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
