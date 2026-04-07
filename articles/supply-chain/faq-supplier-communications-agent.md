@@ -1,6 +1,6 @@
 ﻿---
-title: Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
-description: Get answers to frequently asked questions about the AI technology that is used in the Supplier Communications Agent with Copilot in Microsoft Dynamics 365 Supply Chain Management. This FAQ includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+title: Responsible AI FAQ for the Procurement Agent (production ready preview)
+description: Get answers to frequently asked questions about the AI technology that is used in the Procurement Agent with Copilot in Microsoft Dynamics 365 Supply Chain Management. This FAQ includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
@@ -13,19 +13,20 @@ ms.collection:
   - bap-ai-Copilot
 ---
 
-# Responsible AI FAQ for the Supplier Communications Agent (production ready preview)
+# Responsible AI FAQ for the Procurement Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFM: Update this topic for Impact Analysis features -->
 
-This FAQ provides answers to frequently asked questions about the AI technology that is used in the Supplier Communications Agent that is available with Copilot in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This FAQ provides answers to frequently asked questions about the AI technology that is used in the Procurement Agent that is available with Copilot in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
 [!INCLUDE [production-ready-preview-dynamics365](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
-## What is the Supplier Communications Agent?
+## What is the Procurement Agent?
 
-The Supplier Communications Agent provides two capabilities that help purchasers communicate with vendors as part of their daily work:
+The Procurement Agent provides two capabilities that help purchasers communicate with vendors as part of their daily work:
 
 - *Send follow-up emails to vendors on purchase orders*
 - *Speed up updates in purchase orders based on incoming vendor emails*
@@ -44,9 +45,9 @@ To streamline this process, the system helps you to perform the following action
 
 This capability helps speed up communications with vendors about purchase orders. It enables Copilot to read emails from all or specific vendors.
 
-The Supplier Communications Agent can determine what each email is about (for example, whether it's a purchase order confirmation or a purchase order change request) and which purchase order numbers it applies to. Copilot then matches the information that it extracts from the email to fields in the system and indicates whether there are any changes. Therefore, the purchaser can review just the information that Copilot provides and update the fields in the system as required. They don't have to manually open the purchase order and do all the work themselves. They can then spend the time that they save on other tasks that add more value.
+The Procurement Agent can determine what each email is about (for example, whether it's a purchase order confirmation or a purchase order change request) and which purchase order numbers it applies to. Copilot then matches the information that it extracts from the email to fields in the system and indicates whether there are any changes. Therefore, the purchaser can review just the information that Copilot provides and update the fields in the system as required. They don't have to manually open the purchase order and do all the work themselves. They can then spend the time that they save on other tasks that add more value.
 
-## What are the capabilities of the Supplier Communications Agent?
+## What are the capabilities of the Procurement Agent?
 
 ### Send follow-up emails to vendors on purchase orders capability
 
@@ -71,22 +72,22 @@ For messages where the vendor requested a change, the system indicates the curre
 
 A review page lists the emails that were identified and classified, and summarizes the information in each message. From this page, you can apply the changes directly to the purchase order that is stored in the system.
 
-## What is the intended use of the Supplier Communications Agent?
+## What is the intended use of the Procurement Agent?
 
-The Supplier Communications Agent has the following intended uses:
+The Procurement Agent has the following intended uses:
 
 - The *Send follow-up emails to vendors on purchase orders* capability streamlines the process of following up on purchase orders. By default, it identifies orders that are delayed or unconfirmed. It presents a draft message to purchasers, who can review and modify it, copy it to their email client, and/or send it.
 - The *Speed up updates in purchase orders based on incoming vendor emails* capability saves purchasers time by automatically reading emails, extracting information from it, mapping that information to information in the system.
 
-## How was the Supplier Communications Agent evaluated? What metrics are used to measure performance?
+## How was the Procurement Agent evaluated? What metrics are used to measure performance?
 
-The Supplier Communications Agent underwent substantial testing with demo data examples before it was released.
+The Procurement Agent underwent substantial testing with demo data examples before it was released.
 
 Microsoft relies on users to report inappropriate generated content. If you encounter inappropriate content, report it to Microsoft by using the following feedback form: [Report abuse](https://msrc.microsoft.com/report). Your feedback helps improve the functionality.
 
 Microsoft might disable Copilot-driven features for selected customers if abuse of the functionality is detected.
 
-## What are the limitations of the Supplier Communications Agent? How can users minimize the impact of these limitations?
+## What are the limitations of the Procurement Agent? How can users minimize the impact of these limitations?
 
 The *Send follow-up emails to vendors on purchase orders* capability uses Copilot to generate email based on information that is retrieved through user-specified queries. You can select which fields to include in the email text. The information in the email is limited to data that comes from purchase orders, purchase order lines, and related information (such as vendor records). Primary contacts that are linked to emails and vendors are used to identify the recipient's name and company. User data is used to identify the sender's name and company.
 
@@ -98,7 +99,7 @@ To configure the system to send emails automatically, an admin must turn on the 
 
 The *Speed up updates in purchase orders based on incoming vendor emails* capability is intended only for vendor collaboration (classification of emails that are related to purchase orders). Therefore, during setup, you must specify which vendors email addresses (either all or only specific ones) the system can read emails from.
 
-## What operational factors and settings allow for effective and responsible use of the Supplier Communications Agent?
+## What operational factors and settings allow for effective and responsible use of the Procurement Agent?
 
 When you use the feature, follow these recommendations:
 
@@ -108,4 +109,4 @@ When you use the feature, follow these recommendations:
 
 ## Related information
 
-- [Supplier Communications Agent overview](procurement/procurement-agent-supplier-com-overview.md)
+- [Supplier communications features of the Procurement Agent](procurement/procurement-agent-supplier-com-overview.md)

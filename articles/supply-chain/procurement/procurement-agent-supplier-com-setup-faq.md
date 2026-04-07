@@ -1,6 +1,6 @@
 ---
-title: FAQ and solving typical issues when setting up and configure the Supplier Communications Agent (production ready preview)
-description: Identify and solve typical issues when configuring the Supplier Communications Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
+title: Solve common problems when setting up supplier communications features of the Procurement Agent (production ready preview)
+description: Identify and solve typical issues when configuring supplier communications features of the Procurement Agent in Dynamics 365 Supply Chain Management to streamline vendor communication.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -14,14 +14,14 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Solve common problems when setting up the Supplier Communications Agent (production ready preview)
+# Solve common problems when setting up supplier communications features of the Procurement Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article helps system administrators to solve typical issues when configuring the Supplier Communications Agent.
+This article helps system administrators to solve typical issues when configuring supplier communications features of the Procurement Agent.
 
 ## The *Dynamics 365 apps* link isn't shown for my environment in the Power Platform admin center
 
@@ -60,11 +60,11 @@ The error appears even though a Dataverse environment was successfully created i
 
 If you're running version 10.0.44 of finance and operations apps, then install the latest quality update for that version. This is required because the initial preview release of version 10.0.44 didn't include important changes to the Copilot message capacity, and these changes are required to enable the agent management feature.
 
-## The Supplier Communications Agent shows error "Exception has been thrown by target of invocation"
+## The Procurement Agent shows error "Exception has been thrown by target of invocation"
 
 ### Symptoms
 
-When you're configuring the Supplier Communications Agent, and specifying the conditions in which the agent should operate, the following error is shown when you press the **Activate** button:
+When you're configuring the supplier communications features of the Procurement Agent, and specifying the conditions in which the agent should operate, the following error is shown when you press the **Activate** button:
 
 > Exception has been thrown by target of invocation
 

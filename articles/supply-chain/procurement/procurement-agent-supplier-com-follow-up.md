@@ -1,6 +1,6 @@
 ﻿---
-title: Follow up on purchase orders using the Supplier Communications Agent (production ready preview)
-description: Learn how to use the Supplier Communications Agent to identify unconfirmed or delayed purchase orders and automate follow-up emails tailored to your business needs.
+title: Follow up on purchase orders using the Procurement Agent (production ready preview)
+description: Learn how to use the Procurement Agent to identify unconfirmed or delayed purchase orders and automate follow-up emails tailored to your business needs.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -14,15 +14,15 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Follow up on purchase orders by using the Supplier Communications Agent (production ready preview)
+# Follow up on purchase orders by using the Procurement Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Supplier Communications Agent helps you identify and follow up on purchase orders that vendors didn't yet confirm or that delivery is late for. For each order that it finds, the agent automatically generates a draft email that is addressed to the relevant vendor.
+The Procurement Agent helps you identify and follow up on purchase orders that vendors didn't yet confirm or that delivery is late for. For each order that it finds, the agent automatically generates a draft email that is addressed to the relevant vendor.
 
-The Supplier Communications Agent helps you perform the following actions:
+The Procurement Agent helps you perform the following actions:
 
 - Create agent tasks to find purchase orders that require follow-up. Each user has unique tasks, so you can create and adjust them to meet your specific business needs. Two default tasks are provided. One is used to follow up on unconfirmed purchase orders, and the other is used to follow up on late deliveries. You can modify or delete the default tasks as required to meet your business needs.
 - Configure how emails are generated for each task.
@@ -169,7 +169,7 @@ Edit each message as required, and then select **Send** to send it to the vendor
 
 ## Set up the periodic agent run schedule and batch job options
 
-The Supplier Communications Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
+The Procurement Agent includes a batch job that runs the agent automatically. To change the default configuration of the job, follow these steps:
 
 1. Go to **System Administration** \> **Inquiries** \> **Batch jobs**.
 1. Find and select the job that has a **Job description** that matches the name of the agent configuration, which is described in [Configure task criteria and email settings](#configure-task-criteria-and-email-settings). For example, if the agent name is *Send follow-up emails to vendors with Supplier Communications Agent*, you can locate its batch job quickly by using this text in the **Job description** column header filter. The agent name might be different on your system, so check the name before proceeding.

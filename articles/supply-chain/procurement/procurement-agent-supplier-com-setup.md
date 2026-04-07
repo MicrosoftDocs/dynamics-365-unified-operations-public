@@ -1,6 +1,6 @@
 ---
-title: Set up and configure supplier communications (production ready preview)
-description: Learn how to set up and configure supplier communications in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
+title: Set up and configure supplier communications features of the Procurement Agent (production ready preview)
+description: Learn how to set up and configure supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Set up and configure supplier communications (production ready preview)
+# Set up and configure supplier communications features of the Procurement Agent (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
