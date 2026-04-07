@@ -27,7 +27,7 @@ If purchasers must accept a change with impact, they now know straight away whic
 
 Impact analysis automatically analyzes the downstream impact of changes that arrive through e-mails (via the Supplier Communications Agent) and through the Vendor Collaboration Module of Supply Chain Management if configured and enabled.
 
-See [Review impact of purchase order changes from vendors](tasks/impact-analysis-review-changes.md).
+See [Review impact of purchase order changes from vendors](procurement-agent-impact-analysis-review-changes.md).
 
 ## Simulate if purchase order changes have impact
 
@@ -40,7 +40,7 @@ Some key use cases for this simulation include:
 - Evaluating if supplier proposals for expediting, new dates and/or quantities solve the impact. This can be alternatives that come out of follow-up conversations with the supplier for changes with impact.
 - Evaluating changes received and reviewed in channels that do not automatically trigger an impact analysis.
 
-See [Simulate if purchase order changes have impact](impact-analysis-simulation.md)
+Learn more in [Simulate if purchase order changes have impact](procurement-agent-impact-analysis-simulation.md).
 
 ## Cost
 
@@ -48,4 +48,4 @@ Impact analysis incurs charges based on the number of Microsoft Copilot Studio c
 
 Impact analysis runs on changes communicated by vendors through the configured sources(s). If impact analysis has been set up and configured to run for changes coming through emails via supplier communications, then credits will be charged when the conditions in the configuration of supplier communications are met. For example, if supplier communications has been configured to run on incoming emails from all vendors in a shared mailbox, and impact analysis is configured to run on vendor emails, then impact analysis will consume credits when any vendor sends an email about purchase order changes. The fixed cost applies each time the agent runs, and the variable cost depends on the number of changes communicated.
 
-Learn about the billing rates and management for Copilot Studio in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management).
+Learn about the billing rates and management for Copilot Studio in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management).

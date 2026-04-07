@@ -2466,7 +2466,7 @@
           - name: Impact analysis overview
             href: procurement/procurement-agent-impact-analysis-overview.md
           - name: How impact analysis works
-            href: procurement/procurement-agent-impact-analysis-howitworks.md
+            href: procurement/procurement-agent-impact-analysis-works.md
           - name: Set up, configure, and test impact analysis
             href: procurement/procurement-agent-impact-analysis-setup.md
           - name: Review impact of purchase order changes from vendors
@@ -2475,17 +2475,17 @@
             href: procurement/procurement-agent-impact-analysis-simulation.md
         - name: Supplier communications (production ready preview)
           items:
-          - name: Supplier communications overview
+          - name: Supplier communications features of the Procurement Agent
             href: procurement/procurement-agent-supplier-com-overview.md
-          - name: Set up and configure the supplier communications
+          - name: Set up and configure supplier communications features
             href: procurement/procurement-agent-supplier-com-setup.md
-          - name: Use the agent deployment wizard to set up the supplier communications (preview)
+          - name: Use the agent deployment wizard to set up supplier communications features (preview)
             href: procurement/procurement-agent-supplier-com-setup-wizard.md
-          - name: Solve common problems when setting up the supplier communications
+          - name: Solve common problems when setting up supplier communications features
             href: procurement/procurement-agent-supplier-com-setup-faq.md
-          - name: Test the supplier communications
+          - name: Test supplier communications features
             href: procurement/procurement-agent-supplier-com-testing.md
-          - name: Follow up on purchase orders using the supplier communications
+          - name: Follow up on purchase orders by using the Procurement Agent
             href: procurement/procurement-agent-supplier-com-follow-up.md
           - name: Review and apply purchase order changes received in vendor emails
             href: procurement/procurement-agent-supplier-com-apply-email-changes.md

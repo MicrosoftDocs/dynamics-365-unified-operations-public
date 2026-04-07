@@ -1,5 +1,5 @@
 ---
-title: Use the agent deployment wizard to set up the supplier communications features of the Procurement Agent (preview)
+title: Use the agent deployment wizard to set up supplier communications features (preview)
 description: Learn how to use the agent deployment wizard to set up and configure the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Use the agent deployment wizard to set up the supplier communications features of the Procurement Agent (preview)
+# Use the agent deployment wizard to set up supplier communications features (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -142,7 +142,7 @@ When you use the [review and apply purchase order changes received in vendor ema
 
 ### Issues with setting up supplier communications features of the Procurement Agent
 
-For help with problems that might occur when setting up supplier communications features of the Procurement Agent, go to [Solve common problems when setting up supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup-faq.md).
+For help with problems that might occur when setting up supplier communications features of the Procurement Agent, go to [Solve common problems when setting up supplier communications features](procurement-agent-supplier-com-setup-faq.md).
 
 ### Issues with server-side synchronization
 

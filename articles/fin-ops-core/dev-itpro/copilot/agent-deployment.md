@@ -53,7 +53,7 @@ The wizard provides a one-stop guidance and deployment tool and ensures deployme
 
 The agent deployment wizard is designed specifically for Microsoft‑provided Dynamics 365 agents, including:
 
-- [Supplier Communications agent](../../../supply-chain/procurement/supplier-com-agent-setup.md)
+- [Supplier Communications agent](../../../supply-chain/procurement/procurement-agent-supplier-com-setup.md)
 - [Account Reconciliation agent](../../../finance/general-ledger/configure-acct-recon-agent.md)
 - [Expense agent](/dynamics365/project-operations/expense/expense-agent-setup)
 - [Time agent](/dynamics365/project-operations/time/enable-time-entry-agent)

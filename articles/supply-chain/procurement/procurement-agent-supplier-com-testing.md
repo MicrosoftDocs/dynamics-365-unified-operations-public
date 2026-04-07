@@ -1,5 +1,5 @@
 ---
-title: Test supplier communications features of the Procurement Agent (production ready preview)
+title: Test supplier communications features (production ready preview)
 description: Learn how to test the supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management for smooth implementation and optimal performance.
 author: t-benebo
 ms.author: benebotg
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Test supplier communications features of the Procurement Agent (production ready preview)
+# Test supplier communications features (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

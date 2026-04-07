@@ -1,5 +1,5 @@
 ---
-title: Set up and configure supplier communications features of the Procurement Agent (production ready preview)
+title: Set up and configure supplier communications features (production ready preview)
 description: Learn how to set up and configure supplier communications features of the Procurement Agent in Microsoft Dynamics 365 Supply Chain Management to streamline vendor communications.
 author: t-benebo
 ms.author: benebotg
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:04/24/2025
 ---
 
-# Set up and configure supplier communications features of the Procurement Agent (production ready preview)
+# Set up and configure supplier communications features (production ready preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -161,7 +161,7 @@ To enable the email analysis and delivery features of supplier communications, y
 ### Private mailbox
 
 > [!IMPORTANT]
-> Only the owner of a private mailbox can create an agent configuration and review agent results related to it. The owner must have permissions to [manage the agent configuration](./procurement-agent-supplier-com-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](./procurement-agent-supplier-com-setup.md#permissions-for-users-who-review-agent-results).
+> Only the owner of a private mailbox can create an agent configuration and review agent results related to it. The owner must have permissions to [manage the agent configuration](procurement-agent-supplier-com-setup.md#permissions-for-users-who-manage-the-agent-configuration) and [review agent results](procurement-agent-supplier-com-setup.md#permissions-for-users-who-review-agent-results).
 
 To set up a private mailbox, follow these steps:
 
@@ -222,7 +222,7 @@ Get detailed instructions in [Set up server-side synchronization of email](/powe
 
 #### Issues with setting up supplier communications
 
-For help with problems that might occur when setting up supplier communications, go to [FAQ and solving typical issues when setting up and configure the Supplier Communications Agent](procurement-agent-supplier-com-setup-faq.md).
+For help with problems that might occur when setting up supplier communications, go to [Solve common problems when setting up supplier communications features](procurement-agent-supplier-com-setup-faq.md).
 
 #### Issues with server-side synchronization
 

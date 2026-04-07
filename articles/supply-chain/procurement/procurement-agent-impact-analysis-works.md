@@ -1,5 +1,5 @@
 ---
-title: procurement-agent-impact-analysis-howitworks
+title: How impact analysis works
 description: Understand how impact analysis works to identify and resolve issues caused by purchase order line changes, ensuring smooth order fulfillment.
 #customer intent: As a purchaser and planner, I want to understand how impact analysis uses planning data and pegging relationships to determine if supplier changes have impact, so that I can understand and trust the outcome.
 author: lisascholz91
@@ -19,7 +19,7 @@ It covers the impact of the following purchase order line changes:
 - Quantity decreases
 - Cancellations (where quantity is changed to 0)
 
-**Note:** The following changes are recognized when communicated via e-mail by supplier communications, but do not trigger an impact analysis:
+The following changes are recognized when communicated via e-mail by supplier communications, but do not trigger an impact analysis:
 
 - Unit of measure
 - Price
