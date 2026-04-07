@@ -101,6 +101,11 @@ By using batch telemetry, you can:
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
+
+> [!IMPORTANT]
+>
+> - This feature is available in **PU71/10.0.47 (build >= 7.0.7858.68)**, **PU70/10.0.46 (build >= 7.0.7778.87)** and **PU69/10.0.45 (build >= 7.0.7690.137)**.
+
 Data Management Framework (DMF) telemetry helps your organization get deeper visibility into Data management executions, such as import and export operations.
 By using this integration, you can:
 
