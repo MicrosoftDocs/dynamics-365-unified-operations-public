@@ -4,7 +4,7 @@ description: Learn how to migrate a Microsoft Dynamics 365 Commerce channel to a
 author: josaw
 ms.author: josaw
 ms.topic: upgrade-and-migration-article
-ms.date: 04/02/2026
+ms.date: 04/06/2026
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
@@ -21,6 +21,9 @@ ms.dyn365.ops.version: 8
 This article explains how to migrate Microsoft Dynamics 365 Commerce store channels from the Commerce Scale Unit (CSU) that they are currently working with to a different CSU. You might want to migrate channels to a different CSU for better load isolation and resource governance between channels, to reduce latency to your stores, or to manage different update/extension deployment schedules for staged roll-out and pilots. Migration to a different CSU involves downtime for the channels.
 
 This article describes best practices that will help you minimize business disruption and downtime while you migrate channels. It applies to the migration of channels between cloud-hosted CSUs, between self-hosted CSUs, from cloud-hosted CSUs to self-hosted CSUs, and from self-hosted CSUs to cloud-hosted CSUs.
+
+> [!IMPORTANT]
+> If your environment uses a Commerce localization (Globalization) solution that relies on fiscal integration with sequential signing of transactions (for example, the digital signing functionality for France, Norway, or Saudi Arabia), don't migrate your channels to a different CSU. Sequential signature data, including sequential numbers and last registration responses, is stored in the channel database. Migrating a channel to a different CSU moves it to a different channel database where this data doesn't exist, which causes sequential numbering to restart from the beginning. This breaks the continuity of the fiscal registration chain and can lead to regulatory compliance issues. Contact Microsoft Support before you attempt to migrate channels in environments where a Commerce localization solution is installed.
 
 > [!NOTE]
 > If you migrate channels between CSUs, temporary sales data that was used for journal records and point of sale (POS) reports before the migration will no longer be available at the POS after migration. After the migration is completed, journals and channel reports will be started afresh by using new data.
