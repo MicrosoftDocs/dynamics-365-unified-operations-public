@@ -1,5 +1,5 @@
 ---
-title: Deployment guidelines for cash registers for Norway (legacy)
+title: Deployment guidelines for cash registers for Norway (legacy, deprecated)
 description: This article is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
@@ -11,7 +11,7 @@ ms.search.validFrom: 2018-2-28
 ms.custom: 
   - bap-template
 ---
-# Deployment guidelines for cash registers for Norway (legacy)
+# Deployment guidelines for cash registers for Norway (legacy, deprecated)
 
 [!include [banner](../../../finance/includes/banner.md)]
 

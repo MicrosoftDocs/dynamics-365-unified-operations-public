@@ -1,6 +1,6 @@
 ---
 
-title: Sample for POS integration with control units for Sweden (legacy)
+title: Sample for POS integration with control units for Sweden (legacy, deprecated)
 description: This article is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
@@ -12,7 +12,7 @@ ms.search.validFrom: 2018-2-28
 ms.custom: 
   - bap-template
 ---
-# Sample for POS integration with control units for Sweden (legacy)
+# Sample for POS integration with control units for Sweden (legacy, deprecated)
 
 [!include [banner](../../../finance/includes/banner.md)]
 

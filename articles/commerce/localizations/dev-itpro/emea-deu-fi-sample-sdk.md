@@ -1,5 +1,5 @@
 ---
-title: Deployment guidelines for the fiscal registration service integration sample for Germany (legacy)
+title: Deployment guidelines for the fiscal registration service integration sample for Germany (legacy, deprecated)
 description: Learn about guidelines for deploying the fiscal integration sample for Germany from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
@@ -11,7 +11,7 @@ ms.search.validFrom: 2019-03-01
 ms.custom: 
   - bap-template
 ---
-# Deployment guidelines for the fiscal registration service integration sample for Germany (legacy)
+# Deployment guidelines for the fiscal registration service integration sample for Germany (legacy, deprecated)
 
 [!include [banner](../../../finance/includes/banner.md)]
 [!include [banner](../../../finance/includes/preview-banner.md)]

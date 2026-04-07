@@ -1,5 +1,5 @@
 ---
-title: Deployment guidelines for cash registers for France (legacy)
+title: Deployment guidelines for cash registers for France (legacy, deprecated)
 description: This article provides a deployment guide for the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
@@ -11,7 +11,7 @@ ms.search.validFrom: 2018-4-13
 ms.custom: 
   - bap-template
 ---
-# Deployment guidelines for cash registers for France (legacy)
+# Deployment guidelines for cash registers for France (legacy, deprecated)
 
 [!include [banner](../../../finance/includes/banner.md)]
 

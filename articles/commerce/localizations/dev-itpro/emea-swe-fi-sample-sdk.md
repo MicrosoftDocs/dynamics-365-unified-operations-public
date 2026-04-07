@@ -1,5 +1,5 @@
 ---
-title: Deployment guidelines for the control unit integration sample for Sweden (legacy)
+title: Deployment guidelines for the control unit integration sample for Sweden (legacy, deprecated)
 description: This article provides guidelines for deploying the control unit integration sample for Sweden from the Retail SDK.
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
@@ -11,7 +11,7 @@ ms.search.validFrom: 2019-3-1
 ms.custom: 
   - bap-template
 ---
-# Deployment guidelines for the control unit integration sample for Sweden (legacy)
+# Deployment guidelines for the control unit integration sample for Sweden (legacy, deprecated)
 
 [!include [banner](../../../finance/includes/banner.md)]
 

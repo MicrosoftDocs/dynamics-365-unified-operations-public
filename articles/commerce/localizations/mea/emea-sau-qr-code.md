@@ -1,5 +1,5 @@
 ---
-title: Generate QR codes and print them on receipts for Saudi Arabia
+title: Generate QR codes and print them on receipts for Saudi Arabia (deprecated)
 description: Learn about the functionality for printing quick response (QR) codes available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 02/27/2026
@@ -12,7 +12,7 @@ ms.search.validFrom: 2021-11-04
 ms.custom: 
   - bap-template
 ---
-# Generate QR codes and print them on receipts for Saudi Arabia
+# Generate QR codes and print them on receipts for Saudi Arabia (deprecated)
 
 [!include[banner](../../../finance/includes/banner.md)]
 

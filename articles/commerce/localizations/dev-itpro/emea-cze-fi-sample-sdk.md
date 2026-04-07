@@ -1,5 +1,5 @@
 ---
-title: Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
+title: Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy, deprecated)
 description: Learn about guidelines for deploying the fiscal integration sample for the Czech Republic from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 02/26/2026
@@ -10,7 +10,7 @@ ms.author: josaw
 ms.custom: 
   - bap-template
 ---
-# Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
+# Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy, deprecated)
 
 [!include [banner](../../../finance/includes/banner.md)]
 
