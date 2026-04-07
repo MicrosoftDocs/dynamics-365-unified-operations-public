@@ -2,7 +2,7 @@
 title: Deployment guidelines for cash registers for Norway
 description: Learn how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 04/06/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: Global
@@ -57,10 +57,65 @@ Follow these steps to enable the fiscal registration process for Norway in Comme
 
 You must configure certificates for digitally signing sales transactions in a store. Use a digital certificate stored in Azure Key Vault for signing. For the offline mode of Modern POS, you can also use a digital certificate stored in the local storage of the machine where Modern POS is installed.
 
+#### Certificate requirements for Norway
+
+Norwegian regulations require that digital signing uses an RSA 1024-bit key with a SHA-1 hash function (RSA-SHA1-1024). The certificate must meet the following specifications:
+
+- **Format** – X.509
+- **Key algorithm** – RSA
+- **Private key size** – 1024 bits
+- **Hash algorithm** – SHA-1
+- **Key type** – Signature
+
+> [!IMPORTANT]
+> Azure Key Vault doesn't accept SHA-1 certificates as certificate objects because SHA-1 doesn't meet Microsoft security standards. For the Norway localization, you must store the digital certificate as a Key Vault **secret** (not a Key Vault certificate). The secret value must be a base64-encoded PFX (PKCS #12) string with no password protection.
+
+#### Generate a self-signed certificate
+
+To generate a self-signed certificate that meets the Norwegian requirements, use the following PowerShell commands:
+
+```powershell
+$certName = "NorwayDigitalSignature"
+$cert = New-SelfSignedCertificate `
+    -Subject "CN=$certName" `
+    -KeyExportPolicy Exportable `
+    -KeySpec Signature `
+    -KeyLength 1024 `
+    -KeyAlgorithm RSA `
+    -HashAlgorithm SHA1
+
+$password = ConvertTo-SecureString -String "TempPassword" -Force -AsPlainText
+Export-PfxCertificate -Cert $cert -FilePath "C:\temp\$certName.pfx" -Password $password
+```
+
+#### Prepare the certificate for Key Vault storage
+
+The PFX file that you upload to Key Vault as a secret must not have password protection. To remove the password and convert the PFX to a base64 string, run the following PowerShell commands:
+
+```powershell
+# Remove the password from the PFX file.
+$pfxFilePath = "C:\temp\NorwayDigitalSignature.pfx"
+$password = "TempPassword"
+$collection = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
+$collection.Import($pfxFilePath, $password, [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
+$pkcs12ContentType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Pkcs12
+$certBytes = $collection.Export($pkcs12ContentType)
+[System.IO.File]::WriteAllBytes($pfxFilePath, $certBytes)
+
+# Convert the password-free PFX to a base64 string.
+$certBytes = [System.IO.File]::ReadAllBytes($pfxFilePath)
+$certBase64 = [System.Convert]::ToBase64String($certBytes)
+$certBase64 | Out-File "C:\temp\NorwayDigitalSignature-base64.txt"
+```
+
+The output file contains a single-line base64 string. Don't include any PEM headers (such as `-----BEGIN CERTIFICATE-----`) or line breaks when you use this value. It must be the raw base64 string only.
+
+#### Set up Key Vault storage
+
 Before you can use a digital certificate stored in Key Vault, complete the following steps:
 
 1. Create the Key Vault. Deploy the Key Vault in the same geographical region as the Commerce Scale Unit.
-1. Upload the certificate to the Key Vault as a base64 string secret.
+1. In the Azure portal, go to the Key Vault, and select **Secrets** (not **Certificates**). Select **Generate/Import** to create a new secret. Enter a name for the secret, and paste the full base64 string from the output file as the **Value**.
 1. Authorize the Application Object Server (AOS) application to read secrets from the Key Vault.
 
 For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
@@ -71,11 +126,15 @@ Next, on the **Key Vault parameters** page, specify the parameters for accessing
 - **Key Vault URL** – The URL of the Key Vault.
 - **Key Vault client** – An interactive client ID of the Microsoft Entra application that is associated with the Key Vault for authentication purposes. This client needs access to read secrets from the Key Vault.
 - **Key Vault secret key** – A secret key that is associated with the Microsoft Entra application that is used for authentication in the Key Vault.
-- **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
+- **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the secret. The **Secret type** should be set to **Manual**.
+
+For the **Secret reference** field, use the format `vault:///<SecretName>`, where `<SecretName>` is the name of the secret that you created in the Key Vault. For more information, see [Set up the Azure Key Vault client](../../../finance/localizations/global/setting-up-azure-key-vault-client.md).
+
+#### Configure the connector technical profile
 
 Next, configure a connector for your certificates that are stored in Key Vault or local certificate storage. Use this connector for signing on the channel side.
 
-1. Go to **Retail and Commerce > Channel setup > Fiscal integration > Connector technical profiles**.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. On the **Settings** FastTab, specify the following parameters for digital signatures:
 
     - **Secret name** – Select the secret name that you configured earlier on the **Key Vault parameters** page.
@@ -89,6 +148,7 @@ Next, configure a connector for your certificates that are stored in Key Vault o
 > [!NOTE]
 > - Only the **SHA1** cryptographic hash algorithm is currently acceptable for Norway.
 > - The default store name and store location simplify the process of searching local certificates in CRT. X509StoreProvider has a list of folders where certificates are stored. If you don't specify the default store name and the default store location, X509StoreProvider tries to find a certificate in all the folders on its list.
+> - If you use a local certificate, install it in the **Local Machine** store location in the **Personal** (My) store folder. The default option in the Windows certificate installation wizard is **Current User** — make sure that you select **Local Machine** instead.
 
 ### Configure channel components
 
