@@ -26,48 +26,15 @@ Default dimensions are preset financial dimension values that the system automat
 This article explains how default and fixed dimension values work on main accounts and how dimensions are applied during posting. For information about how account structures, advanced rules, and balancing dimensions define valid combinations of main accounts and dimension values, see [Financial dimensions](financial-dimensions.md).
 
 
-## Entering default dimensions
+## Enter default dimensions
 
-More than 250 pages let you enter default financial dimensions. The dimensions are shown on a FastTab that lists them together with values and descriptions. In standard demo data, more than 30 dimensions are available. However, the following example of a **Financial dimensions** FastTab shows just five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project.
+More than 250 pages, including master records such as customer, vendor, and item records, let you enter default financial dimensions. These dimensions are shown on a **Financial dimensions** FastTab that lists them together with values and descriptions. The following **Financial dimensions** FastTab shows five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project.
 
 ![Screenshot of Financial dimensions FastTab.](./media/DefaultDimensionEntry.png)
 
-### Dimensions list
+The dimensions that are available for defaulting are determined by your company's ledger configuration. Default dimensions include all dimensions defined in the account structures associated with the current company's ledger, along with any active advanced rules for those structures. 
 
-The system first filters the dimensions based on the list of all active account structures that are associated with the ledger of the current company or the company that you specify on the page. Next, the system gets a union of all the dimensions in those account structures, plus all active advanced rules that are associated with those structures.
-
-![Screenshot of Financial dimensions list.](./media/FinancialDimensionList.png)
-
-### Ledger page
-
-On the **Ledger** page (**General Ledger \> Setup \> Ledger**), you can maintain the account structures for a company.
-
-![Screenshot of Ledger page for the USMF company.](./media/LedgerStructureConfiguration.png)
-
-### Account structures where the number of dimensions varies
-
-To determine how many dimensions an account structure uses, select it on the **Ledger** page, select **Configure account structure** above the grid, and then count the columns. The following illustrations show one account structure that uses three dimensions and another account structure that uses five dimensions.
-
-**Account structure that uses three dimensions**
-
-![Screenshot of setup of the Balance sheet account structure for the USMF company.](./media/BalanceSheetAccountStructureSetup.png)
-
-**Account structure that uses five dimensions**
-
-![Screenshot of setup of the Profit and loss account structure for the USMF company.](./media/PandLAccountStructureSetup.png)
-
-Between the two account structures that are shown in the preceding illustrations, there are four unique dimensions: BusinessUnit, Department, CostCenter, and ItemGroup. These four dimensions appear in the list of default dimensions. In addition, dimensions from advanced rule structures that are linked to the account structures through advanced rules are examined. In this example, the examination of dimensions from advanced rule structures causes a fifth dimension, Project, to be added to the list of default dimensions.
-
-The following illustration shows the advanced rule that causes the Project dimension to be included in the list of default dimensions.
-
-![Screenshot of advanced rule that is linked to the Profit and loss account structure.](./media/AdvancedRuleLinked.png)
-
-The following illustration shows the rule structure.
-
-![Screenshot of rule structure for Project.](./media/RuleStructure.png)
-
-> [!NOTE]
-> The MainAccount dimension doesn't appear in most lists of default dimensions. However, Budgeting is the exception. It explicitly includes the MainAccount dimension in the list of default dimensions.
+For more information about how the system determines which dimensions are available, see [Default financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimension-defaulting).
 
 ## Default and fixed financial dimensions on the main account
 

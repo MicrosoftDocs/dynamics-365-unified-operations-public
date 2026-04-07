@@ -4,8 +4,8 @@ description: Learn about where the financial dimensions originate, the APIs that
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 04/05/2026
-ms.reviewer: twheeloc
+ms.date: 03/27/2026
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0

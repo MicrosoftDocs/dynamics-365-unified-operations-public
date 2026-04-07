@@ -66,13 +66,15 @@ A dimension value can't be deleted if it has been used on any posted or unposted
 
 When you delete a record from a source entity (such as a customer, vendor, project, or bank account) that is used as a financial dimension value, the system's response depends on how the dimension value was referenced:
 
-- **Used in a ledger account** — If the dimension value is part of any ledger account combination, deletion is blocked immediately.
-- **Used in a default dimension, posting profile, or other non-ledger-account context** — The system runs a reference scan before allowing the deletion. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record.
+- **Used in a ledger account** — If the dimension value is part of any ledger account combination, deletion is blocked immediately. Deletion of this dimension value is not possible and is not supported by Microsoft.
+- **Used in a default dimension, posting profile, or other non-ledger-account context** — The system runs a reference scan before allowing the deletion. Allow the scan to run to completion. If no references are found, both the entity record and its dimension value are removed. If references are found, the deletion is blocked and the system displays the transaction types that reference the record. You can remove the references found by the scan and then rerun it to delete the dimension value.
 
 If deletion is blocked, consider renaming or suspending the value instead, as described earlier in this article.
 
 ## Financial dimension value sync
 
-The data maintenance portal includes the **Dimension value rename and modify chart of accounts delimiter process** job under the **Misc** tab. This job keeps financial dimension values in sync with their source entity records. If an entity-backed dimension value exists in the source table but doesn't appear in the dimension framework, check the status of this job. If no errors are present and the problem persists, select **Run now** to force a re-sync. For more information about the data maintenance portal, see [Data maintenance portal](/dynamics365/fin-ops-core/dev-itpro/sysadmin/datamaintenanceportal).
+The [data maintenance portal](/dynamics365/fin-ops-core/dev-itpro/sysadmin/datamaintenanceportal) includes the **Dimension value rename and modify chart of accounts delimiter process** job under the **Misc** tab. This job keeps financial dimension values in sync with their source entity records.
+
+If a dimension value appears to be out of sync with its source record, try manually renaming the value at the source (for example, renaming a customer or vendor record). This triggers the sync job automatically and propagates the change through the dimension framework. If the value is still out of sync after the rename, check the job status in the data maintenance portal for errors.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
