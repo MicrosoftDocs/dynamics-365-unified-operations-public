@@ -2,7 +2,7 @@
 title: Send email receipts from Store Commerce
 description: Learn how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).  
 author: ritakimani
-ms.date: 01/14/2026
+ms.date: 04/06/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -20,9 +20,15 @@ ms.search.validFrom: 2016-11-30
 
 This article explains how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).
 
-## Prerequisite
+## Prerequisites
 
-To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP) server.
+To send email receipts, you must configure an email provider in Commerce headquarters. The following email providers are available:
+
+- **Microsoft Graph (recommended)** – Microsoft Graph is the recommended email provider for customers who use Microsoft 365. It supports modern authentication (OAuth 2.0) and doesn't require SMTP relay configuration. Microsoft Graph is available in Dynamics 365 Finance version 10.0.38 and later. For setup instructions, see [Send email with Microsoft Graph](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json#send-email-with-microsoft-graph).
+- **SMTP** – You can configure a Simple Mail Transfer Protocol (SMTP) server as the email provider. For setup instructions, see [Send email by using SMTP](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json#send-email-by-using-smtp).
+
+> [!IMPORTANT]
+> If you use an Office 365 SMTP server (smtp.office365.com), be aware that Exchange Online enforces a [sending limit of 30 messages per minute](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). During high-volume periods, such as holidays, this throttling limit can cause delays in receipt email delivery at the point of sale. To avoid this issue, configure Microsoft Graph as the batch email provider on the **Email parameters** page. Microsoft Graph isn't subject to the same per-minute sending limit and has its own built-in throttling mechanism. For more information about email provider configuration, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## Set up email receipts
 
