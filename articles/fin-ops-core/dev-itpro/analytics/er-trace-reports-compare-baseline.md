@@ -69,7 +69,7 @@ To complete the steps in this example, you must first complete the steps in [Cre
 1. In the drop-down dialog box, in the **Name** field, enter **Model to learn ER baselines**.
 1. Select **Create configuration** to confirm the creation of a new ER data model entry.
 
-:::image type="content" source="media/GER-BaselineSample-ModelAdd.PNG" alt-text="Screenshot of the Create configuration drop-down dialog box.":::
+:::image type="content" source="media/GER-BaselineSample-ModelAdd.PNG" alt-text="Screenshot of the Create configuration dialog with 'Model to learn ER baselines' entered in the Name field.":::
 
 ### Design a data model
 
@@ -134,7 +134,7 @@ For this example, create a simple ER format to generate XML documents.
 1. In the tree, select **Output\\Document\\Id**.
 1. Select **Bind**, and then select **Save**.
 
-:::image type="content" source="media/GER-BaselineSample-FormatMappingDesign.PNG" alt-text="Screenshot of the Format designer page.":::
+:::image type="content" source="media/GER-BaselineSample-FormatMappingDesign.PNG" alt-text="Screenshot of Format designer Mapping tab showing Id XML Attribute bound to User input parameter Description.":::
 
 Based on the designed structure, the configured format generates an XML file. This XML contains the **Root** element that has the **ID** attribute set to the value that the user enters in the ER runtime dialog box.
 
@@ -163,13 +163,13 @@ Based on the designed structure, the configured format generates an XML file. Th
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 1. On the Action Pane, select **Baselines**.
 
-    :::image type="content" source="media/GER-BaselineSample-OpenBaselinePage.PNG" alt-text="Screenshot of the Baselines button on the Configurations page.".:::
+    :::image type="content" source="media/GER-BaselineSample-OpenBaselinePage.PNG" alt-text="Screenshot of the Baselines button on the Configurations page.":::
 
 1. On the Action Pane, select **New**.
 1. Select the **Format to learn ER baselines** ER format that you designed earlier.
 1. Select **Save**.
 
-:::image type="content" source="media/GER-BaselineSample-AddBaseline.PNG" alt-text="Screenshot of the Electronic reporting format baselines page.":::
+:::image type="content" source="media/GER-BaselineSample-AddBaseline.PNG" alt-text="Screenshot of Electronic reporting format baselines page with empty Baselines grid and Format to learn ER baselines selected.":::
 
 The baseline is added for the **Format to learn ER baselines** format.
 
@@ -205,7 +205,7 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. Select **OK**.
 1. Go to **Organization administration** > **Electronic reporting** > **Configuration debug logs**.
 
-    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison1.PNG" alt-text="Screenshot of the Electronic reporting run logs page.".:::
+    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison1.PNG" alt-text="Screenshot of the Electronic reporting run logs page.":::
 
     > [!NOTE]
     > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline are equal.
@@ -221,7 +221,7 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. Select **OK**.
 1. Go to **Organization administration** > **Electronic reporting** > **Configuration debug logs**.
 
-    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison2.PNG" alt-text="Screenshot of the Electronic reporting run logs page.".:::
+    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison2.PNG" alt-text="Screenshot of the Electronic reporting run logs page.":::
 
     > [!NOTE]
     > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline differ.
