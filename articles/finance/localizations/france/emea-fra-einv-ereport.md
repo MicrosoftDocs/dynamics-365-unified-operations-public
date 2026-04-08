@@ -445,6 +445,13 @@ After you complete the required configuration steps, generate and submit electro
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
+### Electronic invoicing scope
+
+The following types of documents will be excluded from **E-invoicing** individual submission and will be included into the scope of **E-reporting**. For mor information, refer to ZZZZZZZZZZZZZZZ (E-reporting doc) ZZZZZZZZZZZ
+
+- **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
+- **All Business-to-Consumer (B2C) invoices** - 
+
 ### Submission of e-invoices to Edicom
 
 To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
