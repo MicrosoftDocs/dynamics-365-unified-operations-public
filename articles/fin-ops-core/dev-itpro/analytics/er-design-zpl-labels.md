@@ -136,7 +136,7 @@ The following example uses a printer emulator application for ZPL labels to show
 1. Add a local printer for the current workstation, and configure it to pass generated labels from the DRA to a printer emulator application.
 1. Install a printer emulator application as an extension of the Chrome web browser, and configure it to pass generated labels from a local printer to a web service that renders generated labels and returns them to the printer emulator for preview.
 
-| Finance ER report Printer destination | | Document routing agent | | Local printer | | Printer emulator | | Rendering web service |
+| Finance ER report Printer destination | &nbsp; | Document routing agent | &nbsp; | Local printer | &nbsp; | Printer emulator | &nbsp; | Rendering web service |
 |---|---|---|---|---|---|---|---|---|
 | Finance<br>ER report<br>Printer destination | :::image type="content" source="./media/er-design-zpl-labels-flow1.png" alt-text="Screenshot of data flow direction from Finance to the DRA."::: | Document routing agent | :::image type="content" source="./media/er-design-zpl-labels-flow1.png" alt-text="Screenshot of data flow direction from the DRA to a local printer."::: | Local printer | :::image type="content" source="./media/er-design-zpl-labels-flow1.png" alt-text="Screenshot of data flow direction from a local printer to a printer emulator."::: | Printer emulator | :::image type="content" source="./media/er-design-zpl-labels-flow2.png" alt-text="Screenshot of data flow direction from a printer emulator to a rendering web service and then back to the printer emulator."::: | Rendering web service |
 

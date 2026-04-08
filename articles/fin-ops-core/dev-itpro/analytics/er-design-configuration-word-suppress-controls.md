@@ -144,7 +144,7 @@ To suppress the summary section in a generated document, based on the request of
 
 1. Select **Save** to save your changes to the editable format.
 
-    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image3.gif" alt-text="Screenshot of the generated output in Word format.":::
+    :::image type="content" source="./media/er-design-configuration-word-suppress-controls-image3.gif" alt-text="Screenshot of generated Word output showing vendor payment report table after applying the modified format.":::
 
 ## Run the modified format to create Word output
 

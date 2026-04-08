@@ -158,7 +158,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 
 1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**.
 1. On **Free text invoice**, select the **FTI-00000002** invoice. Then, on the Action Pane, on the **Invoice** tab, in the **Print management** group, select **Print management**.
-1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original <Default>** item.
+1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original \<Default\>** item.
 1. In the **Report format** field, select **Free text invoice (Excel)**.
 1. Select the **Esc** key to leave **Print management setup** and return to **Free text invoice**.
 
