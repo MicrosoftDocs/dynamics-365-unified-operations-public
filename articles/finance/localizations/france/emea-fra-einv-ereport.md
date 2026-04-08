@@ -461,7 +461,7 @@ To enquire the initial status of the submitted electronic invoices from Edicom, 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 1. In the **Channel** field, select the export channel you [created](#ExChannel), and then select **OK**.
 
-Check the results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. The documents can be in either **Falied** status if it was rejected by Edicom due to syntactical, semantical or other validation errors, or **Pending update status execution** if it is successfully validated by Edicom and ready for further processing.
+Check the results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. The documents can be in either **Falied** status if it was rejected by Edicom due to syntactical, semantical or other validation errors, or **Pending update actions execution** if it is successfully validated by Edicom and ready for further processing.
 
 > [!NOTE]
 > Submitted electronic invoices are also available in the [Ediwin](https://ediwin.edicomgroup.com/) portal in the **Outbound** folder and its subfolders, where you can monitor further processing.
@@ -478,6 +478,10 @@ As a part of documents lifecycle, for successfully submitted invoices, there is 
 > You can also configure periodic running this procedure in background to avoid manual intervention.
 
 The procedure can be run multiple times retrieving various lifecycle documents statuses from Edicom until any **termination** status code is reached or a predefined **timeout** occurred. 
+
+If any termination document status code is reached, the related document's submission status will be updated to **Completed** - this concludes the lifecycle of the document. All other, "non-termination", document statuses are for information only and keep the **Pending update actions execution** submission status intact.
+
+:::image type="content" source="e-inv-fra-update-status.jpg" alt-text="Screenshot of submission log statuses.":::
 
 The statuses codes for successfull or unsuccessfull termination and the timeout period in days can be configured in the related feature setup parameters. 
 To configure the parameters, follow these steps.
