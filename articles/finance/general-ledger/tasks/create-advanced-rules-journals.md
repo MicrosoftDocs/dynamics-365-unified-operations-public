@@ -67,7 +67,7 @@ For example, suppose your ledger has two account structures: one allowing main a
 To fully restrict journal entries, add journal control segment values for **every** account structure assigned to the ledger.
 
 > [!NOTE]
-> All dimension values are compared as strings, not numbers. A range like `401100..401400` includes the value `4012` because string sorting places "4012" between "401100" and "401400". If you use variable-length identifiers, be aware that string comparison may produce unexpected results. For more information, see [Account structures overview](../configure-account-structures.md#valid-and-invalid-characters-in-criteria).
+> All dimension values are compared as strings, not numbers. A range like `401100..401400` includes the value `4012` because string sorting places "4012" between "401100" and "401400". If you use variable-length identifiers, be aware that string comparison may produce unexpected results. For more information, see [Account structures overview](/dynamics365/finance/general-ledger/configure-account-structures#specifying-valid-dimensions-with-account-structures).
 
 ## Set up posting restrictions
 1. Close the page.
