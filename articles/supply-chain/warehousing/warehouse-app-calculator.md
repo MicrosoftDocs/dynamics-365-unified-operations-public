@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/26/2025
+ms.date: 04/08/2026
 ms.custom: 
   - bap-template
 ---
@@ -71,7 +71,7 @@ To enter a numerical value for a quantity field, follow these steps:
 
 To perform a calculation when entering a quantity, follow these steps:
 
-1. Enter the first number using the numeric keypad.
+1. Enter the first number by using the numeric keypad.
 1. Open the operator menu by long pressing the decimal point (**.**) key.
 1. Select your desired operator (addition (**&plus;**), subtraction (**&minus;**), multiplication (**&times;**), or division (**&divide;**)).
 1. Enter the second number.
@@ -80,24 +80,10 @@ To perform a calculation when entering a quantity, follow these steps:
 
 ## Troubleshooting
 
-This section describes common issues and their solutions.
-
-### Long press gestures aren't responding
-
-**Problem**: The long press gesture doesn't activate the enhanced functionality.
-
-**Solution**: Make sure you're holding the button for at least half a second. A brief tap doesn't activate the gesture control.
-
-### The operations menu doesn't appear
-
-**Problem**: The arithmetical operators menu doesn't display when needed.
-
-**Solution**: Verify that you're long pressing the decimal point (**.**) key for at least half a second. Other numbers and function keys don't open the menu.
-
-### A gesture activates unintentionally
-
-**Problem**: Enhanced functionality triggers during normal use.
-
-**Solution**: Adjust your input technique to use brief taps when entering standard numbers. Reserve longer presses only for when you intend to use the enhanced gesture controls.
+| Problem | Solution |
+|---|---|
+| Long press gesture doesn't activate | Hold the key for at least half a second. Brief taps enter standard input only. |
+| Arithmetical operators menu doesn't appear | Ensure you're long pressing the decimal point (**.**) key specifically. Other keys don't open the menu. |
+| Gesture activates unintentionally | Use shorter taps for standard number entry. Reserve longer presses for gesture controls. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
