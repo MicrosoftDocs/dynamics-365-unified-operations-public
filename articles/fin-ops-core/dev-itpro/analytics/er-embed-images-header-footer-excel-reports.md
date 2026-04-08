@@ -158,7 +158,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. On **Free text invoice**, select the **FTI-00000002** invoice. Then, on the Action Pane, on the **Invoice** tab, in the **Print management** group, select **Print management**.
-1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original <Default>** item.
+1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original *Default*** item.
 1. In the **Report format** field, select **Free text invoice (Excel)**.
 1. Select the **Esc** key to leave **Print management setup** and return to **Free text invoice**.
 
@@ -213,7 +213,7 @@ Configure your custom format so that a company logo image appears in the footer 
     :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-derived-format0.png" alt-text="Screenshot of the Footer element in the ER Operations designer.":::
 
     > [!NOTE]
-        > Every page footer of a generated invoice contains information about the current page number and the total number of pages in the report. As you can see, the **Free text invoice \\ Invoice \\ Footer** element contains no child elements. Therefore, the Excel template that you're using is configured to show paging details in the center of every report's footer.
+    > Every page footer of a generated invoice contains information about the current page number and the total number of pages in the report. As you can see, the **Free text invoice \\ Invoice \\ Footer** element contains no child elements. Therefore, the Excel template that you're using is configured to show paging details in the center of every report's footer.
 
 1. Select **Add**, and then select the **Excel \\ Picture** type of the format element that you're adding:
 
