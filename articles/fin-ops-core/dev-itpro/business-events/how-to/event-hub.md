@@ -24,27 +24,27 @@ This tutorial describes the steps to make business events work with Microsoft Az
 
 1. In Azure portal, create an Active Directory app registration. Make a note of the application ID.
 
-   :::image type="content" source="../../media/BE_EH_aad.PNG" alt-text="Screenshot of the Application (client) ID value."​:::
+   :::image type="content" source="../../media/BE_EH_aad.PNG" alt-text="Screenshot of the Application (client) ID value.":::
 
 1. Give the app permission to the Azure Key Vault application programming interface (API). 
 
-   :::image type="content" source="../../media/BE_EH_api.png" alt-text="Screenshot of giving the app permission to the Azure Key Vault API."​:::
+   :::image type="content" source="../../media/BE_EH_api.png" alt-text="Screenshot of giving the app permission to the Azure Key Vault API.":::
 
 1. In the app registration, create an application secret. Make a note of the value.
 
-   :::image type="content" source="../../media/BE_EH_secret.jpg" alt-text="Screenshot of creating an application secret."​:::
+   :::image type="content" source="../../media/BE_EH_secret.jpg" alt-text="Screenshot of creating an application secret.":::
 
 1. In the key vault, give permission to the new app registration.
 
-   :::image type="content" source="../../media/BE_EH_permission.jpg" alt-text="Screenshot of giving the key vault permission to the app registration."​:::
+   :::image type="content" source="../../media/BE_EH_permission.jpg" alt-text="Screenshot of giving the key vault permission to the app registration.":::
 
 1. In the key vault, create a new secret. The value of this secret must be the connection string to your event hub. Make a note of the value.
 
-   :::image type="content" source="../../media/BE_EH_connectionstring.jpg" alt-text="Screenshot of the connection string."​:::
+   :::image type="content" source="../../media/BE_EH_connectionstring.jpg" alt-text="Screenshot of the connection string.":::
 
 1. Create an endpoint configuration for the event hub. Go to **System administration \> Setup \> Business events \> Business events catalog**, and then, on the **Endpoints** tab, select **New** to open the **Configure new endpoint** wizard.
 
-   :::image type="content" source="../../media/BE_EH_endpointconfig.jpg" alt-text="Screenshot of the Configure new endpoint wizard."​:::
+   :::image type="content" source="../../media/BE_EH_endpointconfig.jpg" alt-text="Screenshot of the Configure new endpoint wizard.":::
 
 1. In the **Endpoint type** field, select **Azure Event Hub**.
 1. Select **Next**.

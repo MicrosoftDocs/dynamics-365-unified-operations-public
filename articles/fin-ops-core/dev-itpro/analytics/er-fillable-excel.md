@@ -330,7 +330,7 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 
     ![Review the footer of a generated document in Excel format.](./media/er-fillable-excel-footer-1.gif)
 
-3. In the ER format designer, [open](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) the sample ER format for review.
+3. In the ER format designer, [open](er-generate-printable-fti-forms.md#features-implemented-in-the-sample-er-format) the sample ER format for review.
 
     The footer of the **Invoice** worksheet is generated based on the settings of two **String** components that reside under the **Footer** component:
 

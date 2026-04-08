@@ -221,7 +221,7 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. Select **OK**.
 1. Go to **Organization administration** > **Electronic reporting** > **Configuration debug logs**.
 
-    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison2.PNG" alt-text="Screenshot of the Electronic reporting run logs page.":::
+    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison2.PNG" alt-text="Screenshot of Electronic reporting run logs showing a warning that generated file 'out.Admin.xml' differs from baseline.":::
 
     > [!NOTE]
     > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline differ.

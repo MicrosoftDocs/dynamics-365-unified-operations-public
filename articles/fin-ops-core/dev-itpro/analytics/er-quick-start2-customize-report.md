@@ -420,7 +420,7 @@ The status of version 1.1.1 changes from **Draft** to **Completed**, and the ver
 
 ### <a id="RebaseDerivedFormat"></a>Rebase a custom format to a new base version
 
-To use the new functionality of version 3.3 of the **BACS (UK)** format in your customization, change the base configuration version for the custom configuration, **BACS (UK custom)**. This process is known as [rebasing](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase). Instead of version 1.1 of **BACS (UK)**, use version 3.3.
+To use the new functionality of version 3.3 of the **BACS (UK)** format in your customization, change the base configuration version for the custom configuration, **BACS (UK custom)**. This process is known as [rebasing](general-electronic-reporting.md#upgrading-a-format-by-selecting-a-new-version-of-base-format-rebase). Instead of version 1.1 of **BACS (UK)**, use version 3.3.
 
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 1. On **Configurations**, in the configuration tree in the left pane, expand **Payment model**, and then select **BACS (UK custom)**.

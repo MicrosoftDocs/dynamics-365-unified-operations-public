@@ -93,9 +93,9 @@ You can design Electronic reporting (ER) formats to parse incoming electronic do
 
   - Specify the character in the **Custom delimiter** field that the parser recognizes in the parsing line as a fields separator.
 
-        > [!NOTE]
-        > - You can define different field separators for different sequence elements to parse specific file lines in which fields are separated by different characters.
-        > - You can leave the **Custom delimiter** field blank for certain sequence elements. An empty field means that any file line that the parser uses this sequence to parse is like a .txt (fixed length text) file line.
+    > [!NOTE]
+    > - You can define different field separators for different sequence elements to parse specific file lines in which fields are separated by different characters.
+    > - You can leave the **Custom delimiter** field blank for certain sequence elements. An empty field means that any file line that the parser uses this sequence to parse is like a .txt (fixed length text) file line.
 
   - In the **Quotation application** field, select the value when you expect that some fields of any line that the parser uses this sequence element to parse are enclosed by certain characters. The following options are available:
 
@@ -108,8 +108,8 @@ You can design Electronic reporting (ER) formats to parse incoming electronic do
 
   - For each format element that represents an individual field of the parsing line, by default, nothing is selected in the **Multiplicity** field. This default means that the value of the field in the parsing line is required. In the **Multiplicity** field, select **Zero one** to make the value of this field in the parsing line optional.
 
-        > [!NOTE]
-        > The data source item **isMatch** is available when you map this format to ER data model for each **String**, **DateTime**, or **Numeric** format element with the option **Zero one** selected in the **Multiplicity** field. When this field contains a value, **isMatch** returns **True**. If there's no value in the field, it returns **False**.
+    > [!NOTE]
+    > The data source item **isMatch** is available when you map this format to ER data model for each **String**, **DateTime**, or **Numeric** format element with the option **Zero one** selected in the **Multiplicity** field. When this field contains a value, **isMatch** returns **True**. If there's no value in the field, it returns **False**.
 
 To learn more about this feature, watch the task guide, **ER Create a format configuration to import data from an external CSV file** (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). The guide walks through how the incoming CSV file can be parsed by using the ER format to update application data.
 

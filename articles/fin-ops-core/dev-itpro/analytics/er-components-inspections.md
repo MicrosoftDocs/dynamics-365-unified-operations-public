@@ -24,7 +24,7 @@ By default, the validation automatically runs in the following cases for an ER c
 
 - You [import](general-electronic-reporting.md) a new version of an ER configuration into your instance of Microsoft Dynamics 365 Finance.
 - You change the status of the editable ER configuration from **Draft** to **Completed**.
-- You [rebase](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) an editable ER configuration by applying a new base version.
+- You [rebase](general-electronic-reporting.md#upgrading-a-format-by-selecting-a-new-version-of-base-format-rebase) an editable ER configuration by applying a new base version.
 
 You can explicitly run this validation. Select one of the following three options, and follow the steps that are provided:
 

@@ -23,7 +23,7 @@ This article explains how a user in the System Administrator or Electronic Repor
 
 - Configure parameters for the [Electronic reporting (ER)](general-electronic-reporting.md) framework.
 - Import ER [configurations](general-electronic-reporting.md#Configuration) that are [provided](general-electronic-reporting.md#Provider) by Microsoft and used to generate [free text invoices](../../../finance/accounts-receivable/create-free-text-invoice-new.md), based on a [template](er-fillable-excel.md#excel-file-component) in Microsoft Excel format.
-- Create a [custom (derived)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) version of a standard ER format configuration that is provided by Microsoft.
+- Create a [custom (derived)](general-electronic-reporting.md#building-a-format-by-selecting-another-format-as-a-base-customization) version of a standard ER format configuration that is provided by Microsoft.
 - Modify the custom ER format configuration so that it generates a free text invoice report that has a company logo image in the footer.
 
 The procedures in this article can be completed in the **USMF** company. No coding is required. Before you begin, download and save the following file.
