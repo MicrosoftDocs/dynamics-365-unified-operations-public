@@ -454,6 +454,16 @@ To start electronic invoices submission process, go to **Organization administra
 
 Check the submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. Learn more in [Work with Electronic document submission log](../global/e-invoicing-submission-log.md). The documents can have either **Falied** submission status, if there were either Electronic Reporting run-time errors or Edicom portal is unreachable, or **Pending service response** submission status, when ready for further processing.
 
+The following types of invoices are processed during the submission.
+
+ - Invoices based on Sales orders - electronic invoices of **380** type are generated.
+ - Credit notes based on Sales orders - electronic invoices of **381** type are generated.
+ - Free text invoices - electronic invoices of **380** type are generated.
+ - Free text credit notes - electronic invoices of **381** type are generated.
+ - Project invoices - electronic invoices of **380** type are generated.
+ - Project credit notes - electronic invoices of **381** type are generated.
+ - Customer prepayment invoices created using [Customer prepayment invoices](../../accounts-receivable/customer-prepayment-invoice.md) functionality - electronic invoices of **386** type are generated.
+
 ### Inquiring statuses of submited e-invoices
 
 To enquire the initial status of the submitted electronic invoices from Edicom, follow these steps.
