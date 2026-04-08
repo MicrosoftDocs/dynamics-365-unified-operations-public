@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 10/06/2025
+ms.date: 04/08/2026
 ms.custom:
   - bap-template
 ---
@@ -21,8 +21,9 @@ The Warehouse Management mobile app supports two options for how it submits scan
 
 The Warehouse Management mobile app supports two approaches for submitting scanned data:
 
-- **App-controlled (Auto submit = Yes)** — The app decides how to handle scanned data. Behavior varies by device: some devices (such as Zebra) auto-submit, while others (such as Honeywell) require manual confirmation. This option exists for backwards compatibility with versions before 4.0.20.0 and is **not recommended** for new installations.
-- **Device-controlled (Auto submit = No)** — The app doesn't auto-submit. Instead, the device controls submission behavior. This is the **recommended setting** because it provides consistent, predictable behavior across all devices.
+- **Device-controlled (Auto submit = No)** — The app doesn't auto-submit. Instead, the device controls submission behavior. This is the *recommended setting* because it provides consistent, predictable behavior across all devices.
+
+- **App-controlled (Auto submit = Yes)** — The app decides how to handle scanned data. Behavior varies by device: some devices (such as Zebra) auto-submit, while others (such as Honeywell) require manual confirmation. This option exists for backwards compatibility with versions before 4.0.20.0 and is *not recommended* for new installations.
 
 ## Configure auto-submit in the app
 
@@ -32,7 +33,7 @@ The Warehouse Management mobile app supports two approaches for submitting scann
 
 ## Configure auto-submit on the device
 
-With **Auto submit** set to *No* in the app, you can still achieve auto-submit behavior by configuring your device to simulate an Enter key press after each scan. The exact steps depend on your device model — refer to your device manufacturer's documentation.
+When you set **Auto submit** to *No* in the app, you can still achieve auto-submit behavior by configuring your device to simulate an Enter key press after each scan. The exact steps depend on your device model. Refer to your device manufacturer's documentation for details.
 
 > [!TIP]
 > For more granular control, you can use *intents* instead of keystroke simulation. Learn more in [Advanced bar code scanner configuration](warehouse-app-adv-scanner-config.md).

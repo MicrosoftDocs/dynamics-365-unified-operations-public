@@ -6,14 +6,14 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 09/16/2025
+ms.date: 04/08/2026
 ms.custom:
   - bap-template
 ---
 
 # Check Wi-Fi connectivity and performance
 
-The network diagnostics tool in the Warehouse Management mobile app analyzes the most critical endpoints on your network to quickly identify connectivity problems. Use it as a first step when troubleshooting connection issues — it helps detect common problems such as unreachable networks, DNS resolution failures, and slow connections.
+The network diagnostics tool in the Warehouse Management mobile app analyzes the most critical endpoints on your network to quickly identify connectivity problems. Use it as a first step when troubleshooting connection issues. It helps detect common problems such as unreachable networks, DNS resolution failures, and slow connections.
 
 ## What the network diagnostics tool does
 
@@ -24,7 +24,7 @@ The tool runs a series of tests against key network endpoints and displays resul
 - **Connection speed** — The negotiated link speed with the Wi-Fi access point.
 - **Signal strength** — Helps identify if the device is too far from an access point or in an area with poor coverage.
 - **IP address** — Confirms the device received a valid IP address from the network.
-- **Download speed** — Measures actual data throughput, which may differ from the connection speed due to network congestion or interference.
+- **Download speed** — Measures actual data throughput, which might differ from the connection speed due to network congestion or interference.
 
 ## When to use network diagnostics
 
@@ -38,15 +38,16 @@ Run the diagnostics tool when you encounter any of the following issues:
 ## Run a network diagnostic test
 
 1. Open the Warehouse Management mobile app on the affected device.
-1. Navigate to the **Diagnostics** page:
-    - From the **Welcome** page: Select **Set up connection** (or select **Connect** and then **Set up connection**), then select **Diagnostics**.
-    - From the **Main menu**: Select **Connection settings**, then **Set up connection**, then **Diagnostics**.
+1. Open the **Diagnostics** page by using one of the following methods:
+    - From the **Welcome** page, select **Set up connection** (or select **Connect** and then **Set up connection**), and then select **Diagnostics**.
+    - From the **Main menu**, select **Connection settings**, then **Set up connection**, and then **Diagnostics**.
+
 1. Select **Analyze Wi-Fi**. The **Wi-Fi diagnostics** page opens and shows details about your current Wi-Fi connection.
 1. To run deeper analysis, select **Run network diagnostics**. The tool pings critical endpoints to test DNS resolution, reachability, and response times.
 
 ## Interpret the results
 
-Use the following guidance to identify common issues:
+Use the guidance provided in the following table to identify common issues:
 
 | Result | What it means | Recommended action |
 |---|---|---|

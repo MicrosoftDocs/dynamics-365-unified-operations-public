@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/26/2025
+ms.date: 04/08/2026
 ms.custom: 
   - bap-template
 ---
@@ -71,7 +71,7 @@ To enter a numerical value for a quantity field, follow these steps:
 
 To perform a calculation when entering a quantity, follow these steps:
 
-1. Enter the first number using the numeric keypad.
+1. Enter the first number by using the numeric keypad.
 1. Open the operator menu by long pressing the decimal point (**.**) key.
 1. Select your desired operator (addition (**&plus;**), subtraction (**&minus;**), multiplication (**&times;**), or division (**&divide;**)).
 1. Enter the second number.

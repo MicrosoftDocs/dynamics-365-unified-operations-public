@@ -4,7 +4,7 @@ description: Learn how to fix compatibility issues between the Warehouse Managem
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/31/2024
+ms.date: 04/08/2026
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -15,7 +15,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-On most mobile devices, the Warehouse Management mobile app can capture scanned bar code input directly out of the box. Therefore, you just have to install the app, set up the connection to Microsoft Dynamics 365 Supply Chain Management, and start to scan. However, some devices require advanced configuration before their bar code scanner hardware can interact correctly with the Warehouse Management app.
+On most mobile devices, the Warehouse Management mobile app can capture scanned bar code input right out of the box. Therefore, you just have to install the app, set up the connection to Microsoft Dynamics 365 Supply Chain Management, and start scanning. However, some devices require advanced configuration before their bar code scanner hardware can interact correctly with the Warehouse Management app.
 
 One common method for integrating scanning hardware with the Warehouse Management app is to configure your mobile device to provide *intent output* for bar code scanning. The bar code scanner can then submit scanned data directly to the Warehouse Management app. It doesn't have to send the data as simulated keystroke input instead. If you experience compatibility issues with your bar code scanner, you might be able to fix them by setting up your device to provide intent output.
 

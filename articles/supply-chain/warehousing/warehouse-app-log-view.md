@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 04/08/2026
 ms.custom:
   - bap-template
 ---
@@ -24,29 +24,31 @@ The app log captures events as they happen on the device, including:
 - Connection events and network activity
 - Errors and exceptions
 
-Logs are stored locally on the device and can be exported as a file for sharing with support.
+The app stores logs locally on the device. You can export the logs as a file to share with support.
 
 ## Open the Local log view page
 
 1. Open the Warehouse Management mobile app on the affected device.
-1. Navigate to the **Diagnostics** page:
-    - From the **Welcome** page: Select **Set up connection** (or select **Connect** and then **Set up connection**), then select **Diagnostics**.
-    - From the **Main menu**: Select **Connection settings**, then **Set up connection**, then **Diagnostics**.
+1. Open the **Diagnostics** page by using one of the following methods:
+    - From the **Welcome** page, select **Set up connection** (or select **Connect** and then **Set up connection**), and then select **Diagnostics**.
+    - From the **Main menu**, select **Connection settings**, then **Set up connection**, and then **Diagnostics**.
 1. Select **Local log view**.
 
     :::image type="content" source="media/wma-local-log-view.png" alt-text="Screenshot of the Local log view page." lightbox="media/wma-local-log-view.png":::
 
 ## Find and filter log entries
 
-- **Filter by time or type:** Select the filter button next to the **Search** field to narrow the log list by time range or issue type.
-- **Search:** Enter text in the **Search** field to find specific log entries (for example, an error message or connection event).
-- **View details:** Select a log entry to see its full details, including timestamp, type, and message.
+You can find specific log entries and details using any of the following options:
+
+- **Filter by time or type** – Select the filter button next to the **Search** field to narrow the log list by time range or issue type.
+- **Search** – Enter text in the **Search** field to find specific log entries, such as an error message or connection event.
+- **View details** – Select a log entry to see its full details, including timestamp, type, and message.
 
 ## Export and share logs
 
 You can export logs from the device in two ways:
 
-- **Save to local file:** Select the **Save** button next to the **Search** field. The app saves all log entries as a text file to the device's local storage.
-- **Share:** Use the device's share function to send the log file directly via email or other apps.
+- **Save to local file** – Select the **Save** button next to the **Search** field. The app saves all log entries as a text file to the device's local storage.
+- **Share** – Use the device's share function to send the log file directly via email or other apps.
 
-When contacting the Microsoft support team, export and attach the log file to your support request. This helps the team understand the sequence of events that led to the issue.
+When you contact the Microsoft support team, export and attach the log file to your support request. This log file helps the team understand the sequence of events that led to the issue.

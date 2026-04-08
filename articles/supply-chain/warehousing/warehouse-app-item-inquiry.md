@@ -6,17 +6,17 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/14/2025
+ms.date: 04/08/2026
 ms.custom: 
   - bap-template
 ---
 
 # Query item data on a mobile device
 
-*Item inquiry* mobile device menu items allow warehouse workers to view key inventory details for specific items, including location, available quantity, and reserved quantity. This feature improves visibility into warehouse stock and supports efficient decision-making during daily operations.
+*Item inquiry* mobile device menu items enable warehouse workers to view key inventory details for specific items, including location, available quantity, and reserved quantity. This feature improves visibility into warehouse stock and supports efficient decision-making during daily operations.
 
 > [!NOTE]
-> This functionality doesn't display batch numbers or serial IDs. If an item is a product variant, information is shown for the captured product dimensions (such as color or size).
+> This functionality doesn't display batch numbers or serial IDs. If an item is a product variant, the app shows information for the captured product dimensions, such as color or size.
 
 ## Key capabilities of the item inquiry feature
 
@@ -42,12 +42,12 @@ To enable this functionality, you must configure the mobile device menu item in 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new menu item:
-    - **Menu item name** – Enter an internal name for the menu item (for example, *Item inquiry*).
-    - **Title** – Enter the title for the menu item as workers should see it (for example, *Item inquiry*).
+    - **Menu item name** – Enter an internal name for the menu item, such as *Item inquiry*.
+    - **Title** – Enter the title for the menu item as workers should see it, such as *Item inquiry*.
     - **Mode** – Select *Indirect*.
 
 1. On the **General** FastTab, set the following values:
     - **Activity code** – Select *Item inquiry*.
     - **Use process guide** – This setting is automatically set to *Yes* and can't be changed.
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device menu** and add the new menu item to each menu where it should be available to workers. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device menu** and add the new menu item to each menu where workers should access it. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
