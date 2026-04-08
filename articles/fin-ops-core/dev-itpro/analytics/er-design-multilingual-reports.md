@@ -29,13 +29,13 @@ You can configure language-dependent resources as ER labels. You can then use th
 
 - At design time:
 
-    - Present the content of configured ER components in the user-preferred language.
+  - Present the content of configured ER components in the user-preferred language.
 
 - At runtime:
 
-    - Generate language-dependent content for outbound documents.
-    - Provide warning and error messages in the user-preferred language.
-    - Prompt for required fields in the user-preferred language.
+  - Generate language-dependent content for outbound documents.
+  - Provide warning and error messages in the user-preferred language.
+  - Prompt for required fields in the user-preferred language.
 
 ER labels can be configured in every ER [configuration](general-electronic-reporting.md#Configuration) that contains different components. The labels can be maintained independently of the configured logic of ER data models, ER model mappings, and ER format components.
 
@@ -246,11 +246,9 @@ To apply the selected storage schema for keeping labels of all ER configurations
 1. Go to **Organization administration** > **Periodic** > **Apply the selected labels storing schema for all ER configurations**.
 2. Select **OK**.
 
-
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Electronic Reporting functions](er-formula-language.md#Functions)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

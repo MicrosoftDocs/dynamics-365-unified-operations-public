@@ -4,7 +4,7 @@ description: Learn about how the LISTDISTINCT Electronic reporting (ER) function
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 07/30/2020
+ms.date: 04/08/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: IT Pro
