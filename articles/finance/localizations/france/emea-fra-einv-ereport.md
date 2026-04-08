@@ -440,7 +440,7 @@ Set up units of measure.
 After you complete the required configuration steps, generate and submit electronic invoices for posted invoices. Submission process consists of of 3 major steps. 
 
 - **Submission of e-invoices to Edicom** - at this stage, the system generates the XMLs of e-invoices and submit it to Edicom.
-- **Inquiring statuses of submited e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Falied** if the submited invoice is **Rejected** by Edicom due to various reasons or **Pending update status execution** if the submited invoice is successfully validated by Edicom and the system is ready for further processing.
+- **Inquiring statuses of submited e-invoices** - at this stage, the system inquires the initial status of submitted e-invoices from Edicom. The submission status can be **Falied** if the submited invoice is **Rejected** by Edicom due to various reasons or **Pending update actions execution** if the submited invoice is successfully validated by Edicom and the system is ready for further processing.
 - **Update statuses of submited e-invoices** - at this stage, D365 and Edicom can intercommunicate echanging differnet e-invoices statuses unitl the concluding status is reached or due to pre-configured timeout.
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
