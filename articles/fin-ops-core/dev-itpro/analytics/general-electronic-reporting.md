@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 08/22/2025
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: global
@@ -20,33 +20,33 @@ ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
+This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that are designed and released as part of the solution.
 
 ER is a configurable tool that helps you create and maintain regulatory electronic reporting and payments. It's based on the following three concepts:
 
 - Configuration instead of coding:
 
-    - Configuration can be done by a business user and doesn't require a developer.
-    - The data model is defined in business terms.
-    - Visual editors are used to create all components of the ER configuration.
-    - The language that is used for data transformation resembles the language that is used in Microsoft Excel.
+  - A business user can configure the solution without needing a developer.
+  - The data model is defined in business terms.
+  - You use visual editors to create all components of the ER configuration.
+  - The language used for data transformation resembles the language used in Microsoft Excel.
 
 - One configuration for multiple Dynamics 365 Finance releases:
 
-    - Manage one domain-specific data model that is defined in business terms.
-    - Isolate application release details in release-dependent data model mappings.
-    - Maintain one format configuration for multiple releases of the current version, based on the data model.
+  - You manage one domain-specific data model that's defined in business terms.
+  - You isolate application release details in release-dependent data model mappings.
+  - You maintain one format configuration for multiple releases of the current version, based on the data model.
 
 - Easy or automatic upgrade:
 
-    - Versioning of ER configurations is supported.
-    - The Dataverse can be used as a repository for ER configurations, for version exchange.
-    - Localizations that are based on original ER configurations can be introduced as child versions.
-    - An ER configuration tree is provided as a tool that helps control dependencies for versions.
-    - Differences in localization, or the delta configuration, are recorded to enable automatic upgrade to a new version of the original ER configuration.
-    - It's easy to manually resolve conflicts that are discovered during automatic upgrade of localization versions.
+  - The solution supports versioning of ER configurations.
+  - You can use the Dataverse as a repository for ER configurations, for version exchange.
+  - You can introduce localizations that are based on original ER configurations as child versions.
+  - An ER configuration tree is provided as a tool that helps control dependencies for versions.
+  - The solution records differences in localization, or the delta configuration, to enable automatic upgrade to a new version of the original ER configuration.
+  - You can easily manually resolve conflicts that are discovered during automatic upgrade of localization versions.
 
-ER lets you define electronic format structures and then describe how the structures should be filled by using data and algorithms. You can use a formula language that resembles the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, an intermediate data model concept is introduced. This concept enables implementation details to be hidden from the format mapping and enables a single data model to be reused for multiple format mappings.
+ER lets you define electronic format structures and then describe how the structures should be filled by using data and algorithms. You can use a formula language that resembles the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, the solution introduces an intermediate data model concept. This concept enables implementation details to be hidden from the format mapping and enables a single data model to be reused for multiple format mappings.
 
 You can use ER to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries and regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
 
@@ -58,9 +58,9 @@ ER currently supports the TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel,
 
 The ER engine has the following capabilities:
 
-- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for finance and operations.
-- It makes a report's format insulated from the current implementation. In other words, the format is applicable for different versions.
-- It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
+- It serves as a single shared tool for electronic reporting in different domains. It replaces more than 20 different engines that handle some type of electronic reporting for finance and operations.
+- It insulates a report's format from the current implementation. In other words, the format works for different versions.
+- It supports the creation of a custom format that's based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format changes due to localization or customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
 - It supports the ability to distribute formats to partners and customers through Dataverse.
 
@@ -68,7 +68,7 @@ The ER engine has the following capabilities:
 
 ### Main data flow
 
-[![ER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+[![ER main data flow](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
 ### Component
 
@@ -83,87 +83,87 @@ For more information, see [Electronic reporting components](er-overview-componen
 
 ### <a name="Configuration"></a>Configuration
 
-An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
+An ER configuration is the wrapper for a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. A specific configuration provider owns each configuration. You can edit the **Draft** version of a component of a configuration when you select the owner of the configuration as an active provider in the ER settings in the application.
 
-Each model configuration contains a data model component. A new format configuration can be derived from a specific data model configuration. In the configuration tree, the format configuration that is created appears as a child of the original data model configuration.
+Each model configuration contains a data model component. You can derive a new format configuration from a specific data model configuration. In the configuration tree, the format configuration that you create appears as a child of the original data model configuration.
 
-The format configuration that is created contains a format component. The data model component of the original model configuration is automatically inserted into the format component of the child format configuration as a default data source.
+The format configuration that you create contains a format component. The data model component of the original model configuration is automatically inserted into the format component of the child format configuration as a default data source.
 
-An ER configuration is shared for application companies.
+You share an ER configuration for application companies.
 
 ### <a name="Provider"></a>Provider
 
-The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the finance and operations solution are marked as owned by the **Microsoft** configuration provider.
+The ER provider is the party identifier that indicates the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the finance and operations solution are marked as owned by the **Microsoft** configuration provider.
 
-To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+To learn how to register a new ER provider, see the task guide **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### <a name="Repository"></a>Repository
 
-An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
+An ER repository stores ER configurations. The following types of ER repositories are currently supported:
 
 - File system
 - Operations resources
 - Dataverse
 
-A **File system** repository provides access to the list of configurations that are located as XML files in the specific folder of the local file system of the machine where the AOS service is hosted. The required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
+A **File system** repository provides access to the list of configurations that are located as XML files in the specific folder of the local file system of the machine where the AOS service is hosted. You select the required folder at the repository registration stage. You can import configurations from a **File system** repository into the current instance.
 
-Note that this repository type is accessible in the following environments:
+You can access this repository type in the following environments:
 
 - Cloud-hosted environments deployed for development purposes (containing test models of enclosed suites)
 - Locally deployed environments (on-premises)
 
 For more information, see [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md).
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the Dataverse by using the corresponding ER repository.
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. You can import these configurations into the current instance and use them for electronic reporting or playing sample task guides. You can also use them for additional localizations and customizations. You must import the latest versions provided by Microsoft ER configurations from the Dataverse by using the corresponding ER repository.
 
-A **Dataverse** repository provides access to the list of configurations that Microsoft, as an ER configuration provider. These configurations can be imported into the current instance and used for electronic reporting. Dataverse serves as the central source for configurations. You can import configurations from Dataverse into your Finance, and likewise, export configurations into Dataverse. For details, see [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
+A **Dataverse** repository provides access to the list of configurations that Microsoft, as an ER configuration provider. You can import these configurations into the current instance and use them for electronic reporting. Dataverse serves as the central source for configurations. You can import configurations from Dataverse into your Finance, and likewise, export configurations into Dataverse. For details, see [Import Electronic reporting (ER) configurations from Dataverse](/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse).
 
-Required repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
+Register required repositories individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
 ## Supported scenarios
 
 ### Building a data model
 
-ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. 
+ER provides a model designer that you can use to build a data model for a particular business domain. You can present all domain-specific business entities and the relations between them in a data model as a hierarchical structure.
 
 To become familiar with the details of this scenario, review the article, [Design domain specific data model](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### Translating data model content
 
-Data model content (labels and descriptions) can be translated into other languages that the applications support. You might want to translate data model content for the following reasons:
+You can translate data model content (labels and descriptions) into other languages that the applications support. Translate data model content for the following reasons:
 
-- At design time, to make the content more intelligible for format designers who speak other languages, and who will use the data model for data mapping of format components.
+- At design time, to make the content more intelligible for format designers who speak other languages and who use the data model for data mapping of format components.
 - At run time, to make the content more user-friendly by presenting prompts and help for run-time parameters, and configured validation messages (errors and warnings), in the language that the currently signed-in user prefers.
 
 ### Configuring data model mappings for outgoing documents
 
-ER provides a model mapping designer that lets users map data models that they have designed to specific application data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. 
+ER provides a model mapping designer that users can use to map data models they design to specific application data sources. Based on the mapping, the data imports at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents.
 
 To become familiar with the details of this scenario, review the articles, [Define ER model mappings and select data sources for them](tasks/er-define-model-mapping-select-data-sources-2016-11.md) and [Map data model to selected data sources](tasks/er-map-data-model-selected-data-sources-2016-11.md).
 
 ### Configuring data model mappings for incoming documents
 
-ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the updatable data components (tables, data entities, and views). Based on the mapping, the data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. 
+ER provides a model mapping designer that users can use to map data models they design to specific destinations. For example, you can map data models to the updatable data components (tables, data entities, and views). Based on the mapping, the data updates at run time by using the data from the data model. As abstract storage of the ER format, the data model fills with data that imports from an incoming electronic document.
 
 ### Storing a designed model component as a model configuration
 
-ER can store a designed data model, together with associated data mappings, as a model configuration of the current instance. 
+ER can store a designed data model, together with associated data mappings, as a model configuration of the current instance.
 
 To become familiar with the details of this scenario, review the article  [Map data model to selected data sources](tasks/er-map-data-model-selected-data-sources-2016-11.md).
 
 ### Building a format that uses a data model as a base
 
-ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain's data model mapping as a data source. 
+ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain's data model mapping as a data source.
 
 ### Building a configuration to generate electronic documents in OPENXML worksheet format
 
-The ER format designer can be used to build an electronic document in OPENXML worksheet format. 
+Use the ER format designer to build an electronic document in OPENXML worksheet format.
 
-To become familiar with the details of this scenario, review the [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md). As a part of importing a template, use the [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) Excel file as a template.
+To become familiar with the details of this scenario, review the [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md). As part of importing a template, use the [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) Excel file as a template.
 
 ### Building a configuration to generate electronic documents in a Word document format
 
-The ER format designer can be used to build an electronic document in a Word document format. This format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
+Use the ER format designer to build an electronic document in a Word document format. This format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
 
 To become familiar with the details of this scenario, review the article, [Design a new ER configuration to generate reports in Microsoft WORD format](er-design-configuration-word.md). As part of the task guide step for importing a template, use the following Word files as templates for the ER format:
 
@@ -172,7 +172,7 @@ To become familiar with the details of this scenario, review the article, [Desig
 
 ### Building a configuration to import data from incoming electronic documents
 
-The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. 
+Use the ER format designer to describe an electronic document that you plan to import data from in either XML or text format. The designed format is used to parse an incoming document. Use the ER format mapping designer to define the binding of the elements of the designed format to the data model.
 
 To become familiar with the details of this scenario, see [Create required configurations to import data from an external file](Create required configurations to import data from an external file.md). Use the following files to complete the steps in this article:
 
@@ -183,27 +183,27 @@ To become familiar with the details of this scenario, see [Create required confi
 
 ### Storing a designed format component in a format configuration
 
-ER can store a designed format together with the configured data mappings as a format configuration of the current instance. The preceding illustration shows an example of this type of format configuration (**BACS (UK)**, which is a child of the **Payment model** configuration). 
+Electronic Reporting (ER) can store a designed format together with the configured data mappings as a format configuration of the current instance. The preceding illustration shows an example of this type of format configuration (**BACS (UK)**, which is a child of the **Payment model** configuration).
 
-### Configuring Finance to start to use a created format internally
+### Configuring Finance to start using a created format internally
 
-The application can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment.
+You can configure the application to start using a created format to generate electronic reports. Define the reference to the created format configuration in the settings of a specific domain. For example, to start using an ER format configuration for electronic vendor payments in BACS format, reference the format configuration in specific methods of payment.
 
-To become familiar with the details of this scenario, see [Generate electronic documents for payments using a format configuration](tasks/er-electronic-payments.md).
+For more information, see [Generate electronic documents for payments using a format configuration](tasks/er-electronic-payments.md).
 
 ## Handling ER components
 
-### Building a format selecting another format as a base (customization)
+### Building a format by selecting another format as a base (customization)
 
-ER lets you create (derive) a new component from the current version of a component (base) that was imported from a repository. For example, a user wants to derive a new format to implement some special requirements for an electronic document (such as an additional field or an extensive description) to support a customization scenario. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
+ER lets you create (derive) a new component from the current version of a component (base) that you imported from a repository. For example, you might want to derive a new format to implement some special requirements for an electronic document, such as an additional field or an extensive description, to support a customization scenario. For more information, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
 
-### Upgrading a format selecting a new version of base format (rebase)
+### Upgrading a format by selecting a new version of base format (rebase)
 
-ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from Dataverse can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
+ER automatically adopts changes from the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that is introduced in the latest version of the format that you imported from Dataverse can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. The designer tool presents these conflicts for manual resolution. For more information, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
 
-## <a name="list-of-configurations"></a>List of ER configurations that have been released in Finance
+## <a name="list-of-configurations"></a>List of ER configurations that are released in Finance
 
-The list of ER configurations for Finance is constantly updated. Open the **Global repository** to review the list of ER configurations that are currently supported. On the **Discontinuation details** FastTab, you can review the information about configurations that have been discontinued or that are no longer being maintained. 
+The list of ER configurations for Finance is constantly updated. Open the **Global repository** to review the list of ER configurations that are currently supported. On the **Discontinuation details** FastTab, you can review the information about configurations that are discontinued or that are no longer maintained.
 
 ![Content of the Global repository on the Configuration repository page.](./media/er-overview-03.gif)
 
@@ -213,6 +213,4 @@ The list of ER configurations for Finance is constantly updated. Open the **Glob
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 - [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

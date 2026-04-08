@@ -4,7 +4,7 @@ description: Learn about how the FORMAT Electronic reporting (ER) function is us
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 12/12/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -60,13 +60,13 @@ In the Electronic reporting (ER) format that is designed to generate an electron
 
 - Label SYS70894, which has the following text:
 
-    - **For the EN-US language:** "Nothing to print"
-    - **For the DE language:** "Nichts zu drucken"
+  - **For the EN-US language:** "Nothing to print"
+  - **For the DE language:** "Nichts zu drucken"
 
 - Label SYS18389, which has the following text:
 
-    - **For the EN-US language:** "Customer %1 is stopped for %2."
-    - **For the DE language:** "Debitor '%1' wird für %2 gesperrt."
+  - **For the EN-US language:** "Customer %1 is stopped for %2."
+  - **For the DE language:** "Debitor '%1' wird für %2 gesperrt."
 
 Here is the expression that can be designed.
 
@@ -91,6 +91,5 @@ If the same report is processed for the **Litware Retail** customer on December 
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

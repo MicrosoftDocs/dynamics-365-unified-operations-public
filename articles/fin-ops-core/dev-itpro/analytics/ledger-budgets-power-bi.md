@@ -25,9 +25,11 @@ This article describes the **Actual vs budget** Microsoft Power BI content. It e
 The **Actual vs budget** Power BI content is designed for individuals who monitor actual versus budget performance in their organization. The **Actual vs budget** Power BI content provides visibility into your budget variances. You can analyze the budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.
 
 ## Accessing the Power BI content
+
 Reports from the **Actual vs budget** Power BI content appear in the **Ledger budget and forecasts** and **CFO** workspaces.
 
 ## Reports that are included in the Power BI content
+
 The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.
 
 | Report                      | Metrics                                                                             |
@@ -49,6 +51,5 @@ The following table provides details about the metrics that are found on each re
 | Ledgers                   | Ledgers that you can use to filter the report to the current ledger              |
 | Budget Codes              | Budget codes to filter reports by                                                |
 | Legal Entities            | Legal entities that you can use to filter the report to the current legal entity |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
