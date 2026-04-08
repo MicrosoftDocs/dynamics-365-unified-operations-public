@@ -4,7 +4,7 @@ description: Learn about how to embed canvas apps from Microsoft Power Apps into
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 12/27/2024
+ms.date: 03/26/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2018-02-28
@@ -41,24 +41,24 @@ When you configure your embedded canvas app, you can select a single field that 
 The following procedure shows how to embed a canvas app on an existing page from Power Apps.
 
 1. Go to the page where you want to embed the canvas app. This page contains any data that must be passed to the app as input.
-2. Open the **Add an app from Power Apps** pane:
+1. Open the **Add an app from Power Apps** pane:
 
     - If the app will be embedded directly on the page, select **Options** \> **Personalize this page** \> **More**. Select **Add a page**, and then select the region on the page where you want to add the app. To embed the app into the **Power Apps** menu button, on the Action Pane select **Power Apps**. To embed the app directly on the page, select the appropriate tab, FastTab, blade, or section (if you're on a workspace). Then, in the **Add an app** pane, select **Power Apps**.
     - If the app will be accessed by using the **Power Apps** menu button, you can select the **Power Apps** menu button on the standard Action Pane and then select **Add an app**.
 
-3. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
-4. After you confirm that the configuration is correct, select **Insert**. Remember to save the view for the change to be persisted if you're adding the app to a page that supports views. 
+1. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
+1. After you confirm that the configuration is correct, select **Insert**. Remember to save the view for the change to be persisted if you're adding the app to a page that supports views.  
 
 ### Embedding a canvas app as a full-page experience from the dashboard
 
 You might want to embed a canvas app from the dashboard if the app isn't related to an existing page, or if you just want to surface the app as a full-page experience inside the finance and operations app.
 
 1. Open the dashboard.
-2. Select and hold (or right-click) the page, select **Personalize**, and then select **Add a page**.
-3. In the **Add a page** pane, select **Power Apps**.
-4. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
-5. Select **Save** to add the app to the dashboard as a new tile.
-6. Select the new tile on the dashboard, and confirm that the canvas app appears as expected.
+1. Select and hold (or right-click) the page, select **Personalize**, and then select **Add a page**.
+1. In the **Add a page** pane, select **Power Apps**.
+1. Configure the embedded app. For more information, see the [Configuring a canvas app](#configuring-a-canvas-app) section later in this article.
+1. Select **Save** to add the app to the dashboard as a new tile.
+1. Select the new tile on the dashboard, and confirm that the canvas app appears as expected.
 
 ### Configuring a canvas app
 
@@ -79,7 +79,7 @@ After you embed a canvas app on a page and confirmed that it's working correctly
 To share an embedded canvas app, follow these steps:
 
 1. [Share the canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app) with the appropriate users, so that they can access the app directly in Power Apps.
-2. Share the personalizations that are associated with the embedded app with the desired users. You can use either of the following approaches:
+1. Share the personalizations that are associated with the embedded app with the desired users. You can use either of the following approaches:
 
     - **Publish the view (Recommended):** For pages that support views, the recommended and preferred approach is to create a view that includes the embedded canvas app, and then publish that view to the desired users. This approach ensures that all users who have the security roles that are targeted by the published view see the canvas app on the page.
 
@@ -120,8 +120,8 @@ Follow these steps to edit the configuration of an embedded app:
     - If the embedded app appears directly on the page, select **Options**, and then select **Personalize this page**. Using the **Select** tool, click the embedded app.
     - If the embedded app was added from the dashboard, open the dashboard, select and hold (or right-click) the tile that is associated with the canvas app, select **Personalize**, and then select **Edit page**.
 
-2. Make the needed modifications to the app configuration, and then click **Save**.
-3. Resave or republish the view. If you leave the page without explicitly saving the view, none of the actions that you performed in the **Edit website** pane are maintained. This step isn't needed for pages that don't support views.  
+1. Make the needed modifications to the app configuration, and then click **Save**.
+1. Resave or republish the view. If you leave the page without explicitly saving the view, none of the actions that you performed in the **Edit website** pane are maintained. This step isn't needed for pages that don't support views.  
    
 ## Removing an app
 

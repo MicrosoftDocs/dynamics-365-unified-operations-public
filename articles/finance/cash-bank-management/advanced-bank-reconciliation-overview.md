@@ -4,7 +4,7 @@ description: Learn about the flow for the advanced bank reconciliation process, 
 author: EricWangChen
 ms.author: wangchen
 ms.topic: overview
-ms.date: 1/16/2024
+ms.date: 4/01/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -27,11 +27,11 @@ The advanced bank reconciliation feature lets you import bank statements. The im
 
     - Import bank statements through the data entity framework.
     - Three typical bank statement formats are built in: ISO20022, BAI2, and MT940.
-    - The functionality can be extended to any format.
+    - You can extend the functionality to any format.
 
 1. Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.
 
-    - A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 Finance bank transaction lines during the reconciliation process. Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.
+    - A reconciliation matching rule is a set of criteria that filter bank statement lines and Microsoft Dynamics 365 Finance bank transaction lines during the reconciliation process. Depending on your business practice, set up more than one matching rule to automate and optimize your reconciliation process.
 
 1. Reconcile bank statements with Finance bank transactions.
 
@@ -40,8 +40,8 @@ The advanced bank reconciliation feature lets you import bank statements. The im
     - Automatically post Finance bank transactions if they appear on a bank statement but don't appear in the Finance app.
     - Generate a reconciliation statement.
 
-The **Modern bank reconciliation** feature enhances the capabilities in advanced bank reconciliation. **Modern bank reconciliation**, the objects and code that this feature introduces are subject to change. To help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables won't be customized.
-> 
+The **Modern bank reconciliation** feature enhances the capabilities in advanced bank reconciliation. **Modern bank reconciliation**, the objects and code that this feature introduces, are subject to change. To help provide a better functional experience and address feedback from users, breaking changes might be introduced. The expectation is that the following classes, forms, and tables aren't customized.
+>
 > **Classes:**
 >
 > - BankReconciliationHeaderReconcileDP

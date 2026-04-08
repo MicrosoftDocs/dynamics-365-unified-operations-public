@@ -4,6 +4,8 @@ description: Learn how to configure the Warehouse Management mobile app to conne
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
+ms.custom:
+  - bap-template
 ms.date: 11/10/2025
 ms.reviewer: johnmichalak
 ms.search.region: Global

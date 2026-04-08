@@ -4,7 +4,7 @@ description: Learn about how to update Visual Studio development tools to new ve
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 07/18/2017
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -19,9 +19,9 @@ ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 
 This article explains how to update the development tools.
 
-Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics 365 Lifecycle Services site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package.
+Use this tutorial to update your Visual Studio development tools to a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension comes as an installable VSIX file. This file is part of the binary hotfix available on the Dynamics 365 Lifecycle Services site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package.
 
-While working in Visual Studio, you might receive recurring feedback requests regarding new features.
+While working in Visual Studio, you might receive recurring feedback requests about new features.
 
 To prevent the feedback requests from appearing in Visual Studio, run the following PowerShell command from a developer’s machine:
 
@@ -30,13 +30,13 @@ Set-ItemProperty HKCU:\Software\Microsoft\Dynamics\AX7\Development\Configuration
 ```
 
 > [!NOTE]
-> You do not need to follow the instructions in this article if you are upgrading your finance and operations platform to Platform update 4 or newer. It is an automatic step that is part of the platform upgrade process.
+> You don't need to follow the instructions in this article if you're upgrading your finance and operations platform to Platform update 4 or newer. It's an automatic step that's part of the platform upgrade process.
 
 ## Prerequisites
 
-To enable the use of finance and operations apps development tools, the **Visual Studio extension development** workload must be installed in your Visual Studio with the **Modeling SDK** option included.
+To use the finance and operations apps development tools, install the **Visual Studio extension development** workload in your Visual Studio, and include the **Modeling SDK** option.
 
-If the workload isn't installed, follow these steps to add it.
+If you don't have the workload installed, follow these steps to add it.
 
 1. Open your Visual Studio Installer app and select **Modify** on your Visual Studio installed app.
 
@@ -51,28 +51,25 @@ If the workload isn't installed, follow these steps to add it.
 1. Select **Modify** to add the workload.
 
 ## Uninstall the existing Visual Studio extension
-In order to install a new version of the development tools, you'll need to uninstall the existing version first. Verify the version of the development tools that you have installed. If you don't have it installed, you can skip this section.
+
+To install a new version of the development tools, you need to uninstall the existing version first. Verify the version of the development tools that you have installed. If you don't have it installed, you can skip this section.
 
 ### Verify your current version of the Visual Studio extension
 
-1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **finance and operations Developer Tools**.
-2.  Select it and click **OK**.
+1. Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **finance and operations Developer Tools**.
+1. Select it and click **OK**.
 
 ### Uninstall the extension
 
-1.  Open the Visual Studio **Tools &gt; Extensions and Updates** dialog.
-2.  Select **finance and operations Visual Studio Tools** and click **Uninstall**.
-3.  When the extension is uninstalled, exit Visual Studio.
+1. Open the Visual Studio **Tools &gt; Extensions and Updates** dialog.
+1. Select **finance and operations Visual Studio Tools** and click **Uninstall**.
+1. When the extension is uninstalled, exit Visual Studio.
 
 ## Install a new version of the extension
-1.  Make sure Visual Studio is not running.
-2.  Double-click (or right-click and **Open**) the VSIX file of the new version.
-3.  Follow the installation instructions.
-4.  When installation is complete, you can start Visual Studio and start developing your application.
 
-
-
-
-
+1. Make sure Visual Studio isn't running.
+1. Double-click (or right-click and **Open**) the VSIX file of the new version.
+1. Follow the installation instructions.
+1. When installation is complete, start Visual Studio and start developing your application.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

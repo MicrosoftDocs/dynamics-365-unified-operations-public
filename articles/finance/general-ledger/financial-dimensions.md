@@ -4,7 +4,7 @@ description: Learn about the various types of financial dimensions and tags and 
 author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 01/30/2026
+ms.date: 03/06/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,15 +20,15 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
-Use financial dimensions to further categorize financial transactions. Financial dimension values become segments within the ledger account and you can use them for further analysis, such as generating a profit and loss financial statement by a dimension or a trial balance by dimension.  
+Use financial dimensions to further categorize financial transactions. Financial dimension values become segments within the ledger account. Use them for further analysis, such as generating a profit and loss financial statement by a dimension or a trial balance by dimension.  
 
-Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). Also, explore the differences between the two in the document Differences between financial tags and financial dimensions.  
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). To understand the differences between the two, see Differences between financial tags and financial dimensions.  
 
 This article explains the various types of financial dimensions and how to set them up.
 
 ## Create financial dimensions
 
-Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions.
+Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. Two types of financial dimensions exist: custom dimensions and entity-backed dimensions.
 
 ### Financial dimension naming requirements
 
@@ -72,7 +72,7 @@ A dimension value is then created for each project name. The **Financial dimensi
 
 ### Financial dimension values
 
-After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
+After you create a financial dimension, use the **Financial dimension values** page to create, view, or assign additional properties to each financial dimension value.  
 
 For a custom financial dimension, use this page to create and edit dimension values. You can only enter or edit the **Dimension value** and **Description** fields for custom dimensions.  
 
@@ -95,7 +95,7 @@ Use the **Text translation** page to translate the following text into various l
 - **Financial dimension value description** from **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**. Select custom financial dimension > **Dimension values** > **Translations**.
 - **Main account name** from **General ledger** > **Chart of accounts** > **Accounts** > **Main accounts** > **Name translations**.
 
-When you enter your financial dimension name and financial dimension value description, the system assumes you enter those values in the system language. You can see the system language in the Default language code shown on the **Text translation** page.  
+When you enter your financial dimension name and financial dimension value description, enter those values in the system language. You can see the system language in the Default language code shown on the **Text translation** page.  
 
 > [!IMPORTANT]
 > Translated text is only used when the user language is different from the system language. The system is designed this way to increase performance.  
@@ -167,9 +167,9 @@ Here are some of the limitations:
 
 ## Default dimension values
 
-You can use values from master records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, you enter the master record ID in the dimension values for those master records. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
+Use values from primary records, such as customer and vendor, as default values in new dimensions. When you create the new dimensions, enter the primary record ID in the dimension values for those primary records. For example, when you create a new customer, enter the customer ID in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules add the customer ID to the document.
 
-A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
+A setting in the dimension controls this feature. This setting is named **Copy values to this dimension on each new [DimensionName] created**, where **[DimensionName]** is the name of the dimension. By default, the feature is turned off. However, you can turn it on at any time.
 
 If records already exist for the dimension, turning on the feature updates the master records. However, existing documents and transactions aren't updated.
 
@@ -177,12 +177,34 @@ If you're using a template to create a master record, make sure that the templat
 
 > [!NOTE]
 > You can intentionally default a dimension value to blank by assigning a fixed dimension value of blank on a main account (via *Legal entity overrides*).  
-> 
-> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension’s fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+>
+> If you don't intend for a blank dimension value to be defaulted, ensure that the dimension's fixed value is set to **Not fixed**, or provide a valid fixed value that complies with the account structure.
+
+### Supported entities for copy values on create
+
+The **Copy values to this dimension on each new [DimensionName] created** toggle is only available for entity-backed dimensions that you configure to support this feature. The toggle appears disabled (greyed out) on the dimension details form for dimensions that don't support it.
+
+The following entity-backed dimensions support copy values on create out of the box:
+
+- Asset
+- Bank account
+- Customer group
+- Customer
+- Position
+- Worker
+- Item
+- Project invoice
+- Project
+- Retail channel
+- Retail store
+- Retail terminal
+- Vendor
+
+Custom dimensions and entity-backed dimensions that aren't in this list don't support this feature by default. To enable copy values on create for a custom or unsupported entity-backed dimension, a developer must configure the dimension to support it. For more information, see [Enable copy values on create for financial dimensions](../../fin-ops-core/dev-itpro/financial/enable-copy-values-dimension-on-create.md).
 
 ## Derived dimensions
 
-You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
+You can configure a dimension so that when you enter it in a document, it automatically fills in information for other dimensions. For example, if you enter cost center 10, the system automatically fills in the department dimension with **20**.
 
 Set up derived values on the dimensions page.
 
@@ -206,7 +228,7 @@ Enter the dimension combinations that you want to derive from the dimension in t
 >If you need to use a company-specific dimension, you can create a shared custom table that includes the company-specific values. For more information, see [Make backing tables consumable as financial dimensions](../../fin-ops-core/dev-itpro/financial/dimensionable-entities.md).
 
 > [!IMPORTANT]
-> When you rename an entity that is used as the basis for a driving dimension in derived dimensions, the dimension values in the derived dimension configurations are automatically updated to reflect the new entity name.
+> When you rename an entity that you use as the basis for a driving dimension in derived dimensions, the system automatically updates the dimension values in the derived dimension configurations to reflect the new entity name.
 
 ### Overriding existing values with derived dimensions
 

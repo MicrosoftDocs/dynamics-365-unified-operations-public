@@ -5,7 +5,8 @@ author: pnghub
 ms.author: twheeloc
 ms.topic: how-to
 ms.date: 01/14/2026
-ms.custom:
+ms.custom: 
+  - bap-template
 ms.reviewer: twheeloc
 ---
 
@@ -46,3 +47,5 @@ These two jobs work together:
 
 - The **Job history cleanup batch** job removes execution records that are older than the configured retention period.
 - The **Automatic background cleanup** job removes all staging data and ancillary job data associated with those executions.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

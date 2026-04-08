@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.assetid: 6ab0f75d-3168-4dfe-b2ce-d17d3861216e
 ms.search.region: Global
@@ -18,22 +18,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
+This article describes the Dimension Expression Builder subpattern, which you apply to container controls that use the Dimension Expression Builder control.  
 
 ## Usage
 
-The Dimension Expression Builder pattern is used when you have a group or tab page that uses the Dimension Expression Builder control.
+Use the Dimension Expression Builder pattern when you have a group or tab page that uses the Dimension Expression Builder control.
 
 ## Wireframe
 
-[![Wireframe for container.](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
+:::image type="content" source="media/dimensionexpressionbuilderwireframe.png" alt-text="Screenshot of wireframe for container." lightbox="./media/dimensionexpressionbuilderwireframe.png":::
 
 ## Model
+
 ### High-level structure
 
 TabPage | Group
 
-*TopFieldGroup (Group) \[Optional\]* – **Note:** A field subpattern is used.
+*TopFieldGroup (Group) \[Optional\]* – **Note:** Use a field subpattern.
 
 *DEBGroup (Group) \[0..N\]*
 
@@ -43,18 +44,21 @@ Dimension Expression Builder
 
 ### Core components
 
--   Apply the Dimension Expression Builder subpattern to the TabPage or Group control.
+- Apply the Dimension Expression Builder subpattern to the TabPage or Group control.
 
 ## UX guidelines
+
 None
 
 ## Examples
-Form: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**Budgeting** &gt; **Setup** &gt; **Budget control** &gt; **Budget control configuration**) [![Example of form.](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
+
+Form: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**Budgeting** &gt; **Setup** &gt; **Budget control** &gt; **Budget control configuration**) :::image type="content" source="media/dimensionexpressionbuilderexample.png" alt-text="Screenshot of example of form." lightbox="./media/dimensionexpressionbuilderexample.png":::
 
 ## Appendix
+
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
+This section contains answers to frequently asked questions that are related to this guideline or pattern.
 
 ### Open issues
 

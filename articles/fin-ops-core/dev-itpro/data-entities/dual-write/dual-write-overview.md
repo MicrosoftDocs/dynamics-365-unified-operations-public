@@ -4,13 +4,16 @@ description: Learn about dual-write, which provides near-real-time interaction b
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: overview
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.date: 01/15/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
 ms.search.validFrom: 2020-01-06
-ms.custom: evergreen
+
 ---
 
 # Dual-write overview

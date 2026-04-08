@@ -4,6 +4,8 @@ description: Learn how to make Entity store available as a Microsoft Azure Data 
 author: MilindaV2
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

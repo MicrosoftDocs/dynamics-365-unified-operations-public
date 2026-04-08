@@ -4,6 +4,8 @@ description: Learn how to migrate Prospect to Cash data from Data Integrator to 
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

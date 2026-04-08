@@ -4,6 +4,8 @@ description: Learn about how to view party data by using the Party page, includi
 author: RamaKrishnamoorthy 
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer
@@ -29,8 +31,6 @@ After you create a party, use the tabs on the **Party** page to manage it.
 
 The **Customers** tab lets you create and manage one or more customers from the party for different companies. If the party type is **Person**, you can create and manage customers of the **Person** type. These customers are known as *contacts*. If the party type is **Organization**, you can create and manage customers of the **Organization** type. These customers are known as *accounts*.
 
-![Creating a customer for a party in the Quick Create: Account dialog box.](media/ViewParty_Image2.PNG)
-
 :::image type="content" source="media/ViewParty_Image2.PNG" alt-text="Screenshot of creating a customer for a party in the Quick Create: Account dialog box.":::
 
 The **Vendors** tab resembles the **Customers** tab, but you use it to create vendors of the **Person** or **Organization** type.
@@ -39,21 +39,15 @@ The **Vendors** tab resembles the **Customers** tab, but you use it to create ve
 
 Use the **Postal Addresses** tab to create and manage one or more postal addresses for the party. You can create as many postal addresses as the party requires. These addresses appear on the quotation and sales order pages.
 
-![Example of a party's postal addresses.](media/ViewParty_Image3.PNG)
-
 :::image type="content" source="media/ViewParty_Image3.PNG" alt-text="Screenshot of a party's postal addresses.":::
 
 Use the **Electronic Addresses** tab to create and manage one or more electronic addresses for the party. You can create as many electronic addresses as the party requires.
-
-![Creating an electronic address for a party in the Quick Create: Party Electronic Address dialog box.](media/ViewParty_Image4.PNG)
 
 :::image type="content" source="media/ViewParty_Image4.PNG" alt-text="Screenshot of creating an electronic address for a party in the Quick Create: Party Electronic Address dialog box.":::
 
 ## Associated Contacts tab
 
 Use the **Associated Contacts** tab to create contact persons (**Contact for party** records) and associate them with the party.
-
-![Creating an associated contact for a party in the Quick Create: Contact for Customer or Vendor dialog box.](media/ViewParty_Image5.PNG)
 
 :::image type="content" source="media/ViewParty_Image5.PNG" alt-text="Screenshot of creating an associated contact for a party in the Quick Create: Contact for Customer or Vendor dialog box.":::
 

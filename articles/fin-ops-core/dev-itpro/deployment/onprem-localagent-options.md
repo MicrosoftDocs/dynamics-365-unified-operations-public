@@ -15,6 +15,8 @@ ms.service: dynamics-365-op
 
 # Deployment configurations for the local agent
 
+[!include [banner](../includes/banner.md)]
+
 This article explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 
 There's a section in the localagent-config.json file that is labeled deploymentOptions. This can be modified before installing the local agent.
