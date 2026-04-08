@@ -53,17 +53,7 @@ The following Sweden-specific POS features are available when you set the **ISO 
 
 ### Integration of Retail POS with control units
 
-
-   # [Retail 10.0.6 and earlier](#tab/retail-10-0-6)
-
-  For more information about the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see [Sample for POS integration with control units for Sweden (legacy)](../dev-itpro/retail-sdk-control-unit-sample.md#overview-of-integration-with-control-units). 
-
-
-   # [Retail 10.0.7 and later](#tab/retail-10-0-7)
-
-  For more information about the control unit integration sample, see [Control unit integration sample for Sweden](../dev-itpro/emea-swe-fi-sample.md).
-
----
+For more information about the control unit integration sample, see [Control unit integration sample for Sweden](../dev-itpro/emea-swe-fi-sample.md).
 
 ## Setting up Commerce for Sweden
 
@@ -139,12 +129,6 @@ Specify the following general settings for Sweden.
 
 ### Control unit–specific settings
 
-   # [Retail 10.0.6 and earlier](#tab/retail-10-0-6)
-
-  For more information about setting up and configuring the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see [Sample for POS integration with control units for Sweden (legacy)](../dev-itpro/retail-sdk-control-unit-sample.md#setting-up-integration-with-control-units). 
-
-   # [Retail 10.0.7 and later](#tab/retail-10-0-7)
-
-  For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](../dev-itpro/emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
+For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](../dev-itpro/emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

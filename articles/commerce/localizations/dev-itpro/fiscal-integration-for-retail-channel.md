@@ -172,10 +172,4 @@ The fiscal integration framework also implements the following fiscal integratio
 
 - [Digital signature for France](../france/emea-fra-cash-registers.md)
 
-The following legacy fiscal integration functionality is available in the Commerce SDK. This functionality doesn't use the fiscal integration framework and will be deprecated in later updates:
-
-- [Control unit integration sample for Sweden (legacy)](retail-sdk-control-unit-sample.md)
-- [Digital signature for France (legacy)](../france/emea-fra-deployment.md)
-- [Digital signature for Norway (legacy)](emea-nor-loc-deployment-guidelines.md)
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

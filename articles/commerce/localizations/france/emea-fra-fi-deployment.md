@@ -20,9 +20,6 @@ ms.custom:
 
 This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](emea-fra-cash-registers.md#set-up-commerce-for-france).
 
-> [!NOTE]
-> This version of the Commerce cash register functionality for France is based on the [fiscal integration framework](../dev-itpro/fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](emea-fra-deployment.md). For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](emea-fra-fi-migration.md).
-
 ## Development environment
 
 Follow these steps to set up a development environment so that you can test and extend the localization functionality.

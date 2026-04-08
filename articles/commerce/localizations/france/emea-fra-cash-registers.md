@@ -572,9 +572,6 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](emea-fra-fi-deployment.md).
 
-> [!NOTE]
-> This version of the Commerce functionality for France is based on the [Fiscal integration framework](../dev-itpro/fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](emea-fra-deployment.md). For guidance about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](emea-fra-fi-migration.md).
-
 ### Enable the digital signature in offline mode
 
 To enable the digital signature in offline mode, you must follow these steps after you activate POS on a new device.

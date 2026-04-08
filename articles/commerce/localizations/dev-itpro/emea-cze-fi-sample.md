@@ -177,9 +177,6 @@ For more information about how to work with receipt formats, see [Set up and des
 
 The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
 
-> [!NOTE]
-> The fiscal registration service integration sample for the Czech Republic is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal integration sample for the Czech Republic (legacy)](emea-cze-fi-sample-sdk.md).
-
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
 1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also, make a note of the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
@@ -250,8 +247,7 @@ The fiscal connector configuration includes the following settings as part of th
 ### Configure channel components
 
 > [!NOTE]
-> - The fiscal registration service integration sample for the Czech Republic is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for the Czech Republic (legacy)](emea-cze-fi-sample-sdk.md).
-> - Commerce samples that are deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
+> Commerce samples that are deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
 
 #### Set up the development environment
 
@@ -310,9 +306,6 @@ Follow the steps in [Set up a build pipeline for a fiscal integration sample](..
 ## Design of extensions
 
 The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../../dev-itpro/build-pipeline.md).
-
-> [!NOTE]
-> The fiscal registration service integration sample for the Czech Republic is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for the Czech Republic (legacy)](emea-cze-fi-sample-sdk.md).
 
 ### Commerce runtime extension design
 
