@@ -51,8 +51,8 @@ The following conditions can cause activation to fail or time out:
 
 ## Additional resources
 
-[Define financial dimensions](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
+[Define financial dimensions](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions)
 
-[Maintenance mode](../sysadmin/maintenance-mode.md)
+[Maintenance mode](/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

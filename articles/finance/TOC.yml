@@ -1140,6 +1140,8 @@
                           href: general-ledger/tasks/create-account-structures.md
                         - name: Configure account structures
                           href: general-ledger/configure-account-structures.md
+                        - name: Account structure best practices
+                          href: general-ledger/account-structure-best-practices.md
                         - name: Account structure activation performance enhancement
                           href: general-ledger/account-structure-improvement.md
                         - name: Create and assign advanced rule structures

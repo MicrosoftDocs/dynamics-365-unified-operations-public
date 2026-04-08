@@ -19,11 +19,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Dynamics 365 Finance and Operations version 8.1 (October 2018)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!include [banner](/dynamics365/finance/includes/banner)]
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
 
-To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
+To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](/dynamics365/commerce/get-started/whats-new).
 
 ### Announcing the Dynamics 365 October '18 release notes
 
@@ -35,7 +35,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 You can use shared number sequences to assign customer IDs or vendor IDs. Shared number sequences also let you copy customers or vendors from one legal entity to another legal entity but use the same IDs in both legal entities.
 
-For additional details, see [Copy customers by using shared number sequences](../../../finance/accounts-receivable/copy-customer.md) and [Copy vendors by using shared number sequences](../../../finance/accounts-payable/vendor-copy.md).
+For additional details, see [Copy customers by using shared number sequences](/dynamics365/finance/accounts-receivable/copy-customer) and [Copy vendors by using shared number sequences](/dynamics365/finance/accounts-payable/vendor-copy).
 
 ## Customer transactions list page
 
@@ -47,7 +47,7 @@ The filter for showing open transactions has been replaced with a new filter tha
 
 You can also update due dates and discount dates for open customer transactions, and you can add due dates to the **Customer transactions** list page.
 
-For more information, see [Customer transaction list page](../../../finance/accounts-receivable/customer-transactions-list-page.md).
+For more information, see [Customer transaction list page](/dynamics365/finance/accounts-receivable/customer-transactions-list-page).
 
 ## Vendor transaction list page
 
@@ -59,7 +59,7 @@ The filter for showing open transactions has been replaced with a new filter tha
 
 You can also update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can add due dates to the **Vendor transaction** list page.
 
-For more information, see [Vendor transaction list page](../../../finance/accounts-payable/vendor-transaction-list-page.md).
+For more information, see [Vendor transaction list page](/dynamics365/finance/accounts-payable/vendor-transaction-list-page).
 
 ## Financial dimensions
 
@@ -69,29 +69,29 @@ You can configure a dimension so that information for other dimensions is automa
 
 You can set up the derived dimensions segments and values by using entities.
 
-For more information, see [Configure default dimensions](../../../finance/general-ledger/configure-default-dimensions.md) and [Derived dimensions](../../../finance/general-ledger/derived-dimensions.md).
+For more information, see [Configure default dimensions](/dynamics365/finance/general-ledger/configure-default-dimensions) and [Derived dimensions](/dynamics365/finance/general-ledger/derived-dimensions).
 
 ## Dual currency
 
 Reporting currency can now be repurposed and used as a second accounting currency. This functionality is referred to as dual currency. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 
-For more information, see [Dual currency](../../../finance/general-ledger/dual-currency.md).
+For more information, see [Dual currency](/dynamics365/finance/general-ledger/dual-currency).
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1](../extensibility/extensibility-changes-81.md)
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1](/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-changes-81)
 
 ## Phantom items
 
 The Phantom line type can be used for the lines of a bill of materials (BOM) and multilevel BOM structures. Phantom BOMs can also be used for a BOM that has a route network.
 
-For more information, see [Phantom items](../../../supply-chain/production-control/phantom-items.md).
+For more information, see [Phantom items](/dynamics365/supply-chain/production-control/phantom-items).
 
 ## Russian localization
 
 Dynamics 365 Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP.
 
-For more information, see [Russia](../../../finance/localizations/russia/russia.md).
+For more information, see [Russia](/dynamics365/finance/localizations/russia/russia).
 
 ## VAT reporting for the United Arab Emirates
 

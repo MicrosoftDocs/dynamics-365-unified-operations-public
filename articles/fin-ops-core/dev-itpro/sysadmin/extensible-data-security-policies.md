@@ -60,7 +60,7 @@ XDS isn't supported for financial dimensions and using XDS with financial dimens
 
 A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy. If a user is assigned with the role  *XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access are purely role-based. Temporarily configuring **XDSDataAccessPolicyBypassRole** can be useful for determining if a user's inability to see or modify data is due to XDS policies. 
 
-For example, [Create a simple security policy](create-simple-security-policy.md).
+For example, [Create a simple security policy](/dynamics365/fin-ops-core/dev-itpro/sysadmin/create-simple-security-policy).
 
 Assume an XDS policy is created with Query **XDSQCustGroup10** and is assigned to a role, for example, role **X**. When a **User1** is assigned with the role **X**, **User1** can see the **Customer group:10** in the **All customers** page. If **User1** is assigned to the **XDSDataAccessPolicyBypassRole** role,  along with role **X**, then the filter isn't applied because the XDS policy is bypassed because of the role **XDSDataAccessPolicyBypassRole**. **User1** is able to see all the groups.
 
@@ -68,7 +68,7 @@ Assume an XDS policy is created with Query **XDSQCustGroup10** and is assigned t
 
 For information about how to debug policies and create more advanced policies, including chaining of restricted tables, table relations based on expressions, and much more, see the following resources:
 
-- [Create a simple security policy](create-simple-security-policy.md)
+- [Create a simple security policy](/dynamics365/fin-ops-core/dev-itpro/sysadmin/create-simple-security-policy)
 
 - [Developing Extensible Data Security Policies (white paper) [AX 2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper)
 

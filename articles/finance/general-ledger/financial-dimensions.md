@@ -22,9 +22,9 @@ ms.dyn365.ops.version: 8.1
 
 Use financial dimensions to further categorize financial transactions. Financial dimension values become segments within the ledger account. Use them for further analysis, such as generating a profit and loss financial statement by a dimension or a trial balance by dimension.  
 
-Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md). To understand the differences between the two, see Differences between financial tags and financial dimensions.  
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](/dynamics365/finance/general-ledger/financial-tag). To understand the differences between the two, see Differences between financial tags and financial dimensions.  
 
-This article explains the various types of financial dimensions and their key properties. For step-by-step creation instructions, see [Define financial dimensions](tasks/define-financial-dimensions.md).
+This article explains the various types of financial dimensions and their key properties. For step-by-step creation instructions, see [Define financial dimensions](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions).
 
 ## Financial dimension types
 
@@ -43,7 +43,7 @@ A dimension value is then created for each project name. The **Financial dimensi
 
 Entity-backed dimension values aren't available in the dimension framework until the value has been used in a transaction, posting profile, journal, or similar context. A record that exists in the source entity (for example, a new customer) won't appear as a selectable dimension value until it has been referenced in one of these areas.
 
-If you want to rename or delete dimension values from entity-backed dimensions, do this from the source entity rather than from the **Financial dimension values** page. For more information, see [Modifying and deleting financial dimensions](modifying-deleting-financial-dimensions.md).
+If you want to rename or delete dimension values from entity-backed dimensions, do this from the source entity rather than from the **Financial dimension values** page. For more information, see [Modifying and deleting financial dimensions](/dynamics365/finance/general-ledger/modifying-deleting-financial-dimensions).
 
 ## Financial dimension values
 
@@ -53,7 +53,7 @@ For a custom financial dimension, use this page to create and edit dimension val
 
 For an entity-backed financial dimension, you can't create dimension values from the **Financial dimension values** page. You also can't edit the dimension value and descriptions from within the page. For example, let's say you created the Project financial dimension previously described. On the **Financial dimension values** page, you can't edit the project **Dimension value** or **Description**. This information is taken directly from the project setup. If a new project value is necessary, you must create it from the **Project** page.
 
-To validate whether a ledger account or default dimension combination is structurally valid, use the **Dimension data validation** page. For more information, see [Dimension data validation](financial-dimension-data-validation.md).
+To validate whether a ledger account or default dimension combination is structurally valid, use the **Dimension data validation** page. For more information, see [Dimension data validation](/dynamics365/finance/general-ledger/financial-dimension-data-validation).
 
 ## Legal entity overrides
 
@@ -85,11 +85,11 @@ Here are some of the limitations:
 
 You can access the Financial dimension service add-in in your Microsoft Dynamics Lifecycle Services environment. It provides improved performance when you use the Data management framework to import a journal that has a large number of lines. To use the service, you must enable it on the **Financial dimension service parameters** page. Currently, the service works only on imported journals. In addition, it can currently process only general journals where the **Ledger** account type is set on the journal lines. Other account types on journal lines, such as **Customer**, **Vendor**, and **Bank**, aren't currently supported. This service isn't invoked when derived dimensions are set up in the system.
 
-The Financial dimension service provides improved performance when you import journals by using a new service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries. For more information about summary reporting of financial dimension data, see [Financial dimension sets](financial-dimension-sets.md).
+The Financial dimension service provides improved performance when you import journals by using a new service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries. For more information about summary reporting of financial dimension data, see [Financial dimension sets](/dynamics365/finance/general-ledger/financial-dimension-sets).
 
 For more information, see the following topics:
 
-- [Define financial dimensions](tasks/define-financial-dimensions.md)
-- [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
+- [Define financial dimensions](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions)
+- [Maintain financial dimension default templates](/dynamics365/finance/general-ledger/tasks/maintain-financial-dimension-default-templates)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

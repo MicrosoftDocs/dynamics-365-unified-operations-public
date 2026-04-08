@@ -37,7 +37,7 @@ The *Data Maintenance Portal* is a tool that system administrators use to schedu
 To access the Data Maintenance Portal, administrators go to **System administration > Periodic tasks > Data maintenance**. On this page, administrators can see the list of available actions and the latest status of each action. Important information about the action appears in the right panel. If you can schedule the action, a **Schedule** button appears at the bottom of the page. You can run all actions on demand by selecting the **Run now** button. You can't disable or enable system actions defined by Microsoft.
 
 > [!NOTE]
-> The process automation framework handles the recurrence of data maintenance processes as background processes. Two main types of background processes exist: one for scanning for opportunities and one for running tasks. For more information, see [Process automation framework development](../process-automation/process-automation-framework.md).
+> The process automation framework handles the recurrence of data maintenance processes as background processes. Two main types of background processes exist: one for scanning for opportunities and one for running tasks. For more information, see [Process automation framework development](/dynamics365/fin-ops-core/dev-itpro/process-automation/process-automation-framework).
 
 ## Pausing data maintenance actions when in maintenance mode
 

@@ -34,12 +34,12 @@ Consider these factors when you plan the structure of the chart of accounts for 
 - The reporting requirements of your legal entity
 - The degree of specification that is required, both for external organizations and for your organization
 
-Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports. For more information, see [Create a main account](tasks/create-main-account.md).
+Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports. For more information, see [Create a main account](/dynamics365/finance/general-ledger/tasks/create-main-account).
 
 > [!IMPORTANT]
 > Don't use the chart of accounts delimiter character in main account numbers, financial dimension names, or dimension values. For details and best practices, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).
 
-You create account structures on the **Configure account structures** page. For more information, see [Create account structures](tasks/create-account-structures.md).
+You create account structures on the **Configure account structures** page. For more information, see [Create account structures](/dynamics365/finance/general-ledger/tasks/create-account-structures).
 
 ## Change the segment delimiter
 
@@ -69,7 +69,7 @@ If rescheduling the delimiter **Dimension value rename and modify chart of accou
 
 For more information, see the following topics:
 
-- [Financial dimensions](financial-dimensions.md)
-- [Create and assign advanced rule structures](tasks/create-assign-advanced-rule-structures.md)
+- [Financial dimensions](/dynamics365/finance/general-ledger/financial-dimensions)
+- [Create and assign advanced rule structures](/dynamics365/finance/general-ledger/tasks/create-assign-advanced-rule-structures)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
