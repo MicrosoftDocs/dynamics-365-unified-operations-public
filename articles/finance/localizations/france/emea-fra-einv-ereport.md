@@ -98,7 +98,7 @@ After you complete all the configuration steps described in the previous chapter
 > If some of the configurations aren't imported, import them manually as described in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!IMPORTANT]
-> Make sure that the and **Vendor invoice Mapping to destination** and **Response message model mapping to destination** Electronic Reporting configurations are marked as **Default for model mapping**.
+> Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination** Electronic Reporting configurations are marked as **Default for model mapping**.
     
 ## Configure the electronic invoicing features
 
