@@ -71,9 +71,9 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
 
-## Mix and match transactions are not supported in Saudi Arabia
+### Mix and match transactions are not supported in Saudi Arabia
 
-A transaction cannot include both Sales and Return lines together. All lines in a transaction must be of the same type. The functionality profile setting **Prohibit mixing sales and returns** can be used to block the behavior.
+A transaction cannot include both sales and return lines together. All lines in a transaction must be of the same type. You must enable the **Prohibit mixing sales and returns in one receipt** setting in the POS functionality profile to enforce this requirement. To enable it, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, select the functionality profile that is linked to the store, and on the **Functions** FastTab, select the **Prohibit mixing sales and returns in one receipt** check box.
 
 
 ### Enable features for Saudi Arabia
