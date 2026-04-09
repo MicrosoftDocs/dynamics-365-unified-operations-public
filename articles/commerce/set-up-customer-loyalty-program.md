@@ -70,6 +70,22 @@ The following table describes the processes that must run to send the loyalty co
 | Post earned loyalty points in batches | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Post earned points in batches** check box is selected on the **Commerce shared parameters** page, so rewards can be earned offline. | Post earned loyalty points in batches |
 | Update loyalty card tiers            | Run this process to evaluate the customer's earning activity against the tier rules for a loyalty program, and to update the customer's tier status. This process is required only if you change the tier rules in loyalty programs and want the updated rules to be retroactively applied to loyalty cards that are already issued. You can run this process as a batch process or for individual cards. | Update loyalty card tiers |
 
+### Operational considerations for updating loyalty card tiers
+
+For large retail deployments with high volumes of loyalty cards and transaction history, the Update loyalty card tiers batch job can be resource‑intensive.
+When the job runs in batch mode, it evaluates historical earning activity for loyalty cards against tier rules. At scale, this evaluation can place significant load on batch processing capacity and underlying database resources.
+To help maintain system stability and predictable performance, Microsoft recommends the following operational practices:
+- Schedule the Update loyalty card tiers batch job during off‑peak processing windows, such as outside of store close, financial posting, or e‑commerce peak activity periods.
+- Avoid running the job concurrently with other resource‑intensive batch jobs, including (but not limited to):
+  - Financial postings
+  - Retail statement processing
+  - Large data‑sync or recalculation jobs
+For very large customer bases, consider:
+- Running the job less frequently, only when tier rules change
+- Executing the job for specific loyalty cards or programs instead of the entire population, where operationally feasible
+
+Failure to properly schedule this job in high‑scale environments may result in batch capacity contention, delayed processing, or batch job failures.
+
 ## Loyalty capabilities
 
 - When retailers use the price groups associated with the loyalty program and loyalty tiers, they can easily create special prices and discounts for loyalty members.
