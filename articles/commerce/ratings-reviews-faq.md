@@ -2,7 +2,7 @@
 title: Ratings and reviews FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 author: gvrmohanreddy
-ms.date: 01/28/2026
+ms.date: 04/09/2026
 ms.topic: faq
 ms.reviewer: v-griffinc
 ms.search.region: Global
