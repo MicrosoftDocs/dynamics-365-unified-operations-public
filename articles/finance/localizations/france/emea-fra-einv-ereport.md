@@ -453,7 +453,7 @@ After you complete the required configuration steps, generate and submit electro
 
 ### Electronic invoicing scope
 
-The following types of documents will be excluded from **E-invoicing** individual submission and will be included into the scope of **E-reporting**. For more information, refer to ZZZZZZZZZZZZZZZ [E-reporting doc](ZZZZZZZZZZ.md) ZZZZZZZZZZZ
+The following types of documents will be excluded from **E-invoicing** individual submission and will be included into the scope of **E-reporting**. 
 
 - **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
 - **All Business-to-Consumer (B2C) invoices** - the invoices originated from retail transactions.
