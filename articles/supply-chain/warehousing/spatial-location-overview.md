@@ -6,7 +6,7 @@ ms.author: ismailjad
 ms.reviewer: kamaybac
 ms.search.form: InventLocation, WMSLocation
 ms.topic: conceptual
-ms.date: 03/31/2026
+ms.date: 04/24/2026
 ms.custom:
   - bap-template
 ---
@@ -14,6 +14,7 @@ ms.custom:
 # Warehouse spatial location overview (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: preview until further notice -->
 
 The *warehouse spatial location* feature lets you assign X, Y, and Z coordinates to warehouse locations. The system uses these coordinates to calculate optimized picking routes that minimize the travel distance required for warehouse workers to move between locations during pick work. When you use this feature, the *Sort picking work lines* wave processing step reorders the pick work lines within a work record so that workers follow an efficient route through the warehouse. The step uses the assigned coordinates, your selected distance calculation strategy, and your selected sorting algorithm to determine the optimal order.
 
