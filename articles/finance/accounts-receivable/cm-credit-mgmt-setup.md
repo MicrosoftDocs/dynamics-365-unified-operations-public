@@ -38,6 +38,7 @@ There are four FastTabs in the **Credit** section where you can change the param
 - In Warehouse management, loads can be created at the time of sales order entry. Set the **Remove blocked load lines** option to **No** to leave sales order lines on the load when a sales order is on credit hold. The load can't be processed while the sales order is on hold. Set the option to **Yes** to remove sales order lines from the load when a sales order is on credit hold. The load can then be processed.
 - Sales orders can be automatically released from credit management review. In the **Reason to release automatically** field, select the release reason that will be used by default when sales orders are automatically released.
 - Sales orders can be automatically released from credit management review. In the **Automatically release** field, select **Without posting** to release the hold on an order. You must manually run the process that put the order on hold. Select **With posting** to post the order by using the same posting process that was run when the sales order was put on hold.
+- Set the **Skip the credit limit check when canceling a packing slip journal** option to No if you want to skip a re-credit limit check when a packaging slip needs to be cancelled.
 
 ### Credit management checkpoint
 
