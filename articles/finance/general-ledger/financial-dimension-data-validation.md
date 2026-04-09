@@ -4,7 +4,7 @@ description: Learn how to validate journal entries and dimension data in Dynamic
 author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 03/23/2026
+ms.date: 04/09/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,13 +17,13 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../includes/banner.md)]
 
-Before you post a journal, you can check your entries for errors. You can validate journal lines from the Action Pane, or check the data integrity of a specific dimension combination by using the **Dimension data validation** page.
+Before you post a journal, check your entries for errors. You can validate journal lines from the Action Pane, or check the data integrity of a specific dimension combination by using the **Dimension data validation** page.
 
 ## Validate journal lines
 
 You can validate entries directly from any journal. From the journal, select **Lines** on the Action Pane to open the journal lines. Then, on the Action Pane, select the **Validate** dropdown to access the following options:
 
-- **Validate** – Checks all journal lines for errors such as missing accounts, invalid dimension combinations, or amounts that don't balance. Any issues are displayed as messages so you can correct them before posting.
+- **Validate** – Checks all journal lines for errors such as missing accounts, invalid dimension combinations, or amounts that don't balance. The system displays any problems as messages so you can correct them before posting.
 - **Validate voucher only** – Checks only the voucher-level rules, such as whether the voucher balances by currency, without running the full set of line-level checks.
 - **Simulate posting** – Runs the full posting process without actually creating any accounting entries. Use this option to see exactly what would be posted, including generated distributions, so you can verify the results before committing.
 
@@ -33,11 +33,11 @@ You can validate entries directly from any journal. From the journal, select **L
 
 The **Dimension data validation** page checks whether a ledger account or default dimension combination is structurally valid. The page shows an **Is valid** result, and you can select **Detailed results** to see each individual check that was performed.
 
-There are two ways to open this page.
+You can open this page in two ways.
 
 ### Right-click on a journal line
 
-The quickest way to validate a dimension combination is to right-click the **Account** field on a journal line and select **Validate data integrity**. This opens the **Dimension data validation** page with the record ID automatically filled in, so you can run the check without leaving the journal.
+The quickest way to validate a dimension combination is to right-click the **Account** field on a journal line and select **Validate data integrity**. This action opens the **Dimension data validation** page with the record ID automatically filled in, so you can run the check without leaving the journal.
 
 [![Validate data integrity option shown on right-click of the Account field on a journal line.](./media/validate-data-integrity-ui-right-click.png)](./media/validate-data-integrity-ui-right-click.png)
 
