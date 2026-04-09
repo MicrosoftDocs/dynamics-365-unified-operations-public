@@ -25,24 +25,23 @@ Default dimensions are preset financial dimension values that the system automat
 
 This article explains how default and fixed dimension values work on main accounts and how dimensions are applied during posting. For information about how account structures, advanced rules, and balancing dimensions define valid combinations of main accounts and dimension values, see [Financial dimensions](/dynamics365/finance/general-ledger/financial-dimensions).
 
-
 ## Enter default dimensions
 
-More than 250 pages, including master records such as customer, vendor, and item records, let you enter default financial dimensions. These dimensions are shown on a **Financial dimensions** FastTab that lists them together with values and descriptions. The following **Financial dimensions** FastTab shows five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project.
+You can enter default financial dimensions on more than 250 pages, including master records such as customer, vendor, and item records. These dimensions appear on a **Financial dimensions** FastTab that lists them together with values and descriptions. The following **Financial dimensions** FastTab shows five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project.
 
 ![Screenshot of Financial dimensions FastTab.](./media/DefaultDimensionEntry.png)
 
-The dimensions that are available for defaulting are determined by your company's ledger configuration. Default dimensions include all dimensions defined in the account structures associated with the current company's ledger, along with any active advanced rules for those structures. 
+Your company's ledger configuration determines which dimensions you can default. Default dimensions include all dimensions defined in the account structures associated with the current company's ledger, along with any active advanced rules for those structures.
 
 For more information about how the system determines which dimensions are available, see [Default financial dimensions](/dynamics365/fin-ops-core/dev-itpro/financial/dimension-defaulting).
 
 ## Default and fixed financial dimensions on the main account
 
-You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
+You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but you can overwrite that value. This behavior applies to all default values in the system, even default values that come from master records. If you set a financial dimension to a **Fixed** value, the system always applies that value, regardless of whether it came from somewhere as a default value or the user entered it.
 
 ## Copy default dimension values from master records
 
-In addition to fixed and default dimensions on main accounts, you can configure dimensions to automatically copy values from master records such as customers and vendors. When a dimension value is copied, it becomes the default on documents that reference that master record. For example, when you create a new customer, the customer ID is entered in the customer dimension. When you then create sales orders or invoices for that customer, the system defaults the customer ID into the customer dimension on the document.
+In addition to fixed and default dimensions on main accounts, you can configure dimensions to automatically copy values from master records such as customers and vendors. When you copy a dimension value, it becomes the default on documents that reference that master record. For example, when you create a new customer, you enter the customer ID in the customer dimension. When you then create sales orders or invoices for that customer, the system defaults the customer ID into the customer dimension on the document.
 
 ### Enable the setting
 
