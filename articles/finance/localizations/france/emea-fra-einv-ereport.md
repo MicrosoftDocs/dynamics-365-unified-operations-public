@@ -53,7 +53,7 @@ Before you start, make sure these prerequisites are in place:
    - **Establishment and Registration ID governance on invoices** (*if your scenarios assume multiple Registration IDs for Sellers and/or Buyers, such as SIREN, SIRET, VAT ID and Branch ID as an electronic address*).
   
   And **disable** the following feature.
-   - **Simultaneous globalization features completion and deployment** (*to activate the **Application setup** copying*).
+   - **Simultaneous globalization features completion and deployment** (*to activate the possibility of the **Application setup** copying*).
     
 ## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
@@ -236,7 +236,7 @@ Optinally, to configure the Tax exempt number, follow these steps.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **VAT ID**.
 
-### <a id="VAT"></a>Set up Branch ID 
+### <a id="Branch"></a>Set up Branch ID 
 
 If configured, Branch IDs will be used as electronic addresses for documents routing. To configure the Branch ID, follow these steps.
 
@@ -247,6 +247,9 @@ If configured, Branch IDs will be used as electronic addresses for documents rou
 1. Create a registration category.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **Branch ID**.
+
+> [!NOTE]
+> ZZZZZZZZZZZZZZZZZZZZZZZ if not Branch then properties.
 
 ### ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 
@@ -300,6 +303,8 @@ To enter the registration numbers, follow these steps.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [SIREN](#SIREN) registration type that you created earlier.
 1. Select **Add**, and in the **Registration type** field, select the [SIRET](#SIRET) registration type that you created earlier.
+1. Select **Add** to create another registration ID, if necessary.
+1. In the **Registration number** field, enter a valid [Branch ID](#Branch) for the specific address of the selected customer.
 1. Select **Add** to create another registration ID, if necessary.
 1. In the **Registration number** field, enter a valid [VAT](#VAT) number for the selected customer.
 
