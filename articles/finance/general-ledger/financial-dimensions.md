@@ -4,7 +4,7 @@ description: Learn about the various types of financial dimensions and tags and 
 author: anaborges02
 ms.author: aolson
 ms.topic: article
-ms.date: 03/06/2026
+ms.date: 04/09/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -32,18 +32,18 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 
 ### Custom dimensions
 
-A custom dimension is a financial dimension that reflects your organization's specific business needs — for example, an internal cost center classification, fleet identifier, or expense purpose. Unlike entity-backed dimensions, custom dimension values don't come from an existing table in the system — you create and maintain the available values manually on the **Financial dimension values** page. In addition, custom dimensions are always shared across legal entities. 
+A custom dimension is a financial dimension that reflects your organization's specific business needs - for example, an internal cost center classification, fleet identifier, or expense purpose. Unlike entity-backed dimensions, you create and maintain custom dimension values manually on the **Financial dimension values** page. In addition, custom dimensions are always shared across legal entities.
 
 ### Entity-backed dimensions
 
 An entity-backed financial dimension is based on a system-defined entity that you select in the **Use values from** field. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific. Dimensions that are company-specific (also known as company-striped dimensions) are only visible when accessed as a user from the associated company.
 
-For example, to create dimension values for projects, select **Projects**. This allows any value from the project table to be used as a dimension value directly.
-A dimension value is then created for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
+For example, to create dimension values for projects, select **Projects**. This selection allows any value from the project table to be used as a dimension value directly.
+You create a dimension value for each project name. The **Financial dimension values** page shows the values for the entity. If those values are company-specific, the page also shows the company.
 
-Entity-backed dimension values aren't available in the dimension framework until the value has been used in a transaction, posting profile, journal, or similar context. A record that exists in the source entity (for example, a new customer) won't appear as a selectable dimension value until it has been referenced in one of these areas.
+Entity-backed dimension values aren't available in the dimension framework until you use the value in a transaction, posting profile, journal, or similar context. A record that exists in the source entity (for example, a new customer) doesn't appear as a selectable dimension value until it's referenced in one of these areas.
 
-If you want to rename or delete dimension values from entity-backed dimensions, do this from the source entity rather than from the **Financial dimension values** page. For more information, see [Modifying and deleting financial dimensions](/dynamics365/finance/general-ledger/modifying-deleting-financial-dimensions).
+If you want to rename or delete dimension values from entity-backed dimensions, make these changes from the source entity rather than from the **Financial dimension values** page. For more information, see [Modifying and deleting financial dimensions](/dynamics365/finance/general-ledger/modifying-deleting-financial-dimensions).
 
 ## Financial dimension values
 
