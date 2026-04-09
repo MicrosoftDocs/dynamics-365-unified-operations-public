@@ -2,7 +2,7 @@
 title: Ratings and reviews overview
 description: Learn about ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 01/28/2026
+ms.date: 04/09/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.search.region: Global
