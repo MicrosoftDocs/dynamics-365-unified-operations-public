@@ -26,7 +26,7 @@ Use the **Text translation** page to translate the following text into various l
 - **Financial dimension value description** from **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimensions**. Select custom financial dimension > **Dimension values** > **Translations**.
 - **Main account name** from **General ledger** > **Chart of accounts** > **Accounts** > **Main accounts** > **Name translations**.
 
-When you enter your financial dimension name and financial dimension value description, the system assumes you enter those values in the system language. You can see the system language in the Default language code shown on the **Text translation** page.
+When you enter your financial dimension name and financial dimension value description, enter those values in the system language. You can see the system language in the Default language code shown on the **Text translation** page.
 
 > [!IMPORTANT]
 > Translated text is only used when the user language is different from the system language. The system is designed this way to increase performance.
@@ -38,24 +38,24 @@ If you don't enter the values in the system language, you might not get the expe
 The system uses the following logic to determine which name or description to display for a financial dimension, dimension value, or main account:
 
 1. **If the user's language matches the system language**, the system displays the default value from the main record. No translation lookup is performed.
-2. **If the user's language differs from the system language**, the system looks for a translation record that matches the user's language.
-   - If a translation exists for the user's language, the translated text is displayed.
+1. **If the user's language differs from the system language**, the system looks for a translation record that matches the user's language.
+   - If a translation exists for the user's language, the system displays the translated text.
    - If no translation exists for the user's language, the system falls back to the default value from the main record.
 
-The system doesn't attempt to find translations in any other languages. There's no fallback chain — the only options are the user's specific language translation or the default value.
+The system doesn't attempt to find translations in any other languages. There's no fallback chain - the only options are the user's specific language translation or the default value.
 
-This translation logic applies consistently to all entities that can be used as financial dimension values, including main accounts, items, and custom financial dimensions, as well as the financial dimension name itself.
+This translation logic applies consistently to all entities that you can use as financial dimension values, including main accounts, items, and custom financial dimensions, as well as the financial dimension name itself.
 
 ## Best practices for translations
 
-- Enter all default names and descriptions in the system language. This ensures that users whose language matches the system language see the correct values.
+- Enter all default names and descriptions in the system language. This approach ensures that users whose language matches the system language see the correct values.
 - Create translation records for every language that users in your organization need. If a translation is missing, the user sees the default value instead.
 - If a user reports seeing the wrong language for dimension names or values, verify that a translation record exists for their language and that their user language settings are correct.
 
 ## Example
 
 The system language is set to "es" (Spanish).
-A new financial dimension is created. You enter the dimension name in English, not Spanish: "Ownership."
+You create a new financial dimension and enter the dimension name in English, not Spanish: "Ownership."
 
 - You can define the name in a non-system language, but it's not recommended.
 You create two translations for the "Ownership" dimension name:
