@@ -25,48 +25,48 @@ You can use the [Electronic reporting (ER)](general-electronic-reporting.md) fra
 
 - [Data model](#data-model-group)
 
-    - [Data model](#data-model)
-    - [Enumeration](#model-enumeration)
-    - [Enumeration user input parameter](#model-enumeration-user-input-parameter)
-    - [Lookup](#model-enumeration-lookup)
+  - [Data model](#data-model)
+  - [Enumeration](#model-enumeration)
+  - [Enumeration user input parameter](#model-enumeration-user-input-parameter)
+  - [Lookup](#model-enumeration-lookup)
 
 - [Dynamics 365 application (Finance)](#dynamics-365-finance-group)
 
-    - [Class](#class)
-    - [Enumeration](#enumeration)
-    - [Lookup](#lookup)
-    - [Number sequence](#number-sequence)
-    - [Object](#object)
-    - [Table](#table)
-    - [Table records](#table-records)
+  - [Class](#class)
+  - [Enumeration](#enumeration)
+  - [Lookup](#lookup)
+  - [Number sequence](#number-sequence)
+  - [Object](#object)
+  - [Table](#table)
+  - [Table records](#table-records)
 
 - [Format](#format-group)
 
-    - [Export format](#export-format)
-    - [Import format](#import-format)
+  - [Export format](#export-format)
+  - [Import format](#import-format)
 
 - [Format enumeration](#format-enumeration-group)
 
-    - [Enumeration](#format-enumeration)
-    - [Enumeration user input parameter](#format-enumeration-user-input-parameter)
-    - [Lookup](#format-enumeration-lookup)
+  - [Enumeration](#format-enumeration)
+  - [Enumeration user input parameter](#format-enumeration-user-input-parameter)
+  - [Lookup](#format-enumeration-lookup)
 
 - [Functions](#functions-group)
 
-    - [Barcode](#barcode)
-    - [Calculated field](#calculated-field)
-    - [Data collection](#data-collection)
-    - [Financial dimensions details](#financial-dimensions-details)
-    - [Group by](#group-by)
-    - [Inventory dimensions details](#inventory-dimensions-details)
-    - [Join](#join)
-    - [Table metadata](#table-metadata)
+  - [Barcode](#barcode)
+  - [Calculated field](#calculated-field)
+  - [Data collection](#data-collection)
+  - [Financial dimensions details](#financial-dimensions-details)
+  - [Group by](#group-by)
+  - [Inventory dimensions details](#inventory-dimensions-details)
+  - [Join](#join)
+  - [Table metadata](#table-metadata)
 
 - [General](#general-group)
 
-    - [Empty container](#empty-container)
-    - [Endless list](#endless-list)
-    - [User input parameter](#user-input-parameter)
+  - [Empty container](#empty-container)
+  - [Endless list](#endless-list)
+  - [User input parameter](#user-input-parameter)
 
 This article provides a summary of the ER data source types.
 
@@ -223,7 +223,7 @@ For more information, see [Use USER INPUT PARAMETER data sources to specify para
 
 ### <a name="model-enumeration-lookup"></a>Model enumeration lookup
 
-Use the **Model enumeration lookup** data source to configure an ER data source of the *Lookup* type that returns the values of an ER data model enumeration. 
+Use the **Model enumeration lookup** data source to configure an ER data source of the *Lookup* type that returns the values of an ER data model enumeration.
 
 > [!NOTE]
 > You can only configure the **Model enumeration lookup** data source for an ER format component.
@@ -278,7 +278,7 @@ The mandatory **Format enumeration** property of the **Format enumeration user i
 Set the **Allow multiple selection**, **Read only**, **Default value**, and **Always reset to default value** properties as described earlier for the *[Model enumeration user input parameter](#model-enumeration-user-input-parameter)* data source type.
 
 > [!TIP]
-> If you leave the **Label** or **Help** property blank for a data source of the *Format enumeration user input parameter* type, the appropriate property of the referenced format enumeration is used, if it's configured. 
+> If you leave the **Label** or **Help** property blank for a data source of the *Format enumeration user input parameter* type, the appropriate property of the referenced format enumeration is used, if it's configured.
 
 The following illustration shows an ER expression that's configured to enable an ER format element, depending on the result of comparison of values of data sources of the *Format enumeration user input parameter* and *Format enumeration* types.
 
@@ -286,7 +286,7 @@ The following illustration shows an ER expression that's configured to enable an
 
 ### <a name="format-enumeration-lookup"></a>Format enumeration lookup
 
-Use the **Format enumeration lookup** data source to configure an ER data source of the *Lookup* type to return the values of an ER format enumeration. 
+Use the **Format enumeration lookup** data source to configure an ER data source of the *Lookup* type to return the values of an ER format enumeration.
 
 Configure a data source of the *Format enumeration lookup* type to filter data in an ER format so that it's based on a set of abstract rules. You can then specify real rules outside the ER component designers by using the UI that's automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. When you run this ER format, the specified rules are accessed by the ER format's **Lookup** data source.
 
@@ -344,7 +344,7 @@ The following illustration shows the properties for a data source of the *Applic
 
 ### <a name="lookup"></a>Application enumeration lookup
 
-Use the **Application enumeration lookup** data source to configure an ER data source of the *Lookup* type to return the values of an application enumeration. 
+Use the **Application enumeration lookup** data source to configure an ER data source of the *Lookup* type to return the values of an application enumeration.
 
 Configure a data source of the *Application enumeration lookup* type to filter data in an ER format so that it's based on a set of abstract rules. You can then specify real rules outside the ER component designers by using the UI that's automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data. When you run this ER format, the specified rules are accessed by the ER format's **Lookup** data source.
 
@@ -431,31 +431,31 @@ Use the **Edit visibility** function for the *[Model enumeration user input para
 
 ### <a name="barcode"></a>Barcode
 
-Use a data source of the *Barcode* type to generate an image that represents the bar code for specified text. 
+Use a data source of the *Barcode* type to generate an image that represents the bar code for specified text.
 
 The mandatory **Barcode format** property of the **Barcode** data source specifies the bar code type. The following bar code formats are currently supported:
 
 - One-dimensional bar codes:
 
-    - Codabar
-    - Code 39
-    - Code 93
-    - Code 128
-    - EAN-8
-    - EAN-13
-    - ITF-14
-    - Intelligent Mail
-    - MSI
-    - Plessey
-    - PDF417
-    - UPC-A
-    - UPC-E
+  - Codabar
+  - Code 39
+  - Code 93
+  - Code 128
+  - EAN-8
+  - EAN-13
+  - ITF-14
+  - Intelligent Mail
+  - MSI
+  - Plessey
+  - PDF417
+  - UPC-A
+  - UPC-E
 
 - Two-dimensional bar codes:
 
-    - Aztec
-    - Data Matrix
-    - QR Code
+  - Aztec
+  - Data Matrix
+  - QR Code
 
 The optional **Width** property specifies the bar code's width in pixels. A value of **0** (zero) indicates that the default width is used. The meaning can vary for different formats.
 
@@ -546,20 +546,20 @@ When you configure a data source of the *Table record* type that references an a
 
 - The **Definition** record lets you access financial dimension metadata.
 
-    - The **Name** field exposes the name of a financial dimension.
-    - The **Report column name** field exposes the report alias of a financial dimension.
-    - The **Translated name** field exposes the name of a financial dimension in the language that's specified by the [language context](er-design-multilingual-reports.md#language) of the ER solution that's running.
+  - The **Name** field exposes the name of a financial dimension.
+  - The **Report column name** field exposes the report alias of a financial dimension.
+  - The **Translated name** field exposes the name of a financial dimension in the language that's specified by the [language context](er-design-multilingual-reports.md#language) of the ER solution that's running.
 
 - The **Value** record lets you access a financial dimension value.
 
-    - The **Code** field returns a financial dimension code.
-    - The **Description** field returns a financial dimension name.
+  - The **Code** field returns a financial dimension code.
+  - The **Description** field returns a financial dimension name.
 
 The following illustration shows a field of the *Financial dimensions* type of the **Table record** data source that you can use to access default financial dimensions for every record in the **CustInvoiceJour** application table.
 
 :::image type="content" source="./media/er-data-sources-ds-fin-dim-mapping1.png" alt-text="Screenshot of the configured data source of the Table record type on the Model mapping designer page.":::
 
-Use the **Financial dimensions details** data source in the configured ER component to specify how the scope of financial dimensions is defined for any report that uses this component when a data consumer accesses a field of the *Financial dimensions* type. If you don't configure the **Financial dimensions details** data source in the editable ER component, the report uses all financial dimensions of the current application instance. 
+Use the **Financial dimensions details** data source in the configured ER component to specify how the scope of financial dimensions is defined for any report that uses this component when a data consumer accesses a field of the *Financial dimensions* type. If you don't configure the **Financial dimensions details** data source in the editable ER component, the report uses all financial dimensions of the current application instance.
 
 Set the **Ask for dimensions** option of the configured **Financial dimensions details** data source to **Yes** to let the user select dimensions in the dialog box at runtime. If you set the option to **No**, the report uses all financial dimensions of the current application instance by default.
 
@@ -588,13 +588,13 @@ When you configure a data source of the *Table record* type that references an a
 
 - The **Definition** record lets you access inventory dimension metadata.
 
-    - The **Code** field exposes the code of an inventory dimension.
-    - The **Name** field exposes the name of an inventory dimension.
+  - The **Code** field exposes the code of an inventory dimension.
+  - The **Name** field exposes the name of an inventory dimension.
 
 - The **Value** record lets you access an inventory dimension value.
 
-    - The **Code** field returns an inventory dimension code.
-    - The **Description** field returns an inventory dimension name.
+  - The **Code** field returns an inventory dimension code.
+  - The **Description** field returns an inventory dimension name.
 
 The following illustration shows a field of the *Inventory dimensions* type of the **Table record** data source that you can use to access several sets of inventory dimensions for every record in the **InventTrans** application table.
 
@@ -720,10 +720,10 @@ The configured data source of the *Table metadata* type returns a single record 
 - **Remark** returns the description of the appropriate data source.
 - **Fields** returns the list of fields of the current data source.
 
-    - **Fields.Name** returns the title of the appropriate field.
-    - **Fields.Description** returns the description of the appropriate field.
-    - **Fields.Type** returns the type of the appropriate field as a value of the **ERDataItemType** [enumeration](#enumeration).
-    - **Fields.Precision** returns the precision of the appropriate field if this field returns a numeric value.
+  - **Fields.Name** returns the title of the appropriate field.
+  - **Fields.Description** returns the description of the appropriate field.
+  - **Fields.Type** returns the type of the appropriate field as a value of the **ERDataItemType** [enumeration](#enumeration).
+  - **Fields.Precision** returns the precision of the appropriate field if this field returns a numeric value.
 
     The following illustration shows results of metadata debugging for the configured data source of the *Table metadata* type.
 
@@ -731,38 +731,38 @@ The configured data source of the *Table metadata* type returns a single record 
 
 - **Records** returns the records of the appropriate data source.
 
-    - **Records.Fields** represents fields of the current record.
+  - **Records.Fields** represents fields of the current record.
 
-        - **Records.Fields.Field.Name** returns the title of the appropriate field.
-        - **Records.Fields.Field.Description** returns the description of the appropriate field.
-        - **Records.Fields.Field.Type** returns the type of the appropriate field as a value of the **ERDataItemType** enumeration.
-        - **Records.Fields.Field.Precision** returns the precision of the appropriate field if this field returns a numeric value.
-        - **Records.Fields.Value** represents the value of the current field of the current record.
+    - **Records.Fields.Field.Name** returns the title of the appropriate field.
+    - **Records.Fields.Field.Description** returns the description of the appropriate field.
+    - **Records.Fields.Field.Type** returns the type of the appropriate field as a value of the **ERDataItemType** enumeration.
+    - **Records.Fields.Field.Precision** returns the precision of the appropriate field if this field returns a numeric value.
+    - **Records.Fields.Value** represents the value of the current field of the current record.
 
-            - **Records.Fields.Value.AsBoolean** returns the value of the current field when the type of this field is *[Boolean](er-formula-supported-data-types-primitive.md#boolean)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Boolean* type.
-            - **Records.Fields.Value.AsContainer** returns the value of the current field when the type of this field is *[Container](er-formula-supported-data-types-composite.md#container)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Container* type.
-            - **Records.Fields.Value.AsDate** returns the value of the current field when the type of this field is *[Date](er-formula-supported-data-types-primitive.md#date)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Date* type.
-            - **Records.Fields.Value.AsDateTime** returns the value of the current field when the type of this field is *[DateTime](er-formula-supported-data-types-primitive.md#datetime)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *DateTime* type.
-            - **Records.Fields.Value.AsEnum** returns the value of the current field when the type of this field is *[Enumeration](er-formula-supported-data-types-primitive.md#enumeration)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Enumeration* type.
-            - **Records.Fields.Value.AsGuid** returns the value of the current field when the type of this field is *[Guid](er-formula-supported-data-types-primitive.md#guid)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Guid* type.
-            - **Records.Fields.Value.AsInt64** returns the value of the current field when the type of this field is *[Int64](er-formula-supported-data-types-primitive.md#int64)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Int64* type.
-            - **Records.Fields.Value.AsInteger** returns the value of the current field when the type of this field is *[Integer](er-formula-supported-data-types-primitive.md#integer)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Integer* type.
-            - **Records.Fields.Value.AsReal** returns the value of the current field when the type of this field is *[Real](er-formula-supported-data-types-primitive.md#real)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Real* type.
-            - **Records.Fields.Value.AsString** returns the value of the current field when the type of this field is *[String](er-formula-supported-data-types-primitive.md#string)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *String* type.
-            - **Records.Fields.Value.AsTime** returns the value of the current field when the type of this field is *Time*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Time* type.
-            - **Records.Fields.Value.AsVoid** returns the value of the current field when the type of this field is *Void*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Void* type.
-            - **IsBoolean** returns **True** for a field of the *Boolean* type. Otherwise, it returns **False**.
-            - **IsContainer** returns **True** for a field of the *Container* type. Otherwise returns **False**.
-            - **IsDate** returns **True** for a field of the *Date* type. Otherwise, it returns **False**.
-            - **IsDateTime** returns **True** for a field of the *DateTime* type. Otherwise, it returns **False**.
-            - **IsEnum** returns **True** for a field of the *Enumeration* type. Otherwise, it returns **False**.
-            - **IsGuid** returns **True** for a field of the *Guid* type. Otherwise, it returns **False**.
-            - **IsInt64** returns **True** for a field of the *Int64* type. Otherwise, it returns **False**.
-            - **IsInteger** returns **True** for a field of the *Integer* type. Otherwise, it returns **False**.
-            - **IsReal** returns **True** for a field of the *Real* type. Otherwise, it returns **False**.
-            - **IsString** returns **True** for a field of the *String* type. Otherwise, it returns **False**.
-            - **IsTime** returns **True** for a field of the *Time* type. Otherwise, it returns **False**.
-            - **IsVoid** returns **True** for a field of the *Void* type. Otherwise, it returns **False**.
+      - **Records.Fields.Value.AsBoolean** returns the value of the current field when the type of this field is *[Boolean](er-formula-supported-data-types-primitive.md#boolean)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Boolean* type.
+      - **Records.Fields.Value.AsContainer** returns the value of the current field when the type of this field is *[Container](er-formula-supported-data-types-composite.md#container)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Container* type.
+      - **Records.Fields.Value.AsDate** returns the value of the current field when the type of this field is *[Date](er-formula-supported-data-types-primitive.md#date)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Date* type.
+      - **Records.Fields.Value.AsDateTime** returns the value of the current field when the type of this field is *[DateTime](er-formula-supported-data-types-primitive.md#datetime)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *DateTime* type.
+      - **Records.Fields.Value.AsEnum** returns the value of the current field when the type of this field is *[Enumeration](er-formula-supported-data-types-primitive.md#enumeration)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Enumeration* type.
+      - **Records.Fields.Value.AsGuid** returns the value of the current field when the type of this field is *[Guid](er-formula-supported-data-types-primitive.md#guid)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Guid* type.
+      - **Records.Fields.Value.AsInt64** returns the value of the current field when the type of this field is *[Int64](er-formula-supported-data-types-primitive.md#int64)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Int64* type.
+      - **Records.Fields.Value.AsInteger** returns the value of the current field when the type of this field is *[Integer](er-formula-supported-data-types-primitive.md#integer)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Integer* type.
+      - **Records.Fields.Value.AsReal** returns the value of the current field when the type of this field is *[Real](er-formula-supported-data-types-primitive.md#real)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Real* type.
+      - **Records.Fields.Value.AsString** returns the value of the current field when the type of this field is *[String](er-formula-supported-data-types-primitive.md#string)*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *String* type.
+      - **Records.Fields.Value.AsTime** returns the value of the current field when the type of this field is *Time*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Time* type.
+      - **Records.Fields.Value.AsVoid** returns the value of the current field when the type of this field is *Void*. An exception is thrown at runtime if you try to fetch this property for a field that isn't of the *Void* type.
+      - **IsBoolean** returns **True** for a field of the *Boolean* type. Otherwise, it returns **False**.
+      - **IsContainer** returns **True** for a field of the *Container* type. Otherwise returns **False**.
+      - **IsDate** returns **True** for a field of the *Date* type. Otherwise, it returns **False**.
+      - **IsDateTime** returns **True** for a field of the *DateTime* type. Otherwise, it returns **False**.
+      - **IsEnum** returns **True** for a field of the *Enumeration* type. Otherwise, it returns **False**.
+      - **IsGuid** returns **True** for a field of the *Guid* type. Otherwise, it returns **False**.
+      - **IsInt64** returns **True** for a field of the *Int64* type. Otherwise, it returns **False**.
+      - **IsInteger** returns **True** for a field of the *Integer* type. Otherwise, it returns **False**.
+      - **IsReal** returns **True** for a field of the *Real* type. Otherwise, it returns **False**.
+      - **IsString** returns **True** for a field of the *String* type. Otherwise, it returns **False**.
+      - **IsTime** returns **True** for a field of the *Time* type. Otherwise, it returns **False**.
+      - **IsVoid** returns **True** for a field of the *Void* type. Otherwise, it returns **False**.
 
 The following illustration shows the results of data debugging for the configured data source of the *Table metadata* type.
 

@@ -38,8 +38,8 @@ Functional power users can create user acceptance and integration testing withou
 - Use Task recorder to record test cases, and include baseline assessment. For more information, see [Task recorder resources](../user-interface/task-recorder.md).
 - Group test cases for required test scenarios. For more information, see [Create and automate user acceptance tests](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
-    - Use Business process modeler (BPM) in LCS to make libraries for user acceptance tests.
-    - Use BPM test libraries to create a test plan and test suites in Microsoft Azure DevOps Services (Azure DevOps).
+  - Use Business process modeler (BPM) in LCS to make libraries for user acceptance tests.
+  - Use BPM test libraries to create a test plan and test suites in Microsoft Azure DevOps Services (Azure DevOps).
 
 Functional power users can run user acceptance and integration tests.
 
@@ -51,7 +51,7 @@ Functional power users can run user acceptance and integration tests.
 Before you can complete the tasks in this article, complete the following prerequisites:
 
 - Deploy a topology that supports test automation. You must have access to the instance of this topology for the **System administrator** role. This topology must contain the demo data used in this example. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).
-- To run user acceptance and integration tests automatically, install RSAT in the topology that you're using and configure it in the appropriate manner. For information about how to install and configure RSAT and configure it to work with finance and operations apps and Azure DevOps, see [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Pay attention to the prerequisites for using the tool. 
+- To run user acceptance and integration tests automatically, install RSAT in the topology that you're using and configure it in the appropriate manner. For information about how to install and configure RSAT and configure it to work with finance and operations apps and Azure DevOps, see [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Pay attention to the prerequisites for using the tool.
 - To organize test cases in suites to help guarantee the correct execution sequence, so that you can collect logs of test executions for further reporting and investigation, you must have access to Azure DevOps from the deployed topology.
 - To complete the example in this article, download [ER usage for RSAT tests](https://go.microsoft.com/fwlink/?linkid=874684). This zip file contains the following task guides:
 
@@ -369,6 +369,5 @@ Therefore, as you saw, you can automatically evaluate the functioning of any ER 
 - [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md)
 - [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md)
 - [ER Import a configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
