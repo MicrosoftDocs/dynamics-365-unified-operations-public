@@ -1,12 +1,12 @@
 ---
 title: Extensible data security policies 
 description: Learn about Extensible Data Security (XDS) policies in finance and operations apps, including an overview on various data security policy components.
-author: pnghub
-ms.author: johnmichalak
+author: ethanrimes
+ms.author: ethankallett
 ms.topic: article
 ms.date: 03/13/2026
 ms.custom: NotInToc
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-07-31
@@ -22,25 +22,25 @@ This article provides an overview of Extensible Data Security (XDS) policies in 
 
 ## Data security policy components
 
-- **Constrained tables**: The table or tables from which data is filtered or secured. For example, in a policy that secures access to transactions based on customer, the **CustTrans** would be an example of a constrained table.
+- **Constrained tables**: The tables from which data is filtered or secured. For example, in a policy that secures access to transactions based on customer, the **CustTrans** table is an example of a constrained table.
 
-- **Primary table**: Used to secure the content of the related constrained table. In the following example, the **CustTable** table would be the primary table. The primary table must have an explicit relationship to the constrained tables.
+- **Primary table**: Used to secure the content of the related constrained table. In the following example, the **CustTable** table is the primary table. The primary table must have an explicit relationship to the constrained tables.
 
-- **Policy query**: Used to secure the constrained tables content using a range condition on the primary table contents. Only records that are included in the range are accessible. The range can, for example, be based on a specific value for Customer.
+- **Policy query**: Used to secure the constrained tables content by using a range condition on the primary table contents. Only records that are included in the range are accessible. The range can, for example, be based on a specific value for Customer.
 
 - **Context** – Controls the conditions under which a policy is applicable. Two main types of contexts are available:
 
-  - **Role context**: Based on the roles that the user is assigned. There are two suboptions for role context:
+  - **Role context**: Based on the roles that the user is assigned. Two suboptions are available for role context:
 
-    - **RoleName** – Indicates that the security policy is only applied to the application user assigned to the role equal to the value of RoleName.
+    - **RoleName** – Indicates that the security policy only applies to the application user assigned to the role equal to the value of RoleName.
 
-    - **RoleProperty** – This value is used in combination with the **ContextString** property to specify multiple user roles context. It's applied when the Context String value defined in the **Role Property** field for the policy is the same as the **ContextString** field value for the assigned user roles.
+    - **RoleProperty** – Used in combination with the **ContextString** property to specify multiple user roles context. It's applied when the Context String value defined in the **Role Property** field for the policy is the same as the **ContextString** field value for the assigned user roles.
 
   - **Application context**: Applied if the context string set by the application using the XDS::SetContext API is the same as the value defined in the **Context String** field for the policy.
 
     :::image type="content" source="media/c74bc4ea12f084dfbaddb024685843e8.jpg" alt-text="Screenshot of the AOTXDS conceptual model.":::
 
-In the Application Object Tree (AOT), policies and their components are displayed under **Security \> Policies.**
+In the Application Object Tree (AOT), you can view policies and their components under **Security \> Policies.**
 
 ## Important considerations
 
@@ -58,7 +58,7 @@ XDS isn't supported for financial dimensions and using XDS with financial dimens
 
 ## Bypassing XDS policy
 
-A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy. If a user is assigned with the role  *XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access are purely role-based. Temporarily configuring **XDSDataAccessPolicyBypassRole** can be useful for determining if a user's inability to see or modify data is due to XDS policies. 
+A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy. If a user is assigned with the role  *XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access are purely role-based. Temporarily configuring **XDSDataAccessPolicyBypassRole** can be useful for determining if a user's inability to see or modify data is due to XDS policies.
 
 For example, [Create a simple security policy](/dynamics365/fin-ops-core/dev-itpro/sysadmin/create-simple-security-policy).
 
