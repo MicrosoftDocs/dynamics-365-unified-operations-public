@@ -4,7 +4,7 @@ description: Learn how to create entity-backed and custom financial dimensions, 
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: how-to
-ms.date: 09/05/2025
+ms.date: 04/09/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User  
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to add an entity backed financial dimension and a custom financial dimension. The guide uses the USMF demo company.
+This procedure shows how to add an entity-backed financial dimension and a custom financial dimension. The guide uses the USMF demo company.
 
 ## Naming requirements
 
@@ -48,41 +48,43 @@ The chart of accounts delimiter is the character that separates segments in a le
 If a dimension value contains the delimiter character, the system can misinterpret it when parsing ledger accounts. For example, if the delimiter is "-" and a dimension value is "Cust-049", the system might treat "049" as the next segment, which causes errors.
 
 > [!WARNING]
-> Dimension values that contain the delimiter character may appear to work correctly when used in default dimensions, but will cause errors when you enter ledger accounts through the segmented entry control or when you post transactions. This is because the system only parses the full segmented account string in those contexts, where it misinterprets the delimiter within the value as a segment separator.
+> Dimension values that contain the delimiter character might appear to work correctly when you use them in default dimensions, but they cause errors when you enter ledger accounts through the segmented entry control or when you post transactions. This error occurs because the system only parses the full segmented account string in those contexts, where it misinterprets the delimiter within the value as a segment separator.
 
 To avoid issues:
 
 - **Recommended**: Don't use the delimiter character in any dimension values. If conflicting values already exist, rename them.
 - **Alternative**: Change the delimiter to a different character. To learn how, see [Change the segment delimiter](/dynamics365/finance/general-ledger/plan-chart-of-accounts#change-the-segment-delimiter).
 
-## Create an entity backed financial dimension
+## Create an entity-backed financial dimension
+
 1. Go to **General ledger > Chart of accounts > Dimensions > Financial dimensions**.
-2. Click **New**.
-3. In the **Use values from** field, select a system-defined entity to base the financial dimension on.
-4. In the **Dimension name** field, type a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
-5. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension can't be used until it's activated.  
-6. Click **Close** on the activation message.
-7. Click **Activate**. Dimension activation can be scheduled to run by batch at a specific date and time.  
-8. Click **Dimension values**. Some dimension values are company specific. You can verify if they are company specific by if the company name is showing in the dimension values list.  
+1. Select **New**.
+1. In the **Use values from** field, select a system-defined entity to base the financial dimension on.
+1. In the **Dimension name** field, enter a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
+1. Select **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but you can't use a financial dimension until you activate it.  
+1. Select **Close** on the activation message.
+1. Select **Activate**. You can schedule dimension activation to run as a batch job at a specific date and time.  
+1. Select **Dimension values**. Some dimension values are company specific. You can verify if they are company specific if the company name appears in the dimension values list.  
 
 ## Create a custom financial dimension
-1. Click **New**.
-2. In the **Use values from** field, select **Custom dimension**.
-3. In the **Dimension name** field, type a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
-    - You can specify a format mask to control what users can enter for dimension values. For details, see [Dimension value requirements](#dimension-value-requirements).
-4. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.     
-5. Click **Activate**. Dimension activation can be scheduled to run by batch at a specific date and time.      
-6. On **Action pane**, click **Dimension values**.
-7. Click **New**.
-8. In the **Dimension value** field, type a name to describe your financial dimension value.
-9. In the **Description** field, type a description that describes your financial dimension value.
+
+1. Select **New**.
+1. In the **Use values from** field, select **Custom dimension**.
+1. In the **Dimension name** field, enter a value to describe the financial dimension. The name must comply with the [naming requirements](#naming-requirements).
+    - Specify a format mask to control what users can enter for dimension values. For details, see [Dimension value requirements](#dimension-value-requirements).
+1. Select **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but you can't use a financial dimension until you activate it.
+1. Select **Activate**. You can schedule dimension activation to run by batch at a specific date and time.
+1. On **Action pane**, select **Dimension values**.
+1. Select **New**.
+1. In the **Dimension value** field, enter a name to describe your financial dimension value.
+1. In the **Description** field, enter a description that describes your financial dimension value.
 
 ## Activate financial dimensions
 
-After you create a financial dimension, you must activate it before it can be used anywhere in the system, such as in account structures or on transactions.
+After you create a financial dimension, you must activate it before you can use it anywhere in the system, such as in account structures or on transactions.
 
-When you activate a financial dimension, the table updates to include the name of the financial dimension. Deleted dimensions are removed. You can create and edit dimension values before you activate a financial dimension. However, you can't consume a financial dimension anywhere until you activate it. For example, you can't add a financial dimension to an account structure until you activate the financial dimension.
+When you activate a financial dimension, the table updates to include the name of the financial dimension. The activation process removes deleted dimensions. You can create and edit dimension values before you activate a financial dimension. However, you can't consume a financial dimension anywhere until you activate it. For example, you can't add a financial dimension to an account structure until you activate the financial dimension.
 
-When you select **Activate all**, the system updates all inactive or renamed dimensions to active, which the **Status changes** field shows. As **Activate all** processes every pending addition, rename, or deletion across all dimensions at once, there is no need to rerun the operation for each dimension. The system must be in maintenance mode when activating financial dimensions. For a list of conditions that can prevent dimension activation, see [Financial dimension activation](/dynamics365/fin-ops-core/dev-itpro/financial/activate-financial-dimensions#conditions-that-can-prevent-activation).
+When you select **Activate all**, the system updates all inactive or renamed dimensions to active, which the **Status changes** field shows. As **Activate all** processes every pending addition, rename, or deletion across all dimensions at once, there's no need to rerun the operation for each dimension. The system must be in maintenance mode when activating financial dimensions. For a list of conditions that can prevent dimension activation, see [Financial dimension activation](/dynamics365/fin-ops-core/dev-itpro/financial/activate-financial-dimensions#conditions-that-can-prevent-activation).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
