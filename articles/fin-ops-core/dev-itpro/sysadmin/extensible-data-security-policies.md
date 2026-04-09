@@ -4,7 +4,7 @@ description: Learn about Extensible Data Security (XDS) policies in finance and 
 author: ethanrimes
 ms.author: ethankallett
 ms.topic: article
-ms.date: 03/13/2026
+ms.date: 04/09/2026
 ms.custom: NotInToc
 ms.reviewer: twheeloc
 audience: IT Pro
