@@ -238,7 +238,7 @@ Optinally, to configure the Tax exempt number, follow these steps.
 
 ### <a id="Branch"></a>Set up Branch ID 
 
-If configured, Branch IDs will be used as electronic addresses for documents routing. To configure the Branch ID, follow these steps.
+If configured, Branch IDs will be used as **electronic addresses** for documents routing. To configure the Branch ID, follow these steps.
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -249,11 +249,9 @@ If configured, Branch IDs will be used as electronic addresses for documents rou
 1. In the **Registration categories** field, select **Branch ID**.
 
 > [!NOTE]
-> ZZZZZZZZZZZZZZZZZZZZZZZ if not Branch then properties.
-
-### ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
-
-[Invoice party applicability rules for registration categories](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md)
+> In current implementation, multiple electronic addresses are supported only for Buyers and realized via Registration numbers of the Branch ID category for specific location addresses. Additinal configuration steps described in the [Invoice party applicability rules for registration categories](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md) article are required to enable storing of Registration numbers together with the posted invoices. 
+> 
+> If Branches cannot be used as electronic addresses due to some reasons then you alternatively can configure electronic addresses via electronic document properties as described in the [Configure electronic addresses](#ElAddr) chapter. In this case, only one electronic address per invoice party is supported.
 
 ## Set up address structure
 
@@ -311,7 +309,7 @@ To enter the registration numbers, follow these steps.
 > [!NOTE]
 > If the registration number with the **VAT** registration category is not defined then the value from the **Accounts receivable** \> **Customers** \> **All customers** \> **Invoice and delivery** \> **SALES TAX** \> **Tax exempt number** will be used.
 
-## Configure electronic addresses
+## <a id="ElAddr"></a>Configure electronic addresses
 
 Follow these steps electronic addresses for sellers or buyers that will be *primarily* used as **EndpointIDs** for documents routing.
 
