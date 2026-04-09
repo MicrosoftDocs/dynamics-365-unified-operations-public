@@ -51,6 +51,9 @@ Before you start, make sure these prerequisites are in place:
    - **Export channels for electronic invoicing integration**
    - **Execute update actions for submitted documents**
    - **Establishment and Registration ID governance on invoices** (*if your scenarios assume multiple Registration IDs for Sellers and/or Buyers, such as SIREN, SIRET, VAT ID and Branch ID as an electronic address*).
+  
+  And **disable** the following feature.
+   - **Simultaneous globalization features completion and deployment** (*to activate the **Application setup** copying*).
     
 ## <a id="EdCred"></a>Create the Azure Key Vault configuration
 
