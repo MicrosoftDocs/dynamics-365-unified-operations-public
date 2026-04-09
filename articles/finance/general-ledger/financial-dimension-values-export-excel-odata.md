@@ -2,9 +2,9 @@
 title: Exporting and editing dimensions data in Excel via OData plug-in
 description: Learn how to export and edit financial dimension values using the Open in Excel button, the Financial dimension values entity, and DMF.
 author: ethanrimes
-ms.author: aolson
+ms.author: ethankallett
 ms.topic: article
-ms.date: 03/02/2026
+ms.date: 04/09/2026
 ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
@@ -33,15 +33,14 @@ The workbooks listed under **Open in Excel** — **Financial dimension values**,
 >
 > For dimensions sourced from other records in the system (such as customers, departments, or cost centers), not all values are exported — only those that have been used as described above.
 
-
 ## Export to Excel
 
 The options listed under **Export to Excel** — such as **Custom list financial dimension** — perform a one-time static export of the data currently visible in the grid. Unlike the OData workbooks, these exports include all dimension values regardless of whether they've been used. However, the exported file is read-only; changes can't be published back to Finance.
 
 If a value is visible on the **Financial dimension values** page but missing from an **Open in Excel** workbook or a Data Management Famework (DMF) export, use **Export to Excel** > **Custom list financial dimension** to retrieve the full list.
 
-## Making values available through the OData add-in or Data Management Famework (DMF)
+## Making values available through the OData add-in or Data Management Framework (DMF)
 
-If a dimension value doesn't appear in OData add-in workbooks or DMF exports, it's because no property has been set for it. To make the value available, set any property on it — for example, an *Active from* date or a *Suspended* status. You can do this directly on the **Financial dimension values** page by selecting the value and updating its properties, or in bulk by importing overrides through the **Financial dimension values entity** via DMF. Once a property is set, the value appears in subsequent OData add-in workbooks and DMF exports.
+If a dimension value doesn't appear in OData add-in workbooks or DMF exports, it's because you didn't set a property for it. To make the value available, set any property on it, such as an *Active from* date or a *Suspended* status. You can set properties directly on the **Financial dimension values** page by selecting the value and updating its properties. Or, you can set properties in bulk by importing overrides through the **Financial dimension values entity** via DMF. When you set a property, the value appears in subsequent OData add-in workbooks and DMF exports.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
