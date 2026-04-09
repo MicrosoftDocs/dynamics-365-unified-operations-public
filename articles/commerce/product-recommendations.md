@@ -2,7 +2,7 @@
 title: Product recommendations overview
 description: Learn about product recommendations in Microsoft Dynamics 365 Commerce that let customers easily and quickly find products that they want, and also discover products that they didn't originally intend to buy.
 author: moonma
-ms.date: 01/28/2026
+ms.date: 04/09/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
 ms.search.region: Global
