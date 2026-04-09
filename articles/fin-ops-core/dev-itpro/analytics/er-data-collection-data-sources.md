@@ -144,7 +144,7 @@ If the volume of transactions is much larger than the volume in the current exam
 
 ## Frequently asked questions
 
-### If I need to calculate running totals and collect data, what's the difference between using a DATA COLLECTION data source and using the built-in DATA COLLECTION functions?
+### If I have to calculate running totals and collect data, what is the difference between using a DATA COLLECTION data source and using the built-in DATA COLLECTION functions?
 
 You can use both a DATA COLLECTION data source and the built-in [DATA COLLECTION](er-functions-category-data-collection.md) functions for data collection, summing, and counting, based on information that you pass to a generated outbound document. However, consider the following points when deciding which technique to use.
 

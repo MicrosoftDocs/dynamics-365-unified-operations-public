@@ -66,8 +66,7 @@ The BDM template editor page appears. You can use Microsoft 365 to edit the sele
 
 1. On the BDM template editor page, on the Excel ribbon, on the **View** tab, select the **Headings and Gridlines** check boxes for the editable Excel template.
 
-    :::image type="content" source="./media/BDM-AddFldExcel-EditableTemplate2.png" alt-text="Screenshot of the Headings and Gridlines check boxes selected."
-:::
+    :::image type="content" source="./media/BDM-AddFldExcel-EditableTemplate2.png" alt-text="Screenshot of the Headings and Gridlines check boxes selected.":::
 
 1. Select cells **E8:F8**.
 1. On the Excel ribbon, on the **Home** tab, select **Merge & Center** to merge the selected cells into a new merged **E8:F8** cell.
