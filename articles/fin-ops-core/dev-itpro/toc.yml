@@ -1057,6 +1057,14 @@ items:
             href: perf-test/atl-best-practices.md
           - name: Frequently asked questions
             href: perf-test/atl-faq.md
+      - name: Financial tags
+        items:
+        - name: Financial tags developer overview
+          href: financial/financial-tags-overview.md
+        - name: Uptake financial tags on forms and entities
+          href: financial/financial-tags-uptake.md
+        - name: Financial tag defaulting rules
+          href: financial/default-financial-tags.md
       - name: Date effectivity
         href: dev-tools/date-effectivity.md
       - name: Development for independent software vendors
