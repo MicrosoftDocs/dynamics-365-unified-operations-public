@@ -14,33 +14,33 @@ ms.search.form: DimensionDetails, DimensionValueDetails
 ms.dyn365.ops.version: 8.1
 ---
 
-# Exporting and editing dimensions data in Excel via OData plug-in
+# Export and edit dimension data in Excel by using the OData plug-in
 
 [!include [banner](../includes/banner.md)]
 
-The Excel button on the **Financial dimension values** page opens a dropdown with two distinct sections: **Open in Excel** and **Export to Excel**. These sections behave differently in terms of data scope and interactivity.
+The Excel button on the **Financial dimension values** page opens a dropdown with two distinct sections: **Open in Excel** and **Export to Excel**. These sections differ in data scope and interactivity.
 
 ![The Excel button on the Financial dimension values page, showing the Open in Excel and Export to Excel sections.](media/odata-add-in-click.png)
 
 ## Open in Excel (OData plug-in)
 
-The workbooks listed under **Open in Excel** — **Financial dimension values**, **Financial dimension value legal entity overrides**, and **Financial dimension value translations** — connect to Finance via the OData plug-in. The workbook stays live, and any edits you make can be published back to Finance directly from Excel.
+The workbooks listed under **Open in Excel** - **Financial dimension values**, **Financial dimension value legal entity overrides**, and **Financial dimension value translations** - connect to Finance through the OData plug-in. The workbook stays live, and you can publish any edits back to Finance directly from Excel.
 
 > [!IMPORTANT]
-> Because these workbooks use the **Financial dimension values entity**, they are subject to the same scope as Data Management Famework (DMF) exports. Custom dimension values are always exported. However, for entity-backed dimensions, only values that have been used as dimensions or have had properties explicitly modified are returned. Unused entity-backed values don't appear.
+> Because these workbooks use the **Financial dimension values entity**, they follow the same scope as Data Management Framework (DMF) exports. Custom dimension values are always exported. However, for entity-backed dimensions, only values that you use as dimensions or values that you explicitly modify properties for are returned. Unused entity-backed values don't appear.
 >
-> Values that are used include those entered in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or those that have had properties modified (such as Active from/Active to dates, Suspended status, and other overrides).
+> Used values include those you enter in transactions (such as ledger accounts, non-ledger accounts, or default dimensions) or values for which you modify properties (such as Active from/Active to dates, Suspended status, and other overrides).
 >
-> For dimensions sourced from other records in the system (such as customers, departments, or cost centers), not all values are exported — only those that have been used as described above.
+> For dimensions sourced from other records in the system (such as customers, departments, or cost centers), not all values are exported - only those that you use as described earlier.
 
 ## Export to Excel
 
-The options listed under **Export to Excel** — such as **Custom list financial dimension** — perform a one-time static export of the data currently visible in the grid. Unlike the OData workbooks, these exports include all dimension values regardless of whether they've been used. However, the exported file is read-only; changes can't be published back to Finance.
+The options listed under **Export to Excel** - such as **Custom list financial dimension** - perform a one-time static export of the data currently visible in the grid. Unlike the OData workbooks, these exports include all dimension values regardless of whether you use them. However, the exported file is read-only; you can't publish changes back to Finance.
 
-If a value is visible on the **Financial dimension values** page but missing from an **Open in Excel** workbook or a Data Management Famework (DMF) export, use **Export to Excel** > **Custom list financial dimension** to retrieve the full list.
+If a value is visible on the **Financial dimension values** page but missing from an **Open in Excel** workbook or a Data Management Framework (DMF) export, use **Export to Excel** > **Custom list financial dimension** to retrieve the full list.
 
-## Making values available through the OData add-in or Data Management Framework (DMF)
+## Make values available through the OData add-in or Data Management Framework (DMF)
 
-If a dimension value doesn't appear in OData add-in workbooks or DMF exports, it's because you didn't set a property for it. To make the value available, set any property on it, such as an *Active from* date or a *Suspended* status. You can set properties directly on the **Financial dimension values** page by selecting the value and updating its properties. Or, you can set properties in bulk by importing overrides through the **Financial dimension values entity** via DMF. When you set a property, the value appears in subsequent OData add-in workbooks and DMF exports.
+If a dimension value doesn't appear in OData add-in workbooks or DMF exports, it's because you didn't set a property for it. To make the value available, set any property on it, such as an *Active from* date or a *Suspended* status. Set properties directly on the **Financial dimension values** page by selecting the value and updating its properties. Or, set properties in bulk by importing overrides through the **Financial dimension values entity** via DMF. When you set a property, the value appears in subsequent OData add-in workbooks and DMF exports.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
