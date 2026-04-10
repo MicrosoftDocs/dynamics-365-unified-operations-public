@@ -3,7 +3,7 @@ title: Store Commerce app
 description: Learn how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 10/24/2025
+ms.date: 04/04/2026
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -213,6 +213,7 @@ You can also use the **help** command in PowerShell to find information about al
 | --inplaceupgradefrommodernpos | Executes an in-place upgrade from Modern POS. If this parameter is omitted, users will be required to activate Store Commerce after installation. |
 | --installoffline | Deploys the offline database. If you're upgrading from Modern POS, you can update the existing offline database by passing the SQL instance in the `--sqlservername` parameter. |
 | --logdirectorypath \<path to log directory\> | Specifies the path of the logs directory. |
+| --reenabledisabledclusteredindexes | Rebuilds any clustered indexes that are currently disabled on the offline database before the database is upgraded. This parameter is only applicable when offline mode is installed. This option can significantly increase the execution time of the installation process if there are indexes to re-enable on tables with very high volume. |
 | --register \<register number\> | Specifies the register number to be used for Store Commerce application as a default value. If not specified, the user is prompted to input the register number during device activation. |
 | --retailserverurl \<Retail Server URL\> | Specifies the Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user is prompted to enter the Retail Server URL during device activation. |
 | --skipdotnetversioncheck | Bypasses the check to see if .NET is installed. |

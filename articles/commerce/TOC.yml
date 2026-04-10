@@ -3156,10 +3156,12 @@
             href: dev-itpro/payment-connector-package.md
     - name: Copilot capabilities in Commerce
       items:
-      - name: Store report insights by Copilot
-        href: copilot-pos-report-insights.md
       - name: Customer insights by Copilot
         href: copilot-pos-customer-insights.md
+      - name: Product insights by Copilot
+        href: copilot-product-insights.md
+      - name: Store report insights by Copilot
+        href: copilot-pos-report-insights.md
       - name: Enable Copilot statement posting summaries
         href: copilot-statement-summaries.md
       - name: Use Copilot in site builder to enrich product detail pages
