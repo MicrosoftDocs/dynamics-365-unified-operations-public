@@ -52,11 +52,11 @@ Store associates can use these insights during customer conversations to:
 ## Enable Product insights by Copilot in the Store Commerce app
 
 To enable Product insights by Copilot in the Store Commerce app, follow these steps:
-- In Commerce headquarters, go to Feature management (Systems administration > Workspaces > Feature management), and enable the Enable Copilot in Store Commerce feature flag.
-- Go to Commerce shared parameters (Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters), and enable the Enable Copilot in Store Commerce parameter.
-- Go to your POS functionality profile (Retail and Commerce > Channel setup > POS setup > POS profiles > Functionality profiles).
-- On the Copilot FastTab, enable Product insights.
-- Run the 1070 (Channel configuration) job to sync the updated settings to the channel database.
+1. In Commerce headquarters, go to **Feature management** (**Systems administration \> Workspaces \> Feature management**), and enable the **Enable Copilot in Store Commerce** feature flag.
+2. Go to **Commerce shared parameters** (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**), and enable the **Enable Copilot in Store Commerce** parameter.
+3. Go to your POS functionality profile (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**).
+4. On the **Copilot** FastTab, enable **Product insights**.
+5. Run the **1070 (Channel configuration)** job to sync the updated settings to the channel database.
 
 This capability is available to customers who use the following English-language Commerce versions:
 
