@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
 
-[!include [banner](/dynamics365/finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes features that are new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
