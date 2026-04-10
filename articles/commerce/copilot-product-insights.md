@@ -30,7 +30,7 @@ Store associates frequently interact with customers who want to understand:
 - Current offers or applicable discounts
 - Navigate complementary items categories based on upsell/cross-sell product configurations
 
-![Screenshot of Product insights by Copilot features in the Store Commerce app.](./media/CopilotProductInsights.png)
+:::image type="content" source="./media/CopilotProductInsights.png" alt-text="Screenshot of Product insights by Copilot features in the Store Commerce app.":::
 
 However, modern retail environments often contain a large assortment of dynamically changing products. Learning and remembering detailed product specifications, pricing, and promotional information can be difficult—particularly for new associates.
 Product insights by Copilot connects relevant product data from Dynamics 365 Commerce and presents it to store associates in an intuitive and actionable way directly within the point‑of‑sale (POS) experience.
