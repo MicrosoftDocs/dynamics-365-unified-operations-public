@@ -25,7 +25,7 @@ The procedures use the demo company GBSI.
 
 ## Set up reverse charge item groups
 
-To set up reverse charge item groups, follow these steps.
+To set up reverse charge item groups, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Reverse charge item groups**.
 1. Select **New**.
@@ -61,7 +61,7 @@ To set up reverse charge item groups, follow these steps.
 
 ## Set up reverse charge rules
 
-To set up reverse charge rules, follow these steps.
+To set up reverse charge rules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **Reverse charge rules**.
 1. Select **New**.
@@ -100,7 +100,7 @@ To set up reverse charge rules, follow these steps.
 
 ## Configure general ledger parameters for reverse charge VAT
 
-To configure general ledger parameters for reverse charge VAT, follow these steps.
+To configure general ledger parameters for reverse charge VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**.
 1. Select the **Reverse charge** tab.

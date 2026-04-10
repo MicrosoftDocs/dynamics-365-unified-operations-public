@@ -22,7 +22,7 @@ The following procedures walk you through how to create a corrective invoice. Th
 
 ## Create a purchase invoice
 
-To create a purchase invoice, follow these steps.
+To create a purchase invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **All projects**.
 1. In the list, select the link in the selected row.
@@ -47,7 +47,7 @@ To create a purchase invoice, follow these steps.
 
 ## Post a credit note on a purchase
 
-To post a credit note on a purchase, follow these steps.
+To post a credit note on a purchase, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting** \> **Projects** \> **All projects**.
 1. In the list, select the link in the selected row.
@@ -85,7 +85,7 @@ To post a credit note on a purchase, follow these steps.
 
 ## Verify the posted invoice has the correct information
 
-To verify the posted invoice has the correct information, follow these steps.
+To verify the posted invoice has the correct information, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. In the list, select the link in the selected row.

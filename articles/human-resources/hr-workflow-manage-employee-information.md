@@ -82,14 +82,14 @@ For example, the completion policy for an approval process is set to **Single ap
 
 For more information, see [Configure approval steps in a workflow](../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md).
 
-To configure the workflow, follow these steps.
+To configure the workflow, follow these steps:
 
 1. Create a single approval process that has multiple steps.
 2. Create the approval process steps. For the previously described example, the approval process has two steps: one for the line manager approval and one for the HR manager approval.
 3. Set the **Completion Policy** field to **All approver** or **Single approver**.
 
 ### Configure a Human resources workflow
-To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps.
+To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps:
 
 1.  On the **Human resources workflows** page, select **New**.
 2.  In the list of available workflows, select **Identification numbers**.

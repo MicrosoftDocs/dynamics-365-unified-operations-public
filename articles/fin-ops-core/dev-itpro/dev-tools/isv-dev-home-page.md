@@ -4,7 +4,7 @@ description: Access links to topics about development by independent software ve
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 08/27/2021
+ms.date: 03/30/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
@@ -19,7 +19,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides links to topics about development by independent software vendors (ISVs).
 
-+ [Link X++ modules to packages by using ISV Studio](isv-studio-solutions.md)
-+ [ISV licensing](isv-licensing.md)
-+ [ISV licensing on-premises](isv-licensing-on-prem.md)
+- [Link X++ modules to packages by using ISV Studio](isv-studio-solutions.md)
+- [ISV licensing](isv-licensing.md)
+- [ISV licensing on-premises](isv-licensing-on-prem.md)
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

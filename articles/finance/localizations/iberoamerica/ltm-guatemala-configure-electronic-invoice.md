@@ -57,7 +57,7 @@ Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax applica
 
 ### Legal entity configuration
 
-To configure the legal entity, follow these steps.
+To configure the legal entity, follow these steps:
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity that you want to work with.
@@ -72,7 +72,7 @@ To configure the legal entity, follow these steps.
 
 This configuration applies to invoices, credit notes, and debit notes.
 
-To configure document classes, follow these steps.
+To configure document classes, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Document class**. 
 1. For each **Document class** that you want to use in electronic invoicing:
@@ -86,7 +86,7 @@ To configure document classes, follow these steps.
 
 ### Sales point prefix configuration
 
-To configure the sales point prefix, follow these steps.
+To configure the sales point prefix, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Sales point prefix** and for the sales point used for electronic invoicing follow these steps: 
 1. Enter the authorized prefix code for electronic invoicing in the **Prefix** field.
@@ -94,7 +94,7 @@ To configure the sales point prefix, follow these steps.
 
 ### Field master lists configurations
 
-To configure field master lists, follow these steps.
+To configure field master lists, follow these steps:
 
 1. Go to **Organization administration > Setup > LATAM > Fields master List**.
 1. In the **LIST 1** field, configure the codes for operation types and for credit and debit note types.
@@ -103,7 +103,7 @@ Learn more in [Field list configuration for Latin America](ltm-core-field-master
 
 ### Fiscal information configuration
 
-To configure fiscal information, follow these steps.
+To configure fiscal information, follow these steps:
 
 1. Go to **Organization administration** \> **Setup** \> **LATAM** \> **Tax ID type**, and follow these steps for each record in the list:
 1. Select the record, then select **Tax application**.
@@ -117,7 +117,7 @@ Learn more in [Taxpayer types for Latin America](ltm-core-taxpayer-type.md) and 
 
 ### Addresses configurations
 
-To configure addresses, follow these steps.
+To configure addresses, follow these steps:
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**. 
 1. For each record (Country/Region, State, and County) used in electronic invoicing, go to **LATAM** \> **Tax application** to assign the tax application codes according to the Guatemala normative.
@@ -128,7 +128,7 @@ Learn more in [Address setup for Latin America](ltm-core-address-setup.md).
 
 #### Configure released products
 
-To configure released products, follow these steps.
+To configure released products, follow these steps:
 
 1. Go to **Product information management** > **Products** > **Released products**.
 1. For each record in the list, follow these steps:
@@ -139,7 +139,7 @@ To configure released products, follow these steps.
 
 #### Currencies configuration
 
-To configure currencies, follow these steps.
+To configure currencies, follow these steps:
 
 1. Go to **General ledger** > **Currencies** > **Currencies**.
 1. For each record in the list, follow these steps:
@@ -150,7 +150,7 @@ To configure currencies, follow these steps.
 
 ### Configure taxes
 
-To configure the taxes for each tax and percentage used, follow these steps.
+To configure the taxes for each tax and percentage used, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Follow these steps for each record on the list:
@@ -167,7 +167,7 @@ To configure the taxes for each tax and percentage used, follow these steps.
 
 When you issue an electronic document that has an associated document, you must select **References** on the posting page and add the associated document.
 
-To configure electronic document references, follow these steps.
+To configure electronic document references, follow these steps:
 
 1. Go to **organization administration**\>**Setup**\>**LATAM**\>**Electronic document references**
 1. In the Tax application id field, enter the ID that is used for Guatemala electronic invoices.

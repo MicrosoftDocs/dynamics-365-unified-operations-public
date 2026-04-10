@@ -113,7 +113,7 @@ Here are the main considerations for this functionality in Microsoft Dynamics 36
 
 ### Setup
 
-To set up this feature, follow these steps.
+To set up this feature, follow these steps:
 
 1. In Feature Management, enable the **Enable tax adjustment on consolidated invoice for Japan** feature.
 1. Complete the setup that's described in [Qualified Invoice System in Japan](apac-jpn-qualified-invoice-system.md).
@@ -126,7 +126,7 @@ To set up this feature, follow these steps.
 
 Before you can complete this scenario, you must have posted sales invoices to customers.
 
-To issue consolidated invoices to customers and post the tax adjustments, follow these steps.
+To issue consolidated invoices to customers and post the tax adjustments, follow these steps:
 
 1. Go to **Accounts receivable** \> **Periodic tasks** \> **Consolidated invoice**, and select **New**.
 1. Specify the required **Execution date** and **Consolidation date** values. Add the **Customer account** value to the filter as required. Then select **OK**. The resulting consolidated invoice includes all invoices that were previously posted in the specified period and that match the filter criteria.
@@ -165,7 +165,7 @@ If you must edit a posted consolidated invoice because of missed invoices or ext
 
 Before you can complete this scenario, you must have posted purchase invoices from vendors.
 
-To create a consolidated invoice from a vendor, follow these steps.
+To create a consolidated invoice from a vendor, follow these steps:
 
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Consolidated invoice**, and select **New**.
 1. Specify the required **Execution date** and **Consolidation date** values. Add the **Vendor account** value to the filter to select the desired vendors. Then select **OK**. The resulting consolidated invoice includes all invoices that were previously posted in the specified period and that match the filter criteria.

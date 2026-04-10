@@ -58,7 +58,7 @@ A recruiter can use either of the following methods to add candidates as prospec
 
 Recruiters can turn prospects directly in applicants. 
 
-To turn prospects into applicants, follow these steps.
+To turn prospects into applicants, follow these steps:
 
 1. Go to **Job ad** \> **Prospects**.
 1. Select one or more prospects to turn into applicants.
@@ -72,7 +72,7 @@ Recruiters can send an invitation to prospects to notify them about job openings
 
 ## Delete prospects
 
-To delete prospects, follow these steps.
+To delete prospects, follow these steps:
 
 1. Go to **Job ad** \> **Prospects**.
 1. Select the prospects to delete.

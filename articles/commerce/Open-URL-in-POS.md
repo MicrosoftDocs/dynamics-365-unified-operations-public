@@ -1,11 +1,10 @@
 ---
 title: Open URL in POS
-description: This article provides an overview of improvements made to product and customer search functionality in Microsoft Dynamics 365 Commerce.
+description: Learn how to configure a button to open a URL in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: ShalabhjainMSFT
-ms.date: 07/23/2024
+ms.date: 01/23/2026
 ms.topic: how-to
-audience: Application user
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
@@ -17,20 +16,20 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature doesn't require a code customization, and is configurable by someone in a nondeveloper role. 
+This article describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature doesn't require a code customization, and someone in a nondeveloper role can configure it.
 
-This feature allows configuration of a button in POS using the button grid designer to open a URL. Currently, this feature is supported in the following configurations:
+This feature allows configuration of a button in POS by using the button grid designer to open a URL. Currently, this feature is supported in the following configurations:
 
 - Open in new window.
 - Open within POS.
 
 ## Open in new window
 
-This configuration defines whether to open the URL in a new window or within the app. When configured to open a web URL within the app, the side navigation panel and top bar of POS are visible and available for user interaction. When configured to open in a new window, the URL opens in a new window on the Store Commerce app for Windows, and in a new browser tab in all other POS clients. To enable this feature, you must configure the URL with the **Open in new window** option selected.
+This configuration defines whether to open the URL in a new window or within the app. When you configure the app to open a web URL within the app, the side navigation panel and top bar of POS are visible and available for user interaction. When you configure the app to open the URL in a new window, the URL opens in a new window on the Store Commerce app for Windows, and in a new browser tab in all other POS clients. To enable this feature, you must configure the URL by selecting the **Open in new window** option.
 
 ## Open within POS
 
-Opening a web URL within POS is currently only supported for the Store Commerce app for Windows. On other clients, this capability is under development and planned for release in future updates. To enable this capability, you must configure the URL with the **Open in new window** option not selected.
+Opening a web URL within POS is currently only supported for the Store Commerce app for Windows. On other clients, this capability is under development and planned for release in future updates. To enable this capability, you must configure the URL by not selecting the **Open in new window** option.
 
 | Client                | Open in new window | Open within POS | Details                           |
 |-----------------------|:--------------------:|:-----------------:|-----------------------------------|
@@ -45,15 +44,15 @@ Before you begin, review how to configure [Screen layouts for the point of sale 
 
 ## Open URL in POS
 
-To configure a URL to be opened in POS, perform the following steps.
+To configure a URL to open in POS, follow these steps:
 
-1. In head office, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS \> Screen Layouts**.
-2. Select **Button Grids \> Designer**.
-3. Create a new button.
-4. Select **Button** properties.
-5. Select **Open URL** as the action.
-6. Enter the URL that you want to use.
-7. Configure whether to open the URL in a new window.
+1. In headquarters, go to **Retail and Commerce > Channel Setup > POS Setup > POS > Screen Layouts**.
+1. Select **Button Grids > Designer**.
+1. Create a new button.
+1. Select **Button** properties.
+1. Select **Open URL** as the action.
+1. Enter the URL that you want to use.
+1. Configure whether to open the URL in a new window.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

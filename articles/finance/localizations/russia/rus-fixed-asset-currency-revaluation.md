@@ -31,7 +31,7 @@ The following changes occur when currency is revaluated (depreciated):
 
 ## Revalue the currency of fixed assets
 
-To revalue the currency of fixed assets, follow these steps.
+To revalue the currency of fixed assets, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
 1. Select **New**. In the **Description** field, enter a short description of the journal.

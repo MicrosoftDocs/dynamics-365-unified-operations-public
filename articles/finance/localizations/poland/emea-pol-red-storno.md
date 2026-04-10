@@ -41,7 +41,7 @@ After you complete the following procedure, a transaction is created that automa
 
 You must activate storno accounting in General ledger before you can set up storno parameters in any other module.
 
-To activate storno accounting, follow these steps.
+To activate storno accounting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Setup** \> **General ledger parameters**.
 1. In the **Ledger** area, on the **Accounting rules** FastTab, in the **Transaction reversal** field group, set the **Correction** option to **Yes**.
@@ -56,7 +56,7 @@ On the  **Accounts payable parameters** page, in the **Invoice** area, set the *
 
 ### Set up storno accounting in Accounts receivable
 
-To set up storno accounting in Accounts receivable, follow these steps.
+To set up storno accounting in Accounts receivable, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable parameters**.
 1. In the **Updates** area, in the **Advance invoice** field group, set the **Credit note as correction** option to **Yes**. By default, credit notes for advance invoices are now posted as storno transactions.
@@ -65,14 +65,14 @@ To set up storno accounting in Accounts receivable, follow these steps.
 
 ### Set up storno accounting in Inventory and warehouse management
 
-To set up storno accounting in Inventory and warehouse management, follow these steps.
+To set up storno accounting in Inventory and warehouse management, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory and warehouse management parameters**.
 1. In the **General** area, in the **Correction** field group, set the **Inventory adjustment – correction** option to **Yes**. By default, adjustments to inventory are now posted as storno transactions.
 
 ### Set up storno accounting in Project management and accounting
 
-To set up storno accounting in Project management and accounting, follow these steps.
+To set up storno accounting in Project management and accounting, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting parameters**.
 1. In the **General** area, in the **Adjustment** field group, set the **Adjustment of project transactions – correction** option to  **Yes**. By default, adjustments to project transactions are now posted as storno transactions.
@@ -80,7 +80,7 @@ To set up storno accounting in Project management and accounting, follow these s
 
 ### Create an Invoice storno credit note
 
-To create an invoice storno credit note, follow these steps.
+To create an invoice storno credit note, follow these steps:
 
  1. For a confirmed purchase order, on the Action Pane, select **Invoice**.  
  1. Select **Invoice**.  

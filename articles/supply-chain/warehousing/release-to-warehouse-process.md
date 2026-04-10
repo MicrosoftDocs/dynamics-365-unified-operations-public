@@ -124,7 +124,7 @@ In the lower section, you can review the loads that are created. To release load
 
 To automatically release orders to the warehouse, use the **Automatic release of sales orders**, **Automatic release of transfer orders**, and **Automatic release of outbound shipment orders** jobs.
 
-To set up the batch job that releases sales orders, follow these steps.
+To set up the batch job that releases sales orders, follow these steps:
 
 1. Go to **Warehouse management** \> **Release to warehouse** \> **Automatic release of sales orders**.
 1. In the **Automatic release of sales orders** dialog box, on the **Parameters** FastTab, set the following fields:
@@ -154,7 +154,7 @@ To set up the batch job that releases transfer orders, follow the steps.
     - **Allow release of partially released orders** – Specify whether remaining quantities for partially released orders should be released to the warehouse.
     - **Group releases by destination warehouse** – Specify whether the system should release all transfer orders at the same time, or whether it should group transfer order lines by destination warehouse and then release each group to the warehouse separately.
 
-To set up the batch job that releases outbound shipment orders, follow these steps.
+To set up the batch job that releases outbound shipment orders, follow these steps:
 
 1. Go to **Warehouse management** \> **Release to warehouse** \> **Automatic release of outbound shipment orders**.
 1. In the **Automatic release of outbound shipment orders** dialog box, on the **Parameters** FastTab, set the following fields:

@@ -6,13 +6,14 @@ ms.author: peterfriis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/20/2025
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 ms.service: dynamics-365-op
 ---
+
 # Apply updates to on-premises deployments
 
 [!include [banner](../includes/banner.md)]
@@ -32,13 +33,13 @@ While an on-premises environment is being deployed, you can select to deploy a c
 > [!NOTE]
 > Merged packages, which include platform/application code and custom code, are restricted to use during quality updates only. They can't be utilized when updating to a newer service update. For instance, if you are updating from Dynamics 365 Finance + Operation (on-premises) version 10.0.41 to 10.0.42, the service update must be applied before using a merged package.
 
-To apply updates to an on-premises environment after it's deployed, follow these steps.
+To apply updates to an on-premises environment after it's deployed, follow these steps:
 
 1. In Lifecycle Services, open the **Environment details** page for the environment.
-2. Under **Maintain**, select **Apply updates**.
+1. Under **Maintain**, select **Apply updates**.
 
 > [!NOTE]
-> The environment must also have the latest version of the local agent available in Lifecycle Services. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
+> The environment must also have the latest version of the local agent available in Lifecycle Services. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 
 ## Apply platform update package updates through Lifecycle Services
 
@@ -50,26 +51,26 @@ You can use the following steps to apply platform update packages.
 ### Prerequisites
 
 - Before you begin, complete a full backup of the Management Reporter (MR), Microsoft Dynamics AX, and Microsoft SQL Server Reporting Services (SSRS) databases. Although the code is restored through Lifecycle Services, the database must be manually restored to help ensure that no data loss occurs.
-- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
+- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
-    - **Platform update packages** – Download or save the update directly to the Asset library in Lifecycle Services by following the steps in [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
-    - **Customizations** – Follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
+  - **Platform update packages** – Download or save the update directly to the Asset library in Lifecycle Services by following the steps in [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+  - **Customizations** – Follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
 ### Update a sandbox environment
 
 1. In Lifecycle Services, open the on-premises implementation project, and then, on the project menu, select **Asset library**. In the Asset library, ensure that the platform update package or custom deployable package appears on the **Software deployable packages** tab.
-2. In the on-premises implementation project, open the **Environment details** page of the environment to update.
-3. Under **Maintain**, select **Apply updates**. A dialog box shows the updates that were uploaded to the Asset library. Note that only packages that are marked as **Valid** in the Asset library appear.
-4. Select the update, and then select **Prepare** to prepare your on-premises environment for servicing. 
+1. In the on-premises implementation project, open the **Environment details** page of the environment to update.
+1. Under **Maintain**, select **Apply updates**. A dialog box shows the updates that were uploaded to the Asset library. Note that only packages that are marked as **Valid** in the Asset library appear.
+1. Select the update, and then select **Prepare** to prepare your on-premises environment for servicing.
 
     > [!NOTE]
     > While the environment is being prepared for servicing, its state is **Deployed**. However, the **Deployment status** field shows the progress of the preparation. During preparation, actions such formatting the package and downloading the package are performed.
     >
     > Because the environment isn't directly touched during preparation, there is no downtime at this point. Users can continue to use the system during preparation.
 
-5. After preparation is completed, **Abort** and **Update Environment** buttons appear. To start to apply the update, select **Update environment**. If preparation fails, see the [Resolve a failed update application](#resolve-a-failed-update-application) section later in this article.
-6. In the confirmation message that appears, select **Yes**. The servicing operation now begins on the environment. This point is the start of the downtime on your environment.
+1. After preparation is completed, **Abort** and **Update Environment** buttons appear. To start to apply the update, select **Update environment**. If preparation fails, see the [Resolve a failed update application](#resolve-a-failed-update-application) section later in this article.
+1. In the confirmation message that appears, select **Yes**. The servicing operation now begins on the environment. This point is the start of the downtime on your environment.
 
     The environment state is changed from **Deployed** to **Deploying**.
 
@@ -78,15 +79,15 @@ You can use the following steps to apply platform update packages.
     > [!NOTE]
     > During the update, the database is synchronized to update any changes to table definitions. This action can take some time for larger databases. Additionally, all reports are deployed again to the SSRS nodes.
 
-7. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
+1. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
 
 ### Update a production environment
 
 Before you update a production environment, you must successfully complete the package application update on a sandbox environment.
 
 1. In the project for the sandbox environment that you applied the package to, open the Asset library, and then, on the **Software deployable packages** tab, select the package, and mark it as a **Release candidate**.
-2. On the **Environment details** page, under **Maintain**, select **Apply updates**. The dialog box that appears shows only packages that are marked **Release candidate**.
-3. Select the **Release candidate** package to apply to the production environment.
+1. On the **Environment details** page, under **Maintain**, select **Apply updates**. The dialog box that appears shows only packages that are marked **Release candidate**.
+1. Select the **Release candidate** package to apply to the production environment.
 
 The rest of the update flow is the same as the flow for a sandbox environment.
 
@@ -117,4 +118,3 @@ After you review the logs and determine the cause of the failure, complete one o
     > Because this option requires that you do a fresh deployment of the environment, you lose any updates that were previously applied. Any customizations and binary updates must be reapplied to the environment.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -43,7 +43,7 @@ In addition to the following instructions, you must also configure your Adyen ac
 
 To process payments in Commerce headquarters via the Adyen connector, you must configure Adyen connector and set it up as the default payment processor for new credit cards. 
 
-To configure a default payment processor, follow these steps.
+To configure a default payment processor, follow these steps:
 
 1. Sign in to Commerce headquarters and go to **Accounts receivable \> Payments setup \> Payment services**.
 1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
@@ -201,7 +201,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 
 ##### Configure the PIN pad
 
-To configure the PIN pad, follow these steps.
+To configure the PIN pad, follow these steps:
 
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
@@ -258,7 +258,7 @@ The configuration in headquarters at **Accounts receivable \> Payments setup \> 
 
 ### Configure the Adyen connector for online stores
 
-To configure the Adyen connector for online stores, follow these steps.
+To configure the Adyen connector for online stores, follow these steps:
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select the online store to add the Dynamics 365 Payment Connector for Adyen.

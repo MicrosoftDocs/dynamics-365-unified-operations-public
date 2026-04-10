@@ -28,7 +28,7 @@ When a CAPA case, CAPA process stage, or CAPA process activity that is assigned 
 > [!TIP]
 > To get started quickly, you can load a set of standard CAPA worker groups from a template that is provided with Microsoft Dynamics 365 Supply Chain Management. You can use the standard groups as-is or modify them to meet your specific needs, as described in the rest of this section. Learn more in [CAPA administration](capa-admin.md).
 
-To set up CAPA worker groups, follow these steps.
+To set up CAPA worker groups, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA worker groups**.
 1. Use the buttons on the Action Pane to add new worker groups or edit existing ones as required. (You can also delete existing groups, but only if they aren't assigned to CAPA case activities.)
@@ -57,7 +57,7 @@ To set up CAPA worker groups, follow these steps.
 
 *CAPA categories* let you group similar case types together. By organizing CAPA cases into categories, you help employees identify known solutions, such as knowledge articles, when similar issues frequently occur. This information is also used by the *Trending analysis by category* feature. Therefore, managers can review whether the frequency of specific issues is declining over time.
 
-To set up CAPA categories, follow these steps.
+To set up CAPA categories, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA categories**.
 1. Use the buttons on the Action Pane to add new CAPA categories as required. (You can also delete existing categories, but only if they aren't assigned to active CAPA cases.)
@@ -67,7 +67,7 @@ To set up CAPA categories, follow these steps.
     - **Description** – Enter a description of the CAPA category.
     - **CAPA subcategory type** – Select a subcategory for the CAPA category. The list includes several predefined subcategories (*None*, *Customer*, *Vendor*, and *Product*). It also includes the *User defined* subcategory type. If you select this subcategory type, users can select from a set of custom subcategories when they create a CAPA case that uses this CAPA category. The next procedure explains how to set up custom CAPA subcategories.
 
-To set up custom CAPA subcategories for a category that uses the *User defined* subcategory type, follow these steps.
+To set up custom CAPA subcategories for a category that uses the *User defined* subcategory type, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA categories**.
 1. Select the category that you want to define subcategories for. The selected category must have the **CAPA subcategory type** field set to *User defined*.
@@ -87,7 +87,7 @@ To set up custom CAPA subcategories for a category that uses the *User defined* 
 
 ### Manage and approve CAPA processes
 
-To name, describe, and approve CAPA processes, follow these steps.
+To name, describe, and approve CAPA processes, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 
@@ -105,7 +105,7 @@ To name, describe, and approve CAPA processes, follow these steps.
 
 ### Configure CAPA process details
 
-To define the stages and activities that make up a CAPA process, follow these steps.
+To define the stages and activities that make up a CAPA process, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 1. Select or create the CAPA process that you want to work with.
@@ -143,7 +143,7 @@ To define the stages and activities that make up a CAPA process, follow these st
 
 ### View all cases that use a selected CAPA process
 
-To view all CAPA cases that use a selected CAPA process, follow these steps.
+To view all CAPA cases that use a selected CAPA process, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA processes**.
 1. Select or open the CAPA process that you want to view cases for.
@@ -153,7 +153,7 @@ To view all CAPA cases that use a selected CAPA process, follow these steps.
 
 *CAPA resolution types* let users select a resolution reason when they resolve a CAPA case. You can use CAPA resolution types to identify and categorize typical reasons why CAPA cases can be resolved.
 
-To set up CAPA resolution types, follow these steps.
+To set up CAPA resolution types, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA resolution types**.
 1. Use the buttons on the Action Pane to create new CAPA resolution types as required. (You can also delete existing resolution types.)
@@ -163,7 +163,7 @@ To set up CAPA resolution types, follow these steps.
 
 *CAPA sources* let users select a source for each CAPA case. You can use CAPA sources to track the source of each case, such as *Internal audit*, *External audit*, or *Ad-hoc testing*.
 
-To set up CAPA sources, follow these steps.
+To set up CAPA sources, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA sources**.
 1. Use the buttons on the Action Pane to create new CAPA sources as required. (You can also delete existing sources.)
@@ -173,7 +173,7 @@ To set up CAPA sources, follow these steps.
 
 *CAPA types* let users select a type to categorize each CAPA case.
 
-To set up CAPA types, follow these steps.
+To set up CAPA types, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA types**.
 1. Use the buttons on the Action Pane to create new CAPA types as required. (You can also delete existing types.)
@@ -183,7 +183,7 @@ To set up CAPA types, follow these steps.
 
 CAPA types let users select a *major/minor classification code* for each CAPA case.
 
-To set up major/minor classification codes, follow these steps.
+To set up major/minor classification codes, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **Major/minor classification codes**.
 1. Use the buttons on the Action Pane to create new major/minor classification codes as required. (You can also delete existing classification codes.)
@@ -193,7 +193,7 @@ To set up major/minor classification codes, follow these steps.
 
 *CAPA root cause codes* let users select the root cause of an issue when they resolve a CAPA case.
 
-To set up CAPA root cause codes, follow these steps.
+To set up CAPA root cause codes, follow these steps:
 
 1. Go to **Inventory management** \> **Setup** \> **CAPA management** \> **CAPA root causes**.
 1. Use the buttons on the Action Pane to create new CAPA root causes as required. (You can also delete existing root causes).

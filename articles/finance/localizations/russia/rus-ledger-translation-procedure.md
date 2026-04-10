@@ -53,7 +53,7 @@ The translation parameters must be set in the source company.
 
 You can create translation group rules to specify all translation settings.
 
-To set up a translation group, follow these steps.
+To set up a translation group, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Translation setup** \> **Translation groups**.
 1. Create a line.
@@ -103,7 +103,7 @@ To set up a translation group, follow these steps.
 
 Set up currency groups to specify the currency conversion rules that are used during translation.
 
-To set up currency groups so that they have currency conversion rules, follow these steps.
+To set up currency groups so that they have currency conversion rules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Translation setup \> Currency groups**.
 1. In the left pane, in the **Rule group** field, select the rule group that you're setting up the currency conversion rule for.
@@ -139,7 +139,7 @@ To set up currency groups so that they have currency conversion rules, follow th
 
 ## Set up an inflation index
 
-To set up an inflation index, follow these steps.
+To set up an inflation index, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Translation setup \> Inflation indexes**.
 1. In the left pane, in the **Rule group** field, select the translation group that you're setting up the inflation index for.
@@ -166,7 +166,7 @@ To set up an inflation index, follow these steps.
 
 You can use the **Dimension groups** page to set up rules for translating dimensions from the source company to the target company. A separate rule group is created to convert dimensions for each translation group, and then a set of dimension conversion options is specified for this group.
 
-To set up a dimension group and conversion rules for dimensions, follow these steps.
+To set up a dimension group and conversion rules for dimensions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Translation setup** \> **Dimension groups**.
 1. In the left pane, in the **Rule group** field, select the translation group that you're setting up dimension conversion rules for.
@@ -210,7 +210,7 @@ The following table shows examples of dimension conversion settings and their ef
 
 Use the **Translation ledger account rules** page to set up translation rules for ledger accounts. These rules are used to correlate a source company's accounts to a target company's accounts, and they include conversion rules for currency and dimensions.
 
-To set up account translation rules, follow these steps.
+To set up account translation rules, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Translation setup \> Ledger account rules**.
 1. In the upper part of the page, in the **Rule group** field, select the translation group that you're setting up the account conversion rules for.
@@ -279,7 +279,7 @@ To set up account translation rules, follow these steps.
 
 ## Set up translation parameters
 
-To set up translation parameters, follow these steps.
+To set up translation parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Translation** tab, set the **Stop on the first error** option to**Yes** to interrupt the translation session when the first error is detected.
@@ -347,7 +347,7 @@ To do a single translation, follow these steps to use the **Translation** wizard
 
 You can configure batch translation so that it's periodically run according to specific rules in batch mode.
 
-To configure batch translation, follow these steps.
+To configure batch translation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Translation sessions**.
 1. In the upper part of the page, in the **Rule group** field, select a group for batch translation.
@@ -366,7 +366,7 @@ To configure batch translation, follow these steps.
 
 A completed translation can't be processed more than one time. To rerun translation, you must first cancel the processed translation.
 
-To cancel a processed translation, follow these steps.
+To cancel a processed translation, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger \> Periodic tasks \> Translation sessions**.
 1. In the lower part of the page, select the translation to cancel.

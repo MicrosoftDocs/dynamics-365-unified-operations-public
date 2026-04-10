@@ -21,7 +21,7 @@ You can set up disposition codes to specify how to process an item returned by a
 
 You can also set up a reason code to help explain why an item was returned. For more information about reason codes, see [Set up return reason codes](set-up-return-reason-code.md).
 
-To set up a disposition code, follow these steps.
+To set up a disposition code, follow these steps:
 
 1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.
 1. Select **New** to create a new disposition code.

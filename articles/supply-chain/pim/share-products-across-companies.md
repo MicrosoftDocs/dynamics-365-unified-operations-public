@@ -60,7 +60,7 @@ To share products and product-related information, you must create and set up yo
 
 We recommend that you set up duplicate record sharing for tables that handle policies and related information.
 
-To create a duplicate record sharing policy, follow these steps. You can create as many duplicate record sharing policies as you want.
+To create a duplicate record sharing policy, follow these steps: You can create as many duplicate record sharing policies as you want.
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
@@ -83,7 +83,7 @@ To create a duplicate record sharing policy, follow these steps. You can create 
 
 The *Released product* table (`Inventtable`) must be set up for single record sharing.
 
-To create single record sharing policies for the **Released product** table and other tables, follow these steps.
+To create single record sharing policies for the **Released product** table and other tables, follow these steps:
 
 1. Go to **System administration \> Setup \> Configure cross-company data sharing**.
 1. On the Action Pane, select **New**.
@@ -172,7 +172,7 @@ By default, most country/region-specific fields are disabled in product tables, 
 
 When you create a product, you must specify several different units of measure, each for a specific purpose. For example, you might specify an inventory unit, a purchase unit, and a sales unit. The **New released product** dialog box shows the same default unit for all of them, based on the default setting for the current company. However, you can edit the unit for each unit of measure separately in the dialog box.
 
-To assign the default unit for a company, follow these steps.
+To assign the default unit for a company, follow these steps:
 
 1. On the navigation bar, select the company (legal entity) that you want to set defaults for.
 1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.

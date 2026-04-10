@@ -22,7 +22,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 
 ## Customer turnover register
 
-To configure and generate the Customer turnover register, follow these steps.
+To configure and generate the Customer turnover register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Customer turnover register**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -66,7 +66,7 @@ To configure and generate the Customer turnover register, follow these steps.
 
 ## Vendor turnover register
 
-To configure and generate the Vendor turnover register, follow these steps.
+To configure and generate the Vendor turnover register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Vendor turnover register**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -110,7 +110,7 @@ To configure and generate the Vendor turnover register, follow these steps.
 
 ## Advance holder turnover register
 
-To configure and generate the Advance holder turnover register, follow these steps.
+To configure and generate the Advance holder turnover register, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Advance holder turnover register**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -151,7 +151,7 @@ To configure and generate the Advance holder turnover register, follow these ste
 
 The **General ledger** report is designed to generate turnover on a specified account that is in correspondence with other accounts.
 
-To configure and generate the general ledger report, follow these steps.
+To configure and generate the general ledger report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **General ledger**.
 1. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
@@ -197,7 +197,7 @@ To configure and generate the general ledger report, follow these steps.
 
 On the **Report archive** page, you can view reports and download them in Excel format.
 
-To create, print, and view a report from the turnover balance statement report archive, follow these steps.
+To create, print, and view a report from the turnover balance statement report archive, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Report archive**.
 1. On the **Turnover and balance statement report archive** page, in the **Report type** field, specify the type of report.
@@ -214,7 +214,7 @@ To create, print, and view a report from the turnover balance statement report a
 
 By precalculating transactional data, you can help improve performance.
 
-To precalculate transactional data, follow these steps.
+To precalculate transactional data, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Ledger** tab, in the **Turnover balance statement** section, set the **Use pre-calculated data** option to **Yes**.

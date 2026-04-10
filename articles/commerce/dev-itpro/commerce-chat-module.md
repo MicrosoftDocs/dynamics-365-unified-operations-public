@@ -57,7 +57,7 @@ The following table shows the script values from the Omnichannel for Customer Se
 
 One recommended way to implement the chat experience for your e-commerce site is to add the Commerce Chat with Omnichannel for Customer Service module to the shared header fragment that is used on your e-commerce site pages.
 
-To add the chat module to your site's header fragment in Commerce site builder, follow these steps.
+To add the chat module to your site's header fragment in Commerce site builder, follow these steps:
 
 1. In site builder for your site, go to **Fragments**.
 1. Select **New**.
@@ -87,7 +87,7 @@ You can add an application tab for Commerce headquarters in Omnichannel for Cust
 
 ### Create a new application tab that loads Commerce headquarters in an iFrame module 
 
-To create a new application tab that loads Commerce headquarters in an iFrame module, follow these steps.
+To create a new application tab that loads Commerce headquarters in an iFrame module, follow these steps:
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. In the navigation pane on the left, select **Apps**.
@@ -105,7 +105,7 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 
 ## Enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service
 
-To enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service, follow these steps.
+To enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service, follow these steps:
 	
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. In the navigation pane on the left, select **Apps**.
@@ -119,7 +119,7 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
-To add context variables in Dynamics 365 Omnichannel for Customer Service, follow these steps.
+To add context variables in Dynamics 365 Omnichannel for Customer Service, follow these steps:
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. In the navigation pane on the left, select **Apps**.
@@ -133,7 +133,7 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 
 ## Update Content Security Policy (CSP) in site builder
 
-To update Content Security Policy (CSP) for your site in site builder, follow these steps.
+To update Content Security Policy (CSP) for your site in site builder, follow these steps:
 
 1. In site builder, select the site you're working on.
 1. Select **Site Settings \> Extensions**.

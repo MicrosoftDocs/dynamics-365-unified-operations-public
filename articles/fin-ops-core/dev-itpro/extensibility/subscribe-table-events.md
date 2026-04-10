@@ -4,7 +4,7 @@ description: Learn about business actions that you can perform throughout the li
 author: ivanv-microsoft
 ms.author: ivanv
 ms.topic: article
-ms.date: 07/11/2017
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-As part of your business workflows, records are regularly inserted, updated, and deleted. To customize the system behavior, you can hook into some of the record operations that are most often used. For example, you can fill additional fields on the record, perform additional data validation, or insert additional data into related tables. Several events that are available on the table let you achieve those customizations through extensions. Your code can subscribe to these events, and can insert your logic before or after the event is run.
+As part of your business workflows, you regularly insert, update, and delete records. To customize the system behavior, hook into some of the record operations that are most often used. For example, you can fill extra fields on the record, perform extra data validation, or insert extra data into related tables. Several events that are available on the table let you achieve those customizations through extensions. Your code can subscribe to these events, and can insert your logic before or after the event runs.
 
 For a list of the events that you can subscribe to, see the "Table extensions" section in [Customize through extension and overlayering](customization-overlayering-extensions.md#table-extensions).
 

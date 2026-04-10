@@ -48,7 +48,7 @@ A new work blocking reason, *Split work*, indicates when the work ID is in the p
 
 The feature adds a new **Split work** page that lets users split work lines from the work ID. When the page is first opened, it shows lines that have a work status of *Open* and that are available to be split. On the Action Pane, select **Split work** to process the selected work.
 
-To split work, follow these steps.
+To split work, follow these steps:
 
 1. Open one of the following work pages:
 

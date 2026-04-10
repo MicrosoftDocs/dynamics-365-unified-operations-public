@@ -52,7 +52,7 @@ Before you can use the features that are described in this article, your system 
 
 ### Set up the feature for the first time
 
-To set up the feature for the first time, follow these steps.
+To set up the feature for the first time, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management** \> **Setup** \> **Inventory Visibility** \> **Inventory Visibility integration parameters**.
@@ -64,7 +64,7 @@ To set up the feature for the first time, follow these steps.
 
 ### Manage the feature configuration
 
-To manage the feature configuration, follow these steps.
+To manage the feature configuration, follow these steps:
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Settings** \> **Feature management**.
@@ -174,7 +174,7 @@ Detailed and aggregated transactions differ in the following ways:
 
 ### View detailed inventory transactions
 
-To view detailed inventory transactions, follow these steps.
+To view detailed inventory transactions, follow these steps:
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
@@ -193,7 +193,7 @@ To view detailed inventory transactions, follow these steps.
 
 ### View aggregated inventory transactions
 
-To view aggregated inventory transactions, follow these steps.
+To view aggregated inventory transactions, follow these steps:
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
@@ -218,7 +218,7 @@ To export transaction details, you must access them from the Dataverse entity an
 
 ## Check inventory journals posted to Supply Chain Management
 
-To view the aggregated lines that were successfully posted or created in Supply Chain Management, follow these steps.
+To view the aggregated lines that were successfully posted or created in Supply Chain Management, follow these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management** \> **Journal entries** \> **Items** \> **Inventory adjustment**.

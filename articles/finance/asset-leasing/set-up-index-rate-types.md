@@ -20,7 +20,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 If lease payments depend on an index, the index rate types can be added and maintained in the system. To revalue the lease payments from the **Index rate type** page, the index rate revaluation process uses the most recent index rate from the date of revaluation.
 
-To add index rate types and index rates, follow these steps.
+To add index rate types and index rates, follow these steps:
 
 1. Go to **Asset leasing \> Setup \> Index rate type**.
 2. Select **New**.

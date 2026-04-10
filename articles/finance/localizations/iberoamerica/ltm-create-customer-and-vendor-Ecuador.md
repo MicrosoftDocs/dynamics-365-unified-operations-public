@@ -32,7 +32,7 @@ Before you create records for customers and vendors who are located in Ecuador, 
 
 ## Create a record for a customer in Ecuador
 
-To create a record for a customer in Ecuador, follow these steps.
+To create a record for a customer in Ecuador, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select **New**.
 1. In the **Type** field, select **Organization** for **Sociedad** or **Person** for **Persona natural**.
@@ -59,7 +59,7 @@ To create a record for a customer in Ecuador, follow these steps.
 
 ## Create a record for a vendor in Ecuador
 
-To create a record for a vendor in Ecuador, follow these steps.
+To create a record for a vendor in Ecuador, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select **New**.
 1. In the **Type** field, select **Organization** for **Sociedad** or **Person** for **Persona natural**.

@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can enter a CIAP transaction by posting a fiscal document or entering a tran
 
 The following procedure uses the BRMF demo company.
 
-To enter a CIAP transaction, follow these steps.
+To enter a CIAP transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Common \> Fixed assets \> All CIAP fixed assets**.
 1. Select **New**.

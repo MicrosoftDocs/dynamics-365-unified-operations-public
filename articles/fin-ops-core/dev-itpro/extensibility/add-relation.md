@@ -4,7 +4,7 @@ description: Learn how to add a relation to a table to enable secure interaction
 author: ivanv-microsoft
 ms.author: ivanv
 ms.topic: how-to
-ms.date: 04/04/2019
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -20,7 +20,7 @@ To enable rich and secure interactions with data in multiple tables, you must he
 
 You can add a new relation by extending a table.
 
-In the following example, a new field, **MyInventLocationId**, is added to the InventTable table. This field is a reference to the InventLocation table that contains warehouses.
+In the following example, you add a new field, **MyInventLocationId**, to the InventTable table. This field is a reference to the InventLocation table that contains warehouses.
 
 1. In the new extension model, create an extension of the InventTable table.
 1. Create a new relation, just as you would create a relation on a regular table.
@@ -29,15 +29,14 @@ In the following example, a new field, **MyInventLocationId**, is added to the I
 
 The following illustration shows the new relation.
 
-![New relation.](media/AddRelationToExistingTable.jpg)
+:::image type="content" source="media/AddRelationToExistingTable.jpg" alt-text="Screenshot of the new relation added to the InventTable table.":::
 
 ## Troubleshooting
 
 ### Navigation property methods not working
-**Issue** - Navigation property methods do not work when a foreign key relation is created using a table extension. The compiler will not allow a call to a navigation method on the extended table.
 
-**Solution** - Navigation methods are not supported at this time.
+**Issue** - Navigation property methods don't work when you create a foreign key relation by using a table extension. The compiler doesn't allow a call to a navigation method on the extended table.
 
-
+**Solution** - Navigation methods aren't supported at this time.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -25,7 +25,7 @@ The procedures use the demo data company JPMF.
 
 ## Settle a vendor transaction that an endorsement generates
 
-To settle a vendor transaction that an endorsement generates, follow these steps.
+To settle a vendor transaction that an endorsement generates, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable \> Payments \> Endorse bills of exchange**.
 1. In the list, find and select a bill of exchange with a status of **Endorsed**.  
@@ -38,7 +38,7 @@ To settle a vendor transaction that an endorsement generates, follow these steps
 
 ## Settle an endorsed bill of exchange
 
-To settle an endorsed bill of exchange, follow these steps.
+To settle an endorsed bill of exchange, follow these steps:
 
 1. Select **Settle endorsed bill of exchange** to open the dialog.
 1. Select **Settle endorsed bill of exchange**.

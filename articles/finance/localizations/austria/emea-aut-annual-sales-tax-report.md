@@ -37,7 +37,7 @@ are reported in tax box 022.
 For each tax box in the VAT statement, you can create a sales tax reporting code and assign it to a sales tax code. 
 These sales tax reporting codes are entered in the **Taxable sales** and **Sales tax payable** fields on the **Report setup** tab of the **Sales tax codes** form. Learn more in [Set up sales tax reporting codes](../../general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
 
-To set up sales tax reporting codes, follow these steps.
+To set up sales tax reporting codes, follow these steps:
 
 1. Select **Tax** > **Setup** > **Sales tax** > **Sales tax reporting codes**.
 1. Create a new sales tax reporting code. Learn more in [Set up sales tax reporting codes](../../general-ledger/tasks/set-up-sales-tax-reporting-codes.md).
@@ -55,7 +55,7 @@ The format follows the standard Austrian Steuernummer pattern: 12-345/6789.
 
 ## Generate the annual sales tax report U1
 
-To generate the annual sales tax report U1, follow these steps.
+To generate the annual sales tax report U1, follow these steps:
 
 1. Go to **Tax** > **Inquires and reports** > **Sales tax reports** > **Annual sales tax (Austria)**.
 1. In the **Austrian annual sales tax report** dialog box, on the **Parameters** FastTab, set the following fields.

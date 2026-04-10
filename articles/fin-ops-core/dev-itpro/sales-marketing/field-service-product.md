@@ -4,7 +4,7 @@ description: Learn about the templates and underlying task that are used to sync
 author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 03/13/2026
 ms.custom: 
 ms.reviewer: kamaybac
 audience: IT Pro
@@ -60,7 +60,7 @@ The following illustrations show the template mapping in Data integration.
 
 ### Field Service Products (Supply Chain Management to Field Service): Products - Products
 
-![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProduct.png)
+:::image type="content" source="../../../supply-chain/sales-marketing/media/FSProduct.png" alt-text="Screenshot of the template mapping in Data integration.":::
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

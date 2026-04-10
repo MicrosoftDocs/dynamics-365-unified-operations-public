@@ -50,7 +50,7 @@ Before you can generate and print RVIE reports, the following prerequisites must
 
 ## Configure application-specific parameters for the RVIE annex reports including the Excel output
 
-To configure application-specific parameters for an RVIE report, follow these steps.
+To configure application-specific parameters for an RVIE report, follow these steps:
 
 1. In Finance, go to **Organization administration** \> **Workspaces**, and select **Reporting configurations**.
 1. In the **LTM Tax report** group, for each format that is listed in the [Prerequisites](#prerequisites) section, on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
@@ -91,7 +91,7 @@ To configure application-specific parameters for an RVIE report, follow these st
 
 ## Generate an RVIE annex report
 
-To generate any RVIE annex report, follow these steps.
+To generate any RVIE annex report, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, select a value listed in the [Prerequisites](#prerequisites) section.

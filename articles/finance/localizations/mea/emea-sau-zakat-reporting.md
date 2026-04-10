@@ -1,10 +1,10 @@
 ---
 title: Zakat reporting
 description: People of the Islamic faith whose annual earnings exceed a level called Nisab are legally obligated to pay 2.5 percent of their earnings to the government as Zakat.
-author: mrolecki
+author: liza-golub
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/16/2025
+ms.date: 01/12/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Saudi Arabia
@@ -34,5 +34,20 @@ Saudi companies of all types and companies owned by nationals of the Gulf Cooper
 - Other adjustments report
 - Other additions report
 - Other deductions report
+
+## Generate Zakat reports for a fiscal year
+
+1. Go to **Tax** > **Inquiries and reports** > **Zakat reports**.
+1. On the Action Pane, select **New fiscal year**.
+1. In the dialog box, select the fiscal year for which you want to generate **Zakat reports**.
+1. Select **OK**.
+
+The system automatically creates the **Zakat reports** for the selected fiscal year.
+
+## Print Zakat reports
+
+1. Go to **Tax** > **Inquiries and reports** > **Zakat reports**.
+1. Select the reports you want to print. Mark the checkbox for each **Zakat report** that you want to include.
+1. On the Action Pane, select **Print**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

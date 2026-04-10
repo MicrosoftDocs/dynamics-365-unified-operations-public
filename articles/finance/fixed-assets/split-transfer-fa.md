@@ -4,7 +4,7 @@ description: Learn how to split and transfer fixed assets between legal entitiie
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 09/04/2025
+ms.date: 02/04/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -16,11 +16,12 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Fixed asset intercompany split and transfer (preview)
 
-[!include banner]
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes how to split and transfer fixed assets between legal entitiies.
 
-[!INCLUDE preview-note]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The fixed asset intercompany split and transfer feature allows organizations to efficiently manage the movement of fixed assets between legal entities — whether through full transfers or partial splits — without switching between companies. It automates the mapping of asset groups, books, and key fields between source and destination entities, streamlining intercompany asset operations.
 

@@ -21,7 +21,7 @@ Automatic charges (auto charges) are automatically applied when you create a sal
 
 ## Set up parameters
 
-The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to apply charges automatically in the purchase order. To complete this setup, follow these steps.
+The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to apply charges automatically in the purchase order. To complete this setup, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the following fields:
@@ -29,7 +29,7 @@ The **Procurement and sourcing parameters** page has a few settings that are esp
     - **Find auto charges for header** – Set this option to *Yes* if charges should automatically be applied to purchase order headers.
     - **Find auto charges for line** – Set this option to *Yes* if charges should automatically be applied to purchase order lines.
 
-The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically in the sales order. To complete this setup, follow these steps.
+The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically in the sales order. To complete this setup, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Prices** tab, on the **Prices** FastTab, set the following fields:
@@ -72,7 +72,7 @@ Charge groups automatically apply specific charges to a group of customers or ve
 
 ### Charge groups for purchase orders
 
-To create charge groups for purchase orders, follow these steps.
+To create charge groups for purchase orders, follow these steps:
 
 1. Go to **Procurement and sourcing** \> **Setup** \> **Charges** \> **Vendor charges group**.
 1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
@@ -86,7 +86,7 @@ To create charge groups for purchase orders, follow these steps.
 
 ### Charge groups for sales orders
 
-To create charge groups for sales orders, follow these steps.
+To create charge groups for sales orders, follow these steps:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Charges** \> **Customer charge groups**.
 1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:

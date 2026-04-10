@@ -64,7 +64,7 @@ The VAT amount that must be restored is calculated by using the following formul
 
 Use the **General ledger parameters page** to set up the parameters for VAT restoration.
 
-To set up parameters for VAT restoration, follow these steps.
+To set up parameters for VAT restoration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT restoration** section, set the following fields:
@@ -115,7 +115,7 @@ incoming invoices.
 
 ### Use fixed assets for export or VAT-free activities
 
-To use fixed assets for export or VAT-free activities, follow these steps.
+To use fixed assets for export or VAT-free activities, follow these steps:
 
 1. In Dynamics 365 Finance, on the **Fixed assets** page, select **FA usage**.
 1. On the **Product/output mileage** page, in the **Output/run export** or **Output/run nontaxable** field, define how the fixed asset is used in export or non-taxable activities.
@@ -136,7 +136,7 @@ Use the **VAT restoring journal** page to create, approve, and cancel VAT restor
 > [!NOTE]
 > When you restore VAT amounts for fixed assets, the fixed asset depreciation for the period must be calculated and posted.
 
-To calculate the VAT amounts that must be restored, follow these steps.
+To calculate the VAT amounts that must be restored, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **VAT restoring journal**. The **VAT restoring journal** page shows the data for incoming invoice-factures that VAT amounts must be restored for in the current period.
 
@@ -243,7 +243,7 @@ If no outgoing VAT is processed during a specific period, select **Restore VAT p
 
 Recoverable VAT amounts for incoming factures are approved on the **VAT restoring journal** page.
 
-To process outgoing VAT, follow these steps.
+To process outgoing VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Parameters of VAT process** to configure the VAT processing parameters.
 1. Create a new line, and enter the code for the incoming VAT processing operation.

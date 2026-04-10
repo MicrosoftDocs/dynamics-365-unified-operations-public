@@ -24,7 +24,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 ## Prerequisites
 
-Invoice capture officially supports only integrated Power Platform environments. For more information, see [Integrated Power Platform environments](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). For an integrated Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps.
+Invoice capture officially supports only integrated Power Platform environments. For more information, see [Integrated Power Platform environments](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). For an integrated Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
 2. Select **Resource** \> **Dynamic 365 apps**.
@@ -83,7 +83,7 @@ Invoice capture supports integrated Power Platform environments.
 
 ### Integrated Power Platform environment
 
-For an *integrated* Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps.
+For an *integrated* Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
 2. Select **Resource \> Dynamic 365 apps**.
@@ -91,7 +91,7 @@ For an *integrated* Power Platform environment, the finance and operations virtu
 
 To install Invoice capture, follow this step.
 
-- In AppSource, search for **Invoice Capture for Dynamics 365 Finance**. The preview version of Invoice capture can be found [here](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dynamics365-fno-invoice-capture-preview?flightCodes=15e3cf87e5e04ac5872c702deb9f7ae7). After the installation is completed, you should see the solution installed in the selected environment in Power Apps.
+- In Marketplace, search for **Invoice Capture for Dynamics 365 Finance**. The preview version of Invoice capture can be found [here](https://marketplace.microsoft.com/en-us/product/dynamics-365/mscrm.dynamics365-fno-invoice-capture-preview?flightCodes=15e3cf87e5e04ac5872c702deb9f7ae7). After the installation is completed, you should see the solution installed in the selected environment in Power Apps.
 
 > [!NOTE]
 > After installation, in Invoice capture, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
@@ -107,7 +107,7 @@ When a new solution is available, users are notified of the availability of the 
 
 ## Delete the Invoice capture solution
 
-If you must delete the Invoice capture solution, follow these steps.
+If you must delete the Invoice capture solution, follow these steps:
 
 1. In Microsoft Power Platform, select the correct environment, and then select **Solution**.
 2. To completely delete the Invoice capture solution, delete the solutions in the following order:

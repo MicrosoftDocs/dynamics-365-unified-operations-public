@@ -43,10 +43,9 @@ The Finance insights update delivers four key benefits:
 
 1. Enhanced reliability and scalability:
    - Automatic retry logic for failed transformations
-   - Data validation ensuring consistency between Finance & Operations and BPA
+   - Data validation ensuring consistency between Dynamics 365 Finance and operations and Business performance analytics
    - Data pipeline health monitoring and alerting
    - Self-healing with automatic recovery from transient failures
-
    - Scalability improvements:
      - Elastic compute that scales automatically with data volume
      - Storage that can expand as needed
@@ -70,7 +69,7 @@ Customers don't need to manually uninstall Export to Data Lake, configure Busine
 
 ### Opting out of update
 
-If you choose not to update, you will lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x beyond that date.
+If you choose not to update, you will lose access to Finance insights features when Export to Data Lake is discontinued. There's no option to continue using Finance Insights 1.0.0.x.
 
 If you want to opt out of the update and discontinue using Finance insights entirely, you must uninstall Finance insights before February 1, 2026. For uninstallation instructions, see [Uninstall Finance insights](uninstall-finance-insights.md).
 Uninstalling Finance insights removes all Finance insights functionality, including prediction models and historical data.

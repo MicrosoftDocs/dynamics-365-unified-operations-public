@@ -25,7 +25,7 @@ The procedures was created using the demo data company MXMF.
 
 ## Set up PAC accounts
 
-To set up PAC accounts, follow these steps.
+To set up PAC accounts, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> E-Invoices \> PAC Accounts**.
 1. Select **New**.
@@ -46,7 +46,7 @@ To set up PAC accounts, follow these steps.
 
 ## Set up electronic invoice parameters
 
-To set up electronic invoice parameters, follow these steps.
+To set up electronic invoice parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable \> Invoices \> E-Invoices \> Electronic invoice parameters**.
 1. For the **Enable CFDI (electronic invoice)** option, set the slider to **Yes**.  

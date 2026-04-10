@@ -2,14 +2,14 @@
 title: Pricing examples
 description: This article provides examples of typical uses of pricing and discounts in Microsoft Dynamics 365 Commerce.
 author: zhizhen
-ms.date: 01/11/2024
+ms.date: 01/28/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: zhizhen
 ms.search.validFrom:
-
+ms.custom: 
+  - bap-template
 ---
 
 # Pricing examples
@@ -22,8 +22,8 @@ This article provides examples of typical uses of pricing and discounts in Micro
 
 Follow these steps to configure a mix and match discount so that users who purchase product A receive a discount on product B when both items are in their cart.
 
-1. In Commerce headquarters, go to **Retail and Commerce** \> **Pricing and discounts** \> **Mix and match discounts**.
-1. On the Action Pane, select **New** \> **Mix and match discounts**.
+1. In Commerce headquarters, go to **Retail and Commerce** > **Pricing and discounts** > **Mix and match discounts**.
+1. On the Action Pane, select **New** > **Mix and match discounts**.
 1. Configure general settings for the new mix and match discount, such as the price groups, discount name, priority, and validation period. For more information about how to configure these settings, see [Retail discounts](retail-discounts-overview.md).
 1. On the **Price/discount** FastTab, in the **Calculation type** field, select **Line spec**.
 1. On the **Lines** FastTab, select **Add** to add a line for the first product (product A). Set the **Line group** field to **A** and the **Discount value** field to **0** (zero).
@@ -34,7 +34,7 @@ In the example in the following image:
 - The discount is applicable when the cart contains a quantity of 2 for items in the **Apparel and Footwear** category and a quantity of 1 for item 0103.
 - When the discount is applied, the item 0103 in the cart gets 100 percent off.
 
-![Screenshot that shows an example of the setup for the Purchase product A, and receive a discount on product B when both items are in your cart scenario](./media/mix-and-match-sample.png)
+:::image type="content" source="./media/mix-and-match-sample.png" alt-text="Screenshot of mix and match discount setup for the purchase product A and receive discount on product B scenario.":::
 
 ## Receive a discount on a specific item when the cart total reaches a specific amount
 
@@ -55,6 +55,6 @@ In the example in the following image:
 - The discount is applicable when the total amount for items in the **Fashion** category reaches $100.
 - When the discount is applied, the item 0029 in the cart gets 30 percent off.
 
-![Screenshot that shows an example of the setup for the Receive a discount on a specific item when the cart total reaches a specific amount scenario](./media/threshold-sample-1.png)
+:::image type="content" source="./media/threshold-sample-1.png" alt-text="Screenshot of threshold discount setup for the receive discount when cart total reaches specific amount scenario.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

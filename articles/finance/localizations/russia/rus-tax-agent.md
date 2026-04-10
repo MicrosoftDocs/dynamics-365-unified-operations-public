@@ -37,7 +37,7 @@ Before you can create tax agent transactions, you must set up the parameters for
 
 ### Set up the VAT operation code for the tax declaration
 
-To set up the VAT operation code for the tax declaration, follow these steps.
+To set up the VAT operation code for the tax declaration, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Setup** \> **Sales tax** \> **VAT operation codes**.
 1. In the **VAT operation code** field, enter the operation code for the VAT declaration.
@@ -46,7 +46,7 @@ To set up the VAT operation code for the tax declaration, follow these steps.
 
 ### Set up the sales tax code for tax agent transactions
 
-To set up the sales tax code for tax agent transactions, follow these steps.
+To set up the sales tax code for tax agent transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. Create a tax code.
@@ -77,7 +77,7 @@ To set up the sales tax code for tax agent transactions, follow these steps.
 
 ### Set up a vendor tax authority
 
-To set up a vendor tax authority, follow these steps.
+To set up a vendor tax authority, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
 1. Create a tax authority, and enter the required information.
@@ -88,7 +88,7 @@ To set up a vendor tax authority, follow these steps.
 
 On the **Vendors** page, you can define a vendor as a tax agent. You can then perform transactions with this vendor.
 
-To create a vendor and post transactions, follow these steps.
+To create a vendor and post transactions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Create a vendor that your company acts as a tax agent for, and enter the required information.
@@ -118,7 +118,7 @@ In the Vendor payment journal, two options for paying VAT as a tax agent are imp
 
 On the **Vendor payment proposal** page, you can create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate VAT payments to a tax authority.
 
-To create a payment proposal for a tax agent invoice, follow these steps.
+To create a payment proposal for a tax agent invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a journal, and then select **Lines** to open the **Vendor payments** page.
@@ -145,7 +145,7 @@ To create a payment proposal for a tax agent invoice, follow these steps.
 
 ### Create a prepayment
 
-To create a prepayment, follow these steps.
+To create a prepayment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** \> **Payments** \> **Payment journal**.
 1. Create a journal, and then select **Lines** to open the **Vendor payments** page.
@@ -162,7 +162,7 @@ To create a prepayment, follow these steps.
 
 Before you can create and print a facture report for received invoices, issued invoices, purchases, or sales in estimates of VAT, you must complete the following procedure.
 
-To create and print factures for VAT deductions, follow these steps.
+To create and print factures for VAT deductions, follow these steps:
 
 1. In Dynamics 365 Finance, set up the parameters for a tax agent transaction.
 1. Define a vendor as a tax agent.

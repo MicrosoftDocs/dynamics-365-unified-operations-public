@@ -38,7 +38,7 @@ This article explains how to configure all the settings that are required to set
 
 Different countries/regions have different requirements for dual-use goods. You use the **Dual use country setup** page to keep track of the countries/regions that do and don't require a certificate. The information that you specify here is checked when you create sales orders, and you will be reminded to provide the required certifications.
 
-To set up the information about dual-use requirements for different countries/regions, follow these steps.
+To set up the information about dual-use requirements for different countries/regions, follow these steps:
 
 1. Go to **Product information management \> Setup \> Product compliance \> Dual use products \> Dual use country setup**.
 2. Select an existing country/region setup to edit it, or select **New** on the Action Pane to create a new country/region setup.
@@ -53,7 +53,7 @@ To set up the information about dual-use requirements for different countries/re
 
 Dual-use goods must often be categorized according to their export control classification number (ECCN). The ECCN is an alphanumeric code that categorizes items based on factors such as the commodity and technology. The **Dual use categories** page helps you make a list of the categories that you use, for reporting purposes.
 
-To set up dual-use categories, follow these steps.
+To set up dual-use categories, follow these steps:
 
 1. Go to **Product information management \> Setup \> Product compliance \> Dual use products \> Dual use categories**.
 2. Select an existing category to edit it, or select **New** on the Action Pane to create a new category.
@@ -68,7 +68,7 @@ To set up dual-use categories, follow these steps.
 
 ## Apply dual-use categories to products
 
-To identify a product as a dual-use good and apply a dual-use category to it, follow these steps.
+To identify a product as a dual-use good and apply a dual-use category to it, follow these steps:
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select or create a product to open its **Released product details** page.

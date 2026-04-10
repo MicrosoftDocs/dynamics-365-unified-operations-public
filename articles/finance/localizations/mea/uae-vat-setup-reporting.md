@@ -26,7 +26,7 @@ Registered businesses and traders charge VAT to all their customers at the curre
 
 According to the *Requirements Document for Tax Accounting Software* that the Federal Tax Authority (FTA) issued, you must set up additional information when you configure a legal entity.
 
-To configure a legal entity for VAT, follow these steps.
+To configure a legal entity for VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. On the **Value added tax** FastTab, set the following fields:

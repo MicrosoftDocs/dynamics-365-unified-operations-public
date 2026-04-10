@@ -35,7 +35,7 @@ Before you can set up item substitution for formulas or BOMs, you must set up th
 
 A plan group is a group of items that can be substituted for a particular material in a formula or BOM. Each plan group record establishes a name and a description, but it doesn't include any items. You assign items and their relative priorities to each plan group when you set up item substitution for a specific formula or BOM. You can reuse plan groups across multiple formulas and/or BOMs.
 
-To set up plan groups, follow these steps.
+To set up plan groups, follow these steps:
 
 1. Go to **Product information management** \> **Setup** \> **Bills of materials and formulas** \> **Plan groups**.
 1. Use the buttons on the Action Pane to add, remove, or edit plan groups as required. For each plan group, set the following fields:

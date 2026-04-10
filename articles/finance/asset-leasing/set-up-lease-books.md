@@ -26,7 +26,7 @@ Lease books contain the accounting policies that determine how a lease is accoun
 - International Financial Reporting Standard 16 (IFRS 16)
 - International Accounting Standard 17 (IAS 17)
 
-To create a lease book, follow these steps.
+To create a lease book, follow these steps:
 
 1. Go to **Asset leasing \> Setup \> Lease books**.
 2. Select **New** to add a book.

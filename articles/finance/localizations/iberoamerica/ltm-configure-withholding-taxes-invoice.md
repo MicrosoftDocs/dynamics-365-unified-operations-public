@@ -2,7 +2,7 @@
 title: Configure withholding taxes at invoice posting
 description: Learn how to configure the withholding taxes to apply to vendor invoices.
 author: Fhernandez0088
-ms.date: 10/07/2025
+ms.date: 01/05/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -11,14 +11,16 @@ ms.author: v-federicohe
 
 # Configure withholding taxes at invoice posting
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [does not apply to](includes/does-not-apply-to.md)]
 
 This article describes how to configure withholding taxes that apply when you post a vendor invoice that uses negative tax codes.
 Several LATAM Expansion reports use these types of withholdings in many countries and regions, such as Colombia, Chile, and Venezuela.
 
 ## Configure taxes
 
-To configure taxes, follow these steps.
+To configure taxes, follow these steps:
 
 1. To create a negative tax code, go to **Tax** > **Indirect taxes** > **Sales Tax** > **Sales tax codes**.
 1. Create a new tax code and set the **Allow negative sales tax percentage** slider to **Yes**.
@@ -29,7 +31,7 @@ Learn more in [Set up sales tax codes](../../general-ledger/tasks/set-up-sales-t
 
 ## Set up sales tax groups
 
-To set up sales tax groups, follow these steps.
+To set up sales tax groups, follow these steps:
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
 1. Create a Sales tax group.
@@ -40,7 +42,7 @@ To set up sales tax groups, follow these steps.
 
 ## Assign the tax groups to a vendor
 
-To assign the tax groups to a vendor, follow these steps.
+To assign the tax groups to a vendor, follow these steps:
 
 1. Go to **Accounts payable** > **Vendors** > **All vendors**.
 1. Select a vendor account to open the configuration form.

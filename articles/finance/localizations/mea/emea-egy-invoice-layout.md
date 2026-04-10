@@ -49,7 +49,7 @@ For more information about how to import ER configurations, see [Download Electr
 
 ## Configure conversion to PDF
 
-By default, the system generates invoices as Microsoft Excel files. To enable their conversion to PDF format, follow these steps.
+By default, the system generates invoices as Microsoft Excel files. To enable their conversion to PDF format, follow these steps:
 
 1. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting destination**.
 1. On the **Electronic reporting destination** page, create destinations for the following related formats:
@@ -74,7 +74,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ### Configure print management
 
-To configure print management, follow these steps.
+To configure print management, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
 1. On the **Form setup** page, on the **General** tab, select **Print management**.
@@ -93,7 +93,7 @@ To configure print management, follow these steps.
 
 ### Activate credit invoicing
 
-To activate credit invoicing, follow these steps.
+To activate credit invoicing, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 1. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice** FastTab, set the **Apply the credit invoicing layout into sales and project invoice reports** option to **Yes**.

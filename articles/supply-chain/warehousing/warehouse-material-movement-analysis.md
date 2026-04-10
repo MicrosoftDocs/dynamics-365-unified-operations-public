@@ -96,7 +96,7 @@ After you've deployed a process, you can configure it at any time by following t
 
 You can access the warehouse material movement analysis process from both Supply Chain Management and Power Automate Process Mining UI.
 
-To access the process from Supply Chain Management, follow these steps.
+To access the process from Supply Chain Management, follow these steps:
 
 1. Go to **Warehouse management \> Enquiries and reports \> Warehouse performance analysis \> Warehouse material movement analysis**.
 1. In the **Process name** field, select the name of the process to view. The list includes only processes that meet both the following conditions:

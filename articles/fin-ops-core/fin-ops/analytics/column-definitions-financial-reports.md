@@ -4,7 +4,7 @@ description: Learn about column definitions. A column definition is a report com
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 10/10/2019
+ms.date: 03/12/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -27,25 +27,25 @@ A column definition can contain two to 255 columns.
 ### Create a column definition
 
 1. In Report designer, in the navigation pane, click **Column definitions**.
-2. On the **File** menu, click **New**, and then click **Column definition**.
-3. Add the contents of the column definition.
+1. On the **File** menu, click **New**, and then click **Column definition**.
+1. Add the contents of the column definition.
 
 ### Open a column definition
 
 1. In Report designer, in the navigation pane, click **Column definitions**.
-2. Double-click a column definition to open it.
+1. Double-click a column definition to open it.
 
 ### Add a column to a column definition
 
 1. In Report designer, click **Column definitions**, and then open the column definition to modify.
-2. Select the column where a new column should be inserted.
-3. On the **Edit** menu, click **Insert column**. The new column appears to the left of the column that you selected.
+1. Select the column where a new column should be inserted.
+1. On the **Edit** menu, click **Insert column**. The new column appears to the left of the column that you selected.
 
 ### Delete a column from a column definition
 
 1. In Report designer, click **Column definitions**, and then open the column definition to modify.
-2. Select the column to delete.
-3. On the **Edit** menu, click **Delete column**.
+1. Select the column to delete.
+1. On the **Edit** menu, click **Delete column**.
 
 ## Contents of a column definition
 A column definition includes the following information:
@@ -92,8 +92,8 @@ The **Column restrictions** cell can include codes that restrict or suppress inf
 #### Add a column restriction in a column definition
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Column restrictions** cell for the column to restrict.
-3. In the **Column restrictions** dialog box, select one or more codes in the list, and then click **OK**.
+1. Double-click the **Column restrictions** cell for the column to restrict.
+1. In the **Column restrictions** dialog box, select one or more codes in the list, and then click **OK**.
 
 ### Column restriction codes
 
@@ -114,9 +114,9 @@ The following table describes the column restriction codes.
 ### Restrict a column to a reporting unit
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Reporting unit** cell for the column to restrict.
-3. In the **Reporting unit selection** dialog box, in the **Reporting tree** list, select a tree.
-4. Expand or collapse the list of units, select a reporting unit, and then click **OK**.
+1. Double-click the **Reporting unit** cell for the column to restrict.
+1. In the **Reporting unit selection** dialog box, in the **Reporting tree** list, select a tree.
+1. Expand or collapse the list of units, select a reporting unit, and then click **OK**.
 
 ## Format column headers
 You can add, modify, and delete the headers that appear at the top of the columns on a report. You can also configure conditional spanning column headers, based on the **Period** field from column definitions and the **Base period** field from report definitions. The base period feature helps save you time when you create rolling forecast reports.
@@ -135,18 +135,18 @@ You can use the **Column header** dialog box to add, modify, and delete the head
 ### Create a column header
 
 1. In Report designer, open the column definition to modify.
-2. Double-click a header cell.
-3. In the **Column header** dialog box, enter the column header text. Alternatively, click **Insert autoText**, and select an option.
-4. In the **Format options** field, select a format for the header.
-5. In the **Spread from** field, enter the letter of the column that the column header should start over. In the **Spread to** field, enter the letter of the column that the column header should end over.
-6. Under **Justification**, select whether the column header text to should be left-justified, center-justified, or right-justified.
-7. Click **OK**.
+1. Double-click a header cell.
+1. In the **Column header** dialog box, enter the column header text. Alternatively, click **Insert autoText**, and select an option.
+1. In the **Format options** field, select a format for the header.
+1. In the **Spread from** field, enter the letter of the column that the column header should start over. In the **Spread to** field, enter the letter of the column that the column header should end over.
+1. Under **Justification**, select whether the column header text to should be left-justified, center-justified, or right-justified.
+1. Click **OK**.
 
 ### Add a column header row
 
 1. In Report designer, open the column definition to modify.
-2. Select a cell in the header row.
-3. On the **Edit** menu, click **Insert row**. The new row is inserted above the row that you selected in step 2.
+1. Select a cell in the header row.
+1. On the **Edit** menu, click **Insert row**. The new row is inserted above the row that you selected in step 2.
 
 > [!NOTE]
 > If you have four or more rows of report headers on a report, the headers will overlap when the report is exported to an Excel worksheet. To view all headers on the report, increase the top margin in the report definition.
@@ -154,8 +154,8 @@ You can use the **Column header** dialog box to add, modify, and delete the head
 ### Delete a column header row
 
 1. In Report designer, open the column definition to modify.
-2. In the header row, select the cell to delete.
-3. On the **Edit** menu, click **Delete row**.
+1. In the header row, select the cell to delete.
+1. On the **Edit** menu, click **Delete row**.
 
 ### Create an automatically generated header
 
@@ -192,12 +192,12 @@ Conditional spanning headers can span multiple columns that are based on specifi
 #### Create a conditional spanning header
 
 1. In Report designer, open the column definition to modify.
-2. Double-click a header cell.
-3. In the **Column header** dialog box, enter the column header text. Alternatively, click **Insert autoText**, and select an option.
-4. In the **Format options** field, select a formatting style for the header.
-5. Specify a period relative to the base period that is specified when the report is generated. In the **Spread from** and **Spread to** fields, enter one of the following values: **BASE**, **BASE-X** or **BASE+X**, where X is the number of periods from the base period. For example, if you enter **BASE** in the **Spread from** field, the conditional spanning column header text starts in the column header where the report definition's **Base period** value equals the column definition's **Period** value. It ends in the column that is indicated in the **Spread to** field. Therefore, if the spread is BASE to M, and the report definition's **Base period** value is **4**, the header starts in the column where the period is set to **4** and ends at column M. Headers stop and start on printing columns only.
-6. Under **Justification**, select whether the column header text should be left-justified, center-justified, or right justified.
-7. Click **OK**.
+1. Double-click a header cell.
+1. In the **Column header** dialog box, enter the column header text. Alternatively, click **Insert autoText**, and select an option.
+1. In the **Format options** field, select a formatting style for the header.
+1. Specify a period relative to the base period that is specified when the report is generated. In the **Spread from** and **Spread to** fields, enter one of the following values: **BASE**, **BASE-X** or **BASE+X**, where X is the number of periods from the base period. For example, if you enter **BASE** in the **Spread from** field, the conditional spanning column header text starts in the column header where the report definition's **Base period** value equals the column definition's **Period** value. It ends in the column that is indicated in the **Spread to** field. Therefore, if the spread is BASE to M, and the report definition's **Base period** value is **4**, the header starts in the column where the period is set to **4** and ends at column M. Headers stop and start on printing columns only.
+1. Under **Justification**, select whether the column header text should be left-justified, center-justified, or right justified.
+1. Click **OK**.
 
 #### Example of a conditional spanning header
 
@@ -244,8 +244,8 @@ Now, every time that this report is generated, the word "Actual" will be printed
 The **Justification** cell is used to apply justification formatting to a description column in a report. This option affects only the column descriptions, not the actual values.
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Justification** cell.
-3. Select one of the following values in the list:
+1. Double-click the **Justification** cell.
+1. Select one of the following values in the list:
 
     - **None** – No justification is applied.
     - **Left** – Left-align the column descriptions.
@@ -267,7 +267,7 @@ The **Column width** cell specifies the number of characters to use for the widt
 #### Specify the width of a column on a report
 
 1. In Report designer, open the column definition to modify.
-2. In the **Column width** cell, enter the number of spaces for the width of the column. The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses). Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the **Column width** cell, and then click **AutoFit**.
+1. In the **Column width** cell, enter the number of spaces for the width of the column. The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses). Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the **Column width** cell, and then click **AutoFit**.
 
 ### Add space between columns
 
@@ -276,7 +276,7 @@ The **Extra spaces before column** cell specifies the width of the separator bet
 #### Specify the space between columns
 
 1. In Report designer, open the column definition to modify.
-2. In the **Extra spaces before column** cell, enter the number of spaces to insert between columns.
+1. In the **Extra spaces before column** cell, enter the number of spaces to insert between columns.
 
 ### Specify a format currency override
 
@@ -285,8 +285,8 @@ The **Format/Currency override** cell specifies the formatting of the decimal, c
 #### Assign a format currency override to a report column
 
 1. In Report designer, open the column definition to modify.
-2. Double-click a **Format/Currency override** cell in an amount column.
-3. In the **Format override** dialog box, select formatting options.
+1. Double-click a **Format/Currency override** cell in an amount column.
+1. In the **Format override** dialog box, select formatting options.
 
 ### Add a print control code
 
@@ -318,10 +318,10 @@ The **Print control** cell can contain codes that adjust the display or the prin
 #### Add print control codes to a report column
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Print control** cell.
-3. In the **Print control** dialog box, select a code in the **Select print control options** list. To select more than one code, hold down the Ctrl key while you select the codes.
-4. Select an option in the **Conditional print options** field. By default, **(none)** is selected. You can select only one conditional print code at a time.
-5. Click **OK**.
+1. Double-click the **Print control** cell.
+1. In the **Print control** dialog box, select a code in the **Select print control options** list. To select more than one code, hold down the Ctrl key while you select the codes.
+1. Select an option in the **Conditional print options** field. By default, **(none)** is selected. You can select only one conditional print code at a time.
+1. Click **OK**.
 
 > [!TIP]
 > You can also enter the print codes directly in the **Print control** cell. Separate multiple print control codes with a comma.
@@ -335,60 +335,19 @@ The type of information that each column on a report includes is specified by th
 ### Specify a column type
 
 1. In Report designer, open the column definition to modify.
-2. In the appropriate column, double-click a cell in the **Column type** row.
-3. Select a column type in the list. The following table describes the various column types.
+1. In the appropriate column, double-click a cell in the **Column type** row.
+1. Select a column type in the list. The following table describes the various column types.
 
-    <table>
-    <thead>
-    <tr>
-    <th>Column type code</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>FD</td>
-    <td>Display financial data when you use a <strong>Link to Financial Dimensions</strong> column in the row definition. When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:
-    <ul>
-    <li><strong>Book Code/Attribute Category:</strong> ACTUAL</li>
-    <li><strong>Book Code/Attribute Category:</strong> ACTUAL</li>
-    <li><strong>Fiscal Year:</strong> BASE</li>
-    <li><strong>Period:</strong> BASE</li>
-    <li><strong>Periods Covered:</strong> PERIODIC</li>
-    <li><strong>Column Width:</strong> 14</li>
-    </ul>
-    You can change these default settings.</td>
-    </tr>
-    <tr>
-    <td>CALC</td>
-    <td>Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell. For more information, see <a href="advanced-formatting-options-financial-reporting.md">Advanced formatting options in financial reporting</a>.</td>
-    </tr>
-    <tr>
-    <td>DESC</td>
-    <td>Display the row description from the row definition. Although the description column is often the first column on the report, it can be in any position.</td>
-    </tr>
-    <tr>
-    <td>ROW</td>
-    <td>Display the individual row codes for financial rows from the <strong>Row Code</strong> column in the row definition. For more information, see <a href="row-definitions-financial-reporting.md">Row definitions in financial reporting</a>.</td>
-    </tr>
-    <tr>
-    <td>ACCT (Account codes)</td>
-    <td>Display the financial data segment values or dimension values that apply to each row. For account and transaction detail reports, the fully qualified account is printed (for example, <strong>110140-070-0101</strong>). If ranges have been specified in the <strong>Link to Financial Dimensions</strong> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <strong>[110140:110700]-070-[0101:0200]</strong>). For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <strong>1100:1200</strong>).</td>
-    </tr>
-    <tr>
-    <td>FILL</td>
-    <td>Fill the cell with a character that you enclose in single quotation marks. If you don't enter a character, the column is empty. For example, to fill a column with an ellipsis (...), enter <strong>FILL</strong> <strong>'.'</strong>.</td>
-    </tr>
-    <tr>
-    <td>PAGE</td>
-    <td>Insert a vertical page break in the report. The columns that are to the right of the <strong>PAGE</strong> column appear on a different page.</td>
-    </tr>
-    <tr>
-    <td>ATTR</td>
-    <td>If your accounting system supports attributes, display an account or transaction attribute in the column. An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data. Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted. If you select <strong>ATTR</strong> as the column type, specify the attribute category in the <strong>Book Code/Attribute Category</strong> detail row of the column definition.</td>
-    </tr>
-    </tbody>
-    </table>
+| Column type code | Description |
+|------------------|-------------|
+| FD | Display financial data when you use a **Link to Financial Dimensions** column in the row definition. When you select the **FD** column type, default settings are automatically specified for the following rows: **Book Code/Attribute Category:** ACTUAL, **Book Code/Attribute Category:** ACTUAL, **Fiscal Year:** BASE, **Period:** BASE, **Periods Covered:** PERIODIC, **Column Width:** 14. You can change these default settings. |
+| CALC | Display the result of a simple or complex calculation that is specified in the **Formula** cell. For more information, see [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md). |
+| DESC | Display the row description from the row definition. Although the description column is often the first column on the report, it can be in any position. |
+| ROW | Display the individual row codes for financial rows from the **Row Code** column in the row definition. For more information, see [Row definitions in financial reporting](row-definitions-financial-reporting.md). |
+| ACCT (Account codes) | Display the financial data segment values or dimension values that apply to each row. For account and transaction detail reports, the fully qualified account is printed (for example, **110140-070-0101**). If ranges have been specified in the **Link to Financial Dimensions** column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, **[110140:110700]-070-[0101:0200]**). For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, **1100:1200**). |
+| FILL | Fill the cell with a character that you enclose in single quotation marks. If you don't enter a character, the column is empty. For example, to fill a column with an ellipsis (...), enter **FILL** **'.'**. |
+| PAGE | Insert a vertical page break in the report. The columns that are to the right of the **PAGE** column appear on a different page. |
+| ATTR | If your accounting system supports attributes, display an account or transaction attribute in the column. An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data. Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted. If you select **ATTR** as the column type, specify the attribute category in the **Book Code/Attribute Category** detail row of the column definition. |
 
 ### Financial Dimensions column
 
@@ -430,8 +389,8 @@ You can go beyond fiscal year boundaries in any of the period specifications, an
 ### Specify the periods for an FD column
 
 1. In Report designer, open the column definition to modify.
-2. In an **FD** column, double-click the cell in the **Period** row, and then select an option in the list.
-3. In the formula bar above the navigation pane, or in the **Period** cell, complete the formula. Replace any number sign (\#) with the appropriate value.
+1. In an **FD** column, double-click the cell in the **Period** row, and then select an option in the list.
+1. In the formula bar above the navigation pane, or in the **Period** cell, complete the formula. Replace any number sign (\#) with the appropriate value.
 
 #### Periods covered cell
 
@@ -447,7 +406,7 @@ The **Periods covered** cell identifies the amount that the column should displa
 ### Specify the periods that are covered for an FD column
 
 1. In Report designer, open the column definition to modify.
-2. In an **FD** column, double-click the cell in the **Periods covered** row, and select an option in the list.
+1. In an **FD** column, double-click the cell in the **Periods covered** row, and select an option in the list.
 
 ### Attribute filter in a column definition
 
@@ -459,10 +418,10 @@ Attributes are financial data values that further define an account or transacti
 #### Apply an attribute filter for an FD column on a report
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Attribute filter** cell for an **FD** column.
-3. In the **Attribute filter** dialog box, double-click a cell in the **Attribute** column, and then select the filter type.
-4. To further limit the results, enter a range in the **From** and **To** columns. The **From** cell must contain a value.
-5. Click **OK**.
+1. Double-click the **Attribute filter** cell for an **FD** column.
+1. In the **Attribute filter** dialog box, double-click a cell in the **Attribute** column, and then select the filter type.
+1. To further limit the results, enter a range in the **From** and **To** columns. The **From** cell must contain a value.
+1. Click **OK**.
 
 #### Example of an attribute filter
 
@@ -492,9 +451,9 @@ You can also use any combination of alphanumeric characters for exact matching, 
 #### Apply a dimension filter for a column on a report
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Dimension filter** cell for an **FD** column.
-3. In the **Dimensions** dialog box, enter the filters to apply.
-4. Click **OK**.
+1. Double-click the **Dimension filter** cell for an **FD** column.
+1. In the **Dimensions** dialog box, enter the filters to apply.
+1. Click **OK**.
 
 ### Format a multiple-currency report in a column definition
 
@@ -504,17 +463,17 @@ A multiple-currency report can display amounts in the ledger's accounting curren
 - **Currency filter** – Specify a currency filter. Only transactions that are entered in the selected currency are displayed on the report.
 
 
-To determine a company's accounting currency, follow these steps.
+To determine a company's accounting currency, follow these steps:
 
 1. In Report designer, on the **Company** menu, click **Companies**.
-2. In the **Companies** dialog box, select a company, and then click **View**.
-3. In the **View company** dialog box, under **Regional options**, you can view the currency that is defined for the selected company.
+1. In the **Companies** dialog box, select a company, and then click **View**.
+1. In the **View company** dialog box, under **Regional options**, you can view the currency that is defined for the selected company.
 
 #### Specify the currency on a multiple-currency report
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Currency display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.
-3. Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list. Only transactions that are entered in this currency are displayed on the report.
+1. Double-click the **Currency display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.
+1. Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list. Only transactions that are entered in this currency are displayed on the report.
 
 
 ### Example for currency display and currency filter cells
@@ -560,7 +519,7 @@ To add, subtract, multiply, or divide columns, enter the column letters in the o
 #### Use a calculation formula in a column definition
 
 1. In Report designer, open the column definition to modify.
-2. In the appropriate **CALC** column, enter a formula in the **Formula** cell.
+1. In the appropriate **CALC** column, enter a formula in the **Formula** cell.
 
 #### Complex calculations
 

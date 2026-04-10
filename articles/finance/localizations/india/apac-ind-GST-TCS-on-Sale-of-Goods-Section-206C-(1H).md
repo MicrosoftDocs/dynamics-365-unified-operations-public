@@ -140,7 +140,7 @@ The following example shows how the accumulated value is determined for TCS calc
 The initial accumulated value is determined by adding the payments that are received between April 1 and September 30, 2020: 15,00,000 + 5,00,000 + 20,00,000 = 40,00,000. The first payment value after October 10, 2020 is 12,00,000. Therefore, the total accumulated value is 40,00,000 + 12,00,000 = 52,00,000.
 In this case, TCS is calculated as (52,00,000 – 50,00,000) × 0.1 percent = 20.
 
-To calculate the initial accumulated value, follow these steps.
+To calculate the initial accumulated value, follow these steps:
 
 1. Go to **Tax** > **Setup** > **Withholding tax** > **Initial threshold achieved values**.
 1. Use the **From date** and **To date** fields to define the date range from April 1 through September 30, 2020.

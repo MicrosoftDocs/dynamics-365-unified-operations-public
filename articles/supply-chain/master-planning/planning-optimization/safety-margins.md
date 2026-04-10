@@ -75,7 +75,7 @@ Setting the margin on the master plan is useful when you want to simulate longer
 
 #### Coverage group safety margins
 
-To apply a safety margin to a coverage group, follow these steps.
+To apply a safety margin to a coverage group, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Coverage groups**.
 1. In the list pane, select the coverage group.
@@ -87,7 +87,7 @@ To apply a safety margin to a coverage group, follow these steps.
 
 #### Master plan safety margins
 
-To apply a safety margin to a master plan, follow these steps.
+To apply a safety margin to a master plan, follow these steps:
 
 1. Go to **Master planning** \> **Setup** \> **Plans** \> **Master plans**.
 1. In the list pane, select the master plan.

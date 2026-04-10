@@ -4,7 +4,7 @@ description: Learn how administrators can enable basic Copilot capabilities in f
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 03/05/2026
 ms.update-cycle: 180-days
 ms.custom:
  - bap-template
@@ -73,7 +73,7 @@ Usually, all the required apps are already installed in your environment. Howeve
 >
 > Copilot capabilities are only available in GCC and GCC-High environments after an admin installs the required Copilot apps in Dataverse.
 
-To check for and install the required apps, follow these steps.
+To check for and install the required apps, follow these steps:
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your environment to open its detailed view.
@@ -98,7 +98,7 @@ If Bing Search is disabled, or if cross-region data movement is required but is 
 
 By default, the tenant-level setting that enables the deployment of Copilot bots in Dataverse environments is enabled. However, a tenant admin can disable this setting. If the setting is disabled, you can't use Copilot features in finance and operations apps.
 
-To check and enable the setting that enables Power Platform to publish copilots that have AI features, follow these steps.
+To check and enable the setting that enables Power Platform to publish copilots that have AI features, follow these steps:
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Settings**.

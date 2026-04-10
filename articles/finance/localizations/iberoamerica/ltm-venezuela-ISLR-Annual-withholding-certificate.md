@@ -33,7 +33,7 @@ Before you can generate the report, the following prerequisites must be met:
 
 ## Configure application-specific parameters for the report
 
-To configure application-specific parameters, follow these steps.
+To configure application-specific parameters, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 1. Select the **VEN Annual withholding certificate** format.
@@ -52,7 +52,7 @@ To configure application-specific parameters, follow these steps.
 
 ## Generate the annual ISLR withholding certificate
 
-To generate the annual ISLR withholding certificate, follow these steps.
+To generate the annual ISLR withholding certificate, follow these steps:
 
 1. In Finance, go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
 1. In the **Format mapping** field, enter or select **VEN Annual withholding certificate**.

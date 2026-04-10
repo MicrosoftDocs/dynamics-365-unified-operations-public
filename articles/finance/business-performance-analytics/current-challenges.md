@@ -55,20 +55,20 @@ If Business performance analytics was uninstalled and then reinstalled, reports 
 - No external issues are affecting the data lake.
 - The reinstallation occurs in the same environment. Cross-environment restoration isn't supported.
 
-To reinstall Business performance analytics and restore reports, follow these steps.
+To reinstall Business performance analytics and restore reports, follow these steps:
 
 1. Before you uninstall Business performance analytics, confirm that a backup was completed.
 2. Make sure that you don't uninstall the Business performance analytics configuration solution (msdyn\_BpaConfigs).
 3. Reinstall Business performance analytics through the Microsoft Power Platform admin center.
 4. After the installation is completed, do a restore.
 
-To back up a report, follow these steps.
+To back up a report, follow these steps:
 
 1. In [Power Apps](https://make.powerapps.com/), on the left navigation pane, select **Flows**.
 2. Select **Play** to run the **Business performance analytics backup reports** flow.
 3. Select **Run flow** in the pane that appears.
 
-To do a self-service restore, follow these steps.
+To do a self-service restore, follow these steps:
 
 1. Run the **Business performance analytics restore reports** flow.
 2. Select whether you want to restore all reports, only custom reports, or only the report that has a specific Financial Reporting Hub (FRH) report ID.

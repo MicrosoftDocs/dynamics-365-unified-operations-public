@@ -1,97 +1,100 @@
 ---
 title: Cash out gift card balance for a retail customer
-description: This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app.
+description: Learn about the cash out gift card feature of the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 02/17/2026
 ms.topic: how-to
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.reviewer: v-griffinc
+ms.search.region: Global
 ms.search.validFrom: 2019-10-02
-ms.dyn365.ops.version: Dynamics 365 10.0
-ms.search.industry: retail
+ms.custom: 
+  - bap-template
 ---
 
 # Cash out gift card balance for a retail customer
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides an overview of the cash out gift card feature for the Microsoft Dynamics 365 Commerce Store Commerce app. 
+This article explains the cash out gift card feature of the Microsoft Dynamics 365 Commerce Store Commerce app.
 
-The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request. 
+The cash out feature enables cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request.
 
 ## Prerequisites
-- The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 Commerce (and associated components) and a payment service. The connector described in this article was implemented using the standard payments SDK.
-- If the gift cards are external gift cards, the external gift card must be configured for both the Headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+
+- The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension that facilitates communication between Dynamics 365 Commerce (and associated components) and a payment service. The connector described in this article uses the standard payments SDK.
+- If the gift cards are external gift cards, you must configure the external gift card for both Commerce headquarters and the POS. Before you can configure the gift card, you must have an account with an external gift card service provider.
 
 ## Scenarios
-The cash out gift card feature is applicable to a scenario where, for example, in Washington state, the cash out threshold is $5. Retailers in this case will have the option to set up an operation to cash out a gift card and set the gift card balance limits under which the cash out operation can be enabled.
 
-## Configure Headquarters
+The cash out gift card feature applies to a scenario where, for example, in Washington state, the cash out threshold is $5. Retailers in this case set up an operation to cash out a gift card and set the gift card balance limits under which the cash out operation can be enabled.
 
-1. Open the **All stores** page.
-2. In the list, select the **Houston** store.
-3. On the **Action Pane**, select **Set up** &gt; **Payment methods**.
-4. Search for **payment methods** to open the **Payment methods** page.
-5. Select the **Gift Card** payment method, and then follow these steps:
+## Configure headquarters
+
+To configure headquarters, follow these steps:
+
+1. In Commerce headquarters, go to the **All stores** page.
+1. In the list, select the **Houston** store.
+1. On the **Action Pane**, select **Set up > Payment methods**.
+1. Search for **payment methods** to open the **Payment methods** page.
+1. Select the **Gift Card** payment method, and then follow these steps:
 
     1. In the **Amount** FastTab section, select the **Cash Out Gift Card** field.
-    2. In the **Cash Out Gift Card** field, enter the **Gift card Cash out threshold** amount.
-    3. Select **Save**.
+    1. In the **Cash Out Gift Card** field, enter the **Gift card Cash out threshold** amount.
+    1. Select **Save**.
 
-    ![Setting the Gift card threshold.](./media/GiftCardCashout01.png)
+    :::image type="content" source="./media/GiftCardCashout01.png" alt-text="Screenshot of setting the gift card threshold.":::
 
-6. Open the **Button grid** page.
-7. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
-8. On the **Action Pane**, select **Designer** to download the button designer application.
-9. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
+1. Open the **Button grid** page.
+1. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
+1. On the **Action Pane**, select **Designer** to download the button designer application.
+1. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
 
-    ![New button.](./media/07.png)
+    :::image type="content" source="./media/07.png" alt-text="Screenshot of creating a new button.":::
 
-10. Right-click the new button, and then select **Button properties**.
-11. Set the **Action**, **Cash out gift card**, and **Text on button** properties according to the following matrix.
+1. Right-click the new button, and then select **Button properties**.
+1. Set the **Action**, **Cash out gift card**, and **Text on button** properties according to the following matrix.
 
     | Action            | Payment type       | Text on button        |
     |-------------------|--------------------|-----------------------|
     |Cash out gift card |     Gift Card      | Cash out gift card    |
 
-    When you've finished, your button layout should resemble the following illustration.
+    When you finish, your button layout should resemble the following illustration.
 
-    ![Completed button layout with "Configure button" section highlighted](./media/GiftCardCashout02.png)
+    :::image type="content" source="./media/GiftCardCashout02.png" alt-text="Screenshot of the completed button layout with the Configure button section highlighted.":::
 
-12. Click **Ok** and close the designer.
-13. Search for **Distribution Schedule**.
-14. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
-15. On the **Action Pane**, select **Run now**.
-16. Check the status of the job by searching for **Download sessions**.
-17. Wait until **Applied** appears next to all the jobs, and then close the browser.
-
+1. Select **OK** and close the designer.
+1. Search for **Distribution Schedule**.
+1. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
+1. On the **Action Pane**, select **Run now**.
+1. Check the status of the job by searching for **Download sessions**.
+1. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
 ## Configure and test the Store Commerce app
 
+To configure and test the Store Commerce app, follow these steps:
+
 1. Start the Store Commerce application.
-2. Sign in by using the standard credentials.
-3. When you're prompted, select **Perform a non-drawer operation**.
-4. On the main screen, select **Select hardware station**.
-5. On the bar on the right side of the page, select **Manage**.
-6. Turn on **Virtual Peripherals**, and then select **OK**.
-7. In the **Available paired stations** field, select **Virtual Peripherals**.
-8. You're prompted to either open a new shift or perform non-drawer operations. You can now open a new shift.
-9. On the main screen, select **Current transaction**.
-10. Select **Gift cards**.
-11. Select **Cash out gift card**.
-12. Enter or scan the gift number.
-13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
-14. Select the **Cash** payment method and the drawer will open when the transaction is completed. 
+1. Sign in by using the standard credentials.
+1. When prompted, select **Perform a non-drawer operation**.
+1. On the main screen, select **Select hardware station**.
+1. On the bar on the right side of the page, select **Manage**.
+1. Turn on **Virtual Peripherals**, and then select **OK**.
+1. In the **Available paired stations** field, select **Virtual Peripherals**.
+1. You're prompted to either open a new shift or perform nondrawer operations. You can now open a new shift.
+1. On the main screen, select **Current transaction**.
+1. Select **Gift cards**.
+1. Select **Cash out gift card**.
+1. Enter or scan the gift number.
+1. The line for **gift card cash out** is added to the **Current transaction** for cash out.
+1. Select the **Cash** payment method and the drawer opens when the transaction is completed.
 
-       ![POS screen with "Cash out gift card" highlighted](./media/GiftCardCashout03.png)
+    :::image type="content" source="./media/GiftCardCashout03.png" alt-text="Screenshot of the POS screen with Cash out gift card highlighted.":::
 
-## Troubleshooting 
+## Troubleshooting
 
-For all general issues, you should always consult the Store Commerce app or IIS Hardware Station event logs. The logs can be found under these nodes in the Windows event log:
+For all general problems, always consult the Store Commerce app or Internet Information Services (IIS) Hardware Station event logs. You can find the logs under these nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

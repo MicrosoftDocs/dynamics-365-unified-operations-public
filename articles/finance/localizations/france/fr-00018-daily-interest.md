@@ -4,7 +4,7 @@ description: Learn how to indicate the interest calculation on an invoice in Fra
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 04/04/2025
+ms.date: 03/13/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak   
@@ -17,24 +17,22 @@ ms.search.form: SalesTableListPage, SalesEditLines
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to indicate the interest calculation on an invoice in France with Microsoft Dynamics 365 Finance.
+This article explains how to show the interest calculation on an invoice in France by using Microsoft Dynamics 365 Finance.
 
-The following procedure was created using the demo data company FRRT. 
+The following procedure uses the demo data company FRRT. 
 
-The functionality described is available for legal entities whose primary address is in France.
+This functionality is available for legal entities whose primary address is in France.
 
-To indicate the interest calculation on an invoice, follow these steps.
+To show the interest calculation on an invoice, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Orders \> All sales orders**.
-1. In the list, mark the selected row.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Orders** > **All sales orders**.
+1. In the list, select the row.
 1. On the Action Pane, select **Invoice**.
 1. Select **Invoice**.
 1. Select or clear the **Print invoice** checkbox.
-1. In the list, mark the selected row.
+1. In the list, select the row.
 1. Select or clear the **Print lump sum recovery text** checkbox.
 1. Select **OK**.
 1. Select **Yes**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

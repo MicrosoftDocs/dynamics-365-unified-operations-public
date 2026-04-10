@@ -140,7 +140,7 @@ Additionally, a development environment gives you more flexibility to experiment
 
 #### <a name="infolog-time"></a>Execution time in the Action center
 
-ER can show the execution time of the configuration in the Action center. This option works only for a specific user and a specific company, and only for interactive sessions. To make this feature available, follow these steps.
+ER can show the execution time of the configuration in the Action center. This option works only for a specific user and a specific company, and only for interactive sessions. To make this feature available, follow these steps:
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 1. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.

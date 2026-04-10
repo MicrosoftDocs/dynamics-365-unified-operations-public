@@ -1,13 +1,10 @@
 ---
-# required metadata
-
 title: Pricing functions in POS 
-description: This article describes various price and discount functions in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
+description: Learn about price and discount functions in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: boycez
-ms.date: 05/30/2024
+ms.date: 01/27/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: global
 ms.author: chuzheng
 ms.search.validFrom: 2022-07-14
@@ -19,9 +16,9 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes various price and discount functions in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
+This article describes various price and discount functions in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-The Dynamics 365 Commerce POS application provides rich capabilities that enable first-line workers to perform store commerce operations. The following table shows the price and discount functions that are currently available in the application.
+The Dynamics 365 Commerce POS application provides rich capabilities that enable frontline workers to perform store commerce operations. The following table shows the price and discount functions that are currently available in the application.
 
 | Function                       | POS operations |
 |--------------------------------|----------------|
@@ -32,7 +29,7 @@ The Dynamics 365 Commerce POS application provides rich capabilities that enable
 | Apply or remove coupons        | [Add coupon code](#add-coupon-code)<br>[Remove coupon code](#remove-coupon-code) |
 | Calculate prices and discounts | [Recalculate](#recalculate) |
 
-For information about how the preceding operations can be configured in the POS application and whether they support offline mode, see [Online and offline point of sale (POS) operations](pos-operations.md).
+For information about how to configure the preceding operations in the POS application and whether they support offline mode, see [Online and offline point of sale (POS) operations](pos-operations.md).
 
 ## Price check
 
@@ -52,7 +49,7 @@ Inside the **View all discounts** operation, POS users can search for discounts 
 
 ## View available discounts
 
-The **View available discounts** operation enables POS users to view all discounts that are applicable to a selected line in a transaction or to the whole transaction. The discounts that are applicable to a selected line include discounts that are already applied and discounts that haven't yet been applied but can be applied (for example, mix and match discounts that require additional items). If an applicable discount is linked to a coupon where the **Apply without coupon code** parameter is turned on, the POS user can also use the **Apply coupon** function inside this operation to redeem the coupon directly, without having to enter or scan any coupon codes or coupon bar codes.
+The **View available discounts** operation enables POS users to view all discounts that are applicable to a selected line in a transaction or to the whole transaction. The discounts that are applicable to a selected line include discounts that are already applied and discounts that aren't yet applied but can be applied (for example, mix and match discounts that require additional items). If an applicable discount is linked to a coupon where the **Apply without coupon code** parameter is turned on, the POS user can also use the **Apply coupon** function inside this operation to redeem the coupon directly, without having to enter or scan any coupon codes or coupon bar codes.
 
 ## Price override
 
@@ -68,11 +65,11 @@ The **Line discount percent** operation enables POS users to enter a discount pe
 
 ## Total discount amount
 
-The **Total discount amount** operation enables POS users to enter a discount amount for a transaction. This operation applies only to discountable items, and it respects the **Maximum total discount amount** value that is specified in the POS permission group for the user. If the discount amount that is entered exceeds the maximum total discount amount, the operation is blocked, and no permission override flow is triggered. Currently, a total discount amount can't be applied to a cart that has a mix of sales items and return items.
+The **Total discount amount** operation enables POS users to enter a discount amount for a transaction. This operation applies only to discountable items, and it respects the **Maximum total discount amount** value that you specify in the POS permission group for the user. If the discount amount that the user enters exceeds the maximum total discount amount, the operation is blocked, and no permission override flow is triggered. Currently, a total discount amount can't be applied to a cart that has a mix of sales items and return items.
 
 ## Total discount percent
 
-The **Total discount percent** operation enables POS users to enter a discount percentage for a transaction. This operation applies only to discountable items, and it respects the **Maximum total discount percentage** value that is specified in the POS permission group for the user. If the discount percentage that is entered exceeds the maximum total discount percentage, the operation is blocked, and no permission override flow is triggered. Currently, a total discount percentage can't be applied to a cart that has a mix of sales items and return items.
+The **Total discount percent** operation enables POS users to enter a discount percentage for a transaction. This operation applies only to discountable items, and it respects the **Maximum total discount percentage** value that you specify in the POS permission group for the user. If the discount percentage that the user enters exceeds the maximum total discount percentage, the operation is blocked, and no permission override flow is triggered. Currently, a total discount percentage can't be applied to a cart that has a mix of sales items and return items.
 
 ## Remove system discounts from transaction
 
@@ -92,6 +89,6 @@ The **Remove coupon code** operation enables POS users to select and remove one 
 
 ## Recalculate
 
-The **Recalculate** operation enables POS users to trigger on-demand pricing calculation. This operation is required when price lock and/or delayed price calculation is enabled, and the POS user wants to recalculate prices and discounts after cart or order changes. The **Recalculate** operation always recalculates the whole order. It can't be used to recalculate selected sales lines. To apply manual discounts to a locked sales line in POS, POS users must first use the **Recalculate** operation to unlock all sales lines.
+The **Recalculate** operation enables POS users to trigger on-demand pricing calculation. This operation is required when price lock and delayed price calculation are enabled, and the POS user wants to recalculate prices and discounts after cart or order changes. The **Recalculate** operation always recalculates the whole order. You can't use it to recalculate selected sales lines. To apply manual discounts to a locked sales line in POS, POS users must first use the **Recalculate** operation to unlock all sales lines.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,12 +4,12 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 02/27/2025
+ms.date: 04/08/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
   - bap-template
-  - sfi-ropc-blocked
+  - sfi-ropc-nochange
 ---
 
 # Install the Warehouse Management mobile app
@@ -24,9 +24,9 @@ The Warehouse Management mobile app is only for your internal business use. You 
 
 ### Operating system requirements
 
-The Warehouse Management mobile app is available for Microsoft Windows, Google Android, and Apple iOS operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
+The Warehouse Management mobile app is available for Microsoft Windows, Google Android, and Apple iOS operating systems. To use the app, your mobile devices must have one of the following operating systems installed:
 
-- Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
+- Windows 10 (Universal Windows Platform \[UWP\]) May 2020 update 1904.1 or later
 - Android:
     - Warehouse Management mobile app version 3.x requires Android 5.0 or later
     - Warehouse Management mobile app version 4.x requires Android 7.0 or later
@@ -59,13 +59,13 @@ For the Warehouse Management mobile app to function correctly, your internal net
 
 ## Get the Warehouse Management mobile app
 
-For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
+For smaller deployments, you'll typically install the app on each device from the relevant store. Then, manually configure the connection to the environments that you're using.
 
-For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md) or [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md) (depending on which type of authentication method you're using).
+For larger deployments, automate app deployment and configuration. This approach is more convenient if you manage many devices. For example, use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 ### Install the app from an app store
 
-The easiest way to install the app on a single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
+The easiest way to install the app on a single device is to install it from an app store. The store always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
@@ -87,52 +87,57 @@ As an alternative to installing from an app store, you can instead download the 
 
 For information about how to install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
 
-The Warehouse Management mobile app isn't available in app stores in China. However, downloading it from Microsoft App Center and using it along with Dynamics 365 Supply Chain Management operated by 21Vianet in China is officially supported.
+The Warehouse Management mobile app isn't available in app stores in China. However, you can download it from Microsoft App Center and use it along with Dynamics 365 Supply Chain Management operated by 21Vianet in China.
 
 ## <a name="authenticate"></a>Decide which authentication methods you'll use
 
-Because the Warehouse Management mobile app has read/write access to some of your Supply Chain Management data, each device must be authenticated with Supply Chain Management. The app supports several authentication methods. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
+Because the Warehouse Management mobile app has read and write access to some of your Supply Chain Management data, each device must authenticate with Supply Chain Management. The app supports several authentication methods. Before you start to deploy the app, learn about the available authentication methods and decide which one you want to use.
 
-After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management.
+After a device authenticates with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. The app loads the worker's personal preferences, such as their default warehouse and app preferences. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management.
 
-For details about each authentication method and how to set it up, see the following articles:
+For details about each authentication method and how to set it up, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
-- User-based authentication: [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
-- Service-based authentication (deprecated): [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
-
-> [!IMPORTANT]
-> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
-
-If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
-
-- User-based authentication: [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke)
-- Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
+If a device is lost or compromised, you can revoke its authentication by following the instructions provided in [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).
 
 > [!NOTE]
 > [Shared Device Mode](/entra/identity-platform/msal-shared-devices) authentication isn't currently supported for the Warehouse Management mobile app.
 
 ## Configure the application by importing connection settings
 
-To make it easier to maintain and deploy the application on many mobile devices, you can import the connection settings instead of manually entering them on each device. This section explains how to create and import the settings.
+To make it easier to maintain and deploy the application on many mobile devices, import the connection settings instead of manually entering them on each device. The following table summarizes the available methods and when to use each one.
+
+| Method | Best for | Platform support |
+|---|---|---|
+| [MDM managed configuration](#connection-file-qr) (`ConnectionsJson` key) | Enterprise deployments with a mobile mass deployment (MDM) provider. The provider pushes connection settings through app configuration policies without touching the device file system. | Android, Windows, iOS |
+| [QR code](#connection-file-qr) | Small to medium deployments, or individual device setup. The app scans a QR code containing the connection JSON. | Android, Windows, iOS |
+| [JSON file import](#connection-file-qr) (`connections.json`) | Deployments where you can place files on the device file system. | Windows, Android (limited—see the note after this table) |
+| [Manual input](#config-manually) | Individual device setup or troubleshooting. | Android, Windows, iOS |
+
+> [!IMPORTANT]
+> **Android platform limitation:** Starting with Android 11 (API level 30), Google enforces [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) restrictions that prevent external tools (including MDM file push, file managers, and USB file transfer) from writing to an app's private data folder. This restriction means the `connections.json` file can't be placed at the default path (`Android/data/com.Microsoft.WarehouseManagement/files`) by any tool other than the app itself. You can still use the app's **Add from file** option to browse and select a JSON file stored in an accessible location (such as the downloads folder), but automatic file-based import at the default path isn't possible on Android.
+>
+> For enterprise Android deployments, use either the *MDM managed configuration* method (which uses providers such as Microsoft Intune or SOT to deliver connection settings through app configuration policies) or the *QR code* method. Learn more in [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
+
+The following subsections explain how to create and import the settings.
 
 ### <a name="connection-file-qr"></a>Create a connection settings file or QR code
 
-You can import connection settings from either a file or a QR code. (Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).) For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that have to be added. The following table summarizes the parameters that you must specify in the connection settings file.
+You can import connection settings from either a file or a QR code. (Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).) For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that you need to add. The following table summarizes the parameters that you must specify in the connection settings file.
 
 | Parameter | Description |
 |---|---|
-| `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
-| `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)</p> |
+| `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, the settings from the imported file override it. |
+| `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"`.</p><p>Specify the client ID that you noted while setting up Microsoft Entra ID. Learn more in [User-based authentication](warehouse-app-authenticate-user-based.md).</p> |
 | `"ActiveDirectoryResource"` | Specify the root URL of Supply Chain Management. |
-| `"ActiveDirectoryTenant"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"` (recommended).</p><p>Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).</p> |
+| `"ActiveDirectoryTenant"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"`.</p><p>Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).</p> |
 | `"Company"` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `"ConnectionType"` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"Certificate"`](warehouse-app-authenticate-service-based.md), [`"ClientSecret"`](warehouse-app-authenticate-service-based.md), [`"DeviceCode"`](warehouse-app-authenticate-user-based.md), and [`"UsernamePassword"`](warehouse-app-authenticate-user-based.md). The default value is `"DeviceCode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
-| `"IsEditable"` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
+| `"ConnectionType"` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"DeviceCode"`](warehouse-app-authenticate-user-based.md), and [`"UsernamePassword"`](warehouse-app-authenticate-user-based.md). The default value is `"DeviceCode"`.</p><p>**Note:** You can't import client secrets.</p> |
+| `"IsEditable"` | (Optional) Specify whether the app user can edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `"IsDefaultConnection"` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `"CertificateThumbprint"` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
 | `"UseBroker"` | <p>(Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication. Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. It works with the following authentication systems:</p><ul><li>Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only)</li><li>Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal))</li><li>[Integrated Windows authentication (IWA)](/entra/identity-platform/msal-authentication-flows#integrated-windows-authentication-iwa)</li></ul> |
 | `"DomainName"` | (Optional) This parameter applies only to the `"UsernamePassword"` connection type. It allows you to implement a simplified sign-in process. If you don't set this field, workers must always enter their full Microsoft Entra ID user principal name (UPN) to sign in. A UPN has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Even if you set the domain name here, workers can still sign in using their full UPN.) |
-| `"AuthCloud"` | <p>Specify the type of Microsoft Entra ID app registration to authenticate with:</p><ul><li>`"AzureGlobal"` – Authenticate by using a global Microsoft Entra ID application that's registered and maintained by Microsoft (recommended). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app, and you shouldn't specify `"ActiveDirectoryTenant"` or `"ActiveDirectoryClientAppId"` values for this connection.</li><li>`"Manual"` – Authenticate through your own custom Microsoft Entra ID app registration. If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify `"ActiveDirectoryTenant"` and `"ActiveDirectoryClientAppId"` values for this connection.</li></ul> |
+| `"AuthCloud"` | <p>Specify the type of Microsoft Entra ID app registration to authenticate with:</p><ul><li>`"AzureGlobal"` – Authenticate by using a global Microsoft Entra ID application that's registered and maintained by Microsoft. This option is recommended for most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app, and you shouldn't specify `"ActiveDirectoryTenant"` or `"ActiveDirectoryClientAppId"` values for this connection.</li><li>`"Manual"` – Authenticate through your own custom Microsoft Entra ID app registration. Use this option only if you have specific requirements that the global application doesn't meet (for example, certain on-premises environment configurations). If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify `"ActiveDirectoryTenant"` and `"ActiveDirectoryClientAppId"` values for this connection.</li></ul> |
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
 
@@ -202,33 +207,33 @@ You can either save the information as a JSON file or [generate a QR code](wareh
 
 ### Save the connection settings file on each device
 
-Typically, you'll use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the Warehouse Management mobile app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
+Typically, you'll use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the Warehouse Management mobile app automatically imports it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app continues to use the specified name and location afterward.
 
-Every time that the app is started, it reimports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
+Every time that the app starts, it reimports the connection settings from their previous location to check for changes. The app updates only connections that have the same names as the connections in the connection settings file. User-created connections that use other names aren't updated.
 
 You can't remove a connection by using the connection settings file.
 
-As has been mentioned, the default file name is *connections.json*. The default file location depends on which type of device you're using:
+As mentioned, the default file name is *connections.json*. The default file location depends on which type of device you're using:
 
 - **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
-- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
-- **iOS:** File sharing isn't yet supported.
+- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files` See the important note about [Android scoped storage limitations](#configure-the-application-by-importing-connection-settings) earlier in this section.
+- **iOS:** File sharing isn't supported. Use QR codes or MDM managed configuration instead.
 
 Usually, the paths are automatically created after the first run of the app. However, you can manually create them if you must transfer the connection settings file to the device before installation.
 
 > [!NOTE]
-> If the app is uninstalled, the default path and its contents are removed.
+> If you uninstall the app, the default path and its contents are removed.
 
 ### <a name="config"></a>Import the connection settings
 
 Follow these steps to import connection settings from a file or a QR code.
 
 1. Start the Warehouse Management mobile app on your mobile device. The first time that you start the app, a welcome message is shown. Select **Connect**.
-1. If you're importing the connection settings from a file, and the default name and location were used when the file was saved, the app might already have found the file. In this case, skip ahead to step 4. Otherwise, select **Set up connection**, and then continue to step 3.
+1. If you're importing the connection settings from a file, and you used the default name and location when you saved the file, the app might find the file automatically. In this case, skip ahead to step 4. Otherwise, select **Set up connection**, and then continue to step 3.
 1. In the **Connection setup** dialog, select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
-    - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
-    - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
+    - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app stores it and automatically uses it the next time.
+    - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera starts, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
 1. When the connection settings are successfully loaded, the selected connection is shown.
 1. Complete one of the following steps to select the authentication certificate, depending on which type of device that you're using.
@@ -243,12 +248,12 @@ Follow these steps to import connection settings from a file or a QR code.
 If you don't have a file or QR code, you can manually configure the app on the device so that it connects to the Supply Chain Management server through the Microsoft Entra ID application.
 
 1. Start the Warehouse Management mobile app on your mobile device.
-1. If the app is started in **Demo mode**, select **Connection settings**. If the **Sign-in** page appears when the app is started, select **Change connection**.
+1. If the app starts in **Demo mode**, select **Connection settings**. If the **Sign-in** page appears when the app starts, select **Change connection**.
 1. Select **Set up connection**.
-1. Select **Input manually**. The **New Connection** page appears and shows the settings that are required to manually enter the connection details.
+1. Select **Input manually**. The **New Connection** page appears and shows the settings that you need to enter manually.
 1. Enter the following information:
 
-    - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
+    - **Connection name** – Enter a name for the new connection. This name appears in the **Select connection** field the next time you open the connection settings. The name you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
     - **Environment URL** – Specify the root URL of Supply Chain Management.
 
         > [!IMPORTANT]
@@ -260,22 +265,18 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
         - *Device code* – Authenticate by using the device code flow. This method is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
         - *Username and password* – Authenticate by using SSO or by asking the user to enter a user name and password. This method is a [user-based authentication method](warehouse-app-authenticate-user-based.md).
-        - *Client secret (Deprecated)* – Authenticate by using a client secret. This method is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
-        - *Certificate (Deprecated)* – Authenticate by using a certificate. This method is a [service-based authentication method](warehouse-app-authenticate-service-based.md).
 
     - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
 
-        - *Azure Global* – Authenticate by using the global Microsoft Entra ID application that's registered and maintained by Microsoft (recommended).
-        - *Manual* – Authenticate through your own [custom Microsoft Entra ID app registration](warehouse-app-authenticate-user-based.md#create-service).
+        - *Azure Global* (recommended) – Authenticate by using the global Microsoft Entra ID application that's registered and maintained by Microsoft. This option supports most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app.
+        - *Manual* – Authenticate through your own [custom Microsoft Entra ID app registration](warehouse-app-authenticate-user-based.md#create-service). Use this option only if you have specific requirements that the global application doesn't meet (for example, certain on-premises environment configurations). If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify **Microsoft Entra ID client ID** and **Microsoft Entra ID tenant** values for this connection.
 
-    - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+        - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID that you noted while setting up Microsoft Entra ID. Learn more in [User-based authentication](warehouse-app-authenticate-user-based.md).
     - **Microsoft Entra ID tenant** – This field is available only when the **Cloud** field is set to *Manual*. Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Microsoft Entra ID client secret** – This field is available only when the **Authentication method** field is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Certificate thumbprint** – This field is available only for Windows devices, and only when the **Authentication method** field is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on the authentication method that you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
     - **Domain name** – This field applies only when the **Authentication method** field is set to *Username and password*. You can use it to make sign-in easier for workers. If you don't set this field, workers must enter their full Microsoft Entra ID user principal name to sign in. A user principal name has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Nevertheless, workers can still enter their full user principal name.)
 
@@ -289,16 +290,14 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 ## <a name="revoke"></a>Remove access for a lost or compromised device
 
-If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management. For instructions, see one of the following articles:
+If a device is lost or compromised, remove its access to Supply Chain Management. The method you use to remove access depends on how the device is configured to authenticate with Supply Chain Management. For instructions, see one of the following articles:
 
 - If you use user-based authentication, see [User-based authentication](warehouse-app-authenticate-user-based.md#revoke)
-- If you use service-based authentication (deprecated), see [Service-based authentication](warehouse-app-authenticate-service-based.md#revoke)
 
 ## Related information
 
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
-- [Service-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-service-based.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
 

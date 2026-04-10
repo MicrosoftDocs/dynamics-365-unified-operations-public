@@ -4,8 +4,7 @@ description: This article provides an overview of the fiscal integration sample 
 author: EvgenyPopovMBS
 ms.date: 04/10/2026
 ms.topic: how-to
-audience: Developer, IT Pro
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-08
@@ -195,13 +194,11 @@ To set up a development environment to test and extend the sample, follow these 
     1. Start the CRT extension installer from the command line:
 
         - **Commerce Scale Unit:**
-
             ```Console
             ScaleUnit.CleanCash.Installer.exe install --verbosity 0
             ```
 
         - **Local CRT on Modern POS:**
-
             ```Console
             ModernPOS.CleanCash.Installer.exe install --verbosity 0
             ```

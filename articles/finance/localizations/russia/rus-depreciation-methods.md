@@ -52,7 +52,7 @@ The product output-mileage depreciation method is used to write off the value of
 
 ### Create the product output or mileage of a fixed asset
 
-To create the product output or mileage of a fixed asset, follow these steps. 
+To create the product output or mileage of a fixed asset, follow these steps: 
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Periodic** \> **Product output/mileage**.
 1. Select **New** to create the product output or mileage for a fixed asset.
@@ -99,7 +99,7 @@ Depreciation is charged not for each object of fixed assets, but for the depreci
 
 You can create a tax non-linear group depreciation method on the **Depreciation methods** page. Learn more in [Set up depreciation (Russia)](rus-depreciation-setup.md).
 
-To set up the depreciation method, follow these steps.
+To set up the depreciation method, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 1. In the **Value model** field, select the value model that the depreciation group is defined for.

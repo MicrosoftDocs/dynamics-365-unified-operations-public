@@ -30,7 +30,7 @@ When goods are received, their customs declaration numbers are manually entered.
 
 ## Set up customs declaration numbers in tracking dimensions
 
-To set up customs declaration numbers in tracking dimensions, follow these steps.
+To set up customs declaration numbers in tracking dimensions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Product information management** \> **Setup** \> **Dimension and variant groups** \> **Tracking dimension groups**.
 1. Select **New** to create a dimension group.
@@ -45,7 +45,7 @@ To set up customs declaration numbers in tracking dimensions, follow these steps
 
 Before you can register customs declaration numbers for newly received goods, you must enter them in a corresponding database. You must also enter item names, and the country or region of origin.
 
-To create a customs declaration number, follow these steps.
+To create a customs declaration number, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Inventory management** \> **Inquiries and reports** \> **Tracking dimensions** \> **Custom decl. numbers**.
 1. Select **New** to create a customs declaration number.
@@ -62,7 +62,7 @@ To create a customs declaration number, follow these steps.
 
 ## Specify the customs declaration number in a purchase order
 
-To specify the customs declaration number in a purchase order, follow these steps.
+To specify the customs declaration number in a purchase order, follow these steps:
 
 1.  In Dynamics 365 Finance, create a purchase order, and on the purchase order line, select the item number.
 
@@ -79,7 +79,7 @@ To specify the customs declaration number in a purchase order, follow these step
 
 ## View the customs declaration number in the purchase book
 
-To view the customs declaration number in the purchase book, follow these steps.
+To view the customs declaration number in the purchase book, follow these steps:
 
 1. In Dynamics 365 Finance, after the **Incoming VAT processing** procedure is completed, on the **Purchase books journal** page, on the Action Pane, select **Update** to update the purchase book.
 1. On the Action Pane, select **Lines**, and select the invoice that you just created. On the **General** tab, the **Custom decl. numbers** field shows the information about the facture and the customs declaration number.
@@ -88,7 +88,7 @@ To view the customs declaration number in the purchase book, follow these steps.
 
 ## Ship goods that have customs declaration numbers
 
-To ship goods that have customs declaration numbers, follow these steps.
+To ship goods that have customs declaration numbers, follow these steps:
 
 1. In Dynamics 365 Finance, create a sales order, and on the sales order line, select the same item number that you used in the previous procedures in this article.
 1. On the **Line details** FastTab, on the **Setup** tab, in the **Reservation** field, select **Automatic**, so that the item is automatically reserved from existing receipts when you create a sales order line.

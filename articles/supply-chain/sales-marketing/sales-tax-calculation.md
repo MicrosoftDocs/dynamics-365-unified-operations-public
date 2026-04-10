@@ -30,7 +30,7 @@ The example scenarios in this article assume the following setup in Microsoft Dy
 - A sales tax group that's named *CA* includes sales tax code *AV\_CAST*.
 - An item sales tax group that's named *AU/VI* includes sales tax code *AV\_CAST*.
 
-The USMF sample data includes these tax codes and groups, but it uses a different tax rate for the sales tax code. To adjust the tax rate to 50 percent, follow these steps.
+The USMF sample data includes these tax codes and groups, but it uses a different tax rate for the sales tax code. To adjust the tax rate to 50 percent, follow these steps:
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 1. In the list pane, select sales tax code *AV\_CAST* to open it.

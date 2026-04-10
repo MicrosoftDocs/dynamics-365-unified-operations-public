@@ -25,7 +25,7 @@ Before installing Business performance analytics, check to make sure [all the pr
 > [!Important]
 > Always deploy environments using an unnamed account. This account must be from the customer domain, such as `dynadmin@customer.com` or `dynadmin@customer.onmicrosoft.com`. We strongly recommend using the same dedicated environment admin account on all environments. This avoids situations where an individual admin user leaving the organization disrupts administration operations in the Business performance analytics app.
 
-To install Business performance analytics, follow these steps.
+To install Business performance analytics, follow these steps:
 
 1. Go to the  [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and navigate to your environment
 2. Go to **Resources** > **Dynamics 365 apps** > **Install apps**. Select **Business performance analytics** from the list of available apps to install.

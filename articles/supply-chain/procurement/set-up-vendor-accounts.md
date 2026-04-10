@@ -67,7 +67,7 @@ If a vendor is registered for only one legal entity in your organization, and ot
 
 If multiple legal entities in your organization do business with the same vendor, and each legal entity maintains a separate vendor account for that vendor, you can merge the party IDs for the vendor accounts. In this way, information such as the address and the number of employees can be shared, so that you must update it in only one place.  
 
-To merge party IDs, follow these steps.
+To merge party IDs, follow these steps:
 
 1. On the **Global address book** page, select the address book records that represent the vendor in each legal entity that should be included in the mapping.
 1. On the Action Pane, select **Merge records**.

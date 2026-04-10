@@ -26,7 +26,7 @@ This article explains how to debug Microsoft Dynamics 365 Commerce Store Commerc
 > 1. In Visual Studio, open the CRT or HWS code.
 > 1. On the menu, select **Debug \> Attach to Process**, and then select **Microsoft.Dynamics.Commerce.StoreCommerce.exe**.
 
-To debug Store Commerce extensions by Using Visual Studio Code, follow these steps.
+To debug Store Commerce extensions by Using Visual Studio Code, follow these steps:
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 1. Open Visual Studio Code, and install [Microsoft Edge Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) from the Visual Studio Marketplace.

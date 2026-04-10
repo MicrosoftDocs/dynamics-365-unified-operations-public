@@ -72,7 +72,7 @@ Enable features in **Feature management** by following these steps.
 
 This step is optional if you enable the **[Italy] Fiscal Journal modernization in Electronic Reporting** feature and the system automatically configures the **Fiscal journal PDF (IT)** format in the **Accounting electronic report** field within the **General ledger parameters**.
 
-To set up the ER format in **General ledger parameters**, follow these steps.
+To set up the ER format in **General ledger parameters**, follow these steps:
 
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 1. On the **General ledger parameters** page, on the **Ledger** tab, in the **Accounting electronic report** field, select **Fiscal journal PDF (IT)**.
@@ -81,7 +81,7 @@ After you configure this setting, the system uses this Electronic Reporting (ER)
 
 ## Generate Fiscal journal PDF for Italy
 
-To Generate Fiscal journal PDF for Italy, follow these steps.
+To Generate Fiscal journal PDF for Italy, follow these steps:
 
 1. In Dynamics 365 Finance, go to **General ledger** > **Inquiries and reports** > **Fiscal journal**.
 1. On the **Fiscal journal** dialog page, specify the report parameters.
@@ -102,7 +102,7 @@ A Fiscal journal report for a long time period, such as a quarter or a year, can
 Therefore, use batch jobs.
 The dialog for the Fiscal journal report includes a **Run in the background** tab where you can set up report generation in batch mode. Set the **Batch processing** option to **Yes**. For more information about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
-To review batch jobs or find a generated file, follow these steps.
+To review batch jobs or find a generated file, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 1. Find a line that relates to your job, and then select **Show log**. If nothing is shown, no messages were produced when the file was generated.

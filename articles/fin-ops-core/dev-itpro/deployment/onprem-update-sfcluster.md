@@ -5,8 +5,9 @@ description: Learn how to update your Microsoft Azure Service Fabric cluster for
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 02/03/2025
-ms.custom:
+ms.date: 04/02/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: 
 audience: IT Pro
 ms.search.region: Global
@@ -26,7 +27,7 @@ This article provides guidance about how to update your Microsoft Azure Service 
 
 Dynamics 365 Finance + Operations (on-premises) environments require a specific version of the Service Fabric runtime. You can find the minimum Service Fabric runtime version that your version of Finance + Operations requires in [Minimum Azure Service Fabric runtime](.\onprem-compatibility.md#minimum-azure-service-fabric-runtime).
 
-To update the Service Fabric runtime for your cluster, follow these steps.
+To update the Service Fabric runtime for your cluster, follow these steps:
 
 1. From a node that belongs to the Service Fabric cluster, run the following PowerShell commands to get a list of available Service Fabric runtime versions.
 
@@ -64,7 +65,7 @@ To update the Service Fabric runtime for your cluster, follow these steps.
 
 ## Update the Service Fabric cluster configuration
 
-When you have a new Service Fabric cluster configuration file that you must apply to your cluster, run the following PowerShell commands to update your cluster's configuration.
+When you have a new Service Fabric cluster configuration file that you need to apply to your cluster, run the following PowerShell commands to update your cluster's configuration.
 
 ```powershell
 # Connect to the Service Fabric Cluster

@@ -62,7 +62,7 @@ The status of each stage is logged and monitored per invoice and sales order. If
 
 - On the **Incomplete cards payment** page, select a line, and then select **Terminate**. The card payment process is terminated.
 
-You must then follow these steps.
+You must then follow these steps:
 
 1. On the **Incomplete cards payment** page, select a line, and then select **View history**.
 

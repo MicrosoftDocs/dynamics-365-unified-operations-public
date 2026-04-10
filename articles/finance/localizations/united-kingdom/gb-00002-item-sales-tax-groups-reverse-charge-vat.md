@@ -25,7 +25,7 @@ The following procedure requires that the following sales tax codes are created 
 
 The walkthrough procedure uses the demo company GBSI.
 
-To set up item sales tax groups for reverse charge VAT, follow these steps.
+To set up item sales tax groups for reverse charge VAT, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups**.
 1. In the list, find and select the item sales tax group **RC-VAT**. On the Setup tab, you can add sales tax codes to this sales tax group.  Verify that the following sales tax codes exist for Reverse charge purposes:  REV17.5 – positive value  REV-17.5 – negative value  

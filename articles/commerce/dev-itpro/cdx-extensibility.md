@@ -251,7 +251,7 @@ Microsoft recommends that you implement setup changes on an untouched Retail sof
 
 ### Extend the data in the sample
 
-The table extension on the Commerce side is already created in the sample. To create it manually, follow these steps.
+The table extension on the Commerce side is already created in the sample. To create it manually, follow these steps:
 
 1. Start Visual Studio.
 2. On the menu, select **View** \> **Application Explorer**.

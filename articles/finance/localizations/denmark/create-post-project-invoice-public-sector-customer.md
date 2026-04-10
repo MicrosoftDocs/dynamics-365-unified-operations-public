@@ -29,7 +29,7 @@ Before you can complete this procedure, you must complete the following procedur
 
 ## Update a project contract
 
-To update a project contract, follow these steps.
+To update a project contract, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Projects \> Project contracts**.
 1. Use the Quick Filter to find records. For example, filter on the **Project contract ID** field with a value of "000057". Select a project contract that has a customer funding source that's enabled for electronic invoicing.  
@@ -44,7 +44,7 @@ To update a project contract, follow these steps.
 
 ## Create a project transaction
 
-To create a project transaction, follow these steps.
+To create a project transaction, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Item tasks \> Item requirements**.
 1. Select **New**.
@@ -60,7 +60,7 @@ To create a project transaction, follow these steps.
 
 ## Create a proposal and post an invoice
 
-To create a proposal and post an invoice, follow these steps.
+To create a proposal and post an invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Project invoices \> Project invoice proposals**.
 1. Select **New**.
@@ -73,7 +73,7 @@ To create a proposal and post an invoice, follow these steps.
 
 ## Generate an OIOUBL project invoice
 
-To generate an OIOUBL project invoice, follow these steps.
+To generate an OIOUBL project invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Project management and accounting \> Project invoices \> Project invoices**.
 1. Use the Quick Filter to find records. For example, filter on the **Project contract ID** field with a value of "000057".
@@ -83,7 +83,7 @@ To generate an OIOUBL project invoice, follow these steps.
 
 ## View an OIOUBL electronic invoice
 
-To view an OIOUBL electronic invoice, follow these steps.
+To view an OIOUBL electronic invoice, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
 1. Select **Show files**.

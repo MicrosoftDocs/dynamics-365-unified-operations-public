@@ -420,7 +420,7 @@ Dimension security is managed via dimension groups. Dimension groups can contain
 
 ### Create dimension groups
 
-To set security on a dimension, follow these steps.
+To set security on a dimension, follow these steps:
 
 1. On the **Dimension group** page, select **New group** to open the wizard for creating a new dimension group.
 2. Enter a name for the dimension group.
@@ -460,7 +460,7 @@ To set security on a dimension, follow these steps.
 
 ### Edit dimension groups
 
-To edit a dimension group, follow these steps.
+To edit a dimension group, follow these steps:
 
 1. On the **Dimension groups** page, select the dimension group that must be edited.
 2. Select **Edit group**.
@@ -480,7 +480,7 @@ After a dimension group is created, you can assign users to it. You can also rem
 
 #### Assign users to a dimension group
 
-To assign users to a dimension group, follow these steps.
+To assign users to a dimension group, follow these steps:
 
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **Assign**.
@@ -489,7 +489,7 @@ To assign users to a dimension group, follow these steps.
     > [!NOTE]
     > The user list is filtered so that it shows only users who have access to the `msdyn_xpnadimension` table.
 
-Alternatively, follow these steps.
+Alternatively, follow these steps:
 
 1. Open the **Users list** page, and select a user.
 2. Select **Manage dimension groups**.
@@ -497,13 +497,13 @@ Alternatively, follow these steps.
 
 #### Remove users from a dimension group
 
-To remove users from a dimension group, follow these steps.
+To remove users from a dimension group, follow these steps:
 
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **Remove**.
 3. In the list of users who are currently assigned to the selected dimension group, select a user to remove. You can also select multiple users to remove all of them from the dimension group at the same time.
 
-Alternatively, follow these steps.
+Alternatively, follow these steps:
 
 1. Open the **Users list** page, and select a user.
 2. Select **Manage dimension groups**.
@@ -511,12 +511,12 @@ Alternatively, follow these steps.
 
 #### View user/dimension group assignments
 
-To view the list of users who are currently assigned to a dimension group, follow these steps.
+To view the list of users who are currently assigned to a dimension group, follow these steps:
 
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **View**.
 
-To view the list of dimension groups that a user is currently assigned to, follow these steps.
+To view the list of dimension groups that a user is currently assigned to, follow these steps:
 
 1. Open the **Users list** page, and select a user.
 2. Select **View access**. The dimension groups that the user has access to are shown on the left side of the page, and the dimension access details are shown on the right side.

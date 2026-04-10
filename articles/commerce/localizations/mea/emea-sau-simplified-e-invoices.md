@@ -1,15 +1,16 @@
 ---
 title: Generate and submit simplified electronic invoices for Saudi Arabia
-description: This article explains the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
+description: Learn about the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: ilikond
 ms.author: ikondratenko
 ms.date: 04/10/2026
 ms.topic: how-to
-ms.reviewer: v-chgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
 ms.search.validFrom: 2022-11-21
-
+ms.custom: 
+  - bap-template
 ---
 # Generate and submit simplified electronic invoices for Saudi Arabia
 
@@ -114,7 +115,7 @@ On the **Commerce parameters** page, on the **Configuration parameters** tab, ad
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+For each required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Field names correspond to the language texts that you defined in the previous section.
 
@@ -162,7 +163,7 @@ Store the digital certificates that you use to digitally sign simplified e-invoi
 
 To configure certificates and certificate profiles that you can use for digital signing, follow the steps in [Set up certificate profiles](../global/certificate-profiles-for-retail-stores.md#set-up-certificate-profiles). You must configure a separate certificate profile for each CSID that you get from ZATCA.
 
-After you configure certificate profiles, follow these steps.
+After you configure certificate profiles, follow these steps:
 
 1. Go to **Retail and Commerce** > **Channel setup** > **Fiscal integration** > **Connector technical profiles**, and select the connector technical profile that you created earlier. 
 1. To configure certificate profiles per POS register, select **Override**, and create records for all registers that you must specify CSIDs for. 
@@ -238,3 +239,5 @@ To enable the digital signature in offline mode, follow these steps after you ac
 To initiate submission of simplified e-invoices to ZATCA, run the **Submit electronic documents** periodic operation in Commerce headquarters.
 
 You can review the submission log on the **Electronic document submission log** page.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

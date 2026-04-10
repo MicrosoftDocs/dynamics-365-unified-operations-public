@@ -3,7 +3,7 @@ title: Store Commerce app for mobile platforms
 description: Learn how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 12/12/2025
+ms.date: 02/20/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: global
@@ -83,13 +83,13 @@ Before a register can be activated on the Store Commerce mobile apps, you must s
 
 ### Device setup
 
-To create and set up a new device, follow these steps.
+To create and set up a new device, follow these steps:
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**. 
 1. Create a new device, and select either **Modern POS - Android** or **Modern POS - iOS** as the application type, depending on the mobile app that you're deploying. 
 
     > [!NOTE] 
-    > The **Modern POS - Android** and **Modern POS - iOS** application types are also used to deploy the current hybrid apps for Android and iOS. After the deprecation of MPOS, the labels for these application types will be updated to **Store Commerce - Android** and **Modern POS - iOS**. 
+    > The **Modern POS - Android** and **Modern POS - iOS** application types are also used to deploy the current hybrid apps for Android and iOS. After the deprecation of MPOS, the labels for these application types will be updated to **Store Commerce - Android** and **Store Commerce - iOS**. 
 
 ### Register setup
 
@@ -99,11 +99,11 @@ You can create a new register and associate it with the device that you created,
 
 If you're repurposing a screen layout included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 x 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
 
-After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules** and run the registers job.
+After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce IT \> Distribution Schedules** and run the registers job.
 
 ## Activate a device
 
-To activate a device on a Store Commerce mobile app, follow these steps.
+To activate a device on a Store Commerce mobile app, follow these steps:
 
 1. Open the app on the mobile device.
 1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
@@ -148,9 +148,10 @@ See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payme
 
 ### Offline capabilities in iOS and Android (preview)
 
-> [!IMPORTANT]  
-> - The mobile apps distributed through the Apple App Store and Google Play Store don't support offline mode.  
+> [!IMPORTANT]
+> - The mobile apps distributed through the Apple App Store and Google Play Store don't support offline mode.
 > - Offline functionality for iOS and Android is only available in custom applications created using the Store Commerce SDK. Customers who require offline workflows must build and deploy their own mobile applications using the Store Commerce SDK.
+> - To learn how to create and package a custom Store Commerce mobile app with offline capabilities, see [Create and package a Store Commerce app for Android and iOS](store-comm-android-ios-ext.md).
 
 For Commerce version 10.0.45 and later releases, the following offline capabilities for iOS and Android are available.
 

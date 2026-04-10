@@ -34,7 +34,7 @@ To work with Rebate management customer groups, go to **Rebate management** \> *
 
 Each customer can belong to any number of Rebate management groups. To view and assign group members, you can start from either the group list or the customer list.
 
-To view, add, or remove customers for a selected group, follow these steps.
+To view, add, or remove customers for a selected group, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management groups setup** \> **Customer groups**.
 1. Select the group to manage.
@@ -45,7 +45,7 @@ To view, add, or remove customers for a selected group, follow these steps.
 
 1. To remove a customer from the group, select the customer, and then select **Delete** on the Action Pane.
 
-To view, add, or remove group assignments for a selected customer, follow these steps.
+To view, add, or remove group assignments for a selected customer, follow these steps:
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select the customer to work with.
@@ -71,7 +71,7 @@ To work with Rebate management vendor groups, go to **Rebate management** \> **R
 
 Each vendor can belong to any number of Rebate management groups. To view and assign group members, you can start from either the group list or the vendor list.
 
-To view, add, or remove vendors for a selected group, follow these steps.
+To view, add, or remove vendors for a selected group, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management groups setup** \> **Vendor groups**.
 1. Select the group to manage.
@@ -82,7 +82,7 @@ To view, add, or remove vendors for a selected group, follow these steps.
 
 1. To remove a vendor from the group, select the vendor, and then select **Delete** on the Action Pane.
 
-To view, add, or remove group assignments for a selected vendor, follow these steps.
+To view, add, or remove group assignments for a selected vendor, follow these steps:
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select the vendor to work with.
@@ -108,7 +108,7 @@ To work with Rebate management item groups, go to **Rebate management** \> **Reb
 
 Each item can belong to any number of Rebate management groups. To view and assign group members, you can start from either the group list or the item list. You can also add items based on your category hierarchy.
 
-To view, add, or remove items for a selected group, follow these steps.
+To view, add, or remove items for a selected group, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management groups setup** \> **Item groups**.
 1. Select the group to manage.
@@ -119,7 +119,7 @@ To view, add, or remove items for a selected group, follow these steps.
 
 1. To remove an item from the group, select the item, and then select **Delete** on the Action Pane.
 
-To view, add, or remove group assignments for a selected item, follow these steps.
+To view, add, or remove group assignments for a selected item, follow these steps:
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 1. Select the item to work with.
@@ -130,7 +130,7 @@ To view, add, or remove group assignments for a selected item, follow these step
 
 1. To remove an item from a group, select the group, and then select **Delete** on the Action Pane.
 
-To add items to a group based on your category hierarchy, follow these steps.
+To add items to a group based on your category hierarchy, follow these steps:
 
 1. Go to **Rebate management** \> **Rebate management groups setup** \> **Item groups**.
 1. Select the group to manage.

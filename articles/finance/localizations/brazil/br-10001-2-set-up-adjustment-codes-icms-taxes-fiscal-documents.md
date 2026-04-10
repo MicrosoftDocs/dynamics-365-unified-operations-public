@@ -6,7 +6,7 @@ ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/20/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
@@ -22,7 +22,7 @@ You can create tax adjustment codes to manually adjust ICMS tax amounts on fisca
 
 The following procedure uses the BRMF demo company.
 
-To create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents, follow these steps.
+To create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and information for fiscal documents**.
 1. Select **New**.

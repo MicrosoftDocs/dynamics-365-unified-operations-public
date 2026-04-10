@@ -25,7 +25,7 @@ The following procedures were created by using the DEMF demo data company.
 
 ## Allow multiple acquisitions
 
-To allow multiple acquisitions, follow these steps.
+To allow multiple acquisitions, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Fixed assets parameters**.
 1. Select the **Allow multiple acquisitions** checkbox.
@@ -33,7 +33,7 @@ To allow multiple acquisitions, follow these steps.
 
 ## Set up a depreciation profile
 
-To set up a depreciation profile, follow these steps.
+To set up a depreciation profile, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Fixed assets \> Setup \> Depreciation profiles**.
 1. Select **New**.

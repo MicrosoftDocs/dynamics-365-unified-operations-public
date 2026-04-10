@@ -1,11 +1,10 @@
 ---
 title: App settings
-description: This article covers app settings in Microsoft Dynamics 365 Commerce.
+description: Learn about app settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/30/2024
+ms.date: 01/30/2026
 ms.topic: how-to
-audience: Developer
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
@@ -54,25 +53,25 @@ The \\src\\settings\\app.settings.json file holds app settings for global config
 
 ## Config section
 
-The **config** section of the app.settings.json file supports global configuration fields. These fields can be set at the site level in the authoring tools, and they are shared across all modules by using the **this.props.context.app.config.\*** application programming interface (API).
+The **config** section of the app.settings.json file supports global configuration fields. Set these fields at the site level in the authoring tools. Share them across all modules by using the **this.props.context.app.config.\*** application programming interface (API).
 
-The global configuration fields are helpful when you have data that should be set only one time across the whole online site, but the data is required by multiple modules. For example, an API key for ratings and reviews has the same value across the online site, and that value is required by multiple modules. Modules themselves also support site-scoped configuration settings, but those settings can't be shared across different modules.
+Global configuration fields are helpful when you have data that you set only one time across the whole online site, but multiple modules require the data. For example, an API key for ratings and reviews has the same value across the online site, and multiple modules require that value. Modules themselves also support site-scoped configuration settings, but those settings can't be shared across different modules.
 
 The schemas for these configurations follow the same schemas that are used for module configurations.
 
 ## Routes section
 
-The **routes** section in the app.settings.json file is used to add URL routes in a module. For example, if a module must create a link to the cart page, a **"cart"** route is added to the JSON file. The route can then be retrieved from the module code by using the authoring tools.
+Use the **routes** section in the app.settings.json file to add URL routes in a module. For example, if a module must create a link to the cart page, add a **"cart"** route to the JSON file. Retrieve the route from the module code by using the authoring tools.
 
-Routes can be accessed in the module view file by using the **this.props.context.app.routes.\*** API.
+Access routes in the module view file by using the **this.props.context.app.routes.\*** API.
 
 ## Themes section
 
-The **themes** section in the app.settings.json file is used to expose themes to the authoring tools. The themes in this section should match the theme names in the \\src\\themes\\ directory. They should provide localizable friendly names that the authoring tools can show when they are used to set a theme at the site level, or in the template, layout, or page editor.
+Use the **themes** section in the app.settings.json file to expose themes to the authoring tools. The themes in this section should match the theme names in the \\src\\themes\\ directory. They should provide localizable friendly names that the authoring tools can show when they set a theme at the site level, or in the template, layout, or page editor.
 
 ### Localized app settings
 
-Both the **friendlyName** property and the **description** property of each app setting should be localized for the site locale in the Dynamics 365 Commerce authoring tools. The src/resources/authoring/global.json file should be updated so that it includes a **settings** property, and all the settings that are related to resource strings should be listed under that property.
+You should localize both the **friendlyName** property and the **description** property of each app setting for the site locale in the Dynamics 365 Commerce authoring tools. Update the `src/resources/authoring/global.json` file to include a **settings** property, and list all the settings related to resource strings under that property.
 
 #### Resource schema
 
@@ -93,7 +92,7 @@ Both the **friendlyName** property and the **description** property of each app 
 }
 ```
 
-Here is an example of a resource file.
+Here's an example of a resource file.
 
 ``` json
 {
@@ -140,6 +139,5 @@ Here is an example of a resource file.
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

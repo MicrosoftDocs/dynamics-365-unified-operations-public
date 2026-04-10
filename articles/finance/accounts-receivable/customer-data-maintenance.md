@@ -22,7 +22,7 @@ The **Customer account rename data maintenance** feature continues to process ou
 
 ## Update customer records that weren't renamed
 
-To update a customer record that wasn't successfully renamed, follow these steps.
+To update a customer record that wasn't successfully renamed, follow these steps:
 
 1. In the **Feature management** workspace, select **All**.
 1. Search for **Customer account rename data maintenance**.

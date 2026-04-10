@@ -1,11 +1,10 @@
 ---
 title: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
-description: This article provides instructions on how to connect an Azure Data Lake Storage Gen 2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
+description: Learn how to connect an Azure Data Lake Storage Gen 2 solution to a Microsoft Dynamics 365 Commerce environment's Entity store.
 author: bebeale
-ms.date: 09/20/2024
+ms.date: 01/22/2026
 ms.topic: how-to
-audience: Application User
-ms.reviewer: v-chrgriffin
+ms.reviewer: v-griffinc
 ms.search.region: Global
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
@@ -18,17 +17,17 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article provides instructions on how to connect an Azure Data Lake Storage Gen2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
+This article provides instructions on how to connect an Azure Data Lake Storage Gen2 solution to a Dynamics 365 Commerce environment's Entity store. This step is required before you can enable product recommendations.
 
-In the Dynamics 365 Commerce solution, the data necessary to compute recommendations, products, and transactions are aggregated in the environment's Entity store. To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, it is necessary to connect the environment to a customer-owned Azure Data Lake Storage Gen2 solution.
+In the Dynamics 365 Commerce solution, the environment's Entity store aggregates the data necessary to compute recommendations, products, and transactions. To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, you need to connect the environment to a customer-owned Azure Data Lake Storage Gen2 solution.
 
-After the steps above have been completed, all customer data in the environment's Entity store is automatically mirrored to the customer's Azure Data Lake Storage Gen 2 solution. When recommendations features are enabled via the Feature management workspace in Commerce headquarters, the recommendations stack will be granted access to the same Azure Data Lake Storage Gen2 solution.
+After you complete the preceding steps, all customer data in the environment's Entity store automatically mirrors to the customer's Azure Data Lake Storage Gen 2 solution. When you enable recommendations features via the Feature management workspace in Commerce headquarters, the recommendations stack gains access to the same Azure Data Lake Storage Gen2 solution.
 
-During the entire process customers' data remains protected and under their control.
+During the entire process, customers' data remains protected and under their control.
 
 ## Prerequisites
 
-A Dynamics 365 Commerce environment's Entity store must be connected to an Azure Data Lake Gen Storage Gen2 account and accompanying services.
+You must connect a Dynamics 365 Commerce environment's Entity store to an Azure Data Lake Gen Storage Gen2 account and accompanying services.
 
 For more information about Azure Data Lake Storage Gen2 and how to set it up, see [Azure Data Lake Storage Gen2 official documentation](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
@@ -39,25 +38,25 @@ For a more in-depth overview of the steps required to enable Azure Data Lake Sto
 
 ### Enable Azure Data Lake Storage in the environment
 
-1. Log in to the environment's back office portal.
-1. Search for **System Parameters** and navigate to the **Data connections** tab. 
+1. Sign in to the environment's back office portal.
+1. Search for **System Parameters** and go to the **Data connections** tab. 
 1. Set **Enable Data Lake integration** to **Yes**.
-1. Next, enter the following required information:
-    1. **Application ID** // **Application Secret** // **DNS Name** - Needed to connect to KeyVault where the Azure Data Lake Storage secret is stored.
+1. Enter the following required information:
+    1. **Application ID**, **Application Secret**, and **DNS Name** - Needed to connect to KeyVault where the Azure Data Lake Storage secret is stored.
     1. **Secret name** - The secret name stored in KeyVault and used to authenticate with Azure Data Lake Storage.
-1. Save your changes in the top left corner of the page.
+1. Save your changes.
 
 ### Test the Azure Data Lake Storage connection
 
-1. Test the connection to KeyVault using the **Test Azure Key Vault** link.
-1. Test the connection to Azure Data Lake Storage using the **Test Azure Storage** link.
+1. Test the connection to KeyVault by using the **Test Azure Key Vault** link.
+1. Test the connection to Azure Data Lake Storage by using the **Test Azure Storage** link.
 
 > [!NOTE]
-> If either of the tests above fail, confirm that all of the KeyVault information added above is correct and then try again.
+> If either of the tests fail, confirm that all of the KeyVault information is correct and then try again.
 
-Once the connection tests are successful, you must enable automatic refresh for Entity store.
+After the connection tests succeed, you must enable automatic refresh for Entity store.
 
-To enable automatic refresh for Entity store, follow these steps.
+To enable automatic refresh for Entity store, follow these steps:
 
 1. Search for **Entity Store**.
 1. In the list on the left, navigate to the **RetailSales** entry, and select **Edit**.
@@ -69,7 +68,7 @@ The following image shows an example of Entity store with automatic refresh enab
 
 Azure Data Lake Storage is now configured for the environment. 
 
-If not completed already, follow the steps for [enabling product recommendations and personalization](enable-product-recommendations.md) for the environment.
+If you didn't already complete the steps for [enabling product recommendations and personalization](enable-product-recommendations.md) for the environment, follow those steps.
 
 ## Additional resources
 

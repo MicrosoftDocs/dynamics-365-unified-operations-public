@@ -168,7 +168,7 @@ Polish VAT law regulations affect situations where unpaid invoices occur and VAT
 - You allocate VAT sums through posting.
 - You must set up general ledger accounts for VAT correction posting and periods for bad debts.
 
-To set up the functionality for bad debt allowances, you must configure the system. Follow these steps.
+To set up the functionality for bad debt allowances, you must configure the system. follow these steps:
 
 1. Select **General ledger** &gt; **Journal setup** &gt; **Overdue debt journal calculation** to set up the calculation for the overdue debt journal.
 1. Select a journal type:
@@ -230,7 +230,7 @@ Use the correction of costs when the invoice is a direct cost (for example, offi
 > [!NOTE]
 > The functionality that is described here only lets you identify whether any invoices should be considered for correction. It's your responsibility to apply the required adjustments when you post.
 
-To use this functionality, you must configure the system. Follow these steps.
+To use this functionality, you must configure the system. follow these steps:
 
 1. Select **General ledger** &gt; **Journal setup** &gt; **Overdue debt journal calculation** to set up overdue debt intervals.
 
