@@ -453,7 +453,7 @@ After you complete the required configuration steps, generate and submit electro
 
 ### Electronic invoicing scope
 
-The following types of documents will be excluded from **E-invoicing** individual submission and will be included into the scope of **E-reporting**. 
+The following types of documents will be excluded from **E-Invoicing** individual submissions and will be included into the scope of **E-Reporting**. 
 
 - **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
 - **All Business-to-Consumer (B2C) invoices** - the invoices originated from retail transactions or explicitly marked as **B2C**.
@@ -473,14 +473,14 @@ The following types of documents will be excluded from **E-invoicing** individua
   1. Select the property with the **BusinessRelationType** type.
   1. In the **Value** column, enter the **B2C** value exactly as shown.
 
-  To excluded specific invoices mandatory notes, follow these steps.
+  To exclude specific invoices, follow these steps.
   1. Go to **Accounts receivable** \> **Inquires and reports** \> **Invoices**\> **Invoice journal**.
   1. Select a specific invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
   1. Select the property with the **BusinessRelationType** type.
   1. In the **Value** column, enter the **B2C** value exactly as shown.
 
 > [!NOTE]
-> Explicit marking invoices as **B2C** has higher priority than the origination from retail transactions. Additionally, you can mark retail-originated **domestic** invoices as **B2B** to forcibly include them into **E-invoicing** individual submission and exclude from **E-reporting**.
+> Explicit marking invoices as **B2C** has higher priority than the origination from retail transactions. And vice versa, you can mark retail-originated **domestic** invoices as **B2B** to forcibly include them into **E-Invoicing** individual submissions and exclude from **E-Reporting**. Additionally, you can apply standard query filtering within the described **E-Invoicing** scope right before running the submission process.
 
 ### Submission of e-invoices to Edicom
 
