@@ -37,13 +37,13 @@ Electronic reporting (ER) is an engine that supports statutory required and coun
 
 - Make a template available so that you can use it in other instances:
 
-  - Transform a document template that you created into an ER configuration, and export the configuration from the current application instance as an XML package that you can store either locally or in Lifecycle Services (LCS).
+  - Transform a document template that you created into an ER configuration, and export the configuration from the current application instance as an XML package that you can store either locally or in Microsoft Dynamics Lifecycle Services.
   - Transform an ER configuration into an application document template.
-  - Import an XML package that you store either locally or in LCS into the current instance.
+  - Import an XML package that you store either locally or in Lifecycle Services into the current instance.
 
 - Customize the template of an electronic document:
 
-  - Bring a template from LCS into the current instance as an ER configuration.
+  - Bring a template from Lifecycle Services into the current instance as an ER configuration.
   - Design a custom version of an ER configuration, and keep a reference to the base version.
 
 - Integrate a template with a particular business process, so that it's available in the application:
@@ -72,7 +72,7 @@ For the following ER-related reasons, design ER configurations in the developmen
 - Users in either the **Electronic reporting developer** role or the **Electronic reporting functional consultant** role can edit configurations and run them for testing purposes. This scenario can cause calls to methods of classes and tables that might harm business data and the performance of the instance.
 - Calls to methods of classes and tables as ER data sources of ER configurations aren't restricted by entry points and logged company content. Therefore, users in either the **Electronic reporting developer** role or the **Electronic reporting functional consultant** role can access business-sensitive data.
 
-You can [upload](#data-persistence-consideration) ER configurations that you design in the development environment to the test environment for configuration evaluation (proper process integration, correctness of results, and performance) and quality assurance, such as correctness of role-driven access rights and segregation of duties. Use the features that enable ER configuration interchange for this purpose. Proven ER configurations can be uploaded to LCS to share them with service subscribers, or they can be [imported](#data-persistence-consideration) to the production environment for internal use.
+You can [upload](#data-persistence-consideration) ER configurations that you design in the development environment to the test environment for configuration evaluation (proper process integration, correctness of results, and performance) and quality assurance, such as correctness of role-driven access rights and segregation of duties. Use the features that enable ER configuration interchange for this purpose. Proven ER configurations can be uploaded to Lifecycle Services to share them with service subscribers, or they can be [imported](#data-persistence-consideration) to the production environment for internal use.
 
 :::image type="content" source="./media/ger-configuration-lifecycle.png" alt-text="Screenshot of the ER configuration lifecycle.":::
 

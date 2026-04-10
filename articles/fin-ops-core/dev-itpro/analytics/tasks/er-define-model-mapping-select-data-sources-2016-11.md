@@ -2,7 +2,7 @@
 title: Define ER model mappings and select data sources for them
 description: This article describes how a System Administrator or an Electronic Reporting Developer can select data sources for an Electronic reporting data model.
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 04/10/2026
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -12,115 +12,116 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 ---
+
 # Define ER model mappings and select data sources for them
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. The data sources are bound to individual components of the selected data model at design time and populate business data to that data model at runtime. In this example, you select data sources for an existing data model created for the sample company Litware, Inc. 
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. Bind the data sources to individual components of the selected data model at design time. The data sources populate business data to that data model at runtime. In this example, you select data sources for an existing data model created for the sample company Litware, Inc.
 
 ## Open the Electronic Reporting configurations tree
-1. Go to Organization administration > Workspaces > Electronic reporting.
-2. Click Reporting configurations.
+
+1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+1. Select **Reporting configurations**.
 
 ## Insert a new model mapping
+
 1. In the tree, select **Payments (simplified model)**.
-2. Click **Designer**.
-3. Click **Map model to datasource**.
-4. Click **New**.
-    * This creates a new record that will map the data model to data sources. In this example, you map the data model to data sources for the desired payment type: credit transfer. It is possible to design more than one mapping for a particular data model. For example, you could create a mapping for the different types of payments, such as for direct debit or for credit transfers. In this example, you will create a mapping for credit transfers.  
-5. In the **Name** field, type **CT mapping**.  
-6. In the **Description** field, type **Payment model mapping CT**.
-7. In the **Definition** field, type **CustomerCreditTransferInitiation**.
-8. Resolve changes the Definition.
-9. Click **Save**.
+1. Select **Designer**.
+1. Select **Map model to datasource**.
+1. Select **New**.
+    * This action creates a new record that maps the data model to data sources. In this example, you map the data model to data sources for the desired payment type: credit transfer. You can design more than one mapping for a particular data model. For example, you could create a mapping for different types of payments, such as for direct debit or for credit transfers. In this example, you create a mapping for credit transfers.  
+1. In the **Name** field, type **CT mapping**.  
+1. In the **Description** field, type **Payment model mapping CT**.
+1. In the **Definition** field, type **CustomerCreditTransferInitiation**.
+1. Resolve changes the Definition.
+1. Select **Save**.
 
 ## Define required data sources for the current model mapping
-1. Click **Designer**.
-2. In the tree, select **Dynamics 365 for Operations\Table records**.
-3. Click **Add root**.
+
+1. Select **Designer**.
+1. In the tree view, select **Dynamics 365 for Operations\Table records**.
+1. Select **Add root**.
     * Enter this data source to access payment transactions.  
-4. In the **Name** field, type **Transactions**.
-5. In the **Label** field, enter **Transactions**.
-6. In the **Help** field, enter **Ledger journal lines**.
-7. In the **Ask for query** field, select **Yes**.  
-8. In the **Table** field, type **LedgerJournalTrans**.
-9. Click **OK**.
+1. In the **Name** field, type **Transactions**.
+1. In the **Label** field, enter **Transactions**.
+1. In the **Help** field, enter **Ledger journal lines**.
+1. In the **Ask for query** field, select **Yes**.  
+1. In the **Table** field, type **LedgerJournalTrans**.
+1. Select **OK**.
     * Select the LedgerJournalTrans table as a data source for the current data model.  
-10. In the tree, select **Functions\Calculated field**.
-11. Click **Add** to add a new calculated field.  
-12. In the **Name** field, type **$EndToEndID**.
-13. Click **Edit formula**.
-14. In the tree, select **String\CONCATENATE**.
-15. Click **Add function**.
-16. In the tree, expand **Transactions**.
-17. In the tree, select **Transactions\Voucher**.
-18. Click **Add data source**.
-19. In the **Formula** field, enter **CONCATENATE(Transactions.Voucher, "-", **.
-    * Type [ , "-", ] at the end of the formula.  
-20. In the tree, select **String\TEXT**.
-21. Click **Add function**.
-22. In the tree, select **Transactions\Record-ID(RecId)**.
-23. Click **Add data source**.
-24. In the **Formula** field, enter **CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))**.
-    * Type [))] at the end of the formula.  
-25. Click **Save**.
-    * Make sure that no errors have been discovered for the created formula. See the ERRORS tab below the formula editor control.  
-26. Close the page.
-27. Click **OK**.
+1. In the tree view, select **Functions\Calculated field**.
+1. Select **Add** to add a new calculated field.  
+1. In the **Name** field, type **$EndToEndID**.
+1. Select **Edit formula**.
+1. In the tree view, select **String\CONCATENATE**.
+1. Select **Add function**.
+1. In the tree view, expand **Transactions**.
+1. In the tree view, select **Transactions\Voucher**.
+1. Select **Add data source**.
+1. In the **Formula** field, enter **CONCATENATE(Transactions.Voucher, "-",**.
+    * Type `, "-",` at the end of the formula.  
+1. In the tree view, select **String\TEXT**.
+1. Select **Add function**.
+1. In the tree view, select **Transactions\Record-ID(RecId)**.
+1. Select **Add data source**.
+1. In the **Formula** field, enter **CONCATENATE(Transactions.Voucher, "-", TEXT(Transactions.RecId))**.
+    * Type `))` at the end of the formula.  
+1. Select **Save**.
+    * Make sure that no errors exist for the created formula. See the **ERRORS** tab below the formula editor control.  
+1. Close the page.
+1. Select **OK**.
     * Add the calculated field to this data source.  
-28. Click **Add** to add a new calculated field.  
-29. In the **Name** field, type **$Amount**.
-30. Click **Edit formula**.
-31. In the tree, expand **Transactions**.
-32. In the tree, select **Transactions\Debit(AmountCurDebit)**.
-33. Click **Add data source**.
-34. In the **Formula field**, enter **Transactions.AmountCurDebit - **.
-    * Type [ - ] at the end of the formula.  
-35. In the tree, select 'Transactions\Credit(AmountCurCredit)'.
-36. Click **Add data source**.
-37. Click **Save**.
-38. Close the page.
-39. Click **OK**.
-    * This adds the **$Amount calculated** field to the selected data source for the current data model.  
-40. In the tree, select **Transactions\$Amount**.
-41. In the tree, expand **Transactions**.
-42. In the tree, expand or collapse **Transactions\$Amount**.
-43. In the tree, expand or collapse **Transactions**.
-44. In the tree, select **Dynamics 365 for Operations\Table records**.
-45. Click **Add root**.
+1. Select **Add** to add a new calculated field.  
+1. In the **Name** field, type **$Amount**.
+1. Select **Edit formula**.
+1. In the tree view, expand **Transactions**.
+1. In the tree view, select **Transactions\Debit(AmountCurDebit)**.
+1. Select **Add data source**.
+1. In the **Formula field**, enter **Transactions.AmountCurDebit -**.
+    * Type `-` at the end of the formula.  
+1. In the tree view, select **Transactions\Credit(AmountCurCredit)**.
+1. Select **Add data source**.
+1. Select **Save**.
+1. Close the page.
+1. Select **OK**.
+    * This step adds the **$Amount** calculated field to the selected data source for the current data model.  
+1. In the tree view, select **Transactions\$Amount**.
+1. In the tree view, expand **Transactions**.
+1. In the tree view, expand or collapse **Transactions\$Amount**.
+1. In the tree view, expand or collapse **Transactions**.
+1. In the tree view, select **Dynamics 365 for Operations\Table records**.
+1. Select **Add root**.
     * Enter this data source to access the company's bank account details.  
-46. In the **Name** field, type **BankAccount**.
-47. In the **Label** field, enter **Bank Account**.
-48. In the **Help** field, enter **Bank Account**.
-49. Select **Yes** in the **Ask for query** field.
-50. In the **Table** field, type **BankAccountTable**.
-51. Click **OK**.
-    * Select the BankAccountTable table as a data source for the current data model.  
-52. Click **Add root**.
+1. In the **Name** field, type **BankAccount**.
+1. In the **Label** field, enter **Bank Account**.
+1. In the **Help** field, enter **Bank Account**.
+1. Select **Yes** in the **Ask for query** field.
+1. In the **Table** field, type **BankAccountTable**.
+1. Select **OK**.
+    * Select the **BankAccountTable** table as a data source for the current data model.  
+1. Select **Add root**.
     * Enter this data source to access the company's requisites.  
-53. In the **Name** field, type **Company**.
-54. In the **Label** field, type a value.
-55. In the **Help** field, enter **Company information**.
-56. Select **Yes** in the **Ask for query** field.
-57. In the **Table** field, type **CompanyInfo**.
-58. Click **OK**.
-    * Select the CompanyInfo table as a data source for the current data model.  
-59. In the tree, select **Functions\Calculated field**.
-60. Click **Add root**.
+1. In the **Name** field, type **Company**.
+1. In the **Label** field, type a value.
+1. In the **Help** field, enter **Company information**.
+1. Select **Yes** in the **Ask for query** field.
+1. In the **Table** field, type **CompanyInfo**.
+1. Select **OK**.
+    * Select the **CompanyInfo** table as a data source for the current data model.  
+1. In the tree view, select **Functions\Calculated field**.
+1. Select **Add root**.
     * Insert a calculated field as a new data source.  
-61. In the **Name** field, type **ProcessingDateTime**.
-62. In the **Label** field, enter **Processing date & time**.
-63. Click **Edit formula**.
-64. In the tree, select 'Date/time\SESSIONNOW'.
-65. Click **Add function**.
-66. Click **Save**.
-67. Close the page.
-68. Click **OK**.
-    * Add the ProcessingDateTime calculated field as a data source for the current data model.  
-69. Click **Save**.
-70. Close the page.
-
-
-
+1. In the **Name** field, type **ProcessingDateTime**.
+1. In the **Label** field, enter **Processing date & time**.
+1. Select **Edit formula**.
+1. In the tree, select `Date/time\SESSIONNOW`.
+1. Select **Add function**.
+1. Select **Save**.
+1. Close the page.
+1. Select **OK**.
+    * Add the **ProcessingDateTime** calculated field as a data source for the current data model.  
+1. Select **Save**.
+1. Close the page.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

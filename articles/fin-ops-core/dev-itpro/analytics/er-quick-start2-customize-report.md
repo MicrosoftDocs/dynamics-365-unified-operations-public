@@ -138,7 +138,7 @@ To add the standard ER configurations to your current instance of Microsoft Dyna
 :::image type="content" source="./media/er-quick-start2-import-solution1.png" alt-text="Screenshot of the Configuration repository page.":::
 
 > [!TIP]
-> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
+> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services instead.
 
 ### <a id="ReviewImportedERSolution"></a>Review the imported ER configurations
 
@@ -389,7 +389,7 @@ To add new versions of the ER configurations to the current Finance instance, im
 :::image type="content" source="./media/er-quick-start2-import-solution2.png" alt-text="Screenshot of the Configuration repository page, Versions FastTab, Import button.":::
 
 > [!TIP]
-> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from LCS instead.
+> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Lifecycle Services instead.
 
 ### <a id="ReviewImportedERFormat"></a>Review the imported ER format configurations
 

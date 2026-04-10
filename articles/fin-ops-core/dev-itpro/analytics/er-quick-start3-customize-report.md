@@ -102,7 +102,7 @@ To add the standard ER configurations to your current Finance instance, import t
 :::image type="content" source="./media/er-quick-start3-import-solution1.png" alt-text="Screenshot of the Configuration repository page.":::
 
 > [!TIP]
-> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
+> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services instead.
 
 ### Review the imported ER configurations
 
@@ -111,7 +111,7 @@ To add the standard ER configurations to your current Finance instance, import t
 1. On the **Configurations** page, expand the **Configuration components** FastTab.
 1. In the configuration tree in the left pane, expand **Invoice model**, and then expand **UBL Sales invoice**.
 
-You see that, in addition to the selected **Peppol Sales Invoice** ER format, the import process brings in other required ER configurations. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations are imported.
+You see that, in addition to the selected **Peppol Sales Invoice** ER format, the import process brings in other required ER configurations. Because new versions of ER configurations are constantly published to the Global repository and Lifecycle Services to keep the corresponding solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations are imported.
 
 :::image type="content" source="./media/er-quick-start3-imported-solution1a.png" alt-text="Screenshot of the Configurations page.":::
 
@@ -526,7 +526,7 @@ For information about how to automate this process, see [Import updated versions
 1. In the configuration tree in the left pane, expand **Invoice model mapping**. The name of **Customer invoice model mapping** changed to **Invoice model mapping** in one of the imported ER model mapping configurations.
 1. Expand **UBL Sales invoice** > **Peppol Sales Invoice**.
 
-In addition to the selected **Peppol Sales Invoice** ER format, the latest versions of other required ER configurations are imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding ER solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations are imported.
+In addition to the selected **Peppol Sales Invoice** ER format, the latest versions of other required ER configurations are imported. Because new versions of ER configurations are constantly published to the Global repository and Lifecycle Services to keep the corresponding ER solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations are imported.
 
 Make sure that the following ER configurations are eventually available in the configuration tree:
 

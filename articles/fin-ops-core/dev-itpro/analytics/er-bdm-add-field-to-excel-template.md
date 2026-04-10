@@ -40,11 +40,11 @@ You can now start to use BDM to edit business document templates.
 
 The example in this procedure uses the officially published ER solution. You must import the ER configurations of this solution into your current instance of Finance.
 
-The **Free text invoice (Excel)** ER format configuration of this solution contains the business document template in Excel format that you can edit by using BDM. Import the latest version of this ER format configuration from Microsoft Dynamics Lifecycle Service (LCS). The corresponding ER data model and ER model mapping configurations are imported automatically.
+The **Free text invoice (Excel)** ER format configuration of this solution contains the business document template in Excel format that you can edit by using BDM. Import the latest version of this ER format configuration from Microsoft Dynamics Lifecycle Service. The corresponding ER data model and ER model mapping configurations are imported automatically.
 
 For more information about how to import ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-:::image type="content" source="./media/BDM-AddFldExcel-LCS.png" alt-text="Screenshot of the LCS Shared asset library page.":::
+:::image type="content" source="./media/BDM-AddFldExcel-LCS.png" alt-text="Screenshot of the Lifecycle Services Shared asset library page.":::
 
 ### Edit the ER solution template
 

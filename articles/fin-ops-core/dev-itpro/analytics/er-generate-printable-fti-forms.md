@@ -117,7 +117,7 @@ The ER framework currently supports the following destinations for generated doc
 
 ## Download sample ER configurations to generate printable FTI forms
 
-You can download sample ER configurations to use as a template for your FTI solution. Microsoft Dynamics Lifecycle Services (LCS) stores these configurations in the Shared asset library. The configurations include:
+You can download sample ER configurations to use as a template for your FTI solution. Microsoft Dynamics Lifecycle Services stores these configurations in the Shared asset library. The configurations include:
 
 - The **Customer invoicing model** configuration contains the required data model and model mapping.
 - The **Customer FTI report (GER)** configuration contains the sample format.

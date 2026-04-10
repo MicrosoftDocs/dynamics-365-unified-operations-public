@@ -22,7 +22,7 @@ This article explains how to apply supported updates to Dynamics 365 Finance + O
 
 ## Search for and download updates
 
-For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in Lifecycle Services, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search in Lifecycle Services](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in Lifecycle Services, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
 ## Update an on-premises deployment
 
@@ -54,7 +54,7 @@ You can use the following steps to apply platform update packages.
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
-  - **Platform update packages** – Download or save the update directly to the Asset library in Lifecycle Services by following the steps in [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+  - **Platform update packages** – Download or save the update directly to the Asset library in Lifecycle Services by following the steps in [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
   - **Customizations** – Follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
 ### Update a sandbox environment

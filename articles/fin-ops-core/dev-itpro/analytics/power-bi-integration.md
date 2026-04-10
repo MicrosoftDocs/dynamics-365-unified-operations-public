@@ -44,20 +44,20 @@ For a detailed discussion of reporting concepts, see [Information access and rep
 
 You can use ready-made Power BI reports right away. Two types of Power BI content are available:
 
-- Power BI content that's available in Microsoft Dynamics Lifecycle Service (LCS)
+- Power BI content that's available in Microsoft Dynamics Lifecycle Service
 - Power BI content packs that are distributed in the PowerBI.com marketplace
 
 Depending on your version, you can use one or both types of content.
 
-### Power BI content that's available in LCS
+### Power BI content that's available in Lifecycle Services
 
-LCS is a service that can manage your environments. Microsoft operates LCS. Developers create Power BI reports by using Entity store, and then distribute them in LCS as implementation assets. In LCS, you find not only content that Microsoft develops, but also content that independent software vendors (ISVs) and partners develop.
+Lifecycle Services is a service that can manage your environments. Microsoft operates Lifecycle Services. Developers create Power BI reports by using Entity store, and then distribute them in Lifecycle Services as implementation assets. In Lifecycle Services, you find not only content that Microsoft develops, but also content that independent software vendors (ISVs) and partners develop.
 
 Microsoft continues to release Power BI content that's based on Entity store. For information, see the [Roadmap](https://roadmap.dynamics.com).
 
 ### Power BI content packs that are distributed in the PowerBI.com marketplace
 
-Several Power BI content packs are available in the PowerBI.com marketplace. Although Microsoft continues to support these content packs until further notice, future investments in content packs are based on Entity store, and content is released via LCS.
+Several Power BI content packs are available in the PowerBI.com marketplace. Although Microsoft continues to support these content packs until further notice, future investments in content packs are based on Entity store, and content is released via Lifecycle Services.
 
 For more information about the content, see [Power BI content](power-bi-home-page.md).
 
@@ -67,7 +67,7 @@ Use the ready-made Power BI content as a first step. You can modify ready-made r
 
 ### Create high-volume, near-real-time "operational Power BI reports" by using Entity store
 
-Entity store is an operational data store that's built specifically for Power BI integration. To create high-volume, near-real-time Power BI reports that use Entity store, a business analyst or a developer can use Power BI Desktop, which is the authoring tool for Power BI reports. Like other artifacts that developers create, you must distribute these reports to your users via LCS.
+Entity store is an operational data store that's built specifically for Power BI integration. To create high-volume, near-real-time Power BI reports that use Entity store, a business analyst or a developer can use Power BI Desktop, which is the authoring tool for Power BI reports. Like other artifacts that developers create, you must distribute these reports to your users via Lifecycle Services.
 
 Reports that you create by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in the PowerBI.com service. Instead, data is always stored in application.
 

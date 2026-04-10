@@ -176,7 +176,7 @@ You can debug the model mapping component of the ER mapping that you're editing.
 
 ### Download an ER solution
 
-To use an ER solution to generate an electronic payment file for a vendor payment that you process, [download](download-electronic-reporting-configuration-lcs.md) the **ISO20022 Credit transfer** ER payment format from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) or from the Global repository.
+To use an ER solution to generate an electronic payment file for a vendor payment that you process, [download](download-electronic-reporting-configuration-lcs.md) the **ISO20022 Credit transfer** ER payment format from the Shared asset library in Microsoft Dynamics Lifecycle Services or from the Global repository.
 
 :::image type="content" source="./media/er-data-debugger-import-from-repo.png" alt-text="Screenshot of importing the ER payment format on the Configuration repository page.":::
 
@@ -191,7 +191,7 @@ You can find these configurations on the **Configurations** page of the ER frame
 
 :::image type="content" source="./media/er-data-debugger-configurations.png" alt-text="Screenshot of configurations imported on the Configurations page.":::
 
-If any of the previously listed configurations are missing in the configuration tree, manually download them from the LCS Shared asset library in the same way that you downloaded the **ISO20022 Credit transfer** ER payment format.
+If any of the previously listed configurations are missing in the configuration tree, manually download them from the Lifecycle Services Shared asset library in the same way that you downloaded the **ISO20022 Credit transfer** ER payment format.
 
 ### Analyze the downloaded ER solution
 

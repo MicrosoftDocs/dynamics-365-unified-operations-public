@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistencies without causing any disruptive downtime.
+This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services or suspend your system. Therefore, you can correct minor data inconsistencies without causing any disruptive downtime.
 
 The benefit of using an X++ script to correct minor data inconsistences is that the system will automatically adjust all related tables as required when it runs the script. This approach helps ensure the integrity of the correction and helps minimize the risk of introducing new inconsistencies.
 
@@ -140,8 +140,8 @@ Use the following procedure to upload and run a script.
 
 Your selection in the last step defines the final state for the script. You can repeat the process as you require.
 
-## Upload and run a deployable package through LCS
+## Upload and run a deployable package through Lifecycle Services
 
-Instead of deploying your deployable package through the user interface for your finance and operations app, as described in the previous section, you can upload it to LCS and use the regular procedure to deploy it. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+Instead of deploying your deployable package through the user interface for your finance and operations app, as described in the previous section, you can upload it to Lifecycle Services and use the regular procedure to deploy it. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 Although this approach has fewer restrictions, it provides less error protection. Additionally, because it requires a restart of all servers, it will cause some downtime.

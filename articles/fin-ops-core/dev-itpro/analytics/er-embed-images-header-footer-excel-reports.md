@@ -137,7 +137,7 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-import-solution.png" alt-text="Screenshot of importing the standard ER configurations on the Configuration repository page.":::
 
 > [!TIP]
-> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
+> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services instead.
 
 ### <a id="ReviewImportedERSolution"></a>Review the imported ER configurations
 

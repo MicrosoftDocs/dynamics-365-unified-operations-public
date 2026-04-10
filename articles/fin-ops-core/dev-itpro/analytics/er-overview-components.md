@@ -106,7 +106,7 @@ ER components support versioning. Use the following workflow to manage changes i
 
 1. Mark the originally created version as a **Draft** version. You can edit this version, and it's available for test runs.
 1. Convert the **Draft** version to a **Completed** version. Use this version in local reporting processes.
-1. Convert the **Completed** version to a **Shared** version. Publish this version in Microsoft Dynamics Lifecycle Services (LCS) and use it in global reporting processes.
+1. Convert the **Completed** version to a **Shared** version. Publish this version in Microsoft Dynamics Lifecycle Services and use it in global reporting processes.
 1. Convert the **Shared** version to a **Discontinued** version. You can delete this version.
 
 Other data interchange can access versions with **Completed** or **Shared** status. You can perform the following actions on a component with these statuses:

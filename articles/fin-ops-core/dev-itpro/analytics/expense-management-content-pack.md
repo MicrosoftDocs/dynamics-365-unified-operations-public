@@ -38,7 +38,7 @@ All the amounts are shown in the company currency. Data for all companies are sh
 
 ## Accessing the Power BI content
 
-You can find the Expense Admin Dashboard.pbix and Expense Personal Dashboard.pbix Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+You can find the Expense Admin Dashboard.pbix and Expense Personal Dashboard.pbix Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services. For more information about how to download the content and implement it in your organization, see [Power BI content in Lifecycle Services from Microsoft and your partners](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 The content is available from the Expense Management workspace as embedded Power BI content. Any expense owner can access personal expenses for themselves, while only Accounts Payable clerks and managers have access to the Admin content to view all user's expense data.
 
 ## Refreshing the Power BI content

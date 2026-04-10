@@ -20,7 +20,7 @@ ms.custom: sfi-image-nochange
 
 This article explains how you can use the Electronic reporting (ER) framework to automate testing of some functionality. The example in this article shows how to automate the testing of vendor payment processing.
 
-The application uses the ER framework to generate payment files and corresponding documents during vendor payment processing. The ER framework consists of a data model, model mappings, and format components that support payment processing for different payment types and the generation of documents in different formats. These components can be downloaded from Microsoft Dynamics Lifecycle Services (LCS) and imported into the instance.
+The application uses the ER framework to generate payment files and corresponding documents during vendor payment processing. The ER framework consists of a data model, model mappings, and format components that support payment processing for different payment types and the generation of documents in different formats. These components can be downloaded from Microsoft Dynamics Lifecycle Services and imported into the instance.
 
 You can also customize each Microsoft component and use it as the basis of your own custom component. By creating a custom version, you can make changes that support specific requirements. For example, you can adjust the ER data model and ER model mapping to access customer-specific application data, or you can change an ER format to modify the layout of a generated document.
 
@@ -38,7 +38,7 @@ Functional power users can create user acceptance and integration testing withou
 - Use Task recorder to record test cases, and include baseline assessment. For more information, see [Task recorder resources](../user-interface/task-recorder.md).
 - Group test cases for required test scenarios. For more information, see [Create and automate user acceptance tests](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
-  - Use Business process modeler (BPM) in LCS to make libraries for user acceptance tests.
+  - Use Business process modeler (BPM) in Lifecycle Services to make libraries for user acceptance tests.
   - Use BPM test libraries to create a test plan and test suites in Microsoft Azure DevOps Services (Azure DevOps).
 
 Functional power users can run user acceptance and integration tests.
@@ -63,7 +63,7 @@ Before you can complete the tasks in this article, complete the following prereq
 ## Prepare the Accounts payable module to process vendor payments
 
 1. Sign in to your instance.
-2. Download the following ER configurations from LCS. For instructions, see [ER Import a configuration from Lifecycle Services](./tasks/er-import-configuration-lifecycle-services.md).
+2. Download the following ER configurations from Lifecycle Services. For instructions, see [ER Import a configuration from Lifecycle Services](./tasks/er-import-configuration-lifecycle-services.md).
 
     - **Payment model** ER model configuration
     - **Payment model mapping 1611** ER model mapping configuration

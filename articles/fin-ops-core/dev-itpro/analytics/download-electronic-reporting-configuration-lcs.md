@@ -1,6 +1,6 @@
 ---
 title: Download Electronic reporting configurations from Lifecycle Services
-description: Learn about how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
+description: Learn about how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services.
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
@@ -18,10 +18,10 @@ ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to download the newest version of [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).
+This article explains how to download the newest version of [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services.
 
 > [!IMPORTANT]
-> The use of LCS as a storage repository for ER configurations is being [deprecated](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). For more information, see [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
+> The use of Lifecycle Services as a storage repository for ER configurations is being [deprecated](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). For more information, see [Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 1. Sign in to the application by using one of the following roles:
 
@@ -50,11 +50,11 @@ This article explains how to download the newest version of [Electronic reportin
     :::image type="content" source="./media/update-er-from-lcs-for-ms-make-lcs-repository.png" alt-text="Screenshot of the Configuration repositories page.":::
 
     > [!TIP]
-    > If you have trouble accessing the LCS repository to download configurations from the Shared asset library in LCS, you can download configurations from the [Global repository](er-download-configurations-global-repo.md) instead.
+    > If you have trouble accessing the Lifecycle Services repository to download configurations from the Shared asset library in Lifecycle Services, you can download configurations from the [Global repository](er-download-configurations-global-repo.md) instead.
 
 1. In the configurations tree in the left pane, select the required ER configuration.
 1. On the **Versions** FastTab, select the required version of the selected ER configuration.
-1. Select **Import** to download the selected version from LCS to the current instance.
+1. Select **Import** to download the selected version from Lifecycle Services to the current instance.
 
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current instance.
