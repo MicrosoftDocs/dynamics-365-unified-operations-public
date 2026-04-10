@@ -28,7 +28,7 @@ The *follow-up with vendors* feature is straightforward to set up and try out, b
 
 To try out this feature, follow these steps:
 
-1. Enable the *(Production Ready Preview) Supplier Communications Agent* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Enable the *(Production Ready Preview) Procurement Agent - Supplier communications* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Go to **Procurement and sourcing** \> **(Preview) Procurement Agent - Supplier Communications** \> **(Preview) Emails from vendors**.
 1. When the feature is fully configured, the **Emails from vendors** workspace lists the emails that the agent identified as coming from vendors. However, you can also add messages manually to try out the feature without needing to set up email integration. To do that, select **Add vendor messages** from the Action Pane.
 1. Enter the following information into the dialog:

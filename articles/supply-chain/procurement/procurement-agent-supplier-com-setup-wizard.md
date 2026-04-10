@@ -87,7 +87,7 @@ To use the agent deployment wizard to set up the supplier communications feature
 
     > [!TIP]
     >
-    > - The *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is optional. It allows the agent to send emails automatically. We recommend that you turn off this feature for sandbox environments because data there (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    > - The *(Production ready preview) Procurement Agent - Supplier communications - automatically sending follow-up emails* feature is optional. It allows the agent to send emails automatically. We recommend that you turn off this feature for sandbox environments because data there (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
     > - If you don't see all of the features listed on this page, select **Check for updates** to refresh the list of features.
     > - If you can't enable the *Agent management* feature, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, including version requirements and Copilot Studio billing.
 

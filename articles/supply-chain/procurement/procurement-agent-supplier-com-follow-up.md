@@ -95,7 +95,7 @@ To configure automatic sending of follow-up emails without requiring user review
 
 1. Sign in to Supply Chain Management as an administrator.
 1. Go to **System administration** \> **Workspaces** \> **Feature management**.
-1. Make sure the *(Preview) Send follow-up emails to vendors with Supplier Communications Agent - automatically sending emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure supplier communications features](procurement-agent-supplier-com-setup.md).
+1. Make sure the *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails* feature is turned on. This feature is optional and is turned off by default. Learn more in [Set up and configure supplier communications features](procurement-agent-supplier-com-setup.md).
 1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
 1. Open the **Configuration** tab.
 1. On the **General** FastTab, set **Batch email provider** to *Graph*. This setting turns on the batch email provider.

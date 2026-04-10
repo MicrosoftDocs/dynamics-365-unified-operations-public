@@ -95,7 +95,7 @@ The generated content should never be used without manual review or supervision.
 
 The system doesn't send emails automatically, unless it's explicitly configured to do so. You're responsible for reviewing and sending each email.
 
-To configure the system to send emails automatically, an admin must turn on the *Supplier Communications Agent – automatically send emails* feature in Feature management. You should use this capability only after you test and review drafted emails over a long period.
+To configure the system to send emails automatically, an admin must turn on the *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails* feature in Feature management. You should use this capability only after you test and review drafted emails over a long period.
 
 The *Speed up updates in purchase orders based on incoming vendor emails* capability is intended only for vendor collaboration (classification of emails that are related to purchase orders). Therefore, during setup, you must specify which vendors email addresses (either all or only specific ones) the system can read emails from.
 

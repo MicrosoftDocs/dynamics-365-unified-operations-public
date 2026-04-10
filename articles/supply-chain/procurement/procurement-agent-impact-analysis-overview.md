@@ -25,13 +25,13 @@ For changes with downstream impact on orders, or ones that cause inventory level
 
 If purchasers must accept a change with impact, they now know straight away which internal stakeholders to be informed.
 
-Impact analysis automatically analyzes the downstream impact of changes that arrive through e-mails (via the Supplier Communications Agent) and through the Vendor Collaboration Module of Supply Chain Management if configured and enabled.
+Impact analysis automatically analyzes the downstream impact of changes that arrive through e-mails (via the Procurement Agent - Supplier communications features) and through the Vendor Collaboration Module of Supply Chain Management if configured and enabled.
 
 See [Review impact of purchase order changes from vendors](procurement-agent-impact-analysis-review-changes.md).
 
 ## Simulate if purchase order changes have impact
 
-The Impact simulation capability allows purchasers and planners to test the impact of changes not directly communicated through e-mails via the Supplier Communications Agent or the Vendor Collaboration Module.
+The impact simulation capability allows purchasers and planners to test the impact of changes not directly communicated through e-mails via the Procurement Agent - Supplier communications features or the Vendor Collaboration Module.
 
 Some key use cases for this simulation include:
 

@@ -38,7 +38,7 @@ Before you can use the supplier communications, your system must meet the follow
     - [*(Production ready Preview) Immersive Home*](../../fin-ops-core/fin-ops/copilot/immersive-home.md)
     - [*(Production ready preview) Agent management*](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md)
     - *(Production ready preview) Procurement Agent - Supplier communications*
-    - Optional: If you want the agent to send emails automatically, turn on the feature *(Preview) Procurement Agent - Supplier communications - automatically sending follow-up emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
+    - Optional: If you want the agent to send emails automatically, turn on the feature *(Production ready preview) Procurement Agent – Supplier communications - automatically sending follow-up emails*. We recommend that you turn off this feature for sandbox environments. The reason is that data (such as purchase orders) might not be up to date, or vendor email addresses might be missing.
 
     > [!TIP]
     > If you can't enable the *Agent management* features, make sure that all of the [prerequisites](../../fin-ops-core/fin-ops/copilot/agent-mgmt.md) are fulfilled, such as version requirements and Copilot Studio billing enablement.
