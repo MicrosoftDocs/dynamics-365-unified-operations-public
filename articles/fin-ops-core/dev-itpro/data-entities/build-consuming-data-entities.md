@@ -4,6 +4,8 @@ description: Learn how to build an entity and how to consume some out-of-band (O
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer

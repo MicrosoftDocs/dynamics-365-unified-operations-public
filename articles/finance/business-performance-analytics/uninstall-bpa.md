@@ -30,7 +30,7 @@ If you uninstall and then reinstall Business performance analytics, custom repor
 
 ## Data cleanup before uninstall
 
-When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. These residual elements aren't automatically deleted and can persist unless you explicitly remove them. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
+When you uninstall Business performance analytics, certain analytical components, such as report backups, transformation job flows, managed lake configurations, and metadata, remain in your storage. The uninstallation process doesn't automatically delete these residual elements. To help maintain a clean and efficient environment, run the following data cleanup script before uninstalling. This step ensures that no Business performance analytics related data is left on disk, prevents unnecessary storage consumption, and supports compliance with data hygiene standards. Cleanup might include removing folders like `msdyn_BpaConfigs`, backup directories, and other Business performance analytics managed artifacts that aren't needed.
 
 To perform data cleanup before uninstallation:
 
@@ -212,27 +212,24 @@ After the cleanup script executes successfully, you can proceed to uninstall Bus
     const WEB_API = `https://${ORG}/api/data/v9.2`;
     const SOLUTIONS = [
         "msdyn_BpaAnchor",
+        "msdyn_BpaMcp",
         "msdyn_Bpa",
         "msdyn_BpaReports",
         "msdyn_BpaPlugins",
         "msdyn_BpaPermissions",
+        "msdyn_BpaTablesTransformationJobFlows",
         "msdyn_BpaTables",
         "msdyn_BpaControls",
         "msdyn_BpaTablesAnchorSolution",
-        "msdyn_BpaAnalyticalTablesWorkspace",
-        "msdyn_BpaAnalyticalTables",
-        "msdyn_BpaTablesTransformationJobFlows",
-        "msdyn_BpaTablesDataProcessingConfigurations",
         "msdyn_BpaTablesUserRoles",
-        "msdyn_BpaTablesDataLakeSynchronizationWorkspace",
+        "msdyn_BpaAnalyticalTables",
+        "msdyn_BpaTablesDataProcessingConfigurations",
         "msdyn_BpaTablesDataLakeSynchronization",
-        "msdyn_BpaTablesStandardEntities",
-        "msdyn_BpaTablesVirtualEntitiesWorkspace",
         "msdyn_BpaTablesVirtualEntities",
         "msdyn_BpaTablesManagedDataLake",
         "msdyn_BpaPipelinePlugins",
         "msdyn_BpaTablesSecurity",
-        "msdyn_BpaConfig"
+        "msdyn_BpaConfigs"
     ];
     
     // Get all solutions
@@ -281,6 +278,26 @@ Deleting all the solutions takes about 20 minutes. If the operation is successfu
 You can manually uninstall Business performance analytics through the Power Platform admin center. You must manually delete the solutions in the following order:
 
 1. Business performance analytics anchor solution
+<<<<<<< yvishwa-bpa-docs
+1. Business performance analytics MCP
+1. Business performance analytics solution
+1. Business performance analytics reports
+1. Business performance analytics plugins solution
+1. Business performance analytics permissions
+1. Business performance analytics tables transformation job flows
+1. Business performance analytics tables
+1. Business performance analytics controls
+1. Business performance analytics tables anchor solution
+1. Business performance analytics tables user roles
+1. Business performance analytics analytical tables
+1. Business performance analytics tables data processing configuration
+1. Business performance analytics tables data lake synchronization
+1. Business performance analytics tables virtual entities
+1. Business performance analytics tables managed data lake
+1. Business performance analytics pipeline plugins solution
+1. Business performance analytics tables security
+1. Business performance analytics configs
+=======
 1. Business performance analytics solution
 1. Business performance analytics reports
 1. Business performance analytics plugins solution
@@ -302,6 +319,8 @@ You can manually uninstall Business performance analytics through the Power Plat
 1. Business performance analytics pipeline plugins solution
 1. Business performance analytics tables security
 1. Business performance analytics config
+
+>>>>>>> main
 
 To delete each of the preceding solutions, follow these steps:
 

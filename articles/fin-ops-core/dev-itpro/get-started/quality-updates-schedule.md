@@ -47,13 +47,12 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | PQU release train | Change cutoff date | PQU train duration | Status
 |---|---|---|---|
-| 10.0.44 PQU-9 | February 22, 2026 | February 27, 2026 to April 1, 2026| In-Progress |
 | 10.0.45 PQU-1 | October 8, 2025 | October 13, 2025 to November 16, 2025| Completed |
 | 10.0.45 PQU-2 | November 5, 2025 | November 10, 2025 to December 14, 2025| Canceled* |
 | 10.0.45 PQU-3 | December 3, 2025 | December 8, 2025 to January 25, 2026| Canceled* |
 | 10.0.45 PQU-4 | December 31, 2025 | January 5, 2026 to February 8, 2026| Completed |
 | 10.0.45 PQU-5 | January 28, 2026 | February 2, 2026 to March 8, 2026| Completed |
-| 10.0.45 PQU-6 | February 25, 2026 | March 2, 2026 to April 5, 2026| In-Progress |
+| 10.0.45 PQU-6 | February 25, 2026 | March 2, 2026 to April 5, 2026| Completed |
 | 10.0.45 PQU-7 | March 25, 2026 | March 30, 2026 to May 3, 2026| In-Progress |
 | 10.0.45 PQU-8 | April 22, 2026 | April 27, 2026 to May 30, 2026| Not Started |
 | 10.0.45 PQU-9 | May 27, 2026 | June 1, 2026 to July 5, 2026| Not Started |
@@ -65,7 +64,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| Not Started |
 | 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Not Started |
 | 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Not Started |
-| 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 8, 2026| Not Started |
+| 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 8, 2026| In-Progress |
 | 10.0.47 PQU-2 | April 22, 2026 | April 22, 2026 to May 22, 2026| Not Started |
 | 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to June 5, 2026| Not Started |
 | 10.0.47 PQU-4 | May 20, 2026 | May 20, 2026 to June 19, 2026| Not Started |
@@ -103,23 +102,6 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 > Canceled* - PQU will occur only on Station-1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.44 Release-9 train schedule
-
-**App version: 10.0.2263.215**
-
-**Platform version: 7.0.7606.196**
-
-**Unified Environment Provisioning Application Version: 10.0.44.11**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | February 27 to March 1, 2026 | NA |
-| Station 2 | March 6 to March 9, 2026 | March 21 to March 22, 2026 |
-| Station 3 | March 7 to March 10, 2026 | March 21 to March 22, 2026 |
-| Station 4 | March 16 to March 19, 2026 | March 28 to March 29, 2026 |
-| Station 5 | March 23 to March 26, 2026 | April 4 to April 5, 2026 |
-| Station 6 | March 24 to March 27, 2026 | April 4 to April 5, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.45 Release-6 train schedule
 
@@ -183,11 +165,28 @@ The following table shows the high-level train schedule. It includes a descripti
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | April 6 to April 9, 2026 | NA |
-| Station 2 | April 13 to April 10, 2026 | April 25 to April 26, 2026 |
+| Station 2 | April 13 to April 16, 2026 | April 25 to April 26, 2026 |
 | Station 3 | April 14 to April 17, 2026 | April 25 to April 26, 2026 |
 | Station 4 | April 20 to April 23, 2026 | May 2 to May 3, 2026 |
 | Station 5 | April 27 to April 30, 2026 | May 9 to May 10, 2026 |
 | Station 6 | April 28 to May 1, 2026 | May 9 to May 10, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-1 train schedule
+
+**App version: 10.0.2527.78**
+
+**Platform version: 7.0.7858.54**
+
+**Unified Environment Provisioning Application Version: 10.0.47.2**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | April 8 to April 11, 2026 | NA |
+| Station 2 | April 13 to April 16, 2026 | April 18 to April 19, 2026 |
+| Station 3 | April 13 to April 16, 2026 | April 18 to April 19, 2026 |
+| Station 4 | April 20 to April 23, 2026 | April 25 to April 26, 2026 |
+| Station 5 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
+| Station 6 | April 27 to April 30, 2026 | May 2 to May 3, 2026 |
 
 > [!IMPORTANT]
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

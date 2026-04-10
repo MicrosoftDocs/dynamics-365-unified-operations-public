@@ -5,8 +5,9 @@ description: Learn how to add or remove a node in your existing Microsoft Dynami
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 09/12/2025
-ms.custom:
+ms.date: 04/02/2026
+ms.custom: 
+  - bap-template
 ms.reviewer: 
 audience: IT Pro
 ms.search.region: Global

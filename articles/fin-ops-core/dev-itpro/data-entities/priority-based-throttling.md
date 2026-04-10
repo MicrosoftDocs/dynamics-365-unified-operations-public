@@ -4,6 +4,8 @@ description: Learn about priority-based throttling for OData and custom service-
 author: jaredha
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer 

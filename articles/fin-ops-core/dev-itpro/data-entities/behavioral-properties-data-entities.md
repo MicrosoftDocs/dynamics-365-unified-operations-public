@@ -4,6 +4,8 @@ description: This article describes data entity properties that let you override
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer

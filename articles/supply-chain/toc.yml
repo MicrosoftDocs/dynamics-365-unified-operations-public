@@ -2477,6 +2477,8 @@
           items:
           - name: Supplier communications features of the Procurement Agent
             href: procurement/procurement-agent-supplier-com-overview.md
+          - name: Try out the updates from vendors feature without a complete email setup
+            href: procurement/procurement-agent-supplier-com-try-out.md
           - name: Set up and configure supplier communications features
             href: procurement/procurement-agent-supplier-com-setup.md
           - name: Use the agent deployment wizard to set up supplier communications features (preview)

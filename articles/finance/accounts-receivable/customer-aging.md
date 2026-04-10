@@ -4,7 +4,7 @@ description: The Customer aging report displays the balances that are due from c
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 03/26/2024
+ms.date: 04/01/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -14,11 +14,11 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
-# Customer aging report 
+# Customer aging report
 
-The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.
+The **Customer aging** report shows the balances that are due from customers, sorted by date interval or aging period.
 
-When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. For more information, see [Set up collections](set-up-collections.md).
+When you generate this report, it displays the following default parameters. Use these parameters to filter the data that appears on the report. For more information, see [Set up collections](set-up-collections.md).
 
 <table>
 <colgroup>
@@ -37,17 +37,16 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p>Select one or more billing classifications to include on the report.</p>
 <div class="alert">
 
-**Note:** This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.</P>
-
+**Note:** This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.
 
 </div></td>
 </tr>
 <tr class="even">
 <td><p><strong>Include transactions without a billing classification</strong></p></td>
-<td><p>If this checkbox is selected, all transactions that don't have a billing classification assigned to them will be displayed on the report.</p>
+<td><p>If you select this checkbox, the report shows all transactions that don't have a billing classification assigned to them.</p>
 <div class="alert">
 
-**Note:** This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</P>
+**Note:** This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.
 
 </div></td>
 </tr>
@@ -75,11 +74,10 @@ When you generate this report, the following default parameters are displayed. Y
 <tr class="even">
 <td><p><strong>Aging period definition</strong></p></td>
 <td><p>Select an aging period definition. The <strong>Interval</strong> field isn't used if you select an aging period definition.</p>
-<p>Aging period definitions that have more than six aging periods cannot be used on the printed report.</p>
+<p>Aging period definitions that have more than six aging periods can't be used on the printed report.</p>
 <div class="alert">
 
-**Note:** You can set up aging periods on the <STRONG>Aging period definitions</STRONG> page.</P>
-
+**Note:** Set up aging periods on the <STRONG>Aging period definitions</STRONG> page.
 
 </div></td>
 </tr>
@@ -92,8 +90,7 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p>Define the period to use by entering the number of the day or month units in each period. For example, to view aging information by week, enter 7 in this field and select <strong>Day</strong> in the <strong>Day/Mth</strong> field.</p>
 <div class="alert">
 
-**Note:** The information that you enter in this field is used only if you haven't selected an aging period definition. Otherwise, the printing direction is defined on the aging period definition.</P>
-
+**Note:** The information that you enter in this field is used only if you didn't select an aging period definition. Otherwise, the printing direction is defined on the aging period definition.
 
 </div></td>
 </tr>
@@ -106,8 +103,7 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p>Select whether to calculate balances and print the aging report for past or future periods. The dates are evaluated relative to the date that is selected in the <strong>Balance as on</strong> field. Select <strong>Backward</strong> to show information for past periods. Select <strong>Forward</strong> to show information for future periods.</p>
 <div class="alert">
   
-<STRONG>Note:</STRONG> The information that you enter in this field is used only if you haven't selected an aging period definition.</P>
-
+<STRONG>Note:</STRONG> The information that you enter in this field is used only if you didn't select an aging period definition.
 
 </div></td>
 </tr>
@@ -117,7 +113,7 @@ When you generate this report, the following default parameters are displayed. Y
 </tr>
 <tr class="even">
 <td><p><strong>Include amounts in transaction currency</strong></p></td>
-<td><p>Select to include amounts in the transaction currency in addition to amounts in the accounting currency. If this checkbox is not selected, the amounts on the report are displayed only in the accounting currency.</p></td>
+<td><p>Select to include amounts in the transaction currency in addition to amounts in the accounting currency. If you don't select this checkbox, the amounts on the report are displayed only in the accounting currency.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Negative balance</strong></p></td>
@@ -129,11 +125,9 @@ When you generate this report, the following default parameters are displayed. Y
 </tr>
 <tr class="odd">
 <td><p><strong>Payment positioning</strong></p></td>
-<td><p>Select to display payments that have not been settled. These are displayed in the first column of the report.</p></td>
+<td><p>Select to display payments that aren't settled. These payments are displayed in the first column of the report.</p></td>
 </tr>
 </tbody>
 </table>
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
