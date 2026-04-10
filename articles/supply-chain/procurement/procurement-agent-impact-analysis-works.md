@@ -5,7 +5,7 @@ description: Understand how impact analysis works to identify and resolve issues
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: lisascholz
-ms.date: 03/31/2026
+ms.date: 04/24/2026
 ms.topic: article
 ---
 

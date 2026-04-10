@@ -1,12 +1,12 @@
 ---
 title: Try out the updates from vendors feature without a complete email setup (production ready preview)
-description: Learn how to try out the updates from vendors (reading vendor emails) functionality of the Supplier Communications Agent without having to do a complete email setup first.
+description: Learn how to try out the updates from vendors (reading vendor emails) functionality of the Procurement Agent without having to do a complete email setup first.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 04/24/2026
 ms.custom:
   - bap-template
 ---
@@ -17,9 +17,9 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article explains how to try out the *updates from vendors* (reading vendor emails) functionality of the Supplier Communications Agent without having to do a complete email setup first.
+This article explains how to try out the *updates from vendors* (reading vendor emails) functionality of the Procurement Agent without having to do a complete email setup first.
 
-The Supplier Communications Agent has two independent features:
+The Procurement Agent has two independent supplier communication features:
 
 - *Follow-up with vendors* (writing reminders)
 - *Updates from vendors* (reading vendor emails)

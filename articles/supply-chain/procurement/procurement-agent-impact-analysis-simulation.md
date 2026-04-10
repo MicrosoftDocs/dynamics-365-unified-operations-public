@@ -5,7 +5,7 @@ description: Simulate purchase order changes and review their impact in real tim
 author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: lisascholz
-ms.date: 04/01/2026
+ms.date: 04/24/2026
 ms.topic: how-to
 ---
 
