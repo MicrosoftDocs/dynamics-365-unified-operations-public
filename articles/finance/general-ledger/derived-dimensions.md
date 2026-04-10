@@ -2,7 +2,7 @@
 title: Derived dimensions
 description: Learn how to configure derived dimensions so that entering a value for one financial dimension automatically fills in values for other dimensions.
 author: ethanrimes
-ms.author: ethanrimes
+ms.author: ethankallett
 ms.topic: article
 ms.date: 04/05/2026
 ms.custom: 
@@ -56,7 +56,7 @@ By default, derived dimensions don't override existing values. This means you ca
 
 To change this behavior, select the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. Using the previous example, if department was already set to 50 and location to 60, entering cost center 10 would change them to department 20 and location 30.
 
-![](media/derived-dimensions-replace-values.png)
+![Derived dimensions](media/derived-dimensions-replace-values.png)
 
 
 ## Deriving dimensions applied after defaults
