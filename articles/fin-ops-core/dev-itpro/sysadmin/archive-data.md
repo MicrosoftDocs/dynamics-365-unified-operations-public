@@ -33,11 +33,24 @@ This feature currently supports archiving the following types of finance and ope
 
 - Dynamics 365 Finance General ledger
 - Dynamics 365 Finance Tax transactions
-- Dynamics 365 Supply Chain Management Inventory transactions
 - Dynamics 365 Supply Chain Management Inventory journals
 - Dynamics 365 Supply Chain Management Sales orders
+- Dynamics 365 Commerce Transactions
 
 Support for additional data types is planned in future releases.
+
+> [!IMPORTANT]
+> An issue was identified where certain virtual entity fields with private or internal access modifiers were not synced to the Dataverse Managed Data Lake during the data sync process. This could result in incomplete field-level data in Dataverse long-term retention.
+>
+> A hotfix has been released to correct virtual entity field exposure and add service-level validation to prevent archive jobs from running when field gaps are detected. To ensure your environment is fully protected:
+>
+> 1. **Validate your platform version** - Confirm your Dataverse platform has received the latest updates that include the virtual entity remediation (backport YYYYY).
+> 2. **Validate your F&O application version** - Confirm your Dynamics 365 Finance and Operations environment is running a version that includes the backported virtual entity fixes (backport XXXX). This fix is delivered through Proactive Quality Updates (PQU) for versions 10.0.45, 10.0.46, and 10.0.47.
+> 3. **Validate virtual entity field exposure** - After updating, verify that all table fields used in your archive scenarios are exposed as public fields in the corresponding virtual entities, including any custom extensions.
+>
+> The Purge from History (preview) feature has been temporarily disabled while remediation is in progress. Purge from History (preview) will be re-enabled on a per-environment basis once data completeness is confirmed.
+>
+> If you have questions or need assistance validating your environment, contact Microsoft Support or your FastTrack representative.
 
 
 ## How archiving of finance and operations data works
