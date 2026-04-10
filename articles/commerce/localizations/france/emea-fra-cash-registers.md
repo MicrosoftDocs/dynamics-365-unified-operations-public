@@ -470,8 +470,8 @@ In the Receipt format designer, add the following custom fields to the appropria
   - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
   - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
-        > [!NOTE]
-        > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
+    > [!NOTE]
+    > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
 
   - **Line count** – This field prints the number of printed item lines on a receipt.
   - **Text** – Add a text field, and specify the VAT identifier of the organization.
