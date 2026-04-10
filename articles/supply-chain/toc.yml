@@ -2135,6 +2135,8 @@
           href: demand-planning/time-freeze.md
       - name: Export and download data
         href: demand-planning/export-data.md
+      - name: Export data using custom APIs
+        href: demand-planning/demand-planning-export-api.md
     - name: Office integration
       items:
       - name: Office integration overview
