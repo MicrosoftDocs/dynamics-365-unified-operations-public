@@ -17,9 +17,9 @@ ms.custom:
 
 ## Overview
 
-You can programmatically export demand planning data (forecasts and time series) from Dynamics 365 Supply Chain Management to external systems using Dataverse custom API actions. This approach enables you to automate export workflows without needing to manually interact with the Demand Planning interface. The custom APIs support retrieving exported data as comma-separated values (CSV) files via secure shared access signature (SAS) URLs.
+You can programmatically export demand planning data (forecasts and time series) from Dynamics 365 Supply Chain Management to external systems using Dataverse custom API actions. This approach enables you to automate export workflows without needing to manually interact with the Demand Planning interface. The custom APIs support retrieving exported data as comma-separated values (CSV) files through secure shared access signature (SAS) URLs.
 
-Dataverse custom API actions provide the public interface for export operations and can be called using:
+Dataverse custom API actions provide the public interface for export operations. You can call them using:
 
 - **Dataverse Web API** - OData HTTP requests for external applications and services
 - **Power Platform tools** - Native integration with Power Automate, custom connectors, and Dataverse plugins
@@ -29,7 +29,7 @@ Dataverse custom API actions provide the public interface for export operations 
 
 ## Prerequisites
 
-Before you use the export custom APIs, you must have:
+Before you use the export custom APIs, make sure you have:
 
 - An export profile configured in Demand Planning. To create export profiles, see [Export and download data](export-data.md).
 - Access to the Dataverse environment for your Demand Planning instance.
@@ -47,11 +47,11 @@ To export demand planning data using Dataverse custom APIs, follow these steps:
 
 1. **Create an export job** - Create an export job using the Demand Planning interface. You can create jobs manually or configure scheduled jobs within the Demand Planning application. The job creation process runs asynchronously, so the export job is created immediately and then processes in the background.
 
-2. **Monitor job status** - Poll the Dataverse **Export Job Run** entity (`msdyn_scpexportdatajobruns`) to track job progress. Query the entity using Dataverse Web API OData queries to check the `msdyn_jobrunstatus` field. For details, see [Monitor job status](#monitor-job-status).
+1. **Monitor job status** - Poll the Dataverse **Export Job Run** entity (`msdyn_scpexportdatajobruns`) to track job progress. Query the entity using Dataverse Web API OData queries to check the `msdyn_jobrunstatus` field. For details, see [Monitor job status](#monitor-job-status).
 
-3. **Retrieve the file URL** - When the job status shows as completed (status value 192350002), call the `msdyn_scpgetexportoutputfileurl` custom API action to retrieve a SAS URL for downloading the exported file. The URL is valid for 120 minutes. For details, see [Power Platform integration](#power-platform-integration).
+1. **Retrieve the file URL** - When the job status shows as completed (status value 192350002), call the `msdyn_scpgetexportoutputfileurl` custom API action to retrieve a SAS URL for downloading the exported file. The URL is valid for 120 minutes. For details, see [Power Platform integration](#power-platform-integration).
 
-4. **Download the file** - Use the returned SAS URL to download the CSV file. The file contains your exported demand planning data in the format described in the [Export file format](#export-file-format) section.
+1. **Download the file** - Use the returned SAS URL to download the CSV file. The file contains your exported demand planning data in the format described in the [Export file format](#export-file-format) section.
 
 ## Monitor job status
 
@@ -83,7 +83,7 @@ The `msdyn_jobrunstatus` field uses the following integer values:
 
 | Status | Value | Description |
 |--------|-------|-------------|
-| Created | 192350000 | Job has been created but not yet started |
+| Created | 192350000 | Job is created but not started yet |
 | Executing | 192350001 | Job is currently running |
 | Completed | 192350002 | Job finished successfully |
 | Failed | 192350003 | Job encountered an error |
@@ -119,7 +119,7 @@ GET [Organization URI]/api/data/v9.2/msdyn_scpexportdatajobruns?$filter=msdyn_jo
 ```
 
 > [!NOTE]
-> **Authentication**: When calling Dataverse Web API endpoints, you need to authenticate using one of the supported methods. Options include OAuth tokens, Azure managed identities, Azure DefaultAzureCredential, or service principal authentication. For detailed guidance on authentication options and implementation, see [Authenticate with Microsoft Dataverse web services](/power-apps/developer/data-platform/authentication).
+> **Authentication**: When calling Dataverse Web API endpoints, authenticate by using one of the supported methods. Options include OAuth tokens, Azure managed identities, Azure DefaultAzureCredential, or service principal authentication. For detailed guidance on authentication options and implementation, see [Authenticate with Microsoft Dataverse web services](/power-apps/developer/data-platform/authentication).
 
 > [!TIP]
 > For Dataverse-native integrations, you can also use the `msdyn_scpgetexportoutputfileurl` custom API action to retrieve the output file URL directly from Dataverse.
@@ -165,10 +165,10 @@ The `msdyn_scpgetexportoutputfileurl` action retrieves a SAS URL for downloading
 
 To retrieve an export file URL in Power Automate:
 
-1. Add the **Perform an unbound action** step
-2. Select action name: `msdyn_scpgetexportoutputfileurl`
-3. Provide the export profile ID as `msdyn_exportprofileid`
-4. Use the `output` property to download the file or pass the URL to subsequent steps
+1. Add the **Perform an unbound action** step.
+1. Select the action name: `msdyn_scpgetexportoutputfileurl`.
+1. Enter the export profile ID as `msdyn_exportprofileid`.
+1. Use the `output` property to download the file or pass the URL to subsequent steps.
 
 > [!NOTE]
 > The custom API action requires Dataverse authentication and appropriate permissions. Make sure your application or Power Platform connection has access to the Dataverse organization where Demand Planning is deployed.
@@ -177,16 +177,16 @@ For more information about using custom API actions in Power Platform, see [Use 
 
 ### Walkthrough: Automatically download exports to SharePoint
 
-This walkthrough shows how to create a Power Automate flow that automatically downloads completed export files to a SharePoint folder. The flow monitors export job completions and retrieves the CSV file using the custom API action.
+This walkthrough shows how to create a Power Automate flow that automatically downloads completed export files to a SharePoint folder. The flow monitors export job completions and retrieves the CSV file by using the custom API action.
 
 **Scenario:**
 
 When an export job completes in Demand Planning, the flow automatically:
 
 1. Detects the completed job
-2. Retrieves the export file URL using the custom API action
-3. Downloads the CSV file
-4. Saves it to a designated SharePoint folder
+1. Retrieves the export file URL by using the custom API action
+1. Downloads the CSV file
+1. Saves it to a designated SharePoint folder
 
 **Prerequisites:**
 
@@ -202,16 +202,16 @@ When an export job completes in Demand Planning, the flow automatically:
    - Set **Filter rows**: `msdyn_jobrunstatus eq 192350002` (filters for completed jobs only)
    - Optional: Add `_msdyn_profile_value eq {your-profile-guid}` to filter for specific export profiles
 
-2. **Get export file URL** - Add **Perform an unbound action in selected environment** step
+1. **Get export file URL** - Add **Perform an unbound action in selected environment** step
    - Set **Environment**: Your Dataverse environment
    - Set **Action name**: `msdyn_scpgetexportoutputfileurl`
    - Set **msdyn_exportprofileid**: The known export profile ID, or use the profile ID from the trigger output
 
-3. **Download file** - Add **HTTP 2** action
+1. **Download file** - Add **HTTP 2** action
    - Set **Method**: GET
    - Set **URI**: Use the `output` from the previous step (the SAS URL)
 
-4. **Save to SharePoint** - Add **Create file** action (SharePoint)
+1. **Save to SharePoint** - Add **Create file** action (SharePoint)
    - Set **Site address**: Your SharePoint site
    - Set **Folder path**: Your target folder
    - Set **File name**: Use the job name from trigger or create a naming pattern
@@ -224,7 +224,7 @@ When an export job completes in Demand Planning, the flow automatically:
 :::image type="content" source="media/export-api-sharepoint-exported-file.png" alt-text="Exported CSV file in SharePoint folder" lightbox="media/export-api-sharepoint-exported-file.png":::
 
 > [!TIP]
-> To download exports from multiple profiles, remove the profile filter from the trigger. The flow will process all completed export jobs. You can add condition logic to route files to different SharePoint folders based on the profile ID.
+> To download exports from multiple profiles, remove the profile filter from the trigger. The flow processes all completed export jobs. You can add condition logic to route files to different SharePoint folders based on the profile ID.
 
 ## Export file format
 
@@ -281,7 +281,7 @@ When an error occurs calling Dataverse custom APIs, standard Dataverse error res
 ## Data classification
 
 > [!IMPORTANT]
-> Exported data may contain customer content and system metadata. The `msdyn_scpgetexportoutputfileurl` custom API action returns SAS URLs to access customer content. Make sure you follow appropriate data handling and storage practices according to your organization's security policies.
+> Exported data might contain customer content and system metadata. The `msdyn_scpgetexportoutputfileurl` custom API action returns SAS URLs to access customer content. Make sure you follow appropriate data handling and storage practices according to your organization's security policies.
 
 ## See also
 
