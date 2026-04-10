@@ -1,6 +1,6 @@
 ---
 title: Export data using custom APIs
-description: Learn how to use Dataverse custom APIs to programmatically export demand planning data from Dynamics 365 Supply Chain Management.
+description: Learn how to use Dataverse custom APIs to programmatically export Demand planning data.
 author: AndersEvenGirke
 ms.author: aevengir
 ms.reviewer: kamaybac
@@ -17,25 +17,25 @@ ms.custom:
 
 ## Overview
 
-You can programmatically export demand planning data (forecasts and time series) from Dynamics 365 Supply Chain Management to external systems using Dataverse custom API actions. This approach enables you to automate export workflows without needing to manually interact with the Demand Planning interface. The custom APIs support retrieving exported data as comma-separated values (CSV) files through secure shared access signature (SAS) URLs.
+You can programmatically export Demand planning data (forecasts and time series) to external systems using Dataverse custom API actions. This approach enables you to automate export workflows without needing to manually interact with the Demand planning interface. The custom APIs support retrieving exported data as comma-separated values (CSV) files through secure shared access signature (SAS) URLs.
 
 Dataverse custom API actions provide the public interface for export operations. You can call them using:
 
-- **Dataverse Web API** - OData HTTP requests for external applications and services
-- **Power Platform tools** - Native integration with Power Automate, custom connectors, and Dataverse plugins
+- **Dataverse Web API** – OData HTTP requests for external applications and services
+- **Power Platform tools** – Native integration with Power Automate, custom connectors, and Dataverse plugins
 
 > [!NOTE]
-> This article describes programmatic export using Dataverse custom APIs. To export data using the Demand Planning interface, see [Export and download data](export-data.md).
+> This article describes programmatic export using Dataverse custom APIs. Learn how to export data using the Demand planning interface in [Export and download data](export-data.md).
 
 ## Prerequisites
 
 Before you use the export custom APIs, make sure you have:
 
-- An export profile configured in Demand Planning. To create export profiles, see [Export and download data](export-data.md).
-- Access to the Dataverse environment for your Demand Planning instance.
+- An export profile configured in Demand planning. Learn how to create export profiles in [Export and download data](export-data.md).
+- Access to the Dataverse environment for your Demand planning instance.
 
 > [!TIP]
-> To find your export profile ID, open the export profile in the Demand Planning interface and copy the GUID from the browser URL. Alternatively, query the `msdyn_scpexportdataprofile` entity using the Dataverse Web API to retrieve profile IDs programmatically.
+> To find your export profile ID, open the export profile in the Demand planning interface and copy the GUID from the browser URL. Alternatively, query the `msdyn_scpexportdataprofile` entity using the Dataverse Web API to retrieve profile IDs programmatically.
 
 ## Export data programmatically
 
@@ -43,15 +43,15 @@ The following diagram shows the workflow for exporting data using Dataverse cust
 
 :::image type="content" source="media/demand-planning-export-api/demand-planning-export-job-sequence-diagram.png" alt-text="Diagram of Dataverse export workflow showing job creation, status polling, export completion, and CSV download steps." lightbox="media/demand-planning-export-api/demand-planning-export-job-sequence-diagram.png":::
 
-To export demand planning data using Dataverse custom APIs, follow these steps:
+To export Demand planning data using Dataverse custom APIs, follow these steps:
 
-1. **Create an export job** - Create an export job using the Demand Planning interface. You can create jobs manually or configure scheduled jobs within the Demand Planning application. The job creation process runs asynchronously, so the export job is created immediately and then processes in the background.
+1. **Create an export job** – Create an export job using the Demand planning interface. You can create jobs manually or configure scheduled jobs within the Demand planning application. The job creation process runs asynchronously, so the export job is created immediately and then processes in the background.
 
-1. **Monitor job status** - Poll the Dataverse **Export Job Run** entity (`msdyn_scpexportdatajobruns`) to track job progress. Query the entity using Dataverse Web API OData queries to check the `msdyn_jobrunstatus` field. For details, see [Monitor job status](#monitor-job-status).
+1. **Monitor job status** – Poll the Dataverse **Export Job Run** entity (`msdyn_scpexportdatajobruns`) to track job progress. Query the entity using Dataverse Web API OData queries to check the `msdyn_jobrunstatus` field. Learn more in [Monitor job status](#monitor-job-status).
 
-1. **Retrieve the file URL** - When the job status shows as completed (status value 192350002), call the `msdyn_scpgetexportoutputfileurl` custom API action to retrieve a SAS URL for downloading the exported file. The URL is valid for 120 minutes. For details, see [Power Platform integration](#power-platform-integration).
+1. **Retrieve the file URL** – When the job status shows as completed (status value 192350002), call the `msdyn_scpgetexportoutputfileurl` custom API action to retrieve a SAS URL for downloading the exported file. The URL is valid for 120 minutes. Learn more in [Power Platform integration](#power-platform-integration).
 
-1. **Download the file** - Use the returned SAS URL to download the CSV file. The file contains your exported demand planning data in the format described in the [Export file format](#export-file-format) section.
+1. **Download the file** – Use the returned SAS URL to download the CSV file. The file contains your exported Demand planning data in the format described in the [Export file format](#export-file-format) section.
 
 ## Monitor job status
 
@@ -66,11 +66,11 @@ Query the following Dataverse entity to check export job status:
 | Entity name | `msdyn_scpexportdatajobrun` |
 | Display name | Export Job Run |
 
-**Key fields:**
+The following table lists the key fields in the `msdyn_scpexportdatajobrun` entity that are relevant for monitoring export jobs:
 
 | Field name | Description |
 |------------|-------------|
-| `msdyn_jobrunstatus` | Current job status (see status values below) |
+| `msdyn_jobrunstatus` | Current job status (see status values in the next section) |
 | `msdyn_name` | Job name provided when scheduling |
 | `msdyn_starttime` | Job start timestamp |
 | `msdyn_endtime` | Job completion timestamp |
@@ -98,7 +98,7 @@ Use Dataverse Web API OData queries to retrieve job status. The base query patte
 GET [Organization URI]/api/data/v9.2/msdyn_scpexportdatajobruns?$filter={filter expression}&$select={columns}
 ```
 
-**Common query patterns:**
+The following examples show common query patterns for monitoring export jobs.
 
 Filter by completed status:
 
@@ -119,7 +119,7 @@ GET [Organization URI]/api/data/v9.2/msdyn_scpexportdatajobruns?$filter=msdyn_jo
 ```
 
 > [!NOTE]
-> **Authentication**: When calling Dataverse Web API endpoints, authenticate by using one of the supported methods. Options include OAuth tokens, Azure managed identities, Azure DefaultAzureCredential, or service principal authentication. For detailed guidance on authentication options and implementation, see [Authenticate with Microsoft Dataverse web services](/power-apps/developer/data-platform/authentication).
+> When calling Dataverse Web API endpoints, authenticate by using one of the supported methods. Options include OAuth tokens, Azure managed identities, Azure DefaultAzureCredential, or service principal authentication. For detailed guidance on authentication options and implementation, see [Authenticate with Microsoft Dataverse web services](/power-apps/developer/data-platform/authentication).
 
 > [!TIP]
 > For Dataverse-native integrations, you can also use the `msdyn_scpgetexportoutputfileurl` custom API action to retrieve the output file URL directly from Dataverse.
@@ -132,7 +132,7 @@ For Power Platform scenarios such as Power Automate flows, custom connectors, or
 
 ### Available custom API actions
 
-The following custom API actions are available for export operations:
+The following custom API action is available for export operations:
 
 | Action name | Description | Use case |
 |-------------|-------------|----------|
@@ -142,36 +142,36 @@ The following custom API actions are available for export operations:
 
 The `msdyn_scpgetexportoutputfileurl` action retrieves a SAS URL for downloading the exported CSV file from a completed export job.
 
-**Input parameters:**
+The following table lists the input parameters required to call the `msdyn_scpgetexportoutputfileurl` custom API action:
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
 | `msdyn_exportprofileid` | String (GUID) | Yes | The ID of the export profile |
 
-**Output:**
+The following table describes the output returned by the `msdyn_scpgetexportoutputfileurl` custom API action:
 
 | Property name | Type | Description |
 |---------------|------|-------------|
 | `output` | String | The SAS URL for downloading the exported CSV file (valid for 120 minutes) |
 
-**When to use:**
+Use the `msdyn_scpgetexportoutputfileurl` custom API action in the following scenarios:
 
-- **Power Automate flows** - Use the **Perform an unbound action** step to call the custom API action natively
-- **Custom connectors** - Invoke the custom API action through Dataverse connectors
-- **External applications** - Call the custom API action via Dataverse Web API (OData HTTP requests)
-- **Dataverse plugins** - Execute the custom API action from within plugin code
+- **Power Automate flows** – Use the *Perform an unbound action* step to call the custom API action natively.
+- **Custom connectors** – Invoke the custom API action through Dataverse connectors.
+- **External applications** – Call the custom API action via Dataverse Web API (OData HTTP requests).
+- **Dataverse plugins** – Execute the custom API action from within plugin code.
 
 ### Example: Power Automate flow
 
 To retrieve an export file URL in Power Automate:
 
-1. Add the **Perform an unbound action** step.
-1. Select the action name: `msdyn_scpgetexportoutputfileurl`.
+1. Add the *Perform an unbound action* step.
+1. Select the action name `msdyn_scpgetexportoutputfileurl`.
 1. Enter the export profile ID as `msdyn_exportprofileid`.
 1. Use the `output` property to download the file or pass the URL to subsequent steps.
 
 > [!NOTE]
-> The custom API action requires Dataverse authentication and appropriate permissions. Make sure your application or Power Platform connection has access to the Dataverse organization where Demand Planning is deployed.
+> The custom API action requires Dataverse authentication and appropriate permissions. Make sure your application or Power Platform connection has access to the Dataverse organization where Demand planning is deployed.
 
 For more information about using custom API actions in Power Platform, see [Use custom APIs](/power-apps/developer/data-platform/custom-api).
 
@@ -179,68 +179,68 @@ For more information about using custom API actions in Power Platform, see [Use 
 
 This walkthrough shows how to create a Power Automate flow that automatically downloads completed export files to a SharePoint folder. The flow monitors export job completions and retrieves the CSV file by using the custom API action.
 
-**Scenario:**
+#### Scenario
 
-When an export job completes in Demand Planning, the flow automatically:
+When an export job completes in Demand planning, the flow automatically:
 
 1. Detects the completed job
 1. Retrieves the export file URL by using the custom API action
 1. Downloads the CSV file
 1. Saves it to a designated SharePoint folder
 
-**Prerequisites:**
+#### Scenario prerequisites
+
+To implement this scenario, you need the following prerequisites:
 
 - Access to Power Automate with a Dataverse connection
 - SharePoint site and folder for storing export files
-- Export profile configured in Demand Planning
+- Export profile configured in Demand planning
 
-**Create the flow:**
+#### Create the flow
 
-1. **Add trigger** - Use the **When a row is added, modified or deleted** trigger
-   - Set **Change type**: Added or Modified or Deleted
-   - Set **Table name**: Export Data Job Runs (`msdyn_scpexportdatajobruns`)
-   - Set **Filter rows**: `msdyn_jobrunstatus eq 192350002` (filters for completed jobs only)
+To create the flow, follow these steps:
+
+1. **Add trigger** – Use the *When a row is added, modified or deleted* trigger
+   - Set **Change type** – Added, Modified, or Deleted
+   - Set **Table name** – Export Data Job Runs (`msdyn_scpexportdatajobruns`)
+   - Set **Filter rows** – `msdyn_jobrunstatus eq 192350002` (filters for completed jobs only)
    - Optional: Add `_msdyn_profile_value eq {your-profile-guid}` to filter for specific export profiles
 
-1. **Get export file URL** - Add **Perform an unbound action in selected environment** step
-   - Set **Environment**: Your Dataverse environment
-   - Set **Action name**: `msdyn_scpgetexportoutputfileurl`
-   - Set **msdyn_exportprofileid**: The known export profile ID, or use the profile ID from the trigger output
+1. **Get export file URL** – Add the *Perform an unbound action in selected environment* step
+   - Set **Environment** – Your Dataverse environment
+   - Set **Action name** – `msdyn_scpgetexportoutputfileurl`
+   - Set **msdyn_exportprofileid** – The known export profile ID, or use the profile ID from the trigger output
 
-1. **Download file** - Add **HTTP 2** action
-   - Set **Method**: GET
-   - Set **URI**: Use the `output` from the previous step (the SAS URL)
+1. **Download file** – Add the *HTTP 2* action
+   - Set **Method** – GET
+   - Set **URI** – Use the `output` from the previous step (the SAS URL)
 
-1. **Save to SharePoint** - Add **Create file** action (SharePoint)
-   - Set **Site address**: Your SharePoint site
-   - Set **Folder path**: Your target folder
-   - Set **File name**: Use the job name from trigger or create a naming pattern
-   - Set **File content**: Use the body output from the HTTP download step
+1. **Save to SharePoint** – Add the *Create file* action (SharePoint)
+   - Set **Site address** – Your SharePoint site
+   - Set **Folder path** – Your target folder
+   - Set **File name** – Use the job name from trigger or create a naming pattern
+   - Set **File content** – Use the body output from the HTTP download step
 
-:::image type="content" source="media/export-api-powerautomate-export-flow.png" alt-text="Power Automate flow for automatic export downloads" lightbox="media/export-api-powerautomate-export-flow.png":::
+The following image shows the full created flow:
 
-:::image type="content" source="media/export-api-export-profile-configuration.png" alt-text="Export profile configuration in Demand Planning" lightbox="media/export-api-export-profile-configuration.png":::
-
-:::image type="content" source="media/export-api-sharepoint-exported-file.png" alt-text="Exported CSV file in SharePoint folder" lightbox="media/export-api-sharepoint-exported-file.png":::
+:::image type="content" source="media/export-api-power-automate-export-flow.png" alt-text="Power Automate flow for automatic export downloads" lightbox="media/export-api-power-automate-export-flow.png":::
 
 > [!TIP]
 > To download exports from multiple profiles, remove the profile filter from the trigger. The flow processes all completed export jobs. You can add condition logic to route files to different SharePoint folders based on the profile ID.
 
 ## Export file format
 
-The exported files use a standard CSV format with configurable columns.
+The exported files use a standard comma-separated values (CSV) format with configurable columns.
 
 ### CSV structure
 
-Exported files have the following structure:
+Exported files have the following standard columns:
 
-**Standard columns:**
+- **Time** – Timestamp of the data point (format configurable via organization settings)
+- **Value** – The numeric value (forecast, demand, and so on)
+- **Dimension columns** – Additional columns based on the time series dimensions (such as Product, Location, Customer)
 
-- **Time** - Timestamp of the data point (format configurable via organization settings)
-- **Value** - The numeric value (forecast, demand, and so on)
-- **Dimension columns** - Additional columns based on the time series dimensions (such as Product, Location, Customer)
-
-**Example CSV:**
+Here's an example of CSV file content:
 
 ```csv
 Time,Value,Product,Location
@@ -252,38 +252,40 @@ Time,Value,Product,Location
 
 ### File storage
 
-- **Location**: Azure Data Lake Storage Gen2
-- **Path**: `ExportFiles/{exportProfileId}.csv`
-- **Format**: UTF-8 encoded CSV
-- **Access**: SAS URL valid for 120 minutes (2 hours)
+Files are stored as follows:
+
+- **Location** – Azure Data Lake Storage Gen2
+- **Path** – `ExportFiles/{exportProfileId}.csv`
+- **Format** – UTF-8 encoded CSV
+- **Access** – SAS URL valid for 120 minutes (2 hours)
 
 ## Best practices
 
 Follow these best practices to ensure successful exports:
 
-- **SAS URL expiration** - The SAS URL expires after 120 minutes. Download the file promptly or request a new URL if needed.
-- **Job naming** - Use descriptive job names that include context (such as date range and purpose) for easier tracking and auditing.
-- **Export profile management** - Configure export profiles in advance with appropriate filters, date ranges, and dimension selections.
-- **Error handling** - Implement retry logic for transient failures and proper error handling for authentication and authorization issues when calling Dataverse custom APIs.
-- **File size** - Be mindful of large exports. Consider filtering data by date range or dimensions to manage file sizes.
+- **SAS URL expiration** – The SAS URL expires after 120 minutes. Download the file promptly or request a new URL if needed.
+- **Job naming** – Use descriptive job names that include context (such as date range and purpose) for easier tracking and auditing.
+- **Export profile management** – Configure export profiles in advance with appropriate filters, date ranges, and dimension selections.
+- **Error handling** – Implement retry logic for transient failures and proper error handling for authentication and authorization issues when calling Dataverse custom APIs.
+- **File size** – Be mindful of large exports. Consider filtering data by date range or dimensions to manage file sizes.
 
 ### Error responses
 
-When an error occurs calling Dataverse custom APIs, standard Dataverse error responses are returned. For details on error handling, see [Web API error handling](/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors#handle-errors).
+When an error occurs calling Dataverse custom APIs, the API returns standard Dataverse error responses. For details on error handling, see [Web API error handling](/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors#handle-errors).
 
-**Common error scenarios:**
+Here are some common error scenarios you might encounter when calling the export custom API action:
 
-- **401 Unauthorized**: Authentication token is missing, expired, or invalid
-- **403 Forbidden**: The authenticated user lacks permissions to access the Dataverse organization or execute custom API actions
-- **404 Not Found**: The specified export profile or export file doesn't exist
-- **400 Bad Request**: Invalid request parameters such as malformed GUIDs or missing required fields
+- **401 Unauthorized** – Authentication token is missing, expired, or invalid.
+- **403 Forbidden** – The authenticated user lacks permissions to access the Dataverse organization or execute custom API actions.
+- **404 Not Found** – The specified export profile or export file doesn't exist.
+- **400 Bad Request** – Invalid request parameters exist, such as malformed GUIDs or missing required fields.
 
 ## Data classification
 
 > [!IMPORTANT]
 > Exported data might contain customer content and system metadata. The `msdyn_scpgetexportoutputfileurl` custom API action returns SAS URLs to access customer content. Make sure you follow appropriate data handling and storage practices according to your organization's security policies.
 
-## See also
+## Additional resources
 
 - [Export and download data](export-data.md)
 - [Rolling forecasts](rolling-forecasts.md)
