@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: Learn about the cash register functionality available for France in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 11/19/2025
+ms.date: 04/10/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.search.region: France
@@ -21,18 +21,19 @@ This article provides an overview of the cash register functionality available f
 
 ## Certification information
 
-This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
+This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number:
 
 - **Microsoft Dynamics 365 Commerce, version 10.0**:
 
-    - Certificate category: B
-    - Certificate number: 525/0498-5
+  - Certificate category: B
+  - Certificate number: 525/0498-5
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
 You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog. You can open this dialog by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog shows the certified software name and version, the certification category, and the NF 525 certificate number.
 
  > [!NOTE]
+  >
   > - To comply with NF 525 certification requirements for updating software versions, Microsoft uses a separate NF 525 specific version. The current NF 525 certified major version is Dynamics 365 Commerce version 10.0, which maps to the global major Dynamics 365 Commerce version 10.0. The specific service update version is Dynamics 365 Commerce version 10.0.45, which corresponds to Store Commerce POS build 9.55.x. Learn more in [NF 525 compliance documentation](#nf-525-compliance-documentation).
   > - Microsoft ensures the authenticity and security of the Dynamics 365 Commerce software through a rigorous code signing process. Each component is digitally signed with a Microsoft certificate, which guarantees that the software has been authored by Microsoft and hasn't been tampered with. This secure signing process provides customers with confidence in the integrity and origin of the software they use.
   > - Microsoft maintains source code for all supported versions of Dynamics 365 Commerce in a secure version control system that is in accordance with the [Microsoft Secure Development Lifecycle](https://www.microsoft.com/securityengineering/sdl). If you need more details about a specific version of Dynamics 365 Commerce, please open a support request and a Microsoft engineer will work with you to provide the required information.
@@ -54,7 +55,7 @@ The following table shows the Dynamics 365 Commerce documentation that is relate
 
 The following illustration shows the high-level design of the Commerce solution for France. For more information about Dynamics 365 Commerce components, see [Dynamics 365 Commerce architecture overview](../../dev-itpro/commerce-architecture.md).
 
-![High-level design of the fiscal solution for France.](../media/emea-fra-fiscal-solution.png)
+:::image type="content" source="../media/emea-fra-fiscal-solution.png" alt-text="Screenshot of the high-level design of the fiscal solution for France.":::
 
 The high-level, end-to-end process flow for France is as follows:
 
@@ -105,7 +106,7 @@ If the **Audit** option in the POS functionality profile is set to **Yes**, the 
 
 > [!NOTE]
 > Audit event logs are only applicable to changes made in the POS, so changes made in Commerce headquarters aren't included in the logs.
-    
+
 ### Digital signing overview
 
 The following types of records (transactions and events) are digitally signed in POS:
@@ -117,7 +118,7 @@ The following types of records (transactions and events) are digitally signed in
 
 The signature is created and recorded in the channel database at the same time that the transaction is finalized or the event is registered. The data that is signed is a text string that consists of several data fields. These fields vary, depending on the type of record. The general signing process consists of the following steps:
 
-1. Select the next sequential number, for signing purposes, for the same register and type of record. 
+1. Select the next sequential number, for signing purposes, for the same register and type of record.
 1. Extract the data fields that must be signed from the record that is being signed.
 1. Build a string that consists of a comma-separated list of the data fields.
 1. Add the previous signature for the same register and type of record.
@@ -128,6 +129,7 @@ The signature is created and recorded in the channel database at the same time t
 1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Commerce headquarters, together with the transaction or event.
 
 > [!NOTE]
+>
 > - The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
 > - You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 256-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
@@ -155,7 +157,7 @@ The data that is signed for a sales or return transaction is a text string that 
 > [!NOTE]
 > For digital signing purposes, return transactions are considered regular sales transactions. Therefore, the signing process for return transactions is the same as the signing process for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of a return is negative. In other words, it includes a minus sign when it's added to the text string that is signed.
 
-You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification. 
+You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
 
 ### Digital signing of receipt copies
 
@@ -180,7 +182,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 
 - The total amount of sales and returns for the shift, including tax per tax rate.
 - The total amount of sales and returns for the shift, including tax.
-- The cumulative perpetual grand total of absolute values of sales and returns for shifts of the same register, including tax. 
+- The cumulative perpetual grand total of absolute values of sales and returns for shifts of the same register, including tax.
 - The date and time of the shift closing event, in YYYYMMDDHHMMSS format.
 - The date and time of the shift.
 - The sequential number of the shift closing event for the register.
@@ -224,19 +226,19 @@ Receipts for France can include additional information that was implemented by u
 - **Extract from digital signature** – A receipt should include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
 - Information about a receipt copy:
 
-    - **Reprint message** – A receipt copy should include a "Copy" caption.
-    - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
-    - **Reprint date** – A receipt copy can include the date of the copy.
-    - **Reprint time** – A receipt copy can include the time of the copy in either the 12-hour format or the 24-hour format.
-    - **Reprint signature** – A receipt copy can include an extract from the digital signature of the copy.
+  - **Reprint message** – A receipt copy should include a "Copy" caption.
+  - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
+  - **Reprint date** – A receipt copy can include the date of the copy.
+  - **Reprint time** – A receipt copy can include the time of the copy in either the 12-hour format or the 24-hour format.
+  - **Reprint signature** – A receipt copy can include an extract from the digital signature of the copy.
 
 - **Line count** – A receipt should include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
 
-    - Prepayments (customer account deposits)
-    - Prepayments for sales orders (customer order deposits)
-    - Issuing a gift card
-    - Adding funds to a gift card
+  - Prepayments (customer account deposits)
+  - Prepayments for sales orders (customer order deposits)
+  - Issuing a gift card
+  - Adding funds to a gift card
 
 - **Certification data** – A receipt should include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 - **Software version** – A receipt should include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
@@ -298,7 +300,7 @@ A closed journal is digitally signed. The data that is signed for a closed journ
 
 - The total amounts of sales and returns for the store and period, including tax per tax rate.
 - The total amount of sales and returns for the store and period, including tax.
-- The cumulative perpetual grand total of absolute values of sales and returns for the store and period, including tax. 
+- The cumulative perpetual grand total of absolute values of sales and returns for the store and period, including tax.
 - The date and time of closing the journal, in YYYYMMDDHHMMSS format.
 - The start and end dates of the period.
 - The sequential number of the signed period grand total journal for the store.
@@ -433,7 +435,6 @@ On the **Custom fields** page, add the following records for the custom fields f
 | VATID_FR                        | Receipt | 900017          |
 | SIRETNUMBER_FR                  | Receipt | 900018          |
 
-
 ### Configure receipt formats
 
 NF 525 compliance requires that receipts shouldn't be printed by default and should only be printed by customer request. To comply with this requirement, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
@@ -442,42 +443,42 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 - **Header:** Add the following field:
 
-    - **Transaction type** – This field identifies the type of receipt.
-    - **Reprint message** – This standard field prints a "Copy" caption on a receipt copy.
+  - **Transaction type** – This field identifies the type of receipt.
+  - **Reprint message** – This standard field prints a "Copy" caption on a receipt copy.
 
 - **Lines:** We recommend that you add the following standard fields:
 
-    - **Unit price with tax**
-    - **Total price with tax**
-    - **Tax ID**
+  - **Unit price with tax**
+  - **Total price with tax**
+  - **Tax ID**
 
 - **Footer:** Add the following fields:
 
-    - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
-    - **Sum All Discounts** – This field prints the receipt's total discount.
-    - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
-    - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
-    - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
-    - **Sales tax basis** – This field prints the receipt's tax basis for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
-    - **Sales tax amount** – This field prints the receipt's tax amount for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
-    - **Sequential number** – This field prints the sequential number of a signed sales transaction.
-    - **Digital signature** – This field prints the extract from the digital signature.
-    - **Reprint number** – This field prints the number of a receipt copy. For an original receipt, the value is **0** (zero).
-    - **Reprint date** – This field prints the date of a receipt copy.
-    - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
-    - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
-    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
-    - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
+  - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+  - **Sum All Discounts** – This field prints the receipt's total discount.
+  - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded.
+  - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
+  - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
+  - **Sales tax basis** – This field prints the receipt's tax basis for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
+  - **Sales tax amount** – This field prints the receipt's tax amount for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
+  - **Sequential number** – This field prints the sequential number of a signed sales transaction.
+  - **Digital signature** – This field prints the extract from the digital signature.
+  - **Reprint number** – This field prints the number of a receipt copy. For an original receipt, the value is **0** (zero).
+  - **Reprint date** – This field prints the date of a receipt copy.
+  - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
+  - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
+  - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
+  - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
 
-    - **Line count** – This field prints the number of printed item lines on a receipt.
-    - **Text** – Add a text field, and specify the VAT identifier of the organization.
-    - **Text** – Add a text field, and specify the NAF code of the organization.
-    - **Text** – Add a text field, and specify the SIRET number of the organization.
-    - **Store name** – This standard field prints the name of the store.
-    - **Store address** – This standard field prints the address of the store.
+  - **Line count** – This field prints the number of printed item lines on a receipt.
+  - **Text** – Add a text field, and specify the VAT identifier of the organization.
+  - **Text** – Add a text field, and specify the NAF code of the organization.
+  - **Text** – Add a text field, and specify the SIRET number of the organization.
+  - **Store name** – This standard field prints the name of the store.
+  - **Store address** – This standard field prints the address of the store.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../../receipt-templates-printing.md).
 
@@ -508,7 +509,7 @@ To enable the fiscal registration process for France in Commerce headquarters, f
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**. Update the other connection settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**, and create a new fiscal connector group for the connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Open the distribution schedule, and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Configure the digital signature parameters
