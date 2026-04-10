@@ -1,6 +1,6 @@
 ---
 title: Product insights by Copilot
-description: Learn how store associates can use Microsoft Copilot generated product insights to quickly understand product information and deliver informed shopping assistance 
+description: Learn how store associates can use Microsoft Copilot-generated product insights to quickly understand product information and deliver informed shopping assistance 
 author: ashishmsft
 ms.date: 04/08/2026
 ms.update-cycle: 180-days
