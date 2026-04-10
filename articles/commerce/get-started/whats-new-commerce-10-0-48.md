@@ -32,7 +32,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
-
+| Store Commerce | Distance unit display (KM or miles) for store locator and inventory lookup based on legal entity country | this feature is on by default distances are automatically displayed in kilometers for metric-region legal entities and miles for others. | Feature management |
+| Fulfillment | Cross-legal entity order fulfillment | Commerce orders can now be sourced and fulfilled across multiple legal entities. Retailers can define cross-LE fulfillment groups, access inventory across legal entities, automate intercompany order creation, and fulfill cross-LE orders from POS. DOM profiles and rules are updated to support cross-LE strategies. | Feature management |
 
 ## Features turned on by default in this release
 
