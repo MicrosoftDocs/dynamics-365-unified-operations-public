@@ -221,7 +221,7 @@ To create the flow, follow these steps:
    - Set **File name** – Use the job name from trigger or create a naming pattern
    - Set **File content** – Use the body output from the HTTP download step
 
-The following image shows the full created flow:
+The following image shows the final created flow:
 
 :::image type="content" source="media/export-api-power-automate-export-flow.png" alt-text="Power Automate flow for automatic export downloads" lightbox="media/export-api-power-automate-export-flow.png":::
 
