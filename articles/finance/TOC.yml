@@ -2850,9 +2850,9 @@
                       href: localizations/france/fr-00004-french-bills-exchange-promissory-notes.md
                     - name: French Intrastat
                       href: localizations/france/emea-fra-intrastat.md
-                    - name: NAF codes and siret numbers
-                      href: localizations/france/emea-fra-naf-codes-siret-numbers.md
-                    - name: Set up NAF codes and Siret numbers
+                    - name: Registration numbers setup for France
+                      href: localizations/france/registration-numbers-setup-for-france.md
+                    - name: NAF codes
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
                       href: localizations/france/emea-fra-apply-penalty-customer-payment-past-due.md
