@@ -33,6 +33,10 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
 
+| eCommerce | Customize the default branding of EEID sign-in page | In addition to replacing Azure AD B2C for new deployments, Entra External ID as next-gen CIAM introduces enhanced support for customizing the sign‑in and sign‑up experience, allowing sellers to brand and tailor login pages to match their storefront identity and customer journeys | Feature management |
+
+| eCommerce | Prevent indexing of internal URL(s) | The eCommerce platform now supports preventing search engines from indexing internal or non‑public URLs, helping ensure that only intended, customer‑facing pages appear in search results. This reduces the risk of exposing internal flows (such as preview, authoring, testing, or system-generated URLs), improves SEO quality, and avoids duplicate or low‑value pages being indexed by search engines.
+This capability helps customers maintain clean search visibility, protect internal site structures, and improve overall search ranking signals by indexing only relevant, production‑ready content | Feature management |
 
 ## Features turned on by default in this release
 
