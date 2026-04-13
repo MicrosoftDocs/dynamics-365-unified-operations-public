@@ -4,7 +4,7 @@ description: This article provides a list of planned and released regulatory upd
 author: liza-golub
 ms.author: egolub
 ms.date: 12/17/2025
-ms.topic: article
+ms.topic: concept-article
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -75,11 +75,9 @@ For the latest regulatory update plans, refer to the following table.
 |      Poland      |   April 2023| 10.0.34 | Updates Payment terms in commercial transactions report (PL-00053) in accordance to D20222414L |
 |      Saudi Arabia      |   November 2022| 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
-
 ## Additional resources
+
 - For more information about all planned and released country/region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
 - For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
