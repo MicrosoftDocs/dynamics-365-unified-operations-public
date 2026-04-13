@@ -49,14 +49,17 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 1. Select **Yes** in the **Ask for main account** field.
     * Set **Ask for main account** to **Yes** to allow users to select the main account as part of the list of dimensions. If set to **No**, the main account isn't included in the list of dimensions and the **Is main account mandatory** option is enabled. If **Is main account mandatory** is set to **Yes**, include the main account in the list of dimensions regardless of the user's selection.  
 1. Select **OK**.
-:::image type="content" source="../media/er-financial-dimensions-guides-model-mapping1.png" alt-text="Screenshot of financial dimensions details data source properties slide out."​:::
+
+   :::image type="content" source="../media/er-financial-dimensions-guides-model-mapping1.png" alt-text="Screenshot of financial dimensions details data source properties slide out."​:::
+
 1. In the tree, select **Dynamics 365 for Operations\Table records**.
 1. Select **Add root**.
 1. In the **Name** field, type **LedgerJournal**.
 1. Select **Yes** in the **Ask for query** field.
 1. In the **Table** field, type **LedgerJournalTable**.
 1. Select **OK**.
-:::image type="content" source="../media/er-financial-dimensions-guides-model-mapping2.png" alt-text="Screenshot of model mapping designer page, Table records data source type.":::
+
+   :::image type="content" source="../media/er-financial-dimensions-guides-model-mapping2.png" alt-text="Screenshot of model mapping designer page, Table records data source type.":::
 
 ## Map data model elements to added data sources
 
@@ -88,7 +91,6 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 1. In the tree, select **LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions**.
 1. In the tree, select **Journal\Transaction\Dimensions data**.
 1. Select **Bind**.
-:::image type="content" source="../media/er-financial-dimensions-guides-model-mapping3.png" alt-text="Screenshot of model mapping designer page, Mapping tab, Data sources tree.":::
 1. In the tree, select **LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)**.
 1. In the tree, select **Journal\Transaction\Debit**.
 1. Select **Bind**.
@@ -127,7 +129,9 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 1. In the **expressionAsStringText** field, enter `Company.'find()'.'name()'`.
     * `Company.'find()'.'name()'`  
 1. Select **Save**.
-:::image type="content" source="../media/er-financial-dimensions-guides-model-mapping4.png" alt-text="Screenshot of ER model mapping designer page.":::
+
+   :::image type="content" source="../media/er-financial-dimensions-guides-model-mapping4.png" alt-text="Screenshot of ER model mapping designer page.":::
+
 1. Close the page.
 1. Select **Save**.
 1. Close the page.
@@ -139,6 +143,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 1. Select **Change status**.
 1. Select **Complete**.
 1. Select **OK**.
-:::image type="content" source="../media/er-financial-dimensions-guides-model-mapping5.png" alt-text="Screenshot of ER Configurations page.":::
+
+   :::image type="content" source="../media/er-financial-dimensions-guides-model-mapping5.png" alt-text="Screenshot of ER Configurations page.":::
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

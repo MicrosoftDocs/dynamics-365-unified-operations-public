@@ -60,7 +60,7 @@ In wide area network (WAN) environments, Remote Desktop in Windows Server isn't 
 
 Finance + Operations doesn't require internet connectivity from user workstations. However, some features won't be available if there is no internet connectivity.
 
-| | |
+| &nbsp; | &nbsp; |
 |---|---|
 | **Browser client** | An intranet scenario without internet connectivity is a design point for the on-premises deployment option. Some features that require cloud services won't be available, such as Help and Task guide libraries in Microsoft Dynamics Lifecycle Services. |
 | **Server** | The orchestrator node types must be able to communicate with Lifecycle Services for deployment and servicing operations. The on-premises browser-based client doesn't require internet access. |
