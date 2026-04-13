@@ -48,7 +48,6 @@ This article describes the capabilities of the modernized transaction grid and h
 
 ### Inline line actions
 
-*Available from version 10.0.44*
 
 Common cart line operations are available as inline actions directly on each cart line, removing the need for nested button navigation. Available actions include void product, return item, line discount, price override, coupon, line comment, and change unit of measure. The display order of inline actions is ranked automatically by frequency of use per register.
 
@@ -59,13 +58,11 @@ To expose a broader set of line operations, enable **Enable advanced inline acti
 
 ### Inline quantity update
 
-*Available from version 10.0.44*
 
 Associates can update the quantity of a cart line by selecting or tapping the quantity value directly within the grid — no nested buttons or dialogs required.
 
 ### Product images on cart lines
 
-*Available from version 10.0.42*
 
 Product images are displayed on each cart line, helping associates visually confirm items at a glance. Ensure product images are correctly configured in headquarters before enabling this capability. Learn more in [Set up and manage images for Store Commerce](set-up-manage-images-retail-mpos.md).
 
@@ -80,7 +77,6 @@ To enable product images on the transaction grid:
 
 ### Quantity discount captions
 
-*Available from version 10.0.47*
 
 An inline caption appears on a cart line when a quantity-based discount is available, giving associates a natural prompt to inform customers about potential savings.
 
@@ -88,7 +84,6 @@ To enable: In **POS visual profiles**, set **Show inline quantity discount messa
 
 ### Threshold discount bar
 
-*Available from version 10.0.47*
 
 A discount bar appears above the cart when the cart total is approaching a threshold-based discount tier, giving associates a clear cue to encourage customers to add more items.
 
@@ -98,7 +93,6 @@ To enable: In **POS visual profiles**, set **Show threshold discount bar** to **
 
 ## Cart suggestions
 
-*Available from version 10.0.47*
 
 The cart suggestions panel displays AI-curated product recommendation cards with add-to-sale actions directly from the transaction page. Cards use a modernized Fluent UI layout with larger imagery. Default recommendations are curated by headquarters users.
 
@@ -110,7 +104,6 @@ To enable: In **POS visual profiles**, set **Show product suggestions** to **Yes
 
 ## Loyalty upsell prompt
 
-*Available from version 10.0.44*
 
 When a customer is attached to the transaction, the loyalty upsell prompt surfaces how close the customer is to their next loyalty tier — giving associates a data-backed moment to encourage additional purchases.
 
@@ -120,7 +113,6 @@ Learn more in [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md).
 
 ## Notifications
 
-*Available from version 10.0.43*
 
 The toast notification framework delivers real-time, non-blocking alerts on the transaction page. Built-in scenarios include policy updates for associates, low-stock item alerts, and kiosk assistance requests.
 
@@ -134,7 +126,6 @@ Learn more in [Offline reliability toast notifications in the Store Commerce app
 
 ### Streamlined add-to-cart workflow
 
-*Available from version 10.0.40*
 
 Two workflows are available when an associate adds a product to the cart from the product details page or search results:
 
@@ -145,7 +136,6 @@ To configure: In **POS visual profiles**, under **General \> Product details pag
 
 ### Reset button grids at end of transaction
 
-*Available from version 10.0.40*
 
 When a transaction is completed, suspended, or voided, the default button grid assigned to the first tab is automatically restored. This reduces the number of clicks required when associates handle consecutive transactions.
 
