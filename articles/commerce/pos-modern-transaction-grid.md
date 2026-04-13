@@ -93,10 +93,7 @@ To enable: In **POS visual profiles**, set **Show threshold discount bar** to **
 
 ## Cart suggestions
 
-
-The cart suggestions panel displays AI-curated product recommendation cards with add-to-sale actions directly from the transaction page. Cards use a modernized Fluent UI layout with larger imagery. Default recommendations are curated by headquarters users.
-
-The suggestions component is extensible — partners and ISVs can provide custom recommendation logic by extending the suggestions panel.
+The cart suggestions panel provides a modernized layout for displaying product recommendation cards with add-to-sale actions directly from the transaction page. The default recommendations are curated by headquarters users. The component exposes an extensibility API that allows partners and ISVs to supply their own recommendation logic, including AI-curated suggestions.
 
 To enable: In **POS visual profiles**, set **Show product suggestions** to **Yes**, then run the **Registers (1090)** job.
 
