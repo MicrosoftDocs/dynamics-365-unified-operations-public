@@ -38,7 +38,6 @@ This article describes the capabilities of the modernized product details page a
 
 ## Page layout
 
-*Available from version 10.0.47*
 
 The product details page uses a sticky vertical layout that keeps primary product information and key actions visible at all times while associates scroll through details.
 
@@ -50,7 +49,6 @@ The product details page uses a sticky vertical layout that keeps primary produc
 
 ## Product imagery
 
-*Available from version 10.0.47*
 
 The improved image gallery provides clearer product visuals and faster recognition with better swipe interactions, helping associates confirm products for customers more confidently.
 
@@ -58,7 +56,6 @@ The improved image gallery provides clearer product visuals and faster recogniti
 
 ## Dimension and quantity selection
 
-*Available from version 10.0.47*
 
 Dimension controls (size, color, style) and quantity entry are presented inline on the page, streamlining variant and quantity selection for quicker, error-free entry.
 
@@ -66,7 +63,6 @@ Dimension controls (size, color, style) and quantity entry are presented inline 
 
 ## Related products carousel
 
-*Available from version 10.0.47*
 
 A related products carousel is displayed on the product details page, enabling quick cross-sell opportunities. Each card in the carousel includes an **Add to sale** button so associates can add related items to the cart without navigating away.
 
@@ -74,7 +70,6 @@ A related products carousel is displayed on the product details page, enabling q
 
 ## Inventory preview
 
-*Available from version 10.0.47*
 
 Associates can check real-time availability for the current store and nearby stores directly from the product details page. The inventory preview opens in a side drawer and supports choosing pickup or ship-from-store options.
 
@@ -84,7 +79,6 @@ To enable: In **POS visual profiles**, set **Show nearby store inventory** to **
 
 ## Contextual discount visibility
 
-*Available from version 10.0.47*
 
 A quantity discount indicator is displayed on the product details page when quantity-based discounts are available for the product, helping associates explain pricing benefits to customers.
 
