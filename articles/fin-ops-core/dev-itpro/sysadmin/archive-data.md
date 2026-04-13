@@ -40,17 +40,15 @@ This feature currently supports archiving the following types of finance and ope
 Support for additional data types is planned in future releases.
 
 > [!IMPORTANT]
-> An issue was identified where certain virtual entity fields with private or internal access modifiers were not synced to the Dataverse Managed Data Lake during the data sync process. This could result in incomplete field-level data in Dataverse long-term retention.
+> We have identified a synchronization issue affecting certain Data Archive scenarios when synchronizing Dynamics 365 finance and operations data to our [Dataverse-managed data lake (MDL)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-view#view-archived-data-in-the-dataverse-managed-data-lake), private or internal fields are not being copied. To resolve the synchronization issue, we will update the affected fields to make them public.
 >
-> A hotfix has been released to correct virtual entity field exposure and add service-level validation to prevent archive jobs from running when field gaps are detected. To ensure your environment is fully protected:
+> The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data inconsistency by copying the missing fields from the tables into our Dataverse-managed data lake (MDL).
 >
-> 1. **Validate your platform version** - Confirm your Dataverse platform has received the latest updates that include the virtual entity remediation (backport YYYYY).
-> 2. **Validate your F&O application version** - Confirm your Dynamics 365 Finance and Operations environment is running a version that includes the backported virtual entity fixes (backport XXXX). This fix is delivered through Proactive Quality Updates (PQU) for versions 10.0.45, 10.0.46, and 10.0.47.
-> 3. **Validate virtual entity field exposure** - After updating, verify that all table fields used in your archive scenarios are exposed as public fields in the corresponding virtual entities, including any custom extensions.
+> We will proactively detect once your environment has installed backport YYY (or newer) making the affected fields public. You can take no action, and this will automatically occur by [Proactive Quality Update](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) or you can optionally manually install the backport to trigger our detection earlier.
 >
-> The Purge from History (preview) feature has been temporarily disabled while remediation is in progress. Purge from History (preview) will be re-enabled on a per-environment basis once data completeness is confirmed.
+> We will temporarily suspend the creation of new archive jobs while allowing in-progress scheduled jobs to be completed so we can fix the data synchronization issue. We will re-enable the Data Archive capabilities after the data issue is resolved.
 >
-> If you have questions or need assistance validating your environment, contact Microsoft Support or your FastTrack representative.
+> If you need further assistance, please contact Microsoft Support.
 
 
 ## How archiving of finance and operations data works
