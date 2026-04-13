@@ -50,7 +50,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
     * Set **Ask for main account** to **Yes** to allow users to select the main account as part of the list of dimensions. If set to **No**, the main account isn't included in the list of dimensions and the **Is main account mandatory** option is enabled. If **Is main account mandatory** is set to **Yes**, include the main account in the list of dimensions regardless of the user's selection.  
 1. Select **OK**.
 
-   :::image type="content" source="../media/er-financial-dimensions-guides-model-mapping1.png" alt-text="Screenshot of financial dimensions details data source properties slide out."​:::
+   :::image type="content" source="../media/er-financial-dimensions-guides-model-mapping1.png" alt-text="Screenshot of financial dimensions details data source properties slide out.":::
 
 1. In the tree, select **Dynamics 365 for Operations\Table records**.
 1. Select **Add root**.
