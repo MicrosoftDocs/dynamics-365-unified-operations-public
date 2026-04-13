@@ -314,7 +314,7 @@ This feature works independently of costing methods that are assigned to the pro
 <tr>
 <td>Access guided procedural Help (task guides) and conceptual topics by clicking <strong>Help</strong>.</td>
 <td>The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.</td>
-<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from Microsoft Learn. For more information, see <a href="../../fin-ops/get-started/help-overview.md" data-raw-source="[Help system](../../fin-ops/get-started/help-overview.md)">Help system</a> and <a href="../../fin-ops/get-started/new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](../../fin-ops/get-started/new-task-guides-available-february-2016.md)">New task guides (February 2016)</a>.</td>
+<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services BPM. The Help system also displays topics from Microsoft Learn. For more information, see <a href="../../fin-ops/get-started/help-overview.md" data-raw-source="[Help system](../../fin-ops/get-started/help-overview.md)">Help system</a> and <a href="../../fin-ops/get-started/new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](../../fin-ops/get-started/new-task-guides-available-february-2016.md)">New task guides (February 2016)</a>.</td>
 <td>Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The article provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.</td>
 </tr>
 </tbody>
@@ -420,8 +420,8 @@ No new features have been added.
 <tr>
 <td>Configure and generate electronic documents to meet the legal requirements in various countries/regions.</td>
 <td>Electronic documents are hard-coded in X++ or as Extensible Stylesheet Language Transformations (XSLTs). Any format adjustments require development efforts. Access to data and formatting aren't isolated. An adjusted format deployment requires a new Microsoft Dynamics AX hotfix package that overrides the existing format. Custom modifications of each format must be manually ported to the source code of a new Microsoft Dynamics AX hotfix package.</td>
-<td>Electronic Reporting (ER) is a new tool for configuring and generating electronic documents that target a business user instead of a developer. ER lets you set up data models that are domain-specific and independent of the Microsoft Dynamics AX database as data sources for document formats. A business user can configure the formats, based on these domain-specific data models (for example, for payments, Intrastat reports, or tax reports). The user configures the formats by using simple visual tools that are similar to Excel. ER currently supports the generation of electronic documents in text, XML, and Excel formats. These documents can be generated simultaneously and packed into zip files. Data models and formats support versioning. Format versions can have effective periods. Each data model or format version is stored in a separate configuration and distributed to partners and customers through LCS. Partners and customers can customize Microsoft data models and formats, or create their own. ER saves partner and customer configuration changes as deltas to Microsoft configurations, which simplifies upgrades to new versions of Microsoft configurations. By using LCS, partners can also share their data model and format configurations with other partners and customers, who can customize and share them. Delta customization and easy upgrade are supported through the whole customization chain.</td>
-<td>ER simplifies the creation, maintenance, and upgrade of electronic document formats to meet legal requirements in various countries/regions. ER makes the process of creating or changing electronic document formats faster and easier. These changes can be made by business users instead of developers. ER makes it faster and easier for partners and customers to upgrade their format customizations to new versions of formats that are released by Microsoft or other partners. ER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.</td>
+<td>Electronic Reporting (ER) is a new tool for configuring and generating electronic documents that target a business user instead of a developer. ER lets you set up data models that are domain-specific and independent of the Microsoft Dynamics AX database as data sources for document formats. A business user can configure the formats, based on these domain-specific data models (for example, for payments, Intrastat reports, or tax reports). The user configures the formats by using simple visual tools that are similar to Excel. ER currently supports the generation of electronic documents in text, XML, and Excel formats. These documents can be generated simultaneously and packed into zip files. Data models and formats support versioning. Format versions can have effective periods. Each data model or format version is stored in a separate configuration and distributed to partners and customers through Lifecycle Services. Partners and customers can customize Microsoft data models and formats, or create their own. ER saves partner and customer configuration changes as deltas to Microsoft configurations, which simplifies upgrades to new versions of Microsoft configurations. By using Lifecycle Services, partners can also share their data model and format configurations with other partners and customers, who can customize and share them. Delta customization and easy upgrade are supported through the whole customization chain.</td>
+<td>ER simplifies the creation, maintenance, and upgrade of electronic document formats to meet legal requirements in various countries/regions. ER makes the process of creating or changing electronic document formats faster and easier. These changes can be made by business users instead of developers. ER makes it faster and easier for partners and customers to upgrade their format customizations to new versions of formats that are released by Microsoft or other partners. ER provides one common way (through Lifecycle Services) for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.</td>
 </tr>
 <tr>
 <td>(MEX) Generate Mexican value-added tax (VAT) regulatory reports.</td>
@@ -486,7 +486,7 @@ No new features have been added.
 <tr>
 <td>(FR) Balance list with group total accounts report.</td>
 <td>Balance list with group total accounts report is implemented as SSRS report (LedgerAccountSum_FR).</td>
-<td>Balance list with group total accounts report is implemented as Management Reporter report available in LCS Asset library localized financial reports folder.</td>
+<td>Balance list with group total accounts report is implemented as Management Reporter report available in Lifecycle Services Asset library localized financial reports folder.</td>
 <td>This allows users to get all the benefits and freedom in customizations from using financial reports in Management Reporter.</td>
 </tr>
 <tr>
@@ -920,7 +920,7 @@ A retail and commerce-focused configuration option helps streamline retail-speci
 <li>Pre-triggers and post-triggers that let you easily extend a workflow.</li>
 <li>Application and operation triggers.</li>
 </ul>
-Additionally, a framework is available that lets you build and package these components by using MSBuild, and then seamlessly deploy your customization through Microsoft Dynamics Lifecycle Services (LCS).</td>
+Additionally, a framework is available that lets you build and package these components by using MSBuild, and then seamlessly deploy your customization through Microsoft Dynamics Lifecycle Services.</td>
 <td>Retailers have very specific requirements based on verticals and geographies of operation. By providing an easily extensible platform, we enable usage across verticals and markets. Because Retail also has a very distributed architecture, the ability to seamlessly deploy greatly improves productivity.</td>
 </tr>
 </tbody>
@@ -928,7 +928,7 @@ Additionally, a framework is available that lets you build and package these com
 
 ### Lifecycle management
 
-Lifecycle Services (LCS) provides a set of services that customers and partners can use to manage the lifecycle of the system from sign-up to daily operations.
+Lifecycle Services provides a set of services that customers and partners can use to manage the lifecycle of the system from sign-up to daily operations.
 
 <table>
 <thead>
@@ -965,7 +965,7 @@ There is an improved "low-touch" client component installation via self-service 
 <tr>
 <td>Monitor the health of the system, and diagnose errors and issues.</td>
 <td>This functionality requires <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
-<td>Monitoring and diagnostics for Retail components is now available through the <strong>Operational Insights</strong> dashboard in LCS.</td>
+<td>Monitoring and diagnostics for Retail components is now available through the <strong>Operational Insights</strong> dashboard in Lifecycle Services.</td>
 <td>The <strong>Operational Insights</strong> dashboard is a cloud-based monitoring portal that replaces the need to install the System Center Operations Manager (SCOM) infrastructure.</td>
 </tr>
 <tr>

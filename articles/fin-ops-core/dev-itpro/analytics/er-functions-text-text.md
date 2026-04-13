@@ -4,7 +4,7 @@ description: Learn about how the TEXT Electronic reporting (ER) function is used
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/10/2019
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 [!include [banner](../includes/banner.md)]
 
-The `TEXT` function returns the specified number as a *String* value after it has been converted to a text string that is formatted according to the server locale settings of the current application instance.
+The `TEXT` function returns the specified number as a *String* value after it converts the number to a text string that's formatted according to the server locale settings of the current application instance.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ TEXT (number)
 
 `number`: *Integer* or *Real*
 
-A number that must be converted to a text string.
+The number to convert to a text string.
 
 ## Return values
 
@@ -40,7 +40,7 @@ The resulting text value.
 
 ## Usage notes
 
-For values of the *Real* type, the string conversion is limited to two decimal places.
+For *Real* type values, the string conversion includes up to two decimal places.
 
 ## Example
 

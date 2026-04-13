@@ -4,7 +4,7 @@ description: Learn about how the REPLACE Electronic reporting (ER) function is u
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 04/02/2020
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 [!include [banner](../includes/banner.md)]
 
-The `REPLACE` function returns the specified text string as a *String* value after all or part of it has been replaced with another string.
+The `REPLACE` function returns the specified text string as a *String* value after all or part of it is replaced with another string.
 
 ## Syntax
 

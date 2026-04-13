@@ -44,9 +44,9 @@ Designing models and model elements is no different than designing other types o
 
 ### Do I need build environments?
 
-Yes, take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable continuous delivery and maintain the quality of your application. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).
+Yes, take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Microsoft Dynamics Lifecycle Services project. Creating daily builds and daily regression tests are key tools to enable continuous delivery and maintain the quality of your application. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).
 
-Don't use build environments for development activities. Don't keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they're updated with a Microsoft binary or platform updates from LCS.
+Don't use build environments for development activities. Don't keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they're updated with a Microsoft binary or platform updates from Lifecycle Services.
 For example, if you apply a binary hotfix or platform update to a build VM, the VM prepares itself for the next build as part of the update. This process removes your customizations and also triggers a database synchronization.
 
 ### What strategy do I use for test automation?
@@ -132,13 +132,13 @@ This scenario isn't supported. However, you can provision more than one develope
 
 If you're a Microsoft partner developing code for more than one customer, use at least one development VM per customer. You need one extra VM for every additional developer working on a customer project. Think of development VMs as disposable assets as long as your source code is checked into version control (Azure DevOps) and you keep a backup of test databases.
 
-## Customer implementation LCS projects
+## Customer implementation Lifecycle Services projects
 
-### How many sandbox environments do I need within an LCS customer implementation project?
+### How many sandbox environments do I need within an Lifecycle Services customer implementation project?
 
 A customer subscription comes with two environments by default: a tier-2 sandbox environment and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After you configure the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also choose to have more than one sandbox environment that is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and the other sandboxes can be used for configuration, upgrade, or other scenarios. You can purchase additional tier-2 or higher sandboxes.
 
-The following servicing requests and tools are supported by LCS, which can help you decide whether one tier-2 sandbox is sufficient for your implementation.
+The following servicing requests and tools are supported by Lifecycle Services, which can help you decide whether one tier-2 sandbox is sufficient for your implementation.
 
 1. Restore a sandbox database to a point in time.
 1. Copy a sandbox database to a production environment (only allowed before the application is live in production).

@@ -4,7 +4,7 @@ description: Learn about the text functions that are supported in Electronic rep
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 02/28/2022
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
