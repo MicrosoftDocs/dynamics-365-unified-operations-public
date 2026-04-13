@@ -4,7 +4,7 @@ description: Learn about what's included in the Warehouse performance Power BI c
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 12/18/2017
+ms.date: 04/08/2026
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: Global
@@ -31,12 +31,15 @@ Warehouse managers can use the **Warehouse performance** Power BI content to mea
 - **Location inventory accuracy** – Inventory accuracy is important internal warehouse business intelligence (BI). It's very important that you determine how accurately you're counting in general. However, it's also important that you determine how accurate you are at storing items in the correct locations, and that you highlight discrepancy data, so that you can find better positions for items or initiate total counting on specific items. (Currently, the new item-based counting functionality is delivered as a hotfix.) If you're using this Power BI content to determine the correctness of on-hand inventory data per location, you can also identify theft in your shops. You can also determine whether any locations have on-hand quantities that differ from enterprise resource planning (ERP) data. Those locations might be too large, or they might be impossible to count. Alternatively, some of the physical positioning might be bad, so that it's difficult to keep a single type of item in sync with on-hand data.
 
 ## Prerequisites
+
 The **Warehouse performance** Power BI content only shows data for the dates defined on the **Date dimensions** page (**Organization administration** \> **Setup** \> **Calendars** \> **Date dimensions**).
 
 ## Accessing the Power BI content pack
+
 The **Warehouse performance** Power BI content is shown on the **Warehouse performance** page (**Warehouse management** \> **Inquiries and reports** \> **Warehouse performance analysis** \> **Warehouse performance**).
 
 ## Metrics that are included in the Power BI content
+
 The **Warehouse performance** Power BI content includes a report. This report consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Warehouse performance** Power BI content.
 
 | Report page                 | Charts                                   | Description |
@@ -70,6 +73,7 @@ The **Warehouse performance** Power BI content includes a report. This report co
 | Shipping performance        | Shipped by site / warehouse              | The percentage that is shipped early, on time, or late by site or warehouse. |
 
 ## Understanding the data model and calculations
+
 The following data is used to fill the report pages in the **Warehouse performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following key aggregate measurements are used as the basis of the content.
@@ -104,6 +108,5 @@ The following key aggregate measurements are used as the basis of the content.
 | Shipping performance        | Shipped by product                       | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
 | Shipping performance        | Shipped by customer                      | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
 | Shipping performance        | Shipped by site / warehouse              | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

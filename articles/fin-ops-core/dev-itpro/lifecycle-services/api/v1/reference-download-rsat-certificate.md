@@ -1,6 +1,6 @@
 ---
 title: Fetch an environment's RSAT certificate in a zip file
-description: Learn about how to fetch the Regression Suite Automation Tool (RSAT) certificate bundle through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+description: Learn about how to fetch the Regression Suite Automation Tool (RSAT) certificate bundle through Microsoft Dynamics Lifecycle Services via the Lifecycle ServicesEnvironment API.
 author: laneswenka
 ms.date: 03/06/2026
 ms.topic: reference
@@ -16,7 +16,7 @@ ms.search.validFrom: 2021-08-12
 [!include [banner](../../../includes/banner.md)]
 [!include [LCS freeze](../../../../../includes/lcs-freeze-banner.md)]
 
-You can fetch the Regression Suite Automation Tool (RSAT) certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a Base 64–encoded zip file and a Base 64–encoded password for the private certificate password.
+You can fetch the Regression Suite Automation Tool (RSAT) certificate bundle for an environment through Microsoft Dynamics Lifecycle Services via the Lifecycle Services Environment API. This API returns a Base 64–encoded zip file and a Base 64–encoded password for the private certificate password.
 
 The full process for consuming the zip can be found on the [Regression Suite Automation Tool installation and configuration](../../../perf-test/rsat/rsat-install-configure.md) page.
 
@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. For more informat
 |------------------------------------|--------------------------------------------------------|
 | Delegated (work or school account) | user\_impersonation                                    |
 
-### LCS
+### Lifecycle Services
 
-In LCS, the user who is used in the API OAuth authentication must be added to the project as either a project owner or an environment administrator. The user must accept the invitation to the project.
+In Lifecycle Services, the user who is used in the API OAuth authentication must be added to the project as either a project owner or an environment administrator. The user must accept the invitation to the project.
 
 ## HTTP request
 
@@ -99,10 +99,10 @@ The response is always a "200 OK" response, unless you aren't correctly authenti
 
 ## Parsing data via PowerShell
 
-The following example script communicates with the LCS API to download the zip file for the RSAT certificate to the local machine. It shows the private certificate's password in the console window. An access token must be provided.
+The following example script communicates with the Lifecycle Services API to download the zip file for the RSAT certificate to the local machine. It shows the private certificate's password in the console window. An access token must be provided.
 
 ```powershell
-# Basic LCS API RSAT certificate zip download script
+# Basic Lifecycle Services API RSAT certificate zip download script
 #
 # This will download the RSAT certificate bundle for an environment
 # to the current directory and display the private certificate's password
@@ -133,7 +133,7 @@ do {
     $shouldRetry = $false
 
     try {
-        # GET request to LCS API
+        # GET request to Lifecycle Services API
         $certificateResponse = Invoke-RestMethod $url -Method 'GET' -Headers $headers
     } catch {
         # Check if this is a HTTP 429 error
@@ -170,7 +170,7 @@ Write-Host "Certificate bundle downloaded to $fileName with private certificate 
 
 ## Rate limits
 
-To better load balance requests, there are rate limits on this API. These limits are also shared with the LCS web interface.
+To better load balance requests, there are rate limits on this API. These limits are also shared with the Lifecycle Services web interface.
 
 * 1 call for each environment per minute
 

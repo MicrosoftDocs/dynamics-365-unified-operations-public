@@ -33,16 +33,16 @@ If these files don't exist, the deployment continues as usual. The following exa
 
 1. Get unhealthy modules. In this step, the local agent gets the health of existing services to find which ones are unhealthy. This step applies only to redeployment scenarios.
 1. Clean up modules. In this step, the local agent removes the services and deletes the contents of the **wp** folder. This step applies only to redeployment scenarios.
-1. Link download artifacts. In this step, the local agent downloads, extracts, and processes artifacts from Microsoft Dynamics Lifecycle Services (LCS).
+1. Link download artifacts. In this step, the local agent downloads, extracts, and processes artifacts from Microsoft Dynamics Lifecycle Services.
 1. Predeployment script. In this step, the local agent runs the **PreDeployment.ps1** script (if it exists).
 1. Set up modules. In this step, the local agent deploys the new services.
 1. Postdeployment script. In this step, the local agent runs the **PostDeployment.ps1** script (if it exists).
 
 **Servicing:**
 
-1. Prepare for servicing. In this step, the local agent prepares the package in LCS and downloads it to the environment.
+1. Prepare for servicing. In this step, the local agent prepares the package in Lifecycle Services and downloads it to the environment.
 1. Clean up modules. In this step, the local agent removes the services and deletes the contents of the **wp** folder.
-1. Link download artifacts. In this step, the local agent extracts and processes previously downloaded artifacts from LCS.
+1. Link download artifacts. In this step, the local agent extracts and processes previously downloaded artifacts from Lifecycle Services.
 1. Predeployment script. In this step, the local agent runs the **PreDeployment.ps1** script (if it exists).
 1. Set up modules. In this step, the local agent deploys the new services.
 1. Postdeployment script. In this step, the local agent runs the **PostDeployment.ps1** script (if it exists).

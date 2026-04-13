@@ -66,7 +66,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle Services. Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in Lifecycle Services. Deployments can be initiated only through Lifecycle Services. For more information about how to set up on-premises projects in Lifecycle Services, see [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle Services. Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in Lifecycle Services. Deployments can be initiated only through Lifecycle Services. For more information about how to set up on-premises projects in Lifecycle Services, see [Set up on-premises projects in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
