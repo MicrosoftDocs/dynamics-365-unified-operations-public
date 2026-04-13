@@ -36,15 +36,19 @@ Regulatory requirements often differ depending on:
 
 This ensures that invoices consistently include the correct registration IDs for compliance, reporting, auditing, and electronic invoicing scenarios.
 
-Invoice party applicability rules are part of the **Establishment and Registration ID governance on invoices** feature. When this feature is enabled:
+## How invoice party applicability rules work
 
-- **Registration categories** support invoice‑specific applicability rules.
-- **Registration IDs** that are mandatory for a given invoice party role are validated stored at posting time.
-- Applicable registration IDs are *immutably stored* on posted invoices and used consistently across downstream processes.
+Invoice party applicability rules are part of the **Establishment and Registration ID governance on invoices** feature. When this feature is enabled, you can set up **Registration categories** support invoice‑specific applicability rules.
+
+**Invoice party applicability rules** work together with module‑specific invoice parameters in **Accounts payable**, **Accounts receivable**, and **Project management and accounting**
+
+| Parameter name | Parameter location in Finance | Description | 
+|----------------|-----------------|-------------|
+| **Require Registration ID on vendor invoice** checkbox | **Accounts payable** > **Setup** > **Accounts payable parameters** > **Invoice** tab > **Invoice** FastTab | When enabled, the system enforces registration ID requirements on vendor invoices: Validates that all required Registration IDs are present before posting, ensures registration IDs are properly configured for all invoice party roles, prevents posting when mandatory registration IDs are missing. <br> **Note**: The registration IDs are stored immutably after the invoice is posted. |
+| **Require Registration ID on customer invoice** checkbox |  **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Updates** tab > **Invoice** FastTab | When enabled, the system enforces registration ID requirements on customer invoices: Validates that all required Registration IDs are present before posting, ensures registration IDs are properly configured for all invoice party roles, prevents posting when mandatory registration IDs are missing. <br> **Note**: The registration IDs are stored immutably after the invoice is posted. |
+| **Require Registration ID on project invoice** checkbox | **Project management and accounting** > **Setup** > **Project management and accounting parameters** > **Invoice** tab | When enabled, the system enforces registration ID requirements on project invoices: Validates that all required Registration IDs are present before posting, ensures registration IDs are properly configured for all invoice party roles, prevents posting when mandatory registration IDs are missing. <br> **Note**: The registration IDs are stored immutably after the invoice is posted. |
 
 These rules apply across all invoice creation paths, including customer invoices, vendor invoices and project invoices.
-
-## How invoice party applicability rules work
 
 **Invoice party applicability rules** are configured at the registration category level and evaluated during invoice processing.
 
@@ -59,7 +63,9 @@ During invoice posting, the system evaluates these rules to determine:
 - which **Registration IDs** apply to the specific invoice context,
 - invoice posting cannot proceed if required **Registration IDs** are missing.
 
-**Invoice party applicability rules** work together with module‑specific invoice parameters in **Accounts payable**, **Accounts receivable**, and **Project management and accounting**.
+## Use of invoice party applicability rules in establishment‑level invoice governance
+
+**Invoice party applicability rules** work together with [Establishments](organizations-organizational-hierarchies.md#establishments), when module‑specific invoice parameter in **Accounts payable**, **Accounts receivable**, and **Project management and accounting** is enabled.
 
 | Parameter name | Parameter location in Finance | Description | 
 |----------------|-----------------|-------------|
@@ -69,7 +75,6 @@ During invoice posting, the system evaluates these rules to determine:
 
 These parameters control whether an **Establishment** is required on invoices and determine when establishment‑level **Registration IDs** must be enforced during invoice posting.
 When establishment enforcement is enabled, the system validates that an applicable establishment is specified on the invoice and uses the defined applicability rules to resolve the corresponding **Registration IDs**. 
-This ensures consistent identification of invoice parties at both legal entity and establishment levels and guarantees that the correct registration information is validated and immutably stored on posted invoices.
 
 For more information about **Establishments** and how they are defined, see [Establishments](organizations-organizational-hierarchies.md#establishments).
 
@@ -90,6 +95,20 @@ This integration ensures that vendor invoices are validated against the correct 
 
 For more information about how the ship‑from address is captured and validated on vendor invoices, see [**Vendor ship‑from address support on invoices**](../../../finance/accounts-payable/vendor-ship‑from-address.md).
 
+## Invoice party applicability rules and Customer delivery address
+
+For customer and project invoices, **Invoice party applicability rules** can also evaluate the delivery address specified on the invoice.
+The delivery address can represent the customer establishment that receives the goods or services and may therefore serve as an invoice party when evaluating invoice party applicability rules for registration categories.
+
+In this scenario:
+
+- The customer establishment is derived from the delivery address captured on the invoice.
+- Invoice party applicability rules that reference the Customer party role and specific address purposes (such as **Invoice**) are evaluated against the delivery address.
+- Based on these rules, the system determines which customer establishment‑level **Registration IDs** must be present for the invoice.
+- Invoice posting cannot proceed if required **Registration IDs** that apply to the customer establishment identified by the delivery address are missing.
+
+This behavior ensures that customer and project invoices are validated against the appropriate customer establishment associated with the delivery location, rather than only the customer head office, and that the applicable **Registration IDs** are accurately resolved and immutably stored on posted invoices.
+
 ## Availability of invoice party applicability rules
 
 **Invoice party applicability rules** can be configured and evaluated for the following registration categories:
@@ -101,41 +120,7 @@ For more information about how the ship‑from address is captured and validated
 
 **Invoice party applicability rules** are not evaluated for other registration categories. For registration categories that are not listed above, **Registration IDs** can still be stored and maintained by using the Registration ID framework, but they are not validated or enforced through invoice party applicability rules during invoice processing.
 
-## Example 1: VAT ID applicability on invoices
-
-This example illustrates how invoice party applicability rules work using the **VAT ID** registration category.
-
-### Scenario
-
-A company issues customer invoices in multiple countries and must ensure that VAT registration numbers are consistently applied and validated on invoices.
-
-### Configuration
-
-A *VAT ID* [**Registration type**](registration-ids.md#registration-type-creation) is created and assigned to the *VAT ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
-
-**Require establishment on customer invoice** checkbox is enabled in **Accounts receivable parameters**.
-
-Invoice party applicability rules are defined for the VAT ID category, for example:
-
-- Invoice party role: Legal entity
-- Address purpose: Head company or Primary
-- Invoice party role: Customer
-- Address purpose: Invoice
-
-Before posting an invoice, users can preview the registration IDs that the system has determined by selecting the **Registration IDs** button on the source document page.
-
-### Result
-
-When an invoice is posted:
-
-- The system determines the applicable **Registration IDs** for both the issuing legal entity and the customer based on their roles and addresse purpose configured in **Invoice party applicability rules**.
-- Configuration of **Invoice party applicability rules** for *VAT ID* requires a registration IDs to be specified for legal entity (Invoice issuer legal entity) and customer (Invoice receiver legal entity).
-- If **Registration ID** of *VAT ID* **Registration category** is not setup for legal entity or customer involved in invoice transaction, invoice posting is blocked.
-- If **Registration ID** of *VAT ID* **Registration category** are setup for legal entity or customer involved in invoice transaction, these **Registration IDs** are immutably stored for the posted invoice.
-
-The resolved VAT registration IDs are stored on the posted invoice and used for reporting, compliance, and electronic invoicing. For posted invoices, the **Registration IDs** button in customer invoice journal allows users to review the registration IDs that were determined and stored at the time of posting.
-
-## Example 2: Branch ID applicability on invoices
+## Example 1: Branch ID applicability on vendor invoice
 
 This example illustrates how invoice party applicability rules work using the **Branch ID** registration category.
 
@@ -147,16 +132,23 @@ A company that has mulptiple branches receives a vendor invoices from a vendor's
 
 A *Branch ID* [**Registration type**](registration-ids.md#registration-type-creation) is created and assigned to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
 
-**Require establishment on vendor invoice** checkbox is enabled in **Accounts payable parameters**.
+**Require Registration IDs on vendor invoice** and **Require establishment on vendor invoice** parameters are enabled in **Accounts payable parameters**.
 
 **Require ship from on vendor invoice** checkbox is enabled for the vendor master record in transaction.
 
 Invoice party applicability rules are defined for the Branch ID category, for example:
 
-- Invoice party role: Establishment
-- Address purpose: Invoice
-- Invoice party role: Vendor
-- Address purpose: Invoice
+| Invoice party role | Address purpose |
+|-------|----------|
+| Establishment | Invoice or Primary |
+| Vendor | Invoice |
+
+**Registration IDs** are set up for:
+
+| Party role | Address purpose | Registration type |
+|-------|----------|-------------|
+| Establishment | Invoice or  Primary | Branch ID |
+| Vendor | Invoice | Branch ID |
 
 Before posting an invoice, users can preview the registration IDs that the system has determined by selecting the **Registration IDs** button on the source document page.
 
@@ -169,5 +161,64 @@ When an invoice is posted:
 - If **Registration ID** of *Branch ID* **Registration category** is not setup for establishment or vendor involved in invoice transaction, invoice posting is blocked.
 - If **Registration ID** of *Branch ID* **Registration category** are setup for establishment or vendor involved in invoice transaction, these **Registration IDs** are immutably stored for the posted invoice.
 
-The resolved VAT registration IDs are stored on the posted invoice and used for reporting, compliance, and electronic invoicing. For posted invoices, the **Registration IDs** button in vendor invoice journal allows users to review the registration IDs that were determined and stored at the time of posting.
+The resolved VAT registration IDs are stored on the posted invoice and used for reporting and compliance. 
 
+For posted invoices, the **Registration IDs** button in vendor invoice journal allows users to review the registration IDs that were determined and stored at the time of posting.
+
+## Example 2: VAT ID and Branch ID applicability on customer invoice
+
+This example illustrates how invoice party applicability rules work using the **VAT ID** and **Branch ID** registration categories.
+
+### Scenario
+
+A company that has mulptiple branches issues customer invoices and must ensure that VAT registration numbers are consistently applied and validated on invoices and that **Branch ID** registration numbers are consistently applied and validated on invoice for both legal entity establishment and customer delivery establishment.
+
+### Configuration
+
+A *VAT ID* [**Registration type**](registration-ids.md#registration-type-creation) is created and assigned to the *VAT ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
+
+A *Branch ID* [**Registration type**](registration-ids.md#registration-type-creation) is created and assigned to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
+
+**Require Registration IDs on customer invoice** and **Require establishment on customer invoice** parameters are enabled in **Accounts receivable parameters**.
+
+**Invoice party applicability rules** are defined for the **VAT ID** category:
+
+| Invoice party role | Address purpose |
+|-------|----------|
+| Legal entity | Head company or Primary |
+| Customer | Head company or Primary |
+
+And **Invoice party applicability rules** are defined for the **Branch ID** category:
+
+| Invoice party role | Address purpose |
+|-------|----------|
+| Establishment | Invoice or Primary |
+| Customer | Invoice |
+
+**Registration IDs** are set up for:
+
+| Party role | Address purpose | Registration type |
+|-------|----------|-------------|
+| Legal entity | Head company or Primary | VAT ID |
+| Establishment | Invoice or  Primary | Branch ID |
+| Customer | Head company or Primary | VAT ID |
+| Customer | Invoice | Branch ID |
+
+Before posting an invoice, users can preview the registration IDs that the system has determined by selecting the **Registration IDs** button on the source document page.
+
+### Result
+
+When an invoice is posted:
+
+- The system determines the applicable **Registration IDs** of VAT ID category for both the issuing legal entity and the customer based on their roles and addresse purpose configured in **Invoice party applicability rules**:
+  - Legal entity: VAT ID
+  - Establishment: Brnach ID
+  - Customer head company: VAT ID
+  - Customer establishment: Branch ID. 
+- Configuration of **Invoice party applicability rules** for *VAT ID* and *Branch ID* require registration IDs to be specified for legal entity, establishment, customer and delivery address.
+- If **Registration ID** of *VAT ID* or *Branch ID* **Registration category** is not setup for legal entity, establishment, or customer involved in invoice transaction, invoice posting is blocked.
+- If **Registration ID** of *VAT ID* and *Branch ID* **Registration category** are setup for legal entity, establishment, or customer involved in invoice transaction, these **Registration IDs** are immutably stored for the posted invoice.
+
+The resolved VAT and branch registration IDs are stored on the posted invoice and used for reporting, compliance, and electronic invoicing. 
+
+For posted invoices, the **Registration IDs** button in customer invoice journal allows users to review the registration IDs that were determined and stored at the time of posting.
