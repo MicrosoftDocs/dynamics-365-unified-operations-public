@@ -2851,7 +2851,7 @@
                     - name: French Intrastat
                       href: localizations/france/emea-fra-intrastat.md
                     - name: Registration numbers setup for France
-                      href: localizations/france/registration-numbers-setup-for-france.md
+                      href: localizations/france/emea-fra-registration-numbers-setup-for-france.md
                     - name: NAF codes
                       href: localizations/france/fr-00003-naf-codes-siret-numbers.md
                     - name: Penalties for past due customer payments
