@@ -31,8 +31,10 @@ This article lists features that are new or changed in Microsoft Dynamics 365 Co
 The following table lists the features that are included in this release. We might update this article to include features that are added to the build after this article is originally published.
 
 | Feature area | Feature | More information | Enabled by |
-| --- | --- | --- | --- |
-
+|---|---|---|---|
+|Point of Sale | Modernized customer details page in Store Commerce | The modernized Customer details page replaces the legacy customer details view with a React-based, responsive Fluent UI experience. The redesigned page adapts to desktop and mobile form factors and organizes customer information into four tabs: Account summary, Timeline, Account details, and Transactions. Copilot customer insights and recommended products are surfaced on the Account summary tab. To enable this feature, turn on **Modern customer details page** in the Feature management workspace in Commerce headquarters, then run the **1110 (Global configuration)** distribution schedule job and restart Store Commerce. | Admins |
+|Point of Sale | Configure inline actions on transaction line items in Store Commerce | Inline actions extensibility lets retailers and implementation partners configure the set of actions displayed per line item in the modern transaction grid in Store Commerce, using Screen Layout Designer in Dynamics 365 Commerce headquarters. Retailers can select any eligible out-of-the-box POS operation or custom operation to include as an inline action, control the display order, and add custom operations built through the POS extension framework. If no inline actions are configured for a layout, Store Commerce continues to display the existing default set of inline operations. This feature requires the modern transaction grid (**Modern transaction grid for Store Commerce** in Feature management). | Admins |
+|Point of Sale | Dynamic payment terminal selection in point of sale | This feature improves the hardware station and payment terminal selection experience when a hardware station is selected dynamically at the start of a transaction or at the time of tendering. When an associate selects a hardware station, Store Commerce now correctly uses the hardware profile and all peripheral information — including the payment terminal — from the selected hardware station. Associates can also pair a new payment terminal mid-transaction using the new **Pair a payment terminal** operation, enabling assisted selling scenarios where associates walk to a customer and use the nearest terminal to complete the payment. [Learn more](../payment-terminal-selection-pos.md) | Admins |
 
 ## Features turned on by default in this release
 
@@ -69,4 +71,4 @@ Before Microsoft removes any feature from the product, the deprecation notice is
 
 For breaking changes that only affect compilation time but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that you need to make to the compiler.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-include.md)]
