@@ -62,8 +62,8 @@ Use the page **Organization administration** &gt; **Global address book** &gt; *
 | Field            | Description|
 |-----------------------|----------------|
 | Registration type     | The registration type in a particular country/region.|
-| Restricted to         | The kind of restriction that applies to the tax registration type: None, Person, Organization.|
-| Registration category | The unique registration identifier approved for use in the country/region. The full list of supported categories is shown later in this article. |
+| Restricted to         | Displays the party type restriction that is defined for the selected registration type: None, Person, Organization.|
+| Registration category | The unique registration identifier approved for use in the country/region. The full list of [supported categories](#supported-registration-categories) is shown later in this article. |
 
 ## Set up invoice party applicability rules for registration category
 
@@ -103,7 +103,7 @@ You can search for party records by registration ID on forms related to party, l
 Select **Registration ID search** to open the **Registration ID search criteria** page. 
 Enter your search criteria and select **Find**. The system displays the selected records from the global address book and the associated types of party record.
 
-## Supported registration categories
+## <a id="supported-registration-categories"></a>Supported registration categories
 
 The following table lists the supported registration categories and their descriptions.
 
