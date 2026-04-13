@@ -45,20 +45,20 @@ To complete the steps in this example, you must first complete the steps in [Cre
 1. In the **Class** field, enter **Attach file**.
 1. In the **Group** field, enter **File**.
 
-:::image type="content" source="media/GER-BaselineSample-SetupDocumentType.PNG" alt-text="Screenshot of the Document types page.":::
+   :::image type="content" source="media/GER-BaselineSample-SetupDocumentType.PNG" alt-text="Screenshot of the Document types page.":::
 
-> [!NOTE]
-> You must configure a new document type with the same name for each data set where you plan to use the ER baseline feature.
+   > [!NOTE]
+   > You must configure a new document type with the same name for each data set where you plan to use the ER baseline feature.
 
 ### Configure ER parameters to start using the baseline feature
 
 1. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
 
-    :::image type="content" source="media/GER-BaselineSample-ERWorkspace.PNG" alt-text="Screenshot of the Electronic reporting workspace.":::
+   :::image type="content" source="media/GER-BaselineSample-ERWorkspace.PNG" alt-text="Screenshot of the Electronic reporting workspace.":::
 
 1. On the **Attachments** tab, in the **Baseline** field, enter or select the document type that you just created.
 
-    :::image type="content" source="media/GER-BaselineSample-ERParameters.PNG" alt-text="Screenshot of the Electronic reporting parameters.":::
+   :::image type="content" source="media/GER-BaselineSample-ERParameters.PNG" alt-text="Screenshot of the Electronic reporting parameters.":::
 
 1. Select **Save**, and then close the **Electronic reporting parameters** page.
 
@@ -69,7 +69,7 @@ To complete the steps in this example, you must first complete the steps in [Cre
 1. In the drop-down dialog box, in the **Name** field, enter **Model to learn ER baselines**.
 1. Select **Create configuration** to confirm the creation of a new ER data model entry.
 
-:::image type="content" source="media/GER-BaselineSample-ModelAdd.PNG" alt-text="Screenshot of the Create configuration dialog with 'Model to learn ER baselines' entered in the Name field.":::
+   :::image type="content" source="media/GER-BaselineSample-ModelAdd.PNG" alt-text="Screenshot of the Create configuration dialog with 'Model to learn ER baselines' in the Name field and Create configuration button.":::
 
 ### Design a data model
 
@@ -83,7 +83,7 @@ To complete the steps in this example, you must first complete the steps in [Cre
 1. Select **Change status**.
 1. Select **Complete**, and then select **OK**.
 
-:::image type="content" source="media/GER-BaselineSample-ModelComplete.PNG" alt-text="Screenshot of the Configurations page.":::
+   :::image type="content" source="media/GER-BaselineSample-ModelComplete.PNG" alt-text="Screenshot of the Configurations page.":::
 
 ### Add a new ER format configuration
 
@@ -92,7 +92,7 @@ To complete the steps in this example, you must first complete the steps in [Cre
 1. In the **Name** field, enter **Format to learn ER baselines**.
 1. Select **Create configuration** to confirm the creation of a new ER format entry.
 
-:::image type="content" source="media/GER-BaselineSample-FormatAdd.PNG" alt-text="Screenshot of the Create configuration drop-down dialog box.":::
+   :::image type="content" source="media/GER-BaselineSample-FormatAdd.PNG" alt-text="Screenshot of Create configuration dialog with Format based on data model option selected and Name field filled.":::
 
 ### Design a format
 
@@ -102,39 +102,39 @@ For this example, create a simple ER format to generate XML documents.
 1. Select **Add root**.
 1. In the drop-down dialog box, follow these steps:
 
-    1. In the tree, select **Common\\File**.
-    1. In the **Name** field, enter **Output**.
-    1. Select **OK**.
+   1. In the tree, select **Common\\File**.
+   1. In the **Name** field, enter **Output**.
+   1. Select **OK**.
 
 1. Select **Add**.
 1. In the drop-down dialog box, follow these steps:
 
-    1. In the tree, select **XML\\Element**.
-    1. In the **Name** field, enter **Document**.
-    1. Select **OK**.
+   1. In the tree, select **XML\\Element**.
+   1. In the **Name** field, enter **Document**.
+   1. Select **OK**.
 
 1. In the tree, select **Output\\Document**.
 1. Select **Add**.
 1. In the drop-down dialog box, follow these steps:
 
-    1. In the tree, select **XML\\Attribute**.
-    1. In the **Name** field, enter **ID**.
-    1. Select **OK**.
+   1. In the tree, select **XML\\Attribute**.
+   1. In the **Name** field, enter **ID**.
+   1. Select **OK**.
 
-    :::image type="content" source="media/GER-BaselineSample-FormatLayoutDesign.PNG" alt-text="Screenshot of the Format designer page.":::
+      :::image type="content" source="media/GER-BaselineSample-FormatLayoutDesign.PNG" alt-text="Screenshot of Format designer showing Document XML Element selected with Id XML Attribute in the tree.":::
 
 1. On the **Mapping** tab, select **Delete**.
 1. Select **Add root**.
 1. In the drop-down dialog box, in the tree, select **General\\User input parameter**, and then follow these steps:
 
-    1. In the **Name** field, enter **ID**.
-    1. In the **Label** field, enter **Enter ID**.
-    1. Select **OK**.
+   1. In the **Name** field, enter **ID**.
+   1. In the **Label** field, enter **Enter ID**.
+   1. Select **OK**.
 
 1. In the tree, select **Output\\Document\\Id**.
 1. Select **Bind**, and then select **Save**.
 
-:::image type="content" source="media/GER-BaselineSample-FormatMappingDesign.PNG" alt-text="Screenshot of Format designer Mapping tab showing Id XML Attribute bound to User input parameter Description.":::
+   :::image type="content" source="media/GER-BaselineSample-FormatMappingDesign.PNG" alt-text="Screenshot of Format designer Mapping tab with Id XML Attribute bound to User input parameter Description.":::
 
 Based on the designed structure, the configured format generates an XML file. This XML contains the **Root** element that has the **ID** attribute set to the value that the user enters in the ER runtime dialog box.
 
@@ -144,11 +144,11 @@ Based on the designed structure, the configured format generates an XML file. Th
 1. In the **Enter ID** field, enter **1**.
 1. Select **OK**.
 
-    :::image type="content" source="media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG" alt-text="Screenshot of the Electronic report parameters dialog box.":::
+   :::image type="content" source="media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG" alt-text="Screenshot of the Electronic report parameters dialog box.":::
 
 1. Save a local copy of the **out.Admin.xml** file that is generated, so you can use it later as a baseline for this ER format.
 
-    :::image type="content" source="media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG" alt-text="Screenshot of the notification about the generated file on the Configurations page.":::
+   :::image type="content" source="media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG" alt-text="Screenshot of the notification about the generated file on the Configurations page.":::
 
 ### Configure ER parameters to use the baseline feature
 
@@ -156,20 +156,20 @@ Based on the designed structure, the configured format generates an XML file. Th
 1. Set the **Run in debug mode** option to **Yes**.
 1. Select **OK**.
 
-:::image type="content" source="media/GER-BaselineSample-ERUserParameters.PNG" alt-text="Screenshot of the User parameters dialog box.":::
+   :::image type="content" source="media/GER-BaselineSample-ERUserParameters.PNG" alt-text="Screenshot of the User parameters dialog box.":::
 
 ### Add a new baseline for designed ER format
 
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 1. On the Action Pane, select **Baselines**.
 
-    :::image type="content" source="media/GER-BaselineSample-OpenBaselinePage.PNG" alt-text="Screenshot of the Baselines button on the Configurations page.":::
+   :::image type="content" source="media/GER-BaselineSample-OpenBaselinePage.PNG" alt-text="Screenshot of the Baselines button on the Configurations page.":::
 
 1. On the Action Pane, select **New**.
 1. Select the **Format to learn ER baselines** ER format that you designed earlier.
 1. Select **Save**.
 
-:::image type="content" source="media/GER-BaselineSample-AddBaseline.PNG" alt-text="Screenshot of Electronic reporting format baselines page with empty Baselines grid and Format to learn ER baselines selected.":::
+   :::image type="content" source="media/GER-BaselineSample-AddBaseline.PNG" alt-text="Screenshot of Electronic reporting format baselines page with empty Baselines grid and Format to learn ER baselines selected.":::
 
 The baseline is added for the **Format to learn ER baselines** format.
 
@@ -179,7 +179,7 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. On the Action Pane, select **New** \> **File**. In the ER parameters, select the **File** document type as the document type that stores baseline files.
 1. Select **Browse**, and select the **out.Admin.xml** file that was generated when you ran the configured ER format earlier.
 
-    :::image type="content" source="media/GER-BaselineSample-UploadBaselineFile.PNG" alt-text="Screenshot of the Attachments page.":::
+   :::image type="content" source="media/GER-BaselineSample-UploadBaselineFile.PNG" alt-text="Screenshot of the Attachments page.":::
 
 1. Close the **Attachments** page.
 1. On the **Baselines** FastTab, select **New**.
@@ -187,14 +187,14 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. In the **File component name** field, enter or select **Output**. This value indicates that the configured baseline is compared with a file that uses the **Output** format element.
 1. In the **File name mask** field, enter **\*.xml**.
 
-    > [!NOTE]
-    > You can define the file name mask. When you define the file name mask, the baseline record evaluates the generated output only when the name of the output file satisfies that mask.
+   > [!NOTE]
+   > You can define the file name mask. When you define the file name mask, the baseline record evaluates the generated output only when the name of the output file satisfies that mask.
 
 1. If users must run the **Format to learn ER baselines** ER format and sign in to specific companies to use the configured baseline, select those companies in the **Companies** field.
 1. In the **Baseline** field, enter or select the **out.Admin** attachment.
 1. Select **Save**.
 
-:::image type="content" source="media/GER-BaselineSample-SetupBaselineLine.PNG" alt-text="Screenshot of the Electronic reporting format baselines page.":::
+   :::image type="content" source="media/GER-BaselineSample-SetupBaselineLine.PNG" alt-text="Screenshot of Electronic reporting format baselines page showing Baseline 1 with Output component, *.xml mask, and out.Admin baseline selected.":::
 
 ### Run the designed ER format and review the log to analyze the results
 
@@ -205,10 +205,10 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. Select **OK**.
 1. Go to **Organization administration** > **Electronic reporting** > **Configuration debug logs**.
 
-    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison1.PNG" alt-text="Screenshot of the Electronic reporting run logs page.":::
+   :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison1.PNG" alt-text="Screenshot of the Electronic reporting run logs page.":::
 
-    > [!NOTE]
-    > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline are equal.
+   > [!NOTE]
+   > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline are equal.
 
 1. Select **Delete all**.
 
@@ -221,19 +221,18 @@ The baseline is added for the **Format to learn ER baselines** format.
 1. Select **OK**.
 1. Go to **Organization administration** > **Electronic reporting** > **Configuration debug logs**.
 
-    :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison2.PNG" alt-text="Screenshot of Electronic reporting run logs showing a warning that generated file 'out.Admin.xml' differs from baseline.":::
+   :::image type="content" source="media/GER-BaselineSample-ReviewBaselineComparison2.PNG" alt-text="Screenshot of Electronic reporting run logs showing a warning that generated file 'out.Admin.xml' differs from baseline.":::
 
-    > [!NOTE]
-    > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline differ.
+   > [!NOTE]
+   > The execution log contains information about the results of the comparison of the generated file with the configured baseline. In this example, the log indicates that the generated file and the baseline differ.
 
 1. Select **Compare**.
 
-> [!NOTE]
-> The generated file and the baseline file are offered as a zip file. You can use external comparison tools such as WinDiff to compare the files and review the differences.
+  > [!NOTE]
+  > The generated file and the baseline file are offered as a zip file. You can use external comparison tools such as WinDiff to compare the files and review the differences.
 
 ## Additional resources
 
 - [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
