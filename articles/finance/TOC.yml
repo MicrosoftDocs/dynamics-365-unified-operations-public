@@ -2850,6 +2850,8 @@
                       href: localizations/france/fr-00004-french-bills-exchange-promissory-notes.md
                     - name: French Intrastat
                       href: localizations/france/emea-fra-intrastat.md
+                    - name: Establishments in France
+                      href: localizations/france/emea-fra-establishments-in-france.md
                     - name: Registration numbers setup for France
                       href: localizations/france/emea-fra-registration-numbers-setup-for-france.md
                     - name: NAF codes
