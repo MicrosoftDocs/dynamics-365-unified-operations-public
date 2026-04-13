@@ -38,7 +38,6 @@ This article describes the capabilities of the modernized search results view an
 
 ## Search results layout
 
-*Available from version 10.0.47*
 
 The search results page has been rebuilt on React with a refreshed card-based layout that reduces visual clutter and improves scan speed.
 
@@ -52,7 +51,6 @@ The search results page has been rebuilt on React with a refreshed card-based la
 
 ## Contextual discount visibility
 
-*Available from version 10.0.47*
 
 Quantity discount captions appear directly on search result cards when quantity-based discounts are available, allowing associates to proactively inform customers about potential savings.
 
@@ -62,7 +60,6 @@ To enable: In **POS visual profiles**, set **Show quantity discount captions** t
 
 ## Inventory visibility
 
-*Available from version 10.0.47*
 
 Store and nearby store availability is displayed directly on each product card, allowing associates to confirm stock without navigating to the product details page.
 
