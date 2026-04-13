@@ -44,7 +44,7 @@ Support for additional data types is planned in future releases.
 >
 > The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data inconsistency by copying the missing fields from the tables into our Dataverse-managed data lake (MDL).
 >
-> We will proactively detect once your environment has installed backport YYY (or newer) making the affected fields public. You can take no action, and this will automatically occur by [Proactive Quality Update](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) or you can optionally manually install the backport to trigger our detection earlier.
+> We will proactively detect once your environment has installed backport YYY (or newer) making the affected fields public. You can take no action, and this will automatically occur by [Proactive Quality Update](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) by latest early June depending on your current version, or you can optionally manually install the backport to trigger our detection earlier.
 >
 > We will temporarily suspend the creation of new archive jobs while allowing in-progress scheduled jobs to be completed so we can fix the data synchronization issue. We will re-enable the Data Archive capabilities after the data issue is resolved.
 >
