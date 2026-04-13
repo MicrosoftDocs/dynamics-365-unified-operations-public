@@ -18,7 +18,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. NAF codes are used to identify the business of an enterprise. For example, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
+You can create NAF codes, and then set up NAF codes for legal entities, customers, vendors, and prospects. You can use an NAF code to identify the business of an enterprise. For instance, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
+
+This article explains how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. 
 
 This procedure was created using the demo data company FRSI. This functionality is available for legal entities whose primary address is in France.
 
