@@ -28,6 +28,8 @@ The full, or absolute, URL that points to a page on your site consists of distin
 You establish your site's domain and optional language path when you set up the site. You can add more domains and language paths to your site through the online stores page in the site's settings.
 
 The URL slug for a page exists as a standalone entity in the site authoring environment. A page URL consists of two parts: a name that represents the URL slug, and a pointer to a page on either your site or an external site. You can also configure a page URL to act as a redirect to another page on either your site or an external site.
+> [!NOTE]
+> OneRF blocks any URLs containing the following special characters <, >, *, &, and \\ as a security measure to prevent XSS attacks.
 
 ## Create a page URL
 
