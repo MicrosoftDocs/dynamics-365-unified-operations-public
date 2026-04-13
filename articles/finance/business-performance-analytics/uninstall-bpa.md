@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 4/13/2026
+ms.date: 4/13/2026 
 ---
 
 # Uninstall Business performance analytics
