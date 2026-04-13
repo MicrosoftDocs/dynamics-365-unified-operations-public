@@ -25,7 +25,7 @@ After you upgrade code from Dynamics AX 2012 or from Dynamics 365 for Finance an
 Complete the following steps to relax model restrictions. You can complete this procedure on a cloud environment or a local virtual machine (VM).
 
 1. Deploy the development environment for the finance and operations app.
-1. Run the Lifecycle Services (LCS) code upgrade service to upgrade the solution.
+1. Run the Microsoft Dynamics Lifecycle Services code upgrade service to upgrade the solution.
 1. Temporarily allow overlayering in Microsoft models as needed to enable compilation.
 
     a. Locate the desired model within the `C:\AOSService\PackagesLocalDirectory` folder.

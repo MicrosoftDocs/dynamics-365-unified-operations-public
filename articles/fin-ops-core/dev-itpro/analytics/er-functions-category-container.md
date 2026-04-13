@@ -4,7 +4,7 @@ description: Learn about the container functions that are supported in Electroni
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/14/2020
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global

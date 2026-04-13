@@ -4,7 +4,7 @@ description: Learn how to configure print management record specific-destination
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 08/03/2021
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -23,22 +23,22 @@ This article explains how a user in the System Administrator or Accounts Receiva
 - Configure named [Electronic reporting (ER)](general-electronic-reporting.md) destinations for an ER solution that generates free text invoices.
 - Assign an ER destination to a single [print management](document-reporting-services.md) record.
 
-The procedures can be completed in the USMF company. No coding is required.
+Complete the procedures in the USMF company. No coding is required.
 
 ## Introduction
 
-You can configure [destinations](electronic-reporting-destinations.md) for each folder in the file output component of an ER [format](general-electronic-reporting.md) [configuration](general-electronic-reporting.md#Configuration) that is used to generate an outbound document. When you run an ER format of this type, if you have the appropriate access rights, you can also change the configured destination settings at runtime.
+You can configure [destinations](electronic-reporting-destinations.md) for each folder in the file output component of an ER [format](general-electronic-reporting.md) [configuration](general-electronic-reporting.md#Configuration) that generates an outbound document. When you run an ER format of this type, if you have the appropriate access rights, you can also change the configured destination settings at runtime.
 
-In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an action code can be [set up](er-apis-app10-0-17.md) for an ER format to specify the action that users perform by running that ER format. For example, in the **Accounts receivable** module, in the print management settings, you can select an ER format that generates a specific business document, such as a free text invoice. You can then select **View** to preview the invoice or **Print** to send it to a printer. If an action is passed for the running ER format at runtime, you can [configure different ER destinations for different user actions](er-action-dependent-destinations.md).
+In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, you can [set up](er-apis-app10-0-17.md) an action code for an ER format to specify the action that users perform by running that ER format. For example, in the **Accounts receivable** module, in the print management settings, you can select an ER format that generates a specific business document, such as a free text invoice. You can then select **View** to preview the invoice or **Print** to send it to a printer. If you pass an action for the running ER format at runtime, you can [configure different ER destinations for different user actions](er-action-dependent-destinations.md).
 
-In Finance **version 10.0.21 and later**, a named destination can be [set up](er-apis-app10-0-21.md) for an ER format and assigned to the print management record that is processed when that ER format is run. For example, in the **Accounts receivable** module, in the print management settings, you want to configure the **Original** record to perform the following actions:
+In Finance **version 10.0.21 and later**, you can [set up](er-apis-app10-0-21.md) a named destination for an ER format and assign it to the print management record that the ER format processes when it runs. For example, in the **Accounts receivable** module, in the print management settings, you want to configure the **Original** record to perform the following actions:
 
 - Run an ER format.
 - Email the generated invoice to a customer.
 - Configure the **Copy** record to run the same format.
 - Print a copy of the invoice to a network printer.
 
-In this case, you must configure different ER destinations for the ER format that is running, and you must select the destinations for different print management records.
+In this case, you must configure different ER destinations for the ER format that runs, and you must select the destinations for different print management records.
 
 ## Prerequisites
 
@@ -49,38 +49,38 @@ Additionally, the **Free text invoice (Excel)** ER configuration must be [import
 ## Configure a new ER destination
 
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Select an invoice for customer account **US-001**.
-3. On the **Free text invoice** page, on the **Invoice** tab, in the **Print management** group, select **Print management**.
-4. On the **Print management setup** page, expand **Module - accounts receivable** \> **Documents** \> **Free text invoice**, select the **Original** record, and then follow these steps:
+1. Select an invoice for customer account **US-001**.
+1. On the **Free text invoice** page, on the **Invoice** tab, in the **Print management** group, select **Print management**.
+1. On the **Print management setup** page, expand **Module - accounts receivable** \> **Documents** \> **Free text invoice**, select the **Original** record, and then follow these steps:
 
-    1.  Observe the current settings of the selected record:
-        -   The default SSRS report **FreeTextInvoice.Report** is selected in the **Report format** field.
-        -   The **\<Default\>** name is shown in the **Destination** field informing that there is no custom destination selected for the assigned SSRS report. 
-    2.  In the **Report format** field, select the **Free text invoice (Excel)** ER format configuration.
-        -   The name of the **Destination** field is changed to **Destination name**.
-        -   The **\<No named destination\>** name is shown in the **Destination name** field informing that there is no named destination selected for the assigned ER format.
-    3.  Select the arrow button to the right of the **Destination name** field.    
-    4. On the **Electronic reporting named destination** page, in the **Name** field, enter **Main destination**.
-    5. Select **Save**.
-    6. On the **File destination** FastTab, [configure](er-destination-type-email.md) the **Email** destination for the **Report** component.
-    7. Close the **Electronic reporting named destination** page.
-    8. On the **Print management setup** page, in the **Destination name** field, select the **Main destination** named destination.
+    1. Observe the current settings of the selected record:
+        - The default SSRS report **FreeTextInvoice.Report** is selected in the **Report format** field.
+        - The **\<Default\>** name is shown in the **Destination** field informing that there is no custom destination selected for the assigned SSRS report.
+    1. In the **Report format** field, select the **Free text invoice (Excel)** ER format configuration.
+        - The name of the **Destination** field is changed to **Destination name**.
+        - The **\<No named destination\>** name is shown in the **Destination name** field informing that there is no named destination selected for the assigned ER format.
+    1. Select the arrow button to the right of the **Destination name** field.
+    1. On the **Electronic reporting named destination** page, in the **Name** field, enter **Main destination**.
+    1. Select **Save**.
+    1. On the **File destination** FastTab, [configure](er-destination-type-email.md) the **Email** destination for the **Report** component.
+    1. Close the **Electronic reporting named destination** page.
+    1. On the **Print management setup** page, in the **Destination name** field, select the **Main destination** named destination.
 
-    ![Configuring a named ER destination for the selected ER format and assigning it to a configured print management record on the Print management setup page](./media/er-named-destinations-01.gif)
+    :::image type="content" source="./media/er-named-destinations-01.gif" alt-text="Screenshot of configuring a named ER destination for the selected ER format and assigning it to a configured print management record on the Print management setup page.":::
 
     You've now configured the named ER destination **Main destination** for the **Free text invoice (Excel)** format and assigned it to the **Original** print management record under **Module - accounts receivable** \> **Documents** \> **Free text invoice**.
 
-5. Expand **Module - accounts receivable** \> **Account - US-001** \> **Free text invoice**, select the **Original** record, and then follow these steps:
+1. Expand **Module - accounts receivable** \> **Account - US-001** \> **Free text invoice**, select the **Original** record, and then follow these steps:
 
     1. Select and hold (or right-click) the record, and then select **Override**.
-    2. Select the arrow button to the right of the **Destination name** field.
-    3. On the **Electronic reporting named destination** page, on the Action Pane, select **New**.
-    4. In the **Name** field, enter **US-001 destination**.
-    5. On the **File destination** FastTab, [configure](er-destination-type-print.md) the **Printer** destination for the **Report** component.
-    6. Close the **Electronic reporting named destination** page.
-    7. On the **Print management setup** page, in the **Destination name** field, select the **US-001 destination** named destination.
+    1. Select the arrow button to the right of the **Destination name** field.
+    1. On the **Electronic reporting named destination** page, on the Action Pane, select **New**.
+    1. In the **Name** field, enter **US-001 destination**.
+    1. On the **File destination** FastTab, [configure](er-destination-type-print.md) the **Printer** destination for the **Report** component.
+    1. Close the **Electronic reporting named destination** page.
+    1. On the **Print management setup** page, in the **Destination name** field, select the **US-001 destination** named destination.
 
-    ![Configuring a named ER destination for the selected ER format and assigning it to the configured print management record on the Print management setup page](./media/er-named-destinations-02.gif)
+    :::image type="content" source="./media/er-named-destinations-02.gif" alt-text="Screenshot of configuring a named ER destination for the selected ER format and assigning it to the configured print management record on the Print management setup page.":::
 
     You've now configured the named ER destination **US-001 destination** for the **Free text invoice (Excel)** format and assigned it to the **Original** print management record under **Module - accounts receivable** \> **Account - US-001** \> **Free text invoice**.
 
@@ -95,7 +95,7 @@ Now, when a free text invoice is processed, the **Free text invoice (Excel)** ER
 > [!IMPORTANT]
 > On the **Electronic reporting destination** page (**Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**), if you select an ER format that at least one named destination was configured for, you're notified about the presence of named destinations.
 >
-> ![Notification about the existence of configured named destinations for the selected ER format on the Electronic reporting destination page](./media/er-named-destinations-03.png)
+> :::image type="content" source="./media/er-named-destinations-03.png" alt-text="Screenshot of notification about the existence of configured named destinations for the selected ER format on the Electronic reporting destination page.":::
 >
 > If you delete the default destination, all named destinations are also deleted. If those named destinations were selected for print management records, the selection of those named destinations is canceled.
 

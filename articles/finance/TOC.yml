@@ -1167,7 +1167,7 @@
                     - name: Check for highly variable dimensions
                       href: cost-accounting/high-var-dimension-tool.md
                     - name: Translate dimension names and values
-                      href: general-ledger/translate-dimension-names-and-values.md
+                      href: general-ledger/translate-dimension-names-values.md
             - name: Setup
               items:
                 - name: Process allocations

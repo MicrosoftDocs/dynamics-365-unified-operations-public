@@ -4,7 +4,7 @@ description: Learn about how to extend the list of storage locations for documen
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 10/29/2020
+ms.date: 04/09/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -28,30 +28,30 @@ Deploy a topology that supports continuous build. For more information, see [Dep
 
 You must also have access to the development environment for this topology.
 
-All the tasks in this article can be completed in the **USMF** company.
+You can complete all the tasks in this article in the **USMF** company.
 
 ## Import the Fixed asset roll forward ER format
 
 To generate the documents that you plan to add a custom storage location for, [import](er-download-configurations-global-repo.md) the **Fixed asset roll forward** ER format configuration into the current topology.
 
-![Configuration repository page.](./media/er-custom-storage-generated-files-import-format.png)
+:::image type="content" source="./media/er-custom-storage-generated-files-import-format.png" alt-text="Screenshot of the Configuration repository page.":::
 
 ## Run the Fixed asset roll forward report
 
-1. Go to **Fixed assets** \> **Inquiries and reports** \> **Transaction reports** \> **Fixed asset roll forward**.
-2. In the **From date** field, enter **1/1/2017** (January 1, 2017).
-3. In the **To date** field, enter **1/31/2017** (January 31, 2017).
-4. In the **Currency field**, select **Accounting currency**.
-5. In the **Format mapping** field, select **Fixed asset roll forward**.
-6. Select **OK**.
+1. Go to **Fixed assets** > **Inquiries and reports** > **Transaction reports** > **Fixed asset roll forward**.
+1. In the **From date** field, enter **1/1/2017** (January 1, 2017).
+1. In the **To date** field, enter **1/31/2017** (January 31, 2017).
+1. In the **Currency field**, select **Accounting currency**.
+1. In the **Format mapping** field, select **Fixed asset roll forward**.
+1. Select **OK**.
 
-![Runtime dialog box for the Fixed asset roll forward report.](./media/er-custom-storage-generated-files-runtime-dialog.png)
+:::image type="content" source="./media/er-custom-storage-generated-files-runtime-dialog.png" alt-text="Screenshot of the Runtime dialog box for the Fixed asset roll forward report.":::
 
 In Microsoft Excel, review the outbound document that is generated and available for download. This behavior is the [default behavior](electronic-reporting-destinations.md#default-behavior) for an ER format that no [destinations](electronic-reporting-destinations.md) are configured for, and that is running in interactive mode.
 
 ## Review the source code
 
-Review the code of the `generateReportByGER()` method of the `AssetRollForwardService` class. Notice that the `Run()` method is used to call the ER framework and generate the **Fixed asset roll forward** report.
+Review the code of the `generateReportByGER()` method of the `AssetRollForwardService` class. Notice that the `Run()` method calls the ER framework and generates the **Fixed asset roll forward** report.
 
 ```xpp
 class AssetRollForwardService extends SysOperationServiceBase
@@ -109,8 +109,8 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 1. In your Visual Studio project, add a new class (`AssetRollForwardDestination` in this example), and write code to implement your custom destination for **Fixed asset roll forward** reports that are generated.
 
-    - The `new()` method is designed to get the original ER destination object and the application logic–driven parameter that specifies the custom location where generated reports should be stored. In this example, the custom location is the name of a folder of the local file system of the server that runs the Application Object Server (AOS) service.
-    - The `saveFile()` method is designed to save a generated document to a folder of the local file system of the server that runs the AOS service.
+    - The `new()` method gets the original ER destination object and the application logic–driven parameter that specifies the custom location where generated reports should be stored. In this example, the custom location is the name of a folder on the local file system of the server that runs the Application Object Server (AOS) service.
+    - The `saveFile()` method saves a generated document to a folder on the local file system of the server that runs the AOS service.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -168,7 +168,7 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-2. In your Visual Studio project, add a new class (`AssetRollForwardDestinationFactory` in this example), and write code to set up a custom destination factory that delegates the creation of a destination to the default destination factory, and to wrap a file destination with your own destination.
+1. In your Visual Studio project, add a new class (`AssetRollForwardDestinationFactory` in this example), and write code to set up a custom destination factory that delegates the creation of a destination to the default destination factory, and to wrap a file destination with your own destination.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -245,10 +245,10 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-3. Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner. Notice that when a custom destination factory is constructed, the application-driven parameter that specifies a target folder is passed. In this way, that target folder is used to store generated files.
+1. Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner. When you construct a custom destination factory, pass the application-driven parameter that specifies a target folder. This target folder stores generated files.
 
-    > [!NOTE] 
-    > Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception will be thrown at runtime.
+    > [!NOTE]
+    > Make sure that the specified folder (**c:\\0** in this example) exists on the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception is thrown at runtime.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -313,25 +313,24 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-4. Rebuild your project.
+1. Rebuild your project.
 
 ## Re-run the Fixed asset roll forward report
 
-1. Go to **Fixed assets** \> **Inquiries and reports** \> **Transaction reports** \> **Fixed asset roll forward**.
-2. In the **From date** field, enter **1/1/2017**.
-3. In the **To date** field, enter **1/31/2017**.
-4. In the **Currency field**, select **Accounting currency**.
-5. In the **Format mapping** field, select **Fixed asset roll forward**.
-6. Select **OK**.
-7. Browse the local **C:\\0** folder to find the generated file.
+1. Go to **Fixed assets** > **Inquiries and reports** > **Transaction reports** > **Fixed asset roll forward**.
+1. In the **From date** field, enter **1/1/2017**.
+1. In the **To date** field, enter **1/31/2017**.
+1. In the **Currency field**, select **Accounting currency**.
+1. In the **Format mapping** field, select **Fixed asset roll forward**.
+1. Select **OK**.
+1. Browse the local **C:\\0** folder to find the generated file.
 
 > [!NOTE]
-> Because the `originDestination` object isn't used in the `AssetRollForwardDestination` object in this example, the configurations for the ER format [destinations](electronic-reporting-destinations.md) will be ignored at runtime.
+> Because the `originDestination` object isn't used in the `AssetRollForwardDestination` object in this example, the configurations for the ER format [destinations](electronic-reporting-destinations.md) are ignored at runtime.
 
 ## Additional resources
 
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Extensibility home page](../extensibility/extensibility-home-page.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

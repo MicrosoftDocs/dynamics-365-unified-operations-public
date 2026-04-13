@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 12/30/2025
+ms.date: 04/10/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Poland
@@ -198,11 +198,11 @@ If no KSeF number exists, but an e‑invoicing submission log with a failed stat
 
 ##### BFK
 
-If neither a KSeF number nor a failed e‑invoicing submission exists, but the VAT record is linked to a related sales invoice, the system classifies the transaction as a business invoice and populates: `<BFK>1</BFK>`.
+If neither a KSeF number nor a failed e‑invoicing submission exists, but the VAT record is linked to a related sales invoice, the system classifies the transaction as a business invoice and populates: `<BFK>1</BFK>`. In addition, invoices are reported as DI when the document type is WEW, VAT_RR, or RO; otherwise, they are reported as BFK.
 
 ##### DI
 
-If none of the above conditions apply (for example, the VAT record isn't linked to any sales invoice), the system treats the entry as an internal VAT document and populates: `<DI>1</DI>`.
+If none of the above conditions apply (for example, the VAT record isn't linked to any sales invoice), the system treats the entry as an internal VAT document and populates: `<DI>1</DI>`. In addition, invoices are reported as DI when the document type is WEW, VAT_RR, or RO; otherwise, they are reported as BFK.
 
 Priority order for outgoing transactions: NrKSeF → OFF → BFK → DI.
 

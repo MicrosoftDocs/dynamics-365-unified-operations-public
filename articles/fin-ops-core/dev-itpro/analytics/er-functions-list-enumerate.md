@@ -4,7 +4,7 @@ description: Learn about how the ENUMERATE Electronic reporting (ER) function is
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 12/12/2019
+ms.date: 04/08/2026
 audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global

@@ -151,7 +151,7 @@ The new functionality lets you parametrize the call to any data model field of t
 You can specify every parameter of a data model field for which the argument can be provided as a single value of the defined data type and the [*list*](er-formula-supported-data-types-composite.md#record-list) of such values.
 
 > [!NOTE]
-> The default value for the parameter of a data model field isn't supported. If you add a parameter to a field in a data model, and the version of that data model has already been released and published, you must [rebase](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) all corresponding model mappings and formats to the new version of this model, because this data model change isn't backward compatible.
+> The default value for the parameter of a data model field isn't supported. If you add a parameter to a field in a data model, and the version of that data model has already been released and published, you must [rebase](general-electronic-reporting.md#upgrading-a-format-by-selecting-a-new-version-of-base-format-rebase) all corresponding model mappings and formats to the new version of this model, because this data model change isn't backward compatible.
 
 You can configure parametrized data model fields to make model mapping calls format-specific. This approach can help you reduce the number of model mappings that must be configured for many formats of a single data model. You can also use this approach to improve the execution performance of your formats and reduce the time that is required to generate business documents. To learn more about this feature, complete the example in this article.
 
