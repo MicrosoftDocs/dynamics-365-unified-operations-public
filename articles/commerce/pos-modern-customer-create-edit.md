@@ -24,12 +24,12 @@ This article describes how to enable the modernized workflows and what's availab
 
 - Store Commerce app version 10.0.48 or later
 - The following feature flag must be enabled in Commerce headquarters:
-  - `StoreCommerce.EnableModernCustomerAddEditView`
+  - `StoreCommerce.EnableModernCustomerDetailsPage`
 
 ## Enable the modernized customer create and edit workflows
 
 1. In Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
-2. Search for **Modern customer create and edit workflows** and select **Enable now**.
+2. Search for **Modern customer details page** and select **Enable now**.
 3. Run the **1110 (Global configuration)** distribution schedule job to push the changes to channel databases.
 4. Restart the Store Commerce app.
 
