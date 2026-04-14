@@ -41,13 +41,13 @@ This feature currently supports archiving the following types of finance and ope
 Support for additional data types is planned in future releases.
 
 > [!IMPORTANT]
-> We have identified a synchronization issue affecting certain Data Archive scenarios when synchronizing Dynamics 365 finance and operations data to our [Dataverse-managed data lake (MDL)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-view#view-archived-data-in-the-dataverse-managed-data-lake), private or internal fields are not being copied. To resolve the synchronization issue, we will update the affected fields to make them public.
+> We have identified a synchronization issue affecting certain Data Archive scenarios when synchronizing Dynamics 365 finance and operations data to our [Dataverse-managed data lake (MDL)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-view#view-archived-data-in-the-dataverse-managed-data-lake). In these sceanrios, private or internal fields are not being copied. To resolve this issue, we will update the affected fields to make them public.
 >
-> The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data inconsistency by copying the missing fields from the tables into our Dataverse-managed data lake (MDL).
+> The affected fields remain available in your Dynamics 365 finance and operations tables. We will fix the data synchronization issue by copying the missing fields from those tables into our Dataverse-managed data lake (MDL).
 >
-> We will proactively detect once your environment has installed backport YYY (or newer) making the affected fields public. You can take no action, and this will automatically occur by [Proactive Quality Update](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) by latest early June depending on your current version, or you can optionally manually install the backport to trigger our detection earlier.
+> Once the backport [YYY] has been installed in your Dynamics 365 finance and operations environment, which makes the affected fields public, we will automatically detect the update. No action on your part, this will occur automatically through a [Proactive Quality Update](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule) by early June 2026, depending on your current version. Alternatively, you may choose to install the backport manually to trigger our detection sooner.
 >
-> We will temporarily suspend the creation of new archive jobs while allowing in-progress scheduled jobs to be completed so we can fix the data synchronization issue. We will re-enable the Data Archive capabilities after the data issue is resolved.
+> To support the fix, we will temporarily disable the creation of new archive jobs while allowing any in-progress scheduled jobs to be completed. After the data synchronization issue is resolved, we will re-enable the archive jobs.
 >
 > If you need further assistance, please contact Microsoft Support.
 
