@@ -49,12 +49,14 @@ This article describes the capabilities of the modernized transaction grid and h
 ### Inline line actions
 
 
-Common cart line operations are available as inline actions directly on each cart line, removing the need for nested button navigation. Available actions include void product, return item, line discount, price override, coupon, line comment, and change unit of measure. The display order of inline actions is ranked automatically by frequency of use per register.
+Common cart line operations are available as inline actions directly on each cart line, removing the need for nested button navigation. Available actions include void product, return item, line discount, price override, coupon, line comment, and change unit of measure.
 
 - **Desktop:** Hover over a line and select the ellipsis (**…**) to open the inline actions list.
 - **Mobile/touch:** Long-press a line to open the inline actions list.
 
 To expose a broader set of line operations, enable **Enable advanced inline actions** in the **Feature management** workspace.
+
+Retailers and implementation partners can configure which operations appear as inline actions, their display order, and custom operations per screen layout using Screen Layout Designer in headquarters. [Learn how to configure inline actions](pos-configure-inline-actions.md).
 
 ### Inline quantity update
 
@@ -143,6 +145,7 @@ When a transaction is completed, suspended, or voided, the default button grid a
 | Version | Enhancements |
 |---|---|
 | 10.0.47 | Quantity discount captions, threshold discount bar, refreshed and extensible cart suggestions |
+| 10.0.48 | Inline actions extensibility — configure operations, display order, and custom operations per screen layout ([learn more](pos-configure-inline-actions.md)) |
 | 10.0.44 | Inline line actions, inline quantity update, loyalty upsell prompt |
 | 10.0.43 | Toast notification framework |
 | 10.0.42 | Product images on cart lines |
@@ -153,6 +156,7 @@ When a transaction is completed, suspended, or voided, the default button grid a
 
 ## Additional resources
 
+- [Configure inline actions in the modern transaction grid](pos-configure-inline-actions.md)
 - [Modern workflows in Store Commerce POS](POS-UX-modernization.md)
 - [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md)
 - [Offline reliability toast notifications in the Store Commerce app](dev-itpro/retail-sdk/offline-reliability-toast-notifications.md)
