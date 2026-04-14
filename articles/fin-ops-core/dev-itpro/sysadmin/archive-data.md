@@ -33,9 +33,10 @@ This feature currently supports archiving the following types of finance and ope
 
 - Dynamics 365 Finance General ledger
 - Dynamics 365 Finance Tax transactions
+- Dynamics 365 Supply Chain Management Inventory transactions
 - Dynamics 365 Supply Chain Management Inventory journals
 - Dynamics 365 Supply Chain Management Sales orders
-- Dynamics 365 Commerce Transactions
+- Dynamics 365 Commerce transactions
 
 Support for additional data types is planned in future releases.
 
