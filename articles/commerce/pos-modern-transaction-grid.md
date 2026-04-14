@@ -56,7 +56,37 @@ Common cart line operations are available as inline actions directly on each car
 
 To expose a broader set of line operations, enable **Enable advanced inline actions** in the **Feature management** workspace.
 
-Retailers and implementation partners can configure which operations appear as inline actions, their display order, and custom operations per screen layout using Screen Layout Designer in headquarters. [Learn how to configure inline actions](pos-configure-inline-actions.md).
+#### Configure inline actions per screen layout
+
+Retailers and implementation partners can configure which operations appear as inline actions, their display order, and custom operations per screen layout using Screen Layout Designer in headquarters.
+
+**What you can configure**
+
+- **Which actions appear**: Select any eligible out-of-the-box POS operation or custom operation registered in headquarters to include as an inline action on transaction line items.
+- **Display order**: Control the sequence in which inline actions appear so the most relevant operations for a given store format or associate role are surfaced first.
+- **Custom operations**: Operations built through the POS extension framework can be added as inline actions alongside out-of-the-box operations, giving retailers a unified configuration surface for both standard and customized workflows.
+
+**Default behavior**
+
+No configuration is required to preserve the current experience. If no inline actions are configured for a screen layout, Store Commerce continues to display the existing default set of inline operations for that layout. Once inline actions are configured for a specific layout, the configured list replaces the defaults for that layout only. Other layouts remain unaffected.
+
+**To configure inline actions**
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Screen layouts**.
+2. Open the screen layout to configure and launch **Screen layout designer**.
+3. Select the transaction grid component and open the inline actions configuration.
+4. Add operations from the available list, remove operations that aren't needed, and set the display order.
+5. Save the layout and run the **Channel configuration (1090)** distribution schedule job to push changes to stores.
+
+Changes take effect in Store Commerce after the updated layout is downloaded at the register.
+
+**Localization**
+
+Out-of-the-box operation names are automatically localized using existing POS resource strings — no additional work is required. For custom operations, display names fall back to the operation name configured in headquarters. To provide localized display names for custom operations, use resource files and operation mappings in your extension code.
+
+**Security and permissions**
+
+Inline actions respect the same POS security roles and permission model as button grid operations. Use role-based access controls to restrict sensitive operations — such as price override or void line — to managers, while presenting a simplified action set to cashiers.
 
 ### Inline quantity update
 
@@ -144,8 +174,8 @@ When a transaction is completed, suspended, or voided, the default button grid a
 
 | Version | Enhancements |
 |---|---|
+| 10.0.48 | Inline actions extensibility — configure operations, display order, and custom operations per screen layout |
 | 10.0.47 | Quantity discount captions, threshold discount bar, refreshed and extensible cart suggestions |
-| 10.0.48 | Inline actions extensibility — configure operations, display order, and custom operations per screen layout ([learn more](pos-configure-inline-actions.md)) |
 | 10.0.44 | Inline line actions, inline quantity update, loyalty upsell prompt |
 | 10.0.43 | Toast notification framework |
 | 10.0.42 | Product images on cart lines |
@@ -156,7 +186,6 @@ When a transaction is completed, suspended, or voided, the default button grid a
 
 ## Additional resources
 
-- [Configure inline actions in the modern transaction grid](pos-configure-inline-actions.md)
 - [Modern workflows in Store Commerce POS](POS-UX-modernization.md)
 - [Loyalty upsell prompt feature in POS](loyalty-upsell-prompt.md)
 - [Offline reliability toast notifications in the Store Commerce app](dev-itpro/retail-sdk/offline-reliability-toast-notifications.md)
