@@ -28,6 +28,7 @@ The React framework enables mobile-optimized workflows, simplifies extensibility
 | [Search results view](pos-modern-search-view.md) | 10.0.47 | 10.0.47 | Generally available |
 | [Product details page](pos-modern-product-details.md) | 10.0.47 | 10.0.47 | Generally available |
 | [Customer details page](pos-modern-customer-details.md) | 10.0.48 | 10.0.48 | Preview |
+| [Customer create and edit workflows](pos-modern-customer-create-edit.md) | 10.0.48 | 10.0.48 | Preview |
 
 ## Modern transaction grid
 
@@ -52,6 +53,12 @@ The modernized product details page is a mobile-first, vertical layout rebuilt o
 The modernized customer details page replaces the legacy customer details view with a React-based, responsive experience organized into four content tabs: Account summary, Timeline, Account details, and Transactions. The page surfaces Copilot customer insights and recommended products within the Account summary tab, and introduces a richer extensibility model for partners and ISVs.
 
 [Learn more about the modern customer details page](pos-modern-customer-details.md)
+
+## Modern customer create and edit workflows
+
+The modernized customer create and edit workflows rebuild the legacy add/edit view on React and Fluent UI. The address section is now part of the create form — associates complete customer information and address entry in a single save. Optional mandatory address validation is available as a CSU flight, ensuring customer records always have an associated address at the time of creation.
+
+[Learn more about the modern customer create and edit workflows](pos-modern-customer-create-edit.md)
 
 ## Additional resources
 
