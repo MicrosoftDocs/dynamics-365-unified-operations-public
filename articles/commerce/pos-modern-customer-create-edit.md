@@ -26,9 +26,6 @@ This article describes how to enable the modernized workflows and what's availab
 - The following feature flag must be enabled in Commerce headquarters:
   - `StoreCommerce.EnableModernCustomerAddEditView`
 
-> [!NOTE]
-> Mandatory address validation is enabled separately as a CSU flight and is not controlled by the feature flag above. See [Address validation](#address-validation) for details.
-
 ## Enable the modernized customer create and edit workflows
 
 1. In Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
@@ -65,12 +62,6 @@ This replaces the legacy two-step flow where customer record creation and addres
 Mandatory address validation requires a customer record to have an associated address before it can be saved. Associates are prompted to complete the address section if they attempt to save without one.
 
 Address validation is controlled by a CSU flight and is not enabled by default. To enable it for your environment, contact Microsoft support.
-
-- **RCSU (Retail Cloud Scale Unit):** Microsoft applies the flight via Geneva Actions. Open a support request to request enablement.
-- **RSSU (Retail Store Scale Unit):** A configuration file must be edited on the CSU machine. Contact Microsoft support for guided assistance.
-
-> [!NOTE]
-> Address validation is enforced in the UX for both the create and edit workflows once the flight is enabled.
 
 ---
 
