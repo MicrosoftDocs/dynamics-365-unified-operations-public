@@ -39,7 +39,7 @@ These validations apply consistently across all invoice entry points, including 
 
 ## What is an establishment?
 
-In Dynamics 365 Finance, an **establishment** represents an operational unit of a legal entity that performs business activities on a stable basis and might require its own regulatory identifiers for invoicing or reporting.  
+In Dynamics 365 Finance, an **Establishment** represents an operational unit of a legal entity that performs business activities on a stable basis and might require its own regulatory identifiers for invoicing or reporting.  
 
 A single legal entity can have one or more establishments. Although these establishments share the same legal identity, they can maintain separate operational identities for invoicing and compliance purposes.
 
