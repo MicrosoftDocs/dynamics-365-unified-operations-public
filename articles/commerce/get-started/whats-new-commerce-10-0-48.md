@@ -77,4 +77,4 @@ Before Microsoft removes any feature from the product, the deprecation notice is
 
 For breaking changes that only affect compilation time but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that you need to make to the compiler.
 
-[!INCLUDE[footer-include](../../includes/footer-include.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
