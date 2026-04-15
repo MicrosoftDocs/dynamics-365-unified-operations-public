@@ -67,6 +67,9 @@ A single legal entity can have one or multiple establishments, while remaining t
 
 Only **Operating units** that are explicitly included in a dedicated **Organizational hierarchy** assigned with **Enterprise establishment structure** purpose are treated as **Establishments** by the system. 
 
+**Establishments** can be associated with inventory **Sites** (**Inventory management** > **Setup** > **Inventory breakdown** > **Sites**) to support transactional defaulting.
+When an inventory **Site** is linked to an **Establishment**, the system can derive the issuing or receiving establishment of the legal entity for customer or vendor invoice that reference that site. This association is used to ensure consistent establishment identification across business documents that result in invoice posting.
+
 ### Teams
 
 A team is an organization in which the members share a common responsibility, interest, or objective. Teams can't be used in organizational hierarchies.
