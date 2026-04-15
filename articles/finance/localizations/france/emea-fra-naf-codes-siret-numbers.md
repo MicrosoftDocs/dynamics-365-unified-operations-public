@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# NAF codes
+# Use NAF codes
 
 [!include [banner](../../includes/banner.md)]
 

@@ -17,8 +17,8 @@ ms.dyn365.ops.version: Version 7.0.0
 # Registration numbers setup for France
 
 In France, invoices must identify both the issuing or receiving legal entities and their establishments involved in the transaction.
-To support this requirement, Dynamics 365 Finance uses [Registration IDs](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/registration-ids.md) 
-together with [Invoice party applicability rules](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md) 
+To support this requirement, Dynamics 365 Finance uses [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md) 
+together with [Invoice party applicability rules](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md) 
 to determine which identifiers must be validated and stored when an invoice is posted.
 
 This section explains how to configure **Registration IDs** for France.
@@ -68,7 +68,7 @@ For example, if your legal entity has only one address and it is primary address
 
 ## Establishment Registration IDs
 
-Each [Establishment](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) 
+Each [Establishment](../../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) 
 represents a physical or operational unit of legal entity.
 
 If your legal entity has multiple establishments, set up a Registration ID of **SIRET** type for each of those establishments and assign it to the establishment's address with the **Invoice** purpose or to the **primary address** of that establishment.
@@ -89,7 +89,7 @@ Such counterparties must be configured as **Organization** party type in Dynamic
 
 ## Validation and storage of Registration IDs on invoice posting
 
-When [Invoice party applicability rules](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md) are used:
+When [Invoice party applicability rules](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md) are used:
 
 - the applicable Registration IDs are resolved per invoice
 - invoice posting process controls that required Registration IDs are defined per invoice
