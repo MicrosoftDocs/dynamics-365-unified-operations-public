@@ -21,8 +21,7 @@ An establishment represents a physical or operational location where business ac
 
 Each establishment may issue or receive invoices and must therefore be identifiable during invoice processing.
 
-As of 10.0.48 version, in Dynamics 365 Finance, [Establishments](../../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) 
-are used during invoice posting to determine and validate the applicable [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md) for each invoice party:
+As of 10.0.48 version, in Dynamics 365 Finance, [Establishments](.../../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) are used during invoice posting to determine and validate the applicable [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md) for each invoice party:
 
 - legal entity establishments
 - customer establishments
@@ -30,8 +29,7 @@ are used during invoice posting to determine and validate the applicable [Regist
 
 ## Legal entity establishments
 
-Legal entities may operate through multiple [Establishments](../../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments), 
-each of which has its own:
+Legal entities may operate through multiple [Establishments](../../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments), each of which has its own:
 
 - address
 - SIRET Registration ID.
@@ -42,8 +40,7 @@ For example:
 - Regional consulting office
 - Operations back‑office site.
 
-Each establishment is included in the [**Enterprise establishment structure organization hierarchy**](../../../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md), 
-which is used during invoice processing to resolve the issuing establishment of the invoice.
+Each establishment is included in the [**Enterprise establishment structure organization hierarchy**](../../../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md), which is used during invoice processing to resolve the issuing establishment of the invoice.
 
 When a customer or vendor invoice is created:
 
@@ -74,7 +71,7 @@ This allows the system to validate and store **Registration IDs** for the correc
 
 ## Vendor establishments
 
-Vendor establishments are represented by the [**ship‑from address**](../../finance/accounts-payable/vendor-ship‑from-address.md) captured on the vendor invoice.
+Vendor establishments are represented by the [**ship‑from address**](../../finance/accounts-payable/vendor-ship-from-address.md) captured on the vendor invoice.
 When the **Require ship from on vendor invoice** paramter is enabled for a vendor in transaction:
 
 - the ship‑from address identifies the vendor establishment that issued the goods or services
