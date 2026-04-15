@@ -4,7 +4,7 @@ description: The Registration IDs functionality provides a unified framework for
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 08/03/2026
+ms.date: 04/15/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro

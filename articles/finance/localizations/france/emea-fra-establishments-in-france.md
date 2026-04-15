@@ -1,5 +1,5 @@
 --- 
-title: Establishments in France
+title: Use establishments in France
 description: Learn how to configure Establishments in France for legal entities, customers, vendors. 
 author: liza-golub
 ms.author: egolub
@@ -14,15 +14,15 @@ ms.search.form: CustTable, VendTable, OMLegalEntity
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Establishments in France
+# Use establishments in France
 
 In France, invoices must identify the specific establishment involved in the transaction, in addition to the legal entity of the supplier or customer.
 An establishment represents a physical or operational location where business activity is carried out and is assigned its own official identifier (SIRET).
 
 Each establishment may issue or receive invoices and must therefore be identifiable during invoice processing.
 
-As of 10.0.48 version, in Dynamics 365 Finance, [Establishments](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) 
-are used during invoice posting to determine and validate the applicable [Registration IDs](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/registration-ids.md) for each invoice party:
+As of 10.0.48 version, in Dynamics 365 Finance, [Establishments](../../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) 
+are used during invoice posting to determine and validate the applicable [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md) for each invoice party:
 
 - legal entity establishments
 - customer establishments
@@ -30,7 +30,7 @@ are used during invoice posting to determine and validate the applicable [Regist
 
 ## Legal entity establishments
 
-Legal entities may operate through multiple [Establishments](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments), 
+Legal entities may operate through multiple [Establishments](../../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments), 
 each of which has its own:
 
 - address
@@ -42,14 +42,14 @@ For example:
 - Regional consulting office
 - Operations back‑office site.
 
-Each establishment is included in the [**Enterprise establishment structure organization hierarchy**](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md), 
+Each establishment is included in the [**Enterprise establishment structure organization hierarchy**](../../../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md), 
 which is used during invoice processing to resolve the issuing establishment of the invoice.
 
 When a customer or vendor invoice is created:
 
 - the establishment may be derived from Site or financial dimension involved in transaction
-- the applicable establishment‑level [**Registration IDs**](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/registration-ids.md)
-are determined by using [**Invoice party applicability rules**](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md)
+- the applicable establishment‑level [**Registration IDs**](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md)
+are determined by using [**Invoice party applicability rules**](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md)
 
 Invoice posting cannot proceed if required Registration IDs for the legal entity's establishment are required and missing.
 
@@ -74,7 +74,7 @@ This allows the system to validate and store **Registration IDs** for the correc
 
 ## Vendor establishments
 
-Vendor establishments are represented by the [**ship‑from address**](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/vendor-ship‑from-address.md) captured on the vendor invoice.
+Vendor establishments are represented by the [**ship‑from address**](../../finance/accounts-payable/vendor-ship‑from-address.md) captured on the vendor invoice.
 When the **Require ship from on vendor invoice** paramter is enabled for a vendor in transaction:
 
 - the ship‑from address identifies the vendor establishment that issued the goods or services
