@@ -36,7 +36,7 @@ The supported versions are Node.js 16.x, 18.x, and 22.x. Node.js 16.x is recomme
 If you rely on other versions of Node.js for other projects, Microsoft recommends that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
 > [!NOTE]
-> If you upgrade to SDK packages that include Node.js 22 compatibility changes, you may encounter SCSS compilation or dependency changes. For more information, see [Package upgrade guide for Node.js 22 compatibility](sdk-package-upgrade-node22.md).
+> Node.js 22 is now supported. Node.js 16 support will be dropped in release 10.0.49 (July 27, 2026). For more information, see [eCommerce Platform Modernization](ecommerce-platform-modernization.md).
 
 ## Install Yarn
 
@@ -154,7 +154,7 @@ To install a new certificate on a developer environment, replace the public key 
 
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
-[Package upgrade guide for Node.js 22 compatibility](sdk-package-upgrade-node22.md)
+[eCommerce Platform Modernization](ecommerce-platform-modernization.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
 

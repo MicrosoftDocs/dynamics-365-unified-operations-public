@@ -2950,6 +2950,8 @@
             href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
             href: e-commerce-extensibility/system-requirements.md
+          - name: eCommerce Platform Modernization
+            href: e-commerce-extensibility/ecommerce-platform-modernization.md
         - name: Environment setup
           items:
           - name: Development environment
