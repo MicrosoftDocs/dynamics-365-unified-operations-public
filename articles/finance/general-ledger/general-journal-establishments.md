@@ -4,8 +4,7 @@ description: This topic provides information on how Establishments and registrat
 author: JodiChristiansen
 ms.date: 4/24/2026
 ms.topic: article
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
