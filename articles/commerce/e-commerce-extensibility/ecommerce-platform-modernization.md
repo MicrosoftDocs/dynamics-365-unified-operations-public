@@ -1,7 +1,7 @@
 ---
 title: eCommerce Platform Modernization
 description: Learn about the platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades and the deprecation timeline for Node.js 16.
-author: mithunbobade
+author: mithun-microsoft
 ms.date: 04/15/2026
 ms.topic: overview
 ms.reviewer: v-griffinc
@@ -36,7 +36,7 @@ The Dynamics 365 Commerce online SDK now supports **Node.js 22**. Node.js 22 del
 > [!NOTE]
 > Node.js 18 reached end of life on April 30, 2025, and Node.js 20 reaches end of life on April 30, 2026. If you are on either of these versions, we recommend upgrading to **Node.js 22**.
 
-For the full Commerce release schedule, see [Dynamics 365 Finance, Supply Chain Management, and Commerce public preview releases](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases).
+For the full Commerce release schedule, see [Dynamics 365 Finance, Supply Chain Management, and Commerce public preview releases](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases).
 
 ### Why upgrade?
 
@@ -74,6 +74,6 @@ To prepare for Node.js 16 deprecation, complete the following steps before the 1
 - [Set up a development environment](setup-dev-environment.md)
 - [SDK and module library updates](sdk-updates.md)
 - [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
-- [Dynamics 365 Commerce public preview release schedule](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)
+- [Dynamics 365 Commerce public preview release schedule](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
