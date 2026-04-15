@@ -4,12 +4,13 @@ description: Learn how to configure and generate Brazilian NFS-e service invoice
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 04/15/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 01/02/2026
-ms.custom: 
-  - bap-template
+
 ---
 
 # Work with NFS-e service invoices for projects
@@ -171,7 +172,7 @@ The export process works the same way as for non-project NFS-e invoices. The NBS
 
 - [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md)
 - [Set up Brazil reformed tax](brazil-reform-setup.md)
-- [Use tax calculation in projects in Brazil tax reform](brazil-reform-calculation-project)
-- [Use tax calculation in project quotation in Brazil tax reform](brazil-reform-calculation-project-quotation)
+- [Use tax calculation in projects in Brazil tax reform](brazil-reform-calculation-project.md)
+- [Use tax calculation in project quotation in Brazil tax reform](brazil-reform-calculation-project-quotation.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
