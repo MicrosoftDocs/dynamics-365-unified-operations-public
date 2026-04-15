@@ -1,5 +1,5 @@
 ---
-title: eCommerce Platform Modernization
+title: E-commerce platform modernization
 description: Learn about the platform modernization efforts for the Dynamics 365 Commerce online SDK, including Node.js runtime upgrades and the deprecation timeline for Node.js 16.
 author: mithun-microsoft
 ms.date: 04/15/2026
@@ -11,7 +11,7 @@ ms.search.validFrom: 2026-04-15
 ms.custom:
   - bap-template
 ---
-# eCommerce Platform Modernization
+# E-commerce platform modernization
 
 [!include [banner](../includes/banner.md)]
 
