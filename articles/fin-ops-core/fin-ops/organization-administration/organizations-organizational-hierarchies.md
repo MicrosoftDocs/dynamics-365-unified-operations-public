@@ -55,7 +55,7 @@ The types of operating units include cost centers, business units, value streams
 
 In Dynamics 365 Finance, an establishment represents an operational unit of a legal entity that carries out economic activity on a stable basis and may require its own regulatory identifiers, such as registration numbers used on invoices and regulatory reports.
 
-Establishments are modeled using existing **Operating units**, combined with an **Organizational hierarchy** assigned with *Enterprise establishment structure* **Organizational hierarchy purpose**, to support regulatory, invoicing, and compliance scenarios. 
+Establishments are modeled using existing **Operating units**, combined with an **Organizational hierarchy** assigned with *Enterprise establishment structure* **Organizational hierarchy purpose**, to support invoicing and compliance scenarios. 
 
 A single legal entity can have one or multiple establishments, while remaining the sole legal and accounting entity. All establishments share the same legal identity of the company but may have distinct operational identities for invoicing and regulatory purposes.
 
@@ -63,12 +63,23 @@ A single legal entity can have one or multiple establishments, while remaining t
 
 - Identification of the issuing or receiving unit on invoices
 - Separate regulatory identifiers per operational location
-- Consistent establishment selection across sales, purchasing, projects, and journals
+- Consistent establishment assignement across customer, vendor, project invoices.
 
-Only **Operating units** that are explicitly included in a dedicated **Organizational hierarchy** assigned with **Enterprise establishment structure** purpose are treated as **Establishments** by the system. 
+Only **Operating units** that are explicitly included in a dedicated **Organizational hierarchy** assigned with **Enterprise establishment structure** purpose are treated as **Establishments** by the system and can be selected in **Establishment** field in the following documents where and invoice can be posted:
+
+- Free text invoices
+- Sales orders
+- Purchase orders
+- Vendor invoices
+- Pending vendor invoices
+- Project invoice proposals
+- Intercompany customer invoices
+- General journals
 
 **Establishments** can be associated with inventory **Sites** (**Inventory management** > **Setup** > **Inventory breakdown** > **Sites**) to support transactional defaulting.
-When an inventory **Site** is linked to an **Establishment**, the system can derive the issuing or receiving establishment of the legal entity for customer or vendor invoice that reference that site. This association is used to ensure consistent establishment identification across business documents that result in invoice posting.
+When an inventory **Site** is linked to an **Establishment**, the system can derive the issuing or receiving establishment of the legal entity for customer, vendor or project invoice that reference that site. This association is used to ensure consistent establishment identification across business documents that result in invoice posting.
+
+**Establishments** can also be associated with **Financial dimension values** to support transactional defaulting. When a **Financial dimension value** linked to an **Operating unit** included into an **Organizational hierarchy** assigned with **Enterprise establishment structure** purpose, is used on a business document, the system can derive and default the applicable **Establishments** for customer, vendor, or project invoices created from that document. This association complements site‑based defaulting and helps ensure consistent establishment identification across invoice‑generating processes.
 
 ### Teams
 
