@@ -141,6 +141,6 @@ After you complete all the required configuration steps, you can generate electr
 
 ## Additional resources
 
-- [Work with NFS-e service invoices for projects](../../../)
+- [Work with NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
