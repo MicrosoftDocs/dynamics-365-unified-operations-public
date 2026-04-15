@@ -1280,6 +1280,8 @@
                       href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
+                    - name: Establishments and registration IDs in General journals
+                      href: general-ledger/general-journal-establishments.md                        
                     - name: Reverse journal posting
                       href: general-ledger/reverse-journal-posting.md
                     - name: Why can't I reverse this transaction?
