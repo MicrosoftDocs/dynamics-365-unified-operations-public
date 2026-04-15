@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 12/17/2025
+ms.date: 04/15/2026
 ms.topic: article
 ms.custom: 
   - bap-template
@@ -82,8 +82,8 @@ For the latest regulatory update plans, refer to the following table.
 
 
 ## Additional resources
-- For more information about all planned and released country/region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
-- For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
+- For more information about all planned and released country or region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
+- For a list of the supported localizations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
 
 
