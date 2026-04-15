@@ -74,17 +74,19 @@ You can configure the **From** field to return more than one email address. In t
 
 To specify email recipients, configure the **To** and **Cc** (optional) fields.
 
+As of version 10.0.48, you can also configure **BCC** (optional) field.
+
 You can configure email addresses for ER in two ways. You can complete the configuration in the same way as the Print Management feature, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 ## Email address types
 
-If you select **Edit** next to the **From**, **To**, or **Cc** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, or **Email cc** dialog box appears. You can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
+If you select **Edit** next to the **From**, **To**, **Cc** or **BCC** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, **Email cc** or **Email BCC** dialog box appears. You can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
 
 :::image type="content" source="./media/ER_Destinations-EmailSelectAddressType.png" alt-text="Screenshot of selecting the type of email address." lightbox="./media/ER_Destinations-EmailSelectAddressType.png":::
 
 ### Print Management email
 
-If you select **Print Management email** as the email address type, enter fixed email addresses in the **Email from**, **Email to**, or **Email cc** dialog box by setting the following fields:
+If you select **Print Management email** as the email address type, enter fixed email addresses in the **Email from**, **Email to**, **Email cc** or **Email BCC** dialog box by setting the following fields:
 
 - In the **Email source** field, select **None**.
 - In the **Additional email addresses, separated by ";"** field, enter the fixed email addresses.
