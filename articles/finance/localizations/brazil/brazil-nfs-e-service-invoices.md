@@ -141,6 +141,7 @@ After you complete all the required configuration steps, you can generate electr
 
 ## Additional resources
 
+- [Set up Brazil reformed tax](brazil-reform-setup.md)
 - [Work with NFS-e service invoices for projects](brazil-nfs-e-service-invoices-projects.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
