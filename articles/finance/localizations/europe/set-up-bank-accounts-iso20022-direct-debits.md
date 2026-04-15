@@ -6,12 +6,11 @@ ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/27/2025
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
-ms.dyn365.ops.version: Version 7.0.0 
 ---
 
 # Set up customers and customer bank accounts for ISO20022 direct debits
@@ -24,11 +23,11 @@ This article explains how to set up a customer bank account and a customer direc
 
 To set up a customer bank account, follow these steps:
 
-1. In Dynamics 365 Finance, go to **Accounts receivable \> Customers \> All customers**.
+1. In Dynamics 365 Finance, go to **Accounts receivable** > **Customers** > **All customers**.
 1. Use the Quick Filter to find records. For example, enter "Account field".
 1. In the list of results, select a row, and then select the link in the row.
 1. On the Action Pane, select **Customer**.
-1. Select **Bank accounts \> New**.
+1. Select **Bank accounts** > **New**.
 1. In the **Bank account** field, enter a value.
 1. In the **Name** field, enter a value.
 1. In the **Bank groups** field, enter or select a value.
@@ -49,8 +48,5 @@ To add a direct debit mandate, follow these steps:
 1. In the **Signature location** field, enter or select a value.
 1. In the **Expected number of payments** field, enter a number.
 1. Select **OK**, and then select **Save**.
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

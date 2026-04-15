@@ -4,7 +4,7 @@ description: Learn about how the GETLABELTEXT Electronic reporting (ER) function
 author: kfend
 ms.author: filatovm
 ms.topic: article
-ms.date: 03/18/2022
+ms.date: 04/08/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -43,13 +43,13 @@ This argument can be defined only as a constant, by using one of the following s
 
 - For ER labels:
 
-    - `@"GER_LABEL:<LABEL ID>"`
-    - `"GER_LABEL:<LABEL ID>"`
+  - `@"GER_LABEL:<LABEL ID>"`
+  - `"GER_LABEL:<LABEL ID>"`
 
 - For Finance labels:
 
-    - `@"<LABEL ID>"`
-    - `"<LABEL ID>"`
+  - `@"<LABEL ID>"`
+  - `"<LABEL ID>"`
 
 > [!NOTE]
 > At design time, a validation error message is shown on the **[Formula designer](er-advanced-formula-editor.md)** page if no label can be found by using the provided label ID.

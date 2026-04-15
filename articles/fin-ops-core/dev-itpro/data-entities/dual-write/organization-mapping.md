@@ -4,6 +4,7 @@ description: Learn about the integration of organizational data between finance 
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro

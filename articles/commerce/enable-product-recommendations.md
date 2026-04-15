@@ -2,7 +2,7 @@
 title: Enable product recommendations
 description: Learn how to make product recommendations based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
-ms.date: 02/27/2026
+ms.date: 04/09/2026
 ms.topic: how-to
 ms.reviewer: v-griffinc
 ms.search.region: global
@@ -19,7 +19,7 @@ ms.custom:
 This article explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
 > [!IMPORTANT]
-> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases.
+> The Dynamics 365 Commerce Recommendations license is no longer available for new purchases and renewals.
 
 ## Recommendations precheck
 

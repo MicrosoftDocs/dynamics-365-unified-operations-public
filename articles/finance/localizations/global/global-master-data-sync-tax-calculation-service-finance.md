@@ -4,14 +4,14 @@ description: Learn how to sync tax setup master data from the Tax Calculation fe
 author: EricWangChen
 ms.author: wangchen
 ms.topic: install-set-up-deploy
-ms.date: 02/09/2024
+ms.date: 03/18/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
 ms.search.form: TaxIntegration, TaxServiceParameters
-ms.dyn365.ops.version: 10.0.21
+ms.custom: 
+  - bap-template
 ---
 
 # Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This article explains how to sync tax setup master data from the Tax Calculation feature to Microsoft Dynamics 365 Finance.
 
-After you complete the required setup steps in [Get started with Tax Calculation](global-get-started-with-tax-calculation-service.md), the following tax setup data is automatically synced from the Tax Calculation feature to Finance.
+After you complete the required setup steps in [Get started with Tax Calculation](global-get-started-with-tax-calculation-service.md), the Tax Calculation feature automatically syncs the following tax setup data to Finance.
 
 ## Sales tax code
 
@@ -46,7 +46,7 @@ After you complete the required setup steps in [Get started with Tax Calculation
 
 ## Tax limits
 
-| Tax Calculation feature | Finance           |
+| Tax calculation feature | Finance           |
 | ----------------------- | ----------------- |
 | From transaction date   | From date         |
 | To transaction date     | To date           |
@@ -55,7 +55,7 @@ After you complete the required setup steps in [Get started with Tax Calculation
 
 ## Sales tax group
 
-| Tax Calculation feature                         | Finance                                    |
+| Tax calculation feature                         | Finance                                    |
 | ----------------------------------------------- | ------------------------------------------ |
 | Tax group                                       | Sales tax group                            |
 | Tax codes under this tax group                  | Sales tax codes under this sales tax group |
@@ -71,7 +71,9 @@ After you complete the required setup steps in [Get started with Tax Calculation
 | Item tax group                      | Item sales tax group                            |
 | Tax codes under this item tax group | Sales tax codes under this item sales tax group |
 
-After the synchronization is completed, continue to maintain the remaining parameters in Finance for posting and reporting purposes.
+After the synchronization finishes, continue to maintain the remaining parameters in Finance for posting and reporting purposes.
 
 > [!NOTE]
 > Synchronization of the tax setup from Finance to the Tax Calculation feature isn't supported. For an existing Finance environment, first create the tax setup in the Tax Calculation feature. Then sync the setup data back to the Finance environment.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

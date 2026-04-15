@@ -4,7 +4,7 @@ description: Learn how to insert data into tables by using X++, including X++ co
 author: josaw1
 ms.author: josaw
 ms.topic: how-to
-ms.date: 06/16/2020
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,13 +16,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or in source code, to insert one or more rows into tables that are stored in the database.
+Use SQL statements, either interactively or in source code, to insert one or more rows into tables that the database stores.
 
-+ **[insert method](#insert-method)** – Insert one row at a time.
-+ **[doInsert method](#do-insert-method)** – Insert one row at a time.
-+ **[insert\_recordset statement](#insert-recordset-statement)** – Copy multiple records directly from one or more tables into another table in one database trip.
-+ **[RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
-+ **[RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
+- **[insert method](#insert-method)** – Insert one row at a time.
+- **[doInsert method](#do-insert-method)** – Insert one row at a time.
+- **[insert\_recordset statement](#insert-recordset-statement)** – Copy multiple records directly from one or more tables into another table in one database trip.
+- **[RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you don't need to sort the data.
+- **[RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data sorted in an order that doesn't currently exist as an index.
 
 **RecordSortedList**, **RecordInsertList**, and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database. Therefore, you help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
@@ -30,16 +30,16 @@ You can use SQL statements, either interactively or in source code, to insert on
 
 The **insert** method inserts one record at a time. It generates values for the **RecId** field and system fields, and then inserts the contents of the buffer (that is, the column values) into the database.
 
-+ Don't use a **select** statement on the table variable before you call the **insert** method.
-+ The **insert** method doesn't handle all the key field requirements and table dependencies. You must write code to handle them.
+- Don't use a **select** statement on the table variable before you call the **insert** method.
+- The **insert** method doesn't handle all the key field requirements and table dependencies. You must write code to handle them.
 
-Here is how the **insert** method works:
+Here's how the **insert** method works:
 
-+ Only the specified columns of the rows that have been selected by the query are inserted into the named table.
-+ The columns of the table that is copied from and the columns of the table that is copied to must be type-compatible.
-+ If the columns of both tables match in type and order, the column list can be omitted from the **insert** clause.
+- It inserts only the specified columns of the rows that the query selects into the named table.
+- The columns of the table that you copy from and the columns of the table that you copy to must be type-compatible.
+- If the columns of both tables match in type and order, you can omit the column list from the **insert** clause.
 
-The following example inserts a new record into the CustGroup table. The **CustGroup** column of the new record is set to **41**. Other fields in the record will be blank.
+The following example inserts a new record into the CustGroup table. The **CustGroup** column of the new record is set to **41**. Other fields in the record are blank.
 
 ```xpp
 CustGroup custGroup;
@@ -53,10 +53,10 @@ To override the behavior of the **insert** method, use the **[doInsert](#do-inse
 
 ## <a id="do-insert-method"></a>doInsert method
 
-The **doInsert** method generates values for the **RecId** field and other system fields, and then inserts the contents of the buffer into the database. Use this method when the **insert** method on the table must be bypassed.
+The **doInsert** method generates values for the **RecId** field and other system fields, and then inserts the contents of the buffer into the database. Use this method when you need to bypass the **insert** method on the table.
 
 > [!WARNING]
-> A call to **doInsert** skips all logic, including database event handlers (for example **oninserting** and **oninserted**), chain-of-command **onInsert()**, and the **insert()** call itself. It's generally considered bad practice to use **doInsert**, and we don't recommend that you use it.
+> A call to **doInsert** skips all logic, including database event handlers (for example **oninserting** and **oninserted**), chain-of-command **onInsert()**, and the **insert()** call itself. It's generally considered bad practice to use **doInsert**, and you shouldn't use it.
 
 ## <a id="insert-recordset-statement"></a>insert\_recordset statement
 
@@ -66,12 +66,12 @@ In the following syntax for the **insert\_recordset** statement, brackets (\[\])
 
 **insert\_recordset** *DestinationTable* **(** *ListOfFields* **)**
 
-**select** *ListOfFields1* **from** *SourceTable* **\[ where** *WhereClause* **\]** 
+**select** *ListOfFields1* **from** *SourceTable* **\[ where** *WhereClause* **\]**
 
 **\[ join** *ListOfFields2* **from** *JoinedSourceTable* **\[ where** *JoinedWhereClause* **\]\]**
 
-+ *ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
-+ *WhereClause* and *JoinedWhereClause* are described in the *WhereClause* clause in the **[select](xpp-select-statement.md#where-keyword)** statement.
+- *ListOfFields* in the destination table must match the list of fields in the source tables. Data is transferred in the order in which it appears in the list of fields. Fields in the destination table that aren't present in the list of fields are assigned **0** (zero) values, as in other areas. System fields, such as **RecId**, are assigned transparently by the kernel in the destination table.
+- *WhereClause* and *JoinedWhereClause* are described in the *WhereClause* clause in the **[select](xpp-select-statement.md#where-keyword)** statement.
 
 ### insert\_recordset: Inserting data from another table
 
@@ -92,10 +92,10 @@ insert_recordset valueSumName (Name, ValueSum)
 The following example shows that the **insert\_recordset** statement can insert variable data.
 
 - Include the **firstonly** keyword to insert only one new record. If you omit **firstonly**, a record is inserted for each record in the CustTable table.
-- Literals, such as **128** or **"this literal string"**, can't be used in the query as a source of data that is inserted.
-- The columns in the source table don't have to correspond to the target table.
+- You can't use literals, such as **128** or **"this literal string"**, in the query as a source of data for the insert operation.
+- The columns in the source table don't need to correspond to the target table.
 
-In this example, one new record is inserted into the NameValuePair table. This record has an **Id** value of **1**, a **Name** value of **Name1**, and a **Value** value of **1**.
+In this example, you insert one new record into the NameValuePair table. This record has an **Id** value of **1**, a **Name** value of **Name1**, and a **Value** value of **1**.
 
 ```xpp
 NameValuePair nameValuePair;
@@ -111,9 +111,9 @@ select firstonly id_var, name_var, value_var from custTable;
 
 ### insert\_recordset: Inserting data by using a join
 
-The following example shows a join of three tables on an **insert\_recordset** statement that has a subselect. It also shows a **while select** statement that has a similar join. A variable is used to supply the inserted value for one column. The **str** variable must be declared, and it must have a length that is less than or equal to the maximum length of the corresponding database field.
+The following example shows a join of three tables on an **insert\_recordset** statement that has a subselect. It also shows a **while select** statement that has a similar join. A variable supplies the inserted value for one column. You must declare the **str** variable, and it must have a length that is less than or equal to the maximum length of the corresponding database field.
 
-In this example, there is an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and its data comes from the local **sDescriptionVariable** variable. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
+In this example, there's an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and its data comes from the local **sDescriptionVariable** variable. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
 
 ```xpp
 static void InsertJoin42Job(Args _args)
@@ -240,6 +240,5 @@ static void JobDuplicKeyException44Job(Args _args)
     ---- .insert() successful.
 */
 ```
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

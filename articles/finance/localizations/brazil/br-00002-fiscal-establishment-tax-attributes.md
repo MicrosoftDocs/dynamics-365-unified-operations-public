@@ -4,7 +4,7 @@ description: This article describes how to create one or more fiscal establishme
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 03/13/2025
+ms.date: 03/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30

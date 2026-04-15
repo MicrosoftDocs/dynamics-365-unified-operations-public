@@ -1,23 +1,22 @@
 ---
 title: Use fiscal data from an invoice account
-description: Learn about how to enable fiscal data to be automatically updated on sales orders or purchase orders based on information from the invoice account.
+description: Learn how to enable fiscal data to be automatically updated on sales orders or purchase orders based on information from the invoice account.
 author: epodkolzina
 ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/01/2024
+ms.date: 03/06/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2020-02-03
 ms.search.form: CustParameters, VendParameters
-ms.dyn365.ops.version: 10.0.9
 ---
 
 # Use fiscal data from an invoice account
 
 [!include [banner](../../includes/banner.md)]
 
-You can use fiscal data, such as the customer or vendor name, or the sales tax group and tax exempt numbers from an invoice account on sales orders, free text invoices, or purchase orders to be updated automatically based on the information from the invoice account. This article explains how to configure the feature.
+You can use fiscal data, such as the customer or vendor name, or the sales tax group and tax-exempt numbers from an invoice account on sales orders, free text invoices, or purchase orders to update automatically based on the information from the invoice account. This article explains how to configure the feature.
 
 ## Accounts payable and Accounts receivable parameters
 
@@ -27,5 +26,6 @@ To enable this functionality for purchase orders, sales orders, and free text in
 -	**Always** - The information is updated from the invoice account.
 -	**Ask** - The user is prompted to specify whether the information should be updated from the invoice account or from the vendor or customer account. If the user selects **Yes**, the information is updated from the invoice account; otherwise the default is to update information from the vendor or customer account.
 
+This functionality is managed by a feature named Enable defaulting of fiscal data from invoice account. This feature needs to be enabled to be able to see and configure the parameters in this page. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

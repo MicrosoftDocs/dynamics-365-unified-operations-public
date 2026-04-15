@@ -42,7 +42,7 @@ Data entities provide conceptual abstraction and encapsulation of the underlying
 | Scenario | Description |
 |----------|-------------|
 | **Data Migration** | <ul><li>Migrate reference, master, and document data from legacy or external systems.</li></ul> |
-| **Set up and copy configuration** | <ul><li>Copy configuration between company/environments.</li><li>Configure processes or modules using the Lifecycle Services (LCS) environment.</li></ul> |
+| **Set up and copy configuration** | <ul><li>Copy configuration between company/environments.</li><li>Configure processes or modules using the Lifecycle Services environment.</li></ul> |
 | **Integration** | <ul><li>Real-time service based integration.</li><li>Asynchronous integration.</li></ul> |
 
 ## Data migration
@@ -56,7 +56,7 @@ By using the data management framework, you can quickly migrate reference, maste
 
 ## Set up and copy configuration
 
-Use the data management framework to copy configurations between companies or environments, and configure processes or modules by using Microsoft Dynamics Lifecycle Services (LCS).
+Use the data management framework to copy configurations between companies or environments, and configure processes or modules by using Microsoft Dynamics Lifecycle Services.
 
 Copying configurations makes it easier to start a new implementation, even if your team doesn't deeply understand the structure of data that needs to be entered, data dependencies, or which sequence to add data to an implementation.
 
@@ -70,7 +70,7 @@ The data management framework allows you to:
 
 ## Working with data entities
 
-The following sections provide quick snapshots of the different functionalities of data management by using data entities. The goal is to help you strategize and make effective decisions on how to best utilize the available tools during data migration. You also find tips and tricks on how to effectively use each area during data migration. A list of available data entities for each area can also be found with the suggested data sequences, showing data dependencies. Microsoft provides data packages that can be found on Lifecycle Services (LCS) as an initial guide. The information in this document can be used as a guide for creating your own packages. The description of each data entity shows what the object contains and if it's needed during data migration.
+The following sections provide quick snapshots of the different functionalities of data management by using data entities. The goal is to help you strategize and make effective decisions on how to best utilize the available tools during data migration. You also find tips and tricks on how to effectively use each area during data migration. A list of available data entities for each area can also be found with the suggested data sequences, showing data dependencies. Microsoft provides data packages that can be found on Lifecycle Services as an initial guide. The information in this document can be used as a guide for creating your own packages. The description of each data entity shows what the object contains and if it's needed during data migration.
 
 ### Sequencing
 
@@ -101,7 +101,7 @@ To successfully import sales tax codes and groups, the process loads the sales t
 
 #### Sequence data package imports
 
-To successfully load data, set the correct order for importing data packages. Dependencies exist within and across modules. The numbering format that the system uses for the data packages within LCS are as follows:
+To successfully load data, set the correct order for importing data packages. Dependencies exist within and across modules. The numbering format that the system uses for the data packages within Lifecycle Services are as follows:
 
 - First segment: Module
 - Second segment: Data type (setup, master, transaction)

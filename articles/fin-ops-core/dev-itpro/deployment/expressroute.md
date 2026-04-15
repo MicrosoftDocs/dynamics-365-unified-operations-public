@@ -4,7 +4,9 @@ description: Learn about how customers can use Microsoft Azure ExpressRoute to c
 author: PeterRFriis
 ms.author: peterfriis
 ms.topic: article
-ms.date: 09/20/2019
+ms.custom: 
+  - bap-template
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
@@ -18,12 +20,12 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-Customers can use Microsoft Azure ExpressRoute with finance and operations apps to connect to their on-premises infrastructure. This article provides the information that you need to get started with ExpressRoute.
+You can use Microsoft Azure ExpressRoute with finance and operations apps to connect to your on-premises infrastructure. This article provides the information that you need to get started with ExpressRoute.
 
-Microsoft Azure ExpressRoute lets you create dedicated, readily available, highly reliable, low latency connections between Azure datacenters and your on-premises locations. An ExpressRoute circuit is a logical connection between a customer’s on-premises network and Microsoft cloud services through a connectivity provider. ExpressRoute is configured separately from finance and operations apps. To get an ExpressRoute circuit for your implementation, you must contact a network service provider directly. After ExpressRoute is configured, in addition to connecting to finance and operations apps, customers can connect to apps such as Microsoft 365 and supported Azure services, such as connecting to virtual machines and cloud services deployed in virtual networks. To learn more about other supported services, see [ExpressRoute FAQ](/azure/expressroute/expressroute-faqs). Before purchasing an ExpressRoute circuit, you will need to know the following information:
+Microsoft Azure ExpressRoute lets you create dedicated, highly available, and low-latency connections between Azure datacenters and your on-premises locations. An ExpressRoute circuit is a logical connection between a customer’s on-premises network and Microsoft cloud services through a connectivity provider. You configure ExpressRoute separately from finance and operations apps. To get an ExpressRoute circuit for your implementation, you must contact a network service provider directly. After you configure ExpressRoute, in addition to connecting to finance and operations apps, you can connect to apps such as Microsoft 365 and supported Azure services, such as connecting to virtual machines and cloud services deployed in virtual networks. Learn more about other supported services in [ExpressRoute FAQ](/azure/expressroute/expressroute-faqs). Before purchasing an ExpressRoute circuit, you need to know the following information:
 
 - The datacenter that your finance and operations apps are located in.
-- The region where you will be connecting from.
+- The region where you connect from.
 
 This information is necessary to determine whether a standard or premium offering of ExpressRoute is required.
 
@@ -34,6 +36,4 @@ This information is necessary to determine whether a standard or premium offerin
 - [ExpressRoute partners and peering locations](/azure/expressroute/expressroute-locations)
 - [ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute/)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

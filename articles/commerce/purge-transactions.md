@@ -1,5 +1,5 @@
 ---
-title: Purge Commerce transactions (preview)
+title: Purge Commerce transactions
 description: Learn how to use the Purge Commerce sales transactions capability to delete old transactional data that's no longer needed in Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.date: 01/14/2025
@@ -12,10 +12,9 @@ ms.author: shajain
 ms.search.validFrom: 2024-09-30
 ---
 
-# Purge Commerce transactions (preview)
+# Purge Commerce transactions
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to use the Purge Commerce sales transactions capability to delete old transactional data that is no longer needed in Microsoft Dynamics 365 Commerce.
 
@@ -105,4 +104,5 @@ If the **Only delete logs and error files** configuration isn't selected, then t
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 

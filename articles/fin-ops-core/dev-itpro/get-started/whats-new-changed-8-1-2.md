@@ -19,11 +19,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Dynamics 365 Finance and Operations version 8.1.2 (December 2018)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]]
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.1.2. This version was released in December 2018 and has a build number of 8.1.195.
 
-To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
+To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](/dynamics365/commerce/get-started/whats-new).
 
 ### Dynamics 365 October '18 release notes
 
@@ -37,15 +37,15 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Platform update 22
 
-Microsoft Dynamics 365 Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see [What's new or changed in Dynamics 365 Finance platform update 22 (December 2018)](whats-new-platform-update-22.md).
+Microsoft Dynamics 365 Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see [What's new or changed in Dynamics 365 Finance platform update 22 (December 2018)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-22).
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1.2](../extensibility/extensibility-changes-812.md).
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1.2](/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-changes-812).
 
 ## Derived dimension values
 
-This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
+This release includes functionality that lets you prevent changes to derived dimension values and override existing dimension values with derived dimension values. For more information, see [Derived dimensions](/dynamics365/finance/general-ledger/derived-dimensions).
 
 ## Resume master planning
 This release includes enhanced planning engine functionality that helps to ensure that master planning batch jobs automatically resume if the main thread stops unexpectedly. This can happen if, for some reason, the batch server connection is lost during the master planning run. Before this feature was implemented, a complete rerun of master planning was needed. Now the master planning batch jobs automatically resume and continue at the place where they were interrupted. From the Master planning history log, the planner can see that the main thread was stopped unexpectedly and that the process was resumed.
@@ -53,16 +53,16 @@ This release includes enhanced planning engine functionality that helps to ensur
 Resume will only happen once. This means that if the main thread unexpectedly stops again, during the resume, it will mark it as failed in the log and not try to resume. Also, resume is only applied to regeneration and jobs that have reached at least the coverage state of the master planning calculation. If a helper thread stops unexpectedly, planning will continue with the remaining helpers.
 
 ## Intrastat format changes for Belgium
-This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from the LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [ER Import a configuration from Lifecycle Services](../analytics/tasks/er-import-configuration-lifecycle-services.md). 
+This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from the LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [ER Import a configuration from Lifecycle Services](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services). 
 
 ## India-specific features
-In this release, if [GTE](../../../finance/general-ledger/tax-engine.md) is enabled for a legal entity, some global fields and buttons will be hidden from the user interface. This simplifies the user interface for users by hiding fields and buttons on taxable documents like Purchase orders and Sales order that don't apply when GTE is used. The following fields or buttons will be hidden if GTE is enabled.
+In this release, if [GTE](/dynamics365/finance/general-ledger/tax-engine) is enabled for a legal entity, some global fields and buttons will be hidden from the user interface. This simplifies the user interface for users by hiding fields and buttons on taxable documents like Purchase orders and Sales order that don't apply when GTE is used. The following fields or buttons will be hidden if GTE is enabled.
 
  - Sales tax group
  - Item sales tax group
  - Sales tax button
  
-The current standard GST configuration does not include VAT, so if your business needs to handle VAT, you must extend the configuration to use VAT. For more information, see [Extending tax engine configurations](../../../finance/dev-itpro/extend-tax-engine-configurations.md).
+The current standard GST configuration does not include VAT, so if your business needs to handle VAT, you must extend the configuration to use VAT. For more information, see [Extending tax engine configurations](/dynamics365/finance/dev-itpro/extend-tax-engine-configurations).
 
 ## Russian-specific features
 This release includes the following features specific for Russia:
@@ -117,11 +117,11 @@ To apply the new formats, you need to import the following or higher versions of
  - Sales book additional sheet format.version.46.13
  - Factures journal format.version.46.4
  
-For more information, see [ER Import a configuration from Lifecycle Services](../analytics/tasks/er-import-configuration-lifecycle-services.md). 
+For more information, see [ER Import a configuration from Lifecycle Services](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services). 
 
 These configuration versions are released as public preview and will be updated based on feedback received. Use them to learn how electronic formats of sales, purchase books, additional sheets, and factures journals are configured with Electronic reporting. Do not use these configurations as base configurations for derived customized configurations in a live environment.
 
-For more information, see [Sales books, purchase books, and invoice-factures journals](../../../finance/localizations/russia/rus-sales-books-purchase-books.md).
+For more information, see [Sales books, purchase books, and invoice-factures journals](/dynamics365/finance/localizations/russia/rus-sales-books-purchase-books).
 
 
 

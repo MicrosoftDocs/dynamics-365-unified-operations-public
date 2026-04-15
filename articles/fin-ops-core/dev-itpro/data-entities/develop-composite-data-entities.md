@@ -4,6 +4,8 @@ description: Learn about composite entities, a concept that allows you to build 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 10/29/2025
 ms.reviewer: johnmichalak
 audience: Developer

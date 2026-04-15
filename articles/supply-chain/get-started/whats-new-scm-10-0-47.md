@@ -30,6 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
 | Production Control | Sensor Data Intelligence - Auto report progress scenario | [Production auto report scenario (preview)](../sensor-data-intelligence/sdi-scenario-production-auto-report.md) |  Feature management:<br>*(Preview) Sensor Data Intelligence - Auto report progress* |
+| Sales and marketing | Calculate prices for external systems through the pricing calculation API | [Calculate prices for external systems through the pricing calculation API](../unified-pricing-management/upm-pricing-calculation-api.md) | Enabled by default |
 | Sales and marketing | [Manage pricing rules using a generic base currency](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/manage-pricing-rules-using-generic-base-currency) | *Coming soon* | Enabled by default |
 | Sales and marketing | [Optimize pricing data import and export workflows](/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/optimize-pricing-data-import-export-workflows) | [Pricing data import and export entities](../unified-pricing-management/upm-pricing-data-entities.md) |  Feature management:<br>*Unified pricing management pricing rule performance enhancement* |
 | Sales and marketing | Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen | [Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)](../sales-marketing/pay-by-link-with-adyen-connector.md) | Feature management:<ul><li>*Enable unified payments experience in POS*</li><li>*Enable Payments Notification feature*</li><li>*Enable Pay By Link Payment feature*</li><li>*Enable asynchronous payments for sales orders*</li></ul> |
@@ -102,7 +103,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ### What's new or changed in the Warehouse Management mobile app
 
-The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md).
+The Warehouse Management mobile app is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in the Warehouse Management mobile app](../warehousing/warehouse-app-whats-new.md).
 
 ### What's new or changed in Demand planning
 

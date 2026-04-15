@@ -4,6 +4,7 @@ description: Learn about the Party and global address book functionality of dual
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: how-to
+
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: IT Pro

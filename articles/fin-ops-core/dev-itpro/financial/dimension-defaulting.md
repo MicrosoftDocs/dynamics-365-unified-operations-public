@@ -4,7 +4,7 @@ description: Learn about where the financial dimensions originate, the APIs that
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/18/2024
+ms.date: 03/27/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2019-01-16
@@ -61,7 +61,8 @@ The following illustration shows the rule structure.
 
 :::image type="content" source="./media/RuleStructure.png" alt-text="Screenshot of rule structure for Project.":::
 
-Note that the MainAccount dimension doesn't appear in most lists of default dimensions. However, Budgeting is the exception. It explicitly includes the MainAccount dimension in the list of default dimensions.
+> [!NOTE]
+> The MainAccount dimension doesn't appear in most lists of default dimensions. However, Budgeting is the exception. It explicitly includes the MainAccount dimension in the list of default dimensions.
 
 ### API for the list of default dimensions
 
@@ -124,6 +125,7 @@ If you set a financial dimension as **Not fixed**, it uses a default value that 
 
 > [!IMPORTANT]
 > A **Fixed** dimension always overwrites the dimension value at posting time, even if a user manually enters a different value. If a voucher displays different dimensions than the values entered on a journal, or if dimensions appear blank after posting, check whether the main account has fixed dimensions configured. To resolve unexpected overwrites, change the dimension from **Fixed value** to **Not fixed**, remove the default dimension, or set a default value that honors the account structure constraints.
+
 For more information, see [Default and fixed financial dimensions on the main account](../../../finance/general-ledger/Default-dimensions.md#defaultfixed-financial-dimensions-on-the-main-account).
 
 ### Copy vs. merge

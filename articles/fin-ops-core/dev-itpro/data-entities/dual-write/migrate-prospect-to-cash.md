@@ -4,6 +4,8 @@ description: Learn how to migrate Prospect to Cash data from Data Integrator to 
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: upgrade-and-migration-article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
@@ -19,7 +21,7 @@ The Prospect to cash solution available for Data Integrator isn't compatible wit
 
 ## Install the last "dorman" version of the Data Integrator Prospect to cash solution
 
-**P2C Version 15.0.0.2** is the last "dorman" version of the data integrator Prospect to cash solution. You can download it from [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C).
+**P2C Version 15.0.0.2** is the last "dorman" version of the data integrator Prospect to cash solution. You can download it from [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/Dual-write/P2C).
 
 You need to install it manually. After installation, everything remains exactly the same, except the msdynce_AccountNumber index is removed.
 
