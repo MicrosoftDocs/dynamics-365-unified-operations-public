@@ -4,7 +4,7 @@ description: Learn how to configure Microsoft SQL Server Reporting Services (SSR
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 06/19/2024
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-03-21
@@ -23,13 +23,13 @@ This article explains how to configure multiple Microsoft SQL Server Reporting S
 
 ## High availability with Windows failover clusters
 
-This scenario uses Windows failover clusters. Therefore, you will have one active node that receives all requests and one passive node that is idle. If the active node becomes unavailable, the cluster will detect this event, and the passive node will start to receive all network traffic.
+This scenario uses Windows failover clusters. Therefore, you have one active node that receives all requests and one passive node that is idle. If the active node becomes unavailable, the cluster detects this event, and the passive node starts to receive all network traffic.
 
-This article doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](/windows-server/failover-clustering/create-failover-cluster).
+This article doesn't cover the setup of Windows failover clusters. For more information, see [Create a failover cluster](/windows-server/failover-clustering/create-failover-cluster).
 
-After the cluster is set up, you can configure your installation. The examples below will be based on the information displayed in the following illustration.
+After you set up the cluster, you can configure your installation. The following examples are based on the information displayed in the following illustration.
 
-![Example of a Windows failover cluster configuration.](./media/WFC.png)
+:::image type="content" source="./media/WFC.png" alt-text="Screenshot of an example Windows failover cluster configuration.":::
 
 1. Update your configuration file (**ConfigTemplate.xml**):
 
@@ -54,7 +54,7 @@ After the cluster is set up, you can configure your installation. The examples b
 
     1. Update the **SSRSHTTPS** certificate settings.
         
-        This example has been configured using the screenshot shown above. The **Subject** attribute should be set to the client access name. Additionally, for convenience, we have set the name and file name to be the same value. For the **DNSName** we have an entry for each of the preferred owners, as well as the client access name. 
+        This example uses the screenshot shown earlier. Set the **Subject** attribute to the client access name. For convenience, set the name and file name to be the same value. For the **DNSName**, add an entry for each of the preferred owners, as well as the client access name. 
         ```xml
         <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
             <!-- Specify the friendly name of the certificate during import operations. -->
@@ -71,42 +71,42 @@ After the cluster is set up, you can configure your installation. The examples b
         ```
 
     > [!IMPORTANT]
-    > Even if you won't be using the infrastructure scripts that are provided to generate the certificate, you should fill in the certificate information, because other scripts will rely on that information.
+    > Even if you don't use the infrastructure scripts that are provided to generate the certificate, fill in the certificate information, because other scripts rely on that information.
 
 1. Follow the setup guide to complete the setup in your usual way.
 
     > [!IMPORTANT]
-    > If you've already created the Azure Service Fabric cluster, make sure that the nodes are added to it.
+    > If you already created the Azure Service Fabric cluster, make sure that you add the nodes to it.
     >
-    > Rerun the Export-Certificates.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
+    > Rerun the **Export-Certificates.ps1** script, and rerun the **Complete-Prereqs.ps1** script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## High availability with load balancers
 
-In this scenario, a load balancer is configured to distribute requests among the different nodes that are available. These requests include all report generation requests.
+In this scenario, you configure a load balancer to distribute requests among the different nodes that are available. These requests include all report generation requests.
 
-When you set up this configuration, note that you must set up session affinity. The solution that you select **must** support this requirement. The type of session affinity that is required depends on the client. When the Application Object Server (AOS) node makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node.
+When you set up this configuration, you must set up session affinity. The solution that you select **must** support this requirement. The type of session affinity that is required depends on the client. When the Application Object Server (AOS) node makes a request, the load balancer directs all requests for that AOS node to the same SSRS node.
 
 This article doesn't include instructions for setting up a specific software load balancer or hardware load balancer.
 
-Here is a general overview of this scenario:
+Here's a general overview of this scenario:
 
 1. Choose a load balancing strategy or product.
 1. Configure the strategy or product according to your network topology.
-1. Make sure that you've set up client (source IP) affinity.
+1. Make sure that you set up client (source IP) affinity.
 1. Update the **ConfigTemplate.xml** file. Use the previous example as a guide.
 1. Continue to set up the cluster in your usual way.
 
 > [!IMPORTANT]
-> If you've already created the Service Fabric cluster, make sure that the additional nodes are added to it.
+> If you already created the Service Fabric cluster, make sure that you add the extra nodes to it.
 >
-> Rerun the Export-Certificates.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
+> Rerun the **Export-Certificates.ps1** script, and rerun the **Complete-Prereqs.ps1** script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## Deployed environments where the base deployment is earlier than Platform update 41
 
 > [!NOTE]
 > This configuration is supported only for Platform update 41 and later deployments.
 
-If you want to enable high availability for the SSRS nodes in existing environments, you can use a predeployment script. For more information about predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
+If you want to enable high availability for the SSRS nodes in existing environments, use a predeployment script. For more information about predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
 
 ### Predeployment script
 
@@ -117,12 +117,12 @@ Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05F
 ```
 
 > [!NOTE]
-> These example values have been filled out according to the values used in the **ConfigTemplate.xml** file from the [High availability with Windows failover clusters](#high-availability-with-windows-failover-clusters) section.
+> These example values are based on the values used in the **ConfigTemplate.xml** file from the [High availability with Windows failover clusters](#high-availability-with-windows-failover-clusters) section.
 
 #### Configure-SSRSHA.ps1 script
 
 > [!NOTE]
-> This script has been updated to work with Application version 10.0.32, but also works with older Application versions.
+> This script works with Application version 10.0.32 and also works with older Application versions.
 
 ```powershell
 param (
@@ -203,3 +203,5 @@ $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 
 Write-Host "Successfully updated the configuration for SSRS HA."
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

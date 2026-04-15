@@ -4,6 +4,9 @@ description: Access some tips for troubleshooting issues that involve service au
 author: pnghub
 ms.author: johnmichalak
 ms.topic: troubleshooting-general
+ms.custom: 
+  - bap-template
+  - sfi-image-nochange
 ms.date: 01/20/2026
 ms.reviewer: johnmichalak
 audience: Developer
@@ -12,7 +15,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: sfi-image-nochange
+
 ---
 
 # Troubleshoot service authentication problems

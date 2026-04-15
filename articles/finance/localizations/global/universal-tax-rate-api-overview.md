@@ -4,7 +4,7 @@ description: Learn about the overall scope of the Universal Tax Rate API feature
 author: Kai-Cloud
 ms.author: kailiang
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 03/20/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -53,6 +53,7 @@ We recommend that you import and set up your Tax calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 |---|---|
+| 10.0.48 | Tax Calculation Data Model for ISV Integration 50.78.13 |
 | 10.0.39 | Tax Calculation Data Model for ISV Integration 40.65.5 |
 
 ## Enable a tax solution provider

@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-04-30
@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 36
 ms.service: dynamics-365-op
 ---
 
-# Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
+# Configure batch-only and interactive-only AOS nodes in on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
@@ -23,20 +23,20 @@ ms.service: dynamics-365-op
 
 This article explains how to configure your environment so that you can deploy batch-only and interactive-only Application Object Server (AOS) nodes.
 
-To make this feature available, Microsoft has introduced two new Microsoft Azure Service Fabric node types. For batch-only AOS nodes, the new node type is **BatchOnlyAOSNodeType**. For interactive-only AOS nodes, the new node type is **InteractiveOnlyAOSNodeType**.
+To make this feature available, Microsoft introduced two new Microsoft Azure Service Fabric node types. For batch-only AOS nodes, the new node type is **BatchOnlyAOSNodeType**. For interactive-only AOS nodes, the new node type is **InteractiveOnlyAOSNodeType**.
 
 > [!NOTE]
-> The traditional deployment option, where an AOS node is interactive and is running batch jobs, is still supported and isn't affected by these changes.
+> The traditional deployment option, where an AOS node is interactive and runs batch jobs, is still supported and isn't affected by these changes.
 
 ## Sizing
 
-For sandbox environments, we recommend that you have at least two nodes of each type.
+For sandbox environments, use at least two nodes of each type.
 
-For production environments, there should be at least three nodes of each type.
+For production environments, use at least three nodes of each type.
 
 ## New deployments
 
-1. When you're describing your configuration as explained in [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#describeconfig), edit the **configtemplate.xml** file to enable the new node types. When you are done, the template should resemble the following example.
+1. When describing your configuration as explained in [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#describeconfig), edit the **configtemplate.xml** file to enable the new node types. When you finish, the template should resemble the following example.
 
     ```xml
     <NodeType name="AOSNodeType" primary="false" namePrefix="AOS" purpose="AOS" disabled="true">
@@ -62,11 +62,11 @@ For production environments, there should be at least three nodes of each type.
     </NodeType>
     ```
 
-2. Follow the remaining instructions in [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#describeconfig) in the usual way.
+1. Follow the remaining instructions in [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#describeconfig).
 
 ## Existing deployments
 
-1. Follow the instructions in [Remove a node](.\onprem-add-remove-node.md#remove-a-node) to remove all the nodes that you must remove.
+1. Follow the instructions in [Remove a node](.\onprem-add-remove-node.md#remove-a-node) to remove all the nodes that you need to remove.
 1. Follow the instructions in [Add a node](.\onprem-add-remove-node.md#add-a-node) to add the new nodes.
 1. After you finish adding all the nodes, in Dynamics 365 Lifecycle Services, select **Update Settings** without changing any settings, to trigger an environment refresh. Alternatively, you can apply the latest hotfix.
 

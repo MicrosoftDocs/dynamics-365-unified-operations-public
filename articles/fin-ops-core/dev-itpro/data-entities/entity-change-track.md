@@ -4,6 +4,8 @@ description: Learn about using change tracking to enable incremental export of d
 author: Milindav2
 ms.author: twheeloc
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 ms.reviewer: twheeloc
 audience: IT Pro, Developer

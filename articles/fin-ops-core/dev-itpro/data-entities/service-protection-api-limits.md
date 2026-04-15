@@ -4,6 +4,8 @@ description: Learn about limits for service protection application programming i
 author: jaredha
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/20/2026
 audience: Developer
 ms.reviewer: johnmichalak

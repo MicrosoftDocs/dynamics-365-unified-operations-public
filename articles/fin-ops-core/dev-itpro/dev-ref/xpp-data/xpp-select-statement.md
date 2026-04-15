@@ -18,15 +18,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The **select** statement fetches data from the database.
 
-+ All **select** statements use a table variable to fetch records. The type of this variable is a Table that is defined in the Application Object Tree. You must declare this variable before running a **select** statement.
-+ The **select** statement fetches only one record or field. To fetch or traverse multiple records, use the **next** statement or the **[while select](xpp-while-select.md)** statement.
+- All **select** statements use a table variable to fetch records. The type of this variable is a Table that is defined in the Application Object Tree. You must declare this variable before running a **select** statement.
+- The **select** statement fetches only one record or field. To fetch or traverse multiple records, use the **next** statement or the **[while select](xpp-while-select.md)** statement.
 
-  + The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
-  + It's more appropriate to use a **while select** statement to traverse multiple records.
+  - The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option.
+  - It's more appropriate to use a **while select** statement to traverse multiple records.
 
-+ A **select** statement returns its results in a table buffer variable.
-+ If you use a field list in the **select** statement, only those fields are available in the table variable. All other fields have their default values.
-+ Each table has a set of predefined fields. One of these fields, the RecId field, contains a value that's unique to each record in that table. If this value is **0**, no record was selected from the database.
+- A **select** statement returns its results in a table buffer variable.
+- If you use a field list in the **select** statement, only those fields are available in the table variable. All other fields have their default values.
+- Each table has a set of predefined fields. One of these fields, the RecId field, contains a value that's unique to each record in that table. If this value is **0**, no record was selected from the database.
 
 ## Select example
 
@@ -98,10 +98,10 @@ For more examples of data deletion, see [Delete data](xpp-select.md).
 
 The syntax uses the following symbols:
 
-+ **\[\]** – Brackets enclose an optional element.
-+ **{}** – Braces enclose an element that you can include zero or more times.
-+ **\+** – A plus sign indicates an element that you can include one or more times.
-+ **|** – A bar indicates options.
+- **\[\]** – Brackets enclose an optional element.
+- **{}** – Braces enclose an element that you can include zero or more times.
+- **\+** – A plus sign indicates an element that you can include one or more times.
+- **|** – A bar indicates options.
 
 | Symbol                | &nbsp;  | Expression |
 |-----------------------|---|------------|
@@ -134,10 +134,10 @@ The syntax uses the following symbols:
 
 The aggregate functions perform calculations on a single field over a group of records.
 
-+ The result is returned in the field that you perform the aggregate function over.
-+ The fields in the results are the aggregate values and the fields in the **group by** clause.
-+ You can count, average, or sum only integer and real fields.
-+ In cases where the **sum** function returns **null**, no rows are returned.
+- The result is returned in the field that you perform the aggregate function over.
+- The fields in the results are the aggregate values and the fields in the **group by** clause.
+- You can count, average, or sum only integer and real fields.
+- In cases where the **sum** function returns **null**, no rows are returned.
 
 ### Differences between X++ and SQL
 

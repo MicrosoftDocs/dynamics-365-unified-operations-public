@@ -4,7 +4,9 @@ description: Learn about using the configuration data packages for the July 2017
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/20/2017
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,42 +18,45 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
+You can get configuration data packages as process data packages from Microsoft Dynamics Lifecycle Services. These data packages can help improve the repeatability of implementations and accelerate the configuration.
 
-Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration.
-
-Data packages contain configuration entity spreadsheets. These entity spreadsheets contain best practice data that you can use to create an initial golden build. The data entities in the data packages are also sequenced appropriately to help guarantee a successful single-click import of the data. 
+Data packages contain configuration entity spreadsheets. These entity spreadsheets contain best practice data that you can use to create an initial golden build. The data entities in the data packages are also sequenced appropriately to help guarantee a successful single-click import of the data.
 
 The entity spreadsheets include three types of data:
 
-- **Business data** – The spreadsheet contains standard business data for a mid-sized trade or retail company. This data combines best practices and business standards that can be used as a starting point for your configuration.
-- **Sample data** – The spreadsheet contains data that can be used as an example for business-specific data. This data can be imported and used as an example, but it must be changed for individual business practices.
-- **No data** – The spreadsheet doesn't contain any data. Several areas of the product are unique to each business and its business practices. These areas must be configured specifically for the organization. These spreadsheets should be reviewed and updated for the organization as appropriate.
+- **Business data** – The spreadsheet contains standard business data for a mid-sized trade or retail company. This data combines best practices and business standards that you can use as a starting point for your configuration.
+- **Sample data** – The spreadsheet contains data that you can use as an example for business-specific data. You can import and use this data as an example, but you must change it for individual business practices.
+- **No data** – The spreadsheet doesn't contain any data. Several areas of the product are unique to each business and its business practices. You must configure these areas specifically for the organization. Review and update these spreadsheets as appropriate for the organization.
 
-For more information about the type of data that is included in each entity spreadsheet in the data packages see the [Data packages](#data-packages-system) section of this article. You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they have been supplied and then update your data in the system.
+For more information about the type of data that each entity spreadsheet in the data packages includes, see the [Data packages](#data-packages-system) section of this article. You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they are supplied and then update your data in the system.
 
 ## Using configuration data packages
-You can access configuration data packages from LCS. You can either apply them to an LCS environment, or download them so that you can manually import them.
 
-1. Open your LCS project, and open the Asset library.
-2. In the list of asset types, select **Process data package**.
-3. Click **Import**.
-4. Select the configuration data package.
-5. Click **Pick**.
+You can access configuration data packages from Lifecycle Services. You can either apply them to a Lifecycle Services environment, or download them so that you can manually import them.
 
-At this point, you can use the **Consume** function to apply the process data package to an LCS environment. 
+1. Open your Lifecycle Services project, and open the Asset library.
+1. In the list of asset types, select **Process data package**.
+1. Select **Import**.
+1. Select the configuration data package.
+1. Select **Pick**.
 
-You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies or legal entities overview](copy-configuration.md).
+At this point, use the **Consume** function to apply the process data package to a Lifecycle Services environment.
+
+You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace to import the data packages from Lifecycle Services. For more information about how to import and export configurations, see [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 
 ## Special considerations
+
 ### System setup
-The System data package must be imported before any other data package. By default, the System data package creates a new legal entity that is named **ST01**. The data packages for the module areas depend on this legal entity.
+
+Import the System data package before any other data package. By default, the System data package creates a new legal entity named **ST01**. The data packages for the module areas depend on this legal entity.
 
 ### General ledger
-A generic chart of accounts is included in the configuration data packages. When this data is used as it's defined in the Main account entity spreadsheet, posting profiles across the system are filled with default posting data. If you change the main accounts that are used for the chart of accounts, you must also update the individual posting profiles and posting accounts for each area.
+
+The configuration data packages include a generic chart of accounts. When you use this data as it's defined in the Main account entity spreadsheet, you fill posting profiles across the system with default posting data. If you change the main accounts that you use for the chart of accounts, you must also update the individual posting profiles and posting accounts for each area.
 
 ## Data packages: System
 
-### 010 – System Setup
+### 010 – System setup
 
 |                 &nbsp;                  | Spreadsheet content |    &nbsp;       |   &nbsp;    |
 |-----------------------------------------|---------------------|-----------------|-------------|
@@ -92,7 +97,7 @@ A generic chart of accounts is included in the configuration data packages. When
 | User groups                             |                     |                 | X           |
 | User information                        |                     |                 | X           |
 
-## Data packages: Financials 
+## Data packages: Financials
 
 ### 020 – GL Shared
 
@@ -310,6 +315,5 @@ A generic chart of accounts is included in the configuration data packages. When
 | Terms of delivery                                       |                     |                 | X           |
 | Terms of payment                                        |                     |                 | X           |
 | Total discount customer groups                          |                     |                 | X           |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

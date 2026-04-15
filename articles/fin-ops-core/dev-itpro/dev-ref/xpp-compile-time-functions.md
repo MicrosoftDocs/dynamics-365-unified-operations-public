@@ -24,15 +24,16 @@ Compile-time functions are executed early during the compilation of X++ code. Th
 
 Some common compile time functions are as follows:
 
--   `tableStr` - Verifies that the name provided designates a table.
--   `classStr` – Verifies that a class of that name exists. 
+- `tableStr` - Verifies that the name provided designates a table.
+- `classStr` – Verifies that a class of that name exists.
 
 Intrinsic functions are special syntactic forms in X++. The arguments can be provided as strings enclosed in quotes, or by simply listing the arguments. The following references:
 
 ```xpp
 str s = classStr(MyClass); // No quotes
 ```
-and 
+
+and
 
 ```xpp
 str s = classStr("MyClass"); // class name in quotes.
@@ -46,6 +47,7 @@ are semantically identical. In the descriptions below we'll simply show the argu
 ### Functions
 
 ## attributeStr
+
 Validates that the specified attribute class exists in the Application Explorer; if not, a compiler error occurs.
 
 ### Syntax
@@ -69,11 +71,13 @@ The name of the attribute.
 For more information about compile-time functions, see [Overview](#overview).
 
 ### Example
+
 ```xpp
 str s = attributeStr(AifDocumentOperationAttribute);
 ```
 
 ## classStr
+
 Retrieves the name of a class as a string.
 
 ### Syntax
@@ -103,6 +107,7 @@ s = classStr(Global); // returns "Global", since there is a class by that name.
 ```
 
 ## configurationKeyStr
+
 Retrieves the name of a configuration key as a string.
 
 ### Syntax
@@ -132,6 +137,7 @@ s = configurationKeyStr(AIF); // Returns "AIF" if there is a configuration key o
 ```
 
 ## dataEntityDataSourceStr
+
 Retrieves the name of a data source of a data entity.
 
 ### Syntax
@@ -156,6 +162,7 @@ The name of the data source.
 For more information about compile-time functions, see [Overview](#overview).
 
 ## delegateStr
+
 Returns the name of the delegate.
 
 ### Syntax
@@ -180,6 +187,7 @@ The name of the delegate.
 For more information about compile-time functions, see [Overview](#overview).
 
 ## dimensionHierarchyLevelStr
+
 Returns the name of the dimension hierarchy level.
 
 ### Syntax
@@ -202,8 +210,8 @@ The name of the dimension hierarchy level.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## dimensionHierarchyStr
+
 Returns the name of the dimension hierarchy.
 
 ### Syntax
@@ -226,9 +234,8 @@ The name of the dimension hierarchy.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## dimensionReferenceStr
+
 Returns the name of the dimension reference.
 
 ### Syntax
@@ -251,9 +258,8 @@ The name of the dimension reference.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## dutyStr
+
 Retrieves a string that represents the name of the specified security duty.
 
 ### Syntax
@@ -276,9 +282,8 @@ The name of the security duty in a string.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## enumCnt
+
 Retrieves the number of elements in the specified enumeration type.
 
 ### Syntax
@@ -308,6 +313,7 @@ var cnt = enumCnt(NoYes); // Returns 2, as the two elements in the NoYes enum ar
 ```
 
 ## enumLiteralStr
+
 Indicates whether the specified string is an element of the specified enumeration type.
 
 ### Syntax
@@ -338,6 +344,7 @@ var literal = enumLiteralStr(ABCEnum, valueInABCEnum);
 ```
 
 ## enumStr
+
 Retrieves the name of an enumeration as a string.
 
 ### Syntax
@@ -366,8 +373,8 @@ For more information about compile-time functions, see [Overview](#overview).
 str s = enumStr(ABC); // Returns "ABC" is an enum exists by that name. Otherwise an error is diagnosed.
 ```
 
-
 ## extendedTypeStr
+
 Retrieves the name of an extended data type as a string.
 
 ### Syntax
@@ -399,6 +406,7 @@ var edt = extendedTypeStr(AccountName);
 ```
 
 ## fieldPName
+
 Retrieves the label of the specified field.
 
 ### Syntax
@@ -441,6 +449,7 @@ Cash discount is the label of the CashDisc field.
 ```
 
 ## fieldStr
+
 Retrieves the field name of the specified field.
 
 ### Syntax
@@ -481,6 +490,7 @@ CashDisc is the specified field.
 ```
 
 ## formControlStr
+
 Causes the X++ compiler to check whether the control exists on the form, and to replace the function call with a string of the valid control name.
 
 ### Syntax
@@ -504,8 +514,8 @@ A string that contains the name of the control as it appears in the Application 
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## formDataFieldStr
+
 Returns the name of a data field in a form.
 
 ### Syntax
@@ -539,6 +549,7 @@ str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
 ```
 
 ## formDataSourceStr
+
 Returns the name of a data source in a form.
 
 ### Syntax
@@ -571,6 +582,7 @@ str b = formDataSourceStr(FMVehicle, FMModelRate);
 ```
 
 ## formMethodStr
+
 Returns the name of a method of a form.
 
 ### Syntax
@@ -603,6 +615,7 @@ str c = formMethodStr(Batch,showDialog);
 ```
 
 ## formStr
+
 Retrieves the name of a form.
 
 ### Syntax
@@ -635,6 +648,7 @@ var s = formStr(InventDim);
 ```
 
 ## identifierStr
+
 Converts the specified identifier to a string.
 
 ### Syntax
@@ -674,6 +688,7 @@ Message (09:19:49 am)
 ```
 
 ## indexStr
+
 Converts the specified index to a string.
 
 ### Syntax
@@ -707,6 +722,7 @@ var idx = indexStr(MyTable, SSNIndex);
 ```
 
 ## literalStr
+
 Validates that the specified string can be a literal string; if not, a compiler error occurs.
 
 ### Syntax
@@ -726,6 +742,7 @@ str literalStr(literal)
 The literal string if valid.
 
 ### Remarks
+
 This function is sometimes used to return a label string without the lookup of the label taking place, as shown in the example below.
 For more information about compile-time functions, see [Overview](#overview).
 
@@ -741,6 +758,7 @@ var labelStr = literalStr("@SYS12345");
 ```
 
 ## maxDate
+
 Retrieves the maximum value allowed for a variable of type date.
 
 ### Syntax
@@ -769,6 +787,7 @@ static void maxDateExample(Args _arg)
 ```
 
 ## maxInt
+
 Retrieves the maximum signed value that can be stored in an **int** type.
 
 ### Syntax
@@ -796,6 +815,7 @@ static void maxIntExample(Args _arg)
 ```
 
 ## measurementStr
+
 Returns the name of a measurement.
 
 ### Syntax
@@ -818,8 +838,8 @@ The name of the measurement.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## measureStr
+
 Returns the name of a measure.
 
 ### Syntax
@@ -842,9 +862,9 @@ The name of the measure.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## menuItemActionStr
-Returns the value of an Action menu item. 
+
+Returns the value of an Action menu item.
 
 ### Syntax
 
@@ -874,7 +894,8 @@ var s1 = menuItemActionStr(AssetCopy);
 ```
 
 ## menuItemDisplayStr
-Returns the value of a Display menu item. 
+
+Returns the value of a Display menu item.
 
 ### Syntax
 
@@ -904,7 +925,8 @@ var s2 = menuItemDisplayStr(Address);
 ```
 
 ## menuItemOutputStr
-Returns the value of an Output menu item. 
+
+Returns the value of an Output menu item.
 
 ### Syntax
 
@@ -934,7 +956,8 @@ var s = menuItemOutputStr(AssetBarcode);
 ```
 
 ## menuStr
-Returns the name value of a menu. 
+
+Returns the name value of a menu.
 
 ### Syntax
 
@@ -964,6 +987,7 @@ var s = menuStr(Administration);
 ```
 
 ## methodStr
+
 Returns the name of a class instance method.
 
 ### Syntax
@@ -984,6 +1008,7 @@ str methodStr(class, method)
 The name of the specified instance method, if it's valid.
 
 ### Remarks
+
 This function diagnoses errors for methods that are static. Use staticMethodStr for static methods.
 For more information about compile-time functions, see [Overview](#overview).
 
@@ -996,6 +1021,7 @@ var s = methodStr(SysHelpInitTimeOut, timeout);
 ```
 
 ## minInt
+
 Retrieves the minimum signed value that can be stored in an **int** type.
 
 ### Syntax
@@ -1024,6 +1050,7 @@ static void minIntExample(Args _arg)
 ```
 
 ## privilegeStr
+
 Returns the name of the privilege.
 
 ### Syntax
@@ -1046,8 +1073,8 @@ The name of the privilege.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## queryDatasourceStr
+
 Returns the name of a datasource on a query.
 
 ### Syntax
@@ -1071,9 +1098,8 @@ A string that contains the name of the data source.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## queryMethodStr
+
 Returns the name of a method of a query.
 
 ### Syntax
@@ -1097,9 +1123,8 @@ The name of a method in a query.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## queryStr
+
 Retrieves a string that represents an existing query.
 
 ### Syntax
@@ -1130,6 +1155,7 @@ str myText = queryStr(AssetTable);
 ```
 
 ## reportStr
+
 Retrieves a string that represents the name of the specified report.
 
 ### Syntax
@@ -1160,6 +1186,7 @@ var r = reportStr(AssetAddition);
 ```
 
 ## resourceStr
+
 Validates that the specified resource exists in the Application Explorer; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1190,6 +1217,7 @@ var r = resourceStr(StyleSheet_Help_Axapta);
 ```
 
 ## roleStr
+
 Retrieves a string that represents the name of the specified security role.
 
 ### Syntax
@@ -1212,9 +1240,8 @@ The name of the security role in a string.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## ssrsReportStr
+
 Retrieves a string that represents the name of the specified SSRS report. Use this function when you want to specify the report that should be run by a report controller class.
 
 ### Syntax
@@ -1258,6 +1285,7 @@ public static void main(Args _args)
 ```
 
 ## staticDelegateStr
+
 Returns the name of a static delegate.
 
 ### Syntax
@@ -1278,11 +1306,11 @@ str staticDelegateStr(class, delegate)
 The name of the delegate.
 
 ### Remarks
+
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## staticMethodStr
+
 Validates that the specified static method exists in the specified class; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1303,11 +1331,12 @@ str staticMethodStr(class, int method)
 The name of the static method, if it's valid.
 
 ### Remarks
+
 This function fails if the designated method isn't static. Use the methodStr function if you wish to return the names of instance methods.
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## tableCollectionStr
+
 Validates that the specified table collection exists in the Application Explorer; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1330,9 +1359,8 @@ The name of the specified table collection, if it's valid.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## tableFieldGroupStr
+
 Retrieves the name of a field group as a string.
 
 ### Syntax
@@ -1367,6 +1395,7 @@ var fg = tableFieldGroupStr(AccountingDistribution, Editing);
 ```
 
 ## tableMethodStr
+
 Validates that the specified instance method exists in the specified table; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1390,8 +1419,8 @@ The name of the instance method, if it's valid.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
 ## tablePName
+
 Retrieves a string that contains the printable name of the specified table.
 
 ### Syntax
@@ -1431,6 +1460,7 @@ Customers is the label of the CustTable table.
 ```
 
 ## tableStaticMethodStr
+
 Validates that the specified static method exists in the specified table; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1454,9 +1484,8 @@ The name of the specified static method.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## tableStr
+
 Retrieves a string that contains the name the specified table.
 
 ### Syntax
@@ -1487,6 +1516,7 @@ var t = tableStr(CustTable);
 ```
 
 ## tileStr
+
 Retrieves a string that represents the name of the specified tile.
 
 ### Syntax
@@ -1509,9 +1539,8 @@ The name of the tile in a string.
 
 For more information about compile-time functions, see [Overview](#overview).
 
-
-
 ## varStr
+
 Retrieves a string that contains the name of the specified variable.
 
 ### Syntax
@@ -1531,6 +1560,7 @@ str varStr(name)
 A string that contains the name of an item in the scope of the call.
 
 ### Remarks
+
 The name must match a variable defined in the method in which the call occurs, or a field in the surrounding scope.
 For more information about compile-time functions, see [Overview](#overview).
 
@@ -1552,6 +1582,7 @@ myVariable is the variable name.
 ```
 
 ## webActionItemStr
+
 Validates that the specified web action item exists in the Application Explorer; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1582,6 +1613,7 @@ str s = webActionItemStr(EPFlushData);
 ```
 
 ## webDisplayContentItemStr
+
 Validates that the specified web display content item exists in the Application Explorer; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1612,6 +1644,7 @@ str s = webDisplayContentItemStr(EPAdmin);
 ```
 
 ## workflowApprovalStr
+
 Retrieves the name of a workflow approval in the Application Object Tree (Application Explorer) as a string.
 
 ### Syntax
@@ -1642,6 +1675,7 @@ str s = workflowapprovalstr(MyWorkflowApproval);
 ```
 
 ## workflowCategoryStr
+
 Retrieves the name of a workflow category in the Application Object Tree (Application Explorer) as a string.
 
 ### Syntax
@@ -1672,6 +1706,7 @@ str s = workflowcategorystr(MyWorkflowCategory);
 ```
 
 ## workflowTaskStr
+
 Retrieves the name of a workflow task in the Application Object Tree (Application Explorer) as a string.
 
 ### Syntax
@@ -1702,6 +1737,7 @@ str s = workflowtaskstr(MyWorkflowTask);
 ```
 
 ## workflowTypeStr
+
 Validates that the specified workflow type exists in the Application Explorer; if it doesn't, a compiler error occurs.
 
 ### Syntax
@@ -1729,6 +1765,5 @@ For more information about compile-time functions, see [Overview](#overview).
 ```xpp
 // Returns 'BudgetAccountEntryType' if a workflow by that name is defined.
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

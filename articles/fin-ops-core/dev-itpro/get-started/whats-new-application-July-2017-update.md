@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes features that are new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
@@ -34,7 +34,7 @@ Users and developers see an updated product name ("Microsoft Dynamics 365 Financ
 
 Accounts payable provides two default check format templates. You create these check templates by using the Excel capabilities of the Electronic reporting tool. These check templates are compatible with US check formats.
 
-For more information, see [Electronic reporting sample check format](../../../finance/accounts-payable/electronic-reporting-sample-vendor-checks.md).
+For more information, see [Electronic reporting sample check format](/dynamics365/finance/accounts-payable/electronic-reporting-sample-vendor-checks).
 
 ### Budget control data maintenance
 
@@ -50,23 +50,23 @@ The Actual vs budget Power BI content provides visibility into your budget varia
 - Main account description
 - Fiscal period
 
-For more information, see [Actual vs budget Power BI content](../analytics/ledger-budgets-power-bi.md).
+For more information, see [Actual vs budget Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi).
 
 ### CFO Overview workspace
 
 The CFO or accounting manager can view the full state of the business on the CFO Overview workspace. The workspace contains common KPIs and uses embedded analytics to see financials, purchasing, sales, and cash flow data.
 
-For more information, see [CFO overview Power BI content](../analytics/CFO-power-bi.md).
+For more information, see [CFO overview Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/CFO-power-bi).
 
 ### Data validation
 
 The **Data validation checklist** workspace lets you track data validation processes across companies, areas, and people. Use the checklist during a new implementation, after an upgrade, or after a migration. Depending on your view of the **Data validation checklist** workspace, you see either all tasks and statuses for a data validation project.
 
-For more information, see [Data validation checklist workspace](../../fin-ops/user-interface/data-validation-workspace.md).
+For more information, see [Data validation checklist workspace](/dynamics365/fin-ops-core/fin-ops/user-interface/data-validation-workspace).
 
 ### Delete a main account and dimension value
 
-As companies go live, you might find main accounts or dimension values that you no longer need. To understand when you can remove a financial dimension, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
+As companies go live, you might find main accounts or dimension values that you no longer need. To understand when you can remove a financial dimension, see [Modifying and deleting financial dimensions](/dynamics365/finance/general-ledger/modifying-deleting-financial-dimensions).
 
 ### Display payment information for an expense
 
@@ -183,7 +183,7 @@ You can select what financial dimensions are relevant for a report in the Financ
 
 ### Financial dimensions in Power BI
 
-The financial dimensions in the Financial performance content pack are now available for analyzing financial data. For more information, see [Financial performance PowerBI.com solution](../analytics/financial-performance-power-bi-content-pack.md).
+The financial dimensions in the Financial performance content pack are now available for analyzing financial data. For more information, see [Financial performance PowerBI.com solution](/dynamics365/fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack).
 
 ### Financial report generation
 
@@ -201,13 +201,13 @@ This feature allows you to map level 3 credit card data (itemizations) to subcat
 
 New mobile capabilities allow you to review and approve vendor invoices that you submit through workflow by using a mobile device.
 
-For more information, see [Mobile invoice approvals](../../../finance/accounts-payable/mobile-invoice-approvals.md).
+For more information, see [Mobile invoice approvals](/dynamics365/finance/accounts-payable/mobile-invoice-approvals).
 
 ### Configuration data packages
 
-You can get configuration data packages as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 Finance and Operations.
+You can get configuration data packages as process data packages from Lifecycle Services for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 Finance and Operations.
 
-The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial 'golden' build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](../data-entities/configuration-data-packages.md).
+The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial 'golden' build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](/dynamics365/fin-ops-core/dev-itpro/data-entities/configuration-data-packages).
 
 
 ### Save Financial reports to SharePoint
@@ -238,7 +238,7 @@ The following components make up the solution footprint of vendor invoice automa
 - Exception processing for invoices. This feature provides a business user-friendly UI to manage invoices that failed to get created.
 - A side-by-side attachment viewer in invoices in exception handling forms, pending invoices, and invoice journal inquiries.
 
-For more information, see [Vendor invoice automation](../../../finance/accounts-payable/vendor-invoice-automation.md).
+For more information, see [Vendor invoice automation](/dynamics365/finance/accounts-payable/vendor-invoice-automation).
 
 ### View detailed workflow history for an expense report
 
@@ -250,7 +250,7 @@ The workflow history for an expense report can be complicated depending on how m
 
 This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 Finance and Operations. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs.
 
-For more information, see [Cost accounting overview](../../../finance/cost-accounting/cost-accounting-home-page.md).
+For more information, see [Cost accounting overview](/dynamics365/finance/cost-accounting/cost-accounting-home-page).
 
 ### Cost accounting allocation bases
 
@@ -262,13 +262,13 @@ The following allocation base types are available:
 - **Formula allocation base** – A formula can include one or more allocation bases of any type and can include user-defined constants. The following operators are supported: + , - , \* , = , \< , \> , ( , )
 - **Hierarchy allocation bases** – Combine an allocation base of any type with a cost object dimension hierarchy node to limit the range.
 
-For more information, see [Allocation bases](../../../finance/cost-accounting/allocation-bases.md).
+For more information, see [Allocation bases](/dynamics365/finance/cost-accounting/allocation-bases).
 
 ### Cost accounting dimension hierarchies
 
 Cost accounting dimension hierarchies provide a way for you to move a hierarchy node to a new parent node in the hierarchy or perform a simple re-order of nodes within a parent node by using the **Move up** or **Move down** buttons. This feature significantly reduces the amount of time spent maintaining dimension hierarchies.
 
-For more information, see [Dimension hierarchies](../../../finance/cost-accounting/dimension-hierarchy.md).
+For more information, see [Dimension hierarchies](/dynamics365/finance/cost-accounting/dimension-hierarchy).
 
 ### Cost accounting Get started wizard
 
@@ -306,7 +306,7 @@ The following enhancements are implemented to the GDPdU\GoBD sample electronic r
 - Encoding of index.xml file is updated.
 - DTD file attachment embedded in the format configuration.
 
-For more information, see [German audit file (GDPdU/GoBD)](../../../finance/localizations/germany/emea-deu-gdpdu-audit-data-export.md).
+For more information, see [German audit file (GDPdU/GoBD)](/dynamics365/finance/localizations/germany/emea-deu-gdpdu-audit-data-export).
 
 ### Global coverage – Configurable Electronic Reporting
 
@@ -334,7 +334,7 @@ The system uses information about prerequisites to automatically recognize and i
 
 **Improved design of Excel-based reports** – We improved ER Operations designer to better support Excel-based reports. With just a few clicks, you can now synchronize the structure of earlier designed and already available ER format with the content of the updated Excel document that is used as a template for generating electronic documents. This capability allows customers to quickly adopt new requirements for recipients waiting for generated by ER reports in Office formats.
 
-**Extended ER parameters** – We introduced a new parameter to configure the number of parallel threads for importing ER configurations from the Lifecycle Services (LCS) asset library. This capability allows customers to improve communications with the LCS service and improve performance.
+**Extended ER parameters** – We introduced a new parameter to configure the number of parallel threads for importing ER configurations from the Lifecycle Services asset library. This capability allows customers to improve communications with the Lifecycle Services service and improve performance.
 
 **JSON format support** – You can now configure a single ER report for generation of output in JSON format. This capability allows customers to easily satisfy requirements for specific recipients like web-based services.
 
@@ -350,13 +350,13 @@ This feature enables ISVs and partners to create a new language in Dynamics 365 
 
 Regulatory retail features for Sweden support local requirements for cash registers. These features include general requirements for the continuous use of cash registers and an example of integration of Retail POS with a fiscal device (control unit).
 
-For more information, see [Cash registers for Sweden](../../../commerce/localizations/sweden/emea-swe-cash-registers.md).
+For more information, see [Cash registers for Sweden](/dynamics365/commerce/localizations/sweden/emea-swe-cash-registers).
 
 ### Reverse charge functionality for European countries and regions
 
 You can configure reverse charge applicability rules for each document type, such as purchase and sales orders, vendor invoices, and free text invoices. You can also set up a reverse charge group that combines items, item groups, and purchase and sales categories. The applicability rules are date effective. You can mark individual sales tax codes in sales tax groups as applicable for reverse charge. The sales invoice report is adjusted to show details of the applied reverse charge. This functionality is available to all European countries and regions.
 
-For more information, see [Reverse charges](../../../finance/localizations/global/emea-reverse-charge.md).
+For more information, see [Reverse charges](/dynamics365/finance/localizations/global/emea-reverse-charge).
 
 ### Substitution and adjustment invoices for Thailand
 
@@ -423,7 +423,7 @@ The company directory mobile workspace provides the following features:
 - View public information.
 - Call, text, or email individuals from the directory.
 
-For more information, see [Company directory mobile workspace](../../fin-ops/mobile-apps/company-directory-mobile-workspace.md).
+For more information, see [Company directory mobile workspace](/dynamics365/fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace).
 
 The My team mobile workspace provides the following features:
 
@@ -432,7 +432,7 @@ The My team mobile workspace provides the following features:
 - View key information for employees and contractors.
 - Send praise.
 
-For more information, see [My team mobile workspace](../../fin-ops/mobile-apps/manager-self-service-mobile-workspace.md).
+For more information, see [My team mobile workspace](/dynamics365/fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace).
 
 ## Intelligence
 
@@ -461,7 +461,7 @@ Analytics and insights provide the following data and visualizations:
 - Recruiting costs
 - Applicant status
 
-For more information, see [Power BI content home page](../analytics/power-bi-home-page.md).
+For more information, see [Power BI content home page](/dynamics365/fin-ops-core/dev-itpro/analytics/power-bi-home-page).
 
 ## Cash flow forecasting Power BI
 
@@ -469,7 +469,7 @@ Managing cash flow effectively is a key function of the finance division in your
 
 You can analyze your future cash inflow and outflows, both at a high-level summary and at detailed levels. You can analyze cash inflows by legal entity, bank account, and currency to get a better understanding of surpluses and shortfalls. Overall, you can get a temporal view of gaps and address them proactively.
 
-For more information, see [Cash flow forecasting](../../../finance/cash-bank-management/cash-flow-forecasting.md).
+For more information, see [Cash flow forecasting](/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
 
 ### Cost accounting Power BI reports
 
@@ -479,7 +479,7 @@ These reports allow you to view performance at any organizational or individual 
 
 You can also combine statistical elements and cost elements by cost objects.
 
-For more information, see [Cost accounting analysis Power BI content](../analytics/cost-accounting-analysis-content-pack.md).
+For more information, see [Cost accounting analysis Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack).
 
 ### Credit and collections management Power BI
 
@@ -487,7 +487,7 @@ The Credit and collections management Power BI content pack provides deep insig
 
 You can use this tool to provide rich insights to your account and sales managers on customers' collection performance, to enable them to identify valuable customers. You can encourage your customer-facing staff to seek valuable partnerships backed by data, and encourage sales staff to promote products and services with the right combination of pricing and terms. Power BI reports help you to become a master of managing by exception. You can identify customers over or nearing their credit limits and understand the likelihood of payment delays and past due payments, so that you can intervene before it's too late. Reports can be used to detect payments and customer groups before they reach past due stage, so you can understand probabilities of past due payments and define alert conditions to notify you in case of exceptions. Comprehensive reporting and dashboard capabilities built into Power BI mean that your collections and account management teams can proactively manage their customers. 
 
-For more information, see [Credit and collections management Power BI content](../../../finance/accounts-receivable/credit-collections-power-bi.md).
+For more information, see [Credit and collections management Power BI content](/dynamics365/finance/accounts-receivable/credit-collections-power-bi).
 
 ### Embedded Power BI reports licensed for all users
 
@@ -505,7 +505,7 @@ The Practice manager Power BI content pack is also available in the Shared asset
 
 The Practice manager Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The content gives an overview of the projects and related customers. The Power BI content pulls data from the project accounting aggregate measurements for Microsoft Dynamics 365 Finance and Operations.
 
-The Practice manager Power BI content contains five report pages: one overview page and four pages that provide details about project costs, revenues, earned value management, and hour metrics that are split out across various dimensions. For more information, see [Practice manager Power BI content](../analytics/practice-manager-power-bi.md).
+The Practice manager Power BI content contains five report pages: one overview page and four pages that provide details about project costs, revenues, earned value management, and hour metrics that are split out across various dimensions. For more information, see [Practice manager Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/practice-manager-power-bi).
 
 ### Fixed asset management workspace and embedded Power BI content
 
@@ -515,7 +515,7 @@ Embedded Fixed asset management Power BI reports provide CFOs and Operations man
 
 You can view key asset book lifetime metrics, such as net book value (NBV.md), depreciation, and accumulated depreciation by asset category and location. You can dive into patterns and understand trends that lie hidden beneath the data, and make strategic decisions, such as major upgrades and plant re-tooling proactively, backed with data.
 
-For more information, see [Fixed asset management workspace](../../../finance/fixed-assets/fixed-asset-management-workspace.md).
+For more information, see [Fixed asset management workspace](/dynamics365/finance/fixed-assets/fixed-asset-management-workspace).
 
 ### Power BI reporting with financial dimensions
 
@@ -527,7 +527,7 @@ Ready-made Power BI reports in Finance and Operations benefit from this capabili
 
 You can empower your users to create Power BI reports that leverage this capability. When you define a report with modeled financial dimensions, you can refresh them to include expanded fields.
 
-For more information, see [Add financial dimensions to aggregate measurements](../analytics/add-financial-dimensions-aggregate-measurements.md).
+For more information, see [Add financial dimensions to aggregate measurements](/dynamics365/fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements).
 
 ### Purchase spend analysis Power BI reports
 
@@ -536,9 +536,9 @@ The Purchase spend analysis content pack for Microsoft Power BI was created for 
 - Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location).
 - Year-over-year purchase change (by vendor group and procurement category).
 
-The Purchase spend analysis Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 Finance and Operations.
+The Purchase spend analysis Power BI content pack is available via the Lifecycle Services Asset library and as an embedded report in Dynamics 365 Finance and Operations.
 
-For more information, see [Purchase spend analysis Power BI content](../analytics/purchase-content-pack-for-power-bi.md).
+For more information, see [Purchase spend analysis Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi).
 
 ### Purchasing analysis Power BI content
 
@@ -567,21 +567,21 @@ Analyze profitability by:
 - Gross profit change, year-over-year.
 - Customer profitability (by revenue versus gross margin).
 
-You can get the Sales and profitability performance Power BI content pack through the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 FinanceFinance and Operations.
+You can get the Sales and profitability performance Power BI content pack through the Lifecycle Services Asset library and as an embedded report in Dynamics 365 FinanceFinance and Operations.
 
-For more information, see [Sales and profitability performance Power BI content](../analytics/sales-profitability-performance-content-pack.md).
+For more information, see [Sales and profitability performance Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack).
 
 ### Vendor payment analysis Power BI
 
 Vendor payment analysis Power BI reports provide visibility into your open invoices and posted vendor payments. With this information, you can make better decisions in your account payable processes. You can analyze overdue invoices, upcoming invoices that are due in the future, as well as your discount history.
 
-For more information, see [Vendor payment workspace](../../../finance/accounts-payable/Vendor-payments-workspace.md).
+For more information, see [Vendor payment workspace](/dynamics365/finance/accounts-payable/Vendor-payments-workspace).
 
 ### Warehousing Power BI reports
 
 With Warehousing Power BI reports, the warehouse and supply chain manager can easily take advantage of the rich visualization and dashboard capabilities to analyze warehouse performance in the past, present, and future.
 
-Warehouse and operations managers can monitor the key inbound, outbound, and inventory metrics. This feature uses product and other transactional data from Dynamics 365 Finance and Operations to provide both an aggregate view of the warehouse performance and a breakdown for customers, vendors, product groups, and product sites and warehouses. For more information, see [Warehouse performance Power BI content](../analytics/warehouse-power-bi-content.md).
+Warehouse and operations managers can monitor the key inbound, outbound, and inventory metrics. This feature uses product and other transactional data from Dynamics 365 Finance and Operations to provide both an aggregate view of the warehouse performance and a breakdown for customers, vendors, product groups, and product sites and warehouses. For more information, see [Warehouse performance Power BI content](/dynamics365/fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content).
 
 ## Manufacturing
 
@@ -675,7 +675,7 @@ With the **Vendor collaboration** mobile workspace, vendors can stay up-to-date 
 
 Configuration data project templates provide more than 20 predefined lists of entities for each module area. The templates are sequenced to handle entities that depend on other entities. You can add one or more templates to a configuration data project and the sequences align correctly.
 
-For more information, see [Configuration data templates](../data-entities/configuration-data-templates.md).
+For more information, see [Configuration data templates](/dynamics365/fin-ops-core/dev-itpro/data-entities/configuration-data-templates).
 
 ### Upgrade
 
@@ -687,16 +687,16 @@ In Finance and Operations, you don't need expensive upgrades to stay current and
 
 For more information, see the following topics:
 
-- [Upgrade from AX 2012 to finance and operations](../migration-upgrade/upgrade-overview-2012.md)
-- [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](../migration-upgrade/upgrade-analyzer-tool.md)
-- [Upgrade from AX 2012 - Estimate effort by using the Code upgrade service](../migration-upgrade/analyze-code-upgrade.md)
-- [Upgrade from AX 2012 - Deploy a demo environment for analysis](../migration-upgrade/analysis-sandbox.md)
-- [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](../migration-upgrade/prepare-data-upgrade.md)
-- [Upgrade from AX 2012 - Data upgrade in development environments](../migration-upgrade/data-upgrade-2012.md)
-- [Upgrade from AX 2012 - Post-upgrade tasks](../migration-upgrade/app-validation-process.md)
-- [Upgrade from AX 2012 - Cutover testing (Mock cutover)](../migration-upgrade/upgrade-cutover-testing.md)
-- [Upgrade from AX 2012 - Functional test passes](../migration-upgrade/upgrade-functional-validation.md)
-- [Upgrade from AX 2012 - Prepare for go-live](../migration-upgrade/upgrade-go-live-prep.md)
+- [Upgrade from AX 2012 to finance and operations](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-overview-2012)
+- [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-analyzer-tool)
+- [Upgrade from AX 2012 - Estimate effort by using the Code upgrade service](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/analyze-code-upgrade)
+- [Upgrade from AX 2012 - Deploy a demo environment for analysis](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/analysis-sandbox)
+- [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/prepare-data-upgrade)
+- [Upgrade from AX 2012 - Data upgrade in development environments](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-2012)
+- [Upgrade from AX 2012 - Post-upgrade tasks](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/app-validation-process)
+- [Upgrade from AX 2012 - Cutover testing (Mock cutover)](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-cutover-testing)
+- [Upgrade from AX 2012 - Functional test passes](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-functional-validation)
+- [Upgrade from AX 2012 - Prepare for go-live](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-go-live-prep)
 
 ## Project management \| Accounting
 
@@ -844,11 +844,11 @@ Supported devices:
 
 For each supported device, the POS simulator provides the ability to test device specific capabilities for ad hoc testing, such as card swipe or displaying specific strings of text on a line display. Each supported device also has a specific self-test routine that is used for official device compatibility testing. You can send results from compatibility testing to Microsoft to be listed as approved for new deployments of Retail.
 
-For a description of the Peripheral simulator, see [Retail Peripheral simulator](../../../commerce/dev-itpro/retail-peripheral-simulator.md).
+For a description of the Peripheral simulator, see [Retail Peripheral simulator](/dynamics365/commerce/dev-itpro/retail-peripheral-simulator).
 
 For more information about the compatibility program and how to participate, contact <drpc@microsoft.com>.
 
-For information about peripherals that Microsoft previously tested, visit [Microsoft-tested peripheral devices](../../../commerce/retail-peripherals-overview.md). This page will also be updated with a link to the POS simulator-tested devices as soon as that page becomes available.
+For information about peripherals that Microsoft previously tested, visit [Microsoft-tested peripheral devices](/dynamics365/commerce/retail-peripherals-overview). This page will also be updated with a link to the POS simulator-tested devices as soon as that page becomes available.
 
 ### Omni-channel coupons
 
@@ -856,7 +856,7 @@ To improve the omni-channel experience, retailers can offer their customers call
 
 Call center coupons merge with retail discounts to provide a unified experience for managing and accepting coupons in all retail channels. The combined experience uses the codes and bar codes from coupons to apply the discount value from retail discounts.
 
-For more information about coupons, see [Create coupons for retail sales](../../../commerce/retail-coupons.md).
+For more information about coupons, see [Create coupons for retail sales](/dynamics365/commerce/retail-coupons).
 
 ### Discounts – Quantity limit and exclude discount lines
 
@@ -864,7 +864,7 @@ You can add a quantity limit to simple discounts and specify a number on a disc
 
 You can also include or exclude property to discount lines. You can define the set of products a discount applies to with a combination of include and exclude discount lines. For example, you can have a discount with one discount line for the **Fashion** category set to **Include** and a second discount line for the product **81327** set to **Exclude**. This discount then applies to all products in the **Fashion** category tree except for product **81327**. All previously existing discount lines are set to **Include**. This setting makes it easier for merchandizers to define discounts for some scenarios.
 
-For more information about discounts, see [Price adjustments and discounts](../../../commerce/price-adjustments-discounts.md).
+For more information about discounts, see [Price adjustments and discounts](/dynamics365/commerce/price-adjustments-discounts).
 
 ### POS inventory visibility improvements
 
@@ -883,13 +883,13 @@ With the search improvement feature, we improved both product and customer searc
 
 **Upgrade support** – For Dynamics AX 2012, you could upgrade the data for Retail, where all historical data, posted or unposted, was upgraded. Now you can upgrade from Dynamics AX 2012 R3 to the current version. The platform supports all the cumulative update versions of Dynamics AX 2012 R3 for upgrade. Some customers on existing Dynamics AX 2012 R3 versions are expected to upgrade the back office and channel side together while others can leverage the N-1 support. We support all Dynamics AX 2012 R3 versions from a database upgrade perspective for HQ. The Retailer upgrades both HQ and Channel if you want to upgrade without N-1 support.
 
-The Retail customer also has an option for N-1 support if they're using Dynamics AX 2012 R3 CU11 or higher, if they don't want to disturb their existing store and run it against the new HQ. After the database upgrade is complete in HQ, the retargeting of the new Retail channel side components happens as part of the LCS methodology, so the new channels can work with the upgraded DB. If the Retailer wants N-1 support for Channels when they upgrade to HQ, they have to ensure that the channel is at least on 2012 R3 CU11 or above.
+The Retail customer also has an option for N-1 support if they're using Dynamics AX 2012 R3 CU11 or higher, if they don't want to disturb their existing store and run it against the new HQ. After the database upgrade is complete in HQ, the retargeting of the new Retail channel side components happens as part of the Lifecycle Services methodology, so the new channels can work with the upgraded DB. If the Retailer wants N-1 support for Channels when they upgrade to HQ, they have to ensure that the channel is at least on 2012 R3 CU11 or above.
 
 **Support for previous versions** – Now you can upgrade Dynamics AX 2012 R3 to Dynamics 365 for Retail. N-1 Support enables existing Dynamics AX 2012 customers to adopt the cloud faster, with minimal interruption to their current business process. N-1 Support enables existing Dynamics AX 2012 R3 CU 11 and CU12 customers to leverage the benefits of cloud for their businesses using Dynamics 365 Operations as HQ in a hybrid model, while operating their stores in Dynamics AX 2012 R3 CU 11 or CU12. All of this occurs without interrupting the existing infrastructure. For the initial phase, we're targeting customers with Dynamics AX 2012 R3 CU 11 and 12 releases for N-1 support. Because Dynamics AX 2012 store systems are on-premises and distributed, we support customers' existing Dynamics 2012 R3 store systems connecting to Dynamics 365 Operations HQ after they upgrade to the CU 11 and CU 12 versions. This support ensures minimal disruption in store operations.
 
 Enabling N-1 support requires customers to install the N-1 components that enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ. If the customer is using a pre-CU 11 version, they must upgrade to at least Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](../../../commerce/dev-itpro/overview-upgrade-n-minus1.md) and [N-1 installation and configuration](../../../commerce/dev-itpro/overview-upgrade-n-minus1.md).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](/dynamics365/commerce/dev-itpro/overview-upgrade-n-minus1) and [N-1 installation and configuration](/dynamics365/commerce/dev-itpro/overview-upgrade-n-minus1).
 
 ## Supply chain management
 
@@ -897,7 +897,7 @@ For details about Retail upgrade and N-1 support, see [Overview of upgrade and N
 
 Batch confirmation and license plate confirmation are added to this release of Finance and Operations. With this enhancement, using a mobile device, you can confirm that the correct batch or license plate is being picked.
 
-In previous versions, batch and license plate confirmation for items wasn't supported. For more information, see [Batch and license plate confirmation](../../../supply-chain/warehousing/batch-and-license-plate-confirmation.md).
+In previous versions, batch and license plate confirmation for items wasn't supported. For more information, see [Batch and license plate confirmation](/dynamics365/supply-chain/warehousing/batch-and-license-plate-confirmation).
 
 ### Consignment inventory
 
@@ -921,13 +921,13 @@ A new piece picking capability allows you to confirm each piece of inventory by 
 
 In previous versions, it wasn't possible to, for example, verify item quantities to be picked by scanning item bar codes or to scan bar codes for larger quantities.
 
-For more information, see [Piece picking confirmation](../../../supply-chain/warehousing/piece-picking-confirmation.md).
+For more information, see [Piece picking confirmation](/dynamics365/supply-chain/warehousing/piece-picking-confirmation).
 
 ### Product work confirmation for cluster picking
 
 Dynamics 365 Finance and Operations now supports item scanning and verification in the cluster picking flow.
 
-When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters. Now you can verify items in cluster picking during the cluster picking process. In previous versions, it wasn't possible to confirm item bar codes and verify items by using a bar code scanner. For more information, see [Product confirmation for cluster picking](../../../supply-chain/warehousing/cluster-picking-item-confirmation.md).
+When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters. Now you can verify items in cluster picking during the cluster picking process. In previous versions, it wasn't possible to confirm item bar codes and verify items by using a bar code scanner. For more information, see [Product confirmation for cluster picking](/dynamics365/supply-chain/warehousing/cluster-picking-item-confirmation).
 
 ### Prospect to cash integration capabilities
 
@@ -954,7 +954,7 @@ Integration between different ERP systems traditionally has a reputation for rig
 
 The integration comes with a rich solution to optimize the experience and allow for complex process flows between Dynamics 365 for Sales and Dynamics 365 Finance and Operations. Finance and Operations, optimized to support integration with enhanced entities and Dynamics 365 for Sales is optimized with a solution.
 
-For additional information, see [Prospect to cash](../sales-marketing/prospect-to-cash.md).
+For additional information, see [Prospect to cash](/dynamics365/fin-ops-core/dev-itpro/sales-marketing/prospect-to-cash).
 
 ### Punch-out to external catalog from purchase requisition
 
@@ -964,7 +964,7 @@ When you set up the external catalog, you set it up across all legal entities fo
 
 The cXML protocol is used to communicate between Finance and Operations and the external catalog residing at the vendor's system.
 
-For more information, see [Use external catalogs for PunchOut eProcurement](../../../supply-chain/procurement/use-external-catalogs-for-punchout.md).
+For more information, see [Use external catalogs for PunchOut eProcurement](/dynamics365/supply-chain/procurement/use-external-catalogs-for-punchout).
 
 ### System grouping on an open work list
 
@@ -981,7 +981,7 @@ Vendor collaboration was enabled in earlier releases. In Dynamics 365 Finance an
 
 Both improvements reduce time spent in the purchasing department and allow the procurement personnel to handle their tasks more efficiently.
 
-For more information, see [Vendor collaboration with external vendors](../../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md).
+For more information, see [Vendor collaboration with external vendors](/dynamics365/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 ### Warehousing
 

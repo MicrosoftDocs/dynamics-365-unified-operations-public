@@ -260,6 +260,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?context=/dynamics365/context/commerce
         - name: Payment Application Data Security Standards (PA-DSS) certification
           href: dev-itpro/PA-DSS-Certification.md
+        - name: PCI Software Security Framework evaluation
+          href: pci-software-security-framework-evaluation.md
         - name: Commerce capabilities available in on-premises deployments
           href: dev-itpro/retail-onprem.md
       - name: Deployment and hotfixes
@@ -3154,10 +3156,12 @@
             href: dev-itpro/payment-connector-package.md
     - name: Copilot capabilities in Commerce
       items:
-      - name: Store report insights by Copilot
-        href: copilot-pos-report-insights.md
       - name: Customer insights by Copilot
         href: copilot-pos-customer-insights.md
+      - name: Product insights by Copilot
+        href: copilot-product-insights.md
+      - name: Store report insights by Copilot
+        href: copilot-pos-report-insights.md
       - name: Enable Copilot statement posting summaries
         href: copilot-statement-summaries.md
       - name: Use Copilot in site builder to enrich product detail pages

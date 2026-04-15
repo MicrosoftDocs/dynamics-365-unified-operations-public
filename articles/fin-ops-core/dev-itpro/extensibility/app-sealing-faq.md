@@ -22,7 +22,7 @@ Yes, source code is available after the hard seal. It's required for effective i
 
 ## How do I contact Microsoft if I have an extensibility request?
 
-Use the special extensibility request form on the Lifecycle Services (LCS) site.
+Use the special extensibility request form on the Microsoft Dynamics Lifecycle Services site.
 
 ## Where can I ask questions about extensibility patterns?
 
