@@ -133,4 +133,11 @@ After you complete all the required configuration steps and post the project inv
 
 The export process works the same way as for non-project NFS-e invoices. The NBS codes, operation indicator codes, service location, and tax burden percentages from the project transactions are included in the generated NFS-e XML.
 
+## Additional resources
+
+- [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md)
+- [Set up Brazil reformed tax](brazil-reform-setup.md)
+- [Use tax calculation in projects in Brazil tax reform](brazil-reform-calculation-project)
+- [Use tax calculation in project quotation in Brazil tax reform](brazil-reform-calculation-project-quotation)
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
