@@ -4,7 +4,7 @@ description: Learn about the steps to set up and generate Brazilian NFS-e Servic
 author: ankviklis
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 01/07/2026
+ms.date: 04/15/2026
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
 ms.search.validFrom: 01/02/2026
