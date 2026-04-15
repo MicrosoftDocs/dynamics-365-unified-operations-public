@@ -139,4 +139,8 @@ To import e-invoicing configuration files, follow these steps:
 
 After you complete all the required configuration steps, you can generate electronic invoices for posted invoices by going to **Accounts receivable > Periodic tasks > NFS-e export**.
 
+## Additional resources
+
+- [Work with NFS-e service invoices for projects](../../../)
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
