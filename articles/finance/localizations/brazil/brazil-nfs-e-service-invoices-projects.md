@@ -14,10 +14,10 @@ ms.custom:
 
 # Work with NFS-e service invoices for projects
 
-This article describes how to set up and use NFS-e (Nota Fiscal de Serviço Eletrônica) service invoices with the **Project management and accounting** module in Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Project Operations.
+This article describes how to set up and use Nota Fiscal de Serviço Eletrônica (NFS-e) service invoices with the **Project management and accounting** module in Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Project Operations.
 
 > [!NOTE]
-> This functionality extends the existing NFS-e service invoice support to project-based transactions. Before you proceed, complete all the prerequisite setup steps described in [Set up Brazil reformed tax](brazil-reform-setup.md) and [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md), including enabling the **Brazil reformed tax** feature, enabling the **Tax calculation configuration**, importing **Electronic Reporting configurations**, and populating the NBS and operation indicator code tables.
+> This functionality extends the existing NFS-e service invoice support to project-based transactions. Before you proceed, complete all the prerequisite setup steps described in [Set up Brazil reformed tax](brazil-reform-setup.md) and [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md), including enabling the **Brazil reformed tax** feature, enabling the **Tax calculation configuration**, importing **Electronic Reporting configurations**, and populating the Nomenclatura Brasileira de Serviços (NBS) and operation indicator code tables.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ To enable the tax calculation configuration, follow this step:
 
 - Go to **Tax** > **Setup** > **Tax calculation parameters** and enable **Advanced tax calculation** for the **Project** business process.
 
-This setting is required. If you don't enable **Advanced tax calculation** for the **Project** business process, the NBS code and operation indicator code fields aren't visible on project forms, and NFS-e data isn't propagated during posting.
+This setting is required. If you don't enable **Advanced tax calculation** for the **Project** business process, the Nomenclatura Brasileira de Serviços (NBS) code and operation indicator code fields aren't visible on project forms, and NFS-e data isn't propagated during posting.
 
 ### Set NFS-e tax burden percentages on the fiscal establishment
 
@@ -72,7 +72,9 @@ When you create project transactions, verify that the NBS code and operation ind
 > [!NOTE]
 > Expense transactions require a Time and Material project contract with billing rules. Ensure that the expense-related project categories are included as chargeable categories on the project contract.
 
-### On-account transactions
+### Provide NBS and operation indicator codes on on-account transactions
+
+To provide NBS and operation indicator codes on on-account transactions, follow these steps:
 
 1. Go to **Project management and accounting** > **Projects** > **All projects**.
 1. Open a project, and then select **Manage** > **On-account transactions**.
@@ -84,25 +86,33 @@ When you create project transactions, verify that the NBS code and operation ind
 
 All project journal line types - **Hour**, **Fee**, **Expense**, and **Item** - include the NBS code and operation indicator code fields.
 
-#### Hour journal lines
+#### Provide NBS and operation indicator codes on hour journal lines
+
+To provide NBS and operation indicator codes on hour journal lines, follow these steps:
 
 1. Go to **Project management and accounting** > **Journals** > **Hour**.
 1. Open a journal and select **Lines**.
 1. On the **General** tab, verify or update the **NBS code** and **Operation Indicator Code** fields.
 
-#### Fee journal lines
+#### Provide NBS and operation indicator codes on fee journal lines
+
+To provide NBS and operation indicator codes on fee journal lines, follow these steps:
 
 1. Go to **Project management and accounting** > **Journals** > **Fee**.
 1. Open a journal and select **Lines**.
 1. On the **General** tab, verify or update the **NBS code** and **Operation Indicator Code** fields.
 
-#### Expense journal lines
+#### Provide NBS and operation indicator codes on expense journal lines
+
+To provide NBS and operation indicator codes on expense journal lines, follow these steps:
 
 1. Go to **Project management and accounting** > **Journals** > **Expense**.
 1. Open a journal and select **Lines**.
 1. On the **Project** tab, verify or update the **NBS code** and **Operation Indicator Code** fields.
 
-#### Item journal lines
+#### Provide NBS and operation indicator codes on item journal lines
+
+To provide NBS and operation indicator codes on item journal lines, follow these steps:
 
 1. Go to **Project management and accounting** > **Journals** > **Item**.
 1. Open a journal and select **Lines**.
@@ -110,9 +120,11 @@ All project journal line types - **Hour**, **Fee**, **Expense**, and **Item** - 
 
 ## Set NFS-e fields on project invoice proposals
 
-When you create an invoice proposal for a project, you can set additional NFS-e fields on both the header and the transaction lines.
+When you create an invoice proposal for a project, set additional NFS-e fields on both the header and the transaction lines.
 
-### Invoice proposal header
+### Set NFS-e fields on invoice proposal header
+
+To set NFS-e fields on the invoice proposal header, follow these steps:
 
 1. Go to **Project management and accounting** > **Project invoices** > **Project invoice proposals**.
 1. Create or open an invoice proposal.
@@ -127,7 +139,7 @@ When you create an invoice proposal for a project, you can set additional NFS-e 
 
 ### Invoice proposal transaction lines
 
-On the invoice proposal form, select the **Lines** tab. In the **Invoice proposal transactions** section, the **NBS code** and **Operation Indicator Code** columns are visible on each transaction type tab:
+On the invoice proposal form, select the **Lines** tab. In the **Invoice proposal transactions** section, you can see the **NBS code** and **Operation Indicator Code** columns on each transaction type tab:
 
 - **Hour** – displays the NBS code and operation indicator code from the hour journal transactions.
 - **Item** – displays the NBS code and operation indicator code from the item journal transactions.
@@ -140,6 +152,8 @@ These values come from the originating project transactions. You can verify or u
 ## Verify NFS-e data on fiscal documents
 
 After you post a project invoice proposal, the system generates a fiscal document. The NFS-e fields from the invoice proposal flow through to the fiscal document automatically. The fiscal document form doesn't introduce any new fields. The existing NFS-e fields are populated with data from the project invoice.
+
+To verify NFS-e data on fiscal documents, follow these steps:
 
 1. Go to **Project management and accounting** > **Fiscal documents** > **All fiscal documents**.
 1. On the fiscal document form, verify the following items:
