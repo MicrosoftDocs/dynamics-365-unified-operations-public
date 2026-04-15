@@ -33,12 +33,17 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
+| Italy | March 2026 | 10.0.48, also available in prior versions | Updated [Unique certification](../italy/emea-ita-exil-unique-certification.md) (Certificazione Unica) form aligned with the provision of January 15, 2026 (Prot. n. 9454/2026) for tax year 2025. |
+| Lithuania | March 2026 | 10.0.48, also available in prior versions | New VMI VAT codes PVM58, PVM59, and PVM60 for [i.SAF reporting](../lithuania/emea-ltu-isaf.md), effective from January 1, 2026, aligned with the updated 12% VAT rate classification. |
+| Lithuania | March 2026 | 10.0.48, also available in prior versions | Updated [VAT declaration (FR0600)](../lithuania/emea-ltu-vat-declaration-lithuania.md) with a new field 29A to support the 12% VAT rate, effective from January 1, 2026. |
+| Spain | March 2026 | 10.0.48, also available in prior versions | Updated [Declaration 347](../spain/emea-esp-declaration-347-report.md) annual informative return for fiscal year 2025. |
+| Spain | February 2026 | 10.0.48, also available in prior versions | Updated [VAT declaration Model 303](../spain/emea-esp-vat-declaration-spain.md) registry design for fiscal year 2026. |
+| Germany | January 2026 | 10.0.48, also available in prior versions | Support for generating the [EU Sales list for Germany](../germany/emea-deu-eu-sales-list.md) in XML file format. |
 | Netherlands | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version 4.0 of [Audit file (XML Auditfile Financieel, XAF)](../netherlands/emea-nl-audit-file.md). |
 | Poland | December 2025 | 10.0.47, also available in prior versions | Regulatory update to support version (3) of [VAT declaration for Poland, JPK-V7](../poland/emea-pol-vdek.md), effective from February 1, 2026. |
 | United Kingdom | November 2025 | 10.0.47, also available in prior versions | Regulatory update to support [Statistics on payment practices report](../united-kingdom/emea-gbr-statistics-on-payment-practices-report.md) the Reporting on Payment Practices and Performance (Amendment) Regulations 2025. |
 | Germany | November 2025 | 10.0.47, also available in prior versions | EU Sales list for Germany in CSV format. [EU Sales list for Germany](../germany/emea-deu-eu-sales-list.md) |
-| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file 
- \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
+| Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support generating the e-Bupot file \([Withholding tax report for Indonesia](../indonesia/apac-idn-wht-declaration.md)\) for reporting periods starting from 2025 based on the withholding tax transactions.  |	
 | Indonesia | August 2025 | 10.0.46, also available in prior versions | Regulatory update to support  generating the [SPT Masa PPN \(Pajak Pertambahan Nilai\) VAT declaration](../indonesia/apac-idn-ppn-declaration.md) in Excel format for reporting periods starting from 2025. |	
 | Estonia | July 2025 | 10.0.46, also available in prior versions | Regulatory update to support changes in VAT declaration format for Estonia 2025. [VAT declaration for Estonia](../estonia/emea-est-vat-declaration.md) |
 | Australia | May 2025| 10.0.45, 10.0.44HF, 10.0.43HF, 10.0.42HF | Regulatory update to support changes in Payment times reporting schema (PTRS) required for Australian legal entities for periods from July 1, 2024. [Payment times reporting schema](../australia/apac-aus-payment-times-report.md) |
