@@ -4,7 +4,7 @@ description: Learn about how to import data from manually selected files in batc
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 03/20/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 
 [!include[banner](../includes/banner.md)]
 
-To use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to import data from manually selected inbound files in batch mode, configure an ER [format](er-overview-components.md#format-component) that supports the import. Then run a [model mapping](er-overview-components.md#model-mapping-component) of the **To destination** type that uses that format as a data source. To import data, browse to the file that you want to import, and manually select it.
+To use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to import data from manually selected inbound files in batch mode, configure an ER [format](er-overview-components.md#format-component) that supports the import. Then run a [model mapping](er-overview-components.md#model-mapping-component) of the **To destination** type that uses that format as a data source. To import data, browse to the file that you want to import, and manually select it. 
 
 The new ER capability that supports data import in batch mode enables you to configure this process as unattended. You can use ER configurations to perform data import by scheduling a new batch job from the ER user interface (UI).
 
@@ -31,9 +31,9 @@ To complete the examples in this article, you must have the following access:
 
 - One of the following roles:
 
-  - Electronic reporting developer
-  - Electronic reporting functional consultant
-  - System administrator
+    - Electronic reporting developer
+    - Electronic reporting functional consultant
+    - System administrator
 
 - ER format and model configurations for 1099 payments
 
@@ -72,15 +72,15 @@ To create the required ER configurations and obtain other prerequisites, follow 
 1. On **Configurations**, review the prepared ER solution for data import in batch mode.
 1. Review the **For importing vendors' transactions (Excel)** format configuration.
 
-    - The format component of this configuration parses an inbound Excel file.
-    - The model mapping component of this configuration fills in the base data model by using data from the parsed Excel file.
+    - The format component of this configuration is designed to parse an inbound Excel file.
+    - The model mapping component of this configuration is used to fill in the base data model by using data from the parsed Excel file.
 
     :::image type="content" source="./media/er-configure-data-import-batch-configurations-1.png" alt-text="Screenshot of ER format configuration for importing data in batch mode from the ER UI.":::
 
 1. Review the **1099 Payments model** data model configuration.
 
-    - The model component of this configuration represents the structure of the data model that passes data between running ER components.
-    - The model mapping component of this configuration pulls data from the executed format component and then updates application tables.
+    - The model component of this configuration represents the structure of the data model that is used to pass data between running ER components.
+    - The model mapping component of this configuration is used to pull data from the executed format component and then update application tables.
 
     :::image type="content" source="./media/er-configure-data-import-batch-configurations-2.png" alt-text="Screenshot of ER data model configuration for importing data in batch mode from the ER UI.":::
 
@@ -91,7 +91,7 @@ To create the required ER configurations and obtain other prerequisites, follow 
 ## Enable batch data import for ER from the UI
 
 1. Go to **System administration** > **Workspaces** > **Feature management**.
-1. In the **Feature management** workspace, select the **Run ER import of manually uploaded documents in batch** feature, and then select **Enable now**.
+1. In **Feature management**, select the **Run ER import of manually uploaded documents in batch** feature, and then select **Enable now**.
 
 ## Import data from manually selected Excel files
 
@@ -114,7 +114,7 @@ To create the required ER configurations and obtain other prerequisites, follow 
 ## Review the data import results on the Batch job page
 
 1. Go to **Common** > **Inquiries** > **Batch jobs** > **My batch jobs**.
-1. On **Batch job**, filter the list of batch jobs to find the scheduled batch, and then select it.
+1. On the **Batch job** page, filter the list of batch jobs to find the scheduled batch, and then select it.
 1. Select the **Job ID** link to review job details.
 1. On the **Batch tasks** FastTab, select **Log**.
 
@@ -126,15 +126,15 @@ To create the required ER configurations and obtain other prerequisites, follow 
 
 ## Change the data import parameters
 
-After you schedule your batch and before it runs, you can change the parameters of the scheduled data import.
+After your batch is scheduled but before it runs, you can change the parameters of the scheduled data import.
 
 1. Go to **Common** > **Inquiries** > **Batch jobs** > **My batch jobs**.
-1. On **Batch job**, filter the list of batch jobs to find the scheduled batch, and then select it.
+1. On the **Batch job** page, filter the list of batch jobs to find the scheduled batch, and then select it.
 1. Select **Change status**.
-1. In **Select new status**, select **Withhold**, and then select **OK**.
+1. In the **Select new status** dialog box, select **Withhold**, and then select **OK**.
 1. Select the **Job ID** link to access the job details.
 1. On the **Batch tasks** FastTab, select **Parameters**.
-1. In **Electronic report parameters**, follow these steps:
+1. In the **Electronic report parameters** dialog box, follow these steps:
 
     1. Select **Browse** to select the alternative file for data import.
     1. Select **Enter voucher id** to change the voucher number for importing vendor transactions.
@@ -144,18 +144,18 @@ After you schedule your batch and before it runs, you can change the parameters 
     1. Select **OK**.
 
 1. Make sure that the batch is still selected, and then select **Change status** again.
-1. In **Select new status**, select **Waiting**, and then select **OK**.
+1. In the **Select new status** dialog box, select **Waiting**, and then select **OK**.
 
 ## Review the data import results on the ER source page
 
 1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting source**.
-1. Select the **For importing vendors' transactions (Excel)** record that the system automatically creates during the data import.
+1. Select the **For importing vendors' transactions (Excel)** record. This record is created automatically during the data import.
 
     :::image type="content" source="./media/er-configure-data-import-batch-files-source-1.png" alt-text="Screenshot of record for the For importing vendors' transactions (Excel) configuration on the Electronic reporting source page.":::
 
 1. Select **File states for the sources**.
 1. On the **Files** and **Source logs for the import format** FastTabs, review the import details.
-1. On the **Files** FastTab, select the record. Notice that the imported file is attached to this record.
+1. On the **Files** FastTab, select the record. The imported file is attached to this record.
 
     :::image type="content" source="./media/er-configure-data-import-batch-files-source-2.png" alt-text="Screenshot of imported file attached to the record on the File states for the sources page.":::
 
@@ -164,7 +164,7 @@ After you schedule your batch and before it runs, you can change the parameters 
     :::image type="content" source="./media/er-configure-data-import-batch-files-source-3.png" alt-text="Screenshot of imported file on the Document view page.":::
 
     > [!TIP]
-    > To keep these attachments, the ER framework uses a document type that you [set](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) for the current company in the **Others** field of the ER parameters.
+    > To keep these attachments, the ER framework uses a document type that is [set](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) for the current company in the **Others** field of the ER parameters.
 
 ## Review the data import results on the Vendor settlement for 1099s page
 

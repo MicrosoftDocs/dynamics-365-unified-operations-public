@@ -4,7 +4,7 @@ description: Learn about how to use Electronic reporting (ER) to generate busine
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 04/07/2026
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -22,7 +22,7 @@ ms.assetid:
 This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER)](general-electronic-reporting.md) framework.
-- Import ER [configurations](general-electronic-reporting.md#Configuration) that Microsoft [provides](general-electronic-reporting.md#Provider) and use them to generate [free text invoices](../../../finance/accounts-receivable/create-free-text-invoice-new.md), based on a [template](er-fillable-excel.md#excel-file-component) in Microsoft Excel format.
+- Import ER [configurations](general-electronic-reporting.md#Configuration) that Microsoft [provides](general-electronic-reporting.md#Provider) and are used to generate [free text invoices](../../../finance/accounts-receivable/create-free-text-invoice-new.md), based on a [template](er-fillable-excel.md#excel-file-component) in Microsoft Excel format.
 - Create a [custom (derived)](general-electronic-reporting.md#building-a-format-by-selecting-another-format-as-a-base-customization) version of a standard ER format configuration that Microsoft provides.
 - Modify the custom ER format configuration so that it generates a free text invoice report that has a company logo image in the footer.
 
@@ -37,33 +37,33 @@ You can complete the procedures in this article in the **USMF** company. No codi
 - [Configure the legal entity](#ConfigureLegalEntity)
 - [Configure the ER framework](#ConfigureFramework)
 
-  - [Configure ER parameters](#ConfigureParameters)
-  - [Activate an ER configuration provider](#ActivateProvider)
+    - [Configure ER parameters](#ConfigureParameters)
+    - [Activate an ER configuration provider](#ActivateProvider)
 
-    - [Review the list of ER configuration providers](#ReviewProvidersList)
-    - [Add a new ER configuration provider](#AddProvider)
-    - [Activate the new ER configuration provider](#ActivateAddedProvider)
+        - [Review the list of ER configuration providers](#ReviewProvidersList)
+        - [Add a new ER configuration provider](#AddProvider)
+        - [Activate the new ER configuration provider](#ActivateAddedProvider)
 
 - [Import the standard ER format configurations](#ImportERSolution1)
 
-  - [Import the standard ER configurations](#ImportERFormat)
-  - [Review the imported ER configurations](#ReviewImportedERSolution)
+    - [Import the standard ER configurations](#ImportERFormat)
+    - [Review the imported ER configurations](#ReviewImportedERSolution)
 
 - [Print a free text invoice by using the standard ER format](#PrintInvoice1)
 
-  - [Set up print management](#ConfigurePrintManagement1)
-  - [Print a free text invoice](#ProcessInvoice1)
+    - [Set up print management](#ConfigurePrintManagement1)
+    - [Print a free text invoice](#ProcessInvoice1)
 
 - [Customize the standard ER format](#CustomizeProvidedFormat)
 
-  - [Create a custom format](#DeriveProvidedFormat)
-  - [Edit the custom format](#ConfigureDerivedFormat)
-  - [Mark the custom format as runnable](#MarkFormatRunnable)
+    - [Create a custom format](#DeriveProvidedFormat)
+    - [Edit the custom format](#ConfigureDerivedFormat)
+    - [Mark the custom format as runnable](#MarkFormatRunnable)
 
 - [Print a free text invoice by using the custom ER format](#PrintInvoice2)
 
-  - [Set up print management](#ConfigurePrintManagement2)
-  - [Print a free text invoice](#ProcessInvoice2)
+    - [Set up print management](#ConfigurePrintManagement2)
+    - [Print a free text invoice](#ProcessInvoice2)
 
 - [Additional resources](#References)
 
@@ -74,7 +74,7 @@ You can complete the procedures in this article in the **USMF** company. No codi
 1. In **Select image file to upload**, select **Browse**, and select the **Company logo.png** file that you downloaded earlier.
 1. Select **Save**, and then close **Legal entities**.
 
-:::image type="content" source="./media/er-embed-images-header-footer-excel-reports-company-logo-image.png" alt-text="Screenshot of company logo image selected on the Legal entities page.":::
+:::image type="content" source="./media/er-embed-images-header-footer-excel-reports-company-logo-image.png" alt-text="Screenshot of the company logo image selected on the Legal entities page.":::
 
 ## <a id="ConfigureFramework"></a>Configure the ER framework
 
@@ -94,10 +94,10 @@ For more information about ER parameters, see [Configure the ER framework](elect
 
 ### <a id="ActivateProvider"></a>Activate an ER configuration provider
 
-Every ER configuration that you add is marked as owned by an ER configuration provider. Use the ER configuration provider that you activate in the **Electronic reporting** workspace for this purpose. Therefore, you must activate an ER configuration provider in the **Electronic reporting** workspace before you start to add or edit ER configurations.
+Every ER configuration that you add is marked as owned by an ER configuration provider. Use the ER configuration provider activated in the **Electronic reporting** workspace for this purpose. Therefore, you must activate an ER configuration provider in the **Electronic reporting** workspace before you start to add or edit ER configurations.
 
 > [!NOTE]
-> Only the configuration owner can edit an ER configuration. Before you can edit an ER configuration, you must activate the appropriate ER configuration provider in the **Electronic reporting** workspace.
+> You can only edit an ER configuration if you are the configuration owner. Before you can edit an ER configuration, you must activate the appropriate ER configuration provider in the **Electronic reporting** workspace.
 
 #### <a id="ReviewProvidersList"></a>Review the list of ER configuration providers
 
@@ -125,7 +125,7 @@ For more information about ER configuration providers, see [Create configuration
 
 ### <a id="ImportERFormat"></a>Import the standard ER configurations
 
-To add the standard ER configurations to your current instance of Dynamics 365 Finance, import them from the ER [repository](general-electronic-reporting.md#Repository) that you configured for that instance.
+To add the standard ER configurations to your current instance of Dynamics 365 Finance, you must import them from the ER [repository](general-electronic-reporting.md#Repository) that was configured for that instance.
 
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
 1. On **Localization configurations**, in the **Configuration providers** section, select the **Microsoft** tile, and then select **Repositories** to view the list of repositories for the **Microsoft** provider.
@@ -137,14 +137,14 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-import-solution.png" alt-text="Screenshot of importing the standard ER configurations on the Configuration repository page.":::
 
 > [!TIP]
-> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services instead.
+> If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from Microsoft Dynamics Lifecycle Services (LCS) instead.
 
 ### <a id="ReviewImportedERSolution"></a>Review the imported ER configurations
 
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
 1. On **Localization configurations**, in the **Configurations** section, select the **Reporting configurations** tile.
 1. On **Configurations**, in the configuration tree in the left pane, expand **Invoice model**.
-1. In addition to the selected **Free text invoice (Excel)** ER format, the import process brings in other required ER configurations. Make sure that the following ER configurations are available in the configuration tree:
+1. In addition to the selected **Free text invoice (Excel)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configuration tree:
 
     - **Invoice model** – This configuration contains the data model ER component that represents the data structure of the invoicing business domain.
     - **Invoice model mapping** – This configuration contains the model mapping ER component that describes how the data model is filled in with application data at runtime.
@@ -156,9 +156,9 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 
 ### <a id="ConfigurePrintManagement1"></a>Set up print management
 
-1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**.
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. On **Free text invoice**, select the **FTI-00000002** invoice. Then, on the Action Pane, on the **Invoice** tab, in the **Print management** group, select **Print management**.
-1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original \<Default\>** item.
+1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original *Default*** item.
 1. In the **Report format** field, select **Free text invoice (Excel)**.
 1. Select the **Esc** key to leave **Print management setup** and return to **Free text invoice**.
 
@@ -174,9 +174,9 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 
 ## <a id="CustomizeProvidedFormat"></a>Customize the standard ER format
 
-For the example in this section, use the ER configurations that Microsoft provides to generate a free text invoice in Excel format. However, add a customization to put a company logo image in the page footer of generated invoices.
+For the example in this section, use the ER configurations that Microsoft provides to generate a free text invoice in Excel format. However, you must add a customization to put a company logo image in the page footer of generated invoices.
 
-In this case, as the representative of Litware, Inc., create (derive) a new ER format configuration that's based on the Microsoft-provided **Free text invoice (Excel)** configuration.
+In this case, as the representative of Litware, Inc., you must create (derive) a new ER format configuration based on the Microsoft-provided **Free text invoice (Excel)** configuration.
 
 ### <a id="DeriveProvidedFormat"></a>Create a custom format
 
@@ -210,7 +210,7 @@ Configure your custom format so that a company logo image appears in the footer 
 
 1. Select the **Free text invoice \\ Invoice \\ Footer** element.
 
-    :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-derived-format0.png" alt-text="Screenshot of footer element in the ER Operations designer.":::
+    :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-derived-format0.png" alt-text="Screenshot of the Footer element in the ER Operations designer.":::
 
     > [!NOTE]
     > Every page footer of a generated invoice contains information about the current page number and the total number of pages in the report. As you can see, the **Free text invoice \\ Invoice \\ Footer** element contains no child elements. Therefore, the Excel template that you're using is configured to show paging details in the center of every report's footer.
@@ -223,7 +223,7 @@ Configure your custom format so that a company logo image appears in the footer 
     1. Select **OK**.
 
         > [!NOTE]
-        > Use the **Excel \\ Picture** element to add a company logo image and align it on the right side of the page footer.
+        > The **Excel \\ Picture** element is used to add a company logo image and align it on right side of the page footer.
 
     :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-derived-format1.png" alt-text="Screenshot of properties of the Picture element in the Component properties dialog box.":::
 
@@ -231,7 +231,7 @@ Configure your custom format so that a company logo image appears in the footer 
 1. Expand **model.Payment** > **model.InvoiceBase** > **model.InvoiceBase.CompanyInfo**, and then select the **model.InvoiceBase.CompanyInfo.Logo** data source field. The data source field of the [Container](er-formula-supported-data-types-composite.md#container) type exposes the company logo image as media content.
 1. Select **Bind**. The **Picture** format element is now bound with the **model.InvoiceBase.CompanyInfo.Logo** data source field. Therefore, at runtime, a company logo image appears in the footer of generated invoices.
 
-    :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-derived-format2.png" alt-text="Screenshot of picture format element bound with the model.InvoiceBase.CompanyInfo.Logo data source field in the ER Operations designer.":::
+    :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-derived-format2.png" alt-text="Screenshot of Picture format element bound with the model.InvoiceBase.CompanyInfo.Logo data source field in the ER Operations designer.":::
 
 1. Select **Save**, and then close the **Designer** page.
 
@@ -243,7 +243,7 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 
 1. Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 1. On **Configurations**, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-1. In **User parameters**, set the **Run settings** option to **Yes**, and then select **OK**.
+1. In the **User parameters** dialog box, set the **Run settings** option to **Yes**, and then select **OK**.
 1. Select **Edit** to make the current page editable. In the configuration tree in the left pane, select **Free text invoice (Excel) custom**.
 1. Set the **Run Draft** option to **Yes**.
 
@@ -253,7 +253,7 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 
 ### <a id="ConfigurePrintManagement2"></a>Set up print management
 
-1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**.
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 1. On **Free text invoice**, select the **FTI-00000002** invoice. Then, on the Action Pane, on the **Invoice** tab, in the **Print management** group, select **Print management**.
 1. On **Print management setup**, in the tree on the left, expand **Module - accounts receivable** > **Documents** > **Free text invoice**, and then select the **Original** **\<Default\>** item.
 1. In the **Report format** field, select **Free text invoice (Excel) custom**.
@@ -263,7 +263,7 @@ To use the draft version of an ER format, you must explicitly mark the ER format
 
 1. On **Free text invoice**, make sure that the **FTI-00000002** invoice is still selected. Then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Print** \> **Selected**.
 1. Download the generated invoice in Excel format, and open it for preview.
-1. Notice that, in accordance with the structure of the custom ER format, the page footer of the generated invoice contains a company logo image in addition to information about the report's paging.
+1. In accordance with the structure of the custom ER format, the page footer of the generated invoice contains a company logo image in addition to information about the report's paging.
 
 :::image type="content" source="./media/er-embed-images-header-footer-excel-reports-print-invoice2.gif" alt-text="Screenshot of generated free text invoice with a company logo image in the page footer.":::
 

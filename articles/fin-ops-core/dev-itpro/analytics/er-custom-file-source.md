@@ -4,7 +4,7 @@ description: Learn about how to extend the list of Electronic reporting (ER) sou
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -68,7 +68,7 @@ Use the [Load from XML file](er-defer-sequence-element.md#import-the-sample-er-c
 1. Write code that uses the `ERIImportFile` public interface to describe a custom inbound file. To comply with the ER framework's requirements for handling inbound files, specify the following information:
 
     - A key to uniquely identify a custom source at runtime (the `sourceSettingsKey` variable in this example), and the methods to get and set this key. The key is important because there might be many sources.
-    - [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) values to specify the date and time of inbound file creation and modification (the `createdDateTime` and `modifiedDateTime` variables in this example), and the methods to get and set these dates. The values are used at runtime to sort and filter inbound documents that a custom source recognizes.
+    - [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) values to specify the date and time of inbound file creation and modification (the `createdDateTime` and `modifiedDateTime` variables in this example), and the methods to get and set these dates. The values are used at runtime to sort and filter inbound documents that are recognized in a custom source.
     - A method to load an inbound file from a custom source (the `Load()` method in this example).
     - A method to delete an imported file in custom storage (the `Delete()` method in this example).
     - A method to expose additional information about an inbound file (the `parmAdditionalInfo()` method in this example), so that this information can be stored and then extracted upon request.
@@ -384,7 +384,7 @@ Use the [Load from XML file](er-defer-sequence-element.md#import-the-sample-er-c
     - A key (the `SettingsKey` text constant in this example) to uniquely identify settings of a custom source at runtime. Use a class name to guarantee the uniqueness of keys of this type.
     - The name of a custom source (the `Folder` text constant in this example) to present a custom source in the appropriate UI dialog box at design time.
     - A parameter (the `isEnabled` variable in this example) to indicate whether a custom source is enabled at design time for use at runtime.
-    - Because all these parameters must be stored as parts of a single binary object in the application database, they must be packed for this purpose at design time and then unpacked when they are requested at runtime. Implement the appropriate methods to support this process.
+    - Because all these parameters must be stored as parts of a single binary object in the application database, they must be packed for this purpose at design time and then unpacked when they are requested at runtime. The appropriate methods must be implemented to support this process.
     - Pay attention to the `fileImported()` method that is used to implement the logic of any required post-processing that must be applied to the imported file. The argument of this method represents an imported file itself and information about the import that is performed. A state manager is included. This state manager includes a logger that collects information about whether an imported file was deleted or moved to another location. In this example, the code moves successfully imported files to another folder (**C:\\InboundFiles\\Archive**) of the local file system and keeps the original file names.
 
     ```xpp
@@ -578,8 +578,8 @@ Use the [Load from XML file](er-defer-sequence-element.md#import-the-sample-er-c
 
     :::image type="content" source="media/er-custom-file-source-form-extension.png" alt-text="Screenshot of the custom UI in the Visual Studio designer.":::
 
-1. Append a new class to your Visual Studio project. For this example, use `ContosoImportFormatSourceSettingsEventHandlers`.
-1. Write the event handler code for an extended form of settings of a custom source. This step requires that you implement the public `ERIImportFileSourceSettingsStorage` interface.
+11. Append a new class to your Visual Studio project. For this example, use `ContosoImportFormatSourceSettingsEventHandlers`.
+1. Write the event handler code for an extended form of settings of a custom source. This step requires implementation of the public `ERIImportFileSourceSettingsStorage` interface.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -685,13 +685,13 @@ Use the [Load from XML file](er-defer-sequence-element.md#import-the-sample-er-c
 
     :::image type="content" source="./media/er-custom-file-source-run-model-mapping.png" alt-text="Screenshot of running the ER model mapping to import data from an .xlsx file that is located in a custom source.":::
 
-1. Browse to the local **C:\\InboundFiles\\Archive** folder to find the imported **1099import-data.xlsx** file that the system moved from the **C:\\InboundFiles\\Source** local folder, based on the post-processing logic that you defined in the source code.
+1. Browse to the local **C:\\InboundFiles\\Archive** folder to find the imported **1099import-data.xlsx** file that is moved from the **C:\\InboundFiles\\Source** local folder, based on the post-processing logic that is defined in the source code.
 1. Follow these steps to review the current status of the configured custom source of inbound files.
 
     1. Go to **Organization administration** > **Electronic reporting** > **Electronic reporting source**.
     1. On the **Electronic reporting source** page, select **File states for the sources** to review the content of the configured custom file source for the current ER format.
     1. On **File states for the sources**, in the **File source** list, select the **From a local folder** source.
-    1. On the **Files** tab, select **Refresh** to see the previously imported **1099import-data.xlsx** file that the system moved from the **C:\\InboundFiles\\Source** folder to the **C:\\InboundFiles\\Archive** folder.
+        1. On the **Files** tab, select **Refresh** to see the previously imported **1099import-data.xlsx** file that is moved from the **C:\\InboundFiles\\Source** folder to the **C:\\InboundFiles\\Archive** folder.
 
     :::image type="content" source="media/er-custom-file-source-files-state2.png" alt-text="Screenshot of reviewing the state of files for the custom file source on the File states for the sources page after file import.":::
 
