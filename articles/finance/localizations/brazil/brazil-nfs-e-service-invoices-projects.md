@@ -3,11 +3,17 @@
 This article describes how to set up and use NFS-e (Nota Fiscal de Serviço Eletrônica) service invoices with the **Project management and accounting** module in Microsoft Dynamics 365 Finance and Dynamics 365 Project Operations.
 
 > [!NOTE]
-> This functionality extends the existing NFS-e service invoice support to project-based transactions. Before you proceed, complete all the prerequisite setup steps described in [Work with NFS-e Service Invoices](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/brazil/brazil-nfs-e-service-invoices), including enabling the Brazil reformed tax feature, importing Electronic Reporting configurations, and populating the NBS and operation indicator code tables.
+> This functionality extends the existing NFS-e service invoice support to project-based transactions. Before you proceed, complete all the prerequisite setup steps described in [Set up Brazil reformed tax](brazil-reform-setup.md) and [Work with NFS-e Service Invoices](brazil-nfs-e-service-invoices.md), including enabling the Brazil reformed tax feature, enabling the tax calculation configuration, importing Electronic Reporting configurations, and populating the NBS and operation indicator code tables.
 
 ## Prerequisites
 
 Before you can generate NFS-e XML for project invoices, the following project-specific configuration is required in addition to the general NFS-e prerequisites.
+
+### Enable the tax calculation configuration
+
+1. Go to **Tax** \> **Setup** \> **Tax calculation parameters** and enable **Advanced tax calculation** for the **Project** business process.
+
+This settings is required. If the Advanced tax calculation is not enabled for the Project business process, the NBS code and operation indicator code fields are not visible on project forms, and NFS-e data is not propagated during posting.
 
 ### Set NFS-e tax burden percentages on the fiscal establishment
 
@@ -21,7 +27,7 @@ The approximate tax burden percentages for the Federal NFS-e format can now be s
    - **Approximate state tax percentage** – the estimated portion of total tax that is state.
    - **Approximate city tax percentage** – the estimated portion of total tax that is municipal.
 
-Make sure all three fields are filled (use 0 where a level doesn't apply) and that they total 100%.
+Make sure all three fields are filled (use 0 where a level doesn't apply).
 
 ### Assign NBS and operation indicator codes to project categories
 
@@ -34,11 +40,17 @@ Each project category that represents a service must be assigned NBS and operati
    - **Operation Indicator Code** – select the code that indicates the nature of the service operation (for example, within city, outside city, or abroad).
 4. Repeat for all service-related project categories.
 
+> [!IMPORTANT]
+> The **Operation Indicator Code** field depends on the selected **NBS code**. When you change the NBS code, the operation indicator code is automatically cleared. The lookup for the operation indicator code shows only codes that are linked to the currently selected NBS code. If you clear the NBS code, the operation indicator code is also cleared.
+
 These values serve as defaults for project journal lines and on-account transactions that use the category.
 
 ## Provide NBS and operation indicator codes on project transactions
 
-When you create project transactions, verify that the NBS code and operation indicator code are populated. The values default from the project category but can be overridden on each transaction.
+When you create project transactions, verify that the NBS code and operation indicator code are populated. The values default from the project category but can be manually overridden on each transaction. When you select or change a project category on a transaction line, the NBS code and operation indicator code are updated to match the category defaults. However, if you clear the category, the existing NBS and operation indicator code values are preserved.
+
+> [!NOTE]
+> Expense transactions require a Time & Material project contract with billing rules. Ensure that the expense-related project categories are included as chargeable categories on the project contract.
 
 ### On-account transactions
 
@@ -85,11 +97,13 @@ When you create an invoice proposal for a project, additional NFS-e fields are a
 1. Go to **Project management and accounting** \> **Project invoices** \> **Project invoice proposals**.
 2. Create or open an invoice proposal.
 3. Select the **Header** tab and set the following fields:
-   - **Reason for not providing Foreigner ID** – if the project customer doesn't have a Brazilian tax identification number (NIF), select the appropriate reason code from the dropdown. This field is enabled when the customer's Foreign ID is blank.
+   - **Reason for not providing Foreigner ID** – if the project customer doesn't have a Brazilian tax identification number (NIF), select the appropriate reason code from the dropdown. This value can also be set on the customer record itself and defaults onto the invoice proposal. The value is carried through to the fiscal document.
    - **LOCATION OF SERVICE PROVISION** group:
-     - **Foreign** – set to **Yes** if the service was performed outside Brazil. The default is **No** (domestic).
-     - **Domestic** – if the service was performed within Brazil, specify the state or city where the service was provided.
+     - **Foreign** – set to **Yes** if the service was performed outside Brazil. The default is **No** (domestic). When you toggle this setting, the previously set location field (domestic or foreign) is cleared automatically.
+     - **Domestic** – if **Foreign** is set to **No**, specify the city where the service was provided.
      - **Foreign** – if **Foreign** is set to **Yes**, select the country/region where the service was performed.
+
+4. On the **Header** tab, in the **General** section, set the **Invoice template** field to **FiscalDocument_BR.Report**. This is required for the NFS-e fiscal document to be generated correctly when the proposal is posted.
 
 ### Invoice proposal transaction lines
 
@@ -101,7 +115,7 @@ On the invoice proposal form, select the **Lines** tab. In the **Invoice proposa
 - **On-account** – displays the NBS code and operation indicator code from the on-account transactions.
 - **Expense** – displays the NBS code and operation indicator code from the expense transactions.
 
-These values are carried from the originating project transactions. You can verify or update them before posting the invoice.
+These values are carried from the originating project transactions. You can verify or update them before posting the invoice. The same dependency behavior applies here: changing the NBS code on a proposal line clears the operation indicator code, and the operation indicator code lookup filters by the selected NBS code.
 
 ## Verify NFS-e data on fiscal documents
 
