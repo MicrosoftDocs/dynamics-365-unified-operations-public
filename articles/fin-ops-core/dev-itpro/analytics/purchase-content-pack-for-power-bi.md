@@ -57,7 +57,7 @@ The following sections provide an overview of the visualizations.
 
 #### Example
 
-:::image type="content" source="media/spend1.png" alt-text="Screenshot of Purchase by vendor.":::
+:::image type="content" source="media/purchase-spend-analysis-vendor-dashboard.png" alt-text="Screenshot of Purchase by vendor." lightbox="media/purchase-spend-analysis-vendor-dashboard.png":::
 
 ### Purchase by product report page
 
@@ -75,7 +75,7 @@ The following sections provide an overview of the visualizations.
 
 #### Example
 
-:::image type="content" source="media/purchaseByProduct.png" alt-text="Screenshot of Purchase by Product.":::
+:::image type="content" source="media/purchase-spend-analysis-dashboard-products.png" alt-text="Screenshot of Purchase by Product." lightbox="media/purchase-spend-analysis-dashboard-products.png":::
 
 ### Purchase by period report page
 
@@ -95,7 +95,7 @@ This page shows purchases for the current and previous years, and growth by proc
 
 #### Example
 
-:::image type="content" source="media/purchaseByPeriod.png" alt-text="Screenshot of Purchase by Period.":::
+:::image type="content" source="media/purchase-spend-analysis-yoy-dashboard.png" alt-text="Screenshot of Purchase by Period." lightbox="media/purchase-spend-analysis-yoy-dashboard.png":::
 
 ### Purchase by vendor location report page
 
@@ -107,7 +107,7 @@ This page shows purchases for the current and previous years, and growth by proc
 
 #### Example
 
-:::image type="content" source="media/purchByVendorLocation.png" alt-text="Screenshot of Purchase by Vendor Location.":::
+:::image type="content" source="media/purchase-spend-analysis-vendor-location-map.png" alt-text="Screenshot of Purchase by Vendor Location." lightbox="media/purchase-spend-analysis-vendor-location-map.png":::
 
 ### Purchase spend analysis by time report page
 
@@ -118,7 +118,7 @@ This page shows purchases for the current and previous years, and growth by proc
 
 #### Example
 
-:::image type="content" source="media/purchSpendByTime.png" alt-text="Screenshot of Purchase Spend by Time.":::
+:::image type="content" source="media/purchase-spend-analysis-time-report.png" alt-text="Screenshot of Purchase Spend by Time." lightbox="media/purchase-spend-analysis-time-report.png":::
 
 ### Purchase spend analysis by vendor report page
 
@@ -130,7 +130,7 @@ This page shows purchases for the current and previous years, and growth by proc
 
 #### Example
 
-:::image type="content" source="media/PurchSpendAnalysisByVendor.png" alt-text="Screenshot of Purchase spend by vendor.":::
+:::image type="content" source="media/purchase-spend-analysis-vendor.png" alt-text="Screenshot of Purchase spend by vendor." lightbox="media/purchase-spend-analysis-vendor.png":::
 
 ## Data model and entities
 
