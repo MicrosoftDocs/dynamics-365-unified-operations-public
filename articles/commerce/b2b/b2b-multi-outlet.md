@@ -2,7 +2,7 @@
 title: B2B multioutlet capabilities (preview)
 description: Learn about the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
-ms.date: 03/13/2026
+ms.date: 04/16/2026
 ms.topic: overview
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -13,10 +13,9 @@ ms.custom:
   - bap-template
 ---
  
-# B2B multioutlet capabilities (preview)
+# B2B multioutlet capabilities
  
 [!INCLUDE [banner](../../includes/banner.md)]
-[!INCLUDE [banner](../../includes/preview-banner.md)]
 
 This article explains the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 
@@ -119,7 +118,7 @@ Contacts who placed orders can't be fully removed from the hierarchy. Disabling 
  
 When a contact is disabled, administrators are prompted to enter a reason (for example, role change, temporary suspension, or the user left the organization). This reason is stored for auditing and operational visibility.
  
-### Storefront experiences for multioutlet users
+### Multioutlet related storefront experiences 
  
 For users who can act on behalf of multiple organizations or outlets, the following storefront experiences apply:
  
@@ -133,13 +132,22 @@ For users who can act on behalf of multiple organizations or outlets, the follow
  
 When the B2B multioutlet feature is enabled, the business partner sign-up process allows for new B2B prospects to be submitted and processed with approval. The new contact-based user can then use the storefront sign-up process to gain access to the storefront.
  
-#### Organization-level orders and order templates
+#### Contact-level orders, order templates and invoices
  
-Order history visibility and order templates are available at the organization level so that users associated with the same organization can access shared purchasing history and templates.
+Order history, order templates and invoices are available at the contact level so that users can review and maintain their own orders, order templates and invoices with full organization views available for order history and invoices by administrator level users for an organization. Order templates can be shared from an administrator level user with other users at the same organization. Both orders and order templates will include clear labelling of the user who created it.
  
-> [!NOTE]
-> Currently, order templates and order history are only scoped at the organization level. User-level templates and order history are planned for a future release.
- 
+#### Order history page enhancements
+
+Administrator level users who have access to multiple organizations can see all orders by selecting a new option on the order history page. The order history page has searching and filtering capabilities as well that will help find orders quickly and easily.
+
+#### Expanded B2B indirect workflows to use contact-based users
+
+Distributors are able to switch between managing multiple B2B buyer and seller accounts with a single set of credentials through the same process using customer hierarchies.
+
+#### Account manager access to contact-based users through On behalf of (OBO) capabilities
+
+OBO enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on their behalf and have access to the same controls as the user themselves. Additionally, clear labelling on orders and order templates created by an OBO user will include the OBO user's name and the name of the user who was selected by them. 
+
 ### Contact-aware call center experiences
  
 B2B multioutlet support extends to assisted selling in Commerce by improving how customer service users identify and work with individual buyers.
@@ -162,7 +170,11 @@ Updated options within the customer service form are available to search for a s
  
 ## Enable the B2B multioutlet feature
  
-The **B2B Multi-Outlet Ordering with Contact-Based Access** feature is available for preview starting with Commerce version 10.0.47.
+The **B2B Multi-Outlet Ordering with Contact-Based Access** feature is available starting with Commerce version 10.0.48.
+
+> [!NOTE]
+> - Enabling this feature will trigger a batch job to migrate any existing B2B customers, B2B2B channels (distributors) and OBO configurations/users as part of the activation process. 
+> - This migration cannot be reversed and the feature can't be disabled once enabled. Testing in a non-production environment is strongly recommended.
  
 To enable the feature, follow these steps:
  
@@ -170,12 +182,12 @@ To enable the feature, follow these steps:
 1. Search for and enable the **B2B Multi-Outlet Ordering with Contact-Based Access** feature.
 1. Run the Commerce Data Exchange (CDX) **1010 (Customers)** job.
  
-> [!NOTE]
-> - The preview feature is only recommended for new B2B channel implementations without existing B2B users in the system.
-> - Once enabled, this feature can't be disabled.
 
 ## Additional resources
 
 [B2B multioutlet configuration](b2b-multi-outlet-configuration.md)
+[B2B indirect workflows](b2b-indirect.md)
+[Enable on behalf of (OBO) functionality](on-behalf-of.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
