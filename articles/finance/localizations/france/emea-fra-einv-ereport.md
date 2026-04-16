@@ -194,7 +194,7 @@ Electronic documents are preconfigured as a result of the globalization features
 
 ## Set up registration numbers
 
-If these registration types and categories already exist, skip this procedure.
+If these registration types and categories already exist and configured accordingly, skip this procedure.
 
 ### <a id="SIREN"></a>Set up SIREN number
 
@@ -259,7 +259,7 @@ To support the scenarios when companies have multiple subsidiaries with their ow
  - [Registration numbers setup for France](emea-fra-registration-numbers-setup-for-france.md) 
 
 > [!NOTE]
-> In current implementation, multiple registration numbers are supported only for Buyers. 
+> In current implementation of Electronic invoicing, multiple registration numbers are supported only for Buyers. 
 
 ## Set up address structure
 
@@ -306,6 +306,7 @@ To enter the registration numbers, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
+1. Select the **Address** which the registration numbers belong to. Make sure that the **Purpose** of the selected address contains the **Delivery** and **Invoice** values.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [SIREN](#SIREN) registration type that you created earlier.
 1. Select **Add**, and in the **Registration type** field, select the [SIRET](#SIRET) registration type that you created earlier.
@@ -319,7 +320,10 @@ To enter the registration numbers, follow these steps.
 
 ## <a id="ElAddr"></a>Configure electronic addresses
 
-Follow these steps electronic addresses for sellers or buyers that will be *primarily* used as **EndpointIDs** for documents routing.
+> [!NOTE]
+> The steps described in this chapter are required only if you do not use registration numbers of the **Branch ID** category. Electronic addresses configured via electronic document properties have higher priority and will overwrite registration numbers of the **Branch ID** category during e-invoices XML files generation.
+
+Follow these steps electronic addresses for sellers or buyers that will be used as **EndpointIDs** for documents routing.
 
 ### Configure electronic document properties
 
