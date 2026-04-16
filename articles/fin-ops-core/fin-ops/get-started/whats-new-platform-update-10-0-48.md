@@ -37,8 +37,10 @@ This section has a table that lists enhancements included in this release when a
 
 | Module or feature area | Feature name | More information | Enabled by |
 | --- | --- | --- | --- |
-
-
+| Developer tools | Struct.remove | We fixed a bug in the implementation of the ‘remove’ method on the struct class. This class is used to create name / value pairs in X++. Using the remove method did not completely remove the element in the struct: It only cleared the key (i.e., the field name) but left the value in place. This is now fixed. If you relied on the erroneous behavior, you need to revisit your code. | &nbsp; |
+| Developer tools | X++ | The ‘client’ and ‘server’ keywords that can be applied to X+ methods are now flagged as warnings and should be removed in existing code and not used in new code. These keywords were useful in the old Ax 2012 days when developers could choose to run methods on the client or the server tier. Currently all methods are executed on the server tier and these keywords do not make sense and may be confusing to new users. | &nbsp; |
+| Developer tools | X++ | We have introduced a new option for the X++ compiler executable, xppc.exe. You can now apply the -notodos option which causes ‘todo’ comments, where developers state a desire to finish something, to not make it into the output logs. | &nbsp; |
+| Developer tools | X++ | The SysDict class providing reflection over X++ classes, has been augmented with the ability to determine if a class is internal and whether or not a method is internal or protected internal. Similarly, the AccessSpecifier enum has been updated accordingly. | &nbsp; |
 
 ### Bug fixes
 
