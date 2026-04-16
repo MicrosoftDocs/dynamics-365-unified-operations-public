@@ -79,7 +79,7 @@ Set up three operating units by using the business unit as the operating unit ty
 
 Use the business unit as a financial dimension in the account structure for the ledger. Add the three operating units to the Enterprise establishment structure in Organization hierarchies.
 
-[![Establishments organizational hierarchy.](./media/EstablishmentsOrgStructure.png)]
+[![Establishments organizational hierarchy.](media/establishments-organization-structure.png)]
 
 To default the Establishment from a customer or vendor to the general journals, set the business unit in the Financial dimension fastTab on the customer or vendor to one of the three operating units setup; 252, 253, or 254. Alternatively, a financial dimension can also be added when entering the general journal.
 
