@@ -132,7 +132,7 @@ A company with multiple branches receives vendor invoices from a vendor's branch
 
 ### Configuration
 
-Create a *Branch ID* [**Registration type**](registration-ids.md#registration-type-creation) and assign it to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
+Create a *Branch ID* [**Registration type**](registration-ids.md#set-up-registration-types) and assign it to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
 
 Enable the **Require Registration IDs on vendor invoice** and **Require establishment on vendor invoice** parameters in **Accounts payable parameters**.
 
@@ -177,9 +177,9 @@ A company that has multiple branches issues customer invoices and must ensure th
 
 ### Configuration
 
-Create a *VAT ID* [**Registration type**](registration-ids.md#registration-type-creation) and assign it to the *VAT ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
+Create a *VAT ID* [**Registration type**](registration-ids.md#set-up-registration-types) and assign it to the *VAT ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
 
-Create a *Branch ID* [**Registration type**](registration-ids.md#registration-type-creation) and assign it to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
+Create a *Branch ID* [**Registration type**](registration-ids.md#set-up-registration-types) and assign it to the *Branch ID* [**Registration category**](registration-ids.md#assign-a-registration-category-to-a-registration-type).
 
 Enable the **Require Registration IDs on customer invoice** and **Require establishment on customer invoice** parameters in **Accounts receivable parameters**.
 
@@ -224,3 +224,5 @@ When you post an invoice:
 The resolved VAT and branch registration IDs are stored on the posted invoice and used for reporting, compliance, and electronic invoicing.
 
 For posted invoices, the **Registration IDs** button in customer invoice journal allows users to review the registration IDs that the system determined and stored at the time of posting.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
