@@ -1,10 +1,10 @@
 ---
-title: NAF codes 
+title: Use NAF codes 
 description: Learn about the purpose and usage of Nomenclature des Activités Françaises (NAF) codes in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 03/11/2026
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: France
 ms.search.validFrom: 2016-02-28

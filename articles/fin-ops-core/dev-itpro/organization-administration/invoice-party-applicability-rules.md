@@ -65,7 +65,7 @@ During invoice posting, the system evaluates these rules to determine:
 
 ## Use of invoice party applicability rules in establishment‑level invoice governance
 
-**Invoice party applicability rules** work together with [Establishments](organizations-organizational-hierarchies.md#establishments), when module‑specific invoice parameter in **Accounts payable**, **Accounts receivable**, and **Project management and accounting** is enabled.
+**Invoice party applicability rules** work together with [Establishments](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments), when module‑specific invoice parameter in **Accounts payable**, **Accounts receivable**, and **Project management and accounting** is enabled.
 
 | Parameter name | Parameter location in Finance | Description | 
 |----------------|-----------------|-------------|
@@ -76,11 +76,11 @@ During invoice posting, the system evaluates these rules to determine:
 These parameters control whether an **Establishment** is required on invoices and determine when establishment‑level **Registration IDs** must be enforced during invoice posting.
 When establishment enforcement is enabled, the system validates that an applicable establishment is specified on the invoice and uses the defined applicability rules to resolve the corresponding **Registration IDs**. 
 
-For more information about **Establishments** and how they are defined, see [Establishments](organizations-organizational-hierarchies.md#establishments).
+For more information about **Establishments** and how they are defined, see [Establishments](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments).
 
 ## Invoice party applicability rules and Vendor ship‑from address
 
-For vendor invoices, **Invoice party applicability rules** can also work together with the [**Vendor ship‑from address support on invoices** feature](../../../finance/accounts-payable/vendor-ship‑from-address.md).
+For vendor invoices, **Invoice party applicability rules** can also work together with the [**Vendor ship‑from address support on invoices** feature](../../../finance/accounts-payable/vendor-ship-from-address.md).
 When this feature is enabled, the ship‑from address identifies the vendor establishment that issued the goods or services. 
 This establishment can be used as an invoice party when evaluating invoice party applicability rules for registration categories.
 
@@ -93,7 +93,7 @@ In this scenario:
 
 This integration ensures that vendor invoices are validated against the correct vendor establishment, rather than only the vendor head office, and that the applicable **Registration IDs** are accurately resolved and immutably stored on posted invoices.
 
-For more information about how the ship‑from address is captured and validated on vendor invoices, see [**Vendor ship‑from address support on invoices**](../../../finance/accounts-payable/vendor-ship‑from-address.md).
+For more information about how the ship‑from address is captured and validated on vendor invoices, see [**Vendor ship‑from address support on invoices**](../../../finance/accounts-payable/vendor-ship-from-address.md).
 
 ## Invoice party applicability rules and Customer delivery address
 
