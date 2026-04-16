@@ -1,23 +1,14 @@
 ---
 title: Establishments and registration IDs in general journal
-description: This topic provides information on how Establishments and registration IDs are used in General journals.
+description: This article provides information on how Establishments and registration IDs are used in General journals.
 author: JodiChristiansen
 ms.date: 4/24/2026
 ms.topic: article
-
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
@@ -53,7 +44,7 @@ For more information, see Establishments.
 
 ## General ledger invoice scenarios
 
-You can use general journals in the General ledger to create invoices for customers in Accounts receivable and vendors in Accounts payable. When you enable the establishment governance feature, invoices created from General ledger journals must meet the same establishment and registration ID requirements as invoices that originate from other modules. This requirement includes any journals that you created but didn't post. After you enable the feature, review all open journals for the Registration IDs and Establishments. If you set them up to default to new journals, they automatically populate when you post the existing journals.
+Use general journals in the General ledger to create invoices for customers in Accounts receivable and vendors in Accounts payable. When you enable the establishment governance feature, invoices created from General ledger journals must meet the same establishment and registration ID requirements as invoices that originate from other modules. This requirement includes any journals that you created but didn't post. After you enable the feature, review all open journals for the Registration IDs and Establishments. If you set them up to default to new journals, they automatically populate when you post the existing journals.
 
 Module-specific invoice parameters determine whether:
 
@@ -79,7 +70,7 @@ Set up three operating units by using the business unit as the operating unit ty
 
 Use the business unit as a financial dimension in the account structure for the ledger. Add the three operating units to the Enterprise establishment structure in Organization hierarchies.
 
-[![Establishments organizational hierarchy.](media/establishments-organization-structure.png)]
+:::image type="content" source="media/establishments-organization-structure.png" alt-text="Screenshot of establishments organizational hierarchy.":::
 
 To default the Establishment from a customer or vendor to the general journals, set the business unit in the Financial dimension fastTab on the customer or vendor to one of the three operating units setup; 252, 253, or 254. Alternatively, a financial dimension can also be added when entering the general journal.
 
