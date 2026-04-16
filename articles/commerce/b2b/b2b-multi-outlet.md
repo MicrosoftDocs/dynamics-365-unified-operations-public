@@ -118,7 +118,7 @@ Contacts who placed orders can't be fully removed from the hierarchy. Disabling 
  
 When a contact is disabled, administrators are prompted to enter a reason (for example, role change, temporary suspension, or the user left the organization). This reason is stored for auditing and operational visibility.
  
-### Multioutlet related storefront experiences 
+### Multioutlet-related storefront experiences
  
 For users who can act on behalf of multiple organizations or outlets, the following storefront experiences apply:
  
@@ -134,11 +134,16 @@ When the B2B multioutlet feature is enabled, the business partner sign-up proces
  
 #### Contact-level orders, order templates and invoices
  
-Order history, order templates and invoices are available at the contact level so that users can review and maintain their own orders, order templates and invoices with full organization views available for order history and invoices by administrator level users for an organization. Order templates can be shared from an administrator level user with other users at the same organization. Both orders and order templates will include clear labelling of the user who created it.
+The following distinctions apply to order history, order templates, and invoices based on their permission level:
+
+- Users can review and maintain their own orders, order templates, and invoices.
+- Administrator-level users can view organization-wide order history and invoices for their organization.
+- Administrator-level users can share order templates with other users in the same organization.
+- Orders and order templates include clear labeling that identifies the user who created them.
  
 #### Order history page enhancements
 
-Administrator level users who have access to multiple organizations can see all orders by selecting a new option on the order history page. The order history page has searching and filtering capabilities as well that will help find orders quickly and easily.
+Administrator-level users who have access to multiple organizations can see all orders by selecting a new option on the order history page. The order history page also includes search and filter capabilities to help users find orders quickly and easily.
 
 #### Expanded B2B indirect workflows to use contact-based users
 
@@ -146,7 +151,7 @@ Distributors are able to switch between managing multiple B2B buyer and seller a
 
 #### Account manager access to contact-based users through On behalf of (OBO) capabilities
 
-OBO enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on their behalf and have access to the same controls as the user themselves. Additionally, clear labelling on orders and order templates created by an OBO user will include the OBO user's name and the name of the user who was selected by them. 
+OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labelling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name.
 
 ### Contact-aware call center experiences
  
@@ -187,7 +192,7 @@ To enable the feature, follow these steps:
 
 [B2B multioutlet configuration](b2b-multi-outlet-configuration.md)
 [B2B indirect workflows](b2b-indirect.md)
-[Enable on behalf of (OBO) functionality](on-behalf-of.md)
+[Enable on behalf of (OBO) functionality](../on-behalf-of.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
