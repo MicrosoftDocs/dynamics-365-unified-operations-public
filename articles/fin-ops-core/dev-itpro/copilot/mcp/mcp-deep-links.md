@@ -25,6 +25,15 @@ The target for the deep link navigation is dependent on the number of records re
 | Show me all customers whose name begins with "Contoso". | The MCP server uses the `data_find_entities_sql` tool to query the CustomersV3 entity to find all customers where the name is like 'Contoso%'. | The MCP response includes: <ul><li>The list of all customers whose name starts with "Contoso".</li><li>A deep link URL to the `CustTable` list page, with a filter applied to the Name column for only values that begin with "Contoso".</li></ul> |
 | Confirm sales order 000811. | The MCP server uses form tools to open select the "Confirm now" action on the `SalesTableDetails` form for order number 000811. | The MCP response includes: <ul><li>Detail about the confirmed sales order.</li><li>A deep link URL to the `SalesTable` list page, with a filter applied limiting the list to the single record for order number 000811.</li></ul>
 
+The MCP deep link feature returns the deep link URL in the MCP response, but this doesn't necessarily mean that the agent orchestrator will automatically format and display the deep link to the user in the agent response. Each agent client may have different formats and surfaces for displaying deep links and citations. You may need to add guidance in your agent instructions on how to format and display the deep link in the agent response. For example, in an agent in Copilot Studio, you an add instructions similar to the following:
+
+```
+# Citation And Deep Links Instructions
+- Tool responses may include citations in a `DeepLinks` array in the JSON body. Each deep link has a `Url` and `Label`. Always include these links in your response as clickable markdown links (e.g. `🔗 Label`) so the user can navigate directly to the referenced form or record in D365.
+- Always render DeepLinks URLs exactly as returned by tools — never reconstruct, simplify, or strip query parameters (including encoded q= parameters). Use the full URL verbatim in markdown link syntax.
+```
+
+## Deep link generation
 When a deep link is invoked, the system evaluates the query filters and determines the navigation behavior based on the number of matching records, and whether there is a formRef.
 
 | Result count | Navigation behavior |
@@ -35,7 +44,6 @@ When a deep link is invoked, the system evaluates the query filters and determin
 
 When the navigation results in multiple matching records, the `McpDeepLinkBrowser` provides a dynamically generated grid view. 
 
-## Deep link generation
 The MCP has multiple sets of tools for completing MCP operations. Because of the differences in technologies among the tool sets, the deep link URL is generated differently depending on the MCP tool used to fulfill the request. This also results in slightly different behavior for the deep link navigation, noted in the examples in the previous section.
 
 **For SQL-based MCP tools**, filters are extracted from the WHERE clause of the tool query. A three-tier link generation strategy is then applied:
@@ -86,3 +94,5 @@ Optionally, the `crossCompany=true` parameter may be added to the URL to display
 - The McpDeepLinkBrowser currently provides view-only navigation and does not support click-through to detail forms.
 - The PurchaseRequisitionNumber field on PurchReqTable cannot currently be resolved through the entity resolver.
 - Large filter sets may exceed browser URL length limits (approximlately 2000 characters).
+- No deep links are returned for MCP requests that perform delete operations on data.
+- Deep links are not returned by default for the API action tools in the MCP server.
