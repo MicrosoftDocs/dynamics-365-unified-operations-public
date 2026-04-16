@@ -253,6 +253,8 @@ If configured, Branch IDs will be used as **electronic addresses** for documents
 > 
 > If Branches cannot be used as electronic addresses due to some reasons then you alternatively can configure electronic addresses via electronic document properties as described in the [Configure electronic addresses](#ElAddr) chapter. In this case, only one electronic address per invoice party is supported.
 
+:::image type="content" source="e-inv-fra-regids-rules.jpg" alt-text="Screenshot of the registration IDs applicability rules configuration page.":::
+
 ## Set up address structure
 
 Set up the postal address structure.
