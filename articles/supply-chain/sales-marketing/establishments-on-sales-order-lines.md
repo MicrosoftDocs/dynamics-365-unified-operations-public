@@ -1,7 +1,7 @@
 ---
 title: Use establishments on Sales Order Lines
 description: Learn how to configure, default, and validate establishments on sales order lines to meet invoice compliance requirements.
-author: Aditi Pattanaik
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
@@ -31,9 +31,9 @@ This parameter controls whether an **Establishment** is required on invoices and
 When you enable establishment enforcement, the system validates that an applicable establishment is specified on the invoice and uses the defined applicability rules to resolve the corresponding **Registration IDs**. 
 This validation ensures consistent identification of invoice parties at both legal entity and establishment levels and guarantees that the correct registration information is validated and immutably stored on posted invoices.
 
-For more information about **Establishments** and how they're defined, see [Establishments](organizations-organizational-hierarchies.md#establishments).
+For more information about **Establishments** and how they're defined, see [Establishments](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments).
 
-To learn more about Registration IDs, see [Registration ID](articles/fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
+To learn more about Registration IDs, see [Registration ID](../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 
 ## Why establishments matter
