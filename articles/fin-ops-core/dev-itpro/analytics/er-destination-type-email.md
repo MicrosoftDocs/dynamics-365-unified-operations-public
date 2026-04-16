@@ -4,7 +4,7 @@ description: Learn about how to configure an email destination for each FOLDER o
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/03/2026
+ms.date: 04/15/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -68,23 +68,25 @@ You can specify the email sender and email recipients. By default, an email is s
 >
 > When an email destination is offered for modification at [runtime](electronic-reporting-destinations.md#security-considerations), the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailMaintain` security privilege, **Maintain the sender email address for ER format destination**.
 >
-> When the **From** field is configured to use an email address other than the current user's, either the **Send as** or **Send on behalf** permission must be correctly [set](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) in advance. Otherwise, the following exception is thrown at runtime: "Unable to send email as \<from email account\> from the \<current user account\> account, please check the 'Send as' permissions on the \<from email account\>."
+> When you configure the **From** field to use an email address other than the current user's, you must correctly [set](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) either the **Send as** or **Send on behalf** permission in advance. Otherwise, the following exception is thrown at runtime: "Unable to send email as \<from email account\> from the \<current user account\> account, please check the 'Send as' permissions on the \<from email account\>."
 
 You can configure the **From** field to return more than one email address. In this case, the first address in the list is used as the email sender address.
 
 To specify email recipients, configure the **To** and **Cc** (optional) fields.
 
+As of version 10.0.48, you can also configure **BCC** (optional) field.
+
 You can configure email addresses for ER in two ways. You can complete the configuration in the same way as the Print Management feature, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 ## Email address types
 
-If you select **Edit** next to the **From**, **To**, or **Cc** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, or **Email cc** dialog box appears. You can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
+If you select **Edit** next to the **From**, **To**, **Cc**, or **BCC** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, **Email cc**, or **Email BCC** dialog box appears. You can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
 
 :::image type="content" source="./media/ER_Destinations-EmailSelectAddressType.png" alt-text="Screenshot of selecting the type of email address." lightbox="./media/ER_Destinations-EmailSelectAddressType.png":::
 
 ### Print Management email
 
-If you select **Print Management email** as the email address type, enter fixed email addresses in the **Email from**, **Email to**, or **Email cc** dialog box by setting the following fields:
+If you select **Print Management email** as the email address type, enter fixed email addresses in the **Email from**, **Email to**, **Email cc**, or **Email BCC** dialog box by setting the following fields:
 
 - In the **Email source** field, select **None**.
 - In the **Additional email addresses, separated by ";"** field, enter the fixed email addresses.
