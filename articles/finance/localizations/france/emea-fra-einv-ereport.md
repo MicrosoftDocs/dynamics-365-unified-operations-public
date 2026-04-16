@@ -506,7 +506,7 @@ The following types of invoices are processed during the submission.
 To enquire the initial status of the submitted electronic invoices from Edicom, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-1. In the **Channel** field, select the export channel you [created](#ExChannel), and then select **OK**.
+1. In the **Channel** field, select the **EdiStatus** export channel or the channel you [created](#ExChannel) for invoices, and then select **OK**.
 
 Check the results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**. The documents can be in either **Falied** status if it was rejected by Edicom due to syntactical, semantical or other validation errors, or **Pending update actions execution** if it is successfully validated by Edicom and ready for further processing.
 
@@ -588,6 +588,8 @@ Current implementation allows sending only *payment reception confirmation* resp
 1. Select **OK** to start the responses submission process.
    > [!NOTE]
    > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AR respsone** feature setup is being run for responses processing.
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+1. In the **Channel** field, select the **InvStatus** export channel or the channel you [created](#ExChannel) for responses, and then select **OK**.
 1. Check the responses submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, select **Customer invoice response** document type.  
 
 ### Send responses for Pending vendor invoices
@@ -604,6 +606,8 @@ Current implementation allows sending only *refusal* responses to your Sellers. 
 1. Select **OK** to start the responses submission process.
    > [!NOTE]
    > At this stage, the **French electronic invoice status (FR)** globalization feature, **Send AP respsone** feature setup is being run for responses processing.
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+1. In the **Channel** field, select the **InvStatus** export channel or the channel you [created](#ExChannel) for responses, and then select **OK**.
 1. Check the responses submission results at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, select **Pending vendor invoice response** document type.  
 
 ## Appendix
