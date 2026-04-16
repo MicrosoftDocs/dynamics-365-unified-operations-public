@@ -178,7 +178,7 @@ Updated options within the customer service form are available to search for a s
 The **B2B Multi-Outlet Ordering with Contact-Based Access** feature is available starting with Commerce version 10.0.48.
 
 > [!NOTE]
-> - Enabling this feature will trigger a batch job to migrate any existing B2B customers, B2B2B channels (distributors) and OBO configurations/users as part of the activation process. 
+> - Enabling this feature will trigger a batch job to migrate any existing B2B customers, B2B2B channels (distributors) and OBO configurations/users as part of the activation process.
 > - This migration cannot be reversed and the feature can't be disabled once enabled. Testing in a non-production environment is strongly recommended.
  
 To enable the feature, follow these steps:
