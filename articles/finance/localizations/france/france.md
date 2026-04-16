@@ -40,7 +40,7 @@ This article includes information and links to resources that can help you set u
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
 - [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md)
-- [Establishments in France](emea-fra-establishments-in-france.md)
+- [Establishments in France](emea-fra-establishments-for-france.md)
 - [Registration numbers setup for France](emea-fra-registration-numbers-setup-for-france.md)
 - [NAF codes](fr-00003-naf-codes-siret-numbers.md)
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)

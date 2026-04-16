@@ -4,7 +4,7 @@ description: Organizational hierarchies represent the relationships between the 
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 04/16/2026
+ms.date: 04/24/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
@@ -51,11 +51,11 @@ The types of operating units include cost centers, business units, value streams
 
 > [!NOTE]
 > **Availability**: Establishments support in Dynamics 365 Finance is available starting with version **10.0.48**.
->  **Establishments** functionality in Dynamics 365 Finance is controlled by **Feature management**. To use **Establishments** in business documents and enable establishment‑level **Registration ID** validation and immutable storage on invoices, enable the **Establishment and Registration ID governance on invoices** feature. When the feature is turned off, establishment‑specific behavior (such as establishment selection, defaulting, and validation on invoices) isn't applied.
+> **Establishments** functionality in Finance is controlled by **Feature management**. To use **Establishments** in business documents and enable establishment‑level **Registration ID** validation and immutable storage on invoices, enable the **Establishment and Registration ID governance on invoices** feature. When the feature is turned off, establishment‑specific behavior (such as establishment selection, defaulting, and validation on invoices) isn't applied.
 
-In Dynamics 365 Finance, an establishment represents an operational unit of a legal entity that carries out economic activity on a stable basis and might require its own regulatory identifiers, such as registration numbers used on invoices and regulatory reports.
+In Finance, an establishment represents an operational unit of a legal entity that carries out economic activity on a stable basis and might require its own regulatory identifiers, such as registration numbers used on invoices and regulatory reports.
 
-You model establishments by using existing **Operating units**, combined with an **Organizational hierarchy** assigned with *Enterprise establishment structure* **Organizational hierarchy purpose**, to support invoicing and compliance scenarios. 
+You model establishments by using existing **Operating units**, combined with an **Organizational hierarchy** assigned with *Enterprise establishment structure* **Organizational hierarchy purpose**, to support invoicing and compliance scenarios.
 
 A single legal entity can have one or multiple establishments, while remaining the sole legal and accounting entity. All establishments share the same legal identity of the company but might have distinct operational identities for invoicing and regulatory purposes.
 
@@ -77,6 +77,7 @@ The system treats only **Operating units** that you explicitly include in a dedi
 - General journals
 
 Associate **Establishments** with inventory **Sites** (**Inventory management** > **Setup** > **Inventory breakdown** > **Sites**) to support transactional defaulting.
+
 When you link an inventory **Site** to an **Establishment**, the system can derive the issuing or receiving establishment of the legal entity for customer, vendor, or project invoice that reference that site. This association ensures consistent establishment identification across business documents that result in invoice posting.
 
 Associate **Establishments** with **Financial dimension values** to support transactional defaulting. When a **Financial dimension value** linked to an **Operating unit** included into an **Organizational hierarchy** assigned with **Enterprise establishment structure** purpose, is used on a business document, the system can derive and default the applicable **Establishments** for customer, vendor, or project invoices created from that document. This association complements site‑based defaulting and helps ensure consistent establishment identification across invoice‑generating processes.
@@ -94,28 +95,27 @@ Set up organizational hierarchies to view and report on your business from diffe
 
 Each hierarchy is assigned to a purpose. The purpose of a hierarchy determines the types of organizations that can be included in the hierarchy. The purpose also determines which application scenarios a hierarchy can be used in.
 
-Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and can't be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
+Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and can't be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. Learn more in [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
 
 ### Establishment hierarchy
 
 > [!NOTE]
-> **Availability**: Establishments support in Dynamics 365 Finance is available starting with version **10.0.48**.
->  **Establishments** functionality in Dynamics 365 Finance is controlled by **Feature management**. To use **Establishments** in business documents and enable establishment‑level **Registration ID** validation and immutable storage on invoices, enable the **Establishment and Registration ID governance on invoices** feature. When the feature is turned off, establishment‑specific behavior (such as establishment selection, defaulting, and validation on invoices) isn't applied.
+> **Availability**: Establishments support in Finance is available starting with version **10.0.48**.
+> **Establishments** functionality in Finance is controlled by **Feature management**. To use **Establishments** in business documents and enable establishment‑level **Registration ID** validation and immutable storage on invoices, enable the **Establishment and Registration ID governance on invoices** feature. When the feature is turned off, establishment‑specific behavior (such as establishment selection, defaulting, and validation on invoices) isn't applied.
 
 **Organizational hierarchies** can be used to define which **Operating units** represent valid **Establishments** within a legal entity.
 
-To support establishment scenarios, Dynamics 365 Finance introduces a dedicated organization hierarchy purpose: **Enterprise establishment structure**. This hierarchy purpose determines which operating units are considered establishments and participate in **Registration ID** validation and immutability on documents such as invoices.
+To support establishment scenarios, Finance introduces a dedicated organization hierarchy purpose: **Enterprise establishment structure**. This hierarchy purpose determines which operating units are considered establishments and participate in **Registration ID** validation and immutability on documents such as invoices.
 
 ## Using Organizational Hierarchies in Financial Reporting
 
 Organizational Hierarchies can be selected as a **Tree type** option in Financial Reporting. Financial reporting selects the current effective hierarch as noted by hierarchy. <!-- Following link has been moved. For more information, see [Reporting tree definitions in Financial Reports](/dev-itpro/analytics/financial-reporting-tree-definitions.md). -->
 
 ## Additional resources
+
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
 - [Create an organization hierarchy](tasks/create-organization-hierarchy.md)
 - [Create a legal entity](tasks/create-legal-entity.md)
 - [Create an operating unit](tasks/create-operating-unit.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

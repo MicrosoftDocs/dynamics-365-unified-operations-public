@@ -1,10 +1,10 @@
 ---
-title: Registration IDs
+title: Set up and use registration IDs
 description: The Registration IDs functionality provides a unified framework for managing registration IDs across all countries and regions.
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 04/16/2026
+ms.date: 04/24/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -15,74 +15,65 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 
 ---
 
-# Registration IDs
+# Set up and use registration IDs
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article provides information about setting up and using registration IDs.
+This article provides information about how to set up and use registration IDs.
 
-Many countries and regions have different regulations and requirements for recording registration numbers or IDs. 
-This article provides an overview of the required settings and processing of supported registration types for parties in different European countries and regions. 
-All countries and regions have their requirements for supporting various country- or region-specific functionalities related to registration numbers that different state offices provide. 
-Examples of registration IDs include VAT identification numbers, company registration numbers, tax identification numbers, national identification numbers for individuals, employer registration numbers, and customs or trade registration numbers.
+Many countries and regions have different regulations and requirements for recording registration numbers or IDs. This article provides an overview of the required settings and processing of supported registration types for parties in different European countries and regions.
 
-This functionality provides a unified framework for managing registration IDs across all countries and regions, while still accommodating country‑ or region‑specific regulatory requirements, 
-including those applicable in certain European countries and regions.
+All countries and regions have their requirements for supporting various country- or region-specific functionalities related to registration numbers that different state offices provide. Examples of registration IDs include VAT identification numbers, company registration numbers, tax identification numbers, national identification numbers for individuals, employer registration numbers, and customs or trade registration numbers.
 
-Within this unified framework, you define and process registration IDs through a consistent setup and data flow. 
-First, create **registration types** to represent different kinds of identification numbers that you map to specific **Country/region** and assign to **Registration category** that define validation and reporting behavior. 
-After you complete this configuration, enter and maintain registration IDs for legal entities, customers, vendors, and other counterparties.
+This functionality provides a unified framework for managing registration IDs across all countries and regions, while still accommodating country‑ or region‑specific regulatory requirements, including those applicable in certain European countries and regions.
+
+Within this unified framework, you define and process registration IDs through a consistent setup and data flow. First, create **registration types** to represent different kinds of identification numbers that you map to specific **Country/region** and assign to **Registration category** that define validation and reporting behavior. After you complete this configuration, enter and maintain registration IDs for legal entities, customers, vendors, and other counterparties.
+
 The following sections describe this overall flow for setting up and processing registration IDs.
 
-## Registration type creation
+## Set up registration types
 
-Before you can enter a registration ID, set up **Registration types** for the different types of registration numbers that each party is subject to. 
+Before you can enter a registration ID, set up **Registration types** for the different types of registration numbers that each party is subject to.
 
-Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types** to create and manage registration types for legal entities, vendors, customers, and workers in different countries and regions.
+Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types** to create and manage registration types for legal entities, vendors, customers, and workers in different countries and regions.
 
-|Field                 |Description      |
-|------------------------------|----------------------------|                                                                           
-| Name                | The name of the registration type. |                                                                           
-| Description         | The description of the registration type. |
-| Country/region      | The unique identifier of the country or region.|
-| Tax authority       | The tax authority that is associated with the registration type.|
-| Restricted to       | The kind of restriction that applies to the tax registration type: None, Person, Organization.|
-| Format              | The validation format for the registration type.|
-| Can be updated      | Defines if the registration number for the registration type can be updated after it's entered.|
-| Unique              | Defines if the registration number for the registration type is unique. |
+| Field                 | Description                  |
+| --------------------- | ---------------------------- |
+| Name                  | The name of the registration type. |
+| Description           | The description of the registration type. |
+| Country/region        | The unique identifier of the country or region. |
+| Tax authority         | The tax authority that is associated with the registration type. |
+| Restricted to         | The kind of restriction that applies to the tax registration type: None, Person, Organization. |
+| Format                | The validation format for the registration type. |
+| Can be updated        | Defines if the registration number for the registration type can be updated after it's entered. |
+| Unique                | Defines if the registration number for the registration type is unique. |
 | Primary for country/region | If a party is associated with one or more addresses in a particular country or region, and the registration ID is valid for all these addresses, you must designate one address as primary for the country or region. You can only register one ID as primary. Defines if the registration number can be entered only for primary for country or region address. |
 
 ## Assign a registration category to a registration type
 
-A **Registration category** is a country/region registration identifier that a country/region approves for use in tax, customs, and other purposes. 
-This category defines validation rules for a particular registration ID, including check digits, and inclusion registration ID in different reports. 
+A **Registration category** is a country or region registration identifier that a country/region approves for use in tax, customs, and other purposes. This category defines validation rules for a particular registration ID, including check digits, and inclusion registration ID in different reports.
 
-Use the page **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories** to assign the registration type of a particular country/region to a supported registration category.
+Use the page **Organization administration** > **Global address book** > **Registration types** > **Registration categories** to assign the registration type of a particular country/region to a supported registration category.
 
-| Field            | Description|
-|-----------------------|----------------|
-| Registration type     | The registration type in a particular country/region.|
-| Restricted to         | Displays the party type restriction that is defined for the selected registration type: None, Person, Organization.|
-| Registration category | The unique registration identifier approved for use in the country/region. The full list of [supported categories](#supported-registration-categories) is shown later in this article. |
+| Field                   | Description      |
+| ----------------------- | ---------------- |
+| Registration type       | The registration type in a particular country/region. |
+| Restricted to           | Displays the party type restriction that is defined for the selected registration type: None, Person, Organization. |
+| Registration category   | The unique registration identifier approved for use in the country/region. The full list of [supported categories](#supported-registration-categories) is shown later in this article. |
 
 ## Set up invoice party applicability rules for registration category
 
-Starting with Dynamics 365 Finance version 10.0.48, in registration categories, you can set up invoice party applicability rules to determine which registration IDs apply to each invoice party role based on country/region requirements, 
-organizational level, and address purpose. These rules ensure consistent selection, validation, and storage of registration IDs across all invoice types, supporting regulatory compliance and accurate invoicing.
+Starting with Dynamics 365 Finance version 10.0.48, in registration categories, you can set up invoice party applicability rules to determine which registration IDs apply to each invoice party role based on country/region requirements, organizational level, and address purpose. These rules ensure consistent selection, validation, and storage of registration IDs across all invoice types, supporting regulatory compliance and accurate invoicing.
 
-For more information, see [Invoice party applicability rules for registration category](invoice-party-applicability-rules.md).
+Learn more in the [Invoice party applicability rules for registration category](invoice-party-applicability-rules.md) article.
 
 ## Enter registration IDs for Global address book records
 
-The global address book (GAB) contains consolidated address information for customers, vendors, contacts, business relations, and legal entities. 
-The party records that you store in the global address book can contain one or more address records. 
-Use these addresses for different purposes, such as invoice, billing, or delivery. For more information, see [Global address book overview](../../../fin-ops-core/dev-itpro/organization-administration/overview-global-address-book.md). 
+The global address book (GAB) contains consolidated address information for customers, vendors, contacts, business relations, and legal entities. The party records that you store in the global address book can contain one or more address records. Use these addresses for different purposes, such as invoice, billing, or delivery. Learn more in the [Global address book overview](../../../fin-ops-core/dev-itpro/organization-administration/overview-global-address-book.md) article.
 
-Set up registration IDs for address information for legal entities, customers, vendors, and workers.
-Find the party (legal entity, vendor, customer, worker) record for which you want to enter the registration ID, and then select **Registration IDs** on forms related to party, legal entity, vendor, customer, worker 
-to open the **Manage addresses** page. On the **Registration ID** tab, select **Add**, and enter the following information about the registration ID.
+Set up registration IDs for address information for legal entities, customers, vendors, and workers. Find the party (legal entity, vendor, customer, worker) record for which you want to enter the registration ID, and then select **Registration IDs** on forms related to party, legal entity, vendor, customer, worker to open the **Manage addresses** page. On the **Registration ID** tab, select **Add**, and enter the following information about the registration ID.
 
-|Field                |Description                                                |
+|Field                | Description                                               |
 |---------------------|-----------------------------------------------------------|
 | Registration type   | The registration type in the selected country/region.     |
 | Registration number | The party registration ID.                                |
@@ -98,9 +89,9 @@ to open the **Manage addresses** page. On the **Registration ID** tab, select **
 
 ## Search for records by registration ID
 
-You can search for party records by registration ID on forms related to party, legal entity, vendor, customer, and worker. 
+You can search for party records by registration ID on forms related to party, legal entity, vendor, customer, and worker.
 
-Select **Registration ID search** to open the **Registration ID search criteria** page. 
+Select **Registration ID search** to open the **Registration ID search criteria** page.
 Enter your search criteria and select **Find**. The system displays the selected records from the global address book and the associated types of party record.
 
 ## <a id="supported-registration-categories"></a>Supported registration categories
@@ -108,7 +99,7 @@ Enter your search criteria and select **Find**. The system displays the selected
 The following table lists the supported registration categories and their descriptions.
 
 | Finance registration category | Description |
-|------------------------------|-------------|
+| ------------------------------ | ------------- |
 | VAT ID | A value-added tax registration number issued by a tax authority and used for domestic VAT reporting and tax compliance. |
 | EU VAT ID | A VAT registration number used for intra-EU transactions and reporting, including cross-border trade within the European Union. |
 | Enterprise ID (COID) | An official registration number that uniquely identifies a legal entity in a national business or commercial register. |

@@ -29,7 +29,7 @@ These validations apply consistently across all invoice entry points, including 
 
 ## What is an establishment?
 
-In Dynamics 365 Finance, an **Establishment** represents an operational unit of a legal entity that performs business activities on a stable basis and might require its own regulatory identifiers for invoicing or reporting.  
+In Finance, an **Establishment** represents an operational unit of a legal entity that performs business activities on a stable basis and might require its own regulatory identifiers for invoicing or reporting.  
 
 A single legal entity can have one or more establishments. Although these establishments share the same legal identity, they can maintain separate operational identities for invoicing and compliance purposes.
 
@@ -78,7 +78,7 @@ The preceding example shows one way to set up Establishments by using an operati
 
 ## Registration IDs on invoices
 
-Many countries or regions require registration numbers - such as VAT IDs, company registration numbers, or branch identifiers - to appear on invoices. Starting in Dynamics 365 Finance version 10.0.48, Dynamics 365 Finance provides a unified framework for managing these identifiers across legal entities, customers, vendors, and establishments.
+Many countries or regions require registration numbers - such as VAT IDs, company registration numbers, or branch identifiers - to appear on invoices. Starting in Finance version 10.0.48, Finance provides a unified framework for managing these identifiers across legal entities, customers, vendors, and establishments.
 
 If you don't configure required registration IDs for an applicable invoice party, the system blocks invoice posting until you provide the required information.
 

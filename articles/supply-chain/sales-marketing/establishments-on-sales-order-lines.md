@@ -6,7 +6,7 @@ ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: PurchCreateFromSalesOrder, SalesTable
 ms.topic: how-to
-ms.date: 04/16/2026
+ms.date: 04/24/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,26 +15,23 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about how to configure, default, and validate establishments on sales order lines to meet invoice compliance requirements. 
+This article provides information about how to configure, default, and validate establishments on sales order lines to meet invoice compliance requirements.
 
 ## Overview
 
 The **Establishments** feature adds an establishment field at the sales order line level to support legal and fiscal compliance requirements (notably for France) while remaining globally applicable. An establishment represents an operating unit within a legal entity that buys or sells goods, and is tied to tax registration identifiers, such as SIRET or SIREN.
 
-To enable establishments on sales order lines, turn on the parameter highlighted in the following table.
+To enable establishments on sales order lines, enable the parameter highlighted in the following table.
 
-| Parameter name | Parameter location in Finance | Description | 
+| Parameter name | Parameter location in Finance | Description |
 |----------------|-----------------|-------------|
-| **Require establishment on customer invoice** checkbox |  **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Updates** tab > **Invoice** FastTab | When enabled, the system enforces establishment requirements on the customer invoice header. <br>• Enables the **Establishment** field on customer invoice documents. <br> • Applies defaulting logic to automatically populate the **Establishment** where possible, based on **Site** setup or **Financial dimensions** on the document. <br>• Validates that an **Establishment** is specified before posting and prevents posting if the field is empty. <br> > [!NOTE] You can't change the **Establishment** value after the invoice is posted. |
+| **Require establishment on customer invoice** checkbox |  **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Updates** tab > **Invoice** FastTab | When enabled, the system enforces establishment requirements on the customer invoice header. <br>• Enables the **Establishment** field on customer invoice documents. <br> • Applies defaulting logic to automatically populate the **Establishment** where possible, based on **Site** setup or **Financial dimensions** on the document. <br>• Validates that an **Establishment** is specified before posting and prevents posting if the field is empty. <br> > **NOTE**: You can't change the **Establishment** value after the invoice is posted. |
 
-This parameter controls whether an **Establishment** is required on invoices and determines when establishment‑level **Registration IDs** must be enforced during invoice posting.
-When you enable establishment enforcement, the system validates that an applicable establishment is specified on the invoice and uses the defined applicability rules to resolve the corresponding **Registration IDs**. 
-This validation ensures consistent identification of invoice parties at both legal entity and establishment levels and guarantees that the correct registration information is validated and immutably stored on posted invoices.
+This parameter controls whether an **Establishment** is required on invoices and determines when establishment‑level **Registration IDs** must be enforced during invoice posting. When you enable establishment enforcement, the system validates that an applicable establishment is specified on the invoice and uses the defined applicability rules to resolve the corresponding **Registration IDs**. This validation ensures consistent identification of invoice parties at both legal entity and establishment levels and guarantees that the correct registration information is validated and immutably stored on posted invoices.
 
-For more information about **Establishments** and how they're defined, see [Establishments](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments).
+Learn more about Establishments and how they're defined in the [Establishments](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#establishments) article.
 
-To learn more about Registration IDs, see [Registration ID](../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
-
+Learn more about Registration IDs in the [Set up and use registration IDs](../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md) article.
 
 ## Why establishments matter
 
@@ -45,7 +42,7 @@ Invoices must include the correct establishment and related tax registration ide
 - Sales order lines contain the establishment field, which provides line-level granularity.
 - Establishments aren't intended to appear on sales order header list pages because these pages are header-centric views, while establishments are line-driven.
 
-## How Establishments Are Determined?
+## How are establishments determined?
 
 On a sales order line, the establishment can be derived using the following logic:
 
@@ -55,9 +52,8 @@ On a sales order line, the establishment can be derived using the following logi
 
 If the site or relevant dimensions change, the system recalculates the establishment to stay consistent with the new context.
 
-## Defaulting Behavior
+## Default behavior
 
-## Defaulting behavior
 - The system defaults the establishment during sales line insert and update operations.
 
 - For legacy or previously created unposted documents, use the **Backfill Establishments** batch job to populate establishment values instead of relying on form-load logic, to avoid performance problems.
@@ -68,7 +64,7 @@ Before an invoice can be posted:
 - All lines on a single invoice must share the same establishment.
 - If sales order lines span multiple sites (and therefore multiple establishments), invoice posting fails unless you enable the **Split invoice by site** parameter.
 
-Clear validation and error messages guide users toward corrective actions, such as running the backfill job or adjusting parameters.
+Clear validation and error messages guide you toward corrective actions, such as running the backfill job or adjusting parameters.
 
 ## Error handling and user guidance
 
@@ -78,14 +74,14 @@ You can correct error messages related to establishments by:
 - Enabling **Split invoice by site when multiple establishments are involved**.
 - Manually aligning establishments on all relevant sales order lines.
 
-## Backfill establishments batch job 
+## Backfill establishments batch job
 
-Use a dedicated batch job to populate establishment values on open sales order lines within a specified date range. 
-Key characteristics of this backfill batch job include: 
-- Set-based processing for performance.
-- Security roles control (for example, Trade Sales Manager).
-- Designed to address gaps in historical or legacy data.
+Use a dedicated batch job to populate establishment values on open sales order lines within a specified date range.
+Key characteristics of this backfill batch job include:
 
+- Set-based processing for performance
+- Security roles control (for example, Trade Sales Manager)
+- Designed to address gaps in historical or legacy data
 
 ## User interface considerations
 
@@ -98,5 +94,3 @@ Key characteristics of this backfill batch job include:
 - Establishments are a line-level compliance construct, not a header attribute.
 - Defaulting is automatic but overridable, with strong validations at invoice posting time.
 - Batch backfill and actionable error messages ensure operational continuity and compliance.
-
-
