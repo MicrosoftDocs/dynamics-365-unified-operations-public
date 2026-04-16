@@ -131,9 +131,9 @@ Review and update the **French electronic invoice (FR)** feature configuration:
 Electronic documents are preconfigured as a result of the globalization features deployment to the service, if **Activate application setup** option was enabled during the deployment. This chapter is provided for information purpose mainly, or if you decide to ammend the standard system setup. If no amendment required, you can skip this chapter and go to the **Configure integration channels** chapter.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the following tables and views.
-   - **Customer Invoice journal** ZZZZZZZZZZZZZZZZZZZZZZChange to the VIEW
-   - **Project invoice** ZZZZZZZZZZZZZZZZZZZZZZChange to the VIEW
+1. On the **Electronic document** tab, add records for the following views.
+   - **Customer invoice journal - Domestic B2B transactions (France)** 
+   - **Project invoice journal - Domestic B2B transactions (France)**
    - **Customer invoice response**
    - **Pending vendor invoice response**
 1. For each table or view name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
