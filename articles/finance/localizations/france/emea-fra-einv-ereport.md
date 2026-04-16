@@ -463,37 +463,14 @@ After you complete the required configuration steps, generate and submit electro
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
-### Electronic invoicing scope   ZZZZZZZZZZZZZZZZZZZZZZ Change the SCOPE
+### Electronic invoicing scope
 
 The following types of documents will be excluded from **E-Invoicing** individual submissions and will be included into the scope of **E-Reporting**. 
 
 - **Non-domestic Business-to-Business (B2B) invoices** - the invoices issued to buyers whose **Delivery** address is outside France.
-- **All Business-to-Consumer (B2C) invoices** - the invoices originated from retail transactions or explicitly marked as **B2C**.
+- **All Business-to-Consumer (B2C) invoices** - the invoices issued for the customers that do not have the **SIREN** registration number defined.
   
-  To explicitly mark invoices, follow these steps.
-  
-  1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**, and select **New**.
-  1. In the **Type** field, enter **BusinessRelationType**. Enter the value exactly as shown.
-  1. Select **Applicability** to add an applicable tables.
-  1. On the **Electronic document property type applicability setup** page, in the **Table name** field, select **Customers** and **Customer Invoice journal**.
-  1. Save your changes and return to the **Electronic document property types** page.
-  1. Save your changes, and close the page.
-
-  To exclude all invoices issued for specific customers, follow these steps.
-  1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-  1. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
-  1. Select the property with the **BusinessRelationType** type.
-  1. In the **Value** column, enter the **B2C** value exactly as shown.
-
-  To exclude specific invoices, follow these steps.
-  1. Go to **Accounts receivable** \> **Inquires and reports** \> **Invoices**\> **Invoice journal**.
-  1. Select a specific invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
-  1. Select the property with the **BusinessRelationType** type.
-  1. In the **Value** column, enter the **B2C** value exactly as shown.
-
-> [!NOTE]
-> Explicit marking invoices as **B2C** has higher priority than the origination from retail transactions. And vice versa, you can mark retail-originated **domestic** invoices as **B2B** to forcibly include them into **E-Invoicing** individual submissions and exclude from **E-Reporting**. Additionally, you can apply standard query filtering within the described **E-Invoicing** scope right before running the submission process.
-
+ 
 ### Submission of e-invoices to Edicom
 
 To start electronic invoices submission process, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. Learn more in [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
