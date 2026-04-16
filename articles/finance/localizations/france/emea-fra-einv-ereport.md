@@ -132,8 +132,8 @@ Electronic documents are preconfigured as a result of the globalization features
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the following tables and views.
-   - **Customer Invoice journal**
-   - **Project invoice**
+   - **Customer Invoice journal** ZZZZZZZZZZZZZZZZZZZZZZChange to the VIEW
+   - **Project invoice** ZZZZZZZZZZZZZZZZZZZZZZChange to the VIEW
    - **Customer invoice response**
    - **Pending vendor invoice response**
 1. For each table or view name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
@@ -453,7 +453,7 @@ After you complete the required configuration steps, generate and submit electro
 
 :::image type="content" source="e-inv-fra-out-lifecycle.jpg" alt-text="Screenshot of outgoing electronic documents lifecycle.":::
 
-### Electronic invoicing scope
+### Electronic invoicing scope   ZZZZZZZZZZZZZZZZZZZZZZ Change the SCOPE
 
 The following types of documents will be excluded from **E-Invoicing** individual submissions and will be included into the scope of **E-Reporting**. 
 
