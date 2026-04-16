@@ -151,7 +151,7 @@ Distributors are able to switch between managing multiple B2B buyer and seller a
 
 #### Account manager access to contact-based users through On behalf of (OBO) capabilities
 
-OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labelling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name.
+OBO-enabled sales representatives or account managers can select contact-based users at their assigned organizations to act on behalf of those contacts and access the same controls. Additionally, clear labeling on orders and order templates created through OBO will include the representative's or account manager's name and the selected contact's name.
 
 ### Contact-aware call center experiences
  
