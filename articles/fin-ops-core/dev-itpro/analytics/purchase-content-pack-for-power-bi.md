@@ -118,7 +118,7 @@ This page shows purchases for the current and previous years, and growth by proc
 
 #### Example
 
-:::image type="content" source="media/PurchByTIme.png" alt-text="Screenshot of Purchase by Time.":::
+:::image type="content" source="media/purchSpendByTime.png" alt-text="Screenshot of Purchase Spend by Time.":::
 
 ### Purchase spend analysis by vendor report page
 
