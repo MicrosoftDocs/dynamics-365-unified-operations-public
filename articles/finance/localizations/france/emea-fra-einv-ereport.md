@@ -135,12 +135,12 @@ Electronic documents are preconfigured as a result of the globalization features
    - **Project invoice journal - Domestic B2B transactions (France)**
    - **Customer invoice response**
    - **Pending vendor invoice response**
-1. For each table or view name, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. For each electronic document, set the **Document context** and **Electronic document model mapping** fields as described in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
 > [!NOTE]
 > To minimize the risk of accidental massive submissions, the system implements forcible default filtering by documents dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for documents processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
 
-1. For **Customer Invoice journal** and **Project invoice** electronic documents, select **Response types**.
+1. For the **Customer invoice journal - Domestic B2B transactions (France)** and **Project invoice journal - Domestic B2B transactions (France)** electronic documents, select **Response types**.
 1. Select **New** to create a new response type.
 1. In the **Response types** column, enter **LifeCycleStatus**. Enter the value exactly as shown.
 1. In the **Submission status** column, select the **Completed** value.
@@ -161,6 +161,23 @@ Electronic documents are preconfigured as a result of the globalization features
 
 :::image type="content" source="e-inv-fra-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
+1. For the **Customer invoice response** electronic document, select **Response types**.
+1. Select **New** to create a new response type.
+1. In the **Response types** column, enter **Response**. Enter the value exactly as shown.
+1. In the **Submission status** column, select the **Completed** value.
+1. In the **Data entity name** column, select the **Electronic document submission log** entity.
+1. In the **Model mapping** column, select the **Edicom Cust App Response Processing** configuration.
+1. Repeat steps 2 till 6 for the **Pending** value in the **Submission status** column.
+1. Select **Save**, and then close the page.
+1. For the **Pending vendor invoice response** electronic document, select **Response types**.
+1. Select **New** to create a new response type.
+1. In the **Response types** column, enter **Response**. Enter the value exactly as shown.
+1. In the **Submission status** column, select the **Completed** value.
+1. In the **Data entity name** column, select the **Electronic document submission log** entity.
+1. In the **Model mapping** column, select the **Edicom Vend App Response Processing** configuration.
+1. Repeat steps 10 till 14 for the **Pending** value in the **Submission status** column.  
+1. Select **Save**, and then close the page.
+   
 > [!NOTE]
 > If you created derived equivalents of the earlier Electronic Reporting configurations, use them instead of the standard configurations.
 
