@@ -142,7 +142,7 @@ Electronic documents are preconfigured as a result of the globalization features
 
 1. For the **Customer invoice journal - Domestic B2B transactions (France)** and **Project invoice journal - Domestic B2B transactions (France)** electronic documents, select **Response types**.
 1. Select **New** to create a new response type.
-1. In the **Response types** column, enter **LifeCycleStatus**. Enter the value exactly as shown.
+1. In the **Response type** column, enter **LifeCycleStatus**. Enter the value exactly as shown.
 1. In the **Submission status** column, select the **Completed** value.
 1. In the **Data entity name** column, select the **Electronic document submission log** entity.
 1. In the **Model mapping** column, select the **Edicom life cycle status format (FR)** configuration.
@@ -151,7 +151,7 @@ Electronic documents are preconfigured as a result of the globalization features
    - **Pending**
    - **Pending update actions execution**   
 1. Select **New** to create a new response type.
-1. In the **Response types** column, enter **ValidationStatus**. Enter the value exactly as shown.
+1. In the **Response type** column, enter **ValidationStatus**. Enter the value exactly as shown.
 1. In the **Submission status** column, select the **Completed** value.
 1. In the **Data entity name** column, select the **Electronic document submission log** entity.
 1. In the **Model mapping** column, select the **Edicom Response Processing (FR)** configuration and the **Invoice status** mapping name.
@@ -163,7 +163,7 @@ Electronic documents are preconfigured as a result of the globalization features
 
 1. For the **Customer invoice response** electronic document, select **Response types**.
 1. Select **New** to create a new response type.
-1. In the **Response types** column, enter **Response**. Enter the value exactly as shown.
+1. In the **Response type** column, enter **Response**. Enter the value exactly as shown.
 1. In the **Submission status** column, select the **Completed** value.
 1. In the **Data entity name** column, select the **Electronic document submission log** entity.
 1. In the **Model mapping** column, select the **Edicom Cust App Response Processing** configuration.
@@ -171,7 +171,7 @@ Electronic documents are preconfigured as a result of the globalization features
 1. Select **Save**, and then close the page.
 1. For the **Pending vendor invoice response** electronic document, select **Response types**.
 1. Select **New** to create a new response type.
-1. In the **Response types** column, enter **Response**. Enter the value exactly as shown.
+1. In the **Response type** column, enter **Response**. Enter the value exactly as shown.
 1. In the **Submission status** column, select the **Completed** value.
 1. In the **Data entity name** column, select the **Electronic document submission log** entity.
 1. In the **Model mapping** column, select the **Edicom Vend App Response Processing** configuration.
