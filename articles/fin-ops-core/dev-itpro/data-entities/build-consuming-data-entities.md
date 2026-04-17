@@ -33,7 +33,7 @@ This tutorial requires that you access an environment by using Remote Desktop, a
 
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
-- In the cloud environment, get the base URL from Microsoft Dynamics Lifecycle Services (LCS).
+- In the cloud environment, get the base URL from Microsoft Dynamics Lifecycle Services.
 - On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-locally), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 - Download FMLab sample code to C:. For details, see [FMLab sample code](https://github.com/Microsoft/FMLab).
 

@@ -17,7 +17,7 @@ ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 
 [!include [banner](../includes/banner.md)]
 
-Model files let you distribute models to customers and partners, and you can install them in development environments. They're key components of a Lifecycle Services (LCS) solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
+Model files let you distribute models to customers and partners, and you can install them in development environments. They're key components of a Microsoft Dynamics Lifecycle Services solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 
 ## Export a model into a model file for distribution
 
@@ -33,7 +33,7 @@ ModelUtil.exe -export -metadatastorepath=[path of the metadata store] -modelname
 ModelUtil.exe -export -metadatastorepath=c:\packages -modelname="FleetManagement" -outputpath=c:\temp
 ```
 
-The preceding example creates an `.axmodel` file under `c:\temp`. Typically, you then upload the model file to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services (LCS) solution project.
+The preceding example creates an `.axmodel` file under `c:\temp`. Typically, you then upload the model file to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services solution project.
 
 ## Install a model in a development environment
 

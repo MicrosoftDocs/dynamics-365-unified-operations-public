@@ -1,6 +1,6 @@
 ---
-title: Performance troubleshooting using tools in Lifecycle Services (LCS)
-description: Learn about tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues.
+title: Performance troubleshooting using tools in Lifecycle Services
+description: Learn about tools that Microsoft Dynamics Lifecycle Services provides to help you diagnose and mitigate performance issues.
 author: laneswenka
 ms.author: laswenka
 ms.topic: troubleshooting-general
@@ -14,20 +14,20 @@ ms.dyn365.ops.version: Version 1611
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 
-# Performance troubleshooting using tools in Lifecycle Services (LCS)
+# Performance troubleshooting using tools in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
-This article describes how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services (LCS).
+This article describes how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services.
 
 ## Overview
 
-Common feedback from customers and partners has been that they are unable to successfully diagnose performance issues using the tools in LCS. We have addressed this feedback by creating a more reliable way to collect performance metrics on demand. This enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time. We have also added an audit trail on the action performed so that you can easily determine who performed the action and when it was performed.
+Common feedback from customers and partners has been that they are unable to successfully diagnose performance issues using the tools in Lifecycle Services. We have addressed this feedback by creating a more reliable way to collect performance metrics on demand. This enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time. We have also added an audit trail on the action performed so that you can easily determine who performed the action and when it was performed.
 
 ## Details
 
-All SQL performance tools in LCS are available under the **SQL Insights** tab on the **Environment Monitoring** page for a specific environment. The following tabs are available:
+All SQL performance tools in Lifecycle Services are available under the **SQL Insights** tab on the **Environment Monitoring** page for a specific environment. The following tabs are available:
 
 - **Live View** – Shows executing statements and blocking statements. The current **SQL Now** page that shows performance issues will be replaced with **Live View**.
 
@@ -42,7 +42,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
 ## How do I use this feature?
 
-1. Go to your project in LCS and open the environment details page. Select the **Environment Monitoring** link in the **Monitoring** section. Select the **SQL Insights** tab to access this feature.
+1. Go to your project in Lifecycle Services and open the environment details page. Select the **Environment Monitoring** link in the **Monitoring** section. Select the **SQL Insights** tab to access this feature.
 2. You can navigate to each of the tabs (**Live View**, **Queries**, **Actions**) to view or query for more information.
 3. You have the option to search or export to Excel any of results from the query execution.
 4. After you have narrowed down the reason for the performance issue, you can use a predefined action to mitigate the issue.

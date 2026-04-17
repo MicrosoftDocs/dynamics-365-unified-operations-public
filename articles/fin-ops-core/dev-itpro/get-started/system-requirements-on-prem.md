@@ -6,7 +6,7 @@ ms.author: peterfriis
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 09/15/2025
+ms.date: 04/10/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-08-30
@@ -60,26 +60,15 @@ In wide area network (WAN) environments, Remote Desktop in Windows Server isn't 
 
 Finance + Operations doesn't require internet connectivity from user workstations. However, some features won't be available if there is no internet connectivity.
 
-<table>
-<tbody>
-<tr>
-<td><strong>Browser client</strong></td>
-<td>An intranet scenario without internet connectivity is a design point for the on-premises deployment option. Some features that require cloud services won't be available, such as Help and Task guide libraries in Microsoft Dynamics Lifecycle Services (LCS).</td>
-</tr>
-<tr>
-<td><strong>Server</strong></td>
-<td>The orchestrator node types must be able to communicate with LCS for deployment and servicing operations. The on-premises browser-based client doesn't require internet access.</td>
-</tr>
-<tr>
-<td><strong>Telemetry</strong></td>
-<td>Telemetry data might be lost if there are long interruptions in connectivity. Interruptions in connectivity to LCS don't affect the on-premises application functionality.</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|---|---|
+| **Browser client** | An intranet scenario without internet connectivity is a design point for the on-premises deployment option. Some features that require cloud services won't be available, such as Help and Task guide libraries in Microsoft Dynamics Lifecycle Services. |
+| **Server** | The orchestrator node types must be able to communicate with Lifecycle Services for deployment and servicing operations. The on-premises browser-based client doesn't require internet access. |
+| **Telemetry** | Telemetry data might be lost if there are long interruptions in connectivity. Interruptions in connectivity to Lifecycle Services don't affect the on-premises application functionality. |
 
 ## Telemetry data transfer to the cloud
 
-Most telemetry data is stored locally and can be accessed by using Event Viewer in Microsoft Windows. A small subset of telemetry events are transferred to the Microsoft telemetry pipeline in the cloud for diagnostics. Customer data and user-identifiable data aren't part of the telemetry data that is sent to Microsoft. VM names are sent to Microsoft to help with environment management and diagnostics from the LCS portal.
+Most telemetry data is stored locally and can be accessed by using Event Viewer in Microsoft Windows. A small subset of telemetry events are transferred to the Microsoft telemetry pipeline in the cloud for diagnostics. Customer data and user-identifiable data aren't part of the telemetry data that is sent to Microsoft. VM names are sent to Microsoft to help with environment management and diagnostics from the Lifecycle Services portal.
 
 ## Domain requirements
 
@@ -97,7 +86,7 @@ This means that users of the Finance + Operations (on-premises) application will
 
 Examples for a full 2-way trust setup could be.
 
-<img src="../../fin-ops/get-started/media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
+:::image type="content" source="../../fin-ops/get-started/media/2WayTrust.png" alt-text="Screenshot of examples of supported full 2-way trust between DFL versions.":::
 
 #### Known limitations with using the full 2-way trust setup
 
@@ -121,7 +110,7 @@ SQL Server must have a high-availability HADRON setup that has at least two node
 
 The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.
 
-[![Recommended number of nodes for the Service Fabric cluster.](../../fin-ops/get-started/media/Minimum-infrastructure-Jan2017.png)]
+:::image type="content" source="../../fin-ops/get-started/media/Minimum-infrastructure-Jan2017.png" alt-text="Screenshot of the recommended number of nodes for the Service Fabric cluster.":::
 
 ## Processor and RAM requirements
 
@@ -170,6 +159,8 @@ The following tables list the number of processors and the amount of random-acce
 \*\* Orchestrator is designated as the primary node type and will also be used to run the Service Fabric services.
 
 **Initial estimates for the back-end SQL Server and AD DS**
+
+I was unable to convert this HTML table due to its complexity (use of rowspan and colspan attributes). You can try converting it with another AI model.
 
 <table>
 <thead>

@@ -1,5 +1,5 @@
 ---
-title: Pause service updates through Lifecycle Services (LCS)
+title: Pause service updates through Lifecycle Services
 description: Learn about how to pause service updates to your environments, including overviews on who can pause and what parts of the service get paused.
 author: josaw1
 ms.author: josaw
@@ -14,7 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: Platform update 24 
 ---
 
-# Pause service updates through Lifecycle Services (LCS)
+# Pause service updates through Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
@@ -24,7 +24,7 @@ This article explains how to pause updates to your sandbox and production cloud 
 Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Lifecycle Services. At that point, if you can't proceed with the update for some reason, you can pause it through Lifecycle Services.
 
 > [!IMPORTANT]
-> As of February 19, 2024, the maximum number of consecutive updates that can be paused is being reduced from three to one. However, because the service update cadence is also being reduced, from seven to four releases, the same minimum of two service updates per year is maintained. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md). For information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
+> As of February 19, 2024, the maximum number of consecutive updates that can be paused is being reduced from three to one. However, because the service update cadence is also being reduced, from seven to four releases, the same minimum of two service updates per year is maintained. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md). For information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services](configure-service-updates.md).
 >
 > We are giving customers more flexibility in their update schedules. Beginning with the 10.0.39 release, customers can choose from two auto-update windows that are four weeks apart for each service update. Organizations can select the update window that better accommodates their validation process and operational schedules. For more information about how this affects pause policy, see the **Who can pause service updates** section later in this article.
 

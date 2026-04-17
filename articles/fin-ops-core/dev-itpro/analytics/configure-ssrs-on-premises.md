@@ -4,7 +4,7 @@ description: Learn about configuring SQL Server Reporting Services (SSRS) for an
 author: faix
 ms.author: osfaixat
 ms.topic: how-to
-ms.date: 01/31/2023
+ms.date: 04/09/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,6 +16,7 @@ search.app:
   - financeandoperationsonprem-docs
 ms.custom: sfi-image-nochange
 ---
+
 # Configure SQL Server Reporting Services for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
@@ -23,77 +24,77 @@ ms.custom: sfi-image-nochange
 Use the steps in this article to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.
 
 > [!IMPORTANT]
-> Only follow this guide if your environment was deployed using a base deployment older than Application version 10.0.17 (with Platform update 41).
+> Only follow this guide if you deployed your environment by using a base deployment older than Application version 10.0.17 (with Platform update 41).
 
 1. Open the Reporting Services Configuration Manager application.
-2. Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.
-3. Click **Connect**.
+1. Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.
+1. Select **Connect**.
 
-    [![Reporting services configuration connection.](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
+    :::image type="content" source="./media/ssrs-config-manager-01.png" alt-text="Screenshot of the Reporting Services Configuration Manager connection settings.":::
 
-4. Click the **Service Account** tab and verify that the settings match the following graphic.
-
-    > [!NOTE]
-    > SQL Server Reporting Services 2019 no longer allows choosing the **Local System** account. Instead you need to use **NETWORK SERVICE** account.
-
-    [![Service account tab.](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
-
-5. Click the **Web Service URL** tab and verify that the settings match the following graphic.
-
-    [![Web service URL tab.](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)
-
-6. Click the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.
+1. Select the **Service Account** tab and verify that the settings match the following graphic.
 
     > [!NOTE]
-    > You will need to create a new database. To do this, click **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.
+    > SQL Server Reporting Services 2019 no longer supports choosing the **Local System** account. Instead, use the **NETWORK SERVICE** account.
 
-    [![database tab.](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
+    :::image type="content" source="./media/ssrs-config-manager-02.png" alt-text="Screenshot of the Service Account tab in Reporting Services Configuration Manager.":::
 
-7. Click the **Web Portal URL** tab and verify that the settings match the following graphic.
+1. Select the **Web Service URL** tab and verify that the settings match the following graphic.
+
+    :::image type="content" source="./media/ssrs-config-manager-03.png" alt-text="Screenshot of the Web Service URL tab in Reporting Services Configuration Manager.":::
+
+1. Select the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.
 
     > [!NOTE]
-    > You must click **Apply** to create and properly configure the Portal.
+    > You need to create a new database. To do this, select **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.
 
-    [![web portal url tab.](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
+    :::image type="content" source="./media/ssrs-config-manager-04.png" alt-text="Screenshot of the Database tab in Reporting Services Configuration Manager.":::
 
-    After the Portal is configured, the **Web Portal** tab will match the following graphic.
+1. Select the **Web Portal URL** tab and verify that the settings match the following graphic.
 
-    [![web portal tab.](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
+    > [!NOTE]
+    > You must select **Apply** to create and properly configure the portal.
 
-8. Click the reports URL to view the SQL Server Reporting Services web portal.
-9. When you are in the portal, create a new folder named **Dynamics**.
+    :::image type="content" source="./media/ssrs-config-manager-05.png" alt-text="Screenshot of the Web Portal URL tab in Reporting Services Configuration Manager.":::
 
-    [![dynamics folder.](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+    After the portal is configured, the **Web Portal** tab matches the following graphic.
 
-10. In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.
+    :::image type="content" source="./media/ssrs-config-manager-06.png" alt-text="Screenshot of the Web Portal tab in Reporting Services Configuration Manager after configuration.":::
 
-    [![email settings tab.](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
+1. Select the reports URL to view the SQL Server Reporting Services web portal.
+1. When you're in the portal, create a new folder named **Dynamics**.
 
-11. Click the **Execution Account** tab and verify that the settings match the following graphic.
+    :::image type="content" source="./media/ssrs-config-manager-07.png" alt-text="Screenshot of the Dynamics folder created in the SQL Server Reporting Services web portal.":::
 
-    [![execution account tab.](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
+1. In the **Reporting Services Configuration Manager**, select the **E-mail Settings** tab and verify that the settings match the following graphic.
+
+    :::image type="content" source="./media/ssrs-config-manager-08.png" alt-text="Screenshot of the E-mail Settings tab in Reporting Services Configuration Manager.":::
+
+1. Select the **Execution Account** tab and verify that the settings match the following graphic.
+
+    :::image type="content" source="./media/ssrs-config-manager-09.png" alt-text="Screenshot of the Execution Account tab in Reporting Services Configuration Manager.":::
 
     Don't change the default settings on the **Encryption Keys** tab.
 
-    [![encryption keys tab.](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    :::image type="content" source="./media/ssrs-config-manager-10.png" alt-text="Screenshot of the Encryption Keys tab in Reporting Services Configuration Manager.":::
 
-12. Click the **Subscription Settings** tab, and verify that the settings match the following graphic.
+1. Select the **Subscription Settings** tab, and verify that the settings match the following graphic.
 
-    [![subscription settings tab.](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
+    :::image type="content" source="./media/ssrs-config-manager-11.png" alt-text="Screenshot of the Subscription Settings tab in Reporting Services Configuration Manager.":::
 
     Don't change the default settings on the **Scale-out Deployment** tab.
 
-    [![scale-out deployment tab.](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    :::image type="content" source="./media/ssrs-config-manager-12.png" alt-text="Screenshot of the Scale-out Deployment tab in Reporting Services Configuration Manager.":::
 
     Don't change the default settings on the **Power BI Integration** tab.
 
-    [![power bi integration tab.](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
+    :::image type="content" source="./media/ssrs-config-manager-13.png" alt-text="Screenshot of the Power BI Integration tab in Reporting Services Configuration Manager.":::
 
-13. Click **Exit** to close the **Reporting Services Configuration Manager**.
+1. Select **Exit** to close the **Reporting Services Configuration Manager**.
 
-    [![close reporting services configuration manager.](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+    :::image type="content" source="./media/ssrs-config-manager-14.png" alt-text="Screenshot of the Exit button to close the Reporting Services Configuration Manager.":::
 
-14. For SQL Server 2019 only, you need to manually grant **NETWORK SERVICE** the permissions to read the private keys of these certificates.
+1. For SQL Server 2019 only, you need to manually grant **NETWORK SERVICE** the permissions to read the private keys of these certificates:
     - DataEncryption
     - DataSigning
     - ReportingService
