@@ -109,6 +109,10 @@ The Warehouse Management mobile app is updated regularly following a different s
 
 Demand planning in Dynamics 365 Supply Chain Management is updated regularly following a different schedule than Supply Chain Management. For information about the latest versions and features, go to [What's new or changed in Demand planning](../demand-planning/whats-new-demand-planning.md).
 
+### What's new or changed in Planning Optimization
+
+Microsoft updates Planning Optimization monthly. However, based on business requirements, the product team occasionally releases other updates between the scheduled releases. For information about the latest versions and features, go to [Planning Optimization release process and release history](../master-planning/planning-optimization/release-process.md)
+
 ### Dynamics 365: 2025 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
