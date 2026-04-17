@@ -4,7 +4,7 @@ description: Learn about the Budget control statistics and Budget analysis repor
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 07/14/2025
+ms.date: 04/17/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -20,9 +20,9 @@ ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 
 This article provides information about the **Budget control statistics** and **Budget analysis** reports that are available in the **Budgeting** module.
 
-The **Budget control statistics** report provides detailed insights into budget availability and reservations for selected combinations of budget control dimensions. This report is used to monitor and control budget use over specific periods. It provides detailed statistics about budget consumption to help ensure that expenditures don't exceed allocated budgets. This report is useful when you want to analyze either a single budget account or a combination or group of accounts by period and budget control dimension. It shows the available budget for each period and therefore helps track the amount of budget that remains.
+The **Budget control statistics** report provides detailed insights into budget availability and reservations for selected combinations of budget control dimensions. Use this report to monitor and control budget use over specific periods. It provides detailed statistics about budget consumption to help ensure that expenditures don't exceed allocated budgets. This report is useful when you want to analyze either a single budget account or a combination or group of accounts by period and budget control dimension. It shows the available budget for each period and therefore helps track the amount of budget that remains.
 
-You can use the **Budget analysis** report to query any dimension order across the chart of accounts. You can also query a subset of an account. For example, you can view a list of year-to-date fund totals, drill down to a specific fund to view department totals, and then drill down to a specific department to view account totals. This report is useful for checking summary amounts to compare budgeted amounts to actual expenses and revenue, review overall budget performance, and identify variances.
+Use the **Budget analysis** report to query any dimension order across the chart of accounts. You can also query a subset of an account. For example, you can view a list of year-to-date fund totals, drill down to a specific fund to view department totals, and then drill down to a specific department to view account totals. This report is useful for checking summary amounts to compare budgeted amounts to actual expenses and revenue, review overall budget performance, and identify variances.
 
 The following transaction details are available on the **Budget analysis** report:
 
@@ -42,15 +42,17 @@ The following table describes differences between the two reports.
 > The **Budget analysis** report doesn't distinguish between operating periods and closing periods.
 
 > [!NOTE]
-> The **Display legacy budget analysis inquiry** parameter on the **Budgeting parameters** page controls which version of the **Budget analysis** page displayed. Enabling this parameter displays the *BudgetAnalysisInquiry* page, which doesn't include profit and loss accounts. If parameter is disabled, the *BudgetAnalysisDimensionFocusSummary* page is displayed which includes profit and loss accounts.
+> The **Display legacy budget analysis inquiry** parameter on the **Budgeting parameters** page controls which version of the **Budget analysis** page is displayed. Enabling this parameter displays the *BudgetAnalysisInquiry* page, which doesn't include profit and loss accounts. If the parameter is disabled, the *BudgetAnalysisDimensionFocusSummary* page is displayed which includes profit and loss accounts.
 
 Budget reports and inquiry pages can display different default exchange rates.
 The following pages use either the default exchange rate in Ledger setup or the manually updated exchange rate in the **Total actuals amounts** field:
- - **Budget analysis** inquiry
- - **Budget analysis** report
- - **Actual vs. Budget** page 
+
+- **Budget analysis** inquiry
+- **Budget analysis** report
+- **Actual vs. Budget** page
 
 The following reports use the budget exchange rate defined in Ledger setup when displaying **Actual expenditures**:
- - **Budget control statistics**
- - **Budget control statistics by period**
- - **Budget control account detail history**
+
+- **Budget control statistics**
+- **Budget control statistics by period**
+- **Budget control account detail history**
