@@ -2,7 +2,7 @@
 title: Set up a legal entity and tax information for Bolivia
 description: Learn how to set up a legal entity and tax information for a company in Bolivia.
 author: Cpicon85
-ms.date: 02/10/2025
+ms.date: 04/14/2026
 ms.topic: how-to
 ms.reviewer: johnmichalak
 ms.author: v-cpicon
