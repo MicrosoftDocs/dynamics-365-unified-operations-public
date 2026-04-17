@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This article lists the Visual Studio components that are required to run the **Visual Studio** extension for X++.
 
 > [!NOTE]
-> Don't install Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Lifecycle Services (LCS). Instead, download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed. They also include other updates outside of Visual Studio to help keep the machines compatible and secure.
+> Don't install Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Microsoft Dynamics Lifecycle Services. Instead, download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed. They also include other updates outside of Visual Studio to help keep the machines compatible and secure.
 
 ## Visual Studio editions
 

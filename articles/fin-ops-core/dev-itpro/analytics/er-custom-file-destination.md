@@ -4,7 +4,7 @@ description: Learn about how to extend the list of ER destinations that store do
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 03/29/2021
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include[banner](../includes/banner.md)]
 
-The application programming interface (API) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework lets you [extend](er-apis-app10-0-19.md) the list of ER destinations that you can use to store documents that ER formats generate. This article includes an overview of the main tasks that you must complete to implement a custom ER destination.
+The application programming interface (API) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework lets you [extend](er-apis-app10-0-19.md) the list of ER destinations that you can use to store documents that ER formats generate. This article provides an overview of the main tasks that you must complete to implement a custom ER destination.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ You must also have access to the development environment for this topology.
 
 In the current topology, [create a new ER format](tasks/er-format-configuration-2016-11.md) to generate the documents that you plan to store by using a custom ER destination. Alternatively, you can [import an existing ER format into this topology](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Reviewing the structure of an ER format on the Format designer page.](media/er-custom-file-destination-format-structure.png)
+:::image type="content" source="media/er-custom-file-destination-format-structure.png" alt-text="Screenshot of the structure of an ER format on the Format designer page.":::
 
 > [!IMPORTANT]
 > The ER format that you create or import must contain at least one of the following format elements:
@@ -115,7 +115,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
     }
     ```
 
-2. Add a new class to your Visual Studio project (`ERFormatDestinationSaveInFolderSettings` in this example) to use the `ERIFormatFileDestinationSettings` public interface to write code that specifies how a custom destination is created, how its parameters are packed for storage, and how its parameters are unpacked for presentation in the user interface (UI).
+1. Add a new class to your Visual Studio project (`ERFormatDestinationSaveInFolderSettings` in this example) to use the `ERIFormatFileDestinationSettings` public interface to write code that specifies how a custom destination is created, how its parameters are packed for storage, and how its parameters are unpacked for presentation in the user interface (UI).
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -225,11 +225,11 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
     > [!NOTE]
     > In the preceding code, the `ERFormatDestinationSaveInFolderSettings` class is introduced as the `static` class. The implementation object should have a `static create(container)` method that creates an object and unpacks the container that the object requires for a correct pack-unpack process. For more information, see [Pack-Unpack Design Pattern](/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject).
 
-3. In your Visual Studio project, add a new extension for the `ERFormatDestinationSettings` form, and write code that implements a custom UI for your custom destination. The following illustration shows what this UI looks like in the Visual Studio designer.
+1. In your Visual Studio project, add a new extension for the `ERFormatDestinationSettings` form, and write code that implements a custom UI for your custom destination. The following illustration shows what this UI looks like in the Visual Studio designer.
 
-    ![Reviewing a custm UI in the Visual Studio designer.](media/er-custom-file-destination-form-extension.png)
+    :::image type="content" source="media/er-custom-file-destination-form-extension.png" alt-text="Screenshot of a custom UI in the Visual Studio designer.":::
 
-4. Add another new class (`ERFormatDestinationSettingsEventHandlers` in this example) to your Visual Studio project, and write the event handler code for an extended destination form. This step requires that the public `ERIFormatFileDestinationSettingsStorage` interface be implemented.
+1. Add another new class (`ERFormatDestinationSettingsEventHandlers` in this example) to your Visual Studio project, and write the event handler code for an extended destination form. This step requires that the public `ERIFormatFileDestinationSettingsStorage` interface be implemented.
 
     ```xpp
     public class ERFormatDestinationSettingsEventHandlers
@@ -281,26 +281,26 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
     }
     ```
 
-5. Rebuild your Visual Studio project.
+1. Rebuild your Visual Studio project.
 
 ## Configure ER destinations for the ER format that you created or imported
 
 1. Configure the [Archive](er-destination-type-archive.md) destination for one of the previously mentioned components (file, folder, merger, or attachment) of the ER format that you created or imported. For more information, see [ER Configure destinations](tasks/er-destinations-2016-11.md).
 
-    ![Configuring the Archive destination in the Destination settings dialog box.](media/er-custom-file-destination-destination-setting-archive.png)
+    :::image type="content" source="media/er-custom-file-destination-destination-setting-archive.png" alt-text="Screenshot of configuring the Archive destination in the Destination settings dialog box.":::
 
-2. For the same component of the selected ER format, enable and configure the custom **Save in folder** destination.
+1. For the same component of the selected ER format, enable and configure the custom **Save in folder** destination.
 
-    ![Configuring the Save in folder destination in the Destination settings dialog box.](media/er-custom-file-destination-destination-setting-custom.png)
+    :::image type="content" source="media/er-custom-file-destination-destination-setting-custom.png" alt-text="Screenshot of configuring the Save in folder destination in the Destination settings dialog box.":::
 
     > [!NOTE] 
-    > Make sure that the specified custom destination folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception will be thrown at runtime.
+    > Make sure that the specified custom destination folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception is thrown at runtime.
 
 ## Run the ER format that you created or imported
 
 1. Run the ER format that you created or imported.
-2. Go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**, and find the record that was created for this execution job and that has the generated file attached to it.
-3. Browse to the local **C:\\0** folder to find the generated file.
+1. Go to **Organization administration \> Electronic reporting \> Electronic reporting jobs**, and find the record that was created for this execution job and that has the generated file attached to it.
+1. Browse to the local **C:\\0** folder to find the generated file.
 
 ## Additional resources
 
