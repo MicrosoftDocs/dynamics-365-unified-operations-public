@@ -21,7 +21,7 @@ Before you can generate and print the report, the following prerequisites must b
 
 - The legal entity's address must be in a country/region that is within the LATAM localization (in this case, Ecuador).
 - Both the country/region-specific LATAM feature and the general LATAM feature must be enabled.
-- You must download the relevant report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?context=%2Fdynamics365%2Fcontext%2Ffinance).
+- You must download the relevant report from the Global repository. Learn more in [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=%2Fdynamics365%2Fcontext%2Ffinance).
 - You must configure the Electronic reporting (ER) parameters. Learn more in [Configure the Electronic reporting (ER) framework](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 - You must post sales invoices.
 

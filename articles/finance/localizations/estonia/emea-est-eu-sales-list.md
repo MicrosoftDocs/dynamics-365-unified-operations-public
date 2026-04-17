@@ -94,7 +94,7 @@ For information about the transaction types that are included in the EU sales li
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Estonia, see [Example for generic EU Sales list](https://learn.microsoft.com/en-us/dynamics365/finance/tax/eu-sales-list-example-generic). Additionally, for this example, use **EE123456789** as the company's enterprise ID, instead of the VAT ID.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Estonia, see [Example for generic EU Sales list](../../finance/tax/eu-sales-list-example-generic.md). Additionally, for this example, use **EE123456789** as the company's enterprise ID, instead of the VAT ID.
 
 **Create an EU sales list report**
 

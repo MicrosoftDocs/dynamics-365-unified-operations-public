@@ -4,7 +4,7 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: concept-article
-ms.date: 10/01/2025
+ms.date: 04/17/2026
 ms.reviewer: johnmichalak
 ms.collection: get-started
 ms.search.region: Global
@@ -34,7 +34,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 > [!NOTE]
 > The integration of the Electronic Invoicing service with the ISV last-mile connector is described based on **Danish electronic invoicing** example. For other countries/regions please refer to the respective section in the [Country/region-specific scenarios implemented via Edicom](#Countries/regions) chapter.
 
-You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/edicom-microsoft?365).
+You can configure and use the Electronic Invoicing service ISV last-mile connector's integration with the Global e-Invoicing Platform that [Edicom](https://edicomgroup.com/electronic-invoicing) provides. For more information refer to: [Edicom integration with Microsoft Dynamics 365](https://edicomgroup.com/connectors/microsoft).
 
 To enable the integration of the Electronic Invoicing service with the ISV last-mile connector, you must obtain the following required credentials from Edicom:
 
