@@ -4,7 +4,7 @@ description: Learn about how to extend the list of storage locations for documen
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -41,17 +41,17 @@ To generate the documents that you plan to add a custom storage location for, [i
 1. Go to **Fixed assets** > **Inquiries and reports** > **Transaction reports** > **Fixed asset roll forward**.
 1. In the **From date** field, enter **1/1/2017** (January 1, 2017).
 1. In the **To date** field, enter **1/31/2017** (January 31, 2017).
-1. In the **Currency field**, select **Accounting currency**.
+1. In the **Currency** field, select **Accounting currency**.
 1. In the **Format mapping** field, select **Fixed asset roll forward**.
 1. Select **OK**.
 
-:::image type="content" source="./media/er-custom-storage-generated-files-runtime-dialog.png" alt-text="Screenshot of the Runtime dialog box for the Fixed asset roll forward report.":::
+:::image type="content" source="./media/er-custom-storage-generated-files-runtime-dialog.png" alt-text="Screenshot of the runtime dialog box for the Fixed asset roll forward report.":::
 
 In Microsoft Excel, review the outbound document that is generated and available for download. This behavior is the [default behavior](electronic-reporting-destinations.md#default-behavior) for an ER format that no [destinations](electronic-reporting-destinations.md) are configured for, and that is running in interactive mode.
 
 ## Review the source code
 
-Review the code of the `generateReportByGER()` method of the `AssetRollForwardService` class. Notice that the `Run()` method calls the ER framework and generates the **Fixed asset roll forward** report.
+Review the code of the `generateReportByGER()` method of the `AssetRollForwardService` class. Notice that the `Run()` method is used to call the ER framework and generate the **Fixed asset roll forward** report.
 
 ```xpp
 class AssetRollForwardService extends SysOperationServiceBase
@@ -245,10 +245,10 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-1. Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner. When you construct a custom destination factory, pass the application-driven parameter that specifies a target folder. This target folder stores generated files.
+1. Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner. When a custom destination factory is constructed, the application-driven parameter that specifies a target folder is passed. In this way, the target folder stores generated files.
 
-    > [!NOTE]
-    > Make sure that the specified folder (**c:\\0** in this example) exists on the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception is thrown at runtime.
+   > [!NOTE]
+   > Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception is thrown at runtime.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -320,17 +320,18 @@ class AssetRollForwardService extends SysOperationServiceBase
 1. Go to **Fixed assets** > **Inquiries and reports** > **Transaction reports** > **Fixed asset roll forward**.
 1. In the **From date** field, enter **1/1/2017**.
 1. In the **To date** field, enter **1/31/2017**.
-1. In the **Currency field**, select **Accounting currency**.
+1. In the **Currency** field, select **Accounting currency**.
 1. In the **Format mapping** field, select **Fixed asset roll forward**.
 1. Select **OK**.
 1. Browse the local **C:\\0** folder to find the generated file.
 
 > [!NOTE]
-> Because the `originDestination` object isn't used in the `AssetRollForwardDestination` object in this example, the configurations for the ER format [destinations](electronic-reporting-destinations.md) are ignored at runtime.
+> Because the `originDestination` object isn't used in the `AssetRollForwardDestination` object in this example, the configurations for the ER format [destinations](electronic-reporting-destinations.md) is ignored at runtime.
 
 ## Additional resources
 
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Extensibility home page](../extensibility/extensibility-home-page.md)
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

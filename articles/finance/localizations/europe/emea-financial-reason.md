@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 01/13/2025
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 ms.search.validFrom: 2021-11-01
 ms.dyn365.ops.version: AX 10.0.21
@@ -19,10 +19,10 @@ ms.dyn365.ops.version: AX 10.0.21
 The **Financial reason** feature lets you set up a predefined list of financial reasons that can be used during document registration and posting in the system. This feature can be used globally in legal entities that have a primary address in any country or region.
 
 1. Go to **Organization administration** \> **Setup** \> **Financial reasons**.
-2. On the Action Pane, select **New** to create a financial reason.
-3. In the **Reason code** column, specify a code to use for the financial reason when documents are registered and posted.
-4. In the **Default comment** column, enter the comment that should be used as the default value in the **Reason comment** field for the financial reason. This comment should correspond to the reason code that is selected when documents are registered and posted.
-5. In the **Ledger**, **Asset**, **Bank**, **Customer**, and **Vendor** columns, select the checkbox for each system module where the selected reason code must be available.
+1. On the Action Pane, select **New** to create a financial reason.
+1. In the **Reason code** column, specify a code to use for the financial reason when documents are registered and posted.
+1. In the **Default comment** column, enter the comment that should be used as the default value in the **Reason comment** field for the financial reason. This comment should correspond to the reason code that is selected when documents are registered and posted.
+1. In the **Ledger**, **Asset**, **Bank**, **Customer**, and **Vendor** columns, select the checkbox for each system module where the selected reason code must be available.
 
 **Financial reason** feature is available in the following documents in all legal entities of your Finance environment:
 

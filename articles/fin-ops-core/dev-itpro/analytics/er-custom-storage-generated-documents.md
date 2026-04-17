@@ -4,7 +4,7 @@ description: Learn about how to extend the list of storage locations for documen
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10
 
 [!include[banner](../includes/banner.md)]
 
-The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate. This article provides an overview of the main tasks that you must complete to add a custom storage location.
+The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate. This article provides an overview of the main tasks you must complete to add a custom storage location.
 
 ## Prerequisites
 
@@ -103,8 +103,8 @@ public DocuRef insertFile(
 
 The **AttachingFile()** event is raised when the following ER destinations are processed:
 
-- **Archive** – When you use this destination, you create a new record for the ER format that runs in the ERFormatMappingRunJobTable table. The **Archived** field in this record is set to **False**. If the ER format runs successfully, the generated document is attached to this record, and the **AttachingFile()** event is raised. The document type that you select in this ER destination determines the storage location for the attached file (Microsoft Azure Storage or a Microsoft SharePoint folder).
-- **Job archive** – When you use this destination, you create a new record for the ER form that runs in the ERFormatMappingRunJobTable table. The **Archived** field in this record is set to **True**. If the ER format runs successfully, the generated document is attached to this record, and the **AttachingFile()** event is raised. The document type that you configure in the ER parameters determines the storage location for the attached file (Azure Storage or a SharePoint folder).
+- **Archive** – When you use this destination, a new record for the ER format that runs is created in the ERFormatMappingRunJobTable table. The **Archived** field in this record is set to **False**. If the ER format successfully runs, the generated document is attached to this record, and the **AttachingFile()** event is raised. The document type that is selected in this ER destination determines the storage location for the attached file (Microsoft Azure Storage or a Microsoft SharePoint folder).
+- **Job archive** – When you use this destination, a new record for the ER form that runs is created in the ERFormatMappingRunJobTable table. The **Archived** field in this record is set to **True**. If the ER format successfully runs, the generated document is attached to this record, and the **AttachingFile()** event is raised. The document type that is configured in the ER parameters determines the storage location for the attached file (Azure Storage or a SharePoint folder).
 
 :::image type="content" source="media/er-extend-file-storages-parameters.png" alt-text="Screenshot of the Electronic reporting parameters page.":::
 

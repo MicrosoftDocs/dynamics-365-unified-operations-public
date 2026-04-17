@@ -4,7 +4,7 @@ description: Learn about how to design a new Electronic reporting (ER) solution 
 author: kfend
 ms.author: filatovm
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 04/02/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -19,14 +19,13 @@ ms.custom: sfi-image-nochange
 
 [!include [banner](../includes/banner.md)]
 
-
 This article explains how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can configure parameters of the [Electronic reporting (ER)](general-electronic-reporting.md) framework, design the required ER [configurations](general-electronic-reporting.md#Configuration) of a new ER solution to access the data of the Warehouse management system, and generate custom warehouse location labels in Zebra Programming Language (ZPL) II format. You can complete these steps in the **USRT** company.
 
 ## Business scenario
 
 You represent a company that implemented warehouse management in Microsoft Dynamics 365 Finance. Every warehouse location must be labeled with a self-adhesive label that includes a bar code. Warehouse workers use handheld bar code readers to scan the bar codes.
 
-You labeled all warehouse locations as part of pre-go-live activities. However, you must also be able to print warehouse location labels on demand if existing labels become damaged or warehouse shelving is reconfigured. By using recently released ER functionality, you can configure a new ER solution that lets a warehouse supervisor print labels directly to a thermal label printer.
+All warehouse locations are labeled in the scope of pre-go-live activities. However, you must also be able to print warehouse location labels on demand if existing labels become damaged or warehouse shelving is reconfigured. By using recently released ER functionality, you can configure a new ER solution that lets a warehouse supervisor print labels directly to a thermal label printer.
 
 ## Configure the ER framework
 
@@ -47,7 +46,7 @@ Follow these steps to import the required data model from an XML file that Micro
 1. Select **Browse**, and then find and select the **Warehouse model.version.1.xml** file.
 1. Select **OK** to import the configuration.
 
-:::image type="content" source="./media/er-design-zpl-labels-imported-model.png" alt-text="Screenshot of the imported ER data model configuration on the Configurations page.":::
+:::image type="content" source="./media/er-design-zpl-labels-imported-model.png" alt-text="Screenshot of imported ER data model configuration on the Configurations page.":::
 
 ### Create a data model configuration
 
@@ -74,7 +73,7 @@ Follow these steps to import the required model mapping from an XML file that Mi
 1. Select **Browse**, and then find and select the **Warehouse model mapping.version.1.1.xml** file.
 1. Select **OK** to import the configuration.
 
-:::image type="content" source="./media/er-design-zpl-labels-imported-mapping.png" alt-text="Screenshot of the imported ER model mapping configuration on the Configurations page.":::
+:::image type="content" source="./media/er-design-zpl-labels-imported-mapping.png" alt-text="Screenshot of imported ER model mapping configuration on the Configurations page.":::
 
 ### Create a model mapping configuration
 
@@ -101,7 +100,7 @@ Follow these steps to import the required format from an XML file that Microsoft
 1. Select **Browse**, and then find and select the **Warehouse location labels.version.1.1.xml** file.
 1. Select **OK** to import the configuration.
 
-:::image type="content" source="./media/er-design-zpl-labels-imported-format.png" alt-text="Screenshot of the imported ER format configuration on the Configurations page.":::
+:::image type="content" source="./media/er-design-zpl-labels-imported-format.png" alt-text="Screenshot of imported ER format configuration on the Configurations page.":::
 
 ### Create a format configuration
 
@@ -136,9 +135,7 @@ The following example uses a printer emulator application for ZPL labels to show
 1. Add a local printer for the current workstation, and configure it to pass generated labels from the DRA to a printer emulator application.
 1. Install a printer emulator application as an extension of the Chrome web browser, and configure it to pass generated labels from a local printer to a web service that renders generated labels and returns them to the printer emulator for preview.
 
-| Finance ER report Printer destination | &nbsp; | Document routing agent | &nbsp; | Local printer | &nbsp; | Printer emulator | &nbsp; | Rendering web service |
-|---|---|---|---|---|---|---|---|---|
-| Finance<br>ER report<br>Printer destination | :::image type="content" source="./media/er-design-zpl-labels-flow1.png" alt-text="Screenshot of data flow direction from Finance to the DRA."::: | Document routing agent | :::image type="content" source="./media/er-design-zpl-labels-flow1.png" alt-text="Screenshot of data flow direction from the DRA to a local printer."::: | Local printer | :::image type="content" source="./media/er-design-zpl-labels-flow1.png" alt-text="Screenshot of data flow direction from a local printer to a printer emulator."::: | Printer emulator | :::image type="content" source="./media/er-design-zpl-labels-flow2.png" alt-text="Screenshot of data flow direction from a printer emulator to a rendering web service and then back to the printer emulator."::: | Rendering web service |
+:::image type="content" source="media/printer-emulator-application-labels.png" alt-text="Screenshot of flow diagram of label routing from Finance to DRA, local printer, emulator, and rendering web service for preview.":::
 
 ### Install and configure a printer emulator application
 
@@ -204,7 +201,7 @@ Prepare the DRA to pass generated labels from Finance to the configured local pr
 1. [Register the local printer](install-document-routing-agent.md#register-network-printers) in the DRA.
 1. [Activate the local printer](install-document-routing-agent.md#administer-network-printers) in your Finance environment.
 
-:::image type="content" source="./media/er-design-zpl-labels-configure-dra.png" alt-text="Screenshot of preparing the the DRA to print generated labels.":::
+:::image type="content" source="./media/er-design-zpl-labels-configure-dra.png" alt-text="Screenshot of preparing the DRA to print generated labels.":::
 
 ### Configure the ER destination
 
@@ -286,7 +283,7 @@ You can change the current layout of your warehouse location labels. The followi
 1. Select **OK**.
 1. Select **OK**. A label is generated and shown on the preview page in the printer emulator application.
 
-:::image type="content" source="./media/er-design-zpl-labels-preview-label2.png" alt-text="Screenshot of reviewing a generated label that include a location profile ID on the preview page of the Zpl Printer emulator application.":::
+:::image type="content" source="./media/er-design-zpl-labels-preview-label2.png" alt-text="Screenshot of reviewing a generated label that includes a location profile ID on the preview page of the Zpl Printer emulator application.":::
 
 ## Encoding
 
