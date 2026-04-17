@@ -2,7 +2,7 @@
 title: Configure sales and purchase invoices for the Dominican Republic
 description: Learn how to configure sales and purchase invoices for the Dominican Republic.
 author: cpicon85
-ms.date: 04/03/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template

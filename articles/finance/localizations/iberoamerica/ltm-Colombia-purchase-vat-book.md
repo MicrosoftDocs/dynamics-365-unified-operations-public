@@ -2,7 +2,7 @@
 title: Configure Colombian purchase VAT book printing
 description: Learn how to configure the Colombian purchase VAT book report for printing.
 author: Fhernandez0088
-ms.date: 04/17/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak

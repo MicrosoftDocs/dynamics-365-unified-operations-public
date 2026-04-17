@@ -80,11 +80,8 @@ For the latest regulatory update plans, refer to the following table.
 |      Poland      |   April 2023| 10.0.34 | Updates Payment terms in commercial transactions report (PL-00053) in accordance to D20222414L |
 |      Saudi Arabia      |   November 2022| 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
-
 ## Additional resources
 - For more information about all planned and released country or region-specific regulatory updates, see [Search for country/region-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
 - For a list of the supported localizations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

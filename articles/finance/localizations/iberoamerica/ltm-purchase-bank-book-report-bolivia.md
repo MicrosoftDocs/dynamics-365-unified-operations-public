@@ -2,7 +2,7 @@
 title: Configure printing for purchase bank books for Bolivia
 description: Learn about the required configuration for printing a purchase bank book report for Bolivia.
 author: Cpicon85
-ms.date: 03/13/2025
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
