@@ -206,7 +206,7 @@ The following table lists the broker apps that must be installed on a device for
 > [!IMPORTANT]
 >
 > - To use mobile mass deployment (MDM), you must enable SSO.
-> - The Warehouse Management mobile app does *not* support [shared device mode](/entra/identity-platform/msal-shared-devices).
+> - The Warehouse Management mobile app *doesn't* support [shared device mode](/entra/identity-platform/msal-shared-devices).
 
 ## <a name="revoke"></a>Remove access for a device that uses user-based authentication
 
