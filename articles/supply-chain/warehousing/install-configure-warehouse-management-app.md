@@ -83,6 +83,10 @@ As an alternative to installing from an app store, you can instead download the 
 
     A few extra steps might be required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
 
+- **Android (ARMv7 / armeabi-v7a):** [Warehouse Management (Android armeabi-v7a)](https://install.appcenter.ms/orgs/warehousing-dynamics-365/apps/warehouse-management-android-armeabi-v7a/distribution_groups/preview%20program)
+
+    This release targets older Android devices that use 32-bit ARMv7 processors and require a build compiled for the `armeabi-v7a` ABI. Install this package on devices that can't run the standard 64-bit Android release.
+
 - **iOS:** The iOS version of the app is only available through App Store.
 
 For information about how to install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
