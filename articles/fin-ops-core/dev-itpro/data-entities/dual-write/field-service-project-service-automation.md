@@ -4,6 +4,8 @@ description: Learn about the support resources and links for Field Service solut
 author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: johnmichalak
 audience: Developer

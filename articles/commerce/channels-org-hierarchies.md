@@ -24,8 +24,8 @@ Use organization hierarchies to view and report on your business from various pe
 
 Before you create an organization hierarchy, you must create organizations. For more information, see [Create legal entities](channels-legal-entities.md) or [Create operating units](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json).
 
-
 For more information, see the following articles.
+
 - [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 - [Plan your organization hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 - [Create an organization hierarchy](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)
@@ -56,9 +56,51 @@ To add organizations to a hierarchy, follow these steps:
 1. Add organizations, as necessary.
 1. To add an organization, select **Edit** and then select **Insert**. When you're done making changes, you can save a draft and publish the changes.
 
-The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall," "Outlet," "Online," and "Call Center" channels. Various retail, call center, and online channels can then be added to each.
+> [!NOTE]
+> You can only publish a hierarchy once per calendar day in a given time zone. Each time you publish, the system records the effective date based on the time zone you select. If you later publish using a different time zone, the resulting dates can overlap or collide, which blocks the publish. To avoid this problem, always use the same time zone when publishing a hierarchy.
 
-:::image type="content" source="media/hierarchy-designer.png" alt-text="Screenshot of the example hierarchy designer.":::
+The following image shows an example organization hierarchy. In this example, the legal entity "Contoso Retail" has three cost centers: "Mall," "Online," and "Call Center." The "Mall" cost center has four retail channels: "Atlanta," "Houston," "San Francisco," and "San Jose."
+
+![Screenshot of an example organization hierarchy showing the allowed dimension value combinations for each node.](media/hierarchy-valid-combinations.png)
+
+If you link this hierarchy to an account structure that includes both a **Cost center** dimension and a **Retail channel** dimension, the hierarchy controls which combinations are valid. For example, entering a cost center of "Mall" with a retail channel of "Fabrikam" produces a validation error, because "Fabrikam" isn't listed under "Mall" in the hierarchy.
+
+## Verify hierarchy relationships in account structures
+
+You can link organization hierarchies to account structures to control which dimension value combinations are allowed during transaction entry. To check which hierarchies are linked to an account structure, follow these steps:
+
+1. Go to the account structure and select **View** > **Relationships**.
+
+   ![Screenshot showing the View and Relationships option on an account structure.](media/account-structure-relationships.png)
+
+1. Review which organization hierarchy relationships are included in validation. Any hierarchy that is checked is used to validate dimension value combinations when transactions are entered.
+
+   ![Screenshot showing which organization hierarchies are included in account structure validation.](media/account-structure-hierarchy-included.png)
+
+To view or edit the hierarchies, go to **Organization administration** > **Organizations** > **Organization hierarchies**.
+
+## Publishing delay for newly published hierarchies
+
+After you publish a new or updated organization hierarchy, it can take up to 24 hours (though typically less) for the changes to take effect in transaction validation. During this period, you might receive validation errors when entering dimension combinations that should be valid under the newly published hierarchy.
+
+If you encounter this issue, you can either:
+
+- Wait for the published hierarchy to take effect.
+- Set the transaction date to the next day to work around the delay.
+
+## Importing hierarchy data
+
+You can import organization hierarchy structures by using data entities. If you're importing a multilevel hierarchy, import from the top down - start with the highest parent node, and then add each level of child nodes in separate import operations. Attempting to import all levels at once can result in the error "The Organization doesn't exist" because the system might process child nodes before their parent nodes are available.
+
+## Deleting a legal entity after hierarchy publishing
+
+After you add a legal entity to an organization hierarchy and publish that hierarchy, you can't delete the legal entity - even if you later remove it from the hierarchy and republish. The **Delete** button stays unavailable.
+
+This restriction is by design. When you publish a hierarchy, you create a permanent historical record of that structure. This record supports backdated reporting and auditing. Because those records reference the legal entity, the system protects it from deletion to preserve that history.
+
+If you remove a legal entity from an unpublished hierarchy *before* you publish the hierarchy, the delete option stays available. But once you publish a version of the hierarchy that includes the legal entity, the restriction is permanent.
+
+Leaving an unused legal entity in the system doesn't negatively affect day-to-day operations.
 
 ## Additional resources
 
@@ -73,6 +115,5 @@ The following image shows a legal entity added at the hierarchy root with four c
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

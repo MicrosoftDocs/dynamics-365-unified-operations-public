@@ -4,7 +4,7 @@ description: Learn how to set up Microsoft Dynamics 365 Finance to use Panamania
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: how-to
-ms.date: 02/10/2025 
+ms.date: 04/13/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template

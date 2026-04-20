@@ -4,7 +4,9 @@ description: Learn about the column mappings for each dual-write mapping, includ
 author: josaw
 ms.author: josaw
 ms.topic: reference
-ms.date: 10/06/2022
+ms.custom: 
+  - bap-template
+ms.date: 04/03/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global

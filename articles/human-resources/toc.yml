@@ -1039,7 +1039,7 @@ items:
             href: hr-admin-integration-ats-api-rating-level.md
           - name: Screening types
             href: hr-admin-integration-ats-api-screening-types.md
-          - name: Example query for Candidate to hire
+          - name: Candidate to hire
             href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
       - name: Candidate option sets
         items:
@@ -1073,90 +1073,116 @@ items:
       items:
       - name: Introduction
         href: hr-admin-integration-payroll-api-introduction.md
-      - name: Generate and review payroll entities
-        href: hr-admin-integration-payroll-api-generate-review-entities.md
       - name: Payroll integration parameters
         href: hr-admin-integration-payroll-api-parameters.md
+      - name: Setup payroll data sync job
+        href: hr-admin-integration-payroll-api-data-sync-job.md
       - name: Payroll entities
         items:
-        - name: Payroll employee
-          href: hr-admin-integration-payroll-api-payroll-employee.md
-        - name: Payroll worker address
-          href: hr-admin-integration-payroll-api-payroll-worker-address.md
-        - name: Payroll fixed compensation plan
-          href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-        - name: Payroll variable compensation plan
-          href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md        
-        - name: Payroll position
-          href: hr-admin-integration-payroll-api-payroll-position.md
-        - name: Payroll position job
-          href: hr-admin-integration-payroll-api-payroll-position-job.md
-        - name: Worker 
-          href: hr-worker.md
         - name: Bank account disbursement
-          href: hr-bank-disburse.md
+          href: payroll-integration-bank-account-disbursement.md
+        - name: Person name historical
+          href: payroll-integration-person-name-historical.md
+        - name: Employee fixed compensation
+          href: payroll-integration-compensation-fixed-employee.md
+        - name: Fixed compensation plan
+          href: payroll-integration-compensation-fixed-plan-table.md
+        - name: Variable compensation plan
+          href: payroll-integration-compensation-variable-plan-table.md
+        - name: Employee employment
+          href: payroll-integration-employment-employee.md
+        - name: Employment term
+          href: payroll-integration-employment-term.md
+        - name: Employment type
+          href: payroll-integration-employment-type.md
+        - name: Employment v2
+          href: payroll-integration-employment.md
+        - name: Identification type
+          href: payroll-integration-identification-type.md
+        - name: Base job
+          href: payroll-integration-job-base.md
+        - name: Job compensation
+          href: payroll-integration-job-compensation.md
+        - name: Job detail
+          href: payroll-integration-job-detail.md
+        - name: Job
+          href: payroll-integration-job.md
+        - name: Job family
+          href: payroll-integration-job-family.md
+        - name: Job function
+          href: payroll-integration-job-function.md
+        - name: Job task
+          href: payroll-integration-job-task.md
+        - name: Job type
+          href: payroll-integration-job-type.md
+        - name: Labor union
+          href: payroll-integration-labor-union.md
+        - name: Person details
+          href: payroll-integration-person-details.md
+        - name: Person identification number
+          href: payroll-integration-person-identification-number.md
+        - name: Base position
+          href: payroll-integration-position-base.md
+        - name: Position default dimension
+          href: payroll-integration-position-default-dimension.md
+        - name: Position detail
+          href: payroll-integration-position-detail.md
+        - name: Position
+          href: payroll-integration-position.md
+        - name: Position hierarchy
+          href: payroll-integration-position-hierarchy.md
+        - name: Position hierarchy type
+          href: payroll-integration-position-hierarchy-type.md
+        - name: Position timeline
+          href: payroll-integration-position-timeline.md
+        - name: Position type
+          href: payroll-integration-position-type.md
+        - name: Position worker assignment
+          href: payroll-integration-position-worker-assignment.md
+        - name: Unions
+          href: payroll-integration-unions.md
+        - name: Variable compensation award
+          href: payroll-integration-variable-compensation-award.md
+        - name: Variable compensation enrollment
+          href: payroll-integration-variable-compensation-enrollment.md
+        - name: Variable compensation type
+          href: payroll-integration-variable-compensation-type.md
+        - name: Worker payroll 
+          href: payroll-integration-worker-payroll-info.md
+        - name: Worker postal address
+          href: payroll-integration-worker-postal-address.md
+        - name: Leave bank transaction
+          href: payroll-integration-leave-bank-transaction.md
+        - name: Legal entity
+          href: payroll-integration-legal-entity.md
+        - name: Payroll employee
+          href: payroll-integration-payroll-employee.md
+        - name: Payroll fixed compensation plan
+          href: payroll-integration-payroll-fixed-compensation-plan.md
+        - name: Payroll position details
+          href: payroll-integration-payroll-position-details.md
+        - name: Payroll position
+          href: payroll-integration-payroll-position.md
+        - name: Payroll position job
+          href: payroll-integration-payroll-position-job.md
+        - name: Payroll worker address current
+          href: payroll-integration-payroll-worker-address-current.md
+        - name: Position union agreement
+          href: payroll-integration-position-union-agreement.md
+        - name: Worker bank account
+          href: payroll-integration-worker-bank-account.md
         - name: Worker contact
-          href: hr-worker-contact.md 
-        - name: HCM Compensation fixed plan 
-          href: hr-hcm-comp-fix.md
-        - name: HCM position type entity
-          href: hcm-position-type.md
-        - name: HCM unions entity
-          href: hcm-union.md
-        - name: Variable compensation type entity  
-        - name: HCM person identification entities
-          href: hcm-person-id.md
-        - name: HCM job compensation entities
-          href: hcm-job-comp.md
-        - name: HCM person details entities
-          href: hcm-person-details.md
-        - name: Variable compensation type entity  
-        - name: HCM person identification entities
-          href: hcm-person-id.md
-        - name: HCM job compensation entities
-          href: hcm-job-comp.md
-        - name: HCM person details entities
-          href: hcm-person-details.md
-        - name: Variable compensation type entity        
-          href: variable-comp.md
-        - name: Leave bank transaction entity
-          href: hr-leave-bank-trans.md
-        - name: Payroll position details entity
-          href: hr-payroll-position.md
-        - name: HCM Position hierachy type entity
-          href: hcm-position-hierachy-type.md
-        - name: Job task 
-          href: hr-admin-integration-job-task.md
-        - name: Payroll job type 
-          href: hr-payroll-job-type.md
-        - name: Payroll historical person name 
-          href: hr-payroll-history-person.md
-        - name: HCM fixed compensation employee entity
-          href: hcm-fixed-comp-empl.md
-        - name: HCM compensation fixed plan entity
-          href: hcm-comp-fixed-plan.md
-        - name: HCM employment V2 entity
-          href: hr-employ-v2.md
-        - name: Employee detail entity
-          href: hr-employ-detail.md
-        - name: HCM identification type entity
-          href: hcm-id-type.md
-        - name: HCM Labor union entity
-          href: hcm-labor-union.md
-        - name: HCM position base entity
-          href: hcm-position-base.md
-        - name: HCM position detail entity
-          href: hcm-position-detail.md
-        - name: Payroll job base 
-          href: hr-payroll-job-base.md
-        - name: Payroll job family 
-          href: hr-payroll-job-family.md
-        - name: Payroll job function 
-          href: hr-payroll-job-function.md
-        - name: Payroll employment employee 
-          href: hr-employ-employee.md
-        - name: Payroll compensation fixed plan  
-          href: hr-comp-fixed.md
+          href: payroll-integration-worker-contact.md
+        - name: Worker
+          href: payroll-integration-worker.md
+        - name: Employment detail
+          href: payroll-integration-employment-detail.md
+        - name: Employee v2
+          href: payroll-integration-employee.md
+        - name: Variable compensation enrollment position
+          href: payroll-integration-variable-compensation-enrollment-position.md
+        - name: Base worker
+          href: payroll-integration-worker-base.md
       - name: Leave and absence related entities
         items:
           - name: Leave balance
@@ -1192,7 +1218,89 @@ items:
       - name: API payroll integration partners
         items:
           - name: API payroll integration with Dayforce
-            href: hr-admin-payroll-api-integration-dayforce.md
+            items:
+             - name: Setup instructions
+               href: hr-admin-payroll-api-integration-dayforce.md
+             - name: Mshr Payroll entities
+               items:
+                - name: Payroll employee
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Payroll worker address
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Payroll fixed compensation plan
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Payroll variable compensation plan
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md        
+                - name: Payroll position
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Payroll position job
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+                - name: Worker 
+                  href: hr-worker.md
+                - name: Bank account disbursement
+                  href: hr-bank-disburse.md
+                - name: Worker contact
+                  href: hr-worker-contact.md 
+                - name: HCM Compensation fixed plan 
+                  href: hr-hcm-comp-fix.md
+                - name: HCM position type entity
+                  href: hcm-position-type.md
+                - name: HCM unions entity
+                  href: hcm-union.md
+                - name: Variable compensation type entity  
+                - name: HCM person identification entities
+                  href: hcm-person-id.md
+                - name: HCM job compensation entities
+                  href: hcm-job-comp.md
+                - name: HCM person details entities
+                  href: hcm-person-details.md
+                - name: Variable compensation type entity  
+                - name: HCM person identification entities
+                  href: hcm-person-id.md
+                - name: HCM job compensation entities
+                  href: hcm-job-comp.md
+                - name: HCM person details entities
+                  href: hcm-person-details.md
+                - name: Variable compensation type entity        
+                  href: variable-comp.md
+                - name: Leave bank transaction entity
+                  href: hr-leave-bank-trans.md
+                - name: Payroll position details entity
+                  href: hr-payroll-position.md
+                - name: HCM Position hierachy type entity
+                  href: hcm-position-hierachy-type.md
+                - name: Job task 
+                  href: hr-admin-integration-job-task.md
+                - name: Payroll job type 
+                  href: hr-payroll-job-type.md
+                - name: Payroll historical person name 
+                  href: hr-payroll-history-person.md
+                - name: HCM fixed compensation employee entity
+                  href: hcm-fixed-comp-empl.md
+                - name: HCM compensation fixed plan entity
+                  href: hcm-comp-fixed-plan.md
+                - name: HCM employment V2 entity
+                  href: hr-employ-v2.md
+                - name: Employee detail entity
+                  href: hr-employ-detail.md
+                - name: HCM identification type entity
+                  href: hcm-id-type.md
+                - name: HCM Labor union entity
+                  href: hcm-labor-union.md
+                - name: HCM position base entity
+                  href: hcm-position-base.md
+                - name: HCM position detail entity
+                  href: hcm-position-detail.md
+                - name: Payroll job base 
+                  href: hr-payroll-job-base.md
+                - name: Payroll job family 
+                  href: hr-payroll-job-family.md
+                - name: Payroll job function 
+                  href: hr-payroll-job-function.md
+                - name: Payroll employment employee 
+                  href: hr-employ-employee.md
+                - name: Payroll compensation fixed plan  
+                  href: hr-comp-fixed.md
   - name: Responsible AI
     items:
     - name: Overview 
@@ -1203,6 +1311,10 @@ items:
       href: hr-recruit-bulk-resume-faq.md
     - name: Employee self service workspace summary
       href: ess-workspace-summary.md
+    - name: Platform AI features
+      items:
+      - name: Timeline highlights with generative AI in Dynamics 365
+        href: use-timeline-highlights-powered-by-generative-ai.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 05/28/2025
+ms.date: 03/10/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -18,6 +18,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article helps system administrators to solve typical issues when configuring the Supplier Communications Agent.
@@ -30,7 +31,7 @@ In the [Power Platform admin center](https://aka.ms/ppac), the environment is de
 
 ### Solution
 
-Open your project in [Lifecycle Services (LCS)](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
+Open your project in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
 
 > [!NOTE]
 > Dual write isn't required for agent deployment.
@@ -43,7 +44,7 @@ In the [Power Platform admin center](https://aka.ms/ppac), you go to **Manage** 
 
 ### Solution
 
-Open your project in [Lifecycle Services (LCS)](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
+Open your project in [Lifecycle Services](https://lcs.dynamics.com/V2) and then open the **Full details** for your finance and operations apps environment. Under **Power Platform Integration**, check whether any errors are reported (such as "LCS Power Platform Integration provisioning fails with timeout"). Then attempt a retry to complete the deployment.
 
 ## I can't enable the *(Production ready preview) Agent management* feature in feature management
 
@@ -53,7 +54,7 @@ In the **Feature management** workspace for your finance and operations apps env
 
 > You cannot enable this Feature. Environment must be linked to Dataverse for agents to function
 
-The error appears even though a Dataverse environment was successfully created in LCS.
+The error appears even though a Dataverse environment was successfully created in Lifecycle Services.
 
 ### Solution
 

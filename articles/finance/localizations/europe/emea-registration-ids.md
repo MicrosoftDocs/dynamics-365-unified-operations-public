@@ -4,7 +4,7 @@ description: Learn about setting up and using registration IDs, including outlin
 author: kfend
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 12/05/2025
+ms.date: 04/16/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
@@ -17,8 +17,8 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-All countries/regions have their requirements for supporting various country/region-specific functionalities related to registration numbers provided by different state offices. **Registration IDs** in Dynamics 365 Finance provide a 
-unified framework for managing official identification numbers for legal entities, establishments, customers, vendors, and other parties, in accordance with country/region‑specific requirements.
+All countries and regions have requirements for supporting various country and region-specific functionalities related to registration numbers that different state offices provide. **Registration IDs** in Dynamics 365 Finance provide a 
+unified framework for managing official identification numbers for legal entities, establishments, customers, vendors, and other parties, in accordance with country and region-specific requirements.
 
 For detailed concepts, setup guidance, and examples, see [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 

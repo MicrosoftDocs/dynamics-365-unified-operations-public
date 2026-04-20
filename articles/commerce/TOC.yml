@@ -260,6 +260,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?context=/dynamics365/context/commerce
         - name: Payment Application Data Security Standards (PA-DSS) certification
           href: dev-itpro/PA-DSS-Certification.md
+        - name: PCI Software Security Framework evaluation
+          href: pci-software-security-framework-evaluation.md
         - name: Commerce capabilities available in on-premises deployments
           href: dev-itpro/retail-onprem.md
       - name: Deployment and hotfixes
@@ -406,7 +408,7 @@
             href: enable-camera-based-product-identification.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
-          - name: Enable multilanguage support for Store Commerce self-checkout (preview)
+          - name: Enable multilanguage support for Store Commerce self-checkout
             href: multi-language-store-commerce-point-of-sale.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
@@ -524,7 +526,7 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-        - name: Modern workflows in POS (preview)
+        - name: Modern workflows in POS
           href: POS-UX-modernization.md
         - name: Receipts
           items:
@@ -964,7 +966,7 @@
             href: inventory-aware-product-listing.md
           - name: Configure inventory availability checks for cart and checkout actions
             href: inventory-availability-checks.md
-          - name: Enable cross-company inventory lookup for POS (preview)
+          - name: Enable cross-company inventory lookup for POS
             href: enable-cross-company-inventory-lookup-pos.md
         - name: Store inventory
           items:
@@ -1016,7 +1018,7 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
-        - name: Purge Commerce transactions (preview)
+        - name: Purge Commerce transactions
           href: purge-transactions.md
       - name: Sales orders
         items:
@@ -1586,10 +1588,6 @@
         items:
         - name: Integrate Customer Voice into e-commerce site pages
           href: customer-voice-integration.md
-    - name: Fraud protection
-      items:
-      - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
-        href: dev-itpro/DFP.md
     - name: B2B commerce
       items:
       - name: Set up a B2B e-commerce site
@@ -1612,6 +1610,8 @@
         href: b2b/b2b-indirect.md
       - name: B2B multioutlet capabilities (preview)
         href: b2b/b2b-multi-outlet.md
+      - name: B2B multioutlet configuration (preview)
+        href: b2b/b2b-multi-outlet-configuration.md        
       - name: Commerce catalogs for B2B sites
         items:
         - name: Create Commerce catalogs for B2B sites
@@ -3156,10 +3156,12 @@
             href: dev-itpro/payment-connector-package.md
     - name: Copilot capabilities in Commerce
       items:
-      - name: Store report insights by Copilot
-        href: copilot-pos-report-insights.md
       - name: Customer insights by Copilot
         href: copilot-pos-customer-insights.md
+      - name: Product insights by Copilot
+        href: copilot-product-insights.md
+      - name: Store report insights by Copilot
+        href: copilot-pos-report-insights.md
       - name: Enable Copilot statement posting summaries
         href: copilot-statement-summaries.md
       - name: Use Copilot in site builder to enrich product detail pages

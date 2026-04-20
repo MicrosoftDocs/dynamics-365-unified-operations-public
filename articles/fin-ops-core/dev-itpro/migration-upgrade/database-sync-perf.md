@@ -4,7 +4,7 @@ description: This article describes the Shadow copy sync process that improves t
 author: ttreen
 ms.author: ttreen
 ms.topic: article
-ms.date: 08/15/2024
+ms.date: 03/17/2026
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -36,8 +36,8 @@ During the DBSync process, one of the slowest changes is a change in the precisi
 As a solution, the synchronization engine has a **Shadow copy sync** process. A new version of the table is created in the upgraded Dynamics 365 Finance format. This table has an owner schema that is named **Shadow**. Data from the old table is inserted into the new one. The following actions then occur:
 
 1. Indexes are applied to the shadow table.
-2. The old table in the **dbo** schema is dropped.
-3. The shadow table is reassigned to the **dbo** schema.
+1. The old table in the **dbo** schema is dropped.
+1. The shadow table is reassigned to the **dbo** schema.
 
 The **Shadow copy sync** process is enabled for all upgrades that meet the following conditions:
 

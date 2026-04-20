@@ -4,6 +4,8 @@ description: Learn about the integration of product data between finance and ope
 author: t-benebo
 ms.author: twheeloc
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.date: 01/15/2026
 ms.reviewer: twheeloc
 audience: IT Pro

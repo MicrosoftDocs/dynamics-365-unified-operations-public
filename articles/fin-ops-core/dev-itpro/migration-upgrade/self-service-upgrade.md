@@ -4,7 +4,7 @@ description: Learn about the process for moving to the latest update of finance 
 author: laneswenka
 ms.author: laswenka
 ms.topic: upgrade-and-migration-article
-ms.date: 08/09/2024
+ms.date: 03/17/2026
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Developer, IT Pro
@@ -24,8 +24,8 @@ ms.dyn365.ops.version: 10.0.1
 > This article applies to the following starting versions:
 >
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)
-> - Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017) (also known as version 7.2)
-> - Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3
+> - Microsoft Dynamics 365 finance and operations, Enterprise edition (July 2017) (also known as version 7.2)
+> - Microsoft Dynamics 365 finance and operations, Enterprise edition 7.3
 
 In this tutorial, you will learn how to perform these tasks:
 
@@ -101,7 +101,7 @@ In your sandbox environment, on the **Maintain** menu, select **Upgrade**.
 
 A dialog box appears, where you can select the latest combination of an application version and a platform update.
 
-<img src="media/UpgradeAutomation/02_Prepare.png" width="500px" alt="Prepare upgrade environment dialog box" />
+:::image type="content" source="media/UpgradeAutomation/02_Prepare.png" alt-text="Screenshot of the Prepare upgrade environment dialog box.":::
 
 > [!IMPORTANT]
 > If you receive an error that states that preparation failed, see the [Known issues](#known-issues) section later in this article.
@@ -110,7 +110,7 @@ A dialog box appears, where you can select the latest combination of an applicat
 
 The environment details page is refreshed, and options for two sandbox environments now appear in the upper-right corner. By selecting the options, you can switch between your old sandbox environment and your new upgrade-in-progress sandbox environment.
 
-<img src="media/UpgradeAutomation/03_Provision.png" width="700px" alt="Old and Upgrade in progress options" />
+:::image type="content" source="media/UpgradeAutomation/03_Provision.png" alt-text="Screenshot of the Old and Upgrade in progress options.":::
 
 The preparation stage can take eight hours or longer, because it resembles a full environment deployment. The upgrade-in-progress environment is connected to an empty Azure SQL database to speed up deployment, and it runs on the newer version that you selected to deploy.
 
@@ -135,7 +135,7 @@ If package deployment fails, you can use the **Rollback** button to reverse it. 
 
 As use of the self-service upgrade process has increased, Microsoft has found that several hotfixes are critical to success for various target versions. For example, if you're upgrading to version 7.3, a list of Microsoft Knowledge Base (KB) articles that have consistently resolved issues with data upgrade, Retail components, or performance will appear.
 
-<img src="media/UpgradeAutomation/Upgrade_CriticalKBs.png" width="700px" alt="Critical hotfixes" />
+:::image type="content" source="media/UpgradeAutomation/Upgrade_CriticalKBs.png" alt-text="Screenshot of the Critical hotfixes list.":::
 
 The goal is that this list should be empty before you begin the **Data Upgrade** step of the process. The hotfixes in these KB articles must be installed in your upgrade-in-progress environment.
 
@@ -150,7 +150,7 @@ On the **Upgrade** menu, select **Data upgrade**.
 
 Your original sandbox environment is turned off, and the database connection is swapped so that your new environment is connected to the original database. This process can take up to one hour.
 
-<img src="media/UpgradeAutomation/09_Swap.png" width="500px" alt="Confirmation message about the environment swap" />
+:::image type="content" source="media/UpgradeAutomation/09_Swap.png" alt-text="Screenshot of the confirmation message about the environment swap.":::
 
 Next, the data upgrade package for your target version is automatically applied. The time that is required to apply the data upgrade package varies, depending on the size of your database.
 
@@ -164,7 +164,7 @@ Because the self-service upgrade process provides a parallel environment at no a
 
 There are three possible outcomes when the timer reaches 0 (zero):
 
-<img src="media/UpgradeAutomation/Upgrade_Timer.png" width="300px" alt="Upgrade timer has reached 0 (zero) days" />
+:::image type="content" source="media/UpgradeAutomation/Upgrade_Timer.png" alt-text="Screenshot of the upgrade timer has reached 0 (zero) days.":::
 
 - If you haven't yet started the **Data Upgrade** step, the new environment is queued for deletion. In this scenario, the upgrade-in-progress environment was provisioned, and customizations and packages were optionally applied. However, no data was upgraded, and the original environment never incurred downtime.
 - If you ran the **Data Upgrade** step but then later performed a rollback, the new environment is queued for deletion. In this scenario, the old environment is the primary environment, because the data upgrade was rolled back.
@@ -179,7 +179,7 @@ The original environment is queued for deletion only after you commit the upgrad
 
 After the data upgrade package is applied, you can review the environment, and your users can perform business validation activities. If this validation is successful, you can mark the whole upgrade as a success by selecting **Commit** on the **Upgrade** menu. You must commit the upgrade before you can move on to your production environment. After you commit the upgrade, the original environment is queued for deletion.
 
-<img src="media/UpgradeAutomation/10_CommitRollback.png" width="700px" alt="Commit option on the Upgrade menu" />
+:::image type="content" source="media/UpgradeAutomation/10_CommitRollback.png" alt-text="Screenshot of the Commit option on the Upgrade menu.":::
 
 If the business validation fails, you can select **Rollback** on the **Upgrade** menu. This option will do a point-in-time restore of the database, swap the database connection back to your original sandbox environment, and bring your original sandbox environment back online. The sandbox environment will then be back in its previous state.  Be aware, as stated above, that rollback is only possible for up to 30 calendar days.
 

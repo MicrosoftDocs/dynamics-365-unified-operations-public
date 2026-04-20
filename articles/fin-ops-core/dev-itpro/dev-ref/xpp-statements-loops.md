@@ -4,7 +4,7 @@ description: Learn about comments, using, and print statements in X++, including
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 08/27/2021
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -21,7 +21,7 @@ This article describes statements in X++.
 
 ## Comments
 
-It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\*** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
+Add comments to your code. Comments make a program easier to read and understand. The compiler ignores comments. You can use either the **//** style or the **/\*** style for your comments. However, use the **//** style for comments, even for multiline comments.
 
 ```xpp
 // This is an example of a comment.
@@ -30,17 +30,17 @@ It's a good practice to add comments to your code. Comments make a program easie
 
 ## print statements
 
-You use the **print** statement to output text through **System.Diagnostics.WriteLine** to the Visual Studio **Output** window. During testing, the **print** statement is an alternative to the **Global::info** method, which shows text in the **Infolog** window. The following table compares the **print** statement and the **info** method.
+Use the **print** statement to send text through **System.Diagnostics.WriteLine** to the Visual Studio **Output** window. During testing, the **print** statement is an alternative to the **Global::info** method, which shows text in the **Infolog** window. The following table compares the **print** statement and the **info** method.
 
 | Feature   | print statement    | info method  |
 |-----------|--------------------|--------------|
 | Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.     |
-| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily copied from the **Infolog** window to the clipboard. |
-| Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.     |
+| Ability to copy contents to the clipboard | You can easily copy text from the **Output** window to the clipboard.            | You can easily copy text from the **Infolog** window to the clipboard. |
+| Typical usage                             | Use the **print** statement for convenience during testing. It can help you debug small issues without having to run a formal debugger. | Use the **info** method for production.     |
 
 ### Example of a print statement
 
-The following code example demonstrates the print statement automatically converting any date type to a string. You do not need to prefix **info** with **Global::** when you call it.
+The following code example demonstrates the print statement automatically converting any date type to a string. You don't need to prefix **info** with **Global::** when you call it.
 
 ```xpp
 str hello = "Hello";
@@ -99,15 +99,15 @@ public boolean isLate()
 
 ## Unsupported statements: pause and window
 
-The **pause** and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
+The **pause** and **window** keywords are no longer a part of the X++ language. These keywords cause compilation errors if you use them.
 
 ## Ignored statements: server and client
 
-In previous versions (AX2012 and earlier), you could designate a method to run on either the client or the server. This is no longer possible, because all X++ code is executed as .NET CIL on the server. The keywords `client` and `server` are ignored. Their use doesn't cause a compile error, but they should not be used in any new X++ code.
+In previous versions (AX2012 and earlier), you could designate a method to run on either the client or the server. This designation is no longer possible, because all X++ code is executed as .NET CIL on the server. The keywords `client` and `server` are ignored. Their use doesn't cause a compile error, but don't use them in any new X++ code.
 
 ## using clauses
 
-You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes.
+Use **using** clauses so you don't have to provide the fully qualified name of a type. The **using** clause must come before the class that it applies to, and you need it in every source file that you want it to apply to. Typically, you put all **using** clauses at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes.
 
 The following example shows a **using** clause, a namespace alias, and a class alias.
 
@@ -130,7 +130,7 @@ class UsingClass
 
 ## using statements
 
-The **using** statement helps guarantee that objects that implement **IDisposable** are disposed of correctly. When you use an **IDisposable** object, you should declare and instantiate it in a **using** statement. The **using** statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you're calling methods on the object. You can achieve the same result by putting the object inside a **try** block and then explicitly calling **Dispose** in a **finally** block. The **using** statement simplifies the syntax and disposes of the object correctly. Here is the syntax for a **using** statement:
+The **using** statement helps guarantee that objects that implement **IDisposable** are disposed of correctly. When you use an **IDisposable** object, declare and instantiate it in a **using** statement. The **using** statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you're calling methods on the object. You can achieve the same result by putting the object inside a **try** block and then explicitly calling **Dispose** in a **finally** block. The **using** statement simplifies the syntax and disposes of the object correctly. Here's the syntax for a **using** statement:
 
 **using (** *expression* **) {** *statement* **}**
 

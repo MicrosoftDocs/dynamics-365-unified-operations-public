@@ -4,14 +4,13 @@ description: Learn how to create and enter NAF codes for legal entities, custome
 author: EvgenyPopovMBS
 ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 09/10/2021
-ms.custom:
+ms.date: 03/11/2026
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: France
 ms.search.validFrom: 2016-06-30
 ms.search.form: CompanyNAFCode, CustTable, VendTable, smmBusRelTable, OMLegalEntity
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 
 # Set up NAF codes
@@ -25,11 +24,12 @@ This article explains how to create NAF codes and then enter the codes for legal
 This procedure was created using the demo data company FRSI. This functionality is available for legal entities whose primary address is in France.
 
 ## Set up a NAF code
+
 1. Go to **Organization administration** > **Global address book** > **Addresses** > **NAF codes**.
-2. Select **New**.
-3. In the **NAF code** field, type a value.
-4. In the **Description** field, type a value.
-5. Select **Save**.
+1. Select **New**.
+1. In the **NAF code** field, enter a value.
+1. In the **Description** field, enter a value.
+1. Select **Save**.
 
 ## Enter a NAF code for a customer
 1. Go to **Accounts receivable** > **Customers** > **All customers**.

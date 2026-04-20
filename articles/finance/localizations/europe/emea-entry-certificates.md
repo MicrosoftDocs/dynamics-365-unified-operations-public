@@ -3,7 +3,7 @@ title: EU Entry certificates
 description: Learn about European Union (EU) entry certificates, including prerequisites and technical information for system administrators.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User

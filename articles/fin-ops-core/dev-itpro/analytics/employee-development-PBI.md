@@ -4,7 +4,7 @@ description: Learn about the Employee development Power BI content, including le
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/19/2017
+ms.date: 03/11/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -18,8 +18,9 @@ ms.dyn365.ops.version: July 2017 update
 
 This article describes the **Employee development** Microsoft Power BI content.
 
-## Reports that are included in the Power BI content
-The reports that are included in the **Employee development** Power BI content have both charts and tables that contain additional information. The following table describes the reports.
+## Reports included in the Power BI content
+
+The **Employee development** Power BI content includes reports with both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                        | Contents |
 |-------------------------------|----------|

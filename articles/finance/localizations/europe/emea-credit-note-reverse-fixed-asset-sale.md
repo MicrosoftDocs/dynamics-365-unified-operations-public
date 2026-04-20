@@ -3,7 +3,7 @@ title: Fixed assets disposal for Estonia and Lithuania
 description: Learn about credit notes for fixed assets disposal posted by a free text invoice for users in legal entities in Estonia and Lithuania.
 author: mrolecki
 ms.author: johnmichalak
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/16/2025
 ms.reviewer: johnmichalak
 audience: Application User

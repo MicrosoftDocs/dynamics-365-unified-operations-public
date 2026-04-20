@@ -4,7 +4,7 @@ description: Learn about X++ business runtime functions, including syntax, param
 author: josaw1
 ms.author: josaw
 ms.topic: language-reference
-ms.date: 06/20/2017
+ms.date: 03/31/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -16,11 +16,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the business run-time functions.
+This article describes the business runtime functions.
 
 These functions enter financial data and calculate formulas.
 
 ## cTerm
+
 Calculates the number of periods that are required for the current investment value to yield a target value.
 
 ### Syntax
@@ -28,6 +29,7 @@ Calculates the number of periods that are required for the current investment va
 ```xpp
 real cTerm(real interest, real future_value, real current_value)
 ```
+
 ### Parameters
 
 | Parameter      | Description                   |
@@ -38,11 +40,11 @@ real cTerm(real interest, real future_value, real current_value)
 
 ### Return value
 
-The number of periods that are required in order to reach *future\_value*.
+The number of periods that are required to reach *future\_value*.
 
 ### Remarks
 
-The *current\_value* and *future\_value* parameters must have the same prefixed sign (plus or minus).
+The *current_value* and *future_value* parameters must use the same sign (plus or minus).
 
 ### Example
 
@@ -72,7 +74,7 @@ real ddb(real price, real scrap, real life, int period)
 | Parameter | Description                                                |
 |-----------|------------------------------------------------------------|
 | price     | The purchase price of the asset.                           |
-| scrap     | The residual value of the asset that has been written off. |
+| scrap     | The residual value of the asset that you write off.       |
 | life      | The expected lifetime of the asset.                        |
 | period    | The period to calculate depreciation over.                 |
 
@@ -82,21 +84,21 @@ The depreciation of the asset.
 
 ### Remarks
 
-The book value for a specific period is equal to the purchase price minus the accumulated depreciation for previous periods:
+The book value for a specific period equals the purchase price minus the accumulated depreciation for previous periods:
 
--   Book value for Period 1 = Price
--   Book value for Period 2 = Book value for Period 1 – Depreciation for Period 1
--   Book value for Period n = Book value for Period (n–1) – Depreciation for Period (n–1)
+- Book value for Period 1 = Price
+- Book value for Period 2 = Book value for Period 1 – Depreciation for Period 1
+- Book value for Period n = Book value for Period (n–1) – Depreciation for Period (n–1)
 
 There are three variations for the calculation of depreciation: If Period &gt; Life:
 
--   Depreciation = 0
+- Depreciation = 0
 
 If (Book value for Period n) – ((Book value for Period n) × 2 ÷ Life) &lt; Residual value:
 
--   Depreciation = (Book value for Period n) – Residual value
+- Depreciation = (Book value for Period n) – Residual value
 
-In all other cases: Depreciation = (Book value for Period n) × 2 ÷ Life The **syd** and **sln** functions also calculate the depreciation of an asset. The **syd** and **ddb** functions enables higher depreciation for the earlier years, whereas **sln** calculates a linear depreciation.
+In all other cases: Depreciation = (Book value for Period n) × 2 ÷ Life The **syd** and **sln** functions also calculate the depreciation of an asset. The **syd** and **ddb** functions enable higher depreciation for the earlier years, whereas **sln** calculates a linear depreciation.
 
 ```xpp
 ddb(12000,2000,10,1); //Returns the value 2400.
@@ -146,7 +148,7 @@ real fV(real amount, real interest, real life)
 
 | Parameter | Description                                     |
 |-----------|-------------------------------------------------|
-| amount    | The amount that was paid in during each period. |
+| amount    | The amount that you paid in during each period. |
 | interest  | The interest rate.                              |
 | life      | The number of investment periods.               |
 
@@ -190,6 +192,7 @@ idg(11000,0.45); //Returns the value 20000.
 ```
 
 ## intvMax
+
 Retrieves the number of intervals for the specified period when the period is divided into parts as specified by the *func* parameter.
 
 ```xpp
@@ -208,18 +211,18 @@ int intvMax(date input_date, date ref_date, int func)
 
 Here are the possible values for the *func* parameter:
 
--   None
--   YearMonthDay
--   YearMonth
--   Year
--   MonthDay
--   Month
--   Day
--   YearQuarter
--   Quarter
--   YearWeek
--   Week
--   WeekDay
+- None
+- YearMonthDay
+- YearMonth
+- Year
+- MonthDay
+- Month
+- Day
+- YearQuarter
+- Quarter
+- YearWeek
+- Week
+- WeekDay
 
 ### Example
 
@@ -237,6 +240,7 @@ static void intvMaxExample()
 ```
 
 ## intvName
+
 Returns the name of the interval that is the specified number of intervals ahead of the specified date.
 
 ```xpp
@@ -277,6 +281,7 @@ Thu is the output, which indicates the day of the week 3 days after 2672010.
 ```
 
 ## intvNo
+
 Calculates the number of intervals between two dates when you divide the time into the specified intervals.
 
 ### Syntax
@@ -295,7 +300,7 @@ int intvNo(date input_date, date ref_date, int func)
 
 ### Return value
 
-The number of intervals between the dates that are specified by the *ref\_date* and *input\_date* parameters.
+The number of intervals between the dates that the *ref\_date* and *input\_date* parameters specify.
 
 ### Example
 
@@ -314,6 +319,7 @@ static void intvNoExample(Args _args)
 ```
 
 ## intvNorm
+
 Returns the normalized date for the period.
 
 ### Syntax
@@ -326,7 +332,7 @@ date intvNorm(date input_date, date ref_date, int func)
 
 | Parameter   | Description                                                                                              |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| input\_date | The end of the period, which must be later than the date that is specified by the *ref\_date* parameter. |
+| input\_date | The end of the period, which must be later than the date that you specify in the *ref\_date* parameter. |
 | ref\_date   | The start of the period.                                                                                 |
 | func        | An **intvScale** enumeration value that indicates the interval division unit.                            |
 
@@ -336,7 +342,7 @@ The normalized date for the period.
 
 ### Remarks
 
-The returned date will equal the date of the first day in the interval in which the date that is specified by the *ref\_date* parameter exists.
+The returned date equals the date of the first day in the interval where the date that you specify in the *ref\_date* parameter exists.
 
 ### Example
 
@@ -350,7 +356,7 @@ static void example()
 
 ## pmt
 
-Calculates the amount that must be paid every period to repay a loan.
+Calculates the amount that you must pay every period to repay a loan.
 
 ### Syntax
 
@@ -362,17 +368,17 @@ real pmt(real principal, real interest, real life)
 
 | Parameter | Description                                                               |
 |-----------|---------------------------------------------------------------------------|
-| principal | The amount that was originally borrowed.                                  |
-| interest  | The interest that is applied each period to the amount that was borrowed. |
-| life      | The number of periods that the loan is repaid over.                       |
+| principal | The amount that you originally borrowed.                                  |
+| interest  | The interest rate applied each period to the amount that you borrowed. |
+| life      | The number of periods over which you repay the loan.                       |
 
 ### Return value
 
-The amount that must be paid every period.
+The amount that you must pay every period.
 
 ### Remarks
 
-The *life* and *interest* parameters must be expressed in the same time units. The value of the *life* parameter must be more than **0.0**.
+Express the *life* and *interest* parameters in the same time units. The value of the *life* parameter must be greater than **0.0**.
 
 ### Example
 
@@ -400,7 +406,7 @@ real pt(real amount, real percentage)
 
 ### Return value
 
-The number that is equal to ((<em>amount *× *percentage</em>) + <em>amount</em>).
+The number that equals ((<em>amount *×*percentage</em>) + <em>amount</em>).
 
 ### Remarks
 
@@ -411,7 +417,7 @@ pt(20.0,0.10); //Returns the value 22.0.
 
 ## pv
 
-Calculates the present value of an annuity, where an amount is received over multiple periods and the interest rate is deducted for each period.
+Calculates the present value of an annuity, where you receive an amount over multiple periods and the interest rate is deducted for each period.
 
 ### Syntax
 
@@ -423,9 +429,9 @@ real pv(real amount, real interest, real life)
 
 | Parameter | Description                                                                             |
 |-----------|-----------------------------------------------------------------------------------------|
-| amount    | The amount that is paid during each period.                                             |
+| amount    | The amount that you pay during each period.                                             |
 | interest  | The interest rate.                                                                      |
-| life      | The number of times that the value that is specified by the *amount* parameter is paid. |
+| life      | The number of times that the value specified by the *amount* parameter is paid. |
 
 ### Return value
 
@@ -438,6 +444,7 @@ pv(300,0.14,4); //Returns the value 874.11.
 ```
 
 ## rate
+
 Calculates the interest that is required for the current investment value to attain the future value over the specified number of periods.
 
 ### Syntax
@@ -524,11 +531,11 @@ The amount of depreciation over the specified period.
 
 ### Remarks
 
-In contrast to the **sln** function, the **syd** function can allow for an accelerated depreciation of the asset. As with the **ddb** function, this enables higher depreciation during the early periods of the life of an asset.
+In contrast to the **sln** function, the **syd** function can use accelerated depreciation for the asset. As with the **ddb** function, this approach results in higher depreciation during the early periods of the life of an asset.
 
 ### Example
 
-In the following examples, the periodic depreciation is calculated for an asset that has a purchase price of 10,000, a scrap value of 2,000, and a life of 5. In comparison, **sln(10000,2000,5)** would calculate 1600.00 for each period.
+In the following examples, the periodic depreciation is calculated for an asset that has a purchase price of 10,000, a scrap value of 2,000, and a life of 5. In comparison, **sln(10000,2000,5)** calculates 1,600.00 for each period.
 
 ```xpp
 // Returns the value 2666.67 (for the 1st period).
@@ -544,6 +551,7 @@ syd(10000,2000,5,5);
 ```
 
 ## term
+
 Calculates the number of periods that an investment must run for.
 
 ### Syntax
@@ -574,8 +582,5 @@ static void termExample(Args _args)
     pause;
 }
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

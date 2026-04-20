@@ -4,7 +4,7 @@ description: Learn about the version 10.0.31 proactive quality update (PQU) rele
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 04/05/2023
+ms.date: 03/26/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro

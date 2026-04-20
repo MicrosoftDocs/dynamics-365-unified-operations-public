@@ -4,7 +4,7 @@ description: Learn about the Microsoft preview software license terms, which are
 author: ShellyBakke
 ms.author: smiller
 ms.topic: article
-ms.date: 04/18/2019
+ms.date: 03/26/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ROBOTS: NOINDEX, NOFOLLOW 

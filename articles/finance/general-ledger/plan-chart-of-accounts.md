@@ -4,7 +4,7 @@ description: Learn how to plan the chart of accounts for your organization, whic
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 05/20/2025
+ms.date: 04/02/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -20,9 +20,9 @@ ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information to help you plan the chart of accounts for your organization.
+This article helps you plan the chart of accounts for your organization.
 
-To track and maintain financial information in an organization, set up a chart of accounts. A chart of accounts is a collection of accounts that define a financial framework. To further track the transactions in these accounts, add segments. These segments are known as financial dimensions. For example, an expense account might include financial dimensions that are named Department, Cost center, and Purpose. User-defined rules determine how financial dimensions are attached to the main accounts and to other financial dimensions, and also how transactions are entered. These user-defined rules are known as account structures and advanced rules.
+Set up a chart of accounts to track and maintain financial information in an organization. A chart of accounts is a collection of accounts that define a financial framework. To further track the transactions in these accounts, add segments. These segments are known as financial dimensions. For example, an expense account might include financial dimensions that are named Department, Cost center, and Purpose. User-defined rules determine how financial dimensions are attached to the main accounts and to other financial dimensions, and also how transactions are entered. These user-defined rules are known as account structures and advanced rules.
 
 The chart of accounts is a structured list of a legal entity's general ledger accounts. Use the list to prepare financial reports for authorities and owners. First, group the accounts into types of accounts and then further aggregate them into larger categories. At the most general level, group the accounts as revenues and costs (operating accounts), and assets and liabilities (balance accounts).
 
@@ -32,9 +32,14 @@ Consider these factors when you plan the structure of the chart of accounts for 
 
 - The reporting requirements of the country or region where your organization is based
 - The reporting requirements of your legal entity
-- The degree of specification that is required, both for both external organizations and for your organization
+- The degree of specification that is required, both for external organizations and for your organization
 
-Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Don't use any special characters in your main accounts that are used as delimiters for chart of accounts. Otherwise, you might experience instability, or you might always have to use lookups or the dialog box when you enter combinations of accounts and dimensions. For more information, see [Create a main account](tasks/create-main-account.md).
+Create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports. For more information, see [Create a main account](/dynamics365/finance/general-ledger/tasks/create-main-account).
+
+> [!IMPORTANT]
+> Don't use the chart of accounts delimiter character in main account numbers, financial dimension names, or dimension values. For details and best practices, see [Naming requirements](/dynamics365/finance/general-ledger/tasks/define-financial-dimensions#naming-requirements).
+
+You create account structures on the **Configure account structures** page. For more information, see [Create account structures](/dynamics365/finance/general-ledger/tasks/create-account-structures).
 
 ## Change the segment delimiter
 
@@ -44,26 +49,27 @@ If you need to change the delimiter that separates segments in your chart of acc
 
 You can't change the delimiter if existing dimension values already contain the new delimiter character. For example, if you want to change your delimiter to "~" but you already have a dimension value in use such as "Cust~1", the system blocks the change. In this case, consider selecting a different delimiter.
 
-### Best practices for delimiters and dimension values
+### What to expect after changing the delimiter
 
-While it's technically possible to include delimiter characters within dimension values, doing so can cause problems when the system parses account combinations. For instance, if you have a dimension value "Cust-049" and your delimiter is "-", the system might interpret "049" as the value for the next segment. If "049" isn't a valid value for that segment, you receive an error message.
+When you change the delimiter, the system schedules a data maintenance action called **Dimension value rename and modify chart of accounts delimiter process**. The delimiter might not update immediately, and the old delimiter might continue to appear until the data maintenance action completes. The system processes the newest dimensions first to reduce the possibility of errors during the transition. Monitor the progress of the action by going to the data maintenance portal in **System administration** > **Setup** > **Data Maintenance**.
 
-To avoid these problems, use one of the following options:
+> [!IMPORTANT]
+> Don't schedule the delimiter change multiple times. If the delimiter isn't updated yet, wait for the data maintenance action to complete before rescheduling.
 
-- **Option 1 (Recommended)**: Don't use the delimiter character in your dimension values. If conflicting dimension values already exist, change them to prevent misinterpretation.
-- **Option 2**: Change the segment delimiter to a different character. This option isn't available for financial tags.
+After the action finishes, the new delimiter appears in the **General ledger parameters** dialog and all dimension data uses the new delimiter consistently.
 
-Link the main accounts to main account categories so you can take advantage of the default financial reports without making any modifications. You can more quickly and easily design and maintain reports.
+#### Manual override
 
-You create account structures on the **Configure account structures** page. Account structures define valid combinations. These combinations, together with main accounts, form a chart of accounts. For more information, see [Create account structures](tasks/create-account-structures.md).
+If you experience errors when running reports after a delimiter change, or if you see different delimiters in use in the same journal, the standard data maintenance action might still be processing records.
 
-**Legal entity overrides**
+If rescheduling the delimiter **Dimension value rename and modify chart of accounts delimiter process** doesn't fix the issue, you can run the **Dimension value rename and modify chart of accounts delimiter process - manual override** action in the data maintenance portal (**System administration** > **Setup** > **Data Maintenance**). This action processes all remaining records in a single run instead of batching.
 
-Not all main accounts are valid for all legal entities, and some main accounts might be relevant only for a specific period. In this scenario, use the **Legal entity overrides** section to identify the companies that the main account should be suspended for, the owner, and the period when the dimension is active. The overrides at the shared level can't be more restrictive than the overrides at the legal entity level.
+> [!WARNING]
+> Don't use the manual override as the default option for delimiter changes. The manual override action runs for a longer period and uses more system resources, which can cause performance problems. It only runs to completion if the standard action isn't already running. Consider using this option during off-peak hours.
 
 For more information, see the following topics:
 
-- [Financial dimensions](financial-dimensions.md)
-- [Create and assign advanced rule structures](tasks/create-assign-advanced-rule-structures.md)
+- [Financial dimensions](/dynamics365/finance/general-ledger/financial-dimensions)
+- [Create and assign advanced rule structures](/dynamics365/finance/general-ledger/tasks/create-assign-advanced-rule-structures)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
